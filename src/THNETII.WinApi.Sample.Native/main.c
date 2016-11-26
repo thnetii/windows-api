@@ -6,7 +6,7 @@
 void main()
 {
 	const int size = sizeof(FLASHWINFO);
-	const int value = FLASHW_ALL;
+	const int value = FORMAT_MESSAGE_ALLOCATE_BUFFER;
 
-	void* ptr = FatalAppExit;
+	void* ptr = FormatMessage;
 }

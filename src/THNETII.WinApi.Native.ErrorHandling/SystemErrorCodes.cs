@@ -4,7 +4,7 @@ namespace Microsoft.Win32.WinApi.Diagnostics.ErrorHandling
 {
     /// <summary>
     /// The System Error Codes are very broad. Each one can occur in one of many hundreds of locations in the system. Consequently the descriptions of these codes cannot be very specific. Use of these codes requires some amount of investigation and analysis. You need to note both the programmatic and the run-time context in which these errors occur. Because these codes are defined in public header files for anyone to use, sometimes the codes are returned by non-system software. Sometimes the code is returned by a function deep in the stack and far removed from your code that is handling the error.
-    /// <para>System Error Codes are returned by the <see cref="Marshal.GetLastWin32Error"/> function when many functions fail. To retrieve the description text for the error in your application, use the <see cref="FormatMessage"/> function with the <see cref="FORMAT_MESSAGE_FROM_SYSTEM"/> flag.</para>
+    /// <para>System Error Codes are returned by the <see cref="Marshal.GetLastWin32Error"/> function when many functions fail. To retrieve the description text for the error in your application, use the <see cref="System.ComponentModel.Win32Exception"/> class to represent a System Error appropiately with the associated message.</para>
     /// </summary>
     public static class SystemErrorCodes
     {

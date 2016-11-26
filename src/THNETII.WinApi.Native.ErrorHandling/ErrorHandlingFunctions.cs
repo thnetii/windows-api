@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Runtime.InteropServices;
-using System.Text;
-
-using static Microsoft.Win32.WinApi.Diagnostics.ErrorHandling.SystemErrorCodes;
+using System.Windows.Forms;
 
 namespace Microsoft.Win32.WinApi.Diagnostics.ErrorHandling
 {
@@ -134,6 +132,38 @@ namespace Microsoft.Win32.WinApi.Diagnostics.ErrorHandling
         [return: MarshalAs(UnmanagedType.Bool)]
         public static extern bool FlashWindowEx(
             [In, MarshalAs(UnmanagedType.LPStruct)] FLASHWINFO pfwi
+            );
+        #endregion
+        #region MessageBeep function
+        /// <summary>
+        /// Plays a waveform sound. The waveform sound for each sound type is identified by an entry in the registry.
+        /// </summary>
+        /// <param name="uType">
+        /// <para>The sound to be played. The sounds are set by the user through the Sound control panel application, and then stored in the registry.</para>
+        /// <para>Specify <c>(MessageBoxIcon)-1</c> for a simple beep. If the sound card is not available, the sound is generated using the speaker.</para>
+        /// <para><see cref="MessageBoxIcon.None"/>: The sound specified as the Windows Default Beep sound.</para>
+        /// <para><see cref="MessageBoxIcon.Asterisk"/>, <see cref="MessageBoxIcon.Information"/>: The sound specified as the Windows Asterisk sound.</para>
+        /// <para><see cref="MessageBoxIcon.Error"/>, <see cref="MessageBoxIcon.Stop"/>: The sound specified as the Windows Critical Stop sound.</para>
+        /// </param>
+        /// <returns>
+        /// If the function succeeds, the return value is <c>true</c>.
+        /// If the function fails, the return value is zero. To get extended error information, call <see cref="Marshal.GetLastWin32Error"/>.
+        /// </returns>
+        /// <remarks>
+        /// <para>After queuing the sound, the <see cref="MessageBeep"/> function returns control to the calling function and plays the sound asynchronously.</para>
+        /// <para>If it cannot play the specified alert sound, <see cref="MessageBeep"/> attempts to play the system default sound. If it cannot play the system default sound, the function produces a standard beep sound through the computer speaker.</para>
+        /// <para>The user can disable the warning beep by using the Sound control panel application.</para>
+        /// <para><note>To send a beep to a remote client, use the <see cref="Beep"/> function. The <see cref="Beep"/> function is redirected to the client, whereas <see cref="MessageBeep"/> is not.</note></para>
+        /// <para><strong>Minimum supported client:</strong> Windows XP [desktop apps only]</para>
+        /// <para><strong>Minimum supported server:</strong> Windows Server 2003 [desktop apps only]</para>
+        /// <para>Original MSDN documenation page: <a href="https://msdn.microsoft.com/en-us/library/ms680356.aspx">MessageBeep function</a></para>
+        /// </remarks>
+        /// <seealso cref="Beep"/>
+        /// <seealso cref="FlashWindow"/>
+        [DllImport("User32.dll", CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool MessageBeep(
+            [In, MarshalAs(UnmanagedType.U4)] MessageBoxIcon uType
             );
         #endregion
     }

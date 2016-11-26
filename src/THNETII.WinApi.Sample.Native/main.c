@@ -6,7 +6,7 @@
 void main()
 {
 	const int size = sizeof(FLASHWINFO);
-	const int value = FORMAT_MESSAGE_ALLOCATE_BUFFER;
+	const int value = MB_OK;
 
-	void* ptr = FormatMessage;
+	void* ptr = MessageBeep;
 }

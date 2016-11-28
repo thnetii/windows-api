@@ -2,11 +2,12 @@
 #include <stdio.h>
 
 #include <Windows.h>
+#include <DbgHelp.h>
 
 void main()
 {
-	const int size = sizeof(FLASHWINFO);
-	const int value = MB_OK;
+	const int size = sizeof(ADDRESS64);
+	const int value = 0;
 
 	void* ptr = MessageBeep;
 }

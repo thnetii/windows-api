@@ -6,6 +6,11 @@ namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp
     /// <summary>
     /// Contains the library version.
     /// </summary>
+    /// <remarks>
+    /// <para>Original MSDN documentation: <a href="https://msdn.microsoft.com/en-us/library/ms679275.aspx">API_VERSION structure</a></para>
+    /// </remarks>
+    /// <seealso cref="ImagehlpApiVersion"/>
+    /// <seealso cref="ImagehlpApiVersionEx"/>
     [StructLayout(LayoutKind.Sequential)]
     public class API_VERSION
     {

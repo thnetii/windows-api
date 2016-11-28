@@ -6,7 +6,7 @@
 
 void main()
 {
-	const int size = sizeof(ADDRESS64);
+	const int size = sizeof(FPO_DATA);
 	const int value = 0;
 
 	void* ptr = GetApplicationRestartSettings;

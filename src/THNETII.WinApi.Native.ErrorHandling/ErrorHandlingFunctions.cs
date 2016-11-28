@@ -2,6 +2,8 @@
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
+using static Microsoft.Win32.WinApi.Diagnostics.ErrorHandling.SystemErrorCodes;
+
 namespace Microsoft.Win32.WinApi.Diagnostics.ErrorHandling
 {
     /// <summary>

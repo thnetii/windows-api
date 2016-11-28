@@ -9,5 +9,5 @@ void main()
 	const int size = sizeof(ADDRESS64);
 	const int value = 0;
 
-	void* ptr = MessageBeep;
+	void* ptr = GetApplicationRestartSettings;
 }

@@ -7,8 +7,8 @@
 
 void main()
 {
-	const int size = sizeof(IMAGE_NT_HEADERS);
-	const int value = IMAGE_NUMBEROF_DIRECTORY_ENTRIES;
+	const int size = sizeof(PIMAGEHLP_STATUS_ROUTINE);
+	const int value = BIND_ALL_IMAGES;
 
-	void* ptr = BindImage;
+	void* ptr = BindImageEx;
 }

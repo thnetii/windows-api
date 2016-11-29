@@ -86,6 +86,39 @@ namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHelp
             [In, MarshalAs(UnmanagedType.FunctionPtr)] StatusRoutine StatusRoutine
             );
         #endregion
+        #region CheckSumMappedFile function
+        /// <summary>
+        /// Computes the checksum of the specified image file.
+        /// </summary>
+        /// <param name="BaseAddress">The base address of the mapped file. This value is obtained by calling the <see cref="MapViewOfFile"/> function.</param>
+        /// <param name="FileLength">The size of the file, in bytes.</param>
+        /// <param name="HeaderSum">A variable that receives the original checksum from the image file, or zero if there is an error.</param>
+        /// <param name="CheckSum">A variable that receives the computed checksum.</param>
+        /// <returns>
+        /// If the function succeeds, the return value is a pointer to the <see cref="IMAGE_NT_HEADERS32"/> or <see cref="IMAGE_NT_HEADERS64"/> structure contained in the mapped image.
+        /// Your should marshal the pointer value to an <see cref="IMAGE_NT_HEADERS_COMMON"/> instance first to evaluate the signature in the <see cref="IMAGE_OPTIONAL_HEADER_COMMON"/> structure to find whether the image is a 32-bit or 64-bit header.
+        /// If the function fails, the return value is <see cref="IntPtr.Zero"/>. To retrieve extended error information, call <see cref="Marshal.GetLastWin32Error"/>.
+        /// </returns>
+        /// <remarks>
+        /// <para>The <see cref="CheckSumMappedFile"/> function computes a new checksum for the file and returns it in the CheckSum parameter. This function is used by any application that creates or modifies an executable image. Checksums are required for kernel-mode drivers and some system DLLs. The linker computes the original checksum at link time, if you use the appropriate linker switch. For more details, see your linker documentation.</para>
+        /// <para>It is recommended that all images have valid checksums. It is the caller's responsibility to place the newly computed checksum into the mapped image and update the on-disk image of the file.</para>
+        /// <para>All ImageHlp functions, such as this one, are single threaded. Therefore, calls from more than one thread to this function will likely result in unexpected behavior or memory corruption. To avoid this, you must synchronize all concurrent calls from more than one thread to this function.</para>
+        /// <para><strong>Minimum supported client:</strong> Windows XP [desktop apps only]</para>
+        /// <para><strong>Minimum supported server:</strong> Windows Server 2003 [desktop apps only]</para>
+        /// <para>Original MSDN documentation: <a href="https://msdn.microsoft.com/en-us/library/ms679281.aspx">CheckSumMappedFile function</a></para>
+        /// </remarks>
+        /// <seealso cref="IMAGE_NT_HEADERS32"/>
+        /// <seealso cref="IMAGE_NT_HEADERS64"/>
+        /// <seealso cref="MapFileAndCheckSum"/>
+        /// <seealso cref="MapViewOfFile"/>
+        [DllImport("Imagehlp.dll", CallingConvention = CallingConvention.StdCall, SetLastError = true)]
+        public static extern IntPtr CheckSumMappedFile(
+            [In] IntPtr BaseAddress,
+            [In] int FileLength,
+            out int HeaderSum,
+            out int CheckSum
+            );
+        #endregion
         #region StatusRoutine callback function
 #pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
         public enum IMAGEHLP_STATUS_REASON

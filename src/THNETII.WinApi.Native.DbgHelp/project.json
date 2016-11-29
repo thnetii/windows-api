@@ -12,14 +12,12 @@
     "THNETII.InteropServices.Bitfields": { "target": "project" },
     "THNETII.InteropServices.NativeMemory": { "target": "project" },
 
-    "THNETII.WinApi.Native.ImageHelp": { "target": "project" },
-
     "NETStandard.Library": "1.6.1-*"
   },
 
   "frameworks": {
-    "netstandard1.2": {
-      "imports": [ "dotnet5.3", "portable-net451+win81" ],
+    "netstandard1.3": {
+      "imports": [ "dotnet5.4", "portable-net452+win81" ],
       "buildOptions": { "debugType": "portable" }
     }
   },

@@ -55,6 +55,7 @@ namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHelp
             BIND_REPORT_64BIT_VA = 0x00000010,
         }
 #pragma warning restore CS1591 // Missing XML comment for publicly visible type or member
+
         /// <summary>
         /// Computes the virtual address of each function that is imported.
         /// </summary>
@@ -78,7 +79,7 @@ namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHelp
         /// <seealso cref="StatusRoutine"/>
         [DllImport("Imagehlp.dll", CallingConvention = CallingConvention.StdCall, SetLastError = true)]
         [return: MarshalAs(UnmanagedType.Bool)]
-        public static extern bool BindImage(
+        public static extern bool BindImageEx(
             [In, MarshalAs(UnmanagedType.I4)] BIND_FLAGS Flags,
             [In, MarshalAs(UnmanagedType.LPStr)] string ImageName,
             [In, MarshalAs(UnmanagedType.LPStr)] string DllPath,
@@ -137,6 +138,59 @@ namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHelp
             [In] IntPtr refdata,
             [In, MarshalAs(UnmanagedType.LPArray, SizeParamIndex = 2)] byte[] pData,
             [In] int dwLength
+            );
+        #endregion
+        #region GetImageConfigInformation function
+        /// <summary>
+        /// Locates and returns the load configuration data of an image.
+        /// </summary>
+        /// <param name="LoadedImage">A reference to a <see cref="LOADED_IMAGE"/> instance that is returned from a call to <see cref="MapAndLoad"/> or <see cref="ImageLoad"/>.</param>
+        /// <param name="ImageConfigInformation">An <see cref="IMAGE_LOAD_CONFIG_DIRECTORY32"/> variable that receives the configuration information.</param>
+        /// <returns>
+        /// If the function succeeds, the return value is <c>true</c>.
+        /// If the function fails, the return value is <c>false</c>. To retrieve extended error information, call <see cref="Marshal.GetLastWin32Error"/>.
+        /// </returns>
+        /// <remarks>
+        /// <para>The <see cref="SetImageConfigInformation"/> function locates and changes the load configuration data of an image.</para>
+        /// <para>All ImageHlp functions, such as this one, are single threaded. Therefore, calls from more than one thread to this function will likely result in unexpected behavior or memory corruption. To avoid this, you must synchronize all concurrent calls from more than one thread to this function.</para>
+        /// <para><strong>Minimum supported client:</strong> Windows XP [desktop apps only]</para>
+        /// <para><strong>Minimum supported server:</strong> Windows Server 2003 [desktop apps only]</para>
+        /// <para>Original MSDN documentation: <a href="https://msdn.microsoft.com/en-us/library/ms679358.aspx">GetImageConfigInformation function</a></para>
+        /// </remarks>
+        /// <seealso cref="IMAGE_LOAD_CONFIG_DIRECTORY32"/>
+        /// <seealso cref="LOADED_IMAGE"/>
+        /// <seealso cref="SetImageConfigInformation"/>
+        [DllImport("Imagehlp.dll", CallingConvention = CallingConvention.StdCall, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool GetImageConfigInformation(
+            [In, MarshalAs(UnmanagedType.LPStruct)] LOADED_IMAGE LoadedImage,
+            out IMAGE_LOAD_CONFIG_DIRECTORY32 ImageConfigInformation
+            );
+
+        /// <summary>
+        /// Locates and returns the load configuration data of an image.
+        /// </summary>
+        /// <param name="LoadedImage">A reference to a <see cref="LOADED_IMAGE"/> instance that is returned from a call to <see cref="MapAndLoad"/> or <see cref="ImageLoad"/>.</param>
+        /// <param name="ImageConfigInformation">An <see cref="IMAGE_LOAD_CONFIG_DIRECTORY64"/> variable that receives the configuration information.</param>
+        /// <returns>
+        /// If the function succeeds, the return value is <c>true</c>.
+        /// If the function fails, the return value is <c>false</c>. To retrieve extended error information, call <see cref="Marshal.GetLastWin32Error"/>.
+        /// </returns>
+        /// <remarks>
+        /// <para>The <see cref="SetImageConfigInformation"/> function locates and changes the load configuration data of an image.</para>
+        /// <para>All ImageHlp functions, such as this one, are single threaded. Therefore, calls from more than one thread to this function will likely result in unexpected behavior or memory corruption. To avoid this, you must synchronize all concurrent calls from more than one thread to this function.</para>
+        /// <para><strong>Minimum supported client:</strong> Windows XP [desktop apps only]</para>
+        /// <para><strong>Minimum supported server:</strong> Windows Server 2003 [desktop apps only]</para>
+        /// <para>Original MSDN documentation: <a href="https://msdn.microsoft.com/en-us/library/ms679358.aspx">GetImageConfigInformation function</a></para>
+        /// </remarks>
+        /// <seealso cref="IMAGE_LOAD_CONFIG_DIRECTORY64"/>
+        /// <seealso cref="LOADED_IMAGE"/>
+        /// <seealso cref="SetImageConfigInformation"/>
+        [DllImport("Imagehlp.dll", CallingConvention = CallingConvention.StdCall, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool GetImageConfigInformation(
+            [In, MarshalAs(UnmanagedType.LPStruct)] LOADED_IMAGE LoadedImage,
+            out IMAGE_LOAD_CONFIG_DIRECTORY64 ImageConfigInformation
             );
         #endregion
         #region StatusRoutine callback function

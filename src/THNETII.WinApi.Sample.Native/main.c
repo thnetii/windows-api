@@ -7,7 +7,7 @@
 
 void main()
 {
-	const int size = sizeof(PIMAGEHLP_STATUS_ROUTINE);
+	const int size = sizeof(LOADED_IMAGE);
 	const int value = BIND_ALL_IMAGES;
 
 	void* ptr = BindImageEx;

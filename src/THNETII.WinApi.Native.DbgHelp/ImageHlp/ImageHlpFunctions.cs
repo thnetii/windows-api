@@ -273,6 +273,30 @@ namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHlp
             [In, MarshalAs(UnmanagedType.LPStr)] string DllPath
             );
         #endregion
+        #region ImageUnload function
+        /// <summary>
+        /// Deallocates resources from a previous call to the <see cref="ImageLoad"/> function.
+        /// </summary>
+        /// <param name="LoadedImage">A pointer to a <see cref="LOADED_IMAGE"/> instance that is returned from a call to the <see cref="ImageLoad"/> function.</param>
+        /// <returns>
+        /// If the function succeeds, the return value is <c>true</c>.
+        /// If the function fails, the return value is <c>false</c>. To retrieve extended error information, call <see cref="Marshal.GetLastWin32Error"/>.
+        /// <para><see cref="ImageLoad"/> and <see cref="ImageUnload"/> share internal data that can be corrupted if multiple consecutive calls to <see cref="ImageLoad"/> are performed. Therefore, make sure that you have called <see cref="ImageLoad"/> only once before calling <see cref="ImageUnload"/>.</para>
+        /// </returns>
+        /// <remarks>
+        /// All ImageHlp functions, such as this one, are single threaded. Therefore, calls from more than one thread to this function will likely result in unexpected behavior or memory corruption. To avoid this, you must synchronize all concurrent calls from more than one thread to this function.
+        /// <para><strong>Minimum supported client:</strong> Windows XP [desktop apps only]</para>
+        /// <para><strong>Minimum supported server:</strong> Windows Server 2003 [desktop apps only]</para>
+        /// <para>Original MSDN documentation: <a href="https://msdn.microsoft.com/en-us/library/ms680221.aspx">ImageUnload function</a></para>
+        /// </remarks>
+        /// <seealso cref="ImageLoad"/>
+        /// <seealso cref="LOADED_IMAGE"/>
+        [DllImport("Imagehlp.dll", CallingConvention = CallingConvention.StdCall, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool ImageUnload(
+            [In] IntPtr LoadedImage
+            );
+        #endregion
         #region StatusRoutine callback function
 #pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
         public enum IMAGEHLP_STATUS_REASON

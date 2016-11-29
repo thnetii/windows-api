@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 
-namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHelp
+namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHlp
 {
     /// <summary>
     /// Contains the load configuration data of an image.

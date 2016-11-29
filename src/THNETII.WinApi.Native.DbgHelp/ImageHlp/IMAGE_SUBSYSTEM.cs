@@ -1,4 +1,4 @@
-﻿namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHelp
+﻿namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHlp
 {
     /// <summary>Subsystem Values</summary>
     public enum IMAGE_SUBSYSTEM : short

@@ -1,4 +1,4 @@
-﻿using Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHelp;
+﻿using Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHlp;
 using System;
 using System.Runtime.InteropServices;
 using THNETII.InteropServices.NativeMemory;

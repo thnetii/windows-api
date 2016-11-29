@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 
-using static Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHelp.IMAGE_DATA_DIRECTORY;
+using static Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHlp.IMAGE_DATA_DIRECTORY;
 
-namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHelp
+namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHlp
 {
     /*
     #define IMAGE_NT_OPTIONAL_HDR32_MAGIC      0x10b

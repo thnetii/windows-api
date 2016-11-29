@@ -1,7 +1,7 @@
 ﻿using System.Runtime.InteropServices;
 using System.Text;
 
-namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHelp
+namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHlp
 {
     /// <summary>
     /// Represents the image section header format.

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHelp
+namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHlp
 {
 #pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
     /// <summary>

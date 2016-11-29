@@ -248,6 +248,31 @@ namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHlp
             [In] IntPtr DigestHandle
             );
         #endregion
+        #region ImageLoad function
+        /// <summary>
+        /// Maintains a list of loaded DLLs.
+        /// </summary>
+        /// <param name="DllName">The name of the image.</param>
+        /// <param name="DllPath">The path used to locate the image if the name provided cannot be found. If <c>null</c> is used, then the search path rules set forth in the <see cref="SearchPath"/> function apply.</param>
+        /// <returns>
+        /// If the function succeeds, the return value is a pointer to a <see cref="LOADED_IMAGE"/> structure.
+        /// If the function fails, the return value is <see cref="IntPtr.Zero"/>. To retrieve extended error information, call <see cref="Marshal.GetLastWin32Error"/>.
+        /// </returns>
+        /// <remarks>
+        /// <para>The <see cref="ImageLoad"/> function is used to maintain a list of loaded DLLs. If the image has already been loaded, the prior <see cref="LOADED_IMAGE"/> is returned. Otherwise, the new image is added to the list.</para>
+        /// <para>The returned non-zero pointer must be deallocated by the <see cref="ImageUnload"/> function.</para>
+        /// <para>All ImageHlp functions, such as this one, are single threaded. Therefore, calls from more than one thread to this function will likely result in unexpected behavior or memory corruption. To avoid this, you must synchronize all concurrent calls from more than one thread to this function.</para>
+        /// <para><strong>Minimum supported client:</strong> Windows XP [desktop apps only]</para>
+        /// <para><strong>Minimum supported server:</strong> Windows Server 2003 [desktop apps only]</para>
+        /// <para>Original MSDN documentation: <a href="https://msdn.microsoft.com/en-us/library/ms680209.aspx">ImageLoad function</a></para>
+        /// </remarks>
+        [DllImport("Imagehlp.dll", CallingConvention = CallingConvention.StdCall, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.LPStruct)]
+        public static extern IntPtr ImageLoad(
+            [In, MarshalAs(UnmanagedType.LPStr)] string DllName,
+            [In, MarshalAs(UnmanagedType.LPStr)] string DllPath
+            );
+        #endregion
         #region StatusRoutine callback function
 #pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
         public enum IMAGEHLP_STATUS_REASON

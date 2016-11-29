@@ -93,7 +93,7 @@ namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHlp
         /// <summary>
         /// Computes the checksum of the specified image file.
         /// </summary>
-        /// <param name="BaseAddress">The base address of the mapped file. This value is obtained by calling the <see cref="MapViewOfFile"/> function.</param>
+        /// <param name="BaseAddress">The base address of the mapped file. This value is obtained by calling the <see cref="System.IO.MemoryMappedFiles.MemoryMappedFile.CreateViewAccessor(long, long, System.IO.MemoryMappedFiles.MemoryMappedFileAccess)"/> function.</param>
         /// <param name="FileLength">The size of the file, in bytes.</param>
         /// <param name="HeaderSum">A variable that receives the original checksum from the image file, or zero if there is an error.</param>
         /// <param name="CheckSum">A variable that receives the computed checksum.</param>
@@ -113,10 +113,10 @@ namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHlp
         /// <seealso cref="IMAGE_NT_HEADERS32"/>
         /// <seealso cref="IMAGE_NT_HEADERS64"/>
         /// <seealso cref="MapFileAndCheckSum"/>
-        /// <seealso cref="MapViewOfFile"/>
+        /// <seealso cref="System.IO.MemoryMappedFiles.MemoryMappedFile.CreateViewAccessor(long, long, System.IO.MemoryMappedFiles.MemoryMappedFileAccess)"/>
         [DllImport("Imagehlp.dll", CallingConvention = CallingConvention.StdCall, SetLastError = true)]
         public static extern IntPtr CheckSumMappedFile(
-            [In] IntPtr BaseAddress,
+            [In] SafeMemoryMappedViewHandle BaseAddress,
             [In] int FileLength,
             out int HeaderSum,
             out int CheckSum

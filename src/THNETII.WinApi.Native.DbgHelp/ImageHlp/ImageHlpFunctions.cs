@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Microsoft.Win32.SafeHandles;
+using System;
+using System.IO;
 using System.Runtime.InteropServices;
 
 namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHlp
@@ -214,6 +216,36 @@ namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHlp
         public static extern int GetImageUnusedHeaderBytes(
             [In, MarshalAs(UnmanagedType.LPStruct)] LOADED_IMAGE LoadedImage,
             out int SizeUnusedHeaderBytes
+            );
+        #endregion
+        #region ImageGetDigestStream function
+        /// <summary>
+        /// Retrieves the requested data from the specified image file.
+        /// </summary>
+        /// <param name="FileHandle">A handle to the image file. This handle must be opened for <see cref="FileAccess.Read"/> access.</param>
+        /// <param name="DigestLevel">The aspects of the image that are to be included in the returned data stream.</param>
+        /// <param name="DigestFunction">A callback routine to process the data. For more information, see <see cref="DigestFunction"/>.</param>
+        /// <param name="DigestHandle">A user-supplied handle to the digest. This parameter is passed to <paramref name="DigestFunction"/> as the first argument.</param>
+        /// <returns>
+        /// If the function succeeds, the return value is <c>true</c>.
+        /// If the function fails, the return value is <c>false</c>. To retrieve extended error information, call <see cref="Marshal.GetLastWin32Error"/>.
+        /// </returns>
+        /// <remarks>
+        /// <para>The <see cref="ImageGetDigestStream"/> function returns the data to be digested from a specified image file, subject to the passed <paramref name="DigestLevel"/> parameter. The order of the bytes will be consistent for different calls, which is required to ensure that the same message digest is always produced from the retrieved byte stream.</para>
+        /// <para>To ensure cross-platform compatibility, all implementations of this function must behave in a consistent manner with respect to the order in which the various parts of the image file are returned.</para>
+        /// <para>Data should be returned in the following order: <list type="number"><item>Image (executable and static data) information.</item> <item>Resource data.</item> <item>Debugging information.</item></list> If any of these are not specified, the remaining parts must be returned in the same order.</para>
+        /// <para>All ImageHlp functions, such as this one, are single threaded. Therefore, calls from more than one thread to this function will likely result in unexpected behavior or memory corruption. To avoid this, you must synchronize all concurrent calls from more than one thread to this function.</para>
+        /// <para><strong>Minimum supported client:</strong> Windows XP [desktop apps only]</para>
+        /// <para><strong>Minimum supported server:</strong> Windows Server 2003 [desktop apps only]</para>
+        /// <para>Original MSDN documentation: <a href="https://msdn.microsoft.com/en-us/library/ms680160.aspx">ImageGetDigestStream function</a></para>
+        /// </remarks>
+        [DllImport("Imagehlp.dll", CallingConvention = CallingConvention.StdCall, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool ImageGetDigestStream(
+            [In] SafeFileHandle FileHandle,
+            [In, MarshalAs(UnmanagedType.I4)] CERT_PE_IMAGE_DIGEST_LEVEL DigestLevel,
+            [In, MarshalAs(UnmanagedType.FunctionPtr)] DigestFunction DigestFunction,
+            [In] IntPtr DigestHandle
             );
         #endregion
         #region StatusRoutine callback function

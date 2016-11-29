@@ -8,7 +8,7 @@
 void main()
 {
 	const int size = sizeof(LOADED_IMAGE);
-	const int value = BIND_ALL_IMAGES;
+	const int value = CERT_PE_IMAGE_DIGEST_DEBUG_INFO;
 
 	void* ptr = BindImageEx;
 }

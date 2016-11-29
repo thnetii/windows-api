@@ -309,9 +309,9 @@ namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHlp
         /// <param name="DotDll">The default extension to be used if the image name does not contain a file name extension. If the value is <c>true</c>, a .DLL extension is used. If the value is <c>false</c>, then an .EXE extension is used.</param>
         /// <param name="ReadOnly">The access mode. If this value is <c>true</c>, the file is mapped for read-access only. If the value is <c>false</c>, the file is mapped for read and write access.</param>
         /// <returns>
-        /// </returns>
         /// If the function succeeds, the return value is <c>true</c>.
         /// If the function fails, the return value is <c>false</c>. To retrieve extended error information, call <see cref="Marshal.GetLastWin32Error"/>.
+        /// </returns>
         /// <remarks>
         /// <para>The <see cref="MapAndLoad"/> function maps an image and preloads data from the mapped file. The corresponding function, <see cref="UnMapAndLoad"/>, must be used to deallocate all resources that are allocated by the <see cref="MapAndLoad"/> function. </para>
         /// <para>All ImageHlp functions, such as this one, are single threaded. Therefore, calls from more than one thread to this function will likely result in unexpected behavior or memory corruption. To avoid this, you must synchronize all concurrent calls from more than one thread to this function.</para>
@@ -356,6 +356,106 @@ namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHlp
             [In, MarshalAs(UnmanagedType.LPTStr)] string Filename,
             out int HeaderSum,
             out int CheckSum
+            );
+        #endregion
+        #region ReBaseImage function
+        /// <summary>
+        /// <para>Changes the load address for the specified image, which reduces the required load time for a DLL.</para>
+        /// <para>Alternatively, you can use the Rebase tool. This tool is available in Visual Studio and the <a href="http://go.microsoft.com/fwlink/p/?linkid=84091">Windows SDK</a>.</para>
+        /// <para>Note that this function is implemented as a call to the <see cref="ReBaseImage64"/> function.</para>
+        /// </summary>
+        /// <param name="CurrentImageName">The name of the file to be rebased. You must specify the full path to the file unless the module is in the current working directory of the calling process.</param>
+        /// <param name="SymbolPath">The path used to find the corresponding symbol file. Specify this path for executable images that have symbolic information because when image addresses change, the corresponding symbol database file (PDB) may also need to be changed. Note that even if the symbol path is not valid, the function will succeed if it is able to rebases your image.</param>
+        /// <param name="fReBase">If this value is <c>true</c>, the image is rebased. Otherwise, the image is not rebased.</param>
+        /// <param name="fRebaseSysfileOk">If this value is <c>true</c>, the system image is rebased. Otherwise, the system image is not rebased.</param>
+        /// <param name="fGoingDown">If this value is <c>true</c>, the image can be rebased below the given base; otherwise, it cannot.</param>
+        /// <param name="CheckImageSize">The maximum size that the image can grow to, in bytes, or zero if there is no limit.</param>
+        /// <param name="OldImageSize">A variable that receives the original image size, in bytes.</param>
+        /// <param name="OldImageBase">A variable that receives the original image base.</param>
+        /// <param name="NewImageSize">A variable that receives the new image size after the rebase operation, in bytes.</param>
+        /// <param name="NewImageBase">The base address to use for rebasing the image. If the address is not available and the <paramref name="fGoingDown"/> parameter is set to <c>true</c>, the function finds a new base address and sets this parameter to the new base address. If <paramref name="fGoingDown"/> is <c>false</c>, the function finds a new base address but does not set this parameter to the new base address.</param>
+        /// <param name="TimeStamp">
+        /// <para>The new time date stamp for the image file header. The value must be represented in the number of seconds elapsed since midnight (00:00:00), January 1, 1970, Universal Coordinated Time, according to the system clock.</para>
+        /// <para>If this parameter is 0, the current file header time date stamp is incremented by 1 second.</para>
+        /// </param>
+        /// <returns>
+        /// If the function succeeds, the return value is <c>true</c>.
+        /// If the function fails, the return value is <c>false</c>. To retrieve extended error information, call <see cref="Marshal.GetLastWin32Error"/>.
+        /// </returns>
+        /// <remarks>
+        /// <para>The <see cref="ReBaseImage"/> function changes the desired load address for the specified image. This operation involves reading the entire image and updating all fixups, debugging information, and checksum. You can rebase an image to reduce the required load time for its DLLs. If an application can rely on a DLL being loaded at the desired load address, then the system loader does not have to relocate the image. The image is simply loaded into the application's virtual address space and the <see cref="DllMain"/> function is called, if one is present.</para>
+        /// <para>All ImageHlp functions, such as this one, are single threaded. Therefore, calls from more than one thread to this function will likely result in unexpected behavior or memory corruption. To avoid this, you must synchronize all concurrent calls from more than one thread to this function.</para>
+        /// <para>You cannot rebase DLLs that link with /DYNAMICBASE or that reside in protected directories, such as the System32 folder.</para>
+        /// <para>As an alternative to using this function, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=152358">/BASE</a> linker option.</para>
+        /// <para><strong>Minimum supported client:</strong> Windows XP [desktop apps only]</para>
+        /// <para><strong>Minimum supported server:</strong> Windows Server 2003 [desktop apps only]</para>
+        /// <para>Original MSDN documentation: <a href="https://msdn.microsoft.com/en-us/library/aa363364.aspx">ReBaseImage function</a></para>
+        /// </remarks>
+        /// <seealso cref="DllMain"/>
+        [DllImport("Imagehlp.dll", CallingConvention = CallingConvention.StdCall, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool ReBaseImage(
+            [In, MarshalAs(UnmanagedType.LPStr)] string CurrentImageName,
+            [In, MarshalAs(UnmanagedType.LPStr)] string SymbolPath,
+            [In, MarshalAs(UnmanagedType.Bool)] bool fReBase,
+            [In, MarshalAs(UnmanagedType.Bool)] bool fRebaseSysfileOk,
+            [In, MarshalAs(UnmanagedType.Bool)] bool fGoingDown,
+            [In] uint CheckImageSize,
+            out uint OldImageSize,
+            out UIntPtr OldImageBase,
+            out uint NewImageSize,
+            ref UIntPtr NewImageBase,
+            [In] uint TimeStamp
+            );
+        #endregion
+        #region ReBaseImage64 function
+        /// <summary>
+        /// <para>Changes the load address for the specified image, which reduces the required load time for a DLL.</para>
+        /// <para>Alternatively, you can use the Rebase tool. This tool is available in Visual Studio and the <a href="http://go.microsoft.com/fwlink/p/?linkid=84091">Windows SDK</a>.</para>
+        /// </summary>
+        /// <param name="CurrentImageName">The name of the file to be rebased. You must specify the full path to the file unless the module is in the current working directory of the calling process.</param>
+        /// <param name="SymbolPath">The path used to find the corresponding symbol file. Specify this path for executable images that have symbolic information because when image addresses change, the corresponding symbol database file (PDB) may also need to be changed. Note that even if the symbol path is not valid, the function will succeed if it is able to rebases your image.</param>
+        /// <param name="fReBase">If this value is <c>true</c>, the image is rebased. Otherwise, the image is not rebased.</param>
+        /// <param name="fRebaseSysfileOk">If this value is <c>true</c>, the system image is rebased. Otherwise, the system image is not rebased.</param>
+        /// <param name="fGoingDown">If this value is <c>true</c>, the image can be rebased below the given base; otherwise, it cannot.</param>
+        /// <param name="CheckImageSize">The maximum size that the image can grow to, in bytes, or zero if there is no limit.</param>
+        /// <param name="OldImageSize">A variable that receives the original image size, in bytes.</param>
+        /// <param name="OldImageBase">A variable that receives the original image base.</param>
+        /// <param name="NewImageSize">A variable that receives the new image size after the rebase operation, in bytes.</param>
+        /// <param name="NewImageBase">The base address to use for rebasing the image. If the address is not available and the <paramref name="fGoingDown"/> parameter is set to <c>true</c>, the function finds a new base address and sets this parameter to the new base address. If <paramref name="fGoingDown"/> is <c>false</c>, the function finds a new base address but does not set this parameter to the new base address.</param>
+        /// <param name="TimeStamp">
+        /// <para>The new time date stamp for the image file header. The value must be represented in the number of seconds elapsed since midnight (00:00:00), January 1, 1970, Universal Coordinated Time, according to the system clock.</para>
+        /// <para>If this parameter is 0, the current file header time date stamp is incremented by 1 second.</para>
+        /// </param>
+        /// <returns>
+        /// If the function succeeds, the return value is <c>true</c>.
+        /// If the function fails, the return value is <c>false</c>. To retrieve extended error information, call <see cref="Marshal.GetLastWin32Error"/>.
+        /// </returns>
+        /// <remarks>
+        /// <para>The <see cref="ReBaseImage64"/> function changes the desired load address for the specified image. This operation involves reading the entire image and updating all fixups, debugging information, and checksum. You can rebase an image to reduce the required load time for its DLLs. If an application can rely on a DLL being loaded at the desired load address, then the system loader does not have to relocate the image. The image is simply loaded into the application's virtual address space and the <see cref="DllMain"/> function is called, if one is present.</para>
+        /// <para>All ImageHlp functions, such as this one, are single threaded. Therefore, calls from more than one thread to this function will likely result in unexpected behavior or memory corruption. To avoid this, you must synchronize all concurrent calls from more than one thread to this function.</para>
+        /// <para>You cannot rebase DLLs that link with /DYNAMICBASE or that reside in protected directories, such as the System32 folder.</para>
+        /// <para>As an alternative to using this function, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=152358">/BASE</a> linker option.</para>
+        /// <para><strong>Minimum supported client:</strong> Windows XP [desktop apps only]</para>
+        /// <para><strong>Minimum supported server:</strong> Windows Server 2003 [desktop apps only]</para>
+        /// <para>Original MSDN documentation: <a href="https://msdn.microsoft.com/en-us/library/aa363366.aspx">ReBaseImage64 function</a></para>
+        /// </remarks>
+        /// <seealso cref="DllMain"/>
+        /// <seealso cref="ReBaseImage"/>
+        [DllImport("Imagehlp.dll", CallingConvention = CallingConvention.StdCall, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool ReBaseImage64(
+            [In, MarshalAs(UnmanagedType.LPStr)] string CurrentImageName,
+            [In, MarshalAs(UnmanagedType.LPStr)] string SymbolPath,
+            [In, MarshalAs(UnmanagedType.Bool)] bool fReBase,
+            [In, MarshalAs(UnmanagedType.Bool)] bool fRebaseSysfileOk,
+            [In, MarshalAs(UnmanagedType.Bool)] bool fGoingDown,
+            [In] uint CheckImageSize,
+            out uint OldImageSize,
+            out UIntPtr OldImageBase,
+            out uint NewImageSize,
+            ref UIntPtr NewImageBase,
+            [In] uint TimeStamp
             );
         #endregion
         #region StatusRoutine callback function

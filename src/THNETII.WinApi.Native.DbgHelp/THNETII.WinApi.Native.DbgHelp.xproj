@@ -8,8 +8,8 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>eda3a8b0-a1a4-4726-8851-d3b2d879e271</ProjectGuid>
     <RootNamespace>Microsoft.Win32.WinApi.Diagnostics.DbgHelp</RootNamespace>
-    <BaseIntermediateOutputPath Condition="">$(SolutionDir)artifacts\$(Configuration)\$(Platform)\$(MSBuildProjectName)\obj\</BaseIntermediateOutputPath>
-    <OutputPath Condition="'$(OutputPath)'=='' ">$(SolutionDir)artifacts\$(Configuration)\$(Platform)\</OutputPath>
+    <BaseIntermediateOutputPath Condition="'$(BaseIntermediateOutputPath)'==''">.\obj\</BaseIntermediateOutputPath>
+    <OutputPath Condition="'$(OutputPath)'=='' ">.\bin\</OutputPath>
   </PropertyGroup>
   <PropertyGroup>
     <SchemaVersion>2.0</SchemaVersion>

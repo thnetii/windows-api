@@ -8,8 +8,8 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>97b45bf5-3571-4bdc-8a49-ec27989d8982</ProjectGuid>
     <RootNamespace>Microsoft.Win32.WinApi.Diagnostics.ApplicationRecovertRestart</RootNamespace>
-    <BaseIntermediateOutputPath Condition="">$(SolutionDir)artifacts\$(Configuration)\$(Platform)\$(MSBuildProjectName)\obj\</BaseIntermediateOutputPath>
-    <OutputPath Condition="'$(OutputPath)'=='' ">$(SolutionDir)artifacts\$(Configuration)\$(Platform)\</OutputPath>
+    <BaseIntermediateOutputPath Condition="'$(BaseIntermediateOutputPath)'==''">.\obj\</BaseIntermediateOutputPath>
+    <OutputPath Condition="'$(OutputPath)'=='' ">.\bin\</OutputPath>
   </PropertyGroup>
   <PropertyGroup>
     <SchemaVersion>2.0</SchemaVersion>

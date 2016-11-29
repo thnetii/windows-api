@@ -193,6 +193,29 @@ namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHelp
             out IMAGE_LOAD_CONFIG_DIRECTORY64 ImageConfigInformation
             );
         #endregion
+        #region GetImageUnusedHeaderBytes function
+        /// <summary>
+        /// Retrieves the offset and size of the part of the PE header that is currently unused.
+        /// </summary>
+        /// <param name="LoadedImage">A reference to a <see cref="LOADED_IMAGE"/> instance that is returned from a call to <see cref="MapAndLoad"/> or <see cref="ImageLoad"/>.</param>
+        /// <param name="SizeUnusedHeaderBytes">A variable to receive the size, in bytes, of the part of the image's header which is unused.</param>
+        /// <returns>
+        /// If the function succeeds, the return value is the offset from the base address of the first unused header byte.
+        /// If the function fails, the return value is zero. To retrieve extended error information, call <see cref="Marshal.GetLastWin32Error"/>.
+        /// </returns>
+        /// <remarks>
+        /// All ImageHlp functions, such as this one, are single threaded. Therefore, calls from more than one thread to this function will likely result in unexpected behavior or memory corruption. To avoid this, you must synchronize all concurrent calls from more than one thread to this function.
+        /// <para><strong>Minimum supported client:</strong> Windows XP [desktop apps only]</para>
+        /// <para><strong>Minimum supported server:</strong> Windows Server 2003 [desktop apps only]</para>
+        /// <para>Original MSDN documentation: <a href="https://msdn.microsoft.com/en-us/library/ms679359.aspx">GetImageUnusedHeaderBytes function</a></para>
+        /// </remarks>
+        /// <seealso cref="LOADED_IMAGE"/>
+        [DllImport("Imagehlp.dll", CallingConvention = CallingConvention.StdCall, SetLastError = true)]
+        public static extern int GetImageUnusedHeaderBytes(
+            [In, MarshalAs(UnmanagedType.LPStruct)] LOADED_IMAGE LoadedImage,
+            out int SizeUnusedHeaderBytes
+            );
+        #endregion
         #region StatusRoutine callback function
 #pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
         public enum IMAGEHLP_STATUS_REASON

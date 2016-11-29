@@ -119,6 +119,26 @@ namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHelp
             out int CheckSum
             );
         #endregion
+        #region DigestFunction callback function
+        /// <summary>
+        /// An application-defined callback function used by the <see cref="ImageGetDigestStream"/> function to process data.
+        /// </summary>
+        /// <param name="refdata">A user-supplied handle to the digest. This value is passed as a parameter to the <see cref="ImageGetDigestStream"/> function.</param>
+        /// <param name="pData">The data stream.</param>
+        /// <param name="dwLength">The size of the data stream, in bytes.</param>
+        /// <returns>If the function succeeds, the return value should be <c>true</c>. If the function fails, the return value should be <c>false</c>.</returns>
+        /// <remarks>
+        /// <para>Original MSDN documentation: <a href="https://msdn.microsoft.com/en-us/library/ms679313.aspx">DigestFunction callback function</a></para>
+        /// </remarks>
+        /// <seealso cref="ImageGetDigestStream"/>
+        [UnmanagedFunctionPointer(CallingConvention.StdCall)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public delegate bool DigestFunction(
+            [In] IntPtr refdata,
+            [In, MarshalAs(UnmanagedType.LPArray, SizeParamIndex = 2)] byte[] pData,
+            [In] int dwLength
+            );
+        #endregion
         #region StatusRoutine callback function
 #pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
         public enum IMAGEHLP_STATUS_REASON

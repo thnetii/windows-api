@@ -6,8 +6,8 @@
 
 void main()
 {
-	const int size = sizeof(IMAGE_FUNCTION_ENTRY64);
-	const int value = IMAGE_SCN_ALIGN_8192BYTES;
+	const int size = sizeof(IMAGE_NT_HEADERS);
+	const int value = IMAGE_NUMBEROF_DIRECTORY_ENTRIES;
 
 	void* ptr = GetApplicationRestartSettings;
 }

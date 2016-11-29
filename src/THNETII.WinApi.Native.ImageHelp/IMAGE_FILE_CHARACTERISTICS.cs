@@ -1,11 +1,12 @@
 ﻿using System;
 
-namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp
+namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHelp
 {
+#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
     [Flags]
     public enum IMAGE_FILE_CHARACTERISTICS : ushort
     {
-        /// <summary>Relocation info stripped from file.</summary>
+        /// <summary>Relocation information was stripped from the file. The file must be loaded at its preferred base address. If the base address is not available, the loader reports an error.</summary>
         IMAGE_FILE_RELOCS_STRIPPED = 0x0001,
         /// <summary>File is executable  (i.e. no unresolved external references).</summary>
         IMAGE_FILE_EXECUTABLE_IMAGE = 0x0002,
@@ -36,4 +37,5 @@ namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp
         /// <summary>Bytes of machine word are reversed.</summary>
         IMAGE_FILE_BYTES_REVERSED_HI = 0x8000,
     }
+#pragma warning restore CS1591 // Missing XML comment for publicly visible type or member
 }

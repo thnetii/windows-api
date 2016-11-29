@@ -6,7 +6,7 @@
 
 void main()
 {
-	const int size = sizeof(FPO_DATA);
+	const int size = sizeof(IMAGE_DEBUG_INFORMATION);
 	const int value = 0;
 
 	void* ptr = GetApplicationRestartSettings;

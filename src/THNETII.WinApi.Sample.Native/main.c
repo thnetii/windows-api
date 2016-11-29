@@ -10,5 +10,5 @@ void main()
 	const int size = sizeof(LOADED_IMAGE);
 	const int value = CERT_PE_IMAGE_DIGEST_DEBUG_INFO;
 
-	void* ptr = BindImageEx;
+	void* ptr = MapFileAndCheckSum;
 }

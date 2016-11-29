@@ -3,6 +3,8 @@ using System;
 using System.IO;
 using System.Runtime.InteropServices;
 
+using static Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHlp.CHECKSUM_STATUS;
+
 namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHlp
 {
     /// <summary>
@@ -295,6 +297,65 @@ namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHlp
         [return: MarshalAs(UnmanagedType.Bool)]
         public static extern bool ImageUnload(
             [In] IntPtr LoadedImage
+            );
+        #endregion
+        #region MapAndLoad function
+        /// <summary>
+        /// Maps an image and preloads data from the mapped file.
+        /// </summary>
+        /// <param name="ImageName">The file name of the image (executable file or DLL) that is loaded.</param>
+        /// <param name="DllPath">The path used to locate the image if the name provided cannot be found. If this parameter is <c>null</c>, then the search path rules set using the <see cref="SearchPath"/> function apply.</param>
+        /// <param name="LoadedImage">A <see cref="LOADED_IMAGE"/> variable that receives information about the image after it is loaded.</param>
+        /// <param name="DotDll">The default extension to be used if the image name does not contain a file name extension. If the value is <c>true</c>, a .DLL extension is used. If the value is <c>false</c>, then an .EXE extension is used.</param>
+        /// <param name="ReadOnly">The access mode. If this value is <c>true</c>, the file is mapped for read-access only. If the value is <c>false</c>, the file is mapped for read and write access.</param>
+        /// <returns>
+        /// </returns>
+        /// If the function succeeds, the return value is <c>true</c>.
+        /// If the function fails, the return value is <c>false</c>. To retrieve extended error information, call <see cref="Marshal.GetLastWin32Error"/>.
+        /// <remarks>
+        /// <para>The <see cref="MapAndLoad"/> function maps an image and preloads data from the mapped file. The corresponding function, <see cref="UnMapAndLoad"/>, must be used to deallocate all resources that are allocated by the <see cref="MapAndLoad"/> function. </para>
+        /// <para>All ImageHlp functions, such as this one, are single threaded. Therefore, calls from more than one thread to this function will likely result in unexpected behavior or memory corruption. To avoid this, you must synchronize all concurrent calls from more than one thread to this function.</para>
+        /// <para><strong>Minimum supported client:</strong> Windows XP [desktop apps only]</para>
+        /// <para><strong>Minimum supported server:</strong> Windows Server 2003 [desktop apps only]</para>
+        /// <para>Original MSDN documentation: <a href="https://msdn.microsoft.com/en-us/library/ms680353.aspx">MapAndLoad function</a></para>
+        /// </remarks>
+        /// <seealso cref="LOADED_IMAGE"/>
+        /// <seealso cref="UnMapAndLoad"/>
+        [DllImport("Imagehlp.dll", CallingConvention = CallingConvention.StdCall, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool MapAndLoad(
+            [In, MarshalAs(UnmanagedType.LPStr)] string ImageName,
+            [In, MarshalAs(UnmanagedType.LPStr)] string DllPath,
+            out LOADED_IMAGE LoadedImage,
+            [In, MarshalAs(UnmanagedType.Bool)] bool DotDll,
+            [In, MarshalAs(UnmanagedType.Bool)] bool ReadOnly
+            );
+        #endregion
+        #region MapFileAndCheckSum function
+        /// <summary>
+        /// Computes the checksum of the specified file.
+        /// </summary>
+        /// <param name="Filename">The file name of the file for which the checksum is to be computed.</param>
+        /// <param name="HeaderSum">A variable that receives the original checksum from the image file, or zero if there is an error.</param>
+        /// <param name="CheckSum">A variable that receives the computed checksum.</param>
+        /// <returns>If the function succeeds, the return value is <see cref="CHECKSUM_SUCCESS"/> (0).</returns>
+        /// <remarks>
+        /// <para>The <see cref="MapFileAndCheckSum"/> function computes a new checksum for the file and returns it in the <paramref name="CheckSum"/> parameter. This function is used by any application that creates or modifies an executable image. Checksums are required for kernel-mode drivers and some system DLLs. The linker computes the original checksum at link time, if you use the appropriate linker switch. For more details, see your linker documentation.</para>
+        /// <para>It is recommended that all images have valid checksums. It is the caller's responsibility to place the newly computed checksum into the mapped image and update the on-disk image of the file.</para>
+        /// <para>Passing a <paramref name="Filename"/> parameter that does not point to a valid executable image will produce unpredictable results. Any user of this function is encouraged to make sure that a valid executable image is being passed.</para>
+        /// <para>All ImageHlp functions, such as this one, are single threaded. Therefore, calls from more than one thread to this function will likely result in unexpected behavior or memory corruption. To avoid this, you must synchronize all concurrent calls from more than one thread to this function.</para>
+        /// <para><note>The Unicode implementation of this function calls the ASCII implementation and as a result, the function can fail if the codepage does not support the characters in the path. For example, if you pass a non-English Unicode file path, and the default codepage is English, the unrecognized non-English wide chars are converted to "??" and the file cannot be opened (the function returns <see cref="CHECKSUM_OPEN_FAILURE"/>).</note></para>
+        /// <para><strong>Minimum supported client:</strong> Windows XP [desktop apps only]</para>
+        /// <para><strong>Minimum supported server:</strong> Windows Server 2003 [desktop apps only]</para>
+        /// <para>Original MSDN documentation: <a href="https://msdn.microsoft.com/en-us/library/ms680355.aspx">MapFileAndCheckSum function</a></para>
+        /// </remarks>
+        /// <seealso cref="CheckSumMappedFile"/>
+        [DllImport("Imagehlp.dll", CallingConvention = CallingConvention.StdCall, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern CHECKSUM_STATUS MapFileAndCheckSum(
+            [In, MarshalAs(UnmanagedType.LPTStr)] string Filename,
+            out int HeaderSum,
+            out int CheckSum
             );
         #endregion
         #region StatusRoutine callback function

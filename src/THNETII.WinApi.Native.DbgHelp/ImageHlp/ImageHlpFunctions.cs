@@ -2,7 +2,7 @@
 using System;
 using System.IO;
 using System.Runtime.InteropServices;
-
+using System.Text;
 using static Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHlp.CHECKSUM_STATUS;
 
 namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHlp
@@ -509,6 +509,35 @@ namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHlp
         public static extern bool SetImageConfigInformation(
             [In, MarshalAs(UnmanagedType.LPStruct)] LOADED_IMAGE LoadedImage,
             [In, MarshalAs(UnmanagedType.LPStruct)] IMAGE_LOAD_CONFIG_DIRECTORY64 ImageConfigInformation
+            );
+        #endregion
+        #region SplitSymbols function
+        /// <summary>
+        /// Strips symbols from the specified image.
+        /// </summary>
+        /// <param name="ImageName">The name of the image from which to split symbols.</param>
+        /// <param name="SymbolsPath">The subdirectory for storing symbols. This parameter is optional and can be <c>null</c>.</param>
+        /// <param name="SymbolFilePath">The name of the generated symbol file. This file typically has a .dbg extension.</param>
+        /// <param name="Flags">The information to be split from the image.</param>
+        /// <returns>
+        /// If the function succeeds, the return value is <c>true</c>.
+        /// If the function fails, the return value is <c>false</c>. To retrieve extended error information, call <see cref="Marshal.GetLastWin32Error"/>.
+        /// </returns>
+        /// <remarks>
+        /// <para>The <see cref="SplitSymbols"/> function should be used when stripping symbols from an image. It will create a symbol file that all compatible debuggers understand. The format is defined in WinNT.h and consists of an image header, followed by the array of section headers, the FPO information, and all debugging symbolic information from the image.</para>
+        /// <para>If the <paramref name="SymbolsPath"/> parameter is <c>null</c>, the symbol file is stored in the directory where the image exists. Otherwise, it is stored in the subdirectory below <paramref name="SymbolsPath"/> that matches the extension of the image. Using this method reduces the chances of symbol file collision. For example, the symbols for myapp.exe will be in the <c><paramref name="SymbolsPath"/>\exe</c> directory and the symbols for myapp.dll will be in the <c><paramref name="SymbolsPath"/>\dll</c> directory.</para>
+        /// <para>All ImageHlp functions, such as this one, are single threaded. Therefore, calls from more than one thread to this function will likely result in unexpected behavior or memory corruption. To avoid this, you must synchronize all concurrent calls from more than one thread to this function.</para>
+        /// <para><strong>Minimum supported client:</strong> Windows XP [desktop apps only]</para>
+        /// <para><strong>Minimum supported server:</strong> Windows Server 2003 [desktop apps only]</para>
+        /// <para>Original MSDN documentation: <a href="https://msdn.microsoft.com/en-us/library/ms680644.aspx">SplitSymbols function</a></para>
+        /// </remarks>
+        [DllImport("Imagehlp.dll", CallingConvention = CallingConvention.StdCall, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool SplitSymbols(
+            [In, MarshalAs(UnmanagedType.LPStr)] string ImageName,
+            [In, MarshalAs(UnmanagedType.LPStr)] string SymbolsPath,
+            [Out, MarshalAs(UnmanagedType.LPStr)] StringBuilder SymbolFilePath,
+            [In, MarshalAs(UnmanagedType.I4)] SPLITSYM_FLAGS Flags
             );
         #endregion
         #region StatusRoutine callback function

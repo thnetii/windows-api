@@ -8,7 +8,7 @@
 void main()
 {
 	const int size = sizeof(LOADED_IMAGE);
-	const int value = CERT_PE_IMAGE_DIGEST_DEBUG_INFO;
+	const int value = SPLITSYM_REMOVE_PRIVATE;
 
 	void* ptr = MapFileAndCheckSum;
 }

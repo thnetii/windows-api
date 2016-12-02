@@ -29,7 +29,7 @@ namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp
         /// <summary>
         /// A handle to the mapped file.
         /// </summary>
-        public SafeFileHandle hFile;
+        public IntPtr hFilePtr;
         /// <summary>
         /// The base address of the mapped file.
         /// </summary>
@@ -54,8 +54,13 @@ namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp
         /// </summary>
         public IntPtr Sections;
         /// <summary>The image characteristics value.</summary>
-        [MarshalAs(UnmanagedType.I4)]
-        public IMAGE_FILE_CHARACTERISTICS Characteristics;
+        protected int ulCharacteristics;
+        /// <summary>The image characteristics value.</summary>
+        public IMAGE_FILE_CHARACTERISTICS Characteristics
+        {
+            get { return (IMAGE_FILE_CHARACTERISTICS)ulCharacteristics; }
+            set { ulCharacteristics = (int)value; }
+        }
         /// <summary>
         /// If the image is a kernel mode executable image, this value is <c>true</c>.
         /// </summary>

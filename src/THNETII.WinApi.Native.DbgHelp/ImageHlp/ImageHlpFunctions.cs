@@ -15,7 +15,7 @@ namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHlp
     /// <remarks>
     /// <para>Original MSDN documentation: <a href="https://msdn.microsoft.com/en-us/library/ms680181.aspx">ImageHlp Functions</a></para>
     /// </remarks>
-    public static class ImageHelpFunctions
+    public static class ImageHlpFunctions
     {
         #region BindImage function
         /// <summary>
@@ -271,8 +271,7 @@ namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHlp
         /// <para>Original MSDN documentation: <a href="https://msdn.microsoft.com/en-us/library/ms680209.aspx">ImageLoad function</a></para>
         /// </remarks>
         [DllImport("Imagehlp.dll", CallingConvention = CallingConvention.StdCall, SetLastError = true)]
-        [return: MarshalAs(UnmanagedType.LPStruct)]
-        public static extern IntPtr ImageLoad(
+        public static extern LoadedImageHandle ImageLoad(
             [In, MarshalAs(UnmanagedType.LPStr)] string DllName,
             [In, MarshalAs(UnmanagedType.LPStr)] string DllPath
             );
@@ -281,7 +280,7 @@ namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHlp
         /// <summary>
         /// Deallocates resources from a previous call to the <see cref="ImageLoad"/> function.
         /// </summary>
-        /// <param name="LoadedImage">A pointer to a <see cref="LOADED_IMAGE"/> instance that is returned from a call to the <see cref="ImageLoad"/> function.</param>
+        /// <param name="LoadedImage">A handle to a <see cref="LOADED_IMAGE"/> instance that is returned from a call to the <see cref="ImageLoad"/> function.</param>
         /// <returns>
         /// If the function succeeds, the return value is <c>true</c>.
         /// If the function fails, the return value is <c>false</c>. To retrieve extended error information, call <see cref="Marshal.GetLastWin32Error"/>.

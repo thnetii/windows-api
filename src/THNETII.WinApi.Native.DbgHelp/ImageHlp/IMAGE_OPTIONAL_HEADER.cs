@@ -5,16 +5,26 @@ using static Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHlp.IMAGE_DATA_DIRE
 
 namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHlp
 {
+#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
+    public enum IMAGE_OPTIONAL_HDR_MAGIC : short
+    {
+        IMAGE_NT_OPTIONAL_HDR32_MAGIC = 0x10b,
+        IMAGE_NT_OPTIONAL_HDR64_MAGIC = 0x20b,
+        IMAGE_ROM_OPTIONAL_HDR_MAGIC = 0x107
+    }
+#pragma warning restore CS1591 // Missing XML comment for publicly visible type or member
+
     /*
     #define IMAGE_NT_OPTIONAL_HDR32_MAGIC      0x10b
     #define IMAGE_NT_OPTIONAL_HDR64_MAGIC      0x20b
     #define IMAGE_ROM_OPTIONAL_HDR_MAGIC       0x107
     */
 
-    public struct IMAGE_OPTIONAL_HEADER_COMMON
+    public class IMAGE_OPTIONAL_HEADER_COMMON
     {
         /// <summary>The state of the image file.</summary>
-        public short Magic;
+        [MarshalAs(UnmanagedType.I2)]
+        public IMAGE_OPTIONAL_HDR_MAGIC Magic;
         /// <summary>The major version number of the linker.</summary>
         public byte MajorLinkerVersion;
         /// <summary>The minor version number of the linker.</summary>
@@ -34,11 +44,9 @@ namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHlp
 #pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
     public class IMAGE_ROM_OPTIONAL_HEADER
     {
-        public const short IMAGE_ROM_OPTIONAL_HDR_MAGIC = 0x107;
-
         private IMAGE_OPTIONAL_HEADER_COMMON commonHeader;
         /// <summary>The state of the image file.</summary>
-        public short Magic
+        public IMAGE_OPTIONAL_HDR_MAGIC Magic
         {
             get { return commonHeader.Magic; }
             set { commonHeader.Magic = value; }
@@ -104,14 +112,9 @@ namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHlp
     [StructLayout(LayoutKind.Sequential)]
     public class IMAGE_OPTIONAL_HEADER32
     {
-        /// <summary>
-        /// The file is an executable image.
-        /// </summary>
-        public const short IMAGE_NT_OPTIONAL_HDR32_MAGIC = 0x10b;
-
         private IMAGE_OPTIONAL_HEADER_COMMON commonHeader;
         /// <summary>The state of the image file.</summary>
-        public short Magic
+        public IMAGE_OPTIONAL_HDR_MAGIC Magic
         {
             get { return commonHeader.Magic; }
             set { commonHeader.Magic = value; }
@@ -251,11 +254,9 @@ namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHlp
     [StructLayout(LayoutKind.Sequential)]
     public class IMAGE_OPTIONAL_HEADER64
     {
-        public const short IMAGE_NT_OPTIONAL_HDR64_MAGIC = 0x20b;
-
         private IMAGE_OPTIONAL_HEADER_COMMON commonHeader;
         /// <summary>The state of the image file.</summary>
-        public short Magic
+        public IMAGE_OPTIONAL_HDR_MAGIC Magic
         {
             get { return commonHeader.Magic; }
             set { commonHeader.Magic = value; }

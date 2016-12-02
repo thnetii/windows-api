@@ -1,4 +1,5 @@
-﻿using System.Runtime.InteropServices;
+﻿using System;
+using System.Runtime.InteropServices;
 
 namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHlp
 {
@@ -13,6 +14,8 @@ namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHlp
     [StructLayout(LayoutKind.Sequential)]
     public class IMAGE_FILE_HEADER
     {
+        private static readonly DateTime TimeStampBase = new DateTime(1970, 1, 1, 0, 0, 0, kind: DateTimeKind.Utc);
+
         /// <summary>
         /// The architecture type of the computer. An image file can only be run on the specified computer or a system that emulates the specified computer.
         /// </summary>
@@ -25,7 +28,17 @@ namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHlp
         /// <summary>
         /// The low 32 bits of the time stamp of the image. This represents the date and time the image was created by the linker. The value is represented in the number of seconds elapsed since midnight (00:00:00), January 1, 1970, Universal Coordinated Time, according to the system clock.
         /// </summary>
-        public int TimeDateStamp;
+        public uint TimeDateStamp;
+        public DateTime TimeStampAsDateTime
+        {
+            get { return TimeStampBase.AddSeconds(TimeDateStamp); }
+            set
+            {
+                if (value == default(DateTime))
+                    TimeDateStamp = 0U;
+                TimeDateStamp = (uint)((value - TimeStampBase).TotalSeconds);
+            }
+        }
         /// <summary>
         /// The offset of the symbol table, in bytes, or zero if no COFF symbol table exists.
         /// </summary>

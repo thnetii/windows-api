@@ -607,6 +607,30 @@ namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHlp
             [In] UIntPtr Parameter
             );
         #endregion
+        #region TouchFileTimes function
+        /// <summary>
+        /// Updates the date and time at which the specified file was last modified.
+        /// </summary>
+        /// <param name="FileHandle">A handle to the file of interest.</param>
+        /// <param name="pSystemTime">A <see cref="SYSTEMTIME"/> instance. If this parameter is <c>null</c>, the current system date and time is used.</param>
+        /// <returns>
+        /// If the function succeeds, the return value is <c>true</c>.
+        /// If the function fails, the return value is <c>false</c>. To retrieve extended error information, call <see cref="Marshal.GetLastWin32Error"/>.
+        /// </returns>
+        /// <remarks>
+        /// All ImageHlp functions, such as this one, are single threaded. Therefore, calls from more than one thread to this function will likely result in unexpected behavior or memory corruption. To avoid this, you must synchronize all concurrent calls from more than one thread to this function.
+        /// <para><strong>Minimum supported client:</strong> Windows XP [desktop apps only]</para>
+        /// <para><strong>Minimum supported server:</strong> Windows Server 2003 [desktop apps only]</para>
+        /// <para>Original MSDN documentation: <a href="https://msdn.microsoft.com/en-us/library/ms681398.asp">TouchFileTimes function</a></para>
+        /// </remarks>
+        /// <seealso cref="SYSTEMTIME"/>
+        [DllImport("Imagehlp.dll", CallingConvention = CallingConvention.StdCall, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool TouchFileTimes(
+            [In] SafeFileHandle FileHandle,
+            [In, MarshalAs(UnmanagedType.LPStruct)] SYSTEMTIME pSystemTime
+            );
+        #endregion
         #region UnMapAndLoad function
         /// <summary>
         /// Deallocate all resources that are allocated by a previous call to the <see cref="MapAndLoad "/> function.
@@ -635,7 +659,7 @@ namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHlp
         /// <summary>
         /// Uses the specified information to update the corresponding fields in the symbol file.
         /// <para><note>This function works with .dbg files, not .pdb files.</note></para>
-        /// <para>This function has been superseded by the <see cref="UpdateDebugInfoFileEx"/> function. Use <see cref="UpdateDebugInfoFileEx"/> to verify the checksum value.</para>
+        /// <para>This function has been superseded by the <see cref="UpdateDebugInfoFileEx(string, string, StringBuilder, IMAGE_NT_HEADERS32, int)"/> function. Use <see cref="UpdateDebugInfoFileEx(string, string, StringBuilder, IMAGE_NT_HEADERS32, int)"/> to verify the checksum value.</para>
         /// </summary>
         /// <param name="ImageFileName">The name of the image that is now out of date with respect to its symbol file.</param>
         /// <param name="SymbolPath">The path in which to look for the symbol file.</param>
@@ -653,7 +677,7 @@ namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHlp
         /// <para>Original MSDN documentation: <a href="https://msdn.microsoft.com/en-us/library/ms681406.asp">UpdateDebugInfoFile function</a></para>
         /// </remarks>
         /// <seealso cref="IMAGE_NT_HEADERS32"/>
-        /// <seealso cref="UpdateDebugInfoFileEx"/>
+        /// <seealso cref="UpdateDebugInfoFileEx(string, string, StringBuilder, IMAGE_NT_HEADERS32, int)"/>
         [DllImport("Imagehlp.dll", CallingConvention = CallingConvention.StdCall, SetLastError = true)]
         [return: MarshalAs(UnmanagedType.Bool)]
         public static extern bool UpdateDebugInfoFile(
@@ -666,7 +690,7 @@ namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHlp
         /// <summary>
         /// Uses the specified information to update the corresponding fields in the symbol file.
         /// <para><note>This function works with .dbg files, not .pdb files.</note></para>
-        /// <para>This function has been superseded by the <see cref="UpdateDebugInfoFileEx"/> function. Use <see cref="UpdateDebugInfoFileEx"/> to verify the checksum value.</para>
+        /// <para>This function has been superseded by the <see cref="UpdateDebugInfoFileEx(string, string, StringBuilder, IMAGE_NT_HEADERS64, int)"/> function. Use <see cref="UpdateDebugInfoFileEx(string, string, StringBuilder, IMAGE_NT_HEADERS64, int)"/> to verify the checksum value.</para>
         /// </summary>
         /// <param name="ImageFileName">The name of the image that is now out of date with respect to its symbol file.</param>
         /// <param name="SymbolPath">The path in which to look for the symbol file.</param>
@@ -684,7 +708,7 @@ namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHlp
         /// <para>Original MSDN documentation: <a href="https://msdn.microsoft.com/en-us/library/ms681406.asp">UpdateDebugInfoFile function</a></para>
         /// </remarks>
         /// <seealso cref="IMAGE_NT_HEADERS64"/>
-        /// <seealso cref="UpdateDebugInfoFileEx"/>
+        /// <seealso cref="UpdateDebugInfoFileEx(string, string, StringBuilder, IMAGE_NT_HEADERS64, int)"/>
         [DllImport("Imagehlp.dll", CallingConvention = CallingConvention.StdCall, SetLastError = true)]
         [return: MarshalAs(UnmanagedType.Bool)]
         public static extern bool UpdateDebugInfoFile(
@@ -692,6 +716,69 @@ namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHlp
             [In, MarshalAs(UnmanagedType.LPStr)] string SymbolPath,
             [Out, MarshalAs(UnmanagedType.LPStr)] StringBuilder DebugFilePath,
             [In, MarshalAs(UnmanagedType.LPStruct)] IMAGE_NT_HEADERS64 NtHeaders
+            );
+        #endregion
+        #region UpdateDebugInfoFileEx function
+        /// <summary>
+        /// Uses the specified extended information to update the corresponding fields in the symbol file.
+        /// <para><note>This function works with .dbg files, not .pdb files.</note></para>
+        /// </summary>
+        /// <param name="ImageFileName">The name of the image that is now out of date with respect to its symbol file.</param>
+        /// <param name="SymbolPath">The path in which to look for the symbol file.</param>
+        /// <param name="DebugFilePath">A buffer that receives the name of the symbol file that was updated.</param>
+        /// <param name="NtHeaders">An <see cref="IMAGE_NT_HEADERS32"/> instance that specifies the new header information.</param>
+        /// <param name="OldChecksum">The original checksum value. If this value does not match the checksum that is present in the mapped image, the flags in the symbol file contain <see cref="IMAGE_SEPARATE_DEBUG_MISMATCH"/> and the last error value is set to <see cref="ERROR_INVALID_DATA"/>. </param>
+        /// <returns>
+        /// If the function succeeds, the return value is <c>true</c>.
+        /// If the function fails, the return value is <c>false</c>. To retrieve extended error information, call <see cref="Marshal.GetLastWin32Error"/>.
+        /// </returns>
+        /// <remarks>
+        /// <para>The <see cref="UpdateDebugInfoFileEx(string, string, StringBuilder, IMAGE_NT_HEADERS32, int)"/> function takes the information stored in the <see cref="IMAGE_NT_HEADERS32"/> instance and updates the corresponding fields in the symbol file. Any time an image file is modified, this function should be called to keep the numbers in sync. Specifically, whenever an image checksum changes, the symbol file should be updated to match.</para>
+        /// <para>All ImageHlp functions, such as this one, are single threaded. Therefore, calls from more than one thread to this function will likely result in unexpected behavior or memory corruption. To avoid this, you must synchronize all concurrent calls from more than one thread to this function.</para>
+        /// <para><strong>Minimum supported client:</strong> Windows XP [desktop apps only]</para>
+        /// <para><strong>Minimum supported server:</strong> Windows Server 2003 [desktop apps only]</para>
+        /// <para>Original MSDN documentation: <a href="https://msdn.microsoft.com/en-us/library/ms681407.asp">UpdateDebugInfoFileEx function</a></para>
+        /// </remarks>
+        /// <seealso cref="IMAGE_NT_HEADERS32"/>
+        [DllImport("Imagehlp.dll", CallingConvention = CallingConvention.StdCall, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool UpdateDebugInfoFileEx(
+            [In, MarshalAs(UnmanagedType.LPStr)] string ImageFileName,
+            [In, MarshalAs(UnmanagedType.LPStr)] string SymbolPath,
+            [Out, MarshalAs(UnmanagedType.LPStr)] StringBuilder DebugFilePath,
+            [In, MarshalAs(UnmanagedType.LPStruct)] IMAGE_NT_HEADERS32 NtHeaders,
+            [In] int OldChecksum
+            );
+
+        /// <summary>
+        /// Uses the specified extended information to update the corresponding fields in the symbol file.
+        /// <para><note>This function works with .dbg files, not .pdb files.</note></para>
+        /// </summary>
+        /// <param name="ImageFileName">The name of the image that is now out of date with respect to its symbol file.</param>
+        /// <param name="SymbolPath">The path in which to look for the symbol file.</param>
+        /// <param name="DebugFilePath">A buffer that receives the name of the symbol file that was updated.</param>
+        /// <param name="NtHeaders">An <see cref="IMAGE_NT_HEADERS64"/> instance that specifies the new header information.</param>
+        /// <param name="OldChecksum">The original checksum value. If this value does not match the checksum that is present in the mapped image, the flags in the symbol file contain <see cref="IMAGE_SEPARATE_DEBUG_MISMATCH"/> and the last error value is set to <see cref="ERROR_INVALID_DATA"/>. </param>
+        /// <returns>
+        /// If the function succeeds, the return value is <c>true</c>.
+        /// If the function fails, the return value is <c>false</c>. To retrieve extended error information, call <see cref="Marshal.GetLastWin32Error"/>.
+        /// </returns>
+        /// <remarks>
+        /// <para>The <see cref="UpdateDebugInfoFileEx(string, string, StringBuilder, IMAGE_NT_HEADERS64, int)"/> function takes the information stored in the <see cref="IMAGE_NT_HEADERS64"/> instance and updates the corresponding fields in the symbol file. Any time an image file is modified, this function should be called to keep the numbers in sync. Specifically, whenever an image checksum changes, the symbol file should be updated to match.</para>
+        /// <para>All ImageHlp functions, such as this one, are single threaded. Therefore, calls from more than one thread to this function will likely result in unexpected behavior or memory corruption. To avoid this, you must synchronize all concurrent calls from more than one thread to this function.</para>
+        /// <para><strong>Minimum supported client:</strong> Windows XP [desktop apps only]</para>
+        /// <para><strong>Minimum supported server:</strong> Windows Server 2003 [desktop apps only]</para>
+        /// <para>Original MSDN documentation: <a href="https://msdn.microsoft.com/en-us/library/ms681407.asp">UpdateDebugInfoFileEx function</a></para>
+        /// </remarks>
+        /// <seealso cref="IMAGE_NT_HEADERS64"/>
+        [DllImport("Imagehlp.dll", CallingConvention = CallingConvention.StdCall, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool UpdateDebugInfoFileEx(
+            [In, MarshalAs(UnmanagedType.LPStr)] string ImageFileName,
+            [In, MarshalAs(UnmanagedType.LPStr)] string SymbolPath,
+            [Out, MarshalAs(UnmanagedType.LPStr)] StringBuilder DebugFilePath,
+            [In, MarshalAs(UnmanagedType.LPStruct)] IMAGE_NT_HEADERS64 NtHeaders,
+            [In] int OldChecksum
             );
         #endregion
     }

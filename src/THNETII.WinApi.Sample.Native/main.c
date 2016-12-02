@@ -8,7 +8,7 @@
 void main()
 {
 	const int size = sizeof(LOADED_IMAGE);
-	const int value = SPLITSYM_REMOVE_PRIVATE;
+	const int value = IMAGE_SEPARATE_DEBUG_MISMATCH;
 
 	void* ptr = MapFileAndCheckSum;
 }

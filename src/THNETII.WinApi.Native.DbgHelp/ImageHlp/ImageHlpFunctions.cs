@@ -631,5 +631,68 @@ namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHlp
             [In, MarshalAs(UnmanagedType.LPStruct)] LOADED_IMAGE LoadedImage
             );
         #endregion
+        #region UpdateDebugInfoFile function
+        /// <summary>
+        /// Uses the specified information to update the corresponding fields in the symbol file.
+        /// <para><note>This function works with .dbg files, not .pdb files.</note></para>
+        /// <para>This function has been superseded by the <see cref="UpdateDebugInfoFileEx"/> function. Use <see cref="UpdateDebugInfoFileEx"/> to verify the checksum value.</para>
+        /// </summary>
+        /// <param name="ImageFileName">The name of the image that is now out of date with respect to its symbol file.</param>
+        /// <param name="SymbolPath">The path in which to look for the symbol file.</param>
+        /// <param name="DebugFilePath">A buffer that receives the name of the symbol file that was updated.</param>
+        /// <param name="NtHeaders">An <see cref="IMAGE_NT_HEADERS32"/> instance that specifies the new header information.</param>
+        /// <returns>
+        /// If the function succeeds, the return value is <c>true</c>.
+        /// If the function fails, the return value is <c>false</c>. To retrieve extended error information, call <see cref="Marshal.GetLastWin32Error"/>.
+        /// </returns>
+        /// <remarks>
+        /// <para>The <see cref="UpdateDebugInfoFile(string, string, StringBuilder, IMAGE_NT_HEADERS32)"/> function takes the information stored in the <see cref="IMAGE_NT_HEADERS32"/> instance and updates the corresponding fields in the symbol file. Any time an image file is modified, this function should be called to keep the numbers in sync. Specifically, whenever an image checksum changes, the symbol file should be updated to match.</para>
+        /// <para>All ImageHlp functions, such as this one, are single threaded. Therefore, calls from more than one thread to this function will likely result in unexpected behavior or memory corruption. To avoid this, you must synchronize all concurrent calls from more than one thread to this function.</para>
+        /// <para><strong>Minimum supported client:</strong> Windows XP [desktop apps only]</para>
+        /// <para><strong>Minimum supported server:</strong> Windows Server 2003 [desktop apps only]</para>
+        /// <para>Original MSDN documentation: <a href="https://msdn.microsoft.com/en-us/library/ms681406.asp">UpdateDebugInfoFile function</a></para>
+        /// </remarks>
+        /// <seealso cref="IMAGE_NT_HEADERS32"/>
+        /// <seealso cref="UpdateDebugInfoFileEx"/>
+        [DllImport("Imagehlp.dll", CallingConvention = CallingConvention.StdCall, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool UpdateDebugInfoFile(
+            [In, MarshalAs(UnmanagedType.LPStr)] string ImageFileName,
+            [In, MarshalAs(UnmanagedType.LPStr)] string SymbolPath,
+            [Out, MarshalAs(UnmanagedType.LPStr)] StringBuilder DebugFilePath,
+            [In, MarshalAs(UnmanagedType.LPStruct)] IMAGE_NT_HEADERS32 NtHeaders
+            );
+
+        /// <summary>
+        /// Uses the specified information to update the corresponding fields in the symbol file.
+        /// <para><note>This function works with .dbg files, not .pdb files.</note></para>
+        /// <para>This function has been superseded by the <see cref="UpdateDebugInfoFileEx"/> function. Use <see cref="UpdateDebugInfoFileEx"/> to verify the checksum value.</para>
+        /// </summary>
+        /// <param name="ImageFileName">The name of the image that is now out of date with respect to its symbol file.</param>
+        /// <param name="SymbolPath">The path in which to look for the symbol file.</param>
+        /// <param name="DebugFilePath">A buffer that receives the name of the symbol file that was updated.</param>
+        /// <param name="NtHeaders">An <see cref="IMAGE_NT_HEADERS64"/> instance that specifies the new header information.</param>
+        /// <returns>
+        /// If the function succeeds, the return value is <c>true</c>.
+        /// If the function fails, the return value is <c>false</c>. To retrieve extended error information, call <see cref="Marshal.GetLastWin32Error"/>.
+        /// </returns>
+        /// <remarks>
+        /// <para>The <see cref="UpdateDebugInfoFile(string, string, StringBuilder, IMAGE_NT_HEADERS64)"/> function takes the information stored in the <see cref="IMAGE_NT_HEADERS64"/> instance and updates the corresponding fields in the symbol file. Any time an image file is modified, this function should be called to keep the numbers in sync. Specifically, whenever an image checksum changes, the symbol file should be updated to match.</para>
+        /// <para>All ImageHlp functions, such as this one, are single threaded. Therefore, calls from more than one thread to this function will likely result in unexpected behavior or memory corruption. To avoid this, you must synchronize all concurrent calls from more than one thread to this function.</para>
+        /// <para><strong>Minimum supported client:</strong> Windows XP [desktop apps only]</para>
+        /// <para><strong>Minimum supported server:</strong> Windows Server 2003 [desktop apps only]</para>
+        /// <para>Original MSDN documentation: <a href="https://msdn.microsoft.com/en-us/library/ms681406.asp">UpdateDebugInfoFile function</a></para>
+        /// </remarks>
+        /// <seealso cref="IMAGE_NT_HEADERS64"/>
+        /// <seealso cref="UpdateDebugInfoFileEx"/>
+        [DllImport("Imagehlp.dll", CallingConvention = CallingConvention.StdCall, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool UpdateDebugInfoFile(
+            [In, MarshalAs(UnmanagedType.LPStr)] string ImageFileName,
+            [In, MarshalAs(UnmanagedType.LPStr)] string SymbolPath,
+            [Out, MarshalAs(UnmanagedType.LPStr)] StringBuilder DebugFilePath,
+            [In, MarshalAs(UnmanagedType.LPStruct)] IMAGE_NT_HEADERS64 NtHeaders
+            );
+        #endregion
     }
 }

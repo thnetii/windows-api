@@ -1,4 +1,5 @@
 ﻿using Microsoft.Win32.SafeHandles;
+using Microsoft.Win32.WindowsProtocols.MsDTyp;
 using System;
 using System.IO;
 using System.Runtime.InteropServices;

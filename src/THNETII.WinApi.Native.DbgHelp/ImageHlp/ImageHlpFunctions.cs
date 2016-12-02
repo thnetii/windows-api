@@ -4,6 +4,7 @@ using System.IO;
 using System.Runtime.InteropServices;
 using System.Text;
 using static Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHlp.CHECKSUM_STATUS;
+using static Microsoft.Win32.WindowsProtocols.MsErrRef.Win32ErrorCode;
 
 namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHlp
 {

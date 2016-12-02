@@ -529,7 +529,7 @@ namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHlp
         /// <para>All ImageHlp functions, such as this one, are single threaded. Therefore, calls from more than one thread to this function will likely result in unexpected behavior or memory corruption. To avoid this, you must synchronize all concurrent calls from more than one thread to this function.</para>
         /// <para><strong>Minimum supported client:</strong> Windows XP [desktop apps only]</para>
         /// <para><strong>Minimum supported server:</strong> Windows Server 2003 [desktop apps only]</para>
-        /// <para>Original MSDN documentation: <a href="https://msdn.microsoft.com/en-us/library/ms680644.aspx">SplitSymbols function</a></para>
+        /// <para>Original MSDN documentation: <a href="https://msdn.microsoft.com/en-us/library/ms680644.asp">SplitSymbols function</a></para>
         /// </remarks>
         [DllImport("Imagehlp.dll", CallingConvention = CallingConvention.StdCall, SetLastError = true)]
         [return: MarshalAs(UnmanagedType.Bool)]
@@ -605,6 +605,30 @@ namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHlp
             [In, MarshalAs(UnmanagedType.LPStr)] string DllPath,
             [In] UIntPtr Va,
             [In] UIntPtr Parameter
+            );
+        #endregion
+        #region UnMapAndLoad function
+        /// <summary>
+        /// Deallocate all resources that are allocated by a previous call to the <see cref="MapAndLoad "/> function.
+        /// </summary>
+        /// <param name="LoadedImage">A reference to a <see cref="LOADED_IMAGE"/> instance. This instance is obtained through a call to the <see cref="MapAndLoad"/> function.</param>
+        /// <returns>
+        /// If the function succeeds, the return value is <c>true</c>.
+        /// If the function fails, the return value is <c>false</c>. To retrieve extended error information, call <see cref="Marshal.GetLastWin32Error"/>.
+        /// </returns>
+        /// <remarks>
+        /// <para>The <see cref="UnMapAndLoad"/> function must be used to deallocate all resources that are allocated by a previous call to <see cref="MapAndLoad"/>. This function also writes a new checksum value into the image before the file is closed. This ensures that if a file is changed, it can be successfully loaded by the system loader.</para>
+        /// <para>All ImageHlp functions, such as this one, are single threaded. Therefore, calls from more than one thread to this function will likely result in unexpected behavior or memory corruption. To avoid this, you must synchronize all concurrent calls from more than one thread to this function.</para>
+        /// <para><strong>Minimum supported client:</strong> Windows XP [desktop apps only]</para>
+        /// <para><strong>Minimum supported server:</strong> Windows Server 2003 [desktop apps only]</para>
+        /// <para>Original MSDN documentation: <a href="https://msdn.microsoft.com/en-us/library/ms681404.asp">UnMapAndLoad function</a></para>
+        /// </remarks>
+        /// <seealso cref="LOADED_IMAGE"/>
+        /// <seealso cref="MapAndLoad"/>
+        [DllImport("Imagehlp.dll", CallingConvention = CallingConvention.StdCall, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool UnMapAndLoad(
+            [In, MarshalAs(UnmanagedType.LPStruct)] LOADED_IMAGE LoadedImage
             );
         #endregion
     }

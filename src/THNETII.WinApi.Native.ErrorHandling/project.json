@@ -1,0 +1,31 @@
+﻿{
+  "version": "0.0.1-msdnlibrary-ms679320",
+  "authors": [ "Fredrik Høisæther Rasch" ],
+
+  "tooling": { "defaultNamespace": "Microsoft.Win32.WinApi.Diagnostics.ErrorHandling" },
+
+  "buildOptions": {
+    "xmlDoc": true
+  },
+
+  "dependencies": {
+    "THNETII.WindowsProtocols.MsErrRef": { "target": "project" },
+
+    "NETStandard.Library": "1.6.1-*"
+  },
+
+  "frameworks": {
+    "netstandard1.1": {
+      "imports": [ "dotnet5.2", "portable-net45+win8" ],
+      "buildOptions": { "debugType": "portable" }
+    }
+  },
+
+  "packOptions": {
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/couven92/thnetii-windows-api.git"
+    }
+  }
+
+}

@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Runtime.InteropServices;
-using System.Windows.Forms;
+using System.Text;
 
-using static Microsoft.Win32.WinApi.Diagnostics.ErrorHandling.SystemErrorCodes;
+using static Microsoft.Win32.WinApi.Diagnostics.ErrorHandling.ErrorHandlingFunctions.FORMAT_MESSAGE_FLAG;
+using static Microsoft.Win32.WindowsProtocols.MsErrRef.Win32ErrorCode;
 
 namespace Microsoft.Win32.WinApi.Diagnostics.ErrorHandling
 {
@@ -85,7 +86,7 @@ namespace Microsoft.Win32.WinApi.Diagnostics.ErrorHandling
         /// <para>Original MSDN documenation page: <a href="https://msdn.microsoft.com/en-us/library/ms679336.aspx">FatalAppExit function</a></para>
         /// </remarks>
         /// <seealso cref="FatalExit"/>
-        [DllImport("Kernel32.dll", CallingConvention = CallingConvention.Winapi)]
+        [DllImport("Kernel32.dll", CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Unicode, EntryPoint = nameof(FatalAppExit) + "W")]
         public static extern void FatalAppExit(
             [In] int uAction,
             [In, MarshalAs(UnmanagedType.LPTStr)] string lpMessageText
@@ -136,6 +137,92 @@ namespace Microsoft.Win32.WinApi.Diagnostics.ErrorHandling
             [In, MarshalAs(UnmanagedType.LPStruct)] FLASHWINFO pfwi
             );
         #endregion
+        #region FormatMessage function
+#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
+        public enum FORMAT_MESSAGE_FLAG : int
+        {
+            /// <summary>The function allocates a buffer large enough to hold the formatted message.</summary>
+            FORMAT_MESSAGE_ALLOCATE_BUFFER = 0x00000100,
+            /// <summary>
+            /// The values to be inserted into the formatted message are passed as an array.
+            /// This flag must be specified to format messages with inserts when using the CLR.
+            /// </summary>
+            FORMAT_MESSAGE_ARGUMENT_ARRAY = 0x00002000,
+            /// <summary>
+            /// A module handle containing the message-table resource(s) to search is specified as the source of the formatted message.
+            /// If the source handle is specified as <see cref="IntPtr.Zero"/>, the current process's application image file will be searched. This flag cannot be used with <see cref="FORMAT_MESSAGE_FROM_STRING"/>.
+            /// <para>If the module has no message table resource, the system fails with <see cref="ERROR_RESOURCE_TYPE_NOT_FOUND"/>.</para>
+            /// </summary>
+            FORMAT_MESSAGE_FROM_HMODULE = 0x00000800,
+            /// <summary>The source parameter is a pointer to a null-terminated string that contains a message definition. The message definition may contain insert sequences, just as the message text in a message table resource may. This flag cannot be used with <see cref="FORMAT_MESSAGE_FROM_HMODULE"/> or <see cref="FORMAT_MESSAGE_FROM_SYSTEM"/>.</summary>
+            FORMAT_MESSAGE_FROM_STRING = 0x00000400,
+            /// <summary>
+            /// The system message-table resource(s) should be searched for the requested message. If this flag is specified with <see cref="FORMAT_MESSAGE_FROM_HMODULE"/>, the system searches the system message table if the message is not found in the module specified by the source parameter. This flag cannot be used with <see cref="FORMAT_MESSAGE_FROM_STRING"/>.
+            /// <para>If this flag is specified, an application can pass the result of the <see cref="Marshal.GetLastWin32Error"/> function to retrieve the message text for a system-defined error.</para>
+            /// </summary>
+            FORMAT_MESSAGE_FROM_SYSTEM = 0x00001000,
+            /// <summary>Insert sequences in the message definition are to be ignored and passed through to the output buffer unchanged. This flag is useful for fetching a message for later formatting. If this flag is set, the <em>Arguments</em> parameter for text formatting is ignored.</summary>
+            FORMAT_MESSAGE_IGNORE_INSERTS = 0x00000200,
+            /// <summary>The system ignores regular line breaks in the message definition text. The system stores hard-coded line breaks in the message definition text into the output buffer. The system generates no new line breaks.</summary>
+            FORMAT_MESSAGE_MAX_WIDTH_MASK = 0x000000FF
+        }
+#pragma warning restore CS1591 // Missing XML comment for publicly visible type or member
+
+        /// <summary>
+        /// Formats a message string. The function requires a message definition as input. The message definition can come from a buffer passed into the function. It can come from a message table resource in an already-loaded module. Or the caller can ask the function to search the system's message table resource(s) for the message definition. The function finds the message definition in a message table resource based on a message identifier and a language identifier. The function copies the formatted message text to an output buffer, processing any embedded insert sequences if requested.
+        /// </summary>
+        /// <param name="dwFlags">
+        /// <para>For this particular overload of this function, the <paramref name="dwFlags"/> parameter must not specify the <see cref="FORMAT_MESSAGE_ALLOCATE_BUFFER"/> flag. If the <paramref name="Arguments"/> parameter is not <c>null</c>, the <see cref="FORMAT_MESSAGE_ARGUMENT_ARRAY"/> flag must be specified in the <paramref name="dwFlags"/> parameter.</para>
+        /// <para>The formatting options, and how to interpret the <paramref name="lpSource"/> parameter. The low-order byte of <paramref name="dwFlags"/> specifies how the function handles line breaks in the output buffer. The low-order byte can also specify the maximum width of a formatted output line.</para>
+        /// <para>The low-order byte of <paramref name="dwFlags"/> can specify the maximum width of a formatted output line. If the low-order byte is <c>0</c> (zero), there are no output line width restrictions. The function stores line breaks that are in the message definition text into the output buffer. <see cref="FORMAT_MESSAGE_MAX_WIDTH_MASK"/> causes the function to ignore regular line breaks in the message definition text. The function stores hard-coded line breaks in the message definition text into the output buffer. The function generates no new line breaks.</para>
+        /// <para>If the low-order byte is a nonzero value other than <see cref="FORMAT_MESSAGE_MAX_WIDTH_MASK"/>, it specifies the maximum number of characters in an output line. The function ignores regular line breaks in the message definition text. The function never splits a string delimited by white space across a line break. The function stores hard-coded line breaks in the message definition text into the output buffer. Hard-coded line breaks are coded with the %n escape sequence.</para>
+        /// </param>
+        /// <param name="lpSource">
+        /// <para>The location of the message definition. The type of this parameter depends upon the settings in the <paramref name="dwFlags"/> parameter.</para>
+        /// <para>If the <see cref="FORMAT_MESSAGE_FROM_HMODULE"/> is specified in the <paramref name="dwFlags"/> parameter, the <paramref name="lpSource"/> parameter specifies a handle to the module that contains the message table to search.</para>
+        /// <para>If the <see cref="FORMAT_MESSAGE_FROM_STRING"/> is specified in the <paramref name="dwFlags"/> parameter, the <paramref name="lpSource"/> parameter specifies a Pointer to a string that consists of unformatted message text. It will be scanned for inserts and formatted accordingly.</para>
+        /// <para>If neither of these flags is set in <paramref name="dwFlags"/>, then <paramref name="lpSource"/> is ignored.</para>
+        /// </param>
+        /// <param name="dwMessageId">The message identifier for the requested message. This parameter is ignored if <paramref name="dwFlags"/> includes <see cref="FORMAT_MESSAGE_FROM_STRING"/>.</param>
+        /// <param name="dwLanguageId">
+        /// <para>The <a href="https://msdn.microsoft.com/en-us/library/dd318691.aspx">language identifier</a> for the requested message. This parameter is ignored if <paramref name="dwFlags"/> includes <see cref="FORMAT_MESSAGE_FROM_STRING"/>.</para>
+        /// <para>
+        /// If you pass a specific <a href="https://msdn.microsoft.com/en-us/library/dd318691.aspx">language identifier</a> in this parameter, <see cref="FormatMessage(FORMAT_MESSAGE_FLAG, IntPtr, int, int, StringBuilder, int, IntPtr)"/> will return a message for that <a href="https://msdn.microsoft.com/en-us/library/dd318691.aspx">language identifier</a> only. If the function cannot find a message for that <a href="https://msdn.microsoft.com/en-us/library/dd318691.aspx">language identifier</a>, it sets Last-Error to <see cref="ERROR_RESOURCE_LANG_NOT_FOUND"/>. If you pass in zero, <see cref="FormatMessage(FORMAT_MESSAGE_FLAG, IntPtr, int, int, StringBuilder, int, IntPtr)"/> looks for a message for <a href="https://msdn.microsoft.com/en-us/library/dd318691.aspx">language identifier</a>s in the following order:
+        /// <list type="number">
+        /// <item>Language neutral.</item> <item>Thread <a href="https://msdn.microsoft.com/en-us/library/dd318691.aspx">language identifier</a>, based on the thread's locale value.</item> <item>User default <a href="https://msdn.microsoft.com/en-us/library/dd318691.aspx">language identifier</a>, based on the user's default locale value.</item> <item>System default <a href="https://msdn.microsoft.com/en-us/library/dd318691.aspx">language identifier</a>, based on the system default locale value.</item> <item>US English.</item>
+        /// </list>
+        /// </para>
+        /// <para>If <see cref="FormatMessage(FORMAT_MESSAGE_FLAG, IntPtr, int, int, StringBuilder, int, IntPtr)"/> does not locate a message for any of the preceding <a href="https://msdn.microsoft.com/en-us/library/dd318691.aspx">language identifier</a>s, it returns any language message string that is present. If that fails, it returns <see cref="ERROR_RESOURCE_LANG_NOT_FOUND"/>.</para>
+        /// </param>
+        /// <param name="lpBuffer">A buffer that receives the null-terminated string that specifies the formatted message.</param>
+        /// <param name="nSize">Specifies the size of the output buffer, in characters.</param>
+        /// <param name="Arguments">
+        /// A pointer to an array of values that are used as insert values in the formatted message. A %1 in the format string indicates the first value in the Arguments array; a %2 indicates the second argument; and so on.
+        /// <para>The interpretation of each value depends on the formatting information associated with the insert in the message definition. The default is to treat each value as a pointer to a null-terminated string.</para>
+        /// <para>To use this parameter, specify the <see cref="FORMAT_MESSAGE_ARGUMENT_ARRAY"/> flag in <paramref name="dwFlags"/>. If you do not want to use this parameter, specify the <see cref="FORMAT_MESSAGE_IGNORE_INSERTS"/> flag in the <paramref name="dwFlags"/> parameter.</para>
+        /// </param>
+        /// <returns>
+        /// If the function succeeds, the return value is the number of characters stored in the output buffer, excluding the terminating null character.
+        /// If the function fails, the return value is zero. To get extended error information, call <see cref="Marshal.GetLastWin32Error"/>.
+        /// </returns>
+        /// <remarks>
+        /// Consult the <a href="https://msdn.microsoft.com/en-us/library/ms679351.aspx">FormatMessage function</a> MSDN documentation page for additional remarks on this function.
+        /// <para><strong>Minimum supported client:</strong> Windows XP [desktop apps | Windows Store Apps]</para>
+        /// <para><strong>Minimum supported server:</strong> Windows Server 2003 [desktop apps | Windows Store Apps]</para>
+        /// <para><strong>Minimum supported phone:</strong> Windows Phone 8</para>
+        /// <para>Original MSDN documenation page: <a href="https://msdn.microsoft.com/en-us/library/ms679351.aspx">FormatMessage function</a></para>
+        /// </remarks>
+        [DllImport("Kernel32.dll", CallingConvention = CallingConvention.Winapi, SetLastError = true, CharSet = CharSet.Unicode, EntryPoint = nameof(FormatMessage) + "W")]
+        public static extern int FormatMessage(
+            [In, MarshalAs(UnmanagedType.I4)] FORMAT_MESSAGE_FLAG dwFlags,
+            [In, Optional] IntPtr lpSource,
+            [In] int dwMessageId,
+            [In] int dwLanguageId,
+            [Out, MarshalAs(UnmanagedType.LPTStr)] StringBuilder lpBuffer,
+            [In] int nSize,
+            [In, Optional] IntPtr Arguments
+            );
+        #endregion
         #region MessageBeep function
         /// <summary>
         /// Plays a waveform sound. The waveform sound for each sound type is identified by an entry in the registry.
@@ -165,7 +252,7 @@ namespace Microsoft.Win32.WinApi.Diagnostics.ErrorHandling
         [DllImport("User32.dll", CallingConvention = CallingConvention.Winapi, SetLastError = true)]
         [return: MarshalAs(UnmanagedType.Bool)]
         public static extern bool MessageBeep(
-            [In, MarshalAs(UnmanagedType.U4)] MessageBoxIcon uType
+            [In, MarshalAs(UnmanagedType.U4)] uint uType
             );
         #endregion
     }

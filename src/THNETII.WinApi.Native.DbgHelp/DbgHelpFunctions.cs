@@ -32,7 +32,7 @@ namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp
         /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/ms679314.aspx">EnumDirTree function</a></para>
         /// </remarks>
         /// <seealso cref="EnumDirTreeProc"/>
-        [DllImport("Dbghelp.dll", CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        [DllImport("Dbghelp.dll", CallingConvention = CallingConvention.Winapi, SetLastError = true, CharSet = CharSet.Unicode, EntryPoint = nameof(EnumDirTree) + "W")]
         [return: MarshalAs(UnmanagedType.Bool)]
         public static extern bool EnumDirTree(
             [In, Optional] IntPtr hProcess,
@@ -57,7 +57,7 @@ namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp
         /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/ms679315.aspx">EnumDirTreeProc callback function</a></para>
         /// </remarks>
         /// <seealso cref="EnumDirTree"/>
-        [UnmanagedFunctionPointer(CallingConvention.StdCall)]
+        [UnmanagedFunctionPointer(CallingConvention.StdCall, CharSet = CharSet.Unicode)]
         public delegate bool EnumDirTreeProc(
             [In, MarshalAs(UnmanagedType.LPTStr)] string FilePath,
             [In, Optional] IntPtr CallerData

@@ -351,7 +351,7 @@ namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHlp
         /// <para>Original MSDN documentation: <a href="https://msdn.microsoft.com/en-us/library/ms680355.aspx">MapFileAndCheckSum function</a></para>
         /// </remarks>
         /// <seealso cref="CheckSumMappedFile"/>
-        [DllImport("Imagehlp.dll", CallingConvention = CallingConvention.StdCall, SetLastError = true)]
+        [DllImport("Imagehlp.dll", CallingConvention = CallingConvention.StdCall, SetLastError = true, CharSet = CharSet.Unicode, EntryPoint = nameof(MapFileAndCheckSum) + "W")]
         [return: MarshalAs(UnmanagedType.I4)]
         public static extern CHECKSUM_STATUS MapFileAndCheckSum(
             [In, MarshalAs(UnmanagedType.LPTStr)] string Filename,

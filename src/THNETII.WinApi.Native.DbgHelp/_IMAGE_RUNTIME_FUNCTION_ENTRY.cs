@@ -3,6 +3,7 @@ using System.Runtime.InteropServices;
 
 namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp
 {
+#pragma warning disable IDE1006 // Naming Styles
     /// <summary>
     /// Represents an entry in the function table on 64-bit Windows.
     /// </summary>
@@ -12,6 +13,7 @@ namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp
     /// <seealso cref="SymFunctionTableAccess64"/>
     [StructLayout(LayoutKind.Sequential)]
     public class _IMAGE_RUNTIME_FUNCTION_ENTRY
+#pragma warning restore IDE1006 // Naming Styles
     {
         [StructLayout(LayoutKind.Explicit)]
         private struct UnwindUnion

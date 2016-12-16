@@ -14,6 +14,61 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
     /// </remarks>
     public static class NetworkManagementFunctions
     {
+        #region NetAddAlternateComputerName function
+        /// <summary>
+        /// The <see cref="NetAddAlternateComputerName"/> function adds an alternate name for the specified computer.
+        /// </summary>
+        /// <param name="Server">A string that specifies the name of the computer on which to execute this function. If this parameter is <c>null</c> or omitted, the local computer is used.</param>
+        /// <param name="AlternateName">A string that specifies the alternate name to add. This name must be in the form of a fully qualified DNS name.</param>
+        /// <param name="DomainAccount">
+        /// <para>A string that specifies the domain account to use for accessing the machine account object for the computer specified in the <paramref name="Server"/> parameter in Active Directory. If this parameter is <c>null</c>, then the credentials of the user executing this routine are used.</para>
+        /// <para>This parameter is not used if the server to execute this function is not joined to a domain. </para>
+        /// </param>
+        /// <param name="DomainAccountPassword">
+        /// <para>A string that specifies the password matching the domain account passed in the <paramref name="DomainAccount"/> parameter. If this parameter is <c>null</c>, then the credentials of the user executing this routine are used. </para>
+        /// <para>This parameter is ignored if the <paramref name="DomainAccount"/> parameter is <c>null</c>. This parameter is not used if the server to execute this function is not joined to a domain. </para>
+        /// </param>
+        /// <param name="Reserved">Reserved for future use. This parameter should be <c>0</c> (zero).</param>
+        /// <returns>
+        /// If the function succeeds, the return value is <see cref="NERR_Success"/>.<br/>
+        /// If the function fails, the return value can be one of the following error codes from the <see cref="Win32ErrorCode"/> enumeration.
+        /// <list type="table">
+        /// <listheader><term>Return code</term> <description>Description</description></listheader>
+        /// <term><see cref="ERROR_ACCESS_DENIED"/></term> <description>Access is denied. This error is returned if the caller was not a member of the Administrators local group on the target computer.</description>
+        /// <term><see cref="ERROR_INVALID_NAME"/></term> <description>A name parameter is incorrect. This error is returned if the <paramref name="AlternateName"/> parameter does not contain valid name.</description>
+        /// <term><see cref="ERROR_INVALID_PARAMETER"/></term> <description>A parameter is incorrect. This error is returned if the <paramref name="DomainAccount"/> parameter does not contain a valid domain. This error is also returned if the <paramref name="DomainAccount"/> parameter is not <c>null</c> and the <paramref name="DomainAccountPassword"/> parameter is not <c>null</c> but does not contain a Unicode string.</description>
+        /// <term><see cref="ERROR_NOT_ENOUGH_MEMORY"/></term> <description>Not enough memory is available to process this command.</description>
+        /// <term><see cref="ERROR_NOT_SUPPORTED"/></term> <description>The request is not supported. This error is returned if the target computer specified in the <paramref name="Server"/> parameter on which this function executes is running on Windows 2000 and earlier. </description>
+        /// <term><see cref="NERR_WkstaNotStarted"/></term> <description>The Workstation service has not been started.</description>
+        /// <term><see cref="RPC_S_CALL_IN_PROGRESS"/></term> <description>A remote procedure call is already in progress for this thread.</description>
+        /// <term><see cref="RPC_S_PROTSEQ_NOT_SUPPORTED"/></term> <description>The remote procedure call protocol sequence is not supported.</description>
+        /// </list>
+        /// </returns>
+        /// <remarks>
+        /// <para>The <see cref="NetAddAlternateComputerName"/> function is supported on Windows XP and later. </para>
+        /// <para>The <see cref="NetAddAlternateComputerName"/> function is used to set secondary network names for computers. The primary name is the name used for authentication and maps to the machine account name.</para>
+        /// <para>The <see cref="NetAddAlternateComputerName"/> function requires that the caller is a member of the Administrators local group on the target computer.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows XP [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows Server 2003 [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/dd877206.aspx">NetAddAlternateComputerName function</a></para>
+        /// </remarks>
+        /// <seealso cref="NetEnumerateComputerNames"/>
+        /// <seealso cref="NetJoinDomain"/>
+        /// <seealso cref="NetRemoveAlternateComputerName"/>
+        /// <seealso cref="NetRenameMachineInDomain"/>
+        /// <seealso cref="NetSetPrimaryComputerName"/>
+        /// <seealso cref="NetUnjoinDomain"/>
+        /// <seealso cref="SetComputerNameEx"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.StdCall)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetAddAlternateComputerName(
+            [In, Optional, MarshalAs(UnmanagedType.LPWStr)] string Server,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string AlternateName,
+            [In, Optional, MarshalAs(UnmanagedType.LPWStr)] string DomainAccount,
+            [In, Optional, MarshalAs(UnmanagedType.LPWStr)] string DomainAccountPassword,
+            [In] uint Reserved
+            );
+        #endregion
         #region NetApiBufferAllocate function
         /// <summary>
         /// The <see cref="NetApiBufferAllocate"/> function allocates memory from the heap. Use this function only when compatibility with the <see cref="NetApiBufferFree"/> function is required. Otherwise, use one of the other memory management functions.

@@ -71,5 +71,32 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
             [In] IntPtr Buffer
             );
         #endregion
+        #region NetApiBufferReallocate function
+        /// <summary>
+        /// The <see cref="NetApiBufferReallocate"/> function changes the size of a buffer allocated by a previous call to the <see cref="NetApiBufferAllocate"/> function.
+        /// </summary>
+        /// <param name="OldBuffer">Pointer to the buffer returned by a call to the <see cref="NetApiBufferAllocate"/> function.</param>
+        /// <param name="NewByteCount">Specifies the new size of the buffer, in bytes.</param>
+        /// <param name="NewBuffer">Receives the pointer to the reallocated buffer.</param>
+        /// <returns>
+        /// If the function succeeds, the return value is <see cref="NERR_Success"/>.<br/>
+        /// If the function fails, the return value is a system error code from the <see cref="NetworkManagementErrorCode"/> enumeration.
+        /// </returns>
+        /// <remarks>
+        /// <para>No special group membership is required to successfully execute the ApiBuffer functions.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370306.aspx">NetApiBufferReallocate function</a></para>
+        /// </remarks>
+        /// <seealso cref="NetApiBufferAllocate"/>
+        /// <seealso cref="NetApiBufferFree"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.StdCall)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern NetworkManagementErrorCode NetApiBufferReallocate(
+            [In] IntPtr OldBuffer,
+            [In] int NewByteCount,
+            out IntPtr NewBuffer
+            );
+        #endregion
     }
 }

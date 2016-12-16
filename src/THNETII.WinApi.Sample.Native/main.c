@@ -9,5 +9,5 @@ void main()
 	const int size = sizeof(NET_API_STATUS);
 	const int value = NERR_Success;
 
-	void* ptr = NetApiBufferAllocate;
+	void* ptr = NetApiBufferFree;
 }

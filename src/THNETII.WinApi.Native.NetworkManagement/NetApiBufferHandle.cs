@@ -3,6 +3,7 @@ using System.ComponentModel;
 using System.Runtime.InteropServices;
 
 using static Microsoft.Win32.WinApi.Networking.NetworkManagement.NetworkManagementFunctions;
+using static Microsoft.Win32.WindowsProtocols.MsErrRef.Win32ErrorCode;
 
 namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
 {
@@ -17,6 +18,9 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
         /// <summary>
         /// Gets the size, in bytes, of natively allocated memory by the <see cref="NetApiBufferHandle"/>.
         /// </summary>
+        /// <exception cref="ObjectDisposedException">The memory that the handle control has been freed.</exception>
+        /// <exception cref="InvalidOperationException">The handle represented by this instance is invalid.</exception>
+        /// <exception cref="Win32Exception">An error occurred during the native call to the system.</exception>
         public int BufferSize
         {
             get
@@ -26,7 +30,7 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
                 else if (IsInvalid)
                     throw new InvalidOperationException();
                 var netApiStatus = NetApiBufferSize(handle, out int ByteCount);
-                if (netApiStatus == NetworkManagementErrorCode.NERR_Success)
+                if (netApiStatus == NERR_Success)
                     return ByteCount;
                 throw new Win32Exception((int)netApiStatus);
             }
@@ -38,7 +42,7 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
             if (IsInvalid)
                 return false;
             var netApiStatus = NetApiBufferFree(handle);
-            if (netApiStatus == NetworkManagementErrorCode.NERR_Success)
+            if (netApiStatus == NERR_Success)
                 return true;
             throw new Win32Exception((int)netApiStatus);
         }
@@ -53,11 +57,12 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
         /// Allocates native memory from the heap for use by the Network Management API.
         /// </summary>
         /// <param name="ByteCount">Number of bytes to be allocated.</param>
+        /// <exception cref="Win32Exception">An error occurred during the native call to the system.</exception>
         public NetApiBufferHandle(int ByteCount) : this()
         {
             IsInvalid = true;
             var netApiStatus = NetApiBufferAllocate(ByteCount, out handle);
-            if (netApiStatus != NetworkManagementErrorCode.NERR_Success)
+            if (netApiStatus != NERR_Success)
             {
                 IsInvalid = true;
 

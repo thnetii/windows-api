@@ -1,7 +1,8 @@
-﻿using System;
+﻿using Microsoft.Win32.WindowsProtocols.MsErrRef;
+using System;
 using System.Runtime.InteropServices;
 
-using static Microsoft.Win32.WinApi.Networking.NetworkManagement.NetworkManagementErrorCode;
+using static Microsoft.Win32.WindowsProtocols.MsErrRef.Win32ErrorCode;
 
 namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
 {
@@ -21,7 +22,7 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
         /// <param name="Buffer">Receives a pointer to the allocated buffer.</param>
         /// <returns>
         /// If the function succeeds, the return value is <see cref="NERR_Success"/>.<br/>
-        /// If the function fails, the return value is a system error code from the <see cref="NetworkManagementErrorCode"/> enumeration.
+        /// If the function fails, the return value is a system error code from the <see cref="Win32ErrorCode"/> enumeration.
         /// </returns>
         /// <remarks>
         /// <para>No special group membership is required to successfully execute the ApiBuffer functions.</para>
@@ -34,7 +35,7 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
         /// <seealso cref="NetApiBufferReallocate"/>
         [DllImport("Netapi32.dll", CallingConvention = CallingConvention.StdCall)]
         [return: MarshalAs(UnmanagedType.I4)]
-        public static extern NetworkManagementErrorCode NetApiBufferAllocate(
+        public static extern Win32ErrorCode NetApiBufferAllocate(
             [In] int ByteCount,
             out IntPtr Buffer
             );
@@ -46,7 +47,7 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
         /// <param name="Buffer">A pointer to a buffer returned previously by another network management function or memory allocated by calling the <see cref="NetApiBufferAllocate"/> function.</param>
         /// <returns>
         /// If the function succeeds, the return value is <see cref="NERR_Success"/>.<br/>
-        /// If the function fails, the return value is a system error code from the <see cref="NetworkManagementErrorCode"/> enumeration.
+        /// If the function fails, the return value is a system error code from the <see cref="Win32ErrorCode"/> enumeration.
         /// </returns>
         /// <remarks>
         /// <para>
@@ -67,7 +68,7 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
         /// <seealso cref="NetApiBufferSize"/>
         [DllImport("Netapi32.dll", CallingConvention = CallingConvention.StdCall)]
         [return: MarshalAs(UnmanagedType.I4)]
-        public static extern NetworkManagementErrorCode NetApiBufferFree(
+        public static extern Win32ErrorCode NetApiBufferFree(
             [In] IntPtr Buffer
             );
         #endregion
@@ -80,7 +81,7 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
         /// <param name="NewBuffer">Receives the pointer to the reallocated buffer.</param>
         /// <returns>
         /// If the function succeeds, the return value is <see cref="NERR_Success"/>.<br/>
-        /// If the function fails, the return value is a system error code from the <see cref="NetworkManagementErrorCode"/> enumeration.
+        /// If the function fails, the return value is a system error code from the <see cref="Win32ErrorCode"/> enumeration.
         /// </returns>
         /// <remarks>
         /// <para>No special group membership is required to successfully execute the ApiBuffer functions.</para>
@@ -92,7 +93,7 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
         /// <seealso cref="NetApiBufferFree"/>
         [DllImport("Netapi32.dll", CallingConvention = CallingConvention.StdCall)]
         [return: MarshalAs(UnmanagedType.I4)]
-        public static extern NetworkManagementErrorCode NetApiBufferReallocate(
+        public static extern Win32ErrorCode NetApiBufferReallocate(
             [In] IntPtr OldBuffer,
             [In] int NewByteCount,
             out IntPtr NewBuffer
@@ -106,7 +107,7 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
         /// <param name="ByteCount">Receives the size of the buffer, in bytes.</param>
         /// <returns>
         /// If the function succeeds, the return value is <see cref="NERR_Success"/>.<br/>
-        /// If the function fails, the return value is a system error code from the <see cref="NetworkManagementErrorCode"/> enumeration.
+        /// If the function fails, the return value is a system error code from the <see cref="Win32ErrorCode"/> enumeration.
         /// </returns>
         /// <remarks>
         /// <para>No special group membership is required to successfully execute the ApiBuffer functions.</para>
@@ -118,7 +119,7 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
         /// <seealso cref="NetApiBufferFree"/>
         [DllImport("Netapi32.dll", CallingConvention = CallingConvention.StdCall)]
         [return: MarshalAs(UnmanagedType.I4)]
-        public static extern NetworkManagementErrorCode NetApiBufferSize(
+        public static extern Win32ErrorCode NetApiBufferSize(
             [In] IntPtr Buffer,
             out int ByteCount
             );

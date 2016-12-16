@@ -20,7 +20,7 @@
     <PackageReference Include="NETStandard.Library" Version="1.6.1-*" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\THNETII.WinApi.Native.ErrorHandling\THNETII.WinApi.Native.ErrorHandling.csproj" />
+    <ProjectReference Include="..\THNETII.WindowsProtocols.MsErrRef\THNETII.WindowsProtocols.MsErrRef.csproj" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(TargetFramework)' == 'netstandard1.2' ">
     <DebugType>portable</DebugType>

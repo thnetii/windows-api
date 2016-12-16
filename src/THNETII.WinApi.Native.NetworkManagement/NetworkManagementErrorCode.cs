@@ -6,6 +6,8 @@
     /// <remarks>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370674.aspx">Network Management Error Codes</a></remarks>
     public enum NetworkManagementErrorCode : int
     {
+        /// <summary>Success</summary>
+        NERR_Success = 0,
         /// <summary>The workstation driver is not installed.</summary>
         NERR_NetNotStarted = 2102,
         /// <summary>The server could not be located.</summary>

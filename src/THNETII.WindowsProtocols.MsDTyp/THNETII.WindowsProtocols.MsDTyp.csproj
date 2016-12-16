@@ -1,5 +1,4 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
-
   <PropertyGroup>
     <Description>Defines the common data types used in the Windows Protocol specifications.</Description>
     <VersionPrefix>31.0.0-msdnlibrary-cc230273</VersionPrefix>
@@ -9,25 +8,23 @@
     <AssemblyName>THNETII.WindowsProtocols.MsDTyp</AssemblyName>
     <PackageTargetFallback Condition=" '$(TargetFramework)' == 'netstandard1.1' ">$(PackageTargetFallback);dotnet5.2;portable-net45+win8</PackageTargetFallback>
   </PropertyGroup>
-
   <ItemGroup>
     <Compile Include="**\*.cs" />
     <EmbeddedResource Include="**\*.resx" />
     <EmbeddedResource Include="compiler\resources\**\*" />
   </ItemGroup>
-
   <ItemGroup>
     <PackageReference Include="NETStandard.Library">
       <Version>1.6.1</Version>
     </PackageReference>
   </ItemGroup>
-
+  <PropertyGroup Label="Configuration">
+    <RootNamespace>Microsoft.Win32.WindowsProtocols.MsDTyp</RootNamespace>
+  </PropertyGroup>
   <PropertyGroup Condition=" '$(TargetFramework)' == 'netstandard1.1' ">
     <DebugType>portable</DebugType>
   </PropertyGroup>
-
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <DefineConstants>$(DefineConstants);RELEASE</DefineConstants>
   </PropertyGroup>
-
 </Project>

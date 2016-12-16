@@ -1,5 +1,4 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
-
   <PropertyGroup>
     <VersionPrefix>0.0.1-msdnlibrary-ms679320</VersionPrefix>
     <Authors>Fredrik Høisæther Rasch</Authors>
@@ -10,29 +9,26 @@
     <RepositoryUrl>https://github.com/couven92/thnetii-windows-api.git</RepositoryUrl>
     <PackageTargetFallback Condition=" '$(TargetFramework)' == 'netstandard1.1' ">$(PackageTargetFallback);dotnet5.2;portable-net45+win8</PackageTargetFallback>
   </PropertyGroup>
-
   <ItemGroup>
     <Compile Include="**\*.cs" />
     <EmbeddedResource Include="**\*.resx" />
     <EmbeddedResource Include="compiler\resources\**\*" />
   </ItemGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\THNETII.WindowsProtocols.MsErrRef\THNETII.WindowsProtocols.MsErrRef.csproj" />
   </ItemGroup>
-
   <ItemGroup>
     <PackageReference Include="NETStandard.Library">
       <Version>1.6.1-*</Version>
     </PackageReference>
   </ItemGroup>
-
+  <PropertyGroup Label="Configuration">
+    <RootNamespace>Microsoft.Win32.WinApi.Diagnostics.ErrorHandling</RootNamespace>
+  </PropertyGroup>
   <PropertyGroup Condition=" '$(TargetFramework)' == 'netstandard1.1' ">
     <DebugType>portable</DebugType>
   </PropertyGroup>
-
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <DefineConstants>$(DefineConstants);RELEASE</DefineConstants>
   </PropertyGroup>
-
 </Project>

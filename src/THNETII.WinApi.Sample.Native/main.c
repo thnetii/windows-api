@@ -2,13 +2,12 @@
 #include <stdio.h>
 
 #include <Windows.h>
-#include <DbgHelp.h>
-#include <ImageHlp.h>
+#include <LM.h>
 
 void main()
 {
-	const int size = sizeof(LOADED_IMAGE);
-	const int value = IMAGE_SEPARATE_DEBUG_MISMATCH;
+	const int size = sizeof(NET_API_STATUS);
+	const int value = NERR_Success;
 
-	void* ptr = MapFileAndCheckSum;
+	void* ptr = NetApiBufferAllocate;
 }

@@ -98,5 +98,30 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
             out IntPtr NewBuffer
             );
         #endregion
+        #region NetApiBufferSize function
+        /// <summary>
+        /// The <see cref="NetApiBufferSize"/> function returns the size, in bytes, of a buffer allocated by a call to the <see cref="NetApiBufferAllocate"/> function.
+        /// </summary>
+        /// <param name="Buffer">Pointer to a buffer returned by the <see cref="NetApiBufferAllocate"/> function.</param>
+        /// <param name="ByteCount">Receives the size of the buffer, in bytes.</param>
+        /// <returns>
+        /// If the function succeeds, the return value is <see cref="NERR_Success"/>.<br/>
+        /// If the function fails, the return value is a system error code from the <see cref="NetworkManagementErrorCode"/> enumeration.
+        /// </returns>
+        /// <remarks>
+        /// <para>No special group membership is required to successfully execute the ApiBuffer functions.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370307.aspx">NetApiBufferSize function</a></para>
+        /// </remarks>
+        /// <seealso cref="NetApiBufferAllocate"/>
+        /// <seealso cref="NetApiBufferFree"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.StdCall)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern NetworkManagementErrorCode NetApiBufferSize(
+            [In] IntPtr Buffer,
+            out int ByteCount
+            );
+        #endregion
     }
 }

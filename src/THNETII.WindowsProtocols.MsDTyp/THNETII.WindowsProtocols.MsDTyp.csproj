@@ -7,6 +7,8 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <AssemblyName>THNETII.WindowsProtocols.MsDTyp</AssemblyName>
     <PackageTargetFallback Condition=" '$(TargetFramework)' == 'netstandard1.1' ">$(PackageTargetFallback);dotnet5.2;portable-net45+win8</PackageTargetFallback>
+    <BaseIntermediateOutputPath>$(SolutionDir)obj\$(MSBuildProjectName)\</BaseIntermediateOutputPath>
+    <OutputPath>$(SolutionDir)bin\$(Configuration)\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="**\*.cs" />
@@ -14,9 +16,7 @@
     <EmbeddedResource Include="compiler\resources\**\*" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="NETStandard.Library">
-      <Version>1.6.1</Version>
-    </PackageReference>
+    <PackageReference Include="NETStandard.Library" Version="1.6.1-*" />
   </ItemGroup>
   <PropertyGroup Label="Configuration">
     <RootNamespace>Microsoft.Win32.WindowsProtocols.MsDTyp</RootNamespace>

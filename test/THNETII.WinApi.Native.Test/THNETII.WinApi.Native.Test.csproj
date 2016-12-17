@@ -6,6 +6,8 @@
     <AssemblyName>THNETII.WinApi.Native.Test</AssemblyName>
     <RuntimeIdentifiers>win81-x86;win81-x64</RuntimeIdentifiers>
     <PackageTargetFallback Condition=" '$(TargetFramework)' == 'netcoreapp1.0' ">$(PackageTargetFallback);dnxcore5.0;portable-net46+win81</PackageTargetFallback>
+    <BaseIntermediateOutputPath>$(SolutionDir)obj\$(MSBuildProjectName)\</BaseIntermediateOutputPath>
+    <OutputPath>$(SolutionDir)bin\$(Configuration)\</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>

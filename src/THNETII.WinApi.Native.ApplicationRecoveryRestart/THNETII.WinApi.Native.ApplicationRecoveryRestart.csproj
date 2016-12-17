@@ -8,6 +8,8 @@
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/couven92/thnetii-windows-api.git</RepositoryUrl>
     <PackageTargetFallback Condition=" '$(TargetFramework)' == 'netstandard1.2' ">$(PackageTargetFallback);dotnet5.3;portable-net451+win81</PackageTargetFallback>
+    <BaseIntermediateOutputPath>$(SolutionDir)obj\$(MSBuildProjectName)\</BaseIntermediateOutputPath>
+    <OutputPath>$(SolutionDir)bin\$(Configuration)\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="**\*.cs" />
@@ -18,9 +20,7 @@
     <ProjectReference Include="..\THNETII.WindowsProtocols.MsErrRef\THNETII.WindowsProtocols.MsErrRef.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="NETStandard.Library">
-      <Version>1.6.1-*</Version>
-    </PackageReference>
+    <PackageReference Include="NETStandard.Library" Version="1.6.1-*"/>
   </ItemGroup>
   <PropertyGroup Label="Configuration">
     <RootNamespace>Microsoft.Win32.WinApi.Diagnostics.ApplicationRecovertRestart</RootNamespace>

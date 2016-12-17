@@ -8,6 +8,8 @@
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/couven92/thnetii-windows-api.git</RepositoryUrl>
     <PackageTargetFallback Condition=" '$(TargetFramework)' == 'netstandard1.2' ">$(PackageTargetFallback);dotnet5.3;portable-net451+win81</PackageTargetFallback>
+    <BaseIntermediateOutputPath>$(SolutionDir)obj\$(MSBuildProjectName)\</BaseIntermediateOutputPath>
+    <OutputPath>$(SolutionDir)bin\$(Configuration)\</OutputPath>
   </PropertyGroup>
   <PropertyGroup Label="Configuration">
     <RootNamespace>Microsoft.Win32.WinApi.Networking.NetworkManagement</RootNamespace>

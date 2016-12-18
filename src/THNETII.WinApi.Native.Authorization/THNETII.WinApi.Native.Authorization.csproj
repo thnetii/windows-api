@@ -22,4 +22,8 @@
     <PackageReference Include="NETStandard.Library" Version="1.6.1" />
     <PackageReference Include="System.Security.AccessControl" Version="4.3.0" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\thnetii-interopservices\src\THNETII.InteropServices.SafeHandles\THNETII.InteropServices.SafeHandles.csproj" />
+    <ProjectReference Include="..\THNETII.WindowsProtocols.MsErrRef\THNETII.WindowsProtocols.MsErrRef.csproj" />
+  </ItemGroup>
 </Project>

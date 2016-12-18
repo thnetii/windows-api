@@ -23,6 +23,7 @@
     <PackageReference Include="System.Security.Principal.Windows" Version="4.3.0" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\THNETII.WinApi.Native.Authorization\THNETII.WinApi.Native.Authorization.csproj" />
     <ProjectReference Include="..\THNETII.WindowsProtocols.MsErrRef\THNETII.WindowsProtocols.MsErrRef.csproj" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(TargetFramework)' == 'netstandard1.2' ">

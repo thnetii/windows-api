@@ -39,6 +39,11 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
         /// </summary>
         public IntPtr grpi3_group_sid;
         /// <summary>
+        /// Marshal to managed memory: The security identifier (SID) that uniquely identifies the global group.
+        /// </summary>
+        /// <returns></returns>
+        public SecurityIdentifier GetMarshaledGroupSid() => grpi3_group_sid == IntPtr.Zero ? null : new SecurityIdentifier(grpi3_group_sid);
+        /// <summary>
         /// These attributes are hard-coded to <see cref="SE_GROUP_MANDATORY"/>, <see cref="SE_GROUP_ENABLED"/>, and <see cref="SE_GROUP_ENABLED_BY_DEFAULT"/>. For more information, see <see cref="TOKEN_GROUPS"/>. 
         /// </summary>
         public int grpi3_attributes;

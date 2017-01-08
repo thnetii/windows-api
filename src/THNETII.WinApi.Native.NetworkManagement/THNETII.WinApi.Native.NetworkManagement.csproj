@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
+﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
   <PropertyGroup>
     <VersionPrefix>0.0.1-msdnlibrary-aa370674</VersionPrefix>
     <Authors>Fredrik Høisæther Rasch</Authors>
@@ -26,7 +25,6 @@
   <ItemGroup>
     <ProjectReference Include="..\..\thnetii-interopservices\src\THNETII.InteropServices.SafeHandles\THNETII.InteropServices.SafeHandles.csproj" />
     <ProjectReference Include="..\THNETII.WinApi.Native.Authorization\THNETII.WinApi.Native.Authorization.csproj" />
-    <ProjectReference Include="..\THNETII.WinApi.Native.Constants\THNETII.WinApi.Native.Constants.csproj" />
     <ProjectReference Include="..\THNETII.WindowsProtocols.MsErrRef\THNETII.WindowsProtocols.MsErrRef.csproj" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(TargetFramework)' == 'netstandard1.3' ">

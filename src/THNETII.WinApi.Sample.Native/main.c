@@ -2,13 +2,14 @@
 #include <stdio.h>
 
 #include <Windows.h>
+#include <NTSecAPI.h>
+#include <AuthZ.h>
 #include <LM.h>
-#include <LMat.h>
 
 void main()
 {
-	const int size = sizeof(NET_API_STATUS);
-	const int value = JOB_RUNS_TODAY;
+	const int size = sizeof(AUTHZ_INIT_INFO);
+	const int value = MAXCOMMENTSZ;
 
-	void* ptr = NetAddAlternateComputerName;
+	void* ptr = AllocateAndInitializeSid;
 }

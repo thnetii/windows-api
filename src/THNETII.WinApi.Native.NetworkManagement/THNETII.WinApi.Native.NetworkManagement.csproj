@@ -24,6 +24,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\THNETII.WinApi.Native.Authorization\THNETII.WinApi.Native.Authorization.csproj" />
+    <ProjectReference Include="..\THNETII.WinApi.Native.Constants\THNETII.WinApi.Native.Constants.csproj" />
     <ProjectReference Include="..\THNETII.WindowsProtocols.MsErrRef\THNETII.WindowsProtocols.MsErrRef.csproj" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(TargetFramework)' == 'netstandard1.2' ">

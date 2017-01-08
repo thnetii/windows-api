@@ -1,5 +1,7 @@
 ﻿using System.Runtime.InteropServices;
 
+using static Microsoft.Win32.WinApi.Constants.LanManConstants;
+
 namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
 {
     /// <summary>
@@ -12,9 +14,6 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
     [StructLayout(LayoutKind.Sequential)]
     public class LOCALGROUP_INFO_1002
     {
-        /// <summary>Multipurpose comment length</summary>
-        public const int MAXCOMMENTSZ = 256;
-
         /// <summary>
         /// A Unicode string that contains a remark associated with the local group. This member can be a null string. The comment can have as many as <see cref="MAXCOMMENTSZ"/> characters.
         /// </summary>

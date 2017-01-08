@@ -1,5 +1,7 @@
 ﻿using System.Runtime.InteropServices;
 
+using static Microsoft.Win32.WinApi.Constants.LanManConstants;
+
 namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
 {
     /// <summary>
@@ -17,9 +19,6 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
     [StructLayout(LayoutKind.Sequential)]
     public class LOCALGROUP_INFO_1
     {
-        /// <summary>Multipurpose comment length</summary>
-        public const int MAXCOMMENTSZ = 256;
-
         /// <summary>
         /// A Unicode string that specifies a local group name. For more information, see the Remarks section.
         /// <para>This member is ignored when you call the <see cref="NetLocalGroupSetInfo"/> function.</para>

@@ -1,4 +1,4 @@
-﻿namespace Microsoft.Win32.WinApi.Constants
+﻿namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
 {
 #pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
     /// <summary>

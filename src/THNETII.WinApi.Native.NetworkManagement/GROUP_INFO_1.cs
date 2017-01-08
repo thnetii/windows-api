@@ -1,6 +1,6 @@
 ﻿using System.Runtime.InteropServices;
 
-using static Microsoft.Win32.WinApi.Constants.LanManConstants;
+using static Microsoft.Win32.WinApi.Networking.NetworkManagement.LanManConstants;
 
 namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
 {

@@ -2,14 +2,12 @@
 #include <stdio.h>
 
 #include <Windows.h>
-#include <NTSecAPI.h>
-#include <AuthZ.h>
 #include <LM.h>
 
 void main()
 {
-	const int size = sizeof(AUTHZ_INIT_INFO);
-	const int value = MAXCOMMENTSZ;
+	const int size = sizeof(NET_VALIDATE_AUTHENTICATION_INPUT_ARG);
+	const int value = NET_VALIDATE_PASSWORD_LAST_SET;
 
-	void* ptr = AllocateAndInitializeSid;
+	void* ptr = NetValidatePasswordPolicy;
 }

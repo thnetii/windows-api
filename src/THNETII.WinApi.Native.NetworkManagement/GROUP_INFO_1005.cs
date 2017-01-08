@@ -1,4 +1,7 @@
 ﻿using System.Runtime.InteropServices;
+using Microsoft.Win32.WinApi.SecurityIdentity.Authorization;
+
+using static Microsoft.Win32.WinApi.SecurityIdentity.Authorization.SE_GROUP_ATTRIBUTES;
 
 namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
 {
@@ -17,6 +20,7 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
         /// <summary>
         /// These attributes are hard-coded to <see cref="SE_GROUP_MANDATORY"/>, <see cref="SE_GROUP_ENABLED"/>, and <see cref="SE_GROUP_ENABLED_BY_DEFAULT"/>. For more information, see <see cref="TOKEN_GROUPS"/>. 
         /// </summary>
-        public int grpi1005_attributes;
+        [MarshalAs(UnmanagedType.I4)]
+        public SE_GROUP_ATTRIBUTES grpi1005_attributes;
     }
 }

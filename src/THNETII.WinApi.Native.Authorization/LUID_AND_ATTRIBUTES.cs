@@ -15,8 +15,10 @@ namespace Microsoft.Win32.WinApi.SecurityIdentity.Authorization
     /// <seealso cref="PRIVILEGE_SET"/>
     /// <seealso cref="TOKEN_PRIVILEGES"/>
     [StructLayout(LayoutKind.Sequential)]
-    public class LUID_AND_ATTRIBUTES
+    public struct LUID_AND_ATTRIBUTES
     {
+        public static readonly int SizeOf = Marshal.SizeOf<LUID_AND_ATTRIBUTES>();
+
         /// <summary>Specifies an LUID value.</summary>
         public ulong Luid;
         /// <summary>Specifies attributes of the LUID. This value contains up to 32 one-bit flags. Its meaning is dependent on the definition and use of the LUID.</summary>

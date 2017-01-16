@@ -15,7 +15,7 @@ namespace Microsoft.Win32.WinApi.SecurityIdentity.Authorization
     /// <seealso cref="TOKEN_GROUPS"/>
     /// <seealso cref="TOKEN_USERS"/>
     [StructLayout(LayoutKind.Sequential)]
-    public class SID_AND_ATTRIBUTES
+    public struct SID_AND_ATTRIBUTES
     {
         public static readonly int SizeOf = Marshal.SizeOf<SID_AND_ATTRIBUTES>();
 

@@ -18,6 +18,8 @@ namespace Microsoft.Win32.WinApi.SecurityIdentity.Authorization
     [StructLayout(LayoutKind.Sequential)]
     public class PRIVILEGE_SET
     {
+        public static readonly int SizeOf = Marshal.SizeOf<PRIVILEGE_SET>();
+
         /// <summary>Specifies the number of privileges in the privilege set.</summary>
         public int PrivilegeCount;
         /// <summary>

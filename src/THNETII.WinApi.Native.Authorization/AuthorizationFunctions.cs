@@ -60,11 +60,68 @@ namespace Microsoft.Win32.WinApi.SecurityIdentity.Authorization
             [In] GenericSecurityDescriptor pSecurityDescriptor,
             [In] SafeAccessTokenHandle ClientToken,
             [In, MarshalAs(UnmanagedType.I4)] ACCESS_MASK DesiredAccess,
-            [In] GENERIC_MAPPING GenericMapping,
+            [In, MarshalAs(UnmanagedType.LPStruct)] GENERIC_MAPPING GenericMapping,
             PrivilegeSetSafeHandle PrivilegeSet,
             ref int PrivilegeSetLength,
             out ACCESS_MASK GrantedAccess,
             out bool AccessStatus
+            );
+        #endregion
+        #region AccessCheckAndAuditAlarm function
+        /// <summary>
+        /// <para>The <see cref="AccessCheckAndAuditAlarm"/> function determines whether a <em><a href="https://msdn.microsoft.com/en-us/library/ms721625.aspx#_security_security_descriptor_gly">security descriptor</a></em> grants a specified set of access rights to the client being impersonated by the calling thread. If the security descriptor has a SACL with ACEs that apply to the client, the function generates any necessary audit messages in the security event log.</para>
+        /// <para>Alarms are not currently supported.</para>
+        /// </summary>
+        /// <param name="SubsystemName">A string specifying the name of the subsystem calling the function. This string appears in any audit message that the function generates.</param>
+        /// <param name="HandleId">A pointer to a unique value representing the client's handle to the object. If the access is denied, the system ignores this value.</param>
+        /// <param name="ObjectTypeName">A string specifying the type of object being created or accessed. This string appears in any audit message that the function generates.</param>
+        /// <param name="ObjectName">A string specifying the name of the object being created or accessed. This string appears in any audit message that the function generates.</param>
+        /// <param name="SecurityDescriptor">A reference to the <see cref="GenericSecurityDescriptor"/> structure against which access is checked.</param>
+        /// <param name="DesiredAccess">
+        /// <para><em><a href="https://msdn.microsoft.com/en-us/library/ms721532.aspx#_security_access_mask_gly">Access mask</a></em> that specifies the access rights to check. This mask must have been mapped by the <see cref="MapGenericMask"/> function to contain no generic access rights. </para>
+        /// <para>If this parameter is <see cref="MAXIMUM_ALLOWED"/>, the function sets the <paramref name="GrantedAccess"/> access mask to indicate the maximum access rights the <em><a href="https://msdn.microsoft.com/en-us/library/ms721625.aspx#_security_security_descriptor_gly">security descriptor</a></em> allows the client.</para>
+        /// </param>
+        /// <param name="GenericMapping">A reference to the <see cref="GENERIC_MAPPING"/> structure associated with the object for which access is being checked.</param>
+        /// <param name="ObjectCreation">Specifies a flag that determines whether the calling application will create a new object when access is granted. A value of <c>true</c> indicates the application will create a new object. A value of <c>false</c> indicates the application will open an existing object.</param>
+        /// <param name="GrantedAccess">An <em><a href="https://msdn.microsoft.com/en-us/library/ms721532.aspx#_security_access_mask_gly">access mask</a></em> that receives the granted access rights. If <paramref name="AccessStatus"/> is set to <c>false</c>, the function sets the access mask to zero. If the function fails, it does not set the access mask.</param>
+        /// <param name="AccessStatus">A variable that receives the results of the access check. If the security descriptor allows the requested access rights to the client identified by the access token, <paramref name="AccessStatus"/> is set to <c>true</c>. Otherwise, <paramref name="AccessStatus"/> is set to <c>false</c>, and you can call <see cref="Marshal.GetLastWin32Error"/> to get extended error information.</param>
+        /// <param name="pfGenerateOnClose">A flag set by the audit-generation routine when the function returns. Pass this flag to the <see cref="ObjectCloseAuditAlarm"/> function when the object handle is closed.</param>
+        /// <returns>
+        /// If the function succeeds, the return value is nonzero. <br/>
+        /// If the function fails, the return value is zero. To get extended error information, call <see cref="Marshal.GetLastWin32Error"/>.
+        /// </returns>
+        /// <remarks>
+        /// <para>For more information, see the <a href="https://msdn.microsoft.com/en-us/library/aa446683.aspx">How AccessCheck Works</a> overview.</para>
+        /// <para>The <see cref="AccessCheckAndAuditAlarm"/> function requires the calling <em><a href="https://msdn.microsoft.com/en-us/library/ms721603.aspx#_security_process_gly">process</a></em> to have the <see cref="SE_AUDIT_NAME"/> privilege enabled. The test for this privilege is performed against the <em><a href="https://msdn.microsoft.com/en-us/library/ms721603.aspx#_security_primary_token_gly">primary token</a></em> of the calling process, not the <em><a href="https://msdn.microsoft.com/en-us/library/ms721588.aspx#_security_impersonation_token_gly">impersonation token</a></em> of the thread.</para>
+        /// <para>The <see cref="AccessCheckAndAuditAlarm"/> function fails if the calling thread is not impersonating a client.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows XP [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows Server 2003 [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa374823.aspx">AccessCheckAndAuditAlarm function</a></para>
+        /// </remarks>
+        /// <seealso cref="AccessCheck"/>
+        /// <seealso cref="GENERIC_MAPPING"/>
+        /// <seealso cref="MakeAbsoluteSD"/>
+        /// <seealso cref="MapGenericMask"/>
+        /// <seealso cref="ObjectCloseAuditAlarm"/>
+        /// <seealso cref="ObjectOpenAuditAlarm"/>
+        /// <seealso cref="ObjectPrivilegeAuditAlarm"/>
+        /// <seealso cref="PrivilegeCheck"/>
+        /// <seealso cref="PrivilegedServiceAuditAlarm"/>
+        /// <seealso cref="GenericSecurityDescriptor"/>
+        [DllImport("Advapi32.dll", CallingConvention = CallingConvention.Winapi, SetLastError = true, CharSet = CharSet.Unicode)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool AccessCheckAndAuditAlarm(
+            [In, MarshalAs(UnmanagedType.LPTStr)] string SubsystemName,
+            [In, Optional] IntPtr HandleId,
+            [In, MarshalAs(UnmanagedType.LPTStr)] string ObjectTypeName,
+            [In, Optional, MarshalAs(UnmanagedType.LPTStr)] string ObjectName,
+            [In] GenericSecurityDescriptor SecurityDescriptor,
+            [In, MarshalAs(UnmanagedType.I4)] ACCESS_MASK DesiredAccess,
+            [In, MarshalAs(UnmanagedType.LPStruct)] GENERIC_MAPPING GenericMapping,
+            [In, MarshalAs(UnmanagedType.Bool)] bool ObjectCreation,
+            out ACCESS_MASK GrantedAccess,
+            out bool AccessStatus,
+            out bool pfGenerateOnClose
             );
         #endregion
         #region AuthzAccessCheckCallback callback function

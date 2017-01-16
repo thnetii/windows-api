@@ -1,11 +1,31 @@
-﻿using System;
+﻿using Microsoft.Win32.SafeHandles;
+using System;
 using System.Runtime.InteropServices;
 using System.Security.AccessControl;
 
 namespace Microsoft.Win32.WinApi.SecurityIdentity.Authorization
 {
+    /// <summary>
+    /// Defines the native Windows API functions that are used with authorization applications.
+    /// </summary>
+    /// <remarks>
+    /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa375742.aspx">Authorization Functions</a></para>
+    /// </remarks>
     public static class AuthorizationFunctions
     {
+        #region AccessCheck function
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool AccessCheck(
+            [In] GenericSecurityDescriptor pSecurityDescriptor,
+            [In] SafeAccessTokenHandle ClientToken,
+            [In, MarshalAs(UnmanagedType.I4)] ACCESS_MASK DesiredAccess,
+            [In] GENERIC_MAPPING GenericMapping,
+            PrivilegeSetSafeHandle PrivilegeSet,
+            ref int PrivilegeSetLength,
+            out ACCESS_MASK GrantedAccess,
+            out bool AccessStatus
+            );
+        #endregion
         #region AuthzAccessCheckCallback callback function
         /// <summary>
         /// The <see cref="AuthzAccessCheckCallback"/> function is an application-defined function that handles callback <em><a href="https://msdn.microsoft.com/en-us/library/ms721532.aspx#_security_access_control_entry_gly">access control entries</a></em> (ACEs) during an access check. <see cref="AuthzAccessCheckCallback"/> is a placeholder for the application-defined function name. The application registers this callback by calling <see cref="AuthzInitializeResourceManager"/>. 

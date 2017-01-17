@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Runtime.InteropServices;
+using System.Threading;
 using THNETII.InteropServices.SafeHandles;
 
 namespace Microsoft.Win32.WinApi.SecurityIdentity.Authorization
@@ -7,6 +8,9 @@ namespace Microsoft.Win32.WinApi.SecurityIdentity.Authorization
     public class PrivilegeSetSafeHandle : SafeHandle<PRIVILEGE_SET>
     {
         private static readonly int PrivilegeOffset = Marshal.OffsetOf<PRIVILEGE_SET>(nameof(PRIVILEGE_SET.Privilege)).ToInt32();
+
+        protected PrivilegeSetSafeHandle() : this(IntPtr.Zero) { }
+        protected PrivilegeSetSafeHandle(IntPtr invalidHandleValue, bool ownsHandle = false) : base(invalidHandleValue, ownsHandle) { }
 
         /// <summary>
         /// Marshals the native data to a managed <see cref="PRIVILEGE_SET"/> instance.
@@ -41,21 +45,48 @@ namespace Microsoft.Win32.WinApi.SecurityIdentity.Authorization
     public class PrivilegeSetCoTaskMemSafeHandle : PrivilegeSetSafeHandle
     {
         private int byteSize;
+        private int privilegesSize;
 
-        public PrivilegeSetCoTaskMemSafeHandle(int count) : base()
+        public int ByteSize => byteSize;
+
+        public int PrivilegeCapacity
+        {
+            get { return privilegesSize; }
+            set
+            {
+                if (value < 1)
+                    throw new ArgumentOutOfRangeException(nameof(value), value, "Value must be positive");
+                var byteSize = CalculateByteSize(value);
+                handle = Marshal.ReAllocCoTaskMem(handle, byteSize);
+                this.byteSize = byteSize;
+                privilegesSize = value;
+            }
+        }
+
+        public PrivilegeSetCoTaskMemSafeHandle(int count) : base(IntPtr.Zero, ownsHandle: true)
         {
             if (count < 0)
                 throw new ArgumentOutOfRangeException(nameof(count), count, "Value must be non-negative");
             else if (count == 0)
                 count = 1;
-            int byteSize = PRIVILEGE_SET.SizeOf;
-            byteSize += (count - 1) * LUID_AND_ATTRIBUTES.SizeOf;
+            int byteSize = CalculateByteSize(count);
             handle = Marshal.AllocCoTaskMem(byteSize);
             this.byteSize = byteSize;
+            privilegesSize = count;
+        }
+
+        private static int CalculateByteSize(int count)
+        {
+            int byteSize = PRIVILEGE_SET.SizeOf;
+            byteSize += (count - 1) * LUID_AND_ATTRIBUTES.SizeOf;
+            return byteSize;
         }
 
         protected override bool ReleaseHandle()
         {
+            var currentHandle = Interlocked.Exchange(ref handle, IntPtr.Zero);
+            if (currentHandle == IntPtr.Zero)
+                return false;
             Marshal.FreeCoTaskMem(handle);
             return true;
         }

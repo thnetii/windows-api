@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Runtime.InteropServices;
+using System.Threading;
 using THNETII.InteropServices.SafeHandles;
 
 namespace Microsoft.Win32.WinApi.SecurityIdentity.Authorization
@@ -10,6 +11,9 @@ namespace Microsoft.Win32.WinApi.SecurityIdentity.Authorization
     public class TokenGroupsSafeHandle : SafeHandle<TOKEN_GROUPS>
     {
         private static readonly int GroupsOffset = Marshal.OffsetOf<TOKEN_GROUPS>(nameof(TOKEN_GROUPS.Groups)).ToInt32();
+
+        protected TokenGroupsSafeHandle() : this(IntPtr.Zero) { }
+        protected TokenGroupsSafeHandle(IntPtr invalidHandleValue, bool ownsHandle = false) : base(invalidHandleValue, ownsHandle) { }
 
         /// <summary>
         /// Marshals the native data to a managed <see cref="TOKEN_GROUPS"/> instance.
@@ -40,6 +44,56 @@ namespace Microsoft.Win32.WinApi.SecurityIdentity.Authorization
                 nativeMarshaledInstance.Groups = groupsArray;
             }
             return nativeMarshaledInstance;
+        }
+    }
+
+    public class TokenGroupsCoTaskSafeHandle : TokenGroupsSafeHandle
+    {
+        private int byteSize;
+        private int groupsSize;
+
+        public int ByteSize => byteSize;
+
+        public int GroupsCapacity
+        {
+            get { return groupsSize; }
+            set
+            {
+                if (value < 1)
+                    throw new ArgumentOutOfRangeException(nameof(value), value, "Value must be positive");
+                var byteSize = CalculateByteSize(value);
+                handle = Marshal.ReAllocCoTaskMem(handle, byteSize);
+                this.byteSize = byteSize;
+                groupsSize = value;
+            }
+        }
+
+        public TokenGroupsCoTaskSafeHandle(int count) : base(IntPtr.Zero, ownsHandle: true)
+        {
+            if (count < 0)
+                throw new ArgumentOutOfRangeException(nameof(count), count, "Value must be non-negative");
+            else if (count == 0)
+                count = 1;
+            int byteSize = CalculateByteSize(count);
+            handle = Marshal.AllocCoTaskMem(byteSize);
+            this.byteSize = byteSize;
+            groupsSize = count;
+        }
+
+        private static int CalculateByteSize(int count)
+        {
+            int byteSize = TOKEN_GROUPS.SizeOf;
+            byteSize += (count - 1) * SID_AND_ATTRIBUTES.SizeOf;
+            return byteSize;
+        }
+
+        protected override bool ReleaseHandle()
+        {
+            var currentHandle = Interlocked.Exchange(ref handle, IntPtr.Zero);
+            if (currentHandle == IntPtr.Zero)
+                return false;
+            Marshal.FreeCoTaskMem(handle);
+            return true;
         }
     }
 }

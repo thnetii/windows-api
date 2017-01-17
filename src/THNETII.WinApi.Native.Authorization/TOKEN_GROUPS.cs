@@ -24,6 +24,8 @@ namespace Microsoft.Win32.WinApi.SecurityIdentity.Authorization
     [StructLayout(LayoutKind.Sequential)]
     public class TOKEN_GROUPS
     {
+        public static readonly int SizeOf = Marshal.SizeOf<TOKEN_GROUPS>();
+
         /// <summary>Specifies the number of groups in the access token. </summary>
         public int GroupCount;
         /// <summary>

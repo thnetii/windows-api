@@ -6,6 +6,8 @@ using System.Security.AccessControl;
 using static Microsoft.Win32.WinApi.SecurityIdentity.Authorization.ACCESS_MASK;
 using static Microsoft.Win32.WindowsProtocols.MsErrRef.Win32ErrorCode;
 
+using static System.Security.Principal.TokenAccessLevels;
+
 namespace Microsoft.Win32.WinApi.SecurityIdentity.Authorization
 {
     /// <summary>
@@ -122,6 +124,48 @@ namespace Microsoft.Win32.WinApi.SecurityIdentity.Authorization
             out ACCESS_MASK GrantedAccess,
             out bool AccessStatus,
             out bool pfGenerateOnClose
+            );
+        #endregion
+        #region AdjustTokenGroups function
+        /// <summary>
+        /// The <see cref="AdjustTokenGroups"/> function enables or disables groups already present in the specified access token. Access to <see cref="AdjustGroups"/> is required to enable or disable groups in an access token.
+        /// </summary>
+        /// <param name="TokenHandle">A handle to the access token that contains the groups to be enabled or disabled. The handle must have <see cref="AdjustGroups"/> access to the token. If the <paramref name="PreviousState"/> parameter is not <c>null</c>, the handle must also have <see cref="Query"/> access.</param>
+        /// <param name="ResetToDefault">Boolean value that indicates whether the groups are to be set to their default enabled and disabled states. If this value is <c>true</c>, the groups are set to their default states and the <paramref name="NewState"/> parameter is ignored. If this value is <c>false</c>, the groups are set according to the information pointed to by the <paramref name="NewState"/> parameter.</param>
+        /// <param name="NewState">A safe memory buffer containing a <see cref="TOKEN_GROUPS"/> structure that contains the groups to be enabled or disabled. If the <paramref name="ResetToDefault"/> parameter is <c>false</c>, the function sets each of the groups to the value of that group's <see cref="SE_GROUP_ATTRIBUTES.SE_GROUP_ENABLED"/> attribute in the <see cref="TOKEN_GROUPS"/> structure. If <paramref name="ResetToDefault"/> is <c>true</c>, this parameter is ignored.</param>
+        /// <param name="BufferLength">The size, in bytes, of the buffer pointed to by the <paramref name="PreviousState"/> parameter. This parameter can be zero if the <paramref name="PreviousState"/> parameter is <c>null</c> or omitted.</param>
+        /// <param name="PreviousState">
+        /// <para>A safe memory buffer that receives a <see cref="TOKEN_GROUPS"/> structure containing the previous state of any groups the function modifies. That is, if a group has been modified by this function, the group and its previous state are contained in the <see cref="TOKEN_GROUPS"/> structure referenced by <paramref name="PreviousState"/>. If the <see cref="TOKEN_GROUPS.GroupCount"/> member of <see cref="TOKEN_GROUPS"/> is zero, then no groups have been changed by this function. This parameter can be <c>null</c> or omitted. </para>
+        /// <para>If a buffer is specified but it does not contain enough space to receive the complete list of modified groups, no group states are changed and the function fails. In this case, the function sets the <paramref name="ReturnLength"/> parameter to the number of bytes required to hold the complete list of modified groups.</para>
+        /// </param>
+        /// <param name="ReturnLength">A variable that receives the actual number of bytes needed for the buffer pointed to by the <paramref name="PreviousState"/> parameter. This parameter can be omitted and is ignored if <paramref name="PreviousState"/> is <c>null</c>.</param>
+        /// <returns>
+        /// If the function succeeds, the return value is nonzero. <br/>
+        /// If the function fails, the return value is zero. To get extended error information, call <see cref="Marshal.GetLastWin32Error"/>.
+        /// </returns>
+        /// <remarks>
+        /// <para>The information retrieved in the <paramref name="PreviousState"/> parameter is formatted as a <see cref="TOKEN_GROUPS"/> structure. This means a the buffer can be passed as the <paramref name="NewState"/> parameter in a subsequent call to the <see cref="AdjustTokenGroups"/> function, restoring the original state of the groups.</para>
+        /// <para>The <paramref name="NewState"/> parameter can list groups to be changed that are not present in the access token. This does not affect the successful modification of the groups in the token.</para>
+        /// <para>The <see cref="AdjustTokenGroups"/> function cannot disable groups with the <see cref="SE_GROUP_ATTRIBUTES.SE_GROUP_MANDATORY"/> attribute in the <see cref="TOKEN_GROUPS"/> structure. Use <see cref="CreateRestrictedToken"/> instead.</para>
+        /// <para>You cannot enable a group that has the <see cref="SE_GROUP_ATTRIBUTES.SE_GROUP_USE_FOR_DENY_ONLY"/> attribute.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows XP [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows Server 2003 [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa375199.aspx">AdjustTokenGroups function</a></para>
+        /// </remarks>
+        /// <seealso cref="AdjustTokenPrivileges"/>
+        /// <seealso cref="CreateRestrictedToken"/>
+        /// <seealso cref="GetTokenInformation"/>
+        /// <seealso cref="SetTokenInformation"/>
+        /// <seealso cref="TOKEN_GROUPS"/>
+        [DllImport("Advapi32.dll", CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool AdjustTokenGroups(
+            [In] IntPtr TokenHandle,
+            [In, MarshalAs(UnmanagedType.Bool)] bool ResetToDefault,
+            [In, Optional] TokenGroupsSafeHandle NewState,
+            [In] int BufferLength,
+            [Out, Optional] TokenGroupsSafeHandle PreviousState,
+            [Optional] out int ReturnLength
             );
         #endregion
         #region AuthzAccessCheckCallback callback function

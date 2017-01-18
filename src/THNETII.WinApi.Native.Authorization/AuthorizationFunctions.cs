@@ -386,7 +386,7 @@ namespace Microsoft.Win32.WinApi.SecurityIdentity.Authorization
         [DllImport("Advapi32.dll", CallingConvention = CallingConvention.Winapi, SetLastError = true)]
         [return: MarshalAs(UnmanagedType.U1)]
         public static extern bool AuditEnumerateCategories(
-            out GuidReferenceArrayAuditSafeHandle ppAuditCategoriesArray,
+            out GuidArrayAuditSafeHandle ppAuditCategoriesArray,
             out int pCountReturned
             );
         #endregion
@@ -443,9 +443,9 @@ namespace Microsoft.Win32.WinApi.SecurityIdentity.Authorization
         [DllImport("Advapi32.dll", CallingConvention = CallingConvention.Winapi, SetLastError = true)]
         [return: MarshalAs(UnmanagedType.U1)]
         public static extern bool AuditEnumerateSubCategories(
-            [In, MarshalAs(44, MarshalTypeRef = typeof(StructPointerCoTaskMemMarshaler<Guid>))] Guid pAuditCategoryGuid, // MarshalAs(44) <=> MarshalAs(UnmanagedType.CustomMarshaler)
+            [In] ref Guid pAuditCategoryGuid, // MarshalAs(44) <=> MarshalAs(UnmanagedType.CustomMarshaler)
             [In, MarshalAs(UnmanagedType.U1)] bool bRetrieveAllSubCategories,
-            out ReferenceArrayAuditSafeHandle<Guid> ppAuditSubCategoriesArray,
+            out GuidArrayAuditSafeHandle ppAuditSubCategoriesArray,
             out int pCountReturned
             );
         #endregion

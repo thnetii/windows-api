@@ -5,10 +5,10 @@ using static Microsoft.Win32.WinApi.SecurityIdentity.Authorization.Authorization
 
 namespace Microsoft.Win32.WinApi.SecurityIdentity.Authorization
 {
-    public class ReferenceArrayAuditSafeHandle<T> : ReferenceArraySafeHandle<T>
+    public class GuidArrayAuditSafeHandle : ValueArraySafeHandle<Guid>
     {
-        protected ReferenceArrayAuditSafeHandle() : this(IntPtr.Zero) { }
-        protected ReferenceArrayAuditSafeHandle(IntPtr invalidHandleValue, bool ownsHandle = true) : base(invalidHandleValue, ownsHandle) { }
+        protected GuidArrayAuditSafeHandle() : this(IntPtr.Zero) { }
+        protected GuidArrayAuditSafeHandle(IntPtr invalidHandleValue, bool ownsHandle = true) : base(invalidHandleValue, ownsHandle) { }
 
         protected override bool ReleaseHandle()
         {

@@ -34,8 +34,8 @@ namespace Microsoft.Win32.WinApi.SecurityIdentity.Authorization
         /// <param name="GrantedAccess">An <em><a href="https://msdn.microsoft.com/en-us/library/ms721532.aspx#_security_access_mask_gly">access mask</a></em> that receives the granted access rights. If <paramref name="AccessStatus"/> is set to <c>false</c>, the function sets the access mask to zero. If the function fails, it does not set the access mask.</param>
         /// <param name="AccessStatus">A variable that receives the results of the access check. If the security descriptor allows the requested access rights to the client identified by the access token, <paramref name="AccessStatus"/> is set to <c>true</c>. Otherwise, <paramref name="AccessStatus"/> is set to <c>false</c>, and you can call <see cref="Marshal.GetLastWin32Error"/> to get extended error information.</param>
         /// <returns>
-        /// If the function succeeds, the return value is nonzero. <br/>
-        /// If the function fails, the return value is zero. To get extended error information, call <see cref="Marshal.GetLastWin32Error"/>.
+        /// If the function succeeds, the return value is <c>true</c>. <br/>
+        /// If the function fails, the return value is <c>false</c>. To get extended error information, call <see cref="Marshal.GetLastWin32Error"/>.
         /// </returns>
         /// <remarks>
         /// <para>For more information, see the <a href="https://msdn.microsoft.com/en-us/library/aa446683.aspx">How AccessCheck Works</a> overview.</para>
@@ -89,8 +89,8 @@ namespace Microsoft.Win32.WinApi.SecurityIdentity.Authorization
         /// <param name="AccessStatus">A variable that receives the results of the access check. If the security descriptor allows the requested access rights to the client identified by the access token, <paramref name="AccessStatus"/> is set to <c>true</c>. Otherwise, <paramref name="AccessStatus"/> is set to <c>false</c>, and you can call <see cref="Marshal.GetLastWin32Error"/> to get extended error information.</param>
         /// <param name="pfGenerateOnClose">A flag set by the audit-generation routine when the function returns. Pass this flag to the <see cref="ObjectCloseAuditAlarm"/> function when the object handle is closed.</param>
         /// <returns>
-        /// If the function succeeds, the return value is nonzero. <br/>
-        /// If the function fails, the return value is zero. To get extended error information, call <see cref="Marshal.GetLastWin32Error"/>.
+        /// If the function succeeds, the return value is <c>true</c>. <br/>
+        /// If the function fails, the return value is <c>false</c>. To get extended error information, call <see cref="Marshal.GetLastWin32Error"/>.
         /// </returns>
         /// <remarks>
         /// <para>For more information, see the <a href="https://msdn.microsoft.com/en-us/library/aa446683.aspx">How AccessCheck Works</a> overview.</para>
@@ -140,8 +140,8 @@ namespace Microsoft.Win32.WinApi.SecurityIdentity.Authorization
         /// </param>
         /// <param name="ReturnLength">A variable that receives the actual number of bytes needed for the buffer pointed to by the <paramref name="PreviousState"/> parameter. This parameter can be omitted and is ignored if <paramref name="PreviousState"/> is <c>null</c>.</param>
         /// <returns>
-        /// If the function succeeds, the return value is nonzero. <br/>
-        /// If the function fails, the return value is zero. To get extended error information, call <see cref="Marshal.GetLastWin32Error"/>.
+        /// If the function succeeds, the return value is <c>true</c>. <br/>
+        /// If the function fails, the return value is <c>false</c>. To get extended error information, call <see cref="Marshal.GetLastWin32Error"/>.
         /// </returns>
         /// <remarks>
         /// <para>The information retrieved in the <paramref name="PreviousState"/> parameter is formatted as a <see cref="TOKEN_GROUPS"/> structure. This means a the buffer can be passed as the <paramref name="NewState"/> parameter in a subsequent call to the <see cref="AdjustTokenGroups"/> function, restoring the original state of the groups.</para>
@@ -160,7 +160,7 @@ namespace Microsoft.Win32.WinApi.SecurityIdentity.Authorization
         [DllImport("Advapi32.dll", CallingConvention = CallingConvention.Winapi, SetLastError = true)]
         [return: MarshalAs(UnmanagedType.Bool)]
         public static extern bool AdjustTokenGroups(
-            [In] IntPtr TokenHandle,
+            [In] SafeAccessTokenHandle TokenHandle,
             [In, MarshalAs(UnmanagedType.Bool)] bool ResetToDefault,
             [In, Optional] TokenGroupsSafeHandle NewState,
             [In] int BufferLength,

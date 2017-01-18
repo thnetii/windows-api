@@ -265,6 +265,32 @@ namespace Microsoft.Win32.WinApi.SecurityIdentity.Authorization
             [In, MarshalAs(UnmanagedType.I4)] ACCESS_MASK DesiredAccess
             );
         #endregion
+        #region AreAnyAccessesGranted function
+        /// <summary>
+        /// The <see cref="AreAnyAccessesGranted"/> function checks whether any set of requested access rights has been granted. The access rights are represented as bit flags in an <em><a href="https://msdn.microsoft.com/en-us/library/ms721532.aspx#_security_access_mask_gly">access mask</a></em>.
+        /// </summary>
+        /// <param name="GrantedAccess">An access mask that specifies the access rights that have been granted.</param>
+        /// <param name="DesiredAccess">An access mask that specifies the access rights that have been requested. This mask must have been mapped from generic to specific and standard access rights, usually by calling the <see cref="MapGenericMask"/> function.</param>
+        /// <returns>
+        /// If all requested access rights have been granted, the return value is <c>true</c>.<br/>
+        /// If not all requested access rights have been granted, the return value is <c>false</c>.
+        /// </returns>
+        /// <remarks>
+        /// The <see cref="AreAnyAccessesGranted"/> function is often used by a server application to check the access rights of a client attempting to gain access to an object. When any of the bits set in the <paramref name="DesiredAccess"/> parameter match the bits set in the <paramref name="GrantedAccess"/> parameter, at least one of the requested access rights has been granted.
+        /// <para><strong>Minimum supported client</strong>: Windows XP [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows Server 2003 [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa375363.aspx">AreAnyAccessesGranted function</a></para>
+        /// </remarks>
+        /// <seealso cref="AccessCheck"/>
+        /// <seealso cref="AreAllAccessesGranted"/>
+        /// <seealso cref="MapGenericMask"/>
+        [DllImport("Advapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool AreAnyAccessesGranted(
+            [In, MarshalAs(UnmanagedType.I4)] ACCESS_MASK GrantedAccess,
+            [In, MarshalAs(UnmanagedType.I4)] ACCESS_MASK DesiredAccess
+            );
+        #endregion
         #region AuthzAccessCheckCallback callback function
         /// <summary>
         /// The <see cref="AuthzAccessCheckCallback"/> function is an application-defined function that handles callback <em><a href="https://msdn.microsoft.com/en-us/library/ms721532.aspx#_security_access_control_entry_gly">access control entries</a></em> (ACEs) during an access check. <see cref="AuthzAccessCheckCallback"/> is a placeholder for the application-defined function name. The application registers this callback by calling <see cref="AuthzInitializeResourceManager"/>. 

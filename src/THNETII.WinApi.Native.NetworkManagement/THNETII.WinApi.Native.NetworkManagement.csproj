@@ -23,6 +23,7 @@
     <PackageReference Include="System.Security.Principal.Windows" Version="4.3.0" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\thnetii-interopservices\src\THNETII.InteropServices.NativeMemory\THNETII.InteropServices.NativeMemory.csproj" />
     <ProjectReference Include="..\..\thnetii-interopservices\src\THNETII.InteropServices.SafeHandles\THNETII.InteropServices.SafeHandles.csproj" />
     <ProjectReference Include="..\THNETII.WinApi.Native.Authorization\THNETII.WinApi.Native.Authorization.csproj" />
     <ProjectReference Include="..\THNETII.WindowsProtocols.MsErrRef\THNETII.WindowsProtocols.MsErrRef.csproj" />

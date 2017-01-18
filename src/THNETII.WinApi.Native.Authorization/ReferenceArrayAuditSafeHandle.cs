@@ -16,4 +16,10 @@ namespace Microsoft.Win32.WinApi.SecurityIdentity.Authorization
             return true;
         }
     }
+
+    public class GuidReferenceArrayAuditSafeHandle : ReferenceArrayAuditSafeHandle<Guid>
+    {
+        protected GuidReferenceArrayAuditSafeHandle() : this(IntPtr.Zero) { }
+        protected GuidReferenceArrayAuditSafeHandle(IntPtr invalidHandleValue, bool ownsHandle = true) : base(invalidHandleValue, ownsHandle) { }
+    }
 }

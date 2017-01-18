@@ -386,7 +386,7 @@ namespace Microsoft.Win32.WinApi.SecurityIdentity.Authorization
         [DllImport("Advapi32.dll", CallingConvention = CallingConvention.Winapi, SetLastError = true)]
         [return: MarshalAs(UnmanagedType.U1)]
         public static extern bool AuditEnumerateCategories(
-            out ReferenceArrayAuditSafeHandle<Guid> ppAuditCategoriesArray,
+            out GuidReferenceArrayAuditSafeHandle ppAuditCategoriesArray,
             out int pCountReturned
             );
         #endregion

@@ -168,6 +168,54 @@ namespace Microsoft.Win32.WinApi.SecurityIdentity.Authorization
             [Optional] out int ReturnLength
             );
         #endregion
+        #region AdjustTokenPrivileges function
+        /// <summary>
+        /// The <see cref="AdjustTokenPrivileges"/> function enables or disables privileges in the specified access token. Enabling or disabling privileges in an access token requires <see cref="AdjustPrivileges"/> access.
+        /// </summary>
+        /// <param name="TokenHandle">A handle to the access token that contains the privileges to be modified. The handle must have <see cref="AdjustPrivileges"/> access to the token. If the <paramref name="PreviousState"/> parameter is not <c>null</c>, the handle must also have <see cref="Query"/> access.</param>
+        /// <param name="DisableAllPrivileges">Specifies whether the function disables all of the token's privileges. If this value is <c>true</c>, the function disables all privileges and ignores the <paramref name="NewState"/> parameter. If it is <c>false</c>, the function modifies privileges based on the information pointed to by the <paramref name="NewState"/> parameter.</param>
+        /// <param name="NewState">
+        /// <para>A safe memory buffer to a <see cref="TOKEN_PRIVILEGES"/> structure that specifies an array of privileges and their attributes. If the <paramref name="DisableAllPrivileges"/> parameter is <c>false</c>, the <see cref="AdjustTokenPrivileges"/> function enables, disables, or removes these privileges for the token. The action taken by the <see cref="AdjustTokenPrivileges"/> function is based on the privilege attribute.</para>
+        /// <para>If <paramref name="DisableAllPrivileges"/> is <c>true</c>, the function ignores this parameter.</para>
+        /// </param>
+        /// <param name="BufferLength">Specifies the size, in bytes, of the buffer pointed to by the <paramref name="PreviousState"/> parameter. This parameter can be zero if the <paramref name="PreviousState"/> parameter is <c>null</c> or omitted.</param>
+        /// <param name="PreviousState">
+        /// <para>A safe memory buffer that the function fills with a <see cref="TOKEN_PRIVILEGES"/> structure that contains the previous state of any privileges that the function modifies. That is, if a privilege has been modified by this function, the privilege and its previous state are contained in the <see cref="TOKEN_PRIVILEGES"/> structure referenced by <paramref name="PreviousState"/>. If the <see cref="TOKEN_PRIVILEGES.PrivilegeCount"/> member of <see cref="TOKEN_PRIVILEGES"/> is zero, then no privileges have been changed by this function. This parameter can be <c>null</c> or omitted. </para>
+        /// <para>If you specify a buffer that is too small to receive the complete list of modified privileges, the function fails and does not adjust any privileges. In this case, the function sets the variable pointed to by the <paramref name="ReturnLength"/> parameter to the number of bytes required to hold the complete list of modified privileges.</para>
+        /// </param>
+        /// <param name="ReturnLength">A variable that receives the required size, in bytes, of the buffer pointed to by the <paramref name="PreviousState"/> parameter. This parameter can be omitted if <paramref name="PreviousState"/> is <c>null</c>.</param>
+        /// <returns>
+        /// If the function succeeds, the return value is <c>true</c>. To determine whether the function adjusted all of the specified privileges, call <see cref="Marshal.GetLastWin32Error"/>, which returns one of the following values when the function succeeds:
+        /// <list type="table">
+        /// <listheader><term>Return code</term> <description>Description</description></listheader>
+        /// <term><see cref="ERROR_SUCCESS"/></term> <description>The function adjusted all specified privileges.</description>
+        /// <term><see cref="ERROR_NOT_ALL_ASSIGNED"/></term> <description>The token does not have one or more of the privileges specified in the <paramref name="NewState"/> parameter. The function may succeed with this error value even if no privileges were adjusted. The <paramref name="PreviousState"/> parameter indicates the privileges that were adjusted.</description>
+        /// </list>
+        /// If the function fails, the return value is <c>false</c>. To get extended error information, call <see cref="Marshal.GetLastWin32Error"/>.
+        /// </returns>
+        /// <remarks>
+        /// <para>The <see cref="AdjustTokenPrivileges"/> function cannot add new privileges to the access token. It can only enable or disable the token's existing privileges. To determine the token's privileges, call the <see cref="GetTokenInformation"/> function.</para>
+        /// <para>The <paramref name="NewState"/> parameter can specify privileges that the token does not have, without causing the function to fail. In this case, the function adjusts the privileges that the token does have and ignores the other privileges so that the function succeeds. Call the <see cref="Marshal.GetLastWin32Error"/> function to determine whether the function adjusted all of the specified privileges. The <paramref name="PreviousState"/> parameter indicates the privileges that were adjusted.</para>
+        /// <para>The <paramref name="PreviousState"/> parameter retrieves a <see cref="TOKEN_PRIVILEGES"/> structure that contains the original state of the adjusted privileges. To restore the original state, pass the <paramref name="PreviousState"/> pointer as the <paramref name="NewState"/> parameter in a subsequent call to the <see cref="AdjustTokenPrivileges"/> function.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows XP [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows Server 2003 [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa375202.aspx">AdjustTokenPrivileges function</a></para>
+        /// </remarks>
+        /// <seealso cref="AdjustTokenGroups"/>
+        /// <seealso cref="GetTokenInformation"/>
+        /// <seealso cref="SetTokenInformation"/>
+        /// <seealso cref="TOKEN_PRIVILEGES"/>
+        [DllImport("Advapi32.dll", CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool AdjustTokenPrivileges(
+            [In] SafeAccessTokenHandle TokenHandle,
+            [In, MarshalAs(UnmanagedType.Bool)] bool DisableAllPrivileges,
+            [In, Optional] TokenPrivilegesSafeHandle NewState,
+            [In] int BufferLength,
+            [Out, Optional] TokenPrivilegesSafeHandle PreviousState,
+            [Optional] out int ReturnLength
+            );
+        #endregion
         #region AuthzAccessCheckCallback callback function
         /// <summary>
         /// The <see cref="AuthzAccessCheckCallback"/> function is an application-defined function that handles callback <em><a href="https://msdn.microsoft.com/en-us/library/ms721532.aspx#_security_access_control_entry_gly">access control entries</a></em> (ACEs) during an access check. <see cref="AuthzAccessCheckCallback"/> is a placeholder for the application-defined function name. The application registers this callback by calling <see cref="AuthzInitializeResourceManager"/>. 

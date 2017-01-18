@@ -327,6 +327,42 @@ namespace Microsoft.Win32.WinApi.SecurityIdentity.Authorization
             out ReferenceArrayAuditSafeHandle<AUDIT_POLICY_INFORMATION> ppAuditPolicy
             );
         #endregion
+        #region AuditComputeEffectivePolicyByToken function
+        /// <summary>
+        /// The <see cref="AuditComputeEffectivePolicyByToken"/> function computes the effective audit policy for one or more subcategories for the security principal associated with the specified token. The function computes effective audit policy by combining system audit policy with per-user policy. 
+        /// </summary>
+        /// <param name="hTokenHandle">A handle to the access token associated with the principal for which to compute effective audit policy. The token must have been opened with <see cref="Query"/> access. Per-user policy for group SIDs is not currently supported.</param>
+        /// <param name="pSubCategoryGuids">An array of <see cref="Guid"/> values that specify the subcategories for which to compute effective audit policy. For a list of defined subcategories, see <see cref="AuditingConstants"/>.</param>
+        /// <param name="PolicyCount">The number of elements in each of the <paramref name="pSubCategoryGuids"/> and <paramref name="ppAuditPolicy"/> arrays.</param>
+        /// <param name="ppAuditPolicy">
+        /// <para>A variable that receives a single array buffer containing references to <see cref="AUDIT_POLICY_INFORMATION"/> structures and the structures themselves. The <see cref="AUDIT_POLICY_INFORMATION"/> structures specify the effective audit policy for the subcategories specified by the <paramref name="pSubCategoryGuids"/> array. </para>
+        /// <para>Access to the contents of the received buffer should be wrapped in a using statement, to ensure the memory is freed after you are done processing the buffer.</para>
+        /// </param>
+        /// <returns>
+        /// If the function succeeds, it returns <c>true</c>.<br/>
+        /// If the function fails, it returns <c>false</c>. To get extended error information, call <see cref="Marshal.GetLastWin32Error"/>. <see cref="Marshal.GetLastWin32Error"/> may return one of the following error codes:
+        /// <list type="table">
+        /// <listheader><term>Return code/value</term> <description>Description</description></listheader>
+        /// <term><see cref="ERROR_ACCESS_DENIED"/> <br/> <c></c></term> <description>The caller does not have the privilege or access rights necessary to call this function.</description>
+        /// <term><see cref="ERROR_INVALID_PARAMETER"/> <br/> <c>87</c> (<c>0x57</c>)</term> <description>One or more parameters are not valid.</description>
+        /// <term><see cref="ERROR_FILE_NOT_FOUND"/> <br/> <c>2</c> (<c>0x2</c>)</term> <description>No per-user audit policy exist for the principal specified by the <paramref name="pSid"/> parameter.</description>
+        /// </list>
+        /// </returns>
+        /// <remarks>
+        /// To successfully call this function, the caller must have <c>"SeSecurityPrivilege"</c> or have <see cref="AUDIT_QUERY_SYSTEM_POLICY"/> and <see cref="AUDIT_QUERY_USER_POLICY"/> access on the <em><a href="https://msdn.microsoft.com/en-us/library/ms721532.aspx#_security_audit_security_object_gly">Audit security object</a></em>.
+        /// <para><strong>Minimum supported client</strong>: Windows Vista [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows Server 2008 [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa375633.aspx">AuditComputeEffectivePolicyByToken function</a></para>
+        /// </remarks>
+        [DllImport("Advapi32.dll", CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.U1)]
+        public static extern bool AuditComputeEffectivePolicyByToken(
+            [In] SafeAccessTokenHandle hTokenHandle,
+            [In, MarshalAs(UnmanagedType.LPArray)] Guid[] pSubCategoryGuids,
+            [In] int PolicyCount,
+            out ReferenceArrayAuditSafeHandle<AUDIT_POLICY_INFORMATION> ppAuditPolicy
+            );
+        #endregion
         #region AuditFree function
         /// <summary>
         /// The AuditFree function frees the memory allocated by audit functions for the specified buffer. 

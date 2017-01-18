@@ -3,6 +3,7 @@ using System;
 using System.Runtime.InteropServices;
 using System.Security.AccessControl;
 using System.Security.Principal;
+using THNETII.InteropServices.NativeMemory;
 using static Microsoft.Win32.WinApi.SecurityIdentity.Authorization.ACCESS_MASK;
 using static Microsoft.Win32.WinApi.SecurityIdentity.Authorization.PrivilegeConstants;
 using static Microsoft.Win32.WindowsProtocols.MsErrRef.Win32ErrorCode;
@@ -321,7 +322,7 @@ namespace Microsoft.Win32.WinApi.SecurityIdentity.Authorization
         [DllImport("Advapi32.dll", CallingConvention = CallingConvention.Winapi, SetLastError = true)]
         [return: MarshalAs(UnmanagedType.U1)]
         public static extern bool AuditComputeEffectivePolicyBySid(
-            [In, MarshalAs(60, MarshalTypeRef = typeof(SecurityIdentifierCoTaskMemCustomMarshaler))] SecurityIdentifier pSid,
+            [In, MarshalAs(44, MarshalTypeRef = typeof(SecurityIdentifierCoTaskMemCustomMarshaler))] SecurityIdentifier pSid, // MarshalAs(44) <=> MarshalAs(UnmanagedType.CustomMarshaler)
             [In, MarshalAs(UnmanagedType.LPArray)] Guid[] pSubCategoryGuids,
             [In] int PolicyCount,
             out ReferenceArrayAuditSafeHandle<AUDIT_POLICY_INFORMATION> ppAuditPolicy
@@ -361,6 +362,91 @@ namespace Microsoft.Win32.WinApi.SecurityIdentity.Authorization
             [In, MarshalAs(UnmanagedType.LPArray)] Guid[] pSubCategoryGuids,
             [In] int PolicyCount,
             out ReferenceArrayAuditSafeHandle<AUDIT_POLICY_INFORMATION> ppAuditPolicy
+            );
+        #endregion
+        #region AuditEnumerateCategories function
+        /// <summary>
+        /// The <see cref="AuditEnumerateCategories"/> function enumerates the available audit-policy categories. 
+        /// </summary>
+        /// <param name="ppAuditCategoriesArray">
+        /// <para>A variable that receives a single buffer that contains both an array of references to <see cref="Guid"/> structures and the structures themselves. The <see cref="GUID"/> structures specify the audit-policy categories available on the computer. </para>
+        /// <para>Access to the contents of the received buffer should be wrapped in a using statement, to ensure the memory is freed after you are done processing the buffer.</para>
+        /// </param>
+        /// <param name="pCountReturned">A variable that receives the number of elements in the <paramref name="ppAuditCategoriesArray"/> array.</param>
+        /// <returns>
+        /// If the function succeeds, it returns <c>true</c>.<br/>
+        /// If the function fails, it returns <c>false</c>. To get extended error information, call <see cref="Marshal.GetLastWin32Error"/>.
+        /// </returns>
+        /// <remarks>
+        /// <para><strong>Minimum supported client</strong>: Windows Vista [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows Server 2008 [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa375636.aspx">AuditEnumerateCategories function</a></para>
+        /// </remarks>
+        /// <seealso cref="AuditEnumerateSubCategories"/>
+        [DllImport("Advapi32.dll", CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.U1)]
+        public static extern bool AuditEnumerateCategories(
+            out ReferenceArrayAuditSafeHandle<Guid> ppAuditCategoriesArray,
+            out int pCountReturned
+            );
+        #endregion
+        #region AuditEnumeratePerUserPolicy function
+        /// <summary>
+        /// The <see cref="AuditEnumeratePerUserPolicy"/> function enumerates users for whom per-user auditing policy is specified. 
+        /// </summary>
+        /// <param name="ppAuditCategoriesArray">
+        /// <para>A variable that receives a single buffer that contains a <see cref="POLICY_AUDIT_SID_ARRAY"/> structure and the included <see cref="SecurityIdentifier"/> instances. The <see cref="POLICY_AUDIT_SID_ARRAY"/> structure specifies the users for whom per-user audit policy is specified. </para>
+        /// <para>Access to the contents of the received buffer should be wrapped in a using statement, to ensure the memory is freed after you are done processing the buffer.</para>
+        /// </param>
+        /// <returns>
+        /// If the function succeeds, it returns <c>true</c>.<br/>
+        /// If the function fails, it returns <c>false</c>. To get extended error information, call <see cref="Marshal.GetLastWin32Error"/>. <see cref="Marshal.GetLastWin32Error"/> may return one of the following error codes:
+        /// <list type="table">
+        /// <listheader><term>Return code/value</term> <description>Description</description></listheader>
+        /// <term><see cref="ERROR_ACCESS_DENIED"/> <br/> <c></c></term> <description>The caller does not have the privilege or access rights necessary to call this function.</description>
+        /// <term><see cref="ERROR_INVALID_PARAMETER"/> <br/> <c>87</c></term> <description>One or more parameters are not valid.</description>
+        /// </list>
+        /// </returns>
+        /// <remarks>
+        /// To successfully call this function, the caller must have <c>"SeSecurityPrivilege"</c> or have <see cref="AUDIT_ENUMERATE_USERS"/> access on the <em><a href="https://msdn.microsoft.com/en-us/library/ms721532.aspx#_security_audit_security_object_gly">Audit security object</a></em>.
+        /// <para><strong>Minimum supported client</strong>: Windows Vista [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows Server 2008 [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa375641.aspx">AuditEnumeratePerUserPolicy function</a></para>
+        /// </remarks>
+        [DllImport("Advapi32.dll", CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.U1)]
+        public static extern bool AuditEnumeratePerUserPolicy(
+            out PolicyAuditSidArrayAuditSafeHandle ppAuditCategoriesArray
+            );
+        #endregion
+        #region AuditEnumerateSubCategories function
+        /// <summary>
+        /// The <see cref="AuditEnumerateSubCategories"/> function enumerates the available audit-policy subcategories. 
+        /// </summary>
+        /// <param name="pAuditCategoryGuid">The <see cref="Guid"/> of an audit-policy category for which subcategories are enumerated. If the value of the <paramref name="bRetrieveAllSubCategories"/> parameter is <c>true</c>, this parameter is ignored.</param>
+        /// <param name="bRetrieveAllSubCategories"><c>true</c> to enumerate all audit-policy subcategories; <c>false</c> to enumerate only the subcategories of the audit-policy category specified by the <paramref name="pAuditCategoryGuid"/> parameter.</param>
+        /// <param name="ppAuditSubCategoriesArray">
+        /// <para>A variable that receives a single buffer that contains an array of references to <see cref="Guid"/> structures and the structures themselves. The <see cref="Guid"/> structures specify the audit-policy subcategories available on the computer. </para>
+        /// <para>Access to the contents of the received buffer should be wrapped in a using statement, to ensure the memory is freed after you are done processing the buffer.</para>
+        /// </param>
+        /// <param name="pCountReturned">A variable that receives the number of audit-policy subcategories returned in the <paramref name="ppAuditSubCategoriesArray"/> array.</param>
+        /// <returns>
+        /// If the function succeeds, it returns <c>true</c>.<br/>
+        /// If the function fails, it returns <c>false</c>. To get extended error information, call <see cref="Marshal.GetLastWin32Error"/>.
+        /// </returns>
+        /// <remarks>
+        /// <para><strong>Minimum supported client</strong>: Windows Vista [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows Server 2008 [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa375648.aspx">AuditEnumerateSubCategories function</a></para>
+        /// </remarks>
+        /// <seealso cref="AuditEnumerateCategories"/>
+        [DllImport("Advapi32.dll", CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.U1)]
+        public static extern bool AuditEnumerateSubCategories(
+            [In, MarshalAs(44, MarshalTypeRef = typeof(StructPointerCoTaskMemMarshaler<Guid>))] Guid pAuditCategoryGuid, // MarshalAs(44) <=> MarshalAs(UnmanagedType.CustomMarshaler)
+            [In, MarshalAs(UnmanagedType.U1)] bool bRetrieveAllSubCategories,
+            out ReferenceArrayAuditSafeHandle<Guid> ppAuditSubCategoriesArray,
+            out int pCountReturned
             );
         #endregion
         #region AuditFree function

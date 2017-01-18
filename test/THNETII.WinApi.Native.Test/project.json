@@ -1,4 +1,5 @@
 ﻿{
+  "version": "10.0.14393.0",
   "authors": [ "Fredrik Høisæther Rasch" ],
 
   "tooling": { "defaultNamespace": "THNETII.WinApi.Native.Test" },
@@ -6,15 +7,16 @@
   "dependencies": {
     "THNETII.WinApi.Native.DbgHelp": { "target": "project" },
     "THNETII.WinApi.Native.ErrorHandling": { "target": "project" },
+    "THNETII.WinApi.Native.Authorization": { "target": "project" },
 
     "THNETII.WindowsProtocols.MsErrRef": { "target": "project" },
 
-    "xunit": "2.2.0-*",
-    "xunit.runner.visualstudio": "2.2.0-*",
+    "xunit": "2.2.0-beta5-build3474",
+    "xunit.runner.visualstudio": "2.2.0-beta5-build1225",
 
     "dotnet-test-xunit": {
       "type": "build",
-      "version": "2.2.0-*"
+      "version": "2.2.0-preview2-build1029"
     }
   },
 
@@ -27,7 +29,7 @@
       "dependencies": {
         "Microsoft.NETCore.App": {
           "type": "platform",
-          "version": "1.0.1"
+          "version": "1.1.0"
         }
       }
     }

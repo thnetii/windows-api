@@ -1,27 +1,25 @@
-{
-  "version": "10.0.14393-msdnlibrary-ms679309",
+﻿{
+  "version": "10.0.14393-msdnlibrary-aa375769",
   "authors": [ "Fredrik Høisæther Rasch" ],
 
-  "tooling": { "defaultNamespace": "Microsoft.Win32.WinApi.Diagnostics.DbgHelp" },
+  "tooling": { "defaultNamespace": "Microsoft.Win32.WinApi.SecurityIdentity.Authorization" },
 
   "buildOptions": {
     "xmlDoc": true
   },
 
   "dependencies": {
-    "THNETII.InteropServices.Bitfields": { "target": "project" },
-    "THNETII.InteropServices.NativeMemory": { "target": "project" },
-
-    "THNETII.WindowsProtocols.MsDTyp": { "target": "project" },
+    "THNETII.InteropServices.NativeMemory": { "target": "project"},
+    "THNETII.InteropServices.SafeHandles": { "target": "project"},
     "THNETII.WindowsProtocols.MsErrRef": { "target": "project" },
 
     "NETStandard.Library": "1.6.1",
-    "System.IO.MemoryMappedFiles": "4.3.0"
+    "System.Security.AccessControl": "4.3.0"
   },
 
   "frameworks": {
     "netstandard1.3": {
-      "imports": [ "dotnet5.4", "portable-net452+win81" ],
+      "imports": [ "dotnet5.4", "portable-net46+win10" ],
       "buildOptions": { "debugType": "portable" }
     }
   },

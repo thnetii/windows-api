@@ -8,7 +8,7 @@
 void main()
 {
 	const int size = sizeof(NET_VALIDATE_AUTHENTICATION_INPUT_ARG);
-	const int value = TOKEN_ADJUST_GROUPS;
+	const int value = SE_PRIVILEGE_ENABLED;
 
 	void* ptr = NetValidatePasswordPolicy;
 }

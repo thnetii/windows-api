@@ -36,7 +36,8 @@ namespace Microsoft.Win32.WinApi.SecurityIdentity.Authorization
         /// <returns>A pointer to the COM view of the managed object.</returns>
         public IntPtr MarshalManagedToNative(object ManagedObj)
         {
-            if (ManagedObj is SecurityIdentifier ManagedSid)
+            var ManagedSid = ManagedObj as SecurityIdentifier;
+            if (ManagedSid != null)
             {
                 var binaryArray = new byte[ManagedSid.BinaryLength];
                 ManagedSid.GetBinaryForm(binaryArray, 0);

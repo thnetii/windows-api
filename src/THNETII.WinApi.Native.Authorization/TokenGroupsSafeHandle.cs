@@ -52,7 +52,19 @@ namespace Microsoft.Win32.WinApi.SecurityIdentity.Authorization
         private int byteSize;
         private int groupsSize;
 
-        public int ByteSize => byteSize;
+        public int ByteSize
+        {
+            get { return byteSize; }
+            set
+            {
+                if (value < TOKEN_GROUPS.SizeOf)
+                    throw new ArgumentOutOfRangeException(nameof(value), value, $"Value must be at least {TOKEN_GROUPS.SizeOf}, the byte size required for a {nameof(TOKEN_GROUPS)} instance containing a single {nameof(SID_AND_ATTRIBUTES)} element.");
+                var byteSize = value;
+                handle = Marshal.ReAllocCoTaskMem(handle, byteSize);
+                this.byteSize = value;
+                groupsSize = 1 + (value - TOKEN_GROUPS.SizeOf) / SID_AND_ATTRIBUTES.SizeOf;
+            }
+        }
 
         public int GroupsCapacity
         {

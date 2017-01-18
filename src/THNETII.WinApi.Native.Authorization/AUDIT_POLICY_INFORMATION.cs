@@ -2,6 +2,8 @@
 using System.Runtime.InteropServices;
 using System.Security.AccessControl;
 
+using static Microsoft.Win32.WinApi.SecurityIdentity.Authorization.AuthorizationFunctions;
+
 namespace Microsoft.Win32.WinApi.SecurityIdentity.Authorization
 {
     /// <summary>

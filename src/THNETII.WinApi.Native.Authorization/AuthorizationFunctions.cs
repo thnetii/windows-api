@@ -216,6 +216,29 @@ namespace Microsoft.Win32.WinApi.SecurityIdentity.Authorization
             [Optional] out int ReturnLength
             );
         #endregion
+        #region AllocateLocallyUniqueId function
+        /// <summary>
+        /// The <see cref="AllocateLocallyUniqueId"/> function allocates a locally unique identifier (<em><a href="https://msdn.microsoft.com/en-us/library/ms721592.aspx#_security_locally_unique_identifier_gly">LUID</a></em>).
+        /// </summary>
+        /// <param name="Luid">A variable that receives the allocated LUID.</param>
+        /// <returns>
+        /// If the function succeeds, the return value is <c>true</c>. <br/>
+        /// If the function fails, the return value is <c>false</c>. To get extended error information, call <see cref="Marshal.GetLastWin32Error"/>.
+        /// </returns>
+        /// <remarks>
+        /// <para>The allocated LUID is unique to the local system only, and uniqueness is guaranteed only until the system is next restarted.</para>
+        /// <para>The allocated LUID is guaranteed to be nonzero if this function succeeds.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows XP [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows Server 2003 [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa375260.aspx">AllocateLocallyUniqueId function</a></para>
+        /// </remarks>
+        /// <seealso cref="LookupPrivilegeValue"/>
+        [DllImport("Advapi32.dll", CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool AllocateLocallyUniqueId(
+            out ulong Luid
+            );
+        #endregion
         #region AuthzAccessCheckCallback callback function
         /// <summary>
         /// The <see cref="AuthzAccessCheckCallback"/> function is an application-defined function that handles callback <em><a href="https://msdn.microsoft.com/en-us/library/ms721532.aspx#_security_access_control_entry_gly">access control entries</a></em> (ACEs) during an access check. <see cref="AuthzAccessCheckCallback"/> is a placeholder for the application-defined function name. The application registers this callback by calling <see cref="AuthzInitializeResourceManager"/>. 

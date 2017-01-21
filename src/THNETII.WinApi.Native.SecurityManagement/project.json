@@ -1,0 +1,28 @@
+{
+  "version": "10.0.14393-msdnlibrary-ms721855",
+  "authors": [ "Fredrik Høisæther Rasch" ],
+
+  "tooling": { "defaultNamespace": "Microsoft.Win32.WinApi.SecurityIdentity.SecurityManagement" },
+
+  "buildOptions": {
+    "xmlDoc": true
+  },
+
+  "dependencies": {
+    "NETStandard.Library": "1.6.1"
+  },
+
+  "frameworks": {
+    "netstandard1.3": {
+      "imports": [ "dotnet5.4", "portable-net46+win10" ],
+      "buildOptions": { "debugType": "portable" }
+    }
+  },
+
+  "packOptions": {
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/couven92/thnetii-windows-api.git"
+    }
+  }
+}

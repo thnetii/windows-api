@@ -511,6 +511,32 @@ namespace Microsoft.Win32.WinApi.SecurityIdentity.Authorization
             out POLICY_AUDIT_EVENT_TYPE pAuditCategoryId
             );
         #endregion
+        #region AuditLookupCategoryName function
+        /// <summary>
+        /// The <see cref="AuditLookupCategoryName"/> function retrieves the display name of the specified audit-policy category. 
+        /// </summary>
+        /// <param name="pAuditCategoryGuid">A reference to a <see cref="Guid"/> structure that specifies an audit-policy category.</param>
+        /// <param name="ppszCategoryName">
+        /// <para>A variable to a buffer that receives a null-terminated string  that contains the display name of the audit-policy category specified by the <paramref name="pAuditCategoryGuid"/> parameter.</para>
+        /// <para>Access to the contents of the received buffer should be wrapped in a using statement, to ensure the memory is freed after you are done processing the buffer.</para>
+        /// </param>
+        /// <returns>
+        /// If the function succeeds, it returns <c>true</c>.<br/>
+        /// If the function fails, it returns <c>false</c>. To get extended error information, call <see cref="Marshal.GetLastWin32Error"/>.
+        /// </returns>
+        /// <remarks>
+        /// <para><strong>Minimum supported client</strong>: Windows Vista [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows Server 2008 [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa375687.aspx">AuditLookupCategoryName function</a></para>
+        /// </remarks>
+        /// <seealso cref="AuditLookupSubCategoryName"/>
+        [DllImport("Advapi32.dll", CallingConvention = CallingConvention.Winapi, SetLastError = true, CharSet = CharSet.Unicode)]
+        [return: MarshalAs(UnmanagedType.U1)]
+        public static extern bool AuditLookupCategoryName(
+            [In] ref Guid pAuditCategoryGuid,
+            out WideStringAuditSafeHandle ppszCategoryName
+            );
+        #endregion
         #region AuthzAccessCheckCallback callback function
         /// <summary>
         /// The <see cref="AuthzAccessCheckCallback"/> function is an application-defined function that handles callback <em><a href="https://msdn.microsoft.com/en-us/library/ms721532.aspx#_security_access_control_entry_gly">access control entries</a></em> (ACEs) during an access check. <see cref="AuthzAccessCheckCallback"/> is a placeholder for the application-defined function name. The application registers this callback by calling <see cref="AuthzInitializeResourceManager"/>. 

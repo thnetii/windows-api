@@ -1,4 +1,5 @@
 ﻿using Microsoft.Win32.SafeHandles;
+using Microsoft.Win32.WinApi.SecurityIdentity.SecurityManagement;
 using System;
 using System.Runtime.InteropServices;
 using System.Security.AccessControl;
@@ -462,6 +463,29 @@ namespace Microsoft.Win32.WinApi.SecurityIdentity.Authorization
         [DllImport("Advapi32.dll", CallingConvention = CallingConvention.Winapi)]
         public static extern void AuditFree(
             [In] IntPtr Buffer
+            );
+        #endregion
+        #region AuditLookupCategoryGuidFromCategoryId function
+        /// <summary>
+        /// The <see cref="AuditLookupCategoryGuidFromCategoryId"/> function retrieves a <see cref="Guid"/> structure that represents the specified audit-policy category. 
+        /// </summary>
+        /// <param name="AuditCategoryId">An element of the <see cref="POLICY_AUDIT_EVENT_TYPE"/> enumeration that specifies an audit-policy category.</param>
+        /// <param name="pAuditCategoryGuid">A <see cref="Guid"/> variable that receives the audit-policy category specified by the <paramref name="AuditCategoryId"/>.</param>
+        /// <returns>
+        /// If the function succeeds, it returns <c>true</c>.<br/>
+        /// If the function fails, it returns <c>false</c>. To get extended error information, call <see cref="Marshal.GetLastWin32Error"/>.
+        /// </returns>
+        /// <remarks>
+        /// <para><strong>Minimum supported client</strong>: Windows Vista [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows Server 2008 [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa375669.aspx">AuditLookupCategoryGuidFromCategoryId function</a></para>
+        /// </remarks>
+        /// <seealso cref="AuditLookupCategoryIdFromCategoryGuid"/>
+        [DllImport("Advapi32.dll", CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.U1)]
+        public static extern bool AuditLookupCategoryGuidFromCategoryId(
+            [In] POLICY_AUDIT_EVENT_TYPE AuditCategoryId,
+            out Guid pAuditCategoryGuid
             );
         #endregion
         #region AuthzAccessCheckCallback callback function

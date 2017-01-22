@@ -29,7 +29,8 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
                     throw new ObjectDisposedException(nameof(handle));
                 else if (IsInvalid)
                     throw new InvalidOperationException();
-                var netApiStatus = NetApiBufferSize(handle, out int ByteCount);
+                int ByteCount;
+                var netApiStatus = NetApiBufferSize(handle, out ByteCount);
                 if (netApiStatus == NERR_Success)
                     return ByteCount;
                 throw new Win32Exception((int)netApiStatus);

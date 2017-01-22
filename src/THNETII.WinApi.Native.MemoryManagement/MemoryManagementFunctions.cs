@@ -11,6 +11,30 @@ namespace Microsoft.Win32.WinApi.SystemServices.MemoryManagement
     /// </remarks>
     public static class MemoryManagementFunctions
     {
+        #region AddSecureMemoryCacheCallback function
+        /// <summary>
+        /// Registers a callback function to be called when a secured memory range is freed or its protections are changed.
+        /// </summary>
+        /// <param name="pfnCallBack">A reference to the application-defined <see cref="SecureMemoryCacheCallback"/> function to register.</param>
+        /// <returns>
+        /// If the function succeeds, it returns <c>true</c>.<br/>
+        /// If the function fails, it returns <c>false</c>. To get extended error information, call <see cref="Marshal.GetLastWin32Error"/>.
+        /// </returns>
+        /// <remarks>
+        /// <para>An application that performs I/O directly to a high-performance device typically caches a virtual-to-physical memory mapping for the buffer it uses for the I/O. The device's driver typically secures this memory address range by calling the <see cref="MmSecureVirtualMemory"/> routine, which prevents the memory range from being freed or its protections changed until the driver unsecures the memory.</para>
+        /// <para>An application can use <see cref="AddSecureMemoryCacheCallback"/> to register a callback function that will be called when the memory is freed or its protections are changed, so the application can invalidate its cached memory mapping. For more information, see <see cref="SecureMemoryCacheCallback"/>.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows Vista with SP1 [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows Server 2008 [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/bb870879.aspx">AddSecureMemoryCacheCallback function</a></para>
+        /// </remarks>
+        /// <seealso cref="RemoveSecureMemoryCacheCallback"/>
+        /// <seealso cref="SecureMemoryCacheCallback"/>
+        [DllImport("Kernel32.dll", CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool AddSecureMemoryCacheCallback(
+            [In] SecureMemoryCacheCallback pfnCallBack
+            );
+        #endregion
         #region SecureMemoryCacheCallback callback function
         /// <summary>
         /// An application-defined function previously registered with the <see cref="AddSecureMemoryCacheCallback"/> function that is called when a secured memory range is freed or its protections are changed.

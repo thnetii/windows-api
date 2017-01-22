@@ -9,7 +9,7 @@
 void main()
 {
 	const int size = sizeof(CFG_CALL_TARGET_INFO);
-	const int value = HEAP_OPTIMIZE_RESOURCES_CURRENT_VERSION;
+	const int value = PAGE_EXECUTE;
 
 	void* ptr = AuditEnumeratePerUserPolicy;
 }

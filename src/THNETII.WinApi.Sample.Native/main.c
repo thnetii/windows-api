@@ -8,7 +8,7 @@
 
 void main()
 {
-	const int size = sizeof(MEMORYSTATUS);
+	const int size = sizeof(MEMORYSTATUSEX);
 	const int value = PAGE_EXECUTE;
 
 	void* ptr = AuditEnumeratePerUserPolicy;

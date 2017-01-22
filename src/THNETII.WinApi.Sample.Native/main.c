@@ -9,7 +9,7 @@
 void main()
 {
 	const int size = sizeof(MEMORYSTATUSEX);
-	const int value = PAGE_EXECUTE;
+	const int value = PROCESS_HEAP_ENTRY_BUSY;
 
 	void* ptr = AuditEnumeratePerUserPolicy;
 }

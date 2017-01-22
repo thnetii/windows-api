@@ -8,7 +8,7 @@
 
 void main()
 {
-	const int size = sizeof(CFG_CALL_TARGET_INFO);
+	const int size = sizeof(MEMORYSTATUS);
 	const int value = PAGE_EXECUTE;
 
 	void* ptr = AuditEnumeratePerUserPolicy;

@@ -8,8 +8,8 @@
 
 void main()
 {
-	const int size = sizeof(NET_VALIDATE_AUTHENTICATION_INPUT_ARG);
-	const int value = AUDIT_QUERY_SYSTEM_POLICY;
+	const int size = sizeof(CFG_CALL_TARGET_INFO);
+	const int value = CFG_CALL_TARGET_VALID;
 
 	void* ptr = AuditEnumeratePerUserPolicy;
 }

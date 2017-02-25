@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.3</TargetFramework>
+    <NetStandardImplicitPackageVersion>1.6.1</NetStandardImplicitPackageVersion>
+    <PackageTargetFallback>$(PackageTargetFallback);dotnet5.4;portable-net46+win10</PackageTargetFallback>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <DebugType>portable</DebugType>
+
+    <RootNamespace>Microsoft.Win32.WinApi.SystemServices.MemoryManagement</RootNamespace>
+
+    <VersionSufix>msdnlibrary-aa366779</VersionSufix>
+    <Description></Description>
+  </PropertyGroup>
+
+  <Import Project="..\..\common.props" />
+  <Import Project="..\..\version.props" />
+
+  <ItemGroup>
+    <None Remove="obj\**\*.*" />
+    <None Remove="bin\**\*.*" />
+  </ItemGroup>
+
+</Project>

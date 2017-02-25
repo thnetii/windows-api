@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <VersionPrefix>10.0.14393.0</VersionPrefix>
+    <Authors>Fredrik Høisæther Rasch</Authors>
+    <TargetFramework>netcoreapp1.0</TargetFramework>
+    <AssemblyName>THNETII.WinApi.Native.Test</AssemblyName>
+    <PackageId>THNETII.WinApi.Native.Test</PackageId>
+    <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+    <RuntimeIdentifiers>win81-x86;win81-x64</RuntimeIdentifiers>
+    <PackageTargetFallback>$(PackageTargetFallback);dnxcore5.0;portable-net46+win81</PackageTargetFallback>
+    <RuntimeFrameworkVersion>1.1.0</RuntimeFrameworkVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\THNETII.WinApi.Native.DbgHelp\THNETII.WinApi.Native.DbgHelp.csproj" />
+    <ProjectReference Include="..\..\src\THNETII.WinApi.Native.ErrorHandling\THNETII.WinApi.Native.ErrorHandling.csproj" />
+    <ProjectReference Include="..\..\src\THNETII.WinApi.Native.Authorization\THNETII.WinApi.Native.Authorization.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.0.0-preview-20170106-08" />
+    <PackageReference Include="xunit" Version="2.2.0-beta5-build3474" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.2.0-beta5-build1225" />
+  </ItemGroup>
+
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'netcoreapp1.0' ">
+    <DebugType>portable</DebugType>
+  </PropertyGroup>
+
+</Project>

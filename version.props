@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <PropertyGroup>
+    <VersionPrefix Condition="'$(VersionPrefix)' == ''">10.0.14393</VersionPrefix>
+    <FileVersion>$(VersionPrefix)</FileVersion>
+    <AssemblyVersion Condition="'$(BuildNumber)' == ''">$(VersionPrefix)</AssemblyVersion>
+    <AssemblyVersion Condition="'$(BuildNumber)' != ''">$(VersionPrefix).$(BuildNumber)</AssemblyVersion>
+    <VersionSuffix Condition="'$(VersionSuffix)'!='' AND '$(BuildNumber)' != ''">$(VersionSuffix)-$(BuildNumber)</VersionSuffix>
+  </PropertyGroup>
+</Project>

@@ -55,7 +55,7 @@ namespace Microsoft.Win32.WinApi.SystemServices.MemoryManagement
 
     public static class GlobalMemoryFlagsExtensions
     {
-        public static int GetLockCount(this GMEM_FLAGS uFlags) => (int)(uFlags & GMEM_FLAGS.GMEM_LOCKCOUNT);
+        public static int GetLockCount(this GMEM_FLAGS uFlags) => (int)((uint)(uFlags & GMEM_FLAGS.GMEM_LOCKCOUNT) << 8);
     }
 #pragma warning restore CS1591 // Missing XML comment for publicly visible type or member
 }

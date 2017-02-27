@@ -23,4 +23,8 @@
     <None Remove="bin\**\*.*" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\THNETII.WinApi.Native.WinError\THNETII.WinApi.Native.WinError.csproj" />
+  </ItemGroup>
+
 </Project>

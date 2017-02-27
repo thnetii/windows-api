@@ -13,6 +13,9 @@
         ERROR_SUCCESS = 0x00000000,
 
         /// <summary>The operation completed successfully.</summary>
+        NO_ERROR = 0,
+
+        /// <summary>The operation completed successfully.</summary>
         NERR_Success = 0x00000000,
 
         /// <summary>Incorrect function.</summary>

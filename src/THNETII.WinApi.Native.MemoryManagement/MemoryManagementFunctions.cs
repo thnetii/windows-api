@@ -2,6 +2,7 @@
 using System.Runtime.InteropServices;
 
 using static Microsoft.Win32.WinApi.SystemServices.MemoryManagement.GMEM_FLAGS;
+using static Microsoft.Win32.WinApi.WinError.Win32ErrorCode;
 
 namespace Microsoft.Win32.WinApi.SystemServices.MemoryManagement
 {
@@ -141,7 +142,7 @@ namespace Microsoft.Win32.WinApi.SystemServices.MemoryManagement
         [DllImport("Kernel32.dll", CallingConvention = CallingConvention.Winapi, SetLastError = true)]
         [return: MarshalAs(UnmanagedType.U4)]
         public static extern GMEM_FLAGS GlobalFlags(
-            [In] IntPtr hMem
+            [In] HGlobalNativeSafeHandle hMem
             );
         #endregion
         #region GlobalFree function
@@ -214,9 +215,12 @@ namespace Microsoft.Win32.WinApi.SystemServices.MemoryManagement
         /// <para><strong>Minimum supported server</strong>: Windows Server 2003 [desktop apps only]</para>
         /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa366584.aspx">GlobalLock function</a></para>
         /// </remarks>
+        /// <seealso cref="GlobalAlloc"/>
+        /// <seealso cref="GlobalReAlloc"/>
+        /// <seealso cref="GlobalUnlock"/>
         [DllImport("Kernel32.dll", CallingConvention = CallingConvention.Winapi, SetLastError = true)]
-        public static extern IntPtr GlobalLock(
-            [In] IntPtr hMem
+        public static extern HGlobalNativeLockedSafeHandle GlobalLock(
+            [In] HGlobalNativeSafeHandle hMem
             );
         #endregion
         #region GlobalReAlloc function
@@ -251,6 +255,60 @@ namespace Microsoft.Win32.WinApi.SystemServices.MemoryManagement
             [In] IntPtr hMem,
             [In, MarshalAs(UnmanagedType.SysUInt)] ulong dwBytes,
             [In, MarshalAs(UnmanagedType.U4)] GMEM_FLAGS uFlags
+            );
+        #endregion
+        #region GlobalSize function
+        /// <summary>
+        /// Retrieves the current size of the specified global memory object, in bytes.
+        /// <para><note>The global functions have greater overhead and provide fewer features than other memory management functions. New applications should use the <a href="https://msdn.microsoft.com/en-us/library/aa366711.aspx">heap functions</a> unless documentation states that a global function should be used. For more information, see <a href="https://msdn.microsoft.com/en-us/library/aa366596.aspx">Global and Local Functions</a>.</note></para>
+        /// </summary>
+        /// <param name="hMem">A handle to the global memory object. This handle is returned by either the <see cref="GlobalAlloc"/> or <see cref="GlobalReAlloc"/> function.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is the size of the specified global memory object, in bytes.</para>
+        /// <para>If the specified handle is not valid or if the object has been discarded, the return value is zero. To get extended error information, call <see cref="Marshal.GetLastWin32Error"/>.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>The size of a memory block may be larger than the size requested when the memory was allocated.</para>
+        /// <para>To verify that the specified object's memory block has not been discarded, use the <see cref="GlobalFlags"/> function before calling <see cref="GlobalSize"/>.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows XP [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows Server 2003 [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa366593.aspx">GlobalSize function</a></para>
+        /// </remarks>
+        /// <seealso cref="GlobalAlloc"/>
+        /// <seealso cref="GlobalFlags"/>
+        /// <seealso cref="GlobalReAlloc"/>
+        [DllImport("Kernel32.dll", CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.SysUInt)]
+        public static extern ulong GlobalSize(
+            [In] HGlobalNativeSafeHandle hMem
+            );
+        #endregion
+        #region GlobalUnlock function
+        /// <summary>
+        /// Decrements the lock count associated with a memory object that was allocated with <see cref="GMEM_MOVEABLE"/>. This function has no effect on memory objects allocated with <see cref="GMEM_FIXED"/>.
+        /// <para><note>The global functions have greater overhead and provide fewer features than other memory management functions. New applications should use the <a href="https://msdn.microsoft.com/en-us/library/aa366711.aspx">heap functions</a> unless documentation states that a global function should be used. For more information, see <a href="https://msdn.microsoft.com/en-us/library/aa366596.aspx">Global and Local Functions</a>.</note></para>
+        /// </summary>
+        /// <param name="hMem">A handle to the global memory object. This handle is returned by either the <see cref="GlobalAlloc"/> or <see cref="GlobalReAlloc"/> function.</param>
+        /// <returns>
+        /// <para>If the memory object is still locked after decrementing the lock count, the return value is <c>true</c>. If the memory object is unlocked after decrementing the lock count, the function returns <c>false</c> and <see cref="Marshal.GetLastWin32Error"/> returns <see cref="NO_ERROR"/>.</para>
+        /// <para>If the function fails, the return value is <c>false</c> and <see cref="Marshal.GetLastWin32Error"/> returns a value other than <see cref="NO_ERROR"/>.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>The internal data structures for each memory object include a lock count that is initially zero. For movable memory objects, the <see cref="GlobalLock"/> function increments the count by one, and <see cref="GlobalUnlock"/> decrements the count by one. For each call that a process makes to <see cref="GlobalLock"/> for an object, it must eventually call <see cref="GlobalUnlock"/>. Locked memory will not be moved or discarded, unless the memory object is reallocated by using the <see cref="GlobalReAlloc"/> function. The memory block of a locked memory object remains locked until its lock count is decremented to zero, at which time it can be moved or discarded.</para>
+        /// <para>Memory objects allocated with <see cref="GMEM_FIXED"/> always have a lock count of zero. If the specified memory block is fixed memory, this function returns <c>true</c>.</para>
+        /// <para>If the memory object is already unlocked, <see cref="GlobalUnlock"/> returns <c>false</c> and <see cref="Marshal.GetLastWin32Error"/> reports <see cref="ERROR_NOT_LOCKED"/>.</para>
+        /// <para>A process should not rely on the return value to determine the number of times it must subsequently call <see cref="GlobalUnlock"/> for a memory object.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows XP [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows Server 2003 [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa366595.aspx">GlobalUnlock function</a></para>
+        /// </remarks>
+        /// <seealso cref="GlobalAlloc"/>
+        /// <seealso cref="GlobalLock"/>
+        /// <seealso cref="GlobalReAlloc"/>
+        [DllImport("Kernel32.dll", CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool GlobalUnlock(
+            [In] IntPtr hMem
             );
         #endregion
     }

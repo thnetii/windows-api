@@ -7,7 +7,7 @@
 void main()
 {
 	const int size = sizeof(HRESULT);
-	const int value = NETSETUP_PROVISIONING_PARAMS_CURRENT_VERSION;
+	const int value = NO_ERROR;
 
 	void* ptr = NULL;
 }

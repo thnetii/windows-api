@@ -6,8 +6,8 @@
 
 void main()
 {
-	const int size = sizeof(HRESULT);
-	const int value = PRJOB_QSTATUS;
+	const int size = sizeof(SERVER_INFO_101);
+	const int value = SV_TYPE_WORKSTATION;
 
 	void* ptr = NULL;
 }

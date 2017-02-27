@@ -7,7 +7,7 @@
 void main()
 {
 	const int size = sizeof(HRESULT);
-	const int value = NO_ERROR;
+	const int value = PRJOB_QSTATUS;
 
 	void* ptr = NULL;
 }

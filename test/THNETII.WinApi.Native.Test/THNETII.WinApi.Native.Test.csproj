@@ -18,6 +18,7 @@
     <ProjectReference Include="..\..\src\THNETII.WinApi.Native.DbgHelp\THNETII.WinApi.Native.DbgHelp.csproj" />
     <ProjectReference Include="..\..\src\THNETII.WinApi.Native.ErrorHandling\THNETII.WinApi.Native.ErrorHandling.csproj" />
     <ProjectReference Include="..\..\src\THNETII.WinApi.Native.Authorization\THNETII.WinApi.Native.Authorization.csproj" />
+    <ProjectReference Include="..\..\src\THNETII.WinApi.Native.WinError\THNETII.WinApi.Native.WinError.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -31,5 +32,9 @@
     <Compile Remove="bin\**\*.*" />
     <None Remove="obj\**\*.*" />
     <None Remove="bin\**\*.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{82a7f48d-3b50-4b1e-b82e-3ada8210c358}" />
   </ItemGroup>
 </Project>

@@ -1,5 +1,5 @@
 ﻿using Microsoft.Win32.WinApi.SecurityIdentity.Authorization;
-using Microsoft.Win32.WindowsProtocols.MsErrRef;
+using Microsoft.Win32.WinApi.WinError;
 using System;
 using System.Collections.Generic;
 using System.Linq;

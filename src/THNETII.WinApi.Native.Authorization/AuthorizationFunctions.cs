@@ -7,7 +7,7 @@ using System.Security.Principal;
 using THNETII.InteropServices.NativeMemory;
 using static Microsoft.Win32.WinApi.SecurityIdentity.Authorization.ACCESS_MASK;
 using static Microsoft.Win32.WinApi.SecurityIdentity.Authorization.PrivilegeConstants;
-using static Microsoft.Win32.WindowsProtocols.MsErrRef.Win32ErrorCode;
+using static Microsoft.Win32.WinApi.WinError.Win32ErrorCode;
 using static System.Security.Principal.TokenAccessLevels;
 
 namespace Microsoft.Win32.WinApi.SecurityIdentity.Authorization

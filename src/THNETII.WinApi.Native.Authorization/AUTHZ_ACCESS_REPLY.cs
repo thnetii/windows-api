@@ -1,9 +1,9 @@
-﻿using Microsoft.Win32.WindowsProtocols.MsErrRef;
+﻿using Microsoft.Win32.WinApi.WinError;
 using System.Runtime.InteropServices;
 using THNETII.InteropServices.SafeHandles;
 
 using static Microsoft.Win32.WinApi.SecurityIdentity.Authorization.ACCESS_MASK;
-using static Microsoft.Win32.WindowsProtocols.MsErrRef.Win32ErrorCode;
+using static Microsoft.Win32.WinApi.WinError.Win32ErrorCode;
 
 namespace Microsoft.Win32.WinApi.SecurityIdentity.Authorization
 {

@@ -1,17 +1,15 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Library</OutputType>
     <TargetFramework>netstandard1.1</TargetFramework>
     <NetStandardImplicitPackageVersion>1.6.1</NetStandardImplicitPackageVersion>
-    <PackageTargetFallback>$(PackageTargetFallback);dotnet5.2;portable-net45+win8</PackageTargetFallback>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <DebugType>portable</DebugType>
 
-    <RootNamespace>Microsoft.Win32.WinApi.Diagnostics.ErrorHandling</RootNamespace>
+    <RootNamespace>Microsoft.Win32.WinApi.WinError</RootNamespace>
 
-    <VersionSufix>msdnlibrary-ms679320</VersionSufix>
-    <Description></Description>
+    <Description>TH-NETII Windows API support library containing Win32, HRESULT and NTSTATUS status and error codes.</Description>
   </PropertyGroup>
 
   <Import Project="..\..\common.props" />
@@ -22,10 +20,6 @@
     <Compile Remove="bin\**\*.cs" />
     <None Remove="obj\**\*.*" />
     <None Remove="bin\**\*.*" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\THNETII.WinApi.Native.WinError\THNETII.WinApi.Native.WinError.csproj" />
   </ItemGroup>
 
 </Project>

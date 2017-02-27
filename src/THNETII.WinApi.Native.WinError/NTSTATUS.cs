@@ -1,4 +1,4 @@
-﻿namespace Microsoft.Win32.WindowsProtocols.MsErrRef
+﻿namespace Microsoft.Win32.WinApi.WinError
 {
     /// <summary>
     /// By combining the <see cref="NTSTATUS"/> into a single 32-bit numbering space, the following <see cref="NTSTATUS"/> values are defined. Most values also have a defined default message that can be used to map the value to a human-readable text message. When this is done, the <see cref="NTSTATUS"/> value is also known as a message identifier.

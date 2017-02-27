@@ -1,11 +1,10 @@
 ﻿using Microsoft.Win32.SafeHandles;
-using Microsoft.Win32.WindowsProtocols.MsDTyp;
 using System;
 using System.IO;
 using System.Runtime.InteropServices;
 using System.Text;
 using static Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHlp.CHECKSUM_STATUS;
-using static Microsoft.Win32.WindowsProtocols.MsErrRef.Win32ErrorCode;
+using static Microsoft.Win32.WinApi.WinError.Win32ErrorCode;
 
 namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHlp
 {
@@ -609,6 +608,7 @@ namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHlp
             );
         #endregion
         #region TouchFileTimes function
+#if HAS_SYSTEMTIME
         /// <summary>
         /// Updates the date and time at which the specified file was last modified.
         /// </summary>
@@ -630,7 +630,8 @@ namespace Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHlp
         public static extern bool TouchFileTimes(
             [In] SafeFileHandle FileHandle,
             [In, MarshalAs(UnmanagedType.LPStruct)] SYSTEMTIME pSystemTime
-            );
+            ); 
+#endif
         #endregion
         #region UnMapAndLoad function
         /// <summary>

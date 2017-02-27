@@ -2,14 +2,11 @@
 #include <stdio.h>
 
 #include <Windows.h>
-#include <LM.h>
-#include <winnt.h>
-#include <Ntsecapi.h>
 
 void main()
 {
-	const int size = sizeof(MEMORYSTATUSEX);
-	const int value = PROCESS_HEAP_ENTRY_BUSY;
+	const int size = sizeof(HRESULT);
+	const int value = GMEM_LOCKCOUNT;
 
-	void* ptr = AuditEnumeratePerUserPolicy;
+	void* ptr = NULL;
 }

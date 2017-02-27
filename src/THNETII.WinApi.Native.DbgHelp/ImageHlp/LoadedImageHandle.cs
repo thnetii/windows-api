@@ -1,4 +1,4 @@
-﻿using Microsoft.Win32.WindowsProtocols.MsErrRef;
+﻿using Microsoft.Win32.WinApi.WinError;
 using System;
 using System.ComponentModel;
 using System.Runtime.InteropServices;

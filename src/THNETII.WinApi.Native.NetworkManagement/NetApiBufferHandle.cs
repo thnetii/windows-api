@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.Runtime.InteropServices;
 
 using static Microsoft.Win32.WinApi.Networking.NetworkManagement.NetworkManagementFunctions;
-using static Microsoft.Win32.WindowsProtocols.MsErrRef.Win32ErrorCode;
+using static Microsoft.Win32.WinApi.WinError.Win32ErrorCode;
 
 namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
 {

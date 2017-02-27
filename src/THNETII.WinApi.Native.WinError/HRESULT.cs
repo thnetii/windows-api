@@ -1,4 +1,4 @@
-﻿namespace Microsoft.Win32.WindowsProtocols.MsErrRef
+﻿namespace Microsoft.Win32.WinApi.WinError
 {
     /// <summary>
     /// <para>Combining the fields of an <see cref="HRESULT"/> into a single, 32-bit numbering space, the following <see cref="HRESULT"/> values are defined, in addition to those derived from <see cref="NTSTATUS"/> values and Win32 error codes (<see cref="Win32ErrorCode"/>).</para>

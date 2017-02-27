@@ -1,8 +1,8 @@
-﻿using Microsoft.Win32.WindowsProtocols.MsErrRef;
+﻿using Microsoft.Win32.WinApi.WinError;
 using System.Runtime.InteropServices;
 
 using static Microsoft.Win32.WinApi.Networking.NetworkManagement.NET_VALIDATE_PASSWORD_TYPE;
-using static Microsoft.Win32.WindowsProtocols.MsErrRef.Win32ErrorCode;
+using static Microsoft.Win32.WinApi.WinError.Win32ErrorCode;
 
 namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
 {

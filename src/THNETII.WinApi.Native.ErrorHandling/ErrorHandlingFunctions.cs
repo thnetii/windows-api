@@ -3,7 +3,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 
 using static Microsoft.Win32.WinApi.Diagnostics.ErrorHandling.ErrorHandlingFunctions.FORMAT_MESSAGE_FLAG;
-using static Microsoft.Win32.WindowsProtocols.MsErrRef.Win32ErrorCode;
+using static Microsoft.Win32.WinApi.WinError.Win32ErrorCode;
 
 namespace Microsoft.Win32.WinApi.Diagnostics.ErrorHandling
 {

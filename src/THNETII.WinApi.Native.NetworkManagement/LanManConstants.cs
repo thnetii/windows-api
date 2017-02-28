@@ -169,6 +169,17 @@
         public const string BACKUP_MSG_FILENAME = ("BAK.MSG");
 
         //END_INTERNAL
+
+        //
+        //      Names of standard Microsoft-defined alert events.
+        //
+
+        public const string ALERT_PRINT_EVENT = "PRINTING";
+        public const string ALERT_MESSAGE_EVENT = "MESSAGE";
+        public const string ALERT_ERRORLOG_EVENT = "ERRORLOG";
+        public const string ALERT_ADMIN_EVENT = "ADMIN";
+        public const string ALERT_USER_EVENT = "USER";
+
     }
 #pragma warning restore CS1591 // Missing XML comment for publicly visible type or member
 }

@@ -9,5 +9,5 @@ void main()
 	const int size = sizeof(SERVER_INFO_1518);
 	const int value = SVTI2_REMAP_PIPE_NAMES;
 
-	void* ptr = NULL;
+	void* ptr = ALERT_USER_EVENT;
 }

@@ -6,8 +6,8 @@
 
 void main()
 {
-	const int size = sizeof(SERVER_INFO_101);
-	const int value = SV_TYPE_WORKSTATION;
+	const int size = sizeof(SERVER_INFO_1518);
+	const int value = SW_AUTOPROF_LOAD_MASK;
 
 	void* ptr = NULL;
 }

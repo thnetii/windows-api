@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 
+using static Microsoft.Win32.WinApi.Networking.NetworkManagement.LanManServerConstants;
 using static Microsoft.Win32.WinApi.Networking.NetworkManagement.NetworkManagementFunctions;
 
 namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
@@ -18,12 +19,6 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
     [StructLayout(LayoutKind.Sequential)]
     public class SERVER_INFO_101
     {
-        /// <summary>
-        /// Mask to be applied to <see cref="sv101_version_major"/> in order to obtain
-        /// the major version number.
-        /// </summary>
-        public const int MAJOR_VERSION_MASK = 0x0F;
-
         /// <summary>
         /// The information level to use for platform-specific information.
         /// </summary>
@@ -44,9 +39,9 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
         /// </summary>
         public int sv101_version_minor;
         /// <summary>
-        /// Gets the operating system version of the server as a <see cref="Version"/> instance.
+        /// Gets the operating system version of the server as a <see cref="System.Version"/> instance.
         /// </summary>
-        public Version sv101_version => new Version((sv101_version_major & MAJOR_VERSION_MASK) << 4, sv101_version_minor);
+        public Version Version => new Version((sv101_version_major & MAJOR_VERSION_MASK) << 4, sv101_version_minor);
         /// <summary>
         /// The type of software the computer is running. 
         /// </summary>

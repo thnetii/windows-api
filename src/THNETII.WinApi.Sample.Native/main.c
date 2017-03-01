@@ -7,7 +7,7 @@
 void main()
 {
 	const int size = sizeof(SERVER_INFO_1518);
-	const int value = CREATE_NO_CONNECT;
+	const int value = TIMEQ_FOREVER;
 
 	void* ptr = ALERT_USER_EVENT;
 }

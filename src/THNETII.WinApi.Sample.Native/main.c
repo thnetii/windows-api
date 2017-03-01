@@ -7,7 +7,7 @@
 void main()
 {
 	const int size = sizeof(SERVER_INFO_1518);
-	const int value = TIMEQ_FOREVER;
+	const int value = DOMAIN_GROUP_RID_USERS;
 
 	void* ptr = ALERT_USER_EVENT;
 }

@@ -2,8 +2,10 @@
 using System;
 using System.Runtime.InteropServices;
 using System.Text;
+using THNETII.InteropServices.SafeHandles;
 
 using static Microsoft.Win32.WinApi.Networking.NetworkManagement.LanManConstants;
+using static Microsoft.Win32.WinApi.Networking.NetworkManagement.NETSETUP_PROVISION_FLAGS;
 using static Microsoft.Win32.WinApi.WinError.HRESULT;
 using static Microsoft.Win32.WinApi.WinError.Win32ErrorCode;
 
@@ -328,6 +330,181 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
         #endregion
         #region NetConfigSet
         // The NetConfigSet function is obsolete. It is included for compatibility with 16-bit versions of Windows. Other applications should use the registry. ( https://msdn.microsoft.com/en-us/library/ms724871.aspx )
+        #endregion
+        #region NetCreateProvisioningPackage function
+        /// <summary>
+        /// The <see cref="NetCreateProvisioningPackage"/> function creates a provisioning package that provisions a computer account for later use in an offline domain join operation. The package may also contain information about certificates and policies to add to the machine during provisioning.
+        /// </summary>
+        /// <param name="pProvisioningParams">A <see cref="NETSETUP_PROVISIONING_PARAMS"/> structure that contains information about the provisioning package.</param>
+        /// <param name="pPackageBinData">
+        /// A pointer that will receive the package required by <see cref="NetRequestOfflineDomainJoin"/> function to complete an offline domain join, if the <see cref="NetProvisionComputerAccount"/> function completes successfully. The data is returned as an opaque binary buffer which may be passed to <see cref="NetRequestOfflineDomainJoin"/> function. 
+        /// <para>Specifying this parameter requires <paramref name="pPackageTextData"/> to be omitted or set to <see cref="IntPtr.Zero"/>.</para>
+        /// </param>
+        /// <param name="pdwPackageBinDataSize">A variable that receives the size, in bytes, of the buffer returned in the <paramref name="pPackageBinData"/> parameter.</param>
+        /// <param name="pPackageTextData">A pointer value that must be omitted or set to <see cref="IntPtr.Zero"/>.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes or one of the system error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_ACCESS_DENIED"/></term><description>Access is denied. This error is returned if the caller does not have sufficient privileges to complete the operation. </description>
+        /// <term><see cref="ERROR_INVALID_DOMAIN_ROLE"/></term><description>This operation is only allowed for the Primary Domain Controller of the domain. This error is returned if a domain controller name was specified in the <see cref="NETSETUP_PROVISIONING_PARAMS.lpDcName"/> of the <see cref="NETSETUP_PROVISIONING_PARAMS"/> struct pointed to by the <paramref name="pProvisioningParams"/> parameter, but the computer specified could not be validated as a domain controller for the target domain specified in the <see cref="NETSETUP_PROVISIONING_PARAMS.lpDomain"/> of the <see cref="NETSETUP_PROVISIONING_PARAMS"/>.</description>
+        /// <term><see cref="ERROR_INVALID_PARAMETER"/></term><description>A parameter is incorrect. This error is also returned if both the <paramref name="pProvisioningParams"/> parameter is <c>null</c>. This error is also returned if the <see cref="NETSETUP_PROVISIONING_PARAMS.lpDomain"/> or <see cref="NETSETUP_PROVISIONING_PARAMS.lpMachineName"/> member of the <see cref="NETSETUP_PROVISIONING_PARAMS"/> struct pointed to by the <paramref name="pProvisioningParams"/> parameter is <c>null</c>. </description>
+        /// <term><see cref="ERROR_NO_SUCH_DOMAIN"/></term><description>The specified domain did not exist.</description>
+        /// <term><see cref="Win32ErrorCode.ERROR_NOT_SUPPORTED"/></term><description>The request is not supported. This error is returned if the <see cref="NETSETUP_PROVISIONING_PARAMS.lpMachineAccountOU"/> member was specified in the <see cref="NETSETUP_PROVISIONING_PARAMS"/> struct pointed to by the <paramref name="pProvisioningParams"/> parameter and the domain controller is running on an earlier versions of Windows that does not support this parameter.</description>
+        /// <term><see cref="NERR_DS8DCRequired"/></term><description>The specified domain controller does not meet the version requirement for this operation.</description>
+        /// <term><see cref="NERR_LDAPCapableDCRequired"/></term><description>This operation requires a domain controller which supports LDAP.</description>
+        /// <term><see cref="NERR_UserExists"/></term><description>The account already exists in the domain and the <see cref="NETSETUP_PROVISION_REUSE_ACCOUNT"/> bit was not specified in the <see cref="NETSETUP_PROVISIONING_PARAMS.dwProvisionOptions"/> member of the <see cref="NETSETUP_PROVISIONING_PARAMS"/> struct pointed to by the <paramref name="pProvisioningParams"/> parameter.</description>
+        /// <term><see cref="NERR_WkstaNotStarted"/></term><description>The Workstation service has not been started.</description>
+        /// <term><see cref="RPC_S_CALL_IN_PROGRESS"/></term><description>A remote procedure call is already in progress for this thread.</description>
+        /// <term><see cref="RPC_S_PROTSEQ_NOT_SUPPORTED"/></term><description>The remote procedure call protocol sequence is not supported.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>The <see cref="NetCreateProvisioningPackage"/> function is supported on Windows 8 and Windows Server 2012 for offline join operations. For Windows 7, use the <see cref="NetProvisionComputerAccount"/> function.</para>
+        /// <para>The <see cref="NetCreateProvisioningPackage"/> function is used to provision a computer account for later use in an offline domain join operation using the <see cref="NetRequestProvisioningPackageInstall"/> function.</para>
+        /// <para>
+        /// The offline domain join scenario uses two functions: 
+        /// <list type="bullet">
+        /// <item><see cref="NetCreateProvisioningPackage"/> is a provisioning function that is first called to perform the network operations necessary to create and configure the computer object in Active Directory. The output from the <see cref="NetCreateProvisioningPackage"/> is a package used for the next step. </item>
+        /// <item><see cref="NetRequestProvisioningPackageInstall"/>, an image initialization function, is called to inject the output from the <see cref="NetCreateProvisioningPackage"/> provisioning function into a Windows operating system image for use during pre-installation and post-installation</item>
+        /// </list>
+        /// </para>
+        /// <para>
+        /// Changes to Windows initialization code will detect this saved state and affect the local-only portion of domain join.<br/>
+        /// When the <paramref name="pPackageBinData"/> and <paramref name="pdwPackageBinDataSize"/> out parameters are used, set the <paramref name="pPackageTextData"/> out pointer to <see cref="IntPtr.Zero"/>.
+        /// </para>
+        /// <para>
+        /// The <paramref name="pProvisioningParams"/> parameter specifies data to include in the provisioning package. The package includes information relevant to the domain join, and it can also include information about policies and certificates to install on the machine. The provisioning package can be used in four ways:
+        /// <list type="bullet">
+        /// <item>Domain join</item>
+        /// <item>Domain join and installation of certificates</item>
+        /// <item>Domain join and installation of policies</item>
+        /// <item>Domain join and installation of certificates and policies</item>
+        /// </list>
+        /// </para>
+        /// <para>The <see cref="NetCreateProvisioningPackage"/> function creates or reuses the machine account in the domain, collects all necessary metadata and returns it in a package. The package can be consumed by the offline domain join request operation supplying all the necessary input to complete the domain join during first boot without any network operations (local state updates only). </para>
+        /// <para><note type="security">The package returned by the <see cref="NetCreateProvisioningPackage"/> function contains very sensitive data. It should be treated just as securely as a plaintext password. The package contains the machine account password and other information about the domain, including the domain name, the name of a domain controller, and the security ID (SID) of the domain. If the package is being transported physically or over the network, care must be taken to transport it securely. The design makes no provisions for securing this data. This problem exists today with unattended setup answer files which can carry a number of secrets including domain user passwords. The caller must secure the package. Solutions to this problem are varied. As an example, a pre-exchanged key could be used to encrypt a session between the consumer and provisioning entity enabling a secure transfer of the package.</note></para>
+        /// <para>The package returned in the <paramref name="pPackageBinData"/> parameter by the <see cref="NetCreateProvisioningPackage"/> function is versioned to allow interoperability and serviceability scenarios between different versions of Windows (such as joining a client, provisioning a machine, and using a domain controller). A package created on Windows 8 or Windows Server 2012 can be used Windows 7 or Windows Server 2008 R2, however only domain join information will take effect (certificates and policies are not supported). The offline join scenario currently does not limit the lifetime of the package returned by the <see cref="NetCreateProvisioningPackage"/> function.</para>
+        /// <para>
+        /// For offline domain joins, the access check performed depends on the configuration of the domain. Computer account creation is enabled using three methods:
+        /// <list type="bullet">
+        /// <item>Domain administrators have rights to create computer accounts.</item>
+        /// <item>The SD on a container can delegate the rights to create computer accounts.</item>
+        /// <item>By default, authenticated users may create computer accounts by privilege. Authenticated users are limited to creating a limited number of accounts that is specified as a quota on the domain (the default value is 10). For more information, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=152785">ms-DS-MachineAccountQuota</a> attribute in the Active Directory schema.</item>
+        /// </list>
+        /// </para>
+        /// <para>The <see cref="NetCreateProvisioningPackage"/> function works only with a writable domain controller and does not function against a read-only domain controller. Once provisioning is done against a writable domain controller and the account is replicated to a read-only domain controller, the other portions of the offline domain join operation do not require access to a domain controller.</para>
+        /// <para>If the <see cref="NetCreateProvisioningPackage"/> function is successful, the pointer in the <paramref name="pPackageBinData"/> parameter is returned with the serialized data for use in an offline join operation. </para>
+        /// <para>All phases of the provisioning process append to a NetSetup.log file on the local computer. The provisoning process can include up to three different computers: the computer where the provisioning package is created, the computer that requests the installation of the package, and the computer where the package is installed. There will be <c>NetSetup.log</c> file information stored on all three computers according to the operation performed. Reviewing the contents of these files is the most common means of troubleshooting online and offline provisioning errors. Provisioning operations undertaken by admins are logged to the <c>NetSetup.log</c> file in the <c>%WINDIR%\Debug</c>. Provisioning operations performed by non-admins are logged to the <c>NetSetup.log</c> file in the <c>%USERPROFILE%\Debug</c> folder.</para>
+        /// <para>For more information on offline domain join operations, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=152786">Offline Domain Join Step-by-Step Guide</a>.</para>
+        /// <para>Joining (and unjoining) a computer to a domain using <see cref="NetJoinDomain"/> and <see cref="NetUnjoinDomain"/> is performed only by a member of the Administrators local group on the target computer. Note that the domain administrator can set additional requirements for joining the domain using delegation and assignment of privileges.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 8 [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows Server 2012 [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/hh706770.aspx">NetCreateProvisioningPackage function</a></para>
+        /// </remarks>
+        /// <seealso cref="NetJoinDomain"/>
+        /// <seealso cref="NetRenameMachineInDomain"/>
+        /// <seealso cref="NetRequestOfflineDomainJoin"/>
+        /// <seealso cref="NetRequestProvisioningPackageInstall"/>
+        /// <seealso cref="NetUnjoinDomain"/>
+        /// <seealso cref="NETSETUP_PROVISIONING_PARAMS"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetCreateProvisioningPackage(
+            [In, MarshalAs(UnmanagedType.LPStruct)] NETSETUP_PROVISIONING_PARAMS pProvisioningParams,
+            out NetRequestOfflineDomainJoinBinDataBuffer pPackageBinData,
+            out int pdwPackageBinDataSize,
+            [Optional] IntPtr pPackageTextData
+            );
+        /// <summary>
+        /// The <see cref="NetCreateProvisioningPackage"/> function creates a provisioning package that provisions a computer account for later use in an offline domain join operation. The package may also contain information about certificates and policies to add to the machine during provisioning.
+        /// </summary>
+        /// <param name="pProvisioningParams">A <see cref="NETSETUP_PROVISIONING_PARAMS"/> structure that contains information about the provisioning package.</param>
+        /// <param name="pPackageBinData">A pointer value that must be omitted or set to <see cref="IntPtr.Zero"/>.</param>
+        /// <param name="pdwPackageBinDataSize">A pointer value that must be omitted or set to <see cref="IntPtr.Zero"/>.</param>
+        /// <param name="pPackageTextData">
+        /// A variable that will receive the package required by <see cref="NetRequestOfflineDomainJoin"/> function to complete an offline domain join, if the <see cref="NetProvisionComputerAccount"/> function completes successfully. The data is returned in string form for embedding in an unattended setup answer file. 
+        /// <para>Specifying this parameter requires <paramref name="pPackageBinData"/> and <paramref name="pdwPackageBinDataSize"/> to be omitted or set to <see cref="IntPtr.Zero"/>.</para>
+        /// </param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes or one of the system error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_ACCESS_DENIED"/></term><description>Access is denied. This error is returned if the caller does not have sufficient privileges to complete the operation. </description>
+        /// <term><see cref="ERROR_INVALID_DOMAIN_ROLE"/></term><description>This operation is only allowed for the Primary Domain Controller of the domain. This error is returned if a domain controller name was specified in the <see cref="NETSETUP_PROVISIONING_PARAMS.lpDcName"/> of the <see cref="NETSETUP_PROVISIONING_PARAMS"/> struct pointed to by the <paramref name="pProvisioningParams"/> parameter, but the computer specified could not be validated as a domain controller for the target domain specified in the <see cref="NETSETUP_PROVISIONING_PARAMS.lpDomain"/> of the <see cref="NETSETUP_PROVISIONING_PARAMS"/>.</description>
+        /// <term><see cref="ERROR_INVALID_PARAMETER"/></term><description>A parameter is incorrect. This error is also returned if both the <paramref name="pProvisioningParams"/> parameter is <c>null</c>. This error is also returned if the <see cref="NETSETUP_PROVISIONING_PARAMS.lpDomain"/> or <see cref="NETSETUP_PROVISIONING_PARAMS.lpMachineName"/> member of the <see cref="NETSETUP_PROVISIONING_PARAMS"/> struct pointed to by the <paramref name="pProvisioningParams"/> parameter is <c>null</c>. </description>
+        /// <term><see cref="ERROR_NO_SUCH_DOMAIN"/></term><description>The specified domain did not exist.</description>
+        /// <term><see cref="Win32ErrorCode.ERROR_NOT_SUPPORTED"/></term><description>The request is not supported. This error is returned if the <see cref="NETSETUP_PROVISIONING_PARAMS.lpMachineAccountOU"/> member was specified in the <see cref="NETSETUP_PROVISIONING_PARAMS"/> struct pointed to by the <paramref name="pProvisioningParams"/> parameter and the domain controller is running on an earlier versions of Windows that does not support this parameter.</description>
+        /// <term><see cref="NERR_DS8DCRequired"/></term><description>The specified domain controller does not meet the version requirement for this operation.</description>
+        /// <term><see cref="NERR_LDAPCapableDCRequired"/></term><description>This operation requires a domain controller which supports LDAP.</description>
+        /// <term><see cref="NERR_UserExists"/></term><description>The account already exists in the domain and the <see cref="NETSETUP_PROVISION_REUSE_ACCOUNT"/> bit was not specified in the <see cref="NETSETUP_PROVISIONING_PARAMS.dwProvisionOptions"/> member of the <see cref="NETSETUP_PROVISIONING_PARAMS"/> struct pointed to by the <paramref name="pProvisioningParams"/> parameter.</description>
+        /// <term><see cref="NERR_WkstaNotStarted"/></term><description>The Workstation service has not been started.</description>
+        /// <term><see cref="RPC_S_CALL_IN_PROGRESS"/></term><description>A remote procedure call is already in progress for this thread.</description>
+        /// <term><see cref="RPC_S_PROTSEQ_NOT_SUPPORTED"/></term><description>The remote procedure call protocol sequence is not supported.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>The <see cref="NetCreateProvisioningPackage"/> function is supported on Windows 8 and Windows Server 2012 for offline join operations. For Windows 7, use the <see cref="NetProvisionComputerAccount"/> function.</para>
+        /// <para>The <see cref="NetCreateProvisioningPackage"/> function is used to provision a computer account for later use in an offline domain join operation using the <see cref="NetRequestProvisioningPackageInstall"/> function.</para>
+        /// <para>
+        /// The offline domain join scenario uses two functions: 
+        /// <list type="bullet">
+        /// <item><see cref="NetCreateProvisioningPackage"/> is a provisioning function that is first called to perform the network operations necessary to create and configure the computer object in Active Directory. The output from the <see cref="NetCreateProvisioningPackage"/> is a package used for the next step. </item>
+        /// <item><see cref="NetRequestProvisioningPackageInstall"/>, an image initialization function, is called to inject the output from the <see cref="NetCreateProvisioningPackage"/> provisioning function into a Windows operating system image for use during pre-installation and post-installation</item>
+        /// </list>
+        /// </para>
+        /// <para>
+        /// Changes to Windows initialization code will detect this saved state and affect the local-only portion of domain join.<br/>
+        /// When <paramref name="pPackageTextData"/> is used, set the <paramref name="pPackageBinData"/> and <paramref name="pdwPackageBinDataSize"/> pointers to <see cref="IntPtr.Zero"/> or omit them.
+        /// </para>
+        /// <para>
+        /// The <paramref name="pProvisioningParams"/> parameter specifies data to include in the provisioning package. The package includes information relevant to the domain join, and it can also include information about policies and certificates to install on the machine. The provisioning package can be used in four ways:
+        /// <list type="bullet">
+        /// <item>Domain join</item>
+        /// <item>Domain join and installation of certificates</item>
+        /// <item>Domain join and installation of policies</item>
+        /// <item>Domain join and installation of certificates and policies</item>
+        /// </list>
+        /// </para>
+        /// <para>The <see cref="NetCreateProvisioningPackage"/> function creates or reuses the machine account in the domain, collects all necessary metadata and returns it in a package. The package can be consumed by the offline domain join request operation supplying all the necessary input to complete the domain join during first boot without any network operations (local state updates only). </para>
+        /// <para><note type="security">The package returned by the <see cref="NetCreateProvisioningPackage"/> function contains very sensitive data. It should be treated just as securely as a plaintext password. The package contains the machine account password and other information about the domain, including the domain name, the name of a domain controller, and the security ID (SID) of the domain. If the package is being transported physically or over the network, care must be taken to transport it securely. The design makes no provisions for securing this data. This problem exists today with unattended setup answer files which can carry a number of secrets including domain user passwords. The caller must secure the package. Solutions to this problem are varied. As an example, a pre-exchanged key could be used to encrypt a session between the consumer and provisioning entity enabling a secure transfer of the package.</note></para>
+        /// <para>
+        /// For offline domain joins, the access check performed depends on the configuration of the domain. Computer account creation is enabled using three methods:
+        /// <list type="bullet">
+        /// <item>Domain administrators have rights to create computer accounts.</item>
+        /// <item>The SD on a container can delegate the rights to create computer accounts.</item>
+        /// <item>By default, authenticated users may create computer accounts by privilege. Authenticated users are limited to creating a limited number of accounts that is specified as a quota on the domain (the default value is 10). For more information, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=152785">ms-DS-MachineAccountQuota</a> attribute in the Active Directory schema.</item>
+        /// </list>
+        /// </para>
+        /// <para>The <see cref="NetCreateProvisioningPackage"/> function works only with a writable domain controller and does not function against a read-only domain controller. Once provisioning is done against a writable domain controller and the account is replicated to a read-only domain controller, the other portions of the offline domain join operation do not require access to a domain controller.</para>
+        /// <para>If the <see cref="NetCreateProvisioningPackage"/> function is successful, the <paramref name="pPackageTextData"/> parameter is returned with the serialized data for use in an offline join operation. </para>
+        /// <para>All phases of the provisioning process append to a NetSetup.log file on the local computer. The provisoning process can include up to three different computers: the computer where the provisioning package is created, the computer that requests the installation of the package, and the computer where the package is installed. There will be <c>NetSetup.log</c> file information stored on all three computers according to the operation performed. Reviewing the contents of these files is the most common means of troubleshooting online and offline provisioning errors. Provisioning operations undertaken by admins are logged to the <c>NetSetup.log</c> file in the <c>%WINDIR%\Debug</c>. Provisioning operations performed by non-admins are logged to the <c>NetSetup.log</c> file in the <c>%USERPROFILE%\Debug</c> folder.</para>
+        /// <para>For more information on offline domain join operations, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=152786">Offline Domain Join Step-by-Step Guide</a>.</para>
+        /// <para>Joining (and unjoining) a computer to a domain using <see cref="NetJoinDomain"/> and <see cref="NetUnjoinDomain"/> is performed only by a member of the Administrators local group on the target computer. Note that the domain administrator can set additional requirements for joining the domain using delegation and assignment of privileges.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 8 [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows Server 2012 [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/hh706770.aspx">NetCreateProvisioningPackage function</a></para>
+        /// </remarks>
+        /// <seealso cref="NetJoinDomain"/>
+        /// <seealso cref="NetRenameMachineInDomain"/>
+        /// <seealso cref="NetRequestOfflineDomainJoin"/>
+        /// <seealso cref="NetRequestProvisioningPackageInstall"/>
+        /// <seealso cref="NetUnjoinDomain"/>
+        /// <seealso cref="NETSETUP_PROVISIONING_PARAMS"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetCreateProvisioningPackage(
+            [In, MarshalAs(UnmanagedType.LPStruct)] NETSETUP_PROVISIONING_PARAMS pProvisioningParams,
+            [Optional] IntPtr pPackageBinData,
+            [Optional] IntPtr pdwPackageBinDataSize,
+            out ExternalWideStringZeroTerminatedSafeHandle pPackageTextData
+            );
         #endregion
     }
 }

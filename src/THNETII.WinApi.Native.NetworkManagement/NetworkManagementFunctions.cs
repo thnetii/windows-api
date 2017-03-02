@@ -118,6 +118,47 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
             [In] uint Reserved
             );
         #endregion
+        #region NetAlertRaise function
+        /// <summary>
+        /// <para>The <see cref="NetAlertRaise"/> function notifies all registered clients when a particular event occurs.</para>
+        /// <para>To simplify sending an alert message, you can call the extended function <see cref="NetAlertRaiseEx"/> instead. <see cref="NetAlertRaiseEx"/> does not require that you specify a <see cref="STD_ALERT"/> structure.</para>
+        /// </summary>
+        /// <param name="AlertEventName">A string that specifies the alert class (type of alert) to raise. This parameter can be one of the following predefined values, or a user-defined alert class for network applications. The event name for an alert can be any text string. </param>
+        /// <param name="Buffer">A pointer to the data to send to the clients listening for the interrupting message. The data should begin with a fixed-length <see cref="STD_ALERT"/> structure followed by additional message data in one <see cref="ADMIN_OTHER_INFO"/>, <see cref="ERRLOG_OTHER_INFO"/>, <see cref="PRINT_OTHER_INFO"/>, or <see cref="USER_OTHER_INFO"/> structure. Finally, the buffer should include any required variable-length information.</param>
+        /// <param name="BufferSize">The size, in bytes, of the message buffer.</param>
+        /// <returns>
+        /// If the function succeeds, the return value is <see cref="NERR_Success"/>.<br/>
+        /// If the function fails, the return value is a system error code and a can be one of the following error codes.
+        /// <list type="list">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_INVALID_PARAMETER"/></term><description>A parameter is incorrect. This error is returned if the <paramref name="AlertEventName"/> parameter is <c>null</c> or an empty string, the Buffer parameter is <c>null</c>, or the <paramref name="BufferSize"/> parameter is less than the size of the <see cref="STD_ALERT"/> structure plus the fixed size for the additional message data structure. </description>
+        /// <term><see cref="Win32ErrorCode.ERROR_NOT_SUPPORTED"/></term><description>The request is not supported. This error is returned on Windows Vista and later since the Alerter service is not supported.</description>
+        /// </list>
+        /// </returns>
+        /// <remarks>
+        /// <para>No special group membership is required to successfully execute the <see cref="NetAlertRaise"/> function.</para>
+        /// <para>The alerter service must be running on the client computer when you call the <see cref="NetAlertRaise"/> function, or the function fails with <see cref="ERROR_FILE_NOT_FOUND"/>.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para><strong>End of client support</strong>: Windows XP</para>
+        /// <para><strong>End of server support</strong>: Windows Server 2003</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370297.aspx">NetAlertRaise function</a></para>
+        /// </remarks>
+        /// <seealso cref="ADMIN_OTHER_INFO"/>
+        /// <seealso cref="ERRLOG_OTHER_INFO"/>
+        /// <seealso cref="NetAlertRaiseEx"/>
+        /// <seealso cref="PRINT_OTHER_INFO"/>
+        /// <seealso cref="STD_ALERT"/>
+        /// <seealso cref="USER_OTHER_INFO"/>
+        [Obsolete("This function is not supported as of Windows Vista because the alerter service is not supported.")]
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.StdCall)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetAlertRaise(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string AlertEventName,
+            [In] NetApiAlertBufferHandle Buffer,
+            [In] int BufferSize
+            );
+        #endregion
         #region NetApiBufferAllocate function
         /// <summary>
         /// The <see cref="NetApiBufferAllocate"/> function allocates memory from the heap. Use this function only when compatibility with the <see cref="NetApiBufferFree"/> function is required. Otherwise, use one of the other memory management functions.

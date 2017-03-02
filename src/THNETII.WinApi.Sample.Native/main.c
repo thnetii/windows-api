@@ -7,7 +7,7 @@
 void main()
 {
 	const int size = sizeof(SERVER_INFO_1518);
-	const int value = UAS_ROLE_STANDALONE;
+	const int value = ERROR_NOT_SUPPORTED;
 
 	void* ptr = ALERT_USER_EVENT;
 }

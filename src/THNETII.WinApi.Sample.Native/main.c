@@ -6,7 +6,7 @@
 
 void main()
 {
-	const int size = sizeof(SERVER_INFO_1518);
+	const int size = sizeof(NET_COMPUTER_NAME_TYPE);
 	const int value = NERR_DS8DCRequired;
 
 	void* ptr = ALERT_USER_EVENT;

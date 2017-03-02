@@ -506,5 +506,58 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
             out ExternalWideStringZeroTerminatedSafeHandle pPackageTextData
             );
         #endregion
+        #region NetEnumerateComputerNames function
+        /// <summary>
+        /// The <see cref="NetEnumerateComputerNames"/> function enumerates names for the specified computer.
+        /// </summary>
+        /// <param name="Server">A string that specifies the name of the computer on which to execute this function. If this parameter is <c>null</c>, the local computer is used.</param>
+        /// <param name="NameType">The type of the name queried.</param>
+        /// <param name="Reserved">Reserved for future use. This parameter should be <c>0</c> (zero).</param>
+        /// <param name="EntryCount">An <see cref="int"/> variable that receives the number of names returned in the buffer pointed to by the <paramref name="ComputerNames"/> parameter if the function succeeds.</param>
+        /// <param name="ComputerNames">
+        /// A variable that receives a Net API Buffer Handle containing the computer names that match the computer type name specified in the <paramref name="NameType"/> parameter. 
+        /// <para>When the application no longer needs this buffer, the memory should be released back to the system by wrapping the handle in a <c>using</c> block, or by calling the <see cref="SafeHandle.Dispose()"/> method directly.</para>
+        /// </param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes or one of the system error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_ACCESS_DENIED"/></term><description>Access is denied. This error is returned if the caller was not a member of the Administrators local group on the target computer.</description>
+        /// <term><see cref="ERROR_INVALID_PARAMETER"/></term><description>A parameter is incorrect. </description>
+        /// <term><see cref="ERROR_NOT_ENOUGH_MEMORY"/></term><description>Not enough memory is available to process this command.</description>
+        /// <term><see cref="ERROR_NOT_SUPPORTED"/></term><description>The request is not supported. This error is returned if the target computer specified in the <paramref name="Server"/> parameter on which this function executes is running on Windows 2000 and earlier. </description>
+        /// <term><see cref="NERR_WkstaNotStarted"/></term><description>The Workstation service has not been started.</description>
+        /// <term><see cref="RPC_S_CALL_IN_PROGRESS"/></term><description>A remote procedure call is already in progress for this thread.</description>
+        /// <term><see cref="RPC_S_PROTSEQ_NOT_SUPPORTED"/></term><description>The remote procedure call protocol sequence is not supported.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>The <see cref="NetEnumerateComputerNames"/> function is supported on Windows Vista and later. </para>
+        /// <para>The <see cref="NetEnumerateComputerNames"/> function is used to request the names a computer currently has configured. </para>
+        /// <para>The <see cref="NetEnumerateComputerNames"/> function requires that the caller is a member of the Administrators local group on the target computer.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 8 [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows Server 2012 [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/dd877207.aspx">NetEnumerateComputerNames function</a></para>
+        /// </remarks>
+        /// <seealso cref="NetAddAlternateComputerName"/>
+        /// <seealso cref="NetJoinDomain"/>
+        /// <seealso cref="NetRemoveAlternateComputerName"/>
+        /// <seealso cref="NetRenameMachineInDomain"/>
+        /// <seealso cref="NetSetPrimaryComputerName"/>
+        /// <seealso cref="NetUnjoinDomain"/>
+        /// <seealso cref="SetComputerNameEx"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetEnumerateComputerNames(
+            [In, Optional, MarshalAs(UnmanagedType.LPWStr)] string Server,
+            [In] NET_COMPUTER_NAME_TYPE NameType,
+            [In] int Reserved,
+            out int EntryCount,
+            out NetApiWideStringZeroTerminatedArrayBufferHandle ComputerNames
+            );
+        #endregion
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Runtime.InteropServices;
+using THNETII.InteropServices.SafeHandles;
 
 using static Microsoft.Win32.WinApi.Networking.NetworkManagement.NetworkManagementFunctions;
 using static Microsoft.Win32.WinApi.WinError.Win32ErrorCode;
@@ -10,7 +11,7 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
     /// <summary>
     /// Provides a managed handle object for a Network Management API Buffer.
     /// </summary>
-    public class NetApiBufferHandle : SafeHandle
+    public class NetApiBufferHandle : SafeHandle, ISafeHandleSizeAware
     {
         /// <inheritdoc />
         public override bool IsInvalid { get; } = false;
@@ -21,7 +22,7 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
         /// <exception cref="ObjectDisposedException">The memory that the handle control has been freed.</exception>
         /// <exception cref="InvalidOperationException">The handle represented by this instance is invalid.</exception>
         /// <exception cref="Win32Exception">An error occurred during the native call to the system.</exception>
-        public int BufferSize
+        public int ByteSize
         {
             get
             {

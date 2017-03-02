@@ -131,7 +131,7 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
         /// If the function fails, the return value is a system error code and a can be one of the following error codes.
         /// <list type="list">
         /// <listheader><term>Return code</term><description>Description</description></listheader>
-        /// <term><see cref="ERROR_INVALID_PARAMETER"/></term><description>A parameter is incorrect. This error is returned if the <paramref name="AlertEventName"/> parameter is <c>null</c> or an empty string, the Buffer parameter is <c>null</c>, or the <paramref name="BufferSize"/> parameter is less than the size of the <see cref="STD_ALERT"/> structure plus the fixed size for the additional message data structure. </description>
+        /// <term><see cref="ERROR_INVALID_PARAMETER"/></term><description>A parameter is incorrect. This error is returned if the <paramref name="AlertEventName"/> parameter is <c>null</c> or an empty string, the <paramref name="Buffer"/> parameter is <c>null</c>, or the <paramref name="BufferSize"/> parameter is less than the size of the <see cref="STD_ALERT"/> structure plus the fixed size for the additional message data structure. </description>
         /// <term><see cref="Win32ErrorCode.ERROR_NOT_SUPPORTED"/></term><description>The request is not supported. This error is returned on Windows Vista and later since the Alerter service is not supported.</description>
         /// </list>
         /// </returns>
@@ -157,6 +157,48 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
             [In, MarshalAs(UnmanagedType.LPWStr)] string AlertEventName,
             [In] NetApiAlertBufferHandle Buffer,
             [In] int BufferSize
+            );
+        #endregion
+        #region NetAlertRaiseEx function
+        /// <summary>
+        /// The <see cref="NetAlertRaiseEx"/> function notifies all registered clients when a particular event occurs. You can call this extended function to simplify the sending of an alert message because <see cref="NetAlertRaiseEx"/> does not require that you specify a <see cref="STD_ALERT"/> structure.
+        /// </summary>
+        /// <param name="AlertEventName">A string that specifies the alert class (type of alert) to raise.</param>
+        /// <param name="VariableInfo">A pointer to the data to send to the clients listening for the interrupting message. The data should consist of one <see cref="ADMIN_OTHER_INFO"/>, <see cref="ERRLOG_OTHER_INFO"/>, <see cref="PRINT_OTHER_INFO"/>, or <see cref="USER_OTHER_INFO"/> structure followed by any required variable-length information.</param>
+        /// <param name="VariableInfoSize">The number of bytes of variable information in the buffer pointed to by the <paramref name="VariableInfo"/> parameter.</param>
+        /// <param name="ServiceName">A string that specifies the name of the service raising the interrupting message.</param>
+        /// <returns>
+        /// If the function succeeds, the return value is <see cref="NERR_Success"/>.<br/>
+        /// If the function fails, the return value is a system error code and a can be one of the following error codes.
+        /// <list type="list">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_INVALID_PARAMETER"/></term><description>A parameter is incorrect. This error is returned if the <paramref name="AlertEventName"/> parameter is <c>null</c> or an empty string, the <paramref name="VariableInfo"/> parameter is <c>null</c>, or the <paramref name="VariableInfoSize"/> parameter is greater than 512 minus the size of the <see cref="STD_ALERT"/> structure. </description>
+        /// <term><see cref="Win32ErrorCode.ERROR_NOT_SUPPORTED"/></term><description>The request is not supported. This error is returned on Windows Vista and later since the Alerter service is not supported.</description>
+        /// </list>
+        /// </returns>
+        /// <remarks>
+        /// <para>No special group membership is required to successfully execute the <see cref="NetAlertRaiseEx"/> function.</para>
+        /// <para>The alerter service must be running on the client computer when you call the <see cref="NetAlertRaiseEx"/> function, or the function fails with <see cref="ERROR_FILE_NOT_FOUND"/>.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para><strong>End of client support</strong>: Windows XP</para>
+        /// <para><strong>End of server support</strong>: Windows Server 2003</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370298.aspx">NetAlertRaiseEx function</a></para>
+        /// </remarks>
+        /// <seealso cref="NetAlertRaise"/>
+        /// <seealso cref="ADMIN_OTHER_INFO"/>
+        /// <seealso cref="ERRLOG_OTHER_INFO"/>
+        /// <seealso cref="PRINT_OTHER_INFO"/>
+        /// <seealso cref="STD_ALERT"/>
+        /// <seealso cref="USER_OTHER_INFO"/>
+        [Obsolete("This function is not supported as of Windows Vista because the alerter service is not supported.")]
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.StdCall)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetAlertRaiseEx(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string AlertEventName,
+            [In] NetApiAlertOtherInfoBufferHandle VariableInfo,
+            [In] int VariableInfoSize,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string ServiceName
             );
         #endregion
         #region NetApiBufferAllocate function

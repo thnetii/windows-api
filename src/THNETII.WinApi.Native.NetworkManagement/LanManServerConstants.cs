@@ -1,5 +1,6 @@
 ﻿namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
 {
+#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
     public static class LanManServerConstants
     {
         /// <summary>
@@ -23,8 +24,6 @@
         /// Equate for use with <see cref="SERVER_INFO_102.sv102_licenses"/>.
         /// </summary>
         public const int SV_USERS_PER_LICENSE = 5;
-
-        
-
     }
+#pragma warning restore CS1591 // Missing XML comment for publicly visible type or member
 }

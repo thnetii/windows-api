@@ -778,5 +778,36 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
             out NetApiWideStringZeroTerminatedArrayBufferHandle OUs
             );
         #endregion
+        #region NetGetJoinInformation function
+        /// <summary>
+        /// The <see cref="NetGetJoinInformation"/> function retrieves join status information for the specified computer.
+        /// </summary>
+        /// <param name="lpServer">A string that specifies the DNS or NetBIOS name of the computer on which to call the function. If this parameter is <c>null</c>, the local computer is used.</param>
+        /// <param name="lpNameBuffer">A variable that receives the NetBIOS name of the domain or workgroup to which the computer is joined. This buffer is allocated by the system and must be freed by wrapping the handle in a <c>using</c> block, or by calling the <see cref="SafeHandle.Dispose()"/> method directly.</param>
+        /// <param name="BufferType">Receives the join status of the specified computer.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_NOT_ENOUGH_MEMORY"/></term><description>Not enough storage is available to process this command.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// No special group membership is required to successfully execute the <see cref="NetGetJoinInformation"/> function.
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370423.aspx">NetGetJoinInformation function</a></para>
+        /// </remarks>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetGetJoinInformation(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string lpServer,
+            out NetApiWideStringZeroTerminatedBufferHandle lpNameBuffer,
+            out NETSETUP_JOIN_STATUS BufferType
+            );
+        #endregion
     }
 }

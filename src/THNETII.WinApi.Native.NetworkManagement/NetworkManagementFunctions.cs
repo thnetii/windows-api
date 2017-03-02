@@ -738,5 +738,45 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
             out int Index
             );
         #endregion
+        #region NetGetJoinableOUs function
+        /// <summary>
+        /// The <see cref="NetGetJoinableOUs"/> function retrieves a list of organizational units (OUs) in which a computer account can be created.
+        /// </summary>
+        /// <param name="lpServer">A string that specifies the DNS or NetBIOS name of the computer on which to call the function. If this parameter is <c>null</c>, the local computer is used.</param>
+        /// <param name="lpDomain">A string that specifies the name of the domain for which to retrieve the list of OUs that can be joined.</param>
+        /// <param name="lpAccount">A string that specifies the account name to use when connecting to the domain controller. The string must specify either a domain NetBIOS name and user account (for example, "REDMOND\user") or the user principal name (UPN) of the user in the form of an Internet-style login name (for example, "someone@example.com"). If this parameter is <c>null</c>, the caller's context is used.</param>
+        /// <param name="lpPassword">If the <paramref name="lpAccount"/> parameter specifies an account name, this parameter must point to the password to use when connecting to the domain controller. Otherwise, this parameter must be <c>null</c>.</param>
+        /// <param name="OUCount">Receives the count of OUs returned in the list of joinable OUs.</param>
+        /// <param name="OUs">A variable that receives a handle for the list of joinable OUs. This array is allocated by the system and must be freed by wrapping the handle in a <c>using</c> block, or by calling the <see cref="SafeHandle.Dispose()"/> method directly.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_NOT_ENOUGH_MEMORY"/></term><description>Not enough storage is available to process this command.</description>
+        /// <term><see cref="NERR_DefaultJoinRequired"/></term><description>The destination domain controller does not support creating computer accounts in OUs.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>No special group membership is required to successfully execute the <see cref="NetGetJoinableOUs"/> function.</para>
+        /// <para>For more information about organizational units, see <a href="https://msdn.microsoft.com/en-us/library/ms677281.aspx">Managing Users</a> in the Active Directory documentation.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370422.aspx">NetGetJoinableOUs function</a></para>
+        /// </remarks>
+        /// <seealso cref="NetGetJoinInformation"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetGetJoinableOUs(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string lpServer,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string lpDomain,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string lpAccount,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string lpPassword,
+            out int OUCount,
+            out NetApiWideStringZeroTerminatedArrayBufferHandle OUs
+            );
+        #endregion
     }
 }

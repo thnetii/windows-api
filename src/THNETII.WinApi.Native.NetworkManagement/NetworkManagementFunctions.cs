@@ -320,5 +320,14 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
         #region NetAuditWrite function
         // The NetAuditWrite function is obsolete. It is included for compatibility with 16-bit versions of Windows. Other applications should use event logging. ( https://msdn.microsoft.com/en-us/library/aa363652.aspx )
         #endregion
+        #region NetConfigGet
+        // The NetConfigGet function is obsolete. It is included for compatibility with 16-bit versions of Windows. Other applications should use the registry. ( https://msdn.microsoft.com/en-us/library/ms724871.aspx )
+        #endregion
+        #region NetConfigGetAll
+        // The NetConfigGetAll function is obsolete. It is included for compatibility with 16-bit versions of Windows. Other applications should use the registry. ( https://msdn.microsoft.com/en-us/library/ms724871.aspx )
+        #endregion
+        #region NetConfigSet
+        // The NetConfigSet function is obsolete. It is included for compatibility with 16-bit versions of Windows. Other applications should use the registry. ( https://msdn.microsoft.com/en-us/library/ms724871.aspx )
+        #endregion
     }
 }

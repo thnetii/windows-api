@@ -311,5 +311,14 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
             out int ByteCount
             );
         #endregion
+        #region NetAuditClear function
+        // The NetAuditClear function is obsolete. It is included for compatibility with 16-bit versions of Windows. Other applications should use event logging. ( https://msdn.microsoft.com/en-us/library/aa363652.aspx )
+        #endregion
+        #region NetAuditRead function
+        // The NetAuditRead function is obsolete. It is included for compatibility with 16-bit versions of Windows. Other applications should use event logging. ( https://msdn.microsoft.com/en-us/library/aa363652.aspx )
+        #endregion
+        #region NetAuditWrite function
+        // The NetAuditWrite function is obsolete. It is included for compatibility with 16-bit versions of Windows. Other applications should use event logging. ( https://msdn.microsoft.com/en-us/library/aa363652.aspx )
+        #endregion
     }
 }

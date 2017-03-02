@@ -693,5 +693,50 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
             out NetApiWideStringZeroTerminatedBufferHandle bufptr
             );
         #endregion
+        #region NetGetDisplayInformationIndex function
+        /// <summary>
+        /// The <see cref="NetGetDisplayInformationIndex"/> function returns the index of the first display information entry whose name begins with a specified string or whose name alphabetically follows the string. You can use this function to determine a starting index for subsequent calls to the <see cref="NetQueryDisplayInformation"/> function.
+        /// </summary>
+        /// <param name="ServerName">A string that specifies the DNS or NetBIOS name of the remote server on which the function is to execute. If this parameter is <c>null</c>, the local computer is used. </param>
+        /// <param name="Level">
+        /// Specifies the level of accounts to query. This parameter can be one of the following values. 
+        /// <list type="bullet">
+        /// <term>1</term> - <description>Query all local and global (normal) user accounts.</description>
+        /// <term>2</term> - <description>Query all workstation and server user accounts.</description>
+        /// <term>3</term> - <description>Query all global groups.</description>
+        /// </list>
+        /// </param>
+        /// <param name="Prefix">A string that specifies the prefix for which to search.</param>
+        /// <param name="Index">An <see cref="int"/> variable that receives the index of the requested entry.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_ACCESS_DENIED"/></term><description>The user does not have access to the requested information.</description>
+        /// <term><see cref="ERROR_INVALID_LEVEL"/></term><description>The value specified for the <paramref name="Level"/> parameter is invalid.</description>
+        /// <term><see cref="ERROR_NO_MORE_ITEMS"/></term><description>There were no more items on which to operate.</description>
+        /// <term><see cref="NERR_InvalidComputer"/></term><description>The computer name is invalid.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>If you call this function on a domain controller that is running Active Directory, access is allowed or denied based on the access control list (ACL) for the <a href="https://msdn.microsoft.com/en-us/library/aa379557.aspx">securable object</a>. The default ACL permits all authenticated users and members of the <a href="https://msdn.microsoft.com/en-us/library/aa375347.aspx">"Pre-Windows 2000 compatible access"</a> group to view the information. If you call this function on a member server or workstation, all authenticated users can view the information. For information about anonymous access and restricting anonymous access on these platforms, see <a href="https://msdn.microsoft.com/en-us/library/aa370891.aspx">Security Requirements for the Network Management Functions</a>. For more information on ACLs, ACEs, and access tokens, see <a href="https://msdn.microsoft.com/en-us/library/aa374876.aspx">Access Control Model</a>.</para>
+        /// <para>The function only returns information to which the caller has Read access. The caller must have List Contents access to the Domain object, and Enumerate Entire SAM Domain access on the SAM Server object located in the System container.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370421.aspx">NetGetDisplayInformationIndex function</a></para>
+        /// </remarks>
+        /// <seealso cref="NetQueryDisplayInformation"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetGetDisplayInformationIndex(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string ServerName,
+            [In] int Level,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string Prefix,
+            out int Index
+            );
+        #endregion
     }
 }

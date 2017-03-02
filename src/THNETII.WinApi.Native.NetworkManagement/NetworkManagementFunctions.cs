@@ -1,7 +1,10 @@
 ﻿using Microsoft.Win32.WinApi.WinError;
 using System;
 using System.Runtime.InteropServices;
+using System.Text;
 
+using static Microsoft.Win32.WinApi.Networking.NetworkManagement.LanManConstants;
+using static Microsoft.Win32.WinApi.WinError.HRESULT;
 using static Microsoft.Win32.WinApi.WinError.Win32ErrorCode;
 
 namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
@@ -14,6 +17,31 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
     /// </remarks>
     public static class NetworkManagementFunctions
     {
+        #region GetNetScheduleAccountInformation function
+        /// <summary>
+        /// The <see cref="GetNetScheduleAccountInformation"/> function retrieves the AT Service account name. 
+        /// </summary>
+        /// <param name="pwszServerName">A string for the name of the computer whose account information is being retrieved.</param>
+        /// <param name="ccAccount">The number of characters, including the NULL terminator, allocated for <paramref name="wszAccount"/>. The maximum allowed length for this value is the maximum domain name length plus the maximum user name length plus 2, expressed as <c><see cref="DNLEN"/> + <see cref="UNLEN"/> + 2</c>. (The last two characters are the "\" character and the NULL terminator.)</param>
+        /// <param name="wszAccount">A string buffer that receives the account information.</param>
+        /// <returns>The return value is an <see cref="HRESULT"/>. A value of <see cref="S_OK"/> indicates the function succeeded, and the account information is returned in <paramref name="wszAccount"/>. A value of <see cref="S_FALSE"/> indicates the function succeeded, and the account is the Local System account (no information will be returned in <paramref name="wszAccount"/>). Any other return values indicate an error condition.</returns>
+        /// <remarks>
+        /// <para><strong>Minimum supported client</strong>: Windows Vista, Windows XP with SP1 [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows Server 2003 [desktop apps only]</para>
+        /// <para><strong>End of client support</strong>: Windows 7</para>
+        /// <para><strong>End of server support</strong>: Windows Server 2008</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370264.aspx">GetNetScheduleAccountInformation function</a></para>
+        /// </remarks>
+        /// <seealso cref="SetNetScheduleAccountInformation"/>
+        [Obsolete("GetNetScheduleAccountInformation is no longer available for use as of Windows 8. Instead, use the Task Scheduler 2.0 Interfaces.")]
+        [DllImport("Mstask.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.Error)]
+        public static extern HRESULT GetNetScheduleAccountInformation(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string pwszServerName,
+            [In] int ccAccount,
+            [Out, MarshalAs(UnmanagedType.LPWStr)] StringBuilder wszAccount
+            );
+        #endregion
         #region NetAddAlternateComputerName function
         /// <summary>
         /// The <see cref="NetAddAlternateComputerName"/> function adds an alternate name for the specified computer.

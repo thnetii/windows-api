@@ -615,5 +615,83 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
             out NetAadJoinInformationBuffer ppJoinInfo
             );
         #endregion
+        #region NetGetAnyDCName function
+        /// <summary>
+        /// <para>The <see cref="NetGetAnyDCName"/> function returns the name of any domain controller (DC) for a domain that is directly trusted by the specified server.</para>
+        /// <para>Applications that support DNS-style names should call the <see cref="DsGetDcName"/> function. This function can locate any DC in any domain, whether or not the domain is directly trusted by the specified server.</para>
+        /// </summary>
+        /// <param name="servername">A string that specifies the DNS or NetBIOS name of the remote server on which the function is to execute. If this parameter is <c>null</c>, the local computer is used. For more information, see the Remarks section. </param>
+        /// <param name="domainname">A string that specifies the name of the domain. If this parameter is <c>null</c>, the name of the domain controller for the primary domain is used. For more information, see the Remarks section.</param>
+        /// <param name="bufptr">A variable to a buffer that receives a string that specifies the server name of a domain controller for the domain. The server name is prefixed by \\. This buffer is allocated by the system and must be freed by wrapping the returned handle in a <c>using</c> block, or by calling the <see cref="SafeHandle.Dispose()"/> method directly.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_NO_LOGON_SERVERS"/></term><description>No domain controllers could be found.</description>
+        /// <term><see cref="ERROR_NO_SUCH_DOMAIN"/></term><description>The specified domain is not a trusted domain.</description>
+        /// <term><see cref="ERROR_NO_TRUST_LSA_SECRET"/></term><description>The client side of the trust relationship is broken.</description>
+        /// <term><see cref="ERROR_NO_TRUST_SAM_ACCOUNT"/></term><description>The server side of the trust relationship is broken or the password is broken.</description>
+        /// <term><see cref="ERROR_DOMAIN_TRUST_INCONSISTENT"/></term><description>The server that responded is not a proper domain controller of the specified domain.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>No special group membership is required to successfully execute the <see cref="NetGetAnyDCName"/> function.</para>
+        /// <para>If <paramref name="servername"/> specifies a stand-alone workstation or a stand-alone server, no <paramref name="domainname"/> is valid.</para>
+        /// <para>If <paramref name="servername"/> specifies a workstation that is a member of a domain, or a server that is a member of a domain, the <paramref name="domainname"/> must be in the same domain as <paramref name="servername"/>.</para>
+        /// <para>If <paramref name="servername"/> specifies a domain controller, the <paramref name="domainname"/> must be one of the domains trusted by the domain for which the server is a controller. The domain controller that this call finds has been operational at least once during this call.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370419.aspx">NetGetAnyDCName function</a></para>
+        /// </remarks>
+        /// <seealso cref="DsGetDcName"/>
+        /// <seealso cref="NetGetDCName"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetGetAnyDCName(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string servername,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string domainname,
+            out NetApiWideStringZeroTerminatedBufferHandle bufptr
+            );
+        #endregion
+        #region NetGetDCName function
+        /// <summary>
+        /// <para>The <see cref="NetGetDCName"/> function returns the name of the primary domain controller (PDC). It does not return the name of the backup domain controller (BDC) for the specified domain. Also, you cannot remote this function to a non-PDC server.</para>
+        /// <para>Applications that support DNS-style names should call the <see cref="DsGetDcName"/> function. Domain controllers in this type of environment have a multi-master directory replication relationship. Therefore, it may be advantageous for your application to use a DC that is not the PDC. You can call the <see cref="DsGetDcName"/> function to locate any DC in the domain; <see cref="NetGetDCName"/> returns only the name of the PDC.</para>
+        /// </summary>
+        /// <param name="servername">A string that specifies the DNS or NetBIOS name of the remote server on which the function is to execute. If this parameter is <c>null</c>, the local computer is used. For more information, see the Remarks section. </param>
+        /// <param name="domainname">A string that specifies the name of the domain. If this parameter is <c>null</c>, the name of the domain controller for the primary domain is used. For more information, see the Remarks section.</param>
+        /// <param name="bufptr">A variable to a buffer that receives a string that specifies the server name of a domain controller for the domain. The server name is prefixed by \\. This buffer is allocated by the system and must be freed by wrapping the returned handle in a <c>using</c> block, or by calling the <see cref="SafeHandle.Dispose()"/> method directly.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="NERR_DCNotFound"/></term><description>Could not find the domain controller for the domain specified in the <paramref name="domainname"/> parameter.</description>
+        /// <term><see cref="ERROR_BAD_NETPATH"/></term><description>The network path was not found. This error is returned if the computer specified in the <paramref name="servername"/> parameter could not be found.</description>
+        /// <term><see cref="ERROR_INVALID_NAME"/></term><description>The name syntax is incorrect. This error is returned if the name specified in the <paramref name="servername"/> parameter contains illegal characters. </description>
+        /// <term><see cref="ERROR_NOT_SUPPORTED"/></term><description>The request is not supported. </description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// No special group membership is required to successfully execute the <see cref="NetGetDCName"/> function.
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370420.aspx">NetGetDCName function</a></para>
+        /// </remarks>
+        /// <seealso cref="DsGetDcName"/>
+        /// <seealso cref="NetGetAnyDCName"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetGetDCName(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string servername,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string domainname,
+            out NetApiWideStringZeroTerminatedBufferHandle bufptr
+            );
+        #endregion
     }
 }

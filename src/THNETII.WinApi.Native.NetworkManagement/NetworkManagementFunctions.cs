@@ -54,6 +54,9 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
         #region NetAccessEnum function
         // This function is not supported.
         #endregion
+        #region NetAccessGetInfo function
+        // This function is not supported.
+        #endregion
         #region NetAddAlternateComputerName function
         /// <summary>
         /// The <see cref="NetAddAlternateComputerName"/> function adds an alternate name for the specified computer.

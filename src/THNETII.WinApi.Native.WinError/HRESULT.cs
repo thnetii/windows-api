@@ -1880,14 +1880,8 @@
         /// <summary>The server does not have enough memory for the new channel.</summary>
         E_OUTOFMEMORY = unchecked((int)0x8007000E),
 
-        /// <summary>The server cannot support a client request for a dynamic virtual channel.</summary>
-        ERROR_NOT_SUPPORTED = unchecked((int)0x80070032),
-
         /// <summary>One or more arguments are invalid.</summary>
         E_INVALIDARG = unchecked((int)0x80070057),
-
-        /// <summary>There is not enough space on the disk.</summary>
-        ERROR_DISK_FULL = unchecked((int)0x80070070),
 
         /// <summary>Attempt to create a class object failed.</summary>
         CO_E_CLASS_CREATE_FAILED = unchecked((int)0x80080001),

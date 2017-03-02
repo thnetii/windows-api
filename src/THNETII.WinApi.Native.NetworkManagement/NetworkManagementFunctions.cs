@@ -559,5 +559,14 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
             out NetApiWideStringZeroTerminatedArrayBufferHandle ComputerNames
             );
         #endregion
+        #region NetErrorLogClear
+        // The NetErrorLogClear function is obsolete. It is included for compatibility with 16-bit versions of Windows. Other applications should use event logging. ( https://msdn.microsoft.com/en-us/library/aa363652.aspx )
+        #endregion
+        #region NetErrorLogRead
+        // The NetErrorLogRead function is obsolete. It is included for compatibility with 16-bit versions of Windows. Other applications should use event logging. ( https://msdn.microsoft.com/en-us/library/aa363652.aspx )
+        #endregion
+        #region NetErrorLogWrite
+        // The NetErrorLogWrite function is obsolete. It is included for compatibility with 16-bit versions of Windows. Other applications should use event logging. ( https://msdn.microsoft.com/en-us/library/aa363652.aspx )
+        #endregion
     }
 }

@@ -4197,6 +4197,63 @@
         /// <summary>The password does not meet the requirements of the password filter DLLs.</summary>
         NERR_PasswordFilterError = 0x00000A91,
 
+        /// <summary>Offline join completion information was not found.</summary>
+        NERR_NoOfflineJoinInfo = 2100 + 609,
+
+        /// <summary>The offline join completion information was bad.</summary>
+        NERR_BadOfflineJoinInfo = 2100 + 610,
+
+        /// <summary>Unable to create offline join information. Please ensure you have access to the specified path location and permissions to modify its contents. Running as an elevated administrator may be required.</summary>
+        NERR_CantCreateJoinInfo = 2100 + 611,
+ 
+        /// <summary>The domain join info being saved was incomplete or bad.</summary>
+        NERR_BadDomainJoinInfo = 2100 + 612,
+ 
+        /// <summary>Offline join operation successfully completed but a restart is needed.</summary>
+        NERR_JoinPerformedMustRestart = 2100 + 613,
+ 
+        /// <summary>There was no offline join operation pending.</summary>
+        NERR_NoJoinPending = 2100 + 614,
+ 
+        /// <summary>Unable to set one or more requested machine or domain name values on the local computer.</summary>
+        NERR_ValuesNotSet = 2100 + 615,
+
+        /// <summary>Could not verify the current machine's hostname against the saved value in the join completion information.</summary>
+        NERR_CantVerifyHostname = 2100 + 616,
+
+        /// <summary>Unable to load the specified offline registry hive. Please ensure you have access to the specified path location and permissions to modify its contents. Running as an elevated administrator may be required.</summary>
+        NERR_CantLoadOfflineHive = 2100 + 617,
+
+        /// <summary>The minimum session security requirements for this operation were not met.</summary>
+        NERR_ConnectionInsecure = 2100 + 618,
+
+        /// <summary>Computer account provisioning blob version is not supported.</summary>
+        NERR_ProvisioningBlobUnsupported = 2100 + 619,
+
+        /// <summary>The specified domain controller does not meet the version requirement for this operation. Please select a domain controller capable of issuing claims.</summary>
+        NERR_DS8DCRequired = 2100 + 620,
+
+        /// <summary>This operation requires a domain controller which supports LDAP. Please select an LDAP-capable domain controller.</summary>
+        NERR_LDAPCapableDCRequired = 2100 + 621,
+
+        /// <summary>A domain controller which meets the version requirement for this operation could not be located. Please ensure that a domain controller capable of issuing claims is available.</summary>
+        NERR_DS8DCNotFound = 2100 + 622,
+
+        /// <summary>The Windows version of the specified image does not support provisioning.</summary>
+        NERR_TargetVersionUnsupported = 2100 + 623,
+
+        /// <summary>The machine name is blocked from joining the domain.</summary>
+        NERR_InvalidMachineNameForJoin = 2100 + 624,
+
+        /// <summary>The domain controller does not meet the version requirement for this operation. See <a href="http://go.microsoft.com/fwlink/?LinkId=294288">http://go.microsoft.com/fwlink/?LinkId=294288</a> for more information.</summary>
+        NERR_DS9DCNotFound = 2100 + 625,
+
+        /// <summary>The local machine does not allow querying of LSA secrets in plain-text.</summary>
+        NERR_PlainTextSecretsRequired = 2100 + 626,
+
+        /// <summary>Unable to leave the Azure AD domain that this machine is joined to. Check the event log for detailed error information.</summary>
+        NERR_CannotUnjoinAadDomain = 2100 + 627,
+
         /// <summary>The specified print monitor is unknown.</summary>
         ERROR_UNKNOWN_PRINT_MONITOR = 0x00000BB8,
 

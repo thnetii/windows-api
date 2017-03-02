@@ -7,7 +7,7 @@
 void main()
 {
 	const int size = sizeof(SERVER_INFO_1518);
-	const int value = ERROR_NOT_SUPPORTED;
+	const int value = NERR_DS8DCRequired;
 
 	void* ptr = ALERT_USER_EVENT;
 }

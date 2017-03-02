@@ -1,4 +1,5 @@
 ﻿using System.Runtime.InteropServices;
+using THNETII.InteropServices.SafeHandles;
 
 namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
 {
@@ -21,4 +22,6 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
         [MarshalAs(UnmanagedType.LPWStr)]
         public string pszUserKeyName;
     }
+
+    public class DSREG_USER_INFO_ExternalSafeHandle : ExternalSafeHandle, ISafeHandleReadStructure<DSREG_USER_INFO> { }
 }

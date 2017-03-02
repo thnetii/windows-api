@@ -568,5 +568,52 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
         #region NetErrorLogWrite
         // The NetErrorLogWrite function is obsolete. It is included for compatibility with 16-bit versions of Windows. Other applications should use event logging. ( https://msdn.microsoft.com/en-us/library/aa363652.aspx )
         #endregion
+        #region NetFreeAadJoinInformation function
+        /// <summary>
+        /// Frees the memory allocated for the specified <see cref="DSREG_JOIN_INFO"/> structure, which contains join information for a tenant and which you retrieved by calling the <see cref="NetGetAadJoinInformation"/> function.
+        /// </summary>
+        /// <param name="pJoinInfo">Pointer to the <see cref="DSREG_JOIN_INFO"/> structure for which you want to free the memory. </param>
+        /// <remarks>
+        /// <para><strong>Minimum supported client</strong>: Windows 10 [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows Server 2016 [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/mt481426.aspx">NetFreeAadJoinInformation function</a></para>
+        /// </remarks>
+        /// <seealso cref="NetGetAadJoinInformation"/>
+        /// <seealso cref="DSREG_JOIN_INFO"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        public static extern void NetFreeAadJoinInformation(
+            [In, Optional] IntPtr pJoinInfo
+            );
+        #endregion
+        #region NetGetAadJoinInformation function
+        /// <summary>
+        /// Retrieves the join information for the specified tenant. This function examines the join information for Microsoft Azure Active Directory and the work account that the current user added.
+        /// </summary>
+        /// <param name="pcszTenantId">
+        /// <para>The tenant identifier for the joined account. If the device is not joined to Azure Active Directory (Azure AD), and the user currently logged into Windows added no Azure AD work accounts for the specified tenant, the buffer that the <paramref name="ppJoinInfo"/> parameter points to is set to <c>null</c>.</para>
+        /// <para>
+        /// If the specified tenant ID is <c>null</c> or empty, <paramref name="ppJoinInfo"/> is set to the default join account information, or <c>null</c> if the device is not joined to Azure AD and the current user added no Azure AD work accounts. The default join account is one of the following:
+        /// <list type="bullet">
+        /// <item>The Azure AD account, if the device is joined to Azure AD. </item>
+        /// <item>The Azure AD work account that the current user added, if the device is not joined to Azure AD, but the current user added a single Azure AD work account. </item>
+        /// <item>Any of the Azure AD work accounts that the current user added, if the device is not joined to Azure AD, but the current user added multiple Azure AD work accounts. The algorithm for selecting one of the work accounts is not specified.</item>
+        /// </list>
+        /// </para>
+        /// </param>
+        /// <param name="ppJoinInfo">The join information for the tenant that the <paramref name="pcszTenantId"/> parameter specifies. If this parameter receives <c>null</c>, the device is not joined to Azure AD and the current user added no Azure AD work accounts.</param>
+        /// <returns>If this function succeeds, it returns <see cref="S_OK"/>. Otherwise, it returns an <see cref="HRESULT"/> error code.</returns>
+        /// <remarks>
+        /// <para><strong>Minimum supported client</strong>: Windows 10 [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows Server 2016 [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/mt481427.aspx">NetGetAadJoinInformation function</a></para>
+        /// </remarks>
+        /// <seealso cref="NetFreeAadJoinInformation"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.Error)]
+        public static extern HRESULT NetGetAadJoinInformation(
+            [In, Optional, MarshalAs(UnmanagedType.LPWStr)] string pcszTenantId,
+            out NetAadJoinInformationBuffer ppJoinInfo
+            );
+        #endregion
     }
 }

@@ -18,7 +18,7 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
         /// <summary>Specifies the length of this structure.</summary>
         public int Length;
         /// <summary>Password hash.</summary>
-        public ByteArraySafeHandle Hash;
+        public ByteArrayAnySafeHandle Hash;
 
         /// <summary>
         /// Gets the marshaled byte array stored within <see cref="Hash"/> memory segment.
@@ -27,7 +27,7 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
         /// <exception cref="ObjectDisposedException">The pointer value of <see cref="Hash"/> refers to a disposed memory segment.</exception>
         /// <exception cref="InvalidOperationException">The pointer value of <see cref="Hash"/> has an invalid value.</exception>
         /// <exception cref="ArgumentOutOfRangeException"><see cref="Length"/> is less than <c>0</c> (zero).</exception>
-        public byte[] GetMarshaledByteArray() => Hash?.MarshalToManagedArray(Length);
+        public byte[] GetMarshaledByteArray() => ByteArraySafeHandle.ReadValue(Hash, Length);
 
         /// <summary>
         /// Explicit casting operator for the <see cref="NET_VALIDATE_PASSWORD_HASH"/> type to a managed Byte Array using the <see cref="GetMarshaledByteArray"/> method.
@@ -37,6 +37,14 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
         /// <exception cref="ObjectDisposedException">The pointer value of <see cref="Hash"/> refers to a disposed memory segment.</exception>
         /// <exception cref="InvalidOperationException">The pointer value of <see cref="Hash"/> has an invalid value.</exception>
         /// <exception cref="ArgumentOutOfRangeException"><see cref="Length"/> is less than <c>0</c> (zero).</exception>
-        public static explicit operator byte[](NET_VALIDATE_PASSWORD_HASH instance) => instance?.GetMarshaledByteArray();
+        public static explicit operator byte[] (NET_VALIDATE_PASSWORD_HASH instance) => instance?.GetMarshaledByteArray();
+    }
+
+    public class NET_VALIDATE_PASSWORD_HASH_AnySafeHandle : AnySafeHandle, ISafeHandleReadableAsSimpleStructure<NET_VALIDATE_PASSWORD_HASH>
+    {
+        protected NET_VALIDATE_PASSWORD_HASH_AnySafeHandle() : base() { }
+        protected NET_VALIDATE_PASSWORD_HASH_AnySafeHandle(bool ownsHandle) : base(ownsHandle) { }
+        protected NET_VALIDATE_PASSWORD_HASH_AnySafeHandle(IntPtr invalidHandleValue, bool ownsHandle = false) : base(invalidHandleValue, ownsHandle) { }
+        public NET_VALIDATE_PASSWORD_HASH_AnySafeHandle(IntPtr invalidHandleValue, SafeHandle owningHandle) : base(invalidHandleValue, owningHandle) { }
     }
 }

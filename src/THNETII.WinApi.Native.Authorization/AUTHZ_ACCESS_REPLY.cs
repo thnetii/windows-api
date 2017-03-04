@@ -1,4 +1,5 @@
 ﻿using Microsoft.Win32.WinApi.WinError;
+using System.Linq;
 using System.Runtime.InteropServices;
 using THNETII.InteropServices.SafeHandles;
 
@@ -26,17 +27,17 @@ namespace Microsoft.Win32.WinApi.SecurityIdentity.Authorization
         /// An array of granted access masks. Memory for this array is allocated by the application before calling <see cref="AccessCheck"/>.
         /// <para>The <see cref="GetMarshaledGrantedAccessMaskArray"/> method is a convenience method that returns the granted access masks as a marshaled managed array instance.</para>
         /// </summary>
-        public Int32CastValueArraySafeHandle<ACCESS_MASK> GrantedAccessMask;
-        public ACCESS_MASK[] GetMarshaledGrantedAccessMaskArray() => GrantedAccessMask?.MarshalToManagedArray(ResultListLength);
+        public AccessMaskArrayAnySafeHandle GrantedAccessMask;
+        public ACCESS_MASK[] GetMarshaledGrantedAccessMaskArray() => Int32CastableArraySafeHandle.ReadValue<AccessMaskArrayAnySafeHandle, ACCESS_MASK>(GrantedAccessMask, ResultListLength);
         /// <summary>
         /// An array of <em><a href="https://msdn.microsoft.com/en-us/library/ms721625.aspx#_security_system_access_control_list_gly">system access control list</a></em> (SACL) evaluation results. Memory for this array is allocated by the application before calling <see cref="AccessCheck"/>. SACL evaluation will only be performed if auditing is requested.
         /// <para>The <see cref="GetMarshaledSaclEvaluationResultsArray"/> method is a convenience method that returns the SACL evaluation results as a marshaled managed array instance.</para>
         /// </summary>
-        public Int32CastValueArraySafeHandle<AUTHZ_EVALUATION_RESULT> SaclEvaluationResults;
-        public AUTHZ_EVALUATION_RESULT[] GetMarshaledSaclEvaluationResultsArray() => SaclEvaluationResults?.MarshalToManagedArray(ResultListLength);
+        public AuthzEvaluationResultArrayAnySafeHandle SaclEvaluationResults;
+        public AUTHZ_EVALUATION_RESULT[] GetMarshaledSaclEvaluationResultsArray() => Int32CastableArraySafeHandle.ReadValue<AuthzEvaluationResultArrayAnySafeHandle, AUTHZ_EVALUATION_RESULT>(SaclEvaluationResults, ResultListLength);
         /// <summary>
         /// An array of results for each element of the array. Memory for this array is allocated by the application before calling <see cref="AccessCheck"/>. 
-        /// <para>The <see cref="GetMarshaledErrorArray"/> method is a convenience method that returns the error values as a marshaled managed array instance.</para>
+        /// <para>The <see cref="GetErrorArray"/> method is a convenience method that returns the error values as a marshaled managed array instance.</para>
         /// </summary>
         /// <remarks>
         /// The following table lists the possible error values.
@@ -47,8 +48,8 @@ namespace Microsoft.Win32.WinApi.SecurityIdentity.Authorization
         /// <term><see cref="ERROR_ACCESS_DENIED"/></term> <description>Includes each of the following: <list type="bullet"><item>The requested bits are not granted.</item> <item>MaximumAllowed bit is on and granted access is zero.</item> <item>DesiredAccess is zero.</item></list></description>
         /// </list>
         /// </remarks>
-        public Int32CastValueArraySafeHandle<Win32ErrorCode> Error;
-        public Win32ErrorCode[] GetMarshaledErrorArray() => Error?.MarshalToManagedArray(ResultListLength);
+        public Int32ArrayAnySafeHandle Error;
+        public Win32ErrorCode[] GetErrorArray() => Int32ArraySafeHandle.ReadValue(Error, ResultListLength).Cast<Win32ErrorCode>().ToArray();
     }
 #pragma warning restore CS1591 // Missing XML comment for publicly visible type or member
 }

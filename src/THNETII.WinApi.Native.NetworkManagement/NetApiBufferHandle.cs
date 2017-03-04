@@ -1,7 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Runtime.InteropServices;
-using THNETII.InteropServices.SafeHandles;
 
 using static Microsoft.Win32.WinApi.Networking.NetworkManagement.NetworkManagementFunctions;
 using static Microsoft.Win32.WinApi.WinError.Win32ErrorCode;
@@ -11,7 +10,7 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
     /// <summary>
     /// Provides a managed handle object for a Network Management API Buffer.
     /// </summary>
-    public class NetApiBufferHandle : SafeHandle, ISafeHandleSizeAware
+    public class NetApiBufferHandle : SafeHandle
     {
         /// <inheritdoc />
         public override bool IsInvalid { get; } = false;
@@ -49,10 +48,8 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
             throw new Win32Exception((int)netApiStatus);
         }
 
-        /// <inheritdoc />
         protected NetApiBufferHandle() : this(ownsHandle: true) { }
 
-        /// <inheritdoc />
         protected NetApiBufferHandle(bool ownsHandle) : base(IntPtr.Zero, ownsHandle) { }
 
         /// <summary>

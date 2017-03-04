@@ -2,6 +2,6 @@
 
 namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
 {
-    public class NetApiWideStringZeroTerminatedBufferHandle : NetApiBufferHandle, ISafeHandleSizeUnawareReadWideStringZeroTerminated { }
+    public class NetApiWideStringZeroTerminatedBufferHandle : NetApiBufferHandle, ISafeHandleReadableAsWideStringZeroTerminated { }
 
 }

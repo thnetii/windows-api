@@ -1,4 +1,6 @@
-﻿using System.Runtime.InteropServices;
+﻿using System;
+using System.Runtime.InteropServices;
+using THNETII.InteropServices.SafeHandles;
 
 using static Microsoft.Win32.WinApi.SecurityIdentity.Authorization.AuthorizationFunctions;
 using static Microsoft.Win32.WinApi.SecurityIdentity.Authorization.PRIVILEGE_ATTRIBUTES;
@@ -41,5 +43,60 @@ namespace Microsoft.Win32.WinApi.SecurityIdentity.Authorization
         /// </remarks>
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 1)]
         public LUID_AND_ATTRIBUTES[] Privilege;
+    }
+
+    public interface ISafeHandleReadableAsPrivilegeSet : ISafeHandleReadableAs<PRIVILEGE_SET> { }
+
+    public static class PrivilegeSetSafeHandle
+    {
+        private static readonly int PrivilegeOffset = Marshal.OffsetOf<PRIVILEGE_SET>(nameof(PRIVILEGE_SET.Privilege)).ToInt32();
+
+        public static PRIVILEGE_SET MarshalNativeToManaged(IntPtr pNativeData)
+        {
+            if (pNativeData == IntPtr.Zero)
+                return null;
+            var nativeMarshaledInstance = Marshal.PtrToStructure<PRIVILEGE_SET>(pNativeData);
+            if (nativeMarshaledInstance == null)
+                return null;
+            else if (nativeMarshaledInstance.PrivilegeCount == 0)
+                nativeMarshaledInstance.Privilege = new LUID_AND_ATTRIBUTES[0];
+            else if (nativeMarshaledInstance.PrivilegeCount > 1)
+            {
+                var groupsArray = new LUID_AND_ATTRIBUTES[nativeMarshaledInstance.PrivilegeCount];
+                groupsArray[0] = nativeMarshaledInstance.Privilege[0];
+                int groupIdx = 1;
+                for (IntPtr groupInstancePtr = pNativeData + PrivilegeOffset + LUID_AND_ATTRIBUTES.SizeOf; groupIdx < nativeMarshaledInstance.PrivilegeCount; groupInstancePtr += LUID_AND_ATTRIBUTES.SizeOf, groupIdx++)
+                    groupsArray[groupIdx] = Marshal.PtrToStructure<LUID_AND_ATTRIBUTES>(groupInstancePtr);
+                nativeMarshaledInstance.Privilege = groupsArray;
+            }
+            return nativeMarshaledInstance;
+        }
+
+        public static PRIVILEGE_SET ReadValue<THandle>(this THandle safeHandle)
+            where THandle : SafeHandle, ISafeHandleReadableAsPrivilegeSet
+            => safeHandle.ReadValue(MarshalNativeToManaged);
+    }
+
+    public class PrivilegeSetAnySafeHandle : AnySafeHandle, ISafeHandleReadableAsPrivilegeSet
+    {
+        protected PrivilegeSetAnySafeHandle() : base() { }
+        protected PrivilegeSetAnySafeHandle(bool ownsHandle) : base(ownsHandle) { }
+        protected PrivilegeSetAnySafeHandle(IntPtr invalidHandleValue, bool ownsHandle = false) : base(invalidHandleValue, ownsHandle) { }
+        public PrivilegeSetAnySafeHandle(IntPtr invalidHandleValue, SafeHandle owningHandle) : base(invalidHandleValue, owningHandle) { }
+    }
+
+    public class PrivilegeSetCoTaskMemSafeHandle : CoTaskMemSafeHandle, ISafeHandleReadableAsPrivilegeSet
+    {
+        private static int CalculateByteSize(int count)
+        {
+            int byteSize = PRIVILEGE_SET.SizeOf;
+            byteSize += (count - 1) * LUID_AND_ATTRIBUTES.SizeOf;
+            return byteSize;
+        }
+
+        public PrivilegeSetCoTaskMemSafeHandle(int count) : base(Marshal.AllocCoTaskMem(CalculateByteSize(count))) { }
+
+        public static implicit operator PrivilegeSetAnySafeHandle(PrivilegeSetCoTaskMemSafeHandle safeHandle)
+            => safeHandle != null ? new PrivilegeSetAnySafeHandle(IntPtr.Zero, safeHandle) : null;
     }
 }

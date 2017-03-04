@@ -26,6 +26,14 @@ namespace Microsoft.Win32.WinApi.SecurityIdentity.Authorization
         /// <summary>
         /// A pointer to the GUID for the object or subobject.
         /// </summary>
-        public SafeHandle<Guid> ObjectType;
+        public GuidAnySafeHandle ObjectType;
+    }
+
+    public class ObjectTypeListArrayAnySafeHandle : AnySafeHandle, ISafeHandleReadableAsSimpleStructureArray<OBJECT_TYPE_LIST>
+    {
+        protected ObjectTypeListArrayAnySafeHandle() : base() { }
+        protected ObjectTypeListArrayAnySafeHandle(bool ownsHandle) : base(ownsHandle) { }
+        protected ObjectTypeListArrayAnySafeHandle(IntPtr invalidHandleValue, bool ownsHandle = false) : base(invalidHandleValue, ownsHandle) { }
+        public ObjectTypeListArrayAnySafeHandle(IntPtr invalidHandleValue, SafeHandle owningHandle) : base(invalidHandleValue, owningHandle) { }
     }
 }

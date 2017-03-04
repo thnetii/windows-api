@@ -64,6 +64,6 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
         /// <summary>
         /// A Safe Handle for a <see cref="NET_VALIDATE_PASSWORD_HASH"/> structure that contains the password hashes in the history list.
         /// </summary>
-        public SafeHandle<NET_VALIDATE_PASSWORD_HASH> PasswordHistory;
+        public NET_VALIDATE_PASSWORD_HASH_AnySafeHandle PasswordHistory;
     }
 }

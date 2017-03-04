@@ -46,6 +46,6 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
         [MarshalAs(UnmanagedType.LPWStr)]
         public string pszUserSettingSyncUrl;
         /// <summary>Information about the user account that was used to join a device to Azure AD.</summary>
-        public DSREG_USER_INFO_ExternalSafeHandle pUserInfo;
+        public DSREG_USER_INFO_AnySafeHandle pUserInfo;
     }
 }

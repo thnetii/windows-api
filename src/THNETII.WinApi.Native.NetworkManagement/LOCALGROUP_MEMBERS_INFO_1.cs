@@ -22,12 +22,12 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
         /// <summary>
         /// Pointer to the binary representation of a <see cref="SecurityIdentifier"/> structure that contains the <a href="https://msdn.microsoft.com/en-us/library/aa379571.aspx">security identifier (SID)</a> of the local group member. The account can be a user account or a global group account.
         /// </summary>
-        public IntPtr lgrmi1_sid;
+        public SecurityIdentifierAnySafeHandle lgrmi1_sid;
         /// <summary>
         /// Marshal to managed memory: The <see cref="SecurityIdentifier"/> instance that contains the <a href="https://msdn.microsoft.com/en-us/library/aa379571.aspx">security identifier (SID)</a> of the local group member.
         /// </summary>
         /// <returns></returns>
-        public SecurityIdentifier GetMarshaledSid() => lgrmi1_sid == IntPtr.Zero ? null : new SecurityIdentifier(lgrmi1_sid);
+        public SecurityIdentifier GetMarshaledSid() => SecurityIdentifierSafeHandle.ReadValue(lgrmi1_sid);
         /// <summary>
         /// The account type associated with the security identifier specified in the <see cref="lgrmi1_sid"/> member.
         /// </summary>

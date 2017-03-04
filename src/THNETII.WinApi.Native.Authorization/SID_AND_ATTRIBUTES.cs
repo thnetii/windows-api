@@ -22,12 +22,12 @@ namespace Microsoft.Win32.WinApi.SecurityIdentity.Authorization
         /// <summary>
         /// A pointer to the native binary form of a <see cref="SecurityIdentifier"/> instance.
         /// </summary>
-        public IntPtr SidPtr;
+        public SecurityIdentifierAnySafeHandle SidPtr;
         /// <summary>
         /// Gets the marshaled .NET <see cref="SecurityIdentifier"/> instance referred to by <see cref="SidPtr"/>.
         /// </summary>
         /// <returns>A <see cref="SecurityIdentifier"/> instance or <c>null</c> if <see cref="SidPtr"/> is <see cref="IntPtr.Zero"/>.</returns>
-        public SecurityIdentifier GetMarshaledSid() => SidPtr == IntPtr.Zero ? null : new SecurityIdentifier(SidPtr);
+        public SecurityIdentifier GetMarshaledSid() => SecurityIdentifierSafeHandle.ReadValue(SidPtr);
         /// <summary>
         /// Specifies attributes of the SID. This value contains up to 32 one-bit flags. Its meaning depends on the definition and use of the SID.
         /// </summary>

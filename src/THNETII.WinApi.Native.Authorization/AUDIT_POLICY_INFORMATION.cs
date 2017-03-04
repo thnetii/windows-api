@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 using System.Security.AccessControl;
-
+using THNETII.InteropServices.SafeHandles;
 using static Microsoft.Win32.WinApi.SecurityIdentity.Authorization.AuthorizationFunctions;
 
 namespace Microsoft.Win32.WinApi.SecurityIdentity.Authorization
@@ -53,4 +53,6 @@ namespace Microsoft.Win32.WinApi.SecurityIdentity.Authorization
         /// </summary>
         public Guid AuditCategoryGuid;
     }
+
+    public class AuditPolicyInformationReferenceArrayAuditSafeHandle : AuditSafeHandle, ISafeHandleReadableAsSimpleStructureReferenceArray<AUDIT_POLICY_INFORMATION> { }
 }

@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Runtime.InteropServices;
+using THNETII.InteropServices.SafeHandles;
 using static Microsoft.Win32.WinApi.SecurityIdentity.Authorization.PrivilegeConstants;
 
 namespace Microsoft.Win32.WinApi.SecurityIdentity.Authorization
@@ -106,6 +108,14 @@ namespace Microsoft.Win32.WinApi.SecurityIdentity.Authorization
 
         AUDIT_GENERIC_EXECUTE = (STANDARD_RIGHTS_EXECUTE),
 
+    }
+
+    public class AccessMaskArrayAnySafeHandle : AnySafeHandle, ISafeHandleReadableAsInt32CastArray<ACCESS_MASK>
+    {
+        protected AccessMaskArrayAnySafeHandle() : base() { }
+        protected AccessMaskArrayAnySafeHandle(bool ownsHandle) : base(ownsHandle) { }
+        protected AccessMaskArrayAnySafeHandle(IntPtr invalidHandleValue, bool ownsHandle = false) : base(invalidHandleValue, ownsHandle) { }
+        public AccessMaskArrayAnySafeHandle(IntPtr invalidHandleValue, SafeHandle owningHandle) : base(invalidHandleValue, owningHandle) { }
     }
 #pragma warning restore CS1591 // Missing XML comment for publicly visible type or member
 }

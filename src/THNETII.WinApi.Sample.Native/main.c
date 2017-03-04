@@ -7,7 +7,7 @@
 void main()
 {
 	const int size = sizeof(NET_COMPUTER_NAME_TYPE);
-	const int value = NERR_DS8DCRequired;
+	const int value = GROUP_NAME_PARMNUM;
 
 	void* ptr = NetGetDCName;
 }

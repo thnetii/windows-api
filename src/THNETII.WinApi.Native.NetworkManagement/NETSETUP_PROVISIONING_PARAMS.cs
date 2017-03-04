@@ -79,7 +79,7 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
         /// <summary>
         /// A pointer to an array of zero-terminated certificate template names. 
         /// </summary>
-        public ZeroTerminatedWideStringArraySafeHandle aCertTemplateNames;
+        public WideStringZeroTerminatedArrayAnySafeHandle aCertTemplateNames;
         /// <summary>
         /// When <see cref="aCertTemplateNames"/> is not <c>null</c>, this member provides an explicit count of the number of items in the array.
         /// </summary>
@@ -89,11 +89,11 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
         /// </summary>
         /// <returns>A managed string array instance containing exactly <see cref="cCertTemplateNames"/> elements, or <c>null</c> if <see cref="aCertTemplateNames"/> is <c>null</c>.</returns>
         /// <seealso cref="aCertTemplateNames"/>
-        public string[] GetCertTemplateNames() => aCertTemplateNames?.MarshalToManagedArray(cCertTemplateNames);
+        public string[] GetCertTemplateNames() => WideStringZeroTerminatedArraySafeHandle.ReadValue(aCertTemplateNames, cCertTemplateNames);
         /// <summary>
         /// A pointer to an array of zero-terminated machine policy names.
         /// </summary>
-        public ZeroTerminatedWideStringArraySafeHandle aMachinePolicyNames;
+        public WideStringZeroTerminatedArrayAnySafeHandle aMachinePolicyNames;
         /// <summary>
         /// When <see cref="aMachinePolicyNames"/> is not <c>null</c>, this member provides an explicit count of the number of items in the array.
         /// </summary>
@@ -103,12 +103,12 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
         /// </summary>
         /// <returns>A managed string array instance containing exactly <see cref="cMachinePolicyNames"/> elements, or <c>null</c> if <see cref="aMachinePolicyNames"/> is <c>null</c>.</returns>
         /// <seealso cref="aMachinePolicyNames"/>
-        public string[] GetMachinePolicyNames() => aMachinePolicyNames?.MarshalToManagedArray(cMachinePolicyNames);
+        public string[] GetMachinePolicyNames() => WideStringZeroTerminatedArraySafeHandle.ReadValue(aMachinePolicyNames, cMachinePolicyNames);
         /// <summary>
         /// A pointer to an array of character strings. Each array element is a zero-terminated character string which specifies the full or partial path to a file in the Registry Policy File format. For more information on the Registry Policy File Format, see <a href="https://msdn.microsoft.com/en-us/library/aa374407.aspx">Registry Policy File Format</a>.
         /// <para>These paths could be UNC paths on a remote server.</para>
         /// </summary>
-        public ZeroTerminatedWideStringArraySafeHandle aMachinePolicyPaths;
+        public WideStringZeroTerminatedArrayAnySafeHandle aMachinePolicyPaths;
         /// <summary>
         /// When <see cref="aMachinePolicyPaths"/> is not <c>null</c>, this member provides an explicit count of the number of items in the array.
         /// </summary>
@@ -118,7 +118,7 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
         /// </summary>
         /// <returns>A managed string array instance containing exactly <see cref="cMachinePolicyPaths"/> elements, or <c>null</c> if <see cref="aMachinePolicyPaths"/> is <c>null</c>.</returns>
         /// <seealso cref="aMachinePolicyPaths"/>
-        public string[] GetMachinePolicyPaths() => aMachinePolicyPaths?.MarshalToManagedArray(cMachinePolicyPaths);
+        public string[] GetMachinePolicyPaths() => WideStringZeroTerminatedArraySafeHandle.ReadValue(aMachinePolicyPaths, cMachinePolicyPaths);
 
 #pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
         // Version 2 fields

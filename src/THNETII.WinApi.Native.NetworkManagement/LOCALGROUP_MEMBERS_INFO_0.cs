@@ -1,4 +1,4 @@
-﻿using System;
+﻿using Microsoft.Win32.WinApi.SecurityIdentity.Authorization;
 using System.Runtime.InteropServices;
 using System.Security.Principal;
 
@@ -23,11 +23,11 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
         /// <summary>
         /// Pointer to the binary representation of a <see cref="SecurityIdentifier"/> structure that contains the <a href="https://msdn.microsoft.com/en-us/library/aa379571.aspx">security identifier (SID)</a> of the local group member.
         /// </summary>
-        public IntPtr lgrmi0_sid;
+        public SecurityIdentifierAnySafeHandle lgrmi0_sid;
         /// <summary>
         /// Marshal to managed memory: The <see cref="SecurityIdentifier"/> instance that contains the <a href="https://msdn.microsoft.com/en-us/library/aa379571.aspx">security identifier (SID)</a> of the local group member.
         /// </summary>
         /// <returns></returns>
-        public SecurityIdentifier GetMarshaledSid() => lgrmi0_sid == IntPtr.Zero ? null : new SecurityIdentifier(lgrmi0_sid);
+        public SecurityIdentifier GetMarshaledSid() => SecurityIdentifierSafeHandle.ReadValue(lgrmi0_sid);
     }
 }

@@ -5,6 +5,7 @@ using System.Runtime.InteropServices;
 using System.Security.AccessControl;
 using System.Security.Principal;
 using THNETII.InteropServices.NativeMemory;
+
 using static Microsoft.Win32.WinApi.SecurityIdentity.Authorization.ACCESS_MASK;
 using static Microsoft.Win32.WinApi.SecurityIdentity.Authorization.PrivilegeConstants;
 using static Microsoft.Win32.WinApi.WinError.Win32ErrorCode;
@@ -65,7 +66,7 @@ namespace Microsoft.Win32.WinApi.SecurityIdentity.Authorization
             [In] SafeAccessTokenHandle ClientToken,
             [In, MarshalAs(UnmanagedType.I4)] ACCESS_MASK DesiredAccess,
             [In, MarshalAs(UnmanagedType.LPStruct)] GENERIC_MAPPING GenericMapping,
-            PrivilegeSetSafeHandle PrivilegeSet,
+            PrivilegeSetAnySafeHandle PrivilegeSet,
             ref int PrivilegeSetLength,
             out ACCESS_MASK GrantedAccess,
             out bool AccessStatus
@@ -164,9 +165,9 @@ namespace Microsoft.Win32.WinApi.SecurityIdentity.Authorization
         public static extern bool AdjustTokenGroups(
             [In] SafeAccessTokenHandle TokenHandle,
             [In, MarshalAs(UnmanagedType.Bool)] bool ResetToDefault,
-            [In, Optional] TokenGroupsSafeHandle NewState,
+            [In, Optional] TokenGroupsAnySafeHandle NewState,
             [In] int BufferLength,
-            [Out, Optional] TokenGroupsSafeHandle PreviousState,
+            [Out, Optional] TokenGroupsAnySafeHandle PreviousState,
             [Optional] out int ReturnLength
             );
         #endregion
@@ -212,9 +213,9 @@ namespace Microsoft.Win32.WinApi.SecurityIdentity.Authorization
         public static extern bool AdjustTokenPrivileges(
             [In] SafeAccessTokenHandle TokenHandle,
             [In, MarshalAs(UnmanagedType.Bool)] bool DisableAllPrivileges,
-            [In, Optional] TokenPrivilegesSafeHandle NewState,
+            [In, Optional] TokenPrivilegesAnySafeHandle NewState,
             [In] int BufferLength,
-            [Out, Optional] TokenPrivilegesSafeHandle PreviousState,
+            [Out, Optional] TokenPrivilegesAnySafeHandle PreviousState,
             [Optional] out int ReturnLength
             );
         #endregion
@@ -326,7 +327,7 @@ namespace Microsoft.Win32.WinApi.SecurityIdentity.Authorization
             [In, MarshalAs(44, MarshalTypeRef = typeof(SecurityIdentifierCoTaskMemCustomMarshaler))] SecurityIdentifier pSid, // MarshalAs(44) <=> MarshalAs(UnmanagedType.CustomMarshaler)
             [In, MarshalAs(UnmanagedType.LPArray)] Guid[] pSubCategoryGuids,
             [In] int PolicyCount,
-            out ReferenceArrayAuditSafeHandle<AUDIT_POLICY_INFORMATION> ppAuditPolicy
+            out AuditPolicyInformationReferenceArrayAuditSafeHandle ppAuditPolicy
             );
         #endregion
         #region AuditComputeEffectivePolicyByToken function
@@ -362,7 +363,7 @@ namespace Microsoft.Win32.WinApi.SecurityIdentity.Authorization
             [In] SafeAccessTokenHandle hTokenHandle,
             [In, MarshalAs(UnmanagedType.LPArray)] Guid[] pSubCategoryGuids,
             [In] int PolicyCount,
-            out ReferenceArrayAuditSafeHandle<AUDIT_POLICY_INFORMATION> ppAuditPolicy
+            out AuditPolicyInformationReferenceArrayAuditSafeHandle ppAuditPolicy
             );
         #endregion
         #region AuditEnumerateCategories function

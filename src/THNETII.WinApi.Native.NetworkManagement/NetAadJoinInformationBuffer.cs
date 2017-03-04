@@ -6,7 +6,7 @@ using static Microsoft.Win32.WinApi.Networking.NetworkManagement.NetworkManageme
 
 namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
 {
-    public class NetAadJoinInformationBuffer : SafeHandle, ISafeHandleReadStructure<DSREG_JOIN_INFO>
+    public class NetAadJoinInformationBuffer : SafeHandle, ISafeHandleReadableAsSimpleStructure<DSREG_JOIN_INFO>
     {
         public override bool IsInvalid => handle == IntPtr.Zero;
 

@@ -53,12 +53,7 @@ namespace Microsoft.Win32.WinApi.SecurityIdentity.Authorization
         /// </summary>
         /// <param name="pNativeData">A pointer to the unmanaged data to be wrapped. </param>
         /// <returns>An object that represents the managed view of the COM data.</returns>
-        public object MarshalNativeToManaged(IntPtr pNativeData)
-        {
-            if (pNativeData == IntPtr.Zero)
-                return null;
-            return new SecurityIdentifier(pNativeData);
-        }
+        public object MarshalNativeToManaged(IntPtr pNativeData) => SecurityIdentifierSafeHandle.MarshalNativeToManaged(pNativeData);
 
         public static SecurityIdentifierCoTaskMemCustomMarshaler GetInstance(string marshalCookie) => new SecurityIdentifierCoTaskMemCustomMarshaler();
     }

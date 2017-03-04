@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Runtime.InteropServices;
+using THNETII.InteropServices.SafeHandles;
 
 namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
 {
@@ -18,11 +19,11 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
         /// <summary>
         /// A pointer to a value that indicates the time of day at which the job is scheduled to run. The time is the local time at a computer on which the schedule service is running; it is measured from midnight, and is expressed in milliseconds.
         /// </summary>
-        public IntPtr JobTimePtr;
+        public Int32AnySafeHandle JobTimePtr;
         /// <summary>
         /// The time of day at which the job is scheduled to run. The time is the local time at a computer on which the schedule service is running.
         /// </summary>
-        public TimeSpan JobTime => JobTimePtr == IntPtr.Zero ? TimeSpan.Zero : TimeSpan.FromMilliseconds(Marshal.ReadInt32(JobTimePtr));
+        public TimeSpan JobTime => JobTimePtr == null ? TimeSpan.Zero : TimeSpan.FromMilliseconds(Int32SafeHandle.ReadValue(JobTimePtr));
         /// <summary>
         /// <para>A set of bit flags representing the days of the month. For each bit that is set, the scheduled job will run at the time specified by the <see cref="JobTime"/> member, on the corresponding day of the month. Bit 0 corresponds to the first day of the month, and so on. </para>
         /// <para>The value of the bitmask is zero if the job was scheduled to run only once, at the first occurrence specified in the <see cref="JobTime"/> member </para>

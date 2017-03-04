@@ -1,10 +1,9 @@
-﻿using System;
+﻿using Microsoft.Win32.WinApi.SecurityIdentity.Authorization;
 using System.Runtime.InteropServices;
 using System.Security.Principal;
-using Microsoft.Win32.WinApi.SecurityIdentity.Authorization;
 
-using static Microsoft.Win32.WinApi.SecurityIdentity.Authorization.SE_GROUP_ATTRIBUTES;
 using static Microsoft.Win32.WinApi.Networking.NetworkManagement.LanManConstants;
+using static Microsoft.Win32.WinApi.SecurityIdentity.Authorization.SE_GROUP_ATTRIBUTES;
 
 namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
 {
@@ -38,12 +37,12 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
         /// <summary>
         /// Pointer to the binary representation of the security identifier (SID) that uniquely identifies the global group. The <see cref="NetUserAdd"/> and <see cref="NetUserSetInfo"/> functions ignore this member.
         /// </summary>
-        public IntPtr grpi3_group_sid;
+        public SecurityIdentifierAnySafeHandle grpi3_group_sid;
         /// <summary>
         /// Marshal to managed memory: The security identifier (SID) that uniquely identifies the global group.
         /// </summary>
         /// <returns></returns>
-        public SecurityIdentifier GetMarshaledGroupSid() => grpi3_group_sid == IntPtr.Zero ? null : new SecurityIdentifier(grpi3_group_sid);
+        public SecurityIdentifier GetMarshaledGroupSid() => SecurityIdentifierSafeHandle.ReadValue(grpi3_group_sid);
         /// <summary>
         /// These attributes are hard-coded to <see cref="SE_GROUP_MANDATORY"/>, <see cref="SE_GROUP_ENABLED"/>, and <see cref="SE_GROUP_ENABLED_BY_DEFAULT"/>. For more information, see <see cref="TOKEN_GROUPS"/>. 
         /// </summary>

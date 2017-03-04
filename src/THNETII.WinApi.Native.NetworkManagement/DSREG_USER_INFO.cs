@@ -1,4 +1,5 @@
-﻿using System.Runtime.InteropServices;
+﻿using System;
+using System.Runtime.InteropServices;
 using THNETII.InteropServices.SafeHandles;
 
 namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
@@ -23,5 +24,11 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
         public string pszUserKeyName;
     }
 
-    public class DSREG_USER_INFO_ExternalSafeHandle : ExternalSafeHandle, ISafeHandleReadStructure<DSREG_USER_INFO> { }
+    public class DSREG_USER_INFO_AnySafeHandle : AnySafeHandle, ISafeHandleReadableAsSimpleStructure<DSREG_USER_INFO>
+    {
+        protected DSREG_USER_INFO_AnySafeHandle() : base() { }
+        protected DSREG_USER_INFO_AnySafeHandle(bool ownsHandle) : base(ownsHandle) { }
+        protected DSREG_USER_INFO_AnySafeHandle(IntPtr invalidHandleValue, bool ownsHandle = false) : base(invalidHandleValue, ownsHandle) { }
+        public DSREG_USER_INFO_AnySafeHandle(IntPtr invalidHandleValue, SafeHandle owningHandle) : base(invalidHandleValue, owningHandle) { }
+    }
 }

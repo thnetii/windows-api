@@ -503,7 +503,7 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
             [In, MarshalAs(UnmanagedType.LPStruct)] NETSETUP_PROVISIONING_PARAMS pProvisioningParams,
             [Optional] IntPtr pPackageBinData,
             [Optional] IntPtr pdwPackageBinDataSize,
-            out ExternalWideStringZeroTerminatedSafeHandle pPackageTextData
+            out WideStringZeroTerminatedAnySafeHandle pPackageTextData
             );
         #endregion
         #region NetEnumerateComputerNames function
@@ -807,6 +807,60 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
             [In, MarshalAs(UnmanagedType.LPWStr)] string lpServer,
             out NetApiWideStringZeroTerminatedBufferHandle lpNameBuffer,
             out NETSETUP_JOIN_STATUS BufferType
+            );
+        #endregion
+        #region NetGroupAdd function
+        /// <summary>
+        /// The <see cref="NetGroupAdd"/> function creates a global group in the security database, which is the security accounts manager (SAM) database or, in the case of domain controllers, the Active Directory.
+        /// </summary>
+        /// <param name="servername">A string that specifies the DNS or NetBIOS name of the remote server on which the function is to execute. If this parameter is <c>null</c>, the local computer is used. </param>
+        /// <param name="level">
+        /// Specifies the information level of the data. This parameter can be one of the following values. 
+        /// <list type="bullet">
+        /// <term><c></c> (zero)</term> - <description>Specifies a global group name. The <paramref name="buf"/> parameter contains a reference to a <see cref="GROUP_INFO_0"/> structure.</description>
+        /// <term><c>1</c></term> - <description>Specifies a global group name and a comment. The <paramref name="buf"/> parameter contains a reference to a <see cref="GROUP_INFO_1"/> structure.</description>
+        /// <term><c>2</c></term> - <description>Specifies detailed information about the global group. The <paramref name="buf"/> parameter contains a reference to a <see cref="GROUP_INFO_2"/> structure. Note that on Windows XP and later, it is recommended that you use <see cref="GROUP_INFO_3"/> instead.</description>
+        /// <term><c>3</c></term> - <description>Specifies detailed information about the global group. The <paramref name="buf"/> parameter contains a reference to a <see cref="GROUP_INFO_3"/> structure. <br/><strong>Windows 2000</strong>: This level is not supported.</description>
+        /// </list>
+        /// </param>
+        /// <param name="buf">An object instance that contains the data. The type of the object must relate to the information level value specified in the <paramref name="level"/> parameter.</param>
+        /// <param name="parm_err">A variable that receives the index of the first member of the global group information structure in error when <see cref="ERROR_INVALID_PARAMETER"/> is returned.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_ACCESS_DENIED"/></term><description>The user does not have access to the requested information.</description>
+        /// <term><see cref="NERR_InvalidComputer"/></term><description>The computer name is invalid.</description>
+        /// <term><see cref="NERR_GroupExists"/></term><description>The global group already exists.</description>
+        /// <term><see cref="NERR_NotPrimary"/></term><description>The operation is allowed only on the primary domain controller of the domain.</description>
+        /// <term><see cref="ERROR_INVALID_LEVEL"/></term><description>The value specified for the level parameter is invalid.</description>
+        /// <term><see cref="NERR_SpeGroupOp"/></term><description>The operation is not allowed on certain special groups. These groups include user groups, admin groups, local groups, and guest groups.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>If you are programming for Active Directory, you may be able to call certain Active Directory Service Interface (ADSI) methods to achieve the same functionality you can achieve by calling the network management group functions. For more information, see <see cref="IADsGroup"/>.</para>
+        /// <para>If you call this function on a domain controller that is running Active Directory, access is allowed or denied based on the access control list (ACL) for the <a href="https://msdn.microsoft.com/en-us/library/aa379557(v=vs.85).aspx">securable object</a>. The default ACL permits only Domain Admins and Account Operators to call this function. On a member server or workstation, only Administrators and Power Users can call this function. For more information, see <a href="https://msdn.microsoft.com/en-us/library/aa370891(v=vs.85).aspx">Security Requirements for the Network Management Functions</a>. For more information on ACLs, ACEs, and access tokens, see <a href="https://msdn.microsoft.com/en-us/library/aa374876(v=vs.85).aspx">Access Control Model</a>.</para>
+        /// <para>The security descriptor of the user container is used to perform the access check for this function. The caller must be able to create child objects of the group class. Typically, callers must also have write access to the entire object for calls to this function to succeed.</para>
+        /// <para>User account names are limited to 20 characters and group names are limited to 256 characters. In addition, account names cannot be terminated by a period and they cannot include commas or any of the following printable characters: &quot;, /, \, [, ], :, |, &lt;, &gt;, +, =, ;, ?, *. Names also cannot include characters in the range 1-31, which are nonprintable.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370424.aspx">NetGroupAdd function</a></para>
+        /// </remarks>
+        /// <seealso cref="GROUP_INFO_0"/>
+        /// <seealso cref="NetGroupAddUser"/>
+        /// <seealso cref="NetGroupDel"/>
+        /// <seealso cref="NetGroupSetInfo"/>
+        /// <seealso cref="NetGroupDelUser"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetGroupAdd(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string servername,
+            [In, DefaultParameterValue(0)] int level,
+            [In, MarshalAs(UnmanagedType.LPStruct)] object buf,
+            out GROUP_NAME_PARMNUM parm_err
             );
         #endregion
     }

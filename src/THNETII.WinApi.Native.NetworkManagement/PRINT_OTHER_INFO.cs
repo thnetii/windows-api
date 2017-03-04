@@ -32,6 +32,8 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
     [StructLayout(LayoutKind.Sequential)]
     public class PRINT_OTHER_INFO
     {
+        private static readonly DateTime epoch = new DateTime(1970, 1, 1, 00, 00, 00, DateTimeKind.Utc);
+
         /// <summary>
         /// The identification number of the print job.
         /// </summary>
@@ -48,7 +50,11 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
         /// <summary>
         /// The time at which the print job was submitted, expressed as a <see cref="DateTime"/> value using the local time of the system.
         /// </summary>
-        public DateTime SubmittedTime => new DateTime(1970, 1, 1, 00, 00, 00, DateTimeKind.Utc).AddSeconds(alrtpr_submitted).ToLocalTime();
+        public DateTime SubmittedTime
+        {
+            get { return epoch.AddSeconds(alrtpr_submitted).ToLocalTime(); }
+            set { alrtpr_submitted = value == default(DateTime) ? 0 : (uint)((value - epoch).TotalSeconds); }
+        }
         /// <summary>
         /// The size, in bytes, of the print job.
         /// </summary>

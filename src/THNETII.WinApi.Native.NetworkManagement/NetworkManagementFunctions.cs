@@ -1899,5 +1899,247 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
             [In] int totalentries
             );
         #endregion
+        #region NetMessageBufferSend function
+        /// <summary>
+        /// The <see cref="NetMessageBufferSend"/> function sends a buffer of information to a registered message alias.
+        /// </summary>
+        /// <param name="servername">A string that specifies the DNS or NetBIOS name of the remote server on which the function is to execute. If this parameter is <c>null</c>, the local computer is used. </param>
+        /// <param name="msgname">A string that specifies the message alias to which the message buffer should be sent.</param>
+        /// <param name="fromname">A string specifying who the message is from. If this parameter is <c>null</c>, the message is sent from the local computer name.</param>
+        /// <param name="buf">A buffer that contains the message text.</param>
+        /// <param name="buflen">Specifies a value that contains the length, in bytes, of the message text pointed to by the <paramref name="buf"/> parameter.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_ACCESS_DENIED"/></term><description>The caller does not have the appropriate access to complete the operation.</description>
+        /// <term><see cref="ERROR_INVALID_PARAMETER"/></term><description>A parameter is incorrect.</description>
+        /// <term><see cref="ERROR_NOT_SUPPORTED"/></term><description>This request is not supported. This error is returned on Windows Vista and later.</description>
+        /// <term><see cref="NERR_NameNotFound"/></term><description>The user name could not be found.</description>
+        /// <term><see cref="NERR_NetworkError"/></term><description>A general failure occurred in the network hardware.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>If you call this function on a domain controller that is running Active Directory, access is allowed or denied based on the access control list (ACL) for the <a href="https://msdn.microsoft.com/en-us/library/aa379557aspx">securable object</a>. The default ACL permits only Domain Admins and Account Operators to call this function. On a member server or workstation, only Administrators and Power Users can call this function. For more information, see <a href="https://msdn.microsoft.com/en-us/library/aa370891aspx">Security Requirements for the Network Management Functions</a>. For more information on ACLs, ACEs, and access tokens, see <a href="https://msdn.microsoft.com/en-us/library/aa374876aspx">Access Control Model</a>.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para><strong>End of client support</strong>: Windows XP</para>
+        /// <para><strong>End of server support</strong>: Windows Server 2003</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370605.aspx">NetMessageBufferSend function</a></para>
+        /// </remarks>
+        /// <seealso cref="NetMessageNameAdd"/>
+        /// <seealso cref="NetMessageNameDel"/>
+        /// <seealso cref="NetMessageNameEnum"/>
+        /// <seealso cref="NetMessageNameGetInfo"/>
+        [Obsolete("This function is not supported as of Windows Vista because the messenger service is not supported.")]
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetMessageBufferSend(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string servername,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string msgname,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string fromname,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string buf,
+            [In] int buflen
+            );
+        #endregion
+        #region NetMessageNameAdd function
+        /// <summary>
+        /// The <see cref="NetMessageNameAdd"/> function registers a message alias in the message name table. The function requires that the messenger service be started.
+        /// </summary>
+        /// <param name="servername">A string that specifies the DNS or NetBIOS name of the remote server on which the function is to execute. If this parameter is <c>null</c>, the local computer is used. </param>
+        /// <param name="msgname">A string that specifies the message alias to add. The string cannot be more than 15 characters long.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_ACCESS_DENIED"/></term><description>The caller does not have the appropriate access to complete the operation.</description>
+        /// <term><see cref="ERROR_INVALID_PARAMETER"/></term><description>A parameter is incorrect.</description>
+        /// <term><see cref="ERROR_NOT_SUPPORTED"/></term><description>This request is not supported. This error is returned on Windows Vista and later.</description>
+        /// <term><see cref="NERR_AlreadyExists"/></term><description>The message alias already exists on this computer. For more information, see the Remarks section.</description>
+        /// <term><see cref="NERR_DuplicateName"/></term><description>The name specified is already in use as a message alias on the network.</description>
+        /// <term><see cref="NERR_NetworkError"/></term><description>A general failure occurred in the network hardware.</description>
+        /// <term><see cref="NERR_TooManyNames"/></term><description>The maximum number of message aliases has been exceeded.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>Only members of the Administrators local group can successfully execute the <see cref="NetMessageNameAdd"/> function on a remote server.</para>
+        /// <para>The forward action flag is no longer a parameter to the LAN Manager 2.x <see cref="NetMessageNameAdd"/> function because message forwarding is no longer supported. If the <see cref="NetMessageNameAdd"/> function detects that a forwarded version of <paramref name="msgname"/> exists on the network, the function will fail with error <see cref="NERR_AlreadyExists"/>.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para><strong>End of client support</strong>: Windows XP</para>
+        /// <para><strong>End of server support</strong>: Windows Server 2003</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370606.aspx">NetMessageNameAdd function</a></para>
+        /// </remarks>
+        /// <seealso cref="NetMessageNameDel"/>
+        [Obsolete("This function is not supported as of Windows Vista because the messenger service is not supported.")]
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetMessageNameAdd(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string servername,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string msgname
+            );
+        #endregion
+        #region NetMessageNameDel function
+        /// <summary>
+        /// The <see cref="NetMessageNameDel"/> function deletes a message alias in the message name table. The function requires that the messenger service be started.
+        /// </summary>
+        /// <param name="servername">A string that specifies the DNS or NetBIOS name of the remote server on which the function is to execute. If this parameter is <c>null</c>, the local computer is used.</param>
+        /// <param name="msgname">A string that specifies the message alias to delete. The string cannot be more than 15 characters long.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_ACCESS_DENIED"/></term><description>The caller does not have the appropriate access to complete the operation.</description>
+        /// <term><see cref="ERROR_INVALID_PARAMETER"/></term><description>A parameter is incorrect.</description>
+        /// <term><see cref="ERROR_NOT_SUPPORTED"/></term><description>This request is not supported. This error is returned on Windows Vista and later.</description>
+        /// <term><see cref="NERR_DelComputerName"/></term><description>A message alias that is also a computer name cannot be deleted.</description>
+        /// <term><see cref="NERR_IncompleteDel"/></term><description>The message alias was not successfully deleted from all networks.</description>
+        /// <term><see cref="NERR_NameInUse"/></term><description>The message alias is currently in use. Try again later.</description>
+        /// <term><see cref="NERR_NotLocalName"/></term><description>The message alias is not on the local computer.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>Only members of the Administrators local group can successfully execute the <see cref="NetMessageNameDel"/> function on a remote server.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para><strong>End of client support</strong>: Windows XP</para>
+        /// <para><strong>End of server support</strong>: Windows Server 2003</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370607.aspx">NetMessageNameDel function</a></para>
+        /// </remarks>
+        /// <seealso cref="NetMessageNameAdd"/>
+        [Obsolete("This function is not supported as of Windows Vista because the messenger service is not supported.")]
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetMessageNameDel(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string servername,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string msgname
+            );
+        #endregion
+        #region NetMessageNameEnum function
+        /// <summary>
+        /// The <see cref="NetMessageNameEnum"/> function lists the message aliases that receive messages on a specified computer. The function requires that the messenger service be started.
+        /// </summary>
+        /// <param name="servername">A string that specifies the DNS or NetBIOS name of the remote server on which the function is to execute. If this parameter is <c>null</c>, the local computer is used. </param>
+        /// <param name="level">
+        /// Specifies the information level of the data. This parameter can be the following value. 
+        /// <list type="table">
+        /// <listheader><term>Value</term> <description>Meaning</description></listheader>
+        /// <term><c>0</c> (zero)</term> <description>Return message aliases. The <paramref name="bufptr"/> parameter receives an array of <see cref="MSG_INFO_0"/> structures.</description>
+        /// <term><c>1</c></term> <description>Return message aliases. The <paramref name="bufptr"/> parameter receives an array of <see cref="MSG_INFO_1"/> structures. This level exists only for compatibility. Message forwarding is not supported.</description>
+        /// </list>
+        /// </param>
+        /// <param name="bufptr">
+        /// <para>A variable that receives the data. The format of this data depends on the value of the <paramref name="level"/> parameter. </para>
+        /// <para>The system allocates the memory for this buffer. The handle should be wrapped in a <c>using</c> block, or the application should otherwise make sure that the <see cref="SafeHandle.Dispose()"/> method is called on the returned handle when it is no longer needed. Note that you must free the buffer even if the function fails with <see cref="ERROR_MORE_DATA"/>.</para>
+        /// </param>
+        /// <param name="prefmaxlen">Specifies the preferred maximum length of the returned data, in bytes. If you specify <see cref="MAX_PREFERRED_LENGTH"/>, the function allocates the amount of memory required to hold the data. If you specify another value in this parameter, it can restrict the number of bytes that the function returns. If the buffer size is insufficient to hold all entries, the function returns <see cref="ERROR_MORE_DATA"/>.</param>
+        /// <param name="entriesread">A variable that receives the count of elements actually enumerated.</param>
+        /// <param name="totalentries">A variable that receives the total number of entries that could have been enumerated from the current resume position. The total number of entries is only a hint. For more information about determining the exact number of entries, see the Remarks section.</param>
+        /// <param name="resume_handle">Reference to a pointer variable that contains a resume handle that is used to continue an existing message alias search. The handle should be zero on the first call and left unchanged for subsequent calls. If this parameter is omitted, no resume handle is stored.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_ACCESS_DENIED"/></term><description>The user does not have access to the requested information.</description>
+        /// <term><see cref="ERROR_INVALID_LEVEL"/></term><description>The value specified for the <paramref name="level"/> parameter is invalid.</description>
+        /// <term><see cref="ERROR_INVALID_PARAMETER"/></term><description>A parameter is incorrect.</description>
+        /// <term><see cref="ERROR_MORE_DATA"/></term><description>More entries are available. Specify a large enough buffer to receive all entries.</description>
+        /// <term><see cref="ERROR_NOT_ENOUGH_MEMORY"/></term><description>Insufficient memory is available.</description>
+        /// <term><see cref="ERROR_NOT_SUPPORTED"/></term><description>This request is not supported. This error is returned on Windows Vista and later.</description>
+        /// <term><see cref="NERR_BufTooSmall"/></term><description>The supplied buffer is too small.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>Only members of the Administrators local group can successfully execute the <see cref="NetMessageNameEnum"/> function on a remote server.</para>
+        /// <para>To retrieve information about a particular message alias in the message name table, you can call the <see cref="NetMessageNameGetInfo"/> function.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para><strong>End of client support</strong>: Windows XP</para>
+        /// <para><strong>End of server support</strong>: Windows Server 2003</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370608.aspx">NetMessageNameEnum function</a></para>
+        /// </remarks>
+        /// <seealso cref="MSG_INFO_0"/>
+        /// <seealso cref="MSG_INFO_1"/>
+        /// <seealso cref="NetMessageNameGetInfo"/>
+        [Obsolete("This function is not supported as of Windows Vista because the messenger service is not supported.")]
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetMessageNameEnum(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string servername,
+            [In] int level,
+            out MsgInfoNetArrayApiBufferHandle bufptr,
+            [In] int prefmaxlen,
+            out int entriesread,
+            out int totalentries,
+            [Optional] ref IntPtr resume_handle
+            );
+        #endregion
+        #region NetMessageNameGetInfo function
+        /// <summary>
+        /// The <see cref="NetMessageNameGetInfo"/> function retrieves information about a particular message alias in the message name table. The function requires that the messenger service be started.
+        /// </summary>
+        /// <param name="servername">A string that specifies the DNS or NetBIOS name of the remote server on which the function is to execute. If this parameter is <c>null</c>, the local computer is used. </param>
+        /// <param name="msgname">A string that specifies the message alias for which to return information.</param>
+        /// <param name="level">
+        /// Specifies the information level of the data. This parameter can be the following value. 
+        /// <list type="table">
+        /// <listheader><term>Value</term> <description>Meaning</description></listheader>
+        /// <term><c>0</c> (zero)</term> <description>Return the message alias. The <paramref name="bufptr"/> parameter receives a <see cref="MSG_INFO_0"/> structure.</description>
+        /// <term><c>1</c></term> <description>Return the message alias. The <paramref name="bufptr"/> parameter receives a <see cref="MSG_INFO_1"/> structure. This level exists only for compatibility. Message forwarding is not supported.</description>
+        /// </list>
+        /// </param>
+        /// <param name="bufptr">
+        /// <para>A variable that receives the data. The format of this data depends on the value of the <paramref name="level"/> parameter. </para>
+        /// <para>The system allocates the memory for this buffer. The handle should be wrapped in a <c>using</c> block, or the application should otherwise make sure that the <see cref="SafeHandle.Dispose()"/> method is called on the returned handle when it is no longer needed. Note that you must free the buffer even if the function fails with <see cref="ERROR_MORE_DATA"/>.</para>
+        /// </param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_ACCESS_DENIED"/></term><description>The user does not have access to the requested information.</description>
+        /// <term><see cref="ERROR_INVALID_LEVEL"/></term><description>The value specified for the <paramref name="level"/> parameter is invalid.</description>
+        /// <term><see cref="ERROR_INVALID_PARAMETER"/></term><description>A parameter is incorrect.</description>
+        /// <term><see cref="ERROR_NOT_ENOUGH_MEMORY"/></term><description>Insufficient memory is available.</description>
+        /// <term><see cref="ERROR_NOT_SUPPORTED"/></term><description>This request is not supported. This error is returned on Windows Vista and later.</description>
+        /// <term><see cref="NERR_NotLocalName"/></term><description>The message alias is not on the local computer.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>Only members of the Administrators local group can successfully execute the <see cref="NetMessageNameGetInfo"/> function on a remote server.</para>
+        /// <para>To list all the message aliases in a message name table, you can call the <see cref="NetMessageNameEnum"/> function.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para><strong>End of client support</strong>: Windows XP</para>
+        /// <para><strong>End of server support</strong>: Windows Server 2003</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370609.aspx">NetMessageNameGetInfo function</a></para>
+        /// </remarks>
+        /// <seealso cref="MSG_INFO_0"/>
+        /// <seealso cref="MSG_INFO_1"/>
+        /// <seealso cref="NetMessageNameEnum"/>
+        [Obsolete("This function is not supported as of Windows Vista because the messenger service is not supported.")]
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetMessageNameGetInfo(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string servername,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string msgname,
+            [In] int level,
+            out MsgInfoNetApiBufferHandle bufptr
+            );
+        #endregion
     }
 }

@@ -107,4 +107,14 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
     {
 
     }
+
+    public class MsgInfoNetApiBufferHandle : NetApiBufferHandle
+    {
+
+    }
+
+    public class MsgInfoNetArrayApiBufferHandle : NetApiBufferHandle
+    {
+
+    }
 }

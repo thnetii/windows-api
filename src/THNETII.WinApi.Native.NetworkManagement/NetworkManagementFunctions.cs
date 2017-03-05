@@ -2464,6 +2464,30 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
             out SUPPORTS_OPTIONS OptionsSupported
             );
         #endregion
+        #region NetRemoteTOD function
+        /// <summary>
+        /// The <see cref="NetRemoteTOD"/> function returns the time of day information from a specified server.
+        /// </summary>
+        /// <param name="UncServerName">A string that specifies the DNS or NetBIOS name of the remote server on which the function is to execute. If this parameter is <c>null</c>, the local computer is used.</param>
+        /// <param name="BufferPtr">A variable that receives the <see cref="TIME_OF_DAY_INFO"/> information structure. This buffer is allocated by the system and should be wrapped in a <c>using</c> block to ensure that the buffer is freed. Otherwise, make sure the application calls the <see cref="SafeHandle.Dispose()"/> method directly, when the handle is no longer needed.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>If the function fails, the return value can be one of the following error codes or one of the system error codes.</para>
+        /// </returns>
+        /// <remarks>
+        /// No special group membership is required to successfully execute the <see cref="NetRemoteTOD"/> function.
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370612.aspx">NetRemoteTOD function</a></para>
+        /// </remarks>
+        /// <seealso cref="TIME_OF_DAY_INFO"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetRemoteTOD(
+            [In, Optional, MarshalAs(UnmanagedType.LPWStr)] string UncServerName,
+            out TimeOfDayInfoNetApiBufferHandle BufferPtr
+            );
+        #endregion
     }
 }
 

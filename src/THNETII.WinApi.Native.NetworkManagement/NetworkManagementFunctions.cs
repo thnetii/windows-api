@@ -2857,6 +2857,85 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
             out AtIntoNetApiNetApiBufferHandle PointerToBuffer
             );
         #endregion
+        #region NetServerComputerNameAdd function
+        /// <summary>
+        /// <para>The <see cref="NetServerComputerNameAdd"/> function enumerates the transports on which the specified server is active, and binds the emulated server name to each of the transports.</para>
+        /// <para><see cref="NetServerComputerNameAdd"/> is a utility function that combines the functionality of the <see cref="NetServerTransportEnum"/> function and the <see cref="NetServerTransportAddEx"/> function.</para>
+        /// </summary>
+        /// <param name="ServerName">A string that specifies the name of the remote server on which the function is to execute. If this parameter is <c>null</c>, the local computer is used. </param>
+        /// <param name="EmulatedDomainName">A string that contains the domain name the specified server should use when announcing its presence using the <paramref name="EmulatedServerName"/>. This parameter is optional.</param>
+        /// <param name="EmulatedServerName">A string that contains the emulated name the server should begin supporting in addition to the name specified by the <paramref name="ServerName"/> parameter.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>. Note that <see cref="NetServerComputerNameAdd"/> succeeds if the emulated server name specified is added to at least one transport.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_ACCESS_DENIED"/></term><description>The user does not have access to the requested information.</description>
+        /// <term><see cref="ERROR_DUP_NAME"/></term><description>A duplicate name exists on the network.</description>
+        /// <term><see cref="ERROR_INVALID_DOMAINNAME"/></term><description>The domain name could not be found on the network.</description>
+        /// <term><see cref="ERROR_INVALID_PARAMETER"/></term><description>The specified parameter is invalid.</description>
+        /// <term><see cref="ERROR_NOT_ENOUGH_MEMORY"/></term><description>Insufficient memory is available.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>Only members of the Administrators or Server Operators local group can successfully execute the <see cref="NetServerComputerNameAdd"/> function.</para>
+        /// <para>The server specified by the <paramref name="ServerName"/> parameter continues to support all names it was supporting, and additionally begins to support new names supplied by successful calls to the <see cref="NetServerComputerNameAdd"/> function.</para>
+        /// <para>Name emulation that results from a call to <see cref="NetServerComputerNameAdd"/> ceases when the server reboots or restarts. To discontinue name emulation set by a previous call to <see cref="NetServerComputerNameAdd"/> without restarting or rebooting, you can call the <see cref="NetServerComputerNameDel"/> function.</para>
+        /// <para>The <see cref="NetServerComputerNameAdd"/> function is typically used when a system administrator replaces a server, but wants to keep the conversion transparent to users. </para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370620.aspx">NetServerComputerNameAdd function</a></para>
+        /// </remarks>
+        /// <seealso cref="NetServerTransportEnum"/>
+        /// <seealso cref="NetServerTransportAdd"/>
+        /// <seealso cref="NetServerTransportAddEx"/>
+        /// <seealso cref="NetServerComputerNameDel "/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetServerComputerNameAdd(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string ServerName,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string EmulatedDomainName,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string EmulatedServerName
+            );
+        #endregion
+        #region NetServerComputerNameDel function
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="ServerName">A string that specifies the name of the remote server on which the function is to execute. If this parameter is <c>null</c>, the local computer is used. </param>
+        /// <param name="EmulatedServerName">A string that contains the emulated name the server should stop supporting. The server continues to support all other server names it was supporting.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_ACCESS_DENIED"/></term><description>The user does not have access to the requested information.</description>
+        /// <term><see cref="ERROR_INVALID_PARAMETER"/></term><description>The specified parameter is invalid.</description>
+        /// <term><see cref="ERROR_NOT_ENOUGH_MEMORY"/></term><description>Insufficient memory is available.</description>
+        /// <term><see cref="NERR_NetNameNotFound"/></term><description>The share name does not exist.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>Only members of the Administrators or Server Operators local group can successfully execute the <see cref="NetServerComputerNameDel"/> function.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370621.aspx">NetServerComputerNameDel function</a></para>
+        /// </remarks>
+        /// <seealso cref="NetServerComputerNameAdd"/>
+        /// <seealso cref="NetServerTransportEnum"/>
+        /// <seealso cref="NetServerTransportAdd"/>
+        /// <seealso cref="NetServerTransportAddEx"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetServerComputerNameDel(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string ServerName,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string EmulatedServerName
+            );
+        #endregion
     }
 }
 

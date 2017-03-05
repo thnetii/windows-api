@@ -1,5 +1,7 @@
 ﻿using System.Runtime.InteropServices;
 
+using static Microsoft.Win32.WinApi.Networking.NetworkManagement.NetworkManagementFunctions;
+
 namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
 {
     /// <summary>

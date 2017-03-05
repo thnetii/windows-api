@@ -1101,5 +1101,73 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
             out GroupInfoNetApiBufferHandle bufptr
             );
         #endregion
+        #region NetGroupGetUsers function
+        /// <summary>
+        /// The <see cref="NetGroupGetUsers"/> function retrieves a list of the members in a particular global group in the security database, which is the security accounts manager (SAM) database or, in the case of domain controllers, the Active Directory.
+        /// </summary>
+        /// <param name="servername">A string that specifies the DNS or NetBIOS name of the remote server on which the function is to execute. If this parameter is <c>null</c>, the local computer is used. </param>
+        /// <param name="groupname">A string that specifies the name of the global group for which to retrieve information. For more information, see the Remarks section.</param>
+        /// <param name="level">
+        /// Specifies the information level of the data. This parameter can be one of the following values. 
+        /// <list type="table">
+        /// <listheader><term>Value</term> <description>Meaning</description></listheader>
+        /// <term><c>0</c> (zero)</term> <description>Return the global group's member names. The <paramref name="bufptr"/> parameter receives an array of <see cref="GROUP_USERS_INFO_0"/> structures.</description>
+        /// <term><c>1</c></term> <description>Return the global group's member names and attributes. The <paramref name="bufptr"/> parameter receives an array of <see cref="GROUP_USERS_INFO_1"/> structures.</description>
+        /// </list>
+        /// </param>
+        /// <param name="bufptr">
+        /// <para>A variable that receives a buffer containing the returned data. The format of this data depends on the value of the <paramref name="level"/> parameter. </para>
+        /// <para>The system allocates the memory for this buffer. The handle should be wrapped in a <c>using</c> block, or the application should otherwise make sure that the <see cref="SafeHandle.Dispose()"/> method is called on the returned handle when it is no longer needed. Note that you must free the buffer even if the function fails with <see cref="ERROR_MORE_DATA"/>.</para>
+        /// </param>
+        /// <param name="prefmaxlen">Specifies the preferred maximum length of the returned data, in bytes. If you specify <see cref="MAX_PREFERRED_LENGTH"/>, the function allocates the amount of memory required to hold the data. If you specify another value in this parameter, it can restrict the number of bytes that the function returns. If the buffer size is insufficient to hold all entries, the function returns <see cref="ERROR_MORE_DATA"/>.</param>
+        /// <param name="entriesread">A variable that receives the count of elements actually enumerated.</param>
+        /// <param name="totalentries">A variable that receives the total number of entries that could have been enumerated from the current resume position. The total number of entries is only a hint. For more information about determining the exact number of entries, see the Remarks section.</param>
+        /// <param name="resume_handle">Reference to a pointer variable that contains a resume handle that is used to continue the global group enumeration. The handle should be zero on the first call and left unchanged for subsequent calls. If this parameter is omitted, no resume handle is stored.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_ACCESS_DENIED"/></term><description>The user does not have access to the requested information.</description>
+        /// <term><see cref="ERROR_INVALID_LEVEL"/></term><description>The system call level is not correct. This error is returned if the <paramref name="level"/> parameter was specified as a value other than <c>0</c> (zero) or <c>1</c>. </description>
+        /// <term><see cref="ERROR_MORE_DATA"/></term><description>More entries are available. Specify a large enough buffer to receive all entries.</description>
+        /// <term><see cref="ERROR_NOT_ENOUGH_MEMORY"/></term><description>Insufficient memory was available to complete the operation.</description>
+        /// <term><see cref="NERR_InvalidComputer"/></term><description>The computer name is invalid.</description>
+        /// <term><see cref="NERR_GroupNotFound"/></term><description>The global group name specified in the <paramref name="groupname"/> parameter could not be found.</description>
+        /// <term><see cref="NERR_InternalError"/></term><description>An internal error occurred.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>If you call this function on a domain controller that is running Active Directory, access is allowed or denied based on the access control list (ACL) for the <a href="https://msdn.microsoft.com/en-us/library/aa379557aspx">securable object</a>. The default ACL permits only Domain Admins and Account Operators to call this function. On a member server or workstation, only Administrators and Power Users can call this function. For more information, see <a href="https://msdn.microsoft.com/en-us/library/aa370891aspx">Security Requirements for the Network Management Functions</a>. For more information on ACLs, ACEs, and access tokens, see <a href="https://msdn.microsoft.com/en-us/library/aa374876aspx">Access Control Model</a>.</para>
+        /// <para>The security descriptor of the Group object is used to perform the access check for this function.</para>
+        /// <para>To grant one user membership in an existing global group, you can call the <see cref="NetGroupAddUser"/> function. To remove a user from a global group, call the <see cref="NetGroupDelUser"/> function. For information about replacing the membership of a global group, see <see cref="NetGroupSetUsers"/>.</para>
+        /// <para>User account names are limited to 20 characters and group names are limited to 256 characters. In addition, account names cannot be terminated by a period and they cannot include commas or any of the following printable characters: &quot;, /, \, [, ], :, |, &lt;, &gt;, +, =, ;, ?, *. Names also cannot include characters in the range 1-31, which are nonprintable.</para>
+        /// <para>If you are programming for Active Directory, you may be able to call certain Active Directory Service Interface (ADSI) methods to achieve the same functionality you can achieve by calling the network management group functions. For more information, see <see cref="IADsGroup"/>.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370430.aspx">NetGroupGetUsers function</a></para>
+        /// </remarks>
+        /// <seealso cref="GROUP_USERS_INFO_0"/>
+        /// <seealso cref="GROUP_USERS_INFO_1"/>
+        /// <seealso cref="NetGroupSetUsers"/>
+        /// <seealso cref="NetUserGetGroups"/>
+        /// <seealso cref="NetGroupAddUser"/>
+        /// <seealso cref="NetGroupDelUser"/>
+        /// <seealso cref="NetQueryDisplayInformation"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetGroupGetUsers(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string servername,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string groupname,
+            [In] int level,
+            out GroupUsersInfoArrayNetApiBufferHandle bufptr,
+            [In] int prefmaxlen,
+            out int entriesread,
+            out int totalentries,
+            [Optional] ref IntPtr resume_handle
+            );
+        #endregion
     }
 }

@@ -2141,5 +2141,172 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
             out MsgInfoNetApiBufferHandle bufptr
             );
         #endregion
+        #region NetProvisionComputerAccount function
+        /// <summary>
+        /// The <see cref="NetProvisionComputerAccount"/> function provisions a computer account for later use in an offline domain join operation. 
+        /// </summary>
+        /// <param name="lpDomain">A string that specifies the name of the domain where the computer account is created. </param>
+        /// <param name="lpMachineName">A string that specifies the short name of the machine from which the computer account attribute sAMAccountName is derived by appending a '$'. This parameter must contain a valid DNS or NetBIOS machine name.</param>
+        /// <param name="lpMachineAccountOU">
+        /// <para>An optional string that contains the RFC 1779 format name of the organizational unit (OU) where the computer account will be created. If you specify this parameter, the string must contain a full path, for example, OU=testOU,DC=domain,DC=Domain,DC=com. Otherwise, this parameter must be <c>null</c>.</para>
+        /// <para>If this parameter is <c>null</c>, the well known computer object container will be used as published in the domain.</para>
+        /// </param>
+        /// <param name="lpDcName">An optional string that contains the name of the domain controller to target.</param>
+        /// <param name="dwOptions">A set of bit flags that define provisioning options.</param>
+        /// <param name="pProvisionBinData">
+        /// <para>A variable that will receive the opaque binary blob of serialized metadata required by <see cref="NetRequestOfflineDomainJoin"/> function to complete an offline domain join, if the <see cref="NetProvisionComputerAccount"/> function completes successfully. The data is returned as an opaque binary buffer which may be passed to <see cref="NetRequestOfflineDomainJoin"/> function. </para>
+        /// <para>Providing this parameter requires <paramref name="pProvisionTextData"/> to be set to <see cref="IntPtr.Zero"/>.</para>
+        /// </param>
+        /// <param name="pdwProvisionBinDataSize">A variable that receives the size, in bytes, of the buffer returned in the <paramref name="pProvisionBinData"/> parameter. </param>
+        /// <param name="pProvisionTextData">The parameter must be omitted, or be set to <see cref="IntPtr.Zero"/>.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes or one of the system error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_ACCESS_DENIED"/></term><description>Access is denied. This error is returned if the caller does not have sufficient privileges to complete the operation. </description>
+        /// <term><see cref="ERROR_INVALID_DOMAIN_ROLE"/></term><description>This operation is only allowed for the Primary Domain Controller of the domain. This error is returned if a domain controller name was specified in the <paramref name="lpDcName"/> parameter, but the computer specified could not be validated as a domain controller for the target domain specified in the <paramref name="lpDomain"/> parameter.</description>
+        /// <term><see cref="ERROR_INVALID_PARAMETER"/></term><description>A parameter is incorrect. This error is returned if the <paramref name="lpDomain"/> or <paramref name="lpMachineName"/> parameter is <c>null</c>.</description>
+        /// <term><see cref="ERROR_NO_SUCH_DOMAIN"/></term><description>The specified domain did not exist.</description>
+        /// <term><see cref="ERROR_NOT_SUPPORTED"/></term><description>The request is not supported. This error is returned if the <paramref name="lpMachineAccountOU"/> parameter was specified and the domain controller is running on an earlier versions of Windows that does not support this parameter.</description>
+        /// <term><see cref="NERR_DS8DCRequired"/></term><description>The specified domain controller does not meet the version requirement for this operation.</description>
+        /// <term><see cref="NERR_LDAPCapableDCRequired"/></term><description>This operation requires a domain controller which supports LDAP.</description>
+        /// <term><see cref="NERR_UserExists"/></term><description>The account already exists in the domain and the <see cref="NETSETUP_PROVISION_REUSE_ACCOUNT"/> bit was not specified in the <paramref name="dwOptions"/> parameter.</description>
+        /// <term><see cref="NERR_WkstaNotStarted"/></term><description>The Workstation service has not been started.</description>
+        /// <term><see cref="RPC_S_CALL_IN_PROGRESS"/></term><description>A remote procedure call is already in progress for this thread.</description>
+        /// <term><see cref="RPC_S_PROTSEQ_NOT_SUPPORTED"/></term><description>The remote procedure call protocol sequence is not supported.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>The <see cref="NetProvisionComputerAccount"/> function is supported on Windows 7 and Windows Server 2008 R2 for offline join operations. On Windows 8 or Windows Server 2008 R2 or later, it is recommended that the <see cref="NetCreateProvisioningPackage(NETSETUP_PROVISIONING_PARAMS, out NetRequestOfflineDomainJoinBinDataBuffer, out int, IntPtr)"/> function be used instead of the <see cref="NetProvisionComputerAccount"/> function.</para>
+        /// <para>
+        /// The <see cref="NetProvisionComputerAccount"/> function is used to provision a computer account for later use in an offline domain join operation using the <see cref="NetRequestOfflineDomainJoin"/> function. The offline domain join scenario uses these functions as follows: 
+        /// <list type="bullet">
+        /// <item><see cref="NetProvisionComputerAccount"/> is a provisioning function that is first called to perform the network operations necessary to create and configure the computer object in Active Directory. The output from the <see cref="NetProvisionComputerAccount"/> is an opaque binary blob of serialized metadata used for the next step. </item>
+        /// <item><see cref="NetRequestOfflineDomainJoin"/>, an image initialization function, is then called to inject the output from the <see cref="NetProvisionComputerAccount"/> provisioning function into a Windows operating system image to be used during installation. </item>
+        /// </list>
+        /// </para>
+        /// <para>Changes to Windows initialization code will detect this saved state and affect the local only portion of domain join.<br/> The <see cref="NetProvisionComputerAccount"/> function will create or reuse the machine account in the domain, collect all necessary metadata and return it in an opaque versioned binary blob or as text for embedding in an unattended setup answer file.The opaque binary blob can be consumed by the offline domain join request operation supplying all the necessary input to complete the domain join during first boot without any network operations(local state updates only). </para>
+        /// <para><note type="security">The blob returned by the <see cref="NetProvisionComputerAccount"/> function contains very sensitive data. It should be treated just as securely as a plaintext password. The blob contains the machine account password and other information about the domain, including the domain name, the name of a domain controller, and the security ID (SID) of the domain. If the blob is being transported physically or over the network, care must be taken to transport it securely. The design makes no provisions for securing this data. This problem exists today with unattended setup answer files which can carry a number of secrets including domain user passwords. The caller must secure the blob and the unattended setup files. Solutions to this problem are varied. As an example, a pre-exchanged key could be used to encrypt a session between the consumer and provisioning entity enabling a secure transfer of the opaque blob. </note></para>
+        /// <para>The opaque blob returned in the <paramref name="pProvisionBinData"/> parameter by the <see cref="NetProvisionComputerAccount"/> function is versioned to allow interoperability and serviceability scenarios between different versions of Windows (joining client, provisioning machine, and domain controller). The offline join scenario currently does not limit the lifetime of the blob returned by the <see cref="NetProvisionComputerAccount"/> function. </para>
+        /// <para>
+        /// For offline domain joins, the access check performed depends on the configuration of the domain. Computer account creation is enabled using three methods:
+        /// <list type="bullet">
+        /// <item>Domain administrators have rights to create computer accounts.</item>
+        /// <item>The SD on a container can delegate the rights to create computer accounts.</item>
+        /// <item>By default, authenticated users may create computer accounts by privilege. Authenticated users are limited to creating a limited number of accounts that is specified as a quota on the domain (the default value is 10). For more information, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=152785">ms-DS-MachineAccountQuota</a> attribute in the Active Directory schema.</item>
+        /// </list>
+        /// </para>
+        /// <para>The <see cref="NetProvisionComputerAccount"/> function works only with a writable domain controller and does not function against a read-only domain controller. Once provisioning is done against a writable domain controller and the account is replicated to a read-only domain controller, then the other portions of offline domain join operation do not require access to a domain controller.</para>
+        /// <para>If the <see cref="NetProvisionComputerAccount"/> function is successful, the handle in the <paramref name="pProvisionBinData"/> parameter is returned with the serialized data for use in an offline join operation.</para>
+        /// <para>For more information on offline domain join operations, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=152786">Offline Domain Join Step-by-Step Guide</a>.</para>
+        /// <para>Joining (and unjoining) a computer to a domain using <see cref="NetJoinDomain"/> and <see cref="NetUnjoinDomain"/> can be performed only by a member of the Administrators local group on the target computer. Note that the domain administrator can set additional requirements for joining the domain using delegation and assignment of privileges.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 7 [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows Server 2008 R2 [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/dd815228.aspx">NetProvisionComputerAccount function</a></para>
+        /// </remarks>
+        /// <seealso cref="NetCreateProvisioningPackage(NETSETUP_PROVISIONING_PARAMS, out NetRequestOfflineDomainJoinBinDataBuffer, out int, IntPtr)"/>
+        /// <seealso cref="NetJoinDomain"/>
+        /// <seealso cref="NetRenameMachineInDomain"/>
+        /// <seealso cref="NetRequestOfflineDomainJoin"/>
+        /// <seealso cref="NetUnjoinDomain"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetProvisionComputerAccount(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string lpDomain,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string lpMachineName,
+            [In, Optional, MarshalAs(UnmanagedType.LPWStr)] string lpMachineAccountOU,
+            [In, Optional, MarshalAs(UnmanagedType.LPWStr)] string lpDcName,
+            [In, MarshalAs(UnmanagedType.I4)] NETSETUP_PROVISION_FLAGS dwOptions,
+            out NetRequestOfflineDomainJoinBinDataBuffer pProvisionBinData,
+            out int pdwProvisionBinDataSize,
+            [Optional] IntPtr pProvisionTextData
+            );
+        /// <summary>
+        /// The <see cref="NetProvisionComputerAccount"/> function provisions a computer account for later use in an offline domain join operation. 
+        /// </summary>
+        /// <param name="lpDomain">A string that specifies the name of the domain where the computer account is created. </param>
+        /// <param name="lpMachineName">A string that specifies the short name of the machine from which the computer account attribute sAMAccountName is derived by appending a '$'. This parameter must contain a valid DNS or NetBIOS machine name.</param>
+        /// <param name="lpMachineAccountOU">
+        /// <para>An optional string that contains the RFC 1779 format name of the organizational unit (OU) where the computer account will be created. If you specify this parameter, the string must contain a full path, for example, OU=testOU,DC=domain,DC=Domain,DC=com. Otherwise, this parameter must be <c>null</c>.</para>
+        /// <para>If this parameter is <c>null</c>, the well known computer object container will be used as published in the domain.</para>
+        /// </param>
+        /// <param name="lpDcName">An optional string that contains the name of the domain controller to target.</param>
+        /// <param name="dwOptions">A set of bit flags that define provisioning options.</param>
+        /// <param name="pProvisionBinData">This parameter must be omitted, or be set to <see cref="IntPtr.Zero"/>.</param>
+        /// <param name="pdwProvisionBinDataSize">This parameter must be omitted, or be set to <see cref="IntPtr.Zero"/>.</param>
+        /// <param name="pProvisionTextData">
+        /// <para>A variable that will receive the opaque binary blob of serialized metadata required by <see cref="NetRequestOfflineDomainJoin"/> function to complete an offline domain join, if the <see cref="NetProvisionComputerAccount"/> function completes successfully. The data is returned in string form for embedding in an unattended setup answer file.</para>
+        /// <para>Providing this parameter requires the <paramref name="pProvisionBinData"/> and <paramref name="pdwProvisionBinDataSize"/> parameters to be omitted or to be set to <see cref="IntPtr.Zero"/>.</para>
+        /// </param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes or one of the system error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_ACCESS_DENIED"/></term><description>Access is denied. This error is returned if the caller does not have sufficient privileges to complete the operation. </description>
+        /// <term><see cref="ERROR_INVALID_DOMAIN_ROLE"/></term><description>This operation is only allowed for the Primary Domain Controller of the domain. This error is returned if a domain controller name was specified in the <paramref name="lpDcName"/> parameter, but the computer specified could not be validated as a domain controller for the target domain specified in the <paramref name="lpDomain"/> parameter.</description>
+        /// <term><see cref="ERROR_INVALID_PARAMETER"/></term><description>A parameter is incorrect. This error is returned if the <paramref name="lpDomain"/> or <paramref name="lpMachineName"/> parameter is <c>null</c>.</description>
+        /// <term><see cref="ERROR_NO_SUCH_DOMAIN"/></term><description>The specified domain did not exist.</description>
+        /// <term><see cref="ERROR_NOT_SUPPORTED"/></term><description>The request is not supported. This error is returned if the <paramref name="lpMachineAccountOU"/> parameter was specified and the domain controller is running on an earlier versions of Windows that does not support this parameter.</description>
+        /// <term><see cref="NERR_DS8DCRequired"/></term><description>The specified domain controller does not meet the version requirement for this operation.</description>
+        /// <term><see cref="NERR_LDAPCapableDCRequired"/></term><description>This operation requires a domain controller which supports LDAP.</description>
+        /// <term><see cref="NERR_UserExists"/></term><description>The account already exists in the domain and the <see cref="NETSETUP_PROVISION_REUSE_ACCOUNT"/> bit was not specified in the <paramref name="dwOptions"/> parameter.</description>
+        /// <term><see cref="NERR_WkstaNotStarted"/></term><description>The Workstation service has not been started.</description>
+        /// <term><see cref="RPC_S_CALL_IN_PROGRESS"/></term><description>A remote procedure call is already in progress for this thread.</description>
+        /// <term><see cref="RPC_S_PROTSEQ_NOT_SUPPORTED"/></term><description>The remote procedure call protocol sequence is not supported.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>The <see cref="NetProvisionComputerAccount"/> function is supported on Windows 7 and Windows Server 2008 R2 for offline join operations. On Windows 8 or Windows Server 2008 R2 or later, it is recommended that the <see cref="NetCreateProvisioningPackage(NETSETUP_PROVISIONING_PARAMS, out NetRequestOfflineDomainJoinBinDataBuffer, out int, IntPtr)"/> function be used instead of the <see cref="NetProvisionComputerAccount"/> function.</para>
+        /// <para>
+        /// The <see cref="NetProvisionComputerAccount"/> function is used to provision a computer account for later use in an offline domain join operation using the <see cref="NetRequestOfflineDomainJoin"/> function. The offline domain join scenario uses these functions as follows: 
+        /// <list type="bullet">
+        /// <item><see cref="NetProvisionComputerAccount"/> is a provisioning function that is first called to perform the network operations necessary to create and configure the computer object in Active Directory. The output from the <see cref="NetProvisionComputerAccount"/> is an opaque binary blob of serialized metadata used for the next step. </item>
+        /// <item><see cref="NetRequestOfflineDomainJoin"/>, an image initialization function, is then called to inject the output from the <see cref="NetProvisionComputerAccount"/> provisioning function into a Windows operating system image to be used during installation. </item>
+        /// </list>
+        /// </para>
+        /// <para>Changes to Windows initialization code will detect this saved state and affect the local only portion of domain join.<br/> The <see cref="NetProvisionComputerAccount"/> function will create or reuse the machine account in the domain, collect all necessary metadata and return it in an opaque versioned binary blob or as text for embedding in an unattended setup answer file.The opaque binary blob can be consumed by the offline domain join request operation supplying all the necessary input to complete the domain join during first boot without any network operations(local state updates only). </para>
+        /// <para><note type="security">The blob returned by the <see cref="NetProvisionComputerAccount"/> function contains very sensitive data. It should be treated just as securely as a plaintext password. The blob contains the machine account password and other information about the domain, including the domain name, the name of a domain controller, and the security ID (SID) of the domain. If the blob is being transported physically or over the network, care must be taken to transport it securely. The design makes no provisions for securing this data. This problem exists today with unattended setup answer files which can carry a number of secrets including domain user passwords. The caller must secure the blob and the unattended setup files. Solutions to this problem are varied. As an example, a pre-exchanged key could be used to encrypt a session between the consumer and provisioning entity enabling a secure transfer of the opaque blob. </note></para>
+        /// <para>The opaque blob returned in the <paramref name="pProvisionBinData"/> parameter by the <see cref="NetProvisionComputerAccount"/> function is versioned to allow interoperability and serviceability scenarios between different versions of Windows (joining client, provisioning machine, and domain controller). The offline join scenario currently does not limit the lifetime of the blob returned by the <see cref="NetProvisionComputerAccount"/> function. </para>
+        /// <para>
+        /// For offline domain joins, the access check performed depends on the configuration of the domain. Computer account creation is enabled using three methods:
+        /// <list type="bullet">
+        /// <item>Domain administrators have rights to create computer accounts.</item>
+        /// <item>The SD on a container can delegate the rights to create computer accounts.</item>
+        /// <item>By default, authenticated users may create computer accounts by privilege. Authenticated users are limited to creating a limited number of accounts that is specified as a quota on the domain (the default value is 10). For more information, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=152785">ms-DS-MachineAccountQuota</a> attribute in the Active Directory schema.</item>
+        /// </list>
+        /// </para>
+        /// <para>The <see cref="NetProvisionComputerAccount"/> function works only with a writable domain controller and does not function against a read-only domain controller. Once provisioning is done against a writable domain controller and the account is replicated to a read-only domain controller, then the other portions of offline domain join operation do not require access to a domain controller.</para>
+        /// <para>If the <see cref="NetProvisionComputerAccount"/> function is successful, the handle in the <paramref name="pProvisionTextData"/> parameter is returned with the serialized data for use as text in an unattended setup file. </para>
+        /// <para>For more information on offline domain join operations, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=152786">Offline Domain Join Step-by-Step Guide</a>.</para>
+        /// <para>Joining (and unjoining) a computer to a domain using <see cref="NetJoinDomain"/> and <see cref="NetUnjoinDomain"/> can be performed only by a member of the Administrators local group on the target computer. Note that the domain administrator can set additional requirements for joining the domain using delegation and assignment of privileges.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 7 [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows Server 2008 R2 [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/dd815228.aspx">NetProvisionComputerAccount function</a></para>
+        /// </remarks>
+        /// <seealso cref="NetCreateProvisioningPackage(NETSETUP_PROVISIONING_PARAMS, IntPtr, IntPtr, out WideStringZeroTerminatedAnySafeHandle)"/>
+        /// <seealso cref="NetJoinDomain"/>
+        /// <seealso cref="NetRenameMachineInDomain"/>
+        /// <seealso cref="NetRequestOfflineDomainJoin"/>
+        /// <seealso cref="NetUnjoinDomain"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetProvisionComputerAccount(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string lpDomain,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string lpMachineName,
+            [In, Optional, MarshalAs(UnmanagedType.LPWStr)] string lpMachineAccountOU,
+            [In, Optional, MarshalAs(UnmanagedType.LPWStr)] string lpDcName,
+            [In, MarshalAs(UnmanagedType.I4)] NETSETUP_PROVISION_FLAGS dwOptions,
+            [Optional] IntPtr pProvisionBinData,
+            [Optional] IntPtr pdwProvisionBinDataSize,
+            out WideStringZeroTerminatedAnySafeHandle pProvisionTextData
+            );
+        #endregion
     }
 }
+

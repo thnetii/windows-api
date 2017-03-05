@@ -136,4 +136,9 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
     public class AtIntoNetApiNetApiBufferHandle : NetApiAlertBufferHandle, ISafeHandleReadableAsSimpleStructure<AT_INFO> { }
 
     public class WideStringZeroTerminatedArrayNetApiBufferHandle : NetApiAlertBufferHandle, ISafeHandleReadableAsWideStringZeroTerminatedArray { }
+
+    public class ServerInfoArrayNetApiBufferHandle : NetApiBufferHandle
+    {
+
+    }
 }

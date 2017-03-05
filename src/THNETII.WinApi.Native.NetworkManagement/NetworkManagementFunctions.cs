@@ -10,6 +10,7 @@ using static Microsoft.Win32.WinApi.Networking.NetworkManagement.LanManConstants
 using static Microsoft.Win32.WinApi.Networking.NetworkManagement.LOCALGROUP_INFO_PARMNUM;
 using static Microsoft.Win32.WinApi.Networking.NetworkManagement.NETSETUP_OPTIONS;
 using static Microsoft.Win32.WinApi.Networking.NetworkManagement.NETSETUP_PROVISION_FLAGS;
+using static Microsoft.Win32.WinApi.Networking.NetworkManagement.SV_TYPE_FLAGS;
 using static Microsoft.Win32.WinApi.WinError.HRESULT;
 using static Microsoft.Win32.WinApi.WinError.Win32ErrorCode;
 
@@ -2982,6 +2983,78 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
             [In] int prefmaxlen,
             out int entriesread,
             out int totalentries,
+            [Optional] ref IntPtr resume_handle
+            );
+        #endregion
+        #region NetServerEnum function
+        /// <summary>
+        /// The <see cref="NetServerEnum"/> function lists all servers of the specified type that are visible in a domain. 
+        /// </summary>
+        /// <param name="servername">Reserved; must be <c>null</c>.</param>
+        /// <param name="level">
+        /// The information level of the data requested. This parameter can be one of the following values. 
+        /// <list type="table">
+        /// <listheader><term>Value</term> <description>Meaning</description></listheader>
+        /// <term><c>100</c></term> - <description>Return server names and platform information. The <paramref name="bufptr"/> parameter receives an array of <see cref="SERVER_INFO_100"/> structures.</description>
+        /// <term><c>101</c></term> - <description>Return server names, types, and associated data. The <paramref name="bufptr"/> parameter receives an array of <see cref="SERVER_INFO_101"/> structures.</description>
+        /// </list>
+        /// </param>
+        /// <param name="bufptr">A variable that receives the data. The format of this data depends on the value of the <paramref name="level"/> parameter. This buffer is allocated by the system and must be freed by wrapping the returned handle in a <c>using</c> block. Otherwise, the application must ensure to call the <see cref="SafeHandle.Dispose()"/> method on the returned handle directly when it is no longer needed. Note that you must free the buffer even if the function fails with <see cref="ERROR_MORE_DATA"/>.</param>
+        /// <param name="prefmaxlen">The preferred maximum length of returned data, in bytes. If you specify <see cref="MAX_PREFERRED_LENGTH"/>, the function allocates the amount of memory required for the data. If you specify another value in this parameter, it can restrict the number of bytes that the function returns. If the buffer size is insufficient to hold all entries, the function returns <see cref="ERROR_MORE_DATA"/>.</param>
+        /// <param name="entriesread">A variable that receives the count of elements actually enumerated.</param>
+        /// <param name="totalentries">A variable that receives the total number of entries that could have been enumerated from the current resume position. Note that applications should consider this value only as a hint.</param>
+        /// <param name="servertype">A value that filters the server entries to return from the enumeration.</param>
+        /// <param name="domain">
+        /// <para>A string that specifies the name of the domain for which a list of servers is to be returned. The domain name must be a NetBIOS domain name (for example, <c>microsoft</c>). The <see cref="NetServerEnum"/> function does not support DNS-style names (for example, <c>microsoft.com</c>). </para>
+        /// <para>If this parameter is <c>null</c>, the primary domain is implied.</para>
+        /// </param>
+        /// <param name="resume_handle">Reserved; must be set to zero.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_ACCESS_DENIED"/></term><description>Access was denied.</description>
+        /// <term><see cref="ERROR_INVALID_PARAMETER"/></term><description>The parameter is incorrect.</description>
+        /// <term><see cref="ERROR_MORE_DATA"/></term><description>More entries are available. Specify a large enough buffer to receive all entries.</description>
+        /// <term><see cref="ERROR_NO_BROWSER_SERVERS_FOUND"/></term><description>No browser servers found.</description>
+        /// <term><see cref="ERROR_NOT_SUPPORTED"/></term><description>The request is not supported.</description>
+        /// <term><see cref="NERR_RemoteErr"/></term><description>A remote error occurred with no data returned by the server.</description>
+        /// <term><see cref="NERR_ServerNotStarted"/></term><description>The server service is not started.</description>
+        /// <term><see cref="NERR_ServiceNotInstalled"/></term><description>The service has not been started.</description>
+        /// <term><see cref="NERR_WkstaNotStarted"/></term><description>The Workstation service has not been started. The local workstation service is used to communicate with a downlevel remote server.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>The <see cref="NetServerEnum"/> function is used to list all servers of the specified type that are visible in a domain. For example, an application can call <see cref="NetServerEnum"/> to list all domain controllers only or all servers that run instances of SQL server only.</para>
+        /// <para>An application combine the bit masks for various server types in the <paramref name="servertype"/> parameter to list several types. For example, a value of <c><see cref="SV_TYPE_WORKSTATION"/> | <see cref="SV_TYPE_SERVER"/></c> (<c>0x00000003</c>) combines the bit masks for <see cref="SV_TYPE_WORKSTATION"/> (<c>0x00000001</c>) and <see cref="SV_TYPE_SERVER"/> (<c>0x00000002</c>).</para>
+        /// <para>If you require more information for a specific server, call the <see cref="WNetEnumResource"/> function.</para>
+        /// <para>No special group membership is required to successfully execute the <see cref="NetServerEnum"/> function.</para>
+        /// <para>If you specify the value <see cref="SV_TYPE_LOCAL_LIST_ONLY"/>, the <see cref="NetServerEnum"/> function returns the list of servers that the browser maintains internally. This has meaning only on the master browser (or on a computer that has been the master browser in the past). The master browser is the computer that currently has rights to determine which computers can be servers or workstations on the network.</para>
+        /// <para>If there are no servers found that match the types specified in the <paramref name="servertype"/> parameter, the <see cref="NetServerEnum"/> function returns the <paramref name="bufptr"/> parameter as <c>null</c> and the out values referred to by the <paramref name="entriesread"/> and <paramref name="totalentries"/> parameters are set to zero.</para>
+        /// <para>The <see cref="NetServerEnum"/> function depends on the browser service being installed and running. If no browser servers are found, then <see cref="NetServerEnum"/> fails with <see cref="ERROR_NO_BROWSER_SERVERS_FOUND"/>.</para>
+        /// <para>If you are programming for Active Directory, you may be able to call certain Active Directory Service Interface (ADSI) methods to achieve the same results you can achieve by calling the network management server functions. For more information, see the <see cref="IADsComputer"/> interface reference.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370623.aspx">NetServerEnum function</a></para>
+        /// </remarks>
+        /// <seealso cref="NetServerDiskEnum"/>
+        /// <seealso cref="NetQueryDisplayInformation"/>
+        /// <seealso cref="SERVER_INFO_100"/>
+        /// <seealso cref="SERVER_INFO_101"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetServerEnum(
+            [In, Optional, MarshalAs(UnmanagedType.LPWStr)] string servername,
+            [In] int level,
+            out ServerInfoArrayNetApiBufferHandle bufptr,
+            [In] int prefmaxlen,
+            out int entriesread,
+            out int totalentries,
+            [In, MarshalAs(UnmanagedType.I4)] SV_TYPE_FLAGS servertype,
+            [In, Optional, MarshalAs(UnmanagedType.LPWStr)] string domain,
             [Optional] ref IntPtr resume_handle
             );
         #endregion

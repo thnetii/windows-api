@@ -6,6 +6,7 @@ using THNETII.InteropServices.SafeHandles;
 
 using static Microsoft.Win32.WinApi.Networking.NetworkManagement.GROUP_INFO_PARMNUM;
 using static Microsoft.Win32.WinApi.Networking.NetworkManagement.LanManConstants;
+using static Microsoft.Win32.WinApi.Networking.NetworkManagement.LOCALGROUP_INFO_PARMNUM;
 using static Microsoft.Win32.WinApi.Networking.NetworkManagement.NETSETUP_OPTIONS;
 using static Microsoft.Win32.WinApi.Networking.NetworkManagement.NETSETUP_PROVISION_FLAGS;
 using static Microsoft.Win32.WinApi.WinError.HRESULT;
@@ -1376,6 +1377,526 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
             [In, MarshalAs(UnmanagedType.LPWStr)] string lpAccount,
             [In, MarshalAs(UnmanagedType.LPWStr)] string lpPassword,
             [In, MarshalAs(UnmanagedType.I4)] NETSETUP_OPTIONS fJoinOptions
+            );
+        #endregion
+        #region NetLocalGroupAdd function
+        /// <summary>
+        /// The <see cref="NetLocalGroupAdd"/> function creates a local group in the security database, which is the security accounts manager (SAM) database or, in the case of domain controllers, the Active Directory.
+        /// </summary>
+        /// <param name="servername">A string that specifies the DNS or NetBIOS name of the remote server on which the function is to execute. If this parameter is <c>null</c>, the local computer is used. </param>
+        /// <param name="level">
+        /// The information level of the data. This parameter can be one of the following values. 
+        /// <list type="table">
+        /// <listheader><term>Value</term> <description>Meaning</description></listheader>
+        /// <term><c>0</c> (zero)</term> <description>A local group name. The <paramref name="buf"/> parameter contains a <see cref="LOCALGROUP_INFO_0"/> structure.</description>
+        /// <term>1</term> <description>A local group name and a comment to associate with the group. The <paramref name="buf"/> parameter contains a <see cref="LOCALGROUP_INFO_1"/> structure.</description>
+        /// </list>
+        /// </param>
+        /// <param name="buf">The local group information structure. The format of this data depends on the value of the level parameter.</param>
+        /// <param name="parm_error">A variable that receives the index of the first member of the local group information structure to cause the <see cref="ERROR_INVALID_PARAMETER"/> error. If this parameter is omitted, the index is not returned on error. For more information, see the Remarks section for the <see cref="NetLocalGroupSetInfo"/> function.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_ACCESS_DENIED"/></term><description>The caller does not have the appropriate access to complete the operation.</description>
+        /// <term><see cref="ERROR_ALIAS_EXISTS"/></term><description>The specified local group already exists. This error is returned if the group name member in the structure pointed to by the <paramref name="buf"/> parameter is already in use as an alias.</description>
+        /// <term><see cref="ERROR_INVALID_LEVEL"/></term><description>A <paramref name="level"/> parameter is invalid. </description>
+        /// <term><see cref="ERROR_INVALID_PARAMETER"/></term><description>A parameter is incorrect. This error is returned if one or more of the members in the structure pointed to by the <paramref name="buf"/> parameter is invalid. </description>
+        /// <term><see cref="NERR_GroupExists"/></term><description>The group name exists. This error is returned if the group name member in the structure pointed to by the <paramref name="buf"/> parameter is already in use as a group name.</description>
+        /// <term><see cref="NERR_InvalidComputer"/></term><description>The computer name is invalid.</description>
+        /// <term><see cref="NERR_NotPrimary"/></term><description>The operation is allowed only on the primary domain controller of the domain.</description>
+        /// <term><see cref="NERR_UserExists"/></term><description>The user name exists. This error is returned if the group name member in the structure in the <paramref name="buf"/> parameter is already in use as a user name.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>If you call this function on a domain controller that is running Active Directory, access is allowed or denied based on the access control list (ACL) for the <a href="https://msdn.microsoft.com/en-us/library/aa379557aspx">securable object</a>. The default ACL permits only Domain Admins and Account Operators to call this function. On a member server or workstation, only Administrators and Power Users can call this function. For more information, see <a href="https://msdn.microsoft.com/en-us/library/aa370891aspx">Security Requirements for the Network Management Functions</a>. For more information on ACLs, ACEs, and access tokens, see <a href="https://msdn.microsoft.com/en-us/library/aa374876aspx">Access Control Model</a>.</para>
+        /// <para>The security descriptor of the user container is used to perform the access check for this function. The caller must be able to create child objects of the group class.</para>
+        /// <para>User account names are limited to 20 characters and group names are limited to 256 characters. In addition, account names cannot be terminated by a period and they cannot include commas or any of the following printable characters: &quot;, /, \, [, ], :, |, &lt;, &gt;, +, =, ;, ?, *. Names also cannot include characters in the range 1-31, which are nonprintable.</para>
+        /// <para>
+        /// If the <see cref="NetLocalGroupAdd"/> function returns <see cref="ERROR_INVALID_PARAMETER"/>, on return the <paramref name="parm_error"/> parameter indicates the first member of the local group information structure that is invalid. The format of the local group information structure is specified in the <paramref name="level"/> parameter. An instance of the local group information structure is passed in <paramref name="buf"/> parameter. The following table lists the values that can be returned in the <paramref name="parm_error"/> parameter and the corresponding structure member that is in error. 
+        /// <list type="table">
+        /// <listheader><term>Value</term><description>Member</description></listheader>
+        /// <term><see cref="LOCALGROUP_NAME_PARMNUM"/></term><description><para>If the <paramref name="level"/> parameter was <c>0</c> (zero), the <see cref="LOCALGROUP_INFO_0.lgrpi0_name"/> member of the <see cref="LOCALGROUP_INFO_0"/> structure was invalid.</para><para>If the <paramref name="level"/> parameter was <c>1</c>, the <see cref="LOCALGROUP_INFO_1.lgrpi1_name"/> member of the <see cref="LOCALGROUP_INFO_1"/> structure was invalid. </para></description>
+        /// <term><see cref="LOCALGROUP_COMMENT_PARMNUM"/></term><description>If the <paramref name="level"/> parameter was <c>1</c>, the <see cref="LOCALGROUP_INFO_1.lgrpi1_comment"/> member of the <see cref="LOCALGROUP_INFO_1"/> structure was invalid. </description>
+        /// </list>
+        /// </para>
+        /// <para>When making requests to a domain controller and Active Directory, you may be able to call certain Active Directory Service Interface (ADSI) methods to achieve the same results as the network management local group functions. For more information, see <see cref="IADsGroup"/>.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370434.aspx">NetLocalGroupAdd function</a></para>
+        /// </remarks>
+        /// <seealso cref="LOCALGROUP_INFO_0"/>
+        /// <seealso cref="LOCALGROUP_INFO_1"/>
+        /// <seealso cref="NetLocalGroupDel"/>
+        /// <seealso cref="NetLocalGroupSetInfo"/>
+        /// <seealso cref="NetLocalGroupAddMembers"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetLocalGroupAdd(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string servername,
+            [In] int level,
+            [In, MarshalAs(UnmanagedType.LPStruct)] object buf,
+            [Optional] out LOCALGROUP_INFO_PARMNUM parm_error
+            );
+        #endregion
+        #region NetLocalGroupAddMember
+        // The NetLocalGroupAddMember function is obsolete. You should use the NetLocalGroupAddMembers function instead.
+        #endregion
+        #region NetLocalGroupAddMembers function
+        /// <summary>
+        /// The <see cref="NetLocalGroupAddMembers"/> function adds membership of one or more existing user accounts or global group accounts to an existing local group. The function does not change the membership status of users or global groups that are currently members of the local group.
+        /// </summary>
+        /// <param name="servername">A string that specifies the DNS or NetBIOS name of the remote server on which the function is to execute. If this parameter is <c>null</c>, the local computer is used. </param>
+        /// <param name="groupname">A string that specifies the name of the local group to which the specified users or global groups will be added. For more information, see the Remarks section.</param>
+        /// <param name="level">
+        /// The information level of the data. This parameter can be one of the following values. 
+        /// <list type="table">
+        /// <listheader><term>Value</term> <description>Meaning</description></listheader>
+        /// <term><c>0</c> (zero)</term> <description>Specifies the security identifier (SID) of the new local group member. The <paramref name="buf"/> parameter contains an array of <see cref="LOCALGROUP_MEMBERS_INFO_0"/> structures.</description>
+        /// <term>3</term> <description>Specifies the domain and name of the new local group member. The <paramref name="buf"/> parameter contains an array of <see cref="LOCALGROUP_MEMBERS_INFO_3"/> structures.</description>
+        /// </list>
+        /// </param>
+        /// <param name="buf">An array that contains the data for the new local group members. The format of this data depends on the value of the <paramref name="level"/> parameter.</param>
+        /// <param name="totalentries">Specifies the number of entries in the array specified by the <paramref name="buf"/> parameter.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="NERR_GroupNotFound"/></term><description>The local group specified by the groupname parameter does not exist.</description>
+        /// <term><see cref="ERROR_ACCESS_DENIED"/></term><description>The caller does not have the appropriate access to complete the operation.</description>
+        /// <term><see cref="ERROR_NO_SUCH_MEMBER"/></term><description>One or more of the members specified do not exist. Therefore, no new members were added.</description>
+        /// <term><see cref="ERROR_MEMBER_IN_ALIAS"/></term><description>One or more of the members specified were already members of the local group. No new members were added.</description>
+        /// <term><see cref="ERROR_INVALID_PARAMETER"/></term><description>One or more of the members cannot be added because their account type is invalid. No new members were added.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>If you call this function on a domain controller that is running Active Directory, access is allowed or denied based on the access control list (ACL) for the <a href="https://msdn.microsoft.com/en-us/library/aa379557aspx">securable object</a>. The default ACL permits only Domain Admins and Account Operators to call this function. On a member server or workstation, only Administrators and Power Users can call this function. For more information, see <a href="https://msdn.microsoft.com/en-us/library/aa370891aspx">Security Requirements for the Network Management Functions</a>. For more information on ACLs, ACEs, and access tokens, see <a href="https://msdn.microsoft.com/en-us/library/aa374876aspx">Access Control Model</a>.</para>
+        /// <para>The security descriptor of the LocalGroup object is used to perform the access check for this function.</para>
+        /// <para>User account names are limited to 20 characters and group names are limited to 256 characters. In addition, account names cannot be terminated by a period and they cannot include commas or any of the following printable characters: &quot;, /, \, [, ], :, |, &lt;, &gt;, +, =, ;, ?, *. Names also cannot include characters in the range 1-31, which are nonprintable.</para>
+        /// <para>If you are programming for Active Directory, you may be able to call certain Active Directory Service Interface (ADSI) methods to achieve the same functionality you can achieve by calling the network management group functions. For more information, see <see cref="IADsGroup"/>.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370436.aspx">NetLocalGroupAddMembers function</a></para>
+        /// </remarks>
+        /// <seealso cref="LOCALGROUP_MEMBERS_INFO_0"/>
+        /// <seealso cref="LOCALGROUP_MEMBERS_INFO_3"/>
+        /// <seealso cref="NetLocalGroupDelMembers"/>
+        /// <seealso cref="NetLocalGroupGetMembers"/>
+        /// <seealso cref="NetLocalGroupAdd"/>
+        /// <seealso cref="NetLocalGroupDel"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetLocalGroupAddMembers(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string servername,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string groupname,
+            [In] int level,
+            [In, MarshalAs(UnmanagedType.LPArray)] object[] buf,
+            [In] int totalentries
+            );
+        #endregion
+        #region NetLocalGroupDel function
+        /// <summary>
+        /// The <see cref="NetLocalGroupDel"/> function deletes a local group account and all its members from the security database, which is the security accounts manager (SAM) database or, in the case of domain controllers, the Active Directory.
+        /// </summary>
+        /// <param name="servername">A string that specifies the DNS or NetBIOS name of the remote server on which the function is to execute. If this parameter is <c>null</c>, the local computer is used. </param>
+        /// <param name="groupname">A string that specifies the name of the local group account to delete. For more information, see the Remarks section.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_ACCESS_DENIED"/></term><description>The caller does not have the appropriate access to complete the operation.</description>
+        /// <term><see cref="NERR_InvalidComputer"/></term><description>The computer name is invalid.</description>
+        /// <term><see cref="NERR_NotPrimary"/></term><description>The operation is allowed only on the primary domain controller of the domain.</description>
+        /// <term><see cref="NERR_GroupNotFound"/></term><description>The local group specified by the <paramref name="groupname"/> parameter does not exist.</description>
+        /// <term><see cref="ERROR_NO_SUCH_ALIAS"/></term><description>The specified local group does not exist.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>If you call this function on a domain controller that is running Active Directory, access is allowed or denied based on the access control list (ACL) for the <a href="https://msdn.microsoft.com/en-us/library/aa379557aspx">securable object</a>. The default ACL permits only Domain Admins and Account Operators to call this function. On a member server or workstation, only Administrators and Power Users can call this function. For more information, see <a href="https://msdn.microsoft.com/en-us/library/aa370891aspx">Security Requirements for the Network Management Functions</a>. For more information on ACLs, ACEs, and access tokens, see <a href="https://msdn.microsoft.com/en-us/library/aa374876aspx">Access Control Model</a>.</para>
+        /// <para>The security descriptor of the LocalGroup object is used to perform the access check for this function.</para>
+        /// <para>User account names are limited to 20 characters and group names are limited to 256 characters. In addition, account names cannot be terminated by a period and they cannot include commas or any of the following printable characters: &quot;, /, \, [, ], :, |, &lt;, &gt;, +, =, ;, ?, *. Names also cannot include characters in the range 1-31, which are nonprintable.</para>
+        /// <para>If you are programming for Active Directory, you may be able to call certain Active Directory Service Interface (ADSI) methods to achieve the same functionality you can achieve by calling the network management group functions. For more information, see <see cref="IADsGroup"/>.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370437.aspx">NetLocalGroupDel function</a></para>
+        /// </remarks>
+        /// <seealso cref="NetLocalGroupAdd"/>
+        /// <seealso cref="NetLocalGroupDelMembers"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetLocalGroupDel(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string servername,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string groupname
+            );
+        #endregion
+        #region NetLocalGroupDelMember
+        // The NetLocalGroupDelMember function is obsolete. You should use the NetLocalGroupDelMembers function instead.
+        #endregion
+        #region NetLocalGroupDelMembers function
+        /// <summary>
+        /// The <see cref="NetLocalGroupDelMembers"/> function removes one or more members from an existing local group. Local group members can be users or global groups.
+        /// </summary>
+        /// <param name="servername">A string that specifies the DNS or NetBIOS name of the remote server on which the function is to execute. If this parameter is <c>null</c>, the local computer is used. </param>
+        /// <param name="groupname">A string that specifies the name of the local group from which the specified users or global groups will be removed. For more information, see the Remarks section.</param>
+        /// <param name="level">
+        /// The information level of the data. This parameter can be one of the following values. 
+        /// <list type="table">
+        /// <listheader><term>Value</term> <description>Meaning</description></listheader>
+        /// <term><c>0</c> (zero)</term> <description>Specifies the security identifier (SID) of the local group member to remove. The <paramref name="buf"/> parameter contains an array of <see cref="LOCALGROUP_MEMBERS_INFO_0"/> structures.</description>
+        /// <term>3</term> <description>Specifies the domain and name of the local group member to remove. The <paramref name="buf"/> parameter contains an array of <see cref="LOCALGROUP_MEMBERS_INFO_3"/> structures.</description>
+        /// </list>
+        /// </param>
+        /// <param name="buf">An array that contains the data for the local group members to be removed. The format of this data depends on the value of the <paramref name="level"/> parameter.</param>
+        /// <param name="totalentries">Specifies the number of entries in the array specified by the <paramref name="buf"/> parameter.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_ACCESS_DENIED"/></term><description>The user does not have access to the requested information.</description>
+        /// <term><see cref="NERR_GroupNotFound"/></term><description>The local group specified by the <paramref name="groupname"/> parameter does not exist.</description>
+        /// <term><see cref="ERROR_NO_SUCH_MEMBER"/></term><description>One or more of the members specified do not exist. Therefore, no members were deleted.</description>
+        /// <term><see cref="ERROR_MEMBER_IN_ALIAS"/></term><description>One or more of the members specified were already members of the local group. No members were deleted.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>If you call this function on a domain controller that is running Active Directory, access is allowed or denied based on the access control list (ACL) for the <a href="https://msdn.microsoft.com/en-us/library/aa379557aspx">securable object</a>. The default ACL permits only Domain Admins and Account Operators to call this function. On a member server or workstation, only Administrators and Power Users can call this function. For more information, see <a href="https://msdn.microsoft.com/en-us/library/aa370891aspx">Security Requirements for the Network Management Functions</a>. For more information on ACLs, ACEs, and access tokens, see <a href="https://msdn.microsoft.com/en-us/library/aa374876aspx">Access Control Model</a>.</para>
+        /// <para>The security descriptor of the LocalGroup object is used to perform the access check for this function.</para>
+        /// <para>User account names are limited to 20 characters and group names are limited to 256 characters. In addition, account names cannot be terminated by a period and they cannot include commas or any of the following printable characters: &quot;, /, \, [, ], :, |, &lt;, &gt;, +, =, ;, ?, *. Names also cannot include characters in the range 1-31, which are nonprintable.</para>
+        /// <para>If you are programming for Active Directory, you may be able to call certain Active Directory Service Interface (ADSI) methods to achieve the same functionality you can achieve by calling the network management group functions. For more information, see <see cref="IADsGroup"/>.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370439.aspx">NetLocalGroupDelMembers function</a></para>
+        /// </remarks>
+        /// <seealso cref="LOCALGROUP_MEMBERS_INFO_0"/>
+        /// <seealso cref="LOCALGROUP_MEMBERS_INFO_3"/>
+        /// <seealso cref="NetLocalGroupAddMembers"/>
+        /// <seealso cref="NetLocalGroupDel"/>
+        /// <seealso cref="NetLocalGroupGetMembers"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetLocalGroupDelMembers(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string servername,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string groupname,
+            [In] int level,
+            [In, MarshalAs(UnmanagedType.LPArray)] object[] buf,
+            [In] int totalentries
+            );
+        #endregion
+        #region NetLocalGroupEnum function
+        /// <summary>
+        /// The <see cref="NetLocalGroupEnum"/> function returns information about each local group account on the specified server.
+        /// </summary>
+        /// <param name="servername">A string that specifies the DNS or NetBIOS name of the remote server on which the function is to execute. If this parameter is <c>null</c>, the local computer is used.</param>
+        /// <param name="level">
+        /// Specifies the information level of the data. This parameter can be one of the following values. 
+        /// <list type="table">
+        /// <listheader><term>Value</term> <description>Meaning</description></listheader>
+        /// <term><c>0</c> (zero)</term> <description>Return local group names. The <paramref name="bufptr"/> parameter receives a handle to an array of <see cref="LOCALGROUP_INFO_0"/> structures.</description>
+        /// <term><c>1</c></term> <description>Return local group names and the comment associated with each group. The <paramref name="bufptr"/> parameter receives a handle to an array of <see cref="LOCALGROUP_INFO_1"/> structures.</description>
+        /// </list>
+        /// </param>
+        /// <param name="bufptr">
+        /// <para>A variable that receives a buffer containing the local group information structure. The format of this data depends on the value of the <paramref name="level"/> parameter. </para>
+        /// <para>The system allocates the memory for this buffer. The handle should be wrapped in a <c>using</c> block, or the application should otherwise make sure that the <see cref="SafeHandle.Dispose()"/> method is called on the returned handle when it is no longer needed. Note that you must free the buffer even if the function fails with <see cref="ERROR_MORE_DATA"/>.</para>
+        /// </param>
+        /// <param name="prefmaxlen">Specifies the preferred maximum length of the returned data, in bytes. If you specify <see cref="MAX_PREFERRED_LENGTH"/>, the function allocates the amount of memory required to hold the data. If you specify another value in this parameter, it can restrict the number of bytes that the function returns. If the buffer size is insufficient to hold all entries, the function returns <see cref="ERROR_MORE_DATA"/>.</param>
+        /// <param name="entriesread">A variable that receives the count of elements actually enumerated.</param>
+        /// <param name="totalentries">A variable that receives the total number of entries that could have been enumerated from the current resume position. The total number of entries is only a hint. For more information about determining the exact number of entries, see the Remarks section.</param>
+        /// <param name="resumehandle">Reference to a pointer variable that contains a resume handle that is used to continue the global group enumeration. The handle should be zero on the first call and left unchanged for subsequent calls. If this parameter is omitted, no resume handle is stored.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_ACCESS_DENIED"/></term><description>The user does not have access to the requested information.</description>
+        /// <term><see cref="ERROR_MORE_DATA"/></term><description>More entries are available. Specify a large enough buffer to receive all entries.</description>
+        /// <term><see cref="NERR_InvalidComputer"/></term><description>The computer name is invalid.</description>
+        /// <term><see cref="NERR_BufTooSmall"/></term><description>The return buffer is too small.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>If you call this function on a domain controller that is running Active Directory, access is allowed or denied based on the access control list (ACL) for the <a href="https://msdn.microsoft.com/en-us/library/aa379557aspx">securable object</a>. The default ACL permits only Domain Admins and Account Operators to call this function. On a member server or workstation, only Administrators and Power Users can call this function. For more information, see <a href="https://msdn.microsoft.com/en-us/library/aa370891aspx">Security Requirements for the Network Management Functions</a>. For more information on ACLs, ACEs, and access tokens, see <a href="https://msdn.microsoft.com/en-us/library/aa374876aspx">Access Control Model</a>.</para>
+        /// <para>The function only returns information to which the caller has Read access. The caller must have List Contents access to the Domain object, and Enumerate Entire SAM Domain access on the SAM Server object located in the System container. </para>
+        /// <para>To determine the exact total number of local groups, you must enumerate the entire tree, which can be a costly operation. To enumerate the entire tree, use the resumehandle parameter to continue the enumeration for consecutive calls, and use the entriesread parameter to accumulate the total number of local groups. If your application is communicating with a domain controller, you should consider using the <a href="https://msdn.microsoft.com/en-us/library/aa772203.aspx">ADSI LDAP Provider</a> to retrieve this type of data more efficiently. The ADSI LDAP Provider implements a set of ADSI objects that support various ADSI interfaces. For more information, see <a href="https://msdn.microsoft.com/en-us/library/aa772235.aspx">ADSI Service Providers</a>.</para>
+        /// <para>User account names are limited to 20 characters and group names are limited to 256 characters. In addition, account names cannot be terminated by a period and they cannot include commas or any of the following printable characters: &quot;, /, \, [, ], :, |, &lt;, &gt;, +, =, ;, ?, *. Names also cannot include characters in the range 1-31, which are nonprintable.</para>
+        /// <para>If you are programming for Active Directory, you may be able to call certain Active Directory Service Interface (ADSI) methods to achieve the same functionality you can achieve by calling the network management group functions. For more information, see <see cref="IADsGroup"/>.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370440.aspx">NetLocalGroupEnum function</a></para>
+        /// </remarks>
+        /// <seealso cref="LOCALGROUP_INFO_0"/>
+        /// <seealso cref="LOCALGROUP_INFO_1"/>
+        /// <seealso cref="NetQueryDisplayInformation"/>
+        /// <seealso cref="NetLocalGroupGetInfo"/>
+        /// <seealso cref="NetLocalGroupGetMembers"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetLocalGroupEnum(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string servername,
+            [In] int level,
+            out LocalGroupInfoArrayNetApiBufferHandle bufptr,
+            [In] int prefmaxlen,
+            out int entriesread,
+            out int totalentries,
+            [Optional] ref IntPtr resumehandle
+            );
+        #endregion
+        #region NetLocalGroupGetInfo function
+        /// <summary>
+        /// The <see cref="NetLocalGroupGetInfo"/> function retrieves information about a particular local group account on a server.
+        /// </summary>
+        /// <param name="servername">A string that specifies the DNS or NetBIOS name of the remote server on which the function is to execute. If this parameter is <c>null</c>, the local computer is used. </param>
+        /// <param name="groupname">A string that specifies the name of the local group account for which the information will be retrieved. For more information, see the Remarks section.</param>
+        /// <param name="level">
+        /// Specifies the information level of the data. This parameter can be the following value. 
+        /// <list type="table">
+        /// <listheader><term>Value</term> <description>Meaning</description></listheader>
+        /// <term><c>1</c></term> <description>Return local group name and the comment associated with the local group. The <paramref name="bufptr"/> parameter receives a handle to a <see cref="LOCALGROUP_INFO_1"/> structure.</description>
+        /// </list>
+        /// </param>
+        /// <param name="bufptr">
+        /// <para>A variable that receives a buffer containing the local group information structure. The format of this data depends on the value of the <paramref name="level"/> parameter. </para>
+        /// <para>The system allocates the memory for this buffer. The handle should be wrapped in a <c>using</c> block, or the application should otherwise make sure that the <see cref="SafeHandle.Dispose()"/> method is called on the returned handle when it is no longer needed. Note that you must free the buffer even if the function fails with <see cref="ERROR_MORE_DATA"/>.</para>
+        /// </param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_ACCESS_DENIED"/></term><description>The user does not have access to the requested information.</description>
+        /// <term><see cref="NERR_InvalidComputer"/></term><description>The computer name is invalid.</description>
+        /// <term><see cref="NERR_GroupNotFound"/></term><description>The specified local group does not exist.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>If you call this function on a domain controller that is running Active Directory, access is allowed or denied based on the access control list (ACL) for the <a href="https://msdn.microsoft.com/en-us/library/aa379557aspx">securable object</a>. The default ACL permits only Domain Admins and Account Operators to call this function. On a member server or workstation, only Administrators and Power Users can call this function. For more information, see <a href="https://msdn.microsoft.com/en-us/library/aa370891aspx">Security Requirements for the Network Management Functions</a>. For more information on ACLs, ACEs, and access tokens, see <a href="https://msdn.microsoft.com/en-us/library/aa374876aspx">Access Control Model</a>.</para>
+        /// <para>The security descriptor of the LocalGroup object is used to perform the access check for this function.</para>
+        /// <para>User account names are limited to 20 characters and group names are limited to 256 characters. In addition, account names cannot be terminated by a period and they cannot include commas or any of the following printable characters: &quot;, /, \, [, ], :, |, &lt;, &gt;, +, =, ;, ?, *. Names also cannot include characters in the range 1-31, which are nonprintable.</para>
+        /// <para>If you are programming for Active Directory, you may be able to call certain Active Directory Service Interface (ADSI) methods to achieve the same functionality you can achieve by calling the network management group functions. For more information, see <see cref="IADsGroup"/>.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370441.aspx">NetLocalGroupGetInfo function</a></para>
+        /// </remarks>
+        /// <seealso cref="LOCALGROUP_INFO_1"/>
+        /// <seealso cref="NetQueryDisplayInformation"/>
+        /// <seealso cref="NetLocalGroupEnum"/>
+        /// <seealso cref="NetLocalGroupGetMembers"/>
+        /// <seealso cref="NetLocalGroupSetInfo"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetLocalGroupGetInfo(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string servername,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string groupname,
+            [In] int level,
+            out LocalGroupInfoNetApiBufferHandle bufptr
+            );
+        #endregion
+        #region NetLocalGroupGetMembers function
+        /// <summary>
+        /// The <see cref="NetLocalGroupGetMembers"/> function retrieves a list of the members of a particular local group in the security database, which is the security accounts manager (SAM) database or, in the case of domain controllers, the Active Directory. Local group members can be users or global groups.
+        /// </summary>
+        /// <param name="servername">A string that specifies the DNS or NetBIOS name of the remote server on which the function is to execute. If this parameter is <c>null</c>, the local computer is used.</param>
+        /// <param name="localgroupname">A string that specifies the name of the local group whose members are to be listed. For more information, see the Remarks section.</param>
+        /// <param name="level">
+        /// Specifies the information level of the data. This parameter can be the following value. 
+        /// <list type="table">
+        /// <listheader><term>Value</term> <description>Meaning</description></listheader>
+        /// <term><c>0</c> (zero)</term> <description>Return the security identifier (SID) associated with the local group member. The <paramref name="bufptr"/> parameter points to an array of <see cref="LOCALGROUP_MEMBERS_INFO_0"/> structures.</description>
+        /// <term><c>1</c></term> <description>Return the SID and account information associated with the local group member. The <paramref name="bufptr"/> parameter points to an array of <see cref="LOCALGROUP_MEMBERS_INFO_1"/> structures.</description>
+        /// <term><c>2</c></term> <description>Return the SID, account information, and the domain name associated with the local group member. The <paramref name="bufptr"/> parameter points to an array of <see cref="LOCALGROUP_MEMBERS_INFO_2"/> structures.</description>
+        /// <term><c>3</c></term> <description>Return the account and domain names of the local group member. The <paramref name="bufptr"/> parameter points to an array of <see cref="LOCALGROUP_MEMBERS_INFO_3"/> structures.</description>
+        /// </list>
+        /// </param>
+        /// <param name="bufptr">
+        /// <para>A variable that receives a buffer containing the local group information structure. The format of this data depends on the value of the <paramref name="level"/> parameter. </para>
+        /// <para>The system allocates the memory for this buffer. The handle should be wrapped in a <c>using</c> block, or the application should otherwise make sure that the <see cref="SafeHandle.Dispose()"/> method is called on the returned handle when it is no longer needed. Note that you must free the buffer even if the function fails with <see cref="ERROR_MORE_DATA"/>.</para>
+        /// </param>
+        /// <param name="prefmaxlen">Specifies the preferred maximum length of the returned data, in bytes. If you specify <see cref="MAX_PREFERRED_LENGTH"/>, the function allocates the amount of memory required to hold the data. If you specify another value in this parameter, it can restrict the number of bytes that the function returns. If the buffer size is insufficient to hold all entries, the function returns <see cref="ERROR_MORE_DATA"/>.</param>
+        /// <param name="entriesread">A variable that receives the count of elements actually enumerated.</param>
+        /// <param name="totalentries">A variable that receives the total number of entries that could have been enumerated from the current resume position. The total number of entries is only a hint. For more information about determining the exact number of entries, see the Remarks section.</param>
+        /// <param name="resumehandle">Reference to a pointer variable that contains a resume handle that is used to continue the global group enumeration. The handle should be zero on the first call and left unchanged for subsequent calls. If this parameter is omitted, no resume handle is stored.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_ACCESS_DENIED"/></term><description>The user does not have access to the requested information.</description>
+        /// <term><see cref="NERR_InvalidComputer"/></term><description>The computer name is invalid.</description>
+        /// <term><see cref="ERROR_MORE_DATA"/></term><description>More entries are available. Specify a large enough buffer to receive all entries.</description>
+        /// <term><see cref="ERROR_NO_SUCH_ALIAS"/></term><description>The specified local group does not exist.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>If you call this function on a domain controller that is running Active Directory, access is allowed or denied based on the access control list (ACL) for the <a href="https://msdn.microsoft.com/en-us/library/aa379557aspx">securable object</a>. The default ACL permits only Domain Admins and Account Operators to call this function. On a member server or workstation, only Administrators and Power Users can call this function. For more information, see <a href="https://msdn.microsoft.com/en-us/library/aa370891aspx">Security Requirements for the Network Management Functions</a>. For more information on ACLs, ACEs, and access tokens, see <a href="https://msdn.microsoft.com/en-us/library/aa374876aspx">Access Control Model</a>.</para>
+        /// <para>The security descriptor of the LocalGroup object is used to perform the access check for this function.</para>
+        /// <para>User account names are limited to 20 characters and group names are limited to 256 characters. In addition, account names cannot be terminated by a period and they cannot include commas or any of the following printable characters: &quot;, /, \, [, ], :, |, &lt;, &gt;, +, =, ;, ?, *. Names also cannot include characters in the range 1-31, which are nonprintable.</para>
+        /// <para>If you are programming for Active Directory, you may be able to call certain Active Directory Service Interface (ADSI) methods to achieve the same functionality you can achieve by calling the network management group functions. For more information, see <see cref="IADsGroup"/>.</para>
+        /// <para>If this function returns <see cref="ERROR_MORE_DATA"/>, then it must be repeatedly called until <see cref="ERROR_SUCCESS"/> or <see cref="NERR_Success"/> is returned. Failure to do so can result in an RPC connection leak.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370601.aspx">NetLocalGroupGetMembers function</a></para>
+        /// </remarks>
+        /// <seealso cref="LOCALGROUP_MEMBERS_INFO_0"/>
+        /// <seealso cref="LOCALGROUP_MEMBERS_INFO_1"/>
+        /// <seealso cref="LOCALGROUP_MEMBERS_INFO_2"/>
+        /// <seealso cref="LOCALGROUP_MEMBERS_INFO_3"/>
+        /// <seealso cref="NetLocalGroupSetMembers"/>
+        /// <seealso cref="NetLocalGroupGetInfo"/>
+        /// <seealso cref="NetLocalGroupEnum"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetLocalGroupGetMembers(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string servername,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string localgroupname,
+            [In] int level,
+            out LocalGroupMembersInfoArrayNetApiBufferHandle bufptr,
+            [In] int prefmaxlen,
+            out int entriesread,
+            out int totalentries,
+            [Optional] ref IntPtr resumehandle
+            );
+        #endregion
+        #region NetLocalGroupSetInfo function
+        /// <summary>
+        /// The <see cref="NetLocalGroupSetInfo"/> function changes the name of an existing local group. The function also associates a comment with a local group.
+        /// </summary>
+        /// <param name="servername">A string that specifies the DNS or NetBIOS name of the remote server on which the function is to execute. If this parameter is <c>null</c>, the local computer is used. </param>
+        /// <param name="groupname">A string that specifies the name of the local group account to modify. For more information, see the Remarks section.</param>
+        /// <param name="level">
+        /// Specifies the information level of the data. This parameter can be the following value. 
+        /// <list type="table">
+        /// <listheader><term>Value</term> <description>Meaning</description></listheader>
+        /// <term><c>0</c> (zero)</term> <description>Specifies the local group name. The <paramref name="buf"/> parameter contains a <see cref="LOCALGROUP_INFO_0"/> structure. Use this level to change the name of an existing local group.</description>
+        /// <term><c>1</c></term> <description>Specifies the local group name and a comment to associate with the group. The <paramref name="buf"/> parameter contains a <see cref="LOCALGROUP_INFO_1"/> structure.</description>
+        /// <term><c>1002</c></term> <description>Specifies a comment to associate with the local group. The <paramref name="buf"/> parameter contains a <see cref="LOCALGROUP_INFO_1002"/> structure.</description>
+        /// </list>
+        /// </param>
+        /// <param name="buf">The data for the local group information. The format of this data depends on the value of the <paramref name="level"/> parameter.</param>
+        /// <param name="parm_error">A variable that receives the index of the first member of the local group information structure to cause the <see cref="ERROR_INVALID_PARAMETER"/> error. If this parameter is omitted, the index is not returned on error. For more information, see the Remarks section.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_ACCESS_DENIED"/></term><description>The user does not have access to the requested information.</description>
+        /// <term><see cref="ERROR_INVALID_PARAMETER"/></term><description>One of the function parameters is invalid. For more information, see the Remarks section.</description>
+        /// <term><see cref="ERROR_NO_SUCH_ALIAS"/></term><description>The specified local group does not exist.</description>
+        /// <term><see cref="NERR_NotPrimary"/></term><description>The operation is allowed only on the primary domain controller of the domain.</description>
+        /// <term><see cref="NERR_InvalidComputer"/></term><description>The computer name is invalid.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>If you call this function on a domain controller that is running Active Directory, access is allowed or denied based on the access control list (ACL) for the <a href="https://msdn.microsoft.com/en-us/library/aa379557aspx">securable object</a>. The default ACL permits only Domain Admins and Account Operators to call this function. On a member server or workstation, only Administrators and Power Users can call this function. For more information, see <a href="https://msdn.microsoft.com/en-us/library/aa370891aspx">Security Requirements for the Network Management Functions</a>. For more information on ACLs, ACEs, and access tokens, see <a href="https://msdn.microsoft.com/en-us/library/aa374876aspx">Access Control Model</a>.</para>
+        /// <para>The security descriptor of the LocalGroup object is used to perform the access check for this function. Typically, callers must have write access to the entire object for calls to this function to succeed.</para>
+        /// <para>To specify the new name of an existing local group, call <see cref="NetLocalGroupSetInfo"/> with <see cref="LOCALGROUP_INFO_0"/> and specify a value using the <see cref="LOCALGROUP_INFO_0.lgrpi0_name"/> member. If you call the <see cref="NetLocalGroupSetInfo"/> function with a different level and specify a new value using the <strong>lgrpi*_name</strong> member, that value will be ignored.</para>
+        /// <para>
+        /// If the <see cref="NetLocalGroupSetInfo"/> function returns <see cref="ERROR_INVALID_PARAMETER"/>, you can use the <paramref name="parm_error"/> parameter to indicate the first member of the local group information structure that is invalid. (A local group information structure begins with <strong>LOCALGROUP_INFO_</strong> and its format is specified by the <paramref name="level"/> parameter.) The following table lists the values that can be returned in the <paramref name="parm_error"/> parameter and the corresponding structure member that is in error. (The prefix <var>lgrpi*_</var> indicates that the member can begin with multiple prefixes, for example, <var>lgrpi0_</var> or <var>lgrpi1_</var>.)
+        /// <list type="table">
+        /// <listheader><term>Value</term><description>Member</description></listheader>
+        /// <term><see cref="LOCALGROUP_NAME_PARMNUM"/></term><description><var>lgrpi*_name</var></description>
+        /// <term><see cref="LOCALGROUP_COMMENT_PARMNUM"/></term><description><var>lgrpi*_comment</var></description>
+        /// </list>
+        /// </para>
+        /// <para>User account names are limited to 20 characters and group names are limited to 256 characters. In addition, account names cannot be terminated by a period and they cannot include commas or any of the following printable characters: &quot;, /, \, [, ], :, |, &lt;, &gt;, +, =, ;, ?, *. Names also cannot include characters in the range 1-31, which are nonprintable.</para>
+        /// <para>If you are programming for Active Directory, you may be able to call certain Active Directory Service Interface (ADSI) methods to achieve the same functionality you can achieve by calling the network management group functions. For more information, see <see cref="IADsGroup"/>.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370602.aspx">NetLocalGroupSetInfo function</a></para>
+        /// </remarks>
+        /// <seealso cref="LOCALGROUP_INFO_0"/>
+        /// <seealso cref="LOCALGROUP_INFO_1"/>
+        /// <seealso cref="LOCALGROUP_INFO_1002"/>
+        /// <seealso cref="NetLocalGroupGetInfo"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetLocalGroupSetInfo(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string servername,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string groupname,
+            [In] int level,
+            [In, MarshalAs(UnmanagedType.LPStruct)] object buf,
+            [Optional] out LOCALGROUP_INFO_PARMNUM parm_error
+            );
+        #endregion
+        #region NetLocalGroupSetMembers function
+        /// <summary>
+        /// The <see cref="NetLocalGroupSetMembers"/> function sets the membership for the specified local group. Each user or global group specified is made a member of the local group. Users or global groups that are not specified but who are currently members of the local group will have their membership revoked.
+        /// </summary>
+        /// <param name="servername">A string that specifies the DNS or NetBIOS name of the remote server on which the function is to execute. If this parameter is <c>null</c>, the local computer is used.</param>
+        /// <param name="groupname">A string that specifies the name of the local group in which the specified users or global groups should be granted membership. For more information, see the Remarks section.</param>
+        /// <param name="level">
+        /// Specifies the information level of the data. This parameter can be the following value. 
+        /// <list type="table">
+        /// <listheader><term>Value</term> <description>Meaning</description></listheader>
+        /// <term><c>0</c> (zero)</term> <description>Specifies the security identifier (SID) associated with a local group member. The <paramref name="buf"/> parameter points to an array of <see cref="LOCALGROUP_MEMBERS_INFO_0"/> structures.</description>
+        /// <term><c>3</c></term> <description>Specifies the account and domain names of the local group member. The <paramref name="buf"/> parameter points to an array of <see cref="LOCALGROUP_MEMBERS_INFO_3"/> structures.</description>
+        /// </list>
+        /// </param>
+        /// <param name="buf">An array that contains the member information. The format of this data depends on the value of the <paramref name="level"/> parameter.</param>
+        /// <param name="totalentries">Specifies a value that contains the total number of entries in the array specified by the <paramref name="buf"/> parameter.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="NERR_GroupNotFound"/></term><description>The group specified by the <paramref name="groupname"/> parameter does not exist.</description>
+        /// <term><see cref="ERROR_ACCESS_DENIED"/></term><description>The user does not have access to the requested information.</description>
+        /// <term><see cref="ERROR_NO_SUCH_MEMBER"/></term><description>One or more of the members doesn't exist. The local group membership was not changed.</description>
+        /// <term><see cref="ERROR_INVALID_MEMBER"/></term><description>One or more of the members cannot be added because it has an invalid account type. The local group membership was not changed.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>If you call this function on a domain controller that is running Active Directory, access is allowed or denied based on the access control list (ACL) for the <a href="https://msdn.microsoft.com/en-us/library/aa379557aspx">securable object</a>. The default ACL permits only Domain Admins and Account Operators to call this function. On a member server or workstation, only Administrators and Power Users can call this function. For more information, see <a href="https://msdn.microsoft.com/en-us/library/aa370891aspx">Security Requirements for the Network Management Functions</a>. For more information on ACLs, ACEs, and access tokens, see <a href="https://msdn.microsoft.com/en-us/library/aa374876aspx">Access Control Model</a>.</para>
+        /// <para>The security descriptor of the LocalGroup object is used to perform the access check for this function.</para>
+        /// <para>
+        /// You can replace the local group membership with an entirely new list of members by calling the <see cref="NetLocalGroupSetMembers"/> function. The typical sequence of steps to perform this follows.
+        /// <list type="number">
+        /// <item>Call the <see cref="NetLocalGroupGetMembers"/> function to retrieve the current membership list.</item>
+        /// <item>Modify the returned membership list to reflect the new membership.</item>
+        /// <item>Call the <see cref="NetLocalGroupSetMembers"/> function to replace the old membership list with the new membership list.</item>
+        /// </list>
+        /// </para>
+        /// <para>To add one or more existing user accounts or global group accounts to an existing local group, you can call the <see cref="NetLocalGroupAddMembers"/> function. To remove one or more members from an existing local group, call the <see cref="NetLocalGroupDelMembers"/> function.</para>
+        /// <para>User account names are limited to 20 characters and group names are limited to 256 characters. In addition, account names cannot be terminated by a period and they cannot include commas or any of the following printable characters: &quot;, /, \, [, ], :, |, &lt;, &gt;, +, =, ;, ?, *. Names also cannot include characters in the range 1-31, which are nonprintable.</para>
+        /// <para>If you are programming for Active Directory, you may be able to call certain Active Directory Service Interface (ADSI) methods to achieve the same functionality you can achieve by calling the network management group functions. For more information, see <see cref="IADsGroup"/>.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370604.aspx">NetLocalGroupSetMembers function</a></para>
+        /// </remarks>
+        /// <seealso cref="LOCALGROUP_MEMBERS_INFO_0"/>
+        /// <seealso cref="LOCALGROUP_MEMBERS_INFO_3"/>
+        /// <seealso cref="NetLocalGroupGetMembers"/>
+        /// <seealso cref="NetLocalGroupAddMembers"/>
+        /// <seealso cref="NetLocalGroupDelMembers"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetLocalGroupSetMembers(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string servername,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string groupname,
+            [In] int level,
+            [In, MarshalAs(UnmanagedType.LPArray)] object[] buf,
+            [In] int totalentries
             );
         #endregion
     }

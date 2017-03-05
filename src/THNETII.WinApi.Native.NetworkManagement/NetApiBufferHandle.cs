@@ -87,4 +87,24 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
     {
 
     }
+
+    public class LocalGroupInfoNetApiBufferHandle : NetApiBufferHandle
+    {
+
+    }
+
+    public class LocalGroupInfoArrayNetApiBufferHandle : NetApiBufferHandle
+    {
+
+    }
+
+    public class LocalGroupMembersInfoNetApiBufferHandle : NetApiBufferHandle
+    {
+
+    }
+
+    public class LocalGroupMembersInfoArrayNetApiBufferHandle : NetApiBufferHandle
+    {
+
+    }
 }

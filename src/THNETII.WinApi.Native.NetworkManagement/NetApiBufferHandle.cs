@@ -128,4 +128,10 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
     }
 
     public class TimeOfDayInfoNetApiBufferHandle : NetApiBufferHandle, ISafeHandleReadableAsSimpleStructure<TIME_OF_DAY_INFO> { }
+
+    public class ByteArrayNetApiBufferHandle : NetApiAlertBufferHandle, ISafeHandleReadableAsByteArray { }
+
+    public class AtEnumArrayNetApiNetApiBufferHandle : NetApiAlertBufferHandle, ISafeHandleReadableAsSimpleStructureArray<AT_ENUM> { }
+
+    public class AtIntoNetApiNetApiBufferHandle : NetApiAlertBufferHandle, ISafeHandleReadableAsSimpleStructure<AT_INFO> { }
 }

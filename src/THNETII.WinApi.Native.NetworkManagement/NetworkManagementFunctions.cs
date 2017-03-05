@@ -4,6 +4,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using THNETII.InteropServices.SafeHandles;
 
+using static Microsoft.Win32.WinApi.Networking.NetworkManagement.JOB_FLAGS;
 using static Microsoft.Win32.WinApi.Networking.NetworkManagement.GROUP_INFO_PARMNUM;
 using static Microsoft.Win32.WinApi.Networking.NetworkManagement.LanManConstants;
 using static Microsoft.Win32.WinApi.Networking.NetworkManagement.LOCALGROUP_INFO_PARMNUM;
@@ -2532,6 +2533,328 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
             [In, MarshalAs(UnmanagedType.LPWStr)] string lpAccount,
             [In, MarshalAs(UnmanagedType.LPWStr)] string lpPassword,
             [In, MarshalAs(UnmanagedType.I4)] NETSETUP_OPTIONS fRenameOptions
+            );
+        #endregion
+        #region NetRequestOfflineDomainJoin function
+        /// <summary>
+        /// The <see cref="NetRequestOfflineDomainJoin"/> function executes locally on a machine to modify a Windows operating system image mounted on a volume. The registry is loaded from the image and provisioning blob data is written where it can be retrieved during the completion phase of an offline domain join operation. 
+        /// </summary>
+        /// <param name="pProvisionBinData">
+        /// <para>A buffer required to initialize the registry of a Windows operating system image to process the final local state change during the completion phase of the offline domain join operation.</para>
+        /// <para>The opaque binary blob of serialized metadata passed in the <var>pProvisionBinData</var> parameter is returned by the <see cref="NetProvisionComputerAccount(string, string, string, string, NETSETUP_PROVISION_FLAGS, out NetRequestOfflineDomainJoinBinDataBuffer, out int, IntPtr)"/> function. </para>
+        /// </param>
+        /// <param name="cbProvisionBinDataSize">The size, in bytes, of the buffer pointed to by the <paramref name="pProvisionBinData"/> parameter. </param>
+        /// <param name="dwOptions">
+        /// <para>A set of bit flags that define options for this function.</para>
+        /// <para><see cref="NETSETUP_PROVISION_ONLINE_CALLER"/> - This flag is required if the <paramref name="lpWindowsPath"/> parameter references the currently running Windows operating system directory rather than an offline Windows operating system image mounted on an accessible volume. If this flag is specified, the <see cref="NetRequestOfflineDomainJoin"/> function must be invoked by a member of the local Administrators group.</para>
+        /// </param>
+        /// <param name="lpWindowsPath">
+        /// <para>A string that specifies the path to a Windows operating system image under which the registry hives are located. This image must be offline and not currently booted unless the <paramref name="dwOptions"/> parameter contains <see cref="NETSETUP_PROVISION_ONLINE_CALLER"/> in which case the locally running operating system directory is allowed. </para>
+        /// <para>This path could be a UNC path on a remote server.</para>
+        /// </param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes or one of the system error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_ACCESS_DENIED"/></term><description>Access is denied. This error is returned if the caller does not have sufficient privileges to complete the operation. </description>
+        /// <term><see cref="ERROR_ELEVATION_REQUIRED"/></term><description>The requested operation requires elevation.</description>
+        /// <term><see cref="ERROR_INVALID_PARAMETER"/></term><description>A parameter is incorrect. This error is returned if the <paramref name="pProvisionBinData"/>, <paramref name="cbProvisionBinDataSize"/>, or <paramref name="lpWindowsPath"/> parameters are <c>null</c>. This error is also returned if the buffer pointed to by the <var>pProvisionBinData</var> parameter does not contain valid data in the blob for the domain, machine account name, or machine account password. This error is also returned if the string specified by <paramref name="lpWindowsPath"/> parameter does not specify the path to a Windows operating system image.</description>
+        /// <term><see cref="ERROR_NOT_SUPPORTED"/></term><description>The request is not supported. This error is returned if the specified server does not support this operation. For example, if the <paramref name="lpWindowsPath"/> parameter references a Windows installation configured as a domain controller.</description>
+        /// <term><see cref="NERR_WkstaNotStarted"/></term><description>The Workstation service has not been started.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>The <see cref="NetRequestOfflineDomainJoin"/> function is supported on Windows 7 for offline domain join operations. </para>
+        /// <para>
+        /// The <see cref="NetRequestOfflineDomainJoin"/> function is used locally on a machine to modify a Windows operating system image mounted on a volume. The registry is loaded for the image and provisioning blob data is written where it can be retrieved during the completion phase of an offline domain join operation. The offline domain join scenario uses these functions as follows:
+        /// <list type="bullet">
+        /// <item><see cref="NetProvisionComputerAccount(string, string, string, string, NETSETUP_PROVISION_FLAGS, out NetRequestOfflineDomainJoinBinDataBuffer, out int, IntPtr)"/> is a provisioning function that is first called to perform the network operations necessary to create and configure the computer object in Active Directory. The output from the <see cref="NetProvisionComputerAccount"/> is an opaque binary blob of serialized metadata used for the next step.</item>
+        /// <item><see cref="NetRequestOfflineDomainJoin"/> , an image initialization function, is then called to inject the output from the <see cref="NetProvisionComputerAccount(string, string, string, string, NETSETUP_PROVISION_FLAGS, out NetRequestOfflineDomainJoinBinDataBuffer, out int, IntPtr)"/> provisioning function into a Windows operating system image to be used during installation. Changes to Windows initialization code will detect this saved state and affect the local only portion of domain join.</item>
+        /// </list>
+        /// </para>
+        /// <para>The <see cref="NetProvisionComputerAccount(string, string, string, string, NETSETUP_PROVISION_FLAGS, out NetRequestOfflineDomainJoinBinDataBuffer, out int, IntPtr)"/> function will create or reuse the machine account in the domain, collect all necessary metadata and return it in an opaque versioned binary blob or as text for embedding in an unattended setup answer file. The opaque binary blob can be consumed by the offline domain join request operation supplying all the necessary input to complete the domain join during first boot without any network operations (local state updates only). Note that the blob contains machine account password material essentially in the clear. The design makes no provisions for securing this data. This problem exists today with unattended setup answer files which can carry a number of secrets including domain user passwords. The caller must secure the blob and the unattended setup files. Solutions to this problem are varied. As an example, a pre-exchanged key could be used to encrypt a session between the consumer and provisioning entity enabling a secure transfer of the opaque blob . </para>
+        /// <para>The opaque blob returned in the <paramref name="pProvisionBinData"/> parameter by the <see cref="NetProvisionComputerAccount(string, string, string, string, NETSETUP_PROVISION_FLAGS, out NetRequestOfflineDomainJoinBinDataBuffer, out int, IntPtr)"/> function is versioned to allow interoperability and serviceability scenarios between different versions of Windows (joining client, provisioning machine, and domain controller). The offline join scenario currently does not limit the lifetime of the blob returned by the <see cref="NetProvisionComputerAccount(string, string, string, string, NETSETUP_PROVISION_FLAGS, out NetRequestOfflineDomainJoinBinDataBuffer, out int, IntPtr)"/> function. </para>
+        /// <para>For more information on offline domain join operations, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=152786">Offline Domain Join Step-by-Step Guide</a>.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 7 [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: None supported [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/dd815229.aspx">NetRequestOfflineDomainJoin function</a></para>
+        /// </remarks>
+        /// <seealso cref="NetCreateProvisioningPackage"/>
+        /// <seealso cref="NetJoinDomain"/>
+        /// <seealso cref="NetProvisionComputerAccount"/>
+        /// <seealso cref="NetRenameMachineInDomain"/>
+        /// <seealso cref="NetRequestProvisioningPackageInstall"/>
+        /// <seealso cref="NetUnjoinDomain"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetRequestOfflineDomainJoin(
+            [In, MarshalAs(UnmanagedType.LPArray)] byte[] pProvisionBinData,
+            [In] int cbProvisionBinDataSize,
+            [In, MarshalAs(UnmanagedType.I4)] NETSETUP_PROVISION_FLAGS dwOptions,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string lpWindowsPath
+            );
+        #endregion
+        #region NetRequestProvisioningPackageInstall function
+        /// <summary>
+        /// The <see cref="NetRequestProvisioningPackageInstall"/> function executes locally on a machine to modify a Windows operating system image mounted on a volume. The registry is loaded from the image and provisioning package data is written where it can be retrieved during the completion phase of an offline domain join operation. 
+        /// </summary>
+        /// <param name="pProvisionBinData">
+        /// <para>A buffer required to initialize the registry of a Windows operating system image to process the final local state change during the completion phase of the offline domain join operation. </para>
+        /// <para>The opaque binary blob of serialized metadata passed in the <paramref name="pProvisionBinData"/> parameter is returned by the <see cref="NetCreateProvisioningPackage(NETSETUP_PROVISIONING_PARAMS, out NetRequestOfflineDomainJoinBinDataBuffer, out int, IntPtr)"/> function. </para>
+        /// </param>
+        /// <param name="dwPackageBinDataSize">The size, in bytes, of the buffer pointed to by the <paramref name="pProvisionBinData"/> parameter. </param>
+        /// <param name="dwProvisionOptions">
+        /// <para>A set of bit flags that define options for this function.</para>
+        /// <para><see cref="NETSETUP_PROVISION_ONLINE_CALLER"/> - This flag is required if the <paramref name="lpWindowsPath"/> parameter references the currently running Windows operating system directory rather than an offline Windows operating system image mounted on an accessible volume. If this flag is specified, the <see cref="NetRequestProvisioningPackageInstall"/> function must be invoked by a member of the local Administrators group.</para>
+        /// </param>
+        /// <param name="lpWindowsPath">
+        /// <para>A string that specifies the path to a Windows operating system image under which the registry hives are located. This image must be offline and not currently booted unless the <paramref name="dwOptions"/> parameter contains <see cref="NETSETUP_PROVISION_ONLINE_CALLER"/> in which case the locally running operating system directory is allowed. </para>
+        /// <para>This path could be a UNC path on a remote server.</para>
+        /// </param>
+        /// <param name="pvReserved">Reserved for future use.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes or one of the system error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="NERR_NoOfflineJoinInfo"/></term><description>The offline join completion information was not found.</description>
+        /// <term><see cref="NERR_BadOfflineJoinInfo"/></term><description>The offline join completion information was bad.</description>
+        /// <term><see cref="NERR_CantCreateJoinInfo"/></term><description>Unable to create offline join information. Please ensure you have access to the specified path location and permissions to modify its contents. Running as an elevated administrator may be required.</description>
+        /// <term><see cref="NERR_BadDomainJoinInfo"/></term><description>The domain join info being saved was incomplete or bad.</description>
+        /// <term><see cref="NERR_JoinPerformedMustRestart"/></term><description>Offline join operation successfully completed but a restart is needed.</description>
+        /// <term><see cref="NERR_NoJoinPending"/></term><description>There was no offline join operation pending.</description>
+        /// <term><see cref="NERR_ValuesNotSet"/></term><description>Unable to set one or more requested machine or domain name values on the local computer.</description>
+        /// <term><see cref="NERR_CantVerifyHostname"/></term><description>Could not verify the current machine's hostname against the saved value in the join completion information.</description>
+        /// <term><see cref="NERR_CantLoadOfflineHive"/></term><description>Unable to load the specified offline registry hive. Please ensure you have access to the specified path location and permissions to modify its contents. Running as an elevated administrator may be required.</description>
+        /// <term><see cref="NERR_ConnectionInsecure"/></term><description>The minimum session security requirements for this operation were not met.</description>
+        /// <term><see cref="NERR_ProvisioningBlobUnsupported"/></term><description>Computer account provisioning blob version is not supported.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>The <see cref="NetRequestProvisioningPackageInstall"/> function is supported on Windows 8 for offline domain join operations. For Windows 7, use <see cref="NetRequestOfflineDomainJoin"/>.</para>
+        /// <para>
+        /// The offline domain join scenario uses two functions: 
+        /// <list type="bullet">
+        /// <item><see cref="NetCreateProvisioningPackage(NETSETUP_PROVISIONING_PARAMS, out NetRequestOfflineDomainJoinBinDataBuffer, out int, IntPtr)"/> is a provisioning function that is first called to perform the network operations necessary to create and configure the computer object in Active Directory. The output from the <see cref="NetCreateProvisioningPackage(NETSETUP_PROVISIONING_PARAMS, out NetRequestOfflineDomainJoinBinDataBuffer, out int, IntPtr)"/> is a package used for the next step.</item>
+        /// <item><see cref="NetRequestProvisioningPackageInstall"/>, an image initialization function, is called to inject the output from the <see cref="NetCreateProvisioningPackage(NETSETUP_PROVISIONING_PARAMS, out NetRequestOfflineDomainJoinBinDataBuffer, out int, IntPtr)"/> provisioning function into a Windows operating system image for use during installation. </item>
+        /// </list>
+        /// </para>
+        /// <para>Changes to Windows initialization code will detect this saved state and affect the local-only portion of domain join and install any certificate and policy information that may have been present in the package.<br/> The <see cref="NetCreateProvisioningPackage"/> function will create or reuse the machine account in the domain, collect all necessary metadata and return it in a package.The package can be consumed by the offline domain join request operation supplying all the necessary input to complete the domain join during first boot without any network operations (local state updates only). </para>
+        /// <para><note type="security">The package created by the <see cref="NetCreateProvisioningPackage(NETSETUP_PROVISIONING_PARAMS, out NetRequestOfflineDomainJoinBinDataBuffer, out int, IntPtr)"/> function contains very sensitive data. It should be treated just as securely as a plaintext password. The package contains the machine account password and other information about the domain, including the domain name, the name of a domain controller, and the security ID (SID) of the domain. If the package is being transported physically or over the network, care must be taken to transport it securely. The design makes no provisions for securing this data. This problem exists today with unattended setup answer files which can carry a number of secrets including domain user passwords. The caller must secure the package. Solutions to this problem are varied. As an example, a pre-exchanged key could be used to encrypt a session between the consumer and provisioning entity enabling a secure transfer of the package. </note></para>
+        /// <para>The package returned in the <var>pPackageBinData</var> parameter by the <see cref="NetCreateProvisioningPackage(NETSETUP_PROVISIONING_PARAMS, out NetRequestOfflineDomainJoinBinDataBuffer, out int, IntPtr)"/> function is versioned to allow interoperability and serviceability scenarios between different versions of Windows (such as joining a client, provisioning a machine, and using a domain controller). The offline join scenario currently does not limit the lifetime of the package returned by the <see cref="NetCreateProvisioningPackage"/> function.</para>
+        /// <para>All phases of the provisioning process append to a <var>NetSetup.log</var> file on the local computer. The provisoning process can include up to three different computers: the computer where the provisioning package is created, the computer that requests the installation of the package, and the computer where the package is installed. There will be <var>NetSetup.log</var> file information stored on all three computers according to the operation performed. Reviewing the contents of these files is the most common means of troubleshooting online and offline provisioning errors. Provisioning operations undertaken by admins are logged to the <var>NetSetup.log</var> file in the <var>%WINDIR%\Debug</var>. Provisioning operations performed by non-admins are logged to the NetSetup.log file in the <var>%USERPROFILE%\Debug</var> folder.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 8 [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows Server 2012 [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/hh706771.aspx">NetRequestProvisioningPackageInstall function</a></para>
+        /// </remarks>
+        /// <seealso cref="NetCreateProvisioningPackage(NETSETUP_PROVISIONING_PARAMS, out NetRequestOfflineDomainJoinBinDataBuffer, out int, IntPtr)"/>
+        /// <seealso cref="NetJoinDomain"/>
+        /// <seealso cref="NetProvisionComputerAccount(string, string, string, string, NETSETUP_PROVISION_FLAGS, out NetRequestOfflineDomainJoinBinDataBuffer, out int, IntPtr)"/>
+        /// <seealso cref="NetRenameMachineInDomain"/>
+        /// <seealso cref="NetRequestOfflineDomainJoin"/>
+        /// <seealso cref="NetUnjoinDomain"/>
+        /// <seealso cref="NETSETUP_PROVISIONING_PARAMS"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetRequestProvisioningPackageInstall(
+            [In, MarshalAs(UnmanagedType.LPArray)] byte[] pProvisionBinData,
+            [In] int dwPackageBinDataSize,
+            [In, MarshalAs(UnmanagedType.I4)] NETSETUP_PROVISION_FLAGS dwProvisionOptions,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string lpWindowsPath,
+            [In] IntPtr pvReserved
+            );
+        #endregion
+        #region NetScheduleJobAdd function
+        /// <summary>
+        /// The <see cref="NetScheduleJobAdd"/> function submits a job to run at a specified future time and date. This function requires that the schedule service be started on the computer to which the job is submitted. 
+        /// </summary>
+        /// <param name="Servername">A string that specifies the DNS or NetBIOS name of the remote server on which the function is to execute. If this parameter is <c>null</c>, the local computer is used.</param>
+        /// <param name="Buffer">An <see cref="AT_INFO"/> structure describing the job to submit.</param>
+        /// <param name="JobId">A variable that receives a job identifier for the newly submitted job. This entry is valid only if the function returns successfully.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>If the function fails, the return value is a system error code. For a list of error codes, see System Error Codes.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>Normally only members of the local Administrators group on the computer where the schedule job is being added can successfully execute this function. If the server name passed in the string pointed to by the <paramref name="Servername"/> parameter is a remote server, then only members of the local Administrators group on the remote server can successfully execute this function. </para>
+        /// <para>
+        /// If the following registry value has the least significant bit set (for example, 0x00000001), then users belonging to the Server Operators group can also successfully execute this function. 
+        /// <code>HKLM\System\CurrentControlSet\Control\Lsa\SubmitControl</code>
+        /// </para>
+        /// <para>The following are examples of how to schedule jobs using different properties supported by the <see cref="NetScheduleJobAdd"/> function.</para>
+        /// <para>
+        /// To schedule a job that executes once:
+        /// <list type="bullet">
+        /// <item>Set the <see cref="AT_INFO.DaysOfMonth"/> member of the <see cref="AT_INFO"/> structure to zero.</item>
+        /// <item>Set the <see cref="AT_INFO.DaysOfWeek"/> member of the <see cref="AT_INFO"/> structure to zero.</item>
+        /// <item>Set the <see cref="AT_INFO.JobTime"/> member of the <see cref="AT_INFO"/> structure to the time the job should execute.</item>
+        /// </list>
+        /// The job executes at the time specified by the <see cref="AT_INFO.JobTime"/> member of the <see cref="AT_INFO"/> structure pointed to by the <paramref name="Buffer"/> parameter. After the job executes, it is deleted.
+        /// </para>
+        /// <para>
+        /// To schedule and delete a job that executes multiple times:
+        /// <list type="bullet">
+        /// <item>Set the appropriate bits in the <see cref="AT_INFO.DaysOfMonth"/> member of the <see cref="AT_INFO"/> structure or</item>
+        /// <item>Set the appropriate bits in the <see cref="AT_INFO.DaysOfWeek"/> member of the <see cref="AT_INFO"/> structure.</item>
+        /// <item>Set the <see cref="AT_INFO.JobTime"/> member of the <see cref="AT_INFO"/> structure to the time the job should execute.</item>
+        /// </list>
+        /// <note>You do not need to set both the <see cref="AT_INFO.DaysOfMonth"/> and the <see cref="AT_INFO.DaysOfWeek"/> members of the <see cref="AT_INFO"/> structure.</note>
+        /// </para>
+        /// <para>The job executes at the time specified by the <see cref="AT_INFO.JobTime"/> member of the <see cref="AT_INFO"/> structure pointed to by the <paramref name="Buffer"/> parameter, once for each day set in the <see cref="AT_INFO.DaysOfMonth"/> or <see cref="AT_INFO.DaysOfWeek"/> members of the <see cref="AT_INFO"/> structure. After each job executes, the corresponding bit is cleared. When the last bit is cleared, the job is deleted.</para>
+        /// <para>
+        /// To schedule a job that executes periodically:
+        /// <list type="bullet">
+        /// <item>Set the appropriate bits in the <see cref="AT_INFO.DaysOfMonth"/> member of the <see cref="AT_INFO"/> structure or</item>
+        /// <item>Set the appropriate bits in the <see cref="AT_INFO.DaysOfWeek"/> member of the <see cref="AT_INFO"/> structure. </item>
+        /// <item>Set the <see cref="AT_INFO.JobTime"/> member of the <see cref="AT_INFO"/> structure to the time the job should execute.</item>
+        /// <item>Set the job submission flag <see cref="JOB_RUN_PERIODICALLY"/> in the <see cref="AT_INFO.Flags"/> member of the <see cref="AT_INFO"/> structure.</item>
+        /// </list>
+        /// <note>You do not need to set both the <see cref="AT_INFO.DaysOfMonth"/> and the <see cref="AT_INFO.DaysOfWeek"/> members of the <see cref="AT_INFO"/> structure.</note>
+        /// </para>
+        /// <para>The job will execute periodically, at the time specified by the <see cref="AT_INFO.JobTime"/> member of the <see cref="AT_INFO"/> structure pointed to by the <paramref name="Buffer"/> parameter, on each day set in the <see cref="AT_INFO.DaysOfMonth"/> or <see cref="AT_INFO.DaysOfWeek"/> member of the <see cref="AT_INFO"/> structure. The job will not be deleted as a result of the repeated executions. The only way to delete the job is by an explicit call to the <see cref="NetScheduleJobDel"/> function.</para>
+        /// <para>See the <see cref="AT_INFO"/> structure for a description of the <see cref="AT_INFO.DaysOfWeek"/>, <see cref="AT_INFO.DaysOfMonth"/>, and job property bitmasks.</para>
+        /// <para>On Windows 2000, the earlier AT service and the Task Scheduler were combined. The Task Scheduler service was only accurate to the minute. Therefore, the <see cref="NetScheduleJobAdd"/> function only uses hours and minutes specified in the <see cref="AT_INFO.JobTime"/> member of the <see cref="AT_INFO"/> structure when a job is scheduled to run. </para>
+        /// <para>Starting with Windows Vista, the precision for the Task Scheduler was increased to the second. Therefore, the <see cref="NetScheduleJobAdd"/> function uses only the hours, minutes, and seconds specified in the <see cref="AT_INFO.JobTime"/> member of the <see cref="AT_INFO"/> structure when a job is scheduled to run. </para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para><strong>End of client support</strong>: Windows 7</para>
+        /// <para><strong>End of server support</strong>: Windows Server 2008</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370614.aspx">NetScheduleJobAdd function</a></para>
+        /// </remarks>
+        /// <seealso cref="AT_INFO"/>
+        /// <seealso cref="NetScheduleJobDel"/>
+        /// <seealso cref="NetScheduleJobEnum"/>
+        /// <seealso cref="NetScheduleJobGetInfo"/>
+        [Obsolete("NetScheduleJobAdd is no longer available for use as of Windows 8. Instead, use the Task Scheduler 2.0 Interfaces.")]
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetScheduleJobAdd(
+            [In, Optional, MarshalAs(UnmanagedType.LPWStr)] string Servername,
+            [In, MarshalAs(UnmanagedType.LPStruct)] AT_INFO Buffer,
+            out int JobId
+            );
+        #endregion
+        #region NetScheduleJobDel function
+        /// <summary>
+        /// The <see cref="NetScheduleJobDel"/> function deletes a range of jobs queued to run at a computer. This function requires that the schedule service be started at the computer to which the job deletion request is being sent. 
+        /// </summary>
+        /// <param name="Servername">A string that specifies the DNS or NetBIOS name of the remote server on which the function is to execute. If this parameter is <c>null</c>, the local computer is used. </param>
+        /// <param name="MinJobId">The minimum job identifier. Jobs with a job identifier smaller than <paramref name="MinJobId"/> will not be deleted.</param>
+        /// <param name="MaxJobId">The maximum job identifier. Jobs with a job identifier larger than <paramref name="MaxJobId"/> will not be deleted.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>If the function fails, the return value is a system error code. For a list of error codes, see System Error Codes.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>Normally only members of the local Administrators group on the computer where the schedule job is being deleted can successfully execute this function. If the server name passed in the string pointed to by the <paramref name="Servername"/> parameter is a remote server, then only members of the local Administrators group on the server can successfully execute this function. </para>
+        /// <para>
+        /// If the following registry value has the least significant bit set (for example, <c>0x00000001</c>), then users belonging to the Server Operators group can also successfully execute this function. 
+        /// <code>HKLM\System\CurrentControlSet\Control\Lsa\SubmitControl</code>
+        /// </para>
+        /// <para>Call the <see cref="NetScheduleJobEnum"/> function to retrieve the job identifier for one or more scheduled jobs.</para>
+        /// <para>The <see cref="NetScheduleJobDel"/> function deletes all jobs whose job identifiers are in the range <paramref name="MinJobId"/> through <paramref name="MaxJobId"/>.</para>
+        /// <para>To delete all scheduled jobs at the server, you can call <see cref="NetScheduleJobDel"/> specifying <paramref name="MinJobId"/> equal to <c>0</c> (zero) and <paramref name="MaxJobId"/> equal to <c>-1</c>. To delete one job, specify the job's identifier for both the <paramref name="MinJobId"/> parameter and the <paramref name="MaxJobId"/> parameter.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para><strong>End of client support</strong>: Windows 7</para>
+        /// <para><strong>End of server support</strong>: Windows Server 2008</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370615.aspx">NetScheduleJobDel function</a></para>
+        /// </remarks>
+        /// <seealso cref="NetScheduleJobAdd"/>
+        /// <seealso cref="NetScheduleJobEnum"/>
+        /// <seealso cref="NetScheduleJobGetInfo"/>
+        [Obsolete("NetScheduleJobAdd is no longer available for use as of Windows 8. Instead, use the Task Scheduler 2.0 Interfaces.")]
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetScheduleJobDel(
+            [In, Optional, MarshalAs(UnmanagedType.LPWStr)] string Servername,
+            [In] int MinJobId,
+            [In] int MaxJobId
+            );
+        #endregion
+        #region NetScheduleJobEnum function
+        /// <summary>
+        /// The <see cref="NetScheduleJobEnum"/> function lists the jobs queued on a specified computer. This function requires that the schedule service be started. 
+        /// </summary>
+        /// <param name="Servername">A string that specifies the DNS or NetBIOS name of the remote server on which the function is to execute. If this parameter is <c>null</c>, the local computer is used.</param>
+        /// <param name="PointerToBuffer">A variable that receives the data. The return information is an array of <see cref="AT_ENUM"/> structures. The buffer is allocated by the system and the returned handle should be wrapped in a <c>using</c> block, or the application should otherwise make sure that the <see cref="SafeHandle.Dispose()"/> method is called on the returned handle when it is no longer needed. Note that you must free the buffer even if the function fails with <see cref="ERROR_MORE_DATA"/>.</param>
+        /// <param name="PreferredMaximumLength">A value that indicates the preferred maximum length of the returned data, in bytes. If you specify <see cref="MAX_PREFERRED_LENGTH"/>, the function allocates the amount of memory required for the data. If you specify another value in this parameter, it can restrict the number of bytes that the function returns. If the buffer size is insufficient to hold all entries, the function returns <see cref="ERROR_MORE_DATA"/>.</param>
+        /// <param name="EntriesRead">A variable that receives the count of elements actually enumerated.</param>
+        /// <param name="TotalEntries">A variable that receives the total number of entries that could have been enumerated from the current resume position. Note that applications should consider this value only as a hint.</param>
+        /// <param name="ResumeHandle">A reference to a pointer contains a resume handle which is used to continue a job enumeration. The handle should be zero on the first call and left unchanged for subsequent calls. If this parameter is omitted, then no resume handle is stored.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>If the function fails, the return value is a system error code. For a list of error codes, see System Error Codes.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>Normally only members of the local Administrators group on the computer where the schedule job is being enumerated can successfully execute this function. If the server name passed in the string pointed to by the <paramref name="Servername"/> parameter is a remote server, then only members of the local Administrators group on the server can successfully execute this function. </para>
+        /// <para>
+        /// If the following registry value has the least significant bit set (for example, <c>0x00000001</c>), then users belonging to the Server Operators group can also successfully execute this function. 
+        /// <code>HKLM\System\CurrentControlSet\Control\Lsa\SubmitControl</code>
+        /// </para>
+        /// <para>Each entry returned contains an <see cref="AT_ENUM"/> structure. The value of the <see cref="AT_ENUM.JobId"/> member can be used when calling functions that require a job identifier parameter, such as the <see cref="NetScheduleJobDel"/> function.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para><strong>End of client support</strong>: Windows 7</para>
+        /// <para><strong>End of server support</strong>: Windows Server 2008</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370616.aspx">NetScheduleJobEnum function</a></para>
+        /// </remarks>
+        /// <seealso cref="AT_ENUM"/>
+        /// <seealso cref="NetScheduleJobAdd"/>
+        /// <seealso cref="NetScheduleJobDel"/>
+        /// <seealso cref="NetScheduleJobGetInfo"/>
+        [Obsolete("NetScheduleJobAdd is no longer available for use as of Windows 8. Instead, use the Task Scheduler 2.0 Interfaces.")]
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetScheduleJobEnum(
+            [In, Optional, MarshalAs(UnmanagedType.LPWStr)] string Servername,
+            out AtEnumArrayNetApiNetApiBufferHandle PointerToBuffer,
+            [In] int PreferredMaximumLength,
+            out int EntriesRead,
+            out int TotalEntries,
+            [Optional] ref IntPtr ResumeHandle
+            );
+        #endregion
+        #region NetScheduleJobGetInfo function
+        /// <summary>
+        /// The <see cref="NetScheduleJobGetInfo"/> function retrieves information about a particular job queued on a specified computer. This function requires that the schedule service be started. 
+        /// </summary>
+        /// <param name="Servername">A string that specifies the DNS or NetBIOS name of the remote server on which the function is to execute. If this parameter is <c>null</c>, the local computer is used.</param>
+        /// <param name="JobId">A value that indicates the identifier of the job for which to retrieve information.</param>
+        /// <param name="PointerToBuffer">A variable that receives the data. The return information is a <see cref="AT_INFO"/> structure. The buffer is allocated by the system and the returned handle should be wrapped in a <c>using</c> block, or the application should otherwise make sure that the <see cref="SafeHandle.Dispose()"/> method is called on the returned handle when it is no longer needed. Note that you must free the buffer even if the function fails with <see cref="ERROR_MORE_DATA"/>.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>If the function fails, the return value is a system error code. For a list of error codes, see System Error Codes.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>Normally only members of the local Administrators group on the computer where the schedule job is being enumerated can successfully execute this function. If the server name passed in the string pointed to by the <paramref name="Servername"/> parameter is a remote server, then only members of the local Administrators group on the server can successfully execute this function. </para>
+        /// <para>
+        /// If the following registry value has the least significant bit set (for example, <c>0x00000001</c>), then users belonging to the Server Operators group can also successfully execute this function. 
+        /// <code>HKLM\System\CurrentControlSet\Control\Lsa\SubmitControl</code>
+        /// </para>
+        /// <para>Each entry returned contains an <see cref="AT_ENUM"/> structure. The value of the <see cref="AT_ENUM.JobId"/> member can be used when calling functions that require a job identifier parameter, such as the <see cref="NetScheduleJobDel"/> function.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para><strong>End of client support</strong>: Windows 7</para>
+        /// <para><strong>End of server support</strong>: Windows Server 2008</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370617.aspx">NetScheduleJobGetInfo function</a></para>
+        /// </remarks>
+        /// <seealso cref="AT_INFO"/>
+        /// <seealso cref="NetScheduleJobAdd"/>
+        /// <seealso cref="NetScheduleJobDel"/>
+        /// <seealso cref="NetScheduleJobEnum"/>
+        [Obsolete("NetScheduleJobGetInfo is no longer available for use as of Windows 8. Instead, use the Task Scheduler 2.0 Interfaces.")]
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetScheduleJobGetInfo(
+            [In, Optional, MarshalAs(UnmanagedType.LPWStr)] string Servername,
+            [In] int JobId,
+            out AtIntoNetApiNetApiBufferHandle PointerToBuffer
             );
         #endregion
     }

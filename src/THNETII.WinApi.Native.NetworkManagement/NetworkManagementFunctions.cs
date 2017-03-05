@@ -2372,6 +2372,98 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
             out NetDisplayArrayNetApiBufferHandle SortedBuffer
             );
         #endregion
+        #region NetRemoveAlternateComputerName function
+        /// <summary>
+        /// The <see cref="NetRemoveAlternateComputerName"/> function removes an alternate name for the specified computer.
+        /// </summary>
+        /// <param name="Server">A string that specifies the name of the computer on which to execute this function. If this parameter is <c>null</c>, the local computer is used.</param>
+        /// <param name="AlternateName">A string that specifies the alternate name to remove. This name must be in the form of a fully qualified DNS name.</param>
+        /// <param name="DomainAccount">
+        /// <para>A string that specifies the domain account to use for accessing the machine account object for the computer specified in the <paramref name="Server"/> parameter in Active Directory. If this parameter is <c>null</c>, then the credentials of the user executing this routine are used. </para>
+        /// <para>This parameter is not used if the server to execute this function is not joined to a domain. </para>
+        /// </param>
+        /// <param name="DomainAccountPassword">
+        /// <para>A string that specifies the password matching the domain account passed in the <paramref name="DomainAccount"/> parameter. If this parameter is <c>null</c>, then the credentials of the user executing this routine are used. </para>
+        /// <para>This parameter is ignored if the <paramref name="DomainAccount"/> parameter is <c>null</c>. This parameter is not used if the server to execute this function is not joined to a domain. </para>
+        /// </param>
+        /// <param name="Reserved">Reserved for future use. This parameter should be <c>0</c> (zero).</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes or one of the system error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_ACCESS_DENIED"/></term><description>Access is denied. This error is returned if the caller does not have sufficient privileges to complete the operation. </description>
+        /// <term><see cref="ERROR_INVALID_NAME"/></term><description>A name parameter is incorrect. This error is returned if the <paramref name="AlternateName"/> parameter does not contain valid name.</description>
+        /// <term><see cref="ERROR_INVALID_PARAMETER"/></term><description>A parameter is incorrect. This error is returned if the <paramref name="DomainAccount"/> parameter does not contain a valid domain. This error is also returned if the <paramref name="DomainAccount"/> parameter is not <c>null</c> and the <paramref name="DomainAccountPassword"/> parameter is not <c>null</c> but does not contain a Unicode string.</description>
+        /// <term><see cref="ERROR_NOT_ENOUGH_MEMORY"/></term><description>Not enough memory is available to process this command.</description>
+        /// <term><see cref="ERROR_NOT_SUPPORTED"/></term><description>The request is not supported. This error is returned if the target computer specified in the <paramref name="Server"/> parameter on which this function executes is running on Windows 2000 and earlier. </description>
+        /// <term><see cref="NERR_WkstaNotStarted"/></term><description>The Workstation service has not been started.</description>
+        /// <term><see cref="RPC_S_CALL_IN_PROGRESS"/></term><description>A remote procedure call is already in progress for this thread.</description>
+        /// <term><see cref="RPC_S_PROTSEQ_NOT_SUPPORTED"/></term><description>The remote procedure call protocol sequence is not supported.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>The <see cref="NetRemoveAlternateComputerName"/> function is supported on Windows XP and later. </para>
+        /// <para>The <see cref="NetRemoveAlternateComputerName"/> function is used to remove secondary computer names configured for the target computer.</para>
+        /// <para>The <see cref="NetRemoveAlternateComputerName"/> function requires that the caller is a member of the Administrators local group on the target computer.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows XP [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows Server 2003 [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/dd877215.aspx">NetRemoveAlternateComputerName function</a></para>
+        /// </remarks>
+        /// <seealso cref="NetAddAlternateComputerName"/>
+        /// <seealso cref="NetEnumerateComputerNames"/>
+        /// <seealso cref="NetJoinDomain"/>
+        /// <seealso cref="NetRenameMachineInDomain"/>
+        /// <seealso cref="NetSetPrimaryComputerName"/>
+        /// <seealso cref="NetUnjoinDomain"/>
+        /// <seealso cref="SetComputerNameEx"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetRemoveAlternateComputerName(
+            [In, Optional, MarshalAs(UnmanagedType.LPWStr)] string Server,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string AlternateName,
+            [In, Optional, MarshalAs(UnmanagedType.LPWStr)] string DomainAccount,
+            [In, Optional, MarshalAs(UnmanagedType.LPWStr)] string DomainAccountPassword,
+            [In] int Reserved
+            );
+        #endregion
+        #region NetRemoteComputerSupports function
+        /// <summary>
+        /// The <see cref="NetRemoteComputerSupports"/> function queries the redirector to retrieve the optional features the remote system supports. Features include Unicode, Remote Procedure Call (RPC), and Remote Administration Protocol support. The function establishes a network connection if one does not exist.
+        /// </summary>
+        /// <param name="UncServerName">A string that specifies the name of the remote server to query. If this parameter is <c>null</c>, the local computer is used. </param>
+        /// <param name="OptionsWanted">Specifies a value that contains a set of bit flags indicating the features of interest.</param>
+        /// <param name="OptionsSupported">
+        /// <para>A variable that receives a set of bit flags. The flags indicate which features specified by the OptionsWanted parameter are implemented on the computer specified by the UncServerName parameter. (All other bits are set to zero.) </para>
+        /// <para>The value of this parameter is valid only when the <see cref="NetRemoteComputerSupports"/> function returns <see cref="NERR_Success"/>.</para>
+        /// </param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes or one of the system error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_NOT_ENOUGH_MEMORY"/></term><description>Not enough memory is available to process this command.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// No special group membership is required to successfully execute the <see cref="NetRemoteComputerSupports"/> function.
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370611.aspx">NetRemoteComputerSupports function</a></para>
+        /// </remarks>
+        /// <seealso cref="NetServerGetInfo"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetRemoteComputerSupports(
+            [In, Optional, MarshalAs(UnmanagedType.LPWStr)] string UncServerName,
+            [In, MarshalAs(UnmanagedType.I4)] SUPPORTS_OPTIONS OptionsWanted,
+            out SUPPORTS_OPTIONS OptionsSupported
+            );
+        #endregion
     }
 }
 

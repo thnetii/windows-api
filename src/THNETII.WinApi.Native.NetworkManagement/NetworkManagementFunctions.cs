@@ -842,7 +842,7 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
         /// </returns>
         /// <remarks>
         /// <para>If you are programming for Active Directory, you may be able to call certain Active Directory Service Interface (ADSI) methods to achieve the same functionality you can achieve by calling the network management group functions. For more information, see <see cref="IADsGroup"/>.</para>
-        /// <para>If you call this function on a domain controller that is running Active Directory, access is allowed or denied based on the access control list (ACL) for the <a href="https://msdn.microsoft.com/en-us/library/aa379557(v=vs.85).aspx">securable object</a>. The default ACL permits only Domain Admins and Account Operators to call this function. On a member server or workstation, only Administrators and Power Users can call this function. For more information, see <a href="https://msdn.microsoft.com/en-us/library/aa370891(v=vs.85).aspx">Security Requirements for the Network Management Functions</a>. For more information on ACLs, ACEs, and access tokens, see <a href="https://msdn.microsoft.com/en-us/library/aa374876(v=vs.85).aspx">Access Control Model</a>.</para>
+        /// <para>If you call this function on a domain controller that is running Active Directory, access is allowed or denied based on the access control list (ACL) for the <a href="https://msdn.microsoft.com/en-us/library/aa379557aspx">securable object</a>. The default ACL permits only Domain Admins and Account Operators to call this function. On a member server or workstation, only Administrators and Power Users can call this function. For more information, see <a href="https://msdn.microsoft.com/en-us/library/aa370891aspx">Security Requirements for the Network Management Functions</a>. For more information on ACLs, ACEs, and access tokens, see <a href="https://msdn.microsoft.com/en-us/library/aa374876aspx">Access Control Model</a>.</para>
         /// <para>The security descriptor of the user container is used to perform the access check for this function. The caller must be able to create child objects of the group class. Typically, callers must also have write access to the entire object for calls to this function to succeed.</para>
         /// <para>User account names are limited to 20 characters and group names are limited to 256 characters. In addition, account names cannot be terminated by a period and they cannot include commas or any of the following printable characters: &quot;, /, \, [, ], :, |, &lt;, &gt;, +, =, ;, ?, *. Names also cannot include characters in the range 1-31, which are nonprintable.</para>
         /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
@@ -886,7 +886,7 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
         /// </para>
         /// </returns>
         /// <remarks>
-        /// <para>If you call this function on a domain controller that is running Active Directory, access is allowed or denied based on the access control list (ACL) for the <a href="https://msdn.microsoft.com/en-us/library/aa379557(v=vs.85).aspx">securable object</a>. The default ACL permits only Domain Admins and Account Operators to call this function. On a member server or workstation, only Administrators and Power Users can call this function. For more information, see <a href="https://msdn.microsoft.com/en-us/library/aa370891(v=vs.85).aspx">Security Requirements for the Network Management Functions</a>. For more information on ACLs, ACEs, and access tokens, see <a href="https://msdn.microsoft.com/en-us/library/aa374876(v=vs.85).aspx">Access Control Model</a>.</para>
+        /// <para>If you call this function on a domain controller that is running Active Directory, access is allowed or denied based on the access control list (ACL) for the <a href="https://msdn.microsoft.com/en-us/library/aa379557aspx">securable object</a>. The default ACL permits only Domain Admins and Account Operators to call this function. On a member server or workstation, only Administrators and Power Users can call this function. For more information, see <a href="https://msdn.microsoft.com/en-us/library/aa370891aspx">Security Requirements for the Network Management Functions</a>. For more information on ACLs, ACEs, and access tokens, see <a href="https://msdn.microsoft.com/en-us/library/aa374876aspx">Access Control Model</a>.</para>
         /// <para>The security descriptor of the Group object is used to perform the access check for this function.</para>
         /// <para>User account names are limited to 20 characters and group names are limited to 256 characters. In addition, account names cannot be terminated by a period and they cannot include commas or any of the following printable characters: &quot;, /, \, [, ], :, |, &lt;, &gt;, +, =, ;, ?, *. Names also cannot include characters in the range 1-31, which are nonprintable.</para>
         /// <para>If you are programming for Active Directory, you may be able to call certain Active Directory Service Interface (ADSI) methods to achieve the same functionality you can achieve by calling the network management group functions. For more information, see <see cref="IADsGroup"/>.</para>
@@ -926,7 +926,7 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
         /// </para>
         /// </returns>
         /// <remarks>
-        /// <para>If you call this function on a domain controller that is running Active Directory, access is allowed or denied based on the access control list (ACL) for the <a href="https://msdn.microsoft.com/en-us/library/aa379557(v=vs.85).aspx">securable object</a>. The default ACL permits only Domain Admins and Account Operators to call this function. On a member server or workstation, only Administrators and Power Users can call this function. For more information, see <a href="https://msdn.microsoft.com/en-us/library/aa370891(v=vs.85).aspx">Security Requirements for the Network Management Functions</a>. For more information on ACLs, ACEs, and access tokens, see <a href="https://msdn.microsoft.com/en-us/library/aa374876(v=vs.85).aspx">Access Control Model</a>.</para>
+        /// <para>If you call this function on a domain controller that is running Active Directory, access is allowed or denied based on the access control list (ACL) for the <a href="https://msdn.microsoft.com/en-us/library/aa379557aspx">securable object</a>. The default ACL permits only Domain Admins and Account Operators to call this function. On a member server or workstation, only Administrators and Power Users can call this function. For more information, see <a href="https://msdn.microsoft.com/en-us/library/aa370891aspx">Security Requirements for the Network Management Functions</a>. For more information on ACLs, ACEs, and access tokens, see <a href="https://msdn.microsoft.com/en-us/library/aa374876aspx">Access Control Model</a>.</para>
         /// <para>The security descriptor of the Group object is used to perform the access check for this function.</para>
         /// <para>User account names are limited to 20 characters and group names are limited to 256 characters. In addition, account names cannot be terminated by a period and they cannot include commas or any of the following printable characters: &quot;, /, \, [, ], :, |, &lt;, &gt;, +, =, ;, ?, *. Names also cannot include characters in the range 1-31, which are nonprintable.</para>
         /// <para>If you are programming for Active Directory, you may be able to call certain Active Directory Service Interface (ADSI) methods to achieve the same functionality you can achieve by calling the network management group functions. For more information, see <see cref="IADsGroup"/>.</para>
@@ -968,7 +968,7 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
         /// </para>
         /// </returns>
         /// <remarks>
-        /// <para>If you call this function on a domain controller that is running Active Directory, access is allowed or denied based on the access control list (ACL) for the <a href="https://msdn.microsoft.com/en-us/library/aa379557(v=vs.85).aspx">securable object</a>. The default ACL permits only Domain Admins and Account Operators to call this function. On a member server or workstation, only Administrators and Power Users can call this function. For more information, see <a href="https://msdn.microsoft.com/en-us/library/aa370891(v=vs.85).aspx">Security Requirements for the Network Management Functions</a>. For more information on ACLs, ACEs, and access tokens, see <a href="https://msdn.microsoft.com/en-us/library/aa374876(v=vs.85).aspx">Access Control Model</a>.</para>
+        /// <para>If you call this function on a domain controller that is running Active Directory, access is allowed or denied based on the access control list (ACL) for the <a href="https://msdn.microsoft.com/en-us/library/aa379557aspx">securable object</a>. The default ACL permits only Domain Admins and Account Operators to call this function. On a member server or workstation, only Administrators and Power Users can call this function. For more information, see <a href="https://msdn.microsoft.com/en-us/library/aa370891aspx">Security Requirements for the Network Management Functions</a>. For more information on ACLs, ACEs, and access tokens, see <a href="https://msdn.microsoft.com/en-us/library/aa374876aspx">Access Control Model</a>.</para>
         /// <para>The security descriptor of the Group object is used to perform the access check for this function.</para>
         /// <para>User account names are limited to 20 characters and group names are limited to 256 characters. In addition, account names cannot be terminated by a period and they cannot include commas or any of the following printable characters: &quot;, /, \, [, ], :, |, &lt;, &gt;, +, =, ;, ?, *. Names also cannot include characters in the range 1-31, which are nonprintable.</para>
         /// <para>If you are programming for Active Directory, you may be able to call certain Active Directory Service Interface (ADSI) methods to achieve the same functionality you can achieve by calling the network management group functions. For more information, see <see cref="IADsGroup"/>.</para>
@@ -985,6 +985,70 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
             [In, MarshalAs(UnmanagedType.LPWStr)] string servername,
             [In, MarshalAs(UnmanagedType.LPWStr)] string GroupName,
             [In, MarshalAs(UnmanagedType.LPWStr)] string Username
+            );
+        #endregion
+        #region NetGroupEnum function
+        /// <summary>
+        /// <para>The <see cref="NetGroupEnum"/> function retrieves information about each global group in the security database, which is the security accounts manager (SAM) database or, in the case of domain controllers, the Active Directory.</para>
+        /// <para>The <see cref="NetQueryDisplayInformation"/> function provides an efficient mechanism for enumerating global groups. When possible, it is recommended that you use <see cref="NetQueryDisplayInformation"/> instead of the <see cref="NetGroupEnum"/> function.</para>
+        /// </summary>
+        /// <param name="servername">A string that specifies the DNS or NetBIOS name of the remote server on which the function is to execute. If this parameter is <c>null</c>, the local computer is used. </param>
+        /// <param name="level">
+        /// Specifies the information level of the data. This parameter can be one of the following values. 
+        /// <list type="table">
+        /// <listheader><term>Value</term> <description>Meaning</description></listheader>
+        /// <term><c>0</c> (zero)</term> <description>Return the global group name. The <paramref name="bufptr"/> parameter receives an array of <see cref="GROUP_INFO_0"/> structures.</description>
+        /// <term><c>1</c></term> <description>Return the global group name and a comment. The <paramref name="bufptr"/> parameter receives an array of <see cref="GROUP_INFO_1"/> structures.</description>
+        /// <term><c>2</c></term> <description>Return detailed information about the global group. The <paramref name="bufptr"/> parameter receives an array of <see cref="GROUP_INFO_2"/> structures. Note that on Windows XP and later, it is recommended that you use <see cref="GROUP_INFO_3"/> instead.</description>
+        /// <term><c>3</c></term> <description>Return detailed information about the global group. The <paramref name="bufptr"/> parameter receives an array of <see cref="GROUP_INFO_3"/> structures.</description>
+        /// </list>
+        /// </param>
+        /// <param name="bufptr">
+        /// <para>A variable that receives a buffer containing the global group information structure. The format of this data depends on the value of the <paramref name="level"/> parameter. </para>
+        /// <para>The system allocates the memory for this buffer. The handle should be wrapped in a <c>using</c> block, or the application should otherwise make sure that the <see cref="SafeHandle.Dispose()"/> method is called on the returned handle when it is no longer needed. Note that you must free the buffer even if the function fails with <see cref="ERROR_MORE_DATA"/>.</para>
+        /// </param>
+        /// <param name="prefmaxlen">Specifies the preferred maximum length of the returned data, in bytes. If you specify <see cref="MAX_PREFERRED_LENGTH"/>, the function allocates the amount of memory required to hold the data. If you specify another value in this parameter, it can restrict the number of bytes that the function returns. If the buffer size is insufficient to hold all entries, the function returns <see cref="ERROR_MORE_DATA"/>.</param>
+        /// <param name="entriesread">A variable that receives the count of elements actually enumerated.</param>
+        /// <param name="totalentries">A variable that receives the total number of entries that could have been enumerated from the current resume position. The total number of entries is only a hint. For more information about determining the exact number of entries, see the Remarks section.</param>
+        /// <param name="resume_handle">Reference to a pointer variable that contains a resume handle that is used to continue the global group enumeration. The handle should be zero on the first call and left unchanged for subsequent calls. If this parameter is omitted, no resume handle is stored.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_ACCESS_DENIED"/></term><description>The user does not have access to the requested information.</description>
+        /// <term><see cref="NERR_InvalidComputer"/></term><description>The computer name is invalid.</description>
+        /// <term><see cref="ERROR_MORE_DATA"/></term><description>More entries are available. Specify a large enough buffer to receive all entries.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>If you are programming for Active Directory, you may be able to call certain Active Directory Service Interface (ADSI) methods to achieve the same functionality you can achieve by calling the network management group functions. For more information, see <see cref="IADsGroup"/>.</para>
+        /// <para>If you call this function on a domain controller that is running Active Directory, access is allowed or denied based on the access control list (ACL) for the <a href="https://msdn.microsoft.com/en-us/library/aa379557aspx">securable object</a>. The default ACL permits only Domain Admins and Account Operators to call this function. On a member server or workstation, only Administrators and Power Users can call this function. For more information, see <a href="https://msdn.microsoft.com/en-us/library/aa370891aspx">Security Requirements for the Network Management Functions</a>. For more information on ACLs, ACEs, and access tokens, see <a href="https://msdn.microsoft.com/en-us/library/aa374876aspx">Access Control Model</a>.</para>
+        /// <para>The function only returns information to which the caller has Read access. The caller must have List Contents access to the Domain object, and Enumerate Entire SAM Domain access on the SAM Server object located in the System container. </para>
+        /// <para>To determine the exact total number of groups, you must enumerate the entire tree, which can be a costly operation. To enumerate the entire tree, use the <paramref name="resume_handle"/> parameter to continue the enumeration for consecutive calls, and use the <paramref name="entriesread"/> parameter to accumulate the total number of groups. If your application is communicating with a domain controller, you should consider using the <a href="https://msdn.microsoft.com/en-us/library/aa772203.aspx">ADSI LDAP Provider</a> to retrieve this type of data more efficiently. The ADSI LDAP Provider implements a set of ADSI objects that support various ADSI interfaces. For more information, see <a href="https://msdn.microsoft.com/en-us/library/aa772235.aspx">ADSI Service Providers</a>.</para>
+        /// <para>User account names are limited to 20 characters and group names are limited to 256 characters. In addition, account names cannot be terminated by a period and they cannot include commas or any of the following printable characters: &quot;, /, \, [, ], :, |, &lt;, &gt;, +, =, ;, ?, *. Names also cannot include characters in the range 1-31, which are nonprintable.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370428.aspx">NetGroupEnum function</a></para>
+        /// </remarks>
+        /// <seealso cref="GROUP_INFO_0"/>
+        /// <seealso cref="GROUP_INFO_1"/>
+        /// <seealso cref="GROUP_INFO_3"/>
+        /// <seealso cref="NetQueryDisplayInformation"/>
+        /// <seealso cref="NetGroupGetInfo"/>
+        /// <seealso cref="NetGroupGetUsers"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetGroupEnum(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string servername,
+            [In] int level,
+            out GroupInfoArrayNetApiBufferHandle bufptr,
+            [In] int prefmaxlen,
+            out int entriesread,
+            out int totalentries,
+            [Optional] ref IntPtr resume_handle
             );
         #endregion
     }

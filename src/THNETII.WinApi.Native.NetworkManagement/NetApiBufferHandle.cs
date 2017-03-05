@@ -59,7 +59,6 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
         /// <exception cref="Win32Exception">An error occurred during the native call to the system.</exception>
         public NetApiBufferHandle(int ByteCount) : this()
         {
-            IsInvalid = true;
             var netApiStatus = NetApiBufferAllocate(ByteCount, out handle);
             if (netApiStatus != NERR_Success)
             {

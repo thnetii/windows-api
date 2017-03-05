@@ -6,6 +6,7 @@ using THNETII.InteropServices.SafeHandles;
 
 using static Microsoft.Win32.WinApi.Networking.NetworkManagement.GROUP_INFO_PARMNUM;
 using static Microsoft.Win32.WinApi.Networking.NetworkManagement.LanManConstants;
+using static Microsoft.Win32.WinApi.Networking.NetworkManagement.NETSETUP_OPTIONS;
 using static Microsoft.Win32.WinApi.Networking.NetworkManagement.NETSETUP_PROVISION_FLAGS;
 using static Microsoft.Win32.WinApi.WinError.HRESULT;
 using static Microsoft.Win32.WinApi.WinError.Win32ErrorCode;
@@ -1309,6 +1310,72 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
             [In] int level,
             [In, MarshalAs(UnmanagedType.LPArray)] object[] buf,
             [In] int totalentries
+            );
+        #endregion
+        #region NetJoinDomain function
+        /// <summary>
+        /// The <see cref="NetJoinDomain"/> function joins a computer to a workgroup or domain.
+        /// </summary>
+        /// <param name="lpServer">A string that specifies the DNS or NetBIOS name of the computer on which to execute the domain join operation. If this parameter is <c>null</c>, the local computer is used.</param>
+        /// <param name="lpDomain">
+        /// <para>A string that specifies the name of the domain or workgroup to join. </para>
+        /// <para>Optionally, you can specify the preferred domain controller to perform the join operation. In this instance, the string must be of the form <var>DomainName\MachineName</var>, where <var>DomainName</var> is the name of the domain to join, and <var>MachineName</var> is the name of the domain controller to perform the join.</para>
+        /// </param>
+        /// <param name="lpAccountOU">Optionally specifies a string that contains the RFC 1779 format name of the organizational unit (OU) for the computer account. If you specify this parameter, the string must contain a full path, for example, <c>OU=testOU,DC=domain,DC=Domain,DC=com</c>. Otherwise, this parameter must be <c>null</c>.</param>
+        /// <param name="lpAccount">A string that specifies the account name to use when connecting to the domain controller. The string must specify either a domain NetBIOS name and user account (for example, <c>REDMOND\user</c>) or the user principal name (UPN) of the user in the form of an Internet-style login name (for example, <c>"someone@example.com"</c>). If this parameter is <c>null</c>, the caller's context is used.</param>
+        /// <param name="lpPassword">
+        /// <para>If the <paramref name="lpAccount"/> parameter specifies an account name, this parameter must be the password to use when connecting to the domain controller. Otherwise, this parameter must be <c>null</c>. </para>
+        /// <para>You can specify a local machine account password rather than a user password for unsecured joins. For more information, see the description of the <see cref="NETSETUP_MACHINE_PWD_PASSED"/> flag.</para>
+        /// </param>
+        /// <param name="fJoinOptions">A set of bit flags defining the join options.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_ACCESS_DENIED"/></term><description>Access is denied. This error is returned if the caller was not a member of the Administrators local group on the target computer.</description>
+        /// <term><see cref="ERROR_INVALID_PARAMETER"/></term><description>A parameter is incorrect. This error is returned if the <paramref name="lpDomain"/> parameter is <c>null</c>.</description>
+        /// <term><see cref="ERROR_NO_SUCH_DOMAIN"/></term><description>The specified domain did not exist.</description>
+        /// <term><see cref="ERROR_NOT_SUPPORTED"/></term><description>The request is not supported. This error is returned if the computer specified in the <paramref name="lpServer"/> parameter does not support some of the options passed in the <paramref name="fJoinOptions"/> parameter.</description>
+        /// <term><see cref="NERR_InvalidWorkgroupName"/></term><description>The specified workgroup name is not valid.</description>
+        /// <term><see cref="NERR_SetupAlreadyJoined"/></term><description>The computer is already joined to a domain.</description>
+        /// <term><see cref="NERR_WkstaNotStarted"/></term><description>The Workstation service has not been started.</description>
+        /// <term><see cref="RPC_S_CALL_IN_PROGRESS"/></term><description>A remote procedure call is already in progress for this thread.</description>
+        /// <term><see cref="RPC_S_PROTSEQ_NOT_SUPPORTED"/></term><description>The remote procedure call protocol sequence is not supported.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>Joining (and unjoining) a computer to a domain or workgroup can be performed only by a member of the Administrators local group on the target computer. Note that the domain administrator can set additional requirements for joining the domain using delegation and assignment of privileges.</para>
+        /// <para>If you call the <see cref="NetJoinDomain"/> function remotely, you must supply credentials because you cannot delegate credentials under these circumstances.</para>
+        /// <para>Different processes, or different threads of the same process, should not call the <see cref="NetJoinDomain"/> function at the same time. This situation can leave the computer in an inconsistent state.</para>
+        /// <para>If you encounter a problem during a join operation, you should not delete a computer account and immediately follow the deletion with another join attempt. This can lead to replication-related problems that are difficult to investigate. When you delete a computer account, wait until the change has replicated to all domain controllers before attempting another join operation.</para>
+        /// <para>A system reboot is required after calling the <see cref="NetJoinDomain"/> function for the operation to complete.</para>
+        /// <para><strong>Windows Server 2003 and Windows XP</strong>: When a call to the <see cref="NetJoinDomain"/> function precedes a call to the <see cref="NetRenameMachineInDomain"/> function, you should defer the update of the SPN and DnsHostName properties on the computer object until the rename operation. This is because the join operation can fail in certain situations. An example of such a situation is when the SPN that is derived from the current computer name is not valid in the new domain that the computer is joining, but the SPN derived from the new name that the computer will have after the rename operation is valid in the new domain. In this situation, the call to <see cref="NetJoinDomain"/> fails unless you defer the update of the two properties until the rename operation by specifying the <see cref="NETSETUP_DEFER_SPN_SET"/> flag in the <paramref name="fJoinOptions"/> parameter when you call <see cref="NetJoinDomain"/>.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370433.aspx">NetJoinDomain function</a></para>
+        /// </remarks>
+        /// <seealso cref="NetAddAlternateComputerName"/>
+        /// <seealso cref="NetCreateProvisioningPackage"/>
+        /// <seealso cref="NetEnumerateComputerNames"/>
+        /// <seealso cref="NetProvisionComputerAccount"/>
+        /// <seealso cref="NetRemoveAlternateComputerName"/>
+        /// <seealso cref="NetRenameMachineInDomain"/>
+        /// <seealso cref="NetRequestOfflineDomainJoin"/>
+        /// <seealso cref="NetRequestProvisioningPackageInstall"/>
+        /// <seealso cref="NetSetPrimaryComputerName"/>
+        /// <seealso cref="NetUnjoinDomain"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetJoinDomain(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string lpServer,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string lpDomain,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string lpAccountOU,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string lpAccount,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string lpPassword,
+            [In, MarshalAs(UnmanagedType.I4)] NETSETUP_OPTIONS fJoinOptions
             );
         #endregion
     }

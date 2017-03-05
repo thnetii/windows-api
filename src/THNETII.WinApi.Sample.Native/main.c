@@ -7,7 +7,7 @@
 void main()
 {
 	const int size = sizeof(NET_COMPUTER_NAME_TYPE);
-	const int value = GROUP_NAME_PARMNUM;
+	const int value = NETSETUP_JOIN_DOMAIN;
 
 	void* ptr = NetGetDCName;
 }

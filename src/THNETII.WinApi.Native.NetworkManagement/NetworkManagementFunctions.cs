@@ -2488,6 +2488,52 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
             out TimeOfDayInfoNetApiBufferHandle BufferPtr
             );
         #endregion
+        #region NetRenameMachineInDomain function
+        /// <summary>
+        /// The <see cref="NetRenameMachineInDomain"/> function changes the name of a computer in a domain.
+        /// </summary>
+        /// <param name="lpServer">A string that specifies the DNS or NetBIOS name of the computer on which to call the function. If this parameter is <c>null</c>, the local computer is used. </param>
+        /// <param name="lpNewMachineName">A string that specifies the new name of the computer. If specified, the local computer name is changed as well. If this parameter is <c>null</c>, the function assumes you have already called the <see cref="SetComputerNameEx"/> function.</param>
+        /// <param name="lpAccount">A string that specifies an account name to use when connecting to the domain controller. If this parameter is <c>null</c>, the caller's context is used.</param>
+        /// <param name="lpPassword">If the <paramref name="lpAccount"/> parameter specifies an account name, this parameter must specify the password to use when connecting to the domain controller. Otherwise, this parameter must be <c>null</c>.</param>
+        /// <param name="fRenameOptions">The rename options. If this parameter is <see cref="NETSETUP_ACCT_CREATE"/>, the function renames the account in the domain.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes or one of the system error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_ACCESS_DENIED"/></term><description>Access is denied. This error is returned if the account name passed in the <paramref name="lpAccount"/> parameter did not have sufficient access rights for the operation. </description>
+        /// <term><see cref="ERROR_INVALID_PARAMETER"/></term><description>A parameter is incorrect.</description>
+        /// <term><see cref="NERR_SetupNotJoined"/></term><description>The computer is not currently joined to a domain.</description>
+        /// <term><see cref="NERR_SetupDomainController"/></term><description>This computer is a domain controller and cannot be unjoined from a domain.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>Renaming a domain computer can be performed only by a user that is a member of the Administrators local group on the target computer and that also is a member of the Administrators group on the domain or has the Account Operator privilege on the domain. If you call the <see cref="NetRenameMachineInDomain"/> function remotely, you must supply credentials because you cannot delegate credentials under these circumstances.</para>
+        /// <para>Different processes, or different threads of the same process, should not call the <see cref="NetRenameMachineInDomain"/> function at the same time. This situation can leave the computer in an inconsistent state.</para>
+        /// <para>A system reboot is required after calling the <see cref="NetRenameMachineInDomain"/> function for the operation to complete.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370613.aspx">NetRenameMachineInDomain function</a></para>
+        /// </remarks>
+        /// <seealso cref="NetAddAlternateComputerName"/>
+        /// <seealso cref="NetEnumerateComputerNames"/>
+        /// <seealso cref="NetRemoveAlternateComputerName"/>
+        /// <seealso cref="NetSetPrimaryComputerName"/>
+        /// <seealso cref="SetComputerNameEx"/>
+        /// <seealso cref="NetUnjoinDomain"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetRenameMachineInDomain(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string lpServer,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string lpNewMachineName,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string lpAccount,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string lpPassword,
+            [In, MarshalAs(UnmanagedType.I4)] NETSETUP_OPTIONS fRenameOptions
+            );
+        #endregion
     }
 }
 

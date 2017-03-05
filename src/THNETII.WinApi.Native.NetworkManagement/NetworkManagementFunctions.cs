@@ -1241,5 +1241,75 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
             [Optional] out GROUP_INFO_PARMNUM parm_err
             );
         #endregion
+        #region NetGroupSetUsers function
+        /// <summary>
+        /// The <see cref="NetGroupSetUsers"/> function sets the membership for the specified global group. Each user you specify is enrolled as a member of the global group. Users you do not specify, but who are currently members of the global group, will have their membership revoked.
+        /// </summary>
+        /// <param name="servername">A string that specifies the DNS or NetBIOS name of the remote server on which the function is to execute. If this parameter is <c>null</c>, the local computer is used. </param>
+        /// <param name="groupname">A string that specifies the name of the global group of interest. For more information, see the Remarks section.</param>
+        /// <param name="level">
+        /// The information level of the data. This parameter can be one of the following values. 
+        /// <list type="table">
+        /// <listheader><term>Value</term> <description>Meaning</description></listheader>
+        /// <term><c>0</c> (zero)</term> <description>The <paramref name="buf"/> parameter is an array of <see cref="GROUP_USERS_INFO_0"/> structures that specify user names.</description>
+        /// <term><c>1</c></term> <description>The <paramref name="buf"/> parameter is an array of <see cref="GROUP_USERS_INFO_1"/> structures that specify user names and the attributes of the group.</description>
+        /// </list>
+        /// </param>
+        /// <param name="buf">An array of objects containing the data.</param>
+        /// <param name="totalentries">The number of entries in the array specified by the <paramref name="buf"/> parameter.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_ACCESS_DENIED"/></term><description>The user does not have access to the requested information.</description>
+        /// <term><see cref="ERROR_INVALID_LEVEL"/></term><description>The system call level is not correct. This error is returned if the <paramref name="level"/> parameter was specified as a value other than <c>0</c> (zero) or <c>1</c>. </description>
+        /// <term><see cref="ERROR_INVALID_PARAMETER"/></term><description>A parameter passed was not valid. This error is returned if the <paramref name="totalentries"/> parameter was not valid. </description>
+        /// <term><see cref="ERROR_NOT_ENOUGH_MEMORY"/></term><description>Insufficient memory was available to complete the operation.</description>
+        /// <term><see cref="NERR_InvalidComputer"/></term><description>The computer name is invalid.</description>
+        /// <term><see cref="NERR_NotPrimary"/></term><description>The operation is allowed only on the primary domain controller of the domain.</description>
+        /// <term><see cref="NERR_GroupNotFound"/></term><description>The global group name could not be found.</description>
+        /// <term><see cref="NERR_InternalError"/></term><description>An internal error occurred.</description>
+        /// <term><see cref="NERR_SpeGroupOp"/></term><description>The operation is not allowed on certain special groups. These groups include user groups, admin groups, local groups, and guest groups.</description>
+        /// <term><see cref="NERR_UserNotFound"/></term><description>The user name could not be found.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>If you call this function on a domain controller that is running Active Directory, access is allowed or denied based on the access control list (ACL) for the <a href="https://msdn.microsoft.com/en-us/library/aa379557aspx">securable object</a>. The default ACL permits only Domain Admins and Account Operators to call this function. On a member server or workstation, only Administrators and Power Users can call this function. For more information, see <a href="https://msdn.microsoft.com/en-us/library/aa370891aspx">Security Requirements for the Network Management Functions</a>. For more information on ACLs, ACEs, and access tokens, see <a href="https://msdn.microsoft.com/en-us/library/aa374876aspx">Access Control Model</a>.</para>
+        /// <para>The security descriptor of the Group object is used to perform the access check for this function.</para>
+        /// <para>
+        /// You can replace the global group membership with an entirely new list of members by calling the <see cref="NetGroupSetUsers"/> function. The typical sequence of steps to perform this follows.
+        /// <list type="number">
+        /// <item>Call the <see cref="NetGroupGetUsers"/> function to retrieve the current membership list.</item>
+        /// <item>Modify the returned membership list to reflect the new membership.</item>
+        /// <item>Call the <see cref="NetGroupSetUsers"/> function to replace the old membership list with the new membership list.</item>
+        /// </list>
+        /// </para>
+        /// <para>To grant one user membership in an existing global group, you can call the <see cref="NetGroupAddUser"/> function. To remove a user from a global group, call the <see cref="NetGroupDelUser"/> function.</para>
+        /// <para>User account names are limited to 20 characters and group names are limited to 256 characters. In addition, account names cannot be terminated by a period and they cannot include commas or any of the following printable characters: &quot;, /, \, [, ], :, |, &lt;, &gt;, +, =, ;, ?, *. Names also cannot include characters in the range 1-31, which are nonprintable.</para>
+        /// <para>If you are programming for Active Directory, you may be able to call certain Active Directory Service Interface (ADSI) methods to achieve the same functionality you can achieve by calling the network management group functions. For more information, see <see cref="IADsGroup"/>.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370432.aspx">NetGroupSetUsers function</a></para>
+        /// </remarks>
+        /// <seealso cref="GROUP_USERS_INFO_0"/>
+        /// <seealso cref="GROUP_USERS_INFO_1"/>
+        /// <seealso cref="NetGroupGetUsers"/>
+        /// <seealso cref="NetUserGetGroups"/>
+        /// <seealso cref="NetUserSetGroups"/>
+        /// <seealso cref="NetGroupAddUser"/>
+        /// <seealso cref="NetGroupDelUser"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetGroupSetUsers(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string servername,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string groupname,
+            [In] int level,
+            [In, MarshalAs(UnmanagedType.LPArray)] object[] buf,
+            [In] int totalentries
+            );
+        #endregion
     }
 }

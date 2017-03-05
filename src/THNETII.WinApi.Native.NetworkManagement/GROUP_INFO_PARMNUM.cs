@@ -4,7 +4,7 @@
     /// <summary>
     /// parmnum manifests for SetInfo calls (only comment is settable)
     /// </summary>
-    public enum GROUP_NAME_PARMNUM : int
+    public enum GROUP_INFO_PARMNUM : int
     {
         GROUP_ALL_PARMNUM = 0,
         /// <summary><var>grpi*_name</var></summary>

@@ -4,6 +4,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using THNETII.InteropServices.SafeHandles;
 
+using static Microsoft.Win32.WinApi.Networking.NetworkManagement.GROUP_INFO_PARMNUM;
 using static Microsoft.Win32.WinApi.Networking.NetworkManagement.LanManConstants;
 using static Microsoft.Win32.WinApi.Networking.NetworkManagement.NETSETUP_PROVISION_FLAGS;
 using static Microsoft.Win32.WinApi.WinError.HRESULT;
@@ -860,7 +861,7 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
             [In, MarshalAs(UnmanagedType.LPWStr)] string servername,
             [In, DefaultParameterValue(0)] int level,
             [In, MarshalAs(UnmanagedType.LPStruct)] object buf,
-            out GROUP_NAME_PARMNUM parm_err
+            out GROUP_INFO_PARMNUM parm_err
             );
         #endregion
         #region NetGroupAddUser function
@@ -1167,6 +1168,77 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
             out int entriesread,
             out int totalentries,
             [Optional] ref IntPtr resume_handle
+            );
+        #endregion
+        #region NetGroupSetInfo function
+        /// <summary>
+        /// The <see cref="NetGroupSetInfo"/> function sets the parameters of a global group in the security database, which is the security accounts manager (SAM) database or, in the case of domain controllers, the Active Directory.
+        /// </summary>
+        /// <param name="servername">A string that specifies the DNS or NetBIOS name of the remote server on which the function is to execute. If this parameter is <c>null</c>, the local computer is used. </param>
+        /// <param name="groupname">A string that specifies the name of the global group for which to set information. For more information, see the Remarks section.</param>
+        /// <param name="level">
+        /// Specifies the information level of the data. This parameter can be one of the following values. 
+        /// <list type="table">
+        /// <listheader><term>Value</term> <description>Meaning</description></listheader>
+        /// <term><c></c></term> <description>Specifies a global group name. The <paramref name="buf"/> parameter is a <see cref="GROUP_INFO_0"/> structure.</description>
+        /// <term><c></c></term> <description>Specifies a global group name and a comment. The <paramref name="buf"/> parameter is a <see cref="GROUP_INFO_1"/> structure.</description>
+        /// <term><c></c></term> <description>Specifies detailed information about the global group. The <paramref name="buf"/> parameter is a <see cref="GROUP_INFO_2"/> structure. Note that on Windows XP and later, it is recommended that you use <see cref="GROUP_INFO_3"/> instead.</description>
+        /// <term><c></c></term> <description>Specifies detailed information about the global group. The <paramref name="buf"/> parameter is a <see cref="GROUP_INFO_3"/> structure.</description>
+        /// <term><c></c></term> <description>Specifies a comment only about the global group. The <paramref name="buf"/> parameter is a <see cref="GROUP_INFO_1002"/> structure.</description>
+        /// <term><c></c></term> <description>Specifies global group attributes. The <paramref name="buf"/> parameter is a <see cref="GROUP_INFO_1005"/> structure.</description>
+        /// </list>
+        /// For more information, see the Remarks section.
+        /// </param>
+        /// <param name="buf">The format of this data depends on the value of the <paramref name="level"/> parameter.</param>
+        /// <param name="parm_err">A variable that receives the index of the first member of the group information structure in error following an <see cref="ERROR_INVALID_PARAMETER"/> error code. If this parameter is omitted, the index is not returned on error.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_ACCESS_DENIED"/></term><description>The user does not have access to the requested information.</description>
+        /// <term><see cref="ERROR_INVALID_PARAMETER"/></term><description>One of the function parameters is invalid. For more information, see the Remarks section.</description>
+        /// <term><see cref="NERR_InvalidComputer"/></term><description>The computer name is invalid.</description>
+        /// <term><see cref="NERR_NotPrimary"/></term><description>The operation is allowed only on the primary domain controller of the domain.</description>
+        /// <term><see cref="NERR_GroupNotFound"/></term><description>The global group name could not be found.</description>
+        /// <term><see cref="NERR_SpeGroupOp"/></term><description>The operation is not allowed on certain special groups. These groups include user groups, admin groups, local groups, and guest groups.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>If you are programming for Active Directory, you may be able to call certain Active Directory Service Interface (ADSI) methods to achieve the same functionality you can achieve by calling the network management group functions. For more information, see <see cref="IADsGroup"/>.</para>
+        /// <para>If you call this function on a domain controller that is running Active Directory, access is allowed or denied based on the access control list (ACL) for the <a href="https://msdn.microsoft.com/en-us/library/aa379557aspx">securable object</a>. The default ACL permits only Domain Admins and Account Operators to call this function. On a member server or workstation, only Administrators and Power Users can call this function. For more information, see <a href="https://msdn.microsoft.com/en-us/library/aa370891aspx">Security Requirements for the Network Management Functions</a>. For more information on ACLs, ACEs, and access tokens, see <a href="https://msdn.microsoft.com/en-us/library/aa374876aspx">Access Control Model</a>.</para>
+        /// <para>The security descriptor of the Group object is used to perform the access check for this function. Typically, callers must have write access to the entire object for calls to this function to succeed.</para>
+        /// <para>The correct way to set the new name of a global group is to call the <see cref="NetGroupSetInfo"/> function, using a <see cref="GROUP_INFO_0"/> structure. Specify the new value in the <see cref="GROUP_INFO_0.grpi0_name"/> member. If you use a different information level, the new name value is ignored.</para>
+        /// <para>
+        /// If the <see cref="NetGroupSetInfo"/> function returns <see cref="ERROR_INVALID_PARAMETER"/>, you can use the <paramref name="parm_err"/> parameter to indicate the first member of the group information structure that is invalid. (A group information structure begins with <strong>GROUP_INFO_</strong> and its format is specified by the <paramref name="level"/> parameter.) The following table lists the values that can be returned in the <paramref name="parm_err"/> parameter and the corresponding structure member that is in error. (The prefix <var>grpi*_</var> indicates that the member can begin with multiple prefixes, for example, <var>grpi1_</var> or <var>grpi2_</var>.)
+        /// <list type="table">
+        /// <listheader><term>Value</term><description>Member</description></listheader>
+        /// <term><see cref="GROUP_NAME_PARMNUM"/></term><description><var>grpi*_name</var></description>
+        /// <term><see cref="GROUP_COMMENT_PARMNUM"/></term><description><var>grpi*_comment</var></description>
+        /// <term><see cref="GROUP_ATTRIBUTES_PARMNUM"/></term><description><var>grpi*_attributes</var></description>
+        /// </list>
+        /// </para>
+        /// <para>User account names are limited to 20 characters and group names are limited to 256 characters. In addition, account names cannot be terminated by a period and they cannot include commas or any of the following printable characters: &quot;, /, \, [, ], :, |, &lt;, &gt;, +, =, ;, ?, *. Names also cannot include characters in the range 1-31, which are nonprintable.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370431.aspx">NetGroupSetInfo function</a></para>
+        /// </remarks>
+        /// <seealso cref="GROUP_INFO_0"/>
+        /// <seealso cref="GROUP_INFO_1"/>
+        /// <seealso cref="GROUP_INFO_3"/>
+        /// <seealso cref="GROUP_INFO_1002"/>
+        /// <seealso cref="GROUP_INFO_1005"/>
+        /// <seealso cref="NetGroupGetInfo"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetGroupSetInfo(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string servername,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string groupname,
+            [In] int level,
+            [In, MarshalAs(UnmanagedType.LPStruct)] object buf,
+            [Optional] out GROUP_INFO_PARMNUM parm_err
             );
         #endregion
     }

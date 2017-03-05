@@ -117,4 +117,13 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
     {
 
     }
+
+    public class NetDisplayNetApiBufferHandle : NetApiBufferHandle
+    {
+    }
+
+    public class NetDisplayArrayNetApiBufferHandle : NetApiBufferHandle
+    {
+
+    }
 }

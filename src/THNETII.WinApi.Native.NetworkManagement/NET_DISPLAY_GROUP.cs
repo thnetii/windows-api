@@ -3,7 +3,7 @@ using Microsoft.Win32.WinApi.SecurityIdentity.Authorization;
 
 using static Microsoft.Win32.WinApi.SecurityIdentity.Authorization.SE_GROUP_ATTRIBUTES;
 
-namespace Microsoft.Win32.WinApi.Constants
+namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
 {
     /// <summary>
     /// The <see cref="NET_DISPLAY_GROUP"/> structure contains information that an account manager can access to determine information about group accounts.

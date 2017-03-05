@@ -2307,6 +2307,71 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
             out WideStringZeroTerminatedAnySafeHandle pProvisionTextData
             );
         #endregion
+        #region NetQueryDisplayInformation function
+        /// <summary>
+        /// The <see cref="NetQueryDisplayInformation"/> function returns user account, computer, or group account information. Call this function to quickly enumerate account information for display in user interfaces.
+        /// </summary>
+        /// <param name="ServerName">A string that specifies the DNS or NetBIOS name of the remote server on which the function is to execute. If this parameter is <c>null</c>, the local computer is used.</param>
+        /// <param name="Level">
+        /// Specifies the information level of the data. This parameter can be one of the following values. 
+        /// <list type="table">
+        /// <listheader><term>Value</term> - <description>Meaning</description></listheader>
+        /// <term><c>1</c></term> - <description>Return user account information. The <paramref name="SortedBuffer"/> parameter receives an array of <see cref="NET_DISPLAY_USER"/> structures.</description>
+        /// <term><c>2</c></term> - <description>Return individual computer information. The <paramref name="SortedBuffer"/> parameter receives an array of <see cref="NET_DISPLAY_MACHINE"/> structures.</description>
+        /// <term><c>3</c></term> - <description>Return group account information. The <paramref name="SortedBuffer"/> parameter receives an array of <see cref="NET_DISPLAY_GROUP"/> structures.</description>
+        /// </list>
+        /// </param>
+        /// <param name="Index">Specifies the index of the first entry for which to retrieve information. Specify zero to retrieve account information beginning with the first display information entry. For more information, see the Remarks section.</param>
+        /// <param name="EntriesRequested">Specifies the maximum number of entries for which to retrieve information. On Windows 2000 and later, each call to <see cref="NetQueryDisplayInformation"/> returns a maximum of 100 objects.</param>
+        /// <param name="PreferredMaximumLength">Specifies the preferred maximum size, in bytes, of the system-allocated buffer returned in the <paramref name="SortedBuffer"/> parameter. It is recommended that you set this parameter to <see cref="MAX_PREFERRED_LENGTH"/>.</param>
+        /// <param name="ReturnedEntryCount">A variable that receives the number of entries in the array returned in the <paramref name="SortedBuffer"/> parameter. If this parameter is zero, there are no entries with an index as large as that specified. Entries may be returned when the function's return value is either <see cref="NERR_Success"/> or <see cref="ERROR_MORE_DATA"/>.</param>
+        /// <param name="SortedBuffer">
+        /// <para>A variable that receives a pointer to a system-allocated buffer that specifies a sorted list of the requested information. The format of this data depends on the value of the <paramref name="Level"/> parameter.</para>
+        /// <para>The system allocates the memory for this buffer. The handle should be wrapped in a <c>using</c> block, or the application should otherwise make sure that the <see cref="SafeHandle.Dispose()"/> method is called on the returned handle when it is no longer needed. Note that you must free the buffer even if the function fails with <see cref="ERROR_MORE_DATA"/>.</para>
+        /// </param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes or one of the system error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_ACCESS_DENIED"/></term><description>The user does not have access to the requested information.</description>
+        /// <term><see cref="ERROR_INVALID_LEVEL"/></term><description>The <paramref name="Level"/> parameter specifies an invalid value.</description>
+        /// <term><see cref="ERROR_MORE_DATA"/></term><description>More entries are available. That is, the last entry returned in the <paramref name="SortedBuffer"/> parameter is not the last entry available. To retrieve additional entries, call <see cref="NetQueryDisplayInformation"/> again with the <paramref name="Index"/> parameter set to the value returned in the <strong>next_index</strong> member of the last entry in <paramref name="SortedBuffer"/>. Note that you should not use the value of the <strong>next_index</strong> member for any purpose except to retrieve more data with additional calls to <see cref="NetQueryDisplayInformation"/>.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>If you call this function on a domain controller that is running Active Directory, access is allowed or denied based on the access control list (ACL) for the <a href="https://msdn.microsoft.com/en-us/library/aa379557aspx">securable object</a>. The default ACL permits only Domain Admins and Account Operators to call this function. On a member server or workstation, only Administrators and Power Users can call this function. For more information, see <a href="https://msdn.microsoft.com/en-us/library/aa370891aspx">Security Requirements for the Network Management Functions</a>. For more information on ACLs, ACEs, and access tokens, see <a href="https://msdn.microsoft.com/en-us/library/aa374876aspx">Access Control Model</a>.</para>
+        /// <para>The <see cref="NetQueryDisplayInformation"/> function only returns information to which the caller has Read access. The caller must have List Contents access to the Domain object, and Enumerate Entire SAM Domain access on the SAM Server object located in the System container.</para>
+        /// <para>The <see cref="NetQueryDisplayInformation"/> and <see cref="NetGetDisplayInformationIndex"/> functions provide an efficient mechanism for enumerating user and group accounts. When possible, use these functions instead of the <see cref="NetUserEnum"/> function or the <see cref="NetGroupEnum"/> function.</para>
+        /// <para>To enumerate trusting domains or member computer accounts, call <see cref="NetUserEnum"/>, specifying the appropriate filter value to obtain the account information you require. To enumerate trusted domains, call the <see cref="LsaEnumerateTrustedDomains"/> or <see cref="LsaEnumerateTrustedDomainsEx"/> function.</para>
+        /// <para>The number of entries returned by this function depends on the security descriptor located on the root domain object. The API will return either the first 100 entries or the entire set of entries in the domain, depending on the access privileges of the user. The ACE used to control this behavior is "SAM-Enumerate-Entire-Domain", and is granted to Authenticated Users by default. Administrators can modify this setting to allow users to enumerate the entire domain.</para>
+        /// <para>Each call to <see cref="NetQueryDisplayInformation"/> returns a maximum of 100 objects. Calling the <see cref="NetQueryDisplayInformation"/> function to enumerate domain account information can be costly in terms of performance. If you are programming for Active Directory, you may be able to use methods on the <see cref="IDirectorySearch"/> interface to make paged queries against the domain. For more information, see <see cref="IDirectorySearch.SetSearchPreference"/> and <see cref="IDirectorySearch.ExecuteSearch"/>. To enumerate trusted domains, call the <see cref="LsaEnumerateTrustedDomainsEx"/> function.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370610.aspx">NetQueryDisplayInformation function</a></para>
+        /// </remarks>
+        /// <seealso cref="LsaEnumerateTrustedDomains"/>
+        /// <seealso cref="LsaEnumerateTrustedDomainsEx"/>
+        /// <seealso cref="NET_DISPLAY_GROUP"/>
+        /// <seealso cref="NET_DISPLAY_MACHINE"/>
+        /// <seealso cref="NET_DISPLAY_USER"/>
+        /// <seealso cref="NetGetDisplayInformationIndex"/>
+        /// <seealso cref="NetUserEnum"/>
+        /// <seealso cref="NetGroupEnum"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetQueryDisplayInformation(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string ServerName,
+            [In] int Level,
+            [In] int Index,
+            [In] int EntriesRequested,
+            [In] int PreferredMaximumLength,
+            out int ReturnedEntryCount,
+            out NetDisplayArrayNetApiBufferHandle SortedBuffer
+            );
+        #endregion
     }
 }
 

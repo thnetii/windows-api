@@ -137,6 +137,11 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
 
     public class WideStringZeroTerminatedArrayNetApiBufferHandle : NetApiAlertBufferHandle, ISafeHandleReadableAsWideStringZeroTerminatedArray { }
 
+    public class ServerInfoNetApiBufferHandle : NetApiBufferHandle
+    {
+
+    }
+
     public class ServerInfoArrayNetApiBufferHandle : NetApiBufferHandle
     {
 

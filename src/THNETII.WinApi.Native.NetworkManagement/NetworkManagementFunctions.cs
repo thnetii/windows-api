@@ -3058,6 +3058,54 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
             [Optional] ref IntPtr resume_handle
             );
         #endregion
+        #region NetServerGetInfo function
+        /// <summary>
+        /// The <see cref="NetServerGetInfo"/> function retrieves current configuration information for the specified server.
+        /// </summary>
+        /// <param name="servername">A string that specifies the name of the remote server on which the function is to execute. If this parameter is <c>null</c>, the local computer is used. </param>
+        /// <param name="level">
+        /// Specifies the information level of the data. This parameter can be one of the following values.
+        /// <list type="table">
+        /// <listheader><term>Value</term> <description>Meaning</description></listheader>
+        /// <term><c>100</c></term> - <description>Return server names and platform information. The <paramref name="bufptr"/> parameter receives a <see cref="SERVER_INFO_100"/> structure.</description>
+        /// <term><c>101</c></term> - <description>Return server names, types, and associated software. The <paramref name="bufptr"/> parameter receives a <see cref="SERVER_INFO_101"/> structure.</description>
+        /// <term><c>102</c></term> - <description>Return the server name, type, associated software, and other attributes. The <paramref name="bufptr"/> parameter receives a <see cref="SERVER_INFO_102"/> structure.</description>
+        /// </list>
+        /// </param>
+        /// <param name="bufptr">A variable that receives the data. The format of this data depends on the value of the <paramref name="level"/> parameter. This buffer is allocated by the system and must be freed by wrapping the returned handle in a <c>using</c> block. Otherwise, the application must ensure to call the <see cref="SafeHandle.Dispose()"/> method on the returned handle directly when it is no longer needed.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_ACCESS_DENIED"/></term><description>The user does not have access to the requested information.</description>
+        /// <term><see cref="ERROR_INVALID_LEVEL"/></term><description>The value specified for the <paramref name="level"/> parameter is invalid.</description>
+        /// <term><see cref="ERROR_INVALID_PARAMETER"/></term><description>The specified parameter is invalid.</description>
+        /// <term><see cref="ERROR_NOT_ENOUGH_MEMORY"/></term><description>Insufficient memory is available.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>Only the Administrators or Server Operators local group, or those with Print or Server Operator group membership, can successfully execute the <see cref="NetServerGetInfo"/> function at level <c>102</c>. No special group membership is required for level <c>100</c> or level <c>101</c> calls.</para>
+        /// <para>If you are programming for Active Directory, you may be able to call certain Active Directory Service Interface (ADSI) methods to achieve the same results you can achieve by calling the network management server functions. For more information, see the <see cref="IADsComputer"/> interface reference.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370624.aspx">NetServerGetInfo function</a></para>
+        /// </remarks>
+        /// <seealso cref="NetServerSetInfo"/>
+        /// <seealso cref="SERVER_INFO_100"/>
+        /// <seealso cref="SERVER_INFO_101"/>
+        /// <seealso cref="SERVER_INFO_102"/>
+        /// <seealso cref="NetRemoteComputerSupports"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetServerGetInfo(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string servername,
+            [In] int level,
+            out ServerInfoNetApiBufferHandle bufptr
+            );
+        #endregion
     }
 }
 

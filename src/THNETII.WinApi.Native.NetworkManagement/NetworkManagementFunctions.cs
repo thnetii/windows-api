@@ -3373,6 +3373,18 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
             [Optional] ref IntPtr resumehandle
             );
         #endregion
+        #region NetServiceControl
+        // The NetServiceControl function is obsolete.It is included for compatibility with 16-bit versions of Windows.Other applications should use the service functions ( https://msdn.microsoft.com/en-us/library/ms685942.aspx ).
+        #endregion
+        #region NetServiceEnum
+        // The NetServiceEnum function is obsolete.It is included for compatibility with 16-bit versions of Windows.Other applications should use the service functions ( https://msdn.microsoft.com/en-us/library/ms685942.aspx ).
+        #endregion
+        #region NetServiceGetInfo
+        // The NetServiceGetInfo function is obsolete.It is included for compatibility with 16-bit versions of Windows.Other applications should use the service functions ( https://msdn.microsoft.com/en-us/library/ms685942.aspx ).
+        #endregion
+        #region NetServiceInstall
+        // The NetServiceInstall function is obsolete.It is included for compatibility with 16-bit versions of Windows.Other applications should use the service functions ( https://msdn.microsoft.com/en-us/library/ms685942.aspx ).
+        #endregion
     }
 }
 

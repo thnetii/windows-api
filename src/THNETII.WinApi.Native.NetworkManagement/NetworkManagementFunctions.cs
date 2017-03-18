@@ -3481,6 +3481,189 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
             [In, MarshalAs(UnmanagedType.I4)] NETSETUP_OPTIONS fUnjoinOptions
             );
         #endregion
+        #region NetUseAdd function
+        /// <summary>
+        /// The <see cref="NetUseAdd"/> function establishes a connection between the local computer and a remote server. You can specify a local drive letter or a printer device to connect. If you do not specify a local drive letter or printer device, the function authenticates the client with the server for future connections.
+        /// </summary>
+        /// <param name="UncServerName">The UNC name of the computer on which to execute this function. If this parameter is <c>null</c>, then the local computer is used. If the <paramref name="UncServerName"/> parameter specified is a remote computer, then the remote computer must support remote RPC calls using the legacy Remote Access Protocol mechanism. </param>
+        /// <param name="Level">
+        /// A value that specifies the information level of the data. This parameter can be one of the following values. 
+        /// <list type="table">
+        /// <listheader><term>Value</term> <description>Meaning</description></listheader>
+        /// <term><c>1</c></term> - <description>Specifies information about the connection between a local device and a shared resource. Information includes the connection status and type. The <paramref name="Buf"/> parameter specifies a <see cref="USE_INFO_1"/> structure.</description>
+        /// <term><c>2</c></term> - <description>Specifies information about the connection between a local device and a shared resource. Information includes the connection status and type, and a user name and domain name. The <paramref name="Buf"/> parameter specifies a <see cref="USE_INFO_2"/> structure.</description>
+        /// </list>
+        /// </param>
+        /// <param name="Buf">A object instance that specifies the data. The format of this data depends on the value of the <paramref name="Level"/> parameter.</param>
+        /// <param name="ParmError">A variable that receives the index of the first member of the information structure in error when the <see cref="ERROR_INVALID_PARAMETER"/> error is returned. If this parameter is <c>null</c>, the index is not returned on error. For more information, see the following Remarks section.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>If the function fails, the return value is a system error code.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>You can also use the <see cref="WNetAddConnection2"/> and <see cref="WNetAddConnection3"/> functions to redirect a local device to a network resource.</para>
+        /// <para>No special group membership is required to call the <see cref="NetUseAdd"/> function. This function cannot be executed on a remote server except in cases of downlevel compatibility.</para>
+        /// <para>This function applies only to the Server Message Block (LAN Manager Workstation) client. The <see cref="NetUseAdd"/> function does not support Distributed File System (DFS) shares. To add a share using a different network provider (WebDAV or a DFS share, for example), use the <see cref="WNetAddConnection2"/> or <see cref="WNetAddConnection3"/> function. </para>
+        /// <para>If the <see cref="NetUseAdd"/> function returns <see cref="ERROR_INVALID_PARAMETER"/>, you can use the <paramref name="ParmError"/> parameter to indicate the first member of the information structure that is invalid. (The information structure begins with <strong>USE_INFO_</strong> and its format is specified by the <paramref name="Level"/> parameter.) The values that can be returned in the <paramref name="ParmError"/> parameter and the corresponding structure member that is in error is listed by the <see cref="USE_INFO_PARMNUM"/> enumeration type.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370645.aspx">NetUseAdd function</a></para>
+        /// </remarks>
+        /// <seealso cref="NetUseDel"/>
+        /// <seealso cref="USE_INFO_1"/>
+        /// <seealso cref="USE_INFO_2"/>
+        /// <seealso cref="WNetAddConnection2"/>
+        /// <seealso cref="WNetAddConnection3"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetUseAdd(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string UncServerName,
+            [In] int Level,
+            [In, MarshalAs(UnmanagedType.LPStruct)] object Buf,
+            [Optional] out USE_INFO_PARMNUM ParmError
+            );
+        #endregion
+        #region NetUseDel function
+        /// <summary>
+        /// <para>The <see cref="NetUseDel"/> function ends a connection to a shared resource.</para>
+        /// <para>You can also use the <see cref="WNetCancelConnection2"/> function to terminate a network connection.</para>
+        /// </summary>
+        /// <param name="UncServerName">
+        /// <para>The UNC name of the computer on which to execute this function. If this is parameter is <c>null</c>, then the local computer is used. </para>
+        /// <para>If the <paramref name="UncServerName"/> parameter specified is a remote computer, then the remote computer must support remote RPC calls using the legacy Remote Access Protocol mechanism. </para>
+        /// </param>
+        /// <param name="UseName">A string that specifies the path of the connection to delete.</param>
+        /// <param name="ForceCond">The level of force to use in deleting the connection.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>If the function fails, the return value is a system error code.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>The <see cref="NetUseDel"/> function applies only to the Server Message Block (LAN Manager Workstation) client. The <see cref="NetUseDel"/> function does not support Distributed File System (DFS) shares or other network file systems. To terminate a connection to a share using a different network provider (WebDAV or a DFS share, for example), use the <see cref="WNetCancelConnection2"/> function. </para>
+        /// <para>No special group membership is required to call the <see cref="NetUseDel"/> function. This function cannot be executed on a remote server except in cases of downlevel compatibility.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370646.aspx">NetUseDel function</a></para>
+        /// </remarks>
+        /// <seealso cref="NetUseAdd"/>
+        /// <seealso cref="WNetCancelConnection2"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetUseDel(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string UncServerName,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string UseName,
+            [In, MarshalAs(UnmanagedType.I4)] USE_FORCE_COND ForceCond
+            );
+        #endregion
+        #region NetUseEnum function
+        /// <summary>
+        /// <para>The <see cref="NetUseEnum"/> function lists all current connections between the local computer and resources on remote servers.</para>
+        /// <para>You can also use the <see cref="WNetOpenEnum"/> and the <see cref="WNetEnumResource"/> functions to enumerate network resources or connections.</para>
+        /// </summary>
+        /// <param name="UncServerName">The UNC name of the computer on which to execute this function. If this is parameter is <c>null</c>, then the local computer is used. If the <paramref name="UncServerName"/> parameter specified is a remote computer, then the remote computer must support remote RPC calls using the legacy Remote Access Protocol mechanism. </param>
+        /// <param name="Level">
+        /// The information level of the data requested. This parameter can be one of the following values. 
+        /// <list type="table">
+        /// <listheader><term>Value</term> - <description>Meaning</description></listheader>
+        /// <term><c>0</c> (zero)</term> - <description>Specifies a local device name and the share name of a remote resource. The <paramref name="BufPtr"/> parameter receives an array of <see cref="USE_INFO_0"/> structures.</description>
+        /// <term><c>1</c></term> - <description>Specifies information about the connection between a local device and a shared resource, including connection status and type. The <paramref name="BufPtr"/> parameter receives an array of <see cref="USE_INFO_1"/> structures.</description>
+        /// <term><c>2</c></term> - <description>Specifies information about the connection between a local device and a shared resource. Information includes the connection status, connection type, user name, and domain name. The <paramref name="BufPtr"/> parameter receives an array of <see cref="USE_INFO_2"/> structures.</description>
+        /// </list>
+        /// </param>
+        /// <param name="BufPtr">
+        /// <para>A variable for a buffer that receives the information structures. The format of this data depends on the value of the <paramref name="Level"/> parameter.</para>
+        /// <para>The system allocates the memory for this buffer. The handle should be wrapped in a <c>using</c> block, or the application should otherwise make sure that the <see cref="SafeHandle.Dispose()"/> method is called on the returned handle when it is no longer needed. Note that you must free the buffer even if the function fails with <see cref="ERROR_MORE_DATA"/>.</para>
+        /// </param>
+        /// <param name="PreferedMaximumSize">The preferred maximum length, in bytes, of the data to return. If <see cref="MAX_PREFERRED_LENGTH"/> is specified, the function allocates the amount of memory required for the data. If another value is specified in this parameter, it can restrict the number of bytes that the function returns. If the buffer size is insufficient to hold all entries, the function returns <see cref="ERROR_MORE_DATA"/>.</param>
+        /// <param name="EntriesRead">A variable that receives the count of elements actually enumerated.</param>
+        /// <param name="TotalEntries">A variable that receives the total number of entries that could have been enumerated from the current resume position. Note that applications should consider this value only as a hint.</param>
+        /// <param name="ResumeHandle">A reference to a value that contains a resume handle which is used to continue the search. The handle should be zero on the first call and left unchanged for subsequent calls. If <paramref name="ResumeHandle"/> is omitted, then no resume handle is stored.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value is a system error code.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_INVALID_PARAMETER"/></term><description>An invalid parameter was passed to the function.</description>
+        /// <term><see cref="ERROR_MORE_DATA"/></term><description>There is more data to return. This error is returned if the buffer size is insufficient to hold all entries.</description>
+        /// <term><see cref="ERROR_NOT_SUPPORTED"/></term><description>The request is not supported. This error is returned if the <paramref name="UncServerName"/> parameter was not <c>null</c> and the remote server does not support remote RPC calls using the legacy Remote Access Protocol mechanism. </description>
+        /// <term>Other</term><description>Use <see cref="FormatMessage"/> to obtain the message string for the returned error.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>No special group membership is required to call the <see cref="NetUseEnum"/> function. This function cannot be executed on a remote server except in cases of downlevel compatibility using the legacy Remote Access Protocol.</para>
+        /// <para>To retrieve information about one network connection, you can call the <see cref="NetUseGetInfo"/> function.</para>
+        /// <para>This function applies only to the Server Message Block (LAN Manager Workstation) client. The <see cref="NetUseEnum"/> function does not support Distributed File System (DFS) shares. To enumerate shares using a different network provider (WebDAV or a DFS share, for example), use the <see cref="WNetOpenEnum"/>, <see cref="WNetEnumResource"/>, and <see cref="WNetCloseEnum"/> functions. </para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370647.aspx">NetUseEnum function</a></para>
+        /// </remarks>
+        /// <seealso cref="NetUseGetInfo"/>
+        /// <seealso cref="USE_INFO_0"/>
+        /// <seealso cref="USE_INFO_1"/>
+        /// <seealso cref="USE_INFO_2"/>
+        /// <seealso cref="WNetCloseEnum"/>
+        /// <seealso cref="WNetEnumResource"/>
+        /// <seealso cref="WNetOpenEnum"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetUseEnum(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string UncServerName,
+            [In] int Level,
+            out UseInfoArrayNetApiBufferHandle BufPtr,
+            [In] int PreferedMaximumSize,
+            out int EntriesRead,
+            out int TotalEntries,
+            [Optional] ref IntPtr ResumeHandle
+            );
+        #endregion
+        #region NetUseGetInfo function
+        /// <summary>
+        /// <para>The <see cref="NetUseGetInfo"/> function retrieves information about a connection to a shared resource.</para>
+        /// <para>You can also use the <see cref="WNetGetConnection"/> function to retrieve the name of a network resource associated with a local device.</para>
+        /// </summary>
+        /// <param name="UncServerName">The UNC name of the computer on which to execute this function. If this is parameter is <c>null</c>, then the local computer is used. If the <paramref name="UncServerName"/> parameter specified is a remote computer, then the remote computer must support remote RPC calls using the legacy Remote Access Protocol mechanism. </param>
+        /// <param name="UseName">A string that specifies the name of the connection for which to return information.</param>
+        /// <param name="Level">
+        /// The information level of the data requested. This parameter can be one of the following values. 
+        /// <list type="table">
+        /// <listheader><term>Value</term> - <description>Meaning</description></listheader>
+        /// <term><c>0</c> (zero)</term> - <description>Specifies a local device name and the share name of a remote resource. The <paramref name="BufPtr"/> parameter receives a <see cref="USE_INFO_0"/> structure.</description>
+        /// <term><c>1</c></term> - <description>Specifies information about the connection between a local device and a shared resource, including connection status and type. The <paramref name="BufPtr"/> parameter receives a <see cref="USE_INFO_1"/> structure.</description>
+        /// <term><c>2</c></term> - <description>Specifies information about the connection between a local device and a shared resource. Information includes the connection status, connection type, user name, and domain name. The <paramref name="BufPtr"/> parameter receives a <see cref="USE_INFO_2"/> structure.</description>
+        /// </list>
+        /// </param>
+        /// <param name="BufPtr">
+        /// <para>A variable for a buffer that receives the information structure. The format of this data depends on the value of the <paramref name="Level"/> parameter.</para>
+        /// <para>The system allocates the memory for this buffer. The handle should be wrapped in a <c>using</c> block, or the application should otherwise make sure that the <see cref="SafeHandle.Dispose()"/> method is called on the returned handle when it is no longer needed. Note that you must free the buffer even if the function fails with <see cref="ERROR_MORE_DATA"/>.</para>
+        /// </param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>If the function fails, the return value is a system error code.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>No special group membership is required to call the <see cref="NetUseGetInfo"/> function. This function cannot be executed on a remote server except in cases of downlevel compatibility.</para>
+        /// <para>To list all current connections between the local computer and resources on remote servers, you can call the <see cref="NetUseEnum"/> function.</para>
+        /// <para>This function applies only to the Server Message Block (LAN Manager Workstation) client. The <see cref="NetUseGetInfo"/> function does not support Distributed File System (DFS) shares. To retrieve information for a share using a different network provider (WebDAV or a DFS share, for example), use the <see cref="WNetGetConnection"/> function. </para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370648.aspx">NetUseGetInfo function</a></para>
+        /// </remarks>
+        /// <seealso cref="NetUseEnum"/>
+        /// <seealso cref="USE_INFO_0"/>
+        /// <seealso cref="USE_INFO_1"/>
+        /// <seealso cref="USE_INFO_2"/>
+        /// <seealso cref="WNetGetConnection"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetUseGetInfo(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string UncServerName,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string UseName,
+            [In] int Level,
+            out UseInfoNetApiBufferHandle BufPtr
+            );
+        #endregion
     }
 }
 

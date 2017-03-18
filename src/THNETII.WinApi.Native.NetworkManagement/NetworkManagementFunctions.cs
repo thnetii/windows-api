@@ -11,6 +11,7 @@ using static Microsoft.Win32.WinApi.Networking.NetworkManagement.LOCALGROUP_INFO
 using static Microsoft.Win32.WinApi.Networking.NetworkManagement.NETSETUP_OPTIONS;
 using static Microsoft.Win32.WinApi.Networking.NetworkManagement.NETSETUP_PROVISION_FLAGS;
 using static Microsoft.Win32.WinApi.Networking.NetworkManagement.SV_TYPE_FLAGS;
+using static Microsoft.Win32.WinApi.Networking.NetworkManagement.SVTI2_FLAGS;
 using static Microsoft.Win32.WinApi.WinError.HRESULT;
 using static Microsoft.Win32.WinApi.WinError.Win32ErrorCode;
 
@@ -3157,6 +3158,219 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
             [In] int level,
             [In, MarshalAs(UnmanagedType.LPStruct)] object buf,
             [Optional] out SERVER_INFO_PARMNUM ParmError
+            );
+        #endregion
+        #region NetServerTransportAdd function
+        /// <summary>
+        /// <para>The <see cref="NetServerTransportAdd"/> function binds the server to the transport protocol.</para>
+        /// <para>The extended function <see cref="NetServerTransportAddEx"/> allows the calling application to specify the <see cref="SERVER_TRANSPORT_INFO_1"/>, <see cref="SERVER_TRANSPORT_INFO_2"/>, and <see cref="SERVER_TRANSPORT_INFO_3"/> information levels.</para>
+        /// </summary>
+        /// <param name="servername">A string that specifies the name of the remote server on which the function is to execute. If this parameter is <c>null</c>, the local computer is used. </param>
+        /// <param name="level">Specifies the information level of the data. This parameter can be the following value. <c>0</c> (zero) - Specifies information about the transport protocol, including name, address, and location on the network. The <paramref name="bufptr"/> parameter specifies a <see cref="SERVER_TRANSPORT_INFO_0"/> structure.</param>
+        /// <param name="bufptr">An object instance that contains the data.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_ACCESS_DENIED"/></term><description>The user does not have access to the requested information.</description>
+        /// <term><see cref="ERROR_DUP_NAME"/></term><description>A duplicate name exists on the network.</description>
+        /// <term><see cref="ERROR_INVALID_DOMAINNAME"/></term><description>The domain name could not be found on the network.</description>
+        /// <term><see cref="ERROR_INVALID_LEVEL"/></term><description>The value specified for the <paramref name="level"/> parameter is invalid.</description>
+        /// <term><see cref="ERROR_INVALID_PARAMETER"/></term><description>The specified parameter is invalid. <br/>This error is returned if the <see cref="SERVER_TRANSPORT_INFO_0.svti0_transportname"/> or <see cref="SERVER_TRANSPORT_INFO_0.svti0_transportaddress"/> member in the <see cref="SERVER_TRANSPORT_INFO_0"/> structure pointed to by the <paramref name="bufptr"/> parameter is <c>null</c>. This error is also returned if the <see cref="SERVER_TRANSPORT_INFO_0.svti0_transportaddresslength"/> member in the <see cref="SERVER_TRANSPORT_INFO_0"/> structure pointed to by the <paramref name="bufptr"/> parameter is zero or larger than <c>260</c> (as defined by <strong>MAX_PATH</strong> in the Windef.h header file). <br/>This error is also returned for other invalid parameters.</description>
+        /// <term><see cref="ERROR_NOT_ENOUGH_MEMORY"/></term><description>Insufficient memory is available.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>Only members of the Administrators or Server Operators local group can successfully execute the <see cref="NetServerTransportAdd"/> function.</para>
+        /// <para>If you add a transport protocol to a server using a call to the <see cref="NetServerTransportAdd"/> function, the connection will not remain after the server reboots or restarts.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370627.aspx">NetServerTransportAdd function</a></para>
+        /// </remarks>
+        /// <seealso cref="NetServerComputerNameAdd"/>
+        /// <seealso cref="NetServerComputerNameDel"/>
+        /// <seealso cref="NetServerTransportAddEx"/>
+        /// <seealso cref="NetServerTransportDel"/>
+        /// <seealso cref="NetServerTransportEnum"/>
+        /// <seealso cref="SERVER_TRANSPORT_INFO_0"/>
+        /// <seealso cref="SERVER_TRANSPORT_INFO_1"/>
+        /// <seealso cref="SERVER_TRANSPORT_INFO_2"/>
+        /// <seealso cref="SERVER_TRANSPORT_INFO_3"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetServerTransportAdd(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string servername,
+            [In] int level,
+            [In, MarshalAs(UnmanagedType.LPStruct)] object bufptr
+            );
+        #endregion
+        #region NetServerTransportAddEx function
+        /// <summary>
+        /// The <see cref="NetServerTransportAddEx"/> function binds the specified server to the transport protocol. This extended function allows the calling application to specify the <see cref="SERVER_TRANSPORT_INFO_0"/>, <see cref="SERVER_TRANSPORT_INFO_1"/>, <see cref="SERVER_TRANSPORT_INFO_2"/>, or <see cref="SERVER_TRANSPORT_INFO_3"/> information levels.
+        /// </summary>
+        /// <param name="servername">A string that specifies the name of the remote server on which the function is to execute. If this parameter is <c>null</c>, the local computer is used. </param>
+        /// <param name="level">
+        /// Specifies the information level of the data. This parameter can be the following values.
+        /// <list type="table">
+        /// <listheader><term>Value</term> - <description>Meaning</description></listheader>
+        /// <term><c>0</c> (zero)</term> - <description>Specifies information about the transport protocol, including name, address, and location on the network. The <paramref name="bufptr"/> parameter specifies a <see cref="SERVER_TRANSPORT_INFO_0"/> structure.</description>
+        /// <term><c>1</c></term> - <description>Specifies information about the transport protocol, including name, address, network location, and domain. The <paramref name="bufptr"/> parameter specifies a <see cref="SERVER_TRANSPORT_INFO_1"/> structure.</description>
+        /// <term><c>2</c></term> - <description>Specifies the same information as level 1, with the addition of an <see cref="SERVER_TRANSPORT_INFO_2.svti2_flags"/> member. The <paramref name="bufptr"/> parameter specifies a <see cref="SERVER_TRANSPORT_INFO_2"/> structure.</description>
+        /// <term><c>3</c></term> - <description>Specifies the same information as level 2, with the addition of credential information. The <paramref name="bufptr"/> parameter specifies a <see cref="SERVER_TRANSPORT_INFO_3"/> structure.</description>
+        /// </list>
+        /// </param>
+        /// <param name="bufptr">An object instance that contains the data. The format of this data depends on the value of the <paramref name="level"/> parameter. </param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_ACCESS_DENIED"/></term><description>The user does not have access to the requested information.</description>
+        /// <term><see cref="ERROR_DUP_NAME"/></term><description>A duplicate name exists on the network.</description>
+        /// <term><see cref="ERROR_INVALID_DOMAINNAME"/></term><description>The domain name could not be found on the network.</description>
+        /// <term><see cref="ERROR_INVALID_LEVEL"/></term><description>The value specified for the <paramref name="level"/> parameter is invalid.</description>
+        /// <term><see cref="ERROR_INVALID_PARAMETER"/></term><description>The specified parameter is invalid. <br/>This error is returned if the transport name or transport address member in the <see cref="SERVER_TRANSPORT_INFO_0"/>, <see cref="SERVER_TRANSPORT_INFO_1"/>, <see cref="SERVER_TRANSPORT_INFO_2"/>, or <see cref="SERVER_TRANSPORT_INFO_3"/> structure pointed to by the <paramref name="bufptr"/> parameter is <c>null</c>. This error is also returned if the transport address length member in the <see cref="SERVER_TRANSPORT_INFO_0"/>, <see cref="SERVER_TRANSPORT_INFO_1"/>, <see cref="SERVER_TRANSPORT_INFO_2"/>, or <see cref="SERVER_TRANSPORT_INFO_3"/> structure pointed to by the <paramref name="bufptr"/> parameter is zero or larger than <c>260</c> (as defined by <strong>MAX_PATH</strong> in the Windef.h header file). This error is also returned if the flags member of the <see cref="SERVER_TRANSPORT_INFO_2"/>, or <see cref="SERVER_TRANSPORT_INFO_3"/> structure pointed to by the <paramref name="bufptr"/> parameter contains an illegal value. <br/>This error is also returned for other invalid parameters.</description>
+        /// <term><see cref="ERROR_NOT_ENOUGH_MEMORY"/></term><description>Insufficient memory is available.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>Only members of the Administrators or Server Operators local group can successfully execute the <see cref="NetServerTransportAddEx"/> function.</para>
+        /// <para>If you add a transport protocol to a server using a call to the <see cref="NetServerTransportAddEx"/> function, the connection will not remain after the server reboots or restarts.</para>
+        /// <para>The <see cref="NetServerComputerNameAdd"/> function is a utility function. It combines the features of the <see cref="NetServerTransportEnum"/> function and the <see cref="NetServerTransportAddEx"/> function, allowing you to specify an emulated server name.</para>
+        /// <para>On Windows Server 2008 and Windows Vista with Service Pack 1 (SP1), every name registered with the Windows remote file server (SRV) is designated as either a scoped name or a non-scoped name. Every share that is added to the system will then either be attached to all of the non-scoped names, or to a single scoped name. Applications that wish to use the scoping features are responsible for both registering the new name as a scoped endpoint and then creating the shares with an appropriate scope. In this way, legacy uses of the Network Management and Network Share Management functions are not affected in any way since they continue to register shares and names as non-scoped names. </para>
+        /// <para>A scoped endpoint is created by calling the <see cref="NetServerTransportAddEx"/> function with the <paramref name="level"/> parameter set to <c>2</c> and the <paramref name="bufptr"/> parameter specifying a <see cref="SERVER_TRANSPORT_INFO_2"/> structure with the <see cref="SVTI2_SCOPED_NAME"/> bit value set in <see cref="SERVER_TRANSPORT_INFO_2.svti2_flags"/> member. A scoped endpoint is also created by calling the <see cref="NetServerTransportAddEx"/> function with the <paramref name="level"/> parameter set to <c>3</c> and the <paramref name="bufptr"/> parameter specifying a <see cref="SERVER_TRANSPORT_INFO_3"/> structure with the <see cref="SVTI2_SCOPED_NAME"/> bit value set in <see cref="SERVER_TRANSPORT_INFO_3.svti3_flags"/> member. </para>
+        /// <para>When the <see cref="SVTI2_SCOPED_NAME"/> bit value is set for a transport, then shares can be added with a corresponding server name (the <see cref="SHARE_INFO_503.shi503_servername"/> member of the <see cref="SHARE_INFO_503"/> structure) in a scoped fashion using the <see cref="NetShareAdd"/> function. If there is no transport registered with the <see cref="SVTI2_SCOPED_NAME"/> bit value and the name provided in <see cref="SHARE_INFO_503.shi503_servername"/> member, then the share add in a scoped fashion will not succeed. </para>
+        /// <para>The <see cref="NetShareAdd"/> function is used to add a scoped share on a remote server specified in the <paramref name="servername"/> parameter. The remote server specified in the <see cref="SHARE_INFO_503.shi503_servername"/> member of the <see cref="SHARE_INFO_503"/> passed in the <paramref name="bufptr"/> parameter must have been bound to a transport protocol using the <see cref="NetServerTransportAddEx"/> function as a scoped endpoint. The <see cref="SVTI2_SCOPED_NAME"/> flag must have been specified in the <see cref="SHARE_INFO_503.shi503_servername"/> member of the <see cref="SERVER_TRANSPORT_INFO_2"/> or <see cref="SERVER_TRANSPORT_INFO_3"/> structure for the transport protocol. The <see cref="NetShareDelEx"/> function is used to delete a scoped share. The <see cref="NetShareGetInfo"/> and <see cref="NetShareSetInfo"/> functions are to used to get and set information on a scoped share. </para>
+        /// <para>Scoped endpoints are generally used by the cluster namespace.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370628.aspx">NetServerTransportAddEx function</a></para>
+        /// </remarks>
+        /// <seealso cref="NetServerComputerNameAdd"/>
+        /// <seealso cref="NetServerComputerNameDel"/>
+        /// <seealso cref="NetServerTransportAdd"/>
+        /// <seealso cref="NetServerTransportDel"/>
+        /// <seealso cref="NetServerTransportEnum"/>
+        /// <seealso cref="NetShareAdd"/>
+        /// <seealso cref="NetShareDelEx"/>
+        /// <seealso cref="NetShareGetInfo"/>
+        /// <seealso cref="NetShareSetInfo"/>
+        /// <seealso cref="SERVER_TRANSPORT_INFO_0"/>
+        /// <seealso cref="SERVER_TRANSPORT_INFO_1"/>
+        /// <seealso cref="SERVER_TRANSPORT_INFO_2"/>
+        /// <seealso cref="SERVER_TRANSPORT_INFO_3"/>
+        /// <seealso cref="SHARE_INFO_503"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetServerTransportAddEx(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string servername,
+            [In] int level,
+            [In, MarshalAs(UnmanagedType.LPStruct)] object bufptr
+            );
+        #endregion
+        #region NetServerTransportDel function
+        /// <summary>
+        /// The <see cref="NetServerTransportDel"/> function unbinds (or disconnects) the transport protocol from the server. Effectively, the server can no longer communicate with clients using the specified transport protocol (such as TCP or XNS).
+        /// </summary>
+        /// <param name="servername">A string that specifies the DNS or NetBIOS name of the remote server on which the function is to execute. If this parameter is <c>null</c>, the local computer is used. </param>
+        /// <param name="level">
+        /// Specifies the information level of the data. This parameter can be the following values.
+        /// <list type="table">
+        /// <listheader><term>Value</term> - <description>Meaning</description></listheader>
+        /// <term><c>0</c> (zero)</term> - <description>Specifies information about the transport protocol, including name, address, and location on the network. The <paramref name="bufptr"/> parameter specifies a <see cref="SERVER_TRANSPORT_INFO_0"/> structure.</description>
+        /// <term><c>1</c></term> - <description>Specifies information about the transport protocol, including name, address, network location, and domain. The <paramref name="bufptr"/> parameter specifies a <see cref="SERVER_TRANSPORT_INFO_1"/> structure.</description>
+        /// </list>
+        /// </param>
+        /// <param name="bufptr">An object instance that contains the data. The format of this data depends on the value of the <paramref name="level"/> parameter. </param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_ACCESS_DENIED"/></term><description>The user does not have access to the requested information.</description>
+        /// <term><see cref="ERROR_INVALID_LEVEL"/></term><description>The value specified for the <paramref name="level"/> parameter is invalid.</description>
+        /// <term><see cref="ERROR_INVALID_PARAMETER"/></term><description>The specified parameter is invalid.</description>
+        /// <term><see cref="ERROR_NOT_ENOUGH_MEMORY"/></term><description>Insufficient memory is available.</description>
+        /// <term><see cref="NERR_NetNameNotFound"/></term><description>The share name does not exist.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// Only members of the Administrators or Server Operators local group can successfully execute the <see cref="NetServerTransportDel"/> function.
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370629.aspx">NetServerTransportDel function</a></para>
+        /// </remarks>
+        /// <seealso cref="NetServerTransportAdd"/>
+        /// <seealso cref="SERVER_TRANSPORT_INFO_0"/>
+        /// <seealso cref="SERVER_TRANSPORT_INFO_1"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetServerTransportDel(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string servername,
+            [In] int level,
+            [In, MarshalAs(UnmanagedType.LPStruct)] object bufptr
+            );
+        #endregion
+        #region NetServerTransportEnum function
+        /// <summary>
+        /// The <see cref="NetServerTransportEnum"/> function supplies information about transport protocols that are managed by the server.
+        /// </summary>
+        /// <param name="servername">A string that specifies the DNS or NetBIOS name of the remote server on which the function is to execute. If this parameter is <c>null</c>, the local computer is used. </param>
+        /// <param name="level">
+        /// Specifies the information level of the data. This parameter can be the following values.
+        /// <list type="table">
+        /// <listheader><term>Value</term> - <description>Meaning</description></listheader>
+        /// <term><c>0</c> (zero)</term> - <description>Specifies information about the transport protocol, including name, address, and location on the network. The <paramref name="bufptr"/> parameter specifies a <see cref="SERVER_TRANSPORT_INFO_0"/> structure.</description>
+        /// <term><c>1</c></term> - <description>Specifies information about the transport protocol, including name, address, network location, and domain. The <paramref name="bufptr"/> parameter specifies a <see cref="SERVER_TRANSPORT_INFO_1"/> structure.</description>
+        /// </list>
+        /// </param>
+        /// <param name="bufptr">
+        /// <para>A variable that receives a buffer containing the data. The format of this data depends on the value of the <paramref name="level"/> parameter. </para>
+        /// <para>The system allocates the memory for this buffer. The handle should be wrapped in a <c>using</c> block, or the application should otherwise make sure that the <see cref="SafeHandle.Dispose()"/> method is called on the returned handle when it is no longer needed. Note that you must free the buffer even if the function fails with <see cref="ERROR_MORE_DATA"/>.</para>
+        /// </param>
+        /// <param name="prefmaxlen">Specifies the preferred maximum length of returned data, in bytes. If you specify <see cref="MAX_PREFERRED_LENGTH"/>, the function allocates the amount of memory required for the data. If you specify another value in this parameter, it can restrict the number of bytes that the function returns. If the buffer size is insufficient to hold all entries, the function returns <see cref="ERROR_MORE_DATA"/>.</param>
+        /// <param name="entriesread">A variable that receives the count of elements actually enumerated.</param>
+        /// <param name="totalentries">A variable that receives the total number of entries that could have been enumerated from the current resume position. Note that applications should consider this value only as a hint.</param>
+        /// <param name="resumehandle">A reference to a variable that contains a resume handle which is used to continue an existing server transport search. The handle should be zero on the first call and left unchanged for subsequent calls. If this parameter is omitted, no resume handle is stored.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_INVALID_LEVEL"/></term><description>The value specified for the <paramref name="level"/> parameter is invalid.</description>
+        /// <term><see cref="ERROR_MORE_DATA"/></term><description>More entries are available. Specify a large enough buffer to receive all entries.</description>
+        /// <term><see cref="ERROR_NOT_ENOUGH_MEMORY"/></term><description>Insufficient memory is available.</description>
+        /// <term><see cref="NERR_BufTooSmall"/></term><description>The supplied buffer is too small.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>Only Authenticated Users can successfully call this function.</para>
+        /// <para><strong>Windows XP/2000:</strong> No special group membership is required to successfully execute this function.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370630.aspx">NetServerTransportEnum function</a></para>
+        /// </remarks>
+        /// <seealso cref="SERVER_TRANSPORT_INFO_0"/>
+        /// <seealso cref="SERVER_TRANSPORT_INFO_1"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetServerTransportEnum(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string servername,
+            [In] int level,
+            out ServerTransportInfoArrayNetApiBufferHandle bufptr,
+            [In] int prefmaxlen,
+            out int entriesread,
+            out int totalentries,
+            [Optional] ref IntPtr resumehandle
             );
         #endregion
     }

@@ -8,7 +8,7 @@
 void main()
 {
 	const int size = sizeof(NET_COMPUTER_NAME_TYPE);
-	const int value = SV_PLATFORM_ID_PARMNUM;
+	const int value = MAX_PATH;
 
 	void* ptr = NetGetDCName;
 }

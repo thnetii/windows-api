@@ -3106,6 +3106,59 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
             out ServerInfoNetApiBufferHandle bufptr
             );
         #endregion
+        #region NetServerSetInfo function
+        /// <summary>
+        /// The <see cref="NetServerSetInfo"/> function sets a server's operating parameters; it can set them individually or collectively. The information is stored in a way that allows it to remain in effect after the system has been reinitialized.
+        /// </summary>
+        /// <param name="servername">A string that specifies the name of the remote server on which the function is to execute. If this parameter is <c>null</c>, the local computer is used. </param>
+        /// <param name="level">
+        /// Specifies the information level of the data. This parameter can be one of the following values.
+        /// <list type="table">
+        /// <listheader><term>Value</term> <description>Meaning</description></listheader>
+        /// <term><c>100</c></term> - <description>Specifies the server name, type, and associated software. The <paramref name="buf"/> specifies a <see cref="SERVER_INFO_101"/> structure.</description>
+        /// <term><c>101</c></term> - <description>Specifies the server name, type, associated software, and other attributes. The <paramref name="buf"/> specifies a <see cref="SERVER_INFO_102"/> structure.</description>
+        /// <term><c>402</c></term> - <description>Specifies detailed information about the server. The <paramref name="buf"/> specifies a <see cref="SERVER_INFO_402"/> structure.</description>
+        /// <term><c>403</c></term> - <description>Specifies detailed information about the server. The <paramref name="buf"/> specifies a <see cref="SERVER_INFO_403"/> structure.</description>
+        /// </list>
+        /// <para>In addition, levels 1001-1006, 1009-1011, 1016-1018, 1021, 1022, 1028, 1029, 1037, and 1043 are valid based on the restrictions for LAN Manager systems.</para>
+        /// </param>
+        /// <param name="buf">An object instance containing the information to set. The format of the data depends on the <paramref name="level"/> parameter.</param>
+        /// <param name="ParmError">A variable that receives the index of the first member of the server information structure that causes the <see cref="ERROR_INVALID_PARAMETER"/> error. If this parameter is omitted, the index is not returned on error.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_ACCESS_DENIED"/></term><description>The user does not have access to the requested information.</description>
+        /// <term><see cref="ERROR_INVALID_LEVEL"/></term><description>The value specified for the <paramref name="level"/> parameter is invalid.</description>
+        /// <term><see cref="ERROR_INVALID_PARAMETER"/></term><description>The specified parameter is invalid. <paramref name="ParmError"/> specifies the first parameter whose value is invalid.</description>
+        /// <term><see cref="ERROR_NOT_ENOUGH_MEMORY"/></term><description>Insufficient memory is available.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>Only members of the Administrators or Server Operators local group can successfully execute the <see cref="NetServerSetInfo"/> function.</para>
+        /// <para>If you are programming for Active Directory, you may be able to call certain Active Directory Service Interface (ADSI) methods to achieve the same results you can achieve by calling the network management server functions. For more information, see the <see cref="IADsComputer"/> interface reference.</para>
+        /// <para>If the <see cref="NetServerSetInfo"/> function returns <see cref="ERROR_INVALID_PARAMETER"/>, you can use the <paramref name="ParmError"/> parameter to indicate the first member of the server information structure that is invalid. (A server information structure begins with <var>SERVER_INFO_</var> and its format is specified by the <paramref name="ParmError"/> parameter.) The values that can be returned in the <paramref name="ParmError"/> parameter and the corresponding structure member that is in error are specified by the <see cref="SERVER_INFO_PARMNUM"/> enumeration type.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370626.aspx">NetServerSetInfo function</a></para>
+        /// </remarks>
+        /// <seealso cref="NetServerGetInfo"/>
+        /// <seealso cref="SERVER_INFO_101"/>
+        /// <seealso cref="SERVER_INFO_102"/>
+        /// <seealso cref="SERVER_INFO_402"/>
+        /// <seealso cref="SERVER_INFO_403"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetServerSetInfo(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string servername,
+            [In] int level,
+            [In, MarshalAs(UnmanagedType.LPStruct)] object buf,
+            [Optional] out SERVER_INFO_PARMNUM ParmError
+            );
+        #endregion
     }
 }
 

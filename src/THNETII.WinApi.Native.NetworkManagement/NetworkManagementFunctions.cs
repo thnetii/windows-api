@@ -4,12 +4,12 @@ using System.Runtime.InteropServices;
 using System.Text;
 using THNETII.InteropServices.SafeHandles;
 
-using static Microsoft.Win32.WinApi.SecurityIdentity.Authorization.AccountRightsConstants;
 using static Microsoft.Win32.WinApi.Networking.NetworkManagement.JOB_FLAGS;
 using static Microsoft.Win32.WinApi.Networking.NetworkManagement.GROUP_INFO_PARMNUM;
 using static Microsoft.Win32.WinApi.Networking.NetworkManagement.LanManConstants;
 using static Microsoft.Win32.WinApi.Networking.NetworkManagement.LG_INCLUDE_FLAG;
 using static Microsoft.Win32.WinApi.Networking.NetworkManagement.LOCALGROUP_INFO_PARMNUM;
+using static Microsoft.Win32.WinApi.Networking.NetworkManagement.NETSETUP_NAME_TYPE;
 using static Microsoft.Win32.WinApi.Networking.NetworkManagement.NETSETUP_OPTIONS;
 using static Microsoft.Win32.WinApi.Networking.NetworkManagement.NETSETUP_PROVISION_FLAGS;
 using static Microsoft.Win32.WinApi.Networking.NetworkManagement.SV_TYPE_FLAGS;
@@ -4411,6 +4411,62 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
             [Optional] out USER_INFO_PARMNUM parm_err
             );
         #endregion
+        #region NetValidateName function
+        /// <summary>
+        /// The <see cref="NetValidateName"/> function verifies that a name is valid for name type specified (computer name, workgroup name, domain name, or DNS computer name).
+        /// </summary>
+        /// <param name="lpServer">A string that specifies the DNS or NetBIOS name of the computer on which to call the function. If this parameter is <c>null</c>, the local computer is used.</param>
+        /// <param name="lpName">A string that specifies the name to validate. Depending on the value specified in the <paramref name="NameType"/> parameter, the <paramref name="lpName"/> parameter can specify a computer name, workgroup name, domain name, or DNS computer name.</param>
+        /// <param name="lpAccount">If the <paramref name="lpName"/> parameter is a domain name, this parameter specifies an account name to use when connecting to the domain controller. The string must specify either a domain NetBIOS name and user account (for example, <c>"REDMOND\user"</c>) or the user principal name (UPN) of the user in the form of an Internet-style login name (for example, <c>"someone@example.com"</c>). If this parameter is <c>null</c>, the caller's context is used.</param>
+        /// <param name="lpPassword">If the <paramref name="lpAccount"/> parameter specifies an account name, this parameter must specify the password to use when connecting to the domain controller. Otherwise, this parameter must be <c>null</c>.</param>
+        /// <param name="NameType">The type of the name passed in the <paramref name="lpName"/> parameter to validate. This parameter can be one of the values from the <see cref="NETSETUP_NAME_TYPE"/> enumeration type.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="DNS_ERROR_INVALID_NAME_CHAR"/></term><description>The DNS name contains an invalid character. This error is returned if the <paramref name="NameType"/> parameter specified is <see cref="NetSetupDnsMachine"/> and the DNS name in the <paramref name="lpName"/> parameter contains an invalid character. </description>
+        /// <term><see cref="DNS_ERROR_NON_RFC_NAME"/></term><description>The DNS name does not comply with RFC specifications. This error is returned if the <paramref name="NameType"/> parameter specified is <see cref="NetSetupDnsMachine"/> and the DNS name in the <paramref name="lpName"/> parameter does not comply with RFC specifications. </description>
+        /// <term><see cref="ERROR_DUP_NAME"/></term><description>A duplicate name already exists on the network.</description>
+        /// <term><see cref="ERROR_INVALID_COMPUTERNAME"/></term><description>The format of the specified computer name is not valid. </description>
+        /// <term><see cref="ERROR_INVALID_PARAMETER"/></term><description>A parameter is incorrect. This error is returned if the <paramref name="lpName"/> parameter is <c>null</c> or the <paramref name="NameType"/> parameter is specified as <see cref="NetSetupUnknown"/> or an unknown nametype. </description>
+        /// <term><see cref="ERROR_NO_SUCH_DOMAIN"/></term><description>The specified domain does not exist.</description>
+        /// <term><see cref="ERROR_NOT_SUPPORTED"/></term><description>The request is not supported. This error is returned if a remote computer was specified in the <paramref name="lpServer"/> parameter and this call is not supported on the remote computer.</description>
+        /// <term><see cref="NERR_InvalidComputer"/></term><description>The specified computer name is not valid. This error is returned if the <paramref name="NameType"/> parameter specified is <see cref="NetSetupDnsMachine"/> or <see cref="NetSetupMachine"/> and the specified computer name is not valid.</description>
+        /// <term><see cref="NERR_InvalidWorkgroupName"/></term><description>The specified workgroup name is not valid. This error is returned if the <paramref name="NameType"/> parameter specified is <see cref="NetSetupWorkgroup"/> and the specified workgroup name is not valid.</description>
+        /// <term><see cref="RPC_S_SERVER_UNAVAILABLE"/></term><description>The RPC server is not available. This error is returned if a remote computer was specified in the <paramref name="lpServer"/> parameter and the RPC server is not available.</description>
+        /// <term><see cref="RPC_E_REMOTE_DISABLED"/></term><description>Remote calls are not allowed for this process. This error is returned if a remote computer was specified in the lpServer parameter and remote calls are not allowed for this process.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>The <see cref="NetValidateName"/> function validates a name based on the nametype specified. </para>
+        /// <para>If the <paramref name="NameType"/> parameter is <see cref="NetSetupMachine"/>, the name passed in the <paramref name="lpName"/> parameter must be syntactically correct as a NetBIOS name and the name must not currently be in use on the network.</para>
+        /// <para>If the <paramref name="NameType"/> parameter is <see cref="NetSetupWorkgroup"/>, the name passed in the <paramref name="lpName"/> parameter must be syntactically correct as a NetBIOS name, the name must not currently be in use on the network as a unique name, and the name must be different from the computer name.</para>
+        /// <para>If the <paramref name="NameType"/> parameter is <see cref="NetSetupDomain"/>, the name passed in the <paramref name="lpName"/> parameter must be syntactically correct as a NetBIOS or DNS name and the name must currently be registered as a domain name.</para>
+        /// <para>If the <paramref name="NameType"/> parameter is <see cref="NetSetupNonExistentDomain"/>, the name passed in the <paramref name="lpName"/> parameter must be syntactically correct as a NetBIOS or DNS name and the name must currently not be registered as a domain name.</para>
+        /// <para>If the <paramref name="NameType"/> parameter is <see cref="NetSetupDnsMachine"/>, the name passed in the <paramref name="lpName"/> parameter must be syntactically correct as a DNS name.</para>
+        /// <para>NetBIOS names are limited to maximum length of 16 characters.</para>
+        /// <para>No special group membership is required to successfully execute the <see cref="NetValidateName"/> function.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370660.aspx">NetValidateName function</a></para>
+        /// </remarks>
+        /// <seealso cref="NetGetJoinableOUs"/>
+        /// <seealso cref="NetGetJoinInformation"/>
+        /// <seealso cref="NetJoinDomain"/>
+        /// <seealso cref="NetRenameMachineInDomain"/>
+        /// <seealso cref="NetUnjoinDomain"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetValidateName(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string lpServer,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string lpName,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string lpAccount,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string lpPassword,
+            [In] NETSETUP_NAME_TYPE NameType
+            );
+        #endregion
     }
 }
-

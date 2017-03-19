@@ -12,6 +12,7 @@ using static Microsoft.Win32.WinApi.Networking.NetworkManagement.LOCALGROUP_INFO
 using static Microsoft.Win32.WinApi.Networking.NetworkManagement.NETSETUP_NAME_TYPE;
 using static Microsoft.Win32.WinApi.Networking.NetworkManagement.NETSETUP_OPTIONS;
 using static Microsoft.Win32.WinApi.Networking.NetworkManagement.NETSETUP_PROVISION_FLAGS;
+using static Microsoft.Win32.WinApi.Networking.NetworkManagement.NET_VALIDATE_PASSWORD_TYPE;
 using static Microsoft.Win32.WinApi.Networking.NetworkManagement.SV_TYPE_FLAGS;
 using static Microsoft.Win32.WinApi.Networking.NetworkManagement.SVTI2_FLAGS;
 using static Microsoft.Win32.WinApi.Networking.NetworkManagement.USER_FLAGS;
@@ -4466,6 +4467,96 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
             [In, MarshalAs(UnmanagedType.LPWStr)] string lpAccount,
             [In, MarshalAs(UnmanagedType.LPWStr)] string lpPassword,
             [In] NETSETUP_NAME_TYPE NameType
+            );
+        #endregion
+        #region NetValidatePasswordPolicyFree function
+        /// <summary>
+        /// The <see cref="NetValidatePasswordPolicyFree"/> function frees the memory that the <see cref="NetValidatePasswordPolicy"/> function allocates for the <var>OutputArg</var> parameter, which is a <see cref="NET_VALIDATE_OUTPUT_ARG"/> structure.
+        /// </summary>
+        /// <param name="OutputArg">Pointer to the memory allocated for the <var>OutputArg</var> parameter by a call to the <see cref="NetValidatePasswordPolicy"/> function.</param>
+        /// <returns>
+        /// <para>If the function frees the memory, or if there is no memory to free from a previous call to <see cref="NetValidatePasswordPolicy"/>, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>If the function fails, the return value is a system error code.</para>
+        /// </returns>
+        /// <remarks>
+        /// No special group membership is required to successfully execute this function.
+        /// <para><strong>Minimum supported client</strong>: Not Supported</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370662.aspx">NetValidatePasswordPolicyFree function</a></para>
+        /// </remarks>
+        /// <seealso cref="NetValidatePasswordPolicy"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetValidatePasswordPolicyFree(
+            [In] IntPtr OutputArg
+            );
+        #endregion
+        #region NetValidatePasswordPolicy function
+        /// <summary>
+        /// The <see cref="NetValidatePasswordPolicy"/> function allows an application to check password compliance against an application-provided account database and verify that passwords meet the complexity, aging, minimum length, and history reuse requirements of a password policy. 
+        /// </summary>
+        /// <param name="ServerName">A string specifying the name of the remote server on which the function is to execute. This string must begin with <c>\\</c> followed by the remote server name. If this parameter is <c>null</c>, the local computer is used.</param>
+        /// <param name="Qualifier">Reserved for future use. This parameter must be <see cref="IntPtr.Zero"/>.</param>
+        /// <param name="ValidationType">
+        /// <para>The type of password validation to perform. This parameter must be one of the following enumerated constant values. </para>
+        /// <para>These values have the following meanings.</para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Value</term> - <description>Meaning</description></listheader>
+        /// <term><see cref="NetValidateAuthentication"/></term> - <description>The application is requesting password validation during authentication. The <paramref name="InputArg"/> parameter points to a <see cref="NET_VALIDATE_AUTHENTICATION_INPUT_ARG"/> structure. This type of validation enforces password expiration and account lockout policy.</description>
+        /// <term><see cref="NetValidatePasswordChange"/></term> - <description>The application is requesting password validation during a password change operation. The <paramref name="InputArg"/> parameter points to a <see cref="NET_VALIDATE_PASSWORD_CHANGE_INPUT_ARG"/> structure.</description>
+        /// <term><see cref="NetValidatePasswordReset"/></term> - <description>The application is requesting password validation during a password reset operation. The <paramref name="InputArg"/> parameter points to a <see cref="NET_VALIDATE_PASSWORD_RESET_INPUT_ARG"/> structure. You can also reset the "lockout state" of a user account by specifying this structure.</description>
+        /// </list>
+        /// </para>
+        /// </param>
+        /// <param name="InputArg">A structure that depends on the type of password validation to perform. The type of structure depends on the value of the <paramref name="ValidationType"/> parameter. For more information, see the description of the <paramref name="ValidationType"/> parameter.</param>
+        /// <param name="OutputArg">
+        /// <para>If the <see cref="NetValidatePasswordPolicy"/> function succeeds (the return value is <see cref="NERR_Success"/>), then the function allocates an buffer that contains the results of the operation. The <paramref name="OutputArg"/> parameter contains a pointer to a <see cref="NET_VALIDATE_OUTPUT_ARG"/> structure. The application must examine <see cref="NET_VALIDATE_OUTPUT_ARG.ValidationStatus"/> member in the <see cref="NET_VALIDATE_OUTPUT_ARG"/> structure pointed to by the <paramref name="OutputArg"/> parameter to determine the results of the password policy validation check. The <see cref="NET_VALIDATE_OUTPUT_ARG"/> structure contains a <see cref="NET_VALIDATE_PERSISTED_FIELDS"/> structure with changes to persistent password-related information, and the results of the password validation. The application must plan to persist all persisted the fields in the <see cref="NET_VALIDATE_PERSISTED_FIELDS"/> structure aside from the <see cref="NET_VALIDATE_OUTPUT_ARG.ValidationStatus"/> member as information along with the user object information and provide the required fields from the persisted information when calling this function in the future on the same user object.</para>
+        /// <para>If the <see cref="NetValidatePasswordPolicy"/> function fails (the return value is nonzero), then <paramref name="OutputArg"/> parameter is set to <c>null</c> and password policy could not be examined.</para>
+        /// <para>For more information, see the Return Values and Remarks sections of this function.</para>
+        /// </param>
+        /// <returns>
+        /// <para>If the function succeeds, and the password is authenticated, changed, or reset, the return value is <see cref="NERR_Success"/> and the function allocates an <paramref name="OutputArg"/> parameter.</para>
+        /// <para>
+        /// If the function fails, the <paramref name="OutputArg"/> parameter is <c>null</c> and the return value is a system error code that can be one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_INVALID_PARAMETER"/></term><description>A parameter is incorrect. This error is returned if the <paramref name="InputArg"/> or <paramref name="OutputArg"/> parameters are <c>null</c>. This error is also returned if the <paramref name="Qualifier"/> parameter is not <c>null</c> or if the <paramref name="ValidationType"/> parameter is not one of the allowed values. </description>
+        /// <term><see cref="ERROR_NOT_ENOUGH_MEMORY"/></term><description>Not enough memory is available to complete the operation.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>The <see cref="NetValidatePasswordPolicy"/> function is designed to allow applications to validate passwords for users that are in an account database provided by the application. This function can also be used to verify that passwords meet the complexity, aging, minimum length, and history reuse requirements of a password policy. This function also provides the means for an application to implement an account-lockout mechanism.</para>
+        /// <para>The <see cref="NetValidatePasswordPolicy"/> function does not validate passwords in Active Directory accounts and cannot be used for this purpose. The only policy that this function checks a password against in Active Directory accounts is the password complexity (the password strength). </para>
+        /// <para>A typical scenario for the use of the <see cref="NetValidatePasswordPolicy"/> function would be enforcing the choice of strong passwords by users for web applications and applications that allow password-protected documents. Another use of this function could be checking password complexity in a situation in which a password is attached to a functional operation rather than to a user account; for example, passwords that are used with Secure Multipurpose Internet Mail Extensions (S/MIME) certificate-based public keys.</para>
+        /// <para>If you call this function on a domain controller that is running Active Directory, access is allowed or denied based on the access control list (ACL) for the <a href="https://msdn.microsoft.com/en-us/library/aa379557.aspx">securable object</a>. The default ACL permits all authenticated users and members of the "<a href="https://msdn.microsoft.com/en-us/library/aa375347.aspx">Pre-Windows 2000 compatible access</a>" group to view the information. If you call this function on a member server or workstation, all authenticated users can view the information. For information about anonymous access and restricting anonymous access on these platforms, see <a href="https://msdn.microsoft.com/en-us/library/aa370891.aspx">Security Requirements for the Network Management Functions</a>. For more information on ACLs, ACEs, and access tokens, see <a href="https://msdn.microsoft.com/en-us/library/aa374876.aspx">Access Control Model</a>.</para>
+        /// <para>The security descriptor of the Domain object is used to perform the access check for the <see cref="NetValidatePasswordPolicy"/> function. </para>
+        /// <para>To call <see cref="NetValidatePasswordPolicy"/> in a security context that is not the default, first call the <see cref="LogonUser"/> function, specifying <see cref="LOGON32_LOGON_NEW_CREDENTIALS"/> in the <var>dwLogonType</var> parameter, and then call <see cref="NetValidatePasswordPolicy"/> under impersonation. For more information about impersonation, see <a href="https://msdn.microsoft.com/en-us/library/aa376391.aspx">Client Impersonation</a>.</para>
+        /// <para>If the return code of the <see cref="NetValidatePasswordPolicy"/> function is <see cref="NERR_Success"/> then the function allocates a buffer pointed to by the <paramref name="OutputArg"/> parameter that contains a <see cref="NET_VALIDATE_OUTPUT_ARG"/> structure with the results of the operation. The application must examine <see cref="NET_VALIDATE_OUTPUT_ARG.ValidationStatus"/> member in the <see cref="NET_VALIDATE_OUTPUT_ARG"/> structure to determine the results of the password policy validation check. For more information, see <see cref="NET_VALIDATE_OUTPUT_ARG"/>.</para>
+        /// <para>Note that it is the application's responsibility to save all the data in the <see cref="NET_VALIDATE_OUTPUT_ARG.ChangedPersistedFields"/> member of the <see cref="NET_VALIDATE_OUTPUT_ARG"/> structure as well as any User object information. The next time the application calls <see cref="NetValidatePasswordPolicy"/> on the same instance of the User object, the application must provide the required fields from the persistent information.</para>
+        /// <para>When you call <see cref="NetValidatePasswordPolicy"/> and specify <see cref="NET_VALIDATE_PASSWORD_CHANGE_INPUT_ARG"/> or <see cref="NET_VALIDATE_PASSWORD_RESET_INPUT_ARG"/> in <paramref name="InputArg"/> parameter, the call also validates the password by passing it through the password filter DLL that the computer is configured to use. For more information about password filters, see <a href="https://msdn.microsoft.com/en-us/library/ms722496.aspx">Using Password Filters</a>.</para>
+        /// <para>If the return value from the <see cref="NetValidatePasswordPolicy"/> function is nonzero then <paramref name="OutputArg"/> parameter is set to <c>null</c> and password policy could not be examined.</para>
+        /// <para>The handle returned by the <paramref name="OutputArg"/> parameter should be wrapped in a <c>using</c> block so that the memory allocated for the <paramref name="OutputArg"/> parameter is freed properly once it is no longer needed. Otherwise, the application should make sure that the <see cref="SafeHandle.Dispose()"/> is called on the returned handle to manually free the allocated memory.</para>
+        /// <para><strong>Minimum supported client</strong>: Not Supported</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370661.aspx">NetValidatePasswordPolicy function</a></para>
+        /// </remarks>
+        /// <seealso cref="LogonUser"/>
+        /// <seealso cref="NET_VALIDATE_AUTHENTICATION_INPUT_ARG"/>
+        /// <seealso cref="NET_VALIDATE_OUTPUT_ARG"/>
+        /// <seealso cref="NET_VALIDATE_PASSWORD_CHANGE_INPUT_ARG"/>
+        /// <seealso cref="NET_VALIDATE_PASSWORD_RESET_INPUT_ARG"/>
+        /// <seealso cref="NET_VALIDATE_PERSISTED_FIELDS"/>
+        /// <seealso cref="NetValidatePasswordPolicyFree"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetValidatePasswordPolicy(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string ServerName,
+            [In] IntPtr Qualifier,
+            [In] NET_VALIDATE_PASSWORD_TYPE ValidationType,
+            [In, MarshalAs(UnmanagedType.LPStruct)] object InputArg,
+            out NetValidateOutputBufferHandle OutputArg
             );
         #endregion
     }

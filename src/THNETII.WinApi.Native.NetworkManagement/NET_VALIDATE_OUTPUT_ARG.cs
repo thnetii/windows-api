@@ -1,7 +1,11 @@
 ﻿using Microsoft.Win32.WinApi.WinError;
+using System;
+using System.ComponentModel;
 using System.Runtime.InteropServices;
+using THNETII.InteropServices.SafeHandles;
 
 using static Microsoft.Win32.WinApi.Networking.NetworkManagement.NET_VALIDATE_PASSWORD_TYPE;
+using static Microsoft.Win32.WinApi.Networking.NetworkManagement.NetworkManagementFunctions;
 using static Microsoft.Win32.WinApi.WinError.Win32ErrorCode;
 
 namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
@@ -67,5 +71,24 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
         /// </remarks>
         [MarshalAs(UnmanagedType.I4)]
         public Win32ErrorCode ValidationStatus;
+    }
+
+    public class NetValidateOutputBufferHandle : SafeHandle, ISafeHandleReadableAsSimpleStructure<NET_VALIDATE_OUTPUT_ARG>
+    {
+        /// <inheritdoc />
+        public override bool IsInvalid => handle == IntPtr.Zero;
+
+        /// <inheritdoc />
+        protected override bool ReleaseHandle()
+        {
+            var win32ErrorCode = NetValidatePasswordPolicyFree(handle);
+            if (win32ErrorCode == NERR_Success)
+                return true;
+            throw new Win32Exception((int)win32ErrorCode);
+        }
+
+        protected NetValidateOutputBufferHandle() : this(ownsHandle: true) { }
+        protected NetValidateOutputBufferHandle(bool ownsHandle) : this(IntPtr.Zero, ownsHandle) { }
+        protected NetValidateOutputBufferHandle(IntPtr invalidHandleValue, bool ownsHandle = true) : base(invalidHandleValue, ownsHandle) { }
     }
 }

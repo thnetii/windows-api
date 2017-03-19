@@ -161,4 +161,34 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
     {
 
     }
+
+    public class UserInfoNetApiBufferHandle : NetApiBufferHandle
+    {
+
+    }
+
+    public class UserInfoArrayNetApiBufferHandle : NetApiBufferHandle
+    {
+
+    }
+
+    public class GroupUserInfoNetApiBufferHandle : NetApiBufferHandle
+    {
+
+    }
+
+    public class GroupUserInfoArrayNetApiBufferHandle : NetApiBufferHandle
+    {
+
+    }
+
+    public class LocalGroupUsersArrayInfoNetApiBufferHandle : NetApiBufferHandle
+    {
+
+    }
+
+    public class UserModalsInfoNetApiBufferHandle : NetApiBufferHandle
+    {
+
+    }
 }

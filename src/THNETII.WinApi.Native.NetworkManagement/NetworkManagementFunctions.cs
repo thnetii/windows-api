@@ -4,14 +4,17 @@ using System.Runtime.InteropServices;
 using System.Text;
 using THNETII.InteropServices.SafeHandles;
 
+using static Microsoft.Win32.WinApi.SecurityIdentity.Authorization.AccountRightsConstants;
 using static Microsoft.Win32.WinApi.Networking.NetworkManagement.JOB_FLAGS;
 using static Microsoft.Win32.WinApi.Networking.NetworkManagement.GROUP_INFO_PARMNUM;
 using static Microsoft.Win32.WinApi.Networking.NetworkManagement.LanManConstants;
+using static Microsoft.Win32.WinApi.Networking.NetworkManagement.LG_INCLUDE_FLAG;
 using static Microsoft.Win32.WinApi.Networking.NetworkManagement.LOCALGROUP_INFO_PARMNUM;
 using static Microsoft.Win32.WinApi.Networking.NetworkManagement.NETSETUP_OPTIONS;
 using static Microsoft.Win32.WinApi.Networking.NetworkManagement.NETSETUP_PROVISION_FLAGS;
 using static Microsoft.Win32.WinApi.Networking.NetworkManagement.SV_TYPE_FLAGS;
 using static Microsoft.Win32.WinApi.Networking.NetworkManagement.SVTI2_FLAGS;
+using static Microsoft.Win32.WinApi.Networking.NetworkManagement.USER_FLAGS;
 using static Microsoft.Win32.WinApi.WinError.HRESULT;
 using static Microsoft.Win32.WinApi.WinError.Win32ErrorCode;
 
@@ -3662,6 +3665,750 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
             [In, MarshalAs(UnmanagedType.LPWStr)] string UseName,
             [In] int Level,
             out UseInfoNetApiBufferHandle BufPtr
+            );
+        #endregion
+        #region NetUserAdd function
+        /// <summary>
+        /// The <see cref="NetUserAdd"/> function adds a user account and assigns a password and privilege level.
+        /// </summary>
+        /// <param name="servername">A string that specifies the DNS or NetBIOS name of the remote server on which the function is to execute. If this parameter is <c>null</c>, the local computer is used. </param>
+        /// <param name="level">
+        /// Specifies the information level of the data. This parameter can be one of the following values. 
+        /// <list type="table">
+        /// <listheader><term>Value</term> - <description>Meaning</description></listheader>
+        /// <term><c>1</c></term> - <description>Specifies information about the user account. The <paramref name="buf"/> parameter specifies a <see cref="USER_INFO_1"/> structure. <br/>When you specify this level, the call initializes certain attributes to their default values. For more information, see the following Remarks section.</description>
+        /// <term><c>2</c></term> - <description>Specifies level one information and additional attributes about the user account. The <paramref name="buf"/> parameter specifies a <see cref="USER_INFO_2"/> structure. </description>
+        /// <term><c>3</c></term> - <description>Specifies level two information and additional attributes about the user account. This level is valid only on servers. The <paramref name="buf"/> parameter specifies a <see cref="USER_INFO_3"/> structure. Note that it is recommended that you use <see cref="USER_INFO_4"/> instead.</description>
+        /// <term><c>4</c></term> - <description>Specifies level two information and additional attributes about the user account. This level is valid only on servers. The <paramref name="buf"/> parameter specifies a <see cref="USER_INFO_4"/> structure. <br/><strong>Windows 2000:</strong> This level is not supported.</description>
+        /// </list>
+        /// </param>
+        /// <param name="buf">An object instance that specifies the data. The format of this data depends on the value of the <paramref name="level"/> parameter.</param>
+        /// <param name="parm_err">A variable that receives the index of the first member of the user information structure that causes <see cref="ERROR_INVALID_PARAMETER"/>. If this parameter is omitted, the index is not returned on error.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_ACCESS_DENIED"/></term><description>The user does not have access to the requested information.</description>
+        /// <term><see cref="NERR_InvalidComputer"/></term><description>The computer name is invalid.</description>
+        /// <term><see cref="NERR_NotPrimary"/></term><description>The operation is allowed only on the primary domain controller of the domain.</description>
+        /// <term><see cref="NERR_GroupExists"/></term><description>The group already exists.</description>
+        /// <term><see cref="NERR_UserExists"/></term><description>The user account already exists.</description>
+        /// <term><see cref="NERR_PasswordTooShort"/></term><description>The password is shorter than required. (The password could also be too long, be too recent in its change history, not have enough unique characters, or not meet another password policy requirement.)</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>If you are programming for Active Directory, you may be able to call certain Active Directory Service Interface (ADSI) methods to achieve the same functionality you can achieve by calling the network management user functions. For more information, see <see cref="IADsUser"/> and <see cref="IADsComputer"/>.</para>
+        /// <para>If you call this function on a domain controller that is running Active Directory, access is allowed or denied based on the access control list (ACL) for the <a href="https://msdn.microsoft.com/en-us/library/aa379557.aspx">securable object</a>. The default ACL permits only Domain Admins and Account Operators to call this function. On a member server or workstation, only Administrators and Power Users can call this function. For more information, see <a href="https://msdn.microsoft.com/en-us/library/aa370891.aspx">Security Requirements for the Network Management Functions</a>. For more information on ACLs, ACEs, and access tokens, see <a href="https://msdn.microsoft.com/en-us/library/aa374876.aspx">Access Control Model</a>.</para>
+        /// <para>The security descriptor of the user container is used to perform the access check for this function. The caller must be able to create child objects of the user class.</para>
+        /// <para>Server users must use a system in which the server creates a system account for the new user. The creation of this account is controlled by several parameters in the server's LanMan.ini file.</para>
+        /// <para>If the newly added user already exists as a system user, the <see cref="USER_INFO_1.usri1_home_dir"/> member of the <see cref="USER_INFO_1"/> structure is ignored.</para>
+        /// <para>
+        /// When you call the <see cref="NetUserAdd"/> function and specify information level <c>1</c>, the call initializes the additional members in the <see cref="USER_INFO_2"/>, <see cref="USER_INFO_3"/>, and <see cref="USER_INFO_4"/> structures to their default values. You can change the default values by making subsequent calls to the <see cref="NetUserSetInfo"/> function. The default values supplied are listed following. (The prefix <var>usriX</var> indicates that the member can begin with multiple prefixes, for example, <var>usri2_</var> or <var>usri4_</var>.)
+        /// <list type="table">
+        /// <listheader><term>Member</term><description>Default Value</description></listheader>
+        /// <term><var>usriX_auth_flags</var></term><description>None (<c>0</c> zero)</description>
+        /// <term><var>usriX_full_name</var></term><description>None (<c>null</c> string)</description>
+        /// <term><var>usriX_usr_comment</var></term><description>None (<c>null</c> string)</description>
+        /// <term><var>usriX_parms</var></term><description>None (<c>null</c> string)</description>
+        /// <term><var>usriX_workstations</var></term><description>All (<c>null</c> string)</description>
+        /// <term><var>usriX_acct_expires</var></term><description>Never (<see cref="TIMEQ_FOREVER"/>)</description>
+        /// <term><var>usriX_max_storage</var></term><description>Unlimited (<see cref="USER_MAXSTORAGE_UNLIMITED"/>)</description>
+        /// <term><var>usriX_logon_hours</var></term><description>Logon allowed at any time (each element <c>0xFF</c>; all bits set to <c>1</c>)</description>
+        /// <term><var>usriX_logon_server</var></term><description>Any domain controller (<code>\\*</code>)</description>
+        /// <term><var>usriX_country_code</var></term><description>0</description>
+        /// <term><var>usriX_code_page</var></term><description>0</description>
+        /// </list>
+        /// </para>
+        /// <para>User account names are limited to 20 characters and group names are limited to 256 characters. In addition, account names cannot be terminated by a period and they cannot include commas or any of the following printable characters: ", /, \, [, ], :, |, &lt;, &gt;, +, =, ;, ?, *. Names also cannot include characters in the range 1-31, which are nonprintable.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370649.aspx">NetUserAdd function</a></para>
+        /// </remarks>
+        /// <seealso cref="NetUserEnum"/>
+        /// <seealso cref="NetUserSetInfo"/>
+        /// <seealso cref="NetUserDel"/>
+        /// <seealso cref="USER_INFO_1"/>
+        /// <seealso cref="USER_INFO_2"/>
+        /// <seealso cref="USER_INFO_4"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetUserAdd(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string servername,
+            [In] int level,
+            [In, MarshalAs(UnmanagedType.LPStruct)] object buf,
+            [Optional] out USER_INFO_PARMNUM parm_err
+            );
+        #endregion
+        #region NetUserChangePassword function
+        /// <summary>
+        /// The <see cref="NetUserChangePassword"/> function changes a user's password for a specified network server or domain.
+        /// </summary>
+        /// <param name="domainname">A string that specifies the DNS or NetBIOS name of a remote server or domain on which the function is to execute. If this parameter is <c>null</c>, the logon domain of the caller is used. </param>
+        /// <param name="username">
+        /// <para>A string that specifies a user name. The <see cref="NetUserChangePassword"/> function changes the password for the specified user.</para>
+        /// <para>If this parameter is <c>null</c>, the logon name of the caller is used. For more information, see the function Remarks section.</para>
+        /// </param>
+        /// <param name="oldpassword">A string that specifies the user's old password.</param>
+        /// <param name="newpassword">A string that specifies the user's new password.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_ACCESS_DENIED"/></term><description>The user does not have access to the requested information.</description>
+        /// <term><see cref="ERROR_INVALID_PASSWORD"/></term><description>The user has entered an invalid password.</description>
+        /// <term><see cref="NERR_InvalidComputer"/></term><description>The computer name is invalid.</description>
+        /// <term><see cref="NERR_NotPrimary"/></term><description>The operation is allowed only on the primary domain controller of the domain.</description>
+        /// <term><see cref="NERR_UserNotFound"/></term><description>The user name could not be found.</description>
+        /// <term><see cref="NERR_PasswordTooShort"/></term><description>The password is shorter than required. (The password could also be too long, be too recent in its change history, not have enough unique characters, or not meet another password policy requirement.)</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>If you are programming for Active Directory, you may be able to call certain Active Directory Service Interface (ADSI) methods to achieve the same functionality you can achieve by calling the network management user functions. For more information, see <see cref="IADsUser"/> and <see cref="IADsComputer"/>.</para>
+        /// <para>If you call this function on a domain controller that is running Active Directory, access is allowed or denied based on the access control list (ACL) for the <a href="https://msdn.microsoft.com/en-us/library/aa379557.aspx">securable object</a>. The default ACL permits only Domain Admins and Account Operators to call this function. On a member server or workstation, only Administrators and Power Users can call this function. For more information, see <a href="https://msdn.microsoft.com/en-us/library/aa370891.aspx">Security Requirements for the Network Management Functions</a>. For more information on ACLs, ACEs, and access tokens, see <a href="https://msdn.microsoft.com/en-us/library/aa374876.aspx">Access Control Model</a>.</para>
+        /// <para>The security descriptor of the User object is used to perform the access check for this function. In addition, the caller must have the "Change password" <a href="https://msdn.microsoft.com/en-us/library/ms675747.aspx">control access right</a> on the User object. This right is granted to Anonymous Logon and Everyone by default. </para>
+        /// <para>Note that for the function to succeed, the oldpassword parameter must match the password as it currently exists.</para>
+        /// <para>In some cases, the process that calls the <see cref="NetUserChangePassword"/> function must also have the <see cref="SE_CHANGE_NOTIFY_NAME"/> privilege enabled; otherwise, <see cref="NetUserChangePassword"/> fails and <see cref="Marshal.GetLastWin32Error"/> returns <see cref="ERROR_ACCESS_DENIED"/>. This privilege is not required for the LocalSystem account or for accounts that are members of the administrators group. By default, <see cref="SE_CHANGE_NOTIFY_NAME"/> is enabled for all users, but some administrators may disable the privilege for everyone. For more information about account privileges, see <a href="https://msdn.microsoft.com/en-us/library/aa379306.aspx">Privileges</a> and <a href="https://msdn.microsoft.com/en-us/library/aa375728.aspx">Authorization Constants</a>.</para>
+        /// <para>See <a href="https://msdn.microsoft.com/en-us/library/aa370261.aspx">Forcing a User to Change the Logon Password</a> for a code sample that demonstrates how to force a user to change the logon password on the next logon using the <see cref="NetUserGetInfo"/> and <see cref="NetUserSetInfo"/> functions.</para>
+        /// <para>User account names are limited to 20 characters and group names are limited to 256 characters. In addition, account names cannot be terminated by a period and they cannot include commas or any of the following printable characters: ", /, \, [, ], :, |, &lt;, &gt;, +, =, ;, ?, *. Names also cannot include characters in the range 1-31, which are nonprintable.</para>
+        /// <para>The <see cref="NetUserChangePassword"/> function does not control how the <paramref name="domainname"/> and <paramref name="newpassword"/> parameters are secured when sent over the network to a remote server. Any encryption of these parameters is handled by the Remote Procedure Call (RPC) mechanism supported by the network redirector that provides the network transport. Encryption is also controlled by the security mechanisms supported by the local computer and the security mechanisms supported by remote network server or domain specified in the domainname parameter. For more details on security when the Microsoft network redirector is used and the remote network server is running Microsoft Windows, see the protocol documentation for <a href="http://go.microsoft.com/fwlink/p/?linkid=200126">MS-RPCE</a>, <a href="http://go.microsoft.com/fwlink/p/?linkid=200128">MS-SAMR</a>, <a href="http://go.microsoft.com/fwlink/p/?linkid=200129">MS-SPNG</a>, and <a href="http://go.microsoft.com/fwlink/p/?linkid=200130">MS-NLMP</a>.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370650.aspx">NetUserChangePassword function</a></para>
+        /// </remarks>
+        /// <seealso cref="NetUserSetInfo"/>
+        /// <seealso cref="NetUserGetInfo"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetUserChangePassword(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string domainname,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string username,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string oldpassword,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string newpassword
+            );
+        #endregion
+        #region NetUserDel function
+        /// <summary>
+        /// The <see cref="NetUserDel"/> function deletes a user account from a server.
+        /// </summary>
+        /// <param name="servername">A string that specifies the DNS or NetBIOS name of the remote server on which the function is to execute. If this parameter is <c>null</c>, the local computer is used. </param>
+        /// <param name="username">A string that specifies the name of the user account to delete. For more information, see the function Remarks section.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_ACCESS_DENIED"/></term><description>The user does not have access to the requested information.</description>
+        /// <term><see cref="NERR_InvalidComputer"/></term><description>The computer name is invalid.</description>
+        /// <term><see cref="NERR_NotPrimary"/></term><description>The operation is allowed only on the primary domain controller of the domain.</description>
+        /// <term><see cref="NERR_UserNotFound"/></term><description>The user name could not be found.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>If you are programming for Active Directory, you may be able to call certain Active Directory Service Interface (ADSI) methods to achieve the same functionality you can achieve by calling the network management user functions. For more information, see <see cref="IADsUser"/> and <see cref="IADsComputer"/>.</para>
+        /// <para>If you call this function on a domain controller that is running Active Directory, access is allowed or denied based on the access control list (ACL) for the <a href="https://msdn.microsoft.com/en-us/library/aa379557.aspx">securable object</a>. The default ACL permits only Domain Admins and Account Operators to call this function. On a member server or workstation, only Administrators and Power Users can call this function. For more information, see <a href="https://msdn.microsoft.com/en-us/library/aa370891.aspx">Security Requirements for the Network Management Functions</a>. For more information on ACLs, ACEs, and access tokens, see <a href="https://msdn.microsoft.com/en-us/library/aa374876.aspx">Access Control Model</a>.</para>
+        /// <para>The security descriptor of the User object is used to perform the access check for this function.</para>
+        /// <para>An account cannot be deleted while a user or application is accessing a server resource. If the user was added to the system with a call to the <see cref="NetUserAdd"/> function, deleting the user also deletes the user's system account.</para>
+        /// <para>User account names are limited to 20 characters and group names are limited to 256 characters. In addition, account names cannot be terminated by a period and they cannot include commas or any of the following printable characters: ", /, \, [, ], :, |, &lt;, &gt;, +, =, ;, ?, *. Names also cannot include characters in the range 1-31, which are nonprintable.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370651.aspx">NetUserDel function</a></para>
+        /// </remarks>
+        /// <seealso cref="NetUserAdd"/>
+        /// <seealso cref="NetUserEnum"/>
+        /// <seealso cref="NetUserSetInfo"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetUserDel(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string servername,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string username
+            );
+        #endregion
+        #region NetUserEnum function
+        /// <summary>
+        /// The <see cref="NetUserEnum"/> function retrieves information about all user accounts on a server.
+        /// </summary>
+        /// <param name="servername">A string that specifies the DNS or NetBIOS name of the remote server on which the function is to execute. If this parameter is <c>null</c>, the local computer is used.</param>
+        /// <param name="level">
+        /// Specifies the information level of the data. This parameter can be one of the following values. 
+        /// <list type="table">
+        /// <listheader><term>Value</term> - <description>Meaning</description></listheader>
+        /// <term><c>0</c> (zero)</term> - <description>Return user account names. The <paramref name="bufptr"/> parameter receives an array of <see cref="USER_INFO_0"/> structures.</description>
+        /// <term><c>1</c> </term> - <description>Return detailed information about user accounts. The <paramref name="bufptr"/> parameter receives an array of <see cref="USER_INFO_1"/> structures.</description>
+        /// <term><c>2</c> </term> - <description>Return detailed information about user accounts, including authorization levels and logon information. The <paramref name="bufptr"/> parameter receives an array of <see cref="USER_INFO_2"/> structures.</description>
+        /// <term><c>3</c> </term> - <description>Return detailed information about user accounts, including authorization levels, logon information, RIDs for the user and the primary group, and profile information. The <paramref name="bufptr"/> parameter receives an array of <see cref="USER_INFO_3"/> structures.</description>
+        /// <term><c>10</c> </term> - <description>Return user and account names and comments. The <paramref name="bufptr"/> parameter receives an array of <see cref="USER_INFO_10"/> structures.</description>
+        /// <term><c>11</c> </term> - <description>Return detailed information about user accounts. The <paramref name="bufptr"/> parameter receives an array of <see cref="USER_INFO_11"/> structures.</description>
+        /// <term><c>20</c> </term> - <description>Return the user's name and identifier and various account attributes. The <paramref name="bufptr"/> parameter receives an array of <see cref="USER_INFO_20"/> structures. Note that on Windows XP and later, it is recommended that you use <see cref="USER_INFO_23"/> instead.</description>
+        /// </list>
+        /// </param>
+        /// <param name="filter">A value that specifies the user account types to be included in the enumeration. A value of zero indicates that all normal user, trust data, and machine account data should be included. </param>
+        /// <param name="bufptr">
+        /// <para>A variable for a buffer that receives the information structures. The format of this data depends on the value of the <paramref name="level"/> parameter.</para>
+        /// <para>The system allocates the memory for this buffer. The handle should be wrapped in a <c>using</c> block, or the application should otherwise make sure that the <see cref="SafeHandle.Dispose()"/> method is called on the returned handle when it is no longer needed. Note that you must free the buffer even if the function fails with <see cref="ERROR_MORE_DATA"/>.</para>
+        /// </param>
+        /// <param name="prefmaxlen">The preferred maximum length, in bytes, of the returned data. If you specify <see cref="MAX_PREFERRED_LENGTH"/>, the <see cref="NetUserEnum"/> function allocates the amount of memory required for the data. If you specify another value in this parameter, it can restrict the number of bytes that the function returns. If the buffer size is insufficient to hold all entries, the function returns <see cref="ERROR_MORE_DATA"/>.</param>
+        /// <param name="entriesread">A variable that receives the count of elements actually enumerated.</param>
+        /// <param name="totalentries">
+        /// <para>A variable that receives the total number of entries that could have been enumerated from the current resume position. Note that applications should consider this value only as a hint. If your application is communicating with a Windows 2000 or later domain controller, you should consider using the <a href="https://msdn.microsoft.com/en-us/library/aa772203.aspx">ADSI LDAP Provider</a> to retrieve this type of data more efficiently. The ADSI LDAP Provider implements a set of ADSI objects that support various ADSI interfaces. For more information, see <a href="https://msdn.microsoft.com/en-us/library/aa772235.aspx">ADSI Service Providers</a>. </para>
+        /// <para><strong>LAN Manager:</strong> If the call is to a computer that is running LAN Manager 2.x, the <paramref name="totalentries"/> parameter will always reflect the total number of entries in the database no matter where it is in the resume sequence.</para>
+        /// </param>
+        /// <param name="resume_handle">A reference to a variable that contains a resume handle which is used to continue an existing user search. The handle should be zero on the first call and left unchanged for subsequent calls. If this parameter is omitted, then no resume handle is stored.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_ACCESS_DENIED"/></term><description>The user does not have access to the requested information.</description>
+        /// <term><see cref="ERROR_INVALID_LEVEL"/></term><description>The system call level is not correct. This error is returned if the <paramref name="level"/> parameter is set to a value not supported. </description>
+        /// <term><see cref="NERR_BufTooSmall"/></term><description>The buffer is too small to contain an entry. No information has been written to the buffer. </description>
+        /// <term><see cref="NERR_InvalidComputer"/></term><description>The computer name is invalid.</description>
+        /// <term><see cref="ERROR_MORE_DATA"/></term><description>More entries are available. Specify a large enough buffer to receive all entries.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>The <see cref="NetUserEnum"/> function retrieves information about all user accounts on a specified remote server or the local computer.</para>
+        /// <para>The <see cref="NetQueryDisplayInformation"/> function can be used to quickly enumerate user, computer, or global group account information for display in user interfaces .</para>
+        /// <para>If you are programming for Active Directory, you may be able to call certain Active Directory Service Interface (ADSI) methods to achieve the same functionality you can achieve by calling the network management user functions. For more information, see <see cref="IADsUser"/> and <see cref="IADsComputer"/>.</para>
+        /// <para>If you call this function on a domain controller that is running Active Directory, access is allowed or denied based on the access control list (ACL) for the <a href="https://msdn.microsoft.com/en-us/library/aa379557.aspx">securable object</a>. The default ACL permits all authenticated users and members of the "<a href="https://msdn.microsoft.com/en-us/library/aa375347.aspx">Pre-Windows 2000 compatible access</a>" group to view the information. If you call this function on a member server or workstation, all authenticated users can view the information. For information about anonymous access and restricting anonymous access on these platforms, see <a href="https://msdn.microsoft.com/en-us/library/aa370891.aspx">Security Requirements for the Network Management Functions</a>. For more information on ACLs, ACEs, and access tokens, see <a href="https://msdn.microsoft.com/en-us/library/aa374876.aspx">Access Control Model</a>.</para>
+        /// <para>The <see cref="NetUserEnum"/> function only returns information to which the caller has Read access. The caller must have List Contents access to the Domain object, and Enumerate Entire SAM Domain access on the SAM Server object located in the System container. </para>
+        /// <para>The <see cref="LsaEnumerateTrustedDomains"/> or <see cref="LsaEnumerateTrustedDomainsEx"/> function can be used to retrieve the names and SIDs of domains trusted by a Local Security Authority (LSA) policy object.</para>
+        /// <para>The <see cref="NetUserEnum"/> function does not return all system users. It returns only those users who have been added with a call to the <see cref="NetUserAdd"/> function. There is no guarantee that the list of users will be returned in sorted order.</para>
+        /// <para>If you call the <see cref="NetUserEnum"/> function and specify information level 1, 2, or 3, for the level parameter, the password member of each structure retrieved is set to <c>null</c> to maintain password security. </para>
+        /// <para>User account names are limited to 20 characters and group names are limited to 256 characters. In addition, account names cannot be terminated by a period and they cannot include commas or any of the following printable characters: ", /, \, [, ], :, |, &lt;, &gt;, +, =, ;, ?, *. Names also cannot include characters in the range 1-31, which are nonprintable.</para>
+        /// <para>The <see cref="NetUserEnum"/> function does not support a <paramref name="level"/> parameter of <c>4</c> and the <see cref="USER_INFO_4"/> structure. The <see cref="NetUserGetInfo"/> function supports a <paramref name="level"/> parameter of <c>4</c> and the <see cref="USER_INFO_4"/> structure.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370652.aspx">NetUserEnum function</a></para>
+        /// </remarks>
+        /// <seealso cref="LsaEnumerateTrustedDomains"/>
+        /// <seealso cref="LsaEnumerateTrustedDomainsEx"/>
+        /// <seealso cref="NetQueryDisplayInformation"/>
+        /// <seealso cref="NetUserGetGroups"/>
+        /// <seealso cref="NetUserGetInfo"/>
+        /// <seealso cref="NetUserAdd"/>
+        /// <seealso cref="USER_INFO_0"/>
+        /// <seealso cref="USER_INFO_1"/>
+        /// <seealso cref="USER_INFO_2"/>
+        /// <seealso cref="USER_INFO_3"/>
+        /// <seealso cref="USER_INFO_10"/>
+        /// <seealso cref="USER_INFO_11"/>
+        /// <seealso cref="USER_INFO_20"/>
+        /// <seealso cref="USER_INFO_23"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetUserEnum(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string servername,
+            [In] int level,
+            [In, MarshalAs(UnmanagedType.I4)] FILTER_ACCOUNT_FLAGS filter,
+            out UserInfoArrayNetApiBufferHandle bufptr,
+            [In] int prefmaxlen,
+            out int entriesread,
+            out int totalentries,
+            [Optional] IntPtr resume_handle
+            );
+        #endregion
+        #region NetUserGetGroups function
+        /// <summary>
+        /// The <see cref="NetUserGetGroups"/> function retrieves a list of global groups to which a specified user belongs.
+        /// </summary>
+        /// <param name="servername">A string that specifies the DNS or NetBIOS name of the remote server on which the function is to execute. If this parameter is <c>null</c>, the local computer is used. </param>
+        /// <param name="username">A string that specifies the name of the user to search for in each group account. For more information, see the function Remarks section.</param>
+        /// <param name="level">
+        /// The information level of the data requested. This parameter can be one of the following values. 
+        /// <list type="table">
+        /// <listheader><term>Value</term> - <description>Meaning</description></listheader>
+        /// <term><c>0</c> (zero)</term> - <description>Return the names of the global groups to which the user belongs. The <paramref name="bufptr"/> parameter receives an array of <see cref="GROUP_USERS_INFO_0"/> structures.</description>
+        /// <term><c>1</c> </term> - <description>Return the names of the global groups to which the user belongs with attributes. The <paramref name="bufptr"/> parameter receives an array of <see cref="GROUP_USERS_INFO_1"/> structures.</description>
+        /// </list>
+        /// </param>
+        /// <param name="bufptr">
+        /// <para>A variable for a buffer that receives the information structures. The format of this data depends on the value of the <paramref name="level"/> parameter.</para>
+        /// <para>The system allocates the memory for this buffer. The handle should be wrapped in a <c>using</c> block, or the application should otherwise make sure that the <see cref="SafeHandle.Dispose()"/> method is called on the returned handle when it is no longer needed. Note that you must free the buffer even if the function fails with <see cref="ERROR_MORE_DATA"/>.</para>
+        /// </param>
+        /// <param name="prefmaxlen">The preferred maximum length, in bytes, of the returned data. If you specify <see cref="MAX_PREFERRED_LENGTH"/>, the function allocates the amount of memory required for the data. If you specify another value in this parameter, it can restrict the number of bytes that the function returns. If the buffer size is insufficient to hold all entries, the function returns <see cref="ERROR_MORE_DATA"/>.</param>
+        /// <param name="entriesread">A variable that receives the count of elements actually retrieved.</param>
+        /// <param name="totalentries">A variable that receives the total number of entries that could have been retrieved.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_ACCESS_DENIED"/></term><description>The user does not have access rights to the requested information.</description>
+        /// <term><see cref="ERROR_BAD_NETPATH"/></term><description>The network path was not found. This error is returned if the <paramref name="servername"/> parameter could not be found. </description>
+        /// <term><see cref="ERROR_INVALID_LEVEL"/></term><description>The system call level is not correct. This error is returned if the <paramref name="level"/> parameter is set to a value not supported. </description>
+        /// <term><see cref="ERROR_INVALID_NAME"/></term><description>The name syntax is incorrect. This error is returned if the <paramref name="servername"/> parameter has leading or trailing blanks or contains an illegal character. </description>
+        /// <term><see cref="ERROR_MORE_DATA"/></term><description>More entries are available. Specify a large enough buffer to receive all entries.</description>
+        /// <term><see cref="ERROR_NOT_ENOUGH_MEMORY"/></term><description>Insufficient memory was available to complete the operation.</description>
+        /// <term><see cref="NERR_InternalError"/></term><description>An internal error occurred.</description>
+        /// <term><see cref="NERR_UserNotFound"/></term><description>The user could not be found. This error is returned if the <paramref name="username"/> could not be found.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>If you are programming for Active Directory, you may be able to call certain Active Directory Service Interface (ADSI) methods to achieve the same functionality you can achieve by calling the network management user functions. For more information, see <see cref="IADsUser"/> and <see cref="IADsComputer"/>.</para>
+        /// <para>If you call this function on a domain controller that is running Active Directory, access is allowed or denied based on the access control list (ACL) for the <a href="https://msdn.microsoft.com/en-us/library/aa379557.aspx">securable object</a>. The default ACL permits all authenticated users and members of the "<a href="https://msdn.microsoft.com/en-us/library/aa375347.aspx">Pre-Windows 2000 compatible access</a>" group to view the information. If you call this function on a member server or workstation, all authenticated users can view the information. For information about anonymous access and restricting anonymous access on these platforms, see <a href="https://msdn.microsoft.com/en-us/library/aa370891.aspx">Security Requirements for the Network Management Functions</a>. For more information on ACLs, ACEs, and access tokens, see <a href="https://msdn.microsoft.com/en-us/library/aa374876.aspx">Access Control Model</a>.</para>
+        /// <para>The security descriptor of the User object is used to perform the access check for this function.</para>
+        /// <para>To retrieve a list of the local groups to which a user belongs, you can call the <see cref="NetUserGetLocalGroups"/> function. Network groups are separate and distinct from Windows NT system groups.</para>
+        /// <para>User account names are limited to 20 characters and group names are limited to 256 characters. In addition, account names cannot be terminated by a period and they cannot include commas or any of the following printable characters: ", /, \, [, ], :, |, &lt;, &gt;, +, =, ;, ?, *. Names also cannot include characters in the range 1-31, which are nonprintable.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370653.aspx">NetUserGetGroups function</a></para>
+        /// </remarks>
+        /// <seealso cref="GROUP_USERS_INFO_0"/>
+        /// <seealso cref="GROUP_USERS_INFO_1"/>
+        /// <seealso cref="NetUserGetInfo"/>
+        /// <seealso cref="NetGroupGetUsers"/>
+        /// <seealso cref="NetUserGetLocalGroups"/>
+        /// <seealso cref="NetQueryDisplayInformation"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetUserGetGroups(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string servername,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string username,
+            [In] int level,
+            out GroupUserInfoArrayNetApiBufferHandle bufptr,
+            [In] int prefmaxlen,
+            out int entriesread,
+            out int totalentries
+            );
+        #endregion
+        #region NetUserGetInfo function
+        /// <summary>
+        /// The <see cref="NetUserGetInfo"/> function retrieves information about a particular user account on a server.
+        /// </summary>
+        /// <param name="servername">A string that specifies the DNS or NetBIOS name of the remote server on which the function is to execute. If this parameter is <c>null</c>, the local computer is used.</param>
+        /// <param name="username">A string that specifies the name of the user account for which to return information. For more information, see the function Remarks section.</param>
+        /// <param name="level">
+        /// The information level of the data requested. This parameter can be one of the following values. 
+        /// <list type="table">
+        /// <listheader><term>Value</term> - <description>Meaning</description></listheader>
+        /// <term><c>0</c> (zero)</term> - <description>Return the user account name. The <paramref name="bufptr"/> parameter receives a <see cref="USER_INFO_0"/> structure.</description>
+        /// <term><c>1</c> </term> - <description>Return detailed information about the user account. The <paramref name="bufptr"/> parameter receives a <see cref="USER_INFO_1"/> structure.</description>
+        /// <term><c>2</c> </term> - <description>Return detailed information and additional attributes about the user account. The <paramref name="bufptr"/> parameter receives a <see cref="USER_INFO_2"/> structure.</description>
+        /// <term><c>3</c> </term> - <description>Return detailed information and additional attributes about the user account. This level is valid only on servers. The <paramref name="bufptr"/> parameter receives a <see cref="USER_INFO_3"/> structure. Note that it is recommended that you use <see cref="USER_INFO_4"/> instead.</description>
+        /// <term><c>4</c> </term> - <description>Return detailed information and additional attributes about the user account. This level is valid only on servers. The <paramref name="bufptr"/> parameter receives a <see cref="USER_INFO_4"/> structure. <br/><note>This level is supported on Windows XP and later.</note></description>
+        /// <term><c>10</c> </term> - <description>Return user and account names and comments. The <paramref name="bufptr"/> parameter receives a <see cref="USER_INFO_10"/> structure.</description>
+        /// <term><c>11</c> </term> - <description>Return detailed information about the user account. The <paramref name="bufptr"/> parameter receives a <see cref="USER_INFO_11"/> structure.</description>
+        /// <term><c>20</c> </term> - <description>Return the user's name and identifier and various account attributes. The <paramref name="bufptr"/> parameter receives a <see cref="USER_INFO_20"/> structure. Note that on Windows XP and later, it is recommended that you use <see cref="USER_INFO_23"/> instead.</description>
+        /// <term><c>23</c> </term> - <description>Return the user's name and identifier and various account attributes. The <paramref name="bufptr"/> parameter receives a <see cref="USER_INFO_23"/> structure. <br/><note>This level is supported on Windows XP and later.</note></description>
+        /// <term><c>24</c> </term> - <description>Return user account information for accounts which are connected to an Internet identity. The <paramref name="bufptr"/> parameter receives a <see cref="USER_INFO_24"/> structure. <br/><note>The level is supported on Windows 8 and Windows Server 2012.</note></description>
+        /// </list>
+        /// </param>
+        /// <param name="bufptr">
+        /// <para>A variable for a buffer that receives the information structures. The format of this data depends on the value of the <paramref name="level"/> parameter.</para>
+        /// <para>The system allocates the memory for this buffer. The handle should be wrapped in a <c>using</c> block, or the application should otherwise make sure that the <see cref="SafeHandle.Dispose()"/> method is called on the returned handle when it is no longer needed.</para>
+        /// </param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_ACCESS_DENIED"/></term><description>The user does not have access rights to the requested information.</description>
+        /// <term><see cref="ERROR_BAD_NETPATH"/></term><description>The network path was not found. This error is returned if the <paramref name="servername"/> parameter could not be found. </description>
+        /// <term><see cref="ERROR_INVALID_LEVEL"/></term><description>The system call level is not correct. This error is returned if the <paramref name="level"/> parameter is set to a value not supported. </description>
+        /// <term><see cref="NERR_InvalidComputer"/></term><description>The computer name is invalid. </description>
+        /// <term><see cref="NERR_UserNotFound"/></term><description>The user could not be found.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>If you are programming for Active Directory, you may be able to call certain Active Directory Service Interface (ADSI) methods to achieve the same functionality you can achieve by calling the network management user functions. For more information, see <see cref="IADsUser"/> and <see cref="IADsComputer"/>.</para>
+        /// <para>If you call this function on a domain controller that is running Active Directory, access is allowed or denied based on the access control list (ACL) for the <a href="https://msdn.microsoft.com/en-us/library/aa379557.aspx">securable object</a>. The default ACL permits all authenticated users and members of the "<a href="https://msdn.microsoft.com/en-us/library/aa375347.aspx">Pre-Windows 2000 compatible access</a>" group to view the information. If you call this function on a member server or workstation, all authenticated users can view the information. For information about anonymous access and restricting anonymous access on these platforms, see <a href="https://msdn.microsoft.com/en-us/library/aa370891.aspx">Security Requirements for the Network Management Functions</a>. For more information on ACLs, ACEs, and access tokens, see <a href="https://msdn.microsoft.com/en-us/library/aa374876.aspx">Access Control Model</a>.</para>
+        /// <para>The security descriptor of the User object is used to perform the access check for this function.</para>
+        /// <para>User account names are limited to 20 characters and group names are limited to 256 characters. In addition, account names cannot be terminated by a period and they cannot include commas or any of the following printable characters: ", /, \, [, ], :, |, &lt;, &gt;, +, =, ;, ?, *. Names also cannot include characters in the range 1-31, which are nonprintable.</para>
+        /// <para>If the information level specified in the <paramref name="level"/> parameter is set to <c>24</c>, the <paramref name="servername"/> parameter specified must resolve to the local computer. If the <paramref name="servername"/> resolves to a remote computer or to a domain controller, the <see cref="NetUserGetInfo"/> function will fail.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows XP [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows Server 2003 [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370654.aspx">NetUserGetInfo function</a></para>
+        /// </remarks>
+        /// <seealso cref="NetUserSetInfo"/>
+        /// <seealso cref="NetUserGetGroups"/>
+        /// <seealso cref="NetUserEnum"/>
+        /// <seealso cref="USER_INFO_0"/>
+        /// <seealso cref="USER_INFO_1"/>
+        /// <seealso cref="USER_INFO_2"/>
+        /// <seealso cref="USER_INFO_4"/>
+        /// <seealso cref="USER_INFO_10"/>
+        /// <seealso cref="USER_INFO_11"/>
+        /// <seealso cref="USER_INFO_23"/>
+        /// <seealso cref="USER_INFO_24"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetUserGetInfo(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string servername,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string username,
+            [In] int level,
+            out UserInfoNetApiBufferHandle bufptr
+            );
+        #endregion
+        #region NetUserGetLocalGroups function
+        /// <summary>
+        /// The <see cref="NetUserGetLocalGroups"/> function retrieves a list of local groups to which a specified user belongs.
+        /// </summary>
+        /// <param name="servername">A string that specifies the DNS or NetBIOS name of the remote server on which the function is to execute. If this parameter is <c>null</c>, the local computer is used. </param>
+        /// <param name="username">A string that specifies the name of the user for which to return local group membership information. If the string is of the form <c>DomainName\UserName</c> the user name is expected to be found on that domain. If the string is of the form <c>UserName</c>, the user name is expected to be found on the server specified by the <paramref name="servername"/> parameter. For more information, see the function Remarks section.</param>
+        /// <param name="level">The information level of the data. This parameter can be the following value. <c>0</c> (zero) - Return the names of the local groups to which the user belongs. The <paramref name="bufptr"/> parameter points to an array of <see cref="LOCALGROUP_USERS_INFO_0"/> structures.</param>
+        /// <param name="flags">A bitmask of flags that affect the operation. Currently, only the value defined is <see cref="LG_INCLUDE_INDIRECT"/>. If this bit is set, the function also returns the names of the local groups in which the user is indirectly a member (that is, the user has membership in a global group that is itself a member of one or more local groups).</param>
+        /// <param name="bufptr">
+        /// <para>A variable for a buffer that receives the information structures. The format of this data depends on the value of the <paramref name="level"/> parameter.</para>
+        /// <para>The system allocates the memory for this buffer. The handle should be wrapped in a <c>using</c> block, or the application should otherwise make sure that the <see cref="SafeHandle.Dispose()"/> method is called on the returned handle when it is no longer needed. Note that you must free the buffer even if the function fails with <see cref="ERROR_MORE_DATA"/>.</para>
+        /// </param>
+        /// <param name="prefmaxlen">The preferred maximum length, in bytes, of the returned data. If you specify <see cref="MAX_PREFERRED_LENGTH"/>, the function allocates the amount of memory required for the data. If you specify another value in this parameter, it can restrict the number of bytes that the function returns. If the buffer size is insufficient to hold all entries, the function returns <see cref="ERROR_MORE_DATA"/>.</param>
+        /// <param name="entriesread">A variable that receives the count of elements actually retrieved.</param>
+        /// <param name="totalentries">A variable that receives the total number of entries that could have been retrieved.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_ACCESS_DENIED"/></term><description>The user does not have access rights to the requested information. This error is also returned if the <paramref name="servername"/> parameter has a trailing blank.</description>
+        /// <term><see cref="ERROR_INVALID_LEVEL"/></term><description>The system call level is not correct. This error is returned if the <paramref name="level"/> parameter is set to a value not supported. </description>
+        /// <term><see cref="ERROR_INVALID_PARAMETER"/></term><description>A parameter is incorrect. This error is returned if the <paramref name="flags"/> parameter contains a value other than <see cref="LG_INCLUDE_INDIRECT"/>. </description>
+        /// <term><see cref="ERROR_MORE_DATA"/></term><description>More entries are available. Specify a large enough buffer to receive all entries.</description>
+        /// <term><see cref="ERROR_NOT_ENOUGH_MEMORY"/></term><description>Insufficient memory was available to complete the operation.</description>
+        /// <term><see cref="NERR_DCNotFound"/></term><description>The domain controller could not be found. </description>
+        /// <term><see cref="NERR_UserNotFound"/></term><description>The user could not be found. This error is returned if the <paramref name="username"/> could not be found.</description>
+        /// <term><see cref="RPC_S_SERVER_UNAVAILABLE"/></term><description>The RPC server is unavailable. This error is returned if the <paramref name="servername"/> parameter could not be found. </description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>If you are programming for Active Directory, you may be able to call certain Active Directory Service Interface (ADSI) methods to achieve the same functionality you can achieve by calling the network management user functions. For more information, see <see cref="IADsUser"/> and <see cref="IADsComputer"/>.</para>
+        /// <para>If you call this function on a domain controller that is running Active Directory, access is allowed or denied based on the access control list (ACL) for the <a href="https://msdn.microsoft.com/en-us/library/aa379557.aspx">securable object</a>. The default ACL permits all authenticated users and members of the "<a href="https://msdn.microsoft.com/en-us/library/aa375347.aspx">Pre-Windows 2000 compatible access</a>" group to view the information. If you call this function on a member server or workstation, all authenticated users can view the information. For information about anonymous access and restricting anonymous access on these platforms, see <a href="https://msdn.microsoft.com/en-us/library/aa370891.aspx">Security Requirements for the Network Management Functions</a>. For more information on ACLs, ACEs, and access tokens, see <a href="https://msdn.microsoft.com/en-us/library/aa374876.aspx">Access Control Model</a>.</para>
+        /// <para>The security descriptor of the Domain object is used to perform the access check for this function. The caller must have Read Property permission on the Domain object.</para>
+        /// <para>To retrieve a list of global groups to which a specified user belongs, you can call the <see cref="NetUserGetGroups"/> function.</para>
+        /// <para>User account names are limited to 20 characters and group names are limited to 256 characters. In addition, account names cannot be terminated by a period and they cannot include commas or any of the following printable characters: ", /, \, [, ], :, |, &lt;, &gt;, +, =, ;, ?, *. Names also cannot include characters in the range 1-31, which are nonprintable.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370655.aspx">NetUserGetLocalGroups function</a></para>
+        /// </remarks>
+        /// <seealso cref="NetUserGetGroups"/>
+        /// <seealso cref="LOCALGROUP_USERS_INFO_0"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetUserGetLocalGroups(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string servername,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string username,
+            [In] int level,
+            [In, MarshalAs(UnmanagedType.I4)] LG_INCLUDE_FLAG flags,
+            out LocalGroupUsersArrayInfoNetApiBufferHandle bufptr,
+            [In] int prefmaxlen,
+            out int entriesread,
+            out int totalentries
+            );
+        #endregion
+        #region NetUserModalsGet function
+        /// <summary>
+        /// The <see cref="NetUserModalsGet"/> function retrieves global information for all users and global groups in the security database, which is the security accounts manager (SAM) database or, in the case of domain controllers, the Active Directory.
+        /// </summary>
+        /// <param name="servername">A string that specifies the DNS or NetBIOS name of the remote server on which the function is to execute. If this parameter is <c>null</c>, the local computer is used. For more information, see the function Remarks section. </param>
+        /// <param name="level">
+        /// The information level of the data requested. This parameter can be one of the following values. 
+        /// <list type="table">
+        /// <listheader><term>Value</term> - <description>Meaning</description></listheader>
+        /// <term><c>0</c> (zero)</term> - <description>Return global password parameters. The <paramref name="bufptr"/> parameter receives a <see cref="USER_MODALS_INFO_0"/> structure.</description>
+        /// <term><c>1</c> </term> - <description>Return logon server and domain controller information. The <paramref name="bufptr"/> parameter receives a <see cref="USER_MODALS_INFO_1"/> structure.</description>
+        /// <term><c>2</c> </term> - <description>Return domain name and identifier. The <paramref name="bufptr"/> parameter receives a <see cref="USER_MODALS_INFO_2"/> structure. For more information, see the function Remarks section.</description>
+        /// <term><c>3</c> </term> - <description>Return lockout information. This level is valid only on servers. The <paramref name="bufptr"/> parameter receives a <see cref="USER_MODALS_INFO_3"/> structure. Note that it is recommended that you use <see cref="USER_INFO_4"/> instead.</description>
+        /// </list>
+        /// A null session logon can call <see cref="NetUserModalsGet"/> anonymously at information levels <c>0</c> and <c>3</c>.
+        /// </param>
+        /// <param name="bufptr">
+        /// <para>A variable for a buffer that receives the information structures. The format of this data depends on the value of the <paramref name="level"/> parameter.</para>
+        /// <para>The system allocates the memory for this buffer. The handle should be wrapped in a <c>using</c> block, or the application should otherwise make sure that the <see cref="SafeHandle.Dispose()"/> method is called on the returned handle when it is no longer needed.</para>
+        /// </param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_ACCESS_DENIED"/></term><description>The user does not have access rights to the requested information.</description>
+        /// <term><see cref="ERROR_BAD_NETPATH"/></term><description>The network path was not found. This error is returned if the <paramref name="servername"/> parameter could not be found.</description>
+        /// <term><see cref="ERROR_INVALID_LEVEL"/></term><description>The system call level is not correct. This error is returned if the <paramref name="level"/> parameter is set to a value not supported. </description>
+        /// <term><see cref="ERROR_INVALID_NAME"/></term><description>The file name, directory name, or volume label syntax is incorrect. This error is returned if the <paramref name="servername"/> parameter syntax is incorrect.</description>
+        /// <term><see cref="ERROR_WRONG_TARGET_NAME"/></term><description>The target account name is incorrect. This error is returned for a logon failure to a remote <paramref name="servername"/> parameter running on Windows Vista.</description>
+        /// <term><see cref="NERR_InvalidComputer"/></term><description>The computer name is invalid.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>If you are programming for Active Directory, you may be able to call certain Active Directory Service Interface (ADSI) methods to achieve the same functionality you can achieve by calling the network management user modal functions. For more information, see <see cref="IADsDomain"/>.</para>
+        /// <para>If you call this function on a domain controller that is running Active Directory, access is allowed or denied based on the access control list (ACL) for the <a href="https://msdn.microsoft.com/en-us/library/aa379557.aspx">securable object</a>. The default ACL permits all authenticated users and members of the "<a href="https://msdn.microsoft.com/en-us/library/aa375347.aspx">Pre-Windows 2000 compatible access</a>" group to view the information. If you call this function on a member server or workstation, all authenticated users can view the information. For information about anonymous access and restricting anonymous access on these platforms, see <a href="https://msdn.microsoft.com/en-us/library/aa370891.aspx">Security Requirements for the Network Management Functions</a>. For more information on ACLs, ACEs, and access tokens, see <a href="https://msdn.microsoft.com/en-us/library/aa374876.aspx">Access Control Model</a>.</para>
+        /// <para>The security descriptor of the Domain object is used to perform the access check for this function.</para>
+        /// <para>To retrieve the security identifier (SID) of the domain to which the computer belongs, call the <see cref="NetUserModalsGet"/> function specifying a <see cref="USER_MODALS_INFO_2"/> structure and <c>null</c> in the <paramref name="servername"/> parameter. If the computer isn't a member of a domain, the function returns a <c>null</c> buffer.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370656.aspx">NetUserModalsGet function</a></para>
+        /// </remarks>
+        /// <seealso cref="NetUserModalsSet"/>
+        /// <seealso cref="USER_MODALS_INFO_0"/>
+        /// <seealso cref="USER_MODALS_INFO_1"/>
+        /// <seealso cref="USER_MODALS_INFO_2"/>
+        /// <seealso cref="USER_MODALS_INFO_3"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetUserModalsGet(
+            [In, Optional, MarshalAs(UnmanagedType.LPWStr)] string servername,
+            [In] int level,
+            out UserModalsInfoNetApiBufferHandle bufptr
+            );
+        #endregion
+        #region NetUserModalsSet function
+        /// <summary>
+        /// The <see cref="NetUserModalsSet"/> function sets global information for all users and global groups in the security database, which is the security accounts manager (SAM) database or, in the case of domain controllers, the Active Directory.
+        /// </summary>
+        /// <param name="servername">A string that specifies the DNS or NetBIOS name of the remote server on which the function is to execute. If this parameter is <c>null</c>, the local computer is used. </param>
+        /// <param name="level">
+        /// Specifies the information level of the data. This parameter can be one of the following values. 
+        /// <list type="table">
+        /// <listheader><term>Value</term> - <description>Meaning</description></listheader>
+        /// <term><c>0</c> (zero)</term> - <description>Specifies global password parameters. The <paramref name="buf"/> parameter specifies a <see cref="USER_MODALS_INFO_0"/> structure.</description>
+        /// <term><c>1</c></term> - <description>Specifies logon server and domain controller information. The <paramref name="buf"/> parameter specifies a <see cref="USER_MODALS_INFO_1"/> structure.</description>
+        /// <term><c>2</c></term> - <description>Specifies the domain name and identifier. The <paramref name="buf"/> parameter specifies a <see cref="USER_MODALS_INFO_2"/> structure.</description>
+        /// <term><c>3</c></term> - <description>Specifies lockout information. The <paramref name="buf"/> parameter specifies a <see cref="USER_MODALS_INFO_3"/> structure.</description>
+        /// <term><c>1001</c></term> - <description>Specifies the minimum allowable password length. The <paramref name="buf"/> parameter specifies a <see cref="USER_MODALS_INFO_1001"/> structure.</description>
+        /// <term><c>1002</c></term> - <description>Specifies the maximum allowable password age. The <paramref name="buf"/> parameter specifies a <see cref="USER_MODALS_INFO_1002"/> structure.</description>
+        /// <term><c>1003</c></term> - <description>Specifies the minimum allowable password age. The <paramref name="buf"/> parameter specifies a <see cref="USER_MODALS_INFO_1003"/> structure.</description>
+        /// <term><c>1004</c></term> - <description>Specifies forced logoff information. The <paramref name="buf"/> parameter specifies a <see cref="USER_MODALS_INFO_1004"/> structure.</description>
+        /// <term><c>1005</c></term> - <description>Specifies the length of the password history. The <paramref name="buf"/> parameter specifies a <see cref="USER_MODALS_INFO_1005"/> structure.</description>
+        /// <term><c>1006</c></term> - <description>Specifies the role of the logon server. The <paramref name="buf"/> parameter specifies a <see cref="USER_MODALS_INFO_1006"/> structure.</description>
+        /// <term><c>1007</c></term> - <description>Specifies domain controller information. The <paramref name="buf"/> parameter specifies a <see cref="USER_MODALS_INFO_1007"/> structure.</description>
+        /// </list>
+        /// </param>
+        /// <param name="buf">An object instance that specifies the data. The format of this data depends on the value of the <paramref name="level"/> parameter.</param>
+        /// <param name="parm_err">A variable that receives the index of the first member of the information structure that causes <see cref="ERROR_INVALID_PARAMETER"/>. If this parameter is omitted, the index is not returned on error.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_ACCESS_DENIED"/></term><description>The user does not have access rights to the requested information.</description>
+        /// <term><see cref="ERROR_INVALID_PARAMETER"/></term><description>The specified parameter is invalid. For more information, see the function Remarks section.</description>
+        /// <term><see cref="NERR_InvalidComputer"/></term><description>The computer name is invalid.</description>
+        /// <term><see cref="NERR_InvalidComputer"/></term><description>The computer name is invalid.</description>
+        /// <term><see cref="NERR_UserNotFound"/></term><description>The user name could not be found.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>If you are programming for Active Directory, you may be able to call certain Active Directory Service Interface (ADSI) methods to achieve the same functionality you can achieve by calling the network management user modal functions. For more information, see <see cref="IADsDomain"/>.</para>
+        /// <para>If you call this function on a domain controller that is running Active Directory, access is allowed or denied based on the access control list (ACL) for the <a href="https://msdn.microsoft.com/en-us/library/aa379557.aspx">securable object</a>. The default ACL permits all authenticated users and members of the "<a href="https://msdn.microsoft.com/en-us/library/aa375347.aspx">Pre-Windows 2000 compatible access</a>" group to view the information. If you call this function on a member server or workstation, all authenticated users can view the information. For information about anonymous access and restricting anonymous access on these platforms, see <a href="https://msdn.microsoft.com/en-us/library/aa370891.aspx">Security Requirements for the Network Management Functions</a>. For more information on ACLs, ACEs, and access tokens, see <a href="https://msdn.microsoft.com/en-us/library/aa374876.aspx">Access Control Model</a>.</para>
+        /// <para>The security descriptor of the Domain object is used to perform the access check for this function. Typically, callers must have write access to the entire object for calls to this function to succeed.</para>
+        /// <para>If the <see cref="NetUserModalsSet"/> function returns <see cref="ERROR_INVALID_PARAMETER"/>, you can use the <paramref name="parm_err"/> parameter to indicate the first member of the information structure that is invalid. (The information structure begins with <strong>USER_MODALS_INFO_</strong> and its format is specified by the <paramref name="level"/> parameter.) The values that can be returned in the <paramref name="parm_err"/> parameter and the corresponding structure member that is in error is listed in the <see cref="USER_MODALS_INFO_PARMNUM"/> enumeration type.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370657.aspx">NetUserModalsSet function</a></para>
+        /// </remarks>
+        /// <seealso cref="NetUserModalsSet"/>
+        /// <seealso cref="USER_MODALS_INFO_0"/>
+        /// <seealso cref="USER_MODALS_INFO_1"/>
+        /// <seealso cref="USER_MODALS_INFO_2"/>
+        /// <seealso cref="USER_MODALS_INFO_3"/>
+        /// <seealso cref="USER_MODALS_INFO_1001"/>
+        /// <seealso cref="USER_MODALS_INFO_1002"/>
+        /// <seealso cref="USER_MODALS_INFO_1003"/>
+        /// <seealso cref="USER_MODALS_INFO_1004"/>
+        /// <seealso cref="USER_MODALS_INFO_1005"/>
+        /// <seealso cref="USER_MODALS_INFO_1006"/>
+        /// <seealso cref="USER_MODALS_INFO_1007"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetUserModalsSet(
+            [In, Optional, MarshalAs(UnmanagedType.LPWStr)] string servername,
+            [In] int level,
+            [In, MarshalAs(UnmanagedType.LPStruct)] object buf,
+            [Optional] out USER_MODALS_INFO_PARMNUM parm_err
+            );
+        #endregion
+        #region NetUserSetGroups function
+        /// <summary>
+        /// The <see cref="NetUserSetGroups"/> function sets global group memberships for a specified user account.
+        /// </summary>
+        /// <param name="servername">A string that specifies the DNS or NetBIOS name of the remote server on which the function is to execute. If this parameter is <c>null</c>, the local computer is used. </param>
+        /// <param name="username">A string that specifies the name of the user for which to set global group memberships. For more information, see the function Remarks section.</param>
+        /// <param name="level">
+        /// Specifies the information level of the data. This parameter can be one of the following values. 
+        /// <list type="table">
+        /// <listheader><term>Value</term> - <description>Meaning</description></listheader>
+        /// <term><c>0</c> (zero)</term> - <description>The <paramref name="buf"/> parameter specifies an array of <see cref="GROUP_USERS_INFO_0"/> structures that specifies global group names.</description>
+        /// <term><c>1</c></term> - <description>The <paramref name="buf"/> parameter specifies an array of <see cref="GROUP_USERS_INFO_1"/> structures that specifies global group names with attributes.</description>
+        /// </list>
+        /// </param>
+        /// <param name="buf">An array that specifies the data. The type of the instances in the array must comply with the information specified in the <paramref name="level"/> parameter.</param>
+        /// <param name="num_entries">The number of entries contained in the array specified by the <paramref name="buf"/> parameter.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_ACCESS_DENIED"/></term><description>The user does not have access rights to the requested information.</description>
+        /// <term><see cref="ERROR_INVALID_LEVEL"/></term><description>The system call level is not correct. This error is returned if the <paramref name="level"/> parameter was specified as a value other than <c>0</c> (zero) or <c>1</c>. </description>
+        /// <term><see cref="ERROR_INVALID_PARAMETER"/></term><description>A parameter passed was not valid. This error is returned if the num_entries parameter was not valid. </description>
+        /// <term><see cref="ERROR_NOT_ENOUGH_MEMORY"/></term><description>Insufficient memory was available to complete the operation.</description>
+        /// <term><see cref="NERR_InvalidComputer"/></term><description>The computer name is invalid.</description>
+        /// <term><see cref="NERR_NotPrimary"/></term><description>The operation is allowed only on the primary domain controller of the domain.</description>
+        /// <term><see cref="NERR_GroupNotFound"/></term><description>The group group name specified by the <see cref="GROUP_USERS_INFO_0.grui0_name"/> in the <see cref="GROUP_USERS_INFO_0"/> structure or <see cref="GROUP_USERS_INFO_1.grui1_name"/> member in the <see cref="GROUP_USERS_INFO_1"/> structure specified by the <paramref name="buf"/> parameter does not exist.</description>
+        /// <term><see cref="NERR_InternalError"/></term><description>An internal error occurred.</description>
+        /// <term><see cref="NERR_UserNotFound"/></term><description>The user name could not be found.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>If you are programming for Active Directory, you may be able to call certain Active Directory Service Interface (ADSI) methods to achieve the same functionality you can achieve by calling the network management user functions. For more information, see <see cref="IADsUser"/> and <see cref="IADsComputer"/>.</para>
+        /// <para>If you call this function on a domain controller that is running Active Directory, access is allowed or denied based on the access control list (ACL) for the <a href="https://msdn.microsoft.com/en-us/library/aa379557.aspx">securable object</a>. The default ACL permits all authenticated users and members of the "<a href="https://msdn.microsoft.com/en-us/library/aa375347.aspx">Pre-Windows 2000 compatible access</a>" group to view the information. If you call this function on a member server or workstation, all authenticated users can view the information. For information about anonymous access and restricting anonymous access on these platforms, see <a href="https://msdn.microsoft.com/en-us/library/aa370891.aspx">Security Requirements for the Network Management Functions</a>. For more information on ACLs, ACEs, and access tokens, see <a href="https://msdn.microsoft.com/en-us/library/aa374876.aspx">Access Control Model</a>.</para>
+        /// <para>The security descriptor of the User object is used to perform the access check for this function.</para>
+        /// <para>To grant a user membership in one existing global group, you can call the <see cref="NetGroupAddUser"/> function.</para>
+        /// <para>User account names are limited to 20 characters and group names are limited to 256 characters. In addition, account names cannot be terminated by a period and they cannot include commas or any of the following printable characters: ", /, \, [, ], :, |, &lt;, &gt;, +, =, ;, ?, *. Names also cannot include characters in the range 1-31, which are nonprintable.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370658.aspx">NetUserSetGroups function</a></para>
+        /// </remarks>
+        /// <seealso cref="NetUserGetGroups"/>
+        /// <seealso cref="NetGroupAddUser"/>
+        /// <seealso cref="GROUP_USERS_INFO_0"/>
+        /// <seealso cref="GROUP_USERS_INFO_1"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetUserSetGroups(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string servername,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string username,
+            [In] int level,
+            [In, MarshalAs(UnmanagedType.LPArray)] object[] buf,
+            [In] int num_entries
+            );
+        #endregion
+        #region NetUserSetInfo function
+        /// <summary>
+        /// The <see cref="NetUserSetInfo"/> function sets the parameters of a user account.
+        /// </summary>
+        /// <param name="servername">A string that specifies the DNS or NetBIOS name of the remote server on which the function is to execute. If this parameter is <c>null</c>, the local computer is used. </param>
+        /// <param name="username">A string that specifies the name of the user account for which to set information. For more information, see the function Remarks section.</param>
+        /// <param name="level">
+        /// The information level of the data. This parameter can be one of the following values. 
+        /// <list type="table">
+        /// <listheader><term>Value</term> - <description>Meaning</description></listheader>
+        /// <term><c>0</c> (zero)</term> - <description>Specifies the user account name. The <paramref name="buf"/> parameter specifies a <see cref="USER_INFO_0"/> structure. Use this structure to specify a new group name. For more information, see the function Remarks section.</description>
+        /// <term><c>1</c></term> - <description>Specifies detailed information about the user account. The <paramref name="buf"/> parameter specifies a <see cref="USER_INFO_1"/> structure.</description>
+        /// <term><c>2</c></term> - <description>Specifies level one information and additional attributes about the user account. The <paramref name="buf"/> parameter specifies a <see cref="USER_INFO_2"/> structure.</description>
+        /// <term><c>3</c></term> - <description>Specifies level two information and additional attributes about the user account. This level is valid only on servers. The <paramref name="buf"/> parameter specifies a <see cref="USER_INFO_3"/> structure. Note that it is recommended that you use <see cref="USER_INFO_4"/> instead.</description>
+        /// <term><c>4</c></term> - <description>Specifies level two information and additional attributes about the user account. This level is valid only on servers. The <paramref name="buf"/> parameter specifies a <see cref="USER_INFO_4"/> structure.</description>
+        /// <term><c>21</c></term> - <description>Specifies a one-way encrypted LAN Manager 2.x-compatible password. The <paramref name="buf"/> parameter specifies a <see cref="USER_INFO_21"/> structure.</description>
+        /// <term><c>22</c></term> - <description>Specifies detailed information about the user account. The <paramref name="buf"/> parameter specifies a <see cref="USER_INFO_22"/> structure.</description>
+        /// <term><c>1003</c></term> - <description>Specifies a user password. The <paramref name="buf"/> parameter specifies a <see cref="USER_INFO_1003"/> structure.</description>
+        /// <term><c>1005</c></term> - <description>Specifies a user privilege level. The <paramref name="buf"/> parameter specifies a <see cref="USER_INFO_1005"/> structure.</description>
+        /// <term><c>1006</c></term> - <description>Specifies the path of the home directory for the user. The <paramref name="buf"/> parameter specifies a <see cref="USER_INFO_1006"/> structure.</description>
+        /// <term><c>1007</c></term> - <description>Specifies a comment to associate with the user account. The <paramref name="buf"/> parameter specifies a <see cref="USER_INFO_1007"/> structure.</description>
+        /// <term><c>1008</c></term> - <description>Specifies user account attributes. The <paramref name="buf"/> parameter specifies a <see cref="USER_INFO_1008"/> structure.</description>
+        /// <term><c>1009</c></term> - <description>Specifies the path for the user's logon script file. The <paramref name="buf"/> parameter specifies a <see cref="USER_INFO_1009"/> structure.</description>
+        /// <term><c>1010</c></term> - <description>Specifies the user's operator privileges. The <paramref name="buf"/> parameter specifies a <see cref="USER_INFO_1010"/> structure.</description>
+        /// <term><c>1011</c></term> - <description>Specifies the full name of the user. The <paramref name="buf"/> parameter specifies a <see cref="USER_INFO_1011"/> structure.</description>
+        /// <term><c>1012</c></term> - <description>Specifies a comment to associate with the user. The <paramref name="buf"/> parameter specifies a <see cref="USER_INFO_1012"/> structure.</description>
+        /// <term><c>1014</c></term> - <description>Specifies the names of workstations from which the user can log on. The <paramref name="buf"/> parameter specifies a <see cref="USER_INFO_1014"/> structure.</description>
+        /// <term><c>1017</c></term> - <description>Specifies when the user account expires. The <paramref name="buf"/> parameter specifies a <see cref="USER_INFO_1017"/> structure.</description>
+        /// <term><c>1020</c></term> - <description>Specifies the times during which the user can log on. The <paramref name="buf"/> parameter specifies a <see cref="USER_INFO_1020"/> structure.</description>
+        /// <term><c>1024</c></term> - <description>Specifies the user's country/region code. The <paramref name="buf"/> parameter specifies a <see cref="USER_INFO_1024"/> structure.</description>
+        /// <term><c>1051</c></term> - <description>Specifies the relative identifier of a global group that represents the enrolled user. The <paramref name="buf"/> parameter specifies a <see cref="USER_INFO_1051"/> structure.</description>
+        /// <term><c>1052</c></term> - <description>Specifies the path to a network user's profile. The <paramref name="buf"/> parameter specifies a <see cref="USER_INFO_1052"/> structure.</description>
+        /// <term><c>1053</c></term> - <description>Specifies the drive letter assigned to the user's home directory. The <paramref name="buf"/> parameter specifies a <see cref="USER_INFO_1053"/> structure.</description>
+        /// </list>
+        /// </param>
+        /// <param name="buf">An object instance that specifies the data. The format of this data depends on the value of the <paramref name="level"/> parameter.</param>
+        /// <param name="parm_err">A variable that receives the index of the first member of the user information structure that causes <see cref="ERROR_INVALID_PARAMETER"/>. If this parameter is omitted, the index is not returned on error.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_ACCESS_DENIED"/></term><description>The user does not have access rights to the requested information.</description>
+        /// <term><see cref="ERROR_INVALID_PARAMETER"/></term><description>One of the function parameters is invalid. For more information, see the function Remarks section.</description>
+        /// <term><see cref="NERR_InvalidComputer"/></term><description>The computer name is invalid.</description>
+        /// <term><see cref="NERR_NotPrimary"/></term><description>The operation is allowed only on the primary domain controller of the domain.</description>
+        /// <term><see cref="NERR_SpeGroupOp"/></term><description>The operation is not allowed on specified special groups, which are user groups, admin groups, local groups, or guest groups.</description>
+        /// <term><see cref="NERR_LastAdmin"/></term><description>The operation is not allowed on the last administrative account.</description>
+        /// <term><see cref="NERR_BadPassword"/></term><description>The share name or password is invalid.</description>
+        /// <term><see cref="NERR_PasswordTooShort"/></term><description>The password is shorter than required. (The password could also be too long, be too recent in its change history, not have enough unique characters, or not meet another password policy requirement.)</description>
+        /// <term><see cref="NERR_UserNotFound"/></term><description>The user name could not be found.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>If you are programming for Active Directory, you may be able to call certain Active Directory Service Interface (ADSI) methods to achieve the same functionality you can achieve by calling the network management user functions. For more information, see <see cref="IADsUser"/> and <see cref="IADsComputer"/>.</para>
+        /// <para>If you call this function on a domain controller that is running Active Directory, access is allowed or denied based on the access control list (ACL) for the <a href="https://msdn.microsoft.com/en-us/library/aa379557.aspx">securable object</a>. The default ACL permits all authenticated users and members of the "<a href="https://msdn.microsoft.com/en-us/library/aa375347.aspx">Pre-Windows 2000 compatible access</a>" group to view the information. If you call this function on a member server or workstation, all authenticated users can view the information. For information about anonymous access and restricting anonymous access on these platforms, see <a href="https://msdn.microsoft.com/en-us/library/aa370891.aspx">Security Requirements for the Network Management Functions</a>. For more information on ACLs, ACEs, and access tokens, see <a href="https://msdn.microsoft.com/en-us/library/aa374876.aspx">Access Control Model</a>.</para>
+        /// <para>The security descriptor of the User object is used to perform the access check for this function.</para>
+        /// <para>Only users or applications having administrative privileges can call the <see cref="NetUserSetInfo"/> function to change a user's password. When an administrator calls <see cref="NetUserSetInfo"/>, the only restriction applied is that the new password length must be consistent with system modals. A user or application that knows a user's current password can call the <see cref="NetUserChangePassword"/> function to change the password. For more information about calling functions that require administrator privileges, see <a href="https://msdn.microsoft.com/en-us/library/ms717802.aspx">Running with Special Privileges</a>.</para>
+        /// <para>Members of the Administrators local group can set any modifiable user account elements. All users can set the <see cref="USER_INFO_2.usri2_country_code"/> member of the <see cref="USER_INFO_2"/> structure (and the <see cref="USER_INFO_1024.usri1024_country_code"/> member of the <see cref="USER_INFO_1024"/> structure) for their own accounts.</para>
+        /// <para>A member of the Account Operator's local group cannot set details for an Administrators class account, give an existing account Administrator privilege, or change the operator privilege of any account. If you attempt to change the privilege level or disable the last account with Administrator privilege in the security database, (the security accounts manager (SAM) database or, in the case of domain controllers, the Active Directory), the <see cref="NetUserSetInfo"/> function fails and returns <see cref="NERR_LastAdmin"/>.</para>
+        /// <para>
+        /// To set the following user account control flags, the following <a href="https://msdn.microsoft.com/en-us/library/aa379306.aspx">privileges</a> and <a href="https://msdn.microsoft.com/en-us/library/ms675747.aspx">control access rights</a> are required.
+        /// <list type="table">
+        /// <listheader><term>Account control flag</term><description>Privilege or right required</description></listheader>
+        /// <term><see cref="UF_TRUSTED_TO_AUTHENTICATE_FOR_DELEGATION"/></term><description><c>SeEnableDelegationPrivilege</c> privilege, which is granted to Administrators by default. </description>
+        /// <term><see cref="UF_TRUSTED_FOR_DELEGATION"/></term><description><c>SeEnableDelegationPrivilege</c>.</description>
+        /// <term><see cref="UF_PASSWD_NOTREQD"/></term><description>"Update password not required" control access right on the Domain object, which is granted to authenticated users by default.</description>
+        /// <term><see cref="UF_DONT_EXPIRE_PASSWD"/></term><description>"Unexpire password" control access right on the Domain object, which is granted to authenticated users by default.</description>
+        /// <term><see cref="UF_ENCRYPTED_TEXT_PASSWORD_ALLOWED"/></term><description>"Enable per user reversibly encrypted password" control access right on the Domain object, which is granted to authenticated users by default.</description>
+        /// <term><see cref="UF_SERVER_TRUST_ACCOUNT"/></term><description>"Add/remove replica in domain" control access right on the Domain object, which is granted to Administrators by default.</description>
+        /// </list>
+        /// For a list of privilege constants, see <a href="https://msdn.microsoft.com/en-us/library/aa375728.aspx">Authorization Constants</a>.
+        /// </para>
+        /// <para>The correct way to specify the new name for an account is to call <see cref="NetUserSetInfo"/> with <see cref="USER_INFO_0"/> and to specify the new value using the <see cref="USER_INFO_0.usri0_name"/> member. If you call <see cref="NetUserSetInfo"/> with other information levels and specify a value using a <strong>usriX_name</strong> member, the value is ignored.</para>
+        /// <para>Note that calls to <see cref="NetUserSetInfo"/> can change the home directory only for user accounts that the network server creates.</para>
+        /// <para>If the <see cref="NetUserSetInfo"/> function returns <see cref="ERROR_INVALID_PARAMETER"/>, you can use the <paramref name="parm_err"/> parameter to indicate the first member of the user information structure that is invalid. (A user information structure begins with <strong>USER_INFO_</strong> and its format is specified by the <paramref name="level"/> parameter.) The values that can be returned in the <paramref name="parm_err"/> parameter and the corresponding structure member that is in error is listed in the <see cref="USER_INFO_PARMNUM"/> enumeration type.</para>
+        /// <para>User account names are limited to 20 characters and group names are limited to 256 characters. In addition, account names cannot be terminated by a period and they cannot include commas or any of the following printable characters: ", /, \, [, ], :, |, &lt;, &gt;, +, =, ;, ?, *. Names also cannot include characters in the range 1-31, which are nonprintable.</para>
+        /// <para>The <see cref="NetUserSetInfo"/> function does not control how the password parameters are secured when sent over the network to a remote server to change a user password. Any encryption of these parameters is handled by the Remote Procedure Call (RPC) mechanism supported by the network redirector that provides the network transport. Encryption is also controlled by the security mechanisms supported by the local computer and the security mechanisms supported by remote network server specified in the servername parameter. For more details on security when the Microsoft network redirector is used and the remote network server is running Microsoft Windows, see the protocol documentation for <a href="http://go.microsoft.com/fwlink/p/?linkid=200126">MS-RPCE</a> and <a href="http://go.microsoft.com/fwlink/p/?linkid=200128">MS-SAMR</a>.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370659.aspx">NetUserSetInfo function</a></para>
+        /// </remarks>
+        /// <seealso cref="NetUserGetInfo"/>
+        /// <seealso cref="USER_INFO_0"/>
+        /// <seealso cref="USER_INFO_1"/>
+        /// <seealso cref="USER_INFO_2"/>
+        /// <seealso cref="USER_INFO_4"/>
+        /// <seealso cref="USER_INFO_21"/>
+        /// <seealso cref="USER_INFO_22"/>
+        /// <seealso cref="USER_INFO_1003"/>
+        /// <seealso cref="USER_INFO_1005"/>
+        /// <seealso cref="USER_INFO_1006"/>
+        /// <seealso cref="USER_INFO_1007"/>
+        /// <seealso cref="USER_INFO_1008"/>
+        /// <seealso cref="USER_INFO_1009"/>
+        /// <seealso cref="USER_INFO_1010"/>
+        /// <seealso cref="USER_INFO_1011"/>
+        /// <seealso cref="USER_INFO_1012"/>
+        /// <seealso cref="USER_INFO_1013"/>
+        /// <seealso cref="USER_INFO_1014"/>
+        /// <seealso cref="USER_INFO_1017"/>
+        /// <seealso cref="USER_INFO_1020"/>
+        /// <seealso cref="USER_INFO_1024"/>
+        /// <seealso cref="USER_INFO_1051"/>
+        /// <seealso cref="USER_INFO_1052"/>
+        /// <seealso cref="USER_INFO_1053"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetUserSetInfo(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string servername,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string username,
+            [In] int level,
+            [In, MarshalAs(UnmanagedType.LPStruct)] object buf,
+            [Optional] out USER_INFO_PARMNUM parm_err
             );
         #endregion
     }

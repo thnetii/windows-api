@@ -69,6 +69,8 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
         }
     }
 
+    public abstract class NetApiAlertBufferHandle : NetApiBufferHandle { }
+
     public class GroupInfoNetApiBufferHandle : NetApiBufferHandle
     {
     }
@@ -188,6 +190,11 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
     }
 
     public class UserModalsInfoNetApiBufferHandle : NetApiBufferHandle
+    {
+
+    }
+
+    public class WkstaInfoNetApiBufferHandle : NetApiBufferHandle
     {
 
     }

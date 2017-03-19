@@ -29,8 +29,7 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
                     throw new ObjectDisposedException(nameof(handle));
                 else if (IsInvalid)
                     throw new InvalidOperationException();
-                int ByteCount;
-                var netApiStatus = NetApiBufferSize(handle, out ByteCount);
+                var netApiStatus = NetApiBufferSize(handle, out int ByteCount);
                 if (netApiStatus == NERR_Success)
                     return ByteCount;
                 throw new Win32Exception((int)netApiStatus);
@@ -200,6 +199,11 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
     }
 
     public class WkstaTransportInfoArrayNetApiBufferHandle : NetApiBufferHandle
+    {
+
+    }
+
+    public class WkstaUserInfoArrayNetApiBufferHandle : NetApiBufferHandle
     {
 
     }

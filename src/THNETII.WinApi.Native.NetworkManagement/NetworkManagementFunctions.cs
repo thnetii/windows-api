@@ -4712,5 +4712,156 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
             [Optional] ref IntPtr resumehandle
             );
         #endregion
+        #region NetWkstaUserEnum function
+        /// <summary>
+        /// The <see cref="NetWkstaUserEnum"/> function lists information about all users currently logged on to the workstation. This list includes interactive, service and batch logons.
+        /// </summary>
+        /// <param name="servername">A string that specifies the DNS or NetBIOS name of the remote server on which the function is to execute. If this parameter is <c>null</c>, the local computer is used. </param>
+        /// <param name="level">
+        /// Specifies the information level of the data. This parameter can be one of the following values. 
+        /// <list type="table">
+        /// <listheader><term>Value</term> - <description>Meaning</description></listheader>
+        /// <term><c>0</c> (zero)</term> - <description>Return the names of users currently logged on to the workstation. The <paramref name="bufptr"/> parameter receives a handle to an array of <see cref="WKSTA_USER_INFO_0"/> structures.</description>
+        /// <term><c>1</c></term> - <description>Return the names of the current users and the domains accessed by the workstation. The <paramref name="bufptr"/> parameter receives a handle to an array of <see cref="WKSTA_USER_INFO_1"/> structures.</description>
+        /// </list>
+        /// </param>
+        /// <param name="bufptr">
+        /// <para>A variable that receives the data. The format of this data depends on the value of the <paramref name="level"/> parameter.</para>
+        /// <para>The returned handle is allocated by the system. Therefore, the handle should be wrapped in a <c>using</c> block to ensure that the memory is released once it is no longer used. Otherwise, the application should ensure that the <see cref="SafeHandle.Dispose()"/> method is called to free the memory manually.</para>
+        /// </param>
+        /// <param name="prefmaxlen">The preferred maximum length of returned data, in bytes. If you specify <see cref="MAX_PREFERRED_LENGTH"/>, the function allocates the amount of memory required for the data. If you specify another value in this parameter, it can restrict the number of bytes that the function returns. If the buffer size is insufficient to hold all entries, the function returns <see cref="ERROR_MORE_DATA"/>.</param>
+        /// <param name="entriesread">A variable that receives the count of elements actually enumerated.</param>
+        /// <param name="totalentries">A variable that receives the total number of entries that could have been enumerated from the current resume position. Note that applications should consider this value only as a hint.</param>
+        /// <param name="resumehandle">A reference to a variable that contains a resume handle which is used to continue an existing workstation transport search. The handle should be zero on the first call and left unchanged for subsequent calls. If the <paramref name="resumehandle"/> parameter is omitted, no resume handle is stored.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_ACCESS_DENIED"/></term><description>The user does not have access to the requested information.</description>
+        /// <term><see cref="ERROR_MORE_DATA"/></term><description>More entries are available. Specify a large enough buffer to receive all entries.</description>
+        /// <term><see cref="ERROR_INVALID_LEVEL"/></term><description>The <paramref name="level"/> parameter, which indicates what level of data structure information is available, is invalid.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>Note that since the <see cref="NetWkstaUserEnum"/> function lists entries for service and batch logons, as well as for interactive logons, the function can return entries for users who have logged off a workstation. This can occur, for example, when a user calls a service that impersonates the user. In this instance, <see cref="NetWkstaUserEnum"/> returns an entry for the user until the service stops impersonating the user.</para>
+        /// <para><strong>Windows Server 2003 and Windows XP:</strong> If you call this function on a domain controller that is running Active Directory, access is allowed or denied based on the ACL for the securable object. To enable anonymous access, the user Anonymous must be a member of the "Pre-Windows 2000 compatible access" group. This is because anonymous tokens do not include the Everyone group SID by default. If you call this function on a member server or workstation, all authenticated users can view the information. Anonymous access is also permitted if the EveryoneIncludesAnonymous policy setting allows anonymous access. Anonymous access is always permitted for level 100. If you call this function at level 101, authenticated users can view the information. Members of the Administrators, and the Server, System and Print Operator local groups can view information at levels 102 and 502. For more information about restricting anonymous access, see <a href="https://msdn.microsoft.com/en-us/library/aa370891.aspx">Security Requirements for the Network Management Functions</a>. For more information on ACLs, ACEs, and access tokens, see <a href="https://msdn.microsoft.com/en-us/library/aa374876.aspx">Access Control Model</a>.</para>
+        /// <para><strong>Windows 2000:</strong> If you call this function on a domain controller that is running Active Directory, access is allowed or denied based on the access control list (ACL) for the securable object. The default ACL permits all authenticated users and members of the " Pre-Windows 2000 compatible access" group to view the information. By default, the "<a href="https://msdn.microsoft.com/en-us/library/aa375347.aspx">Pre-Windows 2000 compatible access</a>" group includes Everyone as a member. This enables anonymous access to the information if the system allows anonymous access. If you call this function on a member server or workstation, all authenticated users can view the information. Anonymous access is also permitted if the RestrictAnonymous policy setting allows anonymous access.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370669.aspx">NetWkstaUserEnum function</a></para>
+        /// </remarks>
+        /// <seealso cref="NetWkstaGetInfo"/>
+        /// <seealso cref="NetWkstaSetInfo"/>
+        /// <seealso cref="WKSTA_USER_INFO_0"/>
+        /// <seealso cref="WKSTA_USER_INFO_1"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetWkstaUserEnum(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string servername,
+            [In] int level,
+            out WkstaUserInfoArrayNetApiBufferHandle bufptr,
+            [In] int prefmaxlen,
+            out int entriesread,
+            out int totalentries,
+            [Optional] ref IntPtr resumehandle
+            );
+        #endregion
+        #region NetWkstaUserGetInfo function
+        /// <summary>
+        /// The <see cref="NetWkstaUserGetInfo"/> function returns information about the currently logged-on user. This function must be called in the context of the logged-on user.
+        /// </summary>
+        /// <param name="reserved">This parameter must be set to <c>null</c>.</param>
+        /// <param name="level">
+        /// Specifies the information level of the data. This parameter can be one of the following values. 
+        /// <list type="table">
+        /// <listheader><term>Value</term> - <description>Meaning</description></listheader>
+        /// <term><c>0</c> (zero)</term> - <description>Return the name of the user currently logged on to the workstation. The <paramref name="bufptr"/> parameter receives a handle to a <see cref="WKSTA_USER_INFO_0"/> structure.</description>
+        /// <term><c>1</c></term> - <description>Return information about the workstation, including the name of the current user and the domains accessed by the workstation. The <paramref name="bufptr"/> parameter receives a handle to a <see cref="WKSTA_USER_INFO_1"/> structure.</description>
+        /// <term><c>1101</c></term> - <description>Return domains browsed by the workstation. The <paramref name="bufptr"/> parameter receives a handle to a <see cref="WKSTA_USER_INFO_1101"/> structure.</description>
+        /// </list>
+        /// </param>
+        /// <param name="bufptr">
+        /// <para>A variable that receives the data. The format of this data depends on the value of the <paramref name="level"/> parameter.</para>
+        /// <para>The returned handle is allocated by the system. Therefore, the handle should be wrapped in a <c>using</c> block to ensure that the memory is released once it is no longer used. Otherwise, the application should ensure that the <see cref="SafeHandle.Dispose()"/> method is called to free the memory manually.</para>
+        /// </param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_NOT_ENOUGH_MEMORY"/></term><description>The system ran out of memory resources. Either the network manager configuration is incorrect, or the program is running on a system with insufficient memory.</description>
+        /// <term><see cref="ERROR_INVALID_LEVEL"/></term><description>The <paramref name="level"/> parameter is invalid.</description>
+        /// <term><see cref="ERROR_INVALID_PARAMETER"/></term><description>One of the function parameters is invalid.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// The <see cref="NetWkstaUserGetInfo"/> function only works locally.
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370670.aspx">NetWkstaUserGetInfo function</a></para>
+        /// </remarks>
+        /// <seealso cref="NetWkstaSetInfo"/>
+        /// <seealso cref="WKSTA_USER_INFO_0"/>
+        /// <seealso cref="WKSTA_USER_INFO_1"/>
+        /// <seealso cref="WKSTA_USER_INFO_1101"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetWkstaUserGetInfo(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string reserved,
+            [In] int level,
+            out WkstaUserInfoArrayNetApiBufferHandle bufptr
+            );
+        #endregion
+        #region NetWkstaUserSetInfo function
+        /// <summary>
+        /// The <see cref="NetWkstaUserSetInfo"/> function sets the user-specific information about the configuration elements for a workstation.
+        /// </summary>
+        /// <param name="reserved">This parameter must be set to <c>null</c>.</param>
+        /// <param name="level">
+        /// Specifies the information level of the data. This parameter can be one of the following values. 
+        /// <list type="table">
+        /// <listheader><term>Value</term> - <description>Meaning</description></listheader>
+        /// <term><c>1</c></term> - <description>Specifies information about the workstation, including the name of the current user and the domains accessed by the workstation. The <paramref name="buf"/> parameter specifies a <see cref="WKSTA_USER_INFO_1"/> structure.</description>
+        /// <term><c>1101</c></term> - <description>Specifies domains browsed by the workstation. The <paramref name="buf"/> parameter specifies a <see cref="WKSTA_USER_INFO_1101"/> structure.</description>
+        /// </list>
+        /// </param>
+        /// <param name="buf">An object instance that specifies the data. The format of this data depends on the value of the <paramref name="level"/> parameter.</param>
+        /// <param name="parm_err">A variable that receives the index of the first parameter that causes the <see cref="ERROR_INVALID_PARAMETER"/> error. If this parameter is omitted, the index is not returned on error.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_INVALID_LEVEL"/></term><description>The <paramref name="level"/> parameter is invalid.</description>
+        /// <term><see cref="ERROR_INVALID_PARAMETER"/></term><description>One of the function parameters is invalid.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>The <see cref="NetWkstaUserSetInfo"/> function only works locally. Administrator group membership is required.</para>
+        /// <para>Domain names in the <see cref="WKSTA_USER_INFO_1101.wkui1101_oth_domains"/> member of the <see cref="WKSTA_USER_INFO_1101"/> structure are separated by spaces. An empty list is valid. A <c>null</c> string means to leave the member unmodified. The <see cref="WKSTA_USER_INFO_1101.wkui1101_oth_domains"/> member cannot be set with MS-DOS. When setting this element, <see cref="NetWkstaUserSetInfo"/> rejects the request if the name list was invalid or if a name could not be added to one or more of the network adapters managed by the system.</para>
+        /// <para>If the <see cref="NetWkstaUserSetInfo"/> function returns <see cref="ERROR_INVALID_PARAMETER"/>, you can use the <paramref name="parm_err"/> parameter to indicate the member of the workstation user information structure that is invalid. (A workstation user information structure begins with <strong>WKSTA_USER_INFO_</strong> and its format is specified by the <paramref name="level"/> parameter.) The values that can be returned in the <paramref name="parm_err"/> parameter and the corresponding structure member that is in error is specified by the <see cref="WKSTA_USER_INFO_PARMNUM"/> enumeration type.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370671.aspx">NetWkstaUserSetInfo function</a></para>
+        /// </remarks>
+        /// <seealso cref="NetWkstaUserGetInfo"/>
+        /// <seealso cref="WKSTA_USER_INFO_1"/>
+        /// <seealso cref="WKSTA_USER_INFO_1101"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetWkstaUserSetInfo(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string reserved,
+            [In] int level,
+            [In, MarshalAs(UnmanagedType.LPStruct)] object buf,
+            [Optional] out WKSTA_USER_INFO_PARMNUM parm_err
+            );
+        #endregion
     }
 }

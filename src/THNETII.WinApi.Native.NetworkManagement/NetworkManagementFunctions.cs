@@ -4863,5 +4863,43 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
             [Optional] out WKSTA_USER_INFO_PARMNUM parm_err
             );
         #endregion
+        #region SetNetScheduleAccountInformation function
+        /// <summary>
+        /// <para><see cref="SetNetScheduleAccountInformation"/> is no longer available for use as of Windows 8. Instead, use the <a href="https://msdn.microsoft.com/en-us/library/aa383600.aspx">Task Scheduler 2.0 Interfaces</a>.</para>
+        /// <para>The <see cref="SetNetScheduleAccountInformation"/> function sets the AT Service account name and password. The AT Service account name and password are used as the credentials for scheduled jobs created with <see cref="NetScheduleJobAdd"/>.</para>
+        /// </summary>
+        /// <param name="pwszServerName">A string for the name of the computer whose account information is being set.</param>
+        /// <param name="pwszAccount">A string for the account. To specify the local system account, set this parameter to <c>null</c>.</param>
+        /// <param name="pwszPassword">A string for the password.</param>
+        /// <returns>
+        /// <para>The return value is an <see cref="HRESULT"/>. A value of <see cref="S_OK"/> indicates the account name and password were successfully set. Any other value indicates an error condition.</para>
+        /// <para>
+        /// If the function fails, some of the possible return values are listed below. 
+        /// <list type="table">
+        /// <listheader><term>Return code/value</term><description>Description</description></listheader>
+        /// <term><see cref="E_ACCESSDENIED"/><br/><c>0x080070005</c></term><description>Access was denied. This error is returned if the caller was not a member of the Administrators group. This error is also returned if the <paramref name="pwszAccount"/> parameter was not <c>null</c> indicating a named account not the local system account and the <paramref name="pwszPassword"/> parameter was incorrect for the account specified in the <paramref name="pwszAccount"/> parameter.</description>
+        /// <term><see cref="ERROR_INVALID_DATA"/> (as an <see cref="HRESULT"/> value)<br/><c>0x08007000d</c></term><description>The data is invalid. This error is returned if the <paramref name="pwszPassword"/> parameter was <c>null</c> or the length of <paramref name="pwszPassword"/> parameter string was too long.</description>
+        /// <term><see cref="SCHED_E_ACCOUNT_NAME_NOT_FOUND"/><br/><c>0x80041310</c></term><description>Unable to establish existence of the account specified. This error is returned if the <paramref name="pwszAccount"/> parameter was not <c>null</c> indicating a named account not the local system account and the <paramref name="pwszAccount"/> parameter could not be found. </description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// The <see cref="SetNetScheduleAccountInformation"/> impersonates the caller. Only members of the local Administrators group on the computer where the schedule account information is being set can successfully execute this function. Note that <c>null</c> passwords are not allowed.
+        /// <para><strong>Minimum supported client</strong>: Windows Vista, Windows XP with SP1 [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows Server 2003 [desktop apps only]</para>
+        /// <para><strong>End of client support</strong>: Windows 7</para>
+        /// <para><strong>End of server support</strong>: Windows Server 2008</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370955.aspx">SetNetScheduleAccountInformation function</a></para>
+        /// </remarks>
+        /// <seealso cref="GetNetScheduleAccountInformation"/>
+        [Obsolete("SetNetScheduleAccountInformation is no longer available for use as of Windows 8. Instead, use the Task Scheduler 2.0 Interfaces.")]
+        [DllImport("Mstask.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.Error)]
+        public static extern HRESULT SetNetScheduleAccountInformation(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string pwszServerName,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string pwszAccount,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string pwszPassword
+            );
+        #endregion
     }
 }

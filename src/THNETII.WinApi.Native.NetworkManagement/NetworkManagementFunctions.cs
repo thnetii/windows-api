@@ -4658,5 +4658,59 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
             [Optional] out WKSTA_INFO_PARMNUM parm_err
             );
         #endregion
+        #region NetWkstaTransportAdd function
+        // This function is not supported.
+        #endregion
+        #region NetWkstaTransportDel function
+        // This function is not supported.
+        #endregion
+        #region NetWkstaTransportEnum function
+        /// <summary>
+        /// The <see cref="NetWkstaTransportEnum"/> function supplies information about transport protocols that are managed by the redirector, which is the software on the client computer that generates file requests to the server computer.
+        /// </summary>
+        /// <param name="servername">A string that specifies the DNS or NetBIOS name of the remote server on which the function is to execute. If this parameter is <c>null</c>, the local computer is used. </param>
+        /// <param name="level">The level of information requested for the data. This parameter can be the following value. <c>0</c> (zero) - Return workstation transport protocol information. The <paramref name="bufptr"/> parameter receives a handle for an array of <see cref="WKSTA_TRANSPORT_INFO_0"/> structures.</param>
+        /// <param name="bufptr">
+        /// <para>A variable that receives the data. The format of this data depends on the value of the <paramref name="level"/> parameter.</para>
+        /// <para>The returned handle is allocated by the system. Therefore, the handle should be wrapped in a <c>using</c> block to ensure that the memory is released once it is no longer used. Otherwise, the application should ensure that the <see cref="SafeHandle.Dispose()"/> method is called to free the memory manually.</para>
+        /// </param>
+        /// <param name="prefmaxlen">The preferred maximum length of returned data, in bytes. If you specify <see cref="MAX_PREFERRED_LENGTH"/>, the function allocates the amount of memory required for the data. If you specify another value in this parameter, it can restrict the number of bytes that the function returns. If the buffer size is insufficient to hold all entries, the function returns <see cref="ERROR_MORE_DATA"/> or <see cref="NERR_BufTooSmall"/>.</param>
+        /// <param name="entriesread">A variable that receives the count of elements actually enumerated.</param>
+        /// <param name="totalentries">A variable that receives the total number of entries that could have been enumerated from the current resume position. Note that applications should consider this value only as a hint.</param>
+        /// <param name="resumehandle">A reference to a variable that contains a resume handle which is used to continue an existing workstation transport search. The handle should be zero on the first call and left unchanged for subsequent calls. If the <paramref name="resumehandle"/> parameter is omitted, no resume handle is stored.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_MORE_DATA"/></term><description>More entries are available. Specify a large enough buffer to receive all entries.</description>
+        /// <term><see cref="ERROR_INVALID_LEVEL"/></term><description>The <paramref name="level"/> parameter, which indicates what level of data structure information is available, is invalid. This error is returned if the <paramref name="level"/> parameter is specified as a value other than zero.</description>
+        /// <term><see cref="ERROR_INVALID_PARAMETER"/></term><description>One of the function parameters is invalid.</description>
+        /// <term><see cref="ERROR_NOT_ENOUGH_MEMORY"/></term><description>Insufficient memory was available to process the request.</description>
+        /// <term><see cref="ERROR_NOT_SUPPORTED"/></term><description>The request is not supported. This error is returned if a remote server was specified in <paramref name="servername"/> parameter, and this request is not supported on the remote server. </description>
+        /// <term><see cref="NERR_BufTooSmall"/></term><description>More entries are available. Specify a large enough buffer to receive all entries.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// No special group membership is required to successfully execute the <see cref="NetWkstaTransportEnum"/> function.
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370668.aspx">NetWkstaTransportEnum function</a></para>
+        /// </remarks>
+        /// <seealso cref="WKSTA_TRANSPORT_INFO_0"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetWkstaTransportEnum(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string servername,
+            [In] int level,
+            out WkstaTransportInfoArrayNetApiBufferHandle bufptr,
+            [In] int prefmaxlen,
+            out int entriesread,
+            out int totalentries,
+            [Optional] ref IntPtr resumehandle
+            );
+        #endregion
     }
 }

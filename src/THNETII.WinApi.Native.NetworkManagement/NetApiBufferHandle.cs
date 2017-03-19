@@ -198,4 +198,9 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
     {
 
     }
+
+    public class WkstaTransportInfoArrayNetApiBufferHandle : NetApiBufferHandle
+    {
+
+    }
 }

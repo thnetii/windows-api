@@ -4559,5 +4559,104 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
             out NetValidateOutputBufferHandle OutputArg
             );
         #endregion
+        #region NetWkstaGetInfo function
+        /// <summary>
+        /// The <see cref="NetWkstaGetInfo"/> function returns information about the configuration of a workstation.
+        /// </summary>
+        /// <param name="servername">A string that specifies the DNS or NetBIOS name of the remote server on which the function is to execute. If this parameter is <c>null</c>, the local computer is used.</param>
+        /// <param name="level">
+        /// Specifies the information level of the data. This parameter can be one of the following values. 
+        /// <list type="table">
+        /// <listheader><term>Value</term> - <description>Meaning</description></listheader>
+        /// <term><c>100</c></term> - <description>Return information about the workstation environment, including platform-specific information, the name of the domain and the local computer, and information concerning the operating system. The <paramref name="bufptr"/> parameter receives a <see cref="WKSTA_INFO_100"/> structure.</description>
+        /// <term><c>101</c></term> - <description>In addition to level 100 information, return the path to the LANMAN directory. The <paramref name="bufptr"/> parameter receives a <see cref="WKSTA_INFO_101"/> structure.</description>
+        /// <term><c>102</c></term> - <description>In addition to level 101 information, return the number of users who are logged on to the local computer. The <paramref name="bufptr"/> parameter receives a <see cref="WKSTA_INFO_102"/> structure.</description>
+        /// </list>
+        /// </param>
+        /// <param name="bufptr">
+        /// <para>A variable for a buffer that receives the information structure. The format of this data depends on the value of the <paramref name="level"/> parameter.</para>
+        /// <para>The system allocates the memory for this buffer. The handle should be wrapped in a <c>using</c> block, or the application should otherwise make sure that the <see cref="SafeHandle.Dispose()"/> method is called on the returned handle when it is no longer needed.</para>
+        /// </param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_ACCESS_DENIED"/></term><description>The user does not have access to the requested information.</description>
+        /// <term><see cref="ERROR_INVALID_LEVEL"/></term><description>The <paramref name="level"/> parameter is invalid.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para><strong>Windows Server 2003 and Windows XP:</strong> If you call this function on a domain controller that is running Active Directory, access is allowed or denied based on the ACL for the securable object. To enable anonymous access, the user Anonymous must be a member of the "Pre-Windows 2000 compatible access" group. This is because anonymous tokens do not include the Everyone group SID by default. If you call this function on a member server or workstation, all authenticated users can view the information. Anonymous access is also permitted if the EveryoneIncludesAnonymous policy setting allows anonymous access. Anonymous access is always permitted for level 100. If you call this function at level 101, authenticated users can view the information. Members of the Administrators, and the Server, System and Print Operator local groups can view information at levels 102 and 502. For more information about restricting anonymous access, see <a href="https://msdn.microsoft.com/en-us/library/aa370891.aspx">Security Requirements for the Network Management Functions</a>. For more information on ACLs, ACEs, and access tokens, see <a href="https://msdn.microsoft.com/en-us/library/aa374876.aspx">Access Control Model</a>.</para>
+        /// <para><strong>Windows 2000:</strong> If you call this function on a domain controller that is running Active Directory, access is allowed or denied based on the access control list (ACL) for the securable object. The default ACL permits all authenticated users and members of the " Pre-Windows 2000 compatible access" group to view the information. By default, the "<a href="https://msdn.microsoft.com/en-us/library/aa375347.aspx">Pre-Windows 2000 compatible access</a>" group includes Everyone as a member. This enables anonymous access to the information if the system allows anonymous access. If you call this function on a member server or workstation, all authenticated users can view the information. Anonymous access is also permitted if the RestrictAnonymous policy setting allows anonymous access.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370663.aspx">NetWkstaGetInfo function</a></para>
+        /// </remarks>
+        /// <seealso cref="NetWkstaSetInfo"/>
+        /// <seealso cref="WKSTA_INFO_100"/>
+        /// <seealso cref="WKSTA_INFO_101"/>
+        /// <seealso cref="WKSTA_INFO_102"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetWkstaGetInfo(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string servername,
+            [In] int level,
+            out WkstaInfoNetApiBufferHandle bufptr
+            );
+        #endregion
+        #region NetWkstaSetInfo function
+        /// <summary>
+        /// The <see cref="NetWkstaSetInfo"/> function configures a workstation with information that remains in effect after the system has been reinitialized.
+        /// </summary>
+        /// <param name="servername">A string that specifies the DNS or NetBIOS name of the remote server on which the function is to execute. If this parameter is <c>null</c>, the local computer is used. </param>
+        /// <param name="level">
+        /// The information level of the data. This parameter can be one of the following values. 
+        /// <list type="table">
+        /// <listheader><term>Value</term> - <description>Meaning</description></listheader>
+        /// <term><c>100</c></term> - <description><strong>Windows NT:</strong> Specifies information about a workstation environment, including platform-specific information, the names of the domain and the local computer, and information concerning the operating system. The <paramref name="buffer"/> parameter specifies a <see cref="WKSTA_INFO_100"/> structure. The <see cref="WKSTA_INFO_100.wki100_computername"/> and <see cref="WKSTA_INFO_100.wki100_langroup"/> fields of this structure cannot be set by calling this function. To set these values, call <see cref="SetComputerName"/>/<see cref="SetComputerNameEx"/> or <see cref="NetJoinDomain"/>, respectively.</description>
+        /// <term><c>101</c></term> - <description><strong>Windows NT:</strong> In addition to level 100 information, specifies the path to the LANMAN directory. The <paramref name="buffer"/> parameter specifies a <see cref="WKSTA_INFO_101"/> structure. The <see cref="WKSTA_INFO_101.wki101_computername"/> and <see cref="WKSTA_INFO_101.wki101_langroup"/> fields of this structure cannot be set by calling this function. To set these values, call <see cref="SetComputerName"/>/<see cref="SetComputerNameEx"/> or <see cref="NetJoinDomain"/>, respectively.</description>
+        /// <term><c>102</c></term> - <description><strong>Windows NT:</strong> The <paramref name="buffer"/> parameter specifies a <see cref="WKSTA_INFO_102"/> structure. The <see cref="WKSTA_INFO_102.wki102_computername"/> and <see cref="WKSTA_INFO_102.wki102_langroup"/> fields of this structure cannot be set by calling this function. To set these values, call <see cref="SetComputerName"/>/<see cref="SetComputerNameEx"/> or <see cref="NetJoinDomain"/>, respectively.</description>
+        /// <term><c>502</c></term> - <description><strong>Windows NT:</strong> The <paramref name="buffer"/> parameter specifies a <see cref="WKSTA_INFO_502"/> structure that contains information about the workstation environment..</description>
+        /// </list>
+        /// Do not set levels 1010-1013, 1018, 1023, 1027, 1028, 1032, 1033, 1035, or 1041-1062.
+        /// </param>
+        /// <param name="buffer">An object instance that specifies the data. The format of this data depends on the value of the <paramref name="level"/> parameter.</param>
+        /// <param name="parm_err">A variable that receives the index of the first member of the workstation information structure that causes the <see cref="ERROR_INVALID_PARAMETER"/> error. If this parameter is omitted, the index is not returned on error.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="NERR_Success"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <term><see cref="ERROR_ACCESS_DENIED"/></term><description>The user does not have access to the requested information.</description>
+        /// <term><see cref="ERROR_INVALID_PARAMETER"/></term><description>One of the function parameters is invalid. For more information, see the function Remarks section.</description>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>Only members of the Administrators group can successfully execute the <see cref="NetWkstaSetInfo"/> function on a remote server.</para>
+        /// <para>The <see cref="NetWkstaSetInfo"/> function calls the workstation service on the local system or a remote system. Only a limited number of members of the <see cref="WKSTA_INFO_502"/> structure can actually be changed using the <see cref="NetWkstaSetInfo"/> function. No errors are returned if a member is set that is ignored by the workstation service. The workstation service is primarily configured using settings in the registry. </para>
+        /// <para>The <see cref="NetWkstaUserSetInfo"/> function can be used instead of the <see cref="NetWkstaSetInfo"/> function to set configuration information on the local system. The <see cref="NetWkstaUserSetInfo"/> function calls the Local Security Authority (LSA). </para>
+        /// <para>If the <see cref="NetWkstaSetInfo"/> function returns <see cref="ERROR_INVALID_PARAMETER"/>, you can use the <paramref name="parm_err"/> parameter to indicate the first member of the workstation information structure that is invalid. (A workstation information structure begins with <strong>WKSTA_INFO_</strong> and its format is specified by the <paramref name="level"/> parameter.) The values that can be returned in the <paramref name="parm_err"/> parameter and the corresponding structure member that is in error is specified by the <see cref="WKSTA_INFO_PARMNUM"/> enumeration type.</para>
+        /// <para>The workstation service parameter settings are stored in the registry, not in the LanMan.ini file used prveiously by LAN Manager. The <see cref="NetWkstaSetInfo"/> function does not change the values in the LanMan.ini file. When the workstation service is stopped and restarted, workstation parameters are reset to the default values specified in the registry (unless they are overwritten by command-line parameters). Values set by previous calls to <see cref="NetWkstaSetInfo"/> can be overwritten when workstation parameters are reset.</para>
+        /// <para><strong>Minimum supported client</strong>: Windows 2000 Professional [desktop apps only]</para>
+        /// <para><strong>Minimum supported server</strong>: Windows 2000 Server [desktop apps only]</para>
+        /// <para>Original MSDN documentation page: <a href="https://msdn.microsoft.com/en-us/library/aa370664.aspx">NetWkstaSetInfo function</a></para>
+        /// </remarks>
+        /// <seealso cref="NetWkstaGetInfo"/>
+        /// <seealso cref="NetWkstaUserGetInfo"/>
+        /// <seealso cref="NetWkstaUserSetInfo"/>
+        [DllImport("Netapi32.dll", CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern Win32ErrorCode NetWkstaSetInfo(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string servername,
+            [In] int level,
+            [In, MarshalAs(UnmanagedType.LPStruct)] object buffer,
+            [Optional] out WKSTA_INFO_PARMNUM parm_err
+            );
+        #endregion
     }
 }

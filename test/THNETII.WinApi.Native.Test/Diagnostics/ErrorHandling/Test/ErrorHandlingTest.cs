@@ -7,7 +7,7 @@ using Xunit;
 using static Microsoft.Win32.WinApi.Diagnostics.ErrorHandling.ErrorHandlingFunctions;
 using static Microsoft.Win32.WinApi.Diagnostics.ErrorHandling.ErrorHandlingFunctions.FORMAT_MESSAGE_FLAG;
 
-namespace THNETII.WinApi.Native.Test.ErrorHandling
+namespace THNETII.WinApi.Native.Diagnostics.ErrorHandling.Test
 {
     public class ErrorHandlingTest
     {

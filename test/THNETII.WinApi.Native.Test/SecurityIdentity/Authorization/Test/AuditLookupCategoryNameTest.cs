@@ -9,7 +9,7 @@ using THNETII.InteropServices.SafeHandles;
 using Xunit;
 using static Microsoft.Win32.WinApi.SecurityIdentity.Authorization.AuthorizationFunctions;
 
-namespace THNETII.WinApi.Native.Test.Authorization
+namespace THNETII.WinApi.Native.SecurityIdentity.Authorization.Test
 {
     public class AuditLookupCategoryNameTest
     {

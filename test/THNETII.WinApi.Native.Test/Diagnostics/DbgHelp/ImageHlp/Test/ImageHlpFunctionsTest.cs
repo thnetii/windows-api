@@ -5,7 +5,7 @@ using Xunit;
 using static Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHlp.ImageHlpFunctions;
 using static Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHlp.IMAGE_OPTIONAL_HDR_MAGIC;
 
-namespace THNETII.WinApi.Native.Test.DbgHelp.ImageHlp
+namespace THNETII.WinApi.Native.Diagnostics.DbgHelp.ImageHlp.Test
 {
     public class ImageHlpFunctionsTest
     {

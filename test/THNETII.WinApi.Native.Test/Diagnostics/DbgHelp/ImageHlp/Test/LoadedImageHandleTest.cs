@@ -1,7 +1,7 @@
 ﻿using Microsoft.Win32.WinApi.Diagnostics.DbgHelp.ImageHlp;
 using Xunit;
 
-namespace THNETII.WinApi.Native.Test.DbgHelp.ImageHlp
+namespace THNETII.WinApi.Native.Diagnostics.DbgHelp.ImageHlp.Test
 {
     public class LoadedImageHandleTest
     {

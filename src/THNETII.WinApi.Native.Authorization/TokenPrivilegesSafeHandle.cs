@@ -35,8 +35,7 @@ namespace Microsoft.Win32.WinApi.SecurityIdentity.Authorization
             return nativeMarshaledInstance;
         }
 
-        public static TOKEN_PRIVILEGES ReadValue<THandle>(this THandle safeHandle)
-            where THandle : SafeHandle, ISafeHandleReadableAsTokenPrivileges
+        public static TOKEN_PRIVILEGES ReadValue(this ISafeHandleReadableAsTokenPrivileges safeHandle)
             => safeHandle.ReadValue(MarshalToManagedInstance);
     }
 

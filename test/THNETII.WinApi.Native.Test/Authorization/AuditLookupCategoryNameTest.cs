@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Threading.Tasks;
+using THNETII.InteropServices.SafeHandles;
 using Xunit;
 using static Microsoft.Win32.WinApi.SecurityIdentity.Authorization.AuthorizationFunctions;
 
@@ -20,7 +21,7 @@ namespace THNETII.WinApi.Native.Test.Authorization
             var apiResult = AuditEnumerateCategories(out auditCategoriesHandle, out categoriesReturned);
             using (auditCategoriesHandle)
             {
-                var auditCategoriesGuids = auditCategoriesHandle.MarshalToManagedArray(categoriesReturned);
+                var auditCategoriesGuids = auditCategoriesHandle.ReadValue(categoriesReturned);
                 foreach (var auditCategoryGuidIter in auditCategoriesGuids)
                 {
                     var auditCategoryGuidVal = auditCategoryGuidIter;
@@ -29,7 +30,7 @@ namespace THNETII.WinApi.Native.Test.Authorization
                     Assert.True(apiResult, ((Win32ErrorCode)Marshal.GetLastWin32Error()).ToString());
                     using (auditCategoryNameHandle)
                     {
-                        string auditCategoryName = auditCategoryNameHandle.MarshalToManagedInstance();
+                        string auditCategoryName = auditCategoryNameHandle.ReadValue();
                     }
                 }
             }
@@ -44,7 +45,7 @@ namespace THNETII.WinApi.Native.Test.Authorization
             var apiResult = AuditEnumerateSubCategories(ref ignoredRootCategory, true, out auditSubCategoriesHandle, out categoriesReturned);
             using (auditSubCategoriesHandle)
             {
-                var auditSubCategories = auditSubCategoriesHandle.MarshalToManagedArray(categoriesReturned);
+                var auditSubCategories = auditSubCategoriesHandle.ReadValue(categoriesReturned);
                 foreach (var auditSubCategoryGuidIter in auditSubCategories)
                 {
                     Guid auditSubCategoryVal = auditSubCategoryGuidIter;
@@ -53,7 +54,7 @@ namespace THNETII.WinApi.Native.Test.Authorization
                     Assert.True(apiResult, ((Win32ErrorCode)Marshal.GetLastWin32Error()).ToString());
                     using (auditCategoryNameHandle)
                     {
-                        string auditCategoryName = auditCategoryNameHandle.MarshalToManagedInstance();
+                        string auditCategoryName = auditCategoryNameHandle.ReadValue();
                     }
                 }
             }

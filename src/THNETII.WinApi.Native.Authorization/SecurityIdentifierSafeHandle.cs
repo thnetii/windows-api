@@ -16,8 +16,7 @@ namespace Microsoft.Win32.WinApi.SecurityIdentity.Authorization
             return new SecurityIdentifier(pNativeData);
         }
 
-        public static SecurityIdentifier ReadValue<THandle>(this THandle safeHandle)
-            where THandle : SafeHandle, ISafeHandleReadableAsSecurityIdentifier
+        public static SecurityIdentifier ReadValue(this ISafeHandleReadableAsSecurityIdentifier safeHandle)
             => safeHandle?.ReadValue(MarshalNativeToManaged);
     }
 

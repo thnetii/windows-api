@@ -56,8 +56,7 @@ namespace Microsoft.Win32.WinApi.SecurityIdentity.Authorization
             return nativeMarshaledInstance.UserSidArray.Select(userSidPtr => new SecurityIdentifier(userSidPtr)).ToArray();
         }
 
-        public static SecurityIdentifier[] ReadValue<THandle>(this THandle safeHandle)
-            where THandle : SafeHandle, ISafeHandleReadableAsPOLICY_AUDIT_SID_ARRAY
+        public static SecurityIdentifier[] ReadValue(this ISafeHandleReadableAsPOLICY_AUDIT_SID_ARRAY safeHandle)
             => safeHandle.ReadValue(MarshalNativeToManaged);
     }
 }

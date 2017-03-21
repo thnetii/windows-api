@@ -28,13 +28,13 @@ namespace Microsoft.Win32.WinApi.SecurityIdentity.Authorization
         /// <para>The <see cref="GetMarshaledGrantedAccessMaskArray"/> method is a convenience method that returns the granted access masks as a marshaled managed array instance.</para>
         /// </summary>
         public AccessMaskArrayAnySafeHandle GrantedAccessMask;
-        public ACCESS_MASK[] GetMarshaledGrantedAccessMaskArray() => Int32CastableArraySafeHandle.ReadValue<AccessMaskArrayAnySafeHandle, ACCESS_MASK>(GrantedAccessMask, ResultListLength);
+        public ACCESS_MASK[] GetMarshaledGrantedAccessMaskArray() => GrantedAccessMask.ReadValue(ResultListLength);
         /// <summary>
         /// An array of <em><a href="https://msdn.microsoft.com/en-us/library/ms721625.aspx#_security_system_access_control_list_gly">system access control list</a></em> (SACL) evaluation results. Memory for this array is allocated by the application before calling <see cref="AccessCheck"/>. SACL evaluation will only be performed if auditing is requested.
         /// <para>The <see cref="GetMarshaledSaclEvaluationResultsArray"/> method is a convenience method that returns the SACL evaluation results as a marshaled managed array instance.</para>
         /// </summary>
         public AuthzEvaluationResultArrayAnySafeHandle SaclEvaluationResults;
-        public AUTHZ_EVALUATION_RESULT[] GetMarshaledSaclEvaluationResultsArray() => Int32CastableArraySafeHandle.ReadValue<AuthzEvaluationResultArrayAnySafeHandle, AUTHZ_EVALUATION_RESULT>(SaclEvaluationResults, ResultListLength);
+        public AUTHZ_EVALUATION_RESULT[] GetMarshaledSaclEvaluationResultsArray() => SaclEvaluationResults.ReadValue(ResultListLength);
         /// <summary>
         /// An array of results for each element of the array. Memory for this array is allocated by the application before calling <see cref="AccessCheck"/>. 
         /// <para>The <see cref="GetErrorArray"/> method is a convenience method that returns the error values as a marshaled managed array instance.</para>

@@ -2,6 +2,7 @@
 using Microsoft.Win32.WinApi.WinError;
 using System;
 using System.Runtime.InteropServices;
+using THNETII.InteropServices.SafeHandles;
 using Xunit;
 
 using static Microsoft.Win32.WinApi.SecurityIdentity.Authorization.AuthorizationFunctions;
@@ -19,7 +20,7 @@ namespace THNETII.WinApi.Native.Test.Authorization
             Assert.True(apiResult, ((Win32ErrorCode)Marshal.GetLastWin32Error()).ToString());
             using (auditCategoriesHandle)
             {
-                var auditCategoriesGuids = auditCategoriesHandle.MarshalToManagedArray(categoriesReturned);
+                var auditCategoriesGuids = auditCategoriesHandle.ReadValue(categoriesReturned);
             }
         }
 
@@ -31,8 +32,7 @@ namespace THNETII.WinApi.Native.Test.Authorization
             Assert.True(apiResult, ((Win32ErrorCode)Marshal.GetLastWin32Error()).ToString());
             using (auditCategoriesHandle)
             {
-                var auditPolicySidArrayStructure = auditCategoriesHandle.MarshalToManagedInstance();
-                var auditPolicySids = auditPolicySidArrayStructure.MarshalUserSidArrayToManagedInstances();
+                var auditPolicySids = auditCategoriesHandle.ReadValue();
                 Assert.NotNull(auditPolicySids);
             }
         }
@@ -46,7 +46,7 @@ namespace THNETII.WinApi.Native.Test.Authorization
             Assert.True(apiResult, ((Win32ErrorCode)Marshal.GetLastWin32Error()).ToString());
             using (auditCategoriesHandle)
             {
-                var auditCategories = auditCategoriesHandle.MarshalToManagedArray(categoriesReturned);
+                var auditCategories = auditCategoriesHandle.ReadValue(categoriesReturned);
                 foreach (var auditRootCategory in auditCategories)
                 {
                     var currentAuditRootCategory = auditRootCategory;
@@ -55,7 +55,7 @@ namespace THNETII.WinApi.Native.Test.Authorization
                     Assert.True(apiResult, ((Win32ErrorCode)Marshal.GetLastWin32Error()).ToString());
                     using (auditSubCategoriesHandle)
                     {
-                        var auditSubCategories = auditSubCategoriesHandle.MarshalToManagedArray(categoriesReturned);
+                        var auditSubCategories = auditSubCategoriesHandle.ReadValue(categoriesReturned);
                     }
                 }
             }
@@ -71,7 +71,7 @@ namespace THNETII.WinApi.Native.Test.Authorization
             Assert.True(apiResult, ((Win32ErrorCode)Marshal.GetLastWin32Error()).ToString());
             using (auditSubCategoriesHandle)
             {
-                var auditSubCategories = auditSubCategoriesHandle.MarshalToManagedArray(categoriesReturned);
+                var auditSubCategories = auditSubCategoriesHandle.ReadValue(categoriesReturned);
             }
         }
     }

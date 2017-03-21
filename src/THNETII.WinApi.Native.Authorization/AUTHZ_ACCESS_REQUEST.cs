@@ -34,7 +34,7 @@ namespace Microsoft.Win32.WinApi.SecurityIdentity.Authorization
         /// The number of elements in the <see cref="ObjectTypeList"/> array. This member is necessary only if the application checks access at the property level.
         /// </summary>
         public int ObjectTypeListLength;
-        public OBJECT_TYPE_LIST[] GetObjectTypeListArray() => SimpleStructureArraySafeHandle.ReadValue<ObjectTypeListArrayAnySafeHandle, OBJECT_TYPE_LIST>(ObjectTypeList, ObjectTypeListLength);
+        public OBJECT_TYPE_LIST[] GetObjectTypeListArray() => ObjectTypeList.ReadValue(ObjectTypeListLength);
         /// <summary>
         /// A pointer to memory to pass to <see cref="AuthzAccessCheckCallback"/> when checking callback <em><a href="https://msdn.microsoft.com/en-us/library/ms721532.aspx#_security_access_control_entry_gly">access control entries</a></em> (ACEs).
         /// </summary>

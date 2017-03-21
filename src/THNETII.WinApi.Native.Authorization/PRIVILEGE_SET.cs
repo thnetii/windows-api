@@ -72,8 +72,7 @@ namespace Microsoft.Win32.WinApi.SecurityIdentity.Authorization
             return nativeMarshaledInstance;
         }
 
-        public static PRIVILEGE_SET ReadValue<THandle>(this THandle safeHandle)
-            where THandle : SafeHandle, ISafeHandleReadableAsPrivilegeSet
+        public static PRIVILEGE_SET ReadValue(this ISafeHandleReadableAsPrivilegeSet safeHandle)
             => safeHandle.ReadValue(MarshalNativeToManaged);
     }
 

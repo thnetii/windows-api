@@ -18,8 +18,8 @@
   <Import Project="..\..\version.props" />
 
   <ItemGroup>
-    <ProjectReference Include="..\..\thnetii-interopservices\src\THNETII.InteropServices.Bitfields\THNETII.InteropServices.Bitfields.csproj" />
-    <ProjectReference Include="..\..\thnetii-interopservices\src\THNETII.InteropServices.NativeMemory\THNETII.InteropServices.NativeMemory.csproj" />
+    <ProjectReference Include="..\..\interopservices\src\THNETII.InteropServices.Bitfields\THNETII.InteropServices.Bitfields.csproj" />
+    <ProjectReference Include="..\..\interopservices\src\THNETII.InteropServices.NativeMemory\THNETII.InteropServices.NativeMemory.csproj" />
     <ProjectReference Include="..\THNETII.WinApi.Native.WinError\THNETII.WinApi.Native.WinError.csproj" />
   </ItemGroup>
 

@@ -14,9 +14,7 @@ namespace THNETII.WinApi.Native.SecurityIdentity.Authorization.Test
         [Fact]
         public void CanEnumerateAuditCategories()
         {
-            GuidArrayAuditSafeHandle auditCategoriesHandle;
-            int categoriesReturned;
-            var apiResult = AuditEnumerateCategories(out auditCategoriesHandle, out categoriesReturned);
+            var apiResult = AuditEnumerateCategories(out GuidArrayAuditSafeHandle auditCategoriesHandle, out int categoriesReturned);
             Assert.True(apiResult, ((Win32ErrorCode)Marshal.GetLastWin32Error()).ToString());
             using (auditCategoriesHandle)
             {
@@ -27,8 +25,7 @@ namespace THNETII.WinApi.Native.SecurityIdentity.Authorization.Test
         [Fact]
         public void CanEnumeratePerUserPolicyAudits()
         {
-            PolicyAuditSidArrayAuditSafeHandle auditCategoriesHandle;
-            var apiResult = AuditEnumeratePerUserPolicy(out auditCategoriesHandle);
+            var apiResult = AuditEnumeratePerUserPolicy(out PolicyAuditSidArrayAuditSafeHandle auditCategoriesHandle);
             Assert.True(apiResult, ((Win32ErrorCode)Marshal.GetLastWin32Error()).ToString());
             using (auditCategoriesHandle)
             {
@@ -40,9 +37,7 @@ namespace THNETII.WinApi.Native.SecurityIdentity.Authorization.Test
         [Fact]
         public void CanEnumerateAuditSubCategories()
         {
-            GuidArrayAuditSafeHandle auditCategoriesHandle;
-            int categoriesReturned;
-            var apiResult = AuditEnumerateCategories(out auditCategoriesHandle, out categoriesReturned);
+            var apiResult = AuditEnumerateCategories(out GuidArrayAuditSafeHandle auditCategoriesHandle, out int categoriesReturned);
             Assert.True(apiResult, ((Win32ErrorCode)Marshal.GetLastWin32Error()).ToString());
             using (auditCategoriesHandle)
             {
@@ -50,8 +45,7 @@ namespace THNETII.WinApi.Native.SecurityIdentity.Authorization.Test
                 foreach (var auditRootCategory in auditCategories)
                 {
                     var currentAuditRootCategory = auditRootCategory;
-                    GuidArrayAuditSafeHandle auditSubCategoriesHandle;
-                    apiResult = AuditEnumerateSubCategories(ref currentAuditRootCategory, false, out auditSubCategoriesHandle, out categoriesReturned);
+                    apiResult = AuditEnumerateSubCategories(ref currentAuditRootCategory, false, out var auditSubCategoriesHandle, out categoriesReturned);
                     Assert.True(apiResult, ((Win32ErrorCode)Marshal.GetLastWin32Error()).ToString());
                     using (auditSubCategoriesHandle)
                     {
@@ -65,9 +59,7 @@ namespace THNETII.WinApi.Native.SecurityIdentity.Authorization.Test
         public void CanEnumerateAllAuditSubCategories()
         {
             var ignoredRootCategory = Guid.Empty;
-            GuidArrayAuditSafeHandle auditSubCategoriesHandle;
-            int categoriesReturned;
-            var apiResult = AuditEnumerateSubCategories(ref ignoredRootCategory, true, out auditSubCategoriesHandle, out categoriesReturned);
+            var apiResult = AuditEnumerateSubCategories(ref ignoredRootCategory, true, out GuidArrayAuditSafeHandle auditSubCategoriesHandle, out int categoriesReturned);
             Assert.True(apiResult, ((Win32ErrorCode)Marshal.GetLastWin32Error()).ToString());
             using (auditSubCategoriesHandle)
             {

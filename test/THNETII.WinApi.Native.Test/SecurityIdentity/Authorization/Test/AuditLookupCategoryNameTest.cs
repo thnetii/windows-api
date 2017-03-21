@@ -16,17 +16,14 @@ namespace THNETII.WinApi.Native.SecurityIdentity.Authorization.Test
         [Fact]
         public void CanLookupCategoryNameForAllEnumeratedAuditRootGuids()
         {
-            GuidArrayAuditSafeHandle auditCategoriesHandle;
-            int categoriesReturned;
-            var apiResult = AuditEnumerateCategories(out auditCategoriesHandle, out categoriesReturned);
+            var apiResult = AuditEnumerateCategories(out var auditCategoriesHandle, out int categoriesReturned);
             using (auditCategoriesHandle)
             {
                 var auditCategoriesGuids = auditCategoriesHandle.ReadValue(categoriesReturned);
                 foreach (var auditCategoryGuidIter in auditCategoriesGuids)
                 {
                     var auditCategoryGuidVal = auditCategoryGuidIter;
-                    WideStringAuditSafeHandle auditCategoryNameHandle;
-                    apiResult = AuditLookupCategoryName(ref auditCategoryGuidVal, out auditCategoryNameHandle);
+                    apiResult = AuditLookupCategoryName(ref auditCategoryGuidVal, out var auditCategoryNameHandle);
                     Assert.True(apiResult, ((Win32ErrorCode)Marshal.GetLastWin32Error()).ToString());
                     using (auditCategoryNameHandle)
                     {
@@ -40,17 +37,14 @@ namespace THNETII.WinApi.Native.SecurityIdentity.Authorization.Test
         public void CanLookupCategoryNameForAllEnumeratedAuditSubGuids()
         {
             var ignoredRootCategory = Guid.Empty;
-            GuidArrayAuditSafeHandle auditSubCategoriesHandle;
-            int categoriesReturned;
-            var apiResult = AuditEnumerateSubCategories(ref ignoredRootCategory, true, out auditSubCategoriesHandle, out categoriesReturned);
+            var apiResult = AuditEnumerateSubCategories(ref ignoredRootCategory, true, out var auditSubCategoriesHandle, out int categoriesReturned);
             using (auditSubCategoriesHandle)
             {
                 var auditSubCategories = auditSubCategoriesHandle.ReadValue(categoriesReturned);
                 foreach (var auditSubCategoryGuidIter in auditSubCategories)
                 {
                     Guid auditSubCategoryVal = auditSubCategoryGuidIter;
-                    WideStringAuditSafeHandle auditCategoryNameHandle;
-                    apiResult = AuditLookupSubCategoryName(ref auditSubCategoryVal, out auditCategoryNameHandle);
+                    apiResult = AuditLookupSubCategoryName(ref auditSubCategoryVal, out var auditCategoryNameHandle);
                     Assert.True(apiResult, ((Win32ErrorCode)Marshal.GetLastWin32Error()).ToString());
                     using (auditCategoryNameHandle)
                     {

@@ -18,13 +18,6 @@
   <Import Project="..\..\version.props" />
   
   <ItemGroup>
-    <Compile Remove="obj\**\*.cs" />
-    <Compile Remove="bin\**\*.cs" />
-    <None Remove="obj\**\*.*" />
-    <None Remove="bin\**\*.*" />
-  </ItemGroup>
-  
-  <ItemGroup>
     <ProjectReference Include="..\THNETII.WinApi.Native.WinError\THNETII.WinApi.Native.WinError.csproj" />
   </ItemGroup>
 

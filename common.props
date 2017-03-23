@@ -8,14 +8,22 @@
   </PropertyGroup>
   <PropertyGroup Label="Repository Metadata">
     <RepositoryType Condition="'$(RepositoryType)'==''">git</RepositoryType>
-    <RepositoryUrl Condition="'$(RepositoryUrl)'==''">https://github.com/couven92/thnetii-windows-api.git</RepositoryUrl>
+    <RepositoryUrl Condition="'$(RepositoryUrl)'==''">https://github.com/thnetii/windows-api.git</RepositoryUrl>
   </PropertyGroup>
   <PropertyGroup>
-    <PackageLicenseUrl>https://github.com/couven92/thnetii-windows-api/raw/master/LICENSE</PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/couven92/thnetii-windows-api</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/thnetii/windows-api/raw/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/thnetii/windows-api</PackageProjectUrl>
   </PropertyGroup>
+  <!--
   <PropertyGroup Label="BasePath">
     <BaseOutputPath>$(SolutionDir)bin\</BaseOutputPath>
     <BaseIntermediateOutputPath>$(SolutionDir)obj\$(MSBuildProjectName)\</BaseIntermediateOutputPath>
   </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="obj\**\*.*" />
+    <Compile Remove="bin\**\*.*" />
+    <None Remove="obj\**\*.*" />
+    <None Remove="bin\**\*.*" />
+  </ItemGroup>
+  -->
 </Project>

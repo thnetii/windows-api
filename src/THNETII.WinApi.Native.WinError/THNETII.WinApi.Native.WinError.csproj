@@ -15,11 +15,4 @@
   <Import Project="..\..\common.props" />
   <Import Project="..\..\version.props" />
 
-  <ItemGroup>
-    <Compile Remove="obj\**\*.cs" />
-    <Compile Remove="bin\**\*.cs" />
-    <None Remove="obj\**\*.*" />
-    <None Remove="bin\**\*.*" />
-  </ItemGroup>
-
 </Project>

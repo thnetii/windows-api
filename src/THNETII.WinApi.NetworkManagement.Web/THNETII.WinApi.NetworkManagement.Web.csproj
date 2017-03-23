@@ -15,11 +15,4 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="1.1.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Compile Remove="obj\**\*.cs" />
-    <Compile Remove="bin\**\*.cs" />
-    <None Remove="obj\**\*.*" />
-    <None Remove="bin\**\*.*" />
-  </ItemGroup>
-
 </Project>

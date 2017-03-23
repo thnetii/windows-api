@@ -24,11 +24,4 @@
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="1.1.1" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Compile Remove="obj\**\*.cs" />
-    <Compile Remove="bin\**\*.cs" />
-    <None Remove="obj\**\*.*" />
-    <None Remove="bin\**\*.*" />
-  </ItemGroup>
-
 </Project>

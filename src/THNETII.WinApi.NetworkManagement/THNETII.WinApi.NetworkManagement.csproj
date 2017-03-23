@@ -19,11 +19,4 @@
     <ProjectReference Include="..\THNETII.WinApi.Native.NetworkManagement\THNETII.WinApi.Native.NetworkManagement.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Compile Remove="obj\**\*.cs" />
-    <Compile Remove="bin\**\*.cs" />
-    <None Remove="obj\**\*.*" />
-    <None Remove="bin\**\*.*" />
-  </ItemGroup>
-
 </Project>

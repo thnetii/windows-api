@@ -3915,7 +3915,7 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
             [In] int prefmaxlen,
             out int entriesread,
             out int totalentries,
-            [Optional] IntPtr resume_handle
+            [Optional] ref IntPtr resume_handle
             );
         #endregion
         #region NetUserGetGroups function

@@ -163,14 +163,40 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
 
     }
 
-    public class UserInfoNetApiBufferHandle : NetApiBufferHandle
+    public class UserInfoNetApiBufferHandle : NetApiBufferHandle,
+        ISafeHandleReadableAsSimpleStructure<USER_INFO_0>,
+        ISafeHandleReadableAsSimpleStructure<USER_INFO_1>,
+        ISafeHandleReadableAsSimpleStructure<USER_INFO_2>,
+        ISafeHandleReadableAsSimpleStructure<USER_INFO_3>,
+        ISafeHandleReadableAsSimpleStructure<USER_INFO_10>,
+        ISafeHandleReadableAsSimpleStructure<USER_INFO_11>,
+        ISafeHandleReadableAsSimpleStructure<USER_INFO_20>
     {
-
+        public ISafeHandleReadableAsSimpleStructure<USER_INFO_0> AsLevel0Buffer() => this;
+        public ISafeHandleReadableAsSimpleStructure<USER_INFO_1> AsLevel1Buffer() => this;
+        public ISafeHandleReadableAsSimpleStructure<USER_INFO_2> AsLevel2Buffer() => this;
+        public ISafeHandleReadableAsSimpleStructure<USER_INFO_3> AsLevel3Buffer() => this;
+        public ISafeHandleReadableAsSimpleStructure<USER_INFO_10> AsLevel10Buffer() => this;
+        public ISafeHandleReadableAsSimpleStructure<USER_INFO_11> AsLevel11Buffer() => this;
+        public ISafeHandleReadableAsSimpleStructure<USER_INFO_20> AsLevel20Buffer() => this;
     }
 
-    public class UserInfoArrayNetApiBufferHandle : NetApiBufferHandle
+    public class UserInfoArrayNetApiBufferHandle : NetApiBufferHandle,
+        ISafeHandleReadableAsSimpleStructureArray<USER_INFO_0>,
+        ISafeHandleReadableAsSimpleStructureArray<USER_INFO_1>,
+        ISafeHandleReadableAsSimpleStructureArray<USER_INFO_2>,
+        ISafeHandleReadableAsSimpleStructureArray<USER_INFO_3>,
+        ISafeHandleReadableAsSimpleStructureArray<USER_INFO_10>,
+        ISafeHandleReadableAsSimpleStructureArray<USER_INFO_11>,
+        ISafeHandleReadableAsSimpleStructureArray<USER_INFO_20>
     {
-
+        public ISafeHandleReadableAsSimpleStructureArray<USER_INFO_0> AsLevel0Buffer() => this;
+        public ISafeHandleReadableAsSimpleStructureArray<USER_INFO_1> AsLevel1Buffer() => this;
+        public ISafeHandleReadableAsSimpleStructureArray<USER_INFO_2> AsLevel2Buffer() => this;
+        public ISafeHandleReadableAsSimpleStructureArray<USER_INFO_3> AsLevel3Buffer() => this;
+        public ISafeHandleReadableAsSimpleStructureArray<USER_INFO_10> AsLevel10Buffer() => this;
+        public ISafeHandleReadableAsSimpleStructureArray<USER_INFO_11> AsLevel11Buffer() => this;
+        public ISafeHandleReadableAsSimpleStructureArray<USER_INFO_20> AsLevel20Buffer() => this;
     }
 
     public class GroupUserInfoNetApiBufferHandle : NetApiBufferHandle

@@ -1,4 +1,5 @@
-﻿using System.Runtime.InteropServices;
+﻿using System;
+using System.Runtime.InteropServices;
 
 using static Microsoft.Win32.WinApi.Networking.NetworkManagement.LanManConstants;
 using static Microsoft.Win32.WinApi.Networking.NetworkManagement.NetworkManagementFunctions;
@@ -34,7 +35,17 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
         /// <summary>
         /// The number of seconds that have elapsed since the <see cref="usri1_password"/> member was last changed. The <see cref="NetUserAdd"/> and <see cref="NetUserSetInfo"/> functions ignore this member.
         /// </summary>
+        /// <seealso cref="PasswordAge"/>
         public int usri1_password_age;
+        /// <summary>
+        /// The amout of time that has elapsed since the <see cref="usri1_password"/> member was last changed.
+        /// </summary>
+        /// <seealso cref="usri1_password_age"/>
+        public TimeSpan PasswordAge
+        {
+            get { return TimeSpan.FromSeconds((uint)usri1_password_age); }
+            set { usri1_password_age = (int)((uint)value.TotalSeconds); }
+        }
         /// <summary>
         /// The level of privilege assigned to the <see cref="usri1_name"/> member. When you call the <see cref="NetUserAdd"/> function, this member must be <see cref="USER_PRIV_USER"/>. When you call the <see cref="NetUserSetInfo"/> function, this member must be the value returned by the <see cref="NetUserGetInfo"/> function or the <see cref="NetUserEnum"/> function. For more information about user and group account rights, see <a href="https://msdn.microsoft.com/en-us/library/aa379306.aspx">Privileges</a>. 
         /// </summary>

@@ -45,6 +45,14 @@ namespace Microsoft.Win32.WinApi.Networking.NetworkManagement
         /// </summary>
         public int usri2_password_age;
         /// <summary>
+        /// The amount of time that have elapsed since the <see cref="usri2_password"/> member was last changed.
+        /// </summary>
+        public TimeSpan PasswordAge
+        {
+            get { return TimeSpan.FromSeconds((uint)usri2_password_age); }
+            set { usri2_password_age = (int)(uint)value.TotalSeconds; }
+        }
+        /// <summary>
         /// The level of privilege assigned to the <see cref="usri2_name"/> member. When you call the <see cref="NetUserAdd"/> function, this member must be <see cref="USER_PRIV_USER"/>. When you call the <see cref="NetUserSetInfo"/> function, this member must be the value returned by the <see cref="NetUserGetInfo"/> function or the <see cref="NetUserEnum"/> function. For more information about user and group account rights, see <a href="https://msdn.microsoft.com/en-us/library/aa379306.aspx">Privileges</a>. 
         /// </summary>
         [MarshalAs(UnmanagedType.I4)]

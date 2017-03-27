@@ -3,8 +3,6 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp1.1</TargetFramework>
     <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
-    <RuntimeIdentifiers>win81-x86;win81-x64</RuntimeIdentifiers>
-    <PackageTargetFallback>$(PackageTargetFallback);dnxcore5.0;portable-net46+win81</PackageTargetFallback>
     <RuntimeFrameworkVersion>1.1.1</RuntimeFrameworkVersion>
     <DebugType>portable</DebugType>
 
@@ -17,10 +15,7 @@
   <Import Project="..\..\version.props" />
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\THNETII.WinApi.Native.DbgHelp\THNETII.WinApi.Native.DbgHelp.csproj" />
-    <ProjectReference Include="..\..\src\THNETII.WinApi.Native.ErrorHandling\THNETII.WinApi.Native.ErrorHandling.csproj" />
-    <ProjectReference Include="..\..\src\THNETII.WinApi.Native.Authorization\THNETII.WinApi.Native.Authorization.csproj" />
-    <ProjectReference Include="..\..\src\THNETII.WinApi.Native.WinError\THNETII.WinApi.Native.WinError.csproj" />
+    <ProjectReference Include="..\..\src\THNETII.WinApi.Native.NetworkManagement\THNETII.WinApi.Native.NetworkManagement.csproj" />
   </ItemGroup>
 
   <ItemGroup>

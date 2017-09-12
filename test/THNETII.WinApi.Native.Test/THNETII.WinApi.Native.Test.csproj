@@ -3,18 +3,14 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp1.1</TargetFramework>
     <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
-    <RuntimeIdentifiers>win81-x86;win81-x64</RuntimeIdentifiers>
+    <RuntimeIdentifiers>win-x86;win-x64</RuntimeIdentifiers>
     <PackageTargetFallback>$(PackageTargetFallback);dnxcore5.0;portable-net46+win81</PackageTargetFallback>
-    <RuntimeFrameworkVersion>1.1.1</RuntimeFrameworkVersion>
     <DebugType>portable</DebugType>
 
     <RootNamespace>THNETII.WinApi.Native</RootNamespace>
 
     <Description></Description>
   </PropertyGroup>
-
-  <Import Project="..\..\common.props" />
-  <Import Project="..\..\version.props" />
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\THNETII.WinApi.Native.DbgHelp\THNETII.WinApi.Native.DbgHelp.csproj" />
@@ -27,13 +23,6 @@
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.0.0" />
     <PackageReference Include="xunit" Version="2.2.0" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.2.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Remove="obj\**\*.*" />
-    <Compile Remove="bin\**\*.*" />
-    <None Remove="obj\**\*.*" />
-    <None Remove="bin\**\*.*" />
   </ItemGroup>
 
   <ItemGroup>

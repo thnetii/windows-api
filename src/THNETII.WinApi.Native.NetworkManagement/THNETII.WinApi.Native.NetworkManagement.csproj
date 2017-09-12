@@ -2,7 +2,6 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard1.3</TargetFramework>
-    <NetStandardImplicitPackageVersion>1.6.1</NetStandardImplicitPackageVersion>
     <PackageTargetFallback>$(PackageTargetFallback);dotnet5.4;portable-net46+win10</PackageTargetFallback>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <DebugType>portable</DebugType>
@@ -13,18 +12,8 @@
     <Description></Description>
   </PropertyGroup>
 
-  <Import Project="..\..\common.props" />
-  <Import Project="..\..\version.props" />
-
   <ItemGroup>
     <ProjectReference Include="..\THNETII.WinApi.Native.Authorization\THNETII.WinApi.Native.Authorization.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Remove="obj\**\*.cs" />
-    <Compile Remove="bin\**\*.cs" />
-    <None Remove="obj\**\*.*" />
-    <None Remove="bin\**\*.*" />
   </ItemGroup>
 
 </Project>

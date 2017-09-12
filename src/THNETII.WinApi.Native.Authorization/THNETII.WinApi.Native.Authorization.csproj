@@ -3,7 +3,6 @@
   <PropertyGroup>
     <OutputType>Library</OutputType>
     <TargetFramework>netstandard1.3</TargetFramework>
-    <NetStandardImplicitPackageVersion>1.6.1</NetStandardImplicitPackageVersion>
     <PackageTargetFallback>$(PackageTargetFallback);dotnet5.4;portable-net46+win10</PackageTargetFallback>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <DebugType>portable</DebugType>
@@ -14,9 +13,6 @@
     <Description></Description>
   </PropertyGroup>
 
-  <Import Project="..\..\common.props" />
-  <Import Project="..\..\version.props" />
-
   <ItemGroup>
     <ProjectReference Include="..\..\interopservices\src\THNETII.InteropServices.NativeMemory\THNETII.InteropServices.NativeMemory.csproj" />
     <ProjectReference Include="..\..\interopservices\src\THNETII.InteropServices.SafeHandles\THNETII.InteropServices.SafeHandles.csproj" />
@@ -25,14 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="System.Security.AccessControl" Version="4.3.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Remove="obj\**\*.cs" />
-    <Compile Remove="bin\**\*.cs" />
-    <None Remove="obj\**\*.*" />
-    <None Remove="bin\**\*.*" />
+    <PackageReference Include="System.Security.AccessControl" Version="4.4.0" />
   </ItemGroup>
 
 </Project>

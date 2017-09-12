@@ -3,7 +3,6 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard1.1</TargetFramework>
-    <NetStandardImplicitPackageVersion>1.6.1</NetStandardImplicitPackageVersion>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <DebugType>portable</DebugType>
 
@@ -11,15 +10,5 @@
 
     <Description>TH-NETII Windows API support library containing Win32, HRESULT and NTSTATUS status and error codes.</Description>
   </PropertyGroup>
-
-  <Import Project="..\..\common.props" />
-  <Import Project="..\..\version.props" />
-
-  <ItemGroup>
-    <Compile Remove="obj\**\*.cs" />
-    <Compile Remove="bin\**\*.cs" />
-    <None Remove="obj\**\*.*" />
-    <None Remove="bin\**\*.*" />
-  </ItemGroup>
 
 </Project>

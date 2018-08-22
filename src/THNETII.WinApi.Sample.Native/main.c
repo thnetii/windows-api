@@ -4,10 +4,10 @@
 
 int main(int argc, char* argv[])
 {
-    const int size = sizeof(DS_REPL_CURSOR);
+    const int size = sizeof(DS_REPL_CURSORS);
     const int value = DS_REPSYNC_ABANDONED;
 
-    DS_REPL_CURSOR instance;
+    DS_REPL_CURSORS instance;
 
     return EXIT_SUCCESS;
 }

@@ -4,10 +4,10 @@
 
 int main(int argc, char* argv[])
 {
-    const int size = sizeof(DS_KCC_TASKID);
+    const int size = sizeof(DS_NAME_ERROR);
     const int value = DS_REPSYNC_ABANDONED;
 
-    DS_KCC_TASKID instance;
+    DS_NAME_ERROR instance;
 
     UNREFERENCED_PARAMETER(instance);
 

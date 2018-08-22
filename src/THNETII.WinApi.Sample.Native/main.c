@@ -4,10 +4,10 @@
 
 int main(int argc, char* argv[])
 {
-    const int size = sizeof(DS_REPL_ATTR_META_DATA);
+    const int size = sizeof(DS_REPL_KCC_DSA_FAILURESW);
     const int value = DS_REPL_INFO_TYPE_MAX;
 
-    DS_REPL_ATTR_META_DATA instance;
+    DS_REPL_KCC_DSA_FAILURESW instance;
 
     return EXIT_SUCCESS;
 }

@@ -10,3 +10,4 @@ using System.Diagnostics.CodeAnalysis;
 [assembly: SuppressMessage("Design", "CA1051:Do not declare visible instance fields")]
 [assembly: SuppressMessage("Performance", "CA1815:Override equals and operator equals on value types")]
 [assembly: SuppressMessage("Design", "CA1028:Enum Storage should be Int32")]
+[assembly: SuppressMessage("Style", "IDE1006:Naming Styles")]

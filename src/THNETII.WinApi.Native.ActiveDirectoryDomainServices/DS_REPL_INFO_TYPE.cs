@@ -12,7 +12,7 @@ namespace THNETII.WinApi.Native.ActiveDirectoryDomainServices
     /// <seealso cref="DS_REPL_ATTR_VALUE_META_DATA_2"/>
     /// <seealso cref="DS_REPL_CURSORS"/>
     /// <seealso cref="DS_REPL_CURSORS_2"/>
-    /// <seealso cref="DS_REPL_CURSORS_3"/>
+    /// <seealso cref="DS_REPL_CURSORS_3W"/>
     /// <seealso cref="DS_REPL_KCC_DSA_FAILURES"/>
     /// <seealso cref="DS_REPL_NEIGHBORS"/>
     /// <seealso cref="DS_REPL_OBJ_META_DATA"/>
@@ -64,7 +64,7 @@ namespace THNETII.WinApi.Native.ActiveDirectoryDomainServices
         /// </summary>
         DS_REPL_INFO_CURSORS_2_FOR_NC = 7,
         /// <summary>
-        /// Requests replication state data with respect to all replicas of a given naming context. Returns a reference to a <see cref="DS_REPL_CURSORS_3"/> structure.
+        /// Requests replication state data with respect to all replicas of a given naming context. Returns a reference to a <see cref="DS_REPL_CURSORS_3W"/> structure.
         /// </summary>
         DS_REPL_INFO_CURSORS_3_FOR_NC = 8,
         /// <summary>

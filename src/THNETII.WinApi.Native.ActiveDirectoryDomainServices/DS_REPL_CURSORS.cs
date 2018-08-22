@@ -24,6 +24,7 @@ namespace THNETII.WinApi.Native.ActiveDirectoryDomainServices
         /// </summary>
         public int dwReserved;
 
+        /// <summary />
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 0)]
         public DS_REPL_CURSOR[] rgCursor;
     }

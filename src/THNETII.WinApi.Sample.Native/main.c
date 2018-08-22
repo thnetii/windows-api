@@ -5,7 +5,7 @@
 
 int main(int argc, char* argv[])
 {
-    DSROLE_PRIMARY_DOMAIN_INFO_LEVEL instance;
+    DSROLE_SERVER_STATE instance;
     const int size = sizeof(instance);
     const int value = DS_NAME_ERROR_NO_SYNTACTICAL_MAPPING;
 

@@ -5,7 +5,7 @@
 
 int main(int argc, char* argv[])
 {
-    DSROLE_MACHINE_ROLE instance;
+    DSROLE_OPERATION_STATE instance;
     const int size = sizeof(instance);
     const int value = DS_NAME_ERROR_NO_SYNTACTICAL_MAPPING;
 

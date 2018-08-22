@@ -4,10 +4,12 @@
 
 int main(int argc, char* argv[])
 {
-    const int size = sizeof(DS_REPL_NEIGHBORW);
+    const int size = sizeof(DS_KCC_TASKID);
     const int value = DS_REPSYNC_ABANDONED;
 
-    DS_REPL_NEIGHBORW instance;
+    DS_KCC_TASKID instance;
+
+    UNREFERENCED_PARAMETER(instance);
 
     return EXIT_SUCCESS;
 }

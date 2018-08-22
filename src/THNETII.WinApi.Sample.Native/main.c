@@ -1,14 +1,8 @@
-#include <stdlib.h>
-#include <stdio.h>
-
 #include <Windows.h>
-#include <LM.h>
-#include <LMat.h>
 
-void main()
+int main(int argc, char* argv[])
 {
-	const int size = sizeof(NETSETUP_NAME_TYPE);
-	const int value = WKSTA_PLATFORM_ID_PARMNUM;
 
-	void* ptr = NetGetDCName;
+
+    return EXIT_SUCCESS;
 }

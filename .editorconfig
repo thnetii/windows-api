@@ -1,0 +1,14 @@
+root = true
+
+# Defaults
+[*]
+indent_size = 4
+indent_style = space
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.{xml,json,*proj,targets,html,props,nim,nimble,nim.cfg}]
+indent_size = 2
+
+[*.{md,markdown}]
+trim_trailing_whitespace = false

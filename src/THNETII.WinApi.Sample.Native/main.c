@@ -4,10 +4,10 @@
 
 int main(int argc, char* argv[])
 {
-    const int size = sizeof(DS_REPL_KCC_DSA_FAILUREW);
+    const int size = sizeof(DS_REPL_PENDING_OPSW);
     const int value = DS_REPL_INFO_TYPE_MAX;
 
-    DS_REPL_KCC_DSA_FAILUREW instance;
+    DS_REPL_PENDING_OPSW instance;
 
     return EXIT_SUCCESS;
 }

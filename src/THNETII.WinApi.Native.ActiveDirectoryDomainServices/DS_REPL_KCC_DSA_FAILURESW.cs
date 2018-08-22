@@ -8,7 +8,7 @@ namespace THNETII.WinApi.Native.ActiveDirectoryDomainServices
     /// <remarks>
     /// <para>Original MSDN documentation page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/ntdsapi/ns-ntdsapi-_ds_repl_kcc_dsa_failuresw">DS_REPL_KCC_DSA_FAILURESW structure</a></para>
     /// </remarks>
-    /// <seealso cref="DS_REPL_KCC_DSA_FAILURE"/>
+    /// <seealso cref="DS_REPL_KCC_DSA_FAILUREW"/>
     /// <seealso cref="DsReplicaGetInfo"/>
     /// <seealso cref="DsReplicaGetInfo2"/>
     [StructLayout(LayoutKind.Sequential)]

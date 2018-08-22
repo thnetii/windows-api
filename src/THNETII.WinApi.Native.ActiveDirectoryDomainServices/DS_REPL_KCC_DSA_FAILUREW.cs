@@ -2,6 +2,8 @@
 using System.Runtime.InteropServices;
 using System.Runtime.InteropServices.ComTypes;
 
+using static THNETII.WinApi.Native.ActiveDirectoryDomainServices.DS_REPL_INFO_TYPE;
+
 namespace THNETII.WinApi.Native.ActiveDirectoryDomainServices
 {
     /// <summary>

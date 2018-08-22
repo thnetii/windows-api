@@ -13,17 +13,17 @@ namespace THNETII.WinApi.Native.ActiveDirectoryDomainServices
     /// <seealso cref="DS_REPL_CURSORS"/>
     /// <seealso cref="DS_REPL_CURSORS_2"/>
     /// <seealso cref="DS_REPL_CURSORS_3W"/>
-    /// <seealso cref="DS_REPL_KCC_DSA_FAILURES"/>
-    /// <seealso cref="DS_REPL_NEIGHBORS"/>
+    /// <seealso cref="DS_REPL_KCC_DSA_FAILURESW"/>
+    /// <seealso cref="DS_REPL_NEIGHBORSW"/>
     /// <seealso cref="DS_REPL_OBJ_META_DATA"/>
     /// <seealso cref="DS_REPL_OBJ_META_DATA_2"/>
-    /// <seealso cref="DS_REPL_PENDING_OPS"/>
+    /// <seealso cref="DS_REPL_PENDING_OPSW"/>
     /// <seealso cref="DsReplicaGetInfo"/>
     /// <seealso cref="DsReplicaGetInfo2"/>
     public enum DS_REPL_INFO_TYPE
     {
         /// <summary>
-        /// Requests replication state data for naming context and source server pairs. Returns a reference to a <see cref="DS_REPL_NEIGHBORS"/> structure.
+        /// Requests replication state data for naming context and source server pairs. Returns a reference to a <see cref="DS_REPL_NEIGHBORSW"/> structure.
         /// </summary>
         DS_REPL_INFO_NEIGHBORS = 0,
         /// <summary>
@@ -35,15 +35,15 @@ namespace THNETII.WinApi.Native.ActiveDirectoryDomainServices
         /// </summary>
         DS_REPL_INFO_METADATA_FOR_OBJ = 2,
         /// <summary>
-        /// Requests replication state data with respect to connection failures between inbound replication partners. Returns a reference to a <see cref="DS_REPL_KCC_DSA_FAILURES"/> structure.
+        /// Requests replication state data with respect to connection failures between inbound replication partners. Returns a reference to a <see cref="DS_REPL_KCC_DSA_FAILURESW"/> structure.
         /// </summary>
         DS_REPL_INFO_KCC_DSA_CONNECT_FAILURES = 3,
         /// <summary>
-        /// Requests replication state data with respect to link failures between inbound replication partners. Returns a reference to a <see cref="DS_REPL_KCC_DSA_FAILURES"/> structure.
+        /// Requests replication state data with respect to link failures between inbound replication partners. Returns a reference to a <see cref="DS_REPL_KCC_DSA_FAILURESW"/> structure.
         /// </summary>
         DS_REPL_INFO_KCC_DSA_LINK_FAILURES = 4,
         /// <summary>
-        /// Requests the replication tasks currently executing or queued to execute. Returns a reference to a <see cref="DS_REPL_PENDING_OPS"/> structure.
+        /// Requests the replication tasks currently executing or queued to execute. Returns a reference to a <see cref="DS_REPL_PENDING_OPSW"/> structure.
         /// </summary>
         DS_REPL_INFO_PENDING_OPS = 5,
 

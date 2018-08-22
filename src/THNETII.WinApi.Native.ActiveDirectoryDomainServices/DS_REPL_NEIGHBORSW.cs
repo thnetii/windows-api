@@ -3,7 +3,7 @@
 namespace THNETII.WinApi.Native.ActiveDirectoryDomainServices
 {
     /// <summary>
-    /// The <see cref="DS_REPL_NEIGHBORS"/> structure is used with the <see cref="DsReplicaGetInfo"/> and <see cref="DsReplicaGetInfo2"/> functions to provide inbound replication state data for naming context and source server pairs.
+    /// The <see cref="DS_REPL_NEIGHBORSW"/> structure is used with the <see cref="DsReplicaGetInfo"/> and <see cref="DsReplicaGetInfo2"/> functions to provide inbound replication state data for naming context and source server pairs.
     /// </summary>
     /// <remarks>
     /// <para>Original MSDN documentation page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/ntdsapi/ns-ntdsapi-_ds_repl_neighborsw">_DS_REPL_NEIGHBORSW structure</a></para>

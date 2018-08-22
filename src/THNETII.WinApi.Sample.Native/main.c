@@ -1,10 +1,11 @@
 #include <Windows.h>
 
 #include <NtDsAPI.h>
+#include <DSRole.h>
 
 int main(int argc, char* argv[])
 {
-    DS_SPN_WRITE_OP instance;
+    DSROLE_MACHINE_ROLE instance;
     const int size = sizeof(instance);
     const int value = DS_NAME_ERROR_NO_SYNTACTICAL_MAPPING;
 

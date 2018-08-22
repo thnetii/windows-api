@@ -4,10 +4,10 @@
 
 int main(int argc, char* argv[])
 {
-    const int size = sizeof(DS_REPL_PENDING_OPSW);
-    const int value = DS_REPL_INFO_TYPE_MAX;
+    const int size = sizeof(DS_REPL_OPW);
+    const int value = DS_REPSYNC_ABANDONED;
 
-    DS_REPL_PENDING_OPSW instance;
+    DS_REPL_OPW instance;
 
     return EXIT_SUCCESS;
 }

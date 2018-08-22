@@ -6,7 +6,7 @@ namespace THNETII.WinApi.Native.ActiveDirectoryDomainServices
     /// The <see cref="DS_REPL_CURSORS_2"/> structure is used with the <see cref="DsReplicaGetInfo2"/> function to provide replication state data with respect to all replicas of a given naming context.
     /// </summary>
     /// <remarks>
-    /// <para>Original MSDN documentation page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/ntdsapi/ne-ntdsapi-_ds_repl_cursors_2">_DS_REPL_CURSORS_2 structure</a></para>
+    /// <para>Original MSDN documentation page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/ntdsapi/ns-ntdsapi-_ds_repl_cursors_2">_DS_REPL_CURSORS_2 structure</a></para>
     /// </remarks>
     /// <seealso cref="DS_REPL_CURSOR_2"/>
     /// <seealso cref="DsReplicaGetInfo2"/>

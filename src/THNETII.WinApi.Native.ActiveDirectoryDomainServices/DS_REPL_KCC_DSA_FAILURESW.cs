@@ -6,7 +6,7 @@ namespace THNETII.WinApi.Native.ActiveDirectoryDomainServices
     /// The <see cref="DS_REPL_KCC_DSA_FAILURESW"/> structure contains an array of <see cref="DS_REPL_KCC_DSA_FAILUREW"/> structures, which in turn contain replication state data with respect to inbound replication partners, as returned by the <see cref="DsReplicaGetInfo"/> and <see cref="DsReplicaGetInfo2"/> functions.
     /// </summary>
     /// <remarks>
-    /// <para>Original MSDN documentation page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/ntdsapi/ne-ntdsapi-_ds_repl_kcc_dsa_failuresw">DS_REPL_KCC_DSA_FAILURESW structure</a></para>
+    /// <para>Original MSDN documentation page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/ntdsapi/ns-ntdsapi-_ds_repl_kcc_dsa_failuresw">DS_REPL_KCC_DSA_FAILURESW structure</a></para>
     /// </remarks>
     /// <seealso cref="DS_REPL_KCC_DSA_FAILURE"/>
     /// <seealso cref="DsReplicaGetInfo"/>

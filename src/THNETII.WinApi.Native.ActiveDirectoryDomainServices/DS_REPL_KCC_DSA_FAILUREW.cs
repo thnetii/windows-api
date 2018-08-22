@@ -8,7 +8,7 @@ namespace THNETII.WinApi.Native.ActiveDirectoryDomainServices
     /// The <see cref="DS_REPL_KCC_DSA_FAILUREW"/> structure contains replication state data about a specific inbound replication partner, as returned by the <see cref="DsReplicaGetInfo"/> and <see cref="DsReplicaGetInfo2"/> function. This state data is compiled and used by the Knowledge Consistency Checker (KCC) to decide when alternate replication routes must be added to account for unreachable servers.
     /// </summary>
     /// <remarks>
-    /// <para>Original MSDN documentation page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/ntdsapi/ne-ntdsapi-_ds_repl_kcc_dsa_failurew">DS_REPL_KCC_DSA_FAILUREW structure</a></para>
+    /// <para>Original MSDN documentation page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/ntdsapi/ns-ntdsapi-_ds_repl_kcc_dsa_failurew">DS_REPL_KCC_DSA_FAILUREW structure</a></para>
     /// </remarks>
     /// <seealso cref="DS_REPL_KCC_DSA_FAILURESW"/>
     /// <seealso cref="DsReplicaGetInfo"/>

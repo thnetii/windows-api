@@ -8,7 +8,7 @@ namespace THNETII.WinApi.Native.ActiveDirectoryDomainServices
     /// The <see cref="DS_REPL_ATTR_META_DATA"/> structure is used with the <see cref="DsReplicaGetInfo"/> and <see cref="DsReplicaGetInfo2"/> functions to contain replication state data for an object attribute.
     /// </summary>
     /// <remarks>
-    /// <para>Original MSDN documentation page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/ntdsapi/ne-ntdsapi-_ds_repl_attr_meta_data">DS_REPL_ATTR_META_DATA structure</a></para>
+    /// <para>Original MSDN documentation page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/ntdsapi/ns-ntdsapi-_ds_repl_attr_meta_data">DS_REPL_ATTR_META_DATA structure</a></para>
     /// </remarks>
     /// <seealso cref="DS_REPL_OBJ_META_DATA"/>
     /// <seealso cref="DsReplicaGetInfo"/>

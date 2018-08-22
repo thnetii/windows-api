@@ -10,7 +10,7 @@ namespace THNETII.WinApi.Native.ActiveDirectoryDomainServices
     /// The <see cref="DS_REPL_OPW"/> structure describes a replication task currently executing or pending execution, as returned by the <see cref="DsReplicaGetInfo"/> or <see cref="DsReplicaGetInfo2"/> function.
     /// </summary>
     /// <remarks>
-    /// <para>Original MSDN documentation page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/ntdsapi/ne-ntdsapi-_ds_repl_opw">_DS_REPL_OPW structure</a></para>
+    /// <para>Original MSDN documentation page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/ntdsapi/ns-ntdsapi-_ds_repl_opw">_DS_REPL_OPW structure</a></para>
     /// </remarks>
     /// <seealso cref="DS_REPL_OP_TYPE"/>
     /// <seealso cref="DS_REPL_PENDING_OPSW"/>

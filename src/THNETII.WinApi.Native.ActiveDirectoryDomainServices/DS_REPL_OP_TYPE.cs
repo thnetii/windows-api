@@ -4,7 +4,7 @@
     /// The <see cref="DS_REPL_OP_TYPE"/> enumeration type is used to indicate the type of replication operation that a given entry in the replication queue represents.
     /// </summary>
     /// <remarks>
-    /// <para>Original MSDN documentation page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/ntdsapi/ne-ntdsapi-_ds_repl_op_type">_DS_REPL_OP_TYPE Enumeration</a></para>
+    /// <para>Original MSDN documentation page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/ntdsapi/ns-ntdsapi-_ds_repl_op_type">_DS_REPL_OP_TYPE Enumeration</a></para>
     /// </remarks>
     /// <seealso cref="DsReplicaGetInfo"/>
     /// <seealso cref="DsReplicaGetInfo2"/>

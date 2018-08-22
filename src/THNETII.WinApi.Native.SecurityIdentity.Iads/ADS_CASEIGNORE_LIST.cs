@@ -23,16 +23,8 @@ namespace THNETII.WinApi.Native.SecurityIdentity.Iads
         /// <summary>
         /// A reference to the next ADS_CASEIGNORE_LIST in the list of case-insensitive strings.
         /// </summary>
-        public ref ADS_CASEIGNORE_LIST Next
-        {
-            get
-            {
-                int cbNext = SizeOf<ADS_CASEIGNORE_LIST>.Bytes;
-                Span<ADS_CASEIGNORE_LIST> span;
-                unsafe { span = new Span<ADS_CASEIGNORE_LIST>(pNext.ToPointer(), cbNext); }
-                return ref span[0];
-            }
-        }
+        public ref ADS_CASEIGNORE_LIST Next =>
+            ref pNext.MarshalAsRefStruct<ADS_CASEIGNORE_LIST>();
 
         /// <summary>
         /// Pointer to the null-terminated Unicode string value of the current entry of the list.

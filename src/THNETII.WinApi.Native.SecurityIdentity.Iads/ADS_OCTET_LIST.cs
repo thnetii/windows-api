@@ -22,16 +22,8 @@ namespace THNETII.WinApi.Native.SecurityIdentity.Iads
         /// <summary>
         /// Typed reference to the next <see cref="ADS_OCTET_LIST"/> entry in the list.
         /// </summary>
-        public ref ADS_OCTET_LIST Next
-        {
-            get
-            {
-                int cbNext = SizeOf<ADS_OCTET_LIST>.Bytes;
-                Span<ADS_OCTET_LIST> span;
-                unsafe { span = new Span<ADS_OCTET_LIST>(pNext.ToPointer(), cbNext); }
-                return ref span[0];
-            }
-        }
+        public ref ADS_OCTET_LIST Next =>
+            ref pNext.MarshalAsRefStruct<ADS_OCTET_LIST>();
 
         /// <summary>
         /// Contains the length, in bytes, of the list.

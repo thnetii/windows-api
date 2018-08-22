@@ -5,7 +5,7 @@
 
 int main(int argc, char* argv[])
 {
-    SYSTEMTIME instance;
+    ADS_PROV_SPECIFIC instance;
     const int size = sizeof(instance);
     const int value = ADSTYPE_BACKLINK;
 

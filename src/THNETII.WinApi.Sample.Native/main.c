@@ -5,7 +5,7 @@
 
 int main(int argc, char* argv[])
 {
-    ADS_NETADDRESS instance;
+    ADS_REPLICAPOINTER instance;
     const int size = sizeof(instance);
     const int value = ADSTYPE_BACKLINK;
 

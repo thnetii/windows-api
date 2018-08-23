@@ -10,10 +10,15 @@
 
   <ItemGroup>
     <PackageReference Include="System.Memory" Version="4.5.1" />
+    <PackageReference Include="System.Security.AccessControl" Version="4.5.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\interopservices\src\THNETII.InteropServices.NativeMemory\THNETII.InteropServices.NativeMemory.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\THNETII.WinApi.Native.Time\THNETII.WinApi.Native.Time.csproj" />
   </ItemGroup>
 
 </Project>

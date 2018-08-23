@@ -5,7 +5,7 @@
 
 int main(int argc, char* argv[])
 {
-    ADSVALUE instance;
+    ADS_ATTR_INFO instance;
     const int size = sizeof(instance);
     const int value = ADSTYPE_BACKLINK;
 

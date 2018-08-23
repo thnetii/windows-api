@@ -10,7 +10,7 @@ namespace THNETII.WinApi.Native.SecurityIdentity.Iads
     /// The <see cref="ADS_PATH"/> structure is an ADSI representation of the Path attribute syntax.
     /// </summary>
     /// <remarks>
-    /// The <see cref="pszPath"/> attribute in represents a file system path.
+    /// The <see cref="Path"/> attribute in represents a file system path.
     /// <para>Original MSDN documentation page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/iads/ns-iads-__midl___midl_itf_ads_0000_0000_0005">__MIDL___MIDL_itf_ads_0000_0000_0005  structure</a></para>
     /// </remarks>
     [StructLayout(LayoutKind.Sequential)]
@@ -27,10 +27,9 @@ namespace THNETII.WinApi.Native.SecurityIdentity.Iads
         public IntPtr pszVolumeName;
 
         /// <summary>
-        /// Gets the null-terminated Unicode string that contains the name of an existing volume in the file system.
+        /// Gets the span over the string that contains the name of an existing volume in the file system.
         /// </summary>
-        /// <returns>A copy of the <see cref="string"/> data located at the location pointed to by <see cref="pszVolumeName"/>.</returns>
-        public string GetVolumeName() => pszVolumeName.MarshalAsUnicodeString();
+        public Span<char> VolumeName => pszVolumeName.AsZeroTerminatedUnicodeSpan();
 
         /// <summary>
         /// A pointer to a null-terminated Unicode string that contains the path of a directory in the file system.
@@ -38,9 +37,8 @@ namespace THNETII.WinApi.Native.SecurityIdentity.Iads
         public IntPtr pszPath;
 
         /// <summary>
-        /// Gets the null-terminated Unicode string that contains the path of a directory in the file system.
+        /// Gets the span over the string that contains the path of a directory in the file system.
         /// </summary>
-        /// <returns>A copy of the <see cref="string"/> data located at the location pointed to by <see cref="pszPath"/>.</returns>
-        public string GetPath() => pszPath.MarshalAsUnicodeString();
+        public Span<char> Path => pszPath.AsZeroTerminatedUnicodeSpan();
     }
 }

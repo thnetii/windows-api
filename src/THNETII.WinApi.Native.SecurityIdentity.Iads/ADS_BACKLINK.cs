@@ -25,9 +25,8 @@ namespace THNETII.WinApi.Native.SecurityIdentity.Iads
         public IntPtr pszObjectName;
 
         /// <summary>
-        /// Marshals the string pointed to by <see cref="pszObjectName"/>.
+        /// Gets the span over the string that specifies the name of an object to which the <strong>Back Link</strong> attribute is attached.
         /// </summary>
-        /// <returns>A managed <see cref="string"/> instance containing a copy of the data pointed to by <see cref="pszObjectName"/>.</returns>
-        public string GetObjectName() => pszObjectName.MarshalAsUnicodeString();
+        public Span<char> ObjectName => pszObjectName.AsZeroTerminatedUnicodeSpan();
     }
 }

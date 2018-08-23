@@ -32,8 +32,8 @@ namespace THNETII.WinApi.Native.SecurityIdentity.Iads
         public IntPtr pszString;
 
         /// <summary>
-        /// Gets <see cref="string"/> value of the current entry of the list.
+        /// Gets the span over the string value of the current entry of the list.
         /// </summary>
-        public string GetString() => pszString.MarshalAsUnicodeString();
+        public Span<char> String => pszString.AsZeroTerminatedUnicodeSpan();
     }
 }

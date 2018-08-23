@@ -23,8 +23,10 @@ namespace THNETII.WinApi.Native.SecurityIdentity.Iads
         /// </summary>
         public IntPtr lpValue;
 
-#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
+        /// <summary>
+        /// Returns the byte array as a span over the memory pointed to by <see cref="lpValue"/>.
+        /// </summary>
+        /// <returns>A span granting read/write access to the bytes pointed to by the current instance.</returns>
         public unsafe Span<byte> AsSpan() => new Span<byte>(lpValue.ToPointer(), dwLength);
-#pragma warning restore CS1591 // Missing XML comment for publicly visible type or member
     }
 }

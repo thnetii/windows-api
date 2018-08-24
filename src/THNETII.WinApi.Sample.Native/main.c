@@ -4,7 +4,7 @@
 
 int main(int argc, char* argv[])
 {
-    IAmsiStream instance;
+    IAntimalware instance;
     const int size = sizeof(instance);
     const int value = E_NOT_VALID_STATE;
 

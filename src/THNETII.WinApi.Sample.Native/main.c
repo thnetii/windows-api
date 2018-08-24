@@ -1,13 +1,12 @@
 #include <Windows.h>
 
-#include <Iads.h>
-#include <AdsProp.h>
+#include <amsi.h>
 
 int main(int argc, char* argv[])
 {
-    IDirectoryObject instance;
+    AMSI_ATTRIBUTE instance;
     const int size = sizeof(instance);
-    const int value = ADSTYPE_BACKLINK;
+    const int value = AMSI_ATTRIBUTE_APP_NAME;
 
     return EXIT_SUCCESS;
 }

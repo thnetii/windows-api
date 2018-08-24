@@ -4,9 +4,9 @@
 
 int main(int argc, char* argv[])
 {
-    IAntimalware instance;
+    IAntimalwareProvider instance;
     const int size = sizeof(instance);
-    const int value = E_NOT_VALID_STATE;
+    const int value = E_INVALIDARG;
 
     const void* ptr = FormatMessage;
 

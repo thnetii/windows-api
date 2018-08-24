@@ -5,7 +5,7 @@
 
 int main(int argc, char* argv[])
 {
-    ADS_ATTR_INFO instance;
+    IDirectoryObject instance;
     const int size = sizeof(instance);
     const int value = ADSTYPE_BACKLINK;
 

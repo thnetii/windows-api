@@ -64,6 +64,7 @@
       <SDLCheck>true</SDLCheck>
     </ClCompile>
     <Link>
+      <AdditionalDependencies>%(AdditionalDependencies);Amsi.lib</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
     </Link>
   </ItemDefinitionGroup>

@@ -9,7 +9,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src-native\THNETII.WinApiNative.AntimalwareScanInterface\THNETII.WinApiNative.AntimalwareScanInterface.csproj" />
+    <PackageReference Include="System.Memory" Version="4.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\interopservices\src\THNETII.InteropServices.NativeMemory\THNETII.InteropServices.NativeMemory.csproj" />
   </ItemGroup>
 
 </Project>

@@ -3,7 +3,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
-    <RootNamespace>THNETII.WinApi.Native</RootNamespace>
+    <RootNamespace>THNETII.WinApiNative</RootNamespace>
     <IsPackable>false</IsPackable>
   </PropertyGroup>
 
@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\THNETII.WinApi.Native.AntimalwareScanInterface\THNETII.WinApi.Native.AntimalwareScanInterface.csproj" />
+    <ProjectReference Include="..\..\src-native\THNETII.WinApiNative.AntimalwareScanInterface\THNETII.WinApiNative.AntimalwareScanInterface.csproj" />
   </ItemGroup>
 
 </Project>

@@ -6,7 +6,7 @@ int main(int argc, char* argv[])
 {
     IAntimalwareProvider instance;
     const int size = sizeof(instance);
-    const int value = E_INVALIDARG;
+    const int value = APPLICATION_ERROR_MASK;
 
     const void* ptr = AmsiInitialize;
 

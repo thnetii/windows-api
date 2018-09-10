@@ -1,14 +1,14 @@
 #include <Windows.h>
 
-#include <amsi.h>
+#include <Wsdevlicensing.h>
 
 int main(int argc, char* argv[])
 {
-    IAntimalwareProvider instance;
+    void* instance;
     const int size = sizeof(instance);
-    const int value = E_INVALIDARG;
+    const int value = HRESULT_FROM_WIN32(ERROR_NOT_FOUND);
 
-    const void* ptr = AmsiInitialize;
+    const void* ptr = AcquireDeveloperLicense;
 
     return EXIT_SUCCESS;
 }

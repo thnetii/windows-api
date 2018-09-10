@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
@@ -9,6 +9,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\interopservices\src\THNETII.InteropServices.Bitwise\THNETII.InteropServices.Bitwise.csproj" />
+    <ProjectReference Include="..\..\src-native\THNETII.WinApiNative.WinError\THNETII.WinApiNative.WinError.csproj">
+      <PrivateAssets>All</PrivateAssets>
+    </ProjectReference>
   </ItemGroup>
 
 </Project>

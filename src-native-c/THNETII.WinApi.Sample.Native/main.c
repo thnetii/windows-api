@@ -1,14 +1,14 @@
 #include <Windows.h>
 
-#include <Wsdevlicensing.h>
+#include <winerror.h>
 
 int main(int argc, char* argv[])
 {
     void* instance;
     const int size = sizeof(instance);
-    const int value = HRESULT_FROM_WIN32(ERROR_NOT_FOUND);
+    const int value = ERROR_NOT_FOUND;
 
-    const void* ptr = AcquireDeveloperLicense;
+    const void* ptr = NULL;
 
     return EXIT_SUCCESS;
 }

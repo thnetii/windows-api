@@ -1,6 +1,6 @@
 ﻿namespace THNETII.WinApi.WindowsErrorCodes
 {
-    public enum Win32Severity
+    public enum StatusSeverity
     {
         Success = 0x00,
         Informational = 0x01,

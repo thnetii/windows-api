@@ -2,8 +2,14 @@
 
 namespace THNETII.WinApi.WindowsErrorCodes
 {
+    /// <summary>
+    /// A Win32 Facility code, indicating which part of the Win32 system reported
+    /// a system error code.
+    /// </summary>
+    /// <remarks>The <see cref="Win32Facility"/> codes differ from the <see cref="NTFacility"/> codes.</remarks>
     public enum Win32Facility
     {
+#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
         Null = FACILITY_NULL,
         Rpc = FACILITY_RPC,
         Dispatch = FACILITY_DISPATCH,
@@ -249,5 +255,6 @@ namespace THNETII.WinApi.WindowsErrorCodes
         Xbox = FACILITY_XBOX,
 
         Pix = FACILITY_PIX,
+#pragma warning restore CS1591 // Missing XML comment for publicly visible type or member
     }
 }

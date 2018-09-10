@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 
-using static THNETII.WinApiNative.Um.WinNT.WinNTConstants;
+using static THNETII.WinApiNative.WinNT.WinNTConstants;
 using static THNETII.WinApiNative.WinError.WinErrorConstants;
 
 namespace THNETII.WinApiNative.WinError

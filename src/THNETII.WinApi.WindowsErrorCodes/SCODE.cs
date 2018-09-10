@@ -5,7 +5,7 @@ using THNETII.InteropServices.Bitwise;
 namespace THNETII.WinApi.WindowsErrorCodes
 {
     [StructLayout(LayoutKind.Sequential)]
-    public struct HRESULT
+    public struct SCODE
     {
         private static readonly Bitfield32 code_field = Bitfield32.DefineLowerBits(16);
         private static readonly Bitfield32 facility_field = Bitfield32.DefineMiddleBits(16, 11);
@@ -41,31 +41,31 @@ namespace THNETII.WinApi.WindowsErrorCodes
 
         public Exception GetException() => Marshal.GetExceptionForHR(value);
 
-        public HRESULT(int code) : this() => value = code;
+        public SCODE(int code) : this() => value = code;
 
-        public HRESULT(uint code) : this(unchecked((int)code)) { }
+        public SCODE(uint code) : this(unchecked((int)code)) { }
 
-        public static implicit operator HRESULT(int code) =>
-            new HRESULT(code);
+        public static implicit operator SCODE(int code) =>
+            new SCODE(code);
 
-        public static implicit operator HRESULT(uint code) =>
-            new HRESULT(code);
+        public static implicit operator SCODE(uint code) =>
+            new SCODE(code);
 
-        public static explicit operator int(HRESULT e) => e.AsInt32();
+        public static explicit operator int(SCODE e) => e.AsInt32();
 
         public override int GetHashCode() => value.GetHashCode();
 
-        public static bool operator ==(HRESULT left, HRESULT right) =>
+        public static bool operator ==(SCODE left, SCODE right) =>
             left.value == right.value;
 
-        public static bool operator !=(HRESULT left, HRESULT right) =>
+        public static bool operator !=(SCODE left, SCODE right) =>
             left.value != right.value;
 
         public override bool Equals(object obj)
         {
             switch (obj)
             {
-                case HRESULT hr: return this == hr;
+                case SCODE hr: return this == hr;
                 case int code: return this == code;
                 default: return false;
             }
@@ -73,18 +73,18 @@ namespace THNETII.WinApi.WindowsErrorCodes
 
         public override string ToString() => $"0x{value:X8}";
 
-        public static explicit operator HRESULT(Win32ErrorCode x)
+        public static explicit operator SCODE(Win32ErrorCode x)
         {
             return FromWin32(x.Value);
         }
 
-        public static HRESULT FromWin32(int x)
+        public static SCODE FromWin32(int x)
         {
             int hr = default;
             code_field.Write(ref hr, x);
             facility_field.Write(ref hr, (int)Win32Facility.Win32);
             s_bit.Write(ref hr, 1);
-            return new HRESULT(hr);
+            return new SCODE(hr);
         }
     }
 }

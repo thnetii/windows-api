@@ -8,4 +8,13 @@
     <RootNamespace>THNETII.WinApiNative.ApplicationInstallationServicing.DeveloperLicensing</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\THNETII.WinApi.WindowsErrorCodes\THNETII.WinApi.WindowsErrorCodes.csproj">
+      <PrivateAssets>All</PrivateAssets>
+    </ProjectReference>
+    <ProjectReference Include="..\THNETII.WinApiNative.WinError\THNETII.WinApiNative.WinError.csproj">
+      <PrivateAssets>All</PrivateAssets>
+    </ProjectReference>
+  </ItemGroup>
+
 </Project>

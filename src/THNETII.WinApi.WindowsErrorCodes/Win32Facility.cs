@@ -10,48 +10,156 @@ namespace THNETII.WinApi.WindowsErrorCodes
     public enum Win32Facility
     {
 #pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
+        /// <summary>
+        /// The default facility code.
+        /// </summary>
         Null = FACILITY_NULL,
+        /// <summary>
+        /// The source of the error code is an RPC subsystem.
+        /// </summary>
         Rpc = FACILITY_RPC,
+        /// <summary>
+        /// The source of the error code is a COM Dispatch.
+        /// </summary>
         Dispatch = FACILITY_DISPATCH,
+        /// <summary>
+        /// The source of the error code is OLE Storage.
+        /// </summary>
         Storage = FACILITY_STORAGE,
+        /// <summary>
+        /// The source of the error code is COM/OLE Interface management.
+        /// </summary>
         Itf = FACILITY_ITF,
+        /// <summary>
+        /// This region is reserved to map undecorated error codes into <see cref="HRESULT"/>s.
+        /// </summary>
         Win32 = FACILITY_WIN32,
+        /// <summary>
+        /// The source of the error code is the Windows subsystem.
+        /// </summary>
         Windows = FACILITY_WINDOWS,
+        /// <summary>
+        /// The source of the error code is the Security API layer.
+        /// </summary>
         Sspi = FACILITY_SSPI,
+        /// <summary>
+        /// The source of the error code is the Security API layer.
+        /// </summary>
         Security = FACILITY_SECURITY,
+        /// <summary>
+        /// The source of the error code is the control mechanism.
+        /// </summary>
         Control = FACILITY_CONTROL,
+        /// <summary>
+        /// The source of the error code is a certificate client or server?  
+        /// </summary>
         Cert = FACILITY_CERT,
+        /// <summary>
+        /// The source of the error code is Wininet related.
+        /// </summary>
         Internet = FACILITY_INTERNET,
+        /// <summary>
+        /// The source of the error code is the Windows Media Server.
+        /// </summary>
         Mediaserver = FACILITY_MEDIASERVER,
+        /// <summary>
+        /// The source of the error code is the Microsoft Message Queue.
+        /// </summary>
         Msmq = FACILITY_MSMQ,
+        /// <summary>
+        /// The source of the error code is the Setup API.
+        /// </summary>
         SetupApi = FACILITY_SETUPAPI,
+        /// <summary>
+        /// The source of the error code is the Smart-card subsystem.
+        /// </summary>
         SCard = FACILITY_SCARD,
+        /// <summary>
+        /// The source of the error code is COM+.
+        /// </summary>
         COMPlus = FACILITY_COMPLUS,
+        /// <summary>
+        /// The source of the error code is the Microsoft agent.
+        /// </summary>
         Aaf = FACILITY_AAF,
+        /// <summary>
+        /// The source of the error code is .NET CLR.
+        /// </summary>
         Urt = FACILITY_URT,
+        /// <summary>
+        /// The source of the error code is the audit collection service.
+        /// </summary>
         Acs = FACILITY_ACS,
+        /// <summary>
+        /// The source of the error code is Direct Play.
+        /// </summary>
         DPlay = FACILITY_DPLAY,
+        /// <summary>
+        /// The source of the error code is the ubiquitous memoryintrospection service.
+        /// </summary>
         Umi = FACILITY_UMI,
+        /// <summary>
+        /// The source of the error code is Side-by-side servicing.
+        /// </summary>
         Sxs = FACILITY_SXS,
+        /// <summary>
+        /// The error code is specific to Windows CE.
+        /// </summary>
         WindowsCE = FACILITY_WINDOWS_CE,
+        /// <summary>
+        /// The source of the error code is HTTP support.
+        /// </summary>
         Http = FACILITY_HTTP,
+        /// <summary>
+        /// The source of the error code is common Logging support.
+        /// </summary>
         UsermodeCommonlog = FACILITY_USERMODE_COMMONLOG,
         Wer = FACILITY_WER,
+        /// <summary>
+        /// The source of the error code is the user mode filter manager.
+        /// </summary>
         UsermodeFilterManager = FACILITY_USERMODE_FILTER_MANAGER,
+        /// <summary>
+        /// The source of the error code is background copy control
+        /// </summary>
         BackgroundCopy = FACILITY_BACKGROUNDCOPY,
+        /// <summary>
+        /// The source of the error code is configuration services.
+        /// </summary>
         Configuration = FACILITY_CONFIGURATION,
         Wia = FACILITY_WIA,
+        /// <summary>
+        /// The source of the error code is state management services.
+        /// </summary>
         StateManagement = FACILITY_STATE_MANAGEMENT,
+        /// <summary>
+        /// The source of the error code is the Microsoft Identity Server.
+        /// </summary>
         MetaDirectory = FACILITY_METADIRECTORY,
+        /// <summary>
+        /// The source of the error code is a Windows update.
+        /// </summary>
         WindowsUpdate = FACILITY_WINDOWSUPDATE,
+        /// <summary>
+        /// The source of the error code is Active Directory.
+        /// </summary>
         DirectoryService = FACILITY_DIRECTORYSERVICE,
+        /// <summary>
+        /// The source of the error code is the graphics drivers.
+        /// </summary>
         Graphics = FACILITY_GRAPHICS,
+        /// <summary>
+        /// The source of the error code is the user Shell.
+        /// </summary>
         Shell = FACILITY_SHELL,
-
         Nap = FACILITY_NAP,
-
+        /// <summary>
+        /// The source of the error code is the Trusted Platform Module services.
+        /// </summary>
         TpmServices = FACILITY_TPM_SERVICES,
-
+        /// <summary>
+        /// The source of the error code is the Trusted Platform Module applications.
+        /// </summary>
         TpmSoftware = FACILITY_TPM_SOFTWARE,
 
         UI = FACILITY_UI,
@@ -59,35 +167,61 @@ namespace THNETII.WinApi.WindowsErrorCodes
         Xaml = FACILITY_XAML,
 
         ActionQueue = FACILITY_ACTION_QUEUE,
-
+        /// <summary>
+        /// The source of the error code is Performance Logs and Alerts
+        /// </summary>
         Pla = FACILITY_PLA,
 
         WindowsSetup = FACILITY_WINDOWS_SETUP,
-
+        /// <summary>
+        /// The source of the error code is Full volume encryption.
+        /// </summary>
         Fve = FACILITY_FVE,
-
+        /// <summary>
+        /// The source of the error code is the Firewall Platform.
+        /// </summary>
         Fwp = FACILITY_FWP,
-
+        /// <summary>
+        /// The source of the error code is the Windows Resource Manager.
+        /// </summary>
         WinRM = FACILITY_WINRM,
-
+        /// <summary>
+        /// The source of the error code is the Network Driver Interface.
+        /// </summary>
         Ndis = FACILITY_NDIS,
-
+        /// <summary>
+        /// The source of the error code is the Usermode Hypervisor components.
+        /// </summary>
         UsermodeHypervisor = FACILITY_USERMODE_HYPERVISOR,
-
+        /// <summary>
+        /// The source of the error code is the Configuration Management Infrastructure.
+        /// </summary>
         Cmi = FACILITY_CMI,
-
+        /// <summary>
+        /// The source of the error code is the user mode virtualization subsystem.
+        /// </summary>
         UsermodeVirtualization = FACILITY_USERMODE_VIRTUALIZATION,
-
+        /// <summary>
+        /// The source of the error code is  the user mode volume manager
+        /// </summary>
         UsermodeVolumeManager = FACILITY_USERMODE_VOLMGR,
-
+        /// <summary>
+        /// The source of the error code is the Boot Configuration Database.
+        /// </summary>
         Bcd = FACILITY_BCD,
-
+        /// <summary>
+        /// The source of the error code is user mode virtual hard disk support.
+        /// </summary>
         UsermodeVhd = FACILITY_USERMODE_VHD,
 
         UsermodeHns = FACILITY_USERMODE_HNS,
-
+        /// <summary>
+        /// The source of the error code is System Diagnostics.
+        /// </summary>
         SDiag = FACILITY_SDIAG,
-
+        /// <summary>
+        /// The source of the error code is the Web Services.
+        /// </summary>
         WebServices = FACILITY_WEBSERVICES,
 
         WinPE = FACILITY_WINPE,
@@ -99,9 +233,13 @@ namespace THNETII.WinApi.WindowsErrorCodes
         Input = FACILITY_INPUT,
 
         Eap = FACILITY_EAP,
-
+        /// <summary>
+        /// The source of the error code is a Windows Defender component.
+        /// </summary>
         WindowsDefender = FACILITY_WINDOWS_DEFENDER,
-
+        /// <summary>
+        /// The source of the error code is the open connectivity service.
+        /// </summary>
         Opc = FACILITY_OPC,
 
         Xps = FACILITY_XPS,

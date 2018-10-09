@@ -1,10 +1,11 @@
 #include <Windows.h>
+#include <ntstatus.h>
 
 int main(int argc, char* argv[])
 {
     void* instance;
     const int size = sizeof(instance);
-    const int value = ERROR_SUCCESS;
+    const int value = FACILITY_DEBUGGER;
 
     const void* ptr = NULL;
 

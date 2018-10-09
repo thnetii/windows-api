@@ -5,11 +5,16 @@
     /// </summary>
     public enum StatusSeverity
     {
-#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
-        Success = 0x00,
-        Informational = 0x01,
-        Warning = 0x10,
-        Error = 0x11
-#pragma warning restore CS1591 // Missing XML comment for publicly visible type or member
+        /// <summary>Success</summary>
+        Success = 0b00,
+
+        /// <summary>Informational</summary>
+        Informational = 0b01,
+
+        /// <summary>Warning</summary>
+        Warning = 0b10,
+
+        /// <summary>Error</summary>
+        Error = 0b11
     }
 }

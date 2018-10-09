@@ -21,34 +21,39 @@ namespace THNETII.WinApi.WindowsErrorCodes
         /// <summary>
         /// The full 32-bit integer value of of the system error code.
         /// </summary>
+        /// <value>The entire value as a signed 32-bit integer.</value>
         public int Value => value;
 
         /// <summary>
-        /// Gets the lower 16-bit code portion of the value.
+        /// Gets the the facility's status code.
         /// </summary>
+        /// <value>An integer value containing the status code that is specific to the <see cref="Facility"/>.</value>
         public int Code => code_field.Read(value);
 
         /// <summary>
         /// Gets the facility code indicating which part of the system reported
         /// the status.
         /// </summary>
+        /// <value>A value that, together with the <see cref="IsCustomerCode"/> bit, indicates the numbering space to use for the <see cref="Code"/> property.</value>
         public Win32Facility Facility => (Win32Facility)facility_field.Read(value);
 
         /// <summary>
         /// Gets a value indicating whether the status code is a recognized code
         /// from the Win32 system, or a custom code defined by a third party.
         /// </summary>
+        /// <value><c>true</c> if the value is customer-defined; <c>false</c> for Microsoft-defined values.</value>
         public bool IsCustomerCode => customer_flag.Read(value) != 0;
 
         /// <summary>
         /// Gets the severity of the system error code.
         /// </summary>
+        /// <value>One of the values defined in the <see cref="StatusSeverity"/> enumeration.</value>
         public StatusSeverity Severity => (StatusSeverity)severity_field.Read(value);
 
         /// <summary>
         /// Returns the system error code as a 32-bit integer value.
         /// </summary>
-        /// <returns></returns>
+        /// <returns><see cref="Value"/>.</returns>
         public int AsInt32() => value;
 
         /// <summary>
@@ -67,6 +72,7 @@ namespace THNETII.WinApi.WindowsErrorCodes
         /// Implicitly casts the 32-bit integer value to a Win32 system error code.
         /// </summary>
         /// <param name="code">The 32-bit integer to cast.</param>
+        /// <returns>A <see cref="Win32ErrorCode"/> whose <see cref="Value"/> is equal to <paramref name="code"/>.</returns>
         [SuppressMessage("Usage", "CA2225:Operator overloads have named alternates")]
         public static implicit operator Win32ErrorCode(int code) =>
             new Win32ErrorCode(code);
@@ -75,6 +81,7 @@ namespace THNETII.WinApi.WindowsErrorCodes
         /// Implicitly casts the 32-bit integer value to a Win32 system error code.
         /// </summary>
         /// <param name="code">The 32-bit integer to cast.</param>
+        /// <returns>A <see cref="Win32ErrorCode"/> whose <see cref="Value"/> is bitwise equal to <paramref name="code"/>.</returns>
         [SuppressMessage("Usage", "CA2225:Operator overloads have named alternates")]
         public static implicit operator Win32ErrorCode(uint code) =>
             new Win32ErrorCode(code);
@@ -84,10 +91,14 @@ namespace THNETII.WinApi.WindowsErrorCodes
         /// integer value.
         /// </summary>
         /// <param name="e">The error code to cast.</param>
+        /// <returns><see cref="Value"/></returns>
         [SuppressMessage("Usage", "CA2225:Operator overloads have named alternates", Justification = nameof(AsInt32))]
         public static explicit operator int(Win32ErrorCode e) => e.AsInt32();
 
-        /// <inheritdoc />
+        /// <summary>
+        /// Returns the hash code for this instance.
+        /// </summary>
+        /// <returns>The value obtained from calling <see cref="ValueType.GetHashCode"/> on <see cref="Value"/>.</returns>
         public override int GetHashCode() => value.GetHashCode();
 
         /// <summary>
@@ -108,24 +119,49 @@ namespace THNETII.WinApi.WindowsErrorCodes
         public static bool operator !=(Win32ErrorCode left, Win32ErrorCode right) =>
             left.value != right.value;
 
-        /// <inheritdoc />
+        /// <summary>
+        /// Determines whether the current instance is equal to a specified object.
+        /// </summary>
+        /// <param name="obj">The object to compare with.</param>
+        /// <returns>
+        /// <c>true</c> if the current instance is logically equal to <paramref name="obj"/>; otherwise, <c>false</c>.
+        /// </returns>
         public override bool Equals(object obj)
         {
             switch (obj)
             {
                 case Win32ErrorCode e: return this == e;
                 case int code: return this == code;
+                case IConvertible convertible: return this == convertible.ToInt32(System.Globalization.CultureInfo.InvariantCulture);
                 default: return false;
             }
         }
 
-        /// <inheritdoc />
+        /// <summary>
+        /// Determines whether the current instance is equal to a 32-bit integer value.
+        /// </summary>
+        /// <param name="code">The integer to compare with.</param>
+        /// <returns>
+        /// <c>true</c> if the <see cref="Value"/> property of this instance is equal to <paramref name="code"/>;<br/>
+        /// otherwise, <c>false</c>.
+        /// </returns>
         public bool Equals(int code) => this == code;
 
-        /// <inheritdoc />
+        /// <summary>
+        /// Determines whether the current Windows Error Code is equal to another Windows Error Code.
+        /// </summary>
+        /// <param name="e">The Windows Error code to compare with.</param>
+        /// <returns>
+        /// <c>true</c> if the <see cref="Value"/> property of this instance is equal to the <see cref="Value"/> property of <paramref name="e"/>;<br/>
+        /// otherwise, <c>false</c>.
+        /// </returns>
         public bool Equals(Win32ErrorCode e) => this == e;
 
-        /// <inheritdoc />
+        /// <summary>
+        /// Returns a string representing the Windows Error Code as a 32-bit numeric value
+        /// in capitalized prefixed hexadecimal notation.
+        /// </summary>
+        /// <returns><see cref="Value"/> formatted in capitalized 8 digit hexadecimal notation, prefixed with <c>0x</c>.</returns>
         public override string ToString() => $"0x{value:X8}";
     }
 }

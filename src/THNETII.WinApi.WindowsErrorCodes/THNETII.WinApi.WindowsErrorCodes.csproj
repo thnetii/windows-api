@@ -9,9 +9,11 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\interopservices\src\THNETII.InteropServices.Bitwise\THNETII.InteropServices.Bitwise.csproj" />
+    <ProjectReference Include="..\..\src-native\THNETII.WinApiNative.NTStatus\THNETII.WinApiNative.NTStatus.csproj" />
     <ProjectReference Include="..\..\src-native\THNETII.WinApiNative.WinError\THNETII.WinApiNative.WinError.csproj">
       <PrivateAssets>All</PrivateAssets>
     </ProjectReference>
+    <ProjectReference Include="..\..\src-native\THNETII.WinApiNative.WinNT\THNETII.WinApiNative.WinNT.csproj" />
   </ItemGroup>
 
 </Project>

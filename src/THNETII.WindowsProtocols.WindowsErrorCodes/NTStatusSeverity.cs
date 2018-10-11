@@ -5,7 +5,7 @@
     /// <summary>
     /// Win32 System Error and <see cref="NTSTATUS"/> Severity Code.
     /// </summary>
-    public enum StatusSeverity
+    public enum NTStatusSeverity
     {
         /// <summary>Success</summary>
         Success = STATUS_SEVERITY_SUCCESS,

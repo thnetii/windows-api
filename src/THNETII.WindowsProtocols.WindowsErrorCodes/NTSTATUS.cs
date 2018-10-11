@@ -51,8 +51,7 @@ namespace THNETII.WindowsProtocols.WindowsErrorCodes
         /// The full 32-bit integer value of of the system error code.
         /// </summary>
         /// <value>The entire value as a signed 32-bit integer.</value>
-        [SuppressMessage("Design", "CA1051: Do not declare visible instance fields")]
-        public readonly int Value;
+        public int Value { get; }
 
         /// <summary>
         /// Gets the the facility's status code.
@@ -75,8 +74,8 @@ namespace THNETII.WindowsProtocols.WindowsErrorCodes
         /// <summary>
         /// Gets the severity code.
         /// </summary>
-        /// <value>A <see cref="StatusSeverity"/> value.</value>
-        public StatusSeverity Severity => (StatusSeverity)sev_field.Read(Value);
+        /// <value>A <see cref="NTStatusSeverity"/> value.</value>
+        public NTStatusSeverity Severity => (NTStatusSeverity)sev_field.Read(Value);
 
         /// <summary>
         /// Initializes a new <see cref="NTSTATUS"/> with the specified integer value.

@@ -76,8 +76,7 @@ namespace THNETII.WindowsProtocols.WindowsErrorCodes
         /// The full 32-bit integer value of of the system error code.
         /// </summary>
         /// <value>The entire value as a signed 32-bit integer.</value>
-        [SuppressMessage("Design", "CA1051: Do not declare visible instance fields")]
-        public readonly int Value;
+        public int Value { get; }
 
         /// <summary>
         /// Gets the the facility's status code.
@@ -88,8 +87,8 @@ namespace THNETII.WindowsProtocols.WindowsErrorCodes
         /// <summary>
         /// Indicates the system service that is responsible for the error.
         /// </summary>
-        /// <value>A value from the <see cref="Win32Facility"/> enumeration.</value>
-        public Win32Facility Facility => (Win32Facility)facility_field.Read(Value);
+        /// <value>A value from the <see cref="HResultFacility"/> enumeration.</value>
+        public HResultFacility Facility => (HResultFacility)facility_field.Read(Value);
 
         /// <summary>
         /// Whether the <see cref="HRESULT"/> value is not a status value, but a message id for display string.
@@ -127,9 +126,9 @@ namespace THNETII.WindowsProtocols.WindowsErrorCodes
         /// <summary>
         /// Gets the severity for a mapped <see cref="NTSTATUS"/> value.
         /// </summary>
-        /// <value>A <see cref="StatusSeverity"/> value provide one extra bit of information compared to <see cref="Severity"/>.</value>
+        /// <value>A <see cref="WindowsErrorCodes.NTStatusSeverity"/> value provide one extra bit of information compared to <see cref="Severity"/>.</value>
         /// <seealso cref="Severity"/>
-        public StatusSeverity NTStatusSeverity => (StatusSeverity)sev_field.Read(Value);
+        public NTStatusSeverity NTStatusSeverity => (NTStatusSeverity)sev_field.Read(Value);
 
         /// <summary>
         /// Indicates success or failure
@@ -256,10 +255,10 @@ namespace THNETII.WindowsProtocols.WindowsErrorCodes
         public override string ToString() => $"0x{Value:X8}";
 
         /// <summary>
-        /// Casts the Win32 Error Code to an <see cref="HRESULT"/> value using the <see cref="Win32Facility.Win32"/> facility.
+        /// Casts the Win32 Error Code to an <see cref="HRESULT"/> value using the <see cref="HResultFacility.Win32"/> facility.
         /// </summary>
         /// <param name="x">The raw Win32 Error Code to cast.</param>
-        /// <returns><paramref name="x"/> mapped to an <see cref="HRESULT"/> value with a <see cref="Facility"/> of <see cref="Win32Facility.Win32"/>.</returns>
+        /// <returns><paramref name="x"/> mapped to an <see cref="HRESULT"/> value with a <see cref="Facility"/> of <see cref="HResultFacility.Win32"/>.</returns>
         [SuppressMessage("Usage", "CA2225:Operator overloads have named alternates")]
         public static explicit operator HRESULT(Win32ErrorCode x)
         {
@@ -267,15 +266,15 @@ namespace THNETII.WindowsProtocols.WindowsErrorCodes
         }
 
         /// <summary>
-        /// Converts the Win32 Error Code to an <see cref="HRESULT"/> value using the <see cref="Win32Facility.Win32"/> facility.
+        /// Converts the Win32 Error Code to an <see cref="HRESULT"/> value using the <see cref="HResultFacility.Win32"/> facility.
         /// </summary>
         /// <param name="x">The raw Win32 Error Code to convert.</param>
-        /// <returns><paramref name="x"/> mapped to an <see cref="HRESULT"/> value with a <see cref="Facility"/> of <see cref="Win32Facility.Win32"/>.</returns>
+        /// <returns><paramref name="x"/> mapped to an <see cref="HRESULT"/> value with a <see cref="Facility"/> of <see cref="HResultFacility.Win32"/>.</returns>
         public static HRESULT FromWin32(int x)
         {
             int hr = default;
             code_field.Write(ref hr, x);
-            facility_field.Write(ref hr, (int)Win32Facility.Win32);
+            facility_field.Write(ref hr, (int)HResultFacility.Win32);
             s_bit.Write(ref hr, 1);
             return new HRESULT(hr);
         }

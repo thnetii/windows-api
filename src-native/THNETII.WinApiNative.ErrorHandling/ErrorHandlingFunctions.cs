@@ -160,5 +160,31 @@ namespace THNETII.WinApiNative.ErrorHandling
             [MarshalAs(UnmanagedType.Bool)] bool bInvert
             );
         #endregion
+        #region FlashWindowEx function
+        /// <summary>
+        /// Flashes the specified window. It does not change the active state of the window.
+        /// </summary>
+        /// <param name="pfwi">A <see cref="FLASHWINFO"/> structure.</param>
+        /// <returns>The return value specifies the window's state before the call to the <see cref="FlashWindowEx"/> function. If the window caption was drawn as active before the call, the return value is <c>true</c>. Otherwise, the return value is <c>false</c>.</returns>
+        /// <remarks>
+        /// Typically, you flash a window to inform the user that the window requires attention but does not currently have the keyboard focus. When a window flashes, it appears to change from inactive to active status. An inactive caption bar changes to an active caption bar; an active caption bar changes to an inactive caption bar.
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows XP [desktop apps | UWP apps]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps | UWP apps]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/Winuser/nf-winuser-flashwindowex">FlashWindowEx function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="FLASHWINFO"/>
+        [return: MarshalAs(UnmanagedType.Bool)]
+        [DllImport(NativeLibraryNames.User32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        public static extern bool FlashWindowEx(
+            in FLASHWINFO pfwi
+            );
+        #endregion
     }
 }

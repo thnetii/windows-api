@@ -55,5 +55,22 @@ namespace THNETII.WinApiNative.ErrorHandling.Test
 #pragma warning restore PC001 // API not supported on all platforms
             var state = ErrorHandlingFunctions.FlashWindow(hWnd, true);
         }
+
+        [SkippableFact(typeof(DllNotFoundException), typeof(EntryPointNotFoundException))]
+        public static void FlashWindowEx()
+        {
+            IntPtr hWnd = default;
+#pragma warning disable PC001 // API not supported on all platforms
+            if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+                hWnd = System.Diagnostics.Process.GetCurrentProcess().MainWindowHandle;
+#pragma warning restore PC001 // API not supported on all platforms
+            var state = ErrorHandlingFunctions.FlashWindowEx(new FLASHWINFO
+            {
+                cbSize = SizeOf<FLASHWINFO>.Bytes,
+                hwnd = hWnd,
+                dwFlags = FLASHWFLAG.FLASHW_ALL,
+                uCount = 100
+            });
+        }
     }
 }

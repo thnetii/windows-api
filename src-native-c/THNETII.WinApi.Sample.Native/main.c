@@ -2,7 +2,7 @@
 
 int main(int argc, char* argv[])
 {
-    void* instance;
+    FLASHWINFO instance;
     const int size = sizeof(instance);
     const int value = ERROR_SUCCESS;
 

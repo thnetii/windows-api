@@ -8,6 +8,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\THNETII.WinApiNative.LibraryNames\THNETII.WinApiNative.LibraryNames.csproj">
+      <PrivateAssets>All</PrivateAssets>
+    </ProjectReference>
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\..\src\THNETII.WindowsProtocols.WindowsErrorCodes.Constants\THNETII.WindowsProtocols.WindowsErrorCodes.Constants.csproj">
       <PrivateAssets>All</PrivateAssets>
     </ProjectReference>

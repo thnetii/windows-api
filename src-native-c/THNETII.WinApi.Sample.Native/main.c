@@ -1,5 +1,4 @@
 #include <Windows.h>
-#include <ntstatus.h>
 
 int main(int argc, char* argv[])
 {
@@ -7,7 +6,7 @@ int main(int argc, char* argv[])
     const int size = sizeof(instance);
     const int value = ERROR_SUCCESS;
 
-    const void* ptr = NULL;
+    const void* ptr = Beep;
 
     return EXIT_SUCCESS;
 }

@@ -47,51 +47,44 @@ namespace THNETII.WindowsProtocols.WindowsErrorCodes
         private static readonly Bitfield32 customer_flag = Bitfield32.DefineSingleBit(29);
         private static readonly Bitfield32 severity_field = Bitfield32.DefineRemainingBits(30);
 
-        private readonly int value;
-
         /// <summary>
         /// The full 32-bit integer value of of the system error code.
         /// </summary>
         /// <value>The entire value as a signed 32-bit integer.</value>
-        public int Value => value;
+        [SuppressMessage("Design", "CA1051: Do not declare visible instance fields")]
+        public readonly int Value;
 
         /// <summary>
         /// Gets the the facility's status code.
         /// </summary>
         /// <value>An integer value containing the status code that is specific to the <see cref="Facility"/>.</value>
-        public int Code => code_field.Read(value);
+        public int Code => code_field.Read(Value);
 
         /// <summary>
         /// Gets the facility code indicating which part of the system reported
         /// the status.
         /// </summary>
         /// <value>A value that, together with the <see cref="IsCustomerCode"/> bit, indicates the numbering space to use for the <see cref="Code"/> property.</value>
-        public Win32Facility Facility => (Win32Facility)facility_field.Read(value);
+        public Win32Facility Facility => (Win32Facility)facility_field.Read(Value);
 
         /// <summary>
         /// Gets a value indicating whether the status code is a recognized code
         /// from the Win32 system, or a custom code defined by a third party.
         /// </summary>
         /// <value><c>true</c> if the value is customer-defined; <c>false</c> for Microsoft-defined values.</value>
-        public bool IsCustomerCode => customer_flag.Read(value) != 0;
+        public bool IsCustomerCode => customer_flag.Read(Value) != 0;
 
         /// <summary>
         /// Gets the severity of the system error code.
         /// </summary>
         /// <value>One of the values defined in the <see cref="StatusSeverity"/> enumeration.</value>
-        public StatusSeverity Severity => (StatusSeverity)severity_field.Read(value);
-
-        /// <summary>
-        /// Returns the system error code as a 32-bit integer value.
-        /// </summary>
-        /// <returns><see cref="Value"/>.</returns>
-        public int AsInt32() => value;
+        public StatusSeverity Severity => (StatusSeverity)severity_field.Read(Value);
 
         /// <summary>
         /// Initializes the specified integer value as a Win32 system error code.
         /// </summary>
         /// <param name="code">The system error code as a 32-bit signed integer value.</param>
-        public Win32ErrorCode(int code) : this() => value = code;
+        public Win32ErrorCode(int code) : this() => Value = code;
 
         /// <summary>
         /// Initializes the specified integer value as a Win32 system error code.
@@ -123,14 +116,14 @@ namespace THNETII.WindowsProtocols.WindowsErrorCodes
         /// </summary>
         /// <param name="e">The error code to cast.</param>
         /// <returns><see cref="Value"/></returns>
-        [SuppressMessage("Usage", "CA2225:Operator overloads have named alternates", Justification = nameof(AsInt32))]
-        public static explicit operator int(Win32ErrorCode e) => e.AsInt32();
+        [SuppressMessage("Usage", "CA2225:Operator overloads have named alternates", Justification = nameof(Value))]
+        public static explicit operator int(Win32ErrorCode e) => e.Value;
 
         /// <summary>
         /// Returns the hash code for this instance.
         /// </summary>
         /// <returns>The value obtained from calling <see cref="ValueType.GetHashCode"/> on <see cref="Value"/>.</returns>
-        public override int GetHashCode() => value.GetHashCode();
+        public override int GetHashCode() => Value.GetHashCode();
 
         /// <summary>
         /// Checks whether two Win32 system error codes are equal.
@@ -139,7 +132,7 @@ namespace THNETII.WindowsProtocols.WindowsErrorCodes
         /// <param name="right">The right side operand of the comparison.</param>
         /// <returns><c>true</c> if the <see cref="Value"/> property of <paramref name="left"/> equals the <see cref="Value"/> of <paramref name="right"/>; otherwise, <c>false</c>.</returns>
         public static bool operator ==(Win32ErrorCode left, Win32ErrorCode right) =>
-            left.value == right.value;
+            left.Value == right.Value;
 
         /// <summary>
         /// Checks whether two Win32 system error codes are not equal.
@@ -148,7 +141,7 @@ namespace THNETII.WindowsProtocols.WindowsErrorCodes
         /// <param name="right">The right side operand of the comparison.</param>
         /// <returns><c>true</c> if the <see cref="Value"/> property of <paramref name="left"/> is not equal to the <see cref="Value"/> of <paramref name="right"/>; otherwise, <c>false</c>.</returns>
         public static bool operator !=(Win32ErrorCode left, Win32ErrorCode right) =>
-            left.value != right.value;
+            left.Value != right.Value;
 
         /// <summary>
         /// Determines whether the current instance is equal to a specified object.
@@ -193,6 +186,6 @@ namespace THNETII.WindowsProtocols.WindowsErrorCodes
         /// in capitalized prefixed hexadecimal notation.
         /// </summary>
         /// <returns><see cref="Value"/> formatted in capitalized 8 digit hexadecimal notation, prefixed with <c>0x</c>.</returns>
-        public override string ToString() => $"0x{value:X8}";
+        public override string ToString() => $"0x{Value:X8}";
     }
 }

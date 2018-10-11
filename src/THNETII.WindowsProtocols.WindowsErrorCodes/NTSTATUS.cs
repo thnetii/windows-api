@@ -47,49 +47,42 @@ namespace THNETII.WindowsProtocols.WindowsErrorCodes
         private static readonly Bitfield32 c_bit = Bitfield32.DefineSingleBit(29);
         private static readonly Bitfield32 sev_field = Bitfield32.DefineRemainingBits(offset: 30);
 
-        private readonly int value;
-
         /// <summary>
         /// The full 32-bit integer value of of the system error code.
         /// </summary>
         /// <value>The entire value as a signed 32-bit integer.</value>
-        public int Value => value;
+        [SuppressMessage("Design", "CA1051: Do not declare visible instance fields")]
+        public readonly int Value;
 
         /// <summary>
         /// Gets the the facility's status code.
         /// </summary>
         /// <value>An integer value containing the status code that is specific to the <see cref="Facility"/>.</value>
-        public int Code => code_field.Read(value);
+        public int Code => code_field.Read(Value);
 
         /// <summary>
         /// Indicates the NT Facility that is responsible for the status value.
         /// </summary>
         /// <value>A value from the <see cref="NTFacility"/> enumeration.</value>
-        public NTFacility Facility => (NTFacility)facility_field.Read(value);
+        public NTFacility Facility => (NTFacility)facility_field.Read(Value);
 
         /// <summary>
         /// Whether the <see cref="NTSTATUS"/> value is a customer-defined value.
         /// </summary>
         /// <value><c>false</c> is the <see cref="NTSTATUS"/> value is Microsoft-defined; <c>true</c> if it is Customer-defined.</value>
-        public bool IsCustomerCode => c_bit.Read(value) != 0;
+        public bool IsCustomerCode => c_bit.Read(Value) != 0;
 
         /// <summary>
         /// Gets the severity code.
         /// </summary>
         /// <value>A <see cref="StatusSeverity"/> value.</value>
-        public StatusSeverity Severity => (StatusSeverity)sev_field.Read(value);
-
-        /// <summary>
-        /// Returns the system error code as a 32-bit integer value.
-        /// </summary>
-        /// <returns><see cref="Value"/>.</returns>
-        public int AsInt32() => value;
+        public StatusSeverity Severity => (StatusSeverity)sev_field.Read(Value);
 
         /// <summary>
         /// Initializes a new <see cref="NTSTATUS"/> with the specified integer value.
         /// </summary>
         /// <param name="code">The status code as a 32-bit integer value.</param>
-        public NTSTATUS(int code) : this() => value = code;
+        public NTSTATUS(int code) : this() => Value = code;
 
         /// <summary>
         /// Initializes a new <see cref="NTSTATUS"/> with the specified integer value.
@@ -122,13 +115,13 @@ namespace THNETII.WindowsProtocols.WindowsErrorCodes
         /// <param name="e">The error code to cast.</param>
         /// <returns><see cref="Value"/></returns>
         [SuppressMessage("Usage", "CA2225:Operator overloads have named alternates")]
-        public static explicit operator int(NTSTATUS e) => e.AsInt32();
+        public static explicit operator int(NTSTATUS e) => e.Value;
 
         /// <summary>
         /// Returns the hash code for this instance.
         /// </summary>
         /// <returns>The value obtained from calling <see cref="ValueType.GetHashCode"/> on <see cref="Value"/>.</returns>
-        public override int GetHashCode() => value.GetHashCode();
+        public override int GetHashCode() => Value.GetHashCode();
 
         /// <summary>
         /// Checks whether two <see cref="NTSTATUS"/> value are equal.
@@ -137,7 +130,7 @@ namespace THNETII.WindowsProtocols.WindowsErrorCodes
         /// <param name="right">The right side operand of the comparison.</param>
         /// <returns><c>true</c> if the <see cref="Value"/> property of <paramref name="left"/> equals the <see cref="Value"/> of <paramref name="right"/>; otherwise, <c>false</c>.</returns>
         public static bool operator ==(NTSTATUS left, NTSTATUS right) =>
-            left.value == right.value;
+            left.Value == right.Value;
 
         /// <summary>
         /// Checks whether two <see cref="NTSTATUS"/> value are not equal.
@@ -146,7 +139,7 @@ namespace THNETII.WindowsProtocols.WindowsErrorCodes
         /// <param name="right">The right side operand of the comparison.</param>
         /// <returns><c>true</c> if the <see cref="Value"/> property of <paramref name="left"/> is not equal to the <see cref="Value"/> of <paramref name="right"/>; otherwise, <c>false</c>.</returns>
         public static bool operator !=(NTSTATUS left, NTSTATUS right) =>
-            left.value != right.value;
+            left.Value != right.Value;
 
         /// <summary>
         /// Determines whether the current instance is equal to a specified object.
@@ -191,6 +184,6 @@ namespace THNETII.WindowsProtocols.WindowsErrorCodes
         /// in capitalized prefixed hexadecimal notation.
         /// </summary>
         /// <returns><see cref="Value"/> formatted in capitalized 8 digit hexadecimal notation, prefixed with <c>0x</c>.</returns>
-        public override string ToString() => $"0x{value:X8}";
+        public override string ToString() => $"0x{Value:X8}";
     }
 }

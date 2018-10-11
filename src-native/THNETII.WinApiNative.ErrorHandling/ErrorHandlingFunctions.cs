@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Runtime.InteropServices;
-using THNETII.InteropServices.NativeMemory;
+#if NETSTANDARD1_3
+using EntryPointNotFoundException = System.Exception;
+#endif
 
 namespace THNETII.WinApiNative.ErrorHandling
 {
@@ -51,6 +53,8 @@ namespace THNETII.WinApiNative.ErrorHandling
         /// </para>
         /// <para>Microsoft Docs page: <a href="https://msdn.microsoft.com/en-us/library/ms679277.aspx">Beep function</a></para>
         /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
         /// <seealso cref="MessageBeep"/>
         [return: MarshalAs(UnmanagedType.Bool)]
         [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
@@ -84,6 +88,8 @@ namespace THNETII.WinApiNative.ErrorHandling
         /// </para>
         /// <para>Microsoft Docs page: <a href="https://msdn.microsoft.com/en-us/library/Bb204633.aspx">CaptureStackBackTrace function</a></para>
         /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
         [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi)]
         public static extern ushort CaptureStackBackTrace(
             [In] int FramesToSkip,

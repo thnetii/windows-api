@@ -126,7 +126,39 @@ namespace THNETII.WinApiNative.ErrorHandling
             );
         #endregion
         #region FlashWindow function
-
+        /// <summary>
+        /// <para>Flashes the specified window one time. It does not change the active state of the window.</para>
+        /// <para>To flash the window a specified number of times, use the <see cref="FlashWindowEx"/> function.</para>
+        /// </summary>
+        /// <param name="hWnd">A handle to the window to be flashed. The window can be either open or minimized.</param>
+        /// <param name="bInvert">
+        /// <para>If this parameter is <c>true</c>, the window is flashed from one state to the other. If it is <c>false</c>, the window is returned to its original state (either active or inactive).</para>
+        /// <para>When an application is minimized and this parameter is <c>true</c>, the taskbar window button flashes active/inactive. If it is <c>false</c>, the taskbar window button flashes inactive, meaning that it does not change colors. It flashes, as if it were being redrawn, but it does not provide the visual invert clue to the user.</para>
+        /// </param>
+        /// <returns>
+        /// The return value specifies the window's state before the call to the FlashWindow function. If the window caption was drawn as active before the call, the return value is <c>true</c>. Otherwise, the return value is <c>false</c>.
+        /// </returns>
+        /// <remarks>
+        /// <para>Flashing a window means changing the appearance of its caption bar as if the window were changing from inactive to active status, or vice versa. (An inactive caption bar changes to an active caption bar; an active caption bar changes to an inactive caption bar.)</para>
+        /// <para>Typically, a window is flashed to inform the user that the window requires attention but that it does not currently have the keyboard focus.</para>
+        /// <para>The <see cref="FlashWindow"/> function flashes the window only once; for repeated flashing, the application should create a system timer.</para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows XP [desktop apps | UWP apps]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps | UWP apps]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/Winuser/nf-winuser-flashwindow">FlashWindow function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        [return: MarshalAs(UnmanagedType.Bool)]
+        [DllImport(NativeLibraryNames.User32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        public static extern bool FlashWindow(
+            IntPtr hWnd,
+            [MarshalAs(UnmanagedType.Bool)] bool bInvert
+            );
         #endregion
     }
 }

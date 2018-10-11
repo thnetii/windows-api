@@ -6,7 +6,7 @@ int main(int argc, char* argv[])
     const int size = sizeof(instance);
     const int value = ERROR_SUCCESS;
 
-    const void* ptr = Beep;
+    const void* ptr = CaptureStackBackTrace;
 
     return EXIT_SUCCESS;
 }

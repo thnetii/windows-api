@@ -8,6 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\interopservices\src\THNETII.InteropServices.NativeMemory\THNETII.InteropServices.NativeMemory.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\THNETII.WinApiNative.LibraryNames\THNETII.WinApiNative.LibraryNames.csproj">
       <PrivateAssets>All</PrivateAssets>
     </ProjectReference>

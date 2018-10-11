@@ -1,4 +1,6 @@
-﻿using System.Runtime.InteropServices;
+﻿using System;
+using System.Runtime.InteropServices;
+using THNETII.InteropServices.NativeMemory;
 
 namespace THNETII.WinApiNative.ErrorHandling
 {
@@ -55,6 +57,39 @@ namespace THNETII.WinApiNative.ErrorHandling
         public static extern bool Beep(
             [In] int dwFreq,
             [In] int dwDuration
+            );
+        #endregion
+        #region CaptureStackBackTrace function
+        /// <summary>
+        /// Captures a stack back trace by walking up the stack and recording the information for each frame.
+        /// </summary>
+        /// <param name="FramesToSkip">The number of frames to skip from the start of the back trace.</param>
+        /// <param name="FramesToCapture">
+        /// The number of frames to be captured. You can capture up to the <see cref="ushort.MaxValue"/> of the <see cref="ushort"/> type frames.
+        /// <para><strong>Windows Server 2003 and Windows XP:</strong> The sum of the <paramref name="FramesToSkip"/> and <paramref name="FramesToCapture"/> parameters must be less than <c>63</c>.</para>
+        /// </param>
+        /// <param name="BackTrace">Receives a pointer to an array of stack frame pointers from the current stack trace.</param>
+        /// <param name="BackTraceHash">
+        /// A value that can be used to organize hash tables. The value is optional and can be ignored or discarded.
+        /// <para>This value is calculated based on the values of the pointers returned in the <paramref name="BackTrace"/> array. Two identical stack traces will generate identical hash values.</para>
+        /// </param>
+        /// <returns>The number of captured frames.</returns>
+        /// <remarks>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows XP [desktop apps | UWP apps]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps | UWP apps]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://msdn.microsoft.com/en-us/library/Bb204633.aspx">CaptureStackBackTrace function</a></para>
+        /// </remarks>
+        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi)]
+        public static extern ushort CaptureStackBackTrace(
+            [In] int FramesToSkip,
+            [In] int FramesToCapture,
+            out IntPtr BackTrace,
+            [Optional] out int BackTraceHash
             );
         #endregion
     }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Runtime.InteropServices;
+using THNETII.InteropServices.NativeMemory.Specialized;
 #if NETSTANDARD1_3
 using EntryPointNotFoundException = System.Exception;
 #endif
@@ -94,7 +95,7 @@ namespace THNETII.WinApiNative.ErrorHandling
         public static extern ushort CaptureStackBackTrace(
             [In] int FramesToSkip,
             [In] int FramesToCapture,
-            out IntPtr BackTrace,
+            out ArrayOfIntPtr BackTrace,
             [Optional] out int BackTraceHash
             );
         #endregion
@@ -123,6 +124,9 @@ namespace THNETII.WinApiNative.ErrorHandling
             [In] int uAction,
             [In, MarshalAs(UnmanagedType.LPWStr)] string lpMessageText
             );
+        #endregion
+        #region FlashWindow function
+
         #endregion
     }
 }

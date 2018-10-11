@@ -33,10 +33,10 @@ namespace THNETII.WinApiNative.ErrorHandling.Test
                 out var stackTracePtr, out var _
                 );
 
-            if (stackTracePtr == IntPtr.Zero)
+            if (stackTracePtr.IsNull())
                 return;
 
-            var stackTrace = stackTracePtr.AsRefStructSpan<IntPtr>(frames);
+            var stackTrace = stackTracePtr.AsSpan(frames);
 
             for (int i = 0; i < stackTrace.Length; i++)
             {

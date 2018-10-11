@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
@@ -17,13 +17,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\THNETII.WinApi.WindowsErrorCodes\THNETII.WinApi.WindowsErrorCodes.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\..\src-native\THNETII.WinApiNative.NTStatus\THNETII.WinApiNative.NTStatus.csproj" />
-    <ProjectReference Include="..\..\src-native\THNETII.WinApiNative.WinError\THNETII.WinApiNative.WinError.csproj" />
-    <ProjectReference Include="..\..\src-native\THNETII.WinApiNative.WinNT\THNETII.WinApiNative.WinNT.csproj" />
+    <ProjectReference Include="..\..\src\THNETII.WindowsProtocols.WindowsErrorCodes\THNETII.WindowsProtocols.WindowsErrorCodes.csproj" />
+    <ProjectReference Include="..\..\src\THNETII.WindowsProtocols.WindowsErrorCodes.Constants\THNETII.WindowsProtocols.WindowsErrorCodes.Constants.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,8 +1,9 @@
 ﻿using System;
-using static THNETII.WinApiNative.NTStatus.NTStatusConstants;
 
-namespace THNETII.WinApi.WindowsErrorCodes
+namespace THNETII.WindowsProtocols.WindowsErrorCodes
 {
+    using static Constants.NTFacilityConstants;
+
     /// <summary>
     /// The <see cref="NTSTATUS"/> facility values that are defined by Windows.
     /// </summary>

@@ -5,7 +5,7 @@ int main(int argc, char* argv[])
 {
     void* instance;
     const int size = sizeof(instance);
-    const int value = FACILITY_DEBUGGER;
+    const int value = ERROR_SUCCESS;
 
     const void* ptr = NULL;
 

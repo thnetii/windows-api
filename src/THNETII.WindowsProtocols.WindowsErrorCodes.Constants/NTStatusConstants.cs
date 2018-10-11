@@ -1,9 +1,40 @@
-﻿#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
-namespace THNETII.WinApiNative.NTStatus
+﻿namespace THNETII.WindowsProtocols.WindowsErrorCodes.Constants
 {
     /// <summary>
-    /// Constant definitions for the NTSTATUS values.
+    /// Constant definitions for the <see cref="T:THNETII.WindowsProtocols.WindowsErrorCodes.NTSTATUS"/> values.
     /// </summary>
+    /// <remarks>
+    /// Values are 32 bit values laid out as follows:
+    /// <code>
+    ///  3 3 2 2 2 2 2 2 2 2 2 2 1 1 1 1 1 1 1 1 1 1
+    ///  1 0 9 8 7 6 5 4 3 2 1 0 9 8 7 6 5 4 3 2 1 0 9 8 7 6 5 4 3 2 1 0
+    /// +---+-+-+-----------------------+-------------------------------+
+    /// |Sev|C|R|     Facility          |               Code            |
+    /// +---+-+-+-----------------------+-------------------------------+
+    /// </code>
+    /// where
+    /// <list type="table">
+    /// <listheader><term>Field</term><description>Description</description></listheader>
+    /// <item>
+    /// <term><c>Sev</c></term>
+    /// <description>
+    /// is the severity code
+    /// <list type="table">
+    /// <listheader><term>Value</term><description>Meaning</description></listheader>
+    /// <item><term><c>0b00</c></term><description>Success</description></item>
+    /// <item><term><c>0b01</c></term><description>Informational</description></item>
+    /// <item><term><c>0b10</c></term><description>Warning</description></item>
+    /// <item><term><c>0b11</c></term><description>Error</description></item>
+    /// </list>
+    /// </description>
+    /// </item>
+    /// <item><term><c>C</c></term><description>is the Customer code flag</description></item>
+    /// <item><term><c>R</c></term><description>is a reserved bit</description></item>
+    /// <item><term>Facility</term><description>is the facility code</description></item>
+    /// <item><term>Code</term><description>is the facility's status code</description></item>
+    /// </list>
+    /// </remarks>
+    /// <seealso cref="T:THNETII.WindowsProtocols.WindowsErrorCodes.NTSTATUS"/>
     public static class NTStatusConstants
     {
         /// <summary>
@@ -11,101 +42,6 @@ namespace THNETII.WinApiNative.NTStatus
         /// FacilityCodes 0x5 - 0xF have been allocated by various drivers.
         /// </summary>
         public const int STATUS_WAIT_0 = 0x00000000; // winnt
-
-        //
-        //  Values are 32 bit values laid out as follows:
-        //
-        //   3 3 2 2 2 2 2 2 2 2 2 2 1 1 1 1 1 1 1 1 1 1
-        //   1 0 9 8 7 6 5 4 3 2 1 0 9 8 7 6 5 4 3 2 1 0 9 8 7 6 5 4 3 2 1 0
-        //  +---+-+-+-----------------------+-------------------------------+
-        //  |Sev|C|R|     Facility          |               Code            |
-        //  +---+-+-+-----------------------+-------------------------------+
-        //
-        //  where
-        //
-        //      Sev - is the severity code
-        //
-        //          00 - Success
-        //          01 - Informational
-        //          10 - Warning
-        //          11 - Error
-        //
-        //      C - is the Customer code flag
-        //
-        //      R - is a reserved bit
-        //
-        //      Facility - is the facility code
-        //
-        //      Code - is the facility's status code
-        //
-
-        //
-        // Define the facility codes
-        //
-
-        public const int FACILITY_DEBUGGER = 0x1;
-        public const int FACILITY_RPC_RUNTIME = 0x2;
-        public const int FACILITY_RPC_STUBS = 0x3;
-        public const int FACILITY_IO_ERROR_CODE = 0x4;
-        public const int FACILITY_CODCLASS_ERROR_CODE = 0x6;
-        public const int FACILITY_NTWIN32 = 0x7;
-        public const int FACILITY_NTCERT = 0x8;
-        public const int FACILITY_NTSSPI = 0x9;
-        public const int FACILITY_TERMINAL_SERVER = 0xA;
-        public const int FACILTIY_MUI_ERROR_CODE = 0xB;
-        public const int FACILITY_USB_ERROR_CODE = 0x10;
-        public const int FACILITY_HID_ERROR_CODE = 0x11;
-        public const int FACILITY_FIREWIRE_ERROR_CODE = 0x12;
-        public const int FACILITY_CLUSTER_ERROR_CODE = 0x13;
-        public const int FACILITY_ACPI_ERROR_CODE = 0x14;
-        public const int FACILITY_SXS_ERROR_CODE = 0x15;
-        public const int FACILITY_TRANSACTION = 0x19;
-        public const int FACILITY_COMMONLOG = 0x1A;
-        public const int FACILITY_VIDEO = 0x1B;
-        public const int FACILITY_FILTER_MANAGER = 0x1C;
-        public const int FACILITY_MONITOR = 0x1D;
-        public const int FACILITY_GRAPHICS_KERNEL = 0x1E;
-        public const int FACILITY_DRIVER_FRAMEWORK = 0x20;
-        public const int FACILITY_FVE_ERROR_CODE = 0x21;
-        public const int FACILITY_FWP_ERROR_CODE = 0x22;
-        public const int FACILITY_NDIS_ERROR_CODE = 0x23;
-        public const int FACILITY_TPM = 0x29;
-        public const int FACILITY_RTPM = 0x2A;
-        public const int FACILITY_HYPERVISOR = 0x35;
-        public const int FACILITY_IPSEC = 0x36;
-        public const int FACILITY_VIRTUALIZATION = 0x37;
-        public const int FACILITY_VOLMGR = 0x38;
-        public const int FACILITY_BCD_ERROR_CODE = 0x39;
-        public const int FACILITY_WIN32K_NTUSER = 0x3E;
-        public const int FACILITY_WIN32K_NTGDI = 0x3F;
-        public const int FACILITY_RESUME_KEY_FILTER = 0x40;
-        public const int FACILITY_RDBSS = 0x41;
-        public const int FACILITY_BTH_ATT = 0x42;
-        public const int FACILITY_SECUREBOOT = 0x43;
-        public const int FACILITY_AUDIO_KERNEL = 0x44;
-        public const int FACILITY_VSM = 0x45;
-        public const int FACILITY_VOLSNAP = 0x50;
-        public const int FACILITY_SDBUS = 0x51;
-        public const int FACILITY_SHARED_VHDX = 0x5C;
-        public const int FACILITY_SMB = 0x5D;
-        public const int FACILITY_INTERIX = 0x99;
-        public const int FACILITY_SPACES = 0xE7;
-        public const int FACILITY_SECURITY_CORE = 0xE8;
-        public const int FACILITY_SYSTEM_INTEGRITY = 0xE9;
-        public const int FACILITY_LICENSING = 0xEA;
-        public const int FACILITY_PLATFORM_MANIFEST = 0xEB;
-        public const int FACILITY_APP_EXEC = 0xEC;
-        public const int FACILITY_MAXIMUM_VALUE = 0xED;
-
-
-        //
-        // Define the severity codes
-        //
-
-        public const int STATUS_SEVERITY_SUCCESS = 0x0;
-        public const int STATUS_SEVERITY_INFORMATIONAL = 0x1;
-        public const int STATUS_SEVERITY_WARNING = 0x2;
-        public const int STATUS_SEVERITY_ERROR = 0x3;
 
         /// <summary>
         /// STATUS_SUCCESS
@@ -13763,4 +13699,3 @@ namespace THNETII.WinApiNative.NTStatus
         public const int STATUS_APPEXEC_HOST_ID_MISMATCH = unchecked((int)0xC0EC0006);
     }
 }
-#pragma warning restore CS1591 // Missing XML comment for publicly visible type or member

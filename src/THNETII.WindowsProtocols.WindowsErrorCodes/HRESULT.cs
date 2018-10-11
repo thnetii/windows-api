@@ -3,14 +3,63 @@ using System.Diagnostics.CodeAnalysis;
 using System.Runtime.InteropServices;
 using THNETII.InteropServices.Bitwise;
 
-namespace THNETII.WinApi.WindowsErrorCodes
+namespace THNETII.WindowsProtocols.WindowsErrorCodes
 {
     /// <summary>
     /// The <see cref="HRESULT"/> is a data type used to represent error and warning conditions.
     /// <para><see cref="HRESULT"/>s are numerical error codes. Various bits within an HRESULT encode information about the nature of the error code, and where it came from. </para>
     /// </summary>
     /// <remarks>
+    /// <para>
+    /// <see cref="HRESULT"/>s are 32 bit values layed out as follows:
+    /// <code>
+    ///  3 3 2 2 2 2 2 2 2 2 2 2 1 1 1 1 1 1 1 1 1 1
+    ///  1 0 9 8 7 6 5 4 3 2 1 0 9 8 7 6 5 4 3 2 1 0 9 8 7 6 5 4 3 2 1 0
+    /// +-+-+-+-+-+---------------------+-------------------------------+
+    /// |S|R|C|N|r|    Facility         |               Code            |
+    /// +-+-+-+-+-+---------------------+-------------------------------+
+    /// </code>
+    /// where
+    /// <list type="table">
+    /// <listheader><term>Field</term><description>Description</description></listheader>
+    /// <item>
+    /// <term><c>S</c></term>
+    /// <description>
+    /// Severity – indicates success/fail
+    /// <list type="table">
+    /// <listheader><term>Value</term><description>Meaning</description></listheader>
+    /// <item><term><c>0</c> (zero)</term><description>Success</description></item>
+    /// <item><term><c>1</c></term><description>Fail (COERROR)</description></item>
+    /// </list>
+    /// </description>
+    /// </item>
+    /// <item>
+    /// <term><c>R</c></term>
+    /// <description>reserved portion of the facility code, corresponds to NT's second severity bit.</description>
+    /// </item>
+    /// <item>
+    /// <term><c>C</c></term>
+    /// <description>reserved portion of the facility code, corresponds to NT's C field.</description>
+    /// </item>
+    /// <item>
+    /// <term><c>N</c></term>
+    /// <description>reserved portion of the facility code. Used to indicate a mapped NT status value.</description>
+    /// </item>
+    /// <item>
+    /// <term><c>r</c></term>
+    /// <description>
+    /// reserved portion of the facility code. Reserved for internal
+    /// use. Used to indicate <see cref="HRESULT"/> values that are not status
+    /// values, but are instead message ids for display strings.
+    /// </description>
+    /// </item>
+    /// <item><term>Facility</term><description>is the facility code</description></item>
+    /// <item><term>Code</term><description>is the facility's status code</description></item>
+    /// </list>
+    /// </para>
+    /// <para>
     /// The <see cref="HRESULT"/> numbering space is vendor-extensible. Vendors can supply their own values for this field, as long as the C bit (<c>0x20000000</c>) is set, indicating it is a customer code.
+    /// </para>
     /// </remarks>
     [StructLayout(LayoutKind.Sequential)]
     public struct HRESULT : IEquatable<HRESULT>, IEquatable<int>

@@ -1,7 +1,7 @@
-﻿using static THNETII.WinApiNative.WinError.WinErrorConstants;
-
-namespace THNETII.WinApi.WindowsErrorCodes
+﻿namespace THNETII.WindowsProtocols.WindowsErrorCodes
 {
+    using static Constants.WinErrorFacilityConstants;
+
     /// <summary>
     /// A Win32 Facility code, indicating which part of the Win32 system reported
     /// a system error code.

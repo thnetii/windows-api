@@ -5,15 +5,17 @@
     <LangVersion>7.2</LangVersion>
     <TargetFrameworks>netstandard1.3;netstandard2.0</TargetFrameworks>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <Description>Describes the HRESULT values, Win32 error codes, and NTSTATUS values that are referenced in the Windows APIs.</Description>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\interopservices\src\THNETII.InteropServices.Bitwise\THNETII.InteropServices.Bitwise.csproj" />
-    <ProjectReference Include="..\..\src-native\THNETII.WinApiNative.NTStatus\THNETII.WinApiNative.NTStatus.csproj" />
-    <ProjectReference Include="..\..\src-native\THNETII.WinApiNative.WinError\THNETII.WinApiNative.WinError.csproj">
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\THNETII.WindowsProtocols.WindowsErrorCodes.Constants\THNETII.WindowsProtocols.WindowsErrorCodes.Constants.csproj">
       <PrivateAssets>All</PrivateAssets>
     </ProjectReference>
-    <ProjectReference Include="..\..\src-native\THNETII.WinApiNative.WinNT\THNETII.WinApiNative.WinNT.csproj" />
   </ItemGroup>
 
 </Project>

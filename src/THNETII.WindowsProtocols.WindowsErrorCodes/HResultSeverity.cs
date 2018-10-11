@@ -1,7 +1,7 @@
-﻿using static THNETII.WinApiNative.WinError.WinErrorConstants;
-
-namespace THNETII.WinApi.WindowsErrorCodes
+﻿namespace THNETII.WindowsProtocols.WindowsErrorCodes
 {
+    using static Constants.WinErrorSeverityConstants;
+
     /// <summary>
     /// COM severity values for <see cref="HRESULT"/>.
     /// </summary>

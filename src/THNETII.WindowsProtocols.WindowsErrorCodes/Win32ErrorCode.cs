@@ -3,11 +3,42 @@ using System.Diagnostics.CodeAnalysis;
 using System.Runtime.InteropServices;
 using THNETII.InteropServices.Bitwise;
 
-namespace THNETII.WinApi.WindowsErrorCodes
+namespace THNETII.WindowsProtocols.WindowsErrorCodes
 {
     /// <summary>
     /// Represents a Win32 System Error code.
     /// </summary>
+    /// <remarks>
+    /// Values are 32 bit values laid out as follows:
+    /// <code>
+    ///  3 3 2 2 2 2 2 2 2 2 2 2 1 1 1 1 1 1 1 1 1 1
+    ///  1 0 9 8 7 6 5 4 3 2 1 0 9 8 7 6 5 4 3 2 1 0 9 8 7 6 5 4 3 2 1 0
+    /// +---+-+-+-----------------------+-------------------------------+
+    /// |Sev|C|R|     Facility          |               Code            |
+    /// +---+-+-+-----------------------+-------------------------------+
+    /// </code>
+    /// where
+    /// <list type="table">
+    /// <listheader><term>Field</term><description>Description</description></listheader>
+    /// <item>
+    /// <term><c>Sev</c></term>
+    /// <description>
+    /// is the severity code
+    /// <list type="table">
+    /// <listheader><term>Value</term><description>Meaning</description></listheader>
+    /// <item><term><c>0b00</c></term><description>Success</description></item>
+    /// <item><term><c>0b01</c></term><description>Informational</description></item>
+    /// <item><term><c>0b10</c></term><description>Warning</description></item>
+    /// <item><term><c>0b11</c></term><description>Error</description></item>
+    /// </list>
+    /// </description>
+    /// </item>
+    /// <item><term><c>C</c></term><description>is the Customer code flag</description></item>
+    /// <item><term><c>R</c></term><description>is a reserved bit</description></item>
+    /// <item><term>Facility</term><description>is the facility code</description></item>
+    /// <item><term>Code</term><description>is the facility's status code</description></item>
+    /// </list>
+    /// </remarks>
     [StructLayout(LayoutKind.Sequential)]
     public struct Win32ErrorCode : IEquatable<int>, IEquatable<Win32ErrorCode>
     {

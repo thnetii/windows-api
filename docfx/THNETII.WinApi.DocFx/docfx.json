@@ -4,18 +4,36 @@
       "src": [
         {
           "files": [
-            "interopservices/src/THNETII.InteropServices.Bitwise/*.csproj",
-            "src/THNETII.WinApi.WindowsErrorCodes/*.csproj",
-            "src-native/THNETII.WinApiNative.NTStatus/*.csproj",
-            "src-native/THNETII.WinApiNative.WinError/*.csproj",
-            "src-native/THNETII.WinApiNative.WinNT/*.csproj"
+            "**.csproj"
           ],
           "exclude": [
             "**/bin/**",
             "**/obj/**",
-            "_site/**",
+            "_site/**"
           ],
-          "src": "../../"
+          "src": "../../src"
+        },
+        {
+          "files": [
+            "**.csproj"
+          ],
+          "exclude": [
+            "**/bin/**",
+            "**/obj/**",
+            "_site/**"
+          ],
+          "src": "../../src-native"
+        },
+        {
+          "files": [
+            "**.csproj"
+          ],
+          "exclude": [
+            "**/bin/**",
+            "**/obj/**",
+            "_site/**"
+          ],
+          "src": "../../interopservices/src"
         }
       ],
       "dest": "api",
@@ -68,7 +86,7 @@
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
     "template": [
-      "default"
+      "statictoc"
     ],
     "postProcessors": [],
     "markdownEngineName": "markdig",

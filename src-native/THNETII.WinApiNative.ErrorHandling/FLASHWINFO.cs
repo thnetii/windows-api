@@ -28,7 +28,7 @@ namespace THNETII.WinApiNative.ErrorHandling
         /// The flash status.
         /// </summary>
         [MarshalAs(UnmanagedType.I4)]
-        public FLASHWFLAG dwFlags;
+        public FLASHWFLAGS dwFlags;
         /// <summary>
         /// The number of times to flash the window.
         /// </summary>

@@ -1,10 +1,11 @@
-﻿using System.Diagnostics.CodeAnalysis;
+﻿using System;
+using System.Diagnostics.CodeAnalysis;
 
 namespace THNETII.WinApiNative.ErrorHandling
 {
 #pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
-    [SuppressMessage("Naming", "CA1707: Identifiers should not contain underscores")]
-    public enum FLASHWFLAG : int
+    [Flags]
+    public enum FLASHWFLAGS : int
     {
         /// <summary>
         /// Stop flashing. The system restores the window to its original state. 

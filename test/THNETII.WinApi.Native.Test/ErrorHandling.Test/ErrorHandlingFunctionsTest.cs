@@ -68,7 +68,7 @@ namespace THNETII.WinApiNative.ErrorHandling.Test
             {
                 cbSize = SizeOf<FLASHWINFO>.Bytes,
                 hwnd = hWnd,
-                dwFlags = FLASHWFLAG.FLASHW_ALL,
+                dwFlags = FLASHWFLAGS.FLASHW_ALL,
                 uCount = 100
             });
         }

@@ -8,4 +8,5 @@ using System.Diagnostics.CodeAnalysis;
 
 [assembly: SuppressMessage("Interoperability", "CA1401: P/Invokes should not be visible")]
 [assembly: SuppressMessage("Usage", "PC003: Native API not available in UWP")]
-
+[assembly: SuppressMessage("Documentation", "CA1200: Avoid using cref tags with a prefix")]
+[assembly: SuppressMessage("Naming", "CA1707: Identifiers should not contain underscores")]

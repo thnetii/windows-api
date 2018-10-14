@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.InteropServices;
+using THNETII.InteropServices.Bitwise;
 
 namespace THNETII.WindowsProtocols.WindowsErrorCodes
 {
@@ -10,11 +11,24 @@ namespace THNETII.WindowsProtocols.WindowsErrorCodes
     [StructLayout(LayoutKind.Sequential)]
     public struct Win32ErrorCode : IEquatable<int>, IEquatable<Win32ErrorCode>
     {
+        private static readonly Bitfield32 appdefined_bit = Bitfield32.DefineSingleBit(29);
+
         /// <summary>
         /// The full 32-bit integer value of of the system error code.
         /// </summary>
         /// <value>The entire value as a signed 32-bit integer.</value>
         public int Value { get; }
+
+        /// <summary>
+        /// Whether the error code is an application-defined error code.
+        /// </summary>
+        /// <value><c>true</c> if the error code is application-defined; otherwise the error code is a system error code and the property value is <c>false</c>.</value>
+        /// <remarks>
+        /// <para>Bit 29 is reserved for application-defined error codes.</para>
+        /// <para>No system error code has this property set to <c>true</c>.</para>
+        /// <para>If you are defining an error code for your application, set this bit to one. That indicates that the error code has been defined by an application, and ensures that your error code does not conflict with any error codes defined by the system.</para>
+        /// </remarks>
+        public bool IsApplicationDefined => appdefined_bit.Read(Value) != 0;
 
         /// <summary>
         /// Initializes the specified integer value as a Win32 system error code.

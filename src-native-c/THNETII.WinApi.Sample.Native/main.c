@@ -4,7 +4,7 @@ int main(int argc, char* argv[])
 {
     FLASHWINFO instance;
     const int size = sizeof(instance);
-    const int value = SEM_FAILCRITICALERRORS;
+    const int value = HRESULT_FROM_WIN32(ERROR_SUCCESS);
 
     const void* ptr = GetLastError;
 

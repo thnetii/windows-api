@@ -72,5 +72,17 @@ namespace THNETII.WinApiNative.ErrorHandling.Test
                 uCount = 100
             });
         }
+
+        [SkippableFact(typeof(DllNotFoundException), typeof(EntryPointNotFoundException))]
+        public static void GetErrorMode()
+        {
+            var mode = ErrorHandlingFunctions.GetErrorMode();
+        }
+
+        [SkippableFact(typeof(DllNotFoundException), typeof(EntryPointNotFoundException))]
+        public static void GetThreadErrorMode()
+        {
+            var mode = ErrorHandlingFunctions.GetThreadErrorMode();
+        }
     }
 }

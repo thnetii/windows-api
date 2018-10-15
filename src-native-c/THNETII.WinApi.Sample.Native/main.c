@@ -6,7 +6,7 @@ int main(int argc, char* argv[])
     const int size = sizeof(instance);
     const int value = HRESULT_FROM_WIN32(ERROR_SUCCESS);
 
-    const void* ptr = GetLastError;
+    const void* ptr = GetThreadErrorMode;
 
     return EXIT_SUCCESS;
 }

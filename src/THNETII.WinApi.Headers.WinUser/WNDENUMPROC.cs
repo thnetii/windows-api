@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 
-namespace THNETII.WinApi.Headers.WinUser
+namespace THNETII.WinApi.Native.WinUser
 {
     [UnmanagedFunctionPointer(CallingConvention.StdCall)]
     [return: MarshalAs(UnmanagedType.Bool)]

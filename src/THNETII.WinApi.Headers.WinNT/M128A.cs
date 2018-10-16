@@ -1,6 +1,6 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace THNETII.WinApi.WinNT
+namespace THNETII.WinApi.Native.WinNT
 {
     /// <summary>
     /// Define 128-bit 16-byte aligned xmm register type.

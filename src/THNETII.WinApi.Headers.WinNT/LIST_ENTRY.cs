@@ -2,7 +2,7 @@
 using System.Runtime.InteropServices;
 using THNETII.InteropServices.NativeMemory;
 
-namespace THNETII.WinApi.WinNT
+namespace THNETII.WinApi.Native.WinNT
 {
     /// <summary>
     /// Doubly linked list structure.  Can be used as either a list head, or

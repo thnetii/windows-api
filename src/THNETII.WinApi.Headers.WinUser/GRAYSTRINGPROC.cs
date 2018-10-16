@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 
-namespace THNETII.WinApi.Headers.WinUser
+namespace THNETII.WinApi.Native.WinUser
 {
     /// <summary>
     /// The <see cref="GRAYSTRINGPROC"/> delegate is an application-defined callback function used with the <see cref="GrayString"/> function. It is used to draw a string.

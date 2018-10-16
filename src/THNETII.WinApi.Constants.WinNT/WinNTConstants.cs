@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 
-namespace THNETII.WinApi.WinNT
+namespace THNETII.WinApi.Native.WinNT
 {
     using static WinNTMacros;
 

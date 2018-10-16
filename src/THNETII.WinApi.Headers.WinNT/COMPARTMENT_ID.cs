@@ -1,4 +1,4 @@
-﻿namespace THNETII.WinApi.WinNT
+﻿namespace THNETII.WinApi.Native.WinNT
 {
     //
     // Compartment identifier

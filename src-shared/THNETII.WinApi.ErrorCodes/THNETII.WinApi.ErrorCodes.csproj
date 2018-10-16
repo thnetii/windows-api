@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <LangVersion>7.2</LangVersion>
+    <TargetFrameworks>netstandard1.3;netstandard2.0</TargetFrameworks>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <RootNamespace>THNETII.WinApi</RootNamespace>
+    <Description>Describes the HRESULT values, Win32 error codes, and NTSTATUS values that are referenced in the Windows APIs.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\interopservices\src\THNETII.InteropServices.Bitwise\THNETII.InteropServices.Bitwise.csproj" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\THNETII.WinApi.Constants.WinError\THNETII.WinApi.Constants.WinError.csproj">
+      <PrivateAssets>All</PrivateAssets>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\THNETII.WinApi.Constants.NTStatus\THNETII.WinApi.Constants.NTStatus.csproj">
+      <PrivateAssets>All</PrivateAssets>
+    </ProjectReference>
+  </ItemGroup>
+
+</Project>

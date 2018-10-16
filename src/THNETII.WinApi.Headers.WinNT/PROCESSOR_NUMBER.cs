@@ -1,6 +1,6 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace THNETII.WinApi.WinNT
+namespace THNETII.WinApi.Native.WinNT
 {
     //
     // Structure to represent a system wide processor number. It contains a

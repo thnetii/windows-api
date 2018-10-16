@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace THNETII.WinApi.WinNT
+namespace THNETII.WinApi.Native.WinNT
 {
     [Flags]
     public enum VER_FLAGS : int

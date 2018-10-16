@@ -1,6 +1,6 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace THNETII.WinApi.WinNT
+namespace THNETII.WinApi.Native.WinNT
 {
     [StructLayout(LayoutKind.Sequential, Pack = 16)]
     public struct XSAVE_AREA

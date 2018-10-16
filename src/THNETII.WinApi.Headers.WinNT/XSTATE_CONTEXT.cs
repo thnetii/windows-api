@@ -2,7 +2,7 @@
 using System.Runtime.InteropServices;
 using THNETII.InteropServices.NativeMemory;
 
-namespace THNETII.WinApi.WinNT
+namespace THNETII.WinApi.Native.WinNT
 {
     [StructLayout(LayoutKind.Sequential)]
     public struct XSTATE_CONTEXT

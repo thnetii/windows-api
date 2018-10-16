@@ -1,6 +1,6 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace THNETII.WinApi.WinNT
+namespace THNETII.WinApi.Native.WinNT
 {
     /// <summary>
     /// Format of data for (F)XSAVE/(F)XRSTOR instruction

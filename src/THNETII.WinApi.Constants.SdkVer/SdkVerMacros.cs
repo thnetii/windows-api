@@ -1,4 +1,4 @@
-﻿namespace THNETII.WinApi.SdkVer
+﻿namespace THNETII.WinApi.Native.SdkVer
 {
     using static SdkVerConstants;
 

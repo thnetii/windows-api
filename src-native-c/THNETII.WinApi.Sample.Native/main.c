@@ -4,7 +4,7 @@ int main(int argc, char* argv[])
 {
     SCOPE_TABLE_AMD64 instance;
     const int size = sizeof(instance);
-    const int value = NULL;
+    const int value = ERROR_SEVERITY_ERROR;
 
     const void* ptr = NULL;
 

@@ -515,7 +515,7 @@ namespace THNETII.WinApi.Native.ErrorHandling
         /// </param>
         /// <param name="lpBuffer">
         /// Receives a buffer to the null-terminated string that specifies the formatted message. <strong>ONLY</strong> use this overload if <see cref="FORMAT_MESSAGE_ALLOCATE_BUFFER"/> is included in <paramref name="dwFlags"/>.
-        /// <para>The function allocates a buffer using the <see cref="M:THNETII.WinApiNative.MemoryManagement.MemoryManagementFunctions.LocalAlloc"/> function.</para>
+        /// <para>The function allocates a buffer using the <see cref="LocalAlloc"/> function.</para>
         /// <para>This buffer cannot be larger than 64K bytes.</para>
         /// </param>
         /// <param name="nSize">
@@ -636,7 +636,7 @@ namespace THNETII.WinApi.Native.ErrorHandling
         /// </param>
         /// <param name="lpBuffer">
         /// Receives a buffer to the null-terminated string that specifies the formatted message. <strong>ONLY</strong> use this overload if <see cref="FORMAT_MESSAGE_ALLOCATE_BUFFER"/> is included in <paramref name="dwFlags"/>.
-        /// <para>The function allocates a buffer using the <see cref="M:THNETII.WinApiNative.MemoryManagement.MemoryManagementFunctions.LocalAlloc"/> function.</para>
+        /// <para>The function allocates a buffer using the <see cref="LocalAlloc"/> function.</para>
         /// <para>This buffer cannot be larger than 64K bytes.</para>
         /// </param>
         /// <param name="nSize">

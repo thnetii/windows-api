@@ -2,11 +2,11 @@
 
 int main(int argc, char* argv[])
 {
-    FLASHWINFO instance;
+    SCOPE_TABLE_AMD64 instance;
     const int size = sizeof(instance);
-    const int value = HRESULT_FROM_WIN32(ERROR_SUCCESS);
+    const int value = NULL;
 
-    const void* ptr = GetThreadErrorMode;
+    const void* ptr = NULL;
 
     return EXIT_SUCCESS;
 }

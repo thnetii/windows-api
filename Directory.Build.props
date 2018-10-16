@@ -6,6 +6,9 @@
     <Company>TH-NETII Rasch Solutions</Company>
     <Copyright>Written by Fredrik Høisæther Rasch, $([System.DateTime]::Now.Year)</Copyright>
   </PropertyGroup>
+  <PropertyGroup>
+    <TargetFramework Condition="'$(BuildDefaultTargetFramework)'!=''">netstandard2.0</TargetFramework>
+  </PropertyGroup>
   <PropertyGroup Label="Repository Metadata">
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/thnetii/windows-api.git</RepositoryUrl>

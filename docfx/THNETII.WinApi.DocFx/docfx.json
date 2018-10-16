@@ -4,36 +4,14 @@
       "src": [
         {
           "files": [
-            "**.csproj"
+            "src/**.csproj"
           ],
           "exclude": [
             "**/bin/**",
             "**/obj/**",
             "_site/**"
           ],
-          "src": "../../src"
-        },
-        {
-          "files": [
-            "**.csproj"
-          ],
-          "exclude": [
-            "**/bin/**",
-            "**/obj/**",
-            "_site/**"
-          ],
-          "src": "../../src-native"
-        },
-        {
-          "files": [
-            "**.csproj"
-          ],
-          "exclude": [
-            "**/bin/**",
-            "**/obj/**",
-            "_site/**"
-          ],
-          "src": "../../interopservices/src"
+          "src": "../../"
         }
       ],
       "dest": "api",
@@ -79,6 +57,9 @@
         ]
       }
     ],
+    "xref": [
+      "https://thnetii.github.io/docs/interopservices/xrefmap.yml"
+    ],
     "xrefService": [
       "https://xref.docs.microsoft.com/query?uid={uid}"
     ],
@@ -86,7 +67,7 @@
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
     "template": [
-      "statictoc"
+      "default"
     ],
     "postProcessors": [],
     "markdownEngineName": "markdig",

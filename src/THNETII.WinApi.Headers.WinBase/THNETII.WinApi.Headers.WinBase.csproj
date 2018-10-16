@@ -6,17 +6,18 @@
     <TargetFrameworks>netstandard1.3;netstandard2.0</TargetFrameworks>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <NoWarn>CS1591</NoWarn>
-    <RootNamespace>THNETII.WinApi.Native.WinUser</RootNamespace>
+    <RootNamespace>THNETII.WinApi.Native.WinBase</RootNamespace>
   </PropertyGroup>
-
+  
   <ItemGroup>
+    <ProjectReference Include="..\..\interopservices\src\THNETII.InteropServices.Bitwise\THNETII.InteropServices.Bitwise.csproj" />
     <ProjectReference Include="..\..\interopservices\src\THNETII.InteropServices.NativeMemory\THNETII.InteropServices.NativeMemory.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\THNETII.WinApi.Constants.WinUser\THNETII.WinApi.Constants.WinUser.csproj">
+    <ProjectReference Include="..\THNETII.WinApi.Constants.WinBase\THNETII.WinApi.Constants.WinBase.csproj">
       <PrivateAssets>All</PrivateAssets>
     </ProjectReference>
   </ItemGroup>
-  
+
 </Project>

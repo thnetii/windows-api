@@ -2,9 +2,9 @@
 
 int main(int argc, char* argv[])
 {
-    SCOPE_TABLE_AMD64 instance;
+    FLASHWINFO instance;
     const int size = sizeof(instance);
-    const int value = ERROR_SEVERITY_ERROR;
+    const int value = SEM_FAILCRITICALERRORS;
 
     const void* ptr = NULL;
 

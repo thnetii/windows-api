@@ -3,7 +3,7 @@
 namespace THNETII.WinApi.Native.WinBase
 {
     [Flags]
-    public enum SYSTEM_ERRPR_MODE : int
+    public enum SYSTEM_ERROR_MODE : int
     {
         /// <summary>
         /// <para>The system does not display the critical-error-handler message box. Instead, the system sends the error to the calling thread.</para>

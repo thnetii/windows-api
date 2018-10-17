@@ -4,9 +4,9 @@ int main(int argc, char* argv[])
 {
     FLASHWINFO instance;
     const int size = sizeof(instance);
-    const int value = SEM_FAILCRITICALERRORS;
+    const int value = MB_OK;
 
-    const void* ptr = NULL;
+    const void* ptr = MessageBeep;
 
     return EXIT_SUCCESS;
 }

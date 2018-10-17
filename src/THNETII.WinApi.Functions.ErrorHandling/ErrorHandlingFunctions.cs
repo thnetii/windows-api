@@ -12,6 +12,7 @@ using EntryPointNotFoundException = System.Exception;
 namespace THNETII.WinApi.Native.ErrorHandling
 {
     using static WinBase.FORMAT_MESSAGE_FLAGS;
+    using static WinUser.MB_ICON;
     using static WinError.WinErrorConstants;
 
     /// <summary>
@@ -802,6 +803,57 @@ namespace THNETII.WinApi.Native.ErrorHandling
         [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi)]
         [return: MarshalAs(UnmanagedType.I4)]
         public static extern SYSTEM_ERRPR_MODE GetThreadErrorMode();
+        #endregion
+        #region MessageBeep function
+        /// <summary>
+        /// Plays a waveform sound. The waveform sound for each sound type is identified by an entry in the registry.
+        /// </summary>
+        /// <param name="uType">
+        /// <para>The sound to be played. The sounds are set by the user through the Sound control panel application, and then stored in the registry.</para>
+        /// <para>
+        /// This parameter can be one of the following values.
+        /// <list type="table">
+        /// <listheader><term>Value</term><description>Meaning</description></listheader>
+        /// <item><term><c>(<see cref="MB_ICON"/>)0xFFFFFFFF</c></term><description>A simple beep. If the sound card is not available, the sound is generated using the speaker. </description></item>
+        /// <item><term><see cref="MB_ICONASTERISK"/></term><description>See <see cref="MB_ICONINFORMATION"/>.</description></item>
+        /// <item><term><see cref="MB_ICONEXCLAMATION"/></term><description>See <see cref="MB_ICONWARNING"/>.</description></item>
+        /// <item><term><see cref="MB_ICONERROR"/></term><description>The sound specified as the Windows Critical Stop sound. </description></item>
+        /// <item><term><see cref="MB_ICONHAND"/></term><description>See <see cref="MB_ICONERROR"/>. </description></item>
+        /// <item><term><see cref="MB_ICONINFORMATION"/></term><description>The sound specified as the Windows Asterisk sound. </description></item>
+        /// <item><term><see cref="MB_ICONQUESTION"/></term><description>The sound specified as the Windows Question sound. </description></item>
+        /// <item><term><see cref="MB_ICONSTOP"/></term><description>See <see cref="MB_ICONERROR"/>. </description></item>
+        /// <item><term><see cref="MB_ICONWARNING"/></term><description>The sound specified as the Windows Exclamation sound. </description></item>
+        /// <item><term><c>(<see cref="MB_ICON"/>)0</c></term><description>The sound specified as the Windows Default Beep sound. </description></item>
+        /// </list>
+        /// </para>
+        /// </param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <c>true</c>.</para>
+        /// <para>If the function fails, the return value is <c>false</c>. To get extended error information, call <see cref="Marshal.GetLastWin32Error"/>.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>After queuing the sound, the <see cref="MessageBeep"/> function returns control to the calling function and plays the sound asynchronously.</para>
+        /// <para>If it cannot play the specified alert sound, <see cref="MessageBeep"/> attempts to play the system default sound. If it cannot play the system default sound, the function produces a standard beep sound through the computer speaker.</para>
+        /// <para>The user can disable the warning beep by using the Sound control panel application.</para>
+        /// <para><strong>Note:</strong> To send a beep to a remote client, use the <see cref="Beep"/> function. The <see cref="Beep"/> function is redirected to the client, whereas <see cref="MessageBeep"/> is not.</para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows XP [desktop appsonly]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/WinUser/nf-winuser-messagebeep">MessageBeep function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="Beep"/>
+        /// <seealso cref="FlashWindow"/>
+        [DllImport(NativeLibraryNames.User32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool MessageBeep(
+            [MarshalAs(UnmanagedType.I4)] MB_ICON uType
+            );
         #endregion
     }
 }

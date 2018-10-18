@@ -339,7 +339,7 @@ namespace THNETII.WinApi.Native.ErrorHandling
         /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps | UWP apps]</description></item>
         /// </list>
         /// </para>
-        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/Winuser/nf-winuser-formatmessagew">FormatMessageW function</a></para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/WinBase/nf-winbase-formatmessagew">FormatMessageW function</a></para>
         /// </remarks>
         /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
         /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
@@ -456,7 +456,7 @@ namespace THNETII.WinApi.Native.ErrorHandling
         /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps | UWP apps]</description></item>
         /// </list>
         /// </para>
-        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/Winuser/nf-winuser-formatmessagew">FormatMessageW function</a></para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/WinBase/nf-winbase-formatmessagew">FormatMessageW function</a></para>
         /// </remarks>
         /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
         /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
@@ -582,7 +582,7 @@ namespace THNETII.WinApi.Native.ErrorHandling
         /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps | UWP apps]</description></item>
         /// </list>
         /// </para>
-        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/Winuser/nf-winuser-formatmessagew">FormatMessageW function</a></para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/WinBase/nf-winbase-formatmessagew">FormatMessageW function</a></para>
         /// </remarks>
         /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
         /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
@@ -703,7 +703,7 @@ namespace THNETII.WinApi.Native.ErrorHandling
         /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps | UWP apps]</description></item>
         /// </list>
         /// </para>
-        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/Winuser/nf-winuser-formatmessagew">FormatMessageW function</a></para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/WinBase/nf-winbase-formatmessagew">FormatMessageW function</a></para>
         /// </remarks>
         /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
         /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>

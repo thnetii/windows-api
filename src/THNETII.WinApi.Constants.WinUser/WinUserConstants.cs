@@ -59,5 +59,13 @@
         public const int MB_MODEMASK = 0x00003000;
         public const int MB_MISCMASK = 0x0000C000;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\WinUser.h, line 13141
+        /*
+         * SetLastErrorEx() types.
+         */
+
+        public const int SLE_ERROR = 0x00000001;
+        public const int SLE_MINORERROR = 0x00000002;
+        public const int SLE_WARNING = 0x00000003;
     }
 }

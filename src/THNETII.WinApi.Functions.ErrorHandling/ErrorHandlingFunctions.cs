@@ -911,7 +911,6 @@ namespace THNETII.WinApi.Native.ErrorHandling
         /// <listheader><term>Requirements</term></listheader>
         /// <item><term><strong>Minimum supported client:</strong></term><description>Windows XP [desktop apps | UWP apps]</description></item>
         /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps | UWP apps]</description></item>
-        /// <item><term><strong>Minimum supported phone:</strong></term><description>Windows Phone 8.1</description></item>
         /// </list>
         /// </para>
         /// <para>Microsoft Docs page: <a href="https://msdn.microsoft.com/en-us/library/ms680627.aspx">SetLastError function</a></para>
@@ -923,6 +922,35 @@ namespace THNETII.WinApi.Native.ErrorHandling
         [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
         public static extern void SetLastError(
             [In] int dwErrCode
+            );
+        #endregion
+        #region SetLastErrorEx function
+        /// <summary>
+        /// <para>Sets the last-error code.</para>
+        /// <para>Currently, this function is identical to the <see cref="SetLastError"/> function. The second parameter is ignored.</para>
+        /// </summary>
+        /// <param name="dwErrCode">The last-error code for the thread.</param>
+        /// <param name="dwType">This parameter is ignored.</param>
+        /// <remarks>
+        /// <para>The last-error code is kept in thread local storage so that multiple threads do not overwrite each other's values.</para>
+        /// <para>Most functions call <see cref="SetLastError"/> or <see cref="SetLastErrorEx"/> only when they fail. However, some system functions call <see cref="SetLastError"/> or <see cref="SetLastErrorEx"/> under conditions of success; those cases are noted in each function's documentation.</para>
+        /// <para>Applications can optionally retrieve the value set by this function by using the <see cref="Marshal.GetLastWin32Error"/> function immediately after a function fails.</para>
+        /// <para>Error codes are 32-bit values (bit 31 is the most significant bit). Bit 29 is reserved for application-defined error codes; no system error code has this bit set. If you are defining an error code for your application, set this bit to indicate that the error code has been defined by your application and to ensure that your error code does not conflict with any system-defined error codes.</para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows XP [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/Winuser/nf-winuser-setlasterrorex">SetLastErrorEx function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        [DllImport(NativeLibraryNames.User32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        public static extern void SetLastErrorEx(
+            [In] int dwErrCode,
+            [In] SLE_TYPE dwType
             );
         #endregion
     }

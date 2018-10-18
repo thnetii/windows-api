@@ -6,7 +6,7 @@ int main(int argc, char* argv[])
     const int size = sizeof(instance);
     const int value = SEM_FAILCRITICALERRORS;
 
-    const void* ptr = SetErrorMode;
+    const void* ptr = SetLastError;
 
     return EXIT_SUCCESS;
 }

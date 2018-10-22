@@ -1,5 +1,5 @@
 ﻿using System.Runtime.InteropServices;
-using THNETII.InteropServices.NativeMemory.Specialized;
+using THNETII.InteropServices.NativeMemory;
 
 namespace THNETII.WinApi.Native.WinNT
 {
@@ -11,7 +11,7 @@ namespace THNETII.WinApi.Native.WinNT
         public static extern ushort RtlCaptureStackBackTrace(
             [In] int FramesToSkip,
             [In] int FramesToCapture,
-            out ArrayOfIntPtr BackTrace,
+            out IntPtrArrayPtr BackTrace,
             [Optional] out int BackTraceHash
             );
         #endregion

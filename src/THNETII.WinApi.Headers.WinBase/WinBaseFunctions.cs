@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 using System.Text;
-using THNETII.InteropServices.NativeMemory.Specialized;
+using THNETII.InteropServices.NativeMemory;
 
 #if NETSTANDARD1_3
 using EntryPointNotFoundException = System.Exception;
@@ -46,7 +46,7 @@ namespace THNETII.WinApi.Native.WinBase
         public static ushort CaptureStackBackTrace(
             int FramesToSkip,
             int FramesToCapture,
-            out ArrayOfIntPtr BackTrace,
+            out IntPtrArrayPtr BackTrace,
             out int BackTraceHash
             ) => WinNT.WinNTFunctions.RtlCaptureStackBackTrace(FramesToSkip, FramesToCapture, out BackTrace, out BackTraceHash);
         #endregion

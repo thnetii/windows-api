@@ -174,11 +174,13 @@ namespace THNETII.WinApi.Native.ErrHandlingApi
             int uAction,
             string lpMessageText
             ) => FatalAppExitW(uAction, lpMessageText);
+        /// <inheritdoc cref="FatalAppExit"/>
         [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi, EntryPoint = nameof(FatalAppExitA))]
         public static extern void FatalAppExitA(
             [In] int uAction,
             [In, MarshalAs(UnmanagedType.LPStr)] string lpMessageText
             );
+        /// <inheritdoc cref="FatalAppExit"/>
         [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi, EntryPoint = nameof(FatalAppExitW))]
         public static extern void FatalAppExitW(
             [In] int uAction,

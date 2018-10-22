@@ -198,7 +198,8 @@ namespace THNETII.WinApi.Native.WinBase
             int nSize,
             IntPtr Arguments
             ) => FormatMessageW(dwFlags, lpSource, dwMessageId, dwLanguageId, lpBuffer, nSize, Arguments);
-        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi, EntryPoint = nameof(FormatMessageA), SetLastError = true)]
+        /// <inheritdoc cref="FormatMessage(FORMAT_MESSAGE_OPTIONS, IntPtr, int, int, StringBuilder, int, IntPtr)"/>
+        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = Winapi, EntryPoint = nameof(FormatMessageA), SetLastError = true)]
         public static extern int FormatMessageA(
             FORMAT_MESSAGE_OPTIONS dwFlags,
             IntPtr lpSource,
@@ -208,7 +209,8 @@ namespace THNETII.WinApi.Native.WinBase
             int nSize,
             IntPtr Arguments
             );
-        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi, EntryPoint = nameof(FormatMessageW), SetLastError = true)]
+        /// <inheritdoc cref="FormatMessage(FORMAT_MESSAGE_OPTIONS, IntPtr, int, int, StringBuilder, int, IntPtr)"/>
+        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = Winapi, EntryPoint = nameof(FormatMessageW), SetLastError = true)]
         public static extern int FormatMessageW(
             FORMAT_MESSAGE_OPTIONS dwFlags,
             IntPtr lpSource,
@@ -327,14 +329,15 @@ namespace THNETII.WinApi.Native.WinBase
         /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
         public static int FormatMessage(
             FORMAT_MESSAGE_OPTIONS dwFlags,
-            [MarshalAs(UnmanagedType.LPWStr)] string lpSource,
+            string lpSource,
             int dwMessageId,
             int dwLanguageId,
-            [MarshalAs(UnmanagedType.LPWStr)] StringBuilder lpBuffer,
+            StringBuilder lpBuffer,
             int nSize,
             IntPtr Arguments
             ) => FormatMessageW(dwFlags, lpSource, dwMessageId, dwLanguageId, lpBuffer, nSize, Arguments);
-        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi, EntryPoint = nameof(FormatMessageA), SetLastError = true)]
+        /// <inheritdoc cref="FormatMessage(FORMAT_MESSAGE_OPTIONS, string, int, int, StringBuilder, int, IntPtr)"/>
+        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = Winapi, EntryPoint = nameof(FormatMessageA), SetLastError = true)]
         public static extern int FormatMessageA(
             FORMAT_MESSAGE_OPTIONS dwFlags,
             [MarshalAs(UnmanagedType.LPStr)] string lpSource,
@@ -344,7 +347,8 @@ namespace THNETII.WinApi.Native.WinBase
             int nSize,
             IntPtr Arguments
             );
-        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi, EntryPoint = nameof(FormatMessageW), SetLastError = true)]
+        /// <inheritdoc cref="FormatMessage(FORMAT_MESSAGE_OPTIONS, string, int, int, StringBuilder, int, IntPtr)"/>
+        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = Winapi, EntryPoint = nameof(FormatMessageW), SetLastError = true)]
         public static extern int FormatMessageW(
             FORMAT_MESSAGE_OPTIONS dwFlags,
             [MarshalAs(UnmanagedType.LPWStr)] string lpSource,
@@ -479,7 +483,8 @@ namespace THNETII.WinApi.Native.WinBase
             int nSize,
             IntPtr Arguments
             ) => FormatMessageW(dwFlags, lpSource, dwMessageId, dwLanguageId, out lpBuffer, nSize, Arguments);
-        //[DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi, EntryPoint = nameof(FormatMessageA), SetLastError = true)]
+        ///// <inheritdoc cref="FormatMessage(FORMAT_MESSAGE_OPTIONS, IntPtr, int, int, out WideStringPtr, int, IntPtr)"/>
+        //[DllImport(NativeLibraryNames.Kernel32, CallingConvention = Winapi, EntryPoint = nameof(FormatMessageA), SetLastError = true)]
         //public static extern int FormatMessageA(
         //    FORMAT_MESSAGE_OPTIONS dwFlags,
         //    IntPtr lpSource,
@@ -489,7 +494,8 @@ namespace THNETII.WinApi.Native.WinBase
         //    int nSize,
         //    IntPtr Arguments
         //    );
-        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi, EntryPoint = nameof(FormatMessageW), SetLastError = true)]
+        /// <inheritdoc cref="FormatMessage(FORMAT_MESSAGE_OPTIONS, IntPtr, int, int, out WideStringPtr, int, IntPtr)"/>
+        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = Winapi, EntryPoint = nameof(FormatMessageW), SetLastError = true)]
         public static extern int FormatMessageW(
             FORMAT_MESSAGE_OPTIONS dwFlags,
             IntPtr lpSource,
@@ -619,7 +625,8 @@ namespace THNETII.WinApi.Native.WinBase
             int nSize,
             IntPtr Arguments
             ) => FormatMessageW(dwFlags, lpSource, dwMessageId, dwLanguageId, out lpBuffer, nSize, Arguments);
-        //[DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi, EntryPoint = nameof(FormatMessageA), SetLastError = true)]
+        ///// <inheritdoc cref="FormatMessage(FORMAT_MESSAGE_OPTIONS, string, int, int, out WideStringPtr, int, IntPtr)"/>
+        //[DllImport(NativeLibraryNames.Kernel32, CallingConvention = Winapi, EntryPoint = nameof(FormatMessageA), SetLastError = true)]
         //public static extern int FormatMessageA(
         //    FORMAT_MESSAGE_OPTIONS dwFlags,
         //    [MarshalAs(UnmanagedType.LPStr)] string lpSource,
@@ -629,7 +636,8 @@ namespace THNETII.WinApi.Native.WinBase
         //    int nSize,
         //    IntPtr Arguments
         //    );
-        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi, EntryPoint = nameof(FormatMessageW), SetLastError = true)]
+        /// <inheritdoc cref="FormatMessage(FORMAT_MESSAGE_OPTIONS, string, int, int, out WideStringPtr, int, IntPtr)"/>
+        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = Winapi, EntryPoint = nameof(FormatMessageW), SetLastError = true)]
         public static extern int FormatMessageW(
             FORMAT_MESSAGE_OPTIONS dwFlags,
             [MarshalAs(UnmanagedType.LPWStr)] string lpSource,

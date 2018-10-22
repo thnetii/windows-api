@@ -7,6 +7,7 @@
 using System.Diagnostics.CodeAnalysis;
 
 [assembly: SuppressMessage("Interoperability", "CA1401: P/Invokes should not be visible")]
+[assembly: SuppressMessage("Usage", "PC003: Native API not available in UWP")]
 [assembly: SuppressMessage("Globalization", "CA2101: Specify marshaling for P/Invoke string arguments")]
 [assembly: SuppressMessage("Naming", "CA1707: Identifiers should not contain underscores")]
 [assembly: SuppressMessage("Design", "CA1051: Do not declare visible instance fields")]

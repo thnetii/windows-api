@@ -9,13 +9,13 @@ using EntryPointNotFoundException = System.Exception;
 
 namespace THNETII.WinApi.Native.WinBase
 {
+    using static CallingConvention;
     using static FORMAT_MESSAGE_FLAGS;
-    using static SYSTEM_ERROR_MODE;
     using static WinError.WinErrorConstants;
 
     public static class WinBaseFunctions
     {
-        // C:\Program Files(x86)\Windows Kits\10\Include\10.0.17134.0\um\WinBase.h, line 116
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\WinBase.h, line 116
         #region CaptureStackBackTrace function
         /// <summary>
         /// Captures a stack back trace by walking up the stack and recording the information for each frame.
@@ -49,6 +49,31 @@ namespace THNETII.WinApi.Native.WinBase
             out ArrayOfIntPtr BackTrace,
             out int BackTraceHash
             ) => WinNT.WinNTFunctions.RtlCaptureStackBackTrace(FramesToSkip, FramesToCapture, out BackTrace, out BackTraceHash);
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\WinBase.h, line 1350
+        #region FatalExit function
+        /// <summary>
+        /// Transfers execution control to the debugger. The behavior of the debugger thereafter is specific to the type of debugger used.
+        /// </summary>
+        /// <param name="ExitCode">The error code associated with the exit.</param>
+        /// <remarks>
+        /// An application should only use <see cref="FatalExit"/> for debugging purposes. It should not call the function in a retail version of the application because doing so will terminate the application.
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows XP [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/winbase/nf-winbase-fatalexit">FatalExit function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="M:THNETII.WinApi.Native.ErrHandlingApi.ErrHandlingApiFunctions.FatalAppExit(System.Int32,System.String)"/>
+        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = Winapi)]
+        public static extern void FatalExit(
+            int ExitCode
+            );
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\WinBase.h, line 2382
         #region FormatMessage function

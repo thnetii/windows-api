@@ -2,77 +2,20 @@
 using System.Runtime.InteropServices;
 using System.Text;
 using THNETII.InteropServices.NativeMemory.Specialized;
-using THNETII.WinApi.Native.WinBase;
-using THNETII.WinApi.Native.WinUser;
 
 #if NETSTANDARD1_3
 using EntryPointNotFoundException = System.Exception;
 #endif
 
-namespace THNETII.WinApi.Native.ErrorHandling
+namespace THNETII.WinApi.Native.WinBase
 {
-    using static WinBase.FORMAT_MESSAGE_FLAGS;
-    using static WinBase.SYSTEM_ERROR_MODE;
-    using static WinUser.MB_ICON;
+    using static FORMAT_MESSAGE_FLAGS;
+    using static SYSTEM_ERROR_MODE;
     using static WinError.WinErrorConstants;
 
-    /// <summary>
-    /// Defines the native P/Invoke functions used with error handling.
-    /// </summary>
-    /// <remarks>
-    /// <para>See Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/debug/error-handling-functions">Error Handling Functions</a></para>
-    /// </remarks>
-    public static class ErrorHandlingFunctions
+    public static class WinBaseFunctions
     {
-        #region Beep function
-        /// <summary>
-        /// Generates simple tones on the speaker. The function is synchronous; it performs an alertable wait and does not return control to its caller until the sound finishes.
-        /// </summary>
-        /// <param name="dwFreq">The frequency of the sound, in hertz. This parameter must be in the range 37 through 32,767 (<c>0x25</c> through <c>0x7FFF</c>). </param>
-        /// <param name="dwDuration">The duration of the sound, in milliseconds.</param>
-        /// <returns>
-        /// <para>If the function succeeds, the return value is <c>true</c>.</para>
-        /// <para>If the function fails, the return value is <c>false</c>. To get extended error information, call <see cref="Marshal.GetLastWin32Error"/>.</para>
-        /// </returns>
-        /// <remarks>
-        /// <para>
-        /// A long time ago, all PC computers shared a common 8254 programable interval timer chip for the generation of primitive sounds. The <see cref="Beep"/> function was written specifically to emit a beep on that piece of hardware.
-        /// </para>
-        /// <para>
-        /// On these older systems, muting and volume controls have no effect on Beep; you would still hear the tone. To silence the tone, you used the following commands:
-        /// <code>
-        /// net stop beep
-        /// sc config beep start= disabled
-        /// </code>
-        /// </para>
-        /// <para>
-        /// Since then, sound cards have become standard equipment on almost all PC computers. As sound cards became more common, manufacturers began to remove the old timer chip from computers. The chips were also excluded from the design of server computers. The result is that <see cref="Beep"/> did not work on all computers without the chip. This was okay because most developers had moved on to calling the <see cref="MessageBeep"/> function that uses whatever is the default sound device instead of the 8254 chip. 
-        /// </para>
-        /// <para>
-        /// Eventually because of the lack of hardware to communicate with, support for <see cref="Beep"/> was dropped in Windows Vista and Windows XP 64-Bit Edition.
-        /// </para>
-        /// <para>
-        /// In Windows 7, <see cref="Beep"/> was rewritten to pass the beep to the default sound device for the session. This is normally the sound card, except when run under Terminal Services, in which case the beep is rendered on the client.
-        /// </para>
-        /// <para>
-        /// <list type="table">
-        /// <listheader><term>Requirements</term></listheader>
-        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows XP [desktop apps | UWP apps]</description></item>
-        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps | UWP apps]</description></item>
-        /// </list>
-        /// </para>
-        /// <para>Microsoft Docs page: <a href="https://msdn.microsoft.com/en-us/library/ms679277.aspx">Beep function</a></para>
-        /// </remarks>
-        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
-        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
-        /// <seealso cref="MessageBeep"/>
-        [return: MarshalAs(UnmanagedType.Bool)]
-        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
-        public static extern bool Beep(
-            [In] int dwFreq,
-            [In] int dwDuration
-            );
-        #endregion
+        // C:\Program Files(x86)\Windows Kits\10\Include\10.0.17134.0\um\WinBase.h, line 116
         #region CaptureStackBackTrace function
         /// <summary>
         /// Captures a stack back trace by walking up the stack and recording the information for each frame.
@@ -100,136 +43,14 @@ namespace THNETII.WinApi.Native.ErrorHandling
         /// </remarks>
         /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
         /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
-        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi)]
-        public static extern ushort CaptureStackBackTrace(
-            [In] int FramesToSkip,
-            [In] int FramesToCapture,
+        public static ushort CaptureStackBackTrace(
+            int FramesToSkip,
+            int FramesToCapture,
             out ArrayOfIntPtr BackTrace,
-            [Optional] out int BackTraceHash
-            );
+            out int BackTraceHash
+            ) => WinNT.WinNTFunctions.RtlCaptureStackBackTrace(FramesToSkip, FramesToCapture, out BackTrace, out BackTraceHash);
         #endregion
-        #region RtlCaptureStackBackTrace function
-        /// <summary>
-        /// Captures a stack back trace by walking up the stack and recording the information for each frame.
-        /// </summary>
-        /// <param name="FramesToSkip">The number of frames to skip from the start of the back trace.</param>
-        /// <param name="FramesToCapture">
-        /// The number of frames to be captured. You can capture up to the <see cref="ushort.MaxValue"/> of the <see cref="ushort"/> type frames.
-        /// <para><strong>Windows Server 2003 and Windows XP:</strong> The sum of the <paramref name="FramesToSkip"/> and <paramref name="FramesToCapture"/> parameters must be less than <c>63</c>.</para>
-        /// </param>
-        /// <param name="BackTrace">Receives a pointer to an array of stack frame pointers from the current stack trace.</param>
-        /// <param name="BackTraceHash">
-        /// A value that can be used to organize hash tables. The value is optional and can be ignored or discarded.
-        /// <para>This value is calculated based on the values of the pointers returned in the <paramref name="BackTrace"/> array. Two identical stack traces will generate identical hash values.</para>
-        /// </param>
-        /// <returns>The number of captured frames.</returns>
-        /// <remarks>
-        /// <para>
-        /// <list type="table">
-        /// <listheader><term>Requirements</term></listheader>
-        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows Vista [desktop apps | UWP apps]</description></item>
-        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2008 [desktop apps | UWP apps]</description></item>
-        /// </list>
-        /// </para>
-        /// <para>Microsoft Docs page: <a href="https://msdn.microsoft.com/en-us/library/Bb204633.aspx">CaptureStackBackTrace function</a></para>
-        /// </remarks>
-        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
-        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
-        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi)]
-        public static extern ushort RtlCaptureStackBackTrace(
-            [In] int FramesToSkip,
-            [In] int FramesToCapture,
-            out ArrayOfIntPtr BackTrace,
-            [Optional] out int BackTraceHash
-            );
-        #endregion
-        #region FatalAppExit function
-        /// <summary>
-        /// Displays a message box and terminates the application when the message box is closed. If the system is running with a debug version of Kernel32.dll, the message box gives the user the opportunity to terminate the application or to cancel the message box and return to the application that called <see cref="FatalAppExit"/>.
-        /// </summary>
-        /// <param name="uAction">This parameter must be <c>0</c> (zero).</param>
-        /// <param name="lpMessageText">The string that is displayed in the message box.</param>
-        /// <remarks>
-        /// An application calls <see cref="FatalAppExit"/> only when it is not capable of terminating any other way. 
-        /// <para>
-        /// <list type="table">
-        /// <listheader><term>Requirements</term></listheader>
-        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows XP [desktop apps | UWP apps]</description></item>
-        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps | UWP apps]</description></item>
-        /// </list>
-        /// </para>
-        /// <para>Microsoft Docs page: <a href="https://msdn.microsoft.com/en-us/library/ms679336.aspx">FatalAppExit function</a></para>
-        /// </remarks>
-        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
-        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
-        /// <seealso cref="FatalExit"/>
-        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi, EntryPoint = nameof(FatalAppExit) + "W")]
-        public static extern void FatalAppExit(
-            [In] int uAction,
-            [In, MarshalAs(UnmanagedType.LPWStr)] string lpMessageText
-            );
-        #endregion
-        #region FlashWindow function
-        /// <summary>
-        /// <para>Flashes the specified window one time. It does not change the active state of the window.</para>
-        /// <para>To flash the window a specified number of times, use the <see cref="FlashWindowEx"/> function.</para>
-        /// </summary>
-        /// <param name="hWnd">A handle to the window to be flashed. The window can be either open or minimized.</param>
-        /// <param name="bInvert">
-        /// <para>If this parameter is <c>true</c>, the window is flashed from one state to the other. If it is <c>false</c>, the window is returned to its original state (either active or inactive).</para>
-        /// <para>When an application is minimized and this parameter is <c>true</c>, the taskbar window button flashes active/inactive. If it is <c>false</c>, the taskbar window button flashes inactive, meaning that it does not change colors. It flashes, as if it were being redrawn, but it does not provide the visual invert clue to the user.</para>
-        /// </param>
-        /// <returns>
-        /// The return value specifies the window's state before the call to the FlashWindow function. If the window caption was drawn as active before the call, the return value is <c>true</c>. Otherwise, the return value is <c>false</c>.
-        /// </returns>
-        /// <remarks>
-        /// <para>Flashing a window means changing the appearance of its caption bar as if the window were changing from inactive to active status, or vice versa. (An inactive caption bar changes to an active caption bar; an active caption bar changes to an inactive caption bar.)</para>
-        /// <para>Typically, a window is flashed to inform the user that the window requires attention but that it does not currently have the keyboard focus.</para>
-        /// <para>The <see cref="FlashWindow"/> function flashes the window only once; for repeated flashing, the application should create a system timer.</para>
-        /// <para>
-        /// <list type="table">
-        /// <listheader><term>Requirements</term></listheader>
-        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows XP [desktop apps | UWP apps]</description></item>
-        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps | UWP apps]</description></item>
-        /// </list>
-        /// </para>
-        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/Winuser/nf-winuser-flashwindow">FlashWindow function</a></para>
-        /// </remarks>
-        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
-        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
-        [return: MarshalAs(UnmanagedType.Bool)]
-        [DllImport(NativeLibraryNames.User32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
-        public static extern bool FlashWindow(
-            IntPtr hWnd,
-            [MarshalAs(UnmanagedType.Bool)] bool bInvert
-            );
-        #endregion
-        #region FlashWindowEx function
-        /// <summary>
-        /// Flashes the specified window. It does not change the active state of the window.
-        /// </summary>
-        /// <param name="pfwi">A <see cref="FLASHWINFO"/> structure.</param>
-        /// <returns>The return value specifies the window's state before the call to the <see cref="FlashWindowEx"/> function. If the window caption was drawn as active before the call, the return value is <c>true</c>. Otherwise, the return value is <c>false</c>.</returns>
-        /// <remarks>
-        /// Typically, you flash a window to inform the user that the window requires attention but does not currently have the keyboard focus. When a window flashes, it appears to change from inactive to active status. An inactive caption bar changes to an active caption bar; an active caption bar changes to an inactive caption bar.
-        /// <para>
-        /// <list type="table">
-        /// <listheader><term>Requirements</term></listheader>
-        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows XP [desktop apps | UWP apps]</description></item>
-        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps | UWP apps]</description></item>
-        /// </list>
-        /// </para>
-        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/Winuser/nf-winuser-flashwindowex">FlashWindowEx function</a></para>
-        /// </remarks>
-        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
-        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
-        /// <seealso cref="FLASHWINFO"/>
-        [return: MarshalAs(UnmanagedType.Bool)]
-        [DllImport(NativeLibraryNames.User32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
-        public static extern bool FlashWindowEx(
-            in FLASHWINFO pfwi
-            );
-        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\WinBase.h, line 2382
         #region FormatMessage function
         /// <summary>
         /// Formats a message string. The function requires a message definition as input.
@@ -343,8 +164,27 @@ namespace THNETII.WinApi.Native.ErrorHandling
         /// </remarks>
         /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
         /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
-        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi, EntryPoint = nameof(FormatMessage) + "W", SetLastError = true)]
-        public static extern int FormatMessage(
+        public static int FormatMessage(
+            FORMAT_MESSAGE_OPTIONS dwFlags,
+            IntPtr lpSource,
+            int dwMessageId,
+            int dwLanguageId,
+            StringBuilder lpBuffer,
+            int nSize,
+            IntPtr Arguments
+            ) => FormatMessageW(dwFlags, lpSource, dwMessageId, dwLanguageId, lpBuffer, nSize, Arguments);
+        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi, EntryPoint = nameof(FormatMessageA), SetLastError = true)]
+        public static extern int FormatMessageA(
+            FORMAT_MESSAGE_OPTIONS dwFlags,
+            IntPtr lpSource,
+            int dwMessageId,
+            int dwLanguageId,
+            [MarshalAs(UnmanagedType.LPStr)] StringBuilder lpBuffer,
+            int nSize,
+            IntPtr Arguments
+            );
+        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi, EntryPoint = nameof(FormatMessageW), SetLastError = true)]
+        public static extern int FormatMessageW(
             FORMAT_MESSAGE_OPTIONS dwFlags,
             IntPtr lpSource,
             int dwMessageId,
@@ -460,8 +300,27 @@ namespace THNETII.WinApi.Native.ErrorHandling
         /// </remarks>
         /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
         /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
-        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi, EntryPoint = nameof(FormatMessage) + "W", SetLastError = true)]
-        public static extern int FormatMessage(
+        public static int FormatMessage(
+            FORMAT_MESSAGE_OPTIONS dwFlags,
+            [MarshalAs(UnmanagedType.LPWStr)] string lpSource,
+            int dwMessageId,
+            int dwLanguageId,
+            [MarshalAs(UnmanagedType.LPWStr)] StringBuilder lpBuffer,
+            int nSize,
+            IntPtr Arguments
+            ) => FormatMessageW(dwFlags, lpSource, dwMessageId, dwLanguageId, lpBuffer, nSize, Arguments);
+        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi, EntryPoint = nameof(FormatMessageA), SetLastError = true)]
+        public static extern int FormatMessageA(
+            FORMAT_MESSAGE_OPTIONS dwFlags,
+            [MarshalAs(UnmanagedType.LPStr)] string lpSource,
+            int dwMessageId,
+            int dwLanguageId,
+            [MarshalAs(UnmanagedType.LPStr)] StringBuilder lpBuffer,
+            int nSize,
+            IntPtr Arguments
+            );
+        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi, EntryPoint = nameof(FormatMessageW), SetLastError = true)]
+        public static extern int FormatMessageW(
             FORMAT_MESSAGE_OPTIONS dwFlags,
             [MarshalAs(UnmanagedType.LPWStr)] string lpSource,
             int dwMessageId,
@@ -586,8 +445,27 @@ namespace THNETII.WinApi.Native.ErrorHandling
         /// </remarks>
         /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
         /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
-        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi, EntryPoint = nameof(FormatMessage) + "W", SetLastError = true)]
-        public static extern int FormatMessage(
+        public static int FormatMessage(
+            FORMAT_MESSAGE_OPTIONS dwFlags,
+            IntPtr lpSource,
+            int dwMessageId,
+            int dwLanguageId,
+            out WideStringPtr lpBuffer,
+            int nSize,
+            IntPtr Arguments
+            ) => FormatMessageW(dwFlags, lpSource, dwMessageId, dwLanguageId, out lpBuffer, nSize, Arguments);
+        //[DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi, EntryPoint = nameof(FormatMessageA), SetLastError = true)]
+        //public static extern int FormatMessageA(
+        //    FORMAT_MESSAGE_OPTIONS dwFlags,
+        //    IntPtr lpSource,
+        //    int dwMessageId,
+        //    int dwLanguageId,
+        //    out AnsiStringPtr lpBuffer,
+        //    int nSize,
+        //    IntPtr Arguments
+        //    );
+        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi, EntryPoint = nameof(FormatMessageW), SetLastError = true)]
+        public static extern int FormatMessageW(
             FORMAT_MESSAGE_OPTIONS dwFlags,
             IntPtr lpSource,
             int dwMessageId,
@@ -707,8 +585,27 @@ namespace THNETII.WinApi.Native.ErrorHandling
         /// </remarks>
         /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
         /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
-        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi, EntryPoint = nameof(FormatMessage) + "W", SetLastError = true)]
-        public static extern int FormatMessage(
+        public static int FormatMessage(
+            FORMAT_MESSAGE_OPTIONS dwFlags,
+            string lpSource,
+            int dwMessageId,
+            int dwLanguageId,
+            out WideStringPtr lpBuffer,
+            int nSize,
+            IntPtr Arguments
+            ) => FormatMessageW(dwFlags, lpSource, dwMessageId, dwLanguageId, out lpBuffer, nSize, Arguments);
+        //[DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi, EntryPoint = nameof(FormatMessageA), SetLastError = true)]
+        //public static extern int FormatMessageA(
+        //    FORMAT_MESSAGE_OPTIONS dwFlags,
+        //    [MarshalAs(UnmanagedType.LPStr)] string lpSource,
+        //    int dwMessageId,
+        //    int dwLanguageId,
+        //    out AnsiStringPtr lpBuffer,
+        //    int nSize,
+        //    IntPtr Arguments
+        //    );
+        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi, EntryPoint = nameof(FormatMessageW), SetLastError = true)]
+        public static extern int FormatMessageW(
             FORMAT_MESSAGE_OPTIONS dwFlags,
             [MarshalAs(UnmanagedType.LPWStr)] string lpSource,
             int dwMessageId,
@@ -716,284 +613,6 @@ namespace THNETII.WinApi.Native.ErrorHandling
             out WideStringPtr lpBuffer,
             int nSize,
             IntPtr Arguments
-            );
-        #endregion
-        #region GetErrorMode function
-        /// <summary>
-        /// Retrieves the error mode for the current process.
-        /// </summary>
-        /// <returns>The process error mode.</returns>
-        /// <remarks>
-        /// <para>Each process has an associated error mode that indicates to the system how the application is going to respond to serious errors. A child process inherits the error mode of its parent process.</para>
-        /// <para>To change the error mode for the process, use the <see cref="SetErrorMode"/> function.</para>
-        /// <para>
-        /// <strong>Windows 7:</strong><br/>
-        /// Callers should favor <see cref="SetThreadErrorMode"/> over <see cref="SetErrorMode"/> since it is less disruptive to the normal behavior of the system. <see cref="GetThreadErrorMode"/> is the call function that corresponds to <see cref="GetErrorMode"/>.
-        /// </para>
-        /// <para>
-        /// <list type="table">
-        /// <listheader><term>Requirements</term></listheader>
-        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows Vista [desktop apps only]</description></item>
-        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2008 [desktop apps only]</description></item>
-        /// </list>
-        /// </para>
-        /// <para>Microsoft Docs page: <a href="https://msdn.microsoft.com/en-us/library/ms679355.aspx">GetErrorMode function</a></para>
-        /// </remarks>
-        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
-        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
-        /// <seealso cref="SetErrorMode"/>
-        /// <seealso cref="GetThreadErrorMode"/>
-        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi)]
-        [return: MarshalAs(UnmanagedType.I4)]
-        public static extern SYSTEM_ERROR_MODE GetErrorMode();
-        #endregion
-        #region GetLastError function
-        /// <summary>
-        /// Retrieves the calling thread's last-error code value. The last-error code is maintained on a per-thread basis. Multiple threads do not overwrite each other's last-error code.
-        /// </summary>
-        /// <returns>
-        /// <para>The return value is the calling thread's last-error code.</para>
-        /// <para>The Return Value section of the documentation for each function that sets the last-error code notes the conditions under which the function sets the last-error code. Most functions that set the thread's last-error code set it when they fail. However, some functions also set the last-error code when they succeed. If the function is not documented to set the last-error code, the value returned by this function is simply the most recent last-error code to have been set; some functions set the last-error code to <c>0</c> (zero) on success and others do not.</para>
-        /// </returns>
-        /// <remarks>
-        /// <para>Functions executed by the calling thread set this value by calling the <see cref="SetLastError"/> function. You should call the <see cref="GetLastError"/> function immediately when a function's return value indicates that such a call will return useful data. That is because some functions call <see cref="SetLastError"/> with a zero when they succeed, wiping out the error code set by the most recently failed function.</para>
-        /// <para>To obtain an error string for system error codes, use the <see cref="FormatMessage(FORMAT_MESSAGE_OPTIONS, IntPtr, int, int, StringBuilder, int, IntPtr)"/> function. For a complete list of error codes provided by the operating system, see <a href="https://msdn.microsoft.com/en-us/library/ms681381.aspx">System Error Codes</a>.</para>
-        /// <para>The error codes returned by a function are not part of the Windows API specification and can vary by operating system or device driver. For this reason, we cannot provide the complete list of error codes that can be returned by each function. There are also many functions whose documentation does not include even a partial list of error codes that can be returned.</para>
-        /// <para>Error codes are 32-bit values (bit 31 is the most significant bit). Bit 29 is reserved for application-defined error codes; no system error code has this bit set. If you are defining an error code for your application, set this bit to one. That indicates that the error code has been defined by an application, and ensures that your error code does not conflict with any error codes defined by the system.</para>
-        /// <para>To convert a system error into an <see cref="T:THNETII.WindowsProtocols.WindowsErrorCodes.HRESULT"/> value, use the <see cref="M:THNETII.WindowsProtocols.WindowsErrorCodes.HRESULT.FromWin32(System.Int32)"/> function.</para>
-        /// <para>
-        /// <list type="table">
-        /// <listheader><term>Requirements</term></listheader>
-        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows XP [desktop apps | UWP apps]</description></item>
-        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps | UWP apps]</description></item>
-        /// <item><term><strong>Minimum supported phone:</strong></term><description>Windows Phone 8</description></item>
-        /// </list>
-        /// </para>
-        /// <para>Microsoft Docs page: <a href="https://msdn.microsoft.com/en-us/library/ms679360.aspx">GetLastError function</a></para>
-        /// </remarks>
-        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
-        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
-        /// <seealso cref="FormatMessage(FORMAT_MESSAGE_OPTIONS, IntPtr, int, int, StringBuilder, int, IntPtr)"/>
-        /// <seealso cref="M:THNETII.WindowsProtocols.WindowsErrorCodes.HRESULT.FromWin32(System.Int32)"/>
-        /// <seealso cref="SetLastError"/>
-        /// <seealso cref="SetLastErrorEx"/>
-        [Obsolete(".NET Applications should not call " + nameof(GetLastError) + ". Instead the static System.Runtime.InteropServices.Marshal.GetLastWin32Error() method should be used.")]
-        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi)]
-        public static extern int GetLastError();
-        #endregion
-        #region GetThreadErrorMode function
-        /// <summary>
-        /// Retrieves the error mode for the calling thread.
-        /// </summary>
-        /// <returns>The process error mode for the calling thread.</returns>
-        /// <remarks>
-        /// A thread inherits the error mode of the process in which it is running. To change the error mode for the thread, use the <see cref="SetThreadErrorMode"/> function. 
-        /// <para>
-        /// <list type="table">
-        /// <listheader><term>Requirements</term></listheader>
-        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows 7 [desktop apps | UWP apps]</description></item>
-        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2008 R2 [desktop apps | UWP apps]</description></item>
-        /// </list>
-        /// </para>
-        /// <para>Microsoft Docs page: <a href="https://msdn.microsoft.com/en-us/library/Dd553629.aspx">GetThreadErrorMode function</a></para>
-        /// </remarks>
-        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
-        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
-        /// <seealso cref="GetErrorMode"/>
-        /// <seealso cref="SetThreadErrorMode"/>
-        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi)]
-        [return: MarshalAs(UnmanagedType.I4)]
-        public static extern SYSTEM_ERROR_MODE GetThreadErrorMode();
-        #endregion
-        #region MessageBeep function
-        /// <summary>
-        /// Plays a waveform sound. The waveform sound for each sound type is identified by an entry in the registry.
-        /// </summary>
-        /// <param name="uType">
-        /// <para>The sound to be played. The sounds are set by the user through the Sound control panel application, and then stored in the registry.</para>
-        /// <para>
-        /// This parameter can be one of the following values.
-        /// <list type="table">
-        /// <listheader><term>Value</term><description>Meaning</description></listheader>
-        /// <item><term><c>(<see cref="MB_ICON"/>)0xFFFFFFFF</c></term><description>A simple beep. If the sound card is not available, the sound is generated using the speaker. </description></item>
-        /// <item><term><see cref="MB_ICONASTERISK"/></term><description>See <see cref="MB_ICONINFORMATION"/>.</description></item>
-        /// <item><term><see cref="MB_ICONEXCLAMATION"/></term><description>See <see cref="MB_ICONWARNING"/>.</description></item>
-        /// <item><term><see cref="MB_ICONERROR"/></term><description>The sound specified as the Windows Critical Stop sound. </description></item>
-        /// <item><term><see cref="MB_ICONHAND"/></term><description>See <see cref="MB_ICONERROR"/>. </description></item>
-        /// <item><term><see cref="MB_ICONINFORMATION"/></term><description>The sound specified as the Windows Asterisk sound. </description></item>
-        /// <item><term><see cref="MB_ICONQUESTION"/></term><description>The sound specified as the Windows Question sound. </description></item>
-        /// <item><term><see cref="MB_ICONSTOP"/></term><description>See <see cref="MB_ICONERROR"/>. </description></item>
-        /// <item><term><see cref="MB_ICONWARNING"/></term><description>The sound specified as the Windows Exclamation sound. </description></item>
-        /// <item><term><c>(<see cref="MB_ICON"/>)0</c></term><description>The sound specified as the Windows Default Beep sound. </description></item>
-        /// </list>
-        /// </para>
-        /// </param>
-        /// <returns>
-        /// <para>If the function succeeds, the return value is <c>true</c>.</para>
-        /// <para>If the function fails, the return value is <c>false</c>. To get extended error information, call <see cref="Marshal.GetLastWin32Error"/>.</para>
-        /// </returns>
-        /// <remarks>
-        /// <para>After queuing the sound, the <see cref="MessageBeep"/> function returns control to the calling function and plays the sound asynchronously.</para>
-        /// <para>If it cannot play the specified alert sound, <see cref="MessageBeep"/> attempts to play the system default sound. If it cannot play the system default sound, the function produces a standard beep sound through the computer speaker.</para>
-        /// <para>The user can disable the warning beep by using the Sound control panel application.</para>
-        /// <para><strong>Note:</strong> To send a beep to a remote client, use the <see cref="Beep"/> function. The <see cref="Beep"/> function is redirected to the client, whereas <see cref="MessageBeep"/> is not.</para>
-        /// <para>
-        /// <list type="table">
-        /// <listheader><term>Requirements</term></listheader>
-        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows XP [desktop apps only]</description></item>
-        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps only]</description></item>
-        /// </list>
-        /// </para>
-        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/WinUser/nf-winuser-messagebeep">MessageBeep function</a></para>
-        /// </remarks>
-        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
-        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
-        /// <seealso cref="Beep"/>
-        /// <seealso cref="FlashWindow"/>
-        [DllImport(NativeLibraryNames.User32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
-        [return: MarshalAs(UnmanagedType.Bool)]
-        public static extern bool MessageBeep(
-            [MarshalAs(UnmanagedType.I4)] MB_ICON uType
-            );
-        #endregion
-        #region SetErrorMode function
-        /// <summary>
-        /// Controls whether the system will handle the specified types of serious errors or whether the process will handle them.
-        /// </summary>
-        /// <param name="uMode">
-        /// The process error mode. This parameter can be one or more of the following values.
-        /// <list type="table">
-        /// <listheader><term>Value</term><description>Meaning</description></listheader>
-        /// <item><term><c>0</c> (zero)<br/><c>default(<see cref="SYSTEM_ERROR_MODE"/>)</c></term><description>Use the system default, which is to display all error dialog boxes.</description></item>
-        /// <item><term><see cref="SEM_FAILCRITICALERRORS"/></term><description><para>The system does not display the critical-error-handler message box. Instead, the system sends the error to the calling process.</para>Best practice is that all applications call the process-wide <see cref="SetErrorMode"/> function with a parameter of <see cref="SEM_FAILCRITICALERRORS"/> at startup. This is to prevent error mode dialogs from hanging the application.<para></para></description></item>
-        /// <item><term><see cref="SEM_NOALIGNMENTFAULTEXCEPT"/></term><description><para>The system automatically fixes memory alignment faults and makes them invisible to the application. It does this for the calling process and any descendant processes. This feature is only supported by certain processor architectures. For more information, see the Remarks section. </para>After this value is set for a process, subsequent attempts to clear the value are ignored.<para></para></description></item>
-        /// <item><term><see cref="SEM_NOGPFAULTERRORBOX"/></term><description>The system does not display the Windows Error Reporting dialog.</description></item>
-        /// <item><term><see cref="SEM_NOOPENFILEERRORBOX"/></term><description>The <see cref="OpenFile"/> function does not display a message box when it fails to find a file. Instead, the error is returned to the caller. This error mode overrides the <see cref="OF_PROMPT"/> flag.</description></item>
-        /// </list>
-        /// </param>
-        /// <returns>The return value is the previous state of the error-mode bit flags.</returns>
-        /// <remarks>
-        /// <para>Each process has an associated error mode that indicates to the system how the application is going to respond to serious errors. A child process inherits the error mode of its parent process. To retrieve the process error mode, use the <see cref="GetErrorMode"/> function.</para>
-        /// <para>Because the error mode is set for the entire process, you must ensure that multi-threaded applications do not set different error-mode flags. Doing so can lead to inconsistent error handling.</para>
-        /// <para>The system does not make alignment faults visible to an application on all processor architectures. Therefore, specifying <see cref="SEM_NOALIGNMENTFAULTEXCEPT"/> is not an error on such architectures, but the system is free to silently ignore the request.</para>
-        /// <para><strong>Windows 7:</strong><br/>Callers should favor <see cref="SetThreadErrorMode"/> over <see cref="SetErrorMode"/> since it is less disruptive to the normal behavior of the system. </para>
-        /// <para>
-        /// <list type="table">
-        /// <listheader><term>Requirements</term></listheader>
-        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows XP [desktop apps | UWP apps]</description></item>
-        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps | UWP apps]</description></item>
-        /// </list>
-        /// </para>
-        /// <para>Microsoft Docs page: <a href="https://msdn.microsoft.com/en-us/library/ms680621.aspx">SetErrorMode function</a></para>
-        /// </remarks>
-        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
-        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
-        /// <seealso cref="GetErrorMode"/>
-        /// <seealso cref="SetThreadErrorMode"/>
-        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi)]
-        [return: MarshalAs(UnmanagedType.I4)]
-        public static extern SYSTEM_ERROR_MODE SetErrorMode(
-            SYSTEM_ERROR_MODE uMode
-            );
-        #endregion
-        #region SetLastError function
-        /// <summary>
-        /// Sets the last-error code for the calling thread.
-        /// </summary>
-        /// <param name="dwErrCode">The last-error code for the thread.</param>
-        /// <remarks>
-        /// <para>The last-error code is kept in thread local storage so that multiple threads do not overwrite each other's values.</para>
-        /// <para>Most functions call <see cref="SetLastError"/> or <see cref="SetLastErrorEx"/> only when they fail. However, some system functions call <see cref="SetLastError"/> or <see cref="SetLastErrorEx"/> under conditions of success; those cases are noted in each function's documentation.</para>
-        /// <para>Applications can optionally retrieve the value set by this function by using the <see cref="Marshal.GetLastWin32Error"/> function immediately after a function fails.</para>
-        /// <para>Error codes are 32-bit values (bit 31 is the most significant bit). Bit 29 is reserved for application-defined error codes; no system error code has this bit set. If you are defining an error code for your application, set this bit to indicate that the error code has been defined by your application and to ensure that your error code does not conflict with any system-defined error codes.</para>
-        /// <para>
-        /// <list type="table">
-        /// <listheader><term>Requirements</term></listheader>
-        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows XP [desktop apps | UWP apps]</description></item>
-        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps | UWP apps]</description></item>
-        /// </list>
-        /// </para>
-        /// <para>Microsoft Docs page: <a href="https://msdn.microsoft.com/en-us/library/ms680627.aspx">SetLastError function</a></para>
-        /// </remarks>
-        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
-        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
-        /// <seealso cref="Marshal.GetLastWin32Error"/>
-        /// <seealso cref="SetLastErrorEx"/>
-        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
-        public static extern void SetLastError(
-            [In] int dwErrCode
-            );
-        #endregion
-        #region SetLastErrorEx function
-        /// <summary>
-        /// <para>Sets the last-error code.</para>
-        /// <para>Currently, this function is identical to the <see cref="SetLastError"/> function. The second parameter is ignored.</para>
-        /// </summary>
-        /// <param name="dwErrCode">The last-error code for the thread.</param>
-        /// <param name="dwType">This parameter is ignored.</param>
-        /// <remarks>
-        /// <para>The last-error code is kept in thread local storage so that multiple threads do not overwrite each other's values.</para>
-        /// <para>Most functions call <see cref="SetLastError"/> or <see cref="SetLastErrorEx"/> only when they fail. However, some system functions call <see cref="SetLastError"/> or <see cref="SetLastErrorEx"/> under conditions of success; those cases are noted in each function's documentation.</para>
-        /// <para>Applications can optionally retrieve the value set by this function by using the <see cref="Marshal.GetLastWin32Error"/> function immediately after a function fails.</para>
-        /// <para>Error codes are 32-bit values (bit 31 is the most significant bit). Bit 29 is reserved for application-defined error codes; no system error code has this bit set. If you are defining an error code for your application, set this bit to indicate that the error code has been defined by your application and to ensure that your error code does not conflict with any system-defined error codes.</para>
-        /// <para>
-        /// <list type="table">
-        /// <listheader><term>Requirements</term></listheader>
-        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows XP [desktop apps only]</description></item>
-        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps only]</description></item>
-        /// </list>
-        /// </para>
-        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/Winuser/nf-winuser-setlasterrorex">SetLastErrorEx function</a></para>
-        /// </remarks>
-        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
-        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
-        /// <seealso cref="Marshal.GetLastWin32Error"/>
-        [DllImport(NativeLibraryNames.User32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
-        public static extern void SetLastErrorEx(
-            [In] int dwErrCode,
-            [In] SLE_TYPE dwType
-            );
-        #endregion
-        #region SetThreadErrorMode function
-        /// <summary>
-        /// Controls whether the system will handle the specified types of serious errors or whether the calling thread will handle them. 
-        /// </summary>
-        /// <param name="dwNewMode">
-        /// The process error mode. This parameter can be one or more of the following values.
-        /// <list type="table">
-        /// <listheader><term>Value</term><description>Meaning</description></listheader>
-        /// <item><term><c>0</c> (zero)<br/><c>default(<see cref="SYSTEM_ERROR_MODE"/>)</c></term><description>Use the system default, which is to display all error dialog boxes.</description></item>
-        /// <item><term><see cref="SEM_FAILCRITICALERRORS"/></term><description><para>The system does not display the critical-error-handler message box. Instead, the system sends the error to the calling process.</para>Best practice is that all applications call the process-wide <see cref="SetErrorMode"/> function with a parameter of <see cref="SEM_FAILCRITICALERRORS"/> at startup. This is to prevent error mode dialogs from hanging the application.<para></para></description></item>
-        /// <item><term><see cref="SEM_NOALIGNMENTFAULTEXCEPT"/></term><description><para>The system automatically fixes memory alignment faults and makes them invisible to the application. It does this for the calling process and any descendant processes. This feature is only supported by certain processor architectures. For more information, see the Remarks section. </para>After this value is set for a process, subsequent attempts to clear the value are ignored.<para></para></description></item>
-        /// <item><term><see cref="SEM_NOGPFAULTERRORBOX"/></term><description>The system does not display the Windows Error Reporting dialog.</description></item>
-        /// <item><term><see cref="SEM_NOOPENFILEERRORBOX"/></term><description>The <see cref="OpenFile"/> function does not display a message box when it fails to find a file. Instead, the error is returned to the caller. This error mode overrides the <see cref="OF_PROMPT"/> flag.</description></item>
-        /// </list>
-        /// </param>
-        /// <param name="lpOldMode">If the function succeeds, this parameter is set to the thread's previous error mode.</param>
-        /// <returns>
-        /// <para>If the function succeeds, the return value is <c>true</c>.</para>
-        /// <para>If the function fails, the return value is <c>false</c>. To get extended error information, call <see cref="Marshal.GetLastWin32Error"/>.</para>
-        /// </returns>
-        /// <remarks>
-        /// Each process has an associated error mode that indicates to the system how the application is going to respond to serious errors. A thread inherits the error mode of the process in which it is running. To retrieve the process error mode, use the <see cref="GetErrorMode"/> function. To retrieve the error mode of the calling thread, use the <see cref="GetThreadErrorMode"/> function.
-        /// <para>
-        /// <list type="table">
-        /// <listheader><term>Requirements</term></listheader>
-        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows 7 [desktop apps | UWP apps]</description></item>
-        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2008 R2 [desktop apps | UWP apps]</description></item>
-        /// </list>
-        /// </para>
-        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/Winuser/nf-winuser-setlasterrorex">SetLastErrorEx function</a></para>
-        /// </remarks>
-        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
-        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
-        /// <seealso cref="GetThreadErrorMode"/>
-        /// <seealso cref="SetErrorMode"/>
-        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
-        [return: MarshalAs(UnmanagedType.Bool)]
-        public static extern bool SetThreadErrorMode(
-            [In] SYSTEM_ERROR_MODE dwNewMode,
-            out SYSTEM_ERROR_MODE lpOldMode
             );
         #endregion
     }

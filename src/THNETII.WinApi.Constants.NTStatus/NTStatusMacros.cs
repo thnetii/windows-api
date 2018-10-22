@@ -1,7 +1,9 @@
-﻿namespace THNETII.WinApi.Native.NTStatus
+﻿using THNETII.WinApi.Native.WinNT;
+
+namespace THNETII.WinApi.Native.NTStatus
 {
     using static NTStatusConstants;
-    using static Native.WinNT.WinNTConstants;
+    using static WinNTConstants;
 
     public static class NTStatusMacros
     {

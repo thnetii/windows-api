@@ -7,7 +7,7 @@ namespace THNETII.WinApi.Native.WinBase
     {
         /// <summary>
         /// <para>The system does not display the critical-error-handler message box. Instead, the system sends the error to the calling thread.</para>
-        /// <para>Best practice is that all applications call the process-wide <see cref="SetErrorMode"/> function with a parameter of <see cref="SEM_FAILCRITICALERRORS"/> at startup. This is to prevent error mode dialogs from hanging the application.</para>
+        /// <para>Best practice is that all applications call the process-wide <see cref="M:THNETII.WinApi.Native.ErrHandlingApi.ErrHandlingApiFunctions.SetErrorMode(THNETII.WinApi.Native.WinBase.SYSTEM_ERROR_MODE)"/> function with a parameter of <see cref="SEM_FAILCRITICALERRORS"/> at startup. This is to prevent error mode dialogs from hanging the application.</para>
         /// </summary>
         SEM_FAILCRITICALERRORS = WinBaseConstants.SEM_FAILCRITICALERRORS,
         /// <summary>
@@ -17,7 +17,7 @@ namespace THNETII.WinApi.Native.WinBase
         /// <summary>
         /// The system automatically fixes memory alignment faults and makes them invisible to the application.
         /// It does this for the calling process and any descendant processes.
-        /// This feature is only supported by certain processor architectures. For more information, see <see cref="SetErrorMode"/>.
+        /// This feature is only supported by certain processor architectures. For more information, see <see cref="M:THNETII.WinApi.Native.ErrHandlingApi.ErrHandlingApiFunctions.SetErrorMode(THNETII.WinApi.Native.WinBase.SYSTEM_ERROR_MODE)"/>.
         /// </summary>
         SEM_NOALIGNMENTFAULTEXCEPT = WinBaseConstants.SEM_NOALIGNMENTFAULTEXCEPT,
         /// <summary>

@@ -1,7 +1,9 @@
 ﻿namespace THNETII.WinApi.Native.WinUser
 {
+    using static WinUserFunctions;
+
     /// <summary>
-    /// <see cref="M:THNETII.WinApi.Native.ErrorHandling.ErrorHandlingFunctions.SetLastErrorEx(System.Int32,THNETII.WinApi.Native.WinUser.SLE_TYPE)"/> types.
+    /// <see cref="SetLastErrorEx"/> types.
     /// </summary>
     public enum SLE_TYPE : int
     {

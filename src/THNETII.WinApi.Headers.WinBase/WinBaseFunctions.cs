@@ -2,16 +2,19 @@
 using System.Runtime.InteropServices;
 using System.Text;
 using THNETII.InteropServices.NativeMemory;
+using THNETII.WinApi.Native.MinWinBase;
+using THNETII.WinApi.Native.MinWinDef;
 
+using static System.Runtime.InteropServices.CallingConvention;
+using static THNETII.WinApi.Native.MinWinBase.LMEM_FLAGS;
+using static THNETII.WinApi.Native.WinBase.FORMAT_MESSAGE_FLAGS;
+using static THNETII.WinApi.Native.WinError.WinErrorConstants;
 #if NETSTANDARD1_3
 using EntryPointNotFoundException = System.Exception;
 #endif
 
 namespace THNETII.WinApi.Native.WinBase
 {
-    using static CallingConvention;
-    using static FORMAT_MESSAGE_FLAGS;
-    using static WinError.WinErrorConstants;
 
     public static class WinBaseFunctions
     {
@@ -49,6 +52,152 @@ namespace THNETII.WinApi.Native.WinBase
             out IntPtrArrayPtr BackTrace,
             out int BackTraceHash
             ) => WinNT.WinNTFunctions.RtlCaptureStackBackTrace(FramesToSkip, FramesToCapture, out BackTrace, out BackTraceHash);
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\WinBase.h, line 1082
+        #region LocalAlloc function
+        /// <summary>
+        /// <para>Allocates the specified number of bytes from the heap.</para>
+        /// <note>The local functions have greater overhead and provide fewer features than other memory management functions. New applications should use the <a href="https://msdn.microsoft.com/cfb683fa-4f46-48b5-9a28-f4625a9cb8cd">heap functions</a> unless documentation states that a local function should be used. For more information, see <a href="https://msdn.microsoft.com/97707ce7-4c65-4d0e-ba69-47fdaee73a9b">Global and Local Functions</a>.</note>
+        /// </summary>
+        /// <param name="uFlags">
+        /// The memory allocation attributes. The default is the <see cref="LMEM_FIXED"/> value. This parameter can be one or more of the following values, except for the incompatible combinations that are specifically noted.
+        /// <list type="table">
+        /// <listheader><term>Value</term><description>Meaning</description></listheader>
+        /// <item><term><see cref="LHND"/></term><description>Combines <see cref="LMEM_MOVEABLE"/> and <see cref="LMEM_ZEROINIT"/>. </description></item>
+        /// <item><term><see cref="LMEM_FIXED"/></term><description>Allocates fixed memory. The return value is a pointer to the memory object. </description></item>
+        /// <item><term><see cref="LMEM_MOVEABLE"/></term><description><para>Allocates movable memory. Memory blocks are never moved in physical memory, but they can be moved within the default heap.<br/>The return value is a handle to the memory object. To translate the handle to a pointer, use the <see cref="LocalLock"/> function.</para>This value cannot be combined with <see cref="LMEM_FIXED"/>.<para></para></description></item>
+        /// <item><term><see cref="LMEM_ZEROINIT"/></term><description>Initializes memory contents to zero. </description></item>
+        /// <item><term><see cref="LPTR"/></term><description>Combines <see cref="LMEM_FIXED"/> and <see cref="LMEM_ZEROINIT"/>. </description></item>
+        /// <item><term><see cref="NONZEROLHND"/></term><description>Same as <see cref="LMEM_MOVEABLE"/>. </description></item>
+        /// <item><term><see cref="NONZEROLPTR"/></term><description>Same as <see cref="LMEM_FIXED"/>. </description></item>
+        /// </list>
+        /// The following values are obsolete, but are provided for compatibility with 16-bit Windows. They are ignored.
+        /// <list type="bullet">
+        /// <item><term><see cref="LMEM_DISCARDABLE"/></term></item>
+        /// <item><term><see cref="LMEM_NOCOMPACT"/></term></item>
+        /// <item><term><see cref="LMEM_NODISCARD"/></term></item>
+        /// </list>
+        /// </param>
+        /// <param name="uBytes">The number of bytes to allocate. If this parameter is <c>0</c> (zero) and the <paramref name="uFlags"/> parameter specifies <see cref="LMEM_MOVEABLE"/>, the function returns a handle to a memory object that is marked as discarded.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is a handle to the newly allocated memory object.</para>
+        /// <para>If the function fails, the return value is an <see cref="HLOCAL"/> value representing a null-pointer (calling <see cref="IIntPtrExtensions.IsNull(IIntPtr)"/> returns <c>true</c>). To get extended error information, call <see cref="Marshal.GetLastWin32Error"/>.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>Windows memory management does not provide a separate local heap and global heap. Therefore, the <see cref="LocalAlloc"/> and <see cref="GlobalAlloc"/> functions are essentially the same.</para>
+        /// <para>The movable-memory flags <see cref="LHND"/>, <see cref="LMEM_MOVEABLE"/>, and <see cref="NONZEROLHND"/> add unnecessary overhead and require locking to be used safely. They should be avoided unless documentation specifically states that they should be used.</para>
+        /// <para>New applications should use the <a href="https://msdn.microsoft.com/cfb683fa-4f46-48b5-9a28-f4625a9cb8cd">heap functions</a> unless the documentation specifically states that a local function should be used. For example, some Windows functions allocate memory that must be freed with <see cref="LocalFree"/>.</para>
+        /// <para>If the heap does not contain sufficient free space to satisfy the request, <see cref="LocalAlloc"/> returns a null-pointer. Because a null-pointer is used to indicate an error, virtual address zero is never allocated. It is, therefore, easy to detect the use of a null pointer.</para>
+        /// <para>If the <see cref="LocalAlloc"/> function succeeds, it allocates at least the amount requested. If the amount allocated is greater than the amount requested, the process can use the entire amount. To determine the actual number of bytes allocated, use the <see cref="LocalSize"/> function.</para>
+        /// <para>To free the memory, use the <see cref="LocalFree"/> function. It is not safe to free memory allocated with <see cref="LocalAlloc"/> using <see cref="GlobalFree"/> or <see cref="Marshal.FreeHGlobal"/>.</para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows XP [desktop apps | UWP apps]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps | UWP apps]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/winbase/nf-winbase-localalloc">LocalAlloc function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="LocalFree"/>
+        /// <seealso cref="LocalLock"/>
+        /// <seealso cref="LocalReAlloc"/>
+        /// <seealso cref="LocalSize"/>
+        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = Winapi, SetLastError = true)]
+        public static extern HLOCAL LocalAlloc(
+            [MarshalAs(UnmanagedType.I4)] LMEM_FLAGS uFlags,
+            [MarshalAs(UnmanagedType.SysUInt)] UIntPtr uBytes
+            );
+        #endregion
+        #region LocalReAlloc function
+        /// <summary>
+        /// <para>Changes the size or the attributes of a specified local memory object. The size can increase or decrease.</para>
+        /// <note>The local functions have greater overhead and provide fewer features than other memory management functions. New applications should use the <a href="https://msdn.microsoft.com/cfb683fa-4f46-48b5-9a28-f4625a9cb8cd">heap functions</a> unless documentation states that a local function should be used. For more information, see <a href="https://msdn.microsoft.com/97707ce7-4c65-4d0e-ba69-47fdaee73a9b">Global and Local Functions</a>.</note>
+        /// </summary>
+        /// <param name="hMem">A handle to the local memory object to be reallocated. This handle is returned by either the <see cref="LocalAlloc"/> or <see cref="LocalReAlloc"/> function.</param>
+        /// <param name="uBytes">The new size of the memory block, in bytes. If <paramref name="uFlags"/> specifies <see cref="LMEM_MODIFY"/>, this parameter is ignored.</param>
+        /// <param name="uFlags">
+        /// <para>The reallocation options. If <see cref="LMEM_MODIFY"/> is specified, the function modifies the attributes of the memory object only (the <paramref name="uBytes"/> parameter is ignored.) Otherwise, the function reallocates the memory object.</para>
+        /// <para>
+        /// You can optionally combine <see cref="LMEM_MODIFY"/> with the following value.
+        /// <list type="table">
+        /// <listheader><term>Value</term><description>Meaning</description></listheader>
+        /// <item><term><see cref="LMEM_MOVEABLE"/></term><description>Allocates fixed or movable memory.<br/>If the memory is a locked <see cref="LMEM_MOVEABLE"/> memory block or a <see cref="LMEM_FIXED"/> memory block and this flag is not specified, the memory can only be reallocated in place.</description></item>
+        /// </list>
+        /// </para>
+        /// <para>
+        /// If this parameter does not specify <see cref="LMEM_MODIFY"/>, you can use the following value.
+        /// <list type="table">
+        /// <listheader><term>Value</term><description>Meaning</description></listheader>
+        /// <item><term><see cref="LMEM_ZEROINIT"/></term><description>Causes the additional memory contents to be initialized to zero if the memory object is growing in size.</description></item>
+        /// </list>
+        /// </para>
+        /// </param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is a handle to the reallocated memory object.</para>
+        /// <para>If the function fails, the return value is an <see cref="HLOCAL"/> value representing a null-pointer (calling <see cref="IIntPtrExtensions.IsNull(IIntPtr)"/> returns <c>true</c>). To get extended error information, call <see cref="Marshal.GetLastWin32Error"/>.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>If <see cref="LocalReAlloc"/> fails, the original memory is not freed, and the original handle and pointer are still valid.</para>
+        /// <para>If <see cref="LocalReAlloc"/> reallocates a fixed object, the value of the handle returned is the address of the first byte of the memory block. To access the memory, a process can simply cast the <see cref="HLOCAL.Pointer"/> property of the return value to a pointer.</para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows XP [desktop apps | UWP apps]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps | UWP apps]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/winbase/nf-winbase-localrealloc">LocalReAlloc function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="LocalAlloc"/>
+        /// <seealso cref="LocalFree"/>
+        /// <seealso cref="LocalLock"/>
+        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = Winapi, SetLastError = true)]
+        public static extern HLOCAL LocalReAlloc(
+            HLOCAL hMem,
+            [MarshalAs(UnmanagedType.SysUInt)] UIntPtr uBytes,
+            [MarshalAs(UnmanagedType.I4)] LMEM_FLAGS uFlags
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\WinBase.h, line 1110
+        #region LocalLock function
+        /// <summary>
+        /// <para>Locks a local memory object and returns a pointer to the first byte of the object's memory block.</para>
+        /// <note>The local functions have greater overhead and provide fewer features than other memory management functions. New applications should use the <a href="https://msdn.microsoft.com/cfb683fa-4f46-48b5-9a28-f4625a9cb8cd">heap functions</a> unless documentation states that a local function should be used. For more information, see <a href="https://msdn.microsoft.com/97707ce7-4c65-4d0e-ba69-47fdaee73a9b">Global and Local Functions</a>.</note>
+        /// </summary>
+        /// <param name="hMem">A handle to the local memory object. This handle is returned by either the <see cref="LocalAlloc"/> or <see cref="LocalReAlloc"/> function.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is a pointer to the first byte of the memory block.</para>
+        /// <para>If the function fails, the return value is <see cref="IntPtr.Zero"/>. To get extended error information, call <see cref="Marshal.GetLastWin32Error"/>.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>The internal data structures for each memory object include a lock count that is initially zero. For movable memory objects, <see cref="LocalLock"/> increments the count by one, and the <see cref="LocalUnlock"/> function decrements the count by one. Each successful call that a process makes to <see cref="LocalLock"/> for an object must be matched by a corresponding call to <see cref="LocalUnlock"/>. Locked memory will not be moved or discarded unless the memory object is reallocated by using the <see cref="LocalReAlloc"/> function. The memory block of a locked memory object remains locked in memory until its lock count is decremented to zero, at which time it can be moved or discarded.</para>
+        /// <para>Memory objects allocated with <see cref="LMEM_FIXED"/> always have a lock count of zero. For these objects, the value of the returned pointer is equal to the value of the specified handle.</para>
+        /// <para>If the specified memory block has been discarded or if the memory block has a zero-byte size, this function returns <see cref="IntPtr.Zero"/>.</para>
+        /// <para>Discarded objects always have a lock count of zero.</para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows XP [desktop apps | UWP apps]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps | UWP apps]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/winbase/nf-winbase-locallock">LocalLock function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="LocalAlloc"/>
+        /// <seealso cref="LocalFlags"/>
+        /// <seealso cref="LocalReAlloc"/>
+        /// <seealso cref="LocalUnlock"/>
+        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = Winapi, SetLastError = true)]
+        public static extern IntPtr LocalLock(
+            HLOCAL hMem
+            );
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\WinBase.h, line 1350
         #region FatalExit function

@@ -11,3 +11,4 @@ using System.Diagnostics.CodeAnalysis;
 [assembly: SuppressMessage("Performance", "CA1815: Override equals and operator equals on value types")]
 [assembly: SuppressMessage("Naming", "CA1714: Flags enums should have plural names")]
 [assembly: SuppressMessage("Documentation", "CA1200: Avoid using cref tags with a prefix")]
+[assembly: SuppressMessage("Naming", "CA1720: Identifier contains type name")]

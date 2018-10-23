@@ -2,11 +2,11 @@
 
 int main(int argc, char* argv[])
 {
-    FLASHWINFO instance;
+    HLOCAL instance;
     const int size = sizeof(instance);
-    const int value = SEM_FAILCRITICALERRORS;
+    const int value = LHND;
 
-    const void* ptr = FatalExit;
+    const void* ptr = LocalAlloc;
 
     return EXIT_SUCCESS;
 }

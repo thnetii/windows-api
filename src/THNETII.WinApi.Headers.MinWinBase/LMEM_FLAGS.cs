@@ -1,4 +1,5 @@
 ﻿using System;
+using THNETII.InteropServices.Bitwise;
 
 namespace THNETII.WinApi.Native.MinWinBase
 {
@@ -26,9 +27,5 @@ namespace THNETII.WinApi.Native.MinWinBase
 
         NONZEROLHND = MinWinBaseConstants.NONZEROLHND,
         NONZEROLPTR = MinWinBaseConstants.NONZEROLPTR,
-
-        /* Flags returned by LocalFlags (in addition to LMEM_DISCARDABLE) */
-        LMEM_DISCARDED = MinWinBaseConstants.LMEM_DISCARDED,
-        LMEM_LOCKCOUNT = MinWinBaseConstants.LMEM_LOCKCOUNT,
     }
 }

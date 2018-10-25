@@ -7,24 +7,28 @@ namespace THNETII.WinApi.Native.WinNT
 
     public static class WinNTConstants
     {
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 36
         public const int ANYSIZE_ARRAY = 1;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 117
         public static readonly int MAX_NATURAL_ALIGNMENT = IntPtr.Size;
-
         // #if defined(_WIN64) || defined(_M_ALPHA)
         // public const int MEMORY_ALLOCATION_ALIGNMENT = 16;
         // #else
         // public const int MEMORY_ALLOCATION_ALIGNMENT = 8;
         // #endif
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 216
         // #if defined(_AMD64_) || defined(_X86_)
         // public const int SYSTEM_CACHE_ALIGNMENT_SIZE = 64;
         // #else
         // public const int SYSTEM_CACHE_ALIGNMENT_SIZE = 128;
         // #endif
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 590
         public const int ALL_PROCESSOR_GROUPS = 0xffff;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 614
         private static int GET_MAXIMUM_PROC_PER_GROUP()
         {
             switch (RuntimeInformation.OSArchitecture)
@@ -41,17 +45,21 @@ namespace THNETII.WinApi.Native.WinNT
 
         public static readonly int MAXIMUM_PROC_PER_GROUP = GET_MAXIMUM_PROC_PER_GROUP();
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 624
         public static readonly int MAXIMUM_PROCESSORS = MAXIMUM_PROC_PER_GROUP;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 750
         public const int APPLICATION_ERROR_MASK = 0x20000000;
         public const int ERROR_SEVERITY_SUCCESS = 0x00000000;
         public const int ERROR_SEVERITY_INFORMATIONAL = 0x40000000;
         public const int ERROR_SEVERITY_WARNING = unchecked((int)0x80000000);
         public const int ERROR_SEVERITY_ERROR = unchecked((int)0xC0000000);
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 1110
         public const int UNICODE_STRING_MAX_BYTES = 65534;
         public const int UNICODE_STRING_MAX_CHARS = 32767;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 1393
         public const int VER_SERVER_NT = unchecked((int)0x80000000);
         public const int VER_WORKSTATION_NT = 0x40000000;
         public const int VER_SUITE_SMALLBUSINESS = 0x00000001;
@@ -72,6 +80,7 @@ namespace THNETII.WinApi.Native.WinNT
         public const int VER_SUITE_WH_SERVER = 0x00008000;
         public const int VER_SUITE_MULTIUSERTS = 0x00020000;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 1414
         //
         // Product types
         // This list grows with each OS release.
@@ -238,6 +247,7 @@ namespace THNETII.WinApi.Native.WinNT
 
         public const int PRODUCT_UNLICENSED = unchecked((int)0xABCDABCD);
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 1582
         //
         // ** DEPRECATED ** DEPRECATED ** DEPRECATED ** DEPRECATED ** DEPRECATED **
         //
@@ -442,6 +452,7 @@ namespace THNETII.WinApi.Native.WinNT
         public const int LANG_YORUBA = 0x6a;
         public const int LANG_ZULU = 0x35;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 1770
         // 
         // ** DEPRECATED ** DEPRECATED ** DEPRECATED ** DEPRECATED ** DEPRECATED **
         //
@@ -976,6 +987,7 @@ namespace THNETII.WinApi.Native.WinNT
         /// <summary>isiZulu / Zulu (South Africa) 0x0435 zu-ZA</summary>
         public const int SUBLANG_ZULU_SOUTH_AFRICA = 0x01;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 2063
         //
         //  Sorting IDs.
         //
@@ -1026,6 +1038,7 @@ namespace THNETII.WinApi.Native.WinNT
         /// <summary>Georgian Modern order</summary>
         public const int SORT_GEORGIAN_MODERN = 0x1;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 2151
         //
         // ** DEPRECATED ** DEPRECATED ** DEPRECATED ** DEPRECATED ** DEPRECATED **
         //
@@ -1067,6 +1080,7 @@ namespace THNETII.WinApi.Native.WinNT
         //
         public const int NLS_VALID_LOCALE_MASK = 0x000fffff;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 2201
         /// <summary>
         /// <para>Maximum Locale Name Length in Windows</para>
         /// <para>Locale names are preferred to the deprecated LCID/LANGID concepts.</para>
@@ -1078,6 +1092,7 @@ namespace THNETII.WinApi.Native.WinNT
         /// </remarks>
         public const int LOCALE_NAME_MAX_LENGTH = 85;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 2209
         //
         // ** DEPRECATED ** DEPRECATED ** DEPRECATED ** DEPRECATED ** DEPRECATED **
         //
@@ -1093,6 +1108,7 @@ namespace THNETII.WinApi.Native.WinNT
         public static readonly int LOCALE_SYSTEM_DEFAULT = (MAKELCID(LANG_SYSTEM_DEFAULT, SORT_DEFAULT));
         public static readonly int LOCALE_USER_DEFAULT = (MAKELCID(LANG_USER_DEFAULT, SORT_DEFAULT));
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 2224
         //
         //  Other special IDs for language and locale.
         //
@@ -1115,6 +1131,7 @@ namespace THNETII.WinApi.Native.WinNT
         public static readonly int LOCALE_INVARIANT =
             (MAKELCID(MAKELANGID(LANG_INVARIANT, SUBLANG_NEUTRAL), SORT_DEFAULT));
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 2246
         //
         // Transient keyboard Locale IDs (LCIDs)
         // Should only be used for keyboard layout identification
@@ -1149,6 +1166,7 @@ namespace THNETII.WinApi.Native.WinNT
     )]
         public const int LOCALE_TRANSIENT_KEYBOARD4 = 0x2c00;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 2260
         /// <summary>
         /// Locale with an unassigned LCID
         /// These locales cannot be queried by LCID
@@ -1157,9 +1175,11 @@ namespace THNETII.WinApi.Native.WinNT
         [Obsolete("Please use Locale Names; see documentation for GetLocaleInfoEx.")]
         public static readonly int LOCALE_UNASSIGNED_LCID = LOCALE_CUSTOM_UNSPECIFIED;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 2513
         /// <summary>Maximum number of wait objects</summary>
         public const int MAXIMUM_WAIT_OBJECTS = 64;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 2515
         /// <summary>Maximum times thread can be suspended</summary>
         public const int MAXIMUM_SUSPEND_COUNT = 0x7f;
     }

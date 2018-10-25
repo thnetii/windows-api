@@ -22,9 +22,9 @@ namespace THNETII.WinApi.Native.WinNT
         public ulong Mask;
         public int Length;
         internal int Reserved1;
-        public IntPtr Area;
+        public PXSAVE_AREA Area;
         public Span<XSAVE_AREA> AreaAsSpan() =>
-            new ArrayPtr<XSAVE_AREA>(Area).AsSpan(Length);
+            new ArrayPtr<XSAVE_AREA>(Area.Pointer).AsSpan(Length);
         internal int Reserved2;
         public IntPtr Buffer;
         internal int Reserved3;

@@ -1,4 +1,6 @@
-﻿namespace THNETII.WinApi.Native.WinNT
+﻿using static THNETII.WinApi.Native.WinNT.WinNTConstants;
+
+namespace THNETII.WinApi.Native.WinNT
 {
     public static class WinNTMacros
     {
@@ -55,7 +57,7 @@
         //
         public static int MAKELANGID(int p, int s) => (((ushort)s) << 10) | (ushort)p;
         public static int PRIMARYLANGID(int lgid) => (short)lgid & 0x3ff;
-        public static int SUBLANGID(int lgid) => ((short)lgid >> 10);
+        public static int SUBLANGID(int lgid) => (short)lgid >> 10;
 
         //
         // ** DEPRECATED ** DEPRECATED ** DEPRECATED ** DEPRECATED ** DEPRECATED **
@@ -102,5 +104,10 @@
         public static int LANGIDFROMLCID(int lcid) => (ushort)lcid;
         public static int SORTIDFROMLCID(int lcid) => (ushort)((lcid >> 16) & 0xf);
         public static int SORTVERSIONFROMLCID(int lcid) => (ushort)((lcid >> 20) & 0xf);
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 8752
+        public static bool IS_UNWINDING(int Flag) => (Flag & EXCEPTION_UNWIND) != 0;
+        public static bool IS_DISPATCHING(int Flag) => (Flag & EXCEPTION_UNWIND) == 0;
+        public static bool IS_TARGET_UNWIND(int Flag) => (Flag & EXCEPTION_TARGET_UNWIND) != 0;
     }
 }

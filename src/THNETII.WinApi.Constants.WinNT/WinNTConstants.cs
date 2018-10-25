@@ -453,7 +453,7 @@ namespace THNETII.WinApi.Native.WinNT
         public const int LANG_ZULU = 0x35;
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 1770
-        // 
+        //
         // ** DEPRECATED ** DEPRECATED ** DEPRECATED ** DEPRECATED ** DEPRECATED **
         //
         //  DEPRECATED: The Sublanguage ID concept is deprecated, please use
@@ -1175,6 +1175,68 @@ namespace THNETII.WinApi.Native.WinNT
         [Obsolete("Please use Locale Names; see documentation for GetLocaleInfoEx.")]
         public static readonly int LOCALE_UNASSIGNED_LCID = LOCALE_CUSTOM_UNSPECIFIED;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 2444
+        public const int STATUS_WAIT_0 = 0x00000000;
+        public const int STATUS_ABANDONED_WAIT_0 = 0x00000080;
+        public const int STATUS_USER_APC = 0x000000C0;
+        public const int STATUS_TIMEOUT = 0x00000102;
+        public const int STATUS_PENDING = 0x00000103;
+        public const int DBG_EXCEPTION_HANDLED = 0x00010001;
+        public const int DBG_CONTINUE = 0x00010002;
+        public const int STATUS_SEGMENT_NOTIFICATION = 0x40000005;
+        public const int STATUS_FATAL_APP_EXIT = 0x40000015;
+        public const int DBG_REPLY_LATER = 0x40010001;
+        public const int DBG_TERMINATE_THREAD = 0x40010003;
+        public const int DBG_TERMINATE_PROCESS = 0x40010004;
+        public const int DBG_CONTROL_C = 0x40010005;
+        public const int DBG_PRINTEXCEPTION_C = 0x40010006;
+        public const int DBG_RIPEXCEPTION = 0x40010007;
+        public const int DBG_CONTROL_BREAK = 0x40010008;
+        public const int DBG_COMMAND_EXCEPTION = 0x40010009;
+        public const int DBG_PRINTEXCEPTION_WIDE_C = 0x4001000A;
+        public const int STATUS_GUARD_PAGE_VIOLATION = unchecked((int)0x80000001);
+        public const int STATUS_DATATYPE_MISALIGNMENT = unchecked((int)0x80000002);
+        public const int STATUS_BREAKPOINT = unchecked((int)0x80000003);
+        public const int STATUS_SINGLE_STEP = unchecked((int)0x80000004);
+        public const int STATUS_LONGJUMP = unchecked((int)0x80000026);
+        public const int STATUS_UNWIND_CONSOLIDATE = unchecked((int)0x80000029);
+        public const int DBG_EXCEPTION_NOT_HANDLED = unchecked((int)0x80010001);
+        public const int STATUS_ACCESS_VIOLATION = unchecked((int)0xC0000005);
+        public const int STATUS_IN_PAGE_ERROR = unchecked((int)0xC0000006);
+        public const int STATUS_INVALID_HANDLE = unchecked((int)0xC0000008);
+        public const int STATUS_INVALID_PARAMETER = unchecked((int)0xC000000D);
+        public const int STATUS_NO_MEMORY = unchecked((int)0xC0000017);
+        public const int STATUS_ILLEGAL_INSTRUCTION = unchecked((int)0xC000001D);
+        public const int STATUS_NONCONTINUABLE_EXCEPTION = unchecked((int)0xC0000025);
+        public const int STATUS_INVALID_DISPOSITION = unchecked((int)0xC0000026);
+        public const int STATUS_ARRAY_BOUNDS_EXCEEDED = unchecked((int)0xC000008C);
+        public const int STATUS_FLOAT_DENORMAL_OPERAND = unchecked((int)0xC000008D);
+        public const int STATUS_FLOAT_DIVIDE_BY_ZERO = unchecked((int)0xC000008E);
+        public const int STATUS_FLOAT_INEXACT_RESULT = unchecked((int)0xC000008F);
+        public const int STATUS_FLOAT_INVALID_OPERATION = unchecked((int)0xC0000090);
+        public const int STATUS_FLOAT_OVERFLOW = unchecked((int)0xC0000091);
+        public const int STATUS_FLOAT_STACK_CHECK = unchecked((int)0xC0000092);
+        public const int STATUS_FLOAT_UNDERFLOW = unchecked((int)0xC0000093);
+        public const int STATUS_INTEGER_DIVIDE_BY_ZERO = unchecked((int)0xC0000094);
+        public const int STATUS_INTEGER_OVERFLOW = unchecked((int)0xC0000095);
+        public const int STATUS_PRIVILEGED_INSTRUCTION = unchecked((int)0xC0000096);
+        public const int STATUS_STACK_OVERFLOW = unchecked((int)0xC00000FD);
+        public const int STATUS_DLL_NOT_FOUND = unchecked((int)0xC0000135);
+        public const int STATUS_ORDINAL_NOT_FOUND = unchecked((int)0xC0000138);
+        public const int STATUS_ENTRYPOINT_NOT_FOUND = unchecked((int)0xC0000139);
+        public const int STATUS_CONTROL_C_EXIT = unchecked((int)0xC000013A);
+        public const int STATUS_DLL_INIT_FAILED = unchecked((int)0xC0000142);
+        public const int STATUS_FLOAT_MULTIPLE_FAULTS = unchecked((int)0xC00002B4);
+        public const int STATUS_FLOAT_MULTIPLE_TRAPS = unchecked((int)0xC00002B5);
+        public const int STATUS_REG_NAT_CONSUMPTION = unchecked((int)0xC00002C9);
+        public const int STATUS_HEAP_CORRUPTION = unchecked((int)0xC0000374);
+        public const int STATUS_STACK_BUFFER_OVERRUN = unchecked((int)0xC0000409);
+        public const int STATUS_INVALID_CRUNTIME_PARAMETER = unchecked((int)0xC0000417);
+        public const int STATUS_ASSERTION_FAILURE = unchecked((int)0xC0000420);
+        public const int STATUS_ENCLAVE_VIOLATION = unchecked((int)0xC00004A2);
+        public const int STATUS_SXS_EARLY_DEACTIVATION = unchecked((int)0xC015000F);
+        public const int STATUS_SXS_INVALID_DEACTIVATION = unchecked((int)0xC0150010);
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 2513
         /// <summary>Maximum number of wait objects</summary>
         public const int MAXIMUM_WAIT_OBJECTS = 64;
@@ -1182,5 +1244,84 @@ namespace THNETII.WinApi.Native.WinNT
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 2515
         /// <summary>Maximum times thread can be suspended</summary>
         public const int MAXIMUM_SUSPEND_COUNT = 0x7f;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 7439
+        //
+        // The following values specify the type of failing access when the status is
+        // STATUS_ACCESS_VIOLATION and the first parameter in the execpetion record.
+        //
+
+        /// <summary>Access violation was caused by a read</summary>
+        public const int EXCEPTION_READ_FAULT = 0;
+        /// <summary>Access violation was caused by a write</summary>
+        public const int EXCEPTION_WRITE_FAULT = 1;
+        /// <summary>Access violation was caused by an instruction fetch</summary>
+        public const int EXCEPTION_EXECUTE_FAULT = 8;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 7452
+        /// <summary>
+        /// Define the size of the 80387 save area, which is in the context frame.
+        /// </summary>
+        public const int SIZE_OF_80387_REGISTERS = 80;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 7458
+        //
+        // The following flags control the contents of the CONTEXT structure.
+        //
+
+        public const int CONTEXT_i386 = 0x00010000;    // this assumes that i386 and
+        public const int CONTEXT_i486 = 0x00010000;    // i486 have identical context records
+
+        /// <summary>SS:SP, CS:IP, FLAGS, BP</summary>
+        public const int CONTEXT_CONTROL = (CONTEXT_i386 | 0x00000001);
+        /// <summary>AX, BX, CX, DX, SI, DI</summary>
+        public const int CONTEXT_INTEGER = (CONTEXT_i386 | 0x00000002);
+        /// <summary>DS, ES, FS, GS</summary>
+        public const int CONTEXT_SEGMENTS = (CONTEXT_i386 | 0x00000004);
+        /// <summary>387 state</summary>
+        public const int CONTEXT_FLOATING_POINT = (CONTEXT_i386 | 0x00000008);
+        /// <summary>DB 0-3,6,7</summary>
+        public const int CONTEXT_DEBUG_REGISTERS = (CONTEXT_i386 | 0x00000010);
+        /// <summary>cpu specific extensions</summary>
+        public const int CONTEXT_EXTENDED_REGISTERS = (CONTEXT_i386 | 0x00000020);
+
+        public const int CONTEXT_FULL = (CONTEXT_CONTROL | CONTEXT_INTEGER |
+                                         CONTEXT_SEGMENTS);
+
+        public const int CONTEXT_ALL = (CONTEXT_CONTROL | CONTEXT_INTEGER | CONTEXT_SEGMENTS |
+                                        CONTEXT_FLOATING_POINT | CONTEXT_DEBUG_REGISTERS |
+                                        CONTEXT_EXTENDED_REGISTERS);
+
+        public const int CONTEXT_XSTATE = (CONTEXT_i386 | 0x00000040);
+
+        public const int CONTEXT_EXCEPTION_ACTIVE = 0x08000000;
+        public const int CONTEXT_SERVICE_ACTIVE = 0x10000000;
+        public const int CONTEXT_EXCEPTION_REQUEST = 0x40000000;
+        public const int CONTEXT_EXCEPTION_REPORTING = unchecked((int)0x80000000);
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 7512
+        public const int MAXIMUM_SUPPORTED_EXTENSION = 512;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 8741
+        /// <summary>Noncontinuable exception</summary>
+        public const int EXCEPTION_NONCONTINUABLE = 0x1;
+        /// <summary>Unwind is in progress</summary>
+        public const int EXCEPTION_UNWINDING = 0x2;
+        /// <summary>Exit unwind is in progress</summary>
+        public const int EXCEPTION_EXIT_UNWIND = 0x4;
+        /// <summary>Stack out of limits or unaligned</summary>
+        public const int EXCEPTION_STACK_INVALID = 0x8;
+        /// <summary>Nested exception handler call</summary>
+        public const int EXCEPTION_NESTED_CALL = 0x10;
+        /// <summary>Target unwind in progress</summary>
+        public const int EXCEPTION_TARGET_UNWIND = 0x20;
+        /// <summary>Collided exception handler call</summary>
+        public const int EXCEPTION_COLLIDED_UNWIND = 0x40;
+
+        public const int EXCEPTION_UNWIND = EXCEPTION_UNWINDING | EXCEPTION_EXIT_UNWIND | EXCEPTION_TARGET_UNWIND | EXCEPTION_COLLIDED_UNWIND;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 8756
+        /// <summary>maximum number of exception parameters</summary>
+        public const int EXCEPTION_MAXIMUM_PARAMETERS = 15;
     }
 }

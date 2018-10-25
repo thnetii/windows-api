@@ -10,6 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\interopservices\src\THNETII.InteropServices.Bitwise\THNETII.InteropServices.Bitwise.csproj" />
     <ProjectReference Include="..\..\interopservices\src\THNETII.InteropServices.NativeMemory\THNETII.InteropServices.NativeMemory.csproj" />
   </ItemGroup>
 
@@ -17,6 +18,19 @@
     <ProjectReference Include="..\..\src-shared\THNETII.WinApi.NativeLibraryNames\THNETII.WinApi.NativeLibraryNames.csproj">
       <PrivateAssets>All</PrivateAssets>
     </ProjectReference>
+    <ProjectReference Include="..\..\src-shared\THNETII.WinApi.ErrorCodes\THNETII.WinApi.ErrorCodes.csproj">
+      <PrivateAssets>All</PrivateAssets>
+    </ProjectReference>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\THNETII.WinApi.Headers.MinWinBase\THNETII.WinApi.Headers.MinWinBase.csproj">
+      <PrivateAssets>All</PrivateAssets>
+    </ProjectReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\THNETII.WinApi.Constants.WinNT\THNETII.WinApi.Constants.WinNT.csproj" />
   </ItemGroup>
 
 </Project>

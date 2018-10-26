@@ -1323,5 +1323,51 @@ namespace THNETII.WinApi.Native.WinNT
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 8756
         /// <summary>maximum number of exception parameters</summary>
         public const int EXCEPTION_MAXIMUM_PARAMETERS = 15;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 8869
+        ////////////////////////////////////////////////////////////////////////
+        //                                                                    //
+        //                             ACCESS TYPES                           //
+        //                                                                    //
+        ////////////////////////////////////////////////////////////////////////
+
+        //
+        //  The following are masks for the predefined standard access types
+        //
+
+        public const int DELETE = 0x00010000;
+        public const int READ_CONTROL = 0x00020000;
+        public const int WRITE_DAC = 0x00040000;
+        public const int WRITE_OWNER = 0x00080000;
+        public const int SYNCHRONIZE = 0x00100000;
+
+        public const int STANDARD_RIGHTS_REQUIRED = 0x000F0000;
+
+        public const int STANDARD_RIGHTS_READ = READ_CONTROL;
+        public const int STANDARD_RIGHTS_WRITE = READ_CONTROL;
+        public const int STANDARD_RIGHTS_EXECUTE = READ_CONTROL;
+
+        public const int STANDARD_RIGHTS_ALL = 0x001F0000;
+
+        public const int SPECIFIC_RIGHTS_ALL = 0x0000FFFF;
+
+        /// <summary>
+        /// AccessSystemAcl access type
+        /// </summary>
+        public const int ACCESS_SYSTEM_SECURITY = 0x01000000;
+
+        /// <summary>
+        /// MaximumAllowed access type
+        /// </summary>
+        public const int MAXIMUM_ALLOWED = 0x02000000;
+
+        //
+        //  These are the generic rights.
+        //
+
+        public const int GENERIC_READ = unchecked((int)0x80000000);
+        public const int GENERIC_WRITE = 0x40000000;
+        public const int GENERIC_EXECUTE = 0x20000000;
+        public const int GENERIC_ALL = 0x10000000;
     }
 }

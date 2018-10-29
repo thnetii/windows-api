@@ -67,6 +67,7 @@ namespace THNETII.WinApi.Native.WinNT
         /// </description>
         /// </item>
         /// </list>
+        /// </remarks>
         [MarshalAs(UnmanagedType.ByValArray, ArraySubType = UnmanagedType.SysUInt, SizeConst = WinNTConstants.EXCEPTION_MAXIMUM_PARAMETERS)]
         public UIntPtr[] ExceptionInformation;
 

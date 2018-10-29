@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Runtime.InteropServices;
+using THNETII.InteropServices.Runtime;
 
 namespace THNETII.WinApi.Native.WinNT
 {
@@ -28,7 +29,9 @@ namespace THNETII.WinApi.Native.WinNT
         /// <summary>The processor group number.</summary>
         public short Group;
         /// <summary>This member is reserved.</summary>
-        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 3)]
-        internal short[] Reserved;
+        private FieldReserved fieldReserved;
+        [StructLayout(LayoutKind.Explicit, Size = sizeof(short) * 3)]
+        private struct FieldReserved { }
+        internal Span<short> Reserved => MemoryMarshal.Cast<FieldReserved, short>(SpanOverRef.GetSpan(ref fieldReserved));
     }
 }

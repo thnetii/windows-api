@@ -26,9 +26,9 @@ namespace THNETII.WinApi.Native.WinNT
     }
 
     public class SCOPE_TABLE_MARSHAL
-#if !NETSTANDARD1_3
+#if !NETSTANDARD1_6
         : ICustomMarshaler
-#endif // !NETSTANDARD1_3
+#endif // !NETSTANDARD1_6
     {
         private static readonly int offsetScopeRecord =
             Marshal.OffsetOf<SCOPE_TABLE>(nameof(SCOPE_TABLE.ScopeRecord)).ToInt32();
@@ -44,11 +44,11 @@ namespace THNETII.WinApi.Native.WinNT
         public void CleanUpNativeData(IntPtr pNativeData) =>
             Marshal.FreeCoTaskMem(pNativeData);
 
-#if NETSTANDARD1_3
+#if NETSTANDARD1_6
         internal int GetNativeDataSize()
-#else // !NETSTANDARD1_3
+#else // !NETSTANDARD1_6
         int ICustomMarshaler.GetNativeDataSize()
-#endif // !NETSTANDARD1_3
+#endif // !NETSTANDARD1_6
         { return -1; }
 
         public IntPtr MarshalManagedToNative(object ManagedObj)

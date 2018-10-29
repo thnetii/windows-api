@@ -1,5 +1,6 @@
-﻿using System.Runtime.InteropServices;
-
+﻿using System;
+using System.Runtime.InteropServices;
+using THNETII.InteropServices.Runtime;
 using static THNETII.WinApi.Native.WinNT.WinNTConstants;
 
 namespace THNETII.WinApi.Native.WinNT
@@ -15,8 +16,13 @@ namespace THNETII.WinApi.Native.WinNT
         public int ErrorSelector;
         public int DataOffset;
         public int DataSelector;
-        [MarshalAs(UnmanagedType.ByValArray, SizeConst = SIZE_OF_80387_REGISTERS)]
-        public byte[] RegisterArea;
+        #region public byte RegisterArea[SIZE_OF_80387_REGISTERS];
+        private FieldRegisterArea fieldRegisterArea;
+        [StructLayout(LayoutKind.Explicit, Size = sizeof(byte) * SIZE_OF_80387_REGISTERS)]
+        private struct FieldRegisterArea { }
+        public Span<byte> RegisterArea => MemoryMarshal.AsBytes(SpanOverRef.GetSpan(ref fieldRegisterArea));
+        #endregion
+
         public int Spare0;
     }
 }

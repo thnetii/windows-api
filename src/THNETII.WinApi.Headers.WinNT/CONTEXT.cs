@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 using THNETII.InteropServices.NativeMemory;
-
+using THNETII.InteropServices.Runtime;
 using static THNETII.WinApi.Native.WinNT.CONTEXT_FLAGS;
 
 namespace THNETII.WinApi.Native.WinNT
@@ -109,10 +109,14 @@ namespace THNETII.WinApi.Native.WinNT
         /// <summary>Only valid if <see cref="CONTEXT_CONTROL"/> is set in <see cref="ContextFlags"/>.</summary>
         public int SegSs;
 
+        #region public byte ExtendedRegisters[MAXIMUM_SUPPORTED_EXTENSION];
+        private ExtendedRegistersField fieldExtendedRegisters;
+        [StructLayout(LayoutKind.Explicit, Size = WinNTConstants.MAXIMUM_SUPPORTED_EXTENSION * sizeof(byte))]
+        private struct ExtendedRegistersField { }
         /// <summary>Only valid if <see cref="CONTEXT_EXTENDED_REGISTERS"/> is set in <see cref="ContextFlags"/>.</summary>
         /// <remarks>The format and contexts are processor specific</remarks>
-        [MarshalAs(UnmanagedType.ByValArray, SizeConst = WinNTConstants.MAXIMUM_SUPPORTED_EXTENSION)]
-        public byte[] ExtendedRegisters;
+        public Span<byte> ExtendedRegisters => MemoryMarshal.AsBytes(SpanOverRef.GetSpan(ref fieldExtendedRegisters)); 
+        #endregion
     }
 
     [StructLayout(LayoutKind.Sequential, Pack = 4)]

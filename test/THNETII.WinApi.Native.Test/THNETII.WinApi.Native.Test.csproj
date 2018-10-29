@@ -4,7 +4,7 @@
   <PropertyGroup>
     <LangVersion>7.2</LangVersion>
     <TargetFramework>netcoreapp2.1</TargetFramework>
-    <RootNamespace>THNETII.WinApiNative</RootNamespace>
+    <RootNamespace>THNETII.WinApi.Native</RootNamespace>
     <IsPackable>false</IsPackable>
   </PropertyGroup>
 
@@ -13,6 +13,23 @@
     <PackageReference Include="xunit" Version="2.4.0" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
     <PackageReference Include="Xunit.SkippableFact" Version="1.3.12" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="4.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\interopservices\src\THNETII.InteropServices.NativeMemory\THNETII.InteropServices.NativeMemory.csproj" />
+    <ProjectReference Include="..\..\src-shared\THNETII.WinApi.ErrorCodes\THNETII.WinApi.ErrorCodes.csproj" />
+    <ProjectReference Include="..\..\src-shared\THNETII.WinApi.NativeLibraryNames\THNETII.WinApi.NativeLibraryNames.csproj" />
+    <ProjectReference Include="..\..\src\THNETII.WinApi.Headers.ErrHandlingApi\THNETII.WinApi.Headers.ErrHandlingApi.csproj" />
+    <ProjectReference Include="..\..\src\THNETII.WinApi.Headers.MinWinBase\THNETII.WinApi.Headers.MinWinBase.csproj" />
+    <ProjectReference Include="..\..\src\THNETII.WinApi.Headers.MinWinDef\THNETII.WinApi.Headers.MinWinDef.csproj" />
+    <ProjectReference Include="..\..\src\THNETII.WinApi.Headers.UtilApiset\THNETII.WinApi.Headers.UtilApiset.csproj" />
+    <ProjectReference Include="..\..\src\THNETII.WinApi.Headers.WinBase\THNETII.WinApi.Headers.WinBase.csproj" />
+    <ProjectReference Include="..\..\src\THNETII.WinApi.Headers.WinNT\THNETII.WinApi.Headers.WinNT.csproj" />
+    <ProjectReference Include="..\..\src\THNETII.WinApi.Headers.WinUser\THNETII.WinApi.Headers.WinUser.csproj" />
   </ItemGroup>
 
 </Project>

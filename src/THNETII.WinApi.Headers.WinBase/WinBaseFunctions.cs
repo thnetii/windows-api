@@ -9,7 +9,8 @@ using static System.Runtime.InteropServices.CallingConvention;
 using static THNETII.WinApi.Native.MinWinBase.LMEM_FLAGS;
 using static THNETII.WinApi.Native.WinBase.FORMAT_MESSAGE_FLAGS;
 using static THNETII.WinApi.Native.WinError.WinErrorConstants;
-#if NETSTANDARD1_3
+
+#if NETSTANDARD1_6
 using AccessViolationException = System.Exception;
 using EntryPointNotFoundException = System.Exception;
 #endif

@@ -3,7 +3,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using THNETII.WinApi.Native.WinBase;
 
-#if NETSTANDARD1_3
+#if NETSTANDARD1_6
 using EntryPointNotFoundException = System.Exception;
 #endif
 

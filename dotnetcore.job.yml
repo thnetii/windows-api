@@ -1,0 +1,79 @@
+parameters:
+  jobName: dotnetcore
+  jobDisplayName: .NET Core CI
+  pool: Hosted VS2017
+  configuration: Debug
+  buildNumber: $(Build.BuildId)
+  sourceprojects: '[Ss]rc/*/*.csproj'
+  testprojects: '[Tt]est/*/*.csproj'
+  verbosityRestore: normal
+  runtimeId: any
+  selfContained: false
+  enableCodeCoverage: false
+  artifactPrefix: $(Build.Repository.Name)
+jobs:
+- job: ${{ parameters.jobName }}
+  displayName: ${{ parameters.jobDisplayName }}
+  pool: ${{ parameters.pool }}
+  variables:
+    CommonArguments: --configuration ${{ parameters.configuration }} -p:BuildNumber=${{ parameters.buildNumber }}
+    RuntimeArguments: --runtime "${{ parameters.runtimeId }}"
+    CodeCoverage: --collect "Code coverage"
+    PublishArguments: --output $(Build.ArtifactStagingDirectory) -p:BuildDefaultTargetFramework=true
+  steps:
+  - task: DotNetCoreCLI@2
+    displayName: Restore
+    inputs:
+      command: restore
+      projects: |
+        ${{ parameters.sourceprojects }}
+        ${{ parameters.testprojects }}
+      verbosityRestore: ${{ parameters.verbosityRestore }}
+  - task: DotNetCoreCLI@2
+    displayName: Build
+    inputs:
+      command: build
+      projects: ${{ parameters.sourceprojects }}
+      ${{ if eq(parameters.selfContained, true) }}:
+        arguments: $(CommonArguments) $(RuntimeArguments)
+      ${{ if ne(parameters.selfContained, true) }}:
+        arguments: $(CommonArguments)
+  - task: DotNetCoreCLI@2
+    displayName: Test
+    inputs:
+      command: test
+      projects: ${{ parameters.testprojects }}
+      ${{ if eq(parameters.enableCodeCoverage, true) }}:
+        arguments: $(CommonArguments) $(CodeCoverage)
+      ${{ if ne(parameters.enableCodeCoverage, true) }}:
+        arguments: $(CommonArguments)
+      publishTestResults: true
+  - ${{ if ne(parameters.selfContained, true) }}:
+    - task: DotNetCoreCLI@2
+      displayName: Publish
+      inputs:
+        command: publish
+        projects: ${{ parameters.sourceprojects }}
+        arguments: $(CommonArguments) $(PublishArguments)
+        publishWebProjects: false
+        zipAfterPublish: false
+      continueOnError: true
+  - ${{ if eq(parameters.selfContained, true) }}:
+    - task: DotNetCoreCLI@2
+      displayName: Publish (Self-Contained)
+      inputs:
+        command: publish
+        projects: ${{ parameters.sourceprojects }}
+        arguments: $(CommonArguments) $(RuntimeArguments) $(PublishArguments) --self-contained
+        publishWebProjects: false
+        zipAfterPublish: false
+      continueOnError: true
+  - task: PublishBuildArtifacts@1
+    displayName: Publish Artifact
+    inputs:
+      PathtoPublish: $(Build.ArtifactStagingDirectory)
+      ${{ if ne(parameters.selfContained, true) }}:
+        ArtifactName: ${{ parameters.artifactPrefix }}-dotnet-${{ parameters.buildNumber }}-$(Build.BuildNumber)
+      ${{ if eq(parameters.selfContained, true) }}:
+        ArtifactName: ${{ parameters.artifactPrefix }}-${{ parameters.runtimeId }}-${{ parameters.buildNumber }}-$(Build.BuildNumber)
+    continueOnError: true

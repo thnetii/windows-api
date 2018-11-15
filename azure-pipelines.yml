@@ -1,0 +1,40 @@
+name: $(Date:yyyy-MM-dd)-rev-$(Rev:r)
+variables:
+  ArtifactPrefix: thnetii-windows-api
+jobs:
+- template: dotnetcore.job.yml
+  parameters:
+    jobName: windows
+    jobDisplayName: Windows 10 / Windows Server 2016 (x64)
+    pool: Hosted VS2017
+    configuration: $(BuildConfiguration)
+    runtimeId: win10-x64
+    enableCodeCoverage: true
+    selfContained: true
+    artifactPrefix: $(ArtifactPrefix)
+- template: dotnetcore.job.yml
+  parameters:
+    jobName: ubuntu
+    jobDisplayName: Ubuntu 16.04.5 LTS
+    pool: Hosted Ubuntu 1604
+    configuration: $(BuildConfiguration)
+    runtimeId: ubuntu.16.04-x64
+    enableCodeCoverage: false
+    selfContained: true
+    artifactPrefix: $(ArtifactPrefix)
+- template: dotnetcore.job.yml
+  parameters:
+    jobName: macos
+    jobDisplayName: macOS
+    pool: Hosted macOS
+    configuration: $(BuildConfiguration)
+    runtimeId: osx-x64
+    enableCodeCoverage: false
+    selfContained: true
+    artifactPrefix: $(ArtifactPrefix)
+- template: dotnetcore.job.yml
+  parameters:
+    configuration: $(BuildConfiguration)
+    enableCodeCoverage: true
+    selfContained: false
+    artifactPrefix: $(ArtifactPrefix)

@@ -1,40 +1,68 @@
-name: $(Date:yyyy-MM-dd)-rev-$(Rev:r)
+name: build-$(Build.BuildId)-date-$(Date:yyyy-MM-dd)
 variables:
-  ArtifactPrefix: thnetii-windows-api
+  solutionProjects: '*.sln'
+  testProjects:     '[Tt]est/*/*.csproj'
+  publishProjects:  '[Ss]rc/*/*.csproj'
+  commonArguments:  -p:BuildId=$(Build.BuildId)
+  addConfigurationDebugArguments:   --configuration Debug
+  addConfigurationReleseArguments:  --configuration Release
+  addCodeCoverageArguments:         --collect "Code Coverage"
+  addRuntimeArgumentPrefix:         --runtime
+  addPublishArguments:              -p:BuildDefaultTargetFramework=true
+  addSelfContainedArguments:        --self-contained
 jobs:
-- template: dotnetcore.job.yml
+- template: azure-pipelines.dotnetcore.jobs.yml
   parameters:
-    jobName: windows
-    jobDisplayName: Windows 10 / Windows Server 2016 (x64)
-    pool: Hosted VS2017
-    configuration: $(BuildConfiguration)
-    runtimeId: win10-x64
+    agentPool:        Hosted VS2017
+    runtimeMoniker:   win10-x64
+    jobNamePrefix:    windows
+    jobDisplayPrefix: 'Windows:'
+    condition:        ne(variables['SkipWindowsJobs'], 'true')
     enableCodeCoverage: true
-    selfContained: true
-    artifactPrefix: $(ArtifactPrefix)
-- template: dotnetcore.job.yml
+    publishDependencyMode: self-contained
+    solutionProjects: '**/*.csproj'
+    publishProjects:  |
+      '[Ss]rc/*/*.csproj'
+      '[Ss]rc-shared/*/*.csproj'
+
+- template: azure-pipelines.dotnetcore.jobs.yml
   parameters:
-    jobName: ubuntu
-    jobDisplayName: Ubuntu 16.04.5 LTS
-    pool: Hosted Ubuntu 1604
-    configuration: $(BuildConfiguration)
-    runtimeId: ubuntu.16.04-x64
+    agentPool:        Hosted Ubuntu 1604
+    runtimeMoniker:   ubuntu.16.04-x64
+    jobNamePrefix:    ubuntu
+    jobDisplayPrefix: 'Ubuntu:'
+    condition:        ne(variables['SkipUbuntuJobs'], 'true')
     enableCodeCoverage: false
-    selfContained: true
-    artifactPrefix: $(ArtifactPrefix)
-- template: dotnetcore.job.yml
+    publishDependencyMode: self-contained
+    addCommonArguments: -p:NoNetFramework=true
+    solutionProjects: '**/*.csproj'
+    publishProjects:  |
+      '[Ss]rc/*/*.csproj'
+      '[Ss]rc-shared/*/*.csproj'
+
+- template: azure-pipelines.dotnetcore.jobs.yml
   parameters:
-    jobName: macos
-    jobDisplayName: macOS
-    pool: Hosted macOS
-    configuration: $(BuildConfiguration)
-    runtimeId: osx-x64
+    agentPool:        Hosted macOS
+    runtimeMoniker:   osx-x64
+    jobNamePrefix:    macos
+    jobDisplayPrefix: 'macOS:'
+    condition:        ne(variables['SkipMacOSJobs'], 'true')
     enableCodeCoverage: false
-    selfContained: true
-    artifactPrefix: $(ArtifactPrefix)
-- template: dotnetcore.job.yml
+    publishDependencyMode: self-contained
+    addCommonArguments: -p:NoNetFramework=true
+    solutionProjects: '**/*.csproj'
+    publishProjects:  |
+      '[Ss]rc/*/*.csproj'
+      '[Ss]rc-shared/*/*.csproj'
+
+- template: azure-pipelines.dotnetcore.jobs.yml
   parameters:
-    configuration: $(BuildConfiguration)
-    enableCodeCoverage: true
-    selfContained: false
-    artifactPrefix: $(ArtifactPrefix)
+    runtimeMoniker:   ''
+    jobNamePrefix:    dotnetcore
+    jobDisplayPrefix: '.NET Core:'
+    condition:        ne(variables['SkipDotnetCoreJobs'], 'true')
+    publishDependencyMode: framework
+    solutionProjects: '**/*.csproj'
+    publishProjects:  |
+      '[Ss]rc/*/*.csproj'
+      '[Ss]rc-shared/*/*.csproj'

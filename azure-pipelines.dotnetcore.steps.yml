@@ -1,0 +1,57 @@
+parameters:
+  # Projects
+  sourceProjects: '*.sln'
+  testProjects: '[Tt]est/*/*.csproj'
+  publishProjects: '[Ss]rc/*/*.csproj'
+
+  # Arguments
+  restoreArguments: ''
+  buildArguments: ''
+  testArguments: ''
+  publishArguments: ''
+  publishOutputName: dotnet
+  publishWebProjects: false
+  artifactPrefix: $(System.TeamProject)
+
+  # Display Names
+  restoreDisplayName: Restore
+  buildDisplayName: Build
+  testDisplayName: Test
+  publishDisplayName: Publish
+  uploadArtifactsDisplayName: Upload Published Artifacts
+steps:
+- task: DotNetCoreCLI@2
+  displayName: ${{ coalesce(parameters.restoreDisplayName, 'Restore') }}
+  inputs:
+    command: custom
+    custom: restore
+    projects: ${{ parameters.sourceProjects }}
+    arguments: ${{ parameters.restoreArguments }}
+- task: DotNetCoreCLI@2
+  displayName: ${{ parameters.buildDisplayName }}
+  inputs:
+    command: build
+    projects: ${{ parameters.sourceProjects }}
+    arguments: ${{ parameters.buildArguments }}
+- task: DotNetCoreCLI@2
+  displayName: ${{ parameters.testDisplayName }}
+  inputs:
+    command: test
+    projects: ${{ parameters.testProjects }}
+    arguments: ${{ parameters.testArguments }}
+    publishTestResults: true
+- task: DotNetCoreCLI@2
+  displayName: ${{ parameters.publishDisplayName }}
+  inputs:
+    command: publish
+    projects: ${{ parameters.publishProjects }}
+    arguments: ${{ parameters.publishArguments }} --output $(Build.ArtifactStagingDirectory)/${{ parameters.publishOutputName }}
+    publishWebProjects: ${{ parameters.publishWebProjects }}
+    zipAfterPublish: false
+  continueOnError: true
+- task: PublishBuildArtifacts@1
+  displayName: ${{ parameters.uploadArtifactsDisplayName }}
+  inputs:
+    PathtoPublish: $(Build.ArtifactStagingDirectory)/${{ parameters.publishOutputName }}
+    ArtifactName: ${{ parameters.artifactPrefix }}-${{ parameters.publishOutputName }}-$(Build.BuildNumber)
+  continueOnError: true

@@ -1,0 +1,59 @@
+parameters:
+  jobIdSuffix:
+  jobDisplayName:
+  condition:                  true
+  allProjects:                '*.sln'
+  sourceProjects:             '[Ss]rc/*/*.csproj'
+  testProjects:               '[Tt]est/*/*.csproj'
+  commonArguments:            -p:BuildId=$(Build.BuildId)
+  addStaticConfigurationArguments:
+  addVarConfigurationArguments: $(AddCommonArguments)
+  arftifactNameSuffix:
+  publishWebProjects:         false
+jobs:
+- job: build${{ parameters.jobIdSuffix }}
+  displayName:  ${{ parameters.jobDisplayName }}
+  condition:    ${{ parameters.condition }}
+  steps:
+  - task: DotNetCoreCLI@2
+    displayName:  dotnet restore ${{ parameters.addStaticConfigurationArguments }}
+    inputs:
+      command:    custom
+      custom:     restore
+      projects:   ${{ parameters.allProjects }}
+      arguments:  ${{ parameters.commonArguments }} $(AddRestoreArguments)
+  - task: DotNetCoreCLI@2
+    displayName:  dotnet build ${{ parameters.addStaticConfigurationArguments }}
+    inputs:
+      command:    build
+      projects:   ${{ parameters.allProjects }}
+      arguments:  ${{ parameters.commonArguments }} ${{ parameters.addStaticConfigurationArguments }} ${{ parameters.addVarConfigurationArguments }} $(AddBuildArguments)
+  - task: DotNetCoreCLI@2
+    displayName:  dotnet test ${{ parameters.addStaticConfigurationArguments }}
+    condition:    ne(variables['SkipStepTestRun'], 'true')
+    inputs:
+      command:    test
+      projects:   ${{ parameters.testProjects }}
+      arguments:  ${{ parameters.commonArguments }} ${{ parameters.addStaticConfigurationArguments }} ${{ parameters.addVarConfigurationArguments }} $(AddTestArguments)
+      publishTestResults: true
+  - task: DotNetCoreCLI@2
+    displayName:  dotnet pack ${{ parameters.addStaticConfigurationArguments }}
+    inputs:
+      command:    custom
+      custom:     pack
+      projects:   ${{ parameters.sourceProjects }}
+      arguments:  --output $(Build.ArtifactStagingDirectory)/${{ parameters.arftifactNameSuffix }} ${{ parameters.commonArguments }} ${{ parameters.addStaticConfigurationArguments }} ${{ parameters.addVarConfigurationArguments }} $(AddPackArguments)
+  - task: DotNetCoreCLI@2
+    displayName:  dotnet publish ${{ parameters.addStaticConfigurationArguments }}
+    inputs:
+      command:            publish
+      projects:           ${{ parameters.sourceProjects }}
+      arguments:          --output $(Build.ArtifactStagingDirectory)/${{ parameters.arftifactNameSuffix }} ${{ parameters.commonArguments }} ${{ parameters.addStaticConfigurationArguments }} ${{ parameters.addVarConfigurationArguments }} $(AddPublishArguments)
+      publishWebProjects: ${{ parameters.publishWebProjects }}
+      zipAfterPublish:    false
+  - task: PublishBuildArtifacts@1
+    displayName: Upload Published Artifacts
+    inputs:
+      PathtoPublish:  $(Build.ArtifactStagingDirectory)/${{ parameters.arftifactNameSuffix }}
+      ArtifactName:   $(System.TeamProject)-${{ parameters.arftifactNameSuffix }}
+    continueOnError: true

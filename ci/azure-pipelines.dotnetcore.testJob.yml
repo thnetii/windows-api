@@ -1,0 +1,20 @@
+parameters:
+  jobIdSuffix:
+  jobDisplayName:
+  condition:                  true
+  testProjects:               '[Tt]est/*/*.csproj'
+  commonArguments:            -p:BuildId=$(Build.BuildId)
+  addStaticConfigurationArguments:
+  addVarConfigurationArguments: $(AddCommonArguments)
+jobs:
+- job: testRun${{ parameters.jobIdSuffix }}
+  displayName:  ${{ parameters.jobDisplayName }}
+  condition:    ${{ parameters.condition }}
+  steps:
+  - task: DotNetCoreCLI@2
+    displayName:  dotnet test ${{ parameters.addStaticConfigurationArguments }}
+    inputs:
+      command:    test
+      projects:   ${{ parameters.testProjects }}
+      arguments:  ${{ parameters.commonArguments }} ${{ parameters.addStaticConfigurationArguments }} ${{ parameters.addVarConfigurationArguments }} $(AddTestArguments)
+      publishTestResults: true

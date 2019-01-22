@@ -1,20 +1,22 @@
 name: $(Date:yyyy-MM-dd)-rev$(Rev:r)
-variables:
-  commonArguments:              -p:BuildId=$(Build.BuildId)
 jobs:
-- template: azure-pipelines.dotnetcore.buildJob.yml
-  parameters:
-    jobIdSuffix:                DebugConfiguration
-    jobDisplayName:             Debug Configuration
-    condition:                  ne(variables['SkipConfigurationDebug'], 'true')
-    addStaticConfigurationArguments:  --configuration Debug
-    addVarConfigurationArguments:      $(AddCommonArguments) $(AddDebugArguments)
-    arftifactNameSuffix:        debug
-- template: azure-pipelines.dotnetcore.buildJob.yml
-  parameters:
-    jobIdSuffix:                ReleaseConfiguration
-    jobDisplayName:             Release Configuration
-    condition:                  ne(variables['SkipConfigurationRelease'], 'true')
-    addStaticConfigurationArguments:  --configuration Release
-    addVarConfigurationArguments:     $(AddCommonArguments) $(AddReleaseArguments)
-    arftifactNameSuffix:        release
+- job: buildDebugConfiguration
+  displayName: Debug Configuration
+  condition:    ne(variables['SkipConfigurationDebug'], 'true')
+  steps:
+  - template: download-azuredevops-msbuild-logger.yml
+  - template: azure-pipelines.dotnetcore.buildSteps.yml
+    parameters:
+      configurationId:            Debug
+      addConfigurationArguments:  $(AddDebugArguments)
+      arftifactNameSuffix:        debug
+- job: buildReleaseConfiguration
+  displayName: Release Configuration
+  condition:    ne(variables['SkipConfigurationRelease'], 'true')
+  steps:
+  - template: download-azuredevops-msbuild-logger.yml
+  - template: azure-pipelines.dotnetcore.buildSteps.yml
+    parameters:
+      configurationId:            Release
+      addConfigurationArguments:  $(AddReleaseArguments)
+      arftifactNameSuffix:        release

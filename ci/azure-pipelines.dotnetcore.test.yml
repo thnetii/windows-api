@@ -1,18 +1,20 @@
 name: $(Date:yyyy-MM-dd)-rev$(Rev:r)
-variables:
-  commonArguments:              -p:BuildId=$(Build.BuildId)
 jobs:
-- template: azure-pipelines.dotnetcore.testJob.yml
-  parameters:
-    jobIdSuffix:                DebugConfiguration
-    jobDisplayName:             Debug Configuration
-    condition:                  ne(variables['SkipConfigurationDebug'], 'true')
-    addStaticConfigurationArguments:  --configuration Debug
-    addVarConfigurationArguments:      $(AddCommonArguments) $(AddDebugArguments)
-- template: azure-pipelines.dotnetcore.testJob.yml
-  parameters:
-    jobIdSuffix:                ReleaseConfiguration
-    jobDisplayName:             Release Configuration
-    condition:                  ne(variables['SkipConfigurationRelease'], 'true')
-    addStaticConfigurationArguments:  --configuration Release
-    addVarConfigurationArguments:     $(AddCommonArguments) $(AddReleaseArguments)
+- job: testRunDebugConfiguration
+  displayName: Debug Configuration
+  condition:    ne(variables['SkipConfigurationDebug'], 'true')
+  steps:
+  - template: download-azuredevops-msbuild-logger.yml
+  - template: azure-pipelines.dotnetcore.testSteps.yml
+    parameters:
+      configurationId:            Debug
+      addConfigurationArguments:  $(AddDebugArguments)
+- job: testRunReleaseConfiguration
+  displayName: Release Configuration
+  condition:    ne(variables['SkipConfigurationRelease'], 'true')
+  steps:
+  - template: download-azuredevops-msbuild-logger.yml
+  - template: azure-pipelines.dotnetcore.testSteps.yml
+    parameters:
+      configurationId:            Release
+      addConfigurationArguments:  $(AddReleaseArguments)

@@ -5,6 +5,12 @@ parameters:
   addConfigurationArguments:
 steps:
 - task: DotNetCoreCLI@2
+  displayName:  dotnet build-server shutdown
+  inputs:
+    command:    custom
+    custom:     build-server
+    arguments:  shutdown
+- task: DotNetCoreCLI@2
   displayName:  dotnet test --configuration ${{ parameters.configurationId }}
   condition:    ne(variables['SkipStepTestRun'], 'true')
   inputs:

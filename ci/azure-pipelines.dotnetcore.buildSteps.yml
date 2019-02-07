@@ -11,6 +11,12 @@ parameters:
   publishWebProjects:         false
 steps:
 - task: DotNetCoreCLI@2
+  displayName:  dotnet build-server shutdown
+  inputs:
+    command:    custom
+    custom:     build-server
+    arguments:  shutdown
+- task: DotNetCoreCLI@2
   displayName:  dotnet restore
   inputs:
     command:    custom

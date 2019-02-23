@@ -1,0 +1,22 @@
+name: $(Date:yyyy-MM-dd)-rev$(Rev:r)
+jobs:
+- job: buildDebugConfiguration
+  displayName: Debug Configuration
+  condition:    ne(variables['SkipConfigurationDebug'], 'true')
+  steps:
+  - template: download-azuredevops-msbuild-logger.yml
+  - template: azure-pipelines.dotnetcore.buildSteps.yml
+    parameters:
+      configurationId:            Debug
+      addConfigurationArguments:  $(AddDebugArguments)
+      arftifactNameSuffix:        debug
+- job: buildReleaseConfiguration
+  displayName: Release Configuration
+  condition:    ne(variables['SkipConfigurationRelease'], 'true')
+  steps:
+  - template: download-azuredevops-msbuild-logger.yml
+  - template: azure-pipelines.dotnetcore.buildSteps.yml
+    parameters:
+      configurationId:            Release
+      addConfigurationArguments:  $(AddReleaseArguments)
+      arftifactNameSuffix:        release

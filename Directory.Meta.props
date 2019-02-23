@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <PropertyGroup Label="Common Package Metadata">
+    <Authors>Fredrik Høisæther Rasch</Authors>
+    <Product>TH-NETII Windows API libraries</Product>
+    <Company>TH-NETII Rasch Solutions</Company>
+    <Copyright>Written by Fredrik Høisæther Rasch, $([System.DateTime]::Now.Year)</Copyright>
+    <PackageProjectUrl>https://github.com/thnetii/windows-api</PackageProjectUrl>
+  </PropertyGroup>
+  <PropertyGroup Label="Repository Metadata">
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>$(PackageProjectUrl).git</RepositoryUrl>
+  </PropertyGroup>
+  <PropertyGroup Label="License">
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+</Project>

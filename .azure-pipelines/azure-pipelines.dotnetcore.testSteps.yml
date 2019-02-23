@@ -1,0 +1,21 @@
+parameters:
+  testProjects:               '[Tt]est/*/*.csproj'
+  commonArguments:            '-p:BuildId=$(Build.BuildId) "-logger:THNETII.AzureDevOps.MSBuild.Logger.AzureDevOpsLogger,$(Build.SourcesDirectory)/ci/THNETII.AzureDevOps.MSBuild.Logger/THNETII.AzureDevOps.MSBuild.Logger.dll"'
+  configurationId:
+  addConfigurationArguments:
+steps:
+- task: DotNetCoreCLI@2
+  displayName:  dotnet build-server shutdown
+  condition:    ne(variables['SkipStepTestRun'], 'true')
+  inputs:
+    command:    custom
+    custom:     build-server
+    arguments:  shutdown
+- task: DotNetCoreCLI@2
+  displayName:  dotnet test --configuration ${{ parameters.configurationId }}
+  condition:    ne(variables['SkipStepTestRun'], 'true')
+  inputs:
+    command:    test
+    projects:   ${{ parameters.testProjects }}
+    arguments:  ${{ parameters.commonArguments }} $(AddCommonArguments) --configuration ${{ parameters.configurationId }} ${{ parameters.addConfigurationArguments }} $(AddTestArguments)
+    publishTestResults: true

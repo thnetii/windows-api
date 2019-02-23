@@ -1,0 +1,63 @@
+parameters:
+  allProjects:                '*.sln'
+  sourceProjects:             '[Ss]rc/*/*.csproj'
+  testProjects:               '[Tt]est/*/*.csproj'
+  commonArguments:            '-p:BuildId=$(Build.BuildId) "-logger:THNETII.AzureDevOps.MSBuild.Logger.AzureDevOpsLogger,$(Build.SourcesDirectory)/ci/THNETII.AzureDevOps.MSBuild.Logger/THNETII.AzureDevOps.MSBuild.Logger.dll"'
+  configurationId:
+  addConfigurationArguments:
+  doTestTasks:                true
+  doPublishTasks:             true
+  arftifactNameSuffix:
+  publishWebProjects:         false
+steps:
+- task: DotNetCoreCLI@2
+  displayName:  dotnet build-server shutdown
+  inputs:
+    command:    custom
+    custom:     build-server
+    arguments:  shutdown
+- task: DotNetCoreCLI@2
+  displayName:  dotnet restore
+  inputs:
+    command:    custom
+    custom:     restore
+    projects:   ${{ parameters.allProjects }}
+    arguments:  ${{ parameters.commonArguments }} $(AddCommonArguments) $(AddRestoreArguments)
+- task: DotNetCoreCLI@2
+  displayName:  dotnet build --configuration ${{ parameters.configurationId }}
+  inputs:
+    command:    build
+    projects:   ${{ parameters.allProjects }}
+    arguments:  ${{ parameters.commonArguments }} $(AddCommonArguments) --configuration ${{ parameters.configurationId }} ${{ parameters.addConfigurationArguments }} $(AddBuildArguments)
+- ${{ if eq(parameters.doTestTasks, True) }}:
+  - template: azure-pipelines.dotnetcore.testSteps.yml
+    parameters:
+      testProjects:               ${{ parameters.testProjects }}
+      commonArguments:            ${{ parameters.commonArguments }}
+      configurationId:            ${{ parameters.configurationId }}
+      addConfigurationArguments:  ${{ parameters.addConfigurationArguments }}
+- ${{ if eq(parameters.doPublishTasks, True) }}:
+  - task: DotNetCoreCLI@2
+    displayName:  dotnet pack --configuration ${{ parameters.configurationId }}
+    condition:    ne(variables['SkipPublishing'], 'true')
+    inputs:
+      command:    custom
+      custom:     pack
+      projects:   ${{ parameters.sourceProjects }}
+      arguments:  --output $(Build.ArtifactStagingDirectory)/${{ parameters.arftifactNameSuffix }} ${{ parameters.commonArguments }} $(AddCommonArguments) --configuration ${{ parameters.configurationId }} ${{ parameters.addConfigurationArguments }} $(AddPackArguments)
+  - task: DotNetCoreCLI@2
+    displayName:  dotnet publish --configuration ${{ parameters.configurationId }}
+    condition:    ne(variables['SkipPublishing'], 'true')
+    inputs:
+      command:            publish
+      projects:           ${{ parameters.sourceProjects }}
+      arguments:          --output $(Build.ArtifactStagingDirectory)/${{ parameters.arftifactNameSuffix }} ${{ parameters.commonArguments }} $(AddCommonArguments) --configuration ${{ parameters.configurationId }} ${{ parameters.addConfigurationArguments }} $(AddPublishArguments)
+      publishWebProjects: ${{ parameters.publishWebProjects }}
+      zipAfterPublish:    false
+  - task: PublishBuildArtifacts@1
+    displayName: Upload Published Artifacts
+    condition:    ne(variables['SkipPublishing'], 'true')
+    inputs:
+      PathtoPublish:  $(Build.ArtifactStagingDirectory)/${{ parameters.arftifactNameSuffix }}
+      ArtifactName:   $(System.TeamProject)-${{ parameters.arftifactNameSuffix }}
+    continueOnError: true

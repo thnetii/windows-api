@@ -1,51 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project>
-  <PropertyGroup Label="Common Package Metadata">
-    <Authors>Fredrik Høisæther Rasch</Authors>
-    <Product>TH-NETII Windows API libraries</Product>
-    <Company>TH-NETII Rasch Solutions</Company>
-    <Copyright>Written by Fredrik Høisæther Rasch, $([System.DateTime]::Now.Year)</Copyright>
-  </PropertyGroup>
+  <Import Condition="Exists('$(MSBuildThisFileDirectory)\Directory.Meta.props')" Project="$(MSBuildThisFileDirectory)\Directory.Meta.props" />
   <PropertyGroup Condition="'$(Configuration)'=='Debug'">
     <DebugType>full</DebugType>
   </PropertyGroup>
   <PropertyGroup>
     <TargetFramework Condition="'$(BuildDefaultTargetFramework)'!=''">netstandard2.0</TargetFramework>
   </PropertyGroup>
-  <PropertyGroup Label="Repository Metadata">
-    <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>https://github.com/thnetii/windows-api.git</RepositoryUrl>
-  </PropertyGroup>
   <PropertyGroup>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
-    <PackageLicenseUrl>https://github.com/thnetii/windows-api/raw/master/LICENSE</PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/thnetii/windows-api</PackageProjectUrl>
     <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
   </PropertyGroup>
   <PropertyGroup Label="BasePath">
     <BaseOutputPath>$(MSBuildThisFileDirectory)bin\</BaseOutputPath>
     <BaseIntermediateOutputPath>$(MSBuildThisFileDirectory)obj\$(MSBuildProjectName)\</BaseIntermediateOutputPath>
   </PropertyGroup>
-  <PropertyGroup Label="Version">
-    <VersionPrefix>10.0.17134</VersionPrefix>
-    <FileVersion>$(VersionPrefix)</FileVersion>
-    <AssemblyVersion Condition="'$(BuildId)'==''">$(FileVersion)</AssemblyVersion>
-    <AssemblyVersion Condition="'$(BuildId)'!=''">$(FileVersion).$(BuildId)</AssemblyVersion>
-    <VersionSuffix Condition="'$(BuildId)'!='' And '$(VersionSuffix)'!=''">$(VersionSuffix)-b$(BuildId)</VersionSuffix>
-    <VersionSuffix Condition="'$(BuildId)'!='' And '$(VersionSuffix)'==''">$(VersionSuffix)b$(BuildId)</VersionSuffix>
-  </PropertyGroup>
   <PropertyGroup>
     <Features>IOperation</Features>
     <CodeAnalysisRuleSet>$(MSBuildThisFileDirectory)AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Import Condition="Exists('$(MSBuildThisFileDirectory)\Directory.Version.props')" Project="$(MSBuildThisFileDirectory)\Directory.Version.props" />
+  <PropertyGroup Label="Version" Condition="'$(VersionPrefix)'!=''">
+    <!--<VersionPrefix>0.0.1</VersionPrefix>-->
+    <FileVersion>$(VersionPrefix)</FileVersion>
+    <AssemblyVersion Condition="'$(BuildId)'==''">$(FileVersion)</AssemblyVersion>
+    <AssemblyVersion Condition="'$(BuildId)'!=''">$(FileVersion).$(BuildId)</AssemblyVersion>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.6.3" PrivateAssets="All" />
     <PackageReference Include="Microsoft.DotNet.Analyzers.Compatibility" Version="0.2.12-alpha" PrivateAssets="All" />
   </ItemGroup>
   <ItemGroup Label="SourceLink">
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0-beta2-18618-05">
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0-beta-63127-02">
       <PrivateAssets>All</PrivateAssets>
     </PackageReference>
   </ItemGroup>

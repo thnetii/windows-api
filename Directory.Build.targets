@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <Import Condition="Exists('$(MSBuildThisFileDirectory)\Directory.Version.props')" Project="$(MSBuildThisFileDirectory)\Directory.Version.props" />
+  <PropertyGroup Label="Version" Condition="'$(VersionPrefix)'!=''">
+    <!--<VersionPrefix>0.0.1</VersionPrefix>-->
+    <FileVersion>$(VersionPrefix)</FileVersion>
+    <AssemblyVersion Condition="'$(BuildId)'==''">$(FileVersion)</AssemblyVersion>
+    <AssemblyVersion Condition="'$(BuildId)'!=''">$(FileVersion).$(BuildId)</AssemblyVersion>
+  </PropertyGroup>
+</Project>

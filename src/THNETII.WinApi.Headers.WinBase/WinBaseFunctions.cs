@@ -83,7 +83,7 @@ namespace THNETII.WinApi.Native.WinBase
         /// <param name="uBytes">The number of bytes to allocate. If this parameter is <c>0</c> (zero) and the <paramref name="uFlags"/> parameter specifies <see cref="LMEM_MOVEABLE"/>, the function returns a handle to a memory object that is marked as discarded.</param>
         /// <returns>
         /// <para>If the function succeeds, the return value is a handle to the newly allocated memory object.</para>
-        /// <para>If the function fails, the return value is an <see cref="HLOCAL"/> value representing a null-pointer (calling <see cref="IIntPtrExtensions.IsNull(IIntPtr)"/> returns <c>true</c>). To get extended error information, call <see cref="Marshal.GetLastWin32Error"/>.</para>
+        /// <para>If the function fails, the return value is an <see cref="HLOCAL"/> value representing a null-pointer (calling <see cref="IIntPtrExtensions.IsNull{TPtr}(TPtr)"/> returns <c>true</c>). To get extended error information, call <see cref="Marshal.GetLastWin32Error"/>.</para>
         /// </returns>
         /// <remarks>
         /// <para>Windows memory management does not provide a separate local heap and global heap. Therefore, the <see cref="LocalAlloc"/> and <see cref="GlobalAlloc"/> functions are essentially the same.</para>
@@ -139,7 +139,7 @@ namespace THNETII.WinApi.Native.WinBase
         /// </param>
         /// <returns>
         /// <para>If the function succeeds, the return value is a handle to the reallocated memory object.</para>
-        /// <para>If the function fails, the return value is an <see cref="HLOCAL"/> value representing a null-pointer (calling <see cref="IIntPtrExtensions.IsNull(IIntPtr)"/> returns <c>true</c>). To get extended error information, call <see cref="Marshal.GetLastWin32Error"/>.</para>
+        /// <para>If the function fails, the return value is an <see cref="HLOCAL"/> value representing a null-pointer (calling <see cref="IIntPtrExtensions.IsNull{TPtr}(TPtr)"/> returns <c>true</c>). To get extended error information, call <see cref="Marshal.GetLastWin32Error"/>.</para>
         /// </returns>
         /// <remarks>
         /// <para>If <see cref="LocalReAlloc"/> fails, the original memory is not freed, and the original handle and pointer are still valid.</para>

@@ -21,7 +21,7 @@ namespace THNETII.WinApi.Native.WinBase
         /// <param name="hlocMem">A handle to the local memory object. This handle is returned by either the <see cref="LocalAlloc"/> or <see cref="LocalReAlloc"/> function.</param>
         /// <returns>
         /// <para>If the function succeeds, the return value is a handle to the local memory object.</para>
-        /// <para>If the function fails, the return value is an <see cref="HLOCAL"/> value representing a null-pointer (calling <see cref="IIntPtrExtensions.IsNull(IIntPtr)"/> returns <c>true</c>). To get extended error information, call <see cref="Marshal.GetLastWin32Error"/>.</para>
+        /// <para>If the function fails, the return value is an <see cref="HLOCAL"/> value representing a null-pointer (calling <see cref="IIntPtrExtensions.IsNull{TPtr}(TPtr)"/> returns <c>true</c>). To get extended error information, call <see cref="Marshal.GetLastWin32Error"/>.</para>
         /// </returns>
         /// <remarks>
         /// Although <see cref="LocalDiscard"/> discards the object's memory block, the handle to the object remains valid. A process can subsequently pass the handle to the <see cref="LocalReAlloc"/> function to allocate another local memory object identified by the same handle.

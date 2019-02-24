@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 using THNETII.InteropServices.NativeMemory;
-using static THNETII.WinApi.Native.WinNT.WinNTConstants;
 
 namespace THNETII.WinApi.Native.WinNT
 {
@@ -9,12 +8,35 @@ namespace THNETII.WinApi.Native.WinNT
     /// Scope table structure definition.
     /// </summary>
     [StructLayout(LayoutKind.Sequential)]
-    public struct SCOPE_TABLE
+    public struct SCOPE_TABLE_HEADER
     {
         public int Count;
-        [MarshalAs(UnmanagedType.ByValArray, SizeConst = ANYSIZE_ARRAY)]
-        public SCOPE_RECORD[] ScopeRecord;
+        public SCOPE_RECORD ScopeRecord;
     }
+
+    [StructLayout(LayoutKind.Sequential)]
+    public struct PSCOPE_TABLE : IIntPtr
+    {
+        public PSCOPE_TABLE(IntPtr ptr) => Pointer = ptr;
+        public PSCOPE_TABLE(IntPtr<SCOPE_TABLE_HEADER> ptr) => Pointer = ptr.Pointer;
+        public PSCOPE_TABLE(IIntPtr<SCOPE_TABLE_HEADER> ptr) => Pointer = (ptr?.Pointer).GetValueOrDefault();
+        public IntPtr Pointer { get; }
+        public ref int Count => ref Pointer.AsRefStruct<SCOPE_TABLE_HEADER>().Count;
+        public Span<SCOPE_RECORD> ScopeRecord
+        {
+            get
+            {
+                var ptr = Pointer;
+                if (ptr == IntPtr.Zero)
+                    return Span<SCOPE_RECORD>.Empty;
+                var count = ptr.AsRefStruct<SCOPE_TABLE_HEADER>().Count;
+                var pScopeRecord = ptr + Marshal.OffsetOf<SCOPE_TABLE_HEADER>(nameof(SCOPE_TABLE_HEADER.ScopeRecord)).ToInt32();
+                try { return pScopeRecord.AsRefStructSpan<SCOPE_RECORD>(count); }
+                catch (ArgumentException argExcept) { throw new InvalidOperationException(argExcept.Message, argExcept); }
+            }
+        }
+    }
+
 
     [StructLayout(LayoutKind.Sequential)]
     public struct SCOPE_RECORD
@@ -23,73 +45,5 @@ namespace THNETII.WinApi.Native.WinNT
         public int EndAddress;
         public int HandlerAddress;
         public int JumpTarget;
-    }
-
-    public class SCOPE_TABLE_MARSHAL
-#if !NETSTANDARD1_6
-        : ICustomMarshaler
-#endif // !NETSTANDARD1_6
-    {
-        private static readonly int offsetScopeRecord =
-            Marshal.OffsetOf<SCOPE_TABLE>(nameof(SCOPE_TABLE.ScopeRecord)).ToInt32();
-        private static readonly int offsetScopeRecordPlusOne =
-            offsetScopeRecord + SizeOf<SCOPE_RECORD>.Bytes * 1;
-
-        public void CleanUpManagedData(object ManagedObj)
-        {
-            if (ManagedObj is IDisposable disposable)
-                disposable.Dispose();
-        }
-
-        public void CleanUpNativeData(IntPtr pNativeData) =>
-            Marshal.FreeCoTaskMem(pNativeData);
-
-#if NETSTANDARD1_6
-        internal int GetNativeDataSize()
-#else // !NETSTANDARD1_6
-        int ICustomMarshaler.GetNativeDataSize()
-#endif // !NETSTANDARD1_6
-        { return -1; }
-
-        public IntPtr MarshalManagedToNative(object ManagedObj)
-        {
-            if (!(ManagedObj is SCOPE_TABLE scopeTable))
-                return IntPtr.Zero;
-
-            int cbScopeTable = SizeOf<SCOPE_TABLE>.Bytes;
-            int additionalRecords = ((scopeTable.ScopeRecord?.Length ?? 0) > ANYSIZE_ARRAY)
-                ? scopeTable.ScopeRecord.Length - ANYSIZE_ARRAY
-                : 0;
-            cbScopeTable += additionalRecords * SizeOf<SCOPE_RECORD>.Bytes;
-
-            var pScopeTable = Marshal.AllocCoTaskMem(cbScopeTable);
-            Marshal.StructureToPtr(scopeTable, pScopeTable, fDeleteOld: false);
-            IntPtr pRecord = pScopeTable + offsetScopeRecordPlusOne;
-            for (int i = 1; i < scopeTable.ScopeRecord.Length; i++, pRecord += SizeOf<SCOPE_RECORD>.Bytes)
-                Marshal.StructureToPtr(scopeTable.ScopeRecord[i], pRecord, fDeleteOld: false);
-            return pScopeTable;
-        }
-
-        public object MarshalNativeToManaged(IntPtr pNativeData)
-        {
-            if (pNativeData == IntPtr.Zero)
-                return default(SCOPE_TABLE);
-
-            var scopeTable = Marshal.PtrToStructure<SCOPE_TABLE>(pNativeData);
-            if (scopeTable.Count < 2)
-                return scopeTable;
-            var records = new SCOPE_RECORD[scopeTable.Count];
-            IntPtr pRecord = pNativeData + offsetScopeRecord;
-            for (int i = 0; i < scopeTable.Count; i++, pRecord += SizeOf<SCOPE_RECORD>.Bytes)
-                records[i] = Marshal.PtrToStructure<SCOPE_RECORD>(pRecord);
-            scopeTable.ScopeRecord = records;
-            return scopeTable;
-        }
-
-        public static SCOPE_TABLE_MARSHAL GetInstance() =>
-            new SCOPE_TABLE_MARSHAL();
-
-        public static SCOPE_TABLE_MARSHAL GetInstance(string cookie) =>
-            new SCOPE_TABLE_MARSHAL();
     }
 }

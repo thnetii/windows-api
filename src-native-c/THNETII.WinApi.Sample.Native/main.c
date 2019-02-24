@@ -2,7 +2,7 @@
 
 int main(int argc, char* argv[])
 {
-    HLOCAL instance;
+    XSAVE_FORMAT instance;
     const int size = sizeof(instance);
     const int value = DBG_CONTROL_C;
 

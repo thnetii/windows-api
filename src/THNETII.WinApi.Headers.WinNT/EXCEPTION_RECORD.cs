@@ -1,7 +1,8 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
 using System.Runtime.InteropServices;
 using THNETII.InteropServices.NativeMemory;
-
+using THNETII.InteropServices.Runtime;
 using static THNETII.WinApi.Native.WinNT.EXCEPTION_CODE;
 using static THNETII.WinApi.Native.WinNT.EXCEPTION_FLAGS;
 
@@ -44,8 +45,35 @@ namespace THNETII.WinApi.Native.WinNT
         /// The number of parameters associated with the exception. This is the number of defined elements in the <see cref="ExceptionInformation"/> array.
         /// </summary>
         public int NumberParameters;
+        #region public UIntPtr ExceptionInformation[EXCEPTION_MAXIMUM_PARAMETERS];
+        internal ExceptionInformationField ExceptionInformationValue;
+        [StructLayout(LayoutKind.Sequential)]
+        internal struct ExceptionInformationField
+        {
+            public const int Length = WinNTConstants.EXCEPTION_MAXIMUM_PARAMETERS;
+            public ref UIntPtr this[int index] => ref Span[index];
+            public Span<UIntPtr> Span => MemoryMarshal.Cast<ExceptionInformationField, UIntPtr>(SpanOverRef.GetSpan(ref this));
+#pragma warning disable IDE0044 // Add readonly modifier
+            private UIntPtr p0;
+            private UIntPtr p1;
+            private UIntPtr p2;
+            private UIntPtr p3;
+            private UIntPtr p4;
+            private UIntPtr p5;
+            private UIntPtr p6;
+            private UIntPtr p7;
+            private UIntPtr p8;
+            private UIntPtr p9;
+            private UIntPtr p10;
+            private UIntPtr p11;
+            private UIntPtr p12;
+            private UIntPtr p13;
+            private UIntPtr p14;
+#pragma warning restore IDE0044 // Add readonly modifier
+        }
+
         /// <summary>
-        /// An array of additional arguments that describe the exception. The RaiseException function can specify this array of arguments. For most exception codes, the array elements are undefined.
+        /// A span of additional arguments that describe the exception. The RaiseException function can specify this array of arguments. For most exception codes, the array elements are undefined.
         /// </summary>
         /// <remarks>
         /// The following table describes the exception codes whose array elements are defined.
@@ -68,17 +96,17 @@ namespace THNETII.WinApi.Native.WinNT
         /// </item>
         /// </list>
         /// </remarks>
-        [MarshalAs(UnmanagedType.ByValArray, ArraySubType = UnmanagedType.SysUInt, SizeConst = WinNTConstants.EXCEPTION_MAXIMUM_PARAMETERS)]
-        public UIntPtr[] ExceptionInformation;
-
-        public Span<UIntPtr> ExceptionInformationAsSpan()
+        [SuppressMessage("Usage", "PC001: API not supported on all platforms", Justification = "https://github.com/dotnet/platform-compat/issues/123")]
+        public Span<UIntPtr> ExceptionInformation
         {
-            int length = Math.Min(
-                NumberParameters < 0 ? int.MaxValue : NumberParameters,
-                WinNTConstants.EXCEPTION_MAXIMUM_PARAMETERS
-                );
-            return new Span<UIntPtr>(ExceptionInformation, start: 0, length);
+            get
+            {
+                if (NumberParameters < 0 || NumberParameters > ExceptionInformationField.Length)
+                    return ExceptionInformationValue.Span;
+                return ExceptionInformationValue.Span.Slice(NumberParameters);
+            }
         }
+        #endregion
     }
 
     [StructLayout(LayoutKind.Sequential)]

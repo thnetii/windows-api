@@ -33,7 +33,7 @@ namespace THNETII.WinApi.Native.Metadata
             typeof(M128A),
             typeof(OBJECTID),
             typeof(PROCESSOR_NUMBER),
-            typeof(SCOPE_TABLE), typeof(SCOPE_RECORD),
+            typeof(SCOPE_TABLE_HEADER), typeof(SCOPE_RECORD),
             typeof(SINGLE_LIST_ENTRY), typeof(PSINGLE_LIST_ENTRY),
             typeof(XSAVE_AREA), typeof(PXSAVE_AREA),
             typeof(XSAVE_AREA_HEADER),

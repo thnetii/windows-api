@@ -17,10 +17,15 @@ namespace THNETII.WinApi.Native.WinNT
         public int DataOffset;
         public int DataSelector;
         #region public byte RegisterArea[SIZE_OF_80387_REGISTERS];
-        private FieldRegisterArea fieldRegisterArea;
+        internal FieldRegisterArea fieldRegisterArea;
         [StructLayout(LayoutKind.Explicit, Size = sizeof(byte) * SIZE_OF_80387_REGISTERS)]
-        private struct FieldRegisterArea { }
-        public Span<byte> RegisterArea => MemoryMarshal.AsBytes(SpanOverRef.GetSpan(ref fieldRegisterArea));
+        internal struct FieldRegisterArea
+        {
+            public const int Length = sizeof(byte) * SIZE_OF_80387_REGISTERS;
+            public ref byte this[int index] => ref Span[index];
+            public Span<byte> Span => MemoryMarshal.AsBytes(SpanOverRef.GetSpan(ref this));
+        }
+        public Span<byte> RegisterArea => fieldRegisterArea.Span;
         #endregion
 
         public int Spare0;

@@ -110,12 +110,17 @@ namespace THNETII.WinApi.Native.WinNT
         public int SegSs;
 
         #region public byte ExtendedRegisters[MAXIMUM_SUPPORTED_EXTENSION];
-        private ExtendedRegistersField fieldExtendedRegisters;
+        internal ExtendedRegistersField fieldExtendedRegisters;
         [StructLayout(LayoutKind.Explicit, Size = WinNTConstants.MAXIMUM_SUPPORTED_EXTENSION * sizeof(byte))]
-        private struct ExtendedRegistersField { }
+        internal struct ExtendedRegistersField
+        {
+            public const int Length = WinNTConstants.MAXIMUM_SUPPORTED_EXTENSION * sizeof(byte);
+            public ref byte this[int index] => ref Span[index];
+            public Span<byte> Span => MemoryMarshal.AsBytes(SpanOverRef.GetSpan(ref this));
+        }
         /// <summary>Only valid if <see cref="CONTEXT_EXTENDED_REGISTERS"/> is set in <see cref="ContextFlags"/>.</summary>
         /// <remarks>The format and contexts are processor specific</remarks>
-        public Span<byte> ExtendedRegisters => MemoryMarshal.AsBytes(SpanOverRef.GetSpan(ref fieldExtendedRegisters)); 
+        public Span<byte> ExtendedRegisters => fieldExtendedRegisters.Span;
         #endregion
     }
 

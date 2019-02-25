@@ -1410,7 +1410,13 @@ namespace THNETII.WinApi.Native.WinNT
         //                                                                         //
         /////////////////////////////////////////////////////////////////////////////
 
-        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 9102
+        public static readonly ReadOnlyMemory<byte> SECURITY_NULL_SID_AUTHORITY = new byte[] { 0, 0, 0, 0, 0, 0 };
+        public static readonly ReadOnlyMemory<byte> SECURITY_WORLD_SID_AUTHORITY = new byte[] { 0, 0, 0, 0, 0, 1 };
+        public static readonly ReadOnlyMemory<byte> SECURITY_LOCAL_SID_AUTHORITY = new byte[] { 0, 0, 0, 0, 0, 2 };
+        public static readonly ReadOnlyMemory<byte> SECURITY_CREATOR_SID_AUTHORITY = new byte[] { 0, 0, 0, 0, 0, 3 };
+        public static readonly ReadOnlyMemory<byte> SECURITY_NON_UNIQUE_AUTHORITY = new byte[] { 0, 0, 0, 0, 0, 4 };
+        public static readonly ReadOnlyMemory<byte> SECURITY_RESOURCE_MANAGER_AUTHORITY = new byte[] { 0, 0, 0, 0, 0, 9 };
+
         public const int SECURITY_NULL_RID = 0x00000000;
         public const int SECURITY_WORLD_RID = 0x00000000;
         public const int SECURITY_LOCAL_RID = 0x00000000;
@@ -1471,7 +1477,7 @@ namespace THNETII.WinApi.Native.WinNT
         //                                                                           //
         ///////////////////////////////////////////////////////////////////////////////
 
-        public static ReadOnlySpan<byte> SECURITY_NT_AUTHORITY() => new byte[] { 0, 0, 0, 0, 0, 5 };   // ntifs
+        public static readonly ReadOnlyMemory<byte> SECURITY_NT_AUTHORITY = new byte[] { 0, 0, 0, 0, 0, 5 };   // ntifs
 
         public const int SECURITY_DIALUP_RID = 0x00000001;
         public const int SECURITY_NETWORK_RID = 0x00000002;
@@ -1674,7 +1680,7 @@ namespace THNETII.WinApi.Native.WinNT
         // Application Package Authority.
         //
 
-        public static ReadOnlySpan<byte> SECURITY_APP_PACKAGE_AUTHORITY() => new byte[] { 0, 0, 0, 0, 0, 15 };
+        public static readonly ReadOnlyMemory<byte> SECURITY_APP_PACKAGE_AUTHORITY = new byte[] { 0, 0, 0, 0, 0, 15 };
 
         public const int SECURITY_APP_PACKAGE_BASE_RID = 0x00000002;
         public const int SECURITY_BUILTIN_APP_PACKAGE_RID_COUNT = 2;
@@ -1716,7 +1722,7 @@ namespace THNETII.WinApi.Native.WinNT
         // Mandatory Label Authority.
         //
 
-        public static ReadOnlySpan<byte> SECURITY_MANDATORY_LABEL_AUTHORITY() => new byte[] { 0, 0, 0, 0, 0, 16 };
+        public static readonly ReadOnlyMemory<byte> SECURITY_MANDATORY_LABEL_AUTHORITY = new byte[] { 0, 0, 0, 0, 0, 16 };
         public const int SECURITY_MANDATORY_UNTRUSTED_RID = 0x00000000;
         public const int SECURITY_MANDATORY_LOW_RID = 0x00001000;
         public const int SECURITY_MANDATORY_MEDIUM_RID = 0x00002000;
@@ -1731,15 +1737,13 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public const int SECURITY_MANDATORY_MAXIMUM_USER_RID = SECURITY_MANDATORY_SYSTEM_RID;
 
-        public static int MANDATORY_LEVEL_TO_MANDATORY_RID(int IL) => (IL * 0x1000);
-
-        public static ReadOnlySpan<byte> SECURITY_SCOPED_POLICY_ID_AUTHORITY() => new byte[] { 0, 0, 0, 0, 0, 17 };
+        public static readonly ReadOnlyMemory<byte> SECURITY_SCOPED_POLICY_ID_AUTHORITY = new byte[] { 0, 0, 0, 0, 0, 17 };
 
         //
         // Authentication Authority
         //
 
-        public static ReadOnlySpan<byte> SECURITY_AUTHENTICATION_AUTHORITY() => new byte[] { 0, 0, 0, 0, 0, 18 };
+        public static readonly ReadOnlyMemory<byte> SECURITY_AUTHENTICATION_AUTHORITY = new byte[] { 0, 0, 0, 0, 0, 18 };
         public const int SECURITY_AUTHENTICATION_AUTHORITY_RID_COUNT = 1;
         public const int SECURITY_AUTHENTICATION_AUTHORITY_ASSERTED_RID = 0x00000001;
         public const int SECURITY_AUTHENTICATION_SERVICE_ASSERTED_RID = 0x00000002;
@@ -1752,7 +1756,7 @@ namespace THNETII.WinApi.Native.WinNT
         // Process Trust Authority
         //
 
-        public static ReadOnlySpan<byte> SECURITY_PROCESS_TRUST_AUTHORITY() => new byte[] { 0, 0, 0, 0, 0, 19 };
+        public static readonly ReadOnlyMemory<byte> SECURITY_PROCESS_TRUST_AUTHORITY = new byte[] { 0, 0, 0, 0, 0, 19 };
         public const int SECURITY_PROCESS_TRUST_AUTHORITY_RID_COUNT = 2;
 
         public const int SECURITY_PROCESS_PROTECTION_TYPE_FULL_RID = 0x00000400;

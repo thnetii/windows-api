@@ -1369,5 +1369,412 @@ namespace THNETII.WinApi.Native.WinNT
         public const int GENERIC_WRITE = 0x40000000;
         public const int GENERIC_EXECUTE = 0x20000000;
         public const int GENERIC_ALL = 0x10000000;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 8869
+        /// <summary>Current revision level</summary>
+        public const byte SID_REVISION = 1;
+        public const byte SID_MAX_SUB_AUTHORITIES = 15;
+        public const byte SID_RECOMMENDED_SUB_AUTHORITIES = 1;
+
+        public const int SECURITY_MAX_SID_SIZE = 68;
+
+        // 2 (S-)
+        // 4 (Rev(max: 255)-)
+        // 15 (
+        //      If (Auth < 2^32): Auth(max:4294967295)-
+        //      Else:             0xAuth(max:FFFFFFFFFFFF)-
+        //    )
+        // (11 * SID_MAX_SUB_AUTHORITIES) (SubN(max:4294967295)-)
+        // 1 (NULL character)
+        // = 187 (assuming SID_MAX_SUB_AUTHORITIES = 15)
+        public const int SECURITY_MAX_SID_STRING_CHARACTERS =
+            (2 + 4 + 15 + (11 * SID_MAX_SUB_AUTHORITIES) + 1);
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 9071
+        public const int SID_HASH_SIZE = 32;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 9071
+        /////////////////////////////////////////////////////////////////////////////
+        //                                                                         //
+        // Universal well-known SIDs                                               //
+        //                                                                         //
+        //     Null SID                     S-1-0-0                                //
+        //     World                        S-1-1-0                                //
+        //     Local                        S-1-2-0                                //
+        //     Creator Owner ID             S-1-3-0                                //
+        //     Creator Group ID             S-1-3-1                                //
+        //     Creator Owner Server ID      S-1-3-2                                //
+        //     Creator Group Server ID      S-1-3-3                                //
+        //                                                                         //
+        //     (Non-unique IDs)             S-1-4                                  //
+        //                                                                         //
+        /////////////////////////////////////////////////////////////////////////////
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 9102
+        public const int SECURITY_NULL_RID = 0x00000000;
+        public const int SECURITY_WORLD_RID = 0x00000000;
+        public const int SECURITY_LOCAL_RID = 0x00000000;
+        public const int SECURITY_LOCAL_LOGON_RID = 0x00000001;
+
+        public const int SECURITY_CREATOR_OWNER_RID = 0x00000000;
+        public const int SECURITY_CREATOR_GROUP_RID = 0x00000001;
+
+        public const int SECURITY_CREATOR_OWNER_SERVER_RID = 0x00000002;
+        public const int SECURITY_CREATOR_GROUP_SERVER_RID = 0x00000003;
+
+        public const int SECURITY_CREATOR_OWNER_RIGHTS_RID = 0x00000004;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 9115
+        ///////////////////////////////////////////////////////////////////////////////
+        //                                                                           //
+        // NT well-known SIDs                                                        //
+        //                                                                           //
+        //     NT Authority            S-1-5                                         //
+        //     Dialup                  S-1-5-1                                       //
+        //                                                                           //
+        //     Network                 S-1-5-2                                       //
+        //     Batch                   S-1-5-3                                       //
+        //     Interactive             S-1-5-4                                       //
+        //     (Logon IDs)             S-1-5-5-X-Y                                   //
+        //     Service                 S-1-5-6                                       //
+        //     AnonymousLogon          S-1-5-7       (aka null logon session)        //
+        //     Proxy                   S-1-5-8                                       //
+        //     Enterprise DC (EDC)     S-1-5-9       (aka domain controller account) //
+        //     Self                    S-1-5-10      (self RID)                      //
+        //     Authenticated User      S-1-5-11      (Authenticated user somewhere)  //
+        //     Restricted Code         S-1-5-12      (Running restricted code)       //
+        //     Terminal Server         S-1-5-13      (Running on Terminal Server)    //
+        //     Remote Logon            S-1-5-14      (Remote Interactive Logon)      //
+        //     This Organization       S-1-5-15                                      //
+        //                                                                           //
+        //     IUser                   S-1-5-17
+        //     Local System            S-1-5-18                                      //
+        //     Local Service           S-1-5-19                                      //
+        //     Network Service         S-1-5-20                                      //
+        //                                                                           //
+        //     (NT non-unique IDs)     S-1-5-0x15-... (NT Domain Sids)               //
+        //                                                                           //
+        //     (Built-in domain)       S-1-5-0x20                                    //
+        //                                                                           //
+        //     (Security Package IDs)  S-1-5-0x40                                    //
+        //     NTLM Authentication     S-1-5-0x40-10                                 //
+        //     SChannel Authentication S-1-5-0x40-14                                 //
+        //     Digest Authentication   S-1-5-0x40-21                                 //
+        //                                                                           //
+        //     Other Organization      S-1-5-1000    (>=1000 can not be filtered)    //
+        //                                                                           //
+        //                                                                           //
+        // NOTE: the relative identifier values (RIDs) determine which security      //
+        //       boundaries the SID is allowed to cross.  Before adding new RIDs,    //
+        //       a determination needs to be made regarding which range they should  //
+        //       be added to in order to ensure proper "SID filtering"               //
+        //                                                                           //
+        ///////////////////////////////////////////////////////////////////////////////
+
+        public static ReadOnlySpan<byte> SECURITY_NT_AUTHORITY() => new byte[] { 0, 0, 0, 0, 0, 5 };   // ntifs
+
+        public const int SECURITY_DIALUP_RID = 0x00000001;
+        public const int SECURITY_NETWORK_RID = 0x00000002;
+        public const int SECURITY_BATCH_RID = 0x00000003;
+        public const int SECURITY_INTERACTIVE_RID = 0x00000004;
+        public const int SECURITY_LOGON_IDS_RID = 0x00000005;
+        public const int SECURITY_LOGON_IDS_RID_COUNT = 3;
+        public const int SECURITY_SERVICE_RID = 0x00000006;
+        public const int SECURITY_ANONYMOUS_LOGON_RID = 0x00000007;
+        public const int SECURITY_PROXY_RID = 0x00000008;
+        public const int SECURITY_ENTERPRISE_CONTROLLERS_RID = 0x00000009;
+        public const int SECURITY_SERVER_LOGON_RID = SECURITY_ENTERPRISE_CONTROLLERS_RID;
+        public const int SECURITY_PRINCIPAL_SELF_RID = 0x0000000A;
+        public const int SECURITY_AUTHENTICATED_USER_RID = 0x0000000B;
+        public const int SECURITY_RESTRICTED_CODE_RID = 0x0000000C;
+        public const int SECURITY_TERMINAL_SERVER_RID = 0x0000000D;
+        public const int SECURITY_REMOTE_LOGON_RID = 0x0000000E;
+        public const int SECURITY_THIS_ORGANIZATION_RID = 0x0000000F;
+        public const int SECURITY_IUSER_RID = 0x00000011;
+        public const int SECURITY_LOCAL_SYSTEM_RID = 0x00000012;
+        public const int SECURITY_LOCAL_SERVICE_RID = 0x00000013;
+        public const int SECURITY_NETWORK_SERVICE_RID = 0x00000014;
+
+        public const int SECURITY_NT_NON_UNIQUE = 0x00000015;
+        public const int SECURITY_NT_NON_UNIQUE_SUB_AUTH_COUNT = 3;
+
+        public const int SECURITY_ENTERPRISE_READONLY_CONTROLLERS_RID = 0x00000016;
+
+        public const int SECURITY_BUILTIN_DOMAIN_RID = 0x00000020;
+        public const int SECURITY_WRITE_RESTRICTED_CODE_RID = 0x00000021;
+
+
+        public const int SECURITY_PACKAGE_BASE_RID = 0x00000040;
+        public const int SECURITY_PACKAGE_RID_COUNT = 2;
+        public const int SECURITY_PACKAGE_NTLM_RID = 0x0000000A;
+        public const int SECURITY_PACKAGE_SCHANNEL_RID = 0x0000000E;
+        public const int SECURITY_PACKAGE_DIGEST_RID = 0x00000015;
+
+        public const int SECURITY_CRED_TYPE_BASE_RID = 0x00000041;
+        public const int SECURITY_CRED_TYPE_RID_COUNT = 2;
+        public const int SECURITY_CRED_TYPE_THIS_ORG_CERT_RID = 0x00000001;
+
+        public const int SECURITY_MIN_BASE_RID = 0x00000050;
+
+        public const int SECURITY_SERVICE_ID_BASE_RID = 0x00000050;
+        public const int SECURITY_SERVICE_ID_RID_COUNT = 6;
+
+        public const int SECURITY_RESERVED_ID_BASE_RID = 0x00000051;
+
+        public const int SECURITY_APPPOOL_ID_BASE_RID = 0x00000052;
+        public const int SECURITY_APPPOOL_ID_RID_COUNT = 6;
+
+        public const int SECURITY_VIRTUALSERVER_ID_BASE_RID = 0x00000053;
+        public const int SECURITY_VIRTUALSERVER_ID_RID_COUNT = 6;
+
+        public const int SECURITY_USERMODEDRIVERHOST_ID_BASE_RID = 0x00000054;
+        public const int SECURITY_USERMODEDRIVERHOST_ID_RID_COUNT = 6;
+
+        public const int SECURITY_CLOUD_INFRASTRUCTURE_SERVICES_ID_BASE_RID = 0x00000055;
+        public const int SECURITY_CLOUD_INFRASTRUCTURE_SERVICES_ID_RID_COUNT = 6;
+
+        public const int SECURITY_WMIHOST_ID_BASE_RID = 0x00000056;
+        public const int SECURITY_WMIHOST_ID_RID_COUNT = 6;
+
+        public const int SECURITY_TASK_ID_BASE_RID = 0x00000057;
+
+        public const int SECURITY_NFS_ID_BASE_RID = 0x00000058;
+
+        public const int SECURITY_COM_ID_BASE_RID = 0x00000059;
+
+        public const int SECURITY_WINDOW_MANAGER_BASE_RID = 0x0000005A;
+
+        public const int SECURITY_RDV_GFX_BASE_RID = 0x0000005B;
+
+        public const int SECURITY_DASHOST_ID_BASE_RID = 0x0000005C;
+        public const int SECURITY_DASHOST_ID_RID_COUNT = 6;
+
+        public const int SECURITY_USERMANAGER_ID_BASE_RID = 0x0000005D;
+        public const int SECURITY_USERMANAGER_ID_RID_COUNT = 6;
+
+        public const int SECURITY_WINRM_ID_BASE_RID = 0x0000005E;
+        public const int SECURITY_WINRM_ID_RID_COUNT = 6;
+
+        public const int SECURITY_CCG_ID_BASE_RID = 0x0000005F;
+        public const int SECURITY_UMFD_BASE_RID = 0x00000060;
+
+        public const int SECURITY_VIRTUALACCOUNT_ID_RID_COUNT = 6;
+
+        public const int SECURITY_MAX_BASE_RID = 0x0000006F;
+        public const int SECURITY_MAX_ALWAYS_FILTERED = 0x000003E7;
+        public const int SECURITY_MIN_NEVER_FILTERED = 0x000003E8;
+
+        public const int SECURITY_OTHER_ORGANIZATION_RID = 0x000003E8;
+
+        //
+        //Service SID type RIDs are in the range 0x50- 0x6F.  Therefore, we are giving  the next available RID to Windows Mobile team.
+        //
+        public const int SECURITY_WINDOWSMOBILE_ID_BASE_RID = 0x00000070;
+
+        //
+        // Installer Capability Group Sid related. Currently Base RID is same as LOCAL DOMAIN.
+        //
+        public const int SECURITY_INSTALLER_GROUP_CAPABILITY_BASE = 0x20;
+        public const int SECURITY_INSTALLER_GROUP_CAPABILITY_RID_COUNT = 9;
+
+        // Note: This is because the App Capability Rid is S-1-15-3-1024-...
+        //       whereas the service group rid is          S-1-5-32-...
+        //	The number of RIDs from hash (8) are the same for both
+        public const int SECURITY_INSTALLER_CAPABILITY_RID_COUNT = 10;
+
+        //
+        //Well-known group for local accounts
+        //
+        public const int SECURITY_LOCAL_ACCOUNT_RID = 0x00000071;
+        public const int SECURITY_LOCAL_ACCOUNT_AND_ADMIN_RID = 0x00000072;
+
+        /////////////////////////////////////////////////////////////////////////////
+        //                                                                         //
+        // well-known domain relative sub-authority values (RIDs)...               //
+        //                                                                         //
+        /////////////////////////////////////////////////////////////////////////////
+
+
+        public const int DOMAIN_GROUP_RID_AUTHORIZATION_DATA_IS_COMPOUNDED = 0x000001F0;
+        public const int DOMAIN_GROUP_RID_AUTHORIZATION_DATA_CONTAINS_CLAIMS = 0x000001F1;
+        public const int DOMAIN_GROUP_RID_ENTERPRISE_READONLY_DOMAIN_CONTROLLERS = 0x000001F2;
+
+        public const int FOREST_USER_RID_MAX = 0x000001F3;
+
+        // Well-known users ...
+
+        public const int DOMAIN_USER_RID_ADMIN = 0x000001F4;
+        public const int DOMAIN_USER_RID_GUEST = 0x000001F5;
+        public const int DOMAIN_USER_RID_KRBTGT = 0x000001F6;
+        public const int DOMAIN_USER_RID_DEFAULT_ACCOUNT = 0x000001F7;
+        public const int DOMAIN_USER_RID_WDAG_ACCOUNT = 0x000001F8;
+
+        public const int DOMAIN_USER_RID_MAX = 0x000003E7;
+
+
+        // well-known groups ...
+
+        public const int DOMAIN_GROUP_RID_ADMINS = 0x00000200;
+        public const int DOMAIN_GROUP_RID_USERS = 0x00000201;
+        public const int DOMAIN_GROUP_RID_GUESTS = 0x00000202;
+        public const int DOMAIN_GROUP_RID_COMPUTERS = 0x00000203;
+        public const int DOMAIN_GROUP_RID_CONTROLLERS = 0x00000204;
+        public const int DOMAIN_GROUP_RID_CERT_ADMINS = 0x00000205;
+        public const int DOMAIN_GROUP_RID_SCHEMA_ADMINS = 0x00000206;
+        public const int DOMAIN_GROUP_RID_ENTERPRISE_ADMINS = 0x00000207;
+        public const int DOMAIN_GROUP_RID_POLICY_ADMINS = 0x00000208;
+        public const int DOMAIN_GROUP_RID_READONLY_CONTROLLERS = 0x00000209;
+        public const int DOMAIN_GROUP_RID_CLONEABLE_CONTROLLERS = 0x0000020A;
+        public const int DOMAIN_GROUP_RID_CDC_RESERVED = 0x0000020C;
+        public const int DOMAIN_GROUP_RID_PROTECTED_USERS = 0x0000020D;
+        public const int DOMAIN_GROUP_RID_KEY_ADMINS = 0x0000020E;
+        public const int DOMAIN_GROUP_RID_ENTERPRISE_KEY_ADMINS = 0x0000020F;
+
+        // well-known aliases ...
+
+        public const int DOMAIN_ALIAS_RID_ADMINS = 0x00000220;
+        public const int DOMAIN_ALIAS_RID_USERS = 0x00000221;
+        public const int DOMAIN_ALIAS_RID_GUESTS = 0x00000222;
+        public const int DOMAIN_ALIAS_RID_POWER_USERS = 0x00000223;
+
+        public const int DOMAIN_ALIAS_RID_ACCOUNT_OPS = 0x00000224;
+        public const int DOMAIN_ALIAS_RID_SYSTEM_OPS = 0x00000225;
+        public const int DOMAIN_ALIAS_RID_PRINT_OPS = 0x00000226;
+        public const int DOMAIN_ALIAS_RID_BACKUP_OPS = 0x00000227;
+
+        public const int DOMAIN_ALIAS_RID_REPLICATOR = 0x00000228;
+        public const int DOMAIN_ALIAS_RID_RAS_SERVERS = 0x00000229;
+        public const int DOMAIN_ALIAS_RID_PREW2KCOMPACCESS = 0x0000022A;
+        public const int DOMAIN_ALIAS_RID_REMOTE_DESKTOP_USERS = 0x0000022B;
+        public const int DOMAIN_ALIAS_RID_NETWORK_CONFIGURATION_OPS = 0x0000022C;
+        public const int DOMAIN_ALIAS_RID_INCOMING_FOREST_TRUST_BUILDERS = 0x0000022D;
+
+        public const int DOMAIN_ALIAS_RID_MONITORING_USERS = 0x0000022E;
+        public const int DOMAIN_ALIAS_RID_LOGGING_USERS = 0x0000022F;
+        public const int DOMAIN_ALIAS_RID_AUTHORIZATIONACCESS = 0x00000230;
+        public const int DOMAIN_ALIAS_RID_TS_LICENSE_SERVERS = 0x00000231;
+        public const int DOMAIN_ALIAS_RID_DCOM_USERS = 0x00000232;
+        public const int DOMAIN_ALIAS_RID_IUSERS = 0x00000238;
+        public const int DOMAIN_ALIAS_RID_CRYPTO_OPERATORS = 0x00000239;
+        public const int DOMAIN_ALIAS_RID_CACHEABLE_PRINCIPALS_GROUP = 0x0000023B;
+        public const int DOMAIN_ALIAS_RID_NON_CACHEABLE_PRINCIPALS_GROUP = 0x0000023C;
+        public const int DOMAIN_ALIAS_RID_EVENT_LOG_READERS_GROUP = 0x0000023D;
+        public const int DOMAIN_ALIAS_RID_CERTSVC_DCOM_ACCESS_GROUP = 0x0000023E;
+        public const int DOMAIN_ALIAS_RID_RDS_REMOTE_ACCESS_SERVERS = 0x0000023F;
+        public const int DOMAIN_ALIAS_RID_RDS_ENDPOINT_SERVERS = 0x00000240;
+        public const int DOMAIN_ALIAS_RID_RDS_MANAGEMENT_SERVERS = 0x00000241;
+        public const int DOMAIN_ALIAS_RID_HYPER_V_ADMINS = 0x00000242;
+        public const int DOMAIN_ALIAS_RID_ACCESS_CONTROL_ASSISTANCE_OPS = 0x00000243;
+        public const int DOMAIN_ALIAS_RID_REMOTE_MANAGEMENT_USERS = 0x00000244;
+        public const int DOMAIN_ALIAS_RID_DEFAULT_ACCOUNT = 0x00000245;
+        public const int DOMAIN_ALIAS_RID_STORAGE_REPLICA_ADMINS = 0x00000246;
+        public const int DOMAIN_ALIAS_RID_DEVICE_OWNERS = 0x00000247;
+
+        //
+        // Application Package Authority.
+        //
+
+        public static ReadOnlySpan<byte> SECURITY_APP_PACKAGE_AUTHORITY() => new byte[] { 0, 0, 0, 0, 0, 15 };
+
+        public const int SECURITY_APP_PACKAGE_BASE_RID = 0x00000002;
+        public const int SECURITY_BUILTIN_APP_PACKAGE_RID_COUNT = 2;
+        public const int SECURITY_APP_PACKAGE_RID_COUNT = 8;
+        public const int SECURITY_CAPABILITY_BASE_RID = 0x00000003;
+        public const int SECURITY_CAPABILITY_APP_RID = 0x000000400;
+        public const int SECURITY_BUILTIN_CAPABILITY_RID_COUNT = 2;
+        public const int SECURITY_CAPABILITY_RID_COUNT = 5;
+        public const int SECURITY_PARENT_PACKAGE_RID_COUNT = (SECURITY_APP_PACKAGE_RID_COUNT);
+        public const int SECURITY_CHILD_PACKAGE_RID_COUNT = 12;
+
+        //
+        // Built-in Packages.
+        //
+
+        public const int SECURITY_BUILTIN_PACKAGE_ANY_PACKAGE = 0x00000001;
+        public const int SECURITY_BUILTIN_PACKAGE_ANY_RESTRICTED_PACKAGE = 0x00000002;
+
+        //
+        // Built-in Capabilities.
+        //
+
+        public const int SECURITY_CAPABILITY_INTERNET_CLIENT = 0x00000001;
+        public const int SECURITY_CAPABILITY_INTERNET_CLIENT_SERVER = 0x00000002;
+        public const int SECURITY_CAPABILITY_PRIVATE_NETWORK_CLIENT_SERVER = 0x00000003;
+        public const int SECURITY_CAPABILITY_PICTURES_LIBRARY = 0x00000004;
+        public const int SECURITY_CAPABILITY_VIDEOS_LIBRARY = 0x00000005;
+        public const int SECURITY_CAPABILITY_MUSIC_LIBRARY = 0x00000006;
+        public const int SECURITY_CAPABILITY_DOCUMENTS_LIBRARY = 0x00000007;
+        public const int SECURITY_CAPABILITY_ENTERPRISE_AUTHENTICATION = 0x00000008;
+        public const int SECURITY_CAPABILITY_SHARED_USER_CERTIFICATES = 0x00000009;
+        public const int SECURITY_CAPABILITY_REMOVABLE_STORAGE = 0x0000000A;
+        public const int SECURITY_CAPABILITY_APPOINTMENTS = 0x0000000B;
+        public const int SECURITY_CAPABILITY_CONTACTS = 0x0000000C;
+
+        public const int SECURITY_CAPABILITY_INTERNET_EXPLORER = 0x00001000;
+
+        //
+        // Mandatory Label Authority.
+        //
+
+        public static ReadOnlySpan<byte> SECURITY_MANDATORY_LABEL_AUTHORITY() => new byte[] { 0, 0, 0, 0, 0, 16 };
+        public const int SECURITY_MANDATORY_UNTRUSTED_RID = 0x00000000;
+        public const int SECURITY_MANDATORY_LOW_RID = 0x00001000;
+        public const int SECURITY_MANDATORY_MEDIUM_RID = 0x00002000;
+        public const int SECURITY_MANDATORY_MEDIUM_PLUS_RID = (SECURITY_MANDATORY_MEDIUM_RID + 0x100);
+        public const int SECURITY_MANDATORY_HIGH_RID = 0x00003000;
+        public const int SECURITY_MANDATORY_SYSTEM_RID = 0x00004000;
+        public const int SECURITY_MANDATORY_PROTECTED_PROCESS_RID = 0x00005000;
+
+        /// <summary>
+        /// <see cref="SECURITY_MANDATORY_MAXIMUM_USER_RID"/> is the highest RID that
+        /// can be set by a usermode caller. 
+        /// </summary>
+        public const int SECURITY_MANDATORY_MAXIMUM_USER_RID = SECURITY_MANDATORY_SYSTEM_RID;
+
+        public static int MANDATORY_LEVEL_TO_MANDATORY_RID(int IL) => (IL * 0x1000);
+
+        public static ReadOnlySpan<byte> SECURITY_SCOPED_POLICY_ID_AUTHORITY() => new byte[] { 0, 0, 0, 0, 0, 17 };
+
+        //
+        // Authentication Authority
+        //
+
+        public static ReadOnlySpan<byte> SECURITY_AUTHENTICATION_AUTHORITY() => new byte[] { 0, 0, 0, 0, 0, 18 };
+        public const int SECURITY_AUTHENTICATION_AUTHORITY_RID_COUNT = 1;
+        public const int SECURITY_AUTHENTICATION_AUTHORITY_ASSERTED_RID = 0x00000001;
+        public const int SECURITY_AUTHENTICATION_SERVICE_ASSERTED_RID = 0x00000002;
+        public const int SECURITY_AUTHENTICATION_FRESH_KEY_AUTH_RID = 0x00000003;
+        public const int SECURITY_AUTHENTICATION_KEY_TRUST_RID = 0x00000004;
+        public const int SECURITY_AUTHENTICATION_KEY_PROPERTY_MFA_RID = 0x00000005;
+        public const int SECURITY_AUTHENTICATION_KEY_PROPERTY_ATTESTATION_RID = 0x00000006;
+
+        //
+        // Process Trust Authority
+        //
+
+        public static ReadOnlySpan<byte> SECURITY_PROCESS_TRUST_AUTHORITY() => new byte[] { 0, 0, 0, 0, 0, 19 };
+        public const int SECURITY_PROCESS_TRUST_AUTHORITY_RID_COUNT = 2;
+
+        public const int SECURITY_PROCESS_PROTECTION_TYPE_FULL_RID = 0x00000400;
+        public const int SECURITY_PROCESS_PROTECTION_TYPE_LITE_RID = 0x00000200;
+        public const int SECURITY_PROCESS_PROTECTION_TYPE_NONE_RID = 0x00000000;
+
+        public const int SECURITY_PROCESS_PROTECTION_LEVEL_WINTCB_RID = 0x00002000;
+        public const int SECURITY_PROCESS_PROTECTION_LEVEL_WINDOWS_RID = 0x00001000;
+        public const int SECURITY_PROCESS_PROTECTION_LEVEL_APP_RID = 0x00000800;
+        public const int SECURITY_PROCESS_PROTECTION_LEVEL_ANTIMALWARE_RID = 0x00000600;
+        public const int SECURITY_PROCESS_PROTECTION_LEVEL_AUTHENTICODE_RID = 0x00000400;
+        public const int SECURITY_PROCESS_PROTECTION_LEVEL_NONE_RID = 0x00000000;
+
+        //
+        // Trusted Installer RIDs
+        //
+
+        public const int SECURITY_TRUSTED_INSTALLER_RID1 = 956008885;
+        public const int SECURITY_TRUSTED_INSTALLER_RID2 = unchecked((int)3418522649);
+        public const int SECURITY_TRUSTED_INSTALLER_RID3 = 1831038044;
+        public const int SECURITY_TRUSTED_INSTALLER_RID4 = 1853292631;
+        public const int SECURITY_TRUSTED_INSTALLER_RID5 = unchecked((int)2271478464);
+
     }
 }

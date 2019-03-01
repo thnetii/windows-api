@@ -1791,5 +1791,35 @@ namespace THNETII.WinApi.Native.WinNT
         public static readonly ReadOnlyMemory<int> LOCALSERVICE_LUID = new int[] { 0x3e5, 0x0 };
         public static readonly ReadOnlyMemory<int> NETWORKSERVICE_LUID = new int[] { 0x3e4, 0x0 };
         public static readonly ReadOnlyMemory<int> IUSER_LUID = new int[] { 0x3e3, 0x0 };
+
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 9613
+        ////////////////////////////////////////////////////////////////////////
+        //                                                                    //
+        //                          User and Group related SID attributes     //
+        //                                                                    //
+        ////////////////////////////////////////////////////////////////////////
+
+        //
+        // Group attributes
+        //
+
+        public const int SE_GROUP_MANDATORY = 0x00000001;
+        public const int SE_GROUP_ENABLED_BY_DEFAULT = 0x00000002;
+        public const int SE_GROUP_ENABLED = 0x00000004;
+        public const int SE_GROUP_OWNER = 0x00000008;
+        public const int SE_GROUP_USE_FOR_DENY_ONLY = 0x00000010;
+        public const int SE_GROUP_INTEGRITY = 0x00000020;
+        public const int SE_GROUP_INTEGRITY_ENABLED = 0x00000040;
+        public const int SE_GROUP_LOGON_ID = unchecked((int)0xC0000000);
+        public const int SE_GROUP_RESOURCE = 0x20000000;
+
+        public const int SE_GROUP_VALID_ATTRIBUTES = (SE_GROUP_MANDATORY | SE_GROUP_ENABLED_BY_DEFAULT | SE_GROUP_ENABLED | SE_GROUP_OWNER | SE_GROUP_USE_FOR_DENY_ONLY | SE_GROUP_LOGON_ID | SE_GROUP_RESOURCE | SE_GROUP_INTEGRITY | SE_GROUP_INTEGRITY_ENABLED);
+
+        //
+        // User attributes
+        //
+
+        // (None yet defined.)
     }
 }

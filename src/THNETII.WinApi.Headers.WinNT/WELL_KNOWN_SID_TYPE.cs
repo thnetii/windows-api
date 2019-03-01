@@ -10,7 +10,7 @@ namespace THNETII.WinApi.Native.WinNT
     /// The <see cref="WELL_KNOWN_SID_TYPE"/> enumeration is a list of commonly used <a href="https://msdn.microsoft.com/3e9d7672-2314-45c8-8178-5a0afcfd0c50">security identifiers</a> (SIDs). Programs can pass these values to the <see cref="CreateWellKnownSid"/> function to create a SID from this list.
     /// </summary>
     /// <remarks>
-    /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/Winnt/ne-winnt-_well_known_sid_type">WELL_KNOWN_SID_TYPE enumeration</a></para>
+    /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/Winnt/ne-winnt-well_known_sid_type">WELL_KNOWN_SID_TYPE enumeration</a></para>
     /// </remarks>
     /// <seealso cref="WellKnownSidType"/>
     /// <seealso href="https://msdn.microsoft.com/3d813e46-f06e-4147-874c-30b5fc6f50d9">Allowing Anonymous Access</seealso>

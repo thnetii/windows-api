@@ -1821,5 +1821,16 @@ namespace THNETII.WinApi.Native.WinNT
         //
 
         // (None yet defined.)
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 10278
+        //
+        // DS values for Level
+        //
+
+        public const short ACCESS_OBJECT_GUID = 0;
+        public const short ACCESS_PROPERTY_SET_GUID = 1;
+        public const short ACCESS_PROPERTY_GUID = 2;
+
+        public const short ACCESS_MAX_LEVEL = 4;
     }
 }

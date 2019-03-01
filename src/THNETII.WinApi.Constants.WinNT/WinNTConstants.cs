@@ -1832,5 +1832,8 @@ namespace THNETII.WinApi.Native.WinNT
         public const short ACCESS_PROPERTY_GUID = 2;
 
         public const short ACCESS_MAX_LEVEL = 4;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 10278
+        public const int AUDIT_ALLOW_NO_PRIVILEGE = 0x1;
     }
 }

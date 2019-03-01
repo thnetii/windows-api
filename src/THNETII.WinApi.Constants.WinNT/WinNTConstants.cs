@@ -1835,5 +1835,15 @@ namespace THNETII.WinApi.Native.WinNT
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 10278
         public const int AUDIT_ALLOW_NO_PRIVILEGE = 0x1;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 10278
+        //
+        // DS values for Source and ObjectTypeName
+        //
+
+        public const string ACCESS_DS_SOURCE_A = "DS";
+        public const string ACCESS_DS_SOURCE_W = "DS";
+        public const string ACCESS_DS_OBJECT_TYPE_NAME_A = "Directory Service Object";
+        public const string ACCESS_DS_OBJECT_TYPE_NAME_W = "Directory Service Object";
     }
 }

@@ -3,7 +3,7 @@
 
 int main(int argc, char* argv[])
 {
-    XSAVE_FORMAT instance;
+    ACL_INFORMATION_CLASS instance;
     const int size = sizeof(instance);
     const int value = SECURITY_MAX_SID_SIZE;
 

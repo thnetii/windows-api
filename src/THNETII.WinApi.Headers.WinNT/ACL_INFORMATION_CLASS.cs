@@ -9,7 +9,7 @@ namespace THNETII.WinApi.Native.WinNT
     /// <remarks>
     /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/Winnt/ne-winnt-acl_information_class">ACL_INFORMATION_CLASS enumeration</a></para>
     /// </remarks>
-    /// <seealso cref="RawAcl"/>
+    /// <seealso cref="GenericAcl"/>
     /// <seealso cref="ACL_REVISION_INFORMATION"/>
     /// <seealso cref="ACL_SIZE_INFORMATION"/>
     /// <seealso href="https://msdn.microsoft.com/d9ce4ec5-5c09-4b33-93a1-39638a925986">Access Control Overview</seealso>

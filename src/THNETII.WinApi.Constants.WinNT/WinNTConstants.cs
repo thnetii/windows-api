@@ -1780,5 +1780,16 @@ namespace THNETII.WinApi.Native.WinNT
         public const int SECURITY_TRUSTED_INSTALLER_RID4 = 1853292631;
         public const int SECURITY_TRUSTED_INSTALLER_RID5 = unchecked((int)2271478464);
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 9600
+        //
+        // Allocate the System Luid.  The first 1000 LUIDs are reserved.
+        // Use #999 here (0x3e7 = 999)
+        //
+
+        public static readonly ReadOnlyMemory<int> SYSTEM_LUID = new int[] { 0x3e7, 0x0 };
+        public static readonly ReadOnlyMemory<int> ANONYMOUS_LOGON_LUID = new int[] { 0x3e6, 0x0 };
+        public static readonly ReadOnlyMemory<int> LOCALSERVICE_LUID = new int[] { 0x3e5, 0x0 };
+        public static readonly ReadOnlyMemory<int> NETWORKSERVICE_LUID = new int[] { 0x3e4, 0x0 };
+        public static readonly ReadOnlyMemory<int> IUSER_LUID = new int[] { 0x3e3, 0x0 };
     }
 }

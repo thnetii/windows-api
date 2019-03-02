@@ -1869,5 +1869,15 @@ namespace THNETII.WinApi.Native.WinNT
         //
 
         public const int PRIVILEGE_SET_ALL_NECESSARY = 1;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 10278
+        public const int ACCESS_REASON_TYPE_MASK = 0x00ff0000;
+        public const int ACCESS_REASON_DATA_MASK = 0x0000ffff;
+
+        public const int ACCESS_REASON_STAGING_MASK = unchecked((int)0x80000000);
+        public const int ACCESS_REASON_EXDATA_MASK = 0x7f000000;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 10367
+
     }
 }

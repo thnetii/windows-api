@@ -1877,7 +1877,11 @@ namespace THNETII.WinApi.Native.WinNT
         public const int ACCESS_REASON_STAGING_MASK = unchecked((int)0x80000000);
         public const int ACCESS_REASON_EXDATA_MASK = 0x7f000000;
 
-        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 10367
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 10445
+        public const int SE_SECURITY_DESCRIPTOR_FLAG_NO_OWNER_ACE = 0x00000001;
+        public const int SE_SECURITY_DESCRIPTOR_FLAG_NO_LABEL_ACE = 0x00000002;
+        public const int SE_SECURITY_DESCRIPTOR_FLAG_NO_ACCESS_FILTER_ACE = 0x00000004;
+        public const int SE_SECURITY_DESCRIPTOR_VALID_FLAGS = 0x00000007;
 
     }
 }

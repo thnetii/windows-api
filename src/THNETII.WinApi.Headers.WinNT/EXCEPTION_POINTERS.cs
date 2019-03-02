@@ -13,15 +13,15 @@ namespace THNETII.WinApi.Native.WinNT
     /// <seealso cref="EXCEPTION_RECORD"/>
     /// <seealso cref="GetExceptionInformation"/>
     [StructLayout(LayoutKind.Sequential)]
-    public struct EXCEPTION_POINTERS
+    public unsafe struct EXCEPTION_POINTERS
     {
         /// <summary>
         /// A pointer to an <see cref="EXCEPTION_RECORD"/> structure that contains a machine-independent description of the exception.
         /// </summary>
-        public PEXCEPTION_RECORD ExceptionRecord;
+        public EXCEPTION_RECORD* ExceptionRecord;
         /// <summary>
         /// A pointer to a <see cref="CONTEXT"/> structure that contains a processor-specific description of the state of the processor at the time of the exception.
         /// </summary>
-        public PCONTEXT ContextRecord;
+        public CONTEXT* ContextRecord;
     }
 }

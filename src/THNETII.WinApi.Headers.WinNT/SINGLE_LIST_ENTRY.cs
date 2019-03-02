@@ -1,6 +1,4 @@
-﻿using System;
-using System.Runtime.InteropServices;
-using THNETII.InteropServices.NativeMemory;
+﻿using System.Runtime.InteropServices;
 
 namespace THNETII.WinApi.Native.WinNT
 {
@@ -23,27 +21,11 @@ namespace THNETII.WinApi.Native.WinNT
     /// <seealso cref="InterlockedPopEntrySList"/>
     /// <seealso cref="InterlockedPushEntrySList"/>
     [StructLayout(LayoutKind.Sequential)]
-    public struct SINGLE_LIST_ENTRY
+    public unsafe struct SINGLE_LIST_ENTRY
     {
         /// <summary>
         /// A pointer to an <see cref="SLIST_ENTRY"/> structure that represents the next item in a singly linked list.
         /// </summary>
-        public PSINGLE_LIST_ENTRY Next;
-    }
-
-    /// <summary>
-    /// Stringly typed pointer to a <see cref="SINGLE_LIST_ENTRY"/> structure.
-    /// </summary>
-    [StructLayout(LayoutKind.Sequential)]
-    public struct PSINGLE_LIST_ENTRY : IIntPtr<SINGLE_LIST_ENTRY>
-    {
-        /// <summary>
-        /// Initializes a new typed pointer with the specified pointer to an unspecified type.
-        /// </summary>
-        /// <param name="ptr">A pointer to an unspecified type.</param>
-        public PSINGLE_LIST_ENTRY(IntPtr ptr) => Pointer = ptr;
-
-        /// <inheritdoc />
-        public IntPtr Pointer { get; }
+        public SINGLE_LIST_ENTRY* Next;
     }
 }

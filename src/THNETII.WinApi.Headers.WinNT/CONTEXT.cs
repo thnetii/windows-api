@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Runtime.InteropServices;
-using THNETII.InteropServices.NativeMemory;
 using THNETII.InteropServices.Runtime;
 using static THNETII.WinApi.Native.WinNT.CONTEXT_FLAGS;
 
@@ -122,12 +121,5 @@ namespace THNETII.WinApi.Native.WinNT
         /// <remarks>The format and contexts are processor specific</remarks>
         public Span<byte> ExtendedRegisters => fieldExtendedRegisters.Span;
         #endregion
-    }
-
-    [StructLayout(LayoutKind.Sequential, Pack = 4)]
-    public struct PCONTEXT : IIntPtr<CONTEXT>
-    {
-        public PCONTEXT(IntPtr ptr) : this() => Pointer = ptr;
-        public IntPtr Pointer { get; }
     }
 }

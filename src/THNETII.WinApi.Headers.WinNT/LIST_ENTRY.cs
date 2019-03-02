@@ -1,6 +1,4 @@
-﻿using System;
-using System.Runtime.InteropServices;
-using THNETII.InteropServices.NativeMemory;
+﻿using System.Runtime.InteropServices;
 
 namespace THNETII.WinApi.Native.WinNT
 {
@@ -17,25 +15,9 @@ namespace THNETII.WinApi.Native.WinNT
     /// <seealso cref="InterlockedPopEntrySList"/>
     /// <seealso cref="InterlockedPushEntrySList"/>
     [StructLayout(LayoutKind.Sequential)]
-    public struct LIST_ENTRY
+    public unsafe struct LIST_ENTRY
     {
-        public PLIST_ENTRY Flink;
-        public PLIST_ENTRY Blink;
-    }
-
-    /// <summary>
-    /// Stringly typed pointer to a <see cref="LIST_ENTRY"/> structure.
-    /// </summary>
-    [StructLayout(LayoutKind.Sequential)]
-    public struct PLIST_ENTRY : IIntPtr<LIST_ENTRY>
-    {
-        /// <summary>
-        /// Initializes a new typed pointer with the specified pointer to an unspecified type.
-        /// </summary>
-        /// <param name="ptr">A pointer to an unspecified type.</param>
-        public PLIST_ENTRY(IntPtr ptr) => Pointer = ptr;
-
-        /// <inheritdoc />
-        public IntPtr Pointer { get; }
+        public LIST_ENTRY* Flink;
+        public LIST_ENTRY* Blink;
     }
 }

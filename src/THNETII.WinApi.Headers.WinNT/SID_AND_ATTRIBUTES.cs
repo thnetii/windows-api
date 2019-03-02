@@ -20,9 +20,9 @@ namespace THNETII.WinApi.Native.WinNT
     /// <seealso cref="TOKEN_GROUPS"/>
     /// <seealso cref="TOKEN_USER"/>
     [StructLayout(LayoutKind.Sequential)]
-    public struct SID_AND_ATTRIBUTES
+    public unsafe struct SID_AND_ATTRIBUTES
     {
-        public PSID Sid;
+        public SID* Sid;
         /// <summary>
         /// Specifies attributes of the SID. This value contains up to 32 one-bit flags. Its meaning depends on the definition and use of the SID.
         /// </summary>

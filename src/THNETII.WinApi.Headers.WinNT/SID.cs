@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using THNETII.InteropServices.NativeMemory;
 
@@ -41,28 +42,7 @@ namespace THNETII.WinApi.Native.WinNT
         public byte Revision;
         public byte SubAuthorityCount;
         public SID_IDENTIFIER_AUTHORITY IdentifierAuthority;
-        public int SubAuthority;
-    }
-
-    [StructLayout(LayoutKind.Sequential)]
-    public struct PSID : IIntPtr<SID>
-    {
-        private static readonly int SubAuthorityOffset = Marshal.OffsetOf<SID>(nameof(SID.SubAuthority)).ToInt32();
-        public PSID(IntPtr ptr) => Pointer = ptr;
-        public IntPtr Pointer { get; }
-        public ref byte Revision => ref Pointer.AsRefStruct<SID>().Revision;
-        public ref byte SubAuthorityCount => ref Pointer.AsRefStruct<SID>().SubAuthorityCount;
-        public ref SID_IDENTIFIER_AUTHORITY IdentifierAuthority => ref Pointer.AsRefStruct<SID>().IdentifierAuthority;
-        public unsafe Span<int> SubAuthority
-        {
-            get
-            {
-                var ptr = Pointer;
-                var count = ptr.AsRefStruct<SID>().SubAuthorityCount;
-                if (count > SID_MAX_SUB_AUTHORITIES)
-                    count = SID_MAX_SUB_AUTHORITIES;
-                return (ptr + SubAuthorityOffset).AsRefStructSpan<int>(count);
-            }
-        }
+        internal int SubAuthorityField;
+        public unsafe Span<int> SubAuthority => new Span<int>(Unsafe.AsPointer(ref SubAuthorityField), SubAuthorityCount);
     }
 }

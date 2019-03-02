@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Runtime.InteropServices;
-using THNETII.InteropServices.NativeMemory;
 
 namespace THNETII.WinApi.Native.WinNT
 {
@@ -16,7 +15,7 @@ namespace THNETII.WinApi.Native.WinNT
     /// <seealso cref="AccessCheckByTypeResultList"/>
     /// <seealso cref="AccessCheckByTypeResultListAndAuditAlarm"/>
     [StructLayout(LayoutKind.Sequential)]
-    public struct OBJECT_TYPE_LIST
+    public unsafe struct OBJECT_TYPE_LIST
     {
         /// <summary>
         /// Specifies the level of the object type in the hierarchy of an object and its subobjects. Level zero indicates the object itself. Level one indicates a subobject of the object, such as a property set. Level two indicates a subobject of the level one subobject, such as a property. There can be a maximum of five levels numbered zero through four.
@@ -29,6 +28,6 @@ namespace THNETII.WinApi.Native.WinNT
         /// <summary>
         /// A pointer to the <see cref="Guid"/> for the object or subobject.
         /// </summary>
-        public IntPtr<Guid> ObjectType;
+        public Guid* ObjectType;
     }
 }

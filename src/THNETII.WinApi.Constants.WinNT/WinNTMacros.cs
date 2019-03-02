@@ -1,4 +1,5 @@
-﻿using static THNETII.WinApi.Native.WinNT.WinNTConstants;
+﻿using System.Security.Principal;
+using static THNETII.WinApi.Native.WinNT.WinNTConstants;
 
 namespace THNETII.WinApi.Native.WinNT
 {
@@ -112,5 +113,9 @@ namespace THNETII.WinApi.Native.WinNT
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 9423
         public static int MANDATORY_LEVEL_TO_MANDATORY_RID(int IL) => (IL * 0x1000);
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 10566
+        public static bool VALID_IMPERSONATION_LEVEL(TokenImpersonationLevel L) =>
+            (L >= SECURITY_MIN_IMPERSONATION_LEVEL) && (L <= SECURITY_MAX_IMPERSONATION_LEVEL);
     }
 }

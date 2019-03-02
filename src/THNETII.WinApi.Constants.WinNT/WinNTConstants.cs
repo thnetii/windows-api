@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Runtime.InteropServices;
+using System.Security.Principal;
 
 namespace THNETII.WinApi.Native.WinNT
 {
@@ -1937,5 +1938,57 @@ namespace THNETII.WinApi.Native.WinNT
         public const string SE_MUMA_CAPABILITY = "muma";
         public const string SE_DEVELOPMENT_MODE_NETWORK_CAPABILITY = "developmentModeNetwork";
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 10527
+        ////////////////////////////////////////////////////////////////////
+        //                                                                //
+        //           Security Quality Of Service                          //
+        //                                                                //
+        //                                                                //
+        ////////////////////////////////////////////////////////////////////
+
+        //
+        // Impersonation Level
+        //
+        // Impersonation level is represented by a pair of bits in Windows.
+        //
+
+        public const TokenImpersonationLevel SECURITY_MAX_IMPERSONATION_LEVEL = TokenImpersonationLevel.Delegation;
+        public const TokenImpersonationLevel SECURITY_MIN_IMPERSONATION_LEVEL = TokenImpersonationLevel.Anonymous;
+        public const TokenImpersonationLevel DEFAULT_IMPERSONATION_LEVEL = TokenImpersonationLevel.Impersonation;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 10569
+        ////////////////////////////////////////////////////////////////////
+        //                                                                //
+        //           Token Object Definitions                             //
+        //                                                                //
+        //                                                                //
+        ////////////////////////////////////////////////////////////////////
+
+        //
+        // Token Specific Access Rights.
+        //
+
+        public const TokenAccessLevels TOKEN_ASSIGN_PRIMARY = TokenAccessLevels.AssignPrimary;
+        public const TokenAccessLevels TOKEN_DUPLICATE = TokenAccessLevels.Duplicate;
+        public const TokenAccessLevels TOKEN_IMPERSONATE = TokenAccessLevels.Impersonate;
+        public const TokenAccessLevels TOKEN_QUERY = TokenAccessLevels.Query;
+        public const TokenAccessLevels TOKEN_QUERY_SOURCE = TokenAccessLevels.QuerySource;
+        public const TokenAccessLevels TOKEN_ADJUST_PRIVILEGES = TokenAccessLevels.AdjustPrivileges;
+        public const TokenAccessLevels TOKEN_ADJUST_GROUPS = TokenAccessLevels.AdjustGroups;
+        public const TokenAccessLevels TOKEN_ADJUST_DEFAULT = TokenAccessLevels.AdjustDefault;
+        public const TokenAccessLevels TOKEN_ADJUST_SESSIONID = TokenAccessLevels.AdjustSessionId;
+
+        public const TokenAccessLevels TOKEN_ALL_ACCESS_P = ((TokenAccessLevels)STANDARD_RIGHTS_REQUIRED | TOKEN_ASSIGN_PRIMARY | TOKEN_DUPLICATE | TOKEN_IMPERSONATE | TOKEN_QUERY | TOKEN_QUERY_SOURCE | TOKEN_ADJUST_PRIVILEGES | TOKEN_ADJUST_GROUPS | TOKEN_ADJUST_DEFAULT);
+
+        public const TokenAccessLevels TOKEN_ALL_ACCESS = (TOKEN_ALL_ACCESS_P | TOKEN_ADJUST_SESSIONID);
+
+        public const TokenAccessLevels TOKEN_READ = TokenAccessLevels.Read;
+        public const TokenAccessLevels TOKEN_WRITE = TokenAccessLevels.Write;
+        public const TokenAccessLevels TOKEN_EXECUTE = (TokenAccessLevels)STANDARD_RIGHTS_EXECUTE;
+
+        public const TokenAccessLevels TOKEN_TRUST_CONSTRAINT_MASK = ((TokenAccessLevels)STANDARD_RIGHTS_READ | TOKEN_QUERY | TOKEN_QUERY_SOURCE);
+
+        public const TokenAccessLevels TOKEN_ACCESS_PSEUDO_HANDLE_WIN8 = (TOKEN_QUERY | TOKEN_QUERY_SOURCE);
+        public const TokenAccessLevels TOKEN_ACCESS_PSEUDO_HANDLE = TOKEN_ACCESS_PSEUDO_HANDLE_WIN8;
     }
 }

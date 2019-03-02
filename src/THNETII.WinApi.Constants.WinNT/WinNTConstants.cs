@@ -1845,5 +1845,29 @@ namespace THNETII.WinApi.Native.WinNT
         public const string ACCESS_DS_SOURCE_W = "DS";
         public const string ACCESS_DS_OBJECT_TYPE_NAME_A = "Directory Service Object";
         public const string ACCESS_DS_OBJECT_TYPE_NAME_W = "Directory Service Object";
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 10278
+        ////////////////////////////////////////////////////////////////////////
+        //                                                                    //
+        //               Privilege Related Data Structures                    //
+        //                                                                    //
+        ////////////////////////////////////////////////////////////////////////
+
+        //
+        // Privilege attributes
+        //
+
+        public const int SE_PRIVILEGE_ENABLED_BY_DEFAULT = 0x00000001;
+        public const int SE_PRIVILEGE_ENABLED = 0x00000002;
+        public const int SE_PRIVILEGE_REMOVED = 0X00000004;
+        public const int SE_PRIVILEGE_USED_FOR_ACCESS = unchecked((int)0x80000000);
+
+        public const int SE_PRIVILEGE_VALID_ATTRIBUTES = (SE_PRIVILEGE_ENABLED_BY_DEFAULT | SE_PRIVILEGE_ENABLED | SE_PRIVILEGE_REMOVED | SE_PRIVILEGE_USED_FOR_ACCESS);
+
+        //
+        // Privilege Set Control flags
+        //
+
+        public const int PRIVILEGE_SET_ALL_NECESSARY = 1;
     }
 }

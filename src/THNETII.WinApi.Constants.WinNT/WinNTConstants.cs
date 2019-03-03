@@ -2000,5 +2000,8 @@ namespace THNETII.WinApi.Native.WinNT
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 10840
         public const int POLICY_AUDIT_SUBCATEGORY_COUNT = 59;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 10846
+        public const int TOKEN_SOURCE_LENGTH = 8;
     }
 }

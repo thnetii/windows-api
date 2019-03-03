@@ -3,7 +3,7 @@
 
 int main(int argc, char* argv[])
 {
-    TOKEN_ELEVATION_TYPE instance;
+    TOKEN_USER instance;
     const int size = sizeof(instance);
     const int value = SANDBOX_INERT;
 

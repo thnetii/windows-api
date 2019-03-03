@@ -1,4 +1,7 @@
 ﻿using System.Runtime.InteropServices;
+using THNETII.InteropServices.NativeMemory;
+
+using static THNETII.WinApi.Native.WinNT.WinNTConstants;
 
 namespace THNETII.WinApi.Native.WinNT
 {
@@ -24,6 +27,8 @@ namespace THNETII.WinApi.Native.WinNT
     [StructLayout(LayoutKind.Sequential)]
     public struct TOKEN_USER
     {
+        public static int TOKEN_USER_MAX_SIZE { get; } = SizeOf<TOKEN_USER>.Bytes + SECURITY_MAX_SID_SIZE;
+
         /// <summary>
         /// Specifies a <see cref="SID_AND_ATTRIBUTES"/> structure representing the user associated with the access token. There are currently no attributes defined for user <a href="https://msdn.microsoft.com/3e9d7672-2314-45c8-8178-5a0afcfd0c50">security identifiers</a> (SIDs).
         /// </summary>

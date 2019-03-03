@@ -3,7 +3,7 @@
 
 int main(int argc, char* argv[])
 {
-    ACL_INFORMATION_CLASS instance;
+    TOKEN_TYPE instance;
     const int size = sizeof(instance);
     const int value = SECURITY_MAX_SID_SIZE;
 

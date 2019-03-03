@@ -1997,5 +1997,8 @@ namespace THNETII.WinApi.Native.WinNT
         public const int TOKEN_MANDATORY_POLICY_NEW_PROCESS_MIN = 0x2;
 
         public const int TOKEN_MANDATORY_POLICY_VALID_MASK = (TOKEN_MANDATORY_POLICY_NO_WRITE_UP | TOKEN_MANDATORY_POLICY_NEW_PROCESS_MIN);
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 10840
+        public const int POLICY_AUDIT_SUBCATEGORY_COUNT = 59;
     }
 }

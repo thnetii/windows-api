@@ -17,6 +17,9 @@ namespace THNETII.WinApi.Native.WinNT
         /// The privilege is enabled.
         /// </summary>
         SE_PRIVILEGE_ENABLED = WinNTConstants.SE_PRIVILEGE_ENABLED,
+        /// <summary>
+        /// Used to remove a privilege. For details, see <see cref="AdjustTokenPrivileges"/>.
+        /// </summary>
         SE_PRIVILEGE_REMOVED = WinNTConstants.SE_PRIVILEGE_REMOVED,
         /// <summary>
         /// The privilege was used to gain access to an object or service. This flag is used to identify the relevant privileges in a set passed by a client application that may contain unnecessary privileges. 

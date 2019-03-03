@@ -1990,5 +1990,12 @@ namespace THNETII.WinApi.Native.WinNT
 
         public const TokenAccessLevels TOKEN_ACCESS_PSEUDO_HANDLE_WIN8 = (TOKEN_QUERY | TOKEN_QUERY_SOURCE);
         public const TokenAccessLevels TOKEN_ACCESS_PSEUDO_HANDLE = TOKEN_ACCESS_PSEUDO_HANDLE_WIN8;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 10803
+        public const int TOKEN_MANDATORY_POLICY_OFF = 0x0;
+        public const int TOKEN_MANDATORY_POLICY_NO_WRITE_UP = 0x1;
+        public const int TOKEN_MANDATORY_POLICY_NEW_PROCESS_MIN = 0x2;
+
+        public const int TOKEN_MANDATORY_POLICY_VALID_MASK = (TOKEN_MANDATORY_POLICY_NO_WRITE_UP | TOKEN_MANDATORY_POLICY_NEW_PROCESS_MIN);
     }
 }

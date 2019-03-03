@@ -17,19 +17,6 @@ namespace THNETII.WinApi.Native.WinNT
     /// <remarks>
     /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/winnt/ns-winnt-token_linked_token">TOKEN_LINKED_TOKEN structure</a></para>
     /// </remarks>
-    /// <seealso cref="AdjustTokenGroups"/>
-    /// <seealso cref="CreateRestrictedToken"/>
-    /// <seealso cref="SID_AND_ATTRIBUTES"/>
-    /// <seealso cref="TOKEN_CONTROL"/>
-    /// <seealso cref="TOKEN_DEFAULT_DACL"/>
-    /// <seealso cref="TOKEN_INFORMATION_CLASS"/>
-    /// <seealso cref="TOKEN_OWNER"/>
-    /// <seealso cref="TOKEN_PRIMARY_GROUP"/>
-    /// <seealso cref="TOKEN_PRIVILEGES"/>
-    /// <seealso cref="TOKEN_SOURCE"/>
-    /// <seealso cref="TOKEN_STATISTICS"/>
-    /// <seealso cref="TOKEN_TYPE"/>
-    /// <seealso cref="TOKEN_USER"/>
     [StructLayout(LayoutKind.Sequential)]
     public struct TOKEN_LINKED_TOKEN : IDisposable
     {

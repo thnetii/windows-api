@@ -3,7 +3,7 @@
 
 int main(int argc, char* argv[])
 {
-    TOKEN_DEFAULT_DACL instance;
+    TOKEN_BNO_ISOLATION_INFORMATION instance;
     const int size = sizeof(instance);
     const int value = SANDBOX_INERT;
 

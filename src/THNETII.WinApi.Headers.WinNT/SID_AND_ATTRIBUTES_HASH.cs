@@ -43,6 +43,7 @@ namespace THNETII.WinApi.Native.WinNT
             public const int Length = SID_HASH_SIZE;
             public ref UIntPtr this[int index] => ref Span[index];
             public Span<UIntPtr> Span => MemoryMarshal.Cast<HASH, UIntPtr>(SpanOverRef.GetSpan(ref this));
+#pragma warning disable CS0649 // Field is never assigned to, and will always have its default value
             internal UIntPtr Hash0;
             internal UIntPtr Hash1;
             internal UIntPtr Hash2;
@@ -75,6 +76,7 @@ namespace THNETII.WinApi.Native.WinNT
             internal UIntPtr Hash29;
             internal UIntPtr Hash30;
             internal UIntPtr Hash31;
+#pragma warning restore CS0649 // Field is never assigned to, and will always have its default value
         }
         /// <summary>
         /// A span of hash values. These values correspond to the <see cref="SID_AND_ATTRIBUTES"/> structures pointed to by the <see cref="SidAttr"/> parameter.

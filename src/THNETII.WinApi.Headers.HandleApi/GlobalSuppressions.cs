@@ -7,3 +7,4 @@ using System.Diagnostics.CodeAnalysis;
 
 [assembly: SuppressMessage("Interoperability", "CA1401: P/Invokes should not be visible")]
 [assembly: SuppressMessage("Usage", "PC003: Native API not available in UWP")]
+[assembly: SuppressMessage("Naming", "CA1707: Identifiers should not contain underscores")]

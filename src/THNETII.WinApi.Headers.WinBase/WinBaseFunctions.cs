@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 using System.Text;
-using THNETII.InteropServices.NativeMemory;
 using THNETII.WinApi.Native.MinWinBase;
 using THNETII.WinApi.Native.MinWinDef;
 
@@ -48,12 +47,22 @@ namespace THNETII.WinApi.Native.WinBase
         /// </remarks>
         /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
         /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
-        public static ushort CaptureStackBackTrace(
+        public static unsafe ushort CaptureStackBackTrace(
             int FramesToSkip,
             int FramesToCapture,
-            out IntPtrArrayPtr BackTrace,
+            out IntPtr* BackTrace,
             out int BackTraceHash
             ) => WinNT.WinNTFunctions.RtlCaptureStackBackTrace(FramesToSkip, FramesToCapture, out BackTrace, out BackTraceHash);
+        /// <inheritdoc cref="CaptureStackBackTrace(int, int, out IntPtr*, out int)"/>
+        public static unsafe ReadOnlySpan<IntPtr> CaptureStackBackTrace(
+            int FramesToSkip,
+            int FramesToCapture,
+            out int BackTraceHash
+            )
+        {
+            var length = CaptureStackBackTrace(FramesToSkip, FramesToCapture, out IntPtr* BackTrace, out BackTraceHash);
+            return new ReadOnlySpan<IntPtr>(BackTrace, length);
+        }
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\WinBase.h, line 1082
         #region LocalAlloc function
@@ -83,7 +92,7 @@ namespace THNETII.WinApi.Native.WinBase
         /// <param name="uBytes">The number of bytes to allocate. If this parameter is <c>0</c> (zero) and the <paramref name="uFlags"/> parameter specifies <see cref="LMEM_MOVEABLE"/>, the function returns a handle to a memory object that is marked as discarded.</param>
         /// <returns>
         /// <para>If the function succeeds, the return value is a handle to the newly allocated memory object.</para>
-        /// <para>If the function fails, the return value is an <see cref="HLOCAL"/> value representing a null-pointer (calling <see cref="IIntPtrExtensions.IsNull{TPtr}(TPtr)"/> returns <c>true</c>). To get extended error information, call <see cref="Marshal.GetLastWin32Error"/>.</para>
+        /// <para>If the function fails, the return value is an <see cref="HLOCAL"/> value representing a null-pointer. To get extended error information, call <see cref="Marshal.GetLastWin32Error"/>.</para>
         /// </returns>
         /// <remarks>
         /// <para>Windows memory management does not provide a separate local heap and global heap. Therefore, the <see cref="LocalAlloc"/> and <see cref="GlobalAlloc"/> functions are essentially the same.</para>
@@ -139,7 +148,7 @@ namespace THNETII.WinApi.Native.WinBase
         /// </param>
         /// <returns>
         /// <para>If the function succeeds, the return value is a handle to the reallocated memory object.</para>
-        /// <para>If the function fails, the return value is an <see cref="HLOCAL"/> value representing a null-pointer (calling <see cref="IIntPtrExtensions.IsNull{TPtr}(TPtr)"/> returns <c>true</c>). To get extended error information, call <see cref="Marshal.GetLastWin32Error"/>.</para>
+        /// <para>If the function fails, the return value is an <see cref="HLOCAL"/> value representing a null-pointer. To get extended error information, call <see cref="Marshal.GetLastWin32Error"/>.</para>
         /// </returns>
         /// <remarks>
         /// <para>If <see cref="LocalReAlloc"/> fails, the original memory is not freed, and the original handle and pointer are still valid.</para>
@@ -398,6 +407,15 @@ namespace THNETII.WinApi.Native.WinBase
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\WinBase.h, line 2382
         #region FormatMessage function
+        /// <inheritdoc cref="FormatMessage(FORMAT_MESSAGE_OPTIONS, IntPtr, int, int, StringBuilder, int, IntPtr)"/>
+        public static int FormatMessage(
+            FORMAT_MESSAGE_OPTIONS dwFlags,
+            IntPtr lpSource,
+            int dwMessageId,
+            int dwLanguageId,
+            StringBuilder lpBuffer,
+            IntPtr Arguments
+            ) => FormatMessageW(dwFlags, lpSource, dwMessageId, dwLanguageId, lpBuffer, lpBuffer?.Capacity ?? 0, Arguments);
         /// <summary>
         /// Formats a message string. The function requires a message definition as input.
         /// It can come from a message table resource in an already-loaded module.
@@ -520,6 +538,15 @@ namespace THNETII.WinApi.Native.WinBase
             IntPtr Arguments
             ) => FormatMessageW(dwFlags, lpSource, dwMessageId, dwLanguageId, lpBuffer, nSize, Arguments);
         /// <inheritdoc cref="FormatMessage(FORMAT_MESSAGE_OPTIONS, IntPtr, int, int, StringBuilder, int, IntPtr)"/>
+        public static int FormatMessageA(
+            FORMAT_MESSAGE_OPTIONS dwFlags,
+            IntPtr lpSource,
+            int dwMessageId,
+            int dwLanguageId,
+            StringBuilder lpBuffer,
+            IntPtr Arguments
+            ) => FormatMessageA(dwFlags, lpSource, dwMessageId, dwLanguageId, lpBuffer, lpBuffer?.Capacity ?? 0, Arguments);
+        /// <inheritdoc cref="FormatMessage(FORMAT_MESSAGE_OPTIONS, IntPtr, int, int, StringBuilder, int, IntPtr)"/>
         [DllImport(NativeLibraryNames.Kernel32, CallingConvention = Winapi, EntryPoint = nameof(FormatMessageA), SetLastError = true)]
         public static extern int FormatMessageA(
             FORMAT_MESSAGE_OPTIONS dwFlags,
@@ -531,6 +558,15 @@ namespace THNETII.WinApi.Native.WinBase
             IntPtr Arguments
             );
         /// <inheritdoc cref="FormatMessage(FORMAT_MESSAGE_OPTIONS, IntPtr, int, int, StringBuilder, int, IntPtr)"/>
+        public static int FormatMessageW(
+            FORMAT_MESSAGE_OPTIONS dwFlags,
+            IntPtr lpSource,
+            int dwMessageId,
+            int dwLanguageId,
+            StringBuilder lpBuffer,
+            IntPtr Arguments
+            ) => FormatMessageW(dwFlags, lpSource, dwMessageId, dwLanguageId, lpBuffer, lpBuffer?.Capacity ?? 0, Arguments);
+        /// <inheritdoc cref="FormatMessage(FORMAT_MESSAGE_OPTIONS, IntPtr, int, int, StringBuilder, int, IntPtr)"/>
         [DllImport(NativeLibraryNames.Kernel32, CallingConvention = Winapi, EntryPoint = nameof(FormatMessageW), SetLastError = true)]
         public static extern int FormatMessageW(
             FORMAT_MESSAGE_OPTIONS dwFlags,
@@ -541,6 +577,15 @@ namespace THNETII.WinApi.Native.WinBase
             int nSize,
             IntPtr Arguments
             );
+        /// <inheritdoc cref="FormatMessage(FORMAT_MESSAGE_OPTIONS, string, int, int, StringBuilder, int, IntPtr)"/>
+        public static int FormatMessage(
+            FORMAT_MESSAGE_OPTIONS dwFlags,
+            string lpSource,
+            int dwMessageId,
+            int dwLanguageId,
+            StringBuilder lpBuffer,
+            IntPtr Arguments
+            ) => FormatMessage(dwFlags, lpSource, dwMessageId, dwLanguageId, lpBuffer, lpBuffer?.Capacity ?? 0, Arguments);
         /// <summary>
         /// Formats a message string. The function requires a message definition as input.
         /// It can come from a message table resource in an already-loaded module.
@@ -658,6 +703,15 @@ namespace THNETII.WinApi.Native.WinBase
             IntPtr Arguments
             ) => FormatMessageW(dwFlags, lpSource, dwMessageId, dwLanguageId, lpBuffer, nSize, Arguments);
         /// <inheritdoc cref="FormatMessage(FORMAT_MESSAGE_OPTIONS, string, int, int, StringBuilder, int, IntPtr)"/>
+        public static int FormatMessageA(
+            FORMAT_MESSAGE_OPTIONS dwFlags,
+            [MarshalAs(UnmanagedType.LPStr)] string lpSource,
+            int dwMessageId,
+            int dwLanguageId,
+            [MarshalAs(UnmanagedType.LPStr)] StringBuilder lpBuffer,
+            IntPtr Arguments
+            ) => FormatMessageA(dwFlags, lpSource, dwMessageId, dwLanguageId, lpBuffer, lpBuffer?.Capacity ?? 0, Arguments);
+        /// <inheritdoc cref="FormatMessage(FORMAT_MESSAGE_OPTIONS, string, int, int, StringBuilder, int, IntPtr)"/>
         [DllImport(NativeLibraryNames.Kernel32, CallingConvention = Winapi, EntryPoint = nameof(FormatMessageA), SetLastError = true)]
         public static extern int FormatMessageA(
             FORMAT_MESSAGE_OPTIONS dwFlags,
@@ -668,6 +722,15 @@ namespace THNETII.WinApi.Native.WinBase
             int nSize,
             IntPtr Arguments
             );
+        /// <inheritdoc cref="FormatMessage(FORMAT_MESSAGE_OPTIONS, string, int, int, StringBuilder, int, IntPtr)"/>
+        public static int FormatMessageW(
+            FORMAT_MESSAGE_OPTIONS dwFlags,
+            [MarshalAs(UnmanagedType.LPWStr)] string lpSource,
+            int dwMessageId,
+            int dwLanguageId,
+            [MarshalAs(UnmanagedType.LPWStr)] StringBuilder lpBuffer,
+            IntPtr Arguments
+            ) => FormatMessageW(dwFlags, lpSource, dwMessageId, dwLanguageId, lpBuffer, lpBuffer?.Capacity ?? 0, Arguments);
         /// <inheritdoc cref="FormatMessage(FORMAT_MESSAGE_OPTIONS, string, int, int, StringBuilder, int, IntPtr)"/>
         [DllImport(NativeLibraryNames.Kernel32, CallingConvention = Winapi, EntryPoint = nameof(FormatMessageW), SetLastError = true)]
         public static extern int FormatMessageW(
@@ -708,9 +771,9 @@ namespace THNETII.WinApi.Native.WinBase
         /// <param name="dwLanguageId">
         /// <para>The language identifier for the requested message. This parameter is ignored if <paramref name="dwFlags"/> includes <see cref="FORMAT_MESSAGE_FROM_STRING"/>.</para>
         /// <para>
-        /// If you pass a specific LCID in this parameter, <see cref="FormatMessage(FORMAT_MESSAGE_OPTIONS, IntPtr, int, int, out WideStringPtr, int, IntPtr)"/> will return a message for that LCID only.
+        /// If you pass a specific LCID in this parameter, <see cref="FormatMessage(FORMAT_MESSAGE_OPTIONS, IntPtr, int, int, out char*, int, IntPtr)"/> will return a message for that LCID only.
         /// If the function cannot find a message for that LCID, it sets Last-Error to <see cref="ERROR_RESOURCE_LANG_NOT_FOUND"/>.
-        /// If you pass in <c>0</c> (zero), <see cref="FormatMessage(FORMAT_MESSAGE_OPTIONS, IntPtr, int, int, out WideStringPtr, int, IntPtr)"/> looks for a message for LCIDs in the following order:
+        /// If you pass in <c>0</c> (zero), <see cref="FormatMessage(FORMAT_MESSAGE_OPTIONS, IntPtr, int, int, out char*, int, IntPtr)"/> looks for a message for LCIDs in the following order:
         /// <list type="number">
         /// <item><term>Language neutral</term></item>
         /// <item><term>Thread LCID, based on the thread's locale value</term></item>
@@ -720,7 +783,7 @@ namespace THNETII.WinApi.Native.WinBase
         /// </list>
         /// </para>
         /// <para>
-        /// If <see cref="FormatMessage(FORMAT_MESSAGE_OPTIONS, IntPtr, int, int, out WideStringPtr, int, IntPtr)"/> does not locate a message for any of the preceding LCIDs,
+        /// If <see cref="FormatMessage(FORMAT_MESSAGE_OPTIONS, IntPtr, int, int, out char*, int, IntPtr)"/> does not locate a message for any of the preceding LCIDs,
         /// it returns any language message string that is present. If that fails, it returns <see cref="ERROR_RESOURCE_LANG_NOT_FOUND"/>. 
         /// </para>
         /// </param>
@@ -775,7 +838,7 @@ namespace THNETII.WinApi.Native.WinBase
         /// <item><term><c>%<em>space</em></c></term><description>A single space. This format string can be used to ensure the appropriate number of trailing spaces in a message text line.</description></item>
         /// <item><term><c>%.</c></term><description>A single period. This format string can be used to include a single period at the beginning of a line without terminating the message text definition.</description></item>
         /// <item><term><c>%!</c></term><description>A single exclamation point. This format string can be used to include an exclamation point immediately after an insert without its being mistaken for the beginning of a format string.</description></item>
-        /// <item><term><c>%n</c></term><description>A hard line break when the format string occurs at the end of a line. This format string is useful when <see cref="FormatMessage(FORMAT_MESSAGE_OPTIONS, IntPtr, int, int, out WideStringPtr, int, IntPtr)"/> is supplying regular line breaks so the message fits in a certain width.</description></item>
+        /// <item><term><c>%n</c></term><description>A hard line break when the format string occurs at the end of a line. This format string is useful when <see cref="FormatMessage(FORMAT_MESSAGE_OPTIONS, IntPtr, int, int, out char*, int, IntPtr)"/> is supplying regular line breaks so the message fits in a certain width.</description></item>
         /// <item><term><c>%r</c></term><description>A hard carriage return without a trailing newline character.</description></item>
         /// <item><term><c>%t</c></term><description>A single tab.</description></item>
         /// </list>
@@ -795,34 +858,34 @@ namespace THNETII.WinApi.Native.WinBase
         /// </remarks>
         /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
         /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
-        public static int FormatMessage(
+        public static unsafe int FormatMessage(
             FORMAT_MESSAGE_OPTIONS dwFlags,
             IntPtr lpSource,
             int dwMessageId,
             int dwLanguageId,
-            out WideStringPtr lpBuffer,
+            out char* lpBuffer,
             int nSize,
             IntPtr Arguments
             ) => FormatMessageW(dwFlags, lpSource, dwMessageId, dwLanguageId, out lpBuffer, nSize, Arguments);
-        ///// <inheritdoc cref="FormatMessage(FORMAT_MESSAGE_OPTIONS, IntPtr, int, int, out WideStringPtr, int, IntPtr)"/>
-        //[DllImport(NativeLibraryNames.Kernel32, CallingConvention = Winapi, EntryPoint = nameof(FormatMessageA), SetLastError = true)]
-        //public static extern int FormatMessageA(
-        //    FORMAT_MESSAGE_OPTIONS dwFlags,
-        //    IntPtr lpSource,
-        //    int dwMessageId,
-        //    int dwLanguageId,
-        //    out AnsiStringPtr lpBuffer,
-        //    int nSize,
-        //    IntPtr Arguments
-        //    );
-        /// <inheritdoc cref="FormatMessage(FORMAT_MESSAGE_OPTIONS, IntPtr, int, int, out WideStringPtr, int, IntPtr)"/>
-        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = Winapi, EntryPoint = nameof(FormatMessageW), SetLastError = true)]
-        public static extern int FormatMessageW(
+        /// <inheritdoc cref="FormatMessage(FORMAT_MESSAGE_OPTIONS, IntPtr, int, int, out char*, int, IntPtr)"/>
+        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = Winapi, EntryPoint = nameof(FormatMessageA), SetLastError = true)]
+        public static unsafe extern int FormatMessageA(
             FORMAT_MESSAGE_OPTIONS dwFlags,
             IntPtr lpSource,
             int dwMessageId,
             int dwLanguageId,
-            out WideStringPtr lpBuffer,
+            out byte* lpBuffer,
+            int nSize,
+            IntPtr Arguments
+            );
+        /// <inheritdoc cref="FormatMessage(FORMAT_MESSAGE_OPTIONS, IntPtr, int, int, out char*, int, IntPtr)"/>
+        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = Winapi, EntryPoint = nameof(FormatMessageW), SetLastError = true)]
+        public static unsafe extern int FormatMessageW(
+            FORMAT_MESSAGE_OPTIONS dwFlags,
+            IntPtr lpSource,
+            int dwMessageId,
+            int dwLanguageId,
+            out char* lpBuffer,
             int nSize,
             IntPtr Arguments
             );
@@ -850,9 +913,9 @@ namespace THNETII.WinApi.Native.WinBase
         /// <param name="dwLanguageId">
         /// <para>The language identifier for the requested message. This parameter is ignored if <paramref name="dwFlags"/> includes <see cref="FORMAT_MESSAGE_FROM_STRING"/>.</para>
         /// <para>
-        /// If you pass a specific LCID in this parameter, <see cref="FormatMessage(FORMAT_MESSAGE_OPTIONS, string, int, int, out WideStringPtr, int, IntPtr)"/> will return a message for that LCID only.
+        /// If you pass a specific LCID in this parameter, <see cref="FormatMessage(FORMAT_MESSAGE_OPTIONS, string, int, int, out char*, int, IntPtr)"/> will return a message for that LCID only.
         /// If the function cannot find a message for that LCID, it sets Last-Error to <see cref="ERROR_RESOURCE_LANG_NOT_FOUND"/>.
-        /// If you pass in <c>0</c> (zero), <see cref="FormatMessage(FORMAT_MESSAGE_OPTIONS, string, int, int, out WideStringPtr, int, IntPtr)"/> looks for a message for LCIDs in the following order:
+        /// If you pass in <c>0</c> (zero), <see cref="FormatMessage(FORMAT_MESSAGE_OPTIONS, string, int, int, out char*, int, IntPtr)"/> looks for a message for LCIDs in the following order:
         /// <list type="number">
         /// <item><term>Language neutral</term></item>
         /// <item><term>Thread LCID, based on the thread's locale value</term></item>
@@ -917,7 +980,7 @@ namespace THNETII.WinApi.Native.WinBase
         /// <item><term><c>%<em>space</em></c></term><description>A single space. This format string can be used to ensure the appropriate number of trailing spaces in a message text line.</description></item>
         /// <item><term><c>%.</c></term><description>A single period. This format string can be used to include a single period at the beginning of a line without terminating the message text definition.</description></item>
         /// <item><term><c>%!</c></term><description>A single exclamation point. This format string can be used to include an exclamation point immediately after an insert without its being mistaken for the beginning of a format string.</description></item>
-        /// <item><term><c>%n</c></term><description>A hard line break when the format string occurs at the end of a line. This format string is useful when <see cref="FormatMessage(FORMAT_MESSAGE_OPTIONS, string, int, int, out WideStringPtr, int, IntPtr)"/> is supplying regular line breaks so the message fits in a certain width.</description></item>
+        /// <item><term><c>%n</c></term><description>A hard line break when the format string occurs at the end of a line. This format string is useful when <see cref="FormatMessage(FORMAT_MESSAGE_OPTIONS, string, int, int, out char*, int, IntPtr)"/> is supplying regular line breaks so the message fits in a certain width.</description></item>
         /// <item><term><c>%r</c></term><description>A hard carriage return without a trailing newline character.</description></item>
         /// <item><term><c>%t</c></term><description>A single tab.</description></item>
         /// </list>
@@ -937,34 +1000,34 @@ namespace THNETII.WinApi.Native.WinBase
         /// </remarks>
         /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
         /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
-        public static int FormatMessage(
+        public static unsafe int FormatMessage(
             FORMAT_MESSAGE_OPTIONS dwFlags,
             string lpSource,
             int dwMessageId,
             int dwLanguageId,
-            out WideStringPtr lpBuffer,
+            out char* lpBuffer,
             int nSize,
             IntPtr Arguments
             ) => FormatMessageW(dwFlags, lpSource, dwMessageId, dwLanguageId, out lpBuffer, nSize, Arguments);
-        ///// <inheritdoc cref="FormatMessage(FORMAT_MESSAGE_OPTIONS, string, int, int, out WideStringPtr, int, IntPtr)"/>
-        //[DllImport(NativeLibraryNames.Kernel32, CallingConvention = Winapi, EntryPoint = nameof(FormatMessageA), SetLastError = true)]
-        //public static extern int FormatMessageA(
-        //    FORMAT_MESSAGE_OPTIONS dwFlags,
-        //    [MarshalAs(UnmanagedType.LPStr)] string lpSource,
-        //    int dwMessageId,
-        //    int dwLanguageId,
-        //    out AnsiStringPtr lpBuffer,
-        //    int nSize,
-        //    IntPtr Arguments
-        //    );
-        /// <inheritdoc cref="FormatMessage(FORMAT_MESSAGE_OPTIONS, string, int, int, out WideStringPtr, int, IntPtr)"/>
+        /// <inheritdoc cref="FormatMessage(FORMAT_MESSAGE_OPTIONS, string, int, int, out char*, int, IntPtr)"/>
+        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = Winapi, EntryPoint = nameof(FormatMessageA), SetLastError = true)]
+        public static unsafe extern int FormatMessageA(
+            FORMAT_MESSAGE_OPTIONS dwFlags,
+            [MarshalAs(UnmanagedType.LPStr)] string lpSource,
+            int dwMessageId,
+            int dwLanguageId,
+            out byte* lpBuffer,
+            int nSize,
+            IntPtr Arguments
+            );
+        /// <inheritdoc cref="FormatMessage(FORMAT_MESSAGE_OPTIONS, string, int, int, out char*, int, IntPtr)"/>
         [DllImport(NativeLibraryNames.Kernel32, CallingConvention = Winapi, EntryPoint = nameof(FormatMessageW), SetLastError = true)]
-        public static extern int FormatMessageW(
+        public static unsafe extern int FormatMessageW(
             FORMAT_MESSAGE_OPTIONS dwFlags,
             [MarshalAs(UnmanagedType.LPWStr)] string lpSource,
             int dwMessageId,
             int dwLanguageId,
-            out WideStringPtr lpBuffer,
+            out char* lpBuffer,
             int nSize,
             IntPtr Arguments
             );

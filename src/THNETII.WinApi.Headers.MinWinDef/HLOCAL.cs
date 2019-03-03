@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Runtime.InteropServices;
-using THNETII.InteropServices.NativeMemory;
 
 namespace THNETII.WinApi.Native.MinWinDef
 {
@@ -11,11 +10,10 @@ namespace THNETII.WinApi.Native.MinWinDef
     /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/winprog/windows-data-types#HLOCAL">Windows Data Types</a></para>
     /// </remarks>
     [StructLayout(LayoutKind.Sequential)]
-    public struct HLOCAL : IIntPtr
+    public struct HLOCAL
     {
         public HLOCAL(IntPtr ptr) => Pointer = ptr;
 
-        /// <inheritdoc cref="IIntPtr.Pointer"/>
         public IntPtr Pointer { get; }
     }
 }

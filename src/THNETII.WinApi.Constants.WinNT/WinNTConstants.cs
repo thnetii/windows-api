@@ -2100,5 +2100,12 @@ namespace THNETII.WinApi.Native.WinNT
         public const int CLAIM_SECURITY_ATTRIBUTES_INFORMATION_VERSION =
             CLAIM_SECURITY_ATTRIBUTES_INFORMATION_VERSION_V1;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 11160
+        //
+        // Security Tracking Mode
+        //
+
+        public const byte SECURITY_DYNAMIC_TRACKING = 1;
+        public const byte SECURITY_STATIC_TRACKING = 0;
     }
 }

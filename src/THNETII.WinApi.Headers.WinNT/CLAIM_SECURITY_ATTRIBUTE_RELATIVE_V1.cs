@@ -86,6 +86,8 @@ namespace THNETII.WinApi.Native.WinNT
         {
             get
             {
+                if (ValueType != CLAIM_SECURITY_ATTRIBUTE_VALUE_TYPE.CLAIM_SECURITY_ATTRIBUTE_TYPE_INT64)
+                    throw new InvalidOperationException($"Cannot access property {nameof(Int64)} if {nameof(ValueType)} is {ValueType}");
                 fixed (CLAIM_SECURITY_ATTRIBUTE_RELATIVE_V1* pThis = &this)
                 {
                     return new CLAIM_SECURITY_ATTRIBUTE_RELATIVE_VALUES<long>(pThis);
@@ -100,6 +102,8 @@ namespace THNETII.WinApi.Native.WinNT
         {
             get
             {
+                if (ValueType != CLAIM_SECURITY_ATTRIBUTE_VALUE_TYPE.CLAIM_SECURITY_ATTRIBUTE_TYPE_UINT64)
+                    throw new InvalidOperationException($"Cannot access property {nameof(UInt64)} if {nameof(ValueType)} is {ValueType}");
                 fixed (CLAIM_SECURITY_ATTRIBUTE_RELATIVE_V1* pThis = &this)
                 {
                     return new CLAIM_SECURITY_ATTRIBUTE_RELATIVE_VALUES<ulong>(pThis);
@@ -114,6 +118,8 @@ namespace THNETII.WinApi.Native.WinNT
         {
             get
             {
+                if (ValueType != CLAIM_SECURITY_ATTRIBUTE_VALUE_TYPE.CLAIM_SECURITY_ATTRIBUTE_TYPE_STRING)
+                    throw new InvalidOperationException($"Cannot access property {nameof(String)} if {nameof(ValueType)} is {ValueType}");
                 fixed (CLAIM_SECURITY_ATTRIBUTE_RELATIVE_V1* pThis = &this)
                 {
                     return new CLAIM_SECURITY_ATTRIBUTE_RELATIVE_VALUES<PWSTR>(pThis);
@@ -128,6 +134,8 @@ namespace THNETII.WinApi.Native.WinNT
         {
             get
             {
+                if (ValueType != CLAIM_SECURITY_ATTRIBUTE_VALUE_TYPE.CLAIM_SECURITY_ATTRIBUTE_TYPE_FQBN)
+                    throw new InvalidOperationException($"Cannot access property {nameof(Fqbn)} if {nameof(ValueType)} is {ValueType}");
                 fixed (CLAIM_SECURITY_ATTRIBUTE_RELATIVE_V1* pThis = &this)
                 {
                     return new CLAIM_SECURITY_ATTRIBUTE_RELATIVE_VALUES<CLAIM_SECURITY_ATTRIBUTE_FQBN_VALUE>(pThis);
@@ -142,6 +150,8 @@ namespace THNETII.WinApi.Native.WinNT
         {
             get
             {
+                if (ValueType != CLAIM_SECURITY_ATTRIBUTE_VALUE_TYPE.CLAIM_SECURITY_ATTRIBUTE_TYPE_OCTET_STRING)
+                    throw new InvalidOperationException($"Cannot access property {nameof(OctetString)} if {nameof(ValueType)} is {ValueType}");
                 fixed (CLAIM_SECURITY_ATTRIBUTE_RELATIVE_V1* pThis = &this)
                 {
                     return new CLAIM_SECURITY_ATTRIBUTE_RELATIVE_VALUES<CLAIM_SECURITY_ATTRIBUTE_OCTET_STRING_VALUE>(pThis);

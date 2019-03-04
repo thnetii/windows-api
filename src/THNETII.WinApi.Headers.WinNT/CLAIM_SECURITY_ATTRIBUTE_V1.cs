@@ -67,22 +67,66 @@ namespace THNETII.WinApi.Native.WinNT
         /// <summary>
         /// A span of <see cref="ValueCount"/> members where each member is a <see cref="long"/> of type <see cref="CLAIM_SECURITY_ATTRIBUTE_VALUE_TYPE.CLAIM_SECURITY_ATTRIBUTE_TYPE_INT64"/>.
         /// </summary>
-        public Span<long> Int64 => Values.AsRefStructSpan<long>(ValueCount);
+        public Span<long> Int64
+        {
+            get
+            {
+                if (ValueType != CLAIM_SECURITY_ATTRIBUTE_VALUE_TYPE.CLAIM_SECURITY_ATTRIBUTE_TYPE_INT64)
+                    throw new InvalidOperationException($"Cannot access property {nameof(Int64)} if {nameof(ValueType)} is {ValueType}");
+                return Values.AsRefStructSpan<long>(ValueCount);
+            }
+        }
+
         /// <summary>
         /// A span of <see cref="ValueCount"/> members where each member is a <see cref="ulong"/> of type <see cref="CLAIM_SECURITY_ATTRIBUTE_VALUE_TYPE.CLAIM_SECURITY_ATTRIBUTE_TYPE_UINT64"/>.
         /// </summary>
-        public Span<ulong> UInt64 => Values.AsRefStructSpan<ulong>(ValueCount);
+        public Span<ulong> UInt64
+        {
+            get
+            {
+                if (ValueType != CLAIM_SECURITY_ATTRIBUTE_VALUE_TYPE.CLAIM_SECURITY_ATTRIBUTE_TYPE_UINT64)
+                    throw new InvalidOperationException($"Cannot access property {nameof(UInt64)} if {nameof(ValueType)} is {ValueType}");
+                return Values.AsRefStructSpan<ulong>(ValueCount);
+            }
+        }
+
         /// <summary>
         /// A span of <see cref="ValueCount"/> members where each member is a <see cref="PWSTR"/> of type <see cref="CLAIM_SECURITY_ATTRIBUTE_VALUE_TYPE.CLAIM_SECURITY_ATTRIBUTE_TYPE_STRING"/>.
         /// </summary>
-        public Span<PWSTR> String => Values.AsRefStructSpan<PWSTR>(ValueCount);
+        public Span<PWSTR> String
+        {
+            get
+            {
+                if (ValueType != CLAIM_SECURITY_ATTRIBUTE_VALUE_TYPE.CLAIM_SECURITY_ATTRIBUTE_TYPE_STRING)
+                    throw new InvalidOperationException($"Cannot access property {nameof(String)} if {nameof(ValueType)} is {ValueType}");
+                return Values.AsRefStructSpan<PWSTR>(ValueCount);
+            }
+        }
+
         /// <summary>
         /// A span of <see cref="ValueCount"/> members where each member is a fully qualified binary name value of type <see cref="CLAIM_SECURITY_ATTRIBUTE_FQBN_VALUE"/>.
         /// </summary>
-        public Span<CLAIM_SECURITY_ATTRIBUTE_FQBN_VALUE> Fqbn => Values.AsRefStructSpan<CLAIM_SECURITY_ATTRIBUTE_FQBN_VALUE>(ValueCount);
+        public Span<CLAIM_SECURITY_ATTRIBUTE_FQBN_VALUE> Fqbn
+        {
+            get
+            {
+                if (ValueType != CLAIM_SECURITY_ATTRIBUTE_VALUE_TYPE.CLAIM_SECURITY_ATTRIBUTE_TYPE_FQBN)
+                    throw new InvalidOperationException($"Cannot access property {nameof(Fqbn)} if {nameof(ValueType)} is {ValueType}");
+                return Values.AsRefStructSpan<CLAIM_SECURITY_ATTRIBUTE_FQBN_VALUE>(ValueCount);
+            }
+        }
+
         /// <summary>
         /// A span of <see cref="ValueCount"/> members where each member is an octet string of type <see cref="CLAIM_SECURITY_ATTRIBUTE_OCTET_STRING_VALUE"/>.
         /// </summary>
-        public Span<CLAIM_SECURITY_ATTRIBUTE_OCTET_STRING_VALUE> OctetString => Values.AsRefStructSpan<CLAIM_SECURITY_ATTRIBUTE_OCTET_STRING_VALUE>(ValueCount);
+        public Span<CLAIM_SECURITY_ATTRIBUTE_OCTET_STRING_VALUE> OctetString
+        {
+            get
+            {
+                if (ValueType != CLAIM_SECURITY_ATTRIBUTE_VALUE_TYPE.CLAIM_SECURITY_ATTRIBUTE_TYPE_OCTET_STRING)
+                    throw new InvalidOperationException($"Cannot access property {nameof(OctetString)} if {nameof(ValueType)} is {ValueType}");
+                return Values.AsRefStructSpan<CLAIM_SECURITY_ATTRIBUTE_OCTET_STRING_VALUE>(ValueCount);
+            }
+        }
     }
 }

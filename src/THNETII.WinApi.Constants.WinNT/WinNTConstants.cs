@@ -2130,5 +2130,27 @@ namespace THNETII.WinApi.Native.WinNT
         public const int UNPROTECTED_DACL_SECURITY_INFORMATION = 0x20000000;
         public const int UNPROTECTED_SACL_SECURITY_INFORMATION = 0x10000000;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 11219
+        //
+        // Base signing levels.
+        //
+
+        public const byte SE_SIGNING_LEVEL_UNCHECKED = 0x00000000;
+        public const byte SE_SIGNING_LEVEL_UNSIGNED = 0x00000001;
+        public const byte SE_SIGNING_LEVEL_ENTERPRISE = 0x00000002;
+        public const byte SE_SIGNING_LEVEL_CUSTOM_1 = 0x00000003;
+        public const byte SE_SIGNING_LEVEL_AUTHENTICODE = 0x00000004;
+        public const byte SE_SIGNING_LEVEL_CUSTOM_2 = 0x00000005;
+        public const byte SE_SIGNING_LEVEL_STORE = 0x00000006;
+        public const byte SE_SIGNING_LEVEL_CUSTOM_3 = 0x00000007;
+        public const byte SE_SIGNING_LEVEL_ANTIMALWARE = SE_SIGNING_LEVEL_CUSTOM_3;
+        public const byte SE_SIGNING_LEVEL_MICROSOFT = 0x00000008;
+        public const byte SE_SIGNING_LEVEL_CUSTOM_4 = 0x00000009;
+        public const byte SE_SIGNING_LEVEL_CUSTOM_5 = 0x0000000A;
+        public const byte SE_SIGNING_LEVEL_DYNAMIC_CODEGEN = 0x0000000B;
+        public const byte SE_SIGNING_LEVEL_WINDOWS = 0x0000000C;
+        public const byte SE_SIGNING_LEVEL_CUSTOM_7 = 0x0000000D;
+        public const byte SE_SIGNING_LEVEL_WINDOWS_TCB = 0x0000000E;
+        public const byte SE_SIGNING_LEVEL_CUSTOM_6 = 0x0000000F;
     }
 }

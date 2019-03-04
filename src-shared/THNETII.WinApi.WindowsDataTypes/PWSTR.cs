@@ -3,7 +3,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.Runtime.InteropServices;
 using THNETII.InteropServices.NativeMemory;
 
-namespace THNETII.WinApi.Native.WinNT
+namespace THNETII.WinApi.Native
 {
     // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 453
     /// <summary>

@@ -176,6 +176,9 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public static ref readonly SID_IDENTIFIER_AUTHORITY SECURITY_PROCESS_TRUST_AUTHORITY => ref MemoryMarshal.Cast<byte, SID_IDENTIFIER_AUTHORITY>(WinNTConstants.SECURITY_PROCESS_TRUST_AUTHORITY.Span)[0];
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 10102
+        public static readonly int SECURITY_DESCRIPTOR_MIN_LENGTH = SizeOf<SECURITY_DESCRIPTOR>.Bytes;
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 10733
         public static readonly int TOKEN_USER_MAX_SIZE = SizeOf<TOKEN_USER>.Bytes + SECURITY_MAX_SID_SIZE;
 

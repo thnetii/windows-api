@@ -1,5 +1,4 @@
 ﻿using System.Runtime.InteropServices;
-using THNETII.InteropServices.NativeMemory;
 
 namespace THNETII.WinApi.Native.WinNT
 {
@@ -13,9 +12,6 @@ namespace THNETII.WinApi.Native.WinNT
     [StructLayout(LayoutKind.Sequential)]
     public unsafe struct TOKEN_APPCONTAINER_INFORMATION
     {
-        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 10896
-        public static readonly int TOKEN_APPCONTAINER_SID_MAX_SIZE = SizeOf<TOKEN_APPCONTAINER_INFORMATION>.Bytes + SID.SECURITY_MAX_SID_SIZE;
-
         /// <summary>
         /// The <a href="https://msdn.microsoft.com/3e9d7672-2314-45c8-8178-5a0afcfd0c50">security identifier</a> (SID) of the app container.
         /// </summary>

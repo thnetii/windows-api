@@ -76,11 +76,5 @@ namespace THNETII.WinApi.Native.WinNT
 
         public static bool operator ==(long value, LUID luid) => luid.Equals(value);
         public static bool operator !=(long value, LUID luid) => !luid.Equals(value);
-
-        public static ref readonly LUID SYSTEM_LUID => ref MemoryMarshal.Cast<int, LUID>(WinNTConstants.SYSTEM_LUID.Span)[0];
-        public static ref readonly LUID ANONYMOUS_LOGON_LUID => ref MemoryMarshal.Cast<int, LUID>(WinNTConstants.ANONYMOUS_LOGON_LUID.Span)[0];
-        public static ref readonly LUID LOCALSERVICE_LUID => ref MemoryMarshal.Cast<int, LUID>(WinNTConstants.LOCALSERVICE_LUID.Span)[0];
-        public static ref readonly LUID NETWORKSERVICE_LUID => ref MemoryMarshal.Cast<int, LUID>(WinNTConstants.NETWORKSERVICE_LUID.Span)[0];
-        public static ref readonly LUID IUSER_LUID => ref MemoryMarshal.Cast<int, LUID>(WinNTConstants.IUSER_LUID.Span)[0];
     }
 }

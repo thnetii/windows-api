@@ -1,5 +1,4 @@
 ﻿using System.Runtime.InteropServices;
-using THNETII.InteropServices.NativeMemory;
 
 namespace THNETII.WinApi.Native.WinNT
 {
@@ -26,8 +25,6 @@ namespace THNETII.WinApi.Native.WinNT
     [StructLayout(LayoutKind.Sequential)]
     public unsafe struct TOKEN_OWNER
     {
-        public static readonly int TOKEN_OWNER_MAX_SIZE = SizeOf<TOKEN_OWNER>.Bytes + SID.SECURITY_MAX_SID_SIZE;
-
         /// <summary>
         /// A pointer to a <see cref="SID"/> structure representing a user who will become the owner of any objects created by a process using this <a href="https://msdn.microsoft.com/0baaa937-f635-4500-8dcd-9dbbd6f4cd02">access token</a>. The <see cref="SID"/> must be one of the user or group SIDs already in the token.
         /// </summary>

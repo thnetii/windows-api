@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
-using THNETII.InteropServices.NativeMemory;
-
-using static THNETII.WinApi.Native.WinNT.WinNTConstants;
 
 namespace THNETII.WinApi.Native.WinNT
 {
@@ -34,11 +31,6 @@ namespace THNETII.WinApi.Native.WinNT
     [StructLayout(LayoutKind.Sequential)]
     public struct SID
     {
-        public static readonly int SECURITY_MAX_SID_SIZE =
-            SizeOf<SID>.Bytes - SizeOf<int>.Bytes + (SID_MAX_SUB_AUTHORITIES * SizeOf<int>.Bytes);
-        public static int SECURITY_SID_SIZE(byte SubAuthorityCount) =>
-            SizeOf<SID>.Bytes - SizeOf<int>.Bytes + (SubAuthorityCount * SizeOf<int>.Bytes);
-
         public byte Revision;
         public byte SubAuthorityCount;
         public SID_IDENTIFIER_AUTHORITY IdentifierAuthority;

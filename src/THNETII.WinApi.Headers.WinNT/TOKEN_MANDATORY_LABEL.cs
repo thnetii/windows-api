@@ -1,6 +1,4 @@
-﻿using System;
-using System.Runtime.InteropServices;
-using THNETII.InteropServices.NativeMemory;
+﻿using System.Runtime.InteropServices;
 
 namespace THNETII.WinApi.Native.WinNT
 {
@@ -15,8 +13,6 @@ namespace THNETII.WinApi.Native.WinNT
     [StructLayout(LayoutKind.Sequential)]
     public struct TOKEN_MANDATORY_LABEL
     {
-        public static readonly int TOKEN_INTEGRITY_LEVEL_MAX_SIZE = ((SizeOf<TOKEN_MANDATORY_LABEL>.Bytes + IntPtr.Size - 1) & ~(IntPtr.Size - 1)) + SID.SECURITY_MAX_SID_SIZE;
-
         /// <summary>
         /// A <see cref="SID_AND_ATTRIBUTES"/> structure that specifies the mandatory integrity level of the token.
         /// </summary>

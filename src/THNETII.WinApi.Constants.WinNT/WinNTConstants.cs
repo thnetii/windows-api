@@ -1823,6 +1823,91 @@ namespace THNETII.WinApi.Native.WinNT
 
         // (None yet defined.)
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 10081
+        ////////////////////////////////////////////////////////////////////////
+        //                                                                    //
+        //                             SECURITY_DESCRIPTOR                    //
+        //                                                                    //
+        ////////////////////////////////////////////////////////////////////////
+        //
+        //  Define the Security Descriptor and related data types.
+        //  This is an opaque data structure.
+        //
+
+        //
+        // Current security descriptor revision value
+        //
+
+        public const byte SECURITY_DESCRIPTOR_REVISION = 1;
+        public const byte SECURITY_DESCRIPTOR_REVISION1 = 1;
+
+        public const short SE_OWNER_DEFAULTED = 0x0001;
+        public const short SE_GROUP_DEFAULTED = 0x0002;
+        public const short SE_DACL_PRESENT = 0x0004;
+        public const short SE_DACL_DEFAULTED = 0x0008;
+        public const short SE_SACL_PRESENT = 0x0010;
+        public const short SE_SACL_DEFAULTED = 0x0020;
+        public const short SE_DACL_AUTO_INHERIT_REQ = 0x0100;
+        public const short SE_SACL_AUTO_INHERIT_REQ = 0x0200;
+        public const short SE_DACL_AUTO_INHERITED = 0x0400;
+        public const short SE_SACL_AUTO_INHERITED = 0x0800;
+        public const short SE_DACL_PROTECTED = 0x1000;
+        public const short SE_SACL_PROTECTED = 0x2000;
+        public const short SE_RM_CONTROL_VALID = 0x4000;
+        public const short SE_SELF_RELATIVE = unchecked((short)0x8000);
+
+        //
+        //  Where:
+        //
+        //      SE_OWNER_DEFAULTED - This boolean flag, when set, indicates that the
+        //          SID pointed to by the Owner field was provided by a
+        //          defaulting mechanism rather than explicitly provided by the
+        //          original provider of the security descriptor.  This may
+        //          affect the treatment of the SID with respect to inheritence
+        //          of an owner.
+        //
+        //      SE_GROUP_DEFAULTED - This boolean flag, when set, indicates that the
+        //          SID in the Group field was provided by a defaulting mechanism
+        //          rather than explicitly provided by the original provider of
+        //          the security descriptor.  This may affect the treatment of
+        //          the SID with respect to inheritence of a primary group.
+        //
+        //      SE_DACL_PRESENT - This boolean flag, when set, indicates that the
+        //          security descriptor contains a discretionary ACL.  If this
+        //          flag is set and the Dacl field of the SECURITY_DESCRIPTOR is
+        //          null, then a null ACL is explicitly being specified.
+        //
+        //      SE_DACL_DEFAULTED - This boolean flag, when set, indicates that the
+        //          ACL pointed to by the Dacl field was provided by a defaulting
+        //          mechanism rather than explicitly provided by the original
+        //          provider of the security descriptor.  This may affect the
+        //          treatment of the ACL with respect to inheritence of an ACL.
+        //          This flag is ignored if the DaclPresent flag is not set.
+        //
+        //      SE_SACL_PRESENT - This boolean flag, when set,  indicates that the
+        //          security descriptor contains a system ACL pointed to by the
+        //          Sacl field.  If this flag is set and the Sacl field of the
+        //          SECURITY_DESCRIPTOR is null, then an empty (but present)
+        //          ACL is being specified.
+        //
+        //      SE_SACL_DEFAULTED - This boolean flag, when set, indicates that the
+        //          ACL pointed to by the Sacl field was provided by a defaulting
+        //          mechanism rather than explicitly provided by the original
+        //          provider of the security descriptor.  This may affect the
+        //          treatment of the ACL with respect to inheritence of an ACL.
+        //          This flag is ignored if the SaclPresent flag is not set.
+        //
+        //      SE_SELF_RELATIVE - This boolean flag, when set, indicates that the
+        //          security descriptor is in self-relative form.  In this form,
+        //          all fields of the security descriptor are contiguous in memory
+        //          and all pointer fields are expressed as offsets from the
+        //          beginning of the security descriptor.  This form is useful
+        //          for treating security descriptors as opaque data structures
+        //          for transmission in communication protocol or for storage on
+        //          secondary media.
+        //
+
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 10278
         //
         // DS values for Level
@@ -2152,5 +2237,48 @@ namespace THNETII.WinApi.Native.WinNT
         public const byte SE_SIGNING_LEVEL_CUSTOM_7 = 0x0000000D;
         public const byte SE_SIGNING_LEVEL_WINDOWS_TCB = 0x0000000E;
         public const byte SE_SIGNING_LEVEL_CUSTOM_6 = 0x0000000F;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 11269
+        public const int SE_LEARNING_MODE_FLAG_PERMISSIVE = 0x00000001;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 11284
+        public const int PROCESS_TERMINATE = 0x0001;
+        public const int PROCESS_CREATE_THREAD = 0x0002;
+        public const int PROCESS_SET_SESSIONID = 0x0004;
+        public const int PROCESS_VM_OPERATION = 0x0008;
+        public const int PROCESS_VM_READ = 0x0010;
+        public const int PROCESS_VM_WRITE = 0x0020;
+        public const int PROCESS_DUP_HANDLE = 0x0040;
+        public const int PROCESS_CREATE_PROCESS = 0x0080;
+        public const int PROCESS_SET_QUOTA = 0x0100;
+        public const int PROCESS_SET_INFORMATION = 0x0200;
+        public const int PROCESS_QUERY_INFORMATION = 0x0400;
+        public const int PROCESS_SUSPEND_RESUME = 0x0800;
+        public const int PROCESS_QUERY_LIMITED_INFORMATION = 0x1000;
+        public const int PROCESS_SET_LIMITED_INFORMATION = 0x2000;
+        public const int PROCESS_ALL_ACCESS = STANDARD_RIGHTS_REQUIRED | SYNCHRONIZE | 0xFFFF;
+
+        public const int THREAD_TERMINATE = 0x0001;
+        public const int THREAD_SUSPEND_RESUME = 0x0002;
+        public const int THREAD_GET_CONTEXT = 0x0008;
+        public const int THREAD_SET_CONTEXT = 0x0010;
+        public const int THREAD_QUERY_INFORMATION = 0x0040;
+        public const int THREAD_SET_INFORMATION = 0x0020;
+        public const int THREAD_SET_THREAD_TOKEN = 0x0080;
+        public const int THREAD_IMPERSONATE = 0x0100;
+        public const int THREAD_DIRECT_IMPERSONATION = 0x0200;
+        // begin_wdm
+        public const int THREAD_SET_LIMITED_INFORMATION = 0x0400;  // winnt
+        public const int THREAD_QUERY_LIMITED_INFORMATION = 0x0800;  // winnt
+        public const int THREAD_RESUME = 0x1000;  // winnt
+        public const int THREAD_ALL_ACCESS = STANDARD_RIGHTS_REQUIRED | SYNCHRONIZE | 0xFFFF;
+
+        public const int JOB_OBJECT_ASSIGN_PROCESS = 0x0001;
+        public const int JOB_OBJECT_SET_ATTRIBUTES = 0x0002;
+        public const int JOB_OBJECT_QUERY = 0x0004;
+        public const int JOB_OBJECT_TERMINATE = 0x0008;
+        public const int JOB_OBJECT_SET_SECURITY_ATTRIBUTES = 0x0010;
+        public const int JOB_OBJECT_IMPERSONATE = 0x0020;
+        public const int JOB_OBJECT_ALL_ACCESS = STANDARD_RIGHTS_REQUIRED | SYNCHRONIZE | 0x3F;
     }
 }

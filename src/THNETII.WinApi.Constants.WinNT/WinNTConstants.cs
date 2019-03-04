@@ -1103,11 +1103,11 @@ namespace THNETII.WinApi.Native.WinNT
         //  and LOCALE_NAME_INVARIANT are preferred.  See documentation for GetLocaleInfoEx.
         //
 
-        public static readonly int LANG_SYSTEM_DEFAULT = (MAKELANGID(LANG_NEUTRAL, SUBLANG_SYS_DEFAULT));
-        public static readonly int LANG_USER_DEFAULT = (MAKELANGID(LANG_NEUTRAL, SUBLANG_DEFAULT));
+        public static readonly int LANG_SYSTEM_DEFAULT = MAKELANGID(LANG_NEUTRAL, SUBLANG_SYS_DEFAULT);
+        public static readonly int LANG_USER_DEFAULT = MAKELANGID(LANG_NEUTRAL, SUBLANG_DEFAULT);
 
-        public static readonly int LOCALE_SYSTEM_DEFAULT = (MAKELCID(LANG_SYSTEM_DEFAULT, SORT_DEFAULT));
-        public static readonly int LOCALE_USER_DEFAULT = (MAKELCID(LANG_USER_DEFAULT, SORT_DEFAULT));
+        public static readonly int LOCALE_SYSTEM_DEFAULT = MAKELCID(LANG_SYSTEM_DEFAULT, SORT_DEFAULT);
+        public static readonly int LOCALE_USER_DEFAULT = MAKELCID(LANG_USER_DEFAULT, SORT_DEFAULT);
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 2224
         //
@@ -1118,19 +1118,19 @@ namespace THNETII.WinApi.Native.WinNT
         //              See documentation for GetLocaleInfoEx.
         //
         public static readonly int LOCALE_CUSTOM_DEFAULT =
-            (MAKELCID(MAKELANGID(LANG_NEUTRAL, SUBLANG_CUSTOM_DEFAULT), SORT_DEFAULT));
+            MAKELCID(MAKELANGID(LANG_NEUTRAL, SUBLANG_CUSTOM_DEFAULT), SORT_DEFAULT);
 
         public static readonly int LOCALE_CUSTOM_UNSPECIFIED =
-            (MAKELCID(MAKELANGID(LANG_NEUTRAL, SUBLANG_CUSTOM_UNSPECIFIED), SORT_DEFAULT));
+            MAKELCID(MAKELANGID(LANG_NEUTRAL, SUBLANG_CUSTOM_UNSPECIFIED), SORT_DEFAULT);
 
         public static readonly int LOCALE_CUSTOM_UI_DEFAULT =
-            (MAKELCID(MAKELANGID(LANG_NEUTRAL, SUBLANG_UI_CUSTOM_DEFAULT), SORT_DEFAULT));
+            MAKELCID(MAKELANGID(LANG_NEUTRAL, SUBLANG_UI_CUSTOM_DEFAULT), SORT_DEFAULT);
 
         public static readonly int LOCALE_NEUTRAL =
-            (MAKELCID(MAKELANGID(LANG_NEUTRAL, SUBLANG_NEUTRAL), SORT_DEFAULT));
+            MAKELCID(MAKELANGID(LANG_NEUTRAL, SUBLANG_NEUTRAL), SORT_DEFAULT);
 
         public static readonly int LOCALE_INVARIANT =
-            (MAKELCID(MAKELANGID(LANG_INVARIANT, SUBLANG_NEUTRAL), SORT_DEFAULT));
+            MAKELCID(MAKELANGID(LANG_INVARIANT, SUBLANG_NEUTRAL), SORT_DEFAULT);
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 2246
         //
@@ -1274,26 +1274,26 @@ namespace THNETII.WinApi.Native.WinNT
         public const int CONTEXT_i486 = 0x00010000;    // i486 have identical context records
 
         /// <summary>SS:SP, CS:IP, FLAGS, BP</summary>
-        public const int CONTEXT_CONTROL = (CONTEXT_i386 | 0x00000001);
+        public const int CONTEXT_CONTROL = CONTEXT_i386 | 0x00000001;
         /// <summary>AX, BX, CX, DX, SI, DI</summary>
-        public const int CONTEXT_INTEGER = (CONTEXT_i386 | 0x00000002);
+        public const int CONTEXT_INTEGER = CONTEXT_i386 | 0x00000002;
         /// <summary>DS, ES, FS, GS</summary>
-        public const int CONTEXT_SEGMENTS = (CONTEXT_i386 | 0x00000004);
+        public const int CONTEXT_SEGMENTS = CONTEXT_i386 | 0x00000004;
         /// <summary>387 state</summary>
-        public const int CONTEXT_FLOATING_POINT = (CONTEXT_i386 | 0x00000008);
+        public const int CONTEXT_FLOATING_POINT = CONTEXT_i386 | 0x00000008;
         /// <summary>DB 0-3,6,7</summary>
-        public const int CONTEXT_DEBUG_REGISTERS = (CONTEXT_i386 | 0x00000010);
+        public const int CONTEXT_DEBUG_REGISTERS = CONTEXT_i386 | 0x00000010;
         /// <summary>cpu specific extensions</summary>
-        public const int CONTEXT_EXTENDED_REGISTERS = (CONTEXT_i386 | 0x00000020);
+        public const int CONTEXT_EXTENDED_REGISTERS = CONTEXT_i386 | 0x00000020;
 
-        public const int CONTEXT_FULL = (CONTEXT_CONTROL | CONTEXT_INTEGER |
-                                         CONTEXT_SEGMENTS);
+        public const int CONTEXT_FULL = CONTEXT_CONTROL | CONTEXT_INTEGER |
+                                         CONTEXT_SEGMENTS;
 
-        public const int CONTEXT_ALL = (CONTEXT_CONTROL | CONTEXT_INTEGER | CONTEXT_SEGMENTS |
+        public const int CONTEXT_ALL = CONTEXT_CONTROL | CONTEXT_INTEGER | CONTEXT_SEGMENTS |
                                         CONTEXT_FLOATING_POINT | CONTEXT_DEBUG_REGISTERS |
-                                        CONTEXT_EXTENDED_REGISTERS);
+                                        CONTEXT_EXTENDED_REGISTERS;
 
-        public const int CONTEXT_XSTATE = (CONTEXT_i386 | 0x00000040);
+        public const int CONTEXT_XSTATE = CONTEXT_i386 | 0x00000040;
 
         public const int CONTEXT_EXCEPTION_ACTIVE = 0x08000000;
         public const int CONTEXT_SERVICE_ACTIVE = 0x10000000;
@@ -1389,7 +1389,7 @@ namespace THNETII.WinApi.Native.WinNT
         // 1 (NULL character)
         // = 187 (assuming SID_MAX_SUB_AUTHORITIES = 15)
         public const int SECURITY_MAX_SID_STRING_CHARACTERS =
-            (2 + 4 + 15 + (11 * SID_MAX_SUB_AUTHORITIES) + 1);
+            2 + 4 + 15 + (11 * SID_MAX_SUB_AUTHORITIES) + 1;
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 9071
         public const int SID_HASH_SIZE = 32;
@@ -1690,7 +1690,7 @@ namespace THNETII.WinApi.Native.WinNT
         public const int SECURITY_CAPABILITY_APP_RID = 0x000000400;
         public const int SECURITY_BUILTIN_CAPABILITY_RID_COUNT = 2;
         public const int SECURITY_CAPABILITY_RID_COUNT = 5;
-        public const int SECURITY_PARENT_PACKAGE_RID_COUNT = (SECURITY_APP_PACKAGE_RID_COUNT);
+        public const int SECURITY_PARENT_PACKAGE_RID_COUNT = SECURITY_APP_PACKAGE_RID_COUNT;
         public const int SECURITY_CHILD_PACKAGE_RID_COUNT = 12;
 
         //
@@ -1727,7 +1727,7 @@ namespace THNETII.WinApi.Native.WinNT
         public const int SECURITY_MANDATORY_UNTRUSTED_RID = 0x00000000;
         public const int SECURITY_MANDATORY_LOW_RID = 0x00001000;
         public const int SECURITY_MANDATORY_MEDIUM_RID = 0x00002000;
-        public const int SECURITY_MANDATORY_MEDIUM_PLUS_RID = (SECURITY_MANDATORY_MEDIUM_RID + 0x100);
+        public const int SECURITY_MANDATORY_MEDIUM_PLUS_RID = SECURITY_MANDATORY_MEDIUM_RID + 0x100;
         public const int SECURITY_MANDATORY_HIGH_RID = 0x00003000;
         public const int SECURITY_MANDATORY_SYSTEM_RID = 0x00004000;
         public const int SECURITY_MANDATORY_PROTECTED_PROCESS_RID = 0x00005000;
@@ -1815,7 +1815,7 @@ namespace THNETII.WinApi.Native.WinNT
         public const int SE_GROUP_LOGON_ID = unchecked((int)0xC0000000);
         public const int SE_GROUP_RESOURCE = 0x20000000;
 
-        public const int SE_GROUP_VALID_ATTRIBUTES = (SE_GROUP_MANDATORY | SE_GROUP_ENABLED_BY_DEFAULT | SE_GROUP_ENABLED | SE_GROUP_OWNER | SE_GROUP_USE_FOR_DENY_ONLY | SE_GROUP_LOGON_ID | SE_GROUP_RESOURCE | SE_GROUP_INTEGRITY | SE_GROUP_INTEGRITY_ENABLED);
+        public const int SE_GROUP_VALID_ATTRIBUTES = SE_GROUP_MANDATORY | SE_GROUP_ENABLED_BY_DEFAULT | SE_GROUP_ENABLED | SE_GROUP_OWNER | SE_GROUP_USE_FOR_DENY_ONLY | SE_GROUP_LOGON_ID | SE_GROUP_RESOURCE | SE_GROUP_INTEGRITY | SE_GROUP_INTEGRITY_ENABLED;
 
         //
         // User attributes
@@ -1863,7 +1863,7 @@ namespace THNETII.WinApi.Native.WinNT
         public const int SE_PRIVILEGE_REMOVED = 0X00000004;
         public const int SE_PRIVILEGE_USED_FOR_ACCESS = unchecked((int)0x80000000);
 
-        public const int SE_PRIVILEGE_VALID_ATTRIBUTES = (SE_PRIVILEGE_ENABLED_BY_DEFAULT | SE_PRIVILEGE_ENABLED | SE_PRIVILEGE_REMOVED | SE_PRIVILEGE_USED_FOR_ACCESS);
+        public const int SE_PRIVILEGE_VALID_ATTRIBUTES = SE_PRIVILEGE_ENABLED_BY_DEFAULT | SE_PRIVILEGE_ENABLED | SE_PRIVILEGE_REMOVED | SE_PRIVILEGE_USED_FOR_ACCESS;
 
         //
         // Privilege Set Control flags
@@ -1978,17 +1978,17 @@ namespace THNETII.WinApi.Native.WinNT
         public const TokenAccessLevels TOKEN_ADJUST_DEFAULT = TokenAccessLevels.AdjustDefault;
         public const TokenAccessLevels TOKEN_ADJUST_SESSIONID = TokenAccessLevels.AdjustSessionId;
 
-        public const TokenAccessLevels TOKEN_ALL_ACCESS_P = ((TokenAccessLevels)STANDARD_RIGHTS_REQUIRED | TOKEN_ASSIGN_PRIMARY | TOKEN_DUPLICATE | TOKEN_IMPERSONATE | TOKEN_QUERY | TOKEN_QUERY_SOURCE | TOKEN_ADJUST_PRIVILEGES | TOKEN_ADJUST_GROUPS | TOKEN_ADJUST_DEFAULT);
+        public const TokenAccessLevels TOKEN_ALL_ACCESS_P = (TokenAccessLevels)STANDARD_RIGHTS_REQUIRED | TOKEN_ASSIGN_PRIMARY | TOKEN_DUPLICATE | TOKEN_IMPERSONATE | TOKEN_QUERY | TOKEN_QUERY_SOURCE | TOKEN_ADJUST_PRIVILEGES | TOKEN_ADJUST_GROUPS | TOKEN_ADJUST_DEFAULT;
 
-        public const TokenAccessLevels TOKEN_ALL_ACCESS = (TOKEN_ALL_ACCESS_P | TOKEN_ADJUST_SESSIONID);
+        public const TokenAccessLevels TOKEN_ALL_ACCESS = TOKEN_ALL_ACCESS_P | TOKEN_ADJUST_SESSIONID;
 
         public const TokenAccessLevels TOKEN_READ = TokenAccessLevels.Read;
         public const TokenAccessLevels TOKEN_WRITE = TokenAccessLevels.Write;
         public const TokenAccessLevels TOKEN_EXECUTE = (TokenAccessLevels)STANDARD_RIGHTS_EXECUTE;
 
-        public const TokenAccessLevels TOKEN_TRUST_CONSTRAINT_MASK = ((TokenAccessLevels)STANDARD_RIGHTS_READ | TOKEN_QUERY | TOKEN_QUERY_SOURCE);
+        public const TokenAccessLevels TOKEN_TRUST_CONSTRAINT_MASK = (TokenAccessLevels)STANDARD_RIGHTS_READ | TOKEN_QUERY | TOKEN_QUERY_SOURCE;
 
-        public const TokenAccessLevels TOKEN_ACCESS_PSEUDO_HANDLE_WIN8 = (TOKEN_QUERY | TOKEN_QUERY_SOURCE);
+        public const TokenAccessLevels TOKEN_ACCESS_PSEUDO_HANDLE_WIN8 = TOKEN_QUERY | TOKEN_QUERY_SOURCE;
         public const TokenAccessLevels TOKEN_ACCESS_PSEUDO_HANDLE = TOKEN_ACCESS_PSEUDO_HANDLE_WIN8;
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 10803
@@ -1996,7 +1996,7 @@ namespace THNETII.WinApi.Native.WinNT
         public const int TOKEN_MANDATORY_POLICY_NO_WRITE_UP = 0x1;
         public const int TOKEN_MANDATORY_POLICY_NEW_PROCESS_MIN = 0x2;
 
-        public const int TOKEN_MANDATORY_POLICY_VALID_MASK = (TOKEN_MANDATORY_POLICY_NO_WRITE_UP | TOKEN_MANDATORY_POLICY_NEW_PROCESS_MIN);
+        public const int TOKEN_MANDATORY_POLICY_VALID_MASK = TOKEN_MANDATORY_POLICY_NO_WRITE_UP | TOKEN_MANDATORY_POLICY_NEW_PROCESS_MIN;
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 10840
         public const int POLICY_AUDIT_SUBCATEGORY_COUNT = 59;
@@ -2074,13 +2074,13 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public const int CLAIM_SECURITY_ATTRIBUTE_MANDATORY = 0x0020;
 
-        public const int CLAIM_SECURITY_ATTRIBUTE_VALID_FLAGS = (
+        public const int CLAIM_SECURITY_ATTRIBUTE_VALID_FLAGS =
             CLAIM_SECURITY_ATTRIBUTE_NON_INHERITABLE |
             CLAIM_SECURITY_ATTRIBUTE_VALUE_CASE_SENSITIVE |
             CLAIM_SECURITY_ATTRIBUTE_USE_FOR_DENY_ONLY |
             CLAIM_SECURITY_ATTRIBUTE_DISABLED_BY_DEFAULT |
             CLAIM_SECURITY_ATTRIBUTE_DISABLED |
-            CLAIM_SECURITY_ATTRIBUTE_MANDATORY);
+            CLAIM_SECURITY_ATTRIBUTE_MANDATORY;
 
         /// <summary>
         /// Reserve upper 16 bits for custom flags. These should be preserved but not

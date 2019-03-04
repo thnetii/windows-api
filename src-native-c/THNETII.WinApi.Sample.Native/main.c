@@ -3,9 +3,9 @@
 
 int main(int argc, char* argv[])
 {
-    CLAIM_SECURITY_ATTRIBUTE_RELATIVE_V1 instance;
+    SECURITY_QUALITY_OF_SERVICE instance;
     const int size = sizeof(instance);
-    const int value = SANDBOX_INERT;
+    const int value = SECURITY_STATIC_TRACKING;
 
     const void* ptr = CloseHandle;
 

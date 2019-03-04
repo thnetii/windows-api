@@ -2107,5 +2107,28 @@ namespace THNETII.WinApi.Native.WinNT
 
         public const byte SECURITY_DYNAMIC_TRACKING = 1;
         public const byte SECURITY_STATIC_TRACKING = 0;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 11195
+        public const int DISABLE_MAX_PRIVILEGE = 0x1;
+        public const int SANDBOX_INERT = 0x2;
+        public const int LUA_TOKEN = 0x4;
+        public const int WRITE_RESTRICTED = 0x8;
+
+        public const int OWNER_SECURITY_INFORMATION = 0x00000001;
+        public const int GROUP_SECURITY_INFORMATION = 0x00000002;
+        public const int DACL_SECURITY_INFORMATION = 0x00000004;
+        public const int SACL_SECURITY_INFORMATION = 0x00000008;
+        public const int LABEL_SECURITY_INFORMATION = 0x00000010;
+        public const int ATTRIBUTE_SECURITY_INFORMATION = 0x00000020;
+        public const int SCOPE_SECURITY_INFORMATION = 0x00000040;
+        public const int PROCESS_TRUST_LABEL_SECURITY_INFORMATION = 0x00000080;
+        public const int ACCESS_FILTER_SECURITY_INFORMATION = 0x00000100;
+        public const int BACKUP_SECURITY_INFORMATION = 0x00010000;
+
+        public const int PROTECTED_DACL_SECURITY_INFORMATION = unchecked((int)0x80000000);
+        public const int PROTECTED_SACL_SECURITY_INFORMATION = 0x40000000;
+        public const int UNPROTECTED_DACL_SECURITY_INFORMATION = 0x20000000;
+        public const int UNPROTECTED_SACL_SECURITY_INFORMATION = 0x10000000;
+
     }
 }

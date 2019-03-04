@@ -57,12 +57,12 @@ namespace THNETII.WinApi.Native.WinNT
         public static readonly ACCESS_MASK GENERIC_EXECUTE = new ACCESS_MASK(WinNTConstants.GENERIC_EXECUTE);
         public static readonly ACCESS_MASK GENERIC_ALL = new ACCESS_MASK(WinNTConstants.GENERIC_ALL);
 
-        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 9011
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 9012
         public static readonly int SECURITY_MAX_SID_SIZE =
-            SizeOf<SID>.Bytes - SizeOf<int>.Bytes + (SID_MAX_SUB_AUTHORITIES * SizeOf<int>.Bytes);
+            SizeOf<SID.STRUCT_SID>.Bytes - SizeOf<int>.Bytes + (SID_MAX_SUB_AUTHORITIES * SizeOf<int>.Bytes);
 
-        public static int SECURITY_SID_SIZE(byte SubAuthorityCount) =>
-            SizeOf<SID>.Bytes - SizeOf<int>.Bytes + (SubAuthorityCount * SizeOf<int>.Bytes);
+        public static int SECURITY_SID_SIZE(byte SubAuthorityCount_) => SizeOf<SID.STRUCT_SID>.Bytes - SizeOf<int>.Bytes +
+            (SubAuthorityCount_ * SizeOf<int>.Bytes);
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 9600
         //
@@ -176,8 +176,21 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public static ref readonly SID_IDENTIFIER_AUTHORITY SECURITY_PROCESS_TRUST_AUTHORITY => ref MemoryMarshal.Cast<byte, SID_IDENTIFIER_AUTHORITY>(WinNTConstants.SECURITY_PROCESS_TRUST_AUTHORITY.Span)[0];
 
-        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 10102
-        public static readonly int SECURITY_DESCRIPTOR_MIN_LENGTH = SizeOf<SECURITY_DESCRIPTOR>.Bytes;
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 9915
+        public static readonly ACCESS_MASK SYSTEM_MANDATORY_LABEL_NO_WRITE_UP = new ACCESS_MASK(WinNTConstants.SYSTEM_MANDATORY_LABEL_NO_WRITE_UP);
+        public static readonly ACCESS_MASK SYSTEM_MANDATORY_LABEL_NO_READ_UP = new ACCESS_MASK(WinNTConstants.SYSTEM_MANDATORY_LABEL_NO_READ_UP);
+        public static readonly ACCESS_MASK SYSTEM_MANDATORY_LABEL_NO_EXECUTE_UP = new ACCESS_MASK(WinNTConstants.SYSTEM_MANDATORY_LABEL_NO_EXECUTE_UP);
+
+        public static readonly ACCESS_MASK SYSTEM_MANDATORY_LABEL_VALID_MASK = new ACCESS_MASK(WinNTConstants.SYSTEM_MANDATORY_LABEL_VALID_MASK);
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 9923
+        // Placeholder value that allows all ranges
+        public static readonly ACCESS_MASK SYSTEM_PROCESS_TRUST_LABEL_VALID_MASK = new ACCESS_MASK(WinNTConstants.SYSTEM_PROCESS_TRUST_LABEL_VALID_MASK);
+        public static readonly ACCESS_MASK SYSTEM_PROCESS_TRUST_NOCONSTRAINT_MASK = new ACCESS_MASK(WinNTConstants.SYSTEM_PROCESS_TRUST_NOCONSTRAINT_MASK);
+        public static readonly ACCESS_MASK SYSTEM_ACCESS_FILTER_VALID_MASK = new ACCESS_MASK(WinNTConstants.SYSTEM_ACCESS_FILTER_VALID_MASK);
+        public static readonly ACCESS_MASK SYSTEM_ACCESS_FILTER_NOCONSTRAINT_MASK = new ACCESS_MASK(WinNTConstants.SYSTEM_ACCESS_FILTER_NOCONSTRAINT_MASK);
+
+        public static readonly int SECURITY_DESCRIPTOR_MIN_LENGTH = SizeOf<SECURITY_DESCRIPTOR.STRUCT_SECURITY_DESCRIPTOR>.Bytes;
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 10733
         public static readonly int TOKEN_USER_MAX_SIZE = SizeOf<TOKEN_USER>.Bytes + SECURITY_MAX_SID_SIZE;

@@ -1,4 +1,6 @@
-﻿using System.Runtime.InteropServices;
+﻿using System;
+using System.Runtime.InteropServices;
+using System.Security.Principal;
 
 namespace THNETII.WinApi.Native.WinNT
 {
@@ -22,10 +24,13 @@ namespace THNETII.WinApi.Native.WinNT
     [StructLayout(LayoutKind.Sequential)]
     public unsafe struct SID_AND_ATTRIBUTES
     {
-        public SID* Sid;
+        public IntPtr Sid;
         /// <summary>
         /// Specifies attributes of the SID. This value contains up to 32 one-bit flags. Its meaning depends on the definition and use of the SID.
         /// </summary>
         public int Attributes;
+
+        public SecurityIdentifier MarshalSidToManagedSid() =>
+            SID.MarshalToManagedSid(Sid);
     }
 }

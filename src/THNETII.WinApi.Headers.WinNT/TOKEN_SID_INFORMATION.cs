@@ -1,4 +1,6 @@
-﻿using System.Runtime.InteropServices;
+﻿using System;
+using System.Runtime.InteropServices;
+using System.Security.Principal;
 
 namespace THNETII.WinApi.Native.WinNT
 {
@@ -6,6 +8,9 @@ namespace THNETII.WinApi.Native.WinNT
     [StructLayout(LayoutKind.Sequential)]
     public unsafe struct TOKEN_SID_INFORMATION
     {
-        public SID* Sid;
+        public IntPtr Sid;
+
+        public SecurityIdentifier MarshalSidToManaged() =>
+            SID.MarshalToManagedSid(Sid);
     }
 }

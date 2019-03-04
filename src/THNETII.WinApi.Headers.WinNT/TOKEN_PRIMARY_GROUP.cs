@@ -1,4 +1,6 @@
-﻿using System.Runtime.InteropServices;
+﻿using System;
+using System.Runtime.InteropServices;
+using System.Security.Principal;
 
 namespace THNETII.WinApi.Native.WinNT
 {
@@ -27,7 +29,11 @@ namespace THNETII.WinApi.Native.WinNT
     {
         /// <summary>
         /// A pointer to a <see cref="SID"/> structure representing a group that will become the primary group of any objects created by a process using this access token. The SID must be one of the group SIDs already in the token.
+        /// <para>Use the <see cref="MarshalPrimaryGroupToManaged"/> method to marshal the SID to a managed <see cref="SecurityIdentifier"/> instance.</para>
         /// </summary>
-        public SID* PrimaryGroup;
+        public IntPtr PrimaryGroup;
+
+        public SecurityIdentifier MarshalPrimaryGroupToManaged() =>
+            SID.MarshalToManagedSid(PrimaryGroup);
     }
 }

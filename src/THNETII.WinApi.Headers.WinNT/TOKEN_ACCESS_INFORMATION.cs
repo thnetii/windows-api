@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using System;
+using System.ComponentModel;
 using System.Runtime.InteropServices;
 using System.Security.Principal;
 
@@ -55,10 +56,11 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public int AppContainerNumber;
         /// <summary>
-        /// The app container SID or <c>null</c> if this is not an app container token.
+        /// The app container SID or <see cref="IntPtr.Zero"/> if this is not an app container token.
+        /// <para>Use the <see cref="MarshalPackageSidToManaged"/> method, to marshal the SID to a managed <see cref="SecurityIdentifier"/> instance.</para>
         /// <para><strong>Windows Server 2008 R2, Windows 7, Windows Server 2008 and Windows Vista</strong>: This member is not available.</para>
         /// </summary>
-        public SID* PackageSid;
+        public IntPtr PackageSid;
         /// <summary>
         /// Pointer to a <see cref="SID_AND_ATTRIBUTES_HASH"/> structure that specifies a hash of the token's capability SIDs.
         /// <para><strong>Windows Server 2008 R2, Windows 7, Windows Server 2008 and Windows Vista</strong>: This member is not available.</para>
@@ -66,13 +68,19 @@ namespace THNETII.WinApi.Native.WinNT
         public SID_AND_ATTRIBUTES_HASH* CapabilitiesHash;
         /// <summary>
         /// The protected process trust level of the token.
+        /// <para>Use the <see cref="MarshalTrustLevelSidToManaged"/> method, to marshal the SID to a managed <see cref="SecurityIdentifier"/> instance.</para>
         /// </summary>
-        public SID* TrustLevelSid;
+        public IntPtr TrustLevelSid;
         /// <summary>
         /// Reserved. Must be set to <c>null</c>.
         /// <para><strong>Prior to Windows 10</strong>: This member is not available.</para>
         /// </summary>
         [EditorBrowsable(EditorBrowsableState.Never)]
         public void* SecurityAttributes;
+
+        public SecurityIdentifier MarshalPackageSidToManaged() =>
+            SID.MarshalToManagedSid(PackageSid);
+        public SecurityIdentifier MarshalTrustLevelSidToManaged() =>
+            SID.MarshalToManagedSid(TrustLevelSid);
     }
 }

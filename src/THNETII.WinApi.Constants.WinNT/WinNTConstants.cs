@@ -1377,8 +1377,6 @@ namespace THNETII.WinApi.Native.WinNT
         public const byte SID_MAX_SUB_AUTHORITIES = 15;
         public const byte SID_RECOMMENDED_SUB_AUTHORITIES = 1;
 
-        public const int SECURITY_MAX_SID_SIZE = 68;
-
         // 2 (S-)
         // 4 (Rev(max: 255)-)
         // 15 (
@@ -1822,6 +1820,168 @@ namespace THNETII.WinApi.Native.WinNT
         //
 
         // (None yet defined.)
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 9652
+        ////////////////////////////////////////////////////////////////////////
+        //                                                                    //
+        //                         ACL  and  ACE                              //
+        //                                                                    //
+        ////////////////////////////////////////////////////////////////////////
+
+        //
+        //  Define an ACL and the ACE format.  The structure of an ACL header
+        //  followed by one or more ACEs.  Pictorally the structure of an ACL header
+        //  is as follows:
+        //
+        //       3 3 2 2 2 2 2 2 2 2 2 2 1 1 1 1 1 1 1 1 1 1
+        //       1 0 9 8 7 6 5 4 3 2 1 0 9 8 7 6 5 4 3 2 1 0 9 8 7 6 5 4 3 2 1 0
+        //      +-------------------------------+---------------+---------------+
+        //      |            AclSize            |      Sbz1     |  AclRevision  |
+        //      +-------------------------------+---------------+---------------+
+        //      |              Sbz2             |           AceCount            |
+        //      +-------------------------------+-------------------------------+
+        //
+        //  The current AclRevision is defined to be ACL_REVISION.
+        //
+        //  AclSize is the size, in bytes, allocated for the ACL.  This includes
+        //  the ACL header, ACES, and remaining free space in the buffer.
+        //
+        //  AceCount is the number of ACES in the ACL.
+        //
+
+        // begin_wdm
+        // This is the *current* ACL revision
+
+        public const byte ACL_REVISION = 2;
+        public const byte ACL_REVISION_DS = 4;
+
+        // This is the history of ACL revisions.  Add a new one whenever
+        // ACL_REVISION is updated
+
+        public const byte ACL_REVISION1 = 1;
+        public const byte MIN_ACL_REVISION = ACL_REVISION2;
+        public const byte ACL_REVISION2 = 2;
+        public const byte ACL_REVISION3 = 3;
+        public const byte ACL_REVISION4 = 4;
+        public const byte MAX_ACL_REVISION = ACL_REVISION4;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 9732
+        //
+        //  The following are the predefined ace types that go into the AceType
+        //  field of an Ace header.
+        //
+
+        public const byte ACCESS_MIN_MS_ACE_TYPE = 0x0;
+        public const byte ACCESS_ALLOWED_ACE_TYPE = 0x0;
+        public const byte ACCESS_DENIED_ACE_TYPE = 0x1;
+        public const byte SYSTEM_AUDIT_ACE_TYPE = 0x2;
+        public const byte SYSTEM_ALARM_ACE_TYPE = 0x3;
+        public const byte ACCESS_MAX_MS_V2_ACE_TYPE = 0x3;
+
+        public const byte ACCESS_ALLOWED_COMPOUND_ACE_TYPE = 0x4;
+        public const byte ACCESS_MAX_MS_V3_ACE_TYPE = 0x4;
+
+        public const byte ACCESS_MIN_MS_OBJECT_ACE_TYPE = 0x5;
+        public const byte ACCESS_ALLOWED_OBJECT_ACE_TYPE = 0x5;
+        public const byte ACCESS_DENIED_OBJECT_ACE_TYPE = 0x6;
+        public const byte SYSTEM_AUDIT_OBJECT_ACE_TYPE = 0x7;
+        public const byte SYSTEM_ALARM_OBJECT_ACE_TYPE = 0x8;
+        public const byte ACCESS_MAX_MS_OBJECT_ACE_TYPE = 0x8;
+
+        public const byte ACCESS_MAX_MS_V4_ACE_TYPE = 0x8;
+        public const byte ACCESS_MAX_MS_ACE_TYPE = 0x8;
+
+        public const byte ACCESS_ALLOWED_CALLBACK_ACE_TYPE = 0x9;
+        public const byte ACCESS_DENIED_CALLBACK_ACE_TYPE = 0xA;
+        public const byte ACCESS_ALLOWED_CALLBACK_OBJECT_ACE_TYPE = 0xB;
+        public const byte ACCESS_DENIED_CALLBACK_OBJECT_ACE_TYPE = 0xC;
+        public const byte SYSTEM_AUDIT_CALLBACK_ACE_TYPE = 0xD;
+        public const byte SYSTEM_ALARM_CALLBACK_ACE_TYPE = 0xE;
+        public const byte SYSTEM_AUDIT_CALLBACK_OBJECT_ACE_TYPE = 0xF;
+        public const byte SYSTEM_ALARM_CALLBACK_OBJECT_ACE_TYPE = 0x10;
+
+        public const byte SYSTEM_MANDATORY_LABEL_ACE_TYPE = 0x11;
+        public const byte SYSTEM_RESOURCE_ATTRIBUTE_ACE_TYPE = 0x12;
+        public const byte SYSTEM_SCOPED_POLICY_ID_ACE_TYPE = 0x13;
+        public const byte SYSTEM_PROCESS_TRUST_LABEL_ACE_TYPE = 0x14;
+        public const byte SYSTEM_ACCESS_FILTER_ACE_TYPE = 0x15;
+        public const byte ACCESS_MAX_MS_V5_ACE_TYPE = 0x15;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 9774
+        //
+        //  The following are the inherit flags that go into the AceFlags field
+        //  of an Ace header.
+        //
+
+        public const byte OBJECT_INHERIT_ACE = 0x1;
+        public const byte CONTAINER_INHERIT_ACE = 0x2;
+        public const byte NO_PROPAGATE_INHERIT_ACE = 0x4;
+        public const byte INHERIT_ONLY_ACE = 0x8;
+        public const byte INHERITED_ACE = 0x10;
+        public const byte VALID_INHERIT_FLAGS = 0x1F;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 9787
+        //  The following are the currently defined ACE flags that go into the
+        //  AceFlags field of an ACE header.  Each ACE type has its own set of
+        //  AceFlags.
+        //
+        //
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 9793
+        //
+        //  SYSTEM_AUDIT and SYSTEM_ALARM AceFlags
+        //
+        //  These control the signaling of audit and alarms for success or failure.
+        //
+        //  SUCCESSFUL_ACCESS_ACE_FLAG - used only with system audit and alarm ACE
+        //  types to indicate that a message is generated for successful accesses.
+        //
+        //  FAILED_ACCESS_ACE_FLAG - used only with system audit and alarm ACE types
+        //  to indicate that a message is generated for failed accesses.
+        //
+
+        public const byte SUCCESSFUL_ACCESS_ACE_FLAG = 0x40;
+        public const byte FAILED_ACCESS_ACE_FLAG = 0x80;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 9808
+        //
+        //  SYSTEM_ACCESS_FILTER_ACE AceFlags
+        //
+        //  These control the behaviour of SYSTEM_ACCESS_FILTER_ACE .
+        //
+        //  TRUST_PROTECTED_FILTER_ACE_FLAG - used only with SYSTEM_FILTERING_ACE_TYPE
+        //  ACEs to indicate that this ACE may not be deleted/modified except when the,
+        //  the current Trust Level dominates the one specified in the Ace SID.
+        //  If this flag is set then the SID in the ACE should be a valid TrustLevelSid.
+        //
+
+        public const byte TRUST_PROTECTED_FILTER_ACE_FLAG = 0x40;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 9915
+        public const int SYSTEM_MANDATORY_LABEL_NO_WRITE_UP = 0x1;
+        public const int SYSTEM_MANDATORY_LABEL_NO_READ_UP = 0x2;
+        public const int SYSTEM_MANDATORY_LABEL_NO_EXECUTE_UP = 0x4;
+
+        public const int SYSTEM_MANDATORY_LABEL_VALID_MASK =
+            SYSTEM_MANDATORY_LABEL_NO_WRITE_UP |
+            SYSTEM_MANDATORY_LABEL_NO_READ_UP |
+            SYSTEM_MANDATORY_LABEL_NO_EXECUTE_UP;
+
+        // Placeholder value that allows all ranges
+        public const int SYSTEM_PROCESS_TRUST_LABEL_VALID_MASK = 0x00ffffff;
+        public const int SYSTEM_PROCESS_TRUST_NOCONSTRAINT_MASK = unchecked((int)0xffffffff);
+        public const int SYSTEM_ACCESS_FILTER_VALID_MASK = 0x00ffffff;
+        public const int SYSTEM_ACCESS_FILTER_NOCONSTRAINT_MASK = unchecked((int)0xffffffff);
+        // end_ntifs
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 10040
+        //
+        // Currently define Flags for "OBJECT" ACE types.
+        //
+
+        public const int ACE_OBJECT_TYPE_PRESENT = 0x1;
+        public const int ACE_INHERITED_OBJECT_TYPE_PRESENT = 0x2;
+
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 10081
         ////////////////////////////////////////////////////////////////////////

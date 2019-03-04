@@ -1,4 +1,6 @@
-﻿using System.Runtime.InteropServices;
+﻿using System;
+using System.Runtime.InteropServices;
+using System.Security.Principal;
 
 namespace THNETII.WinApi.Native.WinNT
 {
@@ -26,8 +28,12 @@ namespace THNETII.WinApi.Native.WinNT
     public unsafe struct TOKEN_OWNER
     {
         /// <summary>
-        /// A pointer to a <see cref="SID"/> structure representing a user who will become the owner of any objects created by a process using this <a href="https://msdn.microsoft.com/0baaa937-f635-4500-8dcd-9dbbd6f4cd02">access token</a>. The <see cref="SID"/> must be one of the user or group SIDs already in the token.
+        /// A pointer to a <see cref="SecurityIdentifier"/> binary form representing a user who will become the owner of any objects created by a process using this <a href="https://msdn.microsoft.com/0baaa937-f635-4500-8dcd-9dbbd6f4cd02">access token</a>. The <see cref="SecurityIdentifier"/> must be one of the user or group SIDs already in the token.
+        /// <para>Use the <see cref="MarshalOwnerToManaged"/> method to marshal the SID to a managed <see cref="SecurityIdentifier"/> instance.</para>
         /// </summary>
-        public SID* Owner;
+        public IntPtr Owner;
+
+        public SecurityIdentifier MarshalOwnerToManaged() =>
+            SID.MarshalToManagedSid(Owner);
     }
 }

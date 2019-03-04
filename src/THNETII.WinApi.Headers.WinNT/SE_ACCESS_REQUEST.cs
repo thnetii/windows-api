@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Runtime.InteropServices;
+using System.Security.Principal;
 
 namespace THNETII.WinApi.Native.WinNT
 {
@@ -11,10 +12,13 @@ namespace THNETII.WinApi.Native.WinNT
         public SE_SECURITY_DESCRIPTOR* SeSecurityDescriptor;
         public ACCESS_MASK DesiredAccess;
         public ACCESS_MASK PreviouslyGrantedAccess;
-        public SID* PrincipalSelfSid;      // Need to watch how this field affects the cache.
+        public IntPtr PrincipalSelfSid;      // Need to watch how this field affects the cache.
         public GENERIC_MAPPING* GenericMapping;
         public int ObjectTypeListCount;
         public OBJECT_TYPE_LIST* PObjectTypeList;
         public unsafe Span<OBJECT_TYPE_LIST> ObjectTypeList => new Span<OBJECT_TYPE_LIST>(PObjectTypeList, ObjectTypeListCount);
+
+        public SecurityIdentifier MarshalPrincipalSelfSidToManaged() =>
+            SID.MarshalToManagedSid(PrincipalSelfSid);
     }
 }

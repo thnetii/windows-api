@@ -1,4 +1,6 @@
-﻿using System.Runtime.InteropServices;
+﻿using System;
+using System.Runtime.InteropServices;
+using System.Security.Principal;
 
 namespace THNETII.WinApi.Native.WinNT
 {
@@ -14,7 +16,11 @@ namespace THNETII.WinApi.Native.WinNT
     {
         /// <summary>
         /// The <a href="https://msdn.microsoft.com/3e9d7672-2314-45c8-8178-5a0afcfd0c50">security identifier</a> (SID) of the app container.
+        /// <para>Use the <see cref="MarshalTokenAppContainerToManaged"/> method to marshal the SID to a managed <see cref="SecurityIdentifier"/> instance.</para>
         /// </summary>
-        public SID* TokenAppContainer;
+        public IntPtr TokenAppContainer;
+
+        public SecurityIdentifier MarshalTokenAppContainerToManaged() =>
+            SID.MarshalToManagedSid(TokenAppContainer);
     }
 }

@@ -1,6 +1,4 @@
-﻿using System;
-using System.Runtime.InteropServices;
-using THNETII.InteropServices.NativeMemory;
+﻿using System.Runtime.InteropServices;
 
 namespace THNETII.WinApi.Native.WinNT
 {
@@ -8,12 +6,7 @@ namespace THNETII.WinApi.Native.WinNT
     [StructLayout(LayoutKind.Sequential)]
     public unsafe struct TOKEN_BNO_ISOLATION_INFORMATION
     {
-        public IntPtr IsolationPrefixPtr;
-#if NETSTANDARD1_6
-        public string IsolationPrefix => IsolationPrefixPtr.MarshalAsUnicodeString();
-#else
-        public Span<char> IsolationPrefix => IsolationPrefixPtr.ToZeroTerminatedUnicodeSpan();
-#endif // !NETSTANDARD1_6
+        public PWSTR IsolationPrefix;
         internal byte IsolationEnabledValue;
         public bool IsolationEnabled
         {

@@ -1,6 +1,4 @@
-﻿using System;
-using System.Runtime.InteropServices;
-using THNETII.InteropServices.NativeMemory;
+﻿using System.Runtime.InteropServices;
 
 namespace THNETII.WinApi.Native.WinNT
 {
@@ -21,16 +19,7 @@ namespace THNETII.WinApi.Native.WinNT
         /// <summary>
         /// A pointer to a zero-terminated Unicode (UTF-16) string containing
         /// the fully qualified binary name.
-        /// <para>Use the <see cref="Name"/> property to access the string.</para>
         /// </summary>
-        public IntPtr NamePtr;
-        /// <summary>
-        /// A fully qualified binary name.
-        /// </summary>
-#if NETSTANDARD1_6
-        public string Name => NamePtr.MarshalAsUnicodeString();
-#else
-        public Span<char> Name => NamePtr.ToZeroTerminatedUnicodeSpan();
-#endif // !NETSTANDARD1_6
+        public PWSTR NamePtr;
     }
 }

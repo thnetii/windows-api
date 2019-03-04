@@ -3,7 +3,7 @@
 
 int main(int argc, char* argv[])
 {
-    PWSTR instance;
+    CLAIM_SECURITY_ATTRIBUTE_RELATIVE_V1 instance;
     const int size = sizeof(instance);
     const int value = SANDBOX_INERT;
 

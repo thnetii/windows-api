@@ -1,0 +1,11 @@
+﻿using System.Diagnostics.CodeAnalysis;
+
+namespace THNETII.WinApi.Native.WinNT
+{
+    [SuppressMessage("Design", "CA1028: Enum Storage should be Int32", Justification = nameof(CLAIM_SECURITY_ATTRIBUTES_INFORMATION.Version))]
+    public enum CLAIM_SECURITY_ATTRIBUTES_VERSION : short
+    {
+        CLAIM_SECURITY_ATTRIBUTES_INFORMATION_VERSION_V1 = WinNTConstants.CLAIM_SECURITY_ATTRIBUTES_INFORMATION_VERSION_V1,
+        CLAIM_SECURITY_ATTRIBUTES_INFORMATION_VERSION = WinNTConstants.CLAIM_SECURITY_ATTRIBUTES_INFORMATION_VERSION,
+    }
+}

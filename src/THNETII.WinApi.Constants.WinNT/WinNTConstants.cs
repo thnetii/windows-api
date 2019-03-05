@@ -2440,5 +2440,15 @@ namespace THNETII.WinApi.Native.WinNT
         public const int JOB_OBJECT_SET_SECURITY_ATTRIBUTES = 0x0010;
         public const int JOB_OBJECT_IMPERSONATE = 0x0020;
         public const int JOB_OBJECT_ALL_ACCESS = STANDARD_RIGHTS_REQUIRED | SYNCHRONIZE | 0x3F;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 13566
+        //
+        // Object Manager Symbolic Link Specific Access Rights.
+        //
+
+        public const int DUPLICATE_CLOSE_SOURCE = 0x00000001;
+        public const int DUPLICATE_SAME_ACCESS = 0x00000002;
+
+
     }
 }

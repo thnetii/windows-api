@@ -3,7 +3,7 @@
 
   <PropertyGroup>
     <LangVersion>7.2</LangVersion>
-    <TargetFrameworks>netstandard1.3;netstandard2.0</TargetFrameworks>
+    <TargetFrameworks>netstandard1.6;netstandard2.0</TargetFrameworks>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <NoWarn>CS1591</NoWarn>
     <RootNamespace>THNETII.WinApi.Native.HandleApi</RootNamespace>
@@ -13,6 +13,13 @@
     <ProjectReference Include="..\..\src-shared\THNETII.WinApi.NativeLibraryNames\THNETII.WinApi.NativeLibraryNames.csproj">
       <PrivateAssets>All</PrivateAssets>
     </ProjectReference>
+    <ProjectReference Include="..\THNETII.WinApi.Constants.WinError\THNETII.WinApi.Constants.WinError.csproj">
+      <PrivateAssets>All</PrivateAssets>
+    </ProjectReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\THNETII.WinApi.Headers.WinNT\THNETII.WinApi.Headers.WinNT.csproj" />
   </ItemGroup>
 
 </Project>

@@ -243,5 +243,14 @@ namespace THNETII.WinApi.Native.WinNT
         public static readonly ACCESS_MASK JOB_OBJECT_SET_SECURITY_ATTRIBUTES = new ACCESS_MASK(WinNTConstants.JOB_OBJECT_SET_SECURITY_ATTRIBUTES);
         public static readonly ACCESS_MASK JOB_OBJECT_IMPERSONATE = new ACCESS_MASK(WinNTConstants.JOB_OBJECT_IMPERSONATE);
         public static readonly ACCESS_MASK JOB_OBJECT_ALL_ACCESS = new ACCESS_MASK(WinNTConstants.JOB_OBJECT_ALL_ACCESS);
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 13566
+        //
+        // Object Manager Symbolic Link Specific Access Rights.
+        //
+
+        public static readonly ACCESS_MASK DUPLICATE_CLOSE_SOURCE = new ACCESS_MASK(WinNTConstants.DUPLICATE_CLOSE_SOURCE);
+        public static readonly ACCESS_MASK DUPLICATE_SAME_ACCESS = new ACCESS_MASK(WinNTConstants.DUPLICATE_SAME_ACCESS);
+
     }
 }

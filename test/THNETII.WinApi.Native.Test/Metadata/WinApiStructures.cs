@@ -47,7 +47,6 @@ namespace THNETII.WinApi.Native.Metadata
             typeof(SE_SECURITY_DESCRIPTOR),
             typeof(SE_SID),
             typeof(SE_TOKEN_USER),
-            typeof(SID),
             typeof(SID_AND_ATTRIBUTES),
             typeof(SID_AND_ATTRIBUTES_HASH),
             typeof(SID_IDENTIFIER_AUTHORITY),

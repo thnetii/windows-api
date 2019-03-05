@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Runtime.InteropServices;
+using THNETII.WinApi.Native.WinBase;
 using THNETII.WinApi.Native.WinNT;
 
 using static System.Runtime.InteropServices.CallingConvention;
 using static THNETII.WinApi.Native.WinError.WinErrorConstants;
 using static THNETII.WinApi.Native.WinNT.WinNTRuntimeConstants;
 
-#if NETSTANDARD1_3
+#if NETSTANDARD1_6
 using EntryPointNotFoundException = System.Exception;
 #endif
 
@@ -168,6 +169,13 @@ namespace THNETII.WinApi.Native.HandleApi
         /// <item>Set <paramref name="dwOptions"/> to <see cref="DUPLICATE_FLAGS.DUPLICATE_CLOSE_SOURCE"/>.</item>
         /// </list>
         /// </para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows 2000 Professional [desktop apps | UWP apps]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows 2000 Server [desktop apps | UWP apps]</description></item>
+        /// </list>
+        /// </para>
         /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/handleapi/nf-handleapi-duplicatehandle">DuplicateHandle function</a></para>
         /// </remarks>
         /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
@@ -185,6 +193,114 @@ namespace THNETII.WinApi.Native.HandleApi
             [In] ACCESS_MASK dwDesiredAccess,
             [In, MarshalAs(UnmanagedType.Bool)] bool bInheritHandle,
             [In] DUPLICATE_FLAGS dwOptions
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\handleapi.h, line 43
+        #region CompareObjectHandles function
+        /// <summary>
+        /// Compares two object handles to determine if they refer to the same underlying kernel object.
+        /// </summary>
+        /// <param name="hFirstObjectHandle">The first object handle to compare.</param>
+        /// <param name="hSecondObjectHandle">The second object handle to compare.</param>
+        /// <returns>
+        /// A Boolean value that indicates if the two handles refer to the same underlying kernel object. <c>true</c> if the same, otherwise <c>false</c>.
+        /// </returns>
+        /// <remarks>
+        /// The <see cref="CompareObjectHandles"/> function is useful to determine if two kernel handles refer to the same kernel object without imposing a requirement that specific access rights be granted to either handle in order to perform the comparison. For example, if a process desires to determine whether a process handle is a handle to the current process, a call to <c>CompareObjectHandles(GetCurrentProcess(), hProcess)</c> can be used to determine if <c>hProcess</c> refers to the current process. Notably, this does not require the use of object-specific access rights, whereas in this example, calling <see cref="GetProcessId"/> to check the process IDs of two process handles imposes a requirement that the handles grant <see cref="PROCESS_QUERY_LIMITED_INFORMATION"/> access. However it is legal for a process handle to not have that access right granted depending on how the handle is intended to be used.
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows 2000 Professional [desktop apps | UWP apps]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows 2000 Server [desktop apps | UWP apps]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/handleapi/nf-handleapi-compareobjecthandles">CompareObjectHandles function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso href="https://msdn.microsoft.com/b4769e19-7478-4919-a9d2-8086ece6da70">Handle and Object Functions</seealso>
+        [return: MarshalAs(UnmanagedType.Bool)]
+        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = Winapi, SetLastError = true)]
+        public static extern bool CompareObjectHandles(
+            [In] IntPtr hFirstObjectHandle,
+            [In] IntPtr hSecondObjectHandle
+         );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\handleapi.h, line 72
+        #region GetHandleInformation function
+        /// <summary>
+        /// Retrieves certain properties of an object handle.
+        /// </summary>
+        /// <param name="hObject">
+        /// <para>A handle to an object whose information is to be retrieved.</para>
+        /// <para>You can specify a handle to one of the following types of objects: access token, console input buffer, console screen buffer, event, file, file mapping, job, mailslot, mutex, pipe, printer, process, registry key, semaphore, serial communication device, socket, thread, or waitable timer.</para>
+        /// </param>
+        /// <param name="lpdwFlags">Receives a set of bit flags that specify properties of the object handle.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <c>true</c>.</para>
+        /// <para>If the function fails, the return value is <c>false</c>. To get extended error information, call <see cref="Marshal.GetLastWin32Error"/>.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows 2000 Professional [desktop apps | UWP apps]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows 2000 Server [desktop apps | UWP apps]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/handleapi/nf-handleapi-gethandleinformation">GetHandleInformation function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="CloseHandle"/>
+        /// <seealso cref="CreateProcess"/>
+        /// <seealso href="https://msdn.microsoft.com/b4769e19-7478-4919-a9d2-8086ece6da70">Handle and Object Functions</seealso>
+        /// <seealso cref="SetHandleInformation"/>
+        [return: MarshalAs(UnmanagedType.Bool)]
+        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = Winapi, SetLastError = true)]
+        public static extern bool GetHandleInformation(
+            [In] IntPtr hObject,
+            out HANDLE_FLAGS lpdwFlags
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\handleapi.h, line 81
+        #region SetHandleInformation function
+        /// <summary>
+        /// Sets certain properties of an object handle.
+        /// </summary>
+        /// <param name="hObject">
+        /// <para>A handle to an object whose information is to be set.</para>
+        /// <para>You can specify a handle to one of the following types of objects: access token, console input buffer, console screen buffer, event, file, file mapping, job, mailslot, mutex, pipe, printer, process, registry key, semaphore, serial communication device, socket, thread, or waitable timer.</para>
+        /// </param>
+        /// <param name="dwMask">A mask that specifies the bit flags to be changed.</param>
+        /// <param name="dwFlags">Set of bit flags that specifies properties of the object handle. This parameter can be 0 or one or more of the values defined in the <see cref="HANDLE_FLAGS"/> enumeration type.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <c>true</c>.</para>
+        /// <para>If the function fails, the return value is <c>false</c>. To get extended error information, call <see cref="Marshal.GetLastWin32Error"/>.</para>
+        /// </returns>
+        /// <remarks>
+        /// To set or clear the associated bit flag in <paramref name="dwFlags"/>, you must set a change mask bit flag in <paramref name="dwMask"/>.
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows 2000 Professional [desktop apps | UWP apps]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows 2000 Server [desktop apps | UWP apps]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/handleapi/nf-handleapi-sethandleinformation">SetHandleInformation function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="CloseHandle"/>
+        /// <seealso cref="CreateProcess"/>
+        /// <seealso cref="GetHandleInformation"/>
+        /// <seealso href="https://msdn.microsoft.com/b4769e19-7478-4919-a9d2-8086ece6da70">Handle and Object Functions</seealso>
+        [return: MarshalAs(UnmanagedType.Bool)]
+        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = Winapi, SetLastError = true)]
+        public static extern bool SetHandleInformation(
+            [In] IntPtr hObject,
+            [In] HANDLE_FLAGS dwMask,
+            [In] HANDLE_FLAGS dwFlags
             );
         #endregion
     }

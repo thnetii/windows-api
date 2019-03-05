@@ -8,6 +8,10 @@
         public const int SEM_NOALIGNMENTFAULTEXCEPT = 0x0004;
         public const int SEM_NOOPENFILEERRORBOX = 0x8000;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\WinBase.h, line 1992
+        public const int HANDLE_FLAG_INHERIT = 0x00000001;
+        public const int HANDLE_FLAG_PROTECT_FROM_CLOSE = 0x00000002;
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\WinBase.h, line 2380
         /// <summary>
         /// <see cref="FORMAT_MESSAGE_ALLOCATE_BUFFER"/> requires use of <see cref="HeapFree"/>

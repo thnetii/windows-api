@@ -5,9 +5,9 @@ int main(int argc, char* argv[])
 {
     ACL instance;
     const int size = sizeof(instance);
-    const int value = DUPLICATE_CLOSE_SOURCE;
+    const int value = HANDLE_FLAG_INHERIT;
 
-    const void* ptr = DuplicateHandle;
+    const void* ptr = GetHandleInformation;
 
     return EXIT_SUCCESS;
 }

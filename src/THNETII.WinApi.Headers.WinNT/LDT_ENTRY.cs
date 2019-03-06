@@ -181,7 +181,7 @@ namespace THNETII.WinApi.Native.WinNT
         /// <summary>
         /// The present flag.
         /// </summary>
-        /// <value><c>true</c> if the segment is present in physical memory; otherwise, <c>false</c>.</value>
+        /// <value><see langword="true"/> if the segment is present in physical memory; otherwise, <see langword="false"/>.</value>
         public bool Pres
         {
             get => bits_Pres.Read(value) != 0;
@@ -216,8 +216,8 @@ namespace THNETII.WinApi.Native.WinNT
         /// The size of segment.
         /// </summary>
         /// <value>
-        /// <para>If the segment is a data segment: <c>true</c> if the segment is larger than 64 kilobytes; <c>false</c> if the segment is smaller than or equal to 64K.</para>
-        /// <para>If the segment is a code segment: <c>true</c> if the code runs with the default (native) instruction set; <c>false</c> if the code segment is an 80286 code segment and runs with 16-bit offsets and the 80286-compatible instruction set.</para>
+        /// <para>If the segment is a data segment: <see langword="true"/> if the segment is larger than 64 kilobytes; <see langword="false"/> if the segment is smaller than or equal to 64K.</para>
+        /// <para>If the segment is a code segment: <see langword="true"/> if the code runs with the default (native) instruction set; <see langword="false"/> if the code segment is an 80286 code segment and runs with 16-bit offsets and the 80286-compatible instruction set.</para>
         /// </value>
         public bool DefaultBig
         {

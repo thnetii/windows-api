@@ -15,19 +15,19 @@ namespace THNETII.WinApi.Native
         /// <summary>
         /// Initializes a new <see cref="PWSTR"/> with a given pointer.
         /// </summary>
-        /// <param name="ptr">A pointer to the first unicode character in the string. May be <see cref="IntPtr.Zero"/> to represent <c>null</c>.</param>
+        /// <param name="ptr">A pointer to the first unicode character in the string. May be <see cref="IntPtr.Zero"/> to represent <see langword="null"/>.</param>
         public PWSTR(IntPtr ptr) => Pointer = ptr;
 
         /// <summary>
         /// Gets the pointer value of the <see cref="PWSTR"/>.
         /// </summary>
-        /// <value>A pointer to the first character of the string, or <see cref="IntPtr.Zero"/> if the <see cref="PWSTR"/> refers to <c>null</c>.</value>
+        /// <value>A pointer to the first character of the string, or <see cref="IntPtr.Zero"/> if the <see cref="PWSTR"/> refers to <see langword="null"/>.</value>
         public IntPtr Pointer { get; }
 
         /// <summary>
         /// Gets a value indicating whether the current pointer is a null-pointer.
         /// </summary>
-        /// <value><c>true</c> is <see cref="Pointer"/> is not equal to <see cref="IntPtr.Zero"/>; otherwise, <c>false</c>.</value>
+        /// <value><see langword="true"/> is <see cref="Pointer"/> is not equal to <see cref="IntPtr.Zero"/>; otherwise, <see langword="false"/>.</value>
         public bool HasValue => Pointer != IntPtr.Zero;
 
         /// <summary>
@@ -36,7 +36,7 @@ namespace THNETII.WinApi.Native
         /// <para>Copies each unicode character up to, but excluding the first encountered null-terminating character.</para>
         /// </summary>
         /// <returns>
-        /// <c>null</c> if <see cref="Pointer"/> is <see cref="IntPtr.Zero"/>; otherwise,
+        /// <see langword="null"/> if <see cref="Pointer"/> is <see cref="IntPtr.Zero"/>; otherwise,
         /// a managed string instance containing a copy of the unmanaged string.
         /// </returns>
         public override string ToString() => Pointer.MarshalAsUnicodeString();
@@ -48,7 +48,7 @@ namespace THNETII.WinApi.Native
         /// </summary>
         /// <param name="length">The non-negative number of two-byte UTF-16 characters to copy.</param>
         /// <returns>
-        /// <c>null</c> if <see cref="Pointer"/> is <see cref="IntPtr.Zero"/>; otherwise,
+        /// <see langword="null"/> if <see cref="Pointer"/> is <see cref="IntPtr.Zero"/>; otherwise,
         /// A managed string instance with a <see cref="string.Length"/> equal to <paramref name="length"/> containing a copy of the unmanaged string.
         /// </returns>
         public string ToString(int length) => Pointer.MarshalAsUnicodeString(length);
@@ -70,7 +70,7 @@ namespace THNETII.WinApi.Native
         /// Explcitly casts the pointer to a <see cref="PWSTR"/> pointer.
         /// Equivalent to calling the <see cref="PWSTR(IntPtr)"/> constructor.
         /// </summary>
-        /// <param name="ptr">A pointer to the first unicode character in the string. May be <see cref="IntPtr.Zero"/> to represent <c>null</c>.</param>
+        /// <param name="ptr">A pointer to the first unicode character in the string. May be <see cref="IntPtr.Zero"/> to represent <see langword="null"/>.</param>
         [SuppressMessage("Usage", "CA2225: Operator overloads have named alternates", Justification = ".ctor")]
         public static explicit operator PWSTR(IntPtr ptr) => new PWSTR(ptr);
 
@@ -125,7 +125,7 @@ namespace THNETII.WinApi.Native
         /// </summary>
         /// <param name="left">The left comparand.</param>
         /// <param name="right">The right comparand.</param>
-        /// <returns><c>true</c> if the pointers are not equal; otherwise, <c>false</c>.</returns>
+        /// <returns><see langword="true"/> if the pointers are not equal; otherwise, <see langword="false"/>.</returns>
         public static bool operator !=(PWSTR left, PWSTR right) =>
             left.Pointer != right.Pointer;
 
@@ -135,7 +135,7 @@ namespace THNETII.WinApi.Native
         /// </summary>
         /// <param name="left">The left comparand.</param>
         /// <param name="right">The right comparand.</param>
-        /// <returns><c>true</c> if the pointers are not equal; otherwise, <c>false</c>.</returns>
+        /// <returns><see langword="true"/> if the pointers are not equal; otherwise, <see langword="false"/>.</returns>
         public static bool operator !=(PWSTR left, IntPtr right) =>
             left.Pointer != right;
 
@@ -145,7 +145,7 @@ namespace THNETII.WinApi.Native
         /// </summary>
         /// <param name="left">The left comparand.</param>
         /// <param name="right">The right comparand.</param>
-        /// <returns><c>true</c> if the pointers are not equal; otherwise, <c>false</c>.</returns>
+        /// <returns><see langword="true"/> if the pointers are not equal; otherwise, <see langword="false"/>.</returns>
         public static bool operator !=(IntPtr left, PWSTR right) =>
             left != right.Pointer;
     }

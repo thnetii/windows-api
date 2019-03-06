@@ -27,7 +27,7 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         CLAIM_SECURITY_ATTRIBUTE_TYPE_SID = WinNTConstants.CLAIM_SECURITY_ATTRIBUTE_TYPE_SID,
         /// <summary>
-        /// The <see cref="CLAIM_SECURITY_ATTRIBUTE_V1.Values"/> member refers to an array of <see cref="ulong"/> values where each element indicates a Boolean value. Non-zero values indicate <c>true</c> and the value <c>0UL</c> (zero) indicates <c>false</c>.
+        /// The <see cref="CLAIM_SECURITY_ATTRIBUTE_V1.Values"/> member refers to an array of <see cref="ulong"/> values where each element indicates a Boolean value. Non-zero values indicate <see langword="true"/> and the value <c>0UL</c> (zero) indicates <see langword="false"/>.
         /// </summary>
         CLAIM_SECURITY_ATTRIBUTE_TYPE_BOOLEAN = WinNTConstants.CLAIM_SECURITY_ATTRIBUTE_TYPE_BOOLEAN,
         /// <summary>

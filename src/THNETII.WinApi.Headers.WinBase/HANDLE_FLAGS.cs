@@ -6,7 +6,7 @@ namespace THNETII.WinApi.Native.WinBase
     public enum HANDLE_FLAGS : int
     {
         /// <summary>
-        /// A child process created with the <em>bInheritHandles</em> parameter of <see cref="CreateProcess"/> set to <c>true</c> will inherit object handles that have this flag set.
+        /// A child process created with the <em>bInheritHandles</em> parameter of <see cref="CreateProcess"/> set to <see langword="true"/> will inherit object handles that have this flag set.
         /// </summary>
         HANDLE_FLAG_INHERIT = WinBaseConstants.HANDLE_FLAG_INHERIT,
         /// <summary>

@@ -7,8 +7,8 @@ namespace THNETII.WinApi.Native.WinUser
     /// The <see cref="GRAYSTRINGPROC"/> delegate is an application-defined callback function used with the <see cref="GrayString"/> function. It is used to draw a string.
     /// </summary>
     /// <returns>
-    /// <para>If it succeeds, the callback function should return <c>true</c>.</para>
-    /// <para>If the function fails, the return value is <c>false</c>.</para>
+    /// <para>If it succeeds, the callback function should return <see langword="true"/>.</para>
+    /// <para>If the function fails, the return value is <see langword="false"/>.</para>
     /// </returns>
     /// <remarks>
     /// The callback function must draw an image relative to the coordinates (0,0).

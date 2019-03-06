@@ -105,7 +105,7 @@ namespace THNETII.WinApi.Native.WinNT
         TokenIsAppContainer,
         /// <summary>The buffer receives a <see cref="TOKEN_GROUPS"/> structure that contains the capabilities associated with the token.</summary>
         TokenCapabilities,
-        /// <summary>The buffer receives a <see cref="TOKEN_APPCONTAINER_INFORMATION"/> structure that contains the <see cref="TOKEN_APPCONTAINER_INFORMATION.AppContainerSid"/> associated with the token. If the token is not associated with an app container, the <see cref="TOKEN_APPCONTAINER_INFORMATION.TokenAppContainer"/> member of the <see cref="TOKEN_APPCONTAINER_INFORMATION"/> structure points to <c>null</c>.</summary>
+        /// <summary>The buffer receives a <see cref="TOKEN_APPCONTAINER_INFORMATION"/> structure that contains the <see cref="TOKEN_APPCONTAINER_INFORMATION.AppContainerSid"/> associated with the token. If the token is not associated with an app container, the <see cref="TOKEN_APPCONTAINER_INFORMATION.TokenAppContainer"/> member of the <see cref="TOKEN_APPCONTAINER_INFORMATION"/> structure points to <see langword="null"/>.</summary>
         TokenAppContainerSid,
         /// <summary>The buffer receives an <see cref="int"/> value that includes the app container number for the token. For tokens that are not app container tokens, this value is zero.</summary>
         TokenAppContainerNumber,

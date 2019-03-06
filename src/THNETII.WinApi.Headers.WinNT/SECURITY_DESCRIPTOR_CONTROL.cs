@@ -29,7 +29,7 @@ namespace THNETII.WinApi.Native.WinNT
         /// This boolean flag, when set, indicates that the
         /// security descriptor contains a discretionary ACL.  If this
         /// flag is set and the <see cref="SECURITY_DESCRIPTOR.Dacl"/> field of the <see cref="SECURITY_DESCRIPTOR"/> is
-        /// <c>null</c>, then a null ACL is explicitly being specified.
+        /// <see langword="null"/>, then a null ACL is explicitly being specified.
         /// </summary>
         SE_DACL_PRESENT = WinNTConstants.SE_DACL_PRESENT,
         /// <summary>
@@ -45,7 +45,7 @@ namespace THNETII.WinApi.Native.WinNT
         /// This boolean flag, when set,  indicates that the
         /// security descriptor contains a system ACL pointed to by the
         /// <see cref="SECURITY_DESCRIPTOR.Sacl"/> field.  If this flag is set and the <see cref="SECURITY_DESCRIPTOR.Sacl"/> field of the
-        /// <see cref="SECURITY_DESCRIPTOR"/> is <c>null</c>, then an empty (but present)
+        /// <see cref="SECURITY_DESCRIPTOR"/> is <see langword="null"/>, then an empty (but present)
         /// ACL is being specified.
         /// </summary>
         SE_SACL_PRESENT = WinNTConstants.SE_SACL_PRESENT,

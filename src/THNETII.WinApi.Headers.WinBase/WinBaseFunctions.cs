@@ -219,7 +219,7 @@ namespace THNETII.WinApi.Native.WinBase
         /// <param name="pMem">A pointer to the first byte of the local memory object. This pointer is returned by the <see cref="LocalLock"/> function.</param>
         /// <returns>
         /// <para>If the function succeeds, the return value is a handle to the specified local memory object.</para>
-        /// <para>If the function fails, the return value is an <see cref="HLOCAL"/> representing <c>null</c>. To get extended error information, call <see cref="Marshal.GetLastWin32Error"/>.</para>
+        /// <para>If the function fails, the return value is an <see cref="HLOCAL"/> representing <see langword="null"/>. To get extended error information, call <see cref="Marshal.GetLastWin32Error"/>.</para>
         /// </returns>
         /// <remarks>
         /// When the <see cref="LocalAlloc"/> function allocates a local memory object with <see cref="LMEM_MOVEABLE"/>, it returns a handle to the object. The <see cref="LocalLock"/> function converts this handle into a pointer to the object's memory block, and <see cref="LocalHandle"/> converts the pointer back into a handle.
@@ -350,12 +350,12 @@ namespace THNETII.WinApi.Native.WinBase
         /// </summary>
         /// <param name="hMem">A handle to the local memory object. This handle is returned by either the <see cref="LocalAlloc"/> or <see cref="LocalReAlloc"/> function. It is not safe to free memory allocated with <see cref="GlobalAlloc"/> or <see cref="Marshal.AllocHGlobal(int)"/>.</param>
         /// <returns>
-        /// <para>If the function succeeds, the return value is an <see cref="HLOCAL"/> representing <c>null</c>.</para>
+        /// <para>If the function succeeds, the return value is an <see cref="HLOCAL"/> representing <see langword="null"/>.</para>
         /// <para>If the function fails, the return value is equal to a handle to the local memory object. To get extended error information, call <see cref="Marshal.GetLastWin32Error"/>.</para>
         /// </returns>
         /// <remarks>
         /// <para>If the process tries to examine or modify the memory after it has been freed, heap corruption may occur or an access violation exception (<see cref="AccessViolationException"/>) may be generated.</para>
-        /// <para>If the <paramref name="hMem"/> parameter points to <c>null</c>, <see cref="LocalFree"/> ignores the parameter and returns an <see cref="HLOCAL"/> to <c>null</c>.</para>
+        /// <para>If the <paramref name="hMem"/> parameter points to <see langword="null"/>, <see cref="LocalFree"/> ignores the parameter and returns an <see cref="HLOCAL"/> to <see langword="null"/>.</para>
         /// <para>The <see cref="LocalFree"/> function will free a locked memory object. A locked memory object has a lock count greater than zero. The <see cref="LocalLock"/> function locks a local memory object and increments the lock count by one. The <see cref="LocalUnlock"/> function unlocks it and decrements the lock count by one. To get the lock count of a local memory object, use the <see cref="LocalFlags"/> function.</para>
         /// <para>If an application is running under a debug version of the system, <see cref="LocalFree"/> will issue a message that tells you that a locked object is being freed. If you are debugging the application, <see cref="LocalFree"/> will enter a breakpoint just before freeing a locked object. This allows you to verify the intended behavior, then continue execution.</para>
         /// <para>
@@ -604,7 +604,7 @@ namespace THNETII.WinApi.Native.WinBase
         /// </param>
         /// <param name="lpSource">
         /// <para>A string that consists of unformatted message text. It will be scanned for inserts and formatted accordingly.</para>
-        /// <para>Only use this overload if the <see cref="FORMAT_MESSAGE_FROM_STRING"/> flag is set in <paramref name="dwFlags"/>. Otherwise, set this parameter to <c>null</c>.</para>
+        /// <para>Only use this overload if the <see cref="FORMAT_MESSAGE_FROM_STRING"/> flag is set in <paramref name="dwFlags"/>. Otherwise, set this parameter to <see langword="null"/>.</para>
         /// </param>
         /// <param name="dwMessageId">The message identifier for the requested message. This parameter is ignored if<paramref name="dwFlags"/> includes <see cref="FORMAT_MESSAGE_FROM_STRING"/>.</param>
         /// <param name="dwLanguageId">
@@ -907,7 +907,7 @@ namespace THNETII.WinApi.Native.WinBase
         /// </param>
         /// <param name="lpSource">
         /// <para>A string that consists of unformatted message text. It will be scanned for inserts and formatted accordingly.</para>
-        /// <para>Only use this overload if the <see cref="FORMAT_MESSAGE_FROM_STRING"/> flag is set in <paramref name="dwFlags"/>. Otherwise, set this parameter to <c>null</c>.</para>
+        /// <para>Only use this overload if the <see cref="FORMAT_MESSAGE_FROM_STRING"/> flag is set in <paramref name="dwFlags"/>. Otherwise, set this parameter to <see langword="null"/>.</para>
         /// </param>
         /// <param name="dwMessageId">The message identifier for the requested message. This parameter is ignored if<paramref name="dwFlags"/> includes <see cref="FORMAT_MESSAGE_FROM_STRING"/>.</param>
         /// <param name="dwLanguageId">

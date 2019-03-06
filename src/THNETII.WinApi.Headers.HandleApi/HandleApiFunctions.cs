@@ -22,8 +22,8 @@ namespace THNETII.WinApi.Native.HandleApi
         /// </summary>
         /// <param name="hObject">A valid handle to an open object.</param>
         /// <returns>
-        /// <para>If the function succeeds, the return value is <c>true</c>.</para>
-        /// <para>If the function fails, the return value is <c>false</c>. To get extended error information, call <see cref="Marshal.GetLastWin32Error"/>.</para>
+        /// <para>If the function succeeds, the return value is <see langword="true"/>.</para>
+        /// <para>If the function fails, the return value is <see langword="false"/>. To get extended error information, call <see cref="Marshal.GetLastWin32Error"/>.</para>
         /// <para>If the application is running under a debugger, the function will throw an exception if it receives either a handle value that is not valid or a pseudo-handle value. This can happen if you close a handle twice, or if you call CloseHandle on a handle returned by the <see cref="FindFirstFile"/> function instead of calling the <see cref="FindClose"/> function.</para>
         /// </returns>
         /// <remarks>
@@ -100,11 +100,11 @@ namespace THNETII.WinApi.Native.HandleApi
         /// <para>The access requested for the new handle. For the flags that can be specified for each object type, see the following Remarks section.</para>
         /// <para>This parameter is ignored if the <paramref name="dwOptions"/> parameter specifies the <see cref="DUPLICATE_FLAGS.DUPLICATE_SAME_ACCESS"/> flag. Otherwise, the flags that can be specified depend on the type of object whose handle is to be duplicated.</para>
         /// </param>
-        /// <param name="bInheritHandle">A variable that indicates whether the handle is inheritable. If <c>true</c>, the duplicate handle can be inherited by new processes created by the target process. If <c>false</c>, the new handle cannot be inherited.</param>
+        /// <param name="bInheritHandle">A variable that indicates whether the handle is inheritable. If <see langword="true"/>, the duplicate handle can be inherited by new processes created by the target process. If <see langword="false"/>, the new handle cannot be inherited.</param>
         /// <param name="dwOptions">Optional actions. This parameter can be zero, or any combination of the values defined in the <see cref="DUPLICATE_FLAGS"/> enumeration type.</param>
         /// <returns>
-        /// <para>If the function succeeds, the return value is <c>true</c>.</para>
-        /// <para>If the function fails, the return value is <c>false</c>. To get extended error information, call <see cref="Marshal.GetLastWin32Error"/>.</para>
+        /// <para>If the function succeeds, the return value is <see langword="true"/>.</para>
+        /// <para>If the function fails, the return value is <see langword="false"/>. To get extended error information, call <see cref="Marshal.GetLastWin32Error"/>.</para>
         /// </returns>
         /// <remarks>
         /// <para>The duplicate handle refers to the same object as the original handle. Therefore, any changes to the object are reflected through both handles. For example, if you duplicate a file handle, the current file position is always the same for both handles.</para>
@@ -203,7 +203,7 @@ namespace THNETII.WinApi.Native.HandleApi
         /// <param name="hFirstObjectHandle">The first object handle to compare.</param>
         /// <param name="hSecondObjectHandle">The second object handle to compare.</param>
         /// <returns>
-        /// A Boolean value that indicates if the two handles refer to the same underlying kernel object. <c>true</c> if the same, otherwise <c>false</c>.
+        /// A Boolean value that indicates if the two handles refer to the same underlying kernel object. <see langword="true"/> if the same, otherwise <see langword="false"/>.
         /// </returns>
         /// <remarks>
         /// The <see cref="CompareObjectHandles"/> function is useful to determine if two kernel handles refer to the same kernel object without imposing a requirement that specific access rights be granted to either handle in order to perform the comparison. For example, if a process desires to determine whether a process handle is a handle to the current process, a call to <c>CompareObjectHandles(GetCurrentProcess(), hProcess)</c> can be used to determine if <c>hProcess</c> refers to the current process. Notably, this does not require the use of object-specific access rights, whereas in this example, calling <see cref="GetProcessId"/> to check the process IDs of two process handles imposes a requirement that the handles grant <see cref="PROCESS_QUERY_LIMITED_INFORMATION"/> access. However it is legal for a process handle to not have that access right granted depending on how the handle is intended to be used.
@@ -237,8 +237,8 @@ namespace THNETII.WinApi.Native.HandleApi
         /// </param>
         /// <param name="lpdwFlags">Receives a set of bit flags that specify properties of the object handle.</param>
         /// <returns>
-        /// <para>If the function succeeds, the return value is <c>true</c>.</para>
-        /// <para>If the function fails, the return value is <c>false</c>. To get extended error information, call <see cref="Marshal.GetLastWin32Error"/>.</para>
+        /// <para>If the function succeeds, the return value is <see langword="true"/>.</para>
+        /// <para>If the function fails, the return value is <see langword="false"/>. To get extended error information, call <see cref="Marshal.GetLastWin32Error"/>.</para>
         /// </returns>
         /// <remarks>
         /// <para>
@@ -275,8 +275,8 @@ namespace THNETII.WinApi.Native.HandleApi
         /// <param name="dwMask">A mask that specifies the bit flags to be changed.</param>
         /// <param name="dwFlags">Set of bit flags that specifies properties of the object handle. This parameter can be 0 or one or more of the values defined in the <see cref="HANDLE_FLAGS"/> enumeration type.</param>
         /// <returns>
-        /// <para>If the function succeeds, the return value is <c>true</c>.</para>
-        /// <para>If the function fails, the return value is <c>false</c>. To get extended error information, call <see cref="Marshal.GetLastWin32Error"/>.</para>
+        /// <para>If the function succeeds, the return value is <see langword="true"/>.</para>
+        /// <para>If the function fails, the return value is <see langword="false"/>. To get extended error information, call <see cref="Marshal.GetLastWin32Error"/>.</para>
         /// </returns>
         /// <remarks>
         /// To set or clear the associated bit flag in <paramref name="dwFlags"/>, you must set a change mask bit flag in <paramref name="dwMask"/>.

@@ -40,7 +40,7 @@ namespace THNETII.WinApi.Native.WinNT
         /// <summary>
         /// Marshals the <see cref="DefaultDacl"/> pointer to a managed copy of the ACL data.
         /// </summary>
-        /// <returns>A copy of the data pointed to by <see cref="DefaultDacl"/> in form of a <see cref="RawAcl"/> instance, or <c>null</c> if <see cref="DefaultDacl"/> is <see cref="IntPtr.Zero"/>.</returns>
+        /// <returns>A copy of the data pointed to by <see cref="DefaultDacl"/> in form of a <see cref="RawAcl"/> instance, or <see langword="null"/> if <see cref="DefaultDacl"/> is <see cref="IntPtr.Zero"/>.</returns>
         /// <exception cref="PlatformNotSupportedException"/>
         [SuppressMessage("Usage", "PC001: API not supported on all platforms")]
         public RawAcl MarshalDefaultDacl()

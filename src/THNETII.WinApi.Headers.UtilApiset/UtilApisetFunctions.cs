@@ -16,8 +16,8 @@ namespace THNETII.WinApi.Native.UtilApiset
         /// <param name="dwFreq">The frequency of the sound, in hertz. This parameter must be in the range 37 through 32,767 (<c>0x25</c> through <c>0x7FFF</c>). </param>
         /// <param name="dwDuration">The duration of the sound, in milliseconds.</param>
         /// <returns>
-        /// <para>If the function succeeds, the return value is <c>true</c>.</para>
-        /// <para>If the function fails, the return value is <c>false</c>. To get extended error information, call <see cref="Marshal.GetLastWin32Error"/>.</para>
+        /// <para>If the function succeeds, the return value is <see langword="true"/>.</para>
+        /// <para>If the function fails, the return value is <see langword="false"/>. To get extended error information, call <see cref="Marshal.GetLastWin32Error"/>.</para>
         /// </returns>
         /// <remarks>
         /// <para>

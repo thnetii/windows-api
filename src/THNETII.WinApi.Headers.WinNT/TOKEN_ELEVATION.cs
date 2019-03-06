@@ -16,7 +16,7 @@ namespace THNETII.WinApi.Native.WinNT
         /// <summary>
         /// Gets or sets whether the token has elevated privileges.
         /// </summary>
-        /// <value><c>true</c> if the token has elevated privileges; otherwise, <c>false</c>.</value>
+        /// <value><see langword="true"/> if the token has elevated privileges; otherwise, <see langword="false"/>.</value>
         public bool TokenIsElevated
         {
             get => TokenIsElevatedValue != 0;

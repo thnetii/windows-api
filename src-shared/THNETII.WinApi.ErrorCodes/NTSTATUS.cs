@@ -69,7 +69,7 @@ namespace THNETII.WinApi
         /// <summary>
         /// Whether the <see cref="NTSTATUS"/> value is a customer-defined value.
         /// </summary>
-        /// <value><c>false</c> is the <see cref="NTSTATUS"/> value is Microsoft-defined; <c>true</c> if it is Customer-defined.</value>
+        /// <value><see langword="false"/> is the <see cref="NTSTATUS"/> value is Microsoft-defined; <see langword="true"/> if it is Customer-defined.</value>
         public bool IsCustomerCode => c_bit.Read(Value) != 0;
 
         /// <summary>
@@ -128,7 +128,7 @@ namespace THNETII.WinApi
         /// </summary>
         /// <param name="left">The left side operand of the comparison.</param>
         /// <param name="right">The right side operand of the comparison.</param>
-        /// <returns><c>true</c> if the <see cref="Value"/> property of <paramref name="left"/> equals the <see cref="Value"/> of <paramref name="right"/>; otherwise, <c>false</c>.</returns>
+        /// <returns><see langword="true"/> if the <see cref="Value"/> property of <paramref name="left"/> equals the <see cref="Value"/> of <paramref name="right"/>; otherwise, <see langword="false"/>.</returns>
         public static bool operator ==(NTSTATUS left, NTSTATUS right) =>
             left.Value == right.Value;
 
@@ -137,7 +137,7 @@ namespace THNETII.WinApi
         /// </summary>
         /// <param name="left">The left side operand of the comparison.</param>
         /// <param name="right">The right side operand of the comparison.</param>
-        /// <returns><c>true</c> if the <see cref="Value"/> property of <paramref name="left"/> is not equal to the <see cref="Value"/> of <paramref name="right"/>; otherwise, <c>false</c>.</returns>
+        /// <returns><see langword="true"/> if the <see cref="Value"/> property of <paramref name="left"/> is not equal to the <see cref="Value"/> of <paramref name="right"/>; otherwise, <see langword="false"/>.</returns>
         public static bool operator !=(NTSTATUS left, NTSTATUS right) =>
             left.Value != right.Value;
 
@@ -146,7 +146,7 @@ namespace THNETII.WinApi
         /// </summary>
         /// <param name="obj">The object to compare with.</param>
         /// <returns>
-        /// <c>true</c> if the current instance is logically equal to <paramref name="obj"/>; otherwise, <c>false</c>.
+        /// <see langword="true"/> if the current instance is logically equal to <paramref name="obj"/>; otherwise, <see langword="false"/>.
         /// </returns>
         public override bool Equals(object obj)
         {
@@ -164,8 +164,8 @@ namespace THNETII.WinApi
         /// </summary>
         /// <param name="hr">The Windows Error code to compare with.</param>
         /// <returns>
-        /// <c>true</c> if the <see cref="Value"/> property of this instance is equal to the <see cref="Value"/> property of <paramref name="hr"/>;<br/>
-        /// otherwise, <c>false</c>.
+        /// <see langword="true"/> if the <see cref="Value"/> property of this instance is equal to the <see cref="Value"/> property of <paramref name="hr"/>;<br/>
+        /// otherwise, <see langword="false"/>.
         /// </returns>
         public bool Equals(NTSTATUS hr) => this == hr;
 
@@ -174,8 +174,8 @@ namespace THNETII.WinApi
         /// </summary>
         /// <param name="code">The integer to compare with.</param>
         /// <returns>
-        /// <c>true</c> if the <see cref="Value"/> property of this instance is equal to <paramref name="code"/>;<br/>
-        /// otherwise, <c>false</c>.
+        /// <see langword="true"/> if the <see cref="Value"/> property of this instance is equal to <paramref name="code"/>;<br/>
+        /// otherwise, <see langword="false"/>.
         /// </returns>
         public bool Equals(int code) => this == code;
 

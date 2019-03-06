@@ -94,33 +94,33 @@ namespace THNETII.WinApi
         /// Whether the <see cref="HRESULT"/> value is not a status value, but a message id for display string.
         /// </summary>
         /// <value>
-        /// <c>false</c> if the current <see cref="HRESULT"/> is a normal status value;
-        /// <c>true</c> if it is a display string message ID.
+        /// <see langword="false"/> if the current <see cref="HRESULT"/> is a normal status value;
+        /// <see langword="true"/> if it is a display string message ID.
         /// </value>
         public bool IsMessageId => msgid_bit.Read(Value) != 0;
 
         /// <summary>
         /// Whether the <see cref="HRESULT"/> value is a <see cref="NTSTATUS"/> value mapped to an <see cref="HRESULT"/>.
         /// </summary>
-        /// <value><c>true</c> if the <see cref="HRESULT"/> is a mapped <see cref="NTSTATUS"/> value; otherwise, <c>false</c>.</value>
+        /// <value><see langword="true"/> if the <see cref="HRESULT"/> is a mapped <see cref="NTSTATUS"/> value; otherwise, <see langword="false"/>.</value>
         public bool IsNTMapped => nt_bit.Read(Value) != 0;
 
         /// <summary>
         /// Whether the <see cref="HRESULT"/> value is a customer-defined value.
         /// </summary>
-        /// <value><c>false</c> is the <see cref="HRESULT"/> value is Microsoft-defined; <c>true</c> if it is Customer-defined.</value>
+        /// <value><see langword="false"/> is the <see cref="HRESULT"/> value is Microsoft-defined; <see langword="true"/> if it is Customer-defined.</value>
         public bool IsCustomerCode => c_bit.Read(Value) != 0;
 
         /// <summary>
         /// Whether the <see cref="HRESULT"/> value indicates a successful operation.
         /// </summary>
-        /// <value><c>true</c> if successful; <c>false</c> if not.</value>
+        /// <value><see langword="true"/> if successful; <see langword="false"/> if not.</value>
         public bool IsSuccess => s_bit.Read(Value) == 0;
 
         /// <summary>
         /// Whether the <see cref="HRESULT"/> value indicates a failed operation.
         /// </summary>
-        /// <value><c>true</c> if the operation failed; <c>false</c> if not.</value>
+        /// <value><see langword="true"/> if the operation failed; <see langword="false"/> if not.</value>
         public bool IsFailure => s_bit.Read(Value) != 0;
 
         /// <summary>
@@ -196,7 +196,7 @@ namespace THNETII.WinApi
         /// </summary>
         /// <param name="left">The left side operand of the comparison.</param>
         /// <param name="right">The right side operand of the comparison.</param>
-        /// <returns><c>true</c> if the <see cref="Value"/> property of <paramref name="left"/> equals the <see cref="Value"/> of <paramref name="right"/>; otherwise, <c>false</c>.</returns>
+        /// <returns><see langword="true"/> if the <see cref="Value"/> property of <paramref name="left"/> equals the <see cref="Value"/> of <paramref name="right"/>; otherwise, <see langword="false"/>.</returns>
         public static bool operator ==(HRESULT left, HRESULT right) =>
             left.Value == right.Value;
 
@@ -205,7 +205,7 @@ namespace THNETII.WinApi
         /// </summary>
         /// <param name="left">The left side operand of the comparison.</param>
         /// <param name="right">The right side operand of the comparison.</param>
-        /// <returns><c>true</c> if the <see cref="Value"/> property of <paramref name="left"/> is not equal to the <see cref="Value"/> of <paramref name="right"/>; otherwise, <c>false</c>.</returns>
+        /// <returns><see langword="true"/> if the <see cref="Value"/> property of <paramref name="left"/> is not equal to the <see cref="Value"/> of <paramref name="right"/>; otherwise, <see langword="false"/>.</returns>
         public static bool operator !=(HRESULT left, HRESULT right) =>
             left.Value != right.Value;
 
@@ -214,7 +214,7 @@ namespace THNETII.WinApi
         /// </summary>
         /// <param name="obj">The object to compare with.</param>
         /// <returns>
-        /// <c>true</c> if the current instance is logically equal to <paramref name="obj"/>; otherwise, <c>false</c>.
+        /// <see langword="true"/> if the current instance is logically equal to <paramref name="obj"/>; otherwise, <see langword="false"/>.
         /// </returns>
         public override bool Equals(object obj)
         {
@@ -232,8 +232,8 @@ namespace THNETII.WinApi
         /// </summary>
         /// <param name="hr">The Windows Error code to compare with.</param>
         /// <returns>
-        /// <c>true</c> if the <see cref="Value"/> property of this instance is equal to the <see cref="Value"/> property of <paramref name="hr"/>;<br/>
-        /// otherwise, <c>false</c>.
+        /// <see langword="true"/> if the <see cref="Value"/> property of this instance is equal to the <see cref="Value"/> property of <paramref name="hr"/>;<br/>
+        /// otherwise, <see langword="false"/>.
         /// </returns>
         public bool Equals(HRESULT hr) => this == hr;
 
@@ -242,8 +242,8 @@ namespace THNETII.WinApi
         /// </summary>
         /// <param name="code">The integer to compare with.</param>
         /// <returns>
-        /// <c>true</c> if the <see cref="Value"/> property of this instance is equal to <paramref name="code"/>;<br/>
-        /// otherwise, <c>false</c>.
+        /// <see langword="true"/> if the <see cref="Value"/> property of this instance is equal to <paramref name="code"/>;<br/>
+        /// otherwise, <see langword="false"/>.
         /// </returns>
         public bool Equals(int code) => this == code;
 

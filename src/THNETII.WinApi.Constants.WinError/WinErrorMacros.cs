@@ -11,7 +11,7 @@ namespace THNETII.WinApi.Native.WinError
         /// Provides a generic test for success on any status value.
         /// </summary>
         /// <param name="hr">The status code. This value can be an <see cref="T:THNETII.WinApi.HRESULT"/>. A non-negative number indicates success.</param>
-        /// <returns><c>true</c> if the status code specified by <paramref name="hr"/> indicates success; otherwise, <c>false</c>.</returns>
+        /// <returns><see langword="true"/> if the status code specified by <paramref name="hr"/> indicates success; otherwise, <see langword="false"/>.</returns>
         /// <remarks>
         /// <para>Original Microsoft Docs documentation page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/winerror/nf-winerror-succeeded">SUCCEEDED macro</a></para>
         /// </remarks>
@@ -22,7 +22,7 @@ namespace THNETII.WinApi.Native.WinError
         /// Provides a generic test for failure on any status value.
         /// </summary>
         /// <param name="hr">The status code. This value can be an <see cref="T:THNETII.WinApi.HRESULT"/>. A negative number indicates failure.</param>
-        /// <returns><c>true</c> if the status code specified by <paramref name="hr"/> indicates failure; otherwise, <c>false</c>.</returns>
+        /// <returns><see langword="true"/> if the status code specified by <paramref name="hr"/> indicates failure; otherwise, <see langword="false"/>.</returns>
         /// <remarks>
         /// <para>Original Microsoft Docs documentation page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/winerror/nf-winerror-failed">FAILED macro</a></para>
         /// </remarks>
@@ -33,7 +33,7 @@ namespace THNETII.WinApi.Native.WinError
         /// Provides a generic test for errors on any status value.
         /// </summary>
         /// <param name="status">The status code. This value can be an <see cref="T:THNETII.WinApi.HRESULT"/>.</param>
-        /// <returns><c>true</c> if the status code specified by <paramref name="status"/> indicates an error; otherwise, <c>false</c>.</returns>
+        /// <returns><see langword="true"/> if the status code specified by <paramref name="status"/> indicates an error; otherwise, <see langword="false"/>.</returns>
         /// <remarks>
         /// <para>Original Microsoft Docs documentation page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/winerror/nf-winerror-is_error">IS_ERROR macro</a></para>
         /// </remarks>

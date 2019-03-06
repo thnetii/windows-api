@@ -22,10 +22,10 @@ namespace THNETII.WinApi
         /// <summary>
         /// Whether the error code is an application-defined error code.
         /// </summary>
-        /// <value><c>true</c> if the error code is application-defined; otherwise the error code is a system error code and the property value is <c>false</c>.</value>
+        /// <value><see langword="true"/> if the error code is application-defined; otherwise the error code is a system error code and the property value is <see langword="false"/>.</value>
         /// <remarks>
         /// <para>Bit 29 is reserved for application-defined error codes.</para>
-        /// <para>No system error code has this property set to <c>true</c>.</para>
+        /// <para>No system error code has this property set to <see langword="true"/>.</para>
         /// <para>If you are defining an error code for your application, set this bit to one. That indicates that the error code has been defined by an application, and ensures that your error code does not conflict with any error codes defined by the system.</para>
         /// </remarks>
         public bool IsApplicationDefined => appdefined_bit.Read(Value) != 0;
@@ -80,7 +80,7 @@ namespace THNETII.WinApi
         /// </summary>
         /// <param name="left">The left side operand of the comparison.</param>
         /// <param name="right">The right side operand of the comparison.</param>
-        /// <returns><c>true</c> if the <see cref="Value"/> property of <paramref name="left"/> equals the <see cref="Value"/> of <paramref name="right"/>; otherwise, <c>false</c>.</returns>
+        /// <returns><see langword="true"/> if the <see cref="Value"/> property of <paramref name="left"/> equals the <see cref="Value"/> of <paramref name="right"/>; otherwise, <see langword="false"/>.</returns>
         public static bool operator ==(Win32ErrorCode left, Win32ErrorCode right) =>
             left.Value == right.Value;
 
@@ -89,7 +89,7 @@ namespace THNETII.WinApi
         /// </summary>
         /// <param name="left">The left side operand of the comparison.</param>
         /// <param name="right">The right side operand of the comparison.</param>
-        /// <returns><c>true</c> if the <see cref="Value"/> property of <paramref name="left"/> is not equal to the <see cref="Value"/> of <paramref name="right"/>; otherwise, <c>false</c>.</returns>
+        /// <returns><see langword="true"/> if the <see cref="Value"/> property of <paramref name="left"/> is not equal to the <see cref="Value"/> of <paramref name="right"/>; otherwise, <see langword="false"/>.</returns>
         public static bool operator !=(Win32ErrorCode left, Win32ErrorCode right) =>
             left.Value != right.Value;
 
@@ -98,7 +98,7 @@ namespace THNETII.WinApi
         /// </summary>
         /// <param name="obj">The object to compare with.</param>
         /// <returns>
-        /// <c>true</c> if the current instance is logically equal to <paramref name="obj"/>; otherwise, <c>false</c>.
+        /// <see langword="true"/> if the current instance is logically equal to <paramref name="obj"/>; otherwise, <see langword="false"/>.
         /// </returns>
         public override bool Equals(object obj)
         {
@@ -116,8 +116,8 @@ namespace THNETII.WinApi
         /// </summary>
         /// <param name="code">The integer to compare with.</param>
         /// <returns>
-        /// <c>true</c> if the <see cref="Value"/> property of this instance is equal to <paramref name="code"/>;<br/>
-        /// otherwise, <c>false</c>.
+        /// <see langword="true"/> if the <see cref="Value"/> property of this instance is equal to <paramref name="code"/>;<br/>
+        /// otherwise, <see langword="false"/>.
         /// </returns>
         public bool Equals(int code) => this == code;
 
@@ -126,8 +126,8 @@ namespace THNETII.WinApi
         /// </summary>
         /// <param name="e">The Windows Error code to compare with.</param>
         /// <returns>
-        /// <c>true</c> if the <see cref="Value"/> property of this instance is equal to the <see cref="Value"/> property of <paramref name="e"/>;<br/>
-        /// otherwise, <c>false</c>.
+        /// <see langword="true"/> if the <see cref="Value"/> property of this instance is equal to the <see cref="Value"/> property of <paramref name="e"/>;<br/>
+        /// otherwise, <see langword="false"/>.
         /// </returns>
         public bool Equals(Win32ErrorCode e) => this == e;
 

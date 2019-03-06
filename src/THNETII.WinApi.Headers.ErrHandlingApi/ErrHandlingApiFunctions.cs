@@ -229,8 +229,8 @@ namespace THNETII.WinApi.Native.ErrHandlingApi
         /// </param>
         /// <param name="lpOldMode">If the function succeeds, this parameter is set to the thread's previous error mode.</param>
         /// <returns>
-        /// <para>If the function succeeds, the return value is <c>true</c>.</para>
-        /// <para>If the function fails, the return value is <c>false</c>. To get extended error information, call <see cref="Marshal.GetLastWin32Error"/>.</para>
+        /// <para>If the function succeeds, the return value is <see langword="true"/>.</para>
+        /// <para>If the function fails, the return value is <see langword="false"/>. To get extended error information, call <see cref="Marshal.GetLastWin32Error"/>.</para>
         /// </returns>
         /// <remarks>
         /// Each process has an associated error mode that indicates to the system how the application is going to respond to serious errors. A thread inherits the error mode of the process in which it is running. To retrieve the process error mode, use the <see cref="GetErrorMode"/> function. To retrieve the error mode of the calling thread, use the <see cref="GetThreadErrorMode"/> function.

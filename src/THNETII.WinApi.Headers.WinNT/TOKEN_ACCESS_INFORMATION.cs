@@ -72,7 +72,7 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public IntPtr TrustLevelSid;
         /// <summary>
-        /// Reserved. Must be set to <c>null</c>.
+        /// Reserved. Must be set to <see langword="null"/>.
         /// <para><strong>Prior to Windows 10</strong>: This member is not available.</para>
         /// </summary>
         [EditorBrowsable(EditorBrowsableState.Never)]

@@ -1,10 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
 namespace THNETII.WinApi.Native.WinError
 {
     using static WinErrorConstants;
 
-    public static class WinErrorMacros
+    public static class WinErrorFunctions
     {
         #region SUCCEEDED macro
         /// <summary>

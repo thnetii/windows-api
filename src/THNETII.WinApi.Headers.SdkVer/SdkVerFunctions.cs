@@ -2,7 +2,7 @@
 {
     using static SdkVerConstants;
 
-    public static class SdkVerMacros
+    public static class SdkVerFunctions
     {
         //
         // macros to extract various version fields from the NTDDI version

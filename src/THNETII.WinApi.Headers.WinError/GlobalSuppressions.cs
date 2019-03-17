@@ -8,3 +8,4 @@ using System.Diagnostics.CodeAnalysis;
 
 [assembly: SuppressMessage("Naming", "CA1707: Identifiers should not contain underscores")]
 [assembly: SuppressMessage("Design", "CA1051: Do not declare visible instance fields")]
+[assembly: SuppressMessage("Documentation", "CA1200: Avoid using cref tags with a prefix")]

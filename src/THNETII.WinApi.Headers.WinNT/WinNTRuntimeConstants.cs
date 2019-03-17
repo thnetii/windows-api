@@ -1,12 +1,97 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 using THNETII.InteropServices.NativeMemory;
-using static THNETII.WinApi.Native.WinNT.WinNTConstants;
 
 namespace THNETII.WinApi.Native.WinNT
 {
+    using static WinNTConstants;
+    using static WinNTFunctions;
+
     public static class WinNTRuntimeConstants
     {
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 117
+        public static readonly int MAX_NATURAL_ALIGNMENT = IntPtr.Size;
+        // #if defined(_WIN64) || defined(_M_ALPHA)
+        // public const int MEMORY_ALLOCATION_ALIGNMENT = 16;
+        // #else
+        // public const int MEMORY_ALLOCATION_ALIGNMENT = 8;
+        // #endif
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 216
+        // #if defined(_AMD64_) || defined(_X86_)
+        // public const int SYSTEM_CACHE_ALIGNMENT_SIZE = 64;
+        // #else
+        // public const int SYSTEM_CACHE_ALIGNMENT_SIZE = 128;
+        // #endif
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 614
+        private static int GET_MAXIMUM_PROC_PER_GROUP()
+        {
+            switch (RuntimeInformation.OSArchitecture)
+            {
+                case Architecture.X86:
+                case Architecture.Arm:
+                    return 32;
+                case Architecture.X64:
+                case Architecture.Arm64:
+                    return 64;
+                default: return default;
+            }
+        }
+
+        public static readonly int MAXIMUM_PROC_PER_GROUP = GET_MAXIMUM_PROC_PER_GROUP();
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 624
+        public static readonly int MAXIMUM_PROCESSORS = MAXIMUM_PROC_PER_GROUP;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 2209
+        //
+        // ** DEPRECATED ** DEPRECATED ** DEPRECATED ** DEPRECATED ** DEPRECATED **
+        //
+        //  Deprecated default System and User IDs for language and locale.
+        //
+        //  Locale names such as LOCALE_NAME_SYSTEM_DEFAULT, LOCALE_NAME_USER_DEFAULT,
+        //  and LOCALE_NAME_INVARIANT are preferred.  See documentation for GetLocaleInfoEx.
+        //
+
+        public static readonly int LANG_SYSTEM_DEFAULT = MAKELANGID(LANG_NEUTRAL, SUBLANG_SYS_DEFAULT);
+        public static readonly int LANG_USER_DEFAULT = MAKELANGID(LANG_NEUTRAL, SUBLANG_DEFAULT);
+
+        public static readonly int LOCALE_SYSTEM_DEFAULT = MAKELCID(LANG_SYSTEM_DEFAULT, SORT_DEFAULT);
+        public static readonly int LOCALE_USER_DEFAULT = MAKELCID(LANG_USER_DEFAULT, SORT_DEFAULT);
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 2224
+        //
+        //  Other special IDs for language and locale.
+        //
+        //  DEPRECATED: These identifiers are all underspecified and lose information.
+        //              Please use Locale Names such as "en-FJ".
+        //              See documentation for GetLocaleInfoEx.
+        //
+        public static readonly int LOCALE_CUSTOM_DEFAULT =
+            MAKELCID(MAKELANGID(LANG_NEUTRAL, SUBLANG_CUSTOM_DEFAULT), SORT_DEFAULT);
+
+        public static readonly int LOCALE_CUSTOM_UNSPECIFIED =
+            MAKELCID(MAKELANGID(LANG_NEUTRAL, SUBLANG_CUSTOM_UNSPECIFIED), SORT_DEFAULT);
+
+        public static readonly int LOCALE_CUSTOM_UI_DEFAULT =
+            MAKELCID(MAKELANGID(LANG_NEUTRAL, SUBLANG_UI_CUSTOM_DEFAULT), SORT_DEFAULT);
+
+        public static readonly int LOCALE_NEUTRAL =
+            MAKELCID(MAKELANGID(LANG_NEUTRAL, SUBLANG_NEUTRAL), SORT_DEFAULT);
+
+        public static readonly int LOCALE_INVARIANT =
+            MAKELCID(MAKELANGID(LANG_INVARIANT, SUBLANG_NEUTRAL), SORT_DEFAULT);
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 2260
+        /// <summary>
+        /// Locale with an unassigned LCID
+        /// These locales cannot be queried by LCID
+        /// Currently same as <see cref="LOCALE_CUSTOM_UNSPECIFIED"/>
+        /// </summary>
+        [Obsolete("Please use Locale Names; see documentation for GetLocaleInfoEx.")]
+        public static readonly int LOCALE_UNASSIGNED_LCID = LOCALE_CUSTOM_UNSPECIFIED;
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 8869
         ////////////////////////////////////////////////////////////////////////
         //                                                                    //
@@ -64,18 +149,6 @@ namespace THNETII.WinApi.Native.WinNT
         public static int SECURITY_SID_SIZE(byte SubAuthorityCount_) => SizeOf<SID.STRUCT_SID>.Bytes - SizeOf<int>.Bytes +
             (SubAuthorityCount_ * SizeOf<int>.Bytes);
 
-        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 9600
-        //
-        // Allocate the System Luid.  The first 1000 LUIDs are reserved.
-        // Use #999 here (0x3e7 = 999)
-        //
-
-        public static ref readonly LUID SYSTEM_LUID => ref MemoryMarshal.Cast<int, LUID>(WinNTConstants.SYSTEM_LUID.Span)[0];
-        public static ref readonly LUID ANONYMOUS_LOGON_LUID => ref MemoryMarshal.Cast<int, LUID>(WinNTConstants.ANONYMOUS_LOGON_LUID.Span)[0];
-        public static ref readonly LUID LOCALSERVICE_LUID => ref MemoryMarshal.Cast<int, LUID>(WinNTConstants.LOCALSERVICE_LUID.Span)[0];
-        public static ref readonly LUID NETWORKSERVICE_LUID => ref MemoryMarshal.Cast<int, LUID>(WinNTConstants.NETWORKSERVICE_LUID.Span)[0];
-        public static ref readonly LUID IUSER_LUID => ref MemoryMarshal.Cast<int, LUID>(WinNTConstants.IUSER_LUID.Span)[0];
-
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 9078
         /////////////////////////////////////////////////////////////////////////////
         //                                                                         //
@@ -93,12 +166,18 @@ namespace THNETII.WinApi.Native.WinNT
         //                                                                         //
         /////////////////////////////////////////////////////////////////////////////
 
-        public static ref readonly SID_IDENTIFIER_AUTHORITY SECURITY_NULL_SID_AUTHORITY => ref MemoryMarshal.Cast<byte, SID_IDENTIFIER_AUTHORITY>(WinNTConstants.SECURITY_NULL_SID_AUTHORITY.Span)[0];
-        public static ref readonly SID_IDENTIFIER_AUTHORITY SECURITY_WORLD_SID_AUTHORITY => ref MemoryMarshal.Cast<byte, SID_IDENTIFIER_AUTHORITY>(WinNTConstants.SECURITY_WORLD_SID_AUTHORITY.Span)[0];
-        public static ref readonly SID_IDENTIFIER_AUTHORITY SECURITY_LOCAL_SID_AUTHORITY => ref MemoryMarshal.Cast<byte, SID_IDENTIFIER_AUTHORITY>(WinNTConstants.SECURITY_LOCAL_SID_AUTHORITY.Span)[0];
-        public static ref readonly SID_IDENTIFIER_AUTHORITY SECURITY_CREATOR_SID_AUTHORITY => ref MemoryMarshal.Cast<byte, SID_IDENTIFIER_AUTHORITY>(WinNTConstants.SECURITY_CREATOR_SID_AUTHORITY.Span)[0];
-        public static ref readonly SID_IDENTIFIER_AUTHORITY SECURITY_NON_UNIQUE_AUTHORITY => ref MemoryMarshal.Cast<byte, SID_IDENTIFIER_AUTHORITY>(WinNTConstants.SECURITY_NON_UNIQUE_AUTHORITY.Span)[0];
-        public static ref readonly SID_IDENTIFIER_AUTHORITY SECURITY_RESOURCE_MANAGER_AUTHORITY => ref MemoryMarshal.Cast<byte, SID_IDENTIFIER_AUTHORITY>(WinNTConstants.SECURITY_RESOURCE_MANAGER_AUTHORITY.Span)[0];
+        private static SID_IDENTIFIER_AUTHORITY SID_IDENTIFIER_AUTHORITY_FROM_BYTES(byte b0, byte b1, byte b2, byte b3, byte b4, byte b5)
+        {
+            ReadOnlySpan<byte> span = stackalloc byte[] { b0, b1, b2, b3, b4, b5 };
+            return MemoryMarshal.Read<SID_IDENTIFIER_AUTHORITY>(span);
+        }
+
+        public static readonly SID_IDENTIFIER_AUTHORITY SECURITY_NULL_SID_AUTHORITY = SID_IDENTIFIER_AUTHORITY_FROM_BYTES(0, 0, 0, 0, 0, 0);
+        public static readonly SID_IDENTIFIER_AUTHORITY SECURITY_WORLD_SID_AUTHORITY = SID_IDENTIFIER_AUTHORITY_FROM_BYTES(0, 0, 0, 0, 0, 1);
+        public static readonly SID_IDENTIFIER_AUTHORITY SECURITY_LOCAL_SID_AUTHORITY = SID_IDENTIFIER_AUTHORITY_FROM_BYTES(0, 0, 0, 0, 0, 2);
+        public static readonly SID_IDENTIFIER_AUTHORITY SECURITY_CREATOR_SID_AUTHORITY = SID_IDENTIFIER_AUTHORITY_FROM_BYTES(0, 0, 0, 0, 0, 3);
+        public static readonly SID_IDENTIFIER_AUTHORITY SECURITY_NON_UNIQUE_AUTHORITY = SID_IDENTIFIER_AUTHORITY_FROM_BYTES(0, 0, 0, 0, 0, 4);
+        public static readonly SID_IDENTIFIER_AUTHORITY SECURITY_RESOURCE_MANAGER_AUTHORITY = SID_IDENTIFIER_AUTHORITY_FROM_BYTES(0, 0, 0, 0, 0, 9);
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 9115
         ///////////////////////////////////////////////////////////////////////////////
@@ -147,34 +226,52 @@ namespace THNETII.WinApi.Native.WinNT
         //                                                                           //
         ///////////////////////////////////////////////////////////////////////////////
 
-        public static ref readonly SID_IDENTIFIER_AUTHORITY SECURITY_NT_AUTHORITY => ref MemoryMarshal.Cast<byte, SID_IDENTIFIER_AUTHORITY>(WinNTConstants.SECURITY_NT_AUTHORITY.Span)[0];
+        public static readonly SID_IDENTIFIER_AUTHORITY SECURITY_NT_AUTHORITY = SID_IDENTIFIER_AUTHORITY_FROM_BYTES(0, 0, 0, 0, 0, 5); // ntifs
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 9361
         /// <summary>
         /// Application Package Authority.
         /// </summary>
-        public static ref readonly SID_IDENTIFIER_AUTHORITY SECURITY_APP_PACKAGE_AUTHORITY => ref MemoryMarshal.Cast<byte, SID_IDENTIFIER_AUTHORITY>(WinNTConstants.SECURITY_APP_PACKAGE_AUTHORITY.Span)[0];
+        public static readonly SID_IDENTIFIER_AUTHORITY SECURITY_APP_PACKAGE_AUTHORITY = SID_IDENTIFIER_AUTHORITY_FROM_BYTES(0, 0, 0, 0, 0, 15);
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 9403
         /// <summary>
         /// Mandatory Label Authority.
         /// </summary>
-        public static ref readonly SID_IDENTIFIER_AUTHORITY SECURITY_MANDATORY_LABEL_AUTHORITY => ref MemoryMarshal.Cast<byte, SID_IDENTIFIER_AUTHORITY>(WinNTConstants.SECURITY_MANDATORY_LABEL_AUTHORITY.Span)[0];
+        public static readonly SID_IDENTIFIER_AUTHORITY SECURITY_MANDATORY_LABEL_AUTHORITY = SID_IDENTIFIER_AUTHORITY_FROM_BYTES(0, 0, 0, 0, 0, 16);
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 9425
-        public static ref readonly SID_IDENTIFIER_AUTHORITY SECURITY_SCOPED_POLICY_ID_AUTHORITY => ref MemoryMarshal.Cast<byte, SID_IDENTIFIER_AUTHORITY>(WinNTConstants.SECURITY_SCOPED_POLICY_ID_AUTHORITY.Span)[0];
+        public static readonly SID_IDENTIFIER_AUTHORITY SECURITY_SCOPED_POLICY_ID_AUTHORITY = SID_IDENTIFIER_AUTHORITY_FROM_BYTES(0, 0, 0, 0, 0, 17);
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 9427
         /// <summary>
         /// Authentication Authority
         /// </summary>
-        public static ref readonly SID_IDENTIFIER_AUTHORITY SECURITY_AUTHENTICATION_AUTHORITY => ref MemoryMarshal.Cast<byte, SID_IDENTIFIER_AUTHORITY>(WinNTConstants.SECURITY_AUTHENTICATION_AUTHORITY.Span)[0];
+        public static readonly SID_IDENTIFIER_AUTHORITY SECURITY_AUTHENTICATION_AUTHORITY = SID_IDENTIFIER_AUTHORITY_FROM_BYTES(0, 0, 0, 0, 0, 18);
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 9440
         /// <summary>
         /// Process Trust Authority
         /// </summary>
-        public static ref readonly SID_IDENTIFIER_AUTHORITY SECURITY_PROCESS_TRUST_AUTHORITY => ref MemoryMarshal.Cast<byte, SID_IDENTIFIER_AUTHORITY>(WinNTConstants.SECURITY_PROCESS_TRUST_AUTHORITY.Span)[0];
+        public static readonly SID_IDENTIFIER_AUTHORITY SECURITY_PROCESS_TRUST_AUTHORITY = SID_IDENTIFIER_AUTHORITY_FROM_BYTES(0, 0, 0, 0, 0, 19);
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 9600
+        //
+        // Allocate the System Luid.  The first 1000 LUIDs are reserved.
+        // Use #999 here (0x3e7 = 999)
+        //
+
+        private static LUID LUID_FROM_INTS(int i1, int i2)
+        {
+            ReadOnlySpan<int> span = stackalloc int[] { i1, i2 };
+            return MemoryMarshal.Read<LUID>(MemoryMarshal.AsBytes(span));
+        }
+
+        public static readonly LUID SYSTEM_LUID = LUID_FROM_INTS(0x3e7, 0x0);
+        public static readonly LUID ANONYMOUS_LOGON_LUID = LUID_FROM_INTS(0x3e6, 0x0);
+        public static readonly LUID LOCALSERVICE_LUID = LUID_FROM_INTS(0x3e5, 0x0);
+        public static readonly LUID NETWORKSERVICE_LUID = LUID_FROM_INTS(0x3e4, 0x0);
+        public static readonly LUID IUSER_LUID = LUID_FROM_INTS(0x3e3, 0x0);
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 9915
         public static readonly ACCESS_MASK SYSTEM_MANDATORY_LABEL_NO_WRITE_UP = new ACCESS_MASK(WinNTConstants.SYSTEM_MANDATORY_LABEL_NO_WRITE_UP);

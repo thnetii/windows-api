@@ -3,7 +3,7 @@
 
 int main(int argc, char* argv[])
 {
-    ACL instance;
+    JOB_SET_ARRAY instance;
     const int size = sizeof(instance);
     const int value = HANDLE_FLAG_INHERIT;
 

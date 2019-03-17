@@ -5,7 +5,7 @@ namespace THNETII.WinApi.Native.NTStatus
     using static NTStatusConstants;
     using static WinNTConstants;
 
-    public static class NTStatusMacros
+    public static class NTStatusFunctions
     {
         #region FILTER_FLT_NTSTATUS_FROM_HRESULT macro
         /// <summary>

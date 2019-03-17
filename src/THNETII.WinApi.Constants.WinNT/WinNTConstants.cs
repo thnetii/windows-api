@@ -4,50 +4,13 @@ using System.Security.Principal;
 
 namespace THNETII.WinApi.Native.WinNT
 {
-    using static WinNTMacros;
-
     public static class WinNTConstants
     {
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 36
         public const int ANYSIZE_ARRAY = 1;
 
-        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 117
-        public static readonly int MAX_NATURAL_ALIGNMENT = IntPtr.Size;
-        // #if defined(_WIN64) || defined(_M_ALPHA)
-        // public const int MEMORY_ALLOCATION_ALIGNMENT = 16;
-        // #else
-        // public const int MEMORY_ALLOCATION_ALIGNMENT = 8;
-        // #endif
-
-        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 216
-        // #if defined(_AMD64_) || defined(_X86_)
-        // public const int SYSTEM_CACHE_ALIGNMENT_SIZE = 64;
-        // #else
-        // public const int SYSTEM_CACHE_ALIGNMENT_SIZE = 128;
-        // #endif
-
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 590
         public const int ALL_PROCESSOR_GROUPS = 0xffff;
-
-        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 614
-        private static int GET_MAXIMUM_PROC_PER_GROUP()
-        {
-            switch (RuntimeInformation.OSArchitecture)
-            {
-                case Architecture.X86:
-                case Architecture.Arm:
-                    return 32;
-                case Architecture.X64:
-                case Architecture.Arm64:
-                    return 64;
-                default: return default;
-            }
-        }
-
-        public static readonly int MAXIMUM_PROC_PER_GROUP = GET_MAXIMUM_PROC_PER_GROUP();
-
-        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 624
-        public static readonly int MAXIMUM_PROCESSORS = MAXIMUM_PROC_PER_GROUP;
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 750
         public const int APPLICATION_ERROR_MASK = 0x20000000;
@@ -1093,45 +1056,6 @@ namespace THNETII.WinApi.Native.WinNT
         /// </remarks>
         public const int LOCALE_NAME_MAX_LENGTH = 85;
 
-        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 2209
-        //
-        // ** DEPRECATED ** DEPRECATED ** DEPRECATED ** DEPRECATED ** DEPRECATED **
-        //
-        //  Deprecated default System and User IDs for language and locale.
-        //
-        //  Locale names such as LOCALE_NAME_SYSTEM_DEFAULT, LOCALE_NAME_USER_DEFAULT,
-        //  and LOCALE_NAME_INVARIANT are preferred.  See documentation for GetLocaleInfoEx.
-        //
-
-        public static readonly int LANG_SYSTEM_DEFAULT = MAKELANGID(LANG_NEUTRAL, SUBLANG_SYS_DEFAULT);
-        public static readonly int LANG_USER_DEFAULT = MAKELANGID(LANG_NEUTRAL, SUBLANG_DEFAULT);
-
-        public static readonly int LOCALE_SYSTEM_DEFAULT = MAKELCID(LANG_SYSTEM_DEFAULT, SORT_DEFAULT);
-        public static readonly int LOCALE_USER_DEFAULT = MAKELCID(LANG_USER_DEFAULT, SORT_DEFAULT);
-
-        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 2224
-        //
-        //  Other special IDs for language and locale.
-        //
-        //  DEPRECATED: These identifiers are all underspecified and lose information.
-        //              Please use Locale Names such as "en-FJ".
-        //              See documentation for GetLocaleInfoEx.
-        //
-        public static readonly int LOCALE_CUSTOM_DEFAULT =
-            MAKELCID(MAKELANGID(LANG_NEUTRAL, SUBLANG_CUSTOM_DEFAULT), SORT_DEFAULT);
-
-        public static readonly int LOCALE_CUSTOM_UNSPECIFIED =
-            MAKELCID(MAKELANGID(LANG_NEUTRAL, SUBLANG_CUSTOM_UNSPECIFIED), SORT_DEFAULT);
-
-        public static readonly int LOCALE_CUSTOM_UI_DEFAULT =
-            MAKELCID(MAKELANGID(LANG_NEUTRAL, SUBLANG_UI_CUSTOM_DEFAULT), SORT_DEFAULT);
-
-        public static readonly int LOCALE_NEUTRAL =
-            MAKELCID(MAKELANGID(LANG_NEUTRAL, SUBLANG_NEUTRAL), SORT_DEFAULT);
-
-        public static readonly int LOCALE_INVARIANT =
-            MAKELCID(MAKELANGID(LANG_INVARIANT, SUBLANG_NEUTRAL), SORT_DEFAULT);
-
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 2246
         //
         // Transient keyboard Locale IDs (LCIDs)
@@ -1166,15 +1090,6 @@ namespace THNETII.WinApi.Native.WinNT
     "See documentation for GetLocaleInfoEx."
     )]
         public const int LOCALE_TRANSIENT_KEYBOARD4 = 0x2c00;
-
-        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 2260
-        /// <summary>
-        /// Locale with an unassigned LCID
-        /// These locales cannot be queried by LCID
-        /// Currently same as <see cref="LOCALE_CUSTOM_UNSPECIFIED"/>
-        /// </summary>
-        [Obsolete("Please use Locale Names; see documentation for GetLocaleInfoEx.")]
-        public static readonly int LOCALE_UNASSIGNED_LCID = LOCALE_CUSTOM_UNSPECIFIED;
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 2444
         public const int STATUS_WAIT_0 = 0x00000000;
@@ -1409,13 +1324,6 @@ namespace THNETII.WinApi.Native.WinNT
         //                                                                         //
         /////////////////////////////////////////////////////////////////////////////
 
-        public static readonly ReadOnlyMemory<byte> SECURITY_NULL_SID_AUTHORITY = new byte[] { 0, 0, 0, 0, 0, 0 };
-        public static readonly ReadOnlyMemory<byte> SECURITY_WORLD_SID_AUTHORITY = new byte[] { 0, 0, 0, 0, 0, 1 };
-        public static readonly ReadOnlyMemory<byte> SECURITY_LOCAL_SID_AUTHORITY = new byte[] { 0, 0, 0, 0, 0, 2 };
-        public static readonly ReadOnlyMemory<byte> SECURITY_CREATOR_SID_AUTHORITY = new byte[] { 0, 0, 0, 0, 0, 3 };
-        public static readonly ReadOnlyMemory<byte> SECURITY_NON_UNIQUE_AUTHORITY = new byte[] { 0, 0, 0, 0, 0, 4 };
-        public static readonly ReadOnlyMemory<byte> SECURITY_RESOURCE_MANAGER_AUTHORITY = new byte[] { 0, 0, 0, 0, 0, 9 };
-
         public const int SECURITY_NULL_RID = 0x00000000;
         public const int SECURITY_WORLD_RID = 0x00000000;
         public const int SECURITY_LOCAL_RID = 0x00000000;
@@ -1475,8 +1383,6 @@ namespace THNETII.WinApi.Native.WinNT
         //       be added to in order to ensure proper "SID filtering"               //
         //                                                                           //
         ///////////////////////////////////////////////////////////////////////////////
-
-        public static readonly ReadOnlyMemory<byte> SECURITY_NT_AUTHORITY = new byte[] { 0, 0, 0, 0, 0, 5 };   // ntifs
 
         public const int SECURITY_DIALUP_RID = 0x00000001;
         public const int SECURITY_NETWORK_RID = 0x00000002;
@@ -1679,8 +1585,6 @@ namespace THNETII.WinApi.Native.WinNT
         // Application Package Authority.
         //
 
-        public static readonly ReadOnlyMemory<byte> SECURITY_APP_PACKAGE_AUTHORITY = new byte[] { 0, 0, 0, 0, 0, 15 };
-
         public const int SECURITY_APP_PACKAGE_BASE_RID = 0x00000002;
         public const int SECURITY_BUILTIN_APP_PACKAGE_RID_COUNT = 2;
         public const int SECURITY_APP_PACKAGE_RID_COUNT = 8;
@@ -1721,7 +1625,6 @@ namespace THNETII.WinApi.Native.WinNT
         // Mandatory Label Authority.
         //
 
-        public static readonly ReadOnlyMemory<byte> SECURITY_MANDATORY_LABEL_AUTHORITY = new byte[] { 0, 0, 0, 0, 0, 16 };
         public const int SECURITY_MANDATORY_UNTRUSTED_RID = 0x00000000;
         public const int SECURITY_MANDATORY_LOW_RID = 0x00001000;
         public const int SECURITY_MANDATORY_MEDIUM_RID = 0x00002000;
@@ -1736,13 +1639,10 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public const int SECURITY_MANDATORY_MAXIMUM_USER_RID = SECURITY_MANDATORY_SYSTEM_RID;
 
-        public static readonly ReadOnlyMemory<byte> SECURITY_SCOPED_POLICY_ID_AUTHORITY = new byte[] { 0, 0, 0, 0, 0, 17 };
-
         //
         // Authentication Authority
         //
 
-        public static readonly ReadOnlyMemory<byte> SECURITY_AUTHENTICATION_AUTHORITY = new byte[] { 0, 0, 0, 0, 0, 18 };
         public const int SECURITY_AUTHENTICATION_AUTHORITY_RID_COUNT = 1;
         public const int SECURITY_AUTHENTICATION_AUTHORITY_ASSERTED_RID = 0x00000001;
         public const int SECURITY_AUTHENTICATION_SERVICE_ASSERTED_RID = 0x00000002;
@@ -1755,7 +1655,6 @@ namespace THNETII.WinApi.Native.WinNT
         // Process Trust Authority
         //
 
-        public static readonly ReadOnlyMemory<byte> SECURITY_PROCESS_TRUST_AUTHORITY = new byte[] { 0, 0, 0, 0, 0, 19 };
         public const int SECURITY_PROCESS_TRUST_AUTHORITY_RID_COUNT = 2;
 
         public const int SECURITY_PROCESS_PROTECTION_TYPE_FULL_RID = 0x00000400;
@@ -1778,19 +1677,6 @@ namespace THNETII.WinApi.Native.WinNT
         public const int SECURITY_TRUSTED_INSTALLER_RID3 = 1831038044;
         public const int SECURITY_TRUSTED_INSTALLER_RID4 = 1853292631;
         public const int SECURITY_TRUSTED_INSTALLER_RID5 = unchecked((int)2271478464);
-
-        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 9600
-        //
-        // Allocate the System Luid.  The first 1000 LUIDs are reserved.
-        // Use #999 here (0x3e7 = 999)
-        //
-
-        public static readonly ReadOnlyMemory<int> SYSTEM_LUID = new int[] { 0x3e7, 0x0 };
-        public static readonly ReadOnlyMemory<int> ANONYMOUS_LOGON_LUID = new int[] { 0x3e6, 0x0 };
-        public static readonly ReadOnlyMemory<int> LOCALSERVICE_LUID = new int[] { 0x3e5, 0x0 };
-        public static readonly ReadOnlyMemory<int> NETWORKSERVICE_LUID = new int[] { 0x3e4, 0x0 };
-        public static readonly ReadOnlyMemory<int> IUSER_LUID = new int[] { 0x3e3, 0x0 };
-
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 9613
         ////////////////////////////////////////////////////////////////////////

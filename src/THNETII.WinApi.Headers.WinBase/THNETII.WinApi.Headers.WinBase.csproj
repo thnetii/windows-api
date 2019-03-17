@@ -9,25 +9,28 @@
     <NoWarn>CS1591</NoWarn>
     <RootNamespace>THNETII.WinApi.Native.WinBase</RootNamespace>
   </PropertyGroup>
-  
-  <ItemGroup>
+
+  <ItemGroup Label="InteropServices Project References">
     <ProjectReference Include="..\..\interopservices\src\THNETII.InteropServices.Bitwise\THNETII.InteropServices.Bitwise.csproj" />
     <ProjectReference Include="..\..\interopservices\src\THNETII.InteropServices.NativeMemory\THNETII.InteropServices.NativeMemory.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
+  <ItemGroup Label="Shared Project References">
     <ProjectReference Include="..\..\src-shared\THNETII.WinApi.NativeLibraryNames\THNETII.WinApi.NativeLibraryNames.csproj">
       <PrivateAssets>All</PrivateAssets>
     </ProjectReference>
     <ProjectReference Include="..\..\src-shared\THNETII.WinApi.WindowsDataTypes\THNETII.WinApi.WindowsDataTypes.csproj" />
+  </ItemGroup>
+  
+  <ItemGroup Label="Constants Project References">
     <ProjectReference Include="..\..\src\THNETII.WinApi.Constants.WinError\THNETII.WinApi.Constants.WinError.csproj">
       <PrivateAssets>All</PrivateAssets>
     </ProjectReference>
-    <ProjectReference Include="..\THNETII.WinApi.Headers.MinWinBase\THNETII.WinApi.Headers.MinWinBase.csproj" />
-    <ProjectReference Include="..\THNETII.WinApi.Headers.MinWinDef\THNETII.WinApi.Headers.MinWinDef.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
+  <ItemGroup Label="Header Project References">
+    <ProjectReference Include="..\THNETII.WinApi.Headers.MinWinBase\THNETII.WinApi.Headers.MinWinBase.csproj" />
+    <ProjectReference Include="..\THNETII.WinApi.Headers.MinWinDef\THNETII.WinApi.Headers.MinWinDef.csproj" />
     <ProjectReference Include="..\THNETII.WinApi.Headers.WinNT\THNETII.WinApi.Headers.WinNT.csproj" />
   </ItemGroup>
 

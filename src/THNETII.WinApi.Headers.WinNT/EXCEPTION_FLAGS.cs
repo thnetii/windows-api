@@ -26,10 +26,10 @@ namespace THNETII.WinApi.Native.WinNT
     public static class EXCEPTION_FLAGS_EXTENSIONS
     {
         public static bool IsUnwinding(this EXCEPTION_FLAGS Flag) =>
-            WinNTMacros.IS_UNWINDING((int)Flag);
+            WinNTFunctions.IS_UNWINDING((int)Flag);
         public static bool IsDispatching(this EXCEPTION_FLAGS Flag) =>
-            WinNTMacros.IS_DISPATCHING((int)Flag);
+            WinNTFunctions.IS_DISPATCHING((int)Flag);
         public static bool IsTargetUnwind(this EXCEPTION_FLAGS Flag) =>
-            WinNTMacros.IS_TARGET_UNWIND((int)Flag);
+            WinNTFunctions.IS_TARGET_UNWIND((int)Flag);
     }
 }

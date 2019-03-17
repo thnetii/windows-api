@@ -6,7 +6,13 @@
     <TargetFrameworks>netstandard1.0;netstandard2.0</TargetFrameworks>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <NoWarn>CS1591</NoWarn>
-    <RootNamespace>THNETII.WinApi.Native.WinError</RootNamespace>
+    <RootNamespace>THNETII.WinApi.Native.SdkVer</RootNamespace>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\THNETII.WinApi.Constants.SdkVer\THNETII.WinApi.Constants.SdkVer.csproj">
+      <PrivateAssets>All</PrivateAssets>
+    </ProjectReference>
+  </ItemGroup>
 
 </Project>

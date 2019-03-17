@@ -3,7 +3,7 @@
 
 int main(int argc, char* argv[])
 {
-    EXCEPTION_REGISTRATION_RECORD instance;
+    NT_TIB instance;
     const int size = sizeof(instance);
     const int value = HANDLE_FLAG_INHERIT;
 

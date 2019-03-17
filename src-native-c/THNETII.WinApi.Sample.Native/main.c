@@ -3,7 +3,7 @@
 
 int main(int argc, char* argv[])
 {
-    JOB_SET_ARRAY instance;
+    EXCEPTION_REGISTRATION_RECORD instance;
     const int size = sizeof(instance);
     const int value = HANDLE_FLAG_INHERIT;
 

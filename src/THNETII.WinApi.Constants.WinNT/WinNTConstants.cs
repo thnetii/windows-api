@@ -2327,6 +2327,10 @@ namespace THNETII.WinApi.Native.WinNT
         public const int JOB_OBJECT_IMPERSONATE = 0x0020;
         public const int JOB_OBJECT_ALL_ACCESS = STANDARD_RIGHTS_REQUIRED | SYNCHRONIZE | 0x3F;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 11343
+        public const int FLS_MAXIMUM_AVAILABLE = 128;
+        public const int TLS_MINIMUM_AVAILABLE = 64;
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 13566
         //
         // Object Manager Symbolic Link Specific Access Rights.

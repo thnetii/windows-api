@@ -2331,6 +2331,19 @@ namespace THNETII.WinApi.Native.WinNT
         public const int FLS_MAXIMUM_AVAILABLE = 128;
         public const int TLS_MINIMUM_AVAILABLE = 64;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 11415
+        /// <summary>Opt-out of dynamic code generation.</summary>
+        public const int THREAD_DYNAMIC_CODE_ALLOW = 1;
+
+        /// <summary>value that gets a thread to LowRealtime-1</summary>
+        public const int THREAD_BASE_PRIORITY_LOWRT = 15;
+        /// <summary>maximum thread base priority boost</summary>
+        public const int THREAD_BASE_PRIORITY_MAX = 2;
+        /// <summary>minimum thread base priority boost</summary>
+        public const int THREAD_BASE_PRIORITY_MIN = -2;
+        /// <summary>value that gets a thread to idle</summary>
+        public const int THREAD_BASE_PRIORITY_IDLE = -15;
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 13566
         //
         // Object Manager Symbolic Link Specific Access Rights.

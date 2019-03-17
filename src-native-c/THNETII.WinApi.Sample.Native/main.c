@@ -3,7 +3,7 @@
 
 int main(int argc, char* argv[])
 {
-    UMS_CREATE_THREAD_ATTRIBUTES instance;
+    WOW64_ARCHITECTURE_INFORMATION instance;
     const int size = sizeof(instance);
     const int value = UMS_VERSION;
 

@@ -2352,6 +2352,18 @@ namespace THNETII.WinApi.Native.WinNT
         public const int DUPLICATE_CLOSE_SOURCE = 0x00000001;
         public const int DUPLICATE_SAME_ACCESS = 0x00000002;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 11438
+        //
+        // Page/memory priorities.
+        //
+
+        public const int MEMORY_PRIORITY_LOWEST = 0;
+        public const int MEMORY_PRIORITY_VERY_LOW = 1;
+        public const int MEMORY_PRIORITY_LOW = 2;
+        public const int MEMORY_PRIORITY_MEDIUM = 3;
+        public const int MEMORY_PRIORITY_BELOW_NORMAL = 4;
+        public const int MEMORY_PRIORITY_NORMAL = 5;
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19775
         public const int RTL_UMS_VERSION = 0x0100;
     }

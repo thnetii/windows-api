@@ -1,7 +1,12 @@
 ﻿namespace THNETII.WinApi.Native.WinBase
 {
+    using static WinNT.WinNTConstants;
+
     public static class WinBaseConstants
     {
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\WinBase.h, line 1474
+        public const int UMS_VERSION = RTL_UMS_VERSION;
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\WinBase.h, line 1823
         public const int SEM_FAILCRITICALERRORS = 0x0001;
         public const int SEM_NOGPFAULTERRORBOX = 0x0002;

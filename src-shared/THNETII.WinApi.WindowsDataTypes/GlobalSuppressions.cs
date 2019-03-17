@@ -7,4 +7,4 @@
 using System.Diagnostics.CodeAnalysis;
 
 [assembly: SuppressMessage("Naming", "CA1720: Identifier contains type name")]
-
+[assembly: SuppressMessage("Naming", "CA1707: Identifiers should not contain underscores")]

@@ -3,9 +3,9 @@
 
 int main(int argc, char* argv[])
 {
-    NT_TIB instance;
+    UMS_CREATE_THREAD_ATTRIBUTES instance;
     const int size = sizeof(instance);
-    const int value = HANDLE_FLAG_INHERIT;
+    const int value = UMS_VERSION;
 
     const void* ptr = GetHandleInformation;
 

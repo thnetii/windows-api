@@ -2364,6 +2364,13 @@ namespace THNETII.WinApi.Native.WinNT
         public const int MEMORY_PRIORITY_BELOW_NORMAL = 4;
         public const int MEMORY_PRIORITY_NORMAL = 5;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 11459
+        public const int QUOTA_LIMITS_HARDWS_MIN_ENABLE = 0x00000001;
+        public const int QUOTA_LIMITS_HARDWS_MIN_DISABLE = 0x00000002;
+        public const int QUOTA_LIMITS_HARDWS_MAX_ENABLE = 0x00000004;
+        public const int QUOTA_LIMITS_HARDWS_MAX_DISABLE = 0x00000008;
+        public const int QUOTA_LIMITS_USE_DEFAULT_LIMITS = 0x00000010;
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19775
         public const int RTL_UMS_VERSION = 0x0100;
     }

@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Runtime.InteropServices;
 using System.Security.Principal;
 
 namespace THNETII.WinApi.Native.WinNT
@@ -2370,6 +2369,10 @@ namespace THNETII.WinApi.Native.WinNT
         public const int QUOTA_LIMITS_HARDWS_MAX_ENABLE = 0x00000004;
         public const int QUOTA_LIMITS_HARDWS_MAX_DISABLE = 0x00000008;
         public const int QUOTA_LIMITS_USE_DEFAULT_LIMITS = 0x00000010;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 11498
+        public const int MAX_HW_COUNTERS = 16;
+        public const int THREAD_PROFILING_FLAG_DISPATCH = 0x00000001;
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19775
         public const int RTL_UMS_VERSION = 0x0100;

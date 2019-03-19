@@ -3,7 +3,7 @@
 
 int main(int argc, char* argv[])
 {
-    WOW64_ARCHITECTURE_INFORMATION instance;
+    QUOTA_LIMITS_EX instance;
     const int size = sizeof(instance);
     const int value = UMS_VERSION;
 

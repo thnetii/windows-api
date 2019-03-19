@@ -3,9 +3,9 @@
 
 int main(int argc, char* argv[])
 {
-    QUOTA_LIMITS_EX instance;
+    JOBOBJECT_BASIC_LIMIT_INFORMATION instance;
     const int size = sizeof(instance);
-    const int value = UMS_VERSION;
+    const int value = JOB_OBJECT_LIMIT_ACTIVE_PROCESS;
 
     const void* ptr = GetHandleInformation;
 

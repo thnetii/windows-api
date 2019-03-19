@@ -2374,6 +2374,61 @@ namespace THNETII.WinApi.Native.WinNT
         public const int MAX_HW_COUNTERS = 16;
         public const int THREAD_PROFILING_FLAG_DISPATCH = 0x00000001;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 12047
+        //
+        // Basic Limits
+        //
+        public const int JOB_OBJECT_LIMIT_WORKINGSET = 0x00000001;
+        public const int JOB_OBJECT_LIMIT_PROCESS_TIME = 0x00000002;
+        public const int JOB_OBJECT_LIMIT_JOB_TIME = 0x00000004;
+        public const int JOB_OBJECT_LIMIT_ACTIVE_PROCESS = 0x00000008;
+        public const int JOB_OBJECT_LIMIT_AFFINITY = 0x00000010;
+        public const int JOB_OBJECT_LIMIT_PRIORITY_CLASS = 0x00000020;
+        public const int JOB_OBJECT_LIMIT_PRESERVE_JOB_TIME = 0x00000040;
+        public const int JOB_OBJECT_LIMIT_SCHEDULING_CLASS = 0x00000080;
+
+        //
+        // Extended Limits
+        //
+        public const int JOB_OBJECT_LIMIT_PROCESS_MEMORY = 0x00000100;
+        public const int JOB_OBJECT_LIMIT_JOB_MEMORY = 0x00000200;
+        public const int JOB_OBJECT_LIMIT_JOB_MEMORY_HIGH = JOB_OBJECT_LIMIT_JOB_MEMORY;
+        public const int JOB_OBJECT_LIMIT_DIE_ON_UNHANDLED_EXCEPTION = 0x00000400;
+        public const int JOB_OBJECT_LIMIT_BREAKAWAY_OK = 0x00000800;
+        public const int JOB_OBJECT_LIMIT_SILENT_BREAKAWAY_OK = 0x00001000;
+        public const int JOB_OBJECT_LIMIT_KILL_ON_JOB_CLOSE = 0x00002000;
+        public const int JOB_OBJECT_LIMIT_SUBSET_AFFINITY = 0x00004000;
+        public const int JOB_OBJECT_LIMIT_JOB_MEMORY_LOW = 0x00008000;
+
+        //
+        // Notification Limits
+        //
+
+        public const int JOB_OBJECT_LIMIT_JOB_READ_BYTES = 0x00010000;
+        public const int JOB_OBJECT_LIMIT_JOB_WRITE_BYTES = 0x00020000;
+        public const int JOB_OBJECT_LIMIT_RATE_CONTROL = 0x00040000;
+        public const int JOB_OBJECT_LIMIT_CPU_RATE_CONTROL = JOB_OBJECT_LIMIT_RATE_CONTROL;
+        public const int JOB_OBJECT_LIMIT_IO_RATE_CONTROL = 0x00080000;
+        public const int JOB_OBJECT_LIMIT_NET_RATE_CONTROL = 0x00100000;
+
+
+        //
+        // Valid Job Object Limits
+        //
+
+        public const int JOB_OBJECT_LIMIT_VALID_FLAGS = 0x0007ffff;
+        public const int JOB_OBJECT_BASIC_LIMIT_VALID_FLAGS = 0x000000ff;
+        public const int JOB_OBJECT_EXTENDED_LIMIT_VALID_FLAGS = 0x00007fff;
+        public const int JOB_OBJECT_NOTIFICATION_LIMIT_VALID_FLAGS = (
+            JOB_OBJECT_LIMIT_JOB_READ_BYTES |
+            JOB_OBJECT_LIMIT_JOB_WRITE_BYTES |
+            JOB_OBJECT_LIMIT_JOB_TIME |
+            JOB_OBJECT_LIMIT_JOB_MEMORY_LOW |
+            JOB_OBJECT_LIMIT_JOB_MEMORY_HIGH |
+            JOB_OBJECT_LIMIT_CPU_RATE_CONTROL |
+            JOB_OBJECT_LIMIT_IO_RATE_CONTROL |
+            JOB_OBJECT_LIMIT_NET_RATE_CONTROL);
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19775
         public const int RTL_UMS_VERSION = 0x0100;
     }

@@ -3,9 +3,9 @@
 
 int main(int argc, char* argv[])
 {
-    JOBOBJECT_BASIC_LIMIT_INFORMATION instance;
+    JOBOBJECT_BASIC_UI_RESTRICTIONS instance;
     const int size = sizeof(instance);
-    const int value = JOB_OBJECT_LIMIT_ACTIVE_PROCESS;
+    const int value = JOB_OBJECT_UILIMIT_DESKTOP;
 
     const void* ptr = GetHandleInformation;
 

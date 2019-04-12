@@ -2429,6 +2429,44 @@ namespace THNETII.WinApi.Native.WinNT
             JOB_OBJECT_LIMIT_IO_RATE_CONTROL |
             JOB_OBJECT_LIMIT_NET_RATE_CONTROL);
 
+        //
+        // UI restrictions for jobs
+        //
+
+        public const int JOB_OBJECT_UILIMIT_NONE = 0x00000000;
+
+        public const int JOB_OBJECT_UILIMIT_HANDLES = 0x00000001;
+        public const int JOB_OBJECT_UILIMIT_READCLIPBOARD = 0x00000002;
+        public const int JOB_OBJECT_UILIMIT_WRITECLIPBOARD = 0x00000004;
+        public const int JOB_OBJECT_UILIMIT_SYSTEMPARAMETERS = 0x00000008;
+        public const int JOB_OBJECT_UILIMIT_DISPLAYSETTINGS = 0x00000010;
+        public const int JOB_OBJECT_UILIMIT_GLOBALATOMS = 0x00000020;
+        public const int JOB_OBJECT_UILIMIT_DESKTOP = 0x00000040;
+        public const int JOB_OBJECT_UILIMIT_EXITWINDOWS = 0x00000080;
+
+        public const int JOB_OBJECT_UILIMIT_ALL = 0x000000FF;
+
+        public const int JOB_OBJECT_UI_VALID_FLAGS = 0x000000FF;
+
+        public const int JOB_OBJECT_SECURITY_NO_ADMIN = 0x00000001;
+        public const int JOB_OBJECT_SECURITY_RESTRICTED_TOKEN = 0x00000002;
+        public const int JOB_OBJECT_SECURITY_ONLY_TOKEN = 0x00000004;
+        public const int JOB_OBJECT_SECURITY_FILTER_TOKENS = 0x00000008;
+
+        public const int JOB_OBJECT_SECURITY_VALID_FLAGS = 0x0000000f;
+
+        //
+        // Control flags for CPU rate control.
+        //
+
+        public const int JOB_OBJECT_CPU_RATE_CONTROL_ENABLE = 0x1;
+        public const int JOB_OBJECT_CPU_RATE_CONTROL_WEIGHT_BASED = 0x2;
+        public const int JOB_OBJECT_CPU_RATE_CONTROL_HARD_CAP = 0x4;
+        public const int JOB_OBJECT_CPU_RATE_CONTROL_NOTIFY = 0x8;
+        public const int JOB_OBJECT_CPU_RATE_CONTROL_MIN_MAX_RATE = 0x10;
+        public const int JOB_OBJECT_CPU_RATE_CONTROL_VALID_FLAGS = 0x1f;
+
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19775
         public const int RTL_UMS_VERSION = 0x0100;
     }

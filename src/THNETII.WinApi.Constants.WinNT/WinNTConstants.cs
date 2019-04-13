@@ -2374,6 +2374,10 @@ namespace THNETII.WinApi.Native.WinNT
         public const int MAX_HW_COUNTERS = 16;
         public const int THREAD_PROFILING_FLAG_DISPATCH = 0x00000001;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 12014
+        public const int JOB_OBJECT_TERMINATE_AT_END_OF_JOB = 0;
+        public const int JOB_OBJECT_POST_AT_END_OF_JOB = 1;
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 12047
         //
         // Basic Limits

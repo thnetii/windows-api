@@ -23,6 +23,9 @@
     <ProjectReference Include="..\..\src-shared\THNETII.WinApi.ErrorCodes\THNETII.WinApi.ErrorCodes.csproj">
       <PrivateAssets>All</PrivateAssets>
     </ProjectReference>
+    <ProjectReference Include="..\THNETII.WinApi.Constants.WinError\THNETII.WinApi.Constants.WinError.csproj">
+      <PrivateAssets>All</PrivateAssets>
+    </ProjectReference>
   </ItemGroup>
 
   <ItemGroup>
@@ -33,7 +36,7 @@
       <PrivateAssets>All</PrivateAssets>
     </ProjectReference>
   </ItemGroup>
-  
+
   <ItemGroup>
     <ProjectReference Include="..\THNETII.WinApi.Headers.MinWinBase\THNETII.WinApi.Headers.MinWinBase.csproj">
       <PrivateAssets>All</PrivateAssets>

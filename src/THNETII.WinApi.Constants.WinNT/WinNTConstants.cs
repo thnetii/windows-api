@@ -2381,6 +2381,27 @@ namespace THNETII.WinApi.Native.WinNT
         public const int JOB_OBJECT_TERMINATE_AT_END_OF_JOB = 0;
         public const int JOB_OBJECT_POST_AT_END_OF_JOB = 1;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 12017
+        //
+        // Completion Port Messages for job objects
+        //
+        // These values are returned via the lpNumberOfBytesTransferred parameter
+        //
+
+        public const int JOB_OBJECT_MSG_END_OF_JOB_TIME = 1;
+        public const int JOB_OBJECT_MSG_END_OF_PROCESS_TIME = 2;
+        public const int JOB_OBJECT_MSG_ACTIVE_PROCESS_LIMIT = 3;
+        public const int JOB_OBJECT_MSG_ACTIVE_PROCESS_ZERO = 4;
+        public const int JOB_OBJECT_MSG_NEW_PROCESS = 6;
+        public const int JOB_OBJECT_MSG_EXIT_PROCESS = 7;
+        public const int JOB_OBJECT_MSG_ABNORMAL_EXIT_PROCESS = 8;
+        public const int JOB_OBJECT_MSG_PROCESS_MEMORY_LIMIT = 9;
+        public const int JOB_OBJECT_MSG_JOB_MEMORY_LIMIT = 10;
+        public const int JOB_OBJECT_MSG_NOTIFICATION_LIMIT = 11;
+        public const int JOB_OBJECT_MSG_JOB_CYCLE_TIME_LIMIT = 12;
+        public const int JOB_OBJECT_MSG_SILO_TERMINATED = 13;
+
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 12047
         //
         // Basic Limits

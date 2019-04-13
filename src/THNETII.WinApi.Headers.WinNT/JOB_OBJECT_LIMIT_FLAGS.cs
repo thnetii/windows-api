@@ -2,6 +2,8 @@
 
 namespace THNETII.WinApi.Native.WinNT
 {
+    using static JOB_OBJECT_MSG_TYPE;
+
     [Flags]
     public enum JOB_OBJECT_LIMIT_FLAGS : int
     {

@@ -3,6 +3,7 @@
 namespace THNETII.WinApi.Native.WinNT
 {
     using static JOB_OBJECT_CPU_RATE_CONTROL_FLAGS;
+    using static JOBOBJECTINFOCLASS;
 
     // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 11872
     /// <summary>
@@ -88,7 +89,7 @@ namespace THNETII.WinApi.Native.WinNT
 
         /// <summary>
         /// <para>
-        /// If the <see cref="ControlFlags"/> member specifies <see cref="JOB_OBJECT_CPU_RATE_WEIGHT_BASED"/>, this member
+        /// If the <see cref="ControlFlags"/> member specifies <see cref="JOB_OBJECT_CPU_RATE_CONTROL_WEIGHT_BASED"/>, this member
         /// specifies the scheduling weight of the job object, which determines the share of processor time
         /// given to the job relative to other workloads on the processor.
         /// </para>

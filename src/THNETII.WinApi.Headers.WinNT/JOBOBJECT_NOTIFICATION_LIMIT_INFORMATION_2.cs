@@ -3,6 +3,7 @@
 namespace THNETII.WinApi.Native.WinNT
 {
     using static JOB_OBJECT_LIMIT_FLAGS;
+    using static JOB_OBJECT_MSG_TYPE;
 
     // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 11795
     /// <summary>
@@ -176,7 +177,7 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public long JobLowMemoryLimit;
         /// <summary>
-        /// If the <see cref="LimitFlags"/> parameter specifies <see cref="JOB_OBJECT_IO_LIMIT_RATE_CONTROL"/>, this member
+        /// If the <see cref="LimitFlags"/> parameter specifies <see cref="JOB_OBJECT_LIMIT_IO_RATE_CONTROL"/>, this member
         /// specifies the interval during which a job's I/O usage is monitored to determine whether the job has
         /// exceeded its I/O rate control limits. Otherwise, this member is ignored.
         /// </summary>
@@ -188,7 +189,7 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public JOBOBJECT_RATE_CONTROL_TOLERANCE NetRateControlTolerance;
         /// <summary>
-        /// If the <see cref="LimitFlags"/> parameter specifies <see cref="JOB_OBJECT_NET_LIMIT_RATE_CONTROL"/>, this member
+        /// If the <see cref="LimitFlags"/> parameter specifies <see cref="JOB_OBJECT_LIMIT_NET_RATE_CONTROL"/>, this member
         /// specifies the interval during which a job's network usage is monitored to determine whether the
         /// job has exceeded its network rate control limits. Otherwise, this member is ignored.
         /// </summary>

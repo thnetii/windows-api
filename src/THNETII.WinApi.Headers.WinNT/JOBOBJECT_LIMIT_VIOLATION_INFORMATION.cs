@@ -3,6 +3,7 @@
 namespace THNETII.WinApi.Native.WinNT
 {
     using static JOB_OBJECT_LIMIT_FLAGS;
+    using static JOB_OBJECT_MSG_TYPE;
 
     // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 11824
     /// <summary>

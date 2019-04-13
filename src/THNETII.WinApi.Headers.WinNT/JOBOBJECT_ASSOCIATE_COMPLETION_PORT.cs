@@ -3,6 +3,8 @@ using System.Runtime.InteropServices;
 
 namespace THNETII.WinApi.Native.WinNT
 {
+    using static JOB_OBJECT_MSG_TYPE;
+
     // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 11758
     /// <summary>
     /// Contains information used to associate a completion port with a job. You can associate one completion port with a job.
@@ -50,7 +52,7 @@ namespace THNETII.WinApi.Native.WinNT
     /// <item><term><see cref="JOB_OBJECT_MSG_ABNORMAL_EXIT_PROCESS"/></term><description>Indicates that a process associated with the job exited with an exit code that indicates an abnormal exit (see the list following this table). <br/>The value of <em>lpOverlapped</em> is the identifier of the exiting process.</description></item>
     /// <item><term><see cref="JOB_OBJECT_MSG_ACTIVE_PROCESS_LIMIT"/></term><description>Indicates that the active process limit has been exceeded. <br/>The value of <em>lpOverlapped</em> is <see cref="IntPtr.Zero"/>.</description></item>
     /// <item><term><see cref="JOB_OBJECT_MSG_ACTIVE_PROCESS_ZERO"/></term><description>Indicates that the active process count has been decremented to 0 (zero). For example, if the job currently has two active processes, the system sends this message after they both terminate. <br/>The value of <em>lpOverlapped</em> is <see cref="IntPtr.Zero"/>.</description></item>
-    /// <item><term><see cref="JOB_OBJECT_MSG_END_OF_JOB_TIME"/></term><description>Indicates that the <see cref="JOB_OBJECT_POST_AT_END_OF_JOB"/> option is in effect and the end-of-job time limit has been reached. Upon posting this message, the time limit is canceled and the job's processes can continue to run.<br/>The value of <em>lpOverlapped</em> is <see cref="IntPtr.Zero"/>.</description></item>
+    /// <item><term><see cref="JOB_OBJECT_MSG_END_OF_JOB_TIME"/></term><description>Indicates that the <see cref="WinNTConstants.JOB_OBJECT_POST_AT_END_OF_JOB"/> option is in effect and the end-of-job time limit has been reached. Upon posting this message, the time limit is canceled and the job's processes can continue to run.<br/>The value of <em>lpOverlapped</em> is <see cref="IntPtr.Zero"/>.</description></item>
     /// <item><term><see cref="JOB_OBJECT_MSG_END_OF_PROCESS_TIME"/></term><description>Indicates that a process has exceeded a per-process time limit. The system sends this message after the process termination has been requested. <br/>The value of <em>lpOverlapped</em> is the identifier of the process that exceeded its limit.</description></item>
     /// <item><term><see cref="JOB_OBJECT_MSG_EXIT_PROCESS"/></term><description>Indicates that a process associated with the job has exited. <br/>The value of <em>lpOverlapped</em> is the identifier of the exiting process.</description></item>
     /// <item><term><see cref="JOB_OBJECT_MSG_JOB_MEMORY_LIMIT"/></term><description>Indicates that a process associated with the job caused the job to exceed the job-wide memory limit (if one is in effect).<br/>The value of <em>lpOverlapped</em> specifies the identifier of the process that has attempted to exceed the limit. The system does not send this message if the process has not yet reported its process identifier.</description></item>

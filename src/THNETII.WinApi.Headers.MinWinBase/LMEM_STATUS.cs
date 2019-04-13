@@ -11,11 +11,11 @@ namespace THNETII.WinApi.Native.MinWinBase
     [StructLayout(LayoutKind.Sequential), DebuggerDisplay(nameof(DebuggerDisplay) + "()")]
     public struct LMEM_STATUS : IEquatable<LMEM_STATUS>, IEquatable<int>
     {
-        private static Bitfield32 isinvalid = Bitfield32.DefineFromMask(LMEM_INVALID_HANDLE);
-        private static Bitfield32 discarded = Bitfield32.DefineFromMask(LMEM_DISCARDED);
-        private static Bitfield32 lockcount = Bitfield32.DefineFromMask(LMEM_LOCKCOUNT);
+        private static readonly Bitfield32 isinvalid = Bitfield32.DefineFromMask(LMEM_INVALID_HANDLE);
+        private static readonly Bitfield32 discarded = Bitfield32.DefineFromMask(LMEM_DISCARDED);
+        private static readonly Bitfield32 lockcount = Bitfield32.DefineFromMask(LMEM_LOCKCOUNT);
 
-        private int value;
+        private readonly int value;
 
         public LMEM_STATUS(int value) : this() => this.value = value;
 

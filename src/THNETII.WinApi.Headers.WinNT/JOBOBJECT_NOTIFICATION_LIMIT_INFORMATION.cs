@@ -4,6 +4,8 @@ using THNETII.InteropServices.Bitwise;
 namespace THNETII.WinApi.Native.WinNT
 {
     using static JOB_OBJECT_LIMIT_FLAGS;
+    using static JOB_OBJECT_MSG_TYPE;
+    using static JOBOBJECTINFOCLASS;
 
     // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 11785
     /// <summary>
@@ -22,7 +24,7 @@ namespace THNETII.WinApi.Native.WinNT
     /// When the application monitoring the I/O completion port receives a
     /// <see cref="JOB_OBJECT_MSG_NOTIFICATION_LIMIT"/> message, it must call <see cref="QueryInformationJobObject"/> with the
     /// <see cref="JobObjectLimitViolationInformation"/> information class. Limit violation information is received in a
-    /// <see cref="JOBOBJECT_LIMIT_VIOLATION_STRUCTURE"/> that contains information about all notification limits
+    /// <see cref="JOBOBJECT_LIMIT_VIOLATION_INFORMATION"/> structure that contains information about all notification limits
     /// that were exceeded at the time of the query. The system will not send another
     /// <see cref="JOB_OBJECT_MSG_NOTIFICATION_LIMIT"/> message until after <see cref="QueryInformationJobObject"/> is called.</para>
     /// <para>

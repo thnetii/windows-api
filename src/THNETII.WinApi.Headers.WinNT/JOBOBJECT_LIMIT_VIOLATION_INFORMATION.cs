@@ -4,7 +4,7 @@ namespace THNETII.WinApi.Native.WinNT
 {
     using static JOB_OBJECT_LIMIT_FLAGS;
 
-    // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 11795
+    // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 11824
     /// <summary>
     /// Contains information about resource notification limits that have been exceeded for a job object.
     /// This structure is used with the <see cref="QueryInformationJobObject"/> function with the

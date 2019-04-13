@@ -3,9 +3,9 @@
 
 int main(int argc, char* argv[])
 {
-    JOBOBJECT_END_OF_JOB_TIME_INFORMATION instance;
+    JOBOBJECT_CPU_RATE_CONTROL_INFORMATION instance;
     const int size = sizeof(instance);
-    const int value = JOB_OBJECT_POST_AT_END_OF_JOB;
+    const int value = JOB_OBJECT_CPU_RATE_CONTROL_ENABLE;
 
     const void* ptr = GetHandleInformation;
 

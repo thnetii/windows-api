@@ -2713,6 +2713,32 @@ namespace THNETII.WinApi.Native.WinNT
         public const ulong XSTATE_CONTROLFLAG_VALID_MASK =
             XSTATE_CONTROLFLAG_XSAVEOPT_MASK | XSTATE_CONTROLFLAG_XSAVEC_MASK;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 12635
+        //
+        // Define flags for setting process CFG valid call target entries.
+        //
+
+        /// <summary>
+        /// Call target should be made valid.  If not set, the call target is made
+        /// invalid.  Input flag.
+        /// </summary>
+        public const int CFG_CALL_TARGET_VALID = 0x00000001;
+
+        /// <summary>
+        /// Call target has been successfully processed.  Used to report to the caller
+        /// how much progress has been made.  Output flag.
+        /// </summary>
+        public const int CFG_CALL_TARGET_PROCESSED = 0x00000002;
+
+        /// <summary>
+        /// Call target should be made valid only if it is suppressed export.
+        /// What this flag means is that it can *only* be used on a cell which is
+        /// currently in the CFG export suppressed state (only considered for export
+        /// suppressed processes and not legacy CFG processes!), and it is also
+        /// allowed to be used even if the process is a restricted (i.e. no ACG) process.
+        /// </summary>
+        public const int CFG_CALL_TARGET_CONVERT_EXPORT_SUPPRESSED_TO_VALID = 0x00000004;
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 12692
         public const int PAGE_NOACCESS = 0x01;
         public const int PAGE_READONLY = 0x02;

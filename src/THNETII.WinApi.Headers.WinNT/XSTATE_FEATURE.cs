@@ -6,6 +6,8 @@ namespace THNETII.WinApi.Native.WinNT
     [StructLayout(LayoutKind.Sequential)]
     public struct XSTATE_FEATURE
     {
+        internal const int SizeOf = sizeof(int) * 2;
+
         public int Offset;
         public int Size;
     }

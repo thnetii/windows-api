@@ -2713,6 +2713,66 @@ namespace THNETII.WinApi.Native.WinNT
         public const ulong XSTATE_CONTROLFLAG_VALID_MASK =
             XSTATE_CONTROLFLAG_XSAVEOPT_MASK | XSTATE_CONTROLFLAG_XSAVEC_MASK;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 12692
+        public const int PAGE_NOACCESS = 0x01;
+        public const int PAGE_READONLY = 0x02;
+        public const int PAGE_READWRITE = 0x04;
+        public const int PAGE_WRITECOPY = 0x08;
+        public const int PAGE_EXECUTE = 0x10;
+        public const int PAGE_EXECUTE_READ = 0x20;
+        public const int PAGE_EXECUTE_READWRITE = 0x40;
+        public const int PAGE_EXECUTE_WRITECOPY = 0x80;
+        public const int PAGE_GUARD = 0x100;
+        public const int PAGE_NOCACHE = 0x200;
+        public const int PAGE_WRITECOMBINE = 0x400;
+        public const int PAGE_ENCLAVE_THREAD_CONTROL = unchecked((int)0x80000000);
+        public const int PAGE_REVERT_TO_FILE_MAP = unchecked((int)0x80000000);
+        public const int PAGE_TARGETS_NO_UPDATE = 0x40000000;
+        public const int PAGE_TARGETS_INVALID = 0x40000000;
+        public const int PAGE_ENCLAVE_UNVALIDATED = 0x20000000;
+        public const int PAGE_ENCLAVE_DECOMMIT = 0x10000000;
+        public const int MEM_COMMIT = 0x00001000;
+        public const int MEM_RESERVE = 0x00002000;
+        public const int MEM_REPLACE_PLACEHOLDER = 0x00004000;
+        public const int MEM_RESERVE_PLACEHOLDER = 0x00040000;
+        public const int MEM_RESET = 0x00080000;
+        public const int MEM_TOP_DOWN = 0x00100000;
+        public const int MEM_WRITE_WATCH = 0x00200000;
+        public const int MEM_PHYSICAL = 0x00400000;
+        public const int MEM_ROTATE = 0x00800000;
+        public const int MEM_DIFFERENT_IMAGE_BASE_OK = 0x00800000;
+        public const int MEM_RESET_UNDO = 0x01000000;
+        public const int MEM_LARGE_PAGES = 0x20000000;
+        public const int MEM_4MB_PAGES = unchecked((int)0x80000000);
+        public const int MEM_64K_PAGES = MEM_LARGE_PAGES | MEM_PHYSICAL;
+        public const int MEM_UNMAP_WITH_TRANSIENT_BOOST = 0x00000001;
+        public const int MEM_COALESCE_PLACEHOLDERS = 0x00000001;
+        public const int MEM_PRESERVE_PLACEHOLDER = 0x00000002;
+        public const int MEM_DECOMMIT = 0x00004000;
+        public const int MEM_RELEASE = 0x00008000;
+        public const int MEM_FREE = 0x00010000;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 12764
+        public const int SEC_PARTITION_OWNER_HANDLE = 0x00040000;
+        public const int SEC_64K_PAGES = 0x00080000;
+        public const int SEC_FILE = 0x00800000;
+        public const int SEC_IMAGE = 0x01000000;
+        public const int SEC_PROTECTED_IMAGE = 0x02000000;
+        public const int SEC_RESERVE = 0x04000000;
+        public const int SEC_COMMIT = 0x08000000;
+        public const int SEC_NOCACHE = 0x10000000;
+        public const int SEC_WRITECOMBINE = 0x40000000;
+        public const int SEC_LARGE_PAGES = unchecked((int)0x80000000);
+        public const int SEC_IMAGE_NO_EXECUTE = SEC_IMAGE | SEC_NOCACHE;
+        public const int MEM_PRIVATE = 0x00020000;
+        public const int MEM_MAPPED = 0x00040000;
+        public const int MEM_IMAGE = 0x01000000;
+        public const int WRITE_WATCH_FLAG_RESET = 0x01;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 12780
+        public const int ENCLAVE_TYPE_SGX = 0x00000001;
+        public const int ENCLAVE_TYPE_SGX2 = 0x00000002;
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19775
         public const int RTL_UMS_VERSION = 0x0100;
     }

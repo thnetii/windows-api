@@ -3,9 +3,9 @@
 
 int main(int argc, char* argv[])
 {
-    JOBOBJECT_CPU_RATE_CONTROL_INFORMATION instance;
+    MEMORY_BASIC_INFORMATION instance;
     const int size = sizeof(instance);
-    const int value = JOB_OBJECT_CPU_RATE_CONTROL_ENABLE;
+    const int value = PAGE_EXECUTE;
 
     const void* ptr = GetHandleInformation;
 

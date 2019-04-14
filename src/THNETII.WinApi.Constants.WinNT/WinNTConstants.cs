@@ -2528,6 +2528,9 @@ namespace THNETII.WinApi.Native.WinNT
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 12264
         public const int LTP_PC_SMT = 0x1;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 12273
+        public const int CACHE_FULLY_ASSOCIATIVE = 0xFF;
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19775
         public const int RTL_UMS_VERSION = 0x0100;
     }

@@ -365,6 +365,27 @@ namespace THNETII.WinApi.Native.WinNT
 
         public static readonly ACCESS_MASK TIMER_ALL_ACCESS = new ACCESS_MASK(WinNTConstants.TIMER_ALL_ACCESS);
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 12668
+        public static readonly ACCESS_MASK SECTION_QUERY = new ACCESS_MASK(WinNTConstants.SECTION_QUERY);
+        public static readonly ACCESS_MASK SECTION_MAP_WRITE = new ACCESS_MASK(WinNTConstants.SECTION_MAP_WRITE);
+        public static readonly ACCESS_MASK SECTION_MAP_READ = new ACCESS_MASK(WinNTConstants.SECTION_MAP_READ);
+        public static readonly ACCESS_MASK SECTION_MAP_EXECUTE = new ACCESS_MASK(WinNTConstants.SECTION_MAP_EXECUTE);
+        public static readonly ACCESS_MASK SECTION_EXTEND_SIZE = new ACCESS_MASK(WinNTConstants.SECTION_EXTEND_SIZE);
+        /// <remarks>not included in <see cref="SECTION_ALL_ACCESS"/></remarks>
+        public static readonly ACCESS_MASK SECTION_MAP_EXECUTE_EXPLICIT = new ACCESS_MASK(WinNTConstants.SECTION_MAP_EXECUTE_EXPLICIT);
+
+        public static readonly ACCESS_MASK SECTION_ALL_ACCESS = new ACCESS_MASK(WinNTConstants.SECTION_ALL_ACCESS);
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 12681
+        //
+        // Session Specific Access Rights.
+        //
+
+        public static readonly ACCESS_MASK SESSION_QUERY_ACCESS = new ACCESS_MASK(WinNTConstants.SESSION_QUERY_ACCESS);
+        public static readonly ACCESS_MASK SESSION_MODIFY_ACCESS = new ACCESS_MASK(WinNTConstants.SESSION_MODIFY_ACCESS);
+
+        public static readonly ACCESS_MASK SESSION_ALL_ACCESS = new ACCESS_MASK(WinNTConstants.SESSION_ALL_ACCESS);
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 13566
         //
         // Object Manager Symbolic Link Specific Access Rights.

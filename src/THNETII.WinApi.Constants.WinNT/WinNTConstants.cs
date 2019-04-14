@@ -2739,6 +2739,34 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public const int CFG_CALL_TARGET_CONVERT_EXPORT_SUPPRESSED_TO_VALID = 0x00000004;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 12668
+        public const int SECTION_QUERY = 0x0001;
+        public const int SECTION_MAP_WRITE = 0x0002;
+        public const int SECTION_MAP_READ = 0x0004;
+        public const int SECTION_MAP_EXECUTE = 0x0008;
+        public const int SECTION_EXTEND_SIZE = 0x0010;
+        /// <summary>not included in <see cref="SECTION_ALL_ACCESS"/></summary>
+        public const int SECTION_MAP_EXECUTE_EXPLICIT = 0x0020;
+
+        public const int SECTION_ALL_ACCESS = STANDARD_RIGHTS_REQUIRED
+                                               | SECTION_QUERY
+                                               | SECTION_MAP_WRITE
+                                               | SECTION_MAP_READ
+                                               | SECTION_MAP_EXECUTE
+                                               | SECTION_EXTEND_SIZE;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 12681
+        //
+        // Session Specific Access Rights.
+        //
+
+        public const int SESSION_QUERY_ACCESS = 0x0001;
+        public const int SESSION_MODIFY_ACCESS = 0x0002;
+
+        public const int SESSION_ALL_ACCESS = STANDARD_RIGHTS_REQUIRED
+                                               | SESSION_QUERY_ACCESS
+                                               | SESSION_MODIFY_ACCESS;
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 12692
         public const int PAGE_NOACCESS = 0x01;
         public const int PAGE_READONLY = 0x02;

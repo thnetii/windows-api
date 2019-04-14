@@ -2447,7 +2447,7 @@ namespace THNETII.WinApi.Native.WinNT
         public const int JOB_OBJECT_LIMIT_VALID_FLAGS = 0x0007ffff;
         public const int JOB_OBJECT_BASIC_LIMIT_VALID_FLAGS = 0x000000ff;
         public const int JOB_OBJECT_EXTENDED_LIMIT_VALID_FLAGS = 0x00007fff;
-        public const int JOB_OBJECT_NOTIFICATION_LIMIT_VALID_FLAGS = (
+        public const int JOB_OBJECT_NOTIFICATION_LIMIT_VALID_FLAGS =
             JOB_OBJECT_LIMIT_JOB_READ_BYTES |
             JOB_OBJECT_LIMIT_JOB_WRITE_BYTES |
             JOB_OBJECT_LIMIT_JOB_TIME |
@@ -2455,7 +2455,7 @@ namespace THNETII.WinApi.Native.WinNT
             JOB_OBJECT_LIMIT_JOB_MEMORY_HIGH |
             JOB_OBJECT_LIMIT_CPU_RATE_CONTROL |
             JOB_OBJECT_LIMIT_IO_RATE_CONTROL |
-            JOB_OBJECT_LIMIT_NET_RATE_CONTROL);
+            JOB_OBJECT_LIMIT_NET_RATE_CONTROL;
 
         //
         // UI restrictions for jobs
@@ -2496,7 +2496,7 @@ namespace THNETII.WinApi.Native.WinNT
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 12223
         public const int EVENT_MODIFY_STATE = 0x0002;
-        public const int EVENT_ALL_ACCESS = (STANDARD_RIGHTS_REQUIRED | SYNCHRONIZE | 0x3);
+        public const int EVENT_ALL_ACCESS = STANDARD_RIGHTS_REQUIRED | SYNCHRONIZE | 0x3;
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 12226
         //
@@ -2504,11 +2504,11 @@ namespace THNETII.WinApi.Native.WinNT
         //
         public const int MUTANT_QUERY_STATE = 0x0001;
 
-        public const int MUTANT_ALL_ACCESS = (STANDARD_RIGHTS_REQUIRED | SYNCHRONIZE |
-            MUTANT_QUERY_STATE);
+        public const int MUTANT_ALL_ACCESS = STANDARD_RIGHTS_REQUIRED | SYNCHRONIZE |
+            MUTANT_QUERY_STATE;
 
         public const int SEMAPHORE_MODIFY_STATE = 0x0002;
-        public const int SEMAPHORE_ALL_ACCESS = (STANDARD_RIGHTS_REQUIRED | SYNCHRONIZE | 0x3);
+        public const int SEMAPHORE_ALL_ACCESS = STANDARD_RIGHTS_REQUIRED | SYNCHRONIZE | 0x3;
 
         //
         // Timer Specific Access Rights.
@@ -2517,8 +2517,8 @@ namespace THNETII.WinApi.Native.WinNT
         public const int TIMER_QUERY_STATE = 0x0001;
         public const int TIMER_MODIFY_STATE = 0x0002;
 
-        public const int TIMER_ALL_ACCESS = (STANDARD_RIGHTS_REQUIRED | SYNCHRONIZE |
-            TIMER_QUERY_STATE | TIMER_MODIFY_STATE);
+        public const int TIMER_ALL_ACCESS = STANDARD_RIGHTS_REQUIRED | SYNCHRONIZE |
+            TIMER_QUERY_STATE | TIMER_MODIFY_STATE;
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 12249
         public const int TIME_ZONE_ID_UNKNOWN = 0;
@@ -2622,6 +2622,96 @@ namespace THNETII.WinApi.Native.WinNT
         public const int PF_ARM_V8_CRYPTO_INSTRUCTIONS_AVAILABLE = 30;
         public const int PF_ARM_V8_CRC32_INSTRUCTIONS_AVAILABLE = 31;
         public const int PF_RDTSCP_INSTRUCTION_AVAILABLE = 32;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 12476
+        //
+        // Known extended CPU state feature BITs
+        //
+        // 0    x87
+        // 1    SSE
+        // 2    AVX
+        // 3    BNDREGS (B0.LB-B3.LB B0.UB-B3.UB)
+        // 4    BNDCSR  (BNDCFGU + BNDSTATUS)       Persistent
+        // 5    KMASK   (KMASK [63:0][0-7])
+        // 6    ZMM_H   (ZMM_H[511:256][0-15])
+        // 7    ZMM     (ZMM[511:0][16-31])
+        // 8    IPT                                 Supervisor
+        //
+        // 62   LWP                                 Persistent
+        //
+        // 63   RZ0                                 Reserved
+        //
+
+        public const int XSTATE_LEGACY_FLOATING_POINT = 0;
+        public const int XSTATE_LEGACY_SSE = 1;
+        public const int XSTATE_GSSE = 2;
+        public const int XSTATE_AVX = XSTATE_GSSE;
+        public const int XSTATE_MPX_BNDREGS = 3;
+        public const int XSTATE_MPX_BNDCSR = 4;
+        public const int XSTATE_AVX512_KMASK = 5;
+        public const int XSTATE_AVX512_ZMM_H = 6;
+        public const int XSTATE_AVX512_ZMM = 7;
+        public const int XSTATE_IPT = 8;
+        public const int XSTATE_LWP = 62;
+        public const int MAXIMUM_XSTATE_FEATURES = 64;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 12507
+        //
+        // Known extended CPU state feature MASKs
+        //
+
+        public const ulong XSTATE_MASK_LEGACY_FLOATING_POINT =
+            1UL << (XSTATE_LEGACY_FLOATING_POINT);
+        public const ulong XSTATE_MASK_LEGACY_SSE =
+            1UL << (XSTATE_LEGACY_SSE);
+        public const ulong XSTATE_MASK_LEGACY =
+            XSTATE_MASK_LEGACY_FLOATING_POINT |
+            XSTATE_MASK_LEGACY_SSE;
+
+        public const ulong XSTATE_MASK_GSSE =
+            1UL << (XSTATE_GSSE);
+        public const ulong XSTATE_MASK_AVX =
+            XSTATE_MASK_GSSE;
+        public const ulong XSTATE_MASK_MPX =
+            (1UL << (XSTATE_MPX_BNDREGS)) |
+            (1UL << (XSTATE_MPX_BNDCSR));
+
+        public const ulong XSTATE_MASK_AVX512 =
+            (1UL << (XSTATE_AVX512_KMASK)) |
+            (1UL << (XSTATE_AVX512_ZMM_H)) |
+            (1UL << (XSTATE_AVX512_ZMM));
+
+        public const ulong XSTATE_MASK_IPT = 1UL << (XSTATE_IPT);
+        public const ulong XSTATE_MASK_LWP = 1UL << (XSTATE_LWP);
+
+        public const ulong XSTATE_MASK_ALLOWED =
+            XSTATE_MASK_LEGACY |
+            XSTATE_MASK_AVX |
+            XSTATE_MASK_MPX |
+            XSTATE_MASK_AVX512 |
+            XSTATE_MASK_IPT |
+            XSTATE_MASK_LWP;
+
+        public const ulong XSTATE_MASK_PERSISTENT =
+            (1UL << (XSTATE_MPX_BNDCSR)) |
+            XSTATE_MASK_LWP;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 12538
+        //
+        // Flags associated with compaction mask
+        //
+
+        public const int XSTATE_COMPACTION_ENABLE = 63;
+        public const ulong XSTATE_COMPACTION_ENABLE_MASK =
+            1UL << (XSTATE_COMPACTION_ENABLE);
+
+        public const int XSTATE_ALIGN_BIT = 1;
+        public const ulong XSTATE_ALIGN_MASK = 1UL << (XSTATE_ALIGN_BIT);
+
+        public const ulong XSTATE_CONTROLFLAG_XSAVEOPT_MASK = 1;
+        public const ulong XSTATE_CONTROLFLAG_XSAVEC_MASK = 2;
+        public const ulong XSTATE_CONTROLFLAG_VALID_MASK =
+            XSTATE_CONTROLFLAG_XSAVEOPT_MASK | XSTATE_CONTROLFLAG_XSAVEC_MASK;
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19775
         public const int RTL_UMS_VERSION = 0x0100;

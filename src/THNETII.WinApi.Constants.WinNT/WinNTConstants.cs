@@ -2494,6 +2494,36 @@ namespace THNETII.WinApi.Native.WinNT
         public const int JOB_OBJECT_CPU_RATE_CONTROL_MIN_MAX_RATE = 0x10;
         public const int JOB_OBJECT_CPU_RATE_CONTROL_VALID_FLAGS = 0x1f;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 12223
+        public const int EVENT_MODIFY_STATE = 0x0002;
+        public const int EVENT_ALL_ACCESS = (STANDARD_RIGHTS_REQUIRED | SYNCHRONIZE | 0x3);
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 12226
+        //
+        // Mutant Specific Access Rights
+        //
+        public const int MUTANT_QUERY_STATE = 0x0001;
+
+        public const int MUTANT_ALL_ACCESS = (STANDARD_RIGHTS_REQUIRED | SYNCHRONIZE |
+            MUTANT_QUERY_STATE);
+
+        public const int SEMAPHORE_MODIFY_STATE = 0x0002;
+        public const int SEMAPHORE_ALL_ACCESS = (STANDARD_RIGHTS_REQUIRED | SYNCHRONIZE | 0x3);
+
+        //
+        // Timer Specific Access Rights.
+        //
+
+        public const int TIMER_QUERY_STATE = 0x0001;
+        public const int TIMER_MODIFY_STATE = 0x0002;
+
+        public const int TIMER_ALL_ACCESS = (STANDARD_RIGHTS_REQUIRED | SYNCHRONIZE |
+            TIMER_QUERY_STATE | TIMER_MODIFY_STATE);
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 12249
+        public const int TIME_ZONE_ID_UNKNOWN = 0;
+        public const int TIME_ZONE_ID_STANDARD = 1;
+        public const int TIME_ZONE_ID_DAYLIGHT = 2;
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19775
         public const int RTL_UMS_VERSION = 0x0100;

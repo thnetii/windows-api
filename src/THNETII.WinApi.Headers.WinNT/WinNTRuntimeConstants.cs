@@ -341,6 +341,30 @@ namespace THNETII.WinApi.Native.WinNT
         public static readonly ACCESS_MASK JOB_OBJECT_IMPERSONATE = new ACCESS_MASK(WinNTConstants.JOB_OBJECT_IMPERSONATE);
         public static readonly ACCESS_MASK JOB_OBJECT_ALL_ACCESS = new ACCESS_MASK(WinNTConstants.JOB_OBJECT_ALL_ACCESS);
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 12223
+        public static readonly ACCESS_MASK EVENT_MODIFY_STATE = new ACCESS_MASK(WinNTConstants.EVENT_MODIFY_STATE);
+        public static readonly ACCESS_MASK EVENT_ALL_ACCESS = new ACCESS_MASK(WinNTConstants.EVENT_ALL_ACCESS);
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 12223
+        //
+        // Mutant Specific Access Rights
+        //
+        public static readonly ACCESS_MASK MUTANT_QUERY_STATE = new ACCESS_MASK(WinNTConstants.MUTANT_QUERY_STATE);
+
+        public static readonly ACCESS_MASK MUTANT_ALL_ACCESS = new ACCESS_MASK(WinNTConstants.MUTANT_ALL_ACCESS);
+
+        public static readonly ACCESS_MASK SEMAPHORE_MODIFY_STATE = new ACCESS_MASK(WinNTConstants.SEMAPHORE_MODIFY_STATE);
+        public static readonly ACCESS_MASK SEMAPHORE_ALL_ACCESS = new ACCESS_MASK(WinNTConstants.SEMAPHORE_ALL_ACCESS);
+
+        //
+        // Timer Specific Access Rights.
+        //
+
+        public static readonly ACCESS_MASK TIMER_QUERY_STATE = new ACCESS_MASK(WinNTConstants.TIMER_QUERY_STATE);
+        public static readonly ACCESS_MASK TIMER_MODIFY_STATE = new ACCESS_MASK(WinNTConstants.TIMER_MODIFY_STATE);
+
+        public static readonly ACCESS_MASK TIMER_ALL_ACCESS = new ACCESS_MASK(WinNTConstants.TIMER_ALL_ACCESS);
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 13566
         //
         // Object Manager Symbolic Link Specific Access Rights.
@@ -348,6 +372,5 @@ namespace THNETII.WinApi.Native.WinNT
 
         public static readonly ACCESS_MASK DUPLICATE_CLOSE_SOURCE = new ACCESS_MASK(WinNTConstants.DUPLICATE_CLOSE_SOURCE);
         public static readonly ACCESS_MASK DUPLICATE_SAME_ACCESS = new ACCESS_MASK(WinNTConstants.DUPLICATE_SAME_ACCESS);
-
     }
 }

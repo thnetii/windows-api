@@ -2806,6 +2806,9 @@ namespace THNETII.WinApi.Native.WinNT
         public const int MEM_RELEASE = 0x00008000;
         public const int MEM_FREE = 0x00010000;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 12745
+        public const int MEM_EXTENDED_PARAMETER_TYPE_BITS = 8;
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 12764
         public const int SEC_PARTITION_OWNER_HANDLE = 0x00040000;
         public const int SEC_64K_PAGES = 0x00080000;

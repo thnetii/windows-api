@@ -2830,6 +2830,12 @@ namespace THNETII.WinApi.Native.WinNT
         public const int ENCLAVE_TYPE_SGX = 0x00000001;
         public const int ENCLAVE_TYPE_SGX2 = 0x00000002;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 12794
+        public const int ENCLAVE_TYPE_VBS = 0x00000010;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 12801
+        public const int ENCLAVE_VBS_FLAG_DEBUG = 0x00000001;
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19775
         public const int RTL_UMS_VERSION = 0x0100;
     }

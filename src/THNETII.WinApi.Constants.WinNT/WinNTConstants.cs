@@ -2531,6 +2531,98 @@ namespace THNETII.WinApi.Native.WinNT
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 12273
         public const int CACHE_FULLY_ASSOCIATIVE = 0xFF;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 12400
+        public const int PROCESSOR_INTEL_386 = 386;
+        public const int PROCESSOR_INTEL_486 = 486;
+        public const int PROCESSOR_INTEL_PENTIUM = 586;
+        public const int PROCESSOR_INTEL_IA64 = 2200;
+        public const int PROCESSOR_AMD_X8664 = 8664;
+        /// <summary>incl R4101 &amp; R3910 for Windows CE</summary>
+        public const int PROCESSOR_MIPS_R4000 = 4000;
+        public const int PROCESSOR_ALPHA_21064 = 21064;
+        public const int PROCESSOR_PPC_601 = 601;
+        public const int PROCESSOR_PPC_603 = 603;
+        public const int PROCESSOR_PPC_604 = 604;
+        public const int PROCESSOR_PPC_620 = 620;
+        /// <summary>Windows CE</summary>
+        public const int PROCESSOR_HITACHI_SH3 = 10003;
+        /// <summary>Windows CE</summary>
+        public const int PROCESSOR_HITACHI_SH3E = 10004;
+        /// <summary>Windows CE</summary>
+        public const int PROCESSOR_HITACHI_SH4 = 10005;
+        /// <summary>Windows CE</summary>
+        public const int PROCESSOR_MOTOROLA_821 = 821;
+        /// <summary>Windows CE</summary>
+        public const int PROCESSOR_SHx_SH3 = 103;
+        /// <summary>Windows CE</summary>
+        public const int PROCESSOR_SHx_SH4 = 104;
+        /// <summary>Windows CE - 0xA11</summary>
+        public const int PROCESSOR_STRONGARM = 2577;
+        /// <summary>Windows CE - 0x720</summary>
+        public const int PROCESSOR_ARM720 = 1824;
+        /// <summary>Windows CE - 0x820</summary>
+        public const int PROCESSOR_ARM820 = 2080;
+        /// <summary>Windows CE - 0x920</summary>
+        public const int PROCESSOR_ARM920 = 2336;
+        /// <summary>Windows CE</summary>
+        public const int PROCESSOR_ARM_7TDMI = 70001;
+        /// <summary>MSIL</summary>
+        public const int PROCESSOR_OPTIL = 0x494f;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 12424
+        public const int PROCESSOR_ARCHITECTURE_INTEL = 0;
+        public const int PROCESSOR_ARCHITECTURE_MIPS = 1;
+        public const int PROCESSOR_ARCHITECTURE_ALPHA = 2;
+        public const int PROCESSOR_ARCHITECTURE_PPC = 3;
+        public const int PROCESSOR_ARCHITECTURE_SHX = 4;
+        public const int PROCESSOR_ARCHITECTURE_ARM = 5;
+        public const int PROCESSOR_ARCHITECTURE_IA64 = 6;
+        public const int PROCESSOR_ARCHITECTURE_ALPHA64 = 7;
+        public const int PROCESSOR_ARCHITECTURE_MSIL = 8;
+        public const int PROCESSOR_ARCHITECTURE_AMD64 = 9;
+        public const int PROCESSOR_ARCHITECTURE_IA32_ON_WIN64 = 10;
+        public const int PROCESSOR_ARCHITECTURE_NEUTRAL = 11;
+        public const int PROCESSOR_ARCHITECTURE_ARM64 = 12;
+        public const int PROCESSOR_ARCHITECTURE_ARM32_ON_WIN64 = 13;
+        public const int PROCESSOR_ARCHITECTURE_IA32_ON_ARM64 = 14;
+
+        public const int PROCESSOR_ARCHITECTURE_UNKNOWN = 0xFFFF;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 12442
+        public const int PF_FLOATING_POINT_PRECISION_ERRATA = 0;
+        public const int PF_FLOATING_POINT_EMULATED = 1;
+        public const int PF_COMPARE_EXCHANGE_DOUBLE = 2;
+        public const int PF_MMX_INSTRUCTIONS_AVAILABLE = 3;
+        public const int PF_PPC_MOVEMEM_64BIT_OK = 4;
+        public const int PF_ALPHA_BYTE_INSTRUCTIONS = 5;
+        public const int PF_XMMI_INSTRUCTIONS_AVAILABLE = 6;
+        public const int PF_3DNOW_INSTRUCTIONS_AVAILABLE = 7;
+        public const int PF_RDTSC_INSTRUCTION_AVAILABLE = 8;
+        public const int PF_PAE_ENABLED = 9;
+        public const int PF_XMMI64_INSTRUCTIONS_AVAILABLE = 10;
+        public const int PF_SSE_DAZ_MODE_AVAILABLE = 11;
+        public const int PF_NX_ENABLED = 12;
+        public const int PF_SSE3_INSTRUCTIONS_AVAILABLE = 13;
+        public const int PF_COMPARE_EXCHANGE128 = 14;
+        public const int PF_COMPARE64_EXCHANGE128 = 15;
+        public const int PF_CHANNELS_ENABLED = 16;
+        public const int PF_XSAVE_ENABLED = 17;
+        public const int PF_ARM_VFP_32_REGISTERS_AVAILABLE = 18;
+        public const int PF_ARM_NEON_INSTRUCTIONS_AVAILABLE = 19;
+        public const int PF_SECOND_LEVEL_ADDRESS_TRANSLATION = 20;
+        public const int PF_VIRT_FIRMWARE_ENABLED = 21;
+        public const int PF_RDWRFSGSBASE_AVAILABLE = 22;
+        public const int PF_FASTFAIL_AVAILABLE = 23;
+        public const int PF_ARM_DIVIDE_INSTRUCTION_AVAILABLE = 24;
+        public const int PF_ARM_64BIT_LOADSTORE_ATOMIC = 25;
+        public const int PF_ARM_EXTERNAL_CACHE_AVAILABLE = 26;
+        public const int PF_ARM_FMAC_INSTRUCTIONS_AVAILABLE = 27;
+        public const int PF_RDRAND_INSTRUCTION_AVAILABLE = 28;
+        public const int PF_ARM_V8_INSTRUCTIONS_AVAILABLE = 29;
+        public const int PF_ARM_V8_CRYPTO_INSTRUCTIONS_AVAILABLE = 30;
+        public const int PF_ARM_V8_CRC32_INSTRUCTIONS_AVAILABLE = 31;
+        public const int PF_RDTSCP_INSTRUCTION_AVAILABLE = 32;
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19775
         public const int RTL_UMS_VERSION = 0x0100;
     }

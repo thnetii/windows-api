@@ -46,7 +46,7 @@ namespace THNETII.WinApi.Native.WinNT
         public Span<int> ObjectId => MemoryMarshal.Cast<DUMMSTRUCTNAME, int>(SpanOverRef.GetSpan(ref s));
         #endregion
 
-        #region public int[] Reserved = new int[4];
+        #region public int[] Reserved = new int[13];
         [StructLayout(LayoutKind.Explicit, Size = sizeof(int) * 13)]
         private struct DUMMSTRUCTNAME2 { }
         private DUMMSTRUCTNAME2 s2;

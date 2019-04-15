@@ -80,7 +80,7 @@ namespace THNETII.WinApi.Native.WinNT
         /// <summary>
         /// The identifier tag of a reparse point for the directory or file.
         /// </summary>
-        public int ReparsePointTag;
+        public REPARSE_TAG ReparsePointTag;
         /// <summary>
         /// The identifier of the directory or file.
         /// </summary>

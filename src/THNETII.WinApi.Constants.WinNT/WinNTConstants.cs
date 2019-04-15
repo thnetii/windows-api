@@ -3019,6 +3019,73 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public const int FLUSH_FLAGS_FILE_DATA_SYNC_ONLY = 0x00000004;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 13080
+        /// <summary>
+        /// Maximum allowed size of the reparse data.
+        /// </summary>
+        public const int MAXIMUM_REPARSE_DATA_BUFFER_SIZE = 16 * 1024;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 13086
+        //
+        // Predefined reparse tags.
+        // These tags need to avoid conflicting with IO_REMOUNT defined in ntos\inc\io.h
+        //
+
+        public const int IO_REPARSE_TAG_RESERVED_ZERO = 0;
+        public const int IO_REPARSE_TAG_RESERVED_ONE = 1;
+        public const int IO_REPARSE_TAG_RESERVED_TWO = 2;
+
+        //
+        // The value of the following constant needs to satisfy the following conditions:
+        //  (1) Be at least as large as the largest of the reserved tags.
+        //  (2) Be strictly smaller than all the tags in use.
+        //
+
+        public const int IO_REPARSE_TAG_RESERVED_RANGE = IO_REPARSE_TAG_RESERVED_TWO;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 13156
+        public const int IO_REPARSE_TAG_MOUNT_POINT = unchecked((int)0xA0000003L);
+        public const int IO_REPARSE_TAG_HSM = unchecked((int)0xC0000004L);
+        public const int IO_REPARSE_TAG_HSM2 = unchecked((int)0x80000006L);
+        public const int IO_REPARSE_TAG_SIS = unchecked((int)0x80000007L);
+        public const int IO_REPARSE_TAG_WIM = unchecked((int)0x80000008L);
+        public const int IO_REPARSE_TAG_CSV = unchecked((int)0x80000009L);
+        public const int IO_REPARSE_TAG_DFS = unchecked((int)0x8000000AL);
+        public const int IO_REPARSE_TAG_SYMLINK = unchecked((int)0xA000000CL);
+        public const int IO_REPARSE_TAG_DFSR = unchecked((int)0x80000012L);
+        public const int IO_REPARSE_TAG_DEDUP = unchecked((int)0x80000013L);
+        public const int IO_REPARSE_TAG_NFS = unchecked((int)0x80000014L);
+        public const int IO_REPARSE_TAG_FILE_PLACEHOLDER = unchecked((int)0x80000015L);
+        public const int IO_REPARSE_TAG_WOF = unchecked((int)0x80000017L);
+        public const int IO_REPARSE_TAG_WCI = unchecked((int)0x80000018L);
+        public const int IO_REPARSE_TAG_WCI_1 = unchecked((int)0x90001018L);
+        public const int IO_REPARSE_TAG_GLOBAL_REPARSE = unchecked((int)0xA0000019L);
+        public const int IO_REPARSE_TAG_CLOUD = unchecked((int)0x9000001AL);
+        public const int IO_REPARSE_TAG_CLOUD_1 = unchecked((int)0x9000101AL);
+        public const int IO_REPARSE_TAG_CLOUD_2 = unchecked((int)0x9000201AL);
+        public const int IO_REPARSE_TAG_CLOUD_3 = unchecked((int)0x9000301AL);
+        public const int IO_REPARSE_TAG_CLOUD_4 = unchecked((int)0x9000401AL);
+        public const int IO_REPARSE_TAG_CLOUD_5 = unchecked((int)0x9000501AL);
+        public const int IO_REPARSE_TAG_CLOUD_6 = unchecked((int)0x9000601AL);
+        public const int IO_REPARSE_TAG_CLOUD_7 = unchecked((int)0x9000701AL);
+        public const int IO_REPARSE_TAG_CLOUD_8 = unchecked((int)0x9000801AL);
+        public const int IO_REPARSE_TAG_CLOUD_9 = unchecked((int)0x9000901AL);
+        public const int IO_REPARSE_TAG_CLOUD_A = unchecked((int)0x9000A01AL);
+        public const int IO_REPARSE_TAG_CLOUD_B = unchecked((int)0x9000B01AL);
+        public const int IO_REPARSE_TAG_CLOUD_C = unchecked((int)0x9000C01AL);
+        public const int IO_REPARSE_TAG_CLOUD_D = unchecked((int)0x9000D01AL);
+        public const int IO_REPARSE_TAG_CLOUD_E = unchecked((int)0x9000E01AL);
+        public const int IO_REPARSE_TAG_CLOUD_F = unchecked((int)0x9000F01AL);
+        public const int IO_REPARSE_TAG_CLOUD_MASK = 0x0000F000;
+        public const int IO_REPARSE_TAG_APPEXECLINK = unchecked((int)0x8000001BL);
+        public const int IO_REPARSE_TAG_PROJFS = unchecked((int)0x9000001CL);
+        public const int IO_REPARSE_TAG_STORAGE_SYNC = unchecked((int)0x8000001EL);
+        public const int IO_REPARSE_TAG_WCI_TOMBSTONE = unchecked((int)0xA000001FL);
+        public const int IO_REPARSE_TAG_UNHANDLED = unchecked((int)0x80000020L);
+        public const int IO_REPARSE_TAG_ONEDRIVE = unchecked((int)0x80000021L);
+        public const int IO_REPARSE_TAG_PROJFS_TOMBSTONE = unchecked((int)0xA0000022L);
+        public const int IO_REPARSE_TAG_AF_UNIX = unchecked((int)0x80000023L);
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19775
         public const int RTL_UMS_VERSION = 0x0100;
     }

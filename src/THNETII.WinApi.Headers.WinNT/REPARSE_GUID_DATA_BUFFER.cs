@@ -4,6 +4,8 @@ using THNETII.InteropServices.Runtime;
 
 namespace THNETII.WinApi.Native.WinNT
 {
+    using static WinNTConstants;
+
     // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 13060
     /// <summary>
     /// The reparse GUID structure is used by all 3rd party layered drivers to
@@ -20,6 +22,6 @@ namespace THNETII.WinApi.Native.WinNT
         public short Reserved;
         public Guid ReparseGuid;
         internal byte DataBufferField;
-        public Span<byte> DataBuffer => SpanOverRef.GetSpan(ref DataBufferField, ReparseDataLength);
+        public Span<byte> DataBuffer => SpanOverRef.GetSpan(ref DataBufferField, Math.Min((ushort)ReparseDataLength, (ushort)MAXIMUM_REPARSE_DATA_BUFFER_SIZE));
     }
 }

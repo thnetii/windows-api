@@ -35,12 +35,36 @@ namespace THNETII.WinApi.Native.WinNT
             this.value = value;
         }
 
+        /// <summary>
+        /// Whether the Microsoft bit is set. When set, it denotes a tag owned
+        /// by Microsoft.
+        /// <para>All ISVs must use a tag with this bit set to <see langword="false"/>.</para>
+        /// <note>If a Microsoft tag is used by non-Microsoft software, the behavior is not defined.</note>
+        /// </summary>
         public bool IsMicrosoftTag => MBitfield.Read(value) != 0;
 
+        /// <summary>
+        /// Reserved. Must be <see langword="false"/> for non-Microsoft tags.
+        /// </summary>
         public bool IsReservedTag => RBitfield.Read(value) != 0;
 
+        /// <summary>
+        /// Whether the tag is a name surrogate.
+        /// <para>
+        /// When set to <see langword="true"/>, the file represents another named
+        /// entity in the system.
+        /// </para>
+        /// </summary>
         public bool IsNameSurrogate => NBitfield.Read(value) != 0;
 
+        /// <summary>
+        /// Whether the tag is a directory.
+        /// <para>
+        /// When set to <see langword="true"/>, indicates that any directory
+        /// with this reparse tag can have children. Has no special meaning when used
+        /// on a non-directory file. Not compatible with the name surrogate bit.
+        /// </para>
+        /// </summary>
         public bool IsDirectory => DBitfield.Read(value) != 0;
 
         public int ReservedBits => (int)ReservedBitfield.Read(value);

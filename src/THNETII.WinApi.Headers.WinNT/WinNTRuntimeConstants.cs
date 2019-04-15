@@ -512,6 +512,69 @@ namespace THNETII.WinApi.Native.WinNT
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 13078
         public static readonly int REPARSE_GUID_DATA_BUFFER_HEADER_SIZE = Marshal.OffsetOf<REPARSE_GUID_DATA_BUFFER>(nameof(REPARSE_GUID_DATA_BUFFER.DataBufferField)).ToInt32();
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 13086
+        //
+        // Predefined reparse tags.
+        // These tags need to avoid conflicting with IO_REMOUNT defined in ntos\inc\io.h
+        //
+
+        public static readonly REPARSE_TAG IO_REPARSE_TAG_RESERVED_ZERO =
+    WinNTConstants.IO_REPARSE_TAG_RESERVED_ZERO;
+        public static readonly REPARSE_TAG IO_REPARSE_TAG_RESERVED_ONE =
+            WinNTConstants.IO_REPARSE_TAG_RESERVED_ONE;
+        public static readonly REPARSE_TAG IO_REPARSE_TAG_RESERVED_TWO =
+            WinNTConstants.IO_REPARSE_TAG_RESERVED_TWO;
+
+        /// <summary>
+        /// The value of the following constant needs to satisfy the following conditions:
+        /// (1) Be at least as large as the largest of the reserved tags.
+        /// (2) Be strictly smaller than all the tags in use.
+        /// </summary>
+        public static readonly REPARSE_TAG IO_REPARSE_TAG_RESERVED_RANGE =
+            WinNTConstants.IO_REPARSE_TAG_RESERVED_RANGE;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 13156
+        public static readonly REPARSE_TAG IO_REPARSE_TAG_MOUNT_POINT = WinNTConstants.IO_REPARSE_TAG_MOUNT_POINT;
+        public static readonly REPARSE_TAG IO_REPARSE_TAG_HSM = WinNTConstants.IO_REPARSE_TAG_HSM;
+        public static readonly REPARSE_TAG IO_REPARSE_TAG_HSM2 = WinNTConstants.IO_REPARSE_TAG_HSM2;
+        public static readonly REPARSE_TAG IO_REPARSE_TAG_SIS = WinNTConstants.IO_REPARSE_TAG_SIS;
+        public static readonly REPARSE_TAG IO_REPARSE_TAG_WIM = WinNTConstants.IO_REPARSE_TAG_WIM;
+        public static readonly REPARSE_TAG IO_REPARSE_TAG_CSV = WinNTConstants.IO_REPARSE_TAG_CSV;
+        public static readonly REPARSE_TAG IO_REPARSE_TAG_DFS = WinNTConstants.IO_REPARSE_TAG_DFS;
+        public static readonly REPARSE_TAG IO_REPARSE_TAG_SYMLINK = WinNTConstants.IO_REPARSE_TAG_SYMLINK;
+        public static readonly REPARSE_TAG IO_REPARSE_TAG_DFSR = WinNTConstants.IO_REPARSE_TAG_DFSR;
+        public static readonly REPARSE_TAG IO_REPARSE_TAG_DEDUP = WinNTConstants.IO_REPARSE_TAG_DEDUP;
+        public static readonly REPARSE_TAG IO_REPARSE_TAG_NFS = WinNTConstants.IO_REPARSE_TAG_NFS;
+        public static readonly REPARSE_TAG IO_REPARSE_TAG_FILE_PLACEHOLDER = WinNTConstants.IO_REPARSE_TAG_FILE_PLACEHOLDER;
+        public static readonly REPARSE_TAG IO_REPARSE_TAG_WOF = WinNTConstants.IO_REPARSE_TAG_WOF;
+        public static readonly REPARSE_TAG IO_REPARSE_TAG_WCI = WinNTConstants.IO_REPARSE_TAG_WCI;
+        public static readonly REPARSE_TAG IO_REPARSE_TAG_WCI_1 = WinNTConstants.IO_REPARSE_TAG_WCI_1;
+        public static readonly REPARSE_TAG IO_REPARSE_TAG_GLOBAL_REPARSE = WinNTConstants.IO_REPARSE_TAG_GLOBAL_REPARSE;
+        public static readonly REPARSE_TAG IO_REPARSE_TAG_CLOUD = WinNTConstants.IO_REPARSE_TAG_CLOUD;
+        public static readonly REPARSE_TAG IO_REPARSE_TAG_CLOUD_1 = WinNTConstants.IO_REPARSE_TAG_CLOUD_1;
+        public static readonly REPARSE_TAG IO_REPARSE_TAG_CLOUD_2 = WinNTConstants.IO_REPARSE_TAG_CLOUD_2;
+        public static readonly REPARSE_TAG IO_REPARSE_TAG_CLOUD_3 = WinNTConstants.IO_REPARSE_TAG_CLOUD_3;
+        public static readonly REPARSE_TAG IO_REPARSE_TAG_CLOUD_4 = WinNTConstants.IO_REPARSE_TAG_CLOUD_4;
+        public static readonly REPARSE_TAG IO_REPARSE_TAG_CLOUD_5 = WinNTConstants.IO_REPARSE_TAG_CLOUD_5;
+        public static readonly REPARSE_TAG IO_REPARSE_TAG_CLOUD_6 = WinNTConstants.IO_REPARSE_TAG_CLOUD_6;
+        public static readonly REPARSE_TAG IO_REPARSE_TAG_CLOUD_7 = WinNTConstants.IO_REPARSE_TAG_CLOUD_7;
+        public static readonly REPARSE_TAG IO_REPARSE_TAG_CLOUD_8 = WinNTConstants.IO_REPARSE_TAG_CLOUD_8;
+        public static readonly REPARSE_TAG IO_REPARSE_TAG_CLOUD_9 = WinNTConstants.IO_REPARSE_TAG_CLOUD_9;
+        public static readonly REPARSE_TAG IO_REPARSE_TAG_CLOUD_A = WinNTConstants.IO_REPARSE_TAG_CLOUD_A;
+        public static readonly REPARSE_TAG IO_REPARSE_TAG_CLOUD_B = WinNTConstants.IO_REPARSE_TAG_CLOUD_B;
+        public static readonly REPARSE_TAG IO_REPARSE_TAG_CLOUD_C = WinNTConstants.IO_REPARSE_TAG_CLOUD_C;
+        public static readonly REPARSE_TAG IO_REPARSE_TAG_CLOUD_D = WinNTConstants.IO_REPARSE_TAG_CLOUD_D;
+        public static readonly REPARSE_TAG IO_REPARSE_TAG_CLOUD_E = WinNTConstants.IO_REPARSE_TAG_CLOUD_E;
+        public static readonly REPARSE_TAG IO_REPARSE_TAG_CLOUD_F = WinNTConstants.IO_REPARSE_TAG_CLOUD_F;
+        public static readonly REPARSE_TAG IO_REPARSE_TAG_APPEXECLINK = WinNTConstants.IO_REPARSE_TAG_APPEXECLINK;
+        public static readonly REPARSE_TAG IO_REPARSE_TAG_PROJFS = WinNTConstants.IO_REPARSE_TAG_PROJFS;
+        public static readonly REPARSE_TAG IO_REPARSE_TAG_STORAGE_SYNC = WinNTConstants.IO_REPARSE_TAG_STORAGE_SYNC;
+        public static readonly REPARSE_TAG IO_REPARSE_TAG_WCI_TOMBSTONE = WinNTConstants.IO_REPARSE_TAG_WCI_TOMBSTONE;
+        public static readonly REPARSE_TAG IO_REPARSE_TAG_UNHANDLED = WinNTConstants.IO_REPARSE_TAG_UNHANDLED;
+        public static readonly REPARSE_TAG IO_REPARSE_TAG_ONEDRIVE = WinNTConstants.IO_REPARSE_TAG_ONEDRIVE;
+        public static readonly REPARSE_TAG IO_REPARSE_TAG_PROJFS_TOMBSTONE = WinNTConstants.IO_REPARSE_TAG_PROJFS_TOMBSTONE;
+        public static readonly REPARSE_TAG IO_REPARSE_TAG_AF_UNIX = WinNTConstants.IO_REPARSE_TAG_AF_UNIX;
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 13566
         //
         // Object Manager Symbolic Link Specific Access Rights.

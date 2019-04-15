@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using THNETII.InteropServices.NativeMemory;
 
@@ -507,6 +508,9 @@ namespace THNETII.WinApi.Native.WinNT
         public const NotifyFilters FILE_NOTIFY_CHANGE_LAST_ACCESS = (NotifyFilters)WinNTConstants.FILE_NOTIFY_CHANGE_LAST_ACCESS;
         public const NotifyFilters FILE_NOTIFY_CHANGE_CREATION = (NotifyFilters)WinNTConstants.FILE_NOTIFY_CHANGE_CREATION;
         public const NotifyFilters FILE_NOTIFY_CHANGE_SECURITY = (NotifyFilters)WinNTConstants.FILE_NOTIFY_CHANGE_SECURITY;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 13078
+        public static readonly int REPARSE_GUID_DATA_BUFFER_HEADER_SIZE = Marshal.OffsetOf<REPARSE_GUID_DATA_BUFFER>(nameof(REPARSE_GUID_DATA_BUFFER.DataBufferField)).ToInt32();
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 13566
         //

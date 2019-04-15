@@ -2836,6 +2836,62 @@ namespace THNETII.WinApi.Native.WinNT
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 12801
         public const int ENCLAVE_VBS_FLAG_DEBUG = 0x00000001;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 12819
+        //
+        // Define access rights to files and directories
+        //
+
+        //
+        // The FILE_READ_DATA and FILE_WRITE_DATA constants are also defined in
+        // devioctl.h as FILE_READ_ACCESS and FILE_WRITE_ACCESS. The values for these
+        // constants *MUST* always be in sync.
+        // The values are redefined in devioctl.h because they must be available to
+        // both DOS and NT.
+        //
+
+        public const int FILE_READ_DATA = 0x0001;    // file & pipe
+        public const int FILE_LIST_DIRECTORY = 0x0001;    // directory
+
+        public const int FILE_WRITE_DATA = 0x0002;    // file & pipe
+        public const int FILE_ADD_FILE = 0x0002;    // directory
+
+        public const int FILE_APPEND_DATA = 0x0004;    // file
+        public const int FILE_ADD_SUBDIRECTORY = 0x0004;    // directory
+        public const int FILE_CREATE_PIPE_INSTANCE = 0x0004;    // named pipe
+
+
+        public const int FILE_READ_EA = 0x0008;    // file & directory
+
+        public const int FILE_WRITE_EA = 0x0010;    // file & directory
+
+        public const int FILE_EXECUTE = 0x0020;    // file
+        public const int FILE_TRAVERSE = 0x0020;    // directory
+
+        public const int FILE_DELETE_CHILD = 0x0040;    // directory
+
+        public const int FILE_READ_ATTRIBUTES = 0x0080;    // all
+
+        public const int FILE_WRITE_ATTRIBUTES = 0x0100;    // all
+
+        public const int FILE_ALL_ACCESS = STANDARD_RIGHTS_REQUIRED | SYNCHRONIZE | 0x1FF;
+
+        public const int FILE_GENERIC_READ = STANDARD_RIGHTS_READ
+                                             | FILE_READ_DATA
+                                             | FILE_READ_ATTRIBUTES
+                                             | FILE_READ_EA
+                                             | SYNCHRONIZE;
+
+
+        public const int FILE_GENERIC_WRITE = STANDARD_RIGHTS_WRITE
+                                              | FILE_WRITE_DATA
+                                              | FILE_WRITE_ATTRIBUTES
+                                              | FILE_WRITE_EA
+                                              | FILE_APPEND_DATA
+                                              | SYNCHRONIZE;
+
+
+        public const int FILE_GENERIC_EXECUTE = STANDARD_RIGHTS_EXECUTE | FILE_READ_ATTRIBUTES | FILE_EXECUTE | SYNCHRONIZE;
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19775
         public const int RTL_UMS_VERSION = 0x0100;
     }

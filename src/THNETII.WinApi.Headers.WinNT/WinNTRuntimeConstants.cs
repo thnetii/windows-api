@@ -386,6 +386,91 @@ namespace THNETII.WinApi.Native.WinNT
 
         public static readonly ACCESS_MASK SESSION_ALL_ACCESS = new ACCESS_MASK(WinNTConstants.SESSION_ALL_ACCESS);
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 12819
+        //
+        // Define access rights to files and directories
+        //
+
+        //
+        // The FILE_READ_DATA and FILE_WRITE_DATA constants are also defined in
+        // devioctl.h as FILE_READ_ACCESS and FILE_WRITE_ACCESS. The values for these
+        // constants *MUST* always be in sync.
+        // The values are redefined in devioctl.h because they must be available to
+        // both DOS and NT.
+        //
+
+        /// <summary>
+        /// Grants the right to read data from the file.
+        /// </summary>
+        public static readonly ACCESS_MASK FILE_READ_DATA = new ACCESS_MASK(WinNTConstants.FILE_READ_DATA);
+        /// <summary>
+        /// Grants the right to read data from the file. For a directory, this value grants the right to list the contents of the directory.
+        /// </summary>
+        public static readonly ACCESS_MASK FILE_LIST_DIRECTORY = new ACCESS_MASK(WinNTConstants.FILE_LIST_DIRECTORY);
+
+        /// <summary>
+        /// Grants the right to write data to the file.
+        /// </summary>
+        public static readonly ACCESS_MASK FILE_WRITE_DATA = new ACCESS_MASK(WinNTConstants.FILE_WRITE_DATA);
+        /// <summary>
+        /// Grants the right to write data to the file. For a directory, this value grants the right to create a file in the directory.
+        /// </summary>
+        public static readonly ACCESS_MASK FILE_ADD_FILE = new ACCESS_MASK(WinNTConstants.FILE_ADD_FILE);
+
+        /// <summary>
+        /// Grants the right to append data to the file. For a directory, this value grants the right to create a subdirectory.
+        /// </summary>
+        public static readonly ACCESS_MASK FILE_APPEND_DATA = new ACCESS_MASK(WinNTConstants.FILE_APPEND_DATA);
+        /// <summary>
+        /// Grants the right to append data to the file. For a directory, this value grants the right to create a subdirectory.
+        /// </summary>
+        public static readonly ACCESS_MASK FILE_ADD_SUBDIRECTORY = new ACCESS_MASK(WinNTConstants.FILE_ADD_SUBDIRECTORY);
+        public static readonly ACCESS_MASK FILE_CREATE_PIPE_INSTANCE = new ACCESS_MASK(WinNTConstants.FILE_CREATE_PIPE_INSTANCE);
+
+        /// <summary>
+        /// Grants the right to read extended attributes.
+        /// </summary>
+        public static readonly ACCESS_MASK FILE_READ_EA = new ACCESS_MASK(WinNTConstants.FILE_READ_EA);
+
+        /// <summary>
+        /// Grants the right to write extended attributes.
+        /// </summary>
+        public static readonly ACCESS_MASK FILE_WRITE_EA = new ACCESS_MASK(WinNTConstants.FILE_WRITE_EA);
+
+        /// <summary>
+        /// Grants the right to execute a file.
+        /// </summary>
+        public static readonly ACCESS_MASK FILE_EXECUTE = new ACCESS_MASK(WinNTConstants.FILE_EXECUTE);
+        /// <summary>
+        /// Grants the right to execute a file. For a directory, the directory can be traversed.
+        /// </summary>
+        public static readonly ACCESS_MASK FILE_TRAVERSE = new ACCESS_MASK(WinNTConstants.FILE_TRAVERSE);
+
+        /// <summary>
+        /// Grants the right to delete a directory and all the files it contains (its children), even if the files are read-only.
+        /// </summary>
+        public static readonly ACCESS_MASK FILE_DELETE_CHILD = new ACCESS_MASK(WinNTConstants.FILE_DELETE_CHILD);
+
+        /// <summary>
+        /// Grants the right to read file attributes.
+        /// </summary>
+        public static readonly ACCESS_MASK FILE_READ_ATTRIBUTES = new ACCESS_MASK(WinNTConstants.FILE_READ_ATTRIBUTES);
+
+        /// <summary>
+        /// Grants the right to change file attributes.
+        /// </summary>
+        public static readonly ACCESS_MASK FILE_WRITE_ATTRIBUTES = new ACCESS_MASK(WinNTConstants.FILE_WRITE_ATTRIBUTES);
+
+        public static readonly ACCESS_MASK FILE_ALL_ACCESS = new ACCESS_MASK(WinNTConstants.FILE_ALL_ACCESS);
+
+        public static readonly ACCESS_MASK FILE_GENERIC_READ = new ACCESS_MASK(WinNTConstants.FILE_GENERIC_READ);
+
+
+        public static readonly ACCESS_MASK FILE_GENERIC_WRITE = new ACCESS_MASK(WinNTConstants.FILE_GENERIC_WRITE);
+
+
+        public static readonly ACCESS_MASK FILE_GENERIC_EXECUTE = new ACCESS_MASK(WinNTConstants.FILE_GENERIC_EXECUTE);
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 13566
         //
         // Object Manager Symbolic Link Specific Access Rights.

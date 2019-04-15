@@ -3086,6 +3086,22 @@ namespace THNETII.WinApi.Native.WinNT
         public const int IO_REPARSE_TAG_PROJFS_TOMBSTONE = unchecked((int)0xA0000022L);
         public const int IO_REPARSE_TAG_AF_UNIX = unchecked((int)0x80000023L);
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 13200
+        //======================= FSCTL_SCRUB_DATA =============================
+
+        public const int SCRUB_DATA_INPUT_FLAG_RESUME = 0x00000001;
+        public const int SCRUB_DATA_INPUT_FLAG_SKIP_IN_SYNC = 0x00000002;
+        public const int SCRUB_DATA_INPUT_FLAG_SKIP_NON_INTEGRITY_DATA = 0x00000004;
+        public const int SCRUB_DATA_INPUT_FLAG_IGNORE_REDUNDANCY = 0x00000008;
+        public const int SCRUB_DATA_INPUT_FLAG_SKIP_DATA = 0x00000010;
+        public const int SCRUB_DATA_INPUT_FLAG_SCRUB_BY_OBJECT_ID = 0x00000020;
+
+        public const int SCRUB_DATA_OUTPUT_FLAG_INCOMPLETE = 0x00000001;
+
+        public const int SCRUB_DATA_OUTPUT_FLAG_NON_USER_DATA_RANGE = 0x00010000;
+        public const int SCRUB_DATA_OUTPUT_FLAG_PARITY_EXTENT_DATA_RETURNED = 0x00020000;
+        public const int SCRUB_DATA_OUTPUT_FLAG_RESUME_CONTEXT_LENGTH_SPECIFIED = 0x00040000;
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19775
         public const int RTL_UMS_VERSION = 0x0100;
     }

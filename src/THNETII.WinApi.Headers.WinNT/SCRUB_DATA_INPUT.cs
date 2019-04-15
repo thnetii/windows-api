@@ -7,7 +7,7 @@ using THNETII.InteropServices.Runtime;
 
 namespace THNETII.WinApi.Native.WinNT
 {
-    using static FSCTL_SCRUB_DATA_INPUT_FLAGS;
+    using static SCRUB_DATA_INPUT_FLAGS;
 
     // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 13217
     [StructLayout(LayoutKind.Sequential)]
@@ -26,7 +26,7 @@ namespace THNETII.WinApi.Native.WinNT
         /// <see cref="ResumeContext"/> is provided from the previous call
         /// </para> 
         /// </summary>
-        public FSCTL_SCRUB_DATA_INPUT_FLAGS Flags;
+        public SCRUB_DATA_INPUT_FLAGS Flags;
 
         /// <summary>
         /// Maximum number of IOs in a single call. This is a hint to a

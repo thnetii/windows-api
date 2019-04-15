@@ -3,7 +3,7 @@
 namespace THNETII.WinApi.Native.WinNT
 {
     [Flags]
-    public enum FSCTL_SCRUB_DATA_INPUT_FLAGS : int
+    public enum SCRUB_DATA_INPUT_FLAGS : int
     {
         SCRUB_DATA_INPUT_FLAG_RESUME = WinNTConstants.SCRUB_DATA_INPUT_FLAG_RESUME,
         SCRUB_DATA_INPUT_FLAG_SKIP_IN_SYNC = WinNTConstants.SCRUB_DATA_INPUT_FLAG_SKIP_IN_SYNC,
@@ -14,7 +14,7 @@ namespace THNETII.WinApi.Native.WinNT
     }
 
     [Flags]
-    public enum FSCTL_SCRUB_DATA_OUTPUT_FLAGS : int
+    public enum SCRUB_DATA_OUTPUT_FLAGS : int
     {
         SCRUB_DATA_OUTPUT_FLAG_INCOMPLETE = WinNTConstants.SCRUB_DATA_OUTPUT_FLAG_INCOMPLETE,
 

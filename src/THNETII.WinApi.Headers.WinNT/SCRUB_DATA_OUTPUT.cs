@@ -7,7 +7,7 @@ using THNETII.InteropServices.Runtime;
 
 namespace THNETII.WinApi.Native.WinNT
 {
-    using static FSCTL_SCRUB_DATA_OUTPUT_FLAGS;
+    using static SCRUB_DATA_OUTPUT_FLAGS;
 
     // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 13312
     [StructLayout(LayoutKind.Sequential)]
@@ -27,7 +27,7 @@ namespace THNETII.WinApi.Native.WinNT
         /// call.
         /// </para>
         /// </summary>
-        public FSCTL_SCRUB_DATA_OUTPUT_FLAGS Flags;
+        public SCRUB_DATA_OUTPUT_FLAGS Flags;
 
         /// <summary>
         /// Operational status

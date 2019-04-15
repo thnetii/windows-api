@@ -115,12 +115,22 @@ namespace THNETII.WinApi.Native.WinNT
         public static bool IS_TARGET_UNWIND(int Flag) => (Flag & EXCEPTION_TARGET_UNWIND) != 0;
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 9423
-        public static int MANDATORY_LEVEL_TO_MANDATORY_RID(int IL) => (IL * 0x1000);
+        public static int MANDATORY_LEVEL_TO_MANDATORY_RID(int IL) => IL * 0x1000;
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 10566
         public static bool VALID_IMPERSONATION_LEVEL(TokenImpersonationLevel L) =>
             (L >= SECURITY_MIN_IMPERSONATION_LEVEL) && (L <= SECURITY_MAX_IMPERSONATION_LEVEL);
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 13493
+        #region IsVirtualDiskFileShared macro
+        /// <summary>
+        /// Determines if the provided virtual disk handle state, from <see cref="SHARED_VIRTUAL_DISK_SUPPORT"/>,
+        /// indicates that the target virtual disk file is opened in shared mode.
+        /// </summary>
+        public static bool IsVirtualDiskFileShared(SharedVirtualDiskHandleState HandleState) =>
+            ((HandleState) & SharedVirtualDiskHandleState.SharedVirtualDiskHandleStateFileShared) != 0;
+
+        #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 18578
         #region RtlCaptureStackBackTrace function
         [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi)]

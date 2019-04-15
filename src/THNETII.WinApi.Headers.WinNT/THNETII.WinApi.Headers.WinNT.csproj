@@ -57,4 +57,8 @@
     </PackageReference>
   </ItemGroup>
 
+<ItemGroup Condition="'$(TargetFramework)'=='netstandard1.6'">
+  <PackageReference Include="System.IO.FileSystem.Watcher" Version="4.3.0" />
+</ItemGroup>
+
 </Project>

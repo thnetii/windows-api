@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Runtime.InteropServices;
 using THNETII.InteropServices.NativeMemory;
 
@@ -470,6 +471,42 @@ namespace THNETII.WinApi.Native.WinNT
 
 
         public static readonly ACCESS_MASK FILE_GENERIC_EXECUTE = new ACCESS_MASK(WinNTConstants.FILE_GENERIC_EXECUTE);
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 12878
+        public const FileShare FILE_SHARE_READ = (FileShare)WinNTConstants.FILE_SHARE_READ;
+        public const FileShare FILE_SHARE_WRITE = (FileShare)WinNTConstants.FILE_SHARE_WRITE;
+        public const FileShare FILE_SHARE_DELETE = (FileShare)WinNTConstants.FILE_SHARE_DELETE;
+        public const FileAttributes FILE_ATTRIBUTE_READONLY = (FileAttributes)WinNTConstants.FILE_ATTRIBUTE_READONLY;
+        public const FileAttributes FILE_ATTRIBUTE_HIDDEN = (FileAttributes)WinNTConstants.FILE_ATTRIBUTE_HIDDEN;
+        public const FileAttributes FILE_ATTRIBUTE_SYSTEM = (FileAttributes)WinNTConstants.FILE_ATTRIBUTE_SYSTEM;
+        public const FileAttributes FILE_ATTRIBUTE_DIRECTORY = (FileAttributes)WinNTConstants.FILE_ATTRIBUTE_DIRECTORY;
+        public const FileAttributes FILE_ATTRIBUTE_ARCHIVE = (FileAttributes)WinNTConstants.FILE_ATTRIBUTE_ARCHIVE;
+        public const FileAttributes FILE_ATTRIBUTE_DEVICE = (FileAttributes)WinNTConstants.FILE_ATTRIBUTE_DEVICE;
+        public const FileAttributes FILE_ATTRIBUTE_NORMAL = (FileAttributes)WinNTConstants.FILE_ATTRIBUTE_NORMAL;
+        public const FileAttributes FILE_ATTRIBUTE_TEMPORARY = (FileAttributes)WinNTConstants.FILE_ATTRIBUTE_TEMPORARY;
+        public const FileAttributes FILE_ATTRIBUTE_SPARSE_FILE = (FileAttributes)WinNTConstants.FILE_ATTRIBUTE_SPARSE_FILE;
+        public const FileAttributes FILE_ATTRIBUTE_REPARSE_POINT = (FileAttributes)WinNTConstants.FILE_ATTRIBUTE_REPARSE_POINT;
+        public const FileAttributes FILE_ATTRIBUTE_COMPRESSED = (FileAttributes)WinNTConstants.FILE_ATTRIBUTE_COMPRESSED;
+        public const FileAttributes FILE_ATTRIBUTE_OFFLINE = (FileAttributes)WinNTConstants.FILE_ATTRIBUTE_OFFLINE;
+        public const FileAttributes FILE_ATTRIBUTE_NOT_CONTENT_INDEXED = (FileAttributes)WinNTConstants.FILE_ATTRIBUTE_NOT_CONTENT_INDEXED;
+        public const FileAttributes FILE_ATTRIBUTE_ENCRYPTED = (FileAttributes)WinNTConstants.FILE_ATTRIBUTE_ENCRYPTED;
+        public const FileAttributes FILE_ATTRIBUTE_INTEGRITY_STREAM = (FileAttributes)WinNTConstants.FILE_ATTRIBUTE_INTEGRITY_STREAM;
+        public const FileAttributes FILE_ATTRIBUTE_VIRTUAL = (FileAttributes)WinNTConstants.FILE_ATTRIBUTE_VIRTUAL;
+        public const FileAttributes FILE_ATTRIBUTE_NO_SCRUB_DATA = (FileAttributes)WinNTConstants.FILE_ATTRIBUTE_NO_SCRUB_DATA;
+        public const FileAttributes FILE_ATTRIBUTE_EA = (FileAttributes)WinNTConstants.FILE_ATTRIBUTE_EA;
+        public const FileAttributes FILE_ATTRIBUTE_PINNED = (FileAttributes)WinNTConstants.FILE_ATTRIBUTE_PINNED;
+        public const FileAttributes FILE_ATTRIBUTE_UNPINNED = (FileAttributes)WinNTConstants.FILE_ATTRIBUTE_UNPINNED;
+        public const FileAttributes FILE_ATTRIBUTE_RECALL_ON_OPEN = (FileAttributes)WinNTConstants.FILE_ATTRIBUTE_RECALL_ON_OPEN;
+        public const FileAttributes FILE_ATTRIBUTE_RECALL_ON_DATA_ACCESS = (FileAttributes)WinNTConstants.FILE_ATTRIBUTE_RECALL_ON_DATA_ACCESS;
+        public const FileAttributes FILE_ATTRIBUTE_STRICTLY_SEQUENTIAL = (FileAttributes)WinNTConstants.FILE_ATTRIBUTE_STRICTLY_SEQUENTIAL;
+        public const NotifyFilters FILE_NOTIFY_CHANGE_FILE_NAME = (NotifyFilters)WinNTConstants.FILE_NOTIFY_CHANGE_FILE_NAME;
+        public const NotifyFilters FILE_NOTIFY_CHANGE_DIR_NAME = (NotifyFilters)WinNTConstants.FILE_NOTIFY_CHANGE_DIR_NAME;
+        public const NotifyFilters FILE_NOTIFY_CHANGE_ATTRIBUTES = (NotifyFilters)WinNTConstants.FILE_NOTIFY_CHANGE_ATTRIBUTES;
+        public const NotifyFilters FILE_NOTIFY_CHANGE_SIZE = (NotifyFilters)WinNTConstants.FILE_NOTIFY_CHANGE_SIZE;
+        public const NotifyFilters FILE_NOTIFY_CHANGE_LAST_WRITE = (NotifyFilters)WinNTConstants.FILE_NOTIFY_CHANGE_LAST_WRITE;
+        public const NotifyFilters FILE_NOTIFY_CHANGE_LAST_ACCESS = (NotifyFilters)WinNTConstants.FILE_NOTIFY_CHANGE_LAST_ACCESS;
+        public const NotifyFilters FILE_NOTIFY_CHANGE_CREATION = (NotifyFilters)WinNTConstants.FILE_NOTIFY_CHANGE_CREATION;
+        public const NotifyFilters FILE_NOTIFY_CHANGE_SECURITY = (NotifyFilters)WinNTConstants.FILE_NOTIFY_CHANGE_SECURITY;
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 13566
         //

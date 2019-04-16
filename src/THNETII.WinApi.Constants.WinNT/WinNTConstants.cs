@@ -4382,6 +4382,39 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public const string GUID_SPR_ACTIVE_SESSION_CHANGE = @"{0e24ce38-c393-4742-bdb1-744f4b9ee08e}";
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 13503
+        //
+        // I/O Completion Specific Access Rights.
+        //
+
+        public const int IO_COMPLETION_MODIFY_STATE = 0x0002;
+        public const int IO_COMPLETION_ALL_ACCESS = (STANDARD_RIGHTS_REQUIRED | SYNCHRONIZE | 0x3);
+
+        public const ulong IO_QOS_MAX_RESERVATION = 1000000000UL;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 13513
+        //
+        // Some applications include both ntioapi_x.h and winioctl.h
+        //
+
+        public const string SMB_CCF_APP_INSTANCE_EA_NAME = "ClusteredApplicationInstance";
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 13526
+        //
+        // Define the SMB Cluster Client Failover AppInstance Extended Attribute name
+        // newer version of input payload assumes that EA is not just a GUID,
+        // but instead is a structure that contains additional information
+        //
+
+        //
+        // Is used only when file is opened directly on CSVFS. This flag is ignored when file
+        // is opened over SMB.
+        // Tells CSVFS that this file open should be valid only on coordinating node.
+        // If open comes to CSVFS, and this node is not a coordinating then open would fail.
+        // If file is opened, and coordinating node is moved then file open will be invalidated
+        //
+        public const int NETWORK_APP_INSTANCE_CSV_FLAGS_VALID_ONLY_IF_CSV_COORDINATOR = 0x00000001;
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19775
         public const int RTL_UMS_VERSION = 0x0100;
     }

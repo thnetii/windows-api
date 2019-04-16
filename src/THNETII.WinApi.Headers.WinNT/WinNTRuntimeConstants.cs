@@ -575,6 +575,14 @@ namespace THNETII.WinApi.Native.WinNT
         public static readonly REPARSE_TAG IO_REPARSE_TAG_PROJFS_TOMBSTONE = WinNTConstants.IO_REPARSE_TAG_PROJFS_TOMBSTONE;
         public static readonly REPARSE_TAG IO_REPARSE_TAG_AF_UNIX = WinNTConstants.IO_REPARSE_TAG_AF_UNIX;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 13503
+        //
+        // I/O Completion Specific Access Rights.
+        //
+
+        public static readonly ACCESS_MASK IO_COMPLETION_MODIFY_STATE = new ACCESS_MASK(WinNTConstants.IO_COMPLETION_MODIFY_STATE);
+        public static readonly ACCESS_MASK IO_COMPLETION_ALL_ACCESS = new ACCESS_MASK(WinNTConstants.IO_COMPLETION_ALL_ACCESS);
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 13566
         //
         // Object Manager Symbolic Link Specific Access Rights.

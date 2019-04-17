@@ -4425,6 +4425,25 @@ namespace THNETII.WinApi.Native.WinNT
         public const int ES_AWAYMODE_REQUIRED = 0x00000040;
         public const int ES_CONTINUOUS = unchecked((int)0x80000000);
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 15160
+        public const int DIAGNOSTIC_REASON_VERSION = 0;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 15160
+        public const int DIAGNOSTIC_REASON_SIMPLE_STRING = 0x00000001;
+        public const int DIAGNOSTIC_REASON_DETAILED_STRING = 0x00000002;
+        public const int DIAGNOSTIC_REASON_NOT_SPECIFIED = unchecked((int)0x80000000);
+        public const int DIAGNOSTIC_REASON_INVALID_FLAGS = unchecked((int)~0x80000007);
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 15168
+        //
+        // Defines for power request APIs
+        //
+
+        public const int POWER_REQUEST_CONTEXT_VERSION = DIAGNOSTIC_REASON_VERSION;
+
+        public const int POWER_REQUEST_CONTEXT_SIMPLE_STRING = DIAGNOSTIC_REASON_SIMPLE_STRING;
+        public const int POWER_REQUEST_CONTEXT_DETAILED_STRING = DIAGNOSTIC_REASON_DETAILED_STRING;
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19775
         public const int RTL_UMS_VERSION = 0x0100;
     }

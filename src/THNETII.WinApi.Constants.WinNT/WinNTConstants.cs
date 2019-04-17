@@ -3102,6 +3102,1286 @@ namespace THNETII.WinApi.Native.WinNT
         public const int SCRUB_DATA_OUTPUT_FLAG_PARITY_EXTENT_DATA_RETURNED = 0x00020000;
         public const int SCRUB_DATA_OUTPUT_FLAG_RESUME_CONTEXT_LENGTH_SPECIFIED = 0x00040000;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 13573
+        //
+        // =========================================
+        // Define GUIDs which represent well-known power schemes
+        // =========================================
+        //
+
+        /// <summary>
+        /// Maximum Power Savings - indicates that very aggressive power savings measures will be used to help
+        ///                         stretch battery life.
+        /// </summary>
+        public const string GUID_MAX_POWER_SAVINGS = @"{A1841308-3541-4FAB-BC81-F71556F20B4A}";
+
+        /// <summary>
+        /// No Power Savings - indicates that almost no power savings measures will be used.
+        /// </summary>
+        public const string GUID_MIN_POWER_SAVINGS = @"{8C5E7FDA-E8BF-4A96-9A85-A6E23A8C635C}";
+
+        /// <summary>
+        /// Typical Power Savings - indicates that fairly aggressive power savings measures will be used.
+        /// </summary>
+        public const string GUID_TYPICAL_POWER_SAVINGS = @"{381B4222-F694-41F0-9685-FF5BB260DF2E}";
+
+        /// <summary>
+        /// This is a special GUID that represents "no subgroup" of settings.  That is, it indicates
+        /// that settings that are in the root of the power policy hierarchy as opposed to settings
+        /// that are buried under a subgroup of settings.  This should be used when querying for
+        /// power settings that may not fall into a subgroup.
+        /// </summary>
+        public const string NO_SUBGROUP_GUID = @"{FEA3413E-7E05-4911-9A71-700331F1C294}";
+
+        /// <summary>
+        /// This is a special GUID that represents "every power scheme".  That is, it indicates
+        /// that any write to this power scheme should be reflected to every scheme present.
+        /// This allows users to write a single setting once and have it apply to all schemes.  They
+        /// can then apply custom settings to specific power schemes that they care about.
+        /// </summary>
+        public const string ALL_POWERSCHEMES_GUID = @"{68A1E95E-13EA-41E1-8011-0C496CA490B0}";
+
+        /// <summary>
+        /// This is a special GUID that represents a 'personality' that each power scheme will have.
+        /// In other words, each power scheme will have this key indicating "I'm most like *this* base
+        /// power scheme."
+        /// </summary>
+        /// <value>
+        /// This individual setting will have one of three settings:
+        /// <list type="bullet">
+        /// <item><see cref="GUID_MAX_POWER_SAVINGS"/></item>
+        /// <item><see cref="GUID_MIN_POWER_SAVINGS"/></item>
+        /// <item><see cref="GUID_TYPICAL_POWER_SAVINGS"/></item>
+        /// </list>
+        /// </value>
+        /// <remarks>
+        /// This allows several features:
+        /// <list type="number">
+        /// <item>
+        ///    Drivers and applications can register for notification of this GUID.  So when this power
+        ///    scheme is activiated, this GUID's setting will be sent across the system and drivers/applications
+        ///    can see "GUID_MAX_POWER_SAVINGS" which will tell them in a generic fashion "get real aggressive
+        ///    about conserving power".
+        /// </item>
+        /// <item>
+        ///    UserB may install a driver or application which creates power settings, and UserB may modify
+        ///    those power settings.  Now UserA logs in.  How does he see those settings?  They simply don't
+        ///    exist in his private power key.  Well they do exist over in the system power key.  When we
+        ///    enumerate all the power settings in this system power key and don't find a corresponding entry
+        ///    in the user's private power key, then we can go look at this "personality" key in the users
+        ///    power scheme.  We can then go get a default value for the power setting, depending on which
+        ///    "personality" power scheme is being operated on.  Here's an example:
+        ///    <list type="number">
+        ///    <item>
+        ///       UserB installs an application that creates a power setting Seetting1
+        ///    </item>
+        ///    <item>
+        ///       UserB changes Setting1 to have a value of 50 because that's one of the possible settings
+        ///       available for setting1.
+        ///    </item>
+        ///    <item>
+        ///       UserB logs out
+        ///    </item>
+        ///    <item>
+        ///       UserA logs in and his active power scheme is some custom scheme that was derived from
+        ///       the <see cref="GUID_TYPICAL_POWER_SAVINGS"/>.  But remember that UserA has no setting1 in his
+        ///       private power key.
+        ///    </item>
+        ///    <item>
+        ///       When activating UserA's selected power scheme, all power settings in the system power key will
+        ///       be enumerated (including Setting1).
+        ///    </item>
+        ///    <item>
+        ///       The power manager will see that UserA has no Setting1 power setting in his private power scheme.
+        ///    </item>
+        ///    <item>
+        ///       The power manager will query UserA's power scheme for its personality and retrieve
+        ///       <see cref="GUID_TYPICAL_POWER_SAVINGS"/>.
+        ///    </item>
+        ///    <item>
+        ///       The power manager then looks in Setting1 in the system power key and looks in its set of default
+        ///       values for the corresponding value for <see cref="GUID_TYPICAL_POWER_SAVINGS"/> power schemes.
+        ///    </item>
+        ///    <item>
+        ///       This derived power setting is applied.
+        ///    </item>
+        ///    </list>
+        /// </item>
+        /// </list>
+        /// </remarks>
+        public const string GUID_POWERSCHEME_PERSONALITY = @"{245D8541-3943-4422-B025-13A784F679B7}";
+
+        /// <summary>
+        /// Define a special GUID which will be used to define the active power scheme.
+        /// User will register for this power setting GUID, and when the active power
+        /// scheme changes, they'll get a callback where the payload is the GUID
+        /// representing the active powerscheme.
+        /// </summary>
+        public const string GUID_ACTIVE_POWERSCHEME = @"{31F9F286-5084-42FE-B720-2B0264993763}";
+
+        //
+        // =========================================
+        // Define GUIDs which represent well-known power settings
+        // =========================================
+        //
+
+        // Idle resiliency settings
+        // -------------------------
+
+        /// <summary>
+        /// Specifies the subgroup which will contain all of the idle resiliency
+        /// settings for a single policy.
+        /// </summary>
+        public const string GUID_IDLE_RESILIENCY_SUBGROUP = @"{2e601130-5351-4d9d-8e04-252966bad054}";
+
+        /// <summary>
+        /// Specifies the maximum clock interrupt period (in ms)
+        /// </summary>
+        [Obsolete("This power setting is DEPRECATED.")]
+        public const string GUID_IDLE_RESILIENCY_PERIOD = @"{c42b79aa-aa3a-484b-a98f-2cf32aa90a28}";
+
+        /// <summary>
+        /// Specifies the deep sleep policy setting.
+        /// This is intended to override the <see cref="GUID_IDLE_RESILIENCY_PERIOD"/>
+        /// </summary>
+        public const string GUID_DEEP_SLEEP_ENABLED = @"{d502f7ee-1dc7-4efd-a55d-f04b6f5c0545}";
+
+        /// <summary>
+        /// Specifies the platform idle state index associated with idle resiliency
+        /// period.
+        /// </summary>
+        [Obsolete("This power setting is DEPRECATED.")]
+        public const string GUID_DEEP_SLEEP_PLATFORM_STATE = @"{d23f2fb8-9536-4038-9c94-1ce02e5c2152}";
+
+        /// <summary>
+        /// Specifies (in milliseconds) how long we wait after the last disk access
+        /// before we power off the disk in case when IO coalescing is active.
+        /// </summary>
+        public const string GUID_DISK_COALESCING_POWERDOWN_TIMEOUT = @"{c36f0eb4-2988-4a70-8eee-0884fc2c2433}";
+
+        /// <summary>
+        /// Specifies (in seconds) how long we wait after the CS Enter before
+        /// we deactivate execution required request.
+        /// </summary>
+        /// <remarks>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Value</term><description>Meaning</description></listheader>
+        /// <item><term>0</term><description>implies execution power requests are disabled and have no effect</description></item>
+        /// <item><term>-1</term><description>implies execution power requests are never deactivated</description></item>
+        /// </list>
+        /// </para>
+        /// <note>
+        /// Execution required power requests are mapped into system required
+        /// power requests on non-AoAc machines and this value has no effect.
+        /// </note>
+        /// </remarks>
+        public const string GUID_EXECUTION_REQUIRED_REQUEST_TIMEOUT = @"{3166bc41-7e98-4e03-b34e-ec0f5f2b218e}";
+
+
+        // Video settings
+        // --------------
+
+        /// <summary>
+        /// Specifies the subgroup which will contain all of the video
+        /// settings for a single policy.
+        /// </summary>
+        public const string GUID_VIDEO_SUBGROUP = @"{7516B95F-F776-4464-8C53-06167F40CC99}";
+
+        /// <summary>
+        /// Specifies (in seconds) how long we wait after the last user input has been
+        /// received before we power off the video.
+        /// </summary>
+        public const string GUID_VIDEO_POWERDOWN_TIMEOUT = @"{3C0BC021-C8A8-4E07-A973-6B14CBCB2B7E}";
+
+        /// <summary>
+        /// Specifies whether adaptive display dimming is turned on or off.
+        /// </summary>
+        [Obsolete("This setting is DEPRECATED in Windows 8.1")]
+        public const string GUID_VIDEO_ANNOYANCE_TIMEOUT = @"{82DBCF2D-CD67-40C5-BFDC-9F1A5CCD4663}";
+
+        /// <summary>
+        /// Specifies how much adaptive dim time out will be increased by.
+        /// </summary>
+        [Obsolete("This setting is DEPRECATED in Windows 8.1")]
+        public const string GUID_VIDEO_ADAPTIVE_PERCENT_INCREASE = @"{EED904DF-B142-4183-B10B-5A1197A37864}";
+
+        /// <summary>
+        /// Specifies (in seconds) how long we wait after the last user input has been
+        /// received before we dim the video.
+        /// </summary>
+        public const string GUID_VIDEO_DIM_TIMEOUT = @"{17aaa29b-8b43-4b94-aafe-35f64daaf1ee}";
+
+        /// <summary>
+        /// Specifies if the operating system should use adaptive timers (based on
+        /// previous behavior) to power down the video.
+        /// </summary>
+        public const string GUID_VIDEO_ADAPTIVE_POWERDOWN = @"{90959D22-D6A1-49B9-AF93-BCE885AD335B}";
+
+        /// <summary>
+        /// Specifies if the monitor is currently being powered or not.
+        /// </summary>
+        public const string GUID_MONITOR_POWER_ON = @"{02731015-4510-4526-99E6-E5A17EBD1AEA}";
+
+        /// <summary>
+        /// Monitor brightness policy when in normal state.
+        /// </summary>
+        public const string GUID_DEVICE_POWER_POLICY_VIDEO_BRIGHTNESS = @"{aded5e82-b909-4619-9949-f5d71dac0bcb}";
+
+        /// <summary>
+        /// Monitor brightness policy when in dim state.
+        /// </summary>
+        public const string GUID_DEVICE_POWER_POLICY_VIDEO_DIM_BRIGHTNESS = @"{f1fbfde2-a960-4165-9f88-50667911ce96}";
+
+        /// <summary>
+        /// Current monitor brightness.
+        /// </summary>
+        public const string GUID_VIDEO_CURRENT_MONITOR_BRIGHTNESS = @"{8ffee2c6-2d01-46be-adb9-398addc5b4ff}";
+
+        /// <summary>
+        /// Specifies if the operating system should use ambient light sensor to change
+        /// adaptively the display's brightness.
+        /// </summary>
+        public const string GUID_VIDEO_ADAPTIVE_DISPLAY_BRIGHTNESS = @"{FBD9AA66-9553-4097-BA44-ED6E9D65EAB8}";
+
+        /// <summary>
+        /// Specifies a change in the current monitor's display state.
+        /// </summary>
+        public const string GUID_CONSOLE_DISPLAY_STATE = @"{6fe69556-704a-47a0-8f24-c28d936fda47}";
+
+        /// <summary>
+        /// Defines a guid for enabling/disabling the ability to create display required
+        /// power requests.
+        /// </summary>
+        public const string GUID_ALLOW_DISPLAY_REQUIRED = @"{A9CEB8DA-CD46-44FB-A98B-02AF69DE4623}";
+
+        /// <summary>
+        /// Specifies the video power down timeout (in seconds) after the interactive
+        /// console is locked (and sensors indicate UserNotPresent). Value 0
+        /// effectively disables this feature.
+        /// </summary>
+        public const string GUID_VIDEO_CONSOLE_LOCK_TIMEOUT = @"{8ec4b3a5-6868-48c2-be75-4f3044be88a7}";
+
+
+        // Adaptive power behavior settings
+        // --------------------------------
+
+        public const string GUID_ADAPTIVE_POWER_BEHAVIOR_SUBGROUP = @"{8619b916-e004-4dd8-9b66-dae86f806698}";
+
+        /// <summary>
+        /// Specifies the input timeout (in seconds) to be used to indicate UserUnkown.
+        /// Value 0 effectively disables this feature.
+        /// </summary>
+        public const string GUID_NON_ADAPTIVE_INPUT_TIMEOUT = @"{5adbbfbc-074e-4da1-ba38-db8b36b2c8f3}";
+
+        /// <summary>
+        /// Specifies a change in the input controller(s) global system's state:
+        /// e.g. enabled, suppressed, filtered.
+        /// </summary>
+        public const string GUID_ADAPTIVE_INPUT_CONTROLLER_STATE = @"{0e98fae9-f45a-4de1-a757-6031f197f6ea}";
+
+        // Harddisk settings
+        // -----------------
+
+        /// <summary>
+        /// Specifies the subgroup which will contain all of the harddisk
+        /// settings for a single policy.
+        /// </summary>
+        public const string GUID_DISK_SUBGROUP = @"{0012EE47-9041-4B5D-9B77-535FBA8B1442}";
+
+        /// <summary>
+        /// Specifies a maximum power consumption level.
+        /// </summary>
+        public const string GUID_DISK_MAX_POWER = @"{51dea550-bb38-4bc4-991b-eacf37be5ec8}";
+
+        /// <summary>
+        /// Specifies (in seconds) how long we wait after the last disk access
+        /// before we power off the disk.
+        /// </summary>
+        public const string GUID_DISK_POWERDOWN_TIMEOUT = @"{6738E2C4-E8A5-4A42-B16A-E040E769756E}";
+
+        /// <summary>
+        /// Specifies (in milliseconds) how long we wait after the last disk access
+        /// before we power off the disk taking into account if IO coalescing is active.
+        /// </summary>
+        public const string GUID_DISK_IDLE_TIMEOUT = @"{58E39BA8-B8E6-4EF6-90D0-89AE32B258D6}";
+
+        /// <summary>
+        /// Specifies the amount of contiguous disk activity time to ignore when
+        /// calculating disk idleness.
+        /// </summary>
+        public const string GUID_DISK_BURST_IGNORE_THRESHOLD = @"{80e3c60e-bb94-4ad8-bbe0-0d3195efc663}";
+
+        /// <summary>
+        /// Specifies if the operating system should use adaptive timers (based on
+        /// previous behavior) to power down the disk,
+        /// </summary>
+        public const string GUID_DISK_ADAPTIVE_POWERDOWN = @"{396A32E1-499A-40B2-9124-A96AFE707667}";
+
+        // System sleep settings
+        // ---------------------
+
+        /// <summary>
+        /// Specifies the subgroup which will contain all of the sleep
+        /// settings for a single policy.
+        /// </summary>
+        public const string GUID_SLEEP_SUBGROUP = @"{238C9FA8-0AAD-41ED-83F4-97BE242C8F20}";
+
+        /// <summary>
+        /// Specifies an idle treshold percentage (0-100). The system must be this idle
+        /// over a period of time in order to idle to sleep.
+        /// </summary>
+        [Obsolete("DEPRECATED IN WINDOWS 6.1")]
+        public const string GUID_SLEEP_IDLE_THRESHOLD = @"{81cd32e0-7833-44f3-8737-7081f38d1f70}";
+
+        /// <summary>
+        /// Specifies (in seconds) how long we wait after the system is deemed
+        /// "idle" before moving to standby (S1, S2 or S3).
+        /// </summary>
+        public const string GUID_STANDBY_TIMEOUT = @"{29F6C1DB-86DA-48C5-9FDB-F2B67B1F44DA}";
+
+        /// <summary>
+        /// Specifies (in seconds) how long the system should go back to sleep after
+        /// waking unattended. 0 indicates that the standard standby/hibernate idle
+        /// policy should be used instead.
+        /// </summary>
+        public const string GUID_UNATTEND_SLEEP_TIMEOUT = @"{7bc4a2f9-d8fc-4469-b07b-33eb785aaca0}";
+
+        /// <summary>
+        /// Specifies (in seconds) how long we wait after the system is deemed
+        /// "idle" before moving to hibernate (S4).
+        /// </summary>
+        public const string GUID_HIBERNATE_TIMEOUT = @"{9D7815A6-7EE4-497E-8888-515A05F02364}";
+
+        /// <summary>
+        /// Specifies whether or not Fast S4 should be enabled if the system supports it
+        /// </summary>
+        public const string GUID_HIBERNATE_FASTS4_POLICY = @"{94AC6D29-73CE-41A6-809F-6363BA21B47E}";
+
+        /// <summary>
+        /// Define a GUID for controlling the criticality of sleep state transitions.
+        /// Critical sleep transitions do not query applications, services or drivers
+        /// before transitioning the platform to a sleep state.
+        /// </summary>
+        public const string GUID_CRITICAL_POWER_TRANSITION = @"{B7A27025-E569-46c2-A504-2B96CAD225A1}";
+
+        /// <summary>
+        /// Specifies if the system is entering or exiting 'away mode'.
+        /// </summary>
+        public const string GUID_SYSTEM_AWAYMODE = @"{98A7F580-01F7-48AA-9C0F-44352C29E5C0}";
+
+        /// <summary>
+        /// Specify whether away mode is allowed
+        /// </summary>
+        public const string GUID_ALLOW_AWAYMODE = @"{25dfa149-5dd1-4736-b5ab-e8a37b5b8187}";
+
+        /// <summary>
+        /// Defines a guid to control User Presence Prediction mode.
+        /// </summary>
+        public const string GUID_USER_PRESENCE_PREDICTION = @"{82011705-fb95-4d46-8d35-4042b1d20def}";
+
+        /// <summary>
+        /// Defines a guid to control Standby Budget Grace Period.
+        /// </summary>
+        public const string GUID_STANDBY_BUDGET_GRACE_PERIOD = @"{60c07fe1-0556-45cf-9903-d56e32210242}";
+
+        /// <summary>
+        /// Defines a guid to control Standby Budget Percent.
+        /// </summary>
+        public const string GUID_STANDBY_BUDGET_PERCENT = @"{9fe527be-1b70-48da-930d-7bcf17b44990}";
+
+        /// <summary>
+        /// Defines a guid to control Standby Reserve Grace Period.
+        /// </summary>
+        public const string GUID_STANDBY_RESERVE_GRACE_PERIOD = @"{c763ee92-71e8-4127-84eb-f6ed043a3e3d}";
+
+        /// <summary>
+        /// Defines a guid to control Standby Reserve Time.
+        /// </summary>
+        public const string GUID_STANDBY_RESERVE_TIME = @"{468FE7E5-1158-46EC-88bc-5b96c9e44fd0}";
+
+        /// <summary>
+        /// Defines a guid to control Standby Reset Percentage.
+        /// </summary>
+        public const string GUID_STANDBY_RESET_PERCENT = @"{49cb11a5-56e2-4afb-9d38-3df47872e21b}";
+
+        /// <summary>
+        /// Defines a guid for enabling/disabling standby (S1-S3) states. This does not
+        /// affect hibernation (S4).
+        /// </summary>
+        public const string GUID_ALLOW_STANDBY_STATES = @"{abfc2519-3608-4c2a-94ea-171b0ed546ab}";
+
+        /// <summary>
+        /// Defines a guid for enabling/disabling the ability to wake via RTC.
+        /// </summary>
+        public const string GUID_ALLOW_RTC_WAKE = @"{BD3B718A-0680-4D9D-8AB2-E1D2B4AC806D}";
+
+        /// <summary>
+        /// Defines a guid for enabling/disabling legacy RTC mitigations.
+        /// </summary>
+        public const string GUID_LEGACY_RTC_MITIGATION = @"{1A34BDC3-7E6B-442E-A9D0-64B6EF378E84}";
+
+        /// <summary>
+        /// Defines a guid for enabling/disabling the ability to create system required
+        /// power requests.
+        /// </summary>
+        public const string GUID_ALLOW_SYSTEM_REQUIRED = @"{A4B195F5-8225-47D8-8012-9D41369786E2}";
+
+        // Energy Saver settings
+        // ---------------------
+
+        /// <summary>
+        /// Indicates if Enegry Saver is ON or OFF.
+        /// </summary>
+        public const string GUID_POWER_SAVING_STATUS = @"{e00958c0-c213-4ace-ac77-fecced2eeea5}";
+
+        /// <summary>
+        /// Specifies the subgroup which will contain all of the Energy Saver settings
+        /// for a single policy.
+        /// </summary>
+        public const string GUID_ENERGY_SAVER_SUBGROUP = @"{DE830923-A562-41AF-A086-E3A2C6BAD2DA}";
+
+        /// <summary>
+        /// Defines a guid to engage Energy Saver at specific battery charge level
+        /// </summary>
+        public const string GUID_ENERGY_SAVER_BATTERY_THRESHOLD = @"{E69653CA-CF7F-4F05-AA73-CB833FA90AD4}";
+
+        /// <summary>
+        /// Defines a guid to specify display brightness weight when Energy Saver is engaged
+        /// </summary>
+        public const string GUID_ENERGY_SAVER_BRIGHTNESS = @"{13D09884-F74E-474A-A852-B6BDE8AD03A8}";
+
+        /// <summary>
+        /// Defines a guid to specify the Energy Saver policy
+        /// </summary>
+        public const string GUID_ENERGY_SAVER_POLICY = @"{5c5bb349-ad29-4ee2-9d0b-2b25270f7a81}";
+
+        // System button actions
+        // ---------------------
+
+        /// <summary>
+        /// Specifies the subgroup which will contain all of the system button
+        /// settings for a single policy.
+        /// </summary>
+        public const string GUID_SYSTEM_BUTTON_SUBGROUP = @"{4F971E89-EEBD-4455-A8DE-9E59040E7347}";
+
+        public const int POWERBUTTON_ACTION_INDEX_NOTHING = 0;
+        public const int POWERBUTTON_ACTION_INDEX_SLEEP = 1;
+        public const int POWERBUTTON_ACTION_INDEX_HIBERNATE = 2;
+        public const int POWERBUTTON_ACTION_INDEX_SHUTDOWN = 3;
+        public const int POWERBUTTON_ACTION_INDEX_TURN_OFF_THE_DISPLAY = 4;
+
+        //
+        // System button values which contain the PowerAction* value for each action.
+        //
+
+        public const int POWERBUTTON_ACTION_VALUE_NOTHING = 0;
+        public const int POWERBUTTON_ACTION_VALUE_SLEEP = 2;
+        public const int POWERBUTTON_ACTION_VALUE_HIBERNATE = 3;
+        public const int POWERBUTTON_ACTION_VALUE_SHUTDOWN = 6;
+        public const int POWERBUTTON_ACTION_VALUE_TURN_OFF_THE_DISPLAY = 8;
+
+        public const string GUID_POWERBUTTON_ACTION = @"{7648EFA3-DD9C-4E3E-B566-50F929386280}";
+        public const string GUID_SLEEPBUTTON_ACTION = @"{96996BC0-AD50-47EC-923B-6F41874DD9EB}";
+        public const string GUID_USERINTERFACEBUTTON_ACTION = @"{A7066653-8D6C-40A8-910E-A1F54B84C7E5}";
+        public const string GUID_LIDCLOSE_ACTION = @"{5CA83367-6E45-459F-A27B-476B1D01C936}";
+        public const string GUID_LIDOPEN_POWERSTATE = @"{99FF10E7-23B1-4C07-A9D1-5C3206D741B4}";
+
+
+        // Battery Discharge Settings
+        // --------------------------
+
+        /// <summary>
+        /// Specifies the subgroup which will contain all of the battery discharge
+        /// settings for a single policy.
+        /// </summary>
+        public const string GUID_BATTERY_SUBGROUP = @"{E73A048D-BF27-4F12-9731-8B2076E8891F}";
+
+        //
+        // 4 battery discharge alarm settings.
+        //
+        // GUID_BATTERY_DISCHARGE_ACTION_x - This is the action to take.  It is a value
+        //                                   of type POWER_ACTION
+        // GUID_BATTERY_DISCHARGE_LEVEL_x  - This is the battery level (%)
+        // GUID_BATTERY_DISCHARGE_FLAGS_x  - Flags defined below:
+        //                                   POWER_ACTION_POLICY->EventCode flags
+        //                                   BATTERY_DISCHARGE_FLAGS_EVENTCODE_MASK
+        //                                   BATTERY_DISCHARGE_FLAGS_ENABLE
+
+        public const string GUID_BATTERY_DISCHARGE_ACTION_0 = @"{637EA02F-BBCB-4015-8E2C-A1C7B9C0B546}";
+        public const string GUID_BATTERY_DISCHARGE_LEVEL_0 = @"{9A66D8D7-4FF7-4EF9-B5A2-5A326CA2A469}";
+        public const string GUID_BATTERY_DISCHARGE_FLAGS_0 = @"{5dbb7c9f-38e9-40d2-9749-4f8a0e9f640f}";
+
+        public const string GUID_BATTERY_DISCHARGE_ACTION_1 = @"{D8742DCB-3E6A-4B3C-B3FE-374623CDCF06}";
+        public const string GUID_BATTERY_DISCHARGE_LEVEL_1 = @"{8183BA9A-E910-48DA-8769-14AE6DC1170A}";
+        public const string GUID_BATTERY_DISCHARGE_FLAGS_1 = @"{bcded951-187b-4d05-bccc-f7e51960c258}";
+
+        public const string GUID_BATTERY_DISCHARGE_ACTION_2 = @"{421CBA38-1A8E-4881-AC89-E33A8B04ECE4}";
+        public const string GUID_BATTERY_DISCHARGE_LEVEL_2 = @"{07A07CA2-ADAF-40D7-B077-533AADED1BFA}";
+        public const string GUID_BATTERY_DISCHARGE_FLAGS_2 = @"{7fd2f0c4-feb7-4da3-8117-e3fbedc46582}";
+
+        public const string GUID_BATTERY_DISCHARGE_ACTION_3 = @"{80472613-9780-455E-B308-72D3003CF2F8}";
+        public const string GUID_BATTERY_DISCHARGE_LEVEL_3 = @"{58AFD5A6-C2DD-47D2-9FBF-EF70CC5C5965}";
+        public const string GUID_BATTERY_DISCHARGE_FLAGS_3 = @"{73613ccf-dbfa-4279-8356-4935f6bf62f3}";
+
+        // Processor power settings
+        // ------------------------
+        //
+
+        /// <summary>
+        /// Specifies the subgroup which will contain all of the processor
+        /// settings for a single policy.
+        /// </summary>
+        public const string GUID_PROCESSOR_SETTINGS_SUBGROUP = @"{54533251-82BE-4824-96C1-47B60B740D00}";
+
+        /// <summary>
+        /// Specifies various attributes that control processor performance/throttle
+        /// states.
+        /// </summary>
+        public const string GUID_PROCESSOR_THROTTLE_POLICY = @"{57027304-4AF6-4104-9260-E3D95248FC36}";
+
+        public const int PERFSTATE_POLICY_CHANGE_IDEAL = 0;
+        public const int PERFSTATE_POLICY_CHANGE_SINGLE = 1;
+        public const int PERFSTATE_POLICY_CHANGE_ROCKET = 2;
+        public const int PERFSTATE_POLICY_CHANGE_IDEAL_AGGRESSIVE = 3;
+
+        public const int PERFSTATE_POLICY_CHANGE_DECREASE_MAX = PERFSTATE_POLICY_CHANGE_ROCKET;
+        public const int PERFSTATE_POLICY_CHANGE_INCREASE_MAX = PERFSTATE_POLICY_CHANGE_IDEAL_AGGRESSIVE;
+
+        /// <summary>
+        /// Specifies a percentage (between 0 and 100) that the processor frequency
+        /// should never go above.  For example, if this value is set to 80, then
+        /// the processor frequency will never be throttled above 80 percent of its
+        /// maximum frequency by the system.
+        /// </summary>
+        public const string GUID_PROCESSOR_THROTTLE_MAXIMUM = @"{BC5038F7-23E0-4960-96DA-33ABAF5935EC}";
+
+        /// <summary>
+        /// Specifies a percentage (between 0 and 100) that the processor frequency
+        /// should never go above for Processor Power Efficiency Class 1.
+        /// For example, if this value is set to 80, then the processor frequency will
+        /// never be throttled above 80 percent of its maximum frequency by the system.
+        /// </summary>
+        public const string GUID_PROCESSOR_THROTTLE_MAXIMUM_1 = @"{BC5038F7-23E0-4960-96DA-33ABAF5935ED}";
+
+        /// <summary>
+        /// Specifies a percentage (between 0 and 100) that the processor frequency
+        /// should not drop below.  For example, if this value is set to 50, then the
+        /// processor frequency will never be throttled below 50 percent of its
+        /// maximum frequency by the system.
+        /// </summary>
+        public const string GUID_PROCESSOR_THROTTLE_MINIMUM = @"{893DEE8E-2BEF-41E0-89C6-B55D0929964C}";
+
+        /// <summary>
+        /// Specifies a percentage (between 0 and 100) that the processor frequency
+        /// should not drop below for Processor Power Efficiency Class 1.
+        /// For example, if this value is set to 50, then the processor frequency will
+        /// never be throttled below 50 percent of its maximum frequency by the system.
+        /// </summary>
+        public const string GUID_PROCESSOR_THROTTLE_MINIMUM_1 = @"{893DEE8E-2BEF-41E0-89C6-B55D0929964D}";
+
+        /// <summary>
+        /// Specifies the maximum processor frequency (expresssed in MHz).
+        /// </summary>
+        public const string GUID_PROCESSOR_FREQUENCY_LIMIT = @"{75b0ae3f-bce0-45a7-8c89-c9611c25e100}";
+
+        public const string GUID_PROCESSOR_FREQUENCY_LIMIT_1 = @"{75b0ae3f-bce0-45a7-8c89-c9611c25e101}";
+
+        /// <summary>
+        /// Specifies whether throttle states are allowed to be used even when
+        /// performance states are available.
+        /// </summary>
+        public const string GUID_PROCESSOR_ALLOW_THROTTLING = @"{3b04d4fd-1cc7-4f23-ab1c-d1337819c4bb}";
+
+        public const int PROCESSOR_THROTTLE_DISABLED = 0;
+        public const int PROCESSOR_THROTTLE_ENABLED = 1;
+        public const int PROCESSOR_THROTTLE_AUTOMATIC = 2;
+
+        /// <summary>
+        /// Specifies processor power settings for CState policy data
+        /// </summary>
+        public const string GUID_PROCESSOR_IDLESTATE_POLICY = @"{68f262a7-f621-4069-b9a5-4874169be23c}";
+
+        /// <summary>
+        /// Specifies processor power settings for PerfState policy data
+        /// </summary>
+        public const string GUID_PROCESSOR_PERFSTATE_POLICY = @"{BBDC3814-18E9-4463-8A55-D197327C45C0}";
+
+        /// <summary>
+        /// Specifies the increase busy percentage threshold that must be met before
+        /// increasing the processor performance state.
+        /// </summary>
+        public const string GUID_PROCESSOR_PERF_INCREASE_THRESHOLD = @"{06cadf0e-64ed-448a-8927-ce7bf90eb35d}";
+
+        /// <summary>
+        /// Specifies the increase busy percentage threshold that must be met before
+        /// increasing the processor performance state for Processor Power Efficiency
+        /// Class 1.
+        /// </summary>
+        public const string GUID_PROCESSOR_PERF_INCREASE_THRESHOLD_1 = @"{06cadf0e-64ed-448a-8927-ce7bf90eb35e}";
+
+        /// <summary>
+        /// Specifies the decrease busy percentage threshold that must be met before
+        /// decreasing the processor performance state.
+        /// </summary>
+        public const string GUID_PROCESSOR_PERF_DECREASE_THRESHOLD = @"{12a0ab44-fe28-4fa9-b3bd-4b64f44960a6}";
+
+        /// <summary>
+        /// Specifies the decrease busy percentage threshold that must be met before
+        /// decreasing the processor performance state for Processor Power Efficiency
+        /// Class 1.
+        /// </summary>
+        public const string GUID_PROCESSOR_PERF_DECREASE_THRESHOLD_1 = @"{12a0ab44-fe28-4fa9-b3bd-4b64f44960a7}";
+
+        /// <summary>
+        /// Specifies, either as ideal, single or rocket, how aggressive performance
+        /// states should be selected when increasing the processor performance state.
+        /// </summary>
+        public const string GUID_PROCESSOR_PERF_INCREASE_POLICY = @"{465e1f50-b610-473a-ab58-00d1077dc418}";
+
+        /// <summary>
+        /// Specifies, either as ideal, single or rocket, how aggressive performance
+        /// states should be selected when increasing the processor performance state
+        /// for Processor Power Efficiency Class 1.
+        /// </summary>
+        public const string GUID_PROCESSOR_PERF_INCREASE_POLICY_1 = @"{465e1f50-b610-473a-ab58-00d1077dc419}";
+
+        /// <summary>
+        /// Specifies, either as ideal, single or rocket, how aggressive performance
+        /// states should be selected when decreasing the processor performance state.
+        /// </summary>
+        public const string GUID_PROCESSOR_PERF_DECREASE_POLICY = @"{40fbefc7-2e9d-4d25-a185-0cfd8574bac6}";
+
+        /// <summary>
+        /// Specifies, either as ideal, single or rocket, how aggressive performance
+        /// states should be selected when decreasing the processor performance state for
+        /// Processor Power Efficiency Class 1.
+        /// </summary>
+        public const string GUID_PROCESSOR_PERF_DECREASE_POLICY_1 = @"{40fbefc7-2e9d-4d25-a185-0cfd8574bac7}";
+
+        /// <summary>
+        /// Specifies, in milliseconds, the minimum amount of time that must elapse after
+        /// the last processor performance state change before increasing the processor
+        /// performance state.
+        /// </summary>
+        public const string GUID_PROCESSOR_PERF_INCREASE_TIME = @"{984cf492-3bed-4488-a8f9-4286c97bf5aa}";
+
+        /// <summary>
+        /// Specifies, in milliseconds, the minimum amount of time that must elapse after
+        /// the last processor performance state change before increasing the processor
+        /// performance state for Processor Power Efficiency Class 1.
+        /// </summary>
+        public const string GUID_PROCESSOR_PERF_INCREASE_TIME_1 = @"{984cf492-3bed-4488-a8f9-4286c97bf5ab}";
+
+        /// <summary>
+        /// Specifies, in milliseconds, the minimum amount of time that must elapse after
+        /// the last processor performance state change before increasing the processor
+        /// performance state.
+        /// </summary>
+        public const string GUID_PROCESSOR_PERF_DECREASE_TIME = @"{d8edeb9b-95cf-4f95-a73c-b061973693c8}";
+
+        /// <summary>
+        /// Specifies, in milliseconds, the minimum amount of time that must elapse after
+        /// the last processor performance state change before increasing the processor
+        /// performance state for Processor Power Efficiency Class 1.
+        /// </summary>
+        public const string GUID_PROCESSOR_PERF_DECREASE_TIME_1 = @"{d8edeb9b-95cf-4f95-a73c-b061973693c9}";
+
+        /// <summary>
+        /// Specifies the time, in milliseconds, that must expire before considering
+        /// a change in the processor performance states or parked core set.
+        /// </summary>
+        public const string GUID_PROCESSOR_PERF_TIME_CHECK = @"{4d2b0152-7d5c-498b-88e2-34345392a2c5}";
+
+        /// <summary>
+        /// Specifies how the processor should manage performance and efficiency
+        /// tradeoffs when boosting frequency above the maximum.
+        /// </summary>
+        public const string GUID_PROCESSOR_PERF_BOOST_POLICY = @"{45bcc044-d885-43e2-8605-ee0ec6e96b59}";
+
+        public const int PROCESSOR_PERF_BOOST_POLICY_DISABLED = 0;
+        public const int PROCESSOR_PERF_BOOST_POLICY_MAX = 100;
+
+        /// <summary>
+        /// Specifies how a processor opportunistically increases frequency above
+        /// the maximum when operating contitions allow it to do so safely.
+        /// </summary>
+        public const string GUID_PROCESSOR_PERF_BOOST_MODE = @"{be337238-0d82-4146-a960-4f3749d470c7}";
+
+        public const int PROCESSOR_PERF_BOOST_MODE_DISABLED = 0;
+        public const int PROCESSOR_PERF_BOOST_MODE_ENABLED = 1;
+        public const int PROCESSOR_PERF_BOOST_MODE_AGGRESSIVE = 2;
+        public const int PROCESSOR_PERF_BOOST_MODE_EFFICIENT_ENABLED = 3;
+        public const int PROCESSOR_PERF_BOOST_MODE_EFFICIENT_AGGRESSIVE = 4;
+        public const int PROCESSOR_PERF_BOOST_MODE_AGGRESSIVE_AT_GUARANTEED = 5;
+        public const int PROCESSOR_PERF_BOOST_MODE_EFFICIENT_AGGRESSIVE_AT_GUARANTEED = 6;
+        public const int PROCESSOR_PERF_BOOST_MODE_MAX = PROCESSOR_PERF_BOOST_MODE_EFFICIENT_AGGRESSIVE_AT_GUARANTEED;
+
+        /// <summary>
+        /// Specifies whether or not a procesor should autonomously select its
+        /// operating performance state.
+        /// </summary>
+        public const string GUID_PROCESSOR_PERF_AUTONOMOUS_MODE = @"{8baa4a8a-14c6-4451-8e8b-14bdbd197537}";
+
+        public const int PROCESSOR_PERF_AUTONOMOUS_MODE_DISABLED = 0;
+        public const int PROCESSOR_PERF_AUTONOMOUS_MODE_ENABLED = 1;
+
+        /// <summary>
+        /// Specifies the tradeoff between performance and energy the processor should
+        /// make when operating in autonomous mode.
+        /// </summary>
+        public const string GUID_PROCESSOR_PERF_ENERGY_PERFORMANCE_PREFERENCE = @"{36687f9e-e3a5-4dbf-b1dc-15eb381c6863}";
+
+        public const int PROCESSOR_PERF_PERFORMANCE_PREFERENCE = 0xff;
+        public const int PROCESSOR_PERF_ENERGY_PREFERENCE = 0;
+
+        /// <summary>
+        /// Specifies the window over which the processor should observe utilization when
+        /// operating in autonomous mode, in microseconds.
+        /// </summary>
+        public const string GUID_PROCESSOR_PERF_AUTONOMOUS_ACTIVITY_WINDOW = @"{cfeda3d0-7697-4566-a922-a9086cd49dfa}";
+
+        public const int PROCESSOR_PERF_MINIMUM_ACTIVITY_WINDOW = 0;
+        public const int PROCESSOR_PERF_MAXIMUM_ACTIVITY_WINDOW = 1270000000;
+
+        /// <summary>
+        /// Specifies whether the processor should perform duty cycling.
+        /// </summary>
+        public const string GUID_PROCESSOR_DUTY_CYCLING = @"{4e4450b3-6179-4e91-b8f1-5bb9938f81a1}";
+
+        public const int PROCESSOR_DUTY_CYCLING_DISABLED = 0;
+        public const int PROCESSOR_DUTY_CYCLING_ENABLED = 1;
+
+        /// <summary>
+        /// Specifies if idle state promotion and demotion values should be scaled based
+        /// on the current peformance state.
+        /// </summary>
+        public const string GUID_PROCESSOR_IDLE_ALLOW_SCALING = @"{6c2993b0-8f48-481f-bcc6-00dd2742aa06}";
+
+        /// <summary>
+        /// Specifies if idle states should be disabled.
+        /// </summary>
+        public const string GUID_PROCESSOR_IDLE_DISABLE = @"{5d76a2ca-e8c0-402f-a133-2158492d58ad}";
+
+        /// <summary>
+        /// Specifies the deepest idle state type that should be used. If this value is
+        /// set to zero, this setting is ignored. Values higher than supported by the
+        /// processor then this setting has no effect.
+        /// </summary>
+        public const string GUID_PROCESSOR_IDLE_STATE_MAXIMUM = @"{9943e905-9a30-4ec1-9b99-44dd3b76f7a2}";
+
+        /// <summary>
+        /// Specifies the time that elapsed since the last idle state promotion or
+        /// demotion before idle states may be promoted or demoted again (in
+        /// microseconds).
+        /// </summary>
+        public const string GUID_PROCESSOR_IDLE_TIME_CHECK = @"{c4581c31-89ab-4597-8e2b-9c9cab440e6b}";
+
+        /// <summary>
+        /// Specifies the upper busy threshold that must be met before demoting the
+        /// processor to a lighter idle state (in percentage).
+        /// </summary>
+        public const string GUID_PROCESSOR_IDLE_DEMOTE_THRESHOLD = @"{4b92d758-5a24-4851-a470-815d78aee119}";
+
+        /// <summary>
+        /// Specifies the lower busy threshold that must be met before promoting the
+        /// processor to a deeper idle state (in percentage).
+        /// </summary>
+        public const string GUID_PROCESSOR_IDLE_PROMOTE_THRESHOLD = @"{7b224883-b3cc-4d79-819f-8374152cbe7c}";
+
+        /// <summary>
+        /// Specifies the utilization threshold in percent that must be crossed in order to un-park cores.
+        /// </summary>
+        [Obsolete("This power setting is DEPRECATED.")]
+        public const string GUID_PROCESSOR_CORE_PARKING_INCREASE_THRESHOLD = @"{df142941-20f3-4edf-9a4a-9c83d3d717d1}";
+
+        /// <summary>
+        /// Specifies the utilization threshold in percent that must be crossed in order to park cores.
+        /// </summary>
+        [Obsolete("This power setting is DEPRECATED.")]
+        public const string GUID_PROCESSOR_CORE_PARKING_DECREASE_THRESHOLD = @"{68dd2f27-a4ce-4e11-8487-3794e4135dfa}";
+
+        /// <summary>
+        /// Specifies, either as ideal, single or rocket, how aggressive core parking is when cores must be unparked.
+        /// </summary>
+        public const string GUID_PROCESSOR_CORE_PARKING_INCREASE_POLICY = @"{c7be0679-2817-4d69-9d02-519a537ed0c6}";
+
+        public const int CORE_PARKING_POLICY_CHANGE_IDEAL = 0;
+        public const int CORE_PARKING_POLICY_CHANGE_SINGLE = 1;
+        public const int CORE_PARKING_POLICY_CHANGE_ROCKET = 2;
+        public const int CORE_PARKING_POLICY_CHANGE_MULTISTEP = 3;
+        public const int CORE_PARKING_POLICY_CHANGE_MAX = CORE_PARKING_POLICY_CHANGE_MULTISTEP;
+
+        //
+        // Specifies, either as ideal, single or rocket, how aggressive core parking is when cores must be parked.
+        //
+        // {71021b41-c749-4d21-be74-a00f335d582b}
+        //
+        public const string GUID_PROCESSOR_CORE_PARKING_DECREASE_POLICY = @"{71021b41-c749-4d21-be74-a00f335d582b}";
+
+        /// <summary>
+        /// Specifies, either as ideal, single or rocket, how aggressive core parking is when cores must be parked.
+        /// </summary>
+        public const string GUID_PROCESSOR_CORE_PARKING_MAX_CORES = @"{ea062031-0e34-4ff1-9b6d-eb1059334028}";
+
+        /// <summary>
+        /// Specifies, on a per processor group basis, the maximum number of cores that
+        /// can be kept unparked for Processor Power Efficiency Class 1.
+        /// </summary>
+        public const string GUID_PROCESSOR_CORE_PARKING_MAX_CORES_1 = @"{ea062031-0e34-4ff1-9b6d-eb1059334029}";
+
+        /// <summary>
+        /// Specifies, on a per processor group basis, the minimum number of cores that must be kept unparked.
+        /// </summary>
+        public const string GUID_PROCESSOR_CORE_PARKING_MIN_CORES = @"{0cc5b647-c1df-4637-891a-dec35c318583}";
+
+        /// <summary>
+        /// Specifies, on a per processor group basis, the minimum number of cores that
+        /// must be kept unparked in Processor Power Efficiency Class 1.
+        /// </summary>
+        public const string GUID_PROCESSOR_CORE_PARKING_MIN_CORES_1 = @"{0cc5b647-c1df-4637-891a-dec35c318584}";
+
+        /// <summary>
+        /// Specifies, in milliseconds, the minimum amount of time a core must be parked before it can be unparked.
+        /// </summary>
+        public const string GUID_PROCESSOR_CORE_PARKING_INCREASE_TIME = @"{2ddd5a84-5a71-437e-912a-db0b8c788732}";
+
+        /// <summary>
+        /// Specifies, in milliseconds, the minimum amount of time a core must be unparked before it can be parked.
+        /// </summary>
+        public const string GUID_PROCESSOR_CORE_PARKING_DECREASE_TIME = @"{dfd10d17-d5eb-45dd-877a-9a34ddd15c82}";
+
+        /// <summary>
+        /// Specifies the factor by which to decrease affinity history on each core after each check.
+        /// </summary>
+        public const string GUID_PROCESSOR_CORE_PARKING_AFFINITY_HISTORY_DECREASE_FACTOR = @"{8f7b45e3-c393-480a-878c-f67ac3d07082}";
+
+        /// <summary>
+        /// Specifies the threshold above which a core is considered to have had significant affinitized work scheduled to it while parked.
+        /// </summary>
+        public const string GUID_PROCESSOR_CORE_PARKING_AFFINITY_HISTORY_THRESHOLD = @"{5b33697b-e89d-4d38-aa46-9e7dfb7cd2f9}";
+
+        /// <summary>
+        /// Specifies the weighting given to each occurence where affinitized work was scheduled to a parked core.
+        /// </summary>
+        public const string GUID_PROCESSOR_CORE_PARKING_AFFINITY_WEIGHTING = @"{e70867f1-fa2f-4f4e-aea1-4d8a0ba23b20}";
+
+        /// <summary>
+        /// Specifies the factor by which to decrease the over utilization history on each core after the current performance check.
+        /// </summary>
+        public const string GUID_PROCESSOR_CORE_PARKING_OVER_UTILIZATION_HISTORY_DECREASE_FACTOR = @"{1299023c-bc28-4f0a-81ec-d3295a8d815d}";
+
+        /// <summary>
+        /// Specifies the threshold above which a core is considered to have been recently over utilized while parked.
+        /// </summary>
+        public const string GUID_PROCESSOR_CORE_PARKING_OVER_UTILIZATION_HISTORY_THRESHOLD = @"{9ac18e92-aa3c-4e27-b307-01ae37307129}";
+
+        /// <summary>
+        /// Specifies the weighting given to each occurence where a parked core is found to be over utilized.
+        /// </summary>
+        public const string GUID_PROCESSOR_CORE_PARKING_OVER_UTILIZATION_WEIGHTING = @"{8809c2d8-b155-42d4-bcda-0d345651b1db}";
+
+        /// <summary>
+        /// Specifies, in percentage, the busy threshold that must be met before a parked core is considered over utilized.
+        /// </summary>
+        public const string GUID_PROCESSOR_CORE_PARKING_OVER_UTILIZATION_THRESHOLD = @"{943c8cb6-6f93-4227-ad87-e9a3feec08d1}";
+
+        /// <summary>
+        /// Specifies if at least one processor per core should always remain unparked.
+        /// </summary>
+        public const string GUID_PROCESSOR_PARKING_CORE_OVERRIDE = @"{a55612aa-f624-42c6-a443-7397d064c04f}";
+
+        /// <summary>
+        /// Specifies what performance state a processor should enter when first parked.
+        /// </summary>
+        public const string GUID_PROCESSOR_PARKING_PERF_STATE = @"{447235c7-6a8d-4cc0-8e24-9eaf70b96e2b}";
+
+        /// <summary>
+        /// Specifies what performance state a processor should enter when first parked
+        /// for Processor Power Efficiency Class 1.
+        /// </summary>
+        public const string GUID_PROCESSOR_PARKING_PERF_STATE_1 = @"{447235c7-6a8d-4cc0-8e24-9eaf70b96e2c}";
+
+        /// <summary>
+        /// Specify the busy threshold that must be met when calculating the concurrency of a node's workload.
+        /// </summary>
+        public const string GUID_PROCESSOR_PARKING_CONCURRENCY_THRESHOLD = @"{2430ab6f-a520-44a2-9601-f7f23b5134b1}";
+
+        /// <summary>
+        /// Specify the busy threshold that must be met by all cores in a concurrency set to unpark an extra core.
+        /// </summary>
+        public const string GUID_PROCESSOR_PARKING_HEADROOM_THRESHOLD = @"{f735a673-2066-4f80-a0c5-ddee0cf1bf5d}";
+
+        /// <summary>
+        /// Specify the percentage utilization used to calculate the distribution concurrency.
+        /// </summary>
+        public const string GUID_PROCESSOR_PARKING_DISTRIBUTION_THRESHOLD = @"{4bdaf4e9-d103-46d7-a5f0-6280121616ef}";
+
+        /// <summary>
+        /// Specifies the number of perf time check intervals to average utility over.
+        /// </summary>
+        public const string GUID_PROCESSOR_PERF_HISTORY = @"{7d24baa7-0b84-480f-840c-1b0743c00f5f}";
+
+        /// <summary>
+        /// Specifies the number of perf time check intervals to average utility over in
+        /// Processor Power Efficiency Class 1.
+        /// </summary>
+        public const string GUID_PROCESSOR_PERF_HISTORY_1 = @"{7d24baa7-0b84-480f-840c-1b0743c00f60}";
+
+        /// <summary>
+        /// Specifies the number of perf time check intervals to average utility over to
+        /// determine performance increase.
+        /// </summary>
+        [Obsolete("This power setting is DEPRECATED.")]
+        public const string GUID_PROCESSOR_PERF_INCREASE_HISTORY = @"{99b3ef01-752f-46a1-80fb-7730011f2354}";
+
+        /// <summary>
+        /// Specifies the number of perf time check intervals to average utility over to
+        /// determine performance decrease.
+        /// </summary>
+        [Obsolete("This power setting is DEPRECATED.")]
+        public const string GUID_PROCESSOR_PERF_DECREASE_HISTORY = @"{0300f6f8-abd6-45a9-b74f-4908691a40b5}";
+
+        /// <summary>
+        /// Specifies the number of perf time check intervals to average utility over for
+        /// core parking.
+        /// </summary>
+        [Obsolete("This power setting is DEPRECATED.")]
+        public const string GUID_PROCESSOR_PERF_CORE_PARKING_HISTORY = @"{77d7f282-8f1a-42cd-8537-45450a839be8}";
+
+        /// <summary>
+        /// Specifies whether latency sensitivity hints should be taken into account by
+        /// the perf state engine.
+        /// </summary>
+        [Obsolete("This power setting is DEPRECATED.")]
+        public const string GUID_PROCESSOR_PERF_LATENCY_HINT = @"{0822df31-9c83-441c-a079-0de4cf009c7b}";
+
+        /// <summary>
+        /// Specifies the processor performance state in response to latency sensitivity hints.
+        /// </summary>
+        public const string GUID_PROCESSOR_PERF_LATENCY_HINT_PERF = @"{619b7505-003b-4e82-b7a6-4dd29c300971}";
+
+        /// <summary>
+        /// Specifies the processor performance state in response to latency sensitivity
+        /// hints for Processor Power Efficiency Class 1.
+        /// </summary>
+        public const string GUID_PROCESSOR_PERF_LATENCY_HINT_PERF_1 = @"{619b7505-003b-4e82-b7a6-4dd29c300972}";
+
+        /// <summary>
+        /// Specifies the minimum unparked processors when a latency hint is active
+        /// (in a percentage).
+        /// </summary>
+        public const string GUID_PROCESSOR_LATENCY_HINT_MIN_UNPARK = @"{616cdaa5-695e-4545-97ad-97dc2d1bdd88}";
+
+        /// <summary>
+        /// Specifies the minimum unparked processors when a latency hint is active
+        /// for Processor Power Efficiency Class 1 (in a percentage).
+        /// </summary>
+        public const string GUID_PROCESSOR_LATENCY_HINT_MIN_UNPARK_1 = @"{616cdaa5-695e-4545-97ad-97dc2d1bdd89}";
+
+        /// <summary>
+        /// Specifies whether the core parking engine should distribute processor
+        /// utility.
+        /// </summary>
+        public const string GUID_PROCESSOR_DISTRIBUTE_UTILITY = @"{e0007330-f589-42ed-a401-5ddb10e785d3}";
+
+        //
+        // GUIDS to control PPM settings on computer system with more than one
+        // Processor Power Efficiency Classes (heterogeneous system).
+        // -----------------
+
+        /// <summary>
+        /// Specifies the current active heterogeneous policy.
+        /// </summary>
+        public const string GUID_PROCESSOR_HETEROGENEOUS_POLICY = @"{7f2f5cfa-f10c-4823-b5e1-e93ae85f46b5}";
+
+        /// <summary>
+        /// Specifies the number of perf check cycles required to decrease the number of
+        /// Processor Power Efficiency Class 1 processors.
+        /// </summary>
+        public const string GUID_PROCESSOR_HETERO_DECREASE_TIME = @"{7f2492b6-60b1-45e5-ae55-773f8cd5caec}";
+
+        /// <summary>
+        /// Specifies the number of perf check cycles required to increase the number of
+        /// Processor Power Efficiency Class 1 processors.
+        /// </summary>
+        public const string GUID_PROCESSOR_HETERO_INCREASE_TIME = @"{4009efa7-e72d-4cba-9edf-91084ea8cbc3}";
+
+        /// <summary>
+        /// Specifies the performance level (in units of Processor Power Efficiency
+        /// Class 0 processor performance) at which the number of Processor Power
+        /// Efficiency Class 1 processors is decreased.
+        /// </summary>
+        public const string GUID_PROCESSOR_HETERO_DECREASE_THRESHOLD = @"{f8861c27-95e7-475c-865b-13c0cb3f9d6b}";
+
+        /// <summary>
+        /// Specifies the performance level (in units of Processor Power Efficiency
+        /// Class 0 processor performance) at which the number of Processor Power
+        /// Efficiency Class 1 processors is increased.
+        /// </summary>
+        public const string GUID_PROCESSOR_HETERO_INCREASE_THRESHOLD = @"{b000397d-9b0b-483d-98c9-692a6060cfbf}";
+
+        /// <summary>
+        /// Specifies the performance target floor of a Processor Power Efficiency
+        /// Class 0 processor when the system unparks Processor Power Efficiency Class 1
+        /// processor(s).
+        /// </summary>
+        public const string GUID_PROCESSOR_CLASS0_FLOOR_PERF = @"{fddc842b-8364-4edc-94cf-c17f60de1c80}";
+
+        /// <summary>
+        /// Specifies the initial performance target of a Processor Power Efficiency
+        /// Class 1 processor when the system makes a transition up from zero Processor
+        /// Power Efficiency Class 1 processors.
+        /// </summary>
+        public const string GUID_PROCESSOR_CLASS1_INITIAL_PERF = @"{1facfc65-a930-4bc5-9f38-504ec097bbc0}";
+
+        /// <summary>
+        /// Specifies the scheduling policy for threads in a given QoS class.
+        /// </summary>
+        public const string GUID_PROCESSOR_THREAD_SCHEDULING_POLICY = @"{93b8b6dc-0698-4d1c-9ee4-0644e900c85d}";
+
+        /// <summary>
+        /// Specifies the scheduling policy for short running threads in a given QoS
+        /// class.
+        /// </summary>
+        public const string GUID_PROCESSOR_SHORT_THREAD_SCHEDULING_POLICY = @"{bae08b81-2d5e-4688-ad6a-13243356654b}";
+
+        /// <summary>
+        /// Specifies active vs passive cooling.  Although not directly related to
+        /// processor settings, it is the processor that gets throttled if we're doing
+        /// passive cooling, so it is fairly strongly related.
+        /// </summary>
+        public const string GUID_SYSTEM_COOLING_POLICY = @"{94D3A615-A899-4AC5-AE2B-E4D8F634367F}";
+
+        // Lock Console on Wake
+        // --------------------
+        //
+
+        /// <summary>
+        /// Specifies the behavior of the system when we wake from standby or
+        /// hibernate.  If this is set, then we will cause the console to lock
+        /// after we resume.
+        /// </summary>
+        public const string GUID_LOCK_CONSOLE_ON_WAKE = @"{0E796BDB-100D-47D6-A2D5-F7D2DAA51F51}";
+
+        // Device idle characteristics
+        // ---------------------------
+
+        /// <summary>
+        /// Specifies whether to use the "performance" or "conservative" timeouts for
+        /// device idle management.
+        /// </summary>
+        public const string GUID_DEVICE_IDLE_POLICY = @"{4faab71a-92e5-4726-b531-224559672d19}";
+
+        public const int POWER_DEVICE_IDLE_POLICY_PERFORMANCE = 0;
+        public const int POWER_DEVICE_IDLE_POLICY_CONSERVATIVE = 1;
+
+        /// <summary>
+        /// Specifies standby connectivity preference.
+        /// </summary>
+        public const string GUID_CONNECTIVITY_IN_STANDBY = @"{F15576E8-98B7-4186-B944-EAFA664402D9}";
+
+        public const int POWER_CONNECTIVITY_IN_STANDBY_DISABLED = 0;
+        public const int POWER_CONNECTIVITY_IN_STANDBY_ENABLED = 1;
+        public const int POWER_CONNECTIVITY_IN_STANDBY_SYSTEM_MANAGED = 2;
+
+        /// <summary>
+        /// Specifies the mode for disconnected standby.
+        /// </summary>
+        public const string GUID_DISCONNECTED_STANDBY_MODE = @"{68AFB2D9-EE95-47A8-8F50-4115088073B1}";
+
+        public const int POWER_DISCONNECTED_STANDBY_MODE_NORMAL = 0;
+        public const int POWER_DISCONNECTED_STANDBY_MODE_AGGRESSIVE = 1;
+
+        // AC/DC power source
+        // ------------------
+        //
+
+        /// <summary>
+        /// Specifies the power source for the system.
+        /// </summary>
+        /// <remarks>
+        /// Consumers may register for
+        /// notification when the power source changes and will be notified with
+        /// one of 3 values:
+        /// 0 - Indicates the system is being powered by an AC power source.
+        /// 1 - Indicates the system is being powered by a DC power source.
+        /// 2 - Indicates the system is being powered by a short-term DC power
+        ///     source.  For example, this would be the case if the system is
+        ///     being powed by a short-term battery supply in a backing UPS
+        ///     system.  When this value is recieved, the consumer should make
+        ///     preparations for either a system hibernate or system shutdown.
+        /// </remarks>
+        public const string GUID_ACDC_POWER_SOURCE = @"{5D3E9A59-E9D5-4B00-A6BD-FF34FF516548}";
+
+        // Lid state changes
+        // -----------------
+
+        /// <summary>
+        /// Specifies the current state of the lid (open or closed). The callback won't
+        /// be called at all until a lid device is found and its current state is known.
+        /// </summary>
+        /// <remarks>
+        /// Values:
+        /// 0 - closed
+        /// 1 - opened
+        /// </remarks>
+        public const string GUID_LIDSWITCH_STATE_CHANGE = @"{BA3E0F4D-B817-4094-A2D1-D56379E6A0F3}";
+
+        // Battery status changes
+        // ----------------------
+        //
+
+        /// <summary>
+        /// <para>
+        /// Specifies the percentage of battery life remaining.  The consumer
+        /// may register for notification in order to track battery life in
+        /// a fine-grained manner.
+        /// </para>
+        /// <para>
+        /// Once registered, the consumer can expect to be notified as the battery
+        /// life percentage changes.
+        /// </para>
+        /// <para>
+        /// The consumer will recieve a value between 0 and 100 (inclusive) which
+        /// indicates percent battery life remaining.
+        /// </para>
+        /// </summary>
+        public const string GUID_BATTERY_PERCENTAGE_REMAINING = @"{A7AD8041-B45A-4CAE-87A3-EECBB468A9E1}";
+
+        /// <summary>
+        /// <para>
+        /// Specifies change in number of batteries present on the system. The consumer
+        /// may register for notification in order to track change in number of batteries
+        /// available on a system.
+        /// </para>
+        /// <para>
+        /// Once registered, the consumer can expect to be notified whenever the
+        /// batteries are added or removed from the system.
+        /// </para>
+        /// <para>
+        /// The consumer will recieve a value indicating number of batteries currently
+        /// present on the system.
+        /// </para>
+        /// </summary>
+        public const string GUID_BATTERY_COUNT = @"{7d263f15-fca4-49e5-854b-a9f2bfbd5c24}";
+
+        /// <summary>
+        /// Global notification indicating to listeners user activity/presence accross
+        /// all sessions in the system (Present, NotPresent, Inactive)
+        /// </summary>
+        public const string GUID_GLOBAL_USER_PRESENCE = @"{786e8a1d-b427-4344-9207-09e70bdcbea9}";
+
+        /// <summary>
+        /// Session specific notification indicating to listeners whether or not the display
+        /// related to the given session is on/off/dim
+        /// </summary>
+        /// <remarks>
+        /// This is a session-specific notification, sent only to interactive
+        /// session registrants. Session 0 and kernel mode consumers do not receive
+        /// this notification.
+        /// </remarks>
+        public const string GUID_SESSION_DISPLAY_STATUS = @"{2b84c20e-ad23-4ddf-93db-05ffbd7efca5}";
+
+        /// <summary>
+        /// Session specific notification indicating to listeners user activity/presence
+        /// (Present, NotPresent, Inactive)
+        /// </summary>
+        /// <remarks>
+        /// <note>
+        ///      This is a session-specific notification, sent only to interactive
+        ///      session registrants. Session 0 and kernel mode consumers do not receive
+        ///      this notification.
+        /// </note>
+        /// </remarks>
+        public const string GUID_SESSION_USER_PRESENCE = @"{3c0f4548-c03f-4c4d-b9f2-237ede686376}";
+
+        /// <summary>
+        /// Notification to listeners that the system is fairly busy and won't be moving
+        /// into an idle state any time soon.  This can be used as a hint to listeners
+        /// that now might be a good time to do background tasks.
+        /// </summary>
+        public const string GUID_IDLE_BACKGROUND_TASK = @"{515C31D8-F734-163D-A0FD-11A08C91E8F1}";
+
+        /// <summary>
+        /// Notification to listeners that the system is fairly busy and won't be moving
+        /// into an idle state any time soon.  This can be used as a hint to listeners
+        /// that now might be a good time to do background tasks.
+        /// </summary>
+        public const string GUID_BACKGROUND_TASK_NOTIFICATION = @"{CF23F240-2A54-48D8-B114-DE1518FF052E}";
+
+        /// <summary>
+        /// Define a GUID that will represent the action of a direct experience button
+        /// on the platform.  Users will register for this DPPE setting and recieve
+        /// notification when the h/w button is pressed.
+        /// </summary>
+        public const string GUID_APPLAUNCH_BUTTON = @"{1A689231-7399-4E9A-8F99-B71F999DB3FA}";
+
+        // PCI Express power settings
+        // ------------------------
+        //
+
+        /// <summary>
+        /// Specifies the subgroup which will contain all of the PCI Express
+        /// settings for a single policy.
+        /// </summary>
+        public const string GUID_PCIEXPRESS_SETTINGS_SUBGROUP = @"{501a4d13-42af-4429-9fd1-a8218c268e20}";
+
+        /// <summary>
+        /// Specifies the PCI Express ASPM power policy.
+        /// </summary>
+        public const string GUID_PCIEXPRESS_ASPM_POLICY = @"{ee12f906-d277-404b-b6da-e5fa1a576df5}";
+
+        // POWER Shutdown settings
+        // ------------------------
+        //
+
+        /// <summary>
+        /// Specifies if forced shutdown should be used for all button and lid initiated
+        /// shutdown actions.
+        /// </summary>
+        public const string GUID_ENABLE_SWITCH_FORCED_SHUTDOWN = @"{833a6b62-dfa4-46d1-82f8-e09e34d029d6}";
+
+        // Interrupt Steering power settings
+        // ------------------------
+        //
+
+        public const string GUID_INTSTEER_SUBGROUP = @"{48672f38-7a9a-4bb2-8bf8-3d85be19de4e}";
+
+        public const string GUID_INTSTEER_MODE = @"{2bfc24f9-5ea2-4801-8213-3dbae01aa39d}";
+
+        public const string GUID_INTSTEER_LOAD_PER_PROC_TRIGGER = @"{73cde64d-d720-4bb2-a860-c755afe77ef2}";
+
+        public const string GUID_INTSTEER_TIME_UNPARK_TRIGGER = @"{d6ba4903-386f-4c2c-8adb-5c21b3328d25}";
+
+        // Graphics power settings
+        // ------------------------
+        //
+
+        /// <summary>
+        /// Specified the subgroup which contains all inbox graphics settings.
+        /// </summary>
+        public const string GUID_GRAPHICS_SUBGROUP = @"{5fb4938d-1ee8-4b0f-9a3c-5036b0ab995c}";
+
+        /// <summary>
+        /// Specifies the GPU preference policy.
+        /// </summary>
+        public const string GUID_GPU_PREFERENCE_POLICY = @"{dd848b2a-8a5d-4451-9ae2-39cd41658f6c}";
+
+        // Other miscellaneous power notification GUIDs
+        // ------------------------
+        //
+
+        /// <summary>
+        /// Specifies whether mixed reality mode is engaged.
+        /// </summary>
+        public const string GUID_MIXED_REALITY_MODE = @"{1e626b4e-cf04-4f8d-9cc7-c97c5b0f2391}";
+
+        /// <summary>
+        /// Specifies a change (start/end) in System Power Report's Active Session.
+        /// </summary>
+        public const string GUID_SPR_ACTIVE_SESSION_CHANGE = @"{0e24ce38-c393-4742-bdb1-744f4b9ee08e}";
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19775
         public const int RTL_UMS_VERSION = 0x0100;
     }

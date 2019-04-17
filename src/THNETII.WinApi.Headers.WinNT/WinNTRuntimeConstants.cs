@@ -582,5 +582,1236 @@ namespace THNETII.WinApi.Native.WinNT
 
         public static readonly ACCESS_MASK DUPLICATE_CLOSE_SOURCE = new ACCESS_MASK(WinNTConstants.DUPLICATE_CLOSE_SOURCE);
         public static readonly ACCESS_MASK DUPLICATE_SAME_ACCESS = new ACCESS_MASK(WinNTConstants.DUPLICATE_SAME_ACCESS);
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 13573
+        //
+        // =========================================
+        // Define GUIDs which represent well-known power schemes
+        // =========================================
+        //
+
+        /// <summary>
+        /// Maximum Power Savings - indicates that very aggressive power savings measures will be used to help
+        ///                         stretch battery life.
+        /// </summary>
+        public static readonly Guid GUID_MAX_POWER_SAVINGS = new Guid(WinNTConstants.GUID_MAX_POWER_SAVINGS);
+
+        /// <summary>
+        /// No Power Savings - indicates that almost no power savings measures will be used.
+        /// </summary>
+        public static readonly Guid GUID_MIN_POWER_SAVINGS = new Guid(WinNTConstants.GUID_MIN_POWER_SAVINGS);
+
+        /// <summary>
+        /// Typical Power Savings - indicates that fairly aggressive power savings measures will be used.
+        /// </summary>
+        public static readonly Guid GUID_TYPICAL_POWER_SAVINGS = new Guid(WinNTConstants.GUID_TYPICAL_POWER_SAVINGS);
+
+        /// <summary>
+        /// This is a special GUID that represents "no subgroup" of settings.  That is, it indicates
+        /// that settings that are in the root of the power policy hierarchy as opposed to settings
+        /// that are buried under a subgroup of settings.  This should be used when querying for
+        /// power settings that may not fall into a subgroup.
+        /// </summary>
+        public static readonly Guid NO_SUBGROUP_GUID = new Guid(WinNTConstants.NO_SUBGROUP_GUID);
+
+        /// <summary>
+        /// This is a special GUID that represents "every power scheme".  That is, it indicates
+        /// that any write to this power scheme should be reflected to every scheme present.
+        /// This allows users to write a single setting once and have it apply to all schemes.  They
+        /// can then apply custom settings to specific power schemes that they care about.
+        /// </summary>
+        public static readonly Guid ALL_POWERSCHEMES_GUID = new Guid(WinNTConstants.ALL_POWERSCHEMES_GUID);
+
+        /// <summary>
+        /// This is a special GUID that represents a 'personality' that each power scheme will have.
+        /// In other words, each power scheme will have this key indicating "I'm most like *this* base
+        /// power scheme."
+        /// </summary>
+        /// <value>
+        /// This individual setting will have one of three settings:
+        /// <list type="bullet">
+        /// <item><see cref="GUID_MAX_POWER_SAVINGS"/></item>
+        /// <item><see cref="GUID_MIN_POWER_SAVINGS"/></item>
+        /// <item><see cref="GUID_TYPICAL_POWER_SAVINGS"/></item>
+        /// </list>
+        /// </value>
+        /// <remarks>
+        /// This allows several features:
+        /// <list type="number">
+        /// <item>
+        ///    Drivers and applications can register for notification of this GUID.  So when this power
+        ///    scheme is activiated, this GUID's setting will be sent across the system and drivers/applications
+        ///    can see "GUID_MAX_POWER_SAVINGS" which will tell them in a generic fashion "get real aggressive
+        ///    about conserving power".
+        /// </item>
+        /// <item>
+        ///    UserB may install a driver or application which creates power settings, and UserB may modify
+        ///    those power settings.  Now UserA logs in.  How does he see those settings?  They simply don't
+        ///    exist in his private power key.  Well they do exist over in the system power key.  When we
+        ///    enumerate all the power settings in this system power key and don't find a corresponding entry
+        ///    in the user's private power key, then we can go look at this "personality" key in the users
+        ///    power scheme.  We can then go get a default value for the power setting, depending on which
+        ///    "personality" power scheme is being operated on.  Here's an example:
+        ///    <list type="number">
+        ///    <item>
+        ///       UserB installs an application that creates a power setting Seetting1
+        ///    </item>
+        ///    <item>
+        ///       UserB changes Setting1 to have a value of 50 because that's one of the possible settings
+        ///       available for setting1.
+        ///    </item>
+        ///    <item>
+        ///       UserB logs out
+        ///    </item>
+        ///    <item>
+        ///       UserA logs in and his active power scheme is some custom scheme that was derived from
+        ///       the <see cref="GUID_TYPICAL_POWER_SAVINGS"/>.  But remember that UserA has no setting1 in his
+        ///       private power key.
+        ///    </item>
+        ///    <item>
+        ///       When activating UserA's selected power scheme, all power settings in the system power key will
+        ///       be enumerated (including Setting1).
+        ///    </item>
+        ///    <item>
+        ///       The power manager will see that UserA has no Setting1 power setting in his private power scheme.
+        ///    </item>
+        ///    <item>
+        ///       The power manager will query UserA's power scheme for its personality and retrieve
+        ///       <see cref="GUID_TYPICAL_POWER_SAVINGS"/>.
+        ///    </item>
+        ///    <item>
+        ///       The power manager then looks in Setting1 in the system power key and looks in its set of default
+        ///       values for the corresponding value for <see cref="GUID_TYPICAL_POWER_SAVINGS"/> power schemes.
+        ///    </item>
+        ///    <item>
+        ///       This derived power setting is applied.
+        ///    </item>
+        ///    </list>
+        /// </item>
+        /// </list>
+        /// </remarks>
+        public static readonly Guid GUID_POWERSCHEME_PERSONALITY = new Guid(WinNTConstants.GUID_POWERSCHEME_PERSONALITY);
+
+        /// <summary>
+        /// Define a special GUID which will be used to define the active power scheme.
+        /// User will register for this power setting GUID, and when the active power
+        /// scheme changes, they'll get a callback where the payload is the GUID
+        /// representing the active powerscheme.
+        /// </summary>
+        public static readonly Guid GUID_ACTIVE_POWERSCHEME = new Guid(WinNTConstants.GUID_ACTIVE_POWERSCHEME);
+
+        //
+        // =========================================
+        // Define GUIDs which represent well-known power settings
+        // =========================================
+        //
+
+        // Idle resiliency settings
+        // -------------------------
+
+        /// <summary>
+        /// Specifies the subgroup which will contain all of the idle resiliency
+        /// settings for a single policy.
+        /// </summary>
+        public static readonly Guid GUID_IDLE_RESILIENCY_SUBGROUP = new Guid(WinNTConstants.GUID_IDLE_RESILIENCY_SUBGROUP);
+
+        /// <summary>
+        /// Specifies the maximum clock interrupt period (in ms)
+        /// </summary>
+        [Obsolete("This power setting is DEPRECATED.")]
+        public static readonly Guid GUID_IDLE_RESILIENCY_PERIOD = new Guid(WinNTConstants.GUID_IDLE_RESILIENCY_PERIOD);
+
+        /// <summary>
+        /// Specifies the deep sleep policy setting.
+        /// This is intended to override the <see cref="GUID_IDLE_RESILIENCY_PERIOD"/>
+        /// </summary>
+        public static readonly Guid GUID_DEEP_SLEEP_ENABLED = new Guid(WinNTConstants.GUID_DEEP_SLEEP_ENABLED);
+
+        /// <summary>
+        /// Specifies the platform idle state index associated with idle resiliency
+        /// period.
+        /// </summary>
+        [Obsolete("This power setting is DEPRECATED.")]
+        public static readonly Guid GUID_DEEP_SLEEP_PLATFORM_STATE = new Guid(WinNTConstants.GUID_DEEP_SLEEP_PLATFORM_STATE);
+
+        /// <summary>
+        /// Specifies (in milliseconds) how long we wait after the last disk access
+        /// before we power off the disk in case when IO coalescing is active.
+        /// </summary>
+        public static readonly Guid GUID_DISK_COALESCING_POWERDOWN_TIMEOUT = new Guid(WinNTConstants.GUID_DISK_COALESCING_POWERDOWN_TIMEOUT);
+
+        /// <summary>
+        /// Specifies (in seconds) how long we wait after the CS Enter before
+        /// we deactivate execution required request.
+        /// </summary>
+        /// <remarks>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Value</term><description>Meaning</description></listheader>
+        /// <item><term>0</term><description>implies execution power requests are disabled and have no effect</description></item>
+        /// <item><term>-1</term><description>implies execution power requests are never deactivated</description></item>
+        /// </list>
+        /// </para>
+        /// <note>
+        /// Execution required power requests are mapped into system required
+        /// power requests on non-AoAc machines and this value has no effect.
+        /// </note>
+        /// </remarks>
+        public static readonly Guid GUID_EXECUTION_REQUIRED_REQUEST_TIMEOUT = new Guid(WinNTConstants.GUID_EXECUTION_REQUIRED_REQUEST_TIMEOUT);
+
+
+        // Video settings
+        // --------------
+
+        /// <summary>
+        /// Specifies the subgroup which will contain all of the video
+        /// settings for a single policy.
+        /// </summary>
+        public static readonly Guid GUID_VIDEO_SUBGROUP = new Guid(WinNTConstants.GUID_VIDEO_SUBGROUP);
+
+        /// <summary>
+        /// Specifies (in seconds) how long we wait after the last user input has been
+        /// received before we power off the video.
+        /// </summary>
+        public static readonly Guid GUID_VIDEO_POWERDOWN_TIMEOUT = new Guid(WinNTConstants.GUID_VIDEO_POWERDOWN_TIMEOUT);
+
+        /// <summary>
+        /// Specifies whether adaptive display dimming is turned on or off.
+        /// </summary>
+        [Obsolete("This setting is DEPRECATED in Windows 8.1")]
+        public static readonly Guid GUID_VIDEO_ANNOYANCE_TIMEOUT = new Guid(WinNTConstants.GUID_VIDEO_ANNOYANCE_TIMEOUT);
+
+        /// <summary>
+        /// Specifies how much adaptive dim time out will be increased by.
+        /// </summary>
+        [Obsolete("This setting is DEPRECATED in Windows 8.1")]
+        public static readonly Guid GUID_VIDEO_ADAPTIVE_PERCENT_INCREASE = new Guid(WinNTConstants.GUID_VIDEO_ADAPTIVE_PERCENT_INCREASE);
+
+        /// <summary>
+        /// Specifies (in seconds) how long we wait after the last user input has been
+        /// received before we dim the video.
+        /// </summary>
+        public static readonly Guid GUID_VIDEO_DIM_TIMEOUT = new Guid(WinNTConstants.GUID_VIDEO_DIM_TIMEOUT);
+
+        /// <summary>
+        /// Specifies if the operating system should use adaptive timers (based on
+        /// previous behavior) to power down the video.
+        /// </summary>
+        public static readonly Guid GUID_VIDEO_ADAPTIVE_POWERDOWN = new Guid(WinNTConstants.GUID_VIDEO_ADAPTIVE_POWERDOWN);
+
+        /// <summary>
+        /// Specifies if the monitor is currently being powered or not.
+        /// </summary>
+        public static readonly Guid GUID_MONITOR_POWER_ON = new Guid(WinNTConstants.GUID_MONITOR_POWER_ON);
+
+        /// <summary>
+        /// Monitor brightness policy when in normal state.
+        /// </summary>
+        public static readonly Guid GUID_DEVICE_POWER_POLICY_VIDEO_BRIGHTNESS = new Guid(WinNTConstants.GUID_DEVICE_POWER_POLICY_VIDEO_BRIGHTNESS);
+
+        /// <summary>
+        /// Monitor brightness policy when in dim state.
+        /// </summary>
+        public static readonly Guid GUID_DEVICE_POWER_POLICY_VIDEO_DIM_BRIGHTNESS = new Guid(WinNTConstants.GUID_DEVICE_POWER_POLICY_VIDEO_DIM_BRIGHTNESS);
+
+        /// <summary>
+        /// Current monitor brightness.
+        /// </summary>
+        public static readonly Guid GUID_VIDEO_CURRENT_MONITOR_BRIGHTNESS = new Guid(WinNTConstants.GUID_VIDEO_CURRENT_MONITOR_BRIGHTNESS);
+
+        /// <summary>
+        /// Specifies if the operating system should use ambient light sensor to change
+        /// adaptively the display's brightness.
+        /// </summary>
+        public static readonly Guid GUID_VIDEO_ADAPTIVE_DISPLAY_BRIGHTNESS = new Guid(WinNTConstants.GUID_VIDEO_ADAPTIVE_DISPLAY_BRIGHTNESS);
+
+        /// <summary>
+        /// Specifies a change in the current monitor's display state.
+        /// </summary>
+        public static readonly Guid GUID_CONSOLE_DISPLAY_STATE = new Guid(WinNTConstants.GUID_CONSOLE_DISPLAY_STATE);
+
+        /// <summary>
+        /// Defines a guid for enabling/disabling the ability to create display required
+        /// power requests.
+        /// </summary>
+        public static readonly Guid GUID_ALLOW_DISPLAY_REQUIRED = new Guid(WinNTConstants.GUID_ALLOW_DISPLAY_REQUIRED);
+
+        /// <summary>
+        /// Specifies the video power down timeout (in seconds) after the interactive
+        /// console is locked (and sensors indicate UserNotPresent). Value 0
+        /// effectively disables this feature.
+        /// </summary>
+        public static readonly Guid GUID_VIDEO_CONSOLE_LOCK_TIMEOUT = new Guid(WinNTConstants.GUID_VIDEO_CONSOLE_LOCK_TIMEOUT);
+
+
+        // Adaptive power behavior settings
+        // --------------------------------
+
+        public static readonly Guid GUID_ADAPTIVE_POWER_BEHAVIOR_SUBGROUP = new Guid(WinNTConstants.GUID_ADAPTIVE_POWER_BEHAVIOR_SUBGROUP);
+
+        /// <summary>
+        /// Specifies the input timeout (in seconds) to be used to indicate UserUnkown.
+        /// Value 0 effectively disables this feature.
+        /// </summary>
+        public static readonly Guid GUID_NON_ADAPTIVE_INPUT_TIMEOUT = new Guid(WinNTConstants.GUID_NON_ADAPTIVE_INPUT_TIMEOUT);
+
+        /// <summary>
+        /// Specifies a change in the input controller(s) global system's state:
+        /// e.g. enabled, suppressed, filtered.
+        /// </summary>
+        public static readonly Guid GUID_ADAPTIVE_INPUT_CONTROLLER_STATE = new Guid(WinNTConstants.GUID_ADAPTIVE_INPUT_CONTROLLER_STATE);
+
+        // Harddisk settings
+        // -----------------
+
+        /// <summary>
+        /// Specifies the subgroup which will contain all of the harddisk
+        /// settings for a single policy.
+        /// </summary>
+        public static readonly Guid GUID_DISK_SUBGROUP = new Guid(WinNTConstants.GUID_DISK_SUBGROUP);
+
+        /// <summary>
+        /// Specifies a maximum power consumption level.
+        /// </summary>
+        public static readonly Guid GUID_DISK_MAX_POWER = new Guid(WinNTConstants.GUID_DISK_MAX_POWER);
+
+        /// <summary>
+        /// Specifies (in seconds) how long we wait after the last disk access
+        /// before we power off the disk.
+        /// </summary>
+        public static readonly Guid GUID_DISK_POWERDOWN_TIMEOUT = new Guid(WinNTConstants.GUID_DISK_POWERDOWN_TIMEOUT);
+
+        /// <summary>
+        /// Specifies (in milliseconds) how long we wait after the last disk access
+        /// before we power off the disk taking into account if IO coalescing is active.
+        /// </summary>
+        public static readonly Guid GUID_DISK_IDLE_TIMEOUT = new Guid(WinNTConstants.GUID_DISK_IDLE_TIMEOUT);
+
+        /// <summary>
+        /// Specifies the amount of contiguous disk activity time to ignore when
+        /// calculating disk idleness.
+        /// </summary>
+        public static readonly Guid GUID_DISK_BURST_IGNORE_THRESHOLD = new Guid(WinNTConstants.GUID_DISK_BURST_IGNORE_THRESHOLD);
+
+        /// <summary>
+        /// Specifies if the operating system should use adaptive timers (based on
+        /// previous behavior) to power down the disk,
+        /// </summary>
+        public static readonly Guid GUID_DISK_ADAPTIVE_POWERDOWN = new Guid(WinNTConstants.GUID_DISK_ADAPTIVE_POWERDOWN);
+
+        // System sleep settings
+        // ---------------------
+
+        /// <summary>
+        /// Specifies the subgroup which will contain all of the sleep
+        /// settings for a single policy.
+        /// </summary>
+        public static readonly Guid GUID_SLEEP_SUBGROUP = new Guid(WinNTConstants.GUID_SLEEP_SUBGROUP);
+
+        /// <summary>
+        /// Specifies an idle treshold percentage (0-100). The system must be this idle
+        /// over a period of time in order to idle to sleep.
+        /// </summary>
+        [Obsolete("DEPRECATED IN WINDOWS 6.1")]
+        public static readonly Guid GUID_SLEEP_IDLE_THRESHOLD = new Guid(WinNTConstants.GUID_SLEEP_IDLE_THRESHOLD);
+
+        /// <summary>
+        /// Specifies (in seconds) how long we wait after the system is deemed
+        /// "idle" before moving to standby (S1, S2 or S3).
+        /// </summary>
+        public static readonly Guid GUID_STANDBY_TIMEOUT = new Guid(WinNTConstants.GUID_STANDBY_TIMEOUT);
+
+        /// <summary>
+        /// Specifies (in seconds) how long the system should go back to sleep after
+        /// waking unattended. 0 indicates that the standard standby/hibernate idle
+        /// policy should be used instead.
+        /// </summary>
+        public static readonly Guid GUID_UNATTEND_SLEEP_TIMEOUT = new Guid(WinNTConstants.GUID_UNATTEND_SLEEP_TIMEOUT);
+
+        /// <summary>
+        /// Specifies (in seconds) how long we wait after the system is deemed
+        /// "idle" before moving to hibernate (S4).
+        /// </summary>
+        public static readonly Guid GUID_HIBERNATE_TIMEOUT = new Guid(WinNTConstants.GUID_HIBERNATE_TIMEOUT);
+
+        /// <summary>
+        /// Specifies whether or not Fast S4 should be enabled if the system supports it
+        /// </summary>
+        public static readonly Guid GUID_HIBERNATE_FASTS4_POLICY = new Guid(WinNTConstants.GUID_HIBERNATE_FASTS4_POLICY);
+
+        /// <summary>
+        /// Define a GUID for controlling the criticality of sleep state transitions.
+        /// Critical sleep transitions do not query applications, services or drivers
+        /// before transitioning the platform to a sleep state.
+        /// </summary>
+        public static readonly Guid GUID_CRITICAL_POWER_TRANSITION = new Guid(WinNTConstants.GUID_CRITICAL_POWER_TRANSITION);
+
+        /// <summary>
+        /// Specifies if the system is entering or exiting 'away mode'.
+        /// </summary>
+        public static readonly Guid GUID_SYSTEM_AWAYMODE = new Guid(WinNTConstants.GUID_SYSTEM_AWAYMODE);
+
+        /// <summary>
+        /// Specify whether away mode is allowed
+        /// </summary>
+        public static readonly Guid GUID_ALLOW_AWAYMODE = new Guid(WinNTConstants.GUID_ALLOW_AWAYMODE);
+
+        /// <summary>
+        /// Defines a guid to control User Presence Prediction mode.
+        /// </summary>
+        public static readonly Guid GUID_USER_PRESENCE_PREDICTION = new Guid(WinNTConstants.GUID_USER_PRESENCE_PREDICTION);
+
+        /// <summary>
+        /// Defines a guid to control Standby Budget Grace Period.
+        /// </summary>
+        public static readonly Guid GUID_STANDBY_BUDGET_GRACE_PERIOD = new Guid(WinNTConstants.GUID_STANDBY_BUDGET_GRACE_PERIOD);
+
+        /// <summary>
+        /// Defines a guid to control Standby Budget Percent.
+        /// </summary>
+        public static readonly Guid GUID_STANDBY_BUDGET_PERCENT = new Guid(WinNTConstants.GUID_STANDBY_BUDGET_PERCENT);
+
+        /// <summary>
+        /// Defines a guid to control Standby Reserve Grace Period.
+        /// </summary>
+        public static readonly Guid GUID_STANDBY_RESERVE_GRACE_PERIOD = new Guid(WinNTConstants.GUID_STANDBY_RESERVE_GRACE_PERIOD);
+
+        /// <summary>
+        /// Defines a guid to control Standby Reserve Time.
+        /// </summary>
+        public static readonly Guid GUID_STANDBY_RESERVE_TIME = new Guid(WinNTConstants.GUID_STANDBY_RESERVE_TIME);
+
+        /// <summary>
+        /// Defines a guid to control Standby Reset Percentage.
+        /// </summary>
+        public static readonly Guid GUID_STANDBY_RESET_PERCENT = new Guid(WinNTConstants.GUID_STANDBY_RESET_PERCENT);
+
+        /// <summary>
+        /// Defines a guid for enabling/disabling standby (S1-S3) states. This does not
+        /// affect hibernation (S4).
+        /// </summary>
+        public static readonly Guid GUID_ALLOW_STANDBY_STATES = new Guid(WinNTConstants.GUID_ALLOW_STANDBY_STATES);
+
+        /// <summary>
+        /// Defines a guid for enabling/disabling the ability to wake via RTC.
+        /// </summary>
+        public static readonly Guid GUID_ALLOW_RTC_WAKE = new Guid(WinNTConstants.GUID_ALLOW_RTC_WAKE);
+
+        /// <summary>
+        /// Defines a guid for enabling/disabling legacy RTC mitigations.
+        /// </summary>
+        public static readonly Guid GUID_LEGACY_RTC_MITIGATION = new Guid(WinNTConstants.GUID_LEGACY_RTC_MITIGATION);
+
+        /// <summary>
+        /// Defines a guid for enabling/disabling the ability to create system required
+        /// power requests.
+        /// </summary>
+        public static readonly Guid GUID_ALLOW_SYSTEM_REQUIRED = new Guid(WinNTConstants.GUID_ALLOW_SYSTEM_REQUIRED);
+
+        // Energy Saver settings
+        // ---------------------
+
+        /// <summary>
+        /// Indicates if Enegry Saver is ON or OFF.
+        /// </summary>
+        public static readonly Guid GUID_POWER_SAVING_STATUS = new Guid(WinNTConstants.GUID_POWER_SAVING_STATUS);
+
+        /// <summary>
+        /// Specifies the subgroup which will contain all of the Energy Saver settings
+        /// for a single policy.
+        /// </summary>
+        public static readonly Guid GUID_ENERGY_SAVER_SUBGROUP = new Guid(WinNTConstants.GUID_ENERGY_SAVER_SUBGROUP);
+
+        /// <summary>
+        /// Defines a guid to engage Energy Saver at specific battery charge level
+        /// </summary>
+        public static readonly Guid GUID_ENERGY_SAVER_BATTERY_THRESHOLD = new Guid(WinNTConstants.GUID_ENERGY_SAVER_BATTERY_THRESHOLD);
+
+        /// <summary>
+        /// Defines a guid to specify display brightness weight when Energy Saver is engaged
+        /// </summary>
+        public static readonly Guid GUID_ENERGY_SAVER_BRIGHTNESS = new Guid(WinNTConstants.GUID_ENERGY_SAVER_BRIGHTNESS);
+
+        /// <summary>
+        /// Defines a guid to specify the Energy Saver policy
+        /// </summary>
+        public static readonly Guid GUID_ENERGY_SAVER_POLICY = new Guid(WinNTConstants.GUID_ENERGY_SAVER_POLICY);
+
+        // System button actions
+        // ---------------------
+
+        /// <summary>
+        /// Specifies the subgroup which will contain all of the system button
+        /// settings for a single policy.
+        /// </summary>
+        public static readonly Guid GUID_SYSTEM_BUTTON_SUBGROUP = new Guid(WinNTConstants.GUID_SYSTEM_BUTTON_SUBGROUP);
+
+        /// <summary>
+        /// Specifies (in a <see cref="POWER_ACTION_POLICY"/> structure) the appropriate action to
+        /// take when the system power button is pressed.
+        /// </summary>
+        public static readonly Guid GUID_POWERBUTTON_ACTION = new Guid(WinNTConstants.GUID_POWERBUTTON_ACTION);
+
+        /// <summary>
+        /// Specifies (in a <see cref="POWER_ACTION_POLICY"/> structure) the appropriate action to
+        /// take when the system sleep button is pressed.
+        /// </summary>
+        public static readonly Guid GUID_SLEEPBUTTON_ACTION = new Guid(WinNTConstants.GUID_SLEEPBUTTON_ACTION);
+
+        /// <summary>
+        /// Specifies (in a <see cref="POWER_ACTION_POLICY"/> structure) the appropriate action to
+        /// take when the system sleep button is pressed.
+        /// </summary>
+        public static readonly Guid GUID_USERINTERFACEBUTTON_ACTION = new Guid(WinNTConstants.GUID_USERINTERFACEBUTTON_ACTION);
+
+        /// <summary>
+        /// Specifies (in a <see cref="POWER_ACTION_POLICY"/> structure) the appropriate action to
+        /// take when the system lid is closed.
+        /// </summary>
+        public static readonly Guid GUID_LIDCLOSE_ACTION = new Guid(WinNTConstants.GUID_LIDCLOSE_ACTION);
+        public static readonly Guid GUID_LIDOPEN_POWERSTATE = new Guid(WinNTConstants.GUID_LIDOPEN_POWERSTATE);
+
+
+        // Battery Discharge Settings
+        // --------------------------
+
+        /// <summary>
+        /// Specifies the subgroup which will contain all of the battery discharge
+        /// settings for a single policy.
+        /// </summary>
+        public static readonly Guid GUID_BATTERY_SUBGROUP = new Guid(WinNTConstants.GUID_BATTERY_SUBGROUP);
+
+        //
+        // 4 battery discharge alarm settings.
+        //
+        // GUID_BATTERY_DISCHARGE_ACTION_x - This is the action to take.  It is a value
+        //                                   of type POWER_ACTION
+        // GUID_BATTERY_DISCHARGE_LEVEL_x  - This is the battery level (%)
+        // GUID_BATTERY_DISCHARGE_FLAGS_x  - Flags defined below:
+        //                                   POWER_ACTION_POLICY->EventCode flags
+        //                                   BATTERY_DISCHARGE_FLAGS_EVENTCODE_MASK
+        //                                   BATTERY_DISCHARGE_FLAGS_ENABLE
+
+        public static readonly Guid GUID_BATTERY_DISCHARGE_ACTION_0 = new Guid(WinNTConstants.GUID_BATTERY_DISCHARGE_ACTION_0);
+        public static readonly Guid GUID_BATTERY_DISCHARGE_LEVEL_0 = new Guid(WinNTConstants.GUID_BATTERY_DISCHARGE_LEVEL_0);
+        public static readonly Guid GUID_BATTERY_DISCHARGE_FLAGS_0 = new Guid(WinNTConstants.GUID_BATTERY_DISCHARGE_FLAGS_0);
+
+        public static readonly Guid GUID_BATTERY_DISCHARGE_ACTION_1 = new Guid(WinNTConstants.GUID_BATTERY_DISCHARGE_ACTION_1);
+        public static readonly Guid GUID_BATTERY_DISCHARGE_LEVEL_1 = new Guid(WinNTConstants.GUID_BATTERY_DISCHARGE_LEVEL_1);
+        public static readonly Guid GUID_BATTERY_DISCHARGE_FLAGS_1 = new Guid(WinNTConstants.GUID_BATTERY_DISCHARGE_FLAGS_1);
+
+        public static readonly Guid GUID_BATTERY_DISCHARGE_ACTION_2 = new Guid(WinNTConstants.GUID_BATTERY_DISCHARGE_ACTION_2);
+        public static readonly Guid GUID_BATTERY_DISCHARGE_LEVEL_2 = new Guid(WinNTConstants.GUID_BATTERY_DISCHARGE_LEVEL_2);
+        public static readonly Guid GUID_BATTERY_DISCHARGE_FLAGS_2 = new Guid(WinNTConstants.GUID_BATTERY_DISCHARGE_FLAGS_2);
+
+        public static readonly Guid GUID_BATTERY_DISCHARGE_ACTION_3 = new Guid(WinNTConstants.GUID_BATTERY_DISCHARGE_ACTION_3);
+        public static readonly Guid GUID_BATTERY_DISCHARGE_LEVEL_3 = new Guid(WinNTConstants.GUID_BATTERY_DISCHARGE_LEVEL_3);
+        public static readonly Guid GUID_BATTERY_DISCHARGE_FLAGS_3 = new Guid(WinNTConstants.GUID_BATTERY_DISCHARGE_FLAGS_3);
+
+        // Processor power settings
+        // ------------------------
+        //
+
+        /// <summary>
+        /// Specifies the subgroup which will contain all of the processor
+        /// settings for a single policy.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_SETTINGS_SUBGROUP = new Guid(WinNTConstants.GUID_PROCESSOR_SETTINGS_SUBGROUP);
+
+        /// <summary>
+        /// Specifies various attributes that control processor performance/throttle
+        /// states.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_THROTTLE_POLICY = new Guid(WinNTConstants.GUID_PROCESSOR_THROTTLE_POLICY);
+
+        /// <summary>
+        /// Specifies a percentage (between 0 and 100) that the processor frequency
+        /// should never go above.  For example, if this value is set to 80, then
+        /// the processor frequency will never be throttled above 80 percent of its
+        /// maximum frequency by the system.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_THROTTLE_MAXIMUM = new Guid(WinNTConstants.GUID_PROCESSOR_THROTTLE_MAXIMUM);
+
+        /// <summary>
+        /// Specifies a percentage (between 0 and 100) that the processor frequency
+        /// should never go above for Processor Power Efficiency Class 1.
+        /// For example, if this value is set to 80, then the processor frequency will
+        /// never be throttled above 80 percent of its maximum frequency by the system.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_THROTTLE_MAXIMUM_1 = new Guid(WinNTConstants.GUID_PROCESSOR_THROTTLE_MAXIMUM_1);
+
+        /// <summary>
+        /// Specifies a percentage (between 0 and 100) that the processor frequency
+        /// should not drop below.  For example, if this value is set to 50, then the
+        /// processor frequency will never be throttled below 50 percent of its
+        /// maximum frequency by the system.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_THROTTLE_MINIMUM = new Guid(WinNTConstants.GUID_PROCESSOR_THROTTLE_MINIMUM);
+
+        /// <summary>
+        /// Specifies a percentage (between 0 and 100) that the processor frequency
+        /// should not drop below for Processor Power Efficiency Class 1.
+        /// For example, if this value is set to 50, then the processor frequency will
+        /// never be throttled below 50 percent of its maximum frequency by the system.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_THROTTLE_MINIMUM_1 = new Guid(WinNTConstants.GUID_PROCESSOR_THROTTLE_MINIMUM_1);
+
+        /// <summary>
+        /// Specifies the maximum processor frequency (expresssed in MHz).
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_FREQUENCY_LIMIT = new Guid(WinNTConstants.GUID_PROCESSOR_FREQUENCY_LIMIT);
+
+        public static readonly Guid GUID_PROCESSOR_FREQUENCY_LIMIT_1 = new Guid(WinNTConstants.GUID_PROCESSOR_FREQUENCY_LIMIT_1);
+
+        /// <summary>
+        /// Specifies whether throttle states are allowed to be used even when
+        /// performance states are available.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_ALLOW_THROTTLING = new Guid(WinNTConstants.GUID_PROCESSOR_ALLOW_THROTTLING);
+
+        /// <summary>
+        /// Specifies processor power settings for CState policy data
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_IDLESTATE_POLICY = new Guid(WinNTConstants.GUID_PROCESSOR_IDLESTATE_POLICY);
+
+        /// <summary>
+        /// Specifies processor power settings for PerfState policy data
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_PERFSTATE_POLICY = new Guid(WinNTConstants.GUID_PROCESSOR_PERFSTATE_POLICY);
+
+        /// <summary>
+        /// Specifies the increase busy percentage threshold that must be met before
+        /// increasing the processor performance state.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_PERF_INCREASE_THRESHOLD = new Guid(WinNTConstants.GUID_PROCESSOR_PERF_INCREASE_THRESHOLD);
+
+        /// <summary>
+        /// Specifies the increase busy percentage threshold that must be met before
+        /// increasing the processor performance state for Processor Power Efficiency
+        /// Class 1.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_PERF_INCREASE_THRESHOLD_1 = new Guid(WinNTConstants.GUID_PROCESSOR_PERF_INCREASE_THRESHOLD_1);
+
+        /// <summary>
+        /// Specifies the decrease busy percentage threshold that must be met before
+        /// decreasing the processor performance state.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_PERF_DECREASE_THRESHOLD = new Guid(WinNTConstants.GUID_PROCESSOR_PERF_DECREASE_THRESHOLD);
+
+        /// <summary>
+        /// Specifies the decrease busy percentage threshold that must be met before
+        /// decreasing the processor performance state for Processor Power Efficiency
+        /// Class 1.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_PERF_DECREASE_THRESHOLD_1 = new Guid(WinNTConstants.GUID_PROCESSOR_PERF_DECREASE_THRESHOLD_1);
+
+        /// <summary>
+        /// Specifies, either as ideal, single or rocket, how aggressive performance
+        /// states should be selected when increasing the processor performance state.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_PERF_INCREASE_POLICY = new Guid(WinNTConstants.GUID_PROCESSOR_PERF_INCREASE_POLICY);
+
+        /// <summary>
+        /// Specifies, either as ideal, single or rocket, how aggressive performance
+        /// states should be selected when increasing the processor performance state
+        /// for Processor Power Efficiency Class 1.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_PERF_INCREASE_POLICY_1 = new Guid(WinNTConstants.GUID_PROCESSOR_PERF_INCREASE_POLICY_1);
+
+        /// <summary>
+        /// Specifies, either as ideal, single or rocket, how aggressive performance
+        /// states should be selected when decreasing the processor performance state.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_PERF_DECREASE_POLICY = new Guid(WinNTConstants.GUID_PROCESSOR_PERF_DECREASE_POLICY);
+
+        /// <summary>
+        /// Specifies, either as ideal, single or rocket, how aggressive performance
+        /// states should be selected when decreasing the processor performance state for
+        /// Processor Power Efficiency Class 1.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_PERF_DECREASE_POLICY_1 = new Guid(WinNTConstants.GUID_PROCESSOR_PERF_DECREASE_POLICY_1);
+
+        /// <summary>
+        /// Specifies, in milliseconds, the minimum amount of time that must elapse after
+        /// the last processor performance state change before increasing the processor
+        /// performance state.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_PERF_INCREASE_TIME = new Guid(WinNTConstants.GUID_PROCESSOR_PERF_INCREASE_TIME);
+
+        /// <summary>
+        /// Specifies, in milliseconds, the minimum amount of time that must elapse after
+        /// the last processor performance state change before increasing the processor
+        /// performance state for Processor Power Efficiency Class 1.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_PERF_INCREASE_TIME_1 = new Guid(WinNTConstants.GUID_PROCESSOR_PERF_INCREASE_TIME_1);
+
+        /// <summary>
+        /// Specifies, in milliseconds, the minimum amount of time that must elapse after
+        /// the last processor performance state change before increasing the processor
+        /// performance state.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_PERF_DECREASE_TIME = new Guid(WinNTConstants.GUID_PROCESSOR_PERF_DECREASE_TIME);
+
+        /// <summary>
+        /// Specifies, in milliseconds, the minimum amount of time that must elapse after
+        /// the last processor performance state change before increasing the processor
+        /// performance state for Processor Power Efficiency Class 1.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_PERF_DECREASE_TIME_1 = new Guid(WinNTConstants.GUID_PROCESSOR_PERF_DECREASE_TIME_1);
+
+        /// <summary>
+        /// Specifies the time, in milliseconds, that must expire before considering
+        /// a change in the processor performance states or parked core set.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_PERF_TIME_CHECK = new Guid(WinNTConstants.GUID_PROCESSOR_PERF_TIME_CHECK);
+
+        /// <summary>
+        /// Specifies how the processor should manage performance and efficiency
+        /// tradeoffs when boosting frequency above the maximum.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_PERF_BOOST_POLICY = new Guid(WinNTConstants.GUID_PROCESSOR_PERF_BOOST_POLICY);
+
+        /// <summary>
+        /// Specifies how a processor opportunistically increases frequency above
+        /// the maximum when operating contitions allow it to do so safely.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_PERF_BOOST_MODE = new Guid(WinNTConstants.GUID_PROCESSOR_PERF_BOOST_MODE);
+
+        /// <summary>
+        /// Specifies whether or not a procesor should autonomously select its
+        /// operating performance state.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_PERF_AUTONOMOUS_MODE = new Guid(WinNTConstants.GUID_PROCESSOR_PERF_AUTONOMOUS_MODE);
+
+        /// <summary>
+        /// Specifies the tradeoff between performance and energy the processor should
+        /// make when operating in autonomous mode.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_PERF_ENERGY_PERFORMANCE_PREFERENCE = new Guid(WinNTConstants.GUID_PROCESSOR_PERF_ENERGY_PERFORMANCE_PREFERENCE);
+
+        /// <summary>
+        /// Specifies the window over which the processor should observe utilization when
+        /// operating in autonomous mode, in microseconds.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_PERF_AUTONOMOUS_ACTIVITY_WINDOW = new Guid(WinNTConstants.GUID_PROCESSOR_PERF_AUTONOMOUS_ACTIVITY_WINDOW);
+
+        /// <summary>
+        /// Specifies whether the processor should perform duty cycling.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_DUTY_CYCLING = new Guid(WinNTConstants.GUID_PROCESSOR_DUTY_CYCLING);
+
+        /// <summary>
+        /// Specifies if idle state promotion and demotion values should be scaled based
+        /// on the current peformance state.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_IDLE_ALLOW_SCALING = new Guid(WinNTConstants.GUID_PROCESSOR_IDLE_ALLOW_SCALING);
+
+        /// <summary>
+        /// Specifies if idle states should be disabled.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_IDLE_DISABLE = new Guid(WinNTConstants.GUID_PROCESSOR_IDLE_DISABLE);
+
+        /// <summary>
+        /// Specifies the deepest idle state type that should be used. If this value is
+        /// set to zero, this setting is ignored. Values higher than supported by the
+        /// processor then this setting has no effect.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_IDLE_STATE_MAXIMUM = new Guid(WinNTConstants.GUID_PROCESSOR_IDLE_STATE_MAXIMUM);
+
+        /// <summary>
+        /// Specifies the time that elapsed since the last idle state promotion or
+        /// demotion before idle states may be promoted or demoted again (in
+        /// microseconds).
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_IDLE_TIME_CHECK = new Guid(WinNTConstants.GUID_PROCESSOR_IDLE_TIME_CHECK);
+
+
+        /// <summary>
+        /// Specifies the upper busy threshold that must be met before demoting the
+        /// processor to a lighter idle state (in percentage).
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_IDLE_DEMOTE_THRESHOLD = new Guid(WinNTConstants.GUID_PROCESSOR_IDLE_DEMOTE_THRESHOLD);
+
+        /// <summary>
+        /// Specifies the lower busy threshold that must be met before promoting the
+        /// processor to a deeper idle state (in percentage).
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_IDLE_PROMOTE_THRESHOLD = new Guid(WinNTConstants.GUID_PROCESSOR_IDLE_PROMOTE_THRESHOLD);
+
+        /// <summary>
+        /// Specifies the utilization threshold in percent that must be crossed in order to un-park cores.
+        /// </summary>
+        [Obsolete("This power setting is DEPRECATED.")]
+        public static readonly Guid GUID_PROCESSOR_CORE_PARKING_INCREASE_THRESHOLD = new Guid(WinNTConstants.GUID_PROCESSOR_CORE_PARKING_INCREASE_THRESHOLD);
+
+        /// <summary>
+        /// Specifies the utilization threshold in percent that must be crossed in order to park cores.
+        /// </summary>
+        [Obsolete("This power setting is DEPRECATED.")]
+        public static readonly Guid GUID_PROCESSOR_CORE_PARKING_DECREASE_THRESHOLD = new Guid(WinNTConstants.GUID_PROCESSOR_CORE_PARKING_DECREASE_THRESHOLD);
+
+        /// <summary>
+        /// Specifies, either as ideal, single or rocket, how aggressive core parking is when cores must be unparked.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_CORE_PARKING_INCREASE_POLICY = new Guid(WinNTConstants.GUID_PROCESSOR_CORE_PARKING_INCREASE_POLICY);
+
+        /// <summary>
+        /// Specifies, either as ideal, single or rocket, how aggressive core parking is when cores must be parked.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_CORE_PARKING_DECREASE_POLICY = new Guid(WinNTConstants.GUID_PROCESSOR_CORE_PARKING_DECREASE_POLICY);
+
+        /// <summary>
+        /// Specifies, on a per processor group basis, the maximum number of cores that can be kept unparked.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_CORE_PARKING_MAX_CORES = new Guid(WinNTConstants.GUID_PROCESSOR_CORE_PARKING_MAX_CORES);
+
+        /// <summary>
+        /// Specifies, on a per processor group basis, the maximum number of cores that
+        /// can be kept unparked for Processor Power Efficiency Class 1.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_CORE_PARKING_MAX_CORES_1 = new Guid(WinNTConstants.GUID_PROCESSOR_CORE_PARKING_MAX_CORES_1);
+
+        /// <summary>
+        /// Specifies, on a per processor group basis, the minimum number of cores that must be kept unparked.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_CORE_PARKING_MIN_CORES = new Guid(WinNTConstants.GUID_PROCESSOR_CORE_PARKING_MIN_CORES);
+
+        /// <summary>
+        /// Specifies, on a per processor group basis, the minimum number of cores that
+        /// must be kept unparked in Processor Power Efficiency Class 1.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_CORE_PARKING_MIN_CORES_1 = new Guid(WinNTConstants.GUID_PROCESSOR_CORE_PARKING_MIN_CORES_1);
+
+        /// <summary>
+        /// Specifies, in milliseconds, the minimum amount of time a core must be parked before it can be unparked.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_CORE_PARKING_INCREASE_TIME = new Guid(WinNTConstants.GUID_PROCESSOR_CORE_PARKING_INCREASE_TIME);
+
+        /// <summary>
+        /// Specifies, in milliseconds, the minimum amount of time a core must be unparked before it can be parked.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_CORE_PARKING_DECREASE_TIME = new Guid(WinNTConstants.GUID_PROCESSOR_CORE_PARKING_DECREASE_TIME);
+
+        /// <summary>
+        /// Specifies the factor by which to decrease affinity history on each core after each check.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_CORE_PARKING_AFFINITY_HISTORY_DECREASE_FACTOR = new Guid(WinNTConstants.GUID_PROCESSOR_CORE_PARKING_AFFINITY_HISTORY_DECREASE_FACTOR);
+
+        /// <summary>
+        /// Specifies the threshold above which a core is considered to have had significant affinitized work scheduled to it while parked.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_CORE_PARKING_AFFINITY_HISTORY_THRESHOLD = new Guid(WinNTConstants.GUID_PROCESSOR_CORE_PARKING_AFFINITY_HISTORY_THRESHOLD);
+
+        /// <summary>
+        /// Specifies the weighting given to each occurence where affinitized work was scheduled to a parked core.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_CORE_PARKING_AFFINITY_WEIGHTING = new Guid(WinNTConstants.GUID_PROCESSOR_CORE_PARKING_AFFINITY_WEIGHTING);
+
+        /// <summary>
+        /// Specifies the factor by which to decrease the over utilization history on each core after the current performance check.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_CORE_PARKING_OVER_UTILIZATION_HISTORY_DECREASE_FACTOR = new Guid(WinNTConstants.GUID_PROCESSOR_CORE_PARKING_OVER_UTILIZATION_HISTORY_DECREASE_FACTOR);
+
+        /// <summary>
+        /// Specifies the threshold above which a core is considered to have been recently over utilized while parked.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_CORE_PARKING_OVER_UTILIZATION_HISTORY_THRESHOLD = new Guid(WinNTConstants.GUID_PROCESSOR_CORE_PARKING_OVER_UTILIZATION_HISTORY_THRESHOLD);
+
+        /// <summary>
+        /// Specifies the weighting given to each occurence where a parked core is found to be over utilized.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_CORE_PARKING_OVER_UTILIZATION_WEIGHTING = new Guid(WinNTConstants.GUID_PROCESSOR_CORE_PARKING_OVER_UTILIZATION_WEIGHTING);
+
+        /// <summary>
+        /// Specifies, in percentage, the busy threshold that must be met before a parked core is considered over utilized.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_CORE_PARKING_OVER_UTILIZATION_THRESHOLD = new Guid(WinNTConstants.GUID_PROCESSOR_CORE_PARKING_OVER_UTILIZATION_THRESHOLD);
+
+        /// <summary>
+        /// Specifies if at least one processor per core should always remain unparked.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_PARKING_CORE_OVERRIDE = new Guid(WinNTConstants.GUID_PROCESSOR_PARKING_CORE_OVERRIDE);
+
+        /// <summary>
+        /// Specifies what performance state a processor should enter when first parked.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_PARKING_PERF_STATE = new Guid(WinNTConstants.GUID_PROCESSOR_PARKING_PERF_STATE);
+
+        /// <summary>
+        /// Specifies what performance state a processor should enter when first parked
+        /// for Processor Power Efficiency Class 1.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_PARKING_PERF_STATE_1 = new Guid(WinNTConstants.GUID_PROCESSOR_PARKING_PERF_STATE_1);
+
+        /// <summary>
+        /// Specify the busy threshold that must be met when calculating the concurrency of a node's workload.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_PARKING_CONCURRENCY_THRESHOLD = new Guid(WinNTConstants.GUID_PROCESSOR_PARKING_CONCURRENCY_THRESHOLD);
+
+        /// <summary>
+        /// Specify the busy threshold that must be met by all cores in a concurrency set to unpark an extra core.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_PARKING_HEADROOM_THRESHOLD = new Guid(WinNTConstants.GUID_PROCESSOR_PARKING_HEADROOM_THRESHOLD);
+
+        /// <summary>
+        /// Specify the percentage utilization used to calculate the distribution concurrency.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_PARKING_DISTRIBUTION_THRESHOLD = new Guid(WinNTConstants.GUID_PROCESSOR_PARKING_DISTRIBUTION_THRESHOLD);
+
+        /// <summary>
+        /// Specifies the number of perf time check intervals to average utility over.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_PERF_HISTORY = new Guid(WinNTConstants.GUID_PROCESSOR_PERF_HISTORY);
+
+        /// <summary>
+        /// Specifies the number of perf time check intervals to average utility over in
+        /// Processor Power Efficiency Class 1.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_PERF_HISTORY_1 = new Guid(WinNTConstants.GUID_PROCESSOR_PERF_HISTORY_1);
+
+        /// <summary>
+        /// Specifies the number of perf time check intervals to average utility over to
+        /// determine performance increase.
+        /// </summary>
+        [Obsolete("This power setting is DEPRECATED.")]
+        public static readonly Guid GUID_PROCESSOR_PERF_INCREASE_HISTORY = new Guid(WinNTConstants.GUID_PROCESSOR_PERF_INCREASE_HISTORY);
+
+        /// <summary>
+        /// Specifies the number of perf time check intervals to average utility over to
+        /// determine performance decrease.
+        /// </summary>
+        [Obsolete("This power setting is DEPRECATED.")]
+        public static readonly Guid GUID_PROCESSOR_PERF_DECREASE_HISTORY = new Guid(WinNTConstants.GUID_PROCESSOR_PERF_DECREASE_HISTORY);
+
+        /// <summary>
+        /// Specifies the number of perf time check intervals to average utility over for
+        /// core parking.
+        /// </summary>
+        [Obsolete("This power setting is DEPRECATED.")]
+        public static readonly Guid GUID_PROCESSOR_PERF_CORE_PARKING_HISTORY = new Guid(WinNTConstants.GUID_PROCESSOR_PERF_CORE_PARKING_HISTORY);
+
+        /// <summary>
+        /// Specifies whether latency sensitivity hints should be taken into account by
+        /// the perf state engine.
+        /// </summary>
+        [Obsolete("This power setting is DEPRECATED.")]
+        public static readonly Guid GUID_PROCESSOR_PERF_LATENCY_HINT = new Guid(WinNTConstants.GUID_PROCESSOR_PERF_LATENCY_HINT);
+
+        /// <summary>
+        /// Specifies the processor performance state in response to latency sensitivity hints.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_PERF_LATENCY_HINT_PERF = new Guid(WinNTConstants.GUID_PROCESSOR_PERF_LATENCY_HINT_PERF);
+
+        /// <summary>
+        /// Specifies the processor performance state in response to latency sensitivity
+        /// hints for Processor Power Efficiency Class 1.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_PERF_LATENCY_HINT_PERF_1 = new Guid(WinNTConstants.GUID_PROCESSOR_PERF_LATENCY_HINT_PERF_1);
+
+        /// <summary>
+        /// Specifies the minimum unparked processors when a latency hint is active
+        /// (in a percentage).
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_LATENCY_HINT_MIN_UNPARK = new Guid(WinNTConstants.GUID_PROCESSOR_LATENCY_HINT_MIN_UNPARK);
+
+        /// <summary>
+        /// Specifies the minimum unparked processors when a latency hint is active
+        /// for Processor Power Efficiency Class 1 (in a percentage).
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_LATENCY_HINT_MIN_UNPARK_1 = new Guid(WinNTConstants.GUID_PROCESSOR_LATENCY_HINT_MIN_UNPARK_1);
+
+        /// <summary>
+        /// Specifies whether the core parking engine should distribute processor
+        /// utility.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_DISTRIBUTE_UTILITY = new Guid(WinNTConstants.GUID_PROCESSOR_DISTRIBUTE_UTILITY);
+
+        //
+        // GUIDS to control PPM settings on computer system with more than one
+        // Processor Power Efficiency Classes (heterogeneous system).
+        // -----------------
+
+        /// <summary>
+        /// Specifies the current active heterogeneous policy.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_HETEROGENEOUS_POLICY = new Guid(WinNTConstants.GUID_PROCESSOR_HETEROGENEOUS_POLICY);
+
+        /// <summary>
+        /// Specifies the number of perf check cycles required to decrease the number of
+        /// Processor Power Efficiency Class 1 processors.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_HETERO_DECREASE_TIME = new Guid(WinNTConstants.GUID_PROCESSOR_HETERO_DECREASE_TIME);
+
+        /// <summary>
+        /// Specifies the number of perf check cycles required to increase the number of
+        /// Processor Power Efficiency Class 1 processors.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_HETERO_INCREASE_TIME = new Guid(WinNTConstants.GUID_PROCESSOR_HETERO_INCREASE_TIME);
+
+        /// <summary>
+        /// Specifies the performance level (in units of Processor Power Efficiency
+        /// Class 0 processor performance) at which the number of Processor Power
+        /// Efficiency Class 1 processors is decreased.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_HETERO_DECREASE_THRESHOLD = new Guid(WinNTConstants.GUID_PROCESSOR_HETERO_DECREASE_THRESHOLD);
+
+        /// <summary>
+        /// Specifies the performance level (in units of Processor Power Efficiency
+        /// Class 0 processor performance) at which the number of Processor Power
+        /// Efficiency Class 1 processors is increased.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_HETERO_INCREASE_THRESHOLD = new Guid(WinNTConstants.GUID_PROCESSOR_HETERO_INCREASE_THRESHOLD);
+
+        /// <summary>
+        /// Specifies the performance target floor of a Processor Power Efficiency
+        /// Class 0 processor when the system unparks Processor Power Efficiency Class 1
+        /// processor(s).
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_CLASS0_FLOOR_PERF = new Guid(WinNTConstants.GUID_PROCESSOR_CLASS0_FLOOR_PERF);
+
+        /// <summary>
+        /// Specifies the initial performance target of a Processor Power Efficiency
+        /// Class 1 processor when the system makes a transition up from zero Processor
+        /// Power Efficiency Class 1 processors.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_CLASS1_INITIAL_PERF = new Guid(WinNTConstants.GUID_PROCESSOR_CLASS1_INITIAL_PERF);
+
+        /// <summary>
+        /// Specifies the scheduling policy for threads in a given QoS class.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_THREAD_SCHEDULING_POLICY = new Guid(WinNTConstants.GUID_PROCESSOR_THREAD_SCHEDULING_POLICY);
+
+        /// <summary>
+        /// Specifies the scheduling policy for short running threads in a given QoS
+        /// class.
+        /// </summary>
+        public static readonly Guid GUID_PROCESSOR_SHORT_THREAD_SCHEDULING_POLICY = new Guid(WinNTConstants.GUID_PROCESSOR_SHORT_THREAD_SCHEDULING_POLICY);
+
+        /// <summary>
+        /// Specifies active vs passive cooling.  Although not directly related to
+        /// processor settings, it is the processor that gets throttled if we're doing
+        /// passive cooling, so it is fairly strongly related.
+        /// </summary>
+        public static readonly Guid GUID_SYSTEM_COOLING_POLICY = new Guid(WinNTConstants.GUID_SYSTEM_COOLING_POLICY);
+
+        // Lock Console on Wake
+        // --------------------
+        //
+
+        /// <summary>
+        /// Specifies the behavior of the system when we wake from standby or
+        /// hibernate.  If this is set, then we will cause the console to lock
+        /// after we resume.
+        /// </summary>
+        public static readonly Guid GUID_LOCK_CONSOLE_ON_WAKE = new Guid(WinNTConstants.GUID_LOCK_CONSOLE_ON_WAKE);
+
+        // Device idle characteristics
+        // ---------------------------
+
+        /// <summary>
+        /// Specifies whether to use the "performance" or "conservative" timeouts for
+        /// device idle management.
+        /// </summary>
+        public static readonly Guid GUID_DEVICE_IDLE_POLICY = new Guid(WinNTConstants.GUID_DEVICE_IDLE_POLICY);
+
+        /// <summary>
+        /// Specifies standby connectivity preference.
+        /// </summary>
+        public static readonly Guid GUID_CONNECTIVITY_IN_STANDBY = new Guid(WinNTConstants.GUID_CONNECTIVITY_IN_STANDBY);
+
+        /// <summary>
+        /// Specifies the mode for disconnected standby.
+        /// </summary>
+        public static readonly Guid GUID_DISCONNECTED_STANDBY_MODE = new Guid(WinNTConstants.GUID_DISCONNECTED_STANDBY_MODE);
+
+        // AC/DC power source
+        // ------------------
+        //
+
+        /// <summary>
+        /// Specifies the power source for the system.
+        /// </summary>
+        /// <remarks>
+        /// Consumers may register for
+        /// notification when the power source changes and will be notified with
+        /// one of 3 values:
+        /// 0 - Indicates the system is being powered by an AC power source.
+        /// 1 - Indicates the system is being powered by a DC power source.
+        /// 2 - Indicates the system is being powered by a short-term DC power
+        ///     source.  For example, this would be the case if the system is
+        ///     being powed by a short-term battery supply in a backing UPS
+        ///     system.  When this value is recieved, the consumer should make
+        ///     preparations for either a system hibernate or system shutdown.
+        /// </remarks>
+        public static readonly Guid GUID_ACDC_POWER_SOURCE = new Guid(WinNTConstants.GUID_ACDC_POWER_SOURCE);
+
+        // Lid state changes
+        // -----------------
+
+        /// <summary>
+        /// Specifies the current state of the lid (open or closed). The callback won't
+        /// be called at all until a lid device is found and its current state is known.
+        /// </summary>
+        /// <remarks>
+        /// Values:
+        /// 0 - closed
+        /// 1 - opened
+        /// </remarks>
+        public static readonly Guid GUID_LIDSWITCH_STATE_CHANGE = new Guid(WinNTConstants.GUID_LIDSWITCH_STATE_CHANGE);
+
+        // Battery status changes
+        // ----------------------
+        //
+
+        /// <summary>
+        /// <para>
+        /// Specifies the percentage of battery life remaining.  The consumer
+        /// may register for notification in order to track battery life in
+        /// a fine-grained manner.
+        /// </para>
+        /// <para>
+        /// Once registered, the consumer can expect to be notified as the battery
+        /// life percentage changes.
+        /// </para>
+        /// <para>
+        /// The consumer will recieve a value between 0 and 100 (inclusive) which
+        /// indicates percent battery life remaining.
+        /// </para>
+        /// </summary>
+        public static readonly Guid GUID_BATTERY_PERCENTAGE_REMAINING = new Guid(WinNTConstants.GUID_BATTERY_PERCENTAGE_REMAINING);
+
+        /// <summary>
+        /// <para>
+        /// Specifies change in number of batteries present on the system. The consumer
+        /// may register for notification in order to track change in number of batteries
+        /// available on a system.
+        /// </para>
+        /// <para>
+        /// Once registered, the consumer can expect to be notified whenever the
+        /// batteries are added or removed from the system.
+        /// </para>
+        /// <para>
+        /// The consumer will recieve a value indicating number of batteries currently
+        /// present on the system.
+        /// </para>
+        /// </summary>
+        public static readonly Guid GUID_BATTERY_COUNT = new Guid(WinNTConstants.GUID_BATTERY_COUNT);
+
+        /// <summary>
+        /// Global notification indicating to listeners user activity/presence accross
+        /// all sessions in the system (Present, NotPresent, Inactive)
+        /// </summary>
+        public static readonly Guid GUID_GLOBAL_USER_PRESENCE = new Guid(WinNTConstants.GUID_GLOBAL_USER_PRESENCE);
+
+        /// <summary>
+        /// Session specific notification indicating to listeners whether or not the display
+        /// related to the given session is on/off/dim
+        /// </summary>
+        /// <remarks>
+        /// This is a session-specific notification, sent only to interactive
+        /// session registrants. Session 0 and kernel mode consumers do not receive
+        /// this notification.
+        /// </remarks>
+        public static readonly Guid GUID_SESSION_DISPLAY_STATUS = new Guid(WinNTConstants.GUID_SESSION_DISPLAY_STATUS);
+
+        /// <summary>
+        /// Session specific notification indicating to listeners user activity/presence
+        /// (Present, NotPresent, Inactive)
+        /// </summary>
+        /// <remarks>
+        /// <note>
+        ///      This is a session-specific notification, sent only to interactive
+        ///      session registrants. Session 0 and kernel mode consumers do not receive
+        ///      this notification.
+        /// </note>
+        /// </remarks>
+        public static readonly Guid GUID_SESSION_USER_PRESENCE = new Guid(WinNTConstants.GUID_SESSION_USER_PRESENCE);
+
+
+        /// <summary>
+        /// Notification to listeners that the system is fairly busy and won't be moving
+        /// into an idle state any time soon.  This can be used as a hint to listeners
+        /// that now might be a good time to do background tasks.
+        /// </summary>
+        public static readonly Guid GUID_IDLE_BACKGROUND_TASK = new Guid(WinNTConstants.GUID_IDLE_BACKGROUND_TASK);
+
+        /// <summary>
+        /// Notification to listeners that the system is fairly busy and won't be moving
+        /// into an idle state any time soon.  This can be used as a hint to listeners
+        /// that now might be a good time to do background tasks.
+        /// </summary>
+        public static readonly Guid GUID_BACKGROUND_TASK_NOTIFICATION = new Guid(WinNTConstants.GUID_BACKGROUND_TASK_NOTIFICATION);
+
+        /// <summary>
+        /// Define a GUID that will represent the action of a direct experience button
+        /// on the platform.  Users will register for this DPPE setting and recieve
+        /// notification when the h/w button is pressed.
+        /// </summary>
+        public static readonly Guid GUID_APPLAUNCH_BUTTON = new Guid(WinNTConstants.GUID_APPLAUNCH_BUTTON);
+
+        // PCI Express power settings
+        // ------------------------
+        //
+
+        /// <summary>
+        /// Specifies the subgroup which will contain all of the PCI Express
+        /// settings for a single policy.
+        /// </summary>
+        public static readonly Guid GUID_PCIEXPRESS_SETTINGS_SUBGROUP = new Guid(WinNTConstants.GUID_PCIEXPRESS_SETTINGS_SUBGROUP);
+
+        /// <summary>
+        /// Specifies the PCI Express ASPM power policy.
+        /// </summary>
+        public static readonly Guid GUID_PCIEXPRESS_ASPM_POLICY = new Guid(WinNTConstants.GUID_PCIEXPRESS_ASPM_POLICY);
+
+        // POWER Shutdown settings
+        // ------------------------
+        //
+
+        /// <summary>
+        /// Specifies if forced shutdown should be used for all button and lid initiated
+        /// shutdown actions.
+        /// </summary>
+        public static readonly Guid GUID_ENABLE_SWITCH_FORCED_SHUTDOWN = new Guid(WinNTConstants.GUID_ENABLE_SWITCH_FORCED_SHUTDOWN);
+
+        // Interrupt Steering power settings
+        // ------------------------
+        //
+
+        public static readonly Guid GUID_INTSTEER_SUBGROUP = new Guid(WinNTConstants.GUID_INTSTEER_SUBGROUP);
+
+        public static readonly Guid GUID_INTSTEER_MODE = new Guid(WinNTConstants.GUID_INTSTEER_MODE);
+
+        public static readonly Guid GUID_INTSTEER_LOAD_PER_PROC_TRIGGER = new Guid(WinNTConstants.GUID_INTSTEER_LOAD_PER_PROC_TRIGGER);
+
+        public static readonly Guid GUID_INTSTEER_TIME_UNPARK_TRIGGER = new Guid(WinNTConstants.GUID_INTSTEER_TIME_UNPARK_TRIGGER);
+
+        // Graphics power settings
+        // ------------------------
+        //
+
+        /// <summary>
+        /// Specified the subgroup which contains all inbox graphics settings.
+        /// </summary>
+        public static readonly Guid GUID_GRAPHICS_SUBGROUP = new Guid(WinNTConstants.GUID_GRAPHICS_SUBGROUP);
+
+        /// <summary>
+        /// Specifies the GPU preference policy.
+        /// </summary>
+        public static readonly Guid GUID_GPU_PREFERENCE_POLICY = new Guid(WinNTConstants.GUID_GPU_PREFERENCE_POLICY);
+
+        // Other miscellaneous power notification GUIDs
+        // ------------------------
+        //
+
+        /// <summary>
+        /// Specifies whether mixed reality mode is engaged.
+        /// </summary>
+        public static readonly Guid GUID_MIXED_REALITY_MODE = new Guid(WinNTConstants.GUID_MIXED_REALITY_MODE);
+
+        /// <summary>
+        /// Specifies a change (start/end) in System Power Report's Active Session.
+        /// </summary>
+        public static readonly Guid GUID_SPR_ACTIVE_SESSION_CHANGE = new Guid(WinNTConstants.GUID_SPR_ACTIVE_SESSION_CHANGE);
     }
 }

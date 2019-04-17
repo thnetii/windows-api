@@ -4388,7 +4388,7 @@ namespace THNETII.WinApi.Native.WinNT
         //
 
         public const int IO_COMPLETION_MODIFY_STATE = 0x0002;
-        public const int IO_COMPLETION_ALL_ACCESS = (STANDARD_RIGHTS_REQUIRED | SYNCHRONIZE | 0x3);
+        public const int IO_COMPLETION_ALL_ACCESS = STANDARD_RIGHTS_REQUIRED | SYNCHRONIZE | 0x3;
 
         public const ulong IO_QOS_MAX_RESERVATION = 1000000000UL;
 
@@ -4417,6 +4417,13 @@ namespace THNETII.WinApi.Native.WinNT
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 15108
         public const int POWER_SYSTEM_MAXIMUM = 7;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 15147
+        public const int ES_SYSTEM_REQUIRED = 0x00000001;
+        public const int ES_DISPLAY_REQUIRED = 0x00000002;
+        public const int ES_USER_PRESENT = 0x00000004;
+        public const int ES_AWAYMODE_REQUIRED = 0x00000040;
+        public const int ES_CONTINUOUS = unchecked((int)0x80000000);
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19775
         public const int RTL_UMS_VERSION = 0x0100;

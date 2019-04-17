@@ -4444,6 +4444,22 @@ namespace THNETII.WinApi.Native.WinNT
         public const int POWER_REQUEST_CONTEXT_SIMPLE_STRING = DIAGNOSTIC_REASON_SIMPLE_STRING;
         public const int POWER_REQUEST_CONTEXT_DETAILED_STRING = DIAGNOSTIC_REASON_DETAILED_STRING;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 15188
+        //-----------------------------------------------------------------------------
+        // Device Power Information
+        // Accessable via CM_Get_DevInst_Registry_Property_Ex(CM_DRP_DEVICE_POWER_DATA)
+        //-----------------------------------------------------------------------------
+
+        public const int PDCAP_D0_SUPPORTED = 0x00000001;
+        public const int PDCAP_D1_SUPPORTED = 0x00000002;
+        public const int PDCAP_D2_SUPPORTED = 0x00000004;
+        public const int PDCAP_D3_SUPPORTED = 0x00000008;
+        public const int PDCAP_WAKE_FROM_D0_SUPPORTED = 0x00000010;
+        public const int PDCAP_WAKE_FROM_D1_SUPPORTED = 0x00000020;
+        public const int PDCAP_WAKE_FROM_D2_SUPPORTED = 0x00000040;
+        public const int PDCAP_WAKE_FROM_D3_SUPPORTED = 0x00000080;
+        public const int PDCAP_WARM_EJECT_SUPPORTED = 0x00000100;
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19775
         public const int RTL_UMS_VERSION = 0x0100;
     }

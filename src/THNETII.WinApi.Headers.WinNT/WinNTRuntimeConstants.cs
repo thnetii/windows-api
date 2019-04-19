@@ -1821,5 +1821,16 @@ namespace THNETII.WinApi.Native.WinNT
         /// Specifies a change (start/end) in System Power Report's Active Session.
         /// </summary>
         public static readonly Guid GUID_SPR_ACTIVE_SESSION_CHANGE = new Guid(WinNTConstants.GUID_SPR_ACTIVE_SESSION_CHANGE);
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 15542
+        public const POWER_PLATFORM_ROLE POWER_PLATFORM_ROLE_V1_MAX = (POWER_PLATFORM_ROLE)(POWER_PLATFORM_ROLE.PlatformRolePerformanceServer + 1);
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 15545
+        public const POWER_PLATFORM_ROLE POWER_PLATFORM_ROLE_V2_MAX = (POWER_PLATFORM_ROLE)(POWER_PLATFORM_ROLE.PlatformRoleSlate + 1);
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 15549
+        public const int POWER_PLATFORM_ROLE_VERSION = POWER_PLATFORM_ROLE_V2;
+        public const POWER_PLATFORM_ROLE POWER_PLATFORM_ROLE_VERSION_MAX = POWER_PLATFORM_ROLE_V2_MAX;
+
     }
 }

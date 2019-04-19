@@ -4463,6 +4463,11 @@ namespace THNETII.WinApi.Native.WinNT
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 15492
         public const int POWER_SETTING_VALUE_VERSION = 0x1;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 15541
+        public const int POWER_PLATFORM_ROLE_V1 = 0x00000001;
+
+        public const int POWER_PLATFORM_ROLE_V2 = 0x00000002;
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19775
         public const int RTL_UMS_VERSION = 0x0100;
     }

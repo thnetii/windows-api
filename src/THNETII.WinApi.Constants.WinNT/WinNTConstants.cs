@@ -4559,6 +4559,43 @@ namespace THNETII.WinApi.Native.WinNT
 
         public const string PPM_THERMAL_POLICY_CHANGE_GUID = "{48f377b8-6880-4c7b-8bdc-380176c6654d}";
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 15880
+        // POWER_ACTION_POLICY->Flags:
+        public const int POWER_ACTION_QUERY_ALLOWED = 0x00000001;
+        public const int POWER_ACTION_UI_ALLOWED = 0x00000002;
+        public const int POWER_ACTION_OVERRIDE_APPS = 0x00000004;
+        public const int POWER_ACTION_HIBERBOOT = 0x00000008;
+        public const int POWER_ACTION_USER_NOTIFY = 0x00000010;  // Indicate User-mode of an impending action.
+        public const int POWER_ACTION_DOZE_TO_HIBERNATE = 0x00000020;
+        public const int POWER_ACTION_ACPI_CRITICAL = 0x01000000;
+        public const int POWER_ACTION_ACPI_USER_NOTIFY = 0x02000000;
+        public const int POWER_ACTION_DIRECTED_DRIPS = 0x04000000;
+        public const int POWER_ACTION_PSEUDO_TRANSITION = 0x08000000;
+        public const int POWER_ACTION_LIGHTEST_FIRST = 0x10000000;
+        public const int POWER_ACTION_LOCK_CONSOLE = 0x20000000;
+        public const int POWER_ACTION_DISABLE_WAKES = 0x40000000;
+        public const int POWER_ACTION_CRITICAL = unchecked((int)0x80000000);
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 15896
+        // POWER_ACTION_POLICY->EventCode flags
+        public const int POWER_LEVEL_USER_NOTIFY_TEXT = 0x00000001;
+        public const int POWER_LEVEL_USER_NOTIFY_SOUND = 0x00000002;
+        public const int POWER_LEVEL_USER_NOTIFY_EXEC = 0x00000004;
+        public const int POWER_USER_NOTIFY_BUTTON = 0x00000008;
+        public const int POWER_USER_NOTIFY_SHUTDOWN = 0x00000010; // Application and Services are intimated of shutdown.
+        public const int POWER_USER_NOTIFY_FORCED_SHUTDOWN = 0x00000020; // Immediate shutdown - Application and Services are not intimated.
+        public const int POWER_FORCE_TRIGGER_RESET = unchecked((int)0x80000000);
+
+        // Note: for battery alarm EventCodes, the ID of the battery alarm << 16 is ORed
+        // into the flags.  For example: DISCHARGE_POLICY_LOW << 16
+
+        //
+        // The GUID_BATTERY_DISCHARGE_FLAGS_x power settings use a subset of EventCode
+        // flags.  The POWER_FORCE_TRIGGER_RESET flag doesn't make sense for a battery
+        // alarm so it is overloaded for other purposes (gerneral enable/disable).
+        public const int BATTERY_DISCHARGE_FLAGS_EVENTCODE_MASK = 0x00000007;
+        public const int BATTERY_DISCHARGE_FLAGS_ENABLE = unchecked((int)0x80000000);
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19775
         public const int RTL_UMS_VERSION = 0x0100;
     }

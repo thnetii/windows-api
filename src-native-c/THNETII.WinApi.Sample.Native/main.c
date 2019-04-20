@@ -5,7 +5,7 @@ int main(int argc, char* argv[])
 {
     MEMORY_BASIC_INFORMATION instance;
     const int size = sizeof(instance);
-    const int value = PAGE_EXECUTE;
+    const int value = PO_THROTTLE_NONE;
 
     const void* ptr = GetHandleInformation;
 

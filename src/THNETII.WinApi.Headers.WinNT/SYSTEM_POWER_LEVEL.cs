@@ -18,7 +18,11 @@ namespace THNETII.WinApi.Native.WinNT
     [StructLayout(LayoutKind.Sequential)]
     public struct SYSTEM_POWER_LEVEL
     {
-        #region public bool Enable;
+        internal const int SizeOf = sizeof(int) * 2
+            + POWER_ACTION_POLICY.SizeOf
+            + sizeof(SYSTEM_POWER_STATE);
+
+        #region public bool Enable; public byte[] Spare = new byte[3];
         private int EnableField;
         private Span<byte> EnableSpan => MemoryMarshal.AsBytes(SpanOverRef.GetSpan(ref EnableField));
         /// <summary>
@@ -34,6 +38,7 @@ namespace THNETII.WinApi.Native.WinNT
         [SuppressMessage("Usage", "PC001: API not supported on all platforms", Justification = "https://github.com/dotnet/platform-compat/issues/123")]
         public Span<byte> Spare => EnableSpan.Slice(start: 1);
         #endregion
+        #region public int BatteryLevel;
         /// <summary>
         /// 
         /// </summary>
@@ -46,6 +51,7 @@ namespace THNETII.WinApi.Native.WinNT
             get => BatteryLevelField / 100.0;
             set => BatteryLevelField = (int)(value * 100.0);
         }
+        #endregion
         /// <summary>
         /// A <see cref="POWER_ACTION_POLICY"/> structure that defines the action to take for this battery discharge policy.
         /// </summary>

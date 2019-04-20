@@ -16,6 +16,10 @@ namespace THNETII.WinApi.Native.WinNT
     [StructLayout(LayoutKind.Sequential)]
     public struct POWER_ACTION_POLICY
     {
+        internal const int SizeOf = sizeof(POWER_ACTION)
+            + sizeof(POWER_ACTION_FLAGS)
+            + sizeof(POWER_EVENT_CODE);
+
         /// <summary>
         /// The requested system power state. This member must be one of the <see cref="POWER_ACTION"/> enumeration type values.
         /// </summary>

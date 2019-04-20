@@ -7,6 +7,8 @@ namespace THNETII.WinApi.Native.WinNT
     [StructLayout(LayoutKind.Sequential)]
     public struct PPM_IDLE_STATE_BUCKET_EX
     {
+        internal const int SizeOf = sizeof(long) + 3 * sizeof(int);
+
         #region public long TotalTimeUs;
         internal long TotalTimeUs;
         public TimeSpan TotalTime

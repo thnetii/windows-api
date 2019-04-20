@@ -1832,5 +1832,29 @@ namespace THNETII.WinApi.Native.WinNT
         public const int POWER_PLATFORM_ROLE_VERSION = POWER_PLATFORM_ROLE_V2;
         public const POWER_PLATFORM_ROLE POWER_PLATFORM_ROLE_VERSION_MAX = POWER_PLATFORM_ROLE_V2_MAX;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 15790
+        //
+        // Processor Power Management WMI interface.
+        //
+
+        public static readonly Guid PPM_PERFSTATE_CHANGE_GUID = new Guid(WinNTConstants.PPM_PERFSTATE_CHANGE_GUID);
+
+        public static readonly Guid PPM_PERFSTATE_DOMAIN_CHANGE_GUID = new Guid(WinNTConstants.PPM_PERFSTATE_DOMAIN_CHANGE_GUID);
+
+        public static readonly Guid PPM_IDLESTATE_CHANGE_GUID = new Guid(WinNTConstants.PPM_IDLESTATE_CHANGE_GUID);
+
+        public static readonly Guid PPM_PERFSTATES_DATA_GUID = new Guid(WinNTConstants.PPM_PERFSTATES_DATA_GUID);
+
+        public static readonly Guid PPM_IDLESTATES_DATA_GUID = new Guid(WinNTConstants.PPM_IDLESTATES_DATA_GUID);
+
+        public static readonly Guid PPM_IDLE_ACCOUNTING_GUID = new Guid(WinNTConstants.PPM_IDLE_ACCOUNTING_GUID);
+
+        public static readonly Guid PPM_IDLE_ACCOUNTING_EX_GUID = new Guid(WinNTConstants.PPM_IDLE_ACCOUNTING_EX_GUID);
+
+        public static readonly Guid PPM_THERMALCONSTRAINT_GUID = new Guid(WinNTConstants.PPM_THERMALCONSTRAINT_GUID);
+
+        public static readonly Guid PPM_PERFMON_PERFSTATE_GUID = new Guid(WinNTConstants.PPM_PERFMON_PERFSTATE_GUID);
+
+        public static readonly Guid PPM_THERMAL_POLICY_CHANGE_GUID = new Guid(WinNTConstants.PPM_THERMAL_POLICY_CHANGE_GUID);
     }
 }

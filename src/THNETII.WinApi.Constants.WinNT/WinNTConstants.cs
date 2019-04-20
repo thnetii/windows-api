@@ -4474,6 +4474,91 @@ namespace THNETII.WinApi.Native.WinNT
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 15705
         public const int PROC_IDLE_BUCKET_COUNT_EX = 16;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 15734
+        //
+        // Definitions of coordination types for _PSD, _TSD, and _CSD BIOS objects from
+        // the Acpi 3.0 specification
+        //
+
+        public const int ACPI_PPM_SOFTWARE_ALL = 0xFC;
+        public const int ACPI_PPM_SOFTWARE_ANY = 0xFD;
+        public const int ACPI_PPM_HARDWARE_ALL = 0xFE;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 15743
+        //
+        // Definition of Microsoft PPM coordination types.
+        //
+
+        public const int MS_PPM_SOFTWARE_ALL = 0x1;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 15749
+        //
+        // Processor firmware rundown feature bit definitions.
+        //
+
+        public const int PPM_FIRMWARE_ACPI1C2 = 0x00000001;
+        public const int PPM_FIRMWARE_ACPI1C3 = 0x00000002;
+        public const int PPM_FIRMWARE_ACPI1TSTATES = 0x00000004;
+        public const int PPM_FIRMWARE_CST = 0x00000008;
+        public const int PPM_FIRMWARE_CSD = 0x00000010;
+        public const int PPM_FIRMWARE_PCT = 0x00000020;
+        public const int PPM_FIRMWARE_PSS = 0x00000040;
+        public const int PPM_FIRMWARE_XPSS = 0x00000080;
+        public const int PPM_FIRMWARE_PPC = 0x00000100;
+        public const int PPM_FIRMWARE_PSD = 0x00000200;
+        public const int PPM_FIRMWARE_PTC = 0x00000400;
+        public const int PPM_FIRMWARE_TSS = 0x00000800;
+        public const int PPM_FIRMWARE_TPC = 0x00001000;
+        public const int PPM_FIRMWARE_TSD = 0x00002000;
+        public const int PPM_FIRMWARE_PCCH = 0x00004000;
+        public const int PPM_FIRMWARE_PCCP = 0x00008000;
+        public const int PPM_FIRMWARE_OSC = 0x00010000;
+        public const int PPM_FIRMWARE_PDC = 0x00020000;
+        public const int PPM_FIRMWARE_CPC = 0x00040000;
+        public const int PPM_FIRMWARE_LPI = 0x00080000;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 15774
+        //
+        // Processor performance and idle controls implementations.
+        //
+
+        public const int PPM_PERFORMANCE_IMPLEMENTATION_NONE = 0x00000000;
+        public const int PPM_PERFORMANCE_IMPLEMENTATION_PSTATES = 0x00000001;
+        public const int PPM_PERFORMANCE_IMPLEMENTATION_PCCV1 = 0x00000002;
+        public const int PPM_PERFORMANCE_IMPLEMENTATION_CPPC = 0x00000003;
+        public const int PPM_PERFORMANCE_IMPLEMENTATION_PEP = 0x00000004;
+
+        public const int PPM_IDLE_IMPLEMENTATION_NONE = 0x00000000;
+        public const int PPM_IDLE_IMPLEMENTATION_CSTATES = 0x00000001;
+        public const int PPM_IDLE_IMPLEMENTATION_PEP = 0x00000002;
+        public const int PPM_IDLE_IMPLEMENTATION_MICROPEP = 0x00000003;
+        public const int PPM_IDLE_IMPLEMENTATION_LPISTATES = 0x00000004;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 15790
+        //
+        // Processor Power Management WMI interface.
+        //
+
+        public const string PPM_PERFSTATE_CHANGE_GUID = "{a5b32ddd-7f39-4abc-b892-900e43b59ebb}";
+
+        public const string PPM_PERFSTATE_DOMAIN_CHANGE_GUID = "{995e6b7f-d653-497a-b978-36a30c29bf01}";
+
+        public const string PPM_IDLESTATE_CHANGE_GUID = "{4838fe4f-f71c-4e51-9ecc-8430a7ac4c6c}";
+
+        public const string PPM_PERFSTATES_DATA_GUID = "{5708cc20-7d40-4bf4-b4aa-2b01338d0126}";
+
+        public const string PPM_IDLESTATES_DATA_GUID = "{ba138e10-e250-4ad7-8616-cf1a7ad410e7}";
+
+        public const string PPM_IDLE_ACCOUNTING_GUID = "{e2a26f78-ae07-4ee0-a30f-ce54f55a94cd}";
+
+        public const string PPM_IDLE_ACCOUNTING_EX_GUID = "{d67abd39-81f8-4a5e-8152-72e31ec912ee}";
+
+        public const string PPM_THERMALCONSTRAINT_GUID = "{a852c2c8-1a4c-423b-8c2c-f30d82931a88}";
+
+        public const string PPM_PERFMON_PERFSTATE_GUID = "{7fd18652-0cfe-40d2-b0a1-0b066a87759e}";
+
+        public const string PPM_THERMAL_POLICY_CHANGE_GUID = "{48f377b8-6880-4c7b-8bdc-380176c6654d}";
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19775
         public const int RTL_UMS_VERSION = 0x0100;
     }

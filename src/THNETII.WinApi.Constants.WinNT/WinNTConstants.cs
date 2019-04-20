@@ -4596,6 +4596,25 @@ namespace THNETII.WinApi.Native.WinNT
         public const int BATTERY_DISCHARGE_FLAGS_EVENTCODE_MASK = 0x00000007;
         public const int BATTERY_DISCHARGE_FLAGS_ENABLE = unchecked((int)0x80000000);
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 15924
+        // Discharge policy constants
+        public const int NUM_DISCHARGE_POLICIES = 4;
+        public const int DISCHARGE_POLICY_CRITICAL = 0;
+        public const int DISCHARGE_POLICY_LOW = 1;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 16013
+        //
+        // Legacy Processor Policy.  This is only provided to allow legacy
+        // applications to compile.  New applications must use
+        // PROCESSOR_IDLESTATE_POLICY.
+        //
+
+        public const int PO_THROTTLE_NONE = 0;
+        public const int PO_THROTTLE_CONSTANT = 1;
+        public const int PO_THROTTLE_DEGRADE = 2;
+        public const int PO_THROTTLE_ADAPTIVE = 3;
+        public const int PO_THROTTLE_MAXIMUM = 4;   // not a policy, just a limit
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19775
         public const int RTL_UMS_VERSION = 0x0100;
     }

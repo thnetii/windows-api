@@ -10,7 +10,7 @@ namespace THNETII.WinApi.Native.WinNT
     /// <para>
     /// The total number of <see cref="BATTERY_REPORTING_SCALE"/> entries returned from <see cref="IOCTL_BATTERY_QUERY_INFORMATION"/> is indicated by the value of the <em>lpBytesReturned</em> parameter of <see cref="DeviceIoControl"/>. To determine the number of elements in the array, divide the value of <em>lpBytesReturned</em> by the size of the <see cref="BATTERY_REPORTING_SCALE"/> structure. The maximum number of array entries that can be returned is four.
     /// </para>
-    /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/winnt/ne-winnt-battery_reporting_scale">BATTERY_REPORTING_SCALE structure</a></para>
+    /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/winnt/ns-winnt-battery_reporting_scale">BATTERY_REPORTING_SCALE structure</a></para>
     /// </remarks>
     /// <seealso cref="IOCTL_BATTERY_QUERY_INFORMATION"/>
     /// <seealso cref="IOCTL_BATTERY_QUERY_STATUS"/>

@@ -57,9 +57,6 @@
   <PropertyGroup Condition="'$(Configuration)'=='Release'">
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
-  <PropertyGroup>
-    <IncludePath>$(ProjectDir)..\..\win-sdk-inc\shared;$(ProjectDir)..\..\win-sdk-inc\um;$(ProjectDir)..\..\win-sdk-inc\ucrt;$(IncludePath)</IncludePath>
-  </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile>
       <PreprocessorDefinitions>_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>

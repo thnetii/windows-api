@@ -4602,6 +4602,13 @@ namespace THNETII.WinApi.Native.WinNT
         public const int DISCHARGE_POLICY_CRITICAL = 0;
         public const int DISCHARGE_POLICY_LOW = 1;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 15985
+        //
+        // Processor Idle State Policy.
+        //
+
+        public const int PROCESSOR_IDLESTATE_POLICY_COUNT = 0x3;
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 16013
         //
         // Legacy Processor Policy.  This is only provided to allow legacy

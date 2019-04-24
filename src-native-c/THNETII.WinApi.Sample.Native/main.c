@@ -3,9 +3,9 @@
 
 int main(int argc, char* argv[])
 {
-    MEMORY_BASIC_INFORMATION instance;
+    PROCESSOR_IDLESTATE_POLICY instance;
     const int size = sizeof(instance);
-    const int value = PO_THROTTLE_NONE;
+    const int value = PROCESSOR_IDLESTATE_POLICY_COUNT;
 
     const void* ptr = GetHandleInformation;
 

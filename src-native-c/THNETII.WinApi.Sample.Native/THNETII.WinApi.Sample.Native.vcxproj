@@ -57,6 +57,9 @@
   <PropertyGroup Condition="'$(Configuration)'=='Release'">
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
+  <PropertyGroup>
+    <IncludePath>$(ProjectDir)..\..\win-sdk-inc\shared;$(ProjectDir)..\..\win-sdk-inc\um;$(ProjectDir)..\..\win-sdk-inc\ucrt;$(IncludePath)</IncludePath>
+  </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile>
       <PreprocessorDefinitions>_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -64,7 +67,7 @@
       <SDLCheck>true</SDLCheck>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>%(AdditionalDependencies);Amsi.lib;WSClient.lib</AdditionalDependencies>
+      <!-- <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies> -->
       <SubSystem>Console</SubSystem>
     </Link>
   </ItemDefinitionGroup>

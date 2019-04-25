@@ -17,46 +17,30 @@ namespace THNETII.WinApi.Native.WinNT
         public byte MinThrottle;
         public byte BusyAdjThreshold;
         #region public byte Flags;
-        private static readonly Bitfield32 NoDomainAccountingBitfield = Bitfield32.DefineFromMask(1 << 0);
-        private static readonly Bitfield32 IncreasePolicyBitfield = Bitfield32.DefineMiddleBits(1, 2);
-        private static readonly Bitfield32 DecreasePolicyBitfield = Bitfield32.DefineMiddleBits(3, 2);
-        private static readonly Bitfield32 ReservedBitfield = Bitfield32.DefineRemainingBits(5);
+        private static readonly Bitfield8 NoDomainAccountingBitfield = Bitfield8.Bit(0);
+        private static readonly Bitfield8 IncreasePolicyBitfield = Bitfield8.SelectBits(1, 2);
+        private static readonly Bitfield8 DecreasePolicyBitfield = Bitfield8.SelectBits(3, 2);
+        private static readonly Bitfield8 ReservedBitfield = Bitfield8.RemainingBits(5);
         public bool NoDomainAccounting
         {
-            get => NoDomainAccountingBitfield.Read((uint)Flags) != 0;
-            set
-            {
-                uint tmp = Flags;
-                Flags = (byte)NoDomainAccountingBitfield.Write(ref tmp, value ? ~0U : 0U);
-            }
+            get => NoDomainAccountingBitfield.ReadMasked(Flags) != 0;
+            set => NoDomainAccountingBitfield.WriteMasked(ref Flags, (byte)(value ? ~0U : 0U));
         }
         public byte IncreasePolicy
         {
-            get => (byte)IncreasePolicyBitfield.Read((uint)Flags);
-            set
-            {
-                uint tmp = Flags;
-                Flags = (byte)IncreasePolicyBitfield.Write(ref tmp, value);
-            }
+            get => IncreasePolicyBitfield.Read(Flags);
+            set => IncreasePolicyBitfield.Write(ref Flags, value);
         }
         public byte DecreasePolicy
         {
-            get => (byte)DecreasePolicyBitfield.Read((uint)Flags);
-            set
-            {
-                uint tmp = Flags;
-                Flags = (byte)DecreasePolicyBitfield.Write(ref tmp, value);
-            }
+            get => DecreasePolicyBitfield.Read(Flags);
+            set => DecreasePolicyBitfield.Write(ref Flags, value);
         }
         [EditorBrowsable(EditorBrowsableState.Never)]
         public byte Reserved
         {
-            get => (byte)ReservedBitfield.Read((uint)Flags);
-            set
-            {
-                uint tmp = Flags;
-                Flags = (byte)ReservedBitfield.Write(ref tmp, value);
-            }
+            get => ReservedBitfield.Read(Flags);
+            set => ReservedBitfield.Write(ref Flags, value);
         }
         public byte Flags;
         [EditorBrowsable(EditorBrowsableState.Never)]

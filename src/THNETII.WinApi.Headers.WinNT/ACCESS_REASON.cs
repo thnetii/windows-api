@@ -9,10 +9,10 @@ namespace THNETII.WinApi.Native.WinNT
     [StructLayout(LayoutKind.Sequential)]
     public struct ACCESS_REASON
     {
-        private static readonly Bitfield32 TypeBitfield = Bitfield32.DefineFromMask(ACCESS_REASON_TYPE_MASK);
-        private static readonly Bitfield32 DataBitfield = Bitfield32.DefineFromMask(ACCESS_REASON_DATA_MASK);
-        private static readonly Bitfield32 StagingBitfield = Bitfield32.DefineFromMask(ACCESS_REASON_STAGING_MASK);
-        private static readonly Bitfield32 ExDataBitfield = Bitfield32.DefineFromMask(ACCESS_REASON_EXDATA_MASK);
+        private static readonly Bitfield32 TypeBitfield = Bitfield32.FromMask(ACCESS_REASON_TYPE_MASK);
+        private static readonly Bitfield32 DataBitfield = Bitfield32.FromMask(ACCESS_REASON_DATA_MASK);
+        private static readonly Bitfield32 StagingBitfield = Bitfield32.FromMask(ACCESS_REASON_STAGING_MASK);
+        private static readonly Bitfield32 ExDataBitfield = Bitfield32.FromMask(ACCESS_REASON_EXDATA_MASK);
 
         internal int field;
 
@@ -20,26 +20,26 @@ namespace THNETII.WinApi.Native.WinNT
 
         public ACCESS_REASON_TYPE Type
         {
-            get => (ACCESS_REASON_TYPE)TypeBitfield.Read(field);
-            set => TypeBitfield.Write(ref field, (int)value);
+            get => (ACCESS_REASON_TYPE)TypeBitfield.ReadMasked(field);
+            set => TypeBitfield.WriteMasked(ref field, (int)value);
         }
 
         public int Data
         {
-            get => (short)DataBitfield.Read(field);
-            set => DataBitfield.Write(ref field, value);
+            get => (short)DataBitfield.ReadMasked(field);
+            set => DataBitfield.WriteMasked(ref field, value);
         }
 
         public bool Staging
         {
-            get => StagingBitfield.Read(field) != 0;
-            set => StagingBitfield.Write(ref field, value ? 1 : 0);
+            get => StagingBitfield.ReadMasked(field) != 0;
+            set => StagingBitfield.WriteMasked(ref field, value ? ~0 : 0);
         }
 
         public int ExtendedData
         {
-            get => ExDataBitfield.Read(field);
-            set => ExDataBitfield.Write(ref field, value);
+            get => ExDataBitfield.ReadMasked(field);
+            set => ExDataBitfield.WriteMasked(ref field, value);
         }
     }
 }

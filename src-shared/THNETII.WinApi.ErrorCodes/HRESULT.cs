@@ -64,13 +64,13 @@ namespace THNETII.WinApi
     [StructLayout(LayoutKind.Sequential)]
     public struct HRESULT : IEquatable<HRESULT>, IEquatable<int>
     {
-        private static readonly Bitfield32 code_field = Bitfield32.DefineLowerBits(16);
-        private static readonly Bitfield32 facility_field = Bitfield32.DefineMiddleBits(16, 11);
-        private static readonly Bitfield32 msgid_bit = Bitfield32.DefineSingleBit(27);
-        private static readonly Bitfield32 nt_bit = Bitfield32.DefineSingleBit(28);
-        private static readonly Bitfield32 c_bit = Bitfield32.DefineSingleBit(29);
-        private static readonly Bitfield32 s_bit = Bitfield32.DefineSingleBit(31);
-        private static readonly Bitfield32 sev_field = Bitfield32.DefineRemainingBits(30);
+        private static readonly Bitfield32 code_field = Bitfield32.LowBits(16);
+        private static readonly Bitfield32 facility_field = Bitfield32.SelectBits(16, 11);
+        private static readonly Bitfield32 msgid_bit = Bitfield32.Bit(27);
+        private static readonly Bitfield32 nt_bit = Bitfield32.Bit(28);
+        private static readonly Bitfield32 c_bit = Bitfield32.Bit(29);
+        private static readonly Bitfield32 s_bit = Bitfield32.Bit(31);
+        private static readonly Bitfield32 sev_field = Bitfield32.RemainingBits(30);
 
         /// <summary>
         /// The full 32-bit integer value of of the system error code.
@@ -97,31 +97,31 @@ namespace THNETII.WinApi
         /// <see langword="false"/> if the current <see cref="HRESULT"/> is a normal status value;
         /// <see langword="true"/> if it is a display string message ID.
         /// </value>
-        public bool IsMessageId => msgid_bit.Read(Value) != 0;
+        public bool IsMessageId => msgid_bit.ReadMasked(Value) != 0;
 
         /// <summary>
         /// Whether the <see cref="HRESULT"/> value is a <see cref="NTSTATUS"/> value mapped to an <see cref="HRESULT"/>.
         /// </summary>
         /// <value><see langword="true"/> if the <see cref="HRESULT"/> is a mapped <see cref="NTSTATUS"/> value; otherwise, <see langword="false"/>.</value>
-        public bool IsNTMapped => nt_bit.Read(Value) != 0;
+        public bool IsNTMapped => nt_bit.ReadMasked(Value) != 0;
 
         /// <summary>
         /// Whether the <see cref="HRESULT"/> value is a customer-defined value.
         /// </summary>
         /// <value><see langword="false"/> is the <see cref="HRESULT"/> value is Microsoft-defined; <see langword="true"/> if it is Customer-defined.</value>
-        public bool IsCustomerCode => c_bit.Read(Value) != 0;
+        public bool IsCustomerCode => c_bit.ReadMasked(Value) != 0;
 
         /// <summary>
         /// Whether the <see cref="HRESULT"/> value indicates a successful operation.
         /// </summary>
         /// <value><see langword="true"/> if successful; <see langword="false"/> if not.</value>
-        public bool IsSuccess => s_bit.Read(Value) == 0;
+        public bool IsSuccess => s_bit.ReadMasked(Value) == 0;
 
         /// <summary>
         /// Whether the <see cref="HRESULT"/> value indicates a failed operation.
         /// </summary>
         /// <value><see langword="true"/> if the operation failed; <see langword="false"/> if not.</value>
-        public bool IsFailure => s_bit.Read(Value) != 0;
+        public bool IsFailure => s_bit.ReadMasked(Value) != 0;
 
         /// <summary>
         /// Gets the severity for a mapped <see cref="NTSTATUS"/> value.

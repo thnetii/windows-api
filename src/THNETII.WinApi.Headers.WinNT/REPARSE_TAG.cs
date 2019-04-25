@@ -11,17 +11,17 @@ namespace THNETII.WinApi.Native.WinNT
     public struct REPARSE_TAG : IEquatable<REPARSE_TAG>, IEquatable<int>, IEquatable<uint>
     {
         private static readonly Bitfield32 MBitfield =
-            Bitfield32.DefineFromMask(1U << 31);
+            Bitfield32.Bit(31);
         private static readonly Bitfield32 RBitfield =
-            Bitfield32.DefineFromMask(1U << 30);
+            Bitfield32.Bit(30);
         private static readonly Bitfield32 NBitfield =
-            Bitfield32.DefineFromMask(1U << 29);
+            Bitfield32.Bit(29);
         private static readonly Bitfield32 DBitfield =
-            Bitfield32.DefineFromMask(1U << 28);
+            Bitfield32.Bit(28);
         private static readonly Bitfield32 ReservedBitfield =
-            Bitfield32.DefineFromMask(Bitmask.OffsetBitsUInt32(16, 28 - 16));
+            Bitfield32.SelectBits(16, 28 - 16);
         private static readonly Bitfield32 TagValueBitfield =
-            Bitfield32.DefineLowerBits(16);
+            Bitfield32.LowBits(16);
 
         private readonly uint value;
 
@@ -41,12 +41,12 @@ namespace THNETII.WinApi.Native.WinNT
         /// <para>All ISVs must use a tag with this bit set to <see langword="false"/>.</para>
         /// <note>If a Microsoft tag is used by non-Microsoft software, the behavior is not defined.</note>
         /// </summary>
-        public bool IsMicrosoftTag => MBitfield.Read(value) != 0;
+        public bool IsMicrosoftTag => MBitfield.ReadMasked(value) != 0;
 
         /// <summary>
         /// Reserved. Must be <see langword="false"/> for non-Microsoft tags.
         /// </summary>
-        public bool IsReservedTag => RBitfield.Read(value) != 0;
+        public bool IsReservedTag => RBitfield.ReadMasked(value) != 0;
 
         /// <summary>
         /// Whether the tag is a name surrogate.
@@ -55,7 +55,7 @@ namespace THNETII.WinApi.Native.WinNT
         /// entity in the system.
         /// </para>
         /// </summary>
-        public bool IsNameSurrogate => NBitfield.Read(value) != 0;
+        public bool IsNameSurrogate => NBitfield.ReadMasked(value) != 0;
 
         /// <summary>
         /// Whether the tag is a directory.
@@ -65,11 +65,11 @@ namespace THNETII.WinApi.Native.WinNT
         /// on a non-directory file. Not compatible with the name surrogate bit.
         /// </para>
         /// </summary>
-        public bool IsDirectory => DBitfield.Read(value) != 0;
+        public bool IsDirectory => DBitfield.ReadMasked(value) != 0;
 
-        public int ReservedBits => (int)ReservedBitfield.Read(value);
+        public int ReservedBits => (int)ReservedBitfield.ReadMasked(value);
 
-        public short TagValue => (short)TagValueBitfield.Read(value);
+        public short TagValue => (short)TagValueBitfield.ReadMasked(value);
 
         public int AsInt32() => (int)value;
 

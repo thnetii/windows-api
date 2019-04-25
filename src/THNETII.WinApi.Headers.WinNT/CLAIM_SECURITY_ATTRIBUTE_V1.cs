@@ -22,8 +22,8 @@ namespace THNETII.WinApi.Native.WinNT
     [StructLayout(LayoutKind.Sequential)]
     public struct CLAIM_SECURITY_ATTRIBUTE_V1
     {
-        private static readonly Bitfield32 FlagsBitfield = Bitfield32.DefineFromMask(CLAIM_SECURITY_ATTRIBUTE_VALID_FLAGS);
-        private static readonly Bitfield32 CustomFlagsBitfield = Bitfield32.DefineFromMask(CLAIM_SECURITY_ATTRIBUTE_CUSTOM_FLAGS);
+        private static readonly Bitfield32 FlagsBitfield = Bitfield32.FromMask(CLAIM_SECURITY_ATTRIBUTE_VALID_FLAGS);
+        private static readonly Bitfield32 CustomFlagsBitfield = Bitfield32.FromMask(CLAIM_SECURITY_ATTRIBUTE_CUSTOM_FLAGS);
 
         /// <summary>
         /// A pointer to a string of Unicode characters that contains the name of the security attribute. This string must be at least 4 bytes in length.
@@ -45,16 +45,16 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public CLAIM_SECURITY_ATTRIBUTE_FLAGS Flags
         {
-            get => (CLAIM_SECURITY_ATTRIBUTE_FLAGS)FlagsBitfield.Read(FlagsValue);
-            set => FlagsBitfield.Write(ref FlagsValue, (uint)value);
+            get => (CLAIM_SECURITY_ATTRIBUTE_FLAGS)FlagsBitfield.ReadMasked(FlagsValue);
+            set => FlagsBitfield.WriteMasked(ref FlagsValue, (uint)value);
         }
         /// <summary>
         /// Bits 16 through 31 of <see cref="Flags"/> may be set to any value.
         /// </summary>
         public int CustomFlags
         {
-            get => CustomFlagsBitfield.Read((int)FlagsValue);
-            set => CustomFlagsBitfield.Write(ref FlagsValue, (uint)value);
+            get => CustomFlagsBitfield.ReadMasked((int)FlagsValue);
+            set => CustomFlagsBitfield.WriteMasked(ref FlagsValue, (uint)value);
         }
         /// <summary>
         /// The number of values specified in the <see cref="Values"/> member.

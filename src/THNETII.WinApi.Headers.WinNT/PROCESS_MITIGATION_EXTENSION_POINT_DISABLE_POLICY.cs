@@ -14,8 +14,8 @@ namespace THNETII.WinApi.Native.WinNT
     [StructLayout(LayoutKind.Sequential)]
     public struct PROCESS_MITIGATION_EXTENSION_POINT_DISABLE_POLICY
     {
-        private static readonly Bitfield32 bfDisableExtensionPoints = Bitfield32.DefineLowerBits(1);
-        private static readonly Bitfield32 bfReservedFlags = Bitfield32.DefineFromMask(Bitmask.HigherBitsUInt32(31));
+        private static readonly Bitfield32 bfDisableExtensionPoints = Bitfield32.LowBits(1);
+        private static readonly Bitfield32 bfReservedFlags = Bitfield32.FromMask(Bitmask.HigherBitsUInt32(31));
 
         private uint dwFlags;
 
@@ -27,14 +27,14 @@ namespace THNETII.WinApi.Native.WinNT
 
         public bool DisableExtensionPoints
         {
-            get => bfDisableExtensionPoints.Read(dwFlags) != 0;
-            set => bfDisableExtensionPoints.Write(ref dwFlags, value ? 1U : 0U);
+            get => bfDisableExtensionPoints.ReadMasked(dwFlags) != 0;
+            set => bfDisableExtensionPoints.WriteMasked(ref dwFlags, value ? ~0U : 0U);
         }
 
         public int ReservedFlags
         {
-            get => (int)bfReservedFlags.Read(dwFlags);
-            set => bfReservedFlags.Write(ref dwFlags, (uint)value);
+            get => (int)bfReservedFlags.ReadMasked(dwFlags);
+            set => bfReservedFlags.WriteMasked(ref dwFlags, (uint)value);
         }
     }
 }

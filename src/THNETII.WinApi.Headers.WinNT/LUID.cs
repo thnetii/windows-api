@@ -22,8 +22,8 @@ namespace THNETII.WinApi.Native.WinNT
     [StructLayout(LayoutKind.Sequential)]
     public struct LUID : IEquatable<LUID>, IEquatable<long>
     {
-        private static readonly Bitfield64 LowBits = Bitfield64.DefineFromMask(uint.MaxValue);
-        private static readonly Bitfield64 HighBits = Bitfield64.DefineFromMask(uint.MaxValue, sizeof(uint) * 8);
+        private static readonly Bitfield64 LowBits = Bitfield64.FromMask(uint.MaxValue);
+        private static readonly Bitfield64 HighBits = Bitfield64.FromMask(uint.MaxValue, sizeof(uint) * 8);
 
         /// <summary>Low-order bits.</summary>
         internal uint LowPart;

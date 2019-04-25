@@ -42,7 +42,7 @@ namespace THNETII.WinApi.Native.WinNT
     [StructLayout(LayoutKind.Sequential)]
     public struct JOBOBJECT_NOTIFICATION_LIMIT_INFORMATION
     {
-        private static readonly Bitfield32 bfLimitFlags = Bitfield32.DefineFromMask((int)JOB_OBJECT_LIMIT_FLAGS.JOB_OBJECT_NOTIFICATION_LIMIT_VALID_FLAGS);
+        private static readonly Bitfield32 bfLimitFlags = Bitfield32.FromMask((int)JOB_OBJECT_NOTIFICATION_LIMIT_VALID_FLAGS);
 
         /// <summary>
         /// If the <see cref="LimitFlags"/> member specifies <see cref="JOB_OBJECT_LIMIT_JOB_READ_BYTES"/>, this member is the notification limit for total I/O bytes read by all processes in the job. Otherwise, this member is ignored.
@@ -88,8 +88,8 @@ namespace THNETII.WinApi.Native.WinNT
         /// </value>
         public JOB_OBJECT_LIMIT_FLAGS LimitFlags
         {
-            get => (JOB_OBJECT_LIMIT_FLAGS)bfLimitFlags.Read(LimitFlagsField);
-            set => bfLimitFlags.Write(ref LimitFlagsField, (int)value);
+            get => (JOB_OBJECT_LIMIT_FLAGS)bfLimitFlags.ReadMasked(LimitFlagsField);
+            set => bfLimitFlags.WriteMasked(ref LimitFlagsField, (int)value);
         }
     }
 }

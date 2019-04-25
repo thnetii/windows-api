@@ -18,11 +18,11 @@ namespace THNETII.WinApi.Native.WinNT
     [StructLayout(LayoutKind.Sequential)]
     public struct LDT_ENTRY
     {
-        private static readonly Bitfield32 bits_low = Bitfield32.DefineLowerBits(count: 16);
-        private static readonly Bitfield32 bits_mid = Bitfield32.DefineMiddleBits(offset: 16, count: 8);
-        private static readonly Bitfield32 bits_hi = Bitfield32.DefineRemainingBits(offset: 24);
+        private static readonly Bitfield32 bits_low = Bitfield32.LowBits(count: 16);
+        private static readonly Bitfield32 bits_mid = Bitfield32.SelectBits(offset: 16, count: 8);
+        private static readonly Bitfield32 bits_hi = Bitfield32.RemainingBits(offset: 24);
 
-        private static readonly Bitfield32 bits_limHi = Bitfield32.DefineMiddleBits(offset: 16, count: 4);
+        private static readonly Bitfield32 bits_limHi = Bitfield32.SelectBits(offset: 16, count: 4);
 
         /// <summary>
         /// The low-order part of the address of the last byte in the segment.
@@ -108,18 +108,18 @@ namespace THNETII.WinApi.Native.WinNT
     [StructLayout(LayoutKind.Sequential)]
     public struct LDT_ENTRY_HIGHWORD
     {
-        private static readonly Bitfield32 bits_BaseMid = Bitfield32.DefineLowerBits(count: 8);
-        private static readonly Bitfield32 bits_Type = Bitfield32.DefineMiddleBits(offset: 8, count: 5);
-        private static readonly Bitfield32 bits_Dpl = Bitfield32.DefineMiddleBits(offset: 13, count: 2);
-        private static readonly Bitfield32 bits_Pres = Bitfield32.DefineMiddleBits(offset: 15, count: 1);
-        private static readonly Bitfield32 bits_limitHi = Bitfield32.DefineMiddleBits(offset: 16, count: 4);
-        private static readonly Bitfield32 bits_Sys = Bitfield32.DefineMiddleBits(offset: 20, count: 1);
-        private static readonly Bitfield32 bits_Reserved0 = Bitfield32.DefineMiddleBits(offset: 21, count: 1);
-        private static readonly Bitfield32 bits_DefaultBig = Bitfield32.DefineMiddleBits(offset: 22, count: 1);
-        private static readonly Bitfield32 bits_Granularity = Bitfield32.DefineMiddleBits(offset: 23, count: 1);
-        private static readonly Bitfield32 bits_BaseHi = Bitfield32.DefineRemainingBits(offset: 24);
-        private static readonly Bitfield32 bits_Flags1 = Bitfield32.DefineMiddleBits(offset: 8, count: 8);
-        private static readonly Bitfield32 bits_Flags2 = Bitfield32.DefineMiddleBits(offset: 16, count: 8);
+        private static readonly Bitfield32 bits_BaseMid = Bitfield32.LowBits(count: 8);
+        private static readonly Bitfield32 bits_Type = Bitfield32.SelectBits(offset: 8, count: 5);
+        private static readonly Bitfield32 bits_Dpl = Bitfield32.SelectBits(offset: 13, count: 2);
+        private static readonly Bitfield32 bits_Pres = Bitfield32.SelectBits(offset: 15, count: 1);
+        private static readonly Bitfield32 bits_limitHi = Bitfield32.SelectBits(offset: 16, count: 4);
+        private static readonly Bitfield32 bits_Sys = Bitfield32.SelectBits(offset: 20, count: 1);
+        private static readonly Bitfield32 bits_Reserved0 = Bitfield32.SelectBits(offset: 21, count: 1);
+        private static readonly Bitfield32 bits_DefaultBig = Bitfield32.SelectBits(offset: 22, count: 1);
+        private static readonly Bitfield32 bits_Granularity = Bitfield32.SelectBits(offset: 23, count: 1);
+        private static readonly Bitfield32 bits_BaseHi = Bitfield32.RemainingBits(offset: 24);
+        private static readonly Bitfield32 bits_Flags1 = Bitfield32.SelectBits(offset: 8, count: 8);
+        private static readonly Bitfield32 bits_Flags2 = Bitfield32.SelectBits(offset: 16, count: 8);
 
         private uint value;
 
@@ -184,8 +184,8 @@ namespace THNETII.WinApi.Native.WinNT
         /// <value><see langword="true"/> if the segment is present in physical memory; otherwise, <see langword="false"/>.</value>
         public bool Pres
         {
-            get => bits_Pres.Read(value) != 0;
-            set => bits_Pres.Write(ref this.value, value ? 1U : 0U);
+            get => bits_Pres.ReadMasked(value) != 0;
+            set => bits_Pres.WriteMasked(ref this.value, value ? ~0U : 0U);
         }
 
         /// <summary>
@@ -202,8 +202,8 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public bool Sys
         {
-            get => bits_Sys.Read(value) != 0;
-            set => bits_Sys.Write(ref this.value, value ? 1U : 0U);
+            get => bits_Sys.ReadMasked(value) != 0;
+            set => bits_Sys.WriteMasked(ref this.value, value ? ~0U : 0U);
         }
 
         internal int Reserved_0
@@ -221,8 +221,8 @@ namespace THNETII.WinApi.Native.WinNT
         /// </value>
         public bool DefaultBig
         {
-            get => bits_DefaultBig.Read(value) != 0;
-            set => bits_DefaultBig.Write(ref this.value, value ? 1U : 0U);
+            get => bits_DefaultBig.ReadMasked(value) != 0;
+            set => bits_DefaultBig.WriteMasked(ref this.value, value ? ~0U : 0U);
         }
 
         /// <summary>

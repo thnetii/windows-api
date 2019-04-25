@@ -43,10 +43,10 @@ namespace THNETII.WinApi
     [SuppressMessage("Naming", "CA1724: Type names should not match namespaces")]
     public struct NTSTATUS : IEquatable<NTSTATUS>, IEquatable<int>
     {
-        private static readonly Bitfield32 code_field = Bitfield32.DefineLowerBits(16);
-        private static readonly Bitfield32 facility_field = Bitfield32.DefineMiddleBits(offset: 16, count: 11);
-        private static readonly Bitfield32 c_bit = Bitfield32.DefineSingleBit(29);
-        private static readonly Bitfield32 sev_field = Bitfield32.DefineRemainingBits(offset: 30);
+        private static readonly Bitfield32 code_field = Bitfield32.LowBits(16);
+        private static readonly Bitfield32 facility_field = Bitfield32.SelectBits(offset: 16, count: 11);
+        private static readonly Bitfield32 c_bit = Bitfield32.Bit(29);
+        private static readonly Bitfield32 sev_field = Bitfield32.RemainingBits(offset: 30);
 
         /// <summary>
         /// The full 32-bit integer value of of the system error code.
@@ -70,7 +70,7 @@ namespace THNETII.WinApi
         /// Whether the <see cref="NTSTATUS"/> value is a customer-defined value.
         /// </summary>
         /// <value><see langword="false"/> is the <see cref="NTSTATUS"/> value is Microsoft-defined; <see langword="true"/> if it is Customer-defined.</value>
-        public bool IsCustomerCode => c_bit.Read(Value) != 0;
+        public bool IsCustomerCode => c_bit.ReadMasked(Value) != 0;
 
         /// <summary>
         /// Gets the severity code.

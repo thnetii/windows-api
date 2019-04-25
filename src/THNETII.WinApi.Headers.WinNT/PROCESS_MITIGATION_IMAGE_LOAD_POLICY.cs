@@ -1,4 +1,5 @@
 ﻿using System.Runtime.InteropServices;
+
 using THNETII.InteropServices.Bitwise;
 
 namespace THNETII.WinApi.Native.WinNT
@@ -15,12 +16,12 @@ namespace THNETII.WinApi.Native.WinNT
     [StructLayout(LayoutKind.Sequential)]
     public struct PROCESS_MITIGATION_IMAGE_LOAD_POLICY
     {
-        private static readonly Bitfield32 bfNoRemoteImages = Bitfield32.DefineLowerBits(1);
-        private static readonly Bitfield32 bfNoLowMandatoryLabelImages = Bitfield32.DefineMiddleBits(1, 1);
-        private static readonly Bitfield32 bfPreferSystem32Images = Bitfield32.DefineMiddleBits(2, 1);
-        private static readonly Bitfield32 bfAuditNoRemoteImages = Bitfield32.DefineMiddleBits(3, 1);
-        private static readonly Bitfield32 bfAuditNoLowMandatoryLabelImages = Bitfield32.DefineMiddleBits(4, 1);
-        private static readonly Bitfield32 bfReservedFlags = Bitfield32.DefineFromMask(Bitmask.HigherBitsUInt32(27));
+        private static readonly Bitfield32 bfNoRemoteImages = Bitfield32.LowBits(1);
+        private static readonly Bitfield32 bfNoLowMandatoryLabelImages = Bitfield32.SelectBits(1, 1);
+        private static readonly Bitfield32 bfPreferSystem32Images = Bitfield32.SelectBits(2, 1);
+        private static readonly Bitfield32 bfAuditNoRemoteImages = Bitfield32.SelectBits(3, 1);
+        private static readonly Bitfield32 bfAuditNoLowMandatoryLabelImages = Bitfield32.SelectBits(4, 1);
+        private static readonly Bitfield32 bfReservedFlags = Bitfield32.FromMask(Bitmask.HigherBitsUInt32(27));
 
         private uint dwFlags;
 
@@ -36,8 +37,8 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public bool NoRemoteImages
         {
-            get => bfNoRemoteImages.Read(dwFlags) != 0;
-            set => bfNoRemoteImages.Write(ref dwFlags, value ? 1U : 0U);
+            get => bfNoRemoteImages.ReadMasked(dwFlags) != 0;
+            set => bfNoRemoteImages.WriteMasked(ref dwFlags, value ? ~0U : 0U);
         }
 
         /// <summary>
@@ -46,8 +47,8 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public bool NoLowMandatoryLabelImages
         {
-            get => bfNoLowMandatoryLabelImages.Read(dwFlags) != 0;
-            set => bfNoLowMandatoryLabelImages.Write(ref dwFlags, value ? 1U : 0U);
+            get => bfNoLowMandatoryLabelImages.ReadMasked(dwFlags) != 0;
+            set => bfNoLowMandatoryLabelImages.WriteMasked(ref dwFlags, value ? ~0U : 0U);
         }
 
         /// <summary>
@@ -57,26 +58,26 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public bool PreferSystem32Images
         {
-            get => bfPreferSystem32Images.Read(dwFlags) != 0;
-            set => bfPreferSystem32Images.Write(ref dwFlags, value ? 1U : 0U);
+            get => bfPreferSystem32Images.ReadMasked(dwFlags) != 0;
+            set => bfPreferSystem32Images.WriteMasked(ref dwFlags, value ? ~0U : 0U);
         }
 
         public bool AuditNoRemoteImages
         {
-            get => bfAuditNoRemoteImages.Read(dwFlags) != 0;
-            set => bfAuditNoRemoteImages.Write(ref dwFlags, value ? 1U : 0U);
+            get => bfAuditNoRemoteImages.ReadMasked(dwFlags) != 0;
+            set => bfAuditNoRemoteImages.WriteMasked(ref dwFlags, value ? ~0U : 0U);
         }
 
         public bool AuditNoLowMandatoryLabelImages
         {
-            get => bfAuditNoLowMandatoryLabelImages.Read(dwFlags) != 0;
-            set => bfAuditNoLowMandatoryLabelImages.Write(ref dwFlags, value ? 1U : 0U);
+            get => bfAuditNoLowMandatoryLabelImages.ReadMasked(dwFlags) != 0;
+            set => bfAuditNoLowMandatoryLabelImages.WriteMasked(ref dwFlags, value ? ~0U : 0U);
         }
 
         public int ReservedFlags
         {
-            get => (int)bfReservedFlags.Read(dwFlags);
-            set => bfReservedFlags.Write(ref dwFlags, (uint)value);
+            get => (int)bfReservedFlags.ReadMasked(dwFlags);
+            set => bfReservedFlags.WriteMasked(ref dwFlags, (uint)value);
         }
     }
 }

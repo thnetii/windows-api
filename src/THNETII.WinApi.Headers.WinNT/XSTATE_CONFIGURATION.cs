@@ -27,17 +27,17 @@ namespace THNETII.WinApi.Native.WinNT
         /// Control Flags
         /// </summary>
         public int ControlFlags;
-        private static readonly Bitfield32 bfOptimizedSave = Bitfield32.DefineFromMask(1 << 0);
-        private static readonly Bitfield32 bfCompactionEnabled = Bitfield32.DefineFromMask(1 << 1);
+        private static readonly Bitfield32 bfOptimizedSave = Bitfield32.Bit(0);
+        private static readonly Bitfield32 bfCompactionEnabled = Bitfield32.Bit(1);
         public bool OptimizedSave
         {
-            get => bfOptimizedSave.Read(ControlFlags) != 0;
-            set => bfOptimizedSave.Write(ref ControlFlags, value ? 1 : 0);
+            get => bfOptimizedSave.ReadMasked(ControlFlags) != 0;
+            set => bfOptimizedSave.WriteMasked(ref ControlFlags, value ? ~0 : 0);
         }
         public bool CompactionEnabled
         {
-            get => bfCompactionEnabled.Read(ControlFlags) != 0;
-            set => bfCompactionEnabled.Write(ref ControlFlags, value ? 1 : 0);
+            get => bfCompactionEnabled.ReadMasked(ControlFlags) != 0;
+            set => bfCompactionEnabled.WriteMasked(ref ControlFlags, value ? ~0 : 0);
         }
 
         #region public XSTATE_FEATURE Features[MAXIMUM_XSTATE_FEATURES];

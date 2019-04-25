@@ -1,4 +1,5 @@
 ﻿using System.Runtime.InteropServices;
+
 using THNETII.InteropServices.Bitwise;
 
 namespace THNETII.WinApi.Native.WinNT
@@ -7,25 +8,25 @@ namespace THNETII.WinApi.Native.WinNT
     [StructLayout(LayoutKind.Sequential)]
     public struct PROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY
     {
-        private static readonly Bitfield32 bfEnableExportAddressFilter = Bitfield32.DefineLowerBits(1);
-        private static readonly Bitfield32 bfAuditExportAddressFilter = Bitfield32.DefineMiddleBits(1, 1);
+        private static readonly Bitfield32 bfEnableExportAddressFilter = Bitfield32.LowBits(1);
+        private static readonly Bitfield32 bfAuditExportAddressFilter = Bitfield32.SelectBits(1, 1);
 
-        private static readonly Bitfield32 bfEnableExportAddressFilterPlus = Bitfield32.DefineMiddleBits(2, 1);
-        private static readonly Bitfield32 bfAuditExportAddressFilterPlus = Bitfield32.DefineMiddleBits(3, 1);
+        private static readonly Bitfield32 bfEnableExportAddressFilterPlus = Bitfield32.SelectBits(2, 1);
+        private static readonly Bitfield32 bfAuditExportAddressFilterPlus = Bitfield32.SelectBits(3, 1);
 
-        private static readonly Bitfield32 bfEnableImportAddressFilter = Bitfield32.DefineMiddleBits(4, 1);
-        private static readonly Bitfield32 bfAuditImportAddressFilter = Bitfield32.DefineMiddleBits(5, 1);
+        private static readonly Bitfield32 bfEnableImportAddressFilter = Bitfield32.SelectBits(4, 1);
+        private static readonly Bitfield32 bfAuditImportAddressFilter = Bitfield32.SelectBits(5, 1);
 
-        private static readonly Bitfield32 bfEnableRopStackPivot = Bitfield32.DefineMiddleBits(6, 1);
-        private static readonly Bitfield32 bfAuditRopStackPivot = Bitfield32.DefineMiddleBits(7, 1);
+        private static readonly Bitfield32 bfEnableRopStackPivot = Bitfield32.SelectBits(6, 1);
+        private static readonly Bitfield32 bfAuditRopStackPivot = Bitfield32.SelectBits(7, 1);
 
-        private static readonly Bitfield32 bfEnableRopCallerCheck = Bitfield32.DefineMiddleBits(8, 1);
-        private static readonly Bitfield32 bfAuditRopCallerCheck = Bitfield32.DefineMiddleBits(9, 1);
+        private static readonly Bitfield32 bfEnableRopCallerCheck = Bitfield32.SelectBits(8, 1);
+        private static readonly Bitfield32 bfAuditRopCallerCheck = Bitfield32.SelectBits(9, 1);
 
-        private static readonly Bitfield32 bfEnableRopSimExec = Bitfield32.DefineMiddleBits(10, 1);
-        private static readonly Bitfield32 bfAuditRopSimExec = Bitfield32.DefineMiddleBits(11, 1);
+        private static readonly Bitfield32 bfEnableRopSimExec = Bitfield32.SelectBits(10, 1);
+        private static readonly Bitfield32 bfAuditRopSimExec = Bitfield32.SelectBits(11, 1);
 
-        private static readonly Bitfield32 bfReservedFlags = Bitfield32.DefineFromMask(Bitmask.HigherBitsUInt32(20));
+        private static readonly Bitfield32 bfReservedFlags = Bitfield32.FromMask(Bitmask.HigherBitsUInt32(20));
 
         private uint dwFlags;
 
@@ -37,80 +38,80 @@ namespace THNETII.WinApi.Native.WinNT
 
         public bool EnableExportAddressFilter
         {
-            get => bfEnableExportAddressFilter.Read(dwFlags) != 0;
-            set => bfEnableExportAddressFilter.Write(ref dwFlags, value ? 1U : 0U);
+            get => bfEnableExportAddressFilter.ReadMasked(dwFlags) != 0;
+            set => bfEnableExportAddressFilter.WriteMasked(ref dwFlags, value ? ~0U : 0U);
         }
 
         public bool AuditExportAddressFilter
         {
-            get => bfAuditExportAddressFilter.Read(dwFlags) != 0;
-            set => bfAuditExportAddressFilter.Write(ref dwFlags, value ? 1U : 0U);
+            get => bfAuditExportAddressFilter.ReadMasked(dwFlags) != 0;
+            set => bfAuditExportAddressFilter.WriteMasked(ref dwFlags, value ? ~0U : 0U);
         }
 
         public bool EnableExportAddressFilterPlus
         {
-            get => bfEnableExportAddressFilterPlus.Read(dwFlags) != 0;
-            set => bfEnableExportAddressFilterPlus.Write(ref dwFlags, value ? 1U : 0U);
+            get => bfEnableExportAddressFilterPlus.ReadMasked(dwFlags) != 0;
+            set => bfEnableExportAddressFilterPlus.WriteMasked(ref dwFlags, value ? ~0U : 0U);
         }
 
         public bool AuditExportAddressFilterPlus
         {
-            get => bfAuditExportAddressFilterPlus.Read(dwFlags) != 0;
-            set => bfAuditExportAddressFilterPlus.Write(ref dwFlags, value ? 1U : 0U);
+            get => bfAuditExportAddressFilterPlus.ReadMasked(dwFlags) != 0;
+            set => bfAuditExportAddressFilterPlus.WriteMasked(ref dwFlags, value ? ~0U : 0U);
         }
 
         public bool EnableImportAddressFilter
         {
-            get => bfEnableImportAddressFilter.Read(dwFlags) != 0;
-            set => bfEnableImportAddressFilter.Write(ref dwFlags, value ? 1U : 0U);
+            get => bfEnableImportAddressFilter.ReadMasked(dwFlags) != 0;
+            set => bfEnableImportAddressFilter.WriteMasked(ref dwFlags, value ? ~0U : 0U);
         }
 
         public bool AuditImportAddressFilter
         {
-            get => bfAuditImportAddressFilter.Read(dwFlags) != 0;
-            set => bfAuditImportAddressFilter.Write(ref dwFlags, value ? 1U : 0U);
+            get => bfAuditImportAddressFilter.ReadMasked(dwFlags) != 0;
+            set => bfAuditImportAddressFilter.WriteMasked(ref dwFlags, value ? ~0U : 0U);
         }
 
         public bool EnableRopStackPivot
         {
-            get => bfEnableRopStackPivot.Read(dwFlags) != 0;
-            set => bfEnableRopStackPivot.Write(ref dwFlags, value ? 1U : 0U);
+            get => bfEnableRopStackPivot.ReadMasked(dwFlags) != 0;
+            set => bfEnableRopStackPivot.WriteMasked(ref dwFlags, value ? ~0U : 0U);
         }
 
         public bool AuditRopStackPivot
         {
-            get => bfAuditRopStackPivot.Read(dwFlags) != 0;
-            set => bfAuditRopStackPivot.Write(ref dwFlags, value ? 1U : 0U);
+            get => bfAuditRopStackPivot.ReadMasked(dwFlags) != 0;
+            set => bfAuditRopStackPivot.WriteMasked(ref dwFlags, value ? ~0U : 0U);
         }
 
         public bool EnableRopCallerCheck
         {
-            get => bfEnableRopCallerCheck.Read(dwFlags) != 0;
-            set => bfEnableRopCallerCheck.Write(ref dwFlags, value ? 1U : 0U);
+            get => bfEnableRopCallerCheck.ReadMasked(dwFlags) != 0;
+            set => bfEnableRopCallerCheck.WriteMasked(ref dwFlags, value ? ~0U : 0U);
         }
 
         public bool AuditRopCallerCheck
         {
-            get => bfAuditRopCallerCheck.Read(dwFlags) != 0;
-            set => bfAuditRopCallerCheck.Write(ref dwFlags, value ? 1U : 0U);
+            get => bfAuditRopCallerCheck.ReadMasked(dwFlags) != 0;
+            set => bfAuditRopCallerCheck.WriteMasked(ref dwFlags, value ? ~0U : 0U);
         }
 
         public bool EnableRopSimExec
         {
-            get => bfEnableRopSimExec.Read(dwFlags) != 0;
-            set => bfEnableRopSimExec.Write(ref dwFlags, value ? 1U : 0U);
+            get => bfEnableRopSimExec.ReadMasked(dwFlags) != 0;
+            set => bfEnableRopSimExec.WriteMasked(ref dwFlags, value ? ~0U : 0U);
         }
 
         public bool AuditRopSimExec
         {
-            get => bfAuditRopSimExec.Read(dwFlags) != 0;
-            set => bfAuditRopSimExec.Write(ref dwFlags, value ? 1U : 0U);
+            get => bfAuditRopSimExec.ReadMasked(dwFlags) != 0;
+            set => bfAuditRopSimExec.WriteMasked(ref dwFlags, value ? ~0U : 0U);
         }
 
         public int ReservedFlags
         {
-            get => (int)bfReservedFlags.Read(dwFlags);
-            set => bfReservedFlags.Write(ref dwFlags, (uint)value);
+            get => (int)bfReservedFlags.ReadMasked(dwFlags);
+            set => bfReservedFlags.WriteMasked(ref dwFlags, (uint)value);
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System.Runtime.InteropServices;
+
 using THNETII.InteropServices.Bitwise;
 
 namespace THNETII.WinApi.Native.WinNT
@@ -13,9 +14,9 @@ namespace THNETII.WinApi.Native.WinNT
     [StructLayout(LayoutKind.Sequential)]
     public struct PROCESS_MITIGATION_SYSTEM_CALL_DISABLE_POLICY
     {
-        private static readonly Bitfield32 bfDisallowWin32kSystemCalls = Bitfield32.DefineLowerBits(1);
-        private static readonly Bitfield32 bfAuditDisallowWin32kSystemCalls = Bitfield32.DefineMiddleBits(1, 1);
-        private static readonly Bitfield32 bfReservedFlags = Bitfield32.DefineFromMask(Bitmask.HigherBitsUInt32(30));
+        private static readonly Bitfield32 bfDisallowWin32kSystemCalls = Bitfield32.LowBits(1);
+        private static readonly Bitfield32 bfAuditDisallowWin32kSystemCalls = Bitfield32.SelectBits(1, 1);
+        private static readonly Bitfield32 bfReservedFlags = Bitfield32.FromMask(Bitmask.HigherBitsUInt32(30));
 
         private uint dwFlags;
 
@@ -27,20 +28,20 @@ namespace THNETII.WinApi.Native.WinNT
 
         public bool DisallowWin32kSystemCalls
         {
-            get => bfDisallowWin32kSystemCalls.Read(dwFlags) != 0;
-            set => bfDisallowWin32kSystemCalls.Write(ref dwFlags, value ? 1U : 0U);
+            get => bfDisallowWin32kSystemCalls.ReadMasked(dwFlags) != 0;
+            set => bfDisallowWin32kSystemCalls.WriteMasked(ref dwFlags, value ? ~0U : 0U);
         }
 
         public bool AuditDisallowWin32kSystemCalls
         {
-            get => bfAuditDisallowWin32kSystemCalls.Read(dwFlags) != 0;
-            set => bfAuditDisallowWin32kSystemCalls.Write(ref dwFlags, value ? 1U : 0U);
+            get => bfAuditDisallowWin32kSystemCalls.ReadMasked(dwFlags) != 0;
+            set => bfAuditDisallowWin32kSystemCalls.WriteMasked(ref dwFlags, value ? ~0U : 0U);
         }
 
         public int ReservedFlags
         {
-            get => (int)bfReservedFlags.Read(dwFlags);
-            set => bfReservedFlags.Write(ref dwFlags, (uint)value);
+            get => (int)bfReservedFlags.ReadMasked(dwFlags);
+            set => bfReservedFlags.WriteMasked(ref dwFlags, (uint)value);
         }
     }
 }

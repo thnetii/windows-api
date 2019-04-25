@@ -8,10 +8,10 @@ namespace THNETII.WinApi.Native.MinWinDef
     public static class MinWinDefMacros
     {
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\minwindef.h, line 202
-        private static readonly Bitfield32 lowByte = Bitfield32.DefineFromMask(0xff);
-        private static readonly Bitfield32 highByte = Bitfield32.DefineFromMask(0xff, 8);
-        private static readonly Bitfield32 lowWord = Bitfield32.DefineFromMask(0xffff);
-        private static readonly Bitfield32 highWord = Bitfield32.DefineFromMask(0xffff, 16);
+        private static readonly Bitfield32 lowByte = Bitfield32.FromMask(0xff);
+        private static readonly Bitfield32 highByte = Bitfield32.FromMask(0xff, 8);
+        private static readonly Bitfield32 lowWord = Bitfield32.FromMask(0xffff);
+        private static readonly Bitfield32 highWord = Bitfield32.FromMask(0xffff, 16);
 
         public static ushort MAKEWORD(byte a, byte b)
         {

@@ -18,7 +18,7 @@ namespace THNETII.WinApi.Native.WinNT
     [StructLayout(LayoutKind.Sequential, Pack = 8)]
     public struct MEM_EXTENDED_PARAMETER
     {
-        private static readonly Bitfield64 TypeBitfield = Bitfield64.DefineLowerBits(MEM_EXTENDED_PARAMETER_TYPE_BITS);
+        private static readonly Bitfield64 TypeBitfield = Bitfield64.LowBits(MEM_EXTENDED_PARAMETER_TYPE_BITS);
         private ulong TypeField;
         /// <summary>
         /// <para>A <see cref="MEM_EXTENDED_PARAMETER_TYPE"/> value that indicates the type of the parameter.</para>
@@ -30,7 +30,7 @@ namespace THNETII.WinApi.Native.WinNT
             get => (MEM_EXTENDED_PARAMETER_TYPE)TypeBitfield.Read(TypeField);
             set => TypeBitfield.Write(ref TypeField, (ulong)value);
         }
-        private static readonly Bitfield64 ReservedBitfield = Bitfield64.DefineFromMask(TypeBitfield.InverseMask);
+        private static readonly Bitfield64 ReservedBitfield = Bitfield64.FromMask(TypeBitfield.InverseMask);
         /// <summary>Reserved.</summary>
         [EditorBrowsable(EditorBrowsableState.Never)]
         public ulong Reserved

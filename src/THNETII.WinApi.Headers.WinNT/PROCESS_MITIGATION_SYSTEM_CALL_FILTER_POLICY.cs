@@ -7,8 +7,8 @@ namespace THNETII.WinApi.Native.WinNT
     [StructLayout(LayoutKind.Sequential)]
     public struct PROCESS_MITIGATION_SYSTEM_CALL_FILTER_POLICY
     {
-        private static readonly Bitfield32 bfFilterId = Bitfield32.DefineLowerBits(4);
-        private static readonly Bitfield32 bfReservedFlags = Bitfield32.DefineFromMask(Bitmask.HigherBitsUInt32(28));
+        private static readonly Bitfield32 bfFilterId = Bitfield32.LowBits(4);
+        private static readonly Bitfield32 bfReservedFlags = Bitfield32.FromMask(Bitmask.HigherBitsUInt32(28));
 
         private uint dwFlags;
 

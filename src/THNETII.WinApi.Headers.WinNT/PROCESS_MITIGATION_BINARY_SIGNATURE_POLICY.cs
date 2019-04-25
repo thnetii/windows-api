@@ -15,12 +15,12 @@ namespace THNETII.WinApi.Native.WinNT
     [StructLayout(LayoutKind.Sequential)]
     public struct PROCESS_MITIGATION_BINARY_SIGNATURE_POLICY
     {
-        private static readonly Bitfield32 bfMicrosoftSignedOnly = Bitfield32.DefineLowerBits(1);
-        private static readonly Bitfield32 bfStoreSignedOnly = Bitfield32.DefineMiddleBits(1, 1);
-        private static readonly Bitfield32 bfMitigationOptIn = Bitfield32.DefineMiddleBits(2, 1);
-        private static readonly Bitfield32 bfAuditMicrosoftSignedOnly = Bitfield32.DefineMiddleBits(3, 1);
-        private static readonly Bitfield32 bfAuditStoreSignedOnly = Bitfield32.DefineMiddleBits(4, 1);
-        private static readonly Bitfield32 bfReservedFlags = Bitfield32.DefineFromMask(Bitmask.HigherBitsUInt32(27));
+        private static readonly Bitfield32 bfMicrosoftSignedOnly = Bitfield32.LowBits(1);
+        private static readonly Bitfield32 bfStoreSignedOnly = Bitfield32.SelectBits(1, 1);
+        private static readonly Bitfield32 bfMitigationOptIn = Bitfield32.SelectBits(2, 1);
+        private static readonly Bitfield32 bfAuditMicrosoftSignedOnly = Bitfield32.SelectBits(3, 1);
+        private static readonly Bitfield32 bfAuditStoreSignedOnly = Bitfield32.SelectBits(4, 1);
+        private static readonly Bitfield32 bfReservedFlags = Bitfield32.FromMask(Bitmask.HigherBitsUInt32(27));
 
         private uint dwFlags;
 
@@ -36,8 +36,8 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public bool MicrosoftSignedOnly
         {
-            get => bfMicrosoftSignedOnly.Read(dwFlags) != 0;
-            set => bfMicrosoftSignedOnly.Write(ref dwFlags, value ? 1U : 0U);
+            get => bfMicrosoftSignedOnly.ReadMasked(dwFlags) != 0;
+            set => bfMicrosoftSignedOnly.WriteMasked(ref dwFlags, value ? ~0U : 0U);
         }
 
         /// <summary>
@@ -46,8 +46,8 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public bool StoreSignedOnly
         {
-            get => bfStoreSignedOnly.Read(dwFlags) != 0;
-            set => bfStoreSignedOnly.Write(ref dwFlags, value ? 1U : 0U);
+            get => bfStoreSignedOnly.ReadMasked(dwFlags) != 0;
+            set => bfStoreSignedOnly.WriteMasked(ref dwFlags, value ? ~0U : 0U);
         }
 
         /// <summary>
@@ -57,26 +57,26 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public bool MitigationOptIn
         {
-            get => bfMitigationOptIn.Read(dwFlags) != 0;
-            set => bfMitigationOptIn.Write(ref dwFlags, value ? 1U : 0U);
+            get => bfMitigationOptIn.ReadMasked(dwFlags) != 0;
+            set => bfMitigationOptIn.WriteMasked(ref dwFlags, value ? ~0U : 0U);
         }
 
         public bool AuditMicrosoftSignedOnly
         {
-            get => bfAuditMicrosoftSignedOnly.Read(dwFlags) != 0;
-            set => bfAuditMicrosoftSignedOnly.Write(ref dwFlags, value ? 1U : 0U);
+            get => bfAuditMicrosoftSignedOnly.ReadMasked(dwFlags) != 0;
+            set => bfAuditMicrosoftSignedOnly.WriteMasked(ref dwFlags, value ? ~0U : 0U);
         }
 
         public bool AuditStoreSignedOnly
         {
-            get => bfAuditStoreSignedOnly.Read(dwFlags) != 0;
-            set => bfAuditStoreSignedOnly.Write(ref dwFlags, value ? 1U : 0U);
+            get => bfAuditStoreSignedOnly.ReadMasked(dwFlags) != 0;
+            set => bfAuditStoreSignedOnly.WriteMasked(ref dwFlags, value ? ~0U : 0U);
         }
 
         public int ReservedFlags
         {
-            get => (int)bfReservedFlags.Read(dwFlags);
-            set => bfReservedFlags.Write(ref dwFlags, (uint)value);
+            get => (int)bfReservedFlags.ReadMasked(dwFlags);
+            set => bfReservedFlags.WriteMasked(ref dwFlags, (uint)value);
         }
     }
 }

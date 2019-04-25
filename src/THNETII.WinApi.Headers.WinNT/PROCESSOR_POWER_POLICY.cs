@@ -39,14 +39,14 @@ namespace THNETII.WinApi.Native.WinNT
         #endregion
 
         // Flags
-        private static readonly Bitfield32 DisableCStatesBitfield = Bitfield32.DefineSingleBit(0);
-        private static readonly Bitfield32 ReservedBitfield = Bitfield32.DefineRemainingBits(1);
+        private static readonly Bitfield32 DisableCStatesBitfield = Bitfield32.Bit(0);
+        private static readonly Bitfield32 ReservedBitfield = Bitfield32.RemainingBits(1);
         internal int Flags;
         /// <summary>Reserved; set to zero.</summary>
         public bool DisableCStates
         {
-            get => DisableCStatesBitfield.Read(Flags) != 0;
-            set => DisableCStatesBitfield.Write(ref Flags, value ? ~0 : 0);
+            get => DisableCStatesBitfield.ReadMasked(Flags) != 0;
+            set => DisableCStatesBitfield.WriteMasked(ref Flags, value ? ~0 : 0);
         }
         /// <summary>Reserved; set to zero.</summary>
         [EditorBrowsable(EditorBrowsableState.Never)]

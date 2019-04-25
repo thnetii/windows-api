@@ -55,57 +55,37 @@ namespace THNETII.WinApi.Native.WinNT
         /// A value indicating the intrinsic energy efficiency of a processor for systems that support heterogeneous processors (such as ARM big.LITTLE systems). CPU Sets with higher numerical values of this field have home processors that are faster but less power-efficient than ones with lower values.
         /// </summary>
         public byte EfficiencyClass;
-        private static readonly Bitfield32 bfParked = Bitfield32.DefineSingleBit(0);
-        private static readonly Bitfield32 bfAllocated = Bitfield32.DefineSingleBit(1);
-        private static readonly Bitfield32 bfAllocatedToTargetProcess = Bitfield32.DefineSingleBit(2);
-        private static readonly Bitfield32 bfRealTime = Bitfield32.DefineSingleBit(3);
-        private static readonly Bitfield32 bfReservedFlags = Bitfield32.DefineMiddleBits(4, 4);
+        private static readonly Bitfield8 bfParked = Bitfield8.Bit(0);
+        private static readonly Bitfield8 bfAllocated = Bitfield8.Bit(1);
+        private static readonly Bitfield8 bfAllocatedToTargetProcess = Bitfield8.Bit(2);
+        private static readonly Bitfield8 bfRealTime = Bitfield8.Bit(3);
+        private static readonly Bitfield8 bfReservedFlags = Bitfield8.RemainingBits(4);
         public byte AllFlags;
         public bool Parked
         {
-            get => bfParked.Read(AllFlags) != 0;
-            set
-            {
-                uint f = AllFlags;
-                AllFlags = (byte)bfParked.Write(ref f, value ? 1U : 0U);
-            }
+            get => bfParked.ReadMasked(AllFlags) != 0;
+            set => bfParked.WriteMasked(ref AllFlags, (byte)(value ? ~0U : 0U));
         }
         public bool Allocated
         {
-            get => bfAllocated.Read(AllFlags) != 0;
-            set
-            {
-                uint f = AllFlags;
-                AllFlags = (byte)bfAllocated.Write(ref f, value ? 1U : 0U);
-            }
+            get => bfAllocated.ReadMasked(AllFlags) != 0;
+            set => bfAllocated.WriteMasked(ref AllFlags, (byte)(value ? ~0U : 0U));
         }
         public bool AllocatedToTargetProcess
         {
-            get => bfAllocatedToTargetProcess.Read(AllFlags) != 0;
-            set
-            {
-                uint f = AllFlags;
-                AllFlags = (byte)bfAllocatedToTargetProcess.Write(ref f, value ? 1U : 0U);
-            }
+            get => bfAllocatedToTargetProcess.ReadMasked(AllFlags) != 0;
+            set => bfAllocatedToTargetProcess.WriteMasked(ref AllFlags, (byte)(value ? ~0U : 0U));
         }
         public bool RealTime
         {
-            get => bfRealTime.Read(AllFlags) != 0;
-            set
-            {
-                uint f = AllFlags;
-                AllFlags = (byte)bfRealTime.Write(ref f, value ? 1U : 0U);
-            }
+            get => bfRealTime.ReadMasked(AllFlags) != 0;
+            set => bfRealTime.WriteMasked(ref AllFlags, (byte)(value ? ~0U : 0U));
         }
         [EditorBrowsable(EditorBrowsableState.Never)]
         internal byte ReservedFlags
         {
-            get => (byte)bfReservedFlags.Read(AllFlags);
-            set
-            {
-                uint f = AllFlags;
-                AllFlags = (byte)bfRealTime.Write(ref f, value);
-            }
+            get => bfReservedFlags.Read(AllFlags);
+            set => bfReservedFlags.Write(ref AllFlags, value);
         }
         [StructLayout(LayoutKind.Explicit)]
         private struct DUMMYUNIONNAME3

@@ -11,7 +11,7 @@ namespace THNETII.WinApi
     [StructLayout(LayoutKind.Sequential)]
     public struct Win32ErrorCode : IEquatable<int>, IEquatable<Win32ErrorCode>
     {
-        private static readonly Bitfield32 appdefined_bit = Bitfield32.DefineSingleBit(29);
+        private static readonly Bitfield32 appdefined_bit = Bitfield32.Bit(29);
 
         /// <summary>
         /// The full 32-bit integer value of of the system error code.
@@ -28,7 +28,7 @@ namespace THNETII.WinApi
         /// <para>No system error code has this property set to <see langword="true"/>.</para>
         /// <para>If you are defining an error code for your application, set this bit to one. That indicates that the error code has been defined by an application, and ensures that your error code does not conflict with any error codes defined by the system.</para>
         /// </remarks>
-        public bool IsApplicationDefined => appdefined_bit.Read(Value) != 0;
+        public bool IsApplicationDefined => appdefined_bit.ReadMasked(Value) != 0;
 
         /// <summary>
         /// Initializes the specified integer value as a Win32 system error code.

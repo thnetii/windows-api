@@ -15,11 +15,11 @@ namespace THNETII.WinApi.Native.WinNT
     [StructLayout(LayoutKind.Sequential)]
     public struct PROCESS_MITIGATION_ASLR_POLICY
     {
-        private static readonly Bitfield32 bfEnableBottomUpRandomization = Bitfield32.DefineLowerBits(1);
-        private static readonly Bitfield32 bfEnableForceRelocateImages = Bitfield32.DefineMiddleBits(1, 1);
-        private static readonly Bitfield32 bfEnableHighEntropy = Bitfield32.DefineMiddleBits(2, 1);
-        private static readonly Bitfield32 bfDisallowStrippedImages = Bitfield32.DefineMiddleBits(3, 1);
-        private static readonly Bitfield32 bfReservedFlags = Bitfield32.DefineFromMask(Bitmask.HigherBitsUInt32(28));
+        private static readonly Bitfield32 bfEnableBottomUpRandomization = Bitfield32.Bit(0);
+        private static readonly Bitfield32 bfEnableForceRelocateImages = Bitfield32.Bit(1);
+        private static readonly Bitfield32 bfEnableHighEntropy = Bitfield32.Bit(2);
+        private static readonly Bitfield32 bfDisallowStrippedImages = Bitfield32.Bit(3);
+        private static readonly Bitfield32 bfReservedFlags = Bitfield32.RemainingBits(4);
 
         private uint dwFlags;
 
@@ -31,14 +31,14 @@ namespace THNETII.WinApi.Native.WinNT
 
         public bool EnableBottomUpRandomization
         {
-            get => bfEnableBottomUpRandomization.Read(dwFlags) != 0;
-            set => bfEnableBottomUpRandomization.Write(ref dwFlags, value ? 1U : 0U);
+            get => bfEnableBottomUpRandomization.ReadMasked(dwFlags) != 0;
+            set => bfEnableBottomUpRandomization.WriteMasked(ref dwFlags, value ? ~0U : 0U);
         }
 
         public bool EnableForceRelocateImages
         {
-            get => bfEnableForceRelocateImages.Read(dwFlags) != 0;
-            set => bfEnableForceRelocateImages.Write(ref dwFlags, value ? 1U : 0U);
+            get => bfEnableForceRelocateImages.ReadMasked(dwFlags) != 0;
+            set => bfEnableForceRelocateImages.WriteMasked(ref dwFlags, value ? ~0U : 0U);
         }
 
         /// <summary>
@@ -47,21 +47,21 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public bool EnableHighEntropy
         {
-            get => bfEnableHighEntropy.Read(dwFlags) != 0;
-            set => bfEnableHighEntropy.Write(ref dwFlags, value ? 1U : 0U);
+            get => bfEnableHighEntropy.ReadMasked(dwFlags) != 0;
+            set => bfEnableHighEntropy.WriteMasked(ref dwFlags, value ? ~0U : 0U);
         }
 
         public bool DisallowStrippedImages
         {
-            get => bfDisallowStrippedImages.Read(dwFlags) != 0;
-            set => bfDisallowStrippedImages.Write(ref dwFlags, value ? 1U : 0U);
+            get => bfDisallowStrippedImages.ReadMasked(dwFlags) != 0;
+            set => bfDisallowStrippedImages.WriteMasked(ref dwFlags, value ? ~0U : 0U);
         }
 
         [EditorBrowsable(EditorBrowsableState.Never)]
         public int ReservedFlags
         {
-            get => (int)bfReservedFlags.Read(dwFlags);
-            set => bfReservedFlags.Write(ref dwFlags, (uint)value);
+            get => (int)bfReservedFlags.ReadMasked(dwFlags);
+            set => bfReservedFlags.WriteMasked(ref dwFlags, (uint)value);
         }
     }
 }

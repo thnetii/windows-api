@@ -12,8 +12,8 @@ namespace THNETII.WinApi.Native.WinBase
     [DebuggerDisplay(nameof(DebuggerDisplay) + "()")]
     public struct FORMAT_MESSAGE_OPTIONS : IEquatable<FORMAT_MESSAGE_OPTIONS>, IEquatable<int>, IEquatable<FORMAT_MESSAGE_FLAGS>
     {
-        private static readonly Bitfield32 width_field = Bitfield32.DefineFromMask(FORMAT_MESSAGE_MAX_WIDTH_MASK);
-        private static readonly Bitfield32 flags_field = Bitfield32.DefineFromMask(width_field.InverseMask);
+        private static readonly Bitfield32 width_field = Bitfield32.FromMask(FORMAT_MESSAGE_MAX_WIDTH_MASK);
+        private static readonly Bitfield32 flags_field = Bitfield32.FromMask(width_field.InverseMask);
 
         internal int dwFlags;
 

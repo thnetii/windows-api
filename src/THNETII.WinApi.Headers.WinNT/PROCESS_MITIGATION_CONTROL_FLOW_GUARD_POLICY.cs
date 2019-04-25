@@ -1,4 +1,5 @@
 ﻿using System.Runtime.InteropServices;
+
 using THNETII.InteropServices.Bitwise;
 
 namespace THNETII.WinApi.Native.WinNT
@@ -14,10 +15,10 @@ namespace THNETII.WinApi.Native.WinNT
     [StructLayout(LayoutKind.Sequential)]
     public struct PROCESS_MITIGATION_CONTROL_FLOW_GUARD_POLICY
     {
-        private static readonly Bitfield32 bfEnableControlFlowGuard = Bitfield32.DefineLowerBits(1);
-        private static readonly Bitfield32 bfEnableExportSuppression = Bitfield32.DefineMiddleBits(1, 1);
-        private static readonly Bitfield32 bfStrictMode = Bitfield32.DefineMiddleBits(2, 1);
-        private static readonly Bitfield32 bfReservedFlags = Bitfield32.DefineFromMask(Bitmask.HigherBitsUInt32(29));
+        private static readonly Bitfield32 bfEnableControlFlowGuard = Bitfield32.LowBits(1);
+        private static readonly Bitfield32 bfEnableExportSuppression = Bitfield32.SelectBits(1, 1);
+        private static readonly Bitfield32 bfStrictMode = Bitfield32.SelectBits(2, 1);
+        private static readonly Bitfield32 bfReservedFlags = Bitfield32.FromMask(Bitmask.HigherBitsUInt32(29));
 
         private uint dwFlags;
 
@@ -33,8 +34,8 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public bool EnableControlFlowGuard
         {
-            get => bfEnableControlFlowGuard.Read(dwFlags) != 0;
-            set => bfEnableControlFlowGuard.Write(ref dwFlags, value ? 1U : 0U);
+            get => bfEnableControlFlowGuard.ReadMasked(dwFlags) != 0;
+            set => bfEnableControlFlowGuard.WriteMasked(ref dwFlags, value ? ~0U : 0U);
         }
 
         /// <summary>
@@ -44,8 +45,8 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public bool EnableExportSuppression
         {
-            get => bfEnableExportSuppression.Read(dwFlags) != 0;
-            set => bfEnableExportSuppression.Write(ref dwFlags, value ? 1U : 0U);
+            get => bfEnableExportSuppression.ReadMasked(dwFlags) != 0;
+            set => bfEnableExportSuppression.WriteMasked(ref dwFlags, value ? ~0U : 0U);
         }
 
         /// <summary>
@@ -55,14 +56,14 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public bool AllowRemoteDowngrade
         {
-            get => bfStrictMode.Read(dwFlags) != 0;
-            set => bfStrictMode.Write(ref dwFlags, value ? 1U : 0U);
+            get => bfStrictMode.ReadMasked(dwFlags) != 0;
+            set => bfStrictMode.WriteMasked(ref dwFlags, value ? ~0U : 0U);
         }
 
         public int ReservedFlags
         {
-            get => (int)bfReservedFlags.Read(dwFlags);
-            set => bfReservedFlags.Write(ref dwFlags, (uint)value);
+            get => (int)bfReservedFlags.ReadMasked(dwFlags);
+            set => bfReservedFlags.WriteMasked(ref dwFlags, (uint)value);
         }
     }
 }

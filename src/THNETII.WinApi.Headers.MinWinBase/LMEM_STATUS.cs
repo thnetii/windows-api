@@ -11,9 +11,9 @@ namespace THNETII.WinApi.Native.MinWinBase
     [StructLayout(LayoutKind.Sequential), DebuggerDisplay(nameof(DebuggerDisplay) + "()")]
     public struct LMEM_STATUS : IEquatable<LMEM_STATUS>, IEquatable<int>
     {
-        private static readonly Bitfield32 isinvalid = Bitfield32.DefineFromMask(LMEM_INVALID_HANDLE);
-        private static readonly Bitfield32 discarded = Bitfield32.DefineFromMask(LMEM_DISCARDED);
-        private static readonly Bitfield32 lockcount = Bitfield32.DefineFromMask(LMEM_LOCKCOUNT);
+        private static readonly Bitfield32 isinvalid = Bitfield32.FromMask(LMEM_INVALID_HANDLE);
+        private static readonly Bitfield32 discarded = Bitfield32.FromMask(LMEM_DISCARDED);
+        private static readonly Bitfield32 lockcount = Bitfield32.FromMask(LMEM_LOCKCOUNT);
 
         private readonly int value;
 
@@ -21,9 +21,9 @@ namespace THNETII.WinApi.Native.MinWinBase
 
         public int LockCount => lockcount.Read(value);
 
-        public bool IsDiscarded => discarded.Read(value) != 0;
+        public bool IsDiscarded => discarded.ReadMasked(value) != 0;
 
-        public bool IsInvalid => isinvalid.Read(value) != 0;
+        public bool IsInvalid => isinvalid.ReadMasked(value) != 0;
 
         public override bool Equals(object obj)
         {

@@ -23,25 +23,25 @@ namespace THNETII.WinApi.Native.WinNT
     [DebuggerDisplay(nameof(DebuggerDisplay) + "()")]
     public struct ACCESS_MASK : IEquatable<ACCESS_MASK>, IEquatable<int>
     {
-        private static readonly Bitfield32 bitsSpecificRights = Bitfield32.DefineFromMask(SPECIFIC_RIGHTS_ALL);
+        private static readonly Bitfield32 bitsSpecificRights = Bitfield32.FromMask(SPECIFIC_RIGHTS_ALL);
 
-        private static readonly Bitfield32 bitsStandardDelete = Bitfield32.DefineFromMask(DELETE);
-        private static readonly Bitfield32 bitsStandardReadControl = Bitfield32.DefineFromMask(READ_CONTROL);
-        private static readonly Bitfield32 bitsStandardWriteDac = Bitfield32.DefineFromMask(WRITE_DAC);
-        private static readonly Bitfield32 bitsStandardWriteOwner = Bitfield32.DefineFromMask(WRITE_OWNER);
-        private static readonly Bitfield32 bitsStandardSynchronize = Bitfield32.DefineFromMask(SYNCHRONIZE);
-        private static readonly Bitfield32 bitsStandardRightsRequired = Bitfield32.DefineFromMask(STANDARD_RIGHTS_REQUIRED);
-        private static readonly Bitfield32 bitsStandardRead = Bitfield32.DefineFromMask(STANDARD_RIGHTS_READ);
-        private static readonly Bitfield32 bitsStandardWrite = Bitfield32.DefineFromMask(STANDARD_RIGHTS_WRITE);
-        private static readonly Bitfield32 bitsStandardExecute = Bitfield32.DefineFromMask(STANDARD_RIGHTS_EXECUTE);
-        private static readonly Bitfield32 bitsStandardRights = Bitfield32.DefineFromMask(STANDARD_RIGHTS_ALL);
+        private static readonly Bitfield32 bitsStandardDelete = Bitfield32.FromMask(DELETE);
+        private static readonly Bitfield32 bitsStandardReadControl = Bitfield32.FromMask(READ_CONTROL);
+        private static readonly Bitfield32 bitsStandardWriteDac = Bitfield32.FromMask(WRITE_DAC);
+        private static readonly Bitfield32 bitsStandardWriteOwner = Bitfield32.FromMask(WRITE_OWNER);
+        private static readonly Bitfield32 bitsStandardSynchronize = Bitfield32.FromMask(SYNCHRONIZE);
+        private static readonly Bitfield32 bitsStandardRightsRequired = Bitfield32.FromMask(STANDARD_RIGHTS_REQUIRED);
+        private static readonly Bitfield32 bitsStandardRead = Bitfield32.FromMask(STANDARD_RIGHTS_READ);
+        private static readonly Bitfield32 bitsStandardWrite = Bitfield32.FromMask(STANDARD_RIGHTS_WRITE);
+        private static readonly Bitfield32 bitsStandardExecute = Bitfield32.FromMask(STANDARD_RIGHTS_EXECUTE);
+        private static readonly Bitfield32 bitsStandardRights = Bitfield32.FromMask(STANDARD_RIGHTS_ALL);
 
-        private static readonly Bitfield32 bitsAccessSystemAcl = Bitfield32.DefineFromMask(ACCESS_SYSTEM_SECURITY);
-        private static readonly Bitfield32 bitsMaximumAllowed = Bitfield32.DefineFromMask(MAXIMUM_ALLOWED);
-        private static readonly Bitfield32 bitsGenericAll = Bitfield32.DefineFromMask(GENERIC_ALL);
-        private static readonly Bitfield32 bitsGenericExecute = Bitfield32.DefineFromMask(GENERIC_EXECUTE);
-        private static readonly Bitfield32 bitsGenericWrite = Bitfield32.DefineFromMask(GENERIC_WRITE);
-        private static readonly Bitfield32 bitsGenericRead = Bitfield32.DefineFromMask(GENERIC_READ);
+        private static readonly Bitfield32 bitsAccessSystemAcl = Bitfield32.FromMask(ACCESS_SYSTEM_SECURITY);
+        private static readonly Bitfield32 bitsMaximumAllowed = Bitfield32.FromMask(MAXIMUM_ALLOWED);
+        private static readonly Bitfield32 bitsGenericAll = Bitfield32.FromMask(GENERIC_ALL);
+        private static readonly Bitfield32 bitsGenericExecute = Bitfield32.FromMask(GENERIC_EXECUTE);
+        private static readonly Bitfield32 bitsGenericWrite = Bitfield32.FromMask(GENERIC_WRITE);
+        private static readonly Bitfield32 bitsGenericRead = Bitfield32.FromMask(GENERIC_READ);
 
         private int value;
 
@@ -52,8 +52,8 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public ushort SpecificRights
         {
-            get => (ushort)bitsSpecificRights.Read(value);
-            set => bitsSpecificRights.Write(ref this.value, value);
+            get => (ushort)bitsSpecificRights.ReadMasked(value);
+            set => bitsSpecificRights.WriteMasked(ref this.value, value);
         }
 
         /// <summary>
@@ -61,8 +61,8 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public int StandardRights
         {
-            get => bitsStandardRights.Read(value);
-            set => bitsStandardRights.Write(ref this.value, value);
+            get => bitsStandardRights.ReadMasked(value);
+            set => bitsStandardRights.WriteMasked(ref this.value, value);
         }
 
         /// <summary>
@@ -70,8 +70,8 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public bool StandardDelete
         {
-            get => bitsStandardDelete.Read(value) != 0;
-            set => bitsStandardDelete.Write(ref this.value, DELETE);
+            get => bitsStandardDelete.ReadMasked(value) != 0;
+            set => bitsStandardDelete.WriteMasked(ref this.value, value ? DELETE : 0);
         }
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public bool StandardReadControl
         {
-            get => bitsStandardReadControl.Read(value) != 0;
-            set => bitsStandardReadControl.Write(ref this.value, READ_CONTROL);
+            get => bitsStandardReadControl.ReadMasked(value) != 0;
+            set => bitsStandardReadControl.WriteMasked(ref this.value, value ? READ_CONTROL : 0);
         }
 
         /// <summary>
@@ -88,8 +88,8 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public bool StandardWriteDac
         {
-            get => bitsStandardWriteDac.Read(value) != 0;
-            set => bitsStandardWriteDac.Write(ref this.value, WRITE_DAC);
+            get => bitsStandardWriteDac.ReadMasked(value) != 0;
+            set => bitsStandardWriteDac.WriteMasked(ref this.value, value ? WRITE_DAC : 0);
         }
 
         /// <summary>
@@ -97,8 +97,8 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public bool StandardWriteOwner
         {
-            get => bitsStandardWriteOwner.Read(value) != 0;
-            set => bitsStandardWriteOwner.Write(ref this.value, WRITE_OWNER);
+            get => bitsStandardWriteOwner.ReadMasked(value) != 0;
+            set => bitsStandardWriteOwner.WriteMasked(ref this.value, value ? WRITE_OWNER : 0);
         }
 
         /// <summary>
@@ -106,14 +106,14 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public bool StandardSynchronize
         {
-            get => bitsStandardSynchronize.Read(value) != 0;
-            set => bitsStandardSynchronize.Write(ref this.value, SYNCHRONIZE);
+            get => bitsStandardSynchronize.ReadMasked(value) != 0;
+            set => bitsStandardSynchronize.WriteMasked(ref this.value, value ? SYNCHRONIZE : 0);
         }
 
         public bool StandardRightsRequired
         {
-            get => bitsStandardRightsRequired.Read(value) == STANDARD_RIGHTS_REQUIRED;
-            set => bitsStandardRightsRequired.Write(ref this.value, STANDARD_RIGHTS_REQUIRED);
+            get => bitsStandardRightsRequired.ReadMasked(value) == STANDARD_RIGHTS_REQUIRED;
+            set => bitsStandardRightsRequired.WriteMasked(ref this.value, value ? STANDARD_RIGHTS_REQUIRED : 0);
         }
 
         /// <summary>
@@ -125,8 +125,8 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public bool AccessSystemAcl
         {
-            get => bitsAccessSystemAcl.Read(value) != 0;
-            set => bitsAccessSystemAcl.Write(ref this.value, ACCESS_SYSTEM_SECURITY);
+            get => bitsAccessSystemAcl.ReadMasked(value) != 0;
+            set => bitsAccessSystemAcl.WriteMasked(ref this.value, value ? ACCESS_SYSTEM_SECURITY : 0);
         }
 
         /// <summary>
@@ -134,8 +134,8 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public bool MaximumAllowed
         {
-            get => bitsMaximumAllowed.Read(value) != 0;
-            set => bitsMaximumAllowed.Write(ref this.value, MAXIMUM_ALLOWED);
+            get => bitsMaximumAllowed.ReadMasked(value) != 0;
+            set => bitsMaximumAllowed.WriteMasked(ref this.value, value ? MAXIMUM_ALLOWED : 0);
         }
 
         /// <summary>
@@ -143,8 +143,8 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public bool GenericAll
         {
-            get => bitsGenericAll.Read(value) != 0;
-            set => bitsGenericAll.Write(ref this.value, GENERIC_ALL);
+            get => bitsGenericAll.ReadMasked(value) != 0;
+            set => bitsGenericAll.WriteMasked(ref this.value, value ? GENERIC_ALL : 0);
         }
 
         /// <summary>
@@ -152,8 +152,8 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public bool GenericExecute
         {
-            get => bitsGenericExecute.Read(value) != 0;
-            set => bitsGenericExecute.Write(ref this.value, GENERIC_EXECUTE);
+            get => bitsGenericExecute.ReadMasked(value) != 0;
+            set => bitsGenericExecute.WriteMasked(ref this.value, value ? GENERIC_EXECUTE : 0);
         }
 
         /// <summary>
@@ -161,8 +161,8 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public bool GenericWrite
         {
-            get => bitsGenericWrite.Read(value) != 0;
-            set => bitsGenericWrite.Write(ref this.value, GENERIC_WRITE);
+            get => bitsGenericWrite.ReadMasked(value) != 0;
+            set => bitsGenericWrite.WriteMasked(ref this.value, value ? GENERIC_WRITE : 0);
         }
 
         /// <summary>
@@ -170,8 +170,8 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public bool GenericRead
         {
-            get => bitsGenericRead.Read(value) != 0;
-            set => bitsGenericRead.Write(ref this.value, GENERIC_READ);
+            get => bitsGenericRead.ReadMasked(value) != 0;
+            set => bitsGenericRead.WriteMasked(ref this.value, value ? GENERIC_READ : 0);
         }
 
         public override bool Equals(object obj)

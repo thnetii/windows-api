@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Runtime.InteropServices;
+
 using THNETII.InteropServices.Bitwise;
 using THNETII.InteropServices.Runtime;
 
@@ -12,37 +13,25 @@ namespace THNETII.WinApi.Native.WinNT
     {
         public short Revision;
         #region public DUMMYUNIONNAME Flags;
-        private static readonly Bitfield32 AllowScalingBitfield = Bitfield32.DefineFromMask(1 << 0);
-        private static readonly Bitfield32 DisabledBitfield = Bitfield32.DefineFromMask(1 << 1);
-        private static readonly Bitfield32 ReservedBitfield = Bitfield32.DefineFromMask(~0U << 2, 2);
+        private static readonly Bitfield16 AllowScalingBitfield = Bitfield16.Bit(0);
+        private static readonly Bitfield16 DisabledBitfield = Bitfield16.Bit(1);
+        private static readonly Bitfield16 ReservedBitfield = Bitfield16.RemainingBits(2);
         public short Flags;
         public bool AllowScaling
         {
-            get => AllowScalingBitfield.Read(Flags) != 0;
-            set
-            {
-                uint tmp = (uint)Flags;
-                Flags = (short)AllowScalingBitfield.Write(ref tmp, value ? ~0U : 0U);
-            }
+            get => AllowScalingBitfield.ReadMasked(Flags) != 0;
+            set => AllowScalingBitfield.WriteMasked(ref Flags, (short)(value ? ~0 : 0));
         }
         public bool Disabled
         {
-            get => DisabledBitfield.Read(Flags) != 0;
-            set
-            {
-                uint tmp = (uint)Flags;
-                Flags = (short)DisabledBitfield.Write(ref tmp, value ? ~0U : 0U);
-            }
+            get => DisabledBitfield.ReadMasked(Flags) != 0;
+            set => DisabledBitfield.WriteMasked(ref Flags, (short)(value ? ~0 : 0));
         }
         [EditorBrowsable(EditorBrowsableState.Never)]
         public short Reserved
         {
-            get => (short)ReservedBitfield.Read(Flags);
-            set
-            {
-                int tmp = Flags;
-                Flags = (short)ReservedBitfield.Write(ref tmp, value);
-            }
+            get => ReservedBitfield.Read(Flags);
+            set=> ReservedBitfield.Write(ref Flags, value);
         }
         #endregion
 

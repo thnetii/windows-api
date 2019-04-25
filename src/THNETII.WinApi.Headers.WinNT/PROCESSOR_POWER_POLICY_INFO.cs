@@ -88,25 +88,25 @@ namespace THNETII.WinApi.Native.WinNT
         #endregion
 
         // Flags
-        private static readonly Bitfield32 AllowDemotionBitfield = Bitfield32.DefineFromMask(1 << 0);
-        private static readonly Bitfield32 AllowPromotionBitfield = Bitfield32.DefineFromMask(1 << 1);
-        private static readonly Bitfield32 ReservedBitfield = Bitfield32.DefineRemainingBits(2);
+        private static readonly Bitfield32 AllowDemotionBitfield = Bitfield32.Bit(0);
+        private static readonly Bitfield32 AllowPromotionBitfield = Bitfield32.Bit(1);
+        private static readonly Bitfield32 ReservedBitfield = Bitfield32.RemainingBits(2);
         private uint Flags;
         /// <summary>
         /// When set, allows the kernel power policy manager to demote from the current state.
         /// </summary>
         public bool AllowDemotion
         {
-            get => AllowDemotionBitfield.Read(Flags) != 0;
-            set => AllowDemotionBitfield.Write(ref Flags, value ? ~0U : 0U);
+            get => AllowDemotionBitfield.ReadMasked(Flags) != 0;
+            set => AllowDemotionBitfield.WriteMasked(ref Flags, value ? ~0U : 0U);
         }
         /// <summary>
         /// When set, allows the kernel power policy manager to promote from the current state.
         /// </summary>
         public bool AllowPromotion
         {
-            get => AllowPromotionBitfield.Read(Flags) != 0;
-            set => AllowPromotionBitfield.Write(ref Flags, value ? ~0U : 0U);
+            get => AllowPromotionBitfield.ReadMasked(Flags) != 0;
+            set => AllowPromotionBitfield.WriteMasked(ref Flags, value ? ~0U : 0U);
         }
         /// <summary>Reserved.</summary>
         [EditorBrowsable(EditorBrowsableState.Never)]

@@ -1,4 +1,5 @@
 ﻿using System.Runtime.InteropServices;
+
 using THNETII.InteropServices.Bitwise;
 
 namespace THNETII.WinApi.Native.WinNT
@@ -14,9 +15,9 @@ namespace THNETII.WinApi.Native.WinNT
     [StructLayout(LayoutKind.Sequential)]
     public struct PROCESS_MITIGATION_DEP_POLICY
     {
-        private static readonly Bitfield32 bfEnable = Bitfield32.DefineLowerBits(1);
-        private static readonly Bitfield32 bfDisableAtlThunkEmulation = Bitfield32.DefineMiddleBits(1, 1);
-        private static readonly Bitfield32 bfReservedFlags = Bitfield32.DefineFromMask(Bitmask.HigherBitsUInt32(30));
+        private static readonly Bitfield32 bfEnable = Bitfield32.LowBits(1);
+        private static readonly Bitfield32 bfDisableAtlThunkEmulation = Bitfield32.SelectBits(1, 1);
+        private static readonly Bitfield32 bfReservedFlags = Bitfield32.FromMask(Bitmask.HigherBitsUInt32(30));
 
         private uint dwFlags;
 
@@ -28,20 +29,20 @@ namespace THNETII.WinApi.Native.WinNT
 
         public bool Enable
         {
-            get => bfEnable.Read(dwFlags) != 0;
-            set => bfEnable.Write(ref dwFlags, value ? 1U : 0U);
+            get => bfEnable.ReadMasked(dwFlags) != 0;
+            set => bfEnable.WriteMasked(ref dwFlags, value ? ~0U : 0U);
         }
 
         public bool DisableAtlThunkEmulation
         {
-            get => bfDisableAtlThunkEmulation.Read(dwFlags) != 0;
-            set => bfDisableAtlThunkEmulation.Write(ref dwFlags, value ? 1U : 0U);
+            get => bfDisableAtlThunkEmulation.ReadMasked(dwFlags) != 0;
+            set => bfDisableAtlThunkEmulation.WriteMasked(ref dwFlags, value ? ~0U : 0U);
         }
 
         public int ReservedFlags
         {
-            get => (int)bfReservedFlags.Read(dwFlags);
-            set => bfReservedFlags.Write(ref dwFlags, (uint)value);
+            get => (int)bfReservedFlags.ReadMasked(dwFlags);
+            set => bfReservedFlags.WriteMasked(ref dwFlags, (uint)value);
         }
 
         private byte bPermanent;

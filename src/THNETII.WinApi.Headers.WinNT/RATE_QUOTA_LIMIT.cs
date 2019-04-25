@@ -8,7 +8,7 @@ namespace THNETII.WinApi.Native.WinNT
     [StructLayout(LayoutKind.Sequential)]
     public struct RATE_QUOTA_LIMIT
     {
-        private static readonly Bitfield32 bfRatePercent = Bitfield32.DefineLowerBits(7);
+        private static readonly Bitfield32 bfRatePercent = Bitfield32.LowBits(7);
 
         public int RateData;
         private int dwRatePercent;

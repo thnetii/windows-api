@@ -17,7 +17,7 @@ namespace THNETII.WinApi.Native.WinNT
     /// <seealso cref="CallNtPowerInformation"/>
     /// <seealso cref="PROCESSOR_POWER_POLICY_INFO"/>
     [StructLayout(LayoutKind.Sequential)]
-    public struct PROCESSOR_POWER_POLICY
+    public unsafe struct PROCESSOR_POWER_POLICY
     {
         /// <summary>
         /// The current structure revision level. Set this value by calling <see cref="ReadProcessorPwrScheme"/> before using a <see cref="PROCESSOR_POWER_POLICY"/> structure to set power policy.
@@ -29,14 +29,9 @@ namespace THNETII.WinApi.Native.WinNT
         /// The current processor performance state policy. This member must be one of the values described in <a href="https://msdn.microsoft.com/928ba485-f767-47df-8b57-7630c68068a7">Processor Performance Control Policy Constants</a>.
         /// </summary>
         public PPM_PERFORMANCE_CONTROL_POLICY DynamicThrottle;
-        #region public byte[] Spare = new byte[3];
-        [StructLayout(LayoutKind.Explicit, Size = 3)]
-        private struct DUMMYSTRUCTNAME {}
-        private DUMMYSTRUCTNAME s;
         /// <summary>Reserved; set to zero.</summary>
         [EditorBrowsable(EditorBrowsableState.Never)]
-        public Span<byte> Spare => MemoryMarshal.AsBytes(SpanOverRef.GetSpan(ref s));
-        #endregion
+        public fixed byte Spare[3];
 
         // Flags
         private static readonly Bitfield32 DisableCStatesBitfield = Bitfield32.Bit(0);

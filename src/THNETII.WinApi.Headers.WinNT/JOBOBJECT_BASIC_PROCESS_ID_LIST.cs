@@ -1,6 +1,7 @@
 ﻿using System;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
+
+using THNETII.InteropServices.Memory;
 
 namespace THNETII.WinApi.Native.WinNT
 {
@@ -29,6 +30,6 @@ namespace THNETII.WinApi.Native.WinNT
         /// <summary>
         /// A span of process identifiers returned by this call.
         /// </summary>
-        public unsafe Span<UIntPtr> ProcessIdList => new Span<UIntPtr>(Unsafe.AsPointer(ref ProcessIdListField), NumberOfProcessIdsInList);
+        public Span<UIntPtr> ProcessIdList => SpanOverRef.GetSpan(ref ProcessIdListField, NumberOfProcessIdsInList);
     }
 }

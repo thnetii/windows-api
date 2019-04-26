@@ -1,6 +1,7 @@
 ﻿using System;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
+
+using THNETII.InteropServices.Memory;
 
 namespace THNETII.WinApi.Native.WinNT
 {
@@ -42,6 +43,6 @@ namespace THNETII.WinApi.Native.WinNT
         /// Specifies an array of <see cref="LUID_AND_ATTRIBUTES"/> structures. Each structure contains the <see cref="LUID"/> and attributes of a privilege. To get the name of the privilege associated with a <see cref="LUID"/>, call the <see cref="LookupPrivilegeName"/> function, passing the address of the <see cref="LUID"/> as the value of the <em>lpLuid</em> parameter.
         /// <para>The attributes of a privilege are defined by the <see cref="SE_PRIVILEGE_ATTRIBUTES"/> enumeration.</para>
         /// </summary>
-        public unsafe Span<LUID_AND_ATTRIBUTES> Privileges => new Span<LUID_AND_ATTRIBUTES>(Unsafe.AsPointer(ref Privilege), PrivilegeCount);
+        public Span<LUID_AND_ATTRIBUTES> Privileges => SpanOverRef.GetSpan(ref Privilege, PrivilegeCount);
     }
 }

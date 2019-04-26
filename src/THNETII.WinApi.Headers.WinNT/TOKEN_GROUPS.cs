@@ -1,6 +1,7 @@
 ﻿using System;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
+
+using THNETII.InteropServices.Memory;
 
 namespace THNETII.WinApi.Native.WinNT
 {
@@ -32,6 +33,6 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public int GroupCount;
         internal SID_AND_ATTRIBUTES GroupsField;
-        public unsafe Span<SID_AND_ATTRIBUTES> Groups => new Span<SID_AND_ATTRIBUTES>(Unsafe.AsPointer(ref GroupsField), GroupCount);
+        public unsafe Span<SID_AND_ATTRIBUTES> Groups => SpanOverRef.GetSpan(ref GroupsField, GroupCount);
     }
 }

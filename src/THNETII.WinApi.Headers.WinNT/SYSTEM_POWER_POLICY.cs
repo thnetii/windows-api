@@ -2,8 +2,6 @@
 using System.ComponentModel;
 using System.Runtime.InteropServices;
 
-using THNETII.InteropServices.Memory;
-
 namespace THNETII.WinApi.Native.WinNT
 {
     using static WinNTConstants;
@@ -19,7 +17,7 @@ namespace THNETII.WinApi.Native.WinNT
     /// <seealso cref="POWER_ACTION_POLICY"/>
     /// <seealso cref="SYSTEM_POWER_LEVEL"/>
     [StructLayout(LayoutKind.Sequential)]
-    public struct SYSTEM_POWER_POLICY
+    public unsafe struct SYSTEM_POWER_POLICY
     {
         /// <summary>
         /// The current structure revision.
@@ -77,12 +75,9 @@ namespace THNETII.WinApi.Native.WinNT
         #endregion
 
         public PPM_PERFORMANCE_CONTROL_POLICY DynamicThrottle;
-        #region public byte[] Spare2 = new byte[2];
-        internal short Spare2Field;
         /// <summary>Reserved.</summary>
         [EditorBrowsable(EditorBrowsableState.Never)]
-        public Span<byte> Spare2 => MemoryMarshal.AsBytes(SpanOverRef.GetSpan(ref Spare2Field));
-        #endregion
+        public fixed byte Spare2[2];
 
         // meaning of power action "sleep"
         /// <summary>
@@ -125,14 +120,21 @@ namespace THNETII.WinApi.Native.WinNT
         /// The resolution of change in current battery capacity that should cause the system to be notified of a system power state changed event.
         /// </summary>
         public int BroadcastCapacityResolution;
-        #region public SYSTEM_POWER_LEVEL[] DischargePolicy = new SYSTEM_POWER_LEVEL[NUM_DISCHARGE_POLICIES];
-        [StructLayout(LayoutKind.Explicit, Size = SYSTEM_POWER_LEVEL.SizeOf * NUM_DISCHARGE_POLICIES)]
-        private struct DUMMYSTRUCTNAME { }
-        private DUMMYSTRUCTNAME s;
+        #region public fixed SYSTEM_POWER_LEVEL DischargePolicy[NUM_DISCHARGE_POLICIES];
+        internal fixed byte DischargePolicyField[SYSTEM_POWER_LEVEL.SizeOf * NUM_DISCHARGE_POLICIES];
         /// <summary>
         /// An span of <see cref="SYSTEM_POWER_LEVEL"/> structures that defines the actions to take at system battery discharge events.
         /// </summary>
-        public Span<SYSTEM_POWER_LEVEL> DischargePolicy => MemoryMarshal.Cast<DUMMYSTRUCTNAME, SYSTEM_POWER_LEVEL>(SpanOverRef.GetSpan(ref s));
+        public Span<SYSTEM_POWER_LEVEL> DischargePolicy
+        {
+            get
+            {
+                fixed(void* ptr = DischargePolicyField)
+                {
+                    return new Span<SYSTEM_POWER_LEVEL>(ptr, NUM_DISCHARGE_POLICIES);
+                }
+            }
+        }
         #endregion
 
         // video policies
@@ -158,14 +160,9 @@ namespace THNETII.WinApi.Native.WinNT
             set => VideoTimeoutField = (byte)(value ? 1 : 0);
         }
         #endregion
-        #region public int[] VideoReserved = new int[3];
-        [StructLayout(LayoutKind.Explicit, Size = sizeof(int) * 3)]
-        private struct DUMMYSTRUCTNAME2 { }
-        private DUMMYSTRUCTNAME2 s2;
         /// <summary>Reserved.</summary>
         [EditorBrowsable(EditorBrowsableState.Never)]
-        public Span<int> VideoReserved => MemoryMarshal.Cast<DUMMYSTRUCTNAME2, int>(SpanOverRef.GetSpan(ref s2));
-        #endregion
+        public fixed int VideoReserved[3];
 
         // hard disk policies
         #region public int SpindownTimeout;

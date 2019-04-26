@@ -1,6 +1,7 @@
 ﻿using System;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
+
+using THNETII.InteropServices.Memory;
 
 using static THNETII.WinApi.Native.WinNT.PRIVILEGE_SET_CONTROL_FLAGS;
 
@@ -34,6 +35,6 @@ namespace THNETII.WinApi.Native.WinNT
         /// <summary>
         /// Specifies a span of <see cref="LUID_AND_ATTRIBUTES"/> structures describing the set's privileges. The attributes defined for privileges are defined by the <see cref="SE_PRIVILEGE_ATTRIBUTES"/> enumeration.
         /// </summary>
-        public unsafe Span<LUID_AND_ATTRIBUTES> Privilege => new Span<LUID_AND_ATTRIBUTES>(Unsafe.AsPointer(ref PrivilegeField), PrivilegeCount);
+        public Span<LUID_AND_ATTRIBUTES> Privilege => SpanOverRef.GetSpan(ref PrivilegeField, PrivilegeCount);
     }
 }

@@ -1,5 +1,4 @@
-﻿using System;
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using System.Runtime.InteropServices;
 
 using THNETII.InteropServices.Memory;
@@ -10,7 +9,7 @@ namespace THNETII.WinApi.Native.WinNT
 
     // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 13312
     [StructLayout(LayoutKind.Sequential)]
-    public struct SCRUB_DATA_OUTPUT
+    public unsafe struct SCRUB_DATA_OUTPUT
     {
         /// <summary>
         /// Set to the static <see cref="SizeOf{SCRUB_DATA_OUTPUT}.Bytes"/>
@@ -76,19 +75,10 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public short ParityExtentDataOffset;
 
-        #region public int[] Reserved = new int[5];
-        [StructLayout(LayoutKind.Explicit, Size = sizeof(int) * 5)]
-        private struct DUMMSTRUCTNAME { }
-        private DUMMSTRUCTNAME s;
         /// <summary>Reserved</summary>
         [EditorBrowsable(EditorBrowsableState.Never)]
-        public Span<int> Reserved => MemoryMarshal.Cast<DUMMSTRUCTNAME, int>(SpanOverRef.GetSpan(ref s));
-        #endregion
+        public fixed int Reserved[5];
 
-        #region public byte[] Reserved = new byte[816];
-        [StructLayout(LayoutKind.Explicit, Size = 816)]
-        private struct DUMMSTRUCTNAME3 { }
-        private DUMMSTRUCTNAME3 s3;
         /// <summary>
         /// <para>
         /// Opaque data that the file system returns to the user so that
@@ -105,7 +95,6 @@ namespace THNETII.WinApi.Native.WinNT
         /// is set in <see cref="Flags"/>.
         /// </para>
         /// </summary>
-        public Span<byte> ResumeContext => MemoryMarshal.AsBytes(SpanOverRef.GetSpan(ref s3));
-        #endregion
+        public fixed byte ResumeContext[816];
     }
 }

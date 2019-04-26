@@ -1,8 +1,4 @@
-﻿using System;
-using System.ComponentModel;
-using System.Runtime.InteropServices;
-
-using THNETII.InteropServices.Memory;
+﻿using System.Runtime.InteropServices;
 
 namespace THNETII.WinApi.Native.WinNT
 {
@@ -16,7 +12,7 @@ namespace THNETII.WinApi.Native.WinNT
     /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/winnt/ns-winnt-cache_relationship">CACHE_RELATIONSHIP structure</a></para>
     /// </remarks>
     [StructLayout(LayoutKind.Sequential)]
-    public struct CACHE_RELATIONSHIP
+    public unsafe struct CACHE_RELATIONSHIP
     {
         /// <summary>The cache level.</summary>
         /// <value>
@@ -45,19 +41,7 @@ namespace THNETII.WinApi.Native.WinNT
         /// The cache type. This member is a <see cref="PROCESSOR_CACHE_TYPE"/> value.
         /// </summary>
         public PROCESSOR_CACHE_TYPE Type;
-        #region public byte Reserved[20];
-        [StructLayout(LayoutKind.Explicit, Size = sizeof(byte) * Length)]
-        private struct DUMMYSTRUCTNAME
-        {
-            public const int Length = 20;
-            public Span<byte> Span => MemoryMarshal.AsBytes(SpanOverRef.GetSpan(ref this));
-            public ref byte this[int index] => ref Span[index];
-        }
-        private DUMMYSTRUCTNAME ReservedField;
-        /// <summary>This member is reserved.</summary>
-        [EditorBrowsable(EditorBrowsableState.Never)]
-        public Span<byte> Reserved => ReservedField.Span;
-        #endregion
+        public fixed byte Reserved[20];
         /// <summary>
         /// A <see cref="GROUP_AFFINITY"/> structure that specifies a group number and processor affinity within the group.
         /// </summary>

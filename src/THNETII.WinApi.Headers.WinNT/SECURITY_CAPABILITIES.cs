@@ -15,7 +15,7 @@ namespace THNETII.WinApi.Native.WinNT
     [StructLayout(LayoutKind.Sequential)]
     public unsafe struct SECURITY_CAPABILITIES
     {
-        public IntPtr AppContainerSid;
+        public SID* AppContainerSid;
         public SID_AND_ATTRIBUTES* PCapabilities;
         public Span<SID_AND_ATTRIBUTES> Capabilities => new Span<SID_AND_ATTRIBUTES>(PCapabilities, CapabilityCount);
         /// <summary>
@@ -28,7 +28,7 @@ namespace THNETII.WinApi.Native.WinNT
         [EditorBrowsable(EditorBrowsableState.Never)]
         public int Reserved;
 
-        public SecurityIdentifier MarshalAppContainerSidToManagedSid() =>
-            SID.MarshalToManagedSid(AppContainerSid);
+        public unsafe SecurityIdentifier MarshalAppContainerSidToManagedSid() =>
+            SID.MarshalToManagedSid(new IntPtr(AppContainerSid));
     }
 }

@@ -17,23 +17,13 @@ namespace THNETII.WinApi.Native.WinNT
     /// <seealso cref="GetLogicalProcessorInformationEx"/>
     /// <seealso cref="SYSTEM_LOGICAL_PROCESSOR_INFORMATION_EX"/>
     [StructLayout(LayoutKind.Sequential)]
-    public struct NUMA_NODE_RELATIONSHIP
+    public unsafe struct NUMA_NODE_RELATIONSHIP
     {
         /// <summary>The number of the NUMA node.</summary>
         public int NodeNumber;
-        #region public byte Reserved[20];
-        [StructLayout(LayoutKind.Explicit, Size = sizeof(byte) * Length)]
-        private struct DUMMYSTRUCTNAME
-        {
-            public const int Length = 20;
-            public Span<byte> Span => MemoryMarshal.AsBytes(SpanOverRef.GetSpan(ref this));
-            public ref byte this[int index] => ref Span[index];
-        }
-        private DUMMYSTRUCTNAME ReservedField;
         /// <summary>This member is reserved.</summary>
         [EditorBrowsable(EditorBrowsableState.Never)]
-        public Span<byte> Reserved => ReservedField.Span;
-        #endregion
+        public fixed byte Reserved[20];
         /// <summary>A <see cref="GROUP_AFFINITY"/> structure that specifies a group number and processor affinity within the group.</summary>
         public GROUP_AFFINITY GroupMask;
     }

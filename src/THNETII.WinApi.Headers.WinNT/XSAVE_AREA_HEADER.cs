@@ -1,25 +1,13 @@
-﻿using System;
-using System.Runtime.InteropServices;
-
-using THNETII.InteropServices.Memory;
+﻿using System.Runtime.InteropServices;
 
 namespace THNETII.WinApi.Native.WinNT
 {
+    // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 2567
     [StructLayout(LayoutKind.Sequential, Pack = 8)]
-    public struct XSAVE_AREA_HEADER
+    public unsafe struct XSAVE_AREA_HEADER
     {
         public ulong Mask;
         public ulong CompactionMask;
-        #region public ulong Reserved2[6];
-        internal Reserved2Field Reserved2FieldValue;
-        [StructLayout(LayoutKind.Explicit, Pack = 8, Size = 6 * sizeof(ulong))]
-        internal struct Reserved2Field
-        {
-            public const int Length = 6;
-            public ref ulong this[int index] => ref Span[index];
-            public Span<ulong> Span => MemoryMarshal.Cast<Reserved2Field, ulong>(SpanOverRef.GetSpan(ref this));
-        }
-        internal Span<ulong> Reserved2 => Reserved2FieldValue.Span;
-        #endregion
+        public fixed ulong Reserved2[6];
     }
 }

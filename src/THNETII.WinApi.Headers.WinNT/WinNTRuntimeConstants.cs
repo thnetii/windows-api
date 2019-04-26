@@ -146,9 +146,9 @@ namespace THNETII.WinApi.Native.WinNT
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 9012
         public static readonly int SECURITY_MAX_SID_SIZE =
-            SizeOf<SID.STRUCT_SID>.Bytes - SizeOf<int>.Bytes + (SID_MAX_SUB_AUTHORITIES * SizeOf<int>.Bytes);
+            SizeOf<SID>.Bytes - SizeOf<int>.Bytes + (SID_MAX_SUB_AUTHORITIES * SizeOf<int>.Bytes);
 
-        public static int SECURITY_SID_SIZE(byte SubAuthorityCount_) => SizeOf<SID.STRUCT_SID>.Bytes - SizeOf<int>.Bytes +
+        public static int SECURITY_SID_SIZE(byte SubAuthorityCount_) => SizeOf<SID>.Bytes - SizeOf<int>.Bytes +
             (SubAuthorityCount_ * SizeOf<int>.Bytes);
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 9078

@@ -2,8 +2,6 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.InteropServices;
 
-using THNETII.InteropServices.Memory;
-
 using static THNETII.WinApi.Native.WinNT.WinNTConstants;
 
 namespace THNETII.WinApi.Native.WinNT
@@ -28,20 +26,23 @@ namespace THNETII.WinApi.Native.WinNT
     /// <seealso cref="TOKEN_TYPE"/>
     /// <seealso cref="TOKEN_USER"/>
     [StructLayout(LayoutKind.Sequential)]
-    public struct TOKEN_SOURCE
+    public unsafe struct TOKEN_SOURCE
     {
-        #region public char[TOKEN_SOURCE_LENGTH] SourceName;
-        [StructLayout(LayoutKind.Explicit, Size = TOKEN_SOURCE_LENGTH)]
-        internal struct TOKEN_SOURCE_NAME
-        {
-            public ref byte this[int index] => ref Span[index];
-            internal Span<byte> Span => MemoryMarshal.AsBytes(SpanOverRef.GetSpan(ref this));
-        }
-        internal TOKEN_SOURCE_NAME SourceNameField;
+        #region public char SourceName[TOKEN_SOURCE_LENGTH];
+        internal fixed byte SourceNameField[TOKEN_SOURCE_LENGTH];
         /// <summary>
         /// The ANSI string character bytes used to store the value of <see cref="SourceName"/>.
         /// </summary>
-        public Span<byte> SourceNameBytes => SourceNameField.Span;
+        public Span<byte> SourceNameBytes
+        {
+            get
+            {
+                fixed (byte* ptr = SourceNameField)
+                {
+                    return new Span<byte>(ptr, TOKEN_SOURCE_LENGTH);
+                }
+            }
+        }
         /// <summary>
         /// Specifies a string used to identify the source of an access token. This is used to distinguish between such sources as Session Manager, LAN Manager, and RPC Server. A string, rather than a constant, is used to identify the source so users and developers can make extensions to the system, such as by adding other networks, that act as the source of access tokens.
         /// </summary>
@@ -50,7 +51,7 @@ namespace THNETII.WinApi.Native.WinNT
         {
             get
             {
-                fixed (void* pSourceName = &SourceNameField)
+                fixed (byte* pSourceName = SourceNameField)
                 {
                     return Marshal.PtrToStringAnsi(new IntPtr(pSourceName), TOKEN_SOURCE_LENGTH);
                 }

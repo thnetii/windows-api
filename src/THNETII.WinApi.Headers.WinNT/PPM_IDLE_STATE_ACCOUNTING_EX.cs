@@ -1,15 +1,13 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 
-using THNETII.InteropServices.Memory;
-
 namespace THNETII.WinApi.Native.WinNT
 {
     using static WinNTConstants;
 
     // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 15714
     [StructLayout(LayoutKind.Sequential)]
-    public struct PPM_IDLE_STATE_ACCOUNTING_EX
+    public unsafe struct PPM_IDLE_STATE_ACCOUNTING_EX
     {
         public long TotalTime;
         public int IdleTransitions;
@@ -32,11 +30,18 @@ namespace THNETII.WinApi.Native.WinNT
         }
         #endregion
         public int CancelledTransitions;
-        #region public PPM_IDLE_STATE_BUCKET_EX[] IdleTimeBuckets = new PPM_IDLE_STATE_BUCKET_EX[PROC_IDLE_BUCKET_COUNT_EX];
-        [StructLayout(LayoutKind.Explicit, Size = PPM_IDLE_STATE_BUCKET_EX.SizeOf * PROC_IDLE_BUCKET_COUNT_EX)]
-        private struct DUMMYSTRUCTNAME { }
-        private DUMMYSTRUCTNAME s;
-        public Span<PPM_IDLE_STATE_BUCKET_EX> IdleTimeBuckets => MemoryMarshal.Cast<DUMMYSTRUCTNAME, PPM_IDLE_STATE_BUCKET_EX>(SpanOverRef.GetSpan(ref s));
+        #region public fixed PPM_IDLE_STATE_BUCKET_EX IdleTimeBuckets[PROC_IDLE_BUCKET_COUNT_EX];
+        internal fixed byte IdleTimeBucketsField[PPM_IDLE_STATE_BUCKET_EX.SizeOf * PROC_IDLE_BUCKET_COUNT_EX];
+        public Span<PPM_IDLE_STATE_BUCKET_EX> IdleTimeBuckets
+        {
+            get
+            {
+                fixed(void* ptr = IdleTimeBucketsField)
+                {
+                    return new Span<PPM_IDLE_STATE_BUCKET_EX>(ptr, PROC_IDLE_BUCKET_COUNT_EX);
+                }
+            }
+        }
         #endregion
     }
 }

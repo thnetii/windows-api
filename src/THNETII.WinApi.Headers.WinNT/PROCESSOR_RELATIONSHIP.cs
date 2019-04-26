@@ -9,7 +9,7 @@ namespace THNETII.WinApi.Native.WinNT
     using static LOGICAL_PROCESSOR_RELATIONSHIP;
     using static WinNTConstants;
 
-    // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 12255
+    // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 12298
     /// <summary>
     /// Represents information about affinity within a processor group. This structure is used with the <see cref="GetLogicalProcessorInformationEx"/> function.
     /// </summary>
@@ -23,7 +23,7 @@ namespace THNETII.WinApi.Native.WinNT
     /// <seealso cref="GetLogicalProcessorInformationEx"/>
     /// <seealso cref="SYSTEM_LOGICAL_PROCESSOR_INFORMATION_EX"/>
     [StructLayout(LayoutKind.Sequential)]
-    public struct PROCESSOR_RELATIONSHIP
+    public unsafe struct PROCESSOR_RELATIONSHIP
     {
         /// <summary>
         /// <para>If the <see cref="SYSTEM_LOGICAL_PROCESSOR_INFORMATION_EX.Relationship"/> member of the <see cref="SYSTEM_LOGICAL_PROCESSOR_INFORMATION_EX"/> structure is <see cref="RelationProcessorCore"/>, this member is <see cref="LTP_PC_SMT"/> if the core has more than one logical processor, or <c>0</c> (zero) if the core has one logical processor.</para>
@@ -36,19 +36,9 @@ namespace THNETII.WinApi.Native.WinNT
         /// <para>The minimum operating system version that supports this member is Windows 10.</para>
         /// </summary>
         public byte EfficiencyClass;
-        #region public byte Reserved[20];
-        [StructLayout(LayoutKind.Explicit, Size = sizeof(byte) * Length)]
-        private struct DUMMYSTRUCTNAME
-        {
-            public const int Length = 20;
-            public Span<byte> Span => MemoryMarshal.AsBytes(SpanOverRef.GetSpan(ref this));
-            public ref byte this[int index] => ref Span[index];
-        }
-        private DUMMYSTRUCTNAME ReservedField;
         /// <summary>This member is reserved.</summary>
         [EditorBrowsable(EditorBrowsableState.Never)]
-        public Span<byte> Reserved => ReservedField.Span;
-        #endregion
+        public fixed byte Reserved[20];
         /// <summary>
         /// This member specifies the number of entries in <see cref="GroupMask"/>. For more information, see Remarks.
         /// </summary>

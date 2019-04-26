@@ -8,6 +8,8 @@ namespace THNETII.WinApi.Native.WinNT
     [StructLayout(LayoutKind.Sequential, Pack = 16)]
     public struct M128A
     {
+        internal const int SizeOf = sizeof(ulong) + sizeof(long);
+
         public ulong Low;
         public long High;
     }

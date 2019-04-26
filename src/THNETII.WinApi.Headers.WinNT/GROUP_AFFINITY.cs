@@ -1,10 +1,10 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Runtime.InteropServices;
-
-using THNETII.InteropServices.Memory;
 
 namespace THNETII.WinApi.Native.WinNT
 {
+    // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 603
     //
     // Structure to represent a group-specific affinity, such as that of a
     // thread.  Specifies the group number and the affinity within that group.
@@ -20,7 +20,7 @@ namespace THNETII.WinApi.Native.WinNT
     /// <seealso cref="NUMA_NODE_RELATIONSHIP"/>
     /// <seealso cref="PROCESSOR_RELATIONSHIP"/>
     [StructLayout(LayoutKind.Sequential)]
-    public struct GROUP_AFFINITY
+    public unsafe struct GROUP_AFFINITY
     {
         /// <summary>
         /// A bitmap that specifies the affinity for zero or more processors within the specified group.
@@ -30,9 +30,7 @@ namespace THNETII.WinApi.Native.WinNT
         /// <summary>The processor group number.</summary>
         public short Group;
         /// <summary>This member is reserved.</summary>
-        private FieldReserved fieldReserved;
-        [StructLayout(LayoutKind.Explicit, Size = sizeof(short) * 3)]
-        private struct FieldReserved { }
-        internal Span<short> Reserved => MemoryMarshal.Cast<FieldReserved, short>(SpanOverRef.GetSpan(ref fieldReserved));
+        [EditorBrowsable(EditorBrowsableState.Never)]
+        public fixed short Reserved[3];
     }
 }

@@ -16,7 +16,7 @@ namespace THNETII.WinApi.Native.WinNT
     /// </remarks>
     /// <seealso cref="PROCESSOR_POWER_POLICY"/>
     [StructLayout(LayoutKind.Sequential)]
-    public struct PROCESSOR_POWER_POLICY_INFO
+    public unsafe struct PROCESSOR_POWER_POLICY_INFO
     {
         // Time based information (will be converted to kernel units)
         #region public int TimeCheck;
@@ -80,12 +80,9 @@ namespace THNETII.WinApi.Native.WinNT
             set => PromotePercentField = (byte)(value * 100.0);
         }
         #endregion
-        #region public byte[] Spare = new byte[2];
-        internal short SpareField;
         /// <summary>Reserved.</summary>
         [EditorBrowsable(EditorBrowsableState.Never)]
-        public Span<byte> Spare => MemoryMarshal.AsBytes(SpanOverRef.GetSpan(ref SpareField));
-        #endregion
+        public fixed byte Spare[2];
 
         // Flags
         private static readonly Bitfield32 AllowDemotionBitfield = Bitfield32.Bit(0);

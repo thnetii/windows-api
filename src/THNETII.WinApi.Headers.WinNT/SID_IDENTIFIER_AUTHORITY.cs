@@ -1,8 +1,5 @@
-﻿using System;
-using System.Runtime.InteropServices;
+﻿using System.Runtime.InteropServices;
 using System.Security.Principal;
-
-using THNETII.InteropServices.Memory;
 
 namespace THNETII.WinApi.Native.WinNT
 {
@@ -33,14 +30,12 @@ namespace THNETII.WinApi.Native.WinNT
     /// <seealso cref="InitializeSid"/>
     /// <seealso cref="SID"/>
     /// <seealso cref="SecurityIdentifier"/>
-    [StructLayout(LayoutKind.Explicit, Size = 6)]
-    public struct SID_IDENTIFIER_AUTHORITY
+    [StructLayout(LayoutKind.Sequential)]
+    public unsafe struct SID_IDENTIFIER_AUTHORITY
     {
-        public const int Length = 6;
-        public ref byte this[int index] => ref Value[index];
         /// <summary>
         /// A span of 6 bytes specifying a SID's top-level authority.
         /// </summary>
-        public Span<byte> Value => MemoryMarshal.AsBytes(SpanOverRef.GetSpan(ref this));
+        public fixed byte Value[6];
     }
 }

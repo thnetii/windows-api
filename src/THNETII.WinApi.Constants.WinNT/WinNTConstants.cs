@@ -1291,6 +1291,9 @@ namespace THNETII.WinApi.Native.WinNT
         public const byte SID_MAX_SUB_AUTHORITIES = 15;
         public const byte SID_RECOMMENDED_SUB_AUTHORITIES = 1;
 
+        public const int SECURITY_MAX_SID_SIZE = sizeof(byte) * 2 + sizeof(byte) * 6
+            + (SID_MAX_SUB_AUTHORITIES * sizeof(int));
+
         // 2 (S-)
         // 4 (Rev(max: 255)-)
         // 15 (

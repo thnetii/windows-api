@@ -1,9 +1,5 @@
-﻿using System;
-using System.ComponentModel;
-using System.Diagnostics.CodeAnalysis;
+﻿using System.ComponentModel;
 using System.Runtime.InteropServices;
-
-using THNETII.InteropServices.Memory;
 
 namespace THNETII.WinApi.Native.WinNT
 {
@@ -17,28 +13,24 @@ namespace THNETII.WinApi.Native.WinNT
     /// <seealso cref="GLOBAL_USER_POWER_POLICY"/>
     /// <seealso cref="POWER_ACTION_POLICY"/>
     [StructLayout(LayoutKind.Sequential)]
-    public struct SYSTEM_POWER_LEVEL
+    public unsafe struct SYSTEM_POWER_LEVEL
     {
         internal const int SizeOf = sizeof(int) * 2
             + POWER_ACTION_POLICY.SizeOf
             + sizeof(SYSTEM_POWER_STATE);
 
-        #region public bool Enable; public byte[] Spare = new byte[3];
-        private int EnableField;
-        private Span<byte> EnableSpan => MemoryMarshal.AsBytes(SpanOverRef.GetSpan(ref EnableField));
+        private byte EnableField;
         /// <summary>
         /// If this member is <see langword="true"/>, the alarm should be activated when the battery discharges below the value set in <see cref="BatteryLevel"/>.
         /// </summary>
         public bool Enable
         {
-            get => EnableSpan[0] != 0;
-            set => EnableSpan[0] = (byte)(value ? 1 : 0);
+            get => EnableField != 0;
+            set => EnableField = (byte)(value ? 1 : 0);
         }
         /// <summary>Reserved.</summary>
         [EditorBrowsable(EditorBrowsableState.Never)]
-        [SuppressMessage("Usage", "PC001: API not supported on all platforms", Justification = "https://github.com/dotnet/platform-compat/issues/123")]
-        public Span<byte> Spare => EnableSpan.Slice(start: 1);
-        #endregion
+        public fixed byte Spare[3];
         #region public int BatteryLevel;
         /// <summary>
         ///

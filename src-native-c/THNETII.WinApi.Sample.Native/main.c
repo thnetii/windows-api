@@ -5,7 +5,7 @@ int main(int argc, char* argv[])
 {
     PROCESSOR_IDLESTATE_POLICY instance;
     const int size = sizeof(instance);
-    const int value = PROCESSOR_IDLESTATE_POLICY_COUNT;
+    const int value = SECURITY_MAX_SID_SIZE;
 
     const void* ptr = GetHandleInformation;
 

@@ -1,15 +1,17 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Runtime.InteropServices;
 
 using THNETII.InteropServices.Memory;
 
 namespace THNETII.WinApi.Native.WinNT
 {
+    // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 2531
     /// <summary>
     /// Format of data for (F)XSAVE/(F)XRSTOR instruction
     /// </summary>
     [StructLayout(LayoutKind.Sequential, Pack = 16)]
-    public struct XSAVE_FORMAT
+    public unsafe struct XSAVE_FORMAT
     {
         public ushort ControlWord;
         public ushort StatusWord;
@@ -24,62 +26,41 @@ namespace THNETII.WinApi.Native.WinNT
         internal ushort Reserved3;
         public uint MxCsr;
         public uint MxCsr_Mask;
-        #region public M128A FloatRegisters[8];
-        internal FloatRegistersField FloatRegistersFieldValue;
-        [StructLayout(LayoutKind.Sequential, Pack = 16)]
-        internal struct FloatRegistersField
+        #region public fixed M128A FloatRegisters[8];
+        internal fixed byte FloatRegistersField[8 * M128A.SizeOf];
+        public Span<M128A> FloatRegisters
         {
-            public const int Length = 8;
-            public ref M128A this[int index] => ref Span[index];
-            public Span<M128A> Span => MemoryMarshal.Cast<FloatRegistersField, M128A>(SpanOverRef.GetSpan(ref this));
-            private M128A Register0;
-            private M128A Register1;
-            private M128A Register2;
-            private M128A Register3;
-            private M128A Register4;
-            private M128A Register5;
-            private M128A Register6;
-            private M128A Register7;
+            get
+            {
+                fixed (void* ptr = FloatRegistersField)
+                {
+                    return new Span<M128A>(ptr, 8);
+                }
+            }
         }
-        public Span<M128A> FloatRegisters => FloatRegistersFieldValue.Span;
         #endregion
         #region public M128A XmmRegisters[8];
-        internal XmmRegistersField XmmRegistersFieldValue;
-        [StructLayout(LayoutKind.Sequential, Pack = 16)]
-        internal struct XmmRegistersField
+        internal fixed byte XmmRegistersField[8 * M128A.SizeOf];
+        public Span<M128A> XmmRegisters
         {
-            public const int Length = 8;
-            public ref M128A this[int index] => ref Span[index];
-            public Span<M128A> Span => MemoryMarshal.Cast<XmmRegistersField, M128A>(SpanOverRef.GetSpan(ref this));
-            private M128A Register0;
-            private M128A Register1;
-            private M128A Register2;
-            private M128A Register3;
-            private M128A Register4;
-            private M128A Register5;
-            private M128A Register6;
-            private M128A Register7;
+            get
+            {
+                fixed (void* ptr = XmmRegistersField)
+                {
+                    return new Span<M128A>(ptr, 8);
+                }
+            }
         }
-        public Span<M128A> XmmRegisters => XmmRegistersFieldValue.Span;
         #endregion
-        #region public byte Reserved4[224];
-        internal Reserved4Field Reserved4FieldValue;
-        [StructLayout(LayoutKind.Explicit, Pack = 16, Size = 224)]
-        internal struct Reserved4Field
-        {
-            public const int Length = 224;
-            public ref byte this[int index] => ref Span[index];
-            public Span<byte> Span => MemoryMarshal.AsBytes(SpanOverRef.GetSpan(ref this));
-        }
-        internal Span<byte> Reserved4 => Reserved4FieldValue.Span;
-        #endregion
+        [EditorBrowsable(EditorBrowsableState.Never)]
+        public fixed byte Reserved4[224];
     }
 
     /// <summary>
     /// Format of data for (F)XSAVE/(F)XRSTOR instruction
     /// </summary>
     [StructLayout(LayoutKind.Sequential, Pack = 16)]
-    public struct XSAVE_FORMAT_WIN64
+    public unsafe struct XSAVE_FORMAT_WIN64
     {
         public ushort ControlWord;
         public ushort StatusWord;
@@ -94,62 +75,33 @@ namespace THNETII.WinApi.Native.WinNT
         internal ushort Reserved3;
         public uint MxCsr;
         public uint MxCsr_Mask;
-        #region public M128A FloatRegisters[8];
-        internal FloatRegistersField FloatRegistersFieldValue;
-        [StructLayout(LayoutKind.Sequential, Pack = 16)]
-        internal struct FloatRegistersField
+        #region public fixed M128A FloatRegisters[8];
+        internal fixed byte FloatRegistersField[8 * M128A.SizeOf];
+        public Span<M128A> FloatRegisters
         {
-            public const int Length = 8;
-            public ref M128A this[int index] => ref Span[index];
-            public Span<M128A> Span => MemoryMarshal.Cast<FloatRegistersField, M128A>(SpanOverRef.GetSpan(ref this));
-            private M128A Register0;
-            private M128A Register1;
-            private M128A Register2;
-            private M128A Register3;
-            private M128A Register4;
-            private M128A Register5;
-            private M128A Register6;
-            private M128A Register7;
+            get
+            {
+                fixed (void* ptr = FloatRegistersField)
+                {
+                    return new Span<M128A>(ptr, 8);
+                }
+            }
         }
-        public Span<M128A> FloatRegisters => FloatRegistersFieldValue.Span;
         #endregion
         #region public M128A XmmRegisters[16];
-        internal XmmRegistersField XmmRegistersFieldValue;
-        [StructLayout(LayoutKind.Sequential, Pack = 16)]
-        internal struct XmmRegistersField
+        internal fixed byte XmmRegistersField[16 * M128A.SizeOf];
+        public Span<M128A> XmmRegisters
         {
-            public const int Length = 16;
-            public ref M128A this[int index] => ref Span[index];
-            public Span<M128A> Span => MemoryMarshal.Cast<XmmRegistersField, M128A>(SpanOverRef.GetSpan(ref this));
-            private M128A Register0;
-            private M128A Register1;
-            private M128A Register2;
-            private M128A Register3;
-            private M128A Register4;
-            private M128A Register5;
-            private M128A Register6;
-            private M128A Register7;
-            private M128A Register8;
-            private M128A Register9;
-            private M128A Register10;
-            private M128A Register11;
-            private M128A Register12;
-            private M128A Register13;
-            private M128A Register14;
-            private M128A Register15;
+            get
+            {
+                fixed (void* ptr = XmmRegistersField)
+                {
+                    return new Span<M128A>(ptr, 8);
+                }
+            }
         }
-        public Span<M128A> XmmRegisters => XmmRegistersFieldValue.Span;
         #endregion
-        #region public byte Reserved4[96];
-        internal Reserved4Field Reserved4FieldValue;
-        [StructLayout(LayoutKind.Explicit, Pack = 16, Size = 96)]
-        internal struct Reserved4Field
-        {
-            public const int Length = 96;
-            public ref byte this[int index] => ref Span[index];
-            public Span<byte> Span => MemoryMarshal.AsBytes(SpanOverRef.GetSpan(ref this));
-        }
-        internal Span<byte> Reserved4 => Reserved4FieldValue.Span;
-        #endregion
+        [EditorBrowsable(EditorBrowsableState.Never)]
+        public fixed byte Reserved4[96];
     }
 }

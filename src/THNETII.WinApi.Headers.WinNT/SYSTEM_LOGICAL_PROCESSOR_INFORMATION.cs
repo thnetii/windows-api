@@ -8,7 +8,7 @@ namespace THNETII.WinApi.Native.WinNT
 {
     using static LOGICAL_PROCESSOR_RELATIONSHIP;
 
-    // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 12255
+    // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 12283
     /// <summary>
     /// Describes the relationship between the specified processor set. This structure is used with the <see cref="GetLogicalProcessorInformation"/> function.
     /// </summary>
@@ -38,8 +38,8 @@ namespace THNETII.WinApi.Native.WinNT
         /// Future versions of Windows may support additional values for the <see cref="Relationship"/> member.
         /// </value>
         public LOGICAL_PROCESSOR_RELATIONSHIP Relationship;
-        [StructLayout(LayoutKind.Explicit, Size = sizeof(ulong) * 2)]
-        private struct DUMMYUNIONNAME
+        [StructLayout(LayoutKind.Explicit)]
+        private unsafe struct DUMMYUNIONNAME
         {
             [FieldOffset(0)]
             public SYSTEM_LOGICAL_PROCESSOR_CORE_INFORMATION ProcessorCore;
@@ -47,8 +47,9 @@ namespace THNETII.WinApi.Native.WinNT
             public SYSTEM_LOGICAL_PROCESSOR_NUMA_NODE_INFORMATION NumaNode;
             [FieldOffset(0)]
             public CACHE_DESCRIPTOR Cache;
+            [FieldOffset(0)]
             [EditorBrowsable(EditorBrowsableState.Never)]
-            public Span<ulong> Reserved => MemoryMarshal.Cast<DUMMYUNIONNAME, ulong>(SpanOverRef.GetSpan(ref this));
+            public fixed ulong Reserved[2];
         }
         private DUMMYUNIONNAME u;
         public SYSTEM_LOGICAL_PROCESSOR_CORE_INFORMATION ProcessorCore
@@ -73,7 +74,16 @@ namespace THNETII.WinApi.Native.WinNT
         }
         /// <summary>Reserved. Do not use.</summary>
         [EditorBrowsable(EditorBrowsableState.Never)]
-        public Span<ulong> Reserved => u.Reserved;
+        public unsafe Span<ulong> Reserved
+        {
+            get
+            {
+                fixed(ulong* ptr = u.Reserved)
+                {
+                    return new Span<ulong>(ptr, 2);
+                }
+            }
+        }
     }
 
     /// <remarks>

@@ -2,7 +2,6 @@
 using System.Runtime.InteropServices;
 
 using THNETII.InteropServices.Bitwise;
-using THNETII.InteropServices.Memory;
 
 namespace THNETII.WinApi.Native.WinNT
 {
@@ -10,7 +9,7 @@ namespace THNETII.WinApi.Native.WinNT
 
     // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 12562
     [StructLayout(LayoutKind.Sequential)]
-    public struct XSTATE_CONFIGURATION
+    public unsafe struct XSTATE_CONFIGURATION
     {
         /// <summary>Mask of all enabled features</summary>
         public ulong EnabledFeatures;
@@ -40,21 +39,21 @@ namespace THNETII.WinApi.Native.WinNT
             set => bfCompactionEnabled.WriteMasked(ref ControlFlags, value ? ~0 : 0);
         }
 
-        #region public XSTATE_FEATURE Features[MAXIMUM_XSTATE_FEATURES];
-        [StructLayout(LayoutKind.Sequential, Size = Length * XSTATE_FEATURE.SizeOf)]
-        private struct DUMMYSTRUCTNAME
-        {
-            public const int Length = MAXIMUM_XSTATE_FEATURES;
-            public Span<XSTATE_FEATURE> Span => MemoryMarshal.Cast<DUMMYSTRUCTNAME, XSTATE_FEATURE>(SpanOverRef.GetSpan(ref this));
-            public ref XSTATE_FEATURE this[int index] => ref Span[index];
-        }
-#pragma warning disable IDE0044 // Add readonly modifier
-        private DUMMYSTRUCTNAME s;
-#pragma warning restore IDE0044 // Add readonly modifier
+        #region public fixed XSTATE_FEATURE Features[MAXIMUM_XSTATE_FEATURES];
+        internal fixed byte FeaturesField[MAXIMUM_XSTATE_FEATURES * XSTATE_FEATURE.SizeOf];
         /// <summary>
         /// List of features
         /// </summary>
-        public Span<XSTATE_FEATURE> Features => s.Span;
+        public Span<XSTATE_FEATURE> Features
+        {
+            get
+            {
+                fixed (byte* ptr = FeaturesField)
+                {
+                    return new Span<XSTATE_FEATURE>(ptr, MAXIMUM_XSTATE_FEATURES);
+                }
+            }
+        }
         #endregion
 
         /// <summary>
@@ -72,21 +71,9 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public int AllFeatureSize;
 
-        #region public int AllFeatures[MAXIMUM_XSTATE_FEATURES];
-        [StructLayout(LayoutKind.Sequential, Size = Length * sizeof(int))]
-        private struct DUMMYSTRUCTNAME2
-        {
-            public const int Length = MAXIMUM_XSTATE_FEATURES;
-            public Span<int> Span => MemoryMarshal.Cast<DUMMYSTRUCTNAME2, int>(SpanOverRef.GetSpan(ref this));
-            public ref int this[int index] => ref Span[index];
-        }
-#pragma warning disable IDE0044 // Add readonly modifier
-        private DUMMYSTRUCTNAME2 s2;
-#pragma warning restore IDE0044 // Add readonly modifier
         /// <summary>
         /// List which holds size of each user and supervisor state supported by CPU
         /// </summary>
-        public Span<int> AllFeatures => s2.Span;
-        #endregion
+        public fixed int AllFeatures[MAXIMUM_XSTATE_FEATURES];
     }
 }

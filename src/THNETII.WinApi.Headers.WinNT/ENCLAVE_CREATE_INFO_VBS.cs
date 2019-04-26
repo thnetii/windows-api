@@ -1,7 +1,4 @@
-﻿using System;
-using System.Runtime.InteropServices;
-
-using THNETII.InteropServices.Memory;
+﻿using System.Runtime.InteropServices;
 
 namespace THNETII.WinApi.Native.WinNT
 {
@@ -16,20 +13,15 @@ namespace THNETII.WinApi.Native.WinNT
     /// </remarks>
     /// <seealso cref="CreateEnclave"/>
     [StructLayout(LayoutKind.Sequential)]
-    public struct ENCLAVE_CREATE_INFO_VBS
+    public unsafe struct ENCLAVE_CREATE_INFO_VBS
     {
         /// <summary>
         /// A flag that indicates whether the enclave permits debugging.
         /// </summary>
         public ENCLAVE_VBS_FLAGS Flags;
-        #region public byte[] OwnerID = new byte[32];
-        [StructLayout(LayoutKind.Explicit, Size = 32)]
-        private struct OWNERID { }
-        private OWNERID OwnerIDField;
         /// <summary>
         /// The identifier of the owner of the enclave.
         /// </summary>
-        public Span<byte> OwnerID => MemoryMarshal.AsBytes(SpanOverRef.GetSpan(ref OwnerIDField));
-        #endregion
+        public fixed byte OwnerID[32];
     }
 }

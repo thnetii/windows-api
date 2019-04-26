@@ -1,12 +1,10 @@
-﻿using System;
-using System.Runtime.InteropServices;
-
-using THNETII.InteropServices.Memory;
+﻿using System.Runtime.InteropServices;
 
 namespace THNETII.WinApi.Native.WinNT
 {
     using static ENCLAVE_TYPE;
 
+    // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 12783
     /// <summary>
     /// Contains architecture-specific information to use to create an enclave when the enclave type is <see cref="ENCLAVE_TYPE_SGX"/>, which specifies an enclave for the Intel Software Guard Extensions (SGX) architecture extension.
     /// </summary>
@@ -16,14 +14,12 @@ namespace THNETII.WinApi.Native.WinNT
     /// </remarks>
     /// <seealso cref="CreateEnclave"/>
     /// <seealso cref="ENCLAVE_INIT_INFO_SGX"/>
-    [StructLayout(LayoutKind.Sequential, Size = Length)]
-    public struct ENCLAVE_CREATE_INFO_SGX
+    [StructLayout(LayoutKind.Sequential)]
+    public unsafe struct ENCLAVE_CREATE_INFO_SGX
     {
-        public const int Length = 4096;
         /// <summary>
         /// The SGX enclave control structure (<strong>SECS</strong>) to use to create the enclave.
         /// </summary>
-        public Span<byte> Secs => MemoryMarshal.AsBytes(SpanOverRef.GetSpan(ref this));
-        internal ref byte this[int index] => ref Secs[index];
+        public fixed byte Secs[4096];
     }
 }

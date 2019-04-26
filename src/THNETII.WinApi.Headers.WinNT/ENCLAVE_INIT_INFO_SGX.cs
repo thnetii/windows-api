@@ -1,8 +1,5 @@
-﻿using System;
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using System.Runtime.InteropServices;
-
-using THNETII.InteropServices.Memory;
 
 namespace THNETII.WinApi.Native.WinNT
 {
@@ -19,45 +16,25 @@ namespace THNETII.WinApi.Native.WinNT
     /// <seealso cref="ENCLAVE_CREATE_INFO_SGX"/>
     /// <seealso cref="InitializeEnclave"/>
     [StructLayout(LayoutKind.Sequential)]
-    public struct ENCLAVE_INIT_INFO_SGX
+    public unsafe struct ENCLAVE_INIT_INFO_SGX
     {
-        #region public byte[] SigStruct = new byte[1808];
-        [StructLayout(LayoutKind.Explicit, Size = 1808)]
-        private struct SIG_STRUCT { }
-        private SIG_STRUCT SigStructField;
         /// <summary>
         /// The enclave signature structure (<strong>SIGSTRUCT</strong>) to use to initialize the enclave. This structure specifies information about the enclave from the enclave signer.
         /// </summary>
-        public Span<byte> SigStruct => MemoryMarshal.AsBytes(SpanOverRef.GetSpan(ref SigStructField));
-        #endregion
-        #region public byte[] Reserved1 = new byte[240];
-        [StructLayout(LayoutKind.Explicit, Size = 240)]
-        private struct RESERVED1 { }
-        private RESERVED1 Reserved1Field;
+        public fixed byte SigStruct[1808];
         /// <summary>
         /// Not used.
         /// </summary>
         [EditorBrowsable(EditorBrowsableState.Never)]
-        public Span<byte> Reserved1 => MemoryMarshal.AsBytes(SpanOverRef.GetSpan(ref Reserved1Field));
-        #endregion
-        #region public byte[] EInitToken = new byte[304];
-        [StructLayout(LayoutKind.Explicit, Size = 304)]
-        private struct EINITTOKEN { }
-        private EINITTOKEN EInitTokenField;
+        public fixed byte Reserved1[240];
         /// <summary>
         /// The EINIT token structure (<strong>EINITTOKEN</strong>) to use to initialize the enclave. The initialization operation uses this structure to verify that the enclave has permission to start.
         /// </summary>
-        public Span<byte> EInitToken => MemoryMarshal.AsBytes(SpanOverRef.GetSpan(ref EInitTokenField));
-        #endregion
-        #region public byte[] Reserved2 = new byte[1744];
-        [StructLayout(LayoutKind.Explicit, Size = 1744)]
-        private struct RESERVED2 { }
-        private RESERVED2 Reserved2Field;
+        public fixed byte EInitToken[304];
         /// <summary>
         /// Not used.
         /// </summary>
         [EditorBrowsable(EditorBrowsableState.Never)]
-        public Span<byte> Reserved2 => MemoryMarshal.AsBytes(SpanOverRef.GetSpan(ref Reserved2Field));
-        #endregion
+        public fixed byte Reserved2[1744];
     }
 }

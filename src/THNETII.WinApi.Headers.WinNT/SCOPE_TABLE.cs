@@ -1,6 +1,7 @@
 ﻿using System;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
+
+using THNETII.InteropServices.Memory;
 
 namespace THNETII.WinApi.Native.WinNT
 {
@@ -12,6 +13,6 @@ namespace THNETII.WinApi.Native.WinNT
     {
         public int Count;
         internal SCOPE_RECORD ScopeRecordField;
-        public unsafe Span<SCOPE_RECORD> ScopeRecord => new Span<SCOPE_RECORD>(Unsafe.AsPointer(ref ScopeRecordField), Count);
+        public Span<SCOPE_RECORD> ScopeRecord => SpanOverRef.GetSpan(ref ScopeRecordField, Count);
     }
 }

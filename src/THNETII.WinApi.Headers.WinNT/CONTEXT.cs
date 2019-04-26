@@ -1,12 +1,10 @@
-﻿using System;
-using System.Runtime.InteropServices;
-
-using THNETII.InteropServices.Memory;
-
-using static THNETII.WinApi.Native.WinNT.CONTEXT_FLAGS;
+﻿using System.Runtime.InteropServices;
 
 namespace THNETII.WinApi.Native.WinNT
 {
+    using static CONTEXT_FLAGS;
+    using static WinNTConstants;
+
     // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 7525
     /// <summary>
     /// Context Frame
@@ -23,7 +21,7 @@ namespace THNETII.WinApi.Native.WinNT
     /// <para>The layout of the record conforms to a standard call frame.</para>
     /// </remarks>
     [StructLayout(LayoutKind.Sequential, Pack = 4)]
-    public struct CONTEXT
+    public unsafe struct CONTEXT
     {
         /// <summary>
         /// The flags values within this flag control the contents of
@@ -110,18 +108,11 @@ namespace THNETII.WinApi.Native.WinNT
         /// <summary>Only valid if <see cref="CONTEXT_CONTROL"/> is set in <see cref="ContextFlags"/>.</summary>
         public int SegSs;
 
-        #region public byte ExtendedRegisters[MAXIMUM_SUPPORTED_EXTENSION];
-        internal ExtendedRegistersField fieldExtendedRegisters;
-        [StructLayout(LayoutKind.Explicit, Size = WinNTConstants.MAXIMUM_SUPPORTED_EXTENSION * sizeof(byte))]
-        internal struct ExtendedRegistersField
-        {
-            public const int Length = WinNTConstants.MAXIMUM_SUPPORTED_EXTENSION * sizeof(byte);
-            public ref byte this[int index] => ref Span[index];
-            public Span<byte> Span => MemoryMarshal.AsBytes(SpanOverRef.GetSpan(ref this));
-        }
-        /// <summary>Only valid if <see cref="CONTEXT_EXTENDED_REGISTERS"/> is set in <see cref="ContextFlags"/>.</summary>
-        /// <remarks>The format and contexts are processor specific</remarks>
-        public Span<byte> ExtendedRegisters => fieldExtendedRegisters.Span;
-        #endregion
+        /// <summary>
+        /// This section is specified/returned if the <see cref="ContextFlags"/> word
+        /// contains the flag <see cref="CONTEXT_EXTENDED_REGISTERS"/>.
+        /// The format and contexts are processor specific
+        /// </summary>
+        public fixed byte ExtendedRegisters[MAXIMUM_SUPPORTED_EXTENSION];
     }
 }

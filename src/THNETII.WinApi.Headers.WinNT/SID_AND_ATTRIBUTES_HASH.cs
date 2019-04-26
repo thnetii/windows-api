@@ -24,18 +24,18 @@ namespace THNETII.WinApi.Native.WinNT
     /// <seealso cref="TOKEN_ACCESS_INFORMATION"/>
     /// <seealso cref="TOKEN_INFORMATION_CLASS"/>
     [StructLayout(LayoutKind.Sequential)]
-    public struct SID_AND_ATTRIBUTES_HASH
+    public unsafe struct SID_AND_ATTRIBUTES_HASH
     {
         /// <summary>
         /// The number of SIDs pointed to by the <see cref="SidAttr"/> parameter.
         /// </summary>
         public int SidCount;
         #region public PSID_AND_ATTRIBUTES SidAttr;
-        internal IntPtr SidAttrPtr;
+        internal SID_AND_ATTRIBUTES* SidAttrPtr;
         /// <summary>
         /// A span of <see cref="SID_AND_ATTRIBUTES"/> structures that represent SIDs and their attributes.
         /// </summary>
-        public Span<SID_AND_ATTRIBUTES> SidAttr => SidAttrPtr.AsRefStructSpan<SID_AND_ATTRIBUTES>(SidCount);
+        public Span<SID_AND_ATTRIBUTES> SidAttr => new Span<SID_AND_ATTRIBUTES>(SidAttrPtr, SidCount);
         #endregion
         #region public UIntPtr Hash[SID_HASH_SIZE];
         internal HASH HashField;

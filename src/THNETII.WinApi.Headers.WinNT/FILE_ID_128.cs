@@ -1,7 +1,4 @@
-﻿using System;
-using System.Runtime.InteropServices;
-
-using THNETII.InteropServices.Memory;
+﻿using System.Runtime.InteropServices;
 
 namespace THNETII.WinApi.Native.WinNT
 {
@@ -13,16 +10,11 @@ namespace THNETII.WinApi.Native.WinNT
     /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/winnt/ns-winnt-file_id_128">FILE_ID_128 structure</a></para>
     /// </remarks>
     [StructLayout(LayoutKind.Sequential)]
-    public struct FILE_ID_128
+    public unsafe struct FILE_ID_128
     {
-        #region public byte[] Identifier = new byte[16];
-        [StructLayout(LayoutKind.Explicit, Size = 16)]
-        private struct IDENTIFIER { }
-        private IDENTIFIER IdentifierField;
         /// <summary>
         /// A byte span containing the 128 bit identifier.
         /// </summary>
-        public Span<byte> Identifier => MemoryMarshal.AsBytes(SpanOverRef.GetSpan(ref IdentifierField));
-        #endregion
+        public fixed byte Identifier[16];
     }
 }

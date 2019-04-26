@@ -17,7 +17,7 @@ namespace THNETII.WinApi.Native.WinNT
     /// <seealso cref="PROCESSOR_GROUP_INFO"/>
     /// <seealso cref="SYSTEM_LOGICAL_PROCESSOR_INFORMATION_EX"/>
     [StructLayout(LayoutKind.Sequential)]
-    public struct GROUP_RELATIONSHIP
+    public unsafe struct GROUP_RELATIONSHIP
     {
         /// <summary>
         /// The maximum number of processor groups on the system.
@@ -27,19 +27,9 @@ namespace THNETII.WinApi.Native.WinNT
         /// The number of active groups on the system. This member indicates the number of <see cref="PROCESSOR_GROUP_INFO"/> structures in the <see cref="GroupInfo"/> member.
         /// </summary>
         public short ActiveGroupCount;
-        #region public byte Reserved[20];
-        [StructLayout(LayoutKind.Explicit, Size = sizeof(byte) * Length)]
-        private struct DUMMYSTRUCTNAME
-        {
-            public const int Length = 20;
-            public Span<byte> Span => MemoryMarshal.AsBytes(SpanOverRef.GetSpan(ref this));
-            public ref byte this[int index] => ref Span[index];
-        }
-        private DUMMYSTRUCTNAME ReservedField;
         /// <summary>This member is reserved.</summary>
         [EditorBrowsable(EditorBrowsableState.Never)]
-        public Span<byte> Reserved => ReservedField.Span;
-        #endregion
+        public fixed byte Reserved[20];
         #region public PROCESSOR_GROUP_INFO GroupInfo[];
         internal PROCESSOR_GROUP_INFO GroupInfoField;
         /// <summary>

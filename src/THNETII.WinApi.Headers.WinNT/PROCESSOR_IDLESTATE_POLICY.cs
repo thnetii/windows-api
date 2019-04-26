@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.Runtime.InteropServices;
 
 using THNETII.InteropServices.Bitwise;
-using THNETII.InteropServices.Runtime;
+using THNETII.InteropServices.Memory;
 
 namespace THNETII.WinApi.Native.WinNT
 {
@@ -38,7 +38,7 @@ namespace THNETII.WinApi.Native.WinNT
         public int PolicyCount;
         #region public PROCESSOR_IDLESTATE_INFO[] Policy = new PROCESSOR_IDLESTATE_INFO[PolicyCount];
         internal PROCESSOR_IDLESTATE_INFO PolicyField;
-        public Span<PROCESSOR_IDLESTATE_INFO> Policy => SpanOverRef.GetSpan(ref PolicyField, PolicyCount); 
+        public Span<PROCESSOR_IDLESTATE_INFO> Policy => SpanOverRef.GetSpan(ref PolicyField, PolicyCount);
         #endregion
     }
 }

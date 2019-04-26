@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Reflection;
 using System.Runtime.InteropServices;
-using THNETII.InteropServices.NativeMemory;
+
+using THNETII.InteropServices.Memory;
 using THNETII.WinApi.Native.Metadata;
+
 using Xunit;
 
 namespace THNETII.WinApi.Native.Test

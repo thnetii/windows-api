@@ -2,8 +2,7 @@
 using System.ComponentModel;
 using System.Runtime.InteropServices;
 
-using THNETII.InteropServices.NativeMemory;
-using THNETII.InteropServices.Runtime;
+using THNETII.InteropServices.Memory;
 
 namespace THNETII.WinApi.Native.WinNT
 {
@@ -24,7 +23,7 @@ namespace THNETII.WinApi.Native.WinNT
         /// <para>
         /// <see cref="SCRUB_DATA_INPUT_FLAG_RESUME"/> has to be specified when
         /// <see cref="ResumeContext"/> is provided from the previous call
-        /// </para> 
+        /// </para>
         /// </summary>
         public SCRUB_DATA_INPUT_FLAGS Flags;
 

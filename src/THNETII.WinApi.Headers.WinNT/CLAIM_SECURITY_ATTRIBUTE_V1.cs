@@ -1,8 +1,10 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Runtime.InteropServices;
+
 using THNETII.InteropServices.Bitwise;
-using THNETII.InteropServices.NativeMemory;
+using THNETII.InteropServices.Memory;
+
 using static THNETII.WinApi.Native.WinNT.WinNTConstants;
 
 namespace THNETII.WinApi.Native.WinNT

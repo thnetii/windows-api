@@ -2,7 +2,7 @@
 using System.ComponentModel;
 using System.Runtime.InteropServices;
 
-using THNETII.InteropServices.Runtime;
+using THNETII.InteropServices.Memory;
 
 namespace THNETII.WinApi.Native.WinNT
 {
@@ -56,7 +56,7 @@ namespace THNETII.WinApi.Native.WinNT
         #region public GROUP_AFFINITY GroupMask[];
         internal GROUP_AFFINITY GroupMaskField;
         /// <summary>
-        /// A span of <see cref="GROUP_AFFINITY"/> structures. The <see cref="GroupCount"/> member specifies the number of structures in the span. Each structure in the span specifies a group number and processor affinity within the group. 
+        /// A span of <see cref="GROUP_AFFINITY"/> structures. The <see cref="GroupCount"/> member specifies the number of structures in the span. Each structure in the span specifies a group number and processor affinity within the group.
         /// </summary>
         public Span<GROUP_AFFINITY> GroupMask => SpanOverRef.GetSpan(ref GroupMaskField, GroupCount);
         #endregion

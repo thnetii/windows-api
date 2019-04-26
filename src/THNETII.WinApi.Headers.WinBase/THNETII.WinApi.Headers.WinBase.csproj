@@ -12,7 +12,7 @@
 
   <ItemGroup Label="InteropServices Project References">
     <ProjectReference Include="..\..\interopservices\src\THNETII.InteropServices.Bitwise\THNETII.InteropServices.Bitwise.csproj" />
-    <ProjectReference Include="..\..\interopservices\src\THNETII.InteropServices.NativeMemory\THNETII.InteropServices.NativeMemory.csproj" />
+    <ProjectReference Include="..\..\interopservices\src\THNETII.InteropServices.Memory\THNETII.InteropServices.Memory.csproj" />
   </ItemGroup>
 
   <ItemGroup Label="Shared Project References">
@@ -21,7 +21,7 @@
     </ProjectReference>
     <ProjectReference Include="..\..\src-shared\THNETII.WinApi.WindowsDataTypes\THNETII.WinApi.WindowsDataTypes.csproj" />
   </ItemGroup>
-  
+
   <ItemGroup Label="Constants Project References">
     <ProjectReference Include="..\..\src\THNETII.WinApi.Constants.WinBase\THNETII.WinApi.Constants.WinBase.csproj">
       <PrivateAssets>All</PrivateAssets>

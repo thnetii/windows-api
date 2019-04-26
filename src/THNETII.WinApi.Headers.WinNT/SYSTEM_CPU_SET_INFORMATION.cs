@@ -2,7 +2,7 @@
 using System.Runtime.InteropServices;
 
 using THNETII.InteropServices.Bitwise;
-using THNETII.InteropServices.NativeMemory;
+using THNETII.InteropServices.Memory;
 
 namespace THNETII.WinApi.Native.WinNT
 {

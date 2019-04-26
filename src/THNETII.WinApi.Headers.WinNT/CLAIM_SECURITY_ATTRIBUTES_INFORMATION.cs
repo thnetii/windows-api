@@ -1,7 +1,8 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Runtime.InteropServices;
-using THNETII.InteropServices.NativeMemory;
+
+using THNETII.InteropServices.Memory;
 
 using static THNETII.WinApi.Native.WinNT.CLAIM_SECURITY_ATTRIBUTES_VERSION;
 

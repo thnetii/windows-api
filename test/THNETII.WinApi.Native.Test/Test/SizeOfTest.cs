@@ -1,15 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
+
 using THNETII.WinApi.Native.Metadata;
-using THNETII.WinApi.Native.MinWinBase;
-using THNETII.WinApi.Native.MinWinDef;
-using THNETII.WinApi.Native.WinBase;
-using THNETII.WinApi.Native.WinNT;
-using THNETII.WinApi.Native.WinUser;
+
 using Xunit;
 
 namespace THNETII.WinApi.Native.Test
@@ -38,7 +33,7 @@ namespace THNETII.WinApi.Native.Test
         public static void MarshalSizeOfsEqualsThnetiiSizeOf(Type type)
         {
             var expected = GetMarshalSizeOfForType(type).Invoke();
-            Assert.Equal(expected, InteropServices.NativeMemory.SizeOf.GetSizeOf(type).Bytes);
+            Assert.Equal(expected, InteropServices.Memory.SizeOf.GetSizeOf(type).Bytes);
         }
 
         [Theory, MemberData(nameof(WinApiStructures.TypesMemberData), MemberType = typeof(WinApiStructures))]

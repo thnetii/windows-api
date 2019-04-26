@@ -4,7 +4,8 @@ using System.ComponentModel;
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.InteropServices;
 using System.Security.AccessControl;
-using THNETII.InteropServices.NativeMemory;
+
+using THNETII.InteropServices.Memory;
 
 namespace THNETII.WinApi.Native.WinNT
 {

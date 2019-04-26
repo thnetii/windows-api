@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.InteropServices;
-using THNETII.InteropServices.Runtime;
+
+using THNETII.InteropServices.Memory;
+
 using static THNETII.WinApi.Native.WinNT.WinNTConstants;
 
 namespace THNETII.WinApi.Native.WinNT

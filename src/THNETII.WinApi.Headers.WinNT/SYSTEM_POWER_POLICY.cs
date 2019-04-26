@@ -2,7 +2,7 @@
 using System.ComponentModel;
 using System.Runtime.InteropServices;
 
-using THNETII.InteropServices.Runtime;
+using THNETII.InteropServices.Memory;
 
 namespace THNETII.WinApi.Native.WinNT
 {
@@ -147,7 +147,7 @@ namespace THNETII.WinApi.Native.WinNT
             set => VideoTimeoutField = (int)value.TotalSeconds;
         }
         #endregion
-        #region public bool VideoDimDisplay; 
+        #region public bool VideoDimDisplay;
         internal byte VideoDimDisplayField;
         /// <summary>
         /// If this member is <see langword="true"/>, the system includes support for display dimming.

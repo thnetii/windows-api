@@ -1,6 +1,7 @@
 ﻿using System.Runtime.InteropServices;
 using System.Security.Principal;
-using THNETII.InteropServices.NativeMemory;
+
+using THNETII.InteropServices.Memory;
 
 using static THNETII.WinApi.Native.WinNT.SECURITY_CONTEXT_TRACKING_MODE;
 

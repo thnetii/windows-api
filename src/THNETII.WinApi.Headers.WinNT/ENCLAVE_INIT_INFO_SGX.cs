@@ -2,7 +2,7 @@
 using System.ComponentModel;
 using System.Runtime.InteropServices;
 
-using THNETII.InteropServices.Runtime;
+using THNETII.InteropServices.Memory;
 
 namespace THNETII.WinApi.Native.WinNT
 {
@@ -57,7 +57,7 @@ namespace THNETII.WinApi.Native.WinNT
         /// Not used.
         /// </summary>
         [EditorBrowsable(EditorBrowsableState.Never)]
-        public Span<byte> Reserved2 => MemoryMarshal.AsBytes(SpanOverRef.GetSpan(ref Reserved2Field)); 
+        public Span<byte> Reserved2 => MemoryMarshal.AsBytes(SpanOverRef.GetSpan(ref Reserved2Field));
         #endregion
     }
 }

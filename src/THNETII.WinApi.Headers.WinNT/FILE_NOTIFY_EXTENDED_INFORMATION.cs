@@ -1,7 +1,8 @@
 ﻿using System;
 using System.IO;
 using System.Runtime.InteropServices;
-using THNETII.InteropServices.Runtime;
+
+using THNETII.InteropServices.Memory;
 
 namespace THNETII.WinApi.Native.WinNT
 {

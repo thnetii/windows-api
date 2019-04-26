@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Runtime.InteropServices;
-using THNETII.InteropServices.Runtime;
+
+using THNETII.InteropServices.Memory;
+
 using static THNETII.WinApi.Native.WinNT.CONTEXT_FLAGS;
 
 namespace THNETII.WinApi.Native.WinNT

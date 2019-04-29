@@ -17,6 +17,8 @@ namespace THNETII.WinApi.Native.WinNT
     [StructLayout(LayoutKind.Sequential)]
     public struct BATTERY_REPORTING_SCALE
     {
+        internal const int SizeOf = sizeof(int) * 2;
+
         /// <summary>
         /// The granularity of the capacity reading returned by <see cref="IOCTL_BATTERY_QUERY_STATUS"/> in milliwatt-hours (mWh). Granularity may change over time as battery discharge and recharge lowers the range of readings.
         /// </summary>

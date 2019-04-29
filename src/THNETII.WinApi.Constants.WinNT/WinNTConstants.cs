@@ -4625,6 +4625,12 @@ namespace THNETII.WinApi.Native.WinNT
         public const int PO_THROTTLE_ADAPTIVE = 3;
         public const int PO_THROTTLE_MAXIMUM = 4;   // not a policy, just a limit
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 16122
+        public const int HIBERFILE_TYPE_NONE = 0x00;
+        public const int HIBERFILE_TYPE_REDUCED = 0x01;
+        public const int HIBERFILE_TYPE_FULL = 0x02;
+        public const int HIBERFILE_TYPE_MAX = 0x03;
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19775
         public const int RTL_UMS_VERSION = 0x0100;
     }

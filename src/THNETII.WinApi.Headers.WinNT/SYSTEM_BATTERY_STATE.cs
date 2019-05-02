@@ -18,7 +18,7 @@ namespace THNETII.WinApi.Native.WinNT
         #region public bool AcOnLine;
         internal byte AcOnLineField;
         /// <summary>
-        /// If this member is TRUE, the system battery charger is currently operating on external power.
+        /// If this member is <see langword="true"/>, the system battery charger is currently operating on external power.
         /// </summary>
         public bool AcOnLine
         {
@@ -29,7 +29,7 @@ namespace THNETII.WinApi.Native.WinNT
         #region public bool BatteryPresent;
         internal byte BatteryPresentField;
         /// <summary>
-        /// If this member is TRUE, at least one battery is present in the system.
+        /// If this member is <see langword="true"/>, at least one battery is present in the system.
         /// </summary>
         public bool BatteryPresent
         {
@@ -40,7 +40,7 @@ namespace THNETII.WinApi.Native.WinNT
         #region public bool Charging;
         internal byte ChargingField;
         /// <summary>
-        /// If this member is TRUE, a battery is currently charging.
+        /// If this member is <see langword="true"/>, a battery is currently charging.
         /// </summary>
         public bool Charging
         {
@@ -51,7 +51,7 @@ namespace THNETII.WinApi.Native.WinNT
         #region public bool Discharging;
         internal byte DischargingField;
         /// <summary>
-        /// If this member is TRUE, a battery is currently discharging.
+        /// If this member is <see langword="true"/>, a battery is currently discharging.
         /// </summary>
         public bool Discharging
         {

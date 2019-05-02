@@ -1,5 +1,7 @@
 ﻿using System;
 using System.IO;
+using System.Linq;
+using System.Text;
 using System.Runtime.InteropServices;
 
 using THNETII.InteropServices.Memory;
@@ -1856,5 +1858,32 @@ namespace THNETII.WinApi.Native.WinNT
         public static readonly Guid PPM_PERFMON_PERFSTATE_GUID = new Guid(WinNTConstants.PPM_PERFMON_PERFSTATE_GUID);
 
         public static readonly Guid PPM_THERMAL_POLICY_CHANGE_GUID = new Guid(WinNTConstants.PPM_THERMAL_POLICY_CHANGE_GUID);
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 15790
+        public static readonly string IMAGE_DOS_SIGNATURE = Encoding.ASCII.GetString(
+            BitConverter.IsLittleEndian
+            ? BitConverter.GetBytes(WinNTConstants.IMAGE_DOS_SIGNATURE)
+            : BitConverter.GetBytes(WinNTConstants.IMAGE_DOS_SIGNATURE).Reverse().ToArray()
+            );
+        public static readonly string IMAGE_OS2_SIGNATURE = Encoding.ASCII.GetString(
+            BitConverter.IsLittleEndian
+            ? BitConverter.GetBytes(WinNTConstants.IMAGE_OS2_SIGNATURE)
+            : BitConverter.GetBytes(WinNTConstants.IMAGE_OS2_SIGNATURE).Reverse().ToArray()
+            );
+        public static readonly string IMAGE_OS2_SIGNATURE_LE = Encoding.ASCII.GetString(
+            BitConverter.IsLittleEndian
+            ? BitConverter.GetBytes(WinNTConstants.IMAGE_OS2_SIGNATURE_LE)
+            : BitConverter.GetBytes(WinNTConstants.IMAGE_OS2_SIGNATURE_LE).Reverse().ToArray()
+            );
+        public static readonly string IMAGE_VXD_SIGNATURE = Encoding.ASCII.GetString(
+            BitConverter.IsLittleEndian
+            ? BitConverter.GetBytes(WinNTConstants.IMAGE_VXD_SIGNATURE)
+            : BitConverter.GetBytes(WinNTConstants.IMAGE_VXD_SIGNATURE).Reverse().ToArray()
+            );
+        public static readonly string IMAGE_NT_SIGNATURE = Encoding.ASCII.GetString(
+            BitConverter.IsLittleEndian
+            ? BitConverter.GetBytes(WinNTConstants.IMAGE_NT_SIGNATURE)
+            : BitConverter.GetBytes(WinNTConstants.IMAGE_NT_SIGNATURE).Reverse().ToArray()
+            );
     }
 }

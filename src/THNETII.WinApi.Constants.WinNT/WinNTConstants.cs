@@ -4631,6 +4631,18 @@ namespace THNETII.WinApi.Native.WinNT
         public const int HIBERFILE_TYPE_FULL = 0x02;
         public const int HIBERFILE_TYPE_MAX = 0x03;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 16218
+        /// <summary>MZ</summary>
+        public const short IMAGE_DOS_SIGNATURE = 0x5A4D;
+        /// <summary>NE</summary>
+        public const short IMAGE_OS2_SIGNATURE = 0x454E;
+        /// <summary>LE</summary>
+        public const short IMAGE_OS2_SIGNATURE_LE = 0x454C;
+        /// <summary>LE</summary>
+        public const short IMAGE_VXD_SIGNATURE = 0x454C;
+        /// <summary>PE00</summary>
+        public const short IMAGE_NT_SIGNATURE = 0x00004550;
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19775
         public const int RTL_UMS_VERSION = 0x0100;
     }

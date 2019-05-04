@@ -3,6 +3,8 @@ using System.Runtime.InteropServices;
 
 namespace THNETII.WinApi.Native.WinNT
 {
+    using static WinNTConstants;
+
     // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 16638
     [StructLayout(LayoutKind.Sequential, Pack = 4)]
     public struct ANON_OBJECT_HEADER_V2
@@ -11,7 +13,7 @@ namespace THNETII.WinApi.Native.WinNT
         public short Sig1;
         /// <summary>Must be <c>0xffff</c></summary>
         public short Sig2;
-        /// <summary>&gt;= 1 (implies the <see cref="ClassID"/> field is present)</summary>
+        /// <summary>&gt;= 2 (implies the <see cref="ClassID"/> field is present)</summary>
         public short Version;
         public short Machine;
         public int TimeDateStamp;

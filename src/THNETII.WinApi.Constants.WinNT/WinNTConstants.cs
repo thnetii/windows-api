@@ -4737,6 +4737,9 @@ namespace THNETII.WinApi.Native.WinNT
         public const short IMAGE_FILE_MACHINE_ARM64 = unchecked((short)0xAA64);
         public const short IMAGE_FILE_MACHINE_CEE = unchecked((short)0xC0EE);
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 16424
+        public const int IMAGE_NUMBEROF_DIRECTORY_ENTRIES = 16;
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19775
         public const int RTL_UMS_VERSION = 0x0100;
     }

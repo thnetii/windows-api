@@ -5047,6 +5047,24 @@ namespace THNETII.WinApi.Native.WinNT
         public const int N_BTSHFT = 4;
         public const int N_TSHIFT = 2;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 17014
+        //
+        // Communal selection types.
+        //
+
+        public const int IMAGE_COMDAT_SELECT_NODUPLICATES = 1;
+        public const int IMAGE_COMDAT_SELECT_ANY = 2;
+        public const int IMAGE_COMDAT_SELECT_SAME_SIZE = 3;
+        public const int IMAGE_COMDAT_SELECT_EXACT_MATCH = 4;
+        public const int IMAGE_COMDAT_SELECT_ASSOCIATIVE = 5;
+        public const int IMAGE_COMDAT_SELECT_LARGEST = 6;
+        public const int IMAGE_COMDAT_SELECT_NEWEST = 7;
+
+        public const int IMAGE_WEAK_EXTERN_SEARCH_NOLIBRARY = 1;
+        public const int IMAGE_WEAK_EXTERN_SEARCH_LIBRARY = 2;
+        public const int IMAGE_WEAK_EXTERN_SEARCH_ALIAS = 3;
+        public const int IMAGE_WEAK_EXTERN_ANTI_DEPENDENCY = 4;
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19775
         public const int RTL_UMS_VERSION = 0x0100;
     }

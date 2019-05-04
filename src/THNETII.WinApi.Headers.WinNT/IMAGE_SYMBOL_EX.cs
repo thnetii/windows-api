@@ -8,28 +8,24 @@ namespace THNETII.WinApi.Native.WinNT
     [StructLayout(LayoutKind.Sequential, Pack = 2)]
     public unsafe struct IMAGE_SYMBOL_EX
     {
-        [StructLayout(LayoutKind.Explicit, Pack = 2)]
-        internal unsafe struct DUMMYUNIONNAME
-        {
-            [FieldOffset(0)]
-            public fixed byte ShortName[8];
-            [StructLayout(LayoutKind.Sequential, Pack = 2)]
-            public struct DUMMYSTRUCTNAME
-            {
-                public int Short;
-                public int Long;
-            }
-            [FieldOffset(0)]
-            public DUMMYSTRUCTNAME Name;
-            [FieldOffset(0)]
-            public fixed int LongName[2];
-        }
-        internal DUMMYUNIONNAME N;
+        public IMAGE_SYMBOL_EX_N N;
+        public int Value;
+        public int SectionNumber;
+        public short Type;
+        public byte StorageClass;
+        public byte NumberOfAuxSymbols;
+    }
+
+    [StructLayout(LayoutKind.Explicit, Pack = 2)]
+    public unsafe struct IMAGE_SYMBOL_EX_N
+    {
+        [FieldOffset(0)]
+        internal fixed byte ShortNameField[8];
         public string ShortName
         {
             get
             {
-                fixed (byte* ptr = N.ShortName)
+                fixed (byte* ptr = ShortNameField)
                 {
                     Span<byte> span = new Span<byte>(ptr, 8);
                     int len = span.IndexOf((byte)0);
@@ -40,7 +36,7 @@ namespace THNETII.WinApi.Native.WinNT
             {
                 string s = value ?? string.Empty;
                 fixed (char* ch = s)
-                fixed (byte* ptr = N.ShortName)
+                fixed (byte* ptr = ShortNameField)
                 {
                     int len = Encoding.UTF8.GetBytes(ch, s.Length, ptr, 8);
                     if (len < 8)
@@ -48,37 +44,18 @@ namespace THNETII.WinApi.Native.WinNT
                 }
             }
         }
-        public (int Short, int Long) Name
-        {
-            get => (N.Name.Short, N.Name.Long);
-            set => (N.Name.Short, N.Name.Long) = value;
-        }
-        /// <summary>if <c>0</c> (zero), use <see cref="LongName"/></summary>
-        public int Short
-        {
-            get => N.Name.Short;
-            set => N.Name.Short = value;
-        }
+        [FieldOffset(0)]
+        public IMAGE_SYMBOL_EX_N_NAME Name;
+        [FieldOffset(0)]
+        public fixed int LongName[2];
+    }
+
+    [StructLayout(LayoutKind.Sequential, Pack = 2)]
+    public struct IMAGE_SYMBOL_EX_N_NAME
+    {
+        /// <summary>if <c>0</c> (zero), use <see cref="IMAGE_SYMBOL_EX_N.LongName"/></summary>
+        public int Short;
         /// <summary>offset into string table</summary>
-        public int Long
-        {
-            get => N.Name.Long;
-            set => N.Name.Long = value;
-        }
-        public Span<int> LongName
-        {
-            get
-            {
-                fixed (int* ptr = N.LongName)
-                {
-                    return new Span<int>(ptr, 2);
-                }
-            }
-        }
-        public int Value;
-        public int SectionNumber;
-        public short Type;
-        public byte StorageClass;
-        public byte NumberOfAuxSymbols;
+        public int Long;
     }
 }

@@ -4745,6 +4745,106 @@ namespace THNETII.WinApi.Native.WinNT
         public const short IMAGE_NT_OPTIONAL_HDR64_MAGIC = 0x20b;
         public const short IMAGE_ROM_OPTIONAL_HDR_MAGIC = 0x107;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 16569
+        // Subsystem Values
+
+        /// <summary>Unknown subsystem.</summary>
+        public const int IMAGE_SUBSYSTEM_UNKNOWN = 0;
+        /// <summary>Image doesn't require a subsystem.</summary>
+        public const int IMAGE_SUBSYSTEM_NATIVE = 1;
+        /// <summary>Image runs in the Windows GUI subsystem.</summary>
+        public const int IMAGE_SUBSYSTEM_WINDOWS_GUI = 2;
+        /// <summary>Image runs in the Windows character subsystem.</summary>
+        public const int IMAGE_SUBSYSTEM_WINDOWS_CUI = 3;
+        /// <summary>image runs in the OS/2 character subsystem.</summary>
+        public const int IMAGE_SUBSYSTEM_OS2_CUI = 5;
+        /// <summary>image runs in the Posix character subsystem.</summary>
+        public const int IMAGE_SUBSYSTEM_POSIX_CUI = 7;
+        /// <summary>image is a native Win9x driver.</summary>
+        public const int IMAGE_SUBSYSTEM_NATIVE_WINDOWS = 8;
+        /// <summary>Image runs in the Windows CE subsystem.</summary>
+        public const int IMAGE_SUBSYSTEM_WINDOWS_CE_GUI = 9;
+        public const int IMAGE_SUBSYSTEM_EFI_APPLICATION = 10;
+        public const int IMAGE_SUBSYSTEM_EFI_BOOT_SERVICE_DRIVER = 11;
+        public const int IMAGE_SUBSYSTEM_EFI_RUNTIME_DRIVER = 12;
+        public const int IMAGE_SUBSYSTEM_EFI_ROM = 13;
+        public const int IMAGE_SUBSYSTEM_XBOX = 14;
+        public const int IMAGE_SUBSYSTEM_WINDOWS_BOOT_APPLICATION = 16;
+        public const int IMAGE_SUBSYSTEM_XBOX_CODE_CATALOG = 17;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 16587
+        // DllCharacteristics Entries
+
+        /// <summary>Reserved.</summary>
+        [Obsolete("Reserved.")]
+        public const int IMAGE_LIBRARY_PROCESS_INIT = 0x0001;
+        /// <summary>Reserved.</summary>
+        [Obsolete("Reserved.")]
+        public const int IMAGE_LIBRARY_PROCESS_TERM = 0x0002;
+        /// <summary>Reserved.</summary>
+        [Obsolete("Reserved.")]
+        public const int IMAGE_LIBRARY_THREAD_INIT = 0x0004;
+        /// <summary>Reserved.</summary>
+        [Obsolete("Reserved.")]
+        public const int IMAGE_LIBRARY_THREAD_TERM = 0x0008;
+        /// <summary>Image can handle a high entropy 64-bit virtual address space.</summary>
+        public const int IMAGE_DLLCHARACTERISTICS_HIGH_ENTROPY_VA = 0x0020;
+        /// <summary>DLL can move.</summary>
+        public const int IMAGE_DLLCHARACTERISTICS_DYNAMIC_BASE = 0x0040;
+        /// <summary>Code Integrity Image</summary>
+        public const int IMAGE_DLLCHARACTERISTICS_FORCE_INTEGRITY = 0x0080;
+        /// <summary>Image is NX compatible</summary>
+        public const int IMAGE_DLLCHARACTERISTICS_NX_COMPAT = 0x0100;
+        /// <summary>Image understands isolation and doesn't want it</summary>
+        public const int IMAGE_DLLCHARACTERISTICS_NO_ISOLATION = 0x0200;
+        /// <summary>Image does not use SEH.  No SE handler may reside in this image</summary>
+        public const int IMAGE_DLLCHARACTERISTICS_NO_SEH = 0x0400;
+        /// <summary>Do not bind this image.</summary>
+        public const int IMAGE_DLLCHARACTERISTICS_NO_BIND = 0x0800;
+        /// <summary>Image should execute in an AppContainer</summary>
+        public const int IMAGE_DLLCHARACTERISTICS_APPCONTAINER = 0x1000;
+        /// <summary>Driver uses WDM model</summary>
+        public const int IMAGE_DLLCHARACTERISTICS_WDM_DRIVER = 0x2000;
+        /// <summary>Image supports Control Flow Guard.</summary>
+        public const int IMAGE_DLLCHARACTERISTICS_GUARD_CF = 0x4000;
+        public const int IMAGE_DLLCHARACTERISTICS_TERMINAL_SERVER_AWARE = 0x8000;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 16605
+        // Directory Entries
+
+        /// <summary>Export Directory</summary>
+        public const int IMAGE_DIRECTORY_ENTRY_EXPORT = 0;
+        /// <summary>Import Directory</summary>
+        public const int IMAGE_DIRECTORY_ENTRY_IMPORT = 1;
+        /// <summary>Resource Directory</summary>
+        public const int IMAGE_DIRECTORY_ENTRY_RESOURCE = 2;
+        /// <summary>Exception Directory</summary>
+        public const int IMAGE_DIRECTORY_ENTRY_EXCEPTION = 3;
+        /// <summary>Security Directory</summary>
+        public const int IMAGE_DIRECTORY_ENTRY_SECURITY = 4;
+        /// <summary>Base Relocation Table</summary>
+        public const int IMAGE_DIRECTORY_ENTRY_BASERELOC = 5;
+        /// <summary>Debug Directory</summary>
+        public const int IMAGE_DIRECTORY_ENTRY_DEBUG = 6;
+        /// <summary>(X86 usage)</summary>
+        public const int IMAGE_DIRECTORY_ENTRY_COPYRIGHT = 7;
+        /// <summary>Architecture Specific Data</summary>
+        public const int IMAGE_DIRECTORY_ENTRY_ARCHITECTURE = 7;
+        /// <summary>RVA of GP</summary>
+        public const int IMAGE_DIRECTORY_ENTRY_GLOBALPTR = 8;
+        /// <summary>TLS Directory</summary>
+        public const int IMAGE_DIRECTORY_ENTRY_TLS = 9;
+        /// <summary>Load Configuration Directory</summary>
+        public const int IMAGE_DIRECTORY_ENTRY_LOAD_CONFIG = 10;
+        /// <summary>Bound Import Directory in headers</summary>
+        public const int IMAGE_DIRECTORY_ENTRY_BOUND_IMPORT = 11;
+        /// <summary>Import Address Table</summary>
+        public const int IMAGE_DIRECTORY_ENTRY_IAT = 12;
+        /// <summary>Delay Load Import Descriptors</summary>
+        public const int IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT = 13;
+        /// <summary>COM Runtime descriptor</summary>
+        public const int IMAGE_DIRECTORY_ENTRY_COM_DESCRIPTOR = 14;
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19775
         public const int RTL_UMS_VERSION = 0x0100;
     }

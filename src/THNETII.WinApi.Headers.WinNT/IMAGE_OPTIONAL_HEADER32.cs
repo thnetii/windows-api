@@ -5,6 +5,7 @@ namespace THNETII.WinApi.Native.WinNT
 {
     using static WinNTConstants;
 
+    // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 16430
     /// <summary>
     /// Represents the optional header format.
     /// </summary>

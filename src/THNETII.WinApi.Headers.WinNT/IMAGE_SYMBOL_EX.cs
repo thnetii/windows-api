@@ -8,6 +8,9 @@ namespace THNETII.WinApi.Native.WinNT
     [StructLayout(LayoutKind.Sequential, Pack = 2)]
     public unsafe struct IMAGE_SYMBOL_EX
     {
+        internal const int SizeOf = sizeof(int) * 2
+            + 2 * sizeof(int) + sizeof(short) + 2 * sizeof(byte);
+
         public IMAGE_SYMBOL_EX_N N;
         public int Value;
         public int SectionNumber;

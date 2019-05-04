@@ -4641,7 +4641,7 @@ namespace THNETII.WinApi.Native.WinNT
         /// <summary>LE</summary>
         public const short IMAGE_VXD_SIGNATURE = 0x454C;
         /// <summary>PE00</summary>
-        public const short IMAGE_NT_SIGNATURE = 0x00004550;
+        public const int IMAGE_NT_SIGNATURE = 0x00004550;
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 16363
         public const int IMAGE_SIZEOF_FILE_HEADER = 20;

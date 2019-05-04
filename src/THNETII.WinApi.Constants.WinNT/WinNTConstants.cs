@@ -4740,6 +4740,11 @@ namespace THNETII.WinApi.Native.WinNT
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 16424
         public const int IMAGE_NUMBEROF_DIRECTORY_ENTRIES = 16;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 16522
+        public const short IMAGE_NT_OPTIONAL_HDR32_MAGIC = 0x10b;
+        public const short IMAGE_NT_OPTIONAL_HDR64_MAGIC = 0x20b;
+        public const short IMAGE_ROM_OPTIONAL_HDR_MAGIC = 0x107;
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19775
         public const int RTL_UMS_VERSION = 0x0100;
     }

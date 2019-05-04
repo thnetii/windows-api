@@ -4941,6 +4941,9 @@ namespace THNETII.WinApi.Native.WinNT
         /// <summary>Tls index is scaled</summary>
         public const int IMAGE_SCN_SCALE_INDEX = 0x00000001;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 16780
+        public const int IMAGE_SIZEOF_SYMBOL = 18;
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19775
         public const int RTL_UMS_VERSION = 0x0100;
     }

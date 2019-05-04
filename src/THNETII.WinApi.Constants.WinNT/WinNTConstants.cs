@@ -5065,6 +5065,633 @@ namespace THNETII.WinApi.Native.WinNT
         public const int IMAGE_WEAK_EXTERN_SEARCH_ALIAS = 3;
         public const int IMAGE_WEAK_EXTERN_ANTI_DEPENDENCY = 4;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 17045
+        //
+        // I386 relocation types.
+        //
+        /// <summary>Reference is absolute, no relocation is necessary</summary>
+        public const short IMAGE_REL_I386_ABSOLUTE = 0x0000;
+        /// <summary>Direct 16-bit reference to the symbols virtual address</summary>
+        public const short IMAGE_REL_I386_DIR16 = 0x0001;
+        /// <summary>PC-relative 16-bit reference to the symbols virtual address</summary>
+        public const short IMAGE_REL_I386_REL16 = 0x0002;
+        /// <summary>Direct 32-bit reference to the symbols virtual address</summary>
+        public const short IMAGE_REL_I386_DIR32 = 0x0006;
+        /// <summary>Direct 32-bit reference to the symbols virtual address, base not included</summary>
+        public const short IMAGE_REL_I386_DIR32NB = 0x0007;
+        /// <summary>Direct 16-bit reference to the segment-selector bits of a 32-bit virtual address</summary>
+        public const short IMAGE_REL_I386_SEG12 = 0x0009;
+        public const short IMAGE_REL_I386_SECTION = 0x000A;
+        public const short IMAGE_REL_I386_SECREL = 0x000B;
+        /// <summary>clr token</summary>
+        public const short IMAGE_REL_I386_TOKEN = 0x000C;
+        /// <summary>7 bit offset from base of section containing target</summary>
+        public const short IMAGE_REL_I386_SECREL7 = 0x000D;
+        /// <summary>PC-relative 32-bit reference to the symbols virtual address</summary>
+        public const short IMAGE_REL_I386_REL32 = 0x0014;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 17060
+        //
+        // MIPS relocation types.
+        //
+        /// <summary>Reference is absolute, no relocation is necessary</summary>
+        public const short IMAGE_REL_MIPS_ABSOLUTE = 0x0000;
+        public const short IMAGE_REL_MIPS_REFHALF = 0x0001;
+        public const short IMAGE_REL_MIPS_REFWORD = 0x0002;
+        public const short IMAGE_REL_MIPS_JMPADDR = 0x0003;
+        public const short IMAGE_REL_MIPS_REFHI = 0x0004;
+        public const short IMAGE_REL_MIPS_REFLO = 0x0005;
+        public const short IMAGE_REL_MIPS_GPREL = 0x0006;
+        public const short IMAGE_REL_MIPS_LITERAL = 0x0007;
+        public const short IMAGE_REL_MIPS_SECTION = 0x000A;
+        public const short IMAGE_REL_MIPS_SECREL = 0x000B;
+        /// <summary>Low 16-bit section relative referemce (used for >32k TLS)</summary>
+        public const short IMAGE_REL_MIPS_SECRELLO = 0x000C;
+        /// <summary>High 16-bit section relative reference (used for >32k TLS)</summary>
+        public const short IMAGE_REL_MIPS_SECRELHI = 0x000D;
+        /// <summary>clr token</summary>
+        public const short IMAGE_REL_MIPS_TOKEN = 0x000E;
+        public const short IMAGE_REL_MIPS_JMPADDR16 = 0x0010;
+        public const short IMAGE_REL_MIPS_REFWORDNB = 0x0022;
+        /// <summary>C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 17080</summary>
+        public const short IMAGE_REL_MIPS_PAIR = 0x0025;
+
+        //
+        // Alpha Relocation types.
+        //
+        public const short IMAGE_REL_ALPHA_ABSOLUTE = 0x0000;
+        public const short IMAGE_REL_ALPHA_REFLONG = 0x0001;
+        public const short IMAGE_REL_ALPHA_REFQUAD = 0x0002;
+        public const short IMAGE_REL_ALPHA_GPREL32 = 0x0003;
+        public const short IMAGE_REL_ALPHA_LITERAL = 0x0004;
+        public const short IMAGE_REL_ALPHA_LITUSE = 0x0005;
+        public const short IMAGE_REL_ALPHA_GPDISP = 0x0006;
+        public const short IMAGE_REL_ALPHA_BRADDR = 0x0007;
+        public const short IMAGE_REL_ALPHA_HINT = 0x0008;
+        public const short IMAGE_REL_ALPHA_INLINE_REFLONG = 0x0009;
+        public const short IMAGE_REL_ALPHA_REFHI = 0x000A;
+        public const short IMAGE_REL_ALPHA_REFLO = 0x000B;
+        public const short IMAGE_REL_ALPHA_PAIR = 0x000C;
+        public const short IMAGE_REL_ALPHA_MATCH = 0x000D;
+        public const short IMAGE_REL_ALPHA_SECTION = 0x000E;
+        public const short IMAGE_REL_ALPHA_SECREL = 0x000F;
+        public const short IMAGE_REL_ALPHA_REFLONGNB = 0x0010;
+        /// <summary>Low 16-bit section relative reference</summary>
+        public const short IMAGE_REL_ALPHA_SECRELLO = 0x0011;
+        /// <summary>High 16-bit section relative reference</summary>
+        public const short IMAGE_REL_ALPHA_SECRELHI = 0x0012;
+        /// <summary>High 16 bits of 48 bit reference</summary>
+        public const short IMAGE_REL_ALPHA_REFQ3 = 0x0013;
+        /// <summary>Middle 16 bits of 48 bit reference</summary>
+        public const short IMAGE_REL_ALPHA_REFQ2 = 0x0014;
+        /// <summary>Low 16 bits of 48 bit reference</summary>
+        public const short IMAGE_REL_ALPHA_REFQ1 = 0x0015;
+        /// <summary>Low 16-bit GP relative reference</summary>
+        public const short IMAGE_REL_ALPHA_GPRELLO = 0x0016;
+        /// <summary>High 16-bit GP relative reference</summary>
+        public const short IMAGE_REL_ALPHA_GPRELHI = 0x0017;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 17108
+        //
+        // IBM PowerPC relocation types.
+        //
+        /// <summary>NOP</summary>
+        public const short IMAGE_REL_PPC_ABSOLUTE = 0x0000;
+        /// <summary>64-bit address</summary>
+        public const short IMAGE_REL_PPC_ADDR64 = 0x0001;
+        /// <summary>32-bit address</summary>
+        public const short IMAGE_REL_PPC_ADDR32 = 0x0002;
+        /// <summary>26-bit address, shifted left 2 (branch absolute)</summary>
+        public const short IMAGE_REL_PPC_ADDR24 = 0x0003;
+        /// <summary>16-bit address</summary>
+        public const short IMAGE_REL_PPC_ADDR16 = 0x0004;
+        /// <summary>16-bit address, shifted left 2 (load doubleword)</summary>
+        public const short IMAGE_REL_PPC_ADDR14 = 0x0005;
+        /// <summary>26-bit PC-relative offset, shifted left 2 (branch relative)</summary>
+        public const short IMAGE_REL_PPC_REL24 = 0x0006;
+        /// <summary>16-bit PC-relative offset, shifted left 2 (br cond relative)</summary>
+        public const short IMAGE_REL_PPC_REL14 = 0x0007;
+        /// <summary>16-bit offset from TOC base</summary>
+        public const short IMAGE_REL_PPC_TOCREL16 = 0x0008;
+        /// <summary>16-bit offset from TOC base, shifted left 2 (load doubleword)</summary>
+        public const short IMAGE_REL_PPC_TOCREL14 = 0x0009;
+
+        /// <summary>32-bit addr w/o image base</summary>
+        public const short IMAGE_REL_PPC_ADDR32NB = 0x000A;
+        /// <summary>va of containing section (as in an image sectionhdr)</summary>
+        public const short IMAGE_REL_PPC_SECREL = 0x000B;
+        /// <summary>sectionheader number</summary>
+        public const short IMAGE_REL_PPC_SECTION = 0x000C;
+        /// <summary>substitute TOC restore instruction iff symbol is glue code</summary>
+        public const short IMAGE_REL_PPC_IFGLUE = 0x000D;
+        /// <summary>symbol is glue code; virtual address is TOC restore instruction</summary>
+        public const short IMAGE_REL_PPC_IMGLUE = 0x000E;
+        /// <summary>va of containing section (limited to 16 bits)</summary>
+        public const short IMAGE_REL_PPC_SECREL16 = 0x000F;
+        public const short IMAGE_REL_PPC_REFHI = 0x0010;
+        public const short IMAGE_REL_PPC_REFLO = 0x0011;
+        public const short IMAGE_REL_PPC_PAIR = 0x0012;
+        /// <summary>Low 16-bit section relative reference (used for >32k TLS)</summary>
+        public const short IMAGE_REL_PPC_SECRELLO = 0x0013;
+        /// <summary>High 16-bit section relative reference (used for >32k TLS)</summary>
+        public const short IMAGE_REL_PPC_SECRELHI = 0x0014;
+        public const short IMAGE_REL_PPC_GPREL = 0x0015;
+        /// <summary>clr token</summary>
+        public const short IMAGE_REL_PPC_TOKEN = 0x0016;
+
+        /// <summary>mask to isolate above values in IMAGE_RELOCATION.Type</summary>
+        public const short IMAGE_REL_PPC_TYPEMASK = 0x00FF;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 17138
+        // Flag bits in IMAGE_RELOCATION.TYPE
+
+        /// <summary>subtract reloc value rather than adding it</summary>
+        public const short IMAGE_REL_PPC_NEG = 0x0100;
+        /// <summary>fix branch prediction bit to predict branch taken</summary>
+        public const short IMAGE_REL_PPC_BRTAKEN = 0x0200;
+        /// <summary>fix branch prediction bit to predict branch not taken</summary>
+        public const short IMAGE_REL_PPC_BRNTAKEN = 0x0400;
+        /// <summary>toc slot defined in file (or, data in toc)</summary>
+        public const short IMAGE_REL_PPC_TOCDEFN = 0x0800;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 17145
+        //
+        // Hitachi SH3 relocation types.
+        //
+        /// <summary>No relocation</summary>
+        public const short IMAGE_REL_SH3_ABSOLUTE = 0x0000;
+        /// <summary>16 bit direct</summary>
+        public const short IMAGE_REL_SH3_DIRECT16 = 0x0001;
+        /// <summary>32 bit direct</summary>
+        public const short IMAGE_REL_SH3_DIRECT32 = 0x0002;
+        /// <summary>8 bit direct, -128..255</summary>
+        public const short IMAGE_REL_SH3_DIRECT8 = 0x0003;
+        /// <summary>8 bit direct .W (0 ext.)</summary>
+        public const short IMAGE_REL_SH3_DIRECT8_WORD = 0x0004;
+        /// <summary>8 bit direct .L (0 ext.)</summary>
+        public const short IMAGE_REL_SH3_DIRECT8_LONG = 0x0005;
+        /// <summary>4 bit direct (0 ext.)</summary>
+        public const short IMAGE_REL_SH3_DIRECT4 = 0x0006;
+        /// <summary>4 bit direct .W (0 ext.)</summary>
+        public const short IMAGE_REL_SH3_DIRECT4_WORD = 0x0007;
+        /// <summary>4 bit direct .L (0 ext.)</summary>
+        public const short IMAGE_REL_SH3_DIRECT4_LONG = 0x0008;
+        /// <summary>8 bit PC relative .W</summary>
+        public const short IMAGE_REL_SH3_PCREL8_WORD = 0x0009;
+        /// <summary>8 bit PC relative .L</summary>
+        public const short IMAGE_REL_SH3_PCREL8_LONG = 0x000A;
+        /// <summary>12 LSB PC relative .W</summary>
+        public const short IMAGE_REL_SH3_PCREL12_WORD = 0x000B;
+        /// <summary>Start of EXE section</summary>
+        public const short IMAGE_REL_SH3_STARTOF_SECTION = 0x000C;
+        /// <summary>Size of EXE section</summary>
+        public const short IMAGE_REL_SH3_SIZEOF_SECTION = 0x000D;
+        /// <summary>Section table index</summary>
+        public const short IMAGE_REL_SH3_SECTION = 0x000E;
+        /// <summary>Offset within section</summary>
+        public const short IMAGE_REL_SH3_SECREL = 0x000F;
+        /// <summary>32 bit direct not based</summary>
+        public const short IMAGE_REL_SH3_DIRECT32_NB = 0x0010;
+        /// <summary>GP-relative addressing</summary>
+        public const short IMAGE_REL_SH3_GPREL4_LONG = 0x0011;
+        /// <summary>clr token</summary>
+        public const short IMAGE_REL_SH3_TOKEN = 0x0012;
+        /// <summary>
+        /// Offset from current
+        /// instruction in longwords
+        /// if not NOMODE, insert the
+        /// inverse of the low bit at
+        /// bit 32 to select PTA/PTB
+        /// </summary>
+        public const short IMAGE_REL_SHM_PCRELPT = 0x0013;
+        /// <summary>Low bits of 32-bit address</summary>
+        public const short IMAGE_REL_SHM_REFLO = 0x0014;
+        /// <summary>High bits of 32-bit address</summary>
+        public const short IMAGE_REL_SHM_REFHALF = 0x0015;
+        /// <summary>Low bits of relative reference</summary>
+        public const short IMAGE_REL_SHM_RELLO = 0x0016;
+        /// <summary>High bits of relative reference</summary>
+        public const short IMAGE_REL_SHM_RELHALF = 0x0017;
+        /// <summary>offset operand for relocation</summary>
+        public const short IMAGE_REL_SHM_PAIR = 0x0018;
+
+        /// <summary>relocation ignores section mode</summary>
+        public const short IMAGE_REL_SH_NOMODE = unchecked((short)0x8000);
+
+
+        /// <summary>No relocation required</summary>
+        public const short IMAGE_REL_ARM_ABSOLUTE = 0x0000;
+        /// <summary>32 bit address</summary>
+        public const short IMAGE_REL_ARM_ADDR32 = 0x0001;
+        /// <summary>32 bit address w/o image base</summary>
+        public const short IMAGE_REL_ARM_ADDR32NB = 0x0002;
+        /// <summary>24 bit offset &lt;&lt; 2 &amp; sign ext.</summary>
+        public const short IMAGE_REL_ARM_BRANCH24 = 0x0003;
+        /// <summary>Thumb: 2 11 bit offsets</summary>
+        public const short IMAGE_REL_ARM_BRANCH11 = 0x0004;
+        /// <summary>clr token</summary>
+        public const short IMAGE_REL_ARM_TOKEN = 0x0005;
+        /// <summary>GP-relative addressing (ARM)</summary>
+        public const short IMAGE_REL_ARM_GPREL12 = 0x0006;
+        /// <summary>GP-relative addressing (Thumb)</summary>
+        public const short IMAGE_REL_ARM_GPREL7 = 0x0007;
+        public const short IMAGE_REL_ARM_BLX24 = 0x0008;
+        public const short IMAGE_REL_ARM_BLX11 = 0x0009;
+        /// <summary>Section table index</summary>
+        public const short IMAGE_REL_ARM_SECTION = 0x000E;
+        /// <summary>Offset within section</summary>
+        public const short IMAGE_REL_ARM_SECREL = 0x000F;
+        /// <summary>ARM: MOVW/MOVT</summary>
+        public const short IMAGE_REL_ARM_MOV32A = 0x0010;
+        /// <summary>ARM: MOVW/MOVT (deprecated)</summary>
+        public const short IMAGE_REL_ARM_MOV32 = 0x0010;
+        /// <summary>Thumb: MOVW/MOVT</summary>
+        public const short IMAGE_REL_ARM_MOV32T = 0x0011;
+        /// <summary>Thumb: MOVW/MOVT (deprecated)</summary>
+        public const short IMAGE_REL_THUMB_MOV32 = 0x0011;
+        /// <summary>Thumb: 32-bit conditional B</summary>
+        public const short IMAGE_REL_ARM_BRANCH20T = 0x0012;
+        /// <summary>Thumb: 32-bit conditional B (deprecated)</summary>
+        public const short IMAGE_REL_THUMB_BRANCH20 = 0x0012;
+        /// <summary>Thumb: 32-bit B or BL</summary>
+        public const short IMAGE_REL_ARM_BRANCH24T = 0x0014;
+        /// <summary>Thumb: 32-bit B or BL (deprecated)</summary>
+        public const short IMAGE_REL_THUMB_BRANCH24 = 0x0014;
+        /// <summary>Thumb: BLX immediate</summary>
+        public const short IMAGE_REL_ARM_BLX23T = 0x0015;
+        /// <summary>Thumb: BLX immediate (deprecated)</summary>
+        public const short IMAGE_REL_THUMB_BLX23 = 0x0015;
+
+        public const short IMAGE_REL_AM_ABSOLUTE = 0x0000;
+        public const short IMAGE_REL_AM_ADDR32 = 0x0001;
+        public const short IMAGE_REL_AM_ADDR32NB = 0x0002;
+        public const short IMAGE_REL_AM_CALL32 = 0x0003;
+        public const short IMAGE_REL_AM_FUNCINFO = 0x0004;
+        public const short IMAGE_REL_AM_REL32_1 = 0x0005;
+        public const short IMAGE_REL_AM_REL32_2 = 0x0006;
+        public const short IMAGE_REL_AM_SECREL = 0x0007;
+        public const short IMAGE_REL_AM_SECTION = 0x0008;
+        public const short IMAGE_REL_AM_TOKEN = 0x0009;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 17215
+        //
+        // ARM64 relocations types.
+        //
+
+        /// <summary>No relocation required</summary>
+        public const short IMAGE_REL_ARM64_ABSOLUTE = 0x0000;
+        /// <summary>32 bit address. Review! do we need it?</summary>
+        public const short IMAGE_REL_ARM64_ADDR32 = 0x0001;
+        /// <summary>32 bit address w/o image base (RVA: for Data/PData/XData)</summary>
+        public const short IMAGE_REL_ARM64_ADDR32NB = 0x0002;
+        /// <summary>26 bit offset &lt;&lt; 2 &amp; sign ext. for B &amp; BL</summary>
+        public const short IMAGE_REL_ARM64_BRANCH26 = 0x0003;
+        /// <summary>ADRP</summary>
+        public const short IMAGE_REL_ARM64_PAGEBASE_REL21 = 0x0004;
+        /// <summary>ADR</summary>
+        public const short IMAGE_REL_ARM64_REL21 = 0x0005;
+        /// <summary>ADD/ADDS (immediate) with zero shift, for page offset</summary>
+        public const short IMAGE_REL_ARM64_PAGEOFFSET_12A = 0x0006;
+        /// <summary>LDR (indexed, unsigned immediate), for page offset</summary>
+        public const short IMAGE_REL_ARM64_PAGEOFFSET_12L = 0x0007;
+        /// <summary>Offset within section</summary>
+        public const short IMAGE_REL_ARM64_SECREL = 0x0008;
+        /// <summary>ADD/ADDS (immediate) with zero shift, for bit 0:11 of section offset</summary>
+        public const short IMAGE_REL_ARM64_SECREL_LOW12A = 0x0009;
+        /// <summary>ADD/ADDS (immediate) with zero shift, for bit 12:23 of section offset</summary>
+        public const short IMAGE_REL_ARM64_SECREL_HIGH12A = 0x000A;
+        /// <summary>LDR (indexed, unsigned immediate), for bit 0:11 of section offset</summary>
+        public const short IMAGE_REL_ARM64_SECREL_LOW12L = 0x000B;
+        public const short IMAGE_REL_ARM64_TOKEN = 0x000C;
+        /// <summary>Section table index</summary>
+        public const short IMAGE_REL_ARM64_SECTION = 0x000D;
+        /// <summary>64 bit address</summary>
+        public const short IMAGE_REL_ARM64_ADDR64 = 0x000E;
+        /// <summary>19 bit offset &lt;&lt; 2 &amp; sign ext. for conditional B</summary>
+        public const short IMAGE_REL_ARM64_BRANCH19 = 0x000F;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 17236
+        //
+        // x64 relocations
+        //
+        /// <summary>Reference is absolute, no relocation is necessary</summary>
+        public const short IMAGE_REL_AMD64_ABSOLUTE = 0x0000;
+        /// <summary>64-bit address (VA).</summary>
+        public const short IMAGE_REL_AMD64_ADDR64 = 0x0001;
+        /// <summary>32-bit address (VA).</summary>
+        public const short IMAGE_REL_AMD64_ADDR32 = 0x0002;
+        /// <summary>32-bit address w/o image base (RVA).</summary>
+        public const short IMAGE_REL_AMD64_ADDR32NB = 0x0003;
+        /// <summary>32-bit relative address from byte following reloc</summary>
+        public const short IMAGE_REL_AMD64_REL32 = 0x0004;
+        /// <summary>32-bit relative address from byte distance 1 from reloc</summary>
+        public const short IMAGE_REL_AMD64_REL32_1 = 0x0005;
+        /// <summary>32-bit relative address from byte distance 2 from reloc</summary>
+        public const short IMAGE_REL_AMD64_REL32_2 = 0x0006;
+        /// <summary>32-bit relative address from byte distance 3 from reloc</summary>
+        public const short IMAGE_REL_AMD64_REL32_3 = 0x0007;
+        /// <summary>32-bit relative address from byte distance 4 from reloc</summary>
+        public const short IMAGE_REL_AMD64_REL32_4 = 0x0008;
+        /// <summary>32-bit relative address from byte distance 5 from reloc</summary>
+        public const short IMAGE_REL_AMD64_REL32_5 = 0x0009;
+        /// <summary>Section index</summary>
+        public const short IMAGE_REL_AMD64_SECTION = 0x000A;
+        /// <summary>32 bit offset from base of section containing target</summary>
+        public const short IMAGE_REL_AMD64_SECREL = 0x000B;
+        /// <summary>7 bit unsigned offset from base of section containing target</summary>
+        public const short IMAGE_REL_AMD64_SECREL7 = 0x000C;
+        /// <summary>32 bit metadata token</summary>
+        public const short IMAGE_REL_AMD64_TOKEN = 0x000D;
+        /// <summary>32 bit signed span-dependent value emitted into object</summary>
+        public const short IMAGE_REL_AMD64_SREL32 = 0x000E;
+        public const short IMAGE_REL_AMD64_PAIR = 0x000F;
+        /// <summary>32 bit signed span-dependent value applied at link time</summary>
+        public const short IMAGE_REL_AMD64_SSPAN32 = 0x0010;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 17257
+        //
+        // IA64 relocation types.
+        //
+        public const short IMAGE_REL_IA64_ABSOLUTE = 0x0000;
+        public const short IMAGE_REL_IA64_IMM14 = 0x0001;
+        public const short IMAGE_REL_IA64_IMM22 = 0x0002;
+        public const short IMAGE_REL_IA64_IMM64 = 0x0003;
+        public const short IMAGE_REL_IA64_DIR32 = 0x0004;
+        public const short IMAGE_REL_IA64_DIR64 = 0x0005;
+        public const short IMAGE_REL_IA64_PCREL21B = 0x0006;
+        public const short IMAGE_REL_IA64_PCREL21M = 0x0007;
+        public const short IMAGE_REL_IA64_PCREL21F = 0x0008;
+        public const short IMAGE_REL_IA64_GPREL22 = 0x0009;
+        public const short IMAGE_REL_IA64_LTOFF22 = 0x000A;
+        public const short IMAGE_REL_IA64_SECTION = 0x000B;
+        public const short IMAGE_REL_IA64_SECREL22 = 0x000C;
+        public const short IMAGE_REL_IA64_SECREL64I = 0x000D;
+        //
+        public const short IMAGE_REL_IA64_DIR32NB = 0x0010;
+        public const short IMAGE_REL_IA64_SECREL32 = 0x000E;
+        public const short IMAGE_REL_IA64_SREL14 = 0x0011;
+        public const short IMAGE_REL_IA64_SREL22 = 0x0012;
+        public const short IMAGE_REL_IA64_SREL32 = 0x0013;
+        public const short IMAGE_REL_IA64_UREL32 = 0x0014;
+        /// <summary>This is always a BRL and never converted</summary>
+        public const short IMAGE_REL_IA64_PCREL60X = 0x0015;
+        /// <summary>If possible, convert to MBB bundle with NOP.B in slot 1</summary>
+        public const short IMAGE_REL_IA64_PCREL60B = 0x0016;
+        /// <summary>If possible, convert to MFB bundle with NOP.F in slot 1</summary>
+        public const short IMAGE_REL_IA64_PCREL60F = 0x0017;
+        /// <summary>If possible, convert to MIB bundle with NOP.I in slot 1</summary>
+        public const short IMAGE_REL_IA64_PCREL60I = 0x0018;
+        /// <summary>If possible, convert to MMB bundle with NOP.M in slot 1</summary>
+        public const short IMAGE_REL_IA64_PCREL60M = 0x0019;
+        public const short IMAGE_REL_IA64_IMMGPREL64 = 0x001A;
+        /// <summary>clr token</summary>
+        public const short IMAGE_REL_IA64_TOKEN = 0x001B;
+        public const short IMAGE_REL_IA64_GPREL32 = 0x001C;
+        /// <summary>C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 17291</summary>
+        public const short IMAGE_REL_IA64_ADDEND = 0x001F;
+        //
+        // CEF relocation types.
+        //
+        /// <summary>Reference is absolute, no relocation is necessary</summary>
+        public const short IMAGE_REL_CEF_ABSOLUTE = 0x0000;
+        /// <summary>32-bit address (VA).</summary>
+        public const short IMAGE_REL_CEF_ADDR32 = 0x0001;
+        /// <summary>64-bit address (VA).</summary>
+        public const short IMAGE_REL_CEF_ADDR64 = 0x0002;
+        /// <summary>32-bit address w/o image base (RVA).</summary>
+        public const short IMAGE_REL_CEF_ADDR32NB = 0x0003;
+        /// <summary>Section index</summary>
+        public const short IMAGE_REL_CEF_SECTION = 0x0004;
+        /// <summary>32 bit offset from base of section containing target</summary>
+        public const short IMAGE_REL_CEF_SECREL = 0x0005;
+        /// <summary>32 bit metadata token</summary>
+        public const short IMAGE_REL_CEF_TOKEN = 0x0006;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 17302
+        //
+        // clr relocation types.
+        //
+        /// <summary>Reference is absolute, no relocation is necessary</summary>
+        public const short IMAGE_REL_CEE_ABSOLUTE = 0x0000;
+        /// <summary>32-bit address (VA).</summary>
+        public const short IMAGE_REL_CEE_ADDR32 = 0x0001;
+        /// <summary>64-bit address (VA).</summary>
+        public const short IMAGE_REL_CEE_ADDR64 = 0x0002;
+        /// <summary>32-bit address w/o image base (RVA).</summary>
+        public const short IMAGE_REL_CEE_ADDR32NB = 0x0003;
+        /// <summary>Section index</summary>
+        public const short IMAGE_REL_CEE_SECTION = 0x0004;
+        /// <summary>32 bit offset from base of section containing target</summary>
+        public const short IMAGE_REL_CEE_SECREL = 0x0005;
+        /// <summary>32 bit metadata token</summary>
+        public const short IMAGE_REL_CEE_TOKEN = 0x0006;
+
+
+        /// <summary>No relocation required</summary>
+        public const short IMAGE_REL_M32R_ABSOLUTE = 0x0000;
+        /// <summary>32 bit address</summary>
+        public const short IMAGE_REL_M32R_ADDR32 = 0x0001;
+        /// <summary>32 bit address w/o image base</summary>
+        public const short IMAGE_REL_M32R_ADDR32NB = 0x0002;
+        /// <summary>24 bit address</summary>
+        public const short IMAGE_REL_M32R_ADDR24 = 0x0003;
+        /// <summary>GP relative addressing</summary>
+        public const short IMAGE_REL_M32R_GPREL16 = 0x0004;
+        /// <summary>24 bit offset &lt;&lt; 2 &amp; sign ext.</summary>
+        public const short IMAGE_REL_M32R_PCREL24 = 0x0005;
+        /// <summary>16 bit offset &lt;&lt; 2 &amp; sign ext.</summary>
+        public const short IMAGE_REL_M32R_PCREL16 = 0x0006;
+        /// <summary>8 bit offset &lt;&lt; 2 &amp; sign ext.</summary>
+        public const short IMAGE_REL_M32R_PCREL8 = 0x0007;
+        /// <summary>16 MSBs</summary>
+        public const short IMAGE_REL_M32R_REFHALF = 0x0008;
+        /// <summary>16 MSBs; adj for LSB sign ext.</summary>
+        public const short IMAGE_REL_M32R_REFHI = 0x0009;
+        /// <summary>16 LSBs</summary>
+        public const short IMAGE_REL_M32R_REFLO = 0x000A;
+        /// <summary>Link HI and LO</summary>
+        public const short IMAGE_REL_M32R_PAIR = 0x000B;
+        /// <summary>Section table index</summary>
+        public const short IMAGE_REL_M32R_SECTION = 0x000C;
+        /// <summary>32 bit section relative reference</summary>
+        public const short IMAGE_REL_M32R_SECREL32 = 0x000D;
+        /// <summary>clr token</summary>
+        public const short IMAGE_REL_M32R_TOKEN = 0x000E;
+
+        /// <summary>No relocation required</summary>
+        public const short IMAGE_REL_EBC_ABSOLUTE = 0x0000;
+        /// <summary>32 bit address w/o image base</summary>
+        public const short IMAGE_REL_EBC_ADDR32NB = 0x0001;
+        /// <summary>32-bit relative address from byte following reloc</summary>
+        public const short IMAGE_REL_EBC_REL32 = 0x0002;
+        /// <summary>Section table index</summary>
+        public const short IMAGE_REL_EBC_SECTION = 0x0003;
+        /// <summary>Offset within section</summary>
+        public const short IMAGE_REL_EBC_SECREL = 0x0004;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 17343
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int EMARCH_ENC_I17_IMM7B_INST_WORD_X = 3;
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int EMARCH_ENC_I17_IMM7B_SIZE_X = 7;
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int EMARCH_ENC_I17_IMM7B_INST_WORD_POS_X = 4;
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int EMARCH_ENC_I17_IMM7B_VAL_POS_X = 0;
+
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int EMARCH_ENC_I17_IMM9D_INST_WORD_X = 3;
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int EMARCH_ENC_I17_IMM9D_SIZE_X = 9;
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int EMARCH_ENC_I17_IMM9D_INST_WORD_POS_X = 18;
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int EMARCH_ENC_I17_IMM9D_VAL_POS_X = 7;
+
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int EMARCH_ENC_I17_IMM5C_INST_WORD_X = 3;
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int EMARCH_ENC_I17_IMM5C_SIZE_X = 5;
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int EMARCH_ENC_I17_IMM5C_INST_WORD_POS_X = 13;
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int EMARCH_ENC_I17_IMM5C_VAL_POS_X = 16;
+
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int EMARCH_ENC_I17_IC_INST_WORD_X = 3;
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int EMARCH_ENC_I17_IC_SIZE_X = 1;
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int EMARCH_ENC_I17_IC_INST_WORD_POS_X = 12;
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int EMARCH_ENC_I17_IC_VAL_POS_X = 21;
+
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int EMARCH_ENC_I17_IMM41a_INST_WORD_X = 1;
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int EMARCH_ENC_I17_IMM41a_SIZE_X = 10;
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int EMARCH_ENC_I17_IMM41a_INST_WORD_POS_X = 14;
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int EMARCH_ENC_I17_IMM41a_VAL_POS_X = 22;
+
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int EMARCH_ENC_I17_IMM41b_INST_WORD_X = 1;
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int EMARCH_ENC_I17_IMM41b_SIZE_X = 8;
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int EMARCH_ENC_I17_IMM41b_INST_WORD_POS_X = 24;
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int EMARCH_ENC_I17_IMM41b_VAL_POS_X = 32;
+
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int EMARCH_ENC_I17_IMM41c_INST_WORD_X = 2;
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int EMARCH_ENC_I17_IMM41c_SIZE_X = 23;
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int EMARCH_ENC_I17_IMM41c_INST_WORD_POS_X = 0;
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int EMARCH_ENC_I17_IMM41c_VAL_POS_X = 40;
+
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int EMARCH_ENC_I17_SIGN_INST_WORD_X = 3;
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int EMARCH_ENC_I17_SIGN_SIZE_X = 1;
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int EMARCH_ENC_I17_SIGN_INST_WORD_POS_X = 27;
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int EMARCH_ENC_I17_SIGN_VAL_POS_X = 63;
+
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int X3_OPCODE_INST_WORD_X = 3;
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int X3_OPCODE_SIZE_X = 4;
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int X3_OPCODE_INST_WORD_POS_X = 28;
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int X3_OPCODE_SIGN_VAL_POS_X = 0;
+
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int X3_I_INST_WORD_X = 3;
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int X3_I_SIZE_X = 1;
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int X3_I_INST_WORD_POS_X = 27;
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int X3_I_SIGN_VAL_POS_X = 59;
+
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int X3_D_WH_INST_WORD_X = 3;
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int X3_D_WH_SIZE_X = 3;
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int X3_D_WH_INST_WORD_POS_X = 24;
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int X3_D_WH_SIGN_VAL_POS_X = 0;
+
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int X3_IMM20_INST_WORD_X = 3;
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int X3_IMM20_SIZE_X = 20;
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int X3_IMM20_INST_WORD_POS_X = 4;
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int X3_IMM20_SIGN_VAL_POS_X = 0;
+
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int X3_IMM39_1_INST_WORD_X = 2;
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int X3_IMM39_1_SIZE_X = 23;
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int X3_IMM39_1_INST_WORD_POS_X = 0;
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int X3_IMM39_1_SIGN_VAL_POS_X = 36;
+
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int X3_IMM39_2_INST_WORD_X = 1;
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int X3_IMM39_2_SIZE_X = 16;
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int X3_IMM39_2_INST_WORD_POS_X = 16;
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int X3_IMM39_2_SIGN_VAL_POS_X = 20;
+
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int X3_P_INST_WORD_X = 3;
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int X3_P_SIZE_X = 4;
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int X3_P_INST_WORD_POS_X = 0;
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int X3_P_SIGN_VAL_POS_X = 0;
+
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int X3_TMPLT_INST_WORD_X = 0;
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int X3_TMPLT_SIZE_X = 4;
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int X3_TMPLT_INST_WORD_POS_X = 0;
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int X3_TMPLT_SIGN_VAL_POS_X = 0;
+
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int X3_BTYPE_QP_INST_WORD_X = 2;
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int X3_BTYPE_QP_SIZE_X = 9;
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int X3_BTYPE_QP_INST_WORD_POS_X = 23;
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int X3_BTYPE_QP_INST_VAL_POS_X = 0;
+
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int X3_EMPTY_INST_WORD_X = 1;
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int X3_EMPTY_SIZE_X = 2;
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int X3_EMPTY_INST_WORD_POS_X = 14;
+        /// <summary>Intel-IA64-Filler</summary>
+        public const int X3_EMPTY_INST_VAL_POS_X = 0;
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19775
         public const int RTL_UMS_VERSION = 0x0100;
     }

@@ -77,7 +77,7 @@ namespace THNETII.WinApi.Native.WinNT
         }
         public int Value;
         public short SectionNumber;
-        public short Type;
+        public IMAGE_SYM_TYPE Type;
         public byte StorageClass;
         public byte NumberOfAuxSymbols;
     }

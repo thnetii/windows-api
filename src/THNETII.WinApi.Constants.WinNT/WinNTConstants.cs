@@ -4944,6 +4944,109 @@ namespace THNETII.WinApi.Native.WinNT
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 16780
         public const int IMAGE_SIZEOF_SYMBOL = 18;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 16799
+        //
+        // Section values.
+        //
+        // Symbols have a section number of the section in which they are
+        // defined. Otherwise, section numbers have the following meanings:
+        //
+
+        /// <summary>Symbol is undefined or is common.</summary>
+        public const short IMAGE_SYM_UNDEFINED = 0;
+        /// <summary>Symbol is an absolute value.</summary>
+        public const short IMAGE_SYM_ABSOLUTE = -1;
+        /// <summary>Symbol is a special debug item.</summary>
+        public const short IMAGE_SYM_DEBUG = -2;
+        /// <summary>Values 0xFF00-0xFFFF are special</summary>
+        public const short IMAGE_SYM_SECTION_MAX = unchecked((short)0xFEFF);
+        public const int IMAGE_SYM_SECTION_MAX_EX = int.MaxValue;
+
+        //
+        // Type (fundamental) values.
+        //
+
+        /// <summary>no type.</summary>
+        public const short IMAGE_SYM_TYPE_NULL = 0x0000;
+        public const short IMAGE_SYM_TYPE_VOID = 0x0001;
+        /// <summary>type character.</summary>
+        public const short IMAGE_SYM_TYPE_CHAR = 0x0002;
+        /// <summary>type short integer.</summary>
+        public const short IMAGE_SYM_TYPE_SHORT = 0x0003;
+        public const short IMAGE_SYM_TYPE_INT = 0x0004;
+        public const short IMAGE_SYM_TYPE_LONG = 0x0005;
+        public const short IMAGE_SYM_TYPE_FLOAT = 0x0006;
+        public const short IMAGE_SYM_TYPE_DOUBLE = 0x0007;
+        public const short IMAGE_SYM_TYPE_STRUCT = 0x0008;
+        public const short IMAGE_SYM_TYPE_UNION = 0x0009;
+        /// <summary>enumeration.</summary>
+        public const short IMAGE_SYM_TYPE_ENUM = 0x000A;
+        /// <summary>member of enumeration.</summary>
+        public const short IMAGE_SYM_TYPE_MOE = 0x000B;
+        public const short IMAGE_SYM_TYPE_BYTE = 0x000C;
+        public const short IMAGE_SYM_TYPE_WORD = 0x000D;
+        public const short IMAGE_SYM_TYPE_UINT = 0x000E;
+        public const short IMAGE_SYM_TYPE_DWORD = 0x000F;
+        public const short IMAGE_SYM_TYPE_PCODE = unchecked((short)0x8000);
+        //
+        // Type (derived) values.
+        //
+
+        /// <summary>no derived type.</summary>
+        public const int IMAGE_SYM_DTYPE_NULL = 0;
+        /// <summary>pointer.</summary>
+        public const int IMAGE_SYM_DTYPE_POINTER = 1;
+        /// <summary>function.</summary>
+        public const int IMAGE_SYM_DTYPE_FUNCTION = 2;
+        /// <summary>array.</summary>
+        public const int IMAGE_SYM_DTYPE_ARRAY = 3;
+
+        //
+        // Storage classes.
+        //
+        public const byte IMAGE_SYM_CLASS_END_OF_FUNCTION = unchecked((byte)-1);
+        public const byte IMAGE_SYM_CLASS_NULL = 0x0000;
+        public const byte IMAGE_SYM_CLASS_AUTOMATIC = 0x0001;
+        public const byte IMAGE_SYM_CLASS_EXTERNAL = 0x0002;
+        public const byte IMAGE_SYM_CLASS_STATIC = 0x0003;
+        public const byte IMAGE_SYM_CLASS_REGISTER = 0x0004;
+        public const byte IMAGE_SYM_CLASS_EXTERNAL_DEF = 0x0005;
+        public const byte IMAGE_SYM_CLASS_LABEL = 0x0006;
+        public const byte IMAGE_SYM_CLASS_UNDEFINED_LABEL = 0x0007;
+        public const byte IMAGE_SYM_CLASS_MEMBER_OF_STRUCT = 0x0008;
+        public const byte IMAGE_SYM_CLASS_ARGUMENT = 0x0009;
+        public const byte IMAGE_SYM_CLASS_STRUCT_TAG = 0x000A;
+        public const byte IMAGE_SYM_CLASS_MEMBER_OF_UNION = 0x000B;
+        public const byte IMAGE_SYM_CLASS_UNION_TAG = 0x000C;
+        public const byte IMAGE_SYM_CLASS_TYPE_DEFINITION = 0x000D;
+        public const byte IMAGE_SYM_CLASS_UNDEFINED_STATIC = 0x000E;
+        public const byte IMAGE_SYM_CLASS_ENUM_TAG = 0x000F;
+        public const byte IMAGE_SYM_CLASS_MEMBER_OF_ENUM = 0x0010;
+        public const byte IMAGE_SYM_CLASS_REGISTER_PARAM = 0x0011;
+        public const byte IMAGE_SYM_CLASS_BIT_FIELD = 0x0012;
+
+        public const byte IMAGE_SYM_CLASS_FAR_EXTERNAL = 0x0044;
+
+        public const byte IMAGE_SYM_CLASS_BLOCK = 0x0064;
+        public const byte IMAGE_SYM_CLASS_FUNCTION = 0x0065;
+        public const byte IMAGE_SYM_CLASS_END_OF_STRUCT = 0x0066;
+        public const byte IMAGE_SYM_CLASS_FILE = 0x0067;
+        // new
+        public const byte IMAGE_SYM_CLASS_SECTION = 0x0068;
+        public const byte IMAGE_SYM_CLASS_WEAK_EXTERNAL = 0x0069;
+
+        public const byte IMAGE_SYM_CLASS_CLR_TOKEN = 0x006B;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 16878
+        // type packing constants
+
+        public const short N_BTMASK = 0x000F;
+        public const short N_TMASK = 0x0030;
+        public const short N_TMASK1 = 0x00C0;
+        public const short N_TMASK2 = 0x00F0;
+        public const int N_BTSHFT = 4;
+        public const int N_TSHIFT = 2;
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19775
         public const int RTL_UMS_VERSION = 0x0100;
     }

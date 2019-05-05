@@ -5734,6 +5734,9 @@ namespace THNETII.WinApi.Native.WinNT
         public const string IMAGE_ARCHIVE_LONGNAMES_MEMBER = "//              ";
         public const string IMAGE_ARCHIVE_HYBRIDMAP_MEMBER = "/<HYBRIDMAP>/   ";
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 17513
+        public const int IMAGE_SIZEOF_ARCHIVE_MEMBER_HDR = 60;
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19775
         public const int RTL_UMS_VERSION = 0x0100;
     }

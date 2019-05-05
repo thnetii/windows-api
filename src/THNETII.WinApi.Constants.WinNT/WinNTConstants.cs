@@ -5737,6 +5737,10 @@ namespace THNETII.WinApi.Native.WinNT
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 17513
         public const int IMAGE_SIZEOF_ARCHIVE_MEMBER_HDR = 60;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 17570
+        public const long IMAGE_ORDINAL_FLAG64 = unchecked((long)0x8000000000000000);
+        public const int IMAGE_ORDINAL_FLAG32 = unchecked((int)0x80000000);
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19775
         public const int RTL_UMS_VERSION = 0x0100;
     }

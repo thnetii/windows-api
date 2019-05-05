@@ -5692,6 +5692,48 @@ namespace THNETII.WinApi.Native.WinNT
         /// <summary>Intel-IA64-Filler</summary>
         public const int X3_EMPTY_INST_VAL_POS_X = 0;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 17461
+        //
+        // Based relocation types.
+        //
+
+        public const int IMAGE_REL_BASED_ABSOLUTE = 0;
+        public const int IMAGE_REL_BASED_HIGH = 1;
+        public const int IMAGE_REL_BASED_LOW = 2;
+        public const int IMAGE_REL_BASED_HIGHLOW = 3;
+        public const int IMAGE_REL_BASED_HIGHADJ = 4;
+        public const int IMAGE_REL_BASED_MACHINE_SPECIFIC_5 = 5;
+        public const int IMAGE_REL_BASED_RESERVED = 6;
+        public const int IMAGE_REL_BASED_MACHINE_SPECIFIC_7 = 7;
+        public const int IMAGE_REL_BASED_MACHINE_SPECIFIC_8 = 8;
+        public const int IMAGE_REL_BASED_MACHINE_SPECIFIC_9 = 9;
+        public const int IMAGE_REL_BASED_DIR64 = 10;
+
+        //
+        // Platform-specific based relocation types.
+        //
+
+        public const int IMAGE_REL_BASED_IA64_IMM64 = 9;
+
+        public const int IMAGE_REL_BASED_MIPS_JMPADDR = 5;
+        public const int IMAGE_REL_BASED_MIPS_JMPADDR16 = 9;
+
+        public const int IMAGE_REL_BASED_ARM_MOV32 = 5;
+        public const int IMAGE_REL_BASED_THUMB_MOV32 = 7;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 17490
+        //
+        // Archive format.
+        //
+
+        public const int IMAGE_ARCHIVE_START_SIZE = 8;
+        public const string IMAGE_ARCHIVE_START = "!<arch>\n";
+        public const string IMAGE_ARCHIVE_END = "`\n";
+        public const string IMAGE_ARCHIVE_PAD = "\n";
+        public const string IMAGE_ARCHIVE_LINKER_MEMBER = "/               ";
+        public const string IMAGE_ARCHIVE_LONGNAMES_MEMBER = "//              ";
+        public const string IMAGE_ARCHIVE_HYBRIDMAP_MEMBER = "/<HYBRIDMAP>/   ";
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19775
         public const int RTL_UMS_VERSION = 0x0100;
     }

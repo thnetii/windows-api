@@ -5822,6 +5822,13 @@ namespace THNETII.WinApi.Native.WinNT
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 18231
         public const int IMAGE_ENCLAVE_FLAG_PRIMARY_IMAGE = 0x00000001;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 18243
+        public const int IMAGE_ENCLAVE_IMPORT_MATCH_NONE = 0x00000000;
+        public const int IMAGE_ENCLAVE_IMPORT_MATCH_UNIQUE_ID = 0x00000001;
+        public const int IMAGE_ENCLAVE_IMPORT_MATCH_AUTHOR_ID = 0x00000002;
+        public const int IMAGE_ENCLAVE_IMPORT_MATCH_FAMILY_ID = 0x00000003;
+        public const int IMAGE_ENCLAVE_IMPORT_MATCH_IMAGE_ID = 0x00000004;
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19775
         public const int RTL_UMS_VERSION = 0x0100;
     }

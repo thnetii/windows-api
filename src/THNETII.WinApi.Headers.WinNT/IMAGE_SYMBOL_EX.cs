@@ -1,6 +1,7 @@
-﻿using System;
-using System.Runtime.InteropServices;
+﻿using System.Runtime.InteropServices;
 using System.Text;
+
+using THNETII.WinApi.Helpers;
 
 namespace THNETII.WinApi.Native.WinNT
 {
@@ -29,22 +30,12 @@ namespace THNETII.WinApi.Native.WinNT
             get
             {
                 fixed (byte* ptr = ShortNameField)
-                {
-                    Span<byte> span = new Span<byte>(ptr, 8);
-                    int len = span.IndexOf((byte)0);
-                    return Encoding.UTF8.GetString(ptr, len < 0 ? 8 : len);
-                }
+                    return FixedStringBuffer.ToString(ptr, 8, Encoding.UTF8);
             }
             set
             {
-                string s = value ?? string.Empty;
-                fixed (char* ch = s)
                 fixed (byte* ptr = ShortNameField)
-                {
-                    int len = Encoding.UTF8.GetBytes(ch, s.Length, ptr, 8);
-                    if (len < 8)
-                        ptr[len] = 0;
-                }
+                    FixedStringBuffer.ToBytes(value, ptr, 8, Encoding.UTF8);
             }
         }
         [FieldOffset(0)]

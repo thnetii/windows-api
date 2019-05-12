@@ -1,6 +1,6 @@
 ﻿using THNETII.InteropServices.Bitwise;
 
-namespace THNETII.WinApi
+namespace THNETII.WinApi.Helpers
 {
     public static class BitfieldExtensions
     {

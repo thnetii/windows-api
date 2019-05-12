@@ -3,6 +3,7 @@ using System.ComponentModel;
 using System.Runtime.InteropServices;
 
 using THNETII.InteropServices.Bitwise;
+using THNETII.WinApi.Helpers;
 
 namespace THNETII.WinApi.Native.WinNT
 {

@@ -2,7 +2,9 @@
 using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.InteropServices;
+
 using THNETII.InteropServices.Bitwise;
+using THNETII.WinApi.Helpers;
 
 using static THNETII.WinApi.Native.MinWinBase.MinWinBaseConstants;
 

@@ -1,6 +1,7 @@
 ﻿using System;
-using System.Diagnostics.CodeAnalysis;
 using System.Runtime.InteropServices;
+
+using THNETII.WinApi.Helpers;
 
 using static THNETII.WinApi.Native.WinNT.WinNTConstants;
 
@@ -46,36 +47,17 @@ namespace THNETII.WinApi.Native.WinNT
         /// <summary>
         /// Specifies a string used to identify the source of an access token. This is used to distinguish between such sources as Session Manager, LAN Manager, and RPC Server. A string, rather than a constant, is used to identify the source so users and developers can make extensions to the system, such as by adding other networks, that act as the source of access tokens.
         /// </summary>
-        [SuppressMessage("Usage", "PC001: API not supported on all platforms", Justification = "https://github.com/dotnet/platform-compat/issues/123")]
         public unsafe string SourceName
         {
             get
             {
                 fixed (byte* pSourceName = SourceNameField)
-                {
-                    return Marshal.PtrToStringAnsi(new IntPtr(pSourceName), TOKEN_SOURCE_LENGTH);
-                }
+                    return FixedStringBuffer.MarshalAnsiString(pSourceName, TOKEN_SOURCE_LENGTH);
             }
             set
             {
-                if (value is null)
-                {
-                    SourceNameBytes.Fill(0);
-                    return;
-                }
-                var pValue = Marshal.StringToCoTaskMemAnsi(value);
-                try
-                {
-                    var valueSpan = new Span<byte>(pValue.ToPointer(), TOKEN_SOURCE_LENGTH);
-                    int endIdx = valueSpan.IndexOf((byte)0);
-                    if (endIdx >= 0)
-                        valueSpan = valueSpan.Slice(start: 0, length: endIdx + 1);
-                    valueSpan.CopyTo(SourceNameBytes);
-                }
-                finally
-                {
-                    Marshal.FreeCoTaskMem(pValue);
-                }
+                fixed (byte* bytes = SourceNameField)
+                    FixedStringBuffer.MarshalAnsiBytes(value, bytes, TOKEN_SOURCE_LENGTH);
             }
         }
         #endregion

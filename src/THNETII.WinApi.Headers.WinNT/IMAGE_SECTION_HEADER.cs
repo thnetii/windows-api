@@ -2,6 +2,8 @@
 using System.Runtime.InteropServices;
 using System.Text;
 
+using THNETII.WinApi.Helpers;
+
 namespace THNETII.WinApi.Native.WinNT
 {
     using static WinNTConstants;
@@ -41,22 +43,12 @@ namespace THNETII.WinApi.Native.WinNT
             get
             {
                 fixed (byte* ptr = NameField)
-                {
-                    int idx = NameSpan.IndexOf((byte)0);
-                    return Encoding.UTF8.GetString(ptr, idx < 0 ? IMAGE_SIZEOF_SHORT_NAME : idx);
-                }
+                    return FixedStringBuffer.ToString(ptr, IMAGE_SIZEOF_SHORT_NAME, Encoding.UTF8);
             }
             set
             {
-                string v = value ?? string.Empty;
-                fixed (char* str = v)
                 fixed (byte* ptr = NameField)
-                {
-                    int cnt = Encoding.UTF8.GetBytes(str, v.Length,
-                        ptr, IMAGE_SIZEOF_SHORT_NAME);
-                    if (cnt < IMAGE_SIZEOF_SHORT_NAME)
-                        ptr[cnt] = 0;
-                }
+                    FixedStringBuffer.ToBytes(value, ptr, IMAGE_SIZEOF_SHORT_NAME, Encoding.UTF8);
             }
         }
         #endregion

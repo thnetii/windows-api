@@ -2,7 +2,9 @@
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Text;
+
 using THNETII.InteropServices.Bitwise;
+using THNETII.WinApi.Helpers;
 
 using static THNETII.WinApi.Native.WinNT.WinNTConstants;
 

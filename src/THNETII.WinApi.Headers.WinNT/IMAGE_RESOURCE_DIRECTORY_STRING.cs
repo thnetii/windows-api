@@ -2,6 +2,7 @@
 using System.Runtime.InteropServices;
 
 using THNETII.InteropServices.Memory;
+using THNETII.WinApi.Helpers;
 
 namespace THNETII.WinApi.Native.WinNT
 {
@@ -20,15 +21,6 @@ namespace THNETII.WinApi.Native.WinNT
         public short Length;
         internal byte NameStringField;
         public Span<byte> NameBytes => SpanOverRef.GetSpan(ref NameStringField, Length);
-        public unsafe string NameString
-        {
-            get
-            {
-                fixed (byte* pStr = &NameStringField)
-                {
-                    return Marshal.PtrToStringAnsi(new IntPtr(pStr), Length);
-                }
-            }
-        }
+        public string NameString => FixedStringBuffer.MarshalAnsiString(ref NameStringField, Length);
     }
 }

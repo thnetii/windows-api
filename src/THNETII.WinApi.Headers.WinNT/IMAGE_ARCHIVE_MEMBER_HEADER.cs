@@ -1,6 +1,7 @@
-﻿using System;
-using System.Runtime.InteropServices;
+﻿using System.Runtime.InteropServices;
 using System.Text;
+
+using THNETII.WinApi.Helpers;
 
 namespace THNETII.WinApi.Native.WinNT
 {
@@ -18,22 +19,12 @@ namespace THNETII.WinApi.Native.WinNT
             get
             {
                 fixed (byte* ptr = NameField)
-                {
-                    var span = new Span<byte>(ptr, 16);
-                    int len = span.IndexOf((byte)0);
-                    return Encoding.UTF8.GetString(ptr, len < 0 ? 16 : len);
-                }
+                    return FixedStringBuffer.ToString(ptr, 16, Encoding.UTF8);
             }
             set
             {
-                string str = value ?? string.Empty;
-                fixed (char* ch = str)
                 fixed (byte* ptr = NameField)
-                {
-                    int len = Encoding.UTF8.GetBytes(ch, str.Length, ptr, 16);
-                    if (len < 16)
-                        ptr[len] = 0;
-                }
+                    FixedStringBuffer.ToBytes(value, ptr, 16, Encoding.UTF8);
             }
         }
         #endregion
@@ -47,22 +38,12 @@ namespace THNETII.WinApi.Native.WinNT
             get
             {
                 fixed (byte* ptr = DateField)
-                {
-                    var span = new Span<byte>(ptr, 12);
-                    int len = span.IndexOf((byte)0);
-                    return Encoding.UTF8.GetString(ptr, len < 0 ? 12 : len);
-                }
+                    return FixedStringBuffer.ToString(ptr, 12, Encoding.UTF8);
             }
             set
             {
-                string str = value ?? string.Empty;
-                fixed (char* ch = str)
                 fixed (byte* ptr = DateField)
-                {
-                    int len = Encoding.UTF8.GetBytes(ch, str.Length, ptr, 12);
-                    if (len < 12)
-                        ptr[len] = 0;
-                }
+                    FixedStringBuffer.ToBytes(value, ptr, 12, Encoding.UTF8);
             }
         }
         #endregion
@@ -76,22 +57,12 @@ namespace THNETII.WinApi.Native.WinNT
             get
             {
                 fixed (byte* ptr = UserIDField)
-                {
-                    var span = new Span<byte>(ptr, 6);
-                    int len = span.IndexOf((byte)0);
-                    return Encoding.UTF8.GetString(ptr, len < 0 ? 6 : len);
-                }
+                    return FixedStringBuffer.ToString(ptr, 6, Encoding.UTF8);
             }
             set
             {
-                string str = value ?? string.Empty;
-                fixed (char* ch = str)
                 fixed (byte* ptr = UserIDField)
-                {
-                    int len = Encoding.UTF8.GetBytes(ch, str.Length, ptr, 6);
-                    if (len < 6)
-                        ptr[len] = 0;
-                }
+                    FixedStringBuffer.ToBytes(value, ptr, 6, Encoding.UTF8);
             }
         }
         #endregion
@@ -105,22 +76,12 @@ namespace THNETII.WinApi.Native.WinNT
             get
             {
                 fixed (byte* ptr = GroupIDField)
-                {
-                    var span = new Span<byte>(ptr, 6);
-                    int len = span.IndexOf((byte)0);
-                    return Encoding.UTF8.GetString(ptr, len < 0 ? 6 : len);
-                }
+                    return FixedStringBuffer.ToString(ptr, 6, Encoding.UTF8);
             }
             set
             {
-                string str = value ?? string.Empty;
-                fixed (char* ch = str)
                 fixed (byte* ptr = GroupIDField)
-                {
-                    int len = Encoding.UTF8.GetBytes(ch, str.Length, ptr, 6);
-                    if (len < 6)
-                        ptr[len] = 0;
-                }
+                    FixedStringBuffer.ToBytes(value, ptr, 6, Encoding.UTF8);
             }
         }
         #endregion
@@ -134,22 +95,12 @@ namespace THNETII.WinApi.Native.WinNT
             get
             {
                 fixed (byte* ptr = ModeField)
-                {
-                    var span = new Span<byte>(ptr, 8);
-                    int len = span.IndexOf((byte)0);
-                    return Encoding.UTF8.GetString(ptr, len < 0 ? 8 : len);
-                }
+                    return FixedStringBuffer.ToString(ptr, 8, Encoding.UTF8);
             }
             set
             {
-                string str = value ?? string.Empty;
-                fixed (char* ch = str)
                 fixed (byte* ptr = ModeField)
-                {
-                    int len = Encoding.UTF8.GetBytes(ch, str.Length, ptr, 8);
-                    if (len < 8)
-                        ptr[len] = 0;
-                }
+                    FixedStringBuffer.ToBytes(value, ptr, 8, Encoding.UTF8);
             }
         }
         #endregion
@@ -163,22 +114,12 @@ namespace THNETII.WinApi.Native.WinNT
             get
             {
                 fixed (byte* ptr = SizeField)
-                {
-                    var span = new Span<byte>(ptr, 10);
-                    int len = span.IndexOf((byte)0);
-                    return Encoding.UTF8.GetString(ptr, len < 0 ? 10 : len);
-                }
+                    return FixedStringBuffer.ToString(ptr, 10, Encoding.UTF8);
             }
             set
             {
-                string str = value ?? string.Empty;
-                fixed (char* ch = str)
                 fixed (byte* ptr = SizeField)
-                {
-                    int len = Encoding.UTF8.GetBytes(ch, str.Length, ptr, 10);
-                    if (len < 10)
-                        ptr[len] = 0;
-                }
+                    FixedStringBuffer.ToBytes(value, ptr, 10, Encoding.UTF8);
             }
         }
         #endregion
@@ -192,22 +133,12 @@ namespace THNETII.WinApi.Native.WinNT
             get
             {
                 fixed (byte* ptr = EndHeaderField)
-                {
-                    var span = new Span<byte>(ptr, 2);
-                    int len = span.IndexOf((byte)0);
-                    return Encoding.UTF8.GetString(ptr, len < 0 ? 2 : len);
-                }
+                    return FixedStringBuffer.ToString(ptr, 2, Encoding.UTF8);
             }
             set
             {
-                string str = value ?? string.Empty;
-                fixed (char* ch = str)
                 fixed (byte* ptr = EndHeaderField)
-                {
-                    int len = Encoding.UTF8.GetBytes(ch, str.Length, ptr, 2);
-                    if (len < 2)
-                        ptr[len] = 0;
-                }
+                    FixedStringBuffer.ToBytes(value, ptr, 2, Encoding.UTF8);
             }
         }
         #endregion

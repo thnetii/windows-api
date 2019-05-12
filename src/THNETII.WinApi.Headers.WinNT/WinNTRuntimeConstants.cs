@@ -1885,5 +1885,8 @@ namespace THNETII.WinApi.Native.WinNT
             ? BitConverter.GetBytes(WinNTConstants.IMAGE_NT_SIGNATURE)
             : BitConverter.GetBytes(WinNTConstants.IMAGE_NT_SIGNATURE).Reverse().ToArray()
             );
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 18227
+        public static readonly int IMAGE_ENCLAVE_MINIMUM_CONFIG_SIZE = Marshal.OffsetOf<IMAGE_ENCLAVE_CONFIG>(nameof(IMAGE_ENCLAVE_CONFIG.EnclaveFlags)).ToInt32();
     }
 }

@@ -5812,6 +5812,16 @@ namespace THNETII.WinApi.Native.WinNT
         /// <summary>The containing GFID entry is export suppressed</summary>
         public const int IMAGE_GUARD_FLAG_EXPORT_SUPPRESSED = 0x02;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 18184
+        public const int IMAGE_ENCLAVE_LONG_ID_LENGTH = 32;
+        public const int IMAGE_ENCLAVE_SHORT_ID_LENGTH = 16;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 18229
+        public const int IMAGE_ENCLAVE_POLICY_DEBUGGABLE = 0x00000001;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 18231
+        public const int IMAGE_ENCLAVE_FLAG_PRIMARY_IMAGE = 0x00000001;
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19775
         public const int RTL_UMS_VERSION = 0x0100;
     }

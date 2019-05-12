@@ -5855,7 +5855,10 @@ namespace THNETII.WinApi.Native.WinNT
         /// old checksum didn't match.
         /// </summary>
         public const short IMAGE_SEPARATE_DEBUG_MISMATCH = unchecked((short)0x8000);
-        
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 18442
+        public const short IMPORT_OBJECT_HDR_SIG2 = unchecked((short)0xffff);
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19775
         public const int RTL_UMS_VERSION = 0x0100;
     }

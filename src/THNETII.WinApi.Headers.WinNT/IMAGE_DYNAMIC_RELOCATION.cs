@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Runtime.InteropServices;
+using THNETII.WinApi.Helpers;
 
 namespace THNETII.WinApi.Native.WinNT
 {
@@ -9,17 +10,8 @@ namespace THNETII.WinApi.Native.WinNT
     {
         public IntPtr Symbol;
         public int BaseRelocSize;
-        public unsafe Span<IMAGE_BASE_RELOCATION> BaseRelocations
-        {
-            get
-            {
-                fixed (IMAGE_DYNAMIC_RELOCATION* ptr = &this)
-                {
-                    void* pSpan = ptr + 1;
-                    return new Span<IMAGE_BASE_RELOCATION>(pSpan, BaseRelocSize);
-                }
-            }
-        }
+        public Span<IMAGE_BASE_RELOCATION> BaseRelocations =>
+            SpanAfterStruct.GetSpan<IMAGE_DYNAMIC_RELOCATION, IMAGE_BASE_RELOCATION>(ref this, BaseRelocSize);
     }
 
     // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 17827
@@ -28,17 +20,8 @@ namespace THNETII.WinApi.Native.WinNT
     {
         public int Symbol;
         public int BaseRelocSize;
-        public unsafe Span<IMAGE_BASE_RELOCATION> BaseRelocations
-        {
-            get
-            {
-                fixed (IMAGE_DYNAMIC_RELOCATION32* ptr = &this)
-                {
-                    void* pSpan = ptr + 1;
-                    return new Span<IMAGE_BASE_RELOCATION>(pSpan, BaseRelocSize);
-                }
-            }
-        }
+        public Span<IMAGE_BASE_RELOCATION> BaseRelocations =>
+            SpanAfterStruct.GetSpan<IMAGE_DYNAMIC_RELOCATION32, IMAGE_BASE_RELOCATION>(ref this, BaseRelocSize);
     }
 
     // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 17833
@@ -47,16 +30,7 @@ namespace THNETII.WinApi.Native.WinNT
     {
         public long Symbol;
         public int BaseRelocSize;
-        public unsafe Span<IMAGE_BASE_RELOCATION> BaseRelocations
-        {
-            get
-            {
-                fixed (IMAGE_DYNAMIC_RELOCATION64* ptr = &this)
-                {
-                    void* pSpan = ptr + 1;
-                    return new Span<IMAGE_BASE_RELOCATION>(pSpan, BaseRelocSize);
-                }
-            }
-        }
+        public Span<IMAGE_BASE_RELOCATION> BaseRelocations =>
+            SpanAfterStruct.GetSpan<IMAGE_DYNAMIC_RELOCATION64, IMAGE_BASE_RELOCATION>(ref this, BaseRelocSize);
     }
 }

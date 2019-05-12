@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Runtime.InteropServices;
+using THNETII.WinApi.Helpers;
 
 namespace THNETII.WinApi.Native.WinNT
 {
@@ -12,16 +13,7 @@ namespace THNETII.WinApi.Native.WinNT
     {
         public int Version;
         public int Size;
-        public unsafe Span<IMAGE_DYNAMIC_RELOCATION> DynamicRelocations
-        {
-            get
-            {
-                fixed (IMAGE_DYNAMIC_RELOCATION_TABLE* ptr = &this)
-                {
-                    void* pSpan = ptr + 1;
-                    return new Span<IMAGE_DYNAMIC_RELOCATION>(pSpan, Size);
-                }
-            }
-        }
+        public Span<IMAGE_DYNAMIC_RELOCATION> DynamicRelocations =>
+            SpanAfterStruct.GetSpan<IMAGE_DYNAMIC_RELOCATION_TABLE, IMAGE_DYNAMIC_RELOCATION>(ref this, Size);
     }
 }

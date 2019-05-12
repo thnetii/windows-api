@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Runtime.InteropServices;
+using THNETII.WinApi.Helpers;
 
 namespace THNETII.WinApi.Native.WinNT
 {
@@ -14,16 +15,6 @@ namespace THNETII.WinApi.Native.WinNT
         public int Flags;
         // ...     variable length header fields
         // BYTE    FixupInfo[FixupInfoSize]
-        public unsafe Span<byte> FixupInfo
-        {
-            get
-            {
-                fixed (IMAGE_DYNAMIC_RELOCATION_V2* ptr = &this)
-                {
-                    void* pSpan = ptr + 1;
-                    return new Span<byte>(pSpan, FixupInfoSize);
-                }
-            }
-        }
+        public Span<byte> FixupInfo => SpanAfterStruct.GetSpan<IMAGE_DYNAMIC_RELOCATION_V2, byte>(ref this, FixupInfoSize);
     }
 }

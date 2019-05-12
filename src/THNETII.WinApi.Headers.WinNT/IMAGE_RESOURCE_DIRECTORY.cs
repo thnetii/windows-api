@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 
+using THNETII.WinApi.Helpers;
+
 namespace THNETII.WinApi.Native.WinNT
 {
     // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 17716
@@ -36,16 +38,7 @@ namespace THNETII.WinApi.Native.WinNT
         }
         public short NumberOfNamedEntries;
         public short NumberOfIdEntries;
-        public unsafe Span<IMAGE_RESOURCE_DIRECTORY_ENTRY> DirectoryEntries
-        {
-            get
-            {
-                fixed (IMAGE_RESOURCE_DIRECTORY* ptr = &this)
-                {
-                    void* pSpan = ptr + 1;
-                    return new Span<IMAGE_RESOURCE_DIRECTORY_ENTRY>(pSpan, NumberOfNamedEntries + NumberOfIdEntries);
-                }
-            }
-        }
+        public Span<IMAGE_RESOURCE_DIRECTORY_ENTRY> DirectoryEntries =>
+            SpanAfterStruct.GetSpan<IMAGE_RESOURCE_DIRECTORY, IMAGE_RESOURCE_DIRECTORY_ENTRY>(ref this, NumberOfNamedEntries + NumberOfIdEntries);
     }
 }

@@ -63,23 +63,23 @@ namespace THNETII.WinApi.Native.WinNT
         public byte AllFlags;
         public bool Parked
         {
-            get => bfParked.ReadMasked(AllFlags) != 0;
-            set => bfParked.WriteMasked(ref AllFlags, (byte)(value ? ~0U : 0U));
+            get => bfParked.ReadBool(AllFlags);
+            set => bfParked.WriteBool(ref AllFlags, value);
         }
         public bool Allocated
         {
-            get => bfAllocated.ReadMasked(AllFlags) != 0;
-            set => bfAllocated.WriteMasked(ref AllFlags, (byte)(value ? ~0U : 0U));
+            get => bfAllocated.ReadBool(AllFlags);
+            set => bfAllocated.WriteBool(ref AllFlags, value);
         }
         public bool AllocatedToTargetProcess
         {
-            get => bfAllocatedToTargetProcess.ReadMasked(AllFlags) != 0;
-            set => bfAllocatedToTargetProcess.WriteMasked(ref AllFlags, (byte)(value ? ~0U : 0U));
+            get => bfAllocatedToTargetProcess.ReadBool(AllFlags);
+            set => bfAllocatedToTargetProcess.WriteBool(ref AllFlags, value);
         }
         public bool RealTime
         {
-            get => bfRealTime.ReadMasked(AllFlags) != 0;
-            set => bfRealTime.WriteMasked(ref AllFlags, (byte)(value ? ~0U : 0U));
+            get => bfRealTime.ReadBool(AllFlags);
+            set => bfRealTime.WriteBool(ref AllFlags, value);
         }
         [EditorBrowsable(EditorBrowsableState.Never)]
         internal byte ReservedFlags

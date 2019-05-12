@@ -29,14 +29,14 @@ namespace THNETII.WinApi.Native.WinNT
 
         public bool Enable
         {
-            get => bfEnable.ReadMasked(dwFlags) != 0;
-            set => bfEnable.WriteMasked(ref dwFlags, value ? ~0U : 0U);
+            get => bfEnable.ReadBool(dwFlags);
+            set => bfEnable.WriteBool(ref dwFlags, value);
         }
 
         public bool DisableAtlThunkEmulation
         {
-            get => bfDisableAtlThunkEmulation.ReadMasked(dwFlags) != 0;
-            set => bfDisableAtlThunkEmulation.WriteMasked(ref dwFlags, value ? ~0U : 0U);
+            get => bfDisableAtlThunkEmulation.ReadBool(dwFlags);
+            set => bfDisableAtlThunkEmulation.WriteBool(ref dwFlags, value);
         }
 
         public int ReservedFlags

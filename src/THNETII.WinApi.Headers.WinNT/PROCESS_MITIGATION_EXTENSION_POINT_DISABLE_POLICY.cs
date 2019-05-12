@@ -27,8 +27,8 @@ namespace THNETII.WinApi.Native.WinNT
 
         public bool DisableExtensionPoints
         {
-            get => bfDisableExtensionPoints.ReadMasked(dwFlags) != 0;
-            set => bfDisableExtensionPoints.WriteMasked(ref dwFlags, value ? ~0U : 0U);
+            get => bfDisableExtensionPoints.ReadBool(dwFlags);
+            set => bfDisableExtensionPoints.WriteBool(ref dwFlags, value);
         }
 
         public int ReservedFlags

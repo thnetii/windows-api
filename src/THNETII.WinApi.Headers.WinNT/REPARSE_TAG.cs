@@ -41,12 +41,12 @@ namespace THNETII.WinApi.Native.WinNT
         /// <para>All ISVs must use a tag with this bit set to <see langword="false"/>.</para>
         /// <note>If a Microsoft tag is used by non-Microsoft software, the behavior is not defined.</note>
         /// </summary>
-        public bool IsMicrosoftTag => MBitfield.ReadMasked(value) != 0;
+        public bool IsMicrosoftTag => MBitfield.ReadBool(value);
 
         /// <summary>
         /// Reserved. Must be <see langword="false"/> for non-Microsoft tags.
         /// </summary>
-        public bool IsReservedTag => RBitfield.ReadMasked(value) != 0;
+        public bool IsReservedTag => RBitfield.ReadBool(value);
 
         /// <summary>
         /// Whether the tag is a name surrogate.
@@ -55,7 +55,7 @@ namespace THNETII.WinApi.Native.WinNT
         /// entity in the system.
         /// </para>
         /// </summary>
-        public bool IsNameSurrogate => NBitfield.ReadMasked(value) != 0;
+        public bool IsNameSurrogate => NBitfield.ReadBool(value);
 
         /// <summary>
         /// Whether the tag is a directory.
@@ -65,7 +65,7 @@ namespace THNETII.WinApi.Native.WinNT
         /// on a non-directory file. Not compatible with the name surrogate bit.
         /// </para>
         /// </summary>
-        public bool IsDirectory => DBitfield.ReadMasked(value) != 0;
+        public bool IsDirectory => DBitfield.ReadBool(value);
 
         public int ReservedBits => (int)ReservedBitfield.ReadMasked(value);
 

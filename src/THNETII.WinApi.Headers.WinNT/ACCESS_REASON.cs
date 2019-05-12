@@ -32,8 +32,8 @@ namespace THNETII.WinApi.Native.WinNT
 
         public bool Staging
         {
-            get => StagingBitfield.ReadMasked(field) != 0;
-            set => StagingBitfield.WriteMasked(ref field, value ? ~0 : 0);
+            get => StagingBitfield.ReadBool(field);
+            set => StagingBitfield.WriteBool(ref field, value);
         }
 
         public int ExtendedData

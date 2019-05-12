@@ -21,9 +21,9 @@ namespace THNETII.WinApi.Native.MinWinBase
 
         public int LockCount => lockcount.Read(value);
 
-        public bool IsDiscarded => discarded.ReadMasked(value) != 0;
+        public bool IsDiscarded => discarded.ReadBool(value);
 
-        public bool IsInvalid => isinvalid.ReadMasked(value) != 0;
+        public bool IsInvalid => isinvalid.ReadBool(value);
 
         public override bool Equals(object obj)
         {

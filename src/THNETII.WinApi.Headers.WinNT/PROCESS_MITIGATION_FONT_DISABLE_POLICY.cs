@@ -34,8 +34,8 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public bool DisableNonSystemFonts
         {
-            get => bfDisableNonSystemFonts.ReadMasked(dwFlags) != 0;
-            set => bfDisableNonSystemFonts.WriteMasked(ref dwFlags, value ? ~0U : 0U);
+            get => bfDisableNonSystemFonts.ReadBool(dwFlags);
+            set => bfDisableNonSystemFonts.WriteBool(ref dwFlags, value);
         }
 
         /// <summary>
@@ -44,8 +44,8 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public bool AuditNonSystemFontLoading
         {
-            get => bfAuditNonSystemFontLoading.ReadMasked(dwFlags) != 0;
-            set => bfAuditNonSystemFontLoading.WriteMasked(ref dwFlags, value ? ~0U : 0U);
+            get => bfAuditNonSystemFontLoading.ReadBool(dwFlags);
+            set => bfAuditNonSystemFontLoading.WriteBool(ref dwFlags, value);
         }
 
         public int ReservedFlags

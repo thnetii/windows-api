@@ -37,8 +37,8 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public bool NoRemoteImages
         {
-            get => bfNoRemoteImages.ReadMasked(dwFlags) != 0;
-            set => bfNoRemoteImages.WriteMasked(ref dwFlags, value ? ~0U : 0U);
+            get => bfNoRemoteImages.ReadBool(dwFlags);
+            set => bfNoRemoteImages.WriteBool(ref dwFlags, value);
         }
 
         /// <summary>
@@ -47,8 +47,8 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public bool NoLowMandatoryLabelImages
         {
-            get => bfNoLowMandatoryLabelImages.ReadMasked(dwFlags) != 0;
-            set => bfNoLowMandatoryLabelImages.WriteMasked(ref dwFlags, value ? ~0U : 0U);
+            get => bfNoLowMandatoryLabelImages.ReadBool(dwFlags);
+            set => bfNoLowMandatoryLabelImages.WriteBool(ref dwFlags, value);
         }
 
         /// <summary>
@@ -58,20 +58,20 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public bool PreferSystem32Images
         {
-            get => bfPreferSystem32Images.ReadMasked(dwFlags) != 0;
-            set => bfPreferSystem32Images.WriteMasked(ref dwFlags, value ? ~0U : 0U);
+            get => bfPreferSystem32Images.ReadBool(dwFlags);
+            set => bfPreferSystem32Images.WriteBool(ref dwFlags, value);
         }
 
         public bool AuditNoRemoteImages
         {
-            get => bfAuditNoRemoteImages.ReadMasked(dwFlags) != 0;
-            set => bfAuditNoRemoteImages.WriteMasked(ref dwFlags, value ? ~0U : 0U);
+            get => bfAuditNoRemoteImages.ReadBool(dwFlags);
+            set => bfAuditNoRemoteImages.WriteBool(ref dwFlags, value);
         }
 
         public bool AuditNoLowMandatoryLabelImages
         {
-            get => bfAuditNoLowMandatoryLabelImages.ReadMasked(dwFlags) != 0;
-            set => bfAuditNoLowMandatoryLabelImages.WriteMasked(ref dwFlags, value ? ~0U : 0U);
+            get => bfAuditNoLowMandatoryLabelImages.ReadBool(dwFlags);
+            set => bfAuditNoLowMandatoryLabelImages.WriteBool(ref dwFlags, value);
         }
 
         public int ReservedFlags

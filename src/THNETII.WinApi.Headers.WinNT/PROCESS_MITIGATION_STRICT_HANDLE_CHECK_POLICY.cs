@@ -43,14 +43,14 @@ namespace THNETII.WinApi.Native.WinNT
 
         public bool RaiseExceptionOnInvalidHandleReference
         {
-            get => bfRaiseExceptionOnInvalidHandleReference.ReadMasked(dwFlags) != 0;
-            set => bfRaiseExceptionOnInvalidHandleReference.WriteMasked(ref dwFlags, value ? ~0U : 0U);
+            get => bfRaiseExceptionOnInvalidHandleReference.ReadBool(dwFlags);
+            set => bfRaiseExceptionOnInvalidHandleReference.WriteBool(ref dwFlags, value);
         }
 
         public bool HandleExceptionsPermanentlyEnabled
         {
-            get => bfHandleExceptionsPermanentlyEnabled.ReadMasked(dwFlags) != 0;
-            set => bfHandleExceptionsPermanentlyEnabled.WriteMasked(ref dwFlags, value ? ~0U : 0U);
+            get => bfHandleExceptionsPermanentlyEnabled.ReadBool(dwFlags);
+            set => bfHandleExceptionsPermanentlyEnabled.WriteBool(ref dwFlags, value);
         }
 
         public int ReservedFlags

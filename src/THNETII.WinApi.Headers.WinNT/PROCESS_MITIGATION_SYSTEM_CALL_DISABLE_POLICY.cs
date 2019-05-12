@@ -28,14 +28,14 @@ namespace THNETII.WinApi.Native.WinNT
 
         public bool DisallowWin32kSystemCalls
         {
-            get => bfDisallowWin32kSystemCalls.ReadMasked(dwFlags) != 0;
-            set => bfDisallowWin32kSystemCalls.WriteMasked(ref dwFlags, value ? ~0U : 0U);
+            get => bfDisallowWin32kSystemCalls.ReadBool(dwFlags);
+            set => bfDisallowWin32kSystemCalls.WriteBool(ref dwFlags, value);
         }
 
         public bool AuditDisallowWin32kSystemCalls
         {
-            get => bfAuditDisallowWin32kSystemCalls.ReadMasked(dwFlags) != 0;
-            set => bfAuditDisallowWin32kSystemCalls.WriteMasked(ref dwFlags, value ? ~0U : 0U);
+            get => bfAuditDisallowWin32kSystemCalls.ReadBool(dwFlags);
+            set => bfAuditDisallowWin32kSystemCalls.WriteBool(ref dwFlags, value);
         }
 
         public int ReservedFlags

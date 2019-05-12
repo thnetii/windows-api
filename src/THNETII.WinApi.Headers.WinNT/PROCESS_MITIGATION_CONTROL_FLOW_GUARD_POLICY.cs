@@ -34,8 +34,8 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public bool EnableControlFlowGuard
         {
-            get => bfEnableControlFlowGuard.ReadMasked(dwFlags) != 0;
-            set => bfEnableControlFlowGuard.WriteMasked(ref dwFlags, value ? ~0U : 0U);
+            get => bfEnableControlFlowGuard.ReadBool(dwFlags);
+            set => bfEnableControlFlowGuard.WriteBool(ref dwFlags, value);
         }
 
         /// <summary>
@@ -45,8 +45,8 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public bool EnableExportSuppression
         {
-            get => bfEnableExportSuppression.ReadMasked(dwFlags) != 0;
-            set => bfEnableExportSuppression.WriteMasked(ref dwFlags, value ? ~0U : 0U);
+            get => bfEnableExportSuppression.ReadBool(dwFlags);
+            set => bfEnableExportSuppression.WriteBool(ref dwFlags, value);
         }
 
         /// <summary>
@@ -56,8 +56,8 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public bool AllowRemoteDowngrade
         {
-            get => bfStrictMode.ReadMasked(dwFlags) != 0;
-            set => bfStrictMode.WriteMasked(ref dwFlags, value ? ~0U : 0U);
+            get => bfStrictMode.ReadBool(dwFlags);
+            set => bfStrictMode.WriteBool(ref dwFlags, value);
         }
 
         public int ReservedFlags

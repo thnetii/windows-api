@@ -23,20 +23,20 @@ namespace THNETII.WinApi.Native.WinNT
 
         public bool NoChildProcessCreation
         {
-            get => bfNoChildProcessCreation.ReadMasked(dwFlags) != 0;
-            set => bfNoChildProcessCreation.WriteMasked(ref dwFlags, value ? ~0U : 0U);
+            get => bfNoChildProcessCreation.ReadBool(dwFlags);
+            set => bfNoChildProcessCreation.WriteBool(ref dwFlags, value);
         }
 
         public bool AuditNoChildProcessCreation
         {
-            get => bfAuditNoChildProcessCreation.ReadMasked(dwFlags) != 0;
-            set => bfAuditNoChildProcessCreation.WriteMasked(ref dwFlags, value ? ~0U : 0U);
+            get => bfAuditNoChildProcessCreation.ReadBool(dwFlags);
+            set => bfAuditNoChildProcessCreation.WriteBool(ref dwFlags, value);
         }
 
         public bool AllowSecureProcessCreation
         {
-            get => bfAllowSecureProcessCreation.ReadMasked(dwFlags) != 0;
-            set => bfAllowSecureProcessCreation.WriteMasked(ref dwFlags, value ? ~0U : 0U);
+            get => bfAllowSecureProcessCreation.ReadBool(dwFlags);
+            set => bfAllowSecureProcessCreation.WriteBool(ref dwFlags, value);
         }
 
         public int ReservedFlags

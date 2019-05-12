@@ -33,8 +33,8 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public bool ProhibitDynamicCode
         {
-            get => bfProhibitDynamicCode.ReadMasked(dwFlags) != 0;
-            set => bfProhibitDynamicCode.WriteMasked(ref dwFlags, value ? ~0U : 0U);
+            get => bfProhibitDynamicCode.ReadBool(dwFlags);
+            set => bfProhibitDynamicCode.WriteBool(ref dwFlags, value);
         }
 
         /// <summary>
@@ -47,8 +47,8 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public bool AllowThreadOptOut
         {
-            get => bfAllowThreadOptOut.ReadMasked(dwFlags) != 0;
-            set => bfAllowThreadOptOut.WriteMasked(ref dwFlags, value ? ~0U : 0U);
+            get => bfAllowThreadOptOut.ReadBool(dwFlags);
+            set => bfAllowThreadOptOut.WriteBool(ref dwFlags, value);
         }
 
         /// <summary>
@@ -57,14 +57,14 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public bool AllowRemoteDowngrade
         {
-            get => bfAllowRemoteDowngrade.ReadMasked(dwFlags) != 0;
-            set => bfAllowRemoteDowngrade.WriteMasked(ref dwFlags, value ? ~0U : 0U);
+            get => bfAllowRemoteDowngrade.ReadBool(dwFlags);
+            set => bfAllowRemoteDowngrade.WriteBool(ref dwFlags, value);
         }
 
         public bool AuditProhibitDynamicCode
         {
-            get => bfAuditProhibitDynamicCode.ReadMasked(dwFlags) != 0;
-            set => bfAuditProhibitDynamicCode.WriteMasked(ref dwFlags, value ? ~0U : 0U);
+            get => bfAuditProhibitDynamicCode.ReadBool(dwFlags);
+            set => bfAuditProhibitDynamicCode.WriteBool(ref dwFlags, value);
         }
 
         public int ReservedFlags

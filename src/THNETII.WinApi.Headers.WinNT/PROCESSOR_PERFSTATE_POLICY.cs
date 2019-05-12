@@ -23,8 +23,8 @@ namespace THNETII.WinApi.Native.WinNT
         private static readonly Bitfield8 ReservedBitfield = Bitfield8.RemainingBits(5);
         public bool NoDomainAccounting
         {
-            get => NoDomainAccountingBitfield.ReadMasked(Flags) != 0;
-            set => NoDomainAccountingBitfield.WriteMasked(ref Flags, (byte)(value ? ~0U : 0U));
+            get => NoDomainAccountingBitfield.ReadBool(Flags);
+            set => NoDomainAccountingBitfield.WriteBool(ref Flags, value);
         }
         public byte IncreasePolicy
         {

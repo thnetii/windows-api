@@ -38,74 +38,74 @@ namespace THNETII.WinApi.Native.WinNT
 
         public bool EnableExportAddressFilter
         {
-            get => bfEnableExportAddressFilter.ReadMasked(dwFlags) != 0;
-            set => bfEnableExportAddressFilter.WriteMasked(ref dwFlags, value ? ~0U : 0U);
+            get => bfEnableExportAddressFilter.ReadBool(dwFlags);
+            set => bfEnableExportAddressFilter.WriteBool(ref dwFlags, value);
         }
 
         public bool AuditExportAddressFilter
         {
-            get => bfAuditExportAddressFilter.ReadMasked(dwFlags) != 0;
-            set => bfAuditExportAddressFilter.WriteMasked(ref dwFlags, value ? ~0U : 0U);
+            get => bfAuditExportAddressFilter.ReadBool(dwFlags);
+            set => bfAuditExportAddressFilter.WriteBool(ref dwFlags, value);
         }
 
         public bool EnableExportAddressFilterPlus
         {
-            get => bfEnableExportAddressFilterPlus.ReadMasked(dwFlags) != 0;
-            set => bfEnableExportAddressFilterPlus.WriteMasked(ref dwFlags, value ? ~0U : 0U);
+            get => bfEnableExportAddressFilterPlus.ReadBool(dwFlags);
+            set => bfEnableExportAddressFilterPlus.WriteBool(ref dwFlags, value);
         }
 
         public bool AuditExportAddressFilterPlus
         {
-            get => bfAuditExportAddressFilterPlus.ReadMasked(dwFlags) != 0;
-            set => bfAuditExportAddressFilterPlus.WriteMasked(ref dwFlags, value ? ~0U : 0U);
+            get => bfAuditExportAddressFilterPlus.ReadBool(dwFlags);
+            set => bfAuditExportAddressFilterPlus.WriteBool(ref dwFlags, value);
         }
 
         public bool EnableImportAddressFilter
         {
-            get => bfEnableImportAddressFilter.ReadMasked(dwFlags) != 0;
-            set => bfEnableImportAddressFilter.WriteMasked(ref dwFlags, value ? ~0U : 0U);
+            get => bfEnableImportAddressFilter.ReadBool(dwFlags);
+            set => bfEnableImportAddressFilter.WriteBool(ref dwFlags, value);
         }
 
         public bool AuditImportAddressFilter
         {
-            get => bfAuditImportAddressFilter.ReadMasked(dwFlags) != 0;
-            set => bfAuditImportAddressFilter.WriteMasked(ref dwFlags, value ? ~0U : 0U);
+            get => bfAuditImportAddressFilter.ReadBool(dwFlags);
+            set => bfAuditImportAddressFilter.WriteBool(ref dwFlags, value);
         }
 
         public bool EnableRopStackPivot
         {
-            get => bfEnableRopStackPivot.ReadMasked(dwFlags) != 0;
-            set => bfEnableRopStackPivot.WriteMasked(ref dwFlags, value ? ~0U : 0U);
+            get => bfEnableRopStackPivot.ReadBool(dwFlags);
+            set => bfEnableRopStackPivot.WriteBool(ref dwFlags, value);
         }
 
         public bool AuditRopStackPivot
         {
-            get => bfAuditRopStackPivot.ReadMasked(dwFlags) != 0;
-            set => bfAuditRopStackPivot.WriteMasked(ref dwFlags, value ? ~0U : 0U);
+            get => bfAuditRopStackPivot.ReadBool(dwFlags);
+            set => bfAuditRopStackPivot.WriteBool(ref dwFlags, value);
         }
 
         public bool EnableRopCallerCheck
         {
-            get => bfEnableRopCallerCheck.ReadMasked(dwFlags) != 0;
-            set => bfEnableRopCallerCheck.WriteMasked(ref dwFlags, value ? ~0U : 0U);
+            get => bfEnableRopCallerCheck.ReadBool(dwFlags);
+            set => bfEnableRopCallerCheck.WriteBool(ref dwFlags, value);
         }
 
         public bool AuditRopCallerCheck
         {
-            get => bfAuditRopCallerCheck.ReadMasked(dwFlags) != 0;
-            set => bfAuditRopCallerCheck.WriteMasked(ref dwFlags, value ? ~0U : 0U);
+            get => bfAuditRopCallerCheck.ReadBool(dwFlags);
+            set => bfAuditRopCallerCheck.WriteBool(ref dwFlags, value);
         }
 
         public bool EnableRopSimExec
         {
-            get => bfEnableRopSimExec.ReadMasked(dwFlags) != 0;
-            set => bfEnableRopSimExec.WriteMasked(ref dwFlags, value ? ~0U : 0U);
+            get => bfEnableRopSimExec.ReadBool(dwFlags);
+            set => bfEnableRopSimExec.WriteBool(ref dwFlags, value);
         }
 
         public bool AuditRopSimExec
         {
-            get => bfAuditRopSimExec.ReadMasked(dwFlags) != 0;
-            set => bfAuditRopSimExec.WriteMasked(ref dwFlags, value ? ~0U : 0U);
+            get => bfAuditRopSimExec.ReadBool(dwFlags);
+            set => bfAuditRopSimExec.WriteBool(ref dwFlags, value);
         }
 
         public int ReservedFlags

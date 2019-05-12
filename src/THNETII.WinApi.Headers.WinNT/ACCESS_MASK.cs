@@ -70,7 +70,7 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public bool StandardDelete
         {
-            get => bitsStandardDelete.ReadMasked(value) != 0;
+            get => bitsStandardDelete.ReadBool(value);
             set => bitsStandardDelete.WriteMasked(ref this.value, value ? DELETE : 0);
         }
 
@@ -79,7 +79,7 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public bool StandardReadControl
         {
-            get => bitsStandardReadControl.ReadMasked(value) != 0;
+            get => bitsStandardReadControl.ReadBool(value);
             set => bitsStandardReadControl.WriteMasked(ref this.value, value ? READ_CONTROL : 0);
         }
 
@@ -88,7 +88,7 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public bool StandardWriteDac
         {
-            get => bitsStandardWriteDac.ReadMasked(value) != 0;
+            get => bitsStandardWriteDac.ReadBool(value);
             set => bitsStandardWriteDac.WriteMasked(ref this.value, value ? WRITE_DAC : 0);
         }
 
@@ -97,7 +97,7 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public bool StandardWriteOwner
         {
-            get => bitsStandardWriteOwner.ReadMasked(value) != 0;
+            get => bitsStandardWriteOwner.ReadBool(value);
             set => bitsStandardWriteOwner.WriteMasked(ref this.value, value ? WRITE_OWNER : 0);
         }
 
@@ -106,7 +106,7 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public bool StandardSynchronize
         {
-            get => bitsStandardSynchronize.ReadMasked(value) != 0;
+            get => bitsStandardSynchronize.ReadBool(value);
             set => bitsStandardSynchronize.WriteMasked(ref this.value, value ? SYNCHRONIZE : 0);
         }
 
@@ -125,7 +125,7 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public bool AccessSystemAcl
         {
-            get => bitsAccessSystemAcl.ReadMasked(value) != 0;
+            get => bitsAccessSystemAcl.ReadBool(value);
             set => bitsAccessSystemAcl.WriteMasked(ref this.value, value ? ACCESS_SYSTEM_SECURITY : 0);
         }
 
@@ -134,7 +134,7 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public bool MaximumAllowed
         {
-            get => bitsMaximumAllowed.ReadMasked(value) != 0;
+            get => bitsMaximumAllowed.ReadBool(value);
             set => bitsMaximumAllowed.WriteMasked(ref this.value, value ? MAXIMUM_ALLOWED : 0);
         }
 
@@ -143,7 +143,7 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public bool GenericAll
         {
-            get => bitsGenericAll.ReadMasked(value) != 0;
+            get => bitsGenericAll.ReadBool(value);
             set => bitsGenericAll.WriteMasked(ref this.value, value ? GENERIC_ALL : 0);
         }
 
@@ -152,7 +152,7 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public bool GenericExecute
         {
-            get => bitsGenericExecute.ReadMasked(value) != 0;
+            get => bitsGenericExecute.ReadBool(value);
             set => bitsGenericExecute.WriteMasked(ref this.value, value ? GENERIC_EXECUTE : 0);
         }
 
@@ -161,7 +161,7 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public bool GenericWrite
         {
-            get => bitsGenericWrite.ReadMasked(value) != 0;
+            get => bitsGenericWrite.ReadBool(value);
             set => bitsGenericWrite.WriteMasked(ref this.value, value ? GENERIC_WRITE : 0);
         }
 
@@ -170,7 +170,7 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public bool GenericRead
         {
-            get => bitsGenericRead.ReadMasked(value) != 0;
+            get => bitsGenericRead.ReadBool(value);
             set => bitsGenericRead.WriteMasked(ref this.value, value ? GENERIC_READ : 0);
         }
 

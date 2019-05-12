@@ -16,8 +16,8 @@ namespace THNETII.WinApi.Native.WinNT
         /// <summary>Delay load version 2</summary>
         public bool RvaBased
         {
-            get => RvaBasedBitfield.ReadMasked(Attributes) != 0;
-            set => RvaBasedBitfield.WriteMasked(ref Attributes, value ? ~0 : 0);
+            get => RvaBasedBitfield.ReadBool(Attributes);
+            set => RvaBasedBitfield.WriteBool(ref Attributes, value);
         }
         [EditorBrowsable(EditorBrowsableState.Never)]
         public int ReservedAttributes

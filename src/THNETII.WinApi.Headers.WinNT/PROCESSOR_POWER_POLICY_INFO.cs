@@ -94,16 +94,16 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public bool AllowDemotion
         {
-            get => AllowDemotionBitfield.ReadMasked(Flags) != 0;
-            set => AllowDemotionBitfield.WriteMasked(ref Flags, value ? ~0U : 0U);
+            get => AllowDemotionBitfield.ReadBool(Flags);
+            set => AllowDemotionBitfield.WriteBool(ref Flags, value);
         }
         /// <summary>
         /// When set, allows the kernel power policy manager to promote from the current state.
         /// </summary>
         public bool AllowPromotion
         {
-            get => AllowPromotionBitfield.ReadMasked(Flags) != 0;
-            set => AllowPromotionBitfield.WriteMasked(ref Flags, value ? ~0U : 0U);
+            get => AllowPromotionBitfield.ReadBool(Flags);
+            set => AllowPromotionBitfield.WriteBool(ref Flags, value);
         }
         /// <summary>Reserved.</summary>
         [EditorBrowsable(EditorBrowsableState.Never)]

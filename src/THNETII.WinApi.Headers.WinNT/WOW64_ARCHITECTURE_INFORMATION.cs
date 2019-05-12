@@ -25,26 +25,26 @@ namespace THNETII.WinApi.Native.WinNT
 
         public bool KernelMode
         {
-            get => BitfieldKernelMode.ReadMasked(field) != 0;
-            set => BitfieldKernelMode.WriteMasked(ref field, value ? ~0U : 0U);
+            get => BitfieldKernelMode.ReadBool(field);
+            set => BitfieldKernelMode.WriteBool(ref field, value);
         }
 
         public bool UserMode
         {
-            get => BitfieldUserMode.ReadMasked(field) != 0;
-            set => BitfieldUserMode.WriteMasked(ref field, value ? ~0U : 0U);
+            get => BitfieldUserMode.ReadBool(field);
+            set => BitfieldUserMode.WriteBool(ref field, value);
         }
 
         public bool Native
         {
-            get => BitfieldNative.ReadMasked(field) != 0;
-            set => BitfieldNative.WriteMasked(ref field, value ? ~0U : 0U);
+            get => BitfieldNative.ReadBool(field);
+            set => BitfieldNative.WriteBool(ref field, value);
         }
 
         public bool Process
         {
-            get => BitfieldProcess.ReadMasked(field) != 0;
-            set => BitfieldProcess.WriteMasked(ref field, value ? ~0U : 0U);
+            get => BitfieldProcess.ReadBool(field);
+            set => BitfieldProcess.WriteBool(ref field, value);
         }
     }
 }

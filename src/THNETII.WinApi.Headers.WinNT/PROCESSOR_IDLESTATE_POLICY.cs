@@ -19,13 +19,13 @@ namespace THNETII.WinApi.Native.WinNT
         public short Flags;
         public bool AllowScaling
         {
-            get => AllowScalingBitfield.ReadMasked(Flags) != 0;
-            set => AllowScalingBitfield.WriteMasked(ref Flags, (short)(value ? ~0 : 0));
+            get => AllowScalingBitfield.ReadBool(Flags);
+            set => AllowScalingBitfield.WriteBool(ref Flags, value);
         }
         public bool Disabled
         {
-            get => DisabledBitfield.ReadMasked(Flags) != 0;
-            set => DisabledBitfield.WriteMasked(ref Flags, (short)(value ? ~0 : 0));
+            get => DisabledBitfield.ReadBool(Flags);
+            set => DisabledBitfield.WriteBool(ref Flags, value);
         }
         [EditorBrowsable(EditorBrowsableState.Never)]
         public short Reserved

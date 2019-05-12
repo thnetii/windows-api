@@ -70,7 +70,7 @@ namespace THNETII.WinApi
         /// Whether the <see cref="NTSTATUS"/> value is a customer-defined value.
         /// </summary>
         /// <value><see langword="false"/> is the <see cref="NTSTATUS"/> value is Microsoft-defined; <see langword="true"/> if it is Customer-defined.</value>
-        public bool IsCustomerCode => c_bit.ReadMasked(Value) != 0;
+        public bool IsCustomerCode => c_bit.ReadBool(Value);
 
         /// <summary>
         /// Gets the severity code.

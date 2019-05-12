@@ -31,14 +31,14 @@ namespace THNETII.WinApi.Native.WinNT
 
         public bool EnableBottomUpRandomization
         {
-            get => bfEnableBottomUpRandomization.ReadMasked(dwFlags) != 0;
-            set => bfEnableBottomUpRandomization.WriteMasked(ref dwFlags, value ? ~0U : 0U);
+            get => bfEnableBottomUpRandomization.ReadBool(dwFlags);
+            set => bfEnableBottomUpRandomization.WriteBool(ref dwFlags, value);
         }
 
         public bool EnableForceRelocateImages
         {
-            get => bfEnableForceRelocateImages.ReadMasked(dwFlags) != 0;
-            set => bfEnableForceRelocateImages.WriteMasked(ref dwFlags, value ? ~0U : 0U);
+            get => bfEnableForceRelocateImages.ReadBool(dwFlags);
+            set => bfEnableForceRelocateImages.WriteBool(ref dwFlags, value);
         }
 
         /// <summary>
@@ -47,14 +47,14 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public bool EnableHighEntropy
         {
-            get => bfEnableHighEntropy.ReadMasked(dwFlags) != 0;
-            set => bfEnableHighEntropy.WriteMasked(ref dwFlags, value ? ~0U : 0U);
+            get => bfEnableHighEntropy.ReadBool(dwFlags);
+            set => bfEnableHighEntropy.WriteBool(ref dwFlags, value);
         }
 
         public bool DisallowStrippedImages
         {
-            get => bfDisallowStrippedImages.ReadMasked(dwFlags) != 0;
-            set => bfDisallowStrippedImages.WriteMasked(ref dwFlags, value ? ~0U : 0U);
+            get => bfDisallowStrippedImages.ReadBool(dwFlags);
+            set => bfDisallowStrippedImages.WriteBool(ref dwFlags, value);
         }
 
         [EditorBrowsable(EditorBrowsableState.Never)]

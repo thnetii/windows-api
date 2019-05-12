@@ -32,8 +32,8 @@ namespace THNETII.WinApi.Native.WinNT
         }
         public bool NameIsString
         {
-            get => NameIsStringBitfield.ReadMasked(Name) != 0;
-            set => NameIsStringBitfield.WriteMasked(ref Name, value ? ~0 : 0);
+            get => NameIsStringBitfield.ReadBool(Name);
+            set => NameIsStringBitfield.WriteBool(ref Name, value);
         }
         [FieldOffset(0)]
         public short Id;
@@ -48,8 +48,8 @@ namespace THNETII.WinApi.Native.WinNT
         }
         public bool DataIsDirectory
         {
-            get => DataIsDirectoryBitfield.ReadMasked(OffsetToData) != 0;
-            set => DataIsDirectoryBitfield.WriteMasked(ref OffsetToData, value ? ~0 : 0);
+            get => DataIsDirectoryBitfield.ReadBool(OffsetToData);
+            set => DataIsDirectoryBitfield.WriteBool(ref OffsetToData, value);
         }
     }
 }

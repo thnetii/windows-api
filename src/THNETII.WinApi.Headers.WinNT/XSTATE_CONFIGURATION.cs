@@ -30,13 +30,13 @@ namespace THNETII.WinApi.Native.WinNT
         private static readonly Bitfield32 bfCompactionEnabled = Bitfield32.Bit(1);
         public bool OptimizedSave
         {
-            get => bfOptimizedSave.ReadMasked(ControlFlags) != 0;
-            set => bfOptimizedSave.WriteMasked(ref ControlFlags, value ? ~0 : 0);
+            get => bfOptimizedSave.ReadBool(ControlFlags);
+            set => bfOptimizedSave.WriteBool(ref ControlFlags, value);
         }
         public bool CompactionEnabled
         {
-            get => bfCompactionEnabled.ReadMasked(ControlFlags) != 0;
-            set => bfCompactionEnabled.WriteMasked(ref ControlFlags, value ? ~0 : 0);
+            get => bfCompactionEnabled.ReadBool(ControlFlags);
+            set => bfCompactionEnabled.WriteBool(ref ControlFlags, value);
         }
 
         #region public fixed XSTATE_FEATURE Features[MAXIMUM_XSTATE_FEATURES];

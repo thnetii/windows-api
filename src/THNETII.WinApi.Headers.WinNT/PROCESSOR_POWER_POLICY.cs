@@ -40,8 +40,8 @@ namespace THNETII.WinApi.Native.WinNT
         /// <summary>Reserved; set to zero.</summary>
         public bool DisableCStates
         {
-            get => DisableCStatesBitfield.ReadMasked(Flags) != 0;
-            set => DisableCStatesBitfield.WriteMasked(ref Flags, value ? ~0 : 0);
+            get => DisableCStatesBitfield.ReadBool(Flags);
+            set => DisableCStatesBitfield.WriteBool(ref Flags, value);
         }
         /// <summary>Reserved; set to zero.</summary>
         [EditorBrowsable(EditorBrowsableState.Never)]

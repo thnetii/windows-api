@@ -36,8 +36,8 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public bool MicrosoftSignedOnly
         {
-            get => bfMicrosoftSignedOnly.ReadMasked(dwFlags) != 0;
-            set => bfMicrosoftSignedOnly.WriteMasked(ref dwFlags, value ? ~0U : 0U);
+            get => bfMicrosoftSignedOnly.ReadBool(dwFlags);
+            set => bfMicrosoftSignedOnly.WriteBool(ref dwFlags, value);
         }
 
         /// <summary>
@@ -46,8 +46,8 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public bool StoreSignedOnly
         {
-            get => bfStoreSignedOnly.ReadMasked(dwFlags) != 0;
-            set => bfStoreSignedOnly.WriteMasked(ref dwFlags, value ? ~0U : 0U);
+            get => bfStoreSignedOnly.ReadBool(dwFlags);
+            set => bfStoreSignedOnly.WriteBool(ref dwFlags, value);
         }
 
         /// <summary>
@@ -57,20 +57,20 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public bool MitigationOptIn
         {
-            get => bfMitigationOptIn.ReadMasked(dwFlags) != 0;
-            set => bfMitigationOptIn.WriteMasked(ref dwFlags, value ? ~0U : 0U);
+            get => bfMitigationOptIn.ReadBool(dwFlags);
+            set => bfMitigationOptIn.WriteBool(ref dwFlags, value);
         }
 
         public bool AuditMicrosoftSignedOnly
         {
-            get => bfAuditMicrosoftSignedOnly.ReadMasked(dwFlags) != 0;
-            set => bfAuditMicrosoftSignedOnly.WriteMasked(ref dwFlags, value ? ~0U : 0U);
+            get => bfAuditMicrosoftSignedOnly.ReadBool(dwFlags);
+            set => bfAuditMicrosoftSignedOnly.WriteBool(ref dwFlags, value);
         }
 
         public bool AuditStoreSignedOnly
         {
-            get => bfAuditStoreSignedOnly.ReadMasked(dwFlags) != 0;
-            set => bfAuditStoreSignedOnly.WriteMasked(ref dwFlags, value ? ~0U : 0U);
+            get => bfAuditStoreSignedOnly.ReadBool(dwFlags);
+            set => bfAuditStoreSignedOnly.WriteBool(ref dwFlags, value);
         }
 
         public int ReservedFlags

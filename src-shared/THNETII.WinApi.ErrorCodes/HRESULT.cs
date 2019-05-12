@@ -97,19 +97,19 @@ namespace THNETII.WinApi
         /// <see langword="false"/> if the current <see cref="HRESULT"/> is a normal status value;
         /// <see langword="true"/> if it is a display string message ID.
         /// </value>
-        public bool IsMessageId => msgid_bit.ReadMasked(Value) != 0;
+        public bool IsMessageId => msgid_bit.ReadBool(Value);
 
         /// <summary>
         /// Whether the <see cref="HRESULT"/> value is a <see cref="NTSTATUS"/> value mapped to an <see cref="HRESULT"/>.
         /// </summary>
         /// <value><see langword="true"/> if the <see cref="HRESULT"/> is a mapped <see cref="NTSTATUS"/> value; otherwise, <see langword="false"/>.</value>
-        public bool IsNTMapped => nt_bit.ReadMasked(Value) != 0;
+        public bool IsNTMapped => nt_bit.ReadBool(Value);
 
         /// <summary>
         /// Whether the <see cref="HRESULT"/> value is a customer-defined value.
         /// </summary>
         /// <value><see langword="false"/> is the <see cref="HRESULT"/> value is Microsoft-defined; <see langword="true"/> if it is Customer-defined.</value>
-        public bool IsCustomerCode => c_bit.ReadMasked(Value) != 0;
+        public bool IsCustomerCode => c_bit.ReadBool(Value);
 
         /// <summary>
         /// Whether the <see cref="HRESULT"/> value indicates a successful operation.
@@ -121,7 +121,7 @@ namespace THNETII.WinApi
         /// Whether the <see cref="HRESULT"/> value indicates a failed operation.
         /// </summary>
         /// <value><see langword="true"/> if the operation failed; <see langword="false"/> if not.</value>
-        public bool IsFailure => s_bit.ReadMasked(Value) != 0;
+        public bool IsFailure => s_bit.ReadBool(Value);
 
         /// <summary>
         /// Gets the severity for a mapped <see cref="NTSTATUS"/> value.

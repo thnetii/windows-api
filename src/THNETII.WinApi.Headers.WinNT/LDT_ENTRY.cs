@@ -184,8 +184,8 @@ namespace THNETII.WinApi.Native.WinNT
         /// <value><see langword="true"/> if the segment is present in physical memory; otherwise, <see langword="false"/>.</value>
         public bool Pres
         {
-            get => bits_Pres.ReadMasked(value) != 0;
-            set => bits_Pres.WriteMasked(ref this.value, value ? ~0U : 0U);
+            get => bits_Pres.ReadBool(value);
+            set => bits_Pres.WriteBool(ref this.value, value);
         }
 
         /// <summary>
@@ -202,8 +202,8 @@ namespace THNETII.WinApi.Native.WinNT
         /// </summary>
         public bool Sys
         {
-            get => bits_Sys.ReadMasked(value) != 0;
-            set => bits_Sys.WriteMasked(ref this.value, value ? ~0U : 0U);
+            get => bits_Sys.ReadBool(value);
+            set => bits_Sys.WriteBool(ref this.value, value);
         }
 
         internal int Reserved_0
@@ -221,8 +221,8 @@ namespace THNETII.WinApi.Native.WinNT
         /// </value>
         public bool DefaultBig
         {
-            get => bits_DefaultBig.ReadMasked(value) != 0;
-            set => bits_DefaultBig.WriteMasked(ref this.value, value ? ~0U : 0U);
+            get => bits_DefaultBig.ReadBool(value);
+            set => bits_DefaultBig.WriteBool(ref this.value, value);
         }
 
         /// <summary>

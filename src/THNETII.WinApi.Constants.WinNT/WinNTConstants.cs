@@ -5829,6 +5829,25 @@ namespace THNETII.WinApi.Native.WinNT
         public const int IMAGE_ENCLAVE_IMPORT_MATCH_FAMILY_ID = 0x00000003;
         public const int IMAGE_ENCLAVE_IMPORT_MATCH_IMAGE_ID = 0x00000004;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 18264
+        public const int IMAGE_DEBUG_TYPE_UNKNOWN = 0;
+        public const int IMAGE_DEBUG_TYPE_COFF = 1;
+        public const int IMAGE_DEBUG_TYPE_CODEVIEW = 2;
+        public const int IMAGE_DEBUG_TYPE_FPO = 3;
+        public const int IMAGE_DEBUG_TYPE_MISC = 4;
+        public const int IMAGE_DEBUG_TYPE_EXCEPTION = 5;
+        public const int IMAGE_DEBUG_TYPE_FIXUP = 6;
+        public const int IMAGE_DEBUG_TYPE_OMAP_TO_SRC = 7;
+        public const int IMAGE_DEBUG_TYPE_OMAP_FROM_SRC = 8;
+        public const int IMAGE_DEBUG_TYPE_BORLAND = 9;
+        public const int IMAGE_DEBUG_TYPE_RESERVED10 = 10;
+        public const int IMAGE_DEBUG_TYPE_CLSID = 11;
+        public const int IMAGE_DEBUG_TYPE_VC_FEATURE = 12;
+        public const int IMAGE_DEBUG_TYPE_POGO = 13;
+        public const int IMAGE_DEBUG_TYPE_ILTCG = 14;
+        public const int IMAGE_DEBUG_TYPE_MPX = 15;
+        public const int IMAGE_DEBUG_TYPE_REPRO = 16;
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19775
         public const int RTL_UMS_VERSION = 0x0100;
     }

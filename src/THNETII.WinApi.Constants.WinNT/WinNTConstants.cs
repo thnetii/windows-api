@@ -5848,6 +5848,14 @@ namespace THNETII.WinApi.Native.WinNT
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 18314
         public const int IMAGE_DEBUG_MISC_EXENAME = 1;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 18409
+        public const short IMAGE_SEPARATE_DEBUG_FLAGS_MASK = unchecked((short)0x8000);
+        /// <summary>
+        /// when DBG was updated, the
+        /// old checksum didn't match.
+        /// </summary>
+        public const short IMAGE_SEPARATE_DEBUG_MISMATCH = unchecked((short)0x8000);
+        
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19775
         public const int RTL_UMS_VERSION = 0x0100;
     }

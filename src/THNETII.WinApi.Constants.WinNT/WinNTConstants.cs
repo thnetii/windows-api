@@ -5848,6 +5848,15 @@ namespace THNETII.WinApi.Native.WinNT
         public const int IMAGE_DEBUG_TYPE_MPX = 15;
         public const int IMAGE_DEBUG_TYPE_REPRO = 16;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 18294
+        public const short FRAME_FPO = 0;
+        public const short FRAME_TRAP = 1;
+        public const short FRAME_TSS = 2;
+        public const short FRAME_NONFPO = 3;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 18311
+        public const int SIZEOF_RFPO_DATA = 16;
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19775
         public const int RTL_UMS_VERSION = 0x0100;
     }

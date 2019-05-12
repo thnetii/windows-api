@@ -5745,6 +5745,10 @@ namespace THNETII.WinApi.Native.WinNT
         public const int IMAGE_RESOURCE_NAME_IS_STRING = unchecked((int)0x80000000);
         public const int IMAGE_RESOURCE_DATA_IS_DIRECTORY = unchecked((int)0x80000000);
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 17726
+        public const int IMAGE_DYNAMIC_RELOCATION_GUARD_RF_PROLOGUE = 0x00000001;
+        public const int IMAGE_DYNAMIC_RELOCATION_GUARD_RF_EPILOGUE = 0x00000002;
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19775
         public const int RTL_UMS_VERSION = 0x0100;
     }

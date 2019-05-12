@@ -7,7 +7,7 @@ int main(int argc, char* argv[])
     const int size = sizeof(instance);
     const int value = SECURITY_MAX_SID_SIZE;
 
-    const void* ptr = GetHandleInformation;
+    const void* ptr = RtlCaptureStackBackTrace;
 
     return EXIT_SUCCESS;
 }

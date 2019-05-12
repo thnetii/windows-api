@@ -43,12 +43,12 @@ namespace THNETII.WinApi.Native.WinNT
             get
             {
                 fixed (byte* ptr = NameField)
-                    return FixedStringBuffer.ToString(ptr, IMAGE_SIZEOF_SHORT_NAME, Encoding.UTF8);
+                    return FixedStringBuffer.ToStringZeroTerminated(ptr, IMAGE_SIZEOF_SHORT_NAME, Encoding.UTF8);
             }
             set
             {
                 fixed (byte* ptr = NameField)
-                    FixedStringBuffer.ToBytes(value, ptr, IMAGE_SIZEOF_SHORT_NAME, Encoding.UTF8);
+                    FixedStringBuffer.ToBytesZeroTerminated(value, ptr, IMAGE_SIZEOF_SHORT_NAME, Encoding.UTF8);
             }
         }
         #endregion

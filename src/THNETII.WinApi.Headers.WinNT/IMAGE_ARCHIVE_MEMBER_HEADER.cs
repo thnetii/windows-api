@@ -19,12 +19,12 @@ namespace THNETII.WinApi.Native.WinNT
             get
             {
                 fixed (byte* ptr = NameField)
-                    return FixedStringBuffer.ToString(ptr, 16, Encoding.UTF8);
+                    return FixedStringBuffer.ToStringZeroTerminated(ptr, 16, Encoding.UTF8);
             }
             set
             {
                 fixed (byte* ptr = NameField)
-                    FixedStringBuffer.ToBytes(value, ptr, 16, Encoding.UTF8);
+                    FixedStringBuffer.ToBytesZeroTerminated(value, ptr, 16, Encoding.UTF8);
             }
         }
         #endregion
@@ -38,12 +38,12 @@ namespace THNETII.WinApi.Native.WinNT
             get
             {
                 fixed (byte* ptr = DateField)
-                    return FixedStringBuffer.ToString(ptr, 12, Encoding.UTF8);
+                    return FixedStringBuffer.ToStringZeroTerminated(ptr, 12, Encoding.UTF8);
             }
             set
             {
                 fixed (byte* ptr = DateField)
-                    FixedStringBuffer.ToBytes(value, ptr, 12, Encoding.UTF8);
+                    FixedStringBuffer.ToBytesZeroTerminated(value, ptr, 12, Encoding.UTF8);
             }
         }
         #endregion
@@ -57,12 +57,12 @@ namespace THNETII.WinApi.Native.WinNT
             get
             {
                 fixed (byte* ptr = UserIDField)
-                    return FixedStringBuffer.ToString(ptr, 6, Encoding.UTF8);
+                    return FixedStringBuffer.ToStringZeroTerminated(ptr, 6, Encoding.UTF8);
             }
             set
             {
                 fixed (byte* ptr = UserIDField)
-                    FixedStringBuffer.ToBytes(value, ptr, 6, Encoding.UTF8);
+                    FixedStringBuffer.ToBytesZeroTerminated(value, ptr, 6, Encoding.UTF8);
             }
         }
         #endregion
@@ -76,12 +76,12 @@ namespace THNETII.WinApi.Native.WinNT
             get
             {
                 fixed (byte* ptr = GroupIDField)
-                    return FixedStringBuffer.ToString(ptr, 6, Encoding.UTF8);
+                    return FixedStringBuffer.ToStringZeroTerminated(ptr, 6, Encoding.UTF8);
             }
             set
             {
                 fixed (byte* ptr = GroupIDField)
-                    FixedStringBuffer.ToBytes(value, ptr, 6, Encoding.UTF8);
+                    FixedStringBuffer.ToBytesZeroTerminated(value, ptr, 6, Encoding.UTF8);
             }
         }
         #endregion
@@ -95,12 +95,12 @@ namespace THNETII.WinApi.Native.WinNT
             get
             {
                 fixed (byte* ptr = ModeField)
-                    return FixedStringBuffer.ToString(ptr, 8, Encoding.UTF8);
+                    return FixedStringBuffer.ToStringZeroTerminated(ptr, 8, Encoding.UTF8);
             }
             set
             {
                 fixed (byte* ptr = ModeField)
-                    FixedStringBuffer.ToBytes(value, ptr, 8, Encoding.UTF8);
+                    FixedStringBuffer.ToBytesZeroTerminated(value, ptr, 8, Encoding.UTF8);
             }
         }
         #endregion
@@ -114,12 +114,12 @@ namespace THNETII.WinApi.Native.WinNT
             get
             {
                 fixed (byte* ptr = SizeField)
-                    return FixedStringBuffer.ToString(ptr, 10, Encoding.UTF8);
+                    return FixedStringBuffer.ToStringZeroTerminated(ptr, 10, Encoding.UTF8);
             }
             set
             {
                 fixed (byte* ptr = SizeField)
-                    FixedStringBuffer.ToBytes(value, ptr, 10, Encoding.UTF8);
+                    FixedStringBuffer.ToBytesZeroTerminated(value, ptr, 10, Encoding.UTF8);
             }
         }
         #endregion
@@ -133,12 +133,12 @@ namespace THNETII.WinApi.Native.WinNT
             get
             {
                 fixed (byte* ptr = EndHeaderField)
-                    return FixedStringBuffer.ToString(ptr, 2, Encoding.UTF8);
+                    return FixedStringBuffer.ToStringZeroTerminated(ptr, 2, Encoding.UTF8);
             }
             set
             {
                 fixed (byte* ptr = EndHeaderField)
-                    FixedStringBuffer.ToBytes(value, ptr, 2, Encoding.UTF8);
+                    FixedStringBuffer.ToBytesZeroTerminated(value, ptr, 2, Encoding.UTF8);
             }
         }
         #endregion

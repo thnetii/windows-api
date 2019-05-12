@@ -30,12 +30,12 @@ namespace THNETII.WinApi.Native.WinNT
             get
             {
                 fixed (byte* ptr = ShortNameField)
-                    return FixedStringBuffer.ToString(ptr, 8, Encoding.UTF8);
+                    return FixedStringBuffer.ToStringZeroTerminated(ptr, 8, Encoding.UTF8);
             }
             set
             {
                 fixed (byte* ptr = ShortNameField)
-                    FixedStringBuffer.ToBytes(value, ptr, 8, Encoding.UTF8);
+                    FixedStringBuffer.ToBytesZeroTerminated(value, ptr, 8, Encoding.UTF8);
             }
         }
         [FieldOffset(0)]

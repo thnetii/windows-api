@@ -1860,33 +1860,31 @@ namespace THNETII.WinApi.Native.WinNT
         public static readonly Guid PPM_THERMAL_POLICY_CHANGE_GUID = new Guid(WinNTConstants.PPM_THERMAL_POLICY_CHANGE_GUID);
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 15790
-        public static readonly string IMAGE_DOS_SIGNATURE = Encoding.ASCII.GetString(
-            BitConverter.IsLittleEndian
-            ? BitConverter.GetBytes(WinNTConstants.IMAGE_DOS_SIGNATURE)
-            : BitConverter.GetBytes(WinNTConstants.IMAGE_DOS_SIGNATURE).Reverse().ToArray()
-            );
-        public static readonly string IMAGE_OS2_SIGNATURE = Encoding.ASCII.GetString(
-            BitConverter.IsLittleEndian
-            ? BitConverter.GetBytes(WinNTConstants.IMAGE_OS2_SIGNATURE)
-            : BitConverter.GetBytes(WinNTConstants.IMAGE_OS2_SIGNATURE).Reverse().ToArray()
-            );
-        public static readonly string IMAGE_OS2_SIGNATURE_LE = Encoding.ASCII.GetString(
-            BitConverter.IsLittleEndian
-            ? BitConverter.GetBytes(WinNTConstants.IMAGE_OS2_SIGNATURE_LE)
-            : BitConverter.GetBytes(WinNTConstants.IMAGE_OS2_SIGNATURE_LE).Reverse().ToArray()
-            );
-        public static readonly string IMAGE_VXD_SIGNATURE = Encoding.ASCII.GetString(
-            BitConverter.IsLittleEndian
-            ? BitConverter.GetBytes(WinNTConstants.IMAGE_VXD_SIGNATURE)
-            : BitConverter.GetBytes(WinNTConstants.IMAGE_VXD_SIGNATURE).Reverse().ToArray()
-            );
-        public static readonly string IMAGE_NT_SIGNATURE = Encoding.ASCII.GetString(
-            BitConverter.IsLittleEndian
-            ? BitConverter.GetBytes(WinNTConstants.IMAGE_NT_SIGNATURE)
-            : BitConverter.GetBytes(WinNTConstants.IMAGE_NT_SIGNATURE).Reverse().ToArray()
-            );
+        /// <summary>MZ</summary>
+        public static readonly short IMAGE_DOS_SIGNATURE =
+            unchecked((short)(BitConverter.IsLittleEndian ? 0x5A4D : 0x4D5A));
+        /// <summary>NE</summary>
+        public static readonly short IMAGE_OS2_SIGNATURE =
+            unchecked((short)(BitConverter.IsLittleEndian ? 0x454E : 0x4E45));
+        /// <summary>LE</summary>
+        public static readonly short IMAGE_OS2_SIGNATURE_LE =
+            unchecked((short)(BitConverter.IsLittleEndian ? 0x454C : 0x4C45));
+        /// <summary>LE</summary>
+        public static readonly short IMAGE_VXD_SIGNATURE =
+            unchecked((short)(BitConverter.IsLittleEndian ? 0x454C : 0x4C45));
+        /// <summary>PE00</summary>
+        public static readonly int IMAGE_NT_SIGNATURE =
+            BitConverter.IsLittleEndian ? 0x00004550 : 0x50450000;
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 18227
         public static readonly int IMAGE_ENCLAVE_MINIMUM_CONFIG_SIZE = Marshal.OffsetOf<IMAGE_ENCLAVE_CONFIG>(nameof(IMAGE_ENCLAVE_CONFIG.EnclaveFlags)).ToInt32();
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 18401
+        /// <summary>DI</summary>
+        public static readonly short IMAGE_SEPARATE_DEBUG_SIGNATURE =
+            unchecked((short)(BitConverter.IsLittleEndian ? 0x4944 : 0x4449));
+        /// <summary>NI</summary>
+        public static readonly short NON_PAGED_DEBUG_SIGNATURE =
+            unchecked((short)(BitConverter.IsLittleEndian ? 0x494E : 0x4E49));
     }
 }

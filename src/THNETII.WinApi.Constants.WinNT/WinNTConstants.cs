@@ -5749,6 +5749,26 @@ namespace THNETII.WinApi.Native.WinNT
         public const int IMAGE_DYNAMIC_RELOCATION_GUARD_RF_PROLOGUE = 0x00000001;
         public const int IMAGE_DYNAMIC_RELOCATION_GUARD_RF_EPILOGUE = 0x00000002;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 18030
+        public const int IMAGE_HOT_PATCH_BASE_OBLIGATORY = 0x00000001;
+
+        public const int IMAGE_HOT_PATCH_CHUNK_INVERSE = unchecked((int)0x80000000);
+        public const int IMAGE_HOT_PATCH_CHUNK_OBLIGATORY = 0x40000000;
+        public const int IMAGE_HOT_PATCH_CHUNK_RESERVED = 0x3FF03000;
+        public const int IMAGE_HOT_PATCH_CHUNK_TYPE = 0x000FC000;
+        public const int IMAGE_HOT_PATCH_CHUNK_SOURCE_RVA = 0x00008000;
+        public const int IMAGE_HOT_PATCH_CHUNK_TARGET_RVA = 0x00004000;
+        public const int IMAGE_HOT_PATCH_CHUNK_SIZE = 0x00000FFF;
+
+        public const int IMAGE_HOT_PATCH_NONE = 0x00000000;
+        public const int IMAGE_HOT_PATCH_FUNCTION = 0x0001C000;
+        public const int IMAGE_HOT_PATCH_ABSOLUTE = 0x0002C000;
+        public const int IMAGE_HOT_PATCH_REL32 = 0x0003C000;
+        public const int IMAGE_HOT_PATCH_CALL_TARGET = 0x00044000;
+        public const int IMAGE_HOT_PATCH_INDIRECT = 0x0005C000;
+        public const int IMAGE_HOT_PATCH_NO_CALL_TARGET = 0x00064000;
+        public const int IMAGE_HOT_PATCH_DYNAMIC_VALUE = 0x00078000;
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19775
         public const int RTL_UMS_VERSION = 0x0100;
     }

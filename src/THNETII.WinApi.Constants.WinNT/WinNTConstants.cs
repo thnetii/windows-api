@@ -5802,6 +5802,16 @@ namespace THNETII.WinApi.Native.WinNT
         /// <summary>Shift to right-justify Guard CF function table stride</summary>
         public const int IMAGE_GUARD_CF_FUNCTION_TABLE_SIZE_SHIFT = 28;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 18065
+        //
+        // GFIDS table entry flags.
+        //
+
+        /// <summary>The containing GFID entry is suppressed</summary>
+        public const int IMAGE_GUARD_FLAG_FID_SUPPRESSED = 0x01;
+        /// <summary>The containing GFID entry is export suppressed</summary>
+        public const int IMAGE_GUARD_FLAG_EXPORT_SUPPRESSED = 0x02;
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19775
         public const int RTL_UMS_VERSION = 0x0100;
     }

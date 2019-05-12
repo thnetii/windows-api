@@ -5857,6 +5857,9 @@ namespace THNETII.WinApi.Native.WinNT
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 18311
         public const int SIZEOF_RFPO_DATA = 16;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 18314
+        public const int IMAGE_DEBUG_MISC_EXENAME = 1;
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19775
         public const int RTL_UMS_VERSION = 0x0100;
     }

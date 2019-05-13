@@ -927,5 +927,28 @@ namespace THNETII.WinApi.Native.WinNT
             [Optional] UNWIND_HISTORY_TABLE_ARM64* HistoryTable
             );
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19112
+        #region RtlPcToFileHeader function
+        /// <summary>
+        /// Retrieves the base address of the image that contains the specified PC value.
+        /// </summary>
+        /// <param name="PcValue">The PC value. The function searches all modules mapped into the address space of the calling process for a module that contains this value.</param>
+        /// <param name="BaseOfImage">The base address of the image containing the PC value. This value must be added to any relative addresses in the headers to locate the image.</param>
+        /// <returns>
+        /// <para>If the PC value is found, the function returns the base address of the image that contains the PC value.</para>
+        /// <para>If no image contains the PC value, the function returns <see cref="IntPtr.Zero"/>.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/winnt/nf-winnt-rtlpctofileheader">RtlPcToFileHeader function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="RtlLookupFunctionEntry(IntPtr, out IntPtr, UNWIND_HISTORY_TABLE_AMD64*)"/>
+        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi)]
+        public static extern IntPtr RtlPcToFileHeader(
+            [In] IntPtr PcValue,
+            out IntPtr BaseOfImage
+            );
+        #endregion
     }
 }

@@ -1,6 +1,11 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
 using System.Runtime.InteropServices;
 using System.Security.Principal;
+
+#if NETSTANDARD1_6
+using EntryPointNotFoundException = System.Exception;
+#endif
 
 namespace THNETII.WinApi.Native.WinNT
 {
@@ -150,6 +155,30 @@ namespace THNETII.WinApi.Native.WinNT
             var length = RtlCaptureStackBackTrace(FramesToSkip, FramesToCapture, out IntPtr* BackTrace, out BackTraceHash);
             return new ReadOnlySpan<IntPtr>(BackTrace, length);
         }
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 18600
+        #region RtlCaptureContext function
+        /// <summary>
+        /// Retrieves a context record in the context of the caller.
+        /// </summary>
+        /// <param name="ContextRecord">Receives a <see cref="CONTEXT"/> structure on return.</param>
+        /// <remarks>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows XP [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/winnt/nf-winnt-rtlcapturecontext">RtlCaptureContext function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="CONTEXT"/>
+        /// <seealso cref="RtlRestoreContext"/>
+        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.StdCall)]
+        [SuppressMessage("Usage", "PC003: Native API not available in UWP", Justification = "Documentation")]
+        public static extern void RtlCaptureContext(out CONTEXT ContextRecord);
         #endregion
     }
 }

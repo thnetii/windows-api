@@ -536,5 +536,61 @@ namespace THNETII.WinApi.Native.WinNT
             [In, Optional] ref UNWIND_HISTORY_TABLE_AMD64 HistoryTable
             );
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 18757
+        #region RtlVirtualUnwind function
+        /// <summary>
+        /// Retrieves the invocation context of the function that precedes the specified function context.
+        /// <para>
+        /// <note>This function is not implemented on all processor platforms and the implementation is different on each platform that supports it. The following prototype lists all the potential parameters and their application. Read further for processor-specific function prototypes.</note>
+        /// </para>
+        /// </summary>
+        /// <param name="HandlerType">
+        /// <para>The handler type.</para>
+        /// <para>This parameter is only present on x64.</para>
+        /// </param>
+        /// <param name="ImageBase">The base address of the module to which the function belongs.</param>
+        /// <param name="ControlPc">The virtual address where control left the specified function.</param>
+        /// <param name="FunctionEntry">The address of the function table entry for the specified function. To obtain the function table entry, call the <see cref="RtlLookupFunctionEntry"/> function.</param>
+        /// <param name="ContextRecord">A reference to a <see cref="CONTEXT_AMD64"/> structure that represents the context of the previous frame.</param>
+        /// <param name="HandlerData">
+        /// <para>The location of the PC. If this parameter is 0, the PC is in the prologue, epilogue, or a null frame region of the function. If this parameter is 1, the PC is in the body of the function.</para>
+        /// <para>This parameter is not present on x64.</para>
+        /// </param>
+        /// <param name="EstablisherFrame">A pointer that receives the establisher frame pointer value.</param>
+        /// <param name="ContextPointers">An optional pointer to a context pointers structure.</param>
+        /// <returns>This function returns an <see cref="EXCEPTION_ROUTINE"/> callback function.</returns>
+        /// <remarks>
+        /// <para>
+        /// The complete list of epilogue markers for x64 is as follows:
+        /// <list type="bullet">
+        /// <item>ret</item>
+        /// <item>ret <em>n</em></item>
+        /// <item>rep ret</item>
+        /// <item>jmp <em>imm8</em> | <em>imm32</em> where the target is outside the function being unwound</item>
+        /// <item>jmp qword ptr <em>imm32</em></item>
+        /// <item>rex.w jmp <em>reg</em></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/winnt/nf-winnt-rtlvirtualunwind">RtlVirtualUnwind function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="CONTEXT_AMD64"/>
+        /// <seealso cref="EXCEPTION_RECORD"/>
+        /// <seealso cref="RtlLookupFunctionEntry"/>
+        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi)]
+        [SuppressMessage("Usage", "PC003: Native API not available in UWP")]
+        [return: MarshalAs(UnmanagedType.FunctionPtr)]
+        public static unsafe extern EXCEPTION_ROUTINE RtlVirtualUnwind(
+            [In, MarshalAs(UnmanagedType.I4)] UNW_FLAGS HandlerType,
+            [In] IntPtr ImageBase,
+            [In] IntPtr ControlPc,
+            [In] IMAGE_AMD64_RUNTIME_FUNCTION_ENTRY* FunctionEntry,
+            ref CONTEXT_AMD64 ContextRecord,
+            out IntPtr HandlerData,
+            out IntPtr EstablisherFrame,
+            [Optional] KNONVOLATILE_CONTEXT_POINTERS_AMD64* ContextPointers
+            );
+        #endregion
     }
 }

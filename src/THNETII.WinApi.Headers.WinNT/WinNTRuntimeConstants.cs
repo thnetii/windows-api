@@ -15,6 +15,7 @@ namespace THNETII.WinApi.Native.WinNT
     {
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 117
         public static readonly int MAX_NATURAL_ALIGNMENT = IntPtr.Size;
+        public static readonly int MEMORY_ALLOCATION_ALIGNMENT = 2 * MAX_NATURAL_ALIGNMENT;
         // #if defined(_WIN64) || defined(_M_ALPHA)
         // public const int MEMORY_ALLOCATION_ALIGNMENT = 16;
         // #else

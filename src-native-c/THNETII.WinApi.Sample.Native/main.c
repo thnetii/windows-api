@@ -3,9 +3,9 @@
 
 int main(int argc, char* argv[])
 {
-    PGET_RUNTIME_FUNCTION_CALLBACK instance;
+    PVOID instance;
     const int size = sizeof(instance);
-    const int value = SECURITY_MAX_SID_SIZE;
+    const int value = MEMORY_ALLOCATION_ALIGNMENT;
 
     const void* ptr = RtlCaptureStackBackTrace;
 

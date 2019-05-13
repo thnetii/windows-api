@@ -319,5 +319,44 @@ namespace THNETII.WinApi.Native.WinNT
             [In, MarshalAs(UnmanagedType.LPWStr)] string OutOfProcessCallbackDll = null
             );
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 18670
+        #region RtlAddGrowableFunctionTable function
+        /// <summary>
+        /// Informs the system of a dynamic function table representing a region of memory containing code.
+        /// </summary>
+        /// <param name="DynamicTable">A pointer variable that receives an opaque reference to the newly-added table on success.</param>
+        /// <param name="FunctionTable">A pointer to a partially-filled array of <see cref="IMAGE_IA64_RUNTIME_FUNCTION_ENTRY"/> entries which provides unwind information for the region of code. The entries in this array must remain sorted in ascending order of the <see cref="IMAGE_IA64_RUNTIME_FUNCTION_ENTRY.BeginAddress"/> members.</param>
+        /// <param name="EntryCount">The number of entries currently populated in the function table. This value may be zero.</param>
+        /// <param name="MaximumEntryCount">The capacity of the function table.</param>
+        /// <param name="RangeBase">The beginning of the memory range described by the function table.</param>
+        /// <param name="RangeEnd">The end of the memory range described by the function table.</param>
+        /// <returns>
+        /// <para>This function returns zero on success. (More detail).</para>
+        /// <para>See <a href="http://msdn.microsoft.com/en-us/library/cc704588(PROT.10).aspx">NTSTATUS Values</a> for a list of <see cref="NTSTATUS"/> values.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>The function table can grow as code is added to the memory region. The entries in the table must be sorted. This table is used for dispatching exceptions through runtime-generated code and for collecting stack backtraces.</para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows 8 [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2012 [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/winnt/nf-winnt-rtladdgrowablefunctiontable">RtlAddGrowableFunctionTable function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        [DllImport(NativeLibraryNames.Ntdll, CallingConvention = CallingConvention.StdCall)]
+        [SuppressMessage("Usage", "PC003: Native API not available in UWP", Justification = "Documentation")]
+        internal static unsafe extern NTSTATUS RtlAddGrowableFunctionTable(
+            out IntPtr DynamicTable,
+            [In] IMAGE_IA64_RUNTIME_FUNCTION_ENTRY* FunctionTable,
+            [In] int EntryCount,
+            [In] int MaximumEntryCount,
+            [In] IntPtr RangeBase,
+            [In] IntPtr RangeEnd
+            );
+        #endregion
     }
 }

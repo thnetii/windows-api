@@ -482,5 +482,30 @@ namespace THNETII.WinApi.Native.WinNT
             [Optional] ref UNWIND_HISTORY_TABLE_AMD64 HistoryTable
             );
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 18723
+        #region RtlRestoreContext function
+        /// <summary>
+        /// Restores the context of the caller to the specified context record.
+        /// </summary>
+        /// <param name="ContextRecord">A <see cref="CONTEXT_AMD64"/> structure.</param>
+        /// <param name="ExceptionRecord">
+        /// <para>A pointer to an <see cref="EXCEPTION_RECORD"/> structure. This parameter is optional and should typically be <see langword="null"/>.</para>
+        /// <para>An exception record is used primarily with long jump and C++ catch-throw support. If the <see cref="EXCEPTION_RECORD.ExceptionCode"/> member is <see cref="STATUS_LONGJUMP"/>, the <see cref="EXCEPTION_RECORD.ExceptionInformation"/> member contains a pointer to a jump buffer. <see cref="RtlRestoreContext"/> will copy the non-volatile state from the jump buffer in to the context record before the context record is restored.</para>
+        /// <para>If the <see cref="EXCEPTION_RECORD.ExceptionCode"/> member is <see cref="STATUS_UNWIND_CONSOLIDATE"/>, the <see cref="EXCEPTION_RECORD.ExceptionInformation"/> member contains a pointer to a callback function, such as a catch handler. <see cref="RtlRestoreContext"/> consolidates the call frames between its frame and the frame specified in the context record before calling the callback function. This hides frames from any exception handling that might occur in the callback function. The difference between this and a typical unwind is that the data on the stack is still present, so frame data such as a throw object is still available. The callback function returns a new program counter to update in the context record, which is then used in a normal restore context.</para>
+        /// </param>
+        /// <remarks>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/winnt/nf-winnt-rtlrestorecontext">RtlRestoreContext function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="CONTEXT"/>
+        /// <seealso cref="RtlCaptureContext"/>
+        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Cdecl)]
+        [SuppressMessage("Usage", "PC003: Native API not available in UWP")]
+        public static extern unsafe void RtlRestoreContext(
+            [In] in CONTEXT_AMD64 ContextRecord,
+            [In] EXCEPTION_RECORD* ExceptionRecord = null
+            );
+        #endregion
     }
 }

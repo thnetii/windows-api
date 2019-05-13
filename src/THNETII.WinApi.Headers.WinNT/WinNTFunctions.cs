@@ -507,5 +507,34 @@ namespace THNETII.WinApi.Native.WinNT
             [In] EXCEPTION_RECORD* ExceptionRecord = null
             );
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 18738
+        #region RtlUnwindEx function
+        /// <summary>
+        /// Initiates an unwind of procedure call frames.
+        /// </summary>
+        /// <param name="TargetFrame">A pointer to the call frame that is the target of the unwind. If this parameter is <see cref="IntPtr.Zero"/>, the function performs an exit unwind.</param>
+        /// <param name="TargetIp">The continuation address of the unwind. This parameter is ignored if <paramref name="TargetFrame"/> is <see cref="IntPtr.Zero"/>.</param>
+        /// <param name="ExceptionRecord">A read-only reference to an <see cref="EXCEPTION_RECORD"/> structure.</param>
+        /// <param name="ReturnValue">A value to be placed in the integer function return register before continuing execution.</param>
+        /// <param name="ContextRecord">A reference to a <see cref="CONTEXT_AMD64"/> structure that stores context during the unwind operation.</param>
+        /// <param name="HistoryTable">A reference to the unwind history table. This structure is processor specific.</param>
+        /// <remarks>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/winnt/nf-winnt-rtlunwindex">RtlUnwindEx function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="CONTEXT_AMD64"/>
+        /// <seealso cref="EXCEPTION_RECORD"/>
+        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi)]
+        [SuppressMessage("Usage", "PC003: Native API not available in UWP")]
+        public static extern void RtlUnwindEx(
+            [In, Optional] IntPtr TargetFrame,
+            [In, Optional] IntPtr TargetIp,
+            [In, Optional] in EXCEPTION_RECORD ExceptionRecord,
+            [In] IntPtr ReturnValue,
+            [In] ref CONTEXT_AMD64 ContextRecord,
+            [In, Optional] ref UNWIND_HISTORY_TABLE_AMD64 HistoryTable
+            );
+        #endregion
     }
 }

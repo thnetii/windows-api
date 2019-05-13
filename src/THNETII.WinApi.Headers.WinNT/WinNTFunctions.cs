@@ -14,6 +14,7 @@ namespace THNETII.WinApi.Native.WinNT
     public static class WinNTFunctions
     {
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 2097
+        #region MAKELANGID macro
         //
         // ** DEPRECATED ** DEPRECATED ** DEPRECATED ** DEPRECATED ** DEPRECATED **
         //
@@ -65,9 +66,16 @@ namespace THNETII.WinApi.Native.WinNT
         // ** DEPRECATED ** DEPRECATED ** DEPRECATED ** DEPRECATED ** DEPRECATED **
         //
         public static int MAKELANGID(int p, int s) => (((ushort)s) << 10) | (ushort)p;
+        #endregion
+        #region PRIMARYLANGID macro
         public static int PRIMARYLANGID(int lgid) => (short)lgid & 0x3ff;
-        public static int SUBLANGID(int lgid) => (short)lgid >> 10;
+        #endregion
+        #region SUBLANGID macro
+        public static int SUBLANGID(int lgid) => (short)lgid >> 10; 
+        #endregion
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 2192
+        #region MAKELCID macro
         //
         // ** DEPRECATED ** DEPRECATED ** DEPRECATED ** DEPRECATED ** DEPRECATED **
         //
@@ -107,17 +115,31 @@ namespace THNETII.WinApi.Native.WinNT
         //
         // ** DEPRECATED ** DEPRECATED ** DEPRECATED ** DEPRECATED ** DEPRECATED **
         //
-        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 2192
-        public static int MAKELCID(int lgid, int srtid) => ((ushort)srtid << 16) | (ushort)lgid;
-        public static int MAKESORTLCID(int lgid, int srtid, int ver) => (MAKELCID(lgid, srtid)) | ((ushort)ver << 20);
-        public static int LANGIDFROMLCID(int lcid) => (ushort)lcid;
-        public static int SORTIDFROMLCID(int lcid) => (ushort)((lcid >> 16) & 0xf);
-        public static int SORTVERSIONFROMLCID(int lcid) => (ushort)((lcid >> 20) & 0xf);
+        public static int MAKELCID(int lgid, int srtid) => ((ushort)srtid << 16) | (ushort)lgid; 
+        #endregion
+        #region MAKESORTLCID macro
+        public static int MAKESORTLCID(int lgid, int srtid, int ver) => (MAKELCID(lgid, srtid)) | ((ushort)ver << 20); 
+        #endregion
+        #region LANGIDFROMLCID macro
+        public static int LANGIDFROMLCID(int lcid) => (ushort)lcid; 
+        #endregion
+        #region SORTIDFROMLCID macro
+        public static int SORTIDFROMLCID(int lcid) => (ushort)((lcid >> 16) & 0xf); 
+        #endregion
+        #region SORTVERSIONFROMLCID macro
+        public static int SORTVERSIONFROMLCID(int lcid) => (ushort)((lcid >> 20) & 0xf); 
+        #endregion
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 8752
+        #region IS_UNWINDING macro
         public static bool IS_UNWINDING(int Flag) => (Flag & EXCEPTION_UNWIND) != 0;
+        #endregion
+        #region IS_DISPATCHING macro
         public static bool IS_DISPATCHING(int Flag) => (Flag & EXCEPTION_UNWIND) == 0;
-        public static bool IS_TARGET_UNWIND(int Flag) => (Flag & EXCEPTION_TARGET_UNWIND) != 0;
+        #endregion
+        #region IS_TARGET_UNWIND macro
+        public static bool IS_TARGET_UNWIND(int Flag) => (Flag & EXCEPTION_TARGET_UNWIND) != 0; 
+        #endregion
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 8752
         #region RtlUnwind2 function
@@ -147,12 +169,14 @@ namespace THNETII.WinApi.Native.WinNT
             );
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 9423
+        #region MANDATORY_LEVEL_TO_MANDATORY_RID macro
         public static int MANDATORY_LEVEL_TO_MANDATORY_RID(int IL) => IL * 0x1000;
-
+        #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 10566
+        #region VALID_IMPERSONATION_LEVEL macro
         public static bool VALID_IMPERSONATION_LEVEL(TokenImpersonationLevel L) =>
-            (L >= SECURITY_MIN_IMPERSONATION_LEVEL) && (L <= SECURITY_MAX_IMPERSONATION_LEVEL);
-
+            (L >= SECURITY_MIN_IMPERSONATION_LEVEL) && (L <= SECURITY_MAX_IMPERSONATION_LEVEL); 
+        #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 13493
         #region IsVirtualDiskFileShared macro
         /// <summary>
@@ -202,7 +226,7 @@ namespace THNETII.WinApi.Native.WinNT
         /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
         /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
         /// <seealso cref="CONTEXT"/>
-        /// <seealso cref="RtlRestoreContext"/>
+        /// <seealso cref="RtlRestoreContext(in CONTEXT_AMD64, EXCEPTION_RECORD*)"/>
         [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.StdCall)]
         [SuppressMessage("Usage", "PC003: Native API not available in UWP", Justification = "Documentation")]
         public static extern void RtlCaptureContext(out CONTEXT ContextRecord);
@@ -248,29 +272,27 @@ namespace THNETII.WinApi.Native.WinNT
         /// <returns>If the function succeeds, the return value is <see langword="true"/>. Otherwise, the return value is <see langword="false"/>.</returns>
         /// <remarks>
         /// <para>Function tables are used on 64-bit Windows to determine how to unwind or walk the stack. These tables are usually generated by the compiler and stored as part of the image. However, applications must provide the function table for dynamically generated code. For more information about function tables, see the architecture guide for your system.</para>
-        /// <para>This function is useful for code that is generated from a template or generated only once during the life of the process. For more dynamically generated code, use the <see cref="RtlInstallFunctionTableCallback"/> function.</para>
+        /// <para>This function is useful for code that is generated from a template or generated only once during the life of the process. For more dynamically generated code, use the <see cref="RtlInstallFunctionTableCallback(IntPtr, IntPtr, int, GET_RUNTIME_FUNCTION_AMD64_CALLBACK, void*, string)"/> function.</para>
         /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/winnt/nf-winnt-rtladdfunctiontable">RtlAddFunctionTable function</a></para>
         /// </remarks>
         /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
         /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
         /// <seealso cref="RtlDeleteFunctionTable(IMAGE_AMD64_RUNTIME_FUNCTION_ENTRY*)"/>
-        /// <seealso cref="RtlInstallFunctionTableCallback"/>
+        /// <seealso cref="RtlInstallFunctionTableCallback(IntPtr, IntPtr, int, GET_RUNTIME_FUNCTION_AMD64_CALLBACK, void*, string)"/>
         [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Cdecl)]
         [SuppressMessage("Usage", "PC003: Native API not available in UWP")]
         internal static unsafe extern byte RtlAddFunctionTable(
             [In] IMAGE_AMD64_RUNTIME_FUNCTION_ENTRY* FunctionTable,
             [In] int EntryCount,
-            [In] long BaseAddress
+            [In] IntPtr BaseAddress
             );
-        /// <inheritdoc cref="RtlAddFunctionTable(IMAGE_AMD64_RUNTIME_FUNCTION_ENTRY*, int, long)"/>
+        /// <inheritdoc cref="RtlAddFunctionTable(IMAGE_AMD64_RUNTIME_FUNCTION_ENTRY*, int, IntPtr)"/>
         public static unsafe bool RtlAddFunctionTable(
             Span<IMAGE_AMD64_RUNTIME_FUNCTION_ENTRY> FunctionTable,
-            long BaseAddress
+            IntPtr BaseAddress
             )
         {
-            if (FunctionTable.IsEmpty)
-                return RtlAddFunctionTable(null, 0, BaseAddress) != 0;
-            fixed (IMAGE_AMD64_RUNTIME_FUNCTION_ENTRY* ptr = &FunctionTable[0])
+            fixed (IMAGE_AMD64_RUNTIME_FUNCTION_ENTRY* ptr = FunctionTable)
             {
                 return RtlAddFunctionTable(ptr, FunctionTable.Length, BaseAddress) != 0;
             }
@@ -281,7 +303,7 @@ namespace THNETII.WinApi.Native.WinNT
         /// <summary>
         /// Removes a dynamic function table from the dynamic function table list.
         /// </summary>
-        /// <param name="FunctionTable">A pointer to an array of function entries that were previously passed to <see cref="RtlAddFunctionTable(IMAGE_AMD64_RUNTIME_FUNCTION_ENTRY*, int, long)"/> or an identifier previously passed to <see cref="RtlInstallFunctionTableCallback"/>.</param>
+        /// <param name="FunctionTable">A pointer to an array of function entries that were previously passed to <see cref="RtlAddFunctionTable(IMAGE_AMD64_RUNTIME_FUNCTION_ENTRY*, int, IntPtr)"/> or an identifier previously passed to <see cref="RtlInstallFunctionTableCallback(IntPtr, IntPtr, int, GET_RUNTIME_FUNCTION_AMD64_CALLBACK, void*, string)"/>.</param>
         /// <returns>If the function succeeds, the return value is <see langword="true"/>. Otherwise, the return value is <see langword="false"/>.</returns>
         /// <remarks>
         /// <para>Function tables are used on 64-bit Windows to determine how to unwind or walk the stack. These tables are usually generated by the compiler and stored as part of the image. However, applications must provide the function table for dynamically generated code. For more information about function tables, see the architecture guide for your system.</para>
@@ -289,8 +311,8 @@ namespace THNETII.WinApi.Native.WinNT
         /// </remarks>
         /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
         /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
-        /// <seealso cref="RtlAddFunctionTable(IMAGE_AMD64_RUNTIME_FUNCTION_ENTRY*, int, long)"/>
-        /// <seealso cref="RtlInstallFunctionTableCallback"/>
+        /// <seealso cref="RtlAddFunctionTable(IMAGE_AMD64_RUNTIME_FUNCTION_ENTRY*, int, IntPtr)"/>
+        /// <seealso cref="RtlInstallFunctionTableCallback(IntPtr, IntPtr, int, GET_RUNTIME_FUNCTION_AMD64_CALLBACK, void*, string)"/>
         [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Cdecl)]
         [SuppressMessage("Usage", "PC003: Native API not available in UWP")]
         internal static unsafe extern byte RtlDeleteFunctionTable(
@@ -301,8 +323,6 @@ namespace THNETII.WinApi.Native.WinNT
             Span<IMAGE_AMD64_RUNTIME_FUNCTION_ENTRY> FunctionTable
             )
         {
-            if (FunctionTable.IsEmpty)
-                return RtlDeleteFunctionTable((IMAGE_AMD64_RUNTIME_FUNCTION_ENTRY*)null) != 0;
             fixed (IMAGE_AMD64_RUNTIME_FUNCTION_ENTRY* pFunctionTable = FunctionTable)
             {
                 return RtlDeleteFunctionTable(pFunctionTable) != 0;
@@ -321,25 +341,25 @@ namespace THNETII.WinApi.Native.WinNT
         /// <param name="Context">A pointer to the user-defined data to be passed to the callback function.</param>
         /// <param name="OutOfProcessCallbackDll">
         /// <para>An optional string that specifies the path of a DLL that provides function table entries that are outside the process.</para>
-        /// <para>When a debugger unwinds to a function in the range of addresses managed by the callback function, it loads this DLL and calls the <see cref="OUT_OF_PROCESS_FUNCTION_TABLE_CALLBACK_EXPORT_NAME"/> function, whose type is <see cref="OUT_OF_PROCESS_FUNCTION_TABLE_CALLBACK"/>.</para>
+        /// <para>When a debugger unwinds to a function in the range of addresses managed by the callback function, it loads this DLL and calls the <see cref="OUT_OF_PROCESS_FUNCTION_TABLE_CALLBACK_EXPORT_NAME"/> function, whose type is <see cref="OUT_OF_PROCESS_FUNCTION_TABLE_AMD64_CALLBACK"/>.</para>
         /// </param>
         /// <returns>If the function succeeds, the return value is <see langword="true"/>. Otherwise, the return value is <see langword="false"/>.</returns>
         /// <remarks>
         /// <para>Function tables are used on 64-bit Windows to determine how to unwind or walk the stack. These tables are usually generated by the compiler and stored as part of the image. However, applications must provide the function table for dynamically generated code. For more information about function tables, see the architecture guide for your system.</para>
         /// <para>This function is useful for very dynamic code. The application specifies the memory range for the generated code, but does not need to generate a table until it is needed by an unwind request. At that time, the system calls the callback function with the <paramref name="Context"/> and the control address. The callback function must return the runtime function entry for the specified address. Be sure to avoid creating a deadlock between the callback function and the code generator.</para>
-        /// <para>For code that is generated from a template or generated only once during the life of the process, use the <see cref="RtlAddFunctionTable(IMAGE_AMD64_RUNTIME_FUNCTION_ENTRY*, int, long)"/> function.</para>
+        /// <para>For code that is generated from a template or generated only once during the life of the process, use the <see cref="RtlAddFunctionTable(IMAGE_AMD64_RUNTIME_FUNCTION_ENTRY*, int, IntPtr)"/> function.</para>
         /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/winnt/nf-winnt-rtlinstallfunctiontablecallback">RtlInstallFunctionTableCallback function</a></para>
         /// </remarks>
         /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
         /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
-        /// <seealso cref="RtlAddFunctionTable(IMAGE_AMD64_RUNTIME_FUNCTION_ENTRY*, int, long)"/>
+        /// <seealso cref="RtlAddFunctionTable(IMAGE_AMD64_RUNTIME_FUNCTION_ENTRY*, int, IntPtr)"/>
         /// <seealso cref="RtlDeleteFunctionTable(IMAGE_AMD64_RUNTIME_FUNCTION_ENTRY*)"/>
         [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Cdecl)]
         [return: MarshalAs(UnmanagedType.U1)]
         [SuppressMessage("Usage", "PC003: Native API not available in UWP")]
         public static extern unsafe bool RtlInstallFunctionTableCallback(
-            [In] long TableIdentifier,
-            [In] long BaseAddress,
+            [In] IntPtr TableIdentifier,
+            [In] IntPtr BaseAddress,
             [In] int Length,
             [In, MarshalAs(UnmanagedType.FunctionPtr)] GET_RUNTIME_FUNCTION_AMD64_CALLBACK Callback,
             [In] void* Context = null,
@@ -434,7 +454,7 @@ namespace THNETII.WinApi.Native.WinNT
             );
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 18692
-        #region RtlDeleteGrowableFunctionTable
+        #region RtlDeleteGrowableFunctionTable function
         /// <summary>
         /// Informs the system that a previously reported dynamic function table is no longer in use.
         /// </summary>
@@ -473,13 +493,13 @@ namespace THNETII.WinApi.Native.WinNT
         /// </remarks>
         /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
         /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
-        /// <seealso cref="RtlUnwindEx"/>
-        /// <seealso cref="RtlVirtualUnwind"/>
+        /// <seealso cref="RtlUnwindEx(IntPtr, IntPtr, in EXCEPTION_RECORD, IntPtr, ref CONTEXT_AMD64, ref UNWIND_HISTORY_TABLE_AMD64)"/>
+        /// <seealso cref="RtlVirtualUnwind(UNW_FLAGS, IntPtr, IntPtr, IMAGE_AMD64_RUNTIME_FUNCTION_ENTRY*, ref CONTEXT_AMD64, out IntPtr, out IntPtr, KNONVOLATILE_CONTEXT_POINTERS_AMD64*)"/>
         [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.StdCall)]
         public static unsafe extern IMAGE_AMD64_RUNTIME_FUNCTION_ENTRY* RtlLookupFunctionEntry(
-            [In] long ControlPc,
-            out long ImageBase,
-            [Optional] ref UNWIND_HISTORY_TABLE_AMD64 HistoryTable
+            [In] IntPtr ControlPc,
+            out IntPtr ImageBase,
+            [Optional] UNWIND_HISTORY_TABLE_AMD64* HistoryTable
             );
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 18723
@@ -490,8 +510,8 @@ namespace THNETII.WinApi.Native.WinNT
         /// <param name="ContextRecord">A <see cref="CONTEXT_AMD64"/> structure.</param>
         /// <param name="ExceptionRecord">
         /// <para>A pointer to an <see cref="EXCEPTION_RECORD"/> structure. This parameter is optional and should typically be <see langword="null"/>.</para>
-        /// <para>An exception record is used primarily with long jump and C++ catch-throw support. If the <see cref="EXCEPTION_RECORD.ExceptionCode"/> member is <see cref="STATUS_LONGJUMP"/>, the <see cref="EXCEPTION_RECORD.ExceptionInformation"/> member contains a pointer to a jump buffer. <see cref="RtlRestoreContext"/> will copy the non-volatile state from the jump buffer in to the context record before the context record is restored.</para>
-        /// <para>If the <see cref="EXCEPTION_RECORD.ExceptionCode"/> member is <see cref="STATUS_UNWIND_CONSOLIDATE"/>, the <see cref="EXCEPTION_RECORD.ExceptionInformation"/> member contains a pointer to a callback function, such as a catch handler. <see cref="RtlRestoreContext"/> consolidates the call frames between its frame and the frame specified in the context record before calling the callback function. This hides frames from any exception handling that might occur in the callback function. The difference between this and a typical unwind is that the data on the stack is still present, so frame data such as a throw object is still available. The callback function returns a new program counter to update in the context record, which is then used in a normal restore context.</para>
+        /// <para>An exception record is used primarily with long jump and C++ catch-throw support. If the <see cref="EXCEPTION_RECORD.ExceptionCode"/> member is <see cref="STATUS_LONGJUMP"/>, the <see cref="EXCEPTION_RECORD.ExceptionInformation"/> member contains a pointer to a jump buffer. <see cref="RtlRestoreContext(in CONTEXT_AMD64, EXCEPTION_RECORD*)"/> will copy the non-volatile state from the jump buffer in to the context record before the context record is restored.</para>
+        /// <para>If the <see cref="EXCEPTION_RECORD.ExceptionCode"/> member is <see cref="STATUS_UNWIND_CONSOLIDATE"/>, the <see cref="EXCEPTION_RECORD.ExceptionInformation"/> member contains a pointer to a callback function, such as a catch handler. <see cref="RtlRestoreContext(in CONTEXT_AMD64, EXCEPTION_RECORD*)"/> consolidates the call frames between its frame and the frame specified in the context record before calling the callback function. This hides frames from any exception handling that might occur in the callback function. The difference between this and a typical unwind is that the data on the stack is still present, so frame data such as a throw object is still available. The callback function returns a new program counter to update in the context record, which is then used in a normal restore context.</para>
         /// </param>
         /// <remarks>
         /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/winnt/nf-winnt-rtlrestorecontext">RtlRestoreContext function</a></para>
@@ -550,7 +570,7 @@ namespace THNETII.WinApi.Native.WinNT
         /// </param>
         /// <param name="ImageBase">The base address of the module to which the function belongs.</param>
         /// <param name="ControlPc">The virtual address where control left the specified function.</param>
-        /// <param name="FunctionEntry">The address of the function table entry for the specified function. To obtain the function table entry, call the <see cref="RtlLookupFunctionEntry"/> function.</param>
+        /// <param name="FunctionEntry">The address of the function table entry for the specified function. To obtain the function table entry, call the <see cref="RtlLookupFunctionEntry(IntPtr, out IntPtr, UNWIND_HISTORY_TABLE_AMD64*)"/> function.</param>
         /// <param name="ContextRecord">A reference to a <see cref="CONTEXT_AMD64"/> structure that represents the context of the previous frame.</param>
         /// <param name="HandlerData">
         /// <para>The location of the PC. If this parameter is 0, the PC is in the prologue, epilogue, or a null frame region of the function. If this parameter is 1, the PC is in the body of the function.</para>
@@ -577,7 +597,7 @@ namespace THNETII.WinApi.Native.WinNT
         /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
         /// <seealso cref="CONTEXT_AMD64"/>
         /// <seealso cref="EXCEPTION_RECORD"/>
-        /// <seealso cref="RtlLookupFunctionEntry"/>
+        /// <seealso cref="RtlLookupFunctionEntry(IntPtr, out IntPtr, UNWIND_HISTORY_TABLE_AMD64*)"/>
         [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi)]
         [SuppressMessage("Usage", "PC003: Native API not available in UWP")]
         [return: MarshalAs(UnmanagedType.FunctionPtr)]
@@ -590,6 +610,321 @@ namespace THNETII.WinApi.Native.WinNT
             out IntPtr HandlerData,
             out IntPtr EstablisherFrame,
             [Optional] KNONVOLATILE_CONTEXT_POINTERS_AMD64* ContextPointers
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 18786
+        #region RtlAddFunctionTable function
+        /// <inheritdoc cref="RtlAddFunctionTable(IMAGE_AMD64_RUNTIME_FUNCTION_ENTRY*, int, IntPtr)"/>
+        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Cdecl)]
+        [SuppressMessage("Usage", "PC003: Native API not available in UWP")]
+        internal static unsafe extern byte RtlAddFunctionTable(
+            [In] IMAGE_ARM_RUNTIME_FUNCTION_ENTRY* FunctionTable,
+            [In] int EntryCount,
+            [In] IntPtr BaseAddress
+            );
+        /// <inheritdoc cref="RtlAddFunctionTable(IMAGE_AMD64_RUNTIME_FUNCTION_ENTRY*, int, IntPtr)"/>
+        public static unsafe bool RtlAddFunctionTable(
+            Span<IMAGE_ARM_RUNTIME_FUNCTION_ENTRY> FunctionTable,
+            IntPtr BaseAddress
+            )
+        {
+            fixed (IMAGE_ARM_RUNTIME_FUNCTION_ENTRY* ptr = FunctionTable)
+            {
+                return RtlAddFunctionTable(ptr, FunctionTable.Length, BaseAddress) != 0;
+            }
+        }
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 18796
+        #region RtlDeleteFunctionTable function
+        /// <inheritdoc cref="RtlDeleteFunctionTable(IMAGE_AMD64_RUNTIME_FUNCTION_ENTRY*)"/>
+        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Cdecl)]
+        [SuppressMessage("Usage", "PC003: Native API not available in UWP")]
+        internal static unsafe extern byte RtlDeleteFunctionTable(
+            [In] IMAGE_ARM_RUNTIME_FUNCTION_ENTRY* FunctionTable
+            );
+        /// <inheritdoc cref="RtlDeleteFunctionTable(IMAGE_AMD64_RUNTIME_FUNCTION_ENTRY*)"/>
+        public static unsafe bool RtlDeleteFunctionTable(
+            Span<IMAGE_ARM_RUNTIME_FUNCTION_ENTRY> FunctionTable
+            )
+        {
+            fixed (IMAGE_ARM_RUNTIME_FUNCTION_ENTRY* pFunctionTable = FunctionTable)
+            {
+                return RtlDeleteFunctionTable(pFunctionTable) != 0;
+            }
+        }
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 18801
+        #region RtlInstallFunctionTableCallback function
+        /// <inheritdoc cref="RtlInstallFunctionTableCallback(IntPtr, IntPtr, int, GET_RUNTIME_FUNCTION_AMD64_CALLBACK, void*, string)"/>
+        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Cdecl)]
+        [return: MarshalAs(UnmanagedType.U1)]
+        [SuppressMessage("Usage", "PC003: Native API not available in UWP")]
+        public static extern unsafe bool RtlInstallFunctionTableCallback(
+            [In] IntPtr TableIdentifier,
+            [In] IntPtr BaseAddress,
+            [In] int Length,
+            [In, MarshalAs(UnmanagedType.FunctionPtr)] GET_RUNTIME_FUNCTION_ARM_CALLBACK Callback,
+            [In] void* Context = null,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string OutOfProcessCallbackDll = null
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 18816
+        #region RtlAddGrowableFunctionTable function
+        /// <inheritdoc cref="RtlAddGrowableFunctionTable(out IntPtr, IMAGE_AMD64_RUNTIME_FUNCTION_ENTRY*, int, int, IntPtr, IntPtr)"/>
+        [DllImport(NativeLibraryNames.Ntdll, CallingConvention = CallingConvention.StdCall)]
+        [SuppressMessage("Usage", "PC003: Native API not available in UWP", Justification = "Documentation")]
+        internal static unsafe extern NTSTATUS RtlAddGrowableFunctionTable(
+            out IntPtr DynamicTable,
+            [In] IMAGE_ARM_RUNTIME_FUNCTION_ENTRY* FunctionTable,
+            [In] int EntryCount,
+            [In] int MaximumEntryCount,
+            [In] IntPtr RangeBase,
+            [In] IntPtr RangeEnd
+            );
+        /// <inheritdoc cref="RtlAddGrowableFunctionTable(out IntPtr, IMAGE_AMD64_RUNTIME_FUNCTION_ENTRY*, int, int, IntPtr, IntPtr)"/>
+        public static unsafe NTSTATUS RtlAddGrowableFunctionTable(
+            out IntPtr DynamicTable,
+            Span<IMAGE_ARM_RUNTIME_FUNCTION_ENTRY> FunctionTable,
+            int EntryCount,
+            IntPtr RangeBase,
+            IntPtr RangeEnd
+            )
+        {
+            fixed (IMAGE_ARM_RUNTIME_FUNCTION_ENTRY* pFunctionTable = FunctionTable)
+            {
+                return RtlAddGrowableFunctionTable(
+                    out DynamicTable,
+                    pFunctionTable,
+                    EntryCount,
+                    FunctionTable.Length,
+                    RangeBase,
+                    RangeEnd
+                    );
+            }
+        }
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 18829
+        #region RtlGrowFunctionTable function
+        // See above
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 18838
+        #region RtlDeleteGrowableFunctionTable function
+        // See above
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 18853
+        #region RtlLookupFunctionEntry functions
+        /// <inheritdoc cref="RtlLookupFunctionEntry(IntPtr, out IntPtr, UNWIND_HISTORY_TABLE_AMD64*)"/>
+        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.StdCall)]
+        public static unsafe extern IMAGE_ARM_RUNTIME_FUNCTION_ENTRY* RtlLookupFunctionEntry(
+            [In] IntPtr ControlPc,
+            out IntPtr ImageBase,
+            [Optional] UNWIND_HISTORY_TABLE_ARM* HistoryTable
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 18869
+        #region RtlRestoreContext function
+        /// <inheritdoc cref="RtlRestoreContext(in CONTEXT_AMD64, EXCEPTION_RECORD*)"/>
+        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Cdecl)]
+        [SuppressMessage("Usage", "PC003: Native API not available in UWP")]
+        public static extern unsafe void RtlRestoreContext(
+            [In] in CONTEXT_ARM ContextRecord,
+            [In] EXCEPTION_RECORD* ExceptionRecord = null
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 18884
+        #region RtlUnwindEx function
+        /// <inheritdoc cref="RtlUnwindEx(IntPtr, IntPtr, in EXCEPTION_RECORD, IntPtr, ref CONTEXT_AMD64, ref UNWIND_HISTORY_TABLE_AMD64)"/>
+        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi)]
+        [SuppressMessage("Usage", "PC003: Native API not available in UWP")]
+        public static extern void RtlUnwindEx(
+            [In, Optional] IntPtr TargetFrame,
+            [In, Optional] IntPtr TargetIp,
+            [In, Optional] in EXCEPTION_RECORD ExceptionRecord,
+            [In] IntPtr ReturnValue,
+            [In] ref CONTEXT_ARM ContextRecord,
+            [In, Optional] ref UNWIND_HISTORY_TABLE_ARM HistoryTable
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 18903
+        #region RtlVirtualUnwind function
+        /// <inheritdoc cref="RtlVirtualUnwind(UNW_FLAGS, IntPtr, IntPtr, IMAGE_AMD64_RUNTIME_FUNCTION_ENTRY*, ref CONTEXT_AMD64, out IntPtr, out IntPtr, KNONVOLATILE_CONTEXT_POINTERS_AMD64*)"/>
+        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi)]
+        [SuppressMessage("Usage", "PC003: Native API not available in UWP")]
+        [return: MarshalAs(UnmanagedType.FunctionPtr)]
+        public static unsafe extern EXCEPTION_ROUTINE RtlVirtualUnwind(
+            [In, MarshalAs(UnmanagedType.I4)] UNW_FLAGS HandlerType,
+            [In] IntPtr ImageBase,
+            [In] IntPtr ControlPc,
+            [In] IMAGE_ARM_RUNTIME_FUNCTION_ENTRY* FunctionEntry,
+            ref CONTEXT_ARM ContextRecord,
+            out IntPtr HandlerData,
+            out IntPtr EstablisherFrame,
+            [Optional] KNONVOLATILE_CONTEXT_POINTERS_ARM* ContextPointers
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 18929
+        #region RtlAddFunctionTable function
+        /// <inheritdoc cref="RtlAddFunctionTable(IMAGE_AMD64_RUNTIME_FUNCTION_ENTRY*, int, IntPtr)"/>
+        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Cdecl)]
+        [SuppressMessage("Usage", "PC003: Native API not available in UWP")]
+        internal static unsafe extern byte RtlAddFunctionTable(
+            [In] IMAGE_ARM64_RUNTIME_FUNCTION_ENTRY* FunctionTable,
+            [In] int EntryCount,
+            [In] IntPtr BaseAddress
+            );
+        /// <inheritdoc cref="RtlAddFunctionTable(IMAGE_AMD64_RUNTIME_FUNCTION_ENTRY*, int, IntPtr)"/>
+        public static unsafe bool RtlAddFunctionTable(
+            Span<IMAGE_ARM64_RUNTIME_FUNCTION_ENTRY> FunctionTable,
+            IntPtr BaseAddress
+            )
+        {
+            fixed (IMAGE_ARM64_RUNTIME_FUNCTION_ENTRY* ptr = FunctionTable)
+            {
+                return RtlAddFunctionTable(ptr, FunctionTable.Length, BaseAddress) != 0;
+            }
+        }
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 18939
+        #region RtlDeleteFunctionTable function
+        /// <inheritdoc cref="RtlDeleteFunctionTable(IMAGE_AMD64_RUNTIME_FUNCTION_ENTRY*)"/>
+        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Cdecl)]
+        [SuppressMessage("Usage", "PC003: Native API not available in UWP")]
+        internal static unsafe extern byte RtlDeleteFunctionTable(
+            [In] IMAGE_ARM64_RUNTIME_FUNCTION_ENTRY* FunctionTable
+            );
+        /// <inheritdoc cref="RtlDeleteFunctionTable(IMAGE_AMD64_RUNTIME_FUNCTION_ENTRY*)"/>
+        public static unsafe bool RtlDeleteFunctionTable(
+            Span<IMAGE_ARM64_RUNTIME_FUNCTION_ENTRY> FunctionTable
+            )
+        {
+            fixed (IMAGE_ARM64_RUNTIME_FUNCTION_ENTRY* pFunctionTable = FunctionTable)
+            {
+                return RtlDeleteFunctionTable(pFunctionTable) != 0;
+            }
+        }
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 18947
+        #region RtlInstallFunctionTableCallback function
+        /// <inheritdoc cref="RtlInstallFunctionTableCallback(IntPtr, IntPtr, int, GET_RUNTIME_FUNCTION_AMD64_CALLBACK, void*, string)"/>
+        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Cdecl)]
+        [return: MarshalAs(UnmanagedType.U1)]
+        [SuppressMessage("Usage", "PC003: Native API not available in UWP")]
+        public static extern unsafe bool RtlInstallFunctionTableCallback(
+            [In] IntPtr TableIdentifier,
+            [In] IntPtr BaseAddress,
+            [In] int Length,
+            [In, MarshalAs(UnmanagedType.FunctionPtr)] GET_RUNTIME_FUNCTION_ARM64_CALLBACK Callback,
+            [In] void* Context = null,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string OutOfProcessCallbackDll = null
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 18962
+        #region RtlAddGrowableFunctionTable function
+        /// <inheritdoc cref="RtlAddGrowableFunctionTable(out IntPtr, IMAGE_AMD64_RUNTIME_FUNCTION_ENTRY*, int, int, IntPtr, IntPtr)"/>
+        [DllImport(NativeLibraryNames.Ntdll, CallingConvention = CallingConvention.StdCall)]
+        [SuppressMessage("Usage", "PC003: Native API not available in UWP", Justification = "Documentation")]
+        internal static unsafe extern NTSTATUS RtlAddGrowableFunctionTable(
+            out IntPtr DynamicTable,
+            [In] IMAGE_ARM64_RUNTIME_FUNCTION_ENTRY* FunctionTable,
+            [In] int EntryCount,
+            [In] int MaximumEntryCount,
+            [In] IntPtr RangeBase,
+            [In] IntPtr RangeEnd
+            );
+        /// <inheritdoc cref="RtlAddGrowableFunctionTable(out IntPtr, IMAGE_AMD64_RUNTIME_FUNCTION_ENTRY*, int, int, IntPtr, IntPtr)"/>
+        public static unsafe NTSTATUS RtlAddGrowableFunctionTable(
+            out IntPtr DynamicTable,
+            Span<IMAGE_ARM64_RUNTIME_FUNCTION_ENTRY> FunctionTable,
+            int EntryCount,
+            IntPtr RangeBase,
+            IntPtr RangeEnd
+            )
+        {
+            fixed (IMAGE_ARM64_RUNTIME_FUNCTION_ENTRY* pFunctionTable = FunctionTable)
+            {
+                return RtlAddGrowableFunctionTable(
+                    out DynamicTable,
+                    pFunctionTable,
+                    EntryCount,
+                    FunctionTable.Length,
+                    RangeBase,
+                    RangeEnd
+                    );
+            }
+        }
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 18975
+        #region RtlGrowFunctionTable function
+        // See above
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 18984
+        #region RtlDeleteGrowableFunctionTable function
+        // See above
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 18999
+        #region RtlLookupFunctionEntry function
+        /// <inheritdoc cref="RtlLookupFunctionEntry(IntPtr, out IntPtr, UNWIND_HISTORY_TABLE_AMD64*)"/>
+        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.StdCall)]
+        public static unsafe extern IMAGE_ARM64_RUNTIME_FUNCTION_ENTRY* RtlLookupFunctionEntry(
+            [In] IntPtr ControlPc,
+            out IntPtr ImageBase,
+            [Optional] UNWIND_HISTORY_TABLE_ARM64* HistoryTable
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19015
+        #region RtlRestoreContext function
+        /// <inheritdoc cref="RtlRestoreContext(in CONTEXT_AMD64, EXCEPTION_RECORD*)"/>
+        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Cdecl)]
+        [SuppressMessage("Usage", "PC003: Native API not available in UWP")]
+        public static extern unsafe void RtlRestoreContext(
+            [In] in ARM64_NT_CONTEXT ContextRecord,
+            [In] EXCEPTION_RECORD* ExceptionRecord = null
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19030
+        #region RtlUnwindEx function
+        /// <inheritdoc cref="RtlUnwindEx(IntPtr, IntPtr, in EXCEPTION_RECORD, IntPtr, ref CONTEXT_AMD64, ref UNWIND_HISTORY_TABLE_AMD64)"/>
+        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi)]
+        [SuppressMessage("Usage", "PC003: Native API not available in UWP")]
+        public static extern void RtlUnwindEx(
+            [In, Optional] IntPtr TargetFrame,
+            [In, Optional] IntPtr TargetIp,
+            [In, Optional] in EXCEPTION_RECORD ExceptionRecord,
+            [In] IntPtr ReturnValue,
+            [In] ref ARM64_NT_CONTEXT ContextRecord,
+            [In, Optional] ref UNWIND_HISTORY_TABLE_ARM64 HistoryTable
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19049
+        #region RtlVirtualUnwind function
+        /// <inheritdoc cref="RtlVirtualUnwind(UNW_FLAGS, IntPtr, IntPtr, IMAGE_AMD64_RUNTIME_FUNCTION_ENTRY*, ref CONTEXT_AMD64, out IntPtr, out IntPtr, KNONVOLATILE_CONTEXT_POINTERS_AMD64*)"/>
+        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi)]
+        [SuppressMessage("Usage", "PC003: Native API not available in UWP")]
+        [return: MarshalAs(UnmanagedType.FunctionPtr)]
+        public static unsafe extern EXCEPTION_ROUTINE RtlVirtualUnwind(
+            [In, MarshalAs(UnmanagedType.I4)] UNW_FLAGS HandlerType,
+            [In] IntPtr ImageBase,
+            [In] IntPtr ControlPc,
+            [In] IMAGE_ARM64_RUNTIME_FUNCTION_ENTRY* FunctionEntry,
+            ref ARM64_NT_CONTEXT ContextRecord,
+            out IntPtr HandlerData,
+            out IntPtr EstablisherFrame,
+            [Optional] KNONVOLATILE_CONTEXT_POINTERS_ARM64* ContextPointers
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19074
+        #region RtlUnwindEx function
+        // See above
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19093
+        #region RtlLookupFunctionEntryCHPE function
+        /// <inheritdoc cref="RtlLookupFunctionEntry(IntPtr, out IntPtr, UNWIND_HISTORY_TABLE_AMD64*)"/>
+        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.StdCall)]
+        [SuppressMessage("Usage", "PC003: Native API not available in UWP")]
+        public static unsafe extern IMAGE_ARM64_RUNTIME_FUNCTION_ENTRY* RtlLookupFunctionEntryCHPE(
+            [In] IntPtr ControlPc,
+            out IntPtr ImageBase,
+            [Optional] UNWIND_HISTORY_TABLE_ARM64* HistoryTable
             );
         #endregion
     }

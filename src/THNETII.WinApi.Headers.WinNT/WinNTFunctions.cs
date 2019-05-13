@@ -379,5 +379,32 @@ namespace THNETII.WinApi.Native.WinNT
             }
         }
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 18683
+        #region RtlGrowFunctionTable function
+        /// <summary>
+        /// Reports that a dynamic function table has increased in size.
+        /// </summary>
+        /// <param name="DynamicTable">An opaque reference returned by <see cref="RtlAddGrowableFunctionTable(out IntPtr, IMAGE_IA64_RUNTIME_FUNCTION_ENTRY*, int, int, IntPtr, IntPtr)"/>.</param>
+        /// <param name="NewEntryCount">The new number of entries in the <see cref="IMAGE_IA64_RUNTIME_FUNCTION_ENTRY"/> array. This must be greater than the previously reported size of the array.</param>
+        /// <remarks>
+        /// <para><see cref="RtlGrowFunctionTable"/> should be called after populating the corresponding entries in the <see cref="IMAGE_IA64_RUNTIME_FUNCTION_ENTRY"/> array specified in <see cref="RtlAddGrowableFunctionTable(out IntPtr, IMAGE_IA64_RUNTIME_FUNCTION_ENTRY*, int, int, IntPtr, IntPtr)"/>.</para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows 8 [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2012 [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/winnt/nf-winnt-rtlgrowfunctiontable">RtlGrowFunctionTable function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        [DllImport(NativeLibraryNames.Ntdll, CallingConvention = CallingConvention.StdCall)]
+        [SuppressMessage("Usage", "PC003: Native API not available in UWP", Justification = "Documentation")]
+        public static extern void RtlGrowFunctionTable(
+            [In, Out] IntPtr DynamicTable,
+            [In] int NewEntryCount
+            );
+        #endregion
     }
 }

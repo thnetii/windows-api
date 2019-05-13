@@ -3,7 +3,7 @@
 
 int main(int argc, char* argv[])
 {
-    PROCESSOR_IDLESTATE_POLICY instance;
+    PGET_RUNTIME_FUNCTION_CALLBACK instance;
     const int size = sizeof(instance);
     const int value = SECURITY_MAX_SID_SIZE;
 

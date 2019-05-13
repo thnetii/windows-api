@@ -950,5 +950,15 @@ namespace THNETII.WinApi.Native.WinNT
             out IntPtr BaseOfImage
             );
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19130
+        #region RtlCompareMemory function
+        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi)]
+        [SuppressMessage("Usage", "PC003: Native API not available in UWP")]
+        public static extern UIntPtr RtlCompareMemory(
+            [In] IntPtr Source1,
+            [In] IntPtr Source2,
+            [In] UIntPtr Length
+            );
+        #endregion
     }
 }

@@ -11,7 +11,7 @@ namespace THNETII.WinApi.Native.WinNT
     /// </remarks>
     /// <seealso cref="SymFunctionTableAccess64"/>
     [StructLayout(LayoutKind.Explicit, Pack = 4)]
-    public struct IMAGE_IA64_RUNTIME_FUNCTION_ENTRY
+    public struct IMAGE_AMD64_RUNTIME_FUNCTION_ENTRY
     {
         /// <summary>
         /// The address of the start of the function.

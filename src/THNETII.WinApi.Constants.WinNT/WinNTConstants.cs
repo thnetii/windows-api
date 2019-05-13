@@ -1160,6 +1160,126 @@ namespace THNETII.WinApi.Native.WinNT
         /// <summary>Maximum times thread can be suspended</summary>
         public const int MAXIMUM_SUSPEND_COUNT = 0x7f;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 3736
+        //
+        // The following flags control the contents of the CONTEXT structure.
+        //
+
+        public const int CONTEXT_AMD64 = 0x00100000;
+
+        //public const int CONTEXT_CONTROL = (CONTEXT_AMD64 | 0x00000001);
+        //public const int CONTEXT_INTEGER = (CONTEXT_AMD64 | 0x00000002);
+        //public const int CONTEXT_SEGMENTS = (CONTEXT_AMD64 | 0x00000004);
+        //public const int CONTEXT_FLOATING_POINT = (CONTEXT_AMD64 | 0x00000008);
+        //public const int CONTEXT_DEBUG_REGISTERS = (CONTEXT_AMD64 | 0x00000010);
+
+        //public const int CONTEXT_FULL = (CONTEXT_CONTROL | CONTEXT_INTEGER | CONTEXT_FLOATING_POINT);
+
+        //public const int CONTEXT_ALL = (CONTEXT_CONTROL | CONTEXT_INTEGER | CONTEXT_SEGMENTS | CONTEXT_FLOATING_POINT | CONTEXT_DEBUG_REGISTERS);
+
+        //public const int CONTEXT_XSTATE = (CONTEXT_AMD64 | 0x00000040);
+
+        public const int CONTEXT_KERNEL_DEBUGGER = 0x04000000;
+
+        //public const int CONTEXT_EXCEPTION_ACTIVE = 0x08000000;
+        //public const int CONTEXT_SERVICE_ACTIVE = 0x10000000;
+        //public const int CONTEXT_EXCEPTION_REQUEST = 0x40000000;
+        //public const int CONTEXT_EXCEPTION_REPORTING = unchecked((int)0x80000000);
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 3776
+        //
+        // Define initial MxCsr and FpCsr control.
+        //
+
+        /// <summary>initial MXCSR value</summary>
+        public const short INITIAL_MXCSR = 0x1f80;
+        /// <summary>initial FPCSR value</summary>
+        public const short INITIAL_FPCSR = 0x027f;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 3951
+        public const int RUNTIME_FUNCTION_INDIRECT = 0x1;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 3953
+        //
+        // Define unwind information flags.
+        //
+
+        public const int UNW_FLAG_NHANDLER = 0x0;
+        public const int UNW_FLAG_EHANDLER = 0x1;
+        public const int UNW_FLAG_UHANDLER = 0x2;
+        public const int UNW_FLAG_CHAININFO = 0x4;
+
+        /// <summary>Software only flag</summary>
+        public const uint UNW_FLAG_NO_EPILOGUE = 0x80000000U;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 3968
+        public const int UNWIND_HISTORY_TABLE_SIZE = 12;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 4010
+        public const string OUT_OF_PROCESS_FUNCTION_TABLE_CALLBACK_EXPORT_NAME = "OutOfProcessFunctionTableCallback";
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 4799
+        public const int CONTEXT_ARM = 0x00200000;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 4817
+        /// <summary>
+        /// This flag is set by the unwinder if it has unwound to a call
+        /// site, and cleared whenever it unwinds through a trap frame.
+        /// It is used by language-specific exception handlers to help
+        /// differentiate exception scopes during dispatching.
+        /// </summary>
+        public const int CONTEXT_UNWOUND_TO_CALL = 0x20000000;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 4830
+        //
+        // Define initial Cpsr/Fpscr value
+        //
+
+        public const int INITIAL_CPSR = 0x10;
+        public const int INITIAL_FPSCR = 0;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 4837
+        //
+        // Specify the number of breakpoints and watchpoints that the OS
+        // will track. Architecturally, ARM supports up to 16. In practice,
+        // however, almost no one implements more than 4 of each.
+        //
+
+        public const int ARM_MAX_BREAKPOINTS = 8;
+        public const int ARM_MAX_WATCHPOINTS = 1;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 5911
+        public const int CONTEXT_ARM64 = 0x00400000;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 5915
+        public const int CONTEXT_ARM64_CONTROL = (CONTEXT_ARM64 | 0x1);
+        public const int CONTEXT_ARM64_INTEGER = (CONTEXT_ARM64 | 0x2);
+        public const int CONTEXT_ARM64_FLOATING_POINT = (CONTEXT_ARM64 | 0x4);
+        public const int CONTEXT_ARM64_DEBUG_REGISTERS = (CONTEXT_ARM64 | 0x8);
+        public const int CONTEXT_ARM64_X18 = (CONTEXT_ARM64 | 0x10);
+
+        //
+        // CONTEXT_ARM64_X18 is not part of CONTEXT_ARM64_FULL because in NT user-mode
+        // threads, x18 contains a pointer to the TEB and should generally not be set
+        // without intending to.
+        //
+
+        public const int CONTEXT_ARM64_FULL = (CONTEXT_ARM64_CONTROL | CONTEXT_ARM64_INTEGER | CONTEXT_ARM64_FLOATING_POINT);
+        public const int CONTEXT_ARM64_ALL = (CONTEXT_ARM64_CONTROL | CONTEXT_ARM64_INTEGER | CONTEXT_ARM64_FLOATING_POINT | CONTEXT_ARM64_DEBUG_REGISTERS | CONTEXT_ARM64_X18);
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 5956
+        public const int CONTEXT_RET_TO_GUEST = 0x04000000;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 5966
+        //
+        // Specify the number of breakpoints and watchpoints that the OS
+        // will track. Architecturally, ARM64 supports up to 16. In practice,
+        // however, almost no one implements more than 4 of each.
+        //
+
+        public const int ARM64_MAX_BREAKPOINTS = 8;
+        public const int ARM64_MAX_WATCHPOINTS = 2;
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 7439
         //
         // The following values specify the type of failing access when the status is
@@ -1188,17 +1308,17 @@ namespace THNETII.WinApi.Native.WinNT
         public const int CONTEXT_i486 = 0x00010000;    // i486 have identical context records
 
         /// <summary>SS:SP, CS:IP, FLAGS, BP</summary>
-        public const int CONTEXT_CONTROL = CONTEXT_i386 | 0x00000001;
+        public const int CONTEXT_CONTROL = 0x00000001;
         /// <summary>AX, BX, CX, DX, SI, DI</summary>
-        public const int CONTEXT_INTEGER = CONTEXT_i386 | 0x00000002;
+        public const int CONTEXT_INTEGER = 0x00000002;
         /// <summary>DS, ES, FS, GS</summary>
-        public const int CONTEXT_SEGMENTS = CONTEXT_i386 | 0x00000004;
+        public const int CONTEXT_SEGMENTS = 0x00000004;
         /// <summary>387 state</summary>
-        public const int CONTEXT_FLOATING_POINT = CONTEXT_i386 | 0x00000008;
+        public const int CONTEXT_FLOATING_POINT = 0x00000008;
         /// <summary>DB 0-3,6,7</summary>
-        public const int CONTEXT_DEBUG_REGISTERS = CONTEXT_i386 | 0x00000010;
+        public const int CONTEXT_DEBUG_REGISTERS = 0x00000010;
         /// <summary>cpu specific extensions</summary>
-        public const int CONTEXT_EXTENDED_REGISTERS = CONTEXT_i386 | 0x00000020;
+        public const int CONTEXT_EXTENDED_REGISTERS = 0x00000020;
 
         public const int CONTEXT_FULL = CONTEXT_CONTROL | CONTEXT_INTEGER |
                                          CONTEXT_SEGMENTS;
@@ -1207,7 +1327,7 @@ namespace THNETII.WinApi.Native.WinNT
                                         CONTEXT_FLOATING_POINT | CONTEXT_DEBUG_REGISTERS |
                                         CONTEXT_EXTENDED_REGISTERS;
 
-        public const int CONTEXT_XSTATE = CONTEXT_i386 | 0x00000040;
+        public const int CONTEXT_XSTATE = 0x00000040;
 
         public const int CONTEXT_EXCEPTION_ACTIVE = 0x08000000;
         public const int CONTEXT_SERVICE_ACTIVE = 0x10000000;
@@ -1216,6 +1336,45 @@ namespace THNETII.WinApi.Native.WinNT
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 7512
         public const int MAXIMUM_SUPPORTED_EXTENSION = 512;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 8561
+        // this assumes that i386 and
+        // i486 have identical context records
+        public const int WOW64_CONTEXT_i386 = 0x00010000;
+        public const int WOW64_CONTEXT_i486 = 0x00010000;
+
+        // SS:SP, CS:IP, FLAGS, BP
+        public const int WOW64_CONTEXT_CONTROL = (WOW64_CONTEXT_i386 | 0x00000001);
+        // AX, BX, CX, DX, SI, DI
+        public const int WOW64_CONTEXT_INTEGER = (WOW64_CONTEXT_i386 | 0x00000002);
+        // DS, ES, FS, GS
+        public const int WOW64_CONTEXT_SEGMENTS = (WOW64_CONTEXT_i386 | 0x00000004);
+        // 387 state
+        public const int WOW64_CONTEXT_FLOATING_POINT = (WOW64_CONTEXT_i386 | 0x00000008);
+        // DB 0-3,6,7
+        public const int WOW64_CONTEXT_DEBUG_REGISTERS = (WOW64_CONTEXT_i386 | 0x00000010);
+        // cpu specific extensions
+        public const int WOW64_CONTEXT_EXTENDED_REGISTERS = (WOW64_CONTEXT_i386 | 0x00000020);
+
+        public const int WOW64_CONTEXT_FULL = (WOW64_CONTEXT_CONTROL | WOW64_CONTEXT_INTEGER | WOW64_CONTEXT_SEGMENTS);
+
+        public const int WOW64_CONTEXT_ALL = (WOW64_CONTEXT_CONTROL | WOW64_CONTEXT_INTEGER | WOW64_CONTEXT_SEGMENTS | WOW64_CONTEXT_FLOATING_POINT | WOW64_CONTEXT_DEBUG_REGISTERS | WOW64_CONTEXT_EXTENDED_REGISTERS);
+
+        public const int WOW64_CONTEXT_XSTATE = (WOW64_CONTEXT_i386 | 0x00000040);
+
+        public const int WOW64_CONTEXT_EXCEPTION_ACTIVE = 0x08000000;
+        public const int WOW64_CONTEXT_SERVICE_ACTIVE = 0x10000000;
+        public const int WOW64_CONTEXT_EXCEPTION_REQUEST = 0x40000000;
+        public const int WOW64_CONTEXT_EXCEPTION_REPORTING = unchecked((int)0x80000000);
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 8586
+        //
+        //  Define the size of the 80387 save area, which is in the context frame.
+        //
+
+        public const int WOW64_SIZE_OF_80387_REGISTERS = 80;
+
+        public const int WOW64_MAXIMUM_SUPPORTED_EXTENSION = 512;
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 8741
         /// <summary>Noncontinuable exception</summary>

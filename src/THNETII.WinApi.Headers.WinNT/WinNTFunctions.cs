@@ -357,6 +357,27 @@ namespace THNETII.WinApi.Native.WinNT
             [In] IntPtr RangeBase,
             [In] IntPtr RangeEnd
             );
+        /// <inheritdoc cref="RtlAddGrowableFunctionTable(out IntPtr, IMAGE_IA64_RUNTIME_FUNCTION_ENTRY*, int, int, IntPtr, IntPtr)"/>
+        public static unsafe NTSTATUS RtlAddGrowableFunctionTable(
+            out IntPtr DynamicTable,
+            Span<IMAGE_IA64_RUNTIME_FUNCTION_ENTRY> FunctionTable,
+            int EntryCount,
+            IntPtr RangeBase,
+            IntPtr RangeEnd
+            )
+        {
+            fixed (IMAGE_IA64_RUNTIME_FUNCTION_ENTRY* pFunctionTable = FunctionTable)
+            {
+                return RtlAddGrowableFunctionTable(
+                    out DynamicTable,
+                    pFunctionTable,
+                    EntryCount,
+                    FunctionTable.Length,
+                    RangeBase,
+                    RangeEnd
+                    );
+            }
+        }
         #endregion
     }
 }

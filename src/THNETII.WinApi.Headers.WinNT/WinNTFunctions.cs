@@ -180,5 +180,35 @@ namespace THNETII.WinApi.Native.WinNT
         [SuppressMessage("Usage", "PC003: Native API not available in UWP", Justification = "Documentation")]
         public static extern void RtlCaptureContext(out CONTEXT ContextRecord);
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 18618
+        #region RtlUnwind function
+        /// <summary>
+        /// Initiates an unwind of procedure call frames.
+        /// </summary>
+        /// <param name="TargetFrame">A pointer to the call frame that is the target of the unwind. If this parameter is <see cref="IntPtr.Zero"/>, the function performs an exit unwind.</param>
+        /// <param name="TargetIp">The continuation address of the unwind. This parameter is ignored if <paramref name="TargetFrame"/> is <see cref="IntPtr.Zero"/>.</param>
+        /// <param name="ExceptionRecord">An <see cref="EXCEPTION_RECORD"/> structure.</param>
+        /// <param name="ReturnValue">A value to be placed in the integer function return register before continuing execution.</param>
+        /// <remarks>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows XP [desktop apps | UWP apps]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps | UWP apps]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/winnt/nf-winnt-rtlunwind">RtlUnwind function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="EXCEPTION_RECORD"/>
+        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.StdCall)]
+        public static extern void RtlUnwind(
+            [In, Optional] IntPtr TargetFrame,
+            [In, Optional] IntPtr TargetIp,
+            [In, Optional] in EXCEPTION_RECORD ExceptionRecord,
+            [In] IntPtr ReturnValue
+            );
+        #endregion
     }
 }

@@ -459,8 +459,24 @@ namespace THNETII.WinApi.Native.WinNT
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 18707
         #region RtlLookupFunctionEntry functions
+        /// <summary>
+        /// Searches the active function tables for an entry that corresponds to the specified PC value.
+        /// </summary>
+        /// <param name="ControlPc">The virtual address of an instruction bundle within the function.</param>
+        /// <param name="ImageBase">The base address of module to which the function belongs.</param>
+        /// <param name="HistoryTable">The global pointer value of the module.</param>
+        /// <returns>
+        /// If there is no entry in the function table for the specified PC, the function returns <see langword="null"/>. Otherwise, the function returns the address of the function table entry that corresponds to the specified PC.
+        /// </returns>
+        /// <remarks>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/winnt/nf-winnt-rtllookupfunctionentry">RtlLookupFunctionEntry function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="RtlUnwindEx"/>
+        /// <seealso cref="RtlVirtualUnwind"/>
         [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.StdCall)]
-        public static extern ref readonly IMAGE_AMD64_RUNTIME_FUNCTION_ENTRY RtlLookupFunctionEntry(
+        public static unsafe extern IMAGE_AMD64_RUNTIME_FUNCTION_ENTRY* RtlLookupFunctionEntry(
             [In] long ControlPc,
             out long ImageBase,
             [Optional] ref UNWIND_HISTORY_TABLE_AMD64 HistoryTable

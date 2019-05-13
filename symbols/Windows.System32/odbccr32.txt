@@ -1,0 +1,65 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\odbccr32.dll
+
+File Type: DLL
+
+  Section contains the following exports for ODBCCR32.dll
+
+    00000000 characteristics
+    291CB410 time date stamp
+        0.00 version
+           4 ordinal base
+          75 number of functions
+          37 number of names
+
+    ordinal hint RVA      name
+
+          6    0 0000C960 ReleaseCLStmtResources
+          4    1 00008A40 SQLBindCol
+         72    2 00008CE0 SQLBindParameter
+         78    3 0000AA60 SQLBulkOperations
+          5    4 00008E80 SQLCancel
+         26    5 00009670 SQLCloseCursor
+         29    6 0000B1C0 SQLEndTran
+         11    7 00009070 SQLExecDirect
+         12    8 000091A0 SQLExecute
+         59    9 000091E0 SQLExtendedFetch
+         13    A 000092D0 SQLFetch
+         30    B 00009410 SQLFetchScroll
+         31    C 00009550 SQLFreeHandle
+         16    D 000097E0 SQLFreeStmt
+         43    E 000098A0 SQLGetData
+         33    F 0000C200 SQLGetDescField
+         34   10 0000C6A0 SQLGetDescRec
+         45   11 000099F0 SQLGetInfo
+         38   12 0000AD80 SQLGetStmtAttr
+         46   13 00009CA0 SQLGetStmtOption
+         61   14 00009FD0 SQLMoreResults
+         62   15 0000A120 SQLNativeSql
+         63   16 0000A2E0 SQLNumParams
+         48   17 0000A380 SQLParamData
+         64   18 0000A3C0 SQLParamOptions
+         19   19 0000A4F0 SQLPrepare
+         49   1A 0000A620 SQLPutData
+         20   1B 0000A660 SQLRowCount
+         39   1C 0000A930 SQLSetConnectAttr
+         50   1D 0000A950 SQLSetConnectOption
+         73   1E 0000B1D0 SQLSetDescField
+         74   1F 0000B860 SQLSetDescRec
+         68   20 0000A980 SQLSetPos
+         69   21 0000AAA0 SQLSetScrollOptions
+         76   22 0000AB20 SQLSetStmtAttr
+         51   23 0000AE50 SQLSetStmtOption
+         23   24 0000BC10 SQLTransact
+
+  Summary
+
+        2000 .data
+        1000 .pdata
+        6000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        E000 .text

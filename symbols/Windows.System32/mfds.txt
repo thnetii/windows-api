@@ -1,0 +1,53 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\mfds.dll
+
+File Type: DLL
+
+  Section contains the following exports for MFDS.DLL
+
+    00000000 characteristics
+    4D86E969 time date stamp
+        0.00 version
+           1 ordinal base
+          24 number of functions
+          24 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00041240 DllCanUnloadNow
+          2    1 00003FD0 DllGetClassObject
+          3    2 000411C0 DllRegisterServer
+          4    3 000411F0 DllUnregisterServer
+          5    4 00036EE0 InitAACAudioStream_
+          6    5 00036EF0 InitAC3AudioStream_
+          7    6 00036F00 InitBDAVLPCMAudioStream_
+          8    7 00036F10 InitDDPlusAudioStream_
+          9    8 00036F20 InitDTSAudioStream_
+         10    9 00036F30 InitH264Stream_
+         11    A 00036F40 InitHEVCStream_
+         12    B 00036F50 InitLPCMAudioStream_
+         13    C 00036F60 InitLPCMMiracastAudioStream_
+         14    D 0000EA60 InitMpeg1VideoStream_
+         15    E 0000EBE0 InitMpeg2VideoStream_
+         16    F 00010060 InitMpegAudioStream_
+         17   10 00036F70 InitTrueHDAudioStream_
+         18   11 0000D780 PESHeaderLength
+         19   12 0000DBA0 PESPacketLength
+         20   13 0000D190 PESPacketPTSinPCR
+         21   14 00013720 PackMuxRate
+         22   15 00013220 PackSCR
+         23   16 00036F80 xCreateCannedMediaType
+         24   17 000119F0 xMediaSubTypeTransform
+
+  Summary
+
+        3000 .data
+        1000 .didat
+        9000 .pdata
+       23000 .rdata
+        2000 .reloc
+        1000 .rsrc
+       DB000 .text

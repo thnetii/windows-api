@@ -1,0 +1,46 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\energy.dll
+
+File Type: DLL
+
+  Section contains the following exports for ENERGY.dll
+
+    00000000 characteristics
+    F51BC938 time date stamp
+        0.00 version
+           1 ordinal base
+          17 number of functions
+          17 number of names
+
+    ordinal hint RVA      name
+
+          3    0 00022BA0 EnergyWizard_Analyze
+          4    1 00022BC0 EnergyWizard_CancelTrace
+          5    2 00022BE0 EnergyWizard_CollectTrace
+          6    3 00022C00 EnergyWizard_CreateEnergyWizard
+          7    4 00022C30 EnergyWizard_DefaultTraceDuration
+          8    5 00022C60 EnergyWizard_DestroyEnergyWizard
+          9    6 00022C90 EnergyWizard_GetLogEntryCounts
+         10    7 00022D00 EnergyWizard_SaveReport
+         11    8 00022D20 EnergyWizard_SqmAnalysis
+         12    9 00022D40 EnergyWizard_TransformReport
+          1    A 00011CF0 SaveBatteryReport
+         13    B 00046330 SaveSleepStudyReport
+         14    C 0005FA30 SaveSystemSleepDiagnosticsReport
+         15    D 00046B90 SendScreenOnTelemetry
+         16    E 00011EF0 TransformBatteryReport
+         17    F 00046CF0 TransformSleepStudyReport
+          2   10 0005D5F0 TransformSystemSleepDiagnosticsReport
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        6000 .pdata
+       2B000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       6D000 .text

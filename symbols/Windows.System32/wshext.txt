@@ -1,0 +1,39 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\wshext.dll
+
+File Type: DLL
+
+  Section contains the following exports for WSHEXT.dll
+
+    00000000 characteristics
+    F0523E1F time date stamp
+        0.00 version
+           1 ordinal base
+          10 number of functions
+          10 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000083C0 CreateIndirectData
+          7    1 00005C20 DllCanUnloadNow
+          8    2 00005C70 DllGetClassObject
+          9    3 00005CC0 DllRegisterServer
+         10    4 000060B0 DllUnregisterServer
+          2    5 00001120 GetSignedDataMsg
+          3    6 00001010 IsFileSupportedName
+          4    7 00009240 PutSignedDataMsg
+          5    8 000093A0 RemoveSignedDataMsg
+          6    9 00009930 VerifyIndirectData
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        9000 .rdata
+        1000 .reloc
+        2000 .rsrc
+        D000 .text

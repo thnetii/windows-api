@@ -1,0 +1,58 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\batmeter.dll
+
+File Type: DLL
+
+  Section contains the following exports for BatMeter.dll
+
+    00000000 characteristics
+    769BF73F time date stamp
+        0.00 version
+         999 ordinal base
+          29 number of functions
+          28 number of names
+
+    ordinal hint RVA      name
+
+       1000    0 000034A0 BatMeterIconAnimationReset
+       1001    1 000035C0 BatMeterIconThemeReset
+       1002    2 00003630 BatMeterOnDeviceChange
+       1003    3 000036F0 CleanupBatteryData
+       1004    4 00003790 CreateBatteryData
+       1005    5 00003A70 GetBatMeterIconAnimationState
+       1006    6 00003C30 GetBatMeterIconAnimationTimeDelay
+       1007    7 00003C80 GetBatMeterIconAnimationUpdate
+       1008    8 00003E90 GetBatteryCapacityInfo
+       1009    9 00005770 GetBatteryDetails
+       1010    A 00004020 GetBatteryImmersiveIcon
+       1011    B 000040D0 GetBatteryInfo
+       1012    C 00004190 GetBatteryStatusText
+       1013    D 000043F0 GetBatteryWorkingState
+       1014    E 00004410 IsBatteryBad
+       1015    F 00004420 IsBatteryHealthWarningEnabled
+       1016   10 00004430 IsBatteryLevelCritical
+       1017   11 00004450 IsBatteryLevelLow
+       1018   12 00004470 IsBatteryLevelReserve
+       1019   13 00001020 PowerCapabilities
+       1020   14 00004840 QueryBatteryData
+       1021   15 00004420 SetBatteryHealthWarningState
+       1022   16 00004AC0 SetBatteryLevel
+       1023   17 00004B40 SetBatteryWorkingState
+       1024   18 00005E90 SubscribeBatteryUpdateNotification
+       1025   19 00005F00 UnsubscribeBatteryUpdateNotification
+       1026   1A 00004B60 UpdateBatteryData
+       1027   1B 00004BA0 UpdateBatteryDataAsync
+        999      000034C0 [NONAME]
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        3000 .rdata
+        1000 .reloc
+      18F000 .rsrc
+        6000 .text

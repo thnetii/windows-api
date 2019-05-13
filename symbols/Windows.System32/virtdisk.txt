@@ -1,0 +1,57 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\virtdisk.dll
+
+File Type: DLL
+
+  Section contains the following exports for VirtDisk.dll
+
+    00000000 characteristics
+    D6262D2A time date stamp
+        0.00 version
+           1 ordinal base
+          29 number of functions
+          29 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000023A0 AddVirtualDiskParent
+          2    1 00005CE0 ApplySnapshotVhdSet
+          3    2 00007F70 AttachVirtualDisk
+          4    3 00005DB0 BreakMirrorVirtualDisk
+          5    4 00005E10 CompactVirtualDisk
+          6    5 00001B60 CompleteForkVirtualDisk
+          7    6 00002E90 CreateVirtualDisk
+          8    7 00005F50 DeleteSnapshotVhdSet
+          9    8 00009F00 DeleteVirtualDiskMetadata
+         10    9 00008260 DetachVirtualDisk
+         11    A 00009F80 EnumerateVirtualDiskMetadata
+         12    B 00006000 ExpandVirtualDisk
+         13    C 00001BC0 ForkVirtualDisk
+         14    D 00004860 GetAllAttachedVirtualDiskPhysicalPaths
+         15    E 00006F90 GetStorageDependencyInformation
+         16    F 00004DB0 GetVirtualDiskInformation
+         17   10 0000A060 GetVirtualDiskMetadata
+         18   11 00006DF0 GetVirtualDiskOperationProgress
+         19   12 000052A0 GetVirtualDiskPhysicalPath
+         20   13 000060F0 MergeVirtualDisk
+         21   14 00006250 MirrorVirtualDisk
+         22   15 00006420 ModifyVhdSet
+         23   16 000068A0 OpenVirtualDisk
+         24   17 00005540 QueryChangesVirtualDisk
+         25   18 00009170 RawSCSIVirtualDisk
+         26   19 000065B0 ResizeVirtualDisk
+         27   1A 00005960 SetVirtualDiskInformation
+         28   1B 0000A170 SetVirtualDiskMetadata
+         29   1C 000067A0 TakeSnapshotVhdSet
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        3000 .rdata
+        1000 .reloc
+        2000 .rsrc
+        A000 .text

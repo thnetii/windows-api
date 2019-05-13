@@ -1,0 +1,64 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\AppXDeploymentServer.dll
+
+File Type: DLL
+
+  Section contains the following exports for AppxDeploymentServer.dll
+
+    00000000 characteristics
+    80424DB8 time date stamp
+        0.00 version
+           1 ordinal base
+          35 number of functions
+          35 number of names
+
+    ordinal hint RVA      name
+
+         33    0 00170500 AddToPurgeList
+          1    1 001730F0 AppXApplyTrustLabelToFolder
+         34    2 00172BA0 AppXSetTrustLabelOnPackage
+          2    3 00051630 CancelDeploymentImplementation
+          3    4 00019720 CreateCanonicalPriFileImplementation
+          4    5 0004F670 CreateWnfStateNameImplementation
+          5    6 0004C260 EnumPackagesByUserSidInternal
+          6    7 0004C3E0 EnumPackagesByUserSidNamePublisherInternal
+          7    8 0004C590 EnumPackagesByUserSidPackageFamilyNameInternal
+          8    9 0004D210 EnumVisibilityByPackageFullNameInternal
+          9    A 0004CDB0 FindPackageByUserSidPackageFullNameInternal
+         10    B 000634A0 GenerateBytecodeForPackageImplementation
+         11    C 000638A0 GenerateBytecodeForPackagesImplementation
+         12    D 000467A0 GetApplicability5Implementation
+         13    E 00048190 GetApplicabilityImplementation
+         14    F 00043DE0 GetDeploymentError
+         15   10 00065DD0 GetPackageFilesDiskUsageImplementation
+         16   11 00065ED0 GetPackageFilesDiskUsagePerVolumeImplementation
+         17   12 0004D890 GetPackageTypeImplementation
+         18   13 000DC330 GetSessionIdsOwnedByUser
+         19   14 0004D670 IsPackageInstalledInternal
+         20   15 0005DC60 MergeSystemResourceFilesImplementation
+         21   16 0004F520 PackageRepositoryAllocate
+         22   17 00008340 PackageRepositoryFree
+         23   18 00051760 PackageStatusOperationImplementation
+         24   19 00051860 PackageVolumeStatusImplementation
+         25   1A 00051950 RDSRecoverRequestsImplementation
+         26   1B 00052980 RepairResourcesPriAclsImplementation
+         27   1C 00062E80 RequestPackageOperationImplementation
+         28   1D 00053010 ServerSideRequestContentGroupsImplementation
+         29   1E 000648F0 ServiceMain
+         30   1F 00043E10 SetDeploymentError
+         31   20 00052620 SetPackageStatusBlockingForUserImplementation
+         32   21 0004F8F0 StartDeploymentImplementation
+         35   22 00004940 SvchostPushServiceGlobals
+
+  Summary
+
+        6000 .data
+        1000 .didat
+       11000 .pdata
+       BD000 .rdata
+        4000 .reloc
+       3C000 .rsrc
+      22A000 .text

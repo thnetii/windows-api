@@ -1,0 +1,40 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\ngckeyenum.dll
+
+File Type: DLL
+
+  Section contains the following exports for ngckeyenum.dll
+
+    00000000 characteristics
+    BB931F1F time date stamp
+        0.00 version
+           1 ordinal base
+          11 number of functions
+          11 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00004C80 NgcCredProvEnumLogonKeys
+          2    1 00004FF0 NgcCredProvFreeBuffer
+          3    2 00004ED0 NgcCredProvInvalidateLogonKeysCache
+          4    3 00004060 NgcSerializeConvenienceCredential
+          5    4 00004700 NgcSerializeConveniencePasswordChangeCredential
+          6    5 000042B0 NgcSerializeKeyCredential
+          7    6 00004890 NgcSerializeKeyPasswordChangeCredential
+          8    7 00004BB0 NgcSerializeKeySspiCredential
+          9    8 000045E0 NgcSerializeMsaPasswordCredential
+         10    9 00004460 NgcSerializePasswordCredential
+         11    A 00004A80 NgcSerializeSmartCardCredential
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        2000 .pdata
+       10000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       1D000 .text

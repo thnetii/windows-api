@@ -1,0 +1,82 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\wdi.dll
+
+File Type: DLL
+
+  Section contains the following exports for wdi.dll
+
+    00000000 characteristics
+    E572453B time date stamp
+        0.00 version
+           1 ordinal base
+          53 number of functions
+          53 number of names
+
+    ordinal hint RVA      name
+
+          3    0 00010B10 DllCanUnloadNow
+          4    1 00010B30 DllGetClassObject
+          1    2 00010620 ServiceMain
+          5    3 00009E20 WdiAddFileToInstance
+          6    4 00003700 WdiAddParameter
+          7    5 0000C460 WdiCancel
+          8    6 0000C540 WdiCloseInstance
+          9    7 0000C6F0 WdiCreateInstance
+         10    8 0000C9B0 WdiDeleteQueuedResolution
+         11    9 0000CB00 WdiDiagnose
+         12    A 0000A050 WdiGetClientActivityId
+         13    B 0000A0F0 WdiGetClientLCID
+         14    C 000035C0 WdiGetDiagnosticModuleId
+         15    D 000034A0 WdiGetEvent
+         16    E 0000A190 WdiGetInstanceFilePath
+         17    F 0000A3C0 WdiGetInstanceId
+         18   10 00002960 WdiGetLoggerSnapshotPath
+         19   11 00004620 WdiGetParameterByIndex
+         20   12 0000A460 WdiGetParameterByName
+         21   13 0000A680 WdiGetParameterCount
+         22   14 000046D0 WdiGetParameterData
+         23   15 0000A750 WdiGetParameterDataLength
+         24   16 0000A7B0 WdiGetParameterDiagnosticModuleId
+         25   17 0000A820 WdiGetParameterFlags
+         26   18 0000A880 WdiGetParameterName
+         27   19 0000CC60 WdiGetProgress
+         28   1A 0000CDD0 WdiGetQueuedResolutionAudience
+         29   1B 0000CEA0 WdiGetQueuedResolutionExpirationDate
+         30   1C 0000CF90 WdiGetQueuedResolutionId
+         31   1D 0000D060 WdiGetQueuedResolutionName
+         32   1E 0000D320 WdiGetQueuedResolutionPriority
+         33   1F 0000A9E0 WdiGetResult
+         34   20 0000D3F0 WdiGetScenarioIcon
+         35   21 00004570 WdiGetScenarioInfo
+         36   22 0000D690 WdiGetScenarioInstanceCreatedDate
+         37   23 0000D760 WdiGetScenarioInstanceFilePath
+         38   24 0000D9A0 WdiGetScenarioInstanceId
+         39   25 0000DA70 WdiGetScenarioInstances
+         40   26 0000DB70 WdiGetScenarioSourceName
+         41   27 0000DE30 WdiGetScenarioTypeName
+         42   28 0000AA70 WdiImpersonateClient
+         43   29 0000E0F0 WdiIsQueuedResolutionAdmin
+         44   2A 0000E1C0 WdiLaunchQueuedResolution
+         45   2B 0000E310 WdiOpenInstance
+         46   2C 0000AB40 WdiQueueCurrentResolution
+         47   2D 0000E3E0 WdiResolve
+         48   2E 0000AC30 WdiRevertToSelf
+         49   2F 0000AC40 WdiSetFeedback
+         50   30 00003620 WdiSetProblemDetectionResult
+         51   31 0000AD00 WdiSetProgress
+         52   32 0000AE50 WdiSetResolution
+         53   33 00010C60 WdipLaunchLocalHost
+          2   34 000107A0 WdipLaunchRunDLLUserHost
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        6000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       12000 .text

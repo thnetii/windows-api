@@ -1,0 +1,325 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\netapi32.dll
+
+File Type: DLL
+
+  Section contains the following exports for NETAPI32.dll
+
+    00000000 characteristics
+    7D10A2EB time date stamp
+        0.00 version
+           1 ordinal base
+         296 number of functions
+         296 number of names
+
+    ordinal hint RVA      name
+
+          1    0          DavAddConnection (forwarded to ext-ms-win-rdr-davhlpr-l1-1-0.DavAddConnection)
+          2    1          DavDeleteConnection (forwarded to ext-ms-win-rdr-davhlpr-l1-1-0.DavDeleteConnection)
+          3    2          DavFlushFile (forwarded to ext-ms-win-rdr-davhlpr-l1-1-0.DavFlushFile)
+          4    3          DavGetExtendedError (forwarded to ext-ms-win-rdr-davhlpr-l1-1-0.DavGetExtendedError)
+          5    4          DavGetHTTPFromUNCPath (forwarded to ext-ms-win-rdr-davhlpr-l1-1-0.DavGetHTTPFromUNCPath)
+          6    5          DavGetUNCFromHTTPPath (forwarded to ext-ms-win-rdr-davhlpr-l1-1-0.DavGetUNCFromHTTPPath)
+          7    6          DsAddressToSiteNamesA (forwarded to LOGONCLI.DsAddressToSiteNamesA)
+          8    7          DsAddressToSiteNamesExA (forwarded to LOGONCLI.DsAddressToSiteNamesExA)
+          9    8          DsAddressToSiteNamesExW (forwarded to LOGONCLI.DsAddressToSiteNamesExW)
+         10    9          DsAddressToSiteNamesW (forwarded to LOGONCLI.DsAddressToSiteNamesW)
+         11    A          DsDeregisterDnsHostRecordsA (forwarded to LOGONCLI.DsDeregisterDnsHostRecordsA)
+         12    B          DsDeregisterDnsHostRecordsW (forwarded to LOGONCLI.DsDeregisterDnsHostRecordsW)
+         13    C          DsEnumerateDomainTrustsA (forwarded to LOGONCLI.DsEnumerateDomainTrustsA)
+         14    D          DsEnumerateDomainTrustsW (forwarded to LOGONCLI.DsEnumerateDomainTrustsW)
+         15    E          DsGetDcCloseW (forwarded to LOGONCLI.DsGetDcCloseW)
+         16    F          DsGetDcNameA (forwarded to LOGONCLI.DsGetDcNameA)
+         17   10          DsGetDcNameW (forwarded to LOGONCLI.DsGetDcNameW)
+         18   11          DsGetDcNameWithAccountA (forwarded to LOGONCLI.DsGetDcNameWithAccountA)
+         19   12          DsGetDcNameWithAccountW (forwarded to LOGONCLI.DsGetDcNameWithAccountW)
+         20   13          DsGetDcNextA (forwarded to LOGONCLI.DsGetDcNextA)
+         21   14          DsGetDcNextW (forwarded to LOGONCLI.DsGetDcNextW)
+         22   15          DsGetDcOpenA (forwarded to LOGONCLI.DsGetDcOpenA)
+         23   16          DsGetDcOpenW (forwarded to LOGONCLI.DsGetDcOpenW)
+         24   17          DsGetDcSiteCoverageA (forwarded to LOGONCLI.DsGetDcSiteCoverageA)
+         25   18          DsGetDcSiteCoverageW (forwarded to LOGONCLI.DsGetDcSiteCoverageW)
+         26   19          DsGetForestTrustInformationW (forwarded to LOGONCLI.DsGetForestTrustInformationW)
+         27   1A          DsGetSiteNameA (forwarded to LOGONCLI.DsGetSiteNameA)
+         28   1B          DsGetSiteNameW (forwarded to LOGONCLI.DsGetSiteNameW)
+         29   1C          DsMergeForestTrustInformationW (forwarded to LOGONCLI.DsMergeForestTrustInformationW)
+         30   1D          DsRoleFreeMemory (forwarded to DSROLE.DsRoleFreeMemory)
+         31   1E          DsRoleGetPrimaryDomainInformation (forwarded to DSROLE.DsRoleGetPrimaryDomainInformation)
+         32   1F          DsValidateSubnetNameA (forwarded to LOGONCLI.DsValidateSubnetNameA)
+         33   20          DsValidateSubnetNameW (forwarded to LOGONCLI.DsValidateSubnetNameW)
+         34   21 000023E0 I_BrowserSetNetlogonState
+         35   22          I_DsUpdateReadOnlyServerDnsRecords (forwarded to LOGONCLI.I_DsUpdateReadOnlyServerDnsRecords)
+         36   23          I_NetAccountDeltas (forwarded to LOGONCLI.I_NetAccountDeltas)
+         37   24          I_NetAccountSync (forwarded to LOGONCLI.I_NetAccountSync)
+         38   25          I_NetChainSetClientAttributes (forwarded to LOGONCLI.I_NetChainSetClientAttributes)
+         39   26          I_NetChainSetClientAttributes2 (forwarded to LOGONCLI.I_NetChainSetClientAttributes2)
+         40   27          I_NetDatabaseDeltas (forwarded to LOGONCLI.I_NetDatabaseDeltas)
+         41   28          I_NetDatabaseRedo (forwarded to LOGONCLI.I_NetDatabaseRedo)
+         42   29          I_NetDatabaseSync (forwarded to LOGONCLI.I_NetDatabaseSync)
+         43   2A          I_NetDatabaseSync2 (forwarded to LOGONCLI.I_NetDatabaseSync2)
+         44   2B          I_NetDfsGetVersion (forwarded to SRVCLI.I_NetDfsGetVersion)
+         45   2C          I_NetDfsIsThisADomainName (forwarded to DFSCLI.I_NetDfsIsThisADomainName)
+         46   2D          I_NetGetDCList (forwarded to LOGONCLI.I_NetGetDCList)
+         47   2E          I_NetGetForestTrustInformation (forwarded to LOGONCLI.I_NetGetForestTrustInformation)
+         48   2F          I_NetLogonControl (forwarded to LOGONCLI.I_NetLogonControl)
+         49   30          I_NetLogonControl2 (forwarded to LOGONCLI.I_NetLogonControl2)
+         50   31          I_NetLogonGetDomainInfo (forwarded to LOGONCLI.I_NetLogonGetDomainInfo)
+         51   32          I_NetLogonSamLogoff (forwarded to LOGONCLI.I_NetLogonSamLogoff)
+         52   33          I_NetLogonSamLogon (forwarded to LOGONCLI.I_NetLogonSamLogon)
+         53   34          I_NetLogonSamLogonEx (forwarded to LOGONCLI.I_NetLogonSamLogonEx)
+         54   35          I_NetLogonSamLogonWithFlags (forwarded to LOGONCLI.I_NetLogonSamLogonWithFlags)
+         55   36          I_NetLogonSendToSam (forwarded to LOGONCLI.I_NetLogonSendToSam)
+         56   37          I_NetLogonUasLogoff (forwarded to LOGONCLI.I_NetLogonUasLogoff)
+         57   38          I_NetLogonUasLogon (forwarded to LOGONCLI.I_NetLogonUasLogon)
+         58   39          I_NetServerAuthenticate (forwarded to LOGONCLI.I_NetServerAuthenticate)
+         59   3A          I_NetServerAuthenticate2 (forwarded to LOGONCLI.I_NetServerAuthenticate2)
+         60   3B          I_NetServerAuthenticate3 (forwarded to LOGONCLI.I_NetServerAuthenticate3)
+         61   3C          I_NetServerGetTrustInfo (forwarded to LOGONCLI.I_NetServerGetTrustInfo)
+         62   3D          I_NetServerPasswordGet (forwarded to LOGONCLI.I_NetServerPasswordGet)
+         63   3E          I_NetServerPasswordSet (forwarded to LOGONCLI.I_NetServerPasswordSet)
+         64   3F          I_NetServerPasswordSet2 (forwarded to LOGONCLI.I_NetServerPasswordSet2)
+         65   40          I_NetServerReqChallenge (forwarded to LOGONCLI.I_NetServerReqChallenge)
+         66   41          I_NetServerSetServiceBits (forwarded to SRVCLI.I_NetServerSetServiceBits)
+         67   42          I_NetServerSetServiceBitsEx (forwarded to SRVCLI.I_NetServerSetServiceBitsEx)
+         68   43          I_NetServerTrustPasswordsGet (forwarded to LOGONCLI.I_NetServerTrustPasswordsGet)
+         69   44          I_NetlogonComputeClientDigest (forwarded to LOGONCLI.I_NetlogonComputeClientDigest)
+         70   45          I_NetlogonComputeServerDigest (forwarded to LOGONCLI.I_NetlogonComputeServerDigest)
+         71   46 000023D0 NetAccessAdd
+         72   47 000023D0 NetAccessDel
+         73   48 000023D0 NetAccessEnum
+         74   49 000023D0 NetAccessGetInfo
+         75   4A 000023D0 NetAccessGetUserPerms
+         76   4B 000023D0 NetAccessSetInfo
+         77   4C          NetAddAlternateComputerName (forwarded to WKSCLI.NetAddAlternateComputerName)
+         78   4D          NetAddServiceAccount (forwarded to LOGONCLI.NetAddServiceAccount)
+         79   4E 000023D0 NetAlertRaise
+         80   4F 000023D0 NetAlertRaiseEx
+         81   50          NetApiBufferAllocate (forwarded to NETUTILS.NetApiBufferAllocate)
+         82   51          NetApiBufferFree (forwarded to NETUTILS.NetApiBufferFree)
+         83   52          NetApiBufferReallocate (forwarded to NETUTILS.NetApiBufferReallocate)
+         84   53          NetApiBufferSize (forwarded to NETUTILS.NetApiBufferSize)
+         85   54 000023D0 NetAuditClear
+         86   55 000023D0 NetAuditRead
+         87   56 000023D0 NetAuditWrite
+         88   57 000023D0 NetConfigGet
+         89   58 000023D0 NetConfigGetAll
+         90   59 000023D0 NetConfigSet
+         91   5A          NetConnectionEnum (forwarded to SRVCLI.NetConnectionEnum)
+         92   5B          NetCreateProvisioningPackage (forwarded to NETJOIN.NetCreateProvisioningPackage)
+         93   5C          NetDfsAdd (forwarded to DFSCLI.NetDfsAdd)
+         94   5D          NetDfsAddFtRoot (forwarded to DFSCLI.NetDfsAddFtRoot)
+         95   5E          NetDfsAddRootTarget (forwarded to DFSCLI.NetDfsAddRootTarget)
+         96   5F          NetDfsAddStdRoot (forwarded to DFSCLI.NetDfsAddStdRoot)
+         97   60          NetDfsAddStdRootForced (forwarded to DFSCLI.NetDfsAddStdRootForced)
+         98   61          NetDfsEnum (forwarded to DFSCLI.NetDfsEnum)
+         99   62          NetDfsGetClientInfo (forwarded to DFSCLI.NetDfsGetClientInfo)
+        100   63          NetDfsGetDcAddress (forwarded to DFSCLI.NetDfsGetDcAddress)
+        101   64          NetDfsGetFtContainerSecurity (forwarded to DFSCLI.NetDfsGetFtContainerSecurity)
+        102   65          NetDfsGetInfo (forwarded to DFSCLI.NetDfsGetInfo)
+        103   66          NetDfsGetSecurity (forwarded to DFSCLI.NetDfsGetSecurity)
+        104   67          NetDfsGetStdContainerSecurity (forwarded to DFSCLI.NetDfsGetStdContainerSecurity)
+        105   68          NetDfsGetSupportedNamespaceVersion (forwarded to DFSCLI.NetDfsGetSupportedNamespaceVersion)
+        106   69          NetDfsManagerGetConfigInfo (forwarded to DFSCLI.NetDfsManagerGetConfigInfo)
+        107   6A          NetDfsManagerInitialize (forwarded to DFSCLI.NetDfsManagerInitialize)
+        108   6B          NetDfsManagerSendSiteInfo (forwarded to DFSCLI.NetDfsManagerSendSiteInfo)
+        109   6C          NetDfsMove (forwarded to DFSCLI.NetDfsMove)
+        110   6D          NetDfsRemove (forwarded to DFSCLI.NetDfsRemove)
+        111   6E          NetDfsRemoveFtRoot (forwarded to DFSCLI.NetDfsRemoveFtRoot)
+        112   6F          NetDfsRemoveFtRootForced (forwarded to DFSCLI.NetDfsRemoveFtRootForced)
+        113   70          NetDfsRemoveRootTarget (forwarded to DFSCLI.NetDfsRemoveRootTarget)
+        114   71          NetDfsRemoveStdRoot (forwarded to DFSCLI.NetDfsRemoveStdRoot)
+        115   72          NetDfsRename (forwarded to DFSCLI.NetDfsRename)
+        116   73          NetDfsSetClientInfo (forwarded to DFSCLI.NetDfsSetClientInfo)
+        117   74          NetDfsSetFtContainerSecurity (forwarded to DFSCLI.NetDfsSetFtContainerSecurity)
+        118   75          NetDfsSetInfo (forwarded to DFSCLI.NetDfsSetInfo)
+        119   76          NetDfsSetSecurity (forwarded to DFSCLI.NetDfsSetSecurity)
+        120   77          NetDfsSetStdContainerSecurity (forwarded to DFSCLI.NetDfsSetStdContainerSecurity)
+        121   78          NetEnumerateComputerNames (forwarded to WKSCLI.NetEnumerateComputerNames)
+        122   79          NetEnumerateServiceAccounts (forwarded to LOGONCLI.NetEnumerateServiceAccounts)
+        123   7A          NetEnumerateTrustedDomains (forwarded to LOGONCLI.NetEnumerateTrustedDomains)
+        124   7B 000023D0 NetErrorLogClear
+        125   7C 000023D0 NetErrorLogRead
+        126   7D 000023D0 NetErrorLogWrite
+        127   7E          NetFileClose (forwarded to SRVCLI.NetFileClose)
+        128   7F          NetFileEnum (forwarded to SRVCLI.NetFileEnum)
+        129   80          NetFileGetInfo (forwarded to SRVCLI.NetFileGetInfo)
+        130   81          NetFreeAadJoinInformation (forwarded to DSREG.DsrFreeJoinInfo)
+        131   82          NetGetAadJoinInformation (forwarded to DSREG.DsrGetJoinInfo)
+        132   83          NetGetAnyDCName (forwarded to LOGONCLI.NetGetAnyDCName)
+        133   84          NetGetDCName (forwarded to LOGONCLI.NetGetDCName)
+        134   85          NetGetDisplayInformationIndex (forwarded to SAMCLI.NetGetDisplayInformationIndex)
+        135   86          NetGetJoinInformation (forwarded to WKSCLI.NetGetJoinInformation)
+        136   87          NetGetJoinableOUs (forwarded to WKSCLI.NetGetJoinableOUs)
+        137   88          NetGroupAdd (forwarded to SAMCLI.NetGroupAdd)
+        138   89          NetGroupAddUser (forwarded to SAMCLI.NetGroupAddUser)
+        139   8A          NetGroupDel (forwarded to SAMCLI.NetGroupDel)
+        140   8B          NetGroupDelUser (forwarded to SAMCLI.NetGroupDelUser)
+        141   8C          NetGroupEnum (forwarded to SAMCLI.NetGroupEnum)
+        142   8D          NetGroupGetInfo (forwarded to SAMCLI.NetGroupGetInfo)
+        143   8E          NetGroupGetUsers (forwarded to SAMCLI.NetGroupGetUsers)
+        144   8F          NetGroupSetInfo (forwarded to SAMCLI.NetGroupSetInfo)
+        145   90          NetGroupSetUsers (forwarded to SAMCLI.NetGroupSetUsers)
+        146   91          NetIsServiceAccount (forwarded to LOGONCLI.NetIsServiceAccount)
+        147   92          NetJoinDomain (forwarded to WKSCLI.NetJoinDomain)
+        148   93          NetLocalGroupAdd (forwarded to SAMCLI.NetLocalGroupAdd)
+        149   94          NetLocalGroupAddMember (forwarded to SAMCLI.NetLocalGroupAddMember)
+        150   95          NetLocalGroupAddMembers (forwarded to SAMCLI.NetLocalGroupAddMembers)
+        151   96          NetLocalGroupDel (forwarded to SAMCLI.NetLocalGroupDel)
+        152   97          NetLocalGroupDelMember (forwarded to SAMCLI.NetLocalGroupDelMember)
+        153   98          NetLocalGroupDelMembers (forwarded to SAMCLI.NetLocalGroupDelMembers)
+        154   99          NetLocalGroupEnum (forwarded to SAMCLI.NetLocalGroupEnum)
+        155   9A          NetLocalGroupGetInfo (forwarded to SAMCLI.NetLocalGroupGetInfo)
+        156   9B          NetLocalGroupGetMembers (forwarded to SAMCLI.NetLocalGroupGetMembers)
+        157   9C          NetLocalGroupSetInfo (forwarded to SAMCLI.NetLocalGroupSetInfo)
+        158   9D          NetLocalGroupSetMembers (forwarded to SAMCLI.NetLocalGroupSetMembers)
+        159   9E          NetLogonGetTimeServiceParentDomain (forwarded to LOGONCLI.NetLogonGetTimeServiceParentDomain)
+        160   9F          NetLogonSetServiceBits (forwarded to LOGONCLI.NetLogonSetServiceBits)
+        161   A0 000023D0 NetMessageBufferSend
+        162   A1 000023D0 NetMessageNameAdd
+        163   A2 000023D0 NetMessageNameDel
+        164   A3 000023D0 NetMessageNameEnum
+        165   A4 000023D0 NetMessageNameGetInfo
+        166   A5          NetProvisionComputerAccount (forwarded to NETJOIN.NetProvisionComputerAccount)
+        167   A6          NetQueryDisplayInformation (forwarded to SAMCLI.NetQueryDisplayInformation)
+        168   A7          NetQueryServiceAccount (forwarded to LOGONCLI.NetQueryServiceAccount)
+        169   A8 00002730 NetRegisterDomainNameChangeNotification
+        170   A9          NetRemoteComputerSupports (forwarded to NETUTILS.NetRemoteComputerSupports)
+        171   AA          NetRemoteTOD (forwarded to SRVCLI.NetRemoteTOD)
+        172   AB          NetRemoveAlternateComputerName (forwarded to WKSCLI.NetRemoveAlternateComputerName)
+        173   AC          NetRemoveServiceAccount (forwarded to LOGONCLI.NetRemoveServiceAccount)
+        174   AD          NetRenameMachineInDomain (forwarded to WKSCLI.NetRenameMachineInDomain)
+        175   AE 000023D0 NetReplExportDirAdd
+        176   AF 000023D0 NetReplExportDirDel
+        177   B0 000023D0 NetReplExportDirEnum
+        178   B1 000023D0 NetReplExportDirGetInfo
+        179   B2 000023D0 NetReplExportDirLock
+        180   B3 000023D0 NetReplExportDirSetInfo
+        181   B4 000023D0 NetReplExportDirUnlock
+        182   B5 000023D0 NetReplGetInfo
+        183   B6 000023D0 NetReplImportDirAdd
+        184   B7 000023D0 NetReplImportDirDel
+        185   B8 000023D0 NetReplImportDirEnum
+        186   B9 000023D0 NetReplImportDirGetInfo
+        187   BA 000023D0 NetReplImportDirLock
+        188   BB 000023D0 NetReplImportDirUnlock
+        189   BC 000023D0 NetReplSetInfo
+        190   BD          NetRequestOfflineDomainJoin (forwarded to NETJOIN.NetRequestOfflineDomainJoin)
+        191   BE          NetRequestProvisioningPackageInstall (forwarded to NETJOIN.NetRequestProvisioningPackageInstall)
+        192   BF          NetScheduleJobAdd (forwarded to SCHEDCLI.NetScheduleJobAdd)
+        193   C0          NetScheduleJobDel (forwarded to SCHEDCLI.NetScheduleJobDel)
+        194   C1          NetScheduleJobEnum (forwarded to SCHEDCLI.NetScheduleJobEnum)
+        195   C2          NetScheduleJobGetInfo (forwarded to SCHEDCLI.NetScheduleJobGetInfo)
+        196   C3          NetServerAliasAdd (forwarded to SRVCLI.NetServerAliasAdd)
+        197   C4          NetServerAliasDel (forwarded to SRVCLI.NetServerAliasDel)
+        198   C5          NetServerAliasEnum (forwarded to SRVCLI.NetServerAliasEnum)
+        199   C6          NetServerComputerNameAdd (forwarded to SRVCLI.NetServerComputerNameAdd)
+        200   C7          NetServerComputerNameDel (forwarded to SRVCLI.NetServerComputerNameDel)
+        201   C8          NetServerDiskEnum (forwarded to SRVCLI.NetServerDiskEnum)
+        202   C9 00002440 NetServerEnum
+        203   CA 000024E0 NetServerEnumEx
+        204   CB          NetServerGetInfo (forwarded to SRVCLI.NetServerGetInfo)
+        205   CC          NetServerSetInfo (forwarded to SRVCLI.NetServerSetInfo)
+        206   CD          NetServerTransportAdd (forwarded to SRVCLI.NetServerTransportAdd)
+        207   CE          NetServerTransportAddEx (forwarded to SRVCLI.NetServerTransportAddEx)
+        208   CF          NetServerTransportDel (forwarded to SRVCLI.NetServerTransportDel)
+        209   D0          NetServerTransportEnum (forwarded to SRVCLI.NetServerTransportEnum)
+        210   D1 000029B0 NetServiceControl
+        211   D2 00002A40 NetServiceEnum
+        212   D3 00002AF0 NetServiceGetInfo
+        213   D4 00002B80 NetServiceInstall
+        214   D5          NetSessionDel (forwarded to SRVCLI.NetSessionDel)
+        215   D6          NetSessionEnum (forwarded to SRVCLI.NetSessionEnum)
+        216   D7          NetSessionGetInfo (forwarded to SRVCLI.NetSessionGetInfo)
+        217   D8          NetSetPrimaryComputerName (forwarded to WKSCLI.NetSetPrimaryComputerName)
+        218   D9          NetShareAdd (forwarded to SRVCLI.NetShareAdd)
+        219   DA          NetShareCheck (forwarded to SRVCLI.NetShareCheck)
+        220   DB          NetShareDel (forwarded to SRVCLI.NetShareDel)
+        221   DC          NetShareDelEx (forwarded to SRVCLI.NetShareDelEx)
+        222   DD          NetShareDelSticky (forwarded to SRVCLI.NetShareDelSticky)
+        223   DE          NetShareEnum (forwarded to SRVCLI.NetShareEnum)
+        224   DF          NetShareEnumSticky (forwarded to SRVCLI.NetShareEnumSticky)
+        225   E0          NetShareGetInfo (forwarded to SRVCLI.NetShareGetInfo)
+        226   E1          NetShareSetInfo (forwarded to SRVCLI.NetShareSetInfo)
+        227   E2 00002810 NetStatisticsGet
+        228   E3          NetUnjoinDomain (forwarded to WKSCLI.NetUnjoinDomain)
+        229   E4 000027C0 NetUnregisterDomainNameChangeNotification
+        230   E5          NetUseAdd (forwarded to WKSCLI.NetUseAdd)
+        231   E6          NetUseDel (forwarded to WKSCLI.NetUseDel)
+        232   E7          NetUseEnum (forwarded to WKSCLI.NetUseEnum)
+        233   E8          NetUseGetInfo (forwarded to WKSCLI.NetUseGetInfo)
+        234   E9          NetUserAdd (forwarded to SAMCLI.NetUserAdd)
+        235   EA          NetUserChangePassword (forwarded to SAMCLI.NetUserChangePassword)
+        236   EB          NetUserDel (forwarded to SAMCLI.NetUserDel)
+        237   EC          NetUserEnum (forwarded to SAMCLI.NetUserEnum)
+        238   ED          NetUserGetGroups (forwarded to SAMCLI.NetUserGetGroups)
+        239   EE          NetUserGetInfo (forwarded to SAMCLI.NetUserGetInfo)
+        240   EF          NetUserGetLocalGroups (forwarded to SAMCLI.NetUserGetLocalGroups)
+        241   F0          NetUserModalsGet (forwarded to SAMCLI.NetUserModalsGet)
+        242   F1          NetUserModalsSet (forwarded to SAMCLI.NetUserModalsSet)
+        243   F2          NetUserSetGroups (forwarded to SAMCLI.NetUserSetGroups)
+        244   F3          NetUserSetInfo (forwarded to SAMCLI.NetUserSetInfo)
+        245   F4          NetValidateName (forwarded to WKSCLI.NetValidateName)
+        246   F5          NetValidatePasswordPolicy (forwarded to SAMCLI.NetValidatePasswordPolicy)
+        247   F6          NetValidatePasswordPolicyFree (forwarded to SAMCLI.NetValidatePasswordPolicyFree)
+        248   F7 00001010 NetWkstaGetInfo
+        249   F8 000028C0 NetWkstaSetInfo
+        250   F9          NetWkstaTransportAdd (forwarded to WKSCLI.NetWkstaTransportAdd)
+        251   FA          NetWkstaTransportDel (forwarded to WKSCLI.NetWkstaTransportDel)
+        252   FB          NetWkstaTransportEnum (forwarded to WKSCLI.NetWkstaTransportEnum)
+        253   FC          NetWkstaUserEnum (forwarded to WKSCLI.NetWkstaUserEnum)
+        254   FD          NetWkstaUserGetInfo (forwarded to WKSCLI.NetWkstaUserGetInfo)
+        255   FE          NetWkstaUserSetInfo (forwarded to WKSCLI.NetWkstaUserSetInfo)
+        256   FF          NetapipBufferAllocate (forwarded to NETUTILS.NetapipBufferAllocate)
+        257  100 000026A0 Netbios
+        258  101 00006D80 NetpAddTlnFtinfoEntry
+        259  102 00006E60 NetpAllocFtinfoEntry
+        260  103 00001820 NetpAssertFailed
+        261  104 00007070 NetpCleanFtinfoContext
+        262  105 00008060 NetpCloseConfigData
+        263  106 000073F0 NetpCopyFtinfoContext
+        264  107 00002580 NetpDbgPrint
+        265  108 000080A0 NetpGetConfigBool
+        266  109 00008220 NetpGetConfigDword
+        267  10A 000083F0 NetpGetConfigTStrArray
+        268  10B 000084D0 NetpGetConfigValue
+        269  10C 000023D0 NetpGetFileSecurity
+        270  10D 00001820 NetpHexDump
+        271  10E 000075C0 NetpInitFtinfoContext
+        272  10F          NetpIsRemote (forwarded to NETUTILS.NetpIsRemote)
+        273  110 00001F60 NetpIsUncComputerNameValid
+        274  111 00007800 NetpMergeFtinfo
+        275  112 000025A0 NetpNetBiosReset
+        276  113 00002620 NetpNetBiosStatusToApiStatus
+        277  114 000085E0 NetpOpenConfigData
+        278  115 000023D0 NetpSetFileSecurity
+        279  116          NetpwNameCanonicalize (forwarded to NETUTILS.NetpwNameCanonicalize)
+        280  117          NetpwNameCompare (forwarded to NETUTILS.NetpwNameCompare)
+        281  118          NetpwNameValidate (forwarded to NETUTILS.NetpwNameValidate)
+        282  119          NetpwPathCanonicalize (forwarded to NETUTILS.NetpwPathCanonicalize)
+        283  11A          NetpwPathCompare (forwarded to NETUTILS.NetpwPathCompare)
+        284  11B          NetpwPathType (forwarded to NETUTILS.NetpwPathType)
+        285  11C          NlBindingAddServerToCache (forwarded to LOGONCLI.NlBindingAddServerToCache)
+        286  11D          NlBindingRemoveServerFromCache (forwarded to LOGONCLI.NlBindingRemoveServerFromCache)
+        287  11E          NlBindingSetAuthInfo (forwarded to LOGONCLI.NlBindingSetAuthInfo)
+        288  11F 000023D0 RxNetAccessAdd
+        289  120 000023D0 RxNetAccessDel
+        290  121 000023D0 RxNetAccessEnum
+        291  122 000023D0 RxNetAccessGetInfo
+        292  123 000023D0 RxNetAccessGetUserPerms
+        293  124 000023D0 RxNetAccessSetInfo
+        294  125 00003DC0 RxNetServerEnum
+        295  126 000023D0 RxNetUserPasswordSet
+        296  127 00004640 RxRemoteApi
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        7000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        A000 .text

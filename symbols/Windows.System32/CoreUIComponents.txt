@@ -1,0 +1,53 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\CoreUIComponents.dll
+
+File Type: DLL
+
+  Section contains the following exports for CoreUIComponents.dll
+
+    00000000 characteristics
+     EF1F94B time date stamp
+        0.00 version
+           1 ordinal base
+          24 number of functions
+          24 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00032610 CoreUIClientCreate
+          2    1 0013CDE0 CoreUIClientTestCreate
+          3    2 0009F460 CoreUIConfigureTestHost
+          4    3 00010610 CoreUICreateDuplicateWindowFactory
+          5    4 000144A0 CoreUICreateICoreWindowFactory
+          6    5 00035820 CoreUIFactoryCreate
+          7    6 000773A0 CoreUIServerCreate
+          8    7 0013CEF0 CoreUIServerTestCreate
+          9    8 00186D90 CreateNavClient
+         10    9 0000B930 DllCanUnloadNow
+         11    A 00078430 DllGetActivationFactory
+         12    B 0006F9D0 DllGetClassObject
+         13    C 00187490 MinUserGetInputHost
+         14    D 001874E0 MinUserGetInputRoutingInfo
+         15    E 00185BE0 MinUserGetPointerDeviceMaxInputs
+         16    F 00185C10 MinUserGetPointerDeviceProperties
+         17   10 00187560 MinUserInputInitialize
+         18   11 0007C550 MinUserNotifyOneCoreTransformMode
+         19   12 00185C40 MinUserRegisterPointerInputTarget
+         20   13 00187680 MinUserRequestViewHitTest
+         21   14 00185D60 MinUserReregisterPointerInputTargets
+         22   15 00185E00 MinUserUnregisterPointerInputTarget
+         23   16 00185EE0 ServiceMain
+         24   17 00185FE0 SvchostPushServiceGlobals
+
+  Summary
+
+        4000 .data
+        1000 .didat
+       25000 .pdata
+      111000 .rdata
+        D000 .reloc
+       3F000 .rsrc
+      19A000 .text

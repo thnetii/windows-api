@@ -1,0 +1,62 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\netjoin.dll
+
+File Type: DLL
+
+  Section contains the following exports for netjoin.dll
+
+    00000000 characteristics
+    E4C5E7B9 time date stamp
+        0.00 version
+           1 ordinal base
+          33 number of functions
+          33 number of names
+
+    ordinal hint RVA      name
+
+          1    0          NetCreateProvisioningPackage (forwarded to NETPROVFW.NetCreateProvisioningPackage)
+          2    1 0000B0C0 NetProvisionComputerAccount
+          3    2 0000B320 NetRequestOfflineDomainJoin
+          4    3          NetRequestProvisioningPackageInstall (forwarded to NETPROVFW.NetRequestProvisioningPackageInstall)
+          5    4 00011130 NetSetuppCloseLog
+          6    5 000111A0 NetSetuppOpenLog
+          7    6          NetpAvoidNetlogonSpnSet (forwarded to JOINUTIL.NetpAvoidNetlogonSpnSet)
+          8    7 0000C0E0 NetpChangeMachineName
+          9    8 00001D70 NetpControlServices
+         10    9 00005160 NetpCrackNamesStatus2Win32Error
+         11    A 00005280 NetpCreateComputerObjectInDs
+         12    B 0000CD00 NetpDoDomainJoin
+         13    C          NetpDomainJoinLicensingCheck (forwarded to NETPROVFW.NetpProvDomainJoinLicensingCheck)
+         14    D 00001010 NetpGetJoinInformation
+         15    E 00007640 NetpGetListOfJoinableOUs
+         16    F          NetpGetLsaPrimaryDomain (forwarded to JOINUTIL.NetpGetLsaPrimaryDomain)
+         17   10 00007E30 NetpGetMachineAccountName
+         18   11 0000D3A0 NetpIsSetupInProgress
+         19   12 000049A0 NetpJoinProvider2Initialize
+         20   13 00004BA0 NetpJoinProvider3Initialize
+         21   14 000046D0 NetpJoinProviderInitialize
+         22   15 00011540 NetpLogPrintHelper
+         23   16 0000E480 NetpMachineValidToJoin
+         24   17 00008920 NetpManageIPCConnect
+         25   18 0000E670 NetpManageMachineAccountWithSid
+         26   19 00001E10 NetpQueryService
+         27   1A 00009920 NetpSeparateUserAndDomain
+         28   1B 00009970 NetpSetComputerAccountPassword
+         29   1C 00001E30 NetpStopService
+         30   1D 0000F610 NetpUnJoinDomain
+         31   1E 0000A940 NetpUpdateAutoenrolConfig
+         32   1F 0000F870 NetpUpgradePreNT5JoinInfo
+         33   20 0000FC00 NetpValidateName
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+       14000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       12000 .text

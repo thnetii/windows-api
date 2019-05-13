@@ -1,0 +1,41 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\computestorage.dll
+
+File Type: DLL
+
+  Section contains the following exports for computestorage.dll
+
+    00000000 characteristics
+    8A9FB2CE time date stamp
+        0.00 version
+           1 ordinal base
+          11 number of functions
+          11 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0000BCD0 HcsAttachLayerStorageFilter
+          2    1 0000B430 HcsDestroyLayer
+          3    2 0000C230 HcsDetachLayerStorageFilter
+          4    3 0000AE00 HcsExportLayer
+          5    4 0000B1A0 HcsExportLegacyWritableLayer
+          6    5 0000C3A0 HcsFormatWritableLayerVhd
+          7    6 0000C690 HcsGetLayerVhdMountPath
+          8    7 0000AAF0 HcsImportLayer
+          9    8 0000BA10 HcsInitializeLegacyWritableLayer
+         10    9 0000B750 HcsInitializeWritableLayer
+         11    A 0000B610 HcsSetupBaseOSLayer
+
+  Summary
+
+        3000 .data
+        1000 .didat
+        3000 .pdata
+       14000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       2E000 .text
+        3000 PAGE

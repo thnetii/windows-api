@@ -1,0 +1,41 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\netprovfw.dll
+
+File Type: DLL
+
+  Section contains the following exports for netprovfw.dll
+
+    00000000 characteristics
+    3CA81CB2 time date stamp
+        0.00 version
+           1 ordinal base
+          12 number of functions
+          12 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000052A0 NetCaptureProvisioningPackage
+          2    1 00001550 NetCreateProvisioningPackage
+          3    2 00002990 NetRequestProvisioningPackageInstall
+          4    3 00004040 NetpAnalyzeProvisioningPackage
+          5    4 000018E0 NetpCreateProvisioningPackage
+          6    5 000010E0 NetpProvCheckOfflineLsaPolicyUpdate
+          7    6 000044F0 NetpProvContinueProvisioningPackageInstall
+          8    7          NetpProvDomainJoinLicensingCheck (forwarded to JOINUTIL.NetpDoDomainJoinLicensingCheck)
+          9    8 00001070 NetpProvFreeLdapLsaDomainInfo
+         10    9 000042F0 NetpRequestProvisioningPackageInstall
+         11    A 00004320 NetpRequestProvisioningPackageInstallForIMC
+         12    B 00004430 NetpRequestProvisioningPackageInstallForOfflineServicing
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        7000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        8000 .text

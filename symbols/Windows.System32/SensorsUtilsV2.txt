@@ -1,0 +1,91 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\SensorsUtilsV2.dll
+
+File Type: DLL
+
+  Section contains the following exports for SensorsUtilsV2.dll
+
+    00000000 characteristics
+    BBB5F881 time date stamp
+        0.00 version
+           1 ordinal base
+          62 number of functions
+          62 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00004460 AddMillisecondsToFileTime
+          2    1 00005FC0 CollectionsListAllocateBufferAndSerialize
+          3    2 00005330 CollectionsListCopyAndMarshall
+          4    3 00006150 CollectionsListDeserializeFromBuffer
+          5    4 00007A50 CollectionsListGetFillableCount
+          6    5 00005310 CollectionsListGetMarshalledSize
+          7    6 00005790 CollectionsListGetMarshalledSizeWithoutSerialization
+          8    7 00005A30 CollectionsListGetSerializedSize
+          9    8 000054E0 CollectionsListMarshall
+         10    9 00005C60 CollectionsListSerializeToBuffer
+         11    A 00008420 CollectionsListSortSubscribedActivitiesByConfidence
+         12    B 00005680 CollectionsListUpdateMarshalledPointer
+         13    C 00007180 ConvertAccelerometerDataToCollection
+         14    D 000067E0 ConvertCollectionToAccelerometerData
+         15    E 00006B60 ConvertCollectionToGyroscopeData
+         16    F 000068B0 ConvertCollectionToLightSensorData
+         17   10 000068D0 ConvertCollectionToLightSensorDataWithColor
+         18   11 00006BD0 ConvertCollectionToMagnetometerData
+         19   12 00006C80 ConvertCollectionToOrientationData
+         20   13 00006FD0 ConvertCollectionToProximitySensorData
+         21   14 000070A0 ConvertFloat3DDataToCollection
+         22   15 00007450 ConvertGyroscopeDataToCollection
+         23   16 00007260 ConvertLightSensorDataToCollection
+         24   17 000072E0 ConvertLightSensorDataWithColorToCollection
+         25   18 000074C0 ConvertMagnetometerDataToCollection
+         26   19 00007590 ConvertOrientationDataToCollection
+         27   1A 00007890 ConvertProximitySensorDataToCollection
+         28   1B 00007950 ConvertSimpleOrientationDataToCollection
+         29   1C 00007CD0 EvaluateActivityThresholds
+         30   1D 00004400 GetFileTimeDifference
+         31   1E 000043E0 GetFileTimeFromTimeStamp
+         32   1F 00004300 GetPerformanceTime
+         33   20 00003F90 GetSetting
+         34   21 000043E0 GetTimeStampFromFileTime
+         35   22 000044A0 InitPropVariantFromCLSIDArray
+         36   23 00004530 InitPropVariantFromFloat
+         37   24 00004FB0 IsCollectionListSame
+         38   25 00008A10 IsGUIDPresentInList
+         39   26 00004F00 IsKeyPresentInCollectionList
+         40   27 00004EA0 IsKeyPresentInPropertyList
+         41   28 00008990 IsSensorSubscribed
+         42   29 00007AB0 MapActivityConfidenceToState
+         43   2A 000047B0 PropKeyFindKeyGetBool
+         44   2B 00004A80 PropKeyFindKeyGetDouble
+         45   2C 00004720 PropKeyFindKeyGetFileTime
+         46   2D 000049F0 PropKeyFindKeyGetFloat
+         47   2E 00004840 PropKeyFindKeyGetGuid
+         48   2F 00004B10 PropKeyFindKeyGetInt32
+         49   30 00004BA0 PropKeyFindKeyGetInt64
+         50   31 00004DD0 PropKeyFindKeyGetNthInt64
+         51   32 00004C30 PropKeyFindKeyGetNthUlong
+         52   33 00004D00 PropKeyFindKeyGetNthUshort
+         53   34 00004560 PropKeyFindKeyGetPropVariant
+         54   35 000048D0 PropKeyFindKeyGetUlong
+         55   36 00004960 PropKeyFindKeyGetUshort
+         56   37 00004640 PropKeyFindKeySetPropVariant
+         57   38 000050F0 PropVariantGetInformation
+         58   39 00005240 PropertiesListCopy
+         59   3A 00007A80 PropertiesListGetFillableCount
+         60   3B 000079D0 SensorCollectionGetAt
+         61   3C 00005880 SerializationBufferAllocate
+         62   3D 000058F0 SerializationBufferFree
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        8000 .rdata
+        1000 .reloc
+        2000 .rsrc
+        F000 .text

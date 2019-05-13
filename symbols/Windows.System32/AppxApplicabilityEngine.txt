@@ -1,0 +1,40 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\AppxApplicabilityEngine.dll
+
+File Type: DLL
+
+  Section contains the following exports for AppxApplicabilityEngine.dll
+
+    00000000 characteristics
+    1365DB34 time date stamp
+        0.00 version
+           1 ordinal base
+          11 number of functions
+          11 number of names
+
+    ordinal hint RVA      name
+
+          2    0 0000F990 AddDirectXFeatureLevelToContext
+          3    1 0000F9F0 AddUserLanguagesToContext
+          4    2 00008140 CreateApplicabilityContext
+          5    3 0001D420 CreateApplicabilityContextFromString
+          6    4 00008110 FreeApplicabilityContext
+          7    5 00008520 FreeApplicablePackages
+          1    6 000083B0 GetApplicabilityContext
+          8    7 00008270 GetApplicablePackages
+          9    8 000080B0 GetApplicablePackagesForUser
+         10    9 0000FA50 GetApplicablePackagesForUserWithAppChosenResources
+         11    A 0000FC00 GetApplicablePackagesWithAppChosenResources
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        3000 .pdata
+       12000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       21000 .text

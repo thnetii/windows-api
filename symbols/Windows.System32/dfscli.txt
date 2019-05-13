@@ -1,0 +1,58 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\dfscli.dll
+
+File Type: DLL
+
+  Section contains the following exports for dfscli.dll
+
+    00000000 characteristics
+    5A03CF4A time date stamp
+        0.00 version
+           1 ordinal base
+          29 number of functions
+          29 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00006210 I_NetDfsIsThisADomainName
+          2    1 00001F90 NetDfsAdd
+          3    2 00002060 NetDfsAddFtRoot
+          4    3 00003AD0 NetDfsAddRootTarget
+          5    4 00002240 NetDfsAddStdRoot
+          6    5 000022C0 NetDfsAddStdRootForced
+          7    6 00003480 NetDfsEnum
+          8    7 00002CE0 NetDfsGetClientInfo
+          9    8 000022C0 NetDfsGetDcAddress
+         10    9 000074B0 NetDfsGetFtContainerSecurity
+         11    A 00002BD0 NetDfsGetInfo
+         12    B 000066C0 NetDfsGetSecurity
+         13    C 00006B50 NetDfsGetStdContainerSecurity
+         14    D 000043F0 NetDfsGetSupportedNamespaceVersion
+         15    E 000022C0 NetDfsManagerGetConfigInfo
+         16    F 000022C0 NetDfsManagerInitialize
+         17   10 000022C0 NetDfsManagerSendSiteInfo
+         18   11 00003850 NetDfsMove
+         19   12 000022D0 NetDfsRemove
+         20   13 000023A0 NetDfsRemoveFtRoot
+         21   14 00002560 NetDfsRemoveFtRootForced
+         22   15 00003F30 NetDfsRemoveRootTarget
+         23   16 00002770 NetDfsRemoveStdRoot
+         24   17 000022C0 NetDfsRename
+         25   18 00003180 NetDfsSetClientInfo
+         26   19 00007530 NetDfsSetFtContainerSecurity
+         27   1A 000027D0 NetDfsSetInfo
+         28   1B 000067F0 NetDfsSetSecurity
+         29   1C 00006BE0 NetDfsSetStdContainerSecurity
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        6000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        9000 .text

@@ -1,0 +1,185 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\wintrust.dll
+
+File Type: DLL
+
+  Section contains the following exports for WINTRUST.dll
+
+    00000000 characteristics
+    D51E499A time date stamp
+        0.00 version
+           1 ordinal base
+         156 number of functions
+         156 number of names
+
+    ordinal hint RVA      name
+
+         12    0 0002C5E0 AddPersonalTrustDBPages
+         13    1 0000D850 CatalogCompactHashDatabase
+          1    2 000202A0 ComputeFirstPageHash
+         14    3 0002D1E0 ConfigCiFinalPolicy
+         15    4 0002D590 ConfigCiPackageFamilyNameCheck
+         16    5 000012A0 CryptCATAdminAcquireContext
+         17    6 000227A0 CryptCATAdminAcquireContext2
+         18    7 00022880 CryptCATAdminAddCatalog
+         19    8 00022B70 CryptCATAdminCalcHashFromFileHandle
+         20    9 00022BB0 CryptCATAdminCalcHashFromFileHandle2
+         21    A 00009740 CryptCATAdminEnumCatalogFromHash
+         22    B 00022C10 CryptCATAdminPauseServiceForBackup
+         23    C 00001340 CryptCATAdminReleaseCatalogContext
+         24    D 000010F0 CryptCATAdminReleaseContext
+         25    E 00022C50 CryptCATAdminRemoveCatalog
+         26    F 00022CA0 CryptCATAdminResolveCatalogPath
+         27   10 00007AF0 CryptCATAllocSortedMemberInfo
+         28   11 00024810 CryptCATCDFClose
+         29   12 000248A0 CryptCATCDFEnumAttributes
+         30   13 000248C0 CryptCATCDFEnumAttributesWithCDFTag
+         31   14 00024900 CryptCATCDFEnumCatAttributes
+         32   15 00024AC0 CryptCATCDFEnumMembers
+         33   16 00024B20 CryptCATCDFEnumMembersByCDFTag
+         34   17 00024B60 CryptCATCDFEnumMembersByCDFTagEx
+         35   18 00024BB0 CryptCATCDFOpen
+         36   19 00001020 CryptCATCatalogInfoFromContext
+         37   1A 00007540 CryptCATClose
+         38   1B 000029C0 CryptCATEnumerateAttr
+         39   1C 00002A20 CryptCATEnumerateCatAttr
+         40   1D 00021B30 CryptCATEnumerateMember
+         41   1E 00021C10 CryptCATFreeSortedMemberInfo
+         42   1F 00021C50 CryptCATGetAttrInfo
+         43   20 00021CF0 CryptCATGetCatAttrInfo
+         44   21 00021D80 CryptCATGetMemberInfo
+         45   22 00005950 CryptCATHandleFromStore
+         46   23 00021E40 CryptCATOpen
+         47   24 00021F90 CryptCATPersistStore
+         48   25 00021FD0 CryptCATPutAttrInfo
+         49   26 000221A0 CryptCATPutCatAttrInfo
+         50   27 00022420 CryptCATPutMemberInfo
+         51   28 00005950 CryptCATStoreFromHandle
+          2   29 00021AF0 CryptCATVerifyMember
+         52   2A 00007D80 CryptSIPCreateIndirectData
+         53   2B 00007D00 CryptSIPGetCaps
+          3   2C 000276B0 CryptSIPGetInfo
+          4   2D 000276A0 CryptSIPGetRegWorkingFlags
+         54   2E 00027720 CryptSIPGetSealedDigest
+         55   2F 000277F0 CryptSIPGetSignedDataMsg
+         56   30 000278F0 CryptSIPPutSignedDataMsg
+         57   31 000279D0 CryptSIPRemoveSignedDataMsg
+         58   32 00027A70 CryptSIPVerifyIndirectData
+         59   33 0001AA10 DllRegisterServer
+         60   34 0001AA60 DllUnregisterServer
+         61   35 00005210 DriverCleanupPolicy
+         62   36 00002570 DriverFinalPolicy
+         63   37 00005F80 DriverInitializePolicy
+         64   38 0002EEE0 FindCertsByIssuer
+          5   39 0002B860 GenericChainCertificateTrust
+          6   3A 0002BBA0 GenericChainFinalProv
+         65   3B 0002D850 GetAuthenticodeSha256Hash
+          7   3C 00001D30 HTTPSCertificateTrust
+         66   3D 00004360 HTTPSFinalProv
+         67   3E 00026670 IsCatalogFile
+         68   3F 00026A80 MsCatConstructHashTag
+         69   40 00026B30 MsCatFreeHashTag
+         70   41 0002F2B0 OfficeCleanupPolicy
+         71   42 0002F2B0 OfficeInitializePolicy
+         72   43 0002C600 OpenPersonalTrustDBDialog
+         73   44 0002C610 OpenPersonalTrustDBDialogEx
+         74   45 00002B00 SoftpubAuthenticode
+         75   46 00005560 SoftpubCheckCert
+         76   47 00005AA0 SoftpubCleanup
+          8   48 0002C350 SoftpubDefCertInit
+         77   49 0002FA30 SoftpubDllRegisterServer
+         78   4A 0002FCA0 SoftpubDllUnregisterServer
+         79   4B 000308B0 SoftpubDumpStructure
+          9   4C 0002C450 SoftpubFreeDefUsageCallData
+         80   4D 00003180 SoftpubInitialize
+         10   4E 0002C4A0 SoftpubLoadDefUsageCallData
+         81   4F 00008870 SoftpubLoadMessage
+         82   50 000035A0 SoftpubLoadSignature
+         83   51 00032DC0 SrpCheckSmartlockerEAandProcessToken
+         84   52 0001E3B0 TrustDecode
+         85   53 0001E490 TrustFindIssuerCertificate
+         86   54 0001E680 TrustFreeDecode
+         87   55 0001E6B0 TrustIsCertificateSelfSigned
+         88   56 0001E730 TrustOpenStores
+         89   57 00021460 WTGetBioSignatureInfo
+         90   58 00021620 WTGetPluginSignatureInfo
+         91   59 0000D500 WTGetSignatureInfo
+         92   5A 0001F290 WTHelperCertCheckValidSignature
+         11   5B 0001A720 WTHelperCertFindIssuerCertificate
+         93   5C 0001A760 WTHelperCertIsSelfSigned
+         94   5D 0001F2B0 WTHelperCheckCertUsage
+         95   5E 0001F3F0 WTHelperGetAgencyInfo
+         96   5F 0001F4D0 WTHelperGetFileHandle
+         97   60 0001F060 WTHelperGetFileHash
+         98   61 00008D50 WTHelperGetFileName
+         99   62 0001F500 WTHelperGetKnownUsages
+        100   63 000014A0 WTHelperGetProvCertFromChain
+        101   64 0001F5A0 WTHelperGetProvPrivateDataFromChain
+        102   65 00005360 WTHelperGetProvSignerFromChain
+        103   66 0001F600 WTHelperIsChainedToMicrosoft
+        104   67 0001F780 WTHelperIsChainedToMicrosoftFromStateData
+        105   68 0001F850 WTHelperIsInRootStore
+        106   69 0001F950 WTHelperOpenKnownStores
+        107   6A 00005950 WTHelperProvDataFromStateData
+        108   6B 00010FF0 WTIsFirstConfigCiResultPreferred
+        109   6C 00011040 WTLogConfigCiScriptEvent
+        110   6D 000113F0 WTLogConfigCiSignerEvent
+        111   6E 00021830 WTValidateBioSignaturePolicy
+        112   6F 00004EF0 WVTAsn1CatMemberInfo2Decode
+        113   70 0001B4F0 WVTAsn1CatMemberInfo2Encode
+        114   71 0001B5A0 WVTAsn1CatMemberInfoDecode
+        115   72 0001B680 WVTAsn1CatMemberInfoEncode
+        116   73 00003CF0 WVTAsn1CatNameValueDecode
+        117   74 0001B6E0 WVTAsn1CatNameValueEncode
+        118   75 0001B750 WVTAsn1IntentToSealAttributeDecode
+        119   76 0001B7F0 WVTAsn1IntentToSealAttributeEncode
+        120   77 0001B830 WVTAsn1SealingSignatureAttributeDecode
+        121   78 0001B910 WVTAsn1SealingSignatureAttributeEncode
+        122   79 0001B9D0 WVTAsn1SealingTimestampAttributeDecode
+        123   7A 0001BAB0 WVTAsn1SealingTimestampAttributeEncode
+        124   7B 0001BB10 WVTAsn1SpcFinancialCriteriaInfoDecode
+        125   7C 0001BBC0 WVTAsn1SpcFinancialCriteriaInfoEncode
+        126   7D 0001BC00 WVTAsn1SpcIndirectDataContentDecode
+        127   7E 0001BDB0 WVTAsn1SpcIndirectDataContentEncode
+        128   7F 0001BE90 WVTAsn1SpcLinkDecode
+        129   80 00004A00 WVTAsn1SpcLinkEncode
+        130   81 0001BF70 WVTAsn1SpcMinimalCriteriaInfoDecode
+        131   82 0001C020 WVTAsn1SpcMinimalCriteriaInfoEncode
+        132   83 0001C050 WVTAsn1SpcPeImageDataDecode
+        133   84 0000EBB0 WVTAsn1SpcPeImageDataEncode
+        134   85 0001C190 WVTAsn1SpcSigInfoDecode
+        135   86 0001C240 WVTAsn1SpcSigInfoEncode
+        136   87 0001C2D0 WVTAsn1SpcSpAgencyInfoDecode
+        137   88 0001C660 WVTAsn1SpcSpAgencyInfoEncode
+        138   89 0001C810 WVTAsn1SpcSpOpusInfoDecode
+        139   8A 0001C960 WVTAsn1SpcSpOpusInfoEncode
+        140   8B 0001CA40 WVTAsn1SpcStatementTypeDecode
+        141   8C 0001CB70 WVTAsn1SpcStatementTypeEncode
+        142   8D 00006370 WinVerifyTrust
+        143   8E 0001F150 WinVerifyTrustEx
+        144   8F 0001CC30 WintrustAddActionID
+        145   90 0001E870 WintrustAddDefaultForUsage
+        146   91 00001970 WintrustCertificateTrust
+        147   92 0001EBB0 WintrustGetDefaultForUsage
+        148   93 0001D950 WintrustGetRegPolicyFlags
+        149   94 000061A0 WintrustLoadFunctionPointers
+        150   95 0001CE10 WintrustRemoveActionID
+        151   96 00028DC0 WintrustSetDefaultIncludePEPageHashes
+        152   97 0001D9F0 WintrustSetRegPolicyFlags
+        153   98 00005AA0 mscat32DllRegisterServer
+        154   99 00005AA0 mscat32DllUnregisterServer
+        155   9A 00027B80 mssip32DllRegisterServer
+        156   9B 00027DA0 mssip32DllUnregisterServer
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        4000 .pdata
+       14000 .rdata
+        1000 .reloc
+        2000 .rsrc
+       3B000 .text

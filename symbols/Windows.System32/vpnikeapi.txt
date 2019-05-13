@@ -1,0 +1,53 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\vpnikeapi.dll
+
+File Type: DLL
+
+  Section contains the following exports for VPNIKEAPI.DLL
+
+    00000000 characteristics
+    B1CFBD7E time date stamp
+        0.00 version
+           1 ordinal base
+          24 number of functions
+          24 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00003070 CancelProcessEapAuthPacket
+          2    1 00003340 CloseTunnel
+          3    2 00003680 CreateTunnel
+          4    3 000039C0 FreeConfigurationPayloadBuffer
+          5    4 00003B80 FreeEapAuthAttributes
+          6    5 00003D10 FreeEapAuthPacket
+          7    6 00003EA0 FreeIDPayloadBuffer
+          8    7 00004040 FreeTrafficSelectors
+          9    8 000041F0 GetConfigurationPayloadRequest
+         10    9 00004540 GetIDPayload
+         11    A 00001DE0 GetOptionalIDrPayload
+         12    B 00004890 GetServerEapAuthRequestPacket
+         13    C 00004C10 GetTrafficSelectorsRequest
+         14    D 00004F70 NewRasIncomingCall
+         15    E 000052F0 ProcessAdditionalAddressNotification
+         16    F 00005630 ProcessConfigurationPayloadReply
+         17   10 00005980 ProcessConfigurationPayloadRequest
+         18   11 00005CE0 ProcessEapAuthPacket
+         19   12 000060E0 ProcessTrafficSelectorsReply
+         20   13 00006450 ProcessTrafficSelectorsRequest
+         21   14 000067C0 QueryEapAuthAttributes
+         22   15 00006B10 RemoveTrafficSelectors
+         23   16 00006E60 TunnelAuthDone
+         24   17 000071E0 UpdateTunnel
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        6000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        7000 .text

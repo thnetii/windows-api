@@ -1,0 +1,42 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\dsound.dll
+
+File Type: DLL
+
+  Section contains the following exports for DSOUND.dll
+
+    00000000 characteristics
+    807CB1BE time date stamp
+        0.00 version
+           1 ordinal base
+          12 number of functions
+          12 number of names
+
+    ordinal hint RVA      name
+
+          6    0 0001DB20 DirectSoundCaptureCreate
+         12    1 0001DCD0 DirectSoundCaptureCreate8
+          7    2 0001DE80 DirectSoundCaptureEnumerateA
+          8    3 0000E020 DirectSoundCaptureEnumerateW
+          1    4 0001DEA0 DirectSoundCreate
+         11    5 000021E0 DirectSoundCreate8
+          2    6 0001E050 DirectSoundEnumerateA
+          3    7 00004AB0 DirectSoundEnumerateW
+         10    8 0001E070 DirectSoundFullDuplexCreate
+          4    9 00028740 DllCanUnloadNow
+          5    A 00003FD0 DllGetClassObject
+          9    B 00005D80 GetDeviceID
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        5000 .pdata
+       32000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       58000 .text
+        1000 RT_CODE

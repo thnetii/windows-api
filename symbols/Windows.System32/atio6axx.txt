@@ -1,0 +1,100 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\atio6axx.dll
+
+File Type: DLL
+
+  Section contains the following exports for atio6axx.dll
+
+    00000000 characteristics
+    5656A46D time date stamp Thu Nov 26 07:19:25 2015
+        0.00 version
+           1 ordinal base
+          65 number of functions
+          65 number of names
+
+    ordinal hint RVA      name
+
+         24    0 00125250 DllMain
+          1    1 00144250 DrvCopyContext
+          2    2 00144480 DrvCreateContext
+          3    3 00144300 DrvCreateLayerContext
+          4    4 00144490 DrvDeleteContext
+          5    5 00144F90 DrvDescribeLayerPlane
+          6    6 001454D0 DrvDescribePixelFormat
+          7    7 001451A0 DrvGetLayerPaletteEntries
+          8    8 00144F00 DrvGetProcAddress
+          9    9 0016BEC0 DrvPresentBuffers
+         10    A 001452D0 DrvRealizeLayerPalette
+         11    B 00144D30 DrvReleaseContext
+         12    C 0016BEA0 DrvSetCallbackProcs
+         13    D 00144990 DrvSetContext
+         14    E 00145070 DrvSetLayerPaletteEntries
+         15    F 00145630 DrvSetPixelFormat
+         16   10 00144E60 DrvShareLists
+         17   11 001457F0 DrvSwapBuffers
+         18   12 001453F0 DrvSwapLayerBuffers
+         19   13 00144DF0 DrvValidateVersion
+         20   14 00150C30 atiPPHSN
+         21   15 0008C5B0 atiPS
+         22   16 00150AB0 atiQD
+         23   17 00150B60 atiQDS
+         25   18 00128840 eglBindAPI
+         26   19 00128870 eglBindTexImage
+         27   1A 001289A0 eglChooseConfig
+         28   1B 0012AC70 eglClientWaitSyncKHR
+         29   1C 00128AB0 eglCopyBuffers
+         30   1D 00128AD0 eglCreateContext
+         31   1E 00128C30 eglCreatePbufferFromClientBuffer
+         32   1F 00128CE0 eglCreatePbufferSurface
+         33   20 00128DF0 eglCreatePixmapSurface
+         34   21 0012AAD0 eglCreateSyncKHR
+         35   22 00128E10 eglCreateWindowSurface
+         36   23 00128F30 eglDestroyContext
+         37   24 00129030 eglDestroySurface
+         38   25 0012AED0 eglDestroySyncKHR
+         39   26 00129130 eglGetConfigAttrib
+         40   27 00129250 eglGetConfigs
+         41   28 00129370 eglGetCurrentContext
+         42   29 001293D0 eglGetCurrentDisplay
+         43   2A 00129440 eglGetCurrentSurface
+         44   2B 001294F0 eglGetDisplay
+         45   2C 00129580 eglGetError
+         46   2D 0012B070 eglGetProcAddress
+         47   2E 0012ADB0 eglGetSyncAttribKHR
+         48   2F 001298F0 eglInitialize
+         49   30 001299E0 eglMakeCurrent
+         50   31 00129C60 eglQueryAPI
+         51   32 00129CC0 eglQueryContext
+         52   33 00129DE0 eglQueryString
+         53   34 00129EE0 eglQuerySurface
+         54   35 0012A000 eglReleaseTexImage
+         55   36 0012A120 eglReleaseThread
+         56   37 0012A9D0 eglSetBlobCacheFuncsANDROID
+         57   38 0012A1B0 eglSurfaceAttrib
+         58   39 0012A2C0 eglSwapBuffers
+         59   3A 0012A430 eglSwapInterval
+         60   3B 0012A520 eglTerminate
+         61   3C 0012A5D0 eglWaitClient
+         62   3D 0012A680 eglWaitGL
+         63   3E 0012A750 eglWaitNative
+         64   3F 0012B230 getEGLInterface
+         65   40 000B5C10 getIcdInterfaceES2
+
+  Summary
+
+      18C000 .data
+       C8000 .pdata
+      302000 .rdata
+       31000 .reloc
+        1000 .rsrc
+     180F000 .text
+        1000 .text1
+        2000 .text2
+        2000 .text3
+        2000 .text4
+        1000 .tls
+        1000 _RDATA
+       2A000 _TEXTASM

@@ -1,0 +1,118 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\tquery.dll
+
+File Type: DLL
+
+  Section contains the following exports for TQUERY.DLL
+
+    00000000 characteristics
+    233F1463 time date stamp
+        0.00 version
+         253 ordinal base
+          89 number of functions
+          89 number of names
+
+    ordinal hint RVA      name
+
+        254    0 00071300 ??0CDriveInfo@@QEAA@PEBGK@Z
+        255    1 00132C60 ??0CFullPath@@QEAA@PEBG@Z
+        256    2 00059320 ??0CFullPropSpec@@QEAA@AEBV0@@Z
+        257    3 0006B2A0 ??0CMemSerStream@@QEAA@PEAEK@Z
+        258    4 00133680 ??0CPidLookupTable@@QEAA@XZ
+        259    5 000C4940 ??0CUnNormalizer@@QEAA@XZ
+        260    6 00134380 ??0CiStorage@@QEAA@PEBGKPEAUICiCAdviseStatus@@KH@Z
+        261    7 00133310 ??0XAct@@QEAA@XZ
+        262    8 00042D80 ??1CAllocStorageVariant@@IEAA@XZ
+        263    9 0006B260 ??1CMemSerStream@@UEAA@XZ
+        264    A 00138F70 ??1CPhysStorage@@UEAA@XZ
+        265    B 00133820 ??1CPidLookupTable@@QEAA@XZ
+        266    C 00134560 ??1CiStorage@@UEAA@XZ
+        253    D 002EDF00 ?CoTaskAllocator@@3VCCoTaskAllocator@@A
+        267    E 000721E0 ?ContainsDrive@CDriveInfo@@SAHPEBG@Z
+        272    F 000B0250 ?GetBlob@CMemDeSerStream@@UEAAXPEAEK@Z
+        273   10 0006CF70 ?GetByte@CMemDeSerStream@@UEAAEXZ
+        274   11 000B0250 ?GetChar@CMemDeSerStream@@UEAAXPEADK@Z
+        275   12 00132810 ?GetDiskSpace@CDriveInfo@@QEAAXAEA_J0@Z
+        276   13 0014B690 ?GetDouble@CMemDeSerStream@@UEAANXZ
+        277   14 00072190 ?GetDrive@CDriveInfo@@SAXPEBGPEAG@Z
+        278   15 0002BAB0 ?GetFloat@CMemDeSerStream@@UEAAMXZ
+        279   16 000B1BA0 ?GetGUID@CMemDeSerStream@@UEAAXAEAU_GUID@@@Z
+        280   17 0006CFA0 ?GetLong@CMemDeSerStream@@UEAAJXZ
+        281   18 001328A0 ?GetSectorSize@CDriveInfo@@QEAAKXZ
+        282   19 0014B6E0 ?GetString@CMemDeSerStream@@UEAAPEADXZ
+        283   1A 0006CFA0 ?GetULong@CMemDeSerStream@@UEAAKXZ
+        284   1B 000B24E0 ?GetUShort@CMemDeSerStream@@UEAAGXZ
+        285   1C 000B02E0 ?GetWChar@CMemDeSerStream@@UEAAXPEAGK@Z
+        286   1D 0014B7C0 ?GetWString@CMemDeSerStream@@UEAAPEAGXZ
+        287   1E 00133B00 ?Init@CPidLookupTable@@QEAAHPEAVPRcovStorageObj@@@Z
+        288   1F 00132940 ?IsSameDrive@CDriveInfo@@QEAAHPEBG@Z
+        289   20 00132980 ?IsWriteProtected@CDriveInfo@@QEAAHXZ
+        290   21 00132F90 ?MakePath@CFullPath@@QEAAXPEBG@Z
+        291   22 0014B910 ?PeekULong@CMemDeSerStream@@UEAAKXZ
+        292   23 000B02A0 ?PutBlob@CMemSerStream@@UEAAXPEBEK@Z
+        293   24 000B24B0 ?PutByte@CMemSerStream@@UEAAXE@Z
+        294   25 000B02A0 ?PutChar@CMemSerStream@@UEAAXPEBDK@Z
+        295   26 0014AD10 ?PutDouble@CMemSerStream@@UEAAXN@Z
+        296   27 0002B930 ?PutFloat@CMemSerStream@@UEAAXM@Z
+        297   28 000B1B60 ?PutGUID@CMemSerStream@@UEAAXAEBU_GUID@@@Z
+        298   29 000B0380 ?PutLong@CMemSerStream@@UEAAXJ@Z
+        299   2A 0014AD60 ?PutString@CMemSerStream@@UEAAXPEBD@Z
+        300   2B 000AB490 ?PutULong@CMemSerStream@@UEAAXK@Z
+        301   2C 000B2470 ?PutUShort@CMemSerStream@@UEAAXG@Z
+        302   2D 000B0330 ?PutWChar@CMemSerStream@@UEAAXPEBGK@Z
+        303   2E 0014ADD0 ?PutWString@CMemSerStream@@UEAAXPEBG@Z
+        304   2F 00137270 ?QueryPidLookupTable@CiStorage@@QEAAPEAVPRcovStorageObj@@K@Z
+        305   30 0013B0D0 ?Read@CCiFile@@QEAAXXZ
+        306   31 00059DC0 ?ResetType@CAllocStorageVariant@@IEAAXAEAVPMemoryAllocator@@@Z
+        307   32 0002CA10 ?SetProperty@CFullPropSpec@@QEAAHPEBG@Z
+        308   33 00143760 ?SetProperty@CFullPropSpec@@QEAAXK@Z
+        309   34 0014B960 ?SkipBlob@CMemDeSerStream@@UEAAXK@Z
+        310   35 0014B9B0 ?SkipByte@CMemDeSerStream@@UEAAXXZ
+        311   36 0014B960 ?SkipChar@CMemDeSerStream@@UEAAXK@Z
+        312   37 0014B9F0 ?SkipDouble@CMemDeSerStream@@UEAAXXZ
+        313   38 0014BA40 ?SkipFloat@CMemDeSerStream@@UEAAXXZ
+        314   39 0014BA90 ?SkipGUID@CMemDeSerStream@@UEAAXXZ
+        315   3A 0014BA40 ?SkipLong@CMemDeSerStream@@UEAAXXZ
+        316   3B 0014BA40 ?SkipULong@CMemDeSerStream@@UEAAXXZ
+        317   3C 0014BAE0 ?SkipUShort@CMemDeSerStream@@UEAAXXZ
+        318   3D 0014BB30 ?SkipWChar@CMemDeSerStream@@UEAAXK@Z
+        319   3E 001438D0 ?UnNormalizeKey@CUnNormalizer@@QEAAXAEBVCKeyBuf@@AEAUtagPROPVARIANT@@PEAGK@Z
+        324   3F 001548C0 AccessDebugTracer
+        325   40 001548E0 AccessRetailTracer
+        326   41 00141E20 CIState
+        269   42 00139E80 CreatePropMapperStorage
+        268   43 00139DC0 CreatePropMapperStorage2
+        270   44 0013A8A0 CreateSecurityStoreStorage
+        327   45 000C0BE0 DllCanUnloadNow
+        328   46 000A2F40 DllGetClassObject
+        329   47 001315E0 DllRegisterServer
+        330   48 00131650 DllUnregisterServer
+        271   49 00042D80 ExceptInitialize
+        331   4A 00038B50 ExternPropagateEventToOpenQueries
+        332   4B 00141F20 ForceMasterMerge
+        333   4C 00131F00 PerfmonClose
+        334   4D 00131F40 PerfmonCollect
+        335   4E 00131F00 PerfmonIDXClose
+        336   4F 00132190 PerfmonIDXCollect
+        337   50 001323E0 PerfmonIDXOpen
+        338   51 00132420 PerfmonOpen
+        339   52 00154900 RetailTracerDisable
+        340   53 00154920 RetailTracerEnable
+        341   54 00154A30 RetailTracerReleaseAll
+        320   55 00149090 UseLowFragmentationHeap
+        321   56 0004FF00 ciDelete
+        322   57 0004E510 ciNew
+        323   58 000A9EA0 ciNewNoThrow
+
+  Summary
+
+        6000 .data
+        1000 .didat
+       1D000 .pdata
+       AE000 .rdata
+        4000 .reloc
+       1F000 .rsrc
+      23E000 .text

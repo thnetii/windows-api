@@ -1,0 +1,172 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\SFComm64.dll
+
+File Type: DLL
+
+  Section contains the following exports for SFComm64.DLL
+
+    00000000 characteristics
+    4C3A9967 time date stamp Mon Jul 12 06:26:15 2010
+        0.00 version
+           1 ordinal base
+         145 number of functions
+         145 number of names
+
+    ordinal hint RVA      name
+
+          2    0 00009B7C sffxFree
+        127    1 00009AE8 sffxFreeLite
+        124    2 0000DE58 sffxGetAVPower
+        141    3 000101EC sffxGetAVSettings
+         60    4 0000D470 sffxGetAmbience
+         56    5 0000D2C8 sffxGetAudioContrast
+         32    6 0000C310 sffxGetBassMgmtMode
+         50    7 0000CEA4 sffxGetBrilliance
+         42    8 0000C740 sffxGetCenterLevel
+         79    9 0000E308 sffxGetCenterSubSwapState
+        133    A 0000F9D0 sffxGetCompLimSettings
+         54    B 0000D04C sffxGetDeepBass
+         81    C 0000D120 sffxGetDeepBassFreq
+         83    D 0000D1F4 sffxGetDeepBassQ
+          8    E 0000A41C sffxGetDefaultPlaybackDevice
+         94    F 0000B054 sffxGetDefaultRecordDevice
+         25   10 0000C0EC sffxGetDigitalMode
+         48   11 0000CDD0 sffxGetDynamics
+        131   12 0000F72C sffxGetHPFSettings
+        143   13 000105DC sffxGetInternalSpeakerState
+        129   14 0000F48C sffxGetLPFSettings
+         43   15 0000C794 sffxGetLevel
+         87   16 0000E4B0 sffxGetLowCutFreq
+         85   17 0000E3DC sffxGetLowCutPower
+        139   18 000103F8 sffxGetMasterGain
+         15   19 0000A9E8 sffxGetMasterPlaybackMute
+         13   1A 0000A8B0 sffxGetMasterPlaybackVolume
+        101   1B 0000B704 sffxGetMasterRecordMute
+         99   1C 0000B5CC sffxGetMasterRecordVolume
+         75   1D 0000E0F8 sffxGetMeterData
+        107   1E 0000E504 sffxGetNumPlaybackControls
+          3   1F 00009D0C sffxGetNumPlaybackDevices
+         10   20 0000A5A4 sffxGetNumPlaybackJacks
+         44   21 0000C868 sffxGetNumPresets
+        111   22 0000EBC8 sffxGetNumRecordControls
+         89   23 0000AC14 sffxGetNumRecordDevices
+         96   24 0000B2C0 sffxGetNumRecordJacks
+         18   25 0000AB98 sffxGetPlaybackChannelVolume
+        108   26 0000E564 sffxGetPlaybackControlInfo
+        120   27 0000E668 sffxGetPlaybackControlRange
+        109   28 0000E764 sffxGetPlaybackControlValue
+          5   29 0000A1F8 sffxGetPlaybackDeviceIndex
+          4   2A 00009D58 sffxGetPlaybackDeviceInfo
+          9   2B 0000A468 sffxGetPlaybackDeviceState
+         11   2C 0000A604 sffxGetPlaybackJackInfo
+         16   2D 0000AA54 sffxGetPlaybackVolumeChannelCount
+         20   2E 0000B9B0 sffxGetPower
+         46   2F 0000CCF4 sffxGetPreset
+        119   30 0000E194 sffxGetProcessingInfo
+        104   31 0000B8B4 sffxGetRecordChannelVolume
+        112   32 0000EC28 sffxGetRecordControlInfo
+        121   33 0000ED2C sffxGetRecordControlRange
+        113   34 0000EE28 sffxGetRecordControlValue
+         91   35 0000AF18 sffxGetRecordDeviceIndex
+         90   36 0000AC60 sffxGetRecordDeviceInfo
+         95   37 0000B184 sffxGetRecordDeviceState
+         97   38 0000B320 sffxGetRecordJackInfo
+        115   39 0000C7E8 sffxGetRecordLevel
+        116   3A 0000E1EC sffxGetRecordMeterData
+        102   3B 0000B770 sffxGetRecordVolumeChannelCount
+         62   3C 0000D544 sffxGetReflections
+         28   3D 0000C3E4 sffxGetRoomDepth
+          7   3E 0000A320 sffxGetSelectedPlaybackDevice
+         93   3F 0000B138 sffxGetSelectedRecordDevice
+        135   40 0000FC84 sffxGetSoftEQSettings
+         52   41 0000CF78 sffxGetSolo
+         22   42 0000BE18 sffxGetSpeakerMode
+         36   43 0000C4C4 sffxGetSpeakerTest
+         30   44 0000C178 sffxGetSubXoverFreq
+         26   45 0000C0EC sffxGetSupportedDigitalModes
+         23   46 0000C028 sffxGetSupportedSpeakerModes
+         38   47 0000C598 sffxGetSurroundFaderX
+         40   48 0000C66C sffxGetSurroundFaderY
+         34   49 0000C438 sffxGetTestSong
+         67   4A 0000DA44 sffxGetUserEQBandFreq
+         71   4B 0000DC54 sffxGetUserEQBandGain
+         69   4C 0000DB4C sffxGetUserEQBandQ
+         66   4D 0000DA18 sffxGetUserEQNumBands
+         77   4E 0000D9C4 sffxGetUserEQPower
+         65   4F 0000D918 sffxGetUserEQType
+        137   50 0000FF38 sffxGetVirtBassSettings
+        118   51 0000B4A4 sffxGetWaveInDeviceIndex
+        117   52 0000A788 sffxGetWaveOutDeviceIndex
+         58   53 0000D39C sffxGetWidth
+          1   54 00009738 sffxInit
+        126   55 000097B0 sffxInitLite
+         88   56 0000F298 sffxPing
+         73   57 0000DF38 sffxRegisterNotificationCallback
+        105   58 0000E018 sffxRegisterNotificationWindow
+         64   59 0000D7A8 sffxResetPreset
+         63   5A 0000D598 sffxSavePreset
+        125   5B 0000DD5C sffxSetAVPower
+        140   5C 00010078 sffxSetAVSettings
+         59   5D 0000D3F0 sffxSetAmbience
+         55   5E 0000D248 sffxSetAudioContrast
+         31   5F 0000C1CC sffxSetBassMgmtMode
+         49   60 0000CE24 sffxSetBrilliance
+         41   61 0000C6C0 sffxSetCenterLevel
+         78   62 0000E288 sffxSetCenterSubSwapState
+        132   63 0000F864 sffxSetCompLimSettings
+        144   64 000106F0 sffxSetDSPAlwaysOn
+        145   65 000107B4 sffxSetDSPAuthorTime
+         53   66 0000CFCC sffxSetDeepBass
+         80   67 0000D0A0 sffxSetDeepBassFreq
+         82   68 0000D174 sffxSetDeepBassQ
+        122   69 0000A36C sffxSetDefaultPlaybackDevice
+        123   6A 0000AFA4 sffxSetDefaultRecordDevice
+         24   6B 0000C0EC sffxSetDigitalMode
+         47   6C 0000CD50 sffxSetDynamics
+        130   6D 0000F5C4 sffxSetHPFSettings
+        142   6E 000104D8 sffxSetInternalSpeakerState
+        128   6F 0000F324 sffxSetLPFSettings
+         86   70 0000E430 sffxSetLowCutFreq
+         84   71 0000E35C sffxSetLowCutPower
+        138   72 0001032C sffxSetMasterGain
+         14   73 0000A91C sffxSetMasterPlaybackMute
+         12   74 0000A7E8 sffxSetMasterPlaybackVolume
+        100   75 0000B638 sffxSetMasterRecordMute
+         98   76 0000B504 sffxSetMasterRecordVolume
+         17   77 0000AAC0 sffxSetPlaybackChannelVolume
+        110   78 0000E980 sffxSetPlaybackControlValue
+         19   79 0000B930 sffxSetPower
+         45   7A 0000C9C0 sffxSetPreset
+        103   7B 0000B7DC sffxSetRecordChannelVolume
+        114   7C 0000F048 sffxSetRecordControlValue
+         61   7D 0000D4C4 sffxSetReflections
+         27   7E 0000C364 sffxSetRoomDepth
+          6   7F 0000A284 sffxSetSelectedPlaybackDevice
+         92   80 0000B0A0 sffxSetSelectedRecordDevice
+        134   81 0000FB10 sffxSetSoftEQSettings
+         51   82 0000CEF8 sffxSetSolo
+         21   83 0000BA04 sffxSetSpeakerMode
+         35   84 0000C444 sffxSetSpeakerTest
+         29   85 0000C0F8 sffxSetSubXoverFreq
+         37   86 0000C518 sffxSetSurroundFaderX
+         39   87 0000C5EC sffxSetSurroundFaderY
+         33   88 0000C438 sffxSetTestSong
+         68   89 0000DAA8 sffxSetUserEQBandFreq
+         72   8A 0000DCB8 sffxSetUserEQBandGain
+         70   8B 0000DBB0 sffxSetUserEQBandQ
+         76   8C 0000D944 sffxSetUserEQPower
+        136   8D 0000FDC4 sffxSetVirtBassSettings
+         57   8E 0000D31C sffxSetWidth
+         74   8F 0000DFC0 sffxUnregisterNotificationCallback
+        106   90 0000E0A0 sffxUnregisterNotificationWindow
+
+  Summary
+
+       35000 .data
+        1000 .pdata
+        1000 .reloc
+        1000 .rsrc
+       13000 .text

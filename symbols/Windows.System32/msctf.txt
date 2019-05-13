@@ -1,0 +1,105 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\msctf.dll
+
+File Type: DLL
+
+  Section contains the following exports for MSCTF.dll
+
+    00000000 characteristics
+    6FDA36D1 time date stamp
+        0.00 version
+           1 ordinal base
+          76 number of functions
+          76 number of names
+
+    ordinal hint RVA      name
+
+          2    0 0001E110 CtfImeAssociateFocus
+          3    1 000622A0 CtfImeConfigure
+          4    2 0003F0E0 CtfImeConversionList
+          5    3 0000D6D0 CtfImeCreateInputContext
+          6    4 00029930 CtfImeCreateThreadMgr
+          7    5 000622B0 CtfImeDestroy
+          8    6 0000C700 CtfImeDestroyInputContext
+          9    7 0000CB20 CtfImeDestroyThreadMgr
+         10    8 00024C90 CtfImeDispatchDefImeMessage
+         11    9 0003F0E0 CtfImeEnumRegisterWord
+         12    A 0003F0E0 CtfImeEscape
+         13    B 000622D0 CtfImeEscapeEx
+         14    C 00062350 CtfImeGetGuidAtom
+         15    D 0003F0E0 CtfImeGetRegisterWordStyle
+         16    E 0003F0E0 CtfImeInquire
+         17    F 0000F1F0 CtfImeInquireExW
+         18   10 000623B0 CtfImeIsGuidMapEnable
+         19   11 00062400 CtfImeIsIME
+         20   12 0001BAF0 CtfImeProcessCicHotkey
+         21   13 0001BC30 CtfImeProcessKey
+         22   14 0003F0E0 CtfImeRegisterWord
+         23   15 0003F0E0 CtfImeSelect
+         24   16 0000DC90 CtfImeSelectEx
+         25   17 0001EA20 CtfImeSetActiveContext
+         26   18 00062480 CtfImeSetCompositionString
+         27   19 00062490 CtfImeSetFocus
+         28   1A 00062500 CtfImeToAsciiEx
+         29   1B 0003F0E0 CtfImeUnregisterWord
+         30   1C 0002A150 CtfNotifyIME
+         31   1D 0003D0E0 DllCanUnloadNow
+         32   1E 0003EC50 DllGetClassObject
+         33   1F 000601E0 DllRegisterServer
+         34   20 00060530 DllUnregisterServer
+         35   21 000210D0 HasDeferredInputForCoreDispatcher
+         36   22 00007600 InputFocusMonitorCreate
+         37   23 00043700 SetInputScope
+         38   24 00091C30 SetInputScopeXML
+         39   25 00091C70 SetInputScopes
+         40   26 000095C0 SetInputScopes2
+         41   27 00062510 TF_CUASAppFix
+         42   28 00004240 TF_CanUninitialize
+         43   29 00004440 TF_CleanUpPrivateMessages
+         44   2A 000308D0 TF_CreateCTFWatchdogMutex
+         45   2B 00062550 TF_CreateCategoryMgr
+         46   2C 00031B10 TF_CreateCicLoadMutex
+         47   2D 000307C0 TF_CreateCicLoadWinStaMutex
+         48   2E 00062570 TF_CreateDisplayAttributeMgr
+         49   2F 0003D9C0 TF_CreateInputProcessorProfiles
+         50   30 00062590 TF_CreateLangBarItemMgr
+         51   31 0003C370 TF_CreateLangBarMgr
+         52   32 000625B0 TF_CreateThreadMgr
+         53   33 00012770 TF_GetAppCompatFlags
+         54   34 000625D0 TF_GetCompatibleKeyboardLayout
+         55   35 00062710 TF_GetGlobalCompartment
+         56   36 0001BA60 TF_GetInitSystemFlags
+         57   37 00011710 TF_GetInputScope
+         58   38 000955F0 TF_GetShowFloatingStatus
+         59   39 000089D0 TF_GetThreadFlags
+         60   3A 00062720 TF_GetThreadMgr
+         61   3B 00031BA0 TF_InitSystem
+         62   3C 0003F0E0 TF_InvalidAssemblyListCacheIfExist
+         63   3D 00071920 TF_IsCtfmonRunning
+         64   3E 000627D0 TF_IsLanguageBarEnabled
+         65   3F 0003F0E0 TF_IsThreadWithFlags
+         66   40 000628D0 TF_MapCompatibleHKL
+         67   41 00062960 TF_MapCompatibleKeyboardTip
+         68   42 00019FA0 TF_Notify
+         69   43 0003E580 TF_PostAllThreadMsg
+          1   44 000621C0 TF_RunInputCPL
+         70   45 00062970 TF_SendLangBandMsg
+         71   46 000438C0 TF_SetDefaultRemoteKeyboardLayout
+         72   47 00095600 TF_SetShowFloatingStatus
+         73   48 0003F0E0 TF_SetThreadFlags
+         74   49 00031530 TF_UninitSystem
+         75   4A 00004440 TF_WaitForInitialized
+         76   4B 00023980 TextInputClientWrapperCreate
+
+  Summary
+
+        4000 .data
+        1000 .didat
+        E000 .pdata
+       2A000 .rdata
+        3000 .reloc
+       42000 .rsrc
+       E7000 .text

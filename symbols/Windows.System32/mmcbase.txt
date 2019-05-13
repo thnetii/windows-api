@@ -1,0 +1,161 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\mmcbase.dll
+
+File Type: DLL
+
+  Section contains the following exports for mmcbase.DLL
+
+    00000000 characteristics
+    64906A89 time date stamp
+        0.00 version
+           1 ordinal base
+         132 number of functions
+         132 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001470 ??0?$CEventLock@UAppEvents@@@@QEAA@XZ
+          2    1 00016C70 ??0CEventBuffer@@QEAA@AEBV0@@Z
+          3    2 00016CA0 ??0CEventBuffer@@QEAA@XZ
+          4    3 00015C70 ??0CMMCStrongReferences@@AEAA@XZ
+          5    4 00007F00 ??0SC@mmcerror@@QEAA@AEBV01@@Z
+          6    5 00001600 ??0SC@mmcerror@@QEAA@J@Z
+          7    6 00001410 ??1?$CEventLock@UAppEvents@@@@QEAA@XZ
+          8    7 00008DF0 ??1CEventBuffer@@QEAA@XZ
+          9    8 00007D60 ??1SC@mmcerror@@QEAA@XZ
+         10    9 00016F20 ??4?$CEventLock@UAppEvents@@@@QEAAAEAV0@AEBV0@@Z
+         11    A 00017270 ??4CEventBuffer@@QEAAAEAV0@AEBV0@@Z
+         12    B 00015D00 ??4CMMCStrongReferences@@QEAAAEAV0@$$QEAV0@@Z
+         13    C 00015D20 ??4CMMCStrongReferences@@QEAAAEAV0@AEBV0@@Z
+         14    D 00007E80 ??4SC@mmcerror@@QEAAAEAV01@AEBV01@@Z
+         15    E 00007EE0 ??4SC@mmcerror@@QEAAAEAV01@J@Z
+         16    F 00001C80 ??7SC@mmcerror@@QEBAHXZ
+         17   10 00008140 ??8SC@mmcerror@@QEBA_NAEBV01@@Z
+         18   11 000083E0 ??8SC@mmcerror@@QEBA_NJ@Z
+         19   12 0000FDC0 ??9SC@mmcerror@@QEBA_NAEBV01@@Z
+         20   13 000083C0 ??9SC@mmcerror@@QEBA_NJ@Z
+         21   14 00001CD0 ??BSC@mmcerror@@QEBA_NXZ
+         22   15 0000FDE0 ??_FSC@mmcerror@@QEAAXXZ
+         23   16 00002550 ?AddItem@BookKeeping@@SAJAEAVItemHandle@@@Z
+         24   17 00015DF0 ?AddRef@CMMCStrongReferences@@SAKXZ
+         25   18 00001FD0 ?AddSnapin@BookKeeping@@SAJPEBGAEAH@Z
+         26   19 00003470 ?AddSnapinInterface@BookKeeping@@SA_NPEAUIUnknown@@PEBGAEAH@Z
+         27   1A 000080E0 ?CheckCallingThreadID@SC@mmcerror@@QEAAXXZ
+         28   1B 00008120 ?Clear@SC@mmcerror@@QEAAXXZ
+         29   1C 00011B10 ?DumpWatsonTables@BookKeeping@@SAJPEAXPEBGH@Z
+         30   1D 00011CE0 ?EnableDiagnosticMessageBox@BookKeeping@@SA_N_N@Z
+         31   1E 00015320 ?ExceptionFilter@CMMCWatsonAPI@@SAJPEAU_EXCEPTION_POINTERS@@H@Z
+         32   1F 00018340 ?FatalError@SC@mmcerror@@QEBAXXZ
+         33   20 00011D00 ?FindAllSnapinUIThreads@BookKeeping@@SAJHPEAPEAKPEAK@Z
+         34   21 000012B0 ?FindAllSnapinUIThreads@BookKeeping@@SAJPEAPEAKPEAK@Z
+         35   22 00003B40 ?FindItem@BookKeeping@@SAPEAVItemHandle@@PEAX@Z
+         36   23 00011DC0 ?FindSnapin@BookKeeping@@SAAEBVSnapinBookkeepingInfo@@H@Z
+         37   24 00011DD0 ?FindSnapin@BookKeeping@@SAAEBVSnapinBookkeepingInfo@@PEAUIUnknown@@@Z
+         38   25 00011DE0 ?FindSnapin@BookKeeping@@SAAEBVSnapinBookkeepingInfo@@PEBG@Z
+         39   26 000154D0 ?ForceException@CMMCWatsonAPI@@SAXH@Z
+         40   27 00018380 ?FormatErrorIds@@YAXIVSC@mmcerror@@IPEAG@Z
+         41   28 00018430 ?FormatErrorShort@@YAXVSC@mmcerror@@IPEAG@Z
+         42   29 00018490 ?FormatErrorString@@YAXPEBGVSC@mmcerror@@IPEAGH@Z
+         43   2A 000184D0 ?FromLastError@SC@mmcerror@@QEAAAEAV12@XZ
+         44   2B 0000FE00 ?FromMMC@SC@mmcerror@@QEAAAEAV12@J@Z
+         45   2C 000080C0 ?FromWin32@SC@mmcerror@@QEAAAEAV12@J@Z
+         46   2D 00011DF0 ?FxSnapinException@BookKeeping@@SA_NHPEBG000HPEAUHWND__@@@Z
+         47   2E 0000FE20 ?GetCode@SC@mmcerror@@QEBAJXZ
+         49   2F 00018510 ?GetErrorMessage@SC@mmcerror@@QEBAXIPEAG@Z
+         51   30 0000FE30 ?GetFacility@SC@mmcerror@@AEBA?AW4facility_type@12@XZ
+         52   31 0000FE40 ?GetFunctionName@SC@mmcerror@@QEBAPEBGXZ
+         53   32 00008E40 ?GetHWnd@SC@mmcerror@@SAPEAUHWND__@@XZ
+         54   33 000186B0 ?GetHelpFile@SC@mmcerror@@SAPEBGXZ
+         55   34 00008FB0 ?GetHelpID@SC@mmcerror@@QEAAKXZ
+         56   35 00008950 ?GetHinst@SC@mmcerror@@SAPEAUHINSTANCE__@@XZ
+         57   36 0000FE50 ?GetMainThreadID@SC@mmcerror@@SAKXZ
+         58   37 000186F0 ?GetModalHWND@SC@mmcerror@@SAPEAUHWND__@@XZ
+         59   38 00008E20 ?GetNewSnapinInstanceId@BookKeeping@@SAHXZ
+         60   39 00015E10 ?GetSingletonObject@CMMCStrongReferences@@CAAEAV1@XZ
+         61   3A 00011F80 ?GetSnapinModuleName@BookKeeping@@SAPEBGH@Z
+         62   3B 00007DE0 ?GetSnapinName@BookKeeping@@SAPEBGH@Z
+         63   3C 0000FE60 ?GetSnapinName@SC@mmcerror@@QEBAPEBGXZ
+         65   3D 00007EA0 ?HrFromSc@@YAJAEBVSC@mmcerror@@@Z
+         66   3E 000038F0 ?InitInstance@BookKeeping@@SAJXZ
+         67   3F 00012000 ?InterfaceFailure@BookKeeping@@SAXHPEBG0@Z
+         68   40 00012040 ?InterfaceMethodActivationContextException@BookKeeping@@SAXHPEBG0KPEAU_EXCEPTION_POINTERS@@@Z
+         69   41 00012120 ?InterfaceMethodException@BookKeeping@@SAXHPEBG0KPEAU_EXCEPTION_POINTERS@@@Z
+         70   42 00012200 ?InterfaceNotFound@BookKeeping@@SAXHPEBG@Z
+         71   43 00015E20 ?InternalAddRef@CMMCStrongReferences@@AEAAKXZ
+         72   44 00015E30 ?InternalLastRefReleased@CMMCStrongReferences@@AEAA_NXZ
+         73   45 00015E40 ?InternalRelease@CMMCStrongReferences@@AEAAKXZ
+         74   46 00012240 ?InvalidInterface@BookKeeping@@SAXHPEBG0@Z
+         75   47 00012280 ?InvalidMMCInterface@BookKeeping@@SAXHPEBG0@Z
+         76   48 000122C0 ?InvalidMMCInterfaceRelease@BookKeeping@@SAXHPEBG0@Z
+         77   49 000080A0 ?IsError@SC@mmcerror@@QEBA_NXZ
+         78   4A 000173C0 ?IsLocked@CEventBuffer@@QEAA_NXZ
+         79   4B 00013E70 ?IsValid@ItemHandle@@SA_NPEBV1@@Z
+         80   4C 00003890 ?LKResult2HRESULT@BookKeeping@@SAJ_J@Z
+         81   4D 00015E60 ?LastRefReleased@CMMCStrongReferences@@SA_NXZ
+         83   4E 000173D0 ?Lock@CEventBuffer@@QEAAXXZ
+         84   4F 00018700 ?MMCErrorBox@@YAHII@Z
+         85   50 000187D0 ?MMCErrorBox@@YAHIVSC@mmcerror@@I@Z
+         86   51 000188E0 ?MMCErrorBox@@YAHPEBGI@Z
+         87   52 000189F0 ?MMCErrorBox@@YAHPEBGVSC@mmcerror@@I@Z
+         88   53 00018AB0 ?MMCErrorBox@@YAHVSC@mmcerror@@I@Z
+         89   54 00012300 ?MMCInterfaceError@BookKeeping@@SAXHPEBG0@Z
+         90   55 00012340 ?MMCInterfaceLeak@BookKeeping@@SAXHPEBG@Z
+         91   56 00012380 ?MMCInterfaceMethodException@BookKeeping@@SAXHPEBG0KPEAU_EXCEPTION_POINTERS@@W4_SnapinError@1@@Z
+         92   57 00012450 ?MMCNullInterface@BookKeeping@@SAXHPEBG0@Z
+         95   58 0000FE70 ?MakeSc@SC@mmcerror@@AEAAXW4facility_type@12@J@Z
+         96   59 00012490 ?RegisterSnapinInterfaceErrorHandler@BookKeeping@@SAP6A_NAEAVSnapinBookkeepingInfo@@W4_SnapinError@1@PEBG222KPEAU_EXCEPTION_POINTERS@@@ZP6A_N012222K3@Z@Z
+         97   5A 000011F0 ?RegisterThread@BookKeeping@@SAJHHKW4SnapinThreadFlags@1@@Z
+         98   5B 00015E70 ?Release@CMMCStrongReferences@@SAKXZ
+         99   5C 00003330 ?ReleaseSnapinInterface@BookKeeping@@SAJPEAUIUnknown@@H@Z
+        100   5D 00002640 ?RemoveItem@BookKeeping@@SAJPEAX@Z
+        101   5E 00007EA0 ?SCODEFromSc@@YAJAEBVSC@mmcerror@@@Z
+        102   5F 000173E0 ?ScEmitOrPostpone@CEventBuffer@@QEAA?AVSC@mmcerror@@PEAUIDispatch@@JPEAVCComVariant@ATL@@H@Z
+        103   60 00001530 ?ScFlushPostponed@CEventBuffer@@AEAA?AVSC@mmcerror@@XZ
+        104   61 0000FE80 ?ScFromMMC@@YA?AVSC@mmcerror@@J@Z
+        105   62 00015EA0 ?ScGetConsoleEventDispatcher@CConsoleEventDispatcherProvider@@SA?AVSC@mmcerror@@AEAPEAVCConsoleEventDispatcher@@@Z
+        106   63 00001500 ?ScSetConsoleEventDispatcher@CConsoleEventDispatcherProvider@@SA?AVSC@mmcerror@@PEAVCConsoleEventDispatcher@@@Z
+        107   64 00001CF0 ?SetFunctionName@SC@mmcerror@@QEAAXPEBG@Z
+        108   65 00008E60 ?SetHWnd@SC@mmcerror@@SAXPEAUHWND__@@@Z
+        109   66 00008E70 ?SetHinst@SC@mmcerror@@SAXPEAUHINSTANCE__@@@Z
+        110   67 00008E50 ?SetMainThreadID@SC@mmcerror@@SAXK@Z
+        111   68 00018B70 ?SetModalHWND@SC@mmcerror@@SAPEAUHWND__@@PEAU3@@Z
+        112   69 00008760 ?SetSnapinName@SC@mmcerror@@QEAAXPEBG@Z
+        113   6A 00018B90 ?Throw@SC@mmcerror@@QEAAXJ@Z
+        114   6B 00018BB0 ?Throw@SC@mmcerror@@QEAAXXZ
+        115   6C 00007EB0 ?ToHr@SC@mmcerror@@QEBAJXZ
+        116   6D 00001CA0 ?TraceAndClear@SC@mmcerror@@QEAAXXZ
+        117   6E 00007DB0 ?TraceError@@YAXPEBGAEBVSC@mmcerror@@@Z
+        118   6F 00018C20 ?TraceSnapinError@@YAXPEBGAEBVSC@mmcerror@@@Z
+        119   70 00001C50 ?Trace_@SC@mmcerror@@QEBAXXZ
+        120   71 00001440 ?Unlock@CEventBuffer@@QEAAXXZ
+        121   72 00001270 ?UnregisterAllSnapinInstanceThreads@BookKeeping@@SAJH@Z
+        122   73 00012A80 ?UnregisterThread@BookKeeping@@SAJHK@Z
+        123   74 0002D598 ?s_CallDepth@SC@mmcerror@@0IA
+        124   75 00029958 ?s_dwMainThreadID@SC@mmcerror@@0KA
+        125   76 0002D588 ?s_hInst@SC@mmcerror@@0PEAUHINSTANCE__@@EA
+        126   77 0002D590 ?s_hWnd@SC@mmcerror@@0PEAUHWND__@@EA
+        127   78 0002D640 ?s_hWndModal@SC@mmcerror@@0PEAUHWND__@@EA
+        128   79 0002A020 ?s_pDispatcher@CConsoleEventDispatcherProvider@@0PEAVCConsoleEventDispatcher@@EA
+        129   7A 0001C860 EnterModalLoop
+         48   7B 00008160 GetComObjectEventSource
+         50   7C 00001490 GetEventBuffer
+         64   7D 00008950 GetStringModule
+        130   7E 0001C930 InsideModalLoop
+        131   7F 0001CA20 LeaveModalLoop
+         82   80 00007F20 LoadStandardOverlays
+         93   81 00019BB0 MMCUpdateRegistry
+         94   82 0001BD30 MMC_PickIconDlg
+        132   83 00012B60 ReportFxSnapinException
+
+  Summary
+
+        5000 .data
+        1000 .didat
+        2000 .pdata
+        B000 .rdata
+        1000 .reloc
+       29000 .rsrc
+       1D000 .text

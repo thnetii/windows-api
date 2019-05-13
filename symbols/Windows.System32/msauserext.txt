@@ -1,0 +1,50 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\msauserext.dll
+
+File Type: DLL
+
+  Section contains the following exports for MSAUSEREXT.dll
+
+    00000000 characteristics
+    8C249E4A time date stamp
+        0.00 version
+           1 ordinal base
+          21 number of functions
+          21 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001F00 MsaUI_ClearThreadClientContext
+          2    1 00001F00 MsaUI_CloseClientContext
+          3    2 00001F10 MsaUI_CreateClientContext
+          4    3 00001EE0 MsaUI_CredUIPromptForWindowsCredentials
+          5    4 00001F30 MsaUI_LaunchWebAuthFlow
+          6    5 00001F00 MsaUI_RunWizard
+          7    6 00001F00 MsaUI_SetThreadClientContext
+          8    7 00001F20 MsaUi_CreateClientContextFromWab
+          9    8 00001D10 MsaUser_CallerIsLoggedOnUser
+         10    9 00001A90 MsaUser_CanSetParentWindow
+         11    A 00001AF0 MsaUser_CheckIfAppTrusted
+         12    B 000018F0 MsaUser_FormatUserDisplayName
+         13    C 00001C80 MsaUser_GetDeviceTelemetryInformation
+         14    D 00001C20 MsaUser_GetDeviceTypeParameterValue
+         15    E 00001BC0 MsaUser_GetInlineUxParameterValue
+         16    F 00001A30 MsaUser_GetPlatformQualifier
+         17   10 00001B50 MsaUser_GetUserRegistrySecurityDescriptor
+         18   11 00001970 MsaUser_IsChildAccount
+         19   12 00001DD0 MsaUser_LoadServiceConfiguration
+         20   13 00001D70 MsaUser_OverrideTicketRequestForLegacyAdControl
+         21   14 000019D0 MsaUser_WinBioSetMSACredential
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        3000 .text

@@ -1,0 +1,57 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\ndfapi.dll
+
+File Type: DLL
+
+  Section contains the following exports for NDFAPI.DLL
+
+    00000000 characteristics
+    CA58593A time date stamp
+        0.00 version
+           1 ordinal base
+          28 number of functions
+          28 number of names
+
+    ordinal hint RVA      name
+
+          7    0 00001600 DllCanUnloadNow
+          8    1 00001630 DllGetClassObject
+          9    2 00001760 DllRegisterServer
+         10    3 00001880 DllUnregisterServer
+         11    4 00013610 NdfCancelIncident
+         12    5 00006A80 NdfCloseIncident
+         13    6 00006240 NdfCreateConnectivityIncident
+         14    7 00006130 NdfCreateDNSIncident
+         15    8 00006540 NdfCreateGroupingIncident
+         16    9 000067F0 NdfCreateInboundIncident
+         17    A 00005590 NdfCreateIncident
+         18    B 00006300 NdfCreateNetConnectionIncident
+         19    C 00006370 NdfCreatePnrpIncident
+         20    D 00006040 NdfCreateSharingIncident
+         21    E 00005E10 NdfCreateWebIncident
+         22    F 00005F20 NdfCreateWebIncidentEx
+         23   10 00005A20 NdfCreateWinSockIncident
+         24   11 00013470 NdfDiagnoseIncident
+         25   12 00005A00 NdfExecuteDiagnosis
+         26   13 00013680 NdfGetTraceFile
+         27   14 00013580 NdfRepairIncident
+         28   15 000135D0 NdfRepairIncidentEx
+          1   16 00006B90 NdfRunDllDiagnoseIncident
+          2   17 00006BD0 NdfRunDllDiagnoseNetConnectionIncident
+          3   18 0000A990 NdfRunDllDiagnoseWithAnswerFile
+          4   19 00006D40 NdfRunDllDuplicateIPDefendingSystem
+          5   1A 00006FF0 NdfRunDllDuplicateIPOffendingSystem
+          6   1B 00006AC0 NdfRunDllHelpTopic
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        2000 .pdata
+        F000 .rdata
+        1000 .reloc
+       17000 .rsrc
+       22000 .text

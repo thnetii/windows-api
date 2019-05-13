@@ -1,0 +1,83 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\NetMgmtIF.dll
+
+File Type: DLL
+
+  Section contains the following exports for NetMgmtIF.dll
+
+    00000000 characteristics
+    D338E949 time date stamp
+        0.00 version
+           1 ordinal base
+          55 number of functions
+          55 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0000F550 NetMgmtAddAclOnVirtualSwitchPort
+          2    1 0000F040 NetMgmtAddBandwidthSettingsOnVirtualSwitchPort
+          3    2 0000F260 NetMgmtAddPortProfileOnVirtualSwitchPort
+          4    3 0000EC60 NetMgmtAddVirtualSwitchPortProperty
+          5    4 00008CC0 NetMgmtBindExternalAdapter
+          6    5 00006F90 NetMgmtConnectSwitchPort
+          7    6 00004D40 NetMgmtCreateInternalEthernetAdapter
+          8    7 000046C0 NetMgmtCreateInternalEthernetAdapterLW
+          9    8 00003880 NetMgmtCreateVirtualSwitch
+         10    9 0000E710 NetMgmtCreateVirtualSwitchPort
+         11    A 0000E8A0 NetMgmtCreateVirtualSwitchPortWithHandle
+         12    B 000059C0 NetMgmtDeleteInternalEthernetAdapter
+         13    C 00005EF0 NetMgmtDeleteInternalEthernetAdapterLW
+         14    D 000040A0 NetMgmtDeleteVirtualSwitch
+         15    E 0000E7E0 NetMgmtDeleteVirtualSwitchPort
+         16    F 0000EF50 NetMgmtDeleteVirtualSwitchPortProperty
+         17   10 00006890 NetMgmtDisableInternalEthernetAdapterLW
+         18   11 000083E0 NetMgmtDisconnectSwitchPort
+         19   12 00006460 NetMgmtEnableInternalEthernetAdapterLW
+         20   13 0000FC60 NetMgmtEnableVirtualSwitchExtension
+         21   14 0000A410 NetMgmtEnumerateAdapter
+         22   15 0000E4F0 NetMgmtEnumerateNic
+         23   16 0000E5A0 NetMgmtEnumerateVirtualSwitch
+         24   17 0000EAF0 NetMgmtEnumerateVirtualSwitchPorts
+         25   18 000058B0 NetMgmtFindExternalNicByName
+         26   19 00005630 NetMgmtFindInternalNic
+         27   1A 000057A0 NetMgmtFindInternalNicByName
+         28   1B 0000F840 NetMgmtGetAclFromVirtualSwitchPort
+         29   1C 0000F230 NetMgmtGetBandwidthSettingsFromVirtualSwitchPort
+         30   1D 00009340 NetMgmtGetNetworkAdapterCompartment
+         31   1E 000091F0 NetMgmtGetNetworkAdapterType
+         32   1F 0000FD10 NetMgmtGetNicStats
+         33   20 0000F520 NetMgmtGetPortProfileFromVirtualSwitchPort
+         34   21 0000E650 NetMgmtGetVirtualSwitchInfo
+         35   22 0000E950 NetMgmtGetVirtualSwitchPort
+         36   23 0000EE80 NetMgmtGetVirtualSwitchPortProperty
+         37   24 0000EA20 NetMgmtGetVirtualSwitchPortStats
+         38   25 0000E450 NetMgmtGetVmSwitchInitState
+         39   26 0000F870 NetMgmtInitializeAclOnVirtualSwitchPort
+         40   27 00006CC0 NetMgmtIsInternalEthernetAdapterEnabledLW
+         41   28 00009C50 NetMgmtIsNetworkCompartmentPresent
+         42   29 0000E910 NetMgmtOpenVirtualSwitchPortHandle
+         43   2A 0000F6E0 NetMgmtRemoveAclFromVirtualSwitchPort
+         44   2B 0000F150 NetMgmtRemoveBandwidthSettingsFromVirtualSwitchPort
+         45   2C 0000F3D0 NetMgmtRemovePortProfileFromVirtualSwitchPort
+         46   2D 0000FEE0 NetMgmtSendNicStatus
+         47   2E 00009D20 NetMgmtSetConnectionInfo
+         48   2F 00003F70 NetMgmtSetEthernetAdapterMacAddress
+         49   30 0000FDD0 NetMgmtSetPortEncapInfo
+         50   31 0000EBB0 NetMgmtSetSecurityInfoOnVirtualSwitchPort
+         51   32 00008F60 NetMgmtUnbindExternalAdapter
+         52   33 000099D0 NetMgmtUpdateContainerRegistryBasedOnCompartment
+         53   34 00009B10 NetMgmtUpdateContainerRegistryBasedOnContainer
+         54   35 000093E0 NetMgmtUpdateContainerRegistryForAdapter
+         55   36 0000ED70 NetMgmtUpdateVirtualSwitchPortProperty
+
+  Summary
+
+        1000 .data
+        2000 .pdata
+       10000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       1F000 .text

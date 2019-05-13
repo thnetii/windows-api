@@ -1,0 +1,83 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\SystemEventsBrokerClient.dll
+
+File Type: DLL
+
+  Section contains the following exports for SystemEventsBrokerClient.dll
+
+    00000000 characteristics
+    82E297B6 time date stamp
+        0.00 version
+           1 ordinal base
+          54 number of functions
+          54 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00003200 SebCreateApplicationTriggerEvent
+          2    1 00003220 SebCreateAuthenticatorDeviceAuthEvent
+          3    2 00003240 SebCreateBackgroundDownloadEvent
+          4    3 000014A0 SebCreateBackgroundDownloadEventEx
+          5    4 00003260 SebCreateBackgroundTransferCompletionEvent
+          6    5 00003280 SebCreateBroadcastNotificationEvent
+          7    6 000032A0 SebCreateCachedFileUpdatedEvent
+          8    7 00003300 SebCreateCalendarNotificationEvent
+          9    8 00003320 SebCreateCallBlockedNotificationEvent
+         10    9 00003340 SebCreateCallOriginDataRequestedEvent
+         11    A 00003360 SebCreateChatNotificationEvent
+         12    B 00003380 SebCreateCommunicationBlockingAppSetAsActiveEvent
+         13    C 000033A0 SebCreateContactNotificationEvent
+         14    D 000033C0 SebCreateContentPrefetchEvent
+         15    E 00003410 SebCreateDeviceServicingEvent
+         16    F 00003470 SebCreateDeviceUseEvent
+         17   10 000034D0 SebCreateDisplayOnEvent
+         18   11 00003530 SebCreateEmailNotificationEvent
+         19   12 00003550 SebCreateInfrastructureConditionEvent
+         20   13 000035B0 SebCreateKnownFoldersChangedEvent
+         21   14 000035D0 SebCreateLockScreenAppAddedEvent
+         22   15 00003620 SebCreateLockScreenAppRemovedEvent
+         23   16 00003670 SebCreateMediaProcessingTriggerEvent
+         24   17 00003690 SebCreateMessageInterceptNotificationEvent
+         25   18 000036B0 SebCreateMobileBroadbandEvent
+         26   19 000036E0 SebCreateNetOperatorHotSpotAuthEvent
+         27   1A 00003740 SebCreateOEMPreInstallEvent
+         28   1B 00003790 SebCreatePowerStateChangeEvent
+         29   1C 000037B0 SebCreateRcsEndUserMessageNotificationEvent
+         30   1D 000037D0 SebCreateSessionConnectedEvent
+         31   1E 00003860 SebCreateTelephonyEvent
+         32   1F 000038A0 SebCreateUnconstrainedBackgroundDownloadEvent
+         33   20 000038B0 SebCreateUserPresentEvent
+         34   21 00001370 SebDeleteEvent
+         35   22 00003940 SebEnumerateEvents
+         36   23 00001840 SebEnumerateEventsByType
+         37   24 000039F0 SebEnumerateEventsByTypeEx
+         38   25 00003AB0 SebGetStatusStateName
+         39   26 00003B20 SebGetUserPresenceHistory
+         40   27 000010D0 SebQueryEventData
+         41   28 00003BE0 SebQueryEventPackage
+         42   29 00003C70 SebRegisterPrivateEvent
+         43   2A 00001300 SebRegisterWellKnownEvent
+         44   2B 00003D00 SebRegisterWellKnownFilteredEvent
+         45   2C 00003DF0 SebSignalApplicationTriggerEvent
+         46   2D 00001010 SebSignalBackgroundDownloadEvent
+         47   2E 00003DF0 SebSignalBackgroundTransferCompletionEvent
+         48   2F 00003E30 SebSignalDeviceEvent
+         49   30 00003E30 SebSignalEvent
+         50   31 00003E70 SebSignalLevelEvent
+         51   32 00003DF0 SebSignalMediaProcessingTriggerEvent
+         52   33 00003EC0 SebSignalOEMPreInstallEvent
+         53   34 00003F00 SebSignalSyncEvent
+         54   35 00003F60 SebSignalSyncEventEx
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        3000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        4000 .text

@@ -1,0 +1,66 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\RTWorkQ.dll
+
+File Type: DLL
+
+  Section contains the following exports for RTWorkQ.DLL
+
+    00000000 characteristics
+    B226AE87 time date stamp
+        0.00 version
+           1 ordinal base
+          37 number of functions
+          37 number of names
+
+    ordinal hint RVA      name
+
+          2    0 00005C10 RtwqAddPeriodicCallback
+          3    1 000084B0 RtwqAllocateSerialWorkQueue
+          4    2 00003A90 RtwqAllocateWorkQueue
+          5    3 00004E20 RtwqBeginRegisterWorkQueueWithMMCSS
+          6    4 00013910 RtwqBeginUnregisterWorkQueueWithMMCSS
+          7    5 000032B0 RtwqCancelDeadline
+          8    6 00013580 RtwqCancelMultipleWaitingWorkItem
+          9    7 0000B290 RtwqCancelWorkItem
+         10    8 0000B240 RtwqCreateAsyncResult
+         11    9 00006450 RtwqEndRegisterWorkQueueWithMMCSS
+         12    A 00013A00 RtwqEndUnregisterWorkQueueWithMMCSS
+          1    B 00012DC0 RtwqGetPlatform
+         13    C 00013A30 RtwqGetWorkQueueMMCSSClass
+         14    D 00006580 RtwqGetWorkQueueMMCSSPriority
+         15    E 00013B50 RtwqGetWorkQueueMMCSSTaskId
+         16    F 00002B60 RtwqInvokeCallback
+         17   10 00006660 RtwqJoinWorkQueue
+         18   11 00003150 RtwqLockPlatform
+         19   12 00003F40 RtwqLockSharedWorkQueue
+         20   13 00005650 RtwqLockWorkQueue
+         21   14 000135B0 RtwqPutMultipleWaitingWorkItem
+         22   15 000069B0 RtwqPutWaitingWorkItem
+         23   16 0000AB90 RtwqPutWorkItem
+         24   17 0000BA20 RtwqRegisterPlatformEvents
+         25   18 00003B50 RtwqRegisterPlatformWithMMCSS
+         26   19 000062C0 RtwqRemovePeriodicCallback
+         27   1A 00003430 RtwqScheduleWorkItem
+         28   1B 00002F00 RtwqSetDeadline
+         29   1C 00002F20 RtwqSetDeadline2
+         30   1D 00001F40 RtwqSetLongRunning
+         31   1E 00006C80 RtwqShutdown
+         32   1F 000076D0 RtwqStartup
+         33   20 00006750 RtwqUnjoinWorkQueue
+         34   21 00003110 RtwqUnlockPlatform
+         35   22 00009B40 RtwqUnlockWorkQueue
+         36   23 00013C60 RtwqUnregisterPlatformEvents
+         37   24 00013C80 RtwqUnregisterPlatformFromMMCSS
+
+  Summary
+
+        5000 .data
+        1000 .didat
+        2000 .pdata
+        6000 .rdata
+        1000 .reloc
+        8000 .rsrc
+       17000 .text

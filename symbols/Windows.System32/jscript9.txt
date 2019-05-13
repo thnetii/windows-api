@@ -1,0 +1,126 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\jscript9.dll
+
+File Type: DLL
+
+  Section contains the following exports for JSCRIPT9.dll
+
+    00000000 characteristics
+    9F0EDF63 time date stamp
+        0.00 version
+           1 ordinal base
+          97 number of functions
+          97 number of names
+
+    ordinal hint RVA      name
+
+          1    0 001C6A70 DllCanUnloadNow
+          2    1 00009490 DllGetClassObject
+          3    2 001C6B60 DllRegisterServer
+          4    3 001C6C10 DllUnregisterServer
+          5    4 001E42D0 JsAddRef
+          6    5 001E4310 JsBoolToBoolean
+          7    6 001E4350 JsBooleanToBool
+          8    7 001E4390 JsCallFunction
+          9    8 001E4400 JsCollectGarbage
+         10    9 001E4420 JsConstructObject
+         11    A 001E4490 JsConvertValueToBoolean
+         12    B 001E44D0 JsConvertValueToNumber
+         13    C 001E4510 JsConvertValueToObject
+         14    D 001E4550 JsConvertValueToString
+         15    E 001E4590 JsCreateArray
+         16    F 001E45D0 JsCreateContext
+         17   10 001E4630 JsCreateError
+         18   11 001E4670 JsCreateExternalObject
+         19   12 001E46D0 JsCreateExternalType
+         20   13 001E4710 JsCreateFunction
+         21   14 001E4770 JsCreateObject
+         22   15 001E4790 JsCreateRangeError
+         23   16 001E47D0 JsCreateReferenceError
+         24   17 001E4810 JsCreateRuntime
+         25   18 001E4870 JsCreateSyntaxError
+         26   19 001E48B0 JsCreateTypeError
+         27   1A 001E48F0 JsCreateTypedExternalObject
+         28   1B 001E4950 JsCreateURIError
+         29   1C 001E4990 JsDefineProperty
+         30   1D 001E49F0 JsDeleteIndexedProperty
+         31   1E 001E4A30 JsDeleteProperty
+         32   1F 001E4A90 JsDisableRuntimeExecution
+         33   20 001E4B00 JsDisposeRuntime
+         34   21 001E4B20 JsDoubleToNumber
+         35   22 001E4B60 JsEnableRuntimeExecution
+         36   23 001E4B80 JsEnumerateHeap
+         37   24 001E4BF0 JsEquals
+         38   25 001E4C50 JsGetAndClearException
+         39   26 001E4D10 JsGetCurrentContext
+         40   27 001E4D50 JsGetDefaultTypeDescription
+         41   28 001E4D70 JsGetExtensionAllowed
+         42   29 001E4DB0 JsGetExternalData
+         43   2A 001E4DF0 JsGetExternalType
+         44   2B 001E4E30 JsGetFalseValue
+         45   2C 001E4E50 JsGetGlobalObject
+         46   2D 001E4E70 JsGetIndexedProperty
+         47   2E 001E4ED0 JsGetNullValue
+         48   2F 001E4EF0 JsGetOwnPropertyDescriptor
+         49   30 001E4F50 JsGetOwnPropertyNames
+         50   31 001E4F90 JsGetProperty
+         51   32 001E4FF0 JsGetPropertyIdFromName
+         52   33 001E5030 JsGetPropertyNameFromId
+         53   34 001E5070 JsGetPrototype
+         54   35 001E50B0 JsGetRuntime
+         55   36 001E5100 JsGetRuntimeMemoryLimit
+         56   37 001E5140 JsGetRuntimeMemoryUsage
+         57   38 001E5180 JsGetStringLength
+         58   39 001E51C0 JsGetTrueValue
+         59   3A 001E51E0 JsGetUndefinedValue
+         60   3B 001E5200 JsGetValueType
+         61   3C 001E5240 JsHasException
+         62   3D 001E52F0 JsHasExternalData
+         63   3E 001E5330 JsHasIndexedProperty
+         64   3F 001E5390 JsHasProperty
+         65   40 001E53F0 JsIdle
+         66   41 001E5410 JsIntToNumber
+         67   42 001E5450 JsIsEnumeratingHeap
+         68   43 001E54B0 JsIsRuntimeExecutionDisabled
+         69   44 001E54F0 JsNumberToDouble
+         70   45 001E5530 JsParseScript
+         71   46 001E5570 JsParseSerializedScript
+         72   47 001E55B0 JsPointerToString
+         73   48 001E5610 JsPreventExtension
+         74   49 001E5630 JsRelease
+         75   4A 001E5670 JsRunScript
+         76   4B 001E56B0 JsRunSerializedScript
+         77   4C 001E56F0 JsSerializeScript
+         78   4D 001E5800 JsSetCurrentContext
+         79   4E 001E5820 JsSetException
+         80   4F 001E5840 JsSetExternalData
+         81   50 001E5880 JsSetIndexedProperty
+         82   51 001E58E0 JsSetProperty
+         83   52 001E5940 JsSetPrototype
+         84   53 001E5980 JsSetRuntimeBeforeCollectCallback
+         85   54 001E59E0 JsSetRuntimeMemoryAllocationCallback
+         86   55 001E5A20 JsSetRuntimeMemoryLimit
+         87   56 001E5A50 JsStartDebugging
+         88   57 001E5A70 JsStartProfiling
+         89   58 001E5AD0 JsStopProfiling
+         90   59 001E5AF0 JsStrictEquals
+         91   5A 001E5B50 JsStringToPointer
+         92   5B 001E5BB0 JsValueToVariant
+         93   5C 00079AA0 JsVarAddRef
+         94   5D 00079940 JsVarRelease
+         95   5E 00020EA0 JsVarToExtension
+         96   5F 001FE430 JsVarToScriptDirect
+         97   60 001E5BF0 JsVariantToValue
+
+  Summary
+
+       14000 .data
+        1000 .didat
+       3C000 .pdata
+       E7000 .rdata
+       13000 .reloc
+       17000 .rsrc
+      34E000 .text

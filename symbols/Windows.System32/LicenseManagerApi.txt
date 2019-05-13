@@ -1,0 +1,41 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\LicenseManagerApi.dll
+
+File Type: DLL
+
+  Section contains the following exports for LicenseManagerApi.dll
+
+    00000000 characteristics
+    74709546 time date stamp
+        0.00 version
+           1 ordinal base
+          12 number of functions
+          12 number of names
+
+    ordinal hint RVA      name
+
+          2    0 0000CD70 BeginAcquireStoreLicenseForPackageActivation
+          3    1 0000CDF0 BeginAcquireStoreLicenseForPackageActivation2
+          4    2 0000EA70 DllMain
+          5    3 0000D7B0 EnsureStoreLicenseForPackageActivation
+          6    4 0000D7F0 EnsureStoreLicenseForPackageActivation2
+          7    5 0000E060 PackageRundownNotificationForStoreLicense
+          8    6 0000E090 PackageRundownNotificationForStoreLicense2
+          9    7 0000DD30 PackageSuspendedNotificationForStoreLicense
+         10    8 0000DD70 PackageSuspendedNotificationForStoreLicense2
+         11    9 0000D2D0 PrecacheStoreLicenseForPackageResume
+         12    A 0000D300 PrecacheStoreLicenseForPackageResume2
+          1    B 0000E310 Reset
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        6000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       11000 .text

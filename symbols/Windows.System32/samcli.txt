@@ -1,0 +1,65 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\samcli.dll
+
+File Type: DLL
+
+  Section contains the following exports for samcli.dll
+
+    00000000 characteristics
+    C5D9DA29 time date stamp
+        0.00 version
+           1 ordinal base
+          36 number of functions
+          36 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00009B40 NetGetDisplayInformationIndex
+          2    1 00009C60 NetGroupAdd
+          3    2 00009E80 NetGroupAddUser
+          4    3 00009EA0 NetGroupDel
+          5    4 00009ED0 NetGroupDelUser
+          6    5 00009EE0 NetGroupEnum
+          7    6 0000A4D0 NetGroupGetInfo
+          8    7 0000A5B0 NetGroupGetUsers
+          9    8 0000A920 NetGroupSetInfo
+         10    9 0000AB30 NetGroupSetUsers
+         11    A 00008540 NetLocalGroupAdd
+         12    B 000086C0 NetLocalGroupAddMember
+         13    C 000086E0 NetLocalGroupAddMembers
+         14    D 00008710 NetLocalGroupDel
+         15    E 000087C0 NetLocalGroupDelMember
+         16    F 000087D0 NetLocalGroupDelMembers
+         17   10 00008800 NetLocalGroupEnum
+         18   11 00008CD0 NetLocalGroupGetInfo
+         19   12 000023F0 NetLocalGroupGetMembers
+         20   13 00008D80 NetLocalGroupSetInfo
+         21   14 00008EF0 NetLocalGroupSetMembers
+         22   15 00001010 NetQueryDisplayInformation
+         23   16 0000C570 NetUserAdd
+         24   17 0000C7C0 NetUserChangePassword
+         25   18 0000CA40 NetUserDel
+         26   19 00002DB0 NetUserEnum
+         27   1A 0000CBB0 NetUserGetGroups
+         28   1B 000029C0 NetUserGetInfo
+         29   1C 0000B760 NetUserGetInternetIdentityInfo
+         30   1D 00001B90 NetUserGetLocalGroups
+         31   1E 000015A0 NetUserModalsGet
+         32   1F 0000CF00 NetUserModalsSet
+         33   20 0000D510 NetUserSetGroups
+         34   21 0000DA50 NetUserSetInfo
+         35   22 0000B9F0 NetValidatePasswordPolicy
+         36   23 0000BCF0 NetValidatePasswordPolicyFree
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        4000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        E000 .text

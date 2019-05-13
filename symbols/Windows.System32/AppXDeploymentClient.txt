@@ -1,0 +1,106 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\AppXDeploymentClient.dll
+
+File Type: DLL
+
+  Section contains the following exports for AppXDeploymentClient.dll
+
+    00000000 characteristics
+    FDBC9DA8 time date stamp
+        0.00 version
+           1 ordinal base
+          77 number of functions
+          75 number of names
+
+    ordinal hint RVA      name
+
+         60    0 0004DA30 AppInstallerUpdateAllTask
+         14    1 0004DA60 AppxAddPackageToAllUserStoreForPbr
+         46    2 0004E030 AppxCleanupOrphanPackages
+         45    3 0004E070 AppxCleanupSystemAppsMigratedToFOD
+         42    4 0004E2E0 AppxCleanupWCIReparsePoints
+         70    5 0004E390 AppxCreateSharedLocalFolder
+         71    6 0001B8C0 AppxCreateSharedLocalFolderForFamilyName
+          7    7 0004E3E0 AppxDeletePackageFiles
+         19    8 0004E490 AppxDestagePackage
+         72    9 0001B910 AppxDoesSharedLocalFolderExistForFamilyName
+         18    A 0004E7F0 AppxGetPackageInstalledLocation
+          3    B 0004EA70 AppxGetPackageType
+         21    C 0004EAF0 AppxGetStagedPackageFullNameFromFamilyName
+         22    D 0004F0F0 AppxIsStagedPackageStoreSigned
+          4    E 0004F230 AppxPackageRepositoryRecoverStagedPackages
+          5    F 0004F230 AppxPackageRepositoryRecoverUserInstalls
+         28   10 0004F240 AppxPreRegisterAllInboxPackages
+         12   11 0004F2F0 AppxPreRegisterPackage
+         11   12 0004F3F0 AppxPreStageCleanupRunTask
+          6   13 0004F230 AppxRecoverUserInstallsForUpgrade
+         63   14 0004F400 AppxRegisterPackage
+         30   15 0004F550 AppxRemovePackageForAllUsers
+         37   16 0004F7C0 AppxRemovePackageForUserSid
+          8   17 0004FDA0 AppxRequestRemovePackageForUser
+         17   18 0004FEC0 AppxStagePackage
+         73   19 000505C0 AppxValidatePackages
+         29   1A 000505E0 AppxValidatePackagesWithOptions
+         61   1B 000509D0 CheckAppInstallerUpdateAvailability
+         47   1C 00016F10 CheckComCallerHasCapabilities
+         74   1D 00050A40 CheckForUpdatesAndWaitForInstallerIfNeeded
+         67   1E 00050BA0 ClientDeleteAllPackagesFromMainPackageArray
+         66   1F 00050CC0 ClientGetAllPackagesToBeInstalledForUser
+         38   20 00050E00 CreateCanonicalPriFile
+         50   21 00013AC0 DeleteApplicabilityInfoArray
+         75   22 000160D0 DllCanUnloadNow
+         76   23 00008950 DllGetActivationFactory
+         77   24 00059E90 DllGetClassObject
+         44   25 00050EC0 EnsurePackageFamilyIsRegisteredBeforeActivation
+         36   26 00051090 FixJunctionsForAppsIfNecessary
+         34   27 00051120 GeneratePreInstalledPriFiles
+          2   28 00051190 GetApplicability
+         20   29 0004F230 GetApplicability2
+         32   2A 0004F230 GetApplicability4
+         49   2B 00006AF0 GetApplicability5
+         48   2C 000511B0 GetBundleApplicablePackages
+         65   2D 00006210 GetMetadataRootForPackage
+         25   2E 00051C50 GetNotificationPayload
+         41   2F 00003C50 GetNotificationPayloadForUser
+         15   30 00051C90 GetPackageApplicabilityForUserLogon
+         58   31 00051CB0 GetPackageRegistrationStatusForUser
+         68   32 0000D4E0 GetPackageRegistrationStatusForUserAndDefaultAccount
+          9   33 00051CF0 IsPackageInstalled
+         64   34 00051D70 IsPackageMetadataUnderSystemMetadata
+         59   35 00016ED0 IsSharedAppsEnabled
+         26   36 00051F20 NotifyPackageStatusChanged
+         35   37 00051FB0 PopulateProtocolAndFTA
+         10   38 00052030 RDSRecoverRequests
+         13   39 000520A0 ReArmAppxPreStageCleanupTask
+         23   3A 000021C0 RegisterNotification
+         39   3B 00002D80 RegisterNotificationForUser
+         43   3C 000520C0 RepairPackageFileAcls
+         31   3D 00052140 RequestContentGroups
+         33   3E 000521B0 RequestContentGroupsForFullTrust
+         24   3F 00052220 UnregisterNotification
+         40   40 00002500 UnregisterNotificationForUser
+         53   41 00052250 UpdateAgentCancelAllDownloads
+         51   42 00052290 UpdateAgentCreateDownload
+         62   43 00052340 UpdateAgentFreeDownloadRanges
+         52   44 00052370 UpdateAgentGetDownloadRanges
+         69   45 000523C0 UpdateAgentGetDownloadingPackageCount
+         55   46 00052410 UpdateDataSourceAddRange
+         57   47 000524A0 UpdateDataSourceCancelRun
+         54   48 000524F0 UpdateDataSourceRegister
+         56   49 00052570 UpdateDataSourceRun
+         27   4A 000525C0 VerifyPackage
+          1      000469C0 [NONAME]
+         16      000510D0 [NONAME]
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        8000 .pdata
+       3E000 .rdata
+        4000 .reloc
+        4000 .rsrc
+       81000 .text

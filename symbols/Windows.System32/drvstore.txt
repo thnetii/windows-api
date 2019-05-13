@@ -1,0 +1,84 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\drvstore.dll
+
+File Type: DLL
+
+  Section contains the following exports for drvstore.dll
+
+    00000000 characteristics
+    256E86AB time date stamp
+        0.00 version
+           1 ordinal base
+          55 number of functions
+          55 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00087690 DriverPackageClose
+          2    1 00087720 DriverPackageEnumClassesW
+          3    2 00087AF0 DriverPackageEnumComponentsW
+          4    3 00087D00 DriverPackageEnumConfigurationsW
+          5    4 00087EF0 DriverPackageEnumDevicesW
+          6    5 00088220 DriverPackageEnumDriversW
+          7    6 000885F0 DriverPackageEnumEventProvidersW
+          8    7 00088810 DriverPackageEnumFilesW
+          9    8 00088BF0 DriverPackageEnumFiltersW
+         10    9 00088DF0 DriverPackageEnumInterfacesW
+         11    A 00089140 DriverPackageEnumPropertiesW
+         12    B 00089360 DriverPackageEnumRegKeysW
+         13    C 00089590 DriverPackageEnumServicesW
+         14    D 000897B0 DriverPackageEnumSoftwareW
+         15    E 00089D70 DriverPackageGetPropertyW
+         16    F 0008A880 DriverPackageGetVersionInfoW
+         17   10 0008ABD0 DriverPackageOpenW
+         18   11 00003750 DriverStoreClose
+         19   12 00038E40 DriverStoreConfigureW
+         20   13 000185D0 DriverStoreCopyW
+         21   14 00017E20 DriverStoreDeleteW
+         22   15 00011CE0 DriverStoreDriverPackageResolveCallbackW
+         23   16 0003EA90 DriverStoreEnumDeviceDriversW
+         24   17 000195C0 DriverStoreEnumNodesW
+         25   18 00019B60 DriverStoreEnumObjectsW
+         26   19 00018F90 DriverStoreEnumW
+         27   1A 00003BC0 DriverStoreFindW
+         28   1B 00019CF0 DriverStoreGetObjectPropertyKeysW
+         29   1C 00002710 DriverStoreGetObjectPropertyW
+         30   1D 00014AC0 DriverStoreImportW
+         31   1E 00019740 DriverStoreMountNodeW
+         32   1F 0004C3E0 DriverStoreOfflineAddDriverPackageA
+         33   20 0004C690 DriverStoreOfflineAddDriverPackageW
+         34   21 0004CA80 DriverStoreOfflineDeleteDriverPackageA
+         35   22 0004CB90 DriverStoreOfflineDeleteDriverPackageW
+         36   23 0004CD50 DriverStoreOfflineEnumDriverPackageA
+         37   24 0004CE90 DriverStoreOfflineEnumDriverPackageW
+         38   25 0004CFD0 DriverStoreOfflineFindDriverPackageA
+         39   26 0004D1E0 DriverStoreOfflineFindDriverPackageW
+         40   27 00005A10 DriverStoreOpenW
+         41   28 00021200 DriverStorePublishW
+         42   29 000329C0 DriverStoreReflectCriticalW
+         43   2A 00032A10 DriverStoreReflectW
+         44   2B 00051510 DriverStoreRunDllW
+         45   2C 000198C0 DriverStoreSelectNodeW
+         46   2D 000110D0 DriverStoreSetLogContext
+         47   2E 00009B10 DriverStoreSetObjectPropertyW
+         48   2F 000394C0 DriverStoreUnconfigureW
+         49   30 000199E0 DriverStoreUnmountNodeW
+         50   31 000218E0 DriverStoreUnpublishW
+         51   32 00032AC0 DriverStoreUnreflectCriticalW
+         52   33 00032B10 DriverStoreUnreflectW
+         53   34 0003EC10 DriverStoreUpdateDevicesW
+         54   35 0004BCE0 pServerDeleteDriverPackage
+         55   36 0004BEA0 pServerImportDriverPackage
+
+  Summary
+
+        3000 .data
+        1000 .didat
+        7000 .pdata
+       45000 .rdata
+        2000 .reloc
+        1000 .rsrc
+       D8000 .text

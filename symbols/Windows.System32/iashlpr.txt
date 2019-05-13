@@ -1,0 +1,44 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\iashlpr.dll
+
+File Type: DLL
+
+  Section contains the following exports for iashlpr.dll
+
+    00000000 characteristics
+    A75460FB time date stamp
+        0.00 version
+           1 ordinal base
+          16 number of functions
+          16 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00005F70 AllocateAttributes
+          2    1 00006640 ConfigureIas
+          3    2 00005230 DllCanUnloadNow
+          4    3 00005250 DllGetClassObject
+          5    4 00005280 DllRegisterServer
+          6    5 000052A0 DllUnregisterServer
+          7    6 00006030 DoRequest
+          8    7 000069F0 DoRequestAsync
+          9    8 00005FF0 FreeAttributes
+         10    9 000072D0 GetOptionIas
+         11    A 000052D0 InitializeIas
+         12    B 00006990 MemAllocIas
+         13    C 000069B0 MemFreeIas
+         14    D 000069D0 MemReallocIas
+         15    E 000070B0 SetOptionIas
+         16    F 00005AF0 ShutdownIas
+
+  Summary
+
+        2000 .data
+        1000 .pdata
+        6000 .rdata
+        1000 .reloc
+        3000 .rsrc
+        D000 .text

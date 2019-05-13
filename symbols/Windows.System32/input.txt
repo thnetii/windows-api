@@ -1,0 +1,53 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\input.dll
+
+File Type: DLL
+
+  Section contains the following exports for Input.dll
+
+    00000000 characteristics
+    FC544950 time date stamp
+        0.00 version
+         100 ordinal base
+         104 number of functions
+          20 number of names
+
+    ordinal hint RVA      name
+
+        119    0 00019380 ActivateInputProfile
+        100    1 00020210 CPlApplet
+        110    2 0001B8C0 EnumEnabledLayoutOrTip
+        118    3 0001BEC0 EnumEnabledLayoutOrTipPrivate
+        108    4 0001B800 EnumLayoutOrTipForSetup
+        113    5 0001BED0 GetDefaultLayout
+        114    6 0001C300 GetLayoutDescription
+        203    7 00022180 InputDll_DownlevelEnumLayoutOrTipForSetup
+        200    8 00021EF0 InputDll_DownlevelInitialize
+        201    9 00022000 InputDll_DownlevelSetUILanguage
+        202    A 000220E0 InputDll_DownlevelUninitialize
+        104    B 00018F10 InstallLayoutOrTip
+        120    C 000191E0 InstallLayoutOrTipOffline
+        117    D 00019250 InstallLayoutOrTipPrivate
+        109    E 00019060 InstallLayoutOrTipUserReg
+        111    F 00019E40 QueryLayoutOrTipString
+        112   10 00019E70 QueryLayoutOrTipStringUserReg
+        105   11 0001AD20 SaveDefaultUserInputSettings
+        106   12 0001AF80 SaveSystemAcctInputSettings
+        107   13 00019390 SetDefaultLayoutOrTip
+        102      000179A0 [NONAME]
+        103      00018280 [NONAME]
+        115      0001C640 [NONAME]
+        116      0001C8D0 [NONAME]
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        2000 .pdata
+       13000 .rdata
+        1000 .reloc
+       17000 .rsrc
+       2B000 .text

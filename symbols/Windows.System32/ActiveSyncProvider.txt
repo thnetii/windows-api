@@ -1,0 +1,66 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\ActiveSyncProvider.dll
+
+File Type: DLL
+
+  Section contains the following exports for ActiveSyncProvider.dll
+
+    00000000 characteristics
+    511DC47F time date stamp
+        0.00 version
+           1 ordinal base
+          63 number of functions
+          29 number of names
+
+    ordinal hint RVA      name
+
+          3    0 0000E070 CreateMassObject
+          4    1 000D1360 CreateSyncServiceLayer
+          5    2 00009E80 DllCanUnloadNow
+          6    3 00009EB0 DllGetClassObject
+          7    4 00064BB0 DownloadEmailAttachment
+          8    5 00064F90 DownloadEmailBody
+          9    6 000AA210 GetActiveSyncServerProbeInstance
+         10    7 000AA2C0 GetConversationSyncEnabled
+         11    8 0006B990 GetOutlookExtensionSupportForAccount
+         12    9 0006BAA0 GetOutlookExtensionSupportFromAccessor
+         13    A 000D2A60 GetUserInfoForUnconfiguredAccount
+         14    B 000AAD00 HandleEasMeetingResponseForAppointment
+         15    C 000AAF90 HandleEasMeetingResponseForMeetingNotification
+         62    D 00004B90 InitializeSyncStatus
+          2    E 000B6830 IsEnabledForSync
+         16    F 000AC9C0 IsErrorCatastrophic
+         17   10 0006BCC0 IsValidOutlookExtensionVersion
+         20   11 000ACC50 MarkPeopleFolderForResync
+         21   12 0000A140 OneStopFactory
+         22   13 00069100 SyncGetMAPISession
+         23   14 00069190 SyncGetMessageStore
+         24   15 00069230 SyncGetSpecialFolder
+         25   16 00076740 SyncMgrPurgeFolderProvider
+         26   17 00076750 SyncMgrPurgeProviderStore
+         27   18 000767E0 SyncMgrRemovePolicy
+         63   19 00004BA0 SyncSqmUpdateStats
+         28   1A 000ACC90 UpdateEasTrackingSchema
+         29   1B 00078B90 WriteStoreCapabilityProps
+         30   1C 00079270 WriteStoreContentTypesProps
+          1      00076680 [NONAME]
+         18      00078B50 [NONAME]
+         19      00045F40 [NONAME]
+         36      00076550 [NONAME]
+         37      00076800 [NONAME]
+         44      00045AF0 [NONAME]
+         45      000458D0 [NONAME]
+         61      000ACA00 [NONAME]
+
+  Summary
+
+        3000 .data
+        1000 .didat
+       11000 .pdata
+       4F000 .rdata
+        3000 .reloc
+        7000 .rsrc
+      154000 .text

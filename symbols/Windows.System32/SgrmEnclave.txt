@@ -1,0 +1,42 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\SgrmEnclave.dll
+
+File Type: DLL
+
+  Section contains the following exports for SgrmEnclave.dll
+
+    00000000 characteristics
+    A3E402B4 time date stamp
+        0.00 version
+           1 ordinal base
+          11 number of functions
+          11 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0000E4A0 EngHostAttest
+          2    1 0000E260 EngHostCreateAttestationClient
+          3    2 0000E3A0 EngHostDestroyAttestationClient
+          4    3 0000D320 EngHostDispatchThread
+          5    4 0000CBF0 EngHostGetReport
+          6    5 0000D710 EngHostGetRuntimeReport
+          7    6 0000E0D0 EngHostGetSessionCertificate
+          8    7 0000D580 EngHostGetSessionReport
+          9    8 0000C410 EngHostInitialize
+         10    9 0000D490 EngHostNotify
+         11    A 0000CAA0 EngHostShutdown
+
+  Summary
+
+        4000 .data
+        4000 .pdata
+       12000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       43000 .text
+        2000 PAGE
+        4000 PAGECONS
+        1000 PAGEDATA

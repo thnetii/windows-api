@@ -1,0 +1,129 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\regapi.dll
+
+File Type: DLL
+
+  Section contains the following exports for REGAPI.dll
+
+    00000000 characteristics
+    97D6279B time date stamp
+        0.00 version
+           1 ordinal base
+         100 number of functions
+         100 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00009800 CheckStringForAsciiConversion
+          2    1 0000BC20 GetDomainName
+          3    2 0000E410 QueryUserConfig
+          4    3 0000B4B0 QueryUserProperty
+          5    4 0000ECB0 RegBuildNumberQuery
+          6    5 00008610 RegCdCreateA
+          7    6 00008750 RegCdCreateW
+          8    7 00008A10 RegCdDeleteA
+          9    8 00008B00 RegCdDeleteW
+         10    9 00008D00 RegCdEnumerateA
+         11    A 00008E90 RegCdEnumerateW
+         12    B 00009150 RegCdQueryA
+         13    C 00009290 RegCdQueryW
+         14    D 00006DC0 RegCloseServer
+         15    E 00004300 RegConsoleShadowQueryA
+         16    F 00004490 RegConsoleShadowQueryW
+         17   10 000045F0 RegCreateMonitorConfigW
+         18   11 000046A0 RegCreateUserConfigW
+         19   12 000094E0 RegDefaultUserConfigQueryA
+         20   13 000095C0 RegDefaultUserConfigQueryW
+         21   14 00010870 RegDenyTSConnectionsPolicy
+         22   15 0000ED80 RegFreeUtilityCommandList
+         23   16 0000F320 RegGetLicensePolicyID
+         24   17 000109B0 RegGetLicensingModePolicy
+         25   18 00010AF0 RegGetMachinePolicy
+         26   19 00010B50 RegGetMachinePolicyEx
+         27   1A 00001010 RegGetMachinePolicyNew
+         28   1B 0000EDF0 RegGetTServerVersion
+         29   1C 00009C30 RegGetUserConfigFromUserParameters
+         30   1D 00010D80 RegGetUserPolicy
+         31   1E 00011A20 RegIsMachineInHelpMode
+         32   1F 00011A60 RegIsMachinePolicyAllowHelp
+         33   20 0000F5B0 RegIsSrcAcceptingConnections
+         34   21 00009690 RegIsTServer
+         35   22 00010F40 RegIsTimeZoneRedirectionEnabled
+         36   23 00011260 RegMergeMachinePolicy
+         37   24 00009CD0 RegMergeUserConfigWithUserParameters
+         38   25 00006DD0 RegOpenServerA
+         39   26 00006E80 RegOpenServerW
+         40   27 00006ED0 RegPdCreateA
+         41   28 00007010 RegPdCreateW
+         42   29 00007270 RegPdDeleteA
+         43   2A 00007370 RegPdDeleteW
+         44   2B 00007540 RegPdEnumerateA
+         45   2C 000076E0 RegPdEnumerateW
+         46   2D 00007950 RegPdQueryA
+         47   2E 00007AC0 RegPdQueryW
+         48   2F 00004750 RegQueryConnectionSettings
+         49   30 000023F0 RegQueryListenerStart
+         50   31 00004840 RegQueryMonitorSettings
+         51   32 0000EE90 RegQueryOEMId
+         52   33 00004920 RegQuerySessionSettings
+         53   34 0000EF70 RegQueryUtilityCommandList
+         54   35 00009D90 RegSAMUserConfig
+         55   36 0000F470 RegSetLicensePolicyID
+         56   37 0000F8C0 RegSetSrcAcceptConnections
+         57   38 00009710 RegUserConfigDelete
+         58   39 00009720 RegUserConfigQuery
+         59   3A 00009710 RegUserConfigRename
+         60   3B 000097D0 RegUserConfigSet
+         61   3C 00007D90 RegWdCreateA
+         62   3D 00007EA0 RegWdCreateW
+         63   3E 00008000 RegWdDeleteA
+         64   3F 000080A0 RegWdDeleteW
+         65   40 00008150 RegWdEnumerateA
+         66   41 00008270 RegWdEnumerateW
+         67   42 000083F0 RegWdQueryA
+         68   43 00008510 RegWdQueryW
+         69   44 000049E0 RegWinStationAccessCheck
+         70   45 00004A30 RegWinStationCreateA
+         71   46 00004BF0 RegWinStationCreateW
+         72   47 00004E50 RegWinStationDeleteA
+         73   48 00004EF0 RegWinStationDeleteW
+         74   49 00004FA0 RegWinStationEnumerateA
+         75   4A 000050C0 RegWinStationEnumerateW
+         76   4B 00005240 RegWinStationQueryA
+         77   4C 00005430 RegWinStationQueryDefaultSecurity
+         78   4D 000054C0 RegWinStationQueryEx
+         79   4E 00005550 RegWinStationQueryExNew
+         80   4F 00005690 RegWinStationQueryExW
+         81   50 000057A0 RegWinStationQueryExtendedSettingsW
+         82   51 000057E0 RegWinStationQueryNumValueW
+         83   52 00005860 RegWinStationQuerySecurityA
+         84   53 00005920 RegWinStationQuerySecurityW
+         85   54 00005990 RegWinStationQueryValueW
+         86   55 00005A10 RegWinStationQueryW
+         87   56 00005B50 RegWinStationSetDefaultSecurity
+         88   57 00005C70 RegWinStationSetExtendedSettingsW
+         89   58 00005D20 RegWinStationSetNumValueW
+         90   59 00005D90 RegWinStationSetSecurityA
+         91   5A 00005E40 RegWinStationSetSecurityW
+         92   5B 00006100 RegWinstationQuerySecurityConfig_Machine
+         93   5C 000061E0 RegWinstationQuerySecurityConfig_Merged
+         94   5D 00006210 RegWinstationSetSecurityConfig
+         95   5E 0000B720 SetUserProperty
+         96   5F 0000A270 UsrPropGetString
+         97   60 0000A4E0 UsrPropGetValue
+         98   61 0000AF30 UsrPropSetString
+         99   62 0000B260 UsrPropSetValue
+        100   63 00011560 WaitForTSConnectionsPolicyChanges
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        6000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       13000 .text

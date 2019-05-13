@@ -1,0 +1,142 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\BdeHdCfgLib.dll
+
+File Type: DLL
+
+  Section contains the following exports for BDEHDCFGLIB.dll
+
+    00000000 characteristics
+    78234AC4 time date stamp
+        0.00 version
+           1 ordinal base
+         114 number of functions
+         114 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001150 ??0CBcdStore@@IEAA@XZ
+          2    1 00001190 ??0CBcdStore@@QEAA@$$QEAV0@@Z
+          3    2 00001190 ??0CBcdStore@@QEAA@AEBV0@@Z
+          4    3 00008AE0 ??0CBcdWmiWrapper@@IEAA@XZ
+          5    4 00001050 ??0CBcdWmiWrapper@@QEAA@AEBV0@@Z
+          6    5 00001010 ??0CBdeCfgLibraryLoader@@QEAA@AEBV0@@Z
+          7    6 0000C670 ??0CBdeCfgLibraryLoader@@QEAA@XZ
+          8    7 00001200 ??0CDriveConfiguration@@QEAA@AEBV0@@Z
+          9    8 0000DFC0 ??0CDriveConfiguration@@QEAA@XZ
+         10    9 00001180 ??1CBcdStore@@UEAA@XZ
+         11    A 00008B10 ??1CBcdWmiWrapper@@MEAA@XZ
+         12    B 0000C6A0 ??1CBdeCfgLibraryLoader@@QEAA@XZ
+         13    C 0000E020 ??1CDriveConfiguration@@QEAA@XZ
+         14    D 00001090 ??4CBcdStore@@QEAAAEAV0@$$QEAV0@@Z
+         15    E 00001090 ??4CBcdStore@@QEAAAEAV0@AEBV0@@Z
+         16    F 00001090 ??4CBcdWmiWrapper@@QEAAAEAV0@AEBV0@@Z
+         17   10 00001010 ??4CBdeCfgLibraryLoader@@QEAAAEAV0@AEBV0@@Z
+         18   11 00001200 ??4CDriveConfiguration@@QEAAAEAV0@AEBV0@@Z
+         19   12 00012010 ??_7CBcdStore@@6B@
+         20   13 00012010 ??_7CBcdWmiWrapper@@6B@
+         21   14 0000E0B0 ?ActionRequiresCreate@CDriveConfiguration@@QEAA_NXZ
+         22   15 0000E0D0 ?ActionRequiresMerge@CDriveConfiguration@@QEAA_NXZ
+         23   16 0000E0A0 ?ActionRequiresShrink@CDriveConfiguration@@QEAA_NXZ
+         61   17 0000E470 ?CancelConfiguration@CDriveConfiguration@@QEAAJXZ
+         62   18 0000E330 ?CancelConfigurationEntry@CDriveConfiguration@@CAXPEAX@Z
+         63   19 0000E370 ?CancelConfiguration_Thread@CDriveConfiguration@@AEAAJXZ
+         64   1A 0000F830 ?Cleanup@CDriveConfiguration@@AEAAXXZ
+         65   1B 0000E300 ?ConfigureDrive@CDriveConfiguration@@QEAAJXZ
+         66   1C 00009680 ?CreateClass@CBcdStore@@SAJPEAPEAV1@@Z
+         67   1D 00008F40 ?CreateInParams@CBcdWmiWrapper@@IEAAJPEBGPEAPEAUIWbemClassObject@@@Z
+         68   1E 0000F3B0 ?DetectTargetDrive@CDriveConfiguration@@AEAAJPEAUIVdsVolume@@@Z
+         69   1F 0000E520 ?DriveConfigurationEntry@CDriveConfiguration@@CAXPEAX@Z
+         70   20 00009010 ?ExecuteMethod@CBcdWmiWrapper@@IEAAJPEBGPEAUIWbemClassObject@@PEAPEAU2@@Z
+         71   21 000091A0 ?ExportSystemStore@CBcdStore@@QEAAJPEBG@Z
+         72   22 0000E0E0 ?GetActionType@CDriveConfiguration@@QEAA?AW4BDECFG_ACTION_TYPE@@XZ
+         73   23 000011F0 ?GetConfigurationResult@CDriveConfiguration@@QEAAJXZ
+         74   24 000011E0 ?GetInitializationResult@CDriveConfiguration@@QEAAJXZ
+         75   25 00008F30 ?GetNamespace@CBcdWmiWrapper@@IEAAPEAUIWbemServices@@XZ
+         76   26 0000E1C0 ?GetNewDriveLetter@CDriveConfiguration@@QEAAGXZ
+         77   27 0000E2C0 ?GetNumberOfSteps@CDriveConfiguration@@QEAAKXZ
+         78   28 0000E1B0 ?GetShrinkSize@CDriveConfiguration@@QEAA_KXZ
+         79   29 0000E260 ?GetStepExecutionOrder@CDriveConfiguration@@QEAAKW4_BDECFG_STEP_ID@@@Z
+         80   2A 0000E150 ?GetTargetDiskNumber@CDriveConfiguration@@QEAAKXZ
+         81   2B 0000E120 ?GetTargetDriveLetter@CDriveConfiguration@@QEAAGXZ
+         82   2C 0000E180 ?GetTargetPartitionNumber@CDriveConfiguration@@QEAAKXZ
+         83   2D 0000E0F0 ?GetTargetPartitionSize@CDriveConfiguration@@QEAA_KXZ
+         84   2E 000092B0 ?ImportSystemStore@CBcdStore@@QEAAJPEBG@Z
+         85   2F 0000EBB0 ?Initialize@CDriveConfiguration@@QEAAJPEBU_BDECFG_PARAMS@@QEAU_BDECFG_SIZE_REQUIREMENTS@@PEAVIConfigurationProgress@@@Z
+         86   30 0000C830 ?InitializeAndHoldLibrary@CBdeCfgLibraryLoader@@AEAAJXZ
+         87   31 0000C860 ?InitializeAndHoldLibraryEntry@CBdeCfgLibraryLoader@@CAXPEAX@Z
+         88   32 0000C8F0 ?InitializeAndHoldLibrary_Thread@CBdeCfgLibraryLoader@@AEAAJXZ
+         89   33 00008CB0 ?InitializeClass@CBcdWmiWrapper@@IEAAJPEBG@Z
+         90   34 0000EC30 ?InitializeEntry@CDriveConfiguration@@CAXPEAX@Z
+         91   35 0000EE30 ?InitializeFromParams@CDriveConfiguration@@AEAAJPEAUIVdsVolume@@@Z
+         92   36 00008D50 ?InitializeInstance@CBcdWmiWrapper@@IEAAJPEAUIWbemServices@@PEAUIWbemClassObject@@@Z
+         93   37 00008B80 ?InitializeNamespace@CBcdWmiWrapper@@AEAAJXZ
+         94   38 000011D0 ?Initialized@CDriveConfiguration@@QEAA_NXZ
+         95   39 0000E1F0 ?IsMergeTargetWinRE@CDriveConfiguration@@QEAAJPEAH@Z
+         96   3A 0000C700 ?LibraryLoaded@CBdeCfgLibraryLoader@@QEAA_NXZ
+         97   3B 0000C710 ?Load@CBdeCfgLibraryLoader@@QEAAJXZ
+         98   3C 000093C0 ?OpenStore@CBcdStore@@QEAAJPEBGPEAPEAV1@@Z
+         99   3D 0000E4A0 ?QueryStepPercentComplete@CDriveConfiguration@@QEAAJPEAK@Z
+        100   3E 00009730 ?RemapObjectDevices@CBcdStore@@QEAAJPEBG0@Z
+        101   3F 0000E560 ?SetConfigurationStep@CDriveConfiguration@@AEAAJW4_BDECFG_STEP_ID@@@Z
+        102   40 0000E5E0 ?Thread_ConfigureDrive@CDriveConfiguration@@AEAAJXZ
+        103   41 0000EC70 ?Thread_Initialize@CDriveConfiguration@@AEAAJXZ
+        104   42 0000C7E0 ?Unload@CBdeCfgLibraryLoader@@QEAAXXZ
+         24   43 000082F0 BdeCfgCalculateSizeRequirements
+         25   44 00003950 BdeCfgCanCreateActivePartOnDisk
+         26   45 00005090 BdeCfgCheckAndGetBootVolume
+         27   46 00005BC0 BdeCfgCheckGPTRecoveryPartition
+         28   47 00004880 BdeCfgCheckVolumeAsCandidate
+         29   48 00007AC0 BdeCfgCleanupOldBootFiles
+         30   49 00005410 BdeCfgCountGPTPartitions
+         31   4A 00005550 BdeCfgCreateWinREPartitionGPT
+         32   4B 00006290 BdeCfgDetectWinRESize
+         33   4C 00007240 BdeCfgDetectWinREVolumeName
+         34   4D 00006260 BdeCfgDisableWinRE
+         35   4E 000025A0 BdeCfgFindBasicVolumeExtent
+         36   4F 00003BA0 BdeCfgFindCandidateVolumes
+         37   50 00005D60 BdeCfgFindGPTRecoveryPartitionCandidate
+         38   51 00003820 BdeCfgFindLargestUnallocatedExtent
+         39   52 00005990 BdeCfgFindRecoveryPartitionGPT
+         40   53 00002330 BdeCfgFindVolumeWithName
+         41   54 00002350 BdeCfgFindVolumeWithProp
+         42   55 00005160 BdeCfgGetBootVolume
+         43   56 00001E00 BdeCfgGetDeviceNameFromVolume
+         44   57 00002370 BdeCfgGetMaxShrinkSize
+         45   58 00003140 BdeCfgGetNtfsVolumeSize
+         46   59 00001560 BdeCfgGetVolumeDisk
+         47   5A 000069E0 BdeCfgGetVolumeDriveLetter
+         48   5B 000014C0 BdeCfgGetVolumeFromId
+         49   5C 00001350 BdeCfgInitialize
+         50   5D 00005770 BdeCfgIsDiskConfiguredForBitLocker
+         51   5E 00006170 BdeCfgIsElevated
+         52   5F 00005840 BdeCfgIsWinREOnOSVolume
+         53   60 00008680 BdeCfgLoadErrorString
+         54   61 00008810 BdeCfgLoadResourceString
+        105   62 0000CF80 BdeCfgLogCandidateDrive
+        106   63 0000DB10 BdeCfgLogClose
+        107   64 0000D2B0 BdeCfgLogCommandLineParams
+        108   65 0000D8A0 BdeCfgLogDetectedWinRE
+        109   66 0000DAA0 BdeCfgLogEnumExtent
+        110   67 0000C960 BdeCfgLogError
+        111   68 0000CD40 BdeCfgLogFailedTarget
+        112   69 0000D270 BdeCfgLogFoundUnallocatedExtent
+        113   6A 0000DAD0 BdeCfgLogInit
+        114   6B 0000CB80 BdeCfgLogWarning
+         55   6C 00007C90 BdeCfgMigrateBootHive
+         56   6D 000053B0 BdeCfgMoveWinRE
+         57   6E 00006100 BdeCfgRestart
+         58   6F 00002EF0 BdeCfgSecureFormatPartition
+         59   70 00002400 BdeCfgShrinkSimpleVolume
+         60   71 00001480 BdeCfgUninitialize
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        6000 .rdata
+        1000 .reloc
+        3000 .rsrc
+       11000 .text

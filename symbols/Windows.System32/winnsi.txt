@@ -1,0 +1,43 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\winnsi.dll
+
+File Type: DLL
+
+  Section contains the following exports for WINNSI.DLL
+
+    00000000 characteristics
+    4EEE05DD time date stamp
+        0.00 version
+           1 ordinal base
+          15 number of functions
+          15 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001AB0 NsiConnectToServer
+          2    1 00001CD0 NsiDisconnectFromServer
+          3    2 00001010 NsiRpcDeregisterChangeNotification
+          4    3 00001050 NsiRpcDeregisterChangeNotificationEx
+          5    4 00002C00 NsiRpcEnumerateObjectsAllParameters
+          6    5 00002FE0 NsiRpcGetAllParameters
+          7    6 000030C0 NsiRpcGetAllParametersEx
+          8    7 00003260 NsiRpcGetParameter
+          9    8 00003320 NsiRpcGetParameterEx
+         10    9 00001410 NsiRpcRegisterChangeNotification
+         11    A 00001480 NsiRpcRegisterChangeNotificationEx
+         12    B 000034B0 NsiRpcSetAllParameters
+         13    C 00003530 NsiRpcSetAllParametersEx
+         14    D 000036D0 NsiRpcSetParameter
+         15    E 00003790 NsiRpcSetParameterEx
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        3000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        3000 .text

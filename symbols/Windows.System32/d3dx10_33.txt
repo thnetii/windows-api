@@ -1,0 +1,204 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\d3dx10_33.dll
+
+File Type: DLL
+
+  Section contains the following exports for d3dx10_33.dll
+
+    00000000 characteristics
+    45F8E734 time date stamp Thu Mar 15 07:27:00 2007
+        0.00 version
+           1 ordinal base
+         177 number of functions
+         177 number of names
+
+    ordinal hint RVA      name
+
+          2    0 00017828 D3DX10CheckVersion
+          3    1 00018D64 D3DX10CompileFromFileA
+          4    2 00018F88 D3DX10CompileFromFileW
+          5    3 00019184 D3DX10CompileFromMemory
+          6    4 000193BC D3DX10CompileFromResourceA
+          7    5 000195F4 D3DX10CompileFromResourceW
+          8    6 00044D58 D3DX10ComputeNormalMap
+          9    7 00018858 D3DX10CreateAsyncCompilerProcessor
+         10    8 00018AD8 D3DX10CreateAsyncEffectCreateProcessor
+         11    9 00018C24 D3DX10CreateAsyncEffectPoolCreateProcessor
+         12    A 00047514 D3DX10CreateAsyncFileLoaderA
+         13    B 00047460 D3DX10CreateAsyncFileLoaderW
+         14    C 000475C8 D3DX10CreateAsyncMemoryLoader
+         15    D 00047658 D3DX10CreateAsyncResourceLoaderA
+         16    E 00047764 D3DX10CreateAsyncResourceLoaderW
+         17    F 00018998 D3DX10CreateAsyncShaderPreprocessProcessor
+         18   10 00047954 D3DX10CreateAsyncShaderResourceViewProcessor
+         19   11 00047A34 D3DX10CreateAsyncTextureInfoProcessor
+         20   12 00047874 D3DX10CreateAsyncTextureProcessor
+         21   13 0001A184 D3DX10CreateEffectFromFileA
+         22   14 0001A3AC D3DX10CreateEffectFromFileW
+         23   15 0001A9EC D3DX10CreateEffectFromMemory
+         24   16 0001A5AC D3DX10CreateEffectFromResourceA
+         25   17 0001A7E8 D3DX10CreateEffectFromResourceW
+         26   18 0001AC28 D3DX10CreateEffectPoolFromFileA
+         27   19 0001AE44 D3DX10CreateEffectPoolFromFileW
+         28   1A 0001B460 D3DX10CreateEffectPoolFromMemory
+         29   1B 0001B038 D3DX10CreateEffectPoolFromResourceA
+         30   1C 0001B268 D3DX10CreateEffectPoolFromResourceW
+         31   1D 00017858 D3DX10CreateFontA
+         32   1E 00017A78 D3DX10CreateFontIndirectA
+         33   1F 00017B18 D3DX10CreateFontIndirectW
+         34   20 00017960 D3DX10CreateFontW
+         35   21 00009434 D3DX10CreateMesh
+         36   22 0001B690 D3DX10CreateShaderResourceViewFromFileA
+         37   23 0001B7D8 D3DX10CreateShaderResourceViewFromFileW
+         38   24 0001BBE0 D3DX10CreateShaderResourceViewFromMemory
+         39   25 0001B920 D3DX10CreateShaderResourceViewFromResourceA
+         40   26 0001BA80 D3DX10CreateShaderResourceViewFromResourceW
+         41   27 0000BFEC D3DX10CreateSkinInfo
+         42   28 0001DCCC D3DX10CreateSprite
+         43   29 0001BD40 D3DX10CreateTextureFromFileA
+         44   2A 0001BEB4 D3DX10CreateTextureFromFileW
+         45   2B 0001C330 D3DX10CreateTextureFromMemory
+         46   2C 0001C028 D3DX10CreateTextureFromResourceA
+         47   2D 0001C1AC D3DX10CreateTextureFromResourceW
+          1   2E 000168B0 D3DX10CreateThreadPump
+         48   2F 00017E74 D3DX10DisassembleEffect
+         49   30 00017E00 D3DX10DisassembleShader
+         50   31 00048D24 D3DX10FilterTexture
+         51   32 0001784C D3DX10GetDriverLevel
+         52   33 0001C4B4 D3DX10GetImageInfoFromFileA
+         53   34 0001C5E8 D3DX10GetImageInfoFromFileW
+         54   35 0001C9A4 D3DX10GetImageInfoFromMemory
+         55   36 0001C71C D3DX10GetImageInfoFromResourceA
+         56   37 0001C860 D3DX10GetImageInfoFromResourceW
+         57   38 000487CC D3DX10LoadTextureFromTexture
+         58   39 000197F4 D3DX10PreprocessShaderFromFileA
+         59   3A 000199DC D3DX10PreprocessShaderFromFileW
+         60   3B 00019BA4 D3DX10PreprocessShaderFromMemory
+         61   3C 00019DAC D3DX10PreprocessShaderFromResourceA
+         62   3D 00019FB4 D3DX10PreprocessShaderFromResourceW
+         63   3E 00017DA8 D3DX10ReflectShader
+         64   3F 00048D7C D3DX10SHProjectCubeMap
+         65   40 0004B994 D3DX10SaveTextureToFileA
+         66   41 0004BA5C D3DX10SaveTextureToFileW
+         67   42 0004BB24 D3DX10SaveTextureToMemory
+         68   43 00017BBC D3DX10UnsetAllDeviceObjects
+         69   44 000236EC D3DXBoxBoundProbe
+         70   45 0002CA58 D3DXColorAdjustContrast
+         71   46 0002C9D8 D3DXColorAdjustSaturation
+         72   47 00023D9C D3DXComputeBoundingBox
+         73   48 00023C34 D3DXComputeBoundingSphere
+         74   49 0002CB9C D3DXCpuOptimizations
+         75   4A 0002D3D0 D3DXCreateMatrixStack
+         76   4B 00024060 D3DXFloat16To32Array
+         77   4C 00023F28 D3DXFloat32To16Array
+         78   4D 0002CAB0 D3DXFresnelTerm
+         79   4E 00023BC4 D3DXIntersectTri
+         80   4F 00029AF4 D3DXMatrixAffineTransformation
+         81   50 00029CA8 D3DXMatrixAffineTransformation2D
+         82   51 0002754C D3DXMatrixDecompose
+         83   52 0002736C D3DXMatrixDeterminant
+         84   53 0002844C D3DXMatrixInverse
+         85   54 00029FF8 D3DXMatrixLookAtLH
+         86   55 00029DCC D3DXMatrixLookAtRH
+         87   56 00027AC4 D3DXMatrixMultiply
+         88   57 00027FF0 D3DXMatrixMultiplyTranspose
+         89   58 0002A6F0 D3DXMatrixOrthoLH
+         90   59 0002A868 D3DXMatrixOrthoOffCenterLH
+         91   5A 0002A770 D3DXMatrixOrthoOffCenterRH
+         92   5B 0002A67C D3DXMatrixOrthoRH
+         93   5C 0002A3E4 D3DXMatrixPerspectiveFovLH
+         94   5D 0002A318 D3DXMatrixPerspectiveFovRH
+         95   5E 0002A298 D3DXMatrixPerspectiveLH
+         96   5F 0002A588 D3DXMatrixPerspectiveOffCenterLH
+         97   60 0002A4BC D3DXMatrixPerspectiveOffCenterRH
+         98   61 0002A224 D3DXMatrixPerspectiveRH
+         99   62 0002AB6C D3DXMatrixReflect
+        100   63 00028E80 D3DXMatrixRotationAxis
+        101   64 00029068 D3DXMatrixRotationQuaternion
+        102   65 00028BF4 D3DXMatrixRotationX
+        103   66 00028CC8 D3DXMatrixRotationY
+        104   67 00029234 D3DXMatrixRotationYawPitchRoll
+        105   68 00028D9C D3DXMatrixRotationZ
+        106   69 00028AB0 D3DXMatrixScaling
+        107   6A 0002A9B0 D3DXMatrixShadow
+        108   6B 000292F0 D3DXMatrixTransformation
+        109   6C 0002972C D3DXMatrixTransformation2D
+        110   6D 00028B64 D3DXMatrixTranslation
+        111   6E 00027F10 D3DXMatrixTranspose
+        112   6F 0002C5C8 D3DXPlaneFromPointNormal
+        113   70 0002C688 D3DXPlaneFromPoints
+        114   71 0002C45C D3DXPlaneIntersectLine
+        115   72 0002C310 D3DXPlaneNormalize
+        116   73 0002C7F4 D3DXPlaneTransform
+        117   74 0002C870 D3DXPlaneTransformArray
+        118   75 0002C1E0 D3DXQuaternionBaryCentric
+        119   76 0002B6F4 D3DXQuaternionExp
+        120   77 0002B4C0 D3DXQuaternionInverse
+        121   78 0002B5E8 D3DXQuaternionLn
+        122   79 0002B20C D3DXQuaternionMultiply
+        123   7A 0002B378 D3DXQuaternionNormalize
+        124   7B 0002AF7C D3DXQuaternionRotationAxis
+        125   7C 0002AD80 D3DXQuaternionRotationMatrix
+        126   7D 0002B070 D3DXQuaternionRotationYawPitchRoll
+        127   7E 0002B834 D3DXQuaternionSlerp
+        128   7F 0002BA78 D3DXQuaternionSquad
+        129   80 0002BBB4 D3DXQuaternionSquadSetup
+        130   81 0002ACF0 D3DXQuaternionToAxisAngle
+        131   82 00031B80 D3DXSHAdd
+        132   83 00031BB8 D3DXSHDot
+        133   84 00043D48 D3DXSHEvalConeLight
+        134   85 00030BF4 D3DXSHEvalDirection
+        135   86 00043694 D3DXSHEvalDirectionalLight
+        136   87 000442B4 D3DXSHEvalHemisphereLight
+        137   88 000437C4 D3DXSHEvalSphericalLight
+        138   89 00031BF4 D3DXSHMultiply2
+        139   8A 00031CCC D3DXSHMultiply3
+        140   8B 000323A0 D3DXSHMultiply4
+        141   8C 00033C08 D3DXSHMultiply5
+        142   8D 0003860C D3DXSHMultiply6
+        143   8E 00030C94 D3DXSHRotate
+        144   8F 00031348 D3DXSHRotateZ
+        145   90 00031B50 D3DXSHScale
+        146   91 000235C0 D3DXSphereBoundProbe
+        147   92 000245D0 D3DXVec2BaryCentric
+        148   93 00024444 D3DXVec2CatmullRom
+        149   94 000242BC D3DXVec2Hermite
+        150   95 0002417C D3DXVec2Normalize
+        151   96 000246AC D3DXVec2Transform
+        152   97 000247CC D3DXVec2TransformArray
+        153   98 00024914 D3DXVec2TransformCoord
+        154   99 00024A48 D3DXVec2TransformCoordArray
+        155   9A 00024BA8 D3DXVec2TransformNormal
+        156   9B 00024C70 D3DXVec2TransformNormalArray
+        157   9C 00025244 D3DXVec3BaryCentric
+        158   9D 00025084 D3DXVec3CatmullRom
+        159   9E 00024EC8 D3DXVec3Hermite
+        160   9F 00024D58 D3DXVec3Normalize
+        161   A0 00025C7C D3DXVec3Project
+        162   A1 00025F24 D3DXVec3ProjectArray
+        163   A2 00025350 D3DXVec3Transform
+        164   A3 000254B0 D3DXVec3TransformArray
+        165   A4 00025638 D3DXVec3TransformCoord
+        166   A5 000257E8 D3DXVec3TransformCoordArray
+        167   A6 000259D4 D3DXVec3TransformNormal
+        168   A7 00025B00 D3DXVec3TransformNormalArray
+        169   A8 00026280 D3DXVec3Unproject
+        170   A9 00026548 D3DXVec3UnprojectArray
+        171   AA 00026F1C D3DXVec4BaryCentric
+        172   AB 00026D0C D3DXVec4CatmullRom
+        173   AC 000268B8 D3DXVec4Cross
+        174   AD 00026B1C D3DXVec4Hermite
+        175   AE 00026A9C D3DXVec4Normalize
+        176   AF 00027054 D3DXVec4Transform
+        177   B0 000271DC D3DXVec4TransformArray
+
+  Summary
+
+        5000 .data
+        4000 .pdata
+        1000 .reloc
+        1000 .rsrc
+       71000 .text

@@ -1,0 +1,44 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\WwaExt.dll
+
+File Type: DLL
+
+  Section contains the following exports for wwaext.dll
+
+    00000000 characteristics
+    617377C4 time date stamp
+        0.00 version
+           1 ordinal base
+          15 number of functions
+          15 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000051A0 CheckAllowDiagnosticsMode
+          2    1 000051C0 DetermineCurrentDisplayRotationAngle
+          3    2 000023B0 DllMain
+          4    3 00001460 ExtensionModulePreActivate
+          5    4 00001490 GetExtensionHostModuleCount
+          6    5 000051D0 GetExtensionHostModuleFactory
+          7    6 00001480 GetExtensionWebModuleCount
+          8    7 000013F0 GetExtensionWebModuleFactory
+          9    8 00001470 GetExtensionWebMultiThreadedModuleCount
+         10    9 000051F0 GetExtensionWebMultiThreadedModuleFactory
+         11    A 000051C0 ProcessDisplayRotation
+         12    B 000051C0 SetPhoneWerParameters
+         13    C 00001100 StaticExtensionInitialization
+         14    D 00005210 StaticExtensionUnInitialization
+         15    E 000012B0 WWABehaviorEnabled
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        3000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        6000 .text

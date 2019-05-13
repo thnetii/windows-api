@@ -1,0 +1,46 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\occache.dll
+
+File Type: DLL
+
+  Section contains the following exports for OCCACHE.dll
+
+    00000000 characteristics
+    F00D8FA7 time date stamp
+        0.00 version
+           1 ordinal base
+          17 number of functions
+          17 number of names
+
+    ordinal hint RVA      name
+
+         16    0 00003E10 DllCanUnloadNow
+         17    1 000020C0 DllGetClassObject
+          1    2 0000A6A0 FindControlClose
+          2    3 0000A6C0 FindFirstControl
+          3    4 0000A6E0 FindFirstControlArch
+          4    5 0000A8F0 FindNextControl
+          5    6 0000A900 FindNextControlArch
+          6    7 0000AA60 GetControlDependentFile
+          7    8 0000AB70 GetControlInfo
+          8    9 0000B800 IsModuleRemovable
+          9    A 0000BBF0 ReleaseControlHandle
+         11    B 0000BC20 RemoveControlByHandle
+         10    C 00006DF0 RemoveControlByHandle2
+         13    D 0000BC30 RemoveControlByName
+         12    E 00006ED0 RemoveControlByName2
+         14    F 00002220 RemoveExpiredControls
+         15   10 0000BEC0 SweepControlsByLastAccessDate
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        7000 .rdata
+        1000 .reloc
+        E000 .rsrc
+       10000 .text

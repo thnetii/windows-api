@@ -1,0 +1,52 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\fms.dll
+
+File Type: DLL
+
+  Section contains the following exports for fms.dll
+
+    00000000 characteristics
+    B05770B3 time date stamp
+        0.00 version
+           1 ordinal base
+          23 number of functions
+          23 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0001B430 FmsActivateFonts
+          2    1 0001B600 FmsAddFilter
+          3    2 0001B730 FmsDeactivateFonts
+          4    3 000092C0 FmsFreeEnumerator
+          5    4 0001B900 FmsGetBestMatchInFamily
+          6    5 0001BB10 FmsGetCurrentFilter
+          7    6 0001BC50 FmsGetDirectWriteLogFont
+          8    7 00007A60 FmsGetFilteredFontList
+          9    8 0001BCA0 FmsGetFilteredPropertyList
+         10    9 0001BE60 FmsGetFontAutoActivationMode
+         11    A 00008D20 FmsGetFontProperty
+         12    B 00007D70 FmsGetGDILogFont
+         13    C 0001BF80 FmsGetGdiLogicalFont
+         14    D 00009790 FmsInitializeEnumerator
+         15    E 0001C120 FmsMapGdiLogicalFont
+         16    F 0001C260 FmsMapLogicalFont
+         17   10 0001C2B0 FmsResetEnumerator
+         18   11 0001C460 FmsResetFontsActivationState
+         19   12 00007310 FmsSetDefaultFilter
+         20   13 0001C5F0 FmsSetFilter
+         21   14 0001C740 FmsSetFontAutoActivationMode
+         22   15 0001C860 FmsSetTextFilter
+         23   16 0001C9D0 FmsToggleOnDesignAxis
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        2000 .pdata
+        C000 .rdata
+        1000 .reloc
+        2000 .rsrc
+       22000 .text

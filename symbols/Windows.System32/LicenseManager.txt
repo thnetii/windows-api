@@ -1,0 +1,49 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\LicenseManager.dll
+
+File Type: DLL
+
+  Section contains the following exports for LicenseManager.dll
+
+    00000000 characteristics
+    2E955AA3 time date stamp
+        0.00 version
+           1 ordinal base
+          20 number of functions
+          20 number of names
+
+    ordinal hint RVA      name
+
+          5    0 00048910 DllCanUnloadNow
+          6    1 00048940 DllGetActivationFactory
+          7    2 00048980 DllGetClassObject
+          8    3 000489D0 LmCreateLicenseManager
+          9    4 000489E0 LmCreateStandardServiceProvider
+         10    5 00022110 ServiceBeginAcquireLicense
+         11    6 00048BE0 ServiceCleanup
+         12    7 000246A0 ServiceCreateApplicationLicenseManager
+         13    8 00048BF0 ServiceEnsureLicenseForOptionalPackageUsage
+         14    9 00048C30 ServiceEnsureLicenseForPackageActivation
+         15    A 00048C40 ServiceInitialize
+         16    B 00048C50 ServiceOptionalPackageRundownNotification
+         17    C 00022860 ServicePackageRundownNotification
+         18    D 00048C60 ServicePackageSuspendedNotification
+         19    E 00048C70 ServicePrecacheLicenseForPackageResume
+         20    F 00048C80 ServiceReset
+          1   10 00048BA0 SetServiceStatusHandle
+          2   11 00048BB0 WnfEventHandlerForDeviceIdChange
+          3   12 00048BC0 WnfEventHandlerForOfflinePcChange
+          4   13 00048BD0 WnfEventHandlerForXboxTestNetworkConnectionComplete
+
+  Summary
+
+       1B000 .data
+        1000 .didat
+        B000 .pdata
+       4C000 .rdata
+        2000 .reloc
+        2000 .rsrc
+       A2000 .text

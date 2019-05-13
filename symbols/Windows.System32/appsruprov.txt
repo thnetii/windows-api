@@ -1,0 +1,36 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\appsruprov.dll
+
+File Type: DLL
+
+  Section contains the following exports for AppSruProv.dll
+
+    00000000 characteristics
+    1E1C6E3B time date stamp
+        0.00 version
+           1 ordinal base
+           8 number of functions
+           8 number of names
+
+    ordinal hint RVA      name
+
+          2    0 00001460 DllMain
+          1    1 00008400 LogMemoryPerfCounters
+          3    2 0000AA60 LogMemoryPerfCountersPeriodically
+          4    3 0001CB10 PsmQueryApplicationPerformanceInformation
+          5    4 0001CB30 PsmQueryApplicationPerformanceInformation2
+          6    5 0001CC00 PsmQueryQuotaInformation
+          7    6 00003FC0 SruInitializeProvider
+          8    7 00004440 SruUninitializeProvider
+
+  Summary
+
+        1000 .data
+        2000 .pdata
+        A000 .rdata
+        1000 .reloc
+        2000 .rsrc
+       1F000 .text

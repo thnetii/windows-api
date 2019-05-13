@@ -1,0 +1,39 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\tlscsp.dll
+
+File Type: DLL
+
+  Section contains the following exports for tlscsp.dll
+
+    00000000 characteristics
+    4D09C84B time date stamp
+        0.00 version
+           1 ordinal base
+          10 number of functions
+          10 number of names
+
+    ordinal hint RVA      name
+
+          7    0 00001510 LsCsp_DecryptEnvelopedData
+          6    1 00002E50 LsCsp_EncryptHwid
+          5    2 00001A10 LsCsp_GetServerData
+          9    3 00004A40 LsCsp_RetrieveSecret
+          8    4 00004950 LsCsp_StoreSecret
+          1    5 000044F0 TLSCspInit
+          2    6 000043F0 TLSCspShutdown
+         10    7 000045F0 TLSCspStartInstallCertificateThread
+          4    8 00001130 TLSFreeTSCertificate
+          3    9 00001070 TLSGetTSCertificate
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        3000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        8000 .text

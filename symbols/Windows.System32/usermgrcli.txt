@@ -1,0 +1,77 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\usermgrcli.dll
+
+File Type: DLL
+
+  Section contains the following exports for USERMGRCLI.dll
+
+    00000000 characteristics
+     C35235A time date stamp
+        0.00 version
+           1 ordinal base
+          48 number of functions
+          48 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000086B0 CamCleanupDisardedCandidateAccounts
+          2    1 000086C0 CamConnectCandidateUser
+          3    2 00008700 CamFreeAuthBuffer
+          4    3 00008740 CamFreeBuffer
+          5    4 00008770 CamGetCandidateAccountCredz
+          6    5 000087A0 CamGetCandidateUserSessionIds
+          7    6 000087D0 CamGetNonCandidateUserSessionIds
+          8    7 00002A40 CamIsCandidateUser
+          9    8 00008800 CamIsEphemeralCandidateUser
+         10    9 00008830 CamRefreshCandidateUser
+         11    A 00008C70 IsInteractiveUserSession
+         12    B 00008CD0 QueryActiveSession
+         13    C 00008D40 QueryUserToken
+         14    D 00008E10 RegisterUsertokenForNoWinlogon
+         15    E 00008940 UMgrChangeSessionActiveShellUser
+         16    F 00008970 UMgrChangeSessionUserToken
+         17   10 00008980 UMgrClearDefaultSignInAccount
+         18   11 00008990 UMgrConnectLocalUser
+         19   12 000089F0 UMgrDisconnectLocalUser
+         20   13 000018C0 UMgrEnumerateSessionUsers
+         21   14 00001310 UMgrFreeSessionUsers
+         22   15 00008A40 UMgrFreeUserCredentials
+         23   16 00008A90 UMgrGetCachedCredentials
+         24   17 00001100 UMgrGetConstrainedUserToken
+         25   18 00008AC0 UMgrGetDefaultSignInAccount
+         26   19 000017B0 UMgrGetImpersonationTokenForContext
+         27   1A 00008AD0 UMgrGetSessionActiveShellUserToken
+         28   1B 00002990 UMgrInformFlags
+         29   1C 00002920 UMgrInformUserLogoff
+         30   1D 00002A30 UMgrInformUserLogon
+         31   1E 00001B40 UMgrIsAllowedToActivateAsUser
+         32   1F 00002A10 UMgrLaunchShell
+         33   20 00002A00 UMgrLaunchShellInfrastructureHost
+         34   21 00001330 UMgrLogonUser
+         35   22 00001290 UMgrOpenProcessHandleForAccess
+         36   23 00001210 UMgrOpenProcessTokenForQuery
+         37   24 00001480 UMgrQueryDefaultAccountToken
+         38   25 00008B00 UMgrQuerySessionUserToken
+         39   26 00008B30 UMgrQuerySessionVirtualAccountToken
+         40   27 000023E0 UMgrQueryUserContext
+         41   28 00008B60 UMgrQueryUserContextFromName
+         42   29 00008B90 UMgrQueryUserContextFromSid
+         43   2A 00001FA0 UMgrQueryUserToken
+         44   2B 00008BC0 UMgrQueryUserTokenFromName
+         45   2C 00008BF0 UMgrQueryUserTokenFromSid
+         46   2D 00008C20 UMgrSetCachedCredentials
+         47   2E 00002A20 UMgrSetShellInformation
+         48   2F 00008C60 UMgrpGetRegistryLocation
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        7000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        8000 .text

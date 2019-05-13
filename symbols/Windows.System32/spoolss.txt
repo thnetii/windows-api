@@ -1,0 +1,234 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\spoolss.dll
+
+File Type: DLL
+
+  Section contains the following exports for SPOOLSS.DLL
+
+    00000000 characteristics
+    222DB4E7 time date stamp
+        0.00 version
+           1 ordinal base
+         206 number of functions
+         206 number of names
+
+    ordinal hint RVA      name
+
+         12    0 000052C0 AbortPrinter
+         13    1 00005310 AddFormW
+         14    2 00005360 AddJobW
+         15    3 000053C0 AddMonitorW
+         16    4 00005420 AddPerMachineConnectionW
+         17    5 00005470 AddPortExW
+         18    6 000054C0 AddPortW
+         19    7 0000A0F0 AddPrintDeviceObject
+         20    8 00005510 AddPrintProcessorW
+         21    9 00005560 AddPrintProvidorW
+         22    A 000055B0 AddPrinterConnectionW
+         23    B 00005600 AddPrinterDriverExW
+         24    C 00005650 AddPrinterDriverW
+         25    D 000056A0 AddPrinterExW
+         26    E 000056F0 AddPrinterW
+         27    F 00005740 AdjustPointers
+         28   10 00005790 AdjustPointersInStructuresArray
+         29   11 000057F0 AlignKMPtr
+         30   12 00005820 AlignRpcPtr
+         31   13 00001730 AllocSplStr
+         32   14 00005880 AllowRemoteCalls
+         33   15 00001610 AppendPrinterNotifyInfoData
+         34   16 000033F0 BuildOtherNamesFromMachineName
+         35   17 00001E80 CacheAddName
+         36   18 00003450 CacheCreateAndAddNode
+         37   19 000058D0 CacheCreateAndAddNodeWithIPAddresses
+         38   1A 00005920 CacheDeleteNode
+         39   1B 00005970 CacheIsNameCluster
+         40   1C 000059C0 CacheIsNameInNodeList
+         41   1D 00005A10 CallDrvDevModeConversion
+         42   1E 00005A90 CallRouterFindFirstPrinterChangeNotification
+         43   1F 00001EC0 CheckLocalCall
+         44   20 00001100 ClosePrinter
+         45   21 00005AF0 ConfigurePortW
+         46   22 00005B40 CreatePrinterIC
+         47   23 00005B90 DeleteFormW
+         48   24 00005BE0 DeleteJobNamedProperty
+         49   25 00005C30 DeleteMonitorW
+         50   26 00005C80 DeletePerMachineConnectionW
+         51   27 00005CD0 DeletePortW
+         52   28 00005D30 DeletePrintProcessorW
+         53   29 00005D90 DeletePrintProvidorW
+         54   2A 00005DE0 DeletePrinter
+         55   2B 00005E30 DeletePrinterConnectionW
+         56   2C 00005E80 DeletePrinterDataExW
+         57   2D 00005ED0 DeletePrinterDataW
+         58   2E 00005F20 DeletePrinterDriverExW
+         59   2F 00005F80 DeletePrinterDriverW
+         60   30 00005FD0 DeletePrinterIC
+         61   31 00006020 DeletePrinterKeyW
+         62   32 000017F0 DllAllocSplMem
+         63   33 00006070 DllAllocSplStr
+         64   34 00001770 DllFreeSplMem
+         65   35 000017B0 DllFreeSplStr
+         66   36 00003F90 DllMain
+         67   37 000060A0 DllReallocSplMem
+         68   38 000060D0 DllReallocSplStr
+         69   39 00006100 EndDocPrinter
+         70   3A 00006160 EndPagePrinter
+         71   3B 000061C0 EnumFormsW
+         72   3C 00006250 EnumJobsW
+         73   3D 00006310 EnumMonitorsW
+         74   3E 00006370 EnumPerMachineConnectionsW
+         75   3F 000063D0 EnumPortsW
+         76   40 00006430 EnumPrintProcessorDatatypesW
+         77   41 000064A0 EnumPrintProcessorsW
+         78   42 00006510 EnumPrinterDataExW
+         79   43 00006570 EnumPrinterDataW
+         80   44 00003270 EnumPrinterDriversW
+         81   45 00006620 EnumPrinterKeyW
+         82   46 00003210 EnumPrintersW
+         83   47 00006680 FindClosePrinterChangeNotification
+         84   48 000066D0 FlushPrinter
+         85   49 00006740 FormatPrinterForRegistryKey
+         86   4A 00006790 FormatRegistryKeyForPrinter
+         87   4B 000067E0 FreeOtherNames
+         88   4C 00006810 FreePrintPropertyValue
+         89   4D 00006860 GetFormW
+         90   4E 00001180 GetJobAttributes
+         91   4F 000011C0 GetJobAttributesEx
+         92   50 000068C0 GetJobNamedPropertyValue
+         93   51 00006910 GetJobW
+         94   52 00006990 GetNetworkId
+         95   53 000069E0 GetPrintProcessorDirectoryW
+         96   54 00006A70 GetPrinterDataExW
+         97   55 00006B10 GetPrinterDataW
+         98   56 00006B90 GetPrinterDriverDirectoryW
+         99   57 00006C20 GetPrinterDriverExW
+        100   58 000010B0 GetPrinterDriverW
+        101   59 000015D0 GetPrinterW
+        102   5A 000031E0 GetServerPolicy
+        103   5B 00006CE0 GetShrinkedSize
+        104   5C 00003390 GetSpoolerTlsIndexes
+        105   5D 000018A0 ImpersonatePrinterClient
+        106   5E 00006D30 InitializeRouter
+        107   5F 00001FD0 IsNameTheLocalMachineOrAClusterSpooler
+        108   60 00006D70 IsNamedPipeRpcCall
+        109   61 00006DC0 MIDL_user_allocate1
+        110   62 00006DE0 MIDL_user_free1
+        111   63 00008B10 MakeOffset
+        112   64 00008B20 MakePTR
+        113   65 00006E00 MarshallDownStructure
+        114   66 00006E50 MarshallDownStructuresArray
+        115   67 00006EB0 MarshallUpStructure
+        116   68 00006F10 MarshallUpStructuresArray
+        117   69 00006F70 OldGetPrinterDriverW
+        118   6A 00006FD0 OpenPrinter2W
+          1   6B 00004DC0 OpenPrinterExW
+        119   6C 00007020 OpenPrinterPort2W
+        120   6D 00001140 OpenPrinterW
+        121   6E 00008B30 PackStringToEOB
+        122   6F 00001830 PackStrings
+        123   70 00001530 PartialReplyPrinterChangeNotification
+        124   71 00007070 PlayGdiScriptOnPrinterIC
+        125   72 000070D0 PrinterHandleRundown
+        126   73 00007120 PrinterMessageBoxW
+        127   74 00007180 ProvidorFindClosePrinterChangeNotification
+        128   75 000071D0 ProvidorFindFirstPrinterChangeNotification
+        129   76 00007310 ReadPrinter
+        130   77 000032D0 ReallocSplMem
+        131   78 00007370 ReallocSplStr
+        132   79 000073A0 RemoteFindFirstPrinterChangeNotification
+        133   7A 0000A1B0 RemovePrintDeviceObject
+        134   7B 00007410 ReplyClosePrinter
+        135   7C 00007460 ReplyOpenPrinter
+        136   7D 00001560 ReplyPrinterChangeNotification
+        137   7E 000074C0 ReplyPrinterChangeNotificationEx
+        138   7F 00007520 ReportJobProcessingProgress
+        139   80 00007570 ResetPrinterW
+        140   81 00001860 RevertToPrinterSelf
+        141   82 000075C0 RouterAddPrinterConnection2
+        142   83 00006DC0 RouterAllocBidiMem
+        143   84 00007610 RouterAllocBidiResponseContainer
+        144   85 00001700 RouterAllocPrinterNotifyInfo
+        145   86 00007660 RouterBroadcastMessage
+          2   87 00004E10 RouterCorePrinterDriverInstalled
+          3   88 00004E90 RouterCreatePrintAsyncNotificationChannel
+          4   89 00004FD0 RouterDeletePrinterDriverPackage
+        146   8A 000076C0 RouterFindCompatibleDriver
+        147   8B 00007770 RouterFindFirstPrinterChangeNotification
+        148   8C 000077D0 RouterFindNextPrinterChangeNotification
+        149   8D 00006DE0 RouterFreeBidiMem
+        150   8E 00007830 RouterFreeBidiResponseContainer
+        151   8F 00007880 RouterFreePrinterNotifyInfo
+          5   90 00005020 RouterGetCorePrinterDrivers
+          6   91 00005080 RouterGetPrintClassObject
+          7   92 00005130 RouterGetPrinterDriverPackagePath
+          8   93 000051B0 RouterInstallPrinterDriverFromPackage
+        152   94 000078D0 RouterInternalGetPrinterDriver
+        153   95 00007990 RouterRefreshPrinterChangeNotification
+          9   96 00003300 RouterRegisterForPrintAsyncNotifications
+        154   97 000079E0 RouterReplyPrinter
+        155   98 00007A40 RouterSpoolerSetPolicy
+         10   99 00005210 RouterUnregisterForPrintAsyncNotifications
+         11   9A 00005260 RouterUploadPrinterDriverPackage
+        156   9B 00007A90 ScheduleJob
+        157   9C 00007AE0 SeekPrinter
+        158   9D 00007B40 SendRecvBidiData
+        159   9E 00007B90 SetFormW
+        160   9F 00001590 SetJobW
+        161   A0 00007BE0 SetPortW
+        162   A1 00007C30 SetPrinterDataExW
+        163   A2 00007CB0 SetPrinterDataW
+        164   A3 00007D10 SetPrinterW
+        165   A4 00007D60 SplCloseSpoolFileHandle
+        166   A5 00007DB0 SplCommitSpoolData
+        167   A6 00007E20 SplDriverUnloadComplete
+        168   A7 00007E70 SplGetClientUserHandle
+        169   A8 00007EC0 SplGetSpoolFileInfo
+        170   A9 000016D0 SplGetUserSidStringFromToken
+        171   AA 00003350 SplInitializeWinSpoolDrv
+        172   AB 00007F20 SplIsSessionZero
+        173   AC 00001E40 SplIsUpgrade
+        174   AD 00007F70 SplProcessPnPEvent
+        175   AE 00007FC0 SplProcessSessionEvent
+        176   AF 00008010 SplPromptUIInUsersSession
+        177   B0 00008060 SplQueryUserInfo
+        178   B1 000080B0 SplReadPrinter
+        179   B2 00008100 SplRegisterForDeviceEvents
+        180   B3 000033C0 SplRegisterForSessionEvents
+        181   B4 00008150 SplShutDownRouter
+        182   B5 000081A0 SplUalCollectData
+        183   B6 000081F0 SplUnregisterForDeviceEvents
+        184   B7 00008240 SplUnregisterForSessionEvents
+        185   B8 00008290 SpoolerFindClosePrinterChangeNotification
+        186   B9 000082E0 SpoolerFindFirstPrinterChangeNotification
+        187   BA 00008370 SpoolerFindNextPrinterChangeNotification
+        188   BB 000083C0 SpoolerFreePrinterNotifyInfo
+        189   BC 00008410 SpoolerHasInitialized
+        190   BD 00008460 SpoolerInit
+        191   BE 000084B0 SpoolerRefreshPrinterChangeNotification
+        192   BF 00008500 StartDocPrinterW
+        193   C0 00008560 StartPagePrinter
+        194   C1 000085C0 UndoAlignKMPtr
+        195   C2 00008600 UndoAlignRpcPtr
+        196   C3 00008670 UpdateBufferSize
+        197   C4 0000A200 UpdatePrintDeviceObject
+        198   C5 000086D0 UpdatePrinterRegAll
+        199   C6 00008720 UpdatePrinterRegAllEx
+        200   C7 00008780 UpdatePrinterRegUser
+        201   C8 000087E0 WaitForPrinterChange
+        202   C9 00003420 WaitForSpoolerInitialization
+        203   CA 00008830 WritePrinter
+        204   CB 00008890 XcvDataW
+        205   CC 00008920 bGetDevModePerUser
+        206   CD 00008950 bSetDevModePerUser
+
+  Summary
+
+        1000 .data
+        2000 .pdata
+        8000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        E000 .text

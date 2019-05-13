@@ -1,0 +1,35 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\vpnike.dll
+
+File Type: DLL
+
+  Section contains the following exports for VPNIKE.DLL
+
+    00000000 characteristics
+     4DC624F time date stamp
+        0.00 version
+           1 ordinal base
+           6 number of functions
+           6 number of names
+
+    ordinal hint RVA      name
+
+          2    0 00006A50 InitializeProtocolEngine
+          3    1 00006E20 InitializeServerProtocolEngine
+          4    2 00006DF0 SendMessageToProtocolEngine
+          5    3 00006C80 UninitializeProtocolEngine
+          6    4 00007140 UninitializeServerProtocolEngine
+          1    5 000071C0 VpnIkeRoamToBestCostInterface
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        3000 .pdata
+       31000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       74000 .text

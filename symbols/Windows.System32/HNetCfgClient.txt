@@ -1,0 +1,41 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\HNetCfgClient.dll
+
+File Type: DLL
+
+  Section contains the following exports for HNetCfgClient.dll
+
+    00000000 characteristics
+    C6B7AED3 time date stamp
+        0.00 version
+           1 ordinal base
+          12 number of functions
+          12 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000049F0 DllCanUnloadNow
+          2    1 00004A80 DllGetClassObject
+          3    2 00004B80 DllRegisterServer
+          4    3 00004C60 DllUnregisterServer
+          5    4 000092B0 HNetCfgGetDhcpScopeAddress
+          6    5 00008C80 HNetCfgGetPrivateIndex
+          7    6 00008D80 HNetCfgGetPublicIndex
+          8    7 000093B0 HNetCfgSetDhcpScopeAddress
+          9    8 00008E80 HNetCfgStartSharing
+         10    9 00008F60 HNetCfgStartSharingEx
+         11    A 00009050 HNetCfgStopSharing
+         12    B 000091D0 HNetCfgUpdateSharingSettingsFromStorage
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        2000 .pdata
+        D000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       2F000 .text

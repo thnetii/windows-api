@@ -1,0 +1,40 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\wdp.dll
+
+File Type: DLL
+
+  Section contains the following exports for wdp.dll
+
+    00000000 characteristics
+    7B2ABAA3 time date stamp
+        0.00 version
+           1 ordinal base
+          11 number of functions
+          11 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00005140 DllCanUnloadNow
+          2    1 00004F10 DllGetActivationFactory
+          3    2 00005080 DllGetClassObject
+          4    3 00025DB0 ExecutePackagedPlugin
+          5    4 000064F0 HandleRestApiRequest
+          6    5 00025BF0 LoadPackagedPlugins
+          7    6 000069D0 SetDebugTracing
+          8    7 000069B0 SetServiceSettings
+          9    8 00006940 ShutdownNotification
+         10    9 00006510 StartNotification
+         11    A 00025D10 UnloadPackagedPlugins
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        7000 .pdata
+       34000 .rdata
+        3000 .reloc
+        1000 .rsrc
+       A0000 .text

@@ -1,0 +1,49 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\NetSetupApi.dll
+
+File Type: DLL
+
+  Section contains the following exports for NetSetupApi.dll
+
+    00000000 characteristics
+    567DE38B time date stamp
+        0.00 version
+           1 ordinal base
+          21 number of functions
+          21 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0000E0A0 NetSetupClose
+          2    1 0000E0E0 NetSetupCloseObjectQuery
+          3    2 0000E0F0 NetSetupCommit
+          4    3 0000E150 NetSetupCreateObject
+          5    4 0000E200 NetSetupCreateObjectQuery
+          6    5 0000E2A0 NetSetupDeleteObject
+          7    6 0000E320 NetSetupFreeObjectProperties
+          8    7 0000E380 NetSetupFreeObjects
+          9    8 0000E3E0 NetSetupFreeSerializedFilter
+         10    9 0000E410 NetSetupGetObjectProperties
+         11    A 0000E4E0 NetSetupGetObjectPropertyKeys
+         12    B 0000E5A0 NetSetupGetObjects
+         13    C 0000E690 NetSetupInitialize
+         14    D 0000E7F0 NetSetupOpenAdvancedPropertyKey
+         15    E 0000E870 NetSetupRollback
+         16    F 0000E8D0 NetSetupSerializeFilter
+         17   10 0000E950 NetSetupSetObjectProperties
+         18   11 0000EA00 NetSetupSynchronizeDevices
+         19   12 0000EA40 NetSetupValidateTransaction
+         20   13 0000EEC0 OnMachineUILanguageInit
+         21   14 0000EFA0 OnMachineUILanguageSwitch
+
+  Summary
+
+        5000 .data
+        2000 .pdata
+        A000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       11000 .text

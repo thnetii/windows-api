@@ -1,0 +1,51 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\luiapi.dll
+
+File Type: DLL
+
+  Section contains the following exports for luiapi.dll
+
+    00000000 characteristics
+    99A03E87 time date stamp
+        0.00 version
+           1 ordinal base
+          23 number of functions
+          23 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001970 LuiAddProfile
+          2    1 00001AB0 LuiCancelOperation
+          3    2 000014D0 LuiCloseHandle
+          4    3 00001B90 LuiDeleteProfile
+          5    4 00001C80 LuiDisableProfile
+          6    5 00001D70 LuiDiscoverProfiles
+          7    6 00001E50 LuiEnableProfile
+          8    7 00001F40 LuiInstallProfile
+          9    8 000013A0 LuiOpenHandle
+         10    9 00002060 LuiProcessActivationCode
+         11    A 000018A0 LuiRegisterForAllEnterpriseProfileNotifications
+         12    B 00001700 LuiRegisterForAllProfileNotifications
+         13    C 000017D0 LuiRegisterForEnterpriseEsimNotifications
+         14    D 00001630 LuiRegisterForEsimNotifications
+         15    E 00001590 LuiRegisterForLpaNotifications
+         16    F 00002160 LuiReleaseProvisioningProfile
+         17   10 00002230 LuiRequestProvisioningProfile
+         18   11 00002310 LuiSetDefaultSmdpAddress
+         19   12 000023F0 LuiSetEsimPolicy
+         20   13 000024E0 LuiSetProfileNickname
+         21   14 000025F0 LuiSetUserAuthenticationMode
+         22   15 000026B0 LuiVerifyClientToken
+         23   16 00002760 LuiWipeEsim
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        4000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        4000 .text

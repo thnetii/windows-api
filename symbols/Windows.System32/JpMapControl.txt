@@ -1,0 +1,48 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\JpMapControl.dll
+
+File Type: DLL
+
+  Section contains the following exports for JpMapControl.dll
+
+    00000000 characteristics
+    72A9D01D time date stamp
+        0.00 version
+           1 ordinal base
+          19 number of functions
+          19 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001A70 DllCanUnloadNow
+          2    1 00001860 DllGetActivationFactory
+          3    2 000019D0 DllGetClassObject
+          4    3 0002F720 JpIs3DSupported
+          5    4 0002F710 JpIsUnifiedMapsStack
+          6    5 0002FE10 JpMapControlSettings_Create
+          7    6 0002EE40 JpMapControl_Create
+          8    7 000308F0 JpMapFactory_Create
+          9    8 0002F550 JpMapModel3DFrom3MFStreamOperation_Create
+         10    9 00030E80 JpMapOverlayModel_Create
+         11    A 00034950 JpMapStyleSheetFactory_Create
+         12    B 0002EFA0 JpOverviewMapControl_Create
+         13    C 0002F6D0 JpRestrictedApiAccessCheck
+         14    D 0002F0E0 JpStreetsideExperience_Create
+         15    E 0002F3B0 JpStreetsidePanoramaOperation_Create
+         16    F 00030230 MapSettings_GetMosAppId
+         17   10 000303F0 MapSettings_GetMosBingMapsKey
+         18   11 00030310 MapSettings_GetMosServiceToken
+         19   12 000304D0 MapSettings_ResetMosKeys
+
+  Summary
+
+        D000 .data
+        1000 .didat
+        5000 .pdata
+       3A000 .rdata
+        4000 .reloc
+        1000 .rsrc
+       61000 .text

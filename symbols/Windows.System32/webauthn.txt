@@ -1,0 +1,69 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\webauthn.dll
+
+File Type: DLL
+
+  Section contains the following exports for webauthn.dll
+
+    00000000 characteristics
+    58C4F3ED time date stamp
+        0.00 version
+           1 ordinal base
+          40 number of functions
+          40 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000126C0 CryptsvcDllCtrl
+          2    1 00007320 I_WebAuthNCtapDecodeGetAssertionRpcResponse
+          3    2 00005110 I_WebAuthNCtapDecodeMakeCredentialRpcResponse
+          4    3 00006D40 I_WebAuthNCtapEncodeGetAssertionRpcRequest
+          5    4 00004D20 I_WebAuthNCtapEncodeMakeCredentialRpcRequest
+          6    5 0000BA40 WebAuthNAuthenticatorGetAssertion
+          7    6 0000B390 WebAuthNAuthenticatorMakeCredential
+          8    7 000063B0 WebAuthNCtapChangeClientPin
+          9    8 000083D0 WebAuthNCtapChangeClientPinForSelectedDevice
+         10    9 00007B80 WebAuthNCtapFreeSelectedDeviceInformation
+         11    A 00007BA0 WebAuthNCtapGetAssertion
+         12    B 000099B0 WebAuthNCtapGetSupportedTransports
+         13    C 00009170 WebAuthNCtapIsStopSendCommandError
+         14    D 00006620 WebAuthNCtapMakeCredential
+         15    E 00008930 WebAuthNCtapParseAuthenticatorData
+         16    F 00006580 WebAuthNCtapResetDevice
+         17   10 00009330 WebAuthNCtapRpcGetAssertionUserList
+         18   11 000091C0 WebAuthNCtapRpcGetCborCommand
+         19   12 00009720 WebAuthNCtapRpcSelectGetAssertion
+         20   13 000089D0 WebAuthNCtapSendCommand
+         21   14 00006270 WebAuthNCtapSetClientPin
+         22   15 00009E00 WebAuthNCtapStartDeviceChangeNotify
+         23   16 00009E10 WebAuthNCtapStopDeviceChangeNotify
+         24   17 000086A0 WebAuthNCtapVerifyGetAssertion
+         25   18 00011030 WebAuthNDecodeAccountInformation
+         26   19 00011100 WebAuthNDeletePlatformCredentials
+         27   1A 00010F60 WebAuthNEncodeAccountInformation
+         28   1B 00007B80 WebAuthNFreeAssertion
+         29   1C 00004CE0 WebAuthNFreeCredentialAttestation
+         30   1D 00004170 WebAuthNFreeCredentialInfo
+         31   1E 00007B80 WebAuthNFreeDecodedAccountInformation
+         32   1F 00007B80 WebAuthNFreeEncodedAccountInformation
+         33   20 00007B80 WebAuthNFreeUserEntityList
+         34   21 0000B350 WebAuthNGetCoseAlgorithmIdentifier
+         35   22 00009E20 WebAuthNGetCredentialIdFromAuthenticatorData
+         36   23 00009110 WebAuthNGetErrorName
+         37   24 00009140 WebAuthNGetW3CExceptionDOMError
+         38   25 00010D00 WebAuthNIsUserVerifyingPlatformAuthenticatorAvailable
+         39   26 00004180 WebAuthNMakeCredential
+         40   27 00004180 WebAuthNSignAssertion
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        3000 .pdata
+       10000 .rdata
+        1000 .reloc
+        B000 .rsrc
+       44000 .text

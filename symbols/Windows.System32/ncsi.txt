@@ -1,0 +1,39 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\ncsi.dll
+
+File Type: DLL
+
+  Section contains the following exports for ncsi.dll
+
+    00000000 characteristics
+    B8136764 time date stamp
+        0.00 version
+           1 ordinal base
+          10 number of functions
+          10 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00009C50 NcsiAllocateAndGetConnectivityStatusSet
+          2    1 0003B500 NcsiDeregisterConnectivityStatusChange
+          3    2 0000A980 NcsiFreeConnectivityStatusSet
+          4    3 0003B590 NcsiGetCaptivePortalHosts
+          5    4 00019390 NcsiIdentifyUserSpecificProxies
+          6    5 00018080 NcsiNotifySessionChange
+          7    6 0003B850 NcsiPerformRefresh
+          8    7 0003BA30 NcsiPerformReprobe
+          9    8 00020D80 NcsiRegisterConnectivityStatusChange
+         10    9 0001B970 NcsiUpdateClientPresence
+
+  Summary
+
+        4000 .data
+        1000 .didat
+        6000 .pdata
+       17000 .rdata
+        1000 .reloc
+        7000 .rsrc
+       5B000 .text

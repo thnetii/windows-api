@@ -1,0 +1,81 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\feclient.dll
+
+File Type: DLL
+
+  Section contains the following exports for FeClient.dll
+
+    00000000 characteristics
+    7DEB0722 time date stamp
+        0.00 version
+           1 ordinal base
+          52 number of functions
+          52 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00008EF0 EdpAllowFileAccessForProcess
+          2    1 00008E80 EdpContainerizeFile
+          3    2 00008080 EdpCredentialCreate
+          4    3 000083F0 EdpCredentialDelete
+          5    4 000082E0 EdpCredentialExists
+          6    5 000081B0 EdpCredentialQuery
+          7    6 00008ED0 EdpDecontainerizeFile
+          8    7 00008920 EdpDplPolicyEnabledForUser
+          9    8 00008930 EdpDplStartCredServiceIfDplEnabledForUser
+         10    9 00008880 EdpDplUpgradePinInfo
+         11    A 000088B0 EdpDplUpgradeVerifyUser
+         12    B 000088E0 EdpDplUserCredentialsSet
+         13    C 00008910 EdpDplUserUnlockComplete
+         14    D 00008910 EdpDplUserUnlockStart
+         15    E 00008460 EdpFree
+         16    F 00008EB0 EdpGetContainerIdentity
+         17   10 00008820 EdpGetCredServiceState
+         18   11 00013310 EdpIsConsumerDataProtectionEnforced
+         19   12 00009010 EdpIsConsumerDataProtectionSupported
+         20   13 00008F30 EdpPurgeAppLearningEvents
+         21   14 000089B0 EdpQueryCredServiceInfo
+         22   15 00008440 EdpQueryDplEnforcedPolicyOwnerIds
+         23   16 00008420 EdpQueryRevokedPolicyOwnerIds
+         24   17 00008E70 EdpRmsClearKeys
+         25   18 00008BE0 EdpSetCredServiceInfo
+         26   19 00008F10 EdpUnprotectFile
+         27   1A 00008F40 EdpWriteLogSiteLearningEvents
+         28   1B 00006FB0 EfsClientCloseFileRaw
+         29   1C 00008F50 EfsClientCopyFileRaw
+         30   1D 00006C00 EfsClientDecryptFile
+         31   1E 000075F0 EfsClientDuplicateEncryptionInfo
+         32   1F 00006B40 EfsClientEncryptFileEx
+         33   20 00006D10 EfsClientFileEncryptionStatus
+         34   21 00007990 EfsClientFreeKeyInfo
+         35   22 00007540 EfsClientFreeProtectorList
+         36   23 000079E0 EfsClientGetEncryptedFileVersion
+         37   24 00007870 EfsClientGetKeyInfo
+         38   25 00006D90 EfsClientOpenFileRaw
+         39   26 00007390 EfsClientQueryProtectors
+         40   27 00006EB0 EfsClientReadFileRaw
+         41   28 00006F20 EfsClientWriteFileRaw
+         42   29 00006F60 EfsClientWriteFileWithHeaderRaw
+         43   2A 00008F80 EfsReprotectFile
+         44   2B          EfsUtilGetCurrentKey (forwarded to efsutil._EfsUtilGetCurrentKey_Deprecated@16)
+         45   2C 00013500 EfsValidateTokenForConsumer
+         46   2D 00013340 EfsValidateUserForConsumer
+         47   2E 00008E50 FeClClearCaches
+         48   2F 00008DC0 FeClQueryInfo
+         49   30 00006A40 FeClientInitialize
+         50   31 000086E0 GetLockSessionUnwrappedKey
+         51   32 000085A0 GetLockSessionWrappedKey
+         52   33 00008F60 OefsCheckSupport
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        2000 .pdata
+       10000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       2A000 .text

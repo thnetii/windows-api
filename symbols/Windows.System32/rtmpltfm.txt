@@ -1,0 +1,72 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\rtmpltfm.dll
+
+File Type: DLL
+
+  Section contains the following exports for RTMPLTFM.dll
+
+    00000000 characteristics
+    5A974920 time date stamp Thu Mar  1 01:28:16 2018
+        0.00 version
+           1 ordinal base
+          43 number of functions
+          43 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0007AAE0 CreatePlatformInterface
+          2    1 0007AB10 CreatePlatformInterfaceEx
+          3    2 0007AB40 CreatePlatformInterfaceEx2
+          4    3 0007AB70 CreatePlatformInterfaceEx3
+          5    4 0007ABA0 CreatePlatformInterfaceEx4
+          6    5 00306180 CreateVideoTranscoderInterface
+          7    6 00306180 CreateVideoTranscoderInterfaceEx
+          8    7 00183070 opus_decode
+          9    8 00183190 opus_decode_float
+         10    9 00184050 opus_decoder_create
+         11    A 00184110 opus_decoder_ctl
+         12    B 00184270 opus_decoder_destroy
+         13    C 00184280 opus_decoder_get_nb_samples
+         14    D 001842A0 opus_decoder_get_size
+         15    E 001842F0 opus_decoder_init
+         16    F 0017FDF0 opus_encode
+         17   10 0017FF60 opus_encode_float
+         18   11 001820E0 opus_encoder_create
+         19   12 001821C0 opus_encoder_ctl
+         20   13 00184270 opus_encoder_destroy
+         21   14 00182830 opus_encoder_get_size
+         22   15 00182880 opus_encoder_init
+         23   16 001905F0 opus_get_version_string
+         24   17 0018A590 opus_multistream_packet_pad
+         25   18 0018A660 opus_multistream_packet_unpad
+         26   19 00184400 opus_packet_get_bandwidth
+         27   1A 00184450 opus_packet_get_nb_channels
+         28   1B 00184460 opus_packet_get_nb_frames
+         29   1C 001844A0 opus_packet_get_nb_samples
+         30   1D 001844F0 opus_packet_get_samples_per_frame
+         31   1E 0018A7A0 opus_packet_pad
+         32   1F 0018E990 opus_packet_parse
+         33   20 0018A860 opus_packet_unpad
+         34   21 0018ED90 opus_pcm_soft_clip
+         35   22 0018A8F0 opus_repacketizer_cat
+         36   23 0018A9D0 opus_repacketizer_create
+         37   24 00184270 opus_repacketizer_destroy
+         38   25 0018A9F0 opus_repacketizer_get_nb_frames
+         39   26 0018AA00 opus_repacketizer_get_size
+         40   27 0018AA10 opus_repacketizer_init
+         41   28 0018AA20 opus_repacketizer_out
+         42   29 0018AA50 opus_repacketizer_out_range
+         43   2A 00190600 opus_strerror
+
+  Summary
+
+       47000 .data
+       23000 .pdata
+       A9000 .rdata
+        B000 .reloc
+        1000 .rsrc
+      390000 .text
+        1000 .tls

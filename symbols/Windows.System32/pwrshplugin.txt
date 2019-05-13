@@ -1,0 +1,40 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\pwrshplugin.dll
+
+File Type: DLL
+
+  Section contains the following exports for pwrshplugin.dll
+
+    00000000 characteristics
+    65676899 time date stamp
+        0.00 version
+           1 ordinal base
+          12 number of functions
+          12 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00002DD0 GetCLRVersionForPSVersion
+          2    1 00002AF0 PerformWSManPluginReportCompletion
+          3    2 00003290 WSManPluginCommand
+          4    3 00003500 WSManPluginConnect
+          5    4 00003400 WSManPluginReceive
+          6    5 00003310 WSManPluginReleaseCommandContext
+          7    6 00003240 WSManPluginReleaseShellContext
+          8    7 00003370 WSManPluginSend
+          9    8 00003150 WSManPluginShell
+         10    9 00003080 WSManPluginShutdown
+         11    A 00003480 WSManPluginSignal
+         12    B 00002FC0 WSManPluginStartup
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        B000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        A000 .text

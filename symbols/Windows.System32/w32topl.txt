@@ -1,0 +1,107 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\w32topl.dll
+
+File Type: DLL
+
+  Section contains the following exports for W32TOPL.dll
+
+    00000000 characteristics
+    237983FB time date stamp
+        0.00 version
+           1 ordinal base
+          79 number of functions
+          79 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00002050 ToplAddEdgeSetToGraph
+          2    1 00001E50 ToplAddEdgeToGraph
+          3    2 000034C0 ToplDeleteComponents
+          4    3 00003560 ToplDeleteGraphState
+          5    4 00003410 ToplDeleteSpanningTreeEdges
+          6    5 00004DB0 ToplEdgeAssociate
+          7    6 00004B40 ToplEdgeCreate
+          8    7 00004C10 ToplEdgeDestroy
+          9    8 00004E70 ToplEdgeDisassociate
+         10    9 00004B80 ToplEdgeFree
+         11    A 00004D70 ToplEdgeGetFromVertex
+         12    B 00004CC0 ToplEdgeGetToVertex
+         13    C 00004F90 ToplEdgeGetWeight
+         14    D 00004BD0 ToplEdgeInit
+         15    E 00004D00 ToplEdgeSetFromVertex
+         16    F 00004C50 ToplEdgeSetToVertex
+         17   10 00001F70 ToplEdgeSetVtx
+         18   11 00004F30 ToplEdgeSetWeight
+         19   12 00004710 ToplFree
+         20   13 00001A90 ToplGetAlwaysSchedule
+         21   14 00002C30 ToplGetSpanningTreeEdgesForVtx
+         22   15 000054D0 ToplGraphAddVertex
+         23   16 00005390 ToplGraphCreate
+         24   17 00005490 ToplGraphDestroy
+         25   18 000056F0 ToplGraphFindEdgesForMST
+         26   19 000053D0 ToplGraphFree
+         27   1A 00005430 ToplGraphInit
+         28   1B 00005660 ToplGraphMakeRing
+         29   1C 00005620 ToplGraphNumberOfVertices
+         30   1D 00005550 ToplGraphRemoveVertex
+         31   1E 000055C0 ToplGraphSetVertexIter
+         32   1F 00003D40 ToplHeapCreate
+         33   20 00003ED0 ToplHeapDestroy
+         34   21 00003D90 ToplHeapExtractMin
+         35   22 00003DF0 ToplHeapInsert
+         36   23 00003EA0 ToplHeapIsElementOf
+         37   24 00003E90 ToplHeapIsEmpty
+         38   25 000058E0 ToplIsToplException
+         39   26 00004AF0 ToplIterAdvance
+         40   27 00004A20 ToplIterCreate
+         41   28 00004A50 ToplIterFree
+         42   29 00004AA0 ToplIterGetObject
+         43   2A 00004970 ToplListAddElem
+         44   2B 000047D0 ToplListCreate
+         45   2C 00004800 ToplListFree
+         46   2D 000049E0 ToplListNumberOfElements
+         47   2E 00004900 ToplListRemoveElem
+         48   2F 000048A0 ToplListSetIter
+         49   30 00001C20 ToplMakeGraphState
+         50   31 00001AD0 ToplPScheduleValid
+         51   32 000039D0 ToplSTHeapAdd
+         52   33 00003AA0 ToplSTHeapCostReduced
+         53   34 000037E0 ToplSTHeapDestroy
+         54   35 00003A20 ToplSTHeapExtractMin
+         55   36 00003720 ToplSTHeapInit
+         56   37 000012E0 ToplScheduleCacheCreate
+         57   38 00001390 ToplScheduleCacheDestroy
+         58   39 00001710 ToplScheduleCreate
+         59   3A 00001920 ToplScheduleDuration
+         60   3B 000015A0 ToplScheduleExportReadonly
+         61   3C 00001440 ToplScheduleImport
+         62   3D 000018D0 ToplScheduleIsEqual
+         63   3E 00001950 ToplScheduleMaxUnavailable
+         64   3F 000015E0 ToplScheduleMerge
+         65   40 00001580 ToplScheduleNumEntries
+         66   41 00001AA0 ToplScheduleValid
+         67   42 00004530 ToplSetAllocator
+         68   43 00004FD0 ToplVertexCreate
+         69   44 000050B0 ToplVertexDestroy
+         70   45 00005020 ToplVertexFree
+         71   46 00005150 ToplVertexGetId
+         72   47 000051D0 ToplVertexGetInEdge
+         73   48 00005260 ToplVertexGetOutEdge
+         74   49 00005350 ToplVertexGetParent
+         75   4A 00005070 ToplVertexInit
+         76   4B 00005190 ToplVertexNumberOfInEdges
+         77   4C 00005220 ToplVertexNumberOfOutEdges
+         78   4D 00005100 ToplVertexSetId
+         79   4E 000052D0 ToplVertexSetParent
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        6000 .text

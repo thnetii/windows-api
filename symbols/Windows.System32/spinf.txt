@@ -1,0 +1,77 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\spinf.dll
+
+File Type: DLL
+
+  Section contains the following exports for SPINF.dll
+
+    00000000 characteristics
+    262F1EC3 time date stamp
+        0.00 version
+           1 ordinal base
+          49 number of functions
+          49 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0000CAA0 SpInfDetermineInfStyle
+          2    1 0000CBA0 SpInfDoesInfContainString
+          3    2 0000CBE0 SpInfEnumInfSections
+          4    3 0000D760 SpInfFileFullPathFromLineContext
+          5    4 0000DDF0 SpInfFindFirstLine
+          6    5 0000DF60 SpInfFindNextMatchLine
+          7    6 0000D850 SpInfFindValueInSectionList
+          8    7 00003420 SpInfFreeInfFile
+          9    8 0000E400 SpInfGetBestInstallSection
+         10    9 0000E750 SpInfGetBestModelsSection
+         11    A 0000F230 SpInfGetDirIdHandler
+         12    B 0000FC70 SpInfGetDriverVer
+         13    C 0000CD30 SpInfGetField
+         14    D 000107C0 SpInfGetIndirectString
+         15    E 00010AA0 SpInfGetInfInformation
+         16    F 0000E120 SpInfGetInfLineNumber
+         17   10 0000CD90 SpInfGetInfSections
+         18   11 00010D00 SpInfGetInfStyle
+         19   12 00010D10 SpInfGetLanguageId
+         20   13 0000E140 SpInfGetLineByIndex
+         21   14 0000E2D0 SpInfGetLineCount
+         22   15 0000E3E0 SpInfGetLineCountFromSection
+         23   16 0000DA40 SpInfGetLineFieldCount
+         24   17 0000CFC0 SpInfGetLineTextWithKey
+         25   18 00010D20 SpInfGetLogToken
+         26   19 00010D30 SpInfGetNextInf
+         27   1A 00003860 SpInfGetOriginalInfName
+         28   1B 00011C50 SpInfGetPathFromDirId
+         29   1C 00010D40 SpInfGetPrevInf
+         30   1D 0000DAA0 SpInfGetStringField
+         31   1E 0000D3E0 SpInfGetStringsSection
+         32   1F 00011D80 SpInfGetTargetPath
+         33   20 00002FD0 SpInfGetVersionDatum
+         34   21 00003850 SpInfGetVersionNode
+         35   22 00002F20 SpInfIsIndirectString
+         36   23 0000DB60 SpInfLineFromContext
+         37   24 0000E3F0 SpInfLineIsSearchable
+         38   25 000020C0 SpInfLoadInfFile
+         39   26 0000D400 SpInfLocateLine
+         40   27 0000D510 SpInfLocateSection
+         41   28 0000FE00 SpInfLockInf
+         42   29 00010D50 SpInfQueryInfFileInformation
+         43   2A 00010E90 SpInfQueryInfVersionInformation
+         44   2B 0000DBD0 SpInfSectionNameFromLineContext
+         45   2C 00003820 SpInfSetDirIdHandler
+         46   2D 00012430 SpInfSetDirectoryId
+         47   2E 0000DCF0 SpInfSourcePathFromHandle
+         48   2F 0000FE20 SpInfUnlockInf
+         49   30 00010FC0 SpInfVersionNodeFromInfInformation
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        5000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       13000 .text

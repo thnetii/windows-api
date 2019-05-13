@@ -1,0 +1,80 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\atl100.dll
+
+File Type: DLL
+
+  Section contains the following exports for ATL100.DLL
+
+    00000000 characteristics
+    4D5EFDAA time date stamp Sat Feb 19 00:15:54 2011
+        0.00 version
+          10 ordinal base
+          59 number of functions
+          52 number of names
+
+    ordinal hint RVA      name
+
+         10    0 000068C0 AtlAdvise
+         41    1 0000E80C AtlAxAttachControl
+         39    2 0000E0BC AtlAxCreateControl
+         40    3 0000D9C8 AtlAxCreateControlEx
+         59    4 0000DA04 AtlAxCreateControlLic
+         60    5 0000D86C AtlAxCreateControlLicEx
+         38    6 0000E7EC AtlAxCreateDialogA
+         37    7 0000E7CC AtlAxCreateDialogW
+         36    8 0000E7AC AtlAxDialogBoxA
+         35    9 0000E78C AtlAxDialogBoxW
+         47    A 00005158 AtlAxGetControl
+         48    B 0000519C AtlAxGetHost
+         42    C 0000E0F0 AtlAxWinInit
+         64    D 00001248 AtlCallTermFunc
+         15    E 00006A1C AtlComModuleGetClassObject
+         17    F 00004BCC AtlComModuleRegisterClassObjects
+         20   10 00004C40 AtlComModuleRevokeClassObjects
+         22   11 00006800 AtlComModuleUnregisterServer
+         30   12 00001180 AtlComPtrAssign
+         31   13 000046A8 AtlComQIPtrAssign
+         61   14 0000420C AtlCreateRegistrar
+         26   15 00005E94 AtlCreateTargetDC
+         29   16 00005360 AtlDevModeW2A
+         12   17 00004A8C AtlFreeMarshalStream
+         54   18 00006F74 AtlGetObjectSourceInterface
+         68   19 00001008 AtlGetPerUserRegistration
+         34   1A 00004D78 AtlGetVersion
+         27   1B 000051E0 AtlHiMetricToPixel
+         52   1C 000057E4 AtlIPersistPropertyBag_Load
+         53   1D 00005A10 AtlIPersistPropertyBag_Save
+         50   1E 00007674 AtlIPersistStreamInit_Load
+         51   1F 000078B8 AtlIPersistStreamInit_Save
+         32   20 00001024 AtlInternalQueryInterface
+         56   21 000054F8 AtlLoadTypeLib
+         13   22 00004AD8 AtlMarshalPtrInProc
+         58   23 00006C60 AtlModuleAddTermFunc
+         28   24 000052A0 AtlPixelToHiMetric
+         49   25 00006288 AtlRegisterClassCategoriesHelper
+         25   26 00006D78 AtlSetErrorInfo
+         67   27 00004A7C AtlSetPerUserRegistration
+         11   28 00006978 AtlUnadvise
+         14   29 00004B68 AtlUnmarshalPtr
+         23   2A 00004234 AtlUpdateRegistryFromResourceD
+         24   2B 00004C9C AtlWaitWithMessageLoop
+         43   2C 00006B3C AtlWinModuleAddCreateWndData
+         44   2D 00006BD0 AtlWinModuleExtractCreateWndData
+         65   2E 00004D84 AtlWinModuleInit
+         63   2F 00007BB8 AtlWinModuleRegisterClassExA
+         62   30 00007C18 AtlWinModuleRegisterClassExW
+         46   31 0000D0A0 AtlWinModuleRegisterWndClassInfoA
+         45   32 0000D0C8 AtlWinModuleRegisterWndClassInfoW
+         66   33 00005728 AtlWinModuleTerm
+
+  Summary
+
+        4000 .data
+        2000 .pdata
+        7000 .rdata
+        1000 .reloc
+        3000 .rsrc
+       19000 .text

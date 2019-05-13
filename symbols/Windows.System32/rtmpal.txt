@@ -1,0 +1,525 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\rtmpal.dll
+
+File Type: DLL
+
+  Section contains the following exports for RtmPal.dll
+
+    00000000 characteristics
+    5A9747BC time date stamp Thu Mar  1 01:22:20 2018
+        0.00 version
+           1 ordinal base
+         495 number of functions
+         495 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00032E70 ??0CheckedMutex@auf@@QEAA@PEBD_N@Z
+          2    1 00030970 ??0Event@auf@@QEAA@XZ
+          3    2 0003A070 ??0Flag@auf@@QEAA@XZ
+          4    3 000B2460 ??0IPv4@rtnet@@QEAA@XZ
+          5    4 000B2470 ??0IPv6@rtnet@@QEAA@XZ
+          6    5 0003B360 ??0LockfreeQueue@auf@@QEAA@AEAVLockfreeStackPool@1@@Z
+          7    6 00033930 ??0LockfreeStackPool@auf@@QEAA@I@Z
+          8    7 0001CAD0 ??0Path@spl@@QEAA@XZ
+          9    8 000B2980 ??0PortSpecification@rtnet@@QEAA@AEBU?$pair@HH@std@@@Z
+         10    9 000B1970 ??0RefCounter@auf@@QEAA@XZ
+         11    A 000B35B0 ??0SocketConnectOptions@rtnet@@QEAA@XZ
+         12    B 000B3680 ??0SocketOptions@rtnet@@IEAA@XZ
+         13    C 00030A10 ??0ThreadRef@auf@@QEAA@PEBDI_K@Z
+         14    D 00032E90 ??0UncheckedMutex@auf@@QEAA@PEBD_N@Z
+         15    E 00033540 ??0XorshiftRNG@auf@@QEAA@I@Z
+         16    F 00032EB0 ??1CheckedMutex@auf@@QEAA@XZ
+         17   10 00030990 ??1Event@auf@@QEAA@XZ
+         18   11 0003A0A0 ??1Flag@auf@@QEAA@XZ
+         19   12 000B3F60 ??1IPv4@rtnet@@QEAA@XZ
+         20   13 000B3F60 ??1IPv6@rtnet@@QEAA@XZ
+         21   14 0003B480 ??1LockfreeQueue@auf@@QEAA@XZ
+         22   15 00033A40 ??1LockfreeStackPool@auf@@QEAA@XZ
+         23   16 0001CAF0 ??1Path@spl@@QEAA@XZ
+         24   17 000B2A40 ??1PortSpecification@rtnet@@QEAA@XZ
+         25   18 000B3F60 ??1RefCounter@auf@@QEAA@XZ
+         26   19 00030A80 ??1ThreadRef@auf@@QEAA@XZ
+         27   1A 00032EB0 ??1UncheckedMutex@auf@@QEAA@XZ
+         28   1B 000335B0 ??1XorshiftRNG@auf@@QEAA@XZ
+         29   1C 000B2480 ??AIPv4@rtnet@@QEAAAEAE_K@Z
+         30   1D 000B2480 ??AIPv6@rtnet@@QEAAAEAE_K@Z
+         39   1E 000B6E40 ?address@InterfaceAddress@rtnet@@QEBA?AV?$IntrusivePtr@VAddress@rtnet@@@auf@@XZ
+         40   1F 000B9440 ?advance@SimpleBuffer@rtnet@@QEAAX_K@Z
+         41   20 0002EF10 ?allocMem@LockfreePacker@auf@@SAPEAX_K@Z
+         42   21 00033A80 ?allocate@LockfreeStackPool@auf@@QEAAPEAX_K@Z
+         43   22 000B9EE0 ?asIPv4@Address@rtnet@@QEBA_NAEAVIPv4@2@@Z
+         44   23 000B9EF0 ?asIPv6@Address@rtnet@@QEBA_NAEAVIPv6@2@@Z
+         45   24 0001EF00 ?atomicAddI@spl@@YAHPECHH@Z
+         46   25 0001EF00 ?atomicAddL@spl@@YAJPECJJ@Z
+         47   26 00020880 ?callOperatorDelete@spl@@YAXPEAX@Z
+         48   27 0000CA40 ?callOperatorNew@spl@@YAPEAX_K@Z
+         49   28 000BAE60 ?clearDelegate@StreamSocket@rtnet@@QEAAXXZ
+         50   29 0001EF10 ?compareExchangeI@spl@@YA_NPECHHH@Z
+         51   2A 0001EF10 ?compareExchangeL@spl@@YA_NPECJJJ@Z
+         52   2B 0001EF20 ?compareExchangePI@spl@@YA_NPEC_J_J1@Z
+         53   2C 0001EF30 ?compareExchangeValI@spl@@YAHPECHHH@Z
+         54   2D 000B9460 ?complete@SimpleBuffer@rtnet@@QEAAXXZ
+         55   2E 000BDB50 ?connectTCPHostAsync@rtnet@@YA?AV?$IntrusivePtr@VAsyncOperation@auf@@@auf@@PEBDHAEBV?$IntrusivePtr@VThreadPoolTransport@auf@@@3@AEBV?$IntrusivePtr@VIStreamSocketDelegate@rtnet@@@3@PEAUAsyncTag@3@AEBV?$IntrusivePtr@VStreamSocketOptions@rtnet@@@3@AEBV?$IntrusivePtr@VStreamSocketConnectOptions@rtnet@@@3@I@Z
+         56   2F 000BAEA0 ?connectedCore@IStreamSocketDelegate@rtnet@@AEAAXAEBV?$IntrusivePtr@VStreamSocket@rtnet@@@auf@@PEAUAsyncTag@4@@Z
+         57   30 000B2A60 ?create@PortSpecificationImpl@internal@rtnet@@SAPEAV123@AEBU?$pair@HH@std@@@Z
+         58   31 000B2A90 ?create@PortSpecificationImpl@internal@rtnet@@SAPEAV123@AEBV123@@Z
+         59   32 000B2AC0 ?create@PortSpecificationImpl@internal@rtnet@@SAPEAV123@H@Z
+         60   33 000B2B00 ?create@PortSpecificationImpl@internal@rtnet@@SAPEAV123@HH@Z
+         61   34 000B3B30 ?create@SocketConnectOptionsImpl@internal@rtnet@@SAPEAV123@AEBV123@@Z
+         62   35 000B3B60 ?create@SocketConnectOptionsImpl@internal@rtnet@@SAPEAV123@XZ
+         63   36 000B3BB0 ?create@SocketOptionsImpl@internal@rtnet@@SAPEAV123@AEBV123@@Z
+         64   37 000B3BE0 ?create@SocketOptionsImpl@internal@rtnet@@SAPEAV123@XZ
+         65   38 0002D930 ?createStrand@auf@@YA?AV?$IntrusivePtr@VThreadPoolTransport@auf@@@1@W4ThreadPoolPriority@spl@@@Z
+         66   39 0002D9A0 ?createStrandWithTransport@auf@@YA?AV?$IntrusivePtr@VThreadPoolTransport@auf@@@1@AEBV21@@Z
+         67   3A 0002DB80 ?createTimerWithTransport@auf@@YA?AV?$IntrusivePtr@VTimer@auf@@@1@AEBV?$IntrusivePtr@VThreadPoolTransport@auf@@@1@V?$duration@_JU?$ratio@$00$0PECEA@@std@@@chrono@std@@1PEAUCall@1@@Z
+         68   3B 000B9470 ?createWithSize@SimpleBuffer@rtnet@@SA?AV?$IntrusivePtr@VSimpleBuffer@rtnet@@@auf@@_K@Z
+         69   3C 000B94D0 ?data@SimpleBuffer@rtnet@@QEAAPEAXXZ
+         70   3D 000B3F60 ?dataBarrier@spl@@YAXXZ
+         71   3E 000B1980 ?dec@RefCounter@auf@@QEAAKXZ
+         72   3F 0001C170 ?decodeToUtf16@spl@@YA?AV?$basic_string@_SU?$char_traits@_S@std@@V?$allocator@_S@2@@std@@PEBD_K@Z
+         73   40 0001C280 ?decodeUtf8@spl@@YA_KPEAX_KPEBD11@Z
+         74   41 000B1D90 ?decryptWithTempKey@spl@@YA?AV?$vector@DU?$secure_allocator@D@internal@spl@@@std@@PEBD_K@Z
+         75   42 0003B630 ?dequeue@LockfreeQueue@auf@@QEAAPEAXPEA_N@Z
+         76   43 000BF6A0 ?destroyCert@rtnet@@YAXPEAUX509Cert@1@@Z
+         77   44 0000F540 ?directoryCreateRecursive@spl@@YA?AW4FileError@1@AEBVPath@1@H@Z
+         78   45 000BAEB0 ?disconnect@StreamSocket@rtnet@@QEAAXXZ
+         79   46 00030AB0 ?done@ThreadRef@auf@@QEBA_NXZ
+         80   47 000BF6F0 ?dtlsAccept@rtnet@@YAHPEAUTlsSession@1@PEAUTlsBuf@1@1PEAX@Z
+         81   48 000BF760 ?dtlsConnect@rtnet@@YAHPEAUTlsSession@1@PEAUTlsBuf@1@1@Z
+         82   49 000BF7D0 ?dtlsCreate@rtnet@@YAPEAUTlsSession@1@_NPEBUX509Cert@1@@Z
+         83   4A 000BF830 ?dtlsDestroy@rtnet@@YAXPEAUTlsSession@1@@Z
+         84   4B 000BF880 ?dtlsSrtpParametersFreeMkiBuffer@rtnet@@YAXPEAUDtlsSrtpParameters@1@@Z
+         85   4C 000B3C60 ?dtorCore@SocketConnectOptions@rtnet@@AEAAXXZ
+         86   4D 000B3C80 ?dtorCore@SocketOptions@rtnet@@AEAAXXZ
+         87   4E 000B24D0 ?embedIPv4@IPv6@rtnet@@QEAA_NAEBVIPv4@2@_K@Z
+         88   4F 0003B780 ?empty@LockfreeQueue@auf@@QEAA_NXZ
+         89   50 0001EF60 ?encode@BASE64@spl@@SAXPEADPEBX_K@Z
+         90   51 0001C370 ?encodeUtf8@spl@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEBX_K1@Z
+         91   52 0001C4A0 ?encodeUtf8@spl@@YA_KPEAD_KPEBX11@Z
+         92   53 0001F080 ?encodedLength@BASE64@spl@@SA_K_K@Z
+         93   54 000B1F10 ?encryptWithTempKey@spl@@YA?AV?$vector@DU?$secure_allocator@D@internal@spl@@@std@@PEBX_K@Z
+         94   55 0003B7F0 ?enqueue@LockfreeQueue@auf@@QEAA_NPEAX@Z
+         95   56 0001EF40 ?exchangeI@spl@@YAHPECHH@Z
+         96   57 0001EF40 ?exchangeL@spl@@YAJPECJJ@Z
+         97   58 0001EF50 ?exchangePI@spl@@YA_JPEC_J_J@Z
+         98   59 0001D2C0 ?fileClose@spl@@YAXPEAX@Z
+         99   5A 0001D2F0 ?fileFlush@spl@@YA_NPEAX@Z
+        100   5B 0001D310 ?fileOpen@spl@@YAPEAXAEBVPath@1@W4FileSemantics@1@HAEAW4FileError@1@@Z
+        101   5C 0001D720 ?fileRead@spl@@YA_JPEAX0_K@Z
+        102   5D 0001D7C0 ?fileSeekNewReturned@spl@@YA_JPEAX_JW4SeekType@1@@Z
+        103   5E 0000F5E0 ?fileSize@spl@@YA_JPEAX@Z
+        104   5F 0000F630 ?fileTell@spl@@YA_JPEAX@Z
+        105   60 0001D870 ?fileWrite@spl@@YA_JPEAXPEBX_K@Z
+        106   61 0002F580 ?freeMem@LockfreePacker@auf@@SAXPEAX@Z
+        107   62 000B24E0 ?fromBytes@IPv4@rtnet@@QEAA_NPEBE@Z
+        108   63 00134478 ?g_CPUTopology@spl@@3UCPUTopology@1@A
+        109   64 00148280 ?g_aufUp@auf@@3HA
+        110   65 00147CDC ?g_configGlobalLockfreeStackPoolSizeL2@auf@@3IA
+        111   66 00134788 ?g_configMaxObjectWaitUs@auf@@3_KA
+        112   67 001346A0 ?g_configTraceFifoSizeL2@auf@@3IA
+        113   68 00148287 ?g_logObjectCountChanges@auf@@3DA
+        114   69 001482D0 ?g_logObjectIds@auf@@3DA
+        115   6A 00148285 ?g_logObjectIds@internal@auf@@3DA
+        116   6B 001482D1 ?g_logObjectLeaks@auf@@3DA
+        117   6C 00148286 ?g_logObjectLeaks@internal@auf@@3DA
+        118   6D 001482E0 ?g_nextCallId@auf@@3IC
+        119   6E 001482DC ?g_nextObjectId@auf@@3IC
+        120   6F 001482D2 ?g_objectCheckDisabled@auf@@3DA
+        121   70 00147A10 ?g_sysInfo@spl@@3USysinfo@1@A
+        122   71 000BF8B0 ?getCertHash@rtnet@@YA_NPEAUX509Cert@1@W4HashAlgorithm@spl@@PEAUCertHash@1@@Z
+        123   72 000BF920 ?getDtlsSrtpParameters@rtnet@@YA_NPEAUTlsSession@1@PEAUDtlsSrtpParameters@1@@Z
+        124   73 0001DF50 ?getImp@ThreadRef@auf@@AEBAPEAUSplOpaqueUpperLayerThread@@XZ
+        125   74 000B7FF0 ?getNat64Prefixes@rtnet@@YA_NV?$duration@_JU?$ratio@$00$0PECEA@@std@@@chrono@std@@AEAV?$vector@V?$IntrusivePtr@VInterfaceAddress@rtnet@@@auf@@V?$allocator@V?$IntrusivePtr@VInterfaceAddress@rtnet@@@auf@@@std@@@4@@Z
+        126   75 000BF980 ?getSelfSignedCert@rtnet@@YAPEAUX509Cert@1@PEBUX509CertName@1@_J1W4HashAlgorithm@spl@@PEAX@Z
+        127   76 0002DBF0 ?globalThreadPoolTransport2@auf@@YA?AV?$IntrusivePtr@VThreadPoolTransport@auf@@@1@W4ThreadPoolPriority@spl@@@Z
+        128   77 0000C460 ?highPrecisionTimestamp@spl@@YA_KXZ
+        129   78 0002E3B0 ?inc@RefCounter@auf@@QEAAKXZ
+        130   79 0002F7C0 ?initInternal@auf@@YA_NPEAUAufInitTag@1@PEBDI_K@Z
+        131   7A 0002A4C0 ?instantiateLogComponent@internal@auf@@YAPEAVLogComponent@2@PEBD@Z
+        132   7B 0002E310 ?intrusive_ptr_add_ref@auf@@YAXPEBVIReferenceCountable@1@@Z
+        133   7C 0002E340 ?intrusive_ptr_release@auf@@YAXPEBVIReferenceCountable@1@@Z
+        134   7D 000BAEF0 ?io@StreamSocket@rtnet@@QEAA?AV?$IntrusivePtr@VISocketIO@rtnet@@@auf@@XZ
+        135   7E 000309A0 ?isGood@Event@auf@@QEBA_NXZ
+        136   7F 0003B970 ?isGood@LockfreeQueue@auf@@QEBA_NXZ
+        137   80 00011E80 ?isGood@LockfreeStackPool@auf@@QEBA_NXZ
+        138   81 00032DA0 ?isGood@MutexCore@internal@auf@@QEBA_NXZ
+        139   82 00030B90 ?isGood@ThreadRef@auf@@QEBA_NXZ
+        140   83 000BAF40 ?localAddress@StreamSocket@rtnet@@QEAA?AV?$IntrusivePtr@VAddress@rtnet@@@auf@@XZ
+        141   84 0000C4A0 ?localTime@spl@@YAHAEBUHidingSystemTime@1@PEAUtm@@@Z
+        142   85 0000C540 ?localTimestamp@spl@@YA?AUHidingSystemTime@1@XZ
+        143   86 00032DB0 ?lock@MutexCore@internal@auf@@QEAAXXZ
+        144   87 00032DF0 ?lockedByCurrentThread@MutexCore@internal@auf@@QEBA_NXZ
+        145   88 00036B90 ?lockfreeStackPoolDeallocate@auf@@YAXPEAX@Z
+        146   89 0002ADE0 ?log@LogComponent@auf@@QEAAXPEBXIIAEBVLogArgs@2@@Z
+        147   8A 0002AE50 ?log@LogComponent@auf@@QEAAXPEBXIIPEBDAEBVLogArgs@2@@Z
+        148   8B 0000DE90 ?logBackTraceInfo@spl@@YAXXZ
+        149   8C 0002B1C0 ?logFlush@auf@@YAXXZ
+        150   8D 00038430 ?logvln@auf@@YAX_NPEBDPEAD@Z
+        151   8E 000BFF20 ?make@ProxyInfo@rtnet@@SA?AV?$IntrusivePtr@VProxyInfo@rtnet@@@auf@@W4ProxyProtocol@2@PEBDI11@Z
+        152   8F 0000CA80 ?memFree@spl@@YAXPEAX@Z
+        153   90 0000CB00 ?memMalloc@spl@@YAPEAX_K@Z
+        154   91 0000CB10 ?memcpy_s@spl@@YAHPEAX_KPEBX1@Z
+        155   92 0000CBC0 ?memmove_s@spl@@YAHPEAX_KPEBX1@Z
+        156   93 0000CC40 ?memset_s@spl@@YAHPECX_KH1@Z
+        157   94 0000C560 ?msFromHp@spl@@YA_K_J@Z
+        158   95 000BAF90 ?options@StreamSocket@rtnet@@QEBA?AV?$IntrusivePtr@VStreamSocketOptions@rtnet@@@auf@@XZ
+        159   96 0001DA00 ?pathAppendComponent@spl@@YA_NAEAVPath@1@PEBD1@Z
+        160   97 0001DA50 ?pathFromFilename@spl@@YA_NAEAVPath@1@PEBD@Z
+        161   98 0001F560 ?pathInitFromLocation@spl@@YA?AW4FileError@1@AEAVPath@1@AEBUPathLocation@1@@Z
+        162   99 0001DE80 ?pathStringValue@spl@@YAPEBDAEBVPath@1@@Z
+        163   9A 000BAFE0 ?peerAddress@StreamSocket@rtnet@@QEAA?AV?$IntrusivePtr@VAddress@rtnet@@@auf@@XZ
+        164   9B 000BAAA0 ?port@Address@rtnet@@QEBAHXZ
+        165   9C 000309B0 ?post@Event@auf@@QEAAXXZ
+        166   9D 000B88A0 ?prefixLength@InterfaceAddress@rtnet@@QEBA_KXZ
+        167   9E 0003A0B0 ?raise@Flag@auf@@QEAA_NXZ
+        168   9F 000337A0 ?randomBytes@auf@@YA_NPEAX_K@Z
+        169   A0 00033630 ?randomUInt@XorshiftRNG@auf@@QEAAIXZ
+        170   A1 0003A0C0 ?release@Flag@auf@@QEAAXXZ
+        171   A2 00030BD0 ?setDone@ThreadRef@auf@@QEAAX_N@Z
+        172   A3 0002C510 ?setLogComponentDescription@internal@auf@@YAPEBDPEBD0@Z
+        173   A4 0002C550 ?setLogComponentSafe@internal@auf@@YA_NPEBD_N@Z
+        174   A5 000B3E30 ?setNoDelayEnabled@StreamSocketOptions@rtnet@@QEAAX_N@Z
+        175   A6 000BB030 ?setOptions@StreamSocket@rtnet@@QEAA_NAEBV?$IntrusivePtr@VStreamSocketOptions@rtnet@@@auf@@@Z
+        176   A7 000B3E40 ?setPortSpecification@SocketConnectOptions@rtnet@@QEAAXAEBV?$shared_ptr@VPortSpecification@rtnet@@@std@@@Z
+        177   A8 000B3EB0 ?setProxy@SocketConnectOptions@rtnet@@QEAAXW4ProxyPolicy@2@AEBV?$IntrusivePtr@VProxyInfo@rtnet@@@auf@@@Z
+        178   A9 000B3F10 ?setQualityOfServiceDSCP@SocketOptions@rtnet@@QEAAXI@Z
+        179   AA 000B3F70 ?setTlsCertificateVerification@SocketOptions@rtnet@@QEAAX_N@Z
+        180   AB 00031D00 ?size@SimpleBuffer@rtnet@@QEBA_KXZ
+        181   AC 0000C5E0 ?sleep@spl@@YAX_K@Z
+        182   AD 0000CC70 ?snprintf_s@spl@@YAHPEAD_KPEBDZZ
+        183   AE 00031580 ?startImp@auf@@YAXPEAUSplOpaqueUpperLayerThread@@PEAUVarBase@spl@@@Z
+        184   AF 000C0180 ?startTlsAsync@StreamSocket@rtnet@@QEAAXPEBDPEAUAsyncTag@auf@@@Z
+        185   B0 00030BE0 ?stop@ThreadRef@auf@@QEAA_NV?$duration@_JU?$ratio@$00$0PECEA@@std@@@chrono@std@@PEA_J@Z
+        186   B1 0002FC00 ?stopInternal@auf@@YAXPEAUAufInitTag@1@PEBD@Z
+        187   B2 0002DEF0 ?strandId@ThreadPoolTransport@auf@@QEBA_KXZ
+        188   B3 0000CC90 ?strcat_s@spl@@YAHPEAD_KPEBD@Z
+        189   B4 0000CCB0 ?strcpy_s@spl@@YAHPEAD_KPEBD@Z
+        190   B5 0000CD50 ?strlcpy@spl@@YA_KPEADPEBD_K@Z
+        191   B6 0000CE20 ?strnlen_s@spl@@YA_KPEBD_K@Z
+        192   B7 0000E990 ?symbolFromAddress@priv@spl@@YA_NPEBXPEAD_K@Z
+        193   B8 0000F3D0 ?sysInfoCPUInfo@spl@@YAXIAEAUCPUInfo@1@@Z
+        194   B9 00002490 ?thread@pal@msrtc@@YA?AV0std@@$$QEAV?$function@$$A6AXXZ@3@@Z
+        197   BA 000BFAB0 ?tlsBufAlloc@rtnet@@YA_NPEAUTlsBuf@1@K@Z
+        198   BB 000BFB30 ?tlsBufFree@rtnet@@YAXPEAUTlsBuf@1@@Z
+        199   BC 000BFB60 ?tlsBufInit@rtnet@@YAXPEAUTlsBuf@1@@Z
+        200   BD 000BFB70 ?tlsGetPeerCert@rtnet@@YAPEAUX509Cert@1@PEAUTlsSession@1@@Z
+        201   BE 00032E20 ?unlock@MutexCore@internal@auf@@QEAAXXZ
+        202   BF 0000C730 ?utcHpTimestamp@spl@@YA_KXZ
+        203   C0 0000C7C0 ?utcTimestamp@spl@@YA_JXZ
+        204   C1 0000CE40 ?vsnprintf_s@spl@@YAHPEAD_KPEBD0@Z
+        205   C2 000309C0 ?wait@Event@auf@@QEAA_NV?$duration@_JU?$ratio@$00$0PECEA@@std@@@chrono@std@@@Z
+        206   C3 000309D0 ?wait@Event@auf@@QEAA_N_K@Z
+        207   C4 0003A0D0 ?wait@Flag@auf@@QEAA_NV?$duration@_JU?$ratio@$00$0PECEA@@std@@@chrono@std@@@Z
+        208   C5 0002E3B0 ?weak_intrusive_ptr_add_ref@auf@@YAXPEAVWeakAuxiliary@1@@Z
+        209   C6 0002E3C0 ?weak_intrusive_ptr_create@auf@@YAPEAVWeakAuxiliary@1@PEBVIReferenceCountable@1@@Z
+        210   C7 0002E400 ?weak_intrusive_ptr_release@auf@@YAXPEAVWeakAuxiliary@1@@Z
+        211   C8 000BFBC0 ?x509NameDestroy@rtnet@@YAXPEAUX509CertName@1@@Z
+        212   C9 000BFC10 ?x509NameEncode@rtnet@@YAPEAUX509CertName@1@PEBD@Z
+        213   CA          AcquireCredentialsHandleW (forwarded to sspicli.AcquireCredentialsHandleW)
+        214   CB          AcquireSRWLockExclusive (forwarded to api-ms-win-downlevel-kernel32-l1-1-0.AcquireSRWLockExclusive)
+        215   CC          CreateFileA (forwarded to api-ms-win-downlevel-kernel32-l1-1-0.CreateFileA)
+        216   CD          CreateFileW (forwarded to api-ms-win-downlevel-kernel32-l1-1-0.CreateFileW)
+        217   CE          DecodePointer (forwarded to api-ms-win-downlevel-kernel32-l1-1-0.DecodePointer)
+        218   CF          DeleteSecurityContext (forwarded to sspicli.DeleteSecurityContext)
+        219   D0          DisableThreadLibraryCalls (forwarded to api-ms-win-downlevel-kernel32-l1-1-0.DisableThreadLibraryCalls)
+        220   D1          EnableTrace (forwarded to api-ms-win-eventing-legacy-l1-1-0.EnableTrace)
+        221   D2          EncodePointer (forwarded to api-ms-win-downlevel-kernel32-l1-1-0.EncodePointer)
+        222   D3          EnumerateSecurityPackagesW (forwarded to sspicli.EnumerateSecurityPackagesW)
+        223   D4          EventRegister (forwarded to api-ms-win-eventing-provider-l1-1-0.EventRegister)
+        224   D5          EventUnregister (forwarded to api-ms-win-eventing-provider-l1-1-0.EventUnregister)
+        225   D6          EventWrite (forwarded to api-ms-win-eventing-provider-l1-1-0.EventWrite)
+        226   D7          FreeAddrInfoW (forwarded to WS2_32.FreeAddrInfoW)
+        227   D8          FreeContextBuffer (forwarded to sspicli.FreeContextBuffer)
+        228   D9          FreeCredentialsHandle (forwarded to sspicli.FreeCredentialsHandle)
+        229   DA          GetAddrInfoW (forwarded to WS2_32.GetAddrInfoW)
+        230   DB          GetLastError (forwarded to api-ms-win-downlevel-kernel32-l1-1-0.GetLastError)
+        231   DC          GetSystemInfo (forwarded to api-ms-win-downlevel-kernel32-l1-1-0.GetSystemInfo)
+        232   DD          GetTempPathW (forwarded to api-ms-win-downlevel-kernel32-l1-1-0.GetTempPathW)
+        233   DE          GetTraceEnableFlags (forwarded to api-ms-win-eventing-classicprovider-l1-1-0.GetTraceEnableFlags)
+        234   DF          GetTraceEnableLevel (forwarded to api-ms-win-eventing-classicprovider-l1-1-0.GetTraceEnableLevel)
+        235   E0          GetTraceLoggerHandle (forwarded to api-ms-win-eventing-classicprovider-l1-1-0.GetTraceLoggerHandle)
+        236   E1          GetVersionExW (forwarded to api-ms-win-downlevel-kernel32-l1-1-0.GetVersionExW)
+        237   E2          InitializeSListHead (forwarded to api-ms-win-downlevel-kernel32-l1-1-0.InitializeSListHead)
+        238   E3          InitializeSecurityContextW (forwarded to sspicli.InitializeSecurityContextW)
+        239   E4          InterlockedPopEntrySList (forwarded to api-ms-win-downlevel-kernel32-l1-1-0.InterlockedPopEntrySList)
+        240   E5          InterlockedPushEntrySList (forwarded to api-ms-win-downlevel-kernel32-l1-1-0.InterlockedPushEntrySList)
+        241   E6          IsDebuggerPresent (forwarded to api-ms-win-downlevel-kernel32-l1-1-0.IsDebuggerPresent)
+        242   E7          MultiByteToWideChar (forwarded to api-ms-win-downlevel-kernel32-l1-1-0.MultiByteToWideChar)
+        243   E8          OutputDebugStringA (forwarded to api-ms-win-downlevel-kernel32-l1-1-0.OutputDebugStringA)
+        244   E9          OutputDebugStringW (forwarded to api-ms-win-downlevel-kernel32-l1-1-0.OutputDebugStringW)
+        245   EA          QueryPerformanceCounter (forwarded to api-ms-win-downlevel-kernel32-l1-1-0.QueryPerformanceCounter)
+        246   EB          QueryPerformanceFrequency (forwarded to api-ms-win-downlevel-kernel32-l1-1-0.QueryPerformanceFrequency)
+        247   EC          RaiseException (forwarded to api-ms-win-downlevel-kernel32-l1-1-0.RaiseException)
+        248   ED          RegCloseKey (forwarded to api-ms-win-core-registry-l1-1-0.RegCloseKey)
+        249   EE          RegCreateKeyExA (forwarded to api-ms-win-core-registry-l1-1-0.RegCreateKeyExA)
+        250   EF          RegCreateKeyExW (forwarded to api-ms-win-core-registry-l1-1-0.RegCreateKeyExW)
+        251   F0          RegDeleteKeyW (forwarded to api-ms-win-core-registry-l2-1-0.RegDeleteKeyW)
+        252   F1          RegEnumKeyExW (forwarded to api-ms-win-core-registry-l1-1-0.RegEnumKeyExW)
+        253   F2          RegOpenKeyExA (forwarded to api-ms-win-core-registry-l1-1-0.RegOpenKeyExA)
+        254   F3          RegOpenKeyExW (forwarded to api-ms-win-core-registry-l1-1-0.RegOpenKeyExW)
+        255   F4          RegQueryValueExA (forwarded to api-ms-win-core-registry-l1-1-0.RegQueryValueExA)
+        256   F5          RegQueryValueExW (forwarded to api-ms-win-core-registry-l1-1-0.RegQueryValueExW)
+        257   F6          RegSetValueExA (forwarded to api-ms-win-core-registry-l1-1-0.RegSetValueExA)
+        258   F7          RegSetValueExW (forwarded to api-ms-win-core-registry-l1-1-0.RegSetValueExW)
+        259   F8 000072E0 RegisterTraceGuidsW
+        260   F9          ReleaseSRWLockExclusive (forwarded to api-ms-win-downlevel-kernel32-l1-1-0.ReleaseSRWLockExclusive)
+        261   FA 000A1030 RtcPalAccept
+        262   FB 000705D0 RtcPalAcquireSlimLock
+        263   FC 0006E460 RtcPalAesEncrypt
+        264   FD 00022570 RtcPalAllocAlignedMemoryWithTag
+        265   FE 000225E0 RtcPalAllocMemoryWithTag
+        266   FF 0000AE10 RtcPalAllocateWorkItem
+        267  100 00070630 RtcPalBaseCleanup
+        268  101 00070690 RtcPalBaseStartup
+        269  102 000A10A0 RtcPalBind
+        270  103 0006E250 RtcPalCleanup
+        271  104 00070450 RtcPalClearAssertRecords
+        272  105 000A1100 RtcPalCloseSocket
+        273  106 000A21B0 RtcPalCloseSocketIOCP
+        274  107 00070730 RtcPalCloseWaitableHandle
+        275  108 00070740 RtcPalCoWaitForAnyObject
+        276  109 000A1140 RtcPalConnect
+        277  10A 000A11B0 RtcPalConnectToHostname
+         31  10B 00071C60 RtcPalCreateCallContext
+        278  10C 000707F0 RtcPalCreateEvent
+        279  10D 00070830 RtcPalCreateSemaphore
+        280  10E 000A1220 RtcPalCreateSocket
+        281  10F 000A21C0 RtcPalCreateSocketIOCP
+        282  110 0000A820 RtcPalCreateThread
+        283  111 0006E4E0 RtcPalCryptCleanup
+        284  112 0006E580 RtcPalCryptGenRandom
+        285  113 0006E5E0 RtcPalCryptHMACSHA1Create
+        286  114 0006E640 RtcPalCryptHMACSHA1CreateKey
+        287  115 0006E6B0 RtcPalCryptHMACSHA1Destroy
+        288  116 0006E700 RtcPalCryptHMACSHA1DestroyKey
+        289  117 0006E750 RtcPalCryptHMACSHA1DupeContext
+        290  118 0006E7B0 RtcPalCryptHMACSHA1Final
+        291  119 0006E810 RtcPalCryptHMACSHA1Update
+        292  11A 0006E880 RtcPalCryptHMACSHA256Create
+        293  11B 0006E8E0 RtcPalCryptHMACSHA256CreateKey
+        294  11C 0006E950 RtcPalCryptHMACSHA256Destroy
+        295  11D 0006E9A0 RtcPalCryptHMACSHA256DestroyKey
+        296  11E 0006E9F0 RtcPalCryptHMACSHA256DupeContext
+        297  11F 0006EA50 RtcPalCryptHMACSHA256Final
+        298  120 0006EAB0 RtcPalCryptHMACSHA256Update
+        299  121 0006EB20 RtcPalCryptMD5Create
+        300  122 0006EB70 RtcPalCryptMD5Destroy
+        301  123 0006EBC0 RtcPalCryptMD5Final
+        302  124 0006EC20 RtcPalCryptMD5Update
+        303  125 0006EC90 RtcPalCryptStartup
+        304  126 0000BE60 RtcPalDeinitTracing
+        305  127 000B3F60 RtcPalDeleteSlimLock
+        306  128 0006ED90 RtcPalDestroyAesKey
+        307  129 0003C460 RtcPalDeviceAudioGetGlitchInfo
+        308  12A 0003C530 RtcPalDeviceAudioGetMetrics
+        309  12B 0003C6B0 RtcPalDeviceAudioGetProcessingFeatures
+        310  12C 0003C7B0 RtcPalDeviceAudioGetQueuedBytes
+        311  12D 0003C860 RtcPalDeviceAudioGetSupportedProcessingCapacity
+        312  12E 0003C990 RtcPalDeviceAudioLockBuffer
+        313  12F 000103B0 RtcPalDeviceAudioReset
+        314  130 0003CA30 RtcPalDeviceAudioSetActiveEndpoint
+        315  131 0003CA30 RtcPalDeviceAudioSetProcessingFeatures
+        316  132 0003CA40 RtcPalDeviceAudioStart
+        317  133 0003CBA0 RtcPalDeviceAudioStop
+        318  134 0003CD00 RtcPalDeviceAudioUnlockBuffer
+        319  135 0003CDB0 RtcPalDeviceErrorCodeFromHResult
+        320  136 0003D030 RtcPalDeviceIsErrorCodeRecoverable
+        321  137 0003D080 RtcPalDevicePlatformClose
+        322  138 0003D1E0 RtcPalDevicePlatformCloseDevice
+        323  139 0003D380 RtcPalDevicePlatformCloseHIDContext
+        324  13A 0003D3F0 RtcPalDevicePlatformCompareDeviceId
+        325  13B 0003D4C0 RtcPalDevicePlatformCreateDeviceId
+        326  13C 0003D5A0 RtcPalDevicePlatformDeviceRegisterNotification
+        327  13D 0003D700 RtcPalDevicePlatformDisposeDeviceId
+        328  13E 0003D780 RtcPalDevicePlatformDuplicateDeviceId
+        329  13F 0003D820 RtcPalDevicePlatformEnableAudio
+        330  140 0003D970 RtcPalDevicePlatformEnumDevices
+        331  141 0003DA90 RtcPalDevicePlatformGetAudioCertifiedListId
+        332  142 0003DBB0 RtcPalDevicePlatformGetAutoBoostControlEnabled
+        333  143 0003DCD0 RtcPalDevicePlatformGetDeviceList
+        334  144 0003DDE0 RtcPalDevicePlatformGetHIDInformation
+        335  145 0003DE80 RtcPalDevicePlatformGetMediaExtension
+        336  146 0003DFD0 RtcPalDevicePlatformGetVolumeInfo
+        337  147 0003E190 RtcPalDevicePlatformGetVolumeInfoByDeviceHandle
+        338  148 0003E220 RtcPalDevicePlatformIsSamePhysicalDevice
+        339  149 0003E3A0 RtcPalDevicePlatformOpen
+        340  14A 0003E5F0 RtcPalDevicePlatformOpenAudioDevice
+        341  14B 0003E7F0 RtcPalDevicePlatformOpenAudioLoopbackDevice
+        342  14C 0003E990 RtcPalDevicePlatformOpenHIDContext
+        343  14D 0003EA70 RtcPalDevicePlatformRegisterNotification
+        344  14E 0003EB70 RtcPalDevicePlatformSetAutoBoostControlEnabled
+        345  14F 0003EC90 RtcPalDevicePlatformSetHIDInformation
+        346  150 0003ED20 RtcPalDevicePlatformSetState
+        347  151 0003EE80 RtcPalDevicePlatformSetVolumeInfo
+        348  152 0003F0F0 RtcPalDevicePlatformUnregisterNotification
+        349  153 000722E0 RtcPalEnableCallContextTracingControl
+        350  154 00007040 RtcPalEnableEtwTracing
+        351  155 00070CF0 RtcPalEnableRDTSCTime
+        352  156 00007260 RtcPalEnableTracing
+        353  157 0000BE90 RtcPalFlushTracing
+        354  158 000A3BA0 RtcPalFreeIfAddrs
+        355  159 000225F0 RtcPalFreeMemoryWithTag
+        356  15A 0000AF00 RtcPalFreeWorkItem
+        357  15B 0006E270 RtcPalGetADSPConfig
+        358  15C 0006E330 RtcPalGetADSPLogFolder
+         32  15D 0009D750 RtcPalGetAllEcsSettings
+        359  15E 00070460 RtcPalGetAssertRecords
+        360  15F 000A3BD0 RtcPalGetBestSourceAddress
+        361  160 000A4230 RtcPalGetComputerNameW
+        362  161 00070070 RtcPalGetDataConvSignature
+         33  162 0009D810 RtcPalGetEcsSetting
+        363  163 0000A970 RtcPalGetExitCodeThread
+        364  164 0006EDE0 RtcPalGetFipsComplianceMode
+        365  165 000A4590 RtcPalGetHostCName
+        366  166 000A3BE0 RtcPalGetIfAddrs
+        367  167 0000A550 RtcPalGetLastError
+        368  168 00070EF0 RtcPalGetLocalStateFolderW
+        369  169 000103B0 RtcPalGetMachineInfo
+        370  16A 000710B0 RtcPalGetOSName
+        371  16B 000A12D0 RtcPalGetPeerName
+        372  16C 00070710 RtcPalGetPlatformProfile
+        373  16D 00070F60 RtcPalGetPrivateMemoryUsageInMB
+        374  16E 000A1330 RtcPalGetSockName
+        375  16F 000A2230 RtcPalGetSocketIOCPQueuedCompletionStatus
+        376  170 00057350 RtcPalGetSystemConfigurationInfo
+        377  171 000AF350 RtcPalGetSystemMetricsTemplate
+        378  172 00070D60 RtcPalGetTimeDouble
+        379  173 00070DA0 RtcPalGetTimeLongIn100ns
+        380  174 00070ED0 RtcPalGetTimeLongIn100nsFast
+        381  175 0000BEA0 RtcPalGetTracingPath
+        382  176 00071210 RtcPalGetUserName
+        383  177 00071490 RtcPalGetWinSATVideoEncodeScore
+        384  178 000AF8B0 RtcPalInitCollectSystemMetrics
+        385  179 0000A980 RtcPalInitThreadAttr
+        386  17A 0000BED0 RtcPalInitTracing
+        387  17B 000714F0 RtcPalInitializeCriticalSection
+        388  17C 00071520 RtcPalInitializeCriticalSectionAndSpinCount
+        389  17D 000705E0 RtcPalInitializeSlimLock
+        390  17E 00070480 RtcPalIsAssertTraceEnabled
+        391  17F 000A1390 RtcPalIsAutomaticProxyTraversalSupported
+        392  180 000722F0 RtcPalIsCallContextTracingControlEnabled
+        393  181 00007280 RtcPalIsEtwTracingEnabled
+        394  182 00071530 RtcPalIsLaptop
+        395  183 00007290 RtcPalIsTracingEnabled
+        396  184 000A13D0 RtcPalListen
+        397  185 000065B0 RtcPalLoadLibrary
+        398  186 000066E0 RtcPalLoadSystem32Library
+        399  187 000B1570 RtcPalMFHasDXGI
+        400  188 000B1620 RtcPalMFHasSourceReader
+        401  189 000A48F0 RtcPalNetAddressToStringA
+        402  18A 000A4DF0 RtcPalNetAddressToStringW
+        403  18B 000A5320 RtcPalNetCleanup
+        404  18C 000A5370 RtcPalNetStartup
+        405  18D 000A53E0 RtcPalNetStringToIPAddressA
+        406  18E 000A5F10 RtcPalNetStringToIPAddressW
+        407  18F 000A5450 RtcPalNetStringToIPv4AddressA
+        408  190 000A5F80 RtcPalNetStringToIPv4AddressW
+        409  191 000A5470 RtcPalNetStringToIPv6AddressA
+        410  192 000A5FA0 RtcPalNetStringToIPv6AddressW
+        411  193 0000A560 RtcPalPerfCounterToNanoseconds
+        412  194 0000A5C0 RtcPalPerfCounterToSeconds
+         34  195 000B14B0 RtcPalPopulateNetworkInterfaceIdForTraceLoggingEvent
+        413  196 000A2260 RtcPalPostSocketIOCPQueuedCompletionStatus
+        414  197 0000A5F0 RtcPalQueryPerformanceCounter
+        415  198 0000AF30 RtcPalQueueWorkItem
+        416  199 000A1410 RtcPalRecv
+        417  19A 000A1490 RtcPalRecvFrom
+        418  19B 000B3F60 RtcPalRefreshMemoryTrackerCallStack
+        419  19C          RtcPalRegCloseKey (forwarded to api-ms-win-core-registry-l1-1-0.RegCloseKey)
+        420  19D          RtcPalRegCreateKeyExA (forwarded to api-ms-win-core-registry-l1-1-0.RegCreateKeyExA)
+        421  19E          RtcPalRegCreateKeyExW (forwarded to api-ms-win-core-registry-l1-1-0.RegCreateKeyExW)
+        422  19F          RtcPalRegDeleteKeyW (forwarded to api-ms-win-core-registry-l2-1-0.RegDeleteKeyW)
+        423  1A0          RtcPalRegOpenKeyExA (forwarded to api-ms-win-core-registry-l1-1-0.RegOpenKeyExA)
+        424  1A1          RtcPalRegOpenKeyExW (forwarded to api-ms-win-core-registry-l1-1-0.RegOpenKeyExW)
+        425  1A2          RtcPalRegQueryValueExA (forwarded to api-ms-win-core-registry-l1-1-0.RegQueryValueExA)
+        426  1A3          RtcPalRegQueryValueExW (forwarded to api-ms-win-core-registry-l1-1-0.RegQueryValueExW)
+        427  1A4          RtcPalRegSetValueExA (forwarded to api-ms-win-core-registry-l1-1-0.RegSetValueExA)
+        428  1A5          RtcPalRegSetValueExW (forwarded to api-ms-win-core-registry-l1-1-0.RegSetValueExW)
+        429  1A6 000A2290 RtcPalRegisterSocket
+        430  1A7 000072A0 RtcPalRegisterTraceGuids
+        431  1A8 00070860 RtcPalReleaseSemaphore
+        432  1A9 00070600 RtcPalReleaseSlimLock
+        433  1AA 000704A0 RtcPalReportAssert
+         35  1AB 0009D930 RtcPalResetAllEcsSettings
+        434  1AC 00070810 RtcPalResetEvent
+        435  1AD 0006EE10 RtcPalSecureZeroMemory
+        436  1AE 000A1500 RtcPalSend
+        437  1AF 000A1580 RtcPalSendTo
+        438  1B0 0006EE30 RtcPalSetAesKey
+         36  1B1 0009D9E0 RtcPalSetEcsSetting
+         37  1B2 0009DAB0 RtcPalSetEcsSettingById
+        439  1B3 00070820 RtcPalSetEvent
+        440  1B4 0000A600 RtcPalSetLastError
+        441  1B5 0000B6D0 RtcPalSetLogPath
+        442  1B6 00070720 RtcPalSetPlatformProfile
+        443  1B7 0000AAB0 RtcPalSetSchedulerPolicy
+        444  1B8 000A15F0 RtcPalSocketEnableLowLatency
+        445  1B9 000A1630 RtcPalSocketSetBroadcast
+        446  1BA 000A1680 RtcPalSocketSetLinger
+        447  1BB 000A16C0 RtcPalSocketSetNonBlockingMode
+        448  1BC 000103B0 RtcPalSocketSetQoSDSCP
+        449  1BD 000A1710 RtcPalSocketSetRecvBufSize
+        450  1BE 000A1750 RtcPalSocketSetSendBufSize
+        451  1BF 000A1790 RtcPalSocketSetTcpNoDelay
+        452  1C0 000AF990 RtcPalStartCollectSystemMetrics
+        453  1C1 0006E260 RtcPalStartup
+        454  1C2 000AF9A0 RtcPalStopCollectSystemMetrics
+        455  1C3 00071550 RtcPalTaskQueueCreate
+        456  1C4 00071570 RtcPalTaskQueueDequeue
+        457  1C5 00071590 RtcPalTaskQueueDestroy
+        458  1C6 000715A0 RtcPalTaskQueueEnqueue
+        459  1C7 00007700 RtcPalTraceCondIfTrue
+         38  1C8 000B3F60 RtcPalTraceLoggingWrite
+        460  1C9 000A17E0 RtcPalTraceRt
+        461  1CA 00070610 RtcPalTryAcquireSlimLock
+        462  1CB 000AF9B0 RtcPalUninitCollectSystemMetrics
+        463  1CC 0000AF40 RtcPalWaitAndCancelPendingCallback
+        464  1CD 000707B0 RtcPalWaitForAllThreads
+        465  1CE 000707D0 RtcPalWaitForAnyObject
+        466  1CF 000707E0 RtcPalWaitForSingleObject
+        467  1D0 000A6AF0 RtcPalWlanEnterMediaStreamingMode
+        468  1D1 000B3F60 RtcPalWlanLeaveMediaStreamingMode
+        469  1D2          SetLastError (forwarded to api-ms-win-downlevel-kernel32-l1-1-0.SetLastError)
+        470  1D3          TraceMessage (forwarded to api-ms-win-eventing-classicprovider-l1-1-0.TraceMessage)
+        471  1D4          UnregisterTraceGuids (forwarded to api-ms-win-eventing-classicprovider-l1-1-0.UnregisterTraceGuids)
+        472  1D5          WideCharToMultiByte (forwarded to api-ms-win-downlevel-kernel32-l1-1-0.WideCharToMultiByte)
+        473  1D6 00134CD0 __imp_?PL_TEMP_DIR@spl@@3UPathLocation@1@A
+        474  1D7 000384E0 aufLogHookInstall
+        475  1D8 000384F0 aufLogHookRemove
+        476  1D9 000B1990 auf_internal_log
+        477  1DA 000B1A30 auf_internal_log_obfuscated
+        478  1DB 000B1AD0 auf_logcomponent_isenabled
+        479  1DC 001347C0 g_aufLogChannel
+        480  1DD 00148410 g_aufLogNumHooks
+        481  1DE          lstrcmpW (forwarded to api-ms-win-downlevel-kernel32-l1-1-0.lstrcmpW)
+        482  1DF          lstrcmpiW (forwarded to api-ms-win-downlevel-kernel32-l1-1-0.lstrcmpiW)
+        483  1E0          lstrlenA (forwarded to api-ms-win-downlevel-kernel32-l1-1-0.lstrlenA)
+        484  1E1          lstrlenW (forwarded to api-ms-win-downlevel-kernel32-l1-1-0.lstrlenW)
+        485  1E2          rtcpal_freeaddrinfo (forwarded to WS2_32.freeaddrinfo)
+        486  1E3          rtcpal_getaddrinfo (forwarded to WS2_32.getaddrinfo)
+        487  1E4          rtcpal_inet_addr (forwarded to WS2_32.inet_addr)
+        488  1E5          rtcpal_inet_ntoa (forwarded to WS2_32.inet_ntoa)
+        489  1E6 000A1800 rtcpal_recv
+        490  1E7 000A1820 rtcpal_recvfrom
+        491  1E8 000A18A0 rtcpal_send
+        492  1E9 000A18C0 rtcpal_sendto
+        493  1EA 000117B0 spl_pii_OmitS
+        494  1EB 000117D0 spl_pii_OmitW
+        495  1EC 000117E0 spl_pii_UserIdW
+        195  1ED 000106E0 threadCurrentId
+        196  1EE 000B3F60 threadYield
+
+  Summary
+
+       1F000 .data
+        1000 .didat
+        E000 .pdata
+       46000 .rdata
+        3000 .reloc
+        1000 .rsrc
+       ED000 .text
+        1000 .tls

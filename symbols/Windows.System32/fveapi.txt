@@ -1,0 +1,168 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\fveapi.dll
+
+File Type: DLL
+
+  Section contains the following exports for FVEAPI.dll
+
+    00000000 characteristics
+    CA1424A5 time date stamp
+        0.00 version
+           1 ordinal base
+         139 number of functions
+         139 number of names
+
+    ordinal hint RVA      name
+
+         10    0 000025D0 FveAddAuthMethodInformation
+         11    1 0003ABE0 FveAddAuthMethodSid
+         12    2 0001A590 FveApplyGroupPolicy
+         13    3 0001A620 FveApplyNkpCertChanges
+         14    4 0003AD40 FveAttemptAutoUnlock
+         15    5 00039480 FveAuthElementFromPassPhraseW
+         16    6 00039540 FveAuthElementFromPinW
+         17    7 00001AB0 FveAuthElementFromRecoveryPasswordW
+         18    8 00039620 FveAuthElementGetKeyFileNameW
+         19    9 00039700 FveAuthElementReadExternalKeyW
+         20    A 00001A10 FveAuthElementToRecoveryPasswordW
+         21    B 000397F0 FveAuthElementWriteExternalKeyW
+         22    C 0003AE30 FveBackupRecoveryInformationToAD
+         23    D 0003AF20 FveBindDataVolume
+         24    E 000398B0 FveCanPinExceptionPolicyBeApplied
+         25    F 0001F8F0 FveCanStandardUsersChangePassphraseByProxy
+         26   10 0001F890 FveCanStandardUsersChangePin
+         27   11 0003B030 FveCheckPassphrasePolicy
+         28   12 0003B110 FveCheckTpmCapability
+         29   13 000398C0 FveClearUserFlags
+         30   14 00024AC0 FveCloseHandle
+         31   15 00024A40 FveCloseVolume
+         32   16 0001DAF0 FveCommitChanges
+         33   17 000398D0 FveConversionDecrypt
+         34   18 000398E0 FveConversionDecryptEx
+         35   19 0003B1F0 FveConversionEncrypt
+         36   1A 0001A4F0 FveConversionEncryptEx
+         37   1B 0003B280 FveConversionEncryptPendingReboot
+         38   1C 0003B290 FveConversionEncryptPendingRebootEx
+         39   1D 000399E0 FveConversionPause
+         40   1E 00039AD0 FveConversionResume
+         41   1F 00039BC0 FveConversionStop
+         42   20 00039BD0 FveConversionStopEx
+         43   21 0003B370 FveDecrementClearKeyCounter
+         44   22 0003B440 FveDeleteAuthMethod
+         45   23 0003B550 FveDeleteDeviceEncryptionOptOutForVolumeW
+         46   24 0003B690 FveDisableDeviceLockoutState
+         47   25 00039CD0 FveDiscardChanges
+         48   26 0003B770 FveDraCertPresentInRegistry
+         49   27 00039DB0 FveEnableRawAccess
+         50   28 00039DC0 FveEnableRawAccessEx
+         51   29 00039EB0 FveEnableRawAccessW
+         52   2A 000066C0 FveEraseDrive
+         53   2B 0003B820 FveEscrowEncryptedRecoveryKeyForRetailUnlock
+         54   2C 0000E7A0 FveFindFirstVolume
+         55   2D 0000EDC0 FveFindNextVolume
+         56   2E 00009800 FveFlagsToProtectorType
+         57   2F 0003B8E0 FveGenerateNbp
+         58   30 0001B330 FveGenerateNkpSessionKeys
+         59   31 0001A300 FveGetAllowKeyExport
+         60   32 0001C190 FveGetAuthMethodGuids
+         61   33 0001BF80 FveGetAuthMethodInformation
+         62   34 0003B9D0 FveGetAuthMethodSid
+         63   35 0003BAD0 FveGetAuthMethodSidInformation
+         64   36 0001D2E0 FveGetClearKeyCounter
+         65   37 00039FB0 FveGetDataSet
+         66   38 0003BC80 FveGetDescriptionW
+         67   39 0003BD90 FveGetDeviceLockoutData
+         68   3A 0003BE80 FveGetExternalKeyBlob
+         69   3B 0003A0C0 FveGetFipsAllowDisabled
+         70   3C 0000E660 FveGetFveMethod
+         71   3D 0003A170 FveGetFveMethodEDrv
+         72   3E 0000FCC0 FveGetFveMethodEx
+         73   3F 0000A9E0 FveGetIdentificationFieldW
+         74   40 0000FBC0 FveGetIdentity
+         75   41 0003A270 FveGetKeyPackage
+         76   42 00025E40 FveGetSecureBootBindingState
+         77   43 000220F0 FveGetStatus
+         78   44 0003A390 FveGetStatusW
+         79   45 000398C0 FveGetUserFlags
+         80   46 0000F320 FveGetVolumeNameW
+         81   47 0003BF40 FveInitVolume
+         82   48 000026E0 FveInitVolumeEx
+         83   49 0003BFE0 FveInitializeDeviceEncryption
+         84   4A 0003C230 FveInitializeDeviceEncryption2
+         85   4B 0003C3E0 FveIsAnyDataVolumeBoundToOSVolume
+         86   4C 0000B180 FveIsBoundDataVolume
+         87   4D 0003C4D0 FveIsBoundDataVolumeToOSVolume
+         88   4E 0003C5F0 FveIsDeviceLockable
+         89   4F 0003C6F0 FveIsDeviceLockedOut
+         90   50 0003A4B0 FveIsHardwareReadyForConversion
+         91   51 0003C7D0 FveIsHybridVolume
+         92   52 0003C8E0 FveIsHybridVolumeW
+         93   53 0003A540 FveIsPassphraseCompatibleW
+         94   54 0003A610 FveIsRecoveryPasswordGroupValidW
+         95   55 00001110 FveIsRecoveryPasswordValidW
+         96   56 0003C9E0 FveIsSchemaExtInstalled
+         97   57 0001E3B0 FveIsVolumeEncryptable
+         98   58 0003CA90 FveKeyManagement
+         99   59 0003CBD0 FveLockDevice
+        100   5A 000063E0 FveLockVolume
+        101   5B 0003CCA0 FveLogRecoveryReason
+        102   5C 0003CDA0 FveNeedsDiscoveryVolumeUpdate
+        103   5D 00006910 FveNotifyVolumeAfterFormat
+        104   5E 0000F580 FveOpenVolumeByHandle
+        105   5F 00020930 FveOpenVolumeExW
+        106   60 00020900 FveOpenVolumeW
+        107   61 0001C3F0 FveProtectorTypeToFlags
+        108   62 0003CEB0 FveQuery
+        109   63 0001EB20 FveQueryDeviceEncryptionSupport
+        110   64 0003CF70 FveRecalculateOffsetsAndMoveMetadata
+        111   65 0001C740 FveRegenerateNbpSessionKey
+        112   66 0003D090 FveResetTpmDictionaryAttackParameters
+        113   67 0003A6D0 FveRevertVolume
+        114   68 0003A7A0 FveSaveRecoveryPasswordBackupFlag
+        115   69 0003D1D0 FveServiceDiscoveryVolume
+        116   6A 0001A240 FveSetAllowKeyExport
+        117   6B 0003D2A0 FveSetDescriptionW
+        118   6C 00025DE0 FveSetFipsAllowDisabled
+        119   6D 0001D9A0 FveSetFveMethod
+        120   6E 0003D3A0 FveSetIdentificationFieldW
+        121   6F 000398C0 FveSetUserFlags
+        122   70 0001C510 FveSysClearUserFlags
+        123   71 0001D280 FveSysCloseVolume
+        124   72 0001C050 FveSysGetUserFlags
+        125   73 0003D4B0 FveSysOpenVolumeW
+        126   74 0001C5B0 FveSysSetUserFlags
+        127   75 0003D560 FveUnbindAllDataVolumeFromOSVolume
+        128   76 0003DA40 FveUnbindDataVolume
+        129   77 0001A430 FveUnlockVolume
+        130   78 0003DB20 FveUnlockVolumeAuthMethodSid
+        131   79 0003DC10 FveUnlockVolumeWithAccessMode
+        132   7A 0001CD00 FveUpdateBandIdBcd
+        133   7B 0003DD50 FveUpdateDeviceLockoutState
+        134   7C 0003DE00 FveUpdateDeviceLockoutStateEx
+        135   7D 0003DF10 FveUpdatePinW
+        136   7E 0003A890 FveUpgradeVolume
+        137   7F 0003E020 FveValidateDeviceLockoutState
+        138   80 0003E0F0 FveValidateExistingPassphraseW
+        139   81 0003E200 FveValidateExistingPinW
+          1   82 00039370 InternalFveIsVolumeEncrypted
+          2   83 00066E00 NgscbCheckDmaSecurity
+          3   84 00066EE0 NgscbCheckHSTIPrerequisitesVerified
+          4   85 0001F170 NgscbCheckIsAOACDevice
+          5   86 0001F010 NgscbCheckIsHSTIVerified
+          6   87 000681B0 NgscbCheckPreventDeviceEncryption
+          7   88 00068270 NgscbCheckPreventDeviceEncryptionForAad
+          8   89 000690D0 NgscbGetWinReConfiguration
+          9   8A 0001F260 NgscbIsHostOsOnRoamableDrive
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        7000 .pdata
+       30000 .rdata
+        2000 .reloc
+        6000 .rsrc
+       9E000 .text

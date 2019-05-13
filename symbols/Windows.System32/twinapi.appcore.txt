@@ -1,0 +1,170 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\twinapi.appcore.dll
+
+File Type: DLL
+
+  Section contains the following exports for twinapi.appcore.dll
+
+    00000000 characteristics
+    270A22EB time date stamp
+        0.00 version
+           1 ordinal base
+         500 number of functions
+         127 number of names
+
+    ordinal hint RVA      name
+
+         15    0 001543B0 BiActivateWorkItemForUser
+         16    1 00154470 BiChangeApplicationStateForPackageName
+         17    2 0001C2F0 BiChangeApplicationStateForPackageNameForUser
+         18    3 00154490 BiChangeApplicationStateForPsmKey
+         19    4 001544B0 BiChangeApplicationStateForPsmKeyForUser
+         20    5 000607B0 BiChangeSessionState
+         21    6 000607C0 BiChangeUserState
+         22    7 001545D0 BiEnumerateWorkItemsForPackageNameAndUser
+         23    8 001546C0 BiGetActiveBackgroundTasksEvent
+         24    9 001546E0 BiGetActiveBackgroundTasksEventForUser
+         25    A 00060860 BiGetCancellationTimeoutInMs
+         26    B 00154840 BiIsApplicationTerminateSensitive
+         27    C 00154860 BiIsApplicationTerminateSensitiveForUser
+         28    D 00069E80 BiNotifyNewSession
+         29    E 000605C0 BiNotifyNewSessionComplete
+         30    F 00069DE0 BiNotifyNewUser
+         31   10 000666A0 BiPlmFreeMemory
+         32   11 00154ED0 BiPtActivateDeferredWorkItem
+         33   12 00154F60 BiPtActivateInBackground
+         34   13 00154FD0 BiPtActivateInBackgroundEx
+         35   14 00155200 BiPtActivateWorkItem
+         36   15 0006A3D0 BiPtAssociateActivationProxy
+         37   16 001552A0 BiPtAssociateApplicationEntryPoint
+         38   17 00155410 BiPtAssociateApplicationExtensionClass
+         39   18 00155460 BiPtCancelWorkItem
+         40   19 00155500 BiPtCancelWorkItemEx
+         41   1A 001555B0 BiPtCreateEvent
+         42   1B 0006A4D0 BiPtCreateEventForApp
+         43   1C 001556D0 BiPtCreateEventForPackageName
+         44   1D 0006B650 BiPtDeleteEvent
+         45   1E 001557E0 BiPtDisableWorkItem
+         46   1F 00155890 BiPtDisassociateWorkItem
+         47   20 001558A0 BiPtDisassociateWorkItemEx
+         48   21 00155960 BiPtEnableWorkItem
+         49   22 0006A6D0 BiPtEnumerateBrokeredEvents
+         50   23 00155A00 BiPtEnumerateBrokeredEventsEx
+         51   24 00155B10 BiPtEnumerateWorkItemsForPackageName
+         52   25 00155C10 BiPtEnumerateWorkItemsForPackageNameEx
+         53   26 000666A0 BiPtFreeMemory
+         54   27 00155D20 BiPtGetStatusStateNameFromBrokerEventId
+         55   28 00155DD0 BiPtQueryBrokerEventId
+         56   29 0006A630 BiPtQueryBrokeredEvent
+         57   2A 0006A5B0 BiPtQuerySystemStateBroadcastChannels
+         58   2B 00155E60 BiPtQueryWorkItem
+         59   2C 00155F20 BiPtQueryWorkItemEx
+         60   2D 0001C410 BiPtQueryWorkItemStatusStateName
+         61   2E 00155FF0 BiPtSignalEvent
+         62   2F 00156020 BiPtSignalEventEx
+         63   30 00156100 BiPtSignalMultipleEvents
+         64   31 001561E0 BiPtSignalTriggerEvent
+         65   32 00156210 BiPtSignalTriggerEventEx
+         66   33 00154980 BiQueryWorkItemForUser
+         67   34 00154A70 BiResetActiveSessionForPackage
+         68   35 00154A80 BiResetActiveUserForPackage
+         69   36 00154B20 BiSetActiveSessionForPackage
+         70   37 00154B30 BiSetActiveUserForPackage
+         71   38 00154BE0 BiTerminateApplicationHost
+         72   39 00154C10 BiTerminateApplicationHost2
+         73   3A 00154C40 BiTerminateApplicationHostForUser
+         74   3B 00154D70 BiUpdateBackgroundAccessApplicationsForUser
+         75   3C 00154E50 BiUpdateLockScreenApplications
+         76   3D 0005F7F0 DllCanUnloadNow
+         77   3E 000524B0 DllGetActivationFactory
+         78   3F 00053DC0 DllGetClassObject
+         79   40 00156B20 PsmApplyTaskCompletion
+         80   41 00156CC0 PsmBlockAppStateChangeCompletion
+         81   42 00156D80 PsmDisconnect
+         82   43 00156C00 PsmGetSessionInfo
+         83   44 0006A9E0 PsmInitializeExtension
+         84   45 0006AC20 PsmIsProcessInApplication
+         85   46 00156DB0 PsmIsProcessInApplication2
+         86   47 00156E50 PsmQueryApplicationInformation
+         87   48 00156ED0 PsmQueryApplicationInformation2
+         88   49 00157010 PsmQueryApplicationInterferenceCount
+         89   4A 00157010 PsmQueryApplicationInterferenceCount2
+         90   4B 00157020 PsmQueryApplicationList
+         91   4C 00054E10 PsmQueryApplicationList2
+         92   4D 00157010 PsmQueryApplicationProperties
+         93   4E 00157010 PsmQueryApplicationProperties2
+         94   4F 00157010 PsmQueryApplicationProperties3
+         95   50 00157010 PsmQueryApplicationPropertiesByUser
+         96   51 00157010 PsmQueryApplicationResourceUsage
+         97   52 00157010 PsmQueryApplicationResourceUsage2
+         98   53 00157690 PsmQueryApplicationResourceUsageForTimer
+         99   54 0002F390 PsmQueryCurrentAppState
+        100   55 00157010 PsmQueryMaxMemoryUsage
+        101   56 00157010 PsmQueryMaxMemoryUsage2
+        102   57 00157010 PsmQueryMemoryUsage
+        103   58 00157010 PsmQueryMemoryUsage2
+        104   59 001570A0 PsmQueryMemoryUsageByUser
+        105   5A 001571A0 PsmQueryProcessList
+        106   5B 00157220 PsmQueryProcessList2
+        107   5C 00157010 PsmQuerySharedCommitByUser
+        108   5D 00157010 PsmQueryTaskCompletionInformation
+        109   5E 00157010 PsmQueryTaskCompletionInformation2
+        110   5F 001577A0 PsmRegisterAppPriorityNotification
+        111   60 00057620 PsmRegisterAppStateChangeNotification
+        112   61 00157390 PsmRegisterApplicationNotification
+        113   62 00157420 PsmRegisterApplicationNotification2
+        114   63 000667E0 PsmRegisterDynamicProcess
+        115   64 00054F40 PsmRegisterKeyNotification
+        116   65 0006AB40 PsmRegisterManagerType
+        117   66 00157010 PsmResetMaxMemoryUsage
+        118   67 00157010 PsmResetMaxMemoryUsage2
+        119   68 00157010 PsmResetMaxMemoryUsageByUser
+        120   69 00157010 PsmSetApplicationPriority
+        121   6A 00157010 PsmSetApplicationPriority2
+        122   6B 00157010 PsmSetApplicationProperties
+        123   6C 00157010 PsmSetApplicationProperties2
+        124   6D 00157010 PsmSetApplicationProperties3
+        125   6E 00157010 PsmSetApplicationPropertiesByUser
+        126   6F 001574A0 PsmSetApplicationState
+        127   70 00157530 PsmSetApplicationState2
+        128   71 00156D00 PsmShutdownApplication
+        129   72 000557D0 PsmTimerCleanup
+        130   73 00158940 PsmTimerElapsedResourceTimeGet
+        131   74 00069780 PsmTimerInitialize
+        132   75 00158A60 PsmTimerRemainingResourceTimeGet
+        133   76 00055380 PsmTimerStart
+        134   77 0003D8E0 PsmUnblockAppStateChangeCompletion
+        135   78 00065850 PsmUnregisterAppStateChangeNotification
+        136   79 00065E50 PsmWaitForAppResume
+        137   7A 00057580 RegisterAppStateChangeNotification
+        138   7B 0001A350 TryGetTitleBarIslandId
+        139   7C 0012F110 TryGetTitleBarIslandSelectedHost
+        140   7D 00019020 UnregisterAppStateChangeNotification
+         14   7E 00137DF0 ValidateSystemShutdown
+          1      00020100 [NONAME]
+          2      00008E10 [NONAME]
+          3      0002F160 [NONAME]
+          4      00153060 [NONAME]
+          5      00153010 [NONAME]
+          6      00026470 [NONAME]
+          7      00025FC0 [NONAME]
+          8      000255E0 [NONAME]
+          9      00058090 [NONAME]
+         10      00021CE0 [NONAME]
+         11      001540D0 [NONAME]
+         12      0005F180 [NONAME]
+         13      00154140 [NONAME]
+        500      00131580 [NONAME]
+
+  Summary
+
+        5000 .data
+        1000 .didat
+       19000 .pdata
+       86000 .rdata
+        A000 .reloc
+        3000 .rsrc
+      15A000 .text

@@ -1,0 +1,45 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\ttdrecord.dll
+
+File Type: DLL
+
+  Section contains the following exports for TTDRecord.dll
+
+    00000000 characteristics
+    A7F8E270 time date stamp
+        0.00 version
+           1 ordinal base
+          16 number of functions
+          16 number of names
+
+    ordinal hint RVA      name
+
+          2    0 0000AD20 TTDAttachGuestProcess
+          3    1 0000B4E0 TTDCloseGuestObject
+          4    2 0000B810 TTDCreateNonInteractiveWaitEventName
+          5    3 0000D640 TTDEnumerateTracingProcesses
+          1    4 0000A9D0 TTDExecutingInOneCore
+          6    5 00005AE0 TTDGetExecutableNameFromCommandLine
+          7    6 0000B280 TTDGetLogFilenameFromGuestProcess
+          8    7 00004950 TTDGetNirvanaClientPathW
+          9    8 0000A240 TTDGetProcessImageName
+         10    9 0000B7B0 TTDGetVersionedName
+         11    A 0000B720 TTDGuestObjectInfo
+         12    B 0000AA70 TTDLaunchGuestProcess
+         13    C 0000B390 TTDSendMarkerToGuestProcess
+         14    D 0000AFD0 TTDSendMessageToGuestProcess
+         15    E 00006090 TTDSetDebuggerImageFileExecutionOptions
+         16    F 0000B5C0 TTDWaitForGuestObjects
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        A000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       15000 .text

@@ -1,0 +1,81 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\mfcore.dll
+
+File Type: DLL
+
+  Section contains the following exports for MFCORE.dll
+
+    00000000 characteristics
+    CAA519E1 time date stamp
+        0.00 version
+           1 ordinal base
+          51 number of functions
+          51 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00253AB0 AppendPropVariant
+          2    1 00253AC0 ConvertPropVariant
+          3    2 00253AD0 CopyPropertyStore
+          4    3 00098390 CreateNamedPropertyStore
+          5    4 000B1EE0 DllCanUnloadNow
+          6    5 00246FC0 DllGetActivationFactory
+          7    6 000A5420 DllGetClassObject
+          8    7 00245D70 DllRegisterServer
+          9    8 00245DE0 DllUnregisterServer
+         10    9 00253C90 ExtractPropVariant
+         11    A 0036C2B0 MFCopyMFMetadata
+         12    B 0036C7B0 MFCopyPropertyStore
+         13    C 0036CBE0 MFCopyStreamMetadata
+         14    D 0030BE50 MFCreateAggregateSource
+         15    E 002C62C0 MFCreateAppSourceProxy
+         16    F 0002F690 MFCreateAudioRenderer
+         17   10 00084C90 MFCreateAudioRendererActivate
+         18   11 0034FA60 MFCreateDeviceSource
+         19   12 003504F0 MFCreateDeviceSourceActivate
+         20   13 003F00D0 MFCreateExtendedCameraIntrinsicModel
+         21   14 003F01E0 MFCreateExtendedCameraIntrinsics
+         22   15 000A8F50 MFCreateFileSchemePlugin
+         23   16 0036D1A0 MFCreateMFMetadataOnPropertyStore
+         24   17 0002E970 MFCreateMediaProcessor
+         25   18 000B00D0 MFCreateMediaSession
+         26   19 000124B0 MFCreatePMPHost
+         27   1A 000A48B0 MFCreatePMPMediaSession
+         28   1B 002C8FF0 MFCreatePMPServer
+         29   1C 00245DF0 MFCreatePresentationClock
+         30   1D 003BFB40 MFCreateSampleCopierMFT
+         31   1E 00088150 MFCreateSampleGrabberSinkActivate
+         32   1F 00026A90 MFCreateSequencerSegmentOffset
+         33   20 000941B0 MFCreateSequencerSource
+         34   21 00317BD0 MFCreateSequencerSourceRemoteStream
+         35   22 00255610 MFCreateSimpleTypeHandler
+         36   23 0032E0F0 MFCreateSoundEventSchemePlugin
+         37   24 0030AA00 MFCreateStandardQualityManager
+         38   25 00330B50 MFCreateTopoLoader
+         39   26 00074ED0 MFCreateTopology
+         40   27 0001FCF0 MFCreateTopologyNode
+         41   28 00245E00 MFCreateTransformWrapper
+         42   29 0026D9D0 MFCreateWMAEncoderActivate
+         43   2A 0026E0D0 MFCreateWMVEncoderActivate
+         44   2B 000A8420 MFEnumDeviceSources
+         45   2C 00255620 MFGetMultipleServiceProviders
+         46   2D 00064AC0 MFGetService
+         47   2E 000A2340 MFGetTopoNodeCurrentType
+         48   2F 0030CC40 MFReadSequencerSegmentOffset
+         49   30 000B1FF0 MFRequireProtectedEnvironment
+         50   31 00253FF0 MFShutdownObject
+         51   32 00253CA0 MergePropertyStore
+
+  Summary
+
+       29000 .data
+        1000 .didat
+       19000 .pdata
+       68000 .rdata
+        5000 .reloc
+       16000 .rsrc
+      460000 .text
+        2000 ?g_Encry

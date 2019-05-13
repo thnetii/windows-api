@@ -1,0 +1,37 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\devinv.dll
+
+File Type: DLL
+
+  Section contains the following exports for devinv.dll
+
+    00000000 characteristics
+    7F2DD726 time date stamp
+        0.00 version
+           1 ordinal base
+           8 number of functions
+           8 number of names
+
+    ordinal hint RVA      name
+
+          6    0 0000F540 CreateDeviceInventory
+          3    1 0000F520 CreateDeviceInventoryTC
+          2    2 0000F390 CreateDeviceInventoryTC2
+          4    3 00010440 GetDevInventory
+          7    4 0000F170 ReportDeviceAdd
+          8    5 0000F280 ReportDeviceRemove
+          5    6 0000FBA0 RunDeviceInventoryW
+          1    7 00010A80 SetDevInvDebugCorrelationVector
+
+  Summary
+
+        4000 .data
+        1000 .didat
+        4000 .pdata
+       24000 .rdata
+        1000 .reloc
+        2000 .rsrc
+       6B000 .text

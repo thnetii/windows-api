@@ -1,0 +1,52 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\rastls.dll
+
+File Type: DLL
+
+  Section contains the following exports for rastls.dll
+
+    00000000 characteristics
+    6989936B time date stamp
+        0.00 version
+           1 ordinal base
+          23 number of functions
+          23 number of names
+
+    ordinal hint RVA      name
+
+          5    0 00008D50 EapTls_SaveUserCredentials
+          6    1 000262E0 RasEapCreateConnectionProperties
+          1    2 000263F0 RasEapCreateConnectionProperties2
+          2    3 00025BA0 RasEapCreateConnectionPropertiesXml
+          3    4 000261F0 RasEapCreateMethodConfiguration
+          7    5 00021530 RasEapCreateUserProperties
+          4    6 00021660 RasEapCreateUserProperties2
+          8    7 0001AE90 RasEapFreeMemory
+          9    8 0001AAC0 RasEapGetConfigBlobAndUserBlob
+         10    9 0000B510 RasEapGetCredentials
+         11    A 0001AD20 RasEapGetIdentity
+         12    B 0001A460 RasEapGetIdentityPageGuid
+         13    C 00002F20 RasEapGetInfo
+         14    D 000191F0 RasEapGetMethodProperties
+         15    E 0001A3E0 RasEapGetNextPageGuid
+         16    F 0001AFC0 RasEapInvokeConfigUI
+         17   10 0001B2E0 RasEapInvokeInteractiveUI
+         18   11 00017CC0 RasEapQueryCredentialInputFields
+         19   12 00017EE0 RasEapQueryInteractiveUIInputFields
+         20   13 00017F40 RasEapQueryUIBlobFromInteractiveUIInputFields
+         21   14 00017D30 RasEapQueryUserBlobFromCredentialInputFields
+         22   15 0000B570 RasEapSetRetryFlag
+         23   16 0001AEB0 RasEapUpdateServerConfig
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        2000 .pdata
+       10000 .rdata
+        1000 .reloc
+       24000 .rsrc
+       49000 .text

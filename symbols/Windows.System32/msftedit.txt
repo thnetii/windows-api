@@ -1,0 +1,54 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\msftedit.dll
+
+File Type: DLL
+
+  Section contains the following exports for MSFTEDIT.dll
+
+    00000000 characteristics
+    8844EC3E time date stamp
+        0.00 version
+           2 ordinal base
+          36 number of functions
+          25 number of names
+
+    ordinal hint RVA      name
+
+          4    0 00015660 CreateTextServices
+          8    1 00130C90 DisableOleinitCheck
+         26    2 0000BFF0 DllGetActivationFactory
+         12    3 000A8C60 DllGetVersion
+         22    4 001AE3A0 GetMathAlphanumeric
+         21    5 001AE760 GetMathAlphanumericCode
+          2    6 002AED70 IID_IRichEditOle
+          3    7 002AED60 IID_IRichEditOleCallback
+         37    8 002AF038 IID_IRicheditUiaNotificationOverrides
+         33    9 002C2720 IID_IRicheditUiaOverrides
+         32    A 002AF8A0 IID_IRicheditWindowlessAccessibility
+         24    B 002AED20 IID_ITextDocument2
+          6    C 002B03C0 IID_ITextHost
+          7    D 002AE8A0 IID_ITextHost2
+          5    E 002AECB0 IID_ITextServices
+         25    F 002AECD0 IID_ITextServices2
+         18   10 001B7A10 MathBuildDown
+         17   11 001B7A90 MathBuildUp
+         19   12 001B7D50 MathTranslate
+         10   13 001F4780 RichEdit10ANSIWndProc
+          9   14 001F4820 RichEditANSIWndProc
+         13   15 000B22B0 RichEditWndProc
+         11   16 00130CC0 SetCustomTextOutHandlerEx
+         36   17 00130CF0 SetTextServicesDpiCalculationOverride
+         35   18 000867E0 ShutdownTextServices
+
+  Summary
+
+        7000 .data
+        1000 .didat
+       19000 .pdata
+       6A000 .rdata
+        7000 .reloc
+       1A000 .rsrc
+      287000 .text

@@ -1,0 +1,113 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\vssapi.dll
+
+File Type: DLL
+
+  Section contains the following exports for VSSAPI.DLL
+
+    00000000 characteristics
+    2C418120 time date stamp
+        0.00 version
+           5 ordinal base
+          84 number of functions
+          84 number of names
+
+    ordinal hint RVA      name
+
+          8    0 0002B6A0 ??0CVssJetWriter@@QEAA@XZ
+          9    1 00026130 ??0CVssWriter@@QEAA@XZ
+         10    2 0002B6C0 ??1CVssJetWriter@@UEAA@XZ
+         11    3 00026580 ??1CVssWriter@@UEAA@XZ
+         12    4 0002B760 ?AreComponentsSelected@CVssJetWriter@@IEBA_NXZ
+         13    5 00026AA0 ?AreComponentsSelected@CVssWriter@@IEBA_NXZ
+         14    6 00029DF0 ?CreateVssBackupComponents@@YAJPEAPEAVIVssBackupComponents@@@Z
+         15    7 0002A140 ?CreateVssExamineWriterMetadata@@YAJPEAGPEAPEAVIVssExamineWriterMetadata@@@Z
+         16    8 0002B840 ?GetBackupType@CVssJetWriter@@IEBA?AW4_VSS_BACKUP_TYPE@@XZ
+         17    9 00027110 ?GetBackupType@CVssWriter@@IEBA?AW4_VSS_BACKUP_TYPE@@XZ
+         18    A 0002B910 ?GetContext@CVssJetWriter@@IEBAJXZ
+         19    B 00027120 ?GetContext@CVssWriter@@IEBAJXZ
+         20    C 0002B9F0 ?GetCurrentLevel@CVssJetWriter@@IEBA?AW4_VSS_APPLICATION_LEVEL@@XZ
+         21    D 000272A0 ?GetCurrentLevel@CVssWriter@@IEBA?AW4_VSS_APPLICATION_LEVEL@@XZ
+         22    E 0002BAC0 ?GetCurrentSnapshotSetId@CVssJetWriter@@IEBA?AU_GUID@@XZ
+         23    F 00027330 ?GetCurrentSnapshotSetId@CVssWriter@@IEBA?AU_GUID@@XZ
+         24   10 0002BBB0 ?GetCurrentVolumeArray@CVssJetWriter@@IEBAPEAPEBGXZ
+         25   11 00027350 ?GetCurrentVolumeArray@CVssWriter@@IEBAPEAPEBGXZ
+         26   12 0002BC90 ?GetCurrentVolumeCount@CVssJetWriter@@IEBAIXZ
+         27   13 00027380 ?GetCurrentVolumeCount@CVssWriter@@IEBAIXZ
+         28   14 0002BD70 ?GetRestoreType@CVssJetWriter@@IEBA?AW4_VSS_RESTORE_TYPE@@XZ
+         29   15 00027990 ?GetRestoreType@CVssWriter@@IEBA?AW4_VSS_RESTORE_TYPE@@XZ
+         30   16 0002BE40 ?GetSnapshotDeviceName@CVssJetWriter@@IEBAJPEBGPEAPEBG@Z
+         31   17 00027A00 ?GetSnapshotDeviceName@CVssWriter@@IEBAJPEBGPEAPEBG@Z
+         32   18 0002BF40 ?Initialize@CVssJetWriter@@QEAAJU_GUID@@PEBG_N211K@Z
+         33   19 00028070 ?Initialize@CVssWriter@@QEAAJU_GUID@@PEBGW4VSS_USAGE_TYPE@@W4VSS_SOURCE_TYPE@@W4_VSS_APPLICATION_LEVEL@@KW4VSS_ALTERNATE_WRITER_STATE@@_N1@Z
+         34   1A 000280E0 ?InstallAlternateWriter@CVssWriter@@QEAAJU_GUID@@0@Z
+         35   1B 0002C700 ?IsBootableSystemStateBackedUp@CVssJetWriter@@IEBA_NXZ
+         36   1C 000281D0 ?IsBootableSystemStateBackedUp@CVssWriter@@IEBA_NXZ
+         37   1D 0002C7E0 ?IsPartialFileSupportEnabled@CVssJetWriter@@IEBA_NXZ
+         38   1E 00028220 ?IsPartialFileSupportEnabled@CVssWriter@@IEBA_NXZ
+         39   1F 0002C8B0 ?IsPathAffected@CVssJetWriter@@IEBA_NPEBG@Z
+         40   20 00028230 ?IsPathAffected@CVssWriter@@IEBA_NPEBG@Z
+         41   21 0002C9A0 ?OnAbortBegin@CVssJetWriter@@UEAAXXZ
+         42   22 0002CA30 ?OnAbortEnd@CVssJetWriter@@UEAAXXZ
+         43   23 000013F0 ?OnBackOffIOOnVolume@CVssWriter@@UEAA_NPEAGU_GUID@@1@Z
+         44   24 000013F0 ?OnBackupComplete@CVssWriter@@UEAA_NPEAVIVssWriterComponents@@@Z
+         45   25 0002CAC0 ?OnBackupCompleteBegin@CVssJetWriter@@UEAA_NPEAVIVssWriterComponents@@@Z
+         46   26 0002CB50 ?OnBackupCompleteEnd@CVssJetWriter@@UEAA_NPEAVIVssWriterComponents@@_N@Z
+         47   27 000013F0 ?OnBackupShutdown@CVssWriter@@UEAA_NU_GUID@@@Z
+         48   28 000013F0 ?OnContinueIOOnVolume@CVssWriter@@UEAA_NPEAGU_GUID@@1@Z
+         49   29 0002CBE0 ?OnFreezeBegin@CVssJetWriter@@UEAA_NXZ
+         50   2A 0002CC70 ?OnFreezeEnd@CVssJetWriter@@UEAA_N_N@Z
+         51   2B 0002CD10 ?OnIdentify@CVssJetWriter@@UEAA_NPEAVIVssCreateWriterMetadata@@@Z
+         52   2C 000013F0 ?OnIdentify@CVssWriter@@UEAA_NPEAVIVssCreateWriterMetadata@@@Z
+         53   2D 000013F0 ?OnPostRestore@CVssWriter@@UEAA_NPEAVIVssWriterComponents@@@Z
+         54   2E 0002CDA0 ?OnPostRestoreBegin@CVssJetWriter@@UEAA_NPEAVIVssWriterComponents@@@Z
+         55   2F 0002CE30 ?OnPostRestoreEnd@CVssJetWriter@@UEAA_NPEAVIVssWriterComponents@@_N@Z
+         56   30 0002CEC0 ?OnPostSnapshot@CVssJetWriter@@UEAA_NPEAVIVssWriterComponents@@@Z
+         57   31 000013F0 ?OnPostSnapshot@CVssWriter@@UEAA_NPEAVIVssWriterComponents@@@Z
+         58   32 000013F0 ?OnPreRestore@CVssWriter@@UEAA_NPEAVIVssWriterComponents@@@Z
+         59   33 0002CF50 ?OnPreRestoreBegin@CVssJetWriter@@UEAA_NPEAVIVssWriterComponents@@@Z
+         60   34 0002CFE0 ?OnPreRestoreEnd@CVssJetWriter@@UEAA_NPEAVIVssWriterComponents@@_N@Z
+         61   35 000013F0 ?OnPrepareBackup@CVssWriter@@UEAA_NPEAVIVssWriterComponents@@@Z
+         62   36 0002D070 ?OnPrepareBackupBegin@CVssJetWriter@@UEAA_NPEAVIVssWriterComponents@@@Z
+         63   37 0002D100 ?OnPrepareBackupEnd@CVssJetWriter@@UEAA_NPEAVIVssWriterComponents@@_N@Z
+         64   38 0002D1A0 ?OnPrepareSnapshotBegin@CVssJetWriter@@UEAA_NXZ
+         65   39 0002D230 ?OnPrepareSnapshotEnd@CVssJetWriter@@UEAA_N_N@Z
+         66   3A 0002D2D0 ?OnThawBegin@CVssJetWriter@@UEAA_NXZ
+         67   3B 0002D360 ?OnThawEnd@CVssJetWriter@@UEAA_N_N@Z
+         68   3C 000013F0 ?OnVSSApplicationStartup@CVssWriter@@UEAA_NXZ
+         69   3D 000013F0 ?OnVSSShutdown@CVssWriter@@UEAA_NXZ
+         70   3E 0002D400 ?SetWriterFailure@CVssJetWriter@@IEAAJJ@Z
+         71   3F 00029520 ?SetWriterFailure@CVssWriter@@IEAAJJ@Z
+         72   40 000297A0 ?Subscribe@CVssWriter@@QEAAJK@Z
+         73   41 0002D500 ?Uninitialize@CVssJetWriter@@QEAAXXZ
+         74   42 00029B00 ?Unsubscribe@CVssWriter@@QEAAJXZ
+         75   43 00029DF0 CreateVssBackupComponentsInternal
+         76   44 0002A140 CreateVssExamineWriterMetadataInternal
+         77   45 0002A6E0 CreateVssExpressWriterInternal
+         78   46 0002AB70 CreateVssSnapshotSetDescription
+         79   47 0000FAF0 CreateWriter
+         80   48 0000EF10 CreateWriterEx
+         81   49 00022B00 DllCanUnloadNow
+         82   4A 00022B20 DllGetClassObject
+         83   4B 00022B40 GetProviderMgmtInterface
+         84   4C 00022B40 GetProviderMgmtInterfaceInternal
+          5   4D 000235C0 IsVolumeSnapshotted
+         85   4E 000235C0 IsVolumeSnapshottedInternal
+         86   4F 0002B330 LoadVssSnapshotSetDescription
+          7   50 00024BD0 ShouldBlockRevert
+         87   51 00024BD0 ShouldBlockRevertInternal
+          6   52 00025BC0 VssFreeSnapshotProperties
+         88   53 00025BC0 VssFreeSnapshotPropertiesInternal
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        A000 .pdata
+       63000 .rdata
+        1000 .reloc
+       22000 .rsrc
+       FD000 .text

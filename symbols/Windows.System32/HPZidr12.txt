@@ -1,0 +1,99 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\HPZidr12.dll
+
+File Type: DLL
+
+  Section contains the following exports for HPZidr12.dll
+
+    00000000 characteristics
+    57612F9D time date stamp Wed Jun 15 12:36:13 2016
+        0.00 version
+           1 ordinal base
+          72 number of functions
+          72 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0000365C CancelIoOsDevice
+          2    1 00003604 CloseOsDevice
+          3    2 000036FC DOT4AcknowledgeWaitActivityBroadcast
+          4    3 00003A78 DOT4AllocCompletion
+          5    4 00003934 DOT4CloseChannel
+          6    5 0000376C DOT4CreateSocket
+          7    6 000037CC DOT4DestroySocket
+          8    7 00003AAC DOT4FreeCompletion
+          9    8 00003AE0 DOT4GetCompletion
+         10    9 00003730 DOT4GetDeviceId
+         11    A 00003B88 DOT4InitRtlProcs
+         12    B 000038D4 DOT4OpenChannel
+         13    C 000036C0 DOT4ReStartWaitActivityBroadcast
+         14    D 00003968 DOT4Read
+         15    E 000039F0 DOT4ReadEx
+         16    F 0000368C DOT4RemoveActivityBroadcast
+         17   10 00003800 DOT4WaitChannel
+         18   11 00003860 DOT4WaitChannelEx
+         19   12 000039AC DOT4Write
+         20   13 00003A34 DOT4WriteEx
+         21   14 0000A268 GetOsDevVersion
+         22   15 00003500 IsDevicePresent
+         23   16 00003FF4 MLCCheckHandle
+         24   17 000047C8 MLCCloseChannel
+         25   18 00004B18 MLCCompareDevID
+         26   19 00004090 MLCEscapeCommFunction
+         27   1A 000041A8 MLCGetDeviceId
+         28   1B 00004238 MLCGetDeviceIdByName
+         29   1C 000042D0 MLCOpenChannel
+         30   1D 00004494 MLCOpenChannelByName
+         31   1E 00004B18 MLCPingVcomm
+         32   1F 00004B18 MLCPollChannels
+         33   20 00004920 MLCRead
+         34   21 00004A1C MLCWrite
+         35   22 000031C0 OpenOsDevice
+         36   23 00003B14 RtlCleanUp
+         37   24 0000365C _CancelIoOsDevice@4
+         38   25 00003604 _CloseOsDevice@4
+         39   26 000036FC _DOT4AcknowledgeWaitActivityBroadcast@12
+         40   27 00003A78 _DOT4AllocCompletion@8
+         41   28 00003934 _DOT4CloseChannel@8
+         42   29 0000376C _DOT4CreateSocket@32
+         43   2A 000037CC _DOT4DestroySocket@8
+         44   2B 00003AAC _DOT4FreeCompletion@8
+         45   2C 00003AE0 _DOT4GetCompletion@12
+         46   2D 00003730 _DOT4GetDeviceId@20
+         47   2E 00003B88 _DOT4InitRtlProcs@12
+         48   2F 000038D4 _DOT4OpenChannel@32
+         49   30 000036C0 _DOT4ReStartWaitActivityBroadcast@20
+         50   31 00003968 _DOT4Read@24
+         51   32 000039F0 _DOT4ReadEx@24
+         52   33 0000368C _DOT4RemoveActivityBroadcast@8
+         53   34 00003800 _DOT4WaitChannel@32
+         54   35 00003860 _DOT4WaitChannelEx@36
+         55   36 000039AC _DOT4Write@24
+         56   37 00003A34 _DOT4WriteEx@24
+         57   38 0000A268 _GetOsDevVersion@0
+         58   39 00003500 _IsDevicePresent@12
+         59   3A 00003FF4 _MLCCheckHandle@16
+         60   3B 000047C8 _MLCCloseChannel@4
+         61   3C 00004B18 _MLCCompareDevID@16
+         62   3D 00004090 _MLCEscapeCommFunction@28
+         63   3E 000041A8 _MLCGetDeviceId@12
+         64   3F 00004238 _MLCGetDeviceIdByName@16
+         65   40 000042D0 _MLCOpenChannel@40
+         66   41 00004494 _MLCOpenChannelByName@44
+         67   42 00004B18 _MLCPingVcomm@4
+         68   43 00004B18 _MLCPollChannels@4
+         69   44 00004920 _MLCRead@20
+         70   45 00004A1C _MLCWrite@20
+         71   46 000031C0 _OpenOsDevice@8
+         72   47 00003B14 _RtlCleanUp@0
+
+  Summary
+
+        2000 .data
+        1000 .pdata
+        1000 .reloc
+        1000 .rsrc
+        F000 .text

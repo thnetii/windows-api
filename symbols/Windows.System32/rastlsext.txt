@@ -1,0 +1,44 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\rastlsext.dll
+
+File Type: DLL
+
+  Section contains the following exports for rastlsext.dll
+
+    00000000 characteristics
+    D395DD92 time date stamp
+        0.00 version
+           1 ordinal base
+          15 number of functions
+          15 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00006F50 DllCanUnloadNow
+          2    1 00006F70 DllGetClassObject
+          3    2 00007090 DllRegisterServer
+          4    3 00007180 DllUnregisterServer
+          5    4 000013B0 RasTlsExt_FreeMemory
+          6    5 000013A0 RasTlsExt_GetConfigCacheOnlyCertValidation
+          7    6 000013A0 RasTlsExt_GetConfigForceNotDomainJoined
+          8    7 000013C0 RasTlsExt_GetPinUserBlob
+          9    8 00001700 RasTlsExt_GetServerCertDetails
+         10    9 00001640 RasTlsExt_PackUserBlob
+         11    A 00001700 RasTlsExt_SelectCertificate
+         12    B 000013A0 RasTlsExt_ShowHelp
+         13    C 000014E0 RasTlsExt_UnpackUserBlob
+         14    D 00001700 RasTlsExt_ValidateServer
+         15    E 00001710 RasTlsExt_ValidateServerDialogProc
+
+  Summary
+
+        3000 .data
+        1000 .didat
+        2000 .pdata
+        C000 .rdata
+        1000 .reloc
+       26000 .rsrc
+       26000 .text

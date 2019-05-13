@@ -1,0 +1,42 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\hotplug.dll
+
+File Type: DLL
+
+  Section contains the following exports for hotplug.DLL
+
+    00000000 characteristics
+    E013EFBC time date stamp
+        0.00 version
+           1 ordinal base
+          13 number of functions
+          13 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00003D90 CPlApplet
+         13    1 00001220 DllGetClassObject
+          2    2 00003B50 HotPlugChildWithInvalidIdW
+          3    3 00003930 HotPlugDriverBlockedW
+          4    4 000054C0 HotPlugEjectDevice
+          5    5 000054D0 HotPlugEjectDeviceEx
+          6    6 00003410 HotPlugEjectVetoedW
+          7    7 00003470 HotPlugHibernateVetoedW
+          8    8 000033E0 HotPlugRemovalVetoedW
+          9    9 00003810 HotPlugSafeRemovalDriveNotificationW
+         10    A 00003780 HotPlugSafeRemovalNotificationW
+         11    B 00003440 HotPlugStandbyVetoedW
+         12    C 000034A0 HotPlugWarmEjectVetoedW
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        3000 .rdata
+        1000 .reloc
+        C000 .rsrc
+        7000 .text

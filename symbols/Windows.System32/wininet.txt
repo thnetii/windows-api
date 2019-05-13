@@ -1,0 +1,356 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\wininet.dll
+
+File Type: DLL
+
+  Section contains the following exports for WININET.dll
+
+    00000000 characteristics
+    EF02D3F2 time date stamp
+        0.00 version
+         101 ordinal base
+         326 number of functions
+         298 number of names
+
+    ordinal hint RVA      name
+
+        107    0 00005A40 AppCacheCheckManifest
+        113    1 0006A820 AppCacheCloseHandle
+        114    2 001A3530 AppCacheCreateAndCommitFile
+        115    3 001A35D0 AppCacheDeleteGroup
+        119    4 001A3660 AppCacheDeleteIEGroup
+        124    5 0006A990 AppCacheDuplicateHandle
+        125    6 0001ACD0 AppCacheFinalize
+        126    7 001A36F0 AppCacheFreeDownloadList
+        127    8 00017B40 AppCacheFreeGroupList
+        128    9 001A3820 AppCacheFreeIESpace
+        129    A 001A38B0 AppCacheFreeSpace
+        130    B 0001B050 AppCacheGetDownloadList
+        131    C 000874B0 AppCacheGetFallbackUrl
+        132    D 00017BA0 AppCacheGetGroupList
+        133    E 00017860 AppCacheGetIEGroupList
+        134    F 00019040 AppCacheGetInfo
+        135   10 000819B0 AppCacheGetManifestUrl
+        136   11 000886F0 AppCacheLookup
+        137   12 00007720 CommitUrlCacheEntryA
+        138   13 00097D90 CommitUrlCacheEntryBinaryBlob
+        139   14 000C8230 CommitUrlCacheEntryW
+        140   15 00180D10 CreateMD5SSOHash
+        141   16 00007900 CreateUrlCacheContainerA
+        142   17 00080BC0 CreateUrlCacheContainerW
+        143   18 00007300 CreateUrlCacheEntryA
+        144   19 000074D0 CreateUrlCacheEntryExW
+        145   1A 000074A0 CreateUrlCacheEntryW
+        146   1B 001A4C70 CreateUrlCacheGroup
+        147   1C 001AD6D0 DeleteIE3Cache
+        148   1D 001A4DA0 DeleteUrlCacheContainerA
+        149   1E 000160E0 DeleteUrlCacheContainerW
+        150   1F 00008210 DeleteUrlCacheEntry
+        151   20 00008210 DeleteUrlCacheEntryA
+        152   21 00007230 DeleteUrlCacheEntryW
+        153   22 001A4EE0 DeleteUrlCacheGroup
+        154   23 00169C00 DeleteWpadCacheForNetworks
+        155   24 0016A6B0 DetectAutoProxyUrl
+        106   25 000CBA10 DispatchAPICall
+        156   26 00141DB0 DllCanUnloadNow
+        157   27 000CAB80 DllGetClassObject
+        158   28 000CBA00 DllInstall
+        159   29 00141DE0 DllRegisterServer
+        160   2A 00141E20 DllUnregisterServer
+        161   2B 0001ED00 FindCloseUrlCache
+        162   2C 0001E200 FindFirstUrlCacheContainerA
+        163   2D 0001E360 FindFirstUrlCacheContainerW
+        164   2E 001A4FE0 FindFirstUrlCacheEntryA
+        165   2F 00007C40 FindFirstUrlCacheEntryExA
+        166   30 001A5160 FindFirstUrlCacheEntryExW
+        167   31 001A5320 FindFirstUrlCacheEntryW
+        168   32 001A54A0 FindFirstUrlCacheGroup
+        169   33 0001EED0 FindNextUrlCacheContainerA
+        170   34 0001E4A0 FindNextUrlCacheContainerW
+        171   35 001A55F0 FindNextUrlCacheEntryA
+        172   36 00008B90 FindNextUrlCacheEntryExA
+        173   37 001A57B0 FindNextUrlCacheEntryExW
+        174   38 001A5990 FindNextUrlCacheEntryW
+        175   39 001A5B50 FindNextUrlCacheGroup
+        176   3A 00180F80 ForceNexusLookup
+        177   3B 00180FD0 ForceNexusLookupExW
+        178   3C 001A5C80 FreeUrlCacheSpaceA
+        179   3D 001A5EE0 FreeUrlCacheSpaceW
+        180   3E 001550D0 FtpCommandA
+        181   3F 00158EC0 FtpCommandW
+        182   40 001553F0 FtpCreateDirectoryA
+        183   41 00159090 FtpCreateDirectoryW
+        184   42 00155490 FtpDeleteFileA
+        185   43 00159230 FtpDeleteFileW
+        186   44 00155530 FtpFindFirstFileA
+        187   45 001593D0 FtpFindFirstFileW
+        188   46 001557B0 FtpGetCurrentDirectoryA
+        189   47 001595D0 FtpGetCurrentDirectoryW
+        190   48 00155870 FtpGetFileA
+        191   49 00159780 FtpGetFileEx
+        192   4A 00155AD0 FtpGetFileSize
+        193   4B 00159930 FtpGetFileW
+        194   4C 00155D50 FtpOpenFileA
+        195   4D 00159A40 FtpOpenFileW
+        196   4E 00155E30 FtpPutFileA
+        197   4F 00159AD0 FtpPutFileEx
+        198   50 00159C60 FtpPutFileW
+        199   51 001561F0 FtpRemoveDirectoryA
+        200   52 00159D40 FtpRemoveDirectoryW
+        201   53 00156290 FtpRenameFileA
+        202   54 00159ED0 FtpRenameFileW
+        203   55 00156350 FtpSetCurrentDirectoryA
+        204   56 0015A130 FtpSetCurrentDirectoryW
+        205   57 00135A70 GetProxyDllInfo
+        206   58 001A5FE0 GetUrlCacheConfigInfoA
+        207   59 001A6290 GetUrlCacheConfigInfoW
+        208   5A 000984F0 GetUrlCacheEntryBinaryBlob
+        209   5B 001A63B0 GetUrlCacheEntryInfoA
+        210   5C 001A6580 GetUrlCacheEntryInfoExA
+        211   5D 0003F090 GetUrlCacheEntryInfoExW
+        212   5E 0003B310 GetUrlCacheEntryInfoW
+        213   5F 001A67D0 GetUrlCacheGroupAttributeA
+        214   60 001A6A40 GetUrlCacheGroupAttributeW
+        215   61 0006A610 GetUrlCacheHeaderData
+        216   62 0013C010 GopherCreateLocatorA
+        217   63 0013C010 GopherCreateLocatorW
+        218   64 0013C010 GopherFindFirstFileA
+        219   65 0013C010 GopherFindFirstFileW
+        220   66 0013C010 GopherGetAttributeA
+        221   67 0013C010 GopherGetAttributeW
+        222   68 0013C010 GopherGetLocatorTypeA
+        223   69 0013C010 GopherGetLocatorTypeW
+        224   6A 0013C010 GopherOpenFileA
+        225   6B 0013C010 GopherOpenFileW
+        226   6C 000363D0 HttpAddRequestHeadersA
+        227   6D 000362A0 HttpAddRequestHeadersW
+        228   6E 0016BD60 HttpCheckDavCompliance
+        229   6F 00094740 HttpCloseDependencyHandle
+        230   70 000B6250 HttpDuplicateDependencyHandle
+        231   71 000C5780 HttpEndRequestA
+        232   72 000CA0A0 HttpEndRequestW
+        233   73 00018110 HttpGetServerCredentials
+        234   74 001476D0 HttpGetTunnelSocket
+        235   75 000C7060 HttpIndicatePageLoadComplete
+        236   76 0006C6C0 HttpIsHostHstsEnabled
+        237   77 000209F0 HttpOpenDependencyHandle
+        238   78 0016C9B0 HttpOpenRequestA
+        239   79 000B3550 HttpOpenRequestW
+        240   7A 00148490 HttpPushClose
+        241   7B 00148570 HttpPushEnable
+        242   7C 00148600 HttpPushWait
+        243   7D 00042D10 HttpQueryInfoA
+        244   7E 00041430 HttpQueryInfoW
+        245   7F 000C7BB0 HttpSendRequestA
+        246   80 000C97F0 HttpSendRequestExA
+        247   81 000C3990 HttpSendRequestExW
+        248   82 00035910 HttpSendRequestW
+        249   83 0017D8F0 HttpWebSocketClose
+        250   84 0017DED0 HttpWebSocketCompleteUpgrade
+        251   85 0017DA60 HttpWebSocketQueryCloseStatus
+        252   86 0017E3C0 HttpWebSocketReceive
+        253   87 0017E970 HttpWebSocketSend
+        254   88 0017EC50 HttpWebSocketShutdown
+        255   89 000150B0 IncrementUrlCacheHeaderData
+        256   8A 0018A0E0 InternetAlgIdToStringA
+        257   8B 0018A2C0 InternetAlgIdToStringW
+        258   8C 0013B0C0 InternetAttemptConnect
+        259   8D 00140DA0 InternetAutodial
+        260   8E 00137080 InternetAutodialCallback
+        261   8F 00140E60 InternetAutodialHangup
+        262   90 0013B120 InternetCanonicalizeUrlA
+        263   91 000C4510 InternetCanonicalizeUrlW
+        264   92 0013B240 InternetCheckConnectionA
+        265   93 0013C760 InternetCheckConnectionW
+        266   94 0016D510 InternetClearAllPerSiteCookieDecisions
+        267   95 0005ECB0 InternetCloseHandle
+        268   96 0013B730 InternetCombineUrlA
+        269   97 00089920 InternetCombineUrlW
+        270   98 0018B2F0 InternetConfirmZoneCrossing
+        271   99 0018B2F0 InternetConfirmZoneCrossingA
+        272   9A 0001B570 InternetConfirmZoneCrossingW
+        273   9B 0013B860 InternetConnectA
+        274   9C 000595E0 InternetConnectW
+        275   9D 00018F00 InternetConvertUrlFromWireToWideChar
+        276   9E 000B8830 InternetCrackUrlA
+        277   9F 00067900 InternetCrackUrlW
+        278   A0 0013BA50 InternetCreateUrlA
+        279   A1 0005C950 InternetCreateUrlW
+        280   A2 00140F10 InternetDial
+        281   A3 00140F10 InternetDialA
+        282   A4 00140FE0 InternetDialW
+        283   A5 0016D520 InternetEnumPerSiteCookieDecisionA
+        284   A6 0016D590 InternetEnumPerSiteCookieDecisionW
+        285   A7 0018B3B0 InternetErrorDlg
+        286   A8 001587C0 InternetFindNextFileA
+        287   A9 0015ADF0 InternetFindNextFileW
+        288   AA 00148740 InternetFortezzaCommand
+        289   AB 000B4D60 InternetFreeCookies
+        290   AC 0016AC70 InternetFreeProxyInfoList
+        291   AD 000CBA00 InternetGetCertByURL
+        292   AE 000CBA00 InternetGetCertByURLA
+        293   AF 000C9E30 InternetGetConnectedState
+        294   B0 001370D0 InternetGetConnectedStateEx
+        295   B1 001370D0 InternetGetConnectedStateExA
+        296   B2 000C9E90 InternetGetConnectedStateExW
+        297   B3 0016EC80 InternetGetCookieA
+        298   B4 000B4EA0 InternetGetCookieEx2
+        299   B5 0016ECB0 InternetGetCookieExA
+        300   B6 000B4A70 InternetGetCookieExW
+        301   B7 0016F000 InternetGetCookieW
+        302   B8 0013BAF0 InternetGetLastResponseInfoA
+        303   B9 0013C860 InternetGetLastResponseInfoW
+        304   BA 0016D690 InternetGetPerSiteCookieDecisionA
+        305   BB 0016D6F0 InternetGetPerSiteCookieDecisionW
+        306   BC 0016AD50 InternetGetProxyForUrl
+        307   BD 00094C30 InternetGetSecurityInfoByURL
+        308   BE 00094C30 InternetGetSecurityInfoByURLA
+        309   BF 00094B50 InternetGetSecurityInfoByURLW
+        310   C0 001410B0 InternetGoOnline
+        311   C1 001410B0 InternetGoOnlineA
+        312   C2 00141170 InternetGoOnlineW
+        313   C3 00141230 InternetHangUp
+        314   C4 00049C30 InternetInitializeAutoProxyDll
+        315   C5 0000CA10 InternetLockRequestFile
+        316   C6 0007AAD0 InternetOpenA
+        317   C7 0013BCB0 InternetOpenUrlA
+        318   C8 0013CA40 InternetOpenUrlW
+        319   C9 0007A8F0 InternetOpenW
+        320   CA 0002FB40 InternetQueryDataAvailable
+        321   CB 001487B0 InternetQueryFortezzaStatus
+        322   CC 000418C0 InternetQueryOptionA
+        323   CD 000B45B0 InternetQueryOptionW
+        324   CE 0007AE80 InternetReadFile
+        325   CF 000219A0 InternetReadFileExA
+        326   D0 00021910 InternetReadFileExW
+        327   D1 0018A4A0 InternetSecurityProtocolToStringA
+        328   D2 0018A620 InternetSecurityProtocolToStringW
+        329   D3 0016F020 InternetSetCookieA
+        330   D4 000BC980 InternetSetCookieEx2
+        331   D5 0016F050 InternetSetCookieExA
+        332   D6 000953D0 InternetSetCookieExW
+        333   D7 0016F100 InternetSetCookieW
+        334   D8 001412D0 InternetSetDialState
+        335   D9 001412D0 InternetSetDialStateA
+        336   DA 00141330 InternetSetDialStateW
+        337   DB 0013BD50 InternetSetFilePointer
+        338   DC 000435B0 InternetSetOptionA
+        339   DD 0013D400 InternetSetOptionExA
+        340   DE 0013D500 InternetSetOptionExW
+        341   DF 00079F40 InternetSetOptionW
+        342   E0 0016D7A0 InternetSetPerSiteCookieDecisionA
+        343   E1 0016D840 InternetSetPerSiteCookieDecisionW
+        344   E2 0007A680 InternetSetStatusCallback
+        345   E3 0007A680 InternetSetStatusCallbackA
+        347   E4 0007A700 InternetSetStatusCallbackW
+        348   E5 0013BF20 InternetShowSecurityInfoByURL
+        349   E6 0013BF20 InternetShowSecurityInfoByURLA
+        350   E7 0013CC20 InternetShowSecurityInfoByURLW
+        351   E8 001A1C20 InternetTimeFromSystemTime
+        352   E9 001A1C20 InternetTimeFromSystemTimeA
+        353   EA 001A1D80 InternetTimeFromSystemTimeW
+        354   EB 001A1EC0 InternetTimeToSystemTime
+        355   EC 001A1EC0 InternetTimeToSystemTimeA
+        356   ED 001A1F10 InternetTimeToSystemTimeW
+        357   EE 0000C800 InternetUnlockRequestFile
+        358   EF 00021C50 InternetWriteFile
+        359   F0 0013C010 InternetWriteFileExA
+        360   F1 0013C010 InternetWriteFileExW
+        361   F2 0005ABB0 IsHostInProxyBypassList
+        362   F3 001A6C70 IsUrlCacheEntryExpiredA
+        363   F4 001A6DD0 IsUrlCacheEntryExpiredW
+        364   F5 0013C010 LoadUrlCacheContent
+        365   F6 0018A7A0 ParseX509EncodedCertificateForListBoxEntry
+        366   F7 0001F610 PrivacyGetZonePreferenceW
+        367   F8 0001F3C0 PrivacySetZonePreferenceW
+        368   F9 001A6F40 ReadUrlCacheEntryStream
+        369   FA 001A7060 ReadUrlCacheEntryStreamEx
+        370   FB 000CBEE0 RegisterUrlCacheNotification
+        371   FC 00140220 ResumeSuspendedDownload
+        372   FD 001A7180 RetrieveUrlCacheEntryFileA
+        373   FE 001A73D0 RetrieveUrlCacheEntryFileW
+        374   FF 001A75F0 RetrieveUrlCacheEntryStreamA
+        375  100 001A7830 RetrieveUrlCacheEntryStreamW
+        376  101 000CBA00 RunOnceUrlCache
+        377  102 001A7A70 SetUrlCacheConfigInfoA
+        378  103 001A7BD0 SetUrlCacheConfigInfoW
+        379  104 001A7CF0 SetUrlCacheEntryGroup
+        380  105 001A7CF0 SetUrlCacheEntryGroupA
+        381  106 001A7EE0 SetUrlCacheEntryGroupW
+        382  107 00007DE0 SetUrlCacheEntryInfoA
+        383  108 001A80E0 SetUrlCacheEntryInfoW
+        384  109 001A82E0 SetUrlCacheGroupAttributeA
+        385  10A 001A84F0 SetUrlCacheGroupAttributeW
+        386  10B 001A86E0 SetUrlCacheHeaderData
+        387  10C 0018A7A0 ShowCertificate
+        388  10D 0018A7A0 ShowClientAuthCerts
+        389  10E 0018A7D0 ShowSecurityInfo
+        390  10F 0018A940 ShowX509EncodedCertificate
+        391  110 001A8820 UnlockUrlCacheEntryFile
+        392  111 001A8820 UnlockUrlCacheEntryFileA
+        393  112 001A8960 UnlockUrlCacheEntryFileW
+        394  113 00059220 UnlockUrlCacheEntryStream
+        395  114 001A8AB0 UpdateUrlCacheContentPath
+        396  115 001A8C00 UrlCacheCheckEntriesExist
+        397  116 001A8C90 UrlCacheCloseEntryHandle
+        398  117 001A8D10 UrlCacheContainerSetEntryMaximumAge
+        399  118 00097880 UrlCacheCreateContainer
+        400  119 00008CE0 UrlCacheFindFirstEntry
+        404  11A 000096B0 UrlCacheFindNextEntry
+        405  11B 000130C0 UrlCacheFreeEntryInfo
+        406  11C 001A8DA0 UrlCacheFreeGlobalSpace
+        407  11D 001A8E90 UrlCacheGetContentPaths
+        408  11E 00007AE0 UrlCacheGetEntryInfo
+        409  11F 001A8F20 UrlCacheGetGlobalCacheSize
+        412  120 001A9030 UrlCacheGetGlobalLimit
+        414  121 001A90C0 UrlCacheReadEntryStream
+        415  122 001A9160 UrlCacheReloadSettings
+        416  123 001A91F0 UrlCacheRetrieveEntryFile
+        417  124 001A9280 UrlCacheRetrieveEntryStream
+        418  125 001A9320 UrlCacheServer
+        419  126 001A93F0 UrlCacheSetGlobalLimit
+        424  127 000C6C50 UrlCacheUpdateEntryExtraData
+        425  128 001857F0 UrlZonesDetach
+        426  129 00145730 _GetFileExtensionFromUrl
+        101      00141BE0 [NONAME]
+        102      001AD6E0 [NONAME]
+        103      001AD7D0 [NONAME]
+        104      0016BD60 [NONAME]
+        105      0016BE20 [NONAME]
+        108      00138600 [NONAME]
+        109      00138CE0 [NONAME]
+        110      00138690 [NONAME]
+        111      00138D80 [NONAME]
+        112      000CBEE0 [NONAME]
+        116      000B8F50 [NONAME]
+        117      0016F2E0 [NONAME]
+        118      0016BD40 [NONAME]
+        120      00140D70 [NONAME]
+        121      00140D70 [NONAME]
+        122      00140D70 [NONAME]
+        123      00140D70 [NONAME]
+        346      001AD7C0 [NONAME]
+        401      00169DA0 [NONAME]
+        402      0016AA90 [NONAME]
+        403      0016AAC0 [NONAME]
+        410      001ACDA0 [NONAME]
+        411      001ACD80 [NONAME]
+        413      001AD630 [NONAME]
+        420      000C1F50 [NONAME]
+        421      000C18B0 [NONAME]
+        422      0001C460 [NONAME]
+        423      00141E60 [NONAME]
+
+  Summary
+
+        5000 .data
+        1000 .didat
+       19000 .pdata
+      2A7000 .rdata
+        2000 .reloc
+       20000 .rsrc
+      1DF000 .text
+       19000 .wpp_sf

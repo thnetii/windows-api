@@ -1,0 +1,50 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\EdgeManager.dll
+
+File Type: DLL
+
+  Section contains the following exports for edgemanager.dll
+
+    00000000 characteristics
+    3BD81A08 time date stamp
+        0.00 version
+           1 ordinal base
+          21 number of functions
+          21 number of names
+
+    ordinal hint RVA      name
+
+          6    0 00008350 CreateCoreWebViewComponentAndUninitializedCoreWebViewComponentCallbackForWebInstance
+          7    1 00003620 CreateCoreWebViewControl
+          8    2 00019580 CreateCoreWebViewHostProcess
+          9    3 00019630 CreateCoreWebViewOOP
+          1    4 0006BE50 CreateEdgeIsoSession
+          2    5 0006FD40 CreateWebRuntimeDebugTargetClient
+          3    6 00074DF0 CreateWebRuntimeDebugTargetManager
+          4    7 0006FE70 CreateWebRuntimeDiagnosticsTarget
+         10    8 00019910 CreateWebViewControlAcceleratorKeyPressedEventArgs
+         11    9 00019A10 CreateWebViewControlAndInitializeCoreWebViewComponentCallback
+         12    A 00019E30 CreateWebViewControlMoveFocusRequestedEventArgs
+         13    B 00015800 DllCanUnloadNow
+         14    C 00015860 DllGetActivationFactory
+         15    D 000158A0 DllGetClassObject
+         16    E 00015930 DllInstall
+         17    F 00015A50 DllRegisterServer
+         18   10 00015AC0 DllUnregisterServer
+         19   11 00043000 EnsureServiceWorkerEnvironmentForWebView
+          5   12 000428E0 EnsureWebDriverForWebViewHost
+         20   13 0000EBB0 GetProxyDllInfo
+         21   14 0006A5C0 GetWebDriverHostInstance
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        A000 .pdata
+       3D000 .rdata
+        5000 .reloc
+        1000 .rsrc
+       92000 .text

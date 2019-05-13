@@ -1,0 +1,78 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\coreaudiopolicymanagerext.dll
+
+File Type: DLL
+
+  Section contains the following exports for coreaudiopolicymanagerext.dll
+
+    00000000 characteristics
+    F63C0673 time date stamp
+        0.00 version
+           1 ordinal base
+          50 number of functions
+          50 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001010 DllMain
+          2    1 00001010 IsApmDuckingGainForIdSupported
+          3    2 00001020 IsApmLayoutGainForIdSupported
+          4    3 00001020 IsApmRegisterProxyAudioProcessSupported
+          5    4 00001020 IsDataRangeForEndpointSupported
+          6    5 00001010 IsHHostEdappManagerContextRundownSupported
+          7    6 00001010 IsHdAudioProtocolNotifyRundownSupported
+          8    7 00001010 IsMmeAudioInterfaceArrivalSupported
+          9    8 00001010 IsMmeAudioInterfaceRemoveSupported
+         10    9 00001010 IsMmeDefaultDeviceChangedSupported
+         11    A 00001010 IsMmeDeviceAddedSupported
+         12    B 00001010 IsMmeDeviceRemovedSupported
+         13    C 00001010 IsMmeDeviceStateChangedSupported
+         14    D 00001010 IsMmeNotifyDefaultDeviceChangedSupported
+         15    E 00001010 IsMmeNotifyDeviceAddedSupported
+         16    F 00001010 IsMmeNotifyDeviceRemovedSupported
+         17   10 00001010 IsMmeNotifyDeviceStateChangedSupported
+         18   11 00001010 IsMmePropertyValueChangedSupported
+         19   12 00001010 IsMmeServiceStartSupported
+         20   13 00001010 IsMmeServiceStopSupported
+         21   14 00001010 IsMmeSessionChangedSupported
+         22   15 00001010 IsPbmAllowMediaPlaybackForAppSupported
+         23   16 00001010 IsPbmCastingAppStateChangedSupported
+         24   17 00001010 IsPbmLaunchBackgroundTaskSupported
+         25   18 00001010 IsPbmPlayToStreamStateChangedSupported
+         26   19 00001010 IsPbmPlayingSupported
+         27   1A 00001010 IsPbmRegisterAppClosureNotificationSupported
+         28   1B 00001010 IsPbmRegisterAppManagerNotificationSupported
+         29   1C 00001010 IsPbmRegisterPlaybackManagerNotificationsSupported
+         30   1D 00001010 IsPbmReportAppClosingSupported
+         31   1E 00001010 IsPbmReportAppInteractivityChangeSupported
+         32   1F 00001010 IsPbmReportApplicationStateSupported
+         33   20 00001010 IsPbmReportHostedAppStateChangeSupported
+         34   21 00001010 IsPbmSessionPlayingSupported
+         35   22 00001010 IsPbmSmtcSubscriptionStateSupported
+         36   23 00001010 IsPbmSoundLevelSupported
+         37   24 00001010 IsPbmSwitchSoftNonToHardNonInteractiveSupported
+         38   25 00001010 IsPbmUnregisterAppClosureNotificationSupported
+         39   26 00001010 IsPbmUnregisterAppManagerNotificationSupported
+         40   27 00001010 IsPbmUnregisterPlaybackManagerNotificationsSupported
+         41   28 00001010 IsScreenReaderStateSupported
+         42   29 00001010 IsTSRegisterAudioProtocolNotificationSupported
+         43   2A 00001010 IsTSServiceSessionChangeSupported
+         44   2B 00001010 IsTSSessionGetAudioProtocolSupported
+         45   2C 00001010 IsTSSessionIdAudioProtocolSupported
+         46   2D 00001010 IsTSSessionIdRegisterVolumeTrackerForSessionSupported
+         47   2E 00001010 IsTSSessionIdStreamStartedSupported
+         48   2F 00001010 IsTSSessionIdStreamStoppedSupported
+         49   30 00001010 IsTSUnregisterAudioProtocolNotificationSupported
+         50   31 00001010 IsWinmmGetPnpInfoSupported
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        2000 .text

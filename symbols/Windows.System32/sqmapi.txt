@@ -1,0 +1,90 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\sqmapi.dll
+
+File Type: DLL
+
+  Section contains the following exports for sqmapi.dll
+
+    00000000 characteristics
+    E47561F0 time date stamp
+        0.00 version
+           1 ordinal base
+          62 number of functions
+          62 number of names
+
+    ordinal hint RVA      name
+
+         12    0 00004400 SqmAddToAverage
+         13    1 00004420 SqmAddToStream
+         14    2 00004400 SqmAddToStreamDWord
+         15    3 00004400 SqmAddToStreamDWord64
+         16    4 00004400 SqmAddToStreamString
+         17    5 00004400 SqmAddToStreamV
+          2    6 00004360 SqmCheckEscalationAddToStreamDWord
+          1    7 00004360 SqmCheckEscalationAddToStreamDWord64
+          3    8 00004360 SqmCheckEscalationAddToStreamString
+          5    9 00004390 SqmCheckEscalationSetDWord
+          4    A 00004390 SqmCheckEscalationSetDWord64
+          6    B 00004390 SqmCheckEscalationSetString
+         18    C 00004400 SqmCleanup
+         19    D 00004400 SqmClearFlags
+         20    E 00004450 SqmCreateNewId
+         21    F 00004400 SqmEndSession
+         22   10 00004400 SqmEndSessionEx
+         23   11 00004400 SqmFlushSession
+         24   12 00004480 SqmGetEnabled
+          7   13 000010B0 SqmGetEscalationRuleStatus
+         25   14 000044A0 SqmGetFlags
+          8   15 000043C0 SqmGetInstrumentationProperty
+         26   16 000044D0 SqmGetLastUploadTime
+         27   17 00004500 SqmGetMachineId
+         28   18 00004400 SqmGetSession
+         29   19 00004530 SqmGetSessionStartTime
+         30   1A 00004500 SqmGetUserId
+         31   1B 00004400 SqmIncrement
+         32   1C 000010B0 SqmIsNamespaceEnabled
+         33   1D 000010B0 SqmIsWindowsOptedIn
+          9   1E 00004400 SqmLoadEscalationManifest
+         34   1F 00004450 SqmReadSharedMachineId
+         35   20 00004450 SqmReadSharedUserId
+         36   21 00004400 SqmSet
+         37   22 00004400 SqmSetAppId
+         38   23 00004400 SqmSetAppVersion
+         39   24 00004400 SqmSetBits
+         40   25 00004400 SqmSetBool
+         41   26 00004400 SqmSetCurrentTimeAsUploadTime
+         42   27 00004400 SqmSetDWord64
+         43   28 00004400 SqmSetEnabled
+         10   29 00004400 SqmSetEscalationInfo
+         44   2A 00004400 SqmSetFlags
+         45   2B 00004400 SqmSetIfMax
+         46   2C 00004400 SqmSetIfMin
+         47   2D 00004400 SqmSetMachineId
+         48   2E 00004400 SqmSetString
+         49   2F 00004400 SqmSetUserId
+         50   30 00004400 SqmStartSession
+         51   31 00004480 SqmStartUpload
+         52   32 00004480 SqmStartUploadEx
+         53   33 00004170 SqmSysprepCleanup
+         54   34 00004190 SqmSysprepGeneralize
+         55   35 00004400 SqmTimerAccumulate
+         56   36 00004400 SqmTimerAddToAverage
+         57   37 00004400 SqmTimerRecord
+         58   38 00004400 SqmTimerStart
+         59   39 00001AF0 SqmUnattendedSetup
+         11   3A 00004400 SqmUnloadEscalationManifest
+         60   3B 00004400 SqmWaitForUploadComplete
+         61   3C 00004400 SqmWriteSharedMachineId
+         62   3D 00004400 SqmWriteSharedUserId
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        3000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        6000 .text

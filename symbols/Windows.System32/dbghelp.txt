@@ -1,0 +1,284 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\dbghelp.dll
+
+File Type: DLL
+
+  Section contains the following exports for dbghelp.dll
+
+    00000000 characteristics
+     5F0E9A4 time date stamp
+        0.00 version
+        1101 ordinal base
+         254 number of functions
+         240 number of names
+
+    ordinal hint RVA      name
+
+       1123    0 001267C0 DbgHelpCreateUserDump
+       1124    1 001268A0 DbgHelpCreateUserDumpW
+       1125    2 001201A0 EnumDirTree
+       1126    3 001202C0 EnumDirTreeW
+       1127    4 0011A0A0 EnumerateLoadedModules
+       1128    5 0011A0A0 EnumerateLoadedModules64
+       1129    6 0011A120 EnumerateLoadedModulesEx
+       1130    7 0011A1A0 EnumerateLoadedModulesExW
+       1131    8 0011A220 EnumerateLoadedModulesW64
+       1132    9 0000BAA0 ExtensionApiVersion
+       1133    A 00120310 FindDebugInfoFile
+       1134    B 00120330 FindDebugInfoFileEx
+       1135    C 00120400 FindDebugInfoFileExW
+       1136    D 00120450 FindExecutableImage
+       1137    E 00120470 FindExecutableImageEx
+       1138    F 00120570 FindExecutableImageExW
+       1139   10 001205C0 FindFileInPath
+       1140   11 00120610 FindFileInSearchPath
+       1141   12 0011A2A0 GetSymLoadError
+       1142   13 00111650 GetTimestampForLoadedLibrary
+       1143   14 00111100 ImageDirectoryEntryToData
+       1144   15 00111120 ImageDirectoryEntryToDataEx
+       1145   16 00111240 ImageNtHeader
+       1146   17 00111270 ImageRvaToSection
+       1147   18 001112D0 ImageRvaToVa
+       1148   19 00120660 ImagehlpApiVersion
+       1149   1A 0000B9B0 ImagehlpApiVersionEx
+       1150   1B 00120670 MakeSureDirectoryPathExists
+       1151   1C          MiniDumpReadDumpStream (forwarded to dbgcore.MiniDumpReadDumpStream)
+       1152   1D          MiniDumpWriteDump (forwarded to dbgcore.MiniDumpWriteDump)
+       1153   1E 00138BB0 RangeMapAddPeImageSections
+       1154   1F 00138C60 RangeMapCreate
+       1155   20 00138CC0 RangeMapFree
+       1156   21 00138CE0 RangeMapRead
+       1157   22 00138D40 RangeMapRemove
+       1158   23 00138D90 RangeMapWrite
+       1159   24 0000BAB0 RemoveInvalidModuleList
+       1160   25 0000B560 ReportSymbolLoadSummary
+       1161   26 001207F0 SearchTreeForFile
+       1162   27 00120820 SearchTreeForFileW
+       1163   28 0000BAB0 SetCheckUserInterruptShared
+       1164   29 0011A2B0 SetSymLoadError
+       1165   2A 0012B8D0 StackWalk
+       1166   2B 0012B8D0 StackWalk64
+       1167   2C 00007D80 StackWalkEx
+       1168   2D 0011A2C0 SymAddSourceStream
+       1169   2E 0011A2D0 SymAddSourceStreamA
+       1170   2F 0011A340 SymAddSourceStreamW
+       1171   30 0011A4B0 SymAddSymbol
+       1172   31 0011A530 SymAddSymbolW
+       1173   32 0000BA40 SymAddrIncludeInlineTrace
+       1174   33 0000B700 SymCleanup
+       1175   34 0011A620 SymCompareInlineTrace
+       1176   35 0011AB70 SymDeleteSymbol
+       1177   36 0011ABE0 SymDeleteSymbolW
+       1178   37 0011ACB0 SymEnumLines
+       1179   38 0011AD90 SymEnumLinesW
+       1180   39 0011AE40 SymEnumProcesses
+       1181   3A 0011AED0 SymEnumSourceFileTokens
+       1182   3B 0011AF70 SymEnumSourceFiles
+       1183   3C 0011AFA0 SymEnumSourceFilesW
+       1184   3D 0011AFD0 SymEnumSourceLines
+       1185   3E 0011B020 SymEnumSourceLinesW
+       1186   3F 0011B070 SymEnumSym
+       1187   40 0011B0A0 SymEnumSymbols
+       1188   41 0011B0D0 SymEnumSymbolsEx
+       1189   42 0011B180 SymEnumSymbolsExW
+       1190   43 0011B220 SymEnumSymbolsForAddr
+       1191   44 0011B340 SymEnumSymbolsForAddrW
+       1192   45 0011B460 SymEnumSymbolsW
+       1193   46 0011B490 SymEnumTypes
+       1194   47 0011B520 SymEnumTypesByName
+       1195   48 0011B600 SymEnumTypesByNameW
+       1196   49 0011B6A0 SymEnumTypesW
+       1197   4A 0011B730 SymEnumerateModules
+       1198   4B 0011B730 SymEnumerateModules64
+       1199   4C 0011B7A0 SymEnumerateModulesW64
+       1200   4D 0011B810 SymEnumerateSymbols
+       1201   4E 0011B810 SymEnumerateSymbols64
+       1202   4F 0011B890 SymEnumerateSymbolsW
+       1203   50 0011B890 SymEnumerateSymbolsW64
+       1204   51 00120850 SymFindDebugInfoFile
+       1205   52 00120940 SymFindDebugInfoFileW
+       1206   53 001209C0 SymFindExecutableImage
+       1207   54 00120AB0 SymFindExecutableImageW
+       1208   55 00120B30 SymFindFileInPath
+       1209   56 00120C70 SymFindFileInPathW
+       1111   57 00118A70 SymFreeDiaString
+       1210   58 0011B910 SymFromAddr
+       1211   59 0011B930 SymFromAddrW
+       1212   5A 0011B950 SymFromIndex
+       1213   5B 0011B9C0 SymFromIndexW
+       1214   5C 0011BAA0 SymFromInlineContext
+       1215   5D 0011BAF0 SymFromInlineContextW
+       1216   5E 00012820 SymFromName
+       1217   5F 0011BB40 SymFromNameW
+       1218   60 0011BB70 SymFromToken
+       1219   61 0011BC20 SymFromTokenW
+       1220   62 00008850 SymFunctionTableAccess
+       1221   63 00008850 SymFunctionTableAccess64
+       1222   64 00008870 SymFunctionTableAccess64AccessRoutines
+       1112   65 00118A80 SymGetDiaSession
+       1223   66 00012BB0 SymGetExtendedOption
+       1224   67 00113E10 SymGetFileLineOffsets64
+       1225   68 0011BD10 SymGetHomeDirectory
+       1226   69 0011BD90 SymGetHomeDirectoryW
+       1227   6A 0011BE50 SymGetLineFromAddr
+       1228   6B 0011BE50 SymGetLineFromAddr64
+       1113   6C 00118B20 SymGetLineFromAddrEx
+       1229   6D 0011BE80 SymGetLineFromAddrW64
+       1230   6E 0011BEB0 SymGetLineFromInlineContext
+       1231   6F 0011BEE0 SymGetLineFromInlineContextW
+       1232   70 0011BF10 SymGetLineFromName
+       1233   71 0011BF10 SymGetLineFromName64
+       1114   72 00118DC0 SymGetLineFromNameEx
+       1234   73 0011BF40 SymGetLineFromNameW64
+       1235   74 0011BF70 SymGetLineNext
+       1236   75 0011BF70 SymGetLineNext64
+       1119   76 001194B0 SymGetLineNextEx
+       1237   77 0011BF80 SymGetLineNextW64
+       1238   78 0011BFA0 SymGetLinePrev
+       1239   79 0011BFA0 SymGetLinePrev64
+       1120   7A 00119540 SymGetLinePrevEx
+       1240   7B 0011BFB0 SymGetLinePrevW64
+       1241   7C 00009A60 SymGetModuleBase
+       1242   7D 00009A60 SymGetModuleBase64
+       1243   7E 0011BFD0 SymGetModuleInfo
+       1244   7F 0011BFD0 SymGetModuleInfo64
+       1245   80 0000AA00 SymGetModuleInfoW
+       1246   81 0000AA00 SymGetModuleInfoW64
+       1121   82 001195D0 SymGetOmapBlockBase
+       1247   83 0011C070 SymGetOmaps
+       1248   84 00010E90 SymGetOptions
+       1249   85 0011C150 SymGetScope
+       1250   86 0011C1D0 SymGetScopeW
+       1251   87 0011C2E0 SymGetSearchPath
+       1252   88 0011C360 SymGetSearchPathW
+       1253   89 0011C3C0 SymGetSourceFile
+       1254   8A 0011C440 SymGetSourceFileChecksum
+       1255   8B 0011C4D0 SymGetSourceFileChecksumW
+       1256   8C 0011C5E0 SymGetSourceFileFromToken
+       1257   8D 0011C690 SymGetSourceFileFromTokenW
+       1258   8E 0011C700 SymGetSourceFileToken
+       1259   8F 0011C770 SymGetSourceFileTokenW
+       1260   90 0011C830 SymGetSourceFileW
+       1261   91 0011C8B0 SymGetSourceVarFromToken
+       1262   92 0011C980 SymGetSourceVarFromTokenW
+       1263   93 0011CA30 SymGetSymFromAddr
+       1264   94 0011CA30 SymGetSymFromAddr64
+       1265   95 0011CA70 SymGetSymFromName
+       1266   96 0011CA70 SymGetSymFromName64
+       1267   97 0011CAE0 SymGetSymNext
+       1268   98 0011CAE0 SymGetSymNext64
+       1269   99 0011CB00 SymGetSymPrev
+       1270   9A 0011CB00 SymGetSymPrev64
+       1271   9B 00125280 SymGetSymbolFile
+       1272   9C 001253B0 SymGetSymbolFileW
+       1273   9D 0011CB10 SymGetTypeFromName
+       1274   9E 0011CBC0 SymGetTypeFromNameW
+       1275   9F 0011CD20 SymGetTypeInfo
+       1276   A0 0011CD60 SymGetTypeInfoEx
+       1277   A1 0011CD90 SymGetUnwindInfo
+       1278   A2 00011560 SymInitialize
+       1279   A3 0000BC90 SymInitializeW
+       1280   A4 00013780 SymLoadModule
+       1281   A5 00013780 SymLoadModule64
+       1282   A6 000137C0 SymLoadModuleEx
+       1283   A7 0000B450 SymLoadModuleExW
+       1284   A8 0011CF20 SymMatchFileName
+       1285   A9 0011D020 SymMatchFileNameW
+       1286   AA 0011D100 SymMatchString
+       1287   AB 0011D140 SymMatchStringA
+       1288   AC 0011D150 SymMatchStringW
+       1289   AD 0011D190 SymNext
+       1290   AE 0011D230 SymNextW
+       1291   AF 0011D250 SymPrev
+       1292   B0 0011D2F0 SymPrevW
+       1293   B1 0011D300 SymQueryInlineTrace
+       1294   B2 0011D610 SymRefreshModuleList
+       1295   B3 0011D680 SymRegisterCallback
+       1296   B4 0011D680 SymRegisterCallback64
+       1297   B5 0000B890 SymRegisterCallbackW64
+       1298   B6 0000B940 SymRegisterFunctionEntryCallback
+       1299   B7 0000B940 SymRegisterFunctionEntryCallback64
+       1300   B8 0011D6F0 SymSearch
+       1301   B9 0011D7C0 SymSearchW
+       1302   BA 0011D880 SymSetContext
+       1303   BB 0011D930 SymSetExtendedOption
+       1304   BC 0011D950 SymSetHomeDirectory
+       1305   BD 0011D9F0 SymSetHomeDirectoryW
+       1306   BE 000106B0 SymSetOptions
+       1307   BF 0011DA70 SymSetParentWindow
+       1308   C0 0011DAA0 SymSetScopeFromAddr
+       1309   C1 0011DAB0 SymSetScopeFromIndex
+       1310   C2 00009910 SymSetScopeFromInlineContext
+       1311   C3 0011DB70 SymSetSearchPath
+       1312   C4 0000CE40 SymSetSearchPathW
+       1313   C5 00125850 SymSrvDeltaName
+       1314   C6 00125920 SymSrvDeltaNameW
+       1315   C7 00125AD0 SymSrvGetFileIndexInfo
+       1316   C8 00125BA0 SymSrvGetFileIndexInfoW
+       1317   C9 00125CD0 SymSrvGetFileIndexString
+       1318   CA 00125D90 SymSrvGetFileIndexStringW
+       1319   CB 00125E60 SymSrvGetFileIndexes
+       1320   CC 00125ED0 SymSrvGetFileIndexesW
+       1321   CD 00125F90 SymSrvGetSupplement
+       1322   CE 00126050 SymSrvGetSupplementW
+       1323   CF 00126160 SymSrvIsStore
+       1324   D0 001261A0 SymSrvIsStoreW
+       1325   D1 00126290 SymSrvStoreFile
+       1326   D2 00126330 SymSrvStoreFileW
+       1327   D3 001263F0 SymSrvStoreSupplement
+       1328   D4 001264B0 SymSrvStoreSupplementW
+       1329   D5 0011DBB0 SymUnDName
+       1330   D6 0011DBB0 SymUnDName64
+       1331   D7 000085C0 SymUnloadModule
+       1332   D8 000085C0 SymUnloadModule64
+       1333   D9 0011DC00 UnDecorateSymbolName
+       1334   DA 0011DC90 UnDecorateSymbolNameW
+       1335   DB 0000B9F0 WinDbgExtensionDllInit
+       1122   DC 0010AA00 _EFN_DumpImage
+       1336   DD 0010EE80 block
+       1337   DE 0010F040 chksym
+       1338   DF 0011DD40 dbghelp
+       1339   E0 0010F210 dh
+       1340   E1 0010F220 fptr
+       1341   E2 0010F2B0 homedir
+       1342   E3 0010F3E0 inlinedbg
+       1343   E4 0010F450 itoldyouso
+       1344   E5 0010F620 lmi
+       1345   E6 0010F920 lminfo
+       1346   E7 0010FB40 omap
+       1347   E8 0010FD50 optdbgdump
+       1348   E9 0010FE90 optdbgdumpaddr
+       1349   EA 0010FFD0 srcfiles
+       1350   EB 001100F0 stack_force_ebp
+       1351   EC 00110260 stackdbg
+       1352   ED 00110430 sym
+       1353   EE 00110560 symsrv
+       1354   EF 001105B0 vc7fpo
+       1101      001188A0 [NONAME]
+       1102      001189A0 [NONAME]
+       1103      00118B50 [NONAME]
+       1104      00118EA0 [NONAME]
+       1105      00119520 [NONAME]
+       1106      001195B0 [NONAME]
+       1107      00118B20 [NONAME]
+       1108      00118DC0 [NONAME]
+       1109      001194B0 [NONAME]
+       1110      00119540 [NONAME]
+       1115      00118B80 [NONAME]
+       1116      00118C50 [NONAME]
+       1117      00118730 [NONAME]
+       1118      001187F0 [NONAME]
+
+  Summary
+
+       20000 .data
+        1000 .didat
+        3000 .mrdata
+       16000 .pdata
+       58000 .rdata
+        5000 .reloc
+        1000 .rsrc
+      154000 .text

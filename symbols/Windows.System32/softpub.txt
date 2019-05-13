@@ -1,0 +1,52 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\softpub.dll
+
+File Type: DLL
+
+  Section contains the following exports for SOFTPUB.dll
+
+    00000000 characteristics
+    6662C78A time date stamp
+        0.00 version
+           1 ordinal base
+          24 number of functions
+          24 number of names
+
+    ordinal hint RVA      name
+
+          7    0          AddPersonalTrustDBPages (forwarded to Wintrust.AddPersonalTrustDBPages)
+          8    1          DllRegisterServer (forwarded to Wintrust.SoftpubDllRegisterServer)
+          9    2          DllUnregisterServer (forwarded to Wintrust.SoftpubDllUnregisterServer)
+         10    3          DriverCleanupPolicy (forwarded to Wintrust.DriverCleanupPolicy)
+         11    4          DriverFinalPolicy (forwarded to Wintrust.DriverFinalPolicy)
+         12    5          DriverInitializePolicy (forwarded to Wintrust.DriverInitializePolicy)
+         13    6          FindCertsByIssuer (forwarded to Wintrust.FindCertsByIssuer)
+          1    7          GenericChainCertificateTrust (forwarded to Wintrust.GenericChainCertificateTrust)
+          2    8          GenericChainFinalProv (forwarded to Wintrust.GenericChainFinalProv)
+          3    9          HTTPSCertificateTrust (forwarded to Wintrust.HTTPSCertificateTrust)
+         14    A          HTTPSFinalProv (forwarded to Wintrust.HTTPSFinalProv)
+         15    B          OfficeCleanupPolicy (forwarded to Wintrust.OfficeCleanupPolicy)
+         16    C          OfficeInitializePolicy (forwarded to Wintrust.OfficeInitializePolicy)
+         17    D          OpenPersonalTrustDBDialog (forwarded to Wintrust.OpenPersonalTrustDBDialog)
+         18    E          SoftpubAuthenticode (forwarded to Wintrust.SoftpubAuthenticode)
+         19    F          SoftpubCheckCert (forwarded to Wintrust.SoftpubCheckCert)
+         20   10          SoftpubCleanup (forwarded to Wintrust.SoftpubCleanup)
+          4   11          SoftpubDefCertInit (forwarded to Wintrust.SoftpubDefCertInit)
+         21   12          SoftpubDumpStructure (forwarded to Wintrust.SoftpubDumpStructure)
+          5   13          SoftpubFreeDefUsageCallData (forwarded to Wintrust.SoftpubFreeDefUsageCallData)
+         22   14          SoftpubInitialize (forwarded to Wintrust.SoftpubInitialize)
+          6   15          SoftpubLoadDefUsageCallData (forwarded to Wintrust.SoftpubLoadDefUsageCallData)
+         23   16          SoftpubLoadMessage (forwarded to Wintrust.SoftpubLoadMessage)
+         24   17          SoftpubLoadSignature (forwarded to Wintrust.SoftpubLoadSignature)
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        1000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        1000 .text

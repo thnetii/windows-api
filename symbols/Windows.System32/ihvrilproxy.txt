@@ -1,0 +1,162 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\ihvrilproxy.dll
+
+File Type: DLL
+
+  Section contains the following exports for IhvRilProxy.dll
+
+    00000000 characteristics
+    686B518F time date stamp
+        0.00 version
+           1 ordinal base
+         138 number of functions
+         134 number of names
+
+    ordinal hint RVA      name
+
+         55    0 000039B0 RIL_AddCallForwarding
+        127    1 00001AA0 RIL_CancelGetOperatorList
+         98    2 000042F0 RIL_CancelSupServiceDataSession
+         59    3 00003C90 RIL_ChangeCallBarringPassword
+         27    4 00005240 RIL_ChangeUiccLockPassword
+        106    5 00004C40 RIL_CloseUiccLogicalChannel
+        107    6 00004C80 RIL_CloseUiccLogicalChannelGroup
+         30    7 000053F0 RIL_DeactivatePerso
+          2    8 000026C0 RIL_Deinitialize
+        100    9 000058C0 RIL_DeleteAdditionalNumberString
+         74    A 00002BA0 RIL_DeleteMsg
+         33    B 00005670 RIL_DeletePhonebookEntry
+         90    C 00001F50 RIL_DevSpecific
+        117    D 00003220 RIL_Dial
+         50    E 00003130 RIL_Dial_V1
+        121    F 00005E20 RIL_DisableModemFilters
+          5   10 000028C0 RIL_DisableNotifications
+        124   11 00005EA0 RIL_DrainModemLogs
+         52   12 00003880 RIL_EmergencyModeControl
+        120   13 00005DE0 RIL_EnableModemFilters
+          4   14 000027F0 RIL_EnableNotifications
+         13   15 000046A0 RIL_EnumerateSlots
+        108   16 00004CC0 RIL_ExchangeUiccAPDU
+         35   17 000057B0 RIL_GetAllAdditionalNumberStrings
+         36   18 00005900 RIL_GetAllEmergencyNumbers
+         57   19 00003B10 RIL_GetCallBarringStatus
+         53   1A 000038C0 RIL_GetCallForwardingSettings
+         60   1B 00003E50 RIL_GetCallWaitingSettings
+         62   1C 00003F30 RIL_GetCallerIdSettings
+         14   1D 000046C0 RIL_GetCardInfo
+         75   1E 00002BE0 RIL_GetCellBroadcastMsgConfig
+         45   1F 00001A60 RIL_GetCurrentRegStatus
+         95   20 00001430 RIL_GetDMProfileConfigInfo
+          7   21 000013B0 RIL_GetDevCaps
+          8   22 000013F0 RIL_GetDeviceInfo
+         63   23 00003F70 RIL_GetDialedIdSettings
+          6   24 00001370 RIL_GetDriverVersion
+        114   25 000045E0 RIL_GetEmergencyMode
+          9   26 00001500 RIL_GetEquipmentState
+         40   27 00001690 RIL_GetExecutorConfig
+        112   28 00004540 RIL_GetExecutorFocus
+        115   29 00004620 RIL_GetExecutorRFState
+         64   2A 00003FB0 RIL_GetHideConnectedIdSettings
+         65   2B 00003FF0 RIL_GetHideIdSettings
+         20   2C 00004AB0 RIL_GetIMSI
+         83   2D 000030F0 RIL_GetIMSStatus
+         77   2E 00002D20 RIL_GetMsgInUiccStatus
+         71   2F 00002A80 RIL_GetMsgServiceOptions
+         12   30 000015A0 RIL_GetNotificationFilterState
+          3   31 00002700 RIL_GetNumberOfModems
+         43   32 00001910 RIL_GetOperatorList
+        131   33 00001AE0 RIL_GetPSMediaConfiguration
+         29   34 000053B0 RIL_GetPersoDeactivationState
+         34   35 00005770 RIL_GetPhonebookOptions
+         84   36 00001C30 RIL_GetPositionInfo
+         44   37 00001950 RIL_GetPreferredOperatorList
+        103   38 00002160 RIL_GetRFState
+         38   39 00001600 RIL_GetRadioConfiguration
+         86   3A 00001D40 RIL_GetRadioStateDetails
+         85   3B 00001D00 RIL_GetRadioStateGroups
+         81   3C 00002FD0 RIL_GetSMSC
+         46   3D 00001BF0 RIL_GetSignalQuality
+         21   3E 00004AF0 RIL_GetSubscriberNumbers
+         42   3F 000018D0 RIL_GetSystemSelectionPrefs
+        135   40 00004E90 RIL_GetTerminalCapability
+        104   41 00004B30 RIL_GetUiccATR
+         28   42 00005370 RIL_GetUiccAppPersoCheckState
+         22   43 00004EB0 RIL_GetUiccLockState
+         19   44 00004A70 RIL_GetUiccPRLID
+         16   45 00004740 RIL_GetUiccRecordStatus
+         23   46 00004F00 RIL_GetUiccServiceLock
+        110   47 00005C30 RIL_GetUiccServiceState
+         93   48 00005A50 RIL_GetUiccToolkitProfile
+          1   49 00002610 RIL_Initialize
+        137   4A 000036C0 RIL_ManageCalls
+         51   4B 000033B0 RIL_ManageCalls_V1
+        118   4C 00003420 RIL_ManageCalls_V2
+        132   4D 00003530 RIL_ManageCalls_V3
+        105   4E 00004B70 RIL_OpenUiccLogicalChannel
+         89   4F 00001F10 RIL_RadioStateGetPasswordRetryCount
+         88   50 00001E70 RIL_RadioStatePasswordCompare
+         72   51 00002AC0 RIL_ReadMsg
+         31   52 00005490 RIL_ReadPhonebookEntries
+         91   53 00005920 RIL_RegisterUiccToolkitService
+         56   54 00003AA0 RIL_RemoveCallForwarding
+        125   55 00002180 RIL_ResetModem
+         68   56 000043D0 RIL_SendDTMF
+         66   57 00004030 RIL_SendFlash
+         80   58 00002E10 RIL_SendMsg
+        129   59 00002F40 RIL_SendMsgAck
+        101   5A 00002EC0 RIL_SendMsgAck_V1
+        138   5B 00004330 RIL_SendRTT
+         17   5C 000047B0 RIL_SendRestrictedUiccCmd
+         67   5D 00004110 RIL_SendSupServiceData
+         97   5E 00004200 RIL_SendSupServiceDataResponse
+         48   5F 00005A70 RIL_SendUiccToolkitCmdResponse
+         94   60 00005B50 RIL_SendUiccToolkitEnvelope
+         58   61 00003B80 RIL_SetCallBarringStatus
+         54   62 00003930 RIL_SetCallForwardingStatus
+         61   63 00003EC0 RIL_SetCallWaitingStatus
+         76   64 00002C20 RIL_SetCellBroadcastMsgConfig
+         96   65 00001470 RIL_SetDMProfileConfigInfo
+         10   66 00001520 RIL_SetEquipmentState
+         39   67 00001620 RIL_SetExecutorConfig
+        113   68 00004560 RIL_SetExecutorFocus
+        116   69 00004660 RIL_SetExecutorRFState
+        133   6A 00001C70 RIL_SetGeolocationData
+         78   6B 00002D60 RIL_SetMsgInUiccStatus
+         79   6C 00002DD0 RIL_SetMsgMemoryStatus
+         11   6D 00001560 RIL_SetNotificationFilterState
+        130   6E 00001B20 RIL_SetPSMediaConfiguration
+        109   6F 00001990 RIL_SetPreferredOperatorList
+        119   70 00002050 RIL_SetRFState
+        102   71 00002010 RIL_SetRFState_V1
+         37   72 000015C0 RIL_SetRadioConfiguration
+         87   73 00001D80 RIL_SetRadioStateDetails
+         82   74 00003010 RIL_SetSMSC
+         15   75 00004700 RIL_SetSlotPower
+        126   76 000017C0 RIL_SetSystemSelectionPrefs
+         41   77 000016D0 RIL_SetSystemSelectionPrefs_V1
+        134   78 00004DB0 RIL_SetTerminalCapability
+         25   79 00005030 RIL_SetUiccLockEnabled
+        111   7A 00005C70 RIL_SetUiccServiceState
+         92   7B 00005960 RIL_SetUiccToolkitProfile
+         69   7C 000044C0 RIL_StartDTMF
+        122   7D 00005E60 RIL_StartModemLogs
+         70   7E 00004500 RIL_StopDTMF
+        123   7F 00005E80 RIL_StopModemLogs
+         26   80 00005110 RIL_UnblockUiccLock
+         24   81 00004F50 RIL_VerifyUiccLock
+         18   82 00004970 RIL_WatchUiccFileChange
+         99   83 000057F0 RIL_WriteAdditionalNumberString
+         73   84 00002B00 RIL_WriteMsg
+         32   85 00005500 RIL_WritePhonebookEntry
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        6000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        A000 .text

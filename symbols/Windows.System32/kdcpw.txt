@@ -1,0 +1,40 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\kdcpw.dll
+
+File Type: DLL
+
+  Section contains the following exports for KDCPW.dll
+
+    00000000 characteristics
+    5B2C55CA time date stamp
+        0.00 version
+           1 ordinal base
+          11 number of functions
+          11 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001550 CredentialUpdateFree
+          3    1 00001410 CredentialUpdateNotify
+          2    2 000014B0 CredentialUpdateNotify2
+          5    3 00001570 CredentialUpdateRegister
+          4    4 00001590 CredentialUpdateRegister2
+         10    5 00001400 InitializeChangeNotify
+         11    6 000013F0 PasswordChangeNotify
+          6    7 000015B0 RegisterMappedEntrypoints
+          7    8 00001550 StrongNtowfFree
+          8    9 00001710 StrongNtowfNotify
+          9    A 000016F0 StrongNtowfRegister
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        4000 .text

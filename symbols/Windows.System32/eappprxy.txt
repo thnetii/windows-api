@@ -1,0 +1,47 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\eappprxy.dll
+
+File Type: DLL
+
+  Section contains the following exports for eappprxy.dll
+
+    00000000 characteristics
+    D3F87F4D time date stamp
+        0.00 version
+           1 ordinal base
+          18 number of functions
+          18 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00002530 EapHostPeerBeginSession
+          2    1 00005640 EapHostPeerClearConnection
+          3    2 00005150 EapHostPeerEndSession
+          4    3 000058A0 EapHostPeerFreeEapError
+          5    4 00005A60 EapHostPeerFreeRuntimeMemory
+          6    5 00004D90 EapHostPeerGetAuthStatus
+          7    6 000053F0 EapHostPeerGetDataToUnplumbCredentials
+          8    7 00003330 EapHostPeerGetEncryptedPassword
+          9    8 00002D30 EapHostPeerGetIdentity
+         10    9 00004720 EapHostPeerGetResponseAttributes
+         11    A 00003CB0 EapHostPeerGetResult
+         12    B 00003900 EapHostPeerGetSendPacket
+         13    C 00004090 EapHostPeerGetUIContext
+         14    D 000021D0 EapHostPeerInitialize
+         15    E 00003620 EapHostPeerProcessReceivedPacket
+         16    F 00004AB0 EapHostPeerSetResponseAttributes
+         17   10 00004440 EapHostPeerSetUIContext
+         18   11 00002380 EapHostPeerUninitialize
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        1000 .pdata
+        6000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        A000 .text

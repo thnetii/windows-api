@@ -1,0 +1,48 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\unimdmat.dll
+
+File Type: DLL
+
+  Section contains the following exports for UNIMDMAT.dll
+
+    00000000 characteristics
+    A00EEC00 time date stamp
+        0.00 version
+         100 ordinal base
+          19 number of functions
+          19 number of names
+
+    ordinal hint RVA      name
+
+        112    0 000076B0 UmAbortCurrentModemCommand
+        106    1 000036C0 UmAnswerModem
+        103    2 000093E0 UmCloseModem
+        101    3 000058F0 UmDeinitializeModemDriver
+        107    4 00003860 UmDialModem
+        111    5 00007610 UmDuplicateDeviceHandle
+        109    6 0000B6F0 UmGenerateDigit
+        117    7 00007DC0 UmGetDiagnostics
+        108    8 00005150 UmHangupModem
+        104    9 00005CE0 UmInitModem
+        100    A 00005860 UmInitializeModemDriver
+        114    B 00007A90 UmIssueCommand
+        118    C 00007570 UmLogDiagnostics
+        116    D 00007C00 UmLogStringA
+        105    E 000062C0 UmMonitorModem
+        102    F 000081A0 UmOpenModem
+        113   10 00007790 UmSetPassthroughMode
+        110   11 0000BA50 UmSetSpeakerPhoneState
+        115   12 0000DB20 UmWaveAction
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        3000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        E000 .text

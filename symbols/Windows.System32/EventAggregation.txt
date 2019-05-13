@@ -1,0 +1,62 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\EventAggregation.dll
+
+File Type: DLL
+
+  Section contains the following exports for EventAggregation.dll
+
+    00000000 characteristics
+    C7CA5AB0 time date stamp
+        0.00 version
+           1 ordinal base
+          33 number of functions
+          33 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00006DD0 BriAllocateRpcBuffer
+          2    1 00006ED0 BriCleanup
+          3    2 00007110 BriCreateBrokeredEvent
+          4    3 00007160 BriCreateBrokeredEventEx
+          5    4 000079B0 BriDeleteBrokeredEvent
+          6    5 00007B20 BriFreeRpcBuffer
+          7    6 000085C0 BriGetBrokerAvailabilityChangeStamp
+          8    7 00006E00 BriIsBrokerRegistered
+          9    8 000086F0 BriRegisterToBrokerAvailability
+         10    9 00008410 BriResolveBrokerIdByEventId
+         11    A 00008470 BriSignalBrokeredEvent
+         12    B 00008830 BriUnregisterFromBrokerAvailability
+         13    C 00003EB0 EACreateAggregateEvent
+         14    D 000045D0 EADeleteAggregateEvent
+         15    E 00004640 EAEnumerateAggregateEvents
+         16    F 000047B0 EAQueryAggregateEventData
+         17   10 00006D00 EaCreateAggregatedEvent
+         18   11 00005130 EaCreateAggregation
+         19   12 00008BB0 EaDecodeBrokeredEvent
+         20   13 00006710 EaDeleteAggregatedEvent
+         21   14 0000ADD0 EaDeleteAggregatedEventParameters
+         22   15 00005AE0 EaDeleteAggregation
+         23   16 000060B0 EaDisableAggregatedEvent
+         24   17 00005E60 EaEnableAggregatedEvent
+         25   18 00008AC0 EaEncodeBrokeredEvent
+         26   19 00009960 EaFreeAggregatedEventParameters
+         27   1A 000085A0 EaFreeBuffer
+         28   1B 00005E50 EaGetAggregation
+         29   1C 000063D0 EaQueryAggregateEventConditionState
+         30   1D 00004BF0 EaQueryAggregatedEvent
+         31   1E 0000A950 EaQueryAggregatedEventParameters
+         32   1F 000049B0 EaSignalAggregatedEvent
+         33   20 0000A6F0 EaStoreAggregatedEventParameters
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        6000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        D000 .text

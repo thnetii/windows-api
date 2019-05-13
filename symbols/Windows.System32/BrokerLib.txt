@@ -1,0 +1,66 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\BrokerLib.dll
+
+File Type: DLL
+
+  Section contains the following exports for BrokerLib.dll
+
+    00000000 characteristics
+    629FDDE4 time date stamp
+        0.00 version
+           1 ordinal base
+          37 number of functions
+          37 number of names
+
+    ordinal hint RVA      name
+
+          2    0 0000F730 BrBufferFree
+          3    1 0001CA50 BrCheckCallerCapabilities
+          4    2 0001CC80 BrCheckCallerCapabilities2
+          5    3 0001CE70 BrCheckCallerIsAppContainer
+          6    4 00010DA0 BrCreateBrokerInstance
+          7    5 0000E8C0 BrCreateBrokerInstance2
+          8    6 0001D010 BrCreateBrokeredEvent
+          1    7 0001C720 BrCreateBrokeredEvent2
+          9    8 0001D1B0 BrDecQuota
+         10    9 0001D4D0 BrDeleteBrokerInstance
+         11    A 0001D700 BrDeleteBrokeredEvent
+         12    B 0001D830 BrDeleteBrokeredEvent2
+         13    C 0000B1F0 BrFindBrokeredEvent
+         14    D 0000B350 BrFindBrokeredEvent2
+         15    E 0001D9C0 BrGetBrokeredAppState
+         16    F 00004D70 BrGetBrokeredAppState2
+         17   10 0001DB40 BrGetBrokeredAppStateName
+         18   11 000058D0 BrGetBrokeredEventInfo2
+         19   12 0000B780 BrGetBrokeredEventState
+         20   13 0001DCA0 BrGetPackageFullNameForBrokeredEvent
+         21   14 0001DEF0 BrGetQuota
+         22   15 0001E210 BrIncQuota
+         23   16 00010C00 BrInitializeBrokerInstance
+         24   17 0000EAC0 BrInitializeBrokerInstance2
+         25   18 0000F0A0 BrLockBroker
+         26   19 00005030 BrQueryBrokeredApplicationState
+         27   1A 000105C0 BrQueryBrokeredEvents
+         28   1B 0000BA80 BrQueryBrokeredEvents2
+         29   1C 0001E530 BrRegisterBrokeredEvent
+         30   1D 00010CA0 BrRegisterStateChangeCallbacks
+         31   1E 0001E6F0 BrSendActivatorControl
+         32   1F 0001E880 BrSetBrokeredAppStateName
+         33   20 0001E9D0 BrSignalBrokerEvent
+         34   21 00003F70 BrSignalBrokerEvent2
+         35   22 00007C70 BrSignalBrokerEvent2Ex
+         36   23 0000EF30 BrUnlockBroker
+         37   24 0001EC70 BrUnregisterBrokeredEvent
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        3000 .pdata
+       11000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       27000 .text

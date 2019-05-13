@@ -1,0 +1,43 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\msdelta.dll
+
+File Type: DLL
+
+  Section contains the following exports for msdelta.dll
+
+    00000000 characteristics
+    6092E65F time date stamp
+        0.00 version
+           1 ordinal base
+          15 number of functions
+          15 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001670 ApplyDeltaA
+          2    1 000015A0 ApplyDeltaB
+          3    2 00001410 ApplyDeltaProvidedB
+          4    3 00001910 ApplyDeltaW
+          5    4 00002210 CreateDeltaA
+          6    5 00001EC0 CreateDeltaB
+          7    6 00002480 CreateDeltaW
+          8    7 00001E80 DeltaFree
+          9    8 00001D20 DeltaNormalizeProvidedB
+         10    9 00001370 GetDeltaInfoA
+         11    A 00001300 GetDeltaInfoB
+         12    B 000013C0 GetDeltaInfoW
+         13    C 00001C40 GetDeltaSignatureA
+         14    D 00001BB0 GetDeltaSignatureB
+         15    E 00001CB0 GetDeltaSignatureW
+
+  Summary
+
+        1000 .data
+        3000 .pdata
+       27000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       52000 .text

@@ -1,0 +1,43 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\osbaseln.dll
+
+File Type: DLL
+
+  Section contains the following exports for osbaseln.dll
+
+    00000000 characteristics
+    44BE4C43 time date stamp
+        0.00 version
+           1 ordinal base
+          15 number of functions
+          14 number of names
+
+    ordinal hint RVA      name
+
+          2    0 000023F0 CloseOsBaseline
+          3    1 00001380 EnumOsBaselineComponentsA
+          4    2 000024E0 EnumOsBaselineComponentsW
+          5    3 00001D70 EnumOsOutOfDateComponentsA
+          6    4 00002F40 EnumOsOutOfDateComponentsW
+          7    5 000018E0 GetOsBaselineComponentInfoA
+          8    6 00002A40 GetOsBaselineComponentInfoW
+          9    7 00001B00 GetOsInstalledComponentInfoA
+         10    8 00002CD0 GetOsInstalledComponentInfoW
+         11    9 00002B80 GetOsLatestBaselineServicePack
+         12    A 00002370 OpenOsBaseline
+         13    B 00001F80 pGetOsBaselineCurrentVersion
+         14    C 00002FF0 pGetOsCurrentBaselineServicePack
+         15    D 00002190 pOpenOsBaselineByVersion
+          1      000030C0 [NONAME]
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        4000 .text

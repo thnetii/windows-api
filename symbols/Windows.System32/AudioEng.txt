@@ -1,0 +1,39 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\AudioEng.dll
+
+File Type: DLL
+
+  Section contains the following exports for audioeng.dll
+
+    00000000 characteristics
+    33957569 time date stamp
+        0.00 version
+           1 ordinal base
+           6 number of functions
+           6 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00046950 AERT_Allocate
+          2    1 000469A0 AERT_Free
+          3    2 00002D70 DllCanUnloadNow
+          4    3 0001FB00 DllGetClassObject
+          5    4 000469D0 DllRegisterServer
+          6    5 000469E0 DllUnregisterServer
+
+  Summary
+
+        B000 .data
+        1000 .didat
+        C000 .pdata
+       DC000 .rdata
+        3000 .reloc
+        3000 .rsrc
+       FE000 .text
+        1000 RT_BSS
+        5000 RT_CODE
+        3000 RT_CONST
+        2000 RT_DATA

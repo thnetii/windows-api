@@ -1,0 +1,208 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\certca.dll
+
+File Type: DLL
+
+  Section contains the following exports for certca.dll
+
+    00000000 characteristics
+     789B03B time date stamp
+        0.00 version
+         401 ordinal base
+         475 number of functions
+          97 number of names
+
+    ordinal hint RVA      name
+
+        422    0 0001C950 CAAccessCheck
+        423    1 0001C990 CAAccessCheckEx
+        426    2 0001C9C0 CAAddCACertificateType
+        427    3 0001C9D0 CAAddCACertificateTypeEx
+        469    4 0001CAB0 CACertTypeAccessCheck
+        470    5 0001CAD0 CACertTypeAccessCheckEx
+        471    6 0001CAE0 CACertTypeAuthzAccessCheck
+        467    7 0001CB00 CACertTypeGetSecurity
+        486    8 0001EB90 CACertTypeQuery
+        485    9 0001EBB0 CACertTypeRegisterQuery
+        468    A 0001CB30 CACertTypeSetSecurity
+        487    B 0001EEE0 CACertTypeUnregisterQuery
+        441    C 0001CB60 CACloneCertType
+        412    D 0001D5B0 CACloseCA
+        444    E 0001D5D0 CACloseCertType
+        411    F 0001D5F0 CACountCAs
+        443   10 0001D610 CACountCertTypes
+        490   11 0001F4A0 CACreateAutoEnrollmentObjectEx
+        436   12 0001D630 CACreateCertType
+        488   13 0001F570 CACreateLocalAutoEnrollmentObject
+        406   14 0001D650 CACreateNewCA
+        449   15 0001D690 CADCSetCertTypePropertyEx
+        409   16 0001D6F0 CADeleteCA
+        410   17 0001D710 CADeleteCAEx
+        439   18 0001D760 CADeleteCertType
+        440   19 0001D780 CADeleteCertTypeEx
+        489   1A 0001F650 CADeleteLocalAutoEnrollmentObject
+        433   1B 0001D7D0 CAEnumCertTypes
+        434   1C 0001D810 CAEnumCertTypesEx
+        491   1D 0001D850 CAEnumCertTypesEx2
+        424   1E 0001D880 CAEnumCertTypesForCA
+        425   1F 0001D8A0 CAEnumCertTypesForCAEx
+        404   20 0001D900 CAEnumFirstCA
+        405   21 0001D970 CAEnumNextCA
+        442   22 0001D9D0 CAEnumNextCertType
+        402   23 0001DA10 CAFindByCertType
+        403   24 0001DB20 CAFindByIssuerDN
+        401   25 0001DC60 CAFindByName
+        435   26 0001DD80 CAFindCertTypeByName
+        492   27 0001DDB0 CAFindCertTypeByName2
+        414   28 0001DE30 CAFreeCAProperty
+        453   29 0001DE60 CAFreeCertTypeExtensions
+        450   2A 0001DE80 CAFreeCertTypeProperty
+        416   2B 0001DF00 CAGetCACertificate
+        418   2C 0001DF30 CAGetCAExpiration
+        430   2D 0001DF90 CAGetCAFlags
+        413   2E 0001DFC0 CAGetCAProperty
+        420   2F 0001E050 CAGetCASecurity
+        457   30 0001E0E0 CAGetCertTypeExpiration
+        451   31 0001E120 CAGetCertTypeExtensions
+        452   32 0001E140 CAGetCertTypeExtensionsEx
+        459   33 0001E170 CAGetCertTypeFlags
+        460   34 0001E190 CAGetCertTypeFlagsEx
+        455   35 0001E1D0 CAGetCertTypeKeySpec
+        445   36 0001E200 CAGetCertTypeProperty
+        446   37 0001E270 CAGetCertTypePropertyEx
+        432   38 0001E2E0 CAGetDN
+        463   39 0001E300 CAInstallDefaultCertType
+        464   3A 0001E310 CAInstallDefaultCertTypeEx
+        465   3B 0001E340 CAIsCertTypeCurrent
+        466   3C 0001E360 CAIsCertTypeCurrentEx
+        476   3D 0001C350 CAOIDAdd
+        477   3E 0001C370 CAOIDAddEx
+        472   3F 0001C3B0 CAOIDCreateNew
+        473   40 0001C3D0 CAOIDCreateNewEx
+        478   41 0001C400 CAOIDDelete
+        479   42 0001C420 CAOIDDeleteEx
+        484   43 0001C460 CAOIDFreeLdapURL
+        482   44 0001C460 CAOIDFreeProperty
+        483   45 0001C480 CAOIDGetLdapURL
+        480   46 0001C630 CAOIDGetProperty
+        481   47 0001C660 CAOIDGetPropertyEx
+        474   48 0001C6A0 CAOIDSetProperty
+        475   49 0001C6D0 CAOIDSetPropertyEx
+        428   4A 0001E600 CARemoveCACertificateType
+        429   4B 0001E610 CARemoveCACertificateTypeEx
+        417   4C 0001E6F0 CASetCACertificate
+        419   4D 0001E750 CASetCAExpiration
+        431   4E 0001E780 CASetCAFlags
+        415   4F 0001E7B0 CASetCAProperty
+        421   50 0001E800 CASetCASecurity
+        458   51 0001E830 CASetCertTypeExpiration
+        454   52 0001E880 CASetCertTypeExtension
+        461   53 0001E8D0 CASetCertTypeFlags
+        462   54 0001E8F0 CASetCertTypeFlagsEx
+        456   55 0001E940 CASetCertTypeKeySpec
+        447   56 0001E970 CASetCertTypeProperty
+        448   57 0001E9C0 CASetCertTypePropertyEx
+        407   58 0001E9D0 CAUpdateCA
+        408   59 0001E9F0 CAUpdateCAEx
+        437   5A 0001EA40 CAUpdateCertType
+        438   5B 0001EA60 CAUpdateCertTypeEx
+        860   5C 00004B20 CCFindCertificateBuildFilter
+        861   5D 00004B30 CCFindCertificateFreeFilter
+        862   5E 00004B40 CCFindCertificateFromFilter
+        864   5F 00004B50 CCFreeStringArray
+        863   60 00004B60 CCGetCertNameList
+        601      00004D10 [NONAME]
+        602      00004B70 [NONAME]
+        603      00004E30 [NONAME]
+        604      00004C40 [NONAME]
+        701      00014360 [NONAME]
+        702      00014460 [NONAME]
+        703      000150A0 [NONAME]
+        704      000010F0 [NONAME]
+        705      00001540 [NONAME]
+        706      000187D0 [NONAME]
+        707      00016ED0 [NONAME]
+        708      000187A0 [NONAME]
+        801      000160A0 [NONAME]
+        802      00001D60 [NONAME]
+        803      00016310 [NONAME]
+        804      00001BA0 [NONAME]
+        805      00017DB0 [NONAME]
+        806      00018800 [NONAME]
+        807      000053B0 [NONAME]
+        808      00015760 [NONAME]
+        809      000159A0 [NONAME]
+        810      000053B0 [NONAME]
+        811      00014E20 [NONAME]
+        812      00015DB0 [NONAME]
+        813      00015CF0 [NONAME]
+        814      00016E90 [NONAME]
+        815      00016EF0 [NONAME]
+        816      00004740 [NONAME]
+        817      00004F50 [NONAME]
+        818      000047D0 [NONAME]
+        819      00016350 [NONAME]
+        820      000048B0 [NONAME]
+        821      0001C000 [NONAME]
+        822      00018850 [NONAME]
+        823      00017DE0 [NONAME]
+        824      00015620 [NONAME]
+        825      000053B0 [NONAME]
+        826      000053B0 [NONAME]
+        827      000053B0 [NONAME]
+        828      000053B0 [NONAME]
+        829      00019700 [NONAME]
+        830      000053B0 [NONAME]
+        831      00008B20 [NONAME]
+        832      00008CC0 [NONAME]
+        833      00008D00 [NONAME]
+        834      00008A50 [NONAME]
+        835      00007970 [NONAME]
+        836      00007930 [NONAME]
+        837      000096F0 [NONAME]
+        838      00004890 [NONAME]
+        839      00001010 [NONAME]
+        840      00014660 [NONAME]
+        841      00014680 [NONAME]
+        842      000015A0 [NONAME]
+        843      0001DEB0 [NONAME]
+        844      0001E5E0 [NONAME]
+        845      0001E080 [NONAME]
+        846      0001E5B0 [NONAME]
+        847      00014DF0 [NONAME]
+        848      000053B0 [NONAME]
+        849      000053B0 [NONAME]
+        850      000053A0 [NONAME]
+        851      000053B0 [NONAME]
+        852      00019910 [NONAME]
+        853      0001F7F0 [NONAME]
+        854      000064A0 [NONAME]
+        855      00006B50 [NONAME]
+        856      000054A0 [NONAME]
+        857      00004840 [NONAME]
+        858      00005460 [NONAME]
+        859      00014650 [NONAME]
+        865      00005E50 [NONAME]
+        866      00006800 [NONAME]
+        867      00006350 [NONAME]
+        868      00007710 [NONAME]
+        869      000051F0 [NONAME]
+        870      00009050 [NONAME]
+        871      00009250 [NONAME]
+        872      0000BAF0 [NONAME]
+        873      00017F60 [NONAME]
+        874      00018780 [NONAME]
+        875      00009070 [NONAME]
+
+  Summary
+
+        5000 .data
+        1000 .didat
+        2000 .pdata
+       88000 .rdata
+        6000 .reloc
+        1000 .rsrc
+       31000 .text

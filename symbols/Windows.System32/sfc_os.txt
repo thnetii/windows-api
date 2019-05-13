@@ -1,0 +1,47 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\sfc_os.dll
+
+File Type: DLL
+
+  Section contains the following exports for sfc_os.dll
+
+    00000000 characteristics
+    F7E77128 time date stamp
+        0.00 version
+           1 ordinal base
+          18 number of functions
+          18 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00004CF0 BeginFileMapEnumeration
+          2    1 00004D40 CloseFileMapEnumeration
+          3    2 00004D90 GetNextFileMapContent
+          4    3 00004F10 SRSetRestorePointA
+          5    4 00004FB0 SRSetRestorePointW
+          6    5 00003A30 SfcClose
+          7    6 00003A40 SfcConnectToServer
+          8    7 00003A40 SfcFileException
+          9    8 00004E50 SfcGetNextProtectedFile
+         10    9 00005050 SfcInitProt
+         11    A 00003A40 SfcInitiateScan
+         12    B 00003A40 SfcInstallProtectedFiles
+         13    C 000016F0 SfcIsFileProtected
+         14    D 00004ED0 SfcIsKeyProtected
+         15    E 00003A30 SfcTerminateWatcherThread
+         16    F 00005050 SfpDeleteCatalog
+         17   10 00005050 SfpInstallCatalog
+         18   11 00005060 SfpVerifyFile
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        5000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        7000 .text

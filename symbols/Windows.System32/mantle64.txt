@@ -1,0 +1,152 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\mantle64.dll
+
+File Type: DLL
+
+  Section contains the following exports for mantle64.dll
+
+    00000000 characteristics
+    5656A59B time date stamp Thu Nov 26 07:24:27 2015
+        0.00 version
+           1 ordinal base
+         124 number of functions
+         124 number of names
+
+    ordinal hint RVA      name
+
+          2    0 00004FD0 DllMain
+          1    1 000010B0 IcdDbgMessage
+          3    2 00001980 grAllocMemory
+          4    3 000019F0 grAttachImageViewDescriptors
+          5    4 00001A60 grAttachMemoryViewDescriptors
+          6    5 00001AD0 grAttachNestedDescriptors
+          7    6 00001B40 grAttachSamplerDescriptors
+          8    7 00001BB0 grBeginCommandBuffer
+          9    8 00001C10 grBeginDescriptorSetUpdate
+         10    9 00001C50 grBindObjectMemory
+         11    A 00001CC0 grClearDescriptorSetSlots
+         12    B 00001D30 grCmdBeginQuery
+         13    C 00001DA0 grCmdBindDescriptorSet
+         14    D 00001E10 grCmdBindDynamicMemoryView
+         15    E 00001E80 grCmdBindIndexData
+         16    F 00001EF0 grCmdBindPipeline
+         17   10 00001F60 grCmdBindStateObject
+         18   11 00001FD0 grCmdBindTargets
+         19   12 00002040 grCmdClearColorImage
+         20   13 000020B0 grCmdClearColorImageRaw
+         21   14 00002120 grCmdClearDepthStencil
+         22   15 000021A0 grCmdCloneImageData
+         23   16 00002210 grCmdCopyImage
+         24   17 00002280 grCmdCopyImageToMemory
+         25   18 000022F0 grCmdCopyMemory
+         26   19 00002360 grCmdCopyMemoryToImage
+         27   1A 000023D0 grCmdDbgMarkerBegin
+         28   1B 00002420 grCmdDbgMarkerEnd
+         29   1C 00002460 grCmdDispatch
+         30   1D 000024D0 grCmdDispatchIndirect
+         31   1E 00002540 grCmdDraw
+         32   1F 000025B0 grCmdDrawIndexed
+         33   20 00002630 grCmdDrawIndexedIndirect
+         34   21 000026A0 grCmdDrawIndirect
+         35   22 00002710 grCmdEndQuery
+         36   23 00002780 grCmdFillMemory
+         37   24 000027F0 grCmdInitAtomicCounters
+         38   25 00002860 grCmdLoadAtomicCounters
+         39   26 000028E0 grCmdMemoryAtomic
+         40   27 00002950 grCmdPrepareImages
+         41   28 000029C0 grCmdPrepareMemoryRegions
+         42   29 00002A30 grCmdResetEvent
+         43   2A 00002A80 grCmdResetQueryPool
+         44   2B 00002AF0 grCmdResolveImage
+         45   2C 00002B60 grCmdSaveAtomicCounters
+         46   2D 00002BE0 grCmdSetEvent
+         47   2E 00002C30 grCmdUpdateMemory
+         48   2F 00002CA0 grCmdWriteTimestamp
+         49   30 00002D10 grCreateColorBlendState
+         50   31 00002D80 grCreateColorTargetView
+         51   32 00002DF0 grCreateCommandBuffer
+         52   33 00002E60 grCreateComputePipeline
+         53   34 00002ED0 grCreateDepthStencilState
+         54   35 00002F40 grCreateDepthStencilView
+         55   36 00002FB0 grCreateDescriptorSet
+         56   37 00003020 grCreateDevice
+         57   38 00003100 grCreateEvent
+         58   39 00003170 grCreateFence
+         59   3A 000031E0 grCreateGraphicsPipeline
+         60   3B 00003250 grCreateImage
+         61   3C 000032C0 grCreateImageView
+         62   3D 00003330 grCreateMsaaState
+         63   3E 000033A0 grCreateQueryPool
+         64   3F 00003410 grCreateQueueSemaphore
+         65   40 00003480 grCreateRasterState
+         66   41 000034F0 grCreateSampler
+         67   42 00003560 grCreateShader
+         68   43 000035D0 grCreateViewportState
+         69   44 00003640 grDbgRegisterMsgCallback
+         70   45 00003720 grDbgSetDeviceOption
+         71   46 00003790 grDbgSetGlobalOption
+         72   47 00003860 grDbgSetMessageFilter
+         73   48 000038D0 grDbgSetObjectTag
+         74   49 00003940 grDbgSetValidationLevel
+         75   4A 000039A0 grDbgUnregisterMsgCallback
+         76   4B 00003A20 grDestroyDevice
+         77   4C 00003A60 grDestroyObject
+         78   4D 00003AA0 grDeviceWaitIdle
+         79   4E 00003AE0 grEndCommandBuffer
+         80   4F 00003B20 grEndDescriptorSetUpdate
+         81   50 00003B60 grFreeMemory
+         82   51 00003BA0 grGetDeviceQueue
+         83   52 00003C10 grGetEventStatus
+         84   53 00003C50 grGetExtensionSupport
+         85   54 00003CF0 grGetFenceStatus
+         86   55 00003D30 grGetFormatInfo
+         87   56 00003DB0 grGetGpuInfo
+         88   57 00003E80 grGetImageSubresourceInfo
+         89   58 00003F00 grGetMemoryHeapCount
+         90   59 00003F60 grGetMemoryHeapInfo
+         91   5A 00003FE0 grGetMultiGpuCompatibility
+         92   5B 00004110 grGetObjectInfo
+         93   5C 00004180 grGetQueryPoolResults
+         94   5D 00004200 grInitAndEnumerateGpus
+         95   5E 00004380 grLoadPipeline
+         96   5F 000043F0 grMapMemory
+         97   60 00004460 grOpenPeerImage
+         98   61 000044D0 grOpenPeerMemory
+         99   62 00004540 grOpenSharedMemory
+        100   63 000045B0 grOpenSharedQueueSemaphore
+        101   64 00004620 grPinSystemMemory
+        102   65 00004690 grQueueSetGlobalMemReferences
+        103   66 00004700 grQueueSubmit
+        104   67 00004780 grQueueWaitIdle
+        105   68 000047C0 grRemapVirtualMemoryPages
+        106   69 00004850 grResetCommandBuffer
+        107   6A 00004890 grResetEvent
+        108   6B 000048D0 grSetEvent
+        109   6C 00004910 grSetMemoryPriority
+        110   6D 00004960 grSignalQueueSemaphore
+        111   6E 000049C0 grStorePipeline
+        112   6F 00004A30 grUnmapMemory
+        113   70 00004A70 grWaitForFences
+        114   71 00004AF0 grWaitQueueSemaphore
+        115   72 00005040 grWsiWinCreatePresentableImage
+        116   73 000050B0 grWsiWinGetDisplayModeList
+        117   74 00005120 grWsiWinGetDisplays
+        118   75 00005190 grWsiWinGetScanLine
+        119   76 000051F0 grWsiWinQueuePresent
+        120   77 00005250 grWsiWinReleaseFullscreenOwnership
+        121   78 00005290 grWsiWinSetGammaRamp
+        122   79 000052F0 grWsiWinSetMaxQueuedFrames
+        123   7A 00005340 grWsiWinTakeFullscreenOwnership
+        124   7B 000053A0 grWsiWinWaitForVerticalBlank
+
+  Summary
+
+        5000 .data
+        2000 .pdata
+        C000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       14000 .text

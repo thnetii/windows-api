@@ -1,0 +1,48 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\umpo.dll
+
+File Type: DLL
+
+  Section contains the following exports for umpo.dll
+
+    00000000 characteristics
+    A73740C5 time date stamp
+        0.00 version
+           1 ordinal base
+          19 number of functions
+          19 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0001DFF9 PtrUmpoFullPowerPlanSupportDisabled
+          2    1 0001D3F4 PtrUmpoOnAcPower
+          3    2 0001DEB0 PtrUmpoProviderHandle
+          4    3 0001E0C0 PtrUmpoSchemeLock
+          5    4 000115C0 UmpoAllocate
+          6    5 00002320 UmpoAlpcSendPowerMessage
+          7    6 000115E0 UmpoFree
+          8    7 00002470 UmpoGetActiveScheme
+          9    8 00005780 UmpoInternalCloseUserPowerKey
+         10    9 00005950 UmpoInternalConvertGuidToString
+         11    A 00005B40 UmpoInternalDataAccessorToString
+         12    B 00005850 UmpoInternalGetKeyValueGuid
+         13    C 00005620 UmpoInternalOpenGUIDSubKey
+         14    D 00001B90 UmpoInternalOpenUserPowerKey
+         15    E 0000F870 UmpoMain
+         16    F 0000AE10 UmpoNotificationHandler
+         17   10 000014C0 UmpoNotifyKernelAllPowerPolicyChanged
+         18   11 00002F80 UmpoSendKernelPowerPolicyNotification
+         19   12 0000E440 UmpoWriteToUserPowerKey
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        2000 .pdata
+        9000 .rdata
+        1000 .reloc
+        A000 .rsrc
+       13000 .text

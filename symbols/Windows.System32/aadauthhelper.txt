@@ -1,0 +1,38 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\aadauthhelper.dll
+
+File Type: DLL
+
+  Section contains the following exports for AADAUTHHELPER.DLL
+
+    00000000 characteristics
+    BCBCB656 time date stamp
+        0.00 version
+           1 ordinal base
+           9 number of functions
+           9 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000024B0 CloseFidoAuthenticationSession
+          2    1 00002250 CreateAuthBuffer
+          3    2 00002260 CreateTokenAuthBuffer
+          4    3 00002280 CreateTokenAuthBufferEx
+          5    4 000023B0 GetFidoAuthenticationSessionStatus
+          6    5 000027B0 GetSerializedAuthBuffer
+          7    6 000026B0 StartChangingFidoPin
+          8    7 00002290 StartFidoAuthenticationSession
+          9    8 000025B0 StartSigningFidoClientData
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        2000 .pdata
+        C000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       22000 .text

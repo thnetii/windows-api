@@ -1,0 +1,38 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\apprepapi.dll
+
+File Type: DLL
+
+  Section contains the following exports for apprepapi.dll
+
+    00000000 characteristics
+    F082B7E9 time date stamp
+        0.00 version
+           1 ordinal base
+          10 number of functions
+          10 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001020 AppRepComputeImageHash
+          2    1 00001020 AppRepComputeImageHashWithOffset
+          3    2 00001020 AppRepComputeSignatureInfo
+          4    3 00001030 AppRepFreeAttributeLib
+          5    4 00001020 AppRepInitializeAttributeLib
+          6    5 00001010 AppRepParameterCleanup
+          7    6 00001010 AppRepPartialTelemetryCleanup
+          8    7 00001010 RepGetFileInformation
+          9    8 00001010 RepInformUserAction
+         10    9 00001010 ReputationInfoCleanup
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        1000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        2000 .text

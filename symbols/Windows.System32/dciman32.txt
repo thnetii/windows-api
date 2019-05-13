@@ -1,0 +1,48 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\dciman32.dll
+
+File Type: DLL
+
+  Section contains the following exports for DCIMAN32.dll
+
+    00000000 characteristics
+    C477E685 time date stamp
+        0.00 version
+           1 ordinal base
+          20 number of functions
+          20 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000017F0 DCIBeginAccess
+          2    1 00001290 DCICloseProvider
+          3    2 000012A0 DCICreateOffscreen
+          4    3 000012A0 DCICreateOverlay
+          5    4 000012B0 DCICreatePrimary
+          6    5 00001AF0 DCIDestroy
+          7    6 000012A0 DCIDraw
+          8    7 00001A70 DCIEndAccess
+          9    8 000012A0 DCIEnum
+         10    9 00001190 DCIOpenProvider
+         11    A 000012A0 DCISetClipList
+         12    B 000012A0 DCISetDestination
+         13    C 000012A0 DCISetSrcDestClip
+         14    D 00001760 GetDCRegionData
+         15    E 000016E0 GetWindowRegionData
+         16    F 00001580 WinWatchClose
+         17   10 000016D0 WinWatchDidStatusChange
+         18   11 00001600 WinWatchGetClipList
+         19   12 000017E0 WinWatchNotify
+         20   13 00001510 WinWatchOpen
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        1000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        2000 .text

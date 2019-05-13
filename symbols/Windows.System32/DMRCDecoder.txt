@@ -1,0 +1,48 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\DMRCDecoder.dll
+
+File Type: DLL
+
+  Section contains the following exports for DMRCDecoder.dll
+
+    00000000 characteristics
+    F6EC3F1B time date stamp
+        0.00 version
+           1 ordinal base
+          20 number of functions
+          20 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000049A0 CreateDecoder
+          2    1 00004AA0 DeleteDecoder
+          3    2 00004E50 Detect
+          4    3 00005080 EnableExtendedReadingDistance
+          5    4 00005030 EnableFalsePositiveMitigation
+          6    5 00004CF0 GetActiveBarcodeTypes
+          7    6 00004D40 GetBarcodeAttributesSupport
+          8    7 000050C0 GetExceptions
+          9    8 000051C0 GetMillisecsPerFrameBarcode
+         10    9 00005160 GetMillisecsPerFrameDWCode
+         11    A 00004F20 GetPayloadBarcodeType
+         12    B 00004EE0 GetPayloadCount
+         13    C 00004F70 GetPayloadData
+         14    D 00004FD0 GetPayloadRawData
+         15    E 00005110 GetStatus
+         16    F 00004C50 GetSupportedBarcodeTypes
+         17   10 00004CA0 SetActiveBarcodeTypes
+         18   11 00004DB0 SetBarcodeCheckDigitAttribute
+         19   12 00004DE0 SetBarcodeDecodeLengthAttribute
+         20   13 00004DB0 SetBarcodeTransmitCheckDigitAttribute
+
+  Summary
+
+        2000 .data
+        4000 .pdata
+      194000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       71000 .text

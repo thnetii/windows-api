@@ -1,0 +1,162 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\glmf32.dll
+
+File Type: DLL
+
+  Section contains the following exports for GLMF32.dll
+
+    00000000 characteristics
+    63F4E921 time date stamp
+        0.00 version
+           1 ordinal base
+         134 number of functions
+         134 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00045BA0 __glsParser_create
+          2    1 00045FA0 __glsParser_print
+          3    2 00042740 __glsString_appendChar
+          4    3 000427B0 __glsString_assign
+          5    4 00042800 __glsString_init
+          6    5 00043530 glsAbortCall
+          7    6 000400C0 glsAppRef
+          8    7 00043570 glsBeginCapture
+          9    8 0003FBB0 glsBeginGLS
+         10    9 00040110 glsBeginObj
+         11    A 000409D0 glsBinary
+         12    B 0003FC00 glsBlock
+         13    C 00043CD0 glsCallArray
+         14    D 00043B70 glsCallArrayInContext
+         15    E 0003FC40 glsCallStream
+         16    F 00043D20 glsCaptureFlags
+         17   10 00043D90 glsCaptureFunc
+         18   11 00043E10 glsChannel
+         19   12 00040150 glsCharubz
+         20   13 000409E0 glsCommandAPI
+         21   14 00043E90 glsCommandFunc
+         22   15 00040A20 glsCommandString
+         23   16 000401A0 glsComment
+         24   17 00040A60 glsContext
+         25   18 00043F20 glsCopyStream
+         26   19 00044210 glsDataPointer
+         27   1A 00040BD0 glsDeleteContext
+         28   1B 00044250 glsDeleteReadPrefix
+         29   1C 000442F0 glsDeleteStream
+         30   1D 000401E0 glsDisplayMapfv
+         31   1E 00044410 glsEndCapture
+         32   1F 0003FC80 glsEndGLS
+         33   20 00040250 glsEndObj
+         34   21 00040CF0 glsEnumString
+         35   22 0003FCB0 glsError
+         36   23 000444C0 glsFlush
+         37   24 0003FD00 glsGLRC
+         38   25 0003FD40 glsGLRCLayer
+         39   26 00040DA0 glsGenContext
+         40   27 00040E70 glsGetAllContexts
+         41   28 00046320 glsGetCaptureDispatchTable
+         42   29 000462D0 glsGetCaptureExecTable
+         43   2A 00044570 glsGetCaptureFlags
+         44   2B 00040F20 glsGetCommandAlignment
+         45   2C 00040FE0 glsGetCommandAttrib
+         46   2D 000445C0 glsGetCommandFunc
+         47   2E 00041020 glsGetConsti
+         48   2F 00041090 glsGetConstiv
+         49   30 000410E0 glsGetConstubz
+         50   31 00044610 glsGetContextFunc
+         51   32 000446B0 glsGetContextListl
+         52   33 00044750 glsGetContextListubz
+         53   34 00044860 glsGetContextPointer
+         54   35 000448F0 glsGetContexti
+         55   36 000449F0 glsGetContextubz
+         56   37 00041150 glsGetCurrentContext
+         57   38 00041190 glsGetCurrentTime
+         58   39 00041260 glsGetError
+         59   3A 00044A90 glsGetGLRCi
+         60   3B 00044B50 glsGetHeaderf
+         61   3C 00044BF0 glsGetHeaderfv
+         62   3D 00044DE0 glsGetHeaderi
+         63   3E 00044E80 glsGetHeaderiv
+         64   3F 00044F40 glsGetHeaderubz
+         65   40 00045040 glsGetLayerf
+         66   41 000450F0 glsGetLayeri
+         67   42 000412A0 glsGetOpcodeCount
+         68   43 000412F0 glsGetOpcodes
+         69   44 000452B0 glsGetStreamAttrib
+         70   45 000453C0 glsGetStreamCRC32
+         71   46 00045480 glsGetStreamReadName
+         72   47 00045580 glsGetStreamSize
+         73   48 000456F0 glsGetStreamType
+         74   49 0003FDA0 glsHeaderGLRCi
+         75   4A 0003FE00 glsHeaderLayerf
+         76   4B 0003FE60 glsHeaderLayeri
+         77   4C 0003FEC0 glsHeaderf
+         78   4D 0003FF10 glsHeaderfv
+         79   4E 0003FF60 glsHeaderi
+         80   4F 0003FFB0 glsHeaderiv
+         81   50 00040000 glsHeaderubz
+         82   51 00041340 glsIsContext
+         83   52 000457E0 glsIsContextStream
+         84   53 00041390 glsIsExtensionSupported
+         85   54 00041440 glsIsUTF8String
+         86   55 00041490 glsLong
+         87   56 000414B0 glsLongHigh
+         88   57 000414C0 glsLongLow
+         89   58 0004E110 glsNullCommandFunc
+         90   59 00040280 glsNumb
+         91   5A 000402D0 glsNumbv
+         92   5B 00040330 glsNumd
+         93   5C 00040380 glsNumdv
+         94   5D 000403E0 glsNumf
+         95   5E 00040430 glsNumfv
+         96   5F 00040490 glsNumi
+         97   60 000404E0 glsNumiv
+         98   61 00040540 glsNuml
+         99   62 00040590 glsNumlv
+        100   63 000405F0 glsNums
+        101   64 00040640 glsNumsv
+        102   65 000406A0 glsNumub
+        103   66 000406F0 glsNumubv
+        104   67 00040750 glsNumui
+        105   68 000407A0 glsNumuiv
+        106   69 00040800 glsNumul
+        107   6A 00040850 glsNumulv
+        108   6B 000408B0 glsNumus
+        109   6C 00040900 glsNumusv
+        110   6D 00040960 glsPad
+        111   6E 000414D0 glsPixelSetup
+        112   6F 00045830 glsPixelSetupGen
+        113   70 00045860 glsReadFunc
+        114   71 000458A0 glsReadPrefix
+        115   72 00040050 glsRequireExtension
+        116   73 00040990 glsSwapBuffers
+        117   74 00041600 glsUCS1toUTF8z
+        118   75 00041680 glsUCS2toUTF8z
+        119   76 00041520 glsUCS4toUTF8
+        120   77 00041730 glsUCS4toUTF8z
+        121   78 00041580 glsUCStoUTF8z
+        122   79 000414F0 glsULong
+        123   7A 00041510 glsULongHigh
+        124   7B 000414C0 glsULongLow
+        125   7C 000418F0 glsUTF8toUCS1z
+        126   7D 00041970 glsUTF8toUCS2z
+        127   7E 00041800 glsUTF8toUCS4
+        128   7F 00041A00 glsUTF8toUCS4z
+        129   80 00041870 glsUTF8toUCSz
+        130   81 000459D0 glsUnreadFunc
+        131   82 00040090 glsUnsupportedCommand
+        132   83 00046120 glsUpdateCaptureExecTable
+        133   84 00045A10 glsWriteFunc
+        134   85 00045A50 glsWritePrefix
+
+  Summary
+
+        3000 .data
+        5000 .pdata
+       17000 .rdata
+        2000 .reloc
+        1000 .rsrc
+       5D000 .text

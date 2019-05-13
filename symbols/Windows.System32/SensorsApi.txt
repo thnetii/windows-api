@@ -1,0 +1,65 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\SensorsApi.dll
+
+File Type: DLL
+
+  Section contains the following exports for SensorsApi.DLL
+
+    00000000 characteristics
+    9FF9E1FF time date stamp
+        0.00 version
+           1 ordinal base
+          36 number of functions
+          36 number of names
+
+    ordinal hint RVA      name
+
+         30    0 0000C020 DllCanUnloadNow
+         31    1 0000C1C0 DllGetClassObject
+         32    2 0000C330 DllRegisterServer
+         33    3 0000C460 DllUnregisterServer
+          1    4 000103C0 SensorCloseCOM
+          2    5 000106A0 SensorEnableIdleOperationCOM
+          3    6 000107B0 SensorGetAccDataCOM
+          4    7 000109A0 SensorGetAlsDataCOM
+          5    8 000109D0 SensorGetAlsDataWithColorCOM
+          6    9 00010CF0 SensorGetBarDataCOM
+          7    A 00010E20 SensorGetCapabilitiesCollectionCOM
+          8    B 00010FD0 SensorGetDataCollectionCOM
+          9    C 00011240 SensorGetDeviceIdCOM
+         10    D 00011440 SensorGetFusDataCOM
+         11    E 000115E0 SensorGetGyrDataCOM
+         12    F 000117D0 SensorGetMagDataCOM
+         13   10 000119F0 SensorGetPropertiesCOM
+         14   11 00011F50 SensorGetPrxDataCOM
+         15   12 00011F60 SensorGetThresholdsCOM
+         16   13 000123E0 SensorOpenByInterfaceCOM
+         34   14 0000C790 SensorPermissionsHandler
+         35   15 0000C790 SensorPermissionsHandlerA
+         36   16 0000C7D0 SensorPermissionsHandlerW
+         17   17 000125C0 SensorRegisterEventCOM
+         18   18 000126D0 SensorSetAccThresholdsCOM
+         19   19 000128D0 SensorSetAlsThresholdsCOM
+         20   1A 000128F0 SensorSetAlsWithColorThresholdsCOM
+         21   1B 00012B70 SensorSetBarThresholdsCOM
+         22   1C 00012C80 SensorSetFusThresholdsCOM
+         23   1D 00012E20 SensorSetGyrThresholdsCOM
+         24   1E 00013020 SensorSetIntervalCOM
+         25   1F 000131E0 SensorSetMagThresholdsCOM
+         26   20 000133E0 SensorSetThresholdsCOM
+         27   21 000135B0 SensorStartCollectionCOM
+         28   22 000136C0 SensorStopCOM
+         29   23 000137E0 SensorUnregisterEventCOM
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        4000 .pdata
+       1A000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       42000 .text

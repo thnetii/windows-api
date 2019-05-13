@@ -1,0 +1,80 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\ntmarta.dll
+
+File Type: DLL
+
+  Section contains the following exports for NTMARTA.dll
+
+    00000000 characteristics
+    376A9861 time date stamp
+        0.00 version
+           1 ordinal base
+          50 number of functions
+          50 number of names
+
+    ordinal hint RVA      name
+
+          3    0 00012330 AccConvertAccessMaskToActrlAccess
+          4    1 000124B0 AccConvertAccessToSD
+          5    2 00012670 AccConvertAccessToSecurityDescriptor
+          6    3 000127D0 AccConvertAclToAccess
+          7    4 00012870 AccConvertSDToAccess
+          8    5 0001F290 AccFreeIndexArray
+          9    6 00012B10 AccGetAccessForTrustee
+         10    7 00012C00 AccGetExplicitEntries
+         11    8 0001F3B0 AccGetInheritanceSource
+         12    9 00012CC0 AccLookupAccountName
+         13    A 00012FD0 AccLookupAccountSid
+         14    B 00013370 AccLookupAccountTrustee
+         15    C 00019E80 AccProvCancelOperation
+         16    D 00019F00 AccProvGetAccessInfoPerObjectType
+         17    E 00019FB0 AccProvGetAllRights
+         18    F 00006C00 AccProvGetCapabilities
+         19   10 0001A1A0 AccProvGetOperationResults
+         20   11 0001A2E0 AccProvGetTrusteesAccess
+         21   12 0001A3F0 AccProvGrantAccessRights
+         22   13 0001A560 AccProvHandleGetAccessInfoPerObjectType
+         23   14 0001A650 AccProvHandleGetAllRights
+         24   15 0001A7D0 AccProvHandleGetTrusteesAccess
+          1   16 00019830 AccProvHandleGrantAccessRights
+         25   17 0001A850 AccProvHandleIsAccessAudited
+         26   18 0001A8F0 AccProvHandleIsObjectAccessible
+         27   19 0001AA30 AccProvHandleRevokeAccessRights
+         28   1A 0001AB10 AccProvHandleRevokeAuditRights
+         29   1B 0001ABF0 AccProvHandleSetAccessRights
+         30   1C 0001ACF0 AccProvIsAccessAudited
+         31   1D 0001AE10 AccProvIsObjectAccessible
+         32   1E 0001B270 AccProvRevokeAccessRights
+         33   1F 0001B3B0 AccProvRevokeAuditRights
+         34   20 0001B4F0 AccProvSetAccessRights
+         35   21 000063B0 AccRewriteGetExplicitEntriesFromAcl
+         36   22 0001FA10 AccRewriteGetHandleRights
+         37   23 0001FB40 AccRewriteGetNamedRights
+         38   24 00004630 AccRewriteSetEntriesInAcl
+         39   25 00002670 AccRewriteSetHandleRights
+         40   26 00002C10 AccRewriteSetNamedRights
+         41   27 00013480 AccSetEntriesInAList
+         42   28 000011B0 AccTreeResetNamedSecurityInfo
+         43   29 0000BDE0 EventGuidToName
+         44   2A 0000BE70 EventNameFree
+         45   2B 000063A0 GetExplicitEntriesFromAclW
+          2   2C 000058E0 GetMartaExtensionInterface
+         46   2D 00003690 GetNamedSecurityInfoW
+         47   2E 000033E0 GetSecurityInfo
+         48   2F 00004620 SetEntriesInAclW
+         49   30 00002A90 SetNamedSecurityInfoW
+         50   31 000025E0 SetSecurityInfo
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        2000 .pdata
+        8000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       20000 .text
+        1000 ERRATA

@@ -1,0 +1,50 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\traffic.dll
+
+File Type: DLL
+
+  Section contains the following exports for TRAFFIC.dll
+
+    00000000 characteristics
+    F20FC3B1 time date stamp
+        0.00 version
+           1 ordinal base
+          22 number of functions
+          22 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001C90 TcAddFilter
+          2    1 00001920 TcAddFlow
+          3    2 00001700 TcCloseInterface
+          4    3 00001E30 TcDeleteFilter
+          5    4 00001B70 TcDeleteFlow
+          6    5 00001EC0 TcDeregisterClient
+          7    6 00002830 TcEnumerateFlows
+          8    7 000011A0 TcEnumerateInterfaces
+          9    8 00002780 TcGetFlowNameA
+         10    9 00002690 TcGetFlowNameW
+         11    A 00002DA0 TcGetInterfaceList
+         12    B 00001A40 TcModifyFlow
+         13    C 00001640 TcOpenInterfaceA
+         14    D 000013D0 TcOpenInterfaceW
+         15    E 00002460 TcQueryFlowA
+         16    F 00002350 TcQueryFlowW
+         17   10 00001FF0 TcQueryInterface
+         18   11 00001010 TcRegisterClient
+         19   12 000025E0 TcSetFlowA
+         20   13 00002510 TcSetFlowW
+         21   14 00002230 TcSetInterface
+         22   15 00002C90 TcSetSocketFlow
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        8000 .text

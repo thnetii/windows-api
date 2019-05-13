@@ -1,0 +1,36 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\bisrv.dll
+
+File Type: DLL
+
+  Section contains the following exports for bisrv.dll
+
+    00000000 characteristics
+    C36F27E1 time date stamp
+        0.00 version
+           1 ordinal base
+           7 number of functions
+           7 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00033AE0 PsmBiExtInitialize
+          2    1 0003D720 PsmBiExtNotifyAppState
+          3    2 00030450 PsmBiExtNotifySessionStateChange
+          4    3 000310F0 PsmBiExtNotifySessionUserStateChange
+          5    4 0005AAF0 PsmBiExtNotifyWerReportProgress
+          6    5 0005AB00 PsmBiExtPrepareToSuspendPackage
+          7    6 0005AB10 PsmBiExtResumePackage
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        8000 .pdata
+       2A000 .rdata
+        2000 .reloc
+        C000 .rsrc
+       8D000 .text

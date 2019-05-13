@@ -1,0 +1,42 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\mspatchc.dll
+
+File Type: DLL
+
+  Section contains the following exports for mspatchc.dll
+
+    00000000 characteristics
+    55F99DDB time date stamp
+        0.00 version
+           1 ordinal base
+          14 number of functions
+          14 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00002700 CreatePatchFileA
+          2    1 000027C0 CreatePatchFileByHandles
+          3    2 00004D20 CreatePatchFileByHandlesEx
+          4    3 00002830 CreatePatchFileExA
+          5    4 00002A70 CreatePatchFileExW
+          6    5 00002760 CreatePatchFileW
+          7    6 00004D70 ExtractPatchHeaderToFileA
+          8    7 00004EF0 ExtractPatchHeaderToFileByHandles
+          9    8 00004E30 ExtractPatchHeaderToFileW
+         10    9 00001270 GetFilePatchSignatureA
+         11    A 00001570 GetFilePatchSignatureByBuffer
+         12    B 000014A0 GetFilePatchSignatureByHandle
+         13    C 00001340 GetFilePatchSignatureW
+         14    D 00001110 NormalizeFileForPatchSignature
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        3000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       11000 .text

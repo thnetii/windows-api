@@ -1,0 +1,110 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\mpr.dll
+
+File Type: DLL
+
+  Section contains the following exports for MPR.dll
+
+    00000000 characteristics
+    696E6B80 time date stamp
+        0.00 version
+           1 ordinal base
+          81 number of functions
+          81 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0000DEE0 DoBroadcastSystemMessage
+          2    1 0000DF30 DoCommandLinePrompt
+          3    2 0000DFB0 DoPasswordDialog
+          4    3 0000E030 DoProfileErrorDialog
+         10    4 0000DE80 I_MprSaveConn
+         11    5 0000ACB0 MultinetGetConnectionPerformanceA
+         12    6 00008870 MultinetGetConnectionPerformanceW
+         13    7 0000AD20 MultinetGetErrorTextA
+         14    8 0000A060 MultinetGetErrorTextW
+          5    9 0000E090 ShowReconnectDialog
+          6    A 0000E0D0 ShowReconnectDialogEnd
+          7    B 0000E100 ShowReconnectDialogUI
+         15    C 0000AE60 WNetAddConnection2A
+         16    D 00007930 WNetAddConnection2W
+         17    E 0000AEA0 WNetAddConnection3A
+         18    F 00007970 WNetAddConnection3W
+         19   10 0000AED0 WNetAddConnectionA
+         20   11 000079A0 WNetAddConnectionW
+         21   12 0000AF80 WNetCancelConnection2A
+         22   13 00007A70 WNetCancelConnection2W
+         23   14 0000B000 WNetCancelConnectionA
+         24   15 00007A80 WNetCancelConnectionW
+         25   16 00002920 WNetClearConnections
+         26   17 000013F0 WNetCloseEnum
+         27   18 0000E160 WNetConnectionDialog
+         28   19 0000B020 WNetConnectionDialog1A
+         29   1A 0000E1A0 WNetConnectionDialog1W
+          8   1B 0000E140 WNetConnectionDialog2
+         30   1C 0000B0F0 WNetDirectoryNotifyA
+         31   1D 0000F670 WNetDirectoryNotifyW
+         32   1E 0000E1E0 WNetDisconnectDialog
+         33   1F 0000B170 WNetDisconnectDialog1A
+         34   20 0000E220 WNetDisconnectDialog1W
+          9   21 0000E150 WNetDisconnectDialog2
+         35   22 0000B250 WNetEnumResourceA
+         36   23 000011C0 WNetEnumResourceW
+         37   24 0000B2F0 WNetFormatNetworkNameA
+         38   25 00009E70 WNetFormatNetworkNameW
+         39   26 0000B3D0 WNetGetConnection2A
+         40   27 00007AA0 WNetGetConnection2W
+         41   28 0000B540 WNetGetConnection3A
+         42   29 00007BE0 WNetGetConnection3W
+         43   2A 0000B5E0 WNetGetConnectionA
+         44   2B 00002CE0 WNetGetConnectionW
+         45   2C 0000B6B0 WNetGetDirectoryTypeA
+         46   2D 0000F890 WNetGetDirectoryTypeW
+         47   2E 0000FB30 WNetGetHomeDirectoryW
+         48   2F 0000B730 WNetGetLastErrorA
+         49   30 0000A270 WNetGetLastErrorW
+         50   31 0000B7A0 WNetGetNetworkInformationA
+         51   32 0000E390 WNetGetNetworkInformationW
+         52   33 0000B810 WNetGetPropertyTextA
+         53   34 0000CC30 WNetGetPropertyTextW
+         54   35 0000B8E0 WNetGetProviderNameA
+         55   36 0000E4D0 WNetGetProviderNameW
+         56   37 0000B990 WNetGetProviderTypeA
+         57   38 0000E5E0 WNetGetProviderTypeW
+         58   39 0000BA00 WNetGetResourceInformationA
+         59   3A 0000E7D0 WNetGetResourceInformationW
+         60   3B 0000BB30 WNetGetResourceParentA
+         61   3C 0000E830 WNetGetResourceParentW
+         62   3D 0000E260 WNetGetSearchDialog
+         63   3E 0000BC10 WNetGetUniversalNameA
+         64   3F 0000F1A0 WNetGetUniversalNameW
+         65   40 0000BDF0 WNetGetUserA
+         66   41 0000FBF0 WNetGetUserW
+         67   42 00008BD0 WNetLogonNotify
+         68   43 0000BEB0 WNetOpenEnumA
+         69   44 000014F0 WNetOpenEnumW
+         70   45 000091A0 WNetPasswordChangeNotify
+         71   46 0000BF50 WNetPropertyDialogA
+         72   47 0000CE80 WNetPropertyDialogW
+         73   48 00002A00 WNetRestoreAllConnectionsW
+         74   49 00007C80 WNetRestoreSingleConnectionW
+         75   4A 0000BFF0 WNetSetConnectionA
+         76   4B 00007E40 WNetSetConnectionW
+         77   4C 0000C070 WNetSetLastErrorA
+         78   4D 0000A3B0 WNetSetLastErrorW
+         79   4E 0000E2F0 WNetSupportGlobalEnum
+         80   4F 0000C0D0 WNetUseConnectionA
+         81   50 000080D0 WNetUseConnectionW
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        5000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       10000 .text

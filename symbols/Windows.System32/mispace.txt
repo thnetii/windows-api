@@ -1,0 +1,61 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\mispace.dll
+
+File Type: DLL
+
+  Section contains the following exports for MISpace.DLL
+
+    00000000 characteristics
+    F0161A4F time date stamp
+        0.00 version
+           1 ordinal base
+          32 number of functions
+          32 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000077C0 DllCanUnloadNow
+          2    1 00007800 DllGetClassObject
+          3    2 00007480 DllMain
+          4    3 00007720 DllRegisterServer
+          5    4 00007770 DllUnregisterServer
+          6    5 00007510 GetProviderClassID
+          7    6 00008010 MI_Main
+          8    7 00008090 PreShutdown
+          9    8 00008070 SetShutdownCallback
+         10    9 00008080 SmpUnload
+         11    A 0000CE70 WspCompleteMethod
+         12    B 0000C250 WspCreateJob
+         13    C 0000A5D0 WspEnumerateRemoteInstances
+         14    D 00009140 WspFreeString
+         15    E 0000A5B0 WspGetClassName
+         16    F 0000AA10 WspGetRemoteInstance
+         17   10 0000A810 WspGetSubsystemFilter
+         18   11 00009200 WspGuidToString
+         19   12 0000AF60 WspInvokeRemoteMethod
+         20   13 0000A450 WspIsAutomaticClusteringEnabled
+         21   14 0000A840 WspIsRemoteInstance
+         22   15 0000B1D0 WspIsRemoteRequest
+         23   16 00009590 WspPackObjectId
+         24   17 0000DE60 WspPostAssociation
+         25   18 0000D430 WspPostSubsystemAssociationReferenceObject
+         26   19 00009300 WspProviderEnter
+         27   1A 00009570 WspProviderExit
+         28   1B 0000AC50 WspReferencesOfRemoteInstance
+         29   1C 0000C5A0 WspRunMethodAsJob
+         30   1D 0000D200 WspSendIndication
+         31   1E 00009D50 WspUnpackObjectId
+         32   1F 0000CA40 WspUpdateMethod
+
+  Summary
+
+       20000 .data
+        1000 .didat
+        A000 .pdata
+       F9000 .rdata
+       18000 .reloc
+        2000 .rsrc
+      244000 .text

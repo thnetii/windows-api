@@ -1,0 +1,57 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\evr.dll
+
+File Type: DLL
+
+  Section contains the following exports for EVR.dll
+
+    00000000 characteristics
+    EE741472 time date stamp
+        0.00 version
+           1 ordinal base
+          28 number of functions
+          28 number of names
+
+    ordinal hint RVA      name
+
+          2    0 00022FD0 DllCanUnloadNow
+          3    1 00011DF0 DllGetClassObject
+          4    2 0003F1A0 DllRegisterServer
+          5    3 0003F1B0 DllUnregisterServer
+          6    4 0003F590 MFConvertColorInfoFromDXVA
+          7    5 0003F5A0 MFConvertColorInfoToDXVA
+          8    6 0003F5B0 MFConvertFromFP16Array
+          9    7 0003F5C0 MFConvertToFP16Array
+         10    8 0003F5D0 MFCopyImage
+         11    9 0003F5E0 MFCreateDXSurfaceBuffer
+         12    A 0003F680 MFCreateVideoMediaType
+         13    B 0003F5F0 MFCreateVideoMediaTypeFromBitMapInfoHeader
+         14    C 0003F650 MFCreateVideoMediaTypeFromSubtype
+         15    D 0003F670 MFCreateVideoMediaTypeFromVideoInfoHeader
+         16    E 0003F660 MFCreateVideoMediaTypeFromVideoInfoHeader2
+         17    F 00014740 MFCreateVideoMixer
+         18   10 0003F1C0 MFCreateVideoMixerAndPresenter
+         19   11 00019820 MFCreateVideoOTA
+         20   12 0004C300 MFCreateVideoPresenter
+         21   13 0004C370 MFCreateVideoPresenter2
+         22   14 00057080 MFCreateVideoSampleAllocator
+         23   15 0004BA60 MFCreateVideoSampleFromSurface
+         24   16 0003F690 MFGetPlaneSize
+         25   17 0003F6A0 MFGetStrideForBitmapInfoHeader
+          1   18 0003F580 MFGetUncompressedVideoFormat
+         26   19 0003F6C0 MFInitVideoFormat
+         27   1A 0003F6B0 MFInitVideoFormat_RGB
+         28   1B 00010B60 MFIsFormatYUV
+
+  Summary
+
+        3000 .data
+        1000 .didat
+        8000 .pdata
+       24000 .rdata
+        2000 .reloc
+        1000 .rsrc
+       85000 .text

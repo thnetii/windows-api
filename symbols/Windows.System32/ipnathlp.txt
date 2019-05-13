@@ -1,0 +1,61 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\ipnathlp.dll
+
+File Type: DLL
+
+  Section contains the following exports for IPNATHLP.dll
+
+    00000000 characteristics
+    AEEE9145 time date stamp
+        0.00 version
+           1 ordinal base
+          32 number of functions
+          32 number of names
+
+    ordinal hint RVA      name
+
+         16    0 00008CA0 NatAcquirePortReservation
+         17    1 000093B0 NatCancelDynamicRedirect
+         18    2 00009440 NatCancelRedirect
+         19    3 00009590 NatCreateDynamicFullRedirect
+         20    4 000097E0 NatCreateDynamicRedirect
+         21    5 00009850 NatCreateDynamicRedirectEx
+         22    6 000098D0 NatCreateRedirect
+         23    7 00009970 NatCreateRedirectEx
+         24    8 00008DD0 NatInitializePortReservation
+         25    9 00009BC0 NatInitializeTranslator
+         26    A 00009D90 NatLookupAndQueryInformationSessionMapping
+         27    B 0000A660 NatQueryInformationRedirect
+         28    C 0000A920 NatQueryInformationRedirectHandle
+         29    D 00009230 NatReleasePortReservation
+         30    E 00009330 NatShutdownPortReservation
+         31    F 0000A990 NatShutdownTranslator
+          1   10 00005A50 NhAcceptStreamSocket
+          2   11 000012D0 NhAcquireFixedLengthBuffer
+          3   12 00001330 NhAcquireVariableLengthBuffer
+          4   13 00006200 NhCreateDatagramSocket
+          5   14 000068F0 NhCreateStreamSocket
+          6   15 00006C60 NhDeleteSocket
+          7   16 000015A0 NhInitializeBufferManagement
+          8   17 00004B00 NhInitializeTraceManagement
+          9   18 000070D0 NhReadDatagramSocket
+         10   19 00007450 NhReadStreamSocket
+         11   1A 00001650 NhReleaseBuffer
+         12   1B 00007790 NhWriteDatagramSocket
+         13   1C 00007A00 NhWriteStreamSocket
+         14   1D 000044F0 RegisterProtocol
+         32   1E 0003ED30 ServiceMain
+         15   1F 0003E9E0 SvchostPushServiceGlobals
+
+  Summary
+
+        3000 .data
+        1000 .didat
+        3000 .pdata
+       11000 .rdata
+        1000 .reloc
+        6000 .rsrc
+       7F000 .text

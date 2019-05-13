@@ -1,0 +1,66 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\mtxclu.dll
+
+File Type: DLL
+
+  Section contains the following exports for MTXCLU.DLL
+
+    00000000 characteristics
+    67F98A51 time date stamp
+        0.00 version
+           1 ordinal base
+          38 number of functions
+          38 number of names
+
+    ordinal hint RVA      name
+
+         10    0 00012820 FailedClusterAPIToEventLog
+         11    1 00018790 MtxCluBringOnlineDTCW
+         12    2 00011320 MtxCluClearClusterTmMappings
+         13    3 00001E00 MtxCluCreateClusterProxyTmInstance
+         14    4 00001C90 MtxCluCreateClusterTmInstance
+         15    5 000019F0 MtxCluCreateTmInstanceForVirtualServer
+         16    6 00012230 MtxCluEnumerateClusterTmMappings
+         17    7 0000CAA0 MtxCluEnumerateDtcResources
+         18    8 0000C620 MtxCluEnumerateDtcResourcesEx
+         19    9 00010A50 MtxCluGetActiveClusterNode
+         20    A 00010830 MtxCluGetClusterResourceIdFromName
+          1    B 00018020 MtxCluGetComputerNameW
+         21    C 00006F80 MtxCluGetDTCResourceForResource
+          2    D 00018240 MtxCluGetDTCStatusW
+         22    E 0000CAF0 MtxCluGetDTCVirtualServerNameW
+         23    F 000073C0 MtxCluGetDefaultClusterResource
+         24   10 00007720 MtxCluGetDefaultClusterResourceNonAdmin
+         25   11 00009880 MtxCluGetDtcDiskResourceDrive
+         26   12 0000F390 MtxCluGetNameFromResourceIdString
+         27   13 0000F500 MtxCluGetNameFromResourceIdStringNonAdmin
+         28   14 0000DA60 MtxCluGetResourceId
+         29   15 0000F210 MtxCluGetResourceIdStringFromName
+          3   16 00018A10 MtxCluGetSecurityRegValue
+         30   17 0000EC30 MtxCluGetTmResource
+         31   18 000104E0 MtxCluGetVirtualServerToken
+          4   19 00018C80 MtxCluIsClusterPresent
+         32   1A 0000CAB0 MtxCluIsClusterPresentExW
+          5   1B 00019070 MtxCluIsNetworkNameInLocalClusterW
+          6   1C 00019CD0 MtxCluIsSameClusterW
+          7   1D 00019AD0 MtxCluIsSameNodeW
+         33   1E 00011870 MtxCluRemoveClusterTmMappingByName
+         34   1F 00010E30 MtxCluSetClusterTmMapping
+         35   20 00008210 MtxCluSetDefaultClusterResource
+          8   21 00018B10 MtxCluSetSecurityRegValue
+         36   22 00018510 MtxCluTakeOfflineDTCW
+         37   23 0000CCD0 MtxCluVerifyLogPathInDependantDiskResource
+         38   24 0000AAB0 MtxCluVerifyLogPathIsValidCSV
+          9   25 00017810 Startup
+
+  Summary
+
+        4000 .data
+        2000 .pdata
+       35000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       30000 .text

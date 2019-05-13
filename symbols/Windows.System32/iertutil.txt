@@ -1,0 +1,344 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\iertutil.dll
+
+File Type: DLL
+
+  Section contains the following exports for iertutil.dll
+
+    00000000 characteristics
+    F407D312 time date stamp
+        0.00 version
+          16 ordinal base
+         900 number of functions
+          39 number of names
+
+    ordinal hint RVA      name
+
+        114    0 0000B950 CreateIUriBuilder
+         22    1 00014E90 CreateStringHashN
+        115    2 00013DD0 CreateUri
+        116    3 0007A8B0 CreateUriFromMultiByteString
+        117    4 00013E10 CreateUriPriv
+        118    5 000796B0 CreateUriWithFragment
+        119    6 00034180 DllCanUnloadNow
+        120    7 00032310 DllGetActivationFactory
+        121    8 00003260 DllGetClassObject
+        122    9 0002D2C0 FastMimeGetFileExtension
+        131    A 0002D280 FastMimeGetIsMimeFilterEnabled
+        132    B 0002D390 FastMimeLookupKnownType
+        133    C 0002D250 FastMimeSetIsMimeFilterEnabled
+         23    D 000325F0 GetIDNSettingsForIE
+        136    E 0001D030 GetIUriPriv
+        145    F 0000E930 GetIUriPriv2
+        179   10 0001A410 GetPortFromUrlScheme
+        180   11 0007B210 GetPropertyFromName
+        181   12 0007B480 GetPropertyName
+         27   13 00034B80 IEGetFrameUtilExports
+         31   14 00034B90 IEGetProcessModule
+         47   15 00034BA0 IEGetTabWindowExports
+        103   16 0001E2B0 IUriBuilderInternalCreateDomain
+        182   17 00071E50 ImpersonateUser
+        183   18 000291C0 IntlPercentEncodeNormalize
+        184   19 0001AEC0 IsDWORDProperty
+        185   1A 0007B590 IsStringProperty
+        104   1B 0004F1C0 OutOfProcessExceptionEventCallback
+        105   1C 0004F390 OutOfProcessExceptionEventDebuggerLaunchCallback
+        106   1D 0004F3A0 OutOfProcessExceptionEventSignatureCallback
+        186   1E 0000CE10 PrivateCoInternetCanonicalizeIUri
+        187   1F 000120C0 PrivateCoInternetCombineIUri
+        188   20 0000C870 PrivateCoInternetParseIUri
+        107   21 0004CAD0 ResetIDNLanguageData
+        108   22 00070720 ResetIEExtensibility
+        109   23 00070B60 ResetIERegistrySettings
+        900   24 0004CB70 RetiredOrdinal
+        189   25 00071EF0 RevertImpersonate
+        113   26 000350D0 UriFromHostAndScheme
+         16      00052BD0 [NONAME]
+         17      000313A0 [NONAME]
+         18      00053C30 [NONAME]
+         19      00053F00 [NONAME]
+         20      00054660 [NONAME]
+         21      000549B0 [NONAME]
+         24      00053540 [NONAME]
+         25      000540D0 [NONAME]
+         26      00052770 [NONAME]
+         28      0006F410 [NONAME]
+         29      000080A0 [NONAME]
+         30      00032B40 [NONAME]
+         32      000208E0 [NONAME]
+         33      00001F80 [NONAME]
+         34      00034330 [NONAME]
+         35      00020440 [NONAME]
+         36      00050CD0 [NONAME]
+         37      00033BE0 [NONAME]
+         38      00051B10 [NONAME]
+         39      00050D80 [NONAME]
+         40      00003A90 [NONAME]
+         41      000516F0 [NONAME]
+         42      00020970 [NONAME]
+         43      00051190 [NONAME]
+         44      000210E0 [NONAME]
+         45      00008A60 [NONAME]
+         46      000345E0 [NONAME]
+         48      00034690 [NONAME]
+         49      0000A5C0 [NONAME]
+         50      000087C0 [NONAME]
+         51      000516E0 [NONAME]
+         52      00050D80 [NONAME]
+         53      00050D80 [NONAME]
+         54      00020410 [NONAME]
+         55      00050F50 [NONAME]
+         56      000209F0 [NONAME]
+         57      0000A560 [NONAME]
+         58      00009800 [NONAME]
+         59      000096E0 [NONAME]
+         60      000348D0 [NONAME]
+         61      0000C120 [NONAME]
+         62      0002D4E0 [NONAME]
+         63      00023030 [NONAME]
+         64      0002D6D0 [NONAME]
+         65      0002D650 [NONAME]
+         66      0002D880 [NONAME]
+         67      00033AC0 [NONAME]
+         68      0002D8F0 [NONAME]
+         69      0007D0C0 [NONAME]
+         70      00023400 [NONAME]
+         71      000349B0 [NONAME]
+         72      0002D530 [NONAME]
+         73      00034570 [NONAME]
+         74      000306A0 [NONAME]
+         75      000306B0 [NONAME]
+         76      00031320 [NONAME]
+         77      0002D680 [NONAME]
+         78      0002D770 [NONAME]
+         79      0002D740 [NONAME]
+         80      0002D800 [NONAME]
+         81      0002DA90 [NONAME]
+         82      000324F0 [NONAME]
+         83      0007CD80 [NONAME]
+         84      00022860 [NONAME]
+         85      00023A50 [NONAME]
+         86      00030530 [NONAME]
+         87      0007CDA0 [NONAME]
+         88      000035D0 [NONAME]
+         89      00030410 [NONAME]
+         90      000037F0 [NONAME]
+         91      00002D40 [NONAME]
+         92      0007D140 [NONAME]
+         93      0007D1C0 [NONAME]
+         94      0007D260 [NONAME]
+         95      0002D440 [NONAME]
+         96      0004C710 [NONAME]
+         97      0004C850 [NONAME]
+         98      0004C730 [NONAME]
+         99      00008610 [NONAME]
+        100      000523C0 [NONAME]
+        101      000095C0 [NONAME]
+        102      0004C6D0 [NONAME]
+        110      0004FCB0 [NONAME]
+        111      0004FCE0 [NONAME]
+        112      0004FC70 [NONAME]
+        123      00008200 [NONAME]
+        124      00008110 [NONAME]
+        125      00050C70 [NONAME]
+        126      00050BC0 [NONAME]
+        127      00008000 [NONAME]
+        128      00007F40 [NONAME]
+        129      00007EC0 [NONAME]
+        130      00051D10 [NONAME]
+        134      00008E10 [NONAME]
+        135      00008590 [NONAME]
+        137      00030950 [NONAME]
+        138      00004700 [NONAME]
+        139      00032420 [NONAME]
+        140      0000A080 [NONAME]
+        141      0004CD20 [NONAME]
+        142      0004CBE0 [NONAME]
+        143      00009230 [NONAME]
+        144      00007640 [NONAME]
+        146      00008D90 [NONAME]
+        147      00051C60 [NONAME]
+        148      00051930 [NONAME]
+        149      0004CC70 [NONAME]
+        150      000028D0 [NONAME]
+        151      000340F0 [NONAME]
+        152      00055C90 [NONAME]
+        153      00055ED0 [NONAME]
+        154      00055C30 [NONAME]
+        155      000038B0 [NONAME]
+        156      00055E40 [NONAME]
+        157      00055FF0 [NONAME]
+        158      00055C30 [NONAME]
+        159      00033B00 [NONAME]
+        160      00055D00 [NONAME]
+        161      00055F00 [NONAME]
+        162      00055C30 [NONAME]
+        163      000038B0 [NONAME]
+        164      00055E40 [NONAME]
+        165      00055FF0 [NONAME]
+        166      00021BD0 [NONAME]
+        167      00055A00 [NONAME]
+        168      00055390 [NONAME]
+        169      00006A30 [NONAME]
+        170      00055470 [NONAME]
+        171      00055750 [NONAME]
+        172      00022040 [NONAME]
+        173      000214D0 [NONAME]
+        174      000324E0 [NONAME]
+        175      0004E210 [NONAME]
+        176      0004E200 [NONAME]
+        177      00033DF0 [NONAME]
+        178      000341B0 [NONAME]
+        200      000506F0 [NONAME]
+        201      000501C0 [NONAME]
+        202      00050690 [NONAME]
+        203      00050650 [NONAME]
+        204      00050740 [NONAME]
+        205      00050830 [NONAME]
+        206      000502F0 [NONAME]
+        207      000504B0 [NONAME]
+        208      00050330 [NONAME]
+        209      00034240 [NONAME]
+        210      000359A0 [NONAME]
+        211      000503F0 [NONAME]
+        230      000342E0 [NONAME]
+        231      00034410 [NONAME]
+        232      00034890 [NONAME]
+        280      000043F0 [NONAME]
+        281      000043E0 [NONAME]
+        282      00001C60 [NONAME]
+        300      00008430 [NONAME]
+        301      00009E20 [NONAME]
+        302      00034A10 [NONAME]
+        303      0004D340 [NONAME]
+        304      0004D2F0 [NONAME]
+        305      0004D230 [NONAME]
+        311      00034020 [NONAME]
+        312      000347F0 [NONAME]
+        314      000347D0 [NONAME]
+        325      000027E0 [NONAME]
+        397      0004E290 [NONAME]
+        398      00024BF0 [NONAME]
+        466      00009560 [NONAME]
+        563      0004E0B0 [NONAME]
+        564      0004E0F0 [NONAME]
+        594      000314D0 [NONAME]
+        595      00034870 [NONAME]
+        596      0004E2D0 [NONAME]
+        597      00031540 [NONAME]
+        600      000543A0 [NONAME]
+        601      00053500 [NONAME]
+        602      00053F40 [NONAME]
+        603      000537C0 [NONAME]
+        604      00053370 [NONAME]
+        605      000530F0 [NONAME]
+        606      00052F60 [NONAME]
+        607      00053950 [NONAME]
+        608      0006F460 [NONAME]
+        609      0006E420 [NONAME]
+        650      00025680 [NONAME]
+        651      00023B10 [NONAME]
+        652      0002EA00 [NONAME]
+        653      00021C90 [NONAME]
+        654      0002EC00 [NONAME]
+        655      0002E580 [NONAME]
+        656      0002E0E0 [NONAME]
+        657      0002E750 [NONAME]
+        658      00020B80 [NONAME]
+        659      0006FC10 [NONAME]
+        660      0002E9C0 [NONAME]
+        661      00002070 [NONAME]
+        662      0006F930 [NONAME]
+        663      0006F960 [NONAME]
+        664      00030BD0 [NONAME]
+        665      00030C30 [NONAME]
+        666      0006FBA0 [NONAME]
+        667      0006F990 [NONAME]
+        668      0006F9F0 [NONAME]
+        669      0006F9C0 [NONAME]
+        670      00002B40 [NONAME]
+        671      0006FB70 [NONAME]
+        672      000349A0 [NONAME]
+        673      0006FD00 [NONAME]
+        674      0002E2D0 [NONAME]
+        675      00003B80 [NONAME]
+        676      0006FCD0 [NONAME]
+        677      000724A0 [NONAME]
+        678      000722F0 [NONAME]
+        679      0006FA20 [NONAME]
+        680      0006FA70 [NONAME]
+        681      00030DA0 [NONAME]
+        682      00031100 [NONAME]
+        683      00030F50 [NONAME]
+        684      0006FA30 [NONAME]
+        685      0002E370 [NONAME]
+        686      0006FC80 [NONAME]
+        687      0006F910 [NONAME]
+        688      00021360 [NONAME]
+        689      0006FD30 [NONAME]
+        690      00033AA0 [NONAME]
+        691      0006FAC0 [NONAME]
+        692      0006FB30 [NONAME]
+        693      0006FAF0 [NONAME]
+        700      0000BB90 [NONAME]
+        701      0000BC60 [NONAME]
+        702      0000BC80 [NONAME]
+        703      0002A130 [NONAME]
+        705      00078360 [NONAME]
+        706      0001E400 [NONAME]
+        707      0004FA30 [NONAME]
+        763      000590C0 [NONAME]
+        764      00059150 [NONAME]
+        765      00059200 [NONAME]
+        771      00058D80 [NONAME]
+        772      00058DC0 [NONAME]
+        774      0005AC10 [NONAME]
+        775      0005AC00 [NONAME]
+        776      0005AC30 [NONAME]
+        779      00058F20 [NONAME]
+        780      00059050 [NONAME]
+        781      00058E60 [NONAME]
+        782      00058F90 [NONAME]
+        783      00058FE0 [NONAME]
+        790      00024100 [NONAME]
+        791      00015160 [NONAME]
+        792      00007900 [NONAME]
+        793      00026C10 [NONAME]
+        794      00032E40 [NONAME]
+        795      00023F00 [NONAME]
+        796      00023E90 [NONAME]
+        797      000202F0 [NONAME]
+        798      00029AE0 [NONAME]
+        799      00007820 [NONAME]
+        810      000324D0 [NONAME]
+        811      00034810 [NONAME]
+        820      00021570 [NONAME]
+        830      00034490 [NONAME]
+        850      00009320 [NONAME]
+        851      00009660 [NONAME]
+        852      00003310 [NONAME]
+        854      00009B20 [NONAME]
+        855      00001BD0 [NONAME]
+        870      0002C120 [NONAME]
+        901      0000AC50 [NONAME]
+        902      0000AC20 [NONAME]
+        903      00035970 [NONAME]
+        910      00033480 [NONAME]
+        911      0004FAD0 [NONAME]
+        913      000119B0 [NONAME]
+        914      00034A70 [NONAME]
+        915      00031D30 [NONAME]
+
+  Summary
+
+        B000 .data
+        1000 .didat
+        1000 .isoapis
+        8000 .pdata
+      1F9000 .rdata
+       18000 .reloc
+        1000 .rsrc
+       80000 .text

@@ -1,0 +1,82 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\gpapi.dll
+
+File Type: DLL
+
+  Section contains the following exports for GPAPI.dll
+
+    00000000 characteristics
+    7F4EDCEB time date stamp
+        0.00 version
+         107 ordinal base
+          53 number of functions
+          46 number of names
+
+    ordinal hint RVA      name
+
+        131    0 00005F70 AreThereVisibleLogoffScriptsInternal
+        108    1 00005F70 AreThereVisibleLogoffScriptsInternalWorker
+        132    2 00005FA0 AreThereVisibleShutdownScriptsInternal
+        111    3 00005FA0 AreThereVisibleShutdownScriptsInternalWorker
+        112    4 00001560 EnterCriticalPolicySectionExStub
+        133    5 00008040 EnterCriticalPolicySectionInternal
+        117    6 00002AE0 EnterCriticalPolicySectionInternalWorker
+        134    7 00008050 ForceSyncFgPolicyInternal
+        135    8 00008060 ForceSyncFgPolicyInternalWorker
+        136    9 00008090 FreeGPOListInternalA
+        118    A 00005760 FreeGPOListInternalAWorker
+        137    B 000080A0 FreeGPOListInternalW
+        138    C 000080B0 FreeGPOListInternalWWorker
+        139    D 000080C0 GenerateGPNotificationInternal
+        119    E 00006000 GenerateGPNotificationInternalWorker
+        140    F 000080D0 GetAppliedGPOListInternalA
+        120   10 00005790 GetAppliedGPOListInternalAWorker
+        141   11 000080E0 GetAppliedGPOListInternalW
+        121   12 00001040 GetAppliedGPOListInternalWWorker
+        142   13 000080F0 GetGPOListInternalA
+        122   14 00005840 GetGPOListInternalAWorker
+        143   15 00008100 GetGPOListInternalW
+        123   16 00006160 GetGPOListInternalWWorker
+        144   17 00008110 GetNextFgPolicyRefreshInfoInternal
+        145   18 00008120 GetNextFgPolicyRefreshInfoInternalWorker
+        146   19 00008140 GetPreviousFgPolicyRefreshInfoInternal
+        147   1A 00008150 GetPreviousFgPolicyRefreshInfoInternalWorker
+        148   1B 00006D20 HasPolicyForegroundProcessingCompletedInternal
+        124   1C 00006D20 HasPolicyForegroundProcessingCompletedInternalWorker
+        149   1D 00008180 IsSyncForegroundPolicyRefreshWorker
+        150   1E 00008190 LeaveCriticalPolicySectionInternal
+        125   1F 00001960 LeaveCriticalPolicySectionInternalWorker
+        151   20 000081A0 RefreshPolicyExInternal
+        126   21 00006D30 RefreshPolicyExInternalWorker
+        152   22 000081B0 RefreshPolicyInternal
+        127   23 00006E40 RefreshPolicyInternalWorker
+        153   24 000081C0 RegisterGPNotificationInternal
+        128   25 00001C00 RegisterGPNotificationInternalWorker
+        154   26 000081D0 RsopLoggingEnabledInternal
+        129   27 000029E0 RsopLoggingEnabledInternalWorker
+        155   28 000081E0 UnregisterGPNotificationInternal
+        130   29 00001AA0 UnregisterGPNotificationInternalWorker
+        156   2A 000081F0 WaitForMachinePolicyForegroundProcessingInternal
+        157   2B 00008200 WaitForMachinePolicyForegroundProcessingInternalWorker
+        158   2C 00008210 WaitForUserPolicyForegroundProcessingInternal
+        159   2D 00008220 WaitForUserPolicyForegroundProcessingInternalWorker
+        107      00007030 [NONAME]
+        109      00008170 [NONAME]
+        110      0000AED0 [NONAME]
+        113      00001570 [NONAME]
+        114      00006F10 [NONAME]
+        115      000070D0 [NONAME]
+        116      000066F0 [NONAME]
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        1000 .pdata
+        B000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       10000 .text

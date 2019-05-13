@@ -1,0 +1,82 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\edputil.dll
+
+File Type: DLL
+
+  Section contains the following exports for edputil.dll
+
+    00000000 characteristics
+    A29846B1 time date stamp
+        0.00 version
+           1 ordinal base
+          53 number of functions
+          53 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000070B0 EdpAddAppClipboardConsentInCache
+          2    1 000070C0 EdpAuditAction
+          3    2 00009140 EdpCanCallerAccessWin32Clipboard
+          4    3 0000C8C0 EdpCheckAccess
+          5    4 0000C9B0 EdpCheckAccessForContext
+          6    5 00007590 EdpCheckIsDpapiNgEntId
+          7    6 000075A0 EdpCheckIsRmsEntId
+          8    7 000075B0 EdpClearClipboardMetaData
+          9    8 000075C0 EdpConvertProtectorToExternalId
+         10    9 0000C9D0 EdpFreeContext
+         11    A 000075E0 EdpGetAppLockerUniqueAppIdentifier
+         12    B 00007720 EdpGetAppLockerUniqueAppIdentifierByToken
+         13    C 00007740 EdpGetAppLockerUniqueAppIdentifierByTokenEx
+         14    D 00009380 EdpGetClipboardAccessDeniedData
+         15    E 0000CA80 EdpGetContextForBinaryPath
+         16    F 0000CA90 EdpGetContextForImpersonatedToken
+         17   10 0000CD20 EdpGetContextForPackageFullName
+         18   11 0000CD40 EdpGetContextForProcess
+         19   12 0000CF70 EdpGetContextForWindow
+         20   13 00009680 EdpGetDataInfoFromDataObject
+         21   14 000078A0 EdpGetEnterpriseIdForClipboard
+         22   15 000098F0 EdpGetEnterpriseIdForDataObject
+         23   16 000078B0 EdpGetEnterpriseIdForUIEnforcement
+         24   17 000078C0 EdpGetEnterpriseIdForUIEnforcementFromProcess
+         25   18 00009AB0 EdpGetFilePathsForDataObject
+         26   19 00001230 EdpGetIsManaged
+         27   1A 00007C10 EdpGetPersonalEnterpriseIdString
+         28   1B 00007D90 EdpGetPrimaryIdentities
+         29   1C 00007DA0 EdpGetPrimaryIdentityIfManaged
+         30   1D 00007DC0 EdpGetSourceAppIdForClipboard
+         31   1E 00007DD0 EdpGetSourceIsEnlightenedForClipboard
+         32   1F 00007DE0 EdpGetWindowFromThreadId
+         33   20 00007F70 EdpIsAppClipboardConsentCached
+         34   21 0000D2E0 EdpIsContextExemptOrEnlightenedAllowed
+         35   22 00007F80 EdpIsFileAccessAllowed
+         36   23 00007F90 EdpIsUIPolicyEvaluationEnabledForThread
+         37   24 00007FB0 EdpIsValidSubjectForEncryption
+         38   25 0000D410 EdpRequestAccess
+         39   26 0000D550 EdpRequestAccessForContext
+         40   27 00008140 EdpSetEnterpriseIdForClipboard
+         41   28 00008180 EdpSetSourceAppIdForClipboard
+         42   29 00008190 EdpSetSourceIsEnlightenedForClipboard
+         43   2A 000081A0 EdpShouldShowEnterpriseIndicator
+         44   2B 00008320 EdpUtilCreateEnterpriseContextFromEnterpriseId
+         45   2C 00008480 EdpUtilFreeEnterpriseContext
+         46   2D 00008490 EdpUtilGetEnterpriseContextByName
+         47   2E 000084A0 EdpUtilGetEnterpriseContextByProcess
+         48   2F 00008680 EdpUtilGetEnterpriseContextByWindowHandle
+         49   30 00008690 EdpUtilGetEnterpriseContextForCurrentView
+         50   31 00008680 EdpUtilGetEnterpriseContextForView
+         51   32 000086A0 EdpUtilIsAppEnlightened
+         52   33 000086B0 EdpUtilQueryPolicy
+         53   34 00008710 GetProcessUniqueIdFromToken
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        2000 .pdata
+        8000 .rdata
+        1000 .reloc
+       23000 .rsrc
+       14000 .text

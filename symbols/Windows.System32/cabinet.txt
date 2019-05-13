@@ -1,0 +1,55 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\cabinet.dll
+
+File Type: DLL
+
+  Section contains the following exports for Cabinet.dll
+
+    00000000 characteristics
+    EEB31E32 time date stamp
+        0.00 version
+           1 ordinal base
+          45 number of functions
+          26 number of names
+
+    ordinal hint RVA      name
+
+         35    0 000040B0 CloseCompressor
+         45    1 00004210 CloseDecompressor
+         33    2 00004080 Compress
+         30    3 000040C0 CreateCompressor
+         40    4 00004200 CreateDecompressor
+         43    5 00004460 Decompress
+          4    6 0000C4C0 DeleteExtractedFiles
+          2    7 0000B830 DllGetVersion
+          3    8 0000C570 Extract
+         11    9 0000E310 FCIAddFile
+         10    A 0000E470 FCICreate
+         14    B 0000E740 FCIDestroy
+         13    C 0000E7B0 FCIFlushCabinet
+         12    D 0000E840 FCIFlushFolder
+         22    E 00005EB0 FDICopy
+         20    F 00008CB0 FDICreate
+         23   10 00007230 FDIDestroy
+         21   11 00008DC0 FDIIsCabinet
+         24   12 0000CC10 FDITruncateCabinet
+          1   13 0000B8C0 GetDllVersion
+         32   14 00015200 QueryCompressorInformation
+         42   15 000152B0 QueryDecompressorInformation
+         34   16 000152D0 ResetCompressor
+         44   17 00015350 ResetDecompressor
+         31   18 00015360 SetCompressorInformation
+         41   19 00015410 SetDecompressorInformation
+
+  Summary
+
+        3000 .data
+        1000 .didat
+        2000 .pdata
+        5000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       1A000 .text

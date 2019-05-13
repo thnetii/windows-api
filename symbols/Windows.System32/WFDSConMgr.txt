@@ -1,0 +1,48 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\WFDSConMgr.dll
+
+File Type: DLL
+
+  Section contains the following exports for WFDSConMgr.dll
+
+    00000000 characteristics
+    3F4DBE1C time date stamp
+        0.00 version
+           1 ordinal base
+          20 number of functions
+          20 number of names
+
+    ordinal hint RVA      name
+
+          2    0 00001C60 WFDSConMgrCloseSessionContext
+          1    1 00002E00 WFDSConMgrConfigureFirewallForInfraCast
+          3    2 00001F10 WFDSConMgrConnect
+          4    3 00002460 WFDSConMgrConnectTransport
+          5    4 00002BA0 WFDSConMgrDisconnect
+          6    5 00002CD0 WFDSConMgrDisconnectTransport
+          7    6 00002E10 WFDSConMgrFreeMemory
+          8    7 00001D20 WFDSConMgrGetOpenSessionList
+          9    8 00002EB0 WFDSConMgrGetTransportBitmaskFromMultistring
+         10    9 00002590 WFDSConMgrIntCompleteInfracastConnection
+         11    A 000026C0 WFDSConMgrIntGetInfracastBackchannelParams
+         12    B 00006000 WFDSConMgrNewDiscoveredEntryOverwritesOld
+         13    C 000019D0 WFDSConMgrOpenSessionContext
+         14    D 00001AB0 WFDSConMgrOpenSessionContextForMacAddress
+         15    E 00001B90 WFDSConMgrOpenSessionContextForNotification
+         16    F 00002A20 WFDSConMgrQueryCorrelationId
+         17   10 00002870 WFDSConMgrQueryStatus
+         18   11 000022C0 WFDSConMgrReadCeremonyData
+         19   12 00002040 WFDSConMgrSetAllowRemoteInput
+         20   13 00002170 WFDSConMgrWriteCeremonyData
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        7000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        B000 .text

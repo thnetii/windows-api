@@ -1,0 +1,39 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\dxtrans.dll
+
+File Type: DLL
+
+  Section contains the following exports for dxtrans.dll
+
+    00000000 characteristics
+       A7DB5 time date stamp
+        0.00 version
+           1 ordinal base
+          11 number of functions
+          11 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00008D30 ?DXConstOverArray@@YAXPEAVDXPMSAMPLE@@AEBV1@K@Z
+          2    1 00008E20 ?DXConstUnderArray@@YAXPEAVDXPMSAMPLE@@AEBV1@K@Z
+          3    2 00008EB0 ?DXDitherArray@@YAXPEBUDXDITHERDESC@@@Z
+          4    3 00008BC0 ?DXLinearInterpolateArray@@YAXPEBVDXBASESAMPLE@@PEAUDXLIMAPINFO@@PEAV1@K@Z
+          5    4 00008B20 ?DXOverArray@@YAXPEAVDXPMSAMPLE@@PEBV1@K@Z
+          6    5 00008B20 ?DXOverArrayMMX@@YAXPEAVDXPMSAMPLE@@PEBV1@K@Z
+          7    6 000020C0 DllCanUnloadNow
+          8    7 00002100 DllEnumClassObjects
+          9    8 000020E0 DllGetClassObject
+         10    9 00001880 DllRegisterServer
+         11    A 00001880 DllUnregisterServer
+
+  Summary
+
+        4000 .data
+        2000 .pdata
+        B000 .rdata
+        1000 .reloc
+        9000 .rsrc
+       2F000 .text

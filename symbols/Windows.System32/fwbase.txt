@@ -1,0 +1,218 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\fwbase.dll
+
+File Type: DLL
+
+  Section contains the following exports for fwbase.dll
+
+    00000000 characteristics
+    21717E5F time date stamp
+        0.00 version
+           1 ordinal base
+         189 number of functions
+         189 number of names
+
+    ordinal hint RVA      name
+
+          4    0 00007D50 FWIndicatePortInUse_Helper
+          5    1 00007E50 FwAddrChangeSourceInitialize
+          6    2 00015610 FwAddrChangeSourceShutdown
+          7    3 00006E80 FwAddrChangeSourceSignal
+          8    4 000028F0 FwAlloc
+          9    5 00002280 FwAllocArray
+         10    6 000022B0 FwAllocCheckSize
+         11    7 000026F0 FwArrayAppend
+         12    8 00006B60 FwArrayCat
+         13    9 000027E0 FwArrayCopy
+         14    A 000139F0 FwArrayCreateFromRegistry
+         15    B 00001F40 FwArrayDestroy
+         16    C 00013BD0 FwArrayErase
+         17    D 000172C0 FwAuthSuiteEmpty
+         18    E 000172D0 FwAuthSuiteEmptyByVersion
+         19    F 000161D0 FwAuthorizedAppEncode
+         20   10 000028F0 FwBaseAlloc
+         21   11 000022B0 FwBaseAllocCheckSize
+         22   12 00002250 FwBaseFree
+         23   13 000067F0 FwBoolIsEqual
+         24   14 000120D0 FwBuildIndirectString
+         25   15 00006790 FwCanonizeAuthorizedApps
+         26   16 000011C0 FwChangeSinkCreate
+         27   17 00015640 FwChangeSinkDestroy
+         28   18 00007E40 FwChangeSourceInitialize
+         29   19 00015670 FwChangeSourceShutdown
+         30   1A 00006ED0 FwChangeSourceSignal
+         31   1B 00008580 FwChangeSourceSignalStart
+         32   1C 00006560 FwCloseHandle
+         33   1D 00012190 FwConstructRemoteMachineSPN
+         34   1E 00012320 FwCreateDirectory
+         35   1F 00006600 FwCriticalSectionCreate
+         36   20 00001010 FwCriticalSectionDestroy
+         37   21 000065D0 FwCriticalSectionEnter
+         38   22 000065C0 FwCriticalSectionLeave
+         39   23 000124A0 FwDWordMultiply
+         40   24 00006970 FwEnableMemTracing
+         41   25 000124D0 FwEnablePrivilege
+         42   26 00006A50 FwExpandEnvironmentStrings
+          1   27 00008060 FwExtractPortNumber
+         43   28 00005F90 FwFieldNameMatchStringBegining
+         44   29 00014260 FwFinalHash
+         45   2A 00002250 FwFree
+         46   2B 00017370 FwFreeCertCriteria
+         47   2C 00001E50 FwFreeRpcCallersProcessInfo
+         48   2D 00007430 FwGetAppBlockList
+         49   2E 00016300 FwGetAuthorizedApp
+         50   2F 00007530 FwGetExpandedCanonicalLongPathName
+         51   30 000163F0 FwGetIcmpSettings
+         52   31 00001CE0 FwGetLongPathName
+         53   32 00006130 FwGetProfileIndexFromProfileType
+         54   33 00006110 FwGetProfileTypeFromProfileIndex
+         55   34 000164D0 FwGetRemoteAdminSettings
+         56   35 00014520 FwGetRpcCallersProcessImageName
+         57   36 00001600 FwGetRpcCallersProcessInfo
+         58   37 000175D0 FwGetService
+         59   38 00017630 FwGetServiceTypes
+         60   39 00016520 FwGetServices
+         61   3A 00016600 FwGetStaticFwPort
+         62   3B 00006C60 FwGetStringId
+         63   3C 000080D0 FwGetStringIdForStatusCode
+         64   3D 00012720 FwGetSysPathName
+         65   3E 00001830 FwGetTokenInformation
+         66   3F 00006530 FwHResultToWindowsError
+         67   40 00008140 FwHashtableCreate
+         68   41 00014270 FwHashtableDestroy
+         69   42 00014300 FwHashtableEmpty
+         70   43 00014380 FwHashtableFind
+         71   44 000143A0 FwHashtableGetNext
+         72   45 000143B0 FwHashtableInsert
+         73   46 00014450 FwHashtableRemove
+         74   47 00007A90 FwIOReadPortUseIndications
+         75   48 00007920 FwIOWritePortUseIndications
+         76   49 00001EE0 FwIcfAuthBypassServicesDestroy
+         77   4A 00001F00 FwIcfAuthBypassSubNetsDestroy
+         78   4B 00013D70 FwIcfAuthorizedAppCopy
+         79   4C 00013F10 FwIcfAuthorizedAppsCopy
+         80   4D 00013FB0 FwIcfAuthorizedAppsDestroy
+         81   4E 000021A0 FwIcfDynamicFwPortDestroy
+         82   4F 000068B0 FwIcfIpV4SubNetsCanonize
+         83   50 000068E0 FwIcfIpV6SubNetsCanonize
+         84   51 000141B0 FwIcfSubNetsCopy
+         85   52 00001FA0 FwIcfSubNetsDestroy
+         86   53 00014240 FwIcfSubNetsGetScope
+         87   54 00006660 FwIcfSubNetsIsEqual
+         88   55 00016710 FwImageListDestroy
+         89   56 00016730 FwImageListHasImage
+         90   57 00006970 FwInitMemoryMgr
+         91   58 00014460 FwInitializeHashContext
+         92   59 000167A0 FwIpV4SubNetDecode
+         93   5A 00017730 FwIsBuiltInPort
+         94   5B 000021E0 FwIsMachineLocalHost
+          2   5C 00014C70 FwIsValidPorts
+         95   5D 00008520 FwLicensingIsIoT
+         96   5E 00003F30 FwLicensingIsNetIsolationOnly
+         97   5F 000065E0 FwLicensingIsXbox
+         98   60 00001B00 FwLoadIndirectString
+         99   61 000071F0 FwLoadString
+        100   62 00008180 FwLookupAccountSid
+        101   63 00006040 FwMarshalledMetaDataCopy
+        102   64 00006160 FwMarshalledMetaDataInitialize
+        103   65 00006180 FwMetaDataAddEnforcementState
+        104   66 000128B0 FwMetaDataCopy
+        105   67 00006580 FwMetaDataFree
+        106   68 00006C30 FwMetaDataIsEnforcementStatePresent
+        107   69 00012A00 FwMultiByteToWideChar
+        108   6A 00014610 FwParseEdpCloudResourceStringToNrptRuleList
+          3   6B 00014D40 FwPortsToString
+        109   6C 00002300 FwProfileTypesToString
+        110   6D 000066A0 FwRegCloseKey
+        111   6E 000010F0 FwRegCreateKey
+        112   6F 00011700 FwRegDeleteAllValues
+        113   70 00011820 FwRegDeleteKey
+        114   71 000118C0 FwRegDeleteValue
+        115   72 00006F20 FwRegEnumValueNameAndValueData
+        116   73 000013D0 FwRegNotifyCreate
+        117   74 00011B50 FwRegNotifyDestroy
+        118   75 00002970 FwRegOpenKey
+        119   76 00001280 FwRegQueryDWord
+        120   77 00011BB0 FwRegQueryNumKeys
+        121   78 00007F20 FwRegQueryNumValues
+        122   79 00001FD0 FwRegQueryString
+        123   7A 00006810 FwRegSetDWord
+        124   7B 000066C0 FwRegSetString
+        125   7C 00012CC0 FwReleasePrivilege
+        126   7D 00012DA0 FwReportErrorAsNtStatus
+        127   7E 00006D40 FwReportErrorAsWinError
+        128   7F 00001C90 FwReportReturnError
+        129   80 00001A40 FwResolveIndirectString
+        130   81 00014470 FwRestructureHashtable
+        131   82 000082C0 FwServiceSidCreateInPlace
+        132   83 00006970 FwSetMemLeakPolicy
+        133   84 00006970 FwShutdownMemoryMgr
+        134   85 00007FB0 FwSidCreate
+        135   86 00012E50 FwSidDestroy
+        136   87 00012E70 FwSizeTAdd
+        137   88 00002930 FwSizeTMultiply
+        138   89 00006CD0 FwSortAddresses
+        139   8A 00006DE0 FwSortInterfaceLUIDs
+        140   8B 00016B60 FwStaticFwPortEncode
+        141   8C 00016CA0 FwStaticFwPortEncodeValueName
+        142   8D 00002A10 FwStringBuild
+        143   8E 00012E90 FwStringCanonicalizeCopy
+        144   8F 00001D90 FwStringCopy
+        145   90 00013000 FwStringCopyA
+        146   91 00013120 FwStringCopyAtoWAlloc
+        147   92 00013280 FwStringCopyWtoAAlloc
+        148   93 00017170 FwSubNetsEncode
+        149   94 000133F0 FwSubstituteDeviceName
+        150   95 000085A0 FwTriggerGetEventForSource
+        151   96 00008490 FwTriggerRearm
+        152   97 00008360 FwTriggerRegisterWait
+        153   98 00014AD0 FwTriggerUnregisterWait
+        154   99 000144F0 FwUpdateHash
+        155   9A 00017750 FwVerifyAuthenticationSet
+        156   9B 000178B0 FwVerifyAuthenticationSetQuery
+        157   9C 00017A10 FwVerifyConnectionSecurityRule
+        158   9D 00017BC0 FwVerifyConnectionSecurityRuleQuery
+        159   9E 00017D20 FwVerifyCryptoSet
+        160   9F 00017E80 FwVerifyCryptoSetQuery
+        161   A0 00017FE0 FwVerifyFirewallRule
+        162   A1 00006200 FwVerifyFirewallRuleQuery
+        163   A2 00018110 FwVerifyMainModeRule
+        164   A3 00018240 FwVerifyMainModeRuleQuery
+        165   A4 00006970 FwVerifyNoHeapLeaks
+        166   A5 00008560 FwWcsICmp
+        167   A6 00019050 Int_FWVerifyAuthenticationSet
+        168   A7 000195E0 Int_FWVerifyConnectionSecurityRule
+        169   A8 0001AAB0 Int_FWVerifyCryptoSet
+        170   A9 00002E10 Int_FWVerifyFirewallRule
+        171   AA 0001AF20 Int_FWVerifyMainModeRule
+        172   AB 0001B4B0 Int_FwIPV4RangeContainsMulticast
+        173   AC 0001B4F0 Int_FwIPV6RangeContainsMulticast
+        174   AD 00008110 Int_FwIsV6AddrLoopback
+        175   AE 00002C00 Int_FwValidateAndMigrateSecurityDescriptor
+        176   AF 0001B510 Int_FwValidateComplianceAndReduceAuthSetToVersion
+        177   B0 0001B760 Int_FwValidateComplianceAndReduceConnSecRuleToVersion
+        178   B1 0001BC30 Int_FwValidateComplianceAndReduceCryptoSetToVersion
+        179   B2 00003980 Int_FwValidateComplianceAndReduceFirewallRuleToVersion
+        180   B3 0001C0A0 Int_FwValidateComplianceAndReduceMainModeRuleToVersion
+        181   B4 00003660 Int_FwValidateSecurityDescriptor
+        182   B5 00007E00 IsAddressesEmpty
+        183   B6 000173E0 IsCSRuleTunnelMode
+        184   B7 00006B20 IsRuleOldAuthApp
+        185   B8 00006C90 IsRuleOldGlobalOpenPort
+        186   B9 00017450 IsRuleOldv1Compliant
+        187   BA 00017490 IsRuleOpenPortOrAuthApp
+        188   BB 00006DA0 Isv4AddressesEmpty
+        189   BC 00006DC0 Isv6AddressesEmpty
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        2000 .pdata
+        9000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       1D000 .text

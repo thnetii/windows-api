@@ -1,0 +1,51 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\dsprop.dll
+
+File Type: DLL
+
+  Section contains the following exports for dsprop.dll
+
+    00000000 characteristics
+     C43F308 time date stamp
+        0.00 version
+           1 ordinal base
+          23 number of functions
+          23 number of names
+
+    ordinal hint RVA      name
+
+         10    0 00003BF0 ADsPropCheckIfWritable
+         11    1 00003B00 ADsPropCreateNotifyObj
+         12    2 00003B10 ADsPropGetInitInfo
+         13    3 00003C70 ADsPropSendErrorMessage
+         14    4 00003BE0 ADsPropSetHwnd
+         15    5 00003B80 ADsPropSetHwndWithTitle
+         16    6 00003CA0 ADsPropShowErrorDialog
+         17    7 00004CE0 BringSheetToForeground
+          1    8 000013A0 CheckADsError
+          2    9 00007850 CrackName
+          3    A 00007E40 DSPROP_GetGCSearchOnDomain
+         18    B 000019E0 DllCanUnloadNow
+         19    C 000018E0 DllGetClassObject
+         20    D 00001A00 DllRegisterServer
+         21    E 00001CF0 DllUnregisterServer
+          4    F 00001600 ErrMsg
+          5   10 00001620 ErrMsgParam
+          6   11 00004D20 FindSheet
+         22   12 00004D60 IsSheetAlreadyUp
+          7   13 00001710 MsgBox
+         23   14 00006B70 PostADsPropSheet
+          8   15 00001550 ReportError
+          9   16 00003300 Smart_PADS_ATTR_INFO__Empty
+
+  Summary
+
+        2000 .data
+        1000 .pdata
+        7000 .rdata
+        1000 .reloc
+        9000 .rsrc
+       19000 .text

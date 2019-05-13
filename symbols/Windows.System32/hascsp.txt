@@ -1,0 +1,39 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\hascsp.dll
+
+File Type: DLL
+
+  Section contains the following exports for hascsp.dll
+
+    00000000 characteristics
+    46336180 time date stamp
+        0.00 version
+           1 ordinal base
+          11 number of functions
+          11 number of names
+
+    ordinal hint RVA      name
+
+          7    0 0000CDB0 DllCanUnloadNow
+          8    1 0000CDD0 DllGetClassObject
+          9    2 0000CEB0 DllMain
+         10    3 0000C8E0 DllRegisterServer
+         11    4 0000C8E0 DllUnregisterServer
+          1    5 0000D3D0 GetForceRetrieve
+          2    6 0000D3F0 GetHealthCert
+          3    7 0000D1A0 GetNonce
+          4    8 00001650 PolicyManager_PreCheck
+          5    9 0000D560 SetForceRetrieve
+          6    A 0000D410 SetNonce
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        6000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       10000 .text

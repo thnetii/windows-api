@@ -1,0 +1,41 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\srclient.dll
+
+File Type: DLL
+
+  Section contains the following exports for SRCLIENT.dll
+
+    00000000 characteristics
+    4122AC61 time date stamp
+        0.00 version
+           1 ordinal base
+          13 number of functions
+          13 number of names
+
+    ordinal hint RVA      name
+
+          3    0 00002F70 DisableSR
+          4    1 00002FE0 DisableSRInternal
+          5    2 00002E80 EnableSR
+          6    3 00002E80 EnableSREx
+          7    4 00002EF0 EnableSRInternal
+          8    5 000032C0 SRNewSystemId
+          9    6 00003250 SRRemoveRestorePoint
+         10    7 00003140 SRSetRestorePointA
+         11    8 000031C0 SRSetRestorePointInternal
+         12    9 000030C0 SRSetRestorePointW
+         13    A 00003060 SetSRStateAfterSetup
+          1    B 000069D0 SysprepCleanup
+          2    C 000069F0 SysprepGeneralize
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        4000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        D000 .text

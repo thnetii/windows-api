@@ -1,0 +1,97 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\authz.dll
+
+File Type: DLL
+
+  Section contains the following exports for AUTHZ.dll
+
+    00000000 characteristics
+    BC67B73A time date stamp
+        0.00 version
+           1 ordinal base
+          68 number of functions
+          68 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001F30 AuthzAccessCheck
+          2    1 00011CA0 AuthzAddSidsToContext
+          3    2 00011DA0 AuthzCachedAccessCheck
+          4    3 00020A30 AuthzComputeEffectivePermission
+          5    4 00012300 AuthzEnumerateSecurityEventSources
+          6    5 000128B0 AuthzEvaluateSacl
+          7    6 00005B70 AuthzFreeAuditEvent
+          8    7 00012940 AuthzFreeCentralAccessPolicyCache
+          9    8 000029F0 AuthzFreeContext
+         10    9 00012950 AuthzFreeHandle
+         11    A 00005460 AuthzFreeResourceManager
+         12    B 00002760 AuthzGetInformationFromContext
+         13    C 000129E0 AuthzInitializeCompoundContext
+         14    D 00008790 AuthzInitializeContextFromAuthzContext
+         15    E 00002910 AuthzInitializeContextFromSid
+         16    F 00002E20 AuthzInitializeContextFromToken
+         17   10 00012AF0 AuthzInitializeObjectAccessAuditEvent
+         18   11 00004E80 AuthzInitializeObjectAccessAuditEvent2
+         19   12 00008B30 AuthzInitializeRemoteAccessCheck
+         20   13 00012B40 AuthzInitializeRemoteResourceManager
+         21   14 00005870 AuthzInitializeResourceManager
+         22   15 00008EB0 AuthzInitializeResourceManagerEx
+         23   16 00012B70 AuthzInstallSecurityEventSource
+         24   17 00012F30 AuthzModifyClaims
+         25   18 00012F90 AuthzModifySecurityAttributes
+         26   19 00012FF0 AuthzModifySids
+         27   1A 00013050 AuthzOpenObjectAudit
+         28   1B 00013260 AuthzRegisterCapChangeNotification
+         29   1C 00013330 AuthzRegisterSecurityEventSource
+         30   1D 00013400 AuthzReportSecurityEvent
+         31   1E 000134D0 AuthzReportSecurityEventFromParams
+         32   1F 00013640 AuthzSetAppContainerInformation
+         33   20 00013690 AuthzShutdownRemoteAccessCheck
+         34   21 000136A0 AuthzUninstallSecurityEventSource
+         35   22 00013750 AuthzUnregisterCapChangeNotification
+         36   23 000137B0 AuthzUnregisterSecurityEventSource
+         37   24 00013850 AuthziAccessCheckEx
+         38   25 000011E0 AuthziAllocateAuditParams
+         39   26 000138E0 AuthziCheckContextMembership
+         40   27 00005B50 AuthziFreeAuditEventType
+         41   28 00001180 AuthziFreeAuditParams
+         42   29 00013940 AuthziFreeAuditQueue
+         43   2A 00011620 AuthziGenerateAdminAlertAuditW
+         44   2B 00004FF0 AuthziInitializeAuditEvent
+         45   2C 00006190 AuthziInitializeAuditEventType
+         46   2D 00006450 AuthziInitializeAuditParams
+         47   2E 000139F0 AuthziInitializeAuditParamsFromArray
+         48   2F 00008630 AuthziInitializeAuditParamsWithRM
+         49   30 00009040 AuthziInitializeAuditQueue
+         50   31 00013B80 AuthziInitializeContextFromSid
+         51   32 00005C90 AuthziLogAuditEvent
+         52   33 00013C70 AuthziModifyAuditEvent
+         53   34 00008100 AuthziModifyAuditEvent2
+         54   35 00013CB0 AuthziModifyAuditEventType
+         55   36 00013D10 AuthziModifyAuditQueue
+         56   37 00013D80 AuthziModifySecurityAttributes
+         57   38 00013DE0 AuthziQuerySecurityAttributes
+         58   39 00001010 AuthziSourceAudit
+         59   3A 0001FFF0 FreeClaimDefinitions
+         60   3B 00020080 FreeClaimDictionary
+         61   3C 00018830 GenerateNewCAPID
+         62   3D 0001E090 GetCentralAccessPoliciesByCapID
+         63   3E 0001E6A0 GetCentralAccessPoliciesByDN
+         64   3F 000200A0 GetClaimDefinitions
+         65   40 00020180 GetClaimDomainInfo
+         66   41 00018950 GetDefaultCAPESecurityDescriptor
+         67   42 00020250 InitializeClaimDictionary
+         68   43 000203E0 RefreshClaimDictionary
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        2000 .pdata
+       19000 .rdata
+        2000 .reloc
+        1000 .rsrc
+       2A000 .text

@@ -1,0 +1,107 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\msls31.dll
+
+File Type: DLL
+
+  Section contains the following exports for msls31.dll
+
+    00000000 characteristics
+    6BA9CD7D time date stamp
+        0.00 version
+           1 ordinal base
+          80 number of functions
+          79 number of names
+
+    ordinal hint RVA      name
+
+          8    0 00015B40 LsAppendRunToCurrentSubline
+         65    1 00015CF0 LsCompressSubline
+          1    2 000155A0 LsCreateContext
+          3    3 000087C0 LsCreateLine
+          6    4 00015D20 LsCreateSubline
+          2    5 000158F0 LsDestroyContext
+          5    6 00005250 LsDestroyLine
+         16    7 00015DB0 LsDestroySubline
+         40    8 00007FD0 LsDisplayLine
+         41    9 00017DF0 LsDisplaySubline
+         72    A 00017E80 LsEnumLine
+         75    B 00017E40 LsEnumSubline
+         18    C 00015E00 LsExpandSubline
+          7    D 00015E20 LsFetchAppendToCurrentSubline
+         68    E 00016060 LsFetchAppendToCurrentSublineResume
+         13    F 00016300 LsFindNextBreakSubline
+         12   10 00016380 LsFindPrevBreakSubline
+         10   11 00016400 LsFinishCurrentSubline
+         14   12 00016430 LsForceBreakSubline
+         66   13 00015480 LsGetHihLsimethods
+         74   14 000159B0 LsGetLineDur
+         73   15 00015A40 LsGetMinDurBreaks
+         71   16 00028C80 LsGetReverseLsimethods
+         62   17 000094D0 LsGetRubyLsimethods
+         19   18 000164B0 LsGetSpecialEffectsSubline
+         63   19 0002B520 LsGetTatenakayokoLsimethods
+         61   1A 0002D2D0 LsGetWarichuLsimethods
+         80   1B 0000E6D0 LsLwMultDivR
+         17   1C 000164E0 LsMatchPresSubline
+          4   1D 00015AD0 LsModifyLineHeight
+         60   1E 00019860 LsPointUV2FromPointUV1
+         59   1F 00010370 LsPointXYFromPointUV
+         47   20 00019040 LsQueryCpPpointSubline
+         45   21 00018E30 LsQueryFLineEmpty
+         42   22 00004B50 LsQueryLineCpPpoint
+         44   23 00004C90 LsQueryLineDup
+         43   24 00018EB0 LsQueryLinePointPcp
+         46   25 00019060 LsQueryPointPcpSubline
+         67   26 00018FB0 LsQueryTextCellDetails
+          9   27 00016500 LsResetRMInCurrentSubline
+         15   28 00016540 LsSetBreakSubline
+         52   29 00004F30 LsSetBreaking
+         50   2A 00019080 LsSetCompression
+         48   2B 00004D40 LsSetDoc
+         51   2C 00019160 LsSetExpansion
+         49   2D 00019240 LsSetModWidthPairs
+         64   2E 000165A0 LsSqueezeSubline
+         11   2F 00016600 LsTruncateSubline
+         37   30 00016E70 LsdnDistribute
+         26   31 00016690 LsdnFinishByOneChar
+         23   32 000167B0 LsdnFinishByPen
+         24   33 00016940 LsdnFinishBySubline
+         22   34 00016B10 LsdnFinishDelete
+         25   35 00016BB0 LsdnFinishDeleteAll
+         20   36 000073E0 LsdnFinishRegular
+         21   37 00016D60 LsdnFinishRegularAddAdvancePen
+         35   38 00016FA0 LsdnGetCurTabInfo
+         32   39 00017130 LsdnGetDup
+         69   3A 00017180 LsdnGetFormatDepth
+         76   3B 000171C0 LsdnModifyParaEnding
+         27   3C 00017210 LsdnQueryObjDimRange
+         29   3D 000173D0 LsdnQueryPenNode
+         28   3E 00017420 LsdnResetObjDim
+         30   3F 000174C0 LsdnResetPenNode
+         34   40 000175D0 LsdnResolvePrevTab
+         33   41 00017660 LsdnSetAbsBaseLine
+         31   42 000176B0 LsdnSetRigidDup
+         36   43 00017700 LsdnSkipCurTab
+         39   44 00017790 LsdnSubmitSublines
+         70   45 00019620 LssbFDoneDisplay
+         55   46 00019650 LssbFDonePresSubline
+         79   47 00019680 LssbFIsSublineEmpty
+         54   48 000196A0 LssbGetDupSubline
+         77   49 00019700 LssbGetDurTrailInSubline
+         78   4A 00019720 LssbGetDurTrailWithPensInSubline
+         57   4B 00019740 LssbGetNumberDnodesInSubline
+         53   4C 00019780 LssbGetObjDimSubline
+         56   4D 000197B0 LssbGetPlsrunsFromSubline
+         58   4E 00019810 LssbGetVisibleDcpInSubline
+
+  Summary
+
+        1000 .data
+        2000 .pdata
+        4000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       2F000 .text

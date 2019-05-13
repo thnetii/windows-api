@@ -1,0 +1,41 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\Websocket.dll
+
+File Type: DLL
+
+  Section contains the following exports for websocket.dll
+
+    00000000 characteristics
+    40586D48 time date stamp
+        0.00 version
+           1 ordinal base
+          13 number of functions
+          13 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000010D0 WebSocketAbortHandle
+          2    1 000012B0 WebSocketBeginClientHandshake
+          3    2 000013E0 WebSocketBeginServerHandshake
+          4    3 00001630 WebSocketCompleteAction
+          5    4 00001090 WebSocketCreateClientHandle
+          6    5 000010B0 WebSocketCreateServerHandle
+          7    6 00001120 WebSocketDeleteHandle
+          8    7 00001340 WebSocketEndClientHandshake
+          9    8 00001480 WebSocketEndServerHandshake
+         10    9 000015A0 WebSocketGetAction
+         11    A 000016F0 WebSocketGetGlobalProperty
+         12    B 00001550 WebSocketReceive
+         13    C 000014D0 WebSocketSend
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        2000 .rsrc
+        8000 .text

@@ -1,0 +1,42 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\msiltcfg.dll
+
+File Type: DLL
+
+  Section contains the following exports for msiltcfg.dll
+
+    00000000 characteristics
+    869ED7EF time date stamp
+        0.00 version
+           1 ordinal base
+          14 number of functions
+          14 number of names
+
+    ordinal hint RVA      name
+
+          8    0 000014F0 MsiAdvertiseScriptW
+         12    1 00001700 MsiConfigureProductExW
+          1    2 000010D0 MsiDecomposeDescriptorW
+          2    3 00001180 MsiGetComponentPathW
+          3    4 00001220 MsiGetProductInfoW
+         10    5 00001600 MsiIsProductElevatedW
+          4    6 000012C0 MsiProvideComponentFromDescriptorW
+          6    7 000013E0 MsiQueryFeatureStateFromDescriptorW
+          5    8 00001360 MsiQueryFeatureStateW
+          9    9 00001590 MsiQueryProductStateW
+         11    A 00001680 MsiReinstallProductW
+          7    B 00001450 MsiSetInternalUI
+         14    C 000017E0 RestartMsi
+         13    D 000017A0 ShutdownMsi
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        3000 .text

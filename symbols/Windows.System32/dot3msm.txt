@@ -1,0 +1,49 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\dot3msm.dll
+
+File Type: DLL
+
+  Section contains the following exports for dot3msm.dll
+
+    00000000 characteristics
+    EA7F5FD0 time date stamp
+        0.00 version
+           1 ordinal base
+          20 number of functions
+          20 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00003E10 DllMain
+          2    1 000081A0 Dot3MsmConnect
+          3    2 00007C90 Dot3MsmCreateDefaultProfile
+          4    3 00007B10 Dot3MsmDeInit
+          5    4 00008060 Dot3MsmDeInitAdapter
+          6    5 000083E0 Dot3MsmDisconnect
+          7    6 00008560 Dot3MsmFreeMemory
+          8    7 00008690 Dot3MsmFreeProfile
+          9    8 000087D0 Dot3MsmIndicateSessionChange
+         10    9 000079A0 Dot3MsmInit
+         11    A 00007EF0 Dot3MsmInitAdapter
+         12    B 000090C0 Dot3MsmQueryMediaState
+         13    C 00008CD0 Dot3MsmQueryPendingUIRequest
+         14    D 00008F00 Dot3MsmQueryState
+         15    E 0000A6F0 Dot3MsmReAuthenticate
+         16    F 0000A4F0 Dot3MsmSetRuntimeState
+         17   10 000088F0 Dot3MsmUIResponse
+         18   11 00007DF0 Dot3MsmValidateProfile
+         19   12 0000E970 Dot3ReasonCodeMsmToString
+         20   13 0000A270 Dot3SetPortAuthenticationState
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        1000 .pdata
+        4000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       14000 .text

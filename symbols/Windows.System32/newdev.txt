@@ -1,0 +1,53 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\newdev.dll
+
+File Type: DLL
+
+  Section contains the following exports for newdev.dll
+
+    00000000 characteristics
+    3C03589B time date stamp
+        0.00 version
+           1 ordinal base
+          24 number of functions
+          24 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0001C5A0 CheckDriverSoftwareDependenciesSatisfied
+          2    1 00014460 DeviceInternetSettingUiW
+          3    2 00003E30 DiInstallDevice
+          4    3 00004450 DiInstallDriverA
+          5    4 000044E0 DiInstallDriverW
+          6    5 0000F8E0 DiRollbackDriver
+          7    6 00004BA0 DiShowUpdateDevice
+          8    7 00004D80 DiShowUpdateDriver
+          9    8 00004F20 DiUninstallDevice
+         10    9 000050C0 DiUninstallDriverA
+         11    A 00005150 DiUninstallDriverW
+         12    B 00011AC0 GetInternetPolicies
+         13    C 000055A0 InstallNewDevice
+         14    D 00005640 InstallSelectedDriver
+         15    E 00005730 InstallWindowsUpdateDriver
+         16    F 00005750 InstallWindowsUpdateDriverEx
+         17   10 000058C0 InstallWindowsUpdateDrivers
+         18   11 00005C90 QueryWindowsUpdateDriverStatus
+         19   12 00013540 SetInternetPolicies
+         20   13 00005E70 UpdateDriverForPlugAndPlayDevicesA
+         21   14 00005F40 UpdateDriverForPlugAndPlayDevicesW
+         22   15 00006560 pDiDoDeviceInstallAsAdmin
+         23   16 000066A0 pDiDoNullDriverInstall
+         24   17 00006750 pDiRunFinishInstallOperations
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        2000 .pdata
+        C000 .rdata
+        1000 .reloc
+       4E000 .rsrc
+       25000 .text

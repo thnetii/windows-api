@@ -1,0 +1,41 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\MsSpellCheckingFacility.dll
+
+File Type: DLL
+
+  Section contains the following exports for msspellcheckingfacility.dll
+
+    00000000 characteristics
+    63FAAF16 time date stamp
+        0.00 version
+           1 ordinal base
+          12 number of functions
+          12 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00016AE0 DllCanUnloadNow
+          2    1 00016B20 DllGetActivationFactory
+          3    2 00016B60 DllGetClassObject
+          4    3 00016BC0 DllRegisterServer
+          5    4 00016C00 DllUnregisterServer
+          6    5 0004CDF0 SpellerCheck
+          7    6 0004D260 SpellerCloseLex
+          8    7 0004D800 SpellerGetOptions
+          9    8 0004DBD0 SpellerInit
+         10    9 0004DC80 SpellerOpenLex
+         11    A 0004E3E0 SpellerSetOptions
+         12    B 0004E6C0 SpellerTerminate
+
+  Summary
+
+        7000 .data
+        1000 .didat
+        A000 .pdata
+       3D000 .rdata
+        3000 .reloc
+        3000 .rsrc
+       90000 .text

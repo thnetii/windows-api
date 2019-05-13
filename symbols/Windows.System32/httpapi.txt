@@ -1,0 +1,73 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\httpapi.dll
+
+File Type: DLL
+
+  Section contains the following exports for HTTPAPI.dll
+
+    00000000 characteristics
+    DB9ECE21 time date stamp
+        0.00 version
+           1 ordinal base
+          44 number of functions
+          44 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000044D0 HttpAddFragmentToCache
+          2    1 00001A00 HttpAddUrl
+          3    2 00003100 HttpAddUrlToUrlGroup
+          4    3 00003A10 HttpCancelHttpRequest
+          5    4 000045D0 HttpCloseRequestQueue
+          6    5 00003750 HttpCloseServerSession
+          7    6 00003140 HttpCloseUrlGroup
+          8    7 00005330 HttpControlService
+          9    8 00001470 HttpCreateHttpHandle
+         10    9 00001500 HttpCreateRequestQueue
+         11    A 000037C0 HttpCreateServerSession
+         12    B 000031B0 HttpCreateUrlGroup
+         13    C 00003BE0 HttpDeclarePush
+         14    D 00003C80 HttpDelegateRequest
+         15    E 000049B0 HttpDeleteServiceConfiguration
+         16    F 00003CF0 HttpEvaluateRequest
+         17   10 00001CB0 HttpFlushResponseCache
+         18   11 00001BD0 HttpGetCounters
+         19   12 00005460 HttpGetExtension
+         20   13 00001F90 HttpInitialize
+         21   14 00003250 HttpPrepareUrl
+         22   15 00003E50 HttpQueryRequestProperty
+         23   16 00004600 HttpQueryRequestQueueProperty
+         24   17 00003870 HttpQueryServerSessionProperty
+         25   18 00004A70 HttpQueryServiceConfiguration
+         26   19 000033E0 HttpQueryUrlGroupProperty
+         27   1A 000046B0 HttpReadFragmentFromCache
+         28   1B 000047C0 HttpReceiveClientCertificate
+         29   1C 00001300 HttpReceiveHttpRequest
+         30   1D 00001160 HttpReceiveRequestEntityBody
+         31   1E 000052A0 HttpRemoveUrl
+         32   1F 00003480 HttpRemoveUrlFromUrlGroup
+         33   20 00001200 HttpSendHttpResponse
+         34   21 00001010 HttpSendResponseEntityBody
+         35   22 00004880 HttpSetRequestQueueProperty
+         36   23 00003900 HttpSetServerSessionProperty
+         37   24 00004D90 HttpSetServiceConfiguration
+         38   25 000034D0 HttpSetUrlGroupProperty
+         39   26 00004920 HttpShutdownRequestQueue
+         40   27 00004290 HttpTerminate
+         41   28 00004E40 HttpUpdateServiceConfiguration
+         42   29 00004950 HttpWaitForDemandStart
+         43   2A 000010F0 HttpWaitForDisconnect
+         44   2B 00004080 HttpWaitForDisconnectEx
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        3000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        5000 .text

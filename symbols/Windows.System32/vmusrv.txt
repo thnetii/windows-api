@@ -1,0 +1,40 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\vmusrv.dll
+
+File Type: DLL
+
+  Section contains the following exports for vmusrv.dll
+
+    00000000 characteristics
+    D833940E time date stamp
+        0.00 version
+           1 ordinal base
+          12 number of functions
+          12 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00004820 VmusrvAddShare
+          2    1 00004750 VmusrvCleanup
+          3    2 00004DD0 VmusrvEnginePause
+          4    3 00005280 VmusrvEngineRestore
+          5    4 00004E60 VmusrvEngineResume
+          6    5 00005070 VmusrvEngineSave
+          7    6 00004D50 VmusrvEngineStop
+          8    7 00004420 VmusrvInitialize
+          9    8 000053F0 VmusrvOpenFile
+         10    9 00004AC0 VmusrvRemoveShare
+         11    A 00005370 VmusrvSupportsPause
+         12    B 00005430 VmusrvUpdateShareAllowedFileList
+
+  Summary
+
+        3000 .data
+        4000 .pdata
+       14000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       51000 .text

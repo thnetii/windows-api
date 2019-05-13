@@ -1,0 +1,59 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\secproc_isv.dll
+
+File Type: DLL
+
+  Section contains the following exports for iwb.dll
+
+    00000000 characteristics
+    DAA245A4 time date stamp
+        0.00 version
+           1 ordinal base
+          30 number of functions
+          30 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0000A0F0 SPAttest
+          2    1 0000A210 SPBindLicense
+          3    2 0000A410 SPCheckEnvironmentSecurity
+         30    3 0000A380 SPCloseHandle
+          4    4 0000A450 SPCommit
+          5    5 0000A490 SPCreateDecryptor
+          6    6 0000A5A0 SPCreateEnablingPrincipal
+          7    7 0000A730 SPCreateEncryptor
+          8    8 0000A8A0 SPCreatePCE
+          9    9 0000A8E0 SPCreateSecurityProcessor
+         10    A 0000AAB0 SPDecrypt
+         11    B 0000ABE0 SPDecryptFinal
+         12    C 0000AC20 SPDecryptUpdate
+         13    D 0000BA20 SPEnableAndEncrypt
+         14    E 0000AC60 SPEnablePublishingLicense
+         15    F 0000ACE0 SPEncrypt
+         16   10 0000AE00 SPEncryptFinal
+         17   11 0000AE40 SPEncryptUpdate
+         18   12 0000BF30 SPGetBoundRightKey
+         19   13 0000AE80 SPGetCurrentTime
+         20   14 0000AF70 SPGetInfo
+         21   15 0000B650 SPGetLicenseAttribute
+         22   16 0000B540 SPGetLicenseAttributeCount
+         23   17 0000B3F0 SPGetLicenseObject
+         24   18 0000B2E0 SPGetLicenseObjectCount
+         25   19 0000B890 SPGetProcAddress
+         26   1A 0000BE40 SPIsActivated
+         27   1B 0000B770 SPLoadLibrary
+         28   1C 0000B1F0 SPRegisterRevocationList
+         29   1D 0000B0D0 SPSign
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        3000 .pdata
+       1C000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       42000 .text

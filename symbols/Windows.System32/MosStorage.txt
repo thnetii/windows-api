@@ -1,0 +1,61 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\MosStorage.dll
+
+File Type: DLL
+
+  Section contains the following exports for MosStorage.dll
+
+    00000000 characteristics
+    9EE09B2D time date stamp
+        0.00 version
+           1 ordinal base
+          32 number of functions
+          32 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00008290 MosQueryAnyPackagesFromPath
+          2    1 00008EA0 MosQueryCatalogExists
+          3    2 000081F0 MosQueryPackages
+          4    3 00008350 MosQueryPackagesFromPath
+          5    4 00007310 MosStorageDumpConfiguration
+          6    5 00007760 MosStorageEnsureIsAppContainerCompliant
+          7    6 00007480 MosStorageEnsureMapDataDirectory
+          8    7 00007660 MosStorageEnsureMapDataDirectoryReturnPath
+          9    8 00007100 MosStorageGetBrowseCacheSizeInMBytes
+         10    9 00006E10 MosStorageGetCurrentLocation
+         11    A 00006F00 MosStorageGetDataDirectory
+         12    B 00006D60 MosStorageGetDefaultExternalStorage
+         13    C 00006480 MosStorageGetLocations
+         14    D 00007190 MosStorageGetMapDataMaxBrowseCacheSizeInBytes
+         15    E 00007880 MosStorageGetMapsRepairAttempts
+         16    F 000063D0 MosStorageGetMigrationState
+         17   10 00007050 MosStorageGetResourceDirectory
+         18   11 00005E60 MosStorageGetStorageDeviceDataFromDeviceGuid
+         19   12 00006060 MosStorageGetStorageSizesInBytes
+         20   13 00006EF0 MosStorageGetSystemDataDirectory
+         21   14 00005EF0 MosStorageGetTotalMapDataInBytes
+         22   15 00007240 MosStorageGetWhetherSpaceAvailable
+         23   16 00005E10 MosStorageIsStorageStateValid
+         24   17 00006E20 MosStorageResetCacheValues
+         25   18 000061E0 MosStorageResetPreferredLocationIfDefined
+         26   19 000062A0 MosStorageResetPreferredLocationIfNotPresent
+         27   1A 00006A40 MosStorageSetLocation
+         28   1B 00007920 MosStorageSetMapsRepairAttempts
+         29   1C 00006420 MosStorageSetMigrationState
+         30   1D 00006C80 MosStorageUseDefaultExternalStorage
+         31   1E 00006550 MosStorageValidateLocation
+         32   1F 00003E80 MosStorage_SetServiceCallbacks
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        1000 .pdata
+        7000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        D000 .text

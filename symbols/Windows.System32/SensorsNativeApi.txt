@@ -1,0 +1,89 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\SensorsNativeApi.dll
+
+File Type: DLL
+
+  Section contains the following exports for SensorsNativeApi.dll
+
+    00000000 characteristics
+    149CC300 time date stamp
+        0.00 version
+           1 ordinal base
+          60 number of functions
+          60 number of names
+
+    ordinal hint RVA      name
+
+          2    0 000061A0 DllMain
+          3    1 00004FB0 SensorCancelHistoryRetrieval
+          4    2 00004E60 SensorClearHistory
+          5    3 00003560 SensorClose
+          6    4 00002700 SensorDetermineStackByPropertyStore
+          7    5 00004730 SensorDeviceIoControl
+          8    6 000045E0 SensorDisableWake
+          9    7 00004490 SensorEnableIdleOperation
+         10    8 00004540 SensorEnableWake
+         11    9 00005270 SensorGetAccData
+         12    A 000053A0 SensorGetAlsData
+         13    B 000054A0 SensorGetAlsDataWithColor
+         14    C 000055F0 SensorGetBarData
+         15    D 000038E0 SensorGetCapabilities
+         16    E 000039A0 SensorGetCapabilitiesCollection
+         17    F 00003810 SensorGetCurrentReading
+         18   10 00003670 SensorGetData
+         19   11 00003740 SensorGetDataCollection
+         20   12 000051B0 SensorGetDataDeliveryMode
+          1   13 00003FD0 SensorGetDataFieldProperties
+         21   14 00003E40 SensorGetDefaultThresholds
+         22   15 00004C60 SensorGetDeviceId
+         23   16 00003AA0 SensorGetFifoMaxSize
+         24   17 00005A40 SensorGetFusData
+         25   18 000056F0 SensorGetGyrData
+         26   19 00004F00 SensorGetHistory
+         27   1A 000057F0 SensorGetMagData
+         28   1B 00003B60 SensorGetProperties
+         29   1C 00005910 SensorGetPrxData
+         30   1D 00004850 SensorGetRangeResolution
+         31   1E 00003F10 SensorGetSupportedDataFields
+         32   1F 00003C20 SensorGetThresholds
+         33   20 000025F0 SensorGetTypeFromInterfacePath
+         34   21 00004680 SensorIsWakeEnabled
+         35   22 00004A10 SensorNotificationConfigure
+         36   23 00004B10 SensorNotificationStart
+         37   24 00004BB0 SensorNotificationStop
+         38   25 00003300 SensorOpen
+         39   26 000027F0 SensorOpenByInterface
+         40   27 00003100 SensorOpenByType
+         41   28 00004260 SensorRegisterEvent
+         42   29 00002A10 SensorSelectBestDevice
+         43   2A 00005BC0 SensorSetAccThresholds
+         44   2B 00005C90 SensorSetAlsThresholds
+         45   2C 00005D60 SensorSetAlsWithColorThresholds
+         46   2D 00005E60 SensorSetBarThresholds
+         47   2E 00005100 SensorSetDataDeliveryMode
+         48   2F 00003D90 SensorSetDataInterval
+         49   30 000060D0 SensorSetFusThresholds
+         50   31 00005F30 SensorSetGyrThresholds
+         51   32 00006000 SensorSetMagThresholds
+         52   33 00004960 SensorSetRangeResolution
+         53   34 00005050 SensorSetReportLatency
+         54   35 00003CE0 SensorSetThresholds
+         55   36 000040A0 SensorStart
+         56   37 00004180 SensorStartCollection
+         57   38 00004D20 SensorStartHistory
+         58   39 000043D0 SensorStop
+         59   3A 00004DC0 SensorStopHistory
+         60   3B 00004330 SensorUnregisterEvent
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        5000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        8000 .text

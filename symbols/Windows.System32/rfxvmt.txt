@@ -1,0 +1,49 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\rfxvmt.dll
+
+File Type: DLL
+
+  Section contains the following exports for rfxvmt.dll
+
+    00000000 characteristics
+    4856A45B time date stamp
+        0.00 version
+           1 ordinal base
+          21 number of functions
+          21 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00002B10 RfxVmtAcquireSharedBuffer
+          2    1 000016A0 RfxVmtCancelCreateChannel
+          3    2 00001770 RfxVmtCloseChannel
+          4    3 000013A0 RfxVmtCreateChannel
+          5    4 000013C0 RfxVmtCreateChannelCancelable
+          6    5 000022E0 RfxVmtDisableLibrary
+          7    6 00002280 RfxVmtEnableLibrary
+          8    7 00002190 RfxVmtGetChannelStatus
+          9    8 00002070 RfxVmtGetDataAvailableEvent
+         10    9 00002370 RfxVmtGetVramDescriptor
+         11    A 00001F80 RfxVmtIsWriteDataConsumed
+         12    B 00002810 RfxVmtPauseLibrary
+         13    C 00001820 RfxVmtReadChannel
+         14    D 00001A50 RfxVmtReadChannelAndCache
+         15    E 00002D10 RfxVmtRegisterForVmTerminatedNotification
+         16    F 00002C10 RfxVmtReleaseSharedBuffer
+         17   10 00002890 RfxVmtResumeLibrary
+         18   11 00002A10 RfxVmtRevokeSharedBuffer
+         19   12 00002910 RfxVmtShareBuffer
+         20   13 00001D50 RfxVmtVWriteChannel
+         21   14 00001CE0 RfxVmtWriteChannel
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        7000 .text

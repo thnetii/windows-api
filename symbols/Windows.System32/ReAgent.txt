@@ -1,0 +1,86 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\ReAgent.dll
+
+File Type: DLL
+
+  Section contains the following exports for ReAgent.dll
+
+    00000000 characteristics
+    B05B751C time date stamp
+        0.00 version
+           1 ordinal base
+          57 number of functions
+          57 number of names
+
+    ordinal hint RVA      name
+
+          5    0 00010C20 WinRECheckGuid
+          6    1 00010D30 WinREUseNewPBRImage
+          7    2 000110B0 WinRE_Generalize
+          1    3 0000B8E0 WinRE_Specialize
+          2    4 0000B990 WinRE_Specialize_Offline
+          8    5 00011100 WinReAddTrustedBootApp
+          9    6 000111B0 WinReClearBootApp
+         10    7 00004990 WinReClearError
+          3    8 0000F110 WinReClearOemImagePath
+         11    9 00011250 WinReConfigureTask
+         12    A 00011740 WinReCopyDiagnosticFiles
+         13    B 00018250 WinReCopyLogFilesToRamdisk
+         14    C 000182F0 WinReCreateLogInstance
+         15    D 00018330 WinReCreateLogInstanceEx
+         16    E 00018480 WinReDeleteLogFiles
+         17    F 000049A0 WinReGetConfig
+         18   10 000117F0 WinReGetCustomization
+         19   11 000050D0 WinReGetError
+         20   12 00018580 WinReGetLogDirPath
+         21   13 00011BE0 WinReGetTrustedBootApps
+         22   14 00011C90 WinReGetWIMInfo
+         23   15 00011ED0 WinReHashBootApp
+         24   16 00011F80 WinReHashWimFile
+         25   17 00012010 WinReInitiateOfflineScanning
+         26   18 0000C3F0 WinReInstall
+         27   19 0000C4A0 WinReInstallOnTargetOS
+         28   1A 000123D0 WinReIsInstalledOnSystemPartition
+         29   1B 00012920 WinReIsWimBootEnabled
+         30   1C 000050E0 WinReIsWinPE
+         31   1D 000129C0 WinReOobeInstall
+         32   1E 000188B0 WinReOpenLogInstance
+         33   1F 00012BB0 WinRePostBCDRepair
+         34   20 00012F80 WinReQueueRecoveryBoot
+         35   21 0000C5B0 WinReReinstall
+         36   22 00013100 WinReRemoveTrustedBootApp
+         37   23 000131A0 WinReRepair
+          4   24 00016A30 WinReRestoreConfigAfterPBR
+         38   25 00018B50 WinReRestoreLogFiles
+         39   26 000136D0 WinReSetBootApp
+         40   27 00013780 WinReSetConfig
+         41   28 00013E70 WinReSetCustomization
+         42   29 000050F0 WinReSetError
+         43   2A 00014210 WinReSetNarratorScheduled
+         44   2B 00014410 WinReSetRecoveryAction
+         45   2C 00018BF0 WinReSetTriggerFile
+         46   2D 0001A080 WinReSetupBackupWinRE
+         47   2E 0001AF70 WinReSetupCheckWinRE
+         48   2F 0000C6D0 WinReSetupInstall
+         49   30 0001B100 WinReSetupMigrateData
+         50   31 0001B550 WinReSetupRestoreWinREEx
+         51   32 0001B800 WinReSetupSetImage
+         52   33 00014800 WinReUnInstall
+         53   34 00018EA0 WinReUpdateLogInstance
+         54   35 000148B0 WinReValidateRecoveryWim
+         55   36 00014DF0 WinReValidateWimFile
+         56   37 0001C5A0 winreFindInstallMedia
+         57   38 0001D7F0 winreGetBinaryArch
+
+  Summary
+
+        5000 .data
+        1000 .didat
+        6000 .pdata
+       47000 .rdata
+        1000 .reloc
+        4000 .rsrc
+       B4000 .text

@@ -1,0 +1,36 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\esevss.dll
+
+File Type: DLL
+
+  Section contains the following exports for eseshadow.dll
+
+    00000000 characteristics
+    E0DBC07E time date stamp
+        0.00 version
+           1 ordinal base
+           8 number of functions
+           8 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00002930 EseShadowCreateShadow
+          2    1 00002EC0 EseShadowCreateSimpleShadow
+          3    2 000011A0 EseShadowInit
+          4    3 00001AD0 EseShadowMountShadow
+          5    4 00001C80 EseShadowMountSimpleShadow
+          6    5 00003270 EseShadowPurgeShadow
+          7    6 00001450 EseShadowTerm
+          8    7 00001560 VssIdToString
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        4000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        5000 .text

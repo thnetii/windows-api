@@ -1,0 +1,139 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\vmsif.dll
+
+File Type: DLL
+
+  Section contains the following exports for vmsif.dll
+
+    00000000 characteristics
+    A590E932 time date stamp
+        0.00 version
+           1 ordinal base
+         110 number of functions
+         110 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0001FC10 VmsIfCapsFindCapability
+          2    1 0001FCA0 VmsIfCapsGetCapability
+          3    2 0001F8C0 VmsIfCapsInitializeLibrary
+          4    3 0001FA90 VmsIfCapsIsFeaturePresent
+          5    4 0001FB50 VmsIfCapsIsFixPresent
+          6    5 0001F7A0 VmsIfCapsQueryCapabilities
+          7    6 0000C740 VmsIfDioNicSetAddresses
+          8    7 0000C7E0 VmsIfDioNicSetMacAddress
+          9    8 0000C880 VmsIfDioNicSetPacketFilter
+         10    9 00001800 VmsIfDriverClose
+         11    A 00001750 VmsIfDriverOpen
+         12    B 000015F0 VmsIfDriverOpenWithFileName
+         13    C 00001810 VmsIfGetInitState
+         14    D 0001F2F0 VmsIfGlobalParameterQuery
+         15    E 0001F220 VmsIfGlobalParameterSet
+         16    F 00018A80 VmsIfInitializeEventServer
+         17   10 0000F090 VmsIfMemFree
+         18   11 0000BD40 VmsIfNicAllocateVF
+         19   12 0000A4D0 VmsIfNicConnect
+         20   13 0000B420 VmsIfNicCreateEmulated
+         21   14 0000B420 VmsIfNicCreateSynthetic
+         22   15 0000B510 VmsIfNicDeleteEmulated
+         23   16 0000B2B0 VmsIfNicDeleteMiniport
+         24   17 0000B1D0 VmsIfNicDeleteMiniportLW
+         25   18 0000B480 VmsIfNicDeleteSynthetic
+         26   19 0000B380 VmsIfNicDisableMiniport
+         27   1A 0000C350 VmsIfNicDisableOptimizations
+         28   1B 0000A7F0 VmsIfNicDisconnect
+         29   1C 0000B380 VmsIfNicEnableMiniport
+         30   1D 0000C270 VmsIfNicEnableOptimizations
+         31   1E 0000A0E0 VmsIfNicEnumerate
+         32   1F 0000C580 VmsIfNicGetAddresses
+         33   20 0000C970 VmsIfNicGetDropReasons
+         34   21 00009DA0 VmsIfNicGetInfo
+         35   22 0000BA80 VmsIfNicGetStats
+         36   23 0000B7F0 VmsIfNicGetStatus
+         37   24 0000BED0 VmsIfNicGetVrssEntryCount
+         38   25 0000C010 VmsIfNicGetVrssInfo
+         39   26 0000AB90 VmsIfNicInitializeMiniport
+         40   27 0000A9E0 VmsIfNicInitializeMiniportLW
+         41   28 0000B000 VmsIfNicMorphToEmulatedNic
+         42   29 0000AD80 VmsIfNicMorphToSynthNic
+         43   2A 0000AD40 VmsIfNicNotifyInitializeExternal
+         44   2B 0000AD20 VmsIfNicNotifyInitializeMiniport
+         45   2C 0000A9C0 VmsIfNicNotifyRestored
+         46   2D 0000B540 VmsIfNicPausedEmulated
+         47   2E 0000B560 VmsIfNicPausedSynthetic
+         48   2F 0000C430 VmsIfNicRelearnMac
+         49   30 0000C1D0 VmsIfNicRestore
+         50   31 0000B610 VmsIfNicResumeEmulated
+         51   32 0000B6E0 VmsIfNicResumeSynthetic
+         52   33 0000B9A0 VmsIfNicSendStatus
+         53   34 0000A390 VmsIfNicSetConnectionInfo
+         54   35 00009F00 VmsIfNicSetInfo
+         55   36 0000B4B0 VmsIfNicSuspendSynthetic
+         56   37 0000BBF0 VmsIfPhysicalNicGetStoredVlanId
+         57   38 0000B980 VmsIfPhysicalNicRemove
+         58   39 000081D0 VmsIfPortCreate
+         59   3A 00007F40 VmsIfPortCreateWithHandle
+         60   3B 00008450 VmsIfPortDelete
+         61   3C 00008CA0 VmsIfPortEnumerate
+         62   3D 00008FE0 VmsIfPortEnumerateLearnedMacAddresses
+         63   3E 00002E90 VmsIfPortFeatureStatusFree
+         64   3F 00007C60 VmsIfPortFeatureStatusQuery
+         65   40 00009A80 VmsIfPortGetEncapInfo
+         66   41 00008B10 VmsIfPortGetInfo
+         67   42 000061B0 VmsIfPortGetRequiredExtensions
+         68   43 00009C00 VmsIfPortGetStats
+         69   44 00009490 VmsIfPortGetVlanSettings
+         70   45 00007E80 VmsIfPortOpenWithHandle
+         71   46 00006840 VmsIfPortPropertyAdd
+         72   47 000074C0 VmsIfPortPropertyEnumerate
+         73   48 00002E90 VmsIfPortPropertyFree
+         74   49 00002E90 VmsIfPortPropertyListFree
+         75   4A 000072A0 VmsIfPortPropertyQuery
+         76   4B 000077E0 VmsIfPortPropertyRemove
+         77   4C 00006DA0 VmsIfPortPropertyUpdate
+         78   4D 00009860 VmsIfPortSetEncapInfo
+         79   4E 000086B0 VmsIfPortSetInfo
+         80   4F 00006030 VmsIfPortSetRequiredExtensions
+         81   50 00009360 VmsIfPortSetSecurityInfo
+         82   51 00009600 VmsIfPortSetVlanSettings
+         83   52 0001F660 VmsIfProcGetStats
+         84   53 0001F430 VmsIfProcsEnumerate
+         85   54 00018D60 VmsIfShutdownEventServer
+         86   55 000033C0 VmsIfSwitchCreate
+         87   56 00003590 VmsIfSwitchDelete
+         88   57 00003B60 VmsIfSwitchEnumerate
+         89   58 00005080 VmsIfSwitchExtensionEnable
+         90   59 00004C10 VmsIfSwitchExtensionEnumerate
+         91   5A 00004F20 VmsIfSwitchExtensionFree
+         92   5B 00004F60 VmsIfSwitchExtensionGet
+         93   5C 00005370 VmsIfSwitchExtensionReorder
+         94   5D 00002E90 VmsIfSwitchFeatureStatusFree
+         95   5E 00002EC0 VmsIfSwitchFeatureStatusQuery
+         96   5F 000036F0 VmsIfSwitchGetInfo
+         97   60 00003F50 VmsIfSwitchGetStats
+         98   61 00003240 VmsIfSwitchListenIcmpEcho
+         99   62 000024A0 VmsIfSwitchPropertyAdd
+        100   63 00002BA0 VmsIfSwitchPropertyEnumerate
+        101   64 00002E90 VmsIfSwitchPropertyFree
+        102   65 00002E90 VmsIfSwitchPropertyListFree
+        103   66 000022B0 VmsIfSwitchPropertyQuery
+        104   67 00002850 VmsIfSwitchPropertyRemove
+        105   68 00001F00 VmsIfSwitchPropertyUpdate
+        106   69 00004F20 VmsIfSwitchRequiredExtensionsFree
+        107   6A 0000E700 VmsIfSwitchResetExtensionMiniport
+        108   6B 000030B0 VmsIfSwitchSendIcmpEcho
+        109   6C 00003850 VmsIfSwitchSetInfo
+        110   6D 00003DE0 VmsIfSwitchValidateLearnedMacAddress
+
+  Summary
+
+        4000 .data
+        1000 .didat
+        2000 .pdata
+       12000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       25000 .text

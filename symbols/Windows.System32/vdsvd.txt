@@ -1,0 +1,60 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\vdsvd.dll
+
+File Type: DLL
+
+  Section contains the following exports for vdsvd.DLL
+
+    00000000 characteristics
+    F51AC2D2 time date stamp
+        0.00 version
+           1 ordinal base
+          32 number of functions
+          32 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000011F0 ??0CPrvEnumObject@@QEAA@XZ
+          2    1 000010B0 ??0CRtlSharedLock@@QEAA@XZ
+          3    2 000011B0 ??0CVdsCriticalSection@@QEAA@PEAU_RTL_CRITICAL_SECTION@@@Z
+          4    3 00001460 ??0CVdsPnPNotificationBase@@QEAA@XZ
+          5    4 00001440 ??0CVdsUnlockIt@@QEAA@AEAJ@Z
+          6    5 00001260 ??1CPrvEnumObject@@QEAA@XZ
+          7    6 00001120 ??1CRtlSharedLock@@QEAA@XZ
+          8    7 000011E0 ??1CVdsCriticalSection@@QEAA@XZ
+          9    8 000014B0 ??1CVdsPnPNotificationBase@@QEAA@XZ
+         10    9 00001450 ??1CVdsUnlockIt@@QEAA@XZ
+         11    A 000010A0 ??_FCRtlList@@QEAAXXZ
+         12    B 00001080 ??_FCRtlMap@@QEAAXXZ
+         13    C 00001140 ?AcquireRead@CRtlSharedLock@@AEAAXXZ
+         14    D 00001150 ?AcquireWrite@CRtlSharedLock@@AEAAXXZ
+         15    E 000013E0 ?AllowCancel@CVdsAsyncObjectBase@@QEAAXXZ
+         16    F 00001180 ?CurrentThreadIsWriter@CRtlSharedLock@@QEAAHXZ
+         17   10 000013F0 ?DisallowCancel@CVdsAsyncObjectBase@@QEAAXXZ
+         18   11 00001170 ?Downgrade@CRtlSharedLock@@AEAAXXZ
+         19   12 000013C0 ?GetOutputType@CVdsAsyncObjectBase@@QEAA?AW4_VDS_ASYNC_OUTPUT_TYPE@@XZ
+         20   13 000013D0 ?IsCancelRequested@CVdsAsyncObjectBase@@QEAAHXZ
+         21   14 00001130 ?Release@CRtlSharedLock@@AEAAXXZ
+         22   15 000013A0 ?SetOutput@CVdsAsyncObjectBase@@QEAAXU_VDS_ASYNC_OUTPUT@@@Z
+         23   16 00001390 ?SetOutputType@CVdsAsyncObjectBase@@QEAAXW4_VDS_ASYNC_OUTPUT_TYPE@@@Z
+         24   17 00001340 ?SetPositionToLast@CPrvEnumObject@@QEAAXXZ
+         25   18 00001160 ?Upgrade@CRtlSharedLock@@AEAAXXZ
+         26   19 00001400 ?ZeroAsyncOut@CVdsAsyncObjectBase@@QEAAXXZ
+         27   1A 00001070 ?m_ExtraLogging@CVdsTraceSettings@@QEAAHXZ
+         28   1B 00001060 ?m_NoDebuggerLogging@CVdsTraceSettings@@QEAAHXZ
+         29   1C 00003210 DllCanUnloadNow
+         30   1D 00003250 DllGetClassObject
+         31   1E 000032D0 DllRegisterServer
+         32   1F 000033B0 DllUnregisterServer
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        6000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        7000 .text

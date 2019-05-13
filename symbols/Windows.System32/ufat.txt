@@ -1,0 +1,84 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\ufat.dll
+
+File Type: DLL
+
+  Section contains the following exports for UFAT.dll
+
+    00000000 characteristics
+    617DAFAD time date stamp
+        0.00 version
+           1 ordinal base
+          56 number of functions
+          56 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000014F0 ??0CLUSTER_CHAIN@@QEAA@XZ
+          2    1 00001B60 ??0EA_HEADER@@QEAA@XZ
+          3    2 00001F70 ??0EA_SET@@QEAA@XZ
+          4    3 000063B0 ??0FAT_DIRENT@@QEAA@XZ
+          5    4 00007510 ??0FAT_SA@@QEAA@XZ
+          6    5 000181B0 ??0FILEDIR@@QEAA@XZ
+          7    6 000184B0 ??0REAL_FAT_SA@@QEAA@XZ
+          8    7 0001DF40 ??0ROOTDIR@@QEAA@XZ
+          9    8 00001550 ??1CLUSTER_CHAIN@@UEAA@XZ
+         10    9 00001BB0 ??1EA_HEADER@@UEAA@XZ
+         11    A 00001FD0 ??1EA_SET@@UEAA@XZ
+         12    B 000063F0 ??1FAT_DIRENT@@UEAA@XZ
+         13    C 00007560 ??1FAT_SA@@UEAA@XZ
+         14    D 00018200 ??1FILEDIR@@UEAA@XZ
+         15    E 000185C0 ??1REAL_FAT_SA@@UEAA@XZ
+         16    F 0001DF90 ??1ROOTDIR@@UEAA@XZ
+         17   10 00005D70 ?AllocChain@FAT@@QEAAKKPEAK@Z
+         18   11 000061C0 ?FreeChain@FAT@@QEAAXK@Z
+         19   12 000022E0 ?GetEa@EA_SET@@QEAAPEAU_EA@@KPEAJPEAE@Z
+         20   13 00005430 ?Index12@FAT@@AEBAKK@Z
+         21   14 00018B30 ?InitFATChkDirty@REAL_FAT_SA@@QEAAEPEAVLOG_IO_DP_DRIVE@@PEAVMESSAGE@@@Z
+         22   15 00001590 ?Initialize@CLUSTER_CHAIN@@QEAAEPEAVMEM@@PEAVLOG_IO_DP_DRIVE@@PEAVFAT_SA@@PEBVFAT@@KK@Z
+         23   16 00001BE0 ?Initialize@EA_HEADER@@QEAAEPEAVMEM@@PEAVLOG_IO_DP_DRIVE@@PEAVFAT_SA@@PEBVFAT@@KK@Z
+         24   17 00002020 ?Initialize@EA_SET@@QEAAEPEAVMEM@@PEAVLOG_IO_DP_DRIVE@@PEAVFAT_SA@@PEBVFAT@@KK@Z
+         25   18 00006410 ?Initialize@FAT_DIRENT@@QEAAEPEAX@Z
+         26   19 00006430 ?Initialize@FAT_DIRENT@@QEAAEPEAXE@Z
+         27   1A 00018240 ?Initialize@FILEDIR@@QEAAEPEAVMEM@@PEAVLOG_IO_DP_DRIVE@@PEAVFAT_SA@@PEBVFAT@@K@Z
+         28   1B 00018610 ?Initialize@REAL_FAT_SA@@UEAAEPEAVLOG_IO_DP_DRIVE@@PEAVMESSAGE@@E@Z
+         29   1C 0001DFD0 ?Initialize@ROOTDIR@@QEAAEPEAVMEM@@PEAVLOG_IO_DP_DRIVE@@KJ@Z
+         30   1D 00006BF0 ?IsValidCreationTime@FAT_DIRENT@@QEBAEXZ
+         31   1E 00006DA0 ?IsValidLastAccessTime@FAT_DIRENT@@QEBAEXZ
+         32   1F 00006A70 ?IsValidLastWriteTime@FAT_DIRENT@@QEBAEXZ
+         33   20 000055D0 ?QueryAllocatedClusters@FAT@@QEBAKXZ
+         34   21 00016690 ?QueryCensusAndRelocate@FAT_SA@@QEAAEPEAU_CENSUS_REPORT@@PEAVINTSTACK@@PEAE@Z
+         35   22 00006C10 ?QueryCreationTime@FAT_DIRENT@@QEBAEPEAT_LARGE_INTEGER@@@Z
+         36   23 00001E00 ?QueryEaSetClusterNumber@EA_HEADER@@QEBAGG@Z
+         37   24 00007AA0 ?QueryFileStartingCluster@FAT_SA@@QEAAKPEBVWSTRING@@PEAVHMEM@@PEAPEAVFATDIR@@PEAEPEAVFAT_DIRENT@@@Z
+         38   25 0001CF80 ?QueryFreeSectors@REAL_FAT_SA@@QEBAKXZ
+         39   26 00006DC0 ?QueryLastAccessTime@FAT_DIRENT@@QEBAEPEAT_LARGE_INTEGER@@@Z
+         40   27 00006A90 ?QueryLastWriteTime@FAT_DIRENT@@QEBAEPEAT_LARGE_INTEGER@@@Z
+         41   28 00005700 ?QueryLengthOfChain@FAT@@QEBAKKPEAK@Z
+         42   29 000072F0 ?QueryLongName@FATDIR@@QEAAEJPEAVWSTRING@@@Z
+         43   2A 00006450 ?QueryName@FAT_DIRENT@@QEBAEPEAVWSTRING@@@Z
+         44   2B 00005690 ?QueryNthCluster@FAT@@QEBAKKK@Z
+         45   2C 000018B0 ?Read@CLUSTER_CHAIN@@UEAAEXZ
+         46   2D 00002220 ?Read@EA_SET@@UEAAEXZ
+         47   2E 0001BE80 ?Read@REAL_FAT_SA@@UEAAEPEAVMESSAGE@@@Z
+         48   2F 00007130 ?SearchForDirEntry@FATDIR@@QEAAPEAXPEBVWSTRING@@@Z
+         49   30 00005480 ?Set12@FAT@@AEAAXKK@Z
+         50   31 00001940 ?Write@CLUSTER_CHAIN@@UEAAEXZ
+         51   32 00002720 Chkdsk
+         52   33 00003080 ChkdskEx
+         53   34 00003F10 Format
+         54   35 00004890 FormatEx
+         55   36 00004400 GetFilesystemInformation
+         56   37 00004E10 Recover
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        5000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       1F000 .text

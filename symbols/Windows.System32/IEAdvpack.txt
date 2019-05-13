@@ -1,0 +1,112 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\IEAdvpack.dll
+
+File Type: DLL
+
+  Section contains the following exports for IEADVPACK.dll
+
+    00000000 characteristics
+    7619361C time date stamp
+        0.00 version
+           1 ordinal base
+          84 number of functions
+          84 number of names
+
+    ordinal hint RVA      name
+
+         13    0 00015EE0 AddDelBackupEntry
+         14    1 00015EE0 AddDelBackupEntryA
+         15    2 00015FB0 AddDelBackupEntryW
+         16    3 00001420 AdvInstallFile
+         17    4 00001420 AdvInstallFileA
+         18    5 00001520 AdvInstallFileW
+         19    6 0000FD90 CloseINFEngine
+         20    7 0000ABD0 DelNode
+         21    8 0000ABD0 DelNodeA
+          1    9 0000AEB0 DelNodeRunDLL32
+          2    A 0000AEB0 DelNodeRunDLL32A
+         22    B 0000AF30 DelNodeRunDLL32W
+         23    C 0000AC30 DelNodeW
+          3    D 000034B0 DoInfInstall
+          4    E 000034B0 DoInfInstallA
+          5    F 00003580 DoInfInstallW
+         24   10 0000B730 ExecuteCab
+         25   11 0000B730 ExecuteCabA
+         26   12 0000B870 ExecuteCabW
+         27   13 00010B10 ExtractFiles
+         28   14 00010B10 ExtractFilesA
+         29   15 00010A30 ExtractFilesW
+         30   16 00015E00 FileSaveMarkNotExist
+         31   17 00015E00 FileSaveMarkNotExistA
+         32   18 00015EC0 FileSaveMarkNotExistW
+          6   19 00013F20 FileSaveRestore
+          7   1A 00013F20 FileSaveRestoreA
+         33   1B 0000DFE0 FileSaveRestoreOnINF
+         34   1C 0000DFE0 FileSaveRestoreOnINFA
+         35   1D 0000E100 FileSaveRestoreOnINFW
+         36   1E 00014000 FileSaveRestoreW
+         37   1F 0000A370 GetVersionFromFile
+         38   20 0000A370 GetVersionFromFileA
+         39   21 0000A230 GetVersionFromFileEx
+         40   22 0000A230 GetVersionFromFileExA
+         41   23 0000A2B0 GetVersionFromFileExW
+         42   24 0000A3F0 GetVersionFromFileW
+         43   25 0000D870 IsNTAdmin
+         44   26 000036E0 LaunchINFSection
+          8   27 00003660 LaunchINFSectionA
+          9   28 0000B510 LaunchINFSectionEx
+         10   29 0000B510 LaunchINFSectionExA
+         45   2A 0000B590 LaunchINFSectionExW
+         46   2B 000036F0 LaunchINFSectionW
+         47   2C 00003E20 NeedReboot
+         48   2D 00003DF0 NeedRebootInit
+         49   2E 0000FBE0 OpenINFEngine
+         50   2F 0000FBE0 OpenINFEngineA
+         51   30 0000FC90 OpenINFEngineW
+         52   31 0000DAE0 RebootCheckOnInstall
+         53   32 0000DAE0 RebootCheckOnInstallA
+         54   33 0000DB90 RebootCheckOnInstallW
+         55   34 00002890 RegInstall
+         56   35 00002890 RegInstallA
+         57   36 00002930 RegInstallW
+         58   37 00011620 RegRestoreAll
+         59   38 00011620 RegRestoreAllA
+         60   39 00011690 RegRestoreAllW
+         61   3A 00010F80 RegSaveRestore
+         62   3B 00010F80 RegSaveRestoreA
+         63   3C 0000DCE0 RegSaveRestoreOnINF
+         64   3D 0000DCE0 RegSaveRestoreOnINFA
+         65   3E 0000DDD0 RegSaveRestoreOnINFW
+         66   3F 00011080 RegSaveRestoreW
+         11   40 00004130 RegisterOCX
+         12   41 000041D0 RegisterOCXW
+         67   42 00003A20 RunSetupCommand
+         68   43 00003A20 RunSetupCommandA
+         69   44 00003B20 RunSetupCommandW
+         70   45 0000EBA0 SetPerUserSecValues
+         71   46 0000EBA0 SetPerUserSecValuesA
+         72   47 0000ECD0 SetPerUserSecValuesW
+         73   48 00003E60 TranslateInfString
+         74   49 00003E60 TranslateInfStringA
+         75   4A 0000F9F0 TranslateInfStringEx
+         76   4B 0000F9F0 TranslateInfStringExA
+         77   4C 0000FB70 TranslateInfStringExW
+         78   4D 00003FC0 TranslateInfStringW
+         79   4E 0000F2F0 UserInstStubWrapper
+         80   4F 0000F2F0 UserInstStubWrapperA
+         81   50 0000F370 UserInstStubWrapperW
+         82   51 0000F660 UserUnInstStubWrapper
+         83   52 0000F660 UserUnInstStubWrapperA
+         84   53 0000F6E0 UserUnInstStubWrapperW
+
+  Summary
+
+        E000 .data
+        1000 .pdata
+        8000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       1A000 .text

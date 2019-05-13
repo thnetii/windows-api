@@ -1,0 +1,64 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\mssign32.dll
+
+File Type: DLL
+
+  Section contains the following exports for MSSIGN32.dll
+
+    00000000 characteristics
+    8171FC6B time date stamp
+        0.00 version
+           1 ordinal base
+          36 number of functions
+          36 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001FF0 DllRegisterServer
+          2    1 00001FF0 DllUnregisterServer
+          3    2 00001010 FreeCryptProvFromCert
+          4    3 00001070 FreeCryptProvFromCertEx
+          5    4 000010B0 GetCryptProvFromCert
+          6    5 00001180 GetCryptProvFromCertEx
+          7    6 00001400 PvkFreeCryptProv
+          8    7 00001250 PvkGetCryptProv
+          9    8 00001430 PvkPrivateKeyAcquireContext
+         10    9 000014D0 PvkPrivateKeyAcquireContextA
+         11    A 00001570 PvkPrivateKeyAcquireContextFromMemory
+         12    B 000015E0 PvkPrivateKeyAcquireContextFromMemoryA
+         13    C 00001650 PvkPrivateKeyLoad
+         14    D 000016D0 PvkPrivateKeyLoadA
+         15    E 00001750 PvkPrivateKeyLoadFromMemory
+         16    F 000017B0 PvkPrivateKeyLoadFromMemoryA
+         17   10 00001810 PvkPrivateKeyReleaseContext
+         18   11 00001880 PvkPrivateKeyReleaseContextA
+         19   12 000018F0 PvkPrivateKeySave
+         20   13 00001930 PvkPrivateKeySaveA
+         21   14 00001970 PvkPrivateKeySaveToMemory
+         22   15 00001A20 PvkPrivateKeySaveToMemoryA
+         23   16 00001AD0 SignError
+         24   17 00001B10 SignerAddTimeStampResponse
+         25   18 00001B40 SignerAddTimeStampResponseEx
+         26   19 00001B50 SignerCreateTimeStampRequest
+         27   1A 00001C10 SignerFreeSignerContext
+         28   1B 00001C50 SignerSign
+         29   1C 00001CA0 SignerSignEx
+         30   1D 00001D10 SignerSignEx2
+         31   1E 00001DA0 SignerSignEx3
+         32   1F 00001E30 SignerTimeStamp
+         33   20 00001E70 SignerTimeStampEx
+         34   21 00001EB0 SignerTimeStampEx2
+         35   22 00001F10 SignerTimeStampEx3
+         36   23 00001FE0 SpcGetCertFromKey
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        4000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        E000 .text

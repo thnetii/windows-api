@@ -1,0 +1,59 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\nlaapi.dll
+
+File Type: DLL
+
+  Section contains the following exports for nlaapi.dll
+
+    00000000 characteristics
+    EAFC2E1E time date stamp
+        0.00 version
+           1 ordinal base
+          30 number of functions
+          30 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000104B0 LANIdFreeCollection
+          2    1 00010560 LANIdRetrieveCollection
+          3    2 0000E740 NSPStartup
+          4    3 00008BB0 NlaAddToPluginRequests
+          5    4 00005D10 NlaAddToTypeSet
+          6    5 00008D20 NlaAnd
+          7    6 00008DF0 NlaCloseQuery
+          8    7 000092B0 NlaComposeNetSignature
+          9    8 000094C0 NlaCreateFilter
+         10    9 00009540 NlaCreatePluginRequests
+         11    A 00005F80 NlaCreateTypeSet
+         12    B 000095E0 NlaDecomposeNetSignature
+         13    C 00001F00 NlaDeleteDataSet
+         14    D 000097A0 NlaDeleteFilter
+         15    E 00009880 NlaDeletePluginRequests
+         16    F 00006000 NlaDeleteTypeSet
+         17   10 00009900 NlaEqual
+         18   11 000099A0 NlaEqualNetSignatures
+         19   12 00009B30 NlaGetCaptivePortalHosts
+         20   13 00009B90 NlaGetInternetCapability
+         21   14 00009C50 NlaGetIntranetCapability
+         22   15 00009D10 NlaIndicateReprobe
+         23   16 00009D70 NlaNotEqual
+         24   17 00009E10 NlaOpenQuery
+         25   18 00009EB0 NlaOr
+         26   19 000032E0 NlaQueryNetData
+         27   1A 00003BE0 NlaQueryNetDataEx
+         28   1B 000026D0 NlaQueryNetSignatures
+         29   1C 00009F80 NlaRefreshQuery
+         30   1D 00004EE0 NlaRegisterQuery
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        5000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       10000 .text

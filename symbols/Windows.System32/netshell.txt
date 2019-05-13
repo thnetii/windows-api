@@ -1,0 +1,42 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\netshell.dll
+
+File Type: DLL
+
+  Section contains the following exports for netshell.dll
+
+    00000000 characteristics
+    23BD7986 time date stamp
+        0.00 version
+           1 ordinal base
+          13 number of functions
+          13 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0000B7A0 DllCanUnloadNow
+          2    1 0000B7E0 DllGetClassObject
+          3    2 00001370 DllRegisterServer
+          4    3 00001370 DllUnregisterServer
+          5    4 0000B890 HrCreateDesktopIcon
+          6    5 0000B9A0 HrGetIconFromMediaType
+          7    6 0000BA00 HrGetIconFromMediaTypeEx
+          8    7 0000BA60 HrLaunchConnection
+          9    8 0000BB50 HrLaunchConnectionEx
+         10    9 0000BCF0 HrRenameConnection
+         11    A 0000BF80 NcFreeNetconProperties
+         12    B 0000BF90 NcIsValidConnectionName
+         13    C 00001400 StartNCW
+
+  Summary
+
+        3000 .data
+        1000 .didat
+        5000 .pdata
+       29000 .rdata
+        3000 .reloc
+      237000 .rsrc
+       57000 .text

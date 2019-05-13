@@ -1,0 +1,110 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\hpzipt12.dll
+
+File Type: DLL
+
+  Section contains the following exports for HPZipt12.dll
+
+    00000000 characteristics
+    57612F9F time date stamp Wed Jun 15 12:36:15 2016
+        0.00 version
+           1 ordinal base
+          83 number of functions
+          83 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00004FA8 PTSS_Finish
+          2    1 00004BA4 PTSS_GetError
+          3    2 00005178 PTSS_GetTimeout
+          4    3 00005194 PTSS_IsWritable
+          5    4 00005060 PTSS_Open
+          6    5 00004C94 PTSS_PutParam
+          7    6 00005008 PTSS_Reset
+          8    7 0000521C PTSS_SetBufferSize
+          9    8 00005188 PTSS_SetTimeout
+         10    9 00004B44 PTSS_fclose
+         11    A 00004228 PTSS_feof
+         12    B 00004B10 PTSS_fflush
+         13    C 000041BC PTSS_fgets
+         14    D 00004AE8 PTSS_fprintf
+         15    E 00004238 PTSS_fputc
+         16    F 0000429C PTSS_fputs
+         17   10 00004030 PTSS_fread
+         18   11 00004130 PTSS_fwrite
+         19   12 00004168 PTSS_getc
+         20   13 00001FB4 PTS_BindToSharedPort
+         21   14 00006514 PTS_FD_CLR
+         22   15 000065A8 PTS_FD_ISSET
+         23   16 0000656C PTS_FD_SET
+         24   17 0000659C PTS_FD_ZERO
+         25   18 000024EC PTS_FillAddr
+         26   19 00003DC8 PTS_GetHostSupportedProtocol
+         27   1A 00002664 PTS_GetSocketInfoByMethod
+         28   1B 000023D4 PTS_GetSocketSharedPort
+         29   1C 000023EC PTS_GetTokenType
+         30   1D 00005380 PTS_HostCacheRetrieval
+         31   1E 00003DBC PTS_MaskSigPipeErrors
+         32   1F 00001E84 PTS_RecvFromSharedPort
+         33   20 00001F84 PTS_RecvSharedPort
+         34   21 00005BF8 PTS_SetupConnectSocket
+         35   22 00005A54 PTS_SetupListenSocket
+         36   23 00005CE8 PTS_SetupTCPConnectSocket
+         37   24 00005B90 PTS_SetupTCPListenSocket
+         38   25 00005D00 PTS_SetupUDPConnectSocket
+         39   26 00005B78 PTS_SetupUDPListenSocket
+         40   27 000021F0 PTS_UnbindFromSharedPort
+         41   28 000065D4 PTS_Version
+         42   29 00006118 PTS_accept
+         43   2A 00006380 PTS_bind
+         44   2B 0000561C PTS_cleanup
+         45   2C 00005E54 PTS_closesocket
+         46   2D 0000613C PTS_connect
+         47   2E 00003B34 PTS_gethostbyaddr
+         48   2F 00003C34 PTS_gethostbyname
+         49   30 0000623C PTS_gethostname
+         50   31 00006190 PTS_getlasterror
+         51   32 000063A4 PTS_getpeername
+         52   33 000064BC PTS_getprotobyname
+         53   34 00006474 PTS_getprotobynumber
+         54   35 00006430 PTS_getservbyname
+         55   36 000063EC PTS_getservbyport
+         56   37 000063C8 PTS_getsockname
+         57   38 00006324 PTS_getsockopt
+         58   39 000062EC PTS_htonl
+         59   3A 000062D4 PTS_htons
+         60   3B 000062B0 PTS_inet_addr
+         61   3C 00006260 PTS_inet_ntoa
+         62   3D 00006504 PTS_ioctlsocket
+         63   3E 000060F4 PTS_listen
+         64   3F 000062FC PTS_ntohl
+         65   40 0000630C PTS_ntohs
+         66   41 0000334C PTS_ping
+         67   42 00006008 PTS_recv
+         68   43 000060A4 PTS_recvfrom
+         69   44 00006160 PTS_select
+         70   45 00005E78 PTS_send
+         71   46 0000399C PTS_sendto_addrORmac
+         72   47 00006354 PTS_setsockopt
+         73   48 00005E0C PTS_shutdown
+         74   49 00005E30 PTS_socket
+         75   4A 00005718 PTS_startup
+         76   4B 00005DA8 _PTS_cleanup
+         77   4C 000028C8 _PTS_diagping
+         78   4D 000061B4 _PTS_gethostbyaddr
+         79   4E 000061F8 _PTS_gethostbyname
+         80   4F 00002BBC _PTS_icmpping
+         81   50 00005F38 _PTS_sendto
+         82   51 00002F64 _PTS_snmpping
+         83   52 00005D18 _PTS_startup
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        1000 .reloc
+        1000 .rsrc
+        8000 .text

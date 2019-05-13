@@ -1,0 +1,144 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\rtm.dll
+
+File Type: DLL
+
+  Section contains the following exports for rtm.dll
+
+    00000000 characteristics
+    E224E827 time date stamp
+        0.00 version
+           1 ordinal base
+         116 number of functions
+         116 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000014C0 BestMatchInTable
+          2    1 000017F0 CheckTable
+          3    2 00001010 CreateTable
+          4    3 00001230 DeleteFromTable
+          5    4 000017B0 DestroyTable
+          6    5 00001830 DumpTable
+          7    6 000015E0 EnumOverTable
+          8    7 00001070 InsertIntoTable
+          9    8 00012A20 MgmAddGroupMembershipEntry
+         10    9 00011720 MgmDeInitialize
+         11    A 00011FC0 MgmDeRegisterMProtocol
+         12    B 00013390 MgmDeleteGroupMembershipEntry
+         13    C 000139D0 MgmGetFirstMfe
+         14    D 00013D70 MgmGetFirstMfeStats
+         15    E 000138B0 MgmGetMfe
+         16    F 00013C50 MgmGetMfeStats
+         17   10 00013B20 MgmGetNextMfe
+         18   11 00013EC0 MgmGetNextMfeStats
+         19   12 00012820 MgmGetProtocolOnInterface
+         20   13 00014310 MgmGroupEnumerationEnd
+         21   14 000141C0 MgmGroupEnumerationGetNext
+         22   15 00013FF0 MgmGroupEnumerationStart
+         23   16 00011000 MgmInitialize
+         24   17 00011C60 MgmRegisterMProtocol
+         25   18 00012430 MgmReleaseInterfaceOwnership
+         26   19 000121A0 MgmTakeInterfaceOwnership
+         27   1A 000015C0 NextMatchInTable
+         28   1B 00007C30 RtmAddNextHop
+         29   1C 0000E1E0 RtmAddRoute
+         30   1D 0000A770 RtmAddRouteToDest
+         31   1E 0000F7F0 RtmBlockConvertRoutesToStatic
+         32   1F 0000F520 RtmBlockDeleteRoutes
+         33   20 000074F0 RtmBlockMethods
+         34   21 0000FAC0 RtmBlockSetRouteEnable
+         35   22 00007110 RtmCleanupInstances
+         36   23 0000F410 RtmCloseEnumerationHandle
+         37   24 0000D0E0 RtmConvertIpv6AddressAndLengthToNetAddress
+         38   25 0000D040 RtmConvertNetAddressToIpv6AddressAndLength
+         39   26 00004FE0 RtmCreateBestRouteEnum
+         40   27 00004AF0 RtmCreateDestEnum
+         41   28 0000EFE0 RtmCreateEnumerationHandle
+         42   29 00005B50 RtmCreateNextHopEnum
+         43   2A 00005140 RtmCreateRouteEnum
+         44   2B 00006860 RtmCreateRouteList
+         45   2C 000069F0 RtmCreateRouteListEnum
+         46   2D 00005FA0 RtmDeleteEnumHandle
+         47   2E 00007F10 RtmDeleteNextHop
+         48   2F 0000EB40 RtmDeleteRoute
+         49   30 00006BE0 RtmDeleteRouteList
+         50   31 0000D470 RtmDeleteRouteTable
+         51   32 0000B9B0 RtmDeleteRouteToDest
+         52   33 0000D940 RtmDequeueRouteChangeMessage
+         53   34 00006190 RtmDereferenceHandles
+         54   35 0000D780 RtmDeregisterClient
+         55   36 00009F60 RtmDeregisterEntity
+         56   37 000028A0 RtmDeregisterFromChangeNotification
+         57   38 0000F240 RtmEnumerateGetNextRoute
+         58   39 000080B0 RtmFindNextHop
+         59   3A 000079C0 RtmGetAddressFamilyInfo
+         60   3B 00002710 RtmGetChangeStatus
+         61   3C 000021E0 RtmGetChangedDests
+         62   3D 00006200 RtmGetDestInfo
+         63   3E 000061C0 RtmGetEntityInfo
+         64   3F 00007300 RtmGetEntityMethods
+         65   40 00005470 RtmGetEnumBestRoutes
+         66   41 00004CE0 RtmGetEnumDests
+         67   42 00005D00 RtmGetEnumNextHops
+         68   43 00005710 RtmGetEnumRoutes
+         69   44 000097C0 RtmGetExactMatchDestination
+         70   45 00009A60 RtmGetExactMatchRoute
+         71   46 0000FDD0 RtmGetFirstRoute
+         72   47 000077C0 RtmGetInstanceInfo
+         73   48 00007540 RtmGetInstances
+         74   49 00009990 RtmGetLessSpecificDestination
+         75   4A 00006AD0 RtmGetListEnumRoutes
+         76   4B 000098A0 RtmGetMostSpecificDestination
+         77   4C 0000EF30 RtmGetNetworkCount
+         78   4D 000065B0 RtmGetNextHopInfo
+         79   4E 00008200 RtmGetNextHopPointer
+         80   4F 00010010 RtmGetNextRoute
+         81   50 0000A480 RtmGetOpaqueInformationPointer
+         82   51 0000A190 RtmGetRegisteredEntities
+         83   52 0000EF80 RtmGetRouteAge
+         84   53 000064A0 RtmGetRouteInfo
+         85   54 0000C2F0 RtmGetRoutePointer
+         86   55 0000C1F0 RtmHoldDestination
+         87   56 00002650 RtmIgnoreChangedDests
+         88   57 000068E0 RtmInsertInRouteList
+         89   58 00007390 RtmInvokeMethod
+         90   59 00009BC0 RtmIsBestRoute
+         91   5A 00002860 RtmIsMarkedForChangeNotification
+         92   5B 0000EDF0 RtmIsRoute
+         93   5C 0000A420 RtmLockDestination
+         94   5D 00008230 RtmLockNextHop
+         95   5E 0000C330 RtmLockRoute
+         96   5F 00010320 RtmLookupIPDestination
+         97   60 000027C0 RtmMarkDestForChangeNotification
+         98   61 00003F60 RtmReadAddressFamilyConfig
+         99   62 00003C40 RtmReadInstanceConfig
+        100   63 00006160 RtmReferenceHandles
+        101   64 0000D5E0 RtmRegisterClient
+        102   65 00009C90 RtmRegisterEntity
+        103   66 00001F40 RtmRegisterForChangeNotification
+        104   67 000025E0 RtmReleaseChangedDests
+        105   68 00006670 RtmReleaseDestInfo
+        106   69 00004F70 RtmReleaseDests
+        107   6A 0000A3D0 RtmReleaseEntities
+        108   6B 00006660 RtmReleaseEntityInfo
+        109   6C 00006800 RtmReleaseNextHopInfo
+        110   6D 00005F30 RtmReleaseNextHops
+        111   6E 00006740 RtmReleaseRouteInfo
+        112   6F 00005AE0 RtmReleaseRoutes
+        113   70 0000C3F0 RtmUpdateAndUnlockRoute
+        114   71 00004560 RtmWriteAddressFamilyConfig
+        115   72 00003DC0 RtmWriteInstanceConfig
+        116   73 00001350 SearchInTable
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        A000 .rdata
+        1000 .reloc
+        2000 .rsrc
+       20000 .text

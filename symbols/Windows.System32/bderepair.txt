@@ -1,0 +1,43 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\bderepair.dll
+
+File Type: DLL
+
+  Section contains the following exports for BDEREPAIR.dll
+
+    00000000 characteristics
+    7672A97E time date stamp
+        0.00 version
+           1 ordinal base
+          15 number of functions
+          15 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001640 FveAuthWithClearKey
+          2    1 00001950 FveAuthWithKey
+          3    2 000016E0 FveAuthWithPassphraseW
+          4    3 00001850 FveAuthWithPasswordW
+          5    4 000010E0 FveCreateRestoreContext
+          6    5 00001B00 FveDecryptData
+          7    6 00001C30 FveDestroyRestoreContext
+          8    7 00001DD0 FveGetConvLogOffset
+          9    8 00002080 FveGetInterruptedRangeOffset
+         10    9 00001D90 FveGetMetadataFromRestoreContext
+         11    A 00001ED0 FveLoadConvLog
+         12    B 000021A0 FveRecoverBlock
+         13    C 000013D0 FveSupplyInformationBlock
+         14    D 000012B0 FveSupplyKeyPackage
+         15    E 000011C0 FveSupplyWatermark
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        9000 .text

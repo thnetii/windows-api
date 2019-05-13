@@ -1,0 +1,177 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\miutils.dll
+
+File Type: DLL
+
+  Section contains the following exports for miutils.dll
+
+    00000000 characteristics
+    21016FEB time date stamp
+        0.00 version
+           1 ordinal base
+         148 number of functions
+         148 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00003A10 ??0CAutoSetActivityId@@QEAA@XZ
+          2    1 00013E10 ??0CCritSec@@QEAA@XZ
+          3    2 0001F620 ??0DynamicSchema@@QEAA@XZ
+          4    3 0001F640 ??0IndicationSchema@@QEAA@XZ
+          5    4 000048E0 ??0StaticSchema@@QEAA@XZ
+          6    5 00002B90 ??0WMISchema@@QEAA@XZ
+          7    6 00002D60 ??0WMISchema@@QEAA@_N@Z
+          8    7 00004780 ??1CAutoSetActivityId@@QEAA@XZ
+          9    8 000141D0 ??1CCritSec@@QEAA@XZ
+         10    9 00002F60 ??1WMISchema@@UEAA@XZ
+         11    A 000142C0 ??4CAutoSetActivityId@@QEAAAEAV0@AEBV0@@Z
+         12    B 000142E0 ??4CCritSec@@QEAAAEAV0@AEBV0@@Z
+         13    C 00020150 ?CreateInstance@DynamicSchema@@UEAAJPEBGPEAUIWbemClassObject@@KPEBU_MI_PropertySet@@_NAEAPEAU_MI_Instance@@PEAUIConversionContext@@@Z
+         14    D 00020390 ?CreateInstance@IndicationSchema@@UEAAJPEBGPEAUIWbemClassObject@@KPEBU_MI_PropertySet@@_NAEAPEAU_MI_Instance@@PEAUIConversionContext@@@Z
+         15    E 000204A0 ?CreateInstance@StaticSchema@@UEAAJPEBGPEAUIWbemClassObject@@KPEBU_MI_PropertySet@@_NAEAPEAU_MI_Instance@@PEAUIConversionContext@@@Z
+         16    F 000206A0 ?DeInitialize@WMISchema@@QEAAJXZ
+         17   10 00020940 ?GetFlags@MiSchema@@UEBAJXZ
+         18   11 00020A60 ?GetMiClass@DynamicSchema@@UEAAJPEBG00PEAPEBU_MI_Class@@@Z
+         19   12 00020A70 ?GetMiClass@IndicationSchema@@UEAAJPEBG00PEAPEBU_MI_Class@@@Z
+         20   13 00020B30 ?GetMiClass@StaticSchema@@UEAAJPEBG00PEAPEBU_MI_Class@@@Z
+         21   14 00004300 ?GetNoneCachedWmiClass@WMISchema@@UEAAJPEBGPEAUIWbemServices@@AEAV?$CComPtr@UIWbemClassObject@@@ATL@@PEAUIConversionContext@@@Z
+         22   15 00002260 ?GetWmiClass@WMISchema@@UEAAJPEBG0AEAV?$CComPtr@UIWbemClassObject@@@ATL@@PEAUIConversionContext@@@Z
+         23   16 00001120 ?GetWmiIWbemServices@WMISchema@@UEAAJPEBGAEAV?$CComPtr@UIWbemServices@@@ATL@@@Z
+         24   17 00004900 ?Initialize@StaticSchema@@QEAAJPEBU_MI_Module@@@Z
+         25   18 00020CD0 ?Initialize@WMISchema@@QEAAX_N@Z
+         26   19 00021230 ?SetFlags@MiSchema@@MEAAJJ@Z
+         27   1A 00027AF0 CimErrorFromErrorCode
+         28   1B 0000B290 CimError_Construct
+         29   1C 00027B90 CimStatusCodeFromWindowsError
+         30   1D 0001B070 CimTypeToType
+         31   1E 00013250 ClassCache_AddClass
+         32   1F 00013430 ClassCache_Delete
+         33   20 000134A0 ClassCache_GetClass
+         34   21 00004480 ClassCache_New
+         35   22 0000E9A0 Class_New
+         36   23 0001B2A0 CompareInstance
+         37   24 0001B490 CompareValue
+         38   25 000034F0 Config_GetProtocolHandlerDetails
+         39   26 00003760 Config_GetRegString
+         40   27 000285B0 CreateConversionContext
+         41   28 00003BE0 DestinationOptions_Create
+         42   29 000048B0 DestinationOptions_Duplicate
+         43   2A 000045D0 DestinationOptions_MigrateOptions
+         44   2B 00002680 FindClassDecl
+         45   2C 0001BCC0 FindMethodDecl
+         46   2D 0001BD10 FindQualifierInWMIObject
+         47   2E 00025F10 GetCorrelationId
+         48   2F 0001BDB0 GetMethodParameters
+         49   30 0001BF30 GetReferenceFromWMIObjectPath
+         50   31 0001C570 InstanceToWMIEvent
+         51   32 0001C620 InstanceToWMIExtendedStatus
+         52   33 00001380 InstanceToWMIObject
+         53   34 0000B2B0 Instance_Clone
+         54   35 00004210 Instance_Construct
+         55   36 0000B330 Instance_GetResourceURI
+         56   37 0000B390 Instance_InitDynamic
+         57   38 0000B410 Instance_IsDynamic
+         58   39 0000B430 Instance_MatchKeys
+         59   3A 0000B440 Instance_New
+         60   3B 0000B4B0 Instance_SetElementArray
+         61   3C 0000B5D0 Instance_SetElementArrayItem
+         62   3D 0000B660 Instance_SetResourceURI
+         63   3E 0000B770 Instance_SetServerName
+         64   3F 00022910 IsLifeCycleIndicationQuery
+         65   40 0000B820 MI_Hash
+         66   41 00027C20 MiErrorCategoryFromWindowsError
+         67   42 0000B850 OSC_Batch_Destroy
+         68   43 0000B8C0 OSC_Batch_Get
+         69   44 0000BA80 OSC_Batch_Strdup
+         70   45 0000C5F0 OSC_StringToMiValue
+         71   46 0000C7C0 OSC_Type_GetSize
+         72   47 00025030 OperationOptions_CopyOptions
+         73   48 00025120 OperationOptions_Create
+         74   49 00025130 OperationOptions_MigrateOptions
+         75   4A 000252B0 OptionsValueToContextValue
+         76   4B 00025380 Options_FindValue
+         77   4C 0001CB50 ParametersToWMIObject
+         78   4D 00011490 PropertySet_New
+         79   4E 0001D070 PropertyToVariant
+         80   4F 000260C0 PublishClientOperationInfo
+         81   50 00026110 PublishDebugInfo
+         82   51 00001BC0 PublishDebugMessage
+         83   52 00003980 PublishProviderResult
+         84   53 00026190 PublishProviderWriteError
+         85   54 000261F0 PublishProviderWriteMessage
+         86   55 0001DFB0 QualifierFlavorToWMI
+         87   56 0000F010 RCClass_AddClassQualifier
+         88   57 0000F070 RCClass_AddClassQualifierArray
+         89   58 0000F150 RCClass_AddClassQualifierArrayItem
+         90   59 0000F1B0 RCClass_AddElement
+         91   5A 0000F240 RCClass_AddElementArray
+         92   5B 0000F360 RCClass_AddElementArrayItem
+         93   5C 0000F3C0 RCClass_AddElementQualifier
+         94   5D 0000F420 RCClass_AddElementQualifierArray
+         95   5E 0000F510 RCClass_AddElementQualifierArrayItem
+         96   5F 0000F580 RCClass_AddMethod
+         97   60 0000F7A0 RCClass_AddMethodParameter
+         98   61 0000F9C0 RCClass_AddMethodParameterQualifier
+         99   62 0000FA30 RCClass_AddMethodParameterQualifierArray
+        100   63 0000FB40 RCClass_AddMethodParameterQualifierArrayItem
+        101   64 0000FBC0 RCClass_AddMethodQualifier
+        102   65 0000FC20 RCClass_AddMethodQualifierArray
+        103   66 0000FD10 RCClass_AddMethodQualifierArrayItem
+        104   67 0000FD80 RCClass_New
+        105   68 000025E0 ResultFromHRESULT
+        106   69 00001CA0 ResultToHRESULT
+        107   6A 0000A740 RtlDeleteCachedFastLock
+        108   6B 00003210 RtlInitializeCachedFastLock
+        109   6C 0000A7C0 RtlInterlockedCompareWait
+        110   6D 0000A920 RtlInterlockedWakeAll
+        111   6E 000040F0 RtlQueueAcquireCachedFastLockExclusive
+        112   6F 0000A9B0 RtlQueueAcquireCachedFastLockShared
+        113   70 0000A9D0 RtlQueueAcquireFastLockExclusive
+        114   71 0000AC50 RtlQueueAcquireFastLockShared
+        115   72 00004740 RtlReleaseCachedFastLockExclusive
+        116   73 00004840 RtlReleaseCachedFastLockShared
+        117   74 00003190 RtlReleaseFastLockExclusive
+        118   75 0000AF40 RtlReleaseFastLockShared
+        119   76 00002600 RtlTryAcquireCachedFastLockShared
+        120   77 000031C0 RtlTryAcquireFastLockExclusive
+        121   78 0000AF80 RtlTryAcquireFastLockShared
+        122   79 000046B0 RtlpInitFastLock
+        123   7A 0000B1F0 RtlpReleaseIdleSlots
+        124   7B 00026230 SetCorrelationIdToWbemContext
+        125   7C 000285C0 SetModifiedPropertyNamesToContext
+        126   7D 0001DFE0 SetProperties
+        127   7E 000253C0 SubscriptionDeliveryOptions_Create
+        128   7F 00025420 SubscriptionDeliveryOptions_MigrateOptions
+        129   80 0001E020 TypeToCimType
+        130   81 000045A0 ValueClear
+        131   82 0001E200 ValueToVariant
+        132   83 0001E230 VariantArrayToSafeArray
+        133   84 000033B0 VariantToValue
+        134   85 00022F40 WMIEventToCIMIndication
+        135   86 0001E4C0 WMIExtendedObjectToInstance
+        136   87 0001E810 WMIObjectToClass
+        137   88 0001E8B0 WMIObjectToInstance
+        138   89 0001EB60 WMIQualifierFlavorToMI
+        139   8A 00026250 WriteWBEM_MC_CLIENT_REQUEST_FAILURE
+        140   8B 00012DE0 XMLDOM_Free
+        141   8C 00012E00 XMLDOM_Parse
+        142   8D 00011520 XML_FormatError
+        143   8E 00011560 XML_Init
+        144   8F 00011590 XML_Next
+        145   90 000117A0 XML_PutError
+        146   91 000118A0 XML_RegisterNameSpace
+        147   92 00011920 XML_SetText
+        148   93 00011940 XML_StripWhitespace
+
+  Summary
+
+       22000 .data
+        1000 .didat
+        2000 .pdata
+       10000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       28000 .text

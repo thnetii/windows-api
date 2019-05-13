@@ -1,0 +1,50 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\LanguageOverlayUtil.dll
+
+File Type: DLL
+
+  Section contains the following exports for LanguageOverlayUtil.dll
+
+    00000000 characteristics
+    7BE7FB6F time date stamp
+        0.00 version
+           1 ordinal base
+          21 number of functions
+          21 number of names
+
+    ordinal hint RVA      name
+
+          3    0 00006D00 AddLanguageToMachineLanguageList
+          4    1 00006130 CloseOverlayPaths
+          5    2 00006000 EnumOverlayPaths
+          6    3 000087E0 EnumerateInstalledLocalExperiencePacks
+          7    4 00007970 EnumerateInstalledMachineLanguagePacks
+          8    5 0000CA60 EnumerateSupportedUILanguages
+          9    6 00005A80 GetBcp47TagFromPackageFamilyName
+         10    7 00005620 GetLanguageOverlayPackageFamilyName
+         11    8 00004CE0 GetOverlayFilePath
+         12    9 0000A220 GetWindowsUpdateServer
+         13    A 0000A120 GroupUserLanguages
+         14    B 00005540 InvalidateLanguageResourceCaches
+         15    C 0000A020 IsGroupingUserLanguagesNeeded
+         16    D 00004E20 IsLanguageOverlayBlockedByPolicy
+         17    E 00008380 IsLegacyLanguagePackInstalledForLanguage
+         18    F 000078F0 IsLocalExperiencePackReadyForRemoval
+          1   10 00008720 OnMachineUILanguageInit
+          2   11 00008760 OnMachineUILanguageSwitch
+         19   12 00005ED0 OpenOverlayPaths
+         20   13 00007240 RemoveLanguageFromMachineLanguageList
+         21   14 000073B0 StartFetchLegacyLanguageResources
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        9000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       11000 .text

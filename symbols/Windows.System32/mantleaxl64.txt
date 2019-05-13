@@ -1,0 +1,65 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\mantleaxl64.dll
+
+File Type: DLL
+
+  Section contains the following exports for mantleaxl64.dll
+
+    00000000 characteristics
+    5656A41C time date stamp Thu Nov 26 07:18:04 2015
+        0.00 version
+           1 ordinal base
+          37 number of functions
+          37 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001D10 DllMain
+          2    1 00001000 grAddPerfExperimentCounter
+          3    2 00001060 grAddPerfExperimentTrace
+          4    3 000010C0 grBlankPrivateDisplay
+          5    4 00001100 grCalibrateGpuTimestamp
+          6    5 00001160 grCmdBeginPerfExperiment
+          7    6 000011B0 grCmdBindBorderColorPalette
+          8    7 00001210 grCmdCopyOcclusionData
+          9    8 000012A0 grCmdElse
+         10    9 000012E0 grCmdEndIf
+         11    A 00001320 grCmdEndPerfExperiment
+         12    B 00001370 grCmdEndWhile
+         13    C 000013B0 grCmdIf
+         14    D 00001430 grCmdInsertTraceMarker
+         15    E 00001490 grCmdResetMemoryPredication
+         16    F 000014D0 grCmdResetOcclusionPredication
+         17   10 00001510 grCmdSetMemoryPredication
+         18   11 00001570 grCmdSetOcclusionPredication
+         19   12 000015F0 grCmdWhile
+         20   13 00001670 grCreateAdvancedMsaaState
+         21   14 000016E0 grCreateBorderColorPalette
+         22   15 00001750 grCreateFmaskImageView
+         23   16 000017C0 grCreatePerfExperiment
+         24   17 00001830 grCreatePrivateDisplayImage
+         25   18 000018A0 grDisablePrivateDisplay
+         26   19 000018E0 grEnablePrivateDisplay
+         27   1A 00001940 grFinalizePerfExperiment
+         28   1B 00001980 grGetExtensionLibraryVersion
+         29   1C 00001990 grGetPrivateDisplayScanLine
+         30   1D 000019F0 grGetPrivateDisplays
+         31   1E 00001A60 grPrivateDisplayPresent
+         32   1F 00001AC0 grQueueDelay
+         33   20 00001B20 grRegisterPrivateDisplayEvent
+         34   21 00001B80 grSetPrivateDisplaySettings
+         35   22 00001BF0 grUpdateBorderColorPalette
+         36   23 00001E60 grWinOpenExternalSharedImage
+         37   24 00001ED0 grWinOpenExternalSharedMemory
+
+  Summary
+
+        4000 .data
+        1000 .pdata
+        8000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       10000 .text

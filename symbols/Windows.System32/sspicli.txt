@@ -1,0 +1,134 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\sspicli.dll
+
+File Type: DLL
+
+  Section contains the following exports for SspiCli.dll
+
+    00000000 characteristics
+    EBD3B7F6 time date stamp
+        0.00 version
+           1 ordinal base
+         105 number of functions
+         105 number of names
+
+    ordinal hint RVA      name
+
+          4    0 0000B950 AcceptSecurityContext
+          5    1 0000A8D0 AcquireCredentialsHandleA
+          6    2 0000A930 AcquireCredentialsHandleW
+          7    3 0001AB70 AddCredentialsA
+          8    4 0001ACA0 AddCredentialsW
+          9    5 000177E0 AddSecurityPackageA
+         10    6 00017850 AddSecurityPackageW
+         11    7 0001ADD0 ApplyControlToken
+         12    8 0001AE60 ChangeAccountPasswordA
+         13    9 0001AEB0 ChangeAccountPasswordW
+         14    A 0001AF00 CompleteAuthToken
+         15    B 0000A3D0 CredMarshalTargetInfo
+         16    C 00009C50 CredUnmarshalTargetInfo
+         17    D 00009830 DecryptMessage
+         18    E 000096A0 DeleteSecurityContext
+         19    F 0000AED0 DeleteSecurityPackageA
+         20   10 0000AED0 DeleteSecurityPackageW
+         21   11 000097A0 EncryptMessage
+         22   12 0001AF90 EnumerateSecurityPackagesA
+         23   13 000086D0 EnumerateSecurityPackagesW
+         24   14 0001B030 ExportSecurityContext
+         25   15 00002980 FreeContextBuffer
+         26   16 00009030 FreeCredentialsHandle
+         27   17 000177D0 GetSecurityUserInfo
+         28   18 00003610 GetUserNameExA
+         29   19 000062C0 GetUserNameExW
+         30   1A 0000BCA0 ImpersonateSecurityContext
+         31   1B 0001B0E0 ImportSecurityContextA
+         32   1C 0001B1C0 ImportSecurityContextW
+         33   1D 0001B2A0 InitSecurityInterfaceA
+         34   1E 0000AE40 InitSecurityInterfaceW
+         35   1F 000091E0 InitializeSecurityContextA
+         36   20 000090B0 InitializeSecurityContextW
+         37   21 00002BD0 LogonUserExExW
+         38   22 00002620 LsaCallAuthenticationPackage
+         39   23 00008950 LsaConnectUntrusted
+         40   24 00008940 LsaDeregisterLogonProcess
+         41   25 0001A940 LsaEnumerateLogonSessions
+         42   26 00006680 LsaFreeReturnBuffer
+         43   27 0000B160 LsaGetLogonSessionData
+         44   28 00001030 LsaLogonUser
+         45   29 00002770 LsaLookupAuthenticationPackage
+         46   2A 00008D30 LsaRegisterLogonProcess
+         47   2B 0001A980 LsaRegisterPolicyChangeNotification
+         48   2C 0000CA30 LsaUnregisterPolicyChangeNotification
+         49   2D 0000CB50 MakeSignature
+         50   2E 0000BB90 QueryContextAttributesA
+         51   2F 000095E0 QueryContextAttributesExA
+         52   30 00009130 QueryContextAttributesExW
+         53   31 0000BD20 QueryContextAttributesW
+         54   32 0001B2E0 QueryCredentialsAttributesA
+         55   33 0001B380 QueryCredentialsAttributesExA
+         56   34 0000AEE0 QueryCredentialsAttributesExW
+         57   35 00008EE0 QueryCredentialsAttributesW
+         58   36 0000C070 QuerySecurityContextToken
+         59   37 0001B430 QuerySecurityPackageInfoA
+         60   38 0000BE00 QuerySecurityPackageInfoW
+         61   39 0000BC20 RevertSecurityContext
+         62   3A 0001C0E0 SaslAcceptSecurityContext
+         63   3B 0001C2E0 SaslEnumerateProfilesA
+         64   3C 0001C2F0 SaslEnumerateProfilesW
+         65   3D 0001C300 SaslGetContextOption
+         66   3E 0001C450 SaslGetProfilePackageA
+         67   3F 0001C4C0 SaslGetProfilePackageW
+         68   40 0001C510 SaslIdentifyPackageA
+         69   41 0001C550 SaslIdentifyPackageW
+         70   42 0001C590 SaslInitializeSecurityContextA
+         71   43 0001C750 SaslInitializeSecurityContextW
+         72   44 0001C910 SaslSetContextOption
+         73   45 000097A0 SealMessage
+         74   46 00018D30 SecCacheSspiPackages
+          1   47 0001A820 SecDeleteUserModeContext
+          2   48 0001A890 SecInitUserModeContext
+         75   49 0000AD40 SeciAllocateAndSetCallFlags
+         76   4A 0000C6A0 SeciAllocateAndSetCallTarget
+         77   4B 00009B70 SeciAllocateAndSetIPAddress
+         78   4C 0000A850 SeciFreeCallContext
+         79   4D 0000AF90 SeciIsProtectedUser
+         80   4E 0001B470 SetContextAttributesA
+         81   4F 00008F80 SetContextAttributesW
+         82   50 0001B520 SetCredentialsAttributesA
+         83   51 0001B5D0 SetCredentialsAttributesW
+         84   52 000168E0 SspiCompareAuthIdentities
+         85   53 0000C2E0 SspiCopyAuthIdentity
+         86   54 00017D40 SspiDecryptAuthIdentity
+         87   55 00017D60 SspiDecryptAuthIdentityEx
+         88   56 00001960 SspiEncodeAuthIdentityAsStrings
+         89   57 00016BD0 SspiEncodeStringsAsAuthIdentity
+         90   58 0000C120 SspiEncryptAuthIdentity
+         91   59 0000C140 SspiEncryptAuthIdentityEx
+         92   5A 00017140 SspiExcludePackage
+         93   5B 0000C7B0 SspiFreeAuthIdentity
+         94   5C 00018140 SspiGetComputerNameForSPN
+         95   5D 000021C0 SspiGetTargetHostName
+         96   5E 00017F20 SspiIsAuthIdentityEncrypted
+         97   5F 0000AE70 SspiLocalFree
+         98   60 000174A0 SspiMarshalAuthIdentity
+         99   61 00001520 SspiPrepareForCredRead
+        100   62 00001720 SspiPrepareForCredWrite
+        101   63 000177C0 SspiUnmarshalAuthIdentity
+          3   64 000165A0 SspiUnmarshalAuthIdentityInternal
+        102   65 0000C510 SspiValidateAuthIdentity
+        103   66 0000C840 SspiZeroAuthIdentity
+        104   67 00009830 UnsealMessage
+        105   68 0000CC90 VerifySignature
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        2000 .pdata
+        A000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       1D000 .text

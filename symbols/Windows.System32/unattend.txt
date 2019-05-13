@@ -1,0 +1,101 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\unattend.dll
+
+File Type: DLL
+
+  Section contains the following exports for UNATTEND.DLL
+
+    00000000 characteristics
+    BEE2DD9C time date stamp
+        0.00 version
+           1 ordinal base
+          73 number of functions
+          73 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001090 DllCanUnloadNow
+          2    1 00001070 DllMain
+          3    2 00004460 UnattendAddResults
+          4    3 000010C0 UnattendCleanup
+          5    4 000035F0 UnattendCtxAddOrModifyNodeText
+          6    5 00003510 UnattendCtxBeginModify
+          7    6 000035A0 UnattendCtxCancelModify
+          8    7 00001780 UnattendCtxCleanup
+          9    8 00003580 UnattendCtxCommitModify
+         10    9 00001C10 UnattendCtxCompareNodes
+         11    A 00001280 UnattendCtxDeserialize
+         12    B 00001570 UnattendCtxDeserializeBuffer
+         13    C 000013D0 UnattendCtxDeserializeFile
+         14    D 00001530 UnattendCtxDeserializeString
+         15    E 00001290 UnattendCtxDeserializeWithResults
+         16    F 00002CB0 UnattendCtxEnumGet
+         17   10 00002A60 UnattendCtxEnumOrderedSubNodes
+         18   11 00001860 UnattendCtxGetCount
+         19   12 00002D60 UnattendCtxGetCountByNode
+         20   13 00001A70 UnattendCtxGetEnumValue
+         21   14 00003030 UnattendCtxGetEnumValueByNode
+         22   15 00001900 UnattendCtxGetExpandedString
+         23   16 00002E10 UnattendCtxGetExpandedStringByNode
+         24   17 00001A30 UnattendCtxGetFlag
+         25   18 00003000 UnattendCtxGetFlagByNode
+         26   19 00001970 UnattendCtxGetLong
+         27   1A 00002EC0 UnattendCtxGetLongByNode
+         28   1B 00002390 UnattendCtxGetNodeAttr
+         29   1C 00002440 UnattendCtxGetNodeChild
+         30   1D 00002500 UnattendCtxGetNodeValue
+         31   1E 00003230 UnattendCtxGetRootNode
+         32   1F 00001AC0 UnattendCtxGetShowUI
+         33   20 00003080 UnattendCtxGetShowUIFromNode
+         34   21 000018D0 UnattendCtxGetString
+         35   22 00002DE0 UnattendCtxGetStringByNode
+         36   23 000019D0 UnattendCtxGetUlong
+         37   24 00002F60 UnattendCtxGetUlongByNode
+         38   25 00002120 UnattendCtxOpenNode
+         39   26 00002210 UnattendCtxOpenNodeByNode
+         40   27 000025B0 UnattendCtxPrettyPrint
+         41   28 00003910 UnattendCtxRemoveAttr
+         42   29 000038C0 UnattendCtxRemoveNode
+         43   2A 00003690 UnattendCtxReplaceMatchedNodesWithText
+         44   2B 00003D20 UnattendCtxReplaceNode
+         45   2C 00001650 UnattendCtxSerialize
+         46   2D 00004920 UnattendCtxSerializeSettingsStream
+         47   2E 00001700 UnattendCtxSerializeToBuffer
+         48   2F 00002550 UnattendCtxSerializeToBufferFromNode
+         49   30 00004890 UnattendCtxSerializeToStream
+         50   31 00004A70 UnattendCtxSerializeToStreamFromNode
+         51   32 00003B70 UnattendCtxSetNodeName
+         52   33 00001810 UnattendCtxSetString
+         53   34 00003C20 UnattendCtxSetStringByNode
+         54   35 00004030 UnattendCtxSpliceTrees
+         55   36 000010A0 UnattendDeserializeWithResults
+         56   37 00002C30 UnattendEnumFree
+         57   38 00004C60 UnattendFindAnswerFile
+         58   39 00005200 UnattendFindAnswerFileSkipPantherFolder
+         59   3A 00005110 UnattendFindAnswerFileWithResults
+         60   3B 00006410 UnattendFindFileFromCmdLine
+         61   3C 00004540 UnattendFormatPath
+         62   3D 00002300 UnattendFreeNode
+         63   3E 00004510 UnattendFreeResults
+         64   3F 00004370 UnattendFreeSetting
+         65   40 00001160 UnattendGetCount
+         66   41 00004200 UnattendGetFirstFailingSetting
+         67   42 00001240 UnattendGetFlag
+         68   43 00001140 UnattendGetImplicitContext
+         69   44 000011D0 UnattendGetString
+         70   45 000022E0 UnattendIsNodeValid
+         71   46 000065C0 UnattendIsPassUnusedInCtx
+         72   47 00006530 UnattendMarkPassUsedInCtx
+         73   48 00006690 UnattendUsedPassesExistInCtx
+
+  Summary
+
+        1000 .data
+        2000 .pdata
+        7000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       28000 .text

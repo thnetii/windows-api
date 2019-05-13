@@ -1,0 +1,222 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\hplbddrv.dll
+
+File Type: DLL
+
+  Section contains the following exports for hplbddrv.dll
+
+    00000000 characteristics
+    4BE2C1B5 time date stamp Thu May  6 15:18:45 2010
+        0.00 version
+           1 ordinal base
+         194 number of functions
+         194 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000011D0 ??0BiDiChannel@@QEAA@XZ
+          2    1 000015E0 ??0BiDiChannelProxy@@QEAA@XZ
+          3    2 00002FA0 ??0IoChannel@@QEAA@XZ
+          4    3 00002C80 ??0SnmpChannel@@QEAA@AEBV0@@Z
+          5    4 000087E0 ??0SnmpChannel@@QEAA@XZ
+          6    5 00001560 ??1BiDiChannel@@QEAA@XZ
+          7    6 00001F10 ??1BiDiChannelProxy@@QEAA@XZ
+          8    7 000065F0 ??1IoChannel@@QEAA@XZ
+          9    8 0000A150 ??1SnmpChannel@@QEAA@XZ
+         10    9 000011B0 ??4BiDiChannel@@QEAAAEAV0@AEBV0@@Z
+         11    A 000015C0 ??4BiDiChannelProxy@@QEAAAEAV0@AEBV0@@Z
+         12    B 00001150 ??4IoChannel@@QEAAAEAV0@AEBV0@@Z
+         13    C 00002D90 ??4SnmpChannel@@QEAAAEAV0@AEBV0@@Z
+         14    D 0001E110 ??_7SnmpChannel@@6B@
+         15    E 00004620 ?Accept@IoChannel@@QEAAHXZ
+         16    F 000023F0 ?AcceptingProxyThread@BiDiChannelProxy@@CAKPEAX@Z
+         17   10 00004C60 ?BiDiChannelClose@IoChannel@@QEAAHXZ
+         18   11 00004F00 ?BiDiChannelGetWriteSpace@IoChannel@@QEAAHPEAG@Z
+         19   12 00004A00 ?BiDiChannelOpen@IoChannel@@QEAAHXZ
+         20   13 00006140 ?BiDiChannelRead@IoChannel@@QEAAHPEAEPEAK@Z
+         21   14 00006450 ?BiDiChannelReadEx@IoChannel@@QEAAHPEAEPEAKKH@Z
+         22   15 000051B0 ?BiDiChannelWrite@IoChannel@@QEAAHPEAEPEAKH@Z
+         23   16 00005450 ?BiDiChannelWriteEx@IoChannel@@QEAAHPEAEPEAKKH@Z
+         24   17 00004340 ?Bind@IoChannel@@QEAAHH@Z
+         25   18 00001430 ?Close@BiDiChannel@@QEAAHXZ
+         26   19 00005D40 ?Close@IoChannel@@QEAAHXZ
+         27   1A 00008FA0 ?Close@SnmpChannel@@QEAAHXZ
+         28   1B 00007480 ?DiscoverUsbPort@IoChannel@@AEAAHPEAD@Z
+         29   1C 00008290 ?DllGetVersion@@YAJPEAU_DLLVERSIONINFO@@@Z
+         30   1D 000090B0 ?ForcePML@SnmpChannel@@QEAAHXZ
+         31   1E 0000A850 ?Get@SnmpChannel@@QEAAHJPEAU__MIDL___MIDL_itf_MissileSvr_0000_0001@@PEAJPEAPEAU__MIDL___MIDL_itf_MissileSvr_0000_0003@@@Z
+         32   1F 00001190 ?GetChannelHandle@BiDiChannel@@QEAAGXZ
+         33   20 00001120 ?GetChannelHandle@IoChannel@@QEAAGXZ
+         34   21 000019F0 ?GetChannelNumber@BiDiChannelProxy@@QEAAHPEAK@Z
+         35   22 00006620 ?GetDeviceId@IoChannel@@QEAAHPEADPEAK@Z
+         36   23 000071B0 ?GetDeviceId@IoChannel@@QEAAPEADXZ
+         37   24 00004080 ?GetDeviceIdSnmp@IoChannel@@AEAAHXZ
+         38   25 000067C0 ?GetDeviceIdUsb@IoChannel@@AEAAHXZ
+         39   26 00007210 ?GetListOfSupportedBiDiChannels@IoChannel@@QEAAHPEAGPEAK@Z
+         40   27 00005610 ?GetLocalIpv4Address@IoChannel@@QEAAHPEAE000@Z
+         41   28 000030D0 ?GetMainNetworkAddress@IoChannel@@QEAAPEADXZ
+         42   29 000010D0 ?GetMaxReadBuffer@BiDiChannel@@SAKXZ
+         43   2A 000010D0 ?GetMaxReadBuffer@IoChannel@@SAKXZ
+         44   2B 000010D0 ?GetMaxReadIoctlBuffer@IoChannel@@SAKXZ
+         45   2C 000010C0 ?GetMaxWriteBuffer@BiDiChannel@@SAKXZ
+         46   2D 000010C0 ?GetMaxWriteBuffer@IoChannel@@SAKXZ
+         47   2E 000010D0 ?GetMaxWriteIoctlBuffer@IoChannel@@SAKXZ
+         48   2F 00003B50 ?GetNetworkAddress@IoChannel@@AEAAHXZ
+         49   30 00001140 ?GetNetworkPort@IoChannel@@QEAAHXZ
+         50   31 0000A870 ?GetNext@SnmpChannel@@QEAAHJPEAU__MIDL___MIDL_itf_MissileSvr_0000_0001@@PEAJPEAPEAU__MIDL___MIDL_itf_MissileSvr_0000_0003@@@Z
+         51   32 00002C50 ?GetNextUInt@SnmpChannel@@QEAAHJPEAU__MIDL___MIDL_itf_MissileSvr_0000_0001UInt@@PEAJPEAPEAU__MIDL___MIDL_itf_MissileSvr_0000_0003UInt@@@Z
+         52   33 00003400 ?GetPhysicalPort@IoChannel@@AEAAHXZ
+         53   34 00001130 ?GetPortName@IoChannel@@QEAAPEADXZ
+         54   35 000019D0 ?GetPortNumber@BiDiChannelProxy@@QEAAHPEAK@Z
+         55   36 000057B0 ?GetStatusByte@IoChannel@@QEAAHPEAD@Z
+         56   37 0000A830 ?GetUInt@SnmpChannel@@QEAAHJPEAU__MIDL___MIDL_itf_MissileSvr_0000_0001UInt@@PEAJPEAPEAU__MIDL___MIDL_itf_MissileSvr_0000_0003UInt@@@Z
+         57   38 00001940 ?GetUrl@BiDiChannelProxy@@QEAAHPEAD@Z
+         58   39 00001980 ?GetUrlWithWebPage@BiDiChannelProxy@@QEAAHPEAD@Z
+         59   3A 00004760 ?HalfClose@IoChannel@@QEAAHXZ
+         60   3B 000010B0 ?IncreaseReadingDelay@BiDiChannel@@SAKK@Z
+         61   3C 000010B0 ?IncreaseReadingDelay@IoChannel@@SAKK@Z
+         62   3D 00001170 ?IncreaseWritingDelay@BiDiChannel@@SAKK@Z
+         63   3E 00001170 ?IncreaseWritingDelay@IoChannel@@SAKK@Z
+         64   3F 000011E0 ?Init@BiDiChannel@@QEAAHPEAVIoChannel@@G@Z
+         65   40 00001620 ?Init@BiDiChannelProxy@@QEAAHPEADGW4tProxyType@@K@Z
+         66   41 000081E0 ?Init@IoChannel@@QEAAHPEAD@Z
+         67   42 00007C50 ?InitAddress@IoChannel@@QEAAHPEAD@Z
+         68   43 000081F0 ?InitBiDiChannel@IoChannel@@QEAAHPEADG@Z
+         69   44 00003290 ?InitDisk@IoChannel@@QEAAHPEAD@Z
+         70   45 000030E0 ?InitPhysicalPort@IoChannel@@QEAAHPEADW4tPortType@@@Z
+         71   46 000078C0 ?InitPort@IoChannel@@QEAAHPEAD@Z
+         72   47 00007EE0 ?InitPrinter@IoChannel@@QEAAHPEAD@Z
+         73   48 00008100 ?InitSerialNumber@IoChannel@@QEAAHPEAD@Z
+         74   49 00001400 ?Ioctl@BiDiChannel@@QEAAHKPEAEPEAK01@Z
+         75   4A 00004830 ?Ioctl@IoChannel@@QEAAHKPEAEPEAK01@Z
+         76   4B 00001100 ?IsDisk@IoChannel@@QEAAHXZ
+         77   4C 00005730 ?IsInit@IoChannel@@QEAAHXZ
+         78   4D 00005740 ?IsOpen@IoChannel@@QEAAHXZ
+         79   4E 000010E0 ?IsTcpIp@IoChannel@@QEAAHXZ
+         80   4F 00007340 ?IsThisChannelSupported@IoChannel@@QEAAHGPEAH@Z
+         81   50 00005780 ?IsUSB@IoChannel@@QEAAHXZ
+         82   51 00001DD0 ?LaunchApplication@BiDiChannelProxy@@QEAAHPEAD@Z
+         83   52 00001D90 ?LaunchApplication@BiDiChannelProxy@@QEAAHXZ
+         84   53 00001A10 ?LaunchApplicationThread@BiDiChannelProxy@@CAKPEAX@Z
+         85   54 00004530 ?Listen@IoChannel@@QEAAHH@Z
+         86   55 000012C0 ?Open@BiDiChannel@@QEAAHXZ
+         87   56 00005840 ?Open@IoChannel@@QEAAHXZ
+         88   57 00008900 ?Open@SnmpChannel@@AEAAHPEAD0000W4tPortType@@@Z
+         89   58 0000A1B0 ?Open@SnmpChannel@@QEAAHPEAD@Z
+         90   59 0000A210 ?OpenAddress@SnmpChannel@@QEAAHPEAD@Z
+         91   5A 0000A240 ?OpenDisk@SnmpChannel@@QEAAHPEAD@Z
+         92   5B 0000A270 ?OpenPhysicalPort@SnmpChannel@@QEAAHPEADW4tPortType@@@Z
+         93   5C 0000A1E0 ?OpenPrinterA@SnmpChannel@@QEAAHPEAD@Z
+         94   5D 00005C70 ?OpenWithTimeout@IoChannel@@QEAAHH@Z
+         95   5E 000090F0 ?PrintErrorStatus@SnmpChannel@@AEAAXJ@Z
+         96   5F 00001380 ?Read@BiDiChannel@@QEAAHPEAEPEAK@Z
+         97   60 000069A0 ?Read@IoChannel@@QEAAHPEAEPEAK@Z
+         98   61 000013C0 ?ReadEx@BiDiChannel@@QEAAHPEAEPEAKKH@Z
+         99   62 00006B80 ?ReadEx@IoChannel@@QEAAHPEAEPEAKKH@Z
+        100   63 00001F30 ?ReadingProxyThread@BiDiChannelProxy@@CAKPEAX@Z
+        101   64 0000A2A0 ?Request@SnmpChannel@@QEAAHJPEAU__MIDL___MIDL_itf_MissileSvr_0000_0001UInt@@PEAJPEAPEAU__MIDL___MIDL_itf_MissileSvr_0000_0003UInt@@W4tRequestType@1@@Z
+        102   65 0000A3A0 ?RequestByte@SnmpChannel@@QEAAHJPEAU__MIDL___MIDL_itf_MissileSvr_0000_0001@@PEAJPEAPEAU__MIDL___MIDL_itf_MissileSvr_0000_0003@@W4tRequestType@1@@Z
+        103   66 000091F0 ?RequestPML@SnmpChannel@@AEAAHJPEAU__MIDL___MIDL_itf_MissileSvr_0000_0001UInt@@PEAJPEAPEAU__MIDL___MIDL_itf_MissileSvr_0000_0003UInt@@W4tRequestType@1@@Z
+        104   67 00009850 ?RequestSNMP@SnmpChannel@@AEAAHJPEAU__MIDL___MIDL_itf_MissileSvr_0000_0001UInt@@PEAJPEAPEAU__MIDL___MIDL_itf_MissileSvr_0000_0003UInt@@W4tRequestType@1@@Z
+        105   68 00002F10 ?ResetAttributes@IoChannel@@AEAAHXZ
+        106   69 000055F0 ?ResetReadPermissionTime@IoChannel@@AEAAXXZ
+        107   6A 00001180 ?ResetReadingDelay@BiDiChannel@@SAKXZ
+        108   6B 00001180 ?ResetReadingDelay@IoChannel@@SAKXZ
+        109   6C 00001180 ?ResetWritingDelay@BiDiChannel@@SAKXZ
+        110   6D 00001180 ?ResetWritingDelay@IoChannel@@SAKXZ
+        111   6E 00006CC0 ?SendEchoJob@@YAHPEAVIoChannel@@KHH@Z
+        112   6F 00002C70 ?Set@SnmpChannel@@QEAAHJPEAU__MIDL___MIDL_itf_MissileSvr_0000_0002@@PEAJPEAPEAU__MIDL___MIDL_itf_MissileSvr_0000_0003@@@Z
+        113   70 000088A0 ?SetBiDiConfiguration@SnmpChannel@@QEAAHPEAD0KKKKK@Z
+        114   71 00003020 ?SetReadTimeout@IoChannel@@QEAAHK@Z
+        115   72 00002FC0 ?SetUDPMode@IoChannel@@QEAAHXZ
+        116   73 00002C70 ?SetUInt@SnmpChannel@@QEAAHJPEAU__MIDL___MIDL_itf_MissileSvr_0000_0002UInt@@PEAJPEAPEAU__MIDL___MIDL_itf_MissileSvr_0000_0003UInt@@@Z
+        117   74 00002810 ?Start@BiDiChannelProxy@@QEAAHXZ
+        118   75 00001760 ?Stop@BiDiChannelProxy@@QEAAHXZ
+        119   76 00008420 ?TimerGetUs@@YAKXZ
+        120   77 00009FE0 ?WClose@SnmpChannel@@UEAAJXZ
+        121   78 0000A000 ?WGet@SnmpChannel@@UEAAJJPEAU__MIDL___MIDL_itf_MissileSvr_0000_0001@@PEAJPEAPEAU__MIDL___MIDL_itf_MissileSvr_0000_0003@@@Z
+        122   79 0000A000 ?WGetNext@SnmpChannel@@UEAAJJPEAU__MIDL___MIDL_itf_MissileSvr_0000_0001@@PEAJPEAPEAU__MIDL___MIDL_itf_MissileSvr_0000_0003@@@Z
+        123   7A 0000A300 ?WOpen@SnmpChannel@@UEAAJPEA_W@Z
+        124   7B 0000A000 ?WSet@SnmpChannel@@UEAAJJPEAU__MIDL___MIDL_itf_MissileSvr_0000_0002@@PEAJPEAPEAU__MIDL___MIDL_itf_MissileSvr_0000_0003@@@Z
+        125   7C 00009E90 ?WSetBiDiConfiguration@SnmpChannel@@UEAAJPEA_W0KKKKK@Z
+        126   7D 000055C0 ?WaitForReadPermission@IoChannel@@AEAAXXZ
+        127   7E 00001300 ?Write@BiDiChannel@@QEAAHPEAEPEAKH@Z
+        128   7F 00005EB0 ?Write@IoChannel@@QEAAHPEAEPEAKH@Z
+        129   80 00001340 ?WriteEx@BiDiChannel@@QEAAHPEAEPEAKKH@Z
+        130   81 00006020 ?WriteEx@IoChannel@@QEAAHPEAEPEAKKH@Z
+        131   82 00002160 ?WritingProxyThread@BiDiChannelProxy@@CAKPEAX@Z
+        132   83 000014C0 BiDiChannelClose
+        133   84 00001470 BiDiChannelCreate
+        134   85 00001590 BiDiChannelDelete
+        135   86 00001190 BiDiChannelGetChannelHandle
+        136   87 000014A0 BiDiChannelInit
+        137   88 00001530 BiDiChannelIoctl
+        138   89 000014B0 BiDiChannelOpen
+        139   8A 00001E70 BiDiChannelProxyCreate
+        140   8B 000027E0 BiDiChannelProxyDelete
+        141   8C 00001EE0 BiDiChannelProxyGetChannelNumber
+        142   8D 00001ED0 BiDiChannelProxyGetPortNumber
+        143   8E 00001EB0 BiDiChannelProxyGetUrl
+        144   8F 00001EC0 BiDiChannelProxyGetUrlWithWebPage
+        145   90 00001EF0 BiDiChannelProxyLaunchApplication
+        146   91 00001F00 BiDiChannelProxyLaunchApplicationUrl
+        147   92 00002C40 BiDiChannelProxyStart
+        148   93 00001EA0 BiDiChannelProxyStop
+        149   94 00001500 BiDiChannelRead
+        150   95 00001510 BiDiChannelReadEx
+        151   96 000014D0 BiDiChannelWrite
+        152   97 000014E0 BiDiChannelWriteEx
+        153   98 000065D0 IoChannelClose
+        154   99 00005700 IoChannelCreate
+        155   9A 00007420 IoChannelDelete
+        156   9B 00006CB0 IoChannelGetDeviceId
+        157   9C 00007450 IoChannelGetDeviceIdPointer
+        158   9D 00007460 IoChannelGetListOfSupportedBiDiChannels
+        159   9E 000057A0 IoChannelGetMainNetworkAddress
+        160   9F 000010D0 IoChannelGetMaxReadIoctlBuffer
+        161   A0 000010D0 IoChannelGetMaxWriteIoctlBuffer
+        162   A1 00008280 IoChannelInit
+        163   A2 00008250 IoChannelInitAddress
+        164   A3 000081E0 IoChannelInitPort
+        165   A4 00008260 IoChannelInitPrinter
+        166   A5 00008270 IoChannelInitSerialNumber
+        167   A6 00005750 IoChannelIoctl
+        168   A7 00005730 IoChannelIsInit
+        169   A8 00005740 IoChannelIsOpen
+        170   A9 000010E0 IoChannelIsTcpIp
+        171   AA 00007470 IoChannelIsThisChannelSupported
+        172   AB 00005780 IoChannelIsUSB
+        173   AC 000065C0 IoChannelOpen
+        174   AD 00006CA0 IoChannelRead
+        175   AE 000065E0 IoChannelWrite
+        176   AF 0000A080 SnmpChannelClose
+        177   B0 0000A010 SnmpChannelCreate
+        178   B1 0000A800 SnmpChannelDelete
+        179   B2 0000A850 SnmpChannelGet
+        180   B3 0000A870 SnmpChannelGetNext
+        181   B4 00002C50 SnmpChannelGetNextUInt
+        182   B5 0000A830 SnmpChannelGetUInt
+        183   B6 0000A7D0 SnmpChannelOpen
+        184   B7 0000A7F0 SnmpChannelOpenAddress
+        185   B8 0000A7E0 SnmpChannelOpenPrinter
+        186   B9 00002C70 SnmpChannelSet
+        187   BA 0000A040 SnmpChannelSetBiDiConfiguration
+        188   BB 00002C70 SnmpChannelSetUInt
+        189   BC 0000A0E0 SnmpChannelWClose
+        190   BD 0000A0F0 SnmpChannelWGet
+        191   BE 0000A110 SnmpChannelWGetNext
+        192   BF 0000A0D0 SnmpChannelWOpen
+        193   C0 0000A130 SnmpChannelWSet
+        194   C1 0000A090 SnmpChannelWSetBiDiConfiguration
+
+  Summary
+
+        5000 .data
+        2000 .pdata
+        C000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       1C000 .text

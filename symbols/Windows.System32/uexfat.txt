@@ -1,0 +1,63 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\uexfat.dll
+
+File Type: DLL
+
+  Section contains the following exports for UEXFAT.dll
+
+    00000000 characteristics
+    652AE3EB time date stamp
+        0.00 version
+           1 ordinal base
+          35 number of functions
+          35 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00013F80 ??0CLUSTER_CHAIN@@QEAA@XZ
+          2    1 00010C90 ??0EXFATDIR@@QEAA@XZ
+          3    2 00011A70 ??0EXFAT_DIRENT@@QEAA@XZ
+          4    3 00002F50 ??0EXFAT_SA@@QEAA@XZ
+          5    4 00002460 ??0EXFAT_VOL@@QEAA@XZ
+          6    5 00013FD0 ??1CLUSTER_CHAIN@@UEAA@XZ
+          7    6 00010CE0 ??1EXFATDIR@@UEAA@XZ
+          8    7 00011AB0 ??1EXFAT_DIRENT@@UEAA@XZ
+          9    8 00003020 ??1EXFAT_SA@@UEAA@XZ
+         10    9 000024A0 ??1EXFAT_VOL@@UEAA@XZ
+         11    A 00014D10 ?AllocChain@FAT@@QEAAKPEAVEXFATBITMAP@@KPEAK@Z
+         16    B 00014FD0 ?FreeChain@FAT@@QEAAXPEAVEXFATBITMAP@@K@Z
+         18    C 00014000 ?Initialize@CLUSTER_CHAIN@@QEAAEPEAVMEM@@PEAVLOG_IO_DP_DRIVE@@PEAVEXFAT_SA@@PEBVFAT@@KKE@Z
+         19    D 00010D20 ?Initialize@EXFATDIR@@QEAAEPEAVHMEM@@PEAVLOG_IO_DP_DRIVE@@PEAVEXFAT_SA@@PEBVFAT@@K_KE@Z
+         20    E 00011AD0 ?Initialize@EXFAT_DIRENT@@QEAAEPEAVEXFAT_SA@@PEAXPEAVEXFATDIR@@K@Z
+         21    F 00003110 ?Initialize@EXFAT_SA@@QEAAEPEAVLOG_IO_DP_DRIVE@@PEAVMESSAGE@@@Z
+         22   10 000024E0 ?Initialize@EXFAT_VOL@@QEAA?AW4FORMAT_ERROR_CODE@@PEBVWSTRING@@PEAVMESSAGE@@EEW4_MEDIA_TYPE@@EE@Z
+         23   11 00014A60 ?QueryAllocatedClusters@FAT@@QEBAKXZ
+         24   12 00011BC0 ?QueryFileSize@EXFAT_DIRENT@@QEAA_JXZ
+         25   13 00014AD0 ?QueryLengthOfChain@FAT@@QEBAKKPEAK@Z
+         26   14 00014AA0 ?QueryNthCluster@FAT@@QEBAKKK@Z
+         27   15 00011B90 ?QueryStartingCluster@EXFAT_DIRENT@@QEAAKXZ
+         28   16 000142F0 ?Read@CLUSTER_CHAIN@@UEAAEXZ
+         29   17 00014370 ?ReadAndRecordBadSectors@CLUSTER_CHAIN@@QEAAEPEAVEXFATSECRUNBITMAP@@@Z
+         31   18 00011BD0 ?SetFileSize@EXFAT_DIRENT@@QEAAE_J@Z
+         32   19 00011BA0 ?SetStartingCluster@EXFAT_DIRENT@@QEAAEK@Z
+         33   1A 000132A0 ?VerifyAndFixPhase2@EXFAT_DIRENT@@QEAAEPEAVEXFATBITMAP@@0PEAVWSTRING@@EEEW4FIX_LEVEL@@PEAEPEAVMESSAGE@@@Z
+         34   1B 00014530 ?Write@CLUSTER_CHAIN@@UEAAEXZ
+         35   1C 000145B0 ?WriteAndSkipBadSectors@CLUSTER_CHAIN@@QEAAEXZ
+         12   1D 00001130 Chkdsk
+         13   1E 000012C0 ChkdskEx
+         14   1F 00001A00 Format
+         15   20 00001EE0 FormatEx
+         17   21 00001C20 GetFilesystemInformation
+         30   22 00002250 Recover
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        5000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       16000 .text

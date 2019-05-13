@@ -1,0 +1,90 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\vfpapi.dll
+
+File Type: DLL
+
+  Section contains the following exports for VFPAPI.dll
+
+    00000000 characteristics
+    F0AB6E4A time date stamp
+        0.00 version
+           1 ordinal base
+          62 number of functions
+          62 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00005760 MaskAddress
+          2    1 00001920 VfcAddObject
+          3    2 000019F0 VfcAddObjectSet
+          4    3 00003030 VfcBlockPort
+          5    4 00003080 VfcBlockPortOnRestore
+          6    5 00002690 VfcClearLayerActivePings
+          7    6 000029B0 VfcDeleteLayerMetadataKey
+          8    7 000040E0 VfcDepositNatRange
+          9    8 00004680 VfcDeregisterEvent
+         10    9 00004730 VfcDeregisterEventEx
+         11    A 00004F20 VfcDeserializeObjectsGlobal
+         12    B 00004EC0 VfcDeserializeObjectsOnPort
+         13    C 00004EF0 VfcDeserializeObjectsOnSwitch
+         14    D 000025E0 VfcDisablePingResponder
+         15    E 00002FE0 VfcDisablePort
+         16    F 00002530 VfcEnablePingResponder
+         17   10 00002F90 VfcEnablePort
+         18   11 00001A30 VfcForceAddObjectSet
+         19   12 00001EE0 VfcGetInformation
+         20   13 00002250 VfcGetLayerMetadataValue
+         21   14 00001270 VfcInitializeDescriptor
+         22   15 00003170 VfcInjectPacket
+         23   16 000031C0 VfcInjectPacketEx
+         24   17 00003230 VfcInterceptEvent
+         25   18 00003330 VfcInterceptEventEx
+         26   19 00003870 VfcInterceptEventEx2
+         27   1A 000038E0 VfcInterceptEventEx3
+         28   1B 00002740 VfcListLayerActivePings
+         29   1C 000024D0 VfcListLayerMetadataKeys
+         30   1D 00002500 VfcListLayerMetadataValues
+         31   1E 00001EA0 VfcListObject
+         32   1F 000045D0 VfcMappingEvent
+         33   20 00004A00 VfcMatchTupleAtLayer
+         34   21 00002BF0 VfcMonitoringPing
+         35   22 00004460 VfcNatEvent
+         36   23 00004530 VfcNatEventAsync
+         37   24 00001200 VfcOpenDevice
+         38   25 00004FA0 VfcPersistHostState
+         39   26 00002BA0 VfcPrepareForUninstall
+         40   27 00004A30 VfcProcessTuples
+         41   28 00001E70 VfcReleaseList
+         42   29 00002EC0 VfcRemoveAllObject
+         43   2A 000048E0 VfcRemoveMapping
+         44   2B 00004300 VfcRemoveNatRange
+         45   2C 00002DF0 VfcRemoveObject
+         46   2D 00004A60 VfcReplaceLayerFlowTableAddress
+         47   2E 00001A10 VfcReplaceObjectSet
+         48   2F 00001C70 VfcSampleFlowState
+         49   30 00004DD0 VfcSerializeObjectsGlobal
+         50   31 00004D50 VfcSerializeObjectsOnPort
+         51   32 00004D90 VfcSerializeObjectsOnSwitch
+         52   33 00003CA0 VfcSetGroupCondition
+         53   34 00003DE0 VfcSetGroupOption
+         54   35 00001F10 VfcSetInformation
+         55   36 00002770 VfcSetLayerMetadataValue
+         56   37 000020A0 VfcSetPortTraceFilters
+         57   38 00004FA0 VfcSetTraceFilteringState
+         58   39 000030D0 VfcUnblockPort
+         59   3A 00003120 VfcUnblockPortOnRestore
+         60   3B 00004130 VfcWithdrawNatRange
+         61   3C 00005440 VmsEnumeratePort
+         62   3D 00005100 VmsSendDeviceIoControl
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        6000 .text

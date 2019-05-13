@@ -1,0 +1,48 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\dfshim.dll
+
+File Type: DLL
+
+  Section contains the following exports for dfshim.dll
+
+    00000000 characteristics
+    2C54526A time date stamp
+        0.00 version
+           1 ordinal base
+          20 number of functions
+          20 number of names
+
+    ordinal hint RVA      name
+
+         17    0 000019B0 CleanOnlineAppCache
+          1    1 00004F30 CreateActContext
+          2    2 00004EB0 CreateCMSFromXml
+         18    3 00001070 DllCanUnloadNow
+         19    4 000010E0 DllGetClassObject
+          3    5 00004F90 GetCurrentActContext
+         20    6 00001A80 GetDeploymentDataFromManifest
+          4    7 00004DC0 GetUserStateManager
+          5    8 00004D50 GetUserStore
+          6    9 00001950 KillService
+          7    A 00001690 LaunchApplication
+          8    B 00004E30 ParseManifest
+          9    C 00001800 ShArpMaintain
+         10    D 000016B0 ShArpMaintainW
+         11    E 000014B0 ShOpenVerbApplication
+         12    F 00001490 ShOpenVerbApplicationW
+         13   10 000015B0 ShOpenVerbExtension
+         14   11 000014D0 ShOpenVerbExtensionW
+         15   12 00001360 ShOpenVerbShortcut
+         16   13 00001210 ShOpenVerbShortcutW
+
+  Summary
+
+        9000 .data
+        B000 .pdata
+       33000 .rdata
+        4000 .reloc
+        9000 .rsrc
+      131000 .text

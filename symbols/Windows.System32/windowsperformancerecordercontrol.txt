@@ -1,0 +1,39 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\windowsperformancerecordercontrol.dll
+
+File Type: DLL
+
+  Section contains the following exports for WindowsPerformanceRecorderControl.dll
+
+    00000000 characteristics
+    BC99F2BC time date stamp
+        0.00 version
+           1 ordinal base
+          11 number of functions
+          11 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00006FA0 DllCanUnloadNow
+          2    1 00006FD0 DllGetClassObject
+          3    2 00001800 DllRegisterServer
+          4    3 00001800 DllUnregisterServer
+          5    4 0005D440 WPRCControlLogging
+          6    5 0005BDE0 WPRCCreateInstance
+          7    6 0005BE10 WPRCCreateInstanceUnderInstanceName
+          8    7 0005C050 WPRCDisableBuiltinProfiles
+          9    8 0005D230 WPRCFormatError
+         10    9 0005BFC0 WPRCQueryBuiltInProfiles
+         11    A 0005D670 WPRCRemoveLogging
+
+  Summary
+
+        3000 .data
+        6000 .pdata
+       2E000 .rdata
+        2000 .reloc
+       57000 .rsrc
+       87000 .text

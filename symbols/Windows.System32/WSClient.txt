@@ -1,0 +1,59 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\WSClient.dll
+
+File Type: DLL
+
+  Section contains the following exports for WSClient.dll
+
+    00000000 characteristics
+    6C80F59D time date stamp
+        0.00 version
+           1 ordinal base
+          30 number of functions
+          30 number of names
+
+    ordinal hint RVA      name
+
+          2    0 000011F0 AcquireDeveloperLicense
+          3    1 00001280 CheckDeveloperLicense
+          4    2 00001010 GetApplicationURL
+          5    3 000010B0 RefreshBannedAppsList
+          6    4 00001240 RemoveDeveloperLicense
+          7    5 00001060 WSCallServer
+          8    6 00001090 WSCheckForConsumable
+          9    7 00001040 WSEvaluatePackage
+         10    8 00001090 WSGetEvaluatePackageAttempted
+         11    9 00001170 WSLicenseCleanUpState
+         12    A 00001040 WSLicenseClose
+         13    B 00001040 WSLicenseFilterValidAppCategoryIds
+         14    C 00001110 WSLicenseGetAllUserTokens
+         15    D 00001110 WSLicenseGetAllValidAppCategoryIds
+         16    E 00001110 WSLicenseGetDevInstalledApps
+         17    F 000011C0 WSLicenseGetExtendedUserInfo
+         18   10 000010E0 WSLicenseGetFeatureLicenseResults
+         19   11 00001140 WSLicenseGetLicensesForProducts
+         20   12 000012C0 WSLicenseGetOAuthServiceTicket
+         21   13 000010C0 WSLicenseGetProductLicenseResults
+         22   14 00001040 WSLicenseInstallLicense
+         23   15 00001020 WSLicenseOpen
+         24   16 00001040 WSLicenseRefreshLicense
+         25   17 00001180 WSLicenseRetrieveMachineID
+         26   18 00001040 WSLicenseRevokeLicenses
+         27   19 00001040 WSLicenseUninstallLicense
+         28   1A 00001170 WSNotifyOOBECompletion
+         29   1B 00001040 WSNotifyPackageInstalled
+         30   1C 00001170 WSTriggerOOBEFileValidation
+          1   1D 000010B0 WSpTLRW
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        1000 .text

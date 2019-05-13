@@ -1,0 +1,109 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\AppxAllUserStore.dll
+
+File Type: DLL
+
+  Section contains the following exports for AppXAllUserStore.dll
+
+    00000000 characteristics
+    F46EBC1D time date stamp
+        0.00 version
+           1 ordinal base
+          80 number of functions
+          80 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00013E80 AddDeprovisionedPackageMarking
+          2    1 000142F0 AddDownlevelInstalledPackageToRegistryStore
+          3    2 00014410 AddEndOfLifePackageMarking
+          4    3 00014450 AddEndOfLifePackageMarkingForAllUsers
+          5    4 00014490 AddPackageToPreinstalledAppsVolume
+          6    5 00014520 AddPackageToRegistryStore
+          7    6 00014610 AddStagedPackageToPreinstalledAppsVolume
+          8    7 00014700 AddStagedPackageToRegistryStore
+          9    8 000147F0 AddUpgradePackageToPreinstalledVolume
+         10    9 00014910 AddUpgradePackageToRegistryStore
+         11    A 00014A10 ApplyFrameworkPackageRootFolderACLs
+         12    B 00014A20 ApplyPackageRootFolderACLs
+         13    C 00014B50 ApplySharedFileACLs
+         14    D 00014B60 CheckPackagePreinstallPolicy
+         15    E 00014C80 CommitTakeOwnershipSession
+         16    F 00014CA0 DeleteAllPackagesFromMainPackageArray
+         17   10 00014DD0 DeleteAllPackagesFromPackageArray
+         18   11 00014E90 DeletePackageInfo
+         19   12 00014F10 DeleteUpdatedPackageKey
+         20   13 00014F20 DeleteUserRegistryKeyFromAllUserStore
+         21   14 00001CB0 DidAppSurviveOSUpgradeForUser
+         22   15 00015010 DoesPerUserStoreExist
+         23   16 00015130 FamilyMonikerStringToSid
+         24   17 00015210 FindExistingVersionInRegistryStore
+         25   18 00015270 FindFullNameForFamilyNameInAppxAllUserStore
+         26   19 000152D0 GetAllInboxPackages
+         27   1A 000152E0 GetAllNonInboxPackagesFromRegistryStore
+         28   1B 000153F0 GetAllPackagesToBeInstalledForSetupPhase
+         29   1C 00003E90 GetAllPackagesToBeInstalledForUser
+         30   1D 00015420 GetAllStagedPackagesForMainPackageFromRegistryStore
+         31   1E 00015540 GetAllUpdatedPackages
+         32   1F 00015550 GetAppxProvisionFactory
+         33   20 00015560 GetFoldersToKeepForPBR
+         34   21 00015650 GetOptionalPackageInfoForPackage
+         35   22 00015680 GetPackageOverrideSetupPhase
+         36   23 000157C0 GetPackageSetupPhase
+         37   24 00015840 GetPackagesThatMayNeedPreinstallPackageStatusMarked
+         38   25 00015870 GetUpgradePackageVolumeKey
+         39   26 00015890 HasCentennial
+         40   27 000158A0 HasStagedPackages
+         41   28 00015AB0 IsCleanupTaskComplete
+         42   29 00015BC0 IsEnterprisePolicyEnabled
+         43   2A 00001BD0 IsInboxPackage
+         44   2B 000019D0 IsNonInboxAllUserPackage
+         45   2C 00001AD0 IsNonInboxAllUserPackageSpecificPackage
+         46   2D 00015C00 IsPackageEndOfLife
+         47   2E 00015CA0 IsPackageFamilyInUninstallBlocklist
+         48   2F 00015CE0 IsPackageFamilyInUninstallBlocklistByPackageFullName
+         49   30 00015DC0 IsPackageInDownlevelInstalledKey
+         50   31 00015E10 IsPackageInEndOfLifeKey
+         51   32 00015ED0 IsPackageInStagedKey
+         52   33 00015F10 IsPackageInUpgradeKey
+         53   34 00015FB0 IsPackageInUsersUpgradeKey
+         54   35 00016060 IsPackageOnPreinstalledVolume
+         55   36 00016170 IsSystemInAuditBoot
+         56   37 00016180 MarkStatusOfMainPackageForUser
+         57   38 000305C0 PackageFamilyNameFromId
+         58   39 000162F0 PackageIdBasicFromFullName
+         59   3A 00016300 PackageSidToPackageCapabilitySid
+         60   3B 000163B0 RemoveDeprovisionedPackageMarking
+         61   3C 00016800 RemoveDownlevelInstalledPackagesFromRegistryStore
+         62   3D 00016910 RemoveEndOfLifePackageMarkingForAllUsers
+         63   3E 00016950 RemoveInboxInstalledStatusOfPackageForUser
+         64   3F 00016A00 RemovePackageFromRegistryStore
+         65   40 00016B10 RemovePackageFromRegistryStoreConfigIfExists
+         66   41 00016CA0 RemoveStagedPackageFromRegistryStore
+         67   42 00016DA0 RemoveStatusOfMainPackageForAllUsers
+         68   43 00016DE0 RemoveUpgradePackagesFromRegistryStore
+         69   44 00016EE0 RestoreDownlevelAllUserStore
+         70   45 00016F00 RollbackTakeOwnershipSession
+         71   46 00016FC0 SetAllUserStorePathForTest
+         72   47 00016FE0 SetPackageOverrideSetupPhase
+         73   48 00017140 SetTargetOsVersionOnPreinstalledVolume
+         74   49 00017200 TakeOwnershipOnFolder
+         75   4A 00017350 TryGetDownlevelInstalledPackageFullName
+         76   4B 000173A0 TryGetEndOfLifePackageFullName
+         77   4C 000173F0 UpdateFrameworkPackageInRegistryStore
+         78   4D 000174C0 UpdatePackageInRegistryStore
+         79   4E 00017740 UpdatePackageSetupPhase
+         80   4F 00001440 UpdateUpgradePackageInRegistryStore
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        4000 .pdata
+       14000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       3D000 .text

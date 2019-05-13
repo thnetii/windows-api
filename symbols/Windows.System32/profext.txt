@@ -1,0 +1,50 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\profext.dll
+
+File Type: DLL
+
+  Section contains the following exports for PROFEXT.dll
+
+    00000000 characteristics
+    260851F2 time date stamp
+        0.00 version
+           1 ordinal base
+          21 number of functions
+          21 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00004390 CreateAppContainerProfileWorker
+          2    1 000180B0 CreateDirectoryJunctionsForSystemWorker
+          3    2 00018500 CreateDirectoryJunctionsForUserProfileWorker
+          4    3 000199C0 CreateGroupExWorker
+          5    4 00019C70 CreateLinkFileExWorker
+          6    5 000117E0 DeleteAppContainerProfileWorker
+          7    6 0001A350 DeleteGroupWorker
+          8    7 0001A850 DeleteLinkFileWorker
+          9    8 00006B80 DeriveAppContainerSidFromAppContainerNameWorker
+         10    9 00005DB0 DeriveRestrictedAppContainerSidFromAppContainerSidAndRestrictedNameWorker
+         11    A 00006A20 GetAppContainerFolderPathWorker
+         12    B 00005E10 GetAppContainerRegistryLocationWorker
+         13    C 00003920 IsAppContainerProfilePresentWorker
+         14    D 000137D0 LookupAppContainerDisplayNameWorker
+         15    E 00019390 ProcessGroupPolicyCompletedExWorker
+         16    F 000193F0 ProcessGroupPolicyCompletedWorker
+         17   10 00019440 RsopAccessCheckByTypeWorker
+         18   11 00019500 RsopFileAccessCheckWorker
+         19   12 00019570 RsopResetPolicySettingStatusWorker
+         20   13 000195C0 RsopSetPolicySettingStatusWorker
+         21   14 00003A30 UpdateAppContainerProfileWorker
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        2000 .pdata
+        B000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       1B000 .text

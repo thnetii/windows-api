@@ -1,0 +1,63 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\WMASF.DLL
+
+File Type: DLL
+
+  Section contains the following exports for WMASF.DLL
+
+    00000000 characteristics
+    ACD5FA49 time date stamp
+        0.00 version
+           5 ordinal base
+          35 number of functions
+          35 number of names
+
+    ordinal hint RVA      name
+
+         15    0 00034B30 ASFAddPresDelta
+         16    1 00034B80 ASFAddSendDelta
+         20    2 00034A30 ASFCalculatePresDelta
+         21    3 00002EB0 ASFCreateBitrateTracker
+         23    4 00002EB0 ASFCreateIOMonitor
+         13    5 00034DE0 ASFCreateIndexMaker
+         14    6 00036260 ASFCreateIndexMakerFileSink
+          5    7 00036C80 ASFCreateLibrary
+         25    8 00037CB0 ASFCreateMediaObjectIndexMaker
+         26    9 00039280 ASFCreateStreamSelector
+          9    A 00036FF0 ASFFindHeaderObject
+         10    B 00037440 ASFFindRootObject
+         11    C 00037960 ASFFindStreamPropertiesObject
+         17    D 000412B0 ASFGUIDFromCodecID
+         18    E 000412D0 ASFGUIDToCodecID
+         24    F 00002EB0 ASFGetDataUnitInfo
+          6   10 00036D20 ASFGetHeaderObject
+          7   11 00037230 ASFGetRootObject
+          8   12 000375F0 ASFGetStreamPropertiesObject
+         27   13 000341A0 ASFGetTimeBase
+         28   14 00034300 ASFPresDeltaTimeToTime
+         29   15 00034860 ASFPresDeltaToFull
+         30   16 000348B0 ASFPresFullToDelta
+         31   17 00034810 ASFPresTimeToSendTime
+         32   18 00034230 ASFPresTimeToTime
+         19   19 00002EB0 ASFReadHeaderFromFile
+         33   1A 00036820 ASFReadHeaderFromFileHandle
+         34   1B 000347D0 ASFSendTimeToPresTime
+         35   1C 00034290 ASFSendTimeToTime
+         36   1D 00002EB0 ASFSetDataUnitInfo
+         37   1E 00034700 ASFTimeToPresDeltaTime
+         38   1F 00034360 ASFTimeToPresTime
+         39   20 00034520 ASFTimeToSendTime
+         22   21 00002EB0 ASFWriteHeaderToFile
+         12   22 00002730 CreateAsfCellPoolAllocator
+
+  Summary
+
+        1000 .data
+        3000 .pdata
+        8000 .rdata
+        2000 .reloc
+        1000 .rsrc
+       45000 .text

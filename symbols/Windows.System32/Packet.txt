@@ -1,0 +1,60 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\Packet.dll
+
+File Type: DLL
+
+  Section contains the following exports for packet.dll
+
+    00000000 characteristics
+    513004B8 time date stamp Fri Mar  1 02:30:32 2013
+        0.00 version
+           1 ordinal base
+          32 number of functions
+          32 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00005060 PacketAllocatePacket
+          2    1 00004FE0 PacketCloseAdapter
+          3    2 00005080 PacketFreePacket
+          4    3 00005B80 PacketGetAdapterNames
+          5    4 00006040 PacketGetAirPcapHandle
+          6    5 00004CD0 PacketGetDriverVersion
+          7    6 00005D90 PacketGetNetInfoEx
+          8    7 00005F90 PacketGetNetType
+          9    8 000056E0 PacketGetReadEvent
+         10    9 000058B0 PacketGetStats
+         11    A 00005950 PacketGetStatsEx
+         12    B 00004CC0 PacketGetVersion
+         13    C 000050B0 PacketInitPacket
+         14    D 00005660 PacketIsDumpEnded
+         15    E 0001A6A0 PacketLibraryVersion
+         16    F 00004DC0 PacketOpenAdapter
+         17   10 000050D0 PacketReceivePacket
+         18   11 00005A10 PacketRequest
+         19   12 00005180 PacketSendPacket
+         20   13 000051E0 PacketSendPackets
+         21   14 000057D0 PacketSetBpf
+         22   15 00005760 PacketSetBuff
+         23   16 00005600 PacketSetDumpLimits
+         24   17 00005470 PacketSetDumpName
+         25   18 00005A70 PacketSetHwFilter
+         26   19 00005850 PacketSetLoopbackBehavior
+         27   1A 000053A0 PacketSetMinToCopy
+         28   1B 00005410 PacketSetMode
+         29   1C 000056F0 PacketSetNumWrites
+         30   1D 00005740 PacketSetReadTimeout
+         31   1E 000058A0 PacketSetSnapLen
+         32   1F 00004CE0 PacketStopDriver
+
+  Summary
+
+        4000 .data
+        2000 .pdata
+        5000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       11000 .text

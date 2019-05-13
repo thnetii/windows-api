@@ -1,0 +1,92 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\HPZipr12.dll
+
+File Type: DLL
+
+  Section contains the following exports for HPZIPR12.dll
+
+    00000000 characteristics
+    57612F9E time date stamp Wed Jun 15 12:36:14 2016
+        0.00 version
+           1 ordinal base
+          65 number of functions
+          65 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0000586C CloseOsDevice
+          2    1 00005800 GetOsDevVersion
+          3    2 00007C9C IsPMLServiceRunning
+          4    3 0000580C OpenOsDevice
+          5    4 00005D1C PMLAcknowledgeWaitActivityBroadcast
+          6    5 00005AAC PMLActivityBroadcast
+          7    6 00007C70 PMLActualDeInit
+          8    7 00007C44 PMLActualInit
+          9    8 00005F28 PMLDeviceId
+         10    9 00007B88 PMLDisableNotification
+         11    A 00007A30 PMLDisableNotificationEx
+         12    B 000079BC PMLEnableNotification
+         13    C 00007998 PMLEnableNotificationEx
+         14    D 00007840 PMLEnableNotificationEx2
+         15    E 00007C18 PMLGetErrorDetails
+         16    F 000071A8 PMLGetNextMultiObjectValuesEx
+         17   10 00006F88 PMLGetNextObjectValueEx
+         18   11 00007508 PMLGetObjectValue
+         19   12 00006DB0 PMLGetObjectValueEx
+         20   13 0000589C PMLInitRtlProcs
+         21   14 00007BEC PMLMakeSetXferSyntax
+         22   15 00005B6C PMLReStartWaitActivityBroadcast
+         23   16 00006D0C PMLReadTrap
+         24   17 00006B1C PMLReadTrapEx
+         25   18 000065A0 PMLRegister
+         26   19 00006684 PMLRegisterByName
+         27   1A 00006058 PMLRegisterEx
+         28   1B 00005D70 PMLSetConfig
+         29   1C 00005700 PMLSetDriverType
+         30   1D 00007788 PMLSetObjectValue
+         31   1E 000075A4 PMLSetObjectValueEx
+         32   1F 00006A80 PMLUnRegister
+         33   20 00006934 PMLUnRegisterEx
+         34   21 0000586C _CloseOsDevice@4
+         35   22 00005800 _GetOsDevVersion@0
+         36   23 0000580C _OpenOsDevice@8
+         37   24 00005D1C _PMLAcknowledgeWaitActivityBroadcast@12
+         38   25 00005AAC _PMLActivityBroadcast@12
+         39   26 00007C70 _PMLActualDeInit@4
+         40   27 00007C44 _PMLActualInit@0
+         41   28 00005F28 _PMLDeviceId@20
+         42   29 00007B88 _PMLDisableNotification@12
+         43   2A 00007A30 _PMLDisableNotificationEx@16
+         44   2B 000079BC _PMLEnableNotification@16
+         45   2C 00007840 _PMLEnableNotificationEx2@24
+         46   2D 00007998 _PMLEnableNotificationEx@20
+         47   2E 00007C18 _PMLGetErrorDetails@12
+         48   2F 000071A8 _PMLGetNextMultiObjectValuesEx@40
+         49   30 00006F88 _PMLGetNextObjectValueEx@36
+         50   31 00007508 _PMLGetObjectValue@28
+         51   32 00006DB0 _PMLGetObjectValueEx@32
+         52   33 0000589C _PMLInitRtlProcs@12
+         53   34 00007BEC _PMLMakeSetXferSyntax@28
+         54   35 00005B6C _PMLReStartWaitActivityBroadcast@20
+         55   36 00006D0C _PMLReadTrap@24
+         56   37 00006B1C _PMLReadTrapEx@32
+         57   38 000065A0 _PMLRegister@20
+         58   39 00006684 _PMLRegisterByName@24
+         59   3A 00006058 _PMLRegisterEx@24
+         60   3B 00005D70 _PMLSetConfig
+         61   3C 00005700 _PMLSetDriverType@4
+         62   3D 00007788 _PMLSetObjectValue@36
+         63   3E 000075A4 _PMLSetObjectValueEx@40
+         64   3F 00006A80 _PMLUnRegister@4
+         65   40 00006934 _PMLUnRegisterEx@8
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        1000 .reloc
+        1000 .rsrc
+        B000 .text

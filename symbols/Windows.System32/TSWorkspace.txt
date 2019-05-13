@@ -1,0 +1,43 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\TSWorkspace.dll
+
+File Type: DLL
+
+  Section contains the following exports for tsworkspace.dll
+
+    00000000 characteristics
+    24EA0BB4 time date stamp
+        0.00 version
+           1 ordinal base
+          15 number of functions
+          15 number of names
+
+    ordinal hint RVA      name
+
+          3    0 000030A0 CreateClaimsAuthResponseHeader
+         12    1 000022A0 DllCanUnloadNow
+         13    2 000022D0 DllGetClassObject
+         14    3 00002370 DllRegisterServer
+         15    4 00002510 DllUnregisterServer
+          5    5 0000BF60 RADCProcessGroupPolicyEx
+          2    6 00002E10 RADCUISupportCreateDiscoveryStrategy
+          1    7 00002E00 RADCUISupportCreateSubscriptionClient
+          7    8 00002760 TaskUpdateWorkspaces
+          6    9 00002BB0 TaskUpdateWorkspaces2
+          8    A 000028D0 TaskUpdateWorkspacesIfNeeded
+          4    B 00002ED0 TryParseClaimsAuthnHeader
+          9    C 00002D40 WorkspaceSilentSetupW
+         11    D 00002A40 WorkspaceStatusNotify
+         10    E 00002CE0 WorkspaceStatusNotify2
+
+  Summary
+
+        5000 .data
+        7000 .pdata
+       45000 .rdata
+        2000 .reloc
+       23000 .rsrc
+       B7000 .text

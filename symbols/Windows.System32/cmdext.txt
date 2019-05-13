@@ -1,0 +1,43 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\cmdext.dll
+
+File Type: DLL
+
+  Section contains the following exports for CMDEXT.dll
+
+    00000000 characteristics
+    193E4FBE time date stamp
+        0.00 version
+           1 ordinal base
+          14 number of functions
+          14 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001180 CmdBatNotificationStub
+          2    1 000023F0 DoSHChangeNotify
+          3    2 00002400 FindFirstStreamWStub
+          4    3 00002410 FindNextStreamWStub
+          5    4 00002420 GetBinaryTypeWStub
+          6    5 00002430 GetVDMCurrentDirectoriesStub
+          7    6 00002440 LookupAccountSidWStub
+          8    7 00002450 MessageBeepStub
+          9    8 00002460 QueryFullProcessImageNameWStub
+         10    9 000010B0 SaferWorker
+         11    A 00002470 ShellExecuteWorker
+         12    B 000025A0 WNetAddConnection2WStub
+         13    C 000025B0 WNetCancelConnection2WStub
+         14    D 000025C0 WNetGetConnectionWStub
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        4000 .text

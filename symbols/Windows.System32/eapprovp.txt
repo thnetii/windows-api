@@ -1,0 +1,36 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\eapprovp.dll
+
+File Type: DLL
+
+  Section contains the following exports for eapprovp.dll
+
+    00000000 characteristics
+    B0CF9AF9 time date stamp
+        0.00 version
+           1 ordinal base
+           7 number of functions
+           7 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000031D0 EapProvPlugGetInfo
+          2    1 00001C70 EapProvPluginDeinitialize
+          3    2 00001AD0 EapProvPluginInitialize
+          4    3 00001D90 EapProvPluginTestForAuthenticatingWlanInterfaces
+          5    4 00003020 EapProvPluginWlanCloseHandle
+          6    5 00002F50 EapProvPluginWlanOpenHandle
+          7    6 000030D0 EapProvPluginWlanRegisterNotification
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        5000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        7000 .text

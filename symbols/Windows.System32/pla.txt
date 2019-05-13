@@ -1,0 +1,44 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\pla.dll
+
+File Type: DLL
+
+  Section contains the following exports for PLA.dll
+
+    00000000 characteristics
+    4DDCA2B0 time date stamp
+        0.00 version
+           1 ordinal base
+          15 number of functions
+          15 number of names
+
+    ordinal hint RVA      name
+
+          3    0 00006E00 DllCanUnloadNow
+          4    1 00006E20 DllGetClassObject
+          5    2 00001230 DllRegisterServer
+          6    3 00001230 DllUnregisterServer
+          7    4 0011BED0 PlaDeleteReport
+          8    5 000F99A0 PlaExpandTaskArguments
+          9    6 0011C020 PlaExtractCabinet
+         10    7 000D62E0 PlaGetLegacyAlertActionsFlagsFromString
+         11    8 000D6750 PlaGetLegacyAlertActionsStringFromFlags
+         12    9 00037380 PlaGetServerCapabilities
+         13    A 000FAB50 PlaHost
+         14    B 000070C0 PlaServer
+         15    C 0000AD00 PlaUpgrade
+          1    D 00007A10 ServiceMain
+          2    E 00007E80 SvchostPushServiceGlobals
+
+  Summary
+
+        3000 .data
+        1000 .didat
+        5000 .pdata
+       27000 .rdata
+        2000 .reloc
+        E000 .rsrc
+      12C000 .text

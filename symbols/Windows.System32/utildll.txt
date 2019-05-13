@@ -1,0 +1,64 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\utildll.dll
+
+File Type: DLL
+
+  Section contains the following exports for UTILDLL.dll
+
+    00000000 characteristics
+    8990403B time date stamp
+        0.00 version
+           1 ordinal base
+          36 number of functions
+          36 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00002270 AsyncDeviceEnumerate
+          2    1 00001010 CachedGetUserFromSid
+          3    2 000025C0 CalculateDiffTime
+          4    3 000025E0 CalculateElapsedTime
+          5    4 000028A0 CompareElapsedTime
+          6    5 000028F0 ConfigureModem
+          7    6 00002A40 CtxGetAnyDCName
+          8    7 00002BB0 CurrentDateTimeString
+          9    8 00002D40 DateTimeString
+         10    9 00002FC0 ElapsedTimeString
+         11    A 00003110 EnumerateMultiUserServers
+         12    B 000038C0 FormDecoratedAsyncDeviceName
+         13    C 00003900 GetAssociatedPortName
+         14    D 000039F0 GetSystemMessageA
+         15    E 00003A90 GetSystemMessageW
+         16    F 00003C90 GetUnknownString
+         17   10 00003CF0 GetUserFromSid
+         18   11 00003ED0 HaveAnonymousUsersChanged
+         19   12 00003FE0 InitializeAnonymousUserCompareList
+         20   13 00004030 InstallModem
+         21   14 00004130 IsPartOfDomain
+         22   15 000041E0 NetBIOSDeviceEnumerate
+         23   16 00004510 NetworkDeviceEnumerate
+         24   17 00004720 ParseDecoratedAsyncDeviceName
+         25   18 000047D0 QueryCurrentWinStation
+         26   19 000048F0 RegGetNetworkDeviceName
+         27   1A 00004ED0 RegGetNetworkServiceName
+         28   1B 00005360 SetupAsyncCdConfig
+         29   1C 000053D0 StandardErrorMessage
+         30   1D 000056E0 StrAsyncConnectState
+         31   1E 00005740 StrConnectState
+         32   1F 000058B0 StrProcessState
+         33   20 00005920 StrSdClass
+         34   21 00005A30 StrSystemWaitReason
+         35   22 00005DC0 TestUserForAdmin
+         36   23 00005E80 WinEnumerateDevices
+
+  Summary
+
+        B000 .data
+        1000 .pdata
+        3000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        6000 .text

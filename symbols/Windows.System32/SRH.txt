@@ -1,0 +1,55 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\SRH.dll
+
+File Type: DLL
+
+  Section contains the following exports for SRH.dll
+
+    00000000 characteristics
+     28B9643 time date stamp
+        0.00 version
+           1 ordinal base
+          26 number of functions
+          26 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00022DD0 CreateAndEnqueueNarratorCommandEvent
+          2    1 0000C380 DllCanUnloadNow
+          3    2 0000C3B0 DllGetClassObject
+          4    3 0000C230 DllMain
+          5    4 000230E0 ExecuteNarratorFind
+          6    5 000230D0 GetControlAndState
+          7    6 00023060 GetInputLearningHelper
+          8    7 00023010 IgnoreLeaksInCurrentlyTrackedMemory
+          9    8 00022440 Initialize
+         10    9 00023040 IsIgnoringLeaks
+         11    A 00022FE0 PostTestCheckForLeaks
+         12    B 000222E0 RunNarrator
+         13    C 00022B80 SetBrailleBlinkingCursor
+         14    D 00022AE0 SetBrailleCursorRepresentation
+         15    E 00022A50 SetBrailleDeviceChangeFromReg
+         16    F 00022860 SetBrailleIsEnabledFromReg
+         17   10 000229C0 SetBrailleTablesFromReg
+         18   11 000227B0 SetDictationRunning
+         19   12 00022690 SetFastKeyEntryEnabled
+         20   13 00022750 SetFollowInsertion
+         21   14 000226F0 SetReadHints
+         22   15 000225E0 SetVoicePropertiesFromReg
+         23   16 0000B910 StartIgnoringLeaks
+         24   17 0000B910 StopIgnoringLeaks
+         25   18 00022FB0 UpdateErrorLoggingCallback
+         26   19 00022C20 UpdateNarratorSettingsFromReg
+
+  Summary
+
+        D000 .data
+        1000 .didat
+       16000 .pdata
+       B7000 .rdata
+        6000 .reloc
+       BC000 .rsrc
+      201000 .text

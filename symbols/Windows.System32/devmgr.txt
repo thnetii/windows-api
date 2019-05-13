@@ -1,0 +1,52 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\devmgr.dll
+
+File Type: DLL
+
+  Section contains the following exports for DEVMGR.DLL
+
+    00000000 characteristics
+    4C7E028B time date stamp
+        0.00 version
+           5 ordinal base
+          23 number of functions
+          23 number of names
+
+    ordinal hint RVA      name
+
+         17    0 00030930 DeviceAdvancedPropertiesA
+         18    1 000309F0 DeviceAdvancedPropertiesW
+         19    2 00037620 DeviceCreateHardwarePage
+         25    3 00037640 DeviceCreateHardwarePageCustom
+         20    4 00037750 DeviceCreateHardwarePageEx
+          9    5 00030AA0 DeviceManager_ExecuteA
+         10    6 00030AA0 DeviceManager_ExecuteW
+         11    7 00030B30 DeviceProblemTextA
+         12    8 00030C70 DeviceProblemTextW
+         13    9 00030C90 DeviceProblemWizardA
+         14    A 00030D60 DeviceProblemWizardW
+         23    B 00030E10 DeviceProblenWizard_RunDLLA
+         24    C 00030EC0 DeviceProblenWizard_RunDLLW
+          7    D 00030F60 DevicePropertiesA
+         21    E 00031040 DevicePropertiesExA
+         22    F 00031130 DevicePropertiesExW
+          8   10 000311F0 DevicePropertiesW
+          5   11 000312C0 DeviceProperties_RunDLLA
+          6   12 00031370 DeviceProperties_RunDLLW
+         15   13 00006800 DllCanUnloadNow
+         16   14 00004FA0 DllGetClassObject
+         26   15 0000C180 DllRegisterServer
+         27   16 0000C190 DllUnregisterServer
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        4000 .pdata
+       1C000 .rdata
+        1000 .reloc
+       6B000 .rsrc
+       3F000 .text

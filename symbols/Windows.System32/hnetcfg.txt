@@ -1,0 +1,43 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\hnetcfg.dll
+
+File Type: DLL
+
+  Section contains the following exports for HNetCfg.dll
+
+    00000000 characteristics
+    EB5EBA39 time date stamp
+        0.00 version
+           1 ordinal base
+          14 number of functions
+          14 number of names
+
+    ordinal hint RVA      name
+
+          4    0 0000AEF0 DllCanUnloadNow
+          5    1 0000AF30 DllGetClassObject
+          6    2 000013A0 DllRegisterServer
+          7    3 000013A0 DllUnregisterServer
+          1    4 0000C2E0 HNetDeleteRasConnection
+          2    5 00027C10 HNetFreeSharingServicesPage
+          8    6 00026AA0 HNetGetFirewallSettingsPage
+          3    7 00027D50 HNetGetSharingServicesPage
+          9    8 0002C1A0 HNetSharedAccessSettingsDlg
+         10    9 0002C340 HNetSharingAndFirewallSettingsDlg
+         11    A 00020300 RegisterClassObjects
+         12    B 00020470 ReleaseSingletons
+         13    C 00020540 RevokeClassObjects
+         14    D 0000C670 WinBomConfigureWindowsFirewall
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        3000 .pdata
+       1C000 .rdata
+        2000 .reloc
+        8000 .rsrc
+       3A000 .text

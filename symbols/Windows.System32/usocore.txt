@@ -1,0 +1,42 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\usocore.dll
+
+File Type: DLL
+
+  Section contains the following exports for USOCore.dll
+
+    00000000 characteristics
+    22F9BFCC time date stamp
+        0.00 version
+           1 ordinal base
+          13 number of functions
+          13 number of names
+
+    ordinal hint RVA      name
+
+         12    0 00005380 DllCanUnloadNow
+         13    1 000053A0 DllGetClassObject
+          1    2 000064B0 EnableUpdateLogging
+          2    3 0001A500 GetDefaultConfiguration
+          3    4 00019660 GetNextAcceptableTime
+          4    5 00019840 GetNextAcceptableTimeEx
+          5    6 00019D80 GetSmartActiveHours
+          6    7 0001DBB0 GetSmartBusyCheckVelocityFeature
+          7    8 0001A1E0 GetTimeIntervalConfidence
+          8    9 0001E070 GetUserActivityPrediction
+          9    A 0001E270 GetUserActivityPredictionEx
+         10    B 00007620 ServiceMain
+         11    C 000071E0 SvchostPushServiceGlobals
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        7000 .pdata
+       3B000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       95000 .text

@@ -1,0 +1,40 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\MapsBtSvc.dll
+
+File Type: DLL
+
+  Section contains the following exports for mapsbtsvc.dll
+
+    00000000 characteristics
+    11191877 time date stamp
+        0.00 version
+           1 ordinal base
+          12 number of functions
+          12 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001DA0 MapsBackgroundTransferClassFactory_Register
+          2    1 00001EE0 MapsBackgroundTransferClassFactory_Revoke
+          3    2 000028B0 MapsBackgroundTransferService_CreateOrFindJob
+          4    3 00002720 MapsBackgroundTransferService_FreeJob
+          5    4 00003BD0 MapsBackgroundTransferService_GetIsAnyJobWaiting
+          6    5 00003500 MapsBackgroundTransferService_RegisterCallbacks
+          7    6 00003B70 MapsBackgroundTransferService_SetNetworkCostPolicy
+          8    7 00003B10 MapsBackgroundTransferService_SetPowerPolicy
+          9    8 00003AB0 MapsBackgroundTransferService_SetPriority
+         12    9 00001540 MapsBackgroundTransferService_SetServiceCallbacks
+         10    A 00003D20 MapsBackgroundTransferService_TakeBitsSnapshot
+         11    B 000036B0 MapsBackgroundTransferService_UnregisterCallbacks
+
+  Summary
+
+        1000 .data
+        2000 .pdata
+        A000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       17000 .text

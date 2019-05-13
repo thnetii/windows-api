@@ -1,0 +1,41 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\mssecuser.dll
+
+File Type: DLL
+
+  Section contains the following exports for MSSECUSER.dll
+
+    00000000 characteristics
+     37C4F78 time date stamp
+        0.00 version
+           1 ordinal base
+          13 number of functions
+          13 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00002A30 SecClearRegistryOperations
+          2    1 00002530 SecCreateSessionFilter
+          3    2 000025D0 SecDeleteSessionFilter
+          4    3 00002450 SecGetDriverVersion
+          5    4 00002120 SecGetFileHashes
+          6    5 00002620 SecGetProcessInfo
+          7    6 00002500 SecGetUserLibVersion
+          8    7 000024C0 SecIsKernelIntegrityEnabled
+          9    8 00001A60 SecRegisterConsumer
+         10    9 0000A020 SecSetConfiguration
+         11    A 000029D0 SecSetRegistryOperations
+         12    B 00001C10 SecUnregisterConsumer
+         13    C 000027B0 SecWriteFileEA
+
+  Summary
+
+        2000 .data
+        1000 .pdata
+        8000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        C000 .text

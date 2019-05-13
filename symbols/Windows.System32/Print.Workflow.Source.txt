@@ -1,0 +1,40 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\Print.Workflow.Source.dll
+
+File Type: DLL
+
+  Section contains the following exports for Print.Workflow.Source.dll
+
+    00000000 characteristics
+    E5FACAD4 time date stamp
+        0.00 version
+           1 ordinal base
+          11 number of functions
+          11 number of names
+
+    ordinal hint RVA      name
+
+         11    0 00004850 DllCanUnloadNow
+          1    1 000092A0 WfpAbortSession
+          2    2 00009410 WfpCloseSession
+          3    3 00007EC0 WfpCreateWorkflowSession
+          4    4 00008550 WfpGetOutputFileName
+          5    5 00008FC0 WfpGetWorkFlowStream
+          6    6 00008C80 WfpSetJobInfo
+          7    7 00008320 WfpSetOutputFileName
+          8    8 000086B0 WfpSetPrintTicket
+          9    9 00008E60 WfpSetXpsDataType
+         10    A 00009120 WfpWaitforJobCompletion
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        6000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        C000 .text

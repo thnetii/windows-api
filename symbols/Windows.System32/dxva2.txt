@@ -1,0 +1,67 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\dxva2.dll
+
+File Type: DLL
+
+  Section contains the following exports for dxva2.dll
+
+    00000000 characteristics
+    5CAA72CD time date stamp
+        0.00 version
+           1 ordinal base
+          38 number of functions
+          38 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0000E4D0 CapabilitiesRequestAndCapabilitiesReply
+          2    1 00003930 DXVA2CreateDirect3DDeviceManager9
+          3    2 000039F0 DXVA2CreateVideoService
+          4    3 00011B90 DXVAHD_CreateDevice
+          5    4 0000EA30 DegaussMonitor
+          6    5 0000F520 DestroyPhysicalMonitor
+          7    6 0000F550 DestroyPhysicalMonitors
+          8    7 0000E570 GetCapabilitiesStringLength
+          9    8 0000EA50 GetMonitorBrightness
+         10    9 0000EA80 GetMonitorCapabilities
+         11    A 0000EB20 GetMonitorColorTemperature
+         12    B 0000EBC0 GetMonitorContrast
+         13    C 0000EBF0 GetMonitorDisplayAreaPosition
+         14    D 0000EC50 GetMonitorDisplayAreaSize
+         15    E 0000ECB0 GetMonitorRedGreenOrBlueDrive
+         16    F 0000ED10 GetMonitorRedGreenOrBlueGain
+         17   10 0000ED70 GetMonitorTechnologyType
+         18   11 000017D0 GetNumberOfPhysicalMonitorsFromHMONITOR
+         19   12 0000F5D0 GetNumberOfPhysicalMonitorsFromIDirect3DDevice9
+         20   13 0000F630 GetPhysicalMonitorsFromHMONITOR
+         21   14 0000F660 GetPhysicalMonitorsFromIDirect3DDevice9
+         22   15 0000E600 GetTimingReport
+         23   16 0000E690 GetVCPFeatureAndVCPFeatureReply
+         24   17 00010900 OPMGetVideoOutputForTarget
+         25   18 00001220 OPMGetVideoOutputsFromHMONITOR
+         26   19 00010A20 OPMGetVideoOutputsFromIDirect3DDevice9Object
+         27   1A 0000EE20 RestoreMonitorFactoryColorDefaults
+         28   1B 0000EE40 RestoreMonitorFactoryDefaults
+         29   1C 0000EE60 SaveCurrentMonitorSettings
+         30   1D 0000E750 SaveCurrentSettings
+         31   1E 0000EE70 SetMonitorBrightness
+         32   1F 0000EE80 SetMonitorColorTemperature
+         33   20 0000EF10 SetMonitorContrast
+         34   21 0000EF20 SetMonitorDisplayAreaPosition
+         35   22 0000EF70 SetMonitorDisplayAreaSize
+         36   23 0000EFC0 SetMonitorRedGreenOrBlueDrive
+         37   24 0000F010 SetMonitorRedGreenOrBlueGain
+         38   25 0000E7D0 SetVCPFeature
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        2000 .pdata
+        4000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       17000 .text

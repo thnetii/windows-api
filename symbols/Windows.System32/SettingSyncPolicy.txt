@@ -1,0 +1,48 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\SettingSyncPolicy.dll
+
+File Type: DLL
+
+  Section contains the following exports for SETTINGSYNCPOLICY.dll
+
+    00000000 characteristics
+    84EA2BA8 time date stamp
+        0.00 version
+           3 ordinal base
+          19 number of functions
+          19 number of names
+
+    ordinal hint RVA      name
+
+         11    0 0000CAD0 SettingSync_AlwaysQuiescePackages
+          8    1 0000CAE0 SettingSync_CreateDirectory
+         20    2 00001280 SettingSync_GetAccountForCollectionPolicy
+         14    3 0000CB00 SettingSync_GetApplicationVersion
+         19    4 0000CC40 SettingSync_GetLocalBackupPath
+          3    5 00002670 SettingSync_IsAllowedByGroupPolicy
+          9    6 00002360 SettingSync_IsAppDataBackupRestoreEnabled
+         10    7 00002360 SettingSync_IsAppDataConsistencyMonitorEnabled
+         21    8 00002360 SettingSync_IsBackupRestoreEnabled
+          5    9 0000CD40 SettingSync_IsCollectionAllowedToSync
+          7    A 0000CAD0 SettingSync_IsCollectionPermittedToUploadOrDownload
+         16    B 00002360 SettingSync_IsPrerelease
+          4    C 0000CAD0 SettingSync_IsSyncAllowedOnCurrentNetwork
+         15    D 0000CAD0 SettingSync_IsTelemetryEnabled
+         17    E 0000CD90 SettingSync_RegisterForPackageLifeCycleNotification
+          6    F 0000CDA0 SettingSync_ShouldInlineBlobsOnFindChanges
+         12   10 0000CE30 SettingSync_StartQuiescing
+         13   11 0000CE50 SettingSync_StopQuiescing
+         18   12 0000CD90 SettingSync_UnRegisterFromPackageLifeCycleNotification
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        2000 .pdata
+        7000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        E000 .text

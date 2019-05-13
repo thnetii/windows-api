@@ -1,0 +1,50 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\WMVCORE.DLL
+
+File Type: DLL
+
+  Section contains the following exports for WMVCore.DLL
+
+    00000000 characteristics
+    F0CEA48A time date stamp
+        0.00 version
+           1 ordinal base
+          21 number of functions
+          21 number of names
+
+    ordinal hint RVA      name
+
+          8    0 00028F40 DllRegisterServer
+          1    1 0003AB20 WMCheckURLExtension
+          2    2 0003AE00 WMCheckURLScheme
+          9    3 0000A100 WMCreateBackupRestorer
+          3    4 0000A100 WMCreateBackupRestorerPrivate
+         10    5 00013CD0 WMCreateEditor
+         11    6 00100400 WMCreateIndexer
+          4    7 0000A100 WMCreateLicenseRevocationAgentPrivate
+         12    8 000DB190 WMCreateProfileManager
+         13    9 00003190 WMCreateReader
+         14    A 000033C0 WMCreateReaderPriv
+         15    B 00036E40 WMCreateSyncReader
+          5    C 00036DA0 WMCreateSyncReaderPriv
+         16    D 00090410 WMCreateWriter
+         17    E 000AD270 WMCreateWriterFileSink
+         18    F 000B01D0 WMCreateWriterNetworkSink
+         19   10 00090480 WMCreateWriterPriv
+         20   11 000BE5D0 WMCreateWriterPushSink
+          6   12 0004AB70 WMIsAvailableOffline
+         21   13 0002E200 WMIsContentProtected
+          7   14 0003AE80 WMValidateData
+
+  Summary
+
+        D000 .data
+        1000 .didat
+        F000 .pdata
+       54000 .rdata
+        4000 .reloc
+       4E000 .rsrc
+      18E000 .text

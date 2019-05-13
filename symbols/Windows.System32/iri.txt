@@ -1,0 +1,47 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\iri.dll
+
+File Type: DLL
+
+  Section contains the following exports for iri.dll
+
+    00000000 characteristics
+    77572836 time date stamp
+        0.00 version
+           1 ordinal base
+          19 number of functions
+          19 number of names
+
+    ordinal hint RVA      name
+
+         18    0 000024C0 IriAppendRelativeIri
+         17    1 000022B0 IriAppendSegment
+          2    2 000013C0 IriClose
+         13    3 00001D50 IriCompare
+          5    4 00001520 IriCopy
+          1    5 000012E0 IriCreateFromString
+         14    6 00001EB0 IriFindLastCommonSegment
+          7    7 000017D0 IriGetAsString
+         10    8 00001C50 IriGetAttributeFlags
+         11    9 00001CB0 IriGetComponent
+          8    A 000019B0 IriGetRelative
+         12    B 00001D00 IriGetSegment
+         15    C 00002030 IriGetSegmentCount
+          4    D 000014E0 IriMakeConstantEx
+          3    E 00001450 IriMutableClose
+         16    F 00002080 IriSetComponent
+         19   10 00002580 IriSetMetadata
+          9   11 00001AC0 IriSplit
+          6   12 00001630 IriSplitIntoMutableIris
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        4000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        6000 .text

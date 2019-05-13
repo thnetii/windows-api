@@ -1,0 +1,237 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\msoert2.dll
+
+File Type: DLL
+
+  Section contains the following exports for MSOERT2.dll
+
+    00000000 characteristics
+    637EA4A5 time date stamp
+        0.00 version
+           1 ordinal base
+         215 number of functions
+         144 number of names
+
+    ordinal hint RVA      name
+
+         36    0 0000A0E0 AppendTempFileList
+         37    1 0000A1E0 BrowseForFolder
+         47    2 0000A290 BrowseForFolderW
+         48    3 00005110 CchFileTimeToDateTimeSz
+         51    4 00005250 CchFileTimeToDateTimeW
+         66    5 0000A380 CenterDialog
+         71    6 00010320 ChConvertFromHex
+         72    7 00010350 CleanupFileNameInPlaceA
+         73    8 00010400 CleanupFileNameInPlaceW
+         74    9 00001BC0 CleanupGlobalTempFiles
+         75    A 000026F0 CopyRegistry
+         76    B 00008B40 CrackNotificationPackage
+         77    C 00004800 CreateDataObject
+         78    D 000059B0 CreateEnumFormatEtc
+         79    E 00004460 CreateLogFile
+         80    F 00008C70 CreateNotify
+         81   10 0000EE80 CreateStreamOnHFile
+         82   11 0000EFE0 CreateStreamOnHFileW
+          2   12 000035E0 CreateSystemHandleName
+         83   13 0000A5F0 CreateTempFile
+         84   14 0000F120 CreateTempFileStream
+         85   15 0000A800 CreateTempFileW
+          9   16 00002D10 CryptAllocFunc
+         13   17 00002D40 CryptFreeFunc
+         86   18 0000AAF0 DeleteTempFile
+         87   19 0000AB00 DeleteTempFileOnShutdownEx
+         88   1A 00005420 DllCanUnloadNow
+         89   1B 00005AA0 DllGetClassObject
+         90   1C 0000AB20 FBuildTempPath
+         91   1D 0000AC10 FBuildTempPathW
+         14   1E 0000D510 FInitializeRichEdit
+         92   1F 000104B0 FIsEmptyA
+         93   20 000104F0 FIsEmptyW
+         94   21 0000AF40 FIsHTMLFile
+         95   22 0000AFF0 FIsHTMLFileW
+         96   23 00010540 FIsSpaceA
+         97   24 000105A0 FIsSpaceW
+         98   25 000105E0 FIsValidFileNameCharA
+         99   26 00010650 FIsValidFileNameCharW
+        100   27 000028B0 FMissingCert
+        101   28 0000B0B0 FreeTempFileList
+        102   29 0000B110 GenerateUniqueFileName
+        103   2A 0000B490 GenerateUniqueFileNameW
+         15   2B 00005410 GetDllMajorVersion
+        104   2C 0000B660 GetExePath
+         19   2D 00005C40 GetHtmlCharset
+         20   2E 0000D6E0 GetRichEdClassStringW
+         23   2F 000095C0 GetStoreRootDirectoryFromRegistryEntry
+         28   30 00009690 GetStoreRootDirectoryFromRegistryEntryW
+        105   31 0000B7B0 GetTopMostParent
+        106   32 000028D0 HrBSTRToLPSZ
+        107   33 00007A90 HrCheckTridentMenu
+        108   34 0000F1D0 HrCopyLockBytesToStream
+        109   35 0000F290 HrCopyStream
+        110   36 0000F360 HrCopyStreamCB
+        111   37 0000F490 HrCopyStreamCBEndOnCRLF
+        112   38 0000F600 HrCopyStreamToByte
+        113   39 0000D180 HrCreatePhonebookEntry
+        114   3A 00007C30 HrCreateTridentMenu
+        115   3B 00002FD0 HrDecodeObject
+        116   3C 0000D270 HrEditPhonebookEntryW
+        117   3D 0000D360 HrFillRasCombo
+        118   3E 00010690 HrFindInetTimeZone
+        119   3F 00007DE0 HrGetBodyElement
+         29   40 00002D60 HrGetCertKeyUsage
+        120   41 00003070 HrGetCertificateParam
+        121   42 00007E70 HrGetElementImpl
+        122   43 00003160 HrGetMsgParam
+        123   44 0000F6E0 HrGetStreamPos
+        124   45 0000F730 HrGetStreamSize
+        125   46 00007FA0 HrGetStyleSheet
+        126   47 00002900 HrIStreamToBSTR
+        127   48 00002A70 HrIStreamWToBSTR
+        128   49 00010720 HrIndexOfMonth
+        129   4A 00010780 HrIndexOfWeek
+        130   4B 0000F780 HrIsStreamUnicode
+        131   4C 00002B80 HrLPSZCPToBSTR
+        132   4D 00002CD0 HrLPSZToBSTR
+        133   4E 0000F830 HrRewindStream
+        134   4F 0000F870 HrSafeGetStreamSize
+        135   50 000080C0 HrSetDirtyFlagImpl
+        136   51 0000F830 HrStreamSeekBegin
+        137   52 0000F8F0 HrStreamSeekCur
+        138   53 0000F920 HrStreamSeekEnd
+        139   54 0000F960 HrStreamSeekSet
+        140   55 0000F990 HrStreamToByte
+        141   56 0000BF80 IDrawText
+         30   57 00011DB0 IUnknownList_CreateInstance
+         31   58 00011800 IVoidPtrList_CreateInstance
+        142   59 000107E0 IsDigit
+         32   5A 000099B0 IsHttpUrlA
+         33   5B 00009A10 IsHttpUrlW
+        143   5C 00010830 IsPrint
+        144   5D 00010890 IsUpper
+        145   5E 000108F0 IsValidFileIfFileUrlW
+        146   5F 0000C4D0 MessageBoxInst
+        147   60 0000CA10 MessageBoxInstW
+        148   61 0000FA50 OpenFileStream
+        149   62 0000FB60 OpenFileStreamShare
+        157   63 0000FCA0 OpenFileStreamShareW
+        161   64 0000FCE0 OpenFileStreamW
+        162   65 0000FD00 OpenFileStreamWithFlagsW
+        163   66 00003280 PVDecodeObject
+        164   67 000032C0 PVGetCertificateParam
+        165   68 000032F0 PVGetMsgParam
+        166   69 00010980 PszAllocA
+        167   6A 000109B0 PszAllocW
+        168   6B 00010A00 PszDayFromIndex
+        169   6C 00010A20 PszDupA
+        170   6D 00010A80 PszDupW
+        171   6E 00010AF0 PszEscapeMenuStringA
+        172   6F 00010B80 PszEscapeMenuStringW
+        173   70 00010C00 PszFromANSIStreamA
+        174   71 00010CA0 PszMonthFromIndex
+        175   72 00010CC0 PszScanToCharA
+        176   73 00010D00 PszScanToWhiteA
+        177   74 00010D50 PszSkipWhiteA
+        178   75 00010D70 PszSkipWhiteW
+        179   76 00010DA0 PszToANSI
+        180   77 00010E80 PszToUnicode
+        181   78 00010F50 ReplaceChars
+        182   79 00010FC0 ReplaceCharsW
+        183   7A 0000CAE0 RicheditStreamIn
+        184   7B 0000CB60 RicheditStreamOut
+         34   7C 0000D710 SetFontOnRichEd
+        185   7D 0000CCF0 ShellUtil_GetSpecialFolderPath
+        186   7E 00010FF0 StrToUintA
+        187   7F 00011020 StrToUintW
+         35   80 000101B0 StrTokExA
+        188   81 00011060 StrTokExW
+        189   82 0000FD40 StreamSubStringMatchW
+        190   83 00011170 StripCRLF
+        191   84 000034E0 SzGetCertificateEmailAddress
+        192   85 000111D0 UlStripWhitespace
+        193   86 000112C0 UlStripWhitespaceW
+        194   87 00011F00 UnlocStrEqNW
+        195   88 0000CD60 UpdateRebarBandColors
+        196   89 0000FF50 WriteStreamToFile
+        197   8A 0000D020 WriteStreamToFileHandle
+        198   8B 00010060 WriteStreamToFileW
+        199   8C 000113D0 _MSG
+        202   8D 0000D0F0 fGetBrowserUrlEncoding
+        203   8E 00011440 strtrim
+        204   8F 000114C0 strtrimW
+          1      0000BA20 [NONAME]
+          3      00009810 [NONAME]
+          4      0000C160 [NONAME]
+          5      0000CF80 [NONAME]
+          6      0000CE70 [NONAME]
+          7      0000BEF0 [NONAME]
+          8      0000BE70 [NONAME]
+         10      00006260 [NONAME]
+         11      000061C0 [NONAME]
+         12      00006200 [NONAME]
+         16      000062B0 [NONAME]
+         17      000060A0 [NONAME]
+         18      00012070 [NONAME]
+         21      00012240 [NONAME]
+         22      000122D0 [NONAME]
+         24      00012480 [NONAME]
+         25      000125D0 [NONAME]
+         26      00012310 [NONAME]
+         27      00012560 [NONAME]
+         38      0000EE10 [NONAME]
+         39      000079F0 [NONAME]
+         40      00010D20 [NONAME]
+         41      00010CE0 [NONAME]
+         42      0000CCC0 [NONAME]
+         43      0000CC90 [NONAME]
+         44      00011F50 [NONAME]
+         45      00011FC0 [NONAME]
+         46      000064F0 [NONAME]
+         49      0000C6F0 [NONAME]
+         50      0000BCB0 [NONAME]
+         52      0000BD70 [NONAME]
+         53      0000BE30 [NONAME]
+         54      0000BB70 [NONAME]
+         55      0000BBA0 [NONAME]
+         56      0000BCE0 [NONAME]
+         57      0000BEB0 [NONAME]
+         58      0000BF40 [NONAME]
+         59      000098F0 [NONAME]
+         60      0000BC50 [NONAME]
+         61      0000BAE0 [NONAME]
+         62      0000BBF0 [NONAME]
+         63      0000BDB0 [NONAME]
+         64      0000BDF0 [NONAME]
+         65      0000CBD0 [NONAME]
+         67      0000C310 [NONAME]
+         68      0000CFD0 [NONAME]
+         69      0000CEF0 [NONAME]
+         70      00009850 [NONAME]
+        150      0000DC30 [NONAME]
+        151      0000DC10 [NONAME]
+        152      0000E2C0 [NONAME]
+        153      0000DA10 [NONAME]
+        154      0000E020 [NONAME]
+        155      0000D7E0 [NONAME]
+        156      0000E200 [NONAME]
+        158      0000E130 [NONAME]
+        159      0000B810 [NONAME]
+        160      00003490 [NONAME]
+        200      00009760 [NONAME]
+        201      00005AD0 [NONAME]
+        210      0000E3D0 [NONAME]
+        211      0000E5F0 [NONAME]
+        214      0000CAD0 [NONAME]
+        215      0000CA90 [NONAME]
+
+  Summary
+
+        6000 .data
+        1000 .didat
+        2000 .pdata
+        7000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       13000 .text

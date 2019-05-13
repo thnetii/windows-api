@@ -1,0 +1,142 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\vcomp140d.dll
+
+File Type: DLL
+
+  Section contains the following exports for VCOMP140D.DLL
+
+    00000000 characteristics
+    5C82FB90 time date stamp Sat Mar  9 00:32:32 2019
+        0.00 version
+           1 ordinal base
+         113 number of functions
+         113 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001818 C2VectParallel
+          2    1 000081E0 _vcomp_atomic_add_i1
+          3    2 00008464 _vcomp_atomic_add_i2
+          4    3 00008708 _vcomp_atomic_add_i4
+          5    4 00008A74 _vcomp_atomic_add_i8
+          6    5 00008E0C _vcomp_atomic_add_r4
+          7    6 00008FB4 _vcomp_atomic_add_r8
+          8    7 00008308 _vcomp_atomic_and_i1
+          9    8 00008594 _vcomp_atomic_and_i2
+         10    9 000088A0 _vcomp_atomic_and_i4
+         11    A 00008C20 _vcomp_atomic_and_i8
+         12    B 00008290 _vcomp_atomic_div_i1
+         13    C 0000851C _vcomp_atomic_div_i2
+         14    D 000087E8 _vcomp_atomic_div_i4
+         15    E 00008B60 _vcomp_atomic_div_i8
+         16    F 00008F48 _vcomp_atomic_div_r4
+         17   10 000090FC _vcomp_atomic_div_r8
+         18   11 000082CC _vcomp_atomic_div_ui1
+         19   12 00008558 _vcomp_atomic_div_ui2
+         20   13 00008844 _vcomp_atomic_div_ui4
+         21   14 00008BC0 _vcomp_atomic_div_ui8
+         22   15 00008250 _vcomp_atomic_mul_i1
+         23   16 000084DC _vcomp_atomic_mul_i2
+         24   17 00008794 _vcomp_atomic_mul_i4
+         25   18 00008B08 _vcomp_atomic_mul_i8
+         26   19 00008EE0 _vcomp_atomic_mul_r4
+         27   1A 00009090 _vcomp_atomic_mul_r8
+         28   1B 00008378 _vcomp_atomic_or_i1
+         29   1C 0000860C _vcomp_atomic_or_i2
+         30   1D 00008928 _vcomp_atomic_or_i4
+         31   1E 00008CB0 _vcomp_atomic_or_i8
+         32   1F 000083B0 _vcomp_atomic_shl_i1
+         33   20 00008648 _vcomp_atomic_shl_i2
+         34   21 0000896C _vcomp_atomic_shl_i4
+         35   22 00008CF8 _vcomp_atomic_shl_i8
+         36   23 000083EC _vcomp_atomic_shr_i1
+         37   24 00008688 _vcomp_atomic_shr_i2
+         38   25 000089C4 _vcomp_atomic_shr_i4
+         39   26 00008D54 _vcomp_atomic_shr_i8
+         40   27 00008428 _vcomp_atomic_shr_ui1
+         41   28 000086C8 _vcomp_atomic_shr_ui2
+         42   29 00008A1C _vcomp_atomic_shr_ui4
+         43   2A 00008DB0 _vcomp_atomic_shr_ui8
+         44   2B 00008218 _vcomp_atomic_sub_i1
+         45   2C 000084A0 _vcomp_atomic_sub_i2
+         46   2D 0000874C _vcomp_atomic_sub_i4
+         47   2E 00008ABC _vcomp_atomic_sub_i8
+         48   2F 00008E74 _vcomp_atomic_sub_r4
+         49   30 00009020 _vcomp_atomic_sub_r8
+         50   31 00008340 _vcomp_atomic_xor_i1
+         51   32 000085D0 _vcomp_atomic_xor_i2
+         52   33 000088E4 _vcomp_atomic_xor_i4
+         53   34 00008C68 _vcomp_atomic_xor_i8
+         54   35 00007E18 _vcomp_barrier
+         55   36 000052F8 _vcomp_copyprivate_broadcast
+         56   37 0000537C _vcomp_copyprivate_receive
+         57   38 000080B0 _vcomp_enter_critsect
+         58   39 000081CC _vcomp_flush
+         59   3A 00001C64 _vcomp_for_dynamic_init
+         60   3B 00001C6C _vcomp_for_dynamic_init_i8
+         61   3C 00001C74 _vcomp_for_dynamic_next
+         62   3D 00001D44 _vcomp_for_dynamic_next_i8
+         63   3E 00001C48 _vcomp_for_static_end
+         64   3F 00001BA8 _vcomp_for_static_init
+         65   40 00001BF8 _vcomp_for_static_init_i8
+         66   41 00001B98 _vcomp_for_static_simple_init
+         67   42 00001BA0 _vcomp_for_static_simple_init_i8
+         68   43 00001514 _vcomp_fork
+         69   44 00005458 _vcomp_get_thread_num
+         70   45 0000819C _vcomp_leave_critsect
+         71   46 00007F84 _vcomp_master_barrier
+         72   47 000053F0 _vcomp_master_begin
+         73   48 0000543C _vcomp_master_end
+         74   49 00001E18 _vcomp_ordered_begin
+         75   4A 00001EE8 _vcomp_ordered_end
+         76   4B 00001F78 _vcomp_ordered_loop_end
+         77   4C 00005BB8 _vcomp_reduction_i1
+         78   4D 00005CE0 _vcomp_reduction_i2
+         79   4E 00005E10 _vcomp_reduction_i4
+         80   4F 00005F3C _vcomp_reduction_i8
+         81   50 000062C0 _vcomp_reduction_r4
+         82   51 000063EC _vcomp_reduction_r8
+         83   52 00006068 _vcomp_reduction_u1
+         84   53 00006190 _vcomp_reduction_u2
+         85   54 00005E10 _vcomp_reduction_u4
+         86   55 00005F3C _vcomp_reduction_u8
+         87   56 00004FA4 _vcomp_sections_init
+         88   57 00005128 _vcomp_sections_next
+         89   58 000014E0 _vcomp_set_num_threads
+         90   59 00005174 _vcomp_single_begin
+         91   5A 00001C48 _vcomp_single_end
+         92   5B 0000563C omp_destroy_lock
+         93   5C 00005834 omp_destroy_nest_lock
+         94   5D 000055A8 omp_get_dynamic
+         95   5E 000054FC omp_get_max_threads
+         96   5F 000055E8 omp_get_nested
+         97   60 00005538 omp_get_num_procs
+         98   61 000054CC omp_get_num_threads
+         99   62 00005510 omp_get_thread_num
+        100   63 00005A00 omp_get_wtick
+        101   64 000059A4 omp_get_wtime
+        102   65 00005540 omp_in_parallel
+        103   66 000055F0 omp_init_lock
+        104   67 000057E8 omp_init_nest_lock
+        105   68 00005570 omp_set_dynamic
+        106   69 000056A8 omp_set_lock
+        107   6A 000058A0 omp_set_nest_lock
+        108   6B 000055B0 omp_set_nested
+        109   6C 0000547C omp_set_num_threads
+        110   6D 0000576C omp_test_lock
+        111   6E 0000594C omp_test_nest_lock
+        112   6F 00005704 omp_unset_lock
+        113   70 000058E8 omp_unset_nest_lock
+
+  Summary
+
+        2000 .data
+        2000 .pdata
+        D000 .rdata
+        1000 .reloc
+        2000 .rsrc
+       19000 .text
+        1000 _RDATA

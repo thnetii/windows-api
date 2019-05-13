@@ -1,0 +1,51 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\cmpbk32.dll
+
+File Type: DLL
+
+  Section contains the following exports for cmpbk32.dll
+
+    00000000 characteristics
+    559DD6A5 time date stamp
+        0.00 version
+           1 ordinal base
+          23 number of functions
+          23 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000014D0 PhoneBookCopyFilter
+          2    1 00001D60 PhoneBookEnumCountries
+          3    2 000022D0 PhoneBookEnumNumbers
+          4    3 00002330 PhoneBookEnumNumbersWithRegionsZero
+          5    4 00002030 PhoneBookEnumRegions
+          6    5 00001590 PhoneBookFreeFilter
+          7    6 00001F80 PhoneBookGetCountryId
+          8    7 00001F20 PhoneBookGetCountryNameA
+          9    8 00001F50 PhoneBookGetCountryNameW
+         10    9 000028F0 PhoneBookGetCurrentCountryId
+         11    A 00002080 PhoneBookGetPhoneCanonicalA
+         12    B 00002900 PhoneBookGetPhoneDUNA
+         13    C 000024F0 PhoneBookGetPhoneDescA
+         14    D 00002400 PhoneBookGetPhoneDispA
+         15    E 00002190 PhoneBookGetPhoneNonCanonicalA
+         16    F 000022A0 PhoneBookGetPhoneType
+         17   10 00002050 PhoneBookGetRegionNameA
+         18   11 00001FB0 PhoneBookHasPhoneType
+         19   12 000043A0 PhoneBookLoad
+         20   13 000015A0 PhoneBookMatchFilter
+         21   14 00004550 PhoneBookMergeChanges
+         22   15 00001730 PhoneBookParseInfoA
+         23   16 000044E0 PhoneBookUnload
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        5000 .text

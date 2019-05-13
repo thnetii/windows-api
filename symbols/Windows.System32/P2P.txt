@@ -1,0 +1,142 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\P2P.dll
+
+File Type: DLL
+
+  Section contains the following exports for P2P.dll
+
+    00000000 characteristics
+    303DAE66 time date stamp
+        0.00 version
+           1 ordinal base
+         113 number of functions
+         113 number of names
+
+    ordinal hint RVA      name
+
+          2    0 000016A0 DllMain
+          3    1 000030B0 PeerCollabAddContact
+          4    2 000030B0 PeerCollabAsyncInviteContact
+          5    3 000030B0 PeerCollabAsyncInviteEndpoint
+          6    4 000030B0 PeerCollabCancelInvitation
+          7    5 000030B0 PeerCollabCloseHandle
+          8    6 000030B0 PeerCollabDeleteContact
+          9    7 000030B0 PeerCollabDeleteEndpointData
+         10    8 000030B0 PeerCollabDeleteObject
+         11    9 000030B0 PeerCollabEnumApplicationRegistrationInfo
+         12    A 000030B0 PeerCollabEnumApplications
+         13    B 000030B0 PeerCollabEnumContacts
+         14    C 000030B0 PeerCollabEnumEndpoints
+         15    D 000030B0 PeerCollabEnumObjects
+         16    E 000030B0 PeerCollabEnumPeopleNearMe
+         17    F 000030B0 PeerCollabExportContact
+         18   10 000030B0 PeerCollabGetAppLaunchInfo
+         19   11 000030B0 PeerCollabGetApplicationRegistrationInfo
+         20   12 000030B0 PeerCollabGetContact
+         21   13 000030B0 PeerCollabGetEndpointName
+         22   14 000030B0 PeerCollabGetEventData
+         23   15 000030B0 PeerCollabGetInvitationResponse
+         24   16 000030B0 PeerCollabGetPresenceInfo
+         25   17 000030B0 PeerCollabGetSigninOptions
+         26   18 000030B0 PeerCollabInviteContact
+         27   19 000030B0 PeerCollabInviteEndpoint
+         28   1A 000030B0 PeerCollabParseContact
+         29   1B 000030B0 PeerCollabQueryContactData
+         30   1C 000030B0 PeerCollabRefreshEndpointData
+         31   1D 000030B0 PeerCollabRegisterApplication
+         32   1E 000030B0 PeerCollabRegisterEvent
+         33   1F 000030B0 PeerCollabSetEndpointName
+         34   20 000030B0 PeerCollabSetObject
+         35   21 000030B0 PeerCollabSetPresenceInfo
+         36   22 000030B0 PeerCollabShutdown
+         37   23 000030B0 PeerCollabSignin
+         38   24 000030B0 PeerCollabSignout
+         39   25 000030B0 PeerCollabStartup
+         40   26 000030B0 PeerCollabSubscribeEndpointData
+         41   27 000030B0 PeerCollabUnregisterApplication
+         42   28 000030B0 PeerCollabUnregisterEvent
+         43   29 000030B0 PeerCollabUnsubscribeEndpointData
+         44   2A 000030B0 PeerCollabUpdateContact
+         45   2B 00002470 PeerCreatePeerName
+         46   2C 000012B0 PeerEndEnumeration
+         47   2D 000024E0 PeerEnumGroups
+         48   2E 000022B0 PeerEnumIdentities
+         49   2F 00001170 PeerFreeData
+         50   30 00001180 PeerGetItemCount
+         51   31 00001210 PeerGetNextItem
+         52   32 00004F90 PeerGroupAddRecord
+         53   33 00003D50 PeerGroupClose
+         54   34 00004950 PeerGroupCloseDirectConnection
+         55   35 00003CC0 PeerGroupConnect
+         56   36 00006240 PeerGroupConnectByAddress
+         57   37 00003530 PeerGroupCreate
+         58   38 00004050 PeerGroupCreateInvitation
+         59   39 000041F0 PeerGroupCreatePasswordInvitation
+         60   3A 00003DE0 PeerGroupDelete
+         61   3B 00005360 PeerGroupDeleteRecord
+         62   3C 000051C0 PeerGroupEnumConnections
+         63   3D 000046A0 PeerGroupEnumMembers
+         64   3E 00005410 PeerGroupEnumRecords
+         65   3F 00005BA0 PeerGroupExportConfig
+         66   40 00005700 PeerGroupExportDatabase
+         67   41 00004DA0 PeerGroupGetEventData
+         68   42 00004350 PeerGroupGetProperties
+         69   43 00004EA0 PeerGroupGetRecord
+         70   44 000042A0 PeerGroupGetStatus
+          1   45 000063D0 PeerGroupHandlePowerEvent
+         71   46 00005860 PeerGroupImportConfig
+         72   47 000057B0 PeerGroupImportDatabase
+         73   48 00005F40 PeerGroupIssueCredentials
+         74   49 00003980 PeerGroupJoin
+         75   4A 00003810 PeerGroupOpen
+         76   4B 00004850 PeerGroupOpenDirectConnection
+         77   4C 00003F20 PeerGroupParseInvitation
+         78   4D 00003AE0 PeerGroupPasswordJoin
+         79   4E 000060A0 PeerGroupPeerTimeToUniversalTime
+         80   4F 00004AE0 PeerGroupRegisterEvent
+         81   50 00006310 PeerGroupResumePasswordAuthentication
+         82   51 00005580 PeerGroupSearchRecords
+         83   52 000049F0 PeerGroupSendData
+         84   53 00004420 PeerGroupSetProperties
+         85   54 00003460 PeerGroupShutdown
+         86   55 000030C0 PeerGroupStartup
+         87   56 00006170 PeerGroupUniversalTimeToPeerTime
+         88   57 00004C20 PeerGroupUnregisterEvent
+         89   58 000050A0 PeerGroupUpdateRecord
+         90   59 000013E0 PeerHostNameToPeerName
+         91   5A 00001EF0 PeerIdentityCreate
+         92   5B 00001F30 PeerIdentityDelete
+         93   5C 00002880 PeerIdentityExport
+         94   5D 00002D60 PeerIdentityGetCert
+         95   5E 00002220 PeerIdentityGetCryptKey
+         96   5F 00002BA0 PeerIdentityGetDefault
+         97   60 000020C0 PeerIdentityGetFriendlyName
+         98   61 00002660 PeerIdentityGetXML
+         99   62 00002A80 PeerIdentityImport
+        100   63 000021C0 PeerIdentitySetFriendlyName
+        101   64 000013D0 PeerNameToPeerHostName
+        102   65 0000D790 PeerPnrpEndResolve
+        103   66 0000D580 PeerPnrpGetCloudInfo
+        104   67 0000D220 PeerPnrpGetEndpoint
+        105   68 0000A630 PeerPnrpRegister
+        106   69 0000C110 PeerPnrpResolve
+        107   6A 0000BDD0 PeerPnrpShutdown
+        108   6B 0000CB20 PeerPnrpStartResolve
+        109   6C 0000B920 PeerPnrpStartup
+        110   6D 0000B230 PeerPnrpUnregister
+        111   6E 0000AE00 PeerPnrpUpdateRegistration
+        112   6F 000030B0 PeerSSPAddCredentials
+        113   70 000030B0 PeerSSPRemoveCredentials
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        2000 .pdata
+        B000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       29000 .text

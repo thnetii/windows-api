@@ -1,0 +1,37 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\crypttpmeksvc.dll
+
+File Type: DLL
+
+  Section contains the following exports for crypttpmeksvc.dll
+
+    00000000 characteristics
+    7214CA21 time date stamp
+        0.00 version
+           1 ordinal base
+           8 number of functions
+           8 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001010 CryptsvcDllCtrl
+          2    1 00006DA0 EKCliAuthorityKeyGetInfo
+          3    2 00006F00 EKCliTpmEndorsementKeyDecryptSCEPChallenge
+          4    3 000070A0 EKCliTpmEndorsementKeyGetInfo
+          5    4 00007130 EKCliTpmGetManufacturerInfo
+          6    5 00003360 FreeCMCResponse
+          7    6 00003430 IsCmcResponseForAttestation
+          8    7 000034C0 ParseCMCResponse
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        6000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        9000 .text

@@ -1,0 +1,40 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\xboxgipsynthetic.dll
+
+File Type: DLL
+
+  Section contains the following exports for XboxgipSynthetic.dll
+
+    00000000 characteristics
+    A943EB8F time date stamp
+        0.00 version
+           1 ordinal base
+          13 number of functions
+          13 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00003790 DllMain
+          2    1 00003500 SyntheticController_AddAudioHeadset
+          3    2 000035C0 SyntheticController_Connect
+          4    3 00003440 SyntheticController_CreateController
+          5    4 00003600 SyntheticController_Disconnect
+          6    5 00003640 SyntheticController_GetDeviceId
+          7    6 00003680 SyntheticController_RegisterReportCallback
+          8    7 00003540 SyntheticController_RemoveAudioHeadset
+          9    8 000034C0 SyntheticController_RemoveController
+         10    9 00003580 SyntheticController_SendAudio
+         11    A 00003750 SyntheticController_SendReport
+         12    B 00003700 SyntheticController_SetTargetProcess
+         13    C 000036C0 SyntheticController_UnregisterReportCallback
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        6000 .rdata
+        1000 .reloc
+       11000 .text

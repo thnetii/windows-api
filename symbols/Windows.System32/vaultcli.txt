@@ -1,0 +1,52 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\vaultcli.dll
+
+File Type: DLL
+
+  Section contains the following exports for VAULTCLI.dll
+
+    00000000 characteristics
+    B77C25C9 time date stamp
+        0.00 version
+         101 ordinal base
+          24 number of functions
+          17 number of names
+
+    ordinal hint RVA      name
+
+        108    0 0000BBC0 DllCanUnloadNow
+        109    1 0000A930 DllGetActivationFactory
+        110    2 00009B40 DllGetClassObject
+        111    3 00012F50 VaultAddItem
+        112    4 0000B7C0 VaultCloseVault
+        113    5 00013020 VaultCreateItemType
+        114    6 00013150 VaultDeleteItemType
+        115    7 00013240 VaultEnumerateItemTypes
+        116    8 00013390 VaultEnumerateItems
+        117    9 00013490 VaultEnumerateVaults
+        118    A 00013580 VaultFindItems
+        119    B 000128C0 VaultFree
+        120    C 000136C0 VaultGetInformation
+        121    D 00013770 VaultGetItem
+        122    E 00013890 VaultGetItemType
+        123    F 0000B730 VaultOpenVault
+        124   10 00013980 VaultRemoveItem
+        101      00012A40 [NONAME]
+        102      0000B650 [NONAME]
+        103      00012990 [NONAME]
+        104      00012D00 [NONAME]
+        105      00012DB0 [NONAME]
+        106      000127D0 [NONAME]
+        107      00012B00 [NONAME]
+
+  Summary
+
+        1000 .data
+        3000 .pdata
+       19000 .rdata
+        2000 .reloc
+        1000 .rsrc
+       2A000 .text

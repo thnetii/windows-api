@@ -1,0 +1,70 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\rtutils.dll
+
+File Type: DLL
+
+  Section contains the following exports for rtutils.dll
+
+    00000000 characteristics
+    9C094D3A time date stamp
+        0.00 version
+           1 ordinal base
+          41 number of functions
+          41 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000082C0 LogErrorA
+          2    1 00008BB0 LogErrorW
+          3    2 00008370 LogEventA
+          4    3 00008C60 LogEventW
+          5    4 00009CD0 MprSetupProtocolEnum
+          6    5 0000A0E0 MprSetupProtocolFree
+          7    6 00005D00 RouterAssert
+          8    7 00008410 RouterGetErrorStringA
+          9    8 00008D00 RouterGetErrorStringW
+         10    9 00008500 RouterLogDeregisterA
+         11    A 00008500 RouterLogDeregisterW
+         12    B 00008520 RouterLogEventA
+         13    C 000085A0 RouterLogEventDataA
+         14    D 00008DF0 RouterLogEventDataW
+         15    E 00008600 RouterLogEventExA
+         16    F 00008E50 RouterLogEventExW
+         17   10 00008630 RouterLogEventStringA
+         18   11 00008E80 RouterLogEventStringW
+         19   12 00008770 RouterLogEventValistExA
+         20   13 00008FC0 RouterLogEventValistExW
+         21   14 00009310 RouterLogEventW
+         22   15 00008B90 RouterLogRegisterA
+         23   16 00009390 RouterLogRegisterW
+         24   17 00004A90 TraceDeregisterA
+         25   18 00001AE0 TraceDeregisterExA
+         26   19 00005460 TraceDeregisterExW
+         27   1A 00005500 TraceDeregisterW
+         28   1B 00004AA0 TraceDumpExA
+         29   1C 00005510 TraceDumpExW
+         30   1D 00004E40 TraceGetConsoleA
+         31   1E 00004E40 TraceGetConsoleW
+         32   1F 00004F10 TracePrintfA
+         33   20 00001CB0 TracePrintfExA
+         34   21 00001DE0 TracePrintfExW
+         35   22 000058C0 TracePrintfW
+         36   23 00004F90 TracePutsExA
+         37   24 00005940 TracePutsExW
+         38   25 00001940 TraceRegisterExA
+         39   26 00001010 TraceRegisterExW
+         40   27 000052C0 TraceVprintfExA
+         41   28 00005C70 TraceVprintfExW
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        4000 .rdata
+        1000 .reloc
+        2000 .rsrc
+        A000 .text

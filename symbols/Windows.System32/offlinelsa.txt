@@ -1,0 +1,47 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\offlinelsa.dll
+
+File Type: DLL
+
+  Section contains the following exports for offlinelsa.dll
+
+    00000000 characteristics
+    6AE180FF time date stamp
+        0.00 version
+           1 ordinal base
+          19 number of functions
+          19 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00008FC0 LsaOfflineAddAccountRights
+          2    1 00008D30 LsaOfflineAddPrivilegesToAccount
+          3    2 000093D0 LsaOfflineClose
+          4    3 00008AC0 LsaOfflineCreateAccount
+          5    4 00009540 LsaOfflineDelete
+          6    5 00008EA0 LsaOfflineEnumerateAccountRights
+          7    6 000089E0 LsaOfflineEnumerateAccounts
+          8    7 00008C80 LsaOfflineEnumeratePrivilegesOfAccount
+          9    8 000095E0 LsaOfflineFreeMemory
+         10    9 00009280 LsaOfflineGetSystemAccessAccount
+         11    A 00008BA0 LsaOfflineOpenAccount
+         12    B 000085C0 LsaOfflineOpenPolicy
+         13    C 000087B0 LsaOfflineOpenPolicyExternal
+         14    D 000086D0 LsaOfflineOpenPolicyForInstaller
+         15    E 00008910 LsaOfflineQueryInformationPolicy
+         16    F 00009120 LsaOfflineRemoveAccountRights
+         17   10 00008DE0 LsaOfflineRemovePrivilegesFromAccount
+         18   11 00009330 LsaOfflineSetSystemAccessAccount
+         19   12 00009600 LsaOfflineSyskeyRequest
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        9000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       15000 .text

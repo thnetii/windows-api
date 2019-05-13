@@ -1,0 +1,47 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\appmgmts.dll
+
+File Type: DLL
+
+  Section contains the following exports for APPMGMTS.dll
+
+    00000000 characteristics
+    10016AE1 time date stamp
+        0.00 version
+           1 ordinal base
+          19 number of functions
+          19 number of names
+
+    ordinal hint RVA      name
+
+          2    0 00014840 CsCreateClassStore
+          3    1 00014720 CsEnumApps
+          4    2 00014AB0 CsGetAppCategories
+          5    3 000146E0 CsGetClassAccess
+          6    4 00014940 CsGetClassStore
+          7    5 00014B20 CsGetClassStorePath
+          8    6 000149D0 CsRegisterAppCategory
+          9    7 00014960 CsServerGetClassStore
+          1    8 00014F70 CsSetOptions
+         10    9 00014A40 CsUnregisterAppCategory
+         11    A 00012CD0 DllCanUnloadNow
+         12    B 00012CF0 DllGetClassObject
+         13    C 0000AB50 GenerateGroupPolicy
+         14    D 0002A6D8 IID_IClassAdmin
+         15    E 0000A530 ProcessGroupPolicyObjectsEx
+         16    F 00014D20 ReleaseAppCategoryInfoList
+         17   10 00014D80 ReleasePackageDetail
+         18   11 00014BF0 ReleasePackageInfo
+         19   12 0000C880 ServiceMain
+
+  Summary
+
+        2000 .data
+        2000 .pdata
+        A000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       25000 .text

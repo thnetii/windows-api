@@ -1,0 +1,190 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\Chakra.dll
+
+File Type: DLL
+
+  Section contains the following exports for chakra.dll
+
+    00000000 characteristics
+    DA5E03F0 time date stamp
+        0.00 version
+         400 ordinal base
+         160 number of functions
+         160 number of names
+
+    ordinal hint RVA      name
+
+        402    0 0035BE00 CreateChakraEngine
+        437    1 000A2E10 DllCanUnloadNow
+        438    2 002679C0 DllGetClassObject
+        439    3 00360AD0 DllRegisterServer
+        440    4 00360B80 DllUnregisterServer
+        403    5 00360AA0 DumpDiagInfo
+        441    6 0028D5C0 JsAddRef
+        442    7 003B7320 JsBoolToBoolean
+        443    8 003B7380 JsBooleanToBool
+        444    9 002730F0 JsCallFunction
+        445    A 003B73E0 JsCollectGarbage
+        446    B 00272450 JsConstructObject
+        447    C 003B7410 JsConvertValueToBoolean
+        448    D 003B7470 JsConvertValueToNumber
+        449    E 003B74D0 JsConvertValueToObject
+        450    F 003B7530 JsConvertValueToString
+        451   10 003B75F0 JsCreateArray
+        452   11 003B7650 JsCreateArrayBuffer
+        453   12 002B2610 JsCreateContext
+        454   13 003B76B0 JsCreateDataView
+        455   14 003B7730 JsCreateError
+        456   15 003B7790 JsCreateExternalArrayBuffer
+        457   16 003B7830 JsCreateExternalObject
+        458   17 00272AE0 JsCreateFunction
+        459   18 003B78D0 JsCreateNamedFunction
+        460   19 002725D0 JsCreateObject
+        461   1A 003B7900 JsCreateRangeError
+        462   1B 003B7960 JsCreateReferenceError
+        463   1C 002B2280 JsCreateRuntime
+        464   1D 003B79C0 JsCreateSymbol
+        465   1E 003B7A20 JsCreateSyntaxError
+        466   1F 00167D80 JsCreateThreadService
+        467   20 003B7A80 JsCreateTypeError
+        468   21 003B7AE0 JsCreateTypedArray
+        469   22 003B7B80 JsCreateURIError
+        470   23 003B7BE0 JsDefineProperty
+        471   24 003B7C60 JsDeleteIndexedProperty
+        472   25 003B7CC0 JsDeleteProperty
+        473   26 000AC560 JsDisableRuntimeExecution
+        404   27 0035EB90 JsDiscardBackgroundParse
+        474   28 002B2870 JsDisposeRuntime
+        475   29 003B7D40 JsDoubleToNumber
+        476   2A 000AB690 JsEnableRuntimeExecution
+        477   2B 003BEAF0 JsEnumerateHeap
+        478   2C 003B7DB0 JsEquals
+        479   2D 00272370 JsGetAndClearException
+        480   2E 003B7E20 JsGetArrayBufferStorage
+        481   2F 003B7EB0 JsGetContextData
+        482   30 003B7EF0 JsGetContextOfObject
+        483   31 003B7F70 JsGetCurrentContext
+        484   32 003B7FB0 JsGetDataViewStorage
+        485   33 003B8040 JsGetExtensionAllowed
+        486   34 003B80A0 JsGetExternalData
+        487   35 003B8100 JsGetFalseValue
+        488   36 00272D70 JsGetGlobalObject
+        489   37 003B8130 JsGetIndexedPropertiesExternalData
+        490   38 003B8290 JsGetIndexedProperty
+        491   39 003B8300 JsGetNullValue
+        492   3A 003B8330 JsGetOwnPropertyDescriptor
+        493   3B 003B83A0 JsGetOwnPropertyNames
+        494   3C 003B8400 JsGetOwnPropertySymbols
+        495   3D 00272E30 JsGetProperty
+        496   3E 00272FA0 JsGetPropertyIdFromName
+        497   3F 003B8460 JsGetPropertyIdFromSymbol
+        498   40 003B84C0 JsGetPropertyIdType
+        499   41 003B8500 JsGetPropertyNameFromId
+        500   42 003B8540 JsGetPrototype
+        501   43 003B85A0 JsGetRuntime
+        502   44 003B85F0 JsGetRuntimeMemoryLimit
+        503   45 003B8640 JsGetRuntimeMemoryUsage
+        504   46 003B8690 JsGetStringLength
+        505   47 003B86F0 JsGetSymbolFromPropertyId
+        506   48 003B8750 JsGetTrueValue
+        507   49 003B8780 JsGetTypedArrayInfo
+        508   4A 003B8820 JsGetTypedArrayStorage
+        509   4B 003B8940 JsGetUndefinedValue
+        510   4C 002A0760 JsGetValueType
+        511   4D 003B8970 JsHasException
+        512   4E 003B8A30 JsHasExternalData
+        513   4F 003B8A80 JsHasIndexedPropertiesExternalData
+        514   50 003B8B30 JsHasIndexedProperty
+        515   51 00272850 JsHasProperty
+        516   52 003B8BA0 JsIdle
+        405   53 002B07A0 JsInitializeJITServer
+        517   54 003BEB80 JsInspectableToObject
+        518   55 003B8BE0 JsInstanceOf
+        519   56 003B8C50 JsIntToNumber
+        520   57 003BEBC0 JsIsEnumeratingHeap
+        521   58 003B8C90 JsIsRuntimeExecutionDisabled
+        522   59 003B8CE0 JsNumberToDouble
+        523   5A 000AAB30 JsNumberToInt
+        524   5B 003BEC30 JsObjectToInspectable
+        525   5C 003B8D50 JsParseScript
+        526   5D 003B8DC0 JsParseScriptWithAttributes
+        527   5E 003B8E30 JsParseSerializedScript
+        528   5F 003B8E90 JsParseSerializedScriptWithCallback
+        529   60 002729A0 JsPointerToString
+        530   61 003B8EE0 JsPreventExtension
+        400   62 00271D10 JsProjectWinRTNamespace
+        406   63 002B0370 JsQueueBackgroundParse
+        531   64 0028D700 JsRelease
+        532   65 00271E50 JsRunScript
+        533   66 003B8F30 JsRunSerializedScript
+        534   67 003B8F90 JsRunSerializedScriptWithCallback
+        535   68 003B8FE0 JsSerializeScript
+        536   69 003B9030 JsSetContextData
+        537   6A 002B1B90 JsSetCurrentContext
+        538   6B 003B9070 JsSetException
+        539   6C 003B90C0 JsSetExternalData
+        540   6D 003B9110 JsSetIndexedPropertiesToExternalData
+        541   6E 003B9190 JsSetIndexedProperty
+        542   6F 0029F6A0 JsSetObjectBeforeCollectCallback
+        401   70 003BEC70 JsSetProjectionEnqueueCallback
+        543   71 00272280 JsSetPromiseContinuationCallback
+        544   72 002726D0 JsSetProperty
+        545   73 003B9200 JsSetPrototype
+        546   74 003B9260 JsSetRuntimeBeforeCollectCallback
+        547   75 003B92C0 JsSetRuntimeMemoryAllocationCallback
+        548   76 003B9310 JsSetRuntimeMemoryLimit
+        549   77 003BECB0 JsStartDebugging
+        550   78 003BECD0 JsStartProfiling
+        551   79 003BED30 JsStopProfiling
+        552   7A 003B9350 JsStrictEquals
+        553   7B 002A83B0 JsStringToPointer
+        554   7C 003BED60 JsValueToVariant
+        555   7D 001B2010 JsVarAddRef
+        556   7E 001B21E0 JsVarRelease
+        557   7F 00262A80 JsVarToExtension
+        558   80 00360880 JsVarToScriptDirect
+        559   81 003BEDA0 JsVariantToValue
+        407   82 003F0D40 MemProtectHeapAddRootSection
+        408   83 003F0DD0 MemProtectHeapCollect
+        409   84 00247B80 MemProtectHeapCreate
+        410   85 000ADD10 MemProtectHeapDestroy
+        411   86 003F0E80 MemProtectHeapDisableCollection
+        412   87 003F0EA0 MemProtectHeapIsValidObject
+        413   88 003F0FB0 MemProtectHeapMemSize
+        414   89 002487C0 MemProtectHeapNotifyCurrentThreadDetach
+        415   8A 00248340 MemProtectHeapProtectCurrentThread
+        416   8B 003F1050 MemProtectHeapRemoveRootSection
+        417   8C 00293400 MemProtectHeapReportHeapSize
+        418   8D 00248630 MemProtectHeapRootAlloc
+        419   8E 003F10F0 MemProtectHeapRootAllocLeaf
+        420   8F 001CB8C0 MemProtectHeapRootRealloc
+        421   90 003F11D0 MemProtectHeapRootReallocLeaf
+        422   91 003F12A0 MemProtectHeapSynchronizeWithCollector
+        423   92 0006BDB0 MemProtectHeapUnprotectCurrentThread
+        424   93 001CCD80 MemProtectHeapUnrootAndZero
+        425   94 00097780 RecyclerNativeHeapAddExternalMemoryUsage
+        426   95 003F15F0 RecyclerNativeHeapAllocLeaf
+        427   96 003F1680 RecyclerNativeHeapAllocLeafFinalized
+        428   97 00209680 RecyclerNativeHeapAllocTraced
+        429   98 002A5400 RecyclerNativeHeapAllocTracedFinalized
+        430   99 000710E0 RecyclerNativeHeapCollectGarbageInThread
+        431   9A 000A4B10 RecyclerNativeHeapCreateWeakReference
+        432   9B 00258890 RecyclerNativeHeapGetRealAddressFromInterior
+        433   9C 003F1710 RecyclerNativeHeapGetStrongReference
+        434   9D 003F1730 RecyclerNativeHeapHasWeakReferenceCleanupOccurred
+        435   9E 00258220 RecyclerNativeHeapRootAddRef
+        436   9F 000A4640 RecyclerNativeHeapRootRelease
+
+  Summary
+
+       1D000 .data
+        1000 .didat
+        1000 .mrdata
+       56000 .pdata
+      187000 .rdata
+       15000 .reloc
+       1B000 .rsrc
+      565000 .text

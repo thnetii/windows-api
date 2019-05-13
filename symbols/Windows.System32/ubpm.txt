@@ -1,0 +1,45 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\ubpm.dll
+
+File Type: DLL
+
+  Section contains the following exports for UBPM.dll
+
+    00000000 characteristics
+    CBEBF9BB time date stamp
+        0.00 version
+           1 ordinal base
+          16 number of functions
+          16 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00022070 UbpmAcquireJobBackgroundMode
+          2    1 00027750 UbpmApiBufferFree
+          3    2 00010680 UbpmCloseTriggerConsumer
+          4    3 000220F0 UbpmInitialize
+          5    4 00001D20 UbpmOpenTriggerConsumer
+          6    5 000221C0 UbpmReleaseJobBackgroundMode
+          7    6 000120E0 UbpmSessionStateChanged
+          8    7 00022220 UbpmTerminate
+          9    8 000223D0 UbpmTriggerConsumerConfigure
+         10    9 000121B0 UbpmTriggerConsumerControl
+         11    A 000226F0 UbpmTriggerConsumerControlNotifications
+         12    B 00022780 UbpmTriggerConsumerQueryStatus
+         13    C 0000EF70 UbpmTriggerConsumerRegister
+         14    D 00001410 UbpmTriggerConsumerSetDisabledForUser
+         15    E 000103C0 UbpmTriggerConsumerSetStatePublishingSecurity
+         16    F 000123B0 UbpmTriggerConsumerUnregister
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        3000 .pdata
+        B000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       36000 .text

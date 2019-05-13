@@ -1,0 +1,58 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\ssdpapi.dll
+
+File Type: DLL
+
+  Section contains the following exports for SSDPAPI.dll
+
+    00000000 characteristics
+     14FFE02 time date stamp
+        0.00 version
+           1 ordinal base
+          29 number of functions
+          29 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00006B70 BeginRegisterPropChangeNotificationEx
+          2    1 00005330 CleanupCache
+          3    2 00009200 DHSetICSInterfaces
+          4    3 00009230 DHSetICSOff
+          5    4 00006E90 DeregisterNotification
+          6    5 000020A0 DeregisterService
+          7    6 00009250 DisableFirewallRule
+          8    7 00009390 EnableFirewallRule
+          9    8 00007120 EndRegisterPropChangeNotificationEx
+         10    9 000017E0 FindServices
+         11    A 00008690 FindServicesCallback
+         12    B 000086E0 FindServicesCallbackEx
+         13    C 00008730 FindServicesCancel
+         14    D 00008790 FindServicesClose
+         15    E 000087F0 FindServicesEx
+         16    F 00008800 FindServicesOnNetworkCallbackEx
+         17   10 00005D60 FreeSsdpMessage
+         18   11 00002680 FreeSsdpMessageEx
+         19   12 00008850 GetFirstService
+         20   13 00008900 GetFirstServiceEx
+         21   14 000089B0 GetNextService
+         22   15 00008A60 GetNextServiceEx
+         23   16 000072B0 RegisterAliveNotificationOnNetworkEx
+         24   17 00001060 RegisterNotification
+         25   18 00007360 RegisterNotificationEx
+         26   19 00007560 RegisterService
+         27   1A 00001ED0 RegisterServiceEx
+         28   1B 00002820 SsdpCleanup
+         29   1C 00001650 SsdpStartup
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        5000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        A000 .text

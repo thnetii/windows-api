@@ -1,0 +1,43 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\qwave.dll
+
+File Type: DLL
+
+  Section contains the following exports for qwave.dll
+
+    00000000 characteristics
+     357703C time date stamp
+        0.00 version
+           1 ordinal base
+          14 number of functions
+          14 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0001E480 QDLHPathDiagnostics
+          2    1 0001E2E0 QDLHStartDiagnosingPath
+          3    2 0001F000 QOSAddSocketToFlow
+          4    3 0001F830 QOSCancel
+          5    4 0001EB50 QOSCloseHandle
+          6    5 0001E900 QOSCreateHandle
+          7    6 0001EEB0 QOSEnumerateFlows
+          8    7 0001F6B0 QOSNotifyFlow
+          9    8 0001F530 QOSQueryFlow
+         10    9 0001F220 QOSRemoveSocketFromFlow
+         11    A 0001F3B0 QOSSetFlow
+         12    B 0001EB70 QOSStartTrackingClient
+         13    C 0001ED10 QOSStopTrackingClient
+         14    D 00003B10 ServiceMain
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        2000 .pdata
+        6000 .rdata
+        1000 .reloc
+        6000 .rsrc
+       3B000 .text

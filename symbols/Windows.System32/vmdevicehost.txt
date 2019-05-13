@@ -1,0 +1,37 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\vmdevicehost.dll
+
+File Type: DLL
+
+  Section contains the following exports for vmdevicehost.dll
+
+    00000000 characteristics
+     B030454 time date stamp
+        0.00 version
+           1 ordinal base
+           8 number of functions
+           8 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000049F0 HdvCreateDeviceInstance
+          2    1 00004D10 HdvCreateGuestMemoryAperture
+          3    2 00004E80 HdvDeliverGuestInterrupt
+          4    3 00004DF0 HdvDestroyGuestMemoryAperture
+          5    4 000048A0 HdvInitializeDeviceHost
+          6    5 00004B50 HdvReadGuestMemory
+          7    6 00004920 HdvTeardownDeviceHost
+          8    7 00004C30 HdvWriteGuestMemory
+
+  Summary
+
+        B000 .data
+        1000 .didat
+        2000 .pdata
+        E000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       1B000 .text

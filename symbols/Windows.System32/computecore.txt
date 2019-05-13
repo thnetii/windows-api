@@ -1,0 +1,76 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\computecore.dll
+
+File Type: DLL
+
+  Section contains the following exports for computecore.dll
+
+    00000000 characteristics
+    30513106 time date stamp
+        0.00 version
+           1 ordinal base
+          47 number of functions
+          47 number of names
+
+    ordinal hint RVA      name
+
+          5    0 00008130 HcsCancelOperation
+          6    1 0000C210 HcsCloseComputeSystem
+          7    2 00007C60 HcsCloseOperation
+          8    3 00009310 HcsCloseProcess
+          9    4 0000BEF0 HcsCreateComputeSystem
+         10    5 0000D5F0 HcsCreateEmptyGuestStateFile
+         11    6 0000D850 HcsCreateEmptyRuntimeStateFile
+         12    7 00007C30 HcsCreateOperation
+         13    8 00008E90 HcsCreateProcess
+         14    9 0000BDC0 HcsEnumerateComputeSystems
+          1    A 0000DEC0 HcsEnumerateVmWorkerProcesses
+          2    B 0000E040 HcsFindVmWorkerProcesses
+         15    C 00007D10 HcsGetComputeSystemFromOperation
+         16    D 0000CB40 HcsGetComputeSystemProperties
+         17    E 00007C80 HcsGetOperationContext
+         18    F 00007DA0 HcsGetOperationId
+         19   10 00007DD0 HcsGetOperationResult
+         20   11 00007E90 HcsGetOperationResultAndProcessInfo
+         21   12 00007D70 HcsGetOperationType
+         22   13 00007D40 HcsGetProcessFromOperation
+         23   14 00009780 HcsGetProcessInfo
+         24   15 00009A40 HcsGetProcessProperties
+         25   16 0000A120 HcsGetServiceProperties
+          3   17 0000E100 HcsGetWorkerProcessJob
+         26   18 0000D930 HcsGrantVmAccess
+         27   19 0000CC00 HcsModifyComputeSystem
+         28   1A 00009D70 HcsModifyProcess
+         29   1B 0000A250 HcsModifyServiceSettings
+         30   1C 0000C0E0 HcsOpenComputeSystem
+         31   1D 000091D0 HcsOpenProcess
+         32   1E 0000C690 HcsPauseComputeSystem
+         33   1F 0000C820 HcsResumeComputeSystem
+         34   20 0000DA60 HcsRevokeVmAccess
+         35   21 0000C9B0 HcsSaveComputeSystem
+         36   22 0000CD90 HcsSetComputeSystemCallback
+         37   23 000080C0 HcsSetOperationCallback
+         38   24 00007CB0 HcsSetOperationContext
+         39   25 00009FD0 HcsSetProcessCallback
+         40   26 0000C440 HcsShutDownComputeSystem
+         41   27 000095C0 HcsSignalProcess
+         42   28 0000C2B0 HcsStartComputeSystem
+          4   29 0000DDD0 HcsStartVmWorkerProcess
+         43   2A 0000DB90 HcsSubmitWerReport
+         44   2B 0000C5D0 HcsTerminateComputeSystem
+         45   2C 00009410 HcsTerminateProcess
+         46   2D 00007F40 HcsWaitForOperationResult
+         47   2E 00008000 HcsWaitForOperationResultAndProcessInfo
+
+  Summary
+
+        3000 .data
+        1000 .didat
+        6000 .pdata
+       31000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       66000 .text

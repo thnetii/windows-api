@@ -1,0 +1,41 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\SmiEngine.dll
+
+File Type: DLL
+
+  Section contains the following exports for SmiEngine.dll
+
+    00000000 characteristics
+    E9C1D490 time date stamp
+        0.00 version
+           1 ordinal base
+          13 number of functions
+          13 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00048DA0 ConstructHiveLocation
+          3    1 000027E0 ConstructRegLocation
+          4    2 0004B7D0 CreateLalInstance
+          2    3 0003CC00 CreateSettingsEnginePriv
+          5    4 00003AC0 CreateWcmEngineCore
+          6    5 0002C740 DeleteCompilerObject
+          7    6 00002180 DllCanUnloadNow
+          8    7 000020E0 DllGetClassObject
+          9    8 000021B0 DllRegisterServer
+         10    9 00002360 DllUnregisterServer
+         11    A 0002C690 GetCompilerObject
+         12    B 0003D950 GetItemFromCoreObject
+         13    C 0004B800 SetLalCreator
+
+  Summary
+
+        3000 .data
+        5000 .pdata
+       23000 .rdata
+        3000 .reloc
+        D000 .rsrc
+       97000 .text

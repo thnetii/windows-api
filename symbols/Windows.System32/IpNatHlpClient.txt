@@ -1,0 +1,44 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\IpNatHlpClient.dll
+
+File Type: DLL
+
+  Section contains the following exports for IpNatHlpClient.dll
+
+    00000000 characteristics
+    B49F9061 time date stamp
+        0.00 version
+           1 ordinal base
+          16 number of functions
+          16 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00003AE0 IpNatHlpGetConnectedDevices
+          2    1 00003BC0 IpNatHlpStartDhcpServer
+          3    2 00003900 IpNatHlpStartSharing
+          4    3 00003CC0 IpNatHlpStopDhcpServer
+          5    4 00003A00 IpNatHlpStopSharing
+          6    5 00003DC0 IpNatHlpUpdateSharingSettingsFromStorage
+          7    6 00004690 V2IpNatHlpCreateStaticMapping
+          8    7 000047F0 V2IpNatHlpDeleteStaticMapping
+          9    8 000044D0 V2IpNatHlpEnumDhcpState
+         10    9 000045B0 V2IpNatHlpEnumDnsState
+         11    A 000040B0 V2IpNatHlpStartDhcpServer
+         12    B 000042C0 V2IpNatHlpStartDnsServer
+         13    C 00003E90 V2IpNatHlpStartSharingInternalPrefix
+         14    D 000041C0 V2IpNatHlpStopDhcpServer
+         15    E 000043D0 V2IpNatHlpStopDnsServer
+         16    F 00003FB0 V2IpNatHlpStopSharingInternalPrefix
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        3000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        5000 .text

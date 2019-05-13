@@ -1,0 +1,121 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\DismApi.dll
+
+File Type: DLL
+
+  Section contains the following exports for DismApi.DLL
+
+    00000000 characteristics
+    4B10801D time date stamp
+        0.00 version
+           1 ordinal base
+          93 number of functions
+          93 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00013330 DismAddCapability
+          2    1 00013380 DismAddDriver
+          3    2 00013440 DismAddPackage
+          4    3 00013520 DismApplyUnattend
+          5    4 000135D0 DismCheckImageHealth
+          6    5 00013670 DismCleanupMountpoints
+          7    6 000136D0 DismCloseSession
+          8    7 00013740 DismCommitImage
+          9    8 000137E0 DismDelete
+         10    9 000137F0 DismDisableFeature
+         11    A 000138D0 DismEnableFeature
+         12    B 000139E0 DismGetCapabilities
+         13    C 00013A10 DismGetCapabilityInfo
+         14    D 00013A40 DismGetDriverInfo
+         15    E 00013B10 DismGetDrivers
+         16    F 00013BA0 DismGetFeatureInfo
+         17   10 00013C70 DismGetFeatureParent
+         18   11 00013D40 DismGetFeatures
+         19   12 00013DE0 DismGetImageInfo
+         20   13 00013E80 DismGetLastErrorMessage
+         21   14 00013E90 DismGetMountedImageInfo
+         22   15 00013F00 DismGetPackageInfo
+         23   16 00013FC0 DismGetPackageInfoEx
+         24   17 00013FD0 DismGetPackages
+         25   18 00014050 DismInitialize
+         26   19 00014260 DismMountImage
+         27   1A 00014350 DismOpenSession
+         28   1B 00014410 DismRemountImage
+         29   1C 000144A0 DismRemoveCapability
+         30   1D 000144B0 DismRemoveDriver
+         31   1E 00014560 DismRemovePackage
+         32   1F 00014630 DismRestoreImageHealth
+         33   20 000146E0 DismShutdown
+         34   21 00014740 DismUnmountImage
+         35   22 00002AE0 _DismAddCapabilityEx
+         36   23 00014BA0 _DismAddDriverEx
+         37   24 00002B40 _DismAddPackage2
+         38   25 00002B50 _DismAddPackageFamilyToUninstallBlocklist
+         39   26 00014BB0 _DismAddProvisionedAppxPackage
+         40   27 00014CC0 _DismApplyCustomDataImage
+         41   28 00014CD0 _DismApplyFfuImage
+         42   29 00014CF0 _DismApplyProvisioningPackage
+         43   2A 00014D00 _DismCleanupSession
+         44   2B 00014D10 _DismEnableDisableFeature
+         45   2C 00014D90 _DismExportDriver
+         46   2D 00002B60 _DismExportSource
+         47   2E 00002BA0 _DismExportSourceEx
+         48   2F 00014E00 _DismGetCapabilitiesEx
+         49   30 00014E10 _DismGetCapabilityInfoEx
+         50   31 00014E20 _DismGetCurrentEdition
+         51   32 00014E90 _DismGetDriversEx
+         52   33 00014EA0 _DismGetEffectiveSystemUILanguage
+         53   34 00014EB0 _DismGetFeaturesEx
+         54   35 00014F50 _DismGetInstallLanguage
+         55   36 00014F60 _DismGetKCacheBinaryValue
+         56   37 00014F70 _DismGetKCacheDwordValue
+         57   38 00014F80 _DismGetKCacheStringValue
+         58   39 00014F90 _DismGetLastCBSSessionID
+         59   3A 00002BF0 _DismGetNonRemovableAppsPolicy
+         60   3B 00002C00 _DismGetOSUninstallWindow
+         61   3C 00014FA0 _DismGetOsInfo
+         62   3D 00014FB0 _DismGetProductKeyInfo
+         63   3E 00014FC0 _DismGetProvisionedAppxPackages
+         64   3F 00015040 _DismGetProvisioningPackageInfo
+         65   40 00015050 _DismGetRegistryMountPoint
+         66   41 00015060 _DismGetStateFromCBSSessionID
+         67   42 00002C10 _DismGetTargetCompositionEditions
+         68   43 00015070 _DismGetTargetEditions
+         69   44 00002C20 _DismGetTargetVirtualEditions
+         70   45 000150F0 _DismGetUsedSpace
+         71   46 00002C30 _DismInitiateOSUninstall
+         72   47 00015100 _DismOptimizeImage
+         73   48 00002C40 _DismOptimizeProvisionedAppxPackages
+         74   49 00002CB0 _DismRemoveOSUninstall
+         75   4A 00002CC0 _DismRemovePackageFamilyFromUninstallBlocklist
+         76   4B 00015190 _DismRemoveProvisionedAppxPackage
+         77   4C 00002CD0 _DismRemoveProvisionedAppxPackageAllUsers
+         78   4D 00015240 _DismRevertPendingActions
+         79   4E 00015250 _DismSetAllIntlSettings
+         80   4F 00015260 _DismSetAppXProvisionedDataFile
+         81   50 00015270 _DismSetEdition
+         82   51 00002D80 _DismSetEdition2
+         83   52 00015320 _DismSetFirstBootCommandLine
+         84   53 000153A0 _DismSetMachineName
+         85   54 00002DC0 _DismSetOSUninstallWindow
+         86   55 000153B0 _DismSetProductKey
+         87   56 00015420 _DismSetSkuIntlDefaults
+         88   57 00015430 _DismSplitFfuImage
+         89   58 00015450 _DismStage
+         90   59 00015460 _DismSysprepCleanup
+         91   5A 00015470 _DismSysprepGeneralize
+         92   5B 00015480 _DismSysprepSpecialize
+         93   5C 00015490 _DismValidateProductKey
+
+  Summary
+
+        4000 .data
+        5000 .pdata
+       4D000 .rdata
+        1000 .reloc
+        4000 .rsrc
+       9C000 .text

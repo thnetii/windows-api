@@ -1,0 +1,42 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\mpunits.dll
+
+File Type: DLL
+
+  Section contains the following exports for mpunits.dll
+
+    00000000 characteristics
+    1A193D4E time date stamp
+        0.00 version
+           1 ordinal base
+          14 number of functions
+          14 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00005B60 MI_Main
+          2    1 00046010 MPUnitsTraps
+          3    2 0006DFA8 NITS_PRESENCE_STUB
+          4    3 00047A60 NITS_STUB
+          5    4 000260C0 SyncBmilReader_Create
+          6    5 00026220 SyncBmilReader_Delete
+          7    6 000261A0 SyncBmilReader_ReadInstance
+          8    7 00026290 SyncBmilWriter_Create
+          9    8 000263D0 SyncBmilWriter_Delete
+         10    9 00026360 SyncBmilWriter_WriteInstance
+         11    A 00006B00 _BinaryLogReader_GetNextInstance
+         12    B 00006B20 _BinaryLogReader_ValidateHeader
+         13    C 000519B8 monitoring_platformFT_V1
+         14    D 00055760 monitoring_platform_reactive_extensionsFT_V1
+
+  Summary
+
+       23000 .data
+        4000 .pdata
+       26000 .rdata
+        4000 .reloc
+        5000 .rsrc
+       45000 .text

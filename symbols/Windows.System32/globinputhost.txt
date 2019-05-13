@@ -1,0 +1,45 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\globinputhost.dll
+
+File Type: DLL
+
+  Section contains the following exports for globinputhost.dll
+
+    00000000 characteristics
+    2F700076 time date stamp
+        0.00 version
+           1 ordinal base
+          16 number of functions
+          16 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0000DD20 WGIEnsureLanguageProfileExists
+          2    1 0000E700 WGIGetCompatibleInputMethodsForLanguage
+          3    2 0000E970 WGIGetCompatibleInputMethodsForLanguageKeyboardAndImeMixed
+          4    3 00001650 WGIGetCurrentInputLanguage
+          5    4 0000EBE0 WGIGetDefaultInputMethodForLanguage
+          6    5 0000EE00 WGIGetInputMethodDescription
+          7    6 0000EF00 WGIGetInputMethodProperties
+          8    7 0000F240 WGIGetInputMethodTileName
+          9    8 0000F2E0 WGIIsImeInputMethod
+         10    9 0000F3B0 WGIIsImeScript
+         11    A 0000F3E0 WGIIsImmersiveInputMethod
+         12    B 0000F430 WGIIsTouchEnabledInputMethod
+         13    C 0000F480 WGISetCurrentInputLanguage
+         14    D 00001290 WGITransformInputMethodsForLanguage
+         15    E 0000F580 WGITransformInputMethodsForLanguageId
+         16    F 0000F7A0 WGIUpdateGlobalSpellerKey
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        2000 .pdata
+        B000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       17000 .text

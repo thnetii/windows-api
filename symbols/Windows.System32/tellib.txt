@@ -1,0 +1,50 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\tellib.dll
+
+File Type: DLL
+
+  Section contains the following exports for TelLib.dll
+
+    00000000 characteristics
+    A92024BA time date stamp
+        0.00 version
+           1 ordinal base
+          20 number of functions
+          20 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0000CDD0 TelLib_Cleanup
+          2    1 0000D440 TelLib_ConfigureSetting
+          3    2 0000DD00 TelLib_EventWrite
+          4    3 0000DC80 TelLib_ForceUpload
+          5    4 0000C7D0 TelLib_Initialize
+          6    5 0000DBC0 TelLib_SetAgentConnectivityCallback
+          7    6 0000D8C0 TelLib_SetBandwidthExceededChangedCallback
+          8    7 0000D5B0 TelLib_SetBatteryState
+          9    8 0000D700 TelLib_SetConnectedStandby
+         10    9 0000CF00 TelLib_SetDailyUploadQuota
+         11    A 0000DA40 TelLib_SetDiskActivityCallback
+         12    B 0000CFA0 TelLib_SetDiskQuota
+         13    C 0000D6A0 TelLib_SetGeneralQuietMode
+         14    D 0000D980 TelLib_SetNetworkActivityCallback
+         15    E 0000D040 TelLib_SetNetworkImpersonationContext
+         16    F 0000D760 TelLib_SetNetworkState
+         17   10 0000D0A0 TelLib_SetProxyInfo
+         18   11 0000D820 TelLib_SetTimerValue
+         19   12 0000DB00 TelLib_SetUploadFailedCallback
+         20   13 0000D1D0 TelLib_SetUploadUrls
+
+  Summary
+
+        C000 .data
+        1000 .didat
+       17000 .pdata
+       CC000 .rdata
+        3000 .reloc
+        1000 .rsrc
+      284000 .text
+        1000 RT_CODE

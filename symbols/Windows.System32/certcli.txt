@@ -1,0 +1,201 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\certcli.dll
+
+File Type: DLL
+
+  Section contains the following exports for certcli.dll
+
+    00000000 characteristics
+     59432A0 time date stamp
+        0.00 version
+         201 ordinal base
+         291 number of functions
+         164 number of names
+
+    ordinal hint RVA      name
+
+        371    0          AddOrRemoveOCSPISAPIExtension (forwarded to CERTCA.#851)
+        209    1          CAAccessCheck (forwarded to CERTCA.CAAccessCheck)
+        211    2          CAAccessCheckEx (forwarded to CERTCA.CAAccessCheckEx)
+        212    3          CAAddCACertificateType (forwarded to CERTCA.CAAddCACertificateType)
+        222    4          CAAddCACertificateTypeEx (forwarded to CERTCA.CAAddCACertificateTypeEx)
+        224    5          CACertTypeAccessCheck (forwarded to CERTCA.CACertTypeAccessCheck)
+        226    6          CACertTypeAccessCheckEx (forwarded to CERTCA.CACertTypeAccessCheckEx)
+        227    7          CACertTypeAuthzAccessCheck (forwarded to CERTCA.CACertTypeAuthzAccessCheck)
+        228    8          CACertTypeGetSecurity (forwarded to CERTCA.CACertTypeGetSecurity)
+        229    9          CACertTypeQuery (forwarded to CERTCA.CACertTypeQuery)
+        230    A          CACertTypeRegisterQuery (forwarded to CERTCA.CACertTypeRegisterQuery)
+        231    B          CACertTypeSetSecurity (forwarded to CERTCA.CACertTypeSetSecurity)
+        232    C          CACertTypeUnregisterQuery (forwarded to CERTCA.CACertTypeUnregisterQuery)
+        233    D          CACloneCertType (forwarded to CERTCA.CACloneCertType)
+        234    E          CACloseCA (forwarded to CERTCA.CACloseCA)
+        235    F          CACloseCertType (forwarded to CERTCA.CACloseCertType)
+        236   10          CACountCAs (forwarded to CERTCA.CACountCAs)
+        237   11          CACountCertTypes (forwarded to CERTCA.CACountCertTypes)
+        238   12          CACreateAutoEnrollmentObjectEx (forwarded to CERTCA.CACreateAutoEnrollmentObjectEx)
+        239   13          CACreateCertType (forwarded to CERTCA.CACreateCertType)
+        243   14          CACreateLocalAutoEnrollmentObject (forwarded to CERTCA.CACreateLocalAutoEnrollmentObject)
+        244   15          CACreateNewCA (forwarded to CERTCA.CACreateNewCA)
+        268   16          CADCSetCertTypePropertyEx (forwarded to CERTCA.CADCSetCertTypePropertyEx)
+        269   17          CADeleteCA (forwarded to CERTCA.CADeleteCA)
+        270   18          CADeleteCAEx (forwarded to CERTCA.CADeleteCAEx)
+        271   19          CADeleteCertType (forwarded to CERTCA.CADeleteCertType)
+        272   1A          CADeleteCertTypeEx (forwarded to CERTCA.CADeleteCertTypeEx)
+        273   1B          CADeleteLocalAutoEnrollmentObject (forwarded to CERTCA.CADeleteLocalAutoEnrollmentObject)
+        274   1C          CAEnumCertTypes (forwarded to CERTCA.CAEnumCertTypes)
+        275   1D          CAEnumCertTypesEx (forwarded to CERTCA.CAEnumCertTypesEx)
+        276   1E          CAEnumCertTypesForCA (forwarded to CERTCA.CAEnumCertTypesForCA)
+        277   1F          CAEnumCertTypesForCAEx (forwarded to CERTCA.CAEnumCertTypesForCAEx)
+        278   20          CAEnumFirstCA (forwarded to CERTCA.CAEnumFirstCA)
+        279   21          CAEnumNextCA (forwarded to CERTCA.CAEnumNextCA)
+        280   22          CAEnumNextCertType (forwarded to CERTCA.CAEnumNextCertType)
+        281   23          CAFindByCertType (forwarded to CERTCA.CAFindByCertType)
+        282   24          CAFindByIssuerDN (forwarded to CERTCA.CAFindByIssuerDN)
+        283   25          CAFindByName (forwarded to CERTCA.CAFindByName)
+        284   26          CAFindCertTypeByName (forwarded to CERTCA.CAFindCertTypeByName)
+        285   27          CAFreeCAProperty (forwarded to CERTCA.CAFreeCAProperty)
+        286   28          CAFreeCertTypeExtensions (forwarded to CERTCA.CAFreeCertTypeExtensions)
+        287   29          CAFreeCertTypeProperty (forwarded to CERTCA.CAFreeCertTypeProperty)
+        361   2A          CAGetAccessRights (forwarded to CERTCA.#843)
+        288   2B          CAGetCACertificate (forwarded to CERTCA.CAGetCACertificate)
+        289   2C          CAGetCAExpiration (forwarded to CERTCA.CAGetCAExpiration)
+        290   2D          CAGetCAFlags (forwarded to CERTCA.CAGetCAFlags)
+        291   2E          CAGetCAProperty (forwarded to CERTCA.CAGetCAProperty)
+        292   2F          CAGetCASecurity (forwarded to CERTCA.CAGetCASecurity)
+        363   30          CAGetCertTypeAccessRights (forwarded to CERTCA.#845)
+        293   31          CAGetCertTypeExpiration (forwarded to CERTCA.CAGetCertTypeExpiration)
+        294   32          CAGetCertTypeExtensions (forwarded to CERTCA.CAGetCertTypeExtensions)
+        295   33          CAGetCertTypeExtensionsEx (forwarded to CERTCA.CAGetCertTypeExtensionsEx)
+        296   34          CAGetCertTypeFlags (forwarded to CERTCA.CAGetCertTypeFlags)
+        297   35          CAGetCertTypeFlagsEx (forwarded to CERTCA.CAGetCertTypeFlagsEx)
+        298   36          CAGetCertTypeKeySpec (forwarded to CERTCA.CAGetCertTypeKeySpec)
+        299   37          CAGetCertTypeProperty (forwarded to CERTCA.CAGetCertTypeProperty)
+        300   38          CAGetCertTypePropertyEx (forwarded to CERTCA.CAGetCertTypePropertyEx)
+        491   39 0000A3D0 CAGetConfigStringFromUIPicker
+        301   3A          CAGetDN (forwarded to CERTCA.CAGetDN)
+        302   3B          CAInstallDefaultCertType (forwarded to CERTCA.CAInstallDefaultCertType)
+        303   3C          CAInstallDefaultCertTypeEx (forwarded to CERTCA.CAInstallDefaultCertTypeEx)
+        304   3D          CAIsCertTypeCurrent (forwarded to CERTCA.CAIsCertTypeCurrent)
+        305   3E          CAIsCertTypeCurrentEx (forwarded to CERTCA.CAIsCertTypeCurrentEx)
+        364   3F          CAIsCertTypeValid (forwarded to CERTCA.#846)
+        362   40          CAIsValid (forwarded to CERTCA.#844)
+        306   41          CAOIDAdd (forwarded to CERTCA.CAOIDAdd)
+        307   42          CAOIDAddEx (forwarded to CERTCA.CAOIDAddEx)
+        308   43          CAOIDCreateNew (forwarded to CERTCA.CAOIDCreateNew)
+        309   44          CAOIDCreateNewEx (forwarded to CERTCA.CAOIDCreateNewEx)
+        310   45          CAOIDDelete (forwarded to CERTCA.CAOIDDelete)
+        311   46          CAOIDDeleteEx (forwarded to CERTCA.CAOIDDeleteEx)
+        312   47          CAOIDFreeLdapURL (forwarded to CERTCA.CAOIDFreeLdapURL)
+        313   48          CAOIDFreeProperty (forwarded to CERTCA.CAOIDFreeProperty)
+        314   49          CAOIDGetLdapURL (forwarded to CERTCA.CAOIDGetLdapURL)
+        315   4A          CAOIDGetProperty (forwarded to CERTCA.CAOIDGetProperty)
+        316   4B          CAOIDGetPropertyEx (forwarded to CERTCA.CAOIDGetPropertyEx)
+        317   4C          CAOIDSetProperty (forwarded to CERTCA.CAOIDSetProperty)
+        318   4D          CAOIDSetPropertyEx (forwarded to CERTCA.CAOIDSetPropertyEx)
+        319   4E          CARemoveCACertificateType (forwarded to CERTCA.CARemoveCACertificateType)
+        320   4F          CARemoveCACertificateTypeEx (forwarded to CERTCA.CARemoveCACertificateTypeEx)
+        321   50          CASetCACertificate (forwarded to CERTCA.CASetCACertificate)
+        322   51          CASetCAExpiration (forwarded to CERTCA.CASetCAExpiration)
+        323   52          CASetCAFlags (forwarded to CERTCA.CASetCAFlags)
+        324   53          CASetCAProperty (forwarded to CERTCA.CASetCAProperty)
+        325   54          CASetCASecurity (forwarded to CERTCA.CASetCASecurity)
+        326   55          CASetCertTypeExpiration (forwarded to CERTCA.CASetCertTypeExpiration)
+        327   56          CASetCertTypeExtension (forwarded to CERTCA.CASetCertTypeExtension)
+        328   57          CASetCertTypeFlags (forwarded to CERTCA.CASetCertTypeFlags)
+        329   58          CASetCertTypeFlagsEx (forwarded to CERTCA.CASetCertTypeFlagsEx)
+        330   59          CASetCertTypeKeySpec (forwarded to CERTCA.CASetCertTypeKeySpec)
+        331   5A          CASetCertTypeProperty (forwarded to CERTCA.CASetCertTypeProperty)
+        332   5B          CASetCertTypePropertyEx (forwarded to CERTCA.CASetCertTypePropertyEx)
+        333   5C          CAUpdateCA (forwarded to CERTCA.CAUpdateCA)
+        334   5D          CAUpdateCAEx (forwarded to CERTCA.CAUpdateCAEx)
+        335   5E          CAUpdateCertType (forwarded to CERTCA.CAUpdateCertType)
+        336   5F          CAUpdateCertTypeEx (forwarded to CERTCA.CAUpdateCertTypeEx)
+        201   60          CSPrintAssert (forwarded to CERTCA.#701)
+        202   61          CSPrintError (forwarded to CERTCA.#702)
+        357   62          CSPrintErrorLineFile (forwarded to CERTCA.#839)
+        358   63          CSPrintErrorLineFile2 (forwarded to CERTCA.#840)
+        359   64          CSPrintErrorLineFileData (forwarded to CERTCA.#841)
+        360   65          CSPrintErrorLineFileData2 (forwarded to CERTCA.#842)
+        390   66          CertcliGetDetailedCertcliVersionString (forwarded to CERTCA.#858)
+        205   67          DbgIsSSActive (forwarded to CERTCA.#705)
+        242   68          DbgLogStringInit (forwarded to CERTCA.#811)
+        366   69          DbgLogStringInit2 (forwarded to CERTCA.#847)
+        203   6A          DbgPrintf (forwarded to CERTCA.#703)
+        204   6B          DbgPrintfInit (forwarded to CERTCA.#704)
+        261   6C          DbgPrintfW (forwarded to CERTCA.#824)
+        223   6D          DecodeFileW (forwarded to CERTCA.#808)
+        337   6E 00001790 DllCanUnloadNow
+        338   6F 000017D0 DllGetClassObject
+        339   70 000015F0 DllMain
+        340   71 00001850 DllRegisterServer
+        341   72 00001850 DllUnregisterServer
+        263   73          EnableASPInIIS (forwarded to CERTCA.#826)
+        265   74          EnableISAPIExtension (forwarded to CERTCA.#828)
+        225   75          EncodeToFileW (forwarded to CERTCA.#809)
+        262   76          IsASPEnabledInIIS (forwarded to CERTCA.#825)
+        267   77          IsASPEnabledInIIS_New (forwarded to CERTCA.#830)
+        264   78          IsISAPIExtensionEnabled (forwarded to CERTCA.#827)
+        368   79          RemoveISAPIExtension (forwarded to CERTCA.#848)
+        369   7A          RemoveVDir (forwarded to CERTCA.#849)
+        370   7B          SplitConfigString (forwarded to CERTCA.#850)
+        246   7C          WszToMultiByteInteger (forwarded to CERTCA.#813)
+        245   7D          WszToMultiByteIntegerBuf (forwarded to CERTCA.#812)
+        253   7E          caTranslateFileTimePeriodToPeriodUnits (forwarded to CERTCA.#820)
+        240   7F          myAddShare (forwarded to CERTCA.#810)
+        249   80          myCAPropGetDisplayName (forwarded to CERTCA.#816)
+        251   81          myCAPropInfoLookup (forwarded to CERTCA.#818)
+        250   82          myCAPropInfoUnmarshal (forwarded to CERTCA.#817)
+        254   83          myCryptBinaryToString (forwarded to CERTCA.#602)
+        255   84          myCryptBinaryToStringA (forwarded to CERTCA.#604)
+        256   85          myCryptStringToBinary (forwarded to CERTCA.#601)
+        257   86          myCryptStringToBinaryA (forwarded to CERTCA.#603)
+        342   87          myDoesDSExist@209 (forwarded to CERTCA.#801)
+        392   88          myEnablePrivilege (forwarded to CERTCA.#855)
+        213   89          myFreeColumnDisplayNames (forwarded to CERTCA.#802)
+        354   8A          myGenerateGuidSerialNumber (forwarded to CERTCA.#836)
+        353   8B          myGenerateGuidString (forwarded to CERTCA.#835)
+        207   8C          myGetErrorMessageText (forwarded to CERTCA.#707)
+        247   8D          myGetErrorMessageText1 (forwarded to CERTCA.#814)
+        248   8E          myGetErrorMessageTextEx (forwarded to CERTCA.#815)
+        391   8F          myGetHashAlgorithmOIDInfoFromSignatureAlgorithm (forwarded to CERTCA.#854)
+        266   90          myGetSidFromDomain (forwarded to CERTCA.#829)
+        373   91          myGetTargetMachineDomainDnsName (forwarded to CERTCA.#852)
+        216   92          myHExceptionCode (forwarded to CERTCA.#805)
+        260   93          myHExceptionCodePrint (forwarded to CERTCA.#823)
+        356   94          myHGetLastError (forwarded to CERTCA.#838)
+        208   95          myHResultToStringRaw_old (forwarded to CERTCA.#708)
+        206   96          myHResultToString_old (forwarded to CERTCA.#706)
+        215   97          myIsDelayLoadHResult (forwarded to CERTCA.#804)
+        217   98          myJetHResult (forwarded to CERTCA.#806)
+        259   99          myLogExceptionInit (forwarded to CERTCA.#822)
+        218   9A          myModifyVirtualRootsAndFileShares (forwarded to CERTCA.#807)
+        375   9B          myNetLogonUser (forwarded to CERTCA.#853)
+        258   9C          myOIDHashOIDToString (forwarded to CERTCA.#821)
+        352   9D          myRevertSanitizeName (forwarded to CERTCA.#834)
+        214   9E          myRobustLdapBind (forwarded to CERTCA.#803)
+        252   9F          myRobustLdapBindEx (forwarded to CERTCA.#819)
+        349   A0          mySanitizeName (forwarded to CERTCA.#831)
+        350   A1          mySanitizedNameToDSName (forwarded to CERTCA.#832)
+        351   A2          mySanitizedNameToShortName (forwarded to CERTCA.#833)
+        355   A3          mylstrcmpiL (forwarded to CERTCA.#837)
+        210      0000A2F0 [NONAME]
+        219      0000BD50 [NONAME]
+        220      0000BDE0 [NONAME]
+        221      0000BE60 [NONAME]
+        241      00010340 [NONAME]
+        365      00010330 [NONAME]
+        367      000162E0 [NONAME]
+        374      0000FAE0 [NONAME]
+
+  Summary
+
+        3000 .data
+        1000 .didat
+        3000 .pdata
+       30000 .rdata
+        3000 .reloc
+        3000 .rsrc
+       39000 .text

@@ -1,0 +1,89 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\dsreg.dll
+
+File Type: DLL
+
+  Section contains the following exports for dsreg.dll
+
+    00000000 characteristics
+    49A9F5F9 time date stamp
+        0.00 version
+           1 ordinal base
+          60 number of functions
+          60 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001B30 ??0DsregBehaviors@@AEAA@XZ
+          2    1 00001B30 ??4DsregBehaviors@@QEAAAEAV0@$$QEAV0@@Z
+          3    2 00001B30 ??4DsregBehaviors@@QEAAAEAV0@AEBV0@@Z
+          4    3 00009790 ?Disable@DsregBehaviors@@SAJW4DsregBehavior@1@@Z
+          5    4 00009750 ?Enable@DsregBehaviors@@SAJW4DsregBehavior@1@@Z
+          6    5 00009810 ?GetBitset@DsregBehaviors@@CAAEAV?$bitset@$01@std@@XZ
+          7    6 000097D0 ?GetStatus@DsregBehaviors@@SA_NW4DsregBehavior@1@@Z
+          8    7 0000CE60 ?IsNgcCertRaReady@NgcPolicy@@SAJPEBGAEA_N@Z
+          9    8 00002C60 DsrBeginDelegatedWorkplaceJoin
+         10    9 000032C0 DsrBeginDeviceAutoJoin
+         11    A 00002E90 DsrBeginDeviceAutoJoinFederated
+         12    B 00002380 DsrBeginDeviceJoin
+         13    C 00002840 DsrBeginDeviceJoinRenew
+         14    D 00003300 DsrBeginDeviceUnjoin
+         15    E 00001D50 DsrBeginDiscover
+         16    F 00002060 DsrBeginDiscoverEnterprise
+         17   10 00001D70 DsrBeginDiscoverEx
+         18   11 000025C0 DsrBeginPreprovisionedDeviceJoin
+         19   12 00003650 DsrBeginRecovery
+         20   13 00002A00 DsrBeginWorkplaceJoin
+         21   14 00003330 DsrBeginWorkplaceUnjoin
+         22   15 00004650 DsrCanCurrentUserProvisionNgcKey
+         23   16 00004660 DsrCanCurrentUserResetNgcKey
+         24   17 00003B80 DsrEndRecovery
+         25   18 000427B0 DsrFreeCxhScenarioInfo
+         26   19 000032D0 DsrFreeDiscoveryMetadata
+         27   1A 000414D0 DsrFreeJoinInfo
+         28   1B 000415C0 DsrFreeJoinInfoEx
+         29   1C 00004670 DsrGetCurrentUserNgcProvisionStatus
+         30   1D 00042490 DsrGetCxhScenarioInfo
+         31   1E 00004870 DsrGetDomainRegistrationData
+         32   1F 00041910 DsrGetJoinInfo
+         33   20 00041AC0 DsrGetJoinInfoEx
+         34   21 000048F0 DsrGetPrtAuthorityInfo
+         35   22 00004010 DsrGetResourceAccount
+         36   23 00042170 DsrIsDeviceJoined
+         37   24 000421C0 DsrIsDeviceJoinedEx
+         38   25 00042340 DsrIsWorkplaceJoined
+         39   26 00042390 DsrSaveDeviceTokenProperties
+         40   27 00042410 DsrSaveWorkplaceTokenProperties
+         41   28 00003590 DsrWriteAutoJoinSvcAdminEvent
+         42   29 000035F0 DsrWriteAutoJoinSvcDebugEvent
+         43   2A 00003400 DsrWriteAutoJoinSvcTriggerEvent
+         44   2B 00004640 FidoDeregisterKey
+         45   2C 00004590 FidoRegisterKey
+         46   2D 00004220 NgcDeregisterKey
+         47   2E 00004290 NgcGetKeyId
+         48   2F 000049E0 NgcGetLogonCertPolicy
+         49   30 00004400 NgcGetStatistics
+         50   31 00004BA0 NgcIncrementPinRetryAttempts
+         51   32 000046F0 NgcNeedProvision
+         52   33 00004860 NgcNeedProvisionForAccount
+         53   34 000040E0 NgcRegisterKey
+         54   35 00004130 NgcRegisterKeyEx
+         55   36 00004180 NgcRegisterKeyInternal
+         56   37 00004280 NgcRemoveAllRegistrationsLocal
+         57   38 00004250 NgcRemoveRegistrationLocal
+         58   39 00004C20 NgcResetPinRetryAttempts
+         59   3A 00004420 NgcUpdateCertEnrollStatistics
+         60   3B 00004410 NgcUpdateStatistics
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        3000 .pdata
+       44000 .rdata
+        1000 .reloc
+       12000 .rsrc
+       5D000 .text

@@ -1,0 +1,169 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\fwpolicyiomgr.dll
+
+File Type: DLL
+
+  Section contains the following exports for FWPolicyIOMgr.dll
+
+    00000000 characteristics
+     362A26A time date stamp
+        0.00 version
+           1 ordinal base
+         140 number of functions
+         140 number of names
+
+    ordinal hint RVA      name
+
+         15    0 000150E0 CalculateOpenPortOrAuthAppAddrStringSize
+         16    1 00003AB0 CalculateOpenPortOrAuthAppAddrStringSize2
+          1    2 00013630 CopyIcmpSettings
+          2    3 00013680 CopyIcmpV4Rules
+          3    4 000136B0 CopyIcmpV6Rules
+          4    5 00013820 CreateDefaultAuthAppRule
+          5    6 000138E0 CreateDefaultIcmpRule
+          6    7 00013A10 CreateDefaultOpenPortRule
+          7    8 00013B40 CreateDefaultPerInterfaceIcmpRule
+          8    9 00013D50 CreateDefaultPerInterfaceOpenPortRule
+          9    A 00013E70 CreateDefaultRemoteAdminRule
+         10    B 00014180 CreateDefaultRule
+         17    C 00019890 FWDestroyExtensionDllCriticalSection
+         18    D 0000A950 FWGPLock
+         19    E 000199A0 FWGPOCleanup
+         20    F 000199C0 FWGPOSave
+         21   10 0000A5B0 FWGPUnlockEx
+         22   11 00007F30 FWInitExtensionDllCriticalSection
+         23   12 000199F0 FWOpenGPOAndGetRegKey
+         24   13 000198C0 FWPrimitivesSetGPHelperFnPtrs
+         25   14 000198E0 FWResolveGPONames
+         26   15 0000AB20 FWSetGPHelperFnPtrs
+         27   16 000150F0 FreeAbsoluteInterfaces
+         28   17 00002270 FwAddRule
+         29   18 0001BE70 FwAddSet
+         30   19 0001D060 FwAdvPolicyDecodeFirewallRule
+         31   1A 000046E0 FwAdvPolicyEncodeRule
+         32   1B 0001D080 FwAdvPolicyVerifyFirewallRule
+         33   1C 00015120 FwAppContainerChangeFree
+         34   1D 000151B0 FwAreAllContainedInAddresses
+         35   1E 00015220 FwAuthSetFree
+         36   1F 00003200 FwBinariesFree
+         37   20 00015280 FwCSRuleEmpty
+         38   21 00015290 FwCSRuleEmptyByBinaryVersion
+         39   22 000153D0 FwCSRuleFree
+         40   23 00015470 FwCSRuleVerify
+         41   24 000154A0 FwChkBuildSidAndAttributesFree
+         42   25 00015530 FwCleanupPhase1Sa
+         43   26 00003640 FwClosePolicyStore
+         44   27 00015570 FwCompareCSRule
+         45   28 00015960 FwCompareFWRule
+         46   29 00015E80 FwConvertIPv6SubNetToRange
+         47   2A 00015F50 FwCopyAuthSetListToLowerVersion
+         48   2B 00016050 FwCopyAuthSetToLowerVersion
+         49   2C 000163B0 FwCopyAuthsetToHigherVersion
+         50   2D 00009F10 FwCopyCSRule
+         51   2E 00009410 FwCopyCryptoSet
+         52   2F 000037D0 FwCopyICMPTypeCode
+         53   30 000166A0 FwCopyInterfaceIndexes
+         54   31 00016730 FwCopyInterfaceLuids
+         55   32 00007F90 FwCopyLUID
+         56   33 000167C0 FwCopyMMRule
+         57   34 000037D0 FwCopyPlatform
+         58   35 000037D0 FwCopyPortRange
+         59   36 00016B80 FwCopyPortsContents
+         60   37 00002880 FwCopyRule
+         61   38 00016C00 FwCountAuthAppRules
+         62   39 00016C60 FwCountGlobalOpenPortRules
+         63   3A 0001BFB0 FwCreateLocalTempStore
+         64   3B 00016CC0 FwCryptoSetFree
+         65   3C 0001C1C0 FwDeleteAllRules
+         66   3D 0001C2A0 FwDeleteAllSets
+         67   3E 00007130 FwDeleteRule
+         68   3F 0001C3A0 FwDeleteSet
+         69   40 0001C4D0 FwDestroyLocalTempStore
+         70   41 00006DF0 FwDoNothingOnObject
+         71   42 00016D20 FwDownlevelAuthSetFree
+         72   43 00016D50 FwDownlevelFirewallRuleEmpty
+         73   44 00016D60 FwEmptyWFRule
+         74   45 00007320 FwEnumRules
+         75   46 00009730 FwEnumSets
+         76   47 0001C560 FwEraseGPOStoreBaseKey
+         77   48 00016D70 FwFindMatchingOpenPortRule
+         78   49 00016E10 FwFreeObjects
+         79   4A 00002E90 FwFreeRules
+         80   4B 00009DC0 FwFreeSets
+         81   4C 00016E60 FwFreeWFRule
+         82   4D 00001610 FwGetConfig
+         83   4E 000065C0 FwGetGlobalConfig
+         84   4F 0001C580 FwGetGlobalConfigFromLocalTempStore
+         85   50 00001540 FwGetRule
+         86   51 00016E90 FwICFProfileToWfProfile
+         87   52 00016EC0 FwICFProtocolToWfProtocol
+         88   53 00016EE0 FwIPV4RangeContainsMulticast
+         89   54 00016EF0 FwIPV6RangeContainsMulticast
+         90   55 00016F00 FwIsV6AddrLoopback
+         91   56 00016FB0 FwMMRuleFree
+         92   57 00017040 FwMMRuleVerify
+         93   58 00017070 FwMigrateLegacyAuthenticatedBypassSddl
+         94   59 0001C650 FwMigrateLegacySettings
+         95   5A 00007CA0 FwNegateAddresses
+         96   5B 0000A800 FwOpenAppCDbPolicyStore
+         97   5C 0001C6E0 FwOpenOfflinePolicyStore
+         98   5D 00006240 FwOpenPolicyStore
+         99   5E 000170A0 FwParseAddressToken
+         11   5F 00019580 FwParseAllPortVersions
+         12   60 00008DB0 FwParseICMPTypeCodes
+         13   61 00019630 FwParseInterfaceType
+        100   62 00015E80 FwPolioConvertIPv6SubNetToRange
+        101   63 00009B20 FwPolioCopyAuthSet
+        102   64 00002D90 FwPolioCopyWFAddressesContents
+        103   65 000072B0 FwPolioEmptyWFAddresses
+        104   66 000078F0 FwPolioMergeAddresses
+        105   67 00017160 FwReduceObjectsToVersion
+        106   68 00007C20 FwRemoveDuplicateAddresses
+        107   69 000032A0 FwRuleResolveFlags
+        108   6A 00017720 FwSddlStringVerify
+        109   6B 0001CAB0 FwSetConfig
+        110   6C 0001CC70 FwSetGlobalConfig
+        111   6D 000027E0 FwSetGlobalConfigInLocalTempStore
+        112   6E 00009930 FwSetResolveFlags
+        113   6F 00002000 FwSetRule
+        114   70 0001CE60 FwSetSet
+        115   71 000038D0 FwSidAndAttributesCopy
+        116   72 00003240 FwSidAndAttributesFree
+        117   73 00003990 FwSidCopy
+        118   74 00017750 FwSidsToString
+        119   75 0000A9A0 FwStringToSids
+        120   76 00007ED0 FwSubtractAddresses
+        121   77 000077C0 FwUniteWFAddressesContents
+        122   78 00003600 FwVerifyWFRuleSemantics
+        123   79 00017960 FwWfProtocolToICFProtocol
+        124   7A 00017990 GetOpenPortOrAuthAppAddrScope
+        125   7B 00003A10 GetOpenPortorAuthAppAddrAsString
+        126   7C 000179D0 GetOpenPortorAuthAppAsBSTR
+         14   7D 000136E0 GetRemoteAdminSettings
+        127   7E 00007DD0 IsEqualAddresses
+        128   7F 00017AF0 IsPortsEmpty
+        129   80 0001E400 IsRuleLegacyICMPSettings
+        130   81 00017B10 IsRulePerInterfaceIcmp
+        131   82 00017B50 IsRulePerInterfaceOpenPort
+        132   83 00007D80 IsUnicastExplicitAddressesEmpty
+        133   84 00017C70 Isv4Orv6AddressesEmpty
+        134   85 0000A350 LoadGPExtensionDll
+        135   86 00017C90 MakeAbsoluteInterfaces
+        136   87 00017D90 OpenPortOrAuthAppAddrToString
+        137   88 00003F00 OpenPortOrAuthAppAddrToStringInt2
+        138   89 0000A740 StringToOpenPortOrAuthAppAddress
+        139   8A 0000A760 StringToOpenPortOrAuthAppAddress2
+        140   8B 00017DB0 ValidatePortOrAppAddressString
+
+  Summary
+
+        8000 .data
+        1000 .didat
+        2000 .pdata
+        A000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       27000 .text

@@ -1,0 +1,59 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\efswrt.dll
+
+File Type: DLL
+
+  Section contains the following exports for efswrt.dll
+
+    00000000 characteristics
+    7CF25C27 time date stamp
+        0.00 version
+           1 ordinal base
+          30 number of functions
+          30 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0000BE30 CdplGetFileProtectionLevel
+          2    1 0000BF70 CdplIsAppAllowedToRun
+          3    2 0000BB90 CdplIsAppDataProtectionSupported
+          4    3 0000BFB0 CdplIsSupported
+          5    4 0000BD30 CdplProtectFileToLevel
+          6    5 0000BC30 CdplProtectFileToLevelWithResult
+          7    6 0000BE90 CdplProtectSecretToLevel
+          8    7 0000BF50 CdplUnprotectSecret
+          9    8 00004810 DllCanUnloadNow
+         10    9 00004850 DllGetActivationFactory
+         11    A 000049C0 DllGetClassObject
+         12    B 0000BA50 DpmBufferFree
+         13    C 0000B630 DpmProtectSecretToIdentity
+         14    D 0000BA40 DpmStreamClose
+         15    E 0000B810 DpmStreamOpenToProtectToIdentity
+         16    F 0000B900 DpmStreamOpenToUnprotect
+         17   10 0000B9E0 DpmStreamUpdate
+         18   11 0000B790 DpmUnprotectSecret
+         19   12 0000A090 EnterpriseDataCopyProtection
+         20   13 0000A910 EnterpriseDataGetStatus
+         21   14 00009AE0 EnterpriseDataProtect
+         22   15 0000A440 EnterpriseDataRevoke
+         23   16 0000B610 FreeIdentityProtectorList
+         24   17 0000AEA0 GetEnterpriseActionForCopy
+         25   18 0000AC60 GetEnterpriseIdForNetworkPath
+         26   19 0000BA60 ProtectFileToEnterpriseIdentity
+         27   1A 00009F20 ProtectFileToIdentity
+         28   1B 0000BAB0 ProtectOrReprotectFileToIdentity
+         29   1C 0000B3F0 QueryIdentityProtectors
+         30   1D 0000BA80 UnprotectFile
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        6000 .pdata
+       41000 .rdata
+        5000 .reloc
+        2000 .rsrc
+       74000 .text

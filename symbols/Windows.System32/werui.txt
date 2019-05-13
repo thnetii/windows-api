@@ -1,0 +1,42 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\werui.dll
+
+File Type: DLL
+
+  Section contains the following exports for werui.dll
+
+    00000000 characteristics
+    8AD6F46D time date stamp
+        0.00 version
+           1 ordinal base
+          13 number of functions
+          13 number of names
+
+    ordinal hint RVA      name
+
+          3    0 00015F30 WerUICreate
+          4    1 00016040 WerUIDelete
+          5    2 00016110 WerUIGetUserSelection
+          6    3 00016180 WerUIPromptForSecondLevel
+          7    4 00016450 WerUIPromptUser
+          1    5 00001FB0 WerUIReportHang
+          2    6 0001E900 WerUIReportSilentProcessExit
+          8    7 000163F0 WerUIShowUpsell
+          9    8 000160A0 WerUIStart
+         10    9 000161F0 WerUITerminate
+         11    A 00016350 WerUIUpdateStateProgress
+         12    B 000162B0 WerUIUpdateUIForState
+         13    C 00016250 WerUIWaitForUserAction
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        3000 .pdata
+       16000 .rdata
+        1000 .reloc
+       14000 .rsrc
+       4C000 .text

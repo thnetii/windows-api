@@ -1,0 +1,710 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\setupapi.dll
+
+File Type: DLL
+
+  Section contains the following exports for SETUPAPI.dll
+
+    00000000 characteristics
+    CC9BC0EB time date stamp
+        0.00 version
+           1 ordinal base
+         681 number of functions
+         681 number of names
+
+    ordinal hint RVA      name
+
+          1    0          CMP_GetBlockedDriverInfo (forwarded to cfgmgr32.CMP_GetBlockedDriverInfo)
+          2    1          CMP_GetServerSideDeviceInstallFlags (forwarded to cfgmgr32.CMP_GetServerSideDeviceInstallFlags)
+          3    2          CMP_Init_Detection (forwarded to cfgmgr32.CMP_Init_Detection)
+          4    3          CMP_Report_LogOn (forwarded to cfgmgr32.CMP_Report_LogOn)
+          5    4          CMP_WaitNoPendingInstallEvents (forwarded to cfgmgr32.CMP_WaitNoPendingInstallEvents)
+          6    5          CMP_WaitServicesAvailable (forwarded to cfgmgr32.CMP_WaitServicesAvailable)
+          7    6          CM_Add_Driver_PackageW (forwarded to cfgmgr32.CM_Add_Driver_PackageW)
+          8    7          CM_Add_Empty_Log_Conf (forwarded to cfgmgr32.CM_Add_Empty_Log_Conf)
+          9    8          CM_Add_Empty_Log_Conf_Ex (forwarded to cfgmgr32.CM_Add_Empty_Log_Conf_Ex)
+         10    9          CM_Add_IDA (forwarded to cfgmgr32.CM_Add_IDA)
+         11    A          CM_Add_IDW (forwarded to cfgmgr32.CM_Add_IDW)
+         12    B          CM_Add_ID_ExA (forwarded to cfgmgr32.CM_Add_ID_ExA)
+         13    C          CM_Add_ID_ExW (forwarded to cfgmgr32.CM_Add_ID_ExW)
+         14    D          CM_Add_Range (forwarded to cfgmgr32.CM_Add_Range)
+         15    E          CM_Add_Res_Des (forwarded to cfgmgr32.CM_Add_Res_Des)
+         16    F          CM_Add_Res_Des_Ex (forwarded to cfgmgr32.CM_Add_Res_Des_Ex)
+         17   10 000A58E0 CM_Apply_PowerScheme
+         18   11          CM_Connect_MachineA (forwarded to cfgmgr32.CM_Connect_MachineA)
+         19   12          CM_Connect_MachineW (forwarded to cfgmgr32.CM_Connect_MachineW)
+         20   13          CM_Create_DevNodeA (forwarded to cfgmgr32.CM_Create_DevNodeA)
+         21   14          CM_Create_DevNodeW (forwarded to cfgmgr32.CM_Create_DevNodeW)
+         22   15          CM_Create_DevNode_ExA (forwarded to cfgmgr32.CM_Create_DevNode_ExA)
+         23   16          CM_Create_DevNode_ExW (forwarded to cfgmgr32.CM_Create_DevNode_ExW)
+         24   17          CM_Create_Range_List (forwarded to cfgmgr32.CM_Create_Range_List)
+         25   18          CM_Delete_Class_Key (forwarded to cfgmgr32.CM_Delete_Class_Key)
+         26   19          CM_Delete_Class_Key_Ex (forwarded to cfgmgr32.CM_Delete_Class_Key_Ex)
+         27   1A          CM_Delete_DevNode_Key (forwarded to cfgmgr32.CM_Delete_DevNode_Key)
+         28   1B          CM_Delete_DevNode_Key_Ex (forwarded to cfgmgr32.CM_Delete_DevNode_Key_Ex)
+         29   1C          CM_Delete_Device_Interface_KeyA (forwarded to cfgmgr32.CM_Delete_Device_Interface_KeyA)
+         30   1D          CM_Delete_Device_Interface_KeyW (forwarded to cfgmgr32.CM_Delete_Device_Interface_KeyW)
+         31   1E          CM_Delete_Device_Interface_Key_ExA (forwarded to cfgmgr32.CM_Delete_Device_Interface_Key_ExA)
+         32   1F          CM_Delete_Device_Interface_Key_ExW (forwarded to cfgmgr32.CM_Delete_Device_Interface_Key_ExW)
+         33   20          CM_Delete_Driver_PackageW (forwarded to cfgmgr32.CM_Delete_Driver_PackageW)
+         34   21 000A58E0 CM_Delete_PowerScheme
+         35   22          CM_Delete_Range (forwarded to cfgmgr32.CM_Delete_Range)
+         36   23          CM_Detect_Resource_Conflict (forwarded to cfgmgr32.CM_Detect_Resource_Conflict)
+         37   24          CM_Detect_Resource_Conflict_Ex (forwarded to cfgmgr32.CM_Detect_Resource_Conflict_Ex)
+         38   25          CM_Disable_DevNode (forwarded to cfgmgr32.CM_Disable_DevNode)
+         39   26          CM_Disable_DevNode_Ex (forwarded to cfgmgr32.CM_Disable_DevNode_Ex)
+         40   27          CM_Disconnect_Machine (forwarded to cfgmgr32.CM_Disconnect_Machine)
+         41   28          CM_Dup_Range_List (forwarded to cfgmgr32.CM_Dup_Range_List)
+         42   29 000A58E0 CM_Duplicate_PowerScheme
+         43   2A          CM_Enable_DevNode (forwarded to cfgmgr32.CM_Enable_DevNode)
+         44   2B          CM_Enable_DevNode_Ex (forwarded to cfgmgr32.CM_Enable_DevNode_Ex)
+         45   2C          CM_Enumerate_Classes (forwarded to cfgmgr32.CM_Enumerate_Classes)
+         46   2D          CM_Enumerate_Classes_Ex (forwarded to cfgmgr32.CM_Enumerate_Classes_Ex)
+         47   2E          CM_Enumerate_EnumeratorsA (forwarded to cfgmgr32.CM_Enumerate_EnumeratorsA)
+         48   2F          CM_Enumerate_EnumeratorsW (forwarded to cfgmgr32.CM_Enumerate_EnumeratorsW)
+         49   30          CM_Enumerate_Enumerators_ExA (forwarded to cfgmgr32.CM_Enumerate_Enumerators_ExA)
+         50   31          CM_Enumerate_Enumerators_ExW (forwarded to cfgmgr32.CM_Enumerate_Enumerators_ExW)
+         51   32          CM_Find_Range (forwarded to cfgmgr32.CM_Find_Range)
+         52   33          CM_First_Range (forwarded to cfgmgr32.CM_First_Range)
+         53   34          CM_Free_Log_Conf (forwarded to cfgmgr32.CM_Free_Log_Conf)
+         54   35          CM_Free_Log_Conf_Ex (forwarded to cfgmgr32.CM_Free_Log_Conf_Ex)
+         55   36          CM_Free_Log_Conf_Handle (forwarded to cfgmgr32.CM_Free_Log_Conf_Handle)
+         56   37          CM_Free_Range_List (forwarded to cfgmgr32.CM_Free_Range_List)
+         57   38          CM_Free_Res_Des (forwarded to cfgmgr32.CM_Free_Res_Des)
+         58   39          CM_Free_Res_Des_Ex (forwarded to cfgmgr32.CM_Free_Res_Des_Ex)
+         59   3A          CM_Free_Res_Des_Handle (forwarded to cfgmgr32.CM_Free_Res_Des_Handle)
+         60   3B          CM_Free_Resource_Conflict_Handle (forwarded to cfgmgr32.CM_Free_Resource_Conflict_Handle)
+         61   3C          CM_Get_Child (forwarded to cfgmgr32.CM_Get_Child)
+         62   3D          CM_Get_Child_Ex (forwarded to cfgmgr32.CM_Get_Child_Ex)
+         63   3E          CM_Get_Class_Key_NameA (forwarded to cfgmgr32.CM_Get_Class_Key_NameA)
+         64   3F          CM_Get_Class_Key_NameW (forwarded to cfgmgr32.CM_Get_Class_Key_NameW)
+         65   40          CM_Get_Class_Key_Name_ExA (forwarded to cfgmgr32.CM_Get_Class_Key_Name_ExA)
+         66   41          CM_Get_Class_Key_Name_ExW (forwarded to cfgmgr32.CM_Get_Class_Key_Name_ExW)
+         67   42          CM_Get_Class_NameA (forwarded to cfgmgr32.CM_Get_Class_NameA)
+         68   43          CM_Get_Class_NameW (forwarded to cfgmgr32.CM_Get_Class_NameW)
+         69   44          CM_Get_Class_Name_ExA (forwarded to cfgmgr32.CM_Get_Class_Name_ExA)
+         70   45          CM_Get_Class_Name_ExW (forwarded to cfgmgr32.CM_Get_Class_Name_ExW)
+         71   46          CM_Get_Class_Registry_PropertyA (forwarded to cfgmgr32.CM_Get_Class_Registry_PropertyA)
+         72   47          CM_Get_Class_Registry_PropertyW (forwarded to cfgmgr32.CM_Get_Class_Registry_PropertyW)
+         73   48          CM_Get_Depth (forwarded to cfgmgr32.CM_Get_Depth)
+         74   49          CM_Get_Depth_Ex (forwarded to cfgmgr32.CM_Get_Depth_Ex)
+         75   4A          CM_Get_DevNode_Custom_PropertyA (forwarded to cfgmgr32.CM_Get_DevNode_Custom_PropertyA)
+         76   4B          CM_Get_DevNode_Custom_PropertyW (forwarded to cfgmgr32.CM_Get_DevNode_Custom_PropertyW)
+         77   4C          CM_Get_DevNode_Custom_Property_ExA (forwarded to cfgmgr32.CM_Get_DevNode_Custom_Property_ExA)
+         78   4D          CM_Get_DevNode_Custom_Property_ExW (forwarded to cfgmgr32.CM_Get_DevNode_Custom_Property_ExW)
+         79   4E          CM_Get_DevNode_Registry_PropertyA (forwarded to cfgmgr32.CM_Get_DevNode_Registry_PropertyA)
+         80   4F          CM_Get_DevNode_Registry_PropertyW (forwarded to cfgmgr32.CM_Get_DevNode_Registry_PropertyW)
+         81   50          CM_Get_DevNode_Registry_Property_ExA (forwarded to cfgmgr32.CM_Get_DevNode_Registry_Property_ExA)
+         82   51          CM_Get_DevNode_Registry_Property_ExW (forwarded to cfgmgr32.CM_Get_DevNode_Registry_Property_ExW)
+         83   52          CM_Get_DevNode_Status (forwarded to cfgmgr32.CM_Get_DevNode_Status)
+         84   53          CM_Get_DevNode_Status_Ex (forwarded to cfgmgr32.CM_Get_DevNode_Status_Ex)
+         85   54          CM_Get_Device_IDA (forwarded to cfgmgr32.CM_Get_Device_IDA)
+         86   55          CM_Get_Device_IDW (forwarded to cfgmgr32.CM_Get_Device_IDW)
+         87   56          CM_Get_Device_ID_ExA (forwarded to cfgmgr32.CM_Get_Device_ID_ExA)
+         88   57          CM_Get_Device_ID_ExW (forwarded to cfgmgr32.CM_Get_Device_ID_ExW)
+         89   58          CM_Get_Device_ID_ListA (forwarded to cfgmgr32.CM_Get_Device_ID_ListA)
+         90   59          CM_Get_Device_ID_ListW (forwarded to cfgmgr32.CM_Get_Device_ID_ListW)
+         91   5A          CM_Get_Device_ID_List_ExA (forwarded to cfgmgr32.CM_Get_Device_ID_List_ExA)
+         92   5B          CM_Get_Device_ID_List_ExW (forwarded to cfgmgr32.CM_Get_Device_ID_List_ExW)
+         93   5C          CM_Get_Device_ID_List_SizeA (forwarded to cfgmgr32.CM_Get_Device_ID_List_SizeA)
+         94   5D          CM_Get_Device_ID_List_SizeW (forwarded to cfgmgr32.CM_Get_Device_ID_List_SizeW)
+         95   5E          CM_Get_Device_ID_List_Size_ExA (forwarded to cfgmgr32.CM_Get_Device_ID_List_Size_ExA)
+         96   5F          CM_Get_Device_ID_List_Size_ExW (forwarded to cfgmgr32.CM_Get_Device_ID_List_Size_ExW)
+         97   60          CM_Get_Device_ID_Size (forwarded to cfgmgr32.CM_Get_Device_ID_Size)
+         98   61          CM_Get_Device_ID_Size_Ex (forwarded to cfgmgr32.CM_Get_Device_ID_Size_Ex)
+         99   62          CM_Get_Device_Interface_AliasA (forwarded to cfgmgr32.CM_Get_Device_Interface_AliasA)
+        100   63          CM_Get_Device_Interface_AliasW (forwarded to cfgmgr32.CM_Get_Device_Interface_AliasW)
+        101   64          CM_Get_Device_Interface_Alias_ExA (forwarded to cfgmgr32.CM_Get_Device_Interface_Alias_ExA)
+        102   65          CM_Get_Device_Interface_Alias_ExW (forwarded to cfgmgr32.CM_Get_Device_Interface_Alias_ExW)
+        103   66          CM_Get_Device_Interface_ListA (forwarded to cfgmgr32.CM_Get_Device_Interface_ListA)
+        104   67          CM_Get_Device_Interface_ListW (forwarded to cfgmgr32.CM_Get_Device_Interface_ListW)
+        105   68          CM_Get_Device_Interface_List_ExA (forwarded to cfgmgr32.CM_Get_Device_Interface_List_ExA)
+        106   69          CM_Get_Device_Interface_List_ExW (forwarded to cfgmgr32.CM_Get_Device_Interface_List_ExW)
+        107   6A          CM_Get_Device_Interface_List_SizeA (forwarded to cfgmgr32.CM_Get_Device_Interface_List_SizeA)
+        108   6B          CM_Get_Device_Interface_List_SizeW (forwarded to cfgmgr32.CM_Get_Device_Interface_List_SizeW)
+        109   6C          CM_Get_Device_Interface_List_Size_ExA (forwarded to cfgmgr32.CM_Get_Device_Interface_List_Size_ExA)
+        110   6D          CM_Get_Device_Interface_List_Size_ExW (forwarded to cfgmgr32.CM_Get_Device_Interface_List_Size_ExW)
+        111   6E          CM_Get_First_Log_Conf (forwarded to cfgmgr32.CM_Get_First_Log_Conf)
+        112   6F          CM_Get_First_Log_Conf_Ex (forwarded to cfgmgr32.CM_Get_First_Log_Conf_Ex)
+        113   70          CM_Get_Global_State (forwarded to cfgmgr32.CM_Get_Global_State)
+        114   71          CM_Get_Global_State_Ex (forwarded to cfgmgr32.CM_Get_Global_State_Ex)
+        115   72          CM_Get_HW_Prof_FlagsA (forwarded to cfgmgr32.CM_Get_HW_Prof_FlagsA)
+        116   73          CM_Get_HW_Prof_FlagsW (forwarded to cfgmgr32.CM_Get_HW_Prof_FlagsW)
+        117   74          CM_Get_HW_Prof_Flags_ExA (forwarded to cfgmgr32.CM_Get_HW_Prof_Flags_ExA)
+        118   75          CM_Get_HW_Prof_Flags_ExW (forwarded to cfgmgr32.CM_Get_HW_Prof_Flags_ExW)
+        119   76          CM_Get_Hardware_Profile_InfoA (forwarded to cfgmgr32.CM_Get_Hardware_Profile_InfoA)
+        120   77          CM_Get_Hardware_Profile_InfoW (forwarded to cfgmgr32.CM_Get_Hardware_Profile_InfoW)
+        121   78          CM_Get_Hardware_Profile_Info_ExA (forwarded to cfgmgr32.CM_Get_Hardware_Profile_Info_ExA)
+        122   79          CM_Get_Hardware_Profile_Info_ExW (forwarded to cfgmgr32.CM_Get_Hardware_Profile_Info_ExW)
+        123   7A          CM_Get_Log_Conf_Priority (forwarded to cfgmgr32.CM_Get_Log_Conf_Priority)
+        124   7B          CM_Get_Log_Conf_Priority_Ex (forwarded to cfgmgr32.CM_Get_Log_Conf_Priority_Ex)
+        125   7C          CM_Get_Next_Log_Conf (forwarded to cfgmgr32.CM_Get_Next_Log_Conf)
+        126   7D          CM_Get_Next_Log_Conf_Ex (forwarded to cfgmgr32.CM_Get_Next_Log_Conf_Ex)
+        127   7E          CM_Get_Next_Res_Des (forwarded to cfgmgr32.CM_Get_Next_Res_Des)
+        128   7F          CM_Get_Next_Res_Des_Ex (forwarded to cfgmgr32.CM_Get_Next_Res_Des_Ex)
+        129   80          CM_Get_Parent (forwarded to cfgmgr32.CM_Get_Parent)
+        130   81          CM_Get_Parent_Ex (forwarded to cfgmgr32.CM_Get_Parent_Ex)
+        131   82          CM_Get_Res_Des_Data (forwarded to cfgmgr32.CM_Get_Res_Des_Data)
+        132   83          CM_Get_Res_Des_Data_Ex (forwarded to cfgmgr32.CM_Get_Res_Des_Data_Ex)
+        133   84          CM_Get_Res_Des_Data_Size (forwarded to cfgmgr32.CM_Get_Res_Des_Data_Size)
+        134   85          CM_Get_Res_Des_Data_Size_Ex (forwarded to cfgmgr32.CM_Get_Res_Des_Data_Size_Ex)
+        135   86          CM_Get_Resource_Conflict_Count (forwarded to cfgmgr32.CM_Get_Resource_Conflict_Count)
+        136   87          CM_Get_Resource_Conflict_DetailsA (forwarded to cfgmgr32.CM_Get_Resource_Conflict_DetailsA)
+        137   88          CM_Get_Resource_Conflict_DetailsW (forwarded to cfgmgr32.CM_Get_Resource_Conflict_DetailsW)
+        138   89          CM_Get_Sibling (forwarded to cfgmgr32.CM_Get_Sibling)
+        139   8A          CM_Get_Sibling_Ex (forwarded to cfgmgr32.CM_Get_Sibling_Ex)
+        140   8B          CM_Get_Version (forwarded to cfgmgr32.CM_Get_Version)
+        141   8C          CM_Get_Version_Ex (forwarded to cfgmgr32.CM_Get_Version_Ex)
+        142   8D 000A58E0 CM_Import_PowerScheme
+        143   8E          CM_Install_DevNodeW (forwarded to cfgmgr32.CM_Install_DevNodeW)
+        144   8F          CM_Install_DevNode_ExW (forwarded to cfgmgr32.CM_Install_DevNode_ExW)
+        145   90          CM_Intersect_Range_List (forwarded to cfgmgr32.CM_Intersect_Range_List)
+        146   91          CM_Invert_Range_List (forwarded to cfgmgr32.CM_Invert_Range_List)
+        147   92          CM_Is_Dock_Station_Present (forwarded to cfgmgr32.CM_Is_Dock_Station_Present)
+        148   93          CM_Is_Dock_Station_Present_Ex (forwarded to cfgmgr32.CM_Is_Dock_Station_Present_Ex)
+        149   94          CM_Is_Version_Available (forwarded to cfgmgr32.CM_Is_Version_Available)
+        150   95          CM_Is_Version_Available_Ex (forwarded to cfgmgr32.CM_Is_Version_Available_Ex)
+        151   96          CM_Locate_DevNodeA (forwarded to cfgmgr32.CM_Locate_DevNodeA)
+        152   97          CM_Locate_DevNodeW (forwarded to cfgmgr32.CM_Locate_DevNodeW)
+        153   98          CM_Locate_DevNode_ExA (forwarded to cfgmgr32.CM_Locate_DevNode_ExA)
+        154   99          CM_Locate_DevNode_ExW (forwarded to cfgmgr32.CM_Locate_DevNode_ExW)
+        155   9A          CM_Merge_Range_List (forwarded to cfgmgr32.CM_Merge_Range_List)
+        156   9B          CM_Modify_Res_Des (forwarded to cfgmgr32.CM_Modify_Res_Des)
+        157   9C          CM_Modify_Res_Des_Ex (forwarded to cfgmgr32.CM_Modify_Res_Des_Ex)
+        158   9D          CM_Move_DevNode (forwarded to cfgmgr32.CM_Move_DevNode)
+        159   9E          CM_Move_DevNode_Ex (forwarded to cfgmgr32.CM_Move_DevNode_Ex)
+        160   9F          CM_Next_Range (forwarded to cfgmgr32.CM_Next_Range)
+        161   A0          CM_Open_Class_KeyA (forwarded to cfgmgr32.CM_Open_Class_KeyA)
+        162   A1          CM_Open_Class_KeyW (forwarded to cfgmgr32.CM_Open_Class_KeyW)
+        163   A2          CM_Open_Class_Key_ExA (forwarded to cfgmgr32.CM_Open_Class_Key_ExA)
+        164   A3          CM_Open_Class_Key_ExW (forwarded to cfgmgr32.CM_Open_Class_Key_ExW)
+        165   A4          CM_Open_DevNode_Key (forwarded to cfgmgr32.CM_Open_DevNode_Key)
+        166   A5          CM_Open_DevNode_Key_Ex (forwarded to cfgmgr32.CM_Open_DevNode_Key_Ex)
+        167   A6          CM_Open_Device_Interface_KeyA (forwarded to cfgmgr32.CM_Open_Device_Interface_KeyA)
+        168   A7          CM_Open_Device_Interface_KeyW (forwarded to cfgmgr32.CM_Open_Device_Interface_KeyW)
+        169   A8          CM_Open_Device_Interface_Key_ExA (forwarded to cfgmgr32.CM_Open_Device_Interface_Key_ExA)
+        170   A9          CM_Open_Device_Interface_Key_ExW (forwarded to cfgmgr32.CM_Open_Device_Interface_Key_ExW)
+        171   AA          CM_Query_And_Remove_SubTreeA (forwarded to cfgmgr32.CM_Query_And_Remove_SubTreeA)
+        172   AB          CM_Query_And_Remove_SubTreeW (forwarded to cfgmgr32.CM_Query_And_Remove_SubTreeW)
+        173   AC          CM_Query_And_Remove_SubTree_ExA (forwarded to cfgmgr32.CM_Query_And_Remove_SubTree_ExA)
+        174   AD          CM_Query_And_Remove_SubTree_ExW (forwarded to cfgmgr32.CM_Query_And_Remove_SubTree_ExW)
+        175   AE          CM_Query_Arbitrator_Free_Data (forwarded to cfgmgr32.CM_Query_Arbitrator_Free_Data)
+        176   AF          CM_Query_Arbitrator_Free_Data_Ex (forwarded to cfgmgr32.CM_Query_Arbitrator_Free_Data_Ex)
+        177   B0          CM_Query_Arbitrator_Free_Size (forwarded to cfgmgr32.CM_Query_Arbitrator_Free_Size)
+        178   B1          CM_Query_Arbitrator_Free_Size_Ex (forwarded to cfgmgr32.CM_Query_Arbitrator_Free_Size_Ex)
+        179   B2          CM_Query_Remove_SubTree (forwarded to cfgmgr32.CM_Query_Remove_SubTree)
+        180   B3          CM_Query_Remove_SubTree_Ex (forwarded to cfgmgr32.CM_Query_Remove_SubTree_Ex)
+        181   B4          CM_Query_Resource_Conflict_List (forwarded to cfgmgr32.CM_Query_Resource_Conflict_List)
+        182   B5          CM_Reenumerate_DevNode (forwarded to cfgmgr32.CM_Reenumerate_DevNode)
+        183   B6          CM_Reenumerate_DevNode_Ex (forwarded to cfgmgr32.CM_Reenumerate_DevNode_Ex)
+        184   B7          CM_Register_Device_Driver (forwarded to cfgmgr32.CM_Register_Device_Driver)
+        185   B8          CM_Register_Device_Driver_Ex (forwarded to cfgmgr32.CM_Register_Device_Driver_Ex)
+        186   B9          CM_Register_Device_InterfaceA (forwarded to cfgmgr32.CM_Register_Device_InterfaceA)
+        187   BA          CM_Register_Device_InterfaceW (forwarded to cfgmgr32.CM_Register_Device_InterfaceW)
+        188   BB          CM_Register_Device_Interface_ExA (forwarded to cfgmgr32.CM_Register_Device_Interface_ExA)
+        189   BC          CM_Register_Device_Interface_ExW (forwarded to cfgmgr32.CM_Register_Device_Interface_ExW)
+        190   BD          CM_Remove_SubTree (forwarded to cfgmgr32.CM_Remove_SubTree)
+        191   BE          CM_Remove_SubTree_Ex (forwarded to cfgmgr32.CM_Remove_SubTree_Ex)
+        192   BF          CM_Request_Device_EjectA (forwarded to cfgmgr32.CM_Request_Device_EjectA)
+        193   C0          CM_Request_Device_EjectW (forwarded to cfgmgr32.CM_Request_Device_EjectW)
+        194   C1          CM_Request_Device_Eject_ExA (forwarded to cfgmgr32.CM_Request_Device_Eject_ExA)
+        195   C2          CM_Request_Device_Eject_ExW (forwarded to cfgmgr32.CM_Request_Device_Eject_ExW)
+        196   C3          CM_Request_Eject_PC (forwarded to cfgmgr32.CM_Request_Eject_PC)
+        197   C4          CM_Request_Eject_PC_Ex (forwarded to cfgmgr32.CM_Request_Eject_PC_Ex)
+        198   C5 000A58E0 CM_RestoreAll_DefaultPowerSchemes
+        199   C6 000A58E0 CM_Restore_DefaultPowerScheme
+        200   C7          CM_Run_Detection (forwarded to cfgmgr32.CM_Run_Detection)
+        201   C8          CM_Run_Detection_Ex (forwarded to cfgmgr32.CM_Run_Detection_Ex)
+        202   C9 000A58E0 CM_Set_ActiveScheme
+        203   CA          CM_Set_Class_Registry_PropertyA (forwarded to cfgmgr32.CM_Set_Class_Registry_PropertyA)
+        204   CB          CM_Set_Class_Registry_PropertyW (forwarded to cfgmgr32.CM_Set_Class_Registry_PropertyW)
+        205   CC          CM_Set_DevNode_Problem (forwarded to cfgmgr32.CM_Set_DevNode_Problem)
+        206   CD          CM_Set_DevNode_Problem_Ex (forwarded to cfgmgr32.CM_Set_DevNode_Problem_Ex)
+        207   CE          CM_Set_DevNode_Registry_PropertyA (forwarded to cfgmgr32.CM_Set_DevNode_Registry_PropertyA)
+        208   CF          CM_Set_DevNode_Registry_PropertyW (forwarded to cfgmgr32.CM_Set_DevNode_Registry_PropertyW)
+        209   D0          CM_Set_DevNode_Registry_Property_ExA (forwarded to cfgmgr32.CM_Set_DevNode_Registry_Property_ExA)
+        210   D1          CM_Set_DevNode_Registry_Property_ExW (forwarded to cfgmgr32.CM_Set_DevNode_Registry_Property_ExW)
+        211   D2          CM_Set_HW_Prof (forwarded to cfgmgr32.CM_Set_HW_Prof)
+        212   D3          CM_Set_HW_Prof_Ex (forwarded to cfgmgr32.CM_Set_HW_Prof_Ex)
+        213   D4          CM_Set_HW_Prof_FlagsA (forwarded to cfgmgr32.CM_Set_HW_Prof_FlagsA)
+        214   D5          CM_Set_HW_Prof_FlagsW (forwarded to cfgmgr32.CM_Set_HW_Prof_FlagsW)
+        215   D6          CM_Set_HW_Prof_Flags_ExA (forwarded to cfgmgr32.CM_Set_HW_Prof_Flags_ExA)
+        216   D7          CM_Set_HW_Prof_Flags_ExW (forwarded to cfgmgr32.CM_Set_HW_Prof_Flags_ExW)
+        217   D8          CM_Setup_DevNode (forwarded to cfgmgr32.CM_Setup_DevNode)
+        218   D9          CM_Setup_DevNode_Ex (forwarded to cfgmgr32.CM_Setup_DevNode_Ex)
+        219   DA          CM_Test_Range_Available (forwarded to cfgmgr32.CM_Test_Range_Available)
+        220   DB          CM_Uninstall_DevNode (forwarded to cfgmgr32.CM_Uninstall_DevNode)
+        221   DC          CM_Uninstall_DevNode_Ex (forwarded to cfgmgr32.CM_Uninstall_DevNode_Ex)
+        222   DD          CM_Unregister_Device_InterfaceA (forwarded to cfgmgr32.CM_Unregister_Device_InterfaceA)
+        223   DE          CM_Unregister_Device_InterfaceW (forwarded to cfgmgr32.CM_Unregister_Device_InterfaceW)
+        224   DF          CM_Unregister_Device_Interface_ExA (forwarded to cfgmgr32.CM_Unregister_Device_Interface_ExA)
+        225   E0          CM_Unregister_Device_Interface_ExW (forwarded to cfgmgr32.CM_Unregister_Device_Interface_ExW)
+        226   E1 000A58E0 CM_Write_UserPowerKey
+        227   E2 000BE240 DoesUserHavePrivilege
+        228   E3 000B9500 DriverStoreAddDriverPackageA
+        229   E4 000B96C0 DriverStoreAddDriverPackageW
+        230   E5 000B9890 DriverStoreDeleteDriverPackageA
+        231   E6 000B9910 DriverStoreDeleteDriverPackageW
+        232   E7 000B9980 DriverStoreEnumDriverPackageA
+        233   E8 000B9A30 DriverStoreEnumDriverPackageW
+        234   E9 000B9AE0 DriverStoreFindDriverPackageA
+        235   EA 000B9CC0 DriverStoreFindDriverPackageW
+        236   EB 0004C280 ExtensionPropSheetPageProc
+        237   EC 000A5880 InstallCatalog
+        238   ED 000800B0 InstallHinfSection
+        239   EE 000800B0 InstallHinfSectionA
+        240   EF 00080120 InstallHinfSectionW
+        241   F0 000BE760 IsUserAdmin
+        242   F1 000A5890 MyFree
+        243   F2 000A58A0 MyMalloc
+        244   F3 000A58C0 MyRealloc
+        245   F4 0006F3B0 PnpEnumDrpFile
+        246   F5 0006F6C0 PnpIsFileAclIntact
+        247   F6 0006F7E0 PnpIsFileContentIntact
+        248   F7 000010E0 PnpIsFilePnpDriver
+        249   F8 0006F900 PnpRepairWindowsProtectedDriver
+        250   F9 00069200 SetupAddInstallSectionToDiskSpaceListA
+        251   FA 00069330 SetupAddInstallSectionToDiskSpaceListW
+        252   FB 00069440 SetupAddSectionToDiskSpaceListA
+        253   FC 00069560 SetupAddSectionToDiskSpaceListW
+        254   FD 00069640 SetupAddToDiskSpaceListA
+        255   FE 00069790 SetupAddToDiskSpaceListW
+        256   FF 000A3040 SetupAddToSourceListA
+        257  100 000A3120 SetupAddToSourceListW
+        258  101 00069940 SetupAdjustDiskSpaceListA
+        259  102 00069A70 SetupAdjustDiskSpaceListW
+        260  103 000A9870 SetupBackupErrorA
+        261  104 000A9A20 SetupBackupErrorW
+        262  105 000A3200 SetupCancelTemporarySourceList
+        263  106 00019F40 SetupCloseFileQueue
+        264  107 000167D0 SetupCloseInfFile
+        265  108 000A13A0 SetupCloseLog
+        266  109 000768B0 SetupCommitFileQueue
+        267  10A 00076980 SetupCommitFileQueueA
+        268  10B 00076A50 SetupCommitFileQueueW
+        269  10C 00066840 SetupConfigureWmiFromInfSectionA
+        270  10D 00066990 SetupConfigureWmiFromInfSectionW
+        271  10E 000A9CD0 SetupCopyErrorA
+        272  10F 000A9FF0 SetupCopyErrorW
+        273  110 0009ADB0 SetupCopyOEMInfA
+        274  111 0009B0F0 SetupCopyOEMInfW
+        275  112 00069C10 SetupCreateDiskSpaceListA
+        276  113 00069CC0 SetupCreateDiskSpaceListW
+        277  114 000338C0 SetupDecompressOrCopyFileA
+        278  115 000339D0 SetupDecompressOrCopyFileW
+        279  116 00077890 SetupDefaultQueueCallback
+        280  117 000777D0 SetupDefaultQueueCallbackA
+        281  118 00077890 SetupDefaultQueueCallbackW
+        282  119 000AA710 SetupDeleteErrorA
+        283  11A 000AA870 SetupDeleteErrorW
+        284  11B 00069E20 SetupDestroyDiskSpaceList
+        285  11C 000A58E0 SetupDiApplyPowerScheme
+        286  11D 0004BF20 SetupDiAskForOEMDisk
+        287  11E 00035330 SetupDiBuildClassInfoList
+        288  11F 00035460 SetupDiBuildClassInfoListExA
+        289  120 000355F0 SetupDiBuildClassInfoListExW
+        290  121 00018710 SetupDiBuildDriverInfoList
+        291  122 000206F0 SetupDiCallClassInstaller
+        292  123 00037680 SetupDiCancelDriverInfoSearch
+        293  124 00046930 SetupDiChangeState
+        294  125 00035950 SetupDiClassGuidsFromNameA
+        295  126 00035AC0 SetupDiClassGuidsFromNameExA
+        296  127 00035C70 SetupDiClassGuidsFromNameExW
+        297  128 00035DB0 SetupDiClassGuidsFromNameW
+        298  129 00035EE0 SetupDiClassNameFromGuidA
+        299  12A 00036010 SetupDiClassNameFromGuidExA
+        300  12B 00036240 SetupDiClassNameFromGuidExW
+        301  12C 000363C0 SetupDiClassNameFromGuidW
+        302  12D 0004D650 SetupDiCreateDevRegKeyA
+        303  12E 0004D7F0 SetupDiCreateDevRegKeyW
+        304  12F 0003CA10 SetupDiCreateDeviceInfoA
+        305  130 00021EE0 SetupDiCreateDeviceInfoList
+        306  131 0003CB70 SetupDiCreateDeviceInfoListExA
+        307  132 00003DC0 SetupDiCreateDeviceInfoListExW
+        308  133 0003CC70 SetupDiCreateDeviceInfoW
+        309  134 0003D080 SetupDiCreateDeviceInterfaceA
+        310  135 0004DBE0 SetupDiCreateDeviceInterfaceRegKeyA
+        311  136 0004DD70 SetupDiCreateDeviceInterfaceRegKeyW
+        312  137 0003D1A0 SetupDiCreateDeviceInterfaceW
+        313  138 0004E1E0 SetupDiDeleteDevRegKey
+        314  139 0003D340 SetupDiDeleteDeviceInfo
+        315  13A 0003D480 SetupDiDeleteDeviceInterfaceData
+        316  13B 0004E360 SetupDiDeleteDeviceInterfaceRegKey
+        317  13C 0003A690 SetupDiDestroyClassImageList
+        318  13D 00002370 SetupDiDestroyDeviceInfoList
+        319  13E 0001F3B0 SetupDiDestroyDriverInfoList
+        320  13F 0003A820 SetupDiDrawMiniIcon
+        321  140 00002C90 SetupDiEnumDeviceInfo
+        322  141 00002720 SetupDiEnumDeviceInterfaces
+        323  142 000377B0 SetupDiEnumDriverInfoA
+        324  143 0001DBF0 SetupDiEnumDriverInfoW
+        325  144 000473F0 SetupDiGetActualModelsSectionA
+        326  145 000475C0 SetupDiGetActualModelsSectionW
+        327  146 00047850 SetupDiGetActualSectionToInstallA
+        328  147 00047930 SetupDiGetActualSectionToInstallExA
+        329  148 00047BC0 SetupDiGetActualSectionToInstallExW
+        330  149 00016840 SetupDiGetActualSectionToInstallW
+        331  14A 0003AC10 SetupDiGetClassBitmapIndex
+        332  14B 000364F0 SetupDiGetClassDescriptionA
+        333  14C 00036620 SetupDiGetClassDescriptionExA
+        334  14D 00036860 SetupDiGetClassDescriptionExW
+        335  14E 000369B0 SetupDiGetClassDescriptionW
+        336  14F 0004C3E0 SetupDiGetClassDevPropertySheetsA
+        337  150 0004C580 SetupDiGetClassDevPropertySheetsW
+        338  151 0001AAA0 SetupDiGetClassDevsA
+        339  152 0003D5A0 SetupDiGetClassDevsExA
+        340  153 000021C0 SetupDiGetClassDevsExW
+        341  154 00002110 SetupDiGetClassDevsW
+        342  155 0003ADD0 SetupDiGetClassImageIndex
+        343  156 0003AF80 SetupDiGetClassImageList
+        344  157 0003B090 SetupDiGetClassImageListExA
+        345  158 0003B1E0 SetupDiGetClassImageListExW
+        346  159 0003E550 SetupDiGetClassInstallParamsA
+        347  15A 0003E7D0 SetupDiGetClassInstallParamsW
+        348  15B 00018470 SetupDiGetClassPropertyExW
+        349  15C 0004E4C0 SetupDiGetClassPropertyKeys
+        350  15D 0004E600 SetupDiGetClassPropertyKeysExW
+        351  15E 00018350 SetupDiGetClassPropertyW
+        352  15F 0004E730 SetupDiGetClassRegistryPropertyA
+        353  160 0004EA00 SetupDiGetClassRegistryPropertyW
+        354  161 0004EA10 SetupDiGetCustomDevicePropertyA
+        355  162 0004EB50 SetupDiGetCustomDevicePropertyW
+        356  163 0003D710 SetupDiGetDeviceInfoListClass
+        357  164 0003D830 SetupDiGetDeviceInfoListDetailA
+        358  165 0001A700 SetupDiGetDeviceInfoListDetailW
+        359  166 0003E940 SetupDiGetDeviceInstallParamsA
+        360  167 0001F830 SetupDiGetDeviceInstallParamsW
+        361  168 0003D920 SetupDiGetDeviceInstanceIdA
+        362  169 00021920 SetupDiGetDeviceInstanceIdW
+        363  16A 00020AB0 SetupDiGetDeviceInterfaceAlias
+        364  16B 0003DAF0 SetupDiGetDeviceInterfaceDetailA
+        365  16C 00002A50 SetupDiGetDeviceInterfaceDetailW
+        366  16D 0004EC90 SetupDiGetDeviceInterfacePropertyKeys
+        367  16E 0004EE40 SetupDiGetDeviceInterfacePropertyW
+        368  16F 0004F010 SetupDiGetDevicePropertyKeys
+        369  170 00002870 SetupDiGetDevicePropertyW
+        370  171 0001E550 SetupDiGetDeviceRegistryPropertyA
+        371  172 000039D0 SetupDiGetDeviceRegistryPropertyW
+        372  173 000378C0 SetupDiGetDriverInfoDetailA
+        373  174 000136B0 SetupDiGetDriverInfoDetailW
+        374  175 00037E30 SetupDiGetDriverInstallParamsA
+        375  176 00037F40 SetupDiGetDriverInstallParamsW
+        376  177 0003EAA0 SetupDiGetHwProfileFriendlyNameA
+        377  178 0003EBD0 SetupDiGetHwProfileFriendlyNameExA
+        378  179 0003EE10 SetupDiGetHwProfileFriendlyNameExW
+        379  17A 0003F050 SetupDiGetHwProfileFriendlyNameW
+        380  17B 0003F180 SetupDiGetHwProfileList
+        381  17C 0003F2B0 SetupDiGetHwProfileListExA
+        382  17D 0003F440 SetupDiGetHwProfileListExW
+        383  17E 00036AE0 SetupDiGetINFClassA
+        384  17F 00036D00 SetupDiGetINFClassW
+        385  180 00064420 SetupDiGetSelectedDevice
+        386  181 00038110 SetupDiGetSelectedDriverA
+        387  182 0001DE10 SetupDiGetSelectedDriverW
+        388  183 00064560 SetupDiGetWizardPage
+        389  184 0003F660 SetupDiInstallClassA
+        390  185 0003F7D0 SetupDiInstallClassExA
+        391  186 0003F960 SetupDiInstallClassExW
+        392  187 000406F0 SetupDiInstallClassW
+        393  188 00047CE0 SetupDiInstallDevice
+        394  189 00048640 SetupDiInstallDeviceInterfaces
+        395  18A 0001FE00 SetupDiInstallDriverFiles
+        396  18B 0003B840 SetupDiLoadClassIcon
+        397  18C 0003B9F0 SetupDiLoadDeviceIcon
+        398  18D 000486F0 SetupDiMoveDuplicateDevice
+        399  18E 0004F1D0 SetupDiOpenClassRegKey
+        400  18F 0004F300 SetupDiOpenClassRegKeyExA
+        401  190 0004F480 SetupDiOpenClassRegKeyExW
+        402  191 000217C0 SetupDiOpenDevRegKey
+        403  192 0003DD90 SetupDiOpenDeviceInfoA
+        404  193 00021A60 SetupDiOpenDeviceInfoW
+        405  194 0003DE90 SetupDiOpenDeviceInterfaceA
+        406  195 0001FFF0 SetupDiOpenDeviceInterfaceRegKey
+        407  196 00021420 SetupDiOpenDeviceInterfaceW
+        408  197 00048FB0 SetupDiRegisterCoDeviceInstallers
+        409  198 0003DF80 SetupDiRegisterDeviceInfo
+        410  199 00049060 SetupDiRemoveDevice
+        411  19A 0003E1F0 SetupDiRemoveDeviceInterface
+        412  19B 000B1800 SetupDiReportAdditionalSoftwareRequested
+        413  19C 000B1FD0 SetupDiReportDeviceInstallError
+        414  19D 000B68A0 SetupDiReportDriverNotFoundError
+        415  19E 000B27C0 SetupDiReportDriverPackageImportationError
+        416  19F 000B2D60 SetupDiReportGenericDriverInstalled
+        417  1A0 000B3220 SetupDiReportPnPDeviceProblem
+        418  1A1 000492C0 SetupDiRestartDevices
+        419  1A2 00049460 SetupDiSelectBestCompatDrv
+        420  1A3 00064890 SetupDiSelectDevice
+        421  1A4 0004C170 SetupDiSelectOEMDrv
+        422  1A5 00040830 SetupDiSetClassInstallParamsA
+        423  1A6 000409E0 SetupDiSetClassInstallParamsW
+        424  1A7 0004F490 SetupDiSetClassPropertyExW
+        425  1A8 0004F5C0 SetupDiSetClassPropertyW
+        426  1A9 0004F710 SetupDiSetClassRegistryPropertyA
+        427  1AA 0004F960 SetupDiSetClassRegistryPropertyW
+        428  1AB 00040B50 SetupDiSetDeviceInstallParamsA
+        429  1AC 000074B0 SetupDiSetDeviceInstallParamsW
+        430  1AD 0003E310 SetupDiSetDeviceInterfaceDefault
+        431  1AE 0004F970 SetupDiSetDeviceInterfacePropertyW
+        432  1AF 0004FB30 SetupDiSetDevicePropertyW
+        433  1B0 0004FD00 SetupDiSetDeviceRegistryPropertyA
+        434  1B1 0004FE20 SetupDiSetDeviceRegistryPropertyW
+        435  1B2 00038210 SetupDiSetDriverInstallParamsA
+        436  1B3 00038320 SetupDiSetDriverInstallParamsW
+        437  1B4 00064B50 SetupDiSetSelectedDevice
+        438  1B5 000384C0 SetupDiSetSelectedDriverA
+        439  1B6 00015A20 SetupDiSetSelectedDriverW
+        440  1B7 00049CE0 SetupDiUnremoveDevice
+        441  1B8 00069FA0 SetupDuplicateDiskSpaceListA
+        442  1B9 0006A060 SetupDuplicateDiskSpaceListW
+        443  1BA 00097B70 SetupEnumInfSectionsA
+        444  1BB 00097DF0 SetupEnumInfSectionsW
+        445  1BC 000B6CD0 SetupEnumPublishedInfA
+        446  1BD 000B6D50 SetupEnumPublishedInfW
+        447  1BE 000976E0 SetupFindFirstLineA
+        448  1BF 00097870 SetupFindFirstLineW
+        449  1C0 0001AD40 SetupFindNextLine
+        450  1C1 00097880 SetupFindNextMatchLineA
+        451  1C2 00097970 SetupFindNextMatchLineW
+        452  1C3 000A32F0 SetupFreeSourceListA
+        453  1C4 000A3390 SetupFreeSourceListW
+        454  1C5 00031660 SetupGetBackupInformationA
+        455  1C6 000316E0 SetupGetBackupInformationW
+        456  1C7 00020200 SetupGetBinaryField
+        457  1C8 000128C0 SetupGetFieldCount
+        458  1C9 00033F00 SetupGetFileCompressionInfoA
+        459  1CA 00034130 SetupGetFileCompressionInfoExA
+        460  1CB 00034370 SetupGetFileCompressionInfoExW
+        461  1CC 00034570 SetupGetFileCompressionInfoW
+        462  1CD 00074270 SetupGetFileQueueCount
+        463  1CE 00074400 SetupGetFileQueueFlags
+        464  1CF 0009CFD0 SetupGetInfDriverStoreLocationA
+        465  1D0 000210F0 SetupGetInfDriverStoreLocationW
+        466  1D1 0009D210 SetupGetInfFileListA
+        467  1D2 0009D340 SetupGetInfFileListW
+        468  1D3 0009D470 SetupGetInfInformationA
+        469  1D4 0009D5B0 SetupGetInfInformationW
+        470  1D5 0009D930 SetupGetInfPublishedNameA
+        471  1D6 00021F60 SetupGetInfPublishedNameW
+        472  1D7 0009F580 SetupGetInfSections
+        473  1D8 00011660 SetupGetIntField
+        474  1D9 00097980 SetupGetLineByIndexA
+        475  1DA 00097A70 SetupGetLineByIndexW
+        476  1DB 00097A80 SetupGetLineCountA
+        477  1DC 00097B60 SetupGetLineCountW
+        478  1DD 0009F7D0 SetupGetLineTextA
+        479  1DE 0009FC40 SetupGetLineTextW
+        480  1DF 0009FF90 SetupGetMultiSzFieldA
+        481  1E0 000A0340 SetupGetMultiSzFieldW
+        482  1E1 0007C0A0 SetupGetNonInteractiveMode
+        483  1E2 0007E840 SetupGetSourceFileLocationA
+        484  1E3 0007EA80 SetupGetSourceFileLocationW
+        485  1E4 0007EC70 SetupGetSourceFileSizeA
+        486  1E5 0007EE50 SetupGetSourceFileSizeW
+        487  1E6 0009F2E0 SetupGetSourceInfoA
+        488  1E7 0009F4B0 SetupGetSourceInfoW
+        489  1E8 000A0660 SetupGetStringFieldA
+        490  1E9 00012230 SetupGetStringFieldW
+        491  1EA 0007F030 SetupGetTargetPathA
+        492  1EB 0000E7D0 SetupGetTargetPathW
+        493  1EC          SetupGetThreadLogToken (forwarded to devrtl.DevRtlGetThreadLogToken)
+        494  1ED 00077C00 SetupInitDefaultQueueCallback
+        495  1EE 00077CA0 SetupInitDefaultQueueCallbackEx
+        496  1EF 000733E0 SetupInitializeFileLogA
+        497  1F0 00073470 SetupInitializeFileLogW
+        498  1F1 00031D40 SetupInstallFileA
+        499  1F2 00031E40 SetupInstallFileExA
+        500  1F3 00032010 SetupInstallFileExW
+        501  1F4 000322C0 SetupInstallFileW
+        502  1F5 00080D80 SetupInstallFilesFromInfSectionA
+        503  1F6 00080ED0 SetupInstallFilesFromInfSectionW
+        504  1F7 00081200 SetupInstallFromInfSectionA
+        505  1F8 000813D0 SetupInstallFromInfSectionW
+        506  1F9 000BE9F0 SetupInstallLogCloseEventGroup
+        507  1FA 000BEB90 SetupInstallLogCreateEventGroup
+        508  1FB 00081510 SetupInstallServicesFromInfSectionA
+        509  1FC 00081600 SetupInstallServicesFromInfSectionExA
+        510  1FD 00081720 SetupInstallServicesFromInfSectionExW
+        511  1FE 00081D30 SetupInstallServicesFromInfSectionW
+        512  1FF 00067A50 SetupIterateCabinetA
+        513  200 00067B50 SetupIterateCabinetW
+        514  201 000A14B0 SetupLogErrorA
+        515  202 000A1550 SetupLogErrorW
+        516  203 00073780 SetupLogFileA
+        517  204 00073970 SetupLogFileW
+        518  205 0009DAE0 SetupOpenAppendInfFileA
+        519  206 0001E640 SetupOpenAppendInfFileW
+        520  207 0001FA40 SetupOpenFileQueue
+        521  208 0009DC10 SetupOpenInfFileA
+        522  209 00016910 SetupOpenInfFileW
+        523  20A 000A15D0 SetupOpenLog
+        524  20B 0009DD90 SetupOpenMasterInf
+        525  20C 00031760 SetupPrepareQueueForRestoreA
+        526  20D 000317E0 SetupPrepareQueueForRestoreW
+        527  20E 000AAB20 SetupPromptForDiskA
+        528  20F 000AAE30 SetupPromptForDiskW
+        529  210 00079EF0 SetupPromptReboot
+        530  211 0006A2B0 SetupQueryDrivesInDiskSpaceListA
+        531  212 0006A370 SetupQueryDrivesInDiskSpaceListW
+        532  213 00073B20 SetupQueryFileLogA
+        533  214 00073D50 SetupQueryFileLogW
+        534  215 0009DEE0 SetupQueryInfFileInformationA
+        535  216 0009E0B0 SetupQueryInfFileInformationW
+        536  217 0009E170 SetupQueryInfOriginalFileInformationA
+        537  218 0009E380 SetupQueryInfOriginalFileInformationW
+        538  219 0009E5A0 SetupQueryInfVersionInformationA
+        539  21A 0009E820 SetupQueryInfVersionInformationW
+        540  21B 000A3480 SetupQuerySourceListA
+        541  21C 000A3630 SetupQuerySourceListW
+        542  21D 0006A430 SetupQuerySpaceRequiredOnDriveA
+        543  21E 0006A530 SetupQuerySpaceRequiredOnDriveW
+        544  21F 00074FF0 SetupQueueCopyA
+        545  220 000752D0 SetupQueueCopyIndirectA
+        546  221 00075590 SetupQueueCopyIndirectW
+        547  222 000756B0 SetupQueueCopySectionA
+        548  223 00011DA0 SetupQueueCopySectionW
+        549  224 00075810 SetupQueueCopyW
+        550  225 00075920 SetupQueueDefaultCopyA
+        551  226 00020F00 SetupQueueDefaultCopyW
+        552  227 00075E90 SetupQueueDeleteA
+        553  228 00075FB0 SetupQueueDeleteSectionA
+        554  229 0001AB90 SetupQueueDeleteSectionW
+        555  22A 000760A0 SetupQueueDeleteW
+        556  22B 000761C0 SetupQueueRenameA
+        557  22C 00076380 SetupQueueRenameSectionA
+        558  22D 00076470 SetupQueueRenameSectionW
+        559  22E 00076710 SetupQueueRenameW
+        560  22F 00073F50 SetupRemoveFileLogEntryA
+        561  230 00074050 SetupRemoveFileLogEntryW
+        562  231 0006A7A0 SetupRemoveFromDiskSpaceListA
+        563  232 0006A8D0 SetupRemoveFromDiskSpaceListW
+        564  233 000A3BF0 SetupRemoveFromSourceListA
+        565  234 000A3CD0 SetupRemoveFromSourceListW
+        566  235 0006AA60 SetupRemoveInstallSectionFromDiskSpaceListA
+        567  236 0006AB90 SetupRemoveInstallSectionFromDiskSpaceListW
+        568  237 0006ACA0 SetupRemoveSectionFromDiskSpaceListA
+        569  238 0006ADC0 SetupRemoveSectionFromDiskSpaceListW
+        570  239 000AB110 SetupRenameErrorA
+        571  23A 000AB2C0 SetupRenameErrorW
+        572  23B 00020610 SetupScanFileQueue
+        573  23C 0007A0C0 SetupScanFileQueueA
+        574  23D 00020610 SetupScanFileQueueW
+        575  23E 0007F230 SetupSetDirectoryIdA
+        576  23F 0007F2F0 SetupSetDirectoryIdExA
+        577  240 0007F400 SetupSetDirectoryIdExW
+        578  241 0007F4C0 SetupSetDirectoryIdW
+        579  242 000745F0 SetupSetFileQueueAlternatePlatformA
+        580  243 00074720 SetupSetFileQueueAlternatePlatformW
+        581  244 00074A00 SetupSetFileQueueFlags
+        582  245 0007C0C0 SetupSetNonInteractiveMode
+        583  246 00075AC0 SetupSetPlatformPathOverrideA
+        584  247 00075BB0 SetupSetPlatformPathOverrideW
+        585  248 000A3DB0 SetupSetSourceListA
+        586  249 000A3FA0 SetupSetSourceListW
+        587  24A          SetupSetThreadLogToken (forwarded to devrtl.DevRtlSetThreadLogToken)
+        588  24B 00077E40 SetupTermDefaultQueueCallback
+        589  24C 00074130 SetupTerminateFileLog
+        590  24D 00076B20 SetupUninstallNewlyCopiedInfs
+        591  24E 0009BAE0 SetupUninstallOEMInfA
+        592  24F 0009BC00 SetupUninstallOEMInfW
+        593  250 0009E9D0 SetupVerifyInfFileA
+        594  251 0001D860 SetupVerifyInfFileW
+        595  252          SetupWriteTextLog (forwarded to devrtl.DevRtlWriteTextLog)
+        596  253          SetupWriteTextLogError (forwarded to devrtl.DevRtlWriteTextLogError)
+        597  254 000129E0 SetupWriteTextLogInfLine
+        598  255 00007B30 UnicodeToMultiByte
+        599  256 000B0940 VerifyCatalogFile
+        600  257 000AF380 pGetDriverPackageHash
+        601  258 000AE080 pSetupAccessRunOnceNodeList
+        602  259 0003BB60 pSetupAddMiniIconToList
+        603  25A 0005E9A0 pSetupAddTagToGroupOrderListEntry
+        604  25B 0001B1A0 pSetupAppendPath
+        605  25C 0001A930 pSetupCaptureAndConvertAnsiArg
+        606  25D 000A2E90 pSetupCenterWindowRelativeToParent
+        607  25E          pSetupCloseTextLogSection (forwarded to devrtl.DevRtlCloseTextLogSection)
+        608  25F 00001650 pSetupConcatenatePaths
+        609  260          pSetupCreateTextLogSectionA (forwarded to devrtl.DevRtlCreateTextLogSectionA)
+        610  261          pSetupCreateTextLogSectionW (forwarded to devrtl.DevRtlCreateTextLogSectionW)
+        611  262 000AE090 pSetupDestroyRunOnceNodeList
+        612  263 00038C40 pSetupDiBuildInfoDataFromStrongName
+        613  264 000B6450 pSetupDiCrimsonLogDeviceInstall
+        614  265 00039450 pSetupDiEnumSelectedDrivers
+        615  266 000395E0 pSetupDiGetDriverInfoExtensionId
+        616  267 0006EDE0 pSetupDiGetStrongNameForDriverNode
+        617  268 000032C0 pSetupDiInvalidateHelperModules
+        618  269 000A0860 pSetupDoLastKnownGoodBackup
+        619  26A 000BE240 pSetupDoesUserHavePrivilege
+        620  26B 0001A650 pSetupDuplicateString
+        621  26C 000BE390 pSetupEnablePrivilege
+        622  26D 000C00E0 pSetupFree
+        623  26E 00076B20 pSetupGetCurrentDriverSigningPolicy
+        624  26F 00012780 pSetupGetDriverDate
+        625  270 00011010 pSetupGetDriverVersion
+        626  271 000126A0 pSetupGetField
+        627  272 000212E0 pSetupGetFileTitle
+        628  273 0001A2C0 pSetupGetGlobalFlags
+        629  274 000A5500 pSetupGetIndirectStringsFromDriverInfo
+        630  275 0009F640 pSetupGetInfSections
+        631  276 00074CC0 pSetupGetQueueFlags
+        632  277 00022E50 pSetupGetRealSystemTime
+        633  278 0001D810 pSetupGuidFromString
+        634  279 00006B20 pSetupHandleFailedVerification
+        635  27A 000AF750 pSetupInfGetDigitalSignatureInfo
+        636  27B 000221A0 pSetupInfIsInbox
+        637  27C 000AF940 pSetupInfSetDigitalSignatureInfo
+        638  27D 000AFAD0 pSetupInstallCatalog
+        639  27E 0003C740 pSetupIsBiDiLocalizedSystemEx
+        640  27F 000C01C0 pSetupIsGuidNull
+        641  280 00020E10 pSetupIsLocalSystem
+        642  281 000BE760 pSetupIsUserAdmin
+        643  282 00072130 pSetupIsUserTrustedInstaller
+        644  283 000A5730 pSetupLoadIndirectString
+        645  284 0001D230 pSetupMakeSurePathExists
+        646  285 000C0100 pSetupMalloc
+        647  286 0007C100 pSetupModifyGlobalFlags
+        648  287 0001A850 pSetupMultiByteToUnicode
+        649  288 000BFCB0 pSetupOpenAndMapFileForRead
+        650  289 000A2390 pSetupOutOfMemory
+        651  28A 000AD240 pSetupQueryMultiSzValueToArray
+        652  28B 000C0120 pSetupRealloc
+        653  28C 000C07A0 pSetupRegistryDelnode
+        654  28D 0005EE60 pSetupRetrieveServiceConfig
+        655  28E 000AD4E0 pSetupSetArrayToMultiSzValue
+        656  28F 000BA4F0 pSetupSetDriverPackageRestorePoint
+        657  290 0007C170 pSetupSetGlobalFlags
+        658  291 00074D60 pSetupSetQueueFlags
+        659  292 00039C40 pSetupShouldDeviceBeExcluded
+        660  293 0001A2F0 pSetupStringFromGuid
+        661  294 00009D80 pSetupStringTableAddString
+        662  295 00007F20 pSetupStringTableAddStringEx
+        663  296 0001B160 pSetupStringTableDestroy
+        664  297 000C0B20 pSetupStringTableDuplicate
+        665  298 000C0BC0 pSetupStringTableEnum
+        666  299 000C0C70 pSetupStringTableGetExtraData
+        667  29A 0001FBD0 pSetupStringTableInitialize
+        668  29B 0001FB70 pSetupStringTableInitializeEx
+        669  29C 00006EE0 pSetupStringTableLookUpString
+        670  29D 000083E0 pSetupStringTableLookUpStringEx
+        671  29E 00011CB0 pSetupStringTableSetExtraData
+        672  29F 000C0D10 pSetupStringTableStringFromId
+        673  2A0 000C0DA0 pSetupStringTableStringFromIdEx
+        674  2A1 00007B30 pSetupUnicodeToMultiByte
+        675  2A2 000B0640 pSetupUninstallCatalog
+        676  2A3 000BFFF0 pSetupUnmapAndCloseFile
+        677  2A4 000BA810 pSetupValidateDriverPackage
+        678  2A5 000B0940 pSetupVerifyCatalogFile
+        679  2A6 00006B20 pSetupVerifyQueuedCatalogs
+        680  2A7 00006B20 pSetupWriteLogEntry
+        681  2A8 00022E50 pSetupWriteLogError
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        7000 .pdata
+       3C000 .rdata
+        1000 .reloc
+      351000 .rsrc
+       DD000 .text

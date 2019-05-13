@@ -1,0 +1,40 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\mprext.dll
+
+File Type: DLL
+
+  Section contains the following exports for MPREXT.dll
+
+    00000000 characteristics
+    89EC31B8 time date stamp
+        0.00 version
+           1 ordinal base
+          11 number of functions
+          11 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000011F0 DoBroadcastSystemMessageWorker
+          2    1 000012C0 DoCommandLinePromptWorker
+          3    2 00001310 DoPasswordDialogWorker
+          4    3 00001440 DoProfileErrorDialogWorker
+          5    4 00001720 ShowReconnectDialogEndWorker
+          6    5 00001700 ShowReconnectDialogUIWorker
+          7    6 000016A0 ShowReconnectDialogWorker
+          8    7 00001050 WNetConnectionDialog1WWorker
+          9    8 00001160 WNetConnectionDialogWorker
+         10    9 000010F0 WNetDisconnectDialog1WWorker
+         11    A 000011D0 WNetDisconnectDialogWorker
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        2000 .text

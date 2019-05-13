@@ -1,0 +1,97 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\cryptngc.dll
+
+File Type: DLL
+
+  Section contains the following exports for cryptngc.dll
+
+    00000000 characteristics
+    AC2720B4 time date stamp
+        0.00 version
+           1 ordinal base
+          68 number of functions
+          68 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00017170 FidoCreateCredential
+          2    1 00017170 FidoGetCredential
+          3    2 00017170 FidoSignWithCredential
+          4    3 00023AB0 NgcAddBioProtector
+          5    4 00023CC0 NgcAddCompanionDeviceProtector
+          6    5 00023ED0 NgcAddPrebootProtector
+          7    6 00024120 NgcCancelPendingUIRequest
+          8    7 00024320 NgcChangePin
+          9    8 00024530 NgcChangePinSilent
+         10    9 00024770 NgcCreateContainer
+         11    A 00024C70 NgcCreateContainerSilent
+         12    B 00030990 NgcCreateTicketForSmartCardKeyOperation
+         13    C 00030A50 NgcCreateTicketForSmartCardVpn
+         14    D 0002D4C0 NgcCreateUserIdKey
+         15    E 0002D710 NgcCreateUserIdKeyEx
+         16    F 0002D980 NgcCreateUserIdKeyHandle
+         17   10 00001F30 NgcDecryptWithSymmetricPopKey
+         18   11 000306C0 NgcDecryptWithUserIdKey
+         19   12 00030700 NgcDecryptWithUserIdKeySilent
+         20   13 00024F60 NgcDeleteContainer
+         21   14 00024F70 NgcDeleteContainerEx
+         22   15 0001FB80 NgcDeleteSymmetricPopKeyTransportKey
+         23   16 0002DB20 NgcDeleteUserIdKey
+         24   17 00030740 NgcEncryptWithAsymmetricKey
+         25   18 00026DC0 NgcEncryptWithSymmetricPopKey
+         26   19 00004DB0 NgcEnumContainers
+         27   1A 0002DD20 NgcEnumUserIdKeys
+         28   1B 0002DE80 NgcFreeEnumState
+         29   1C 0002DEB0 NgcGetDefaultDecryptionKeyName
+         30   1D 00005090 NgcGetEventInterface
+         31   1E 00019E10 NgcGetKeyAttestationForContainerService
+         32   1F 0001A1F0 NgcGetKeyAttestationForUserIdKey
+         33   20 0001A240 NgcGetKeyAttestationForUserIdKey2
+         34   21 0002E070 NgcGetKeyImplType
+         35   22 0002E2B0 NgcGetLogonDecryptionKeyName
+         36   23 0002E470 NgcGetLogonDecryptionKeyNameForFirstLogonAfterUpgradeFromThreshold
+         37   24 0001A5E0 NgcGetPkcs7ChainBlobFromCertificateBlob
+         38   25 00025200 NgcGetPolicy
+         39   26 0002E680 NgcGetPregenKeyState
+         40   27 0002E860 NgcGetPregenUserKey
+         41   28 0001FD50 NgcGetSymmetricPopKeyTransportKey
+         42   29 00020020 NgcGetSymmetricPopKeyTransportKeyName
+         43   2A 0002EAD0 NgcGetUserIdKeyCertificate
+         44   2B 0002ECE0 NgcGetUserIdKeyName
+         45   2C 0002ED50 NgcGetUserIdKeyPublicKey
+         46   2D 00027000 NgcImportSymmetricPopKey
+         47   2E 00025440 NgcIsAnyContainerInVsm
+         48   2F 000254F0 NgcIsPinRemovable
+         49   30 00020940 NgcNotifyVscProvisioned
+         50   31 0002EEA0 NgcOpenUserIdKey
+         51   32 0001DCE0 NgcPackAuthBuffer
+         52   33 0001DF60 NgcPackPasswordChangeAuthBuffer
+         53   34 00020AD0 NgcQueryEffectiveCertPolicy
+         54   35 00009040 NgcQueryEnabled
+         55   36 00025850 NgcQueryHardwarePolicy
+         56   37 00025890 NgcRemoveBioProtector
+         57   38 00025A90 NgcRemoveCompanionDeviceProtector
+         58   39 00025C90 NgcRemovePrebootProtector
+         59   3A 0001A730 NgcRenewKeyAttestation
+         60   3B 00002F50 NgcSignWithSymmetricPopKey
+         61   3C 0002EF00 NgcSignWithUserIdKey
+         62   3D 0002EF50 NgcSignWithUserIdKeyAndPadding
+         63   3E 0002EFF0 NgcSignWithUserIdKeyEx
+         64   3F 0002F090 NgcSignWithUserIdKeySilent
+         65   40 0001E010 NgcUnpackAuthBuffer
+         66   41 0001E0F0 NgcUnpackCredData
+         67   42 0001E190 NgcUnpackPasswordChangeAuthBuffer
+         68   43 00001690 NgcVerifyWithSymmetricPopKey
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        5000 .pdata
+       20000 .rdata
+        1000 .reloc
+        5000 .rsrc
+       41000 .text

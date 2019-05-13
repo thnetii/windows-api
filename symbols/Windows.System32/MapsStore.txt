@@ -1,0 +1,45 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\MapsStore.dll
+
+File Type: DLL
+
+  Section contains the following exports for MapsStore.dll
+
+    00000000 characteristics
+    BB904607 time date stamp
+        0.00 version
+           1 ordinal base
+          17 number of functions
+          17 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0000F780 MapsStore_CancelGetData
+          2    1 0000FB80 MapsStore_CancelInstallation
+          3    2 0000F990 MapsStore_CheckUpdateAsync
+          4    3 0000F8E0 MapsStore_DeleteData
+          5    4 0000FB60 MapsStore_FindNearbyPackages
+          6    5 0000F9D0 MapsStore_GetCopyright
+          7    6 0000F710 MapsStore_GetData
+          8    7 0000FAB0 MapsStore_GetGSCode
+          9    8 0000F6B0 MapsStore_Initialize
+         10    9 0000F940 MapsStore_InstallAsync
+         11    A 0000F9B0 MapsStore_IsMapFullyInstalled
+         12    B 0000F900 MapsStore_LoadCatalogAsync
+         17    C 0000F610 MapsStore_SetServiceCallbacks
+         13    D 0000FBF0 MapsStore_SuspendInstallation
+         14    E 0000F920 MapsStore_UnInitialize
+         15    F 0000F970 MapsStore_UpdateAsync
+         16   10 0000FC20 MapsStore_WaitInstallation
+
+  Summary
+
+        F000 .data
+        8000 .pdata
+       5B000 .rdata
+        2000 .reloc
+        1000 .rsrc
+       AE000 .text

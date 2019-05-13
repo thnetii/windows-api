@@ -1,0 +1,229 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\SHCore.dll
+
+File Type: DLL
+
+  Section contains the following exports for SHCORE.dll
+
+    00000000 characteristics
+    9A0E77EB time date stamp
+        0.00 version
+           1 ordinal base
+         292 number of functions
+          96 number of names
+
+    ordinal hint RVA      name
+
+          2    0 00022B90 CommandLineToArgvW
+          3    1 00033AA0 CreateRandomAccessStreamOnFile
+          4    2 00008470 CreateRandomAccessStreamOverStream
+          5    3 00033EF0 CreateStreamOverRandomAccessStream
+          6    4 000338E0 DllCanUnloadNow
+          7    5 00052190 DllGetActivationFactory
+          8    6 000318E0 DllGetClassObject
+          9    7 0006F250 GetCurrentProcessExplicitAppUserModelID
+         10    8 000082B0 GetDpiForMonitor
+         11    9 000326C0 GetDpiForShellUIComponent
+         12    A 00016620 GetFeatureEnabledState
+         13    B 00033910 GetFeatureVariant
+         14    C 00036ED0 GetProcessDpiAwareness
+         15    D 00027020 GetProcessReference
+         16    E 000337D0 GetScaleFactorForDevice
+         17    F 00030380 GetScaleFactorForMonitor
+         18   10 00001870 IStream_Copy
+         19   11 0000B680 IStream_Read
+         20   12 000075B0 IStream_ReadStr
+         21   13 0000B4E0 IStream_Reset
+         22   14 0002F270 IStream_Size
+         23   15 00006280 IStream_Write
+         24   16 00006300 IStream_WriteStr
+         25   17 00052300 IUnknown_AtomicRelease
+         26   18 00029900 IUnknown_GetSite
+         27   19 0001F2A0 IUnknown_QueryService
+         28   1A 0001EFB0 IUnknown_Set
+         29   1B 00029990 IUnknown_SetSite
+         30   1C 0001DB30 IsOS
+         31   1D 00031130 IsProcessInIsolatedContainer
+         32   1E 00052C10 RecordFeatureError
+         33   1F 000373D0 RecordFeatureUsage
+         34   20 00037470 RegisterScaleChangeEvent
+         35   21 000375A0 RegisterScaleChangeNotifications
+         36   22 000376D0 RevokeScaleChangeNotifications
+         37   23 0006FB70 SHAnsiToAnsi
+         38   24 0001F520 SHAnsiToUnicode
+         39   25 000537F0 SHCopyKeyA
+         40   26 00053870 SHCopyKeyW
+         41   27 0000F090 SHCreateMemStream
+         42   28 00065610 SHCreateStreamOnFileA
+         43   29 000324D0 SHCreateStreamOnFileEx
+         44   2A 00012690 SHCreateStreamOnFileW
+         45   2B 00026D50 SHCreateThread
+         46   2C 0002C570 SHCreateThreadRef
+         47   2D 00026D30 SHCreateThreadWithHandle
+         48   2E 00053420 SHDeleteEmptyKeyA
+         49   2F 00053670 SHDeleteEmptyKeyW
+         50   30 00053B00 SHDeleteKeyA
+         51   31 00002DC0 SHDeleteKeyW
+         52   32 00053520 SHDeleteValueA
+         53   33 00036670 SHDeleteValueW
+         54   34 00053B80 SHEnumKeyExA
+         55   35 00034890 SHEnumKeyExW
+         56   36 00053BB0 SHEnumValueA
+         57   37 00036850 SHEnumValueW
+         58   38 000272A0 SHGetThreadRef
+         59   39 0001E820 SHGetValueA
+         60   3A 0001BF40 SHGetValueW
+         61   3B 000651C0 SHOpenRegStream2A
+         62   3C 0002CA10 SHOpenRegStream2W
+         63   3D 000652B0 SHOpenRegStreamA
+         64   3E 000652E0 SHOpenRegStreamW
+         65   3F 00053C70 SHQueryInfoKeyA
+         66   40 00035C60 SHQueryInfoKeyW
+         67   41 00053CC0 SHQueryValueExA
+         68   42 0001BEF0 SHQueryValueExW
+         69   43 00053D00 SHRegDuplicateHKey
+         70   44 00053D40 SHRegGetIntW
+         71   45 00053DE0 SHRegGetPathA
+         72   46 00053E20 SHRegGetPathW
+         73   47 0001E860 SHRegGetValueA
+        122   48 0001ACD0 SHRegGetValueFromHKCUHKLM
+         74   49 0001AA50 SHRegGetValueW
+         75   4A 00053E60 SHRegSetPathA
+         76   4B 00053F00 SHRegSetPathW
+         77   4C 0002C610 SHReleaseThreadRef
+         78   4D 0002C540 SHSetThreadRef
+         79   4E 000535A0 SHSetValueA
+         80   4F 000323C0 SHSetValueW
+         81   50 0003AFB0 SHStrDupA
+         82   51 00023020 SHStrDupW
+         83   52 0002F3F0 SHTaskPoolAllowThreadReuse
+         84   53 00052530 SHTaskPoolDoNotWaitForMoreTasks
+         85   54 00017360 SHTaskPoolGetCurrentThreadLifetime
+         86   55 00032AF0 SHTaskPoolGetUniqueContext
+         87   56 00018F00 SHTaskPoolQueueTask
+         88   57 00052540 SHTaskPoolSetThreadReuseAllowed
+         89   58 00030E10 SHUnicodeToAnsi
+         90   59 0006FF40 SHUnicodeToUnicode
+         91   5A 000063F0 SetCurrentProcessExplicitAppUserModelID
+         92   5B 000376A0 SetProcessDpiAwareness
+         93   5C 00036930 SetProcessReference
+         94   5D 000377D0 SubscribeFeatureStateChangeNotification
+         95   5E 000377E0 UnregisterScaleChangeEvent
+         96   5F 00002AF0 UnsubscribeFeatureStateChangeNotification
+          1      00023E40 [NONAME]
+        100      0000CD40 [NONAME]
+        101      0000E550 [NONAME]
+        102      00036AC0 [NONAME]
+        103      00003190 [NONAME]
+        104      0000D270 [NONAME]
+        105      0001DF50 [NONAME]
+        106      00006C30 [NONAME]
+        107      000650A0 [NONAME]
+        108      00065110 [NONAME]
+        109      0002E040 [NONAME]
+        110      0002DE40 [NONAME]
+        111      00064F40 [NONAME]
+        115      0000AEE0 [NONAME]
+        116      000692E0 [NONAME]
+        117      0005F2C0 [NONAME]
+        120      0000DA80 [NONAME]
+        121      00036BA0 [NONAME]
+        123      0001D0B0 [NONAME]
+        124      00053BF0 [NONAME]
+        125      00053C30 [NONAME]
+        126      0001D7A0 [NONAME]
+        127      00023410 [NONAME]
+        130      0001B980 [NONAME]
+        131      0001DF20 [NONAME]
+        132      00052F60 [NONAME]
+        133      00052FA0 [NONAME]
+        140      0001F200 [NONAME]
+        141      00025B10 [NONAME]
+        142      0001E530 [NONAME]
+        143      00025BC0 [NONAME]
+        144      0002E580 [NONAME]
+        145      000231A0 [NONAME]
+        150      0006FBD0 [NONAME]
+        151      00030E30 [NONAME]
+        152      0006FE30 [NONAME]
+        153      0006FD30 [NONAME]
+        160      0006FB50 [NONAME]
+        161      00026FA0 [NONAME]
+        162      0002F850 [NONAME]
+        170      00025A60 [NONAME]
+        171      00053090 [NONAME]
+        172      0002A310 [NONAME]
+        173      00026340 [NONAME]
+        174      000267C0 [NONAME]
+        175      00052FD0 [NONAME]
+        181      0000B810 [NONAME]
+        182      0000AF40 [NONAME]
+        183      0000DFA0 [NONAME]
+        184      000378F0 [NONAME]
+        185      00070150 [NONAME]
+        186      0002FAA0 [NONAME]
+        187      0000B450 [NONAME]
+        188      00031E80 [NONAME]
+        189      00026880 [NONAME]
+        190      00010750 [NONAME]
+        191      00036730 [NONAME]
+        192      0001D950 [NONAME]
+        193      0001BC40 [NONAME]
+        200      0001E9E0 [NONAME]
+        210      0001E990 [NONAME]
+        211      00025940 [NONAME]
+        212      00070160 [NONAME]
+        213      00025C00 [NONAME]
+        220      00054B20 [NONAME]
+        222      00033790 [NONAME]
+        223      00054DD0 [NONAME]
+        224      000550A0 [NONAME]
+        225      00054AC0 [NONAME]
+        226      00054C80 [NONAME]
+        227      00054E10 [NONAME]
+        228      000550F0 [NONAME]
+        229      00054BC0 [NONAME]
+        230      0002BCE0 [NONAME]
+        231      0006F0E0 [NONAME]
+        232      0006F180 [NONAME]
+        233      0002BF50 [NONAME]
+        234      00032030 [NONAME]
+        240      00031B20 [NONAME]
+        241      00055040 [NONAME]
+        242      00054ED0 [NONAME]
+        244      00010AD0 [NONAME]
+        245      00032200 [NONAME]
+        246      00032920 [NONAME]
+        247      00032550 [NONAME]
+        248      0001FDF0 [NONAME]
+        249      00055C40 [NONAME]
+        250      00021140 [NONAME]
+        251      00020560 [NONAME]
+        252      00070620 [NONAME]
+        253      00070AB0 [NONAME]
+        254      000208F0 [NONAME]
+        255      000217E0 [NONAME]
+        260      00054CD0 [NONAME]
+        261      00054F40 [NONAME]
+        270      00012B40 [NONAME]
+        280      00029DD0 [NONAME]
+        281      00029F60 [NONAME]
+        282      00070C00 [NONAME]
+        283      00070B50 [NONAME]
+        284      00029FC0 [NONAME]
+        290      00029DB0 [NONAME]
+        291      00070B80 [NONAME]
+        292      00029D90 [NONAME]
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        9000 .pdata
+       25000 .rdata
+        4000 .reloc
+        1000 .rsrc
+       71000 .text

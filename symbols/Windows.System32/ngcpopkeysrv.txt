@@ -1,0 +1,43 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\ngcpopkeysrv.dll
+
+File Type: DLL
+
+  Section contains the following exports for ngcpopkeysrv.dll
+
+    00000000 characteristics
+    655E72A3 time date stamp
+        0.00 version
+           1 ordinal base
+          15 number of functions
+          15 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0000D910 NgcGetPregenKey
+          2    1 000102B0 NgcPregenKey
+          3    2 0000CB20 NgcTriggerTask
+          4    3 00007070 s_NgcDecryptWithSymmetricPopKey
+          5    4 00005BD0 s_NgcDeleteSymmetricPopKeyTransportKey
+          6    5 00006B50 s_NgcEncryptWithSymmetricPopKey
+          7    6 00005DF0 s_NgcGetKeyAttestationForContainerService
+          8    7 0000EA20 s_NgcGetPregenKeyState
+          9    8 0000E1E0 s_NgcGetPregenUserKey
+         10    9 000055E0 s_NgcGetSymmetricPopKeyTransportKey
+         11    A 00005170 s_NgcGetSymmetricPopKeyTransportKeyName
+         12    B 00004C40 s_NgcImportSymmetricPopKey
+         13    C 00006020 s_NgcRenewKeyAttestation
+         14    D 00006240 s_NgcSignWithSymmetricPopKey
+         15    E 00006700 s_NgcVerifyWithSymmetricPopKey
+
+  Summary
+
+        1000 .data
+        2000 .pdata
+        F000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       1E000 .text

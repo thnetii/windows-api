@@ -1,0 +1,37 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\dwmredir.dll
+
+File Type: DLL
+
+  Section contains the following exports for dwmredir.dll
+
+    00000000 characteristics
+     6C8CDD9 time date stamp
+        0.00 version
+           1 ordinal base
+           8 number of functions
+           8 number of names
+
+    ordinal hint RVA      name
+
+          4    0 0000CA70 DwmInitializeEngine
+          5    1 0000CAF0 DwmInitializePort
+          1    2 0000B5C0 DwmRedirectionManagerInitialize
+          2    3 0000B590 DwmRedirectionManagerSetClientRenderTarget
+          3    4 00013F10 DwmRedirectionManagerShutdown
+          6    5 0000CC60 DwmRenderDesktopForDDA
+          7    6 00013F50 DwmShutdownEngine
+          8    7 0000CC60 DwmVersionCheck
+
+  Summary
+
+        4000 .data
+        1000 .didat
+        2000 .pdata
+        6000 .rdata
+        1000 .reloc
+        2000 .rsrc
+       17000 .text

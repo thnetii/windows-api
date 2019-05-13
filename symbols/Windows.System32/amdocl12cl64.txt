@@ -1,0 +1,78 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\amdocl12cl64.dll
+
+File Type: DLL
+
+  Section contains the following exports for amdocl12cl64.dll
+
+    00000000 characteristics
+    5656AE5D time date stamp Thu Nov 26 08:01:49 2015
+        0.00 version
+           1 ordinal base
+          49 number of functions
+          49 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00003440 aclBinaryFini
+          2    1 00003520 aclBinaryInit
+          3    2 00003710 aclBinaryVersion
+          4    3 00003740 aclCompile
+          5    4 000038F0 aclCompilerFini
+          6    5 00003A20 aclCompilerInit
+          7    6 00003C50 aclCompilerVersion
+          8    7 00003CA0 aclConvertType
+          9    8 00003D20 aclCreateFromBinary
+         10    9 00003DF0 aclDbgAddArgument
+         11    A 00003E80 aclDbgRemoveArgument
+         12    B 00003F00 aclDisassemble
+         13    C 00003F90 aclDumpBinary
+         14    D 00003FA0 aclExtractSection
+         15    E 00004060 aclExtractSymbol
+         16    F 00004140 aclGetArchInfo
+         17   10 000041A0 aclGetArchitecture
+         18   11 000041C0 aclGetChip
+         19   12 00004220 aclGetCompilerLog
+         20   13 00004250 aclGetDeviceBinary
+         21   14 00004300 aclGetDeviceInfo
+         22   15 000043F0 aclGetErrorString
+         23   16 00004560 aclGetFamily
+         24   17 00004590 aclGetTargetInfo
+         25   18 00004750 aclInsertKernelStatistics
+         26   19 000047B0 aclInsertSection
+         27   1A 00004850 aclInsertSymbol
+         28   1B 00004900 aclJITObjectImageCopy
+         29   1C 00004960 aclJITObjectImageCreate
+         30   1D 000049F0 aclJITObjectImageData
+         31   1E 00004A50 aclJITObjectImageDestroy
+         32   1F 00004AA0 aclJITObjectImageDisassembleKernel
+         33   20 00004B00 aclJITObjectImageFinalize
+         34   21 00004B50 aclJITObjectImageGetGlobalsSize
+         35   22 00004BB0 aclJITObjectImageIterateSymbols
+         36   23 00004C10 aclJITObjectImageSize
+         37   24 00004C70 aclLink
+         38   25 00006040 aclLoader_OnLoad
+         39   26 00006430 aclLoader_OnUnload
+         40   27 00004FE0 aclQueryInfo
+         41   28 00005090 aclReadFromFile
+         42   29 00005160 aclReadFromMem
+         43   2A 00005460 aclRemoveSection
+         44   2B 00005500 aclRemoveSymbol
+         45   2C 00005590 aclRetrieveType
+         46   2D 00005660 aclSetType
+         47   2E 00005710 aclVersionSize
+         48   2F 00005740 aclWriteToFile
+         49   30 00005810 aclWriteToMem
+
+  Summary
+
+      102000 .data
+       90000 .pdata
+      9BB000 .rdata
+       6C000 .reloc
+        1000 .rsrc
+      EFD000 .text
+        1000 .tls

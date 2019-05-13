@@ -1,0 +1,98 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\iscsium.dll
+
+File Type: DLL
+
+  Section contains the following exports for ISCSIUM.dll
+
+    00000000 characteristics
+    42B13487 time date stamp
+        0.00 version
+           1 ordinal base
+          70 number of functions
+          70 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00002DF0 DiscpAddStringToMultiSzList
+          2    1 00003040 DiscpAlignDataStruct
+          3    2 00003480 DiscpAllocMemory
+          4    3 000034C0 DiscpAllocProcessMemory
+          5    4 00003240 DiscpAnsiCharsToString
+          6    5 00001930 DiscpAnsiToUnicode
+          7    6 00001AD0 DiscpAnsiToUnicodeSize
+          8    7 00001B30 DiscpCopyString
+          9    8 00001C40 DiscpCopyStringToAnsi
+         10    9 00002920 DiscpCopyToCountedString
+         11    A 000032F0 DiscpCopyUnicodeString
+         12    B 00004B20 DiscpDebugPrintX
+         13    C 00003170 DiscpDecryptBuffer
+         14    D 00004420 DiscpDisableEventlog
+         15    E 00004A00 DiscpDisableLogToFile
+         16    F 00002750 DiscpDisableWinsock
+         17   10 00003B30 DiscpDisestablishIrpPump
+         18   11 00003DF0 DiscpDuplicateString
+         19   12 000043E0 DiscpEnableEventlog
+         20   13 00004B10 DiscpEnableLogToFile
+         21   14 000026F0 DiscpEnableWinsock
+         22   15 00003080 DiscpEncryptBuffer
+         23   16 00003E70 DiscpEnumerateDeviceInterfaces
+         24   17 00002240 DiscpEnumerateRegistryValues
+         25   18 00003930 DiscpEstablishIrpPump
+         26   19 00002790 DiscpEstablishTCPSocket
+         27   1A 00001150 DiscpExecuteMethod
+         28   1B 00004140 DiscpFreeDeviceInterfaceList
+         29   1C 000034A0 DiscpFreeMemory
+         30   1D 000034E0 DiscpFreeProcessMemory
+         31   1E 00003370 DiscpGenerateiScsiNameFromComputerName
+         32   1F 00003D30 DiscpGetPnpDeviceId
+         33   20 00002460 DiscpGetRegistryValue
+         34   21 00001D20 DiscpGetStringFromDataBlock
+         35   22 00004A10 DiscpGuidToString
+         36   23 00004B40 DiscpIdKeyToString
+         37   24 000025C0 DiscpIsDNSAddress
+         38   25 00002D80 DiscpIsStringInList
+         39   26 00003500 DiscpLoadSystemLibrary
+         40   27 000044F0 DiscpMapiSCSIString
+         41   28 00002070 DiscpOpenRegistryKey
+         42   29 00001CE0 DiscpPadDataBlock
+         43   2A 00001480 DiscpParseAllData
+         44   2B 00002960 DiscpParseKeyValue
+         45   2C 00001780 DiscpParseSingleInstance
+         46   2D 00001D80 DiscpPnpDeviceInterfaceToInstanceName
+         47   2E 00001010 DiscpQueryAllData
+         48   2F 00001330 DiscpQuerySingleInstance
+         49   30 00002060 DiscpRegCloseKey
+         50   31 00004A00 DiscpRegisterDebugMask
+         51   32 00003CB0 DiscpRegisterDeviceInterfaceNotification
+         52   33 00003CB0 DiscpRegisterForDeviceInterfaceNotfication
+         53   34 00002050 DiscpRegisterHeap
+         54   35 00002F10 DiscpRemoveStringFromMultiSzList
+         55   36 000041C0 DiscpReportEventlog
+         56   37 000042A0 DiscpReportEventlogWithStatus
+         57   38 00003C50 DiscpSendIrpRequest
+         58   39 00002130 DiscpSetRegistryValue
+         59   3A 00004B80 DiscpSockAddrToText
+         60   3B 000025E0 DiscpTextAddrToBinary
+         61   3C 00004450 DiscpTimebomb
+         62   3D 00004490 DiscpULongAddList
+         63   3E 00002AB0 DiscpUTF8ToUnicode
+         64   3F 00001810 DiscpUnicodeToAnsi
+         65   40 00001A70 DiscpUnicodeToAnsiSize
+         66   41 00002C10 DiscpUnicodeToUTF8
+         67   42 000047A0 DiscpValidateiSCSIString
+         68   43 00002FC0 DiscpXtoI
+         69   44 00002FC0 Discpxtoi
+         70   45 00002030 DllMain
+
+  Summary
+
+        2000 .data
+        1000 .pdata
+        3000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        5000 .text

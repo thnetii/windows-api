@@ -1,0 +1,50 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\ig75icd64.dll
+
+File Type: DLL
+
+  Section contains the following exports for ig75icd64.dll
+
+    00000000 characteristics
+    59E4F347 time date stamp Mon Oct 16 19:58:31 2017
+        0.00 version
+           1 ordinal base
+          21 number of functions
+          21 number of names
+
+    ordinal hint RVA      name
+
+         20    0 0055DF20 DllMain
+          1    1 0055AB00 DrvCopyContext
+          2    2 0055AC20 DrvCreateContext
+          3    3 0055AC30 DrvCreateLayerContext
+          4    4 0055B060 DrvDeleteContext
+          5    5 0055B280 DrvDescribeLayerPlane
+          6    6 0055B2A0 DrvDescribePixelFormat
+          7    7 0055B5A0 DrvGetLayerPaletteEntries
+          8    8 0055B350 DrvGetProcAddress
+          9    9 0055B490 DrvPresentBuffers
+         10    A 0055B5A0 DrvRealizeLayerPalette
+         11    B 0055B5B0 DrvReleaseContext
+         12    C 0055B760 DrvSetCallbackProcs
+         13    D 0055B7D0 DrvSetContext
+         14    E 00198F80 DrvSetLayerPaletteEntries
+         15    F 0055BB40 DrvSetPixelFormat
+         16   10 0055BCA0 DrvShareLists
+         17   11 0055BD80 DrvSwapBuffers
+         18   12 0055C2E0 DrvSwapLayerBuffers
+         19   13 0055C300 DrvValidateVersion
+         21   14 0000F630 RegisterProcTableCallback
+
+  Summary
+
+      1BB000 .data
+       4D000 .pdata
+      17C000 .rdata
+       45000 .reloc
+        1000 .rsrc
+      77B000 .text
+        1000 .tls

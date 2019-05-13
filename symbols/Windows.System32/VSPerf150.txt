@@ -1,0 +1,92 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\VSPerf150.dll
+
+File Type: DLL
+
+  Section contains the following exports for VSPerf150.dll
+
+    00000000 characteristics
+    5B3FED7C time date stamp Sat Jul  7 00:30:20 2018
+        0.00 version
+           1 ordinal base
+          63 number of functions
+          63 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000094C4 ?NotifyJITFinished@@YAXXZ
+          2    1 00009494 ?NotifyJITStarted@@YAXXZ
+          3    2 000290CC ClearProcessSecurityAcl
+          4    3 00008320 CommentMarkAtProfileA
+          5    4 000082B4 CommentMarkAtProfileW
+          6    5 000081D4 CommentMarkProfileA
+          7    6 0000825C CommentMarkProfileW
+          8    7 00009128 EmitModuleLoadRecord
+          9    8 000091E4 EmitModuleUnloadRecord
+         10    9 0000961C EnterFunction
+         11    A 000096E4 ExitFunction
+         12    B 00008184 MarkProfile
+         13    C 00009088 NameProfileA
+         14    D 00008C88 NameProfileW
+         15    E 0000987C NameToken
+         16    F 000097AC ObjectAllocated
+         17   10 00008174 ResumeProfile
+         18   11 00009508 SetVspHeaderFlags
+         19   12 000092A0 SimulateThreadAttach
+         20   13 00009900 SourceLine
+         21   14 00008148 StartProfile
+         22   15 00008154 StopProfile
+         23   16 00008164 SuspendProfile
+         24   17 000092E4 WriteAllocationPackage
+         25   18 000093C8 WriteDeallocationPackage
+         26   19 00026760 _CAP_End_Profiling
+         27   1A 000267B0 _CAP_End_Profiling_TailMergeBackStop
+         28   1B 00026380 _CAP_Enter_CatchOrFinally
+         29   1C 000268E0 _CAP_Enter_CatchOrFinally_Managed
+         30   1D 00026800 _CAP_Enter_Function
+         31   1E 000268A0 _CAP_Enter_Function_Managed
+         32   1F 00026850 _CAP_Exit_Function
+         33   20 000268B0 _CAP_Exit_Function_Managed
+         34   21 000262E0 _CAP_Nullify_TailMerge
+         35   22 00026A80 _CAP_Profiling
+         36   23 000268C0 _CAP_StartProfiling_Managed
+         37   24 00026390 _CAP_StartProfiling_TailMerge_Managed
+         38   25 000266C0 _CAP_Start_Profiling
+         39   26 00026710 _CAP_Start_Profiling_TailMerge
+         40   27 00026370 _CAP_StopProfilingTailMergeBackStop_Managed
+         41   28 000268D0 _CAP_StopProfiling_Managed
+         42   29 00026760 __CAP_End_Profiling
+         43   2A 000267B0 __CAP_End_Profiling_TailMergeBackStop
+         44   2B 00026380 __CAP_Enter_CatchOrFinally
+         45   2C 000268E0 __CAP_Enter_CatchOrFinally_Managed
+         46   2D 00026800 __CAP_Enter_Function
+         47   2E 000268A0 __CAP_Enter_Function_Managed
+         48   2F 00026850 __CAP_Exit_Function
+         49   30 000268B0 __CAP_Exit_Function_Managed
+         50   31 000262E0 __CAP_Nullify_TailMerge
+         51   32 00026A80 __CAP_Profiling
+         52   33 000268C0 __CAP_StartProfiling_Managed
+         53   34 000266C0 __CAP_Start_Profiling
+         54   35 00026710 __CAP_Start_Profiling_TailMerge
+         55   36 00026370 __CAP_StopProfilingTailMergeBackStop_Managed
+         56   37 000268D0 __CAP_StopProfiling_Managed
+         57   38 00008448 vCommentMarkAtProfileW
+         58   39 000083FC vCommentMarkProfileW
+         59   3A 00026A30 vMarkProfile
+         60   3B 000269E0 vResumeProfile
+         61   3C 000268F0 vStartProfile
+         62   3D 00026940 vStopProfile
+         63   3E 00026990 vSuspendProfile
+
+  Summary
+
+        4000 .data
+        3000 .pdata
+       13000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       28000 .text
+        1000 icapsec

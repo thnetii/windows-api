@@ -1,0 +1,99 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\samlib.dll
+
+File Type: DLL
+
+  Section contains the following exports for SAMLIB.dll
+
+    00000000 characteristics
+    60C398F0 time date stamp
+        0.00 version
+           1 ordinal base
+          70 number of functions
+          70 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00007CA0 OnMachineUILanguageInit
+          2    1 00003630 SamAddMemberToAlias
+          3    2 00008780 SamAddMemberToGroup
+          4    3 00008920 SamAddMultipleMembersToAlias
+          5    4 00008AD0 SamChangePasswordUser
+          6    5 00008DC0 SamChangePasswordUser2
+          7    6 00003010 SamCloseHandle
+          8    7 00002B50 SamConnect
+          9    8 000100C0 SamConnectWithCreds
+         10    9 00008FC0 SamCreateAliasInDomain
+         11    A 000091E0 SamCreateGroupInDomain
+         12    B 00009400 SamCreateUser2InDomain
+         13    C 00009800 SamCreateUserInDomain
+         14    D 00009A20 SamDeleteAlias
+         15    E 00009BA0 SamDeleteGroup
+         16    F 00009D20 SamDeleteUser
+         17   10 00009EA0 SamEnumerateAliasesInDomain
+         18   11 00001F30 SamEnumerateDomainsInSamServer
+         19   12 0000A0A0 SamEnumerateGroupsInDomain
+         20   13 00001720 SamEnumerateUsersInDomain
+         21   14 000017C0 SamEnumerateUsersInDomain2
+         22   15 00001010 SamFreeMemory
+         23   16 00001CA0 SamGetAliasMembership
+         24   17 00001420 SamGetCompatibilityMode
+         25   18 0000A2A0 SamGetDisplayEnumerationIndex
+         26   19 00001980 SamGetGroupsForUser
+         27   1A 000014A0 SamGetMembersInAlias
+         28   1B 0000A470 SamGetMembersInGroup
+         29   1C 00001E30 SamLookupDomainInSamServer
+         30   1D 00002120 SamLookupIdsInDomain
+         31   1E 00002090 SamLookupNamesInDomain
+         32   1F 00002380 SamLookupNamesInDomain2
+         33   20 000015D0 SamOpenAlias
+         34   21 00002DF0 SamOpenDomain
+         35   22 0000A670 SamOpenGroup
+         36   23 00002890 SamOpenUser
+         37   24 00001340 SamPerformGenericOperation
+         38   25 0000A880 SamQueryDisplayInformation
+         39   26 0000AB90 SamQueryInformationAlias
+         40   27 000102B0 SamQueryInformationDomain
+         41   28 0000AD30 SamQueryInformationGroup
+         42   29 00002A60 SamQueryInformationUser
+         43   2A 0000AFC0 SamQueryLocalizableAccountsInDomain
+         44   2B 00001860 SamQuerySecurityObject
+         45   2C 00001270 SamRegisterObjectChangeNotification
+         46   2D 0000B1A0 SamRemoveMemberFromAlias
+         47   2E 0000B320 SamRemoveMemberFromForeignDomain
+         48   2F 0000B4A0 SamRemoveMemberFromGroup
+         49   30 0000B620 SamRemoveMultipleMembersFromAlias
+         50   31 00002790 SamRidToSid
+         51   32 0000B7D0 SamSetInformationAlias
+         52   33 0000B970 SamSetInformationDomain
+         53   34 0000BB10 SamSetInformationGroup
+         54   35 0000BCB0 SamSetInformationUser
+         55   36 0000C650 SamSetMemberAttributesOfGroup
+         56   37 0000C7F0 SamSetSecurityObject
+         57   38 0000CA30 SamShutdownSamServer
+         58   39 0000CAC0 SamTestPrivateFunctionsDomain
+         59   3A 0000CB00 SamTestPrivateFunctionsUser
+         60   3B 00001210 SamUnregisterObjectChangeNotification
+         61   3C 0000CB40 SamValidatePassword
+         62   3D 0000CDB0 SamiChangeKeys
+         63   3E 0000D1F0 SamiChangePasswordUser
+         64   3F 0000D6B0 SamiChangePasswordUser2
+         65   40 00007980 SamiEncryptPasswords
+         66   41 0000DAC0 SamiLmChangePasswordUser
+         67   42 0000DCB0 SamiSetBootKeyInformation
+         68   43 0000DE60 SamiSetDSRMPassword
+         69   44 0000DED0 SamiSetDSRMPasswordOWF
+         70   45 0000DF40 SamiSyncDSRMPasswordFromAccount
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        C000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       11000 .text

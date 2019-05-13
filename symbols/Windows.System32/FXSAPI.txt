@@ -1,0 +1,204 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\FXSAPI.dll
+
+File Type: DLL
+
+  Section contains the following exports for FXSAPI.dll
+
+    00000000 characteristics
+    5117A9B0 time date stamp
+        0.00 version
+           1 ordinal base
+         175 number of functions
+         175 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0001F750 FXSAPIFree
+          2    1 0001F6B0 FXSAPIInitialize
+          3    2 000106F0 FaxAbort
+          4    3 00005010 FaxAccessCheck
+          5    4 00005430 FaxAccessCheckEx
+          6    5 000054B0 FaxAccessCheckEx2
+          7    6 00007A30 FaxAddOutboundGroupA
+          8    7 00007C40 FaxAddOutboundGroupW
+          9    8 00008EA0 FaxAddOutboundRuleA
+         10    9 00009000 FaxAddOutboundRuleW
+         11    A 0000B180 FaxAnswerCall
+         12    B 00018590 FaxCheckValidFaxFolder
+         13    C 0000CA80 FaxClose
+         14    D 0001E770 FaxCompleteJobParamsA
+         15    E 0001E980 FaxCompleteJobParamsW
+         16    F 0000C280 FaxConnectFaxServerA
+         17   10 0000BE00 FaxConnectFaxServerW
+         18   11 00021910 FaxCreateAccount
+         19   12 00021C50 FaxDeleteAccount
+         20   13 00019E60 FaxEnableRoutingMethodA
+         21   14 00019CD0 FaxEnableRoutingMethodW
+         22   15 00016A50 FaxEndMessagesEnum
+         23   16 00021D80 FaxEnumAccounts
+         24   17 00004990 FaxEnumGlobalRoutingInfoA
+         25   18 00004570 FaxEnumGlobalRoutingInfoW
+         26   19 00010E50 FaxEnumJobsA
+         27   1A 00015DB0 FaxEnumJobsEx2
+         28   1B 00015B20 FaxEnumJobsExA
+         29   1C 00015D10 FaxEnumJobsExW
+         30   1D 00010870 FaxEnumJobsW
+         31   1E 00016BA0 FaxEnumMessagesA
+         32   1F 00016EF0 FaxEnumMessagesEx
+         33   20 00016DC0 FaxEnumMessagesW
+         34   21 000083D0 FaxEnumOutboundGroupsA
+         35   22 00008520 FaxEnumOutboundGroupsW
+         36   23 000093F0 FaxEnumOutboundRulesA
+         37   24 00009580 FaxEnumOutboundRulesW
+         38   25 00018AB0 FaxEnumPortsA
+         39   26 0001B230 FaxEnumPortsExA
+         40   27 0001B430 FaxEnumPortsExW
+         41   28 00018730 FaxEnumPortsW
+         42   29 0000A610 FaxEnumRoutingExtensionsA
+         43   2A 0000A850 FaxEnumRoutingExtensionsW
+         44   2B 00019B80 FaxEnumRoutingMethodsA
+         45   2C 00019750 FaxEnumRoutingMethodsW
+         46   2D 0001A320 FaxEnumerateProvidersA
+         47   2E 0001A4B0 FaxEnumerateProvidersW
+         48   2F 000010C0 FaxFreeBuffer
+         49   30 00021850 FaxFreeSenderInformation
+         50   31 000223E0 FaxGetAccountInfo
+         51   32 00007280 FaxGetActivityLoggingConfigurationA
+         52   33 00007390 FaxGetActivityLoggingConfigurationW
+         53   34 000069E0 FaxGetArchiveConfigurationA
+         54   35 00006B00 FaxGetArchiveConfigurationW
+         55   36 00005850 FaxGetConfigOption
+         56   37 0000A2E0 FaxGetConfigWizardUsed
+         57   38 00002FC0 FaxGetConfigurationA
+         58   39 00002D50 FaxGetConfigurationW
+         59   3A 00004420 FaxGetCountryListA
+         60   3B 00004190 FaxGetCountryListW
+         61   3C 0000C8E0 FaxGetDeviceStatusA
+         62   3D 0000C310 FaxGetDeviceStatusW
+         63   3E 0001B8D0 FaxGetExtensionDataA
+         64   3F 0001B9A0 FaxGetExtensionDataW
+         65   40 0000B570 FaxGetGeneralConfiguration
+         66   41 00011820 FaxGetJobA
+         67   42 00015640 FaxGetJobEx2
+         68   43 000153E0 FaxGetJobExA
+         69   44 000155C0 FaxGetJobExW
+         70   45 000112D0 FaxGetJobW
+         71   46 000035C0 FaxGetLoggingCategoriesA
+         72   47 000037B0 FaxGetLoggingCategoriesW
+         73   48 00017350 FaxGetMessageA
+         74   49 000175D0 FaxGetMessageEx
+         75   4A 00018140 FaxGetMessageTiffA
+         76   4B 00017A80 FaxGetMessageTiffW
+         77   4C 00017540 FaxGetMessageW
+         78   4D 00006600 FaxGetOutboxConfiguration
+         79   4E 00011E20 FaxGetPageData
+         80   4F 0000A150 FaxGetPersonalCoverPagesOption
+         81   50 00019070 FaxGetPortA
+         82   51 0001A890 FaxGetPortExA
+         83   52 0001AA30 FaxGetPortExW
+         84   53 00018D80 FaxGetPortW
+         85   54 00005530 FaxGetQueueStates
+         86   55 000059E0 FaxGetReceiptsConfigurationA
+         87   56 00005B40 FaxGetReceiptsConfigurationW
+         88   57 00009FC0 FaxGetReceiptsOptions
+         89   58 00014250 FaxGetRecipientInfoA
+         90   59 00014230 FaxGetRecipientInfoW
+         91   5A 000181B0 FaxGetRecipientsLimit
+         92   5B 0000D710 FaxGetReportedServerAPIVersion
+         93   5C 0001A080 FaxGetRoutingInfoA
+         94   5D 00019ED0 FaxGetRoutingInfoW
+         95   5E 0000CFD0 FaxGetSecurity
+         96   5F 0000D160 FaxGetSecurityEx
+         97   60 0000D180 FaxGetSecurityEx2
+         98   61 00014290 FaxGetSenderInfoA
+         99   62 00014270 FaxGetSenderInfoW
+        100   63 00021410 FaxGetSenderInformation
+        101   64 00009E00 FaxGetServerActivity
+        102   65 00018370 FaxGetServerSKU
+        103   66 0000AC70 FaxGetServicePrintersA
+        104   67 0000ADE0 FaxGetServicePrintersW
+        105   68 00006440 FaxGetVersion
+        106   69 000018A0 FaxInitializeEventQueue
+        107   6A 00019590 FaxOpenPort
+        108   6B 0001C460 FaxPrintCoverPageA
+        109   6C 0001BFE0 FaxPrintCoverPageW
+        110   6D 000223F0 FaxReAssignMessage
+        111   6E 0000B3A0 FaxRefreshArchive
+        112   6F 00001840 FaxRegisterForServerEvents
+        113   70 000017E0 FaxRegisterForServerEventsEx
+        114   71 0001F800 FaxRegisterRoutingExtensionW
+        115   72 00020930 FaxRegisterServiceProviderExA
+        116   73 00020B70 FaxRegisterServiceProviderExW
+        117   74 0000D570 FaxRelease
+        118   75 000178B0 FaxRemoveMessage
+        119   76 00008840 FaxRemoveOutboundGroupA
+        120   77 00008920 FaxRemoveOutboundGroupW
+        121   78 00009260 FaxRemoveOutboundRule
+        122   79 0000EAF0 FaxSendDocumentA
+        123   7A 0000DD40 FaxSendDocumentEx2
+        124   7B 0000DE30 FaxSendDocumentExA
+        125   7C 0000DDB0 FaxSendDocumentExW
+        126   7D 000105B0 FaxSendDocumentForBroadcastA
+        127   7E 00010580 FaxSendDocumentForBroadcastW
+        128   7F 0000E5A0 FaxSendDocumentW
+        129   80 000075F0 FaxSetActivityLoggingConfigurationA
+        130   81 000077B0 FaxSetActivityLoggingConfigurationW
+        131   82 00006DC0 FaxSetArchiveConfigurationA
+        132   83 00006F90 FaxSetArchiveConfigurationW
+        133   84 0000A440 FaxSetConfigWizardUsed
+        134   85 00003340 FaxSetConfigurationA
+        135   86 000030E0 FaxSetConfigurationW
+        136   87 00008B40 FaxSetDeviceOrderInGroupA
+        137   88 00008C30 FaxSetDeviceOrderInGroupW
+        138   89 0001BB10 FaxSetExtensionDataA
+        139   8A 0001BBE0 FaxSetExtensionDataW
+        140   8B 0000B880 FaxSetGeneralConfiguration
+        141   8C 00004CF0 FaxSetGlobalRoutingInfoA
+        142   8D 00004B10 FaxSetGlobalRoutingInfoW
+        143   8E 00011200 FaxSetJobA
+        144   8F 00011020 FaxSetJobW
+        145   90 00003AB0 FaxSetLoggingCategoriesA
+        146   91 00003D40 FaxSetLoggingCategoriesW
+        147   92 00017670 FaxSetMessage
+        148   93 00007E60 FaxSetOutboundGroupA
+        149   94 00008110 FaxSetOutboundGroupW
+        150   95 00009900 FaxSetOutboundRuleA
+        151   96 00009B30 FaxSetOutboundRuleW
+        152   97 00006790 FaxSetOutboxConfiguration
+        153   98 00019370 FaxSetPortA
+        154   99 0001AE70 FaxSetPortExA
+        155   9A 0001B080 FaxSetPortExW
+        156   9B 00019180 FaxSetPortW
+        157   9C 000056C0 FaxSetQueue
+        158   9D 00005EA0 FaxSetReceiptsConfigurationA
+        159   9E 00006190 FaxSetReceiptsConfigurationW
+        160   9F 0001A2A0 FaxSetRoutingInfoA
+        161   A0 0001A100 FaxSetRoutingInfoW
+        162   A1 0000D530 FaxSetSecurity
+        163   A2 0000D550 FaxSetSecurityEx2
+        164   A3 00021100 FaxSetSenderInformation
+        165   A4 000169C0 FaxStartMessagesEnum
+        166   A5 00016E50 FaxStartMessagesEnumEx
+        167   A6 0001C730 FaxStartPrintJob2W
+        168   A7 0001BE00 FaxStartPrintJobA
+        169   A8 0001BDD0 FaxStartPrintJobW
+        170   A9 00001900 FaxUnregisterForServerEvents
+        171   AA 000206C0 FaxUnregisterRoutingExtensionA
+        172   AB 000207A0 FaxUnregisterRoutingExtensionW
+        173   AC 00020DC0 FaxUnregisterServiceProviderExA
+        174   AD 00020EA0 FaxUnregisterServiceProviderExW
+        175   AE 00018BE0 IsDeviceVirtual
+
+  Summary
+
+        4000 .data
+        1000 .didat
+        2000 .pdata
+        E000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       33000 .text

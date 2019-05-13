@@ -1,0 +1,55 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\credssp.dll
+
+File Type: DLL
+
+  Section contains the following exports for CREDSSP.dll
+
+    00000000 characteristics
+    A6D8F6ED time date stamp
+        0.00 version
+           1 ordinal base
+          26 number of functions
+          26 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000023E0 InitSecurityInterfaceW
+          2    1 00001AF0 SpAcceptSecurityContext
+          3    2 00001030 SpAcquireCredentialsHandleW
+          4    3 00002180 SpAddCredentialsW
+          5    4 00002260 SpApplyControlToken
+          6    5 00002180 SpChangeAccountPasswordW
+          7    6 00002180 SpCompleteAuthToken
+          8    7 000023A0 SpDecryptMessage
+          9    8 00002190 SpDeleteSecurityContext
+         10    9 00002380 SpEncryptMessage
+         11    A 00002020 SpEnumerateSecurityPackagesW
+         12    B 00002180 SpExportSecurityContext
+         13    C 00002300 SpFreeContextBuffer
+         14    D 00002110 SpFreeCredentialsHandle
+         15    E 00002280 SpImpersonateSecurityContext
+         16    F 00002180 SpImportSecurityContextW
+         17   10 00001270 SpInitializeSecurityContextW
+         18   11 000022C0 SpMakeSignature
+         19   12 00002070 SpQueryContextAttributesW
+         20   13 00002180 SpQueryCredentialsAttributesW
+         21   14 00002360 SpQuerySecurityContextToken
+         22   15 00002310 SpQuerySecurityPackageInfoW
+         23   16 000022A0 SpRevertSecurityContext
+         24   17 00002180 SpSetContextAttributesW
+         25   18 000023C0 SpSetCredentialsAttributesW
+         26   19 000022E0 SpVerifySignature
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        4000 .text

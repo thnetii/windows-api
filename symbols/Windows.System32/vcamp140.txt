@@ -1,0 +1,193 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\vcamp140.dll
+
+File Type: DLL
+
+  Section contains the following exports for VCAMP140.DLL
+
+    00000000 characteristics
+    5C5840E4 time date stamp Mon Feb  4 14:40:52 2019
+        0.00 version
+           1 ordinal base
+         165 number of functions
+         165 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000179B0 ??0_Event@details@Concurrency@@QEAA@AEBV012@@Z
+          2    1 00033710 ??0_Event@details@Concurrency@@QEAA@XZ
+          3    2 00017A30 ??0accelerator@Concurrency@@AEAA@V?$_Reference_counted_obj_ptr@V_Accelerator_impl@details@Concurrency@@@details@1@@Z
+          4    3 000179B0 ??0accelerator@Concurrency@@QEAA@AEBV01@@Z
+          5    4 00017790 ??0accelerator@Concurrency@@QEAA@XZ
+          6    5 00018240 ??0accelerator_view@Concurrency@@AEAA@V?$_Reference_counted_obj_ptr@V_Accelerator_view_impl@details@Concurrency@@@details@1@_N@Z
+          7    6 00017E30 ??0accelerator_view@Concurrency@@QEAA@AEBV01@@Z
+          8    7 00018570 ??0accelerator_view_removed@Concurrency@@QEAA@J@Z
+          9    8 00018520 ??0accelerator_view_removed@Concurrency@@QEAA@PEBDJ@Z
+         10    9 000185D0 ??0invalid_compute_domain@Concurrency@@QEAA@PEBD@Z
+         11    A 00018610 ??0invalid_compute_domain@Concurrency@@QEAA@XZ
+         12    B 000184A0 ??0out_of_memory@Concurrency@@QEAA@PEBD@Z
+         13    C 000184E0 ??0out_of_memory@Concurrency@@QEAA@XZ
+         14    D 00018380 ??0runtime_exception@Concurrency@@QEAA@AEBV01@@Z
+         15    E 00018310 ??0runtime_exception@Concurrency@@QEAA@J@Z
+         16    F 000182A0 ??0runtime_exception@Concurrency@@QEAA@PEBDJ@Z
+         17   10 0000BF80 ??0scoped_d3d_access_lock@direct3d@Concurrency@@QEAA@$$QEAV012@@Z
+         18   11 0000BDF0 ??0scoped_d3d_access_lock@direct3d@Concurrency@@QEAA@AEAVaccelerator_view@2@@Z
+         19   12 0000BE90 ??0scoped_d3d_access_lock@direct3d@Concurrency@@QEAA@AEAVaccelerator_view@2@Uadopt_d3d_access_lock_t@12@@Z
+         20   13 00018650 ??0unsupported_feature@Concurrency@@QEAA@PEBD@Z
+         21   14 00018690 ??0unsupported_feature@Concurrency@@QEAA@XZ
+         22   15 00034F00 ??1_Amp_runtime_trace@details@Concurrency@@QEAA@XZ
+         23   16 00017970 ??1_Event@details@Concurrency@@QEAA@XZ
+         24   17 00017970 ??1accelerator@Concurrency@@QEAA@XZ
+         25   18 00017970 ??1accelerator_view@Concurrency@@QEAA@XZ
+         26   19 00018450 ??1runtime_exception@Concurrency@@UEAA@XZ
+         27   1A 0000BF20 ??1scoped_d3d_access_lock@direct3d@Concurrency@@QEAA@XZ
+         28   1B 000179E0 ??4_Event@details@Concurrency@@QEAAAEAV012@AEBV012@@Z
+         29   1C 000179E0 ??4accelerator@Concurrency@@QEAAAEAV01@AEBV01@@Z
+         30   1D 00017E60 ??4accelerator_view@Concurrency@@QEAAAEAV01@AEBV01@@Z
+         31   1E 00018400 ??4runtime_exception@Concurrency@@QEAAAEAV01@AEBV01@@Z
+         32   1F 0000BFB0 ??4scoped_d3d_access_lock@direct3d@Concurrency@@QEAAAEAV012@$$QEAV012@@Z
+         33   20 00017E10 ??8_Event@details@Concurrency@@QEBA_NAEBV012@@Z
+         34   21 00017E10 ??8accelerator@Concurrency@@QEBA_NAEBV01@@Z
+         35   22 00017E10 ??8accelerator_view@Concurrency@@QEBA_NAEBV01@@Z
+         36   23 00017E20 ??9_Event@details@Concurrency@@QEBA_NAEBV012@@Z
+         37   24 00017E20 ??9accelerator@Concurrency@@QEBA_NAEBV01@@Z
+         38   25 00017E20 ??9accelerator_view@Concurrency@@QEBA_NAEBV01@@Z
+         39   26 00033920 ?_Add_continuation@_Event@details@Concurrency@@QEAA?AV123@AEBV?$function@$$A6A?AV_Event@details@Concurrency@@XZ@std@@@Z
+         40   27 00033780 ?_Add_event@_Event@details@Concurrency@@QEAA?AV123@V123@@Z
+         41   28 00019C60 ?_Adopt_texture@_Texture@details@Concurrency@@SAPEAV123@IW4_Short_vector_base_type_id@23@PEAUIUnknown@@Vaccelerator_view@3@I@Z
+         42   29 0001A4A0 ?_Clone_texture@_Texture@details@Concurrency@@SAPEAV123@PEBV123@AEBVaccelerator_view@3@1@Z
+         43   2A 0001FAF0 ?_Copy_async_impl@details@Concurrency@@YA?AV_Event@12@PEAV_Texture@12@PEB_KI01I11@Z
+         44   2B 0001EA30 ?_Copy_impl@details@Concurrency@@YA?AV_Event@12@PEAV_Buffer@12@V?$_Reference_counted_obj_ptr@V_View_shape@details@Concurrency@@@12@01@Z
+         45   2C 0001DE90 ?_Copy_impl@details@Concurrency@@YA?AV_Event@12@PEAV_Buffer@12@_K0111@Z
+         46   2D 000194D0 ?_Copy_to_async@_Buffer@details@Concurrency@@QEAA?AV_Event@23@PEAV123@V?$_Reference_counted_obj_ptr@V_View_shape@details@Concurrency@@@23@1@Z
+         47   2E 000193F0 ?_Copy_to_async@_Buffer@details@Concurrency@@QEAA?AV_Event@23@PEAV123@_K11@Z
+         48   2F 0001A3C0 ?_Copy_to_async@_Texture@details@Concurrency@@QEAA?AV_Event@23@PEAV123@PEB_K11II@Z
+         49   30 0001DB80 ?_Create@_Sampler@details@Concurrency@@SAPEAV123@IIMMMM@Z
+         50   31 0001DC20 ?_Create@_Sampler@details@Concurrency@@SAPEAV123@PEAX@Z
+         51   32 000190A0 ?_Create_buffer@_Buffer@details@Concurrency@@SAPEAV123@PEAXVaccelerator_view@3@_K2@Z
+         52   33 00018F30 ?_Create_buffer@_Buffer@details@Concurrency@@SAPEAV123@Vaccelerator_view@3@0_K1_NW4access_type@3@@Z
+         53   34 00019190 ?_Create_stage_buffer@_Buffer@details@Concurrency@@SAPEAV123@Vaccelerator_view@3@0_K1_N@Z
+         54   35 00019F10 ?_Create_stage_texture@_Texture@details@Concurrency@@SAPEAV123@Vaccelerator_view@3@0I_K11II_N@Z
+         55   36 0001A1E0 ?_Create_stage_texture@_Texture@details@Concurrency@@SAPEAV123@Vaccelerator_view@3@0I_K11IW4_Short_vector_base_type_id@23@II@Z
+         56   37 00019A90 ?_Create_texture@_Texture@details@Concurrency@@SAPEAV123@Vaccelerator_view@3@I_K11IW4_Short_vector_base_type_id@23@II_N@Z
+         57   38 0001A840 ?_Create_ubiquitous_buffer@_Ubiquitous_buffer@details@Concurrency@@SAPEAV123@V?$_Reference_counted_obj_ptr@V_Buffer@details@Concurrency@@@23@@Z
+         58   39 0001A700 ?_Create_ubiquitous_buffer@_Ubiquitous_buffer@details@Concurrency@@SAPEAV123@_K0@Z
+         59   3A 00018B90 ?_Create_view_shape@_View_shape@details@Concurrency@@SAPEAV123@IIPEBI00PEB_N@Z
+         60   3B 0001C690 ?_Discard@_Ubiquitous_buffer@details@Concurrency@@QEAAXPEAU_Buffer_descriptor@23@@Z
+         61   3C 00019870 ?_Exclusively_owns_data@_Buffer@details@Concurrency@@QEAA_NXZ
+         62   3D 00033760 ?_Get@_Event@details@Concurrency@@QEAAXXZ
+         63   3E 0001DA40 ?_Get_CPU_access@_Buffer_descriptor@details@Concurrency@@QEBAXW4_Access_mode@@@Z
+         64   3F 0000B820 ?_Get_D3D_buffer@_D3D_interop@details@Concurrency@@SAPEAUIUnknown@@PEAV_Buffer@23@@Z
+         65   40 0000B9B0 ?_Get_D3D_sampler@_D3D_interop@details@Concurrency@@SAPEAUIUnknown@@AEBVaccelerator_view@3@PEAV_Sampler@23@@Z
+         66   41 0000B910 ?_Get_D3D_sampler_data_ptr@_D3D_interop@details@Concurrency@@SAPEAXPEAUIUnknown@@@Z
+         67   42 0000B8E0 ?_Get_D3D_texture@_D3D_interop@details@Concurrency@@SAPEAUIUnknown@@PEAV_Texture@23@@Z
+         68   43 00019690 ?_Get_accelerator_view@_Buffer@details@Concurrency@@QEBA?AVaccelerator_view@3@XZ
+         69   44 0001AE40 ?_Get_access_async@_Ubiquitous_buffer@details@Concurrency@@AEAA?AV_Event@23@PEAU_Buffer_descriptor@23@Vaccelerator_view@3@W4_Access_mode@@AEAV?$_Reference_counted_obj_ptr@V_Buffer@details@Concurrency@@@23@PEA_K@Z
+         70   45 0001AED0 ?_Get_access_async@_Ubiquitous_buffer@details@Concurrency@@QEAA?AV_Event@23@PEAU_Buffer_descriptor@23@V?$_Reference_counted_obj_ptr@V_Accelerator_view_impl@details@Concurrency@@@23@W4_Access_mode@@AEAV?$_Reference_counted_obj_ptr@V_Buffer@details@Concurrency@@@23@PEA_K@Z
+         71   46 000196F0 ?_Get_access_on_accelerator_view@_Buffer@details@Concurrency@@QEBA?AVaccelerator_view@3@XZ
+         72   47 00035040 ?_Get_amp_trace@details@Concurrency@@YAPEAV_Amp_runtime_trace@12@XZ
+         73   48 00017AA0 ?_Get_description@accelerator@Concurrency@@AEBAPEB_WXZ
+         74   49 00017A80 ?_Get_device_path@accelerator@Concurrency@@AEBAPEB_WXZ
+         75   4A 0000FB20 ?_Get_devices@details@Concurrency@@YAPEAV?$_Reference_counted_obj_ptr@V_Accelerator_impl@details@Concurrency@@@12@XZ
+         76   4B 00019690 ?_Get_master_accelerator_view@_Ubiquitous_buffer@details@Concurrency@@QEBA?AVaccelerator_view@3@XZ
+         77   4C 0001C760 ?_Get_master_buffer@_Ubiquitous_buffer@details@Concurrency@@QEBA?AV?$_Reference_counted_obj_ptr@V_Buffer@details@Concurrency@@@23@XZ
+         78   4D 0000FB00 ?_Get_num_devices@details@Concurrency@@YA_KXZ
+         79   4E 00005710 ?_Get_preferred_copy_chunk_size@details@Concurrency@@YA_K_K@Z
+         80   4F 00020980 ?_Get_recommended_buffer_host_access_mode@details@Concurrency@@YA?AW4_Access_mode@@AEBVaccelerator_view@2@@Z
+         81   50 00018C10 ?_Get_reduced_shape_for_copy@_View_shape@details@Concurrency@@QEAAPEAV123@XZ
+         82   51 000209D0 ?_Get_src_dest_accelerator_view@details@Concurrency@@YA?AU?$pair@Vaccelerator_view@Concurrency@@V12@@std@@PEBU_Buffer_descriptor@12@0@Z
+         83   52 000192A0 ?_Get_temp_staging_buffer@_Buffer@details@Concurrency@@SAPEAV123@Vaccelerator_view@3@_K1@Z
+         84   53 0001A090 ?_Get_temp_staging_texture@_Texture@details@Concurrency@@SAPEAV123@Vaccelerator_view@3@I_K11II@Z
+         85   54 0001C7A0 ?_Get_view_shape@_Ubiquitous_buffer@details@Concurrency@@QEAA?AV?$_Reference_counted_obj_ptr@V_View_shape@details@Concurrency@@@23@PEAU_Buffer_descriptor@23@@Z
+         86   55 00017860 ?_Init@accelerator@Concurrency@@AEAAXPEB_W@Z
+         87   56 0000FCC0 ?_Is_D3D_accelerator_view@details@Concurrency@@YA_NAEBVaccelerator_view@2@@Z
+         88   57 00033750 ?_Is_empty@_Event@details@Concurrency@@QEBA_NXZ
+         89   58 00033740 ?_Is_finished@_Event@details@Concurrency@@QEAA_NXZ
+         90   59 00033730 ?_Is_finished_nothrow@_Event@details@Concurrency@@QEAA_NXZ
+         91   5A 00019890 ?_Is_mappable@_Buffer@details@Concurrency@@QEBA_NXZ
+         92   5B 00035950 ?_Launch_array_view_synchronize_event_helper@_Amp_runtime_trace@details@Concurrency@@QEAAKAEBU_Buffer_descriptor@23@@Z
+         93   5C 00035FB0 ?_Launch_async_copy_event_helper@_Amp_runtime_trace@details@Concurrency@@QEAAK$$TAEBU_Buffer_descriptor@23@_K@Z
+         94   5D 000362C0 ?_Launch_async_copy_event_helper@_Amp_runtime_trace@details@Concurrency@@QEAAK$$TAEBU_Texture_descriptor@23@_K@Z
+         95   5E 00036090 ?_Launch_async_copy_event_helper@_Amp_runtime_trace@details@Concurrency@@QEAAKAEBU_Buffer_descriptor@23@$$T_K@Z
+         96   5F 00035EB0 ?_Launch_async_copy_event_helper@_Amp_runtime_trace@details@Concurrency@@QEAAKAEBU_Buffer_descriptor@23@0_K@Z
+         97   60 00036270 ?_Launch_async_copy_event_helper@_Amp_runtime_trace@details@Concurrency@@QEAAKAEBU_Texture_descriptor@23@$$T_K@Z
+         98   61 00036310 ?_Launch_async_copy_event_helper@_Amp_runtime_trace@details@Concurrency@@QEAAKAEBU_Texture_descriptor@23@0_K@Z
+         99   62 00019350 ?_Map_buffer@_Buffer@details@Concurrency@@QEAAXW4_Access_mode@@_N@Z
+        100   63 00019380 ?_Map_buffer_async@_Buffer@details@Concurrency@@QEAA?AV_Event@23@W4_Access_mode@@@Z
+        101   64 00018760 ?_Recursive_array_copy@details@Concurrency@@YAJAEBU_Array_copy_desc@12@IV?$function@$$A6AJAEBU_Array_copy_desc@details@Concurrency@@@Z@std@@@Z
+        102   65 0001DCE0 ?_Register_async_event@details@Concurrency@@YAXAEBV_Event@12@AEBV?$shared_future@X@std@@@Z
+        103   66 00019750 ?_Register_view@_Buffer@details@Concurrency@@QEAAXPEAU_Buffer_descriptor@23@@Z
+        104   67 0001A8A0 ?_Register_view@_Ubiquitous_buffer@details@Concurrency@@QEAAXPEAU_Buffer_descriptor@23@Vaccelerator_view@3@V?$_Reference_counted_obj_ptr@V_View_shape@details@Concurrency@@@23@QEAU423@@Z
+        105   68 0001AB30 ?_Register_view_copy@_Ubiquitous_buffer@details@Concurrency@@QEAAXPEAU_Buffer_descriptor@23@0@Z
+        106   69 000186D0 ?_Release@_Reference_counter@details@Concurrency@@QEAAXXZ
+        107   6A 0000B990 ?_Release_D3D_sampler_data_ptr@_D3D_interop@details@Concurrency@@SAXPEAX@Z
+        108   6B 00020770 ?_Select_copy_src_accelerator_view@details@Concurrency@@YA?AVaccelerator_view@2@PEAU_Buffer_descriptor@12@AEBV32@@Z
+        109   6C 0000FB40 ?_Select_default_accelerator@details@Concurrency@@YA?AVaccelerator@2@XZ
+        110   6D 0000FBD0 ?_Set_default_accelerator@details@Concurrency@@YA_NV?$_Reference_counted_obj_ptr@V_Accelerator_impl@details@Concurrency@@@12@@Z
+        111   6E 000357D0 ?_Start_array_view_synchronize_event_helper@_Amp_runtime_trace@details@Concurrency@@QEAAKAEBU_Buffer_descriptor@23@@Z
+        112   6F 000353C0 ?_Start_async_op_wait_event@_Amp_runtime_trace@details@Concurrency@@AEAAKK@Z
+        113   70 00035CF0 ?_Start_copy_event_helper@_Amp_runtime_trace@details@Concurrency@@QEAAK$$TAEBU_Buffer_descriptor@23@_K@Z
+        114   71 000361C0 ?_Start_copy_event_helper@_Amp_runtime_trace@details@Concurrency@@QEAAK$$TAEBU_Texture_descriptor@23@_K@Z
+        115   72 00035DD0 ?_Start_copy_event_helper@_Amp_runtime_trace@details@Concurrency@@QEAAKAEBU_Buffer_descriptor@23@$$T_K@Z
+        116   73 00035BF0 ?_Start_copy_event_helper@_Amp_runtime_trace@details@Concurrency@@QEAAKAEBU_Buffer_descriptor@23@0_K@Z
+        117   74 00036170 ?_Start_copy_event_helper@_Amp_runtime_trace@details@Concurrency@@QEAAKAEBU_Texture_descriptor@23@$$T_K@Z
+        118   75 00036210 ?_Start_copy_event_helper@_Amp_runtime_trace@details@Concurrency@@QEAAKAEBU_Texture_descriptor@23@0_K@Z
+        119   76 00035450 ?_Start_parallel_for_each_event_helper@_Amp_runtime_trace@details@Concurrency@@QEAAKPEAU_DPC_call_handle@23@@Z
+        120   77 000193D0 ?_Unmap_buffer@_Buffer@details@Concurrency@@QEAAXXZ
+        121   78 00019820 ?_Unregister_view@_Buffer@details@Concurrency@@QEAAXPEAU_Buffer_descriptor@23@@Z
+        122   79 0001AC10 ?_Unregister_view@_Ubiquitous_buffer@details@Concurrency@@QEAAXPEAU_Buffer_descriptor@23@@Z
+        123   7A 00035170 ?_Write_end_event@_Amp_runtime_trace@details@Concurrency@@QEAAXK@Z
+        124   7B 00020C10 ?amp_uninitialize@Concurrency@@YAXXZ
+        125   7C 000432E8 ?cpu_accelerator@accelerator@Concurrency@@2QB_WB
+        126   7D 00003C80 ?create_accelerator_view@direct3d@Concurrency@@YA?AVaccelerator_view@2@AEAVaccelerator@2@_NW4queuing_mode@2@@Z
+        127   7E 00003990 ?create_accelerator_view@direct3d@Concurrency@@YA?AVaccelerator_view@2@PEAUIUnknown@@W4queuing_mode@2@@Z
+        128   7F 00017F60 ?create_marker@accelerator_view@Concurrency@@QEAA?AVcompletion_future@2@XZ
+        129   80 00017D30 ?create_view@accelerator@Concurrency@@QEAA?AVaccelerator_view@2@W4queuing_mode@2@@Z
+        130   81 0000BC40 ?d3d_access_lock@direct3d@Concurrency@@YAXAEAVaccelerator_view@2@@Z
+        131   82 0000BCD0 ?d3d_access_try_lock@direct3d@Concurrency@@YA_NAEAVaccelerator_view@2@@Z
+        132   83 0000BD60 ?d3d_access_unlock@direct3d@Concurrency@@YAXAEAVaccelerator_view@2@@Z
+        133   84 00043678 ?default_accelerator@accelerator@Concurrency@@2QB_WB
+        134   85 00043808 ?direct3d_ref@accelerator@Concurrency@@2QB_WB
+        135   86 000437E8 ?direct3d_warp@accelerator@Concurrency@@2QB_WB
+        136   87 00018190 ?flush@accelerator_view@Concurrency@@QEAAXXZ
+        137   88 00017F00 ?get_accelerator@accelerator_view@Concurrency@@QEBA?AVaccelerator@2@XZ
+        138   89 000176F0 ?get_auto_selection_view@accelerator@Concurrency@@SA?AVaccelerator_view@2@XZ
+        139   8A 00017C20 ?get_dedicated_memory@accelerator@Concurrency@@QEBA_KXZ
+        140   8B 00017C40 ?get_default_cpu_access_type@accelerator@Concurrency@@QEBA?AW4access_type@2@XZ
+        141   8C 00017BC0 ?get_default_view@accelerator@Concurrency@@QEBA?AVaccelerator_view@2@XZ
+        142   8D 0000BBA0 ?get_device@direct3d@Concurrency@@YAPEAUIUnknown@@AEBVaccelerator_view@2@@Z
+        143   8E 00018490 ?get_error_code@runtime_exception@Concurrency@@QEBAJXZ
+        144   8F 00017B70 ?get_has_display@accelerator@Concurrency@@QEBA_NXZ
+        145   90 00017EF0 ?get_is_auto_selection@accelerator_view@Concurrency@@QEBA_NXZ
+        146   91 00017B10 ?get_is_debug@accelerator@Concurrency@@QEBA_NXZ
+        147   92 00017ED0 ?get_is_debug@accelerator_view@Concurrency@@QEBA_NXZ
+        148   93 00017B60 ?get_is_emulated@accelerator@Concurrency@@QEBA_NXZ
+        149   94 00017EE0 ?get_queuing_mode@accelerator_view@Concurrency@@QEBA?AW4queuing_mode@2@XZ
+        150   95 00017BB0 ?get_supports_cpu_shared_memory@accelerator@Concurrency@@QEBA_NXZ
+        151   96 00017B90 ?get_supports_double_precision@accelerator@Concurrency@@QEBA_NXZ
+        152   97 00017BA0 ?get_supports_limited_double_precision@accelerator@Concurrency@@QEBA_NXZ
+        153   98 00017AC0 ?get_version@accelerator@Concurrency@@QEBAIXZ
+        154   99 00017EC0 ?get_version@accelerator_view@Concurrency@@QEBAIXZ
+        155   9A 000185C0 ?get_view_removed_reason@accelerator_view_removed@Concurrency@@QEBAJXZ
+        156   9B 00003D80 ?is_timeout_disabled@direct3d@Concurrency@@YA_NAEBVaccelerator_view@2@@Z
+        157   9C 00017C60 ?set_default_cpu_access_type@accelerator@Concurrency@@QEAA_NW4access_type@2@@Z
+        158   9D 000180A0 ?wait@accelerator_view@Concurrency@@QEAAXXZ
+        159   9E 0002BBC0 __dpc_create_call_handle
+        160   9F 0002C2D0 __dpc_dispatch_kernel
+        161   A0 0002BC60 __dpc_release_call_handle
+        162   A1 0002BDF0 __dpc_set_const_buffer_info
+        163   A2 0002BD20 __dpc_set_device_resource_info
+        164   A3 0002BE00 __dpc_set_kernel_dispatch_info
+        165   A4 0002BD60 __dpc_set_kernel_shader_info
+
+  Summary
+
+        4000 .data
+        4000 .pdata
+       29000 .rdata
+        1000 .reloc
+        3000 .rsrc
+       3E000 .text

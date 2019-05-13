@@ -1,0 +1,63 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\printui.dll
+
+File Type: DLL
+
+  Section contains the following exports for PRINTUI.dll
+
+    00000000 characteristics
+    3F82513E time date stamp
+        0.00 version
+           1 ordinal base
+          41 number of functions
+          31 number of names
+
+    ordinal hint RVA      name
+
+          7    0 00041BB0 ConnectToPrinterDlg
+          1    1 00002A40 ConstructPrinterFriendlyName
+          8    2 0002C4C0 DllCanUnloadNow
+          9    3 0002C4D0 DllGetClassObject
+         10    4 00005400 DllMain
+         11    5 00002ED0 DllRegisterServer
+         12    6 00002ED0 DllUnregisterServer
+         13    7 000023D0 DocumentPropertiesWrap
+         14    8 0002F580 LaunchPlatformHelp
+          2    9 0001EA20 PnPInterface
+         15    A 00043D90 PrintNotifyTray_Exit
+         16    B 00043DB0 PrintNotifyTray_Init
+         17    C 0002F6B0 PrintUIDownloadAndInstallLegacyDriver
+         33    D 000359C0 PrintUIEntryDPIAwareW
+          3    E 00035A20 PrintUIEntryW
+          4    F 0003F9B0 PrinterPropPageProvider
+         18   10 00002ED0 RegisterPrintNotify
+          5   11 0003EF40 ReleaseArgv
+         19   12 0002F760 ShowErrorMessageHR
+         20   13 0002F880 ShowErrorMessageSC
+         21   14 0002F960 ShowHelpLinkDialog
+          6   15 0003EFA0 StringToArgv
+         22   16 00002ED0 UnregisterPrintNotify
+         23   17 00002CE0 bFolderEnumPrinters
+         24   18 00002CE0 bFolderGetPrinter
+         25   19 00002CE0 bFolderRefresh
+         26   1A 0002A9C0 bPrinterSetup
+         27   1B 00013C10 vDocumentDefaults
+         28   1C 0001B3F0 vPrinterPropPages
+         29   1D 0002C880 vQueueCreate
+         30   1E 00013330 vServerPropPages
+         39      0003BCA0 [NONAME]
+         40      0003BDA0 [NONAME]
+         41      0002D1B0 [NONAME]
+
+  Summary
+
+        4000 .data
+        1000 .didat
+        6000 .pdata
+       14000 .rdata
+        1000 .reloc
+       92000 .rsrc
+       79000 .text

@@ -1,0 +1,40 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\difxapi.dll
+
+File Type: DLL
+
+  Section contains the following exports for DIFXAPI.dll
+
+    00000000 characteristics
+    152AD9CE time date stamp
+        0.00 version
+           1 ordinal base
+          12 number of functions
+          12 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001C30 DIFXAPISetLogCallbackA
+          2    1 00001C10 DIFXAPISetLogCallbackW
+          3    2 00001AA0 DriverPackageGetPathA
+          4    3 00001980 DriverPackageGetPathW
+          5    4 000015C0 DriverPackageInstallA
+          6    5 00001540 DriverPackageInstallW
+          7    6 000014B0 DriverPackagePreinstallA
+          8    7 00001440 DriverPackagePreinstallW
+          9    8 000017E0 DriverPackageUninstallA
+         10    9 00001760 DriverPackageUninstallW
+         11    A 00001BE0 SetDifxLogCallbackA
+         12    B 00001BC0 SetDifxLogCallbackW
+
+  Summary
+
+        1000 .data
+        2000 .pdata
+       1E000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       35000 .text

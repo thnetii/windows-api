@@ -1,0 +1,121 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\dmcmnutils.dll
+
+File Type: DLL
+
+  Section contains the following exports for DMCmnUtils.dll
+
+    00000000 characteristics
+    3A57230F time date stamp
+        0.00 version
+           1 ordinal base
+          92 number of functions
+          92 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0000D110 BigStrcat
+         91    1 0000E120 BinaryToHexString
+          2    2 00002950 ComputeHmac
+          3    3 0000D270 CopyString
+          4    4 0000DFC0 CreateBstrArray
+          5    5 000052D0 DMGetClientHardwareUID
+          6    6 00004CB0 DMGetDeviceClientID
+          7    7 00004EC0 DMSetDeviceClientID
+          8    8 00001F90 DecodeBase64W
+          9    9 00013C40 DmCancelGetUserPermissionAsync
+         10    A 00002550 DmCopyDirectoryRecursive
+         11    B 0000AAC0 DmCreateTask
+         12    C 0000B670 DmDeleteTask
+         13    D 0000CDA0 DmEnumUsers
+         14    E 00012CE0 DmGetAadDeviceToken
+         15    F 00012C80 DmGetAadUserToken
+         16   10 0000CAD0 DmGetActiveUserSid
+         17   11 0000C830 DmGetCurrentUserSid
+         18   12 0000C840 DmGetCurrentUserToken
+         19   13 000024B0 DmGetFileSize
+         20   14 000083F0 DmGetIMEI
+         21   15 00008170 DmGetSmbiosSerialNumber
+         22   16 00013A20 DmGetUserEditFieldInput
+         23   17 000139C0 DmGetUserPermission
+         24   18 00013B20 DmGetUserPermissionAsync
+         25   19 0000CD10 DmGetUserSidFromToken
+         26   1A 0000C890 DmGetUserTokenFromSid
+         27   1B 0000C980 DmImpersonate
+         28   1C 000139B0 DmInformUser
+         29   1D 00008180 DmIsDeviceConnected
+         30   1E 00008230 DmIsDeviceRoaming
+         31   1F 0000C820 DmIsRunningInSystemContext
+         32   20 0000C7C0 DmIsSystemOrAdmin
+         33   21 0000C7F0 DmIsSystemOrUserIsAdmin
+         34   22 0000BA20 DmIsTaskScheduled
+         35   23 000021A0 DmMdmSign
+         36   24 0000E850 DmPlayNotificationSound
+         37   25 000104F0 DmRaiseToastNotification
+         38   26 0000F800 DmRaiseToastNotificationAndWait
+         39   27 00008610 DmRegisterRoamingNotification
+         40   28 000107B0 DmRemoveToastNotification
+         41   29 00012CB0 DmRequestAadUserToken
+         42   2A 0000CA70 DmRevertToSelf
+         43   2B 0000A480 DmRunTask
+         44   2C 000086D0 DmUnregisterRoamingNotification
+         45   2D 00013DE0 DmWnfGetNotification
+         46   2E 00013F40 DmWnfPublish
+         47   2F 00013D40 DmWnfQuery
+         48   30 00001AC0 EncodeBase64
+         49   31 00001C10 EncodeBase64W
+         50   32 0000D420 EscapeStringW
+         51   33 00006850 GetHeader
+         52   34 000091A0 GetICCID
+         53   35 000093D0 GetIMEI
+         54   36 00008F70 GetIMSI
+         55   37 00008960 GetIMSIByIccID
+         56   38 00008720 GetPGListRegKeyName
+         57   39 000094D0 GetPhoneNumber
+         58   3A 00005400 GetPhoneUID
+         59   3B 000074A0 Hash_Create
+         60   3C 00007930 Hash_Delete
+         61   3D 000075D0 Hash_Destroy
+         62   3E 000076F0 Hash_DestroyCallback
+         63   3F 00007B90 Hash_EnumCallback
+         64   40 00007A70 Hash_Get
+         65   41 00007740 Hash_Insert
+         66   42 00007CD0 Hash_SetBucketThreshold
+         92   43 0000E2D0 HexStringToBinary
+         67   44 0000D6F0 InvStrCmpIW
+         68   45 0000D910 InvStrCmpNIW
+         69   46 0000D7F0 InvStrCmpNW
+         70   47 0000D600 InvStrCmpW
+         71   48 00006C50 IsPhoneOS
+         72   49 0000DB60 MBToUnicode
+         73   4A 000065A0 OmDmRegistryAllocAndGetString
+         74   4B 00006420 OmaDmRegistryDeleteValue
+         75   4C 00006CD0 OmaDmRegistryGetAllSubKeys
+         76   4D 00006F00 OmaDmRegistryGetAllValues
+         77   4E 00006770 OmaDmRegistryGetBinary
+         78   4F 00006210 OmaDmRegistryGetDWORD
+         79   50 000064D0 OmaDmRegistryGetString
+         80   51 00007130 OmaDmRegistryRetrieveCurrentUsersHKCU
+         81   52 000066A0 OmaDmRegistrySetBinary
+         82   53 00006150 OmaDmRegistrySetDWORD
+         83   54 00006300 OmaDmRegistrySetString
+         84   55 00009ED0 QueryPolicy
+         85   56 0000DDD0 SafeMultiByteToWideChar
+         86   57 0000DE90 SafeStringToDword
+         87   58 0000DC90 SafeWideCharToMultiByte
+         88   59 00006B90 SetConnectionPriority
+         89   5A 0000A020 SetPolicy
+         90   5B 0000DA30 UnicodeToMB
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        2000 .pdata
+        A000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       18000 .text

@@ -1,0 +1,57 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\Winlangdb.dll
+
+File Type: DLL
+
+  Section contains the following exports for WinLangdb.dll
+
+    00000000 characteristics
+    31542EE7 time date stamp
+        0.00 version
+           1 ordinal base
+          28 number of functions
+          28 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00006B50 Bcp47GetEnglishName
+          2    1 00006A10 Bcp47GetLocalizedName
+          3    2 00007000 Bcp47GetLocalizedScript
+          4    3 000068A0 Bcp47GetNativeName
+          5    4 00006C90 Bcp47GetSerializedUserLanguageProfile
+          6    5 00016E90 EnsureLanguageProfileExists
+          7    6 00005110 GetCompatibleInputMethodsForLanguage
+          8    7 00005170 GetCompatibleInputMethodsForLanguageKeyboardAndImeMixed
+          9    8 000050C0 GetDefaultInputMethodForLanguage
+         10    9 00005220 GetInputMethodDescription
+         11    A 000051D0 GetInputMethodProperties
+         12    B 00005270 GetInputMethodTileName
+         13    C 00006CA0 GetLanguageNames
+         14    D 000072B0 GetLocaleFromLanguageAndRegion
+         15    E 00007A10 GetRegionalFormatList
+         16    F 00005420 IsImeInputMethod
+         17   10 00005310 IsImmersiveInputMethod
+         18   11 000052C0 IsTouchEnabledInputMethod
+         19   12 00007140 IsoScriptGetLocalizedName
+         20   13 000065E0 LanguagesDatabaseGetChildLanguages
+         21   14 00006770 LanguagesDatabaseGetLeafLanguages
+         22   15 000064F0 LanguagesDatabaseHasChildren
+         23   16 00007220 LanguagesDatabaseHasLocalizedContent
+         24   17 00016E40 SetUserLanguages
+         25   18 00016E70 SetUserLanguagesCore
+         26   19 00016E50 SetUserLanguagesNoSpeller
+         27   1A 00005360 TransformInputMethodsForLanguage
+         28   1B 000053C0 TransformInputMethodsForLanguageId
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        2000 .pdata
+       13000 .rdata
+        1000 .reloc
+       39000 .rsrc
+       1A000 .text

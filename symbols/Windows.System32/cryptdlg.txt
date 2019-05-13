@@ -1,0 +1,49 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\cryptdlg.dll
+
+File Type: DLL
+
+  Section contains the following exports for CRYPTDLG.dll
+
+    00000000 characteristics
+    FAC630D4 time date stamp
+        0.00 version
+           1 ordinal base
+          21 number of functions
+          21 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000013A0 CertConfigureTrustA
+          2    1 000013A0 CertConfigureTrustW
+         13    2 00004000 CertModifyCertificatesToTrust
+         14    3 00001370 CertSelectCertificateA
+         15    4 00001380 CertSelectCertificateW
+          3    5 000013A0 CertTrustCertPolicy
+          4    6 00003FF0 CertTrustCleanup
+          5    7 00003850 CertTrustFinalPolicy
+          6    8 00003F80 CertTrustInit
+         16    9 00002D50 CertViewPropertiesA
+         17    A 00002D60 CertViewPropertiesW
+          7    B 00001A10 DecodeAttrSequence
+          8    C 00001EA0 DecodeRecipientID
+         18    D 00002030 DllRegisterServer
+         19    E 00002230 DllUnregisterServer
+          9    F 00001870 EncodeAttrSequence
+         10   10 00001D70 EncodeRecipientID
+         11   11 000017C0 FormatPKIXEmailProtection
+         12   12 00001770 FormatVerisignExtension
+         20   13 000015B0 GetFriendlyNameOfCertA
+         21   14 00001680 GetFriendlyNameOfCertW
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        5000 .text

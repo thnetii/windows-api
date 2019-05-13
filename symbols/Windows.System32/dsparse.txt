@@ -1,0 +1,49 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\dsparse.dll
+
+File Type: DLL
+
+  Section contains the following exports for DSPARSE.dll
+
+    00000000 characteristics
+     C322D36 time date stamp
+        0.00 version
+           1 ordinal base
+          20 number of functions
+          20 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00002740 DsCrackSpn2A
+          2    1 00001010 DsCrackSpn2W
+          3    2 00002A80 DsCrackSpn3W
+          4    3 00002BE0 DsCrackSpn4W
+          5    4 00002E50 DsCrackSpnA
+          6    5 00003160 DsCrackSpnW
+          7    6 00004080 DsCrackUnquotedMangledRdnA
+          8    7 00004100 DsCrackUnquotedMangledRdnW
+          9    8 000041A0 DsGetRdnW
+         10    9 00004210 DsIsMangledDnA
+         11    A 00004270 DsIsMangledDnW
+         12    B 000042F0 DsIsMangledRdnValueA
+         13    C 00004360 DsIsMangledRdnValueW
+         14    D 00003370 DsMakeSpn2W
+         15    E 00003620 DsMakeSpnA
+         16    F 00003820 DsMakeSpnW
+         17   10 00004410 DsQuoteRdnValueA
+         18   11 00004580 DsQuoteRdnValueW
+         19   12 000045F0 DsUnquoteRdnValueA
+         20   13 00004760 DsUnquoteRdnValueW
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        5000 .text

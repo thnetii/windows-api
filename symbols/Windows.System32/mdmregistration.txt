@@ -1,0 +1,42 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\mdmregistration.dll
+
+File Type: DLL
+
+  Section contains the following exports for MDMRegistration.DLL
+
+    00000000 characteristics
+    23B5E651 time date stamp
+        0.00 version
+           1 ordinal base
+          13 number of functions
+          11 number of names
+
+    ordinal hint RVA      name
+
+          3    0 00004250 DiscoverManagementService
+          4    1 00003E40 DiscoverManagementServiceEx
+          5    2 00004980 GetDeviceRegistrationInfo
+          6    3 00004D10 GetManagementAppHyperlink
+          7    4 00004B90 IsDeviceRegisteredWithManagement
+          8    5 00003DA0 IsManagementRegistrationAllowed
+          9    6 00004260 RegisterDeviceWithManagement
+         10    7 00004620 RegisterDeviceWithManagementUsingAADCredentials
+         11    8 00004640 RegisterDeviceWithManagementUsingAADDeviceCredentials
+         12    9 00003DB0 SetManagedExternally
+         13    A 00004660 UnregisterDeviceWithManagement
+          1      00007500 [NONAME]
+          2      00007970 [NONAME]
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        2000 .pdata
+       18000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       23000 .text

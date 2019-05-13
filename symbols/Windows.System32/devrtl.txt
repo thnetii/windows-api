@@ -1,0 +1,57 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\devrtl.dll
+
+File Type: DLL
+
+  Section contains the following exports for DEVRTL.dll
+
+    00000000 characteristics
+    415B279A time date stamp
+        0.00 version
+           1 ordinal base
+          29 number of functions
+          29 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00007120 DevRtlCloseTextLogSection
+          2    1 000072F0 DevRtlCreateTextLogSectionA
+          3    2 000078A0 DevRtlCreateTextLogSectionW
+          4    3 00001270 DevRtlGetThreadLogToken
+          5    4 00001240 DevRtlSetThreadLogToken
+          6    5 00007990 DevRtlWriteTextLog
+          7    6 000079C0 DevRtlWriteTextLogError
+          8    7 00003160 NdxTableAddObject
+          9    8 000032D0 NdxTableAddObjectToList
+         10    9 00004680 NdxTableClose
+         11    A 000033F0 NdxTableFirstObject
+         12    B 00003460 NdxTableFirstObjectInList
+         13    C 00003530 NdxTableGetObjectName
+         14    D 00003620 NdxTableGetObjectType
+         15    E 00004F20 NdxTableGetObjectTypeCount
+         16    F 00004F60 NdxTableGetObjectTypeName
+         17   10 00005020 NdxTableGetPropertyTypeClass
+         18   11 000050A0 NdxTableGetPropertyTypeCount
+         19   12 00005110 NdxTableGetPropertyTypeName
+         20   13 000036B0 NdxTableGetPropertyValue
+         21   14 00003820 NdxTableNextObject
+         22   15 000038A0 NdxTableObjectFromName
+         23   16 00003950 NdxTableObjectFromPointer
+         24   17 000046D0 NdxTableOpen
+         25   18 00003A40 NdxTableRemoveObject
+         26   19 00003AD0 NdxTableRemoveObjectFromList
+         27   1A 00003BB0 NdxTableSetObjectPointer
+         28   1B 00003C70 NdxTableSetPropertyValue
+         29   1C 000051F0 NdxTableSetTypeDefinition
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        4000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        A000 .text

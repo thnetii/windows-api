@@ -1,0 +1,70 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\hsa-thunk64.dll
+
+File Type: DLL
+
+  Section contains the following exports for hsa-thunk64.dll
+
+    00000000 characteristics
+    5656A38F time date stamp Thu Nov 26 07:15:43 2015
+        0.00 version
+           1 ordinal base
+          43 number of functions
+          43 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00003550 hsaKmtAcquireSystemProperties
+          2    1 00002030 hsaKmtAllocMemory
+          3    2 00001000 hsaKmtCloseKFD
+          4    3 00001690 hsaKmtCreateEvent
+          5    4 00003040 hsaKmtCreateQueue
+          6    5 000012C0 hsaKmtDbgAddressWatch
+          7    6 000013F0 hsaKmtDbgRegister
+          8    7 000014C0 hsaKmtDbgUnregister
+          9    8 00001590 hsaKmtDbgWavefrontControl
+         10    9 000021D0 hsaKmtDeregisterMemory
+         11    A 00001840 hsaKmtDestroyEvent
+         12    B 00003210 hsaKmtDestroyQueue
+         13    C 000022B0 hsaKmtFreeMemory
+         14    D 00002810 hsaKmtGetClockCounters
+         15    E 00003670 hsaKmtGetNodeCacheProperties
+         16    F 00003860 hsaKmtGetNodeIoLinkProperties
+         17   10 000039E0 hsaKmtGetNodeMemoryProperties
+         18   11 00003B40 hsaKmtGetNodeProperties
+         19   12 00001060 hsaKmtGetVersion
+         20   13 000023D0 hsaKmtMapGraphicHandle
+         21   14 000023E0 hsaKmtMapMemoryToGPU
+         22   15 00001170 hsaKmtOpenKFD
+         23   16 00002930 hsaKmtPmcAcquireTraceAccess
+         24   17 00002A00 hsaKmtPmcGetCounterProperties
+         25   18 00002B00 hsaKmtPmcQueryTrace
+         26   19 00002BD0 hsaKmtPmcRegisterTrace
+         27   1A 00002CE0 hsaKmtPmcReleaseTraceAccess
+         28   1B 00002DB0 hsaKmtPmcStartTrace
+         29   1C 00002EA0 hsaKmtPmcStopTrace
+         30   1D 00002F70 hsaKmtPmcUnregisterTrace
+         31   1E 00001940 hsaKmtQueryEventState
+         32   1F 00002510 hsaKmtRegisterMemory
+         33   20 00003CD0 hsaKmtReleaseSystemProperties
+         34   21 00003350 hsaKmtReportQueue
+         35   22 000019A0 hsaKmtResetEvent
+         36   23 00001A00 hsaKmtSetEvent
+         37   24 00002600 hsaKmtSetMemoryPolicy
+         38   25 00001A60 hsaKmtSetTrapHandler
+         39   26 000026F0 hsaKmtUnmapGraphicHandle
+         40   27 00002700 hsaKmtUnmapMemoryToGPU
+         41   28 00003440 hsaKmtUpdateQueue
+         42   29 00001B70 hsaKmtWaitOnEvent
+         43   2A 00001BE0 hsaKmtWaitOnMultipleEvents
+
+  Summary
+
+        4000 .data
+        2000 .pdata
+        A000 .rdata
+        1000 .reloc
+       19000 .text

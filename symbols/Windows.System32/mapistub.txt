@@ -1,0 +1,201 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\mapistub.dll
+
+File Type: DLL
+
+  Section contains the following exports for MAPI32.dll
+
+    00000000 characteristics
+    B4543FBD time date stamp
+        0.00 version
+           8 ordinal base
+         249 number of functions
+         171 number of names
+
+    ordinal hint RVA      name
+
+        225    0 00010ED0 BMAPIAddress
+        227    1 000110C0 BMAPIDetails
+        224    2 00010DD0 BMAPIFindNext
+        226    3 00010FF0 BMAPIGetAddress
+        223    4 00010CE0 BMAPIGetReadMail
+        222    5 00010BD0 BMAPIReadMail
+        228    6 000111A0 BMAPIResolveName
+        221    7 00010AC0 BMAPISaveMail
+        220    8 000109C0 BMAPISendMail
+         46    9 0000B0C0 BuildDisplayTable
+        207    A 00010720 CbOfEncoded
+        206    B 00010670 CchOfEncoding
+         55    C 0000B770 ChangeIdleRoutine
+        197    D 000100B0 CloseIMsgSession
+         60    E 0000B910 CreateIProp
+         61    F 0000BA00 CreateTable
+         34   10 0000A9E0 DeinitMapiUtil
+         54   11 0000B6D0 DeregisterIdleRoutine
+         28   12 0000A700 DllCanUnloadNow
+         27   13 0000A620 DllGetClassObject
+         53   14 0000B620 EnableIdleRoutine
+        204   15 000104E0 EncodeID
+        182   16 0000F5A0 FBadColumnSet
+        190   17 0000FB10 FBadEntryList
+        181   18 0000F4F0 FBadProp
+        179   19 0000F390 FBadPropTag
+        191   1A 0000FBC0 FBadRestriction
+        178   1B 0000F2D0 FBadRglpNameID
+        175   1C 0000F0A0 FBadRglpszA
+        176   1D 0000F160 FBadRglpszW
+        180   1E 0000F440 FBadRow
+        177   1F 0000F220 FBadRowSet
+        189   20 0000FA60 FBadSortOrderSet
+         44   21 0000AF40 FBinFromHex
+        205   22 000105A0 FDecodeID
+         72   23 0000C100 FEqualNames
+        255   24 00007580 FGetComponentPath
+         79   25 0000C7A0 FPropCompareProp
+         78   26 0000C6D0 FPropContainsProp
+        137   27 0000D690 FPropExists
+        253   28 000096E0 FixMAPI
+        139   29 0000D820 FreePadrlist
+        140   2A 0000D8C0 FreeProws
+        122   2B 0000CCA0 FtAdcFt
+        121   2C 0000CBD0 FtAddFt
+        127   2D 0000CFD0 FtDivFtBogus
+        124   2E 0000CE40 FtMulDw
+        125   2F 0000CB00 FtMulDwDw
+        126   30 0000CF10 FtNegFt
+        123   31 0000CD70 FtSubFt
+         52   32 0000B530 FtgRegisterIdleRoutine
+        200   33 00010360 GetAttribIMsgOnIStg
+        251   34 00009500 GetOutlookVersion
+        153   35 0000E1E0 GetTnefStreamCodepage
+         45   36 0000B000 HexFromBin
+         81   37 0000C930 HrAddColumns
+         82   38 0000CA10 HrAddColumnsEx
+         36   39 0000AB30 HrAllocAdviseSink
+        143   3A 0000DB00 HrComposeEID
+        145   3B 0000DD00 HrComposeMsgID
+        144   3C 0000DC00 HrDecomposeEID
+        146   3D 0000DDF0 HrDecomposeMsgID
+        239   3E 0000ADC0 HrDispatchNotifications
+        142   3F 0000DA30 HrEntryIDFromSz
+        247   40 00009DF0 HrGetOmiProvidersFlags
+        135   41 0000D4F0 HrGetOneProp
+        194   42 0000FE10 HrIStorageFromStream
+         75   43 0000C370 HrQueryAllRows
+        249   44 00009EC0 HrSetOmiProvidersFlagsInvalid
+        136   45 0000D5C0 HrSetOneProp
+        141   46 0000D960 HrSzFromEntryID
+         42   47 0000ACF0 HrThisThreadAdviseSink
+        195   48 0000FEF0 HrValidateIPMSubtree
+        242   49 0000FA30 HrValidateParametersV
+        243   4A 0000F970 HrValidateParametersValist
+         51   4B 0000B490 InstallFilterHook
+         74   4C 0000C2B0 IsBadBoundedStringPtr
+         25   4D 0000A530 LAUNCHWIZARD
+         80   4E 0000C870 LPropCompareProp
+         26   4F 0000A530 LaunchWizard
+        173   50 0000EEF0 LpValFindProp
+        217   51 00011E90 MAPIAddress
+         19   52 0000A200 MAPIAdminProfiles
+         13   53 0000A070 MAPIAllocateBuffer
+         15   54 0000A130 MAPIAllocateMore
+         50   55 0000B400 MAPIDeinitIdle
+        215   56 00013260 MAPIDeleteMail
+        218   57 00013380 MAPIDetails
+        214   58 00013150 MAPIFindNext
+         17   59 00011D90 MAPIFreeBuffer
+         59   5A 0000B870 MAPIGetDefaultMalloc
+         49   5B 0000B340 MAPIInitIdle
+         21   5C 0000A2C0 MAPIInitialize
+        210   5D 00012480 MAPILogoff
+        209   5E 00012370 MAPILogon
+         11   5F 00009F80 MAPILogonEx
+         30   60 0000A7A0 MAPIOpenFormMgr
+         32   61 0000A870 MAPIOpenLocalFormContainer
+        213   62 00012000 MAPIReadMail
+        219   63 00012120 MAPIResolveName
+        212   64 00013040 MAPISaveMail
+        208   65 00012250 MAPISendDocuments
+        211   66 000129B0 MAPISendMail
+        256   67 00012DC0 MAPISendMailW
+         23   68 0000A380 MAPIUninitialize
+         65   69 0000BD50 MNLS_CompareStringW
+         68   6A 0000C040 MNLS_IsBadStringPtrW
+         66   6B 0000BE40 MNLS_MultiByteToWideChar
+         67   6C 0000BF30 MNLS_WideCharToMultiByte
+         63   6D 0000BBD0 MNLS_lstrcmpW
+         64   6E 0000BC90 MNLS_lstrcpyW
+         62   6F 0000BB20 MNLS_lstrlenW
+        201   70 00010430 MapStorageSCode
+        198   71 00010150 OpenIMsgOnIStg
+        196   72 0000FFE0 OpenIMsgSession
+        147   73 0000DEE0 OpenStreamOnFile
+        149   74 0000DFD0 OpenTnefStream
+        151   75 0000E0D0 OpenTnefStreamEx
+         24   76 0000A410 PRProviderInit
+        138   77 0000D750 PpropFindProp
+         76   78 0000C540 PropCopyMore
+        183   79 0000F650 RTFSync
+         43   7A 0000AE70 ScBinFromHexBounded
+        165   7B 0000EA80 ScCopyNotifications
+        171   7C 0000ED20 ScCopyProps
+        164   7D 0000E9B0 ScCountNotifications
+        170   7E 0000EC50 ScCountProps
+        244   7F 0000C460 ScCreateConversationIndex
+        174   80 0000EFC0 ScDupPropset
+         35   81 0000AA70 ScGenerateMuid
+         33   82 0000A930 ScInitMapiUtil
+        193   83 0000FD40 ScLocalPathFromUNC
+        202   84 000108E0 ScMAPIXFromCMC
+        203   85 000107D0 ScMAPIXFromSMAPI
+        166   86 0000EB60 ScRelocNotifications
+        172   87 0000EE00 ScRelocProps
+        192   88 0000FC70 ScUNCFromLocalPath
+        199   89 00010280 SetAttribIMsgOnIStg
+         47   8A 0000B1E0 SwapPlong
+         48   8B 0000B290 SwapPword
+        130   8C 0000D200 SzFindCh
+        131   8D 0000D2C0 SzFindLastCh
+        132   8E 0000D380 SzFindSz
+        133   8F 0000D440 UFromSz
+        162   90 0000E810 UNKOBJ_COFree
+        158   91 0000E510 UNKOBJ_Free
+        159   92 0000E5C0 UNKOBJ_FreeRows
+        156   93 0000E360 UNKOBJ_ScAllocate
+        157   94 0000E430 UNKOBJ_ScAllocateMore
+        160   95 0000E670 UNKOBJ_ScCOAllocate
+        161   96 0000E740 UNKOBJ_ScCOReallocate
+        163   97 0000E8C0 UNKOBJ_ScSzFromIdsAlloc
+        128   98 0000D0A0 UlAddRef
+        155   99 0000E2B0 UlFromSzHex
+         77   9A 0000C620 UlPropSize
+        129   9B 0000D150 UlRelease
+        185   9C 0000F720 WrapCompressedRTFStream
+         41   9D 0000AC00 WrapProgress
+         73   9E 0000C1C0 WrapStoreEntryID
+        188   9F 0000F8B0 __CPPValidateParameters
+        187   A0 0000F7F0 __ValidateParameters
+        229   A1 00011290 cmc_act_on
+        230   A2 00011380 cmc_free
+        231   A3 00011440 cmc_list
+        232   A4 00011550 cmc_logoff
+        233   A5 00011630 cmc_logon
+        234   A6 00011750 cmc_look_up
+        235   A7 00011850 cmc_query_configuration
+        236   A8 00011930 cmc_read
+        237   A9 00011A20 cmc_send
+        238   AA 00011B10 cmc_send_documents
+          8      00009D10 [NONAME]
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        2000 .pdata
+        8000 .rdata
+        1000 .reloc
+        6000 .rsrc
+       16000 .text

@@ -1,0 +1,98 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\bcd.dll
+
+File Type: DLL
+
+  Section contains the following exports for bcd.dll
+
+    00000000 characteristics
+    BAD24ECA time date stamp
+        0.00 version
+           1 ordinal base
+          70 number of functions
+          70 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0000D450 BcdCloseObject
+          2    1 0000E650 BcdCloseStore
+          3    2 000011B0 BcdCopyObject
+          4    3 000011E0 BcdCopyObjectEx
+          5    4 000019A0 BcdCopyObjects
+          6    5 0000D250 BcdCreateObject
+          7    6 0000DCC0 BcdCreateStore
+          8    7 00008450 BcdDeleteElement
+          9    8 0000D310 BcdDeleteObject
+         10    9 0000DFC0 BcdDeleteObjectReferences
+         11    A 0000E1B0 BcdDeleteSystemStore
+         12    B 00009AE0 BcdEnumerateAndUnpackElements
+         13    C 00007BC0 BcdEnumerateElementTypes
+         14    D 00007E10 BcdEnumerateElements
+         15    E 00009CC0 BcdEnumerateElementsWithFlags
+         16    F 0000CD70 BcdEnumerateObjects
+         17   10 00001010 BcdExportStore
+         18   11 0000FB60 BcdFlushStore
+         19   12 0000E710 BcdForciblyUnloadStore
+         20   13 00007E40 BcdGetElementData
+         21   14 00007E60 BcdGetElementDataWithFlags
+         22   15 00001B50 BcdImportStore
+         23   16 00001B60 BcdImportStoreWithFlags
+         24   17 0000E7D0 BcdMarkAsSystemStore
+         25   18 00001BF0 BcdMigrateObjectElementValues
+         26   19 0000D060 BcdOpenObject
+         27   1A 0000E3F0 BcdOpenStore
+         28   1B 0000E3D0 BcdOpenStoreFromFile
+         29   1C 0000DA70 BcdOpenSystemStore
+         30   1D 0000D380 BcdQueryObject
+         31   1E 00008150 BcdSetElementData
+         32   1F 00008170 BcdSetElementDataWithFlags
+         33   20 0000CC60 BcdSetLogging
+         34   21 0000DAE0 BcdSetSystemStoreDevice
+         35   22 00015D58 GUID_BAD_MEMORY_GROUP
+         36   23 00015C08 GUID_BOOT_LOADER_SETTINGS_GROUP
+         37   24 00015D48 GUID_CURRENT_BOOT_ENTRY
+         38   25 00015C58 GUID_DEBUGGER_SETTINGS_GROUP
+         39   26 00015D98 GUID_DEFAULT_BOOT_ENTRY
+         40   27 00015CD8 GUID_EMS_SETTINGS_GROUP
+         41   28 00015BC8 GUID_FIRMWARE_BOOTMGR
+         42   29 00015D28 GUID_GLOBAL_SETTINGS_GROUP
+         43   2A 00015D18 GUID_HYPERVISOR_SETTINGS_GROUP
+         44   2B 00015D38 GUID_KERNEL_DEBUGGER_SETTINGS_GROUP
+         45   2C 00015BD8 GUID_RESUME_LOADER_SETTINGS_GROUP
+         46   2D 00015C18 GUID_WINDOWS_BOOTMGR
+         47   2E 00015C28 GUID_WINDOWS_LEGACY_NTLDR
+         48   2F 00015BE8 GUID_WINDOWS_MEMORY_TESTER
+         49   30 00015D68 GUID_WINDOWS_OS_TARGET_TEMPLATE_EFI
+         50   31 00015CB8 GUID_WINDOWS_OS_TARGET_TEMPLATE_PCAT
+         51   32 00015C38 GUID_WINDOWS_RESUME_TARGET_TEMPLATE_EFI
+         52   33 00015C68 GUID_WINDOWS_RESUME_TARGET_TEMPLATE_PCAT
+         53   34 00015C98 GUID_WINDOWS_SETUP_EFI
+         54   35 00015C88 GUID_WINDOWS_SETUP_PCAT
+         55   36 00015D78 GUID_WINDOWS_SETUP_RAMDISK_OPTIONS
+         56   37 00015C78 PARTITION_BASIC_DATA_GUID
+         57   38 00015D88 PARTITION_CLUSTER_GUID
+         58   39 00015CC8 PARTITION_ENTRY_UNUSED_GUID
+         59   3A 00015C48 PARTITION_LDM_DATA_GUID
+         60   3B 00015D08 PARTITION_LDM_METADATA_GUID
+         61   3C 00015CF8 PARTITION_MSFT_RECOVERY_GUID
+         62   3D 00015CE8 PARTITION_MSFT_RESERVED_GUID
+         63   3E 00015DA8 PARTITION_MSFT_SNAPSHOT_GUID
+         64   3F 00015CA8 PARTITION_SPACES_GUID
+         65   40 00015BF8 PARTITION_SYSTEM_GUID
+         66   41 00010700 SyspartDirectGetSystemDisk
+         67   42 00010720 SyspartDirectGetSystemPartition
+         68   43 00010740 SyspartDirectSetSystemDevice
+         69   44 00010520 SyspartGetSystemDisk
+         70   45 00010690 SyspartGetSystemPartition
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        8000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       13000 .text

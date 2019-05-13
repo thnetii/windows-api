@@ -1,0 +1,37 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\AppVEntSubsystems64.dll
+
+File Type: DLL
+
+  Section contains the following exports for AppVSubsystems.dll
+
+    00000000 characteristics
+    C14520C0 time date stamp
+        0.00 version
+           1 ordinal base
+           6 number of functions
+           6 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00008DE0 APIExportForDetours
+          4    1 00009120 CurrentThreadIsVirtualized
+          6    2 00009110 IsProcessHooked
+          2    3 00006520 RequestUnhookedFunctionList
+          5    4 00009250 VirtualizeCurrentProcess
+          3    5 000091E0 VirtualizeCurrentThread
+
+  Summary
+
+       14000 .data
+        3000 .detourc
+        1000 .detourd
+        1000 .mrdata
+        E000 .pdata
+       A8000 .rdata
+        5000 .reloc
+        1000 .rsrc
+      14A000 .text

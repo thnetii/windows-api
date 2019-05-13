@@ -1,0 +1,55 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\dcomp.dll
+
+File Type: DLL
+
+  Section contains the following exports for dcomp.dll
+
+    00000000 characteristics
+    AB709F1F time date stamp
+        0.00 version
+        1017 ordinal base
+         987 number of functions
+          12 number of names
+
+    ordinal hint RVA      name
+
+       1018    0 000AE0E0 DCompositionAttachMouseDragToHwnd
+       1020    1 000AE150 DCompositionAttachMouseWheelToHwnd
+       1021    2 00008A40 DCompositionCreateDevice
+       1022    3 00061B20 DCompositionCreateDevice2
+       1023    4 0001AF70 DCompositionCreateDevice3
+       1024    5 0005F150 DCompositionCreateSurfaceHandle
+       1025    6 000633D0 DllCanUnloadNow
+       1026    7 00061770 DllGetActivationFactory
+       1027    8 000AE240 DllGetClassObject
+       1029    9 000A2DB0 DwmEnableMMCSS
+       1030    A 00065970 DwmFlush
+       1032    B 00065970 DwmpEnableDDASupport
+       1017      00061B20 [NONAME]
+       1019               [NONAME] (forwarded to win32u.NtCreateCompositionInputSink)
+       1028               [NONAME] (forwarded to win32u.NtDesktopCaptureBits)
+       1031      00062020 [NONAME]
+       1033      0006DC30 [NONAME]
+       1038      00008180 [NONAME]
+       1039      000AE1C0 [NONAME]
+       1040               [NONAME] (forwarded to win32u.NtDCompositionCreateSharedVisualHandle)
+       1041      00005C40 [NONAME]
+       1042      000AE230 [NONAME]
+       2000      0013D8B0 [NONAME]
+       2001      0013D980 [NONAME]
+       2002      0013D8F0 [NONAME]
+       2003      0013FDC0 [NONAME]
+
+  Summary
+
+        9000 .data
+        1000 .didat
+       17000 .pdata
+       4E000 .rdata
+        8000 .reloc
+        8000 .rsrc
+      143000 .text

@@ -1,0 +1,65 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\svf.dll
+
+File Type: DLL
+
+  Section contains the following exports for SVF.dll
+
+    00000000 characteristics
+    DB36D8E4 time date stamp
+        0.00 version
+           1 ordinal base
+          37 number of functions
+          37 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0002DCE0 SVFAttrib_BBoxFull
+          2    1 0002DD40 SVFAttrib_BBoxMaxX
+          3    2 0002DD30 SVFAttrib_BBoxMaxY
+          4    3 0002DD20 SVFAttrib_BBoxMaxZ
+          5    4 0002DD70 SVFAttrib_BBoxMinX
+          6    5 0002DD60 SVFAttrib_BBoxMinY
+          7    6 0002DD50 SVFAttrib_BBoxMinZ
+          8    7 0002DC40 SVFAttrib_BitrateMbps
+          9    8 0002DC50 SVFAttrib_Duration100ns
+         10    9 0002DCA0 SVFAttrib_FrameCount
+         11    A 0002DCD0 SVFAttrib_FrameId
+         12    B 0002DCC0 SVFAttrib_FrameTimestamp
+         13    C 0002DC30 SVFAttrib_H264Wrapper
+         14    D 0002DC60 SVFAttrib_HasAudio
+         15    E 0002DDD0 SVFAttrib_Height
+         16    F 0002DDC0 SVFAttrib_Inverted
+         17   10 0002DC70 SVFAttrib_LocalFullPath
+         18   11 0002DC80 SVFAttrib_MaxIndexCount
+         19   12 0002DC90 SVFAttrib_MaxVertexCount
+         20   13 0002DD90 SVFAttrib_NumFaces
+         21   14 0002DD80 SVFAttrib_NumIndices
+         22   15 0002DDA0 SVFAttrib_NumVertices
+         23   16 0002DDB0 SVFAttrib_Stride
+         24   17 0002DD10 SVFAttrib_UseTriList
+         25   18 0002DCF0 SVFAttrib_UseUnsignedUVs
+         26   19 0002DDF0 SVFAttrib_Version
+         27   1A 0002DD00 SVFAttrib_VertHasNormals
+         28   1B 0002DCB0 SVFAttrib_VertexFormatFlags
+         29   1C 0002DDE0 SVFAttrib_Width
+         30   1D 00003DA0 SVFCreateBufferAllocator
+         31   1E 000177C0 SVFCreateDashServer
+         32   1F 000062A0 SVFCreateEvent
+         33   20 00006490 SVFCreateEventQueue
+         34   21 0000FF00 SVFCreateReader
+         35   22 0000FF20 SVFCreateReaderWithConfig
+         36   23 0002DE00 SVFMediaType_IndexStream
+         37   24 0002DE10 SVFMediaType_VertexStream
+
+  Summary
+
+        2000 .data
+        2000 .pdata
+        C000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       2A000 .text

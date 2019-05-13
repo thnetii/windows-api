@@ -1,0 +1,60 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\dbnetlib.dll
+
+File Type: DLL
+
+  Section contains the following exports for DBnetlib.dll
+
+    00000000 characteristics
+    9A888BB1 time date stamp
+        0.00 version
+           1 ordinal base
+          31 number of functions
+          31 number of names
+
+    ordinal hint RVA      name
+
+         22    0 000080C0 CloseEnumServers
+         10    1 00008150 ConnectionCheckForData
+          9    2 000082A0 ConnectionClose
+         11    3 00008440 ConnectionError
+         17    4 00003670 ConnectionErrorW
+         28    5 00008470 ConnectionFlushCache
+         19    6 00008490 ConnectionGetSvrUser
+          6    7 00004240 ConnectionMode
+          1    8 000036F0 ConnectionObjectSize
+          8    9 00001BF0 ConnectionOpen
+         16    A 00001B50 ConnectionOpenW
+         18    B 00008750 ConnectionOption
+          2    C 00008B60 ConnectionRead
+         14    D 00009530 ConnectionServerEnum
+         15    E 00009670 ConnectionServerEnumW
+         13    F 000096E0 ConnectionSqlVer
+          7   10 000037D0 ConnectionStatus
+          4   11 00009710 ConnectionTransact
+         12   12 00009800 ConnectionVer
+          3   13 00009810 ConnectionWrite
+          5   14 00009CC0 ConnectionWriteOOB
+         27   15 000129C0 GenClientContext
+         31   16 000129D0 GenClientContextEx
+         21   17 00009FE0 GetNextEnumeration
+         20   18 0000A610 InitEnumServers
+         23   19 000012D0 InitSSPIPackage
+         25   1A 00012FB0 InitSession
+         29   1B 00012FC0 InitSessionEx
+         24   1C 000036B0 TermSSPIPackage
+         26   1D 00013330 TermSession
+         30   1E 00013340 TermSessionEx
+
+  Summary
+
+        2000 .data
+        1000 .pdata
+        8000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        1000 .sdbid
+       13000 .text

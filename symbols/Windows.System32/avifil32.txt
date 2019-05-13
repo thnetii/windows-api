@@ -1,0 +1,104 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\avifil32.dll
+
+File Type: DLL
+
+  Section contains the following exports for AVIFIL32.dll
+
+    00000000 characteristics
+    77D72F77 time date stamp
+        0.00 version
+           1 ordinal base
+          76 number of functions
+          76 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00007A00 AVIBuildFilter
+          2    1 00007A00 AVIBuildFilterA
+          3    2 000074E0 AVIBuildFilterW
+          4    3 00003E50 AVIClearClipboard
+          5    4 00006860 AVIFileAddRef
+          6    5 00006A10 AVIFileCreateStream
+          7    6 00006A30 AVIFileCreateStreamA
+          8    7 00006A10 AVIFileCreateStreamW
+          9    8 00006B40 AVIFileEndRecord
+         10    9 00006360 AVIFileExit
+         11    A 000069F0 AVIFileGetStream
+         12    B 00006900 AVIFileInfo
+         13    C 00006900 AVIFileInfoA
+         14    D 000068A0 AVIFileInfoW
+         15    E 00006330 AVIFileInit
+         16    F 000067B0 AVIFileOpen
+         17   10 000067B0 AVIFileOpenA
+         18   11 000065D0 AVIFileOpenW
+         19   12 00006B20 AVIFileReadData
+         20   13 00006880 AVIFileRelease
+         21   14 00006B00 AVIFileWriteData
+         22   15 00003C80 AVIGetFromClipboard
+         23   16 00007390 AVIMakeCompressedStream
+         24   17 0000F650 AVIMakeFileFromStreams
+         25   18 0000FAC0 AVIMakeStreamFromClipboard
+         26   19 00003A90 AVIPutFileOnClipboard
+         27   1A 000011A0 AVISave
+         28   1B 000011A0 AVISaveA
+         29   1C 00002300 AVISaveOptions
+         30   1D 00002460 AVISaveOptionsFree
+         31   1E 00001340 AVISaveV
+         32   1F 00001340 AVISaveVA
+         33   20 00001530 AVISaveVW
+         34   21 00001010 AVISaveW
+         35   22 00006860 AVIStreamAddRef
+         36   23 00007280 AVIStreamBeginStreaming
+         37   24 000071D0 AVIStreamCreate
+         38   25 00007310 AVIStreamEndStreaming
+         39   26 00006CE0 AVIStreamFindSample
+         40   27 000135C0 AVIStreamGetFrame
+         41   28 00013590 AVIStreamGetFrameClose
+         42   29 00013460 AVIStreamGetFrameOpen
+         43   2A 00006BC0 AVIStreamInfo
+         44   2B 00006BC0 AVIStreamInfoA
+         45   2C 00006B60 AVIStreamInfoW
+         46   2D 00006E60 AVIStreamLength
+         47   2E 00007140 AVIStreamOpenFromFile
+         48   2F 00007140 AVIStreamOpenFromFileA
+         49   30 000070B0 AVIStreamOpenFromFileW
+         50   31 00006D60 AVIStreamRead
+         51   32 00006D20 AVIStreamReadData
+         52   33 00006B00 AVIStreamReadFormat
+         53   34 00006880 AVIStreamRelease
+         54   35 00006FB0 AVIStreamSampleToTime
+         55   36 00006B20 AVIStreamSetFormat
+         56   37 00006DF0 AVIStreamStart
+         57   38 00006EC0 AVIStreamTimeToSample
+         58   39 00006DA0 AVIStreamWrite
+         59   3A 00006D40 AVIStreamWriteData
+         60   3B 00010930 CreateEditableStream
+         61   3C 00007CF0 DllCanUnloadNow
+         62   3D 00005D90 DllGetClassObject
+         63   3E 000101D0 EditStreamClone
+         64   3F 00010080 EditStreamCopy
+         65   40 0000FFE0 EditStreamCut
+         66   41 00010120 EditStreamPaste
+         67   42 00010300 EditStreamSetInfo
+         68   43 00010300 EditStreamSetInfoA
+         69   44 00010260 EditStreamSetInfoW
+         70   45 00010530 EditStreamSetName
+         71   46 00010530 EditStreamSetNameA
+         72   47 00010410 EditStreamSetNameW
+         73   48 000192B0 IID_IAVIEditStream
+         74   49 00019260 IID_IAVIFile
+         75   4A 00019270 IID_IAVIStream
+         76   4B 00019290 IID_IGetFrame
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        4000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       17000 .text

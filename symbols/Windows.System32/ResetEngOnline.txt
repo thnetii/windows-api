@@ -1,0 +1,37 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\ResetEngOnline.dll
+
+File Type: DLL
+
+  Section contains the following exports for ResetEngOnline.dll
+
+    00000000 characteristics
+    596C2E36 time date stamp
+        0.00 version
+           1 ordinal base
+           9 number of functions
+           9 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0000C810 IsEsimPresent
+          2    1 00001C60 IsRefreshAvailable
+          3    2 0000CB20 ResetEsim
+          4    3 000019B0 ResetGetEngineInterface
+          5    4 00001910 ResetInitializeEngine
+          6    5 00001A40 ResetRebootSystem
+          7    6 000019D0 ResetReleaseEngine
+          8    7 00001C50 UninstallFinalize
+          9    8 00001C30 UninstallGetInterface
+
+  Summary
+
+        3000 .data
+        2000 .pdata
+       14000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       25000 .text

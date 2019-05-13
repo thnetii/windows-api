@@ -1,0 +1,37 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\txfw32.dll
+
+File Type: DLL
+
+  Section contains the following exports for txfw32.dll
+
+    00000000 characteristics
+    719AEB60 time date stamp
+        0.00 version
+           1 ordinal base
+           9 number of functions
+           9 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001580 TxfGetThreadMiniVersionForCreate
+          2    1 00001020 TxfLogCreateFileReadContext
+          3    2 00001150 TxfLogCreateRangeReadContext
+          4    3 00001170 TxfLogDestroyReadContext
+          5    4 000011E0 TxfLogReadRecords
+          6    5 000015A0 TxfLogRecordGetFileName
+          7    6 000017D0 TxfLogRecordGetGenericType
+          8    7 00001360 TxfReadMetadataInfo
+          9    8 00001560 TxfSetThreadMiniVersionForCreate
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        1000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        2000 .text

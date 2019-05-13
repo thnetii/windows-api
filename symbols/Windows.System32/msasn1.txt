@@ -1,0 +1,180 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\msasn1.dll
+
+File Type: DLL
+
+  Section contains the following exports for MSASN1.dll
+
+    00000000 characteristics
+    AC91A4B2 time date stamp
+        0.00 version
+           1 ordinal base
+         152 number of functions
+         152 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00008040 ASN1BERDecBitString
+          2    1 00004B20 ASN1BERDecBitString2
+          3    2 00004D60 ASN1BERDecBool
+          4    3 000030C0 ASN1BERDecChar16String
+          5    4 00008050 ASN1BERDecChar32String
+          6    5 000026A0 ASN1BERDecCharString
+          7    6 00001930 ASN1BERDecCheck
+          8    7 00008F80 ASN1BERDecDouble
+          9    8 00001250 ASN1BERDecEndOfContents
+         10    9 00002840 ASN1BERDecEoid
+         11    A 00002110 ASN1BERDecExplicitTag
+         12    B 000082F0 ASN1BERDecFlush
+         13    C 000029C0 ASN1BERDecGeneralizedTime
+         14    D 00001ED0 ASN1BERDecLength
+         15    E 00008320 ASN1BERDecMultibyteString
+         16    F 00004D30 ASN1BERDecNotEndOfContents
+         17   10 00001200 ASN1BERDecNull
+         18   11 00001020 ASN1BERDecObjectIdentifier
+         19   12 00001C20 ASN1BERDecObjectIdentifier2
+         20   13 000011D0 ASN1BERDecOctetString
+         21   14 00001710 ASN1BERDecOctetString2
+         22   15 00001460 ASN1BERDecOpenType
+         23   16 00001E30 ASN1BERDecOpenType2
+         24   17 00002080 ASN1BERDecPeekTag
+         25   18 00008330 ASN1BERDecS16Val
+         26   19 000032B0 ASN1BERDecS32Val
+         27   1A 000083D0 ASN1BERDecS8Val
+         28   1B 00001540 ASN1BERDecSXVal
+         29   1C 00008450 ASN1BERDecSkip
+         30   1D 00001FE0 ASN1BERDecTag
+         31   1E 00008570 ASN1BERDecU16Val
+         32   1F 00001D80 ASN1BERDecU32Val
+         33   20 00008640 ASN1BERDecU8Val
+         34   21 00002CB0 ASN1BERDecUTCTime
+         35   22 00001320 ASN1BERDecUTF8String
+         36   23 000086E0 ASN1BERDecZeroChar16String
+         37   24 000086E0 ASN1BERDecZeroChar32String
+         38   25 00002F10 ASN1BERDecZeroCharString
+         39   26 00008700 ASN1BERDecZeroMultibyteString
+         40   27 00005280 ASN1BERDotVal2Eoid
+         41   28 00003910 ASN1BEREncBitString
+         42   29 00003CF0 ASN1BEREncBool
+         43   2A 00003810 ASN1BEREncChar16String
+         44   2B 00008710 ASN1BEREncChar32String
+         45   2C 00003D60 ASN1BEREncCharString
+         46   2D 000093D0 ASN1BEREncCheck
+         47   2E 00008F80 ASN1BEREncDouble
+         48   2F 000042D0 ASN1BEREncEndOfContents
+         49   30 000041A0 ASN1BEREncEoid
+         50   31 000043B0 ASN1BEREncExplicitTag
+         51   32 00005090 ASN1BEREncFlush
+         52   33 000087C0 ASN1BEREncGeneralizedTime
+         53   34 00004260 ASN1BEREncLength
+         54   35 000087D0 ASN1BEREncMultibyteString
+         55   36 000087F0 ASN1BEREncNull
+         56   37 00003700 ASN1BEREncObjectIdentifier
+         57   38 00003B00 ASN1BEREncObjectIdentifier2
+         58   39 00003D60 ASN1BEREncOctetString
+         59   3A 00004210 ASN1BEREncOpenType
+         60   3B 00003680 ASN1BEREncRemoveZeroBits
+         61   3C 00004A90 ASN1BEREncRemoveZeroBits2
+         62   3D 000039D0 ASN1BEREncS32
+         63   3E 00003880 ASN1BEREncSX
+         64   3F 00004410 ASN1BEREncTag
+         65   40 00003470 ASN1BEREncU32
+         66   41 00008820 ASN1BEREncUTCTime
+         67   42 000092B0 ASN1BEREncUTF8String
+         68   43 00008830 ASN1BEREncZeroMultibyteString
+         69   44 00001970 ASN1BEREoid2DotVal
+         70   45 00005140 ASN1BEREoid_free
+         71   46 000093E0 ASN1CEREncBeginBlk
+         72   47 00008F80 ASN1CEREncBitString
+         73   48 00008F80 ASN1CEREncChar16String
+         74   49 00008F80 ASN1CEREncChar32String
+         75   4A 00008F80 ASN1CEREncCharString
+         76   4B 000093F0 ASN1CEREncEndBlk
+         77   4C 00009400 ASN1CEREncFlushBlkElement
+         78   4D 000087C0 ASN1CEREncGeneralizedTime
+         79   4E 00008F80 ASN1CEREncMultibyteString
+         80   4F 00009410 ASN1CEREncNewBlkElement
+         81   50 00008F80 ASN1CEREncOctetString
+         82   51 00008820 ASN1CEREncUTCTime
+         83   52 00008F80 ASN1CEREncZeroMultibyteString
+         84   53 000051C0 ASN1DEREncBeginBlk
+         85   54 00003900 ASN1DEREncBitString
+         86   55 00009420 ASN1DEREncChar16String
+         87   56 00009430 ASN1DEREncChar32String
+         88   57 00003D50 ASN1DEREncCharString
+         89   58 00003EB0 ASN1DEREncEndBlk
+         90   59 00004E80 ASN1DEREncFlushBlkElement
+         91   5A 000034F0 ASN1DEREncGeneralizedTime
+         92   5B 000087D0 ASN1DEREncMultibyteString
+         93   5C 00003DD0 ASN1DEREncNewBlkElement
+         94   5D 00003D50 ASN1DEREncOctetString
+         95   5E 00003C60 ASN1DEREncUTCTime
+         96   5F 00009440 ASN1DEREncUTF8String
+         97   60 00009450 ASN1DEREncZeroMultibyteString
+         98   61 00001010 ASN1DecAlloc
+         99   62 000050D0 ASN1DecRealloc
+        100   63 000025B0 ASN1DecSetError
+        101   64 000051A0 ASN1EncSetError
+        102   65 00005270 ASN1Free
+        103   66 00002650 ASN1_CloseDecoder
+        104   67 000045F0 ASN1_CloseEncoder
+        105   68 00009530 ASN1_CloseEncoder2
+        106   69 00005270 ASN1_CloseModule
+        107   6A 000056A0 ASN1_CreateDecoder
+        108   6B 000056D0 ASN1_CreateDecoderEx
+        109   6C 000040A0 ASN1_CreateEncoder
+        110   6D 000054F0 ASN1_CreateModule
+        111   6E 000023D0 ASN1_Decode
+        112   6F 00004F90 ASN1_Encode
+        113   70 000025E0 ASN1_FreeDecoded
+        114   71 00005250 ASN1_FreeEncoded
+        115   72 00009560 ASN1_GetDecoderOption
+        116   73 000095A0 ASN1_GetEncoderOption
+        117   74 000095F0 ASN1_SetDecoderOption
+        118   75 00005160 ASN1_SetEncoderOption
+        119   76 000049D0 ASN1bitstring_cmp
+        120   77 00005140 ASN1bitstring_free
+        121   78 00008A20 ASN1char16string_cmp
+        122   79 00005140 ASN1char16string_free
+        123   7A 00008A90 ASN1char32string_cmp
+        124   7B 00005140 ASN1char32string_free
+        125   7C 00008AF0 ASN1charstring_cmp
+        126   7D 00005140 ASN1charstring_free
+        127   7E 00008B60 ASN1generalizedtime_cmp
+        128   7F 00008F90 ASN1intx2int32
+        129   80 00009040 ASN1intx2uint32
+        130   81 00005A50 ASN1intx_add
+        131   82 00008C00 ASN1intx_cmp
+        132   83 00005140 ASN1intx_free
+        133   84 000090D0 ASN1intx_setuint32
+        134   85 00005A50 ASN1intx_sub
+        135   86 00009190 ASN1intx_uoctets
+        136   87 000091C0 ASN1intxisuint32
+        137   88 00008CD0 ASN1objectidentifier2_cmp
+        138   89 00008D40 ASN1objectidentifier_cmp
+        139   8A 000057B0 ASN1objectidentifier_free
+        140   8B 00008DA0 ASN1octetstring_cmp
+        141   8C 00005140 ASN1octetstring_free
+        142   8D 00008DF0 ASN1open_cmp
+        143   8E 00005140 ASN1open_free
+        144   8F 000091F0 ASN1uint32_uoctets
+        145   90 00008E30 ASN1utctime_cmp
+        146   91 00005140 ASN1utf8string_free
+        147   92 00008EB0 ASN1ztchar16string_cmp
+        148   93 00005270 ASN1ztchar16string_free
+        149   94 00008EF0 ASN1ztchar32string_cmp
+        150   95 00005270 ASN1ztchar32string_free
+        151   96 00008F40 ASN1ztcharstring_cmp
+        152   97 00005270 ASN1ztcharstring_free
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        4000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        9000 .text

@@ -1,0 +1,97 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\BCP47Langs.dll
+
+File Type: DLL
+
+  Section contains the following exports for Bcp47Langs.dll
+
+    00000000 characteristics
+    36CD57FA time date stamp
+        0.00 version
+           1 ordinal base
+          68 number of functions
+          68 number of names
+
+    ordinal hint RVA      name
+
+          2    0 00005B30 AppendUserLanguageInputMethods
+          3    1 00024D30 AppendUserLanguageInternal
+          4    2 00005A70 AppendUserLanguages
+          5    3 00007A60 Bcp47BufferFromLcid
+          6    4 0000AF40 Bcp47FromCompactTagInternal
+          7    5 0000EF50 Bcp47FromHkl
+          8    6 00006300 Bcp47FromLcid
+          9    7 00005630 Bcp47GetAbbreviation
+         10    8 00009420 Bcp47GetDirectionality
+         11    9 0000FF00 Bcp47GetDistance
+         12    A 0002A550 Bcp47GetExtensionSingletons
+         13    B 00010340 Bcp47GetExtensionSubstring
+         14    C 0002A780 Bcp47GetIsoLanguageCode
+         15    D 00008180 Bcp47GetIsoScriptCode
+         16    E 00005220 Bcp47GetLanguageName
+         17    F 00008B50 Bcp47GetMuiForm
+         18   10 0002A9B0 Bcp47GetNeutralForm
+         19   11 00009100 Bcp47GetNlsForm
+         20   12 0002ABE0 Bcp47GetSubtagMapInternal
+         21   13 0002AD20 Bcp47GetUnIsoRegionCode
+         22   14 0002AF50 Bcp47IsInstalledAndLicensedAsSystemLanguage
+         23   15 00009620 Bcp47IsValid
+         24   16 0000F970 Bcp47IsWellFormed
+         25   17 00010500 Bcp47Normalize
+         26   18 0002B090 Bcp47RequiresTransientLcid
+         27   19 00024EC0 ClearApplicationLanguageOverride
+         28   1A 00025040 ClearApplicationManifestLanguages
+         29   1B 000251D0 ClearHttpAcceptLanguageOptOut
+         30   1C 00025390 ClearUserDisplayLanguageOverride
+         31   1D 000257B0 ClearUserLocaleFromLanguageProfileOptOut
+         32   1E 00009350 CompactTagFromBcp47Internal
+         33   1F 0002E170 FilterLanguageListOnInstalledMuiLanguages
+         34   20 000258E0 GetApplicationLanguageOverride
+         35   21 0000B880 GetApplicationLanguages
+         36   22 00025A60 GetApplicationLanguagesIntoBuffer
+         37   23 00025B80 GetApplicationManifestLanguages
+         38   24 00025D10 GetAppropriateUserLocaleForUserLanguages
+         39   25 0002B1F0 GetAvailableTransientLcidCount
+         40   26 00011F20 GetFontFallbackLanguageList
+         41   27 00025F10 GetHttpAcceptLanguageOptOut
+         42   28 00004D30 GetInputMethodOverrideForUser
+         43   29 00026060 GetPendingUserDisplayLanguage
+         44   2A 000262E0 GetRelevantLocalesFromLanguageTags
+         45   2B 000265B0 GetSerializedUserLanguageProfile
+          1   2C 00013440 GetUnIsoRegionCode
+         46   2D 00026780 GetUserDisplayLanguageOverride
+         47   2E 00026CA0 GetUserLanguageInputMethods
+         48   2F 00006490 GetUserLanguageInputMethodsForUser
+         49   30 0000F2D0 GetUserLanguages
+         50   31 00007040 GetUserLanguagesForUser
+         51   32 00026CB0 GetUserLocaleFromLanguageProfileOptOut
+         52   33 000134B0 IsTransientLcid
+         53   34 0002B360 IsValidBcp47RegionSubtag
+         54   35 0002E3B0 LanguageListAsHttpAcceptHeader
+         55   36 000122F0 LanguageListAsMuiForm
+         56   37 00005960 LcidFromBcp47
+         57   38 00004360 RemoveInputsForAllLanguagesInternal
+         58   39 000040C0 RemoveUserLanguageInputMethods
+         59   3A 00026DF0 ResolveLanguages
+         60   3B 00026EE0 SetApplicationLanguageOverride
+         61   3C 00001610 SetApplicationManifestLanguages
+         62   3D 00027060 SetHttpAcceptLanguageOptOut
+         63   3E 000271E0 SetInputMethodOverride
+         64   3F 000273D0 SetUserDisplayLanguageOverride
+         65   40 000277D0 SetUserLanguageInputMethods
+         66   41 00004590 SetUserLanguagesInternal
+         67   42 000277E0 SetUserLanguagesInternalCore
+         68   43 00027990 SetUserLocaleFromLanguageProfileOptOut
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        5000 .pdata
+       1F000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       32000 .text

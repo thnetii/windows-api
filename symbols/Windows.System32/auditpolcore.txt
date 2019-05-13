@@ -1,0 +1,57 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\auditpolcore.dll
+
+File Type: DLL
+
+  Section contains the following exports for auditpolcore.dll
+
+    00000000 characteristics
+    B270AA0E time date stamp
+        0.00 version
+           1 ordinal base
+          29 number of functions
+          29 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00003E00 AdtBackupPolicy
+          2    1 00003DC0 AdtBackupPolicyGeneralized
+          3    2 000043F0 AdtClearPolicy
+          4    3 000066C0 AdtConstructAllCategoryGuids
+          5    4 00006650 AdtConvertGuidStringToGuid
+          6    5 00006580 AdtConvertGuidToString
+          7    6 000063F0 AdtDisableSinglePrivilege
+          8    7 000063E0 AdtEnableSinglePrivilege
+          9    8 00003880 AdtGetOption
+         10    9 000037E0 AdtGetPerUserPolicy
+         11    A 00003750 AdtGetSystemPolicy
+         12    B 00006C80 AdtListCategories
+         13    C 00006DD0 AdtListSubCategories
+         14    D 00006920 AdtLoadStringEx
+         15    E 00006780 AdtParseAuditOptionName
+         16    F 00006940 AdtParseGuidOrNameArray
+         17   10 00004970 AdtRemoveAllUsers
+         18   11 00004740 AdtRemoveBasePolicy
+         19   12 00003FC0 AdtRestorePolicy
+         20   13 00003F80 AdtRestorePolicyGeneralized
+         21   14 00003D20 AdtSetOption
+         22   15 00003C40 AdtSetPerUserPolicy
+         23   16 00003B60 AdtSetSystemPolicy
+         24   17 00007EF0 AuditPolicyData_DeleteAuditDataInstance
+         25   18 00008CF0 DisplayMessage
+         26   19 00008E00 DisplayMessageToSpecificConsoleHandle
+         27   1A 000088A0 GetDisplayPolicy
+         28   1B 00008D50 LoadFormatStringAndPrintToConsole
+         29   1C 000088B0 SetDisplayPolicy
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        5000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        C000 .text

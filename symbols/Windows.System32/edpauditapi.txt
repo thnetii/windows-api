@@ -1,0 +1,42 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\edpauditapi.dll
+
+File Type: DLL
+
+  Section contains the following exports for edpauditapi.dll
+
+    00000000 characteristics
+    B7626EFF time date stamp
+        0.00 version
+           1 ordinal base
+          13 number of functions
+          13 number of names
+
+    ordinal hint RVA      name
+
+          2    0 000038B0 EdpAuditHarden
+          3    1 00012220 EdpAuditLogApplicationGenerated
+          4    2 00012480 EdpAuditLogApplicationLearning
+          5    3 00011FE0 EdpAuditLogDataCopied
+          6    4 000127C0 EdpAuditLogProtectionRemoved
+          7    5 00012670 EdpAuditLogSiteLearning
+          8    6 00012940 EdpAuditLoggerRegister
+          9    7 00012960 EdpAuditLoggerUnregister
+         10    8 00003940 EdpAuditRead
+          1    9 00003F90 EdpFlushTraces
+         11    A 00003A10 EdpGetLogFullPathFromRelativePath
+         12    B 00004C90 ReadAuditLogByCount
+         13    C 00004B30 ReadAuditLogByTimeRange
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        2000 .pdata
+        9000 .rdata
+        1000 .reloc
+        3000 .rsrc
+       15000 .text

@@ -1,0 +1,110 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\mmgaclient.dll
+
+File Type: DLL
+
+  Section contains the following exports for mmgaclient.dll
+
+    00000000 characteristics
+    51ABC6BA time date stamp
+        0.00 version
+          11 ordinal base
+         247 number of functions
+          81 number of names
+
+    ordinal hint RVA      name
+
+         55    0 00028A90 ChangeIdleRoutine
+         60    1 00034360 CreateIProp
+         61    2 000347B0 CreateTable
+         34    3 00027070 DeinitMapiUtil
+         54    4 00028EA0 DeregisterIdleRoutine
+         53    5 00029140 EnableIdleRoutine
+        182    6 00029420 FBadColumnSet
+        190    7 00029740 FBadEntryList
+        181    8 00029A90 FBadProp
+        179    9 00029DB0 FBadPropTag
+        191    A 0002A080 FBadRestriction
+        176    B 0002A3A0 FBadRglpszW
+        180    C 0002A6F0 FBadRow
+        177    D 0002AA00 FBadRowSet
+        189    E 0002ACF0 FBadSortOrderSet
+         72    F 0002AFE0 FEqualNames
+         79   10 0002B370 FPropCompareProp
+         78   11 0002B740 FPropContainsProp
+        137   12 0002BB10 FPropExists
+        139   13 00006460 FreePadrlist
+        140   14 00006320 FreeProws
+         52   15 000286B0 FtgRegisterIdleRoutine
+        200   16 0002CBE0 GetAttribIMsgOnIStg
+        153   17 0002DA90 GetTnefStreamCodepage
+         81   18 00034D20 HrAddColumns
+         82   19 000350E0 HrAddColumnsEx
+        143   1A 0002EE00 HrComposeEID
+        145   1B 0002F330 HrComposeMsgID
+        144   1C 0002F7D0 HrDecomposeEID
+        146   1D 0002FD20 HrDecomposeMsgID
+        239   1E 00030210 HrDispatchNotifications
+        142   1F 000304E0 HrEntryIDFromSz
+        135   20 00030C40 HrGetOneProp
+        194   21 00031370 HrIStorageFromStream
+         75   22 00031820 HrQueryAllRows
+        136   23 00030FF0 HrSetOneProp
+        141   24 000308B0 HrSzFromEntryID
+        195   25 00031D20 HrValidateIPMSubtree
+        173   26 0002BE50 LpValFindProp
+        217   27 00025860 MAPIAddress
+         19   28 00027750 MAPIAdminProfiles
+         13   29 00006060 MAPIAllocateBuffer
+         15   2A 000060C0 MAPIAllocateMore
+         50   2B 00028460 MAPIDeinitIdle
+        215   2C 00025460 MAPIDeleteMail
+        218   2D 00025ED0 MAPIDetails
+        214   2E 000245A0 MAPIFindNext
+         17   2F 000061E0 MAPIFreeBuffer
+         59   30 00006260 MAPIGetDefaultMalloc
+         49   31 00028140 MAPIInitIdle
+         21   32 00026780 MAPIInitialize
+        210   33 00023550 MAPILogoff
+        209   34 00023060 MAPILogon
+         11   35 000272C0 MAPILogonEx
+         30   36 00027AA0 MAPIOpenFormMgr
+         32   37 00027E20 MAPIOpenLocalFormContainer
+        213   38 00024AF0 MAPIReadMail
+        219   39 000262F0 MAPIResolveName
+        212   3A 00024F80 MAPISaveMail
+        211   3B 000238E0 MAPISendMail
+        208   3C 00024120 MAPISendMailDocuments
+        256   3D 00023D00 MAPISendMailW
+         23   3E 00026B10 MAPIUninitialize
+        201   3F 000321F0 MapStorageSCode
+        198   40 0002D490 OpenIMsgOnIStg
+        147   41 0002E950 OpenStreamOnFile
+        149   42 0002DE20 OpenTnefStream
+        151   43 0002E370 OpenTnefStreamEx
+        138   44 0002C210 PpropFindProp
+         76   45 0002C780 PropCopyMore
+        183   46 000324C0 RTFSync
+        171   47 00032840 ScCopyProps
+        170   48 00032C50 ScCountProps
+        244   49 000333D0 ScCreateConversationIndex
+        174   4A 00032FE0 ScDupPropset
+         33   4B 00026DA0 ScInitMapiUtil
+        199   4C 0002D010 SetAttribIMsgOnIStg
+        257   4D 00023050 SetUpForOutOfContainer
+         77   4E 000337E0 UlPropSize
+        185   4F 00033B00 WrapCompressedRTFStream
+         73   50 00033EB0 WrapStoreEntryID
+
+  Summary
+
+        D000 .data
+        1000 .didat
+        E000 .pdata
+       90000 .rdata
+        5000 .reloc
+        1000 .rsrc
+      154000 .text

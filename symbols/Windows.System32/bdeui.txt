@@ -1,0 +1,156 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\bdeui.dll
+
+File Type: DLL
+
+  Section contains the following exports for BDEUI.dll
+
+    00000000 characteristics
+    81D17611 time date stamp
+        0.00 version
+           1 ordinal base
+         128 number of functions
+         128 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000018E0 ??0BuiVolume@@QEAA@XZ
+          2    1 00001940 ??0BuiVolume@@QEAA@_N@Z
+          3    2 000012E0 ??0VolumeFveStatus@@IEAA@XZ
+          4    3 00001010 ??0VolumeFveStatus@@QEAA@K_KJW4_FVE_WIPING_STATE@@@Z
+          5    4 00001A10 ??1BuiVolume@@QEAA@XZ
+          6    5 00001340 ??4BuiVolume@@QEAAAEAV0@AEBV0@@Z
+          7    6 00001310 ??4VolumeFveStatus@@QEAAAEAV0@$$QEAV0@@Z
+          8    7 000012F0 ??4VolumeFveStatus@@QEAAAEAV0@AEBV0@@Z
+          9    8 000028E0 ?AddSmartCard@BuiVolume@@QEAAJPEAUHWND__@@@Z
+         10    9 000023A0 ?AllowForegroundWindowDisplay@BuiVolume@@AEAAJXZ
+         11    A 00002660 ?AttemptAutoUnlock@BuiVolume@@QEAAJXZ
+         12    B 00003170 ?BasicDispatch@BuiVolume@@AEAAJJPEAUHWND__@@PEBGPEAJ@Z
+         13    C 00002DC0 ?BasicDispatch@BuiVolume@@AEAAJJPEBG0PEAHPEAJ@Z
+         14    D 00002CA0 ?BasicDispatch@BuiVolume@@AEAAJJPEBG0PEAJ@Z
+         15    E 00002B90 ?BasicDispatch@BuiVolume@@AEAAJJPEBGPEAHPEAJ@Z
+         16    F 00002AE0 ?BasicDispatch@BuiVolume@@AEAAJJPEBGPEAJ@Z
+         17   10 00002F30 ?BasicDispatch@BuiVolume@@AEAAJJPEBGPEAPEAG@Z
+         18   11 000030C0 ?BasicDispatch@BuiVolume@@AEAAJJPEBGPEAUtagVARIANT@@@Z
+         19   12 000040A0 ?CanBeResumed@BuiVolume@@QEBA_NXZ
+         20   13 00001E80 ?CanRefreshStatus@BuiVolume@@AEBA_NXZ
+         21   14 00002440 ?ClearProxyObject@BuiVolume@@QEAAXXZ
+         22   15 00002820 ?Decrypt@BuiVolume@@QEAAJPEAUHWND__@@@Z
+         23   16 00003E60 ?DeleteVolumeList@BuiVolume@@SAXPEAPEAU_BuiVolumeNode@@@Z
+         24   17 00002830 ?Disable@BuiVolume@@QEAAJPEAUHWND__@@@Z
+         25   18 00002630 ?DisableAutoUnlock@BuiVolume@@QEAAJXZ
+         26   19 00002A70 ?Dispatch@BuiVolume@@AEAAJJPEAUtagDISPPARAMS@@PEAJ@Z
+         27   1A 00002A00 ?Dispatch@BuiVolume@@AEAAJJPEAUtagDISPPARAMS@@PEAUtagVARIANT@@@Z
+         28   1B 00002600 ?EnableAutoUnlock@BuiVolume@@QEAAJXZ
+         29   1C 00001230 ?FailedDryRun@VolumeFveStatus@@QEBA_NXZ
+         30   1D 00002150 ?FindMountPoint@BuiVolume@@AEAAJXZ
+         31   1E 00001FC0 ?FormatNameAndMountPoint@BuiVolume@@AEAAJXZ
+         32   1F 00003B70 ?GetAllVolumes@BuiVolume@@SAJPEAPEAU_BuiVolumeNode@@@Z
+         33   20 00004130 ?GetConvertedPercent@BuiVolume@@QEBANXZ
+         34   21 000027E0 ?GetDescription@BuiVolume@@QEAAJPEAPEAG@Z
+         35   22 000012C0 ?GetExtendedFlags@VolumeFveStatus@@QEBA_KXZ
+         36   23 000012D0 ?GetLastConvertStatus@VolumeFveStatus@@QEBAJXZ
+         37   24 00003ED0 ?GetOsVolume@BuiVolume@@SAJPEAPEAV1@@Z
+         38   25 00002800 ?GetPasswordId@BuiVolume@@QEAAJPEAPEAG@Z
+         39   26 000012B0 ?GetStatusFlags@VolumeFveStatus@@QEBAKXZ
+         40   27 00004150 ?GetWipeCount@BuiVolume@@QEBAKXZ
+         41   28 00004140 ?GetWipedPercent@BuiVolume@@QEBANXZ
+         42   29 00002540 ?HasAutoUnlockVolumesBound@BuiVolume@@QEAA_NXZ
+         43   2A 00001080 ?HasExternalKey@VolumeFveStatus@@QEBA_NXZ
+         44   2B 00001070 ?HasPBKDF2RecoveryPassword@VolumeFveStatus@@QEBA_NXZ
+         45   2C 000010A0 ?HasPassphraseProtector@VolumeFveStatus@@QEBA_NXZ
+         46   2D 00001050 ?HasPinProtector@VolumeFveStatus@@QEBA_NXZ
+         47   2E 00001210 ?HasRecoveryData@VolumeFveStatus@@QEBA_NXZ
+         48   2F 00001060 ?HasRecoveryPassword@VolumeFveStatus@@QEBA_NXZ
+         49   30 000010B0 ?HasSmartCardProtector@VolumeFveStatus@@QEBA_NXZ
+         50   31 00001090 ?HasStartupKeyProtector@VolumeFveStatus@@QEBA_NXZ
+         51   32 00001040 ?HasTpmProtector@VolumeFveStatus@@QEBA_NXZ
+         52   33 000025A0 ?ImplicitPauseConversion@BuiVolume@@QEAAJXZ
+         53   34 00001A50 ?Init@BuiVolume@@QEAAJPEAG@Z
+         54   35 000019B0 ?InitMembers@BuiVolume@@AEAAXXZ
+         55   36 00002480 ?IsAutoUnlockEnabled@BuiVolume@@QEAA_NXZ
+         56   37 00001130 ?IsConverting@VolumeFveStatus@@QEBA_NXZ
+         57   38 00001270 ?IsCsvMetadataVolume@VolumeFveStatus@@QEBA_NXZ
+         58   39 00001EA0 ?IsCurrentPINEnhanced@BuiVolume@@QEAAJPEAH@Z
+         59   3A 000012A0 ?IsDEAutoProvisioned@VolumeFveStatus@@QEBA_NXZ
+         60   3B 00001190 ?IsDecrypted@VolumeFveStatus@@QEBA_NXZ
+         61   3C 00001180 ?IsDecrypting@VolumeFveStatus@@QEBA_NXZ
+         62   3D 000011E0 ?IsDisabled@VolumeFveStatus@@QEBA_NXZ
+         63   3E 00001260 ?IsEDriveVolume@VolumeFveStatus@@QEBA_NXZ
+         64   3F 00001170 ?IsEncrypted@VolumeFveStatus@@QEBA_NXZ
+         65   40 00001160 ?IsEncrypting@VolumeFveStatus@@QEBA_NXZ
+         66   41 00004010 ?IsFveNotifyNecessary@BuiVolume@@QEBA_NXZ
+         67   42 00001200 ?IsLocked@VolumeFveStatus@@QEBA_NXZ
+         68   43 00001100 ?IsOn@VolumeFveStatus@@QEBA_NXZ
+         69   44 000010D0 ?IsOsCriticalVolume@VolumeFveStatus@@QEBA_NXZ
+         70   45 000010C0 ?IsOsVolume@VolumeFveStatus@@QEBA_NXZ
+         71   46 00001150 ?IsPartiallyConverted@VolumeFveStatus@@QEBA_NXZ
+         72   47 00001110 ?IsPaused@VolumeFveStatus@@QEBA_NXZ
+         73   48 00001220 ?IsPreProvisioned@VolumeFveStatus@@QEBA_NXZ
+         74   49 000010F0 ?IsRoamingDevice@VolumeFveStatus@@QEBA_NXZ
+         75   4A 000011C0 ?IsSecure@VolumeFveStatus@@QEBA_NXZ
+         76   4B 00001280 ?IsUnknownFveVersion@VolumeFveStatus@@QEBA_NXZ
+         77   4C 000011A0 ?IsWiping@VolumeFveStatus@@QEBA_NXZ
+         78   4D 00002870 ?LaunchUpdate@BuiVolume@@QEAAJXZ
+         79   4E 00002860 ?LaunchWizard@BuiVolume@@QEAAJG@Z
+         80   4F 000040D0 ?ManagementRequiresElevation@BuiVolume@@QEBA_NXZ
+         81   50 00005670 ?NO_DRIVE_LETTER@BuiVolume@@2IB
+         82   51 00002890 ?NeedsDiscoveryVolumeUpdate@BuiVolume@@QEAAJPEAH@Z
+         83   52 000011D0 ?NeedsRestart@VolumeFveStatus@@QEBA_NXZ
+         84   53 00002570 ?PauseConversion@BuiVolume@@QEAAJXZ
+         85   54 000038D0 ?ProxyAddSmartCard@BuiVolume@@AEAAJPEAUHWND__@@@Z
+         86   55 00003660 ?ProxyAreVolumesBound@BuiVolume@@AEAAJXZ
+         87   56 000035E0 ?ProxyAttemptAutoUnlock@BuiVolume@@AEAAJXZ
+         88   57 000036A0 ?ProxyDecrypt@BuiVolume@@AEAAJPEAUHWND__@@@Z
+         89   58 000036E0 ?ProxyDisable@BuiVolume@@AEAAJPEAUHWND__@@@Z
+         90   59 000035A0 ?ProxyDisableAutoUnlock@BuiVolume@@AEAAJXZ
+         91   5A 00003560 ?ProxyEnableAutoUnlock@BuiVolume@@AEAAJXZ
+         92   5B 000027E0 ?ProxyGetDescription@BuiVolume@@AEAAJPEAPEAG@Z
+         93   5C 00002800 ?ProxyGetPasswordId@BuiVolume@@AEAAJPEAPEAG@Z
+         94   5D 00003240 ?ProxyGetProcessId@BuiVolume@@AEAAJPEAK@Z
+         95   5E 00003300 ?ProxyImplicitPauseConversion@BuiVolume@@AEAAJXZ
+         96   5F 00003620 ?ProxyIsAutoUnlockEnabled@BuiVolume@@AEAAJXZ
+         97   60 000037D0 ?ProxyLaunchUpdate@BuiVolume@@AEAAJXZ
+         98   61 00003720 ?ProxyLaunchWizard@BuiVolume@@AEAAJG@Z
+         99   62 00003850 ?ProxyNeedsDiscoveryVolumeUpdate@BuiVolume@@AEAAJPEAH@Z
+        100   63 000032C0 ?ProxyPauseConversion@BuiVolume@@AEAAJXZ
+        101   64 00003890 ?ProxyRemovePassphrase@BuiVolume@@AEAAJXZ
+        102   65 00003990 ?ProxyRemoveSmartCard@BuiVolume@@AEAAJ_N@Z
+        103   66 00003340 ?ProxyResumeConversion@BuiVolume@@AEAAJXZ
+        104   67 00003810 ?ProxyServiceDiscoveryVolume@BuiVolume@@AEAAJXZ
+        105   68 000033D0 ?ProxyUnlockVolumeWithKey@BuiVolume@@AEAAJPEBGPEAH@Z
+        106   69 00003420 ?ProxyUnlockVolumeWithPassphrase@BuiVolume@@AEAAJPEBGPEAH@Z
+        107   6A 00003380 ?ProxyUnlockVolumeWithPassword@BuiVolume@@AEAAJPEBGPEAH@Z
+        108   6B 00003470 ?ProxyUnlockVolumeWithSmartCard@BuiVolume@@AEAAJPEAUHWND__@@PEAH@Z
+        109   6C 00003A60 ?ProxyUpgradeVolume@BuiVolume@@AEAAJXZ
+        110   6D 00001C00 ?RefreshStatus@BuiVolume@@QEAAJ_N@Z
+        111   6E 000028A0 ?RemovePassphrase@BuiVolume@@QEAAJXZ
+        112   6F 00002920 ?RemoveSmartCard@BuiVolume@@QEAAJ_N@Z
+        113   70 000025D0 ?ResumeConversion@BuiVolume@@QEAAJXZ
+        114   71 00001E70 ?ResumeStatusRefreshing@BuiVolume@@QEAAXXZ
+        115   72 00002880 ?ServiceDiscoveryVolume@BuiVolume@@QEAAJXZ
+        116   73 000023F0 ?SetProxyObject@BuiVolume@@QEAAXPEAUIDispatch@@@Z
+        117   74 00001E30 ?SuspendStatusRefreshing@BuiVolume@@QEAAXXZ
+        118   75 00004100 ?UnlockRequiresElevation@BuiVolume@@QEBA_NXZ
+        119   76 000026F0 ?UnlockWithKey@BuiVolume@@QEAAJPEBGPEAH@Z
+        120   77 00002740 ?UnlockWithPassphrase@BuiVolume@@QEAAJPEBGPEAH@Z
+        121   78 000026A0 ?UnlockWithPassword@BuiVolume@@QEAAJPEBGPEAH@Z
+        122   79 00002790 ?UnlockWithSmartCard@BuiVolume@@QEAAJPEAUHWND__@@PEAH@Z
+        123   7A 00002960 ?UpgradeVolume@BuiVolume@@QEAAJXZ
+        124   7B 00001370 BuisCreateElevatedProxyObject
+        125   7C 00001480 BuisCreateProxyObject
+        126   7D 00001560 BuisDetectExistingWizard
+        127   7E 000014C0 BuisIsFipsEnabled
+        128   7F 000014F0 BuisIsHardwareReadyForConversion
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        4000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        4000 .text

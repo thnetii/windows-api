@@ -1,0 +1,118 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\Pimstore.dll
+
+File Type: DLL
+
+  Section contains the following exports for PIMSTORE.dll
+
+    00000000 characteristics
+    6361368A time date stamp
+        0.00 version
+           1 ordinal base
+          89 number of functions
+          89 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00008DD0 ?Submit@AccountProviderHostJobBase@@QEAAJPEAK@Z
+          2    1 00008E70 ?SubmitSynchronously@AccountProviderHostJobBase@@QEAAJPEAXKPEAT_SNJobOutParams@@@Z
+          3    2 0000C170 BuildDisplayName
+          4    3 0000C180 BuildYomiDisplayName
+          5    4 00010A40 CanonicalizedComparePropVal
+          6    5 00010DD0 ClearPreferenceAndOverride
+          7    6 00012A90 CompareEmailAddresses
+          8    7 00010FE0 CopyCEPROPVAL
+          9    8 00013B10 CreateAttendeeList
+         10    9 00016990 CreateCategoryDBManager
+         11    A 000110D0 CreateContactSettingsRegKey
+         12    B 00016B60 CreateItemInDefaultFolder
+         13    C 0001C370 CreateOutlookApp
+         14    D 0001EB20 CreateRecurrenceFromData
+         15    E 0000C190 DestroyNameParser
+         16    F 00016C50 DisableLocalPoom
+         17   10 00016C70 DisableLocalPoomEx
+         18   11 00007A30 DllCanUnloadNow
+         19   12 00007A80 DllGetClassObject
+         20   13 00016CB0 EnableLocalPoom
+         21   14 00016D00 EnableLocalPoomEx
+         22   15 0001EF90 EscapePoomRestrictionValues
+         23   16 0002FB50 FindAllMatchingAggregates
+         24   17 0002FE60 FindAllMatchingContactsEx
+         25   18 0002FEB0 FindAllMatchingContactsEx2
+         26   19 0002FF00 FindAllMatchingContactsEx3
+         27   1A 0002FFC0 FindMatchingContactEx
+         28   1B 0002FFF0 FindMatchingContactEx2
+         29   1C 00011440 GetActiveOutlookApp
+         30   1D 00035ED0 GetAggregateCache
+         31   1E 00035EE0 GetAggregateCacheGeneration
+         32   1F 000361B0 GetAppointmentFromUniqueId
+         33   20 00036360 GetAppointmentUniqueId
+         34   21 000378D0 GetBlankName
+         35   22 000115D0 GetContactDisplayAndSortPropertiesFromRegistry
+         36   23 0003CFF0 GetDefaultFolderFromStore
+         37   24 0003D040 GetDefaultFolderFromStoreEx
+         38   25 0003D700 GetDefaultStoreFilter
+         39   26 00016EC0 GetDefaultStoreId
+         40   27 00016F20 GetDefaultStoreItemId
+         41   28 0003D450 GetDefaultUSStore
+         42   29 000116D0 GetDisplayBy
+         43   2A 00011780 GetFloatingTime
+         44   2B 0000C1B0 GetFullName
+         45   2C 0000C1D0 GetGivenName
+         46   2D 0003D4F0 GetHighestUSStoreBit
+         47   2E 00036570 GetMeetingNotificationFromMessage
+         48   2F 0000C200 GetMiddle
+         49   30 0000C220 GetNewNameParser
+         50   31 0000C310 GetNickname
+         51   32 0003D590 GetPartnerGUID
+         52   33 00011AF0 GetSortBy
+         53   34 00040790 GetStartAndEndDate
+         54   35 0000C330 GetSuffix
+         55   36 0000C350 GetSurname
+         56   37 0000C380 GetTitle
+         57   38 0000C3A0 GetYomiDisplayName
+         58   39 0000C3C0 GetYomiGivenName
+         59   3A 0000C3E0 GetYomiSurname
+         60   3B 000365F0 HandleMeetingResponseForAppointment
+         61   3C 000367D0 HandleMeetingResponseForMeetingNotification
+         62   3D 0003D7C0 HasAllBlobBitsSet
+         63   3E 0003D890 HasSameStoreFilter
+         64   3F 00017160 IsDefaultStore
+         65   40 00011BA0 IsEmptyProp
+         66   41 000378E0 IsFEString
+         67   42 00040EF0 OlDefaultFoldersToOlItemType
+         68   43 00040F60 OlItemTypeToOlDefaultFolders
+         69   44 00011D00 OlObjectTypeFromOLITEMID
+         70   45 00041420 POutlookAppManager_CreateInstance
+         71   46 0000C400 ParseName
+         72   47 00037920 PimBinaryBodyToString
+         73   48 00040940 PimCreateGlobalObjId
+         74   49 0000C410 RebuildName
+         75   4A 00012100 SendPictureUpdateNotification
+         76   4B 00012240 SetDisplayBy
+         77   4C 0000C420 SetFullName
+         78   4D 0000C440 SetGiven
+         79   4E 000122D0 SetIncludeMiddle
+         80   4F 0000C470 SetMiddle
+         81   50 0000C490 SetNickname
+         82   51 00012390 SetSortBy
+         83   52 0000C4B0 SetSuffix
+         84   53 0000C4D0 SetSurname
+         85   54 0000C500 SetTitle
+         86   55 0000C520 SetYomiGiven
+         87   56 0000C540 SetYomiSurname
+         88   57 0001C420 StopNotifications
+         89   58 000415C0 TextToTag
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        A000 .pdata
+       28000 .rdata
+        3000 .reloc
+        3000 .rsrc
+       B6000 .text

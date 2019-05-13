@@ -1,0 +1,57 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\oleacc.dll
+
+File Type: DLL
+
+  Section contains the following exports for OLEACC.dll
+
+    00000000 characteristics
+    2B9A3A00 time date stamp
+        0.00 version
+           1 ordinal base
+          28 number of functions
+          28 number of names
+
+    ordinal hint RVA      name
+
+          3    0 00040B70 AccGetRunningUtilityState
+          4    1 000412C0 AccNotifyTouchInteraction
+          5    2 00041340 AccSetRunningUtilityState
+          6    3 00012370 AccessibleChildren
+          7    4 000075A0 AccessibleObjectFromEvent
+          8    5 00041390 AccessibleObjectFromPoint
+          9    6 00007E10 AccessibleObjectFromWindow
+         10    7 0000DDC0 AccessibleObjectFromWindowTimeout
+         11    8 00006EB0 CreateStdAccessibleObject
+         12    9 000413E0 CreateStdAccessibleProxyA
+         13    A 00006F10 CreateStdAccessibleProxyW
+         14    B 00014C60 DllCanUnloadNow
+         15    C 00006580 DllGetClassObject
+          1    D 00014E40 DllRegisterServer
+          2    E 00014E40 DllUnregisterServer
+         16    F 00041430 GetOleaccVersionInfo
+         17   10 000140F0 GetProcessHandleFromHwnd
+         18   11 00041480 GetRoleTextA
+         19   12 00002790 GetRoleTextW
+         20   13 000414D0 GetStateTextA
+         21   14 00041520 GetStateTextW
+         22   15 0004EC10 IID_IAccessible
+         23   16 00050EF8 IID_IAccessibleHandler
+         24   17 00052EB0 LIBID_Accessibility
+         25   18 0000FCC0 LresultFromObject
+         26   19 00005E20 ObjectFromLresult
+         27   1A 0000F1B0 PropMgrClient_LookupProp
+         28   1B 0000F600 WindowFromAccessibleObject
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        5000 .pdata
+       19000 .rdata
+        2000 .reloc
+        6000 .rsrc
+       43000 .text

@@ -1,0 +1,40 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\CallHistoryClient.dll
+
+File Type: DLL
+
+  Section contains the following exports for CallHistoryClient.dll
+
+    00000000 characteristics
+    AB1CF60A time date stamp
+        0.00 version
+           1 ordinal base
+          11 number of functions
+          11 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0000C5A0 DoesCallHistoryItemMatchFilter
+          2    1 0001DAE0 StringToUdmObjectId
+          3    2 0000C5B0 UdmAreCallEventsEqual
+          4    3 0000D960 UdmCancelAsyncTask
+          5    4 0000EF70 UdmCreateDataSession
+          6    5 000040E0 UdmCreateDataSessionForUser
+          7    6 0000DA40 UdmCreateSyncCallbackHandler
+          8    7 0000EFC0 UdmDebugModifyNotifyState
+          9    8 000129F0 UdmFreeCallFavoriteItemSet
+         10    9 0000C610 UdmFreeCallHistoryItemSet
+         11    A 0001DC20 UdmObjectIdToString
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        3000 .pdata
+        B000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       1E000 .text

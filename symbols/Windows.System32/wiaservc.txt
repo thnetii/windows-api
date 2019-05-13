@@ -1,0 +1,86 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\wiaservc.dll
+
+File Type: DLL
+
+  Section contains the following exports for wiaservc.dll
+
+    00000000 characteristics
+    2A4C82A2 time date stamp
+        0.00 version
+           1 ordinal base
+          57 number of functions
+          57 number of names
+
+    ordinal hint RVA      name
+
+          2    0 000207F0 DllRegisterServer
+          3    1 00020810 DllUnregisterServer
+          1    2 00012910 ServiceMain
+          4    3 0002BF80 wiasCreateChildAppItem
+          5    4 00025F40 wiasCreateDrvItem
+          6    5 00026120 wiasCreateLogInstance
+          7    6 000261E0 wiasCreatePropContext
+          8    7 000263C0 wiasDebugError
+          9    8 00026540 wiasDebugTrace
+         10    9 000266C0 wiasDownSampleBuffer
+         11    A 00026930 wiasFormatArgs
+         12    B 00026AA0 wiasFreePropContext
+         13    C 00026B50 wiasGetChangedValueFloat
+         14    D 00026CA0 wiasGetChangedValueGuid
+         15    E 00026DF0 wiasGetChangedValueLong
+         16    F 00026F40 wiasGetChangedValueStr
+         17   10 00027090 wiasGetChildrenContexts
+         18   11 00027420 wiasGetContextFromName
+         19   12 00027640 wiasGetDrvItem
+         20   13 00027740 wiasGetImageInformation
+         21   14 00027900 wiasGetItemType
+         22   15 000279E0 wiasGetPropertyAttributes
+         23   16 00027B00 wiasGetRootItem
+         24   17 00027BD0 wiasIsPropChanged
+         25   18 00027CD0 wiasParseEndorserString
+         26   19 000282F0 wiasPrintDebugHResult
+         27   1A 00023890 wiasQueueEvent
+         28   1B 00028330 wiasReadMultiple
+         29   1C 000284C0 wiasReadPropBin
+         30   1D 000286B0 wiasReadPropFloat
+         31   1E 00028860 wiasReadPropGuid
+         32   1F 00028A20 wiasReadPropLong
+         33   20 00028BC0 wiasReadPropStr
+         34   21 00028DE0 wiasSendEndOfPage
+         35   22 00028EB0 wiasSetItemPropAttribs
+         36   23 00029060 wiasSetItemPropNames
+         37   24 00029180 wiasSetPropChanged
+         38   25 00029270 wiasSetPropertyAttributes
+         39   26 000294B0 wiasSetValidFlag
+         40   27 00029620 wiasSetValidListFloat
+         41   28 000297F0 wiasSetValidListGuid
+         42   29 000299C0 wiasSetValidListLong
+         43   2A 00029B90 wiasSetValidListStr
+         44   2B 00029DE0 wiasSetValidRangeFloat
+         45   2C 00029F60 wiasSetValidRangeLong
+         46   2D 0002A140 wiasUpdateScanRect
+         47   2E 0002A260 wiasUpdateValidFormat
+         48   2F 0002A680 wiasValidateItemProperties
+         49   30 0002A950 wiasWriteBufToFile
+         50   31 0002AA50 wiasWriteMultiple
+         51   32 0002AD20 wiasWritePageBufToFile
+         52   33 0002AE50 wiasWritePageBufToStream
+         53   34 0002AF90 wiasWritePropBin
+         54   35 0002B200 wiasWritePropFloat
+         55   36 0002B440 wiasWritePropGuid
+         56   37 0002B6E0 wiasWritePropLong
+         57   38 0002B8D0 wiasWritePropStr
+
+  Summary
+
+        4000 .data
+        1000 .didat
+        5000 .pdata
+       35000 .rdata
+        1000 .reloc
+        2000 .rsrc
+       61000 .text

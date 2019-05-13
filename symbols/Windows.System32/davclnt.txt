@@ -1,0 +1,53 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\davclnt.dll
+
+File Type: DLL
+
+  Section contains the following exports for davclnt.dll
+
+    00000000 characteristics
+    53C201C8 time date stamp
+        0.00 version
+           1 ordinal base
+          24 number of functions
+          24 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000039F0 DavCancelConnectionsToServer
+          2    1 00004B90 DavFreeUsedDiskSpace
+          3    2 00005220 DavGetDiskSpaceUsage
+          4    3 00005560 DavGetTheLockOwnerOfTheFile
+          5    4 00005930 DavInvalidateCache
+          6    5 00006D20 DavRegisterAuthCallback
+          7    6 00007800 DavSetCookieW
+          8    7 00008210 DavUnregisterAuthCallback
+          9    8 00010630 DllCanUnloadNow
+         10    9 00010650 DllGetClassObject
+         11    A 00002890 DllMain
+         12    B 00008AB0 NPAddConnection
+         13    C 00008B10 NPAddConnection3
+         14    D 0000A710 NPCancelConnection
+         15    E 0000AAF0 NPCloseEnum
+         16    F 0000AC80 NPEnumResource
+         17   10 0000BB20 NPFormatNetworkName
+         18   11 00001350 NPGetCaps
+         19   12 0000BC90 NPGetConnection
+         20   13 0000C190 NPGetResourceInformation
+         21   14 0000C880 NPGetResourceParent
+         22   15 0000CDF0 NPGetUniversalName
+         23   16 0000D400 NPGetUser
+         24   17 00001010 NPOpenEnum
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        1000 .pdata
+        5000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       11000 .text

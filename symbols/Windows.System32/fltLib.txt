@@ -1,0 +1,57 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\fltLib.dll
+
+File Type: DLL
+
+  Section contains the following exports for FLTLIB.DLL
+
+    00000000 characteristics
+    E26DDA2B time date stamp
+        0.00 version
+           1 ordinal base
+          29 number of functions
+          29 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001940 FilterAttach
+          2    1 00001980 FilterAttachAtAltitude
+          3    2 000014F0 FilterClose
+          4    3 000020A0 FilterConnectCommunicationPort
+          5    4 00001340 FilterCreate
+          6    5 000019B0 FilterDetach
+          7    6 000014F0 FilterFindClose
+          8    7 00001BE0 FilterFindFirst
+          9    8 00001D30 FilterFindNext
+         10    9 000023B0 FilterGetDosName
+         11    A 00002060 FilterGetInformation
+         12    B 00002330 FilterGetMessage
+         13    C 000014F0 FilterInstanceClose
+         14    D 00001530 FilterInstanceCreate
+         15    E 000014F0 FilterInstanceFindClose
+         16    F 00001EC0 FilterInstanceFindFirst
+         17   10 00001D30 FilterInstanceFindNext
+         18   11 00002060 FilterInstanceGetInformation
+         19   12 00001040 FilterLoad
+         20   13 00002370 FilterReplyMessage
+         21   14 000022F0 FilterSendMessage
+         22   15 000011C0 FilterUnload
+         23   16 000014F0 FilterVolumeClose
+         24   17 000014F0 FilterVolumeFindClose
+         25   18 00001D70 FilterVolumeFindFirst
+         26   19 00001D30 FilterVolumeFindNext
+         27   1A 000014F0 FilterVolumeInstanceFindClose
+         28   1B 00001F90 FilterVolumeInstanceFindFirst
+         29   1C 00001D30 FilterVolumeInstanceFindNext
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        3000 .text

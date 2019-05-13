@@ -1,0 +1,204 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\adsldpc.dll
+
+File Type: DLL
+
+  Section contains the following exports for adsldpc.dll
+
+    00000000 characteristics
+    8A880955 time date stamp
+        0.00 version
+           1 ordinal base
+         175 number of functions
+         175 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001B90 ??0CLexer@@QEAA@XZ
+          2    1 00018FB0 ??1CLexer@@QEAA@XZ
+         56    2 000190D0 ?GetNextToken@CLexer@@QEAAJPEAGPEAK@Z
+         60    3 00001AA0 ?InitializePath@CLexer@@QEAAJPEAG@Z
+        139    4 000190F0 ?SetAtDisabler@CLexer@@QEAAXH@Z
+        140    5 00019100 ?SetExclaimnationDisabler@CLexer@@QEAAXH@Z
+        141    6 00019110 ?SetFSlashDisabler@CLexer@@QEAAXH@Z
+        145    7 00013080 ADSIAbandonSearch
+        146    8 00013090 ADSICloseDSObject
+        147    9 000130C0 ADSICloseSearchHandle
+        148    A 000130D0 ADSICreateDSObject
+        149    B 00013100 ADSIDeleteDSObject
+        150    C 00013120 ADSIExecuteSearch
+        151    D 000131C0 ADSIFreeColumn
+        152    E 000131D0 ADSIGetColumn
+        153    F 00013200 ADSIGetFirstRow
+        154   10 00013220 ADSIGetNextColumnName
+        155   11 00013240 ADSIGetNextRow
+        156   12 00013260 ADSIGetObjectAttributes
+        157   13 000132F0 ADSIGetPreviousRow
+        158   14 00013310 ADSIModifyRdn
+        159   15 00013420 ADSIOpenDSObject
+          3   16 000035E0 ADSIPrint
+        160   17 00013640 ADSISetObjectAttributes
+        161   18 000136C0 ADSISetSearchPreference
+          4   19 0001AF50 ADsAbandonSearch
+          5   1A 0001AFD0 ADsCloseSearchHandle
+          6   1B 00019A90 ADsCreateAttributeDefinition
+          7   1C 00019A90 ADsCreateClassDefinition
+          8   1D 00013980 ADsCreateDSObject
+          9   1E 000139B0 ADsCreateDSObjectExt
+        162   1F 00012B90 ADsDecodeBinaryData
+         10   20 00019A90 ADsDeleteAttributeDefinition
+         11   21 00019A90 ADsDeleteClassDefinition
+         12   22 00013D10 ADsDeleteDSObject
+        163   23 00012CD0 ADsEncodeBinaryData
+         13   24 00019AA0 ADsEnumAttributes
+         14   25 00019A90 ADsEnumClasses
+         15   26 0001B2B0 ADsExecuteSearch
+         16   27 0001BA00 ADsFreeColumn
+         17   28 0001BB90 ADsGetColumn
+         18   29 0001C100 ADsGetFirstRow
+        164   2A 00012DF0 ADsGetLastError
+         19   2B 0001C9E0 ADsGetNextColumnName
+         20   2C 0001CC10 ADsGetNextRow
+         21   2D 0000AC70 ADsGetObjectAttributes
+         22   2E 0001CFF0 ADsGetPreviousRow
+         23   2F 0001D4B0 ADsHelperGetCurrentRowMessage
+         24   30 00001700 ADsObject
+        165   31 00006590 ADsSetLastError
+         25   32 00013DD0 ADsSetObjectAttributes
+         26   33 0001D4F0 ADsSetSearchPreference
+         27   34 00019A90 ADsWriteAttributeDefinition
+         28   35 00019A90 ADsWriteClassDefinition
+        166   36 0000B420 AdsTypeFreeAdsObjects
+         29   37 00018290 AdsTypeToLdapTypeCopyConstruct
+         30   38 00018360 AdsTypeToLdapTypeCopyDNWithBinary
+         31   39 000184D0 AdsTypeToLdapTypeCopyDNWithString
+         32   3A 00018600 AdsTypeToLdapTypeCopyGeneralizedTime
+         33   3B 00018A00 AdsTypeToLdapTypeCopyTime
+        167   3C 000013A0 AllocADsMem
+        168   3D 00001AF0 AllocADsStr
+         34   3E 00016AE0 BerBvFree
+         35   3F 0001E720 BerEncodingQuotaControl
+         36   40 00019120 BuildADsParentPath
+         38   41 000028D0 BuildADsParentPathFromObjectInfo
+         37   42 00002A60 BuildADsParentPathFromObjectInfo2
+         40   43 00019440 BuildADsPathFromLDAPPath
+         39   44 00019240 BuildADsPathFromLDAPPath2
+         41   45 00002580 BuildADsPathFromParent
+         43   46 000198B0 BuildLDAPPathFromADsPath
+         42   47 00002660 BuildLDAPPathFromADsPath2
+         44   48 00019A50 ChangeSeparator
+         45   49 00001FA0 Component
+         46   4A 0001A970 ConvertSidToString
+         47   4B 0001AB10 ConvertSidToU2Trustee
+         48   4C 0001AD80 ConvertU2TrusteeToSid
+         49   4D 00006E80 FindEntryInSearchTable
+         50   4E 00015860 FindSearchTableIndex
+        169   4F 000017E0 FreeADsMem
+        170   50 00001370 FreeADsStr
+         51   51 000017A0 FreeObjectInfo
+         52   52 00002F60 GetDefaultServer
+         53   53 00001400 GetDisplayName
+         54   54 0001F3B0 GetDomainDNSNameForDomain
+         55   55 00018FD0 GetLDAPTypeName
+         57   56 0000A8B0 GetServerAndPort
+         58   57 0001F7D0 GetSyntaxOfAttribute
+         59   58 000019F0 InitObjectInfo
+         61   59 00016BD0 IsGCNamespace
+         62   5A 00016CB0 LdapAddExtS
+         63   5B 00016D10 LdapAddS
+         64   5C 0000BE40 LdapAttributeFree
+         65   5D 00016D60 LdapCacheAddRef
+         66   5E 00006A70 LdapCloseObject
+         67   5F 00016D70 LdapCompareExt
+         68   60 00016DE0 LdapControlFree
+         69   61 00016DF0 LdapControlsFree
+         70   62 0000C480 LdapCountEntries
+         71   63 00016E00 LdapCrackUserDNtoNTLMUser2
+         72   64 00016FD0 LdapCreatePageControl
+         73   65 00017020 LdapDeleteExtS
+         74   66 00017070 LdapDeleteS
+         75   67 0000B3D0 LdapFirstAttribute
+         76   68 00006A00 LdapFirstEntry
+         77   69 000170C0 LdapGetDn
+         78   6A 00006160 LdapGetNextPageS
+         79   6B 0001A0D0 LdapGetSchemaObjectCount
+         80   6C 0001A140 LdapGetSubSchemaSubEntryPath
+         81   6D 00006E30 LdapGetSyntaxIdOfAttribute
+         82   6E 00006C70 LdapGetSyntaxOfAttributeOnServer
+         83   6F 0000A590 LdapGetValues
+         84   70 0000AA50 LdapGetValuesLen
+         85   71 0000C210 LdapInitializeSearchPreferences
+         86   72 0001A1C0 LdapIsClassNameValidOnServer
+         87   73 0001A250 LdapMakeSchemaCacheObsolete
+         88   74 000171B0 LdapMemFree
+         89   75 000171C0 LdapModDnS
+         90   76 00006780 LdapModifyExtS
+         91   77 00017210 LdapModifyS
+         92   78 0000C470 LdapMsgFree
+         93   79 0000B390 LdapNextAttribute
+         94   7A 00017260 LdapNextEntry
+         96   7B 00002D00 LdapOpenObject
+         95   7C 00002D30 LdapOpenObject2
+         97   7D 00017600 LdapParsePageControl
+         98   7E 00017640 LdapParseResult
+        100   7F 000176B0 LdapReadAttribute
+         99   80 00003DD0 LdapReadAttribute2
+        101   81 00005EF0 LdapReadAttributeFast
+        102   82 00017700 LdapRenameExtS
+        103   83 00017770 LdapResult
+        104   84 00017890 LdapSearch
+        105   85 00005A50 LdapSearchAbandonPage
+        106   86 00005E60 LdapSearchExtS
+        107   87 00005990 LdapSearchInitPage
+        108   88 000067E0 LdapSearchS
+        109   89 00005930 LdapSearchST
+        110   8A 00016A20 LdapTypeBinaryToString
+        111   8B 0000BB80 LdapTypeCopyConstruct
+        112   8C 0000BD90 LdapTypeFreeLdapModList
+        113   8D 0000BDE0 LdapTypeFreeLdapModObject
+        114   8E 0000BD10 LdapTypeFreeLdapObjects
+        171   8F 0000B610 LdapTypeToAdsTypeCopyConstruct
+        115   90 00014A30 LdapTypeToAdsTypeDNWithBinary
+        116   91 00014A40 LdapTypeToAdsTypeDNWithString
+        117   92 00014A50 LdapTypeToAdsTypeGeneralizedTime
+        118   93 00014C20 LdapTypeToAdsTypeUTCTime
+        119   94 0000C060 LdapValueFree
+        120   95 0000C4A0 LdapValueFreeLen
+        121   96 00018030 LdapcKeepHandleAround
+        122   97 0000C3F0 LdapcSetStickyServer
+        172   98 000143A0 MapADSTypeToLDAPType
+        173   99 000143C0 MapLDAPTypeToADSType
+        123   9A 00001DA0 PathName
+        124   9B 0000C2C0 ReadPagingSupportedAttr
+        125   9C 00006BC0 ReadSecurityDescriptorControlType
+        126   9D 000166A0 ReadServerSupportsIsADAMControl
+        127   9E 00006F70 ReadServerSupportsIsADControl
+        174   9F 000099B0 ReallocADsMem
+        175   A0 00012D90 ReallocADsStr
+        128   A1 0001A2B0 SchemaAddRef
+        129   A2 0001A300 SchemaClose
+        130   A3 0001A340 SchemaGetClassInfo
+        131   A4 0001A3B0 SchemaGetClassInfoByIndex
+        132   A5 0001A3E0 SchemaGetObjectCount
+        133   A6 0001A400 SchemaGetPropertyInfo
+        134   A7 0001A4A0 SchemaGetPropertyInfoByIndex
+        135   A8 0001A4D0 SchemaGetStringsFromStringTable
+        136   A9 0001A630 SchemaGetSyntaxOfAttribute
+        137   AA 0001A730 SchemaIsClassAContainer
+        138   AB 0001A850 SchemaOpen
+        142   AC 00005570 SortAndRemoveDuplicateOIDs
+        143   AD 0000A4A0 UnMarshallLDAPToLDAPSynID
+        144   AE 0000B7B0 intcmp
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        2000 .pdata
+       1C000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       1F000 .text

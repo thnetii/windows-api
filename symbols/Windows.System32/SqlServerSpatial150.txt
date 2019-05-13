@@ -1,0 +1,107 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\SqlServerSpatial150.dll
+
+File Type: DLL
+
+  Section contains the following exports for SqlServerSpatial150.dll
+
+    00000000 characteristics
+    FFFFFFFF time date stamp
+        0.00 version
+           1 ordinal base
+          79 number of functions
+          79 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0002ECA0 ??0GeoBundle@@QEAA@PEBUGeoData@@@Z
+          2    1 0002ECF0 ??0GeoBundle@@QEAA@PEBUGeoData@@_N1@Z
+          3    2 0002F310 ??0SpatialIntrisicCostInfo@GeoBundle@@QEAA@XZ
+          4    3 00026C20 ?ComputeBounds@@YAJUGeoData@@PEAV?$CMglRect@N@@@Z
+          5    4 0002F2A0 ?FAddNewCascade@GeoBundle@@QEBA_NAEAH@Z
+          6    5 0002EEB0 ?FCascadeEliminationEnabled@GeoBundle@@QEBA_NXZ
+          7    6 0002F260 ?GetCascadesSaving@GeoBundle@@QEBA_JXZ
+          8    7 0002EEE0 ?GetNextCascadeAreaReduceFactor@GeoBundle@@QEBANXZ
+          9    8 0002EEC0 ?IncResidualCost@GeoBundle@@QEAAX_K@Z
+         10    9 0002F290 ?StopAddingNewCascades@GeoBundle@@QEAAXXZ
+         11    A 0002EF70 ?UpdateNextCascadeCost@GeoBundle@@QEAAXXZ
+         12    B 00097CE8 ?m_Points1@SampleDescriptor@@2QBNB
+         13    C 00097CD8 ?m_Points2@SampleDescriptor@@2QBNB
+         14    D 00097CC0 ?m_Points3@SampleDescriptor@@2QBNB
+         15    E 00097C90 ?m_Points6@SampleDescriptor@@2QBNB
+         16    F 00097C30 ?m_Weights1@SampleDescriptor@@2QBNB
+         17   10 00097C50 ?m_Weights2@SampleDescriptor@@2QBNB
+         18   11 00097C38 ?m_Weights3@SampleDescriptor@@2QBNB
+         19   12 00097C60 ?m_Weights6@SampleDescriptor@@2QBNB
+         20   13 00014BE0 Area
+         21   14 00016910 Boundary
+         22   15 00010390 Buffer
+         23   16 00014F30 Centroid
+         24   17 0000F6A0 Combine
+         25   18 00013F30 Contains
+         26   19 00013FD0 ContainsV2
+         27   1A 00011320 ConvexHull
+         28   1B 00013E90 Crosses
+         29   1C 00010020 CurveToLineWithTolerance
+         30   1D 00015B00 Distance
+         31   1E 00015BA0 DistanceV2
+         32   1F 0000EED0 Envelope
+         33   20 00012570 Equals
+         34   21 0001DA10 GeodeticAngleExtent
+         35   22 00017C10 GeodeticArea
+         36   23 0001C440 GeodeticBuffer
+         37   24 0001DB70 GeodeticCapCenter
+         38   25 0001DE60 GeodeticCapUnion
+         39   26 00019DB0 GeodeticCombine
+         40   27 0001B6C0 GeodeticContains
+         41   28 0001DFF0 GeodeticConvexHull
+         42   29 0001BB50 GeodeticCurveToLineWithTolerance
+         43   2A 00018FA0 GeodeticDistance
+         44   2B 0001A940 GeodeticEquals
+         45   2C 0001D380 GeodeticGridCoverage
+         46   2D 0001B020 GeodeticIntersects
+         47   2E 000194F0 GeodeticIsValid
+         48   2F 00019650 GeodeticIsValidDetailed
+         49   30 000181F0 GeodeticLength
+         50   31 000177D0 GeodeticMakeValid
+         51   32 0001BAD0 GeodeticOverlaps
+         52   33 00018C60 GeodeticPointDistance
+         53   34 0001D6C0 GeodeticReduce
+         54   35 00018FF0 GeodeticShortestLine
+         55   36 0001E6E0 GeodeticTessellate
+         56   37 0001DFE0 GeodeticTile
+         57   38 0000ECC0 GetBounds
+         58   39 000162C0 GetGridCoverage
+         59   3A 0001E6F0 Identity
+         60   3B 00013420 Intersects
+         61   3C 000134C0 IntersectsV2
+         62   3D 00015410 IsSimple
+         63   3E 000167E0 IsValid
+         64   3F 00016820 IsValidDetailed
+         65   40 00014B30 Length
+         66   41 000168D0 MakeValid
+         67   42 00015DC0 Outline
+         68   43 00014A10 Overlaps
+         69   44 00016D30 PlanarReduce
+         70   45 00015240 PointOnSurface
+         71   46 00014AA0 Relate
+         72   47 0001E700 SetClrFeatureSwitchMap
+         73   48 0000EB50 SetOSYieldCallback
+         74   49 00015BB0 ShortestLine
+         75   4A 00010C10 SimpleBuffer
+         76   4B 00016EC0 SingleSideReduce
+         77   4C 0001E6D0 Tessellate
+         78   4D 00013E00 Touches
+         79   4E 0001DCA0 UpdateGeodeticEnvelope
+
+  Summary
+
+        2000 .data
+        7000 .pdata
+       26000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       95000 .text

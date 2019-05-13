@@ -1,0 +1,107 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\userenv.dll
+
+File Type: DLL
+
+  Section contains the following exports for USERENV.dll
+
+    00000000 characteristics
+    BBCBF3A2 time date stamp
+        0.00 version
+         104 ordinal base
+         115 number of functions
+          59 number of names
+
+    ordinal hint RVA      name
+
+        106    0 000100E0 AreThereVisibleLogoffScripts
+        107    1 000100F0 AreThereVisibleShutdownScripts
+        108    2 00003630 CreateAppContainerProfile
+        109    3 00003600 CreateEnvironmentBlock
+        110    4 00012DC0 CreateProfile
+        111    5 00010500 DeleteAppContainerProfile
+        112    6 00013EA0 DeleteProfileA
+        113    7 00013260 DeleteProfileW
+        114    8 00003530 DeriveAppContainerSidFromAppContainerName
+        115    9 00003390 DeriveRestrictedAppContainerSidFromAppContainerSidAndRestrictedName
+        116    A 000035D0 DestroyEnvironmentBlock
+        117    B 00004630 DllCanUnloadNow
+        118    C 00004500 DllGetClassObject
+        119    D 000149D0 DllRegisterServer
+        120    E 00014A10 DllUnregisterServer
+        121    F 00004670 EnterCriticalPolicySection
+        123   10 00013FB0 ExpandEnvironmentStringsForUserA
+        124   11 000034D0 ExpandEnvironmentStringsForUserW
+        125   12 00010100 ForceSyncFgPolicy
+        126   13 00010110 FreeGPOListA
+        127   14 00010120 FreeGPOListW
+        128   15 00010130 GenerateGPNotification
+        129   16 000140D0 GetAllUsersProfileDirectoryA
+        130   17 00014240 GetAllUsersProfileDirectoryW
+        131   18 00003350 GetAppContainerFolderPath
+        132   19 000032A0 GetAppContainerRegistryLocation
+        133   1A 00010140 GetAppliedGPOListA
+        134   1B 000037F0 GetAppliedGPOListW
+        136   1C 00014260 GetDefaultUserProfileDirectoryA
+        138   1D 00004400 GetDefaultUserProfileDirectoryW
+        140   1E 00010150 GetGPOListA
+        141   1F 00010160 GetGPOListW
+        142   20 00010170 GetNextFgPolicyRefreshInfo
+        143   21 00010180 GetPreviousFgPolicyRefreshInfo
+        144   22 00001DC0 GetProfileType
+        145   23 000143D0 GetProfilesDirectoryA
+        146   24 00004420 GetProfilesDirectoryW
+        147   25 00014540 GetUserProfileDirectoryA
+        148   26 00002E50 GetUserProfileDirectoryW
+        149   27 00010190 HasPolicyForegroundProcessingCompleted
+        150   28 00004660 LeaveCriticalPolicySection
+        151   29 000136B0 LoadProfileExtender
+        152   2A 000146F0 LoadUserProfileA
+        153   2B 00001110 LoadUserProfileW
+        154   2C 00010680 ProcessGroupPolicyCompleted
+        155   2D 000106D0 ProcessGroupPolicyCompletedEx
+        156   2E 000101A0 RefreshPolicy
+        157   2F 000101B0 RefreshPolicyEx
+        158   30 00003780 RegisterGPNotification
+        159   31 00010730 RsopAccessCheckByType
+        160   32 000107F0 RsopFileAccessCheck
+        105   33 000100D0 RsopLoggingEnabled
+        161   34 00010860 RsopResetPolicySettingStatus
+        162   35 000108B0 RsopSetPolicySettingStatus
+        163   36 00013B30 UnloadProfileExtender
+        164   37 00001560 UnloadUserProfile
+        165   38 000037E0 UnregisterGPNotification
+        166   39 000101C0 WaitForMachinePolicyForegroundProcessing
+        167   3A 000101D0 WaitForUserPolicyForegroundProcessing
+        104      00010550 [NONAME]
+        122      00010590 [NONAME]
+        135      00015690 [NONAME]
+        137      000103E0 [NONAME]
+        139      00010440 [NONAME]
+        175      000153C0 [NONAME]
+        202      0000F3F0 [NONAME]
+        203      0000DED0 [NONAME]
+        206      00010370 [NONAME]
+        207      000103A0 [NONAME]
+        208      000137B0 [NONAME]
+        209      0000E300 [NONAME]
+        210      00010920 [NONAME]
+        211      00010640 [NONAME]
+        212      00003660 [NONAME]
+        213      00010510 [NONAME]
+        214      0000F5F0 [NONAME]
+        217      000146B0 [NONAME]
+        218      000105F0 [NONAME]
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        2000 .pdata
+        9000 .rdata
+        1000 .reloc
+        3000 .rsrc
+       16000 .text

@@ -1,0 +1,44 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\eappcfg.dll
+
+File Type: DLL
+
+  Section contains the following exports for eappcfg.dll
+
+    00000000 characteristics
+    E2DAAFB0 time date stamp
+        0.00 version
+           1 ordinal base
+          15 number of functions
+          15 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00008D00 EapHostPeerConfigBlob2Xml
+          2    1 00009BE0 EapHostPeerConfigXml2Blob
+          3    2 0000A5C0 EapHostPeerCreateMethodConfiguration
+          4    3 0000A8B0 EapHostPeerCredentialsXml2Blob
+          5    4 0000B2B0 EapHostPeerFreeErrorMemory
+          6    5 0000B340 EapHostPeerFreeMemory
+          7    6 0000B400 EapHostPeerGetMethodProperties
+          8    7 0000B980 EapHostPeerGetMethods
+          9    8 0000BDB0 EapHostPeerInvokeConfigUI
+         10    9 0000C240 EapHostPeerInvokeIdentityUI
+         11    A 0000C890 EapHostPeerInvokeInteractiveUI
+         12    B 0000D3C0 EapHostPeerQueryCredentialInputFields
+         13    C 0000D7F0 EapHostPeerQueryInteractiveUIInputFields
+         14    D 0000E080 EapHostPeerQueryUIBlobFromInteractiveUIInputFields
+         15    E 0000EB70 EapHostPeerQueryUserBlobFromCredentialInputFields
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        2000 .pdata
+       12000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       26000 .text

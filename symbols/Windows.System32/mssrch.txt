@@ -1,0 +1,50 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\mssrch.dll
+
+File Type: DLL
+
+  Section contains the following exports for MSSRCH.DLL
+
+    00000000 characteristics
+    940E574D time date stamp
+        0.00 version
+           1 ordinal base
+          21 number of functions
+          21 number of names
+
+    ordinal hint RVA      name
+
+          1    0 001012E0 ??0CSearchServiceObj@@QEAA@AEBV0@@Z
+          2    1 000A8550 ??0CSearchServiceObj@@QEAA@XZ
+          3    2 0010EAC0 ??1CSearchServiceObj@@QEAA@XZ
+          4    3 00102930 ??4CSearchServiceObj@@QEAAAEAV0@AEBV0@@Z
+          5    4 001D6D00 ??_7CSearchServiceObj@@6B@
+          6    5 0010F3E0 ?Cleanup@CSearchServiceObj@@SAXXZ
+          7    6 0000F640 ?GetFileChangeClientManagerInstance@@YA?AV?$shared_ptr@UIFileChangeClientManager@ChangeTracking@Windows@@@std@@XZ
+          8    7 000A5D10 ?Initialize@CSearchServiceObj@@UEAAJ_NKPEBV?$vector@VReIndexPatternInfo@@V?$allocator@VReIndexPatternInfo@@@std@@@std@@@Z
+          9    8 000758F0 ?LogoffNotification@CSearchServiceObj@@UEAAJK@Z
+         10    9 000746D0 ?LogonNotification@CSearchServiceObj@@UEAAJK@Z
+         11    A 000A7450 ?PostServiceStartup@CSearchServiceObj@@UEAAJXZ
+         12    B 000A7E10 ?SetServiceStatusObj@CSearchServiceObj@@UEAAJPEAUIDCOMServiceStatus@@@Z
+         13    C 00110640 ?Shutdown@CSearchServiceObj@@UEAAJXZ
+         14    D 000827E0 ?Start@CSearchServiceObj@@UEAAJXZ
+         15    E 00110870 ?Stop@CSearchServiceObj@@UEAAJH@Z
+         16    F 00025690 DllCanUnloadNow
+         17   10 00028530 DllGetClassObject
+         18   11 0010DDA0 DllRegisterServer
+         19   12 0010DE10 DllUnregisterServer
+         20   13 0010DE20 GetCatalogManager
+         21   14 00112F80 MSSrch_SysPrep_Cleanup
+
+  Summary
+
+        6000 .data
+        1000 .didat
+       1E000 .pdata
+       B8000 .rdata
+        5000 .reloc
+        E000 .rsrc
+      1CC000 .text

@@ -1,0 +1,53 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\winbioext.dll
+
+File Type: DLL
+
+  Section contains the following exports for winbioext.dll
+
+    00000000 characteristics
+    F26A4506 time date stamp
+        0.00 version
+           1 ordinal base
+          25 number of functions
+          25 number of names
+
+    ordinal hint RVA      name
+
+          2    0 00003D80 DllCanUnloadNow
+          3    1 00003CA0 DllGetClassObject
+          4    2          WinBioAcquireFocus (forwarded to winbio.WinBioAcquireFocus)
+          5    3          WinBioAsyncEnumDatabases (forwarded to winbio.WinBioAsyncEnumDatabases)
+          6    4          WinBioAsyncMonitorFrameworkChanges (forwarded to winbio.WinBioAsyncMonitorFrameworkChanges)
+          7    5          WinBioCaptureSample (forwarded to winbio.WinBioCaptureSample)
+          8    6          WinBioCaptureSampleWithCallback (forwarded to winbio.WinBioCaptureSampleWithCallback)
+          9    7          WinBioEnrollCaptureWithCallback (forwarded to winbio.WinBioEnrollCaptureWithCallback)
+         10    8          WinBioEnumDatabases (forwarded to winbio.WinBioEnumDatabases)
+         11    9          WinBioGetDomainLogonSetting (forwarded to winbio.WinBioGetDomainLogonSetting)
+         12    A          WinBioGetEnabledSetting (forwarded to winbio.WinBioGetEnabledSetting)
+         13    B          WinBioGetLogonSetting (forwarded to winbio.WinBioGetLogonSetting)
+         14    C          WinBioIdentifyWithCallback (forwarded to winbio.WinBioIdentifyWithCallback)
+         15    D 000043D0 WinBioIsLegacy
+         16    E          WinBioLocateSensor (forwarded to winbio.WinBioLocateSensor)
+         17    F          WinBioLocateSensorWithCallback (forwarded to winbio.WinBioLocateSensorWithCallback)
+         18   10          WinBioLogonIdentifiedUser (forwarded to winbio.WinBioLogonIdentifiedUser)
+          1   11          WinBioNotifyPasswordChange (forwarded to winbio.WinBioNotifyPasswordChange)
+         19   12          WinBioOpenSession (forwarded to winbio.WinBioOpenSession)
+         20   13          WinBioRegisterEventMonitor (forwarded to winbio.WinBioRegisterEventMonitor)
+         21   14          WinBioRegisterServiceMonitor (forwarded to winbio.WinBioRegisterServiceMonitor)
+         22   15          WinBioReleaseFocus (forwarded to winbio.WinBioReleaseFocus)
+         23   16          WinBioUnregisterEventMonitor (forwarded to winbio.WinBioUnregisterEventMonitor)
+         24   17          WinBioUnregisterServiceMonitor (forwarded to winbio.WinBioUnregisterServiceMonitor)
+         25   18          WinBioVerifyWithCallback (forwarded to winbio.WinBioVerifyWithCallback)
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        4000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        6000 .text

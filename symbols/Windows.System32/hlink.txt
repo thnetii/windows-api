@@ -1,0 +1,60 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\hlink.dll
+
+File Type: DLL
+
+  Section contains the following exports for hlink.dll
+
+    00000000 characteristics
+    1A35B8BD time date stamp
+        0.00 version
+           3 ordinal base
+          32 number of functions
+          32 number of names
+
+    ordinal hint RVA      name
+
+         13    0 00001D70 DllCanUnloadNow
+         17    1 00001D10 DllGetClassObject
+         19    2 0000D1A0 DllRegisterServer
+         34    3 0000D2E0 DllUnregisterServer
+          7    4 00008D80 HlinkClone
+          6    5 00007980 HlinkCreateBrowseContext
+         32    6 00008550 HlinkCreateExtensionServices
+          5    7 00007670 HlinkCreateFromData
+          3    8 00007090 HlinkCreateFromMoniker
+          4    9 00007110 HlinkCreateFromString
+         23    A 00008580 HlinkCreateShortcut
+         29    B 000086C0 HlinkCreateShortcutFromMoniker
+         27    C 000086F0 HlinkCreateShortcutFromString
+         22    D 00007DD0 HlinkGetSpecialReference
+         28    E 00008C90 HlinkGetValueFromParams
+         25    F 00008900 HlinkIsShortcut
+         10   10 00008A40 HlinkNavigate
+          8   11 00008990 HlinkNavigateToStringReference
+          9   12 00007A20 HlinkOnNavigate
+         12   13 00007B20 HlinkOnRenameDocument
+         18   14 000084E0 HlinkParseDisplayName
+         33   15 00008F40 HlinkPreprocessMoniker
+         20   16 00007890 HlinkQueryCreateFromData
+         14   17 000080C0 HlinkResolveMonikerForData
+         24   18 00008700 HlinkResolveShortcut
+         30   19 00008880 HlinkResolveShortcutToMoniker
+         26   1A 000088C0 HlinkResolveShortcutToString
+         15   1B 00008110 HlinkResolveStringForData
+         21   1C 00007BB0 HlinkSetSpecialReference
+         31   1D 0000EF30 HlinkTranslateURL
+         11   1E 00007AB0 HlinkUpdateStackItem
+         16   1F 00008230 OleSaveToStreamEx
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        4000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       14000 .text

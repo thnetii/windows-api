@@ -1,0 +1,63 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\KerbClientShared.dll
+
+File Type: DLL
+
+  Section contains the following exports for KerbClientShared.dll
+
+    00000000 characteristics
+    5C3A5201 time date stamp
+        0.00 version
+           1 ordinal base
+          34 number of functions
+          34 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00003D30 KerbClientAlloc
+          2    1 00005FE0 KerbClientBuildAsReqAuthenticator
+          3    2 00006270 KerbClientBuildEncryptedAuthData
+          4    3 000042F0 KerbClientBuildExplicitArmorKey
+          5    4 00004450 KerbClientBuildFastArmoredKdcRequest
+          6    5 00004960 KerbClientBuildFastChallenge
+          7    6 00001020 KerbClientBuildKeyList
+          8    7 00004C90 KerbClientBuildStrengthenedReplyKey
+          9    8 00004D60 KerbClientBuildTicketArmorKey
+         10    9 00006430 KerbClientComputeTgsChecksum
+         11    A 000068F0 KerbClientDecryptApReply
+         12    B 000069F0 KerbClientDecryptPacCredentials
+         13    C 00004E40 KerbClientDeriveFastChallengeKey
+         14    D 00003D50 KerbClientFree
+         15    E 00003FA0 KerbClientFreeStoredCred
+         16    F 00003D70 KerbClientFreeSupplementalCredentials
+         17   10 00006AF0 KerbClientPackApReply
+         18   11 000017A0 KerbClientPackAsn1Buffer
+         19   12 00003DE0 KerbClientSharedCleanup
+         20   13 00001A20 KerbClientSharedInit
+         21   14 00007EB0 KerbClientUnpackAsn1BufferVoid
+         22   15 00006CD0 KerbClientUnpackKdcReplyBody
+         23   16 00001C30 KerbClientUpdateSharedConfiguration
+         24   17 000066F0 KerbClientVerifyChecksum
+         25   18 00004E80 KerbClientVerifyEncryptedChallengePaData
+         26   19 00005030 KerbClientVerifyFastArmoredKdcReply
+         27   1A 00005740 KerbClientVerifyFastArmoredKerbError
+         28   1B 00005C00 KerbClientVerifyFastArmoredTgsReply
+         29   1C 000071C0 KerbDHCreateBCryptKey
+         30   1D 000074F0 KerbDHGetLegacyDHParameters
+         31   1E 000077F0 KerbDHGetLittleEndianPublicKey
+         32   1F 00007AD0 KerbDHGetSharedSecretFromCapiKeyBuffer
+         33   20 00007FF0 KerbKdcReplyContainsTgt
+         34   21 00008030 KerbPackKdcReplyWithEncryptedSessionKey
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        2000 .pdata
+        6000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       1B000 .text

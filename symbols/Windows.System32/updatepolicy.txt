@@ -1,0 +1,42 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\updatepolicy.dll
+
+File Type: DLL
+
+  Section contains the following exports for UpdatePolicy.dll
+
+    00000000 characteristics
+    C01384C6 time date stamp
+        0.00 version
+           1 ordinal base
+          13 number of functions
+          13 number of names
+
+    ordinal hint RVA      name
+
+         10    0 00004760 DllCanUnloadNow
+         11    1 00004780 DllGetClassObject
+         12    2 000048A0 DllRegisterServer
+         13    3 000049A0 DllUnregisterServer
+          1    4 000093D0 GetAutoUpdatePolicy
+          2    5 0000D540 GetEnterprisePolicyName
+          3    6 00009760 GetSkuUpdateManagementGroup
+          4    7 00009160 GetUpdatePolicyName
+          5    8 00008FB0 ReadPolicy
+          6    9 0000CCE0 ReadPolicyWithFallback
+          7    A 0000B3A0 ReleaseAutoUpdatePolicy
+          8    B 0000D8E0 ReleaseEnterprisePolicyValue
+          9    C 0000B350 ReleaseUpdatePolicyValue
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        2000 .pdata
+        D000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       21000 .text

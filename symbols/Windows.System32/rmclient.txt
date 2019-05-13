@@ -1,0 +1,162 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\rmclient.dll
+
+File Type: DLL
+
+  Section contains the following exports for RMCLIENT.dll
+
+    00000000 characteristics
+    9A11F21B time date stamp
+        0.00 version
+           1 ordinal base
+         133 number of functions
+         133 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00008710 CreateResourceManagerClientProxy
+          3    1 000082B0 CrmActivityAllocate
+          4    2 0000FFA0 CrmActivityFree
+          5    3 00006700 CrmActivityFreeWindowClosedReasons
+          6    4 00007A50 CrmActivityQueryWindowClosedReasons
+          7    5 00007DE0 CrmActivityRenew
+          8    6 00008AA0 CrmActivityRequest
+          9    7 0000FFE0 CrmActivityRequestAndWait
+         10    8 000021C0 CrmActivityStart
+         11    9 000021D0 CrmActivityStop
+         12    A 00008040 CrmActivityWindowClosedReasonSubscribe
+         13    B 0000FFF0 CrmActivityWindowClosedReasonUnsubscribe
+         14    C 00008140 CrmRegister
+         15    D 0000E1E0 CrmSubscribe
+         16    E 00010000 CrmUnregister
+         17    F 0000E1E0 CrmUnsubscribe
+         18   10 00007DE0 CrmWorkStart
+         19   11 00007DE0 CrmWorkStop
+          2   12 0000E550 DeleteResourceManagerClientProxy
+         20   13 00001470 DllCanUnloadNow
+         21   14 00006230 DllGetActivationFactory
+         22   15 0000C140 DllGetClassObject
+         23   16 00006D80 HamAddDependency
+         24   17 00006DD0 HamAddHostDependency
+         25   18 000054F0 HamCloseActivity
+         26   19 00005F10 HamCompleteExtendedExecution
+         27   1A 00007F60 HamConnectForDebugging
+         28   1B 00007200 HamConnectForExtendedExecution
+         29   1C 0000E940 HamConnectForFullTrust
+         30   1D 00007F00 HamConnectForServicing
+         31   1E 00007FE0 HamConnectForSessionState
+         32   1F 00007E80 HamConnectForStateChangeNotifications
+         33   20 00006AC0 HamConnectToServer
+         34   21 00005220 HamCreateActivity
+         35   22 00005250 HamCreateActivityEx
+         36   23 00005AB0 HamCreateActivityForProcess
+         37   24 00010040 HamCreateAutoRestartActivity
+         38   25 00005D00 HamCreateExtendedExecution
+         39   26 0000E9C0 HamDebugClosePackageHandle
+         40   27 0000EA20 HamDebugModeEnable
+         41   28 0000EA80 HamDebugOpenPackageHandle
+         42   29 0000EB40 HamDebugQueryPackageState
+         43   2A 0000EBB0 HamDebugSuspendPackage
+         44   2B 0000EC20 HamDebugTerminatePackage
+         45   2C 00006890 HamDisconnectForDebugging
+         46   2D 00006E70 HamDisconnectForExtendedExecution
+         47   2E 00006890 HamDisconnectForFullTrust
+         48   2F 00006890 HamDisconnectForServicing
+         49   30 00006890 HamDisconnectForSessionState
+         50   31 00006890 HamDisconnectForStateChangeNotifications
+         51   32 00006890 HamDisconnectFromServer
+         52   33 0000EC90 HamFullTrustClosePackageHandle
+         53   34 0000ECF0 HamFullTrustOpenPackageHandle
+         54   35 0000EDC0 HamFullTrustTerminatePackage
+         55   36 00002040 HamGetApplicationInterruptiveUIState
+         56   37 000079A0 HamGetApplicationStateForPsmKey
+         57   38 0000EE30 HamGetInterruptiveUIStateForAumid
+         58   39 0000EF60 HamGetPackageInterruptiveUIState
+         59   3A 0000F090 HamHostIdCreateSingleUse
+         60   3B 0000F150 HamHostIdFindOrCreate
+         61   3C 0000F210 HamHostIdInitializeKey
+         62   3D 0000F2E0 HamHostIdRetrieveDynamicId
+         63   3E 00006750 HamInitializeActivityAutoRestartProperties
+         64   3F 000067B0 HamInitializeActivityDynamicProperties
+         65   40 0000F3C0 HamIsHostBeingDebugged
+         66   41 00006A70 HamIsHostHamManaged
+         67   42 000040D0 HamPopulateActivityProperties
+         68   43 0000F4B0 HamPopulateActivityPropertiesByClass
+         69   44 00004270 HamQueryCallerTerminateReason
+         70   45 0000F520 HamQueryTaskCompletionsForTerminateGraph
+         71   46 0000F5B0 HamRemoveDependency
+         72   47 0000F620 HamRemoveHostDependency
+         73   48 0000F690 HamResetExternalResourcePriority
+         74   49 0000F700 HamServicingClosePackageHandle
+         75   4A 0000F760 HamServicingEnableServicing
+         76   4B 0000F7C0 HamServicingOpenPackageHandle
+         77   4C 0000F890 HamServicingQueryActiveAppsInPackage
+         78   4D 0000F940 HamServicingTerminatePackage
+         79   4E 0000F9B0 HamSessionStateLogoffSession
+         80   4F 0000FA10 HamSessionStateLogoffUser
+         81   50 0000FAA0 HamSetCommitProperties
+         82   51 0000FBA0 HamSetExternalResourcePriority
+         83   52 00007900 HamStartActivityAsync
+         84   53 00006E20 HamStartExtendedExecutionAsync
+         85   54 000078B0 HamStopActivity
+         86   55 00002020 HamTerminateActivityHost
+         87   56 00002150 HamTerminateActivityHostEx
+         88   57 00007840 HamTerminateHostOnProcessExit
+         89   58 0000FC10 HamTerminateIfSuspendedByProcess
+         90   59 0000FC80 HamTerminateSelf
+         91   5A 0000FCE0 HamTerminateSelfOnProcessExit
+         92   5B 00006840 HamTryEstimateRemainingQuiesceTime
+         93   5C 00007950 HamUpdateActivityProperties
+         94   5D 00001EC0 RmAccessCheck
+         95   5E 0000E6B0 RmAccessCheckOnSelf
+         96   5F 0000E1E0 RmAcquireResourceSet
+         97   60 00004D40 RmAcquireResourceSetEx
+         98   61 00001C10 RmAcquireResources
+         99   62 00006750 RmActivityImportanceInitialize
+        100   63 0000E1F0 RmActivityImportanceTakeMostImportant
+        101   64 00007B20 RmApplyResourceSet
+        102   65 0000E1E0 RmApplyResourceSetToHost
+        103   66 0000E6E0 RmAvailabilityCheck
+        104   67 00008490 RmConnectToResourceManager
+        105   68 0000E210 RmDisconnectFromResourceManager
+        106   69 0000C230 RmGameModeDisableForRegisteredProcess
+        107   6A 0000C2F0 RmGameModeDisableForRegisteredProcessById
+        108   6B 0000C3B0 RmGameModeGetLargestValidResourceRequest
+        109   6C 0000C470 RmGameModeInitializeResourceRequest
+        110   6D 0000C4B0 RmGameModeReenableForRegisteredProcess
+        111   6E 0000C570 RmGameModeReenableForRegisteredProcessById
+        112   6F 0000C630 RmGameModeRegisterPairedAuxiliaryProcess
+        113   70 0000C730 RmGameModeRegisterPairedAuxiliaryProcessById
+        114   71 0000C830 RmGameModeRegisterProcess
+        115   72 0000C920 RmGameModeRegisterProcessById
+        116   73 0000CA10 RmGameModeUnregisterProcess
+        117   74 0000CAD0 RmGameModeUnregisterProcessById
+        118   75 0000E760 RmGetNotification
+        119   76 0000E250 RmQueryHostMemoryLimitValues
+        120   77 00004FF0 RmRegisterActivityHostCallbacks
+        121   78 0000CB90 RmRegisterForGameMode
+        122   79 00001E10 RmRegisterResource
+        123   7A 0000E1E0 RmReleaseResourceSet
+        124   7B 000010A0 RmReleaseResourceSetEx
+        125   7C 00001CD0 RmReleaseResources
+        126   7D 0000E2F0 RmResourceLimitFlagsInitialize
+        127   7E 0000E300 RmResourceLimitsInitialize
+        128   7F 000063A0 RmResourceSetPropertiesInitialize
+        129   80 0000E340 RmSetHostLimit
+        130   81 0000E1E0 RmUnregisterActivityHost
+        131   82 00001250 RmUnregisterActivityHostCallbacks
+        132   83 0000CB90 RmUnregisterForGameMode
+        133   84 00007C60 RmUpdateResourceSetProperties
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        2000 .pdata
+        F000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       12000 .text

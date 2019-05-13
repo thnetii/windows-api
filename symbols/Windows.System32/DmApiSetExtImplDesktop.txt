@@ -1,0 +1,66 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\DmApiSetExtImplDesktop.dll
+
+File Type: DLL
+
+  Section contains the following exports for DMAPISETEXTIMPLDESKTOP.dll
+
+    00000000 characteristics
+    ECB1B043 time date stamp
+        0.00 version
+           1 ordinal base
+          37 number of functions
+          37 number of names
+
+    ordinal hint RVA      name
+
+          2    0 00007200 DMCSP_DevDetail_GetCommercializationOperator
+          3    1 00004290 DMCSP_DevDetail_GetDeviceHardwareData
+          4    2 00007460 DMCSP_DevDetail_GetDeviceName
+          5    3 00006A40 DMCSP_DevDetail_GetDeviceType
+          6    4 00006AB0 DMCSP_DevDetail_GetFwV
+          7    5 00006D00 DMCSP_DevDetail_GetHwV
+          8    6 00006DA0 DMCSP_DevDetail_GetLocalTimeString
+          9    7 00006D20 DMCSP_DevDetail_GetMobileID
+         10    8 00006A90 DMCSP_DevDetail_GetOEM
+         11    9 00006F40 DMCSP_DevDetail_GetOSPlatform
+         12    A 00007420 DMCSP_DevDetail_GetProcessorArchitecture
+         13    B 00006F60 DMCSP_DevDetail_GetProcessorType
+         14    C 00006FA0 DMCSP_DevDetail_GetRadioSwV
+         15    D 000071A0 DMCSP_DevDetail_GetResolution
+         16    E 00006B00 DMCSP_DevDetail_GetSwV
+         17    F 000074C0 DMCSP_DevDetail_GetVoLTEServiceSetting
+         18   10 00007490 DMCSP_DevDetail_GetWLANMACAddress
+         19   11 00007480 DMCSP_DevDetail_SetDeviceName
+         20   12 000069B0 DMCSP_DevInfo_GetDmV
+         21   13 000064F0 DMCSP_DevInfo_GetHwDevID
+         22   14 000069D0 DMCSP_DevInfo_GetLanguage
+         23   15 000068F0 DMCSP_DevInfo_GetManufacturer
+         24   16 00006960 DMCSP_DevInfo_GetModel
+         25   17 00003510 DMCSP_DeviceStatus_IsBitlockerProtected
+         26   18 00004200 DMDiag_Export_DiagnosticsLog
+         27   19 00004130 DMDiag_Filter_Diagnostics_Events_From_AutoLog
+          1   1A 00006090 DMLegacy_UnActivateLOB
+         28   1B 000074D0 DMUI_DismissNotification
+         29   1C 00004130 DMUI_DisplayConfigurationResult
+         30   1D 00005EC0 DMUI_GetUserEditFieldInput
+         31   1E 00005DF0 DMUI_GetUserPermission
+         32   1F 000074D0 DMUI_GetUserPermissionAsync
+         33   20 000074D0 DMUI_InformUser
+         34   21 000074D0 DMUI_IsAbortSessionRequested
+         35   22 000074D0 DMUI_SyncMLAlertGetResults
+         36   23 000074D0 DMUI_SyncMLAlertGetStatusCode
+         37   24 000074D0 DMUI_SyncMLAlertShowUI
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        5000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        9000 .text

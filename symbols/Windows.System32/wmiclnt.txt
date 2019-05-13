@@ -1,0 +1,58 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\wmiclnt.dll
+
+File Type: DLL
+
+  Section contains the following exports for WMICLNT.dll
+
+    00000000 characteristics
+    2641E575 time date stamp
+        0.00 version
+           1 ordinal base
+          29 number of functions
+          29 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00003420 WmiCloseBlock
+          2    1 00004D20 WmiDevInstToInstanceNameA
+          3    2 00004E10 WmiDevInstToInstanceNameW
+          4    3 00004EF0 WmiEnumerateGuids
+          5    4 000050A0 WmiExecuteMethodA
+          6    5 000035E0 WmiExecuteMethodW
+          7    6 00005190 WmiFileHandleToInstanceNameA
+          8    7 000053E0 WmiFileHandleToInstanceNameW
+          9    8 00003590 WmiFreeBuffer
+         10    9 000075F0 WmiMofEnumerateResourcesA
+         11    A 00002660 WmiMofEnumerateResourcesW
+         12    B 00005600 WmiNotificationRegistrationA
+         13    C 00001270 WmiNotificationRegistrationW
+         14    D 000020C0 WmiOpenBlock
+         15    E 00005680 WmiQueryAllDataA
+         16    F 000056F0 WmiQueryAllDataMultipleA
+         17   10 00005770 WmiQueryAllDataMultipleW
+         18   11 00001C00 WmiQueryAllDataW
+         19   12 00005980 WmiQueryGuidInformation
+         20   13 00005A30 WmiQuerySingleInstanceA
+         21   14 00005B10 WmiQuerySingleInstanceMultipleA
+         22   15 00005CA0 WmiQuerySingleInstanceMultipleW
+         23   16 000039F0 WmiQuerySingleInstanceW
+         24   17 00005EE0 WmiReceiveNotificationsA
+         25   18 00005F50 WmiReceiveNotificationsW
+         26   19 00005FC0 WmiSetSingleInstanceA
+         27   1A 00006090 WmiSetSingleInstanceW
+         28   1B 00006280 WmiSetSingleItemA
+         29   1C 00006350 WmiSetSingleItemW
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        3000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        8000 .text

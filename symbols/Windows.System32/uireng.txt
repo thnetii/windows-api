@@ -1,0 +1,38 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\uireng.dll
+
+File Type: DLL
+
+  Section contains the following exports for uireng.dll
+
+    00000000 characteristics
+    F4876F3F time date stamp
+        0.00 version
+           1 ordinal base
+          10 number of functions
+          10 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0000C540 UirGetScreenComment
+          2    1 0000BFA0 UirInitializeEngine
+          3    2 0000C5D0 UirIsRecordingActive
+          4    3 0000C680 UirOutCreateOutputFile
+          5    4 0000C2F0 UirPauseRecordingSession
+          6    5 0000C380 UirResumeRecordingSession
+          7    6 0000C150 UirStartRecordingSession
+          8    7 0000C240 UirStopRecordingSession
+          9    8 0000C0A0 UirUninitializeEngine
+         10    9 0000C410 UirUpdateRecordingSession
+
+  Summary
+
+        3000 .data
+        2000 .pdata
+        9000 .rdata
+        1000 .reloc
+       16000 .rsrc
+       25000 .text

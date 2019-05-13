@@ -1,0 +1,47 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\Faultrep.dll
+
+File Type: DLL
+
+  Section contains the following exports for faultrep.dll
+
+    00000000 characteristics
+    15FE4317 time date stamp
+        0.00 version
+           1 ordinal base
+          18 number of functions
+          16 number of names
+
+    ordinal hint RVA      name
+
+          7    0 0000A4F0 AddERExcludedApplicationA
+          8    1 0000A4C0 AddERExcludedApplicationW
+          3    2 00009570 BasepReportFault
+          9    3 00009090 CancelHangReporting
+          4    4 000095B0 CheckForReadOnlyResourceFilter
+          5    5 00008990 CheckPerUserCrossProcessThrottle
+         10    6 000043C0 DllCanUnloadNow
+         11    7 00004400 DllGetClassObject
+         12    8 00008FE0 ReportCoreHang
+         13    9 0000A480 ReportFault
+         14    A 00008F30 ReportHang
+          6    B 00008A20 UpdatePerUserLastCrossProcessCollectionTime
+         15    C 00009020 WerReportHang
+         16    D 00016E20 WerpGetDebugger
+         17    E 00009F70 WerpInitiateCrashReporting
+         18    F 000171F0 WerpLaunchAeDebug
+          1      00008F60 [NONAME]
+          2      00008FA0 [NONAME]
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        3000 .pdata
+       15000 .rdata
+        1000 .reloc
+       14000 .rsrc
+       40000 .text

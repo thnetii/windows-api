@@ -1,0 +1,55 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\credui.dll
+
+File Type: DLL
+
+  Section contains the following exports for credui.dll
+
+    00000000 characteristics
+    991BE34B time date stamp
+        0.00 version
+           1 ordinal base
+          26 number of functions
+          26 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00003D60 CredPackAuthenticationBufferA
+          2    1 00003D80 CredPackAuthenticationBufferW
+          3    2 00002670 CredUICmdLinePromptForCredentialsA
+          4    3 00002710 CredUICmdLinePromptForCredentialsW
+          5    4 000027B0 CredUIConfirmCredentialsA
+          6    5 00002800 CredUIConfirmCredentialsW
+          7    6 00002850 CredUIInitControls
+          8    7 00003E50 CredUIParseUserNameA
+          9    8 00003F80 CredUIParseUserNameW
+         10    9 00002880 CredUIPromptForCredentialsA
+         11    A 00002930 CredUIPromptForCredentialsW
+         12    B 000029E0 CredUIPromptForWindowsCredentialsA
+         13    C 00002A80 CredUIPromptForWindowsCredentialsW
+         14    D 00002B20 CredUIPromptForWindowsCredentialsWorker
+         15    E 00003FD0 CredUIReadSSOCredA
+         16    F 00004190 CredUIReadSSOCredW
+         17   10 000042C0 CredUIStoreSSOCredA
+         18   11 00004400 CredUIStoreSSOCredW
+         19   12 00003D60 CredUnPackAuthenticationBufferA
+         20   13 000045E0 CredUnPackAuthenticationBufferW
+         21   14 00005CF0 SspiGetCredUIContext
+         22   15 00005EE0 SspiIsPromptingNeeded
+         23   16 00006010 SspiPromptForCredentialsA
+         24   17 00006170 SspiPromptForCredentialsW
+         25   18 00006780 SspiUnmarshalCredUIContext
+         26   19 00006A90 SspiUpdateCredentials
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        3000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        8000 .text

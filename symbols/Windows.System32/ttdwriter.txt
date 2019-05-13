@@ -1,0 +1,45 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\ttdwriter.dll
+
+File Type: DLL
+
+  Section contains the following exports for TTDWriter.dll
+
+    00000000 characteristics
+    419E89F8 time date stamp
+        0.00 version
+           1 ordinal base
+          17 number of functions
+          17 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00002750 AddMemoryRegionToIgnore
+          2    1 0000B350 InitializeNirvanaClient
+          3    2 0000D7D0 NirvMain
+          4    3 0000E9D0 OpenWriter
+          5    4 0000EEF0 TtdWriterAddCustomEvent
+          6    5 0000EEA0 TtdWriterDumpHeaps
+          7    6 0000EE90 TtdWriterDumpModuleData
+          8    7 0000EE80 TtdWriterDumpSnapshot
+          9    8 0000EE70 TtdWriterGetFileName
+         10    9 0000E8F0 TtdWriterGetState
+         11    A 0000EF10 TtdWriterGetThrottleState
+         12    B 0000EE60 TtdWriterRelease
+         13    C 0000E8C0 TtdWriterResetThrottle
+         14    D 0000E8E0 TtdWriterResumeRecording
+         15    E 0000EF00 TtdWriterStartRecordingCurrentThread
+         16    F 0000E840 TtdWriterStopRecordingCurrentThread
+         17   10 0000E8D0 TtdWriterTryPauseRecording
+
+  Summary
+
+      204000 .data
+        3000 .pdata
+       12000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       36000 .text

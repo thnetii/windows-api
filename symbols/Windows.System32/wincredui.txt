@@ -1,0 +1,43 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\wincredui.dll
+
+File Type: DLL
+
+  Section contains the following exports for wincredui.dll
+
+    00000000 characteristics
+    74E849C0 time date stamp
+        0.00 version
+           1 ordinal base
+          14 number of functions
+          14 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0000BF40 CredUIInternalCmdLinePromptForCredentialsA
+          2    1 0000BED0 CredUIInternalCmdLinePromptForCredentialsW
+          3    2 0000BE40 CredUIInternalConfirmCredentialsA
+          4    3 0000BE20 CredUIInternalConfirmCredentialsW
+          5    4 0000B9A0 CredUIInternalInitControls
+          6    5 00009F70 CredUIInternalPromptForCredentialsA
+          7    6 00009EA0 CredUIInternalPromptForCredentialsW
+          8    7 0000B990 CredUIInternalPromptForWindowsCredentialsA
+          9    8 0000B830 CredUIInternalPromptForWindowsCredentialsW
+         10    9 0000AE60 CredUIInternalPromptForWindowsCredentialsWorker
+         11    A 0000BB80 DllCanUnloadNow
+         12    B 0000BBA0 DllGetClassObject
+         13    C 0000BC70 DllRegisterServer
+         14    D 0000BDB0 DllUnregisterServer
+
+  Summary
+
+        5000 .data
+        1000 .didat
+        2000 .pdata
+        9000 .rdata
+        1000 .reloc
+        7000 .rsrc
+       20000 .text

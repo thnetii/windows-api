@@ -1,0 +1,56 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\WSManMigrationPlugin.dll
+
+File Type: DLL
+
+  Section contains the following exports for WSManMigrationPlugin.dll
+
+    00000000 characteristics
+    2693D739 time date stamp
+        0.00 version
+           1 ordinal base
+          27 number of functions
+          27 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00004EB0 ??0?$SafeMap@VKey@Locale@@KV?$SafeMap_Iterator@VKey@Locale@@K@@@@QEAA@XZ
+          2    1 00005780 ??0?$SafeMap_Iterator@VKey@Locale@@K@@QEAA@AEAV?$SafeMap@VKey@Locale@@KV?$SafeMap_Iterator@VKey@Locale@@K@@@@_N@Z
+          3    2 00005CF0 ??0?$SafeMap_Lock@VKey@Locale@@KV?$SafeMap_Iterator@VKey@Locale@@K@@@@QEAA@AEBV?$SafeMap@VKey@Locale@@KV?$SafeMap_Iterator@VKey@Locale@@K@@@@_N@Z
+          4    3 00004E50 ??1?$SafeMap@VKey@Locale@@KV?$SafeMap_Iterator@VKey@Locale@@K@@@@QEAA@XZ
+          5    4 000056F0 ??1?$SafeMap_Iterator@VKey@Locale@@K@@QEAA@XZ
+          6    5 00005CC0 ??1?$SafeMap_Lock@VKey@Locale@@KV?$SafeMap_Iterator@VKey@Locale@@K@@@@QEAA@XZ
+          7    6 00004250 ??1CWSManCriticalSectionWithConditionVar@@QEAA@XZ
+          8    7 0000C540 ??_7?$SafeMap@VKey@Locale@@KV?$SafeMap_Iterator@VKey@Locale@@K@@@@6B@
+          9    8 00001D40 ?Acquire@?$SafeMap@VKey@Locale@@KV?$SafeMap_Iterator@VKey@Locale@@K@@@@UEBAXXZ
+         10    9 000060D0 ?Acquire@?$SafeMap_Lock@VKey@Locale@@KV?$SafeMap_Iterator@VKey@Locale@@K@@@@QEAAXXZ
+         11    A 00005CB0 ?Acquired@?$SafeMap_Lock@VKey@Locale@@KV?$SafeMap_Iterator@VKey@Locale@@K@@@@QEAA_NXZ
+         12    B 000056D0 ?AsReference@?$SafeMap@VKey@Locale@@KV?$SafeMap_Iterator@VKey@Locale@@K@@@@QEAAAEAV1@XZ
+         13    C 000061F0 ?Data@?$SafeMap_Iterator@VKey@Locale@@K@@IEBAAEAV?$STLMap@VKey@Locale@@K@@XZ
+         14    D 00004CE0 ?DeInitialize@?$SafeMap@VKey@Locale@@KV?$SafeMap_Iterator@VKey@Locale@@K@@@@UEAA_NAEAVIRequestContext@@@Z
+         15    E 00004240 ?GetInitError@CWSManCriticalSection@@QEBAKXZ
+         16    F 00005D90 ?GetMap@?$SafeMap_Iterator@VKey@Locale@@K@@QEBAAEAV?$SafeMap@VKey@Locale@@KV?$SafeMap_Iterator@VKey@Locale@@K@@@@XZ
+         17   10 00005D90 ?GetMap@?$SafeMap_Lock@VKey@Locale@@KV?$SafeMap_Iterator@VKey@Locale@@K@@@@QEBAAEBV?$SafeMap@VKey@Locale@@KV?$SafeMap_Iterator@VKey@Locale@@K@@@@XZ
+         18   11 00004D60 ?Initialize@?$SafeMap@VKey@Locale@@KV?$SafeMap_Iterator@VKey@Locale@@K@@@@UEAA_NAEAVIRequestContext@@@Z
+         19   12 000056E0 ?IsValid@?$SafeMap_Iterator@VKey@Locale@@K@@QEBA_NXZ
+         20   13 00001D40 ?Release@?$SafeMap@VKey@Locale@@KV?$SafeMap_Iterator@VKey@Locale@@K@@@@UEBAXXZ
+         21   14 00005D30 ?Reset@?$SafeMap_Iterator@VKey@Locale@@K@@QEAAXXZ
+         22   15 00006130 ?SkipOrphans@?$SafeMap_Iterator@VKey@Locale@@K@@IEAAXXZ
+         23   16 00001640 DllCanUnloadNow
+         24   17 00001300 DllGetClassObject
+         25   18 00001670 DllMain
+         26   19 00001430 DllRegisterServer
+         27   1A 00001540 DllUnregisterServer
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        6000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        B000 .text

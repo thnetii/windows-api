@@ -1,0 +1,104 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\scecli.dll
+
+File Type: DLL
+
+  Section contains the following exports for SCECLI.dll
+
+    00000000 characteristics
+    E114253C time date stamp
+        0.00 version
+           1 ordinal base
+          75 number of functions
+          75 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0000B2A0 ConvertSecurityDescriptorToText
+          2    1 0001DDF0 DeltaNotify
+         12    2 00025FC0 DllRegisterServer
+         13    3 00026510 DllUnregisterServer
+          3    4 000012A0 InitializeChangeNotify
+         14    5 0000A900 SceAddToNameList
+         15    6 0000A920 SceAddToNameStatusList
+         16    7 0000A930 SceAddToObjectList
+         17    8 00023410 SceAnalyzeSystem
+         18    9 00016F10 SceAppendSecurityProfileInfo
+         19    A 000236F0 SceBrowseDatabaseTable
+         20    B 000238C0 SceCloseProfile
+         21    C 00023970 SceCommitTransaction
+         22    D 0000A960 SceCompareNameList
+         23    E 0000AA20 SceCompareSecurityDescriptors
+          4    F 00026750 SceConfigureConvertedFileSecurity
+         24   10 000239E0 SceConfigureSystem
+         25   11 00023BB0 SceCopyBaseProfile
+         26   12 0000AAA0 SceCreateDirectory
+         27   13 000298A0 SceDcPromoCreateGPOsInSysvol
+         28   14 000298D0 SceDcPromoCreateGPOsInSysvolEx
+         29   15 00029B60 SceDcPromoteSecurity
+         30   16 00029B80 SceDcPromoteSecurityEx
+         31   17 00029C90 SceEnforceSecurityPolicyPropagation
+         32   18 0000AAB0 SceEnumerateServices
+         33   19 00008970 SceFreeMemory
+         34   1A 00008EB0 SceFreeProfileMemory
+          5   1B 0001A2C0 SceGenerateGroupPolicy
+         35   1C 00023FB0 SceGenerateRollback
+         36   1D 000241B0 SceGetAnalysisAreaSummary
+         37   1E 0001DB70 SceGetAreas
+         38   1F 00024230 SceGetDatabaseSetting
+         39   20 00024350 SceGetDbTime
+         40   21 00024500 SceGetObjectChildren
+         41   22 00024610 SceGetObjectSecurity
+         42   23 000246F0 SceGetScpProfileDescription
+         43   24 00024770 SceGetSecurityProfileInfo
+         44   25 00024A70 SceGetServerProductType
+         45   26 00024B30 SceGetTimeStamp
+         46   27 00007E40 SceIsSystemDatabase
+         47   28 0000AD30 SceLookupPrivRightName
+          6   29 0001DF40 SceNotifyPolicyDelta
+          7   2A 0001DFF0 SceOpenPolicy
+         48   2B 00024ED0 SceOpenProfile
+          8   2C 0001B4C0 SceProcessSecurityPolicyGPO
+          9   2D 0001B6B0 SceProcessSecurityPolicyGPOEx
+         49   2E 00025100 SceRegisterRegValues
+         50   2F 00025540 SceRollbackTransaction
+         51   30 000255B0 SceSetDatabaseSetting
+         52   31 00029CA0 SceSetupBackupSecurity
+         53   32 0002A530 SceSetupConfigureServices
+         54   33 0002A660 SceSetupGenerateTemplate
+         55   34 0002A7F0 SceSetupMoveSecurityFile
+         56   35 0002A920 SceSetupRootSecurity
+         57   36 0002B270 SceSetupSystemByInfName
+         58   37 0002B970 SceSetupUnwindSecurityFile
+         59   38 0002BAA0 SceSetupUpdateSecurityFile
+         60   39 0002BB90 SceSetupUpdateSecurityKey
+         61   3A 0002BF00 SceSetupUpdateSecurityService
+         62   3B 00025670 SceStartTransaction
+         63   3C 0002C0D0 SceSvcConvertSDToText
+         64   3D 0002C0F0 SceSvcConvertTextToSD
+         65   3E 0002C110 SceSvcFree
+         66   3F 000129E0 SceSvcGetInformationTemplate
+         67   40 0002C120 SceSvcQueryInfo
+         68   41 0002C340 SceSvcSetInfo
+         69   42 00016F40 SceSvcSetInformationTemplate
+         70   43 000256E0 SceSvcUpdateInfo
+         10   44 00026C00 SceSysPrep
+         11   45 00026DD0 SceSysPrepOffline
+         71   46 00025760 SceUpdateObjectInfo
+         72   47 00025990 SceUpdateSecurityProfile
+         73   48 0002C530 SceWrapperExportSecurityProfile
+         74   49 0002C5B0 SceWrapperImportSecurityProfile
+         75   4A 000170F0 SceWriteSecurityProfileInfo
+
+  Summary
+
+        3000 .data
+        1000 .didat
+        2000 .pdata
+       14000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       2C000 .text

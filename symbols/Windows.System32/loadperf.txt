@@ -1,0 +1,43 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\loadperf.dll
+
+File Type: DLL
+
+  Section contains the following exports for loadperf.dll
+
+    00000000 characteristics
+    4E6515AD time date stamp
+        0.00 version
+           1 ordinal base
+          14 number of functions
+          14 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00004E60 BackupPerfRegistryToFileW
+          2    1 00013B90 InstallPerfDllA
+          3    2 00001130 InstallPerfDllW
+          4    3 00013C30 LoadPerfCounterTextStringsA
+          5    4 00001010 LoadPerfCounterTextStringsW
+          6    5 00016720 LpAcquireInstallationMutex
+          7    6 00016770 LpReleaseInstallationMutex
+          8    7 00015C60 RestorePerfRegistryFromFileW
+          9    8 00013CE0 SetServiceAsTrustedA
+         10    9 00013D90 SetServiceAsTrustedW
+         11    A 000149D0 UnloadPerfCounterTextStringsA
+         12    B 00001350 UnloadPerfCounterTextStringsW
+         13    C 000141F0 UpdatePerfNameFilesA
+         14    D 00014450 UpdatePerfNameFilesW
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        1000 .pdata
+        5000 .rdata
+        1000 .reloc
+        4000 .rsrc
+       16000 .text

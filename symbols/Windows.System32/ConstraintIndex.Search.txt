@@ -1,0 +1,45 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\ConstraintIndex.Search.dll
+
+File Type: DLL
+
+  Section contains the following exports for ConstraintIndex.Search.dll
+
+    00000000 characteristics
+    FFFFFFFF time date stamp
+        0.00 version
+           1 ordinal base
+          16 number of functions
+          16 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00071790 BuildConstraintIndex
+          2    1 000717B0 BuildConstraintIndexInMemory
+          3    2 000713D0 BuildFilterTrie
+          4    3 00071570 BuildFilterTrieInMemory
+          5    4 00071A20 CSGGetBestEntityScore
+          6    5 00070DE0 CreateCSGSuggest
+          7    6 00070E50 CreateCSGSuggestInMemory
+          8    7 00071820 CreateConstraintIndex
+          9    8 00071880 CreateConstraintIndexInMemory
+         10    9 00070EC0 DeleteCSGSuggest
+         11    A 000718E0 DeleteConstraintIndex
+         12    B 0011DCD0 DllCanUnloadNow
+         13    C 0011DCF0 DllGetActivationFactory
+         14    D 00071930 GetAttributeRank
+         15    E 00070F40 GetEntitySuggestions
+         16    F 00071900 GetSegmentRank
+
+  Summary
+
+        F000 .data
+        1000 .didat
+        E000 .pdata
+       61000 .rdata
+        3000 .reloc
+        1000 .rsrc
+      12D000 .text

@@ -1,0 +1,57 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\winipcsecproc.dll
+
+File Type: DLL
+
+  Section contains the following exports for client.dll
+
+    00000000 characteristics
+    AF860A43 time date stamp
+        0.00 version
+           1 ordinal base
+          28 number of functions
+          28 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00003D20 IpcSPAttest
+          2    1 00003ED0 IpcSPBindLicense
+          3    2 00004130 IpcSPCheckEnvironmentSecurity
+          4    3 000040A0 IpcSPCloseHandle
+          5    4 00004140 IpcSPCommit
+          6    5 00004150 IpcSPCreateDecryptor
+          7    6 00004310 IpcSPCreateEnablingPrincipal
+          8    7 00004520 IpcSPCreateEncryptor
+          9    8 00005400 IpcSPCreateMachineCerts
+         10    9 00004140 IpcSPCreatePCE
+         11    A 000046E0 IpcSPCreateSecurityProcessor
+         12    B 00004940 IpcSPDecrypt
+         13    C 00004140 IpcSPDecryptFinal
+         14    D 00004140 IpcSPDecryptUpdate
+         15    E 00004AD0 IpcSPDecryptWithRac
+         16    F 000058B0 IpcSPEnableAndEncrypt
+         17   10 00004C60 IpcSPEnablePublishingLicense
+         18   11 00004D20 IpcSPEncrypt
+         19   12 00004140 IpcSPEncryptFinal
+         20   13 00004140 IpcSPEncryptUpdate
+         21   14 00006010 IpcSPGetBoundRightKey
+         22   15 00004EB0 IpcSPGetCurrentTime
+         23   16 00005020 IpcSPGetInfo
+         24   17 00005690 IpcSPGetProcAddress
+         25   18 00003C60 IpcSPInitialize
+         26   19 00005F60 IpcSPIsActivated
+         27   1A 000054B0 IpcSPLoadLibrary
+         28   1B 00005250 IpcSPSign
+
+  Summary
+
+       3B000 .data
+        1000 .didat
+        7000 .pdata
+       2E000 .rdata
+        2000 .reloc
+        1000 .rsrc
+       A4000 .text

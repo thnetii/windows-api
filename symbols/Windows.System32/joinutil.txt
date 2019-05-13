@@ -1,0 +1,59 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\joinutil.dll
+
+File Type: DLL
+
+  Section contains the following exports for JoinUtil.dll
+
+    00000000 characteristics
+    50BEBB9C time date stamp
+        0.00 version
+           1 ordinal base
+          30 number of functions
+          30 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00004100 NetpAvoidNetlogonSpnSet
+          2    1 00002120 NetpClearFullJoinState
+          3    2 00003F70 NetpCompatibilityMode
+          4    3 00003220 NetpControlServices
+          5    4 00003F80 NetpDNSNameResolutionRequired
+          6    5 000046A0 NetpDoDomainJoinLicensingCheck
+          7    6 00003850 NetpFreeJoinStateContents
+          8    7 00002DC0 NetpGenerateDefaultPassword
+          9    8 000012F0 NetpGetLsaHandle
+         10    9 00002850 NetpGetLsaMachineAccountInfo
+         11    A 00001400 NetpGetLsaPrimaryDomain
+         12    B 00003A00 NetpHandleJoinedStateInfo
+         13    C 000016B0 NetpLoadFullJoinState
+         14    D 00003D40 NetpLoadParameters
+         15    E 000013D0 NetpLsaOpenSecret
+         16    F 00002E90 NetpManageLocalGroups
+         17   10 00002970 NetpManageMachineSecret
+         18   11 00002BE0 NetpManageMachineSecret2
+         19   12 00003B80 NetpMarkLastFullJoinAttempt
+         20   13 00003460 NetpQueryService
+         21   14 000045F0 NetpRemoveInitialDcRecord
+         22   15 00002170 NetpSaveFullJoinStateInternal
+         23   16 000013B0 NetpSetLsaHandle
+         24   17 000028E0 NetpSetLsaMachineAccountInfo
+         25   18 00002750 NetpSetLsaPrimaryDomain
+         26   19 00004040 NetpSetWinlogonCAD
+         27   1A 00003610 NetpStopService
+         28   1B 00004580 NetpStoreInitialDcRecord
+         29   1C 000041B0 NetpStoreInitialDcRecordEx
+         30   1D 00003F90 NetpUpdateW32timeConfig
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        A000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       1B000 .text

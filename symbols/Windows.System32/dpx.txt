@@ -1,0 +1,40 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\dpx.dll
+
+File Type: DLL
+
+  Section contains the following exports for dpx.dll
+
+    00000000 characteristics
+    386F58BE time date stamp
+        0.00 version
+           1 ordinal base
+          11 number of functions
+          11 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001EA0 DpxCheckJobExists
+          2    1 00001EB0 DpxCheckJobExistsEx
+          3    2 00001E80 DpxDeleteJob
+          4    3 00001E90 DpxDeleteJobEx
+          5    4 00001DC0 DpxFreeMemory
+          6    5 00001DE0 DpxNewJob
+          7    6 00001E10 DpxNewJobEx
+          8    7 00001E30 DpxRestoreJob
+          9    8 00001E60 DpxRestoreJobEx
+         10    9 00001EC0 DpxRestoreOrNewJob
+         11    A 00001EF0 DpxRestoreOrNewJobEx
+
+  Summary
+
+        5000 .data
+        1000 .didat
+        5000 .pdata
+       26000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       72000 .text

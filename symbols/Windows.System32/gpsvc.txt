@@ -1,0 +1,41 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\gpsvc.dll
+
+File Type: DLL
+
+  Section contains the following exports for GPSVC.dll
+
+    00000000 characteristics
+    669A72C1 time date stamp
+        0.00 version
+         106 ordinal base
+          12 number of functions
+          11 number of names
+
+    ordinal hint RVA      name
+
+        109    0 00090E00 DllCanUnloadNow
+        110    1 00090E30 DllGetClassObject
+        111    2 000665E0 GenerateRsopPolicy
+        107    3 0000C480 GroupPolicyClientServiceMain
+        112    4 00070940 ProcessGroupPolicyCompletedExInternal
+        113    5 00071880 ProcessGroupPolicyCompletedInternal
+        114    6 000939F0 RsopAccessCheckByTypeInternal
+        115    7 00093D30 RsopFileAccessCheckInternal
+        116    8 000940A0 RsopResetPolicySettingStatusInternal
+        117    9 00094490 RsopSetPolicySettingStatusInternal
+        108    A 00020340 SvchostPushServiceGlobals
+        106      00093F80 [NONAME]
+
+  Summary
+
+        3000 .data
+        1000 .didat
+        5000 .pdata
+       6C000 .rdata
+        1000 .reloc
+        E000 .rsrc
+       B9000 .text

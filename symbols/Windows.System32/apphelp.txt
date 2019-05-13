@@ -1,0 +1,264 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\apphelp.dll
+
+File Type: DLL
+
+  Section contains the following exports for apphelp.dll
+
+    00000000 characteristics
+    107F0429 time date stamp
+        0.00 version
+          19 ordinal base
+         236 number of functions
+         220 number of names
+
+    ordinal hint RVA      name
+
+         35    0 000229C0 AllowPermLayer
+         36    1 0003E080 ApphelpCheckExe
+         37    2 000210A0 ApphelpCheckIME
+         38    3 000210F0 ApphelpCheckInstallShieldPackage
+         39    4 0003E0B0 ApphelpCheckModule
+         40    5 00021320 ApphelpCheckMsiPackage
+         41    6 0003E280 ApphelpCheckRunApp
+         42    7 0003E310 ApphelpCheckRunAppEx
+         43    8 0000FD20 ApphelpCheckShellObject
+         44    9 0003F1C0 ApphelpChpeModSettingsFromQueryResult
+         45    A 00010500 ApphelpCreateAppcompatData
+         46    B 00021600 ApphelpFixMsiPackage
+         47    C 000218D0 ApphelpFixMsiPackageExe
+         48    D 00022BE0 ApphelpFreeFileAttributes
+         49    E 00022BF0 ApphelpGetFileAttributes
+         50    F 00021B70 ApphelpGetMsiProperties
+         51   10 00021C30 ApphelpGetNTVDMInfo
+         52   11 00023660 ApphelpGetShimDebugLevel
+         53   12 00021D80 ApphelpIsPortMonAllowed
+         54   13 0003E700 ApphelpParseModuleData
+         55   14 0003E830 ApphelpQueryModuleData
+         56   15 0003E860 ApphelpQueryModuleDataEx
+         57   16 00022C00 ApphelpShowDialog
+         58   17 00022AB0 ApphelpUpdateCacheEntry
+         59   18 00022AE0 GetPermLayers
+         60   19 000404A0 SE_AddHookset
+         61   1A 00040610 SE_CALLBACK_AddHook
+         62   1B 000406C0 SE_CALLBACK_Lookup
+         63   1C 00040740 SE_COM_AddHook
+         64   1D 000407D0 SE_COM_AddServer
+         65   1E 00040880 SE_COM_HookInterface
+         66   1F 00040910 SE_COM_HookObject
+         67   20 000409A0 SE_COM_Lookup
+         68   21 0000CCB0 SE_DllLoaded
+         69   22 00040A10 SE_DllUnloaded
+         70   23 00040A60 SE_DynamicShim
+         71   24 00040D50 SE_GetHookAPIs
+         72   25 00040EF0 SE_GetMaxShimCount
+         73   26 000115F0 SE_GetProcAddressForCaller
+         74   27 00040F00 SE_GetProcAddressIgnoreIncExc
+         75   28 00040F80 SE_GetProcAddressLoad
+         76   29 00040FD0 SE_GetShimCount
+         77   2A 00012650 SE_GetShimId
+         78   2B 000106B0 SE_InitializeEngine
+         79   2C 00013BD0 SE_InstallAfterInit
+         80   2D 000134F0 SE_InstallBeforeInit
+         81   2E 000410E0 SE_IsShimDll
+         82   2F 00013B30 SE_LdrEntryRemoved
+         83   30 00012EC0 SE_LdrResolveDllName
+         84   31 00041140 SE_LookupAddress
+         85   32 00041240 SE_LookupCaller
+         86   33 000413D0 SE_ProcessDying
+         87   34 00012890 SE_ShimDPF
+         88   35 00014170 SE_ShimDllLoaded
+         89   36 00041460 SE_WINRT_AddHook
+         90   37 00041580 SE_WINRT_HookObject
+         91   38 00003A80 SdbAddLayerTagRefToQuery
+         92   39 0002F1E0 SdbApphelpNotify
+         93   3A 0002F260 SdbApphelpNotifyEx
+         94   3B 0002F2E0 SdbApphelpNotifyEx2
+         95   3C 0002AED0 SdbBeginWriteListTag
+         96   3D 00032890 SdbBuildCompatEnvVariables
+         97   3E 0002F490 SdbCloseApphelpInformation
+         98   3F 0000ED00 SdbCloseDatabase
+         99   40 0002B1C0 SdbCloseDatabaseWrite
+        100   41 00034070 SdbCloseLocalDatabase
+        101   42 0002B1D0 SdbCommitIndexes
+        102   43 0002B290 SdbCreateDatabase
+        103   44 0002F540 SdbCreateHelpCenterURL
+        104   45 00034990 SdbCreateMsiTransformFile
+        105   46 0002B3E0 SdbDeclareIndex
+        106   47 00032BF0 SdbDeletePermLayerKeys
+        107   48 000148D0 SdbDumpSearchPathPartCaches
+        108   49 0002B7A0 SdbEndWriteListTag
+        109   4A 00034AE0 SdbEnumMsiTransforms
+        110   4B 0002FBD0 SdbEscapeApphelpURL
+        111   4C 00034C90 SdbFindCustomActionForPackage
+        112   4D 000359D0 SdbFindFirstDWORDIndexedTag
+        113   4E 00035AA0 SdbFindFirstGUIDIndexedTag
+        114   4F 00034D70 SdbFindFirstMsiPackage
+        115   50 00034DE0 SdbFindFirstMsiPackage_Str
+        116   51 0000B580 SdbFindFirstNamedTag
+        117   52 00005CD0 SdbFindFirstStringIndexedTag
+        118   53 0000B870 SdbFindFirstTag
+        119   54 0000A430 SdbFindFirstTagRef
+        120   55 00034E70 SdbFindMsiPackageByID
+        121   56 00035BB0 SdbFindNextDWORDIndexedTag
+        122   57 00035BF0 SdbFindNextGUIDIndexedTag
+        123   58 00034F00 SdbFindNextMsiPackage
+        124   59 00035C30 SdbFindNextStringIndexedTag
+        125   5A 0000B320 SdbFindNextTag
+        126   5B 00008B90 SdbFindNextTagRef
+        127   5C 00003D70 SdbFormatAttribute
+        128   5D 00033980 SdbFreeDatabaseInformation
+        129   5E 000036B0 SdbFreeFileAttributes
+        130   5F 000148D0 SdbFreeFileInfo
+        131   60 0002D280 SdbFreeFlagInfo
+        132   61 00023670 SdbGUIDFromString
+        133   62 000236A0 SdbGUIDToString
+        134   63 00040270 SdbGetAppCompatDataSize
+        135   64 000375F0 SdbGetAppPatchDir
+        136   65 0000A370 SdbGetBinaryTagData
+        137   66 0002D2C0 SdbGetDatabaseGUID
+        138   67 00009FD0 SdbGetDatabaseID
+        139   68 000339C0 SdbGetDatabaseInformation
+        140   69 000339D0 SdbGetDatabaseInformationByName
+        141   6A 00039340 SdbGetDatabaseMatch
+        142   6B 00033C50 SdbGetDatabaseVersion
+        143   6C 00034090 SdbGetDllPath
+        144   6D 0003C420 SdbGetEntryFlags
+        145   6E 000032B0 SdbGetFileAttributes
+        146   6F 00036FD0 SdbGetFileImageType
+        147   70 00036FF0 SdbGetFileImageTypeEx
+        148   71 00023660 SdbGetFileInfo
+        149   72 0000B180 SdbGetFirstChild
+        150   73 000340B0 SdbGetImageType
+        151   74 00006040 SdbGetIndex
+        152   75 0000A090 SdbGetItemFromItemRef
+        153   76 00037660 SdbGetLayerName
+        154   77 0002D410 SdbGetLayerTagRef
+        155   78 0002D500 SdbGetLocalPDB
+        156   79 00004D50 SdbGetMatchingExe
+        157   7A 00034FB0 SdbGetMsiPackageInformation
+        158   7B 0002D520 SdbGetNamedLayer
+        159   7C 0000AEC0 SdbGetNextChild
+        160   7D 00037730 SdbGetNthUserSdb
+        161   7E 0002D5A0 SdbGetPDBFromGUID
+        162   7F 000377B0 SdbGetPathCustomSdb
+        163   80 0000F2D0 SdbGetPathSystemSdb
+        164   81 00032EB0 SdbGetPermLayerKeys
+        165   82 00023660 SdbGetShowDebugInfoOption
+        166   83 00023660 SdbGetShowDebugInfoOptionValue
+        167   84 000378D0 SdbGetStandardDatabaseGUID
+        168   85 0000AC00 SdbGetStringTagPtr
+        169   86 0000BA10 SdbGetTagDataSize
+        170   87 0000BF70 SdbGetTagFromTagID
+        171   88 0003C5E0 SdbGrabMatchingInfo
+        172   89 0003C610 SdbGrabMatchingInfoEx
+        173   8A 00022970 SdbInitDatabase
+        174   8B 0000EEB0 SdbInitDatabaseEx
+        175   8C 00039540 SdbIsDbRuntimePlatformSupportedOnHost
+        176   8D 00023930 SdbIsNullGUID
+        177   8E 00037950 SdbIsStandardDatabase
+        178   8F 0002D640 SdbIsTagrefFromLocalDB
+        179   90 0002D660 SdbIsTagrefFromMainDB
+        180   91 0002FDE0 SdbLoadString
+        181   92 00035C70 SdbMakeIndexKeyFromString
+        182   93 0002FEE0 SdbOpenApphelpDetailsDatabase
+        183   94 000236D0 SdbOpenApphelpDetailsDatabaseSP
+        184   95 0002FF70 SdbOpenApphelpInformation
+        185   96 000301A0 SdbOpenApphelpInformationByID
+        186   97 000302F0 SdbOpenApphelpResourceFile
+        187   98 00033DD0 SdbOpenDatabase
+        188   99 000303D0 SdbOpenDbFromGuid
+        189   9A 00034190 SdbOpenLocalDatabase
+        190   9B 000066A0 SdbPackAppCompatData
+        191   9C 000304D0 SdbQueryApphelpInformation
+        192   9D 0002D970 SdbQueryBlockUpgrade
+        193   9E 0002DA00 SdbQueryContext
+        194   9F 00008300 SdbQueryData
+        195   A0 00008330 SdbQueryDataEx
+        196   A1 000083E0 SdbQueryDataExTagID
+        197   A2 0002DC90 SdbQueryFlagInfo
+        198   A3 0002DCE0 SdbQueryFlagMask
+        199   A4 0003D640 SdbQueryName
+        200   A5 0002E300 SdbQueryReinstallUpgrade
+        201   A6 000307D0 SdbReadApphelpData
+        202   A7 00030940 SdbReadApphelpDetailsData
+        203   A8 00038E60 SdbReadBYTETag
+        204   A9 00038F10 SdbReadBYTETagRef
+        205   AA 00008C90 SdbReadBinaryTag
+        206   AB 0000A3C0 SdbReadDWORDTag
+        207   AC 00003C10 SdbReadDWORDTagRef
+        208   AD 000395E0 SdbReadEntryInformation
+        209   AE 00035130 SdbReadMsiTransformInfo
+        210   AF 000341C0 SdbReadPatchBits
+        211   B0 00006420 SdbReadQWORDTag
+        212   B1 000063D0 SdbReadQWORDTagRef
+        213   B2 00007990 SdbReadStringTag
+        214   B3 00007910 SdbReadStringTagRef
+        215   B4 0000ACD0 SdbReadWORDTag
+        216   B5 00039080 SdbReadWORDTagRef
+        217   B6 000365A0 SdbRegisterDatabase
+        218   B7 000365B0 SdbRegisterDatabaseEx
+        219   B8 0000EBE0 SdbReleaseDatabase
+        220   B9 0002E440 SdbReleaseMatchingExe
+        221   BA 000379E0 SdbResolveDatabase
+        222   BB 00030DA0 SdbSetApphelpDebugParameters
+        223   BC 00037DE0 SdbSetEntryFlags
+        224   BD 000343C0 SdbSetImageType
+        225   BE 00032F70 SdbSetPermLayerKeys
+        226   BF 00030EC0 SdbShowApphelpDialog
+        227   C0 00010FD0 SdbShowApphelpFromQuery
+        228   C1 0002C090 SdbStartIndexing
+        229   C2 0002C0C0 SdbStopIndexing
+        230   C3 000236E0 SdbStringDuplicate
+        231   C4 00023720 SdbStringReplace
+        232   C5 00023760 SdbStringReplaceArray
+        233   C6 0000A310 SdbTagIDToTagRef
+        234   C7 0000BFB0 SdbTagRefToTagID
+        235   C8 000041D0 SdbTagToString
+        236   C9 000110D0 SdbUnpackAppCompatData
+        237   CA 000111B0 SdbUnpackQueryResult
+        238   CB 00036D10 SdbUnregisterDatabase
+        239   CC 0002C0F0 SdbWriteBYTETag
+        240   CD 0002C140 SdbWriteBinaryTag
+        241   CE 0002C180 SdbWriteBinaryTagFromFile
+        242   CF 0002C350 SdbWriteDWORDTag
+        243   D0 0002C3A0 SdbWriteNULLTag
+        244   D1 0002C3E0 SdbWriteQWORDTag
+        245   D2 0002C430 SdbWriteStringRefTag
+        246   D3 0002C480 SdbWriteStringTag
+        247   D4 0002C4F0 SdbWriteStringTagDirect
+        248   D5 0002C550 SdbWriteWORDTag
+        249   D6 00022AF0 SetPermLayerState
+        250   D7 00022B20 SetPermLayerStateEx
+        251   D8 00022B70 SetPermLayers
+        252   D9 000237A0 ShimDbgPrint
+        253   DA 000148D0 ShimDumpCache
+        254   DB 0003F1B0 ShimFlushCache
+         19      0002B400 [NONAME]
+         20      00005F20 [NONAME]
+         21      0002AE90 [NONAME]
+         22      0002B3A0 [NONAME]
+         23      00012720 [NONAME]
+         24      00003C60 [NONAME]
+         25      0002D370 [NONAME]
+         26      00032D40 [NONAME]
+         27      00012550 [NONAME]
+         28      00014270 [NONAME]
+         29      00036BA0 [NONAME]
+         30      00036ED0 [NONAME]
+         31      00036460 [NONAME]
+         32      00033120 [NONAME]
+         33      00033150 [NONAME]
+         34      000141D0 [NONAME]
+
+  Summary
+
+        3000 .data
+        4000 .pdata
+       21000 .rdata
+        1000 .reloc
+       17000 .rsrc
+       4B000 .text

@@ -1,0 +1,47 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\cscdll.dll
+
+File Type: DLL
+
+  Section contains the following exports for CSCDLL.dll
+
+    00000000 characteristics
+    6C5DEA01 time date stamp
+        0.00 version
+           9 ordinal base
+          68 number of functions
+          18 number of names
+
+    ordinal hint RVA      name
+
+         45    0 00002230 CSCDeleteW
+         73    1 00002290 CSCDisconnectPath
+         14    2 000022F0 CSCDoEnableDisable
+         55    3 00002360 CSCEnumForStatsExW
+         49    4 00002360 CSCEnumForStatsW
+         10    5 000028F0 CSCFindClose
+         60    6 00002950 CSCFindFirstFileForSidW
+         43    7 00002A20 CSCFindFirstFileW
+         44    8 00002A60 CSCFindNextFileW
+          9    9 00002B00 CSCIsCSCEnabled
+         75    A 00002BA0 CSCIsPathOffline
+         50    B 00002C40 CSCIsServerOfflineW
+         40    C 00002DB0 CSCPinFileW
+         42    D 00002EE0 CSCQueryFileStatusW
+         11    E 00002F50 CSCSetMaxSpace
+         76    F 00002FC0 CSCTransitionPathOnline
+         52   10 00003020 CSCTransitionServerOnlineW
+         41   11 00003030 CSCUnpinFileW
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        5000 .text

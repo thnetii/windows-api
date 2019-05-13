@@ -1,0 +1,59 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\igdbcl64.dll
+
+File Type: DLL
+
+  Section contains the following exports for igdbcl64.dll
+
+    00000000 characteristics
+    59E4F49B time date stamp Mon Oct 16 20:04:11 2017
+        0.00 version
+           1 ordinal base
+          31 number of functions
+          31 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00003380 ??0CProgramIfc@iCBE@@QEAA@AEBV01@@Z
+          2    1 000010A0 ??0CProgramIfc@iCBE@@QEAA@PEAVCProgram@1@@Z
+          3    2 000010C0 ??1CProgramIfc@iCBE@@UEAA@XZ
+          4    3 000033A0 ??4CProgramIfc@iCBE@@QEAAAEAV01@AEBV01@@Z
+          5    4 00042620 ??_7CProgramIfc@iCBE@@6B@
+          6    5 000011B0 ?GetNumPixelShaders@CProgramIfc@iCBE@@QEAAIXZ
+          7    6 00001190 ?GetNumVertexShaders@CProgramIfc@iCBE@@QEAAIXZ
+          8    7 00001140 ?GetPixelShader@CProgramIfc@iCBE@@QEAAPEAVCPixelShaderIfc@USC@@I@Z
+          9    8 000010E0 ?GetProgram@CProgramIfc@iCBE@@QEAAPEAVCProgram@2@XZ
+         10    9 000010F0 ?GetVertexShader@CProgramIfc@iCBE@@QEAAPEAVCVertexShaderIfc@USC@@I@Z
+         11    A 000013A0 CompilePixelShaderOpenGL
+         12    B 000011F0 CompileVertexShaderOpenGL
+         13    C 00001060 Create
+         14    D 000011D0 CreateShaderCompilerOpenGL
+         15    E 00001080 Delete
+         16    F 00001550 DeleteCompilerOutputPixelShaderOpenGL
+         17   10 00001380 DeleteCompilerOutputVertexShaderOpenGL
+         18   11 000011E0 DeleteShaderCompilerOpenGL
+         19   12 0001F990 GTPin_CompilerReservedRegs
+         20   13 0001F9C0 GTPin_FillAllKernelsInfo
+         21   14 0001F9A0 GTPin_GetCommandLine
+         22   15 0001F970 GTPin_GetEnqueueInstanceKernelArgNo
+         23   16 0001F9D0 GTPin_GetGenIsaFromPlatform
+         24   17 0001F9B0 GTPin_GetInvokeStruct
+         25   18 0001F960 GTPin_GetSurfaceBTI
+         26   19 0001F980 GTPin_GetSurfaceKernelArgNo
+         27   1A 0001FA10 GTPin_Instrument
+         28   1B 0001F930 GTPin_IsEnabled
+         29   1C 0001F940 GTPin_NumberOfSurfaces
+         30   1D 0001F950 GTPin_UpdateKernelInfo
+         31   1E 00001030 Register
+
+  Summary
+
+        6000 .data
+        4000 .pdata
+       1F000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       41000 .text

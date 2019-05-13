@@ -1,0 +1,51 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\efsutil.dll
+
+File Type: DLL
+
+  Section contains the following exports for EFSUTIL.dll
+
+    00000000 characteristics
+    530CAE4F time date stamp
+        0.00 version
+           1 ordinal base
+          22 number of functions
+          22 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00005E70 EfsUtilApplyGroupPolicy
+          2    1 00002720 EfsUtilCheckCurrentKeyCapabilities
+          3    2 00003210 EfsUtilCreateSelfSignedCertificate
+          4    3 000046B0 EfsUtilFreeParsedRecoveryPolicy
+          5    4 00002A20 EfsUtilGetCertContextFromCertHash
+          6    5 00004A00 EfsUtilGetCertDisplayInformation
+          7    6 00004810 EfsUtilGetCertNameFromCertContext
+          8    7 00002760 EfsUtilGetCurrentKey
+          9    8 00003E80 EfsUtilGetCurrentKey_Deprecated
+         10    9 00003940 EfsUtilGetCurrentUserInformation
+         11    A 00001290 EfsUtilGetProvider
+         12    B 00005140 EfsUtilGetPublicKeyType
+         13    C 00003BB0 EfsUtilGetSmartcardProviderName
+         14    D 00001F30 EfsUtilGetUserKey
+         15    E 00001FF0 EfsUtilIsSmartcardKey
+         16    F 00001450 EfsUtilIsSmartcardProvider
+         17   10 00003E90 EfsUtilParseDataRecoveryPolicy_1_1
+         18   11 00001400 EfsUtilReleaseProvider
+         19   12 000020C0 EfsUtilReleaseUserKey
+         20   13 000028F0 EfsUtilSetCurrentKey
+         21   14 00001500 EfsUtilSetSmartcardPin
+         22   15 00001260 EfsUtilSmartcardCredsNeededError
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        4000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        7000 .text

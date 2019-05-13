@@ -1,0 +1,55 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\AudioSrvPolicyManager.dll
+
+File Type: DLL
+
+  Section contains the following exports for AUDIOSRVPOLICYMANAGER.dll
+
+    00000000 characteristics
+    19674740 time date stamp
+        0.00 version
+           1 ordinal base
+          26 number of functions
+          26 number of names
+
+    ordinal hint RVA      name
+
+          3    0 00008AE0 ActivatePolicyManager
+          1    1 00024320 HHOSTEDAPPMANAGERCONTEXTRundown
+          4    2 00023780 PbmAllowMediaPlaybackForApp
+          5    3 000241E0 PbmCastingAppStateChanged
+          6    4 00023BC0 PbmGetSoundLevel
+          7    5 00023CF0 PbmIsPlaying
+          8    6 000246B0 PbmLaunchBackgroundTask
+          9    7 000240A0 PbmPlayToStreamStateChanged
+         10    8 00023F30 PbmRegisterAppClosureNotification
+         11    9 00023E00 PbmRegisterAppManagerNotification
+         12    A 00023880 PbmRegisterPlaybackManagerNotifications
+         13    B 00023710 PbmReportAppClosing
+         14    C 000235B0 PbmReportAppInteractivityChange
+         15    D 000245D0 PbmReportApplicationState
+         16    E 00023680 PbmReportHostedAppStateChange
+         17    F 00024490 PbmSetScreenReaderState
+         18   10 00023A50 PbmSetSmtcSubscriptionState
+         19   11 00023630 PbmSwitchSoftNonInteractiveAppsToHardNonInteractive
+         20   12 00023FD0 PbmUnregisterAppClosureNotification
+         21   13 00023EA0 PbmUnregisterAppManagerNotification
+         22   14 00023940 PbmUnregisterPlaybackManagerNotifications
+         23   15 0002A4F0 TS_AudioProtocolNotifyRundown
+         24   16 0002A430 TS_RegisterAudioProtocolNotification
+          2   17 00029F30 TS_SessionChanged
+         25   18 0002A380 TS_SessionGetAudioProtocol
+         26   19 0002A490 TS_UnregisterAudioProtocolNotification
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        3000 .pdata
+       14000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       3A000 .text

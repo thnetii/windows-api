@@ -1,0 +1,112 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\SRCOM.dll
+
+File Type: DLL
+
+  Section contains the following exports for SRCOM.DLL
+
+    00000000 characteristics
+    54D0F996 time date stamp Tue Feb  3 17:38:46 2015
+        0.00 version
+           1 ordinal base
+          85 number of functions
+          85 number of names
+
+    ordinal hint RVA      name
+
+         85    0 00009930 sffxCanBeUnloaded
+         73    1 00009950 sffxClean
+          2    2 000099A0 sffxFree
+         70    3 00009B30 sffxFreeLite
+         81    4 00009BE0 sffxGetAuthorMeterData
+         83    5 00009D70 sffxGetBassMgmtMode
+          8    6 00009E70 sffxGetDefaultPlaybackDevice
+         42    7 00009EB0 sffxGetDefaultRecordDevice
+         26    8 00009EF0 sffxGetJackState
+         78    9 00009F30 sffxGetJackStateInfo
+         15    A 0000A070 sffxGetMasterPlaybackMute
+         13    B 0000A0D0 sffxGetMasterPlaybackVolume
+         49    C 0000A130 sffxGetMasterRecordMute
+         47    D 0000A190 sffxGetMasterRecordVolume
+         24    E 0000A1F0 sffxGetNumJackStates
+         55    F 0000A320 sffxGetNumPlaybackControls
+          3   10 0000A380 sffxGetNumPlaybackDevices
+         10   11 0000A3C0 sffxGetNumPlaybackJacks
+         30   12 0000A420 sffxGetNumPresets
+         27   13 0000A630 sffxGetNumProfiles
+         59   14 0000A750 sffxGetNumRecordControls
+         37   15 0000A7B0 sffxGetNumRecordDevices
+         44   16 0000A7F0 sffxGetNumRecordJacks
+         74   17 0000A850 sffxGetNumUserControls
+         18   18 0000A940 sffxGetPlaybackChannelVolume
+         56   19 0000A9B0 sffxGetPlaybackControlInfo
+         65   1A 0000AA80 sffxGetPlaybackControlRange
+         57   1B 0000AB30 sffxGetPlaybackControlValue
+          5   1C 0000ACB0 sffxGetPlaybackDeviceIndex
+          4   1D 0000AD50 sffxGetPlaybackDeviceInfo
+          9   1E 0000B070 sffxGetPlaybackDeviceState
+         11   1F 0000B150 sffxGetPlaybackJackInfo
+         16   20 0000B2A0 sffxGetPlaybackVolumeChannelCount
+         20   21 0000B300 sffxGetPower
+         32   22 0000B370 sffxGetPreset
+         84   23 0000B3B0 sffxGetProcessingInfo
+         29   24 0000B400 sffxGetProfile
+         79   25 0000B440 sffxGetProfileInfo
+         52   26 0000B580 sffxGetRecordChannelVolume
+         60   27 0000B5F0 sffxGetRecordControlInfo
+         66   28 0000B6C0 sffxGetRecordControlRange
+         61   29 0000B770 sffxGetRecordControlValue
+         39   2A 0000B8F0 sffxGetRecordDeviceIndex
+         38   2B 0000B980 sffxGetRecordDeviceInfo
+         43   2C 0000BB60 sffxGetRecordDeviceState
+         45   2D 0000BC40 sffxGetRecordJackInfo
+         50   2E 0000BD90 sffxGetRecordVolumeChannelCount
+          7   2F 0000BDF0 sffxGetSelectedPlaybackDevice
+         41   30 0000BE30 sffxGetSelectedRecordDevice
+         22   31 0000BE70 sffxGetSpeakerMode
+         23   32 0000C160 sffxGetSupportedSpeakerModes
+         75   33 0000C230 sffxGetUserControlInfo
+         76   34 0000C3D0 sffxGetUserControlValue
+         64   35 0000C560 sffxGetWaveInDeviceIndex
+         63   36 0000C5C0 sffxGetWaveOutDeviceIndex
+          1   37 0000C620 sffxInit
+         69   38 0000C690 sffxInitLite
+         80   39 0000C6F0 sffxLoadDSPParams
+         36   3A 00009780 sffxPing
+         34   3B 0000C710 sffxRegisterNotificationCallback
+         53   3C 0000C770 sffxRegisterNotificationWindow
+         33   3D 0000C7D0 sffxResetPreset
+         71   3E 0000C970 sffxSetAuthorMode
+         82   3F 0000CA90 sffxSetBassMgmtMode
+         72   40 0000CBE0 sffxSetDSPParams
+         67   41 0000CC90 sffxSetDefaultPlaybackDevice
+         68   42 0000CD30 sffxSetDefaultRecordDevice
+         25   43 0000CDD0 sffxSetJackState
+         14   44 0000D430 sffxSetMasterPlaybackMute
+         12   45 0000D4F0 sffxSetMasterPlaybackVolume
+         48   46 0000D5C0 sffxSetMasterRecordMute
+         46   47 0000D680 sffxSetMasterRecordVolume
+         17   48 0000D750 sffxSetPlaybackChannelVolume
+         58   49 0000D830 sffxSetPlaybackControlValue
+         19   4A 0000DA30 sffxSetPower
+         31   4B 0000DAF0 sffxSetPreset
+         28   4C 0000DD10 sffxSetProfile
+         51   4D 0000DFC0 sffxSetRecordChannelVolume
+         62   4E 0000E0A0 sffxSetRecordControlValue
+          6   4F 0000E2A0 sffxSetSelectedPlaybackDevice
+         40   50 0000E350 sffxSetSelectedRecordDevice
+         21   51 0000E400 sffxSetSpeakerMode
+         77   52 0000E920 sffxSetUserControlValue
+         35   53 0000EAA0 sffxUnregisterNotificationCallback
+         54   54 0000EAE0 sffxUnregisterNotificationWindow
+
+  Summary
+
+       35000 .data
+       13000 .rdata
+        4000 .reloc
+        1000 .rsrc
+       37000 .text

@@ -1,0 +1,55 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\uniplat.dll
+
+File Type: DLL
+
+  Section contains the following exports for uniplat.dll
+
+    00000000 characteristics
+    2116E40D time date stamp
+        0.00 version
+         100 ordinal base
+         117 number of functions
+          26 number of names
+
+    ordinal hint RVA      name
+
+        113    0 00001A60 AllocateOverStructEx
+        214    1 000017E0 CallBeginning
+        215    2 00001830 CallEnding
+        110    3 000020E0 CancelUnimodemTimer
+        111    4 00001A40 CreateOverStructPool
+        107    5 00001FA0 CreateUnimodemTimer
+        112    6 00001A50 DestroyOverStructPool
+        114    7 00001AB0 FreeOverStruct
+        108    8 00002020 FreeUnimodemTimer
+        212    9 00001620 MonitorHandle
+        115    A 00001AD0 ReinitOverStruct
+        216    B 00001880 ResetCallCount
+        109    C 00002080 SetUnimodemTimer
+        210    D 000014A0 StartMonitorThread
+        211    E 00001570 StopMonitorThread
+        213    F 00001770 StopMonitoringHandle
+        116   10 00001B10 SyncDeviceIoControl
+        101   11 00001E10 UmPlatformDeinitialize
+        100   12 00001D60 UmPlatformInitialize
+        104   13 00001920 UnimodemDeviceIoControlEx
+        207   14 00002100 UnimodemNotifyTSP
+        106   15 00001A20 UnimodemQueueUserAPC
+        102   16 000019A0 UnimodemReadFileEx
+        105   17 000019C0 UnimodemWaitCommEventEx
+        103   18 000019B0 UnimodemWriteFileEx
+        117   19 00001EB0 WinntIsWorkstation
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        3000 .text

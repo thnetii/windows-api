@@ -1,0 +1,73 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\CertEnroll.dll
+
+File Type: DLL
+
+  Section contains the following exports for certenroll.dll
+
+    00000000 characteristics
+    3DE6BF8F time date stamp
+        0.00 version
+          15 ordinal base
+          44 number of functions
+          21 number of names
+
+    ordinal hint RVA      name
+
+         50    0 00063F00 CreateLogonCertificateRequest
+         52    1 00063F60 DeleteLogonCertificateRequest
+         17    2 000013B0 DllCanUnloadNow
+         54    3 00002D40 DllGetActivationFactory
+         55    4 00063FA0 DllGetClassObject
+         56    5 00008410 DllMain
+         57    6 00064020 DllRegisterServer
+         58    7 00064090 DllUnregisterServer
+         45    8 0007D650 ImportPFXToProvider
+         46    9 0007D8F0 ImportPFXToProviderFreeData
+         51    A 000640B0 InstallLogonCertificateResponse
+         49    B 00064110 IsLogonCertificateTemplateAvailable
+         34    C 0007D950 LogCertArchive
+         40    D 0007D9A0 LogCertCopy
+         33    E 0007DA50 LogCertDelete
+         35    F 0007DAA0 LogCertExpire
+         42   10 0007DB00 LogCertExport
+         41   11 0007DB50 LogCertImport
+         39   12 0007DBB0 LogCertInstall
+         32   13 0007DE20 LogCertReplace
+         53   14 000642F0 UpdateMachinePolicyConfigurationForTemplate
+         15      000DAE50 [NONAME]
+         16      000DAD50 [NONAME]
+         18      000DA900 [NONAME]
+         19      000DAA20 [NONAME]
+         20      00063CE0 [NONAME]
+         21      000640A0 [NONAME]
+         22      00063CD0 [NONAME]
+         23      00064220 [NONAME]
+         24      00064230 [NONAME]
+         25      000641F0 [NONAME]
+         26      000641C0 [NONAME]
+         27      0007D640 [NONAME]
+         28      001682D0 [NONAME]
+         29      000DAB20 [NONAME]
+         30      000E28D0 [NONAME]
+         31      00168170 [NONAME]
+         36      000DAF50 [NONAME]
+         37      000F2D30 [NONAME]
+         38      000F2E20 [NONAME]
+         43      000ABB40 [NONAME]
+         44      000AD200 [NONAME]
+         47      0011E310 [NONAME]
+         48      0011E1F0 [NONAME]
+
+  Summary
+
+        8000 .data
+        1000 .didat
+       17000 .pdata
+       F0000 .rdata
+        A000 .reloc
+       38000 .rsrc
+      1BE000 .text

@@ -1,0 +1,52 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\iumdll.dll
+
+File Type: DLL
+
+  Section contains the following exports for IUMDLL.dll
+
+    00000000 characteristics
+    4D76EDFF time date stamp
+        0.00 version
+           1 ordinal base
+          24 number of functions
+          24 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001140 IumAssignMemoryToSocDomain
+          2    1 00001150 IumAwaitSmc
+          3    2 00001160 IumCreateSecureDevice
+          4    3 00001170 IumCreateSecureSection
+          5    4 00001180 IumCreateSecureSectionSpecifyPages
+          6    5 00001190 IumCrypto
+          7    6 000011A0 IumDmaMapMemory
+          8    7 000011B0 IumEmitSmc
+          9    8 000011C0 IumFlushSecureSectionBuffers
+         10    9 000011D0 IumGetDmaEnabler
+         11    A 000011E0 IumGetExposedSecureSection
+         12    B 000011F0 IumGetIdk
+         13    C 00001200 IumMapSecureIo
+         14    D 00001210 IumOpenCurrentExtension
+         15    E 00001220 IumOpenSecureSection
+         16    F 00001230 IumPostMailbox
+         17   10 00001240 IumProtectSecureIo
+         18   11 00001250 IumQuerySecureDeviceInformation
+         19   12 00001260 IumSecureStorageGet
+         20   13 00001270 IumSecureStoragePut
+         21   14 00001280 IumSetDmaTargetProperties
+         22   15 00001290 IumSetPolicyExtension
+         23   16 000012A0 IumUnmapSecureIo
+         24   17 000012B0 IumUpdateSecureDeviceState
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        1000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        1000 .text

@@ -1,0 +1,71 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\d3d10ref.dll
+
+File Type: DLL
+
+  Section contains the following exports for d3d10ref.dll
+
+    00000000 characteristics
+    A12DCB65 time date stamp
+        0.00 version
+           1 ordinal base
+          43 number of functions
+          43 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001020 D3D10RefGetLastCreation
+          2    1 00001040 D3D10RefPrepareNextCreation
+          3    2 00001030 D3DKMTCloseAdapter
+         18    3 00001030 D3DKMTCreateAllocation
+         19    4 00001030 D3DKMTCreateContext
+         20    5 00001030 D3DKMTCreateDevice
+         21    6 00001030 D3DKMTCreateSynchronizationObject
+          4    7 00001030 D3DKMTDestroyAllocation
+          5    8 00001030 D3DKMTDestroyContext
+          6    9 00001030 D3DKMTDestroyDevice
+          7    A 00001030 D3DKMTDestroySynchronizationObject
+         22    B 00001030 D3DKMTEscape
+         23    C 00001030 D3DKMTGetContextSchedulingPriority
+         24    D 00001030 D3DKMTGetDeviceSchedulingPriority
+         25    E 00001030 D3DKMTGetDeviceState
+         26    F 00001030 D3DKMTGetDisplayModeList
+         27   10 00001030 D3DKMTGetMultisampleMethodList
+         28   11 00001030 D3DKMTGetRuntimeData
+         29   12 00001030 D3DKMTGetSharedPrimaryHandle
+         30   13 00001030 D3DKMTLock
+         31   14 00001030 D3DKMTOpenAdapterFromDeviceName
+         32   15 00001030 D3DKMTOpenAdapterFromGdiDisplayName
+         33   16 00001030 D3DKMTOpenResource
+          8   17 00001030 D3DKMTPresent
+          9   18 00001030 D3DKMTQueryAdapterInfo
+         34   19 00001030 D3DKMTQueryAllocationResidency
+         35   1A 00001030 D3DKMTQueryResourceInfo
+         36   1B 00001030 D3DKMTRender
+         37   1C 00001030 D3DKMTSetAllocationPriority
+         38   1D 00001030 D3DKMTSetContextSchedulingPriority
+         39   1E 00001030 D3DKMTSetDeviceSchedulingPriority
+         40   1F 00001030 D3DKMTSetDisplayMode
+         10   20 00001030 D3DKMTSetDisplayPrivateDriverFormat
+         41   21 00001030 D3DKMTSetGammaRamp
+         42   22 00001030 D3DKMTSetVidPnSourceOwner
+         11   23 00001030 D3DKMTSignalSynchronizationObject
+         12   24 00001030 D3DKMTUnlock
+         13   25 00001030 D3DKMTWaitForSynchronizationObject
+         43   26 00001030 D3DKMTWaitForVerticalBlankEvent
+         14   27 00001010 OpenAdapter10
+         15   28 00001010 OpenAdapter10_2
+         16   29 00001050 SetInfoQueue
+         17   2A 00001060 SetUseMidLevelShader
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        1000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        1000 .text

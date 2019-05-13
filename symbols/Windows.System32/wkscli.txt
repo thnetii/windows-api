@@ -1,0 +1,52 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\wkscli.dll
+
+File Type: DLL
+
+  Section contains the following exports for wkscli.dll
+
+    00000000 characteristics
+    7AB3CB2A time date stamp
+        0.00 version
+           1 ordinal base
+          23 number of functions
+          23 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00003600 NetAddAlternateComputerName
+          2    1 00003780 NetEnumerateComputerNames
+          3    2 00001450 NetGetJoinInformation
+          4    3 00003990 NetGetJoinableOUs
+          5    4 00003B70 NetJoinDomain
+          6    5 00003DC0 NetRemoveAlternateComputerName
+          7    6 00003F40 NetRenameMachineInDomain
+          8    7 000040C0 NetSetPrimaryComputerName
+          9    8 00004240 NetUnjoinDomain
+         10    9 000043B0 NetUseAdd
+         11    A 00001890 NetUseDel
+         12    B 00001340 NetUseEnum
+         13    C 00004570 NetUseGetInfo
+         14    D 00004630 NetValidateName
+         15    E 00001620 NetWkstaGetInfo
+         16    F 00004860 NetWkstaSetInfo
+         17   10 00004960 NetWkstaStatisticsGet
+         18   11 00004A90 NetWkstaTransportAdd
+         19   12 00004B90 NetWkstaTransportDel
+         20   13 00004C70 NetWkstaTransportEnum
+         21   14 00004E00 NetWkstaUserEnum
+         22   15 00004F90 NetWkstaUserGetInfo
+         23   16 00005080 NetWkstaUserSetInfo
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        7000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        A000 .text

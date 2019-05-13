@@ -1,0 +1,158 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\powrprof.dll
+
+File Type: DLL
+
+  Section contains the following exports for POWRPROF.dll
+
+    00000000 characteristics
+    8941F3E3 time date stamp
+        0.00 version
+           1 ordinal base
+         129 number of functions
+         129 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000018F0 CallNtPowerInformation
+          2    1 000055D0 CanUserWritePwrScheme
+          3    2 00005680 DeletePwrScheme
+          4    3 0000A620 DevicePowerClose
+          5    4 0000A710 DevicePowerEnumDevices
+          6    5 0000AD20 DevicePowerOpen
+          7    6 0000AD90 DevicePowerSetDeviceState
+          8    7 000057C0 EnumPwrSchemes
+          9    8 0000B3D0 GUIDFormatToGlobalPowerPolicy
+         10    9 0000B880 GUIDFormatToPowerPolicy
+         11    A 00005D90 GetActivePwrScheme
+         12    B 00005E40 GetCurrentPowerPolicies
+         13    C 000028A0 GetPwrCapabilities
+         14    D 00005ED0 GetPwrDiskSpindownRange
+         15    E 00005F30 IsAdminOverrideActive
+         16    F 00005F40 IsPwrHibernateAllowed
+         17   10 00005FA0 IsPwrShutdownAllowed
+         18   11 00005FF0 IsPwrSuspendAllowed
+         19   12 00006050 LoadCurrentPwrScheme
+         20   13 00006050 MergeLegacyPwrScheme
+         21   14 00010090 PowerApplyPowerRequestOverride
+         22   15 0000E830 PowerApplySettingChanges
+         23   16 0000BF00 PowerCanRestoreIndividualDefaultPowerScheme
+         24   17 0000C000 PowerClearUserAwayPrediction
+         25   18 0001DF30 PowerCloseEnvironmentalMonitor
+         26   19 0001E8A0 PowerCloseLimitsMitigation
+         27   1A 0001F0D0 PowerCloseLimitsPolicy
+         28   1B 0000E8D0 PowerCreatePossibleSetting
+         29   1C 0000E980 PowerCreateSetting
+         30   1D 000105A0 PowerCustomizePlatformPowerSettingsOffline
+         31   1E 000106E0 PowerCustomizePlatformPowerSettingsOnline
+         32   1F 00008020 PowerDebugDifPowerPolicies
+         33   20 000088E0 PowerDebugDifSystemPowerPolicies
+         34   21 00008FC0 PowerDebugDumpPowerPolicy
+         35   22 000093B0 PowerDebugDumpPowerScheme
+         36   23 00009D20 PowerDebugDumpSystemPowerCapabilities
+         37   24 00009F90 PowerDebugDumpSystemPowerPolicy
+         38   25 0000EA20 PowerDeleteScheme
+         39   26 00002D60 PowerDeterminePlatformRole
+         40   27 00002DB0 PowerDeterminePlatformRoleEx
+         41   28 0000EAB0 PowerDuplicateScheme
+         42   29 00001250 PowerEnumerate
+         43   2A 00002E80 PowerGeneralizePlatformSettings
+         44   2B 00002170 PowerGetActiveScheme
+         45   2C 00010110 PowerGetActualOverlayScheme
+         46   2D 0001D310 PowerGetAdaptiveStandbyDiagnostics
+         47   2E 000101E0 PowerGetEffectiveOverlayScheme
+         48   2F 0000D800 PowerGetOverlaySchemes
+         49   30 0000C090 PowerGetUserAwayMinPredictionConfidence
+         50   31 0000EC80 PowerImportPowerScheme
+         51   32 00006860 PowerInformationWithPrivileges
+         52   33 0000D940 PowerIsSettingRangeDefined
+         53   34 0000C1B0 PowerOpenSystemPowerKey
+         54   35 0000C220 PowerOpenUserPowerKey
+         55   36 0000C290 PowerPolicyToGUIDFormat
+         56   37 0000DB20 PowerReadACDefaultIndex
+         57   38 00001010 PowerReadACValue
+         58   39 00001FA0 PowerReadACValueIndex
+         59   3A 0000DC10 PowerReadACValueIndexEx
+         60   3B 0000DC40 PowerReadDCDefaultIndex
+         61   3C 0000DD30 PowerReadDCValue
+         62   3D 0000DE10 PowerReadDCValueIndex
+         63   3E 0000DE50 PowerReadDCValueIndexEx
+         64   3F 0000DE80 PowerReadDescription
+         65   40 00001310 PowerReadFriendlyName
+         66   41 0000DED0 PowerReadIconResourceSpecifier
+         67   42 0000DF20 PowerReadPossibleDescription
+         68   43 0000DF70 PowerReadPossibleFriendlyName
+         69   44 0000DFC0 PowerReadPossibleValue
+         70   45 0000E0B0 PowerReadSecurityDescriptor
+         71   46 0000E270 PowerReadSettingAttributes
+         72   47 0000E450 PowerReadValueIncrement
+         73   48 0000E540 PowerReadValueMax
+         74   49 0000E630 PowerReadValueMin
+         75   4A 0000E720 PowerReadValueUnitsSpecifier
+         76   4B 000102B0 PowerReapplyActiveScheme
+         77   4C 0001E070 PowerRegisterEnvironmentalMonitor
+         78   4D 000068E0 PowerRegisterForEffectivePowerModeNotifications
+         79   4E 0001EA00 PowerRegisterLimitsMitigation
+         80   4F 0001F190 PowerRegisterLimitsPolicy
+         81   50 000024B0 PowerRegisterSuspendResumeNotification
+         82   51 0000EE20 PowerRemovePowerSetting
+         83   52 0000C7C0 PowerReplaceDefaultPowerSchemes
+         84   53 0001F410 PowerReportLimitsEvent
+         85   54 0000C850 PowerReportThermalEvent
+         86   55 0000EEC0 PowerRestoreACDefaultIndex
+         87   56 0000EFA0 PowerRestoreDCDefaultIndex
+         88   57 0000C8C0 PowerRestoreDefaultPowerSchemes
+         89   58 0000C940 PowerRestoreIndividualDefaultPowerScheme
+         90   59 00010340 PowerSetActiveOverlayScheme
+         91   5A 000010C0 PowerSetActiveScheme
+         92   5B 0001D4A0 PowerSetAlsBrightnessOffset
+         93   5C 0001D4E0 PowerSetBrightnessAndTransitionTimes
+         94   5D 0000C9E0 PowerSetUserAwayPrediction
+         95   5E 00001120 PowerSettingAccessCheck
+         96   5F 0000CB60 PowerSettingAccessCheckEx
+         97   60 00001B60 PowerSettingRegisterNotification
+         98   61 00001B90 PowerSettingRegisterNotificationEx
+         99   62 000022B0 PowerSettingUnregisterNotification
+        100   63 00006B30 PowerUnregisterFromEffectivePowerModeNotifications
+        101   64 00002B00 PowerUnregisterSuspendResumeNotification
+        102   65 0001E280 PowerUpdateEnvironmentalMonitorState
+        103   66 0001E330 PowerUpdateEnvironmentalMonitorThresholds
+        104   67 0001EC40 PowerUpdateLimitsMitigation
+        105   68 0000F080 PowerWriteACDefaultIndex
+        106   69 0000F150 PowerWriteACValueIndex
+        107   6A 0000F230 PowerWriteDCDefaultIndex
+        108   6B 0000F300 PowerWriteDCValueIndex
+        109   6C 0000F3E0 PowerWriteDescription
+        110   6D 0000F4C0 PowerWriteFriendlyName
+        111   6E 0000F590 PowerWriteIconResourceSpecifier
+        112   6F 0000F670 PowerWritePossibleDescription
+        113   70 0000F750 PowerWritePossibleFriendlyName
+        114   71 0000F830 PowerWritePossibleValue
+        115   72 0000F910 PowerWriteSecurityDescriptor
+        116   73 0000FA00 PowerWriteSettingAttributes
+        117   74 0000FAD0 PowerWriteValueIncrement
+        118   75 0000FBA0 PowerWriteValueMax
+        119   76 0000FC70 PowerWriteValueMin
+        120   77 0000FD40 PowerWriteValueUnitsSpecifier
+        121   78 00006BD0 ReadGlobalPwrPolicy
+        122   79 00006D90 ReadProcessorPwrScheme
+        123   7A 00006EF0 ReadPwrScheme
+        124   7B 00007160 SetActivePwrScheme
+        125   7C 000074A0 SetSuspendState
+        126   7D 00007990 ValidatePowerPolicies
+        127   7E 00007AF0 WriteGlobalPwrPolicy
+        128   7F 00006D90 WriteProcessorPwrScheme
+        129   80 00007E10 WritePwrScheme
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        2000 .pdata
+        E000 .rdata
+        1000 .reloc
+       29000 .rsrc
+       1F000 .text

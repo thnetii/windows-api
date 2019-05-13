@@ -1,0 +1,89 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\sqlcese40.dll
+
+File Type: DLL
+
+  Section contains the following exports for SQLCESE40.dll
+
+    00000000 characteristics
+    34B5FD3A time date stamp
+        0.00 version
+           1 ordinal base
+          60 number of functions
+          60 number of names
+
+    ordinal hint RVA      name
+
+          5    0 000222E0 DllCanUnloadNow
+          6    1 00022320 DllGetClassObject
+          7    2 000021E0 EnableCedbFailpoint
+          1    3 00002660 EnableStorePlayback
+          2    4 00002660 EnableStoreTracing
+          3    5 00002660 InitSerialization
+          8    6 0000EB70 SqlCeAddDatabaseProps
+          9    7 00016540 SqlCeAddSyncPartner
+         10    8 00018720 SqlCeAttachCustomTrackingData
+         11    9 000171D0 SqlCeBeginSyncSession
+         12    A 000113C0 SqlCeBeginTransaction
+         13    B 000158C0 SqlCeChangeDatabaseLCID
+         14    C 00015720 SqlCeCloseHandle
+         15    D 0000E470 SqlCeCreateDatabase
+         16    E 00010CA0 SqlCeCreateSession
+         17    F 0000F9D0 SqlCeDeleteDatabase
+         18   10 000140D0 SqlCeDeleteRecord
+         19   11 00017440 SqlCeEndSyncSession
+         20   12 000115C0 SqlCeEndTransaction
+         21   13 00010320 SqlCeEnumDBVolumes
+         22   14 00010590 SqlCeFindFirstDatabase
+         23   15 00017E80 SqlCeFindNextChangedRecord
+         24   16 00010900 SqlCeFindNextDatabase
+         25   17 00010120 SqlCeFlushDBVol
+         26   18 00015790 SqlCeFreeNotification
+         27   19 00017770 SqlCeGetChangedRecordCnt
+         28   1A 00017A50 SqlCeGetChangedRecords
+         29   1B 00018940 SqlCeGetCustomTrackingData
+         30   1C 0000F640 SqlCeGetDBInformationByHandle
+         31   1D 0000EC80 SqlCeGetDatabaseProps
+         32   1E 000111A0 SqlCeGetDatabaseSession
+         33   1F 00018090 SqlCeGetPropChangeInfo
+         34   20 000182E0 SqlCeGetRecordChangeInfo
+         35   21 00018520 SqlCeMarkRecord
+         36   22 0000FC00 SqlCeMountDBVol
+         37   23 00015290 SqlCeOidGetInfo
+         38   24 0000ADC0 SqlCeOnServerLoad
+         39   25 00012280 SqlCeOpenDatabase
+         40   26 000121F0 SqlCeOpenDatabaseEx
+         41   27 00014410 SqlCeOpenStream
+         42   28 00018DC0 SqlCePurgeTrackingData
+         43   29 00018DD0 SqlCePurgeTrackingGenerations
+         44   2A 00012950 SqlCeReadRecordProps
+         45   2B 0000F090 SqlCeRemoveDatabaseProps
+         46   2C 00016BF0 SqlCeRemoveDatabaseTracking
+         47   2D 00016750 SqlCeRemoveSyncPartner
+         48   2E 000122C0 SqlCeSeekDatabase
+         49   2F 0000F3C0 SqlCeSetDatabaseInfo
+         50   30 00010FD0 SqlCeSetSessionOption
+         51   31 000149B0 SqlCeStreamRead
+         52   32 00014D50 SqlCeStreamSaveChanges
+         53   33 00014F20 SqlCeStreamSeek
+         54   34 000150E0 SqlCeStreamSetSize
+         55   35 00014B70 SqlCeStreamWrite
+         56   36 00016970 SqlCeTrackDatabase
+         57   37 00016EF0 SqlCeTrackProperty
+         58   38 00016270 SqlCeUninitialize
+         59   39 0000FF50 SqlCeUnmountDBVol
+         60   3A 00013B80 SqlCeWriteRecordProps
+          4   3B 00002660 SuspendStoreOperation
+
+  Summary
+
+        5000 .data
+        4000 .pdata
+        E000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       6B000 .text
+        2000 PAGELK

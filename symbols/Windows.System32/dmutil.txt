@@ -1,0 +1,59 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\dmutil.dll
+
+File Type: DLL
+
+  Section contains the following exports for dmutil.dll
+
+    00000000 characteristics
+    CA44FF33 time date stamp
+        0.00 version
+           1 ordinal base
+          30 number of functions
+          30 number of names
+
+    ordinal hint RVA      name
+
+          3    0 000028E0 AddEntryBootFileGpt
+          4    1 00002470 AddEntryBootFileMbr
+          1    2 00003730 CoDisableDynamicVolumes
+          5    3 00001470 DisplayError
+          6    4 00001500 DisplayErrorRgszw
+          7    5 00001010 DllMain
+          8    6 00001C80 DmCommonNtOpenFile
+          9    7 00003560 DynamicSupport
+         10    8 00001630 FTrace
+         11    9 00001620 FTraceValist
+         12    A 00003290 FreeRgszw
+         13    B 00001350 GetErrorData
+         14    C 00002760 GetInstallDirectoryPath
+          2    D 00001B80 GetSystemVolume
+         15    E 00003660 IsPersonalSKU
+         16    F 000022B0 LowAcquirePrivilege
+         17   10 000023E0 LowGetPartitionInfo
+         18   11 00001D50 LowNtAddBootEntry
+         19   12 00002350 LowNtReadFile
+         20   13 00002220 LowNtReadOnlyAttributeOff
+         21   14 000022E0 LowNtWriteFile
+         22   15 00003320 RgszwDupRgszw
+         23   16 00003260 RgszwFromArgs
+         24   17 00002DF0 RgszwFromValist
+         25   18 000034E0 SafeLoadVdsService
+         26   19 000019A0 ShowMessage
+         27   1A 00001650 ShowMessageValist
+         28   1B 00002CB0 SzwDupSzw
+         29   1C 00002D60 SzwFromSza
+         30   1D 00001090 TranslateError
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        4000 .text

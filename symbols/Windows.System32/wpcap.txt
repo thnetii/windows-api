@@ -1,0 +1,115 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\wpcap.dll
+
+File Type: DLL
+
+  Section contains the following exports for wpcap.dll
+
+    00000000 characteristics
+    51300493 time date stamp Fri Mar  1 02:29:55 2013
+        0.00 version
+           1 ordinal base
+          87 number of functions
+          87 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001000 bpf_dump
+          2    1 000010E0 bpf_filter
+          3    2 000018A0 bpf_image
+          4    3 000015F0 bpf_validate
+          5    4 00017500 endservent
+          6    5 00056270 eproto_db
+          7    6 00017540 getservent
+          8    7 0001D240 install_bpf_program
+          9    8 00024AE0 pcap_activate
+         10    9 00025030 pcap_breakloop
+         11    A 00025910 pcap_close
+         12    B 00003570 pcap_compile
+         13    C 00003930 pcap_compile_nopcap
+         14    D 000244A0 pcap_create
+         15    E 0001E490 pcap_createsrcstr
+         16    F 00025040 pcap_datalink
+         17   10 00025250 pcap_datalink_name_to_val
+         18   11 00025380 pcap_datalink_val_to_description
+         19   12 00025330 pcap_datalink_val_to_name
+         20   13 00024C30 pcap_dispatch
+         21   14 00026810 pcap_dump
+         22   15 00026AC0 pcap_dump_close
+         23   16 00026A80 pcap_dump_file
+         24   17 00026AA0 pcap_dump_flush
+         25   18 00026A90 pcap_dump_ftell
+         26   19 00026980 pcap_dump_open
+         27   1A 00025410 pcap_file
+         28   1B 00025420 pcap_fileno
+         29   1C 000021E0 pcap_findalldevs
+         30   1D 0001D330 pcap_findalldevs_ex
+         31   1E 00025110 pcap_free_datalinks
+         32   1F 00019DE0 pcap_freealldevs
+         33   20 00003A50 pcap_freecode
+         34   21 00029A20 pcap_get_airpcap_handle
+         35   22 00025480 pcap_geterr
+         36   23 00029540 pcap_getevent
+         37   24 00025490 pcap_getnonblock
+         38   25 00025C90 pcap_hopen_offline
+         39   26 000253E0 pcap_is_swapped
+         40   27 00025960 pcap_lib_version
+         41   28 00025050 pcap_list_datalinks
+         42   29 00029910 pcap_live_dump
+         43   2A 000299E0 pcap_live_dump_ended
+         44   2B 00019EA0 pcap_lookupdev
+         45   2C 0001A0D0 pcap_lookupnet
+         46   2D 00024CB0 pcap_loop
+         47   2E 000253F0 pcap_major_version
+         48   2F 00025400 pcap_minor_version
+         49   30 00024D80 pcap_next
+         50   31 00001E40 pcap_next_etherent
+         51   32 00024E10 pcap_next_ex
+         52   33 00025940 pcap_offline_filter
+         53   34 000266A0 pcap_offline_read
+         54   35 0001E930 pcap_open
+         55   36 00025840 pcap_open_dead
+         56   37 00024B00 pcap_open_live
+         57   38 00025BC0 pcap_open_offline
+         58   39 0001E650 pcap_parsesrcstr
+         59   3A 00025440 pcap_perror
+         60   3B 00024CA0 pcap_read
+         61   3C 0001EB20 pcap_remoteact_accept
+         62   3D 0001F5B0 pcap_remoteact_cleanup
+         63   3E 0001F130 pcap_remoteact_close
+         64   3F 0001F5E0 pcap_remoteact_list
+         65   40 000258F0 pcap_sendpacket
+         66   41 00029640 pcap_sendqueue_alloc
+         67   42 000296A0 pcap_sendqueue_destroy
+         68   43 000296C0 pcap_sendqueue_queue
+         69   44 00029740 pcap_sendqueue_transmit
+         70   45 00024AA0 pcap_set_buffer_size
+         71   46 00025120 pcap_set_datalink
+         72   47 00024A20 pcap_set_promisc
+         73   48 000249E0 pcap_set_snaplen
+         74   49 00024A60 pcap_set_timeout
+         75   4A 00025710 pcap_setbuff
+         76   4B 00025690 pcap_setdirection
+         77   4C 00025680 pcap_setfilter
+         78   4D 00025790 pcap_setmintocopy
+         79   4E 00025750 pcap_setmode
+         80   4F 000254A0 pcap_setnonblock
+         81   50 0001EB10 pcap_setsampling
+         82   51 00029830 pcap_setuserbuffer
+         83   52 000253D0 pcap_snapshot
+         84   53 000256D0 pcap_stats
+         85   54 00029590 pcap_stats_ex
+         86   55 00025670 pcap_strerror
+         87   56 00023A40 wsockinit
+
+  Summary
+
+        C000 .data
+        3000 .pdata
+       17000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       3C000 .text

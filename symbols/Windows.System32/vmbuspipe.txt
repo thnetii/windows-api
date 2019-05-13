@@ -1,0 +1,38 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\vmbuspipe.dll
+
+File Type: DLL
+
+  Section contains the following exports for vmbuspipe.dll
+
+    00000000 characteristics
+    DED00FFA time date stamp
+        0.00 version
+           1 ordinal base
+          10 number of functions
+          10 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00002A60 VmbusPipeClientEnumeratePipes
+          2    1 00002D10 VmbusPipeClientOpenChannel
+          3    2 00002D40 VmbusPipeClientOpenChannelEx
+          4    3 00002E10 VmbusPipeClientReadyForChannelNotification
+          5    4 00002F30 VmbusPipeClientRegisterChannelNotification
+          6    5 000030B0 VmbusPipeClientUnregisterChannelNotification
+          7    6 00003140 VmbusPipeClientWaitChannel
+          8    7 000020E0 VmbusPipeServerConnectPipe
+          9    8 00002140 VmbusPipeServerOfferChannel
+         10    9 00002260 VmbusPipeServerOfferChannelEx
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        3000 .text

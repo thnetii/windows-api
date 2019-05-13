@@ -1,0 +1,37 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\chkwudrv.dll
+
+File Type: DLL
+
+  Section contains the following exports for chkwudrv.dll
+
+    00000000 characteristics
+    B94950AF time date stamp
+        0.00 version
+           1 ordinal base
+           9 number of functions
+           9 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00002DF0 CancelWUOperation
+          2    1 00002A60 IsWUAvailable
+          3    2 00002CD0 OpenWUContext
+          4    3 00002D10 ReleaseWUContext
+          5    4 00002E30 RemoveWUDirectory
+          6    5 00002B80 WUDownloadUpdatedFiles
+          7    6 00002AF0 WUExpandUpdateToPath
+          8    7 00002C60 WUFindMatchingDriver
+          9    8 00002BF0 WUInstallBestUpdate
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        4000 .text

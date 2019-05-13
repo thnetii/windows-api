@@ -1,0 +1,59 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\Microsoft.Management.Infrastructure.Native.Unmanaged.dll
+
+File Type: DLL
+
+  Section contains the following exports for Microsoft.Management.Infrastructure.Native.Unmanaged.DLL
+
+    00000000 characteristics
+    A60ABE19 time date stamp
+        0.00 version
+           1 ordinal base
+          31 number of functions
+          31 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001390 GetAddr_OperationCallbacks_ClassObjectNeededCallback
+          2    1 000013B0 GetAddr_OperationCallbacks_FreeIncludedFileBufferCallback
+          3    2 000013A0 GetAddr_OperationCallbacks_GetIncludedFileBufferCallback
+          4    3 00001A00 GetAddr_OperationCallbacks_NativeClassCallback
+          5    4 000019F0 GetAddr_OperationCallbacks_NativeIndicationCallback
+          6    5 00001990 GetAddr_OperationCallbacks_NativeInstanceCallback
+          7    6 000019E0 GetAddr_OperationCallbacks_NativePromptUserCallback
+          8    7 000019A0 GetAddr_OperationCallbacks_NativeStreamedParameterResultCallback
+          9    8 000019D0 GetAddr_OperationCallbacks_NativeWriteErrorCallback
+         10    9 000019B0 GetAddr_OperationCallbacks_NativeWriteMessageCallback
+         11    A 000019C0 GetAddr_OperationCallbacks_NativeWriteProgressCallback
+         12    B 00001DE0 GetAddr_SessionHandle_OnReleaseHandleCompleted
+         13    C 000010D0 MI_ApplicationWrapper_Initialize
+         14    D 000012C0 MI_ApplicationWrapper_ScheduleCleanupCallback
+         15    E 00001010 MI_ApplicationWrapper_SetAppDomainIsUnloading
+         16    F 00001F00 MI_Helpers_GetCurrentSecurityToken
+         17   10 00001EB0 MI_Helpers_IsClrShuttingDown
+         18   11 00001EF0 MI_Helpers_SetClrIsNotShuttingDown
+         19   12 00001ED0 MI_Helpers_SetClrIsShuttingDown
+         20   13 00001580 MI_OperationWrapper_DecrementCount_AndDontWorryAboutLifetimeOfMiDotNetDll
+         21   14 00001510 MI_OperationWrapper_DecrementCount_AndManageLifetimeOfMiDotNetDll
+         22   15 00001700 MI_OperationWrapper_GetClass
+         23   16 00001650 MI_OperationWrapper_GetIndication
+         24   17 000015D0 MI_OperationWrapper_GetInstance
+         25   18 000013C0 MI_OperationWrapper_Initialize
+         26   19 00001970 MI_OperationWrapper_ScheduleDrainingWorkIfNeeded
+         27   1A 000018D0 MI_OperationWrapper_SetupDrainingIfNeeded
+         28   1B 00001F60 UnmanagedMI_GetMiClientFT_V1
+         29   1C 00001F80 UnmanagedMI_GetMiEvaluatorFT_V1
+         30   1D 00001F80 UnmanagedMI_GetMiMonitoringFT_V1
+         31   1E 00001F80 UnmanagedMI_GetMiReactiveExtensionsFT_V1
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        2000 .text

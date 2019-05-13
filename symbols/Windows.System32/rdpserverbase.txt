@@ -1,0 +1,48 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\rdpserverbase.dll
+
+File Type: DLL
+
+  Section contains the following exports for RDPSERVERBASE.dll
+
+    00000000 characteristics
+    F2BBE961 time date stamp
+        0.00 version
+           1 ordinal base
+          19 number of functions
+          19 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0000C620 ?GetEncodingPixelMap@RdpSurface@@QEAAJPEAPEAVPixelMap@@@Z
+          2    1 0000F460 ?GetGfxPipeSettingBOOL@@YAJPEAGHPEAH@Z
+          3    2 0000F510 ?GetGfxPipeSettingUINT@@YAJPEAGIPEAI@Z
+          4    3 0000D700 ?GetGraphicsSourceContext@RdpSurface@@QEAAJPEAPEAUIRdpGFXSourceUpdateContext@@@Z
+          5    4 0000F680 ?GetTileFirst@Tiler@@QEAAJPEBURdpRect@@PEAU2@@Z
+          6    5 0000F8A0 ?GetTileNext@Tiler@@QEAAJPEAURdpRect@@@Z
+          7    6 0000F5B0 ?Initialize@Tiler@@QEAAJPEBURdpRect@@0@Z
+          8    7 000EA080 ?LogRDPGraphicsError@RDPGraphicsTraceLogging@@YAXU_GUID@@IIJ@Z
+          9    8 000EB510 ?LogRDPGraphicsSubsampleAdapter@RDPGraphicsTraceLogging@@YAXPEBGII@Z
+         10    9 000EB420 ?LogRDPGraphicsSubsampleFailure@RDPGraphicsTraceLogging@@YAXJI@Z
+         11    A 000EADF0 ?LogRDPGraphicsVOBRHint@RDPGraphicsTraceLogging@@YAXI_KII@Z
+         12    B 000EB650 ?RDPGraphicsTraceLogging_Register@RDPGraphicsTraceLogging@@YAJXZ
+         13    C 000EB670 ?RDPGraphicsTraceLogging_Unregister@RDPGraphicsTraceLogging@@YAXXZ
+         14    D 0008A960 CCompressedUpdateContext_CreateInstance
+         15    E 0008A870 CUpdateContext_CreateInstance
+         16    F 0008A8E0 CUpdateDataAccumulator_CreateInstance
+         17   10 000EA030 RDPEncryptionTraceLogging_Register
+         18   11 000EA050 RDPEncryptionTraceLogging_Unregister
+         19   12 00001BB0 RDPSERVERBASE_CreateInstance
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        9000 .pdata
+       85000 .rdata
+        2000 .reloc
+        1000 .rsrc
+      12D000 .text

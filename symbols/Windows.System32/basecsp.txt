@@ -1,0 +1,57 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\basecsp.dll
+
+File Type: DLL
+
+  Section contains the following exports for BaseCSP.dll
+
+    00000000 characteristics
+    593872B7 time date stamp
+        0.00 version
+           1 ordinal base
+          28 number of functions
+          28 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00007980 CPAcquireContext
+          2    1 00007D60 CPAcquireContextW
+          3    2 00009030 CPCreateHash
+          4    3 00008F00 CPDecrypt
+          5    4 00007FD0 CPDeriveKey
+          6    5 000094F0 CPDestroyHash
+          7    6 00008190 CPDestroyKey
+          8    7 000098B0 CPDuplicateHash
+          9    8 00009A60 CPDuplicateKey
+         10    9 00008DB0 CPEncrypt
+         11    A 00008AB0 CPExportKey
+         12    B 00007E20 CPGenKey
+         13    C 00009660 CPGenRandom
+         14    D 000089A0 CPGetHashParam
+         15    E 000082D0 CPGetKeyParam
+         16    F 00008890 CPGetProvParam
+         17   10 00009730 CPGetUserKey
+         18   11 000091F0 CPHashData
+         19   12 000092E0 CPHashSessionKey
+         20   13 00008BE0 CPImportKey
+         21   14 00007D80 CPReleaseContext
+         22   15 000088B0 CPSetHashParam
+         23   16 000081E0 CPSetKeyParam
+         24   17 00008420 CPSetProvParam
+         25   18 000093D0 CPSignHash
+         26   19 00009540 CPVerifySignature
+         27   1A 00009CA0 DllRegisterServer
+         28   1B 00009E60 DllUnregisterServer
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        2000 .pdata
+        9000 .rdata
+        1000 .reloc
+        6000 .rsrc
+       22000 .text

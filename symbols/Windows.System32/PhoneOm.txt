@@ -1,0 +1,169 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\PhoneOm.dll
+
+File Type: DLL
+
+  Section contains the following exports for PhoneOm.dll
+
+    00000000 characteristics
+    271EC191 time date stamp
+        0.00 version
+           1 ordinal base
+         140 number of functions
+         140 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0001D4F0 CreatePhoneRpcClient
+          2    1 00020540 DTMFModeListener_CreateInstance
+          3    2 0001CD60 DllCanUnloadNow
+          4    3 0001CDC0 DllGetActivationFactory
+          5    4 0001CE00 DllGetClassObject
+          6    5 00022D50 PhoneAPIInitialize
+          7    6 00022E10 PhoneAPIUninitialize
+          8    7 00022EB0 PhoneAcceptIncoming
+          9    8 00022FB0 PhoneAcceptIncomingEx
+         10    9 00005810 PhoneAcceptUpgradingRealTimeTextCall
+         11    A 000230B0 PhoneAcceptVideo
+         12    B 0002B1B0 PhoneActivateVisualVoicemail
+         13    C 000231E0 PhoneAddListener
+         14    D 00023380 PhoneAddVideo
+         15    E 00005930 PhoneCallCapabilityAccessCheck
+         16    F 000234B0 PhoneCallVoicemail
+         17   10 000235C0 PhoneCancelNonSeamlessUpgrade
+         18   11 00023700 PhoneClearIdleCallsFromController
+         19   12 000237E0 PhoneConference
+         20   13 00023940 PhoneConfirmNonSeamlessUpgrade
+         21   14 0002B210 PhoneDeactivateVisualVoicemail
+         22   15 00023A80 PhoneDial
+         23   16 00005A40 PhoneDowngradeFromRealTimeTextCall
+         24   17 00023C40 PhoneDropAccept
+         25   18 00023D70 PhoneDropAcceptEx
+         26   19 00023E90 PhoneDropVideo
+         27   1A 00023FC0 PhoneEnableBluetoothHandsFree
+         28   1B 000240B0 PhoneEnd
+         29   1C 000241C0 PhoneExecutePendingDtmfWait
+         30   1D 000242A0 PhoneExitEmergencyMode
+         31   1E 00024390 PhoneExplicitCallTransfer
+         32   1F 000244C0 PhoneFinishRecording
+         33   20 00024600 PhoneFlash
+         34   21 00024700 PhoneFormatPhoneNumber
+         35   22 00022D40 PhoneFreeCallInfo
+         36   23 000247E0 PhoneFreeRecordingApplicationList
+         37   24 00024850 PhoneGetActiveAppByType
+         38   25 00024970 PhoneGetActiveSpamFilterApp
+         39   26 00024A90 PhoneGetAggregateBranding
+         40   27 00024BB0 PhoneGetAppListByType
+         41   28 00024CE0 PhoneGetAssistedDialNumber
+         42   29 00024E00 PhoneGetAssistedDialSetting
+         43   2A 00024EF0 PhoneGetAvailableActions
+         44   2B 00025090 PhoneGetBlockPrivateNumbersSetting
+         45   2C 000251B0 PhoneGetBlockUnknownNumbersSetting
+         46   2D 000252D0 PhoneGetBluetoothHandsFreeState
+         47   2E 00025420 PhoneGetBrandingText
+         48   2F 00025560 PhoneGetCallCounts
+         49   30 00025640 PhoneGetCallInfo
+         50   31 00025750 PhoneGetCallState
+         51   32 00025890 PhoneGetCallsInConference
+         52   33 00025B30 PhoneGetCellularApiComponentInfo
+         53   34 00025C30 PhoneGetDefaultOutgoingLine
+         54   35 00005B60 PhoneGetDeviceRealTimeTextAutomaticEnabled
+         55   36 00005C80 PhoneGetDeviceRealTimeTextEnabled
+         56   37 00025D90 PhoneGetDeviceSupportsVideoCalling
+         57   38 00025EB0 PhoneGetElapsedTime
+         58   39 000260C0 PhoneGetLinePublicInfo
+         59   3A 00026260 PhoneGetLinePublicSettings
+         60   3B 0002B270 PhoneGetLines
+         61   3C 0002B2C0 PhoneGetLinesEx
+         62   3D 00026390 PhoneGetMute
+         63   3E 000264B0 PhoneGetNetworkAlert
+         64   3F 000265A0 PhoneGetPreferredCallUpgradeLine
+         65   40 0002B330 PhoneGetProviderLineInfo
+         66   41 0002B410 PhoneGetProviderLineLockInfo
+         67   42 0002B470 PhoneGetProviderLineServiceInfo
+         68   43 0002B4D0 PhoneGetProviderLineVvmConnectivityState
+         69   44 000266F0 PhoneGetRecordingApplications
+         70   45 00026830 PhoneGetShouldMuteKeypad
+         71   46 00026950 PhoneGetSpeaker
+         72   47 00026AA0 PhoneGetState
+         73   48 00026BA0 PhoneGetVideoCapabilities
+         74   49 00026CC0 PhoneGetVideoCapabilitySharingSettings
+         75   4A 0002B5C0 PhoneGetVisualVoicemailAccessor
+         76   4B 0002B720 PhoneGetVisualVoicemailBranding
+         77   4C 00026DF0 PhoneGetVoicemailNumberAndOverrideInfo
+         78   4D 00026F40 PhoneGetWiredHeadsetState
+         79   4E 00027090 PhoneHandleAppUninstallByType
+         80   4F 000271C0 PhoneInitiateCallUpgrade
+         81   50 00027300 PhoneInitiateRetrievalOfCIDRestrictionSupport
+         82   51 00027440 PhoneIsActionAvailable
+         83   52 00027580 PhoneIsDtmfWaitPending
+         84   53 00027690 PhoneIsEmergencyNumber
+         85   54 00027790 PhoneIsImmediateDialString
+         86   55 000278A0 PhoneIsPhoneNumberInBlockList
+         87   56 000279C0 PhoneIsVideoCallingEnabled
+         88   57 00027AC0 PhoneIsVideoCallingSwitchActionable
+         89   58 00027BC0 PhoneIsVoiceRoamingRestrictionActive
+         90   59 00027D00 PhoneIsVvmSetupComplete
+         91   5A 00027E40 PhoneMapIddPrefixToPlus
+         92   5B 00027F50 PhoneMapPlusToDialingPrefix
+         93   5C 00028120 PhoneMarkDataAffinityNotificationSeen
+         94   5D 00028250 PhoneMarkVvmSetupComplete
+         95   5E 0002B7A0 PhoneModifyCallForwarding
+         96   5F 0002B8A0 PhoneModifyCallerIdSetting
+         97   60 00028390 PhoneModifyVideoCallingSetting
+         98   61 0002B930 PhoneModifyVoicemailAddress
+         99   62 000205A0 PhoneNotificationHelper_CreateInstance
+        100   63 000284D0 PhonePauseRecording
+        101   64 00028610 PhonePrivate
+        102   65 00028720 PhonePublicDial
+        103   66 00028890 PhoneRefreshCallForwardingState
+        104   67 000289D0 PhoneRefreshEcbmState
+        105   68 00028AF0 PhoneRefreshVideoCallingSetting
+        106   69 00028BE0 PhoneReinitiateCallerIdLookup
+        107   6A 00028D20 PhoneRejectIncoming
+        108   6B 00028E30 PhoneRejectVideo
+        109   6C 00028F60 PhoneRemoveListener
+        110   6D 00029020 PhoneSaveVvmPassword
+        111   6E 00029160 PhoneSendDTMF
+        112   6F 00029290 PhoneSendDTMFStart
+        113   70 000293B0 PhoneSendDTMFStop
+        114   71 00005DA0 PhoneSendRealTimeTextData
+        115   72 000294C0 PhoneSetActiveAppByType
+        116   73 000295F0 PhoneSetActiveSpamFilterApp
+        117   74 00029720 PhoneSetBlockPrivateNumbersSetting
+        118   75 00029840 PhoneSetBlockUnknownNumbersSetting
+        119   76 00029960 PhoneSetCallOriginInfo
+        120   77 00005EE0 PhoneSetCallerAsActiveAppByType
+        121   78 00029A90 PhoneSetFilterAppBlockList
+        122   79 00029BB0 PhoneSetForegroundLine
+        123   7A 00029CF0 PhoneSetHold
+        124   7B 00029E00 PhoneSetLocalVideo
+        125   7C 00029F30 PhoneSetMute
+        126   7D 0002A020 PhoneSetPreferredCallUpgradeLine
+        127   7E 0002A150 PhoneSetRecordingApplication
+        128   7F 0002A270 PhoneSetReminderInfo
+        129   80 0002A3B0 PhoneSetSpeaker
+        130   81 0002A4A0 PhoneSetVideoCapabilitySharingSettings
+        131   82 0002A5D0 PhoneSetVideoPaused
+        132   83 0002A700 PhoneSpamFilteringEnabled
+        133   84 0002A820 PhoneStartRecording
+        134   85 0002A960 PhoneStartVisualVoicemailSync
+        135   86 0002AAA0 PhoneSupportsLocalVvmConfig
+        136   87 0002ABE0 PhoneSwap
+        137   88 00006000 PhoneUpgradeToRealTimeTextCall
+        138   89 0002AD20 PhoneWaitForAPIReady
+        139   8A 00006120 RetrieveSystemNotificationCallbackPayload
+        140   8B 0002BA30 ShouldPlayCallWaitingTone
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        6000 .pdata
+       1C000 .rdata
+        3000 .reloc
+        1000 .rsrc
+       47000 .text

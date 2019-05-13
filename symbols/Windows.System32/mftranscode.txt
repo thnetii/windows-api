@@ -1,0 +1,37 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\mftranscode.dll
+
+File Type: DLL
+
+  Section contains the following exports for MFTranscode.dll
+
+    00000000 characteristics
+    5DAFC067 time date stamp
+        0.00 version
+           1 ordinal base
+           8 number of functions
+           8 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000085E0 GetTranscodeComponentCreator
+          2    1 00019230 MFCreateSmartRemuxEngine
+          3    2 00025B70 MFCreateTranscodeEngine
+          4    3 000087D0 MFCreateTranscodeProfile
+          5    4 0002CC50 MFCreateTranscodeSinkActivate
+          6    5 0002F460 MFCreateTranscodeTopology
+          7    6 0002FF60 MFCreateTranscodeTopologyFromByteStream
+          8    7 000309A0 MFTranscodeGetAudioOutputAvailableTypes
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        2000 .pdata
+        D000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       61000 .text

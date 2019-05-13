@@ -1,0 +1,39 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\moshost.dll
+
+File Type: DLL
+
+  Section contains the following exports for moshost.dll
+
+    00000000 characteristics
+    BB74A8FC time date stamp
+        0.00 version
+           1 ordinal base
+          11 number of functions
+          11 number of names
+
+    ordinal hint RVA      name
+
+          3    0 00004EC0 MosHostCacheStateGetSizes
+          4    1 00004EC0 MosHostCacheStateGetSlotToCleanup
+          5    2 00004EC0 MosHostCacheStateSetMaxSize
+          6    3 00004EC0 MosHostCacheStateSetSlotSize
+          7    4 00004EC0 MosHostCacheStateSnapshot
+          8    5 00004EC0 MosHostCacheStateUnuseSlot
+          9    6 00004EC0 MosHostCacheStateUseSlot
+         10    7 00004EC0 MosHostRequestResourceLock
+         11    8 00004EC0 MosHostRequestResourceUnlock
+          1    9 00009D10 ServiceMain
+          2    A 00009A80 SvchostPushServiceGlobals
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        A000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        C000 .text

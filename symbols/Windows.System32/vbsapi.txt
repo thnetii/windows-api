@@ -1,0 +1,44 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\vbsapi.dll
+
+File Type: DLL
+
+  Section contains the following exports for VbsApi.dll
+
+    00000000 characteristics
+      FE556A time date stamp
+        0.00 version
+           1 ordinal base
+          15 number of functions
+          15 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00003130 HvciGetConfig
+          2    1 000030B0 HvciGetConfigFromVBSKey
+          3    2 00002EF0 HvciIncompatibilityScanCancel
+          4    3 00002F70 HvciIncompatibilityScanFree
+          5    4 00002F40 HvciIncompatibilityScanGetResult
+          6    5 00002D80 HvciIncompatibilityScanInitialize
+          7    6 00002E20 HvciIncompatibilityScanOverrideDriverCompatDatabase
+          8    7 00002E10 HvciIncompatibilityScanOverrideServicesKey
+          9    8 00002E60 HvciIncompatibilityScanStart
+         10    9 00003040 HvciIsActive
+         11    A 00001020 VbsGetIssues
+         12    B 00001260 VbsIsCapable
+         13    C 00001250 VbsIsRecommended
+         14    D 000013D0 VbsSetScenarioEnable
+         15    E 00001280 VbsSetScenarioEnableToVBSKey
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        A000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       16000 .text

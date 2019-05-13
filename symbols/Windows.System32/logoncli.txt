@@ -1,0 +1,115 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\logoncli.dll
+
+File Type: DLL
+
+  Section contains the following exports for logoncli.dll
+
+    00000000 characteristics
+    A9B4721F time date stamp
+        0.00 version
+           1 ordinal base
+          86 number of functions
+          86 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0001AD20 AuthzrExtAccessCheck
+          2    1 0001ADB0 AuthzrExtFreeContext
+          3    2 0001AE30 AuthzrExtFreeResourceManager
+          4    3 0001AE50 AuthzrExtGetInformationFromContext
+          5    4 0001AEC0 AuthzrExtInitializeCompoundContext
+          6    5 0001AF50 AuthzrExtInitializeContextFromSid
+          7    6 0001AFF0 AuthzrExtInitializeRemoteResourceManager
+          8    7 0001B140 AuthzrExtModifyClaims
+          9    8 0000DCB0 DsAddressToSiteNamesA
+         10    9 0000DF70 DsAddressToSiteNamesExA
+         11    A 0000E350 DsAddressToSiteNamesExW
+         12    B 0000E610 DsAddressToSiteNamesW
+         13    C 00011690 DsDeregisterDnsHostRecordsA
+         14    D 00011790 DsDeregisterDnsHostRecordsW
+         15    E 00011820 DsEnumerateDomainTrustsA
+         16    F 00011C90 DsEnumerateDomainTrustsW
+         17   10 0000E7E0 DsGetDcCloseW
+         18   11 0000E7F0 DsGetDcNameA
+         19   12 00002960 DsGetDcNameW
+         20   13 0000E830 DsGetDcNameWithAccountA
+         21   14 00003130 DsGetDcNameWithAccountW
+         22   15 0000ED80 DsGetDcNextA
+         23   16 0000EE90 DsGetDcNextW
+         24   17 0000EF80 DsGetDcOpenA
+         25   18 0000F0B0 DsGetDcOpenW
+         26   19 0000F1E0 DsGetDcSiteCoverageA
+         27   1A 0000F450 DsGetDcSiteCoverageW
+         28   1B 00011DB0 DsGetForestTrustInformationW
+         29   1C 0000F620 DsGetSiteNameA
+         30   1D 0000F6D0 DsGetSiteNameW
+         31   1E 00011E50 DsMergeForestTrustInformationW
+         32   1F 0000F8B0 DsValidateSubnetNameA
+         33   20 0000F910 DsValidateSubnetNameW
+         34   21 0000FAB0 I_DsUpdateReadOnlyServerDnsRecords
+         35   22 00011EB0 I_NetAccountDeltas
+         36   23 00011EB0 I_NetAccountSync
+         37   24 00011EC0 I_NetChainSetClientAttributes
+         38   25 00011F80 I_NetChainSetClientAttributes2
+         39   26 00011EB0 I_NetDatabaseDeltas
+         40   27 00011EB0 I_NetDatabaseRedo
+         41   28 00011EB0 I_NetDatabaseSync
+         42   29 00011EB0 I_NetDatabaseSync2
+         43   2A 00012040 I_NetExtendMachinePasswordExpirationTimeout
+         44   2B 0000D930 I_NetGetDCList
+         45   2C 000120A0 I_NetGetForestTrustInformation
+         46   2D 00012140 I_NetLogonControl
+         47   2E 000121D0 I_NetLogonControl2
+         48   2F 00012330 I_NetLogonGetCapabilities
+         49   30 000123D0 I_NetLogonGetDomainInfo
+         50   31 00010CB0 I_NetLogonSamLogoff
+         51   32 00010D50 I_NetLogonSamLogon
+         52   33 00010E30 I_NetLogonSamLogonEx
+         53   34 00010F30 I_NetLogonSamLogonWithFlags
+         54   35 00011020 I_NetLogonSendToSam
+         55   36 000110C0 I_NetLogonUasLogoff
+         56   37 00011130 I_NetLogonUasLogon
+         57   38 000124A0 I_NetQuerySecureChannelDCInfo
+         58   39 00012510 I_NetServerAuthenticate
+         59   3A 000125B0 I_NetServerAuthenticate2
+         60   3B 00012650 I_NetServerAuthenticate3
+         61   3C 00012700 I_NetServerGetTrustInfo
+         62   3D 000127C0 I_NetServerPasswordGet
+         63   3E 00012860 I_NetServerPasswordSet
+         64   3F 00012900 I_NetServerPasswordSet2
+         65   40 000129A0 I_NetServerReqChallenge
+         66   41 00012A20 I_NetServerTrustPasswordsGet
+         67   42 00012AD0 I_NetlogonComputeClientDigest
+         68   43 00012B60 I_NetlogonComputeClientSignature
+         69   44 00012C10 I_NetlogonComputeServerDigest
+         70   45 00012CA0 I_NetlogonComputeServerSignature
+         71   46 00012D50 I_NetlogonGetTrustRid
+         72   47 00013A00 I_RpcExtInitializeExtensionPoint
+         73   48 00013210 NetAddServiceAccount
+         74   49 00013290 NetEnumerateServiceAccounts
+         75   4A 00012DC0 NetEnumerateTrustedDomains
+         76   4B 0000FB50 NetGetAnyDCName
+         77   4C 0000FBC0 NetGetDCName
+         78   4D 00013370 NetIsServiceAccount
+         79   4E 00012E60 NetLogonGetTimeServiceParentDomain
+         80   4F 00012ED0 NetLogonSetServiceBits
+         81   50 000133E0 NetQueryServiceAccount
+         82   51 00013490 NetRemoveServiceAccount
+         83   52 000112C0 NlBindingAddServerToCache
+         84   53 00011550 NlBindingRemoveServerFromCache
+         85   54 000115B0 NlBindingSetAuthInfo
+         86   55 0000FE20 NlSetDsIsCloningPDC
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        2000 .pdata
+       1A000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       1D000 .text

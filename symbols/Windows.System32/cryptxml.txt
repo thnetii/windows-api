@@ -1,0 +1,48 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\cryptxml.dll
+
+File Type: DLL
+
+  Section contains the following exports for CRYPTXML.dll
+
+    00000000 characteristics
+    CA74D8B7 time date stamp
+        0.00 version
+           1 ordinal base
+          19 number of functions
+          19 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000028B0 CryptXmlAddObject
+          2    1 00003020 CryptXmlClose
+          3    2 000034F0 CryptXmlCreateReference
+          4    3 00003BE0 CryptXmlDigestReference
+          5    4 000052B0 CryptXmlEncode
+          6    5 00008200 CryptXmlEnumAlgorithmInfo
+          7    6 00008340 CryptXmlFindAlgorithmInfo
+          8    7 00001010 CryptXmlGetAlgorithmInfo
+          9    8 00003080 CryptXmlGetDocContext
+         10    9 00003100 CryptXmlGetReference
+         11    A 00003180 CryptXmlGetSignature
+         12    B 00003200 CryptXmlGetStatus
+         13    C 00009AC0 CryptXmlGetTransforms
+         14    D 00008450 CryptXmlImportPublicKey
+         15    E 00009EB0 CryptXmlOpenToDecode
+         16    F 0000A0A0 CryptXmlOpenToEncode
+         17   10 0000AEA0 CryptXmlSetHMACSecret
+         18   11 0000AF90 CryptXmlSign
+         19   12 0000BB80 CryptXmlVerifySignature
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        1000 .pdata
+        8000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       14000 .text

@@ -1,0 +1,53 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\iassvcs.dll
+
+File Type: DLL
+
+  Section contains the following exports for iassvcs.dll
+
+    00000000 characteristics
+    DB835A7B time date stamp
+        0.00 version
+           1 ordinal base
+          24 number of functions
+          24 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0000E440 DllCanUnloadNow
+          2    1 0000E460 DllGetClassObject
+          3    2 0000E490 DllRegisterServer
+          4    3 0000E700 DllUnregisterServer
+          5    4 00001B60 IASAdler32
+          6    5 00001BC0 IASAllocateUniqueID
+          7    6 00002780 IASGetDictionary
+          8    7 000023E0 IASGetHostByName
+          9    8 000028D0 IASGetLocalDictionary
+         10    9 00002B30 IASGetProductLimits
+         11    A 000029E0 IASGlobalLock
+         12    B 00002A00 IASGlobalUnlock
+         13    C 00001F30 IASInitialize
+         14    D 000021E0 IASRadiusCrypt
+         15    E 00001740 IASRegisterComponent
+         16    F 00001540 IASReportEvent
+         17   10 0000D980 IASReportLicenseViolation
+         18   11 000015B0 IASReportSecurityEvent
+         19   12 00001610 IASRequestThread
+         20   13 00001620 IASSetMaxNumberOfThreads
+         21   14 000016B0 IASSetMaxThreadIdle
+         22   15 00002070 IASShutdown
+         23   16 000020D0 IASUninitialize
+         24   17 00001BE0 IASVariantChangeType
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        1000 .pdata
+        8000 .rdata
+        1000 .reloc
+        6000 .rsrc
+       16000 .text

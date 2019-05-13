@@ -1,0 +1,262 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\dmdskmgr.dll
+
+File Type: DLL
+
+  Section contains the following exports for DMDskMgr.dll
+
+    00000000 characteristics
+    1C4FA7DC time date stamp
+        0.00 version
+           1 ordinal base
+         233 number of functions
+         233 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0000F450 ??0CDataCache@@QEAA@XZ
+          2    1 0001A7F0 ??1CDMNodeObj@@QEAA@XZ
+          3    2 0000FAB0 ??1CDataCache@@UEAA@XZ
+          4    3 0000FF40 ?AddFileSystemInfoToCache@CDataCache@@QEAAXKPEAUfilesysteminfo@@@Z
+          5    4 0000FFE0 ?AddFileSystemInfoToListAndMap@CDataCache@@QEAAXKPEAUfilesysteminfo@@@Z
+          6    5 00007850 ?AddLDMObjMapEntry@CDataCache@@QEAAXPEAU_LDM_OBJ_MAP_ENTRY@@@Z
+          7    6 00010110 ?AddRegionToVolumeMemberList@CDataCache@@QEAAXPEAVCDMNodeObj@@@Z
+          8    7 00015500 ?AddRow@CDMComponentData@@QEAAXPEAVCDMScopeNode@@_J@Z
+          9    8 000102F0 ?AdjustRegionCountInLegendList@CDataCache@@QEAAXW4_REGIONTYPE@@HPEAVCTaskData@@@Z
+         10    9 00010350 ?AdjustVolumeCountInLegendList@CDataCache@@QEAAXW4_VOLUMELAYOUT@@HPEAVCTaskData@@@Z
+         11    A 0001A8F0 ?CanHaveGPT@CDMNodeObj@@QEAAHXZ
+         12    B 00015560 ?ChangeRow@CDMComponentData@@QEAAXPEAVCDMScopeNode@@_J@Z
+         13    C 000084F0 ?Command@CContextMenu@@QEAAJJPEAUIDataObject@@_J@Z
+         14    D 0001A950 ?ContainsActivePartition@CDMNodeObj@@QEAAHXZ
+         15    E 0001A990 ?ContainsBootIniPartition@CDMNodeObj@@QEAAHXZ
+         16    F 0001A9E0 ?ContainsBootIniPartitionForWolfpack@CDMNodeObj@@QEAAHXZ
+         17   10 0001AA70 ?ContainsBootVolumesNumberChange@CDMNodeObj@@QEAAH_JPEAH@Z
+         18   11 0001AB10 ?ContainsESPPartition@CDMNodeObj@@QEAAHXZ
+         19   12 0001AB80 ?ContainsFVEPartition@CDMNodeObj@@QEAAHXZ
+         20   13 0001ABC0 ?ContainsLogicalDrvBootPartition@CDMNodeObj@@QEAAHXZ
+         21   14 0001AC10 ?ContainsPageFile@CDMNodeObj@@QEAAHXZ
+         22   15 0001AC50 ?ContainsRealSystemPartition@CDMNodeObj@@QEAAHXZ
+         23   16 0001ACD0 ?ContainsSubDiskNeedResync@CDMNodeObj@@QEAAHXZ
+         24   17 0001AE00 ?ContainsSystemInformation@CDMNodeObj@@QEAAHXZ
+         25   18 0001AE80 ?ContainsSystemPartition@CDMNodeObj@@QEAAHXZ
+         26   19 000103B0 ?CreateDiskList@CDataCache@@QEAAXXZ
+         27   1A 00010460 ?CreateNodeObjAndAddToMap@CDataCache@@QEAAPEAVCDMNodeObj@@HW4_NODEOBJ_TYPES@@PEAV1@PEAX_J@Z
+         28   1B 00010670 ?CreateRegionNodeObj@CDataCache@@QEAAPEAVCDMNodeObj@@PEAV2@PEAUregioninfoex@@@Z
+         29   1C 00010820 ?CreateShortDiskName@CDataCache@@QEAAXAEAUdiskinfoex@@@Z
+         30   1D 000109D0 ?CreateVolumeList@CDataCache@@QEAAXXZ
+         31   1E 00010B50 ?DeleteDiskGroupData@CDataCache@@QEAAXPEAUDISK_GROUP_DATA@@@Z
+         32   1F 00010B60 ?DeleteEncapsulateData@CDataCache@@QEAAXPEAUENCAPSULATE_DATA@@@Z
+         33   20 00010BC0 ?DeleteLists@CDataCache@@QEAAXXZ
+         34   21 00010DC0 ?DeleteRegionFromVolumeMemberList@CDataCache@@QEAAXPEAVCDMNodeObj@@@Z
+         35   22 00015860 ?DeleteRow@CDMComponentData@@QEAAXPEAVCDMScopeNode@@_J@Z
+         36   23 0000A700 ?DoDelete@CContextMenu@@QEAAX_J@Z
+         37   24 0000C340 ?DoRevertToNT4@CContextMenu@@QEAAX_JH@Z
+         38   25 00015A30 ?EmptyOcxViewData@CDMComponentData@@QEAAXPEAVCDMScopeNode@@@Z
+         39   26 0001AEC0 ?EnhancedIsUpgradeable@CDMNodeObj@@QEAAHPEAVCTaskData@@@Z
+         40   27 0001B010 ?EnumDiskRegions@CDMNodeObj@@QEAAXPEAPEA_JAEAJ@Z
+         41   28 00024190 ?EnumDisks@CTaskData@@QEAAXAEAKPEAPEA_J@Z
+         42   29 0001B0A0 ?EnumFirstVolumeMember@CDMNodeObj@@QEAAXAEA_JAEAJ@Z
+         43   2A 00010E60 ?EnumNTFSwithDriveLetter@CDataCache@@QEAAXPEAHPEAPEAG@Z
+         44   2B 000241B0 ?EnumNTFSwithDriveLetter@CTaskData@@QEAAXPEAHPEAPEAG@Z
+         45   2C 0001B110 ?EnumVolumeMembers@CDMNodeObj@@QEAAXPEAPEA_JAEAJ@Z
+         46   2D 000241D0 ?EnumVolumes@CTaskData@@QEAAXAEAKPEAPEA_J@Z
+         47   2E 00010F70 ?FillDeviceInstanceId@CDataCache@@QEAAXPEAG0@Z
+         48   2F 000241F0 ?FilterCookiesBigEnoughForFTRepair@CTaskData@@QEAAXAEAKPEA_JPEAPEA_J_JPEAVCDMNodeObj@@@Z
+         49   30 00024440 ?FilterCookiesBigEnoughForRAID5Repair@CTaskData@@QEAAXAEAKPEA_JPEAPEA_J_JPEAVCDMNodeObj@@@Z
+         50   31 00011070 ?FindCookieAndRemoveFromList@CDataCache@@QEAAH_JPEAV?$CList@PEAVCDMNodeObj@@PEAV1@@@@Z
+         51   32 000110B0 ?FindDeviceInstanceId@CDataCache@@QEAAPEAG_J@Z
+         52   33 00011120 ?FindDiskPtrFromDiskId@CDataCache@@QEAAH_JPEAPEAVCDMNodeObj@@@Z
+         53   34 000111B0 ?FindDriveLetter@CDataCache@@QEAAH_JAEAG@Z
+         54   35 00024530 ?FindDriveLetter@CTaskData@@QEAAX_JAEAG@Z
+         55   36 00011280 ?FindFileSystem@CDataCache@@QEAAH_JAEAUfilesysteminfo@@@Z
+         56   37 00024550 ?FindFileSystem@CTaskData@@QEAAH_JAEAUfilesysteminfo@@@Z
+         57   38 00011330 ?FindRegionPtrFromRegionId@CDataCache@@QEAAH_JPEAPEAVCDMNodeObj@@@Z
+         58   39 00024570 ?FindRegionPtrFromRegionId@CTaskData@@QEAAH_JPEAPEAVCDMNodeObj@@@Z
+         59   3A 000113B0 ?FindRegionPtrOnDiskFromRegionId@CDataCache@@QEAAHPEAVCDMNodeObj@@_JPEAPEAV2@AEAPEAU__POSITION@@@Z
+         60   3B 00024590 ?GetAssignedDriveLetter@CTaskData@@QEAAH_JAEAG@Z
+         61   3C 00011510 ?GetBootPort@CDataCache@@QEAAHXZ
+         62   3D 000245C0 ?GetBootPort@CTaskData@@QEAAHXZ
+         63   3E 0001B1E0 ?GetColorRef@CDMNodeObj@@QEAAKXZ
+         64   3F 00011590 ?GetComponentData@CDataCache@@QEAAPEAVCDMComponentData@@XZ
+         65   40 000245E0 ?GetDMDataObjPtrFromId@CTaskData@@QEAAPEAVCDMNodeObj@@_J@Z
+         66   41 0001B3B0 ?GetDeviceAttributes@CDMNodeObj@@QEAAKXZ
+         67   42 0001B3D0 ?GetDeviceState@CDMNodeObj@@QEAAKXZ
+         68   43 0001B3F0 ?GetDeviceType@CDMNodeObj@@QEAAKXZ
+         69   44 000115B0 ?GetDiskCookies@CDataCache@@IEAAXAEAKPEAPEA_J@Z
+         70   45 00024630 ?GetDiskCookies@CTaskData@@QEAAXAEAKPEAPEA_JHKH@Z
+         71   46 00024730 ?GetDiskCookiesForAddMirror@CTaskData@@QEAAX_JAEAKPEAPEA_J@Z
+         72   47 00024960 ?GetDiskCookiesForCreateVolume@CTaskData@@QEAAXAEAKPEAPEA_J@Z
+         73   48 00024A80 ?GetDiskCookiesForExtendVolume@CTaskData@@QEAAX_JAEAKPEAPEA_J@Z
+         74   49 00024B20 ?GetDiskCookiesForSig@CTaskData@@QEAAXAEAKPEAPEA_J@Z
+         75   4A 00024C20 ?GetDiskCookiesForUpgrade@CTaskData@@QEAAXAEAKPEAPEA_J@Z
+         76   4B 00024D80 ?GetDiskCookiesToEncap@CTaskData@@QEAAXAEAKPEAPEA_J@Z
+         77   4C 00024E80 ?GetDiskCookiesWithFreeSpace@CTaskData@@QEAAXAEAKPEAPEA_J@Z
+         78   4D 00007930 ?GetDiskCount@CDataCache@@QEAAKXZ
+         79   4E 0001B410 ?GetDiskInfo@CDMNodeObj@@QEAAHAEAUdiskinfoex@@@Z
+         80   4F 00024F50 ?GetDiskInfoFromVolCookie@CTaskData@@QEAAX_JAEAHAEAKPEAPEA_JKH@Z
+         81   50 0001B4C0 ?GetDiskSpec@CDMNodeObj@@QEAAHAEAUdiskspec@@@Z
+         82   51 0001B500 ?GetDiskStatus@CDMNodeObj@@QEAAHAEAVCString@@@Z
+         83   52 0001B750 ?GetDiskTypeName@CDMNodeObj@@QEAAXAEAVCString@@@Z
+         84   53 0001B920 ?GetDriveLetter@CDMNodeObj@@QEAAXAEAG@Z
+         85   54 00011670 ?GetDriveLetters@CDataCache@@IEAAXAEAFPEAPEAGG@Z
+         86   55 000250F0 ?GetDriveLetters@CTaskData@@QEAAXAEAFPEAPEAGG@Z
+         87   56 0001BA80 ?GetExtendedRegionColor@CDMNodeObj@@QEAAKXZ
+         88   57 0001BAE0 ?GetExtraRegionStatus@CDMNodeObj@@QEAAHAEAVCString@@H@Z
+         89   58 0001C290 ?GetFileSystemLabel@CDMNodeObj@@QEAAXAEAVCString@@@Z
+         90   59 0001C380 ?GetFileSystemName@CDMNodeObj@@QEAAXAEAVCString@@@Z
+         91   5A 0001C550 ?GetFileSystemSize@CDMNodeObj@@QEAAXAEAJ@Z
+         92   5B 0001C640 ?GetFileSystemType@CDMNodeObj@@QEAAHXZ
+         93   5C 00011780 ?GetFileSystemTypes@CDataCache@@QEAAXAEAKPEAPEAUifilesysteminfo@@@Z
+         94   5D 00025110 ?GetFileSystemTypes@CTaskData@@QEAAXAEAKPEAPEAUifilesysteminfo@@@Z
+         95   5E 0001C6B0 ?GetFlags@CDMNodeObj@@QEAAJXZ
+         96   5F 0001C6E0 ?GetIVolumeClientVersion@CDMNodeObj@@QEAAFXZ
+         97   60 00025130 ?GetIVolumeClientVersion@CTaskData@@QEAAFXZ
+         98   61 0001C700 ?GetIconId@CDMNodeObj@@QEAAIH@Z
+         99   62 0001C7B0 ?GetImageNum@CDMNodeObj@@QEAAHXZ
+        100   63 000117F0 ?GetLastKnownState@CDataCache@@QEAA_J_J@Z
+        101   64 0001C940 ?GetLayoutType@CDMNodeObj@@QEAA?AW4_LAYOUT_TYPES@@XZ
+        102   65 00007940 ?GetLdmObjectId@CDMNodeObj@@QEAA_JXZ
+        103   66 0001C9A0 ?GetLogicalDriveCount@CDMNodeObj@@QEAAKXZ
+        104   67 0001C9F0 ?GetLongName@CDMNodeObj@@QEAAXAEAVCString@@H@Z
+        105   68 00015BC0 ?GetMMCWindow@CDMComponentData@@QEAAPEAUHWND__@@XZ
+        106   69 0001CB50 ?GetMaxAdjustedFreeSize@CDMNodeObj@@QEAAXAEA_J@Z
+        107   6A 0001CB70 ?GetMaxPartitionCount@CDMNodeObj@@QEAAKXZ
+        108   6B 00011890 ?GetMinMaxPartitionSizes@CDataCache@@IEAAX_JAEA_J1@Z
+        109   6C 00025150 ?GetMinMaxPartitionSizes@CTaskData@@QEAAX_JAEA_J1@Z
+        110   6D 0001CB90 ?GetName@CDMNodeObj@@QEAAXAEAVCString@@@Z
+        111   6E 00007960 ?GetNumMembers@CDMNodeObj@@QEAAKXZ
+        112   6F 0001CE10 ?GetNumRegions@CDMNodeObj@@QEAAKXZ
+        113   70 0001CE20 ?GetObjectId@CDMNodeObj@@QEAAXAEA_J@Z
+        114   71 00007970 ?GetOcxFrameCWndPtr@CTaskData@@QEAAPEAVCWnd@@XZ
+        115   72 0001CE50 ?GetOfflineReasonText@CDMNodeObj@@QEAAHAEAVCString@@@Z
+        116   73 00025170 ?GetOtherDisksFromVolCookie@CTaskData@@QEAAX_JAEAKPEAPEA_J@Z
+        117   74 0001CF30 ?GetParentDiskPtr@CDMNodeObj@@QEAAPEAV1@XZ
+        118   75 0001D000 ?GetParentVolumePtr@CDMNodeObj@@QEAAPEAV1@XZ
+        119   76 0001D070 ?GetPartitionStyle@CDMNodeObj@@QEAA?AW4_PARTITIONSTYLE@@XZ
+        120   77 0001D090 ?GetPartitionStyleString@CDMNodeObj@@QEAAXAEAVCString@@H@Z
+        121   78 0001D3B0 ?GetPatternRef@CDMNodeObj@@QEAAHXZ
+        122   79 0001D490 ?GetPort@CDMNodeObj@@QEAAHXZ
+        123   7A 0001D4B0 ?GetPrimaryPartitionCount@CDMNodeObj@@QEAAKXZ
+        125   7B 0001D520 ?GetRegionByOffset@CDMNodeObj@@QEAAPEAV1@_J@Z
+        126   7C 00007980 ?GetRegionColorStructPtr@CTaskData@@QEAAXPEAPEAU_REGION_COLORS@@AEAH@Z
+        127   7D 0001D580 ?GetRegionInfo@CDMNodeObj@@QEAAHAEAUregioninfoex@@@Z
+        128   7E 000186F0 ?GetResultPane@CDMSnapin@@QEAAH_JPEAPEAVCDMResultPane@@@Z
+        129   7F 0001E6A0 ?GetResultStringArray@CDMNodeObj@@QEAAHAEAVCStringArray@@@Z
+        130   80 00014210 ?GetScopeNode@CDMScopeNodeCollection@@QEAAH_JPEAPEAVCDMScopeNode@@@Z
+        131   81 00015BD0 ?GetScopeNodeForResultPane@CDMComponentData@@QEAAH_JPEAPEAVCDMScopeNode@@@Z
+        132   82 000079A0 ?GetServerName@CDataCache@@QEAA?AVCString@@XZ
+        133   83 00025310 ?GetServerName@CTaskData@@QEAA?AVCString@@XZ
+        134   84 0001E760 ?GetShortName@CDMNodeObj@@QEAAXAEAVCString@@@Z
+        135   85 0001E8D0 ?GetShrinkableSizeInMB@CDMNodeObj@@QEAA_JXZ
+        136   86 0001E920 ?GetSize@CDMNodeObj@@QEAAXAEA_JH@Z
+        137   87 0001E980 ?GetSizeMB@CDMNodeObj@@QEAAXAEA_J@Z
+        138   88 0001E9D0 ?GetSizeString@CDMNodeObj@@QEAAXAEAVCString@@@Z
+        139   89 0001EAF0 ?GetStartOffset@CDMNodeObj@@QEAA_JXZ
+        140   8A 0001EB30 ?GetStatus@CDMNodeObj@@QEAAHXZ
+        141   8B 0001EB60 ?GetStorageType@CDMNodeObj@@QEAA?AW4_STORAGE_TYPES@@XZ
+        142   8C 0001EC10 ?GetStorageType@CDMNodeObj@@QEAAXAEAVCString@@H@Z
+        143   8D 00025340 ?GetUIState@CTaskData@@QEAAKXZ
+        144   8E 0001F190 ?GetUnallocSpace@CDMNodeObj@@QEAA_JH@Z
+        145   8F 0001F2D0 ?GetUsableContiguousSpaceInMB@CDMNodeObj@@QEAA_JXZ
+        146   90 00012250 ?GetVolumeCookies@CDataCache@@IEAAXAEAKPEAPEA_J@Z
+        147   91 000079D0 ?GetVolumeCount@CDataCache@@QEAAKXZ
+        148   92 0001F310 ?GetVolumeFileSystemTypes@CDMNodeObj@@QEAAJAEAKPEAPEAUilhfilesysteminfo@@@Z
+        149   93 0001F380 ?GetVolumeInfo@CDMNodeObj@@QEAAHAEAUvolumeinfo@@@Z
+        150   94 0001F3F0 ?GetVolumeStatus@CDMNodeObj@@QEAAHAEAVCString@@@Z
+        151   95 0001F740 ?GetVolumeTotalSizeMB@CDMNodeObj@@QEAA_JXZ
+        152   96 0001F790 ?HasExtendedPartition@CDMNodeObj@@QEAAHXZ
+        153   97 00012310 ?HasNTFSwithDriveLetter@CDataCache@@QEAAHXZ
+        154   98 00025350 ?HasNTFSwithDriveLetter@CTaskData@@QEAAHXZ
+        155   99 00012370 ?HasVMDisk@CDataCache@@QEAAHXZ
+        156   9A 0001F7B0 ?IsActive@CDMNodeObj@@QEAAHXZ
+        157   9B 000123D0 ?IsAlpha@CDataCache@@QEAAHXZ
+        158   9C 00025370 ?IsAlpha@CTaskData@@QEAAHXZ
+        159   9D 0001F840 ?IsConvertSuccess@CDMNodeObj@@QEAAJH@Z
+        160   9E 0001F8B0 ?IsCurrBootVolume@CDMNodeObj@@QEAAHXZ
+        161   9F 0001F920 ?IsCurrSystemVolume@CDMNodeObj@@QEAAHXZ
+        162   A0 0001F9A0 ?IsDiskEmpty@CDMNodeObj@@QEAAHXZ
+        163   A1 0001FB20 ?IsDiskOffline@CDMNodeObj@@QEAAHXZ
+        164   A2 0001FB60 ?IsDiskReadOnly@CDMNodeObj@@QEAAHXZ
+        165   A3 000123E0 ?IsDynamic1394@CDataCache@@QEAAHXZ
+        166   A4 0001FBA0 ?IsEECoveredGPTDisk@CDMNodeObj@@QEAAHXZ
+        167   A5 0001FBD0 ?IsESPPartition@CDMNodeObj@@QEAAHXZ
+        168   A6 000123F0 ?IsEfi@CDataCache@@QEAAHXZ
+        169   A7 00025390 ?IsEfi@CTaskData@@QEAAHXZ
+        170   A8 0001FC60 ?IsExtendedPartitionCreated@CDMNodeObj@@QEAAJXZ
+        171   A9 0001FCC0 ?IsFTVolume@CDMNodeObj@@QEAAHXZ
+        172   AA 0001FD00 ?IsFakeVolume@CDMNodeObj@@QEAAHXZ
+        173   AB 0001FD40 ?IsFirstFreeRegion@CDMNodeObj@@QEAAHXZ
+        174   AC 0001FE50 ?IsFreeSpaceFollowed@CDMNodeObj@@QEAAH_J@Z
+        175   AD 0001FF80 ?IsHiddenRegion@CDMNodeObj@@QEAAHXZ
+        176   AE 0001FFB0 ?IsInFlux@CDMNodeObj@@QEAAHXZ
+        177   AF 000253B0 ?IsLocalMachine@CTaskData@@QEAAHXZ
+        178   B0 0001FFD0 ?IsMbrEEPartition@CDMNodeObj@@QEAAHXZ
+        179   B1 00020030 ?IsMember@CDMNodeObj@@QEAAHPEAV1@@Z
+        180   B2 000200D0 ?IsNEC_98Disk@CDMNodeObj@@QEAAHXZ
+        181   B3 00012400 ?IsNEC_98Server@CDataCache@@QEAAHXZ
+        182   B4 000253D0 ?IsNEC_98Server@CTaskData@@QEAAHXZ
+        183   B5 000253F0 ?IsNTServer@CTaskData@@QEAAHXZ
+        184   B6 00020170 ?IsOemPartition@CDMNodeObj@@QEAAHXZ
+        185   B7 00012410 ?IsPersonalOrLapTopServer@CDataCache@@QEAAHXZ
+        186   B8 00012420 ?IsPostLonghornVdsVersion@CDataCache@@QEAAHXZ
+        187   B9 00025410 ?IsPostLonghornVdsVersion@CTaskData@@QEAAHXZ
+        188   BA 00012430 ?IsPreLonghornVdsVersion@CDataCache@@QEAAHXZ
+        189   BB 00025430 ?IsPreLonghornVdsVersion@CTaskData@@QEAAHXZ
+        191   BC 00020230 ?IsRevertable@CDMNodeObj@@QEAAHXZ
+        192   BD 00025450 ?IsSecureSystemPartition@CTaskData@@QEAAHXZ
+        193   BE 00020300 ?IsSpacesProtectivePartition@CDMNodeObj@@QEAAHXZ
+        194   BF 00020390 ?IsUnknownPartition@CDMNodeObj@@QEAAHXZ
+        195   C0 000204E0 ?IsUpgradeable@CDMNodeObj@@QEAAHXZ
+        196   C1 00020540 ?IsVolumeArrived@CDMNodeObj@@QEAAJ_JW4_LAYOUT_TYPES@@@Z
+        197   C2 00020610 ?IsVolumeSimple@CDMNodeObj@@QEAAHXZ
+        198   C3 00012560 ?IsWolfpack@CDataCache@@QEAAHXZ
+        199   C4 00025470 ?IsWolfpack@CTaskData@@QEAAHXZ
+        200   C5 00015D80 ?LoadData@CDMComponentData@@QEAAXPEAVCDMScopeNode@@J@Z
+        202   C6 000206A0 ?MarkDiskForLastVolume@CDMNodeObj@@QEAAXPEAV1@@Z
+        203   C7 00020730 ?MarkDisksForLastVolume@CDMNodeObj@@QEAAXXZ
+        204   C8 00020820 ?OnlyContiguousExtendAllowed@CDMNodeObj@@QEAAHXZ
+        205   C9 0000CC70 ?PopUpInit@CContextMenu@@QEAAXPEAVCDMNodeObj@@AEAH1H@Z
+        206   CA 00003EE0 ?PopulateDiskGroupData@CDataCache@@QEAAXPEAUDISK_GROUP_DATA@@@Z
+        207   CB 00012AD0 ?PopulateEncapsulateData@CDataCache@@QEAAXPEAUENCAPSULATE_DATA@@@Z
+        208   CC 00020A20 ?RecalculateSpace@CDMNodeObj@@QEAAXXZ
+        209   CD 00016240 ?RefreshDiskView@CDMComponentData@@QEAAXPEAVCDMScopeNode@@@Z
+        210   CE 0000E600 ?RefreshFileSys@CContextMenu@@QEAAX_J@Z
+        211   CF 00016350 ?ReloadData@CDMComponentData@@QEAAXPEAVCDMScopeNode@@@Z
+        212   D0 000196F0 ?SetDescriptionBarText@CDMSnapin@@QEAAX_J@Z
+        213   D1 000132A0 ?SetDiskList@CDataCache@@QEAAXPEAUdiskinfoex@@K@Z
+        214   D2 00013370 ?SetDriveLetterInUse@CDataCache@@QEAAXGH@Z
+        215   D3 00020B00 ?SetFSId@CDMNodeObj@@QEAAX_J@Z
+        216   D4 00016620 ?SetOcxViewType@CDMComponentData@@QEAAXPEAVCDMScopeNode@@@Z
+        217   D5 000166F0 ?SetOcxViewTypeForce@CDMComponentData@@QEAAXPEAVCDMScopeNode@@@Z
+        218   D6 00025500 ?SetUIState@CTaskData@@QEAAXK@Z
+        219   D7 00013460 ?SetVolumeList@CDataCache@@QEAAXPEAUvolumeinfo@@KPEAVCTaskData@@@Z
+        220   D8 0000E840 ?ShowContextMenu@CContextMenu@@QEAAJPEAVCWnd@@JJ_J@Z
+        221   D9 00013510 ?SupportGpt@CDataCache@@QEAAHXZ
+        222   DA 00025600 ?SupportGpt@CTaskData@@QEAAHXZ
+        223   DB 00013520 ?SupportMirror@CDataCache@@QEAAHXZ
+        224   DC 00013530 ?SupportRaid5@CDataCache@@QEAAHXZ
+        225   DD 00016730 ?UIStateChange@CDMComponentData@@QEAAXPEAVCDMScopeNode@@K@Z
+        226   DE 00019A80 ?UpDateConsoleView@CDMSnapin@@QEAAX_J@Z
+        227   DF 00020BD0 ?VolumeContainsActiveRegion@CDMNodeObj@@QEAAHXZ
+        228   E0 00025620 CompareDiskNames
+        229   E1 000256A0 CookieSort
+        230   E2 00003BB0 DllCanUnloadNow
+        231   E3 000038D0 DllGetClassObject
+        232   E4 00017150 DllRegisterServer
+        124   E5 00011970 GetPropertyPageData
+        190   E6 00012440 IsRequestPending
+        201   E7 00012570 LoadPropertyPageData
+        233   E8 000257D0 namecmp
+
+  Summary
+
+        7000 .data
+        1000 .didat
+        3000 .pdata
+       14000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       26000 .text

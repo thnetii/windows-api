@@ -1,0 +1,48 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\msv1_0.dll
+
+File Type: DLL
+
+  Section contains the following exports for msv1_0.dll
+
+    00000000 characteristics
+    6AD67C70 time date stamp
+        0.00 version
+           1 ordinal base
+          32 number of functions
+          19 number of names
+
+    ordinal hint RVA      name
+
+          5    0 00018770 DllMain
+          6    1 0000BA40 LsaApCallPackage
+          7    2 0002F620 LsaApCallPackagePassthrough
+          8    3 0000BDB0 LsaApCallPackageUntrusted
+          9    4 00015940 LsaApInitializePackage
+         10    5 00008880 LsaApLogonTerminated
+         11    6 0000EAD0 LsaApLogonUserEx2
+         12    7 00033FE0 Msv1_0ExportSubAuthenticationRoutine
+         13    8 000340E0 Msv1_0SubAuthenticationPresent
+         14    9 00032D80 MsvGetLogonAttemptCount
+         15    A 00045CB0 MsvIsIpAddressLocal
+          2    B 00007F40 MsvIsLocalhostAliases
+         16    C 0000C680 MsvSamLogoff
+         17    D 0000CC30 MsvSamValidate
+         18    E 00032D90 MsvValidateTarget
+          1    F 00012040 SpInitialize
+         32   10 00009C30 SpInstanceInit
+          3   11 00015230 SpLsaModeInitialize
+          4   12 0000B720 SpUserModeInitialize
+
+  Summary
+
+        5000 .data
+        1000 .didat
+        4000 .pdata
+       11000 .rdata
+        1000 .reloc
+        3000 .rsrc
+       58000 .text

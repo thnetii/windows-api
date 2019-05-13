@@ -1,0 +1,38 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\wudriver.dll
+
+File Type: DLL
+
+  Section contains the following exports for WUDriver.dll
+
+    00000000 characteristics
+    EB1547AB time date stamp
+        0.00 version
+           1 ordinal base
+          10 number of functions
+          10 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00003280 CancelCDMOperation
+          2    1 00002DE0 CloseCDMContext
+          3    2 00002DF0 DetFilesDownloaded
+          4    3 00002E00 DownloadIsInternetAvailable
+          5    4 00002E30 DownloadUpdatedFiles
+          6    5 00002F10 FindMatchingDriver
+          7    6 00002DF0 LogDriverNotFound
+          8    7 00003100 OpenCDMContext
+          9    8 00003110 OpenCDMContextEx
+         10    9 00001480 QueryDetectionFiles
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        6000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        E000 .text

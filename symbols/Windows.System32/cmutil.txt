@@ -1,0 +1,179 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\cmutil.dll
+
+File Type: DLL
+
+  Section contains the following exports for cmutil.dll
+
+    00000000 characteristics
+    E78C5FCF time date stamp
+        0.00 version
+           1 ordinal base
+         151 number of functions
+         151 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001620 ??0CIniA@@QEAA@PEAUHINSTANCE__@@PEBD111@Z
+          2    1 00003040 ??0CIniW@@QEAA@PEAUHINSTANCE__@@PEBG111@Z
+          3    2 000010D0 ??0CRandom@@QEAA@I@Z
+          4    3 000010B0 ??0CRandom@@QEAA@XZ
+          5    4 00004CA0 ??0CmLogFile@@QEAA@XZ
+          6    5 000016C0 ??1CIniA@@QEAA@XZ
+          7    6 000016C0 ??1CIniW@@QEAA@XZ
+          8    7 00004CD0 ??1CmLogFile@@QEAA@XZ
+          9    8 00001010 ??4CIniA@@QEAAAEAV0@AEBV0@@Z
+         10    9 00001010 ??4CIniW@@QEAAAEAV0@AEBV0@@Z
+         11    A 00001110 ??4CRandom@@QEAAAEAV0@$$QEAV0@@Z
+         12    B 00001110 ??4CRandom@@QEAAAEAV0@AEBV0@@Z
+         13    C 00004A70 ??4CmLogFile@@QEAAAEAV0@AEBV0@@Z
+         14    D 00001050 ??_FCIniA@@QEAAXXZ
+         15    E 00001080 ??_FCIniW@@QEAAXXZ
+         16    F 00005E20 ?Banner@CmLogFile@@QEAAXXZ
+         17   10 000028B0 ?CIniA_DeleteEntryFromReg@CIniA@@IEBAHPEAUHKEY__@@PEBD1@Z
+         18   11 00002950 ?CIniA_GetEntryFromReg@CIniA@@IEBAPEAEPEAUHKEY__@@PEBD1KK@Z
+         19   12 00002A90 ?CIniA_WriteEntryToReg@CIniA@@IEBAHPEAUHKEY__@@PEBD1PEBEKK@Z
+         20   13 000044A0 ?CIniW_DeleteEntryFromReg@CIniW@@IEBAHPEAUHKEY__@@PEBG1@Z
+         21   14 00004320 ?CIniW_GetEntryFromReg@CIniW@@IEBAPEAEPEAUHKEY__@@PEBG1KK@Z
+         22   15 00004230 ?CIniW_WriteEntryToReg@CIniW@@IEBAHPEAUHKEY__@@PEBG1PEBEKK@Z
+         23   16 00001590 ?CIni_SetFile@CIniA@@KAXPEAPEADPEBD@Z
+         24   17 00002FA0 ?CIni_SetFile@CIniW@@KAXPEAPEAGPEBG@Z
+         25   18 00001780 ?Clear@CIniA@@QEAAXXZ
+         26   19 000030E0 ?Clear@CIniW@@QEAAXXZ
+         27   1A 00005CE0 ?Clear@CmLogFile@@QEAAXH@Z
+         28   1B 00005CA0 ?CloseFile@CmLogFile@@AEAAJXZ
+         74   1C 00005220 ?DeInit@CmLogFile@@QEAAJXZ
+         75   1D 00005540 ?FormatWrite@CmLogFile@@AEAAXW4_CMLOG_ITEM@@PEAG@Z
+         76   1E 000021E0 ?GPPB@CIniA@@QEBAHPEBD0H@Z
+         77   1F 00003BD0 ?GPPB@CIniW@@QEBAHPEBG0H@Z
+         78   20 00001D30 ?GPPI@CIniA@@QEBAKPEBD0K@Z
+         79   21 000036F0 ?GPPI@CIniW@@QEBAKPEBG0K@Z
+         80   22 000018C0 ?GPPS@CIniA@@QEBAPEADPEBD00@Z
+         81   23 00003230 ?GPPS@CIniW@@QEBAPEAGPEBG00@Z
+         82   24 000010F0 ?Generate@CRandom@@QEAAHXZ
+         83   25 000027F0 ?GetFile@CIniA@@QEBAPEBDXZ
+         84   26 000041E0 ?GetFile@CIniW@@QEBAPEBGXZ
+         85   27 000027C0 ?GetHInst@CIniA@@QEBAPEAUHINSTANCE__@@XZ
+         86   28 000027C0 ?GetHInst@CIniW@@QEBAPEAUHINSTANCE__@@XZ
+         87   29 00004A60 ?GetLogFilePath@CmLogFile@@QEAAPEBGXZ
+         92   2A 000027A0 ?GetPrimaryFile@CIniA@@QEBAPEBDXZ
+         93   2B 000041A0 ?GetPrimaryFile@CIniW@@QEBAPEBGXZ
+         94   2C 00002890 ?GetPrimaryRegPath@CIniA@@QEBAPEBDXZ
+         95   2D 00004480 ?GetPrimaryRegPath@CIniW@@QEBAPEBGXZ
+         96   2E 00002870 ?GetRegPath@CIniA@@QEBAPEBDXZ
+         97   2F 00004460 ?GetRegPath@CIniW@@QEBAPEBGXZ
+         98   30 00002780 ?GetSection@CIniA@@QEBAPEBDXZ
+         99   31 00004180 ?GetSection@CIniW@@QEBAPEBGXZ
+        100   32 000010E0 ?Init@CRandom@@QEAAXK@Z
+        101   33 00004CF0 ?Init@CmLogFile@@QEAAJPEAUHINSTANCE__@@HPEBD@Z
+        102   34 00004D70 ?Init@CmLogFile@@QEAAJPEAUHINSTANCE__@@HPEBG@Z
+        103   35 00004A50 ?IsEnabled@CmLogFile@@QEAAHXZ
+        106   36 000018A0 ?LoadEntry@CIniA@@IEBAPEADPEBD@Z
+        107   37 00003210 ?LoadEntry@CIniW@@IEBAPEAGPEBG@Z
+        108   38 00001880 ?LoadSection@CIniA@@QEBAPEADPEBD@Z
+        109   39 000031F0 ?LoadSection@CIniW@@QEBAPEAGPEBG@Z
+        110   3A 000052D0 ?Log@CmLogFile@@QEAAXW4_CMLOG_ITEM@@ZZ
+        112   3B 000057B0 ?OpenFile@CmLogFile@@AEAAJXZ
+        114   3C 00001800 ?SetEntry@CIniA@@QEAAXPEBD@Z
+        115   3D 00003160 ?SetEntry@CIniW@@QEAAXPEBG@Z
+        116   3E 00001810 ?SetEntryFromIdx@CIniA@@QEAAXK@Z
+        117   3F 00003170 ?SetEntryFromIdx@CIniW@@QEAAXK@Z
+        118   40 000027D0 ?SetFile@CIniA@@QEAAXPEBD@Z
+        119   41 000041C0 ?SetFile@CIniW@@QEAAXPEBG@Z
+        120   42 00002810 ?SetHInst@CIniA@@QEAAXPEAUHINSTANCE__@@@Z
+        121   43 00002810 ?SetHInst@CIniW@@QEAAXPEAUHINSTANCE__@@@Z
+        122   44 00002840 ?SetICSDataPath@CIniA@@QEAAXPEBD@Z
+        123   45 00004220 ?SetICSDataPath@CIniW@@QEAAXPEBG@Z
+        124   46 00004E40 ?SetParams@CmLogFile@@QEAAJHKPEBD@Z
+        125   47 00004EC0 ?SetParams@CmLogFile@@QEAAJHKPEBG@Z
+        126   48 000027E0 ?SetPrimaryFile@CIniA@@QEAAXPEBD@Z
+        127   49 000041D0 ?SetPrimaryFile@CIniW@@QEAAXPEBG@Z
+        128   4A 00002830 ?SetPrimaryRegPath@CIniA@@QEAAXPEBD@Z
+        129   4B 00004210 ?SetPrimaryRegPath@CIniW@@QEAAXPEBG@Z
+        130   4C 00002850 ?SetReadICSData@CIniA@@QEAAXH@Z
+        131   4D 00002850 ?SetReadICSData@CIniW@@QEAAXH@Z
+        132   4E 00002820 ?SetRegPath@CIniA@@QEAAXPEBD@Z
+        133   4F 00004200 ?SetRegPath@CIniW@@QEAAXPEBG@Z
+        134   50 000017F0 ?SetSection@CIniA@@QEAAXPEBD@Z
+        135   51 00003150 ?SetSection@CIniW@@QEAAXPEBG@Z
+        136   52 00002860 ?SetWriteICSData@CIniA@@QEAAXH@Z
+        137   53 00002860 ?SetWriteICSData@CIniW@@QEAAXH@Z
+        138   54 00005100 ?Start@CmLogFile@@QEAAJH@Z
+        139   55 000051C0 ?Stop@CmLogFile@@QEAAJXZ
+        142   56 000024D0 ?WPPB@CIniA@@QEAAXPEBD0H@Z
+        143   57 00003EC0 ?WPPB@CIniW@@QEAAXPEBG0H@Z
+        144   58 00002200 ?WPPI@CIniA@@QEAAXPEBD0K@Z
+        145   59 00003BF0 ?WPPI@CIniW@@QEAAXPEBG0K@Z
+        146   5A 000024F0 ?WPPS@CIniA@@QEAAXPEBD00@Z
+        147   5B 00003EE0 ?WPPS@CIniW@@QEAAXPEBG00@Z
+        148   5C 00005470 ?Write@CmLogFile@@AEAAJPEAG@Z
+        151   5D 0000AA14 ?kMaxValueLength@CIniW@@2KB
+         29   5E 000011C0 CmAtolA
+         30   5F 00001120 CmAtolW
+         31   60 00007340 CmBuildFullPathFromRelativeA
+         32   61 00007460 CmBuildFullPathFromRelativeW
+         33   62 00008360 CmCompareStringA
+         34   63 000083A0 CmCompareStringW
+         35   64 000070D0 CmConvertRelativePathW
+         36   65 000086E0 CmConvertStrToIPv6AddrA
+         37   66 00008610 CmConvertStrToIPv6AddrW
+         38   67 00007B90 CmEndOfStrW
+         39   68 00006DA0 CmFmtMsgA
+         40   69 00006C50 CmFmtMsgW
+         41   6A 00006970 CmFree
+         42   6B 00007B00 CmIsDigitW
+         43   6C 000085D0 CmIsIPv6AddressA
+         44   6D 00008590 CmIsIPv6AddressW
+         45   6E 00007A60 CmIsSpaceW
+         46   6F 000066C0 CmLoadIconA
+         47   70 00006750 CmLoadIconW
+         48   71 00006660 CmLoadImageW
+         49   72 000067B0 CmLoadSmallIconA
+         50   73 00006850 CmLoadSmallIconW
+         51   74 00006BA0 CmLoadStringW
+         52   75 00006950 CmMalloc
+         53   76 00006F80 CmParsePathW
+         54   77 00006930 CmRealloc
+         55   78 00007D50 CmStrCatAllocA
+         56   79 00007E40 CmStrCatAllocW
+         57   7A 000011C0 CmStrCharCountA
+         58   7B 00008420 CmStrCharCountW
+         59   7C 000011C0 CmStrCharStuffingA
+         60   7D 00008480 CmStrCharStuffingW
+         61   7E 00007BC0 CmStrCpyAllocA
+         62   7F 00007CB0 CmStrCpyAllocW
+         63   80 000011C0 CmStrStrA
+         64   81 000082A0 CmStrStrW
+         65   82 000079B0 CmStrTrimW
+         66   83 00007F50 CmStrchrA
+         67   84 00007F90 CmStrchrW
+         68   85 000072C0 CmStripFileNameW
+         69   86 000071F0 CmStripPathAndExtW
+         70   87 00007FE0 CmStrrchrA
+         71   88 00008030 CmStrrchrW
+         72   89 00008090 CmStrtokA
+         73   8A 00008190 CmStrtokW
+         88   8B 00006A50 GetOSBuildNumber
+         89   8C 00006AC0 GetOSMajorVersion
+         90   8D 00006B30 GetOSMinorVersion
+         91   8E 000069A0 GetOSVersion
+        104   8F 000011C0 IsFarEastNonOSR2Win95
+        105   90 000075A0 IsLogonAsSystem
+        111   91 00006520 MakeBold
+        113   92 00006630 ReleaseBold
+        140   93 00007850 SzToWz
+        141   94 00007890 SzToWzWithAlloc
+        149   95 00007800 WzToSz
+        150   96 00007920 WzToSzWithAlloc
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        5000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        9000 .text

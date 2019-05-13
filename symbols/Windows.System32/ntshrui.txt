@@ -1,0 +1,44 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\ntshrui.dll
+
+File Type: DLL
+
+  Section contains the following exports for ntshrui.dll
+
+    00000000 characteristics
+    EFAC30DE time date stamp
+        0.00 version
+           1 ordinal base
+          15 number of functions
+          15 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00013E60 CanShareFolder
+          2    1 00001C00 DllCanUnloadNow
+          3    2 00007E60 DllGetClassObject
+          4    3 00013F40 GetLocalPathFromNetResource
+          5    4 00013F40 GetLocalPathFromNetResourceA
+          6    5 00013F60 GetLocalPathFromNetResourceW
+          7    6 00013F40 GetNetResourceFromLocalPath
+          8    7 00013F40 GetNetResourceFromLocalPathA
+          9    8 000079B0 GetNetResourceFromLocalPathW
+         10    9 00043F70 IsFolderPrivateForUser
+         11    A 00013F40 IsPathShared
+         12    B 00013F40 IsPathSharedA
+         13    C 00004170 IsPathSharedW
+         14    D 000441C0 SetFolderPermissionsForSharing
+         15    E 00013FC0 ShowShareFolderUI
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        5000 .pdata
+       15000 .rdata
+        1000 .reloc
+       49000 .rsrc
+       5A000 .text

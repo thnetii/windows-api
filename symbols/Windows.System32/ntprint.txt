@@ -1,0 +1,87 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\ntprint.dll
+
+File Type: DLL
+
+  Section contains the following exports for NTPRINT.dll
+
+    00000000 characteristics
+    2193A884 time date stamp
+        0.00 version
+         103 ordinal base
+          59 number of functions
+          55 number of names
+
+    ordinal hint RVA      name
+
+        105    0 000104B0 ClassInstall32
+        120    1 0000D8D0 PSetupAssociateICMProfiles
+        121    2 00021710 PSetupBuildDriverList
+        122    3 000212F0 PSetupBuildDriversFromPath
+        108    4 00016320 PSetupCheckForDriversInDriverStore
+        123    5 0002D300 PSetupCopyDriverPackageFiles
+        124    6 000219F0 PSetupCreateDrvSetupPage
+        125    7 00011E20 PSetupCreateMonitorInfo
+        126    8 00021990 PSetupCreatePrinterDeviceInfoList
+        127    9 000129C0 PSetupDestroyDriverInfo3
+        128    A 00011560 PSetupDestroyMonitorInfo
+        129    B 00021960 PSetupDestroyPrinterDeviceInfoList
+        130    C 00024040 PSetupDestroySelectedDriverInfo
+        131    D 0000DA00 PSetupDisassociateICMProfiles
+        109    E 0002BDC0 PSetupDownloadAndInstallLegacyDriverW
+        132    F 000246D0 PSetupDriverInfoFromDeviceID
+        133   10 00022ED0 PSetupDriverInfoFromName
+        134   11 0001E3F0 PSetupDriverStoreAddDriverPackage
+        110   12 000240D0 PSetupDriverStoreFindDriverPackageW
+        111   13 000274C0 PSetupElevateAndCallDriverStoreAddDriverPackage
+        112   14 000273E0 PSetupElevatedDriverStoreAddDriverPackageW
+        113   15 00027EF0 PSetupElevatedInstallDownloadedLegacyDriverW
+        114   16 00027890 PSetupElevatedInstallPrinterDriverFromTheWebW
+        115   17 00026CA0 PSetupElevatedLegacyPrintDriverInstallW
+        135   18 00011E30 PSetupEnumMonitor
+        136   19 00023D10 PSetupFindCompatibleDriverFromName
+        137   1A 0001B660 PSetupFreeDrvField
+        138   1B 000129C0 PSetupFreeMem
+        116   1C 00024120 PSetupGetActualInstallSection
+        117   1D 0002CB50 PSetupGetCatalogNameFromInfW
+        139   1E 0002A610 PSetupGetDriverInfo3
+        140   1F 0001E250 PSetupGetInfDriverStoreLocation
+        141   20 0001B460 PSetupGetLocalDataField
+        142   21 0001A3C0 PSetupGetPathToSearch
+        143   22 00022880 PSetupGetSelectedDriverInfo
+        144   23 00002C20 PSetupInstallICMProfiles
+        145   24 0000A080 PSetupInstallInboxDriverSilently
+        146   25 00011B40 PSetupInstallMonitor
+        147   26 000070A0 PSetupInstallPrinterDriver
+        148   27 00025000 PSetupIsCompatibleDriver
+        149   28 0001A500 PSetupIsDriverInstalled
+        150   29 0001A7D0 PSetupIsTheDriverFoundInInfInstalled
+        151   2A 0000A5B0 PSetupParseInfAndCommitFileQueue
+        152   2B 00022990 PSetupPreSelectDriver
+        153   2C 00010710 PSetupProcessPrinterAdded
+        154   2D 00020F10 PSetupSelectDeviceButtons
+        155   2E 00022890 PSetupSelectDriver
+        156   2F 00024060 PSetupSetCoreInboxDriverPath
+        157   30 00021A70 PSetupSetDriverPlatform
+        158   31 0001E6F0 PSetupSetNonInteractiveMode
+        159   32 00020DA0 PSetupSetSelectDevTitleAndInstructions
+        160   33 00003010 PSetupShowBlockedDriverUI
+        161   34 0001A960 PSetupThisPlatform
+        118   35 0002A0B0 PSetupWebPnpGenerateDownLevelInfForInboxDriver
+        119   36 00024A90 ServerInstallW
+        103      00009D90 [NONAME]
+        104      00023650 [NONAME]
+        106      00031800 [NONAME]
+        107      000097D0 [NONAME]
+
+  Summary
+
+        2000 .data
+        2000 .pdata
+        C000 .rdata
+        1000 .reloc
+       16000 .rsrc
+       35000 .text

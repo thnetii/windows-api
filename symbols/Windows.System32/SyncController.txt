@@ -1,0 +1,46 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\SyncController.dll
+
+File Type: DLL
+
+  Section contains the following exports for SyncController.dll
+
+    00000000 characteristics
+     24E810C time date stamp
+        0.00 version
+           1 ordinal base
+          17 number of functions
+          17 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00007950 AccountsMgmtAdviseAccount
+          2    1 00006F70 AccountsMgmtConvertWebAccountIdFromAppSpecificId
+          3    2 00007060 AccountsMgmtConvertWebAccountIdToAppSpecificId
+          4    3 00006CF0 AccountsMgmtCreateAccount
+          5    4 00006E60 AccountsMgmtDeleteAccount
+          6    5 0000BCD0 AccountsMgmtDiscoverExchangeServerConfig
+          7    6 00007830 AccountsMgmtEnumAccounts
+          8    7 00007DC0 AccountsMgmtGetNotifications
+          9    8 0000FA60 AccountsMgmtMayIgnoreInvalidServerCertificate
+         10    9 00007510 AccountsMgmtQueryAccountProperties
+         11    A 000076B0 AccountsMgmtSaveAccountProperties
+         12    B 00007150 AccountsMgmtSyncAccount
+         13    C 00007330 AccountsMgmtSyncAccountAndWaitForCompletion
+         14    D 00007C10 AccountsMgmtUnadviseAccount
+         15    E 0000BEE0 AccountsMgmtVerifyExchangeMailBoxTokenAuth
+         16    F 00004380 DllCanUnloadNow
+         17   10 000043B0 DllGetClassObject
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        6000 .pdata
+       1E000 .rdata
+        2000 .reloc
+        5000 .rsrc
+       71000 .text

@@ -1,0 +1,56 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\mfsensorgroup.dll
+
+File Type: DLL
+
+  Section contains the following exports for MFSENSORGROUP.dll
+
+    00000000 characteristics
+    AF6DAB2E time date stamp
+        0.00 version
+           1 ordinal base
+          27 number of functions
+          27 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0001F070 MFCheckProcessCapabilities
+          2    1 00020D30 MFCloneSensorProfile
+          3    2 0001E7D0 MFCreatePackageFamilyNameTag
+          4    3 000200F0 MFCreateSensorActivityMonitor
+          5    4 0001DBF0 MFCreateSensorGroup
+          6    5 0001D950 MFCreateSensorGroupById
+          7    6 0001D970 MFCreateSensorGroupCollection
+          8    7 0001DE60 MFCreateSensorGroupIdManager
+          9    8 00020630 MFCreateSensorProfile
+         10    9 00020440 MFCreateSensorProfileCollection
+         11    A 00020720 MFCreateSensorProfileWithFlags
+         12    B 0001DEB0 MFCreateSensorStream
+         13    C 0001E240 MFCreateTranslatedMediaType
+         14    D 0001D650 MFDeleteSensorGroupById
+         15    E 0001FE20 MFGetDeviceFromFSUniqueId
+         16    F 0001FB40 MFGetDeviceFromSGHash
+         17   10 0001DE70 MFGetSensorDeviceProperty
+         18   11 0001E200 MFGetSensorDeviceRegistryProperty
+         19   12 0001F440 MFGetSensorGroupAttributesFromId
+         20   13 0001D5B0 MFInitializeSensorGroupStore
+         21   14 0001D8C0 MFIsSensorGroupName
+         22   15 0001E670 MFIsStreamAvailableToAppPackage
+         23   16 00021180 MFLoadSensorGroupFromRegistry
+         24   17 00020800 MFLoadSensorProfiles
+         25   18 00020610 MFPublishSensorProfiles
+         26   19 000202E0 MFSensorProfileParseFilterSetString
+         27   1A 00020D50 MFValidateSensorProfile
+
+  Summary
+
+        3000 .data
+        1000 .didat
+        2000 .pdata
+        B000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       40000 .text

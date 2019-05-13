@@ -1,0 +1,42 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\atidxx64.dll
+
+File Type: DLL
+
+  Section contains the following exports for atidxx64.dll
+
+    00000000 characteristics
+    5656A191 time date stamp Thu Nov 26 07:07:13 2015
+        0.00 version
+           1 ordinal base
+          13 number of functions
+          13 number of names
+
+    ordinal hint RVA      name
+
+          2    0 00661A70 AmdDxExtCreate
+          1    1 00661A20 AmdDxExtCreate11
+          8    2 0005A0A0 AmdDxGsaCompileShader
+          9    3 0005A1A0 AmdDxGsaFreeCompiledShader
+          3    4 0005A090 AmdDxShimQueryInterface
+         10    5 00663B50 AmdLiquidVrAffinityInit
+         11    6 00663BA0 AmdLiquidVrAffinityTerm
+         12    7 00663BE0 AmdLiquidVrD3D11CreateDevice
+         13    8 00663DD0 AmdLiquidVrD3D11WrapDeviceContext
+          4    9 00007E20 OpenAdapter10
+          5    A 00007EA0 OpenAdapter10_2
+          6    B 0000A820 XdxInitXopAdapterServices
+          7    C 0000A660 XdxInitXopServices
+
+  Summary
+
+       20000 .data
+       3B000 .pdata
+      38D000 .rdata
+       19000 .reloc
+        C000 .rsrc
+      68C000 .text
+        1000 .tls

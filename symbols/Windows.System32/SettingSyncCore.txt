@@ -1,0 +1,38 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\SettingSyncCore.dll
+
+File Type: DLL
+
+  Section contains the following exports for SETTINGSYNCCORE.dll
+
+    00000000 characteristics
+    4EB7C318 time date stamp
+        0.00 version
+           3 ordinal base
+           9 number of functions
+           9 number of names
+
+    ordinal hint RVA      name
+
+          9    0 00038190 DllCanUnloadNow
+         10    1 000516F0 DllGetActivationFactory
+         11    2 000361C0 DllGetClassObject
+          6    3 00051160 IsBackupAppDataEnabled
+          5    4 0002FF60 IsBackupEnabled
+          4    5 00030E60 IsRoamingEnabled
+          8    6 00051180 IsSettingSyncAllowedByGroupPolicy
+          3    7 000381C0 IsSettingSyncEnabled
+          7    8 000511A0 IsSettingSyncEnabledSkipUserPolicyCheck
+
+  Summary
+
+        3000 .data
+        1000 .didat
+        D000 .pdata
+       49000 .rdata
+        4000 .reloc
+       10000 .rsrc
+       AF000 .text

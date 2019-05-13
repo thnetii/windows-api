@@ -1,0 +1,45 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\wecapi.dll
+
+File Type: DLL
+
+  Section contains the following exports for WecApi.dll
+
+    00000000 characteristics
+    5D5A16CA time date stamp
+        0.00 version
+           1 ordinal base
+          17 number of functions
+          17 number of names
+
+    ordinal hint RVA      name
+
+          3    0 00002F10 EcClose
+          4    1 00002310 EcDeleteSubscription
+          5    2 000019A0 EcEnumNextSubscription
+          6    3 00002770 EcGetObjectArrayProperty
+          7    4 00002470 EcGetObjectArraySize
+          8    5 00001FD0 EcGetSubscriptionProperty
+          9    6 00002AD0 EcGetSubscriptionRunTimeStatus
+         10    7 000029B0 EcInsertObjectArrayElement
+          1    8 000030A0 EcIsConfigRequired
+         11    9 00001BA0 EcOpenSubscription
+         12    A 00001700 EcOpenSubscriptionEnum
+          2    B 00003050 EcQuickConfig
+         13    C 00002A40 EcRemoveObjectArrayElement
+         14    D 00002DB0 EcRetrySubscription
+         15    E 00002200 EcSaveSubscription
+         16    F 000025E0 EcSetObjectArrayProperty
+         17   10 00001E50 EcSetSubscriptionProperty
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        6000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        D000 .text

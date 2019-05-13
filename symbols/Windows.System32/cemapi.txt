@@ -1,0 +1,63 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\cemapi.dll
+
+File Type: DLL
+
+  Section contains the following exports for CEMAPI.dll
+
+    00000000 characteristics
+    4A916048 time date stamp
+        0.00 version
+          52 ordinal base
+          34 number of functions
+          34 number of names
+
+    ordinal hint RVA      name
+
+         63    0 00009270 CreateMAPITableWalker
+         64    1 000092A0 CreateMAPITableWalkerEx
+         65    2 00006F30 FlushMailStore
+         66    3 00009620 FreeProws
+         67    4 00008BF0 GetEntryIDType
+         54    5 00005EC0 GetMAPIStorePropTags
+         55    6 00006420 GetMsgClassEnum
+         56    7 00006490 GetMsgClassEnumFromMsg
+         68    8 00008910 GetMsgStoreFromMessage
+         69    9 00008A00 GetNamedPropTag
+         70    A 0000B1E0 HrGetOneProp
+         71    B 0000B2D0 HrSetOneProp
+         57    C 00006720 InitializeServiceProps
+         58    D 000065B0 IsMessageClassDeviceGenerated
+         59    E 00006510 IsMessageClassReadRequest
+         60    F 00006690 IsMessageClassSPlusV2
+         72   10 000097C0 MAPIAllocateBuffer
+         52   11 00009A40 MAPIAllocateBuffer_dbg
+         73   12 00009870 MAPIAllocateMore
+         53   13 00009A30 MAPIAllocateMore_dbg
+         74   14 00007EF0 MAPIDeleteMessageById
+         75   15 00008B00 MAPIDupString
+         76   16 00009990 MAPIFreeBuffer
+         77   17 00007150 MAPIGetContext
+         78   18 0000B5A0 MAPIInitialize
+         79   19 0000B5E0 MAPILogonEx
+         80   1A 0000B510 MAPIUninitialize
+         61   1B 00006840 MAPI_CompareEntryIDs
+         81   1C 000086B0 MAPI_GetStoreByName
+         82   1D 00006EF0 ReadMailVolumeNameEx
+         83   1E 00007BE0 SetConversationId
+         62   1F 00006610 TranslateSPlusV1MessageClassToV2
+         84   20 000082D0 USOIDfromCEENTRYID
+         85   21 00008240 USOIDtoCEENTRYID
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        2000 .pdata
+        A000 .rdata
+        1000 .reloc
+        4000 .rsrc
+       2D000 .text

@@ -1,0 +1,38 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\tokenbinding.dll
+
+File Type: DLL
+
+  Section contains the following exports for TOKENBINDING.dll
+
+    00000000 characteristics
+    48FC39D8 time date stamp
+        0.00 version
+           1 ordinal base
+           9 number of functions
+           9 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000053B0 TokenBindingDeleteAllBindings
+          2    1 00005430 TokenBindingDeleteBinding
+          3    2 00002050 TokenBindingGenerateBinding
+          4    3 00005490 TokenBindingGenerateID
+          5    4 00002C30 TokenBindingGenerateMessage
+          6    5 000033E0 TokenBindingGetHighestSupportedVersion
+          7    6 00003140 TokenBindingGetKeyTypesClient
+          8    7 00006D10 TokenBindingGetKeyTypesServer
+          9    8 00006D70 TokenBindingVerifyMessage
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        4000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        7000 .text

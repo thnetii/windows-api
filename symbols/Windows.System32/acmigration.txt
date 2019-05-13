@@ -1,0 +1,36 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\acmigration.dll
+
+File Type: DLL
+
+  Section contains the following exports for acmigration.dll
+
+    00000000 characteristics
+     F427CAA time date stamp
+        0.00 version
+           1 ordinal base
+           8 number of functions
+           8 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000276B0 AcmEngineApply
+          2    1 000263F0 AcmEngineCollect
+          3    2 00025F80 AcmEngineCreate
+          4    3 00026030 AcmEngineDelete
+          5    4 00026280 AcmEngineGenerateMigXml
+          6    5 00026060 AcmEngineSetBaseWorkingDirectory
+          7    6 00025F50 AcmMatchPluginExecute
+          8    7 00001430 ApplyMigrationShimsW
+
+  Summary
+
+        2000 .data
+        3000 .pdata
+       16000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       34000 .text

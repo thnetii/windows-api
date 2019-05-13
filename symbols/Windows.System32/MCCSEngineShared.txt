@@ -1,0 +1,63 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\MCCSEngineShared.dll
+
+File Type: DLL
+
+  Section contains the following exports for MCCSEngineShared.dll
+
+    00000000 characteristics
+    D792390C time date stamp
+        0.00 version
+           1 ordinal base
+          34 number of functions
+          34 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00004740 BuildISO8601String
+          2    1 00004600 BuildISO8601StringFromSysTime
+          3    2 000075C0 CopyMimeAttachmentsToMapi
+         32    3 00007F80 CreateTemporaryFileStream
+         33    4 00003DB0 DllCanUnloadNow
+         34    5 00003DD0 DllGetClassObject
+          4    6 00007E00 DownloadToVirtualStream
+          5    7 00008220 FindMatchingNameForAddress
+          6    8 00009AC0 GetAccountDomainForAccountAccessor
+          7    9 00009FB0 GetAccountManagedState
+          8    A 00009910 GetDataProtectionPropertyForStore
+          9    B 00009790 GetDomainFromAccountName
+         10    C 0000A280 GetDomainNamesForEmailSyncList
+         11    D 000099F0 GetDplPropertyForStore
+         12    E 00009420 GetIStoreForAccountGuid
+         13    F 0000B820 GetMimeStreamFromMMSMessage
+         14   10 0000B5C0 GetMimeStreamFromMessage
+         15   11 00009BB0 GetProtectedDomainList
+         16   12 00009D90 GetProtectionPolicyState
+         17   13 00008480 GetSmProviderInfo
+         18   14 00008020 GetSmRecipientType
+         19   15 0000A1D0 IsDPLInEffect
+         20   16 00009400 IsDomainInDelimitedList
+         21   17 00004A40 ParseISO8601String
+         22   18 00009400 SearchDelimitedList
+         23   19 000095F0 SetDataProtectionPropertyForStore
+         24   1A 000096C0 SetDplPropertyForStore
+         25   1B 00008620 SetSmProviderInfo
+         26   1C 00009130 StringCompareWithWildcard
+         27   1D 00008050 SyncNormalizePhoneNumber
+         28   1E 00007C90 WriteInputStreamToNetworkStream
+         29   1F 00006800 WriteMapiBodiesFromMimeReader
+         30   20 00006600 WriteMapiBodiesFromMimeStream
+         31   21 00006680 WriteMapiBodiesFromMimeStreamEx
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        2000 .pdata
+        8000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       21000 .text

@@ -1,0 +1,57 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\rtpm.dll
+
+File Type: DLL
+
+  Section contains the following exports for rtpm.dll
+
+    00000000 characteristics
+    850FD188 time date stamp
+        0.00 version
+           1 ordinal base
+          29 number of functions
+          29 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000010D0 AttFreeMem
+          2    1 00001260 AttRtpmAcceptContext
+          3    2 00001140 AttRtpmCloseInitiator
+          4    3 00001210 AttRtpmCloseTarget
+          5    4 000011C0 AttRtpmCompletePCRRead
+          6    5 00001150 AttRtpmContinueContext
+          7    6 00001100 AttRtpmCreateInitiator
+          8    7 00001270 AttRtpmCreateServerKey
+          9    8 000011D0 AttRtpmCreateTarget
+         10    9 00001160 AttRtpmInitiatePCRRead
+         11    A 00001260 RtpmAcceptContext
+         12    B 00001140 RtpmCloseInitiator
+         13    C 000016F0 RtpmClosePcrCollection
+         14    D 00001210 RtpmCloseTarget
+         15    E 00001430 RtpmCompleteCreateKey
+         16    F 000011C0 RtpmCompletePCRRead
+         17   10 000015E0 RtpmCompleteSeal
+         18   11 00001150 RtpmContinueContext
+         19   12 000013D0 RtpmCreateInitiator
+         20   13 000016C0 RtpmCreatePcrCollection
+         21   14 00001840 RtpmCreateTarget
+         22   15 00001750 RtpmExtendPcr
+         23   16 00001770 RtpmGetPcrSelectionData
+         24   17 00001810 RtpmHashAndExtendPcr
+         25   18 000013E0 RtpmInitiateCreateKey
+         26   19 00001160 RtpmInitiatePCRRead
+         27   1A 00001560 RtpmInitiateSeal
+         28   1B 00001730 RtpmReadPcr
+         29   1C 00001710 RtpmSetPcr
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        3000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        D000 .text

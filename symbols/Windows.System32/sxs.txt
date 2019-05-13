@@ -1,0 +1,50 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\sxs.dll
+
+File Type: DLL
+
+  Section contains the following exports for sxs.dll
+
+    00000000 characteristics
+    C10F722D time date stamp
+        0.00 version
+           1 ordinal base
+          21 number of functions
+          21 number of names
+
+    ordinal hint RVA      name
+
+          7    0 000332E0 CreateAssemblyCache
+          8    1 00032470 CreateAssemblyNameObject
+          9    2 000519B0 SxsBeginAssemblyInstall
+         10    3 00051C50 SxsEndAssemblyInstall
+          1    4 0004F640 SxsFindClrClassInformation
+          2    5 0004FC20 SxsFindClrSurrogateInformation
+         11    6 00027510 SxsGenerateActivationContext
+         12    7 00051E70 SxsInstallW
+          3    8 00050040 SxsLookupClrGuid
+         13    9 00005270 SxsOleAut32MapConfiguredClsidToReferenceClsid
+         14    A 00050D50 SxsOleAut32MapIIDOrCLSIDToTypeLibrary
+         15    B 00005150 SxsOleAut32MapIIDToProxyStubCLSID
+         16    C 000053A0 SxsOleAut32MapIIDToTLBPath
+         17    D 00050F00 SxsOleAut32MapReferenceClsidToConfiguredClsid
+         18    E 000021D0 SxsOleAut32RedirectTypeLibrary
+         19    F 00032BA0 SxsProbeAssemblyInstallation
+         20   10 00056C50 SxsQueryManifestInformation
+          4   11 00051510 SxsRunDllInstallAssembly
+          5   12 00051640 SxsRunDllInstallAssemblyW
+         21   13 000510D0 SxsUninstallW
+          6   14 00053CC0 SxspGenerateManifestPathOnAssemblyIdentity
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        5000 .pdata
+       2D000 .rdata
+        3000 .reloc
+        1000 .rsrc
+       62000 .text

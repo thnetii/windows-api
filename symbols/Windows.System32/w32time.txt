@@ -1,0 +1,57 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\w32time.dll
+
+File Type: DLL
+
+  Section contains the following exports for w32time.dll
+
+    00000000 characteristics
+    CB7F6EE4 time date stamp
+        0.00 version
+           1 ordinal base
+          28 number of functions
+          28 number of names
+
+    ordinal hint RVA      name
+
+          4    0 0004E7A0 DllInstall
+          5    1 0004E940 DllRegisterServer
+          6    2 0004E990 DllUnregisterServer
+          7    3 00025D00 SvchostEntry_W32Time
+          8    4 00025DB0 SvchostPushServiceGlobals
+          9    5 0004DA90 TimeProvClose
+         10    6 00007340 TimeProvCommand
+         11    7 0001B860 TimeProvOpen
+         12    8 000552F0 W32TimeBufferFree
+         13    9 00022910 W32TimeDcPromo
+         14    A 00058440 W32TimeDeleteConfig
+         15    B 00024F70 W32TimeGetNetlogonServiceBits
+         16    C 00057650 W32TimeLog
+         17    D 000584B0 W32TimeQueryConfig
+         18    E 000577B0 W32TimeQueryConfiguration
+         19    F 000579A0 W32TimeQueryHardwareProviderStatus
+         20   10 000579C0 W32TimeQueryNTPProviderStatus
+         21   11 000579E0 W32TimeQueryNtpProviderConfiguration
+         22   12 00057BF0 W32TimeQuerySource
+         23   13 00057DE0 W32TimeQueryStatus
+         24   14 00058550 W32TimeSetConfig
+         25   15 00057FD0 W32TimeSyncNow
+         26   16 0004E9B0 W32TimeVerifyJoinConfig
+         27   17 0004EB20 W32TimeVerifyUnjoinConfig
+         28   18 00019F70 W32TmServiceMain
+          1   19 00090088 fnW32TmI_ScSetServiceBits
+          2   1A 00090098 fnW32TmRegisterServiceCtrlHandlerEx
+          3   1B 00090090 fnW32TmSetServiceStatus
+
+  Summary
+
+        4000 .data
+        1000 .didat
+        5000 .pdata
+       35000 .rdata
+        1000 .reloc
+        C000 .rsrc
+       58000 .text

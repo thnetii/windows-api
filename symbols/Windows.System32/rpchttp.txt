@@ -1,0 +1,48 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\rpchttp.dll
+
+File Type: DLL
+
+  Section contains the following exports for rpchttp.dll
+
+    00000000 characteristics
+    F33D9465 time date stamp
+        0.00 version
+           1 ordinal base
+          19 number of functions
+          19 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001380 CompareHttpTransportCredentials
+          2    1 000014B0 ConvertToUnicodeHttpTransportCredentials
+          3    2 000011D0 DuplicateHttpTransportCredentials
+          4    3 00001130 FreeHttpTransportCredentials
+          5    4 0001DD10 HTTP2GetRpcConnectionTransport
+          6    5 000050E0 HTTP2ProcessComplexTReceive
+          7    6 00005320 HTTP2ProcessComplexTSend
+          8    7 00005040 HTTP2ProcessRuntimePostedEvent
+          9    8 000055C0 HTTP2TestHook
+         10    9 00020370 HttpParseNetworkOptions
+         11    A 000028D0 HttpSendIdentifyResponse
+         17    B 00001090 I_RpcExtInitializeExtensionPoint
+         12    C 00020AD0 I_RpcGetRpcProxy
+         18    D 00003DE0 I_RpcProxyNewConnection
+         19    E 00004240 I_RpcReplyToClientWithStatus
+         13    F 00001780 I_RpcTransFreeHttpCredentials
+         14   10 000016D0 I_RpcTransGetHttpCredentials
+         15   11 00001C20 WS_HTTP2_CONNECTION__Initialize
+         16   12 00001BF0 WS_HTTP2_INITIAL_CONNECTION__new
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        2000 .pdata
+        6000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       28000 .text

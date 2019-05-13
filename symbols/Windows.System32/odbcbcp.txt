@@ -1,0 +1,57 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\odbcbcp.dll
+
+File Type: DLL
+
+  Section contains the following exports for odbcbcp.dll
+
+    00000000 characteristics
+    3B4840DB time date stamp
+        0.00 version
+           1 ordinal base
+          29 number of functions
+          28 number of names
+
+    ordinal hint RVA      name
+
+         24    0 00005700 LibMain
+         27    1 000040C0 SQLCloseEnumServers
+         26    2 00004090 SQLGetNextEnumeration
+         25    3 00003FB0 SQLInitEnumServers
+         23    4 00003BD0 SQLLinkedCatalogsA
+         22    5 00003E10 SQLLinkedCatalogsW
+         21    6 00003BB0 SQLLinkedServers
+          2    7 00001240 bcp_batch
+          3    8 000013C0 bcp_bind
+          4    9 00001640 bcp_colfmt
+          5    A 000018D0 bcp_collen
+          6    B 00001A80 bcp_colptr
+          8    C 00001C40 bcp_columns
+          9    D 00001DE0 bcp_control
+         10    E 00001FA0 bcp_done
+         12    F 00002130 bcp_exec
+         28   10 000022E0 bcp_getcolfmt
+         11   11 00002520 bcp_initA
+         18   12 000027A0 bcp_initW
+         13   13 000029D0 bcp_moretext
+         15   14 00002B90 bcp_readfmtA
+         19   15 00002D50 bcp_readfmtW
+         14   16 00002EF0 bcp_sendrow
+         29   17 00003080 bcp_setcolfmt
+         16   18 00003280 bcp_writefmtA
+         20   19 000033F0 bcp_writefmtW
+          1   1A 00003590 dbprtypeA
+         17   1B 00003900 dbprtypeW
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        5000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        1000 .sdbid
+        6000 .text

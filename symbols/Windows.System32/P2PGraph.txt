@@ -1,0 +1,69 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\P2PGraph.dll
+
+File Type: DLL
+
+  Section contains the following exports for P2PGRAPH.dll
+
+    00000000 characteristics
+    5066AB42 time date stamp
+        0.00 version
+           1 ordinal base
+          40 number of functions
+          40 number of names
+
+    ordinal hint RVA      name
+
+          3    0 00002630 PeerGraphAddRecord
+          4    1 00001F30 PeerGraphClose
+          5    2 00002D00 PeerGraphCloseDirectConnection
+          6    3 00001E80 PeerGraphConnect
+          7    4 00001A00 PeerGraphCreate
+          8    5 00002020 PeerGraphDelete
+          9    6 00002760 PeerGraphDeleteRecord
+         10    7 00001960 PeerGraphEndEnumeration
+         11    8 00002D90 PeerGraphEnumConnections
+         12    9 00002E50 PeerGraphEnumNodes
+         13    A 00002840 PeerGraphEnumRecords
+         14    B 000029D0 PeerGraphExportDatabase
+          1    C 00003120 PeerGraphForceStopPresencePrivate
+         15    D 000017C0 PeerGraphFreeData
+         16    E 00002500 PeerGraphGetEventData
+         17    F 00001810 PeerGraphGetItemCount
+         18   10 000018B0 PeerGraphGetNextItem
+         19   11 000021B0 PeerGraphGetNodeInfo
+         20   12 00002090 PeerGraphGetProperties
+         21   13 00002590 PeerGraphGetRecord
+         22   14 00002250 PeerGraphGetStatus
+         23   15 00002A60 PeerGraphImportDatabase
+         24   16 00001DD0 PeerGraphListen
+         25   17 00001B90 PeerGraphOpen
+         26   18 00002B90 PeerGraphOpenDirectConnection
+         27   19 00002FA0 PeerGraphPeerTimeToUniversalTime
+         28   1A 00002370 PeerGraphRegisterEvent
+         29   1B 00002910 PeerGraphSearchRecords
+         30   1C 00002C40 PeerGraphSendData
+         31   1D 000022E0 PeerGraphSetNodeAttributes
+         32   1E 00002F10 PeerGraphSetPresence
+         33   1F 00002120 PeerGraphSetProperties
+         34   20 00001730 PeerGraphShutdown
+         35   21 000015F0 PeerGraphStartup
+         36   22 00001D40 PeerGraphSuspendTimers
+         37   23 00003060 PeerGraphUniversalTimeToPeerTime
+         38   24 00002460 PeerGraphUnregisterEvent
+         39   25 000026D0 PeerGraphUpdateRecord
+         40   26 00002AF0 PeerGraphValidateDeferredRecords
+          2   27 0006A3B0 pMemoryHelper
+
+  Summary
+
+        3000 .data
+        1000 .didat
+        3000 .pdata
+        A000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       5D000 .text

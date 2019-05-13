@@ -1,0 +1,55 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\AppointmentActivation.dll
+
+File Type: DLL
+
+  Section contains the following exports for AppointmentActivation.dll
+
+    00000000 characteristics
+    AC138439 time date stamp
+        0.00 version
+           1 ordinal base
+          26 number of functions
+          26 number of names
+
+    ordinal hint RVA      name
+
+          3    0 00008F20 AwaitAppointmentActivation
+          4    1 0000BC00 DeserializeActivationArgs
+          5    2 0000BF60 DeserializeAppointment
+          6    3 00001250 DllCanUnloadNow
+          7    4 000052C0 DllGetActivationFactory
+          8    5 000015B0 DllGetClassObject
+          9    6 00009140 GetAddAppointmentArgument
+         10    7 000092F0 GetCalendarChooserArgument
+         11    8 0000D140 GetLegacyAppointmentDetailsArgumentString
+         12    9 00004EA0 GetProxyDllInfo
+         13    A 00009590 GetRemoveAppointmentArgument
+         14    B 000097B0 GetReplaceAppointmentArgument
+         15    C 0000D910 GetWindowIdOfHost
+         16    D 0000C140 ReleaseActivationArgs
+          1    E 00005540 SerializeAppointmentIdsResult
+          2    F 000056A0 SerializeCalendarIdResult
+         17   10 00009A00 ShowAddAppointment
+         18   11 00009AE0 ShowAddAppointmentAsync
+         19   12 00009B90 ShowAppointmentDetails
+         20   13 00009EE0 ShowCalendarChooser
+         21   14 00009FB0 ShowCalendarChooserAsync
+         22   15 0000A060 ShowRemoveAppointment
+         23   16 0000A140 ShowRemoveAppointmentAsync
+         24   17 0000A210 ShowReplaceAppointment
+         25   18 0000A300 ShowReplaceAppointmentAsync
+         26   19 0000A3D0 ShowTimeFrame
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        2000 .pdata
+        A000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       17000 .text

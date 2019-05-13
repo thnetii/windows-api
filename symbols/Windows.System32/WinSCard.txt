@@ -1,0 +1,109 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\WinSCard.dll
+
+File Type: DLL
+
+  Section contains the following exports for WinSCard.dll
+
+    00000000 characteristics
+    C2C19DAA time date stamp
+        0.00 version
+           1 ordinal base
+          80 number of functions
+          80 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00006D40 ClassInstall32
+          2    1 00007F20 SCardAccessNewReaderEvent
+          8    2 000014B0 SCardAccessStartedEvent
+          9    3 0000F7A0 SCardAddReaderToGroupA
+         10    4 000133C0 SCardAddReaderToGroupW
+         11    5 00008D00 SCardAudit
+         12    6 00008EA0 SCardBeginTransaction
+         13    7 00002AC0 SCardCancel
+         14    8 0000F9C0 SCardConnectA
+         15    9 000135E0 SCardConnectW
+         16    A 00008FD0 SCardControl
+         17    B 000091C0 SCardDisconnect
+         18    C 000092E0 SCardEndTransaction
+         19    D 00009410 SCardEstablishContext
+         20    E 0000FD30 SCardForgetCardTypeA
+         21    F 00013950 SCardForgetCardTypeW
+         22   10 0000FE80 SCardForgetReaderA
+         23   11 00010050 SCardForgetReaderGroupA
+         24   12 00013AA0 SCardForgetReaderGroupW
+         25   13 00013C70 SCardForgetReaderW
+         26   14 00009A00 SCardFreeMemory
+         27   15 00009B30 SCardGetAttrib
+         28   16 00010220 SCardGetCardTypeProviderNameA
+         29   17 00013E40 SCardGetCardTypeProviderNameW
+         30   18 000103D0 SCardGetDeviceTypeIdA
+         31   19 00013FF0 SCardGetDeviceTypeIdW
+         32   1A 00010590 SCardGetProviderIdA
+         33   1B 00014180 SCardGetProviderIdW
+         34   1C 00010780 SCardGetReaderDeviceInstanceIdA
+         35   1D 00014370 SCardGetReaderDeviceInstanceIdW
+         36   1E 000109A0 SCardGetReaderIconA
+         37   1F 00014550 SCardGetReaderIconW
+         38   20 00010BA0 SCardGetStatusChangeA
+         39   21 00014700 SCardGetStatusChangeW
+         40   22 0000A100 SCardGetTransmitCount
+         41   23 00010E40 SCardIntroduceCardTypeA
+         42   24 000149A0 SCardIntroduceCardTypeW
+         43   25 00010FD0 SCardIntroduceReaderA
+         44   26 000111F0 SCardIntroduceReaderGroupA
+         45   27 00014B30 SCardIntroduceReaderGroupW
+         46   28 00014CE0 SCardIntroduceReaderW
+         47   29 0000A230 SCardIsValidContext
+         48   2A 000113A0 SCardListCardsA
+         49   2B 00014F00 SCardListCardsW
+         50   2C 00011540 SCardListInterfacesA
+         51   2D 000150A0 SCardListInterfacesW
+         52   2E 00011740 SCardListReaderGroupsA
+         53   2F 000152A0 SCardListReaderGroupsW
+         54   30 00011910 SCardListReadersA
+         55   31 00015470 SCardListReadersW
+         56   32 00011B50 SCardListReadersWithDeviceInstanceIdA
+         57   33 000156C0 SCardListReadersWithDeviceInstanceIdW
+         58   34 00011F10 SCardLocateCardsA
+         59   35 000124E0 SCardLocateCardsByATRA
+         60   36 00015A30 SCardLocateCardsByATRW
+         61   37 00015C40 SCardLocateCardsW
+          3   38 00007F80 SCardPciRaw
+          4   39 00007F90 SCardPciT0
+          5   3A 00007FA0 SCardPciT1
+         62   3B 000126F0 SCardReadCacheA
+         63   3C 000161A0 SCardReadCacheW
+         64   3D 0000A390 SCardReconnect
+          6   3E 00008380 SCardReleaseAllEvents
+         65   3F 0000A500 SCardReleaseContext
+          7   40 00008380 SCardReleaseNewReaderEvent
+         66   41 00001190 SCardReleaseStartedEvent
+         67   42 00012720 SCardRemoveReaderFromGroupA
+         68   43 000161D0 SCardRemoveReaderFromGroupW
+         69   44 0000A830 SCardSetAttrib
+         70   45 00012940 SCardSetCardTypeProviderNameA
+         71   46 000163F0 SCardSetCardTypeProviderNameW
+         72   47 0000A980 SCardState
+         73   48 00012AE0 SCardStatusA
+         74   49 00016590 SCardStatusW
+         75   4A 0000AB90 SCardTransmit
+         76   4B 00012D40 SCardWriteCacheA
+         77   4C 000167F0 SCardWriteCacheW
+         78   4D 0002CDB0 g_rgSCardRawPci
+         79   4E 0002CD88 g_rgSCardT0Pci
+         80   4F 0002CDD0 g_rgSCardT1Pci
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        3000 .pdata
+       15000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       24000 .text

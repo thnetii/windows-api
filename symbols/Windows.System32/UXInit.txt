@@ -1,0 +1,42 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\UXInit.dll
+
+File Type: DLL
+
+  Section contains the following exports for UXINIT.dll
+
+    00000000 characteristics
+    C06293C7 time date stamp
+        0.00 version
+           1 ordinal base
+          13 number of functions
+          12 number of names
+
+    ordinal hint RVA      name
+
+          3    0 0000B200 ThemeUserLogoff
+          4    1 0000B240 ThemeUserLogon
+          5    2 0000B2A0 ThemeUserStartShell
+          6    3 0000B2C0 ThemeUserTSReconnect
+          1    4 000011F0 ThemeWatchForStart
+          7    5 000010D0 ThemesOnCreateSession
+         12    6 00006890 ThemesOnDisconnect
+         13    7 00001190 ThemesOnEarlyCreateSession
+         10    8 000011C0 ThemesOnLogoff
+          9    9 00002220 ThemesOnLogon
+         11    A 0000B2E0 ThemesOnReconnect
+          8    B 00001DE0 ThemesOnTerminateSession
+          2               [NONAME] (forwarded to SHUNIMPL.#412)
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        2000 .pdata
+        6000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        F000 .text

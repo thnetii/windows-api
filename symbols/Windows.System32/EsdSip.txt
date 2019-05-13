@@ -1,0 +1,39 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\EsdSip.dll
+
+File Type: DLL
+
+  Section contains the following exports for ESDSIP.DLL
+
+    00000000 characteristics
+    84FEDB1A time date stamp
+        0.00 version
+           1 ordinal base
+          11 number of functions
+          11 number of names
+
+    ordinal hint RVA      name
+
+          8    0 00001030 DllCanUnloadNow
+          9    1 00001010 DllMain
+         10    2 00001040 DllRegisterServer
+         11    3 000011B0 DllUnregisterServer
+          1    4 00001710 EsdSipCreateHash
+          2    5 000015D0 EsdSipDelSignature
+          3    6 00001170 EsdSipGetCaps
+          4    7 000012E0 EsdSipGetSignature
+          5    8 000011D0 EsdSipIsMyFileType
+          6    9 00001450 EsdSipPutSignature
+          7    A 00001C20 EsdSipVerifyHash
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        3000 .text

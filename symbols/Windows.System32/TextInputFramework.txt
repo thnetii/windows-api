@@ -1,0 +1,44 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\TextInputFramework.dll
+
+File Type: DLL
+
+  Section contains the following exports for TextInputFramework.dll
+
+    00000000 characteristics
+    1163B0AF time date stamp
+        0.00 version
+           1 ordinal base
+          15 number of functions
+          15 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0003F950 DllCanUnloadNow
+          2    1 0003F980 DllGetActivationFactory
+          3    2 0003F9C0 DllGetClassObject
+          4    3 00022250 InputFocusChanged
+          5    4 00012700 NavigateFocusInfoCreate
+          6    5 00019670 TextInputClientCreate
+          7    6 00023FF0 TextInputHostCreate
+          8    7 00042730 TextInputHostCreate2
+          9    8 0001A010 TextInputHostCreateEx
+         10    9 000427E0 TextInputHostGetCurrent
+         11    A 000029A0 TextInputHostSiteCreate
+         12    B 00020AF0 TextInputServerCreate
+         13    C 00042860 tsfGetAsyncKeyState
+         14    D 00020B40 tsfGetKeyState
+         15    E 000428F0 tsfGetKeyboardState
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        7000 .pdata
+       22000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       66000 .text

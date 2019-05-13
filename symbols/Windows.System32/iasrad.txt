@@ -1,0 +1,37 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\iasrad.dll
+
+File Type: DLL
+
+  Section contains the following exports for iasrad.dll
+
+    00000000 characteristics
+    293C3BCC time date stamp
+        0.00 version
+           1 ordinal base
+           9 number of functions
+           9 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00011DB0 ?initialize@VSAFilter@@QEAAJXZ
+          2    1 00011FF0 ?radiusFromIAS@VSAFilter@@QEBAJPEAUIAttributesRaw@@H@Z
+          3    2 000123D0 ?radiusToIAS@VSAFilter@@QEBAJPEAEKAEAVIASAttributeVector@IASTL@@@Z
+          4    3 00011E00 ?radiusToIAS@VSAFilter@@QEBAJPEAUIAttributesRaw@@@Z
+          5    4 00011DC0 ?shutdown@VSAFilter@@QEAAJXZ
+          6    5 00006C80 DllCanUnloadNow
+          7    6 00006CA0 DllGetClassObject
+          8    7 00006CD0 DllRegisterServer
+          9    8 00006CF0 DllUnregisterServer
+
+  Summary
+
+        2000 .data
+        2000 .pdata
+        D000 .rdata
+        1000 .reloc
+        3000 .rsrc
+       27000 .text

@@ -1,0 +1,48 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\hppdcompio.dll
+
+File Type: DLL
+
+  Section contains the following exports for FXCompChannel_x64.dll
+
+    00000000 characteristics
+    4D55A8AC time date stamp Fri Feb 11 22:22:52 2011
+        0.00 version
+           1 ordinal base
+          20 number of functions
+          20 number of names
+
+    ordinal hint RVA      name
+
+          8    0 000026B0 BytesAvailable
+         17    1 000025F0 CancelInterrupt
+          2    2 00002490 CloseBulk
+         16    3 00002590 CloseInterrupt
+         13    4 00001D90 ExclusiveBulkLock
+         14    5 00001A40 ExclusiveBulkUnlock
+          9    6 000029B0 FlushBulk
+          7    7 00002650 GetLastStatus
+          6    8 00002670 GetTimeout
+         18    9 00002640 IsConnected
+          1    A 00002D80 OpenBulk
+         19    B 00001EF0 OpenByPort
+         15    C 00002530 OpenInterrupt
+          3    D 00002710 ReadBulk
+         10    E 00002690 SetOpenTimeout
+          5    F 00002680 SetTimeout
+         20   10 00002C60 TestFunction
+         11   11 00002A30 WaitForInterrupt
+         12   12 00002B30 WaitForInterruptEvent
+          4   13 000027C0 WriteBulk
+
+  Summary
+
+        4000 .data
+        2000 .pdata
+        8000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       23000 .text

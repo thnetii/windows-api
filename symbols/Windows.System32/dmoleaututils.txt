@@ -1,0 +1,44 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\dmoleaututils.dll
+
+File Type: DLL
+
+  Section contains the following exports for DMOleAutUtils.dll
+
+    00000000 characteristics
+    67CE7AA5 time date stamp
+        0.00 version
+           1 ordinal base
+          16 number of functions
+          16 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001580 Base64StrToSafeArray
+          2    1 00001390 ByteArrayToSafeArray
+          3    2 00001740 MultiStringToSafeArray
+          4    3 00002030 ReadBSTRFromStream
+          5    4 00001F00 ReadBSTRFromStreamEx
+          6    5 00001CD0 ReadStringFromStream
+          7    6 000028F0 ReadVariantFromStream
+          8    7 000026D0 ReadVariantFromStreamEx
+          9    8 00001690 SafeArrayToBase64Str
+         10    9 00001480 SafeArrayToByteArray
+         11    A 00001910 SafeArrayToMultiString
+         12    B 00001EF0 WriteBSTRToStream
+         13    C 00001E10 WriteBSTRToStreamEx
+         14    D 00001B80 WriteStringToStream
+         15    E 000026C0 WriteVariantToStream
+         16    F 000024C0 WriteVariantToStreamEx
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        3000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        4000 .text

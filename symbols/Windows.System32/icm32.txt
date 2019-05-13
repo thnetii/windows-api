@@ -1,0 +1,49 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\icm32.dll
+
+File Type: DLL
+
+  Section contains the following exports for ICM32.dll
+
+    00000000 characteristics
+    A5D2BA3F time date stamp
+        0.00 version
+           1 ordinal base
+          21 number of functions
+          21 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0000B630 CMCheckColors
+          2    1 0000B690 CMCheckColorsInGamut
+          3    2 0000B6B0 CMCheckRGBs
+         19    3 0000B7C0 CMConvertColorNameToIndex
+         20    4 0000B7F0 CMConvertIndexToColorName
+          4    5 0000B820 CMCreateDeviceLinkProfile
+          5    6 00001010 CMCreateMultiProfileTransform
+          6    7 0000B690 CMCreateProfile
+          7    8 0000B940 CMCreateProfileW
+          8    9 0000B980 CMCreateTransform
+          9    A 0000B980 CMCreateTransformExt
+         10    B 0000BB20 CMCreateTransformExtW
+         11    C 0000B980 CMCreateTransformW
+         12    D 000054C0 CMDeleteTransform
+         13    E 00005590 CMGetInfo
+         21    F 0000BC10 CMGetNamedProfileInfo
+         14   10 0000BC40 CMIsProfileValid
+         15   11 0000BC70 CMTranslateColors
+         16   12 0000B690 CMTranslateRGB
+         17   13 0000B690 CMTranslateRGBs
+         18   14 00004890 CMTranslateRGBsExt
+
+  Summary
+
+        3000 .data
+        1000 .pdata
+        3000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       39000 .text

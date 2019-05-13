@@ -1,0 +1,54 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\dusmapi.dll
+
+File Type: DLL
+
+  Section contains the following exports for dusmapi.dll
+
+    00000000 characteristics
+    95ACCEB0 time date stamp
+        0.00 version
+           1 ordinal base
+          26 number of functions
+          26 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000047A0 DusmEnumConnectionList
+          2    1 00004830 DusmEnumProfileList
+          3    2 000057D0 DusmFlushCostCache
+          4    3 00004780 DusmFree
+          5    4 000052D0 DusmGetAttributedNetworkUsage
+          6    5 000053C0 DusmGetConnectionListNetworkUsage
+          7    6 00005490 DusmGetNetworkUsage
+          8    7 000055A0 DusmGetProviderNetworkUsage
+          9    8 00005110 DusmQueryBackgroundRestriction
+         10    9 000048D0 DusmQueryConnectionProperties
+         11    A 00004980 DusmQueryCost
+         12    B 00004C80 DusmQueryDataPlan
+         13    C 00005240 DusmQueryGlobalDpuState
+         14    D 00004AC0 DusmQueryOperatorCost
+         15    E 00004DE0 DusmQueryOperatorDataPlan
+         16    F 00004FE0 DusmQuerySource
+         17   10 00004A20 DusmQueryUserCost
+         18   11 00004D30 DusmQueryUserDataPlan
+         19   12 00005740 DusmResetNetworkUsage
+         20   13 000056B0 DusmSetAttributionMapping
+         21   14 000051B0 DusmSetBackgroundRestriction
+         22   15 00004BF0 DusmSetOperatorCost
+         23   16 00004F20 DusmSetOperatorDataPlan
+         24   17 00005080 DusmSetSource
+         25   18 00004B60 DusmSetUserCost
+         26   19 00004E90 DusmSetUserDataPlan
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        5000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        7000 .text

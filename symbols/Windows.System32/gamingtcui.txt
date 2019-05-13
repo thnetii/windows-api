@@ -1,0 +1,58 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\gamingtcui.dll
+
+File Type: DLL
+
+  Section contains the following exports for gamingtcui.dll
+
+    00000000 characteristics
+    CF9E8800 time date stamp
+        0.00 version
+           1 ordinal base
+          29 number of functions
+          29 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00011D50 CheckGamingPrivilegeSilently
+          2    1 00011DB0 CheckGamingPrivilegeSilentlyForUser
+          3    2 00011E40 CheckGamingPrivilegeWithUI
+          4    3 000123C0 CheckGamingPrivilegeWithUIForUser
+          5    4 00003E20 DllCanUnloadNow
+          6    5 00003C10 DllGetActivationFactory
+          7    6 00003D80 DllGetClassObject
+          8    7 000118B0 ProcessPendingGameUI
+          9    8 00011450 ShowChangeFriendRelationshipUI
+         10    9 00011600 ShowChangeFriendRelationshipUIForUser
+         11    A 000128A0 ShowCustomizeUserProfileUI
+         12    B 00012A40 ShowCustomizeUserProfileUIForUser
+         13    C 00012690 ShowFindFriendsUI
+         14    D 00012830 ShowFindFriendsUIForUser
+         15    E 00012460 ShowGameInfoUI
+         16    F 00012610 ShowGameInfoUIForUser
+         17   10 00010840 ShowGameInviteUI
+         18   11 00010A40 ShowGameInviteUIForUser
+         19   12 00010AE0 ShowGameInviteUIWithContext
+         20   13 00010CE0 ShowGameInviteUIWithContextForUser
+         21   14 00010D90 ShowPlayerPickerUI
+         22   15 00011150 ShowPlayerPickerUIForUser
+         23   16 00011220 ShowProfileCardUI
+         24   17 000113D0 ShowProfileCardUIForUser
+         25   18 00011680 ShowTitleAchievementsUI
+         26   19 00011830 ShowTitleAchievementsUIForUser
+         27   1A 00012AB0 ShowUserSettingsUI
+         28   1B 00012C50 ShowUserSettingsUIForUser
+         29   1C 00011CA0 TryCancelPendingGameUI
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        2000 .pdata
+        C000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       1A000 .text

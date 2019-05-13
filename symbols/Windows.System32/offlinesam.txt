@@ -1,0 +1,53 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\offlinesam.dll
+
+File Type: DLL
+
+  Section contains the following exports for offlinesam.dll
+
+    00000000 characteristics
+    FEBBFB9F time date stamp
+        0.00 version
+           1 ordinal base
+          25 number of functions
+          25 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00010150 SamOfflineAddMemberToAlias
+          2    1 00010CB0 SamOfflineCloseHandle
+          3    2 0000F340 SamOfflineConnect
+          4    3 0000F530 SamOfflineConnectExternal
+          5    4 0000F450 SamOfflineConnectForInstaller
+          6    5 0000FC40 SamOfflineCreateAliasInDomain
+          7    6 000107F0 SamOfflineCreateUserInDomain
+          8    7 00010000 SamOfflineDeleteAlias
+          9    8 00010B10 SamOfflineDeleteUser
+         10    9 00010440 SamOfflineEnumerateAliasesInDomain
+         11    A 0000F690 SamOfflineEnumerateDomainsInSamServer
+         12    B 00010580 SamOfflineEnumerateUsersInDomain2
+         13    C 00010E20 SamOfflineFreeMemory
+         14    D 00010340 SamOfflineGetMembersInAlias
+         15    E 0000F7C0 SamOfflineLookupDomainInSamServer
+         16    F 0000F9F0 SamOfflineLookupNamesInDomain
+         17   10 0000FB20 SamOfflineOpenAlias
+         18   11 0000F8C0 SamOfflineOpenDomain
+         19   12 000106D0 SamOfflineOpenUser
+         20   13 0000FD90 SamOfflineQueryInformationAlias
+         21   14 00010930 SamOfflineQueryInformationUser
+         22   15 00010260 SamOfflineRemoveMemberFromAlias
+         23   16 00010C00 SamOfflineRidToSid
+         24   17 0000FEF0 SamOfflineSetInformationAlias
+         25   18 00010A20 SamOfflineSetInformationUser
+
+  Summary
+
+        1000 .data
+        2000 .pdata
+        6000 .rdata
+        1000 .reloc
+       17000 .rsrc
+       1D000 .text

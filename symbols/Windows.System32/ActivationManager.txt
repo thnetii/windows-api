@@ -1,0 +1,38 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\ActivationManager.dll
+
+File Type: DLL
+
+  Section contains the following exports for ActivationManager.dll
+
+    00000000 characteristics
+    A888AB79 time date stamp
+        0.00 version
+           1 ordinal base
+           9 number of functions
+           9 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0005FA50 DisableAppXDebuggingForPackage
+          2    1 000184F0 DllCanUnloadNow
+          3    2 00036BD0 DllGetActivationFactory
+          4    3 0001DF40 DllGetClassObject
+          5    4 0005FAF0 EnableAppXDebuggingForPackage
+          6    5 0005FCA0 FreeAppXLaunchContext
+          7    6 0005FCC0 PostCreateProcessAppXActivation
+          8    7 00060090 PrepareAppXActivation
+          9    8 000603E0 RegisterAppXPackageIfNecessary
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        7000 .pdata
+       29000 .rdata
+        2000 .reloc
+        1000 .rsrc
+       75000 .text

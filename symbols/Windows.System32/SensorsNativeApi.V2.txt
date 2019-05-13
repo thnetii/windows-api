@@ -1,0 +1,86 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\SensorsNativeApi.V2.dll
+
+File Type: DLL
+
+  Section contains the following exports for SensorsNativeApi.V2.dll
+
+    00000000 characteristics
+    ABDCAE8A time date stamp
+        0.00 version
+           1 ordinal base
+          57 number of functions
+          57 number of names
+
+    ordinal hint RVA      name
+
+         57    0 00008520 DllMain
+          1    1 0000EC30 SensorCancelHistoryRetrievalV2
+          2    2 0000E830 SensorClearHistoryV2
+          3    3 000070D0 SensorCloseV2
+          4    4 00007FC0 SensorDeviceIoControlV2
+          5    5 0000D530 SensorDisableWakeV2
+          6    6 00007F10 SensorEnableIdleOperationV2
+          7    7 0000D460 SensorEnableWakeV2
+          8    8 0000ED00 SensorGetAccDataV2
+          9    9 0000ED50 SensorGetAlsDataV2
+         10    A 0000ED90 SensorGetAlsDataWithColorV2
+         11    B 0000EDF0 SensorGetBarDataV2
+         12    C 0000C250 SensorGetCapabilitiesCollectionV2
+         13    D 00007600 SensorGetCapabilitiesV2
+         14    E 0000D0E0 SensorGetCurrentReadingV2
+         15    F 0000D0D0 SensorGetDataCollectionV2
+         16   10 0000FBB0 SensorGetDataDeliveryModeV2
+         17   11 0000E240 SensorGetDataFieldPropertiesV2
+         18   12 0000D960 SensorGetDataIntervalV2
+         19   13 0000DB50 SensorGetDataThresholdsV2
+         20   14 00007310 SensorGetDataV2
+         21   15 0000DDE0 SensorGetDefaultDataThresholdsV2
+         22   16 000083E0 SensorGetDeviceIdV2
+         23   17 0000C430 SensorGetFifoMaxSizeV2
+         24   18 0000EF10 SensorGetFusDataV2
+         25   19 0000EE30 SensorGetGyrDataV2
+         26   1A 0000E900 SensorGetHistoryV2
+         27   1B 0000EE70 SensorGetMagDataV2
+         28   1C 0000D6E0 SensorGetPropertiesV2
+         29   1D 0000EEC0 SensorGetPrxDataV2
+         30   1E 000083D0 SensorGetRangeResolutionV2
+         31   1F 0000E060 SensorGetSupportedDataFieldsV2
+         32   20 0000D600 SensorIsWakeEnabledV2
+         33   21 000083D0 SensorNotificationConfigureV2
+         34   22 000083D0 SensorNotificationStartV2
+         35   23 000083D0 SensorNotificationStopV2
+         36   24 0000CF50 SensorOpenByInterfaceV2
+         37   25 00006F00 SensorOpenV2
+         38   26 0000EF80 SensorSetAccThresholdsV2
+         39   27 0000F0E0 SensorSetAlsThresholdsV2
+         40   28 0000F100 SensorSetAlsWithColorThresholdsV2
+         41   29 0000F300 SensorSetBarThresholdsV2
+         42   2A 0000F9E0 SensorSetDataDeliveryModeV2
+         43   2B 0000DB40 SensorSetDataIntervalV2
+         44   2C 0000DDD0 SensorSetDataThresholdsV2
+         45   2D 0000F670 SensorSetFusThresholdsV2
+         46   2E 0000F3B0 SensorSetGyrThresholdsV2
+         47   2F 0000F510 SensorSetMagThresholdsV2
+         48   30 000083D0 SensorSetRangeResolutionV2
+         49   31 0000F810 SensorSetReportLatencyV2
+         50   32 0000D330 SensorStartCollectionV2
+         51   33 0000E490 SensorStartHistoryV2
+         52   34 0000FD90 SensorStartStateChangeNotificationV2
+         53   35 00007800 SensorStartV2
+         54   36 0000E660 SensorStopHistoryV2
+         55   37 0000FF80 SensorStopStateChangeNotificationV2
+         56   38 00007F00 SensorStopV2
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        C000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       12000 .text

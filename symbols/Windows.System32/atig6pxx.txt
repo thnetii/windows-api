@@ -1,0 +1,52 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\atig6pxx.dll
+
+File Type: DLL
+
+  Section contains the following exports for atiglpxx.dll
+
+    00000000 characteristics
+    56569FDC time date stamp Thu Nov 26 06:59:56 2015
+        0.00 version
+           1 ordinal base
+          24 number of functions
+          24 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00008858 DllMain
+          3    1 00008200 DrvCopyContext
+          4    2 00008254 DrvCreateContext
+          5    3 00008290 DrvCreateLayerContext
+          2    4 000081C4 DrvDeleteContext
+          6    5 000082D4 DrvDescribeLayerPlane
+         16    6 00008604 DrvDescribePixelFormat
+          7    7 00008344 DrvGetLayerPaletteEntries
+          8    8 000083B4 DrvGetProcAddress
+         24    9 000086E8 DrvPresentBuffers
+          9    A 000083F0 DrvRealizeLayerPalette
+         10    B 00008444 DrvReleaseContext
+         23    C 0000872C DrvSetCallbackProcs
+         11    D 00008480 DrvSetContext
+         12    E 000084D4 DrvSetLayerPaletteEntries
+         17    F 00008668 DrvSetPixelFormat
+         13   10 00008544 DrvShareLists
+         18   11 000086AC DrvSwapBuffers
+         14   12 00008588 DrvSwapLayerBuffers
+         15   13 000085CC DrvValidateVersion
+         20   14 000087A0 atiPPHSN
+         19   15 00008770 atiPS
+         21   16 000087D0 atiQD
+         22   17 00008814 atiQDS
+
+  Summary
+
+        4000 .data
+        1000 .idata
+        1000 .pdata
+        1000 .reloc
+        1000 .rsrc
+       16000 .text

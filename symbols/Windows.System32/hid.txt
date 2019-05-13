@@ -1,0 +1,72 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\hid.dll
+
+File Type: DLL
+
+  Section contains the following exports for HID.DLL
+
+    00000000 characteristics
+    F4D41886 time date stamp
+        0.00 version
+           1 ordinal base
+          44 number of functions
+          44 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000039E0 HidD_FlushQueue
+          2    1 00001E80 HidD_FreePreparsedData
+          3    2 00001940 HidD_GetAttributes
+          4    3 00003A20 HidD_GetConfiguration
+          5    4 00003A90 HidD_GetFeature
+          6    5 00001EB0 HidD_GetHidGuid
+          7    6 00003AD0 HidD_GetIndexedString
+          8    7 00003B20 HidD_GetInputReport
+          9    8 00003B60 HidD_GetManufacturerString
+         10    9 00003BA0 HidD_GetMsGenreDescriptor
+         11    A 00003BE0 HidD_GetNumInputBuffers
+         12    B 00003C20 HidD_GetPhysicalDescriptor
+         13    C 000019D0 HidD_GetPreparsedData
+         14    D 00003C60 HidD_GetProductString
+         15    E 00003CA0 HidD_GetSerialNumberString
+         16    F 00003CE0 HidD_Hello
+         17   10 00003D30 HidD_SetConfiguration
+         18   11 00003D90 HidD_SetFeature
+         19   12 00003DD0 HidD_SetNumInputBuffers
+         20   13 00003E10 HidD_SetOutputReport
+         21   14 00001510 HidP_GetButtonCaps
+         22   15 00001790 HidP_GetCaps
+         23   16 00003F70 HidP_GetData
+         24   17 000042C0 HidP_GetExtendedAttributes
+         25   18 00001D20 HidP_GetLinkCollectionNodes
+         26   19 00002270 HidP_GetScaledUsageValue
+         27   1A 00001550 HidP_GetSpecificButtonCaps
+         28   1B 00001280 HidP_GetSpecificValueCaps
+         29   1C 00002110 HidP_GetUsageValue
+         30   1D 00004420 HidP_GetUsageValueArray
+         31   1E 00001ED0 HidP_GetUsages
+         32   1F 000046A0 HidP_GetUsagesEx
+         33   20 00001240 HidP_GetValueCaps
+         34   21 000049C0 HidP_InitializeReportForID
+         35   22 00001010 HidP_MaxDataListLength
+         36   23 00002580 HidP_MaxUsageListLength
+         37   24 00004B10 HidP_SetData
+         38   25 00004F50 HidP_SetScaledUsageValue
+         39   26 000055C0 HidP_SetUsageValue
+         40   27 000057A0 HidP_SetUsageValueArray
+         41   28 00005A10 HidP_SetUsages
+         42   29 000060A0 HidP_TranslateUsagesToI8042ScanCodes
+         43   2A 00005B60 HidP_UnsetUsages
+         44   2B 000024D0 HidP_UsageListDifference
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        3000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        6000 .text

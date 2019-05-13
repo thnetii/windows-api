@@ -1,0 +1,63 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\wlansec.dll
+
+File Type: DLL
+
+  Section contains the following exports for WLANSEC.dll
+
+    00000000 characteristics
+    A0E058A6 time date stamp
+        0.00 version
+           1 ordinal base
+          34 number of functions
+          34 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00008470 MSMSecConnectionHealthCheck
+          2    1 00006890 MSMSecCreateDiscoveryProfiles
+          3    2 00002C80 MSMSecDeinitialize
+          4    3 00003140 MSMSecDeinitializeAdapter
+          5    4 0000A4A0 MSMSecDisableIpAddressAllocation
+          6    5 0000A140 MSMSecEnableIpAddressAllocation
+          7    6 00007A30 MSMSecFreeIntfState
+          8    7 00002DA0 MSMSecFreeMemory
+          9    8 000076A0 MSMSecFreePeerState
+         10    9 00006D10 MSMSecFreeProfile
+         11    A 0000A7F0 MSMSecGetPeerIpAddress
+         12    B 00002A20 MSMSecInitialize
+         13    C 00002F10 MSMSecInitializeAdapter
+         14    D 00006590 MSMSecIsUIRequestPending
+         15    E 000032A0 MSMSecPerformCapabilityMatch
+         16    F 00004540 MSMSecPerformPostAssociateSecurity
+         17   10 000041B0 MSMSecPerformPreAssociateSecurity
+         18   11 00003680 MSMSecPerformPreAssociateSecurityEx
+         19   12 00006E50 MSMSecProcessSessionChange
+         20   13 00009DE0 MSMSecQueryAPPeerPSKIndex
+         21   14 000077C0 MSMSecQueryIntfState
+         22   15 00007120 MSMSecQueryPeerState
+         23   16 00005AA0 MSMSecRecvIndication
+         24   17 00005420 MSMSecRecvPacket
+         25   18 00007B50 MSMSecRedoSecurity
+         26   19 00009A50 MSMSecRemoveAPPeerKey
+         27   1A 00006FA0 MSMSecSendPktCompletion
+         28   1B 000095F0 MSMSecSetAPPeerKey
+         29   1C 000091E0 MSMSecSetAPSecondaryPSK
+         30   1D 00008870 MSMSecSetRuntimeState
+         31   1E 00008DB0 MSMSecSetWcnOneXEnable
+         32   1F 00004E80 MSMSecStopPostAssociateSecurity
+         33   20 00004220 MSMSecStopSecurity
+         34   21 00006090 MSMSecUIResponse
+
+  Summary
+
+        D000 .data
+        1000 .didat
+        3000 .pdata
+        C000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       64000 .text

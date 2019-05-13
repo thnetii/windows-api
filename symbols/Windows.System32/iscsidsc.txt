@@ -1,0 +1,108 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\iscsidsc.dll
+
+File Type: DLL
+
+  Section contains the following exports for ISCSIDSC.dll
+
+    00000000 characteristics
+    32DC3996 time date stamp
+        0.00 version
+           1 ordinal base
+          80 number of functions
+          80 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000059D0 AddISNSServerA
+          2    1 000059B0 AddISNSServerW
+          3    2 00003580 AddIScsiConnectionA
+          4    3 00003520 AddIScsiConnectionW
+          5    4 00001270 AddIScsiSendTargetPortalA
+          6    5 00001210 AddIScsiSendTargetPortalW
+          7    6 00004B70 AddIScsiStaticTargetA
+          8    7 000048C0 AddIScsiStaticTargetW
+          9    8 00003090 AddPersistentIScsiDeviceA
+         10    9 00003070 AddPersistentIScsiDeviceW
+         11    A 000063B0 AddRadiusServerA
+         12    B 00006390 AddRadiusServerW
+         13    C 00003170 ClearPersistentIScsiDevices
+         14    D 00001010 DllMain
+         15    E 00002F90 GetDevicesForIScsiSessionA
+         16    F 00002EC0 GetDevicesForIScsiSessionW
+         17   10 00006150 GetIScsiIKEInfoA
+         18   11 000060E0 GetIScsiIKEInfoW
+         19   12 00005F60 GetIScsiInitiatorNodeNameA
+         20   13 00005F50 GetIScsiInitiatorNodeNameW
+         21   14 00002DD0 GetIScsiSessionListA
+         22   15 00002E50 GetIScsiSessionListEx
+         23   16 00002D50 GetIScsiSessionListW
+         24   17 00003AD0 GetIScsiTargetInformationA
+         25   18 00003A00 GetIScsiTargetInformationW
+         26   19 000010E0 GetIScsiVersionInformation
+         27   1A 00003320 LoginIScsiTargetA
+         28   1B 000031C0 LoginIScsiTargetW
+         29   1C 000034E0 LogoutIScsiTarget
+         30   1D 00005AD0 RefreshISNSServerA
+         31   1E 00005AB0 RefreshISNSServerW
+         32   1F 00001470 RefreshIScsiSendTargetPortalA
+         33   20 00001420 RefreshIScsiSendTargetPortalW
+         34   21 00005A60 RemoveISNSServerA
+         35   22 00005A40 RemoveISNSServerW
+         36   23 00003650 RemoveIScsiConnection
+         37   24 00003750 RemoveIScsiPersistentTargetA
+         38   25 00003660 RemoveIScsiPersistentTargetW
+         39   26 00001380 RemoveIScsiSendTargetPortalA
+         40   27 00001330 RemoveIScsiSendTargetPortalW
+         41   28 00004D30 RemoveIScsiStaticTargetA
+         42   29 00004CA0 RemoveIScsiStaticTargetW
+         43   2A 00003110 RemovePersistentIScsiDeviceA
+         44   2B 000030F0 RemovePersistentIScsiDeviceW
+         45   2C 00006440 RemoveRadiusServerA
+         46   2D 00006420 RemoveRadiusServerW
+         47   2E 000047B0 ReportActiveIScsiTargetMappingsA
+         48   2F 00004750 ReportActiveIScsiTargetMappingsW
+         49   30 00005C30 ReportISNSServerListA
+         50   31 00005B20 ReportISNSServerListW
+         51   32 00005E40 ReportIScsiInitiatorListA
+         52   33 00005DF0 ReportIScsiInitiatorListW
+         53   34 00003870 ReportIScsiPersistentLoginsA
+         54   35 00003840 ReportIScsiPersistentLoginsW
+         55   36 00001930 ReportIScsiSendTargetPortalsA
+         56   37 000019F0 ReportIScsiSendTargetPortalsExA
+         57   38 00001950 ReportIScsiSendTargetPortalsExW
+         58   39 00001910 ReportIScsiSendTargetPortalsW
+         59   3A 00004F70 ReportIScsiTargetPortalsA
+         60   3B 00004E60 ReportIScsiTargetPortalsW
+         61   3C 00003960 ReportIScsiTargetsA
+         62   3D 00003930 ReportIScsiTargetsW
+         63   3E 000031A0 ReportPersistentIScsiDevicesA
+         64   3F 00003180 ReportPersistentIScsiDevicesW
+         65   40 000065A0 ReportRadiusServerListA
+         66   41 00006490 ReportRadiusServerListW
+         67   42 00005070 SendScsiInquiry
+         68   43 000053B0 SendScsiReadCapacity
+         69   44 000056C0 SendScsiReportLuns
+         70   45 000062D0 SetIScsiGroupPresharedKey
+         71   46 00006050 SetIScsiIKEInfoA
+         72   47 00005FE0 SetIScsiIKEInfoW
+         73   48 00006320 SetIScsiInitiatorCHAPSharedSecret
+         74   49 00005F00 SetIScsiInitiatorNodeNameA
+         75   4A 00005E90 SetIScsiInitiatorNodeNameW
+         76   4B 00006360 SetIScsiInitiatorRADIUSSharedSecret
+         77   4C 000061E0 SetIScsiTunnelModeOuterAddressA
+         78   4D 000061C0 SetIScsiTunnelModeOuterAddressW
+         79   4E 00003060 SetupPersistentIScsiDevices
+         80   4F 00003060 SetupPersistentIScsiVolumes
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        5000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        D000 .text

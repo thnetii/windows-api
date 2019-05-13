@@ -1,0 +1,42 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\fhsvcctl.dll
+
+File Type: DLL
+
+  Section contains the following exports for fhsvcctl.dll
+
+    00000000 characteristics
+    DE630D59 time date stamp
+        0.00 version
+           1 ordinal base
+          14 number of functions
+          14 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001220 DllMain
+          2    1 000014E0 FhQueryConfiguredUsersCount
+          3    2 000022D0 FhServiceBlockBackup
+          4    3 00002520 FhServiceClearProtectionState
+          5    4 00001EB0 FhServiceClosePipe
+          6    5 00002610 FhServiceEnterMaintenanceMode
+          7    6 000027E0 FhServiceExitMaintenanceMode
+          8    7 000029A0 FhServiceMigrationFinished
+          9    8 000028C0 FhServiceMigrationStarting
+         10    9 00001AD0 FhServiceOpenPipe
+         11    A 000021E0 FhServiceReloadConfiguration
+         12    B 00002010 FhServiceStartBackup
+         13    C 00002100 FhServiceStopBackup
+         14    D 00002440 FhServiceUnblockBackup
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        3000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        4000 .text

@@ -1,0 +1,36 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\rasppp.dll
+
+File Type: DLL
+
+  Section contains the following exports for rasppp.dll
+
+    00000000 characteristics
+    F343FC01 time date stamp
+        0.00 version
+           1 ordinal base
+           8 number of functions
+           8 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000077C0 InitializeProtocolEngine
+          2    1 000084E0 InitializeServerProtocolEngine
+          3    2 00008930 PppStop
+          4    3 000051F0 RasCpEnumProtocolIds
+          5    4 000053F0 RasCpGetInfo
+          6    5 00007BE0 SendMessageToProtocolEngine
+          7    6 00007B10 UninitializeProtocolEngine
+          8    7 000087E0 UninitializeServerProtocolEngine
+
+  Summary
+
+        2000 .data
+        2000 .pdata
+       18000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       32000 .text

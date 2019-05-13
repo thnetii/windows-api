@@ -1,0 +1,36 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\nshwfp.dll
+
+File Type: DLL
+
+  Section contains the following exports for NSHWFP.DLL
+
+    00000000 characteristics
+    A887B478 time date stamp
+        0.00 version
+           1 ordinal base
+           8 number of functions
+           8 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00005BE0 IdpConfigAddPolicy
+          2    1 000073D0 IdpConfigAllocateAndGetPolicy
+          3    2 00007440 IdpConfigFreePolicy
+          4    3 000066B0 IdpConfigInitDefaultPolicy
+          5    4 00005E10 IdpConfigRemovePolicy
+          6    5 000010E0 InitHelperDll
+          7    6 00003D90 WfpCaptureExportedW
+          8    7 00004440 WfpCaptureStop
+
+  Summary
+
+       27000 .data
+        2000 .pdata
+       6B000 .rdata
+        6000 .reloc
+        1000 .rsrc
+       27000 .text

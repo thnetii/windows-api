@@ -1,0 +1,40 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\InprocLogger.dll
+
+File Type: DLL
+
+  Section contains the following exports for InprocLogger.dll
+
+    00000000 characteristics
+    A6AA45C5 time date stamp
+        0.00 version
+           1 ordinal base
+          11 number of functions
+          11 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00003A50 EnableInProcTracingForProvider
+          2    1 000035A0 FlushInProcTraceSession
+          3    2 00003330 InitializeInProcLogger
+          4    3 00003930 InitializeInProcTraceFlushTrigger
+          5    4 000037A0 InitializeInProcTraceSession
+          6    5 00003890 IsInProcTraceSessionStarted
+          7    6 00003360 ShutdownInProcLogger
+          8    7 00003940 ShutdownInProcTraceFlushTrigger
+          9    8 000037B0 ShutdownInProcTraceSession
+         10    9 000034C0 StartInProcTraceSession
+         11    A 000036B0 StopInProcTraceSession
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        4000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        A000 .text

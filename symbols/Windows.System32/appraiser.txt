@@ -1,0 +1,40 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\appraiser.dll
+
+File Type: DLL
+
+  Section contains the following exports for Appraiser.dll
+
+    00000000 characteristics
+    D6ABE595 time date stamp
+        0.00 version
+           1 ordinal base
+          10 number of functions
+          10 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00003350 DoScheduledTelemetryRun
+          2    1 00003270 DoScheduledTelemetryRunTC
+          3    2 00003560 GetCtacProvider
+          4    3 00003210 GetProvider
+          5    4 00003410 RunTest
+          6    5 000033D0 RunXml
+          7    6 00003260 Sgd
+          8    7 00003360 UpdateAvStatus
+          9    8 00003260 UpdateCacheCompatStatuses
+         10    9 00003550 UpdateExperienceIndicators
+
+  Summary
+
+        8000 .data
+        1000 .didat
+        8000 .pdata
+       67000 .rdata
+        1000 .reloc
+        1000 .rsrc
+      11D000 .text
+        1000 RT_CODE

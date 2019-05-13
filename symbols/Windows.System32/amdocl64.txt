@@ -1,0 +1,250 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\amdocl64.dll
+
+File Type: DLL
+
+  Section contains the following exports for amdocl64.dll
+
+    00000000 characteristics
+    5656AF07 time date stamp Thu Nov 26 08:04:39 2015
+        0.00 version
+           1 ordinal base
+         221 number of functions
+         221 number of names
+
+    ordinal hint RVA      name
+
+          1    0 02B7E4E8 AMD_OCL_BUILD_OPTIONS
+          2    1 02B7E4F0 AMD_OCL_BUILD_OPTIONS_APPEND
+          3    2 02B7E4F8 AMD_OCL_LINK_OPTIONS
+          4    3 02B7E500 AMD_OCL_LINK_OPTIONS_APPEND
+          5    4 02B7E508 AMD_OCL_SC_LIB
+          6    5 02B7E515 AMD_OCL_WAIT_COMMAND
+          7    6 02B7E529 AMD_THREAD_TRACE_ENABLE
+          8    7 02AE1A81 CL_KHR_FP64
+          9    8 02AE1A82 CPU_IMAGE_SUPPORT
+         10    9 02AE1AB0 CPU_MAX_ALLOC_PERCENT
+         11    A 02AE1A58 CPU_MAX_COMPUTE_UNITS
+         12    B 02AE1A5C CPU_MAX_WORKGROUP_SIZE
+         13    C 02AE1AC8 CPU_OPENCL_VERSION
+         14    D 02AE1A50 CPU_WORKER_THREAD_STACK_SIZE
+         15    E 02AE1A48 CQ_THREAD_STACK_SIZE
+         16    F 02B7E517 DRMDMA_FOR_LNX_CF
+         17   10 02B7E4DB ENABLE_CAL_SHUTDOWN
+         18   11 02B7E52A ENVVAR_HSA_POLL_KERNEL_COMPLETION
+         19   12 02B7E521 GPU_ASSUME_ALIASES
+         20   13 02B7E4E4 GPU_ASYNC_MEM_COPY
+         21   14 02B7E4DC GPU_BLIT_ENGINE_TYPE
+         22   15 02AE1A60 GPU_DEVICE_NAME
+         23   16 02AE1A68 GPU_DEVICE_ORDINAL
+         24   17 02B7E522 GPU_DIRECT_SRD
+         25   18 02B7E4D9 GPU_DUMP_BLIT_KERNELS
+         26   19 02B7E528 GPU_ENABLE_LARGE_ALLOCATION
+         27   1A 02B7E4DA GPU_FLUSH_ON_EXECUTION
+         28   1B 02B7E510 GPU_FORCE_64BIT_PTR
+         29   1C 02B7E511 GPU_FORCE_OCL20_32BIT
+         30   1D 02AE1A78 GPU_HEAP_GROWTH_INCREMENT
+         31   1E 02B7E520 GPU_HSAIL_ENABLE
+         32   1F 02B7E52D GPU_IFH_MODE
+         33   20 02AE1A84 GPU_IMAGE_DMA
+         34   21 02AE1A70 GPU_INITIAL_HEAP_SIZE
+         35   22 02AE1A74 GPU_MAX_HEAP_SIZE
+         36   23 02B7E4C0 GPU_MAX_WORKGROUP_SIZE
+         37   24 02B7E4C4 GPU_MAX_WORKGROUP_SIZE_2D_X
+         38   25 02B7E4C8 GPU_MAX_WORKGROUP_SIZE_2D_Y
+         39   26 02B7E4CC GPU_MAX_WORKGROUP_SIZE_3D_X
+         40   27 02B7E4D0 GPU_MAX_WORKGROUP_SIZE_3D_Y
+         41   28 02B7E4D4 GPU_MAX_WORKGROUP_SIZE_3D_Z
+         42   29 02B7E52E GPU_MIPMAP
+         43   2A 02AE1AB8 GPU_NUM_COMPUTE_RINGS
+         44   2B 02AE1AA8 GPU_NUM_MEM_DEPENDENCY
+         45   2C 02B7E4E0 GPU_OPEN_VIDEO
+         46   2D 02AE1A83 GPU_PARTIAL_DISPATCH
+         47   2E 02AE1A98 GPU_PINNED_MIN_XFER_SIZE
+         48   2F 02AE1A90 GPU_PINNED_XFER_SIZE
+         49   30 02AE1A88 GPU_PRE_RA_SCHED
+         50   31 02B7E524 GPU_PRINT_CHILD_KERNEL
+         51   32 02B7E512 GPU_RAW_TIMESTAMP
+         52   33 02AE1AA0 GPU_RESOURCE_CACHE_SIZE
+         53   34 02AE1ABC GPU_SELECT_COMPUTE_RINGS_ID
+         54   35 02AE1AB4 GPU_SINGLE_ALLOC_PERCENT
+         55   36 02AE1A7C GPU_STAGING_BUFFER_SIZE
+         56   37 02B7E516 GPU_STAGING_WRITE_PERSISTENT
+         57   38 02B7E523 GPU_USE_DEVICE_QUEUE
+         58   39 02B7E513 GPU_USE_SINGLE_SCRATCH
+         59   3A 02AE1A80 GPU_USE_SYNC_OBJECTS
+         60   3B 02B7E530 GPU_WAVES_PER_SIMD
+         61   3C 02B7E52F GPU_WAVE_LIMIT_ENABLE
+         62   3D 02AE1AC0 GPU_WORKLOAD_SPLIT
+         63   3E 02B7E518 GPU_XFER_BUFFER_SIZE
+         64   3F 02B7E52C HSA_ENABLE_ATOMICS_32B
+         65   40 02B7E52B HSA_LOCAL_MEMORY_ENABLE
+         66   41 02B7E514 HSA_RUNTIME
+         67   42 02AE1AC4 OPENCL_VERSION
+         68   43 02B7E4D8 REMOTE_ALLOC
+         69   44 00CB5B20 SCCheckCompatibility
+         70   45 00CB5B50 SCGetExportFunctions
+         71   46 002D2E20 _aclHsaLoader
+         72   47 00296DA0 aclBinaryFini
+         73   48 00296E80 aclBinaryInit
+         74   49 00297070 aclBinaryVersion
+         75   4A 002970A0 aclCompile
+         76   4B 00297250 aclCompilerFini
+         77   4C 00297370 aclCompilerInit
+         78   4D 00297590 aclCompilerVersion
+         79   4E 002975E0 aclConvertType
+         80   4F 00297660 aclCreateFromBinary
+         81   50 00297730 aclDbgAddArgument
+         82   51 002977C0 aclDbgRemoveArgument
+         83   52 00297840 aclDisassemble
+         84   53 002978D0 aclDumpBinary
+         85   54 002978E0 aclExtractSection
+         86   55 002979A0 aclExtractSymbol
+         87   56 00297AA0 aclGetArchInfo
+         88   57 00297B00 aclGetArchitecture
+         89   58 00297B20 aclGetChip
+         90   59 00297B80 aclGetCompilerLog
+         91   5A 00297BB0 aclGetDeviceBinary
+         92   5B 00297C60 aclGetDeviceInfo
+         93   5C 00297D50 aclGetErrorString
+         94   5D 00297EC0 aclGetFamily
+         95   5E 00297EF0 aclGetTargetInfo
+         96   5F 00298230 aclInsertKernelStatistics
+         97   60 00298290 aclInsertSection
+         98   61 00298330 aclInsertSymbol
+         99   62 002986F0 aclLink
+        100   63 00298A60 aclQueryInfo
+        101   64 00298B10 aclReadFromFile
+        102   65 00298BE0 aclReadFromMem
+        103   66 00298EE0 aclRemoveSection
+        104   67 00298F80 aclRemoveSymbol
+        105   68 00299010 aclRetrieveType
+        106   69 002990E0 aclSetType
+        107   6A 00299190 aclVersionSize
+        108   6B 002991C0 aclWriteToFile
+        109   6C 00299290 aclWriteToMem
+        110   6D 0021D6A0 clBuildProgram
+        111   6E 0021D830 clCompileProgram
+        112   6F 002154D0 clCreateBuffer
+        113   70 00202C90 clCreateCommandQueue
+        114   71 00202D60 clCreateCommandQueueWithProperties
+        115   72 002034B0 clCreateContext
+        116   73 00203800 clCreateContextFromType
+        117   74 00213CD0 clCreateFromGLBuffer
+        118   75 00213DB0 clCreateFromGLRenderbuffer
+        119   76 00213E90 clCreateFromGLTexture
+        120   77 00213E90 clCreateFromGLTexture2D
+        121   78 00213E90 clCreateFromGLTexture3D
+        122   79 002159B0 clCreateImage
+        123   7A 00216080 clCreateImage2D
+        124   7B 00216420 clCreateImage3D
+        125   7C 0021DB10 clCreateKernel
+        126   7D 0021DCA0 clCreateKernelsInProgram
+        127   7E 0021BB50 clCreatePipe
+        128   7F 0021DE70 clCreateProgramWithBinary
+        129   80 0021E0F0 clCreateProgramWithBuiltInKernels
+        130   81 0021E150 clCreateProgramWithSource
+        131   82 00220080 clCreateSampler
+        132   83 00220170 clCreateSamplerWithProperties
+        133   84 00216830 clCreateSubBuffer
+        134   85 0020D640 clCreateSubDevices
+        135   86 0020F430 clCreateUserEvent
+        136   87 00213FF0 clEnqueueAcquireGLObjects
+        137   88 0020FC60 clEnqueueBarrier
+        138   89 0020FCC0 clEnqueueBarrierWithWaitList
+        139   8A 00216AA0 clEnqueueCopyBuffer
+        140   8B 00216E60 clEnqueueCopyBufferRect
+        141   8C 002172F0 clEnqueueCopyBufferToImage
+        142   8D 00217750 clEnqueueCopyImage
+        143   8E 00217D00 clEnqueueCopyImageToBuffer
+        144   8F 00218160 clEnqueueFillBuffer
+        145   90 00218450 clEnqueueFillImage
+        146   91 00218740 clEnqueueMapBuffer
+        147   92 00218B10 clEnqueueMapImage
+        148   93 0020FE10 clEnqueueMarker
+        149   94 0020FCC0 clEnqueueMarkerWithWaitList
+        150   95 00219020 clEnqueueMigrateMemObjects
+        151   96 0020FF40 clEnqueueNDRangeKernel
+        152   97 002102F0 clEnqueueNativeKernel
+        153   98 002193C0 clEnqueueReadBuffer
+        154   99 002196E0 clEnqueueReadBufferRect
+        155   9A 00219AA0 clEnqueueReadImage
+        156   9B 00214310 clEnqueueReleaseGLObjects
+        157   9C 00221320 clEnqueueSVMFree
+        158   9D 002214E0 clEnqueueSVMMap
+        159   9E 002217F0 clEnqueueSVMMemFill
+        160   9F 00221A10 clEnqueueSVMMemcpy
+        161   A0 00221BE0 clEnqueueSVMUnmap
+        162   A1 00210530 clEnqueueTask
+        163   A2 00219EC0 clEnqueueUnmapMemObject
+        164   A3 00210620 clEnqueueWaitForEvents
+        165   A4 0021A0A0 clEnqueueWriteBuffer
+        166   A5 0021A3C0 clEnqueueWriteBufferRect
+        167   A6 0021A780 clEnqueueWriteImage
+        168   A7 00210760 clFinish
+        169   A8 00210800 clFlush
+        170   A9 00202FF0 clGetCommandQueueInfo
+        171   AA 002039A0 clGetContextInfo
+        172   AB 0020D950 clGetDeviceIDs
+        173   AC 0020DA60 clGetDeviceInfo
+        174   AD 0020F520 clGetEventInfo
+        175   AE 002108F0 clGetEventProfilingInfo
+        176   AF 00203CF0 clGetExtensionFunctionAddress
+        177   B0 002046B0 clGetExtensionFunctionAddressForPlatform
+        178   B1 00214900 clGetGLObjectInfo
+        179   B2 002149F0 clGetGLTextureInfo
+        180   B3 0021ABA0 clGetImageInfo
+        181   B4 0021E3B0 clGetKernelArgInfo
+        182   B5 0021E5B0 clGetKernelInfo
+        183   B6 0021EA20 clGetKernelWorkGroupInfo
+        184   B7 0021B120 clGetMemObjectInfo
+        185   B8 0021BD50 clGetPipeInfo
+        186   B9 0020EEF0 clGetPlatformIDs
+        187   BA 0020EFC0 clGetPlatformInfo
+        188   BB 0021ECB0 clGetProgramBuildInfo
+        189   BC 0021EF50 clGetProgramInfo
+        190   BD 002203B0 clGetSamplerInfo
+        191   BE 0021B5F0 clGetSupportedImageFormats
+        192   BF 00214C50 clIcdGetPlatformIDsKHR
+        193   C0 0021F4E0 clLinkProgram
+        194   C1 002032A0 clReleaseCommandQueue
+        195   C2 002046D0 clReleaseContext
+        196   C3 0020F190 clReleaseDevice
+        197   C4 0020F740 clReleaseEvent
+        198   C5 0021F870 clReleaseKernel
+        199   C6 0021B740 clReleaseMemObject
+        200   C7 0021F900 clReleaseProgram
+        201   C8 00220700 clReleaseSampler
+        202   C9 00203330 clRetainCommandQueue
+        203   CA 00204760 clRetainContext
+        204   CB 0020F230 clRetainDevice
+        205   CC 0020F7D0 clRetainEvent
+        206   CD 0021F990 clRetainKernel
+        207   CE 0021B7D0 clRetainMemObject
+        208   CF 0021FA20 clRetainProgram
+        209   D0 00220790 clRetainSampler
+        210   D1 00221D70 clSVMAlloc
+        211   D2 00221EF0 clSVMFree
+        212   D3 002033C0 clSetCommandQueueProperty
+        213   D4 0020F860 clSetEventCallback
+        214   D5 0021FAB0 clSetKernelArg
+        215   D6 00221F70 clSetKernelArgSVMPointer
+        216   D7 00222090 clSetKernelExecInfo
+        217   D8 0021B860 clSetMemObjectDestructorCallback
+        218   D9 0020F930 clSetUserEventStatus
+        219   DA 0020FC60 clUnloadCompiler
+        220   DB 0021FC70 clUnloadPlatformCompiler
+        221   DC 0020F9F0 clWaitForEvents
+
+  Summary
+
+       D4000 .data
+       EB000 .pdata
+     10F1000 .rdata
+      12B000 .reloc
+        1000 .rsrc
+     19EC000 .text
+        1000 .tls

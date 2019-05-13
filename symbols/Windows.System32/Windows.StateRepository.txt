@@ -1,0 +1,36 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\Windows.StateRepository.dll
+
+File Type: DLL
+
+  Section contains the following exports for Windows.StateRepository.dll
+
+    00000000 characteristics
+    6E792B7E time date stamp
+        0.00 version
+           1 ordinal base
+           7 number of functions
+           7 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000462D0 ServiceMain
+          3    1 00082A60 StateRepository_DataAccessLayer_DatabaseCache_Add
+          4    2 00082AB0 StateRepository_DataAccessLayer_DatabaseCache_Get
+          5    3 00082C20 StateRepository_Initialize
+          6    4 0008A720 StateRepository_Service_UpdateStatus
+          7    5 00082C30 StateRepository_Shutdown
+          2    6 0004D720 SvchostPushServiceGlobals
+
+  Summary
+
+        2000 .data
+        1000 .didat
+       22000 .pdata
+      1CF000 .rdata
+       11000 .reloc
+        9000 .rsrc
+      2AD000 .text

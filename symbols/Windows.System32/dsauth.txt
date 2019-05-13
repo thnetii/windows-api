@@ -1,0 +1,52 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\dsauth.dll
+
+File Type: DLL
+
+  Section contains the following exports for DSAUTH.dll
+
+    00000000 characteristics
+    31444CD6 time date stamp
+        0.00 version
+           1 ordinal base
+          24 number of functions
+          24 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00007700 DhcpAddServerDS
+          2    1 00007D20 DhcpDeleteServerDS
+          3    2 00006130 DhcpDsAddServer
+          4    3 00007DC0 DhcpDsCleanupDS
+          5    4 00006700 DhcpDsDelServer
+          6    5 00006E10 DhcpDsEnumServers
+          7    6 00004360 DhcpDsGetAttribs
+          8    7 000040F0 DhcpDsGetLists
+          9    8 00003EE0 DhcpDsGetRoot
+         10    9 00007DB0 DhcpDsInitDS
+         11    A 000046D0 DhcpDsSetLists
+         12    B 00007F60 DhcpDsValidateService
+         13    C 00007400 DhcpEnumServersDS
+         14    D 00001AC0 StoreBeginSearch
+         15    E 00001530 StoreCleanupHandle
+         16    F 00002CB0 StoreCollectAttributes
+         17   10 00001CC0 StoreCreateObjectVA
+         18   11 00001F00 StoreDeleteObject
+         19   12 00001B30 StoreEndSearch
+         20   13 000017C0 StoreGetHandle
+         21   14 00001210 StoreInitHandle
+         22   15 00001B90 StoreSearchGetNext
+         23   16 00001950 StoreSetSearchOneLevel
+         24   17 00001A00 StoreSetSearchSubTree
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        9000 .text

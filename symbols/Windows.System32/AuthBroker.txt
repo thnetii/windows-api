@@ -1,0 +1,40 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\AuthBroker.dll
+
+File Type: DLL
+
+  Section contains the following exports for AuthBroker.dll
+
+    00000000 characteristics
+    D8F62247 time date stamp
+        0.00 version
+           1 ordinal base
+          11 number of functions
+          11 number of names
+
+    ordinal hint RVA      name
+
+          2    0 000105B0 AuthBrokerClearThreadClientContext
+          3    1 00001600 AuthBrokerCreateClientContext
+          4    2 00001820 AuthBrokerFreeClientContext
+          5    3 000106A0 AuthBrokerSetThreadClientContext
+          6    4 0000C1C0 DllCanUnloadNow
+          7    5 0000C210 DllGetActivationFactory
+          8    6 0000C250 DllGetClassObject
+          9    7 000107E0 DllInstall
+         10    8 00001CD0 DllRegisterServer
+          1    9 0000C410 FindCallingThreadImmersiveWindow
+         11    A 00010840 PurgeAuthHostSsoCache
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        2000 .pdata
+        F000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       21000 .text

@@ -1,0 +1,40 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\pkeyhelper.dll
+
+File Type: DLL
+
+  Section contains the following exports for pkeyhelper.dll
+
+    00000000 characteristics
+    EB95043C time date stamp
+        0.00 version
+           1 ordinal base
+          12 number of functions
+          12 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00008210 GetBootPolicySetForEdition
+          2    1 00007EC0 GetCompositionEditionForVirtualEdition
+          3    2 00007C60 GetDefaultProductKeyForPfn
+          4    3 00007B40 GetEditionIdFromName
+          5    4 00007BF0 GetEditionNameFromId
+          6    5 00007DF0 GetProductKeyFromContentId
+          7    6 00007FA0 GetVirtualEditionsForCompositionEdition
+          8    7 00007D50 IsDefaultPKey
+          9    8 00008320 SkuGetProductKeyForEdition
+         10    9 00007700 SkuGetUpgradeProductKey
+         11    A 00001F70 SkuGetUpgradeProductKeyEx
+         12    B 00007760 SkuGetUpgradeProductKeyFromDownlevelEdition
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+       A9000 .rdata
+        3000 .reloc
+        1000 .rsrc
+        A000 .text

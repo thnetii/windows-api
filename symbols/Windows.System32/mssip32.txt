@@ -1,0 +1,37 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\mssip32.dll
+
+File Type: DLL
+
+  Section contains the following exports for MSSIP32.dll
+
+    00000000 characteristics
+    DC5582C1 time date stamp
+        0.00 version
+           1 ordinal base
+           9 number of functions
+           9 number of names
+
+    ordinal hint RVA      name
+
+          3    0          CryptSIPCreateIndirectData (forwarded to Wintrust.CryptSIPCreateIndirectData)
+          1    1          CryptSIPGetInfo (forwarded to Wintrust.CryptSIPGetInfo)
+          2    2          CryptSIPGetRegWorkingFlags (forwarded to Wintrust.CryptSIPGetRegWorkingFlags)
+          4    3          CryptSIPGetSignedDataMsg (forwarded to Wintrust.CryptSIPGetSignedDataMsg)
+          5    4          CryptSIPPutSignedDataMsg (forwarded to Wintrust.CryptSIPPutSignedDataMsg)
+          6    5          CryptSIPRemoveSignedDataMsg (forwarded to Wintrust.CryptSIPRemoveSignedDataMsg)
+          7    6          CryptSIPVerifyIndirectData (forwarded to Wintrust.CryptSIPVerifyIndirectData)
+          8    7          DllRegisterServer (forwarded to Wintrust.mssip32DllRegisterServer)
+          9    8          DllUnregisterServer (forwarded to Wintrust.mssip32DllUnregisterServer)
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        1000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        1000 .text

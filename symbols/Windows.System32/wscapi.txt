@@ -1,0 +1,71 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\wscapi.dll
+
+File Type: DLL
+
+  Section contains the following exports for WSCAPI.dll
+
+    00000000 characteristics
+    6F30B3AC time date stamp
+        0.00 version
+           1 ordinal base
+          41 number of functions
+          41 number of names
+
+    ordinal hint RVA      name
+
+          3    0 0002F738 CLSID_WSCDefaultProduct
+          4    1 0002F748 CLSID_WSCProductList
+          5    2 00004CA0 DllCanUnloadNow
+          6    3 00004570 DllGetClassObject
+          7    4 0002EE30 IID_IWSCDefaultProduct
+          8    5 0002EDF8 IID_IWSCProductList
+          9    6 0002ED98 IID_IWscProduct
+         10    7 0002E4C0 LIBID_wscAPILib
+         11    8 0000E2F0 WscGetAntiMalwareUri
+         12    9 000036F0 WscGetSecurityProviderHealth
+         13    A 0000E2F0 WscQueryAntiMalwareUri
+         14    B 00001480 WscRegisterForChanges
+         15    C 00004BF0 WscRegisterForUserNotifications
+         16    D 00004720 WscUnRegisterChanges
+         17    E 0000A630 wscAntiSpywareGetStatus
+         18    F 0000A6C0 wscAntiVirusExpiredBeyondThreshold
+         19   10 000030C0 wscAntiVirusGetStatus
+         20   11 0000A8C0 wscAutoUpdatesEnableScheduledMode
+         21   12 0000A930 wscAutoUpdatesGetStatus
+         22   13 00003580 wscFirewallGetStatus
+         23   14 00002760 wscGeneralSecurityGetStatus
+         24   15 000044F0 wscGetAlertStatus
+         25   16 0000A9B0 wscIcfEnable
+         26   17 0000AA20 wscIeSettingsFix
+         27   18 0000AA50 wscInitiateOfflineCleaning
+         28   19 0000ABF0 wscIsDefenderAntivirusSupported
+          1   1A 00011F90 wscLaunchAdminMakeDefaultUI
+         29   1B 0000AC70 wscLuaSettingsFix
+         30   1C 0000ACF0 wscMakeDefaultProductRequest
+         31   1D 0000AD70 wscNotifyUserForNearExpiration
+         32   1E 0000ADF0 wscOverrideComponentStatus
+         33   1F 00003820 wscPing
+         34   20 00004620 wscProductInfoFree
+         35   21 0000AE70 wscRegisterChangeNotification
+         36   22 0000AE90 wscRegisterSecurityProduct
+         37   23 0000AF60 wscSetDefaultProduct
+          2   24 00012110 wscShowAMSCN
+         38   25 0000AFF0 wscUnRegisterChangeNotification
+         39   26 0000B010 wscUnregisterSecurityProduct
+         40   27 00002920 wscUpdateProductStatus
+         41   28 0000B090 wscUpdateProductSubStatus
+
+  Summary
+
+        3000 .data
+        1000 .didat
+        1000 .imrsiv
+        2000 .pdata
+       16000 .rdata
+        1000 .reloc
+        8000 .rsrc
+       25000 .text

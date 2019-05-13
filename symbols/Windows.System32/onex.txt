@@ -1,0 +1,57 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\onex.dll
+
+File Type: DLL
+
+  Section contains the following exports for OneX.DLL
+
+    00000000 characteristics
+    963BBB7B time date stamp
+        0.00 version
+           1 ordinal base
+          28 number of functions
+          28 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00020AC0 OneXAddEapAttributes
+          2    1 00020CC0 OneXAddTLV
+          3    2 00020EA0 OneXCompareAuthParams
+          4    3 00021540 OneXCopyAuthParams
+          5    4 00021750 OneXCreateDefaultProfile
+          6    5 00021970 OneXCreateDiscoveryProfiles
+          7    6 00021C00 OneXCreateSupplicantPort
+          8    7 00021EA0 OneXDeInitialize
+          9    8 00022000 OneXDestroySupplicantPort
+         10    9 000221A0 OneXForceAuthenticatedState
+         11    A 00022380 OneXFreeAuthParams
+         12    B 00022400 OneXFreeMemory
+         13    C 000224B0 OneXIndicatePacket
+         14    D 000226E0 OneXIndicateSessionChange
+         15    E 000228B0 OneXInitialize
+         16    F 000229D0 OneXQueryAuthParams
+         17   10 00022C00 OneXQueryPendingUIRequest
+         18   11 00022E40 OneXQueryState
+         19   12 00023020 OneXQueryStatistics
+         20   13 00023250 OneXReasonCodeToString
+         21   14 00023370 OneXRestartReasonCodeToString
+         22   15 00023490 OneXSetAuthParams
+         23   16 00023700 OneXSetRuntimeState
+         24   17 000238C0 OneXStartAuthentication
+         25   18 00023AD0 OneXStopAuthentication
+         26   19 00023CC0 OneXUIResponse
+         27   1A 00023F20 OneXUpdatePortProfile
+         28   1B 000241D0 OneXUpdateProfilePostDiscovery
+
+  Summary
+
+        5000 .data
+        1000 .didat
+        2000 .pdata
+        8000 .rdata
+        1000 .reloc
+        6000 .rsrc
+       2C000 .text

@@ -1,0 +1,222 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\webservices.dll
+
+File Type: DLL
+
+  Section contains the following exports for webservices.dll
+
+    00000000 characteristics
+    16E252C9 time date stamp
+        0.00 version
+           1 ordinal base
+         193 number of functions
+         193 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0005E360 WsAbandonCall
+          2    1 0005E380 WsAbandonMessage
+          3    2 0005E3A0 WsAbortChannel
+          4    3 0005E3C0 WsAbortListener
+          5    4 0005E3E0 WsAbortServiceHost
+          6    5 0005E400 WsAbortServiceProxy
+          7    6 0005E420 WsAcceptChannel
+          8    7 0005E450 WsAddCustomHeader
+          9    8 0005E4A0 WsAddErrorString
+         10    9 0002DC60 WsAddMappedHeader
+         11    A 0005E4C0 WsAddressMessage
+         12    B 0005E4E0 WsAlloc
+         13    C 0005E510 WsAsyncExecute
+         14    D 00002090 WsCall
+         15    E 0005E550 WsCheckMustUnderstandHeaders
+         16    F 000368A0 WsCloseChannel
+         17   10 0005E570 WsCloseListener
+         18   11 0005E590 WsCloseServiceHost
+         19   12 00003B60 WsCloseServiceProxy
+         20   13 0005E5B0 WsCombineUrl
+         21   14 0005E5F0 WsCopyError
+         22   15 0005E610 WsCopyNode
+         23   16 00009470 WsCreateChannel
+         24   17 0005E630 WsCreateChannelForListener
+         25   18 000344A0 WsCreateError
+         26   19 0005E670 WsCreateFaultFromError
+         27   1A 00031BB0 WsCreateHeap
+         28   1B 0005E6B0 WsCreateListener
+         29   1C 0005E700 WsCreateMessage
+         30   1D 0000A460 WsCreateMessageForChannel
+         31   1E 0005E740 WsCreateMetadata
+         32   1F 00035D30 WsCreateReader
+         33   20 0005E770 WsCreateServiceEndpointFromTemplate
+         34   21 0005E830 WsCreateServiceHost
+         35   22 000010D0 WsCreateServiceProxy
+         36   23 0005E870 WsCreateServiceProxyFromTemplate
+         37   24 00036A40 WsCreateWriter
+         38   25 0005E910 WsCreateXmlBuffer
+         39   26 0000D860 WsCreateXmlSecurityToken
+         40   27 0002DF70 WsDateTimeToFileTime
+         41   28 0005E950 WsDecodeUrl
+         42   29 0005E990 WsEncodeUrl
+         43   2A 0005E9D0 WsEndReaderCanonicalization
+         44   2B 0005E9F0 WsEndWriterCanonicalization
+         45   2C 0002DCA0 WsFileTimeToDateTime
+         46   2D 0005EA10 WsFillBody
+         47   2E 0005EA40 WsFillReader
+         48   2F 0005EA70 WsFindAttribute
+         49   30 0005EAB0 WsFlushBody
+         50   31 0005EAE0 WsFlushWriter
+         51   32 000095C0 WsFreeChannel
+         52   33 0000D220 WsFreeError
+         53   34 0000EB70 WsFreeHeap
+         54   35 0005EB10 WsFreeListener
+         55   36 0000E590 WsFreeMessage
+         56   37 0005EB30 WsFreeMetadata
+         57   38 0000E2C0 WsFreeReader
+         58   39 0000E190 WsFreeSecurityToken
+         59   3A 0005EB50 WsFreeServiceHost
+         60   3B 00004780 WsFreeServiceProxy
+         61   3C 00036E20 WsFreeWriter
+         62   3D 0005EB70 WsGetChannelProperty
+         63   3E 0005EBB0 WsGetCustomHeader
+         64   3F 0005EC50 WsGetDictionary
+         65   40 0005EC70 WsGetErrorProperty
+         66   41 0005ECA0 WsGetErrorString
+         67   42 0005ECC0 WsGetFaultErrorDetail
+         68   43 0005ED00 WsGetFaultErrorProperty
+         69   44 0005ED30 WsGetHeader
+         70   45 0005EDA0 WsGetHeaderAttributes
+         71   46 0005EDD0 WsGetHeapProperty
+         72   47 0005EE10 WsGetListenerProperty
+         73   48 0005EE50 WsGetMappedHeader
+         74   49 0005EEF0 WsGetMessageProperty
+         75   4A 0005EF30 WsGetMetadataEndpoints
+         76   4B 0005EF50 WsGetMetadataProperty
+         77   4C 0005EF90 WsGetMissingMetadataDocumentAddress
+         78   4D 0005EFB0 WsGetNamespaceFromPrefix
+         79   4E 0005EFF0 WsGetOperationContextProperty
+         80   4F 0005F030 WsGetPolicyAlternativeCount
+         81   50 0005F050 WsGetPolicyProperty
+         82   51 0005F090 WsGetPrefixFromNamespace
+         83   52 0005F0D0 WsGetReaderNode
+         84   53 0005F0F0 WsGetReaderPosition
+         85   54 0005F110 WsGetReaderProperty
+         86   55 0005F150 WsGetSecurityContextProperty
+         87   56 00033CF0 WsGetSecurityTokenProperty
+         88   57 0005F190 WsGetServiceHostProperty
+         89   58 0005F1D0 WsGetServiceProxyProperty
+         90   59 0005F210 WsGetWriterPosition
+         91   5A 0005F230 WsGetWriterProperty
+         92   5B 0005F270 WsGetXmlAttribute
+         93   5C 00034140 WsInitializeMessage
+         94   5D 0005F2B0 WsMarkHeaderAsUnderstood
+         95   5E 0005F2D0 WsMatchPolicyAlternative
+         96   5F 0005F310 WsMoveReader
+         97   60 0005F340 WsMoveWriter
+         98   61 00009500 WsOpenChannel
+         99   62 0005F370 WsOpenListener
+        100   63 0005F3A0 WsOpenServiceHost
+        101   64 000041E0 WsOpenServiceProxy
+        102   65 0005F3C0 WsPullBytes
+        103   66 0005F3F0 WsPushBytes
+        104   67 0005F420 WsReadArray
+        105   68 0005F4C0 WsReadAttribute
+        106   69 0005F510 WsReadBody
+        107   6A 0005F560 WsReadBytes
+        108   6B 0005F5A0 WsReadChars
+        109   6C 0005F5E0 WsReadCharsUtf8
+        110   6D 0005F620 WsReadElement
+        111   6E 0005F670 WsReadEndAttribute
+        112   6F 0005F690 WsReadEndElement
+        113   70 0005F6B0 WsReadEndpointAddressExtension
+        114   71 0005F720 WsReadEnvelopeEnd
+        115   72 0005F740 WsReadEnvelopeStart
+        116   73 0005F780 WsReadMessageEnd
+        117   74 0005F7B0 WsReadMessageStart
+        118   75 0005F7E0 WsReadMetadata
+        119   76 0005F810 WsReadNode
+        120   77 0005F830 WsReadQualifiedName
+        121   78 0005F870 WsReadStartAttribute
+        122   79 0005F890 WsReadStartElement
+        123   7A 0005F8B0 WsReadToStartElement
+        124   7B 0005F8F0 WsReadType
+        125   7C 0005F970 WsReadValue
+        126   7D 0005F9B0 WsReadXmlBuffer
+        127   7E 0000D410 WsReadXmlBufferFromBytes
+        128   7F 0005F9E0 WsReceiveMessage
+        129   80 0005FA90 WsRegisterOperationForCancel
+        130   81 0005FAD0 WsRemoveCustomHeader
+        131   82 0005FB00 WsRemoveHeader
+        132   83 00034FB0 WsRemoveMappedHeader
+        133   84 0005FB20 WsRemoveNode
+        134   85 00034BB0 WsRequestReply
+        135   86 0005FB40 WsRequestSecurityToken
+        136   87 0005FB80 WsResetChannel
+        137   88 0005FBA0 WsResetError
+        138   89 00016630 WsResetHeap
+        139   8A 0005FBC0 WsResetListener
+        140   8B 0000A920 WsResetMessage
+        141   8C 0005FBE0 WsResetMetadata
+        142   8D 0005FC00 WsResetServiceHost
+        143   8E 0005FC20 WsResetServiceProxy
+        144   8F 0005FC40 WsRevokeSecurityContext
+        145   90 0005FC60 WsSendFaultMessageForError
+        146   91 0005FCD0 WsSendMessage
+        147   92 0005FD40 WsSendReplyMessage
+        148   93 0005FDC0 WsSetChannelProperty
+        149   94 0005FE00 WsSetErrorProperty
+        150   95 0005FE30 WsSetFaultErrorDetail
+        151   96 0005FE70 WsSetFaultErrorProperty
+        152   97 0005FEA0 WsSetHeader
+        153   98 0005FEF0 WsSetInput
+        154   99 0005FF30 WsSetInputToBuffer
+        155   9A 0005FF70 WsSetListenerProperty
+        156   9B 0005FFB0 WsSetMessageProperty
+        157   9C 0005FFF0 WsSetOutput
+        158   9D 00060030 WsSetOutputToBuffer
+        159   9E 00060070 WsSetReaderPosition
+        160   9F 00060090 WsSetWriterPosition
+        161   A0 000600B0 WsShutdownSessionChannel
+        162   A1 000600D0 WsSkipNode
+        163   A2 000600F0 WsStartReaderCanonicalization
+        164   A3 00060130 WsStartWriterCanonicalization
+        165   A4 00060170 WsTrimXmlWhitespace
+        166   A5 000601B0 WsVerifyXmlNCName
+        167   A6 000601D0 WsWriteArray
+        168   A7 00060250 WsWriteAttribute
+        169   A8 00060290 WsWriteBody
+        170   A9 000602D0 WsWriteBytes
+        171   AA 00060300 WsWriteChars
+        172   AB 00060330 WsWriteCharsUtf8
+        173   AC 00060360 WsWriteElement
+        174   AD 000603A0 WsWriteEndAttribute
+        175   AE 000603C0 WsWriteEndCData
+        176   AF 000603E0 WsWriteEndElement
+        177   B0 00060400 WsWriteEndStartElement
+        178   B1 00060420 WsWriteEnvelopeEnd
+        179   B2 00060440 WsWriteEnvelopeStart
+        180   B3 00060480 WsWriteMessageEnd
+        181   B4 000604B0 WsWriteMessageStart
+        182   B5 000604E0 WsWriteNode
+        183   B6 00060500 WsWriteQualifiedName
+        184   B7 00060540 WsWriteStartAttribute
+        185   B8 00060580 WsWriteStartCData
+        186   B9 000605A0 WsWriteStartElement
+        187   BA 000605E0 WsWriteText
+        188   BB 00060600 WsWriteType
+        189   BC 00060670 WsWriteValue
+        190   BD 000606B0 WsWriteXmlBuffer
+        191   BE 00031160 WsWriteXmlBufferToBytes
+        192   BF 000606D0 WsWriteXmlnsAttribute
+        193   C0 00060710 WsXmlStringEquals
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        E000 .pdata
+       3B000 .rdata
+        4000 .reloc
+        3000 .rsrc
+       FE000 .text

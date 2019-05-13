@@ -1,0 +1,38 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\netman.dll
+
+File Type: DLL
+
+  Section contains the following exports for netman.dll
+
+    00000000 characteristics
+    A983D3D0 time date stamp
+        0.00 version
+           1 ordinal base
+           9 number of functions
+           9 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001720 DllRegisterServer
+          2    1 00001720 DllUnregisterServer
+          3    2 00001DF0 HrGetPnpDeviceStatus
+          4    3 00001EE0 HrLanConnectionNameFromGuidOrPath
+          5    4 00001730 HrPnpInstanceIdFromGuid
+          6    5 00001C40 HrQueryLanMediaState
+          7    6 0000EDD0 NetManDiagFromCommandArgs
+          8    7 00001630 ServiceMain
+          9    8 00006000 SvchostPushServiceGlobals
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        2000 .pdata
+       10000 .rdata
+        1000 .reloc
+        3000 .rsrc
+       2B000 .text

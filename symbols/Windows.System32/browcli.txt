@@ -1,0 +1,41 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\browcli.dll
+
+File Type: DLL
+
+  Section contains the following exports for browcli.dll
+
+    00000000 characteristics
+    E5CD59A3 time date stamp
+        0.00 version
+           1 ordinal base
+          12 number of functions
+          12 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00002460 I_BrowserDebugCall
+          2    1 00002530 I_BrowserDebugTrace
+          3    2 00002600 I_BrowserQueryEmulatedDomains
+          4    3 000033A0 I_BrowserQueryOtherDomains
+          5    4 00002720 I_BrowserQueryStatistics
+          6    5 000027F0 I_BrowserResetNetlogonState
+          7    6 000028B0 I_BrowserResetStatistics
+          8    7 00002970 I_BrowserServerEnum
+          9    8 00002C60 I_BrowserSetNetlogonState
+         10    9 00002D50 NetBrowserStatisticsGet
+         11    A 00002E90 NetServerEnum
+         12    B 00002EF0 NetServerEnumEx
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        4000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        A000 .text

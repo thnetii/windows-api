@@ -1,0 +1,63 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\WpPortingLibrary.dll
+
+File Type: DLL
+
+  Section contains the following exports for WpPortingLibrary.dll
+
+    00000000 characteristics
+    D64A5F91 time date stamp
+        0.00 version
+           1 ordinal base
+          35 number of functions
+          35 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000020A0 CmAcquireConnection
+          2    1 00001BD0 CmApiDeinit
+          3    2 00001BA0 CmApiInit
+          4    3 000020A0 CmCloseSession
+          5    4 000020A0 CmCreateSession
+          6    5 000020A0 CmGetFirstCandidateConnection
+          7    6 000020A0 CmReleaseConnection
+          8    7 000020A0 CmSetDataActivityState
+          9    8 00002640 GetAppStorageFolder
+         10    9 00002640 GetDeviceUniqueID
+         11    A 000025D0 GetPhoneBuildInfo
+         12    B 00002640 GetStorageDeviceInfo
+         13    C 000020A0 Is_AppXExecutionServiceReady_Available
+         14    D 000020A0 Is_BatterySaverState_Available
+         15    E 000020A0 Is_CmNet_Available
+         16    F 000020A0 Is_GrantWPNoNetworkingRegistryAccess_Hack_Available
+         17   10 000020A0 Is_OsBeginPostBootWorkState_Available
+         18   11 000020A0 Is_ProvisioningCompleteState_Available
+         19   12 000020A0 Is_ShellReadyInternalState_Available
+         20   13 000020A0 Is_ShellStartReady_Available
+         21   14 000020A0 Is_TaskScheduler_Available
+         22   15 000020A0 Is_VoIPActiveCallState_Available
+         23   16 00002240 PackageFullNameFromProductIdAndVersion
+         24   17 00002460 PackageFullNameFromProductInfo
+         25   18 00001010 ProductInfoFromPackageFullName
+         26   19 00002610 QueryPhoneInformation
+         27   1A 00002640 TaskSchedulerCreateSchedule
+         28   1B 00002640 TaskSchedulerDeinit
+         29   1C 00002640 TaskSchedulerDeleteSchedule
+         30   1D 00002640 TaskSchedulerEnableSchedule
+         31   1E 00001BD0 TaskSchedulerFreeSchedule
+         32   1F 00001BD0 TaskSchedulerFreeScheduleStatistics
+         33   20 00002640 TaskSchedulerGetPublishStateName
+         34   21 00002640 TaskSchedulerGetSchedule
+         35   22 00002640 TaskSchedulerInit
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        2000 .text

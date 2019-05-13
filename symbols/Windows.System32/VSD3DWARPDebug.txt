@@ -1,0 +1,73 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\VSD3DWARPDebug.dll
+
+File Type: DLL
+
+  Section contains the following exports for VSD3DWarpDebug.dll
+
+    00000000 characteristics
+    6D645225 time date stamp
+        0.00 version
+           1 ordinal base
+          45 number of functions
+          45 number of names
+
+    ordinal hint RVA      name
+
+          2    0 00003220 ?ReadThreadRegisterWithSize@WarpDebugInternal@@YAJPEAXIW4VSD3D_REGISTER_SET@@I_KPEAEI@Z
+          3    1 00003D40 ?VSD3DAttach2@WarpDebugInternal@@YAJKPEAXPEAPEAX@Z
+          4    2 00003B20 ?VSD3DAttach@WarpDebugInternal@@YAJKUVSD3D_CONFIG_INFO@@PEAPEAX@Z
+          5    3 00004550 ?VSD3DBreak@WarpDebugInternal@@YAJPEAX@Z
+          6    4 00007DA0 ?VSD3DCloseActiveGroup@WarpDebugInternal@@YAJPEAX@Z
+          7    5 00009AB0 ?VSD3DConfig@WarpDebugInternal@@YAJPEAXKPEAUVSD3D_MONITORFUNCS@@PEAUVSD3D_CONFIG_INFO2@@@Z
+          8    6 00004080 ?VSD3DContinueDebugEvent@WarpDebugInternal@@YAJPEAXPEAUVSD3D_SINGLESTEP_INFO@@@Z
+          9    7 00006F50 ?VSD3DDeleteShaderBreakPoint@WarpDebugInternal@@YAJPEAX@Z
+         10    8 00003EC0 ?VSD3DDetach@WarpDebugInternal@@YAJPEAXH@Z
+         11    9 00006B90 ?VSD3DEnableShaderBreakPoint@WarpDebugInternal@@YAJPEAX_N@Z
+         12    A 00009D20 ?VSD3DEnableWarning@WarpDebugInternal@@YAJPEAXW4VSD3DDebugWarningType@@H@Z
+         13    B 000092F0 ?VSD3DGatherGroupSharedRegister@WarpDebugInternal@@YAJPEAXIPEA_KIIPEAEI@Z
+         14    C 00005FB0 ?VSD3DGatherShaderBufferMemory@WarpDebugInternal@@YAJPEAXW4VSD3D_REGISTER_SET@@IPEA_KIIPEAEI@Z
+         15    D 00008340 ?VSD3DGatherThreadRegister@WarpDebugInternal@@YAJPEAXUVSD3D_SHADER_DIMENSION@@W4VSD3D_REGISTER_SET@@IPEA_KIIPEAEI@Z
+         16    E 000074A0 ?VSD3DGetActiveGroups@WarpDebugInternal@@YAJPEAXHPEAUVSD3D_GROUP_STATISTICS@@PEAUVSD3D_SHADER_DIMENSION@@IPEAI@Z
+         17    F 00006650 ?VSD3DGetBreakPointInfo@WarpDebugInternal@@YAJPEAXPEAUVSD3D_BREAKPOINT_INFO@@@Z
+         18   10 00009A90 ?VSD3DGetConfigInfo@WarpDebugInternal@@YAJPEAUVSD3D_CONFIG_INFO@@@Z
+         19   11 00004440 ?VSD3DGetDebugEvent@WarpDebugInternal@@YAJPEAUVSD3D_DEBUG_EVENT@@PEAX@Z
+         20   12 00005050 ?VSD3DGetDeviceInfo@WarpDebugInternal@@YAJPEAXPEAUVSD3D_DEVICE_INFO@@@Z
+         21   13 00009E50 ?VSD3DGetDispatchDictionary@WarpDebugInternal@@YAJPEAXPEAUVSD3D_NAME_VALUE_PAIR@@IPEAI@Z
+         22   14 00004B20 ?VSD3DGetRegisterInfo@WarpDebugInternal@@YAJPEAXPEAUVSD3D_REGISTER_INFO@@I@Z
+         23   15 00006100 ?VSD3DGetResourceInformation@WarpDebugInternal@@YAJPEAXW4VSD3D_REGISTER_SET@@IPEAUD3D11_BOX@@PEAW4DXGI_FORMAT@@@Z
+         24   16 000069F0 ?VSD3DGetShaderBreakPoints@WarpDebugInternal@@YAJPEAXPEAPEAXIPEAI@Z
+         25   17 00005240 ?VSD3DGetShaderDebugData@WarpDebugInternal@@YAJPEAXPEAE_KPEA_K@Z
+         26   18 00004990 ?VSD3DGetShaderDispatchInfo@WarpDebugInternal@@YAJPEAXPEAUVSD3D_SHADER_DISPATCH_INFO@@@Z
+         27   19 000047A0 ?VSD3DGetShaderInfo@WarpDebugInternal@@YAJPEAXPEAUVSD3D_SHADER_INFO@@@Z
+         28   1A 00005490 ?VSD3DGetShaderInstructions@WarpDebugInternal@@YAJPEAXPEAE_KPEA_K@Z
+         29   1B 00009E90 ?VSD3DGetSupportedDeviceIds@WarpDebugInternal@@YAJPEAU_LUID@@IPEAI@Z
+         30   1C 00009DE0 ?VSD3DGetWarningEnabled@WarpDebugInternal@@YAJPEAXW4VSD3DDebugWarningType@@PEAH@Z
+         31   1D 00009B20 ?VSD3DGetWarningInfo@WarpDebugInternal@@YAJPEAXPEAUVSD3D_WARNING_INFO@@IPEAI@Z
+         32   1E 000076A0 ?VSD3DGroupGetThreadsInfo@WarpDebugInternal@@YAJPEAXPEAUVSD3D_THREAD_INFO@@IPEAI@Z
+         33   1F 00008D50 ?VSD3DGroupReadThreadRegister@WarpDebugInternal@@YAJPEAXW4VSD3D_REGISTER_SET@@I_KIPEAEI@Z
+         34   20 00007AF0 ?VSD3DOpenActiveGroup@WarpDebugInternal@@YAJPEAXUVSD3D_SHADER_DIMENSION@@PEAPEAX@Z
+         35   21 00009040 ?VSD3DReadGroupSharedRegister@WarpDebugInternal@@YAJPEAXI_KPEAEI@Z
+         36   22 000056E0 ?VSD3DReadShaderBufferMemory@WarpDebugInternal@@YAJPEAXW4VSD3D_REGISTER_SET@@I_KPEAEI@Z
+         37   23 00008180 ?VSD3DReadThreadRegister@WarpDebugInternal@@YAJPEAXUVSD3D_SHADER_DIMENSION@@W4VSD3D_REGISTER_SET@@I_KPEAEI@Z
+         38   24 00009A00 ?VSD3DReleaseDebugString@WarpDebugInternal@@YAJPEAG@Z
+         39   25 00006110 ?VSD3DSetShaderBreakPoint@WarpDebugInternal@@YAJPEAXUVSD3D_BREAKPOINT_INFO@@PEAPEAX@Z
+         40   26 00008660 ?VSD3DSetThreadsFrozen@WarpDebugInternal@@YAJPEAXIH@Z
+         41   27 00007F30 ?VSD3DShaderDispatchGetThreadsInfo@WarpDebugInternal@@YAJPEAXPEAUVSD3D_GROUP_THREADS_INFO@@IPEAI@Z
+         42   28 00003F40 ?VSD3DWaitForDebugEvent@WarpDebugInternal@@YAJPEAUVSD3D_DEBUG_EVENT@@PEAPEAXK@Z
+         43   29 00009720 ?VSD3DWriteGroupSharedRegister@WarpDebugInternal@@YAJPEAXI_KPEAEI@Z
+         44   2A 00005B10 ?VSD3DWriteShaderBufferMemory@WarpDebugInternal@@YAJPEAXW4VSD3D_REGISTER_SET@@I_KPEAEI@Z
+         45   2B 00008670 ?VSD3DWriteThreadRegister@WarpDebugInternal@@YAJPEAXUVSD3D_SHADER_DIMENSION@@W4VSD3D_REGISTER_SET@@I_KPEAEI@Z
+          1   2C 0000A080 InitializeDebugging
+
+  Summary
+
+        2000 .data
+        1000 .pdata
+        4000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        F000 .text

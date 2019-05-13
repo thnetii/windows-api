@@ -1,0 +1,88 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\polstore.dll
+
+File Type: DLL
+
+  Section contains the following exports for POLSTORE.DLL
+
+    00000000 characteristics
+    F5E797A3 time date stamp
+        0.00 version
+           1 ordinal base
+          59 number of functions
+          59 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00033D90 GenerateIPSECPolicy
+          4    1 0002E300 IPSecAllocPolMem
+          5    2 0002E350 IPSecAllocPolStr
+          6    3 00027E70 IPSecAssignPolicy
+          7    4 00028590 IPSecClearWMIStore
+          8    5 00027C80 IPSecClosePolicyStore
+          9    6 0002E4A0 IPSecCopyAuthMethod
+         10    7 0002E460 IPSecCopyFilterData
+         11    8 0002E470 IPSecCopyFilterSpec
+         12    9 0002E480 IPSecCopyISAKMPData
+         13    A 0002E490 IPSecCopyNFAData
+         14    B 0002E450 IPSecCopyNegPolData
+         15    C 0002E440 IPSecCopyPolicyData
+         16    D 00025A50 IPSecCreateFilterData
+         17    E 00026A70 IPSecCreateISAKMPData
+         18    F 000261C0 IPSecCreateNFAData
+         19   10 00025EC0 IPSecCreateNegPolData
+         20   11 00025670 IPSecCreatePolicyData
+         21   12 00025C10 IPSecDeleteFilterData
+         22   13 00026C70 IPSecDeleteISAKMPData
+         23   14 000263B0 IPSecDeleteNFAData
+         24   15 000260C0 IPSecDeleteNegPolData
+         25   16 00025760 IPSecDeletePolicyData
+         26   17 00025900 IPSecEnumFilterData
+         27   18 000267D0 IPSecEnumISAKMPData
+         28   19 00026430 IPSecEnumNFAData
+         29   1A 00025D10 IPSecEnumNegPolData
+         30   1B 000254C0 IPSecEnumPolicyData
+         31   1C 00028420 IPSecExportPolicies
+         32   1D 0002E3B0 IPSecFreeFilterData
+         33   1E 0002E680 IPSecFreeFilterSpec
+         34   1F 0002E600 IPSecFreeFilterSpecs
+         35   20 0002E3C0 IPSecFreeISAKMPData
+         36   21 0002E590 IPSecFreeMulFilterData
+         37   22 0002E690 IPSecFreeMulISAKMPData
+         38   23 0002E6A0 IPSecFreeMulNFAData
+         39   24 0002E520 IPSecFreeMulNegPolData
+         40   25 0002E4B0 IPSecFreeMulPolicyData
+         41   26 0002E430 IPSecFreeNFAData
+         42   27 0002E2F0 IPSecFreeNegPolData
+         43   28 0002E360 IPSecFreePolStr
+         44   29 0002E2E0 IPSecFreePolicyData
+         45   2A 000283F0 IPSecGetAssignedPolicyData
+         46   2B 00026550 IPSecGetFilterData
+         47   2C 00026D70 IPSecGetISAKMPData
+         48   2D 000266F0 IPSecGetNegPolData
+         49   2E 000284D0 IPSecImportPolicies
+         50   2F 000290D0 IPSecIsDomainPolicyAssigned
+         51   30 00026F10 IPSecOpenPolicyStore
+         52   31 000259C0 IPSecSetFilterData
+         53   32 00026890 IPSecSetISAKMPData
+         54   33 000262B0 IPSecSetNFAData
+         55   34 00025DD0 IPSecSetNegPolData
+         56   35 00025580 IPSecSetPolicyData
+         57   36 00027EE0 IPSecUnassignPolicy
+          2   37 00033420 ProcessIPSECPolicyEx
+         58   38 0001BEF0 RegCreateNFAData
+         59   39 00012B00 RegCreatePolicyData
+          3   3A 00034C90 WriteDirectoryPolicyToWMI
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        3000 .pdata
+        8000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       46000 .text

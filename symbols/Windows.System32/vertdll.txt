@@ -1,0 +1,200 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\vertdll.dll
+
+File Type: DLL
+
+  Section contains the following exports for vertdll.dll
+
+    00000000 characteristics
+    443650CD time date stamp
+        0.00 version
+           1 ordinal base
+         170 number of functions
+         170 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00007030 AcquireSRWLockExclusive
+          2    1 00007210 AcquireSRWLockShared
+          3    2 00001010 CallEnclave
+          4    3 00004580 CloseHandle
+          5    4 00004580 CreateEventW
+          6    5 00004580 DbgPrint
+          7    6 00004580 DelayLoadFailureHook
+          8    7 00007C80 DeleteCriticalSection
+          9    8 00007DA0 DeleteSynchronizationBarrier
+         10    9 00004580 DeviceIoControl
+         11    A 00001DB0 DisableThreadLibraryCalls
+         12    B 00001580 EnclaveGetAttestationReport
+         13    C 00002020 EnclaveGetEnclaveInformation
+         14    D 00001310 EnclaveSealData
+         15    E 00001430 EnclaveUnsealData
+         16    F 00001680 EnclaveVerifyAttestationReport
+         17   10 00007760 EnterCriticalSection
+         18   11 00002440 EnterSynchronizationBarrier
+         19   12 00004740 EtwEventRegister
+         20   13 00004580 EtwEventUnregister
+         21   14 00004580 EtwEventWrite
+         22   15 00004580 EtwGetTraceEnableFlags
+         23   16 00004580 EtwGetTraceEnableLevel
+         24   17 00004580 EtwGetTraceLoggerHandle
+         25   18 00004740 EtwRegisterTraceGuidsW
+         26   19 00004580 EtwTraceMessage
+         27   1A 00004580 EtwUnregisterTraceGuids
+         28   1B 00004740 EventRegister
+         29   1C 00004740 EventSetInformation
+         30   1D 00004580 EventUnregister
+         31   1E 00004580 EventWriteTransfer
+         32   1F 000195A0 ExpInterlockedPopEntrySListEnd
+         33   20 00019597 ExpInterlockedPopEntrySListFault
+         34   21 00019587 ExpInterlockedPopEntrySListResume
+         35   22 00004580 FreeLibrary
+         36   23 00001F90 GetCurrentProcess
+         37   24 00002570 GetCurrentThread
+         38   25 00002580 GetCurrentThreadId
+         39   26 00004A30 GetEnabledXStateFeatures
+         40   27 000018D0 GetFipsModeFromIumKernelState
+         41   28 00001720 GetLastError
+         42   29 00004580 GetModuleFileNameW
+         43   2A 00001DE0 GetModuleHandleExW
+         44   2B 00001EA0 GetProcAddress
+         45   2C 00001820 GetProcessHeap
+         46   2D 00001840 GetProcessHeaps
+         47   2E 00001940 GetSeedFromIumKernelState
+         48   2F 00004580 GetSystemDirectoryW
+         49   30 00004580 GetSystemInfo
+         50   31 00004B20 GetXStateFeaturesMask
+         51   32 00007DD0 HeapAlloc
+         52   33 00001880 HeapCompact
+         53   34 00001790 HeapCreate
+         54   35 000017F0 HeapDestroy
+         55   36 00007E30 HeapFree
+         56   37 00001890 HeapLock
+         57   38 00007EE0 HeapReAlloc
+         58   39 00007E90 HeapSize
+         59   3A 000018B0 HeapUnlock
+         60   3B 00006DE0 InitializeConditionVariable
+         61   3C 00007B50 InitializeCriticalSection
+         62   3D 00002080 InitializeCriticalSectionAndSpinCount
+         63   3E 000020B0 InitializeCriticalSectionEx
+         64   3F 000083A0 InitializeSListHead
+         65   40 00006DE0 InitializeSRWLock
+         66   41 000024A0 InitializeSynchronizationBarrier
+         67   42 000083F0 InterlockedFlushSList
+         68   43 00019580 InterlockedPopEntrySList
+         69   44 000083D0 InterlockedPushEntrySList
+         70   45 00019630 InterlockedPushListSList
+         71   46 000083E0 InterlockedPushListSListEx
+         72   47 00019680 KiUserExceptionDispatcher
+         73   48 00004540 LdrDisableThreadCalloutsForDll
+         74   49 00002BA0 LdrResolveDelayLoadedAPI
+         75   4A 00007A40 LeaveCriticalSection
+         76   4B 00004580 LoadLibraryExW
+         77   4C 00004580 LoadLibraryW
+         78   4D 00004A60 LocateXStateFeature
+         79   4E 00004580 NtClose
+         80   4F 00004580 NtDeviceIoControlFile
+         81   50 00004580 NtOpenFile
+         82   51 00004580 NtOpenKey
+         83   52 00019460 NtQueryInformationProcess
+         84   53 00004580 NtQueryValueKey
+         85   54 000194A0 NtTerminateProcess
+         86   55 00004580 OpenProcessToken
+         87   56 00001A60 OutputDebugStringW
+         88   57 00004580 PrivilegeCheck
+         89   58 00008400 QueryDepthSList
+         90   59 00004580 QueryFullProcess
+         91   5A 00004580 QueryFullProcessImageNameW
+         92   5B 000019D0 RaiseException
+         93   5C 00004580 RegCloseKey
+         94   5D 00004580 RegEnumKeyExW
+         95   5E 00004580 RegOpenKeyExW
+         96   5F 00004580 RegQueryInfoKeyW
+         97   60 00004580 RegQueryValueExW
+         98   61 00004580 RegisterWaitForSingleObjectEx
+         99   62 00006DF0 ReleaseSRWLockExclusive
+        100   63 00006E40 ReleaseSRWLockShared
+        101   64 00002BA0 ResolveDelayLoadedAPI
+        102   65 00004580 RtlAcquireResourceExclusive
+        103   66 00004580 RtlAcquireResourceShared
+        104   67 00007DD0 RtlAllocateHeap
+        105   68 00004580 RtlAssert
+        106   69 0001982B RtlCallEnclaveReturn
+        107   6A 00019920 RtlCaptureContext
+        108   6B 00004580 RtlCompareUnicodeString
+        109   6C 00007C80 RtlDeleteCriticalSection
+        110   6D 00004580 RtlDeleteResource
+        111   6E 00019730 RtlEnclaveCallDispatch
+        112   6F 0001977A RtlEnclaveCallDispatchReturn
+        113   70 00007760 RtlEnterCriticalSection
+        114   71 00007E30 RtlFreeHeap
+        115   72 0001A030 RtlGetCurrentProcessorNumberEx
+        116   73 00008580 RtlGetLastNtStatus
+        117   74 000086B0 RtlImageNtHeader
+        118   75 000086E0 RtlInitUnicodeString
+        119   76 00007B50 RtlInitializeCriticalSection
+        120   77 00004580 RtlInitializeResource
+        121   78 00007A40 RtlLeaveCriticalSection
+        122   79 000068C0 RtlLookupFunctionEntry
+        123   7A 00008410 RtlNtStatusToDosError
+        124   7B 00008730 RtlPcToFileHeader
+        125   7C 00008950 RtlRaiseStatus
+        126   7D 00004580 RtlReleaseResource
+        127   7E 00004580 RtlReleaseResourceShared
+        128   7F 000089E0 RtlTimeFieldsToTime
+        129   80 00008DB0 RtlUnhandledExceptionFilter
+        130   81 00004F50 RtlUnwind
+        131   82 00005020 RtlUnwindEx
+        132   83 00005FF0 RtlVirtualUnwind
+        133   84 00007C30 SetCriticalSectionSpinCount
+        134   85 00001760 SetLastError
+        135   86 00001C60 SetThreadStackGuarantee
+        136   87 000012F0 SetUnhandledExceptionFilter
+        137   88 000020F0 SleepConditionVariableCS
+        138   89 00002270 SleepConditionVariableSRW
+        139   8A 00001FE0 TerminateEnclave
+        140   8B 00001FA0 TerminateProcess
+        141   8C 00004750 TlsAlloc
+        142   8D 00004960 TlsFree
+        143   8E 00004850 TlsGetValue
+        144   8F 000048B0 TlsSetValue
+        145   90 00007020 TryAcquireSRWLockExclusive
+        146   91 00007190 TryAcquireSRWLockShared
+        147   92 00007720 TryEnterCriticalSection
+        148   93 00004580 UnregisterWaitEx
+        149   94 00001B10 VirtualAlloc
+        150   95 00001B60 VirtualFree
+        151   96 00001BC0 VirtualProtect
+        152   97 00001C10 VirtualQuery
+        153   98 000024F0 WaitOnAddress
+        154   99 000081F0 WakeAllConditionVariable
+        155   9A 00009810 WakeByAddressAll
+        156   9B 000097F0 WakeByAddressSingle
+        157   9C 00008190 WakeConditionVariable
+        158   9D 00017D20 __C_specific_handler
+        159   9E 0001A0A0 __chkstk
+        160   9F 00017EF0 _local_unwind
+        161   A0 00004580 _vsnwprintf
+        162   A1 00017F20 _wcsicmp
+        163   A2 00017F80 memcmp
+        164   A3 0001A4C0 memcpy
+        165   A4 0001A4C0 memmove
+        166   A5 0001A800 memset
+        167   A6 00018060 qsort
+        168   A7 00018400 wcscmp
+        169   A8 000192F0 wcscpy_s
+        170   A9 00018440 wcsncmp
+
+  Summary
+
+        1000 .00cfg
+        5000 .data
+        4000 .mrdata
+        1000 .pdata
+        7000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       1A000 .text

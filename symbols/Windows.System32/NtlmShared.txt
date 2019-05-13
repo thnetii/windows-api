@@ -1,0 +1,57 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\NtlmShared.dll
+
+File Type: DLL
+
+  Section contains the following exports for NtlmShared.dll
+
+    00000000 characteristics
+    33D75AA8 time date stamp
+        0.00 version
+           1 ordinal base
+          28 number of functions
+          28 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000023C0 MsvpCachePasswordsToCredential
+          2    1 000014C0 MsvpCalculateNtlm2Challenge
+          3    2 000015B0 MsvpCalculateNtlm2SessionKeys
+          4    3 00001690 MsvpCalculateNtlm3Owf
+          5    4 000022E0 MsvpCompareCredentials
+          6    5 00001DA0 MsvpComputeSaltedHashedPassword
+          7    6 00002390 MsvpCredentialToCachePasswords
+          8    7 00002420 MsvpDecryptDpapiMasterKey
+          9    8 00002160 MsvpDeriveSecureCredKey
+         10    9 000026C0 MsvpGMSACred
+         11    A 00001B90 MsvpLm20GetNtlm3ChallengeResponse
+         12    B 000017B0 MsvpLm3Response
+         13    C 00002E90 MsvpLm3ValidateResponse
+         14    D 00001F00 MsvpMakeSecretPasswordNT5
+         15    E 000019A0 MsvpNtlm3Response
+         16    F 00002F60 MsvpNtlm3ValidateResponse
+         17   10 00003180 MsvpPasswordValidate
+         18   11 00001FA0 MsvpPutClearOwfsInPrimaryCredential
+         19   12 00002A50 MsvpUpdateSharedConfiguration
+         20   13 00003770 MsvpValidateSupplementalCreds
+         21   14 00003790 MsvpValidateSupplementalCredsBuffer
+         22   15 00002AC0 NtLmAlterRtlEqualUnicodeString
+         23   16 000029D0 NtlmSharedAllocate
+         24   17 00002A10 NtlmSharedAllocatePrivateHeap
+         25   18 00002960 NtlmSharedCleanup
+         26   19 000029F0 NtlmSharedFree
+         27   1A 00002A30 NtlmSharedFreePrivateHeap
+         28   1B 000026D0 NtlmSharedInit
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        3000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        4000 .text

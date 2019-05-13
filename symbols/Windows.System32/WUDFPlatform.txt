@@ -1,0 +1,46 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\WUDFPlatform.dll
+
+File Type: DLL
+
+  Section contains the following exports for WUDFPlatform.dll
+
+    00000000 characteristics
+    6718C62B time date stamp
+        0.00 version
+           1 ordinal base
+          17 number of functions
+          17 number of names
+
+    ordinal hint RVA      name
+
+          2    0 0000A790 ClearPlatformTestingCallbacks
+          3    1 000020D0 DllGetClassObject
+          4    2 00001AC0 DllMain
+          5    3 00002180 GetAndInitializePlatformObject
+          1    4 00002030 GetPlatformObject
+          6    5 00002270 InitializePlatformLibrary
+          7    6 0000A840 PlatformSimulateUnhandledException
+          8    7 0000A890 PlatformUnhandledExceptionFilter
+          9    8 000022C0 SetPlatformErrorReportingCallbacks
+         10    9 0000A8A0 SetPlatformTestingCallbacks
+         11    A 000022E0 ShutdownPlatformLibrary
+         12    B 0000CB50 WdfGetLpcInterface
+         13    C 00002390 WudfDebugBreakPoint
+         14    D 00002400 WudfIsAnyDebuggerPresent
+         15    E 000024C0 WudfIsKernelDebuggerPresent
+         16    F 000024F0 WudfIsUserDebuggerPresent
+         17   10 00002520 WudfWaitForDebugger
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        C000 .rdata
+        1000 .reloc
+        A000 .rsrc
+       14000 .text

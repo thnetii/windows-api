@@ -1,0 +1,36 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\fmapi.dll
+
+File Type: DLL
+
+  Section contains the following exports for fmapi.dll
+
+    00000000 characteristics
+    86023E6D time date stamp
+        0.00 version
+           1 ordinal base
+           8 number of functions
+           8 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0000DB30 CloseFileRestoreContext
+          2    1 0000D6E0 CreateFileRestoreContext
+          3    2 0000DFA0 DetectBootSector
+          4    3 0000DF80 DetectEncryptedVolume
+          5    4 0000DF80 DetectEncryptedVolumeEx
+          6    5 0000DDB0 RestoreFile
+          7    6 0000DC40 ScanRestorableFiles
+          8    7 0000DF80 SupplyDecryptionInfo
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       10000 .text

@@ -1,0 +1,68 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\d3d10core.dll
+
+File Type: DLL
+
+  Section contains the following exports for d3d10core.dll
+
+    00000000 characteristics
+    2892FA85 time date stamp
+        0.00 version
+           1 ordinal base
+          40 number of functions
+          40 number of names
+
+    ordinal hint RVA      name
+
+         14    0 00002980 D3D10CoreCreateDevice
+         15    1 00002980 D3D10CoreGetSupportedVersions
+         16    2 00002990 D3D10CoreGetVersion
+         17    3 00002980 D3D10CoreRegisterLayers
+          1    4 000024A0 D3DKMTCloseAdapter
+         18    5 000024A0 D3DKMTCreateAllocation
+         19    6 000024A0 D3DKMTCreateContext
+         20    7 000024A0 D3DKMTCreateDevice
+         21    8 000024A0 D3DKMTCreateSynchronizationObject
+          2    9 000024A0 D3DKMTDestroyAllocation
+          3    A 000024A0 D3DKMTDestroyContext
+          4    B 000024A0 D3DKMTDestroyDevice
+          5    C 000024A0 D3DKMTDestroySynchronizationObject
+         22    D 000024A0 D3DKMTEscape
+         23    E 000024A0 D3DKMTGetContextSchedulingPriority
+         24    F 000025D0 D3DKMTGetDeviceState
+         25   10 000024A0 D3DKMTGetDisplayModeList
+         26   11 000024A0 D3DKMTGetMultisampleMethodList
+         27   12 000024A0 D3DKMTGetRuntimeData
+         28   13 000024A0 D3DKMTGetSharedPrimaryHandle
+         29   14 000024A0 D3DKMTLock
+         30   15 00002610 D3DKMTOpenAdapterFromHdc
+         31   16 00002640 D3DKMTOpenResource
+          6   17 000024A0 D3DKMTPresent
+          7   18 000024B0 D3DKMTQueryAdapterInfo
+         32   19 000024A0 D3DKMTQueryAllocationResidency
+         33   1A 00002640 D3DKMTQueryResourceInfo
+         34   1B 000024A0 D3DKMTRender
+         35   1C 000024A0 D3DKMTSetAllocationPriority
+         36   1D 000024A0 D3DKMTSetContextSchedulingPriority
+         37   1E 000024A0 D3DKMTSetDisplayMode
+          8   1F 000024A0 D3DKMTSetDisplayPrivateDriverFormat
+         38   20 000024A0 D3DKMTSetGammaRamp
+         39   21 000024A0 D3DKMTSetVidPnSourceOwner
+          9   22 000024A0 D3DKMTSignalSynchronizationObject
+         10   23 000024A0 D3DKMTUnlock
+         11   24 000024A0 D3DKMTWaitForSynchronizationObject
+         40   25 000024A0 D3DKMTWaitForVerticalBlankEvent
+         12   26 00002550 OpenAdapter10
+         13   27 00002590 OpenAdapter10_2
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        5000 .rsrc
+        2000 .text

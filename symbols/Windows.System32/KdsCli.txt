@@ -1,0 +1,77 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\KdsCli.dll
+
+File Type: DLL
+
+  Section contains the following exports for KdsCli.dll
+
+    00000000 characteristics
+    3C62F13E time date stamp
+        0.00 version
+           1 ordinal base
+          48 number of functions
+          48 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00002FB0 CreateRootKey
+          2    1 00007A00 DeleteAllCachedKeys
+          3    2 000070E0 FindAndReadSIDKeyInCache
+          4    3 00007500 FindKeyForOfflineUsage
+          5    4 00002DF0 FreeRootKey
+          6    5 00002D70 FreeRootKeyConfig
+          7    6 00004940 FreeRootKeyMetaDataList
+          8    7 00004CE0 FreeServerConfig
+          9    8 00007F10 GenerateDerivedKey
+         10    9 00008A40 GenerateEphemeralKeyPair
+         11    A 00007E30 GenerateKDFContext
+         12    B 00008D40 GenerateSIDPublicKeyBlob
+         13    C 00008450 GenerateSecretAgreementPrivateKey
+         14    D 00004790 GetAllRootKeys
+         15    E 00004A80 GetAllRootKeysMetaData
+         16    F 00009ED0 GetAndLockCachedRPCBinding
+         17   10 0000AC30 GetCachedMachineDomainInfo
+         18   11 0000A670 GetCurrentIntervalID
+         19   12 0000A620 GetCurrentL0ID
+         20   13 0000A5D0 GetCurrentTimeInULL
+         21   14 00001660 GetDCInfo
+         22   15 00005720 GetDefaultServerConfig
+         23   16 0000AE10 GetFullDCName
+         24   17 0000A6E0 GetIntervalStartTime
+         25   18 00002110 GetKDSSrvConfigPath
+         26   19 0000AF00 GetKdsKeyCycleDuration
+         27   1A 0000B000 GetKey
+         28   1B 00001210 GetLdapBinding
+         29   1C 000021F0 GetMRKPath
+         30   1D 00004700 GetRootKey
+         31   1E 00006060 GetSIDKeyCacheFolder
+         32   1F 000063C0 GetSIDKeyFileName
+         33   20 000057D0 GetServerConfig
+         34   21 0000A4B0 GetUserSidStr
+         35   22 00009480 KdsCreateClientBinding
+         36   23 0000B4A0 KdsGetEpochLength
+         37   24 0000BC50 KdsGetGmsaPasswordBasedOnKeyId
+         38   25 0000BC40 KdsGetGmsaPasswordBasedOnTimestamp
+         39   26 0000B420 KdsGetKeyStartTime
+         40   27 0000C0D0 SIDKeyProtect
+         41   28 0000A010 SIDKeyProvAlloc
+         42   29 0000A040 SIDKeyProvFree
+         43   2A 0000C620 SIDKeyUnprotect
+         44   2B 00005BF0 SetServerConfig
+         45   2C 00008250 TestServerConfig
+         46   2D 00009FD0 UnlockRpcCache
+         47   2E 000058C0 ValidateSrvConfig
+         48   2F 00006700 WriteSIDKeyInCache
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        5000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        F000 .text

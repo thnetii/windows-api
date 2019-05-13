@@ -1,0 +1,128 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\hal.dll
+
+File Type: DLL
+
+  Section contains the following exports for HAL.dll
+
+    00000000 characteristics
+    2ADD7D61 time date stamp
+        0.00 version
+           1 ordinal base
+          90 number of functions
+          90 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00017520 HalAcpiGetTableEx
+          2    1 00004630 HalAcquireDisplayOwnership
+          3    2 00004510 HalAdjustResourceList
+          4    3 0008A610 HalAllProcessorsStarted
+          5    4 00022A00 HalAllocateAdapterChannel
+          6    5 0000C630 HalAllocateCommonBuffer
+          7    6 00022CE0 HalAllocateCrashDumpRegisters
+          8    7 00079150 HalAllocateHardwareCounters
+          9    8 0007A6C0 HalAssignSlotResources
+         10    9 00042BA0 HalBugCheckSystem
+         11    A 000056D0 HalCalibratePerformanceCounter
+         12    B 00004630 HalClearSoftwareInterrupt
+         13    C 00075F60 HalConvertDeviceIdtToIrql
+         14    D 00006F70 HalDisableInterrupt
+         15    E 00004630 HalDisplayString
+         16    F 00009A20 HalDmaAllocateCrashDumpRegistersEx
+         17   10 00009E70 HalDmaFreeCrashDumpRegistersEx
+         18   11 00007070 HalEnableInterrupt
+         19   12 0002AE10 HalEnumerateEnvironmentVariablesEx
+         20   13 00016D30 HalEnumerateProcessors
+         21   14 00004750 HalFlushCommonBuffer
+         22   15 0000C210 HalFreeCommonBuffer
+         23   16 000791B0 HalFreeHardwareCounters
+         24   17 000787F0 HalGetAdapter
+         25   18 00016010 HalGetBusData
+         26   19 00006B00 HalGetBusDataByOffset
+         27   1A 0002AE30 HalGetEnvironmentVariable
+         28   1B 0000C6B0 HalGetEnvironmentVariableEx
+         29   1C 000164F0 HalGetInterruptTargetInformation
+         30   1D 0002D110 HalGetInterruptVector
+         31   1E 00009220 HalGetMemoryCachingRequirements
+         32   1F 000084F0 HalGetMessageRoutingInfo
+         33   20 000086B0 HalGetProcessorIdByNtNumber
+         34   21 000175A0 HalGetVectorInput
+         35   22 00044CA0 HalHandleMcheck
+         36   23 00045110 HalHandleNMI
+         37   24 0007EDD0 HalInitSystem
+         38   25 000134B0 HalInitializeBios
+         39   26 00005F80 HalInitializeOnResume
+         40   27 00015670 HalInitializeProcessor
+         41   28 00017600 HalIsHyperThreadingEnabled
+         42   29 0002F340 HalMakeBeep
+         43   2A 00002AD0 HalPerformEndOfInterrupt
+         44   2B 000180B0 HalProcessorIdle
+         45   2C 00004630 HalQueryDisplayParameters
+         46   2D 0002AED0 HalQueryEnvironmentVariableInfoEx
+         47   2E 0000B190 HalQueryMaximumProcessorCount
+         48   2F 000092F0 HalQueryRealTimeClock
+         49   30 00022DE0 HalReadDmaCounter
+         50   31 0002ADE0 HalRegisterDynamicProcessor
+         51   32 0008B750 HalRegisterErrataCallbacks
+         52   33 0008A640 HalReportResourceUsage
+         53   34 00001F90 HalRequestClockInterrupt
+         54   35 0002DF30 HalRequestDeferredRecoveryServiceInterrupt
+         55   36 000025D0 HalRequestIpi
+         56   37 00002E60 HalRequestIpiSpecifyVector
+         57   38 000024E0 HalRequestSoftwareInterrupt
+         58   39 0002F6D0 HalReturnToFirmware
+         59   3A 0002DF60 HalSendNMI
+         60   3B 000018A0 HalSendSoftwareInterrupt
+         61   3C 00041470 HalSetBusData
+         62   3D 000069E0 HalSetBusDataByOffset
+         63   3E 00004630 HalSetDisplayParameters
+         64   3F 0002AFA0 HalSetEnvironmentVariable
+         65   40 0002B090 HalSetEnvironmentVariableEx
+         66   41 0002C890 HalSetProfileInterval
+         67   42 00030460 HalSetRealTimeClock
+         68   43 0002D940 HalStartDynamicProcessor
+         69   44 0000A3C0 HalStartNextProcessor
+         70   45 0002C8D0 HalStartProfileInterrupt
+         71   46 0002C900 HalStopProfileInterrupt
+         72   47 00004510 HalSystemVectorDispatchEntry
+         73   48 00009860 HalTranslateBusAddress
+         74   49 00005610 IoFlushAdapterBuffers
+         75   4A 00022C70 IoFreeAdapterChannel
+         76   4B 00022CA0 IoFreeMapRegisters
+         77   4C 000054B0 IoMapTransfer
+         78   4D 0007A650 IoReadPartitionTable
+         79   4E 0007A670 IoSetPartitionInformation
+         80   4F 0007A690 IoWritePartitionTable
+         81   50 00069128 KdComPortInUse
+         82   51 00069138 KdHvComPortInUse
+         83   52 00004630 KeFlushWriteBuffer
+         84   53 000015D0 KeQueryPerformanceCounter
+         85   54 00001440 KeStallExecutionProcessor
+         86   55 00016980 x86BiosAllocateBuffer
+         87   56 000131E0 x86BiosCall
+         88   57 000169F0 x86BiosFreeBuffer
+         89   58 00013820 x86BiosReadMemory
+         90   59 00013790 x86BiosWriteMemory
+
+  Summary
+
+       11000 .data
+        1000 .edata
+        3000 .idata
+        6000 .pdata
+        D000 .rdata
+        3000 .reloc
+        1000 .rsrc
+       4A000 .text
+        1000 ALMOSTRO
+        1000 CFGRO
+        1000 GFIDS
+        9000 INIT
+        1000 INITDATA
+        8000 PAGE
+        1000 PAGEKD
+        9000 PAGELK

@@ -1,0 +1,66 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\msdtcprx.dll
+
+File Type: DLL
+
+  Section contains the following exports for MSDTCPRX.dll
+
+    00000000 characteristics
+    3A2F58C9 time date stamp
+        0.00 version
+           4 ordinal base
+          37 number of functions
+          37 number of names
+
+    ordinal hint RVA      name
+
+         27    0 0003BD50 ContactToNameObject
+          5    1 0003B610 Create
+          6    2 00009CD0 CreateInstance
+         20    3 00040760 CreateLegacyTmInstance
+         21    4 00040750 CreateLocalTmInstance
+         22    5 00040860 CreateRemoteProxyTmInstance
+         23    6 000409A0 CreateTmInstanceForRemoteAdmin
+         19    7 00016240 DTC_XaClose
+         14    8 00015A50 DTC_XaCommit
+         18    9 000161B0 DTC_XaComplete
+         12    A 000155B0 DTC_XaEnd
+         17    B 00016120 DTC_XaForget
+         10    C 00014D70 DTC_XaOpen
+         13    D 00015800 DTC_XaPrepare
+         16    E 00015EA0 DTC_XaRecover
+         15    F 00015C90 DTC_XaRollback
+         11   10 000151C0 DTC_XaStart
+         31   11 0003D8E0 DeployDtc
+         32   12 00004220 DllGetClassObject
+         25   13 000427C0 DllGetDTCConnectionManager
+          4   14 000043E0 DllGetDTCProxy
+         26   15 00042120 DllGetDTCUtilObject
+          7   16 00031710 DllGetDtcConfigManager
+         33   17 000091E0 DllGetTransactionManagerCore
+         34   18 00002320 DllRegisterServer
+         35   19 00002320 DllUnregisterServer
+          8   1A 000056C0 GetDtcLogPath
+         36   1B 00008EB0 GetTmInstance
+         37   1C 0003DFC0 InstallContacts
+         38   1D 0003EB40 InstallDtc
+         39   1E 0003E270 InstallDtcClient
+         40   1F 0003F600 RemoveDtc
+         24   20 00042AB0 ShutDownCM
+         28   21 00040140 SysPrepDtcCleanup
+         29   22 000402E0 SysPrepDtcGeneralize
+         30   23 00040480 SysPrepDtcSpecialize
+          9   24 00031420 UpgradeApplySuccess
+
+  Summary
+
+        5000 .data
+        1000 .didat
+        6000 .pdata
+       50000 .rdata
+        2000 .reloc
+        1000 .rsrc
+       7B000 .text

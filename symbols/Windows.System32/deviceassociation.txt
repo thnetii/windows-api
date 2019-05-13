@@ -1,0 +1,57 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\deviceassociation.dll
+
+File Type: DLL
+
+  Section contains the following exports for deviceassociation.dll
+
+    00000000 characteristics
+    A92AD3E5 time date stamp
+        0.00 version
+           1 ordinal base
+          28 number of functions
+          28 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00003DB0 DafAepExport
+          2    1 00003CB0 DafAepImport
+          3    2 000036D0 DafChallengeDevicePresence
+          4    3 00002FE0 DafCloseAssociationContext
+          5    4 00003810 DafCloseChallengeContext
+          6    5 000041B0 DafCloseImportExportContext
+          7    6 00004B80 DafCloseInboundContext
+          8    7 00002360 DafCreateAssociationContext
+          9    8 00002390 DafCreateAssociationContextForApp
+         10    9 000024B0 DafCreateAssociationContextFromOobBlob
+         11    A 00003080 DafCreateChallengeContext
+         12    B 00003160 DafCreateDeviceChallengeContext
+         13    C 00003520 DafCreateDeviceInterfaceChallengeContext
+         14    D 000038B0 DafCreateImportExportContext
+         15    E 00004530 DafCreateInboundContext
+         16    F 00004DA0 DafGetInboundAssociationResultForAppActivation
+         17   10 000017D0 DafMemFree
+         18   11 00004C20 DafRegisterForInboundAssociationsAppActivation
+         19   12 000027B0 DafSelectCeremony
+         20   13 00003EB0 DafStartAepExport
+         21   14 00004030 DafStartAepImport
+         22   15 00002D30 DafStartDeviceStatusNotification
+         23   16 00002620 DafStartEnumCeremonies
+         24   17 00002BE0 DafStartFinalize
+         25   18 00004990 DafStartListenForInboundAssociations
+         26   19 000028E0 DafStartReadCeremonyData
+         27   1A 00002E90 DafStartRemoveAssociation
+         28   1B 00002A50 DafStartWriteCeremonyData
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        5000 .rdata
+        1000 .reloc
+        2000 .rsrc
+        5000 .text

@@ -1,0 +1,58 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\activeds.dll
+
+File Type: DLL
+
+  Section contains the following exports for ACTIVEDS.dll
+
+    00000000 characteristics
+    430868B7 time date stamp
+        0.00 version
+           3 ordinal base
+          29 number of functions
+          29 number of names
+
+    ordinal hint RVA      name
+
+          4    0 0001EF20 ADsBuildEnumerator
+          8    1 0001EFA0 ADsBuildVarArrayInt
+          7    2 0001F090 ADsBuildVarArrayStr
+         24    3          ADsDecodeBinaryData (forwarded to ADSLDPC.ADsDecodeBinaryData)
+         20    4          ADsEncodeBinaryData (forwarded to ADSLDPC.ADsEncodeBinaryData)
+          6    5 0001F190 ADsEnumerateNext
+          5    6 0001F1B0 ADsFreeEnumerator
+         13    7          ADsGetLastError (forwarded to ADSLDPC.ADsGetLastError)
+          3    8 00001010 ADsGetObject
+          9    9 0001FCE0 ADsOpenObject
+         12    A          ADsSetLastError (forwarded to ADSLDPC.ADsSetLastError)
+         23    B 000056C0 AdsFreeAdsValues
+         22    C 00005700 AdsTypeToPropVariant
+         25    D 00005730 AdsTypeToPropVariant2
+         14    E          AllocADsMem (forwarded to ADSLDPC.AllocADsMem)
+         17    F          AllocADsStr (forwarded to ADSLDPC.AllocADsStr)
+         29   10 0001F1E0 BinarySDToSecurityDescriptor
+         27   11 00026050 ConvertSecDescriptorToVariant
+         28   12 00029250 ConvertSecurityDescriptorToSecDes
+         31   13 00029650 ConvertTrusteeToSid
+         10   14 0001F350 DllCanUnloadNow
+         11   15 0001F3C0 DllGetClassObject
+         15   16          FreeADsMem (forwarded to ADSLDPC.FreeADsMem)
+         18   17          FreeADsStr (forwarded to ADSLDPC.FreeADsStr)
+         21   18 000058E0 PropVariantToAdsType
+         26   19 00005910 PropVariantToAdsType2
+         16   1A          ReallocADsMem (forwarded to ADSLDPC.ReallocADsMem)
+         19   1B          ReallocADsStr (forwarded to ADSLDPC.ReallocADsStr)
+         30   1C 0001F260 SecurityDescriptorToBinarySD
+
+  Summary
+
+        5000 .data
+        1000 .didat
+        2000 .pdata
+        E000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       2C000 .text

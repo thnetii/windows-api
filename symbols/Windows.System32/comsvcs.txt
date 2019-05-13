@@ -1,0 +1,51 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\comsvcs.dll
+
+File Type: DLL
+
+  Section contains the following exports for comsvcs.dll
+
+    00000000 characteristics
+    C961D371 time date stamp
+        0.00 version
+           5 ordinal base
+          22 number of functions
+          20 number of names
+
+    ordinal hint RVA      name
+
+          8    0 00052CA0 CoCreateActivity
+          9    1 00042A90 CoEnterServiceDomain
+         10    2 00042BB0 CoLeaveServiceDomain
+         11    3 00019FB0 CoLoadServices
+         12    4 0003BDD0 ComSvcsExceptionFilter
+         13    5 000458D0 ComSvcsLogError
+          5    6 0004AF40 CosGetCallContext
+         14    7 00046E40 DispManGetContext
+         15    8 0001B3E0 DllCanUnloadNow
+         16    9 0000C5E0 DllGetClassObject
+         17    A 0001B950 DllRegisterServer
+         18    B 0001B950 DllUnregisterServer
+         19    C 0003BF00 GetMTAThreadPoolMetrics
+         20    D 0003BFA0 GetManagedExtensions
+         21    E 000459B0 GetObjectContext
+         22    F 0003C060 GetTrkSvrObject
+         23   10 00052FC0 MTSCreateActivity
+         24   11 0003C190 MiniDumpW
+         25   12 000459E0 RecycleSurrogate
+         26   13 000459F0 SafeRef
+          6      0001B950 [NONAME]
+          7      00052F00 [NONAME]
+
+  Summary
+
+        B000 .data
+        1000 .didat
+        B000 .pdata
+       82000 .rdata
+        8000 .reloc
+       22000 .rsrc
+       E3000 .text

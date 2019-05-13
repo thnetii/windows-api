@@ -1,0 +1,46 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\TtlsCfg.dll
+
+File Type: DLL
+
+  Section contains the following exports for TtlsCfg.dll
+
+    00000000 characteristics
+    A975E90D time date stamp
+        0.00 version
+           1 ordinal base
+          17 number of functions
+          17 number of names
+
+    ordinal hint RVA      name
+
+          5    0 00002110 EapPeerConfigBlob2Xml
+          6    1 000079E0 EapPeerConfigXml2Blob
+          1    2 000104F0 EapPeerCreateMethodConfiguration
+          7    3 0000D270 EapPeerCredentialsXml2Blob
+          8    4 0000E340 EapPeerFreeErrorMemory
+          9    5 0000E3A0 EapPeerFreeMemory
+         10    6 0000E400 EapPeerGetConfigBlobAndUserBlob
+          2    7 0000F8D0 EapPeerGetIdentityPageGuid
+          3    8 0000FB20 EapPeerGetMethodProperties
+          4    9 0000F900 EapPeerGetNextPageGuid
+         11    A 0000E910 EapPeerInvokeConfigUI
+         12    B 0000E9D0 EapPeerInvokeIdentityUI
+         13    C 0000F730 EapPeerInvokeInteractiveUI
+         14    D 00010700 EapPeerQueryCredentialInputFields
+         15    E 00011C90 EapPeerQueryInteractiveUIInputFields
+         16    F 00012350 EapPeerQueryUIBlobFromInteractiveUIInputFields
+         17   10 000111B0 EapPeerQueryUserBlobFromCredentialInputFields
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        2000 .pdata
+        C000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       27000 .text

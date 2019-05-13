@@ -1,0 +1,65 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\winusb.dll
+
+File Type: DLL
+
+  Section contains the following exports for WINUSB.DLL
+
+    00000000 characteristics
+    415F1CC3 time date stamp
+        0.00 version
+           1 ordinal base
+          37 number of functions
+          37 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00002FF0 WinUsb_AbortPipe
+          2    1 00002F80 WinUsb_AbortPipeAsync
+          3    2 00002C70 WinUsb_ControlTransfer
+          4    3 000030C0 WinUsb_FlushPipe
+          5    4 000019E0 WinUsb_Free
+          6    5 00003350 WinUsb_GetAdjustedFrameNumber
+          7    6 00001A80 WinUsb_GetAssociatedInterface
+          8    7 00002180 WinUsb_GetCurrentAlternateSetting
+          9    8 00003210 WinUsb_GetCurrentFrameNumber
+         10    9 00003E20 WinUsb_GetCurrentFrameNumberAndQpc
+         11    A 00001E10 WinUsb_GetDescriptor
+         12    B 000031D0 WinUsb_GetOverlappedResult
+         13    C 00002510 WinUsb_GetPipePolicy
+         14    D 00002800 WinUsb_GetPowerPolicy
+         15    E 00001350 WinUsb_Initialize
+         16    F 00001080 WinUsb_ParseConfigurationDescriptor
+         17   10 00001010 WinUsb_ParseDescriptors
+         18   11 00001CF0 WinUsb_QueryDeviceInformation
+         19   12 00001C60 WinUsb_QueryInterfaceSettings
+         20   13 00002280 WinUsb_QueryPipe
+         21   14 00001210 WinUsb_QueryPipeEx
+         22   15 00003CB0 WinUsb_ReadIsochPipe
+         23   16 00003C60 WinUsb_ReadIsochPipeAsap
+         24   17 00002940 WinUsb_ReadPipe
+         25   18 000033E0 WinUsb_RegisterIsochBuffer
+         26   19 00002EB0 WinUsb_ResetPipe
+         27   1A 00002E40 WinUsb_ResetPipeAsync
+         28   1B 000020B0 WinUsb_SetCurrentAlternateSetting
+         29   1C 00001F70 WinUsb_SetCurrentAlternateSettingAsync
+         30   1D 00002370 WinUsb_SetPipePolicy
+         31   1E 00002660 WinUsb_SetPowerPolicy
+         32   1F 00003D00 WinUsb_StartTrackingForTimeSync
+         33   20 00003F40 WinUsb_StopTrackingForTimeSync
+         34   21 00003550 WinUsb_UnregisterIsochBuffer
+         35   22 000038F0 WinUsb_WriteIsochPipe
+         36   23 000038C0 WinUsb_WriteIsochPipeAsap
+         37   24 00002AD0 WinUsb_WritePipe
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        5000 .text

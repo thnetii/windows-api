@@ -1,0 +1,50 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\xwizards.dll
+
+File Type: DLL
+
+  Section contains the following exports for xwizards.dll
+
+    00000000 characteristics
+    1F2E7ABB time date stamp
+        0.00 version
+           1 ordinal base
+          21 number of functions
+          21 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00004620 DllCanUnloadNow
+          2    1 00004680 DllGetClassObject
+          3    2 000060E0 ProcessXMLFileA
+          4    3 000061D0 ProcessXMLFileW
+          5    4 00005A00 ResetRegistrationA
+          6    5 00005AF0 ResetRegistrationW
+          7    6 00007130 RunPropertySheetA
+          8    7 00007220 RunPropertySheetW
+          9    8 00006770 RunWizardA
+         10    9 00006860 RunWizardW
+         11    A 00004B40 XWProcessXMLFile
+         12    B 00004B60 XWRegisterHost
+         13    C 00004F50 XWRegisterPageWithPage
+         14    D 00004DF0 XWRegisterPageWithTask
+         15    E 00004C90 XWRegisterTaskWithHost
+         16    F 000050B0 XWUnregisterHost
+         17   10 00005410 XWUnregisterHostTaskLink
+         18   11 000052F0 XWUnregisterPage
+         19   12 00005650 XWUnregisterPagesLink
+         20   13 000051D0 XWUnregisterTask
+         21   14 00005530 XWUnregisterTaskPageLink
+
+  Summary
+
+        4000 .data
+        1000 .didat
+        3000 .pdata
+       16000 .rdata
+        1000 .reloc
+       1C000 .rsrc
+       35000 .text

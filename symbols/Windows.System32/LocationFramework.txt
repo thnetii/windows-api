@@ -1,0 +1,44 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\LocationFramework.dll
+
+File Type: DLL
+
+  Section contains the following exports for LocationFramework.dll
+
+    00000000 characteristics
+    48CE82B2 time date stamp
+        0.00 version
+           1 ordinal base
+          14 number of functions
+          14 number of names
+
+    ordinal hint RVA      name
+
+         11    0 0006FF40 DllCanUnloadNow
+         12    1 00008580 DllGetClassObject
+         13    2 0006FF70 DllRegisterServer
+         14    3 0006FFB0 DllUnregisterServer
+          1    4 0008D340 LocationObjectManagerInstance
+          2    5 000847F0 LocationServiceHostShutdown
+          3    6 00084810 LocationServiceHostStartup
+          4    7 00030450 RegisterLocationCOMServer
+          5    8 00084830 SvcLocationAddRef
+          6    9 00032ED0 SvcLocationInitServerLock
+          7    A 00084850 SvcLocationReleaseRef
+          8    B 00084870 SvcOnConsoleSessionNotification
+          9    C 0002E300 SvcOnUserLogOnStateNotification
+         10    D 00084890 UnregisterLocationCOMServer
+
+  Summary
+
+        8000 .data
+        1000 .didat
+       14000 .pdata
+       84000 .rdata
+        3000 .reloc
+       18000 .rsrc
+      145000 .text
+        1000 RT_CODE

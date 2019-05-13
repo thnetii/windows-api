@@ -1,0 +1,56 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\dssenh.dll
+
+File Type: DLL
+
+  Section contains the following exports for DSSENH.dll
+
+    00000000 characteristics
+    2DED19EC time date stamp
+        0.00 version
+           1 ordinal base
+          27 number of functions
+          27 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001900 CPAcquireContext
+          2    1 00001010 CPCreateHash
+          3    2 0000ABF0 CPDecrypt
+          4    3 0000B200 CPDeriveKey
+          5    4 00001810 CPDestroyHash
+          6    5 0000B400 CPDestroyKey
+          7    6 0000AEE0 CPDuplicateHash
+          8    7 0000B460 CPDuplicateKey
+          9    8 0000AD60 CPEncrypt
+         10    9 0000B560 CPExportKey
+         11    A 0000B810 CPGenKey
+         12    B 0000DB40 CPGenRandom
+         13    C 00001360 CPGetHashParam
+         14    D 0000BE70 CPGetKeyParam
+         15    E 0000D350 CPGetProvParam
+         16    F 0000BEF0 CPGetUserKey
+         17   10 000016B0 CPHashData
+         18   11 0000AFE0 CPHashSessionKey
+         19   12 0000C090 CPImportKey
+         20   13 00001530 CPReleaseContext
+         21   14 0000B190 CPSetHashParam
+         22   15 0000CA70 CPSetKeyParam
+         23   16 0000D980 CPSetProvParam
+         24   17 0000D0E0 CPSignHash
+         25   18 0000D240 CPVerifySignature
+         26   19 0000DB90 DllRegisterServer
+         27   1A 0000DC30 DllUnregisterServer
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        6000 .rdata
+        1000 .reloc
+        5000 .rsrc
+       17000 .text

@@ -1,0 +1,46 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\wldp.dll
+
+File Type: DLL
+
+  Section contains the following exports for Wldp.dll
+
+    00000000 characteristics
+    C97E5754 time date stamp
+        0.00 version
+           1 ordinal base
+          17 number of functions
+          17 number of names
+
+    ordinal hint RVA      name
+
+          5    0 0000F130 WldpAddDeveloperCertificateForDynamicCodeTrust
+          6    1 00001D20 WldpCheckRetailConfiguration
+          7    2 0000F3B0 WldpDisableDeveloperMode
+          8    3 0000F4A0 WldpEnableDeveloperMode
+          9    4 00001220 WldpGetLockdownPolicy
+         10    5 00010A70 WldpIsAllowedEntryPoint
+          1    6 000011E0 WldpIsAppApprovedByPolicy
+         11    7 0000F7B0 WldpIsClassInApprovedList
+         12    8 0000FBB0 WldpIsDebugAllowed
+         13    9 0000FE00 WldpIsDynamicCodePolicyEnabled
+         14    A 0000FE90 WldpQueryDynamicCodeTrust
+         15    B 0000FF00 WldpQuerySecurityPolicy
+          2    C 00001AA0 WldpQueryWindowsLockdownMode
+          3    D 00001C80 WldpQueryWindowsLockdownRestriction
+         16    E 0000FF60 WldpSetDynamicCodeTrust
+         17    F 0000FFA0 WldpSetDynamicCodeTrust2
+          4   10 0000EA50 WldpSetWindowsLockdownRestriction
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        2000 .pdata
+        C000 .rdata
+        1000 .reloc
+        2000 .rsrc
+       11000 .text

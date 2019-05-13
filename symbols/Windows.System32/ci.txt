@@ -1,0 +1,47 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\ci.dll
+
+File Type: DLL
+
+  Section contains the following exports for CI.dll
+
+    00000000 characteristics
+    684B7093 time date stamp
+        0.00 version
+           1 ordinal base
+          12 number of functions
+           9 number of names
+
+    ordinal hint RVA      name
+
+          4    0 00041970 CiCheckSignedFile
+          5    1 00041A20 CiFindPageHashesInCatalog
+          6    2 00041AA0 CiFindPageHashesInSignedFile
+          7    3 00041AE0 CiFreePolicyInfo
+          8    4 00041840 CiGetPEInformation
+          9    5 00040130 CiInitialize
+         10    6 0005A860 CiSetTrustedOriginClaimId
+         11    7 0004EFB0 CiValidateFileObject
+         12    8 000418F0 CiVerifyHashInCatalog
+          1      0004F930 [NONAME]
+          2      00057710 [NONAME]
+          3      00057950 [NONAME]
+
+  Summary
+
+        1000 .data
+        1000 .edata
+        3000 .idata
+        6000 .pdata
+        C000 .rdata
+        3000 .reloc
+       10000 .rsrc
+       29000 .text
+        2000 GFIDS
+        1000 INIT
+       70000 PAGE
+        B000 PAGECONS
+        1000 PAGEDATA

@@ -1,0 +1,141 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\igdrcl64.dll
+
+File Type: DLL
+
+  Section contains the following exports for igdrcl64.dll
+
+    00000000 characteristics
+    59E4F4FD time date stamp Mon Oct 16 20:05:49 2017
+        0.00 version
+           1 ordinal base
+         113 number of functions
+         113 number of names
+
+    ordinal hint RVA      name
+
+          4    0 00071090 clBuildProgram
+          5    1 00071190 clCompileProgram
+          6    2 0006FD50 clCreateBuffer
+          7    3 00074830 clCreateCommandQueue
+          8    4 0006F9A0 clCreateCommandQueueWithProperties
+          9    5 0006F700 clCreateContext
+         10    6 0006F770 clCreateContextFromType
+         11    7 00074B30 clCreateFromGLBuffer
+         12    8 00074ED0 clCreateFromGLRenderbuffer
+         13    9 00074C40 clCreateFromGLTexture
+         14    A 000752E0 clCreateFromGLTexture2D
+         15    B 00075430 clCreateFromGLTexture3D
+         16    C 0006FFE0 clCreateImage
+         17    D 00074310 clCreateImage2D
+         18    E 00074460 clCreateImage3D
+         19    F 00071620 clCreateKernel
+         20   10 00071720 clCreateKernelsInProgram
+         21   11 000700F0 clCreatePipe
+         22   12 00070CC0 clCreateProgramWithBinary
+         23   13 00070E60 clCreateProgramWithBuiltInKernels
+         24   14 00070BC0 clCreateProgramWithSource
+         25   15 00074950 clCreateSampler
+         26   16 00070800 clCreateSamplerWithProperties
+         27   17 0006FEA0 clCreateSubBuffer
+         28   18 0006F6D0 clCreateSubDevices
+         29   19 00071F30 clCreateUserEvent
+         30   1A 00075120 clEnqueueAcquireGLObjects
+         31   1B 00074780 clEnqueueBarrier
+         32   1C 00073C60 clEnqueueBarrierWithWaitList
+         33   1D 00072B70 clEnqueueCopyBuffer
+         34   1E 00072C70 clEnqueueCopyBufferRect
+         35   1F 000733F0 clEnqueueCopyBufferToImage
+         36   20 000731C0 clEnqueueCopyImage
+         37   21 000732E0 clEnqueueCopyImageToBuffer
+         38   22 00072A50 clEnqueueFillBuffer
+         39   23 00073080 clEnqueueFillImage
+         40   24 00073500 clEnqueueMapBuffer
+         41   25 00073660 clEnqueueMapImage
+         42   26 000745F0 clEnqueueMarker
+          1   27 000764E0 clEnqueueMarkerWithSyncObjectINTEL
+         43   28 00073B90 clEnqueueMarkerWithWaitList
+         44   29 000738C0 clEnqueueMigrateMemObjects
+         45   2A 000739C0 clEnqueueNDRangeKernel
+         46   2B 00073B70 clEnqueueNativeKernel
+         47   2C 000724B0 clEnqueueReadBuffer
+         48   2D 000725D0 clEnqueueReadBufferRect
+         49   2E 00072E00 clEnqueueReadImage
+         50   2F 00075200 clEnqueueReleaseGLObjects
+         51   30 00073D30 clEnqueueSVMFree
+         52   31 000740D0 clEnqueueSVMMap
+         53   32 00073FC0 clEnqueueSVMMemFill
+         54   33 00073EB0 clEnqueueSVMMemcpy
+         55   34 00074200 clEnqueueSVMUnmap
+         56   35 00074A70 clEnqueueTask
+         57   36 000737F0 clEnqueueUnmapMemObject
+         58   37 000746A0 clEnqueueWaitForEvents
+         59   38 00072780 clEnqueueWriteBuffer
+         60   39 000728A0 clEnqueueWriteBufferRect
+         61   3A 00072F40 clEnqueueWriteImage
+         62   3B 00072430 clFinish
+         63   3C 000723B0 clFlush
+          2   3D 00077750 clGetCLObjectInfoINTEL
+         64   3E 0006FCA0 clGetCommandQueueInfo
+         65   3F 0006F900 clGetContextInfo
+         66   40 0006F5D0 clGetDeviceIDs
+         67   41 0006F690 clGetDeviceInfo
+         68   42 00071E80 clGetEventInfo
+         69   43 00072300 clGetEventProfilingInfo
+         70   44 00074820 clGetExtensionFunctionAddress
+         71   45 000742E0 clGetExtensionFunctionAddressForPlatform
+         72   46 00074FD0 clGetGLObjectInfo
+         73   47 00075060 clGetGLTextureInfo
+         74   48 00070440 clGetImageInfo
+         75   49 00071C40 clGetKernelArgInfo
+         76   4A 00071B90 clGetKernelInfo
+         77   4B 00071D10 clGetKernelWorkGroupInfo
+         78   4C 00070390 clGetMemObjectInfo
+         79   4D 000704F0 clGetPipeInfo
+         80   4E 0006F530 clGetPlatformIDs
+         81   4F 0006F5A0 clGetPlatformInfo
+         82   50 00071560 clGetProgramBuildInfo
+         83   51 000714B0 clGetProgramInfo
+         84   52 00070B10 clGetSamplerInfo
+         85   53 00070270 clGetSupportedImageFormats
+         86   54 00071310 clLinkProgram
+         87   55 0006FBE0 clReleaseCommandQueue
+         88   56 0006F890 clReleaseContext
+         89   57 0006F6F0 clReleaseDevice
+         90   58 000720A0 clReleaseEvent
+         91   59 00071880 clReleaseKernel
+         92   5A 000701B0 clReleaseMemObject
+         93   5B 00070FD0 clReleaseProgram
+         94   5C 00070A50 clReleaseSampler
+         95   5D 0006FB60 clRetainCommandQueue
+         96   5E 0006F820 clRetainContext
+         97   5F 0006F6E0 clRetainDevice
+         98   60 00072020 clRetainEvent
+         99   61 00071800 clRetainKernel
+        100   62 00070130 clRetainMemObject
+        101   63 00070F50 clRetainProgram
+        102   64 000709D0 clRetainSampler
+        103   65 00070670 clSVMAlloc
+        104   66 00070760 clSVMFree
+          3   67 00076280 clSetCommandQueueProperty
+        105   68 00072220 clSetEventCallback
+        106   69 00071940 clSetKernelArg
+        107   6A 000719F0 clSetKernelArgSVMPointer
+        108   6B 00071AC0 clSetKernelExecInfo
+        109   6C 000705B0 clSetMemObjectDestructorCallback
+        110   6D 00072160 clSetUserEventStatus
+        111   6E 00074810 clUnloadCompiler
+        112   6F 00071470 clUnloadPlatformCompiler
+        113   70 00071DD0 clWaitForEvents
+
+  Summary
+
+       22000 .data
+        F000 .pdata
+      364000 .rdata
+        2000 .reloc
+        1000 .rsrc
+      128000 .text

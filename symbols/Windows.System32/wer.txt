@@ -1,0 +1,174 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\wer.dll
+
+File Type: DLL
+
+  Section contains the following exports for wer.dll
+
+    00000000 characteristics
+    857E5A6D time date stamp
+        0.00 version
+           1 ordinal base
+         145 number of functions
+         145 number of names
+
+    ordinal hint RVA      name
+
+         96    0 00043710 CloseThreadWaitChainSession
+         97    1 000437A0 GetThreadWaitChain
+         98    2 000439A0 OpenThreadWaitChainSession
+         99    3 00043AC0 RegisterWaitChainCOMCallback
+        100    4 000449E0 WerAddExcludedApplication
+        101    5 00050880 WerFreeString
+        102    6 00044BD0 WerRemoveExcludedApplication
+        103    7 00044D80 WerReportAddDump
+        104    8 00044F90 WerReportAddFile
+        105    9 00022AA0 WerReportCloseHandle
+        106    A 000166F0 WerReportCreate
+        107    B 00015630 WerReportSetParameter
+        108    C 00045100 WerReportSetUIOption
+        109    D 0001D300 WerReportSubmit
+        110    E 00050890 WerStoreClose
+        111    F 00050920 WerStoreGetFirstReportKey
+        112   10 00050A70 WerStoreGetNextReportKey
+        113   11 00050C40 WerStoreGetReportCount
+        114   12 00050C50 WerStoreGetSizeOnDisk
+        115   13 00050CF0 WerStoreOpen
+        116   14 00050EE0 WerStorePurge
+        117   15 000511D0 WerStoreQueryReportMetadataV1
+        118   16 000515B0 WerStoreQueryReportMetadataV2
+        119   17 00051A30 WerStoreQueryReportMetadataV3
+        120   18 00051EA0 WerStoreUploadReport
+          1   19 00044320 WerSysprepCleanup
+          2   1A 00044440 WerSysprepGeneralize
+          3   1B 000445C0 WerUnattendedSetup
+          4   1C 00047E00 WerpAddAppCompatData
+        121   1D 00052180 WerpAddFile
+        122   1E 00052260 WerpAddFileBuffer
+        123   1F 00052360 WerpAddFileCallback
+          5   20 00048560 WerpAddIfRegisteredForAppLocalDump
+          6   21 00048700 WerpAddMemoryBlock
+          7   22 000488E0 WerpAddRegisteredDataToReport
+          8   23 00048C50 WerpAddRegisteredDumpsToReport
+          9   24 000056C0 WerpAddRegisteredMetadataToReport
+        124   25 00052460 WerpAddTerminationReason
+         10   26 00048E10 WerpArchiveReport
+        125   27 00055060 WerpAuxmdDumpProcessImages
+        126   28 00055430 WerpAuxmdDumpRegisteredBlocks
+        127   29 00055580 WerpAuxmdFree
+        128   2A 00055630 WerpAuxmdFreeCopyBuffer
+        129   2B 00055670 WerpAuxmdHashVaRanges
+        130   2C 00055890 WerpAuxmdInitialize
+        131   2D 000559C0 WerpAuxmdMapFile
+         11   2E 00049120 WerpCancelUpload
+         12   2F 000491C0 WerpCleanWer
+         13   30 00049510 WerpCloseStore
+        132   31 00052600 WerpCreateIntegratorReportId
+         14   32 000495A0 WerpCreateMachineStore
+         15   33 00049730 WerpDeleteReport
+         16   34 000497A0 WerpDestroyWerString
+         17   35 000497F0 WerpEnumerateStoreNext
+         18   36 000498C0 WerpEnumerateStoreStart
+        133   37 000526A0 WerpExtractReportFiles
+         19   38 00052FD0 WerpFlushImageCache
+         20   39 00049920 WerpForceDeferredCollection
+        134   3A 00050880 WerpFreeString
+         21   3B 00049A50 WerpFreeUnmappedVaRanges
+         22   3C 00049D20 WerpGetAADTenantInfo
+         23   3D 00049D70 WerpGetBucketId
+         24   3E 00049EC0 WerpGetDynamicParameter
+         25   3F 00049FD0 WerpGetEventType
+         26   40 0004A050 WerpGetExtendedDiagData
+         27   41 0004A300 WerpGetFileByIndex
+         28   42 0004A420 WerpGetFilePathByIndex
+        135   43 00052750 WerpGetIntegratorReportId
+         29   44 0004A500 WerpGetLegacyBucketId
+         30   45 0004A650 WerpGetLoadedModuleByIndex
+         31   46 0004A720 WerpGetNumFiles
+         32   47 0004A7C0 WerpGetNumLoadedModules
+         33   48 0004A830 WerpGetNumSigParams
+        136   49 000527C0 WerpGetReportConsent
+         34   4A 0004A8B0 WerpGetReportCount
+         35   4B 0004A950 WerpGetReportFinalConsent
+         36   4C 0004A9C0 WerpGetReportFlags
+         37   4D 0004AA50 WerpGetReportId
+         38   4E 0004AB70 WerpGetReportInformation
+         39   4F 0004ABE0 WerpGetReportSettings
+         40   50 0004AC90 WerpGetReportTime
+         41   51 0004AD00 WerpGetReportType
+         42   52 0004AD70 WerpGetResponseId
+         43   53 0004AE10 WerpGetSigParamByIndex
+        137   54 000528E0 WerpGetStoreLocation
+         44   55 00017DC0 WerpGetStorePath
+         45   56 0004AEA0 WerpGetStoreType
+         46   57 0004AF70 WerpGetTextFromReport
+         47   58 0004AFF0 WerpGetUIParamByIndex
+         48   59 0004B070 WerpGetUploadTime
+         49   5A 0004B0E0 WerpGetWerStringData
+         50   5B 0004B100 WerpGetWow64Process
+         51   5C 0004B190 WerpHashApplicationParameters
+         52   5D 000530A0 WerpInitializeImageCache
+        138   5E 00052A10 WerpIsDisabled
+         53   5F 0004B420 WerpIsOnBattery
+         54   60 0004B4A0 WerpIsTransportAvailable
+        139   61 00052B00 WerpLoadReport
+         55   62 0004B6F0 WerpLoadReportFromBuffer
+         56   63 0004BD90 WerpOpenMachineArchive
+         57   64 0004BDA0 WerpOpenMachineQueue
+         58   65 0004BFA0 WerpPromptUser
+         59   66 0004C010 WerpPruneStore
+         60   67 0004C0C0 WerpQueueHasBypassPowerReports
+         61   68 0004C380 WerpReportCancel
+         62   69 0004C420 WerpReportSprintfParameter
+         63   6A 0004C510 WerpReserveMachineQueueReportDir
+         64   6B 00053690 WerpResetTransientImageCacheStatistics
+         65   6C 0004C670 WerpRestartApplication
+         66   6D 0004CF90 WerpSetAADTenantInfo
+        140   6E 00052B30 WerpSetAuxiliaryArchivePath
+        141   6F 00052BB0 WerpSetCallBack
+        142   70 00052C20 WerpSetDefaultUserConsent
+         67   71 0004D460 WerpSetDynamicParameter
+         68   72 0004D560 WerpSetEventName
+        143   73 00052E10 WerpSetIntegratorReportId
+        144   74 00052E80 WerpSetIptEnabled
+         69   75 0004D5D0 WerpSetProcessTimelines
+         70   76 0004D640 WerpSetQuickDumpType
+         71   77 0004D6B0 WerpSetReportApplicationIdentity
+         72   78 0004D720 WerpSetReportFlags
+         73   79 0004D780 WerpSetReportInformation
+         74   7A 0004D810 WerpSetReportIsFatal
+         75   7B 0004D880 WerpSetReportNamespaceParameter
+        145   7C 00052EE0 WerpSetReportOption
+         76   7D 0004D920 WerpSetReportTime
+         77   7E 0004D990 WerpSetReportUploadContextToken
+         78   7F 0004DA40 WerpSetTelemetryAppParams
+         79   80 0004DAD0 WerpSetTelemetryKernelParams
+         80   81 0004DB30 WerpSetTelemetryServiceParams
+         81   82 0004DBD0 WerpSetTimedTask
+         82   83 0004DCF0 WerpShowUpsellUI
+         83   84 00054030 WerpStitchedMinidumpVmPostReadCallback
+         84   85 00054170 WerpStitchedMinidumpVmPreReadCallback
+         85   86 00023210 WerpStitchedMinidumpVmQueryCallback
+         86   87 0004DD40 WerpSubmitReportFromStore
+         87   88 0004E320 WerpTraceAuxMemDumpStatistics
+         88   89 0004E470 WerpTraceDuration
+         89   8A 0004E660 WerpTraceImageCacheStatistics
+         90   8B 0004E8F0 WerpTraceSnapshotStatistics
+         91   8C 000231D0 WerpTraceStitchedDumpWriterStatistics
+         92   8D 0004ECD0 WerpTraceUnmappedVaRangesStatistics
+         93   8E 0004EDA0 WerpUnmapProcessViews
+         94   8F 0004EFE0 WerpValidateReportKey
+         95   90 0004F040 WerpWalkGatherBlocks
+
+  Summary
+
+        4000 .data
+        1000 .didat
+        7000 .pdata
+       2B000 .rdata
+        1000 .reloc
+        2000 .rsrc
+       A2000 .text

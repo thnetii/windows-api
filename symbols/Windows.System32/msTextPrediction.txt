@@ -1,0 +1,37 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\msTextPrediction.dll
+
+File Type: DLL
+
+  Section contains the following exports for apis.dll
+
+    00000000 characteristics
+    AE022DC6 time date stamp
+        0.00 version
+           1 ordinal base
+           8 number of functions
+           8 number of names
+
+    ordinal hint RVA      name
+
+          5    0 0001EBD0 DllCanUnloadNow
+          6    1 0001EBF0 DllGetClassObject
+          7    2 0001EC10 DllRegisterServer
+          8    3 0001EC80 DllUnregisterServer
+          1    4 00045900 NIFTE_AbortTrainer
+          2    5 00045950 NIFTE_CreateTrainer
+          3    6 00045A50 NIFTE_DestroyTrainer
+          4    7 0000AFC0 NIFTE_TextTrain
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        6000 .pdata
+       20000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       68000 .text

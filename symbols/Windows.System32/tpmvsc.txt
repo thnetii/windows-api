@@ -1,0 +1,66 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\tpmvsc.dll
+
+File Type: DLL
+
+  Section contains the following exports for tpmvsc.dll
+
+    00000000 characteristics
+    D551E695 time date stamp
+        0.00 version
+           1 ordinal base
+          37 number of functions
+          37 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0001B9C0 DllCanUnloadNow
+          2    1 0001BAD0 DllGetClassObject
+          3    2 0001BC20 DllRegisterServer
+          4    3 0001BE40 DllUnregisterServer
+          5    4 00032BF0 TpmVCardCreate
+          6    5 000330D0 TpmVCardCreateInProc
+          7    6 00033560 TpmVCardDestroy
+          8    7 00033740 TpmVCardDestroyInProc
+          9    8 0002F320 VCardAuthenticatePin
+         10    9 0002FB60 VCardChangePin
+         11    A 0002E720 VCardClose
+         12    B 0002EAC0 VCardCloseChannel
+         13    C 00032220 VCardCreateClaim
+         14    D 00030020 VCardCreateKey
+         15    E 0002F6D0 VCardDeauthenticate
+         16    F 000319C0 VCardDecrypt
+         17   10 0002E380 VCardDeinitialize
+         18   11 00030E80 VCardDeleteKey
+         19   12 00031590 VCardEncrypt
+         20   13 000311E0 VCardExportRsaPubKey
+         21   14 00032600 VCardGetAikCertificate
+         22   15 000327A0 VCardGetAikContainerName
+         23   16 0002EC20 VCardGetChallenge
+         24   17 00031060 VCardGetKeyType
+         25   18 0002F830 VCardGetPinLength
+         26   19 0002F9C0 VCardGetRemainingRetryCount
+         27   1A 000302C0 VCardGetTransportKeyAlg
+         28   1B 000303B0 VCardImportRsaKey
+         29   1C 000309D0 VCardImportSymKey
+         30   1D 0002E210 VCardInitialize
+         31   1E 0002F1A0 VCardInvalidateChallenge
+         32   1F 0002E540 VCardOpen
+         33   20 0002E8E0 VCardOpenChannel
+         34   21 0002FE90 VCardResetPin
+         35   22 0002EFE0 VCardSetResponse
+         36   23 00031DF0 VCardSignHash
+         37   24 0002FD00 VCardUnblockPin
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        4000 .pdata
+       1A000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       3F000 .text

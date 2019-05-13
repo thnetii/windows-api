@@ -1,0 +1,81 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\devobj.dll
+
+File Type: DLL
+
+  Section contains the following exports for DEVOBJ.dll
+
+    00000000 characteristics
+    38FDDD55 time date stamp
+        0.00 version
+           1 ordinal base
+          52 number of functions
+          52 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0000A320 DevObjBuildClassInfoList
+          2    1 0000D660 DevObjChangeState
+          3    2 0000A680 DevObjClassGuidsFromName
+          4    3 0000A910 DevObjClassNameFromGuid
+          5    4 0000AC30 DevObjCreateClassDeviceInfoList
+          6    5 00012550 DevObjCreateDevRegKey
+          7    6 0000ADC0 DevObjCreateDeviceInfo
+          8    7 00006700 DevObjCreateDeviceInfoList
+          9    8 0000B3E0 DevObjCreateDeviceInterface
+         10    9 00012780 DevObjCreateDeviceInterfaceRegKey
+         11    A 0000B690 DevObjDeleteAllInterfacesForDevice
+         12    B 00012A50 DevObjDeleteDevRegKey
+         13    C 0000E170 DevObjDeleteDevice
+         14    D 0000B7C0 DevObjDeleteDeviceInfo
+         15    E 000069F0 DevObjDeleteDeviceInterfaceData
+         16    F 00012BC0 DevObjDeleteDeviceInterfaceRegKey
+         17   10 00002D50 DevObjDestroyDeviceInfoList
+         18   11 00004AE0 DevObjEnumDeviceInfo
+         19   12 000026C0 DevObjEnumDeviceInterfaces
+         20   13 0000AA90 DevObjGetClassDescription
+         21   14 00003130 DevObjGetClassDevs
+         22   15 00001290 DevObjGetClassProperty
+         23   16 00012D80 DevObjGetClassPropertyKeys
+         24   17 00012E70 DevObjGetClassRegistryProperty
+         25   18 0000B910 DevObjGetDeviceInfoDetail
+         26   19 0000BA40 DevObjGetDeviceInfoListClass
+         27   1A 00002330 DevObjGetDeviceInfoListDetail
+         28   1B 00001E30 DevObjGetDeviceInstanceId
+         29   1C 00001010 DevObjGetDeviceInterfaceAlias
+         30   1D 00002970 DevObjGetDeviceInterfaceDetail
+         31   1E 00001FC0 DevObjGetDeviceInterfaceProperty
+         32   1F 00012FB0 DevObjGetDeviceInterfacePropertyKeys
+         33   20 00002470 DevObjGetDeviceProperty
+         34   21 00013150 DevObjGetDevicePropertyKeys
+         35   22 000045E0 DevObjGetDeviceRegistryProperty
+         36   23 0000E8D0 DevObjLocateDevice
+         37   24 000132D0 DevObjOpenClassRegKey
+         38   25 000017A0 DevObjOpenDevRegKey
+         39   26 00001560 DevObjOpenDeviceInfo
+         40   27 00001A20 DevObjOpenDeviceInterface
+         41   28 000134B0 DevObjOpenDeviceInterfaceRegKey
+         42   29 0000BB50 DevObjRegisterDeviceInfo
+         43   2A 0000C370 DevObjRemoveDeviceInterface
+         44   2B 0000EA90 DevObjRestartDevices
+         45   2C 000136A0 DevObjSetClassProperty
+         46   2D 00013790 DevObjSetClassRegistryProperty
+         47   2E 0000C520 DevObjSetDeviceInfoDetail
+         48   2F 0000C650 DevObjSetDeviceInterfaceDefault
+         49   30 00006B60 DevObjSetDeviceInterfaceProperty
+         50   31 00006DA0 DevObjSetDeviceProperty
+         51   32 000138B0 DevObjSetDeviceRegistryProperty
+         52   33 0000EDF0 DevObjUninstallDevice
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        2000 .pdata
+        9000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       19000 .text

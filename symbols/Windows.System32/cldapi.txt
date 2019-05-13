@@ -1,0 +1,77 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\cldapi.dll
+
+File Type: DLL
+
+  Section contains the following exports for CLDAPI.dll
+
+    00000000 characteristics
+    FA5D4114 time date stamp
+        0.00 version
+           1 ordinal base
+          48 number of functions
+          48 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001C20 CfAbortOperation
+          2    1 000022C0 CfCloseAppPolicy
+          3    2 00003160 CfCloseHandle
+          4    3 000077E0 CfConnectSyncRoot
+          5    4 000031F0 CfConvertToPlaceholder
+          6    5 00002730 CfCreatePlaceholders
+          7    6 00003B70 CfDehydratePlaceholder
+          8    7 000039D0 CfDehydratePlaceholderEx
+          9    8 00008340 CfDisconnectSyncRoot
+         10    9 000022E0 CfEnumAppPolicy
+         11    A 0000B100 CfExecute
+         12    B 00004020 CfGetCorrelationVector
+         13    C 00002190 CfGetLastSyncStatus
+         14    D 0000C200 CfGetPlaceholderInfo
+         15    E 0000C5E0 CfGetPlaceholderRangeInfo
+         16    F 0000C130 CfGetPlaceholderStateFromAttributeTag
+         17   10 0000C140 CfGetPlaceholderStateFromFileInfo
+         18   11 0000C1F0 CfGetPlaceholderStateFromFindData
+         19   12 0000C060 CfGetPlatformInfo
+         20   13 0000C390 CfGetSyncRootInfoByHandle
+         21   14 0000C510 CfGetSyncRootInfoByPath
+         22   15 00003E50 CfGetTransferKey
+         23   16 00003130 CfGetWin32HandleFromProtectedHandle
+         24   17 000038C0 CfHydratePlaceholder
+         25   18 0000C7F0 CfLockProperties
+         26   19 00002220 CfOpenAppPolicy
+         27   1A 00002B90 CfOpenFileWithOplock
+         28   1B 00001220 CfOpenProgressEvent
+         29   1C 000012D0 CfQueryProgress
+         30   1D 0000BA20 CfQuerySyncProviderStatus
+         31   1E 00003100 CfReferenceProtectedHandle
+         32   1F 000069F0 CfRegisterSyncRoot
+         33   20 00003150 CfReleaseProtectedHandle
+         34   21 00003150 CfReleaseTransferKey
+         35   22 00001690 CfReportProviderProgress
+         36   23 000016C0 CfReportProviderProgress2
+         37   24 0000BAF0 CfReportSyncStatus
+         38   25 0000CA00 CfRetrieveProperties
+         39   26 000037D0 CfRevertPlaceholder
+         40   27 00002500 CfSetAppPolicy
+         41   28 00003EF0 CfSetCorrelationVector
+         42   29 00003D10 CfSetInSyncState
+         43   2A 00003BA0 CfSetPinState
+         44   2B 0000C960 CfStoreProperties
+         45   2C 0000C8C0 CfUnlockProperties
+         46   2D 00007550 CfUnregisterSyncRoot
+         47   2E 000033E0 CfUpdatePlaceholder
+         48   2F 0000B380 CfUpdateSyncProviderStatus
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        1000 .pdata
+        5000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       13000 .text

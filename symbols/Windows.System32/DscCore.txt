@@ -1,0 +1,44 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\DscCore.dll
+
+File Type: DLL
+
+  Section contains the following exports for dsccore.DLL
+
+    00000000 characteristics
+    E248EA68 time date stamp
+        0.00 version
+           1 ordinal base
+          16 number of functions
+          16 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00056C10 CATraps
+          2    1 00056BB0 CUTraps
+          3    2 0000BAA0 CreateAuthenticationCertificateWrapper
+          4    3 00001610 DllCanUnloadNow
+          5    4 00001650 DllGetClassObject
+          6    5 00001350 DllMain
+          7    6 00001570 DllRegisterServer
+          8    7 000015C0 DllUnregisterServer
+          9    8 000013A0 GetProviderClassID
+         10    9 00056AE0 LCMTraps
+         11    A 000012F0 MI_Main
+         12    B 000707C8 NITS_PRESENCE_STUB
+         13    C 00056DE0 NITS_STUB
+         14    D 0000BA30 SysPrep_Cleanup
+         15    E 0000BB60 ValidateCertificateExpirationWrapper
+         16    F 00056B98 ValidatorTraps
+
+  Summary
+
+       28000 .data
+        4000 .pdata
+       1D000 .rdata
+        3000 .reloc
+        1000 .rsrc
+       4B000 .text

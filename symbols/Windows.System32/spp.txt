@@ -1,0 +1,42 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\spp.dll
+
+File Type: DLL
+
+  Section contains the following exports for SPP.dll
+
+    00000000 characteristics
+    9ED368E8 time date stamp
+        0.00 version
+           1 ordinal base
+          13 number of functions
+          13 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0001DEF0 DllCanUnloadNow
+          2    1 0001DF10 DllGetClassObject
+          3    2 0001DF30 DllRegisterServer
+          4    3 0001DFF0 DllUnregisterServer
+          5    4 0001E3B0 SppFreeBadWritersArray
+          6    5 0001E2B0 SppFreeClientPropArray
+          7    6 0001E340 SppFreeExternalGroupPropArray
+          8    7 0001E240 SppFreeGroupPropArray
+          9    8 0001E320 SppFreeMetadataProp
+         10    9 0001E5B0 SxTracerDebuggerBreak
+         11    A 0001E430 SxTracerGetThreadContextDebug
+         12    B 0001E420 SxTracerGetThreadContextRetail
+         13    C 0001E450 SxTracerShouldTrackFailure
+
+  Summary
+
+        6000 .data
+        1000 .didat
+        2000 .pdata
+        9000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       33000 .text

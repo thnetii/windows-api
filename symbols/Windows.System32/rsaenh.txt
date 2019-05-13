@@ -1,0 +1,56 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\rsaenh.dll
+
+File Type: DLL
+
+  Section contains the following exports for RSAENH.dll
+
+    00000000 characteristics
+    EB037B86 time date stamp
+        0.00 version
+           1 ordinal base
+          27 number of functions
+          27 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00003CC0 CPAcquireContext
+          2    1 00001D50 CPCreateHash
+          3    2 00015340 CPDecrypt
+          4    3 000180D0 CPDeriveKey
+          5    4 00002E30 CPDestroyHash
+          6    5 00002F90 CPDestroyKey
+          7    6 00016C00 CPDuplicateHash
+          8    7 000188F0 CPDuplicateKey
+          9    8 000153F0 CPEncrypt
+         10    9 00003260 CPExportKey
+         11    A 00001190 CPGenKey
+         12    B 00003A60 CPGenRandom
+         13    C 00002B90 CPGetHashParam
+         14    D 000037F0 CPGetKeyParam
+         15    E 00018B40 CPGetProvParam
+         16    F 000060D0 CPGetUserKey
+         17   10 00003160 CPHashData
+         18   11 00016DC0 CPHashSessionKey
+         19   12 000015D0 CPImportKey
+         20   13 00003770 CPReleaseContext
+         21   14 00001010 CPSetHashParam
+         22   15 00019BB0 CPSetKeyParam
+         23   16 0001A680 CPSetProvParam
+         24   17 0001DAC0 CPSignHash
+         25   18 00002830 CPVerifySignature
+         26   19 00015190 DllRegisterServer
+         27   1A 00015230 DllUnregisterServer
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        8000 .rdata
+        1000 .reloc
+        4000 .rsrc
+       22000 .text

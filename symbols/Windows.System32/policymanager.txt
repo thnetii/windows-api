@@ -1,0 +1,161 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\policymanager.dll
+
+File Type: DLL
+
+  Section contains the following exports for policymanager.dll
+
+    00000000 characteristics
+    B6D1950B time date stamp
+        0.00 version
+           2 ordinal base
+         132 number of functions
+         131 number of names
+
+    ordinal hint RVA      name
+
+          3    0 0000A980 EnterprisePolicyManagerStore_CSPConfigSourceAreaCreateNodeInstance
+          4    1 0000AA30 EnterprisePolicyManagerStore_CSPConfigSourceAreaDeleteChild
+          5    2 0000AAF0 EnterprisePolicyManagerStore_CSPConfigSourceAreaGetChildNodeNames
+          6    3 0000ABA0 EnterprisePolicyManagerStore_CSPConfigSourceAreaPolicyCreateNodeInstance
+          7    4 0000AD40 EnterprisePolicyManagerStore_CSPConfigSourceAreaPolicyGetValue
+          8    5 0000ADD0 EnterprisePolicyManagerStore_CSPConfigSourceAreaPolicySetValue
+          9    6 0000AE50 EnterprisePolicyManagerStore_CSPConfigSourceDeleteChild
+         10    7 0000AED0 EnterprisePolicyManagerStore_CSPResultAreaGetChildNodeNames
+         11    8 0000AF90 EnterprisePolicyManagerStore_CSPResultAreaPolicyGetValue
+         12    9 0000B090 EnterprisePolicyManagerStore_CSPResultGetAreaChildNodeNames
+         13    A 0000BD00 EnterprisePolicyManagerStore_CreateProviderHive
+         14    B 00043A70 EnterprisePolicyManagerStore_DeleteEnrollmentAdmxMetadata
+         15    C 00043AD0 EnterprisePolicyManagerStore_DeleteEnrollmentAppAdmxMetadata
+         16    D 00043B30 EnterprisePolicyManagerStore_DeleteEnrollmentAppSettingTypeAdmxMetadata
+         17    E 0000BD50 EnterprisePolicyManagerStore_DeleteProvider
+         18    F 0000C0E0 EnterprisePolicyManagerStore_DeleteProviderContextSidArea
+         19   10 0000C370 EnterprisePolicyManagerStore_DeleteProviderContextSidAreaPolicy
+         20   11 0000C840 EnterprisePolicyManagerStore_DeleteProviderIdAndMerge
+         21   12 0000C8D0 EnterprisePolicyManagerStore_DeleteProviderIdAndMergeScopeData
+         22   13 00010840 EnterprisePolicyManagerStore_DeleteVirtuallyDeletedHive
+         23   14 0000C900 EnterprisePolicyManagerStore_DoesProviderContextNameExist
+         24   15 0000C990 EnterprisePolicyManagerStore_DoesProviderContextSidAreaExist
+         25   16 00008F20 EnterprisePolicyManagerStore_DoesProviderContextSidAreaPolicyValueExist
+         26   17 0000CA10 EnterprisePolicyManagerStore_DoesProviderExist
+         27   18 0000B120 EnterprisePolicyManagerStore_EDPCSPConfigSourceAreaDeleteChild
+         28   19 0000B240 EnterprisePolicyManagerStore_EDPCSPConfigSourceAreaPolicyGetValue
+         29   1A 0000B2F0 EnterprisePolicyManagerStore_EDPCSPConfigSourceAreaPolicySetValue
+         30   1B 0000CA80 EnterprisePolicyManagerStore_EnsureProviderContextNameExist
+         31   1C 0000CAE0 EnterprisePolicyManagerStore_EnsureProviderContextSidAreaExist
+         32   1D 00010E90 EnterprisePolicyManagerStore_EvaluatePoliciesUpdateCurrent
+         33   1E 000150C0 EnterprisePolicyManagerStore_FreeURIsOfProviders
+         34   1F 00043B90 EnterprisePolicyManagerStore_GetAdmxFileData
+         35   20 0000CB40 EnterprisePolicyManagerStore_GetAllCurrentSidAreaPolicies
+         36   21 0000CC20 EnterprisePolicyManagerStore_GetAllCurrentSidAreas
+         37   22 0000CCF0 EnterprisePolicyManagerStore_GetAllCurrentSids
+         38   23 0000CD70 EnterprisePolicyManagerStore_GetAllDefaultAreaPolicies
+         39   24 0000CE20 EnterprisePolicyManagerStore_GetAllDefaultAreas
+         40   25 0000CEA0 EnterprisePolicyManagerStore_GetAllProviderContextSidAreaPolicies
+         41   26 0000CF30 EnterprisePolicyManagerStore_GetAllProviderContextSidAreas
+         42   27 0000CFC0 EnterprisePolicyManagerStore_GetAllProviderContextSids
+         43   28 0000D040 EnterprisePolicyManagerStore_GetAllProviderIds
+         44   29 0000D0F0 EnterprisePolicyManagerStore_GetAllProviderPolicyStringValues
+         45   2A 00015130 EnterprisePolicyManagerStore_GetAllURIsOfProviders
+         46   2B 0000D510 EnterprisePolicyManagerStore_GetBinaryPolicyValue
+         47   2C 0002D3D0 EnterprisePolicyManagerStore_GetCurrentPolicyValue
+         48   2D 00006D00 EnterprisePolicyManagerStore_GetEnrollmentState
+         49   2E 00002EA0 EnterprisePolicyManagerStore_GetIntPolicyValue
+         50   2F 0000D7C0 EnterprisePolicyManagerStore_GetPolicyDoNotAllowFromMetadata
+         51   30 0000D8E0 EnterprisePolicyManagerStore_GetPolicyLowHighRangeFromMetadata
+         52   31 0000DB00 EnterprisePolicyManagerStore_GetPolicyTypeFromMetadata
+         53   32 0000DB20 EnterprisePolicyManagerStore_GetProviderContextSidAreaPolicyValue
+         54   33 0002D710 EnterprisePolicyManagerStore_GetSnapshotOfPolicyValue
+         55   34 00002A60 EnterprisePolicyManagerStore_GetStringPolicyValue
+         56   35 00015890 EnterprisePolicyManagerStore_GetTrueArea
+         57   36 00043CD0 EnterprisePolicyManagerStore_IngestAdmxTextBlob
+         58   37 0000DE60 EnterprisePolicyManagerStore_IsADMXIngestionAllowed
+         59   38 0000DFE0 EnterprisePolicyManagerStore_IsAreaPolicySLAPIAllowed
+         60   39 0000E190 EnterprisePolicyManagerStore_IsAreaPolicySLAPIAllowedGivenSLAPIPolicyString
+         61   3A 0002D7A0 EnterprisePolicyManagerStore_IsPolicySetByMobileDeviceManager
+         62   3B 000158E0 EnterprisePolicyManagerStore_IsURISetByProvider
+         63   3C 0000E2B0 EnterprisePolicyManagerStore_IsValidArea
+         64   3D 0000E360 EnterprisePolicyManagerStore_IsValidPolicy
+         65   3E 00013080 EnterprisePolicyManagerStore_PerformEvaluatorMerge
+         66   3F 0002D7F0 EnterprisePolicyManagerStore_PublishAnyDelayedWnfs
+         67   40 0002DC70 EnterprisePolicyManagerStore_PublishPolicyWNFCache
+         68   41 000034A0 EnterprisePolicyManagerStore_ReadPolicyMetadata
+         69   42 00015AB0 EnterprisePolicyManagerStore_RefreshAll
+         70   43 00013130 EnterprisePolicyManagerStore_SetEnrollmentDormantState
+         71   44 0000E410 EnterprisePolicyManagerStore_SetProviderContextSidAreaPolicyValue
+         72   45 000095C0 MDMWinsOverGP_IsGPPolicySetByMDM
+         73   46 00009870 MDMWinsOverGP_IsGPPolicySetByMDMEx
+         74   47 00005520 PolicyManager_FreeBinaryValue
+         75   48 000054C0 PolicyManager_FreeGetPolicyData
+         76   49 00005520 PolicyManager_FreeStringValue
+         77   4A 0000A090 PolicyManager_FreeStringValues
+         78   4B 0000A100 PolicyManager_GetAboveLockPolicy_AllowActionCenterNotifications
+         79   4C 0000A120 PolicyManager_GetAccountsPolicy_AllowAddingNonMicrosoftAccountsManually
+         80   4D 000025D0 PolicyManager_GetAccountsPolicy_AllowMicrosoftAccountConnection
+         81   4E 0000A140 PolicyManager_GetApplicationManagementPolicy_AllowDeveloperUnlock
+         82   4F 0000A160 PolicyManager_GetApplicationManagementPolicy_AllowStore
+         83   50 0000A180 PolicyManager_GetApplicationManagementPolicy_ApplicationRestrictions
+         84   51 000025B0 PolicyManager_GetBrowserPolicy_AllowBrowser
+         85   52 0000A1A0 PolicyManager_GetCameraPolicy_AllowCamera
+         86   53 0000A1C0 PolicyManager_GetConnectivityPolicy_AllowBluetooth
+         87   54 0000A1E0 PolicyManager_GetConnectivityPolicy_AllowCellularDataRoaming
+         88   55 0000A200 PolicyManager_GetConnectivityPolicy_AllowNFC
+         89   56 0000A220 PolicyManager_GetConnectivityPolicy_AllowUSBConnection
+         90   57 0000A240 PolicyManager_GetConnectivityPolicy_AllowVPNOverCellular
+         91   58 0000A260 PolicyManager_GetConnectivityPolicy_AllowVPNRoamingOverCellular
+         92   59 0000A280 PolicyManager_GetDeviceLockPolicy_AllowIdleReturnWithoutPassword
+         93   5A 0000A2A0 PolicyManager_GetDeviceLockPolicy_AllowSimpleDevicePassword
+         94   5B 0000A2C0 PolicyManager_GetDeviceLockPolicy_AlphanumericDevicePasswordRequired
+         95   5C 00002550 PolicyManager_GetDeviceLockPolicy_DevicePasswordEnabled
+         96   5D 0000A2E0 PolicyManager_GetDeviceLockPolicy_DevicePasswordExpiration
+         97   5E 0000A300 PolicyManager_GetDeviceLockPolicy_DevicePasswordHistory
+         98   5F 0000A320 PolicyManager_GetDeviceLockPolicy_MaxDevicePasswordFailedAttempts
+         99   60 0000A340 PolicyManager_GetDeviceLockPolicy_MaxInactivityTimeDeviceLock
+        100   61 0000A360 PolicyManager_GetDeviceLockPolicy_MinDevicePasswordComplexCharacters
+        101   62 0000A380 PolicyManager_GetDeviceLockPolicy_MinDevicePasswordLength
+        102   63 0000A3A0 PolicyManager_GetExperiencePolicy_AllowCopyPaste
+        103   64 00002590 PolicyManager_GetExperiencePolicy_AllowCortana
+        104   65 0000A3C0 PolicyManager_GetExperiencePolicy_AllowManualMDMUnenrollment
+        105   66 0000A3E0 PolicyManager_GetExperiencePolicy_AllowSaveAsOfOfficeFiles
+        106   67 0000A400 PolicyManager_GetExperiencePolicy_AllowScreenCapture
+        107   68 0000A420 PolicyManager_GetExperiencePolicy_AllowSharingOfOfficeFiles
+        108   69 0000A460 PolicyManager_GetExperiencePolicy_AllowTaskSwitcher
+        109   6A 00002570 PolicyManager_GetExperiencePolicy_AllowVoiceRecording
+        110   6B 00003FF0 PolicyManager_GetPolicy
+        111   6C 0000A480 PolicyManager_GetPolicyBinary
+        112   6D 0000A4B0 PolicyManager_GetPolicyBinaryGivenEnrollmentId
+        113   6E 00003E60 PolicyManager_GetPolicyInt
+        114   6F 0000A4C0 PolicyManager_GetPolicyIntGivenEnrollmentId
+        115   70 00002930 PolicyManager_GetPolicyString
+        116   71 0000A4D0 PolicyManager_GetPolicyStringGivenEnrollmentId
+        117   72 0000A4E0 PolicyManager_GetPolicyStringValues
+        118   73 00002510 PolicyManager_GetSearchPolicy_AllowSearchToUseLocation
+        119   74 0000A610 PolicyManager_GetSearchPolicy_AllowStoringImagesFromVisionSearch
+        120   75 0000A630 PolicyManager_GetSearchPolicy_SafeSearchPermissions
+        121   76 0000A650 PolicyManager_GetSecurityPolicy_AllowManualRootCertificateInstallation
+        122   77 0000A670 PolicyManager_GetSecurityPolicy_RequireDeviceEncryption
+        123   78 00002530 PolicyManager_GetSystemPolicy_AllowLocation
+        124   79 0000A6C0 PolicyManager_GetSystemPolicy_AllowStorageCard
+        125   7A 0000A6E0 PolicyManager_GetSystemPolicy_AllowTelemetry
+        126   7B 0000A700 PolicyManager_GetSystemPolicy_AllowUserToResetPhone
+        127   7C 0000A720 PolicyManager_GetUpdatePolicy_PhoneUpdateRestrictions
+        128   7D 0000A740 PolicyManager_GetWiFiPolicy_AllowAutoConnectToWiFiSenseHotspots
+        129   7E 0000A760 PolicyManager_GetWiFiPolicy_AllowInternetSharing
+        130   7F 0000A780 PolicyManager_GetWiFiPolicy_AllowManualWiFiConfiguration
+        131   80 0000A7A0 PolicyManager_GetWiFiPolicy_AllowWiFi
+        132   81 000047F0 PolicyManager_IsPolicySetByMobileDeviceManager
+        133   82 0000A7C0 PolicyManager_PublishPolicyWNFCache
+          2      0000A440 [NONAME]
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        4000 .pdata
+       1C000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       5A000 .text

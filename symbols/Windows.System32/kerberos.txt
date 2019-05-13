@@ -1,0 +1,40 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\kerberos.dll
+
+File Type: DLL
+
+  Section contains the following exports for Kerberos.dll
+
+    00000000 characteristics
+    AD1BD27E time date stamp
+        0.00 version
+           1 ordinal base
+          32 number of functions
+          11 number of names
+
+    ordinal hint RVA      name
+
+          5    0 000165E0 DllMain
+          6    1 00063250 KerbCreateTokenFromTicketForKdc
+          2    2 0005A1A0 KerbDomainChangeCallback
+          7    3 000407D0 KerbIsInitialized
+          8    4 000407E0 KerbKdcCallBack
+          9    5 00058930 KerbMakeKdcCall
+         10    6 00005710 Kerberos
+          1    7 0000F450 SpInitialize
+         32    8 00012E00 SpInstanceInit
+          3    9 0000E2F0 SpLsaModeInitialize
+          4    A 00012C90 SpUserModeInitialize
+
+  Summary
+
+        A000 .data
+        1000 .didat
+        7000 .pdata
+       1D000 .rdata
+        1000 .reloc
+        6000 .rsrc
+       CA000 .text

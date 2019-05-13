@@ -1,0 +1,45 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\sti_ci.dll
+
+File Type: DLL
+
+  Section contains the following exports for sti_ci.dll
+
+    00000000 characteristics
+     45E38BE time date stamp
+        0.00 version
+           1 ordinal base
+          17 number of functions
+          17 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00005940 AddDevice
+         16    1 00008CC0 ClassInstall
+         17    2 00009F60 CoinstallerEntry
+          2    3 00011060 CreateWiaDeviceList
+          3    4 00011530 DestroyWiaDeviceList
+          4    5 00011CF0 DisableWiaDevice
+          5    6 00011B90 EnableWiaDevice
+          6    7 000116E0 GetWiaDeviceProperty
+          7    8 000103C0 InstallWiaDevice
+          8    9 000063C0 InstallWiaService
+          9    A 00011980 SetWiaDeviceProperty
+         10    B 00010E00 UninstallWiaDevice
+         11    C 000057A0 WiaAddDevice
+         12    D 00001040 WiaCreatePortList
+         13    E 000068E0 WiaDestroyPortList
+         14    F 00006720 WiaDeviceEnum
+         15   10 00005880 WiaRemoveDevice
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        8000 .rdata
+        1000 .reloc
+       11000 .rsrc
+       15000 .text

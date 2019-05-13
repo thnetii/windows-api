@@ -1,0 +1,72 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\ktmw32.dll
+
+File Type: DLL
+
+  Section contains the following exports for ktmw32.dll
+
+    00000000 characteristics
+    863137BF time date stamp
+        0.00 version
+           1 ordinal base
+          44 number of functions
+          44 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001890 CommitComplete
+          2    1 00001280 CommitEnlistment
+          3    2 00001300 CommitTransaction
+          4    3 00001340 CommitTransactionAsync
+          5    4 00002180 CreateEnlistment
+          6    5 00001E70 CreateResourceManager
+          7    6 00001150 CreateTransaction
+          8    7 00001950 CreateTransactionManager
+          9    8 00001D50 GetCurrentClockTransactionManager
+         10    9 000023B0 GetEnlistmentId
+         11    A 00002330 GetEnlistmentRecoveryInformation
+         12    B 00002040 GetNotificationResourceManager
+         13    C 000020C0 GetNotificationResourceManagerAsync
+         14    D 00001400 GetTransactionId
+         15    E 00001480 GetTransactionInformation
+         16    F 00001DC0 GetTransactionManagerId
+         17   10 00002260 OpenEnlistment
+         18   11 00001F70 OpenResourceManager
+         19   12 00001180 OpenTransaction
+         20   13 00001AA0 OpenTransactionManager
+         21   14 00001B90 OpenTransactionManagerById
+         22   15 000017D0 PrePrepareComplete
+         23   16 00001240 PrePrepareEnlistment
+         24   17 00001810 PrepareComplete
+         25   18 00001200 PrepareEnlistment
+         26   19 00001010 PrivCreateTransaction
+         27   1A 00001E30 PrivIsLogWritableTransactionManager
+         28   1B 00002470 PrivPropagationComplete
+         29   1C 000024B0 PrivPropagationFailed
+         30   1D 00002430 PrivRegisterProtocolAddressInformation
+         31   1E 00001850 ReadOnlyEnlistment
+         32   1F 000022F0 RecoverEnlistment
+         33   20 00002000 RecoverResourceManager
+         34   21 00001D10 RecoverTransactionManager
+         35   22 00001C20 RenameTransactionManager
+         36   23 000018D0 RollbackComplete
+         37   24 000012C0 RollbackEnlistment
+         38   25 00001380 RollbackTransaction
+         39   26 000013C0 RollbackTransactionAsync
+         40   27 00001CD0 RollforwardTransactionManager
+         41   28 00002370 SetEnlistmentRecoveryInformation
+         42   29 00002130 SetResourceManagerCompletionPort
+         43   2A 00001620 SetTransactionInformation
+         44   2B 00001910 SinglePhaseReject
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        3000 .rsrc
+        2000 .text

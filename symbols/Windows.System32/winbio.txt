@@ -1,0 +1,102 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\winbio.dll
+
+File Type: DLL
+
+  Section contains the following exports for winbio.dll
+
+    00000000 characteristics
+    B6C98A04 time date stamp
+        0.00 version
+           1 ordinal base
+          73 number of functions
+          73 number of names
+
+    ordinal hint RVA      name
+
+          3    0 00014CA0 WinBioAcquireFocus
+          4    1 0000D960 WinBioAsyncEnumBiometricUnits
+          5    2 0000DA70 WinBioAsyncEnumDatabases
+          6    3 0000D850 WinBioAsyncEnumServiceProviders
+          7    4 0000DB80 WinBioAsyncMonitorFrameworkChanges
+          8    5 0000D570 WinBioAsyncOpenFramework
+          9    6 0000E180 WinBioAsyncOpenSession
+         10    7 0000FA20 WinBioCancel
+         11    8 00012080 WinBioCaptureSample
+         12    9 00012480 WinBioCaptureSampleWithCallback
+         13    A 0000D740 WinBioCloseFramework
+         14    B 0000E580 WinBioCloseSession
+         15    C 00013000 WinBioControlUnit
+         16    D 00013500 WinBioControlUnitPrivileged
+         17    E 00012630 WinBioDeleteTemplate
+         18    F 00014EF0 WinBioDiscardTicket
+         19   10 000103B0 WinBioEnrollAuthorize
+         20   11 000100A0 WinBioEnrollBegin
+         21   12 00010A10 WinBioEnrollCapture
+         22   13 00010D40 WinBioEnrollCaptureWithCallback
+         23   14 00010ED0 WinBioEnrollCommit
+         24   15 00011260 WinBioEnrollDiscard
+         25   16 000105A0 WinBioEnrollRevoke
+         26   17 00010740 WinBioEnrollSelect
+         27   18 0000CD60 WinBioEnumBiometricUnits
+         28   19 0000CEC0 WinBioEnumDatabases
+         29   1A 00011500 WinBioEnumEnrollments
+         30   1B 0000CBF0 WinBioEnumServiceProviders
+         31   1C 000149B0 WinBioFree
+         32   1D 00016290 WinBioGetCredentialState
+         33   1E 00016400 WinBioGetCredentialWithTicket
+         34   1F 00014BB0 WinBioGetDomainLogonSetting
+         35   20 000149D0 WinBioGetEnabledSetting
+         36   21 000146C0 WinBioGetEnrolledFactors
+         37   22 00015050 WinBioGetGestureMetadata
+         38   23 00014AC0 WinBioGetLogonSetting
+         39   24 00014EA0 WinBioGetPolicyProtectionSupport
+         40   25 00013A00 WinBioGetProperty
+         41   26 00014EE0 WinBioGetProtectionPolicy
+         42   27 0000F030 WinBioIdentify
+         43   28 0000F560 WinBioIdentifyAndReleaseTicket
+         44   29 0000F3D0 WinBioIdentifyWithCallback
+         45   2A 0000FBD0 WinBioLocateSensor
+         46   2B 0000FF10 WinBioLocateSensorWithCallback
+         47   2C 000129B0 WinBioLockUnit
+         48   2D 000146F0 WinBioLogonIdentifiedUser
+         49   2E 00011B20 WinBioMonitorPresence
+         50   2F 000153B0 WinBioNgcAuthorizeEnrollment
+         51   30 00015540 WinBioNgcCloseAuthorizationSession
+         52   31 000156A0 WinBioNgcGetAuthorizationWithTicket
+         53   32 000151E0 WinBioNgcOpenAuthorizationSession
+          1   33 0001A6C0 WinBioNotifyPasswordChange
+         54   34 0000DF00 WinBioOpenSession
+         55   35 00014340 WinBioProtectData
+         56   36 00014EE0 WinBioProtectDataWithPolicy
+         57   37 00011920 WinBioRegisterEventMonitor
+         58   38 00015F80 WinBioRegisterServiceMonitor
+         59   39 00014DA0 WinBioReleaseFocus
+         60   3A 000160F0 WinBioRemoveAllCredentials
+         61   3B 000161C0 WinBioRemoveAllDomainCredentials
+         62   3C 00015F90 WinBioRemoveCredential
+         63   3D 00015DD0 WinBioSetCredential
+         64   3E 00015F80 WinBioSetMSACredential
+         65   3F 00013EC0 WinBioSetProperty
+         66   40 00012CE0 WinBioUnlockUnit
+         67   41 00014510 WinBioUnprotectData
+         68   42 00011A90 WinBioUnregisterEventMonitor
+         69   43 00015F80 WinBioUnregisterServiceMonitor
+         70   44 0000E690 WinBioVerify
+         71   45 0000EC20 WinBioVerifyAndReleaseTicket
+         72   46 0000EA60 WinBioVerifyWithCallback
+         73   47 0000F980 WinBioWait
+          2   48 00014850 _BioLogonIdentifiedUser
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        2000 .pdata
+        C000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       1E000 .text

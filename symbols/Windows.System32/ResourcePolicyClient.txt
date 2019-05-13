@@ -1,0 +1,44 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\ResourcePolicyClient.dll
+
+File Type: DLL
+
+  Section contains the following exports for ResourcePolicyClient.dll
+
+    00000000 characteristics
+    DFD6E84B time date stamp
+        0.00 version
+           1 ordinal base
+          15 number of functions
+          15 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000020F0 CreateGameConfigStoreClient
+          2    1 000029D0 CreateResourcePolicyEngineClient
+          3    2 00002B00 CreateResourcePolicyStoreClient
+          4    3 00002090 FreeGameConfigStoreClient
+          5    4 00002360 FreeResourcePolicyStoreClient
+          6    5 00005D40 InterruptiveUIStateChanged_Subscribe
+          7    6 00005E50 InterruptiveUIStateChanged_Unsubscribe
+          8    7 00005F00 QueryApplicationInterruptiveUIState
+          9    8 00005FF0 QueryApplicationInterruptiveUIStateByPsmKey
+         10    9 000060E0 QueryPackageInterruptiveUIState
+         11    A 000061D0 ResourcePolicy_GetGlobalProcessAffinityMask
+         12    B 000061D0 ResourcePolicy_GetProcessAffinityMask
+         13    C 000061D0 ResourcePolicy_RevertProcessAffinityMask
+         14    D 000061D0 ResourcePolicy_SetGlobalProcessAffinityMask
+         15    E 000061D0 ResourcePolicy_SetProcessAffinityMask
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        6000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        8000 .text

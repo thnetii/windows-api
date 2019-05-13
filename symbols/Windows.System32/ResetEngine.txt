@@ -1,0 +1,71 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\ResetEngine.dll
+
+File Type: DLL
+
+  Section contains the following exports for ResetEngine.dll
+
+    00000000 characteristics
+    E986534D time date stamp
+        0.00 version
+           1 ordinal base
+          43 number of functions
+          43 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00003950 ResetApplyCloudPartitionLayout
+          2    1 00008C20 ResetArmBootTrigger
+          3    2 00008450 ResetCancelCleanup
+          4    3 00003DE0 ResetCancelImageDownload
+          5    4 00004CD0 ResetClearSession
+          6    5 00003400 ResetCloudEndpointAvailable
+          7    6 00003660 ResetConnectCloud
+          8    7 0000A940 ResetCreateMedia
+          9    8 00002FA0 ResetCreateSession
+         10    9 000061F0 ResetDisabledByPolicy
+         11    A 00008DD0 ResetDisarmBootTrigger
+         12    B 00003B90 ResetDownloadImage
+         13    C 0000B330 ResetEnterOOBE
+         14    D 0000B210 ResetExecCleanup
+         15    E 0000B080 ResetExecOnline
+         16    F 00007DA0 ResetExecute
+         17   10 00005140 ResetGetDataVolumes
+         18   11 00005840 ResetGetDiskSpaceRequired
+         19   12 0000AB60 ResetGetMediaSize
+         20   13 00005B70 ResetGetRestoredApps
+         21   14 00005610 ResetGetScenarioType
+         22   15 00004F00 ResetGetTelemetrySessionID
+         23   16 00007BC0 ResetLoadSession
+         24   17 00006D70 ResetNotifyAcknowledgeWarning
+         25   18 00006BD0 ResetNotifyCancel
+         26   19 00006A40 ResetNotifyConfirm
+         27   1A 000046F0 ResetPrepareSession
+         28   1B 0000AC60 ResetProvisionMedia
+         29   1C 0000AD40 ResetReleaseMedia
+         30   1D 00007940 ResetReleaseSession
+         31   1E 00007AE0 ResetResumeLog
+         32   1F 0000C4E0 ResetReturnToOldOS
+         33   20 0000C940 ResetSetTestFlag
+         34   21 00007220 ResetStageOfflineBoot
+         35   22 00008E40 ResetSubmitTelemetry
+         36   23 00006FE0 ResetSuspendSession
+         37   24 000031A0 ResetTraceClientInfo
+         38   25 00008050 ResetUndo
+         39   26 00007640 ResetUnstageOfflineBoot
+         40   27 0000B930 ResetUserLogon
+         41   28 00004020 ResetValidateScenario
+         42   29 000063D0 ResetWillSuspendProtection
+         43   2A 000088E0 ResetWipeSystem
+
+  Summary
+
+        C000 .data
+        8000 .pdata
+       ED000 .rdata
+        3000 .reloc
+        1000 .rsrc
+      130000 .text

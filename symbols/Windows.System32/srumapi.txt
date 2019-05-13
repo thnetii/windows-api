@@ -1,0 +1,44 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\srumapi.dll
+
+File Type: DLL
+
+  Section contains the following exports for SrumAPI.dll
+
+    00000000 characteristics
+    E5DA295B time date stamp
+        0.00 version
+           1 ordinal base
+          15 number of functions
+          15 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00003DE0 DllCanUnloadNow
+          2    1 00001760 DllGetClassObject
+          3    2 00003E00 DllRegisterServer
+          4    3 00003E40 DllUnregisterServer
+          5    4 000042F0 SruCreateCheckpoint
+          6    5 000043E0 SruCreateEnergyNotificationServer
+          7    6 000044C0 SruDeleteStatsByAppName
+          8    7 00001D10 SruFreeRecordSet
+          9    8 00001E40 SruQueryStats
+         10    9 000045B0 SruQueryStatsBySeqNumber
+         11    A 00001E70 SruQueryStatsEx
+         12    B 000013A0 SruRegisterRealTimeStats
+         13    C 000046D0 SruRetrieveEnergyRecord
+         14    D 000047E0 SruUnregisterRealTimeStats
+         15    E 00004890 SruUpdateStats
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        6000 .rdata
+        1000 .reloc
+        2000 .rsrc
+        7000 .text

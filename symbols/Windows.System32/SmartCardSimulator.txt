@@ -1,0 +1,43 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\SmartCardSimulator.dll
+
+File Type: DLL
+
+  Section contains the following exports for SmartCardSimulator.dll
+
+    00000000 characteristics
+    92146A99 time date stamp
+        0.00 version
+           1 ordinal base
+          15 number of functions
+          15 number of names
+
+    ordinal hint RVA      name
+
+         11    0 00024B90 DllCanUnloadNow
+         12    1 00024DC0 DllGetClassObject
+         13    2 00025000 DllRegisterServer
+         14    3 00025230 DllUnregisterServer
+         15    4 000A4380 Microsoft_WDF_UMDF_Version
+          1    5 00026ED0 VGidsSimulatorCreate
+          2    6 00027130 VGidsSimulatorDestroy
+          3    7 00027970 VGidsSimulatorReadProperties
+          4    8 00027370 VGidsSimulatorWriteProperties
+          5    9 00026090 VTransportClose
+          6    A 00025970 VTransportDeinitialize
+          7    B 00025450 VTransportInitialize
+          8    C 00025BA0 VTransportOpen
+          9    D 000267F0 VTransportReceive
+         10    E 00026310 VTransportTransmit
+
+  Summary
+
+        4000 .data
+        6000 .pdata
+       26000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       7B000 .text

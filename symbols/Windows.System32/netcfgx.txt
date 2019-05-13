@@ -1,0 +1,40 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\netcfgx.dll
+
+File Type: DLL
+
+  Section contains the following exports for netcfgx.dll
+
+    00000000 characteristics
+    886F38FD time date stamp
+        0.00 version
+           1 ordinal base
+          11 number of functions
+          11 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001630 DllCanUnloadNow
+          2    1 00001650 DllGetClassObject
+          3    2 00001480 DllRegisterServer
+          4    3 00001480 DllUnregisterServer
+          5    4 000018A0 LanaCfgFromCommandArgs
+          6    5 000018A0 NetCfgDiagFromCommandArgs
+          7    6 000018A0 NetCfgDiagRepairRegistryBindings
+          8    7 00001690 NetClassInstaller
+          9    8 000017A0 NetPropPageProvider
+         10    9 00001890 OnMachineUILanguageInit
+         11    A 00001890 OnMachineUILanguageSwitch
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        6000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        F000 .text

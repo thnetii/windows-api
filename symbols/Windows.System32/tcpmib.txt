@@ -1,0 +1,63 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\tcpmib.dll
+
+File Type: DLL
+
+  Section contains the following exports for TCPMIB.dll
+
+    00000000 characteristics
+    1FF048B7 time date stamp
+        0.00 version
+           1 ordinal base
+          35 number of functions
+          35 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001950 ??0CTcpMib@@QEAA@AEBV0@@Z
+          2    1 00002DF0 ??0CTcpMib@@QEAA@XZ
+          3    2 00001010 ??0CTcpMibABC@@QEAA@AEBV0@@Z
+          4    3 00001010 ??0CTcpMibABC@@QEAA@XZ
+          5    4 00002E30 ??1CTcpMib@@UEAA@XZ
+          6    5 00001030 ??1CTcpMibABC@@UEAA@XZ
+          7    6 00001990 ??4CTcpMib@@QEAAAEAV0@AEBV0@@Z
+          8    7 00001050 ??4CTcpMibABC@@QEAAAEAV0@AEBV0@@Z
+          9    8 00007080 ??_7CTcpMib@@6B@
+         10    9 00007010 ??_7CTcpMibABC@@6B@
+         11    A 000031D0 ?GetDeviceDescription@CTcpMib@@UEAAKPEBD0KPEAGK@Z
+         12    B 00004640 ?GetDeviceId@CTcpMib@@UEAAJPEBGKPEAGKPEAK@Z
+         13    C 00004EA0 ?GetDeviceIdFromIni@CTcpMib@@AEAAJPEBGKPEAGKPEAK@Z
+         14    D 00004D70 ?GetDeviceIdFromMib@CTcpMib@@AEAAJPEBGKPEAGKPEAK@Z
+         15    E 00004430 ?GetNextRequestId@CTcpMib@@UEAAKPEAK@Z
+         16    F 000045A0 ?GetPortList@CTcpMib@@UEAAJPEBGPEAEKPEAK@Z
+         17   10 00004990 ?GetPortListFromIni@CTcpMib@@AEAAJPEBGPEAEKPEAK@Z
+         18   11 00004710 ?GetPortListFromMib@CTcpMib@@AEAAJPEBGPEAEKPEAK@Z
+         19   12 00004100 ?GetStatusFromVBL@CTcpMib@@CAKPEAXPEAUsmiVALUE@@11@Z
+         20   13 00002E80 ?InitSnmp@CTcpMib@@UEAAKXZ
+         21   14 00002E70 ?IsValid@CTcpMib@@QEBAHXZ
+         22   15 00003830 ?MapAsynchToPortStatus@CTcpMib@@CAHKPEAU_PORT_INFO_3W@@@Z
+         23   16 00004480 ?RFC1157ToString@CTcpMib@@UEAAHPEAUSnmpVarBind@@PEAGKPEAK@Z
+         24   17 00003CF0 ?RegisterDeviceStatusCallback@CTcpMib@@UEAAKP6AKHPEBD0KKK@ZPEAPEAX@Z
+         25   18 00003930 ?RequestDeviceStatus@CTcpMib@@UEAAKPEAXKPEBG1K@Z
+         26   19 00003D40 ?SnmpCallback@CTcpMib@@CAKPEAXPEAUHWND__@@I_K_J0@Z
+         27   1A 00003510 ?SnmpGet@CTcpMib@@QEAAKPEBD0PEAUSnmpVarBindList@@@Z
+         28   1B 00003440 ?SnmpGet@CTcpMib@@UEAAKPEBD00PEAUSnmpVarBindList@@@Z
+         29   1C 00003310 ?SnmpGet@CTcpMib@@UEAAKPEBD0PEAUAsnObjectIdentifier@@PEAUSnmpVarBindList@@@Z
+         30   1D 00003740 ?SnmpGetNext@CTcpMib@@QEAAKPEBD0PEAUSnmpVarBindList@@@Z
+         31   1E 00003630 ?SnmpGetNext@CTcpMib@@UEAAKPEBD0PEAUAsnObjectIdentifier@@PEAUSnmpVarBindList@@@Z
+         32   1F 00003050 ?SupportsPortMonMib@CTcpMib@@AEAAJPEBGPEAH@Z
+         33   20 00002F10 ?SupportsPrinterMib@CTcpMib@@UEAAHPEBD0KPEAH@Z
+         34   21 00002F00 ?UnInitSnmp@CTcpMib@@UEAAXXZ
+         35   22 00002BF0 GetTcpMibPtr
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        3000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        6000 .text

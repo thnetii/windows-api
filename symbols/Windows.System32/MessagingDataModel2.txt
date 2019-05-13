@@ -1,0 +1,109 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\MessagingDataModel2.dll
+
+File Type: DLL
+
+  Section contains the following exports for MessagingDataModel2.DLL
+
+    00000000 characteristics
+    93BF6B11 time date stamp
+        0.00 version
+           1 ordinal base
+          80 number of functions
+          80 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00021C70 ?CommitAllAttachments@MessagingDeferredAttachment@@YAJPEAUISmMessage@@@Z
+          2    1 00022010 ?CommitDeferredContent@MessagingDeferredAttachment@@YAJPEAUIStream@@0@Z
+          3    2 000226C0 ?DeleteMessageAndTempFiles@MessagingDeferredAttachment@@YAJPEAUISmMessage@@@Z
+          4    3 000226D0 ?DeleteTempFiles@MessagingDeferredAttachment@@YAJPEAUISmMessage@@@Z
+          6    4 00021ED0 ?GetData@MessagingDeferredAttachment@@YAJPEAUISmAttachment@@PEAPEAUIStream@@1@Z
+          7    5 000219D0 ?GetDeferredAttachmentFilePath@MessagingDeferredAttachment@@YAJPEAUISmMessage@@KPEAHPEAV?$basic_string@GU?$char_traits@G@utl@@V?$allocator@G@2@@utl@@@Z
+         21    6 000533A0 CellMessagingHelper_CreateInstance
+         22    7 00005370 DllCanUnloadNow
+         23    8 000053A0 DllGetClassObject
+          5    9 00051980 GetActiveMmsProfile
+          8    A 00022CE0 GetDirectionalMarkerForCurrentLocale
+         24    B 00025560 GetHasInternationalCapability
+          9    C 00051B20 GetMaxAuthorizedSizeOfMMS
+         25    D 000294B0 MOCloudCorrelation_CreateInstance
+         26    E 00024580 MOCloudCorrelation_CreateInstance2
+         27    F 00024430 MessagingAsyncDeletion_CreateInstance
+         28   10 00056180 MessagingMultiSimConverter_CreateInstanceWithPhoneOM
+         29   11 000563A0 MessagingMultiSimConverter_CreateInstanceWithSimOM
+         30   12 00056420 MessagingMultiSimConverter_CreateSynchronousInstanceWithSimOM
+         10   13 00052BB0 MessagingRegistryGetDWORDFromPerSimMmsProfile
+         11   14 00052660 MessagingRegistryGetDWORDPerSim
+         12   15 00052A50 MessagingRegistryGetStringFromPerSimMmsProfile
+         13   16 00052370 MessagingRegistryGetStringPerSim
+         14   17 000527E0 MessagingRegistrySetDWORDPerSim
+         15   18 00052C60 MessagingRegistrySetDWORDToPerSimMmsProfile
+         16   19 00052540 MessagingRegistrySetStringPerSim
+         17   1A 00052B00 MessagingRegistrySetStringToPerSimMmsProfile
+         31   1B 00024CF0 Messaging_ChatTransportIdToStoreId
+         32   1C 00024E80 Messaging_CreateMessageInConversation
+         33   1D 00025070 Messaging_CreateMessageInConversationWithRecipients
+         34   1E 00025200 Messaging_CreateMessageInConversationWithRecipientsAndRemoteId
+         35   1F 00023010 Messaging_FormatPhoneNumber
+         36   20 000230C0 Messaging_FormatRecipient
+         37   21 00024690 Messaging_FormatRecipientFromAggregate
+         38   22 00023530 Messaging_FormatStringWithLeftToRightMarkers
+         39   23 00023640 Messaging_FormatStringWithLeftToRightMarkersIfPhoneNumber
+         40   24 000234A0 Messaging_GetAddressType
+         41   25 0002A680 Messaging_GetContentTypeFromFilePath
+         42   26 0002A810 Messaging_GetFileExtensionFromContentType
+         18   27 00051BD0 Messaging_GetMediaTempFilePath
+         43   28 00051BC0 Messaging_GetMediaTempFolder
+         44   29 0002A520 Messaging_GetMediaTypeFromMimeTag
+         45   2A 00022DD0 Messaging_GetMessageAttachmentText
+         46   2B 00002210 Messaging_GetMessagePreview
+         47   2C 0005C450 Messaging_GetPlatformType
+         48   2D 000236F0 Messaging_GetRecipientsPreviewWithBiDiMarkers
+         49   2E 000246D0 Messaging_GetRecipientsString
+         50   2F 00024190 Messaging_GetSmsCharacterCount
+         51   30 00002210 Messaging_GetUnFormattedMessagePreview
+         52   31 00024240 Messaging_GetValidSimId
+         53   32 000BCD10 Messaging_HasEmbeddedModem
+         54   33 00025910 Messaging_InitializeRcsSlotMessagingSettings
+         55   34 00007D30 Messaging_IsContentSupported
+         56   35 000240A0 Messaging_IsCustomAppProviderId
+         57   36 00024CA0 Messaging_IsDataRoamingRestrictionActive
+         58   37 000240C0 Messaging_IsFilterProviderId
+         59   38 00007DA0 Messaging_IsMediaType
+         60   39 000243D0 Messaging_IsMmsMessage
+         61   3A 00025810 Messaging_IsRcsEnabled
+         62   3B 00024520 Messaging_IsRcsMessage
+         63   3C 000242F0 Messaging_IsSIMMessage
+         64   3D 00024770 Messaging_IsThreadedByRemoteConversationId
+         19   3E 00051DC0 Messaging_IsUnderMediaTempFolder
+         65   3F 00024790 Messaging_IsVoiceRoamingRestrictionActive
+         66   40 000256A0 Messaging_MarkMessageAsFailed
+         67   41 0002B130 Messaging_MessagingOMStartupShutdown
+         68   42 0002AE10 Messaging_MessagingOMStartupStoreScan
+         69   43 00023AC0 Messaging_ResolveRecipientEx
+         70   44 0007BE20 Messaging_RetryDownloadCloudServiceMessage
+         71   45 000246F0 Messaging_ShowToastForRcsEndUserMessage
+         72   46 0007BDD0 Messaging_ShutdownCloudServices
+         73   47 000722B0 Messaging_ShutdownMessageMaintenance
+         74   48 00072200 Messaging_ShutdownNotification
+         20   49 00024590 Messaging_SmEntryIdToUdmObjectId
+         75   4A 0007BF60 Messaging_StartCloudServiceSync
+         76   4B 0007BD40 Messaging_StartCloudServices
+         77   4C 00072250 Messaging_StartMessageMaintenance
+         78   4D 00072180 Messaging_StartNotification
+         79   4E 000240E0 UnInitMessagingObjectModelModule
+         80   4F 0005C4D0 WwanConnectionConfiguration_CreateInstance
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        8000 .pdata
+       2C000 .rdata
+        3000 .reloc
+        1000 .rsrc
+       D5000 .text

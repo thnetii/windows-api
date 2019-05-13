@@ -1,0 +1,38 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\PinEnrollmentHelper.dll
+
+File Type: DLL
+
+  Section contains the following exports for PinEnrollmentHelper.dll
+
+    00000000 characteristics
+    39595C95 time date stamp
+        0.00 version
+           1 ordinal base
+           9 number of functions
+           9 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000039B0 DllCanUnloadNow
+          2    1 00003780 DllGetActivationFactory
+          3    2 000038F0 DllGetClassObject
+          4    3 00003A70 EnablePinForSignIn
+          5    4 00003B30 EnrollEnterpriseKey
+          6    5 00003A60 EnrollPin
+          7    6 00001310 GetProxyDllInfo
+          8    7 00003B50 IsArsoAllowedByPolicy
+          9    8 00003B40 IsEnrollmentPermittedForLocalAccountWithoutPassword
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+       16000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       10000 .text

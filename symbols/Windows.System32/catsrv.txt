@@ -1,0 +1,42 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\catsrv.dll
+
+File Type: DLL
+
+  Section contains the following exports for catsrv.dll
+
+    00000000 characteristics
+    F70F8FBD time date stamp
+        0.00 version
+           1 ordinal base
+          13 number of functions
+          13 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001600 ?CancelWriteICR@@YAJPEAPEAUIComponentRecords@@@Z
+          4    1 00001610 ?GetReadICR@@YAJHPEAPEAUIComponentRecords@@@Z
+          5    2 000015E0 ?GetWriteICR@@YAJPEAPEAUIComponentRecords@@@Z
+          7    3 00001650 ?ReleaseReadICR@@YAXPEAPEAUIComponentRecords@@@Z
+          8    4 000015F0 ?SaveWriteICR@@YAJPEAPEAUIComponentRecords@@@Z
+          2    5 000214F0 CreateComponentLibraryTS
+          9    6 00001810 DllCanUnloadNow
+         10    7 00001840 DllGetClassObject
+         11    8 00001890 DllRegisterServer
+         12    9 00001980 DllUnregisterServer
+         13    A 00001A20 GetAppImport
+          3    B 00022E70 GetCatalogCRMClerk
+          6    C 00021560 OpenComponentLibraryTS
+
+  Summary
+
+        4000 .data
+        1000 .didat
+        3000 .pdata
+       18000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       56000 .text

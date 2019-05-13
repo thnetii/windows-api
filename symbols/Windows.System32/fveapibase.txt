@@ -1,0 +1,83 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\fveapibase.dll
+
+File Type: DLL
+
+  Section contains the following exports for FVEAPIBASE.dll
+
+    00000000 characteristics
+    7DD18C1F time date stamp
+        0.00 version
+           1 ordinal base
+          54 number of functions
+          54 number of names
+
+    ordinal hint RVA      name
+
+          2    0 00001E40 FveAuthElementFromPassPhraseW
+          3    1 00001D70 FveAuthElementFromPinW
+          4    2 00001EF0 FveAuthElementFromRecoveryPasswordW
+          5    3 00002130 FveAuthElementGetKeyFileNameW
+          6    4 00001FA0 FveAuthElementReadExternalKeyW
+          7    5 00001CA0 FveAuthElementToRecoveryPasswordW
+          8    6 00002080 FveAuthElementWriteExternalKeyW
+          9    7 00003BB0 FveCanPinExceptionPolicyBeApplied
+         10    8 000018F0 FveClearUserFlags
+         11    9 00003340 FveCloseHandle
+         12    A 00003290 FveCloseVolume
+         13    B 00001410 FveCommitChanges
+         14    C 00002410 FveConversionDecrypt
+         15    D 00002420 FveConversionDecryptEx
+         16    E 00002610 FveConversionPause
+         17    F 000026F0 FveConversionResume
+         18   10 00002510 FveConversionStop
+         19   11 00002520 FveConversionStopEx
+         20   12 000014C0 FveDiscardChanges
+         21   13 00002FE0 FveEnableRawAccess
+         22   14 00001580 FveEraseDrive
+         23   15 000034B0 FveFindFirstVolume
+         24   16 000035D0 FveFindNextVolume
+         25   17 00002D90 FveGetAllowKeyExport
+         26   18 00001AD0 FveGetAuthMethodGuids
+         27   19 000019D0 FveGetAuthMethodInformation
+         28   1A 000030B0 FveGetDataSet
+         29   1B 00002CF0 FveGetFipsAllowDisabled
+         30   1C 00002880 FveGetFveMethod
+         31   1D 00002950 FveGetFveMethodEDrv
+         32   1E 00002A30 FveGetFveMethodEx
+         33   1F 00001BD0 FveGetIdentity
+         34   20 00002ED0 FveGetKeyPackage
+         35   21 00001800 FveGetStatus
+         36   22 00001700 FveGetStatusW
+         37   23 000018F0 FveGetUserFlags
+         38   24 000036C0 FveGetVolumeNameW
+         39   25 00002E50 FveIsHardwareReadyForConversion
+         40   26 00002200 FveIsRecoveryPasswordGroupValidW
+         41   27 000022B0 FveIsRecoveryPasswordValidW
+         42   28 000027D0 FveIsVolumeEncryptable
+         43   29 00001900 FveLockVolume
+         44   2A 00003400 FveNotifyVolumeAfterFormat
+         45   2B 00003980 FveOpenVolumeByHandle
+         46   2C 00003DF0 FveOpenVolumeExW
+         47   2D 00003DC0 FveOpenVolumeW
+         48   2E 00003F00 FveQuery
+         49   2F 00002360 FveRevertVolume
+         50   30 00002C10 FveSetAllowKeyExport
+         51   31 00002C00 FveSetFipsAllowDisabled
+         52   32 00002B40 FveSetFveMethod
+         53   33 000018F0 FveSetUserFlags
+         54   34 00001650 FveUpgradeVolume
+          1   35 000031A0 InternalFveIsVolumeEncrypted
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        3000 .pdata
+       13000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       44000 .text

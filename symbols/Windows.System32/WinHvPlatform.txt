@@ -1,0 +1,51 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\WinHvPlatform.dll
+
+File Type: DLL
+
+  Section contains the following exports for WinHvPlatform.dll
+
+    00000000 characteristics
+    C8808B75 time date stamp
+        0.00 version
+           1 ordinal base
+          23 number of functions
+          23 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0000BF70 WHvCancelRunVirtualProcessor
+          2    1 0000B4C0 WHvCreatePartition
+          3    2 0000BD10 WHvCreateVirtualProcessor
+          4    3 0000B630 WHvDeletePartition
+          5    4 0000BE90 WHvDeleteVirtualProcessor
+          6    5 0000B1D0 WHvGetCapability
+          7    6 0000CA10 WHvGetPartitionCounters
+          8    7 0000B6D0 WHvGetPartitionProperty
+          9    8 0000CBE0 WHvGetVirtualProcessorCounters
+         10    9 0000C2C0 WHvGetVirtualProcessorInterruptControllerState
+         11    A 0000C0A0 WHvGetVirtualProcessorRegisters
+         12    B 0000C6F0 WHvGetVirtualProcessorXsaveState
+         13    C 0000B8F0 WHvMapGpaRange
+         14    D 0000C850 WHvQueryGpaRangeDirtyBitmap
+         15    E 0000C4F0 WHvRequestInterrupt
+         16    F 0000BF10 WHvRunVirtualProcessor
+         17   10 0000B890 WHvSetPartitionProperty
+         18   11 0000C490 WHvSetVirtualProcessorInterruptControllerState
+         19   12 0000C1B0 WHvSetVirtualProcessorRegisters
+         20   13 0000C7C0 WHvSetVirtualProcessorXsaveState
+         21   14 0000B6A0 WHvSetupPartition
+         22   15 0000BB60 WHvTranslateGva
+         23   16 0000BAD0 WHvUnmapGpaRange
+
+  Summary
+
+        2000 .data
+        1000 .pdata
+        8000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       11000 .text

@@ -1,0 +1,177 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\rasapi32.dll
+
+File Type: DLL
+
+  Section contains the following exports for RASAPI32.dll
+
+    00000000 characteristics
+    E650273C time date stamp
+        0.00 version
+           1 ordinal base
+         148 number of functions
+         148 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0002CC60 DDMComputeLuid
+          2    1 0002CC70 DDMFreeDialingParam
+          3    2 0002CED0 DDMFreePhonebookContext
+          4    3 0002CF70 DDMFreeRemoteEndpoint
+          5    4 0002D060 DDMGetAddressesFromPhonebook
+          6    5 0002D2C0 DDMGetEapInfo
+          7    6 0002D760 DDMGetEapUserIdentityW
+          8    7 0002DD90 DDMGetPhoneBookContext
+          9    8 0002DFF0 DDMGetPhonebookInfo
+         10    9 0002EB50 DDMGetProtocolStartParams
+         11    A 0002ED50 DDMGetRasDialParams
+         12    B 0002EDB0 DDMGetRasDialingParams
+         13    C 0002F6A0 DDMGetTunnelEndpoints
+         14    D 0002F790 DDMRasPbkEntryCleanup
+         15    E 0002F930 DDMUpdateProtocolConfigInfoFromEntry
+         16    F 00069BB0 DwCloneEntry
+         17   10 0006A720 DwEnumEntryDetails
+         18   11 0006A820 DwEnumEntryDetailsEx
+         19   12 000764F0 DwRasUninitialize
+         20   13 00030140 GetAutoTriggerProfileInfo
+         21   14 000305F0 IsActiveAutoTriggerConnection
+         22   15 000306F0 IsActiveAutoTriggerConnectionEx
+         23   16 00099FD0 RasAutoDialSharedConnection
+         24   17 000311F0 RasAutodialAddressToNetwork
+         25   18 00031510 RasAutodialEntryToNetwork
+         26   19 00031850 RasClearConnectionStatistics
+         27   1A 00031AA0 RasClearLinkStatistics
+         28   1B 00031D60 RasCompleteDialMachineCleanup
+         29   1C 000998B0 RasConfigUserProxySettingsW
+         30   1D 00031EA0 RasConnectionNotificationA
+         31   1E 00031F90 RasConnectionNotificationW
+         32   1F 00032210 RasCreatePhonebookEntryA
+         33   20 00032210 RasCreatePhonebookEntryW
+         34   21 000328B0 RasDeleteEntryA
+         35   22 00097A20 RasDeleteEntryW
+         36   23 00032AF0 RasDeleteSubEntryA
+         37   24 00032D40 RasDeleteSubEntryW
+         38   25 00052CE0 RasDialA
+         39   26 0005A4E0 RasDialW
+         40   27 00032EA0 RasEditPhonebookEntryA
+         41   28 00032F00 RasEditPhonebookEntryW
+         42   29 00032F30 RasEnumAutodialAddressesA
+         43   2A 000332C0 RasEnumAutodialAddressesW
+         44   2B 00033A10 RasEnumConnectionsA
+         45   2C 00034220 RasEnumConnectionsW
+         46   2D 00034AD0 RasEnumDevicesA
+         47   2E 00034D90 RasEnumDevicesW
+         48   2F 000352A0 RasEnumEntriesA
+         49   30 00003170 RasEnumEntriesW
+         50   31 00035730 RasFreeEapUserIdentityA
+         51   32 000357F0 RasFreeEapUserIdentityW
+         52   33 000358B0 RasFreeEntryAdvancedProperties
+         53   34 00035970 RasGetAutoTriggerConnectStatus
+         54   35 00035BA0 RasGetAutodialAddressA
+         55   36 00035F00 RasGetAutodialAddressW
+         56   37 000368E0 RasGetAutodialEnableA
+         57   38 00036970 RasGetAutodialEnableW
+         58   39 00036CA0 RasGetAutodialParamA
+         59   3A 00036DC0 RasGetAutodialParamW
+         60   3B 00037120 RasGetConnectStatusA
+         61   3C 000373C0 RasGetConnectStatusW
+         62   3D 00037F50 RasGetConnectionErrorStringW
+         63   3E 000380E0 RasGetConnectionStatistics
+         64   3F 00038340 RasGetCountryInfoA
+         65   40 00038620 RasGetCountryInfoW
+         66   41 00038730 RasGetCredentialsA
+         67   42 00038A50 RasGetCredentialsW
+         68   43 00039050 RasGetCustomAuthDataA
+         69   44 00039280 RasGetCustomAuthDataW
+         70   45 00039540 RasGetEapUserDataA
+         71   46 00039780 RasGetEapUserDataW
+         72   47 000399E0 RasGetEapUserIdentityA
+         73   48 00039D60 RasGetEapUserIdentityW
+         74   49 0003A490 RasGetEntryAdvancedProperties
+         75   4A 0003A7F0 RasGetEntryDialParamsA
+         76   4B 0003AAE0 RasGetEntryDialParamsW
+         77   4C 0003B020 RasGetEntryHrasconnW
+         78   4D 0003B3A0 RasGetEntryPropertiesA
+         79   4E 0003BC00 RasGetEntryPropertiesW
+         80   4F 0003C110 RasGetErrorStringA
+         81   50 0003C2D0 RasGetErrorStringW
+         82   51 0003C510 RasGetHport
+         83   52 0003C880 RasGetLinkStatistics
+         84   53 0003CB00 RasGetNapStatus
+         85   54 000128E0 RasGetPCscf
+         86   55 0003CD40 RasGetPbkPath
+         87   56 0003CE40 RasGetProjectionInfoA
+         88   57 0003D350 RasGetProjectionInfoEx
+         89   58 0003DC70 RasGetProjectionInfoW
+         90   59 0003E610 RasGetSubEntryHandleA
+         91   5A 0003E710 RasGetSubEntryHandleW
+         92   5B 0003EA40 RasGetSubEntryPropertiesA
+         93   5C 0003EFB0 RasGetSubEntryPropertiesW
+         94   5D 0003F520 RasHandleTriggerConnDisconnect
+         95   5E 0003F8A0 RasHangUpA
+         96   5F 00040510 RasHangUpW
+         97   60 000405E0 RasInvokeEapUI
+         98   61 00040760 RasIsPublicPhonebook
+         99   62 0009A0A0 RasIsSharedConnection
+        100   63 00040840 RasNQMStateEnteredNotification
+        101   64 000409A0 RasQueryRedialOnLinkFailure
+        102   65 0009A120 RasQuerySharedAutoDial
+        103   66 0009A1E0 RasQuerySharedConnection
+        104   67 00097DF0 RasRegisterEntryChangeNotification
+        105   68 00040B50 RasRenameEntryA
+        106   69 00040E50 RasRenameEntryW
+        107   6A 0001E960 RasScriptExecute
+        108   6B 0001EBF0 RasScriptGetIpAddress
+        109   6C 0001ECD0 RasScriptInit
+        110   6D 0001F3D0 RasScriptReceive
+        111   6E 0001F480 RasScriptSend
+        112   6F 0001F5C0 RasScriptTerm
+        113   70 00041580 RasSetAutoTriggerProfile
+        114   71 00041770 RasSetAutoTriggerProfileEx
+        115   72 00041980 RasSetAutodialAddressA
+        116   73 00041DA0 RasSetAutodialAddressW
+        117   74 000427E0 RasSetAutodialEnableA
+        118   75 000428F0 RasSetAutodialEnableW
+        119   76 00042C20 RasSetAutodialParamA
+        120   77 00042D40 RasSetAutodialParamW
+        121   78 00043070 RasSetCredentialsA
+        122   79 00043370 RasSetCredentialsW
+        123   7A 00043A30 RasSetCustomAuthDataA
+        124   7B 00043C30 RasSetCustomAuthDataW
+        125   7C 00043E60 RasSetEapUserDataA
+        126   7D 00043FB0 RasSetEapUserDataAEx
+        127   7E 000441D0 RasSetEapUserDataW
+        128   7F 00044320 RasSetEapUserDataWEx
+        129   80 00044660 RasSetEntryAdvancedProperties
+        130   81 00045060 RasSetEntryDialParamsA
+        131   82 000453A0 RasSetEntryDialParamsW
+        132   83 00045A20 RasSetEntryPropertiesA
+        133   84 000463A0 RasSetEntryPropertiesW
+        134   85 00046D70 RasSetOldPassword
+        135   86 00099A50 RasSetPerConnectionProxy
+        136   87 0009A230 RasSetSharedAutoDial
+        137   88 00046EF0 RasSetSubEntryPropertiesA
+        138   89 00047580 RasSetSubEntryPropertiesW
+        139   8A 0005AE70 RasTriggerConnection
+        140   8B 0005B340 RasTriggerConnectionEx
+        141   8C 0005C450 RasTriggerDisconnection
+        142   8D 0005C540 RasTriggerDisconnectionEx
+        143   8E 000983C0 RasUnregisterEntryChangeNotification
+        144   8F 000479D0 RasUpdateConnection
+        145   90 00047B60 RasValidateEntryNameA
+        146   91 00047E20 RasValidateEntryNameW
+        147   92 00048110 RasWriteSharedPbkOptions
+        148   93 00094970 UnInitializeRAS
+
+  Summary
+
+        3000 .data
+        1000 .didat
+        4000 .pdata
+       19000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       CB000 .text

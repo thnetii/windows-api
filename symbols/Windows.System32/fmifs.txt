@@ -1,0 +1,53 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\fmifs.dll
+
+File Type: DLL
+
+  Section contains the following exports for FMIFS.dll
+
+    00000000 characteristics
+     ED2FAA0 time date stamp
+        0.00 version
+           1 ordinal base
+          25 number of functions
+          25 number of names
+
+    ordinal hint RVA      name
+
+          2    0 000065D0 Chkdsk
+          3    1 00006950 ChkdskEx
+          4    2 00004390 ComputeFmMediaType
+          5    3 000063F0 DiskCopy
+          6    4 000044E0 EnableVolumeCompression
+          7    5 00004580 EnableVolumeIntegrity
+          8    6 000083B0 Extend
+          9    7 00004630 Format
+         10    8 00004BB0 FormatEx
+         11    9 000051F0 FormatEx2
+         12    A 00007830 FreeCorruptionInfo
+         13    B 00007860 GetCorruptionInfoClose
+         14    C 00005980 GetDefaultFileSystem
+          1    D 00006430 GetFirstCorruptionInfo
+         15    E 000078D0 GetNextCorruptionInfo
+         16    F 00005990 QueryAvailableFileSystemFormat
+         17   10 00007C50 QueryCorruptionState
+         18   11 00007CD0 QueryCorruptionStateByHandle
+         19   12 00005A50 QueryDeviceInformation
+         20   13 00005BD0 QueryDeviceInformationByHandle
+         21   14 00005C20 QueryFileSystemName
+         22   15 00001010 QueryIsDiskCheckScheduledForNextBoot
+         23   16 00005FB0 QueryLatestFileSystemVersion
+         24   17 00006060 QuerySupportedMedia
+         25   18 000061B0 SetLabel
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        4000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        8000 .text

@@ -1,0 +1,42 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\ddptrace.dll
+
+File Type: DLL
+
+  Section contains the following exports for DdpTrace.DLL
+
+    00000000 characteristics
+    11C5C973 time date stamp
+        0.00 version
+           1 ordinal base
+          16 number of functions
+          14 number of names
+
+    ordinal hint RVA      name
+
+         10    0 00003330 SrmGetTracingContextPerThread
+         15    1 000033B0 SrmGetTracingModuleInfo
+         11    2 000033A0 SrmGetTracingSequenceNumber
+         16    3 00003410 SrmIsDebugFlagSet
+         14    4 00004880 SrmIsKernelDebuggerAttached
+          5    5 00003180 SrmIsTracingEnabled
+          8    6 00003200 SrmIsTracingEnabledOnFunction
+          7    7 000031A0 SrmIsTracingEnabledOnModule
+          6    8 000031D0 SrmIsTracingEnabledPerThread
+          9    9 000032C0 SrmSetTracingContextPerThread
+          4    A 00003110 SrmTraceBinary
+          1    B 00003060 SrmTraceInitialize
+          3    C 000030A0 SrmTraceMessage
+          2    D 00003080 SrmTraceUninitialize
+
+  Summary
+
+        2000 .data
+        1000 .pdata
+       11000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       10000 .text

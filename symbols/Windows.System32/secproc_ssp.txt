@@ -1,0 +1,58 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\secproc_ssp.dll
+
+File Type: DLL
+
+  Section contains the following exports for sb.dll
+
+    00000000 characteristics
+    78F2B7C6 time date stamp
+        0.00 version
+           1 ordinal base
+          30 number of functions
+          30 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000011D0 SPAttest
+          2    1 000012F0 SPBindLicense
+          3    2 000014E0 SPCheckEnvironmentSecurity
+         30    3 00001460 SPCloseHandle
+          4    4 00001520 SPCommit
+          5    5 00001560 SPCreateDecryptor
+          6    6 00001670 SPCreateEnablingPrincipal
+          7    7 000017F0 SPCreateEncryptor
+          8    8 00001960 SPCreatePCE
+          9    9 000019A0 SPCreateSecurityProcessor
+         10    A 00001BB0 SPDecrypt
+         11    B 00001CE0 SPDecryptFinal
+         12    C 00001D20 SPDecryptUpdate
+         13    D 00002B40 SPEnableAndEncrypt
+         14    E 00001D60 SPEnablePublishingLicense
+         15    F 00001DE0 SPEncrypt
+         16   10 00001F00 SPEncryptFinal
+         17   11 00001F40 SPEncryptUpdate
+         18   12 000030C0 SPGetBoundRightKey
+         19   13 00001F80 SPGetCurrentTime
+         20   14 00002040 SPGetInfo
+         21   15 00002750 SPGetLicenseAttribute
+         22   16 00002650 SPGetLicenseAttributeCount
+         23   17 000024F0 SPGetLicenseObject
+         24   18 000023F0 SPGetLicenseObjectCount
+         25   19 000029B0 SPGetProcAddress
+         26   1A 00003000 SPIsActivated
+         27   1B 00002860 SPLoadLibrary
+         28   1C 000022C0 SPRegisterRevocationList
+         29   1D 000021A0 SPSign
+
+  Summary
+
+        2000 .data
+        1000 .pdata
+        5000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       16000 .text

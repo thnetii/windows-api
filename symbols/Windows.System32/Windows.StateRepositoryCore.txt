@@ -1,0 +1,58 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\Windows.StateRepositoryCore.dll
+
+File Type: DLL
+
+  Section contains the following exports for Windows.StateRepositoryCore.dll
+
+    00000000 characteristics
+    8052918C time date stamp
+        0.00 version
+           1 ordinal base
+          30 number of functions
+          30 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00004260 SRCacheContext_Close
+          2    1 000043E0 SRCacheContext_Create
+          3    2 00004520 SRCacheContext_CreateSubContext
+          4    3 00004660 SRCacheContext_Delete
+          5    4 00004DE0 SRCacheContext_DeleteField
+          6    5 00004770 SRCacheContext_DeleteIfEmpty
+          7    6 00004EA0 SRCacheContext_EnumerateData
+          8    7 00004FA0 SRCacheContext_EnumerateIndex
+          9    8 00004A20 SRCacheContext_GetField_MultiString
+         10    9 000049B0 SRCacheContext_GetField_String
+         11    A 00004860 SRCacheContext_GetField_UInt32
+         12    B 000048F0 SRCacheContext_GetField_UInt64
+         13    C 00005090 SRCacheContext_HasSubKeys
+         14    D 00004120 SRCacheContext_Open
+         15    E 000042A0 SRCacheContext_OpenSubContext
+         16    F 00004D30 SRCacheContext_SetField_MultiString
+         17   10 00004C10 SRCacheContext_SetField_String
+         18   11 00004AA0 SRCacheContext_SetField_UInt32
+         19   12 00004B50 SRCacheContext_SetField_UInt64
+         20   13 000052E0 SRCacheManager_Close
+         21   14 000055A0 SRCacheManager_DeleteContext
+         22   15 00005330 SRCacheManager_GetProperty_UInt32
+         23   16 00005450 SRCacheManager_GetProperty_UInt64
+         24   17 00005180 SRCacheManager_Open
+         25   18 000053C0 SRCacheManager_SetProperty_UInt32
+         26   19 00005510 SRCacheManager_SetProperty_UInt64
+         27   1A 00005640 SRCache_AllocStringBuffer
+         28   1B 000056B0 SRCache_DuplicateString
+         29   1C 000057B0 SRCache_Free
+         30   1D 000057C0 SRCache_GetDefaultAccountSid
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        3000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        7000 .text

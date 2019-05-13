@@ -1,0 +1,56 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\ProximityServicePal.dll
+
+File Type: DLL
+
+  Section contains the following exports for ProximityServicePAL.dll
+
+    00000000 characteristics
+    135F6A20 time date stamp
+        0.00 version
+           1 ordinal base
+          27 number of functions
+          27 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0000AA10 PAL_AllowNetworkInterface
+          2    1 00001620 PAL_BluetoothEnableDiscovery
+          3    2 00001620 PAL_BluetoothFindDeviceClose
+          4    3 00001620 PAL_BluetoothFindFirstDevice
+          5    4 0000AA30 PAL_BluetoothFindFirstRadio
+          6    5 00001620 PAL_BluetoothFindRadioClose
+          7    6 0000AA40 PAL_BluetoothOpenFirewall
+         27    7 0000C610 PAL_CoCreateInstanceInSession
+          8    8 0000AC30 PAL_ConvertAppIdToPackageName
+          9    9 0000AC40 PAL_CreateForegroundNotifier
+         10    A 0000AC50 PAL_CreateUnicastIpAddressEntry
+         11    B 0000AC60 PAL_DeleteUnicastIpAddressEntry
+         12    C 0000AC70 PAL_FWIndicateTupleInUse
+         13    D 00001580 PAL_FWResetIndicatedTupleInUse
+         14    E 0000ACE0 PAL_GetCallingApplicationInfo
+         15    F 00001460 PAL_GetConsoleSessionInfo
+         16   10 0000AFF0 PAL_HasWFDHardwareSupport
+         17   11 0000B000 PAL_IsInteractiveApplicationId
+         18   12 0000B2E0 PAL_IsMachineDomainJoined
+         19   13 0000B430 PAL_OpenProcessForQuery
+         20   14 0000B480 PAL_RegisterConnectedStandbyNotification
+         21   15 000011A0 PAL_RegisterConsoleDisplayStateNotifications
+         22   16 00001620 PAL_ServiceFreeTransientObjectSecurityAttribute
+         23   17 0000AA30 PAL_ServiceQueryTransientObjectSecurityAttribute
+         24   18 0000B5E0 PAL_UnregisterConnectedStandbyNotification
+         25   19 0000B720 PAL_UnregisterConsoleDisplayStateNotifications
+         26   1A 0000B750 PAL_VerifyCallerIsElevated
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        5000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        D000 .text

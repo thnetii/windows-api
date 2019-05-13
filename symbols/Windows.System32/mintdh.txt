@@ -1,0 +1,60 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\mintdh.dll
+
+File Type: DLL
+
+  Section contains the following exports for mintdh.dll
+
+    00000000 characteristics
+    C2965FF1 time date stamp
+        0.00 version
+           1 ordinal base
+          31 number of functions
+          31 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000012F0 DllCanUnloadNow
+          2    1 00001370 DllGetClassObject
+          3    2 00002630 TdhEnumerateManifestProviderEvents
+          4    3 00002780 TdhEnumerateProviderFieldInformation
+          5    4 00002660 TdhEnumerateProviders
+          6    5 00002860 TdhFormatProperty
+          7    6 00002230 TdhGetEventInformation
+          8    7 00002300 TdhGetEventMapInformation
+          9    8 000021E0 TdhGetManifestEventInformation
+         10    9 00002520 TdhGetProperty
+         11    A 00002430 TdhGetPropertySize
+         12    B 000027E0 TdhLoadManifest
+         13    C 000023B0 TdhQueryProviderFieldInformation
+         14    D 00002820 TdhUnloadManifest
+         15    E 0000BE20 TdhpAllocAndGetTraceEventInfoArray
+         16    F 00001F00 TdhpCacheFreeEntry
+         17   10 00001DA0 TdhpCacheLockEntry
+         18   11 00008FB0 TdhpEnumerateManifestProviders
+         19   12 00009790 TdhpEnumerateProviderFieldInfoFromManifest
+         20   13 0000C020 TdhpFillProviderEnumInfo
+         21   14 0000C310 TdhpFillProviderFieldInfo
+         22   15 0000C4B0 TdhpFillProviderFieldInfoArray
+         23   16 0000B200 TdhpGetMatchedProperty
+         24   17 000051D0 TdhpGetMatchedTraceEventInfoManifest
+         25   18 000094F0 TdhpGetProviderFieldInfoFromManifest
+         26   19 0000A6D0 TdhpGetStringSize
+         27   1A 0000B680 TdhpGetTraceEventInfoFromMofInfo
+         28   1B 00001520 TdhpHeapAlloc
+         29   1C 00003B50 TdhpLoadManifestFromBinary
+         30   1D 00009FB0 TdhpPopulateCacheWithFilterInfo
+         31   1E 0000A6C0 TdhpSetWbemExtensionBlock
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        3000 .pdata
+       11000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       36000 .text

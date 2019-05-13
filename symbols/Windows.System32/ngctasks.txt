@@ -1,0 +1,36 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\ngctasks.dll
+
+File Type: DLL
+
+  Section contains the following exports for ngctasks.dll
+
+    00000000 characteristics
+    7C909AA3 time date stamp
+        0.00 version
+           1 ordinal base
+           7 number of functions
+           7 number of names
+
+    ordinal hint RVA      name
+
+          3    0 0000B760 DllCanUnloadNow
+          4    1 0000B780 DllGetClassObject
+          5    2 0000B410 DllRegisterServer
+          6    3 0000B410 DllUnregisterServer
+          1    4 00011080 GetRetryTimeStamp
+          7    5 00010190 NgcTriggerTaskForOobe
+          2    6 00011DC0 SetAikTimeTrigger
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        2000 .pdata
+        E000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       1C000 .text

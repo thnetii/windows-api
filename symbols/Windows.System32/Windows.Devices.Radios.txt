@@ -1,0 +1,40 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\Windows.Devices.Radios.dll
+
+File Type: DLL
+
+  Section contains the following exports for Windows.Devices.Radios.dll
+
+    00000000 characteristics
+     A4D0CC4 time date stamp
+        0.00 version
+           1 ordinal base
+          12 number of functions
+          12 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00016070 DllCanUnloadNow
+          2    1 00015BF0 DllGetActivationFactory
+          3    2 00015D60 DllGetClassObject
+          4    3 00015E90 DllMain
+          5    4 00015E60 DllRegisterServer
+          6    5 00015E30 DllUnregisterServer
+          7    6 00016570 RadioDeviceCreate
+          8    7 00016650 RadioDeviceDelete
+          9    8 00016890 RadioDeviceStart
+         10    9 00016950 RadioDeviceStop
+         11    A 000178A0 StartRadioMonitor
+         12    B 00017960 StopRadioMonitor
+
+  Summary
+
+        1000 .data
+        2000 .pdata
+        E000 .rdata
+        2000 .reloc
+        1000 .rsrc
+       1C000 .text

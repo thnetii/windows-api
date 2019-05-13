@@ -1,0 +1,123 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\mf.dll
+
+File Type: DLL
+
+  Section contains the following exports for MF.dll
+
+    00000000 characteristics
+    1D3DB37D time date stamp
+        0.00 version
+           1 ordinal base
+          93 number of functions
+          93 number of names
+
+    ordinal hint RVA      name
+
+          1    0          AppendPropVariant (forwarded to MFCORE.AppendPropVariant)
+          2    1          ConvertPropVariant (forwarded to MFCORE.ConvertPropVariant)
+          3    2          CopyPropertyStore (forwarded to MFCORE.CopyPropertyStore)
+          4    3          CreateNamedPropertyStore (forwarded to MFCORE.CreateNamedPropertyStore)
+          5    4 0002AD20 DllCanUnloadNow
+          6    5 0002D490 DllGetActivationFactory
+          7    6 0002AD70 DllGetClassObject
+          8    7          ExtractPropVariant (forwarded to MFCORE.ExtractPropVariant)
+          9    8 0002ADD0 MFCreate3GPMediaSink
+         10    9 0002B030 MFCreateAC3MediaSink
+         11    A 0002B280 MFCreateADTSMediaSink
+         12    B 0002B4D0 MFCreateASFByteStreamPlugin
+         13    C 0002B500 MFCreateASFContentInfo
+         14    D 0002B520 MFCreateASFIndexer
+         15    E 0002B510 MFCreateASFIndexerByteStream
+         16    F 0002B540 MFCreateASFMediaSink
+         17   10 0002B530 MFCreateASFMediaSinkActivate
+         18   11 0002B550 MFCreateASFMultiplexer
+         19   12 0002B560 MFCreateASFProfile
+         20   13 00015BB0 MFCreateASFProfileFromPresentationDescriptor
+         21   14 0002B570 MFCreateASFSplitter
+         22   15 0002B580 MFCreateASFStreamSelector
+         23   16 0002B5A0 MFCreateASFStreamingMediaSink
+         24   17 0002B590 MFCreateASFStreamingMediaSinkActivate
+         25   18          MFCreateAggregateSource (forwarded to MFCORE.MFCreateAggregateSource)
+         26   19          MFCreateAppSourceProxy (forwarded to MFCORE.MFCreateAppSourceProxy)
+         27   1A          MFCreateAudioRenderer (forwarded to MFCORE.MFCreateAudioRenderer)
+         28   1B          MFCreateAudioRendererActivate (forwarded to MFCORE.MFCreateAudioRendererActivate)
+         29   1C 0002B5B0 MFCreateByteCacheFile
+         30   1D 0002B5C0 MFCreateCacheManager
+         31   1E 0002B5D0 MFCreateCredentialCache
+         32   1F          MFCreateDeviceSource (forwarded to MFCORE.MFCreateDeviceSource)
+         33   20          MFCreateDeviceSourceActivate (forwarded to MFCORE.MFCreateDeviceSourceActivate)
+         34   21 0002B5E0 MFCreateDrmNetNDSchemePlugin
+         35   22 0002B610 MFCreateFMPEG4MediaSink
+         36   23 0002B870 MFCreateFileBlockMap
+         37   24          MFCreateFileSchemePlugin (forwarded to MFCORE.MFCreateFileSchemePlugin)
+         38   25 0002B880 MFCreateHttpSchemePlugin
+         39   26 0002B8B0 MFCreateLPCMByteStreamPlugin
+         40   27 0002B8E0 MFCreateMP3ByteStreamPlugin
+         41   28 0002B910 MFCreateMP3MediaSink
+         42   29 0002BB50 MFCreateMPEG4MediaSink
+         43   2A          MFCreateMediaProcessor (forwarded to MFCORE.MFCreateMediaProcessor)
+         44   2B          MFCreateMediaSession (forwarded to MFCORE.MFCreateMediaSession)
+         45   2C 0002BDB0 MFCreateMuxSink
+         46   2D 0002C010 MFCreateNSCByteStreamPlugin
+         47   2E 0002C040 MFCreateNetSchemePlugin
+         48   2F          MFCreatePMPHost (forwarded to MFCORE.MFCreatePMPHost)
+         49   30          MFCreatePMPMediaSession (forwarded to MFCORE.MFCreatePMPMediaSession)
+         50   31          MFCreatePMPServer (forwarded to MFCORE.MFCreatePMPServer)
+         51   32          MFCreatePresentationClock (forwarded to MFCORE.MFCreatePresentationClock)
+         52   33 0002C070 MFCreatePresentationDescriptorFromASFProfile
+         53   34 0003F0D0 MFCreateProtectedEnvironmentAccess
+         54   35 0002C080 MFCreateProxyLocator
+         55   36 00011D40 MFCreateRemoteDesktopPlugin
+         56   37 0002C090 MFCreateSAMIByteStreamPlugin
+         57   38          MFCreateSampleCopierMFT (forwarded to MFCORE.MFCreateSampleCopierMFT)
+         58   39          MFCreateSampleGrabberSinkActivate (forwarded to MFCORE.MFCreateSampleGrabberSinkActivate)
+         59   3A 0002C0C0 MFCreateSecureHttpSchemePlugin
+         60   3B          MFCreateSequencerSegmentOffset (forwarded to MFCORE.MFCreateSequencerSegmentOffset)
+         61   3C          MFCreateSequencerSource (forwarded to MFCORE.MFCreateSequencerSource)
+         62   3D          MFCreateSequencerSourceRemoteStream (forwarded to MFCORE.MFCreateSequencerSourceRemoteStream)
+         63   3E          MFCreateSimpleTypeHandler (forwarded to MFCORE.MFCreateSimpleTypeHandler)
+         64   3F          MFCreateSoundEventSchemePlugin (forwarded to MFCORE.MFCreateSoundEventSchemePlugin)
+         65   40 0002C0F0 MFCreateSourceResolver
+         66   41          MFCreateStandardQualityManager (forwarded to MFCORE.MFCreateStandardQualityManager)
+         67   42          MFCreateTopoLoader (forwarded to MFCORE.MFCreateTopoLoader)
+         68   43          MFCreateTopology (forwarded to MFCORE.MFCreateTopology)
+         69   44          MFCreateTopologyNode (forwarded to MFCORE.MFCreateTopologyNode)
+         70   45          MFCreateTranscodeProfile (forwarded to MFTranscode.MFCreateTranscodeProfile)
+         71   46          MFCreateTranscodeSinkActivate (forwarded to MFTranscode.MFCreateTranscodeSinkActivate)
+         72   47          MFCreateTranscodeTopology (forwarded to MFTranscode.MFCreateTranscodeTopology)
+         73   48          MFCreateTranscodeTopologyFromByteStream (forwarded to MFTranscode.MFCreateTranscodeTopologyFromByteStream)
+         74   49 0002C100 MFCreateUrlmonSchemePlugin
+         75   4A 00033610 MFCreateVideoRenderer
+         76   4B 0000C410 MFCreateVideoRendererActivate
+         77   4C          MFCreateWMAEncoderActivate (forwarded to MFCORE.MFCreateWMAEncoderActivate)
+         78   4D          MFCreateWMVEncoderActivate (forwarded to MFCORE.MFCreateWMVEncoderActivate)
+         79   4E          MFEnumDeviceSources (forwarded to MFCORE.MFEnumDeviceSources)
+         80   4F 00041C20 MFGetLocalId
+         81   50          MFGetMultipleServiceProviders (forwarded to MFCORE.MFGetMultipleServiceProviders)
+         82   51          MFGetService (forwarded to MFCORE.MFGetService)
+         83   52 0002C130 MFGetSupportedMimeTypes
+         84   53 0002C140 MFGetSupportedSchemes
+         85   54 000427A0 MFGetSystemId
+         86   55          MFGetTopoNodeCurrentType (forwarded to MFCORE.MFGetTopoNodeCurrentType)
+         87   56 0003F0E0 MFLoadSignedLibrary
+         88   57 000384F0 MFRR_CreateActivate
+         89   58          MFReadSequencerSegmentOffset (forwarded to MFCORE.MFReadSequencerSegmentOffset)
+         90   59          MFRequireProtectedEnvironment (forwarded to MFCORE.MFRequireProtectedEnvironment)
+         91   5A 0002FEF0 MFShutdownObject
+         92   5B          MFTranscodeGetAudioOutputAvailableTypes (forwarded to MFTranscode.MFTranscodeGetAudioOutputAvailableTypes)
+         93   5C          MergePropertyStore (forwarded to MFCORE.MergePropertyStore)
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        4000 .pdata
+       16000 .rdata
+        1000 .reloc
+        D000 .rsrc
+       51000 .text
+        2000 ?g_Encry

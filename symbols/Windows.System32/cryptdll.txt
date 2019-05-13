@@ -1,0 +1,49 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\cryptdll.dll
+
+File Type: DLL
+
+  Section contains the following exports for cryptdll.dll
+
+    00000000 characteristics
+    1505E295 time date stamp
+        0.00 version
+           1 ordinal base
+          20 number of functions
+          20 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000012F0 CDBuildIntegrityVect
+          2    1 000012B0 CDBuildVect
+          3    2 000015F0 CDFindCommonCSystem
+          4    3 00001670 CDFindCommonCSystemWithKey
+          5    4 00001720 CDGenerateRandomBits
+          6    5 00001360 CDGetIntegrityVect
+          7    6 000015B0 CDLocateCSystem
+          8    7 00001880 CDLocateCheckSum
+          9    8 00001790 CDLocateRng
+         10    9 00001230 CDRegisterCSystem
+         11    A 00001820 CDRegisterCheckSum
+         12    B 00001750 CDRegisterRng
+         13    C 000018C0 HMACwithSHA
+         14    D 00001A90 KRBFXCF2
+         15    E          MD5Final (forwarded to NTDLL.MD5Final)
+         16    F          MD5Init (forwarded to NTDLL.MD5Init)
+         17   10          MD5Update (forwarded to NTDLL.MD5Update)
+         18   11 00001A00 PBKDF2
+         19   12 00002980 aesCTSDecryptMsg
+         20   13 000028A0 aesCTSEncryptMsg
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        1000 .pdata
+        5000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        9000 .text

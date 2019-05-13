@@ -1,0 +1,40 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\dsclient.dll
+
+File Type: DLL
+
+  Section contains the following exports for dsclient.dll
+
+    00000000 characteristics
+    DE1D7A24 time date stamp
+        0.00 version
+           1 ordinal base
+          12 number of functions
+          12 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00002B80 DSCopyFromSharedFile
+          2    1 00002C30 DSCreateSharedFileToken
+          3    2 00002D50 DSDelegateSharingToken
+          4    3 00002E00 DSFreeString
+          5    4 00002E20 DSGetSharedFileName
+          6    5 00002ED0 DSGetSharingTokenInformation
+          7    6 00002FA0 DSGetSharingTokenOwner
+          8    7 00003050 DSMoveFromSharedFile
+          9    8 00003100 DSMoveToSharedFile
+         10    9 000031B0 DSOpenSharedFile
+         11    A 00003270 DSRemoveExpiredTokens
+         12    B 00003320 DSRemoveSharingToken
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        4000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        6000 .text

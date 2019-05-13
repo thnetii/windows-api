@@ -1,0 +1,191 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\vid.dll
+
+File Type: DLL
+
+  Section contains the following exports for vid.dll
+
+    00000000 characteristics
+    93A0DDF2 time date stamp
+        0.00 version
+           1 ordinal base
+         162 number of functions
+         162 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000051A0 VidAdjustNestedTlbSize
+          2    1 00005240 VidAllocateMemoryBlockReadWriteBuffers
+          3    2 00001550 VidAssertVirtualProcessorInterrupt
+          4    3 000052E0 VidChangePartitionLifeState
+          5    4 00002F60 VidCheckForIoIntercept
+          6    5 00002860 VidClearVirtualProcessorInterrupt
+          7    6 00005400 VidCloneTemplateCreate
+          8    7 000054B0 VidCloneTemplateDestroy
+          9    8 00005520 VidCloneTemplateDestroyDetached
+         10    9 000055C0 VidCloneTemplateDetach
+         11    A 00004270 VidCloseStatisticsHandle
+         12    B 00005680 VidCreateCpuGroup
+         13    C 00005710 VidCreateDaxFileMemoryBlock
+         14    D 000058D0 VidCreateExoPartition
+         15    E 000035E0 VidCreateMemoryBlock
+         16    F 00002950 VidCreateMemoryBlockGpaRange
+         17   10 00003050 VidCreateMmioGpaRange
+         18   11 000018A0 VidCreatePartition
+         19   12 00005A30 VidCreateVaGpaRange
+         20   13 00005B70 VidDeleteCpuGroup
+         21   14 000015F0 VidDeletePartition
+         22   15 00002A70 VidDestroyGpaRange
+         23   16 00005BF0 VidDestroyGpaRangeCheckSecure
+         24   17 00003BE0 VidDestroyMemoryBlock
+         25   18 00005C10 VidDestroyMemoryBlockReadWriteBuffers
+         26   19 00001EA0 VidDllStatsGetPartitionCounters
+         27   1A 00009CD0 VidDllStatsGetSharedBuffer
+         28   1B 00001E40 VidDllStatsGetVmPerfRootInstance
+         29   1C 00005C80 VidDmBalloon
+         30   1D 00005DE0 VidDmConsolidationDisable
+         31   1E 00005E50 VidDmConsolidationEnable
+         32   1F 00005ED0 VidDmHotAdd
+         33   20 00005F80 VidDmHotAddUndo
+         34   21 00006010 VidDmMemoryBlockQueryTopology
+         35   22 00006140 VidDmSlpDisable
+         36   23 000061B0 VidDmSlpQuery
+         37   24 00006270 VidDmSlpSetup
+         38   25 000063E0 VidDmSlpWaitForDisable
+         39   26 00006450 VidDmUnBalloon
+         40   27 000065C0 VidDmWorkingSetModify
+         41   28 00006670 VidEncryptDecryptData
+         42   29 00006760 VidEpfRestore
+         43   2A 00006840 VidEpfSave
+         44   2B 00006970 VidEpfSuspendBegin
+         45   2C 000069E0 VidEpfSuspendEnd
+         46   2D 00006A50 VidExoControlGpaAccessTracking
+         47   2E 00006AE0 VidExoGetLocalInterruptControllerState
+         48   2F 00006C00 VidExoMapGpaRange
+         49   30 00006CC0 VidExoSetLocalInterruptControllerState
+         50   31 00006DE0 VidExoUnmapGpaRange
+         51   32 00006E80 VidFlushMemoryBlockMapping
+         52   33 00006F00 VidFlushMemoryBlockPageRange
+         53   34 00006F90 VidGetCpuGroupProperty
+         54   35 00007040 VidGetExoPartitionProperty
+         55   36 00007100 VidGetHvLogicalProcessorCount
+         56   37 000071A0 VidGetHvLogicalProcessorRuntime
+         57   38 00007290 VidGetHvMemoryBalance
+         58   39 00002FF0 VidGetHvPartitionId
+         59   3A 00007360 VidGetHvVpRuntime
+         60   3B 00007430 VidGetMemoryBlockProtectionBitmap
+         61   3C 000074B0 VidGetPartitionIds
+         62   3D 000021F0 VidGetPartitionProperty
+         63   3E 000074D0 VidGetProcessorTopology
+         64   3F 00002A10 VidGetRootReferenceTime
+         65   40 000075C0 VidGetRpcSession
+         66   41 000076A0 VidGetSecurityCookie
+         67   42 00003AD0 VidGetSystemInformation
+         68   43 00003860 VidGetSystemTopology
+         69   44 00001440 VidGetVirtualProcessorRunningStatus
+         70   45 000013C0 VidGetVirtualProcessorState
+         71   46 00007730 VidGetVirtualProcessorStateEx
+         72   47 000077D0 VidGetVirtualProcessorXsaveState
+         73   48 00002780 VidHandleMessageAndGetNextMessage
+         74   49 00007880 VidInitEncryptionKeys
+         75   4A 000078F0 VidInjectSyntheticMachineCheckEvent
+         76   4B 000079A0 VidInstallExoIntercept
+         77   4C 00003DF0 VidMapHvGlobalStatsPage
+         78   4D 00003360 VidMapHvLocalStatsPage
+         79   4E 00007A40 VidMapHvRootStatsPage
+         80   4F 00007AE0 VidMapMemoryBlockPageRange
+         81   50 00001110 VidMapMemoryBlockPageRangeEx
+         82   51 00007B50 VidMapVpRegisterPage
+         83   52 00007BE0 VidMarkPagePoisoned
+         84   53 00007C60 VidMemReservePagesAdd
+         85   54 00007D50 VidMemReservePagesRelease
+         86   55 00007DF0 VidMemXferConnectClose
+         87   56 00007E60 VidMemXferConnectDisable
+         88   57 00007ED0 VidMemXferConnectEnable
+         89   58 00007FC0 VidMemXferConnectOpen
+         90   59 00008040 VidMemXferSendAsync
+         91   5A 00001090 VidMessageSlotHandleAndGetNext
+         92   5B 000032D0 VidMessageSlotMap
+         93   5C 00002180 VidOpenStatisticsHandle
+         94   5D 000080C0 VidPhuBegin
+         95   5E 00008140 VidPhuCommit
+         96   5F 000081B0 VidPhuEnd
+         97   60 00008220 VidPhuFreePersistedData
+         98   61 00008290 VidPhuOpenMemoryBlockFile
+         99   62 00008350 VidPhuPersistGpaRange
+        100   63 00008400 VidPhuPersistMemoryBlock
+        101   64 000084B0 VidPrefetchDirectMapRanges
+        102   65 00008530 VidProtectMemoryBlockPages
+        103   66 000085B0 VidQueryVaGpaRangeWorkingSetInfo
+        104   67 00008630 VidReadMemoryBlockPageRange
+        105   68 00008680 VidReadWriteMemoryBlockPageRange
+        106   69 00003CA0 VidRegisterApicEoiHandler
+        107   6A 00003D70 VidRegisterCpuidHandler
+        108   6B 00003A20 VidRegisterCpuidResult
+        109   6C 000087D0 VidRegisterExceptionHandler
+        110   6D 000028D0 VidRegisterIoPortHandler
+        111   6E 00003F50 VidRegisterMsrHandler
+        112   6F 00003E80 VidRegisterTripleFaultHandler
+        113   70 00008850 VidReleaseEncryptionKeys
+        114   71 000088C0 VidReleasePages
+        115   72 00003190 VidReservePages
+        116   73 00004040 VidResetPartition
+        117   74 00008960 VidResetPoisonedPage
+        118   75 000089E0 VidRestorePartitionState
+        119   76 00008A90 VidSavePartitionState
+        120   77 00008B60 VidSchedulerAssistRestore
+        121   78 00008BE0 VidSchedulerAssistSave
+        122   79 00008C80 VidSchedulerAssistSuspend
+        123   7A 00008D00 VidSetCpuGroupProperty
+        124   7B 00008DA0 VidSetMailboxKey
+        125   7C 000036A0 VidSetMemoryBlockClientNotifications
+        126   7D 00008E50 VidSetMemoryBlockFlushAfterWrite
+        127   7E 000039B0 VidSetMemoryBlockNotificationQueue
+        128   7F 00003470 VidSetPartitionFriendlyName
+        129   80 000030E0 VidSetPartitionProperty
+        130   81 00008ED0 VidSetPeerProcess
+        131   82 00008F50 VidSetSystemInformation
+        132   83 00001010 VidSetVirtualProcessorState
+        133   84 00009050 VidSetVirtualProcessorStateEx
+        134   85 000090F0 VidSetVirtualProcessorXsaveState
+        135   86 00003EF0 VidSetupMessageQueue
+        136   87 00009220 VidSgxResetMemoryBlocks
+        137   88 00003270 VidStartVirtualProcessor
+        138   89 00009290 VidStatsMap
+        139   8A 00009350 VidStatsMapNuma
+        140   8B 00009410 VidStatsUnMap
+        141   8C 00009480 VidStatsUnMapNuma
+        142   8D 000033F0 VidStopVirtualProcessor
+        143   8E 00009500 VidSuspendApply
+        144   8F 00009580 VidSuspendClear
+        145   90 00001250 VidTranslateGvaToGpa
+        146   91 00003D10 VidTrimPartitionMemory
+        147   92 00003FB0 VidUnmapHvGlobalStatsPage
+        148   93 000037A0 VidUnmapHvLocalStatsPage
+        149   94 000095F0 VidUnmapHvRootStatsPage
+        150   95 000011E0 VidUnmapMemoryBlockPageRange
+        151   96 00009690 VidUnprotectMemoryBlockPages
+        152   97 00003C40 VidUnregisterCpuidResult
+        153   98 00002AF0 VidUnregisterHandler
+        154   99 000014A0 VidVsmCheckGpaPageVtlAccess
+        155   9A 00009710 VidVsmEnableVpVtl
+        156   9B 00009840 VidVsmGetMemoryBlockProtections
+        157   9C 00009950 VidVsmGetPartitionConfig
+        158   9D 00009A40 VidVsmQueryMemoryBlockProtections
+        159   9E 00009AF0 VidVsmQueryProtectionsDirty
+        160   9F 00009B60 VidVsmSetMemoryBlockProtections
+        161   A0 00009C10 VidVsmSetPartitionConfig
+        162   A1 00009C80 VidWriteMemoryBlockPageRange
+
+  Summary
+
+        5000 .data
+        1000 .didat
+        1000 .pdata
+        4000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        9000 .text

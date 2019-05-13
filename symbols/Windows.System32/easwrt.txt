@@ -1,0 +1,38 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\easwrt.dll
+
+File Type: DLL
+
+  Section contains the following exports for easwrt.dll
+
+    00000000 characteristics
+    8AFD4EEB time date stamp
+        0.00 version
+           1 ordinal base
+           9 number of functions
+           9 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000052D0 DllCanUnloadNow
+          2    1 00005330 DllGetActivationFactory
+          3    2 00005370 DllGetClassObject
+          4    3 000041C0 EasClientSecurityPolicyApply
+          5    4 00004260 EasClientSecurityPolicyCheckCompliance
+          6    5 00004300 EasGetClientDeviceInformation
+          7    6 00011910 EasRegisterEncryptionProvider
+          8    7 00004310 EasShowConsentDialog
+          9    8 000119A0 EasUnRegisterEncryptionProvider
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        2000 .pdata
+        F000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       19000 .text

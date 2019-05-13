@@ -1,0 +1,345 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\urlmon.dll
+
+File Type: DLL
+
+  Section contains the following exports for urlmon.dll
+
+    00000000 characteristics
+    765F2C26 time date stamp
+        0.00 version
+         100 ordinal base
+         506 number of functions
+         131 number of names
+
+    ordinal hint RVA      name
+
+        121    0 00073DD0 AsyncGetClassBits
+        122    1 000BE0A0 AsyncInstallDistributionUnit
+        123    2 000AAAE0 BindAsyncMoniker
+        124    3 000DF320 CAuthenticateHostUI_CreateInstance
+        125    4 000BEA30 CDLGetLongPathNameA
+        126    5 000BEA50 CDLGetLongPathNameW
+        127    6 001143B0 CORPolicyProvider
+        128    7 000BE130 CoGetClassObjectFromURL
+        129    8 000BE690 CoInstall
+        130    9 00003310 CoInternetCanonicalizeIUri
+        131    A 00031940 CoInternetCombineIUri
+        132    B 0002FFD0 CoInternetCombineUrl
+        133    C 0004B6A0 CoInternetCombineUrlEx
+        134    D 000F2090 CoInternetCompareUrl
+        135    E 000398D0 CoInternetCreateSecurityManager
+        136    F 0001B9A0 CoInternetCreateZoneManager
+        137   10 0010D410 CoInternetFeatureSettingsChanged
+        138   11 000AD090 CoInternetGetMobileBrowserAppCompatMode
+        139   12 000AD0F0 CoInternetGetMobileBrowserForceDesktopMode
+        140   13 0006E050 CoInternetGetProtocolFlags
+        141   14 000F2150 CoInternetGetSecurityUrl
+        142   15 00016F30 CoInternetGetSecurityUrlEx
+        143   16 0005E3E0 CoInternetGetSession
+        144   17 0001F520 CoInternetIsFeatureEnabled
+        145   18 0001F360 CoInternetIsFeatureEnabledForIUri
+        146   19 0001E530 CoInternetIsFeatureEnabledForUrl
+        147   1A 000F2580 CoInternetIsFeatureZoneElevationEnabled
+        148   1B 00063350 CoInternetParseIUri
+        149   1C 000153B0 CoInternetParseUrl
+        150   1D 00016B20 CoInternetQueryInfo
+        151   1E 000F2810 CoInternetSetFeatureEnabled
+        152   1F 000AD190 CoInternetSetMobileBrowserAppCompatMode
+        153   20 000AD1D0 CoInternetSetMobileBrowserForceDesktopMode
+        154   21 000641D0 CompareSecurityIds
+        155   22 0005DB40 CompatFlagsFromClsid
+        156   23 0005CA40 CopyBindInfo
+        157   24 0005CB30 CopyStgMedium
+        158   25 000AAB90 CreateAsyncBindCtx
+        159   26 0001A760 CreateAsyncBindCtxEx
+        160   27 0006B240 CreateFormatEnumerator
+        161   28 00064BE0 CreateIUriBuilder
+        162   29 000AAC80 CreateURLMoniker
+        163   2A 00057390 CreateURLMonikerEx
+        164   2B 0000AA00 CreateURLMonikerEx2
+        165   2C 000614E0 CreateUri
+        166   2D 000AAA50 CreateUriFromMultiByteString
+        167   2E 000AAA60 CreateUriPriv
+        168   2F 000AAAB0 CreateUriWithFragment
+        169   30 00066B50 DllCanUnloadNow
+        170   31 00064E20 DllGetClassObject
+        171   32 000AAF80 DllInstall
+        172   33 000AAF90 DllRegisterServer
+        173   34 0006E050 DllRegisterServerEx
+        174   35 000AAFA0 DllUnregisterServer
+        175   36 000BF150 Extract
+        176   37 000763B0 FaultInIEFeature
+        109   38 0001B670 FileBearsMarkOfTheWeb
+        177   39 000AB580 FindMediaType
+        178   3A 000697E0 FindMediaTypeClass
+        179   3B 0005F1A0 FindMimeFromData
+        180   3C 0010D440 GetAddSitesFileUrl
+        181   3D 0000C9C0 GetClassFileOrMime
+        182   3E 0006E050 GetClassURL
+        183   3F 000BFCC0 GetComponentIDFromCLSSPEC
+        184   40 0004DD00 GetIDNFlagsForUri
+        185   41 00067E20 GetIUriPriv
+        186   42 000AAAC0 GetIUriPriv2
+        187   43 00119E60 GetLabelsFromNamedHost
+        188   44 00105F40 GetMarkOfTheWeb
+        110   45 000AAA00 GetPortFromUrlScheme
+        117   46 000AAA10 GetPropertyFromName
+        118   47 000AAA20 GetPropertyName
+        189   48 0006E050 GetSoftwareUpdateInfo
+        190   49 000F3310 GetUrlmonThreadNotificationHwnd
+        191   4A 0001D0A0 GetZoneFromAlternateDataStreamEx
+        192   4B 000FB550 HlinkGoBack
+        193   4C 000FB620 HlinkGoForward
+        194   4D 000FB6F0 HlinkNavigateMoniker
+        195   4E 000FB770 HlinkNavigateString
+        196   4F 000FB7F0 HlinkSimpleNavigateToMoniker
+        197   50 000FBE20 HlinkSimpleNavigateToString
+        322   51 000FDA60 IECompatLogCSSFix
+        198   52 000FF410 IEGetUserPrivateNamespaceName
+        199   53 000BE730 IEInstallScope
+        200   54 000AAAD0 IntlPercentEncodeNormalize
+        201   55 00006440 IsAsyncMoniker
+        119   56 000AAA30 IsDWORDProperty
+        202   57 0010D6E0 IsIntranetAvailable
+        203   58 00067DD0 IsJITInProgress
+        204   59 000FCE50 IsLoggingEnabledA
+        205   5A 000FCF90 IsLoggingEnabledW
+        120   5B 000AAA40 IsStringProperty
+        206   5C 00066100 IsValidURL
+        207   5D 000AACA0 MkParseDisplayNameEx
+        208   5E 000DF3C0 ObtainUserAgentString
+        209   5F 000BE740 PrivateCoInstall
+        210   60 00072BB0 QueryAssociations
+        211   61 000F0AD0 QueryClsidAssociation
+        212   62 00018420 RegisterBindStatusCallback
+        213   63 00068970 RegisterFormatEnumerator
+        214   64 000AAE20 RegisterMediaTypeClass
+        215   65 00074C30 RegisterMediaTypes
+        216   66 00122580 RegisterWebPlatformPermanentSecurityManager
+        217   67 0006A400 ReleaseBindInfo
+        218   68 00067AD0 RestrictHTTP2
+        219   69 000182C0 RevokeBindStatusCallback
+        220   6A 000AAF40 RevokeFormatEnumerator
+        221   6B 000FF420 SetAccessForIEAppContainer
+        222   6C 0006E050 SetSoftwareUpdateAdvertisementState
+        223   6D 000DF500 ShouldDisplayPunycodeForUri
+        224   6E 00065910 ShouldShowIntranetWarningSecband
+        225   6F 0010D8C0 ShowTrustAlertDialog
+        226   70 000F2980 URLDownloadA
+        227   71 000FC680 URLDownloadToCacheFileA
+        228   72 00072D70 URLDownloadToCacheFileW
+        229   73 000FC800 URLDownloadToFileA
+        230   74 00010270 URLDownloadToFileW
+        231   75 000F29E0 URLDownloadW
+        232   76 000FC950 URLOpenBlockingStreamA
+        233   77 000FCA30 URLOpenBlockingStreamW
+        234   78 000FCB40 URLOpenPullStreamA
+        235   79 000FCC10 URLOpenPullStreamW
+        236   7A 000FCCE0 URLOpenStreamA
+        237   7B 000FCDB0 URLOpenStreamW
+        238   7C 0000B600 UnregisterWebPlatformPermanentSecurityManager
+        239   7D 000AB100 UrlMkBuildVersion
+        240   7E 000664C0 UrlMkGetSessionOption
+        241   7F 00061300 UrlMkSetSessionOption
+        242   80 00066DF0 UrlmonCleanupCurrentThread
+        243   81 000FCED0 WriteHitLogging
+        244   82 00106460 ZonesReInit
+        100      0010DA80 [NONAME]
+        101      00067930 [NONAME]
+        102      000FF130 [NONAME]
+        103      000FED60 [NONAME]
+        104      000FEB50 [NONAME]
+        105      000FED80 [NONAME]
+        106      000FF090 [NONAME]
+        107      000FEAD0 [NONAME]
+        108      00061960 [NONAME]
+        111      000FF240 [NONAME]
+        112      000517F0 [NONAME]
+        113      00106050 [NONAME]
+        114      000519C0 [NONAME]
+        115      000FF170 [NONAME]
+        116      000FECA0 [NONAME]
+        304      000FF370 [NONAME]
+        305      000FE6C0 [NONAME]
+        306      000FDE50 [NONAME]
+        307      000FDCD0 [NONAME]
+        308      00118FD0 [NONAME]
+        309      000FDF50 [NONAME]
+        310      000FE790 [NONAME]
+        311      000FD960 [NONAME]
+        312      000FDB80 [NONAME]
+        313      000FE1C0 [NONAME]
+        314      000FE180 [NONAME]
+        315      000FE280 [NONAME]
+        316      000FD8B0 [NONAME]
+        318      000FE4E0 [NONAME]
+        319      000FE590 [NONAME]
+        320      000FE2D0 [NONAME]
+        321      000FDB30 [NONAME]
+        323      000FE350 [NONAME]
+        324      000F3D80 [NONAME]
+        395      000FF660 [NONAME]
+        403      00067E10 [NONAME]
+        404      00067DD0 [NONAME]
+        406      00067E10 [NONAME]
+        408      00067DD0 [NONAME]
+        409      00067DD0 [NONAME]
+        410      00067DD0 [NONAME]
+        411      00067DD0 [NONAME]
+        412      00067DD0 [NONAME]
+        413      00067DD0 [NONAME]
+        414      00067DD0 [NONAME]
+        415      00067DD0 [NONAME]
+        416      00067DD0 [NONAME]
+        417      00067DD0 [NONAME]
+        421      00067DD0 [NONAME]
+        422      00067E10 [NONAME]
+        434      000FE610 [NONAME]
+        435      000FDE90 [NONAME]
+        436      000FDDF0 [NONAME]
+        437      000FDD90 [NONAME]
+        438      000FDF90 [NONAME]
+        439      000FDF10 [NONAME]
+        441      0000DAF0 [NONAME]
+        442      0004F3C0 [NONAME]
+        443      0000DF80 [NONAME]
+        444      0004C750 [NONAME]
+        445      00048DD0 [NONAME]
+        446      0005F6B0 [NONAME]
+        447      000AD120 [NONAME]
+        448      000ADFF0 [NONAME]
+        449      00025830 [NONAME]
+        450      000640C0 [NONAME]
+        451      000AD3C0 [NONAME]
+        452      000ADEC0 [NONAME]
+        453      0010D540 [NONAME]
+        454      0010D750 [NONAME]
+        455      0010E420 [NONAME]
+        456      00067DD0 [NONAME]
+        457      000AAF70 [NONAME]
+        458      000DF3B0 [NONAME]
+        460      000F15A0 [NONAME]
+        461      000F1590 [NONAME]
+        462      000F14B0 [NONAME]
+        463      000F1520 [NONAME]
+        470      0005FA50 [NONAME]
+        471      00061A00 [NONAME]
+        473      000731C0 [NONAME]
+        474      0010DB60 [NONAME]
+        475      0010DC00 [NONAME]
+        476      0010DC40 [NONAME]
+        477      0010DE50 [NONAME]
+        478      0010DCE0 [NONAME]
+        479      00072FB0 [NONAME]
+        480      0010DD90 [NONAME]
+        481      00073000 [NONAME]
+        482      0010DA90 [NONAME]
+        483      0010DAC0 [NONAME]
+        484      00068840 [NONAME]
+        485      0006AD00 [NONAME]
+        486      000683C0 [NONAME]
+        487      0011D6C0 [NONAME]
+        488      0011D790 [NONAME]
+        489      00005300 [NONAME]
+        490      000BE1A0 [NONAME]
+        491      00006690 [NONAME]
+        492      00049310 [NONAME]
+        493      00051060 [NONAME]
+        494      00051030 [NONAME]
+        495      000629B0 [NONAME]
+        496      00062880 [NONAME]
+        497      0000B6D0 [NONAME]
+        498      0004C230 [NONAME]
+        499      0006A840 [NONAME]
+        500      00067CB0 [NONAME]
+        501      0010D690 [NONAME]
+        502      0010D3D0 [NONAME]
+        503      000119B0 [NONAME]
+        504      00110AD0 [NONAME]
+        505      00011D20 [NONAME]
+        506      00111020 [NONAME]
+        507      00010E60 [NONAME]
+        508      00013090 [NONAME]
+        509      00020420 [NONAME]
+        510      000AD530 [NONAME]
+        511      00009B00 [NONAME]
+        512      000AD880 [NONAME]
+        513      00067E00 [NONAME]
+        514      00111010 [NONAME]
+        515      0011D740 [NONAME]
+        516      00067E10 [NONAME]
+        517      00011AA0 [NONAME]
+        518      00012CC0 [NONAME]
+        519      00032830 [NONAME]
+        520      00034690 [NONAME]
+        521      00032DA0 [NONAME]
+        522      00066050 [NONAME]
+        523      00051B50 [NONAME]
+        524      000AD430 [NONAME]
+        525      00110E30 [NONAME]
+        526      00111170 [NONAME]
+        527      000AD780 [NONAME]
+        528      0011CE90 [NONAME]
+        529      0004EFE0 [NONAME]
+        530      0011CD20 [NONAME]
+        531      0011D100 [NONAME]
+        532      0011CF40 [NONAME]
+        533      00005370 [NONAME]
+        534      00067E00 [NONAME]
+        535      0011D0D0 [NONAME]
+        536      000064A0 [NONAME]
+        537      000AD890 [NONAME]
+        538      00067E00 [NONAME]
+        539      0011CE50 [NONAME]
+        540      0011CF00 [NONAME]
+        543      000AD5E0 [NONAME]
+        544      0010D5A0 [NONAME]
+        545      000454C0 [NONAME]
+        546      000AD740 [NONAME]
+        547      00062D00 [NONAME]
+        548      0000DEE0 [NONAME]
+        553      00064980 [NONAME]
+        555      0000B8F0 [NONAME]
+        557      0004FDB0 [NONAME]
+        558      00100FA0 [NONAME]
+        559      00101000 [NONAME]
+        560      00065490 [NONAME]
+        561      0000C780 [NONAME]
+        562      00009940 [NONAME]
+        563      00108AA0 [NONAME]
+        564      000AD330 [NONAME]
+        565      0004EB30 [NONAME]
+        566      0006DD70 [NONAME]
+        567      0000CB90 [NONAME]
+        568      000E6240 [NONAME]
+        569      000E6300 [NONAME]
+        570      0000B7E0 [NONAME]
+        571      00062830 [NONAME]
+        572      0011C380 [NONAME]
+        573      0011C280 [NONAME]
+        574      000AD800 [NONAME]
+        575      00004F30 [NONAME]
+        576      000AD4B0 [NONAME]
+        577      00064060 [NONAME]
+        578      00064520 [NONAME]
+        580      0011D0A0 [NONAME]
+        601      000571E0 [NONAME]
+        602      000F2970 [NONAME]
+        603      0002FA30 [NONAME]
+        604      000F2800 [NONAME]
+        605      000F2080 [NONAME]
+
+  Summary
+
+        D000 .data
+        1000 .didat
+        1000 .isoapis
+        F000 .pdata
+       3E000 .rdata
+        3000 .reloc
+       52000 .rsrc
+      124000 .text

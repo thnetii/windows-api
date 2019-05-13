@@ -1,0 +1,562 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\combase.dll
+
+File Type: DLL
+
+  Section contains the following exports for combase.dll
+
+    00000000 characteristics
+    1C3DC270 time date stamp
+        0.00 version
+           1 ordinal base
+         532 number of functions
+         451 number of names
+
+    ordinal hint RVA      name
+
+         89    0 001C9830 CLIPFORMAT_UserFree
+         91    1 000D8B90 CLIPFORMAT_UserFree64
+         94    2 001C9CB0 CLIPFORMAT_UserMarshal
+        105    3 000D61F0 CLIPFORMAT_UserMarshal64
+        106    4 001C9E00 CLIPFORMAT_UserSize
+        107    5 000D69C0 CLIPFORMAT_UserSize64
+        108    6 001C9EC0 CLIPFORMAT_UserUnmarshal
+        109    7 000B0370 CLIPFORMAT_UserUnmarshal64
+        113    8 00092BB0 CLSIDFromOle1Class
+        114    9 00092A70 CLSIDFromProgID
+        115    A 00091FD0 CLSIDFromProgIDEx
+        116    B 0006F880 CLSIDFromString
+        117    C 001E9490 CStdAsyncStubBuffer2_Connect
+        118    D 000BB0E0 CStdAsyncStubBuffer2_Disconnect
+        119    E 001E94E0 CStdAsyncStubBuffer2_Release
+        131    F 000B3C20 CStdAsyncStubBuffer_AddRef
+        132   10 001E9560 CStdAsyncStubBuffer_Connect
+        144   11 000BB390 CStdAsyncStubBuffer_Disconnect
+        172   12 001E95B0 CStdAsyncStubBuffer_Invoke
+        173   13 001E96B0 CStdAsyncStubBuffer_QueryInterface
+        174   14 001E97D0 CStdAsyncStubBuffer_Release
+        175   15 0000C550 CStdStubBuffer2_Connect
+        176   16 001E9930 CStdStubBuffer2_CountRefs
+        177   17 000BB0E0 CStdStubBuffer2_Disconnect
+        178   18 000B22F0 CStdStubBuffer2_QueryInterface
+        179   19 000B3C20 CStdStubBuffer_AddRef
+        180   1A 0000C590 CStdStubBuffer_Connect
+        181   1B 001E9A10 CStdStubBuffer_CountRefs
+        182   1C 001E9A20 CStdStubBuffer_DebugServerQueryInterface
+        183   1D 00016C50 CStdStubBuffer_DebugServerRelease
+        184   1E 000BB390 CStdStubBuffer_Disconnect
+        185   1F 000ABDC0 CStdStubBuffer_Invoke
+        186   20 001E9A40 CStdStubBuffer_IsIIDSupported
+        187   21 000B2430 CStdStubBuffer_QueryInterface
+        188   22 000CD730 CleanupComl2StateInAllTls
+        189   23 000C2D70 CleanupOleStateInAllTls
+        190   24 000CD790 CleanupTlsComl2State
+        191   25 000C2DE0 CleanupTlsOleState
+        192   26 000DD150 ClearCleanupFlag
+        193   27 000B11A0 CoAddRefServerProcess
+        194   28 000D7D60 CoAllowUnmarshalerCLSID
+        195   29 0018CFB0 CoCancelCall
+        196   2A 000B68B0 CoCopyProxy
+        197   2B 000BA4A0 CoCreateErrorInfo
+        198   2C 00052D30 CoCreateFreeThreadedMarshaler
+        199   2D 0007DA50 CoCreateGuid
+        200   2E 000329F0 CoCreateInstance
+        201   2F 000BB590 CoCreateInstanceEx
+        202   30 000D5440 CoCreateInstanceFromApp
+        203   31 00191060 CoCreateObjectInContext
+        204   32 00191790 CoDeactivateObject
+        205   33 00191860 CoDecodeProxy
+        206   34 00018E60 CoDecrementMTAUsage
+        207   35 000CAA30 CoDisableCallCancellation
+        208   36 00092080 CoDisconnectContext
+        209   37 00097A40 CoDisconnectObject
+        210   38 000CBC90 CoEnableCallCancellation
+        211   39 00014720 CoFileTimeNow
+        212   3A 00093D40 CoFreeUnusedLibraries
+        213   3B 00094810 CoFreeUnusedLibrariesEx
+        214   3C 00191890 CoGetActivationState
+        215   3D 001950F0 CoGetApartmentID
+        216   3E 000A9CB0 CoGetApartmentType
+        217   3F 00099CC0 CoGetCallContext
+        218   40 001918D0 CoGetCallState
+        219   41 00012A80 CoGetCallerTID
+        220   42 0018D010 CoGetCancelObject
+        221   43 0008D970 CoGetClassObject
+        222   44 00185510 CoGetClassVersion
+        223   45 000AF090 CoGetContextToken
+        224   46 0006A090 CoGetCurrentLogicalThreadId
+        225   47 000D8950 CoGetCurrentProcess
+        226   48 00191910 CoGetDefaultContext
+        227   49 000C02F0 CoGetErrorInfo
+        228   4A 001C62C0 CoGetInstanceFromFile
+        229   4B 001C63F0 CoGetInstanceFromIStorage
+        230   4C 000C6B40 CoGetInterfaceAndReleaseStream
+        231   4D 000AEF30 CoGetMalloc
+        232   4E 000AC700 CoGetMarshalSizeMax
+        233   4F 000CFBD0 CoGetModuleArchitecture
+        234   50 001CF190 CoGetModuleType
+        235   51 000C20A0 CoGetObjectContext
+        236   52 00091B50 CoGetPSClsid
+        237   53 00191A60 CoGetProcessIdentifier
+        238   54 000444A0 CoGetStandardMarshal
+        239   55 00097400 CoGetStdMarshalEx
+        240   56 00191A80 CoGetSystemSecurityPermissions
+        241   57 0006CA70 CoGetTreatAsClass
+        242   58 00099C20 CoImpersonateClient
+        243   59 000BFFE0 CoIncrementMTAUsage
+        244   5A 0002EDB0 CoInitializeEx
+        245   5B 00098EC0 CoInitializeSecurity
+        246   5C 00185D10 CoInitializeWOW
+        247   5D 00191AA0 CoInvalidateRemoteMachineBindings
+        248   5E 00191AC0 CoIsHandlerConnected
+        249   5F 000DC980 CoLockObjectExternal
+        250   60 00185610 CoMarshalHresult
+        251   61 0008F9F0 CoMarshalInterThreadInterfaceInStream
+        252   62 00049AF0 CoMarshalInterface
+        253   63 00199010 CoPopServiceDomain
+        254   64 00199030 CoPushServiceDomain
+        255   65 0018EB40 CoQueryAuthenticationServices
+        256   66 000B39D0 CoQueryClientBlanket
+        257   67 000B67D0 CoQueryProxyBlanket
+        258   68 00191B40 CoReactivateObject
+        259   69 000DD0C0 CoRegisterActivationFilter
+        260   6A 000A18F0 CoRegisterClassObject
+        261   6B 00189610 CoRegisterConsoleHandles
+        262   6C 000C3B10 CoRegisterInitializeSpy
+        263   6D 00186800 CoRegisterMallocSpy
+        264   6E 000928F0 CoRegisterMessageFilter
+        265   6F 000AAE50 CoRegisterPSClsid
+        266   70 00094130 CoRegisterRacActivationToken
+        267   71 001C5CC0 CoRegisterSurrogate
+        268   72 00093910 CoRegisterSurrogateEx
+        269   73 0002E750 CoReleaseMarshalData
+        270   74 000B10D0 CoReleaseServerProcess
+        271   75 00094B30 CoResumeClassObjects
+        272   76 00191BF0 CoRetireServer
+        273   77 00099C70 CoRevertToSelf
+        274   78 00096E40 CoRevokeClassObject
+        275   79 001896F0 CoRevokeConsoleHandles
+        276   7A 000C5DE0 CoRevokeInitializeSpy
+        277   7B 00186930 CoRevokeMallocSpy
+        278   7C 00094160 CoRevokeRacActivationToken
+        279   7D 0018D0D0 CoSetCancelObject
+        280   7E 00081620 CoSetErrorInfo
+        281   7F 000B6BB0 CoSetProxyBlanket
+        282   80 000B0F90 CoSuspendClassObjects
+        283   81 000BF440 CoSwitchCallContext
+        284   82 000AB2D0 CoTaskMemAlloc
+        285   83 000AA800 CoTaskMemFree
+        286   84 000BCBF0 CoTaskMemRealloc
+        287   85 0018D170 CoTestCancel
+        288   86 0002EB60 CoUninitialize
+        289   87 000D9CA0 CoUnloadingWOW
+        290   88 00185660 CoUnmarshalHresult
+        291   89 0004A360 CoUnmarshalInterface
+        292   8A 001C13A0 CoVrfCheckThreadState
+        293   8B 001C1990 CoVrfGetThreadState
+        294   8C 001C1A90 CoVrfReleaseThreadState
+        295   8D 00028830 CoWaitForMultipleHandles
+        296   8E 00028790 CoWaitForMultipleObjects
+        297   8F 000BA4A0 CreateErrorInfo
+        298   90 0008FC40 CreateStreamOnHGlobal
+        299   91 000AE140 DcomChannelSetHResult
+        300   92 001A4B90 DllDebugObjectRPCHook
+        301   93 000D25C0 DllGetActivationFactory
+        302   94 00087190 DllGetClassObject
+        303   95 00186F70 EnableHookObject
+        304   96 00092A60 FreePropVariantArray
+        305   97 00092F00 FreePropVariantArrayWorker
+        306   98 000D1FB0 GetCatalogHelper
+        307   99 000C02F0 GetErrorInfo
+        308   9A 000C2E00 GetFuncDescs
+        309   9B 000C4D00 GetHGlobalFromStream
+        310   9C 00186FD0 GetHookInterface
+        311   9D 00083290 GetRestrictedErrorInfo
+        312   9E 00016C50 HACCEL_UserFree
+        313   9F 00016C50 HACCEL_UserFree64
+        314   A0 001C9860 HACCEL_UserMarshal
+        315   A1 001C9860 HACCEL_UserMarshal64
+        316   A2 001C9870 HACCEL_UserSize
+        317   A3 001C9870 HACCEL_UserSize64
+        318   A4 001C9880 HACCEL_UserUnmarshal
+        319   A5 001C9880 HACCEL_UserUnmarshal64
+        320   A6 00015E20 HBITMAP_UserFree
+        321   A7 00015E20 HBITMAP_UserFree64
+        322   A8 00014D40 HBITMAP_UserMarshal
+        323   A9 00014AB0 HBITMAP_UserMarshal64
+        324   AA 00015510 HBITMAP_UserSize
+        325   AB 000150C0 HBITMAP_UserSize64
+        326   AC 00012550 HBITMAP_UserUnmarshal
+        327   AD 00012130 HBITMAP_UserUnmarshal64
+        328   AE 00016C50 HBRUSH_UserFree
+        329   AF 00016C50 HBRUSH_UserFree64
+        330   B0 001C9860 HBRUSH_UserMarshal
+        331   B1 001C9860 HBRUSH_UserMarshal64
+        332   B2 001C9870 HBRUSH_UserSize
+        333   B3 001C9870 HBRUSH_UserSize64
+        334   B4 001C9880 HBRUSH_UserUnmarshal
+        335   B5 001C9880 HBRUSH_UserUnmarshal64
+        336   B6 001C9830 HDC_UserFree
+        337   B7 00016C50 HDC_UserFree64
+        338   B8 001C9860 HDC_UserMarshal
+        339   B9 001C9860 HDC_UserMarshal64
+        340   BA 001C9870 HDC_UserSize
+        341   BB 001C9870 HDC_UserSize64
+        342   BC 001C9880 HDC_UserUnmarshal
+        343   BD 001C9880 HDC_UserUnmarshal64
+        344   BE 0000EDC0 HGLOBAL_UserFree
+        345   BF 0000EDC0 HGLOBAL_UserFree64
+        346   C0 00011E40 HGLOBAL_UserMarshal
+        347   C1 0000E2C0 HGLOBAL_UserMarshal64
+        348   C2 00011EF0 HGLOBAL_UserSize
+        349   C3 0000E380 HGLOBAL_UserSize64
+        350   C4 00011320 HGLOBAL_UserUnmarshal
+        351   C5 0000D850 HGLOBAL_UserUnmarshal64
+        352   C6 00016C50 HICON_UserFree
+        353   C7 00016C50 HICON_UserFree64
+        354   C8 0007A8A0 HICON_UserMarshal
+        355   C9 0007A8A0 HICON_UserMarshal64
+        356   CA 0007A920 HICON_UserSize
+        357   CB 0007A920 HICON_UserSize64
+        358   CC 00078D50 HICON_UserUnmarshal
+        359   CD 00078D50 HICON_UserUnmarshal64
+        360   CE 00016C50 HMENU_UserFree
+        361   CF 00016C50 HMENU_UserFree64
+        362   D0 001C9860 HMENU_UserMarshal
+        363   D1 001C9860 HMENU_UserMarshal64
+        364   D2 001C9870 HMENU_UserSize
+        365   D3 001C9870 HMENU_UserSize64
+        366   D4 001C9880 HMENU_UserUnmarshal
+        367   D5 001C9880 HMENU_UserUnmarshal64
+        368   D6 00016C50 HMONITOR_UserFree
+        369   D7 00016C50 HMONITOR_UserFree64
+        370   D8 0007A8A0 HMONITOR_UserMarshal
+        371   D9 0007A8A0 HMONITOR_UserMarshal64
+        372   DA 0007A920 HMONITOR_UserSize
+        373   DB 0007A920 HMONITOR_UserSize64
+        374   DC 00078D50 HMONITOR_UserUnmarshal
+        375   DD 00078D50 HMONITOR_UserUnmarshal64
+        376   DE 001CA4D0 HPALETTE_UserFree
+        377   DF 001CA4D0 HPALETTE_UserFree64
+        378   E0 001CA520 HPALETTE_UserMarshal
+        379   E1 001CA610 HPALETTE_UserMarshal64
+        380   E2 001CA710 HPALETTE_UserSize
+        381   E3 001CA790 HPALETTE_UserSize64
+        382   E4 001CA810 HPALETTE_UserUnmarshal
+        383   E5 001CA890 HPALETTE_UserUnmarshal64
+         72   E6 001C9830 HRGN_UserFree
+         62   E7 00016C50 HRGN_UserFree64
+         74   E8 001C9860 HRGN_UserMarshal
+         73   E9 001C9860 HRGN_UserMarshal64
+         76   EA 001C9870 HRGN_UserSize
+         75   EB 001C9870 HRGN_UserSize64
+         78   EC 001C9880 HRGN_UserUnmarshal
+         77   ED 001C9880 HRGN_UserUnmarshal64
+        384   EE 000D3DE0 HSTRING_UserFree
+        385   EF 000B9BE0 HSTRING_UserFree64
+        386   F0 0007D720 HSTRING_UserMarshal
+        387   F1 0007D730 HSTRING_UserMarshal64
+        388   F2 000AFC60 HSTRING_UserSize
+        389   F3 000AFC20 HSTRING_UserSize64
+        390   F4 00077D10 HSTRING_UserUnmarshal
+        391   F5 000B0490 HSTRING_UserUnmarshal64
+        392   F6 00016C50 HWND_UserFree
+        393   F7 00016C50 HWND_UserFree64
+        394   F8 0007A8A0 HWND_UserMarshal
+        395   F9 0007A8A0 HWND_UserMarshal64
+        396   FA 0007A920 HWND_UserSize
+        397   FB 0007A920 HWND_UserSize64
+        398   FC 00078D50 HWND_UserUnmarshal
+        399   FD 00078D50 HWND_UserUnmarshal64
+        400   FE 00186FF0 HkOleRegisterObject
+        401   FF 0006EC00 IIDFromString
+        402  100 0017B920 InternalAppInvokeExceptionFilter
+        403  101 000BF620 InternalCAggIdRelease
+        404  102 000DCE90 InternalCAggIdSetHandler
+        405  103 0017B940 InternalCCFreeUnused
+        406  104 001C6F50 InternalCCGetClassInformationForDde
+        407  105 001C6F70 InternalCCGetClassInformationFromKey
+        408  106 001C6F90 InternalCCSetDdeServerWindow
+        409  107 00198DF0 InternalCMLSendReceive
+        410  108 000DD080 InternalCStdIdentityGetIProxyManager
+        411  109 000DD090 InternalCStdIdentityGetInternalUnk
+        412  10A 000DCFF0 InternalCStdIdentityUpdateFlags
+        413  10B 0017B950 InternalCallAsProxyExceptionFilter
+        414  10C 0017B960 InternalCallFrameExceptionFilter
+        415  10D 0017B970 InternalCallerIsAppContainer
+        416  10E 00198EE0 InternalCanMakeOutCall
+        417  10F 0017B980 InternalCoIsSurrogateProcess
+        418  110 000D7340 InternalCoRegisterDisconnectCallback
+        419  111 0017B9A0 InternalCoRegisterSurrogatedObject
+        420  112 0017B9B0 InternalCoStdMarshalObject
+        421  113 000DD0F0 InternalCoUnregisterDisconnectCallback
+        422  114 0017B9C0 InternalCompleteObjRef
+        423  115 000DCD20 InternalCreateCAggId
+        424  116 001A5630 InternalCreateIdentityHandler
+        425  117 000DD500 InternalDoATClassCreate
+        426  118 0017B9C0 InternalFillLocalOXIDInfo
+        427  119 00016C50 InternalFreeObjRef
+        428  11A 0017B9C0 InternalGetWindowPropInterface
+        429  11B 000DCEB0 InternalGetWindowPropInterface2
+        430  11C 00016840 InternalIrotEnumRunning
+        431  11D 0017B9D0 InternalIrotEnumRunning2
+        432  11E 00016840 InternalIrotGetObject
+        433  11F 00016840 InternalIrotGetObject2
+        434  120 000E26C0 InternalIrotGetObject3
+        435  121 00016840 InternalIrotGetTimeOfLastChange
+        436  122 0017B9F0 InternalIrotGetTimeOfLastChange2
+        437  123 00016840 InternalIrotIsRunning
+        438  124 0017BA10 InternalIrotIsRunning2
+        439  125 0017BA30 InternalIrotNoteChangeTime
+        440  126 000D99F0 InternalIrotRegister
+        441  127 000DCC30 InternalIrotRevoke
+        442  128 000D8BB0 InternalIsApartmentInitialized
+        443  129 000D93E0 InternalIsProcessInitialized
+        444  12A 0017B9C0 InternalMarshalObjRef
+        445  12B 0017BA50 InternalNotifyDDStartOrStop
+        446  12C 00198F00 InternalOleModalLoopBlockFn
+        447  12D 0017B9C0 InternalRegisterWindowPropInterface
+        448  12E 00094030 InternalRegisterWindowPropInterface2
+        449  12F 0017B9C0 InternalReleaseMarshalObjRef
+        450  130 000C7640 InternalRevokeWindowPropInterface
+        451  131 0017BA60 InternalSTAInvoke
+        452  132 0017B950 InternalServerExceptionFilter
+        453  133 00198F40 InternalSetAptCallCtrlOnTlsIfRequired
+        454  134 00016C50 InternalSetOleThunkWowPtr
+        455  135 0017B9C0 InternalStubInvoke
+        456  136 000D9990 InternalTlsAllocData
+        457  137 0017B9C0 InternalUnmarshalObjRef
+        458  138 000C5B40 IsErrorPropagationEnabled
+        459  139 000A5C20 NdrCStdStubBuffer2_Release
+        460  13A 000B5320 NdrCStdStubBuffer_Release
+        461  13B 000AD5E0 NdrExtStubInitialize
+        462  13C 000A6190 NdrOleDllGetClassObject
+         82  13D 000C45D0 NdrOleInitializeExtension
+         39  13E 000E4AF0 NdrProxyForwardingFunction10
+         40  13F 000E4B40 NdrProxyForwardingFunction11
+         41  140 000E4B90 NdrProxyForwardingFunction12
+         42  141 000E4BE0 NdrProxyForwardingFunction13
+         43  142 000E4C30 NdrProxyForwardingFunction14
+         44  143 000E4C80 NdrProxyForwardingFunction15
+         45  144 000E4CD0 NdrProxyForwardingFunction16
+         46  145 000E4D20 NdrProxyForwardingFunction17
+         47  146 000E4D70 NdrProxyForwardingFunction18
+         48  147 000E4DC0 NdrProxyForwardingFunction19
+         49  148 000E4E10 NdrProxyForwardingFunction20
+         50  149 000E4E60 NdrProxyForwardingFunction21
+         51  14A 000E4EB0 NdrProxyForwardingFunction22
+         52  14B 000E4F00 NdrProxyForwardingFunction23
+         53  14C 000E4F50 NdrProxyForwardingFunction24
+         54  14D 000E4FA0 NdrProxyForwardingFunction25
+         55  14E 000E4FF0 NdrProxyForwardingFunction26
+         56  14F 000E5040 NdrProxyForwardingFunction27
+         57  150 000E5090 NdrProxyForwardingFunction28
+         58  151 000E50E0 NdrProxyForwardingFunction29
+         32  152 000E48C0 NdrProxyForwardingFunction3
+         59  153 000E5130 NdrProxyForwardingFunction30
+         60  154 000E5180 NdrProxyForwardingFunction31
+         61  155 000E51D0 NdrProxyForwardingFunction32
+         33  156 000E4910 NdrProxyForwardingFunction4
+         34  157 000E4960 NdrProxyForwardingFunction5
+         35  158 000E49B0 NdrProxyForwardingFunction6
+         36  159 000E4A00 NdrProxyForwardingFunction7
+         37  15A 000E4A50 NdrProxyForwardingFunction8
+         38  15B 000E4AA0 NdrProxyForwardingFunction9
+        463  15C 000A5970 NdrpFindInterface
+          9  15D 0010C8C0 ObjectStublessClient10
+         10  15E 0010C8E0 ObjectStublessClient11
+         11  15F 0010C900 ObjectStublessClient12
+         12  160 0010C920 ObjectStublessClient13
+         13  161 0010C940 ObjectStublessClient14
+         14  162 0010C960 ObjectStublessClient15
+         15  163 0010C980 ObjectStublessClient16
+         16  164 0010C9A0 ObjectStublessClient17
+         17  165 0010C9C0 ObjectStublessClient18
+         18  166 0010C9E0 ObjectStublessClient19
+         19  167 0010CA00 ObjectStublessClient20
+         20  168 0010CA20 ObjectStublessClient21
+         21  169 0010CA40 ObjectStublessClient22
+         22  16A 0010CA60 ObjectStublessClient23
+         23  16B 0010CA80 ObjectStublessClient24
+         24  16C 0010CAA0 ObjectStublessClient25
+         25  16D 0010CAC0 ObjectStublessClient26
+         26  16E 0010CAE0 ObjectStublessClient27
+         27  16F 0010CB00 ObjectStublessClient28
+         28  170 0010CB20 ObjectStublessClient29
+          2  171 0010C7E0 ObjectStublessClient3
+         29  172 0010CB40 ObjectStublessClient30
+         30  173 0010CB60 ObjectStublessClient31
+         31  174 0010CB80 ObjectStublessClient32
+          3  175 0010C800 ObjectStublessClient4
+          4  176 0010C820 ObjectStublessClient5
+          5  177 0010C840 ObjectStublessClient6
+          6  178 0010C860 ObjectStublessClient7
+          7  179 0010C880 ObjectStublessClient8
+          8  17A 0010C8A0 ObjectStublessClient9
+        464  17B 00092CF0 ProgIDFromCLSID
+        465  17C 00092F90 PropVariantClear
+        466  17D 000AA070 PropVariantCopy
+        467  17E 000C5690 ReleaseFuncDescs
+        468  17F 000312D0 RoActivateInstance
+        469  180 001E58B0 RoCaptureErrorContext
+        470  181 000B0CA0 RoClearError
+        471  182 001E5A20 RoFailFastWithErrorContext
+         84  183 001E5530 RoFailFastWithErrorContextInternal
+         83  184 001E4FD0 RoFailFastWithErrorContextInternal2
+        472  185 001E9170 RoFreeParameterizedTypeExtra
+        473  186 00074850 RoGetActivatableClassRegistration
+        474  187 00033BD0 RoGetActivationFactory
+        475  188 00041830 RoGetAgileReference
+        476  189 00047050 RoGetApartmentIdentifier
+        477  18A 000D8800 RoGetErrorReportingFlags
+        478  18B 000D6E90 RoGetMatchingRestrictedErrorInfo
+        479  18C 0008FF40 RoGetParameterizedTypeInstanceIID
+        480  18D 00088CC0 RoGetServerActivatableClasses
+        481  18E 000CC460 RoInitialize
+        482  18F 001E5A30 RoInspectCapturedStackBackTrace
+        483  190 001E5A40 RoInspectThreadErrorInfo
+        484  191 000803A0 RoOriginateError
+        485  192 00082D80 RoOriginateErrorW
+        486  193 000D7790 RoOriginateLanguageException
+        487  194 000D9C90 RoParameterizedTypeExtraGetTypeSignature
+        488  195 00094E70 RoRegisterActivationFactories
+        489  196 000BDE80 RoRegisterForApartmentShutdown
+        490  197 001E5AF0 RoReportCapabilityCheckFailure
+        491  198 001E5B30 RoReportFailedDelegate
+        492  199 001E5DA0 RoReportUnhandledError
+        493  19A 001E7790 RoResolveRestrictedErrorInfoReference
+        494  19B 00091FA0 RoRevokeActivationFactories
+        495  19C 001E5DD0 RoSetErrorReportingFlags
+        496  19D 00083240 RoTransformError
+        497  19E 001E5E00 RoTransformErrorW
+        498  19F 000D3300 RoUninitialize
+        499  1A0 00185130 RoUnregisterForApartmentShutdown
+        500  1A1 000D9930 SetCleanupFlag
+        501  1A2 00081620 SetErrorInfo
+        502  1A3 00085320 SetRestrictedErrorInfo
+        503  1A4 0006EC50 StringFromCLSID
+        504  1A5 0006F2F0 StringFromGUID2
+        505  1A6 00091E80 StringFromIID
+        506  1A7 00189710 UpdateDCOMSettings
+         85  1A8 00189600 UpdateProcessTracing
+        507  1A9 000DC300 WdtpInterfacePointer_UserMarshal
+        508  1AA 001C99F0 WdtpInterfacePointer_UserMarshal64
+        509  1AB 000DC650 WdtpInterfacePointer_UserSize
+        510  1AC 001C9B10 WdtpInterfacePointer_UserSize64
+        511  1AD 000DC420 WdtpInterfacePointer_UserUnmarshal
+        512  1AE 001C9B80 WdtpInterfacePointer_UserUnmarshal64
+        513  1AF 000AB050 WindowsCompareStringOrdinal
+        514  1B0 00075900 WindowsConcatString
+        515  1B1 00077FD0 WindowsCreateString
+        516  1B2 00038E70 WindowsCreateStringReference
+        517  1B3 00077CA0 WindowsDeleteString
+        518  1B4 000C0460 WindowsDeleteStringBuffer
+        519  1B5 0003CFB0 WindowsDuplicateString
+        520  1B6 000B0350 WindowsGetStringLen
+        521  1B7 0007D960 WindowsGetStringRawBuffer
+        522  1B8 001E3AB0 WindowsInspectString
+        523  1B9 001E3B10 WindowsInspectString2
+        524  1BA 00074E00 WindowsIsStringEmpty
+        525  1BB 0007B650 WindowsPreallocateStringBuffer
+        526  1BC 00039220 WindowsPromoteStringBuffer
+        527  1BD 00013570 WindowsReplaceString
+        528  1BE 0007D660 WindowsStringHasEmbeddedNull
+        529  1BF 000D5250 WindowsSubstring
+        530  1C0 000B0740 WindowsSubstringWithSpecifiedLength
+        531  1C1 000C64C0 WindowsTrimStringEnd
+        532  1C2 001E3B70 WindowsTrimStringStart
+          1      00189720 [NONAME]
+         63      001E3730 [NONAME]
+         64      001E3710 [NONAME]
+         65      00014E60 [NONAME]
+         66      000BEDF0 [NONAME]
+         67      000B79D0 [NONAME]
+         68      000B0FE0 [NONAME]
+         69      000BEBC0 [NONAME]
+         70      00185C60 [NONAME]
+         71      00185EA0 [NONAME]
+         79      001FE280 [NONAME]
+         80      001F34A0 [NONAME]
+         81      001F3350 [NONAME]
+         86      00017A30 [NONAME]
+         87      00063230 [NONAME]
+         88      000179B0 [NONAME]
+         90      000C30D0 [NONAME]
+         92      0019A700 [NONAME]
+         93      000DC090 [NONAME]
+         95      00185710 [NONAME]
+         96      00191DD0 [NONAME]
+         97      00198DA0 [NONAME]
+         98      00198DD0 [NONAME]
+         99      000D9650 [NONAME]
+        100      000D9970 [NONAME]
+        101      000D3AE0 [NONAME]
+        102      000D3AB0 [NONAME]
+        103      001C1280 [NONAME]
+        104      001C0C40 [NONAME]
+        110      00017490 [NONAME]
+        111      0001B710 [NONAME]
+        112      0009E600 [NONAME]
+        120      000BDED0 [NONAME]
+        121      00185DB0 [NONAME]
+        122      000BE160 [NONAME]
+        123      00191C30 [NONAME]
+        124      00191C70 [NONAME]
+        125      00191C90 [NONAME]
+        126      00191C50 [NONAME]
+        127      00191C10 [NONAME]
+        128      0019E350 [NONAME]
+        129      0019E330 [NONAME]
+        130      0019CD30 [NONAME]
+        133      0000DBD0 [NONAME]
+        134      000D9840 [NONAME]
+        135      00185090 [NONAME]
+        136      0018EF00 [NONAME]
+        137      00191DB0 [NONAME]
+        138      00197420 [NONAME]
+        139      001A9100 [NONAME]
+        140      000D34F0 [NONAME]
+        141      0019C300 [NONAME]
+        142      0019D190 [NONAME]
+        143      001878B0 [NONAME]
+        145      001C2470 [NONAME]
+        146      001C2490 [NONAME]
+        147      000D9940 [NONAME]
+        148      00016A50 [NONAME]
+        149      001A23A0 [NONAME]
+        150      00197B80 [NONAME]
+        151      00184EB0 [NONAME]
+        152      0018D1D0 [NONAME]
+        153      0003A1F0 [NONAME]
+        154      000B62A0 [NONAME]
+        155      00197B70 [NONAME]
+        156      001A23D0 [NONAME]
+        157      000C3060 [NONAME]
+        158      001A2750 [NONAME]
+        159      00087640 [NONAME]
+        160      0000AB70 [NONAME]
+        161      001A3270 [NONAME]
+        162      001850B0 [NONAME]
+        163      001920B0 [NONAME]
+        164      001E7890 [NONAME]
+        165      000DE270 [NONAME]
+        166      000DDFB0 [NONAME]
+        167      00014CE0 [NONAME]
+        168      00014C80 [NONAME]
+        169      001F34F0 [NONAME]
+        170      001F33A0 [NONAME]
+        171      00184EE0 [NONAME]
+
+  Summary
+
+        6000 .data
+        1000 .didat
+       2A000 .pdata
+        5000 .proxy
+       C0000 .rdata
+        E000 .reloc
+       14000 .rsrc
+      213000 .text

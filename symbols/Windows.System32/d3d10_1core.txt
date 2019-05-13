@@ -1,0 +1,68 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\d3d10_1core.dll
+
+File Type: DLL
+
+  Section contains the following exports for d3d10_1core.dll
+
+    00000000 characteristics
+    36060393 time date stamp
+        0.00 version
+           1 ordinal base
+          40 number of functions
+          40 number of names
+
+    ordinal hint RVA      name
+
+         14    0 00002A70 D3D10CoreCreateDevice1
+         15    1 00002A70 D3D10CoreGetSupportedVersions
+         16    2 00002A80 D3D10CoreGetVersion
+         17    3 00002A70 D3D10CoreRegisterLayers
+          1    4 00002540 D3DKMTCloseAdapter
+         18    5 00002540 D3DKMTCreateAllocation
+         19    6 00002540 D3DKMTCreateContext
+         20    7 00002540 D3DKMTCreateDevice
+         21    8 00002540 D3DKMTCreateSynchronizationObject
+          2    9 00002540 D3DKMTDestroyAllocation
+          3    A 00002540 D3DKMTDestroyContext
+          4    B 00002540 D3DKMTDestroyDevice
+          5    C 00002540 D3DKMTDestroySynchronizationObject
+         22    D 00002540 D3DKMTEscape
+         23    E 00002540 D3DKMTGetContextSchedulingPriority
+         24    F 00002670 D3DKMTGetDeviceState
+         25   10 00002540 D3DKMTGetDisplayModeList
+         26   11 00002540 D3DKMTGetMultisampleMethodList
+         27   12 00002540 D3DKMTGetRuntimeData
+         28   13 00002540 D3DKMTGetSharedPrimaryHandle
+         29   14 00002540 D3DKMTLock
+         30   15 000026B0 D3DKMTOpenAdapterFromHdc
+         31   16 000026E0 D3DKMTOpenResource
+          6   17 00002540 D3DKMTPresent
+          7   18 00002550 D3DKMTQueryAdapterInfo
+         32   19 00002540 D3DKMTQueryAllocationResidency
+         33   1A 000026E0 D3DKMTQueryResourceInfo
+         34   1B 00002540 D3DKMTRender
+         35   1C 00002540 D3DKMTSetAllocationPriority
+         36   1D 00002540 D3DKMTSetContextSchedulingPriority
+         37   1E 00002540 D3DKMTSetDisplayMode
+          8   1F 00002540 D3DKMTSetDisplayPrivateDriverFormat
+         38   20 00002540 D3DKMTSetGammaRamp
+         39   21 00002540 D3DKMTSetVidPnSourceOwner
+          9   22 00002540 D3DKMTSignalSynchronizationObject
+         10   23 00002540 D3DKMTUnlock
+         11   24 00002540 D3DKMTWaitForSynchronizationObject
+         40   25 00002540 D3DKMTWaitForVerticalBlankEvent
+         12   26 000025F0 OpenAdapter10
+         13   27 00002630 OpenAdapter10_2
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        5000 .rsrc
+        2000 .text

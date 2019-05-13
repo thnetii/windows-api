@@ -1,0 +1,78 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\uwfcfgmgmt.dll
+
+File Type: DLL
+
+  Section contains the following exports for uwfcfgmgmt.dll
+
+    00000000 characteristics
+     6F27162 time date stamp
+        0.00 version
+           1 ordinal base
+          50 number of functions
+          50 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000115A0 UwfCfgAddFileExclusion
+          2    1 000106F0 UwfCfgAddRegExclusion
+          3    2 00010C00 UwfCfgAddVolume
+          4    3 0000F180 UwfCfgCommitFile
+          5    4 0000F290 UwfCfgCommitFileDeletion
+          6    5 0000F3E0 UwfCfgCommitRegistry
+          7    6 0000F490 UwfCfgCommitRegistryDeletion
+          8    7 00011350 UwfCfgDoesFileExclusionExist
+          9    8 00010490 UwfCfgDoesRegExclusionExist
+         10    9 00010890 UwfCfgDoesVolumeExist
+         11    A 0000EDF0 UwfCfgGetCriticalThreshold
+         12    B 00011260 UwfCfgGetDriveLetter
+         13    C 00011440 UwfCfgGetFileExclusions
+         14    D 0000FC20 UwfCfgGetFilterEnabled
+         15    E 0000FF70 UwfCfgGetHormEnabled
+         16    F 0000F6A0 UwfCfgGetOverlayFlags
+         17   10 0000EB70 UwfCfgGetOverlayInformation
+         18   11 0000F830 UwfCfgGetOverlayMaximumSize
+         19   12 0000F540 UwfCfgGetOverlayType
+         20   13 00010120 UwfCfgGetPersistDomainSecretKey
+         21   14 000102D0 UwfCfgGetPersistTSCAL
+         22   15 000105A0 UwfCfgGetRegExclusions
+         23   16 00011760 UwfCfgGetResetPersistentOverlay
+         24   17 00011890 UwfCfgGetResetPersistentOverlaySavedMode
+         25   18 0000F950 UwfCfgGetServicingModeEnabled
+         26   19 0000F0F0 UwfCfgGetShutdownPending
+         27   1A 00011090 UwfCfgGetVolumeBindByDriveLetter
+         28   1B 00010E70 UwfCfgGetVolumeProtected
+         29   1C 00010950 UwfCfgGetVolumes
+         30   1D 0000EF70 UwfCfgGetWarningThreshold
+         31   1E 00011680 UwfCfgRemoveFileExclusion
+         32   1F 000107C0 UwfCfgRemoveRegExclusion
+         33   20 00010D40 UwfCfgRemoveVolume
+         34   21 0000E9E0 UwfCfgResetSettings
+         35   22 0000EB00 UwfCfgRestartSystem
+         36   23 0000EE80 UwfCfgSetCriticalThreshold
+         37   24 0000FD00 UwfCfgSetFilterEnabled
+         38   25 00010010 UwfCfgSetHormEnabled
+         39   26 0000F740 UwfCfgSetOverlayFlags
+         40   27 0000F8E0 UwfCfgSetOverlayMaximumSize
+         41   28 0000F5E0 UwfCfgSetOverlayType
+         42   29 00010210 UwfCfgSetPersistDomainSecretKey
+         43   2A 000103D0 UwfCfgSetPersistTSCAL
+         44   2B 000117F0 UwfCfgSetResetPersistentOverlay
+         45   2C 00011950 UwfCfgSetResetPersistentOverlaySavedMode
+         46   2D 0000FA30 UwfCfgSetServicingModeEnabled
+         47   2E 00011180 UwfCfgSetVolumeBindByDriveLetter
+         48   2F 00010F60 UwfCfgSetVolumeProtected
+         49   30 0000F000 UwfCfgSetWarningThreshold
+         50   31 0000EA90 UwfCfgShutdownSystem
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        7000 .rdata
+        1000 .reloc
+       13000 .text

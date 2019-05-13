@@ -1,0 +1,63 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\tdh.dll
+
+File Type: DLL
+
+  Section contains the following exports for tdh.dll
+
+    00000000 characteristics
+    93CBE263 time date stamp
+        0.00 version
+           1 ordinal base
+          34 number of functions
+          34 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00003FE0 TdhAggregatePayloadFilters
+          2    1 0000AB40 TdhApplyPayloadFilter
+          3    2 00004030 TdhCleanupPayloadEventFilterDescriptor
+          4    3 00008C00 TdhCloseDecodingHandle
+          5    4 000040A0 TdhCreatePayloadFilter
+          6    5 000040E0 TdhDeletePayloadFilter
+          7    6          TdhEnumerateManifestProviderEvents (forwarded to mintdh.TdhEnumerateManifestProviderEvents)
+          8    7 00003E70 TdhEnumerateProviderFieldInformation
+          9    8 00004140 TdhEnumerateProviderFilters
+         10    9 00001430 TdhEnumerateProviders
+         11    A 000070D0 TdhEnumerateRemoteWBEMProviderFieldInformation
+         12    B 000071D0 TdhEnumerateRemoteWBEMProviders
+         13    C          TdhFormatProperty (forwarded to mintdh.TdhFormatProperty)
+         14    D 000041A0 TdhGetAllEventsInformation
+         15    E 00008C20 TdhGetDecodingParameter
+         16    F 000010A0 TdhGetEventInformation
+         17   10          TdhGetEventMapInformation (forwarded to mintdh.TdhGetEventMapInformation)
+         18   11          TdhGetManifestEventInformation (forwarded to mintdh.TdhGetManifestEventInformation)
+         19   12 00001120 TdhGetProperty
+         20   13 00004230 TdhGetPropertyOffsetAndSize
+         21   14 000011F0 TdhGetPropertySize
+         22   15 00008C90 TdhGetWppMessage
+         23   16 00008CC0 TdhGetWppProperty
+         24   17          TdhLoadManifest (forwarded to mintdh.TdhLoadManifest)
+         25   18 000042E0 TdhLoadManifestFromBinary
+         26   19 00008D70 TdhOpenDecodingHandle
+         27   1A 00001C40 TdhQueryProviderFieldInformation
+         28   1B 00007350 TdhQueryRemoteWBEMProviderFieldInformation
+         29   1C 00008E10 TdhSetDecodingParameter
+         30   1D          TdhUnloadManifest (forwarded to mintdh.TdhUnloadManifest)
+         31   1E 0000B400 TdhValidatePayloadFilter
+         32   1F 00007550 TdhpFindMatchClassFromWBEM
+         33   20 00007C10 TdhpGetBestTraceEventInfoWBEM
+         34   21 00007D00 TdhpGetEventMapInfoWBEM
+
+  Summary
+
+       36000 .data
+        1000 .didat
+        1000 .pdata
+       68000 .rdata
+        6000 .reloc
+        1000 .rsrc
+       1B000 .text

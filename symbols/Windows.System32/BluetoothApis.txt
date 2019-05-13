@@ -1,0 +1,128 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\BluetoothApis.dll
+
+File Type: DLL
+
+  Section contains the following exports for BluetoothApis.dll
+
+    00000000 characteristics
+    9F9CFEC8 time date stamp
+        0.00 version
+         103 ordinal base
+          98 number of functions
+          97 number of names
+
+    ordinal hint RVA      name
+
+        104    0 00009340 BluetoothAddressToString
+        105    1 000093E0 BluetoothDisconnectDevice
+        106    2 000094D0 BluetoothEnableDiscovery
+        107    3 000095A0 BluetoothEnableIncomingConnections
+        108    4 00009670 BluetoothEnumerateInstalledServices
+        109    5 00009920 BluetoothEnumerateInstalledServicesEx
+        110    6 00009C30 BluetoothEnumerateLocalServices
+        111    7 00009EA0 BluetoothFindBrowseGroupClose
+        112    8 00009EA0 BluetoothFindClassIdClose
+        113    9 00009F00 BluetoothFindDeviceClose
+        114    A 00009FC0 BluetoothFindFirstBrowseGroup
+        115    B 0000A120 BluetoothFindFirstClassId
+        116    C 0000A270 BluetoothFindFirstDevice
+        117    D 0000A500 BluetoothFindFirstProfileDescriptor
+        118    E 0000A670 BluetoothFindFirstProtocolDescriptorStack
+        119    F 0000A7D0 BluetoothFindFirstProtocolEntry
+        120   10 000011B0 BluetoothFindFirstRadio
+        121   11 0000A910 BluetoothFindFirstService
+        122   12 0000A930 BluetoothFindFirstServiceEx
+        123   13 0000A980 BluetoothFindNextBrowseGroup
+        124   14 0000AA00 BluetoothFindNextClassId
+        125   15 0000AA70 BluetoothFindNextDevice
+        126   16 0000AAB0 BluetoothFindNextProfileDescriptor
+        127   17 0000ABC0 BluetoothFindNextProtocolDescriptorStack
+        128   18 0000ACA0 BluetoothFindNextProtocolEntry
+        129   19 0000AD90 BluetoothFindNextRadio
+        130   1A 0000AF80 BluetoothFindNextService
+        131   1B 00009EA0 BluetoothFindProfileDescriptorClose
+        132   1C 0000B050 BluetoothFindProtocolDescriptorStackClose
+        133   1D 00009EA0 BluetoothFindProtocolEntryClose
+        134   1E 0000B0F0 BluetoothFindRadioClose
+        135   1F 0000B180 BluetoothFindServiceClose
+        136   20 0000F620 BluetoothGATTAbortReliableWrite
+        137   21 0000F630 BluetoothGATTBeginReliableWrite
+        138   22 0000F650 BluetoothGATTEndReliableWrite
+        139   23 0000F660 BluetoothGATTGetCharacteristicValue
+        140   24 0000F6D0 BluetoothGATTGetCharacteristics
+        141   25 0000F750 BluetoothGATTGetDescriptorValue
+        142   26 0000F7C0 BluetoothGATTGetDescriptors
+        143   27 0000F830 BluetoothGATTGetIncludedServices
+        144   28 0000F8A0 BluetoothGATTGetServices
+        145   29 0000F940 BluetoothGATTRegisterEvent
+        146   2A 0000F910 BluetoothGATTSetCharacteristicValue
+        147   2B 0000F920 BluetoothGATTSetDescriptorValue
+        148   2C 0000F990 BluetoothGATTUnregisterEvent
+        149   2D 0000B220 BluetoothGetDeviceInfo
+        150   2E 0000B300 BluetoothGetLocalServiceInfo
+        151   2F 0000B4C0 BluetoothGetRadioInfo
+        152   30 0000B630 BluetoothGetServicePnpInstance
+        153   31 0000B960 BluetoothIsConnectable
+        154   32 0000BA70 BluetoothIsDiscoverable
+        155   33 0000BB80 BluetoothIsVersionAvailable
+        156   34 0000BBA0 BluetoothRegisterForAuthentication
+        157   35 0000BDD0 BluetoothRegisterForAuthenticationEx
+        158   36 0000C000 BluetoothRemoveDevice
+        159   37 0000C1F0 BluetoothSdpEnumAttributes
+        160   38 0000EBE0 BluetoothSdpGetAttributeValue
+        161   39 0000ECD0 BluetoothSdpGetContainerElementData
+        162   3A 0000ED90 BluetoothSdpGetElementData
+        163   3B 0000F050 BluetoothSdpGetString
+        164   3C 0000C340 BluetoothSendAuthenticationResponse
+        165   3D 0000C3F0 BluetoothSendAuthenticationResponseEx
+        166   3E 0000C630 BluetoothSetLocalServiceInfo
+        167   3F 0000C7E0 BluetoothSetServiceState
+        168   40 0000C820 BluetoothSetServiceStateEx
+        169   41 0000C860 BluetoothUnregisterAuthentication
+        170   42 0000C9D0 BluetoothUpdateDeviceRecord
+        171   43 0000CA90 BthpCheckForUnsupportedGuid
+        172   44 0000CAA0 BthpCleanupBRDeviceNode
+        173   45 0000CB90 BthpCleanupDeviceLocalServices
+        174   46 0000CD30 BthpCleanupDeviceRemoteServices
+        175   47 0000CE70 BthpCleanupLEDeviceNodes
+        176   48 0000CF80 BthpEnableA2DPIfPresent
+        177   49 0000D230 BthpEnableAllServices
+        178   4A 0000D470 BthpEnableConnectableAndDiscoverable
+        179   4B 0000D570 BthpEnableRadioSoftware
+        180   4C 0000D630 BthpFindPnpInfo
+        181   4D 0000F930 BthpGATTCloseSession
+        182   4E 0000D7B0 BthpInnerRecord
+        183   4F 0000D8D0 BthpIsBluetoothServiceRunning
+        184   50 000015A0 BthpIsConnectableByDefault
+        185   51 0000D9A0 BthpIsDiscoverable
+        186   52 000015A0 BthpIsDiscoverableByDefault
+        187   53 000015F0 BthpIsRadioSoftwareEnabled
+        188   54 0000DA70 BthpIsTopOfServiceGroup
+        189   55 0000DFA0 BthpMapStatusToErr
+        190   56 0000DFD0 BthpNextRecord
+        191   57 0000E0D0 BthpRegisterForAuthentication
+        192   58 0000E300 BthpSetServiceState
+        193   59 0000E360 BthpSetServiceStateEx
+        194   5A 0000E750 BthpTranspose16Bits
+        195   5B 0000E770 BthpTranspose32Bits
+        196   5C 0000E7A0 BthpTransposeAndExtendBytes
+        197   5D 00003A40 DllCanUnloadNow
+        198   5E 0000F380 FindNextOpenVCOMPort
+        199   5F 0000F530 InstallIncomingComPort
+        200   60 0000E850 ShouldForceAuthentication
+        103      00004240 [NONAME]
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        2000 .pdata
+        F000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       1D000 .text
+        2000 PAGE

@@ -1,0 +1,43 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\FXSCOMPOSE.dll
+
+File Type: DLL
+
+  Section contains the following exports for FxsCompose.dll
+
+    00000000 characteristics
+    3C029DC4 time date stamp
+        0.00 version
+           1 ordinal base
+          15 number of functions
+          15 number of names
+
+    ordinal hint RVA      name
+
+         15    0 00001D70 DllMain
+          1    1 00001C70 FaxComposeFreeBuffer
+          2    2 00001420 HrAddressBookPreTranslateAccelerator
+          3    3 00001230 HrDeInitAddressBook
+          4    4 000010A0 HrDeinitComposeFormDll
+          5    5 00001C10 HrFaxComposePreTranslateAccelerator
+          6    6 00001B20 HrFreeDraftsListViewInfo
+          7    7 00001760 HrGetDraftsListViewInfo
+          8    8 000011D0 HrInitAddressBook
+          9    9 00001090 HrInitComposeFormDll
+         10    A 00001510 HrInvokeAddressBook
+         11    B 00001650 HrNewFaxComposeUI
+         12    C 000016F0 HrNewFaxComposeUIFromFile
+         13    D 00001730 HrNewTiffViewUIFromFile
+         14    E 000012D0 HrSelectEmailRecipient
+
+  Summary
+
+        5000 .data
+        3000 .pdata
+        E000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       52000 .text

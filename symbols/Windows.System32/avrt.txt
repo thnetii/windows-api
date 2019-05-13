@@ -1,0 +1,48 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\avrt.dll
+
+File Type: DLL
+
+  Section contains the following exports for AVRT.dll
+
+    00000000 characteristics
+    E8464C59 time date stamp
+        0.00 version
+           1 ordinal base
+          20 number of functions
+          20 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001460 AvCreateTaskIndex
+          2    1 000013E0 AvQuerySystemResponsiveness
+          3    2 00001F80 AvQueryTaskIndexValue
+          4    3 000012C0 AvRevertMmThreadCharacteristics
+          5    4 00001F60 AvRtCreateThreadOrderingGroup
+          6    5 00001F60 AvRtCreateThreadOrderingGroupExA
+          7    6 00001F60 AvRtCreateThreadOrderingGroupExW
+          8    7 00001F60 AvRtDeleteThreadOrderingGroup
+          9    8 00001F60 AvRtJoinThreadOrderingGroup
+         10    9 00001F60 AvRtLeaveThreadOrderingGroup
+         11    A 00001F60 AvRtWaitOnThreadOrderingGroup
+         12    B 00001FC0 AvSetMmMaxThreadCharacteristicsA
+         13    C 00001FF0 AvSetMmMaxThreadCharacteristicsW
+         14    D 00001430 AvSetMmThreadCharacteristicsA
+         15    E 00001510 AvSetMmThreadCharacteristicsW
+         16    F 00001770 AvSetMmThreadPriority
+         17   10 00001240 AvSetMultimediaMode
+         18   11 000011C0 AvTaskIndexYield
+         19   12 000012F0 AvTaskIndexYieldCancel
+         20   13 00001390 AvThreadOpenTaskIndex
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        2000 .rsrc
+        2000 .text

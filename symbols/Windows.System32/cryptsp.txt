@@ -1,0 +1,94 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\cryptsp.dll
+
+File Type: DLL
+
+  Section contains the following exports for CRYPTSP.dll
+
+    00000000 characteristics
+    FE800AC7 time date stamp
+        0.00 version
+           1 ordinal base
+          65 number of functions
+          65 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00005130 CheckSignatureInFile
+          2    1 00002510 CryptAcquireContextA
+          3    2 00002160 CryptAcquireContextW
+          4    3 000033A0 CryptContextAddRef
+          5    4 000019A0 CryptCreateHash
+          6    5 000054F0 CryptDecrypt
+          7    6 00005680 CryptDeriveKey
+          8    7 00001BA0 CryptDestroyHash
+          9    8 00001880 CryptDestroyKey
+         10    9 00005890 CryptDuplicateHash
+         11    A 00005A70 CryptDuplicateKey
+         12    B 00005C40 CryptEncrypt
+         13    C 00005DD0 CryptEnumProviderTypesA
+         14    D 00006180 CryptEnumProviderTypesW
+         15    E 00006370 CryptEnumProvidersA
+         16    F 00006690 CryptEnumProvidersW
+         17   10 000014D0 CryptExportKey
+         18   11 00003860 CryptGenKey
+         19   12 00001360 CryptGenRandom
+         20   13 000022C0 CryptGetDefaultProviderA
+         21   14 00001FB0 CryptGetDefaultProviderW
+         22   15 00001C80 CryptGetHashParam
+         23   16 000013D0 CryptGetKeyParam
+         24   17 00006870 CryptGetProvParam
+         25   18 00003990 CryptGetUserKey
+         26   19 00001D80 CryptHashData
+         27   1A 00006960 CryptHashSessionKey
+         28   1B 00001630 CryptImportKey
+         29   1C 00003180 CryptReleaseContext
+         30   1D 00001100 CryptSetHashParam
+         31   1E 00006AB0 CryptSetKeyParam
+         32   1F 00006BD0 CryptSetProvParam
+         33   20 00006D00 CryptSetProviderA
+         34   21 00006E50 CryptSetProviderExA
+         35   22 00007310 CryptSetProviderExW
+         36   23 000073E0 CryptSetProviderW
+         37   24 00007490 CryptSignHashA
+         38   25 00007590 CryptSignHashW
+         39   26 00001010 CryptVerifySignatureA
+         40   27 00001200 CryptVerifySignatureW
+         41   28 000034D0 SystemFunction006
+         42   29 000035D0 SystemFunction007
+         43   2A 00009A10 SystemFunction008
+         44   2B 00009AD0 SystemFunction009
+         45   2C 00009AE0 SystemFunction010
+         46   2D 00009B40 SystemFunction011
+         47   2E 00009B80 SystemFunction012
+         48   2F 00009BD0 SystemFunction013
+         49   30 00009C20 SystemFunction014
+         50   31 00009C30 SystemFunction015
+         51   32 00009C40 SystemFunction016
+         52   33 00009C90 SystemFunction018
+         53   34 00009C20 SystemFunction020
+         54   35 00009C30 SystemFunction021
+         55   36 00009C20 SystemFunction022
+         56   37 00009C30 SystemFunction023
+         57   38 00003430 SystemFunction024
+         58   39 00009CA0 SystemFunction025
+         59   3A 00003430 SystemFunction026
+         60   3B 00003790 SystemFunction027
+         61   3C 00003830 SystemFunction030
+         62   3D 00003830 SystemFunction031
+         63   3E 00009D20 SystemFunction032
+         64   3F 00009D20 SystemFunction033
+         65   40 00005130 SystemFunction035
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        6000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        B000 .text

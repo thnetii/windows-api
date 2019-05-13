@@ -1,0 +1,51 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\Clipc.dll
+
+File Type: DLL
+
+  Section contains the following exports for CLIPC.dll
+
+    00000000 characteristics
+    960A7767 time date stamp
+        0.00 version
+           1 ordinal base
+          22 number of functions
+          22 number of names
+
+    ordinal hint RVA      name
+
+          3    0 00003A50 ClipCallServer
+          4    1 00004880 ClipCleanUpState
+          5    2 00002370 ClipClose
+          6    3 000045F0 ClipGatherDiagnostics
+          7    4 00004150 ClipGenerateClientChallengeData
+          8    5 00003E70 ClipGenerateDeviceLicenseRequest
+          9    6 000030C0 ClipGetAssociatedResults
+         10    7 00005DF0 ClipGetDeviceHardwareData
+         11    8 00003820 ClipGetFileIdFromAssociateId
+         12    9 00005A10 ClipGetLicenseAndPolicyForPfn
+         13    A 00002B50 ClipGetLicenseData
+         14    B 000034D0 ClipGetQueryResults
+         15    C 000057B0 ClipGetSubscriptionStatus
+         16    D 000024A0 ClipInstallLicense
+         17    E 00002240 ClipOpen
+         18    F 00002DE0 ClipQueryAssociateId
+         19   10 000043C0 ClipRefreshLicense
+         20   11 00002950 ClipUninstallLicense
+          1   12 000053C0 GetExchangeDeviceUniqueID
+          2   13 00004F50 GetOfflineDeviceUniqueID
+         21   14 00005650 SLQueryLicenseValueFromApp
+         22   15 00005730 SLQueryLicenseValueFromApp2
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        5000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       1D000 .text

@@ -1,0 +1,52 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\ntlanman.dll
+
+File Type: DLL
+
+  Section contains the following exports for NTLANMAN.dll
+
+    00000000 characteristics
+     2CB5656 time date stamp
+        0.00 version
+          12 ordinal base
+          43 number of functions
+          23 number of names
+
+    ordinal hint RVA      name
+
+         14    0 00002F20 DllMain
+         15    1 00005800 I_SystemFocusDialog
+         17    2 000053E0 NPAddConnection
+         38    3 00005410 NPAddConnection3
+         18    4 000055E0 NPCancelConnection
+         35    5 00001850 NPCloseEnum
+         34    6 000015E0 NPEnumResource
+         36    7 00005630 NPFormatNetworkName
+         13    8 00001540 NPGetCaps
+         12    9 00005240 NPGetConnection
+         54    A 00005640 NPGetConnection3
+         49    B 000056E0 NPGetConnectionPerformance
+         53    C 000053A0 NPGetReconnectFlags
+         52    D 00005720 NPGetResourceInformation
+         41    E 00005780 NPGetResourceParent
+         40    F 000053D0 NPGetUniversalName
+         16   10 00005790 NPGetUser
+         33   11 00001010 NPOpenEnum
+         19   12 00005A00 QueryAppInstanceVersion
+         20   13 00005AD0 RegisterAppInstance
+         21   14 00005B80 RegisterAppInstanceVersion
+         22   15 00005C40 ResetAllAppInstanceVersions
+         23   16 00005CB0 SetAppInstanceCsvFlags
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        4000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        B000 .text

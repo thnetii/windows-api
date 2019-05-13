@@ -1,0 +1,160 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\ntdsapi.dll
+
+File Type: DLL
+
+  Section contains the following exports for NTDSAPI.dll
+
+    00000000 characteristics
+    179CE785 time date stamp
+        0.00 version
+           1 ordinal base
+         131 number of functions
+         131 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0000EEB0 DsAddCloneDCW
+          2    1 00006F10 DsAddSidHistoryA
+          3    2 00007100 DsAddSidHistoryW
+          4    3 00007990 DsBindA
+          5    4 00007BB0 DsBindByInstanceA
+          6    5 00001380 DsBindByInstanceW
+          7    6 00007D40 DsBindToISTGA
+          8    7 00007DC0 DsBindToISTGW
+          9    8 000079C0 DsBindW
+         10    9 000079F0 DsBindWithCredA
+         11    A 000012E0 DsBindWithCredW
+         12    B 00007A20 DsBindWithSpnA
+         13    C 00008180 DsBindWithSpnExA
+         14    D 00011EA0 DsBindWithSpnExW
+         15    E 00001350 DsBindWithSpnExWWorker
+         16    F 00007A50 DsBindWithSpnW
+         17   10 000082B0 DsBindingSetTimeout
+         18   11 000114A0 DsClientMakeSpnForTargetServerA
+         19   12 00011600 DsClientMakeSpnForTargetServerW
+         20   13 00008680 DsCrackNamesA
+         21   14 000012D0 DsCrackNamesW
+         22   15 00001F40 DsCrackNamesWWorker
+         23   16          DsCrackSpn2A (forwarded to DSPARSE.DsCrackSpn2A)
+         24   17          DsCrackSpn2W (forwarded to DSPARSE.DsCrackSpn2W)
+         25   18          DsCrackSpn3W (forwarded to DSPARSE.DsCrackSpn3W)
+         26   19          DsCrackSpn4W (forwarded to DSPARSE.DsCrackSpn4W)
+         27   1A          DsCrackSpnA (forwarded to DSPARSE.DsCrackSpnA)
+         28   1B          DsCrackSpnW (forwarded to DSPARSE.DsCrackSpnW)
+         29   1C          DsCrackUnquotedMangledRdnA (forwarded to DSPARSE.DsCrackUnquotedMangledRdnA)
+         30   1D          DsCrackUnquotedMangledRdnW (forwarded to DSPARSE.DsCrackUnquotedMangledRdnW)
+         31   1E 0000E610 DsFinishDemotionW
+         32   1F 0000F080 DsFreeCloneDcResult
+         33   20 00009060 DsFreeDomainControllerInfoA
+         34   21 00009060 DsFreeDomainControllerInfoW
+         35   22 00009070 DsFreeDomainControllerInfoWWorker
+         36   23 00001310 DsFreeNameResultA
+         37   24 00001310 DsFreeNameResultW
+         38   25 00001D40 DsFreeNameResultWWorker
+         39   26 00012010 DsFreeNgcKey
+         40   27 0000E600 DsFreeNgcKeyWorker
+         41   28 00001340 DsFreePasswordCredentials
+         42   29 00001240 DsFreePasswordCredentialsWorker
+         43   2A 000108E0 DsFreeSchemaGuidMapA
+         44   2B 000108F0 DsFreeSchemaGuidMapW
+         45   2C 00011830 DsFreeSpnArrayA
+         46   2D 00011840 DsFreeSpnArrayW
+         47   2E 00008310 DsGetBindAddrW
+         48   2F 00008330 DsGetBindAnnotW
+         49   30 00008350 DsGetBindInstGuid
+         50   31 00009210 DsGetDomainControllerInfoA
+         51   32 00011EB0 DsGetDomainControllerInfoW
+         52   33 00009490 DsGetDomainControllerInfoWWorker
+         53   34          DsGetRdnW (forwarded to DSPARSE.DsGetRdnW)
+         54   35 000118A0 DsGetSpnA
+         55   36 00003880 DsGetSpnW
+         56   37 000076F0 DsInheritSecurityIdentityA
+         57   38 000077D0 DsInheritSecurityIdentityW
+         58   39 0000E790 DsInitDemotionW
+         59   3A          DsIsMangledDnA (forwarded to DSPARSE.DsIsMangledDnA)
+         60   3B          DsIsMangledDnW (forwarded to DSPARSE.DsIsMangledDnW)
+         61   3C          DsIsMangledRdnValueA (forwarded to DSPARSE.DsIsMangledRdnValueA)
+         62   3D          DsIsMangledRdnValueW (forwarded to DSPARSE.DsIsMangledRdnValueW)
+         63   3E 00010D80 DsListDomainsInSiteA
+         64   3F 00010DE0 DsListDomainsInSiteW
+         65   40 00010E50 DsListInfoForServerA
+         66   41 00010E90 DsListInfoForServerW
+         67   42 00010ED0 DsListRolesA
+         68   43 00010F20 DsListRolesW
+         69   44 00010F70 DsListServersForDomainInSiteA
+         70   45 00010FE0 DsListServersForDomainInSiteW
+         71   46 00011040 DsListServersInSiteA
+         72   47 00011080 DsListServersInSiteW
+         73   48 000110C0 DsListSitesA
+         74   49 00011110 DsListSitesW
+         75   4A 00011EC0 DsLogEntry
+         76   4B 00007A80 DsMakePasswordCredentialsA
+         77   4C 00001330 DsMakePasswordCredentialsW
+         78   4D 00001010 DsMakePasswordCredentialsWWorker
+         79   4E          DsMakeSpnA (forwarded to DSPARSE.DsMakeSpnA)
+         80   4F          DsMakeSpnW (forwarded to DSPARSE.DsMakeSpnW)
+         81   50 00010920 DsMapSchemaGuidsA
+         82   51 00010C50 DsMapSchemaGuidsW
+         83   52 00011160 DsQuerySitesByCostA
+         84   53 00011300 DsQuerySitesByCostW
+         85   54 0000F080 DsQuerySitesFree
+         86   55          DsQuoteRdnValueA (forwarded to DSPARSE.DsQuoteRdnValueA)
+         87   56          DsQuoteRdnValueW (forwarded to DSPARSE.DsQuoteRdnValueW)
+         88   57 00012040 DsReadNgcKeyA
+         89   58 00012020 DsReadNgcKeyW
+         90   59 000120D0 DsReadNgcKeyWWorker
+         91   5A 0000E860 DsRemoveDsDomainA
+         92   5B 0000E950 DsRemoveDsDomainW
+         93   5C 0000EA80 DsRemoveDsServerA
+         94   5D 0000EBF0 DsRemoveDsServerW
+         95   5E 0000F0A0 DsReplicaAddA
+         96   5F 0000F1D0 DsReplicaAddW
+         97   60 0000F5A0 DsReplicaConsistencyCheck
+         98   61 0000F660 DsReplicaDelA
+         99   62 0000F720 DsReplicaDelW
+        100   63 0000ED50 DsReplicaDemotionW
+        101   64 0000F890 DsReplicaFreeInfo
+        102   65 0000FB30 DsReplicaGetInfo2W
+        103   66 0000FDF0 DsReplicaGetInfoW
+        104   67 0000FE30 DsReplicaModifyA
+        105   68 0000FF50 DsReplicaModifyW
+        106   69 00010260 DsReplicaSyncA
+        107   6A 0000D960 DsReplicaSyncAllA
+        108   6B 0000DF50 DsReplicaSyncAllW
+        109   6C 000102D0 DsReplicaSyncW
+        110   6D 00010430 DsReplicaUpdateRefsA
+        111   6E 000104F0 DsReplicaUpdateRefsW
+        112   6F 000106C0 DsReplicaVerifyObjectsA
+        113   70 00010730 DsReplicaVerifyObjectsW
+        114   71 00011B00 DsServerRegisterSpnA
+        115   72 000035D0 DsServerRegisterSpnW
+        116   73 00001320 DsUnBindA
+        117   74 00001320 DsUnBindW
+        118   75 00001E20 DsUnBindWWorker
+        119   76          DsUnquoteRdnValueA (forwarded to DSPARSE.DsUnquoteRdnValueA)
+        120   77          DsUnquoteRdnValueW (forwarded to DSPARSE.DsUnquoteRdnValueW)
+        121   78 00011BB0 DsWriteAccountSpnA
+        122   79 00003DE0 DsWriteAccountSpnW
+        123   7A 000121F0 DsWriteNgcKeyA
+        124   7B 00012030 DsWriteNgcKeyW
+        125   7C 00012280 DsWriteNgcKeyWWorker
+        126   7D 0000E0E0 DsaopBind
+        127   7E 0000E110 DsaopBindWithCred
+        128   7F 0000E140 DsaopBindWithSpn
+        129   80 0000E470 DsaopExecuteScript
+        130   81 0000E520 DsaopPrepareScript
+        131   82 0000E5B0 DsaopUnBind
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+       10000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       12000 .text

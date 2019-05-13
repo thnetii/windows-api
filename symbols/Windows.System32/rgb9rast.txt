@@ -1,0 +1,58 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\rgb9rast.dll
+
+File Type: DLL
+
+  Section contains the following exports for rgbrast.dll
+
+    00000000 characteristics
+    F2A28FF7 time date stamp
+        0.00 version
+           1 ordinal base
+          30 number of functions
+          30 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00007750 ??0PrimProcessor@@QEAA@XZ
+          2    1 00007800 ??1PrimProcessor@@QEAA@XZ
+          3    2 00001530 ??4PrimProcessor@@QEAAAEAV0@AEBV0@@Z
+          4    3 00007B30 ?AllocSpans@PrimProcessor@@QEAAJPEAIPEAPEAUtagD3DI_RASTSPAN@@@Z
+          5    4 00007A30 ?AppendPrim@PrimProcessor@@AEAAJXZ
+          6    5 00007AB0 ?Begin@PrimProcessor@@QEAAXXZ
+          7    6 00007C10 ?BeginPrimSet@PrimProcessor@@QEAAXW4_D3DPRIMITIVETYPE@@W4_RAST_VERTEX_TYPE@@@Z
+          8    7 00001600 ?ClrFlags@PrimProcessor@@QEAAXI@Z
+          9    8 00007AE0 ?End@PrimProcessor@@QEAAJXZ
+         10    9 00007F40 ?FillPointSpan@PrimProcessor@@AEAAXPEAU_D3DTLVERTEX@@PEAUtagD3DI_RASTSPAN@@@Z
+         11    A 00007850 ?Flush@PrimProcessor@@AEAAJXZ
+         12    B 000078C0 ?FlushPartial@PrimProcessor@@AEAAJXZ
+         13    C 00007BF0 ?FreeSpans@PrimProcessor@@QEAAXI@Z
+         14    D 000015E0 ?GetFlags@PrimProcessor@@QEAAIXZ
+         15    E 000077A0 ?Initialize@PrimProcessor@@QEAAJXZ
+         16    F 00008650 ?Line@PrimProcessor@@QEAAJPEAU_D3DTLVERTEX@@00@Z
+         17   10 00009030 ?LineSetup@PrimProcessor@@AEAAHPEAU_D3DTLVERTEX@@0@Z
+         18   11 00008F60 ?NormalizeLineRHW@PrimProcessor@@AEAAXPEAU_D3DTLVERTEX@@0@Z
+         19   12 00008200 ?NormalizePointRHW@PrimProcessor@@AEAAXPEAU_D3DTLVERTEX@@@Z
+         20   13 000095B0 ?NormalizeTriRHW@PrimProcessor@@AEAAXPEAU_D3DTLVERTEX@@00@Z
+         21   14 00008240 ?Point@PrimProcessor@@QEAAJPEAU_D3DTLVERTEX@@0@Z
+         22   15 00008FB0 ?PointDiamondCheck@PrimProcessor@@AEAAHHHHH@Z
+         23   16 00007830 ?ResetBuffer@PrimProcessor@@AEAAXXZ
+         24   17 00007B20 ?SetCtx@PrimProcessor@@QEAAXPEAUtagD3DI_RASTCTX@@@Z
+         25   18 000015F0 ?SetFlags@PrimProcessor@@QEAAXI@Z
+         26   19 00009E50 ?SetTriFunctions@PrimProcessor@@AEAAXXZ
+         27   1A 00001610 ?StateChanged@PrimProcessor@@QEAAXXZ
+         28   1B 00009EF0 ?Tri@PrimProcessor@@QEAAJPEAU_D3DTLVERTEX@@00@Z
+         29   1C 00009640 ?TriSetup@PrimProcessor@@AEAAHPEAU_D3DTLVERTEX@@00@Z
+         30   1D 00001620 D3D9GetSWInfo
+
+  Summary
+
+        3000 .data
+        2000 .pdata
+        5000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       24000 .text

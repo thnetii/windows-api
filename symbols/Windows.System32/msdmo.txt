@@ -1,0 +1,43 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\msdmo.dll
+
+File Type: DLL
+
+  Section contains the following exports for msdmo.dll
+
+    00000000 characteristics
+    EDA2EDDF time date stamp
+        0.00 version
+           1 ordinal base
+          15 number of functions
+          15 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00002DA0 DMOEnum
+          2    1 00002FD0 DMOGetName
+          3    2 000030C0 DMOGetTypes
+          4    3 00003E60 DMOGuidToStrA
+          5    4 00003F10 DMOGuidToStrW
+          6    5 000031E0 DMORegister
+          7    6 00003FC0 DMOStrToGuidA
+          8    7 000040C0 DMOStrToGuidW
+          9    8 000036D0 DMOUnregister
+         10    9 00001010 MoCopyMediaType
+         11    A 00001FE0 MoCreateMediaType
+         12    B 00002050 MoDeleteMediaType
+         13    C 00002090 MoDuplicateMediaType
+         14    D 000010E0 MoFreeMediaType
+         15    E 00001130 MoInitMediaType
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        4000 .text

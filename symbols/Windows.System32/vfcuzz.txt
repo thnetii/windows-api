@@ -1,0 +1,43 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\vfcuzz.dll
+
+File Type: DLL
+
+  Section contains the following exports for vfcuzz.dll
+
+    00000000 characteristics
+    E5A59375 time date stamp
+        0.00 version
+           1 ordinal base
+          15 number of functions
+          15 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001AE0 CuzzDisable
+          2    1 000011C0 CuzzDumpDebuggingState
+          3    2 00001B00 CuzzEnable
+          4    3 00002670 CuzzGetCustomSchedulerInterface
+          5    4 00002330 CuzzGetPriority
+          6    5 00002390 CuzzGetPriorityOfTask
+          7    6 00002450 CuzzGetRandomSeed
+          8    7 00001B20 CuzzIsEnabled
+          9    8 00001FA0 CuzzSchedule
+         10    9 000024A0 CuzzSetDebugLoweringPoint
+         11    A 00002460 CuzzSetDebugPriority
+         12    B 00001B40 CuzzSetFuzzingLevel
+         13    C 00001BE0 CuzzSetNumBlockedThreads
+         14    D 000022C0 CuzzSetPriority
+         15    E 00001BC0 CuzzSetRandomSeed
+
+  Summary
+
+      62E000 .data
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        5000 .text

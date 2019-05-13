@@ -1,0 +1,49 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\tbs.dll
+
+File Type: DLL
+
+  Section contains the following exports for tbs.dll
+
+    00000000 characteristics
+    25413980 time date stamp
+        0.00 version
+           1 ordinal base
+          21 number of functions
+          21 number of names
+
+    ordinal hint RVA      name
+
+          3    0 00005AA0 GetDeviceID
+          4    1 00001010 GetDeviceIDString
+          5    2 00001290 GetDeviceIDWithTimeout
+          6    3 00001730 Tbsi_Context_Create
+          1    4 00005370 Tbsi_Create_Attestation_From_Log
+          7    5 000041B0 Tbsi_Create_Windows_Key
+          8    6 00005CD0 Tbsi_FilterLog
+          9    7 00001DB0 Tbsi_GetDeviceInfo
+         10    8 00004260 Tbsi_Get_OwnerAuth
+         11    9 00004A30 Tbsi_Get_TCG_Log
+         12    A 00001460 Tbsi_Get_TCG_Log_Ex
+          2    B 00003C90 Tbsi_Get_TCG_Logs
+         13    C 000016B0 Tbsi_Physical_Presence_Command
+         14    D 00004A70 Tbsi_Revoke_Attestation
+         15    E 00005FB0 Tbsi_ShaHash
+         16    F 00004B00 Tbsip_Cancel_Commands
+         17   10 00001F20 Tbsip_Context_Close
+         18   11 00001970 Tbsip_Submit_Command
+         19   12 00004B40 Tbsip_Submit_Command_NonBlocking
+         20   13 00004B80 Tbsip_TestInterruptInformation
+         21   14 00004C40 Tbsip_TestMorBit
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        3000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        6000 .text

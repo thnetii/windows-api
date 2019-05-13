@@ -1,0 +1,174 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\ncrypt.dll
+
+File Type: DLL
+
+  Section contains the following exports for ncrypt.dll
+
+    00000000 characteristics
+    B8FE18E6 time date stamp
+        0.00 version
+           1 ordinal base
+         145 number of functions
+         145 number of names
+
+    ordinal hint RVA      name
+
+          1    0          BCryptAddContextFunction (forwarded to BCRYPT.BCryptAddContextFunction)
+          2    1          BCryptAddContextFunctionProvider (forwarded to BCRYPT.BCryptAddContextFunctionProvider)
+          3    2          BCryptCloseAlgorithmProvider (forwarded to BCRYPT.BCryptCloseAlgorithmProvider)
+          4    3          BCryptConfigureContext (forwarded to BCRYPT.BCryptConfigureContext)
+          5    4          BCryptConfigureContextFunction (forwarded to BCRYPT.BCryptConfigureContextFunction)
+          6    5          BCryptCreateContext (forwarded to BCRYPT.BCryptCreateContext)
+          7    6          BCryptCreateHash (forwarded to BCRYPT.BCryptCreateHash)
+          8    7          BCryptDecrypt (forwarded to BCRYPT.BCryptDecrypt)
+          9    8          BCryptDeleteContext (forwarded to BCRYPT.BCryptDeleteContext)
+         10    9          BCryptDeriveKey (forwarded to BCRYPT.BCryptDeriveKey)
+         11    A          BCryptDeriveKeyCapi (forwarded to BCRYPT.BCryptDeriveKeyCapi)
+         12    B          BCryptDeriveKeyPBKDF2 (forwarded to BCRYPT.BCryptDeriveKeyPBKDF2)
+         13    C          BCryptDestroyHash (forwarded to BCRYPT.BCryptDestroyHash)
+         14    D          BCryptDestroyKey (forwarded to BCRYPT.BCryptDestroyKey)
+         15    E          BCryptDestroySecret (forwarded to BCRYPT.BCryptDestroySecret)
+         16    F          BCryptDuplicateHash (forwarded to BCRYPT.BCryptDuplicateHash)
+         17   10          BCryptDuplicateKey (forwarded to BCRYPT.BCryptDuplicateKey)
+         18   11          BCryptEncrypt (forwarded to BCRYPT.BCryptEncrypt)
+         19   12          BCryptEnumAlgorithms (forwarded to BCRYPT.BCryptEnumAlgorithms)
+         20   13          BCryptEnumContextFunctionProviders (forwarded to BCRYPT.BCryptEnumContextFunctionProviders)
+         21   14          BCryptEnumContextFunctions (forwarded to BCRYPT.BCryptEnumContextFunctions)
+         22   15          BCryptEnumContexts (forwarded to BCRYPT.BCryptEnumContexts)
+         23   16          BCryptEnumProviders (forwarded to BCRYPT.BCryptEnumProviders)
+         24   17          BCryptEnumRegisteredProviders (forwarded to BCRYPT.BCryptEnumRegisteredProviders)
+         25   18          BCryptExportKey (forwarded to BCRYPT.BCryptExportKey)
+         26   19          BCryptFinalizeKeyPair (forwarded to BCRYPT.BCryptFinalizeKeyPair)
+         27   1A          BCryptFinishHash (forwarded to BCRYPT.BCryptFinishHash)
+         28   1B          BCryptFreeBuffer (forwarded to BCRYPT.BCryptFreeBuffer)
+         29   1C          BCryptGenRandom (forwarded to BCRYPT.BCryptGenRandom)
+         30   1D          BCryptGenerateKeyPair (forwarded to BCRYPT.BCryptGenerateKeyPair)
+         31   1E          BCryptGenerateSymmetricKey (forwarded to BCRYPT.BCryptGenerateSymmetricKey)
+         32   1F          BCryptGetFipsAlgorithmMode (forwarded to BCRYPT.BCryptGetFipsAlgorithmMode)
+         33   20          BCryptGetProperty (forwarded to BCRYPT.BCryptGetProperty)
+         34   21          BCryptHash (forwarded to BCRYPT.BCryptHash)
+         35   22          BCryptHashData (forwarded to BCRYPT.BCryptHashData)
+         36   23          BCryptImportKey (forwarded to BCRYPT.BCryptImportKey)
+         37   24          BCryptImportKeyPair (forwarded to BCRYPT.BCryptImportKeyPair)
+         38   25          BCryptKeyDerivation (forwarded to BCRYPT.BCryptKeyDerivation)
+         39   26          BCryptOpenAlgorithmProvider (forwarded to BCRYPT.BCryptOpenAlgorithmProvider)
+         40   27          BCryptQueryContextConfiguration (forwarded to BCRYPT.BCryptQueryContextConfiguration)
+         41   28          BCryptQueryContextFunctionConfiguration (forwarded to BCRYPT.BCryptQueryContextFunctionConfiguration)
+         42   29          BCryptQueryContextFunctionProperty (forwarded to BCRYPT.BCryptQueryContextFunctionProperty)
+         43   2A          BCryptQueryProviderRegistration (forwarded to BCRYPT.BCryptQueryProviderRegistration)
+         44   2B          BCryptRegisterConfigChangeNotify (forwarded to BCRYPT.BCryptRegisterConfigChangeNotify)
+         45   2C          BCryptRegisterProvider (forwarded to BCRYPT.BCryptRegisterProvider)
+         46   2D          BCryptRemoveContextFunction (forwarded to BCRYPT.BCryptRemoveContextFunction)
+         47   2E          BCryptRemoveContextFunctionProvider (forwarded to BCRYPT.BCryptRemoveContextFunctionProvider)
+         48   2F          BCryptResolveProviders (forwarded to BCRYPT.BCryptResolveProviders)
+         49   30          BCryptSecretAgreement (forwarded to BCRYPT.BCryptSecretAgreement)
+         50   31          BCryptSetAuditingInterface (forwarded to BCRYPT.BCryptSetAuditingInterface)
+         51   32          BCryptSetContextFunctionProperty (forwarded to BCRYPT.BCryptSetContextFunctionProperty)
+         52   33          BCryptSetProperty (forwarded to BCRYPT.BCryptSetProperty)
+         53   34          BCryptSignHash (forwarded to BCRYPT.BCryptSignHash)
+         54   35          BCryptUnregisterConfigChangeNotify (forwarded to BCRYPT.BCryptUnregisterConfigChangeNotify)
+         55   36          BCryptUnregisterProvider (forwarded to BCRYPT.BCryptUnregisterProvider)
+         56   37          BCryptVerifySignature (forwarded to BCRYPT.BCryptVerifySignature)
+         57   38 0000D020 GetIsolationServerInterface
+         58   39 0000D020 GetKeyStorageInterface
+         59   3A 0000D020 GetSChannelInterface
+         60   3B 0000F990 NCryptCloseKeyProtector
+         61   3C 000118C0 NCryptCloseProtectionDescriptor
+         62   3D 0000D350 NCryptCreateClaim
+         63   3E 000030D0 NCryptCreatePersistedKey
+         64   3F 00011950 NCryptCreateProtectionDescriptor
+         65   40 0000D540 NCryptDecrypt
+         66   41 000053A0 NCryptDeleteKey
+         67   42 00002040 NCryptDeriveKey
+         68   43 0000FA90 NCryptDuplicateKeyProtectorHandle
+         69   44 0000D700 NCryptEncrypt
+         70   45 0000D8C0 NCryptEnumAlgorithms
+         71   46 00004EA0 NCryptEnumKeys
+         72   47 0000DAC0 NCryptEnumStorageProviders
+         73   48 000035D0 NCryptExportKey
+         74   49 00003230 NCryptFinalizeKey
+         75   4A 000052F0 NCryptFreeBuffer
+         76   4B 000040A0 NCryptFreeObject
+         77   4C 000050E0 NCryptGetProperty
+         78   4D 00011BD0 NCryptGetProtectionDescriptorInfo
+         79   4E 00001AC0 NCryptImportKey
+         80   4F 00004DD0 NCryptIsAlgSupported
+         81   50 00004A40 NCryptIsKeyHandle
+         82   51 0000DCD0 NCryptKeyDerivation
+         83   52 0000DEC0 NCryptNotifyChangeKey
+         84   53 000026B0 NCryptOpenKey
+         85   54 0000FB50 NCryptOpenKeyProtector
+         86   55 00002DC0 NCryptOpenStorageProvider
+         87   56 0000FDE0 NCryptProtectKey
+         88   57 00011C80 NCryptProtectSecret
+         89   58 00012510 NCryptQueryProtectionDescriptorName
+         90   59 00012670 NCryptRegisterProtectionDescriptorName
+         91   5A 00003890 NCryptSecretAgreement
+         92   5B 00004960 NCryptSetAuditingInterface
+         93   5C 00003390 NCryptSetProperty
+         94   5D 00004480 NCryptSignHash
+         95   5E 00012DC0 NCryptStreamClose
+         96   5F 00012E10 NCryptStreamOpenToProtect
+         97   60 00013110 NCryptStreamOpenToUnprotect
+         98   61 00013200 NCryptStreamOpenToUnprotectEx
+         99   62 000132F0 NCryptStreamUpdate
+        100   63 0000E190 NCryptTranslateHandle
+        101   64 0000FF30 NCryptUnprotectKey
+        102   65 00012080 NCryptUnprotectSecret
+        103   66 0000E730 NCryptVerifyClaim
+        104   67 0000E8F0 NCryptVerifySignature
+        105   68 0000ADA0 SslChangeNotify
+        106   69 0000ADB0 SslComputeClientAuthHash
+        107   6A 0000AE90 SslComputeEapKeyBlock
+        108   6B 000013F0 SslComputeFinishedHash
+        109   6C 00002280 SslComputeSessionHash
+        110   6D 000036F0 SslCreateClientAuthHash
+        111   6E 00002FA0 SslCreateEphemeralKey
+        112   6F 000016A0 SslCreateHandshakeHash
+        113   70 00002B60 SslDecrementProviderReferenceCount
+        114   71 000017D0 SslDecryptPacket
+        115   72 000018D0 SslEncryptPacket
+        116   73 0000AF50 SslEnumCipherSuites
+        117   74 00004A60 SslEnumCipherSuitesEx
+        118   75 00004C60 SslEnumEccCurves
+        119   76 00004700 SslEnumProtocolProviders
+        120   77 0000B180 SslExpandExporterMasterKey
+        121   78 0000B340 SslExpandTrafficKeys
+        122   79 0000B5C0 SslExpandWriteKey
+        123   7A 00001250 SslExportKey
+        124   7B 0000B760 SslExportKeyingMaterial
+        125   7C 0000B860 SslExtractEarlyKey
+        126   7D 0000BA20 SslExtractHandshakeKey
+        127   7E 0000BC00 SslExtractMasterKey
+        128   7F 000045C0 SslFreeBuffer
+        129   80 000029F0 SslFreeObject
+        130   81 00001E50 SslGenerateMasterKey
+        131   82 0000BDA0 SslGeneratePreMasterKey
+        132   83 000014E0 SslGenerateSessionKeys
+        133   84 00003310 SslGetCipherSuitePRFHashAlgorithm
+        134   85 0000BF60 SslGetKeyProperty
+        135   86 0000C030 SslGetProviderProperty
+        136   87 00001330 SslHashHandshake
+        137   88 00002140 SslImportKey
+        138   89 0000C240 SslImportMasterKey
+        139   8A 000035A0 SslIncrementProviderReferenceCount
+        140   8B 000019D0 SslLookupCipherLengths
+        141   8C 00003800 SslLookupCipherSuiteInfo
+        142   8D 0000C3F0 SslOpenPrivateKey
+        143   8E 00002C20 SslOpenProvider
+        144   8F 00004390 SslSignHash
+        145   90 0000C550 SslVerifySignature
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        7000 .rdata
+        1000 .reloc
+        3000 .rsrc
+       17000 .text

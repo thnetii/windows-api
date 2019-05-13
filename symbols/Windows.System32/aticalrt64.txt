@@ -1,0 +1,66 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\aticalrt64.dll
+
+File Type: DLL
+
+  Section contains the following exports for aticalrt64.dll
+
+    00000000 characteristics
+    5656A198 time date stamp Thu Nov 26 07:07:20 2015
+        0.00 version
+           1 ordinal base
+          38 number of functions
+          38 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000019A0 calCtxCreate
+          2    1 00001A40 calCtxDestroy
+          3    2 00001E10 calCtxFlush
+          4    3 00001AC0 calCtxGetMem
+          5    4 00001D70 calCtxIsEventDone
+          6    5 00001B70 calCtxReleaseMem
+          7    6 00001CC0 calCtxRunProgram
+          8    7 000023A0 calCtxRunProgramGrid
+          9    8 00002500 calCtxRunProgramGridArray
+         10    9 00001C10 calCtxSetMem
+         11    A 000014B0 calDeviceClose
+         12    B 000012D0 calDeviceGetAttribs
+         13    C 000011B0 calDeviceGetCount
+         14    D 00001230 calDeviceGetInfo
+         15    E 00001370 calDeviceGetStatus
+         16    F 00001410 calDeviceOpen
+         17   10 000026E0 calExtGetProc
+         18   11 00002630 calExtGetVersion
+         19   12 000025B0 calExtSupported
+         20   13 00002320 calGetErrorString
+         21   14 00001080 calGetVersion
+         22   15 00001FF0 calImageFree
+         23   16 00001F40 calImageRead
+         24   17 00001000 calInit
+         25   18 00001E90 calMemCopy
+         26   19 000021C0 calModuleGetEntry
+         27   1A 00002450 calModuleGetFuncInfo
+         28   1B 00002270 calModuleGetName
+         29   1C 00002070 calModuleLoad
+         30   1D 00002120 calModuleUnload
+         31   1E 00001690 calResAllocLocal1D
+         32   1F 00001530 calResAllocLocal2D
+         33   20 00001740 calResAllocRemote1D
+         34   21 000015E0 calResAllocRemote2D
+         35   22 000017F0 calResFree
+         36   23 00001870 calResMap
+         37   24 00001920 calResUnmap
+         38   25 00001130 calShutdown
+
+  Summary
+
+        4000 .data
+        1000 .pdata
+        4000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        9000 .text

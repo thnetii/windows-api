@@ -1,0 +1,48 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\dxgi.dll
+
+File Type: DLL
+
+  Section contains the following exports for dxgi.dll
+
+    00000000 characteristics
+    6B3E2414 time date stamp
+        0.00 version
+           1 ordinal base
+          19 number of functions
+          19 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00006710 ApplyCompatResolutionQuirking
+          2    1 00013070 CompatString
+          3    2 00012D70 CompatValue
+         10    3 00009B80 CreateDXGIFactory
+         11    4 00009C20 CreateDXGIFactory1
+         12    5 00009A90 CreateDXGIFactory2
+         13    6 0001C9D0 DXGID3D10CreateDevice
+         14    7 0001C9D0 DXGID3D10CreateLayeredDevice
+         15    8 0001CB70 DXGID3D10GetLayeredDeviceSize
+         16    9 0001C9D0 DXGID3D10RegisterLayers
+         17    A 00021ED0 DXGIDeclareAdapterRemovalSupport
+          4    B 00053210 DXGIDumpJournal
+         18    C 00056560 DXGIGetDebugInterface1
+         19    D 000012F0 DXGIReportAdapterConfiguration
+          5    E 0001CB70 PIXBeginCapture
+          6    F 0001CB70 PIXEndCapture
+          7   10 0001CB70 PIXGetCaptureState
+          8   11 000549C0 SetAppCompatStringPointer
+          9   12 000558B0 UpdateHMDEmulationStatus
+
+  Summary
+
+        4000 .data
+        1000 .didat
+        7000 .pdata
+       28000 .rdata
+        2000 .reloc
+       18000 .rsrc
+       73000 .text

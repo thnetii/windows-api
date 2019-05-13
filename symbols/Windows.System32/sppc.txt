@@ -1,0 +1,94 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\sppc.dll
+
+File Type: DLL
+
+  Section contains the following exports for sppc.dll
+
+    00000000 characteristics
+    60C90C55 time date stamp
+        0.00 version
+           1 ordinal base
+          66 number of functions
+          66 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00016820 SLCallServer
+         19    1 000126F0 SLClose
+         20    2 00012720 SLConsumeRight
+         21    3 00012810 SLDepositMigrationBlob
+         22    4 00012900 SLDepositOfflineConfirmationId
+         23    5 00012940 SLDepositOfflineConfirmationIdEx
+         24    6 00012D10 SLDepositStoreToken
+         25    7 00012E10 SLFireEvent
+         26    8 00012F00 SLGatherMigrationBlob
+         27    9 00012F80 SLGatherMigrationBlobEx
+         28    A 000130A0 SLGenerateOfflineInstallationId
+         29    B 000130E0 SLGenerateOfflineInstallationIdEx
+         30    C 00013270 SLGetActiveLicenseInfo
+         31    D 000133A0 SLGetApplicationInformation
+         32    E 00013440 SLGetApplicationPolicy
+         33    F 000134D0 SLGetAuthenticationResult
+         34   10 000135F0 SLGetEncryptedPIDEx
+         35   11 00013740 SLGetGenuineInformation
+         36   12 000138E0 SLGetInstalledProductKeyIds
+         37   13 00013A40 SLGetLicense
+         38   14 00013B80 SLGetLicenseFileId
+         39   15 00013CC0 SLGetLicenseInformation
+         40   16 00013D60 SLGetLicensingStatusInformation
+         41   17 00013EE0 SLGetPKeyId
+         42   18 00014060 SLGetPKeyInformation
+         43   19 00014100 SLGetPolicyInformation
+         44   1A 000141A0 SLGetPolicyInformationDWORD
+         45   1B 00014220 SLGetProductSkuInformation
+         46   1C 000142B0 SLGetSLIDList
+         47   1D 00014470 SLGetServiceInformation
+         48   1E 000144C0 SLInstallLicense
+         49   1F 000145F0 SLInstallProofOfPurchase
+         50   20 00014760 SLInstallProofOfPurchaseEx
+         51   21 00014920 SLIsGenuineLocalEx
+         52   22 000149E0 SLLoadApplicationPolicies
+         53   23 00014A70 SLOpen
+         54   24 00014B90 SLPersistApplicationPolicies
+         55   25 00014CA0 SLPersistRTSPayloadOverride
+         56   26 00014DF0 SLReArm
+         57   27 00014F00 SLRegisterEvent
+         58   28 00014FB0 SLRegisterPlugin
+         59   29 000150A0 SLSetAuthenticationData
+         60   2A 000151B0 SLSetCurrentProductKey
+         61   2B 000152B0 SLSetGenuineInformation
+         62   2C 00015410 SLUninstallLicense
+         63   2D 000154E0 SLUninstallProofOfPurchase
+         64   2E 000155B0 SLUnloadApplicationPolicies
+         65   2F 00015620 SLUnregisterEvent
+         66   30 00015690 SLUnregisterPlugin
+          2   31 0000F1F0 SLpAuthenticateGenuineTicketResponse
+          3   32 0000F390 SLpBeginGenuineTicketTransaction
+          4   33 0000F4B0 SLpClearActivationInProgress
+          5   34 0000F570 SLpDepositDownlevelGenuineTicket
+          6   35 0000F680 SLpDepositTokenActivationResponse
+          7   36 0000F800 SLpGenerateTokenActivationChallenge
+          8   37 0000F950 SLpGetGenuineBlob
+          9   38 0000FAB0 SLpGetGenuineLocal
+         10   39 0000FAF0 SLpGetLicenseAcquisitionInfo
+         11   3A 0000FCA0 SLpGetMSPidInformation
+         12   3B 0000FF00 SLpGetMachineUGUID
+         13   3C 0000FFC0 SLpGetTokenActivationGrantInfo
+         14   3D 00010170 SLpIAActivateProduct
+         15   3E 00010240 SLpProcessVMPipeMessage
+         16   3F 000103C0 SLpSetActivationInProgress
+         17   40 00010490 SLpTriggerServiceWorker
+         18   41 00010610 SLpVLActivateProduct
+
+  Summary
+
+        2000 .data
+        2000 .pdata
+        8000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       17000 .text

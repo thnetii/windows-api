@@ -1,0 +1,52 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\cryptnet.dll
+
+File Type: DLL
+
+  Section contains the following exports for CRYPTNET.dll
+
+    00000000 characteristics
+    1A60E9CE time date stamp
+        0.00 version
+           1 ordinal base
+          23 number of functions
+          23 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000146F0 CertDllVerifyCTLUsage
+          2    1 000055E0 CertDllVerifyRevocation
+          6    2 000169B0 CryptCancelAsyncRetrieval
+          7    3 00019190 CryptFlushTimeValidObject
+          8    4 00019260 CryptGetObjectUrl
+          9    5 00002DC0 CryptGetTimeValidObject
+         10    6 000194B0 CryptInstallCancelRetrieval
+         11    7 00016A30 CryptRetrieveObjectByUrlA
+         12    8 0000A550 CryptRetrieveObjectByUrlW
+         13    9 00019540 CryptUninstallCancelRetrieval
+         14    A 00014650 DllRegisterServer
+         15    B 000146A0 DllUnregisterServer
+          3    C 00015350 I_CryptConvertIriToAsciiOrUnicode
+          4    D 00015370 I_CryptConvertIriToAsciiOrUnicodeWithFlags
+         16    E 00019240 I_CryptNetAutoFlush
+         17    F 00019860 I_CryptNetEnumUrlCacheEntry
+         18   10 0001A5C0 I_CryptNetFlushOfflineUrl
+         19   11 00003D90 I_CryptNetGetConnectivity
+         20   12 00015B90 I_CryptNetGetHostNameFromUrl
+         21   13 000165F0 I_CryptNetGetUserDsStoreUrl
+         22   14 00001C00 I_CryptNetSetUrlCacheFlushInfo
+         23   15 00003310 I_CryptNetSetUrlCachePreFetchInfo
+          5   16 000160D0 LdapProvOpenStore
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        2000 .pdata
+        9000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       1F000 .text

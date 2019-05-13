@@ -1,0 +1,120 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\sqlsrv32.dll
+
+File Type: DLL
+
+  Section contains the following exports for SQLSRV32.dll
+
+    00000000 characteristics
+    17379D36 time date stamp
+        0.00 version
+           4 ordinal base
+         224 number of functions
+          90 number of names
+
+    ordinal hint RVA      name
+
+        204    0 00015200 BCP_batch
+        205    1 00015540 BCP_bind
+        206    2 00015D10 BCP_colfmt
+        208    3 00016080 BCP_collen
+        209    4 00016300 BCP_colptr
+        210    5 000164F0 BCP_columns
+        211    6 00016950 BCP_control
+        212    7 00016FE0 BCP_done
+        214    8 00017360 BCP_exec
+        226    9 00017B80 BCP_getcolfmt
+        213    A 00017ED0 BCP_init
+        215    B 00018710 BCP_moretext
+        217    C 00018D10 BCP_readfmt
+        216    D 00019AC0 BCP_sendrow
+        227    E 0001A120 BCP_setcolfmt
+        218    F 0001ADA0 BCP_writefmt
+        201   10 00078E30 ConfigDSNW
+        202   11 00079380 ConfigDriverW
+        219   12 00059C80 ConnectDlgProc
+        224   13 0005B700 FinishDlgProc
+        200   14 000080F0 LibMain
+        101   15 00001E80 SQLAllocHandle
+          4   16 00055D50 SQLBindCol
+         72   17 00055EE0 SQLBindParameter
+         55   18 0003F930 SQLBrowseConnectW
+         24   19 00044930 SQLBulkOperations
+          5   1A 0006EBA0 SQLCancel
+        103   1B 0002E370 SQLCloseCursor
+          6   1C 00056230 SQLColAttributeW
+         56   1D 0004D030 SQLColumnPrivilegesW
+         40   1E 0004D1A0 SQLColumnsW
+          7   1F 00040470 SQLConnectW
+        104   20 000564A0 SQLCopyDesc
+        203   21 0004BC10 SQLDebug
+          8   22 00056C50 SQLDescribeColW
+         58   23 00056DF0 SQLDescribeParam
+          9   24 00040780 SQLDisconnect
+         41   25 00001760 SQLDriverConnectW
+        105   26 00077550 SQLEndTran
+         11   27 0002E450 SQLExecDirectW
+         12   28 00030490 SQLExecute
+         59   29 00045070 SQLExtendedFetch
+         13   2A 00071A20 SQLFetch
+        121   2B 00045120 SQLFetchScroll
+         60   2C 0004D320 SQLForeignKeysW
+        106   2D 00005930 SQLFreeHandle
+         16   2E 00005B40 SQLFreeStmt
+        107   2F 0006EDA0 SQLGetConnectAttrW
+         42   30 0006F360 SQLGetConnectOptionW
+         17   31 00045250 SQLGetCursorNameW
+         43   32 0004A0D0 SQLGetData
+        108   33 000570F0 SQLGetDescFieldW
+        109   34 00057830 SQLGetDescRecW
+        110   35 000049F0 SQLGetDiagFieldW
+        111   36 00006130 SQLGetDiagRecW
+        112   37 0006F440 SQLGetEnvAttr
+         44   38 000671F0 SQLGetFunctions
+         45   39 00006560 SQLGetInfoW
+        114   3A 0006F4F0 SQLGetStmtAttrW
+         47   3B 0004D550 SQLGetTypeInfoW
+         61   3C 00071BA0 SQLMoreResults
+         62   3D 00030B10 SQLNativeSqlW
+         63   3E 00057AC0 SQLNumParams
+         18   3F 00057B20 SQLNumResultCols
+         48   40 00030CC0 SQLParamData
+         64   41 00057BE0 SQLParamOptions
+         19   42 00032AB0 SQLPrepareW
+         65   43 0004DEA0 SQLPrimaryKeysW
+         66   44 0004DFF0 SQLProcedureColumnsW
+         67   45 0004E120 SQLProceduresW
+         49   46 00032FB0 SQLPutData
+         20   47 00057C50 SQLRowCount
+        116   48 00006A80 SQLSetConnectAttrW
+         50   49 0006FA10 SQLSetConnectOptionW
+         21   4A 00045410 SQLSetCursorNameW
+        117   4B 00057D10 SQLSetDescFieldW
+        118   4C 00058670 SQLSetDescRec
+        119   4D 000073E0 SQLSetEnvAttr
+         68   4E 000456C0 SQLSetPos
+         69   4F 000460A0 SQLSetScrollOptions
+        120   50 0006FB20 SQLSetStmtAttrW
+         52   51 0004E230 SQLSpecialColumnsW
+         53   52 0004E3E0 SQLStatisticsW
+         70   53 0004E590 SQLTablePrivilegesW
+         54   54 0004E6E0 SQLTablesW
+        225   55 0005D560 TestDlgProc
+        220   56 0005E1E0 WizDSNDlgProc
+        222   57 0005EDF0 WizDatabaseDlgProc
+        221   58 0005F500 WizIntSecurityDlgProc
+        223   59 00060000 WizLanguageDlgProc
+
+  Summary
+
+        4000 .data
+        1000 .didat
+        3000 .pdata
+       30000 .rdata
+        2000 .reloc
+        1000 .rsrc
+        4000 .sdbid
+       7D000 .text

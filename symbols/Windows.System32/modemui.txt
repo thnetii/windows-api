@@ -1,0 +1,42 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\modemui.dll
+
+File Type: DLL
+
+  Section contains the following exports for modemui.dll
+
+    00000000 characteristics
+    A80A1092 time date stamp
+        0.00 version
+           2 ordinal base
+          14 number of functions
+          14 number of names
+
+    ordinal hint RVA      name
+
+          9    0 00010940 CountryRunOnce
+         12    1 00003D20 InvokeControlPanel
+         13    2 00006540 ModemCplDlgProc
+         14    3 0000DE50 ModemPropPagesProvider
+         15    4 00010090 QueryModemForCountrySettings
+          8    5 0000DE10 UnimodemDevConfigDialog
+         10    6 0000DC70 UnimodemGetDefaultCommConfig
+         11    7 00003250 UnimodemGetExtendedCaps
+          3    8 0000DA40 drvCommConfigDialogA
+          2    9 0000DA50 drvCommConfigDialogW
+          7    A 0000DA40 drvGetDefaultCommConfigA
+          6    B 0000DA60 drvGetDefaultCommConfigW
+          5    C 0000DA40 drvSetDefaultCommConfigA
+          4    D 0000DB00 drvSetDefaultCommConfigW
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        6000 .rdata
+        1000 .reloc
+       15000 .rsrc
+       12000 .text

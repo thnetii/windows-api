@@ -1,0 +1,91 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\clfsw32.dll
+
+File Type: DLL
+
+  Section contains the following exports for clfsw32.dll
+
+    00000000 characteristics
+    DC507123 time date stamp
+        0.00 version
+           1 ordinal base
+          63 number of functions
+          63 number of names
+
+    ordinal hint RVA      name
+
+          2    0 00002260 AddLogContainer
+          3    1 000022B0 AddLogContainerSet
+          4    2 000039D0 AdvanceLogBase
+          5    3 00003180 AlignReservedLog
+          6    4 00003260 AllocReservedLog
+          7    5 0000F940 CLFS_LSN_INVALID
+          8    6 0000F958 CLFS_LSN_NULL
+          9    7 000052B0 CloseAndResetLogFile
+         10    8 00002D50 CreateLogContainerScanContext
+         11    9 00001A20 CreateLogFile
+         12    A 000034D0 CreateLogMarshallingArea
+         13    B 000021F0 DeleteLogByHandle
+         14    C 00002130 DeleteLogFile
+         15    D 00003640 DeleteLogMarshallingArea
+         16    E 00005F20 DeregisterManageableLogClient
+         17    F 000053C0 DumpLogRecords
+         18   10 00005100 FlushLogBuffers
+         19   11 00005190 FlushLogToLsn
+         20   12 000032D0 FreeReservedLog
+         21   13 00005A90 GetLogContainerName
+         22   14 00003330 GetLogFileInformation
+         23   15 00005BD0 GetLogIoStatistics
+         24   16 00003960 GetLogReservationInfo
+         25   17 00004100 GetNextLogArchiveExtent
+         26   18 00005FF0 HandleLogFull
+         27   19 00005E50 InstallLogPolicy
+         28   1A 00006070 LogTailAdvanceFailure
+         29   1B 00006460 LsnBlockOffset
+         30   1C 00006400 LsnContainer
+         31   1D 00006420 LsnCreate
+          1   1E 000076E0 LsnDecrement
+         32   1F 00001010 LsnEqual
+         33   20 00001060 LsnGreater
+         34   21 00007690 LsnIncrement
+         35   22 000064A0 LsnInvalid
+         36   23 00001030 LsnLess
+         37   24 000063E0 LsnNull
+         38   25 00006480 LsnRecordSequence
+         39   26 00003D50 PrepareLogArchive
+         40   27 00006150 QueryLogPolicy
+         41   28 00004170 ReadLogArchiveMetadata
+         42   29 000060F0 ReadLogNotification
+         43   2A 00004A20 ReadLogRecord
+         44   2B 000036B0 ReadLogRestartArea
+         45   2C 00004B70 ReadNextLogRecord
+         46   2D 00003750 ReadPreviousLogRestartArea
+         47   2E 00006340 RegisterForLogWriteNotification
+         48   2F 00005DA0 RegisterManageableLogClient
+         49   30 000026F0 RemoveLogContainer
+         50   31 00002730 RemoveLogContainerSet
+         51   32 00005EC0 RemoveLogPolicy
+         52   33 00003A50 ReserveAndAppendLog
+         53   34 00003BD0 ReserveAndAppendLogAligned
+         54   35 00002FA0 ScanLogContainers
+         55   36 00002BD0 SetEndOfLog
+         56   37 000033B0 SetLogArchiveMode
+         57   38 00002B60 SetLogArchiveTail
+         58   39 00005F80 SetLogFileSizeWithPolicy
+         59   3A 00004210 TerminateLogArchive
+         60   3B 00005220 TerminateReadLog
+         61   3C 00002CE0 TruncateLog
+         62   3D 000042E0 ValidateLog
+         63   3E 00003840 WriteLogRestartArea
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        3000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        E000 .text

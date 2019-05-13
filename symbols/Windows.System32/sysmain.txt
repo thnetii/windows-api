@@ -1,0 +1,45 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\sysmain.dll
+
+File Type: DLL
+
+  Section contains the following exports for sysmain.dll
+
+    00000000 characteristics
+    6FFE7323 time date stamp
+        0.00 version
+           1 ordinal base
+          16 number of functions
+          16 number of names
+
+    ordinal hint RVA      name
+
+          2    0 0007E820 AgGlLoad
+          3    1 0007F1D0 AgPdLoad
+          4    2 00085970 AgTwLoad
+          5    3 000576F0 CloseReadyBoostPerfData
+          6    4 0007CC60 CollectReadyBoostPerfData
+          7    5 0007D830 DllCanUnloadNow
+          8    6 0007D870 DllGetClassObject
+          9    7 0007DA00 DllRegisterServer
+         10    8 0007DA40 DllUnregisterServer
+         11    9 0007DA80 GetProviderClassID
+         12    A 0007D240 MI_Main
+         13    B 0007CD80 OpenReadyBoostPerfData
+         14    C 0008BB60 PfSvSysprepCleanup
+         15    D 0008C280 PfSvUnattendCallback
+          1    E 0007D460 PfSvWsSwapAssessmentTask
+         16    F 0005AA50 SysMtServiceMain
+
+  Summary
+
+        3000 .data
+        1000 .didat
+        9000 .pdata
+       1F000 .rdata
+        1000 .reloc
+        B000 .rsrc
+       D1000 .text

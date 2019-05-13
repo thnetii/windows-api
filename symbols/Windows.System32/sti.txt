@@ -1,0 +1,50 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\sti.dll
+
+File Type: DLL
+
+  Section contains the following exports for STI.dll
+
+    00000000 characteristics
+    13180AE5 time date stamp
+        0.00 version
+           1 ordinal base
+          21 number of functions
+          21 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00014CE0 ??0BUFFER@@QEAA@I@Z
+          2    1 00014D10 ??0BUFFER_CHAIN@@QEAA@XZ
+          3    2 00014D30 ??0BUFFER_CHAIN_ITEM@@QEAA@I@Z
+          4    3 00014D60 ??1BUFFER@@QEAA@XZ
+          5    4 00014D80 ??1BUFFER_CHAIN@@QEAA@XZ
+          6    5 00014D90 ??1BUFFER_CHAIN_ITEM@@QEAA@XZ
+          7    6 00014DD0 ??_FBUFFER@@QEAAXXZ
+          8    7 00014DE0 ??_FBUFFER_CHAIN_ITEM@@QEAAXXZ
+          9    8 00014E00 ?QueryPtr@BUFFER@@QEBAPEAXXZ
+         10    9 00014E10 ?QuerySize@BUFFER@@QEBAIXZ
+         11    A 00014E20 ?QueryUsed@BUFFER_CHAIN_ITEM@@QEBAKXZ
+         12    B 00014E30 ?SetUsed@BUFFER_CHAIN_ITEM@@QEAAXK@Z
+         13    C 00008B30 DllCanUnloadNow
+         14    D 00002B10 DllGetClassObject
+         15    E 0000D3B0 DllRegisterServer
+         16    F 0000D400 DllUnregisterServer
+         17   10 0000DAF0 GetProxyDllInfo
+         18   11 0000D450 MigrateRegisteredSTIAppsForWIAEvents
+         19   12 0000D460 SelectDeviceDialog2
+         20   13 0000D470 StiCreateInstance
+         21   14 0000D470 StiCreateInstanceW
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        3000 .pdata
+       1A000 .rdata
+        2000 .reloc
+        8000 .rsrc
+       29000 .text

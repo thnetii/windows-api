@@ -1,0 +1,71 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\Unistore.dll
+
+File Type: DLL
+
+  Section contains the following exports for unistore.dll
+
+    00000000 characteristics
+    9A07E4DF time date stamp
+        0.00 version
+           1 ordinal base
+          42 number of functions
+          42 number of names
+
+    ordinal hint RVA      name
+
+          8    0 00013F50 AddDWORDPropertyRestrictions
+          1    1 0003DB40 AppRevisionBlobToUSBlob
+          9    2 00042400 ClearUSCache
+         10    3 000025A0 CreateStoreManager
+         11    4 00042460 CreateStoreManagerWithToken
+         12    5 0004D430 DetectExistingCorruption
+         13    6 0003F760 DisableLocalUnistore
+         14    7 0003F7C0 EnableLocalUnistore
+         15    8 000580A0 EndUnifiedStoreWorkForClient
+         16    9 00019230 FindMaxSeenRevisionForAppInBlob
+         17    A 00042520 GetCurrentProcessRundownProtectionIdentifier
+          2    B 0003F2E0 GetDeviceStoreDefaultName
+         18    C 00001F50 GetRealStoreManager
+          3    D 0001B170 GetUSDataFolderPath
+         19    E 00040270 GetUSDeviceStoreCorruptedVolumeFolderPath
+          4    F 0001B7E0 GetUSDeviceStoreFolderPath
+         20   10 000404C0 GetUSDeviceStoreVolumePath
+         21   11 0003F880 GetUSFileStreamPath
+         22   12 0004D500 GetUnistoreJetInstance
+         23   13 00040740 IsCEPropValPresent
+         24   14 00040740 IsUSPropValPresent
+         25   15 0003F960 IsUnistoreInProc
+         26   16 0003F970 IsUnistoreLocal
+         27   17 00042540 LowerRPCPriority
+         28   18 00058220 RegisterRundownProtectionForProcess
+         29   19 0004D690 ReleaseUnistoreJetInstance
+         30   1A 00015AB0 RemoveStaleChangeTrackingDataOnStore
+         31   1B 000638D0 ServiceMain
+         32   1C 0003F180 SetMaxRevisionBlobSize
+         33   1D 0003F9D0 SetUnistoreProcessEventFilter
+         34   1E 0003FAE0 SetUnistoreVersion
+         35   1F 00058270 StartUnifiedStoreWorkForClient
+         36   20 000638E0 SvchostPushServiceGlobals
+          5   21 0003E870 USBlobToAppRevisionBlob
+         37   22 0001D850 USComparePropVals
+         38   23 0000FDD0 USCopyPropVals
+         39   24 00040760 USDeleteFileEx
+         40   25 000409F0 USEventMaskToObjectType
+         41   26 00010340 USGetPropValsAncillaryBufferSize
+          6   27 0003F600 USIsObjectHidden
+          7   28 0003F670 USIsSameObject
+         42   29 00040BE0 USObjectTypeToEventMask
+
+  Summary
+
+        4000 .data
+        1000 .didat
+        D000 .pdata
+       44000 .rdata
+        3000 .reloc
+        5000 .rsrc
+       C3000 .text

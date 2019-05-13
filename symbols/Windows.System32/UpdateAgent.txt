@@ -1,0 +1,39 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\UpdateAgent.dll
+
+File Type: DLL
+
+  Section contains the following exports for UpdateAgent.dll
+
+    00000000 characteristics
+    4E832AB7 time date stamp
+        0.00 version
+           1 ordinal base
+          10 number of functions
+          10 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000365B0 CreateDeploymentSession
+          2    1 00036560 CreateDeploymentSessionEx
+          3    2 00036510 CreateOfflineDeploymentSession
+          4    3 0000E890 UA_CommitActionList
+          5    4 0000D340 UA_CreateActionList
+          6    5 0000D5C0 UA_CreateDownloadList
+          7    6 0000E380 UA_CreateDownloadListFromActionList
+          8    7 0000D7D0 UA_CreatePackageListFromDownloadList
+          9    8 0000E6F0 UA_InstallActionList
+         10    9 0000E4A0 UA_ReleaseDownloadList
+
+  Summary
+
+        C000 .data
+        1000 .didat
+        D000 .pdata
+       A8000 .rdata
+        2000 .reloc
+        1000 .rsrc
+      1E3000 .text

@@ -1,0 +1,64 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\InkObjCore.dll
+
+File Type: DLL
+
+  Section contains the following exports for inkobjcore.dll
+
+    00000000 characteristics
+    A49CB941 time date stamp
+        0.00 version
+           1 ordinal base
+          35 number of functions
+          35 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00015DA0 AddStroke
+          2    1 00015E80 AddStrokeWithId
+          3    2 00016D40 AddWordsToWordList
+          4    3 00016990 AdviseInkChange
+          5    4 00015B90 CreateContext
+          6    5 000157D0 CreateRecognizer
+          7    6 00015CC0 DestroyContext
+          8    7 000158F0 DestroyRecognizer
+          9    8 00016C50 DestroyWordList
+         10    9 00003F70 DllCanUnloadNow
+         11    A 00003F90 DllGetClassObject
+         12    B 000040B0 DllRegisterServer
+         13    C 00004180 DllUnregisterServer
+         14    D 000161C0 EndInkInput
+         15    E 00015470 GetAllRecognizers
+         16    F 00016040 GetBestResultString
+         17   10 00016550 GetLatticePtr
+         18   11 000167F0 GetLeftSeparator
+         19   12 00015AD0 GetRecoAttributes
+         20   13 00016700 GetResultPropertyList
+         21   14 000168C0 GetRightSeparator
+         22   15 000159E0 GetUnicodeRanges
+         23   16 00004210 InvokeIDispatch
+         24   17 00016A40 IsStringSupported
+         25   18 000171D0 LoadCachedAttributes
+         26   19 00016B00 MakeWordList
+         27   1A 00016270 Process
+         28   1B 000163E0 SetConstraint
+         29   1C 00016100 SetEnabledUnicodeRanges
+         30   1D 00016320 SetFactoid
+         31   1E 000164A0 SetFlags
+         32   1F 00015820 SetGuide
+         33   20 00015F80 SetStrokeGroupId
+         34   21 00016610 SetTextContext
+         35   22 00016E00 SetWordList
+
+  Summary
+
+        8000 .data
+        1000 .didat
+        7000 .pdata
+       34000 .rdata
+        2000 .reloc
+       19000 .rsrc
+       88000 .text

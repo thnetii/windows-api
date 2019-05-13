@@ -1,0 +1,90 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\RpcNs4.dll
+
+File Type: DLL
+
+  Section contains the following exports for RPCNS4.dll
+
+    00000000 characteristics
+    90649ECC time date stamp
+        0.00 version
+           1 ordinal base
+          62 number of functions
+          62 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001010 I_RpcNsGetBuffer
+          2    1 00001010 I_RpcNsNegotiateTransferSyntax
+          3    2 00001050 I_RpcNsRaiseException
+          4    3 00001010 I_RpcNsSendReceive
+          5    4 00001010 I_RpcReBindBuffer
+          6    5          RpcIfIdVectorFree (forwarded to RPCRT4.RpcIfIdVectorFree)
+          7    6 00001030 RpcNsBindingExportA
+          8    7 00001010 RpcNsBindingExportPnPA
+          9    8 00001010 RpcNsBindingExportPnPW
+         10    9 00001010 RpcNsBindingExportW
+         11    A 00001010 RpcNsBindingImportBeginA
+         12    B 00001010 RpcNsBindingImportBeginW
+         13    C 00001010 RpcNsBindingImportDone
+         14    D 00001010 RpcNsBindingImportNext
+         15    E 00001010 RpcNsBindingLookupBeginA
+         16    F 00001010 RpcNsBindingLookupBeginW
+         17   10 00001010 RpcNsBindingLookupDone
+         18   11 00001010 RpcNsBindingLookupNext
+         19   12 00001010 RpcNsBindingSelect
+         20   13 00001030 RpcNsBindingUnexportA
+         21   14 00001010 RpcNsBindingUnexportPnPA
+         22   15 00001010 RpcNsBindingUnexportPnPW
+         23   16 00001010 RpcNsBindingUnexportW
+         24   17 00001010 RpcNsEntryExpandNameA
+         25   18 00001010 RpcNsEntryExpandNameW
+         26   19 00001010 RpcNsEntryObjectInqBeginA
+         27   1A 00001010 RpcNsEntryObjectInqBeginW
+         28   1B 00001010 RpcNsEntryObjectInqDone
+         29   1C 00001010 RpcNsEntryObjectInqNext
+         30   1D 00001010 RpcNsGroupDeleteA
+         31   1E 00001010 RpcNsGroupDeleteW
+         32   1F 00001010 RpcNsGroupMbrAddA
+         33   20 00001010 RpcNsGroupMbrAddW
+         34   21 00001010 RpcNsGroupMbrInqBeginA
+         35   22 00001010 RpcNsGroupMbrInqBeginW
+         36   23 00001010 RpcNsGroupMbrInqDone
+         37   24 00001010 RpcNsGroupMbrInqNextA
+         38   25 00001010 RpcNsGroupMbrInqNextW
+         39   26 00001010 RpcNsGroupMbrRemoveA
+         40   27 00001010 RpcNsGroupMbrRemoveW
+         41   28 00001010 RpcNsMgmtBindingUnexportA
+         42   29 00001010 RpcNsMgmtBindingUnexportW
+         43   2A 00001010 RpcNsMgmtEntryCreateA
+         44   2B 00001010 RpcNsMgmtEntryCreateW
+         45   2C 00001010 RpcNsMgmtEntryDeleteA
+         46   2D 00001010 RpcNsMgmtEntryDeleteW
+         47   2E 00001010 RpcNsMgmtEntryInqIfIdsA
+         48   2F 00001010 RpcNsMgmtEntryInqIfIdsW
+         49   30 00001010 RpcNsMgmtHandleSetExpAge
+         50   31 00001010 RpcNsMgmtInqExpAge
+         51   32 00001010 RpcNsMgmtSetExpAge
+         52   33 00001010 RpcNsProfileDeleteA
+         53   34 00001010 RpcNsProfileDeleteW
+         54   35 00001010 RpcNsProfileEltAddA
+         55   36 00001010 RpcNsProfileEltAddW
+         56   37 00001010 RpcNsProfileEltInqBeginA
+         57   38 00001010 RpcNsProfileEltInqBeginW
+         58   39 00001010 RpcNsProfileEltInqDone
+         59   3A 00001010 RpcNsProfileEltInqNextA
+         60   3B 00001010 RpcNsProfileEltInqNextW
+         61   3C 00001010 RpcNsProfileEltRemoveA
+         62   3D 00001010 RpcNsProfileEltRemoveW
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        1000 .text

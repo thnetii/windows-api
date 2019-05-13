@@ -1,0 +1,76 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\sscore.dll
+
+File Type: DLL
+
+  Section contains the following exports for sscore.dll
+
+    00000000 characteristics
+    936D5A7D time date stamp
+        0.00 version
+           1 ordinal base
+          47 number of functions
+          47 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00002FB0 SsCoreAliasAdd
+          2    1 00002FC0 SsCoreAliasAddEx
+          3    2 000030C0 SsCoreAliasDel
+          4    3 000030D0 SsCoreAliasDelEx
+          5    4 00001130 SsCoreCloseInstance
+          6    5 00003320 SsCoreCompleteCsvVolumeDrain
+          7    6 00003390 SsCoreDeregisterNetnameForMultichannel
+          8    7 000033C0 SsCoreFileDel
+          9    8 000033E0 SsCoreFileDelForInstance
+         10    9 00003460 SsCoreFileEnum
+         11    A 000034C0 SsCoreFileEnumForInstance
+         12    B 000036A0 SsCoreFileNotifyClose
+         13    C 000036C0 SsCoreFileNotifyCloseForInstance
+         14    D 00003740 SsCoreFreeBuffer
+         15    E 00003750 SsCoreInitialize
+         16    F 00003760 SsCoreInitializeEx
+         17   10 00003860 SsCoreInvalidationRequest
+         18   11 00003960 SsCoreLockVolumes
+         19   12 000039D0 SsCoreMarkAsClusterSvc
+         20   13 00003A40 SsCoreNodeResetInfo
+         21   14 00003A70 SsCoreNodeSetInfo
+         22   15 00001010 SsCoreOpenInstance
+         23   16 00003B00 SsCoreRefreshSrvCredentialHandle
+         24   17 00003B60 SsCoreRegisterNetnameForMultichannel
+         25   18 00003B80 SsCoreServerTransportSetInfo
+         26   19 00003C50 SsCoreSessionDel
+         27   1A 00003C70 SsCoreSessionDelForInstance
+         28   1B 00003D00 SsCoreSessionEnlist
+         29   1C 00003DA0 SsCoreSessionEnum
+         30   1D 00003DF0 SsCoreSessionEnumForInstance
+         31   1E 00003FA0 SsCoreSetMaxClusterDialect
+         32   1F 00004010 SsCoreShareAdd
+         33   20 00001140 SsCoreShareAddEx
+         34   21 00004050 SsCoreShareAddForInstance
+         35   22 00004220 SsCoreShareCleanup
+         36   23 00004260 SsCoreShareDel
+         37   24 00004280 SsCoreShareDelForInstance
+         38   25 00004340 SsCoreShareGetInfo
+         39   26 00004370 SsCoreShareGetInfoForInstance
+         40   27 000044E0 SsCoreShareSetInfo
+         41   28 00004530 SsCoreShareSetInfoForInstance
+         42   29 000046D0 SsCoreShareShutdownForScope
+         43   2A 000047A0 SsCoreStartCsvVolumeDrain
+         44   2B 00004810 SsCoreStartInstance
+         45   2C 00004890 SsCoreStopInstance
+         46   2D 00004910 SsCoreUninitialize
+         47   2E 00004990 SsCoreUnlockVolumes
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        4000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        7000 .text

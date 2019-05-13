@@ -1,0 +1,41 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\eShims.dll
+
+File Type: DLL
+
+  Section contains the following exports for EShims.dll
+
+    00000000 characteristics
+    EE2D4273 time date stamp
+        0.00 version
+           1 ordinal base
+          11 number of functions
+          11 number of names
+
+    ordinal hint RVA      name
+
+          2    0 00012880 IEShims_CreateFileW
+          3    1 00012970 IEShims_FindClose
+          4    2 000129D0 IEShims_FindFirstFileW
+          5    3 00012590 IEShims_GetFileAttributesExW
+          6    4 00012A70 IEShims_GetFileAttributesW
+          7    5 00012B40 IEShims_GetFullPathNameW
+          8    6 00012D00 IEShims_GetLongPathNameW
+          9    7 00001E40 IEShims_Initialize
+         10    8 00008FE0 IEShims_Uninitialize
+         11    9 000126E0 IEShims_WNetGetConnectionW
+          1    A 0000F910 RegisterFlashShimHandler
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        3000 .mrdata
+        2000 .pdata
+        A000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       15000 .text

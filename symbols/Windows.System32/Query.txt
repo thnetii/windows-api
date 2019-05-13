@@ -1,0 +1,76 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\Query.dll
+
+File Type: DLL
+
+  Section contains the following exports for query.dll
+
+    00000000 characteristics
+     53B8AD2 time date stamp
+        0.00 version
+           1 ordinal base
+          48 number of functions
+          48 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00008400 BeginCacheTransaction
+         32    1 000085F0 BindIFilterFromStorage
+         33    2 000086E0 BindIFilterFromStream
+          2    3 00008400 CIBuildQueryNode
+          3    4 00008400 CIBuildQueryTree
+          4    5 00008400 CICreateCommand
+          5    6 00008400 CIGetGlobalPropertyList
+          6    7 00008400 CIMakeICommand
+          7    8 00008400 CIRestrictionToFullTree
+         34    9 00008400 CIRevertToSelf
+         35    A 00002540 CIShutdown
+          8    B 00008400 CIState
+          9    C 00008400 CITextToFullTree
+         10    D 00008400 CITextToFullTreeEx
+         11    E 00008400 CITextToSelectTree
+         12    F 00008400 CITextToSelectTreeEx
+         13   10 00002540 CiCreateSecurityDescriptor
+         14   11 00002540 CiSvcMain
+         15   12 00008410 CollectCIISAPIPerformanceData
+         16   13 00008410 CollectCIPerformanceData
+         17   14 00008410 CollectFILTERPerformanceData
+         36   15 000023A0 DllCanUnloadNow
+         37   16 00001130 DllGetClassObject
+         38   17 00008240 DllRegisterServer
+         39   18 00008370 DllUnregisterServer
+         18   19 00008410 DoneCIISAPIPerformanceData
+         19   1A 00008410 DoneCIPerformanceData
+         20   1B 00008410 DoneFILTERPerformanceData
+         21   1C 00008400 EndCacheTransaction
+         22   1D 00008400 FsCiShutdown
+         23   1E 00008410 InitializeCIISAPIPerformanceData
+         24   1F 00008410 InitializeCIPerformanceData
+         25   20 00008410 InitializeFILTERPerformanceData
+         40   21 00008400 InternalBindIFilterFromDocCLSID
+         41   22 00008400 InternalBindIFilterFromFileName
+         42   23 00008400 InternalBindIFilterFromStorage
+         43   24 00008400 InternalBindIFilterFromStream
+         26   25 00008510 LoadBinaryFilter
+         44   26 000087D0 LoadIFilter
+         45   27 000088C0 LoadIFilterEx
+         27   28 00008580 LoadTextFilter
+         46   29 00008400 LocateCatalogs
+         47   2A 00008400 LocateCatalogsA
+         48   2B 00008400 LocateCatalogsW
+         28   2C 00008400 SetCatalogState
+         29   2D 00008400 SetupCache
+         30   2E 00008400 SetupCacheEx
+         31   2F 00002540 SvcEntry_CiSvc
+
+  Summary
+
+        4000 .data
+        1000 .pdata
+        8000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        E000 .text

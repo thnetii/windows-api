@@ -1,0 +1,58 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\InputHost.dll
+
+File Type: DLL
+
+  Section contains the following exports for InputHost.dll
+
+    00000000 characteristics
+    D5EB338F time date stamp
+        0.00 version
+        2601 ordinal base
+          30 number of functions
+          23 number of names
+
+    ordinal hint RVA      name
+
+       2612    0 000038B0 CreateComboButtonProxy
+       2613    1 00005C90 CreateCursorClient
+       2614    2 00005C50 CreateCursorManager
+       2615    3 00003740 CreateDragOperationPrivate
+       2616    4 000044E0 CreateGenericInputHost
+       2617    5 00080C80 CreateHeatGripServiceClient
+       2618    6 00004610 CreateInputDeviceWatcher
+       2619    7 00004430 CreateInputHost
+       2620    8 00004440 CreateInputHostForProcess
+       2621    9 0000C980 CreateInputSystemClientConnection
+       2622    A 00004B60 CreateMPCManagerClient
+       2608    B 00004600 CreatePointerInputHost
+       2609    C 00004600 CreateTouchInputHost
+       2623    D 00004630 CreateViewHitTestRequestClient
+       2624    E 00007140 DllCanUnloadNow
+       2625    F 00006F30 DllGetActivationFactory
+       2626   10 000070A0 DllGetClassObject
+       2627   11 00004830 SetInputButtonEnabledOnIdle
+       2628   12 000048B0 SetInputDeviceIndicatorState
+       2629   13 000047A0 SetInputDeviceRepeatParameters
+       2610   14 00004920 SetInputFocus
+       2611   15 00004600 TouchInputHostCreate
+       2630   16 00004620 ViewHitTestClientCreate
+       2601      00005480 [NONAME]
+       2602      00005610 [NONAME]
+       2603      00005680 [NONAME]
+       2604      00005530 [NONAME]
+       2605      000055D0 [NONAME]
+       2606      000056F0 [NONAME]
+       2607      00005760 [NONAME]
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        8000 .pdata
+       32000 .rdata
+        4000 .reloc
+       8A000 .text

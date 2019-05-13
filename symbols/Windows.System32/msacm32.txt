@@ -1,0 +1,71 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\msacm32.dll
+
+File Type: DLL
+
+  Section contains the following exports for MSACM32.dll
+
+    00000000 characteristics
+    A416F17E time date stamp
+        0.00 version
+           1 ordinal base
+          42 number of functions
+          42 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00006CE0 acmDriverAddA
+          2    1 00006D80 acmDriverAddW
+          3    2 00006EB0 acmDriverClose
+          4    3 00006F20 acmDriverDetailsA
+          5    4 000070C0 acmDriverDetailsW
+          6    5 00007160 acmDriverEnum
+          7    6 000072A0 acmDriverID
+          8    7 00007360 acmDriverMessage
+          9    8 000074E0 acmDriverOpen
+         10    9 00007590 acmDriverPriority
+         11    A 000077A0 acmDriverRemove
+         12    B 0000FFF0 acmFilterChooseA
+         13    C 00010290 acmFilterChooseW
+         14    D 00007B40 acmFilterDetailsA
+         15    E 00007C40 acmFilterDetailsW
+         16    F 00007F10 acmFilterEnumA
+         17   10 00007FF0 acmFilterEnumW
+         18   11 00008400 acmFilterTagDetailsA
+         19   12 000084F0 acmFilterTagDetailsW
+         20   13 00008700 acmFilterTagEnumA
+         21   14 000087E0 acmFilterTagEnumW
+         22   15 00010600 acmFormatChooseA
+         23   16 000108A0 acmFormatChooseW
+         24   17 00009870 acmFormatDetailsA
+         25   18 00009970 acmFormatDetailsW
+         26   19 00009C70 acmFormatEnumA
+         27   1A 00009D40 acmFormatEnumW
+         28   1B 0000AC80 acmFormatSuggest
+         29   1C 0000A400 acmFormatTagDetailsA
+         30   1D 0000A4F0 acmFormatTagDetailsW
+         31   1E 0000A740 acmFormatTagEnumA
+         32   1F 000011F0 acmFormatTagEnumW
+         33   20 00003140 acmGetVersion
+         34   21 0000A820 acmMetrics
+         35   22 0000AF70 acmStreamClose
+         36   23 0000B110 acmStreamConvert
+         37   24 0000B2C0 acmStreamMessage
+         38   25 0000B360 acmStreamOpen
+         39   26 0000B8C0 acmStreamPrepareHeader
+         40   27 0000BA60 acmStreamReset
+         41   28 0000BAE0 acmStreamSize
+         42   29 0000BC00 acmStreamUnprepareHeader
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        5000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       11000 .text

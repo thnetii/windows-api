@@ -1,0 +1,37 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\MTFServer.dll
+
+File Type: DLL
+
+  Section contains the following exports for MTFSERVER.dll
+
+    00000000 characteristics
+    ED8BC329 time date stamp
+        0.00 version
+           1 ordinal base
+           9 number of functions
+           9 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00004850 DllCanUnloadNow
+          2    1 00004720 DllGetClassObject
+          3    2 00004690 MTF_Close
+          4    3 00004610 MTF_Deinit
+          5    4 000046D0 MTF_GetServer
+          6    5 00004680 MTF_IOControl
+          7    6 00004510 MTF_Init
+          8    7 00004690 MTF_Open
+          9    8 000046A0 MTF_SetPrivateMode
+
+  Summary
+
+        1000 .data
+        2000 .pdata
+       11000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       2C000 .text

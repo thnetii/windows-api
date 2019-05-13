@@ -1,0 +1,206 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\odbc32.dll
+
+File Type: DLL
+
+  Section contains the following exports for ODBC32.dll
+
+    00000000 characteristics
+     D0A166F time date stamp
+        0.00 version
+           1 ordinal base
+         301 number of functions
+         176 number of names
+
+    ordinal hint RVA      name
+
+         79    0 00056FD0 CloseODBCPerfData
+         80    1 00057030 CollectODBCPerfData
+         81    2 00029D40 CursorLibLockDbc
+         82    3 00029D90 CursorLibLockDesc
+         83    4 00029DE0 CursorLibLockStmt
+         85    5 0004A310 CursorLibTransact
+         87    6 00054C50 DllBidEntryPoint
+         88    7 00054DA0 GetODBCSharedData
+         89    8 000433B0 LockHandle
+         84    9 000550C0 ODBCGetTryWaitValue
+         90    A 000310E0 ODBCInternalConnectW
+        301    B 000642F0 ODBCQualifyFileDSNW
+         86    C 0000CDD0 ODBCSetTryWaitValue
+         91    D 00057F70 OpenODBCPerfData
+         92    E 0003D1D0 PostComponentError
+         93    F 0003D4F0 PostODBCComponentError
+         94   10 0003D560 PostODBCError
+          1   11 00009F30 SQLAllocConnect
+          2   12 00002550 SQLAllocEnv
+         24   13 00006FE0 SQLAllocHandle
+         77   14 00040220 SQLAllocHandleStd
+          3   15 000696B0 SQLAllocStmt
+          4   16 0002E5C0 SQLBindCol
+         25   17 00047B30 SQLBindParam
+         72   18 00047D20 SQLBindParameter
+         55   19 000644D0 SQLBrowseConnect
+        255   1A 000644D0 SQLBrowseConnectA
+        155   1B 000311C0 SQLBrowseConnectW
+         78   1C 0002D7D0 SQLBulkOperations
+          5   1D 00040CF0 SQLCancel
+         95   1E 00041200 SQLCancelHandle
+         26   1F 00035F60 SQLCloseCursor
+         27   20 00029EE0 SQLColAttribute
+        227   21 00029EE0 SQLColAttributeA
+        127   22 0002A8A0 SQLColAttributeW
+          6   23 0002AB70 SQLColAttributes
+        206   24 0002AB70 SQLColAttributesA
+        106   25 0002B4E0 SQLColAttributesW
+         56   26 000584E0 SQLColumnPrivileges
+        256   27 000584E0 SQLColumnPrivilegesA
+        156   28 00058E10 SQLColumnPrivilegesW
+         40   29 000590E0 SQLColumns
+        240   2A 000590E0 SQLColumnsA
+        140   2B 00059A20 SQLColumnsW
+         96   2C 00029290 SQLCompleteAsync
+          7   2D 00064D70 SQLConnect
+        207   2E 00064D70 SQLConnectA
+        107   2F 000320D0 SQLConnectW
+         28   30 000387E0 SQLCopyDesc
+         57   31 00065330 SQLDataSources
+        257   32 00065330 SQLDataSourcesA
+        157   33 00059CF0 SQLDataSourcesW
+          8   34 0002B6E0 SQLDescribeCol
+        208   35 0002B6E0 SQLDescribeColA
+        108   36 0002BF90 SQLDescribeColW
+         58   37 00047F50 SQLDescribeParam
+          9   38 0000B8E0 SQLDisconnect
+         41   39 000040D0 SQLDriverConnect
+        241   3A 000040D0 SQLDriverConnectA
+        141   3B 00004650 SQLDriverConnectW
+         71   3C 00065870 SQLDrivers
+        271   3D 00065870 SQLDriversA
+        171   3E 0005B220 SQLDriversW
+         29   3F 0004B6D0 SQLEndTran
+         10   40 0003D790 SQLError
+        210   41 0003D790 SQLErrorA
+        110   42 0003DA60 SQLErrorW
+         11   43 00041490 SQLExecDirect
+        211   44 00041490 SQLExecDirectA
+        111   45 00041B70 SQLExecDirectW
+         12   46 00041D50 SQLExecute
+         59   47 00051D30 SQLExtendedFetch
+         13   48 000522D0 SQLFetch
+         30   49 00052840 SQLFetchScroll
+         60   4A 0005C1C0 SQLForeignKeys
+        260   4B 0005C1C0 SQLForeignKeysA
+        160   4C 0005CE40 SQLForeignKeysW
+         14   4D 00009E70 SQLFreeConnect
+         15   4E 00040420 SQLFreeEnv
+         31   4F 00001170 SQLFreeHandle
+         16   50 00069820 SQLFreeStmt
+         32   51 00065D50 SQLGetConnectAttr
+        232   52 00065D50 SQLGetConnectAttrA
+        132   53 00044210 SQLGetConnectAttrW
+         42   54 00066090 SQLGetConnectOption
+        242   55 00066090 SQLGetConnectOptionA
+        142   56 00044410 SQLGetConnectOptionW
+         17   57 00066310 SQLGetCursorName
+        217   58 00066310 SQLGetCursorNameA
+        117   59 000362A0 SQLGetCursorNameW
+         43   5A 00052DD0 SQLGetData
+         33   5B 00039010 SQLGetDescField
+        233   5C 00039010 SQLGetDescFieldA
+        133   5D 000396F0 SQLGetDescFieldW
+         34   5E 00039910 SQLGetDescRec
+        234   5F 00039910 SQLGetDescRecA
+        134   60 0003A120 SQLGetDescRecW
+         35   61 00066650 SQLGetDiagField
+        235   62 00066650 SQLGetDiagFieldA
+        135   63 0003DD40 SQLGetDiagFieldW
+         36   64 00066900 SQLGetDiagRec
+        236   65 00066900 SQLGetDiagRecA
+        136   66 0000B060 SQLGetDiagRecW
+         37   67 00001A70 SQLGetEnvAttr
+         44   68 00054580 SQLGetFunctions
+         45   69 00066BF0 SQLGetInfo
+        245   6A 00066BF0 SQLGetInfoA
+        145   6B 000022A0 SQLGetInfoW
+         38   6C 000445E0 SQLGetStmtAttr
+        238   6D 000445E0 SQLGetStmtAttrA
+        138   6E 00044840 SQLGetStmtAttrW
+         46   6F 00044A00 SQLGetStmtOption
+         47   70 0005D1E0 SQLGetTypeInfo
+        247   71 0005D1E0 SQLGetTypeInfoA
+        147   72 0005D730 SQLGetTypeInfoW
+         61   73 00053580 SQLMoreResults
+         62   74 00066FB0 SQLNativeSql
+        262   75 00066FB0 SQLNativeSqlA
+        162   76 00036650 SQLNativeSqlW
+         63   77 000483C0 SQLNumParams
+         18   78 0002EAB0 SQLNumResultCols
+         48   79 00048730 SQLParamData
+         64   7A 00048BC0 SQLParamOptions
+         19   7B 00042280 SQLPrepare
+        219   7C 00042280 SQLPrepareA
+        119   7D 00042870 SQLPrepareW
+         65   7E 0005D830 SQLPrimaryKeys
+        265   7F 0005D830 SQLPrimaryKeysA
+        165   80 0005DFF0 SQLPrimaryKeysW
+         66   81 0005E270 SQLProcedureColumns
+        266   82 0005E270 SQLProcedureColumnsA
+        166   83 0005EBA0 SQLProcedureColumnsW
+         67   84 0005EE70 SQLProcedures
+        267   85 0005EE70 SQLProceduresA
+        167   86 0005F630 SQLProceduresW
+         49   87 000491B0 SQLPutData
+         20   88 0002C2A0 SQLRowCount
+         39   89 000673A0 SQLSetConnectAttr
+        239   8A 000673A0 SQLSetConnectAttrA
+        139   8B 0000A000 SQLSetConnectAttrW
+         50   8C 000677B0 SQLSetConnectOption
+        250   8D 000677B0 SQLSetConnectOptionA
+        150   8E 00044B50 SQLSetConnectOptionW
+         21   8F 00067A10 SQLSetCursorName
+        221   90 00067A10 SQLSetCursorNameA
+        121   91 00036AD0 SQLSetCursorNameW
+         73   92 0003A490 SQLSetDescField
+        273   93 0003A490 SQLSetDescFieldA
+        173   94 0003AC60 SQLSetDescFieldW
+         74   95 0003ADF0 SQLSetDescRec
+         75   96 00002630 SQLSetEnvAttr
+         22   97 00049740 SQLSetParam
+         68   98 0002DD80 SQLSetPos
+         69   99 00036EE0 SQLSetScrollOptions
+         76   9A 00044CC0 SQLSetStmtAttr
+        276   9B 00044CC0 SQLSetStmtAttrA
+        176   9C 00044EA0 SQLSetStmtAttrW
+         51   9D 00044FF0 SQLSetStmtOption
+         52   9E 0005F8B0 SQLSpecialColumns
+        252   9F 0005F8B0 SQLSpecialColumnsA
+        152   A0 00060250 SQLSpecialColumnsW
+         53   A1 00060560 SQLStatistics
+        253   A2 00060560 SQLStatisticsA
+        153   A3 00060E50 SQLStatisticsW
+         70   A4 00061130 SQLTablePrivileges
+        270   A5 00061130 SQLTablePrivilegesA
+        170   A6 000618F0 SQLTablePrivilegesW
+         54   A7 00061B70 SQLTables
+        254   A8 00061B70 SQLTablesA
+        154   A9 00062480 SQLTablesW
+         23   AA 0004B950 SQLTransact
+         97   AB 0003ECA0 SearchStatusCode
+         98   AC 0003F280 VFreeErrors
+         99   AD 0000A890 VRetrieveDriverErrorsRowCol
+        100   AE 0003F330 ValidateErrorQueue
+        101   AF 000A6A80 g_hHeapMalloc
+
+  Summary
+
+        3000 .data
+        1000 .didat
+        3000 .pdata
+       36000 .rdata
+        2000 .reloc
+        1000 .rsrc
+        4000 .sdbid
+       6F000 .text

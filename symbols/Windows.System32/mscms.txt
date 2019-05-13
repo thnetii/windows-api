@@ -1,0 +1,158 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\mscms.dll
+
+File Type: DLL
+
+  Section contains the following exports for mscms.dll
+
+    00000000 characteristics
+    700DAFEC time date stamp
+        0.00 version
+           1 ordinal base
+         235 number of functions
+         129 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00016A70 AssociateColorProfileWithDeviceA
+          2    1 00016B70 AssociateColorProfileWithDeviceW
+          3    2 00014AA0 CheckBitmapBits
+          4    3 00014C70 CheckColors
+          5    4 00010DD0 CloseColorProfile
+          6    5 0000A0A0 CloseDisplay
+        217    6 000347D0 ColorAdapterGetCurrentProfileCalibration
+        211    7 00034930 ColorAdapterGetDisplayCurrentStateID
+        216    8 00034AC0 ColorAdapterGetDisplayProfile
+        215    9 00034C40 ColorAdapterGetDisplayTargetWhitePoint
+        214    A 00034E30 ColorAdapterGetDisplayTransformData
+        210    B 00034FD0 ColorAdapterGetSystemModifyWhitePointCaps
+        218    C 000350F0 ColorAdapterRegisterOEMColorService
+        219    D 00035180 ColorAdapterUnregisterOEMColorService
+        213    E 00035210 ColorAdapterUpdateDeviceProfile
+        212    F 00035320 ColorAdapterUpdateDisplayGamma
+          7   10 0002AAA0 ColorCplGetDefaultProfileScope
+          8   11 0002ABD0 ColorCplGetDefaultRenderingIntentScope
+          9   12 0002AC40 ColorCplGetProfileProperties
+         10   13 0002AC70 ColorCplHasSystemWideAssociationListChanged
+         11   14 0002AD30 ColorCplInitialize
+         12   15 0002AD90 ColorCplLoadAssociationList
+         13   16 0002B280 ColorCplMergeAssociationLists
+         14   17 0002B340 ColorCplOverwritePerUserAssociationList
+         15   18 0002B470 ColorCplReleaseProfileProperties
+         16   19 0002B4A0 ColorCplResetSystemWideAssociationListChangedWarning
+         17   1A 0002B540 ColorCplSaveAssociationList
+         18   1B 0002B780 ColorCplSetUsePerUserProfiles
+         19   1C 0002B900 ColorCplUninitialize
+        230   1D 00035830 ColorProfileAddDisplayAssociation
+        234   1E 000358F0 ColorProfileGetDisplayDefault
+        233   1F 00035A40 ColorProfileGetDisplayList
+        235   20 00035C50 ColorProfileGetDisplayUserScope
+        231   21 00035D10 ColorProfileRemoveDisplayAssociation
+        232   22 00035DC0 ColorProfileSetDisplayDefaultAssociation
+         20   23 00010F00 ConvertColorNameToIndex
+         21   24 00011060 ConvertIndexToColorName
+         22   25 00014D70 CreateColorTransformA
+         23   26 00014EA0 CreateColorTransformW
+         24   27 000111C0 CreateDeviceLinkProfile
+         25   28 00014EB0 CreateMultiProfileTransform
+         26   29 00011380 CreateProfileFromLogColorSpaceA
+         27   2A 00011480 CreateProfileFromLogColorSpaceW
+         28   2B 000331A0 DccwCreateDisplayProfileAssociationList
+         29   2C 000331F0 DccwGetDisplayProfileAssociationList
+         30   2D 00036770 DccwGetGamutSize
+         31   2E 00033200 DccwReleaseDisplayProfileAssociationList
+         32   2F 00033230 DccwSetDisplayProfileAssociationList
+         33   30 00015210 DeleteColorTransform
+         34   31 00018070 DeviceRenameEvent
+         35   32 00018260 DisassociateColorProfileFromDeviceA
+         36   33 00018350 DisassociateColorProfileFromDeviceW
+         37   34 0000A460 DllCanUnloadNow
+         38   35 0000A4E0 DllGetClassObject
+         39   36 00018600 EnumColorProfilesA
+         40   37 00018830 EnumColorProfilesW
+         41   38 000018F0 GenerateCopyFilePaths
+         42   39 00015410 GetCMMInfo
+         43   3A 000189B0 GetColorDirectoryA
+         44   3B 00001EA0 GetColorDirectoryW
+         45   3C 00011820 GetColorProfileElement
+         46   3D 000119C0 GetColorProfileElementTag
+         47   3E 00011A70 GetColorProfileFromHandle
+         48   3F 00011B60 GetColorProfileHeader
+         49   40 00011C40 GetCountColorProfileElements
+         50   41 000120A0 GetNamedProfileInfo
+         51   42 000121D0 GetPS2ColorRenderingDictionary
+         52   43 00012390 GetPS2ColorRenderingIntent
+         53   44 00012530 GetPS2ColorSpaceArray
+         54   45 00019AD0 GetStandardColorSpaceProfileA
+         55   46 00019C60 GetStandardColorSpaceProfileW
+         56   47 0001A220 InstallColorProfileA
+         57   48 0001A2A0 InstallColorProfileW
+        205   49 00034400 InternalGetAppliedGammaRamp
+         58   4A 0001C670 InternalGetDeviceConfig
+        206   4B 00009F00 InternalGetDeviceGammaCapability
+         59   4C 00026370 InternalGetPS2CSAFromLCS
+         60   4D 00026710 InternalGetPS2ColorRenderingDictionary
+        200   4E 00026740 InternalGetPS2ColorRenderingDictionary2
+         61   4F 00026AD0 InternalGetPS2ColorSpaceArray
+        202   50 00026B10 InternalGetPS2ColorSpaceArray2
+         62   51 00026E40 InternalGetPS2PreviewCRD
+        201   52 00026E80 InternalGetPS2PreviewCRD2
+         63   53 00008990 InternalRefreshCalibration
+         64   54 0001CF90 InternalSetDeviceConfig
+        203   55 00034500 InternalSetDeviceGammaRamp
+        204   56 000345F0 InternalSetDeviceTemperature
+         65   57 0001D1E0 InternalWcsAssociateColorProfileWithDevice
+         66   58 0001D210 InternalWcsDisassociateColorProfileWithDevice
+         67   59 00012CA0 IsColorProfileTagPresent
+         68   5A 00012D60 IsColorProfileValid
+         69   5B 00012F20 OpenColorProfileA
+         70   5C 00013060 OpenColorProfileW
+         71   5D 00007EA0 OpenDisplay
+         72   5E 00015E50 RegisterCMMA
+         73   5F 00015F00 RegisterCMMW
+         74   60 00015F10 SelectCMM
+         75   61 000130A0 SetColorProfileElement
+         76   62 00013250 SetColorProfileElementReference
+         77   63 000133F0 SetColorProfileElementSize
+         78   64 000136E0 SetColorProfileHeader
+         79   65 0001ECE0 SetStandardColorSpaceProfileA
+         80   66 0001ED60 SetStandardColorSpaceProfileW
+         81   67 0001EEC0 SpoolerCopyFileEvent
+         82   68 00015FE0 TranslateBitmapBits
+         83   69 00016330 TranslateColors
+         84   6A 0001F390 UninstallColorProfileA
+         85   6B 0001F410 UninstallColorProfileW
+         86   6C 00016510 UnregisterCMMA
+         87   6D 00016580 UnregisterCMMW
+         88   6E 0001F710 WcsAssociateColorProfileWithDevice
+         89   6F 00016590 WcsCheckColors
+         90   70 00037F90 WcsCreateIccProfile
+         91   71 0001F790 WcsDisassociateColorProfileFromDevice
+         92   72 0001F7F0 WcsEnumColorProfiles
+         93   73 0001F840 WcsEnumColorProfilesSize
+         94   74 000326A0 WcsGetCalibrationManagementState
+         95   75 0001F890 WcsGetDefaultColorProfile
+         96   76 0001F8F0 WcsGetDefaultColorProfileSize
+         97   77 00001B70 WcsGetDefaultRenderingIntent
+         98   78 0001F920 WcsGetUsePerUserProfiles
+         99   79 0002C120 WcsGpCanInstallOrUninstallProfiles
+        100   7A 000141C0 WcsOpenColorProfileA
+        101   7B 00014310 WcsOpenColorProfileW
+        102   7C 000328C0 WcsSetCalibrationManagementState
+        103   7D 0001F970 WcsSetDefaultColorProfile
+        104   7E 0001F980 WcsSetDefaultRenderingIntent
+        105   7F 0001FA70 WcsSetUsePerUserProfiles
+        106   80 00016670 WcsTranslateColors
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        5000 .pdata
+       19000 .rdata
+        1000 .reloc
+       11000 .rsrc
+       79000 .text

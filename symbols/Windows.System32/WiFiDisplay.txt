@@ -1,0 +1,51 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\WiFiDisplay.dll
+
+File Type: DLL
+
+  Section contains the following exports for WiFiDisplay.dll
+
+    00000000 characteristics
+     46C653B time date stamp
+        0.00 version
+           1 ordinal base
+          22 number of functions
+          22 number of names
+
+    ordinal hint RVA      name
+
+          2    0 00002F80 CloseMiracastSession
+          3    1 000031C0 CreateDAFProviderMiracastHelper
+          1    2 00003FA0 CreateInfraCastSourceConnector
+          4    3 00003230 CreateWiFiDisplayEtwProvider
+          5    4 000031D0 IsMiracastSupportedByWlan
+          6    5 00002D60 MiracastFreeMemory
+          7    6 00002CE0 MiracastIeDecode
+          8    7 00002C60 MiracastIeEncode
+          9    8 00003330 MiracastQueryParameters
+         10    9 00003B00 MiracastRegisterDatarateCallback
+         11    A 00003E40 MiracastUnregisterDatarateCallback
+         12    B 00002D70 OpenMiracastSession
+         13    C 00003090 VsIeProviderGetFunctionTable
+         14    D 00003710 WFDDisplaySinkCloseSession
+         15    E 00003470 WFDDisplaySinkDeInit
+         16    F 00003350 WFDDisplaySinkInit
+         17   10 00003560 WFDDisplaySinkQueryCapabilities
+         18   11 00003830 WFDDisplaySinkSetPersistedGroupIDList
+         19   12 00003990 WFDDisplaySinkSetProperty
+         20   13 00003340 WFDDisplaySinkStart
+         21   14 00003550 WFDDisplaySinkStartEx
+         22   15 00003700 WFDDisplaySinkStop
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        3000 .pdata
+       11000 .rdata
+        1000 .reloc
+        2000 .rsrc
+       4A000 .text

@@ -1,0 +1,51 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\srpapi.dll
+
+File Type: DLL
+
+  Section contains the following exports for srpapi.dll
+
+    00000000 characteristics
+    76EB9EC4 time date stamp
+        0.00 version
+           1 ordinal base
+          21 number of functions
+          21 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00005540 AiEvaluatePlugin
+          2    1 00005C30 AppIDDecodeAttributeString
+          3    2 00005B50 AppIDEncodeAttributeString
+          4    3 00005D10 AppIDFreeAttributeString
+          5    4 00001190 SrpCloseThreadNetworkContext
+          6    5 00006050 SrpCloseTrackInstall
+          7    6 00001110 SrpCreateThreadNetworkContext
+          8    7 00001740 SrpDisablePermissiveModeFileEncryption
+          9    8 00001390 SrpDoesPolicyAllowAppExecution
+         10    9 000016F0 SrpEnablePermissiveModeFileEncryption
+         11    A 000057A0 SrpGetAllowedEnterprises
+         12    B 00006100 SrpGetAppxFqbnFromPackageFullName
+         13    C 00001460 SrpGetEnterpriseIds
+         14    D 00001590 SrpGetEnterprisePolicy
+         15    E 00001300 SrpInheritEnterpriseContext
+         16    F 00005E40 SrpInheritOriginClaim
+         17   10 00004760 SrpIsAllowed
+         18   11 00006D30 SrpIsTokenService
+         19   12 00005FC0 SrpOpenTrackInstall
+         20   13 00001340 SrpRestoreEnterpriseContext
+         21   14 00001210 SrpSetTokenEnterpriseId
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        D000 .rdata
+        1000 .reloc
+        5000 .rsrc
+       11000 .text
+        1000 PAGE

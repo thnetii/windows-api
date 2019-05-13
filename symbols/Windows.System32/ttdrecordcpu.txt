@@ -1,0 +1,59 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\ttdrecordcpu.dll
+
+File Type: DLL
+
+  Section contains the following exports for TTDRecordCPU.dll
+
+    00000000 characteristics
+    1185D864 time date stamp
+        0.00 version
+           1 ordinal base
+          31 number of functions
+          31 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00045F6C ClearClientTlsValueForThreadId
+          2    1 000382D0 EndRandomSample
+          3    2 000389AC FlushCodeCaches
+          4    3 00045FA4 GetClientTlsValueForThreadId
+          5    4 0004639C GetInstructionCounts
+          6    5 000382D0 GetRandomSampleSequence
+          7    6 00039900 GetRegisterOffsets
+          8    7 0004668C InitializeSmartCpu
+          9    8 00045BEC InitializeSmartCpuClient
+         10    9 00046350 IsEmulatingCurrentThread
+         11    A 00087195 IsSimulating
+         12    B 0003800C RegisterContextInstrumentationCallbacks
+         13    C 00037F3C RegisterInstrumentationCallbacks
+         14    D 00038068 RegisterRecordCallbacks
+         15    E 00046A84 RequestUnhookedFunctions
+         16    F 00046404 ResetMaxInstructionsToEmulate
+         17   10 0004646C ResumeSimulation
+         18   11 00045E04 RunCallbackWithSmartContextForThreadByHandle
+         19   12 00045F2C SetClientTlsValueForCurrentThread
+         20   13 00045ED0 SetClientTlsValueForThreadByHandle
+         21   14 00045F04 SetClientTlsValueForThreadContext
+         22   15 00045FC4 SetRandomSampling
+         23   16 00038948 SetRuntimeOptions
+         24   17 00045D58 SetThreadNative
+         25   18 00087180 SmartEnterSync
+         26   19 000382B0 StartBacktrace
+         27   1A 000462CC StartEmulatingCurrentThread
+         28   1B 00046310 StopEmulatingCurrentThread
+         29   1C 000389C4 SyncGuestMachineState
+         30   1D 00087190 TryPauseSimulation
+         31   1E 001797A0 g_debugOffsetInfo
+
+  Summary
+
+       92000 .data
+        5000 .pdata
+       82000 .rdata
+        9000 .reloc
+        1000 .rsrc
+       AA000 .text

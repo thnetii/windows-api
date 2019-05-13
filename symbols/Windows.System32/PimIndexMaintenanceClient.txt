@@ -1,0 +1,45 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\PimIndexMaintenanceClient.dll
+
+File Type: DLL
+
+  Section contains the following exports for PimIndexMaintenanceClient.DLL
+
+    00000000 characteristics
+    54D5234E time date stamp
+        0.00 version
+           1 ordinal base
+          16 number of functions
+          16 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001610 CreateIndexedFilterClient
+          5    1 00004070 CreatePOOMSortedAggregateDataSource
+          2    2 00003D50 GetDefaultContactsFilterSupplierSortOrder
+          6    3 000087D0 PimIMClient_CacheAggregateCacheFileMapping
+          7    4 00003B50 PimIMClient_Free
+          8    5 000087F0 PimIMClient_LoadAggregateCache
+          9    6 00008750 PimIMClient_RebuildAggregateCache
+         10    7 00003CF0 PimIMClient_ResetInprocService
+         11    8 000087A0 PimIMClient_Resume
+         12    9 00008770 PimIMClient_Suspend
+         13    A 00008720 PimIMClient_UpdateItems
+         14    B 000086F0 PimIMClient_UpdateStores
+         15    C 00003AA0 PimIM_RpcConnect
+         16    D 00003B10 PimIM_RpcDisconnect
+          3    E 00003B80 WaitForCookie
+          4    F 00003C50 WaitForCookieValueToSet
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        5000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        9000 .text

@@ -1,0 +1,46 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\accountaccessor.dll
+
+File Type: DLL
+
+  Section contains the following exports for AccountAccessor.dll
+
+    00000000 characteristics
+    28501A40 time date stamp
+        0.00 version
+           1 ordinal base
+          17 number of functions
+          17 number of names
+
+    ordinal hint RVA      name
+
+          6    0 00005920 CreateDefaultWindowsLiveAccount
+          7    1 00005B10 DllCanUnloadNow
+          8    2 00005B40 DllGetClassObject
+          9    3 00012390 FindMatchingPartnership
+         10    4 0000EE70 GetConversationSyncDateFilter
+          1    5 0000EC10 GetConversationSyncEnabled
+          2    6 0000F170 GetUnifiedInboxEnabled
+          3    7 0000F240 GetUnifiedInboxServerValue
+         11    8 0000EFB0 IsExtendedConversationSyncDateFiltersSupported
+         12    9 00012210 LoadGoldenPartnershipAccessor
+         13    A 0000ED20 SetConversationSyncDateFilter
+          4    B 0000EB40 SetConversationSyncEnabled
+          5    C 0000F0A0 SetUnifiedInboxEnabled
+         14    D 00012D50 UnenrollAndMarkAccountForDeletion
+         15    E 00014640 UpdateGoogleAccountConversationFlags
+         16    F 000146A0 UpdateGoogleAccountServerSendsMeetingProp
+         17   10 00013C60 UpdateWebDavAccountProperties
+
+  Summary
+
+        3000 .data
+        1000 .didat
+        3000 .pdata
+        F000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       2E000 .text

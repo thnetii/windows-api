@@ -1,0 +1,44 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\fvecerts.dll
+
+File Type: DLL
+
+  Section contains the following exports for FVECERTS.dll
+
+    00000000 characteristics
+    AD6CAF0E time date stamp
+        0.00 version
+           1 ordinal base
+          15 number of functions
+          15 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000022F0 FveCertCanCertificateBeAdded
+          2    1 00002130 FveCertCreateCertInfo
+          3    2 00002BA0 FveCertCreateSelfSignedCertificate
+          4    3 00002730 FveCertFilterForValidCertificates
+          5    4 000025E0 FveCertFindValidCertificates
+          6    5 00002250 FveCertFreeCertInfo
+          7    6 00001C50 FveCertGetCertContextFromCert
+          8    7 000014D0 FveCertGetCertContextFromPfx
+          9    8 00002090 FveCertGetCertHashFromCertContext
+         10    9 000010D0 FveCertGetPrivateKeyHandle
+         11    A 00001020 FveCertGetPublicKeyHandle
+         12    B 00002A10 FveCertIsAlternateCert
+         13    C 00002280 FveCertIsValidCertInfo
+         14    D 00002DD0 FveCertSignData
+         15    E 000018C0 FveCertWritePfxFromCertContext
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        4000 .text

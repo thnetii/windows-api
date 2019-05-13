@@ -1,0 +1,157 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\pdh.dll
+
+File Type: DLL
+
+  Section contains the following exports for pdh.dll
+
+    00000000 characteristics
+    98625652 time date stamp
+        0.00 version
+           1 ordinal base
+         129 number of functions
+         129 number of names
+
+    ordinal hint RVA      name
+
+         12    0 00012FB0 PdhAdd009CounterA
+         13    1 000028A0 PdhAdd009CounterW
+         14    2 00013150 PdhAddCounterA
+         15    3 00003530 PdhAddCounterW
+         16    4 00013340 PdhAddEnglishCounterA
+         17    5 00002890 PdhAddEnglishCounterW
+         18    6 00017650 PdhAddRelogCounter
+         19    7 00013350 PdhAddV1Counter
+         20    8 00013430 PdhAddV2Counter
+         21    9 00019090 PdhBindInputDataSourceA
+         22    A 00019220 PdhBindInputDataSourceW
+         23    B 00034F20 PdhBrowseCountersA
+         24    C 00034FC0 PdhBrowseCountersHA
+         25    D 00035060 PdhBrowseCountersHW
+         26    E 00035100 PdhBrowseCountersW
+         27    F 0000FD40 PdhCalculateCounterFromRawValue
+         28   10 00019590 PdhCloseLog
+         29   11 000084C0 PdhCloseQuery
+         30   12 000052B0 PdhCollectQueryData
+         31   13 00013510 PdhCollectQueryDataEx
+         32   14 00013740 PdhCollectQueryDataWithTime
+         33   15 0000FF00 PdhComputeCounterStatistics
+         34   16 000351A0 PdhConnectMachineA
+         35   17 000352A0 PdhConnectMachineW
+         36   18 00024450 PdhCreateSQLTablesA
+         37   19 00024500 PdhCreateSQLTablesW
+         38   1A 00024570 PdhEnumLogSetNamesA
+         39   1B 00024690 PdhEnumLogSetNamesW
+         40   1C 00035350 PdhEnumMachinesA
+         41   1D 000354D0 PdhEnumMachinesHA
+         42   1E 00035640 PdhEnumMachinesHW
+         43   1F 000357C0 PdhEnumMachinesW
+         44   20 00035940 PdhEnumObjectItemsA
+         45   21 00035BB0 PdhEnumObjectItemsHA
+         46   22 00035F40 PdhEnumObjectItemsHW
+         47   23 00036250 PdhEnumObjectItemsW
+         48   24 000364C0 PdhEnumObjectsA
+         49   25 00036660 PdhEnumObjectsHA
+         50   26 00036860 PdhEnumObjectsHW
+         51   27 00036A30 PdhEnumObjectsW
+         52   28 00039FC0 PdhExpandCounterPathA
+         53   29 00039FF0 PdhExpandCounterPathW
+         54   2A 0003A020 PdhExpandWildCardPathA
+         55   2B 0003A1C0 PdhExpandWildCardPathHA
+         56   2C 0003A320 PdhExpandWildCardPathHW
+         57   2D 0003A420 PdhExpandWildCardPathW
+         58   2E 00013820 PdhFormatFromRawValue
+         59   2F 000100D0 PdhGetCounterInfoA
+         60   30 00010170 PdhGetCounterInfoW
+         61   31 00009D40 PdhGetCounterTimeBase
+         62   32 00019650 PdhGetDataSourceTimeRangeA
+         63   33 000197B0 PdhGetDataSourceTimeRangeH
+         64   34 000199F0 PdhGetDataSourceTimeRangeW
+         65   35 00036BD0 PdhGetDefaultPerfCounterA
+         66   36 00036CA0 PdhGetDefaultPerfCounterHA
+         67   37 00036D00 PdhGetDefaultPerfCounterHW
+         68   38 00036D60 PdhGetDefaultPerfCounterW
+         69   39 00036E40 PdhGetDefaultPerfObjectA
+         70   3A 00036F00 PdhGetDefaultPerfObjectHA
+         71   3B 00036F60 PdhGetDefaultPerfObjectHW
+         72   3C 00037000 PdhGetDefaultPerfObjectW
+         73   3D 00013960 PdhGetDllVersion
+         74   3E 00037130 PdhGetExplainText
+         75   3F 00010210 PdhGetFormattedCounterArrayA
+         76   40 00001590 PdhGetFormattedCounterArrayW
+         77   41 00001230 PdhGetFormattedCounterValue
+         78   42 00019B10 PdhGetLogFileSize
+         79   43 00019C70 PdhGetLogFileTypeA
+         80   44 00019D60 PdhGetLogFileTypeW
+         81   45 00024780 PdhGetLogSetGUID
+         82   46 000103A0 PdhGetRawCounterArrayA
+         83   47 000020C0 PdhGetRawCounterArrayW
+         84   48 000104F0 PdhGetRawCounterValue
+         85   49 00013980 PdhIsRealTimeQuery
+         86   4A 00019E90 PdhListLogFileHeaderA
+         87   4B 0001A070 PdhListLogFileHeaderW
+         88   4C 00011F00 PdhLookupPerfIndexByNameA
+         89   4D 000120F0 PdhLookupPerfIndexByNameW
+         90   4E 00012240 PdhLookupPerfNameByIndexA
+         91   4F 00012420 PdhLookupPerfNameByIndexW
+         92   50 000371B0 PdhMakeCounterPathA
+         93   51 000375B0 PdhMakeCounterPathW
+         94   52 0001A260 PdhOpenLogA
+         95   53 0001A430 PdhOpenLogW
+         96   54 00008E60 PdhOpenQuery
+         97   55 000139E0 PdhOpenQueryA
+         98   56 00013AD0 PdhOpenQueryH
+         99   57 00008E60 PdhOpenQueryW
+        100   58 00037A10 PdhParseCounterPathA
+        101   59 00037EB0 PdhParseCounterPathW
+        102   5A 000382E0 PdhParseInstanceNameA
+        103   5B 00038660 PdhParseInstanceNameW
+        104   5C 0001A700 PdhReadRawLogRecord
+        105   5D 00017810 PdhRelogA
+        106   5E 00017970 PdhRelogW
+        107   5F 00013D00 PdhRemoveCounter
+        108   60 00017E30 PdhResetRelogCounterValues
+        109   61 0003A5D0 PdhSelectDataSourceA
+        110   62 0003A6A0 PdhSelectDataSourceW
+        111   63 000106C0 PdhSetCounterScaleFactor
+        112   64 00017ED0 PdhSetCounterValue
+        113   65 00038990 PdhSetDefaultRealTimeDataSource
+        114   66 00024890 PdhSetLogSetRunID
+        115   67 00013EB0 PdhSetQueryTimeRange
+        116   68 00013FA0 PdhTranslate009CounterA
+        117   69 000140C0 PdhTranslate009CounterW
+        118   6A 00014190 PdhTranslateLocaleCounterA
+        119   6B 00002A50 PdhTranslateLocaleCounterW
+        120   6C 0001A870 PdhUpdateLogA
+        121   6D 0001A950 PdhUpdateLogFileCatalog
+        122   6E 0001AA00 PdhUpdateLogW
+        123   6F 000389C0 PdhValidatePathA
+        124   70 000389D0 PdhValidatePathExA
+        125   71 00038AA0 PdhValidatePathExW
+        126   72 000390F0 PdhValidatePathW
+          1   73 00015530 PdhVbAddCounter
+          2   74 00015590 PdhVbCreateCounterPathList
+          3   75 00015770 PdhVbGetCounterPathElements
+          4   76 000159C0 PdhVbGetCounterPathFromList
+          5   77 00015BA0 PdhVbGetDoubleCounterValue
+          6   78 00015C00 PdhVbGetLogFileSize
+          7   79 00015C80 PdhVbGetOneCounterPath
+          8   7A 00015DA0 PdhVbIsGoodStatus
+          9   7B 00015DD0 PdhVbOpenLog
+         10   7C 00015DE0 PdhVbOpenQuery
+         11   7D 00015E40 PdhVbUpdateLog
+        127   7E 00024920 PdhVerifySQLDBA
+        128   7F 000249D0 PdhVerifySQLDBW
+        129   80 00018020 PdhWriteRelogSample
+
+  Summary
+
+        1000 .data
+        2000 .pdata
+        C000 .rdata
+        1000 .reloc
+        2000 .rsrc
+       3A000 .text

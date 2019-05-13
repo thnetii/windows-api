@@ -1,0 +1,173 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\hhsetup.dll
+
+File Type: DLL
+
+  Section contains the following exports for hhsetup.dll
+
+    00000000 characteristics
+    FAEDC09F time date stamp
+        0.00 version
+           1 ordinal base
+         145 number of functions
+         145 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001690 ??0CCollection@@QEAA@XZ
+          2    1 00001010 ??0CFIFOString@@QEAA@XZ
+          3    2 00005B40 ??0CFolder@@QEAA@XZ
+          4    3 000012F0 ??0CLocation@@QEAA@XZ
+          5    4 00001010 ??0CPointerList@@QEAA@XZ
+          6    5 00006220 ??0CTitle@@QEAA@XZ
+          7    6 00001780 ??1CCollection@@QEAA@XZ
+          8    7 000075F0 ??1CFIFOString@@QEAA@XZ
+          9    8 00005B80 ??1CFolder@@QEAA@XZ
+         10    9 00001320 ??1CLocation@@QEAA@XZ
+         11    A 00001640 ??1CPointerList@@QEAA@XZ
+         12    B 00006170 ??1CTitle@@QEAA@XZ
+         13    C 00001220 ??4CCollection@@QEAAAEAV0@AEBV0@@Z
+         14    D 00001020 ??4CFIFOString@@QEAAAEAV0@AEBV0@@Z
+         15    E 000010D0 ??4CFolder@@QEAAAEAV0@AEBV0@@Z
+         16    F 000013C0 ??4CLocation@@QEAAAEAV0@AEBV0@@Z
+         17   10 00001020 ??4CPointerList@@QEAAAEAV0@AEBV0@@Z
+         18   11 000012D0 ??4CTitle@@QEAAAEAV0@AEBV0@@Z
+         19   12 00001650 ?Add@CPointerList@@QEAAPEAUListItem@@PEAX@Z
+         20   13 00005D00 ?AddChildFolder@CFolder@@QEAAKPEAV1@@Z
+         21   14 00005C30 ?AddChildFolder@CFolder@@QEAAPEAV1@PEBDKPEAKG@Z
+         22   15 00006330 ?AddChildFolder@CFolder@@QEAAPEAV1@PEBGKPEAKG@Z
+         23   16 00001D00 ?AddCollection@CCollection@@QEAAPEAVCColList@@XZ
+         24   17 00004F90 ?AddFolder@CCollection@@QEAAPEAVCFolder@@PEBDKPEAKG@Z
+         25   18 00006920 ?AddFolder@CCollection@@QEAAPEAVCFolder@@PEBGKPEAKG@Z
+         26   19 00005310 ?AddLocation@CCollection@@QEAAPEAVCLocation@@PEBD000PEAK@Z
+         27   1A 00006AE0 ?AddLocation@CCollection@@QEAAPEAVCLocation@@PEBG000PEAK@Z
+         28   1B 00005E10 ?AddLocationHistory@CTitle@@QEAAKKPEBD00PEBVCLocation@@00H@Z
+         29   1C 000063A0 ?AddLocationHistory@CTitle@@QEAAKKPEBG00PEBVCLocation@@00H@Z
+         30   1D 00001150 ?AddRef@CCollection@@QEAAXXZ
+         31   1E 000028A0 ?AddRefedTitle@CCollection@@AEAAKPEAVCFolder@@@Z
+         32   1F 00007600 ?AddTail@CFIFOString@@QEAAKPEAD@Z
+         33   20 00005130 ?AddTitle@CCollection@@QEAAPEAVCTitle@@PEBD0000GIPEAVCLocation@@PEAKH0@Z
+         34   21 00006990 ?AddTitle@CCollection@@QEAAPEAVCTitle@@PEBG0000GIPEAVCLocation@@PEAKH0@Z
+         35   22 00001E00 ?AllocCopyValue@CCollection@@AEAAKPEAVCParseXML@@PEADPEAPEAD@Z
+         36   23 00001580 ?AllocSetValue@@YAKPEBDPEAPEAD@Z
+         37   24 00004F30 ?CheckTitleRef@CCollection@@AEAAKPEBDG@Z
+         38   25 00006660 ?CheckTitleRef@CCollection@@AEAAKPEBGG@Z
+         39   26 00004C20 ?Close@CCollection@@QEAAKXZ
+         40   27 00001110 ?ConfirmTitles@CCollection@@QEAAXXZ
+         41   28 000011F0 ?DecrementRefTitleCount@CCollection@@QEAAXXZ
+         42   29 000017E0 ?DeleteChildren@CCollection@@AEAAXPEAPEAVCFolder@@@Z
+         43   2A 00005400 ?DeleteFolder@CCollection@@QEAAKPEAVCFolder@@@Z
+         44   2B 00005A60 ?DeleteFolders@CCollection@@AEAAXPEAPEAVCFolder@@@Z
+         45   2C 000055F0 ?DeleteLocalFiles@CCollection@@AEAAXPEAULocationHistory@@PEAVCTitle@@@Z
+         46   2D 00005850 ?DeleteLocation@CCollection@@AEAAKPEAVCLocation@@@Z
+         47   2E 00005490 ?DeleteTitle@CCollection@@AEAAKPEAVCTitle@@@Z
+         48   2F 00001200 ?Dirty@CCollection@@QEAAXXZ
+         49   30 00001CB0 ?FindCollection@CCollection@@QEAAPEAVCColList@@PEBD@Z
+         50   31 00004EA0 ?FindLocation@CCollection@@QEAAPEAVCLocation@@PEBDPEAI@Z
+         51   32 000068C0 ?FindLocation@CCollection@@QEAAPEAVCLocation@@PEBGPEAI@Z
+         52   33 00004DE0 ?FindTitle@CCollection@@QEAAPEAVCTitle@@PEBDG@Z
+         53   34 00006860 ?FindTitle@CCollection@@QEAAPEAVCTitle@@PEBGG@Z
+         54   35 00001060 ?First@CPointerList@@QEAAPEAUListItem@@XZ
+         55   36 00004E90 ?FirstLocation@CCollection@@QEAAPEAVCLocation@@XZ
+         56   37 000011B0 ?GetColNo@CCollection@@QEAAKXZ
+         57   38 000011C0 ?GetCollectionFileName@CCollection@@QEAAPEBDXZ
+         58   39 00006C00 ?GetCollectionFileNameW@CCollection@@QEAAPEBGXZ
+         59   3A 00001140 ?GetFindMergedCHMS@CCollection@@QEAAHXZ
+         60   3B 00005C20 ?GetFirstChildFolder@CFolder@@QEAAPEAV1@XZ
+         61   3C 00004DD0 ?GetFirstTitle@CCollection@@QEAAPEAVCTitle@@XZ
+         62   3D 00001060 ?GetId@CLocation@@QEBAPEADXZ
+         63   3E 00001060 ?GetId@CTitle@@QEAAPEADXZ
+         64   3F 000065A0 ?GetIdW@CLocation@@QEAAPEBGXZ
+         65   40 00006300 ?GetIdW@CTitle@@QEAAPEBGXZ
+         66   41 00005790 ?GetLangId@CCollection@@QEAAGPEBD@Z
+         67   42 00006C30 ?GetLangId@CCollection@@QEAAGPEBG@Z
+         68   43 00001080 ?GetLanguage@CFolder@@QEAAGXZ
+         69   44 00005D90 ?GetLanguage@CTitle@@QEAAGXZ
+         70   45 00006140 ?GetLocation@CTitle@@QEAAPEAULocationHistory@@K@Z
+         71   46 000018C0 ?GetMasterCHM@CCollection@@QEAAHPEAPEADPEAG@Z
+         72   47 00006790 ?GetMasterCHM@CCollection@@QEAAHPEAPEAGPEAG@Z
+         73   48 000018B0 ?GetNextFolder@CFolder@@QEAAPEAV1@XZ
+         74   49 00004DD0 ?GetNextLocation@CLocation@@QEAAPEAV1@XZ
+         75   4A 00006160 ?GetNextTitle@CTitle@@QEAAPEAV1@XZ
+         76   4B 00005C10 ?GetOrder@CFolder@@QEAAKXZ
+         77   4C 000010C0 ?GetParent@CFolder@@QEAAPEAV1@XZ
+         78   4D 000062B0 ?GetPath@CLocation@@QEAAPEADXZ
+         79   4E 00006600 ?GetPathW@CLocation@@QEAAPEBGXZ
+         80   4F 000011A0 ?GetRefTitleCount@CCollection@@QEAAKXZ
+         81   50 00001180 ?GetRootFolder@CCollection@@QEAAPEAVCFolder@@XZ
+         82   51 000018B0 ?GetSampleLocation@CCollection@@QEAAPEADXZ
+         83   52 00006710 ?GetSampleLocationW@CCollection@@QEAAPEBGXZ
+         84   53 000076A0 ?GetTail@CFIFOString@@QEAAKPEAPEAD@Z
+         85   54 00001060 ?GetTitle@CFolder@@QEAAPEADXZ
+         86   55 000011C0 ?GetTitle@CLocation@@QEAAPEADXZ
+         87   56 00006300 ?GetTitleW@CFolder@@QEAAPEBGXZ
+         88   57 000065D0 ?GetTitleW@CLocation@@QEAAPEBGXZ
+         89   58 00001160 ?GetVersion@CCollection@@QEAAKXZ
+         90   59 00001190 ?GetVisableRootFolder@CCollection@@QEAAPEAVCFolder@@XZ
+         91   5A 00006160 ?GetVolume@CLocation@@QEAAPEADXZ
+         92   5B 00006630 ?GetVolumeW@CLocation@@QEAAPEBGXZ
+         93   5C 00002470 ?HandleCollection@CCollection@@AEAAKPEAVCParseXML@@PEAD@Z
+         94   5D 00002390 ?HandleCollectionEntry@CCollection@@AEAAKPEAVCParseXML@@PEAD@Z
+         95   5E 000026B0 ?HandleFolder@CCollection@@AEAAKPEAVCParseXML@@PEAD@Z
+         96   5F 000028D0 ?HandleLocation@CCollection@@AEAAKPEAVCParseXML@@PEAD@Z
+         97   60 00002A30 ?HandleTitle@CCollection@@AEAAKPEAVCParseXML@@PEAD@Z
+         98   61 000011E0 ?IncrementRefTitleCount@CCollection@@QEAAXXZ
+         99   62 000011D0 ?IsDirty@CCollection@@QEAAHXZ
+        100   63 00005B30 ?MergeKeywords@CCollection@@QEAAHPEAD@Z
+        101   64 00006BD0 ?MergeKeywords@CCollection@@QEAAHPEAG@Z
+        102   65 000052A0 ?NewLocation@CCollection@@AEAAPEAVCLocation@@XZ
+        103   66 00005DA0 ?NewLocationHistory@CTitle@@QEAAPEAULocationHistory@@XZ
+        104   67 000050D0 ?NewTitle@CCollection@@AEAAPEAVCTitle@@XZ
+        105   68 00001030 ?Next@CPointerList@@QEAAPEAUListItem@@PEAU2@@Z
+        106   69 00001940 ?Open@CCollection@@QEAAKPEBD@Z
+        107   6A 00006810 ?Open@CCollection@@QEAAKPEBG@Z
+        108   6B 00001EA0 ?ParseFile@CCollection@@AEAAKPEBD@Z
+        109   6C 000017C0 ?Release@CCollection@@AEAAKXZ
+        110   6D 000075A0 ?RemoveAll@CFIFOString@@QEAAXXZ
+        111   6E 00001600 ?RemoveAll@CPointerList@@QEAAXXZ
+        112   6F 00005980 ?RemoveCollection@CCollection@@QEAAKH@Z
+        113   70 00001D60 ?RemoveCollectionEntry@CCollection@@QEAAXPEBD@Z
+        114   71 00002ED0 ?Save@CCollection@@QEAAKXZ
+        115   72 00005BD0 ?SetExTitlePtr@CFolder@@QEAAXPEAVCExTitle@@@Z
+        116   73 00001130 ?SetFindMergedCHMS@CCollection@@QEAAXH@Z
+        117   74 000010A0 ?SetFirstChildFolder@CFolder@@QEAAXPEAV1@@Z
+        118   75 00005BB0 ?SetId@CLocation@@QEAAXPEBD@Z
+        119   76 000062C0 ?SetId@CLocation@@QEAAXPEBG@Z
+        120   77 00005BB0 ?SetId@CTitle@@QEAAXPEBD@Z
+        121   78 000062C0 ?SetId@CTitle@@QEAAXPEBG@Z
+        122   79 00001070 ?SetLanguage@CFolder@@QEAAXG@Z
+        123   7A 00005D80 ?SetLanguage@CTitle@@QEAAXG@Z
+        124   7B 00001900 ?SetMasterCHM@CCollection@@QEAAXPEBDG@Z
+        125   7C 00006740 ?SetMasterCHM@CCollection@@QEAAXPEBGG@Z
+        126   7D 00001090 ?SetNextFolder@CFolder@@QEAAXPEAV1@@Z
+        127   7E 000013B0 ?SetNextLocation@CLocation@@QEAAXPEAV1@@Z
+        128   7F 000012C0 ?SetNextTitle@CTitle@@QEAAXPEAV1@@Z
+        129   80 00005C00 ?SetOrder@CFolder@@QEAAXK@Z
+        130   81 000010B0 ?SetParent@CFolder@@QEAAXPEAV1@@Z
+        131   82 00006270 ?SetPath@CLocation@@QEAAXPEBD@Z
+        132   83 00006520 ?SetPath@CLocation@@QEAAXPEBG@Z
+        133   84 00001880 ?SetSampleLocation@CCollection@@QEAAXPEBD@Z
+        134   85 000066C0 ?SetSampleLocation@CCollection@@QEAAXPEBG@Z
+        135   86 00005BB0 ?SetTitle@CFolder@@QEAAXPEBD@Z
+        136   87 000062C0 ?SetTitle@CFolder@@QEAAXPEBG@Z
+        137   88 00006250 ?SetTitle@CLocation@@QEAAXPEBD@Z
+        138   89 000064E0 ?SetTitle@CLocation@@QEAAXPEBG@Z
+        139   8A 00001170 ?SetVersion@CCollection@@QEAAXK@Z
+        140   8B 00006290 ?SetVolume@CLocation@@QEAAXPEBD@Z
+        141   8C 00006560 ?SetVolume@CLocation@@QEAAXPEBG@Z
+        142   8D 00004660 ?WriteFolder@CCollection@@AEAAHPEAPEAVCFolder@@@Z
+        143   8E 000045E0 ?WriteFolders@CCollection@@AEAAHPEAPEAVCFolder@@@Z
+        144   8F 00001040 ?bIsVisable@CFolder@@QEAAHXZ
+        145   90 000058E0 ?wssResetNextColNum@CCollection@@AEAAXXZ
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        4000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        9000 .text

@@ -1,0 +1,45 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\bthpanapi.dll
+
+File Type: DLL
+
+  Section contains the following exports for bthpanapi.dll
+
+    00000000 characteristics
+    1614F1FF time date stamp
+        0.00 version
+           1 ordinal base
+          17 number of functions
+          17 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00003B50 BluetoothCloseNetworkHandle
+          2    1 00004060 BluetoothConnectToNetwork
+          3    2 00003040 BluetoothCreateNetworkHandle
+          4    3 000042A0 BluetoothDisconnectFromNetwork
+          5    4 00003120 BluetoothDuplicateNetworkHandle
+          6    5 00003C10 BluetoothFindFirstNetwork
+          7    6 00003F80 BluetoothFindNetworkClose
+          8    7 00003E70 BluetoothFindNextNetwork
+          9    8 000031D0 BluetoothGetIncompleteConnectedNetworkHandle
+         10    9 000038A0 BluetoothGetNetworkAddress
+         11    A 000037C0 BluetoothGetNetworkAvailableRoles
+         12    B 000036E0 BluetoothGetNetworkContainerId
+         13    C 00003580 BluetoothGetNetworkInterfaceId
+         14    D 00003390 BluetoothGetNetworkName
+         15    E 00003980 BluetoothGetNetworkStatus
+         16    F 00004430 BluetoothRegisterNetworkNotifications
+         17   10 000045C0 BluetoothUnregisterNetworkNotifications
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        5000 .text

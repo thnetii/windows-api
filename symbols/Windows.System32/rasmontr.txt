@@ -1,0 +1,43 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\rasmontr.dll
+
+File Type: DLL
+
+  Section contains the following exports for RASMONTR.dll
+
+    00000000 characteristics
+    D3F4D7F8 time date stamp
+        0.00 version
+           1 ordinal base
+          14 number of functions
+          14 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00016510 GetDiagnosticFunctions
+          2    1 000161D0 InitHelperDll
+          3    2 000174E0 RutlAlloc
+          4    3 000178B0 RutlAssignmentFromTokenAndDword
+          5    4 00017760 RutlAssignmentFromTokens
+          6    5 000174D0 RutlCloseDumpFile
+          7    6 00017450 RutlCreateDumpFile
+          8    7 000175E0 RutlDwordDup
+          9    8 00017520 RutlFree
+         10    9 00017610 RutlGetOsVersion
+         11    A 00017160 RutlGetTagToken
+         12    B 00017720 RutlIsHelpToken
+         13    C 00017CE0 RutlParse
+         14    D 00017550 RutlStrDup
+
+  Summary
+
+        3000 .data
+        1000 .didat
+        2000 .pdata
+       1A000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       38000 .text

@@ -1,0 +1,41 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\autopilot.dll
+
+File Type: DLL
+
+  Section contains the following exports for AutoPilot.dll
+
+    00000000 characteristics
+    D2724217 time date stamp
+        0.00 version
+           1 ordinal base
+          12 number of functions
+          12 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00006C50 AutoPilotClearNetworkRequiredFlag
+          2    1 00006890 AutoPilotDisable
+          3    2 00006D70 AutoPilotGetOobeSettingsOverride
+          4    3 00006690 AutoPilotGetPolicyDwordByName
+          5    4 00006740 AutoPilotGetPolicyStringByName
+          6    5 00006AB0 AutoPilotGetProfileState
+          7    6 000069F0 AutoPilotIsDisabled
+          8    7 00006A40 AutoPilotIsLocalProfileAvailable
+          9    8 00006B10 AutoPilotIsNetworkRequired
+         10    9 00006FF0 AutoPilotPerformDeviceEnrollment
+         11    A 00007180 AutoPilotRenameDevice
+         12    B 00006F60 AutoPilotRetrieveSettings
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        C000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       20000 .text

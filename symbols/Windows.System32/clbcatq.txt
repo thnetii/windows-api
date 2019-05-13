@@ -1,0 +1,61 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\clbcatq.dll
+
+File Type: DLL
+
+  Section contains the following exports for CLBCatQ.DLL
+
+    00000000 characteristics
+    AABA4FA9 time date stamp
+        0.00 version
+           1 ordinal base
+          32 number of functions
+          32 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00013FF0 ActivatorUpdateForIsRouterChanges
+          8    1 00013C00 CLSIDFromStringByBitness
+          9    2 00012DF0 CheckMemoryGates
+          2    3 0001AAB0 CoRegCleanup
+         10    4 000081C0 ComPlusEnablePartitions
+         11    5 000082A0 ComPlusEnableRemoteAccess
+         12    6 000177E0 ComPlusMigrate
+         13    7 00008350 ComPlusPartitionsEnabled
+         14    8 00008470 ComPlusRemoteAccessEnabled
+         15    9 0001B540 CreateComponentLibraryEx
+          3    A 00014470 DeleteAllActivatorsForClsid
+         16    B 00003070 DllCanUnloadNow
+         17    C 00008560 DllGetClassObject
+         18    D 00008680 DllRegisterServer
+         19    E 00008740 DllUnregisterServer
+          4    F 00015950 DowngradeAPL
+         20   10 00002860 GetCatalogObject
+         21   11 00002A30 GetCatalogObject2
+         22   12 00008790 GetComputerObject
+          5   13 00008F80 GetGlobalBabyJITEnabled
+         23   14 000087B0 GetSimpleTableDispenser
+         24   15 00013D90 InprocServer32FromString
+         25   16 0001B5D0 OpenComponentLibraryEx
+         26   17 0001B670 OpenComponentLibraryOnMemEx
+         27   18 0001B700 OpenComponentLibraryOnStreamEx
+         28   19 00013E40 ServerGetApplicationType
+         29   1A 00013FB0 SetSetupOpen
+         30   1B 00013FC0 SetSetupSave
+         31   1C 00013FD0 SetupOpen
+         32   1D 00013FE0 SetupSave
+          6   1E 00014DE0 UpdateFromAppChange
+          7   1F 000153E0 UpdateFromComponentChange
+
+  Summary
+
+        6000 .data
+        1000 .didat
+        5000 .pdata
+       2D000 .rdata
+        2000 .reloc
+        2000 .rsrc
+       64000 .text

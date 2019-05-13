@@ -1,0 +1,66 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\snmpapi.dll
+
+File Type: DLL
+
+  Section contains the following exports for snmpapi.dll
+
+    00000000 characteristics
+    C087C386 time date stamp
+        0.00 version
+           1 ordinal base
+          38 number of functions
+          38 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00002130 SnmpSvcAddrIsIpx
+          2    1 00002200 SnmpSvcAddrToSocket
+          3    2 000055E0 SnmpSvcGetEnterpriseOID
+          4    3 00005A80 SnmpSvcGetUptime
+          5    4 00005B20 SnmpSvcGetUptimeFromTime
+          6    5 00005B60 SnmpSvcInitUptime
+          7    6 00001FC0 SnmpSvcSetLogLevel
+          8    7 00001FD0 SnmpSvcSetLogType
+          9    8 00004A10 SnmpTfxClose
+         10    9 00004A20 SnmpTfxOpen
+         11    A 00004B70 SnmpTfxQuery
+         12    B 000055F0 SnmpUtilAnsiToUnicode
+         13    C 00001E30 SnmpUtilAsnAnyCpy
+         14    D 00001EA0 SnmpUtilAsnAnyFree
+         15    E 00001FE0 SnmpUtilDbgPrint
+         16    F 000054C0 SnmpUtilIdsToA
+         17   10 000024E0 SnmpUtilMemAlloc
+         18   11 00002510 SnmpUtilMemFree
+         19   12 00002540 SnmpUtilMemReAlloc
+         20   13 00002590 SnmpUtilOctetsCmp
+         21   14 000025B0 SnmpUtilOctetsCpy
+         22   15 00002640 SnmpUtilOctetsFree
+         23   16 00002680 SnmpUtilOctetsNCmp
+         24   17 00002720 SnmpUtilOidAppend
+         25   18 000027F0 SnmpUtilOidCmp
+         26   19 00002810 SnmpUtilOidCpy
+         27   1A 000028C0 SnmpUtilOidFree
+         28   1B 000028F0 SnmpUtilOidNCmp
+         29   1C 000055C0 SnmpUtilOidToA
+         30   1D 000029C0 SnmpUtilPrintAsnAny
+         31   1E 00002E10 SnmpUtilPrintOid
+         32   1F 00005710 SnmpUtilUTF8ToUnicode
+         33   20 00005830 SnmpUtilUnicodeToAnsi
+         34   21 00005950 SnmpUtilUnicodeToUTF8
+         35   22 00005BD0 SnmpUtilVarBindCpy
+         36   23 00005C60 SnmpUtilVarBindFree
+         37   24 00005C90 SnmpUtilVarBindListCpy
+         38   25 00005D60 SnmpUtilVarBindListFree
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        5000 .text

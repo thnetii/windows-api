@@ -1,0 +1,44 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\vsstrace.dll
+
+File Type: DLL
+
+  Section contains the following exports for VssTrace.DLL
+
+    00000000 characteristics
+     F29AF06 time date stamp
+        0.00 version
+           1 ordinal base
+          15 number of functions
+          15 number of names
+
+    ordinal hint RVA      name
+
+         13    0 000037F0 AssertFail
+         10    1 000059B0 VssGetTracingContextPerThread
+         12    2 00005A10 VssGetTracingModuleInfo
+         11    3 00005A80 VssGetTracingSequenceNumber
+         15    4 00005AA0 VssIsKernelDebuggerAttached
+          5    5 00005AE0 VssIsTracingEnabled
+          8    6 00005B00 VssIsTracingEnabledOnFunction
+          7    7 00005B50 VssIsTracingEnabledOnModule
+          6    8 00005BA0 VssIsTracingEnabledPerThread
+         14    9 00005BE0 VssSetDebugReport
+          9    A 00005BF0 VssSetTracingContextPerThread
+          4    B 00005C40 VssTraceBinary
+          1    C 00005CD0 VssTraceInitialize
+          3    D 00005D00 VssTraceMessage
+          2    E 00005D80 VssTraceUninitialize
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        1000 .pdata
+        6000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        9000 .text

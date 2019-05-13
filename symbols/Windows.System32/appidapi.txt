@@ -1,0 +1,40 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\appidapi.dll
+
+File Type: DLL
+
+  Section contains the following exports for appidapi.dll
+
+    00000000 characteristics
+    D7B3CAE5 time date stamp
+        0.00 version
+           1 ordinal base
+          11 number of functions
+          11 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001750 AppIDConstructAppxAttributes
+          2    1          AppIDDecodeAttributeString (forwarded to srpapi.AppIDDecodeAttributeString)
+          3    2          AppIDEncodeAttributeString (forwarded to srpapi.AppIDEncodeAttributeString)
+          4    3          AppIDFreeAttributeString (forwarded to srpapi.AppIDFreeAttributeString)
+          5    4 00001530 AppIDGetAppxFileAttributes
+          6    5 00001310 AppIDGetFileAttributes
+          7    6 00001520 AppIDGetMsiVersionInfo
+          8    7 00001700 AppIDReleaseAppxFileAttributes
+          9    8 000016E0 AppIDReleaseFileAttributes
+         10    9 00001BA0 CompareToSystemCIPolicy
+         11    A 00001D80 UpdateSystemCIPolicy
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        4000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        9000 .text

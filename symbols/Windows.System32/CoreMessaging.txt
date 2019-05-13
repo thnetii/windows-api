@@ -1,0 +1,62 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\CoreMessaging.dll
+
+File Type: DLL
+
+  Section contains the following exports for CoreMessaging.dll
+
+    00000000 characteristics
+    57021383 time date stamp
+        0.00 version
+           1 ordinal base
+          33 number of functions
+          33 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000368A0 CoreUICallComputeMaximumMessageSize
+          2    1 00043E50 CoreUICallCreateConversationHost
+          3    2 00043CA0 CoreUICallCreateEndpointHost
+          4    3 00043CB0 CoreUICallCreateEndpointHostWithSendPriority
+          5    4 00037460 CoreUICallReceive
+          6    5 00036920 CoreUICallSend
+          7    6 0007D9A0 CoreUIConfigureTestHost
+          8    7 0007D9B0 CoreUIConfigureUserIntegration
+          9    8 00023260 CoreUICreate
+         10    9 00084220 CoreUICreateAnonymousStream
+         11    A 0006A7A0 CoreUICreateClientWindowIDManager
+         12    B 00003F50 CoreUICreateEx
+         13    C 0004F6E0 CoreUICreateSystemWindowIDManager
+         14    D 00084400 CoreUICreateWindowValidator
+         15    E 0006B570 CoreUIFailFastOOM
+         16    F 000243B0 CoreUIOpenExisting
+         17   10 0007DAB0 CoreUIRouteToTestRegistrar
+         18   11 00004020 CreateDispatcherQueueController
+         19   12 00088070 CreateDispatcherQueueForCurrentThread
+         20   13 0004FC10 DllCanUnloadNow
+         21   14 0004EE10 DllGetActivationFactory
+         22   15 00088190 DllGetClassObject
+         23   16 00003DB0 GetDispatcherQueueForCurrentThread
+         24   17 00084670 InitializeServices
+         25   18 00046F90 MsgBlobCreateShared
+         26   19 00049BB0 MsgBlobCreateStack
+         27   1A 00040370 MsgBufferShare
+         28   1B 00041490 MsgRelease
+         29   1C 000403E0 MsgStringCreateShared
+         30   1D 000486D0 MsgStringCreateStack
+         31   1E 000526E0 ServiceMain
+         32   1F 00052A80 SvchostPushServiceGlobals
+         33   20 000846D0 UninitializeServices
+
+  Summary
+
+        3000 .data
+        1000 .didat
+        D000 .pdata
+       35000 .rdata
+        3000 .reloc
+        E000 .rsrc
+       8A000 .text

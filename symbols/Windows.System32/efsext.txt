@@ -1,0 +1,41 @@
+Microsoft (R) COFF/PE Dumper Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\WINDOWS\System32\efsext.dll
+
+File Type: DLL
+
+  Section contains the following exports for efsext.dll
+
+    00000000 characteristics
+    6B38C6A0 time date stamp
+        0.00 version
+           1 ordinal base
+          12 number of functions
+          12 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000040C0 EdpPlatform_QueryUserSessionState
+          2    1 00004080 EdpPlatform_RegisterUserSessionNotification
+          3    2 00003E10 EdpPlatform_ShowDialog
+          4    3 00004050 EdpPlatform_ShowUI
+          5    4 00003130 EdpPlatform_UnregisterUserSessionNotification
+          6    5 00003530 EfsPlatform_GetCallerID
+          7    6 000037A0 EfsPlatform_IsCallerAutomaticallyDelegated
+          8    7 000038C0 EfsPlatform_LaunchPromptUI
+          9    8 00003490 EfsPlatform_SuspendNotificationsAndEncryptFile
+         10    9 00003B70 EfsPlatform_UnpackSecurePin
+         11    A 00004380 FVE_LaunchConsentPromptUI
+         12    B 000045D0 FVE_LaunchSDCardUI
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        6000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        A000 .text

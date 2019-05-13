@@ -119,6 +119,33 @@ namespace THNETII.WinApi.Native.WinNT
         public static bool IS_DISPATCHING(int Flag) => (Flag & EXCEPTION_UNWIND) == 0;
         public static bool IS_TARGET_UNWIND(int Flag) => (Flag & EXCEPTION_TARGET_UNWIND) != 0;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 8752
+        #region RtlUnwind2 function
+        /// <summary>
+        /// Initiates an unwind of procedure call frames.
+        /// </summary>
+        /// <param name="TargetFrame">A pointer to the call frame that is the target of the unwind. If this parameter is all zero, the function performs an exit unwind.</param>
+        /// <param name="TargetIp">The continuation address of the unwind. This parameter is ignored if <paramref name="TargetFrame"/> is all zero.</param>
+        /// <param name="ExceptionRecord">An <see cref="EXCEPTION_RECORD"/> structure.</param>
+        /// <param name="ReturnValue">A value to be placed in the integer function return register before continuing execution.</param>
+        /// <param name="ContextRecord">A reference to a <see cref="CONTEXT_AMD64"/> structure that stores context during the unwind operation.</param>
+        /// <remarks>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/winnt/nf-winnt-rtlunwind2">RtlUnwind2 function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="CONTEXT"/>
+        /// <seealso cref="EXCEPTION_RECORD"/>
+        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi)]
+        [SuppressMessage("Usage", "PC003: Native API not available in UWP")]
+        public static extern void RtlUnwind2(
+            [In, Optional] FRAME_POINTERS TargetFrame,
+            [In, Optional] IntPtr TargetIp,
+            [In, Optional] in EXCEPTION_RECORD ExceptionRecord,
+            [In] IntPtr ReturnValue,
+            [In] ref CONTEXT_AMD64 ContextRecord
+            );
+        #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 9423
         public static int MANDATORY_LEVEL_TO_MANDATORY_RID(int IL) => IL * 0x1000;
 

@@ -406,5 +406,29 @@ namespace THNETII.WinApi.Native.WinNT
             [In] int NewEntryCount
             );
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 18692
+        #region RtlDeleteGrowableFunctionTable
+        /// <summary>
+        /// Informs the system that a previously reported dynamic function table is no longer in use.
+        /// </summary>
+        /// <param name="DynamicTable">An opaque reference returned by <see cref="RtlAddGrowableFunctionTable(out IntPtr, IMAGE_IA64_RUNTIME_FUNCTION_ENTRY*, int, int, IntPtr, IntPtr)"/>.</param>
+        /// <remarks>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows 8 [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2012 [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/winnt/nf-winnt-rtldeletegrowablefunctiontable">RtlDeleteGrowableFunctionTable function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        [DllImport(NativeLibraryNames.Ntdll, CallingConvention = CallingConvention.StdCall)]
+        [SuppressMessage("Usage", "PC003: Native API not available in UWP", Justification = "Documentation")]
+        public static extern void RtlDeleteGrowableFunctionTable(
+            [In] IntPtr DynamicTable
+            );
+        #endregion
     }
 }

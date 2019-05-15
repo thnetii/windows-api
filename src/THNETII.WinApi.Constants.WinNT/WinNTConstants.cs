@@ -1252,11 +1252,11 @@ namespace THNETII.WinApi.Native.WinNT
         public const int CONTEXT_ARM64 = 0x00400000;
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 5915
-        public const int CONTEXT_ARM64_CONTROL = (CONTEXT_ARM64 | 0x1);
-        public const int CONTEXT_ARM64_INTEGER = (CONTEXT_ARM64 | 0x2);
-        public const int CONTEXT_ARM64_FLOATING_POINT = (CONTEXT_ARM64 | 0x4);
-        public const int CONTEXT_ARM64_DEBUG_REGISTERS = (CONTEXT_ARM64 | 0x8);
-        public const int CONTEXT_ARM64_X18 = (CONTEXT_ARM64 | 0x10);
+        public const int CONTEXT_ARM64_CONTROL = CONTEXT_ARM64 | 0x1;
+        public const int CONTEXT_ARM64_INTEGER = CONTEXT_ARM64 | 0x2;
+        public const int CONTEXT_ARM64_FLOATING_POINT = CONTEXT_ARM64 | 0x4;
+        public const int CONTEXT_ARM64_DEBUG_REGISTERS = CONTEXT_ARM64 | 0x8;
+        public const int CONTEXT_ARM64_X18 = CONTEXT_ARM64 | 0x10;
 
         //
         // CONTEXT_ARM64_X18 is not part of CONTEXT_ARM64_FULL because in NT user-mode
@@ -1264,8 +1264,8 @@ namespace THNETII.WinApi.Native.WinNT
         // without intending to.
         //
 
-        public const int CONTEXT_ARM64_FULL = (CONTEXT_ARM64_CONTROL | CONTEXT_ARM64_INTEGER | CONTEXT_ARM64_FLOATING_POINT);
-        public const int CONTEXT_ARM64_ALL = (CONTEXT_ARM64_CONTROL | CONTEXT_ARM64_INTEGER | CONTEXT_ARM64_FLOATING_POINT | CONTEXT_ARM64_DEBUG_REGISTERS | CONTEXT_ARM64_X18);
+        public const int CONTEXT_ARM64_FULL = CONTEXT_ARM64_CONTROL | CONTEXT_ARM64_INTEGER | CONTEXT_ARM64_FLOATING_POINT;
+        public const int CONTEXT_ARM64_ALL = CONTEXT_ARM64_CONTROL | CONTEXT_ARM64_INTEGER | CONTEXT_ARM64_FLOATING_POINT | CONTEXT_ARM64_DEBUG_REGISTERS | CONTEXT_ARM64_X18;
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 5956
         public const int CONTEXT_RET_TO_GUEST = 0x04000000;
@@ -1344,23 +1344,23 @@ namespace THNETII.WinApi.Native.WinNT
         public const int WOW64_CONTEXT_i486 = 0x00010000;
 
         // SS:SP, CS:IP, FLAGS, BP
-        public const int WOW64_CONTEXT_CONTROL = (WOW64_CONTEXT_i386 | 0x00000001);
+        public const int WOW64_CONTEXT_CONTROL = WOW64_CONTEXT_i386 | 0x00000001;
         // AX, BX, CX, DX, SI, DI
-        public const int WOW64_CONTEXT_INTEGER = (WOW64_CONTEXT_i386 | 0x00000002);
+        public const int WOW64_CONTEXT_INTEGER = WOW64_CONTEXT_i386 | 0x00000002;
         // DS, ES, FS, GS
-        public const int WOW64_CONTEXT_SEGMENTS = (WOW64_CONTEXT_i386 | 0x00000004);
+        public const int WOW64_CONTEXT_SEGMENTS = WOW64_CONTEXT_i386 | 0x00000004;
         // 387 state
-        public const int WOW64_CONTEXT_FLOATING_POINT = (WOW64_CONTEXT_i386 | 0x00000008);
+        public const int WOW64_CONTEXT_FLOATING_POINT = WOW64_CONTEXT_i386 | 0x00000008;
         // DB 0-3,6,7
-        public const int WOW64_CONTEXT_DEBUG_REGISTERS = (WOW64_CONTEXT_i386 | 0x00000010);
+        public const int WOW64_CONTEXT_DEBUG_REGISTERS = WOW64_CONTEXT_i386 | 0x00000010;
         // cpu specific extensions
-        public const int WOW64_CONTEXT_EXTENDED_REGISTERS = (WOW64_CONTEXT_i386 | 0x00000020);
+        public const int WOW64_CONTEXT_EXTENDED_REGISTERS = WOW64_CONTEXT_i386 | 0x00000020;
 
-        public const int WOW64_CONTEXT_FULL = (WOW64_CONTEXT_CONTROL | WOW64_CONTEXT_INTEGER | WOW64_CONTEXT_SEGMENTS);
+        public const int WOW64_CONTEXT_FULL = WOW64_CONTEXT_CONTROL | WOW64_CONTEXT_INTEGER | WOW64_CONTEXT_SEGMENTS;
 
-        public const int WOW64_CONTEXT_ALL = (WOW64_CONTEXT_CONTROL | WOW64_CONTEXT_INTEGER | WOW64_CONTEXT_SEGMENTS | WOW64_CONTEXT_FLOATING_POINT | WOW64_CONTEXT_DEBUG_REGISTERS | WOW64_CONTEXT_EXTENDED_REGISTERS);
+        public const int WOW64_CONTEXT_ALL = WOW64_CONTEXT_CONTROL | WOW64_CONTEXT_INTEGER | WOW64_CONTEXT_SEGMENTS | WOW64_CONTEXT_FLOATING_POINT | WOW64_CONTEXT_DEBUG_REGISTERS | WOW64_CONTEXT_EXTENDED_REGISTERS;
 
-        public const int WOW64_CONTEXT_XSTATE = (WOW64_CONTEXT_i386 | 0x00000040);
+        public const int WOW64_CONTEXT_XSTATE = WOW64_CONTEXT_i386 | 0x00000040;
 
         public const int WOW64_CONTEXT_EXCEPTION_ACTIVE = 0x08000000;
         public const int WOW64_CONTEXT_SERVICE_ACTIVE = 0x10000000;
@@ -6133,14 +6133,33 @@ namespace THNETII.WinApi.Native.WinNT
         public const short IS_TEXT_UNICODE_NOT_ASCII_MASK = unchecked((short)0xF000);
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19482
-        public const short COMPRESSION_FORMAT_NONE = (0x0000);
-        public const short COMPRESSION_FORMAT_DEFAULT = (0x0001);
-        public const short COMPRESSION_FORMAT_LZNT1 = (0x0002);
-        public const short COMPRESSION_FORMAT_XPRESS = (0x0003);
-        public const short COMPRESSION_FORMAT_XPRESS_HUFF = (0x0004);
-        public const short COMPRESSION_ENGINE_STANDARD = (0x0000);
-        public const short COMPRESSION_ENGINE_MAXIMUM = (0x0100);
-        public const short COMPRESSION_ENGINE_HIBER = (0x0200);
+        public const short COMPRESSION_FORMAT_NONE = 0x0000;
+        public const short COMPRESSION_FORMAT_DEFAULT = 0x0001;
+        public const short COMPRESSION_FORMAT_LZNT1 = 0x0002;
+        public const short COMPRESSION_FORMAT_XPRESS = 0x0003;
+        public const short COMPRESSION_FORMAT_XPRESS_HUFF = 0x0004;
+        public const short COMPRESSION_ENGINE_STANDARD = 0x0000;
+        public const short COMPRESSION_ENGINE_MAXIMUM = 0x0100;
+        public const short COMPRESSION_ENGINE_HIBER = 0x0200;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19565
+        public const short SEF_DACL_AUTO_INHERIT = 0x01;
+        public const short SEF_SACL_AUTO_INHERIT = 0x02;
+        public const short SEF_DEFAULT_DESCRIPTOR_FOR_OBJECT = 0x04;
+        public const short SEF_AVOID_PRIVILEGE_CHECK = 0x08;
+        public const short SEF_AVOID_OWNER_CHECK = 0x10;
+        public const short SEF_DEFAULT_OWNER_FROM_PARENT = 0x20;
+        public const short SEF_DEFAULT_GROUP_FROM_PARENT = 0x40;
+        public const short SEF_MACL_NO_WRITE_UP = 0x100;
+        public const short SEF_MACL_NO_READ_UP = 0x200;
+        public const short SEF_MACL_NO_EXECUTE_UP = 0x400;
+        public const short SEF_AI_USE_EXTRA_PARAMS = 0x800;
+        public const short SEF_AVOID_OWNER_RESTRICTION = 0x1000;
+        public const short SEF_FORCE_USER_MODE = 0x2000;
+
+        public const short SEF_MACL_VALID_FLAGS = SEF_MACL_NO_WRITE_UP
+                                                 | SEF_MACL_NO_READ_UP
+                                                 | SEF_MACL_NO_EXECUTE_UP;
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19775
         public const int RTL_UMS_VERSION = 0x0100;

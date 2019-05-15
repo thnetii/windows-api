@@ -6161,6 +6161,9 @@ namespace THNETII.WinApi.Native.WinNT
                                                  | SEF_MACL_NO_READ_UP
                                                  | SEF_MACL_NO_EXECUTE_UP;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19591
+        public const short MESSAGE_RESOURCE_UNICODE = 0x0001;
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19775
         public const int RTL_UMS_VERSION = 0x0100;
     }

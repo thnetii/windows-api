@@ -986,5 +986,34 @@ namespace THNETII.WinApi.Native.WinNT
             out SLIST_HEADER ListHead
             );
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19255
+        #region RtlFirstEntrySList function
+        /// <summary>
+        /// Retrieves the first entry in a singly linked list. Access to the list is synchronized on a multiprocessor system.
+        /// </summary>
+        /// <param name="ListHead">
+        /// <para>A read-only reference to an <see cref="SLIST_HEADER"/> structure that represents the head of a singly linked list. This structure is for system use only.</para>
+        /// <para>The list must be previously initialized with the <see cref="InitializeSListHead"/> function.</para>
+        /// </param>
+        /// <returns>The return value is a pointer to the first entry in the list. If the list is empty, the return value is <see langword="null"/>.</returns>
+        /// <remarks>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows XP [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/winnt/nf-winnt-rtlfirstentryslist">RtlFirstEntrySList function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso href="https://msdn.microsoft.com/35463ace-33ab-4eb9-9901-2504a92456e2">Interlocked Singly Linked Lists</seealso>
+        [DllImport(NativeLibraryNames.Ntdll, CallingConvention = CallingConvention.Winapi)]
+        [SuppressMessage("Usage", "PC003: Native API not available in UWP", Justification = "Documentation")]
+        public static extern ref readonly SLIST_ENTRY RtlFirstEntrySList(
+            in SLIST_HEADER ListHead
+            );
+        #endregion
     }
 }

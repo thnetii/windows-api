@@ -1031,7 +1031,7 @@ namespace THNETII.WinApi.Native.WinNT
         /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps only]</description></item>
         /// </list>
         /// </para>
-        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/winnt/nf-winnt-rtlfirstentryslist">RtlFirstEntrySList function</a></para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/winnt/nf-winnt-rtlinterlockedpopentryslist">RtlInterlockedPopEntrySList function</a></para>
         /// </remarks>
         /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
         /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
@@ -1042,5 +1042,34 @@ namespace THNETII.WinApi.Native.WinNT
             ref SLIST_HEADER ListHead
             );
         #endregion
+        #region RtlInterlockedPushEntrySList function
+        /// <summary>
+        /// Inserts an item at the front of a singly linked list. Access to the list is synchronized on a multiprocessor system.
+        /// </summary>
+        /// <param name="ListHead">A reference to an <see cref="SLIST_HEADER"/> structure that represents the head of a singly linked list. This structure is for system use only.</param>
+        /// <param name="ListEntry">A reference to an <see cref="SLIST_ENTRY"/> structure that represents an item in a singly linked list.</param>
+        /// <returns>The return value is a reference to the previous first entry in the list. If the list was previously empty, the return value is <see langword="null"/>.</returns>
+        /// <remarks>
+        /// <para>Calls to the <see cref="InterlockedPushEntrySList"/> function are forwarded to the <see cref="RtlInterlockedPushEntrySList"/> function. Applications should call <see cref="InterlockedPushEntrySList"/> instead of calling this function directly.</para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows XP [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/winnt/nf-winnt-rtlinterlockedpushentryslist">RtlInterlockedPushEntrySList function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso href="https://msdn.microsoft.com/35463ace-33ab-4eb9-9901-2504a92456e2">Interlocked Singly Linked Lists</seealso>
+        [DllImport(NativeLibraryNames.Ntdll, CallingConvention = CallingConvention.Winapi)]
+        [SuppressMessage("Usage", "PC003: Native API not available in UWP", Justification = "Documentation")]
+        public static extern ref SLIST_ENTRY RtlInterlockedPushEntrySList(
+            ref SLIST_HEADER ListHead,
+            ref SLIST_ENTRY ListEntry
+            );
+        #endregion
+
     }
 }

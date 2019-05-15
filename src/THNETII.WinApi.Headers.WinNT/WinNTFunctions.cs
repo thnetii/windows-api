@@ -1142,5 +1142,65 @@ namespace THNETII.WinApi.Native.WinNT
             return TagBase + ((Tag) << HEAP_TAG_SHIFT);
         }
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19516
+        #region RtlEqualMemory function
+        public static bool RtlEqualMemory(
+            IntPtr Destination,
+            IntPtr Source,
+            UIntPtr Length
+            ) => RtlCompareMemory(Destination, Source, Length) == UIntPtr.Zero;
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19517
+        #region RtlMoveMemory function
+        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi)]
+        [SuppressMessage("Usage", "PC003: Native API not available in UWP")]
+        public static extern IntPtr RtlMoveMemory(
+            IntPtr Destination,
+            IntPtr Source,
+            UIntPtr Length
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19517
+        #region RtlCopyMemory
+        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi)]
+        [SuppressMessage("Usage", "PC003: Native API not available in UWP")]
+        public static extern IntPtr RtlCopyMemory(
+            IntPtr Destination,
+            IntPtr Source,
+            UIntPtr Length
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19517
+        #region RtlFillMemory
+        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi)]
+        [SuppressMessage("Usage", "PC003: Native API not available in UWP")]
+        public static extern IntPtr RtlFillMemory(
+            IntPtr Destination,
+            UIntPtr Length,
+            int Fill
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19517
+        #region RtlZeroMemory
+        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi)]
+        [SuppressMessage("Usage", "PC003: Native API not available in UWP")]
+        public static extern IntPtr RtlZeroMemory(
+            IntPtr Destination,
+            UIntPtr Length
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19527
+        #region RtlSecureZeroMemory
+        [SuppressMessage("Usage", "PC001: API not supported on all platforms")]
+        public static unsafe IntPtr RtlSecureZeroMemory(
+            IntPtr ptr,
+            UIntPtr cnt
+            )
+        {
+            Span<byte> span = new Span<byte>(ptr.ToPointer(), (int)cnt.ToUInt32());
+            span.Fill(0);
+            return ptr;
+        }
+        #endregion
     }
 }

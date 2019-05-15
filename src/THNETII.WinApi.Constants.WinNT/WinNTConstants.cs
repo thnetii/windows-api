@@ -6109,6 +6109,29 @@ namespace THNETII.WinApi.Native.WinNT
         public const int HEAP_CREATE_SEGMENT_HEAP = 0x00000100;
         public const int HEAP_CREATE_HARDENED = 0x00000200;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19460
+        public const short IS_TEXT_UNICODE_ASCII16 = 0x0001;
+        public const short IS_TEXT_UNICODE_REVERSE_ASCII16 = 0x0010;
+
+        public const short IS_TEXT_UNICODE_STATISTICS = 0x0002;
+        public const short IS_TEXT_UNICODE_REVERSE_STATISTICS = 0x0020;
+
+        public const short IS_TEXT_UNICODE_CONTROLS = 0x0004;
+        public const short IS_TEXT_UNICODE_REVERSE_CONTROLS = 0x0040;
+
+        public const short IS_TEXT_UNICODE_SIGNATURE = 0x0008;
+        public const short IS_TEXT_UNICODE_REVERSE_SIGNATURE = 0x0080;
+
+        public const short IS_TEXT_UNICODE_ILLEGAL_CHARS = 0x0100;
+        public const short IS_TEXT_UNICODE_ODD_LENGTH = 0x0200;
+        public const short IS_TEXT_UNICODE_DBCS_LEADBYTE = 0x0400;
+        public const short IS_TEXT_UNICODE_NULL_BYTES = 0x1000;
+
+        public const short IS_TEXT_UNICODE_UNICODE_MASK = 0x000F;
+        public const short IS_TEXT_UNICODE_REVERSE_MASK = 0x00F0;
+        public const short IS_TEXT_UNICODE_NOT_UNICODE_MASK = 0x0F00;
+        public const short IS_TEXT_UNICODE_NOT_ASCII_MASK = unchecked((short)0xF000);
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19775
         public const int RTL_UMS_VERSION = 0x0100;
     }

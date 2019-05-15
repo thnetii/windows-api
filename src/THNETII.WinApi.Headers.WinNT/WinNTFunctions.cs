@@ -1106,6 +1106,35 @@ namespace THNETII.WinApi.Native.WinNT
             ref SLIST_HEADER ListHead
             );
         #endregion
+        #region RtlQueryDepthSList function
+        /// <summary>
+        /// Retrieves the number of entries in the specified singly linked list.
+        /// </summary>
+        /// <param name="ListHead">
+        /// <para>A read-only reference to an <see cref="SLIST_HEADER"/> structure that represents the head of a singly linked list. This structure is for system use only.</para>
+        /// <para>The list must be previously initialized with the <see cref="InitializeSListHead"/> function.</para>
+        /// </param>
+        /// <returns>The function returns the number of entries in the list.</returns>
+        /// <remarks>
+        /// <para>Calls to the <see cref="QueryDepthSList"/> function are forwarded to the <see cref="RtlQueryDepthSList"/> function. Applications should call <see cref="QueryDepthSList"/> instead of calling this function directly.</para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows XP [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/winnt/nf-winnt-rtlquerydepthslist">RtlQueryDepthSList function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso href="https://msdn.microsoft.com/35463ace-33ab-4eb9-9901-2504a92456e2">Interlocked Singly Linked Lists</seealso>
+        [DllImport(NativeLibraryNames.Ntdll, CallingConvention = CallingConvention.Winapi)]
+        [SuppressMessage("Usage", "PC003: Native API not available in UWP", Justification = "Documentation")]
+        public static extern short RtlQueryDepthSList(
+            in SLIST_HEADER ListHead
+            );
+        #endregion
 
     }
 }

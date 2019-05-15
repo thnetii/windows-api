@@ -6132,6 +6132,16 @@ namespace THNETII.WinApi.Native.WinNT
         public const short IS_TEXT_UNICODE_NOT_UNICODE_MASK = 0x0F00;
         public const short IS_TEXT_UNICODE_NOT_ASCII_MASK = unchecked((short)0xF000);
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19482
+        public const short COMPRESSION_FORMAT_NONE = (0x0000);
+        public const short COMPRESSION_FORMAT_DEFAULT = (0x0001);
+        public const short COMPRESSION_FORMAT_LZNT1 = (0x0002);
+        public const short COMPRESSION_FORMAT_XPRESS = (0x0003);
+        public const short COMPRESSION_FORMAT_XPRESS_HUFF = (0x0004);
+        public const short COMPRESSION_ENGINE_STANDARD = (0x0000);
+        public const short COMPRESSION_ENGINE_MAXIMUM = (0x0100);
+        public const short COMPRESSION_ENGINE_HIBER = (0x0200);
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19775
         public const int RTL_UMS_VERSION = 0x0100;
     }

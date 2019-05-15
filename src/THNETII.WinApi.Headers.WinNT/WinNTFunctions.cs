@@ -1070,6 +1070,16 @@ namespace THNETII.WinApi.Native.WinNT
             ref SLIST_ENTRY ListEntry
             );
         #endregion
+        #region RtlInterlockedPushListSListEx function
+        [DllImport(NativeLibraryNames.Ntdll, CallingConvention = CallingConvention.Winapi)]
+        [SuppressMessage("Usage", "PC003: Native API not available in UWP", Justification = "Documentation")]
+        public static extern ref SLIST_ENTRY RtlInterlockedPushListSListEx(
+            ref SLIST_HEADER ListHead,
+            ref SLIST_ENTRY ListEntry,
+            ref SLIST_ENTRY ListEnd,
+            [In] int count
+            );
+        #endregion
 
     }
 }

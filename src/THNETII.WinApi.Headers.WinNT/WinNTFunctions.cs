@@ -1135,6 +1135,12 @@ namespace THNETII.WinApi.Native.WinNT
             in SLIST_HEADER ListHead
             );
         #endregion
-
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19446
+        #region HEAP_MAKE_TAG_FLAGS function
+        public static int HEAP_MAKE_TAG_FLAGS([In] int TagBase, [In] int Tag)
+        {
+            return TagBase + ((Tag) << HEAP_TAG_SHIFT);
+        }
+        #endregion
     }
 }

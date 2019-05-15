@@ -6091,6 +6091,24 @@ namespace THNETII.WinApi.Native.WinNT
         public const int FAST_FAIL_UNEXPECTED_CALL = 56;
         public const int FAST_FAIL_INVALID_FAST_FAIL_CODE = unchecked((int)0xFFFFFFFF);
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19427
+        public const int HEAP_NO_SERIALIZE = 0x00000001;
+        public const int HEAP_GROWABLE = 0x00000002;
+        public const int HEAP_GENERATE_EXCEPTIONS = 0x00000004;
+        public const int HEAP_ZERO_MEMORY = 0x00000008;
+        public const int HEAP_REALLOC_IN_PLACE_ONLY = 0x00000010;
+        public const int HEAP_TAIL_CHECKING_ENABLED = 0x00000020;
+        public const int HEAP_FREE_CHECKING_ENABLED = 0x00000040;
+        public const int HEAP_DISABLE_COALESCE_ON_FREE = 0x00000080;
+        public const int HEAP_CREATE_ALIGN_16 = 0x00010000;
+        public const int HEAP_CREATE_ENABLE_TRACING = 0x00020000;
+        public const int HEAP_CREATE_ENABLE_EXECUTE = 0x00040000;
+        public const int HEAP_MAXIMUM_TAG = 0x0FFF;
+        public const int HEAP_PSEUDO_TAG_FLAG = 0x8000;
+        public const int HEAP_TAG_SHIFT = 18;
+        public const int HEAP_CREATE_SEGMENT_HEAP = 0x00000100;
+        public const int HEAP_CREATE_HARDENED = 0x00000200;
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19775
         public const int RTL_UMS_VERSION = 0x0100;
     }

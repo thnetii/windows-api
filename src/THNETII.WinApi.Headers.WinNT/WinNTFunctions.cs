@@ -71,7 +71,7 @@ namespace THNETII.WinApi.Native.WinNT
         public static int PRIMARYLANGID(int lgid) => (short)lgid & 0x3ff;
         #endregion
         #region SUBLANGID macro
-        public static int SUBLANGID(int lgid) => (short)lgid >> 10; 
+        public static int SUBLANGID(int lgid) => (short)lgid >> 10;
         #endregion
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 2192
@@ -115,19 +115,19 @@ namespace THNETII.WinApi.Native.WinNT
         //
         // ** DEPRECATED ** DEPRECATED ** DEPRECATED ** DEPRECATED ** DEPRECATED **
         //
-        public static int MAKELCID(int lgid, int srtid) => ((ushort)srtid << 16) | (ushort)lgid; 
+        public static int MAKELCID(int lgid, int srtid) => ((ushort)srtid << 16) | (ushort)lgid;
         #endregion
         #region MAKESORTLCID macro
-        public static int MAKESORTLCID(int lgid, int srtid, int ver) => (MAKELCID(lgid, srtid)) | ((ushort)ver << 20); 
+        public static int MAKESORTLCID(int lgid, int srtid, int ver) => (MAKELCID(lgid, srtid)) | ((ushort)ver << 20);
         #endregion
         #region LANGIDFROMLCID macro
-        public static int LANGIDFROMLCID(int lcid) => (ushort)lcid; 
+        public static int LANGIDFROMLCID(int lcid) => (ushort)lcid;
         #endregion
         #region SORTIDFROMLCID macro
-        public static int SORTIDFROMLCID(int lcid) => (ushort)((lcid >> 16) & 0xf); 
+        public static int SORTIDFROMLCID(int lcid) => (ushort)((lcid >> 16) & 0xf);
         #endregion
         #region SORTVERSIONFROMLCID macro
-        public static int SORTVERSIONFROMLCID(int lcid) => (ushort)((lcid >> 20) & 0xf); 
+        public static int SORTVERSIONFROMLCID(int lcid) => (ushort)((lcid >> 20) & 0xf);
         #endregion
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 8752
@@ -138,7 +138,7 @@ namespace THNETII.WinApi.Native.WinNT
         public static bool IS_DISPATCHING(int Flag) => (Flag & EXCEPTION_UNWIND) == 0;
         #endregion
         #region IS_TARGET_UNWIND macro
-        public static bool IS_TARGET_UNWIND(int Flag) => (Flag & EXCEPTION_TARGET_UNWIND) != 0; 
+        public static bool IS_TARGET_UNWIND(int Flag) => (Flag & EXCEPTION_TARGET_UNWIND) != 0;
         #endregion
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 8752
@@ -175,7 +175,7 @@ namespace THNETII.WinApi.Native.WinNT
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 10566
         #region VALID_IMPERSONATION_LEVEL macro
         public static bool VALID_IMPERSONATION_LEVEL(TokenImpersonationLevel L) =>
-            (L >= SECURITY_MIN_IMPERSONATION_LEVEL) && (L <= SECURITY_MAX_IMPERSONATION_LEVEL); 
+            (L >= SECURITY_MIN_IMPERSONATION_LEVEL) && (L <= SECURITY_MAX_IMPERSONATION_LEVEL);
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 13493
         #region IsVirtualDiskFileShared macro
@@ -958,6 +958,32 @@ namespace THNETII.WinApi.Native.WinNT
             [In] IntPtr Source1,
             [In] IntPtr Source2,
             [In] UIntPtr Length
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19248
+        #region RtlInitializeSListHead function
+        /// <summary>
+        /// Initializes the head of a singly linked list.
+        /// </summary>
+        /// <param name="ListHead">Receives an initialized <see cref="SLIST_HEADER"/> structure on return that represents the head of a singly linked list. This structure is for system use only.</param>
+        /// <remarks>
+        /// <para>Calls to the <see cref="InitializeSListHead"/> function are forwarded to the <see cref="RtlInitializeSListHead"/> function. Applications should call <see cref="InitializeSListHead"/> instead of calling this function directly.</para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows XP [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/winnt/nf-winnt-rtlinitializeslisthead">RtlInitializeSListHead function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso href="https://msdn.microsoft.com/35463ace-33ab-4eb9-9901-2504a92456e2">Interlocked Singly Linked Lists</seealso>
+        [DllImport(NativeLibraryNames.Ntdll, CallingConvention = CallingConvention.Winapi)]
+        [SuppressMessage("Usage", "PC003: Native API not available in UWP", Justification = "Documentation")]
+        public static extern void RtlInitializeSListHead(
+            out SLIST_HEADER ListHead
             );
         #endregion
     }

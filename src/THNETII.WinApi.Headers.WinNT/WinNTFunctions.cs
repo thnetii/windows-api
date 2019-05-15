@@ -995,7 +995,7 @@ namespace THNETII.WinApi.Native.WinNT
         /// <para>A read-only reference to an <see cref="SLIST_HEADER"/> structure that represents the head of a singly linked list. This structure is for system use only.</para>
         /// <para>The list must be previously initialized with the <see cref="InitializeSListHead"/> function.</para>
         /// </param>
-        /// <returns>The return value is a pointer to the first entry in the list. If the list is empty, the return value is <see langword="null"/>.</returns>
+        /// <returns>The return value is a reference to the first entry in the list. If the list is empty, the return value is <see langword="null"/>.</returns>
         /// <remarks>
         /// <para>
         /// <list type="table">
@@ -1011,8 +1011,35 @@ namespace THNETII.WinApi.Native.WinNT
         /// <seealso href="https://msdn.microsoft.com/35463ace-33ab-4eb9-9901-2504a92456e2">Interlocked Singly Linked Lists</seealso>
         [DllImport(NativeLibraryNames.Ntdll, CallingConvention = CallingConvention.Winapi)]
         [SuppressMessage("Usage", "PC003: Native API not available in UWP", Justification = "Documentation")]
-        public static extern ref readonly SLIST_ENTRY RtlFirstEntrySList(
+        public static extern ref SLIST_ENTRY RtlFirstEntrySList(
             in SLIST_HEADER ListHead
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19263
+        #region RtlInterlockedPopEntrySList function
+        /// <summary>
+        /// Removes an item from the front of a singly linked list. Access to the list is synchronized on a multiprocessor system.
+        /// </summary>
+        /// <param name="ListHead">A reference to an <see cref="SLIST_HEADER"/> structure that represents the head of a singly linked list. This structure is for system use only.</param>
+        /// <returns>The return value is a reference to the first entry in the list. If the list is empty, the return value is <see langword="null"/>.</returns>
+        /// <remarks>
+        /// <para>Calls to the <see cref="InterlockedPopEntrySList"/> function are forwarded to the <see cref="RtlInterlockedPopEntrySList"/> function. Applications should call <see cref="InterlockedPopEntrySList"/> instead of calling this function directly.</para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows XP [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/winnt/nf-winnt-rtlfirstentryslist">RtlFirstEntrySList function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso href="https://msdn.microsoft.com/35463ace-33ab-4eb9-9901-2504a92456e2">Interlocked Singly Linked Lists</seealso>
+        [DllImport(NativeLibraryNames.Ntdll, CallingConvention = CallingConvention.Winapi)]
+        [SuppressMessage("Usage", "PC003: Native API not available in UWP", Justification = "Documentation")]
+        public static extern ref SLIST_ENTRY RtlInterlockedPopEntrySList(
+            ref SLIST_HEADER ListHead
             );
         #endregion
     }

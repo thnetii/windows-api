@@ -6018,6 +6018,79 @@ namespace THNETII.WinApi.Native.WinNT
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 18442
         public const short IMPORT_OBJECT_HDR_SIG2 = unchecked((short)0xffff);
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19348
+        //
+        // Fast fail failure codes.
+        //
+        // N.B.  Failure code zero should not be used, but is required to be reserved
+        //       for compatibility with previous handling of the
+        //       STATUS_STACK_BUFFER_OVERRUN exception status code.
+        //
+
+        public const int FAST_FAIL_LEGACY_GS_VIOLATION = 0;
+        public const int FAST_FAIL_VTGUARD_CHECK_FAILURE = 1;
+        public const int FAST_FAIL_STACK_COOKIE_CHECK_FAILURE = 2;
+        public const int FAST_FAIL_CORRUPT_LIST_ENTRY = 3;
+        public const int FAST_FAIL_INCORRECT_STACK = 4;
+        public const int FAST_FAIL_INVALID_ARG = 5;
+        public const int FAST_FAIL_GS_COOKIE_INIT = 6;
+        public const int FAST_FAIL_FATAL_APP_EXIT = 7;
+        public const int FAST_FAIL_RANGE_CHECK_FAILURE = 8;
+        public const int FAST_FAIL_UNSAFE_REGISTRY_ACCESS = 9;
+        public const int FAST_FAIL_GUARD_ICALL_CHECK_FAILURE = 10;
+        public const int FAST_FAIL_GUARD_WRITE_CHECK_FAILURE = 11;
+        public const int FAST_FAIL_INVALID_FIBER_SWITCH = 12;
+        public const int FAST_FAIL_INVALID_SET_OF_CONTEXT = 13;
+        public const int FAST_FAIL_INVALID_REFERENCE_COUNT = 14;
+        public const int FAST_FAIL_INVALID_JUMP_BUFFER = 18;
+        public const int FAST_FAIL_MRDATA_MODIFIED = 19;
+        public const int FAST_FAIL_CERTIFICATION_FAILURE = 20;
+        public const int FAST_FAIL_INVALID_EXCEPTION_CHAIN = 21;
+        public const int FAST_FAIL_CRYPTO_LIBRARY = 22;
+        public const int FAST_FAIL_INVALID_CALL_IN_DLL_CALLOUT = 23;
+        public const int FAST_FAIL_INVALID_IMAGE_BASE = 24;
+        public const int FAST_FAIL_DLOAD_PROTECTION_FAILURE = 25;
+        public const int FAST_FAIL_UNSAFE_EXTENSION_CALL = 26;
+        public const int FAST_FAIL_DEPRECATED_SERVICE_INVOKED = 27;
+        public const int FAST_FAIL_INVALID_BUFFER_ACCESS = 28;
+        public const int FAST_FAIL_INVALID_BALANCED_TREE = 29;
+        public const int FAST_FAIL_INVALID_NEXT_THREAD = 30;
+        /// <summary>Telemetry, nonfatal</summary>
+        public const int FAST_FAIL_GUARD_ICALL_CHECK_SUPPRESSED = 31;
+        public const int FAST_FAIL_APCS_DISABLED = 32;
+        public const int FAST_FAIL_INVALID_IDLE_STATE = 33;
+        public const int FAST_FAIL_MRDATA_PROTECTION_FAILURE = 34;
+        public const int FAST_FAIL_UNEXPECTED_HEAP_EXCEPTION = 35;
+        public const int FAST_FAIL_INVALID_LOCK_STATE = 36;
+        /// <summary>Known to compiler, must retain value 37</summary>
+        public const int FAST_FAIL_GUARD_JUMPTABLE = 37;
+        public const int FAST_FAIL_INVALID_LONGJUMP_TARGET = 38;
+        public const int FAST_FAIL_INVALID_DISPATCH_CONTEXT = 39;
+        public const int FAST_FAIL_INVALID_THREAD = 40;
+        /// <summary>Telemetry, nonfatal</summary>
+        public const int FAST_FAIL_INVALID_SYSCALL_NUMBER = 41;
+        /// <summary>Telemetry, nonfatal</summary>
+        public const int FAST_FAIL_INVALID_FILE_OPERATION = 42;
+        /// <summary>Telemetry, nonfatal</summary>
+        public const int FAST_FAIL_LPAC_ACCESS_DENIED = 43;
+        public const int FAST_FAIL_GUARD_SS_FAILURE = 44;
+        /// <summary>Telemetry, nonfatal</summary>
+        public const int FAST_FAIL_LOADER_CONTINUITY_FAILURE = 45;
+        public const int FAST_FAIL_GUARD_EXPORT_SUPPRESSION_FAILURE = 46;
+        public const int FAST_FAIL_INVALID_CONTROL_STACK = 47;
+        public const int FAST_FAIL_SET_CONTEXT_DENIED = 48;
+        public const int FAST_FAIL_INVALID_IAT = 49;
+        public const int FAST_FAIL_HEAP_METADATA_CORRUPTION = 50;
+        public const int FAST_FAIL_PAYLOAD_RESTRICTION_VIOLATION = 51;
+        /// <summary>Telemetry, nonfatal</summary>
+        public const int FAST_FAIL_LOW_LABEL_ACCESS_DENIED = 52;
+        public const int FAST_FAIL_ENCLAVE_CALL_FAILURE = 53;
+        public const int FAST_FAIL_UNHANDLED_LSS_EXCEPTON = 54;
+        /// <summary>Telemetry, nonfatal</summary>
+        public const int FAST_FAIL_ADMINLESS_ACCESS_DENIED = 55;
+        public const int FAST_FAIL_UNEXPECTED_CALL = 56;
+        public const int FAST_FAIL_INVALID_FAST_FAIL_CODE = unchecked((int)0xFFFFFFFF);
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19775
         public const int RTL_UMS_VERSION = 0x0100;
     }

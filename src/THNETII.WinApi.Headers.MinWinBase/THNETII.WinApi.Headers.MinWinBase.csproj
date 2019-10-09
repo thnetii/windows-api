@@ -3,6 +3,7 @@
 
   <PropertyGroup>
     <LangVersion>7.2</LangVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <TargetFrameworks>netstandard1.3;netstandard2.0</TargetFrameworks>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <NoWarn>CS1591</NoWarn>
@@ -21,6 +22,13 @@
     <ProjectReference Include="..\THNETII.WinApi.Constants.NTStatus\THNETII.WinApi.Constants.NTStatus.csproj">
       <PrivateAssets>All</PrivateAssets>
     </ProjectReference>
+    <ProjectReference Include="..\THNETII.WinApi.Constants.WinError\THNETII.WinApi.Constants.WinError.csproj">
+      <PrivateAssets>All</PrivateAssets>
+    </ProjectReference>
+    <ProjectReference Include="..\THNETII.WinApi.Constants.WinNT\THNETII.WinApi.Constants.WinNT.csproj">
+      <PrivateAssets>All</PrivateAssets>
+    </ProjectReference>
+    <ProjectReference Include="..\THNETII.WinApi.Headers.MinWinDef\THNETII.WinApi.Headers.MinWinDef.csproj" />
   </ItemGroup>
 
 </Project>

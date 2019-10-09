@@ -62,17 +62,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "THNETII.WinApi.Headers.MinW
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "THNETII.WinApi.Constants.WinNT", "src\THNETII.WinApi.Constants.WinNT\THNETII.WinApi.Constants.WinNT.csproj", "{563313DE-299D-4C2A-AE87-4067BED88C7C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "THNETII.WinApi.Headers.HandleApi", "src\THNETII.WinApi.Headers.HandleApi\THNETII.WinApi.Headers.HandleApi.csproj", "{1BD3BEDE-9A21-47AA-B2EB-4331A572120D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "THNETII.WinApi.Headers.HandleApi", "src\THNETII.WinApi.Headers.HandleApi\THNETII.WinApi.Headers.HandleApi.csproj", "{1BD3BEDE-9A21-47AA-B2EB-4331A572120D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "THNETII.WinApi.WindowsDataTypes", "src-shared\THNETII.WinApi.WindowsDataTypes\THNETII.WinApi.WindowsDataTypes.csproj", "{9F564495-BDC2-4A37-8297-8E19F1F9095B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "THNETII.WinApi.WindowsDataTypes", "src-shared\THNETII.WinApi.WindowsDataTypes\THNETII.WinApi.WindowsDataTypes.csproj", "{9F564495-BDC2-4A37-8297-8E19F1F9095B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "THNETII.WinApi.Headers.Excpt", "src\THNETII.WinApi.Headers.Excpt\THNETII.WinApi.Headers.Excpt.csproj", "{C57FD53B-19BE-461B-A8E4-798C8AB40EB0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "THNETII.WinApi.Headers.Excpt", "src\THNETII.WinApi.Headers.Excpt\THNETII.WinApi.Headers.Excpt.csproj", "{C57FD53B-19BE-461B-A8E4-798C8AB40EB0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "THNETII.WinApi.Constants.WinBase", "src\THNETII.WinApi.Constants.WinBase\THNETII.WinApi.Constants.WinBase.csproj", "{0B8FFD4D-1AE2-43ED-A534-91ED9DDA3917}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "THNETII.WinApi.Constants.WinBase", "src\THNETII.WinApi.Constants.WinBase\THNETII.WinApi.Constants.WinBase.csproj", "{0B8FFD4D-1AE2-43ED-A534-91ED9DDA3917}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "THNETII.InteropServices.Memory", "interopservices\src\THNETII.InteropServices.Memory\THNETII.InteropServices.Memory.csproj", "{E42DB0EC-329A-4659-BC8C-C821832C1DAF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "THNETII.InteropServices.Memory", "interopservices\src\THNETII.InteropServices.Memory\THNETII.InteropServices.Memory.csproj", "{E42DB0EC-329A-4659-BC8C-C821832C1DAF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "THNETII.WinApi.Helpers", "src-shared\THNETII.WinApi.Helpers\THNETII.WinApi.Helpers.csproj", "{893682BF-6304-4AE2-85AC-AEE8B478A803}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "THNETII.WinApi.Helpers", "src-shared\THNETII.WinApi.Helpers\THNETII.WinApi.Helpers.csproj", "{893682BF-6304-4AE2-85AC-AEE8B478A803}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "THNETII.WinApi.Extensions.MinWinBase", "src\THNETII.WinApi.Extensions.MinWinBase\THNETII.WinApi.Extensions.MinWinBase.csproj", "{D44C3BBD-9B94-44C7-8F7E-C59E10EA435A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -360,6 +362,18 @@ Global
 		{893682BF-6304-4AE2-85AC-AEE8B478A803}.Release|x64.Build.0 = Release|Any CPU
 		{893682BF-6304-4AE2-85AC-AEE8B478A803}.Release|x86.ActiveCfg = Release|Any CPU
 		{893682BF-6304-4AE2-85AC-AEE8B478A803}.Release|x86.Build.0 = Release|Any CPU
+		{D44C3BBD-9B94-44C7-8F7E-C59E10EA435A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D44C3BBD-9B94-44C7-8F7E-C59E10EA435A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D44C3BBD-9B94-44C7-8F7E-C59E10EA435A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{D44C3BBD-9B94-44C7-8F7E-C59E10EA435A}.Debug|x64.Build.0 = Debug|Any CPU
+		{D44C3BBD-9B94-44C7-8F7E-C59E10EA435A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D44C3BBD-9B94-44C7-8F7E-C59E10EA435A}.Debug|x86.Build.0 = Debug|Any CPU
+		{D44C3BBD-9B94-44C7-8F7E-C59E10EA435A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D44C3BBD-9B94-44C7-8F7E-C59E10EA435A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D44C3BBD-9B94-44C7-8F7E-C59E10EA435A}.Release|x64.ActiveCfg = Release|Any CPU
+		{D44C3BBD-9B94-44C7-8F7E-C59E10EA435A}.Release|x64.Build.0 = Release|Any CPU
+		{D44C3BBD-9B94-44C7-8F7E-C59E10EA435A}.Release|x86.ActiveCfg = Release|Any CPU
+		{D44C3BBD-9B94-44C7-8F7E-C59E10EA435A}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -389,6 +403,7 @@ Global
 		{0B8FFD4D-1AE2-43ED-A534-91ED9DDA3917} = {9689DB3E-1ED7-478C-AC14-C734B0397619}
 		{E42DB0EC-329A-4659-BC8C-C821832C1DAF} = {53F2B150-6C08-41EE-B731-E58AAB465F69}
 		{893682BF-6304-4AE2-85AC-AEE8B478A803} = {5C3583C6-8F66-4903-B181-71C3DF1C704E}
+		{D44C3BBD-9B94-44C7-8F7E-C59E10EA435A} = {9689DB3E-1ED7-478C-AC14-C734B0397619}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6EF7C9CF-E403-4B60-AB44-5F9FFEB668B7}

@@ -28,7 +28,8 @@ namespace THNETII.WinApi.Helpers
             int len = byteSpan.IndexOf((byte)0);
             if (len < 0)
                 len = maxLength;
-            return encoding.GetString(bytes, len);
+            return (encoding ?? throw new ArgumentNullException(nameof(encoding)))
+                .GetString(bytes, len);
         }
         /// <summary>
         /// Encodes the specified <see cref="string"/> value into a fixed-sized byte-buffer
@@ -47,7 +48,8 @@ namespace THNETII.WinApi.Helpers
             string s = str ?? string.Empty;
             fixed (char* chs = s)
             {
-                int cnt = encoding.GetBytes(chs, s.Length, bytes, maxLength);
+                int cnt = (encoding ?? throw new ArgumentNullException(nameof(encoding)))
+                    .GetBytes(chs, s.Length, bytes, maxLength);
                 if (cnt < maxLength)
                     bytes[cnt] = 0;
             }
@@ -94,7 +96,7 @@ namespace THNETII.WinApi.Helpers
                 return;
             }
 
-            var pStr = Marshal.StringToCoTaskMemAnsi(str);
+            IntPtr pStr = Marshal.StringToCoTaskMemAnsi(str);
             try
             {
                 var valueSpan = new Span<byte>(pStr.ToPointer(), maxLength);

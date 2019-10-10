@@ -13,3 +13,4 @@ using System.Diagnostics.CodeAnalysis;
 [assembly: SuppressMessage("Performance", "CA1815: Override equals and operator equals on value types")]
 [assembly: SuppressMessage("Style", "IDE1006: Naming Styles")]
 [assembly: SuppressMessage("Naming", "CA1720: Identifier contains type name")]
+[assembly: SuppressMessage("Design", "CA1028: Enum Storage should be Int32")]

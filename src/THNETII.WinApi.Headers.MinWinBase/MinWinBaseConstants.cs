@@ -13,6 +13,14 @@ namespace THNETII.WinApi.Native.MinWinBase
         public const int LOCKFILE_FAIL_IMMEDIATELY = 0x00000001;
         public const int LOCKFILE_EXCLUSIVE_LOCK = 0x00000002;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\minwinbase.h, line 254
+public const short PROCESS_HEAP_REGION = 0x0001;
+public const short PROCESS_HEAP_UNCOMMITTED_RANGE = 0x0002;
+public const short PROCESS_HEAP_ENTRY_BUSY = 0x0004;
+public const short PROCESS_HEAP_SEG_ALLOC = 0x0008;
+public const short PROCESS_HEAP_ENTRY_MOVEABLE = 0x0010;
+public const short PROCESS_HEAP_ENTRY_DDESHARE = 0x0020;
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\minwinbase.h, line 387
         /* compatibility macros */
         public const int STILL_ACTIVE = STATUS_PENDING;

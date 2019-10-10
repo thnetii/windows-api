@@ -3,7 +3,7 @@
 
 int main(int argc, char* argv[])
 {
-    PVOID instance;
+    WIN32_FIND_DATAA instance;
     const int size = sizeof(instance);
     const int value = IO_REPARSE_TAG_CSV;
 

@@ -9,6 +9,10 @@ namespace THNETII.WinApi.Native.MinWinBase
         public const int FIND_FIRST_EX_LARGE_FETCH = 0x00000002;
         public const int FIND_FIRST_EX_ON_DISK_ENTRIES_ONLY = 0x00000004;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\minwinbase.h, line 231
+        public const int LOCKFILE_FAIL_IMMEDIATELY = 0x00000001;
+        public const int LOCKFILE_EXCLUSIVE_LOCK = 0x00000002;
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\minwinbase.h, line 387
         /* compatibility macros */
         public const int STILL_ACTIVE = STATUS_PENDING;

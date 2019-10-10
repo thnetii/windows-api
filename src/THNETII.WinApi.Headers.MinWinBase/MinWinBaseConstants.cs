@@ -85,5 +85,11 @@ namespace THNETII.WinApi.Native.MinWinBase
         /* Flags returned by LocalFlags (in addition to LMEM_DISCARDABLE) */
         public const int LMEM_DISCARDED = 0x4000;
         public const int LMEM_LOCKCOUNT = 0x00FF;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\minwinbase.h, line 437
+        //
+        // NUMA values
+        //
+        public const int NUMA_NO_PREFERRED_NODE = -1;
     }
 }

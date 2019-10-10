@@ -4,7 +4,7 @@ using THNETII.WinApi.Native.WinUser;
 
 namespace THNETII.WinApi.Native.MinWinBase
 {
-    using static WinUserConstants;
+    using static SLE_TYPE;
 
     // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\minwinbase.h, line 351
     /// <summary>
@@ -32,6 +32,6 @@ namespace THNETII.WinApi.Native.MinWinBase
         /// <item><term><c>0</c> (zero)</term><description>Indicates that only <see cref="dwError"/> was set.</description></item>
         /// </list>
         /// </summary>
-        public int dwType;
+        public SLE_TYPE dwType;
     }
 }

@@ -5,7 +5,7 @@ int main(int argc, char* argv[])
 {
     WIN32_FIND_DATAA instance;
     const int size = sizeof(instance);
-    const int value = GMEM_MOVEABLE;
+    const int value = POWER_REQUEST_CONTEXT_DETAILED_STRING;
 
     const void* ptr = RtlCaptureStackBackTrace;
 

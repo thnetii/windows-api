@@ -30,6 +30,7 @@ namespace THNETII.WinApi.Native.MinWinBase
     /// <seealso cref="WaitForMultipleObjectsEx"/>
     /// <seealso cref="WaitForSingleObjectEx"/>
     /// <seealso cref="WriteFileEx"/>
+    [UnmanagedFunctionPointer(CallingConvention.Winapi)]
     public delegate void LPOVERLAPPED_COMPLETION_ROUTINE(
         [In] int dwErrorCode,
         [In] int dwNumberOfBytesTransfered,

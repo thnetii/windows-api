@@ -4,7 +4,7 @@
     /// Defines values that are used with the <see cref="FindFirstFileEx"/> function to specify the information level of the returned data.
     /// </summary>
     /// <remarks>
-    /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/minwinbase/ne-minwinbase-win32_find_dataw">FINDEX_INFO_LEVELS Enumeration</a></para>
+    /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/minwinbase/ne-minwinbase-findex_info_levels">FINDEX_INFO_LEVELS Enumeration</a></para>
     /// </remarks>
     /// <seealso cref="FindFirstFileEx"/>
     /// <seealso cref="WIN32_FIND_DATAW"/>

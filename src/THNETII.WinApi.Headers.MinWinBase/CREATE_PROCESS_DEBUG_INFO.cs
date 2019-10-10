@@ -58,7 +58,7 @@ namespace THNETII.WinApi.Native.MinWinBase
         /// <summary>
         /// A pointer to the file name associated with the <see cref="hFile"/> member. This parameter may be <see cref="IntPtr"/>, or it may contain the address of a string pointer in the address space of the process being debugged. That address may, in turn, either be <see langword="null"/> or point to the actual filename. If <see cref="fUnicode"/> is <see langword="true"/>, the name string is Unicode (UTF-16); otherwise, it is ANSI.
         /// <para>
-        /// This member is strictly optional. Debuggers must be prepared to handle the case where lpImageName is <see cref="IntPtr.Zero"/> or the dereferenced value (in the address space of the process being debugged) is <see langword="null"/>. Specifically, the system does not provide an image name for a create process event, and will not likely pass an image name for the first DLL event. The system also does not provide this information in the case of debug events that originate from a call to the <see cref="DebugActiveProcess"/> function.
+        /// This member is strictly optional. Debuggers must be prepared to handle the case where <see cref="lpImageName"/> is <see cref="IntPtr.Zero"/> or the dereferenced value (in the address space of the process being debugged) is <see langword="null"/>. Specifically, the system does not provide an image name for a create process event, and will not likely pass an image name for the first DLL event. The system also does not provide this information in the case of debug events that originate from a call to the <see cref="DebugActiveProcess"/> function.
         /// </para>
         /// </summary>
         public IntPtr lpImageName;

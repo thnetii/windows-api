@@ -2,7 +2,7 @@
 
 namespace THNETII.WinApi.Native.MinWinBase
 {
-    // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\minwinbase.h, line 324
+    // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\minwinbase.h, line 328
     /// <summary>
     /// Contains the exit code for a terminating process.
     /// </summary>

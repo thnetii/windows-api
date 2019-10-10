@@ -14,12 +14,26 @@ namespace THNETII.WinApi.Native.MinWinBase
         public const int LOCKFILE_EXCLUSIVE_LOCK = 0x00000002;
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\minwinbase.h, line 254
-public const short PROCESS_HEAP_REGION = 0x0001;
-public const short PROCESS_HEAP_UNCOMMITTED_RANGE = 0x0002;
-public const short PROCESS_HEAP_ENTRY_BUSY = 0x0004;
-public const short PROCESS_HEAP_SEG_ALLOC = 0x0008;
-public const short PROCESS_HEAP_ENTRY_MOVEABLE = 0x0010;
-public const short PROCESS_HEAP_ENTRY_DDESHARE = 0x0020;
+        public const short PROCESS_HEAP_REGION = 0x0001;
+        public const short PROCESS_HEAP_UNCOMMITTED_RANGE = 0x0002;
+        public const short PROCESS_HEAP_ENTRY_BUSY = 0x0004;
+        public const short PROCESS_HEAP_SEG_ALLOC = 0x0008;
+        public const short PROCESS_HEAP_ENTRY_MOVEABLE = 0x0010;
+        public const short PROCESS_HEAP_ENTRY_DDESHARE = 0x0020;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\minwinbase.h, line 277
+        //
+        // Debug APIs
+        //
+        public const int EXCEPTION_DEBUG_EVENT = 1;
+        public const int CREATE_THREAD_DEBUG_EVENT = 2;
+        public const int CREATE_PROCESS_DEBUG_EVENT = 3;
+        public const int EXIT_THREAD_DEBUG_EVENT = 4;
+        public const int EXIT_PROCESS_DEBUG_EVENT = 5;
+        public const int LOAD_DLL_DEBUG_EVENT = 6;
+        public const int UNLOAD_DLL_DEBUG_EVENT = 7;
+        public const int OUTPUT_DEBUG_STRING_EVENT = 8;
+        public const int RIP_EVENT = 9;
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\minwinbase.h, line 387
         /* compatibility macros */

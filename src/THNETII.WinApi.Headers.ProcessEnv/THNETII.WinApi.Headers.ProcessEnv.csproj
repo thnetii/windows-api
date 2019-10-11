@@ -10,7 +10,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src-shared\THNETII.WinApi.NativeLibraryNames\THNETII.WinApi.NativeLibraryNames.csproj" />
+    <ProjectReference Include="..\..\src-shared\THNETII.WinApi.Helpers\THNETII.WinApi.Helpers.csproj">
+      <PrivateAssets>All</PrivateAssets>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src-shared\THNETII.WinApi.NativeLibraryNames\THNETII.WinApi.NativeLibraryNames.csproj">
+      <PrivateAssets>All</PrivateAssets>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src-shared\THNETII.WinApi.WindowsDataTypes\THNETII.WinApi.WindowsDataTypes.csproj" />
   </ItemGroup>
 
 </Project>

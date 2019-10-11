@@ -2,7 +2,10 @@
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
+
 using THNETII.InteropServices.Bitwise;
+using THNETII.InteropServices.Memory;
+
 using static THNETII.WinApi.Native.WinNT.WinNTConstants;
 
 namespace THNETII.WinApi.Native.WinNT
@@ -37,8 +40,8 @@ namespace THNETII.WinApi.Native.WinNT
             {
                 fixed (CLAIM_SECURITY_ATTRIBUTE_RELATIVE_V1* pThis = &this)
                 {
-                    var pwName = new PWSTR(new IntPtr(pThis) + NameOffset);
-                    return pwName.AsSpan();
+                    var pwName = Pointer.Create<LPWSTR>(new IntPtr(pThis) + NameOffset);
+                    return pwName.GetTerminatedSpan();
                 }
             }
         }
@@ -112,9 +115,9 @@ namespace THNETII.WinApi.Native.WinNT
         }
 
         /// <summary>
-        /// Provides referential access to <see cref="PWSTR"/> values of type <see cref="CLAIM_SECURITY_ATTRIBUTE_VALUE_TYPE.CLAIM_SECURITY_ATTRIBUTE_TYPE_STRING"/>
+        /// Provides referential access to <see cref="LPWSTR"/> values of type <see cref="CLAIM_SECURITY_ATTRIBUTE_VALUE_TYPE.CLAIM_SECURITY_ATTRIBUTE_TYPE_STRING"/>
         /// </summary>
-        public unsafe CLAIM_SECURITY_ATTRIBUTE_RELATIVE_VALUES<PWSTR> String
+        public unsafe CLAIM_SECURITY_ATTRIBUTE_RELATIVE_VALUES<LPWSTR> String
         {
             get
             {
@@ -122,7 +125,7 @@ namespace THNETII.WinApi.Native.WinNT
                     throw new InvalidOperationException($"Cannot access property {nameof(String)} if {nameof(ValueType)} is {ValueType}");
                 fixed (CLAIM_SECURITY_ATTRIBUTE_RELATIVE_V1* pThis = &this)
                 {
-                    return new CLAIM_SECURITY_ATTRIBUTE_RELATIVE_VALUES<PWSTR>(pThis);
+                    return new CLAIM_SECURITY_ATTRIBUTE_RELATIVE_VALUES<LPWSTR>(pThis);
                 }
             }
         }

@@ -3,11 +3,11 @@
 
 int main(int argc, char* argv[])
 {
-    WIN32_FIND_DATAA instance;
+    LPCWSTR instance;
     const int size = sizeof(instance);
     const int value = THREAD_GET_CONTEXT;
 
-    const void* ptr = RtlCaptureStackBackTrace;
+    const void* ptr = SetEnvironmentStringsW;
 
     return EXIT_SUCCESS;
 }

@@ -6,7 +6,7 @@ namespace THNETII.WinApi.Native.WinNT
     [StructLayout(LayoutKind.Sequential)]
     public unsafe struct TOKEN_BNO_ISOLATION_INFORMATION
     {
-        public PWSTR IsolationPrefix;
+        public LPWSTR IsolationPrefix;
         internal byte IsolationEnabledValue;
         public bool IsolationEnabled
         {

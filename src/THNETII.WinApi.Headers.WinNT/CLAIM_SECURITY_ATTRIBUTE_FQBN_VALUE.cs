@@ -20,6 +20,6 @@ namespace THNETII.WinApi.Native.WinNT
         /// A pointer to a zero-terminated Unicode (UTF-16) string containing
         /// the fully qualified binary name.
         /// </summary>
-        public PWSTR NamePtr;
+        public LPWSTR NamePtr;
     }
 }

@@ -30,7 +30,7 @@ namespace THNETII.WinApi.Native.WinNT
         /// <summary>
         /// A pointer to a string of Unicode characters that contains the name of the security attribute. This string must be at least 4 bytes in length.
         /// </summary>
-        public PWSTR Name;
+        public LPWSTR Name;
         /// <summary>
         /// A union tag value that indicates the type of information contained in the <see cref="Values"/> member.
         /// </summary>
@@ -93,15 +93,15 @@ namespace THNETII.WinApi.Native.WinNT
         }
 
         /// <summary>
-        /// A span of <see cref="ValueCount"/> members where each member is a <see cref="PWSTR"/> of type <see cref="CLAIM_SECURITY_ATTRIBUTE_VALUE_TYPE.CLAIM_SECURITY_ATTRIBUTE_TYPE_STRING"/>.
+        /// A span of <see cref="ValueCount"/> members where each member is a <see cref="LPWSTR"/> of type <see cref="CLAIM_SECURITY_ATTRIBUTE_VALUE_TYPE.CLAIM_SECURITY_ATTRIBUTE_TYPE_STRING"/>.
         /// </summary>
-        public Span<PWSTR> String
+        public Span<LPWSTR> String
         {
             get
             {
                 if (ValueType != CLAIM_SECURITY_ATTRIBUTE_VALUE_TYPE.CLAIM_SECURITY_ATTRIBUTE_TYPE_STRING)
                     throw new InvalidOperationException($"Cannot access property {nameof(String)} if {nameof(ValueType)} is {ValueType}");
-                return Values.AsRefStructSpan<PWSTR>(ValueCount);
+                return Values.AsRefStructSpan<LPWSTR>(ValueCount);
             }
         }
 

@@ -35,7 +35,7 @@ namespace THNETII.WinApi.Native.MinWinBase
             [FieldOffset(0)]
             public REASON_CONTEXT_DETAIL Detailed;
             [FieldOffset(0)]
-            public PWSTR SimpleReasonString;
+            public LPWSTR SimpleReasonString;
         }
         /// <summary>
         /// A union that consists of either a <see cref="Detailed"/> structure or a string.
@@ -45,7 +45,7 @@ namespace THNETII.WinApi.Native.MinWinBase
         /// <summary>
         /// A non-localized string that describes the reason for the power request.
         /// </summary>
-        public PWSTR SimpleReasonString
+        public LPWSTR SimpleReasonString
         {
             get => Reason.SimpleReasonString;
             set => Reason.SimpleReasonString = value;
@@ -67,10 +67,10 @@ namespace THNETII.WinApi.Native.MinWinBase
         /// The number of strings in the <see cref="ReasonStrings"/> parameter.
         /// </summary>
         public int ReasonStringCount;
-        internal PWSTR* ReasonStringsField;
+        internal LPWSTR* ReasonStringsField;
         /// <summary>
         /// An span of strings to be substituted in the string resource at run time.
         /// </summary>
-        public Span<PWSTR> ReasonStrings => new Span<PWSTR>(ReasonStringsField, ReasonStringCount);
+        public Span<LPWSTR> ReasonStrings => new Span<LPWSTR>(ReasonStringsField, ReasonStringCount);
     }
 }

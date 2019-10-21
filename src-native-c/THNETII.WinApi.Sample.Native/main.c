@@ -7,7 +7,7 @@ int main(int argc, char* argv[])
     const int size = sizeof(instance);
     const int value = THREAD_GET_CONTEXT;
 
-    const void* ptr = SetEnvironmentStringsW;
+    const void* ptr = SearchPathW;
 
     return EXIT_SUCCESS;
 }

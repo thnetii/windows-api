@@ -42,7 +42,7 @@ namespace THNETII.WinApi.Native.ProcessEnv
         [return: MarshalAs(UnmanagedType.Bool)]
         public static extern bool SetEnvironmentStrings(
             [In, MarshalAs(LPTSTR)] string NewEnvironment
-            ); 
+            );
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\processenv.h, line 46
         #region GetStdHandle function
@@ -366,6 +366,70 @@ namespace THNETII.WinApi.Native.ProcessEnv
         // Not declared, use System.Environment.CurrentDirectory property. 
         #endregion
         #region SearchPathW function
+        /// <summary>
+        /// Searches for a specified file in a specified path.
+        /// </summary>
+        /// <param name="lpPath">
+        /// <para>The path to be searched for the file.</para>
+        /// <para>
+        /// If this parameter is <see langword="null"/>, the function searches
+        /// for a matching file using a registry-dependent system search path.
+        /// For more information, see the Remarks section.
+        /// </para>
+        /// </param>
+        /// <param name="lpFileName">The name of the file for which to search.</param>
+        /// <param name="lpExtension">
+        /// <para>The extension to be added to the file name when searching for the file. The first character of the file name extension must be a period (.). The extension is added only if the specified file name does not end with an extension.</para>
+        /// <para>If a file name extension is not required or if the file name contains an extension, this parameter can be <see langword="null"/>.</para>
+        /// </param>
+        /// <param name="nBufferLength">
+        /// The size of the buffer that receives the valid path and file name (including the terminating null character), in <see cref="char"/>s.
+        /// </param>
+        /// <param name="lpBuffer">A writable buffer to receive the path and file name of the file found.</param>
+        /// <param name="lpFilePart">Receives the address (within <paramref name="lpBuffer"/>) of the last component of the valid path and file name, which is the address of the character immediately following the final backslash in the path.</param>
+        /// <returns>
+        /// If the function succeeds, the value returned is the length, in <see cref="char"/>s, of the string that is copied to the buffer, not including the terminating null character. If the return value is greater than <paramref name="nBufferLength"/>, the value returned is the size of the buffer that is required to hold the path, including the terminating null character.
+        /// <para>If the function fails, the return value is <c>0</c> (zero). To get extended error information, call <see cref="GetLastError"/>.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>
+        /// If the <paramref name="lpPath"/> parameter is <see langword="null"/>, <see cref="SearchPathW(LPCWSTR, LPCWSTR, LPCWSTR, int, LPWSTR, out LPWSTR)"/> searches for a matching file based on the current value of the following registry value:
+        /// <code>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\SafeProcessSearchMode</code>
+        /// When the value of this <strong>REG_DWORD</strong> registry value is set to 1, <see cref="SearchPathW(LPCWSTR, LPCWSTR, LPCWSTR, int, LPWSTR, out LPWSTR)"/> first searches the folders that are specified in the system path, and then searches the current working folder. When the value of this registry value is set to <c>0</c> (zero), the computer first searches the current working folder, and then searches the folders that are specified in the system path. The system default value for this registry key is <c>0</c> (zero).
+        /// </para>
+        /// <para>The search mode used by the <see cref="SearchPathW(LPCWSTR, LPCWSTR, LPCWSTR, int, LPWSTR, out LPWSTR)"/> function can also be set per-process by calling the <see cref="SetSearchPathMode"/> function.</para>
+        /// <para>The <see cref="SearchPathW(LPCWSTR, LPCWSTR, LPCWSTR, int, LPWSTR, out LPWSTR)"/> function is not recommended as a method of locating a .dll file if the intended use of the output is in a call to the <see cref="LoadLibrary"/> function. This can result in locating the wrong .dll file because the search order of the <see cref="SearchPathW(LPCWSTR, LPCWSTR, LPCWSTR, int, LPWSTR, out LPWSTR)"/> function differs from the search order used by the <see cref="LoadLibrary"/> function. If you need to locate and load a .dll file, use the <see cref="LoadLibrary"/> function.</para>
+        /// <para>
+        /// <note>Starting with Windows 10, version 1607, for the unicode version of this function (<see cref="SearchPathW(LPCWSTR, LPCWSTR, LPCWSTR, int, LPWSTR, out LPWSTR)"/>), you can opt-in to remove the <see cref="MAX_PATH"/> limitation. See the "Maximum Path Length Limitation" section of <a href="https://docs.microsoft.com/windows/desktop/FileIO/naming-a-file">Naming Files, Paths, and Namespaces</a> for details.</note>
+        /// </para>
+        /// <para>
+        /// In Windows 8 and Windows Server 2012, this function is supported by the following technologies.
+        /// <list type="table">
+        /// <listheader><term>Technology</term><description>Supported</description></listheader>
+        /// <item><term>Server Message Block (SMB) 3.0 protocol </term><description>Yes</description></item>
+        /// <item><term>SMB 3.0 Transparent Failover (TFO) </term><description>Yes</description></item>
+        /// <item><term>SMB 3.0 with Scale-out File Shares (SO) </term><description>Yes</description></item>
+        /// <item><term>Cluster Shared Volume File System (CsvFS) </term><description>Yes</description></item>
+        /// <item><term>Resilient File System (ReFS) </term><description>Yes</description></item>
+        /// </list>
+        /// </para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows XP [desktop apps | UWP apps]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps | UWP apps]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/processenv/nf-processenv-searchpathw">SearchPathW function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/FileIO/file-management-functions">File Management Functions</seealso>
+        /// <seealso cref="FindFirstFile"/>
+        /// <seealso cref="FindNextFile"/>
+        /// <seealso cref="GetSystemDirectory"/>
+        /// <seealso cref="GetWindowsDirectory"/>
+        /// <seealso cref="SetSearchPathMode"/>
         [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi)]
         public static extern int SearchPathW(
             [In, Optional] LPCWSTR lpPath,
@@ -375,6 +439,22 @@ namespace THNETII.WinApi.Native.ProcessEnv
             [In, Optional] LPWSTR lpBuffer,
             [Optional] out LPWSTR lpFilePart
             );
+        /// <inheritdoc cref="SearchPathW(LPCWSTR, LPCWSTR, LPCWSTR, int, LPWSTR, out LPWSTR)"/>
+        public static int SearchPathW(
+            [In, Optional] LPCWSTR lpPath,
+            [In] LPCWSTR lpFileName,
+            [In, Optional] LPCWSTR lpExtension,
+            [In, Optional, MarshalAs(UnmanagedType.LPWStr)] StringBuilder lpBuffer,
+            [Optional] out LPCWSTR lpFilePart
+            ) =>
+            SearchPathW(
+                lpPath,
+                lpFileName,
+                lpExtension,
+                lpBuffer?.Capacity ?? 0,
+                lpBuffer,
+                out lpFilePart);
+        /// <inheritdoc cref="SearchPathW(LPCWSTR, LPCWSTR, LPCWSTR, int, LPWSTR, out LPWSTR)"/>
         [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi)]
         private static extern int SearchPathW(
             [In, Optional] LPCWSTR lpPath,
@@ -382,7 +462,33 @@ namespace THNETII.WinApi.Native.ProcessEnv
             [In, Optional] LPCWSTR lpExtension,
             [In] int nBufferLength,
             [In, Optional, MarshalAs(UnmanagedType.LPWStr)] StringBuilder lpBuffer,
-            [Optional] out LPWSTR lpFilePart
+            [Optional] out LPCWSTR lpFilePart
+            );
+        /// <inheritdoc cref="SearchPathW(LPCWSTR, LPCWSTR, LPCWSTR, int, LPWSTR, out LPWSTR)"/>
+        public static int SearchPathW(
+            [In, MarshalAs(UnmanagedType.LPWStr), Optional] string lpPath,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string lpFileName,
+            [In, MarshalAs(UnmanagedType.LPWStr), Optional] string lpExtension,
+            [In, Optional, MarshalAs(UnmanagedType.LPWStr)] StringBuilder lpBuffer,
+            [MarshalAs(UnmanagedType.LPWStr), Optional] out string lpFilePart
+            ) =>
+            SearchPathW(
+                lpPath,
+                lpFileName,
+                lpExtension,
+                lpBuffer?.Capacity ?? 0,
+                lpBuffer,
+                out lpFilePart
+                );
+        /// <inheritdoc cref="SearchPathW(LPCWSTR, LPCWSTR, LPCWSTR, int, LPWSTR, out LPWSTR)"/>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi)]
+        private static extern int SearchPathW(
+            [In, MarshalAs(UnmanagedType.LPWStr), Optional] string lpPath,
+            [In, MarshalAs(UnmanagedType.LPWStr)] string lpFileName,
+            [In, MarshalAs(UnmanagedType.LPWStr), Optional] string lpExtension,
+            [In] int nBufferLength,
+            [In, Optional, MarshalAs(UnmanagedType.LPWStr)] StringBuilder lpBuffer,
+            [MarshalAs(UnmanagedType.LPWStr), Optional] out string lpFilePart
             );
         #endregion
     }

@@ -646,5 +646,72 @@ namespace THNETII.WinApi.Native.ProcessEnv
             [MarshalAs(UnmanagedType.LPStr), Optional] out string lpFilePart
             );
         #endregion
+        #region NeedCurrentDirectoryForExePathA function
+        /// <summary>
+        /// Determines whether the current directory should be included in the search path for the specified executable.
+        /// </summary>
+        /// <param name="ExeName">The name of the executable file.</param>
+        /// <returns>
+        /// If the current directory should be part of the search path, the return value is <see langword="true"/>. Otherwise, the return value is <see langword="false"/>.
+        /// </returns>
+        /// <remarks>
+        /// <para>This function should only be called in instances where the caller must explicitly resolve a relative executable name to an absolute name. If <see cref="CreateProcess"/> is called with a relative executable name, it will automatically search for the executable, calling this function to determine the search path.</para>
+        /// <para>Most system functions perform their own path resolution, therefore, this function should only be called if you are attempting to resolve a search path for the specified executable based on the current directory.</para>
+        /// <para>The value of the <c>NoDefaultCurrentDirectoryInExePath</c> environment variable determines the value this function returns. However, you should call this function rather than checking the environment variable directly, as the registry location of this environment variable can change.</para>
+        /// <para>If the value of the <paramref name="ExeName"/> parameter contains a backslash, this function will always return <see langword="true"/>. If it does not contain a backslash, the existence of the <c>NoDefaultCurrentDirectoryInExePath</c> environment variable is checked, and not its value.</para>
+        /// <para>An example of an instance when this function should be called instead of relying on the default search path resolution algorithm in <see cref="CreateProcess"/> is the "cmd.exe" executable. It calls this function to determine the command search path because it does its own path resolution before calling <see cref="CreateProcess"/>. If this function returns <see langword="true"/>, cmd.exe uses the path ".;%PATH%" for the executable search. If it returns <see langword="false"/>, cmd.exe uses the path "%PATH%" for the search.</para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows Vista [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/processenv/nf-processenv-needcurrentdirectoryforexepatha">NeedCurrentDirectoryForExePathA function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="CreateProcess"/>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/ProcThread/process-and-thread-functions">Process and Thread Functions</seealso>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool NeedCurrentDirectoryForExePathA(
+            [In] LPCSTR ExeName
+            );
+        /// <inheritdoc cref="NeedCurrentDirectoryForExePathA(LPCSTR)"/>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool NeedCurrentDirectoryForExePathA(
+            [In, MarshalAs(UnmanagedType.LPStr)] string ExeName
+            );
+        #endregion
+        #region NeedCurrentDirectoryForExePathW function
+        /// <inheritdoc cref="NeedCurrentDirectoryForExePathA(LPCSTR)"/>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool NeedCurrentDirectoryForExePathW(
+            [In] LPCWSTR ExeName
+            );
+        /// <inheritdoc cref="NeedCurrentDirectoryForExePathA(LPCSTR)"/>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool NeedCurrentDirectoryForExePathW(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string ExeName
+            );
+        #endregion
+        #region NeedCurrentDirectoryForExePath function
+        /// <inheritdoc cref="NeedCurrentDirectoryForExePathA(LPCSTR)"/>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSetAuto)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool NeedCurrentDirectoryForExePath(
+            [In] LPCTSTR ExeName
+            );
+        /// <inheritdoc cref="NeedCurrentDirectoryForExePathA(LPCSTR)"/>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSetAuto)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool NeedCurrentDirectoryForExePath(
+            [In, MarshalAs(LPTSTR)] string ExeName
+            );
+        #endregion
     }
 }

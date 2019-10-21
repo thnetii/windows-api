@@ -6,3 +6,4 @@
 using System.Diagnostics.CodeAnalysis;
 
 [assembly: SuppressMessage("Naming", "CA1707: Identifiers should not contain underscores")]
+[assembly: SuppressMessage("Interoperability", "CA1401: P/Invokes should not be visible")]

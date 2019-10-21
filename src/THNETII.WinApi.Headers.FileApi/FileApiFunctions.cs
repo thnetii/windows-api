@@ -51,5 +51,17 @@ namespace THNETII.WinApi.Native.FileApi
             in FILETIME lpFileTime2
             );
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\fileapi.h, line 56
+        #region CreateDirectoryA function
+        // Not implemented, use System.IO.Directory.Create or related APIs
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\fileapi.h, line 64
+        #region CreateDirectoryW function
+        // Not implemented, use System.IO.Directory.Create or related APIs
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\fileapi.h, line 72
+        #region CreateDirectory function
+        // Not implemented, use System.IO.Directory.Create or related APIs
+        #endregion
     }
 }

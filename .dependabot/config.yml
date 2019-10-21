@@ -5,8 +5,14 @@ update_configs:
   update_schedule: live
   default_assignees:
   - couven92
+  automerged_updates:
+  - match:
+      update_type: "semver:minor"
 - package_manager: "submodules"
   directory: /
   update_schedule: daily
   default_assignees:
   - couven92
+  automerged_updates:
+  - match:
+      update_type: "all"

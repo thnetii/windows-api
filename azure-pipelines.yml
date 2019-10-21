@@ -1,0 +1,33 @@
+name: $(Date:yyyy-MM-dd)-rev$(Rev:r)
+trigger:
+  batch: true
+  branches:
+    include:
+    - master
+    - rel/*
+pr:
+- '*'
+resources:
+  repositories:
+  - repository: templates
+    type:       github
+    name:       thnetii/azure-pipelines
+    endpoint:   thnetii
+jobs:
+- template: templates/dotnetcore/azure-pipelines.yml@templates
+  parameters:
+    presteps:
+    - checkout:   self
+      fetchDepth: 1
+      submodules: true
+    overrideCommon:
+      allProjects: |
+        [Ss]rc/*/*.csproj
+        [Ss]rc-[Ss]hared/*/*.csproj
+        [Tt]est/*/*.csproj
+      srcProjects: |
+        [Ss]rc/*/*.csproj
+        [Ss]rc-[Ss]hared/*/*.csproj
+      testProjects: |
+        [Tt]est/*/*.csproj
+

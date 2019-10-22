@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 using System.Text;
-using THNETII.WinApi.Helpers;
 
 #if NETSTANDARD1_3
 using EntryPointNotFoundException = System.Exception;
@@ -10,7 +9,6 @@ using EntryPointNotFoundException = System.Exception;
 namespace THNETII.WinApi.Native.ProcessEnv
 {
     using static NativeLibraryNames;
-    using static StringMarshal;
 
     public static class ProcessEnvFunctions
     {
@@ -37,12 +35,14 @@ namespace THNETII.WinApi.Native.ProcessEnv
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\processenv.h, line 36
         #region SetEnvironmentStrings function
+#if !NETSTANDARD1_3
         /// <inheritdoc cref="SetEnvironmentStringsW" />
-        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSetAuto)]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
         [return: MarshalAs(UnmanagedType.Bool)]
         public static extern bool SetEnvironmentStrings(
-            [In, MarshalAs(LPTSTR)] string NewEnvironment
-            );
+            [In, MarshalAs(UnmanagedType.LPTStr)] string NewEnvironment
+            ); 
+#endif // !NETSTANDARD1_3
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\processenv.h, line 46
         #region GetStdHandle function
@@ -144,12 +144,12 @@ namespace THNETII.WinApi.Native.ProcessEnv
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\processenv.h, line 97
         #region GetCommandLine function
-#if NETSTANDARD2_0
+#if !NETSTANDARD1_3
         [Obsolete("Use the " + nameof(System) + "." + nameof(Environment) + "." + nameof(Environment.CommandLine) + " property instead.")]
-#endif
-        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSetAuto)]
-        [return: MarshalAs(LPTSTR)]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
+        [return: MarshalAs(UnmanagedType.LPTStr)]
         public static extern string GetCommandLine();
+#endif // !NETSTANDARD1_3
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\processenv.h, line 103
         #region GetEnvironmentStrings function
@@ -182,7 +182,7 @@ namespace THNETII.WinApi.Native.ProcessEnv
         /// <seealso cref="FreeEnvironmentStrings"/>
         /// <seealso cref="GetEnvironmentVariable"/>
         /// <seealso cref="SetEnvironmentVariable"/>
-        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSetAuto)]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi)]
         public static extern LPENVBLOCK GetEnvironmentStrings(
             );
         #endregion
@@ -293,7 +293,7 @@ namespace THNETII.WinApi.Native.ProcessEnv
         #region FreeEnvironmentStrings function
         /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
         /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
-        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true, CharSet = CharSetAuto)]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
         [return: MarshalAs(UnmanagedType.Bool)]
         public static extern bool FreeEnvironmentStrings(
             [In] LPENVBLOCK penv
@@ -492,6 +492,7 @@ namespace THNETII.WinApi.Native.ProcessEnv
             );
         #endregion
         #region SearchPath function
+#if !NETSTANDARD1_3
         /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
         /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
         public static int SearchPath(
@@ -510,7 +511,7 @@ namespace THNETII.WinApi.Native.ProcessEnv
                 out lpFilePart
                 );
         /// <inheritdoc cref="SearchPath(string, string, string, StringBuilder, out string)"/>
-        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSetAuto)]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
         private static extern int SearchPath(
             [In, MarshalAs(UnmanagedType.LPTStr), Optional] string lpPath,
             [In, MarshalAs(UnmanagedType.LPTStr)] string lpFileName,
@@ -519,6 +520,7 @@ namespace THNETII.WinApi.Native.ProcessEnv
             [In, Optional, MarshalAs(UnmanagedType.LPTStr)] StringBuilder lpBuffer,
             [MarshalAs(UnmanagedType.LPTStr), Optional] out string lpFilePart
             );
+#endif // !NETSTANDARD1_3
         #endregion
         #region SearchPathA function
         /// <summary>
@@ -700,18 +702,20 @@ namespace THNETII.WinApi.Native.ProcessEnv
             );
         #endregion
         #region NeedCurrentDirectoryForExePath function
+#if !NETSTANDARD1_3
         /// <inheritdoc cref="NeedCurrentDirectoryForExePathA(LPCSTR)"/>
-        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSetAuto)]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
         [return: MarshalAs(UnmanagedType.Bool)]
         public static extern bool NeedCurrentDirectoryForExePath(
             [In] LPCTSTR ExeName
             );
         /// <inheritdoc cref="NeedCurrentDirectoryForExePathA(LPCSTR)"/>
-        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSetAuto)]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
         [return: MarshalAs(UnmanagedType.Bool)]
         public static extern bool NeedCurrentDirectoryForExePath(
-            [In, MarshalAs(LPTSTR)] string ExeName
+            [In, MarshalAs(UnmanagedType.LPTStr)] string ExeName
             );
+#endif // !NETSTANDARD1_3
         #endregion
     }
 }

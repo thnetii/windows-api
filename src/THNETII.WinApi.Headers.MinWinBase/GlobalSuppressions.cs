@@ -14,3 +14,5 @@ using System.Diagnostics.CodeAnalysis;
 [assembly: SuppressMessage("Style", "IDE1006: Naming Styles")]
 [assembly: SuppressMessage("Naming", "CA1720: Identifier contains type name")]
 [assembly: SuppressMessage("Design", "CA1028: Enum Storage should be Int32")]
+[assembly: SuppressMessage("Naming", "CA1717: Only FlagsAttribute enums should have plural names")]
+[assembly: SuppressMessage("Naming", "CA1714: Flags enums should have plural names")]

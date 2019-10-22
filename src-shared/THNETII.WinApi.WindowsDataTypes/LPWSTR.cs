@@ -12,16 +12,17 @@ namespace THNETII.WinApi.Native
     [StructLayout(LayoutKind.Sequential)]
     public readonly struct LPWSTR : ITerminatedUnicodeStringPointer
     {
-        /// <summary>
-        /// Gets the pointer value of the <see cref="LPWSTR"/>.
-        /// </summary>
-        /// <value>A pointer to the first character of the string, or <see cref="IntPtr.Zero"/> if the <see cref="LPWSTR"/> refers to <see langword="null"/>.</value>
+        /// <inheritdoc cref="IPointer.Pointer"/>
         public IntPtr Pointer { get; }
     }
 
+    /// <summary>
+    /// A pointer to a constant null-terminated string of 16-bit Unicode characters.
+    /// </summary>
     [StructLayout(LayoutKind.Sequential)]
     public struct LPCWSTR : IConstTerminatedAnsiStringPointer
     {
+        /// <inheritdoc cref="IPointer.Pointer"/>
         public IntPtr Pointer { get; }
     }
 }

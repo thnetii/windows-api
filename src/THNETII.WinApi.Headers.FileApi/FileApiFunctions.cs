@@ -109,7 +109,7 @@ namespace THNETII.WinApi.Native.FileApi
         /// <para>The path of the directory to be created.</para>
         /// <para>For the ANSI version of this function, there is a default string size limit for paths of 248 characters (<see cref="MAX_PATH"/> - enough room for a 8.3 filename). To extend this limit to 32,767 wide characters, call the Unicode version of the function and prepend "\?" to the path. For more information, see <a href="https://docs.microsoft.com/windows/desktop/FileIO/naming-a-file">Naming a File</a></para>
         /// <para>
-        /// <note>Starting with Windows 10, version 1607, for the unicode version of this function (<see cref="CreateDirectoryW"/>), you can opt-in to remove the 248 character limitation without prepending "\\?\". The 255 character limit per path segment still applies. See the "Maximum Path Length Limitation" section of <a href="https://docs.microsoft.com/windows/desktop/FileIO/naming-a-file">Naming Files, Paths, and Namespaces</a> for details.</note>
+        /// <note>Starting with Windows 10, version 1607, for the unicode version of this function (<see cref="CreateDirectoryW(LPCWSTR, in SECURITY_ATTRIBUTES)"/>), you can opt-in to remove the 248 character limitation without prepending "\\?\". The 255 character limit per path segment still applies. See the "Maximum Path Length Limitation" section of <a href="https://docs.microsoft.com/windows/desktop/FileIO/naming-a-file">Naming Files, Paths, and Namespaces</a> for details.</note>
         /// </para>
         /// </param>
         /// <param name="lpSecurityAttributes">

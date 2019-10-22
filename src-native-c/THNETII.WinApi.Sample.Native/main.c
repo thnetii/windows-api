@@ -7,7 +7,7 @@ int main(int argc, char* argv[])
     const int size = sizeof(instance);
     const int value = THREAD_GET_CONTEXT;
 
-    const void* ptr = SearchPathW;
+    const void* ptr = CreateDirectoryW;
 
     return EXIT_SUCCESS;
 }

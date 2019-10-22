@@ -671,28 +671,140 @@ namespace THNETII.WinApi.Native.ProcessEnv
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\processenv.h, line 221
         #region SetCurrentDirectoryA function
-        // Not declared, use System.Environment.CurrentDirectory property. 
+        /// <inheritdoc cref="SetCurrentDirectoryW(LPWSTR)"/>
+        [Obsolete(".NET Applications should not call " + nameof(SetCurrentDirectory) + ". Instead the static System.Environment.CurrentDirectory property should be used.")]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool SetCurrentDirectoryA(
+            [In] LPSTR lpPathName
+            );
+
+        /// <inheritdoc cref="SetCurrentDirectoryA(LPSTR)"/>
+        [Obsolete(".NET Applications should not call " + nameof(SetCurrentDirectory) + ". Instead the static System.Environment.CurrentDirectory property should be used.")]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool SetCurrentDirectoryA(
+            [In, MarshalAs(UnmanagedType.LPStr)] string lpPathName
+            );
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\processenv.h, line 228
         #region SetCurrentDirectoryW function
-        // Not declared, use System.Environment.CurrentDirectory property. 
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        [Obsolete(".NET Applications should not call " + nameof(SetCurrentDirectory) + ". Instead the static System.Environment.CurrentDirectory property should be used.")]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool SetCurrentDirectoryW(
+            [In] LPWSTR lpPathName
+            );
+
+        /// <inheritdoc cref="SetCurrentDirectoryW(LPWSTR)"/>
+        [Obsolete(".NET Applications should not call " + nameof(SetCurrentDirectory) + ". Instead the static System.Environment.CurrentDirectory property should be used.")]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Unicode, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool SetCurrentDirectoryW(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string lpPathName
+            );
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\processenv.h, line 235
         #region SetCurrentDirectory function
-        // Not declared, use System.Environment.CurrentDirectory property. 
+        /// <inheritdoc cref="SetCurrentDirectoryW(LPWSTR)"/>
+        [Obsolete(".NET Applications should not call " + nameof(SetCurrentDirectory) + ". Instead the static System.Environment.CurrentDirectory property should be used.")]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool SetCurrentDirectory(
+            [In] LPTSTR lpPathName
+            );
+
+#if !NETSTANDARD1_3
+        /// <inheritdoc cref="SetCurrentDirectory(LPTSTR)"/>
+        [Obsolete(".NET Applications should not call " + nameof(SetCurrentDirectory) + ". Instead the static System.Environment.CurrentDirectory property should be used.")]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool SetCurrentDirectory(
+            [In, MarshalAs(UnmanagedType.LPTStr)] string lpPathName
+            );
+#endif // !NETSTANDARD1_3
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\processenv.h, line 241
         #region GetCurrentDirectoryA function
-        // Not declared, use System.Environment.CurrentDirectory property. 
+        /// <inheritdoc cref="GetCurrentDirectoryW(int, LPWSTR)"/>
+        [Obsolete(".NET Applications should not call " + nameof(GetCurrentDirectory) + ". Instead the static System.Environment.CurrentDirectory property should be used.")]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        public static extern int GetCurrentDirectoryA(
+            [In] int nBufferLength,
+            [Optional] LPSTR lpBuffer
+            );
+
+        /// <inheritdoc cref="GetCurrentDirectoryA(int, LPSTR)"/>
+        [Obsolete(".NET Applications should not call " + nameof(GetCurrentDirectory) + ". Instead the static System.Environment.CurrentDirectory property should be used.")]
+        public static int GetCurrentDirectoryA(
+            StringBuilder lpBuffer
+            ) =>
+            GetCurrentDirectoryA(lpBuffer?.Capacity ?? 0, lpBuffer);
+
+        /// <inheritdoc cref="GetCurrentDirectoryA(int, LPSTR)"/>
+        [Obsolete(".NET Applications should not call " + nameof(GetCurrentDirectory) + ". Instead the static System.Environment.CurrentDirectory property should be used.")]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi, SetLastError = true)]
+        private static extern int GetCurrentDirectoryA(
+            [In] int nBufferLength,
+            [Out, Optional, MarshalAs(UnmanagedType.LPStr)] StringBuilder lpBuffer
+            );
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\processenv.h, line 250
         #region GetCurrentDirectoryW function
-        // Not declared, use System.Environment.CurrentDirectory property. 
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        [Obsolete(".NET Applications should not call " + nameof(GetCurrentDirectory) + ". Instead the static System.Environment.CurrentDirectory property should be used.")]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        public static extern int GetCurrentDirectoryW(
+            [In] int nBufferLength,
+            [Optional] LPWSTR lpBuffer
+            );
+
+        /// <inheritdoc cref="GetCurrentDirectoryW(int, LPWSTR)"/>
+        [Obsolete(".NET Applications should not call " + nameof(GetCurrentDirectory) + ". Instead the static System.Environment.CurrentDirectory property should be used.")]
+        public static int GetCurrentDirectoryW(
+            StringBuilder lpBuffer
+            ) =>
+            GetCurrentDirectoryW(lpBuffer?.Capacity ?? 0, lpBuffer);
+
+        /// <inheritdoc cref="GetCurrentDirectoryW(int, LPWSTR)"/>
+        [Obsolete(".NET Applications should not call " + nameof(GetCurrentDirectory) + ". Instead the static System.Environment.CurrentDirectory property should be used.")]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Unicode, SetLastError = true)]
+        private static extern int GetCurrentDirectoryW(
+            [In] int nBufferLength,
+            [Out, Optional, MarshalAs(UnmanagedType.LPWStr)] StringBuilder lpBuffer
+            );
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\processenv.h, line 259
         #region GetCurrentDirectory function
-        // Not declared, use System.Environment.CurrentDirectory property. 
+        /// <inheritdoc cref="GetCurrentDirectoryW(int, LPWSTR)"/>
+        [Obsolete(".NET Applications should not call " + nameof(GetCurrentDirectory) + ". Instead the static System.Environment.CurrentDirectory property should be used.")]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        public static extern bool GetCurrentDirectory(
+            [In] int nBufferLength,
+            [Optional] LPTSTR lpBuffer
+            );
+
+#if !NETSTANDARD1_3
+        /// <inheritdoc cref="GetCurrentDirectory(int, LPTSTR)"/>
+        [Obsolete(".NET Applications should not call " + nameof(GetCurrentDirectory) + ". Instead the static System.Environment.CurrentDirectory property should be used.")]
+        public static int GetCurrentDirectory(
+            StringBuilder lpBuffer
+            ) =>
+            GetCurrentDirectory(lpBuffer?.Capacity ?? 0, lpBuffer);
+
+        /// <inheritdoc cref="GetCurrentDirectory(int, LPTSTR)"/>
+        [Obsolete(".NET Applications should not call " + nameof(GetCurrentDirectory) + ". Instead the static System.Environment.CurrentDirectory property should be used.")]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto, SetLastError = true)]
+        private static extern int GetCurrentDirectory(
+            [In] int nBufferLength,
+            [Out, Optional, MarshalAs(UnmanagedType.LPTStr)] StringBuilder lpBuffer
+            );
+#endif
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\processenv.h, line 271
         #region SearchPathW function
         /// <summary>
         /// Searches for a specified file in a specified path.
@@ -819,6 +931,7 @@ namespace THNETII.WinApi.Native.ProcessEnv
             [MarshalAs(UnmanagedType.LPWStr), Optional] out string lpFilePart
             );
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\processenv.h, line 284
         #region SearchPath function
 #if !NETSTANDARD1_3
         /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
@@ -850,6 +963,7 @@ namespace THNETII.WinApi.Native.ProcessEnv
             );
 #endif // !NETSTANDARD1_3
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\processenv.h, line 290
         #region SearchPathA function
         /// <summary>
         /// Searches for a specified file in a specified path.
@@ -976,6 +1090,7 @@ namespace THNETII.WinApi.Native.ProcessEnv
             [MarshalAs(UnmanagedType.LPStr), Optional] out string lpFilePart
             );
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\processenv.h, line 305
         #region NeedCurrentDirectoryForExePathA function
         /// <summary>
         /// Determines whether the current directory should be included in the search path for the specified executable.
@@ -1015,6 +1130,7 @@ namespace THNETII.WinApi.Native.ProcessEnv
             [In, MarshalAs(UnmanagedType.LPStr)] string ExeName
             );
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\processenv.h, line 312
         #region NeedCurrentDirectoryForExePathW function
         /// <inheritdoc cref="NeedCurrentDirectoryForExePathA(LPCSTR)"/>
         [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi)]
@@ -1029,6 +1145,7 @@ namespace THNETII.WinApi.Native.ProcessEnv
             [In, MarshalAs(UnmanagedType.LPWStr)] string ExeName
             );
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\processenv.h, line 319
         #region NeedCurrentDirectoryForExePath function
 #if !NETSTANDARD1_3
         /// <inheritdoc cref="NeedCurrentDirectoryForExePathA(LPCSTR)"/>

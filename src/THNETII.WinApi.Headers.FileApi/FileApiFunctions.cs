@@ -1,9 +1,12 @@
-﻿using System;
+﻿using Microsoft.Win32.SafeHandles;
+using System;
+using System.IO;
 using System.Runtime.InteropServices;
 
 using THNETII.WinApi.Native.MinWinBase;
 using THNETII.WinApi.Native.MinWinDef;
 using THNETII.WinApi.Native.WinError;
+using THNETII.WinApi.Native.WinNT;
 
 #if NETSTANDARD1_3
 using EntryPointNotFoundException = System.Exception;
@@ -247,6 +250,14 @@ namespace THNETII.WinApi.Native.FileApi
             [In, Optional] IntPtr lpSecurityAttributes
             );
 #endif // !NETSTANDARD1_3
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\fileapi.h, line 116
+        #region DefineDosDeviceW function
+
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\fileapi.h, line 126
+        #region DefineDosDevice function
+
         #endregion
     }
 }

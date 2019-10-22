@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 using System.Text;
+using THNETII.WinApi.Native.WinError;
 
 #if NETSTANDARD1_3
 using EntryPointNotFoundException = System.Exception;
@@ -9,6 +10,7 @@ using EntryPointNotFoundException = System.Exception;
 namespace THNETII.WinApi.Native.ProcessEnv
 {
     using static NativeLibraryNames;
+    using static WinErrorConstants;
 
     public static class ProcessEnvFunctions
     {
@@ -301,17 +303,164 @@ namespace THNETII.WinApi.Native.ProcessEnv
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\processenv.h, line 147
         #region GetEnvironmentVariableA function
-        // Not declared, use System.Environment.GetEnvironmentVariable method.
-        // Microsoft Docs page: https://docs.microsoft.com/en-us/windows/win32/api/processenv/nf-processenv-getenvironmentvariablea
+        /// <inheritdoc cref="GetEnvironmentVariableW(LPCWSTR, LPWSTR, int)"/>
+        [Obsolete(".NET Applications should not call " + nameof(GetEnvironmentVariableA) + ". Instead the static System.Environment.GetEnvironmentVariable method should be used.")]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        public static extern int GetEnvironmentVariableA(
+            [In, Optional] LPCSTR lpName,
+            [Optional] LPSTR lpBuffer,
+            [In] int nSize
+            );
+
+        /// <inheritdoc cref="GetEnvironmentVariableA(LPCSTR, LPSTR, int)"/>
+        [Obsolete(".NET Applications should not call " + nameof(GetEnvironmentVariableA) + ". Instead the static System.Environment.GetEnvironmentVariable method should be used.")]
+        public static int GetEnvironmentVariableA(
+            LPCSTR lpName,
+            StringBuilder lpBuffer
+            ) =>
+            GetEnvironmentVariableA(lpName, lpBuffer, lpBuffer?.Capacity ?? 0);
+
+        /// <inheritdoc cref="GetEnvironmentVariableA(LPCSTR, LPSTR, int)"/>
+        [Obsolete(".NET Applications should not call " + nameof(GetEnvironmentVariableA) + ". Instead the static System.Environment.GetEnvironmentVariable method should be used.")]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi, SetLastError = true)]
+        private static extern int GetEnvironmentVariableA(
+            [In, Optional] LPCSTR lpName,
+            [Out, MarshalAs(UnmanagedType.LPStr), Optional] StringBuilder lpBuffer,
+            [In] int nSize
+            );
+
+        /// <inheritdoc cref="GetEnvironmentVariableA(LPCSTR, LPSTR, int)"/>
+        [Obsolete(".NET Applications should not call " + nameof(GetEnvironmentVariableA) + ". Instead the static System.Environment.GetEnvironmentVariable method should be used.")]
+        public static int GetEnvironmentVariableA(
+            string lpName,
+            StringBuilder lpBuffer
+            ) =>
+            GetEnvironmentVariableA(lpName, lpBuffer, lpBuffer?.Capacity ?? 0);
+
+        /// <inheritdoc cref="GetEnvironmentVariableA(LPCSTR, LPSTR, int)"/>
+        [Obsolete(".NET Applications should not call " + nameof(GetEnvironmentVariableA) + ". Instead the static System.Environment.GetEnvironmentVariable method should be used.")]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi, SetLastError = true)]
+        private static extern int GetEnvironmentVariableA(
+            [In, Optional, MarshalAs(UnmanagedType.LPStr)] string lpName,
+            [Out, MarshalAs(UnmanagedType.LPStr), Optional] StringBuilder lpBuffer,
+            [In] int nSize
+            );
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\processenv.h, line 157
         #region GetEnvironmentVariableW function
-        // Not declared, use System.Environment.GetEnvironmentVariable method. 
-        // Microsoft Docs page: https://docs.microsoft.com/en-us/windows/win32/api/processenv/nf-processenv-getenvironmentvariablew
+        /// <summary>
+        /// Retrieves the contents of the specified variable from the environment block of the calling process.
+        /// </summary>
+        /// <param name="lpName">The name of the environment variable.</param>
+        /// <param name="lpBuffer">A buffer that receives the contents of the specified environment variable as a null-terminated string. An environment variable has a maximum size limit of 32,767 characters, including the null-terminating character.</param>
+        /// <param name="nSize">The size of the buffer pointed to by the <paramref name="lpBuffer"/> parameter, including the null-terminating character, in characters.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is the number of characters stored in the buffer pointed to by <paramref name="lpBuffer"/>, not including the terminating null character.</para>
+        /// <para>If <paramref name="lpBuffer"/> is not large enough to hold the data, the return value is the buffer size, in characters, required to hold the string and its terminating null character and the contents of <paramref name="lpBuffer"/> are undefined.</para>
+        /// <para>If the function fails, the return value is zero. If the specified environment variable was not found in the environment block, <see cref="GetLastError"/> returns <see cref="ERROR_ENVVAR_NOT_FOUND"/>.</para>
+        /// </returns>
+        /// <remarks>
+        /// This function can retrieve either a system environment variable or a user environment variable.
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows XP [desktop apps | UWP apps]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps | UWP apps]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/processenv/nf-processenv-getenvironmentvariablew">GetEnvironmentVariableW function</a></para>
+        /// </remarks>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/ProcThread/environment-variables">Environment Variables</seealso>
+        /// <seealso cref="GetEnvironmentStrings"/>
+        /// <seealso cref="SetEnvironmentVariable"/>
+        [Obsolete(".NET Applications should not call " + nameof(GetEnvironmentVariableW) + ". Instead the static System.Environment.GetEnvironmentVariable method should be used.")]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        public static extern int GetEnvironmentVariableW(
+            [In, Optional] LPCWSTR lpName,
+            [Optional] LPWSTR lpBuffer,
+            [In] int nSize
+            );
+
+        /// <inheritdoc cref="GetEnvironmentVariableW(LPCWSTR, LPWSTR, int)"/>
+        [Obsolete(".NET Applications should not call " + nameof(GetEnvironmentVariableW) + ". Instead the static System.Environment.GetEnvironmentVariable method should be used.")]
+        public static int GetEnvironmentVariableW(
+            LPCWSTR lpName,
+            StringBuilder lpBuffer
+            ) =>
+            GetEnvironmentVariableW(lpName, lpBuffer, lpBuffer?.Capacity ?? 0);
+
+        /// <inheritdoc cref="GetEnvironmentVariableW(LPCWSTR, LPWSTR, int)"/>
+        [Obsolete(".NET Applications should not call " + nameof(GetEnvironmentVariableW) + ". Instead the static System.Environment.GetEnvironmentVariable method should be used.")]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Unicode, SetLastError = true)]
+        private static extern int GetEnvironmentVariableW(
+            [In, Optional] LPCWSTR lpName,
+            [Out, MarshalAs(UnmanagedType.LPWStr), Optional] StringBuilder lpBuffer,
+            [In] int nSize
+            );
+
+        /// <inheritdoc cref="GetEnvironmentVariableW(LPCWSTR, LPWSTR, int)"/>
+        [Obsolete(".NET Applications should not call " + nameof(GetEnvironmentVariableW) + ". Instead the static System.Environment.GetEnvironmentVariable method should be used.")]
+        public static int GetEnvironmentVariableW(
+            string lpName,
+            StringBuilder lpBuffer
+            ) =>
+            GetEnvironmentVariableW(lpName, lpBuffer, lpBuffer?.Capacity ?? 0);
+
+        /// <inheritdoc cref="GetEnvironmentVariableW(LPCWSTR, LPWSTR, int)"/>
+        [Obsolete(".NET Applications should not call " + nameof(GetEnvironmentVariableW) + ". Instead the static System.Environment.GetEnvironmentVariable method should be used.")]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Unicode, SetLastError = true)]
+        private static extern int GetEnvironmentVariableW(
+            [In, Optional, MarshalAs(UnmanagedType.LPWStr)] string lpName,
+            [Out, MarshalAs(UnmanagedType.LPWStr), Optional] StringBuilder lpBuffer,
+            [In] int nSize
+            );
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\processenv.h, line 167
         #region GetEnvironmentVariable function
-        // Not declared, use System.Environment.GetEnvironmentVariable method. 
+        /// <inheritdoc cref="GetEnvironmentVariableW(LPCWSTR, LPWSTR, int)"/>
+        [Obsolete(".NET Applications should not call " + nameof(GetEnvironmentVariable) + ". Instead the static System.Environment.GetEnvironmentVariable method should be used.")]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        public static extern int GetEnvironmentVariable(
+            [In, Optional] LPCTSTR lpName,
+            [Optional] LPTSTR lpBuffer,
+            [In] int nSize
+            );
+#if !NETSTANDARD1_3
+
+        /// <inheritdoc cref="GetEnvironmentVariable(LPCTSTR, LPTSTR, int)"/>
+        [Obsolete(".NET Applications should not call " + nameof(GetEnvironmentVariable) + ". Instead the static System.Environment.GetEnvironmentVariable method should be used.")]
+        public static int GetEnvironmentVariable(
+            LPCTSTR lpName,
+            StringBuilder lpBuffer
+            ) =>
+            GetEnvironmentVariable(lpName, lpBuffer, lpBuffer?.Capacity ?? 0);
+
+        /// <inheritdoc cref="GetEnvironmentVariable(LPCTSTR, LPTSTR, int)"/>
+        [Obsolete(".NET Applications should not call " + nameof(GetEnvironmentVariable) + ". Instead the static System.Environment.GetEnvironmentVariable method should be used.")]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto, SetLastError = true)]
+        private static extern int GetEnvironmentVariable(
+            [In, Optional] LPCTSTR lpName,
+            [Out, MarshalAs(UnmanagedType.LPTStr), Optional] StringBuilder lpBuffer,
+            [In] int nSize
+            );
+
+        /// <inheritdoc cref="GetEnvironmentVariable(LPCTSTR, LPTSTR, int)"/>
+        [Obsolete(".NET Applications should not call " + nameof(GetEnvironmentVariable) + ". Instead the static System.Environment.GetEnvironmentVariable method should be used.")]
+        public static int GetEnvironmentVariable(
+            string lpName,
+            StringBuilder lpBuffer
+            ) =>
+            GetEnvironmentVariable(lpName, lpBuffer, lpBuffer?.Capacity ?? 0);
+
+        /// <inheritdoc cref="GetEnvironmentVariable(LPCTSTR, LPTSTR, int)"/>
+        [Obsolete(".NET Applications should not call " + nameof(GetEnvironmentVariable) + ". Instead the static System.Environment.GetEnvironmentVariable method should be used.")]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto, SetLastError = true)]
+        private static extern int GetEnvironmentVariable(
+            [In, Optional, MarshalAs(UnmanagedType.LPTStr)] string lpName,
+            [Out, MarshalAs(UnmanagedType.LPTStr), Optional] StringBuilder lpBuffer,
+            [In] int nSize
+            ); 
+#endif
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\processenv.h, line 173
         #region SetEnvironmentVariableA function

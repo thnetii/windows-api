@@ -166,7 +166,7 @@ namespace THNETII.WinApi.Native.ProcessEnv
         /// <para>
         /// The <see cref="GetEnvironmentStrings"/> function returns a pointer to a block of memory that contains the environment variables of the calling process (both the system and the user environment variables). Each environment block contains the environment variables in the following format:
         /// <code>Var1 Value1 Var2 Value2 Var3 Value3 VarN ValueN</code>
-        /// Treat this memory as read-only; do not modify it directly. To add or change an environment variable, use the <see cref="GetEnvironmentVariable"/> and <see cref="SetEnvironmentVariable"/> functions.
+        /// Treat this memory as read-only; do not modify it directly. To add or change an environment variable, use the <see cref="GetEnvironmentVariable(LPCTSTR, LPTSTR, int)"/> and <see cref="SetEnvironmentVariable(LPCTSTR, LPCTSTR)"/> functions.
         /// </para>
         /// <para>When the block returned by <see cref="GetEnvironmentStrings"/> is no longer needed, it should be freed by calling the <see cref="FreeEnvironmentStrings"/> function.</para>
         /// <para>
@@ -182,8 +182,8 @@ namespace THNETII.WinApi.Native.ProcessEnv
         /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
         /// <seealso href="https://docs.microsoft.com/windows/desktop/ProcThread/environment-variables">Environment Variables</seealso>
         /// <seealso cref="FreeEnvironmentStrings"/>
-        /// <seealso cref="GetEnvironmentVariable"/>
-        /// <seealso cref="SetEnvironmentVariable"/>
+        /// <seealso cref="GetEnvironmentVariable(LPCTSTR, LPTSTR, int)"/>
+        /// <seealso cref="SetEnvironmentVariable(LPCTSTR, LPCTSTR)"/>
         [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi)]
         public static extern LPENVBLOCK GetEnvironmentStrings(
             );
@@ -201,7 +201,7 @@ namespace THNETII.WinApi.Native.ProcessEnv
         /// <para>
         /// The <see cref="GetEnvironmentStringsW"/> function returns a pointer to a block of memory that contains the environment variables of the calling process (both the system and the user environment variables). Each environment block contains the environment variables in the following format:
         /// <code>Var1 Value1 Var2 Value2 Var3 Value3 VarN ValueN</code>
-        /// Treat this memory as read-only; do not modify it directly. To add or change an environment variable, use the <see cref="GetEnvironmentVariableW"/> and <see cref="SetEnvironmentVariableW"/> functions.
+        /// Treat this memory as read-only; do not modify it directly. To add or change an environment variable, use the <see cref="GetEnvironmentVariableW(LPCWSTR, LPWSTR, int)"/> and <see cref="SetEnvironmentVariableW(LPCWSTR, LPCWSTR)"/> functions.
         /// </para>
         /// <para>When the block returned by <see cref="GetEnvironmentStringsW"/> is no longer needed, it should be freed by calling the <see cref="FreeEnvironmentStringsW"/> function.</para>
         /// <para>
@@ -217,8 +217,8 @@ namespace THNETII.WinApi.Native.ProcessEnv
         /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
         /// <seealso href="https://docs.microsoft.com/windows/desktop/ProcThread/environment-variables">Environment Variables</seealso>
         /// <seealso cref="FreeEnvironmentStringsW"/>
-        /// <seealso cref="GetEnvironmentVariableW"/>
-        /// <seealso cref="SetEnvironmentVariableW"/>
+        /// <seealso cref="GetEnvironmentVariableW(LPCWSTR, LPWSTR, int)"/>
+        /// <seealso cref="SetEnvironmentVariableW(LPCWSTR, LPCWSTR)"/>
         [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi)]
         public static extern LPENVBLOCKW GetEnvironmentStringsW(
             );
@@ -370,9 +370,11 @@ namespace THNETII.WinApi.Native.ProcessEnv
         /// </para>
         /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/processenv/nf-processenv-getenvironmentvariablew">GetEnvironmentVariableW function</a></para>
         /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
         /// <seealso href="https://docs.microsoft.com/windows/desktop/ProcThread/environment-variables">Environment Variables</seealso>
         /// <seealso cref="GetEnvironmentStrings"/>
-        /// <seealso cref="SetEnvironmentVariable"/>
+        /// <seealso cref="SetEnvironmentVariable(LPCTSTR, LPCTSTR)"/>
         [Obsolete(".NET Applications should not call " + nameof(GetEnvironmentVariableW) + ". Instead the static System.Environment.GetEnvironmentVariable method should be used.")]
         [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
         public static extern int GetEnvironmentVariableW(
@@ -459,36 +461,213 @@ namespace THNETII.WinApi.Native.ProcessEnv
             [In, Optional, MarshalAs(UnmanagedType.LPTStr)] string lpName,
             [Out, MarshalAs(UnmanagedType.LPTStr), Optional] StringBuilder lpBuffer,
             [In] int nSize
-            ); 
+            );
 #endif
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\processenv.h, line 173
         #region SetEnvironmentVariableA function
-        // Not declared, use System.Environment.SetEnvironmentVariable method.
-        // Microsoft Docs page: https://docs.microsoft.com/en-us/windows/win32/api/processenv/nf-processenv-setenvironmentvariablea
+        /// <inheritdoc cref="SetEnvironmentVariableW(LPCWSTR, LPCWSTR)"/>
+        [Obsolete(".NET Applications should not call " + nameof(SetEnvironmentVariableA) + ". Instead the static System.Environment.SetEnvironmentVariable method should be used.")]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool SetEnvironmentVariableA(
+            [In] LPCSTR lpName,
+            [In, Optional] LPCSTR lpValue
+            );
+
+        /// <inheritdoc cref="SetEnvironmentVariableA(LPCSTR, LPCSTR)"/>
+        [Obsolete(".NET Applications should not call " + nameof(SetEnvironmentVariableA) + ". Instead the static System.Environment.SetEnvironmentVariable method should be used.")]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool SetEnvironmentVariableA(
+            [In, MarshalAs(UnmanagedType.LPStr)] string lpName,
+            [In, Optional, MarshalAs(UnmanagedType.LPStr)] string lpValue
+            );
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\processenv.h, line 181
         #region SetEnvironmentVariableW function
-        // Not declared, use System.Environment.SetEnvironmentVariable method. 
-        // Microsoft Docs page: https://docs.microsoft.com/en-us/windows/win32/api/processenv/nf-processenv-setenvironmentvariablew
+        /// <summary>
+        /// Sets the contents of the specified environment variable for the current process.
+        /// </summary>
+        /// <param name="lpName">The name of the environment variable. The operating system creates the environment variable if it does not exist and <paramref name="lpValue"/> is not <see langword="null"/>.</param>
+        /// <param name="lpValue">
+        /// <para>The contents of the environment variable. The maximum size of a user-defined environment variable is 32,767 characters. For more information, see <a href="Environment Variables">Environment Variables</a>.</para>
+        /// <para><strong>Windows Server 2003 and Windows XP</strong>: The total size of the environment block for a process may not exceed 32,767 characters.</para>
+        /// <para>If this parameter is <see langword="null"/>, the variable is deleted from the current process's environment.</para>
+        /// </param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see langword="true"/>.</para>
+        /// <para>If the function fails, the return value is <see langword="false"/>. To get extended error information, call <see cref="GetLastError"/>.</para>
+        /// </returns>
+        /// <remarks>
+        /// This function has no effect on the system environment variables or the environment variables of other processes.
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows XP [desktop apps | UWP apps]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps | UWP apps]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/processenv/nf-processenv-setenvironmentvariablew">SetEnvironmentVariableW function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/ProcThread/environment-variables">Environment Variables</seealso>
+        /// <seealso cref="GetEnvironmentVariable(LPCTSTR, LPTSTR, int)"/>
+        [Obsolete(".NET Applications should not call " + nameof(SetEnvironmentVariableW) + ". Instead the static System.Environment.SetEnvironmentVariable method should be used.")]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool SetEnvironmentVariableW(
+            [In] LPCWSTR lpName,
+            [In, Optional] LPCWSTR lpValue
+            );
+
+        /// <inheritdoc cref="SetEnvironmentVariableW(LPCWSTR, LPCWSTR)"/>
+        [Obsolete(".NET Applications should not call " + nameof(SetEnvironmentVariableW) + ". Instead the static System.Environment.SetEnvironmentVariable method should be used.")]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Unicode, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool SetEnvironmentVariableW(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string lpName,
+            [In, Optional, MarshalAs(UnmanagedType.LPWStr)] string lpValue
+            );
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\processenv.h, line 189
         #region SetEnvironmentVariable function
-        // Not declared, use System.Environment.SetEnvironmentVariable method. 
+        /// <inheritdoc cref="SetEnvironmentVariableW(LPCWSTR, LPCWSTR)"/>
+        [Obsolete(".NET Applications should not call " + nameof(SetEnvironmentVariable) + ". Instead the static System.Environment.SetEnvironmentVariable method should be used.")]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool SetEnvironmentVariable(
+            [In] LPCTSTR lpName,
+            [In, Optional] LPCTSTR lpValue
+            );
+#if !NETSTANDARD1_3
+        /// <inheritdoc cref="SetEnvironmentVariable(LPCTSTR, LPCTSTR)"/>
+        [Obsolete(".NET Applications should not call " + nameof(SetEnvironmentVariable) + ". Instead the static System.Environment.SetEnvironmentVariable method should be used.")]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool SetEnvironmentVariable(
+            [In, MarshalAs(UnmanagedType.LPTStr)] string lpName,
+            [In, Optional, MarshalAs(UnmanagedType.LPTStr)] string lpValue
+            );
+#endif
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\processenv.h, line 195
         #region ExpandEnvironmentStringsA function
-        // Not declared, use System.Environment.ExpandEnvironmentVariables method. 
-        // Microsoft Docs page: https://docs.microsoft.com/en-us/windows/win32/api/processenv/nf-processenv-expandenvironmentstringsa
+        /// <inheritdoc cref="ExpandEnvironmentStringsW(LPCWSTR, LPWSTR, int)"/>
+        [Obsolete(".NET Applications should not call " + nameof(ExpandEnvironmentStrings) + ". Instead the static System.Environment.ExpandEnvironmentVariables method should be used.")]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        public static extern int ExpandEnvironmentStringsA(
+            [In] LPCSTR lpSrc,
+            [Optional] LPSTR lpDst,
+            [In] int nSize
+            );
+
+        /// <inheritdoc cref="ExpandEnvironmentStringsA(LPCSTR, LPSTR, int)"/>
+        [Obsolete(".NET Applications should not call " + nameof(ExpandEnvironmentStrings) + ". Instead the static System.Environment.ExpandEnvironmentVariables method should be used.")]
+        public static int ExpandEnvironmentStringsA(
+            string lpSrc,
+            StringBuilder lpDst
+            ) =>
+            ExpandEnvironmentStringsA(lpSrc, lpDst, lpDst?.Capacity ?? 0);
+
+        /// <inheritdoc cref="ExpandEnvironmentStringsA(LPCSTR, LPSTR, int)"/>
+        [Obsolete(".NET Applications should not call " + nameof(ExpandEnvironmentStrings) + ". Instead the static System.Environment.ExpandEnvironmentVariables method should be used.")]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi, SetLastError = true)]
+        private static extern int ExpandEnvironmentStringsA(
+            [In, MarshalAs(UnmanagedType.LPStr)] string lpSrc,
+            [Out, Optional, MarshalAs(UnmanagedType.LPStr)] StringBuilder lpDst,
+            [In] int nSize
+            );
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\processenv.h, line 205
-        #region ExpandEnvironmentStringsA function
-        // Not declared, use System.Environment.ExpandEnvironmentVariables method. 
-        // Microsoft Docs page: https://docs.microsoft.com/en-us/windows/win32/api/processenv/nf-processenv-expandenvironmentstringsw
+        #region ExpandEnvironmentStringsW function
+        /// <summary>
+        /// Expands environment-variable strings and replaces them with the values defined for the current user.
+        /// <para>To specify the environment block for a particular user or the system, use the <see cref="ExpandEnvironmentStringsForUser"/> function.</para>
+        /// </summary>
+        /// <param name="lpSrc">
+        /// <para>A buffer that contains one or more environment-variable strings in the form: <em>%variableName%</em>. For each such reference, the <em>%variableName%</em> portion is replaced with the current value of that environment variable.</para>
+        /// <para>Case is ignored when looking up the environment-variable name. If the name is not found, the <em>%variableName%</em> portion is left unexpanded.</para>
+        /// <para>Note that this function does not support all the features that Cmd.exe supports. For example, it does not support <em>%variableName:str1=str2%</em> or <em>%variableName:~offset,length%</em>.</para>
+        /// </param>
+        /// <param name="lpDst">A buffer that receives the result of expanding the environment variable strings in the <paramref name="lpSrc"/> buffer. Note that this buffer cannot be the same as the <paramref name="lpSrc"/> buffer.</param>
+        /// <param name="nSize">The maximum number of characters that can be stored in the buffer pointed to by the <paramref name="lpDst"/> parameter, including the terminating null-character.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is the number of characters stored in the destination buffer, including the terminating null character. If the destination buffer is too small to hold the expanded string, the return value is the required buffer size, in characters.</para>
+        /// <para>If the function fails, the return value is zero. To get extended error information, call <see cref="GetLastError"/>.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>The size of the <paramref name="lpSrc"/> and <paramref name="lpDst"/> buffers is limited to 32K.</para>
+        /// <para>To replace folder names in a fully qualified path with their associated environment-variable strings, use the <see cref="PathUnExpandEnvStrings"/> function.</para>
+        /// <para>To retrieve the list of environment variables for a process, use the <see cref="GetEnvironmentStrings"/> function.</para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows 2000 Professional [desktop apps | UWP apps]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows 2000 Server [desktop apps | UWP apps]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/processenv/nf-processenv-expandenvironmentstringsw">ExpandEnvironmentStringsW function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/ProcThread/environment-variables">Environment Variables</seealso>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/SysInfo/system-information-functions">System Information Functions</seealso>
+        [Obsolete(".NET Applications should not call " + nameof(ExpandEnvironmentStrings) + ". Instead the static System.Environment.ExpandEnvironmentVariables method should be used.")]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        public static extern int ExpandEnvironmentStringsW(
+            [In] LPCWSTR lpSrc,
+            [Optional] LPWSTR lpDst,
+            [In] int nSize
+            );
+
+        /// <inheritdoc cref="ExpandEnvironmentStringsW(LPCWSTR, LPWSTR, int)"/>
+        [Obsolete(".NET Applications should not call " + nameof(ExpandEnvironmentStrings) + ". Instead the static System.Environment.ExpandEnvironmentVariables method should be used.")]
+        public static int ExpandEnvironmentStringsW(
+            string lpSrc,
+            StringBuilder lpDst
+            ) =>
+            ExpandEnvironmentStringsW(lpSrc, lpDst, lpDst?.Capacity ?? 0);
+
+        /// <inheritdoc cref="ExpandEnvironmentStringsW(LPCWSTR, LPWSTR, int)"/>
+        [Obsolete(".NET Applications should not call " + nameof(ExpandEnvironmentStrings) + ". Instead the static System.Environment.ExpandEnvironmentVariables method should be used.")]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi, SetLastError = true)]
+        private static extern int ExpandEnvironmentStringsW(
+            [In, MarshalAs(UnmanagedType.LPWStr)] string lpSrc,
+            [Out, Optional, MarshalAs(UnmanagedType.LPWStr)] StringBuilder lpDst,
+            [In] int nSize
+            );
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\processenv.h, line 215
-        #region ExpandEnvironmentStringsA function
-        // Not declared, use System.Environment.ExpandEnvironmentVariables method. 
+        #region ExpandEnvironmentStrings function
+        /// <inheritdoc cref="ExpandEnvironmentStringsW(LPCWSTR, LPWSTR, int)"/>
+        [Obsolete(".NET Applications should not call " + nameof(ExpandEnvironmentStrings) + ". Instead the static System.Environment.ExpandEnvironmentVariables method should be used.")]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        public static extern int ExpandEnvironmentStrings(
+            [In] LPCTSTR lpSrc,
+            [Optional] LPTSTR lpDst,
+            [In] int nSize
+            );
+
+#if !NETSTANDARD1_3
+        /// <inheritdoc cref="ExpandEnvironmentStrings(LPCTSTR, LPTSTR, int)"/>
+        [Obsolete(".NET Applications should not call " + nameof(ExpandEnvironmentStrings) + ". Instead the static System.Environment.ExpandEnvironmentVariables method should be used.")]
+        public static int ExpandEnvironmentStrings(
+            string lpSrc,
+            StringBuilder lpDst
+            ) =>
+            ExpandEnvironmentStrings(lpSrc, lpDst, lpDst?.Capacity ?? 0);
+
+        /// <inheritdoc cref="ExpandEnvironmentStrings(LPCTSTR, LPTSTR, int)"/>
+        [Obsolete(".NET Applications should not call " + nameof(ExpandEnvironmentStrings) + ". Instead the static System.Environment.ExpandEnvironmentVariables method should be used.")]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto, SetLastError = true)]
+        private static extern int ExpandEnvironmentStrings(
+            [In, MarshalAs(UnmanagedType.LPTStr)] string lpSrc,
+            [Out, Optional, MarshalAs(UnmanagedType.LPTStr)] StringBuilder lpDst,
+            [In] int nSize
+            );
+#endif
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\processenv.h, line 221
         #region SetCurrentDirectoryA function

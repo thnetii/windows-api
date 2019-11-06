@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
 using System.Runtime.InteropServices;
 using System.Text;
+
 using THNETII.WinApi.Native.MinWinBase;
 using THNETII.WinApi.Native.MinWinDef;
 
@@ -19,6 +21,32 @@ namespace THNETII.WinApi.Native.WinBase
 
     public static partial class WinBaseFunctions
     {
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\WinBase.h, line 82
+        #region DefineHandleTable macro
+        // #define DefineHandleTable(w)            ((w),TRUE)
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\WinBase.h, line 83
+        #region LimitEmsPages macro
+        [SuppressMessage("Style", "IDE0060: Remove unused parameter")]
+        [SuppressMessage("Usage", "CA1801: Review unused parameters")]
+        public static void LimitEmsPages(int dw) { }
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\WinBase.h, line 84
+        #region SetSwapAreaSize macro
+        // #define SetSwapAreaSize(w)              (w)
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\WinBase.h, line 85
+        #region LockSegment macro
+        // #define LockSegment(w)                  GlobalFix((HANDLE)(w))
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\WinBase.h, line 86
+        #region UnlockSegment macro
+        // #define UnlockSegment(w)                GlobalUnfix((HANDLE)(w))
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\WinBase.h, line 94
+        #region GetCurrentTime macro
+        // TODO: #define GetCurrentTime()                GetTickCount()
+        #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\WinBase.h, line 116
         #region CaptureStackBackTrace function
         /// <summary>

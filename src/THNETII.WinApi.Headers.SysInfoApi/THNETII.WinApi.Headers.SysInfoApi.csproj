@@ -3,10 +3,14 @@
 
   <PropertyGroup>
     <LangVersion>7.2</LangVersion>
-    <TargetFrameworks>netstandard1.3;netstandard2.0</TargetFrameworks>
+    <TargetFrameworks>netstandard1.6;netstandard2.0</TargetFrameworks>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <NoWarn>CS1591</NoWarn>
     <RootNamespace>THNETII.WinApi.Native.SysInfoApi</RootNamespace>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\THNETII.WinApi.Headers.WinNT\THNETII.WinApi.Headers.WinNT.csproj" />
+  </ItemGroup>
 
 </Project>

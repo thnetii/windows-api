@@ -2732,23 +2732,23 @@ namespace THNETII.WinApi.Native.WinNT
         public const int PROCESSOR_OPTIL = 0x494f;
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 12424
-        public const int PROCESSOR_ARCHITECTURE_INTEL = 0;
-        public const int PROCESSOR_ARCHITECTURE_MIPS = 1;
-        public const int PROCESSOR_ARCHITECTURE_ALPHA = 2;
-        public const int PROCESSOR_ARCHITECTURE_PPC = 3;
-        public const int PROCESSOR_ARCHITECTURE_SHX = 4;
-        public const int PROCESSOR_ARCHITECTURE_ARM = 5;
-        public const int PROCESSOR_ARCHITECTURE_IA64 = 6;
-        public const int PROCESSOR_ARCHITECTURE_ALPHA64 = 7;
-        public const int PROCESSOR_ARCHITECTURE_MSIL = 8;
-        public const int PROCESSOR_ARCHITECTURE_AMD64 = 9;
-        public const int PROCESSOR_ARCHITECTURE_IA32_ON_WIN64 = 10;
-        public const int PROCESSOR_ARCHITECTURE_NEUTRAL = 11;
-        public const int PROCESSOR_ARCHITECTURE_ARM64 = 12;
-        public const int PROCESSOR_ARCHITECTURE_ARM32_ON_WIN64 = 13;
-        public const int PROCESSOR_ARCHITECTURE_IA32_ON_ARM64 = 14;
+        public const short PROCESSOR_ARCHITECTURE_INTEL = 0;
+        public const short PROCESSOR_ARCHITECTURE_MIPS = 1;
+        public const short PROCESSOR_ARCHITECTURE_ALPHA = 2;
+        public const short PROCESSOR_ARCHITECTURE_PPC = 3;
+        public const short PROCESSOR_ARCHITECTURE_SHX = 4;
+        public const short PROCESSOR_ARCHITECTURE_ARM = 5;
+        public const short PROCESSOR_ARCHITECTURE_IA64 = 6;
+        public const short PROCESSOR_ARCHITECTURE_ALPHA64 = 7;
+        public const short PROCESSOR_ARCHITECTURE_MSIL = 8;
+        public const short PROCESSOR_ARCHITECTURE_AMD64 = 9;
+        public const short PROCESSOR_ARCHITECTURE_IA32_ON_WIN64 = 10;
+        public const short PROCESSOR_ARCHITECTURE_NEUTRAL = 11;
+        public const short PROCESSOR_ARCHITECTURE_ARM64 = 12;
+        public const short PROCESSOR_ARCHITECTURE_ARM32_ON_WIN64 = 13;
+        public const short PROCESSOR_ARCHITECTURE_IA32_ON_ARM64 = 14;
 
-        public const int PROCESSOR_ARCHITECTURE_UNKNOWN = 0xFFFF;
+        public const short PROCESSOR_ARCHITECTURE_UNKNOWN = unchecked((short)0xFFFF);
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 12442
         public const int PF_FLOATING_POINT_PRECISION_ERRATA = 0;

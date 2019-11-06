@@ -14,3 +14,4 @@ using System.Diagnostics.CodeAnalysis;
 [assembly: SuppressMessage("Documentation", "CA1200: Avoid using cref tags with a prefix")]
 [assembly: SuppressMessage("Naming", "CA1712: Do not prefix enum values with type name")]
 [assembly: SuppressMessage("Naming", "CA1714: Flags enums should have plural names")]
+[assembly: SuppressMessage("Design", "CA1028: Enum Storage should be Int32")]

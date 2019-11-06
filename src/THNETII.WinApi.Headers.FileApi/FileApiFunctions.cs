@@ -6,7 +6,6 @@ using System.Runtime.InteropServices;
 using THNETII.WinApi.Native.MinWinBase;
 using THNETII.WinApi.Native.MinWinDef;
 using THNETII.WinApi.Native.WinError;
-using THNETII.WinApi.Native.WinNT;
 
 #if NETSTANDARD1_3
 using EntryPointNotFoundException = System.Exception;

@@ -14,6 +14,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\src-shared\THNETII.WinApi.NativeLibraryNames\THNETII.WinApi.NativeLibraryNames.csproj">
+      <PrivateAssets>All</PrivateAssets>
+    </ProjectReference>
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\..\interopservices\src\THNETII.InteropServices.Memory\THNETII.InteropServices.Memory.csproj" />
   </ItemGroup>
 

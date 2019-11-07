@@ -10,3 +10,4 @@ using System.Diagnostics.CodeAnalysis;
 [assembly: SuppressMessage("Design", "CA1051: Do not declare visible instance fields")]
 [assembly: SuppressMessage("Performance", "CA1815: Override equals and operator equals on value types")]
 [assembly: SuppressMessage("Interoperability", "CA1401: P/Invokes should not be visible")]
+[assembly: SuppressMessage("Usage", "PC003: Native API not available in UWP")]

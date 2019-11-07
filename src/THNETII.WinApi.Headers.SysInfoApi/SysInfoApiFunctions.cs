@@ -1140,5 +1140,32 @@ namespace THNETII.WinApi.Native.SysInfoApi
             ref int ReturnedLength
             );
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\sysinfoapi.h, line: 428
+        #region GetNativeSystemInfo function
+        /// <summary>
+        /// Retrieves information about the current system to an application running under <a href="https://docs.microsoft.com/windows/desktop/WinProg64/running-32-bit-applications">WOW64</a>. If the function is called from a 64-bit application, or on a 64-bit system that does not have an Intel64 or x64 processor (such as ARM64), it is equivalent to the <see cref="GetSystemInfo"/> function.
+        /// </summary>
+        /// <param name="lpSystemInfo">A <see cref="SYSTEM_INFO"/> structure that receives the information.</param>
+        /// <remarks>
+        /// To determine whether a Win32-based application is running under WOW64, call the <see cref="IsWow64Process2"/> function.
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows XP [desktop apps | UWP apps]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps | UWP apps]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/sysinfoapi/nf-sysinfoapi-getnativesysteminfo">GetNativeSystemInfo function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="IsWow64Process"/>
+        /// <seealso cref="SYSTEM_INFO"/>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/SysInfo/system-information-functions">System Information Functions</seealso>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi)]
+        public static extern void GetNativeSystemInfo(
+            out SYSTEM_INFO lpSystemInfo
+            );
+        #endregion
     }
 }

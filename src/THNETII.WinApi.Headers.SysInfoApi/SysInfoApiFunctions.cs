@@ -4,6 +4,7 @@ using System.Text;
 
 using THNETII.WinApi.Native.MinWinBase;
 using THNETII.WinApi.Native.WinError;
+using THNETII.WinApi.Native.WinNT;
 
 #if NETSTANDARD1_6
 using EntryPointNotFoundException = System.Exception;
@@ -14,6 +15,7 @@ namespace THNETII.WinApi.Native.SysInfoApi
     using static COMPUTER_NAME_FORMAT;
     using static NativeLibraryNames;
     using static WinErrorConstants;
+    using static WinNTConstants;
 
     public static class SysInfoApiFunctions
     {
@@ -897,6 +899,43 @@ namespace THNETII.WinApi.Native.SysInfoApi
             [In] string lpBuffer
             );
 #endif // !NETSTANDARD1_6
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\sysinfoapi.h, line: 359
+        #region SetSystemTime function
+        /// <summary>
+        /// Sets the current system time and date. The system time is expressed in Coordinated Universal Time (UTC).
+        /// </summary>
+        /// <param name="lpSystemTime">
+        /// <para>A read-only reference to a <see cref="SYSTEMTIME"/> structure that contains the new system date and time.</para>
+        /// <para>The <see cref="SYSTEMTIME.DayOfWeek"/> member of the <see cref="SYSTEMTIME"/> structure is ignored.</para>
+        /// </param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is a <see langword="true"/>.</para>
+        /// <para>If the function fails, the return value is <see langword="false"/>. To get extended error information, call <see cref="GetLastError"/>.</para>
+        /// </returns>
+        /// <remarks>
+        /// The calling process must have the <see cref="SE_SYSTEMTIME_NAME"/> privilege. This privilege is disabled by default. The <see cref="SetSystemTime"/> function enables the <see cref="SE_SYSTEMTIME_NAME"/> privilege before changing the system time and disables the privilege before returning. For more information, see <a href="https://docs.microsoft.com/windows/desktop/SecBP/running-with-special-privileges">Running with Special Privileges</a>.
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows 2000 Professional [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows 2000 Server [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/sysinfoapi/nf-sysinfoapi-setsystemtime">SetSystemTime function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="GetSystemTime"/>
+        /// <seealso cref="SYSTEMTIME"/>
+        /// <seealso cref="SetSystemTimeAdjustment"/>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/SysInfo/system-time">System Time</seealso>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/SysInfo/time-functions">Time Functions</seealso>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool SetSystemTime(
+            in SYSTEMTIME lpSystemTime
+            );
         #endregion
     }
 }

@@ -13,6 +13,7 @@ using EntryPointNotFoundException = System.Exception;
 namespace THNETII.WinApi.Native.SysInfoApi
 {
     using static COMPUTER_NAME_FORMAT;
+    using static LOGICAL_PROCESSOR_RELATIONSHIP;
     using static NativeLibraryNames;
     using static WinErrorConstants;
     using static WinNTConstants;
@@ -1078,6 +1079,64 @@ namespace THNETII.WinApi.Native.SysInfoApi
         [return: MarshalAs(UnmanagedType.Bool)]
         private static extern unsafe bool GetLogicalProcessorInformationExtern(
             SYSTEM_LOGICAL_PROCESSOR_INFORMATION* Buffer,
+            ref int ReturnedLength
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\sysinfoapi.h, line: 408
+        #region GetLogicalProcessorInformationEx function
+        /// <summary>
+        /// Retrieves information about the relationships of logical processors and related hardware.
+        /// </summary>
+        /// <param name="RelationshipType">
+        /// The type of relationship to retrieve. This parameter can be one of the following <see cref="LOGICAL_PROCESSOR_RELATIONSHIP"/> values.
+        /// <list type="table">
+        /// <listheader><term>Value</term><description>Meaning</description></listheader>
+        /// <item><term><see cref="RelationCache"/><br/><c>2</c></term><description>Retrieves information about logical processors that share a cache. </description></item>
+        /// <item><term><see cref="RelationNumaNode"/><br/><c>1</c></term><description>Retrieves information about logical processors that are part of the same NUMA node. </description></item>
+        /// <item><term><see cref="RelationProcessorCore"/><br/><c>0</c></term><description>Retrieves information about logical processors that share a single processor core. </description></item>
+        /// <item><term><see cref="RelationProcessorPackage"/><br/><c>3</c></term><description>Retrieves information about logical processors that share a physical package. </description></item>
+        /// <item><term><see cref="RelationGroup"/><br/><c>4</c></term><description>Retrieves information about logical processors that share a processor group. </description></item>
+        /// <item><term><see cref="RelationAll"/><br/><c>0xffff</c></term><description> Retrieves information about logical processors for all relationship types (cache, NUMA node, processor core, physical package, and processor group). </description></item>
+        /// </list>
+        /// </param>
+        /// <param name="Buffer">A buffer that receives an array of <see cref="SYSTEM_LOGICAL_PROCESSOR_INFORMATION_EX"/> structures. If the function fails, the contents of this buffer are undefined.</param>
+        /// <param name="ReturnedLength">If the buffer is large enough to contain all of the data, this function succeeds and <paramref name="ReturnedLength"/> is set to the number of bytes returned. If the buffer is not large enough to contain all of the data, the function fails, <see cref="GetLastError"/> returns <see cref="ERROR_INSUFFICIENT_BUFFER"/>, and <paramref name="ReturnedLength"/> is set to the buffer length required to contain all of the data. If the function fails with an error other than <see cref="ERROR_INSUFFICIENT_BUFFER"/>, the value of <paramref name="ReturnedLength"/> is undefined.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see langword="true"/> and at least one <see cref="SYSTEM_LOGICAL_PROCESSOR_INFORMATION_EX"/> structure is written to the output buffer.</para>
+        /// <para>If the function fails, the return value is <see langword="false"/>. To get extended error information, call <see cref="GetLastError"/>.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>If a 32-bit process running under WOW64 calls this function on a system with more than 64 processors, some of the processor affinity masks returned by the function may be incorrect. This is because the high-order <see cref="int"/> of the 64-bit <strong>KAFFINITY</strong> structure that represents all 64 processors is "folded" into a 32-bit <strong>KAFFINITY</strong> structure in the caller's buffer. As a result, the affinity masks for processors 32 through 63 are incorrectly represented as duplicates of the masks for processors 0 through 31. In addition, the sum of all per-group <see cref="PROCESSOR_GROUP_INFO.ActiveProcessorCount"/> and <see cref="PROCESSOR_GROUP_INFO.MaximumProcessorCount"/> values reported in <see cref="PROCESSOR_GROUP_INFO"/> structures may exclude some active logical processors.</para>
+        /// <para>When this function is called with a relationship type of <see cref="RelationProcessorCore"/>, it returns a <see cref="PROCESSOR_RELATIONSHIP"/> structure for every active processor core in every processor group in the system. This is by design, because an unaffinitized 32-bit thread can run on any logical processor in a given group, including processors 32 through 63. A 32-bit caller can use the total count of <see cref="PROCESSOR_RELATIONSHIP"/> structures to determine the actual number of active processor cores on the system. However, the affinity of a 32-bit thread cannot be explicitly set to logical processor 32 through 63 of any processor group.</para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows 7 [desktop apps | UWP apps]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2008 R2 [desktop apps | UWP apps]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/sysinfoapi/nf-sysinfoapi-getlogicalprocessorinformationex">GetLogicalProcessorInformationEx function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="SYSTEM_LOGICAL_PROCESSOR_INFORMATION_EX"/>
+        public static unsafe bool GetLogicalProcessorInformationEx(
+            LOGICAL_PROCESSOR_RELATIONSHIP RelationshipType,
+            Span<SYSTEM_LOGICAL_PROCESSOR_INFORMATION_EX> Buffer,
+            out int ReturnedLength
+            )
+        {
+            ReturnedLength = Buffer.Length * SizeOf<SYSTEM_LOGICAL_PROCESSOR_INFORMATION_EX>.Bytes;
+            fixed (SYSTEM_LOGICAL_PROCESSOR_INFORMATION_EX* pBuffer = Buffer)
+                return GetLogicalProcessorInformationExExtern(
+                    RelationshipType, pBuffer, ref ReturnedLength);
+        }
+
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, EntryPoint = nameof(GetLogicalProcessorInformationEx), SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        private static extern unsafe bool GetLogicalProcessorInformationExExtern(
+            [In] LOGICAL_PROCESSOR_RELATIONSHIP RelationshipType,
+            SYSTEM_LOGICAL_PROCESSOR_INFORMATION_EX* Buffer,
             ref int ReturnedLength
             );
         #endregion

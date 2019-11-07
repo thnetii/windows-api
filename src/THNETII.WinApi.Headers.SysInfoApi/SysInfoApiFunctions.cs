@@ -1191,5 +1191,61 @@ namespace THNETII.WinApi.Native.SysInfoApi
             out FILETIME lpSystemTimeAsFileTime
             );
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\sysinfoapi.h, line: 458
+        #region GetProductInfo function
+        /// <summary>
+        /// Retrieves the product type for the operating system on the local computer, and maps the type to the product types supported by the specified operating system.
+        /// <para>To retrieve product type information on versions of Windows prior to the minimum supported operating systems specified in the Requirements section, use the <see cref="GetVersionExW"/> function. You can also use the <see cref="Win32_OperatingSystem.OperatingSystemSKU"/> property of the <see cref="Win32_OperatingSystem"/> WMI class.</para>
+        /// </summary>
+        /// <param name="dwOSMajorVersion">
+        /// <para>The major version number of the operating system. The minimum value is 6.</para>
+        /// <para>The combination of the <paramref name="dwOSMajorVersion"/>, <paramref name="dwOSMinorVersion"/>, <paramref name="dwSpMajorVersion"/>, and <paramref name="dwSpMinorVersion"/> parameters describes the maximum target operating system version for the application. For example, Windows Vista and Windows Server 2008 are version 6.0.0.0 and Windows 7 and Windows Server 2008 R2 are version 6.1.0.0. All Windows 10 based releases will be listed as version 6.3.</para>
+        /// </param>
+        /// <param name="dwOSMinorVersion">The minor version number of the operating system. The minimum value is 0.</param>
+        /// <param name="dwSpMajorVersion">The major version number of the operating system service pack. The minimum value is 0.</param>
+        /// <param name="dwSpMinorVersion">The minor version number of the operating system service pack. The minimum value is 0.</param>
+        /// <param name="pdwReturnedProductType">
+        /// <para>The product type. If the specified operating system is less than the current operating system, this information is mapped to the types supported by the specified operating system. If the specified operating system is greater than the highest supported operating system, this information is mapped to the types supported by the current operating system.</para>
+        /// </param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see langword="true"/>.</para>
+        /// <para>If the function fails, the return value is <see langword="false"/>. This function fails if one of the input parameters is invalid.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>To detect whether a server role or feature is installed, use the <a href="https://docs.microsoft.com/windows/desktop/WmiSdk/win32-serverfeature">Server Feature</a> WMI provider.</para>
+        /// <para>Subsequent releases of Windows will map the product types it supports to the set of product types supported by each supported previous release of Windows, back to version 6.0.0.0. Therefore, an application that does an equality test for any of these values will continue to work on future releases, even when new product types are added.</para>
+        /// <para><strong>PRODUCT_*_SERVER_CORE</strong> values are not returned in Windows Server 2012, and later. For example, the base server edition, Server Datacenter, is used to build the two different installation options: "full server" and "core server". With Windows Server 2012, <see cref="GetProductInfo"/> will return <strong>PRODUCT_DATACENTER</strong> regardless of the option used during product installation. As noted above, for Server Core installations of Windows Server 2012 and later, use the method <a href="https://docs.microsoft.com/previous-versions/windows/desktop/legacy/hh846315(v=vs.85)">Determining whether Server Core is running</a>.</para>
+        /// <para>
+        /// The following table indicates the product types that were introduced in 6.1.0.0, and what they will map to if <see cref="GetProductInfo"/> is called with version 6.0.0.0 on a 6.1.0.0 system.
+        /// <list type="table">
+        /// <listheader><term>New for 6.1.0.0</term><description>Value returned with 6.0.0.0</description></listheader>
+        /// <item><term><see cref="PRODUCT_TYPE.PRODUCT_PROFESSIONAL"/></term><description><see cref="PRODUCT_TYPE.PRODUCT_BUSINESS"/></description></item>
+        /// <item><term><see cref="PRODUCT_TYPE.PRODUCT_PROFESSIONAL_N"/></term><description><see cref="PRODUCT_TYPE.PRODUCT_BUSINESS_N"/></description></item>
+        /// <item><term><see cref="PRODUCT_TYPE.PRODUCT_STARTER_N"/></term><description><see cref="PRODUCT_TYPE.PRODUCT_STARTER"/></description></item>
+        /// </list>
+        /// </para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows Vista [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2008 [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/sysinfoapi/nf-sysinfoapi-getproductinfo">GetProductInfo function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/SysInfo/system-information-functions">System Information Functions</seealso>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool GetProductInfo(
+            [In] int dwOSMajorVersion,
+            [In] int dwOSMinorVersion,
+            [In] int dwSpMajorVersion,
+            [In] int dwSpMinorVersion,
+            [MarshalAs(UnmanagedType.I4)]
+            out PRODUCT_TYPE pdwReturnedProductType
+            );
+        #endregion
     }
 }

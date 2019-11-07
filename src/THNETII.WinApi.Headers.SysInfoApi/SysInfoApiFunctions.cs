@@ -1167,5 +1167,29 @@ namespace THNETII.WinApi.Native.SysInfoApi
             out SYSTEM_INFO lpSystemInfo
             );
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\sysinfoapi.h, line: 440
+        #region GetSystemTimePreciseAsFileTime function
+        /// <summary>
+        /// The <see cref="GetSystemTimePreciseAsFileTime"/> function retrieves the current system date and time with the highest possible level of precision (&lt;1μs). The retrieved information is in Coordinated Universal Time (UTC) format.
+        /// </summary>
+        /// <param name="lpSystemTimeAsFileTime">A <see cref="FILETIME"/> structure that receives the current system date and time in UTC format.</param>
+        /// <remarks>
+        /// <para><note>This function is best suited for high-resolution time-of-day measurements, or time stamps that are synchronized to UTC. For high-resolution interval measurements, use <see cref="QueryPerformanceCounter"/> or <see cref="KeQueryPerformanceCounter"/>. For more info about acquiring high-resolution time stamps, see <a href="https://docs.microsoft.com/windows/desktop/SysInfo/acquiring-high-resolution-time-stamps">Acquiring high-resolution time stamps</a>.</note></para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows 8 [desktop apps | UWP apps]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2012 [desktop apps | UWP apps]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/sysinfoapi/nf-sysinfoapi-getsystemtimepreciseasfiletime">GetSystemTimePreciseAsFileTime function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi)]
+        public static extern void GetSystemTimePreciseAsFileTime(
+            out FILETIME lpSystemTimeAsFileTime
+            );
+        #endregion
     }
 }

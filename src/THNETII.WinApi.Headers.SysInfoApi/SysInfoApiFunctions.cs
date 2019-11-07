@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 using System.Text;
+
 using THNETII.WinApi.Native.MinWinBase;
+using THNETII.WinApi.Native.WinError;
 
 #if NETSTANDARD1_6
 using EntryPointNotFoundException = System.Exception;
@@ -9,7 +11,9 @@ using EntryPointNotFoundException = System.Exception;
 
 namespace THNETII.WinApi.Native.SysInfoApi
 {
+    using static COMPUTER_NAME_FORMAT;
     using static NativeLibraryNames;
+    using static WinErrorConstants;
 
     public static class SysInfoApiFunctions
     {
@@ -660,6 +664,161 @@ namespace THNETII.WinApi.Native.SysInfoApi
         public static extern int GetSystemWindowsDirectory(
             [Out] StringBuilder lpBuffer,
             [In] int uSize
+            );
+#endif // !NETSTANDARD1_6
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\sysinfoapi.h, line: 314
+        #region GetComputerNameExA function
+        /// <inheritdoc cref="GetComputerNameEx(COMPUTER_NAME_FORMAT, LPTSTR, ref int)"/>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool GetComputerNameExA(
+            [In] COMPUTER_NAME_FORMAT NameType,
+            LPSTR lpBuffer,
+            ref int nSize
+            );
+
+        /// <inheritdoc cref="GetComputerNameExA(COMPUTER_NAME_FORMAT, LPSTR, ref int)"/>
+        public static bool GetComputerNameExA(
+            COMPUTER_NAME_FORMAT NameType,
+            StringBuilder lpBuffer,
+            out int nSize
+            )
+        {
+            nSize = lpBuffer?.Capacity ?? 0;
+            return GetComputerNameExAExtern(NameType, lpBuffer, ref nSize);
+        }
+
+        /// <inheritdoc cref="GetComputerNameExA(COMPUTER_NAME_FORMAT, LPSTR, ref int)"/>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, EntryPoint = nameof(GetComputerNameExA), CharSet = CharSet.Ansi, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        private static extern bool GetComputerNameExAExtern(
+            [In] COMPUTER_NAME_FORMAT NameType,
+            [Out] StringBuilder lpBuffer,
+            ref int nSize
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\sysinfoapi.h, line: 324
+        #region GetComputerNameExW function
+        /// <inheritdoc cref="GetComputerNameEx(COMPUTER_NAME_FORMAT, LPTSTR, ref int)"/>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool GetComputerNameExW(
+            [In] COMPUTER_NAME_FORMAT NameType,
+            LPWSTR lpBuffer,
+            ref int nSize
+            );
+
+        /// <inheritdoc cref="GetComputerNameExW(COMPUTER_NAME_FORMAT, LPWSTR, ref int)"/>
+        public static bool GetComputerNameExW(
+            COMPUTER_NAME_FORMAT NameType,
+            StringBuilder lpBuffer,
+            out int nSize
+            )
+        {
+            nSize = lpBuffer?.Capacity ?? 0;
+            return GetComputerNameExWExtern(NameType, lpBuffer, ref nSize);
+        }
+
+        /// <inheritdoc cref="GetComputerNameExW(COMPUTER_NAME_FORMAT, LPWSTR, ref int)"/>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, EntryPoint = nameof(GetComputerNameExW), CharSet = CharSet.Unicode, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        private static extern bool GetComputerNameExWExtern(
+            [In] COMPUTER_NAME_FORMAT NameType,
+            [Out] StringBuilder lpBuffer,
+            ref int nSize
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\sysinfoapi.h, line: 334
+        #region GetComputerNameEx function
+        /// <summary>
+        /// Retrieves a NetBIOS or DNS name associated with the local computer. The names are established at system startup, when the system reads them from the registry.
+        /// </summary>
+        /// <param name="NameType">
+        /// The type of name to be retrieved. This parameter is a value from the <see cref="COMPUTER_NAME_FORMAT"/> enumeration type. The following table provides additional information.
+        /// <list type="table">
+        /// <listheader><term>Value</term><description>Meaning</description></listheader>
+        /// <item><term><see cref="ComputerNameDnsDomain"/></term><description> The name of the DNS domain assigned to the local computer. If the local computer is a node in a cluster, <paramref name="lpBuffer"/> receives the DNS domain name of the cluster virtual server.</description></item>
+        /// <item><term><see cref="ComputerNameDnsFullyQualified"/></term><description>The fully qualified DNS name that uniquely identifies the local computer. This name is a combination of the DNS host name and the DNS domain name, using the form <em>HostName.DomainName</em>. If the local computer is a node in a cluster, <paramref name="lpBuffer"/> receives the fully qualified DNS name of the cluster virtual server.</description></item>
+        /// <item><term><see cref="ComputerNameDnsHostname"/></term><description>The DNS host name of the local computer. If the local computer is a node in a cluster, <paramref name="lpBuffer"/> receives the DNS host name of the cluster virtual server.</description></item>
+        /// <item><term><see cref="ComputerNameNetBIOS"/></term><description>The NetBIOS name of the local computer. If the local computer is a node in a cluster, <paramref name="lpBuffer"/> receives the NetBIOS name of the cluster virtual server.</description></item>
+        /// <item><term><see cref="ComputerNamePhysicalDnsDomain"/></term><description>The name of the DNS domain assigned to the local computer. If the local computer is a node in a cluster, <paramref name="lpBuffer"/> receives the DNS domain name of the local computer, not the name of the cluster virtual server.</description></item>
+        /// <item><term><see cref="ComputerNamePhysicalDnsFullyQualified"/></term><description><para>The fully qualified DNS name that uniquely identifies the computer. If the local computer is a node in a cluster, <paramref name="lpBuffer"/> receives the fully qualified DNS name of the local computer, not the name of the cluster virtual server.</para><para>The fully qualified DNS name is a combination of the DNS host name and the DNS domain name, using the form <em>HostName.DomainName</em>.</para></description></item>
+        /// <item><term><see cref="ComputerNamePhysicalDnsHostname"/></term><description>The DNS host name of the local computer. If the local computer is a node in a cluster, <paramref name="lpBuffer"/> receives the DNS host name of the local computer, not the name of the cluster virtual server.</description></item>
+        /// <item><term><see cref="ComputerNamePhysicalNetBIOS"/></term><description>The NetBIOS name of the local computer. If the local computer is a node in a cluster, <paramref name="lpBuffer"/> receives the NetBIOS name of the local computer, not the name of the cluster virtual server.</description></item>
+        /// </list>
+        /// </param>
+        /// <param name="lpBuffer">
+        /// <para>A buffer that receives the computer name or the cluster virtual server name.</para>
+        /// <para>The length of the name may be greater than <see cref="F:THNETII.WinApi.Native.WinBase.WinBaseConstants.MAX_COMPUTERNAME_LENGTH"/> characters because DNS allows longer names. To ensure that this buffer is large enough, set this parameter to <see langword="null"/> and use the required buffer size returned in the <paramref name="nSize"/> parameter.</para>
+        /// </param>
+        /// <param name="nSize">
+        /// <para>On input, specifies the size of the buffer, in characters. On output, receives the number of characters copied to the destination buffer, not including the terminating null character.</para>
+        /// <para>If the buffer is too small, the function fails and <see cref="GetLastError"/> returns <see cref="ERROR_MORE_DATA"/>. This parameter receives the size of the buffer required, including the terminating null character.</para>
+        /// <para>If lpBuffer is <see langword="null"/>, this parameter must be zero.</para>
+        /// </param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is a <see langword="true"/>.</para>
+        /// <para>
+        /// If the function fails, the return value is <see langword="false"/>. To get extended error information, call <see cref="GetLastError"/>. Possible values include the following.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <item><term><see cref="ERROR_MORE_DATA"/></term><description>The <paramref name="lpBuffer"/> buffer is too small. The <paramref name="nSize"/> parameter contains the number of characters required to receive the name.</description></item>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>If group policy is not set for the local machine, the <see cref="GetComputerNameEx"/> function retrieves the NetBIOS or DNS names established at system startup. If group policy is set, the function returns the primary domain name set by group policy. Name changes made by the <see cref="SetComputerName"/> or <see cref="SetComputerNameEx"/> functions do not take effect until the user restarts the computer.</para>
+        /// <para>If the local computer is not configured to use DNS names, <see cref="GetComputerNameEx"/> will not return DNS information. To configure the computer to do this, follow the steps outlined in the operating system help and change the primary DNS suffix of the computer, then restart the computer.</para>
+        /// <para>The behavior of this function can be affected if the local computer is a node in a cluster. For more information, see <see cref="ResUtilGetEnvironmentWithNetName"/> and <see cref="UseNetworkName"/>.</para>
+        /// <para>If you are working with environments that use different DNS layouts, where the computer's FQDN does not match the FQDN of its domain, use <see cref="LsaQueryInformationPolicy"/> instead.</para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows 2000 Professional [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows 2000 Server [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/sysinfoapi/nf-sysinfoapi-getcomputernameexw">GetComputerNameEx function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="COMPUTER_NAME_FORMAT"/>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/SysInfo/computer-names">Computer Names</seealso>
+        /// <seealso cref="GetComputerName"/>
+        /// <seealso cref="ResUtilGetEnvironmentWithNetName"/>
+        /// <seealso cref="ResUtilSetResourceServiceEnvironment"/>
+        /// <seealso cref="ResUtilSetResourceServiceStartParameters"/>
+        /// <seealso cref="SetComputerName"/>
+        /// <seealso cref="SetComputerNameEx"/>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/SysInfo/system-information-functions">System Information Functions</seealso>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool GetComputerNameEx(
+            [In] COMPUTER_NAME_FORMAT NameType,
+            LPTSTR lpBuffer,
+            ref int nSize
+            );
+
+#if !NETSTANDARD1_6
+        /// <inheritdoc cref="GetComputerNameEx(COMPUTER_NAME_FORMAT, LPTSTR, ref int)"/>
+        public static bool GetComputerNameEx(
+            COMPUTER_NAME_FORMAT NameType,
+            StringBuilder lpBuffer,
+            out int nSize
+            )
+        {
+            nSize = lpBuffer?.Capacity ?? 0;
+            return GetComputerNameExExtern(NameType, lpBuffer, ref nSize);
+        }
+
+        /// <inheritdoc cref="GetComputerNameEx(COMPUTER_NAME_FORMAT, LPTSTR, ref int)"/>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, EntryPoint = nameof(GetComputerNameEx), CharSet = CharSet.Auto, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        private static extern bool GetComputerNameExExtern(
+            [In] COMPUTER_NAME_FORMAT NameType,
+            [Out] StringBuilder lpBuffer,
+            ref int nSize
             );
 #endif // !NETSTANDARD1_6
         #endregion

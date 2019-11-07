@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 using System.Text;
-
+using THNETII.InteropServices.Memory;
 using THNETII.WinApi.Native.MinWinBase;
 using THNETII.WinApi.Native.WinError;
 using THNETII.WinApi.Native.WinNT;
@@ -975,7 +975,7 @@ namespace THNETII.WinApi.Native.SysInfoApi
         /// </param>
         /// <returns>
         /// <para>If the function succeeds, the return value is a <see langword="true"/>.</para>
-        /// <para>If the function fails, the return value is <see langword="false"/>. To get extended error information, call <see cref="GetLastError"/>. The function fails if you specify an invalid value for the <see cref="OSVERSIONINFOEXW.dwOSVersionInfoSize"/> member of the <see cref="OSVERSIONINFOW"/> or <see cref=""/> structure.</para>
+        /// <para>If the function fails, the return value is <see langword="false"/>. To get extended error information, call <see cref="GetLastError"/>. The function fails if you specify an invalid value for the <see cref="OSVERSIONINFOEXW.dwOSVersionInfoSize"/> member of the <see cref="OSVERSIONINFOW"/> or <see cref="OSVERSIONINFOEXW"/> structure.</para>
         /// </returns>
         /// <remarks>
         /// <para>Identifying the current operating system is usually not the best way to determine whether a particular operating system feature is present. This is because the operating system may have had new features added in a redistributable DLL. Rather than using <see cref="GetVersionExW"/> to determine the operating system platform or version number, test for the presence of the feature itself. For more information, see <a href="https://docs.microsoft.com/windows/desktop/SysInfo/operating-system-version">Operating System Version</a>.</para>
@@ -1016,6 +1016,69 @@ namespace THNETII.WinApi.Native.SysInfoApi
         [return: MarshalAs(UnmanagedType.Bool)]
         public static extern bool GetVersionExW(
             ref OSVERSIONINFOEXW lpVersionInformation
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\sysinfoapi.h, line: 397
+        #region GetLogicalProcessorInformation function
+        /// <summary>
+        /// Retrieves information about logical processors and related hardware.
+        /// <para>To retrieve information about logical processors and related hardware, including processor groups, use the <see cref="GetLogicalProcessorInformationEx"/> function.</para>
+        /// </summary>
+        /// <param name="Buffer">A writable <see cref="Span{SYSTEM_LOGICAL_PROCESSOR_INFORMATION}"/> that receives an array of <see cref="SYSTEM_LOGICAL_PROCESSOR_INFORMATION"/> structures. If the function fails, the contents of this buffer are undefined.</param>
+        /// <param name="ReturnedLength">If the buffer is large enough to contain all of the data, this function succeeds and <paramref name="ReturnedLength"/> is set to the number of bytes returned. If the buffer is not large enough to contain all of the data, the function fails, <see cref="GetLastError"/> returns <see cref="ERROR_INSUFFICIENT_BUFFER"/>, and <paramref name="ReturnedLength"/> is set to the buffer length required to contain all of the data. If the function fails with an error other than <see cref="ERROR_INSUFFICIENT_BUFFER"/>, the value of <paramref name="ReturnedLength"/> is undefined.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see langword="true"/> and at least one <see cref="SYSTEM_LOGICAL_PROCESSOR_INFORMATION"/> structure is written to the output buffer.</para>
+        /// <para>If the function fails, the return value is <see langword="false"/>. To get extended error information, call <see cref="GetLastError"/>.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>
+        /// <see cref="GetLogicalProcessorInformation"/> can be used to get information about the relationship between logical processors in the system, including:
+        /// <list type="bullet">
+        /// <item>The logical processors that are part of a <a href="https://docs.microsoft.com/windows/desktop/ProcThread/numa-support">NUMA</a> node.</item>
+        /// <item>The logical processors that share resources. An example of this type of resource sharing would be hyperthreading scenarios.</item>
+        /// </list>
+        /// </para>
+        /// <para> Your application can use this information when affinitizing your threads and processes to take best advantage of the hardware properties of the platform, or to determine the number of logical and physical processors for licensing purposes. </para>
+        /// <para>
+        /// Each of the <see cref="SYSTEM_LOGICAL_PROCESSOR_INFORMATION"/> structures returned in the buffer contains the following:
+        /// <list type="bullet">
+        /// <item>A logical processor affinity mask, which indicates the logical processors that the information in the structure applies to.</item>
+        /// <item>A logical processor mask of type <see cref="LOGICAL_PROCESSOR_RELATIONSHIP"/>, which indicates the relationship between the logical processors in the mask. Applications calling this function must be prepared to handle additional indicator values in the future.</item>
+        /// </list>
+        /// </para>
+        /// <para> Note that the order in which the structures are returned in the buffer may change between calls to this function. </para>'
+        /// <para>The size of the <see cref="SYSTEM_LOGICAL_PROCESSOR_INFORMATION"/> structure varies between processor architectures and versions of Windows. For this reason, applications should first call this function to obtain the required buffer size, then dynamically allocate memory for the buffer.</para>
+        /// <para>On systems with more than 64 logical processors, the <see cref="GetLogicalProcessorInformation"/> function retrieves logical processor information about processors in the processor group to which the calling thread is currently assigned. Use the <see cref="GetLogicalProcessorInformationEx"/> function to retrieve information about processors in all processor groups on the system.</para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows Vista, Windows XP Professional x64 Edition, Windows XP with SP3 [desktop apps | UWP apps]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps | UWP apps]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/sysinfoapi/nf-sysinfoapi-getlogicalprocessorinformation">GetLogicalProcessorInformation function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="GetLogicalProcessorInformationEx"/>
+        /// <seealso cref="LOGICAL_PROCESSOR_RELATIONSHIP"/>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/ProcThread/process-and-thread-functions">Process and Thread Functions</seealso>
+        /// <seealso cref="SYSTEM_LOGICAL_PROCESSOR_INFORMATION"/>
+        public static unsafe bool GetLogicalProcessorInformation(
+            Span<SYSTEM_LOGICAL_PROCESSOR_INFORMATION> Buffer,
+            out int ReturnedLength
+            )
+        {
+            ReturnedLength = Buffer.Length * SizeOf<SYSTEM_LOGICAL_PROCESSOR_INFORMATION>.Bytes;
+            fixed (SYSTEM_LOGICAL_PROCESSOR_INFORMATION* pBuffer = Buffer)
+                return GetLogicalProcessorInformationExtern(pBuffer, ref ReturnedLength);
+        }
+
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, EntryPoint = nameof(GetLogicalProcessorInformation), SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        private static extern unsafe bool GetLogicalProcessorInformationExtern(
+            SYSTEM_LOGICAL_PROCESSOR_INFORMATION* Buffer,
+            ref int ReturnedLength
             );
         #endregion
     }

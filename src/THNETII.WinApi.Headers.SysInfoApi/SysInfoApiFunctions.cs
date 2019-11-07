@@ -822,5 +822,81 @@ namespace THNETII.WinApi.Native.SysInfoApi
             );
 #endif // !NETSTANDARD1_6
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\sysinfoapi.h, line: 346
+        #region SetComputerNameExW function
+        /// <inheritdoc cref="SetComputerNameEx(COMPUTER_NAME_FORMAT, LPCTSTR)"/>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool SetComputerNameExW(
+            [In] COMPUTER_NAME_FORMAT NameType,
+            LPCWSTR lpBuffer
+            );
+
+        /// <inheritdoc cref="SetComputerNameExW(COMPUTER_NAME_FORMAT, LPCWSTR)"/>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true, CharSet = CharSet.Unicode)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool SetComputerNameExW(
+            [In] COMPUTER_NAME_FORMAT NameType,
+            [In] string lpBuffer
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\sysinfoapi.h, line: 355
+        #region SetComputerNameEx function
+        /// <summary>
+        /// Sets a new NetBIOS or DNS name for the local computer. Name changes made by <see cref="SetComputerNameEx"/> do not take effect until the user restarts the computer.
+        /// </summary>
+        /// <param name="NameType">
+        /// The type of name to be set. This parameter can be one of the following values from the <see cref="COMPUTER_NAME_FORMAT"/> enumeration type.
+        /// <list type="table">
+        /// <listheader><term>Value</term><description>Meaning</description></listheader>
+        /// <item><term><see cref="ComputerNamePhysicalDnsDomain"/></term><description>Sets the primary DNS suffix of the computer.</description></item>
+        /// <item><term><see cref="ComputerNamePhysicalDnsHostname"/></term><description>Sets the NetBIOS and the Computer Name (the first label of the full DNS name) to the name specified in <paramref name="lpBuffer"/>. If the name exceeds <see cref="F:THNETII.WinApi.Native.WinBase.WinBaseConstants.MAX_COMPUTERNAME_LENGTH"/> characters, the NetBIOS name is truncated to <see cref="F:THNETII.WinApi.Native.WinBase.WinBaseConstants.MAX_COMPUTERNAME_LENGTH"/> characters, not including the terminating null character.</description></item>
+        /// <item><term><see cref="ComputerNamePhysicalNetBIOS"/></term><description><para>Sets the NetBIOS name to the name specified in <paramref name="lpBuffer"/>. The name cannot exceed <see cref="F:THNETII.WinApi.Native.WinBase.WinBaseConstants.MAX_COMPUTERNAME_LENGTH"/> characters, not including the terminating null character.</para><para><note type="warning">Using this option to set the NetBIOS name breaks the convention of interdependent NetBIOS and DNS names. Applications that use the <see cref="DnsHostnameToComputerName"/> function to derive the NetBIOS name from the first label of the DNS name will fail if this convention is broken.</note></para></description></item>
+        /// </list>
+        /// </param>
+        /// <param name="lpBuffer">The new name. The name cannot include control characters, leading or trailing spaces, or any of the following characters: <code>&quot; / \ [ ] : | &lt; &gt; + = ; , ?</code></param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is a <see langword="true"/>.</para>
+        /// <para>If the function fails, the return value is <see langword="false"/>. To get extended error information, call <see cref="GetLastError"/>.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para><see cref="SetComputerNameEx"/> can set the Computer Name (the first label of the full DNS name) or the primary DNS suffix of the local computer. It cannot set a fully qualified DNS name in one call.</para>
+        /// <para>If the local computer is a node in a cluster, <see cref="SetComputerNameEx"/> sets NetBIOS or DNS name of the local computer, not that of the cluster virtual server.</para>
+        /// <para>The process that calls the <see cref="SetComputerNameEx"/> function must have administrator privileges on the local computer.</para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows 2000 Professional [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows 2000 Server [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/sysinfoapi/nf-sysinfoapi-setcomputernameexw">SetComputerNameEx function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="COMPUTER_NAME_FORMAT"/>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/SysInfo/computer-names">Computer Names</seealso>
+        /// <seealso cref="DnsHostnameToComputerName"/>
+        /// <seealso cref="GetComputerName"/>
+        /// <seealso cref="GetComputerNameEx"/>
+        /// <seealso cref="SetComputerName"/>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/SysInfo/system-information-functions">System Information Functions</seealso>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool SetComputerNameEx(
+            [In] COMPUTER_NAME_FORMAT NameType,
+            LPCTSTR lpBuffer
+            );
+
+#if !NETSTANDARD1_6
+        /// <inheritdoc cref="SetComputerNameEx(COMPUTER_NAME_FORMAT, LPCTSTR)"/>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true, CharSet = CharSet.Auto)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool SetComputerNameEx(
+            [In] COMPUTER_NAME_FORMAT NameType,
+            [In] string lpBuffer
+            );
+#endif // !NETSTANDARD1_6
+        #endregion
     }
 }

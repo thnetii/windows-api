@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Runtime.InteropServices;
+using System.Text;
 using THNETII.WinApi.Native.MinWinBase;
 
 #if NETSTANDARD1_6
@@ -374,6 +375,7 @@ namespace THNETII.WinApi.Native.SysInfoApi
         /// </remarks>
         /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
         /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="SetSystemTimeAdjustmentPrecise"/>
         [DllImport(KernelBase, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
         [return: MarshalAs(UnmanagedType.Bool)]
         public static extern bool GetSystemTimeAdjustmentPrecise(
@@ -382,6 +384,97 @@ namespace THNETII.WinApi.Native.SysInfoApi
             [MarshalAs(UnmanagedType.Bool)]
             out bool lpTimeAdjustmentDisabled
             );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\sysinfoapi.h, line: 210
+        #region GetSystemDirectoryA function
+        /// <inheritdoc cref="GetSystemDirectory(LPTSTR, int)"/>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        public static extern int GetSystemDirectoryA(
+            LPSTR lpBuffer,
+            [In] int uSize
+            );
+
+        /// <inheritdoc cref="GetSystemDirectoryA(LPSTR, int)"/>
+        public static int GetSystemDirectoryA(
+            StringBuilder lpBuffer
+            ) => GetSystemDirectoryA(lpBuffer, lpBuffer?.Capacity ?? 0);
+
+        /// <inheritdoc cref="GetSystemDirectoryA(LPSTR, int)"/>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi, SetLastError = true)]
+        private static extern int GetSystemDirectoryA(
+            [Out] StringBuilder lpBuffer,
+            [In] int uSize
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\sysinfoapi.h, line: 219
+        #region GetSystemDirectoryW function
+        /// <inheritdoc cref="GetSystemDirectory(LPTSTR, int)"/>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        public static extern int GetSystemDirectoryW(
+            LPWSTR lpBuffer,
+            [In] int uSize
+            );
+
+        /// <inheritdoc cref="GetSystemDirectoryW(LPWSTR, int)"/>
+        public static int GetSystemDirectoryW(
+            StringBuilder lpBuffer
+            ) => GetSystemDirectoryW(lpBuffer, lpBuffer?.Capacity ?? 0);
+
+        /// <inheritdoc cref="GetSystemDirectoryW(LPWSTR, int)"/>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Unicode, SetLastError = true)]
+        private static extern int GetSystemDirectoryW(
+            [Out] StringBuilder lpBuffer,
+            [In] int uSize
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\sysinfoapi.h, line: 228
+        #region GetSystemDirectory function
+        /// <summary>
+        /// Retrieves the path of the system directory. The system directory contains system files such as dynamic-link libraries and drivers.
+        /// <para>This function is provided primarily for compatibility. Applications should store code in the Program Files folder and persistent data in the Application Data folder in the user's profile. For more information, see <see cref="ShGetFolderPath"/>.</para>
+        /// </summary>
+        /// <param name="lpBuffer">A buffer to receive the path. This path does not end with a backslash unless the system directory is the root directory. For example, if the system directory is named <c>Windows\System32</c> on drive <c>C</c>, the path of the system directory retrieved by this function is <c>C:\Windows\System32</c>.</param>
+        /// <param name="uSize">The maximum size of the buffer, in characters.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is the length, in characters, of the string copied to the buffer, not including the terminating null character. If the length is greater than the size of the buffer, the return value is the size of the buffer required to hold the path, including the terminating null character.</para>
+        /// <para>If the function fails, the return value is zero. To get extended error information, call <see cref="GetLastError"/>.</para>
+        /// </returns>
+        /// <remarks>
+        /// Applications should not create files in the system directory. If the user is running a shared version of the operating system, the application does not have write access to the system directory.
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows 2000 Professional [desktop apps | UWP apps]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows 2000 Server [desktop apps | UWP apps]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/sysinfoapi/nf-sysinfoapi-getsystemdirectoryw">GetSystemDirectory function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="GetCurrentDirectory"/>
+        /// <seealso cref="GetWindowsDirectory"/>
+        /// <seealso cref="SetCurrentDirectory"/>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/SysInfo/system-information-functions">System Information Functions</seealso>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        public static extern int GetSystemDirectory(
+            LPTSTR lpBuffer,
+            [In] int uSize
+            );
+
+#if !NETSTANDARD1_6
+        /// <inheritdoc cref="GetSystemDirectory(LPTSTR, int)"/>
+        public static int GetSystemDirectory(
+            StringBuilder lpBuffer
+            ) => GetSystemDirectory(lpBuffer, lpBuffer?.Capacity ?? 0);
+
+        /// <inheritdoc cref="GetSystemDirectory(LPTSTR, int)"/>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto, SetLastError = true)]
+        private static extern int GetSystemDirectory(
+            [Out] StringBuilder lpBuffer,
+            [In] int uSize
+            ); 
+#endif // !NETSTANDARD1_6
         #endregion
     }
 }

@@ -11,3 +11,4 @@ using System.Diagnostics.CodeAnalysis;
 [assembly: SuppressMessage("Performance", "CA1815: Override equals and operator equals on value types")]
 [assembly: SuppressMessage("Interoperability", "CA1401: P/Invokes should not be visible")]
 [assembly: SuppressMessage("Usage", "PC003: Native API not available in UWP")]
+[assembly: SuppressMessage("Globalization", "CA2101: Specify marshaling for P/Invoke string arguments")]

@@ -937,5 +937,86 @@ namespace THNETII.WinApi.Native.SysInfoApi
             in SYSTEMTIME lpSystemTime
             );
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\sysinfoapi.h, line: 373
+        #region GetVersionExA function
+        /// <inheritdoc cref="GetVersionExA(ref OSVERSIONINFOEXA)"/>
+        [Obsolete("GetVersionEx may be altered or unavailable for releases after Windows 8.1. Instead, use the Version Helper functions (https://docs.microsoft.com/windows/desktop/SysInfo/version-helper-apis)")]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool GetVersionExA(
+            ref OSVERSIONINFOA lpVersionInformation
+            );
+
+        /// <inheritdoc cref="GetVersionExW(ref OSVERSIONINFOEXW)"/>
+        [Obsolete("GetVersionEx may be altered or unavailable for releases after Windows 8.1. Instead, use the Version Helper functions (https://docs.microsoft.com/windows/desktop/SysInfo/version-helper-apis)")]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool GetVersionExA(
+            ref OSVERSIONINFOEXA lpVersionInformation
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\sysinfoapi.h, line: 382
+        #region GetVersionExW function
+        /// <inheritdoc cref="GetVersionExW(ref OSVERSIONINFOEXW)"/>
+        [Obsolete("GetVersionEx may be altered or unavailable for releases after Windows 8.1. Instead, use the Version Helper functions (https://docs.microsoft.com/windows/desktop/SysInfo/version-helper-apis)")]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool GetVersionExW(
+            ref OSVERSIONINFOW lpVersionInformation
+            );
+
+        /// <summary>
+        /// <para>With the release of Windows 8.1, the behavior of the <see cref="GetVersionExW"/> API has changed in the value it will return for the operating system version. The value returned by the <see cref="GetVersionExW"/> function now depends on how the application is manifested.</para>
+        /// <para>Applications not manifested for Windows 8.1 or Windows 10 will return the Windows 8 OS version value (6.2). Once an application is manifested for a given operating system version, <see cref="GetVersionExW"/> will always return the version that the application is manifested for in future releases. To manifest your applications for Windows 8.1 or Windows 10, refer to <a href="https://docs.microsoft.com/windows/desktop/SysInfo/targeting-your-application-at-windows-8-1">Targeting your application for Windows</a>.</para>
+        /// </summary>
+        /// <param name="lpVersionInformation">
+        /// <para>A reference to a <see cref="OSVERSIONINFOW"/> or <see cref="OSVERSIONINFOEXW"/> structure that receives the operating system information.</para>
+        /// <para>Before calling the <see cref="GetVersionExW"/> function, set the <see cref="OSVERSIONINFOEXW.dwOSVersionInfoSize"/> member of the structure as appropriate to indicate which data structure is being passed to this function.</para>
+        /// </param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is a <see langword="true"/>.</para>
+        /// <para>If the function fails, the return value is <see langword="false"/>. To get extended error information, call <see cref="GetLastError"/>. The function fails if you specify an invalid value for the <see cref="OSVERSIONINFOEXW.dwOSVersionInfoSize"/> member of the <see cref="OSVERSIONINFOW"/> or <see cref=""/> structure.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>Identifying the current operating system is usually not the best way to determine whether a particular operating system feature is present. This is because the operating system may have had new features added in a redistributable DLL. Rather than using <see cref="GetVersionExW"/> to determine the operating system platform or version number, test for the presence of the feature itself. For more information, see <a href="https://docs.microsoft.com/windows/desktop/SysInfo/operating-system-version">Operating System Version</a>.</para>
+        /// <para>
+        /// The <see cref="GetSystemMetrics"/> function provides additional information about the current operating system.
+        /// <list type="table">
+        /// <listheader><term>Product</term><description>Setting</description></listheader>
+        /// <item><term>Windows XP Media Center Edition</term><description>SM_MEDIACENTER</description></item>
+        /// <item><term>Windows XP Starter Edition</term><description>SM_STARTER</description></item>
+        /// <item><term>Windows XP Tablet PC Edition</term><description>SM_TABLETPC</description></item>
+        /// <item><term>Windows Server 2003 R2</term><description>SM_SERVERR2</description></item>
+        /// </list>
+        /// </para>
+        /// <para>To check for specific operating systems or operating system features, use the <see cref="IsOS"/> function. The <see cref="GetProductInfo"/> function retrieves the product type.</para>
+        /// <para>To retrieve information for the operating system on a remote computer, use the <see cref="NetWkstaGetInfo"/> function, the <see cref="Win32_OperatingSystem"/> WMI class, or the <see cref="IADsComputer.OperatingSystem"/> property of the <see cref="IADsComputer"/> interface.</para>
+        /// <para>To compare the current system version to a required version, use the <see cref="VerifyVersionInfo"/> function instead of using <see cref="GetVersionExW"/> to perform the comparison yourself.</para>
+        /// <para>If compatibility mode is in effect, the <see cref="GetVersionExW"/> function reports the operating system as it identifies itself, which may not be the operating system that is installed. For example, if compatibility mode is in effect, <see cref="GetVersionExW"/> reports the operating system that is selected for <a href="http://go.microsoft.com/fwlink/p/?linkid=115300">application compatibility</a>.</para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows 2000 Professional [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows 2000 Server [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/sysinfoapi/nf-sysinfoapi-getversionexw">GetVersionExW function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="GetVersion"/>
+        /// <seealso cref="OSVERSIONINFOW"/>
+        /// <seealso cref="OSVERSIONINFOEXW"/>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/SysInfo/operating-system-version">Operating System Version</seealso>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/SysInfo/system-information-functions">System Information Functions</seealso>
+        /// <seealso cref="VerifyVersionInfo"/>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/SysInfo/version-helper-apis">Version Helper functions</seealso>
+        [Obsolete("GetVersionEx may be altered or unavailable for releases after Windows 8.1. Instead, use the Version Helper functions (https://docs.microsoft.com/windows/desktop/SysInfo/version-helper-apis)")]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool GetVersionExW(
+            ref OSVERSIONINFOEXW lpVersionInformation
+            );
+        #endregion
     }
 }

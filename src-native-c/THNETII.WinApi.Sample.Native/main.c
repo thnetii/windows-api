@@ -7,7 +7,7 @@ int main(int argc, char* argv[])
     const int size = sizeof(instance);
     const int value = VER_PLATFORM_WIN32_NT;
 
-    const void* ptr = GetSystemInfo;
+    const void* ptr = GetVersionEx;
 
     return EXIT_SUCCESS;
 }

@@ -7,7 +7,7 @@ int main(int argc, char* argv[])
     const int size = sizeof(instance);
     const int value = PROCESSOR_ARCHITECTURE_AMD64;
 
-    const void* ptr = GetEnvironmentVariableA;
+    const void* ptr = GetSystemInfo;
 
     return EXIT_SUCCESS;
 }

@@ -1,7 +1,5 @@
 ﻿using System.Runtime.InteropServices;
 
-using THNETII.InteropServices.Memory;
-
 namespace THNETII.WinApi.Native.WinNT
 {
     using static LOGICAL_PROCESSOR_RELATIONSHIP;
@@ -17,11 +15,9 @@ namespace THNETII.WinApi.Native.WinNT
     /// <seealso cref="GROUP_RELATIONSHIP"/>
     /// <seealso cref="NUMA_NODE_RELATIONSHIP"/>
     /// <seealso cref="PROCESSOR_RELATIONSHIP"/>
-    [StructLayout(LayoutKind.Sequential)]
+    [StructLayout(LayoutKind.Explicit)]
     public struct SYSTEM_LOGICAL_PROCESSOR_INFORMATION_EX
     {
-        public static int SizeOf { get; } = SizeOf<SYSTEM_LOGICAL_PROCESSOR_INFORMATION_EX>.Bytes;
-
         /// <summary>
         /// The type of relationship between the logical processors.
         /// </summary>
@@ -36,57 +32,32 @@ namespace THNETII.WinApi.Native.WinNT
         /// <item><term><see cref="RelationProcessorPackage"/></term><description>The specified logical processors share a physical package. The <see cref="Processor"/> member contains additional information. </description></item>
         /// </list>
         /// </value>
+        [FieldOffset(0)]
         public LOGICAL_PROCESSOR_RELATIONSHIP Relationship;
         /// <summary>
         /// The size of the structure.
         /// </summary>
+        [FieldOffset(sizeof(LOGICAL_PROCESSOR_RELATIONSHIP))]
         public int Size;
-        #region public DUMMYUNIONNAME u;
-        [StructLayout(LayoutKind.Explicit)]
-        private struct DUMMYUNIONNAME
-        {
-            [FieldOffset(0)]
-            public PROCESSOR_RELATIONSHIP Processor;
-            [FieldOffset(0)]
-            public NUMA_NODE_RELATIONSHIP NumaNode;
-            [FieldOffset(0)]
-            public CACHE_RELATIONSHIP Cache;
-            [FieldOffset(0)]
-            public GROUP_RELATIONSHIP Group;
-        }
-        private DUMMYUNIONNAME u;
         /// <summary>
         /// A <see cref="PROCESSOR_RELATIONSHIP"/> structure that describes processor affinity. This structure contains valid data only if the <see cref="Relationship"/> member is <see cref="RelationProcessorCore"/> or <see cref="RelationProcessorPackage"/>.
         /// </summary>
-        public PROCESSOR_RELATIONSHIP Processor
-        {
-            get => u.Processor;
-            set => u.Processor = value;
-        }
+        [FieldOffset(sizeof(LOGICAL_PROCESSOR_RELATIONSHIP) + sizeof(int))]
+        public PROCESSOR_RELATIONSHIP Processor;
         /// <summary>
         /// A <see cref="NUMA_NODE_RELATIONSHIP"/> structure that describes a NUMA node. This structure contains valid data only if the <see cref="Relationship"/> member is <see cref="RelationNumaNode"/>.
         /// </summary>
-        public NUMA_NODE_RELATIONSHIP NumaNode
-        {
-            get => u.NumaNode;
-            set => u.NumaNode = value;
-        }
+        [FieldOffset(sizeof(LOGICAL_PROCESSOR_RELATIONSHIP) + sizeof(int))]
+        public NUMA_NODE_RELATIONSHIP NumaNode;
         /// <summary>
         /// A <see cref="CACHE_RELATIONSHIP"/> structure that describes cache attributes. This structure contains valid data only if the <see cref="Relationship"/> member is <see cref="RelationCache"/>.
         /// </summary>
-        public CACHE_RELATIONSHIP Cache
-        {
-            get => u.Cache;
-            set => u.Cache = value;
-        }
+        [FieldOffset(sizeof(LOGICAL_PROCESSOR_RELATIONSHIP) + sizeof(int))]
+        public CACHE_RELATIONSHIP Cache;
         /// <summary>
         /// A <see cref="GROUP_RELATIONSHIP"/> structure that contains information about the processor groups. This structure contains valid data only if the <see cref="Relationship"/> member is <see cref="RelationGroup"/>.
         /// </summary>
-        public GROUP_RELATIONSHIP Group
-        {
-            get => u.Group;
-            set => u.Group = value;
-        }
-        #endregion
+        [FieldOffset(sizeof(LOGICAL_PROCESSOR_RELATIONSHIP) + sizeof(int))]
+        public GROUP_RELATIONSHIP Group;
     }
 }

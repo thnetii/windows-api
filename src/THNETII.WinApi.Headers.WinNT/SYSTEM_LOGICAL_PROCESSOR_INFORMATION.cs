@@ -38,52 +38,40 @@ namespace THNETII.WinApi.Native.WinNT
         /// Future versions of Windows may support additional values for the <see cref="Relationship"/> member.
         /// </value>
         public LOGICAL_PROCESSOR_RELATIONSHIP Relationship;
-        [StructLayout(LayoutKind.Explicit)]
-        private unsafe struct DUMMYUNIONNAME
-        {
-            [FieldOffset(0)]
-            public SYSTEM_LOGICAL_PROCESSOR_CORE_INFORMATION ProcessorCore;
-            [FieldOffset(0)]
-            public SYSTEM_LOGICAL_PROCESSOR_NUMA_NODE_INFORMATION NumaNode;
-            [FieldOffset(0)]
-            public CACHE_DESCRIPTOR Cache;
-            [FieldOffset(0)]
-            [EditorBrowsable(EditorBrowsableState.Never)]
-            public fixed ulong Reserved[2];
-        }
-        private DUMMYUNIONNAME u;
-        public SYSTEM_LOGICAL_PROCESSOR_CORE_INFORMATION ProcessorCore
-        {
-            get => u.ProcessorCore;
-            set => u.ProcessorCore = value;
-        }
-        public SYSTEM_LOGICAL_PROCESSOR_NUMA_NODE_INFORMATION NumaNode
-        {
-            get => u.NumaNode;
-            set => u.NumaNode = value;
-        }
+        public SYSTEM_LOGICAL_PROCESSOR_UNIFIED_INFORMATION Content;
+    }
+
+    [StructLayout(LayoutKind.Explicit)]
+    public unsafe struct SYSTEM_LOGICAL_PROCESSOR_UNIFIED_INFORMATION
+    {
+        [FieldOffset(0)]
+        public SYSTEM_LOGICAL_PROCESSOR_CORE_INFORMATION ProcessorCore;
+        [FieldOffset(0)]
+        public SYSTEM_LOGICAL_PROCESSOR_NUMA_NODE_INFORMATION NumaNode;
         /// <summary>
         /// <para>A <see cref="CACHE_DESCRIPTOR"/> structure that identifies the characteristics of a particular cache. There is one record returned for each cache reported. Some or all caches may not be reported, depending on the mechanism used by the processor to identify its caches. Therefore, do not assume the absence of any particular caches. Caches are not necessarily shared among logical processors.</para>
-        /// <para>This structure contains valid data only if the <see cref="Relationship"/> member is <see cref="RelationCache"/>.</para>
+        /// <para>This structure contains valid data only if the <see cref="SYSTEM_LOGICAL_PROCESSOR_INFORMATION.Relationship"/> member is <see cref="RelationCache"/>.</para>
         /// <para><strong>Windows Server 2003:</strong> This member is not supported until Windows Server 2003 with SP1 and Windows XP Professional x64 Edition.</para>
         /// </summary>
-        public CACHE_DESCRIPTOR Cache
-        {
-            get => u.Cache;
-            set => u.Cache = value;
-        }
+        [FieldOffset(0)]
+        public CACHE_DESCRIPTOR Cache;
+        #region public fixed ulong Reserved[2];
+        [FieldOffset(0)]
+        [EditorBrowsable(EditorBrowsableState.Never)]
+        internal fixed ulong ReservedField[2];
         /// <summary>Reserved. Do not use.</summary>
         [EditorBrowsable(EditorBrowsableState.Never)]
         public unsafe Span<ulong> Reserved
         {
             get
             {
-                fixed(ulong* ptr = u.Reserved)
+                fixed (ulong* ptr = ReservedField)
                 {
                     return new Span<ulong>(ptr, 2);
                 }
             }
         }
+        #endregion
     }
 
     /// <remarks>

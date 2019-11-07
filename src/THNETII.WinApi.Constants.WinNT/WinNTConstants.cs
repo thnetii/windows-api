@@ -155,6 +155,7 @@ namespace THNETII.WinApi.Native.WinNT
         public const int PRODUCT_CORE_SINGLELANGUAGE = 0x00000064;
         public const int PRODUCT_CORE = 0x00000065;
         public const int PRODUCT_PROFESSIONAL_WMC = 0x00000067;
+        public const int PRODUCT_MOBILE_CORE = 0x00000068;
         public const int PRODUCT_EMBEDDED_INDUSTRY_EVAL = 0x00000069;
         public const int PRODUCT_EMBEDDED_INDUSTRY_E_EVAL = 0x0000006A;
         public const int PRODUCT_EMBEDDED_EVAL = 0x0000006B;
@@ -181,6 +182,8 @@ namespace THNETII.WinApi.Native.WinNT
         public const int PRODUCT_PROFESSIONAL_S_N = 0x00000080;
         public const int PRODUCT_ENTERPRISE_S_EVALUATION = 0x00000081;
         public const int PRODUCT_ENTERPRISE_S_N_EVALUATION = 0x00000082;
+        public const int PRODUCT_IOTUAPCOMMERCIAL = 0x00000083;
+        public const int PRODUCT_MOBILE_ENTERPRISE = 0x00000085;
         public const int PRODUCT_HOLOGRAPHIC = 0x00000087;
         public const int PRODUCT_PRO_SINGLE_LANGUAGE = 0x0000008A;
         public const int PRODUCT_PRO_CHINA = 0x0000008B;

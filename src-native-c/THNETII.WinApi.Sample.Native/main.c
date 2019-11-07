@@ -3,9 +3,9 @@
 
 int main(int argc, char* argv[])
 {
-    LPCWSTR instance;
+    OSVERSIONINFOW instance;
     const int size = sizeof(instance);
-    const int value = THREAD_GET_CONTEXT;
+    const int value = VER_PLATFORM_WIN32_NT;
 
     const void* ptr = GetEnvironmentVariableA;
 

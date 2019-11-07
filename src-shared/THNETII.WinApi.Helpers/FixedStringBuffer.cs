@@ -84,6 +84,35 @@ namespace THNETII.WinApi.Helpers
             }
         }
 
+        /// <seealso cref="Marshal.PtrToStringUni(IntPtr)"/>
+        public static unsafe string MarshalUnicodeString(char* chars)
+        {
+            IntPtr ptr = new IntPtr(chars);
+            return Marshal.PtrToStringUni(ptr);
+        }
+        /// <seealso cref="Marshal.PtrToStringUni(IntPtr)"/>
+        public static unsafe string MarshalUnicodeString(ref char firstChar)
+        {
+            fixed (char* chars = &firstChar)
+            {
+                return MarshalUnicodeString(chars);
+            }
+        }
+        /// <seealso cref="Marshal.PtrToStringUni(IntPtr, int)"/>
+        public static unsafe string MarshalUnicodeString(char* chars, int length)
+        {
+            IntPtr ptr = new IntPtr(chars);
+            return Marshal.PtrToStringUni(ptr, length);
+        }
+        /// <seealso cref="Marshal.PtrToStringUni(IntPtr, int)"/>
+        public static unsafe string MarshalUnicodeString(ref char firstChar, int length)
+        {
+            fixed (char* chars = &firstChar)
+            {
+                return MarshalUnicodeString(chars, length);
+            }
+        }
+
         /// <seealso cref="Marshal.StringToCoTaskMemAnsi(string)"/>
         /// <seealso cref="ToBytesZeroTerminated(string, byte*, int, Encoding)"/>
         [SuppressMessage("Usage", "PC001: API not supported on all platforms", Justification = "https://github.com/dotnet/platform-compat/issues/123")]
@@ -116,6 +145,23 @@ namespace THNETII.WinApi.Helpers
         {
             fixed (byte* bytes = &firstByte)
                 MarshalAnsiBytes(str, bytes, maxLength);
+        }
+
+        /// <seealso cref="Marshal.StringToCoTaskMemUni(string)"/>
+        [SuppressMessage("Usage", "PC001: API not supported on all platforms", Justification = "https://github.com/dotnet/platform-compat/issues/123")]
+        public static unsafe void MarshalUnicodeChars(string str, char* chars, int maxLength)
+        {
+            var str_span = str.AsSpan(0, Math.Min(str?.Length ?? 0, maxLength));
+            var dst_span = new Span<char>(chars, maxLength);
+            str_span.CopyTo(dst_span);
+            if (str_span.Length < maxLength)
+                dst_span[str_span.Length] = '\0';
+        }
+        /// <seealso cref="Marshal.StringToCoTaskMemUni(string)"/>
+        public static unsafe void MarshalUnicodeChars(string str, ref char firstChar, int maxLength)
+        {
+            fixed (char* chars = &firstChar)
+                MarshalUnicodeChars(str, chars, maxLength);
         }
     }
 }

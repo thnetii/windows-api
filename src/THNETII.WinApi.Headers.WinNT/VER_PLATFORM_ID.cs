@@ -1,0 +1,9 @@
+﻿namespace THNETII.WinApi.Native.WinNT
+{
+    public enum VER_PLATFORM_ID
+    {
+        VER_PLATFORM_WIN32s = WinNTConstants.VER_PLATFORM_WIN32s,
+        VER_PLATFORM_WIN32_WINDOWS = WinNTConstants.VER_PLATFORM_WIN32_WINDOWS,
+        VER_PLATFORM_WIN32_NT = WinNTConstants.VER_PLATFORM_WIN32_NT,
+    }
+}

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Runtime.InteropServices;
+using THNETII.WinApi.Native.MinWinBase;
 
 #if NETSTANDARD1_6
 using EntryPointNotFoundException = System.Exception;
@@ -71,6 +72,38 @@ namespace THNETII.WinApi.Native.SysInfoApi
         [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi)]
         public static extern void GetSystemInfo(
             out SYSTEM_INFO lpSystemInfo
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\sysinfoapi.h, line: 92
+        #region GetSystemTime function
+        /// <summary>
+        /// Retrieves the current system date and time. The system time is expressed in Coordinated Universal Time (UTC).
+        /// <para>To retrieve the current system date and time in local time, use the <see cref="GetLocalTime"/> function.</para>
+        /// </summary>
+        /// <param name="lpSystemTime">An out-reference to a <see cref="SYSTEMTIME"/> structure to receive the current system date and time.</param>
+        /// <remarks>
+        /// To set the current system date and time, use the <see cref="SetSystemTime"/> function.
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows 2000 Professional [desktop apps | UWP apps]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows 2000 Server [desktop apps | UWP apps]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/sysinfoapi/nf-sysinfoapi-getsystemtime">GetSystemTime function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="GetLocalTime"/>
+        /// <seealso cref="GetSystemTimeAdjustment"/>
+        /// <seealso cref="GetSystemTimeAsFileTime"/>
+        /// <seealso cref="SYSTEMTIME"/>
+        /// <seealso cref="SetSystemTime"/>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/SysInfo/system-time">System Time</seealso>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/SysInfo/time-functions">Time Functions</seealso>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi)]
+        public static extern void GetSystemTime(
+            out SYSTEMTIME lpSystemTime
             );
         #endregion
     }

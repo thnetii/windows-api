@@ -571,5 +571,97 @@ namespace THNETII.WinApi.Native.SysInfoApi
             );
 #endif // !NETSTANDARD1_6
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\sysinfoapi.h, line: 266
+        #region GetSystemWindowsDirectoryA function
+        /// <inheritdoc cref="GetSystemWindowsDirectory(LPTSTR, int)"/>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        public static extern int GetSystemWindowsDirectoryA(
+            LPSTR lpBuffer,
+            [In] int uSize
+            );
+
+        /// <inheritdoc cref="GetSystemWindowsDirectoryA(LPSTR, int)"/>
+        public static int GetSystemWindowsDirectoryA(
+            StringBuilder lpBuffer
+            ) => GetSystemWindowsDirectoryA(lpBuffer, lpBuffer?.Capacity ?? 0);
+
+        /// <inheritdoc cref="GetSystemWindowsDirectoryA(LPSTR, int)"/>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi, SetLastError = true)]
+        public static extern int GetSystemWindowsDirectoryA(
+            [Out] StringBuilder lpBuffer,
+            [In] int uSize
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\sysinfoapi.h, line: 275
+        #region GetSystemWindowsDirectoryW function
+        /// <inheritdoc cref="GetSystemWindowsDirectory(LPTSTR, int)"/>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        public static extern int GetSystemWindowsDirectoryW(
+            LPWSTR lpBuffer,
+            [In] int uSize
+            );
+
+        /// <inheritdoc cref="GetSystemWindowsDirectoryW(LPWSTR, int)"/>
+        public static int GetSystemWindowsDirectoryW(
+            StringBuilder lpBuffer
+            ) => GetSystemWindowsDirectoryW(lpBuffer, lpBuffer?.Capacity ?? 0);
+
+        /// <inheritdoc cref="GetSystemWindowsDirectoryW(LPWSTR, int)"/>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Unicode, SetLastError = true)]
+        public static extern int GetSystemWindowsDirectoryW(
+            [Out] StringBuilder lpBuffer,
+            [In] int uSize
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\sysinfoapi.h, line: 284
+        #region GetSystemWindowsDirectory function
+        /// <summary>
+        /// Retrieves the path of the shared Windows directory on a multi-user system.
+        /// <para>This function is provided primarily for compatibility. Applications should store code in the Program Files folder and persistent data in the Application Data folder in the user's profile. For more information, see <see cref="ShGetFolderPath"/>.</para>
+        /// </summary>
+        /// <param name="lpBuffer">A buffer to receive the path. This path does not end with a backslash unless the Windows directory is the root directory. For example, if the Windows directory is named <c>Windows</c> on drive <c>C</c>, the path of the Windows directory retrieved by this function is <c>C:\Windows</c>. If the system was installed in the root directory of drive <c>C</c>, the path retrieved is <c>C:</c>.</param>
+        /// <param name="uSize">The maximum size of the buffer specified by the <paramref name="lpBuffer"/> parameter, in characters.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is the length of the string copied to the buffer, in characters, not including the terminating null character.</para>
+        /// <para>If the length is greater than the size of the buffer, the return value is the size of the buffer required to hold the path.</para>
+        /// <para>If the function fails, the return value is zero. To get extended error information, call <see cref="GetLastError"/>.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>On a system that is running Terminal Services, each user has a unique Windows directory. The system Windows directory is shared by all users, so it is the directory where an application should store initialization and help files that apply to all users.</para>
+        /// <para>With Terminal Services, the <see cref="GetSystemWindowsDirectory"/> function retrieves the path of the system Windows directory, while the <see cref="GetWindowsDirectory"/> function retrieves the path of a Windows directory that is private for each user. On a single-user system, <see cref="GetSystemWindowsDirectory"/> is the same as <see cref="GetWindowsDirectory"/>.</para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows 2000 Professional [desktop apps | UWP apps]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows 2000 Server [desktop apps | UWP apps]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/sysinfoapi/nf-sysinfoapi-getsystemwindowsdirectoryw">GetSystemWindowsDirectory function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="GetWindowsDirectory"/>
+        /// <seealso cref="SHGetFolderLocation"/>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/SysInfo/system-information-functions">System Information Functions</seealso>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        public static extern int GetSystemWindowsDirectory(
+            LPTSTR lpBuffer,
+            [In] int uSize
+            );
+
+#if !NETSTANDARD1_6
+        /// <inheritdoc cref="GetSystemWindowsDirectory(LPTSTR, int)"/>
+        public static int GetSystemWindowsDirectory(
+            StringBuilder lpBuffer
+            ) => GetSystemWindowsDirectory(lpBuffer, lpBuffer?.Capacity ?? 0);
+
+        /// <inheritdoc cref="GetSystemWindowsDirectory(LPTSTR, int)"/>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto, SetLastError = true)]
+        public static extern int GetSystemWindowsDirectory(
+            [Out] StringBuilder lpBuffer,
+            [In] int uSize
+            );
+#endif // !NETSTANDARD1_6
+        #endregion
     }
 }

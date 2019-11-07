@@ -22,7 +22,7 @@ namespace THNETII.WinApi.Native.SysInfoApi.Test
                 var length = GetWindowsDirectoryA(buffer, MAX_PATH);
                 if (length == 0)
                     throw Marshal.GetExceptionForHR(Marshal.GetLastWin32Error());
-                var path = Marshal.PtrToStringAnsi(buffer.Pointer, length);
+                var path = AnsiStringPointer.MarshalToString(buffer, length);
                 Assert.NotNull(path);
             }
             finally
@@ -40,7 +40,7 @@ namespace THNETII.WinApi.Native.SysInfoApi.Test
                 var length = GetWindowsDirectoryW(buffer, MAX_PATH);
                 if (length == 0)
                     throw Marshal.GetExceptionForHR(Marshal.GetLastWin32Error());
-                var path = Marshal.PtrToStringUni(buffer.Pointer, length);
+                var path = UnicodeStringPointer.MarshalToString(buffer, length);
                 Assert.NotNull(path);
             }
             finally
@@ -58,7 +58,7 @@ namespace THNETII.WinApi.Native.SysInfoApi.Test
                 var length = GetWindowsDirectory(buffer, MAX_PATH);
                 if (length == 0)
                     throw Marshal.GetExceptionForHR(Marshal.GetLastWin32Error());
-                var path = Marshal.PtrToStringAuto(buffer.Pointer, length);
+                var path = AutoStringPointer.MarshalToString(buffer, length);
                 Assert.NotNull(path);
             }
             finally

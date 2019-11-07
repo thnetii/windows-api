@@ -1247,5 +1247,60 @@ namespace THNETII.WinApi.Native.SysInfoApi
             out PRODUCT_TYPE pdwReturnedProductType
             );
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\sysinfoapi.h, line: 474
+        #region VerSetConditionMask function
+        /// <summary>
+        /// Sets the bits of a 64-bit value to indicate the comparison operator to use for a specified operating system version attribute. This function is used to build the <em>dwlConditionMask</em> parameter of the <see cref="VerifyVersionInfo"/> function.
+        /// </summary>
+        /// <param name="ConditionMask">
+        /// <para>A value to be passed as the <em>dwlConditionMask</em> parameter of the <see cref="VerifyVersionInfo"/> function. The function stores the comparison information in the bits of this variable.</para>
+        /// <para>Before the first call to <see cref="VerSetConditionMask"/>, initialize this variable to zero. For subsequent calls, pass in the variable used in the previous call.</para>
+        /// </param>
+        /// <param name="TypeMask">A mask that indicates the member of the <see cref="OSVERSIONINFOEXW"/> structure whose comparison operator is being set. This value corresponds to one of the bits specified in the <em>dwTypeMask</em> parameter for the <see cref="VerifyVersionInfo"/> function.</param>
+        /// <param name="Condition">
+        /// <para>The operator to be used for the comparison. The <see cref="VerifyVersionInfo"/> function uses this operator to compare a specified attribute value to the corresponding value for the currently running system.</para>
+        /// <para>
+        /// For all values of <paramref name="TypeMask"/> other than <see cref="VER_TYPE_MASK.VER_SUITENAME"/>, this parameter can be one of the following values.
+        /// <list type="bullet">
+        /// <item><see cref="VER_CONDITION.VER_EQUAL"/></item>
+        /// <item><see cref="VER_CONDITION.VER_GREATER"/></item>
+        /// <item><see cref="VER_CONDITION.VER_GREATER_EQUAL"/></item>
+        /// <item><see cref="VER_CONDITION.VER_LESS"/></item>
+        /// <item><see cref="VER_CONDITION.VER_LESS_EQUAL"/></item>
+        /// </list>
+        /// </para>
+        /// <para>
+        /// If <paramref name="TypeMask"/> is <see cref="VER_TYPE_MASK.VER_SUITENAME"/>, this parameter can be one of the following values.
+        /// <list type="bullet">
+        /// <item><see cref="VER_CONDITION.VER_AND"/></item>
+        /// <item><see cref="VER_CONDITION.VER_OR"/></item>
+        /// </list>
+        /// </para>
+        /// </param>
+        /// <returns>The function returns the condition mask value.</returns>
+        /// <remarks>
+        /// Call this function once for each bit set in the <em>dwTypeMask</em> parameter of the <see cref="VerifyVersionInfo"/> function.
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows 2000 Professional [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows 2000 Server [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/winnt/nf-winnt-versetconditionmask">VerSetConditionMask function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="OSVERSIONINFOEXW"/>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/SysInfo/operating-system-version">Operating System Version</seealso>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/SysInfo/system-information-functions">System Information Functions</seealso>
+        /// <seealso cref="VerifyVersionInfo"/>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi)]
+        public static extern ulong VerSetConditionMask(
+            [In] ulong ConditionMask,
+            [In, MarshalAs(UnmanagedType.U4)] VER_TYPE_MASK TypeMask,
+            [In, MarshalAs(UnmanagedType.U1)] VER_CONDITION Condition
+            );
+        #endregion
     }
 }

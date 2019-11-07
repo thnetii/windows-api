@@ -476,5 +476,100 @@ namespace THNETII.WinApi.Native.SysInfoApi
             ); 
 #endif // !NETSTANDARD1_6
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\sysinfoapi.h, line: 240
+        #region GetWindowsDirectoryA function
+        /// <inheritdoc cref="GetWindowsDirectory(LPTSTR, int)"/>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        public static extern int GetWindowsDirectoryA(
+            LPSTR lpBuffer,
+            [In] int uSize
+            );
+
+        /// <inheritdoc cref="GetWindowsDirectoryA(LPSTR, int)"/>
+        public static int GetWindowsDirectoryA(
+            StringBuilder lpBuffer
+            ) => GetWindowsDirectoryA(lpBuffer, lpBuffer?.Capacity ?? 0);
+
+        /// <inheritdoc cref="GetWindowsDirectoryA(LPSTR, int)"/>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi, SetLastError = true)]
+        public static extern int GetWindowsDirectoryA(
+            [Out] StringBuilder lpBuffer,
+            [In] int uSize
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\sysinfoapi.h, line: 250
+        #region GetWindowsDirectoryW function
+        /// <inheritdoc cref="GetWindowsDirectory(LPTSTR, int)"/>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        public static extern int GetWindowsDirectoryW(
+            LPWSTR lpBuffer,
+            [In] int uSize
+            );
+
+        /// <inheritdoc cref="GetWindowsDirectoryW(LPWSTR, int)"/>
+        public static int GetWindowsDirectoryW(
+            StringBuilder lpBuffer
+            ) => GetWindowsDirectoryW(lpBuffer, lpBuffer?.Capacity ?? 0);
+
+        /// <inheritdoc cref="GetWindowsDirectoryW(LPWSTR, int)"/>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Unicode, SetLastError = true)]
+        public static extern int GetWindowsDirectoryW(
+            [Out] StringBuilder lpBuffer,
+            [In] int uSize
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\sysinfoapi.h, line: 260
+        #region GetWindowsDirectory function
+        /// <summary>
+        /// Retrieves the path of the Windows directory.
+        /// <para>This function is provided primarily for compatibility with legacy applications. New applications should store code in the Program Files folder and persistent data in the Application Data folder in the user's profile. For more information, see <see cref="ShGetFolderPath"/>.</para>
+        /// </summary>
+        /// <param name="lpBuffer">A buffer that receives the path. This path does not end with a backslash unless the Windows directory is the root directory. For example, if the Windows directory is named <c>Windows</c> on drive <c>C</c>, the path of the Windows directory retrieved by this function is <c>C:\Windows</c>. If the system was installed in the root directory of drive <c>C</c>, the path retrieved is <c>C:</c>.</param>
+        /// <param name="uSize">The maximum size of the buffer specified by the <paramref name="lpBuffer"/> parameter, in characters. This value should be set to <see cref="MAX_PATH"/>.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is the length of the string copied to the buffer, in characters, not including the terminating null character.</para>
+        /// <para>If the length is greater than the size of the buffer, the return value is the size of the buffer required to hold the path.</para>
+        /// <para>If the function fails, the return value is zero. To get extended error information, call <see cref="GetLastError"/>.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>The Windows directory is the directory where some legacy applications store initialization and help files. New applications should not store files in the Windows directory; instead, they should store system-wide data in the application's installation directory, and user-specific data in the user's profile.</para>
+        /// <para>If the user is running a shared version of the system, the Windows directory is guaranteed to be private for each user.</para>
+        /// <para>If an application creates other files that it wants to store on a per-user basis, it should place them in the directory specified by the <c>HOMEPATH</c> environment variable. This directory will be different for each user, if so specified by an administrator, through the User Manager administrative tool. <c>HOMEPATH</c> always specifies either the user's home directory, which is guaranteed to be private for each user, or a default directory (for example, <c>C:\USERS\DEFAULT</c>) where the user will have all access.</para>
+        /// <para><strong>Terminal Services:</strong> If the application is running in a Terminal Services environment, each user has a private Windows directory. There is also a shared Windows directory for the system. If the application is Terminal-Services-aware (has the <see cref="IMAGE_DLLCHARACTERISTICS_TERMINAL_SERVER_AWARE"/> flag set in the image header), this function returns the path of the system Windows directory, just as the <see cref="GetSystemWindowsDirectory"/> function does. Otherwise, it retrieves the path of the private Windows directory for the user.</para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows 2000 Professional [desktop apps | UWP apps]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows 2000 Server [desktop apps | UWP apps]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/sysinfoapi/nf-sysinfoapi-getwindowsdirectoryw">GetWindowsDirectory function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="GetCurrentDirectory"/>
+        /// <seealso cref="GetSystemDirectory"/>
+        /// <seealso cref="GetSystemWindowsDirectory"/>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/SysInfo/system-information-functions">System Information Functions</seealso>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        public static extern int GetWindowsDirectory(
+            LPTSTR lpBuffer,
+            [In] int uSize
+            );
+
+#if !NETSTANDARD1_6
+        /// <inheritdoc cref="GetWindowsDirectory(LPTSTR, int)"/>
+        public static int GetWindowsDirectory(
+            StringBuilder lpBuffer
+            ) => GetWindowsDirectory(lpBuffer, lpBuffer?.Capacity ?? 0);
+
+        /// <inheritdoc cref="GetWindowsDirectory(LPTSTR, int)"/>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto, SetLastError = true)]
+        public static extern int GetWindowsDirectory(
+            [Out] StringBuilder lpBuffer,
+            [In] int uSize
+            );
+#endif // !NETSTANDARD1_6
+        #endregion
     }
 }

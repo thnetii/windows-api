@@ -25,6 +25,8 @@ namespace THNETII.WinApi.Native.WinNT
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 1393
         public const int VER_SERVER_NT = unchecked((int)0x80000000);
         public const int VER_WORKSTATION_NT = 0x40000000;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 1395
         public const int VER_SUITE_SMALLBUSINESS = 0x00000001;
         public const int VER_SUITE_ENTERPRISE = 0x00000002;
         public const int VER_SUITE_BACKOFFICE = 0x00000004;

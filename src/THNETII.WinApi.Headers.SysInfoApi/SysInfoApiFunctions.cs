@@ -106,5 +106,35 @@ namespace THNETII.WinApi.Native.SysInfoApi
             out SYSTEMTIME lpSystemTime
             );
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\sysinfoapi.h, line: 108
+        #region GetSystemTimeAsFileTime function
+        /// <summary>
+        /// Retrieves the current system date and time. The information is in Coordinated Universal Time (UTC) format.
+        /// </summary>
+        /// <param name="lpSystemTimeAsFileTime">An out-reference to a <see cref="FILETIME"/> structure to receive the current system date and time in UTC format.</param>
+        /// <remarks>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows 2000 Professional [desktop apps | UWP apps]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows 2000 Server [desktop apps | UWP apps]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/sysinfoapi/nf-sysinfoapi-getsystemtimeasfiletime">GetSystemTimeAsFileTime function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="FILETIME"/>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/SysInfo/file-times">File Times</seealso>
+        /// <seealso cref="GetSystemTime"/>
+        /// <seealso cref="SYSTEMTIME"/>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/SysInfo/system-time">System Time</seealso>
+        /// <seealso cref="SystemTimeToFileTime"/>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/SysInfo/time-functions">Time Functions</seealso>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi)]
+        public static extern void GetSystemTimeAsFileTime(
+            out FILETIME lpSystemTimeAsFileTime
+            );
+        #endregion
     }
 }

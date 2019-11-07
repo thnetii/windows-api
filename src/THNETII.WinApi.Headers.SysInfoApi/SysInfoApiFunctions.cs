@@ -1122,12 +1122,12 @@ namespace THNETII.WinApi.Native.SysInfoApi
         /// <seealso cref="SYSTEM_LOGICAL_PROCESSOR_INFORMATION_EX"/>
         public static unsafe bool GetLogicalProcessorInformationEx(
             LOGICAL_PROCESSOR_RELATIONSHIP RelationshipType,
-            Span<SYSTEM_LOGICAL_PROCESSOR_INFORMATION_EX> Buffer,
+            Span<byte> Buffer,
             out int ReturnedLength
             )
         {
-            ReturnedLength = Buffer.Length * SizeOf<SYSTEM_LOGICAL_PROCESSOR_INFORMATION_EX>.Bytes;
-            fixed (SYSTEM_LOGICAL_PROCESSOR_INFORMATION_EX* pBuffer = Buffer)
+            ReturnedLength = Buffer.Length;
+            fixed (byte* pBuffer = Buffer)
                 return GetLogicalProcessorInformationExExtern(
                     RelationshipType, pBuffer, ref ReturnedLength);
         }
@@ -1136,7 +1136,7 @@ namespace THNETII.WinApi.Native.SysInfoApi
         [return: MarshalAs(UnmanagedType.Bool)]
         private static extern unsafe bool GetLogicalProcessorInformationExExtern(
             [In] LOGICAL_PROCESSOR_RELATIONSHIP RelationshipType,
-            SYSTEM_LOGICAL_PROCESSOR_INFORMATION_EX* Buffer,
+            byte* Buffer,
             ref int ReturnedLength
             );
         #endregion

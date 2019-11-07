@@ -345,5 +345,43 @@ namespace THNETII.WinApi.Native.SysInfoApi
             out bool lpTimeAdjustmentDisabled
             );
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\sysinfoapi.h, line: 193
+        #region GetSystemTimeAdjustmentPrecise function
+        /// <summary>
+        /// Determines whether the system is applying periodic, programmed time adjustments to its time-of-day clock, and obtains the value and period of any such adjustments.
+        /// </summary>
+        /// <param name="lpTimeAdjustment">Returns the adjusted clock update frequency.</param>
+        /// <param name="lpTimeIncrement">Returns the clock update frequency.</param>
+        /// <param name="lpTimeAdjustmentDisabled">
+        /// <para>Returns an indicator which specifies whether the time adjustment is enabled.</para>
+        /// <para>A value of <see langword="true"/> indicates that periodic adjustment is disabled. In this case, the system may attempt to keep the time-of-day clock in sync using its own internal mechanisms. This may cause time-of-day to periodically jump to the "correct time."</para>
+        /// <para>A value of <see langword="false"/> indicates that periodic, programmed time adjustment is being used to serialize time-of-day, and the system will not interfere or attempt to synchronize time-of-day on its own.</para>
+        /// </param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see langword="true"/>.</para>
+        /// <para>If the function fails, the return value is <see langword="false"/>. To get extended error information, call <see cref="GetLastError"/>.</para>
+        /// </returns>
+        /// <remarks>
+        /// This function is used in algorithms that synchronize the time-of-day with another time source, using a programmed clock adjustment. To do this, the system computes the adjusted clock update frequency, and then this function allows the caller to obtain that value.
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows 10 [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2016 [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/sysinfoapi/nf-sysinfoapi-getsystemtimeadjustmentprecise">GetSystemTimeAdjustmentPrecise function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        [DllImport(KernelBase, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool GetSystemTimeAdjustmentPrecise(
+            out long lpTimeAdjustment,
+            out long lpTimeIncrement,
+            [MarshalAs(UnmanagedType.Bool)]
+            out bool lpTimeAdjustmentDisabled
+            );
+        #endregion
     }
 }

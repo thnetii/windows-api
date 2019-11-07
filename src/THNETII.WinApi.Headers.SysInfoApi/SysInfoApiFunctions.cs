@@ -301,5 +301,49 @@ namespace THNETII.WinApi.Native.SysInfoApi
         public static extern ulong GetTickCount64(
             );
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\sysinfoapi.h, line: 182
+        #region GetSystemTimeAdjustment function
+        /// <summary>
+        /// Determines whether the system is applying periodic time adjustments to its time-of-day clock, and obtains the value and period of any such adjustments.
+        /// </summary>
+        /// <param name="lpTimeAdjustment">A variable that the function sets to the number of <paramref name="lpTimeIncrement"/> 100-nanosecond units added to the time-of-day clock for every period of time which actually passes as counted by the system. This value only has meaning if <paramref name="lpTimeAdjustmentDisabled"/> is <see langword="false"/>.</param>
+        /// <param name="lpTimeIncrement">A variable that the function sets to the interval in 100-nanosecond units at which the system will add <paramref name="lpTimeAdjustment"/> to the time-of-day clock. This value only has meaning if <paramref name="lpTimeAdjustmentDisabled"/> is <see langword="false"/>.</param>
+        /// <param name="lpTimeAdjustmentDisabled">
+        /// <para>A variable that the function sets to indicate whether periodic time adjustment is in effect.</para>
+        /// <para>A value of <see langword="true"/> indicates that periodic time adjustment is disabled, and the system time-of-day clock advances at the normal rate. In this mode, the system may adjust the time of day using its own internal time synchronization mechanisms. These internal time synchronization mechanisms may cause the time-of-day clock to change during the normal course of the system operation, which can include noticeable jumps in time as deemed necessary by the system.</para>
+        /// <para>A value of <see langword="false"/> indicates that periodic time adjustment is being used to adjust the time-of-day clock. For each <paramref name="lpTimeIncrement"/> period of time that actually passes, <paramref name="lpTimeAdjustment"/> will be added to the time of day. If the <paramref name="lpTimeAdjustment"/> value is smaller than <paramref name="lpTimeIncrement"/>, the system time-of-day clock will advance at a rate slower than normal. If the <paramref name="lpTimeAdjustment"/> value is larger than <paramref name="lpTimeIncrement"/>, the time-of-day clock will advance at a rate faster than normal. If <paramref name="lpTimeAdjustment"/> equals <paramref name="lpTimeIncrement"/>, the time-of-day clock will advance at its normal speed. The <paramref name="lpTimeAdjustment"/> value can be set by calling <see cref="SetSystemTimeAdjustment"/>. The <paramref name="lpTimeIncrement"/> value is fixed by the system upon start, and does not change during system operation. In this mode, the system will not interfere with the time adjustment scheme, and will not attempt to synchronize time of day on its own via other techniques.</para>
+        /// </param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see langword="true"/>.</para>
+        /// <para>If the function fails, the return value is <see langword="false"/>. To get extended error information, call <see cref="GetLastError"/>.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>The <see cref="GetSystemTimeAdjustment"/> and <see cref="SetSystemTimeAdjustment"/> functions can be used to support algorithms that want to synchronize the time-of-day clock, reported by <see cref="GetSystemTime"/> and <see cref="GetLocalTime"/>, with another time source by using a periodic time adjustment.</para>
+        /// <para>The <see cref="GetSystemTimeAdjustment"/> function lets a caller determine whether periodic time adjustment is enabled, and if it is, obtain the amount of each adjustment and the time between adjustments. The <see cref="SetSystemTimeAdjustment"/> function lets a caller enable or disable periodic time adjustment, and set the value of the adjusting increment.</para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows 2000 Professional [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows 2000 Server [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/sysinfoapi/nf-sysinfoapi-getsystemtimeadjustment">GetSystemTimeAdjustment function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="GetLocalTime"/>
+        /// <seealso cref="GetSystemTime"/>
+        /// <seealso cref="SetSystemTimeAdjustment"/>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/SysInfo/system-time">System Time</seealso>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/SysInfo/time-functions">Time Functions</seealso>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool GetSystemTimeAdjustment(
+            out int lpTimeAdjustment,
+            out int lpTimeIncrement,
+            [MarshalAs(UnmanagedType.Bool)]
+            out bool lpTimeAdjustmentDisabled
+            );
+        #endregion
     }
 }

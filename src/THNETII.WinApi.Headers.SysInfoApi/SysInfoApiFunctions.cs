@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32.SafeHandles;
+using System;
 using System.Runtime.InteropServices;
 using System.Text;
 using THNETII.InteropServices.Memory;
@@ -1362,7 +1363,7 @@ namespace THNETII.WinApi.Native.SysInfoApi
         /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2008, Windows Server 2003 with SP1 [desktop apps | UWP apps]</description></item>
         /// </list>
         /// </para>
-        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/winnt/nf-winnt-enumsystemfirmwaretables">EnumSystemFirmwareTables function</a></para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/sysinfoapi/nf-sysinfoapi-enumsystemfirmwaretables">EnumSystemFirmwareTables function</a></para>
         /// </remarks>
         /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
         /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
@@ -1439,7 +1440,7 @@ namespace THNETII.WinApi.Native.SysInfoApi
         /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2008, Windows Server 2003 with SP1 [desktop apps | UWP apps]</description></item>
         /// </list>
         /// </para>
-        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/winnt/nf-winnt-getsystemfirmwaretable">GetSystemFirmwareTable function</a></para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/sysinfoapi/nf-sysinfoapi-getsystemfirmwaretable">GetSystemFirmwareTable function</a></para>
         /// </remarks>
         /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
         /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
@@ -1532,7 +1533,7 @@ namespace THNETII.WinApi.Native.SysInfoApi
         /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2008 [desktop apps only]</description></item>
         /// </list>
         /// </para>
-        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/winnt/nf-winnt-getphysicallyinstalledsystemmemory">GetPhysicallyInstalledSystemMemory function</a></para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/sysinfoapi/nf-sysinfoapi-getphysicallyinstalledsystemmemory">GetPhysicallyInstalledSystemMemory function</a></para>
         /// </remarks>
         /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
         /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
@@ -1645,7 +1646,7 @@ namespace THNETII.WinApi.Native.SysInfoApi
         /// <item><term><strong>Minimum supported server:</strong></term><description>Windows 2000 Server [desktop apps only]</description></item>
         /// </list>
         /// </para>
-        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/winnt/nf-winnt-setsystemtimeadjustment">SetSystemTimeAdjustment function</a></para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/sysinfoapi/nf-sysinfoapi-setsystemtimeadjustment">SetSystemTimeAdjustment function</a></para>
         /// </remarks>
         /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
         /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
@@ -1687,7 +1688,7 @@ namespace THNETII.WinApi.Native.SysInfoApi
         /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2016 [desktop apps only]</description></item>
         /// </list>
         /// </para>
-        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/winnt/nf-winnt-setsystemtimeadjustmentprecise">SetSystemTimeAdjustmentPrecise function</a></para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/sysinfoapi/nf-sysinfoapi-setsystemtimeadjustmentprecise">SetSystemTimeAdjustmentPrecise function</a></para>
         /// </remarks>
         /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
         /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
@@ -1698,6 +1699,35 @@ namespace THNETII.WinApi.Native.SysInfoApi
             [In] ulong dwTimeAdjustment,
             [In, MarshalAs(UnmanagedType.Bool)]
             bool bTimeAdjustmentDisabled
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\sysinfoapi.h, line: 587
+        #region InstallELAMCertificateInfo function
+        /// <summary>
+        /// Installs the certificate information specified in the resource file, which is linked into the ELAM driver at build time. This API is used by anti-malware vendors to launch the anti-malware software's user-mode service as protected. For more information, see <a href="https://docs.microsoft.com/windows/desktop/Services/protecting-anti-malware-services-">Protecting Anti-Malware Services</a>.
+        /// </summary>
+        /// <param name="ELAMFile">A handle to an ELAM driver file which contains the resource file with the certificate information. The handle to the ELAM driver file must be opened for read access only and must not be shared for write access.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see langword="true"/>.</para>
+        /// <para>If the function fails, the return value is <see langword="false"/>. To get extended error information, call <see cref="GetLastError"/>.</para>
+        /// </returns>
+        /// <remarks>
+        /// Anti-malware vendors can use this API to register their anti-malware user-mode service that needs to be launched as protected. Note that the file handle supplied in the <paramref name="ELAMFile"/> parameter must be opened for read access only and must not be shareable for write access.
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows 8.1 [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2012 R2 [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/sysinfoapi/nf-sysinfoapi-installelamcertificateinfo">InstallELAMCertificateInfo function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool InstallELAMCertificateInfo(
+            SafeFileHandle ELAMFile
             );
         #endregion
     }

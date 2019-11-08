@@ -1730,5 +1730,50 @@ namespace THNETII.WinApi.Native.SysInfoApi
             SafeFileHandle ELAMFile
             );
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\sysinfoapi.h, line: 600
+        #region GetProcessorSystemCycleTime function
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        private static extern unsafe bool GetProcessorSystemCycleTime(
+            [In] ushort Group,
+            SYSTEM_PROCESSOR_CYCLE_TIME_INFORMATION* Buffer,
+            ref int ReturnedLength
+            );
+
+        /// <summary>
+        /// Retrieves the cycle time each processor in the specified processor group spent executing deferred procedure calls (DPCs) and interrupt service routines (ISRs) since the processor became active.
+        /// </summary>
+        /// <param name="Group">The number of the processor group for which to retrieve the cycle time.</param>
+        /// <param name="Buffer">A buffer to receive a <see cref="SYSTEM_PROCESSOR_CYCLE_TIME_INFORMATION"/> structure for each processor in the group. On output, the <see cref="long"/> <see cref="SYSTEM_PROCESSOR_CYCLE_TIME_INFORMATION.CycleTime"/> member of this structure is set to the cycle time for one processor.</param>
+        /// <param name="ReturnedLength">When the function returns, this parameter contains the number of bytes written to Buffer. If the buffer is too small for the data, the function fails with <see cref="ERROR_INSUFFICIENT_BUFFER"/> and sets the <paramref name="ReturnedLength"/> parameter to the required buffer size.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see langword="true"/>.</para>
+        /// <para>If the function fails, the return value is <see langword="false"/>. To get extended error information, call <see cref="GetLastError"/>.</para>
+        /// <para>If the error value is <see cref="ERROR_INSUFFICIENT_BUFFER"/>, the <paramref name="ReturnedLength"/> parameter contains the required buffer size.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows 7 [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2008 R2 [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/sysinfoapi/nf-sysinfoapi-getprocessorsystemcycletime">GetProcessorSystemCycleTime function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/ProcThread/processor-groups">Processor Groups</seealso>
+        public static unsafe bool GetProcessorSystemCycleTime(
+            ushort Group,
+            Span<SYSTEM_PROCESSOR_CYCLE_TIME_INFORMATION> Buffer,
+            out int ReturnedLength
+            )
+        {
+            ReturnedLength = Buffer.Length * SizeOf<SYSTEM_PROCESSOR_CYCLE_TIME_INFORMATION>.Bytes;
+            fixed (SYSTEM_PROCESSOR_CYCLE_TIME_INFORMATION* pBuffer = Buffer)
+                return GetProcessorSystemCycleTime(Group, pBuffer, ref ReturnedLength);
+        }
+        #endregion
     }
 }

@@ -1545,5 +1545,67 @@ namespace THNETII.WinApi.Native.SysInfoApi
             out ulong TotalMemoryInKilobytes
             );
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\sysinfoapi.h, line: 553
+        #region SetComputerNameEx2W function
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi,
+            CharSet = CharSet.Unicode, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool SetComputerNameEx2W(
+            [In] COMPUTER_NAME_FORMAT NameType,
+            [In, MarshalAs(UnmanagedType.I4)] SCEX2_FLAGS Flags,
+            [In] string lpBuffer
+            );
+
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi,
+            CharSet = CharSet.Unicode, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        private static extern unsafe bool SetComputerNameEx2W(
+            [In] COMPUTER_NAME_FORMAT NameType,
+            [In, MarshalAs(UnmanagedType.I4)] SCEX2_FLAGS Flags,
+            char* lpBuffer
+            );
+
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        public static unsafe bool SetComputerNameEx2W(
+            COMPUTER_NAME_FORMAT NameType,
+            SCEX2_FLAGS Flags,
+            ReadOnlySpan<char> Buffer
+            )
+        {
+            fixed (char* lpBuffer = Buffer)
+                return SetComputerNameEx2W(NameType, Flags, lpBuffer);
+        }
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\sysinfoapi.h, line: 563
+        #region SetComputerNameEx2 function
+#if !NETSTANDARD1_6
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi,
+            CharSet = CharSet.Auto, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool SetComputerNameEx2(
+            [In] COMPUTER_NAME_FORMAT NameType,
+            [In, MarshalAs(UnmanagedType.I4)] SCEX2_FLAGS Flags,
+            [In] string lpBuffer
+            ); 
+#endif // !NETSTANDARD1_6
+
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi,
+            CharSet = CharSet.Unicode, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool SetComputerNameEx2(
+            [In] COMPUTER_NAME_FORMAT NameType,
+            [In, MarshalAs(UnmanagedType.I4)] SCEX2_FLAGS Flags,
+            LPCTSTR lpBuffer
+            );
+        #endregion
     }
 }

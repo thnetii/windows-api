@@ -1457,5 +1457,54 @@ namespace THNETII.WinApi.Native.SysInfoApi
                     FirmwareTableID, pFirmwareTableBuffer, FirmwareTableBuffer.Length);
         }
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\sysinfoapi.h, line: 531
+        #region DnsHostnameToComputerNameExW function
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi,
+            EntryPoint = nameof(DnsHostnameToComputerNameExW),
+            CharSet = CharSet.Unicode, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        private static extern bool DnsHostnameToComputerNameExWExtern(
+            [In] string Hostname,
+            [Out] StringBuilder ComputerName,
+            ref int nSize
+            );
+
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi,
+            EntryPoint = nameof(DnsHostnameToComputerNameExW),
+            SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        private static extern unsafe bool DnsHostnameToComputerNameExWExtern(
+            char* Hostname,
+            char* ComputerName,
+            ref int nSize
+            );
+
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        public static bool DnsHostnameToComputerNameExW(
+            string Hostname,
+            StringBuilder ComputerName,
+            out int nSize
+            )
+        {
+            nSize = ComputerName?.Capacity ?? 0;
+            return DnsHostnameToComputerNameExWExtern(Hostname, ComputerName,
+                ref nSize);
+        }
+
+        /// <inheritdoc cref="DnsHostnameToComputerNameExW(string, StringBuilder, out int)"/>
+        public static unsafe bool DnsHostnameToComputerNameExW(
+            ReadOnlySpan<char> Hostname,
+            Span<char> ComputerName,
+            out int nSize
+            )
+        {
+            nSize = ComputerName.Length;
+            fixed (char* pHostname = Hostname)
+            fixed (char* pComputerName = ComputerName)
+                return DnsHostnameToComputerNameExWExtern(pHostname,
+                    pComputerName, ref nSize);
+        }
+        #endregion
     }
 }

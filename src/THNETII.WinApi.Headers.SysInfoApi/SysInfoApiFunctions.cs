@@ -1607,5 +1607,61 @@ namespace THNETII.WinApi.Native.SysInfoApi
             LPCTSTR lpBuffer
             );
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\sysinfoapi.h, line: 567
+        #region SetSystemTimeAdjustment function
+        /// <summary>
+        /// Enables or disables periodic time adjustments to the system's time-of-day clock. When enabled, such time adjustments can be used to synchronize the time of day with some other source of time information.
+        /// </summary>
+        /// <param name="dwTimeAdjustment">
+        /// <para>
+        /// This value represents the number of 100-nanosecond units added to the system time-of-day for each <em>lpTimeIncrement</em> period of time that actually passes. Call <see cref="GetSystemTimeAdjustment"/> to obtain the <em>lpTimeIncrement</em> value. See remarks.
+        /// </para>
+        /// <note>Currently, Windows Vista and Windows 7 machines will lose any time adjustments set less than 16. </note>
+        /// </param>
+        /// <param name="bTimeAdjustmentDisabled">
+        /// <para>The time adjustment mode that the system is to use. Periodic system time adjustments can be disabled or enabled.</para>
+        /// <para>A value of <see langword="true"/> specifies that periodic time adjustment is to be disabled. When disabled, the value of <paramref name="dwTimeAdjustment"/> is ignored, and the system may adjust the time of day using its own internal time synchronization mechanisms. These internal time synchronization mechanisms may cause the time-of-day clock to change during the normal course of the system operation, which can include noticeable jumps in time as deemed necessary by the system.</para>
+        /// <para>A value of <see langword="false"/> specifies that periodic time adjustment is to be enabled, and will be used to adjust the time-of-day clock. The system will not interfere with the time adjustment scheme, and will not attempt to synchronize time of day on its own.</para>
+        /// </param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see langword="true"/>.</para>
+        /// <para>If the function fails, the return value is <see langword="false"/>. To get extended error information, call <see cref="GetLastError"/>. One way the function can fail is if the caller does not possess the <see cref="SE_SYSTEMTIME_NAME"/> privilege.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>The <see cref="GetSystemTimeAdjustment"/> and <see cref="SetSystemTimeAdjustment"/> functions support algorithms that synchronize the time-of-day clock, reported via <see cref="GetSystemTime"/> and <see cref="GetLocalTime"/>, with another time source using a periodic time adjustment.</para>
+        /// <para>
+        /// The <see cref="SetSystemTimeAdjustment"/> function supports two modes of time synchronization:
+        /// <list type="table">
+        /// <listheader><term>Mode</term><description>Behavior</description></listheader>
+        /// <item><term>Time-Adjustment Disabled </term><description> For this mode, <paramref name="bTimeAdjustmentDisabled"/> is set to <see langword="true"/>. In this mode, the value of <paramref name="dwTimeAdjustment"/> is ignored, and the system may adjust the time of day using its own internal time synchronization mechanisms. These internal time synchronization mechanisms may cause the time-of-day clock to change during the normal course of the system operation, which can include noticeable jumps in time as deemed necessary by the system. </description></item>
+        /// <item><term> Time-Adjustment Enabled </term><description><para> For this mode, <paramref name="bTimeAdjustmentDisabled"/> is set to <see langword="false"/>. For each <em>lpTimeIncrement</em> period of time that actually passes, <paramref name="dwTimeAdjustment"/> will be added to the time of day. The period of time represented by <em>lpTimeIncrement</em> can be determined by calling <see cref="GetSystemTimeAdjustment"/>. The <em>lpTimeIncrement</em> value is fixed by the system upon start and does not change during system operation and is completely independent of the system’s internal clock interrupt resolution at any given time. Given this, the <em>lpTimeIncrement</em> value simply expresses a period of time for which <paramref name="dwTimeAdjustment"/> will be applied to the system’s time-of-day clock.</para><para>If the <paramref name="dwTimeAdjustment"/> value is smaller than <em>lpTimeIncrement</em>, the time-of-day clock will advance at a rate slower than normal. If the <paramref name="dwTimeAdjustment"/> value is larger than <em>lpTimeIncrement</em>, the time-of-day clock will advance at a rate faster than normal. The degree to which the time-of-day-clock will run faster or slower depends on how far the <paramref name="dwTimeAdjustment"/> value is above or below the <em>lpTimeIncrement</em> value. If <paramref name="dwTimeAdjustment"/> equals <em>lpTimeIncrement</em>, the time-of-day clock will advance at normal speed.</para></description></item>
+        /// </list>
+        /// </para>
+        /// <para>An application must have system-time privilege (the <see cref="SE_SYSTEMTIME_NAME"/> privilege) for this function to succeed. The <see cref="SE_SYSTEMTIME_NAME"/> privilege is disabled by default. Use the <see cref="AdjustTokenPrivileges"/> function to enable the privilege before calling <see cref="SetSystemTimeAdjustment"/>, and then to disable the privilege after the <see cref="SetSystemTimeAdjustment"/> call. For more information, see <a href="https://docs.microsoft.com/windows/desktop/SecBP/running-with-special-privileges">Running with Special Privileges</a>.</para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows 2000 Professional [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows 2000 Server [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/winnt/nf-winnt-setsystemtimeadjustment">SetSystemTimeAdjustment function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="AdjustTokenPrivileges"/>
+        /// <seealso cref="GetLocalTime"/>
+        /// <seealso cref="GetSystemTime"/>
+        /// <seealso cref="GetSystemTimeAdjustment"/>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/SysInfo/system-time">System Time</seealso>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/SysInfo/time-functions">Time Functions</seealso>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool SetSystemTimeAdjustment(
+            [In] int dwTimeAdjustment,
+            [In, MarshalAs(UnmanagedType.Bool)]
+            bool bTimeAdjustmentDisabled
+            );
+        #endregion
     }
 }

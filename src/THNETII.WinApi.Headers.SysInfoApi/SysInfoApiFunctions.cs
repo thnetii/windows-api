@@ -1663,5 +1663,42 @@ namespace THNETII.WinApi.Native.SysInfoApi
             bool bTimeAdjustmentDisabled
             );
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\sysinfoapi.h, line: 577
+        #region SetSystemTimeAdjustmentPrecise function
+        /// <summary>
+        /// Enables or disables periodic time adjustments to the system's time-of-day clock. When enabled, such time adjustments can be used to synchronize the time of day with some other source of time information.
+        /// </summary>
+        /// <param name="dwTimeAdjustment">Supplies the adjusted clock update frequency.</param>
+        /// <param name="bTimeAdjustmentDisabled">
+        /// <para>Supplies a flag which specifies the time adjustment mode that the system is to use.</para>
+        /// <para>A value of <see langword="true"/> indicates that the system should synchronize time-of-day using its own internal mechanisms. In this case, the value of <paramref name="dwTimeAdjustment"/> is ignored.</para>
+        /// <para>A value of <see langword="false"/> indicates that the application is in control, and that the specified value of <paramref name="dwTimeAdjustment"/> is to be added to the time-of-day clock at each clock update interrupt.</para>
+        /// </param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see langword="true"/>.</para>
+        /// <para>If the function fails, the return value is <see langword="false"/>. To get extended error information, call <see cref="GetLastError"/>. One way the function can fail is if the caller does not possess the <see cref="SE_SYSTEMTIME_NAME"/> privilege.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>To use this function, the caller must have system-time privilege (<see cref="SE_SYSTEMTIME_NAME"/>). This privilege is disabled by default. Use the <see cref="AdjustTokenPrivileges"/> function to enable the privilege before calling this function, then disable the privilege after the function call.</para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows 10 [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2016 [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/winnt/nf-winnt-setsystemtimeadjustmentprecise">SetSystemTimeAdjustmentPrecise function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="GetSystemTimeAdjustmentPrecise"/>
+        [DllImport(KernelBase, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool SetSystemTimeAdjustmentPrecise(
+            [In] ulong dwTimeAdjustment,
+            [In, MarshalAs(UnmanagedType.Bool)]
+            bool bTimeAdjustmentDisabled
+            );
+        #endregion
     }
 }

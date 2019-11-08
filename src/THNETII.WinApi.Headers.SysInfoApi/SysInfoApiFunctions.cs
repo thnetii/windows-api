@@ -1302,5 +1302,15 @@ namespace THNETII.WinApi.Native.SysInfoApi
             [In, MarshalAs(UnmanagedType.U1)] VER_CONDITION Condition
             );
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\sysinfoapi.h, line: 488
+        #region GetOsSafeBootMode function
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        [DllImport(KernelBase, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool GetOsSafeBootMode(
+            out int Flags
+            );
+        #endregion
     }
 }

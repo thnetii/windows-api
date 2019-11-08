@@ -1312,5 +1312,150 @@ namespace THNETII.WinApi.Native.SysInfoApi
             out int Flags
             );
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\sysinfoapi.h, line: 504
+        #region EnumSystemFirmwareTables function
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        private static extern unsafe int EnumSystemFirmwareTables(
+            [In] int FirmwareTableProviderSignature,
+            byte* pFirmwareTableEnumBuffer,
+            [In] int BufferSize
+            );
+
+        /// <summary>
+        /// Enumerates all system firmware tables of the specified type.
+        /// </summary>
+        /// <param name="FirmwareTableProviderSignature">
+        /// The identifier of the firmware table provider to which the query is to be directed. This parameter can be one of the following values.
+        /// <list type="table">
+        /// <listheader><term>Value</term><description>Meaning</description></listheader>
+        /// <item><term><c>'ACPI'</c></term><description>The ACPI firmware table provider.</description></item>
+        /// <item><term><c>'FIRM'</c></term><description>The raw firmware table provider. Not supported for UEFI systems; use <c>'RSMB'</c> instead.</description></item>
+        /// <item><term><c>'RSMB'</c></term><description>The raw SMBIOS firmware table provider.</description></item>
+        /// </list>
+        /// </param>
+        /// <param name="FirmwareTableEnumBuffer">
+        /// <para>A buffer that receives the list of firmware tables. If this parameter has a length of zero, the return value is the required buffer size.</para>
+        /// <para>For more information on the contents of this buffer, see the Remarks section.</para>
+        /// </param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is the number of bytes written to the buffer. This value will always be less than or equal to the length of <paramref name="FirmwareTableEnumBuffer"/>.</para>
+        /// <para>If the function fails because the buffer is not large enough, the return value is the required buffer size, in bytes. This value is always greater than the length of <paramref name="FirmwareTableEnumBuffer"/>.</para>
+        /// <para>If the function fails for any other reason, the return value is zero. To get extended error information, call <see cref="GetLastError"/>.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>Starting with Windows 10, version 1803, Universal Windows apps can access the System Management BIOS (SMBIOS) information by declaring the <strong>smbios</strong> restricted capability in the app manifest. See <a href="https://docs.microsoft.com/windows/desktop/SysInfo/access-smbios-information-from-a-universal-windows-app">Access SMBIOS information from a Universal Windows App</a> for details. Only raw SMBIOS (RSMB) firmware tables can be accessed from a Universal Windows app.</para>
+        /// <para>
+        /// As of Windows Server 2003 with Service Pack 1 (SP1), applications cannot access the <c>\Device\PhysicalMemory</c> object. Access to this object is limited to kernel-mode drivers. This change affects applications read System Management BIOS (SMBIOS) or other BIOS data stored in the lowest 1MB of physical memory. Applications have the following alternatives to read data from low physical memory:
+        /// <list type="bullet">
+        /// <item>Retrieve the SMBIOS properties using WMI. Many individual properties are contained in the <a href="https://docs.microsoft.com/windows/desktop/CIMWin32Prov/win32-provider">Win32 classes</a>. You can also retrieve the raw SMBIOS data in a single buffer using the <see cref="MSSMBios_RawSMBiosTables"/> class.</item>
+        /// <item>Use the <see cref="GetSystemFirmwareTable"/> function to read the raw SMBIOS firmware table.</item>
+        /// </list>
+        /// There is no way for applications to write to low physical memory.
+        /// </para>
+        /// <para>The raw SMBIOS table provider (<c>'RSMB'</c>) currently returns a single table identifier, <c>0x0000</c>. This corresponds to the raw SMBIOS firmware table.</para>
+        /// <para>The raw firmware table provider (<c>'FIRM'</c>) returns a list of <see cref="int"/> table identifiers. Each identifier corresponds to the beginning of a physical address range. Currently, this provider returns <c>'C0000'</c> and <c>'E0000'</c>. These values correspond to physical memory from <c>0xC0000</c> to <c>0xDFFFF</c> and <c>0xE0000</c> to <c>0xFFFFF</c>, respectively.</para>
+        /// <para>The ACPI table provider (<c>'ACPI'</c>) returns a list of <see cref="int"/> table identifiers. Each identifier returned corresponds to Signature field of the <strong>DESCRIPTION_HEADER</strong> structure for an ACPI table currently in the ACPI namespace of the system.</para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows Vista, Windows XP Professional x64 Edition [desktop apps | UWP apps]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2008, Windows Server 2003 with SP1 [desktop apps | UWP apps]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/winnt/nf-winnt-enumsystemfirmwaretables">EnumSystemFirmwareTables function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/SysInfo/access-smbios-information-from-a-universal-windows-app">Access SMBIOS information from a Universal Windows App</seealso>
+        /// <seealso cref="GetSystemFirmwareTable"/>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/SysInfo/system-information-functions">System Information Functions</seealso>
+        public static unsafe int EnumSystemFirmwareTables(
+            int FirmwareTableProviderSignature,
+            Span<byte> FirmwareTableEnumBuffer
+            )
+        {
+            fixed (byte* pFirmwareTableEnumBuffer = FirmwareTableEnumBuffer)
+                return EnumSystemFirmwareTables(FirmwareTableProviderSignature,
+                    pFirmwareTableEnumBuffer, FirmwareTableEnumBuffer.Length);
+        }
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\sysinfoapi.h, line: 514
+        #region GetSystemFirmwareTable function
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        private static extern unsafe int GetSystemFirmwareTable(
+            [In] int FirmwareTableProviderSignature,
+            [In] int FirmwareTableID,
+            byte* pFirmwareTableBuffer,
+            [In] int BufferSize
+            );
+
+        /// <summary>
+        /// Retrieves the specified firmware table from the firmware table provider.
+        /// </summary>
+        /// <param name="FirmwareTableProviderSignature">
+        /// The identifier of the firmware table provider to which the query is to be directed. This parameter can be one of the following values.
+        /// <list type="table">
+        /// <listheader><term>Value</term><description>Meaning</description></listheader>
+        /// <item><term><c>'ACPI'</c></term><description>The ACPI firmware table provider.</description></item>
+        /// <item><term><c>'FIRM'</c></term><description>The raw firmware table provider. Not supported for UEFI systems; use <c>'RSMB'</c> instead.</description></item>
+        /// <item><term><c>'RSMB'</c></term><description>The raw SMBIOS firmware table provider.</description></item>
+        /// </list>
+        /// </param>
+        /// <param name="FirmwareTableID">
+        /// <para>The identifier of the firmware table. This identifier is little endian, you must reverse the characters in the string.</para>
+        /// <para>
+        /// For example, FACP is an ACPI provider, as described in the Signature field of the DESCRIPTION_HEADER structure in the ACPI specification (see <a href="http://www.acpi.info">http://www.acpi.info</a>). Therefore, use 'PCAF' to specify the FACP table, as shown in the following example:
+        /// <code>retVal = GetSystemFirmwareTable('ACPI', 'PCAF', pBuffer, BUFSIZE);</code>
+        /// </para>
+        /// <para>For more information, see the Remarks section of the <see cref="EnumSystemFirmwareTables"/> function.</para>
+        /// </param>
+        /// <param name="FirmwareTableBuffer">
+        /// <para>A buffer that receives the list of firmware tables. If this parameter has a length of zero, the return value is the required buffer size.</para>
+        /// <para>For more information on the contents of this buffer, see the Remarks section.</para>
+        /// </param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is the number of bytes written to the buffer. This value will always be less than or equal to the length of <paramref name="FirmwareTableEnumBuffer"/>.</para>
+        /// <para>If the function fails because the buffer is not large enough, the return value is the required buffer size, in bytes. This value is always greater than the length of <paramref name="FirmwareTableEnumBuffer"/>.</para>
+        /// <para>If the function fails for any other reason, the return value is zero. To get extended error information, call <see cref="GetLastError"/>.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>Starting with Windows 10, version 1803, Universal Windows apps can access the System Management BIOS (SMBIOS) information by declaring the <strong>smbios</strong> restricted capability in the app manifest. See <a href="https://docs.microsoft.com/windows/desktop/SysInfo/access-smbios-information-from-a-universal-windows-app">Access SMBIOS information from a Universal Windows App</a> for details. Only raw SMBIOS (RSMB) firmware tables can be accessed from a Universal Windows app.</para>
+        /// <para>
+        /// As of Windows Server 2003 with Service Pack 1 (SP1), applications cannot access the <c>\Device\PhysicalMemory</c> object. Access to this object is limited to kernel-mode drivers. This change affects applications read System Management BIOS (SMBIOS) or other BIOS data stored in the lowest 1MB of physical memory. Applications have the following alternatives to read data from low physical memory:
+        /// <list type="bullet">
+        /// <item>Retrieve the SMBIOS properties using WMI. Many individual properties are contained in the <a href="https://docs.microsoft.com/windows/desktop/CIMWin32Prov/win32-provider">Win32 classes</a>. You can also retrieve the raw SMBIOS data in a single buffer using the <see cref="MSSMBios_RawSMBiosTables"/> class.</item>
+        /// <item>Use the <see cref="GetSystemFirmwareTable"/> function to read the raw SMBIOS firmware table.</item>
+        /// </list>
+        /// There is no way for applications to write to low physical memory.
+        /// </para>
+        /// <para>The raw SMBIOS table provider (<c>'RSMB'</c>) currently returns a single table identifier, <c>0x0000</c>. This corresponds to the raw SMBIOS firmware table.</para>
+        /// <para>The raw firmware table provider (<c>'FIRM'</c>) returns a list of <see cref="int"/> table identifiers. Each identifier corresponds to the beginning of a physical address range. Currently, this provider returns <c>'C0000'</c> and <c>'E0000'</c>. These values correspond to physical memory from <c>0xC0000</c> to <c>0xDFFFF</c> and <c>0xE0000</c> to <c>0xFFFFF</c>, respectively.</para>
+        /// <para>The ACPI table provider (<c>'ACPI'</c>) returns a list of <see cref="int"/> table identifiers. Each identifier returned corresponds to Signature field of the <strong>DESCRIPTION_HEADER</strong> structure for an ACPI table currently in the ACPI namespace of the system.</para>
+        /// <para>For ACPI, if the system contains multiple tables with the same name, they are all enumerated with <see cref="EnumSystemFirmwareTables"/>. However, <see cref="GetSystemFirmwareTable"/> retrieves only the first table in the list with this name.</para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows Vista, Windows XP Professional x64 Edition [desktop apps | UWP apps]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2008, Windows Server 2003 with SP1 [desktop apps | UWP apps]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/winnt/nf-winnt-getsystemfirmwaretable">GetSystemFirmwareTable function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/SysInfo/access-smbios-information-from-a-universal-windows-app">Access SMBIOS information from a Universal Windows App</seealso>
+        /// <seealso cref="EnumSystemFirmwareTables"/>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/SysInfo/system-information-functions">System Information Functions</seealso>
+        public static unsafe int GetSystemFirmwareTable(
+            int FirmwareTableProviderSignature,
+            int FirmwareTableID,
+            Span<byte> FirmwareTableBuffer
+            )
+        {
+            fixed (byte* pFirmwareTableBuffer = FirmwareTableBuffer)
+                return GetSystemFirmwareTable(FirmwareTableProviderSignature,
+                    FirmwareTableID, pFirmwareTableBuffer, FirmwareTableBuffer.Length);
+        }
+        #endregion
     }
 }

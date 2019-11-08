@@ -1785,5 +1785,32 @@ namespace THNETII.WinApi.Native.SysInfoApi
             [MarshalAs(UnmanagedType.Bool)] out bool pbEnabled
             );
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\sysinfoapi.h, line: 634
+        #region GetIntegratedDisplaySize function
+        /// <summary>
+        /// Retrieves the best estimate of the diagonal size of the built-in screen, in inches.
+        /// </summary>
+        /// <param name="sizeInInches">Receives the best estimate of the diagonal size of the built-in screen, in inches.</param>
+        /// <returns>The result code indicating if the function succeeded or failed.</returns>
+        /// <remarks>
+        /// Uses the display driver as the source for display size information. Registry overrides to screen size will not be used. Uses the display adapter connection type to determine which display, if any, is integral to the system. If no internal display detected, an error will be returned. This requires the display to be active to be detected. For example, the lid cannot be closed when the function is called.
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows 10 [desktop apps | UWP apps]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2016 [desktop apps | UWP apps]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/sysinfoapi/nf-sysinfoapi-getintegrateddisplaysize">GetIntegratedDisplaySize function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/SysInfo/system-information-functions">System Information Functions</seealso>
+        [DllImport(KernelBase, CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.Error)]
+        public static extern int GetIntegratedDisplaySize(
+            out double sizeInInches
+            );
+        #endregion
     }
 }

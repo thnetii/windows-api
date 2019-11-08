@@ -1506,5 +1506,44 @@ namespace THNETII.WinApi.Native.SysInfoApi
                     pComputerName, ref nSize);
         }
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\sysinfoapi.h, line: 542
+        #region GetPhysicallyInstalledSystemMemory function
+        /// <summary>
+        /// Retrieves the amount of RAM that is physically installed on the computer.
+        /// </summary>
+        /// <param name="TotalMemoryInKilobytes">A variable that receives the amount of physically installed RAM, in kilobytes.</param>
+        /// <returns>
+        /// <para>If the function succeeds, it returns <see langword="true"/> and sets the <paramref name="TotalMemoryInKilobytes"/> parameter to a nonzero value.</para>
+        /// <para>
+        /// If the function fails, it returns <see langword="false"/> and does not modify the <paramref name="TotalMemoryInKilobytes"/> parameter. To get extended error information, use the <see cref="GetLastError"/> function. Common errors are listed in the following table.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <item><term><see cref="ERROR_INVALID_DATA"/></term><description> The System Management BIOS (SMBIOS) data is malformed. </description></item>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>The <see cref="GetPhysicallyInstalledSystemMemory"/> function retrieves the amount of physically installed RAM from the computer's SMBIOS firmware tables. This can differ from the amount reported by the <see cref="GlobalMemoryStatusEx"/> function, which sets the <see cref="MEMORYSTATUSEX.ullTotalPhys"/> member of the <see cref="MEMORYSTATUSEX"/> structure to the amount of physical memory that is available for the operating system to use. The amount of memory available to the operating system can be less than the amount of memory physically installed in the computer because the BIOS and some drivers may reserve memory as I/O regions for memory-mapped devices, making the memory unavailable to the operating system and applications.</para>
+        /// <para>The amount of physical memory retrieved by the <see cref="GetPhysicallyInstalledSystemMemory"/> function must be equal to or greater than the amount reported by the <see cref="GlobalMemoryStatusEx"/> function; if it is less, the SMBIOS data is malformed and the function fails with <see cref="ERROR_INVALID_DATA"/>. Malformed SMBIOS data may indicate a problem with the user's computer.</para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows Vista with SP1 [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2008 [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/winnt/nf-winnt-getphysicallyinstalledsystemmemory">GetPhysicallyInstalledSystemMemory function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="EnumSystemFirmwareTables"/>
+        /// <seealso cref="GetSystemFirmwareTable"/>
+        /// <seealso cref="GlobalMemoryStatusEx"/>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool GetPhysicallyInstalledSystemMemory(
+            out ulong TotalMemoryInKilobytes
+            );
+        #endregion
     }
 }

@@ -2,7 +2,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <LangVersion>7.2</LangVersion>
+    <LangVersion>7.3</LangVersion>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <RootNamespace>THNETII.WinApi.Native</RootNamespace>
@@ -20,9 +20,11 @@
     <ProjectReference Include="..\..\interopservices\src\THNETII.InteropServices.Memory\THNETII.InteropServices.Memory.csproj" />
     <ProjectReference Include="..\..\src-shared\THNETII.WinApi.ErrorCodes\THNETII.WinApi.ErrorCodes.csproj" />
     <ProjectReference Include="..\..\src-shared\THNETII.WinApi.NativeLibraryNames\THNETII.WinApi.NativeLibraryNames.csproj" />
+    <ProjectReference Include="..\..\src\THNETII.WinApi.Constants.WinError\THNETII.WinApi.Constants.WinError.csproj" />
     <ProjectReference Include="..\..\src\THNETII.WinApi.Headers.ErrHandlingApi\THNETII.WinApi.Headers.ErrHandlingApi.csproj" />
     <ProjectReference Include="..\..\src\THNETII.WinApi.Headers.MinWinBase\THNETII.WinApi.Headers.MinWinBase.csproj" />
     <ProjectReference Include="..\..\src\THNETII.WinApi.Headers.MinWinDef\THNETII.WinApi.Headers.MinWinDef.csproj" />
+    <ProjectReference Include="..\..\src\THNETII.WinApi.Headers.SysInfoApi\THNETII.WinApi.Headers.SysInfoApi.csproj" />
     <ProjectReference Include="..\..\src\THNETII.WinApi.Headers.UtilApiset\THNETII.WinApi.Headers.UtilApiset.csproj" />
     <ProjectReference Include="..\..\src\THNETII.WinApi.Headers.WinBase\THNETII.WinApi.Headers.WinBase.csproj" />
     <ProjectReference Include="..\..\src\THNETII.WinApi.Headers.WinNT\THNETII.WinApi.Headers.WinNT.csproj" />

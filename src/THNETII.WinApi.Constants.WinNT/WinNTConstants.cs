@@ -25,6 +25,8 @@ namespace THNETII.WinApi.Native.WinNT
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 1393
         public const int VER_SERVER_NT = unchecked((int)0x80000000);
         public const int VER_WORKSTATION_NT = 0x40000000;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 1395
         public const int VER_SUITE_SMALLBUSINESS = 0x00000001;
         public const int VER_SUITE_ENTERPRISE = 0x00000002;
         public const int VER_SUITE_BACKOFFICE = 0x00000004;
@@ -153,6 +155,7 @@ namespace THNETII.WinApi.Native.WinNT
         public const int PRODUCT_CORE_SINGLELANGUAGE = 0x00000064;
         public const int PRODUCT_CORE = 0x00000065;
         public const int PRODUCT_PROFESSIONAL_WMC = 0x00000067;
+        public const int PRODUCT_MOBILE_CORE = 0x00000068;
         public const int PRODUCT_EMBEDDED_INDUSTRY_EVAL = 0x00000069;
         public const int PRODUCT_EMBEDDED_INDUSTRY_E_EVAL = 0x0000006A;
         public const int PRODUCT_EMBEDDED_EVAL = 0x0000006B;
@@ -179,6 +182,8 @@ namespace THNETII.WinApi.Native.WinNT
         public const int PRODUCT_PROFESSIONAL_S_N = 0x00000080;
         public const int PRODUCT_ENTERPRISE_S_EVALUATION = 0x00000081;
         public const int PRODUCT_ENTERPRISE_S_N_EVALUATION = 0x00000082;
+        public const int PRODUCT_IOTUAPCOMMERCIAL = 0x00000083;
+        public const int PRODUCT_MOBILE_ENTERPRISE = 0x00000085;
         public const int PRODUCT_HOLOGRAPHIC = 0x00000087;
         public const int PRODUCT_PRO_SINGLE_LANGUAGE = 0x0000008A;
         public const int PRODUCT_PRO_CHINA = 0x0000008B;
@@ -2732,23 +2737,23 @@ namespace THNETII.WinApi.Native.WinNT
         public const int PROCESSOR_OPTIL = 0x494f;
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 12424
-        public const int PROCESSOR_ARCHITECTURE_INTEL = 0;
-        public const int PROCESSOR_ARCHITECTURE_MIPS = 1;
-        public const int PROCESSOR_ARCHITECTURE_ALPHA = 2;
-        public const int PROCESSOR_ARCHITECTURE_PPC = 3;
-        public const int PROCESSOR_ARCHITECTURE_SHX = 4;
-        public const int PROCESSOR_ARCHITECTURE_ARM = 5;
-        public const int PROCESSOR_ARCHITECTURE_IA64 = 6;
-        public const int PROCESSOR_ARCHITECTURE_ALPHA64 = 7;
-        public const int PROCESSOR_ARCHITECTURE_MSIL = 8;
-        public const int PROCESSOR_ARCHITECTURE_AMD64 = 9;
-        public const int PROCESSOR_ARCHITECTURE_IA32_ON_WIN64 = 10;
-        public const int PROCESSOR_ARCHITECTURE_NEUTRAL = 11;
-        public const int PROCESSOR_ARCHITECTURE_ARM64 = 12;
-        public const int PROCESSOR_ARCHITECTURE_ARM32_ON_WIN64 = 13;
-        public const int PROCESSOR_ARCHITECTURE_IA32_ON_ARM64 = 14;
+        public const short PROCESSOR_ARCHITECTURE_INTEL = 0;
+        public const short PROCESSOR_ARCHITECTURE_MIPS = 1;
+        public const short PROCESSOR_ARCHITECTURE_ALPHA = 2;
+        public const short PROCESSOR_ARCHITECTURE_PPC = 3;
+        public const short PROCESSOR_ARCHITECTURE_SHX = 4;
+        public const short PROCESSOR_ARCHITECTURE_ARM = 5;
+        public const short PROCESSOR_ARCHITECTURE_IA64 = 6;
+        public const short PROCESSOR_ARCHITECTURE_ALPHA64 = 7;
+        public const short PROCESSOR_ARCHITECTURE_MSIL = 8;
+        public const short PROCESSOR_ARCHITECTURE_AMD64 = 9;
+        public const short PROCESSOR_ARCHITECTURE_IA32_ON_WIN64 = 10;
+        public const short PROCESSOR_ARCHITECTURE_NEUTRAL = 11;
+        public const short PROCESSOR_ARCHITECTURE_ARM64 = 12;
+        public const short PROCESSOR_ARCHITECTURE_ARM32_ON_WIN64 = 13;
+        public const short PROCESSOR_ARCHITECTURE_IA32_ON_ARM64 = 14;
 
-        public const int PROCESSOR_ARCHITECTURE_UNKNOWN = 0xFFFF;
+        public const short PROCESSOR_ARCHITECTURE_UNKNOWN = unchecked((short)0xFFFF);
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 12442
         public const int PF_FLOATING_POINT_PRECISION_ERRATA = 0;
@@ -6163,6 +6168,54 @@ namespace THNETII.WinApi.Native.WinNT
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19591
         public const short MESSAGE_RESOURCE_UNICODE = 0x0001;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19669
+        //
+        // RtlVerifyVersionInfo() conditions
+        //
+
+        public const int VER_EQUAL = 1;
+        public const int VER_GREATER = 2;
+        public const int VER_GREATER_EQUAL = 3;
+        public const int VER_LESS = 4;
+        public const int VER_LESS_EQUAL = 5;
+        public const int VER_AND = 6;
+        public const int VER_OR = 7;
+
+        public const int VER_CONDITION_MASK = 7;
+        public const int VER_NUM_BITS_PER_CONDITION_MASK = 3;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19684
+        //
+        // RtlVerifyVersionInfo() type mask bits
+        //
+
+        public const int VER_MINORVERSION = 0x0000001;
+        public const int VER_MAJORVERSION = 0x0000002;
+        public const int VER_BUILDNUMBER = 0x0000004;
+        public const int VER_PLATFORMID = 0x0000008;
+        public const int VER_SERVICEPACKMINOR = 0x0000010;
+        public const int VER_SERVICEPACKMAJOR = 0x0000020;
+        public const int VER_SUITENAME = 0x0000040;
+        public const int VER_PRODUCT_TYPE = 0x0000080;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19697
+        //
+        // RtlVerifyVersionInfo() os product type values
+        //
+
+        public const int VER_NT_WORKSTATION = 0x0000001;
+        public const int VER_NT_DOMAIN_CONTROLLER = 0x0000002;
+        public const int VER_NT_SERVER = 0x0000003;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19705
+        //
+        // dwPlatformId defines:
+        //
+
+        public const int VER_PLATFORM_WIN32s = 0;
+        public const int VER_PLATFORM_WIN32_WINDOWS = 1;
+        public const int VER_PLATFORM_WIN32_NT = 2;
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winnt.h, line 19775
         public const int RTL_UMS_VERSION = 0x0100;

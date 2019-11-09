@@ -1902,11 +1902,44 @@ namespace THNETII.WinApi.Native.SysInfoApi
         /// </remarks>
         /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
         /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/SysInfo/computer-names">Computer Names</seealso>
+        /// <seealso cref="GetComputerName"/>
+        /// <seealso cref="GetComputerNameEx"/>
+        /// <seealso cref="SetComputerNameEx"/>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/SysInfo/system-information-functions">System Information Functions</seealso>
         [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
         [return: MarshalAs(UnmanagedType.Bool)]
         public static extern bool SetComputerName(
             [In] LPCTSTR lpComputerName
             );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\sysinfoapi.h, line: 670
+        #region SetComputerNameExA function
+        /// <inheritdoc cref="SetComputerNameEx(COMPUTER_NAME_FORMAT, LPCTSTR)"/>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool SetComputerNameExA(
+            [In] COMPUTER_NAME_FORMAT NameType,
+            [In] string lpBuffer
+            );
+
+        /// <inheritdoc cref="SetComputerNameEx(COMPUTER_NAME_FORMAT, LPCTSTR)"/>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        private static extern unsafe bool SetComputerNameExA(
+            [In] COMPUTER_NAME_FORMAT NameType,
+            byte* lpBuffer
+            );
+
+        /// <inheritdoc cref="SetComputerNameEx(COMPUTER_NAME_FORMAT, LPCTSTR)"/>
+        public static unsafe bool SetComputerNameExA(
+            COMPUTER_NAME_FORMAT NameType,
+            ReadOnlySpan<byte> lpBuffer
+            )
+        {
+            fixed (byte* ptrBuffer = lpBuffer)
+                return SetComputerNameExA(NameType, ptrBuffer);
+        }
         #endregion
     }
 }

@@ -1814,18 +1814,98 @@ namespace THNETII.WinApi.Native.SysInfoApi
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\sysinfoapi.h, line: 650
         #region SetComputerNameA function
+        /// <inheritdoc cref="SetComputerName(LPCTSTR)"/>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool SetComputerNameA(
+            [In] string lpComputerName
+            );
 
+        /// <inheritdoc cref="SetComputerName(LPCTSTR)"/>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        private static extern unsafe bool SetComputerNameA(
+            byte* lpComputerName
+            );
+
+        /// <inheritdoc cref="SetComputerName(LPCTSTR)"/>
+        public static unsafe bool SetComputerNameA(
+            ReadOnlySpan<byte> lpComputerName
+            )
+        {
+            fixed (byte* ptrComputerName = lpComputerName)
+                return SetComputerNameA(ptrComputerName);
+        }
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\sysinfoapi.h, line: 657
         #region SetComputerNameW function
+        /// <inheritdoc cref="SetComputerName(LPCTSTR)"/>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Unicode, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool SetComputerNameW(
+            [In] string lpComputerName
+            );
 
+        /// <inheritdoc cref="SetComputerName(LPCTSTR)"/>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        private static extern unsafe bool SetComputerNameW(
+            char* lpComputerName
+            );
+
+        /// <inheritdoc cref="SetComputerName(LPCTSTR)"/>
+        public static unsafe bool SetComputerNameW(
+            ReadOnlySpan<char> lpComputerName
+            )
+        {
+            fixed (char* ptrComputerName = lpComputerName)
+                return SetComputerNameW(ptrComputerName);
+        }
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\sysinfoapi.h, line: 664
         #region SetComputerName function
+#if !NETSTANDARD1_6
+        /// <inheritdoc cref="SetComputerName(LPCTSTR)"/>
         [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto, SetLastError = true)]
         [return: MarshalAs(UnmanagedType.Bool)]
         public static extern bool SetComputerName(
             [In] string lpComputerName
+            ); 
+#endif // !NETSTANDARD1_6
+
+        /// <summary>
+        /// <para>Sets a new NetBIOS name for the local computer. The name is stored in the registry and the name change takes effect the next time the user restarts the computer.</para>
+        /// <para>If the local computer is a node in a cluster, <see cref="SetComputerName"/> sets NetBIOS name of the local computer, not that of the cluster virtual server.</para>
+        /// <para>To set the DNS host name or the DNS domain name, call the <see cref="SetComputerNameEx"/> function.</para>
+        /// </summary>
+        /// <param name="lpComputerName">
+        /// <para>The computer name that will take effect the next time the computer is started. The name must not be longer than <see cref="MAX_COMPUTERNAME_LENGTH"/> characters.</para>
+        /// <para>
+        /// The standard character set includes letters, numbers, and the following symbols:
+        /// <code>! @ # $ % ^ &amp; ' ) ( . - _ { } ~</code>
+        /// If this parameter contains one or more characters that are outside the standard character set, <see cref="SetComputerName"/> returns <see cref="ERROR_INVALID_PARAMETER"/>.</para>
+        /// </param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see langword="true"/>.</para>
+        /// <para>If the function fails, the return value is <see langword="false"/>. To get extended error information, call <see cref="GetLastError"/>.</para>
+        /// </returns>
+        /// <remarks>
+        /// Applications using this function must have administrator rights.
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows 2000 Professional [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows 2000 Server [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/sysinfoapi/nf-sysinfoapi-setcomputernamew">SetComputerNameW function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool SetComputerName(
+            [In] LPCTSTR lpComputerName
             );
         #endregion
     }

@@ -1812,5 +1812,21 @@ namespace THNETII.WinApi.Native.SysInfoApi
             out double sizeInInches
             );
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\sysinfoapi.h, line: 650
+        #region SetComputerNameA function
+
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\sysinfoapi.h, line: 657
+        #region SetComputerNameW function
+
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\sysinfoapi.h, line: 664
+        #region SetComputerName function
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool SetComputerName(
+            [In] string lpComputerName
+            );
+        #endregion
     }
 }

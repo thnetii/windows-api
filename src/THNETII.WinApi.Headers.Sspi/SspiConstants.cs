@@ -47,5 +47,17 @@ namespace THNETII.WinApi.Native.Sspi
         public const int SECPKG_FLAG_CREDENTIAL_ISOLATION_ENABLED = 0x01000000; // this package is running with Credential Guard enabled
 
         public const ushort SECPKG_ID_NONE = 0xFFFF;
+
+        //
+        // Extended Call Flags that currently contains
+        // Appcontainer related information about the caller.
+        // Packages can query for these
+        // via an LsaFunction GetExtendedCallFlags
+        //
+
+        public const int SECPKG_CALLFLAGS_APPCONTAINER = 0x00000001;
+        public const int SECPKG_CALLFLAGS_APPCONTAINER_AUTHCAPABLE = 0x00000002;
+        public const int SECPKG_CALLFLAGS_FORCE_SUPPLIED = 0x00000004;
+        public const int SECPKG_CALLFLAGS_APPCONTAINER_UPNCAPABLE = 0x00000008;
     }
 }

@@ -46,5 +46,6 @@ namespace THNETII.WinApi.Native.Sspi
                                                                                 // 3. The caller has supplied creds
         public const int SECPKG_FLAG_CREDENTIAL_ISOLATION_ENABLED = 0x01000000; // this package is running with Credential Guard enabled
 
+        public const ushort SECPKG_ID_NONE = 0xFFFF;
     }
 }

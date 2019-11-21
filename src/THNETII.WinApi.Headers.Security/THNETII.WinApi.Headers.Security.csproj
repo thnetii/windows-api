@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <LangVersion>7.2</LangVersion>
+    <TargetFrameworks>netstandard1.3;netstandard2.0</TargetFrameworks>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>CS1591</NoWarn>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>THNETII.WinApi.Native.Security</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(TargetFrameworks)'=='netstandard1.3'">
+    <PackageReference Include="System.Memory" Version="4.5.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src-shared\THNETII.WinApi.NativeLibraryNames\THNETII.WinApi.NativeLibraryNames.csproj">
+      <PrivateAssets>All</PrivateAssets>
+    </ProjectReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\interopservices\src\THNETII.InteropServices.Memory\THNETII.InteropServices.Memory.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src-shared\THNETII.WinApi.WindowsDataTypes\THNETII.WinApi.WindowsDataTypes.csproj" />
+  </ItemGroup>
+
+</Project>

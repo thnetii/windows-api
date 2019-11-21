@@ -1,5 +1,7 @@
 #include <Windows.h>
-#include <WinBase.h>
+
+#define SECURITY_WIN32 1
+#include <security.h>
 
 int main(int argc, char* argv[])
 {

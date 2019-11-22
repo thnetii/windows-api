@@ -46,9 +46,6 @@
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\AuthZ.h, line 324
         public const int AUTHZ_SECURITY_ATTRIBUTE_TYPE_OCTET_STRING = 0x10;
 
-        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\AuthZ.h, line 510
-        public const ushort AUTHZ_SECURITY_ATTRIBUTES_INFORMATION_VERSION_V1 = 1;
-
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\AuthZ.h, line 455
         //
         //  Attribute must not be inherited across process spawns.
@@ -70,6 +67,10 @@
             AUTHZ_SECURITY_ATTRIBUTE_VALUE_CASE_SENSITIVE
             );
 
-        public const ushort AUTHZ_SECURITY_ATTRIBUTES_INFORMATION_VERSION = AUTHZ_SECURITY_ATTRIBUTES_INFORMATION_VERSION_V1;
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\AuthZ.h, line 510
+        public const ushort AUTHZ_SECURITY_ATTRIBUTES_INFORMATION_VERSION_V1 = 1;
+
+        public const ushort AUTHZ_SECURITY_ATTRIBUTES_INFORMATION_VERSION =
+            AUTHZ_SECURITY_ATTRIBUTES_INFORMATION_VERSION_V1;
     }
 }

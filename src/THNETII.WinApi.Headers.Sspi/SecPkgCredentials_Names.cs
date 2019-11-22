@@ -16,7 +16,7 @@ namespace THNETII.WinApi.Native.Sspi
     [StructLayout(LayoutKind.Sequential)]
     public unsafe struct SecPkgCredentials_NamesW
     {
-        #region public char* sUserName;
+        #region public Span<char> UserName;
         internal char* sUserName;
         /// <summary>
         /// Gets a span to a string containing the name of the user represented by the credential. If the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">security package</a> sets the <see cref="SECPKG_FLAG_ACCEPT_WIN32_NAME"/> flag to indicate that it can process Windows names, this name can be used in other Windows calls.
@@ -36,13 +36,13 @@ namespace THNETII.WinApi.Native.Sspi
     [StructLayout(LayoutKind.Sequential)]
     public unsafe struct SecPkgCredentials_NamesA
     {
-        #region public char* sUserName;
-        internal char* sUserName;
+        #region public Span<byte> UserName;
+        internal byte* sUserName;
         /// <summary>
         /// Gets a span to an ANSI-byte string containing the name of the user represented by the credential. If the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">security package</a> sets the <see cref="SECPKG_FLAG_ACCEPT_WIN32_NAME"/> flag to indicate that it can process Windows names, this name can be used in other Windows calls.
         /// </summary>
-        public Span<char> GetUserName() =>
-            new IntPtr(sUserName).ToZeroTerminatedUnicodeSpan();
+        public Span<byte> GetUserName() =>
+            new IntPtr(sUserName).ToZeroTerminatedByteSpan();
         #endregion
     }
 }

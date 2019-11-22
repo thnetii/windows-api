@@ -93,5 +93,170 @@ namespace THNETII.WinApi.Native.Sspi
         public const int SECBUFFER_READONLY = unchecked((int)0x80000000);  // Buffer is read-only, no checksum
         public const int SECBUFFER_READONLY_WITH_CHECKSUM = 0x10000000;  // Buffer is read-only, and checksummed
         public const int SECBUFFER_RESERVED = 0x60000000;  // Flags reserved to security system
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 447
+        //
+        //  Data Representation Constant:
+        //
+        public const int SECURITY_NATIVE_DREP = 0x00000010;
+        public const int SECURITY_NETWORK_DREP = 0x00000000;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 453
+        //
+        //  Credential Use Flags
+        //
+        public const int SECPKG_CRED_INBOUND = 0x00000001;
+        public const int SECPKG_CRED_OUTBOUND = 0x00000002;
+        public const int SECPKG_CRED_BOTH = 0x00000003;
+        public const int SECPKG_CRED_DEFAULT = 0x00000004;
+        public const int SECPKG_CRED_RESERVED = unchecked((int)0xF0000000);
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 462
+        //
+        //  SSP SHOULD prompt the user for credentials/consent, independent
+        //  of whether credentials to be used are the 'logged on' credentials
+        //  or retrieved from credman.
+        //
+        //  An SSP may choose not to prompt, however, in circumstances determined
+        //  by the SSP.
+        //
+
+        public const int SECPKG_CRED_AUTOLOGON_RESTRICTED = 0x00000010;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 473
+        //
+        // auth will always fail, ISC() is called to process policy data only
+        //
+
+        public const int SECPKG_CRED_PROCESS_POLICY_ONLY = 0x00000020;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 480
+        //
+        //  InitializeSecurityContext Requirement and return flags:
+        //
+
+        public const int ISC_REQ_DELEGATE = 0x00000001;
+        public const int ISC_REQ_MUTUAL_AUTH = 0x00000002;
+        public const int ISC_REQ_REPLAY_DETECT = 0x00000004;
+        public const int ISC_REQ_SEQUENCE_DETECT = 0x00000008;
+        public const int ISC_REQ_CONFIDENTIALITY = 0x00000010;
+        public const int ISC_REQ_USE_SESSION_KEY = 0x00000020;
+        public const int ISC_REQ_PROMPT_FOR_CREDS = 0x00000040;
+        public const int ISC_REQ_USE_SUPPLIED_CREDS = 0x00000080;
+        public const int ISC_REQ_ALLOCATE_MEMORY = 0x00000100;
+        public const int ISC_REQ_USE_DCE_STYLE = 0x00000200;
+        public const int ISC_REQ_DATAGRAM = 0x00000400;
+        public const int ISC_REQ_CONNECTION = 0x00000800;
+        public const int ISC_REQ_CALL_LEVEL = 0x00001000;
+        public const int ISC_REQ_FRAGMENT_SUPPLIED = 0x00002000;
+        public const int ISC_REQ_EXTENDED_ERROR = 0x00004000;
+        public const int ISC_REQ_STREAM = 0x00008000;
+        public const int ISC_REQ_INTEGRITY = 0x00010000;
+        public const int ISC_REQ_IDENTIFY = 0x00020000;
+        public const int ISC_REQ_NULL_SESSION = 0x00040000;
+        public const int ISC_REQ_MANUAL_CRED_VALIDATION = 0x00080000;
+        public const int ISC_REQ_RESERVED1 = 0x00100000;
+        public const int ISC_REQ_FRAGMENT_TO_FIT = 0x00200000;
+        // This exists only in Windows Vista and greater
+        public const int ISC_REQ_FORWARD_CREDENTIALS = 0x00400000;
+        public const int ISC_REQ_NO_INTEGRITY = 0x00800000; // honored only by SPNEGO
+        public const int ISC_REQ_USE_HTTP_STYLE = 0x01000000;
+        public const int ISC_REQ_UNVERIFIED_TARGET_NAME = 0x20000000;
+        public const int ISC_REQ_CONFIDENTIALITY_ONLY = 0x40000000; // honored by SPNEGO/Kerberos
+
+        public const int ISC_RET_DELEGATE = 0x00000001;
+        public const int ISC_RET_MUTUAL_AUTH = 0x00000002;
+        public const int ISC_RET_REPLAY_DETECT = 0x00000004;
+        public const int ISC_RET_SEQUENCE_DETECT = 0x00000008;
+        public const int ISC_RET_CONFIDENTIALITY = 0x00000010;
+        public const int ISC_RET_USE_SESSION_KEY = 0x00000020;
+        public const int ISC_RET_USED_COLLECTED_CREDS = 0x00000040;
+        public const int ISC_RET_USED_SUPPLIED_CREDS = 0x00000080;
+        public const int ISC_RET_ALLOCATED_MEMORY = 0x00000100;
+        public const int ISC_RET_USED_DCE_STYLE = 0x00000200;
+        public const int ISC_RET_DATAGRAM = 0x00000400;
+        public const int ISC_RET_CONNECTION = 0x00000800;
+        public const int ISC_RET_INTERMEDIATE_RETURN = 0x00001000;
+        public const int ISC_RET_CALL_LEVEL = 0x00002000;
+        public const int ISC_RET_EXTENDED_ERROR = 0x00004000;
+        public const int ISC_RET_STREAM = 0x00008000;
+        public const int ISC_RET_INTEGRITY = 0x00010000;
+        public const int ISC_RET_IDENTIFY = 0x00020000;
+        public const int ISC_RET_NULL_SESSION = 0x00040000;
+        public const int ISC_RET_MANUAL_CRED_VALIDATION = 0x00080000;
+        public const int ISC_RET_RESERVED1 = 0x00100000;
+        public const int ISC_RET_FRAGMENT_ONLY = 0x00200000;
+        // This exists only in Windows Vista and greater
+        public const int ISC_RET_FORWARD_CREDENTIALS = 0x00400000;
+
+        public const int ISC_RET_USED_HTTP_STYLE = 0x01000000;
+        public const int ISC_RET_NO_ADDITIONAL_TOKEN = 0x02000000; // *INTERNAL*
+        public const int ISC_RET_REAUTHENTICATION = 0x08000000; // *INTERNAL*
+        public const int ISC_RET_CONFIDENTIALITY_ONLY = 0x40000000; // honored by SPNEGO/Kerberos
+
+        public const int ASC_REQ_DELEGATE = 0x00000001;
+        public const int ASC_REQ_MUTUAL_AUTH = 0x00000002;
+        public const int ASC_REQ_REPLAY_DETECT = 0x00000004;
+        public const int ASC_REQ_SEQUENCE_DETECT = 0x00000008;
+        public const int ASC_REQ_CONFIDENTIALITY = 0x00000010;
+        public const int ASC_REQ_USE_SESSION_KEY = 0x00000020;
+        public const int ASC_REQ_SESSION_TICKET = 0x00000040;
+        public const int ASC_REQ_ALLOCATE_MEMORY = 0x00000100;
+        public const int ASC_REQ_USE_DCE_STYLE = 0x00000200;
+        public const int ASC_REQ_DATAGRAM = 0x00000400;
+        public const int ASC_REQ_CONNECTION = 0x00000800;
+        public const int ASC_REQ_CALL_LEVEL = 0x00001000;
+        public const int ASC_REQ_FRAGMENT_SUPPLIED = 0x00002000;
+        public const int ASC_REQ_EXTENDED_ERROR = 0x00008000;
+        public const int ASC_REQ_STREAM = 0x00010000;
+        public const int ASC_REQ_INTEGRITY = 0x00020000;
+        public const int ASC_REQ_LICENSING = 0x00040000;
+        public const int ASC_REQ_IDENTIFY = 0x00080000;
+        public const int ASC_REQ_ALLOW_NULL_SESSION = 0x00100000;
+        public const int ASC_REQ_ALLOW_NON_USER_LOGONS = 0x00200000;
+        public const int ASC_REQ_ALLOW_CONTEXT_REPLAY = 0x00400000;
+        public const int ASC_REQ_FRAGMENT_TO_FIT = 0x00800000;
+
+        public const int ASC_REQ_NO_TOKEN = 0x01000000;
+        public const int ASC_REQ_PROXY_BINDINGS = 0x04000000;
+        //      SSP_RET_REAUTHENTICATION        0x08000000  // *INTERNAL*
+        public const int ASC_REQ_ALLOW_MISSING_BINDINGS = 0x10000000;
+
+        public const int ASC_RET_DELEGATE = 0x00000001;
+        public const int ASC_RET_MUTUAL_AUTH = 0x00000002;
+        public const int ASC_RET_REPLAY_DETECT = 0x00000004;
+        public const int ASC_RET_SEQUENCE_DETECT = 0x00000008;
+        public const int ASC_RET_CONFIDENTIALITY = 0x00000010;
+        public const int ASC_RET_USE_SESSION_KEY = 0x00000020;
+        public const int ASC_RET_SESSION_TICKET = 0x00000040;
+        public const int ASC_RET_ALLOCATED_MEMORY = 0x00000100;
+        public const int ASC_RET_USED_DCE_STYLE = 0x00000200;
+        public const int ASC_RET_DATAGRAM = 0x00000400;
+        public const int ASC_RET_CONNECTION = 0x00000800;
+        public const int ASC_RET_CALL_LEVEL = 0x00002000; // skipped 1000 to be like ISC_
+        public const int ASC_RET_THIRD_LEG_FAILED = 0x00004000;
+        public const int ASC_RET_EXTENDED_ERROR = 0x00008000;
+        public const int ASC_RET_STREAM = 0x00010000;
+        public const int ASC_RET_INTEGRITY = 0x00020000;
+        public const int ASC_RET_LICENSING = 0x00040000;
+        public const int ASC_RET_IDENTIFY = 0x00080000;
+        public const int ASC_RET_NULL_SESSION = 0x00100000;
+        public const int ASC_RET_ALLOW_NON_USER_LOGONS = 0x00200000;
+        public const int ASC_RET_ALLOW_CONTEXT_REPLAY = 0x00400000;  // deprecated - don't use this flag!!!
+        public const int ASC_RET_FRAGMENT_ONLY = 0x00800000;
+        public const int ASC_RET_NO_TOKEN = 0x01000000;
+        public const int ASC_RET_NO_ADDITIONAL_TOKEN = 0x02000000;  // *INTERNAL*
+        //      SSP_RET_REAUTHENTICATION        0x08000000  // *INTERNAL*
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 597
+        //
+        //  Security Credentials Attributes:
+        //
+
+        public const int SECPKG_CRED_ATTR_NAMES = 1;
+        public const int SECPKG_CRED_ATTR_SSI_PROVIDER = 2;
+        public const int SECPKG_CRED_ATTR_KDC_PROXY_SETTINGS = 3;
+        public const int SECPKG_CRED_ATTR_CERT = 4;
+        public const int SECPKG_CRED_ATTR_PAC_BYPASS = 5;
     }
 }

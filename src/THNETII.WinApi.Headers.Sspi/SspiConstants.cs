@@ -258,5 +258,9 @@ namespace THNETII.WinApi.Native.Sspi
         public const int SECPKG_CRED_ATTR_KDC_PROXY_SETTINGS = 3;
         public const int SECPKG_CRED_ATTR_CERT = 4;
         public const int SECPKG_CRED_ATTR_PAC_BYPASS = 5;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 664
+        public const int KDC_PROXY_SETTINGS_V1 = 1;
+        public const int KDC_PROXY_SETTINGS_FLAGS_FORCEPROXY = 0x1;
     }
 }

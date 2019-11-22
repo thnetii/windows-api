@@ -49,6 +49,27 @@
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\AuthZ.h, line 510
         public const ushort AUTHZ_SECURITY_ATTRIBUTES_INFORMATION_VERSION_V1 = 1;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\AuthZ.h, line 455
+        //
+        //  Attribute must not be inherited across process spawns.
+        //
+
+        public const int AUTHZ_SECURITY_ATTRIBUTE_NON_INHERITABLE = 0x0001;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\AuthZ.h, line 462
+        //
+        //  Attribute value is compared in a case sensitive way. It is valid with string value
+        //  or composite type containing string value. For other types of value, this flag
+        //  will be ignored. Currently, it is valid with the two types:
+        //  AUTHZ_SECURITY_ATTRIBUTE_TYPE_STRING and AUTHZ_SECURITY_ATTRIBUTE_TYPE_FQBN.
+        //
+        public const int AUTHZ_SECURITY_ATTRIBUTE_VALUE_CASE_SENSITIVE = 0x0002;
+
+        public const int AUTHZ_SECURITY_ATTRIBUTE_VALID_FLAGS = (
+            AUTHZ_SECURITY_ATTRIBUTE_NON_INHERITABLE |
+            AUTHZ_SECURITY_ATTRIBUTE_VALUE_CASE_SENSITIVE
+            );
+
         public const ushort AUTHZ_SECURITY_ATTRIBUTES_INFORMATION_VERSION = AUTHZ_SECURITY_ATTRIBUTES_INFORMATION_VERSION_V1;
     }
 }

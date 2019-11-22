@@ -59,5 +59,39 @@ namespace THNETII.WinApi.Native.Sspi
         public const int SECPKG_CALLFLAGS_APPCONTAINER_AUTHCAPABLE = 0x00000002;
         public const int SECPKG_CALLFLAGS_FORCE_SUPPLIED = 0x00000004;
         public const int SECPKG_CALLFLAGS_APPCONTAINER_UPNCAPABLE = 0x00000008;
+
+        public const int SECBUFFER_VERSION = 0;
+
+        public const int SECBUFFER_EMPTY = 0;   // Undefined, replaced by provider
+        public const int SECBUFFER_DATA = 1;   // Packet data
+        public const int SECBUFFER_TOKEN = 2;   // Security token
+        public const int SECBUFFER_PKG_PARAMS = 3;   // Package specific parameters
+        public const int SECBUFFER_MISSING = 4;   // Missing Data indicator
+        public const int SECBUFFER_EXTRA = 5;   // Extra data
+        public const int SECBUFFER_STREAM_TRAILER = 6;   // Security Trailer
+        public const int SECBUFFER_STREAM_HEADER = 7;   // Security Header
+        public const int SECBUFFER_NEGOTIATION_INFO = 8;   // Hints from the negotiation pkg
+        public const int SECBUFFER_PADDING = 9;   // non-data padding
+        public const int SECBUFFER_STREAM = 10;  // whole encrypted message
+        public const int SECBUFFER_MECHLIST = 11;
+        public const int SECBUFFER_MECHLIST_SIGNATURE = 12;
+        public const int SECBUFFER_TARGET = 13;  // obsolete
+        public const int SECBUFFER_CHANNEL_BINDINGS = 14;
+        public const int SECBUFFER_CHANGE_PASS_RESPONSE = 15;
+        public const int SECBUFFER_TARGET_HOST = 16;
+        public const int SECBUFFER_ALERT = 17;
+        public const int SECBUFFER_APPLICATION_PROTOCOLS = 18;  // Lists of application protocol IDs, one per negotiation extension
+        public const int SECBUFFER_SRTP_PROTECTION_PROFILES = 19;  // List of SRTP protection profiles, in descending order of preference
+        public const int SECBUFFER_SRTP_MASTER_KEY_IDENTIFIER = 20;  // SRTP master key identifier
+        public const int SECBUFFER_TOKEN_BINDING = 21;  // Supported Token Binding protocol version and key parameters
+        public const int SECBUFFER_PRESHARED_KEY = 22;  // Preshared key
+        public const int SECBUFFER_PRESHARED_KEY_IDENTITY = 23;  // Preshared key identity
+        public const int SECBUFFER_DTLS_MTU = 24;  // DTLS path MTU setting
+
+
+        public const int SECBUFFER_ATTRMASK = unchecked((int)0xF0000000);
+        public const int SECBUFFER_READONLY = unchecked((int)0x80000000);  // Buffer is read-only, no checksum
+        public const int SECBUFFER_READONLY_WITH_CHECKSUM = 0x10000000;  // Buffer is read-only, and checksummed
+        public const int SECBUFFER_RESERVED = 0x60000000;  // Flags reserved to security system
     }
 }

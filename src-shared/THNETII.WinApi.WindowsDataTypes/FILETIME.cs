@@ -15,7 +15,7 @@ namespace THNETII.WinApi.Native
     /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/sspi/ns-sspi-filetime">FILETIME structure</a></para>
     /// </remarks>
     /// <seealso cref="CompareFileTime"/>
-    /// <seealso cref="https://docs.microsoft.com/windows/desktop/SysInfo/file-times">File Times</seealso>
+    /// <seealso href="https://docs.microsoft.com/windows/desktop/SysInfo/file-times">File Times</seealso>
     /// <seealso cref="FileTimeToSystemTime"/>
     /// <seealso cref="GetFileTime"/>
     /// <seealso cref="ULARGE_INTEGER"/>

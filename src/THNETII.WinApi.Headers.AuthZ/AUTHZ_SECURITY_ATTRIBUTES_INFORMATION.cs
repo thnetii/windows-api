@@ -2,7 +2,7 @@
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-namespace THNETII.WinApi.Headers.AuthZ
+namespace THNETII.WinApi.Native.AuthZ
 {
     // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\AuthZ.h, line 496
     //

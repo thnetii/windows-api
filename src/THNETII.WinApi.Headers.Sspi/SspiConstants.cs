@@ -337,5 +337,7 @@ namespace THNETII.WinApi.Native.Sspi
         public const int SECPKG_NEGOTIATION_DIRECT = 3;
         public const int SECPKG_NEGOTIATION_TRY_MULTICRED = 4;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 1121
+        public const byte MAX_PROTOCOL_ID_SIZE = 0xff;
     }
 }

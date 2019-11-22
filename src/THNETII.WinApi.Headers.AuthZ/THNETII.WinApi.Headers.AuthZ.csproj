@@ -11,6 +11,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\THNETII.WinApi.Constants.WinError\THNETII.WinApi.Constants.WinError.csproj">
+      <PrivateAssets>All</PrivateAssets>
+    </ProjectReference>
+    <ProjectReference Include="..\THNETII.WinApi.Constants.WinNT\THNETII.WinApi.Constants.WinNT.csproj">
+      <PrivateAssets>All</PrivateAssets>
+    </ProjectReference>
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\THNETII.WinApi.Headers.WinNT\THNETII.WinApi.Headers.WinNT.csproj" />
   </ItemGroup>
 

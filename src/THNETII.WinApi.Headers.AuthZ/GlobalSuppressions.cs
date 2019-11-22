@@ -6,5 +6,6 @@
 using System.Diagnostics.CodeAnalysis;
 
 [assembly: SuppressMessage("Naming", "CA1707: Identifiers should not contain underscores")]
+[assembly: SuppressMessage("Naming", "CA1712: Do not prefix enum values with type name")]
 [assembly: SuppressMessage("Design", "CA1051: Do not declare visible instance fields")]
 [assembly: SuppressMessage("Performance", "CA1815: Override equals and operator equals on value types")]

@@ -13,7 +13,7 @@ namespace THNETII.WinApi.Native.AuthZ
     /// The <see cref="AUTHZ_ACCESS_REQUEST"/> structure defines an access check request.
     /// </summary>
     /// <remarks>
-    /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/winnt/ns-winnt-authz_access_request">AUTHZ_ACCESS_REQUEST structure</a></para>
+    /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/authz/ns-winnt-authz_access_request">AUTHZ_ACCESS_REQUEST structure</a></para>
     /// </remarks>
     /// <seealso cref="AuthzAccessCheckCallback"/>
     [StructLayout(LayoutKind.Sequential)]

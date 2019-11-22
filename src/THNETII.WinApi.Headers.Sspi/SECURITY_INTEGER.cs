@@ -12,13 +12,28 @@ namespace THNETII.WinApi.Native.Sspi
     [StructLayout(LayoutKind.Sequential)]
     public struct SECURITY_INTEGER
     {
+        internal LARGE_INTEGER value;
+
         /// <summary>
         /// Least significant digits.
         /// </summary>
-        public uint LowPart;
+        public uint LowPart
+        {
+            get => value.LowPart;
+            set => this.value.LowPart = value;
+        }
         /// <summary>
         /// Most significant digits.
         /// </summary>
-        public int HighPart;
+        public int HighPart
+        {
+            get => value.HighPart;
+            set => this.value.HighPart = value;
+        }
+        public long QuadPart
+        {
+            get => value.QuadPart;
+            set => this.value.QuadPart = value;
+        }
     }
 }

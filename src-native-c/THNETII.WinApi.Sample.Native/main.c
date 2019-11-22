@@ -6,7 +6,7 @@
 
 int main(int argc, char* argv[])
 {
-    PAUTHZ_SECURITY_ATTRIBUTE_V1 instance;
+    FILETIME instance;
     const int size = sizeof(instance);
     const int value = VER_PLATFORM_WIN32_NT;
 

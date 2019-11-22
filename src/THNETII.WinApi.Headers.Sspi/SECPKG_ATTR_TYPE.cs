@@ -1,0 +1,63 @@
+﻿namespace THNETII.WinApi.Native.Sspi
+{
+    public enum SECPKG_ATTR_TYPE
+    {
+        SECPKG_ATTR_SIZES = SspiConstants.SECPKG_ATTR_SIZES,
+        SECPKG_ATTR_NAMES = SspiConstants.SECPKG_ATTR_NAMES,
+        SECPKG_ATTR_LIFESPAN = SspiConstants.SECPKG_ATTR_LIFESPAN,
+        SECPKG_ATTR_DCE_INFO = SspiConstants.SECPKG_ATTR_DCE_INFO,
+        SECPKG_ATTR_STREAM_SIZES = SspiConstants.SECPKG_ATTR_STREAM_SIZES,
+        SECPKG_ATTR_KEY_INFO = SspiConstants.SECPKG_ATTR_KEY_INFO,
+        SECPKG_ATTR_AUTHORITY = SspiConstants.SECPKG_ATTR_AUTHORITY,
+        SECPKG_ATTR_PROTO_INFO = SspiConstants.SECPKG_ATTR_PROTO_INFO,
+        SECPKG_ATTR_PASSWORD_EXPIRY = SspiConstants.SECPKG_ATTR_PASSWORD_EXPIRY,
+        SECPKG_ATTR_SESSION_KEY = SspiConstants.SECPKG_ATTR_SESSION_KEY,
+        SECPKG_ATTR_PACKAGE_INFO = SspiConstants.SECPKG_ATTR_PACKAGE_INFO,
+        SECPKG_ATTR_USER_FLAGS = SspiConstants.SECPKG_ATTR_USER_FLAGS,
+        SECPKG_ATTR_NEGOTIATION_INFO = SspiConstants.SECPKG_ATTR_NEGOTIATION_INFO,
+        SECPKG_ATTR_NATIVE_NAMES = SspiConstants.SECPKG_ATTR_NATIVE_NAMES,
+        SECPKG_ATTR_FLAGS = SspiConstants.SECPKG_ATTR_FLAGS,
+        // These attributes exist only in Win XP and greater
+        SECPKG_ATTR_USE_VALIDATED = SspiConstants.SECPKG_ATTR_USE_VALIDATED,
+        SECPKG_ATTR_CREDENTIAL_NAME = SspiConstants.SECPKG_ATTR_CREDENTIAL_NAME,
+        SECPKG_ATTR_TARGET_INFORMATION = SspiConstants.SECPKG_ATTR_TARGET_INFORMATION,
+        SECPKG_ATTR_ACCESS_TOKEN = SspiConstants.SECPKG_ATTR_ACCESS_TOKEN,
+        // These attributes exist only in Win2K3 and greater
+        SECPKG_ATTR_TARGET = SspiConstants.SECPKG_ATTR_TARGET,
+        SECPKG_ATTR_AUTHENTICATION_ID = SspiConstants.SECPKG_ATTR_AUTHENTICATION_ID,
+        // These attributes exist only in Win2K3SP1 and greater
+        SECPKG_ATTR_LOGOFF_TIME = SspiConstants.SECPKG_ATTR_LOGOFF_TIME,
+        //
+        // win7 or greater
+        //
+        SECPKG_ATTR_NEGO_KEYS = SspiConstants.SECPKG_ATTR_NEGO_KEYS,
+        SECPKG_ATTR_PROMPTING_NEEDED = SspiConstants.SECPKG_ATTR_PROMPTING_NEEDED,
+        SECPKG_ATTR_UNIQUE_BINDINGS = SspiConstants.SECPKG_ATTR_UNIQUE_BINDINGS,
+        SECPKG_ATTR_ENDPOINT_BINDINGS = SspiConstants.SECPKG_ATTR_ENDPOINT_BINDINGS,
+        SECPKG_ATTR_CLIENT_SPECIFIED_TARGET = SspiConstants.SECPKG_ATTR_CLIENT_SPECIFIED_TARGET,
+
+        SECPKG_ATTR_LAST_CLIENT_TOKEN_STATUS = SspiConstants.SECPKG_ATTR_LAST_CLIENT_TOKEN_STATUS,
+        SECPKG_ATTR_NEGO_PKG_INFO = SspiConstants.SECPKG_ATTR_NEGO_PKG_INFO, // contains nego info of packages
+        SECPKG_ATTR_NEGO_STATUS = SspiConstants.SECPKG_ATTR_NEGO_STATUS, // contains the last error
+        SECPKG_ATTR_CONTEXT_DELETED = SspiConstants.SECPKG_ATTR_CONTEXT_DELETED, // a context has been deleted
+
+        //
+        // win8 or greater
+        //
+        SECPKG_ATTR_DTLS_MTU = SspiConstants.SECPKG_ATTR_DTLS_MTU,
+        SECPKG_ATTR_DATAGRAM_SIZES = SspiConstants.SECPKG_ATTR_DATAGRAM_SIZES,
+
+        SECPKG_ATTR_SUBJECT_SECURITY_ATTRIBUTES = SspiConstants.SECPKG_ATTR_SUBJECT_SECURITY_ATTRIBUTES,
+
+        //
+        // win8.1 or greater
+        //
+        SECPKG_ATTR_APPLICATION_PROTOCOL = SspiConstants.SECPKG_ATTR_APPLICATION_PROTOCOL,
+
+        //
+        // win10 or greater
+        //
+        SECPKG_ATTR_NEGOTIATED_TLS_EXTENSIONS = SspiConstants.SECPKG_ATTR_NEGOTIATED_TLS_EXTENSIONS,
+        SECPKG_ATTR_IS_LOOPBACK = SspiConstants.SECPKG_ATTR_IS_LOOPBACK,  // indicates authentication to localhost
+    }
+}

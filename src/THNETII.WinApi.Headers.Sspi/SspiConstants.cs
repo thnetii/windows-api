@@ -262,5 +262,69 @@ namespace THNETII.WinApi.Native.Sspi
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 664
         public const int KDC_PROXY_SETTINGS_V1 = 1;
         public const int KDC_PROXY_SETTINGS_FLAGS_FORCEPROXY = 0x1;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 691
+        //
+        //  Security Context Attributes:
+        //
+
+        public const int SECPKG_ATTR_SIZES = 0;
+        public const int SECPKG_ATTR_NAMES = 1;
+        public const int SECPKG_ATTR_LIFESPAN = 2;
+        public const int SECPKG_ATTR_DCE_INFO = 3;
+        public const int SECPKG_ATTR_STREAM_SIZES = 4;
+        public const int SECPKG_ATTR_KEY_INFO = 5;
+        public const int SECPKG_ATTR_AUTHORITY = 6;
+        public const int SECPKG_ATTR_PROTO_INFO = 7;
+        public const int SECPKG_ATTR_PASSWORD_EXPIRY = 8;
+        public const int SECPKG_ATTR_SESSION_KEY = 9;
+        public const int SECPKG_ATTR_PACKAGE_INFO = 10;
+        public const int SECPKG_ATTR_USER_FLAGS = 11;
+        public const int SECPKG_ATTR_NEGOTIATION_INFO = 12;
+        public const int SECPKG_ATTR_NATIVE_NAMES = 13;
+        public const int SECPKG_ATTR_FLAGS = 14;
+        // These attributes exist only in Win XP and greater
+        public const int SECPKG_ATTR_USE_VALIDATED = 15;
+        public const int SECPKG_ATTR_CREDENTIAL_NAME = 16;
+        public const int SECPKG_ATTR_TARGET_INFORMATION = 17;
+        public const int SECPKG_ATTR_ACCESS_TOKEN = 18;
+        // These attributes exist only in Win2K3 and greater
+        public const int SECPKG_ATTR_TARGET = 19;
+        public const int SECPKG_ATTR_AUTHENTICATION_ID = 20;
+        // These attributes exist only in Win2K3SP1 and greater
+        public const int SECPKG_ATTR_LOGOFF_TIME = 21;
+        //
+        // win7 or greater
+        //
+        public const int SECPKG_ATTR_NEGO_KEYS = 22;
+        public const int SECPKG_ATTR_PROMPTING_NEEDED = 24;
+        public const int SECPKG_ATTR_UNIQUE_BINDINGS = 25;
+        public const int SECPKG_ATTR_ENDPOINT_BINDINGS = 26;
+        public const int SECPKG_ATTR_CLIENT_SPECIFIED_TARGET = 27;
+
+        public const int SECPKG_ATTR_LAST_CLIENT_TOKEN_STATUS = 30;
+        public const int SECPKG_ATTR_NEGO_PKG_INFO = 31; // contains nego info of packages
+        public const int SECPKG_ATTR_NEGO_STATUS = 32; // contains the last error
+        public const int SECPKG_ATTR_CONTEXT_DELETED = 33; // a context has been deleted
+
+        //
+        // win8 or greater
+        //
+        public const int SECPKG_ATTR_DTLS_MTU = 34;
+        public const int SECPKG_ATTR_DATAGRAM_SIZES = SECPKG_ATTR_STREAM_SIZES;
+
+        public const int SECPKG_ATTR_SUBJECT_SECURITY_ATTRIBUTES = 128;
+
+        //
+        // win8.1 or greater
+        //
+        public const int SECPKG_ATTR_APPLICATION_PROTOCOL = 35;
+
+        //
+        // win10 or greater
+        //
+        public const int SECPKG_ATTR_NEGOTIATED_TLS_EXTENSIONS = 36;
+        public const int SECPKG_ATTR_IS_LOOPBACK = 37;  // indicates authentication to localhost
+
     }
 }

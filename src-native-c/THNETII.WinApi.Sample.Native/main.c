@@ -2,7 +2,6 @@
 
 #define SECURITY_WIN32 1
 #include <security.h>
-
 #include <AuthZ.h>
 
 int main(int argc, char* argv[])

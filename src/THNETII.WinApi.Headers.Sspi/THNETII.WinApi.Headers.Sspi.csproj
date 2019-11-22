@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <LangVersion>7.2</LangVersion>
-    <TargetFrameworks>netstandard1.3;netstandard2.0</TargetFrameworks>
+    <TargetFrameworks>netstandard1.6;netstandard2.0</TargetFrameworks>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <NoWarn>CS1591</NoWarn>
     <RootNamespace>THNETII.WinApi.Native.Sspi</RootNamespace>
@@ -23,6 +23,10 @@
   <ItemGroup>
     <ProjectReference Include="..\..\interopservices\src\THNETII.InteropServices.Bitwise\THNETII.InteropServices.Bitwise.csproj" />
     <ProjectReference Include="..\..\interopservices\src\THNETII.InteropServices.Memory\THNETII.InteropServices.Memory.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\THNETII.WinApi.Headers.AuthZ\THNETII.WinApi.Headers.AuthZ.csproj" />
   </ItemGroup>
 
   <ItemGroup>

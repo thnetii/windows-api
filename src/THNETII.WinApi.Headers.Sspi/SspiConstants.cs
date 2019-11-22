@@ -326,5 +326,8 @@ namespace THNETII.WinApi.Native.Sspi
         public const int SECPKG_ATTR_NEGOTIATED_TLS_EXTENSIONS = 36;
         public const int SECPKG_ATTR_IS_LOOPBACK = 37;  // indicates authentication to localhost
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 757
+        public const int SECPKG_ATTR_NEGO_INFO_FLAG_NO_KERBEROS = 0x1;
+        public const int SECPKG_ATTR_NEGO_INFO_FLAG_NO_NTLM = 0x2;
     }
 }

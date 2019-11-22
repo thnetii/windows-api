@@ -339,5 +339,15 @@ namespace THNETII.WinApi.Native.Sspi
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 1121
         public const byte MAX_PROTOCOL_ID_SIZE = 0xff;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 1157
+        //
+        // Flags for ExportSecurityContext
+        //
+
+        public const int SECPKG_CONTEXT_EXPORT_RESET_NEW = 0x00000001;      // New context is reset to initial state
+        public const int SECPKG_CONTEXT_EXPORT_DELETE_OLD = 0x00000002;     // Old context is deleted during export
+        // This is only valid in W2K3SP1 and greater
+        public const int SECPKG_CONTEXT_EXPORT_TO_KERNEL = 0x00000004;      // Context is to be transferred to the kernel
     }
 }

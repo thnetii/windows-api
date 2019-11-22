@@ -1,7 +1,11 @@
 ﻿using System.Runtime.InteropServices;
 
+using THNETII.WinApi.Native.WinError;
+
 namespace THNETII.WinApi.Native.Sspi
 {
+    using static WinErrorConstants;
+
     // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 998
     /// <summary>
     /// The <see cref="SecPkgContext_NegotiationInfoA"/> structure contains information on the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">security package</a> that is being set up or has been set up, and also gives the status on the negotiation to set up the security package.

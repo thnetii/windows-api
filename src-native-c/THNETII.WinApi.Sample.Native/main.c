@@ -8,7 +8,7 @@ int main(int argc, char* argv[])
 {
     FILETIME instance;
     const int size = sizeof(instance);
-    const int value = VER_PLATFORM_WIN32_NT;
+    const int value = SEC_I_CONTINUE_NEEDED;
 
     const void* ptr = GetVersionEx;
 

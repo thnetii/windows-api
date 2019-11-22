@@ -26,6 +26,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\THNETII.WinApi.Constants.WinError\THNETII.WinApi.Constants.WinError.csproj">
+      <PrivateAssets>All</PrivateAssets>
+    </ProjectReference>
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\THNETII.WinApi.Headers.AuthZ\THNETII.WinApi.Headers.AuthZ.csproj" />
   </ItemGroup>
 

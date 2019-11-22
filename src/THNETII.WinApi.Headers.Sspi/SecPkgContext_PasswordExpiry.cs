@@ -15,6 +15,6 @@ namespace THNETII.WinApi.Native.Sspi
         /// <summary>
         /// A timestamp variable that indicates when the credentials for the security context expire. For password-based packages, this variable indicates when the password expires. For <a href="https://docs.microsoft.com/windows/desktop/SecGloss/k-gly">Kerberos</a>, this variable indicates when the ticket expires.
         /// </summary>
-        public SECURITY_INTEGER tsPasswordExpires;
+        public TimeStamp tsPasswordExpires;
     }
 }

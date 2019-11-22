@@ -17,10 +17,10 @@ namespace THNETII.WinApi.Native.Sspi
         /// <summary>
         /// Time at which the context was established.
         /// </summary>
-        public SECURITY_INTEGER tsStart;
+        public TimeStamp tsStart;
         /// <summary>
         /// Time at which the context will expire.
         /// </summary>
-        public SECURITY_INTEGER tsExpiry;
+        public TimeStamp tsExpiry;
     }
 }

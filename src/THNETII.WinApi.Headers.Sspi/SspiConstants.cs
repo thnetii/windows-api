@@ -329,5 +329,13 @@ namespace THNETII.WinApi.Native.Sspi
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 757
         public const int SECPKG_ATTR_NEGO_INFO_FLAG_NO_KERBEROS = 0x1;
         public const int SECPKG_ATTR_NEGO_INFO_FLAG_NO_NTLM = 0x2;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 1021
+        public const int SECPKG_NEGOTIATION_COMPLETE = 0;
+        public const int SECPKG_NEGOTIATION_OPTIMISTIC = 1;
+        public const int SECPKG_NEGOTIATION_IN_PROGRESS = 2;
+        public const int SECPKG_NEGOTIATION_DIRECT = 3;
+        public const int SECPKG_NEGOTIATION_TRY_MULTICRED = 4;
+
     }
 }

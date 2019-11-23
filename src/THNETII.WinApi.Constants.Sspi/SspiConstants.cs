@@ -4,14 +4,6 @@ namespace THNETII.WinApi.Native.Sspi
 {
     public static class SspiConstants
     {
-        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 146
-        //
-        // pseudo handle value: the handle has already been deleted
-        //
-
-        public static readonly UIntPtr SEC_DELETED_HANDLE =
-            new UIntPtr(unchecked((uint)-2));
-
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 268
         //
         //  Security Package Capabilities
@@ -40,9 +32,6 @@ namespace THNETII.WinApi.Native.Sspi
         public const int SECPKG_FLAG_NEGOTIABLE2 = 0x00200000;                  // this package is negotiated under the NegoExtender
         public const int SECPKG_FLAG_APPCONTAINER_PASSTHROUGH = 0x00400000;     // this package receives all calls from appcontainer apps
         public const int SECPKG_FLAG_APPCONTAINER_CHECKS = 0x00800000;          // this package receives calls from appcontainer apps
-                                                                                // if the following checks succeed
-                                                                                // 1. Caller has domain auth capability or
-                                                                                // 2. Target is a proxy server or
                                                                                 // 3. The caller has supplied creds
         public const int SECPKG_FLAG_CREDENTIAL_ISOLATION_ENABLED = 0x01000000; // this package is running with Credential Guard enabled
 

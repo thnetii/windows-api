@@ -26,6 +26,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\THNETII.WinApi.Constants.Sspi\THNETII.WinApi.Constants.Sspi.csproj">
+      <PrivateAssets>All</PrivateAssets>
+    </ProjectReference>
     <ProjectReference Include="..\THNETII.WinApi.Constants.WinError\THNETII.WinApi.Constants.WinError.csproj">
       <PrivateAssets>All</PrivateAssets>
     </ProjectReference>

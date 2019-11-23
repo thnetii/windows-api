@@ -1,0 +1,142 @@
+Microsoft (R) COFF/PE Dumper Version 14.23.28107.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\arm\Mscms.Lib
+
+File Type: LIBRARY
+
+     Exports
+
+       ordinal    name
+
+             1    AssociateColorProfileWithDeviceA
+                  AssociateColorProfileWithDeviceW
+                  CheckBitmapBits
+                  CheckColors
+                  CloseColorProfile
+                  CloseDisplay
+           217    ColorAdapterGetCurrentProfileCalibration
+           211    ColorAdapterGetDisplayCurrentStateID
+           216    ColorAdapterGetDisplayProfile
+           215    ColorAdapterGetDisplayTargetWhitePoint
+           214    ColorAdapterGetDisplayTransformData
+           210    ColorAdapterGetSystemModifyWhitePointCaps
+           218    ColorAdapterRegisterOEMColorService
+           219    ColorAdapterUnregisterOEMColorService
+           213    ColorAdapterUpdateDeviceProfile
+           212    ColorAdapterUpdateDisplayGamma
+                  ColorCplGetDefaultProfileScope
+                  ColorCplGetDefaultRenderingIntentScope
+                  ColorCplGetProfileProperties
+                  ColorCplHasSystemWideAssociationListChanged
+                  ColorCplInitialize
+                  ColorCplLoadAssociationList
+                  ColorCplMergeAssociationLists
+                  ColorCplOverwritePerUserAssociationList
+                  ColorCplReleaseProfileProperties
+                  ColorCplResetSystemWideAssociationListChangedWarning
+                  ColorCplSaveAssociationList
+                  ColorCplSetUsePerUserProfiles
+                  ColorCplUninitialize
+                  ConvertColorNameToIndex
+                  ConvertIndexToColorName
+                  CreateColorTransformA
+                  CreateColorTransformW
+                  CreateDeviceLinkProfile
+                  CreateMultiProfileTransform
+                  CreateProfileFromLogColorSpaceA
+                  CreateProfileFromLogColorSpaceW
+                  DccwCreateDisplayProfileAssociationList
+                  DccwGetDisplayProfileAssociationList
+                  DccwGetGamutSize
+                  DccwReleaseDisplayProfileAssociationList
+                  DccwSetDisplayProfileAssociationList
+                  DeleteColorTransform
+                  DeviceRenameEvent
+                  DisassociateColorProfileFromDeviceA
+                  DisassociateColorProfileFromDeviceW
+                  EnumColorProfilesA
+                  EnumColorProfilesW
+                  GenerateCopyFilePaths
+                  GetCMMInfo
+                  GetColorDirectoryA
+                  GetColorDirectoryW
+                  GetColorProfileElement
+                  GetColorProfileElementTag
+                  GetColorProfileFromHandle
+                  GetColorProfileHeader
+                  GetCountColorProfileElements
+                  GetNamedProfileInfo
+                  GetPS2ColorRenderingDictionary
+                  GetPS2ColorRenderingIntent
+                  GetPS2ColorSpaceArray
+                  GetStandardColorSpaceProfileA
+                  GetStandardColorSpaceProfileW
+                  InstallColorProfileA
+                  InstallColorProfileW
+           205    InternalGetAppliedGammaRamp
+                  InternalGetDeviceConfig
+           206    InternalGetDeviceGammaCapability
+                  InternalGetPS2CSAFromLCS
+                  InternalGetPS2ColorRenderingDictionary
+           200    InternalGetPS2ColorRenderingDictionary2
+                  InternalGetPS2ColorSpaceArray
+           202    InternalGetPS2ColorSpaceArray2
+                  InternalGetPS2PreviewCRD
+           201    InternalGetPS2PreviewCRD2
+                  InternalRefreshCalibration
+                  InternalSetDeviceConfig
+           203    InternalSetDeviceGammaRamp
+           204    InternalSetDeviceTemperature
+                  InternalWcsAssociateColorProfileWithDevice
+                  InternalWcsDisassociateColorProfileWithDevice
+                  IsColorProfileTagPresent
+                  IsColorProfileValid
+                  OpenColorProfileA
+                  OpenColorProfileW
+                  OpenDisplay
+                  RegisterCMMA
+                  RegisterCMMW
+                  SelectCMM
+                  SetColorProfileElement
+                  SetColorProfileElementReference
+                  SetColorProfileElementSize
+                  SetColorProfileHeader
+                  SetStandardColorSpaceProfileA
+                  SetStandardColorSpaceProfileW
+                  SpoolerCopyFileEvent
+                  TranslateBitmapBits
+                  TranslateColors
+                  UninstallColorProfileA
+                  UninstallColorProfileW
+                  UnregisterCMMA
+                  UnregisterCMMW
+                  WcsAssociateColorProfileWithDevice
+                  WcsCheckColors
+                  WcsCreateIccProfile
+                  WcsDisassociateColorProfileFromDevice
+                  WcsEnumColorProfiles
+                  WcsEnumColorProfilesSize
+                  WcsGetCalibrationManagementState
+                  WcsGetDefaultColorProfile
+                  WcsGetDefaultColorProfileSize
+                  WcsGetDefaultRenderingIntent
+                  WcsGetUsePerUserProfiles
+                  WcsGpCanInstallOrUninstallProfiles
+                  WcsOpenColorProfileA
+                  WcsOpenColorProfileW
+                  WcsSetCalibrationManagementState
+                  WcsSetDefaultColorProfile
+                  WcsSetDefaultRenderingIntent
+                  WcsSetUsePerUserProfiles
+                  WcsTranslateColors
+
+  Summary
+
+          BD .debug$S
+          14 .idata$2
+          14 .idata$3
+           4 .idata$4
+           4 .idata$5
+           A .idata$6

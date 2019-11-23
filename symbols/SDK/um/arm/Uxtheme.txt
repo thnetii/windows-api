@@ -1,0 +1,99 @@
+Microsoft (R) COFF/PE Dumper Version 14.23.28107.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\arm\Uxtheme.lib
+
+File Type: LIBRARY
+
+     Exports
+
+       ordinal    name
+
+                  ?BeginPanningFeedback@@YAHPAUHWND__@@@Z (int __cdecl BeginPanningFeedback(struct HWND__ *))
+                  ?EndPanningFeedback@@YAHPAUHWND__@@H@Z (int __cdecl EndPanningFeedback(struct HWND__ *,int))
+                  ?UpdatePanningFeedback@@YAHPAUHWND__@@JJH@Z (int __cdecl UpdatePanningFeedback(struct HWND__ *,long,long,int))
+                  BeginBufferedAnimation
+                  BeginBufferedPaint
+                  BufferedPaintClear
+                  BufferedPaintInit
+                  BufferedPaintRenderAnimation
+                  BufferedPaintSetAlpha
+                  BufferedPaintStopAllAnimations
+                  BufferedPaintUnInit
+                  CloseThemeData
+                  DrawThemeBackground
+            47    DrawThemeBackgroundEx
+                  DrawThemeEdge
+                  DrawThemeIcon
+                  DrawThemeParentBackground
+                  DrawThemeParentBackgroundEx
+                  DrawThemeText
+                  DrawThemeTextEx
+                  EnableThemeDialogTexture
+                  EnableTheming
+                  EndBufferedAnimation
+                  EndBufferedPaint
+                  GetBufferedPaintBits
+                  GetBufferedPaintDC
+                  GetBufferedPaintTargetDC
+                  GetBufferedPaintTargetRect
+                  GetCurrentThemeName
+                  GetThemeAnimationProperty
+                  GetThemeAnimationTransform
+                  GetThemeAppProperties
+                  GetThemeBackgroundContentRect
+                  GetThemeBackgroundExtent
+                  GetThemeBackgroundRegion
+                  GetThemeBitmap
+                  GetThemeBool
+                  GetThemeColor
+                  GetThemeDocumentationProperty
+                  GetThemeEnumValue
+                  GetThemeFilename
+                  GetThemeFont
+                  GetThemeInt
+                  GetThemeIntList
+                  GetThemeMargins
+                  GetThemeMetric
+                  GetThemePartSize
+                  GetThemePosition
+                  GetThemePropertyOrigin
+                  GetThemeRect
+                  GetThemeStream
+                  GetThemeString
+                  GetThemeSysBool
+                  GetThemeSysColor
+                  GetThemeSysColorBrush
+                  GetThemeSysFont
+                  GetThemeSysInt
+                  GetThemeSysSize
+                  GetThemeSysString
+                  GetThemeTextExtent
+                  GetThemeTextMetrics
+                  GetThemeTimingFunction
+                  GetThemeTransitionDuration
+                  GetWindowTheme
+                  HitTestThemeBackground
+                  IsAppThemed
+                  IsCompositionActive
+                  IsThemeActive
+                  IsThemeBackgroundPartiallyTransparent
+                  IsThemeDialogTextureEnabled
+                  IsThemePartDefined
+                  OpenThemeData
+            61    OpenThemeDataEx
+                  OpenThemeDataForDpi
+                  SetThemeAppProperties
+                  SetWindowTheme
+                  SetWindowThemeAttribute
+                  ThemeInitApiHook
+
+  Summary
+
+          C3 .debug$S
+          14 .idata$2
+          14 .idata$3
+           4 .idata$4
+           4 .idata$5
+           C .idata$6

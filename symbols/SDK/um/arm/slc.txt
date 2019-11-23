@@ -1,0 +1,61 @@
+Microsoft (R) COFF/PE Dumper Version 14.23.28107.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\arm\slc.lib
+
+File Type: LIBRARY
+
+     Exports
+
+       ordinal    name
+
+                  ?SLpCheckProductKey@@YAJPAUDIGITALPID4@@PAH@Z (long __cdecl SLpCheckProductKey(struct DIGITALPID4 *,int *))
+                  ?SLpGetGenuineLocal@@YAJPAXPBU_GUID@@PAW4_SL_GENUINE_STATE@@@Z (long __cdecl SLpGetGenuineLocal(void *,struct _GUID const *,enum _SL_GENUINE_STATE *))
+                  ?SLpUpdateComponentTokens@@YAJPAXPAH@Z (long __cdecl SLpUpdateComponentTokens(void *,int *))
+                  SLClose
+                  SLConsumeRight
+                  SLConsumeWindowsRight
+                  SLDepositOfflineConfirmationId
+                  SLDepositOfflineConfirmationIdEx
+                  SLFireEvent
+                  SLGenerateOfflineInstallationId
+                  SLGenerateOfflineInstallationIdEx
+                  SLGetApplicationInformation
+                  SLGetGenuineInformation
+                  SLGetInstalledProductKeyIds
+                  SLGetLicense
+                  SLGetLicenseFileId
+                  SLGetLicenseInformation
+                  SLGetLicensingStatusInformation
+                  SLGetPKeyId
+                  SLGetPKeyInformation
+                  SLGetPolicyInformation
+                  SLGetPolicyInformationDWORD
+                  SLGetProductSkuInformation
+                  SLGetSLIDList
+                  SLGetServiceInformation
+                  SLGetWindowsInformation
+                  SLGetWindowsInformationDWORD
+                  SLInstallLicense
+                  SLInstallProofOfPurchase
+                  SLIsWindowsGenuineLocal
+                  SLOpen
+                  SLReArmWindows
+                  SLRegisterEvent
+                  SLRegisterWindowsEvent
+                  SLSetCurrentProductKey
+                  SLSetGenuineInformation
+                  SLUninstallLicense
+                  SLUninstallProofOfPurchase
+                  SLUnregisterEvent
+                  SLUnregisterWindowsEvent
+
+  Summary
+
+          B7 .debug$S
+          14 .idata$2
+          14 .idata$3
+           4 .idata$4
+           4 .idata$5
+           8 .idata$6

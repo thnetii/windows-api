@@ -1,0 +1,188 @@
+Microsoft (R) COFF/PE Dumper Version 14.23.28107.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\arm64\winsta.lib
+
+File Type: LIBRARY
+
+     Exports
+
+       ordinal    name
+
+                  ?WinStationRegisterConsoleNotificationEx2@@YAHPEAXPEAUHWND__@@KK@Z (int __cdecl WinStationRegisterConsoleNotificationEx2(void *,struct HWND__ *,unsigned long,unsigned long))
+                  LogonIdFromWinStationNameA
+                  LogonIdFromWinStationNameW
+                  RemoteAssistancePrepareSystemRestore
+                  ServerGetInternetConnectorStatus
+                  ServerLicensingClose
+                  ServerLicensingDeactivateCurrentPolicy
+                  ServerLicensingFreePolicyInformation
+                  ServerLicensingGetAvailablePolicyIds
+                  ServerLicensingGetPolicy
+                  ServerLicensingGetPolicyInformationA
+                  ServerLicensingGetPolicyInformationW
+                  ServerLicensingLoadPolicy
+                  ServerLicensingOpenA
+                  ServerLicensingOpenW
+                  ServerLicensingSetPolicy
+                  ServerLicensingUnloadPolicy
+                  ServerQueryInetConnectorInformationA
+                  ServerQueryInetConnectorInformationW
+                  ServerSetInternetConnectorStatus
+                  WTSRegisterSessionNotificationEx
+                  WTSUnRegisterSessionNotificationEx
+                  WinStationActivateLicense
+                  WinStationAutoReconnect
+                  WinStationBroadcastSystemMessage
+                  WinStationCheckAccess
+                  WinStationCheckLoopBack
+                  WinStationCloseServer
+                  WinStationConnectA
+                  WinStationConnectAndLockDesktop
+                  WinStationConnectCallback
+                  WinStationConnectEx
+                  WinStationConnectW
+                  WinStationCreateChildSessionTransport
+                  WinStationDisconnect
+                  WinStationEnableChildSessions
+                  WinStationEnumerateA
+                  WinStationEnumerateExW
+                  WinStationEnumerateLicenses
+                  WinStationEnumerateProcesses
+                  WinStationEnumerateW
+                  WinStationEnumerate_IndexedA
+                  WinStationEnumerate_IndexedW
+                  WinStationFreeConsoleNotification
+                  WinStationFreeEXECENVDATAEX
+                  WinStationFreeGAPMemory
+                  WinStationFreeMemory
+                  WinStationFreePropertyValue
+                  WinStationFreeUserCertificates
+                  WinStationFreeUserCredentials
+                  WinStationFreeUserSessionInfo
+                  WinStationGenerateLicense
+                  WinStationGetAllProcesses
+                  WinStationGetAllSessionsEx
+                  WinStationGetAllSessionsW
+                  WinStationGetAllUserSessions
+                  WinStationGetChildSessionId
+                  WinStationGetConnectionProperty
+                  WinStationGetCurrentSessionCapabilities
+                  WinStationGetCurrentSessionConnectionProperty
+                  WinStationGetCurrentSessionTerminalName
+                  WinStationGetDeviceId
+                  WinStationGetInitialApplication
+                  WinStationGetLanAdapterNameA
+                  WinStationGetLanAdapterNameW
+                  WinStationGetLoggedOnCount
+                  WinStationGetMachinePolicy
+                  WinStationGetParentSessionId
+                  WinStationGetProcessSid
+                  WinStationGetRedirectAuthInfo
+                  WinStationGetRestrictedLogonInfo
+                  WinStationGetSessionIds
+                  WinStationGetTermSrvCountersValue
+                  WinStationGetUserCertificates
+                  WinStationGetUserCredentials
+                  WinStationGetUserProfile
+                  WinStationInstallLicense
+                  WinStationIsChildSessionsEnabled
+                  WinStationIsCurrentSessionRemoteable
+                  WinStationIsHelpAssistantSession
+                  WinStationIsSessionPermitted
+                  WinStationIsSessionRemoteable
+                  WinStationNameFromLogonIdA
+                  WinStationNameFromLogonIdW
+                  WinStationNegotiateSession
+                  WinStationNtsdDebug
+                  WinStationOpenServerA
+                  WinStationOpenServerExA
+                  WinStationOpenServerExW
+                  WinStationOpenServerW
+                  WinStationPreCreateGlassReplacementSession
+                  WinStationPreCreateGlassReplacementSessionEx
+                  WinStationQueryAllowConcurrentConnections
+                  WinStationQueryCurrentSessionInformation
+                  WinStationQueryEnforcementCore
+                  WinStationQueryInformationA
+                  WinStationQueryInformationW
+                  WinStationQueryLicense
+                  WinStationQueryLogonCredentialsW
+                  WinStationQuerySessionVirtualIP
+                  WinStationQueryUpdateRequired
+                  WinStationRcmShadow2
+                  WinStationRedirectErrorMessage
+                  WinStationRedirectLogonBeginPainting
+                  WinStationRedirectLogonError
+                  WinStationRedirectLogonMessage
+                  WinStationRedirectLogonStatus
+                  WinStationRegisterConsoleNotification
+                  WinStationRegisterConsoleNotificationEx
+                  WinStationRegisterCurrentSessionNotificationEvent
+                  WinStationRegisterNotificationEvent
+                  WinStationRemoveLicense
+                  WinStationRenameA
+                  WinStationRenameW
+                  WinStationReportUIResult
+                  WinStationReset
+                  WinStationRevertFromServicesSession
+                  WinStationSendMessageA
+                  WinStationSendMessageW
+                  WinStationSendWindowMessage
+                  WinStationServerPing
+                  WinStationSetAutologonPassword
+                  WinStationSetInformationA
+                  WinStationSetInformationW
+                  WinStationSetPoolCount
+                  WinStationSetRenderHint
+                  WinStationShadow
+                  WinStationShadowAccessCheck
+                  WinStationShadowStop
+                  WinStationShadowStop2
+                  WinStationShutdownSystem
+                  WinStationSwitchToServicesSession
+                  WinStationSystemShutdownStarted
+                  WinStationSystemShutdownWait
+                  WinStationTerminateGlassReplacementSession
+                  WinStationTerminateProcess
+                  WinStationUnRegisterConsoleNotification
+                  WinStationUnRegisterNotificationEvent
+                  WinStationUserLoginAccessCheck
+                  WinStationVerify
+                  WinStationVirtualOpen
+                  WinStationVirtualOpenEx
+                  WinStationWaitSystemEvent
+                  _NWLogonQueryAdmin
+                  _NWLogonSetAdmin
+                  _WinStationAnnoyancePopup
+                  _WinStationBeepOpen
+                  _WinStationBreakPoint
+                  _WinStationCallback
+                  _WinStationCheckForApplicationName
+                  _WinStationFUSCanRemoteUserDisconnect
+                  _WinStationGetApplicationInfo
+                  _WinStationNotifyDisconnectPipe
+                  _WinStationNotifyLogoff
+                  _WinStationNotifyLogon
+                  _WinStationNotifyNewSession
+                  _WinStationOpenSessionDirectory
+                  _WinStationReInitializeSecurity
+                  _WinStationReadRegistry
+                  _WinStationSessionInitialized
+                  _WinStationShadowTarget
+                  _WinStationShadowTarget2
+                  _WinStationShadowTargetSetup
+                  _WinStationUpdateClientCachedCredentials
+                  _WinStationUpdateSettings
+                  _WinStationUpdateUserConfig
+                  _WinStationWaitForConnect
+
+  Summary
+
+          C0 .debug$S
+          14 .idata$2
+          14 .idata$3
+           8 .idata$4
+           8 .idata$5
+           C .idata$6

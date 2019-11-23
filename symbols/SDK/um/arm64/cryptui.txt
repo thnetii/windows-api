@@ -1,0 +1,75 @@
+Microsoft (R) COFF/PE Dumper Version 14.23.28107.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\arm64\cryptui.lib
+
+File Type: LIBRARY
+
+     Exports
+
+       ordinal    name
+
+                  ?AddChainToStore@@YAHPEAXPEBU_CERT_CONTEXT@@KPEAPEAXHPEAU_CERT_TRUST_STATUS@@@Z (int __cdecl AddChainToStore(void *,struct _CERT_CONTEXT const *,unsigned long,void * *,int,struct _CERT_TRUST_STATUS *))
+                  ?CertDllLogMismatchPinRules@@YAJPEBG000000@Z (long __cdecl CertDllLogMismatchPinRules(unsigned short const *,unsigned short const *,unsigned short const *,unsigned short const *,unsigned short const *,unsigned short const *,unsigned short const *))
+                  ?CertDllProtectedRootMessageBox@@YAHPEAXPEBU_CERT_CONTEXT@@KI@Z (int __cdecl CertDllProtectedRootMessageBox(void *,struct _CERT_CONTEXT const *,unsigned long,unsigned int))
+                  ?CompareCertificate@@YAH_J00@Z (int __cdecl CompareCertificate(__int64,__int64,__int64))
+                  ?CryptUIDlgAddPolicyServer@@YAJPEAUHWND__@@KHPEAPEAU_PolicyUrlProperties@@KHP6AJ0PEAGW4X509EnrollmentAuthFlags@@W4X509EnrollmentPolicyLoadOption@@W4X509CertificateEnrollmentContext@@PEAPEAUIX509EnrollmentPolicyServer@@@ZPEAPEAG88PEAK@Z (long __cdecl CryptUIDlgAddPolicyServer(struct HWND__ *,unsigned long,int,struct _PolicyUrlProperties * *,unsigned long,int,long (__cdecl*)(struct HWND__ *,unsigned short *,enum X509EnrollmentAuthFlags,enum X509EnrollmentPolicyLoadOption,enum X509CertificateEnrollmentContext,struct IX509EnrollmentPolicyServer * *),unsigned short * *,unsigned short * *,unsigned short * *,unsigned long *))
+                  ?CryptUIDlgAddPolicyServerWithPriority@@YAJPEAUHWND__@@KHPEAPEAU_PolicyUrlProperties@@KHP6AJ0PEAGW4X509EnrollmentAuthFlags@@W4X509EnrollmentPolicyLoadOption@@W4X509CertificateEnrollmentContext@@PEAPEAUIX509EnrollmentPolicyServer@@@ZPEAPEAG88PEAK9@Z (long __cdecl CryptUIDlgAddPolicyServerWithPriority(struct HWND__ *,unsigned long,int,struct _PolicyUrlProperties * *,unsigned long,int,long (__cdecl*)(struct HWND__ *,unsigned short *,enum X509EnrollmentAuthFlags,enum X509EnrollmentPolicyLoadOption,enum X509CertificateEnrollmentContext,struct IX509EnrollmentPolicyServer * *),unsigned short * *,unsigned short * *,unsigned short * *,unsigned long *,unsigned long *))
+                  ?CryptUIDlgPropertyPolicy@@YAJPEAUHWND__@@HHPEBG1KPEAPEAU_PolicyUrlProperties@@KPEAKPEAPEAPEAG3@Z (long __cdecl CryptUIDlgPropertyPolicy(struct HWND__ *,int,int,unsigned short const *,unsigned short const *,unsigned long,struct _PolicyUrlProperties * *,unsigned long,unsigned long *,unsigned short * * *,unsigned long *))
+                  ?DisplayHtmlHelp@@YAXPEAUHWND__@@PEBG@Z (void __cdecl DisplayHtmlHelp(struct HWND__ *,unsigned short const *))
+                  ?FormatDateStringAutoLayout@@YAHPEAPEAGU_FILETIME@@H@Z (int __cdecl FormatDateStringAutoLayout(unsigned short * *,struct _FILETIME,int))
+                  ?GetUnknownErrorString@@YAHPEAPEAGK@Z (int __cdecl GetUnknownErrorString(unsigned short * *,unsigned long))
+                  ?InvokeHelpLink@@YAXPEAUHWND__@@@Z (void __cdecl InvokeHelpLink(struct HWND__ *))
+                  ?MyFormatEnhancedKeyUsageString@@YAHPEAPEAGPEBU_CERT_CONTEXT@@HH@Z (int __cdecl MyFormatEnhancedKeyUsageString(unsigned short * *,struct _CERT_CONTEXT const *,int,int))
+                  ACUIProviderInvokeUI
+                  CertSelectionGetSerializedBlob
+                  CommonInit
+                  CryptDllProtectPrompt
+                  CryptUIDlgCertMgr
+                  CryptUIDlgFreeCAContext
+                  CryptUIDlgFreePolicyServerContext
+                  CryptUIDlgSelectCA
+                  CryptUIDlgSelectCertificateA
+                  CryptUIDlgSelectCertificateFromStore
+                  CryptUIDlgSelectCertificateW
+                  CryptUIDlgSelectPolicyServer
+                  CryptUIDlgSelectStoreA
+                  CryptUIDlgSelectStoreW
+                  CryptUIDlgViewCRLA
+                  CryptUIDlgViewCRLW
+                  CryptUIDlgViewCTLA
+                  CryptUIDlgViewCTLW
+                  CryptUIDlgViewCertificateA
+                  CryptUIDlgViewCertificatePropertiesA
+                  CryptUIDlgViewCertificatePropertiesW
+                  CryptUIDlgViewCertificateW
+                  CryptUIDlgViewContext
+                  CryptUIDlgViewSignerInfoA
+                  CryptUIDlgViewSignerInfoW
+                  CryptUIFreeCertificatePropertiesPagesA
+                  CryptUIFreeCertificatePropertiesPagesW
+                  CryptUIFreeViewSignaturesPagesA
+                  CryptUIFreeViewSignaturesPagesW
+                  CryptUIGetCertificatePropertiesPagesA
+                  CryptUIGetCertificatePropertiesPagesW
+                  CryptUIGetViewSignaturesPagesA
+                  CryptUIGetViewSignaturesPagesW
+                  CryptUIStartCertMgr
+                  CryptUIViewExpiringCerts
+                  CryptUIWizBuildCTL
+                  CryptUIWizDigitalSign
+                  CryptUIWizExport
+                  CryptUIWizFreeDigitalSignContext
+                  CryptUIWizImport
+                  CryptUIWizImportInternal
+                  IsWizardExtensionAvailable
+
+  Summary
+
+          C3 .debug$S
+          14 .idata$2
+          14 .idata$3
+           8 .idata$4
+           8 .idata$5
+           C .idata$6

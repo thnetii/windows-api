@@ -1,0 +1,36 @@
+Microsoft (R) COFF/PE Dumper Version 14.23.28107.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\arm64\vstorinterface.lib
+
+File Type: LIBRARY
+
+     Exports
+
+       ordinal    name
+
+                  ??0VirtualBus@VstorInterface@@QEAA@XZ (public: __cdecl VstorInterface::VirtualBus::VirtualBus(void))
+                  ??1VirtualBus@VstorInterface@@QEAA@XZ (public: __cdecl VstorInterface::VirtualBus::~VirtualBus(void))
+                  ??4VirtualBus@VstorInterface@@QEAAAEAV01@AEBV01@@Z (public: class VstorInterface::VirtualBus & __cdecl VstorInterface::VirtualBus::operator=(class VstorInterface::VirtualBus const &))
+                  ?Close@VirtualBus@VstorInterface@@AEAAXXZ (private: void __cdecl VstorInterface::VirtualBus::Close(void))
+                  ?CreateDriveEx@VirtualBus@VstorInterface@@QEAAJPEAUtagNewVirtualDriveDescription@@AEAUtagVirtualDriveInformation@@@Z (public: long __cdecl VstorInterface::VirtualBus::CreateDriveEx(struct tagNewVirtualDriveDescription *,struct tagVirtualDriveInformation &))
+                  ?IsValid@VirtualBus@VstorInterface@@QEAA_NXZ (public: bool __cdecl VstorInterface::VirtualBus::IsValid(void))
+                  ?Open@VirtualBus@VstorInterface@@AEAAJXZ (private: long __cdecl VstorInterface::VirtualBus::Open(void))
+                  ?QueryDriveInterface@VirtualBus@VstorInterface@@QEAAJAEBU_GUID@@PEAGK@Z (public: long __cdecl VstorInterface::VirtualBus::QueryDriveInterface(struct _GUID const &,unsigned short *,unsigned long))
+                  ?QueryMountedImage@VirtualBus@VstorInterface@@QEAAJAEBU_GUID@@PEAGK@Z (public: long __cdecl VstorInterface::VirtualBus::QueryMountedImage(struct _GUID const &,unsigned short *,unsigned long))
+                  ?QueryStorageInformation@VirtualBus@VstorInterface@@QEAAJAEBU_GUID@@AEAUSTORAGE_INFORMATION@12@@Z (public: long __cdecl VstorInterface::VirtualBus::QueryStorageInformation(struct _GUID const &,struct VstorInterface::VirtualBus::STORAGE_INFORMATION &))
+                  ?QueryStorageInformation@VirtualBus@VstorInterface@@QEAAJPEAXAEAUSTORAGE_INFORMATION@12@@Z (public: long __cdecl VstorInterface::VirtualBus::QueryStorageInformation(void *,struct VstorInterface::VirtualBus::STORAGE_INFORMATION &))
+                  ?QueryStorageInformation@VirtualBus@VstorInterface@@QEAAJPEBGAEAUSTORAGE_INFORMATION@12@@Z (public: long __cdecl VstorInterface::VirtualBus::QueryStorageInformation(unsigned short const *,struct VstorInterface::VirtualBus::STORAGE_INFORMATION &))
+                  ?QueryVersion@VirtualBus@VstorInterface@@QEAAJAEAUtagVirtualStorageVersion@@@Z (public: long __cdecl VstorInterface::VirtualBus::QueryVersion(struct tagVirtualStorageVersion &))
+                  ?ReSync@VirtualBus@VstorInterface@@QEAAJAEBU_GUID@@PEBG@Z (public: long __cdecl VstorInterface::VirtualBus::ReSync(struct _GUID const &,unsigned short const *))
+                  ?RemoveDrive@VirtualBus@VstorInterface@@QEAAJAEBU_GUID@@_N@Z (public: long __cdecl VstorInterface::VirtualBus::RemoveDrive(struct _GUID const &,bool))
+
+  Summary
+
+          D8 .debug$S
+          14 .idata$2
+          14 .idata$3
+           8 .idata$4
+           8 .idata$5
+          14 .idata$6

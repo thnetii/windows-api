@@ -1,0 +1,4391 @@
+Microsoft (R) COFF/PE Dumper Version 14.23.28107.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\arm64\mincore.lib
+
+File Type: LIBRARY
+
+     Exports
+
+       ordinal    name
+
+                  CLSIDFromProgID
+                  CLSIDFromString
+                  CoAddRefServerProcess
+                  CoAllowUnmarshalerCLSID
+                  CoCancelCall
+                  CoCopyProxy
+                  CoCreateFreeThreadedMarshaler
+                  CoCreateGuid
+                  CoCreateInstance
+                  CoCreateInstanceEx
+                  CoCreateInstanceFromApp
+                  CoDecodeProxy
+                  CoDecrementMTAUsage
+                  CoDisableCallCancellation
+                  CoDisconnectContext
+                  CoDisconnectObject
+                  CoEnableCallCancellation
+                  CoFreeUnusedLibraries
+                  CoFreeUnusedLibrariesEx
+                  CoGetApartmentType
+                  CoGetCallContext
+                  CoGetCallerTID
+                  CoGetCancelObject
+                  CoGetClassObject
+                  CoGetContextToken
+                  CoGetCurrentLogicalThreadId
+                  CoGetCurrentProcess
+                  CoGetDefaultContext
+                  CoGetInterfaceAndReleaseStream
+                  CoGetMalloc
+                  CoGetMarshalSizeMax
+                  CoGetObjectContext
+                  CoGetPSClsid
+                  CoGetStandardMarshal
+                  CoGetStdMarshalEx
+                  CoGetTreatAsClass
+                  CoImpersonateClient
+                  CoIncrementMTAUsage
+                  CoInitializeEx
+                  CoInitializeSecurity
+                  CoInvalidateRemoteMachineBindings
+                  CoIsHandlerConnected
+                  CoLockObjectExternal
+                  CoMarshalHresult
+                  CoMarshalInterThreadInterfaceInStream
+                  CoMarshalInterface
+                  CoQueryAuthenticationServices
+                  CoQueryClientBlanket
+                  CoQueryProxyBlanket
+                  CoRegisterClassObject
+                  CoRegisterPSClsid
+                  CoRegisterSurrogate
+                  CoReleaseMarshalData
+                  CoReleaseServerProcess
+                  CoResumeClassObjects
+                  CoRevertToSelf
+                  CoRevokeClassObject
+                  CoSetCancelObject
+                  CoSetProxyBlanket
+                  CoSuspendClassObjects
+                  CoSwitchCallContext
+                  CoTaskMemAlloc
+                  CoTaskMemFree
+                  CoTaskMemRealloc
+                  CoTestCancel
+                  CoUninitialize
+                  CoUnmarshalHresult
+                  CoUnmarshalInterface
+                  CoWaitForMultipleHandles
+                  CoWaitForMultipleObjects
+                  CreateStreamOnHGlobal
+                  FreePropVariantArray
+                  GetHGlobalFromStream
+                  IIDFromString
+                  ProgIDFromCLSID
+                  PropVariantClear
+                  PropVariantCopy
+                  StringFromCLSID
+                  StringFromGUID2
+                  StringFromIID
+                  CoRegisterActivationFilter
+                  RoGetAgileReference
+                  CLSIDFromProgIDEx
+                  CoFileTimeNow
+                  CreateConsoleScreenBuffer
+                  FillConsoleOutputAttribute
+                  FillConsoleOutputCharacterA
+                  FillConsoleOutputCharacterW
+                  FlushConsoleInputBuffer
+                  GenerateConsoleCtrlEvent
+                  GetConsoleCursorInfo
+                  GetConsoleScreenBufferInfo
+                  GetConsoleScreenBufferInfoEx
+                  GetLargestConsoleWindowSize
+                  ReadConsoleOutputA
+                  ReadConsoleOutputAttribute
+                  ReadConsoleOutputCharacterA
+                  ReadConsoleOutputCharacterW
+                  ReadConsoleOutputW
+                  ScrollConsoleScreenBufferA
+                  ScrollConsoleScreenBufferW
+                  SetConsoleActiveScreenBuffer
+                  SetConsoleCP
+                  SetConsoleCursorInfo
+                  SetConsoleCursorPosition
+                  SetConsoleOutputCP
+                  SetConsoleScreenBufferInfoEx
+                  SetConsoleScreenBufferSize
+                  SetConsoleTextAttribute
+                  SetConsoleWindowInfo
+                  WriteConsoleInputA
+                  WriteConsoleInputW
+                  WriteConsoleOutputA
+                  WriteConsoleOutputAttribute
+                  WriteConsoleOutputCharacterA
+                  WriteConsoleOutputCharacterW
+                  WriteConsoleOutputW
+                  GetConsoleOriginalTitleA
+                  GetConsoleOriginalTitleW
+                  GetConsoleTitleA
+                  GetConsoleTitleW
+                  SetConsoleTitleA
+                  SetConsoleTitleW
+                  AddConsoleAliasA
+                  AddConsoleAliasW
+                  ExpungeConsoleCommandHistoryA
+                  ExpungeConsoleCommandHistoryW
+                  GetConsoleAliasA
+                  GetConsoleAliasExesA
+                  GetConsoleAliasExesLengthA
+                  GetConsoleAliasExesLengthW
+                  GetConsoleAliasExesW
+                  GetConsoleAliasW
+                  GetConsoleAliasesA
+                  GetConsoleAliasesLengthA
+                  GetConsoleAliasesLengthW
+                  GetConsoleAliasesW
+                  GetConsoleCommandHistoryA
+                  GetConsoleCommandHistoryLengthA
+                  GetConsoleCommandHistoryLengthW
+                  GetConsoleCommandHistoryW
+                  GetConsoleDisplayMode
+                  GetConsoleFontSize
+                  GetConsoleHistoryInfo
+                  GetConsoleProcessList
+                  GetConsoleSelectionInfo
+                  GetConsoleWindow
+                  GetCurrentConsoleFont
+                  GetCurrentConsoleFontEx
+                  GetNumberOfConsoleMouseButtons
+                  SetConsoleDisplayMode
+                  SetConsoleHistoryInfo
+                  SetConsoleNumberOfCommandsA
+                  SetConsoleNumberOfCommandsW
+                  SetCurrentConsoleFontEx
+                  CopyFile2
+                  CopyFileExW
+                  CreateDirectoryExW
+                  CreateHardLinkW
+                  CreateSymbolicLinkW
+                  GetFileInformationByHandleEx
+                  MoveFileExW
+                  MoveFileWithProgressW
+                  ReOpenFile
+                  ReadDirectoryChangesW
+                  ReplaceFileW
+                  OpenFileById
+                  CopyFileW
+                  CreateHardLinkA
+                  ReadDirectoryChangesExW
+                  GetFirmwareEnvironmentVariableA
+                  GetFirmwareEnvironmentVariableExA
+                  GetFirmwareEnvironmentVariableExW
+                  GetFirmwareEnvironmentVariableW
+                  SetFirmwareEnvironmentVariableA
+                  SetFirmwareEnvironmentVariableExA
+                  SetFirmwareEnvironmentVariableExW
+                  SetFirmwareEnvironmentVariableW
+                  EnumCalendarInfoExEx
+                  EnumCalendarInfoExW
+                  EnumCalendarInfoW
+                  EnumDateFormatsExEx
+                  EnumDateFormatsExW
+                  EnumDateFormatsW
+                  EnumSystemCodePagesW
+                  EnumTimeFormatsEx
+                  EnumTimeFormatsW
+                  GetCurrencyFormatEx
+                  GetCurrencyFormatW
+                  GetNumberFormatEx
+                  AddSIDToBoundaryDescriptor
+                  ClosePrivateNamespace
+                  CreateBoundaryDescriptorW
+                  CreatePrivateNamespaceW
+                  DeleteBoundaryDescriptor
+                  OpenPrivateNamespaceW
+                  PathAllocCanonicalize
+                  PathAllocCombine
+                  PathCchAddBackslash
+                  PathCchAddBackslashEx
+                  PathCchAddExtension
+                  PathCchAppend
+                  PathCchAppendEx
+                  PathCchCanonicalize
+                  PathCchCanonicalizeEx
+                  PathCchCombine
+                  PathCchCombineEx
+                  PathCchFindExtension
+                  PathCchIsRoot
+                  PathCchRemoveBackslash
+                  PathCchRemoveBackslashEx
+                  PathCchRemoveExtension
+                  PathCchRemoveFileSpec
+                  PathCchRenameExtension
+                  PathCchSkipRoot
+                  PathCchStripPrefix
+                  PathCchStripToRoot
+                  PathIsUNCEx
+                  GetProcessGroupAffinity
+                  GetThreadGroupAffinity
+                  SetThreadGroupAffinity
+                  K32EmptyWorkingSet
+                  K32EnumDeviceDrivers
+                  K32EnumPageFilesW
+                  K32EnumProcessModules
+                  K32EnumProcessModulesEx
+                  K32EnumProcesses
+                  K32GetDeviceDriverBaseNameW
+                  K32GetDeviceDriverFileNameW
+                  K32GetMappedFileNameW
+                  K32GetModuleBaseNameW
+                  K32GetModuleFileNameExW
+                  K32GetModuleInformation
+                  K32GetPerformanceInfo
+                  K32GetProcessImageFileNameW
+                  K32GetProcessMemoryInfo
+                  K32GetWsChanges
+                  K32GetWsChangesEx
+                  K32InitializeProcessForWsWatch
+                  K32QueryWorkingSet
+                  K32QueryWorkingSetEx
+                  QueryFullProcessImageNameW
+                  AbortSystemShutdownW
+                  InitiateSystemShutdownExW
+                  InitiateShutdownW
+                  CharLowerBuffW
+                  CharLowerW
+                  CharNextW
+                  CharPrevW
+                  CharUpperBuffW
+                  CharUpperW
+                  IsCharAlphaNumericW
+                  IsCharAlphaW
+                  IsCharLowerW
+                  IsCharUpperW
+                  SHLoadIndirectString
+                  GetNumaHighestNodeNumber
+                  GetNumaNodeProcessorMaskEx
+                  GetNumaProximityNodeEx
+                  GetFileVersionInfoExW
+                  GetFileVersionInfoSizeExW
+                  VerFindFileW
+                  VerQueryValueW
+                  GetFileVersionInfoSizeW
+                  GetFileVersionInfoW
+                  GetRestrictedErrorInfo
+                  RoCaptureErrorContext
+                  RoFailFastWithErrorContext
+                  RoGetErrorReportingFlags
+                  RoOriginateError
+                  RoOriginateErrorW
+                  RoResolveRestrictedErrorInfoReference
+                  RoSetErrorReportingFlags
+                  RoTransformError
+                  RoTransformErrorW
+                  SetRestrictedErrorInfo
+                  IsErrorPropagationEnabled
+                  RoClearError
+                  RoGetMatchingRestrictedErrorInfo
+                  RoInspectCapturedStackBackTrace
+                  RoInspectThreadErrorInfo
+                  RoOriginateLanguageException
+                  RoReportFailedDelegate
+                  RoReportUnhandledError
+                  RoActivateInstance
+                  RoGetActivationFactory
+                  RoGetApartmentIdentifier
+                  RoInitialize
+                  RoRegisterActivationFactories
+                  RoRegisterForApartmentShutdown
+                  RoRevokeActivationFactories
+                  RoUninitialize
+                  RoUnregisterForApartmentShutdown
+                  HSTRING_UserFree
+                  HSTRING_UserFree64
+                  HSTRING_UserMarshal
+                  HSTRING_UserMarshal64
+                  HSTRING_UserSize
+                  HSTRING_UserSize64
+                  HSTRING_UserUnmarshal
+                  HSTRING_UserUnmarshal64
+                  WindowsCompareStringOrdinal
+                  WindowsConcatString
+                  WindowsCreateString
+                  WindowsCreateStringReference
+                  WindowsDeleteString
+                  WindowsDeleteStringBuffer
+                  WindowsDuplicateString
+                  WindowsGetStringLen
+                  WindowsGetStringRawBuffer
+                  WindowsInspectString
+                  WindowsIsStringEmpty
+                  WindowsPreallocateStringBuffer
+                  WindowsPromoteStringBuffer
+                  WindowsReplaceString
+                  WindowsStringHasEmbeddedNull
+                  WindowsSubstring
+                  WindowsSubstringWithSpecifiedLength
+                  WindowsTrimStringEnd
+                  WindowsTrimStringStart
+                  WindowsInspectString2
+                  CopyContext
+                  InitializeContext
+                  CM_Delete_Class_Key
+                  CM_Delete_DevNode_Key
+                  CM_Delete_Device_Interface_KeyW
+                  CM_Disable_DevNode
+                  CM_Enable_DevNode
+                  CM_Get_Child
+                  CM_Get_Class_PropertyW
+                  CM_Get_Class_Property_Keys
+                  CM_Get_Class_Registry_PropertyW
+                  CM_Get_Depth
+                  CM_Get_DevNode_PropertyW
+                  CM_Get_DevNode_Property_Keys
+                  CM_Get_DevNode_Registry_PropertyW
+                  CM_Get_DevNode_Status
+                  CM_Get_Device_IDW
+                  CM_Get_Device_ID_ListW
+                  CM_Get_Device_ID_List_SizeW
+                  CM_Get_Device_ID_Size
+                  CM_Get_Device_Interface_ListW
+                  CM_Get_Device_Interface_List_SizeW
+                  CM_Get_Device_Interface_PropertyW
+                  CM_Get_Device_Interface_Property_KeysW
+                  CM_Get_Parent
+                  CM_Get_Sibling
+                  CM_Locate_DevNodeW
+                  CM_MapCrToWin32Err
+                  CM_Open_Class_KeyW
+                  CM_Open_DevNode_Key
+                  CM_Open_Device_Interface_KeyW
+                  CM_Query_And_Remove_SubTreeW
+                  CM_Register_Notification
+                  CM_Set_Class_PropertyW
+                  CM_Set_Class_Registry_PropertyW
+                  CM_Set_DevNode_PropertyW
+                  CM_Set_DevNode_Registry_PropertyW
+                  CM_Set_Device_Interface_PropertyW
+                  CM_Setup_DevNode
+                  CM_Uninstall_DevNode
+                  CM_Unregister_Notification
+                  CM_Delete_Device_Interface_KeyA
+                  CM_Get_Class_Registry_PropertyA
+                  CM_Get_DevNode_Registry_PropertyA
+                  CM_Get_Device_IDA
+                  CM_Get_Device_ID_ListA
+                  CM_Get_Device_ID_List_SizeA
+                  CM_Get_Device_Interface_ListA
+                  CM_Get_Device_Interface_List_SizeA
+                  CM_Locate_DevNodeA
+                  CM_Open_Class_KeyA
+                  CM_Open_Device_Interface_KeyA
+                  CM_Query_And_Remove_SubTreeA
+                  CM_Set_Class_Registry_PropertyA
+                  CM_Set_DevNode_Registry_PropertyA
+                  SwDeviceClose
+                  SwDeviceCreate
+                  SwDeviceInterfacePropertySet
+                  SwDeviceInterfaceRegister
+                  SwDeviceInterfaceSetState
+                  SwDevicePropertySet
+                  SwMemFree
+                  SwDeviceGetLifetime
+                  SwDeviceSetLifetime
+                  GetTraceEnableFlags
+                  GetTraceEnableLevel
+                  GetTraceLoggerHandle
+                  RegisterTraceGuidsW
+                  TraceEvent
+                  TraceMessage
+                  TraceMessageVa
+                  UnregisterTraceGuids
+                  EventActivityIdControl
+                  EventEnabled
+                  EventProviderEnabled
+                  EventRegister
+                  EventSetInformation
+                  EventUnregister
+                  EventWrite
+                  EventWriteEx
+                  EventWriteString
+                  EventWriteTransfer
+                  CallNtPowerInformation
+                  GetPwrCapabilities
+                  PowerDeterminePlatformRoleEx
+                  PowerRegisterSuspendResumeNotification
+                  PowerUnregisterSuspendResumeNotification
+                  PowerGetActiveScheme
+                  PowerReadACValue
+                  PowerReadDCValue
+                  PowerSetActiveScheme
+                  PowerSettingRegisterNotification
+                  PowerSettingUnregisterNotification
+                  PowerWriteACValueIndex
+                  PowerWriteDCValueIndex
+                  CStdAsyncStubBuffer2_Connect
+                  CStdAsyncStubBuffer2_Disconnect
+                  CStdAsyncStubBuffer2_Release
+                  CStdAsyncStubBuffer_AddRef
+                  CStdAsyncStubBuffer_Connect
+                  CStdAsyncStubBuffer_Disconnect
+                  CStdAsyncStubBuffer_Invoke
+                  CStdAsyncStubBuffer_QueryInterface
+                  CStdAsyncStubBuffer_Release
+                  CStdStubBuffer2_Connect
+                  CStdStubBuffer2_CountRefs
+                  CStdStubBuffer2_Disconnect
+                  CStdStubBuffer2_QueryInterface
+                  NdrProxyForwardingFunction10
+                  NdrProxyForwardingFunction11
+                  NdrProxyForwardingFunction12
+                  NdrProxyForwardingFunction13
+                  NdrProxyForwardingFunction14
+                  NdrProxyForwardingFunction15
+                  NdrProxyForwardingFunction16
+                  NdrProxyForwardingFunction17
+                  NdrProxyForwardingFunction18
+                  NdrProxyForwardingFunction19
+                  NdrProxyForwardingFunction20
+                  NdrProxyForwardingFunction21
+                  NdrProxyForwardingFunction22
+                  NdrProxyForwardingFunction23
+                  NdrProxyForwardingFunction24
+                  NdrProxyForwardingFunction25
+                  NdrProxyForwardingFunction26
+                  NdrProxyForwardingFunction27
+                  NdrProxyForwardingFunction28
+                  NdrProxyForwardingFunction29
+                  NdrProxyForwardingFunction3
+                  NdrProxyForwardingFunction30
+                  NdrProxyForwardingFunction31
+                  NdrProxyForwardingFunction32
+                  NdrProxyForwardingFunction4
+                  NdrProxyForwardingFunction5
+                  NdrProxyForwardingFunction6
+                  NdrProxyForwardingFunction7
+                  NdrProxyForwardingFunction8
+                  NdrProxyForwardingFunction9
+                  ObjectStublessClient10
+                  ObjectStublessClient11
+                  ObjectStublessClient12
+                  ObjectStublessClient13
+                  ObjectStublessClient14
+                  ObjectStublessClient15
+                  ObjectStublessClient16
+                  ObjectStublessClient17
+                  ObjectStublessClient18
+                  ObjectStublessClient19
+                  ObjectStublessClient20
+                  ObjectStublessClient21
+                  ObjectStublessClient22
+                  ObjectStublessClient23
+                  ObjectStublessClient24
+                  ObjectStublessClient25
+                  ObjectStublessClient26
+                  ObjectStublessClient27
+                  ObjectStublessClient28
+                  ObjectStublessClient29
+                  ObjectStublessClient3
+                  ObjectStublessClient30
+                  ObjectStublessClient31
+                  ObjectStublessClient32
+                  ObjectStublessClient4
+                  ObjectStublessClient5
+                  ObjectStublessClient6
+                  ObjectStublessClient7
+                  ObjectStublessClient8
+                  ObjectStublessClient9
+                  QuirkGetData
+                  QuirkGetData2
+                  QuirkIsEnabled
+                  QuirkIsEnabled2
+                  QuirkIsEnabled3
+                  QuirkIsEnabledForPackage
+                  QuirkIsEnabledForPackage2
+                  QuirkIsEnabledForProcess
+                  QuirkIsEnabledForPackage3
+                  QuirkIsEnabledForPackage4
+                  LookupAccountNameW
+                  LookupAccountSidW
+                  LookupPrivilegeDisplayNameW
+                  LookupPrivilegeNameW
+                  LookupPrivilegeValueW
+                  LsaEnumerateTrustedDomains
+                  LsaManageSidNameMapping
+                  DelayLoadFailureHook
+                  ResolveDelayLoadedAPI
+                  ResolveDelayLoadsFromDll
+                  AuthzAccessCheck
+                  AuthzAddSidsToContext
+                  AuthzCachedAccessCheck
+                  AuthzEnumerateSecurityEventSources
+                  AuthzEvaluateSacl
+                  AuthzFreeAuditEvent
+                  AuthzFreeCentralAccessPolicyCache
+                  AuthzFreeContext
+                  AuthzFreeHandle
+                  AuthzFreeResourceManager
+                  AuthzGetInformationFromContext
+                  AuthzInitializeCompoundContext
+                  AuthzInitializeContextFromAuthzContext
+                  AuthzInitializeContextFromSid
+                  AuthzInitializeContextFromToken
+                  AuthzInitializeObjectAccessAuditEvent
+                  AuthzInitializeObjectAccessAuditEvent2
+                  AuthzInitializeRemoteAccessCheck
+                  AuthzInitializeRemoteResourceManager
+                  AuthzInitializeResourceManager
+                  AuthzInitializeResourceManagerEx
+                  AuthzInstallSecurityEventSource
+                  AuthzModifyClaims
+                  AuthzModifySecurityAttributes
+                  AuthzModifySids
+                  AuthzOpenObjectAudit
+                  AuthzRegisterCapChangeNotification
+                  AuthzRegisterSecurityEventSource
+                  AuthzReportSecurityEvent
+                  AuthzReportSecurityEventFromParams
+                  AuthzSetAppContainerInformation
+                  AuthzShutdownRemoteAccessCheck
+                  AuthzUninstallSecurityEventSource
+                  AuthzUnregisterCapChangeNotification
+                  AuthzUnregisterSecurityEventSource
+                  AuthziLogAuditEvent
+                  BCryptAddContextFunction
+                  BCryptCloseAlgorithmProvider
+                  BCryptConfigureContext
+                  BCryptConfigureContextFunction
+                  BCryptCreateContext
+                  BCryptCreateHash
+                  BCryptCreateMultiHash
+                  BCryptDecrypt
+                  BCryptDeleteContext
+                  BCryptDeriveKey
+                  BCryptDeriveKeyCapi
+                  BCryptDeriveKeyPBKDF2
+                  BCryptDestroyHash
+                  BCryptDestroyKey
+                  BCryptDestroySecret
+                  BCryptDuplicateHash
+                  BCryptDuplicateKey
+                  BCryptEncrypt
+                  BCryptEnumAlgorithms
+                  BCryptEnumContextFunctionProviders
+                  BCryptEnumContextFunctions
+                  BCryptEnumContexts
+                  BCryptEnumProviders
+                  BCryptEnumRegisteredProviders
+                  BCryptExportKey
+                  BCryptFinalizeKeyPair
+                  BCryptFinishHash
+                  BCryptFreeBuffer
+                  BCryptGenRandom
+                  BCryptGenerateKeyPair
+                  BCryptGenerateSymmetricKey
+                  BCryptGetFipsAlgorithmMode
+                  BCryptGetProperty
+                  BCryptHash
+                  BCryptHashData
+                  BCryptImportKey
+                  BCryptImportKeyPair
+                  BCryptKeyDerivation
+                  BCryptOpenAlgorithmProvider
+                  BCryptProcessMultiOperations
+                  BCryptQueryContextConfiguration
+                  BCryptQueryContextFunctionConfiguration
+                  BCryptQueryContextFunctionProperty
+                  BCryptQueryProviderRegistration
+                  BCryptRegisterConfigChangeNotify
+                  BCryptRemoveContextFunction
+                  BCryptResolveProviders
+                  BCryptSecretAgreement
+                  BCryptSetAuditingInterface
+                  BCryptSetContextFunctionProperty
+                  BCryptSetProperty
+                  BCryptSignHash
+                  BCryptUnregisterConfigChangeNotify
+                  BCryptVerifySignature
+            35    CloseCompressor
+            45    CloseDecompressor
+            33    Compress
+            30    CreateCompressor
+            40    CreateDecompressor
+            43    Decompress
+             4    DeleteExtractedFiles
+             2    DllGetVersion
+             3    Extract
+            11    FCIAddFile
+            10    FCICreate
+            14    FCIDestroy
+            13    FCIFlushCabinet
+            12    FCIFlushFolder
+            22    FDICopy
+            20    FDICreate
+            23    FDIDestroy
+            21    FDIIsCabinet
+            24    FDITruncateCabinet
+             1    GetDllVersion
+            32    QueryCompressorInformation
+            42    QueryDecompressorInformation
+            34    ResetCompressor
+            44    ResetDecompressor
+            31    SetCompressorInformation
+            41    SetDecompressorInformation
+                  CertAddCRLContextToStore
+                  CertAddCRLLinkToStore
+                  CertAddCTLContextToStore
+                  CertAddCTLLinkToStore
+                  CertAddCertificateContextToStore
+                  CertAddCertificateLinkToStore
+                  CertAddEncodedCRLToStore
+                  CertAddEncodedCTLToStore
+                  CertAddEncodedCertificateToStore
+                  CertAddEncodedCertificateToSystemStoreA
+                  CertAddEncodedCertificateToSystemStoreW
+                  CertAddEnhancedKeyUsageIdentifier
+                  CertAddRefServerOcspResponse
+                  CertAddRefServerOcspResponseContext
+                  CertAddSerializedElementToStore
+                  CertAddStoreToCollection
+                  CertAlgIdToOID
+                  CertCloseServerOcspResponse
+                  CertCloseStore
+                  CertCompareCertificate
+                  CertCompareCertificateName
+                  CertCompareIntegerBlob
+                  CertComparePublicKeyInfo
+                  CertControlStore
+                  CertCreateCRLContext
+                  CertCreateCTLContext
+                  CertCreateCTLEntryFromCertificateContextProperties
+                  CertCreateCertificateChainEngine
+                  CertCreateCertificateContext
+                  CertCreateContext
+                  CertCreateSelfSignCertificate
+                  CertDeleteCRLFromStore
+                  CertDeleteCTLFromStore
+                  CertDeleteCertificateFromStore
+                  CertDuplicateCRLContext
+                  CertDuplicateCTLContext
+                  CertDuplicateCertificateChain
+                  CertDuplicateCertificateContext
+                  CertDuplicateStore
+                  CertEnumCRLContextProperties
+                  CertEnumCRLsInStore
+                  CertEnumCTLContextProperties
+                  CertEnumCTLsInStore
+                  CertEnumCertificateContextProperties
+                  CertEnumCertificatesInStore
+                  CertEnumPhysicalStore
+                  CertEnumSubjectInSortedCTL
+                  CertEnumSystemStore
+                  CertEnumSystemStoreLocation
+                  CertFindAttribute
+                  CertFindCRLInStore
+                  CertFindCTLInStore
+                  CertFindCertificateInCRL
+                  CertFindCertificateInStore
+                  CertFindChainInStore
+                  CertFindExtension
+                  CertFindRDNAttr
+                  CertFindSubjectInCTL
+                  CertFindSubjectInSortedCTL
+                  CertFreeCRLContext
+                  CertFreeCTLContext
+                  CertFreeCertificateChain
+                  CertFreeCertificateChainEngine
+                  CertFreeCertificateChainList
+                  CertFreeCertificateContext
+                  CertFreeServerOcspResponseContext
+                  CertGetCRLContextProperty
+                  CertGetCRLFromStore
+                  CertGetCTLContextProperty
+                  CertGetCertificateChain
+                  CertGetCertificateContextProperty
+                  CertGetEnhancedKeyUsage
+                  CertGetIntendedKeyUsage
+                  CertGetIssuerCertificateFromStore
+                  CertGetNameStringA
+                  CertGetNameStringW
+                  CertGetPublicKeyLength
+                  CertGetServerOcspResponseContext
+                  CertGetStoreProperty
+                  CertGetSubjectCertificateFromStore
+                  CertGetValidUsages
+                  CertIsRDNAttrsInCertificateName
+                  CertIsStrongHashToSign
+                  CertIsValidCRLForCertificate
+                  CertIsWeakHash
+                  CertNameToStrA
+                  CertNameToStrW
+                  CertOIDToAlgId
+                  CertOpenServerOcspResponse
+                  CertOpenStore
+                  CertOpenSystemStoreA
+                  CertOpenSystemStoreW
+                  CertRDNValueToStrA
+                  CertRDNValueToStrW
+                  CertRegisterPhysicalStore
+                  CertRegisterSystemStore
+                  CertRemoveEnhancedKeyUsageIdentifier
+                  CertRemoveStoreFromCollection
+                  CertResyncCertificateChainEngine
+                  CertRetrieveLogoOrBiometricInfo
+                  CertSaveStore
+                  CertSelectCertificateChains
+                  CertSerializeCRLStoreElement
+                  CertSerializeCTLStoreElement
+                  CertSerializeCertificateStoreElement
+                  CertSetCRLContextProperty
+                  CertSetCTLContextProperty
+                  CertSetCertificateContextPropertiesFromCTLEntry
+                  CertSetCertificateContextProperty
+                  CertSetEnhancedKeyUsage
+                  CertSetStoreProperty
+                  CertStrToNameA
+                  CertStrToNameW
+                  CertUnregisterPhysicalStore
+                  CertUnregisterSystemStore
+                  CertVerifyCRLRevocation
+                  CertVerifyCRLTimeValidity
+                  CertVerifyCTLUsage
+                  CertVerifyCertificateChainPolicy
+                  CertVerifyRevocation
+                  CertVerifySubjectCertificateContext
+                  CertVerifyTimeValidity
+                  CertVerifyValidityNesting
+                  CryptAcquireCertificatePrivateKey
+                  CryptBinaryToStringA
+                  CryptBinaryToStringW
+                  CryptCloseAsyncHandle
+                  CryptCreateAsyncHandle
+                  CryptCreateKeyIdentifierFromCSP
+                  CryptDecodeMessage
+                  CryptDecodeObject
+                  CryptDecodeObjectEx
+                  CryptDecryptAndVerifyMessageSignature
+                  CryptDecryptMessage
+                  CryptEncodeObject
+                  CryptEncodeObjectEx
+                  CryptEncryptMessage
+                  CryptEnumKeyIdentifierProperties
+                  CryptEnumOIDFunction
+                  CryptEnumOIDInfo
+                  CryptExportPKCS8
+                  CryptExportPublicKeyInfo
+                  CryptExportPublicKeyInfoEx
+                  CryptExportPublicKeyInfoFromBCryptKeyHandle
+                  CryptFindCertificateKeyProvInfo
+                  CryptFindLocalizedName
+                  CryptFindOIDInfo
+                  CryptFormatObject
+                  CryptFreeOIDFunctionAddress
+                  CryptGetAsyncParam
+                  CryptGetDefaultOIDDllList
+                  CryptGetDefaultOIDFunctionAddress
+                  CryptGetKeyIdentifierProperty
+                  CryptGetMessageCertificates
+                  CryptGetMessageSignerCount
+                  CryptGetOIDFunctionAddress
+                  CryptGetOIDFunctionValue
+                  CryptHashCertificate
+                  CryptHashCertificate2
+                  CryptHashMessage
+                  CryptHashPublicKeyInfo
+                  CryptHashToBeSigned
+                  CryptImportPKCS8
+                  CryptImportPublicKeyInfo
+                  CryptImportPublicKeyInfoEx
+                  CryptImportPublicKeyInfoEx2
+                  CryptInitOIDFunctionSet
+                  CryptInstallDefaultContext
+                  CryptInstallOIDFunctionAddress
+                  CryptLoadSip
+                  CryptMemAlloc
+                  CryptMemFree
+                  CryptMemRealloc
+                  CryptMsgCalculateEncodedLength
+                  CryptMsgClose
+                  CryptMsgControl
+                  CryptMsgCountersign
+                  CryptMsgCountersignEncoded
+                  CryptMsgDuplicate
+                  CryptMsgEncodeAndSignCTL
+                  CryptMsgGetAndVerifySigner
+                  CryptMsgGetParam
+                  CryptMsgOpenToDecode
+                  CryptMsgOpenToEncode
+                  CryptMsgSignCTL
+                  CryptMsgUpdate
+                  CryptMsgVerifyCountersignatureEncoded
+                  CryptMsgVerifyCountersignatureEncodedEx
+                  CryptProtectData
+                  CryptProtectMemory
+                  CryptQueryObject
+                  CryptRegisterDefaultOIDFunction
+                  CryptRegisterOIDFunction
+                  CryptRegisterOIDInfo
+                  CryptRetrieveTimeStamp
+                  CryptSIPAddProvider
+                  CryptSIPCreateIndirectData
+                  CryptSIPGetCaps
+                  CryptSIPGetSealedDigest
+                  CryptSIPGetSignedDataMsg
+                  CryptSIPLoad
+                  CryptSIPPutSignedDataMsg
+                  CryptSIPRemoveProvider
+                  CryptSIPRemoveSignedDataMsg
+                  CryptSIPRetrieveSubjectGuid
+                  CryptSIPRetrieveSubjectGuidForCatalogFile
+                  CryptSIPVerifyIndirectData
+                  CryptSetAsyncParam
+                  CryptSetKeyIdentifierProperty
+                  CryptSetOIDFunctionValue
+                  CryptSignAndEncodeCertificate
+                  CryptSignAndEncryptMessage
+                  CryptSignCertificate
+                  CryptSignMessage
+                  CryptSignMessageWithKey
+                  CryptStringToBinaryA
+                  CryptStringToBinaryW
+                  CryptUninstallDefaultContext
+                  CryptUnprotectData
+                  CryptUnprotectMemory
+                  CryptUnregisterDefaultOIDFunction
+                  CryptUnregisterOIDFunction
+                  CryptUnregisterOIDInfo
+                  CryptUpdateProtectedState
+                  CryptVerifyCertificateSignature
+                  CryptVerifyCertificateSignatureEx
+                  CryptVerifyDetachedMessageHash
+                  CryptVerifyDetachedMessageSignature
+                  CryptVerifyMessageHash
+                  CryptVerifyMessageSignature
+                  CryptVerifyMessageSignatureWithKey
+                  CryptVerifyTimeStampSignature
+          1001    DbgInitOSS
+          1002    DbgPrintf
+                  PFXExportCertStore
+                  PFXExportCertStore2
+                  PFXExportCertStoreEx
+                  PFXImportCertStore
+                  PFXIsPFXBlob
+                  PFXVerifyPassword
+                  CryptGetObjectUrl
+                  CryptInstallCancelRetrieval
+                  CryptRetrieveObjectByUrlA
+                  CryptRetrieveObjectByUrlW
+                  CryptUninstallCancelRetrieval
+                  NetDfsAdd
+                  NetDfsAddFtRoot
+                  NetDfsAddRootTarget
+                  NetDfsAddStdRoot
+                  NetDfsAddStdRootForced
+                  NetDfsEnum
+                  NetDfsGetClientInfo
+                  NetDfsGetDcAddress
+                  NetDfsGetFtContainerSecurity
+                  NetDfsGetInfo
+                  NetDfsGetSecurity
+                  NetDfsGetStdContainerSecurity
+                  NetDfsGetSupportedNamespaceVersion
+                  NetDfsManagerInitialize
+                  NetDfsManagerSendSiteInfo
+                  NetDfsMove
+                  NetDfsRemove
+                  NetDfsRemoveFtRoot
+                  NetDfsRemoveFtRootForced
+                  NetDfsRemoveRootTarget
+                  NetDfsRemoveStdRoot
+                  NetDfsSetClientInfo
+                  NetDfsSetFtContainerSecurity
+                  NetDfsSetInfo
+                  NetDfsSetSecurity
+                  NetDfsSetStdContainerSecurity
+                  DsCrackSpn2A
+                  DsCrackSpn2W
+                  DsCrackSpn3W
+                  DsCrackSpn4W
+                  DsCrackSpnA
+                  DsCrackSpnW
+                  DsCrackUnquotedMangledRdnA
+                  DsCrackUnquotedMangledRdnW
+                  DsGetRdnW
+                  DsIsMangledDnA
+                  DsIsMangledDnW
+                  DsIsMangledRdnValueA
+                  DsIsMangledRdnValueW
+                  DsMakeSpn2W
+                  DsMakeSpnA
+                  DsMakeSpnW
+                  DsQuoteRdnValueA
+                  DsQuoteRdnValueW
+                  DsUnquoteRdnValueA
+                  DsUnquoteRdnValueW
+                  DsRoleFreeMemory
+                  DsRoleGetPrimaryDomainInformation
+                  DsAddressToSiteNamesA
+                  DsAddressToSiteNamesExA
+                  DsAddressToSiteNamesExW
+                  DsAddressToSiteNamesW
+                  DsDeregisterDnsHostRecordsA
+                  DsDeregisterDnsHostRecordsW
+                  DsEnumerateDomainTrustsA
+                  DsEnumerateDomainTrustsW
+                  DsGetDcCloseW
+                  DsGetDcNameA
+                  DsGetDcNameW
+                  DsGetDcNameWithAccountA
+                  DsGetDcNameWithAccountW
+                  DsGetDcNextA
+                  DsGetDcNextW
+                  DsGetDcOpenA
+                  DsGetDcOpenW
+                  DsGetDcSiteCoverageA
+                  DsGetDcSiteCoverageW
+                  DsGetForestTrustInformationW
+                  DsGetSiteNameA
+                  DsGetSiteNameW
+                  DsMergeForestTrustInformationW
+                  DsValidateSubnetNameA
+                  DsValidateSubnetNameW
+                  NetAddServiceAccount
+                  NetEnumerateServiceAccounts
+                  NetGetAnyDCName
+                  NetGetDCName
+                  NetIsServiceAccount
+                  NetLogonGetTimeServiceParentDomain
+                  NetQueryServiceAccount
+                  NetRemoveServiceAccount
+                  NlSetDsIsCloningPDC
+                  MultinetGetConnectionPerformanceA
+                  MultinetGetConnectionPerformanceW
+                  WNetAddConnection2A
+                  WNetAddConnection2W
+                  WNetAddConnection3A
+                  WNetAddConnection3W
+                  WNetAddConnectionA
+                  WNetAddConnectionW
+                  WNetCancelConnection2A
+                  WNetCancelConnection2W
+                  WNetCancelConnectionA
+                  WNetCancelConnectionW
+                  WNetCloseEnum
+                  WNetConnectionDialog
+                  WNetConnectionDialog1A
+                  WNetConnectionDialog1W
+                  WNetDisconnectDialog
+                  WNetDisconnectDialog1A
+                  WNetDisconnectDialog1W
+                  WNetEnumResourceA
+                  WNetEnumResourceW
+                  WNetGetConnectionA
+                  WNetGetConnectionW
+                  WNetGetLastErrorA
+                  WNetGetLastErrorW
+                  WNetGetNetworkInformationA
+                  WNetGetNetworkInformationW
+                  WNetGetProviderNameA
+                  WNetGetProviderNameW
+                  WNetGetResourceInformationA
+                  WNetGetResourceInformationW
+                  WNetGetResourceParentA
+                  WNetGetResourceParentW
+                  WNetGetUniversalNameA
+                  WNetGetUniversalNameW
+                  WNetGetUserA
+                  WNetGetUserW
+                  WNetOpenEnumA
+                  WNetOpenEnumW
+                  WNetSetLastErrorA
+                  WNetSetLastErrorW
+                  WNetUseConnectionA
+                  WNetUseConnectionW
+                  GetIsolationServerInterface
+                  GetKeyStorageInterface
+                  GetSChannelInterface
+                  NCryptCloseProtectionDescriptor
+                  NCryptCreateClaim
+                  NCryptCreatePersistedKey
+                  NCryptCreateProtectionDescriptor
+                  NCryptDecrypt
+                  NCryptDeleteKey
+                  NCryptDeriveKey
+                  NCryptEncrypt
+                  NCryptEnumAlgorithms
+                  NCryptEnumKeys
+                  NCryptEnumStorageProviders
+                  NCryptExportKey
+                  NCryptFinalizeKey
+                  NCryptFreeBuffer
+                  NCryptFreeObject
+                  NCryptGetProperty
+                  NCryptGetProtectionDescriptorInfo
+                  NCryptImportKey
+                  NCryptIsAlgSupported
+                  NCryptIsKeyHandle
+                  NCryptKeyDerivation
+                  NCryptNotifyChangeKey
+                  NCryptOpenKey
+                  NCryptOpenStorageProvider
+                  NCryptProtectSecret
+                  NCryptQueryProtectionDescriptorName
+                  NCryptRegisterProtectionDescriptorName
+                  NCryptSecretAgreement
+                  NCryptSetAuditingInterface
+                  NCryptSetProperty
+                  NCryptSignHash
+                  NCryptStreamClose
+                  NCryptStreamOpenToProtect
+                  NCryptStreamOpenToUnprotect
+                  NCryptStreamOpenToUnprotectEx
+                  NCryptStreamUpdate
+                  NCryptTranslateHandle
+                  NCryptUnprotectSecret
+                  NCryptVerifyClaim
+                  NCryptVerifySignature
+                  SslChangeNotify
+                  SslComputeClientAuthHash
+                  SslComputeEapKeyBlock
+                  SslComputeFinishedHash
+                  SslComputeSessionHash
+                  SslCreateClientAuthHash
+                  SslCreateEphemeralKey
+                  SslCreateHandshakeHash
+                  SslDecrementProviderReferenceCount
+                  SslDecryptPacket
+                  SslEncryptPacket
+                  SslEnumCipherSuites
+                  SslEnumEccCurves
+                  SslEnumProtocolProviders
+                  SslExportKey
+                  SslExportKeyingMaterial
+                  SslFreeBuffer
+                  SslFreeObject
+                  SslGenerateMasterKey
+                  SslGeneratePreMasterKey
+                  SslGenerateSessionKeys
+                  SslGetCipherSuitePRFHashAlgorithm
+                  SslGetKeyProperty
+                  SslGetProviderProperty
+                  SslHashHandshake
+                  SslImportKey
+                  SslImportMasterKey
+                  SslIncrementProviderReferenceCount
+                  SslLookupCipherLengths
+                  SslLookupCipherSuiteInfo
+                  SslOpenPrivateKey
+                  SslOpenProvider
+                  SslSignHash
+                  SslVerifySignature
+                  NetApiBufferAllocate
+                  NetApiBufferFree
+                  NetApiBufferReallocate
+                  NetApiBufferSize
+                  NetRemoteComputerSupports
+           286    BSTR_UserFree
+                  BSTR_UserFree64
+           284    BSTR_UserMarshal
+                  BSTR_UserMarshal64
+           283    BSTR_UserSize
+                  BSTR_UserSize64
+           285    BSTR_UserUnmarshal
+                  BSTR_UserUnmarshal64
+           414    BstrFromVector
+           171    ClearCustData
+            31    CreateDispTypeInfo
+           202    CreateErrorInfo
+            32    CreateStdDispatch
+           160    CreateTypeLib
+           180    CreateTypeLib2
+           146    DispCallFunc
+            29    DispGetIDsOfNames
+            28    DispGetParam
+            30    DispInvoke
+            14    DosDateTimeToVariantTime
+            35    GetActiveObject
+           332    GetAltMonthNames
+           200    GetErrorInfo
+           322    GetRecordInfoFromGuids
+           323    GetRecordInfoFromTypeInfo
+           326    GetVarConversionLocaleSetting
+           165    LHashValOfNameSys
+           166    LHashValOfNameSysA
+           296    LPSAFEARRAY_Marshal
+           295    LPSAFEARRAY_Size
+           297    LPSAFEARRAY_Unmarshal
+           294    LPSAFEARRAY_UserFree
+                  LPSAFEARRAY_UserFree64
+           292    LPSAFEARRAY_UserMarshal
+                  LPSAFEARRAY_UserMarshal64
+           291    LPSAFEARRAY_UserSize
+                  LPSAFEARRAY_UserSize64
+           293    LPSAFEARRAY_UserUnmarshal
+                  LPSAFEARRAY_UserUnmarshal64
+           162    LoadRegTypeLib
+           161    LoadTypeLib
+           183    LoadTypeLibEx
+                  OACreateTypeLib2
+           170    OaBuildVersion
+           444    OaEnablePerUserTLibRegistration
+           420    OleCreateFontIndirect
+           419    OleCreatePictureIndirect
+           417    OleCreatePropertyFrame
+           416    OleCreatePropertyFrameIndirect
+           415    OleIconToCursor
+           418    OleLoadPicture
+           401    OleLoadPictureEx
+           422    OleLoadPictureFile
+           402    OleLoadPictureFileEx
+           424    OleLoadPicturePath
+           423    OleSavePictureFile
+           421    OleTranslateColor
+           164    QueryPathOfRegTypeLib
+            33    RegisterActiveObject
+           163    RegisterTypeLib
+           442    RegisterTypeLibForUser
+            34    RevokeActiveObject
+            23    SafeArrayAccessData
+                  SafeArrayAddRef
+            37    SafeArrayAllocData
+            36    SafeArrayAllocDescriptor
+            41    SafeArrayAllocDescriptorEx
+            27    SafeArrayCopy
+           412    SafeArrayCopyData
+            15    SafeArrayCreate
+            42    SafeArrayCreateEx
+           411    SafeArrayCreateVector
+            43    SafeArrayCreateVectorEx
+            16    SafeArrayDestroy
+            39    SafeArrayDestroyData
+            38    SafeArrayDestroyDescriptor
+            17    SafeArrayGetDim
+            25    SafeArrayGetElement
+            18    SafeArrayGetElemsize
+            67    SafeArrayGetIID
+            20    SafeArrayGetLBound
+            45    SafeArrayGetRecordInfo
+            19    SafeArrayGetUBound
+            77    SafeArrayGetVartype
+            21    SafeArrayLock
+           148    SafeArrayPtrOfIndex
+            26    SafeArrayPutElement
+            40    SafeArrayRedim
+                  SafeArrayReleaseData
+                  SafeArrayReleaseDescriptor
+            57    SafeArraySetIID
+            44    SafeArraySetRecordInfo
+            24    SafeArrayUnaccessData
+            22    SafeArrayUnlock
+           201    SetErrorInfo
+           327    SetOaNoCache
+           325    SetVarConversionLocaleSetting
+                  SysAddRefString
+             2    SysAllocString
+           150    SysAllocStringByteLen
+             4    SysAllocStringLen
+             6    SysFreeString
+             3    SysReAllocString
+             5    SysReAllocStringLen
+                  SysReleaseString
+           149    SysStringByteLen
+             7    SysStringLen
+           184    SystemTimeToVariantTime
+           186    UnRegisterTypeLib
+           443    UnRegisterTypeLibForUser
+           290    VARIANT_UserFree
+                  VARIANT_UserFree64
+           288    VARIANT_UserMarshal
+                  VARIANT_UserMarshal64
+           287    VARIANT_UserSize
+                  VARIANT_UserSize64
+           289    VARIANT_UserUnmarshal
+                  VARIANT_UserUnmarshal64
+           168    VarAbs
+           141    VarAdd
+           142    VarAnd
+           124    VarBoolFromCy
+           123    VarBoolFromDate
+           236    VarBoolFromDec
+           126    VarBoolFromDisp
+           233    VarBoolFromI1
+           119    VarBoolFromI2
+           120    VarBoolFromI4
+           370    VarBoolFromI8
+           121    VarBoolFromR4
+           122    VarBoolFromR8
+           125    VarBoolFromStr
+           118    VarBoolFromUI1
+           234    VarBoolFromUI2
+           235    VarBoolFromUI4
+           371    VarBoolFromUI8
+           313    VarBstrCat
+           314    VarBstrCmp
+           116    VarBstrFromBool
+           113    VarBstrFromCy
+           114    VarBstrFromDate
+           232    VarBstrFromDec
+           115    VarBstrFromDisp
+           229    VarBstrFromI1
+           109    VarBstrFromI2
+           110    VarBstrFromI4
+           368    VarBstrFromI8
+           111    VarBstrFromR4
+           112    VarBstrFromR8
+           108    VarBstrFromUI1
+           230    VarBstrFromUI2
+           231    VarBstrFromUI4
+           369    VarBstrFromUI8
+           318    VarCat
+           176    VarCmp
+           306    VarCyAbs
+           299    VarCyAdd
+           311    VarCyCmp
+           312    VarCyCmpR8
+           307    VarCyFix
+           106    VarCyFromBool
+           103    VarCyFromDate
+           228    VarCyFromDec
+           105    VarCyFromDisp
+           225    VarCyFromI1
+            99    VarCyFromI2
+           100    VarCyFromI4
+           366    VarCyFromI8
+           101    VarCyFromR4
+           102    VarCyFromR8
+           104    VarCyFromStr
+            98    VarCyFromUI1
+           226    VarCyFromUI2
+           227    VarCyFromUI4
+           367    VarCyFromUI8
+           308    VarCyInt
+           303    VarCyMul
+           304    VarCyMulI4
+           329    VarCyMulI8
+           309    VarCyNeg
+           310    VarCyRound
+           305    VarCySub
+            96    VarDateFromBool
+            93    VarDateFromCy
+           224    VarDateFromDec
+            95    VarDateFromDisp
+           221    VarDateFromI1
+            89    VarDateFromI2
+            90    VarDateFromI4
+           364    VarDateFromI8
+            91    VarDateFromR4
+            92    VarDateFromR8
+            94    VarDateFromStr
+            88    VarDateFromUI1
+           222    VarDateFromUI2
+           223    VarDateFromUI4
+           365    VarDateFromUI8
+           330    VarDateFromUdate
+           319    VarDateFromUdateEx
+           182    VarDecAbs
+           177    VarDecAdd
+           204    VarDecCmp
+           298    VarDecCmpR8
+           178    VarDecDiv
+           187    VarDecFix
+           199    VarDecFromBool
+           196    VarDecFromCy
+           195    VarDecFromDate
+           198    VarDecFromDisp
+           241    VarDecFromI1
+           191    VarDecFromI2
+           192    VarDecFromI4
+           374    VarDecFromI8
+           193    VarDecFromR4
+           194    VarDecFromR8
+           197    VarDecFromStr
+           190    VarDecFromUI1
+           242    VarDecFromUI2
+           243    VarDecFromUI4
+           375    VarDecFromUI8
+           188    VarDecInt
+           179    VarDecMul
+           189    VarDecNeg
+           203    VarDecRound
+           181    VarDecSub
+           143    VarDiv
+           152    VarEqv
+           169    VarFix
+            87    VarFormat
+           127    VarFormatCurrency
+            97    VarFormatDateTime
+           139    VarFormatFromTokens
+           107    VarFormatNumber
+           117    VarFormatPercent
+           253    VarI1FromBool
+           250    VarI1FromCy
+           249    VarI1FromDate
+           256    VarI1FromDec
+           252    VarI1FromDisp
+           245    VarI1FromI2
+           246    VarI1FromI4
+           376    VarI1FromI8
+           247    VarI1FromR4
+           248    VarI1FromR8
+           251    VarI1FromStr
+           244    VarI1FromUI1
+           254    VarI1FromUI2
+           255    VarI1FromUI4
+           377    VarI1FromUI8
+            56    VarI2FromBool
+            52    VarI2FromCy
+            53    VarI2FromDate
+           208    VarI2FromDec
+            55    VarI2FromDisp
+           205    VarI2FromI1
+            49    VarI2FromI4
+           346    VarI2FromI8
+            50    VarI2FromR4
+            51    VarI2FromR8
+            54    VarI2FromStr
+            48    VarI2FromUI1
+           206    VarI2FromUI2
+           207    VarI2FromUI4
+           347    VarI2FromUI8
+            66    VarI4FromBool
+            62    VarI4FromCy
+            63    VarI4FromDate
+           212    VarI4FromDec
+            65    VarI4FromDisp
+           209    VarI4FromI1
+            59    VarI4FromI2
+           348    VarI4FromI8
+            60    VarI4FromR4
+            61    VarI4FromR8
+            64    VarI4FromStr
+            58    VarI4FromUI1
+           210    VarI4FromUI2
+           211    VarI4FromUI4
+           349    VarI4FromUI8
+           341    VarI8FromBool
+           337    VarI8FromCy
+           338    VarI8FromDate
+           345    VarI8FromDec
+           340    VarI8FromDisp
+           342    VarI8FromI1
+           334    VarI8FromI2
+           335    VarI8FromR4
+           336    VarI8FromR8
+           339    VarI8FromStr
+           333    VarI8FromUI1
+           343    VarI8FromUI2
+           344    VarI8FromUI4
+           427    VarI8FromUI8
+           153    VarIdiv
+           154    VarImp
+           172    VarInt
+           155    VarMod
+           129    VarMonthName
+           156    VarMul
+           173    VarNeg
+           174    VarNot
+            47    VarNumFromParseNum
+           157    VarOr
+            46    VarParseNumFromStr
+           158    VarPow
+           316    VarR4CmpR8
+            76    VarR4FromBool
+            72    VarR4FromCy
+            73    VarR4FromDate
+           216    VarR4FromDec
+            75    VarR4FromDisp
+           213    VarR4FromI1
+            69    VarR4FromI2
+            70    VarR4FromI4
+           360    VarR4FromI8
+            71    VarR4FromR8
+            74    VarR4FromStr
+            68    VarR4FromUI1
+           214    VarR4FromUI2
+           215    VarR4FromUI4
+           361    VarR4FromUI8
+            86    VarR8FromBool
+            82    VarR8FromCy
+            83    VarR8FromDate
+           220    VarR8FromDec
+            85    VarR8FromDisp
+           217    VarR8FromI1
+            79    VarR8FromI2
+            80    VarR8FromI4
+           362    VarR8FromI8
+            81    VarR8FromR4
+            84    VarR8FromStr
+            78    VarR8FromUI1
+           218    VarR8FromUI2
+           219    VarR8FromUI4
+           363    VarR8FromUI8
+           315    VarR8Pow
+           317    VarR8Round
+           175    VarRound
+           159    VarSub
+           140    VarTokenizeFormatString
+           138    VarUI1FromBool
+           134    VarUI1FromCy
+           135    VarUI1FromDate
+           240    VarUI1FromDec
+           137    VarUI1FromDisp
+           237    VarUI1FromI1
+           130    VarUI1FromI2
+           131    VarUI1FromI4
+           372    VarUI1FromI8
+           132    VarUI1FromR4
+           133    VarUI1FromR8
+           136    VarUI1FromStr
+           238    VarUI1FromUI2
+           239    VarUI1FromUI4
+           373    VarUI1FromUI8
+           266    VarUI2FromBool
+           263    VarUI2FromCy
+           262    VarUI2FromDate
+           269    VarUI2FromDec
+           265    VarUI2FromDisp
+           267    VarUI2FromI1
+           258    VarUI2FromI2
+           259    VarUI2FromI4
+           378    VarUI2FromI8
+           260    VarUI2FromR4
+           261    VarUI2FromR8
+           264    VarUI2FromStr
+           257    VarUI2FromUI1
+           268    VarUI2FromUI4
+           379    VarUI2FromUI8
+           279    VarUI4FromBool
+           276    VarUI4FromCy
+           275    VarUI4FromDate
+           282    VarUI4FromDec
+           278    VarUI4FromDisp
+           280    VarUI4FromI1
+           271    VarUI4FromI2
+           272    VarUI4FromI4
+           425    VarUI4FromI8
+           273    VarUI4FromR4
+           274    VarUI4FromR8
+           277    VarUI4FromStr
+           270    VarUI4FromUI1
+           281    VarUI4FromUI2
+           426    VarUI4FromUI8
+           437    VarUI8FromBool
+           433    VarUI8FromCy
+           434    VarUI8FromDate
+           441    VarUI8FromDec
+           436    VarUI8FromDisp
+           438    VarUI8FromI1
+           430    VarUI8FromI2
+           428    VarUI8FromI8
+           431    VarUI8FromR4
+           432    VarUI8FromR8
+           435    VarUI8FromStr
+           429    VarUI8FromUI1
+           439    VarUI8FromUI2
+           440    VarUI8FromUI4
+           331    VarUdateFromDate
+           128    VarWeekdayName
+           167    VarXor
+            12    VariantChangeType
+           147    VariantChangeTypeEx
+             9    VariantClear
+            10    VariantCopy
+            11    VariantCopyInd
+             8    VariantInit
+            13    VariantTimeToDosDateTime
+           185    VariantTimeToSystemTime
+           413    VectorFromBstr
+                  NetGetDisplayInformationIndex
+                  NetGroupAdd
+                  NetGroupAddUser
+                  NetGroupDel
+                  NetGroupDelUser
+                  NetGroupEnum
+                  NetGroupGetInfo
+                  NetGroupGetUsers
+                  NetGroupSetInfo
+                  NetGroupSetUsers
+                  NetLocalGroupAdd
+                  NetLocalGroupAddMember
+                  NetLocalGroupAddMembers
+                  NetLocalGroupDel
+                  NetLocalGroupDelMember
+                  NetLocalGroupDelMembers
+                  NetLocalGroupEnum
+                  NetLocalGroupGetInfo
+                  NetLocalGroupGetMembers
+                  NetLocalGroupSetInfo
+                  NetLocalGroupSetMembers
+                  NetQueryDisplayInformation
+                  NetUserAdd
+                  NetUserChangePassword
+                  NetUserDel
+                  NetUserEnum
+                  NetUserGetGroups
+                  NetUserGetInfo
+                  NetUserGetInternetIdentityInfo
+                  NetUserGetLocalGroups
+                  NetUserModalsGet
+                  NetUserModalsSet
+                  NetUserSetGroups
+                  NetUserSetInfo
+                  NetValidatePasswordPolicy
+                  NetValidatePasswordPolicyFree
+                  NetScheduleJobAdd
+                  NetScheduleJobDel
+                  NetScheduleJobEnum
+                  NetScheduleJobGetInfo
+                  LocalAliasGet
+                  LocalFileClose
+                  LocalFileEnum
+                  LocalFileEnumEx
+                  LocalFileGetInfo
+                  LocalFileGetInfoEx
+                  LocalSessionDel
+                  LocalSessionEnum
+                  LocalSessionEnumEx
+                  LocalSessionGetInfo
+                  LocalSessionGetInfoEx
+                  LocalShareAdd
+                  LocalShareDelEx
+                  LocalShareEnum
+                  LocalShareEnumEx
+                  LocalShareGetInfo
+                  LocalShareGetInfoEx
+                  LocalShareSetInfo
+                  NetConnectionEnum
+                  NetFileClose
+                  NetFileEnum
+                  NetFileGetInfo
+                  NetRemoteTOD
+                  NetServerAliasAdd
+                  NetServerAliasDel
+                  NetServerAliasEnum
+                  NetServerComputerNameAdd
+                  NetServerComputerNameDel
+                  NetServerDiskEnum
+                  NetServerGetInfo
+                  NetServerSetInfo
+                  NetServerStatisticsGet
+                  NetServerTransportAdd
+                  NetServerTransportAddEx
+                  NetServerTransportDel
+                  NetServerTransportEnum
+                  NetSessionDel
+                  NetSessionEnum
+                  NetSessionGetInfo
+                  NetShareAdd
+                  NetShareCheck
+                  NetShareDel
+                  NetShareDelEx
+                  NetShareDelSticky
+                  NetShareEnum
+                  NetShareEnumSticky
+                  NetShareGetInfo
+                  NetShareSetInfo
+                  ?RsopLoggingEnabled@@YAHXZ (int __cdecl RsopLoggingEnabled(void))
+                  AreThereVisibleLogoffScripts
+                  AreThereVisibleShutdownScripts
+           203    CheckDirectoryOwnership
+           175    CheckXForestLogon
+           209    CopyProfileDirectoryEx2
+                  CreateAppContainerProfile
+           212    CreateAppContainerProfileInternal
+           206    CreateDirectoryJunctionsForSystem
+           207    CreateDirectoryJunctionsForUserProfile
+                  CreateEnvironmentBlock
+           137    CreateGroupEx
+           139    CreateLinkFileEx
+                  CreateProfile
+                  DeleteAppContainerProfile
+           213    DeleteAppContainerProfileInternal
+           104    DeleteGroup
+           122    DeleteLinkFile
+                  DeleteProfileA
+           202    DeleteProfileDirectory
+                  DeleteProfileW
+                  DeriveAppContainerSidFromAppContainerName
+                  DeriveRestrictedAppContainerSidFromAppContainerSidAndRestrictedName
+                  DestroyEnvironmentBlock
+                  EnterCriticalPolicySection
+                  ExpandEnvironmentStringsForUserA
+                  ExpandEnvironmentStringsForUserW
+                  ForceSyncFgPolicy
+                  FreeGPOListA
+                  FreeGPOListW
+                  GenerateGPNotification
+                  GetAllUsersProfileDirectoryA
+                  GetAllUsersProfileDirectoryW
+                  GetAppContainerFolderPath
+                  GetAppContainerRegistryLocation
+                  GetAppliedGPOListA
+                  GetAppliedGPOListW
+                  GetDefaultUserProfileDirectoryA
+                  GetDefaultUserProfileDirectoryW
+                  GetGPOListA
+                  GetGPOListW
+           214    GetLongProfilePathName
+                  GetNextFgPolicyRefreshInfo
+                  GetPreviousFgPolicyRefreshInfo
+                  GetProfileType
+                  GetProfilesDirectoryA
+                  GetProfilesDirectoryW
+                  GetUserProfileDirectoryA
+           217    GetUserProfileDirectoryForUserSidW
+                  GetUserProfileDirectoryW
+                  HasPolicyForegroundProcessingCompleted
+           218    IsAppContainerProfilePresentInternal
+                  LeaveCriticalPolicySection
+                  LoadUserProfileA
+                  LoadUserProfileW
+           211    LookupAppContainerDisplayName
+           135    PingComputer
+                  ProcessGroupPolicyCompleted
+                  ProcessGroupPolicyCompletedEx
+                  RefreshPolicy
+                  RefreshPolicyEx
+                  RegisterGPNotification
+           208    RemapProfile
+                  RsopAccessCheckByType
+                  RsopFileAccessCheck
+                  RsopResetPolicySettingStatus
+                  RsopSetPolicySettingStatus
+                  UnloadUserProfile
+                  UnregisterGPNotification
+           210    UpdateAppContainerProfile
+                  WaitForMachinePolicyForegroundProcessing
+                  WaitForUserPolicyForegroundProcessing
+                  WebSocketAbortHandle
+                  WebSocketBeginClientHandshake
+                  WebSocketBeginServerHandshake
+                  WebSocketCompleteAction
+                  WebSocketCreateClientHandle
+                  WebSocketCreateServerHandle
+                  WebSocketDeleteHandle
+                  WebSocketEndClientHandshake
+                  WebSocketEndServerHandshake
+                  WebSocketGetAction
+                  WebSocketGetGlobalProperty
+                  WebSocketReceive
+                  WebSocketSend
+                  WinHttpAddRequestHeaders
+                  WinHttpAutoProxySvcMain
+                  WinHttpCheckPlatform
+                  WinHttpCloseHandle
+                  WinHttpConnect
+                  WinHttpConnectionDeletePolicyEntries
+                  WinHttpConnectionDeleteProxyInfo
+                  WinHttpConnectionFreeNameList
+                  WinHttpConnectionFreeProxyInfo
+                  WinHttpConnectionFreeProxyList
+                  WinHttpConnectionGetNameList
+                  WinHttpConnectionGetProxyInfo
+                  WinHttpConnectionGetProxyList
+                  WinHttpConnectionSetPolicyEntries
+                  WinHttpConnectionSetProxyInfo
+                  WinHttpConnectionUpdateIfIndexTable
+                  WinHttpCrackUrl
+                  WinHttpCreateProxyResolver
+                  WinHttpCreateUrl
+                  WinHttpDetectAutoProxyConfigUrl
+                  WinHttpFreeProxyResult
+                  WinHttpFreeProxyResultEx
+                  WinHttpFreeProxySettings
+                  WinHttpGetDefaultProxyConfiguration
+                  WinHttpGetIEProxyConfigForCurrentUser
+                  WinHttpGetProxyForUrl
+                  WinHttpGetProxyForUrlEx
+                  WinHttpGetProxyForUrlEx2
+                  WinHttpGetProxyForUrlHvsi
+                  WinHttpGetProxyResult
+                  WinHttpGetProxyResultEx
+                  WinHttpGetProxySettingsVersion
+                  WinHttpGetTunnelSocket
+                  WinHttpOpen
+                  WinHttpOpenRequest
+                  WinHttpProbeConnectivity
+                  WinHttpQueryAuthSchemes
+                  WinHttpQueryDataAvailable
+                  WinHttpQueryHeaders
+                  WinHttpQueryOption
+                  WinHttpReadData
+                  WinHttpReadProxySettings
+                  WinHttpReadProxySettingsHvsi
+                  WinHttpReceiveResponse
+                  WinHttpResetAutoProxy
+                  WinHttpSaveProxyCredentials
+                  WinHttpSendRequest
+                  WinHttpSetCredentials
+                  WinHttpSetDefaultProxyConfiguration
+                  WinHttpSetOption
+                  WinHttpSetStatusCallback
+                  WinHttpSetTimeouts
+                  WinHttpTimeFromSystemTime
+                  WinHttpTimeToSystemTime
+                  WinHttpWebSocketClose
+                  WinHttpWebSocketCompleteUpgrade
+                  WinHttpWebSocketQueryCloseStatus
+                  WinHttpWebSocketReceive
+                  WinHttpWebSocketSend
+                  WinHttpWebSocketShutdown
+                  WinHttpWriteData
+                  WinHttpWriteProxySettings
+                  NetAddAlternateComputerName
+                  NetEnumerateComputerNames
+                  NetGetJoinInformation
+                  NetGetJoinableOUs
+                  NetJoinDomain
+                  NetRemoveAlternateComputerName
+                  NetRenameMachineInDomain
+                  NetSetPrimaryComputerName
+                  NetUnjoinDomain
+                  NetUseAdd
+                  NetUseDel
+                  NetUseEnum
+                  NetUseGetInfo
+                  NetValidateName
+                  NetWkstaGetInfo
+                  NetWkstaSetInfo
+                  NetWkstaStatisticsGet
+                  NetWkstaTransportAdd
+                  NetWkstaTransportDel
+                  NetWkstaTransportEnum
+                  NetWkstaUserEnum
+                  NetWkstaUserGetInfo
+                  NetWkstaUserSetInfo
+            16    LdapGetLastError
+            18    LdapMapErrorToWin32
+            29    LdapUTF8ToUnicode
+            53    LdapUnicodeToUTF8
+           304    ber_alloc_t
+           303    ber_bvdup
+           302    ber_bvecfree
+            54    ber_bvfree
+           307    ber_first_element
+           309    ber_flatten
+           301    ber_free
+           300    ber_init
+           308    ber_next_element
+           306    ber_peek_tag
+           310    ber_printf
+           311    ber_scanf
+           305    ber_skip_tag
+            17    cldap_open
+            55    cldap_openA
+            28    cldap_openW
+            10    ldap_abandon
+            11    ldap_add
+            56    ldap_addA
+            42    ldap_addW
+            57    ldap_add_ext
+            58    ldap_add_extA
+            62    ldap_add_extW
+            63    ldap_add_ext_s
+            64    ldap_add_ext_sA
+            65    ldap_add_ext_sW
+            44    ldap_add_s
+            66    ldap_add_sA
+            69    ldap_add_sW
+            61    ldap_bind
+            70    ldap_bindA
+            71    ldap_bindW
+            45    ldap_bind_s
+            72    ldap_bind_sA
+            73    ldap_bind_sW
+           230    ldap_check_filterA
+           231    ldap_check_filterW
+           202    ldap_cleanup
+            74    ldap_close_extended_op
+            19    ldap_compare
+            75    ldap_compareA
+            76    ldap_compareW
+            78    ldap_compare_ext
+            80    ldap_compare_extA
+            81    ldap_compare_extW
+            83    ldap_compare_ext_s
+            84    ldap_compare_ext_sA
+            85    ldap_compare_ext_sW
+            52    ldap_compare_s
+            86    ldap_compare_sA
+            87    ldap_compare_sW
+           312    ldap_conn_from_msg
+            88    ldap_connect
+            89    ldap_control_free
+            90    ldap_control_freeA
+            91    ldap_control_freeW
+            92    ldap_controls_free
+            93    ldap_controls_freeA
+            94    ldap_controls_freeW
+            36    ldap_count_entries
+            95    ldap_count_references
+            37    ldap_count_values
+            96    ldap_count_valuesA
+            97    ldap_count_valuesW
+            77    ldap_count_values_len
+            98    ldap_create_page_control
+            99    ldap_create_page_controlA
+           100    ldap_create_page_controlW
+           101    ldap_create_sort_control
+           102    ldap_create_sort_controlA
+           103    ldap_create_sort_controlW
+           320    ldap_create_vlv_controlA
+           319    ldap_create_vlv_controlW
+            20    ldap_delete
+           104    ldap_deleteA
+           105    ldap_deleteW
+           106    ldap_delete_ext
+           107    ldap_delete_extA
+           108    ldap_delete_extW
+           109    ldap_delete_ext_s
+           110    ldap_delete_ext_sA
+           111    ldap_delete_ext_sW
+            47    ldap_delete_s
+           112    ldap_delete_sA
+           113    ldap_delete_sW
+            31    ldap_dn2ufn
+           232    ldap_dn2ufnA
+           114    ldap_dn2ufnW
+           115    ldap_encode_sort_controlA
+           116    ldap_encode_sort_controlW
+            22    ldap_err2string
+           117    ldap_err2stringA
+           118    ldap_err2stringW
+           197    ldap_escape_filter_element
+           119    ldap_escape_filter_elementA
+           120    ldap_escape_filter_elementW
+            39    ldap_explode_dn
+           121    ldap_explode_dnA
+           122    ldap_explode_dnW
+           123    ldap_extended_operation
+           124    ldap_extended_operationA
+           125    ldap_extended_operationW
+           333    ldap_extended_operation_sA
+           332    ldap_extended_operation_sW
+            32    ldap_first_attribute
+           126    ldap_first_attributeA
+           127    ldap_first_attributeW
+            26    ldap_first_entry
+           128    ldap_first_reference
+           129    ldap_free_controls
+           130    ldap_free_controlsA
+           131    ldap_free_controlsW
+            30    ldap_get_dn
+           132    ldap_get_dnA
+           133    ldap_get_dnW
+           134    ldap_get_next_page
+           135    ldap_get_next_page_s
+           136    ldap_get_option
+           137    ldap_get_optionA
+            12    ldap_get_optionW
+           138    ldap_get_paged_count
+            34    ldap_get_values
+           139    ldap_get_valuesA
+           140    ldap_get_valuesW
+            35    ldap_get_values_len
+           141    ldap_get_values_lenA
+           142    ldap_get_values_lenW
+           143    ldap_init
+           144    ldap_initA
+           145    ldap_initW
+           200    ldap_memfree
+           146    ldap_memfreeA
+           147    ldap_memfreeW
+            23    ldap_modify
+           148    ldap_modifyA
+           149    ldap_modifyW
+           150    ldap_modify_ext
+           151    ldap_modify_extA
+           152    ldap_modify_extW
+           153    ldap_modify_ext_s
+           154    ldap_modify_ext_sA
+           155    ldap_modify_ext_sW
+            48    ldap_modify_s
+           156    ldap_modify_sA
+           157    ldap_modify_sW
+            24    ldap_modrdn
+            67    ldap_modrdn2
+           158    ldap_modrdn2A
+           159    ldap_modrdn2W
+            68    ldap_modrdn2_s
+           160    ldap_modrdn2_sA
+           161    ldap_modrdn2_sW
+           162    ldap_modrdnA
+           163    ldap_modrdnW
+            49    ldap_modrdn_s
+           164    ldap_modrdn_sA
+           165    ldap_modrdn_sW
+            41    ldap_msgfree
+            33    ldap_next_attribute
+           166    ldap_next_attributeA
+           167    ldap_next_attributeW
+            27    ldap_next_entry
+           168    ldap_next_reference
+            25    ldap_open
+           169    ldap_openA
+           170    ldap_openW
+           318    ldap_parse_extended_resultA
+           317    ldap_parse_extended_resultW
+           171    ldap_parse_page_control
+           172    ldap_parse_page_controlA
+           173    ldap_parse_page_controlW
+           174    ldap_parse_reference
+           175    ldap_parse_referenceA
+           176    ldap_parse_referenceW
+           177    ldap_parse_result
+           178    ldap_parse_resultA
+           179    ldap_parse_resultW
+           180    ldap_parse_sort_control
+           181    ldap_parse_sort_controlA
+           182    ldap_parse_sort_controlW
+           322    ldap_parse_vlv_controlA
+           321    ldap_parse_vlv_controlW
+            82    ldap_perror
+           183    ldap_rename_ext
+           184    ldap_rename_extA
+           185    ldap_rename_extW
+           186    ldap_rename_ext_s
+           187    ldap_rename_ext_sA
+           188    ldap_rename_ext_sW
+            40    ldap_result
+            21    ldap_result2error
+           315    ldap_sasl_bindA
+           313    ldap_sasl_bindW
+           316    ldap_sasl_bind_sA
+           314    ldap_sasl_bind_sW
+            43    ldap_search
+           189    ldap_searchA
+           190    ldap_searchW
+           191    ldap_search_abandon_page
+           192    ldap_search_ext
+           193    ldap_search_extA
+           194    ldap_search_extW
+           195    ldap_search_ext_s
+           196    ldap_search_ext_sA
+           203    ldap_search_ext_sW
+           204    ldap_search_init_page
+           205    ldap_search_init_pageA
+           206    ldap_search_init_pageW
+            50    ldap_search_s
+           207    ldap_search_sA
+           208    ldap_search_sW
+            51    ldap_search_st
+           209    ldap_search_stA
+           210    ldap_search_stW
+           198    ldap_set_dbg_flags
+           199    ldap_set_dbg_routine
+           211    ldap_set_option
+           212    ldap_set_optionA
+            14    ldap_set_optionW
+            59    ldap_simple_bind
+           213    ldap_simple_bindA
+           214    ldap_simple_bindW
+            60    ldap_simple_bind_s
+           215    ldap_simple_bind_sA
+           216    ldap_simple_bind_sW
+           217    ldap_sslinit
+           218    ldap_sslinitA
+           219    ldap_sslinitW
+           330    ldap_start_tls_sA
+           329    ldap_start_tls_sW
+           201    ldap_startup
+           331    ldap_stop_tls_s
+           220    ldap_ufn2dn
+           221    ldap_ufn2dnA
+           222    ldap_ufn2dnW
+            13    ldap_unbind
+            46    ldap_unbind_s
+            38    ldap_value_free
+           223    ldap_value_freeA
+           224    ldap_value_freeW
+            79    ldap_value_free_len
+                  ClearCommBreak
+                  ClearCommError
+                  EscapeCommFunction
+                  GetCommConfig
+                  GetCommMask
+                  GetCommModemStatus
+                  GetCommProperties
+                  GetCommState
+                  GetCommTimeouts
+                  PurgeComm
+                  SetCommBreak
+                  SetCommConfig
+                  SetCommMask
+                  SetCommState
+                  SetCommTimeouts
+                  SetupComm
+                  TransmitCommChar
+                  WaitCommEvent
+                  OpenCommPort
+                  GetCommPorts
+                  AllocConsole
+                  GetConsoleCP
+                  GetConsoleMode
+                  GetConsoleOutputCP
+                  GetNumberOfConsoleInputEvents
+                  ReadConsoleA
+                  ReadConsoleInputA
+                  ReadConsoleInputW
+                  ReadConsoleW
+                  SetConsoleCtrlHandler
+                  SetConsoleMode
+                  WriteConsoleA
+                  WriteConsoleW
+                  AttachConsole
+                  FreeConsole
+                  PeekConsoleInputA
+                  PeekConsoleInputW
+                  GetDateFormatA
+                  GetDateFormatW
+                  GetTimeFormatA
+                  GetTimeFormatW
+                  GetDateFormatEx
+                  GetTimeFormatEx
+                  GetDurationFormatEx
+                  DebugBreak
+                  IsDebuggerPresent
+                  OutputDebugStringA
+                  OutputDebugStringW
+                  CheckRemoteDebuggerPresent
+                  ContinueDebugEvent
+                  DebugActiveProcess
+                  DebugActiveProcessStop
+                  WaitForDebugEvent
+                  WaitForDebugEventEx
+                  GetErrorMode
+                  GetLastError
+                  RaiseException
+                  SetErrorMode
+                  SetLastError
+                  SetUnhandledExceptionFilter
+                  UnhandledExceptionFilter
+                  AddVectoredContinueHandler
+                  AddVectoredExceptionHandler
+                  RemoveVectoredContinueHandler
+                  RemoveVectoredExceptionHandler
+                  RestoreLastError
+                  RaiseFailFastException
+                  FatalAppExitA
+                  FatalAppExitW
+                  GetThreadErrorMode
+                  SetThreadErrorMode
+                  TerminateProcessOnMemoryExhaustion
+                  FlsAlloc
+                  FlsFree
+                  FlsGetValue
+                  FlsSetValue
+                  IsThreadAFiber
+                  CompareFileTime
+                  CreateDirectoryA
+                  CreateDirectoryW
+                  CreateFileA
+                  CreateFileW
+                  DefineDosDeviceW
+                  DeleteFileA
+                  DeleteFileW
+                  DeleteVolumeMountPointW
+                  FileTimeToLocalFileTime
+                  FindClose
+                  FindCloseChangeNotification
+                  FindFirstChangeNotificationA
+                  FindFirstChangeNotificationW
+                  FindFirstFileA
+                  FindFirstFileExA
+                  FindFirstFileExW
+                  FindFirstFileW
+                  FindFirstVolumeW
+                  FindNextChangeNotification
+                  FindNextFileA
+                  FindNextFileW
+                  FindNextVolumeW
+                  FindVolumeClose
+                  FlushFileBuffers
+                  GetDiskFreeSpaceA
+                  GetDiskFreeSpaceExA
+                  GetDiskFreeSpaceExW
+                  GetDiskFreeSpaceW
+                  GetDriveTypeA
+                  GetDriveTypeW
+                  GetFileAttributesA
+                  GetFileAttributesExA
+                  GetFileAttributesExW
+                  GetFileAttributesW
+                  GetFileInformationByHandle
+                  GetFileSize
+                  GetFileSizeEx
+                  GetFileTime
+                  GetFileType
+                  GetFinalPathNameByHandleA
+                  GetFinalPathNameByHandleW
+                  GetFullPathNameA
+                  GetFullPathNameW
+                  GetLogicalDriveStringsW
+                  GetLogicalDrives
+                  GetLongPathNameA
+                  GetLongPathNameW
+                  GetShortPathNameW
+                  GetTempFileNameW
+                  GetVolumeInformationByHandleW
+                  GetVolumeInformationW
+                  GetVolumePathNameW
+                  LocalFileTimeToFileTime
+                  LockFile
+                  LockFileEx
+                  QueryDosDeviceW
+                  ReadFile
+                  ReadFileEx
+                  ReadFileScatter
+                  RemoveDirectoryA
+                  RemoveDirectoryW
+                  SetEndOfFile
+                  SetFileAttributesA
+                  SetFileAttributesW
+                  SetFileInformationByHandle
+                  SetFilePointer
+                  SetFilePointerEx
+                  SetFileTime
+                  SetFileValidData
+                  UnlockFile
+                  UnlockFileEx
+                  WriteFile
+                  WriteFileEx
+                  WriteFileGather
+                  CreateFile2
+                  GetTempPathW
+                  GetVolumeNameForVolumeMountPointW
+                  GetVolumePathNamesForVolumeNameW
+                  GetCompressedFileSizeA
+                  GetCompressedFileSizeW
+                  SetFileIoOverlappedRange
+                  AreFileApisANSI
+                  FindFirstFileNameW
+                  FindFirstStreamW
+                  FindNextFileNameW
+                  FindNextStreamW
+                  GetTempFileNameA
+                  GetTempPathA
+                  GetVolumeInformationA
+                  SetFileApisToANSI
+                  SetFileApisToOEM
+                  CloseHandle
+                  CompareObjectHandles
+                  DuplicateHandle
+                  GetHandleInformation
+                  SetHandleInformation
+                  GetProcessHeap
+                  GetProcessHeaps
+                  HeapAlloc
+                  HeapCompact
+                  HeapCreate
+                  HeapDestroy
+                  HeapFree
+                  HeapLock
+                  HeapQueryInformation
+                  HeapReAlloc
+                  HeapSetInformation
+                  HeapSize
+                  HeapUnlock
+                  HeapValidate
+                  HeapWalk
+                  GlobalAlloc
+                  GlobalFree
+                  LocalAlloc
+                  LocalFree
+                  LocalLock
+                  LocalReAlloc
+                  LocalUnlock
+                  InitializeSListHead
+                  InterlockedFlushSList
+                  InterlockedPopEntrySList
+                  InterlockedPushEntrySList
+                  QueryDepthSList
+                  InterlockedPushListSListEx
+                  CancelIoEx
+                  CreateIoCompletionPort
+                  DeviceIoControl
+                  GetOverlappedResult
+                  GetQueuedCompletionStatus
+                  GetQueuedCompletionStatusEx
+                  PostQueuedCompletionStatus
+                  CancelIo
+                  CancelSynchronousIo
+                  GetOverlappedResultEx
+                  IsProcessInJob
+                  AddDllDirectory
+                  DisableThreadLibraryCalls
+                  EnumResourceLanguagesExA
+                  EnumResourceLanguagesExW
+                  EnumResourceNamesExA
+                  EnumResourceNamesExW
+                  EnumResourceTypesExA
+                  EnumResourceTypesExW
+                  FindResourceExW
+                  FindStringOrdinal
+                  FreeLibrary
+                  FreeLibraryAndExitThread
+                  FreeResource
+                  GetModuleFileNameA
+                  GetModuleFileNameW
+                  GetModuleHandleA
+                  GetModuleHandleExA
+                  GetModuleHandleExW
+                  GetModuleHandleW
+                  GetProcAddress
+                  LoadLibraryExA
+                  LoadLibraryExW
+                  LoadResource
+                  LoadStringA
+                  LoadStringW
+                  LockResource
+                  RemoveDllDirectory
+                  SetDefaultDllDirectories
+                  SizeofResource
+                  FindResourceW
+                  LoadLibraryA
+                  LoadLibraryW
+                  EnumResourceNamesW
+                  LoadPackagedLibrary
+                  QueryOptionalDelayLoadedAPI
+                  ConvertDefaultLocale
+                  EnumSystemGeoID
+                  EnumSystemLocalesA
+                  EnumSystemLocalesW
+                  FindNLSString
+                  FindNLSStringEx
+                  FormatMessageA
+                  FormatMessageW
+                  GetACP
+                  GetCPInfo
+                  GetCPInfoExW
+                  GetCalendarInfoEx
+                  GetCalendarInfoW
+                  GetFileMUIInfo
+                  GetFileMUIPath
+                  GetGeoInfoW
+                  GetLocaleInfoA
+                  GetLocaleInfoEx
+                  GetLocaleInfoW
+                  GetNLSVersion
+                  GetNLSVersionEx
+                  GetOEMCP
+                  GetProcessPreferredUILanguages
+                  GetSystemDefaultLCID
+                  GetSystemDefaultLangID
+                  GetSystemPreferredUILanguages
+                  GetThreadLocale
+                  GetThreadPreferredUILanguages
+                  GetThreadUILanguage
+                  GetUILanguageInfo
+                  GetUserDefaultLCID
+                  GetUserDefaultLangID
+                  GetUserDefaultLocaleName
+                  GetUserGeoID
+                  GetUserPreferredUILanguages
+                  IdnToAscii
+                  IdnToUnicode
+                  IsDBCSLeadByte
+                  IsDBCSLeadByteEx
+                  IsNLSDefinedString
+                  IsValidCodePage
+                  IsValidLanguageGroup
+                  IsValidLocale
+                  IsValidLocaleName
+                  IsValidNLSVersion
+                  LCMapStringA
+                  LCMapStringEx
+                  LCMapStringW
+                  LocaleNameToLCID
+                  ResolveLocaleName
+                  SetCalendarInfoW
+                  SetLocaleInfoW
+                  SetProcessPreferredUILanguages
+                  SetThreadLocale
+                  SetThreadPreferredUILanguages
+                  SetThreadUILanguage
+                  SetUserGeoID
+                  VerLanguageNameA
+                  VerLanguageNameW
+                  EnumSystemLocalesEx
+                  GetSystemDefaultLocaleName
+                  LCIDToLocaleName
+                  EnumSystemGeoNames
+                  GetGeoInfoEx
+                  GetUserDefaultGeoName
+                  SetUserGeoName
+                  CreateFileMappingW
+                  FlushViewOfFile
+                  MapViewOfFile
+                  MapViewOfFileEx
+                  OpenFileMappingW
+                  ReadProcessMemory
+                  UnmapViewOfFile
+                  VirtualAlloc
+                  VirtualAllocEx
+                  VirtualFree
+                  VirtualFreeEx
+                  VirtualProtect
+                  VirtualProtectEx
+                  VirtualQuery
+                  VirtualQueryEx
+                  WriteProcessMemory
+                  CreateFileMappingFromApp
+                  CreateFileMappingNumaW
+                  CreateMemoryResourceNotification
+                  GetLargePageMinimum
+                  GetProcessWorkingSetSizeEx
+                  GetSystemFileCacheSize
+                  GetWriteWatch
+                  MapViewOfFileFromApp
+                  PrefetchVirtualMemory
+                  QueryMemoryResourceNotification
+                  ResetWriteWatch
+                  SetProcessWorkingSetSizeEx
+                  SetSystemFileCacheSize
+                  UnmapViewOfFileEx
+                  VirtualLock
+                  VirtualUnlock
+                  AllocateUserPhysicalPages
+                  AllocateUserPhysicalPagesNuma
+                  DiscardVirtualMemory
+                  FreeUserPhysicalPages
+                  GetMemoryErrorHandlingCapabilities
+                  MapUserPhysicalPages
+                  OfferVirtualMemory
+                  ReclaimVirtualMemory
+                  RegisterBadMemoryNotification
+                  UnregisterBadMemoryNotification
+                  VirtualAllocExNuma
+                  OpenFileMappingFromApp
+                  SetProcessValidCallTargets
+                  VirtualAllocFromApp
+                  VirtualProtectFromApp
+                  QueryVirtualMemoryInformation
+                  MapViewOfFileNuma2
+                  UnmapViewOfFile2
+                  VirtualUnlockEx
+                  MapViewOfFile3
+                  MapViewOfFile3FromApp
+                  VirtualAlloc2
+                  VirtualAlloc2FromApp
+                  ConnectNamedPipe
+                  CreateNamedPipeW
+                  CreatePipe
+                  DisconnectNamedPipe
+                  GetNamedPipeClientComputerNameW
+                  ImpersonateNamedPipeClient
+                  PeekNamedPipe
+                  SetNamedPipeHandleState
+                  TransactNamedPipe
+                  WaitNamedPipeW
+                  GetNamedPipeHandleStateW
+                  GetNamedPipeInfo
+                  CallNamedPipeW
+                  ExpandEnvironmentStringsA
+                  ExpandEnvironmentStringsW
+                  FreeEnvironmentStringsA
+                  FreeEnvironmentStringsW
+                  GetCommandLineA
+                  GetCommandLineW
+                  GetCurrentDirectoryA
+                  GetCurrentDirectoryW
+                  GetEnvironmentStrings
+                  GetEnvironmentStringsW
+                  GetEnvironmentVariableA
+                  GetEnvironmentVariableW
+                  GetStdHandle
+                  SearchPathW
+                  SetCurrentDirectoryA
+                  SetCurrentDirectoryW
+                  SetEnvironmentStringsW
+                  SetEnvironmentVariableA
+                  SetEnvironmentVariableW
+                  SetStdHandle
+                  SetStdHandleEx
+                  NeedCurrentDirectoryForExePathA
+                  NeedCurrentDirectoryForExePathW
+                  SearchPathA
+                  PssCaptureSnapshot
+                  PssDuplicateSnapshot
+                  PssFreeSnapshot
+                  PssQuerySnapshot
+                  PssWalkMarkerCreate
+                  PssWalkMarkerFree
+                  PssWalkMarkerGetPosition
+                  PssWalkMarkerSeekToBeginning
+                  PssWalkMarkerSetPosition
+                  PssWalkSnapshot
+                  CreateProcessA
+                  CreateProcessAsUserW
+                  CreateProcessW
+                  CreateRemoteThread
+                  CreateRemoteThreadEx
+                  CreateThread
+                  DeleteProcThreadAttributeList
+                  ExitProcess
+                  ExitThread
+                  FlushProcessWriteBuffers
+                  GetCurrentProcess
+                  GetCurrentProcessId
+                  GetCurrentThread
+                  GetCurrentThreadId
+                  GetExitCodeProcess
+                  GetExitCodeThread
+                  GetPriorityClass
+                  GetProcessId
+                  GetProcessIdOfThread
+                  GetProcessTimes
+                  GetProcessVersion
+                  GetStartupInfoW
+                  GetThreadId
+                  GetThreadPriority
+                  GetThreadPriorityBoost
+                  InitializeProcThreadAttributeList
+                  OpenProcessToken
+                  OpenThread
+                  OpenThreadToken
+                  ProcessIdToSessionId
+                  QueryProcessAffinityUpdateMode
+                  QueueUserAPC
+                  ResumeThread
+                  SetPriorityClass
+                  SetProcessAffinityUpdateMode
+                  SetProcessShutdownParameters
+                  SetThreadPriority
+                  SetThreadPriorityBoost
+                  SetThreadStackGuarantee
+                  SetThreadToken
+                  SuspendThread
+                  SwitchToThread
+                  TerminateProcess
+                  TerminateThread
+                  TlsAlloc
+                  TlsFree
+                  TlsGetValue
+                  TlsSetValue
+                  UpdateProcThreadAttribute
+                  FlushInstructionCache
+                  GetCurrentProcessorNumber
+                  GetCurrentProcessorNumberEx
+                  GetCurrentThreadStackLimits
+                  GetProcessHandleCount
+                  GetProcessMitigationPolicy
+                  GetThreadContext
+                  GetThreadIdealProcessorEx
+                  GetThreadTimes
+                  IsProcessorFeaturePresent
+                  OpenProcess
+                  SetProcessMitigationPolicy
+                  SetThreadContext
+                  SetThreadIdealProcessorEx
+                  GetProcessPriorityBoost
+                  GetSystemTimes
+                  GetThreadIOPendingFlag
+                  GetThreadInformation
+                  IsProcessCritical
+                  QueryProtectedPolicy
+                  SetProcessPriorityBoost
+                  SetProtectedPolicy
+                  SetThreadInformation
+                  CreateProcessAsUserA
+                  GetProcessDefaultCpuSets
+                  GetProcessInformation
+                  GetProcessShutdownParameters
+                  GetSystemCpuSetInformation
+                  GetThreadDescription
+                  GetThreadSelectedCpuSets
+                  SetProcessDefaultCpuSets
+                  SetProcessInformation
+                  SetThreadDescription
+                  SetThreadIdealProcessor
+                  SetThreadSelectedCpuSets
+                  QueryPerformanceCounter
+                  QueryPerformanceFrequency
+                  QueryIdleProcessorCycleTime
+                  QueryIdleProcessorCycleTimeEx
+                  QueryProcessCycleTime
+                  QueryThreadCycleTime
+                  QueryUnbiasedInterruptTime
+                  QueryInterruptTime
+                  QueryInterruptTimePrecise
+                  QueryUnbiasedInterruptTimePrecise
+                  ConvertAuxiliaryCounterToPerformanceCounter
+                  ConvertPerformanceCounterToAuxiliaryCounter
+                  QueryAuxiliaryCounterFrequency
+                  RegCloseKey
+                  RegCopyTreeW
+                  RegCreateKeyExA
+                  RegCreateKeyExW
+                  RegDeleteKeyExA
+                  RegDeleteKeyExW
+                  RegDeleteTreeA
+                  RegDeleteTreeW
+                  RegDeleteValueA
+                  RegDeleteValueW
+                  RegDisablePredefinedCacheEx
+                  RegEnumKeyExA
+                  RegEnumKeyExW
+                  RegEnumValueA
+                  RegEnumValueW
+                  RegFlushKey
+                  RegGetKeySecurity
+                  RegGetValueA
+                  RegGetValueW
+                  RegLoadAppKeyA
+                  RegLoadAppKeyW
+                  RegLoadKeyA
+                  RegLoadKeyW
+                  RegLoadMUIStringA
+                  RegLoadMUIStringW
+                  RegNotifyChangeKeyValue
+                  RegOpenCurrentUser
+                  RegOpenKeyExA
+                  RegOpenKeyExW
+                  RegOpenUserClassesRoot
+                  RegQueryInfoKeyA
+                  RegQueryInfoKeyW
+                  RegQueryValueExA
+                  RegQueryValueExW
+                  RegRestoreKeyA
+                  RegRestoreKeyW
+                  RegSaveKeyExA
+                  RegSaveKeyExW
+                  RegSetKeySecurity
+                  RegSetValueExA
+                  RegSetValueExW
+                  RegUnLoadKeyA
+                  RegUnLoadKeyW
+                  RegDeleteKeyValueA
+                  RegDeleteKeyValueW
+                  RegSetKeyValueA
+                  RegSetKeyValueW
+                  RegQueryMultipleValuesA
+                  RegQueryMultipleValuesW
+                  RtlAddFunctionTable
+                  RtlCaptureContext
+                  RtlCaptureStackBackTrace
+                  RtlCompareMemory
+                  RtlDeleteFunctionTable
+                  RtlInstallFunctionTableCallback
+                  RtlLookupFunctionEntry
+                  RtlPcToFileHeader
+                  RtlRaiseException
+                  RtlRestoreContext
+                  RtlUnwind
+                  RtlUnwindEx
+                  RtlVirtualUnwind
+                  RtlAddGrowableFunctionTable
+                  RtlDeleteGrowableFunctionTable
+                  RtlGrowFunctionTable
+                  CompareStringEx
+                  CompareStringOrdinal
+                  CompareStringW
+                  FoldStringW
+                  GetStringTypeExW
+                  GetStringTypeW
+                  MultiByteToWideChar
+                  WideCharToMultiByte
+                  AcquireSRWLockExclusive
+                  AcquireSRWLockShared
+                  CancelWaitableTimer
+                  CreateEventA
+                  CreateEventExA
+                  CreateEventExW
+                  CreateEventW
+                  CreateMutexA
+                  CreateMutexExA
+                  CreateMutexExW
+                  CreateMutexW
+                  CreateSemaphoreExW
+                  CreateWaitableTimerExW
+                  DeleteCriticalSection
+                  EnterCriticalSection
+                  InitializeCriticalSection
+                  InitializeCriticalSectionAndSpinCount
+                  InitializeCriticalSectionEx
+                  InitializeSRWLock
+                  LeaveCriticalSection
+                  OpenEventA
+                  OpenEventW
+                  OpenMutexW
+                  OpenSemaphoreW
+                  OpenWaitableTimerW
+                  ReleaseMutex
+                  ReleaseSRWLockExclusive
+                  ReleaseSRWLockShared
+                  ReleaseSemaphore
+                  ResetEvent
+                  SetCriticalSectionSpinCount
+                  SetEvent
+                  SetWaitableTimer
+                  SetWaitableTimerEx
+                  SleepEx
+                  TryAcquireSRWLockExclusive
+                  TryAcquireSRWLockShared
+                  TryEnterCriticalSection
+                  WaitForMultipleObjectsEx
+                  WaitForSingleObject
+                  WaitForSingleObjectEx
+                  DeleteSynchronizationBarrier
+                  EnterSynchronizationBarrier
+                  InitOnceBeginInitialize
+                  InitOnceComplete
+                  InitOnceExecuteOnce
+                  InitOnceInitialize
+                  InitializeConditionVariable
+                  InitializeSynchronizationBarrier
+                  SignalObjectAndWait
+                  Sleep
+                  SleepConditionVariableCS
+                  SleepConditionVariableSRW
+                  WaitOnAddress
+                  WakeAllConditionVariable
+                  WakeByAddressAll
+                  WakeByAddressSingle
+                  WakeConditionVariable
+                  CreateSemaphoreW
+                  CreateWaitableTimerW
+                  WaitForMultipleObjects
+                  GetComputerNameExA
+                  GetComputerNameExW
+                  GetLocalTime
+                  GetLogicalProcessorInformation
+                  GetLogicalProcessorInformationEx
+                  GetSystemDirectoryA
+                  GetSystemDirectoryW
+                  GetSystemInfo
+                  GetSystemTime
+                  GetSystemTimeAdjustment
+                  GetSystemTimeAsFileTime
+                  GetSystemWindowsDirectoryA
+                  GetSystemWindowsDirectoryW
+                  GetTickCount
+                  GetTickCount64
+                  GetVersion
+                  GetVersionExA
+                  GetVersionExW
+                  GetWindowsDirectoryA
+                  GetWindowsDirectoryW
+                  GlobalMemoryStatusEx
+                  SetLocalTime
+                  EnumSystemFirmwareTables
+                  GetNativeSystemInfo
+                  GetOsSafeBootMode
+                  GetProductInfo
+                  GetSystemFirmwareTable
+                  GetSystemTimePreciseAsFileTime
+                  SetComputerNameExW
+                  SetSystemTime
+                  VerSetConditionMask
+                  DnsHostnameToComputerNameExW
+                  GetPhysicallyInstalledSystemMemory
+                  InstallELAMCertificateInfo
+                  SetComputerNameEx2W
+                  SetSystemTimeAdjustment
+                  GetProcessorSystemCycleTime
+                  GetIntegratedDisplaySize
+                  GetOsManufacturingMode
+                  SetComputerNameA
+                  SetComputerNameExA
+                  SetComputerNameW
+                  GetSystemTimeAdjustmentPrecise
+                  SetSystemTimeAdjustmentPrecise
+                  CallbackMayRunLong
+                  CancelThreadpoolIo
+                  CloseThreadpool
+                  CloseThreadpoolCleanupGroup
+                  CloseThreadpoolCleanupGroupMembers
+                  CloseThreadpoolIo
+                  CloseThreadpoolTimer
+                  CloseThreadpoolWait
+                  CloseThreadpoolWork
+                  CreateThreadpool
+                  CreateThreadpoolCleanupGroup
+                  CreateThreadpoolIo
+                  CreateThreadpoolTimer
+                  CreateThreadpoolWait
+                  CreateThreadpoolWork
+                  DisassociateCurrentThreadFromCallback
+                  FreeLibraryWhenCallbackReturns
+                  IsThreadpoolTimerSet
+                  LeaveCriticalSectionWhenCallbackReturns
+                  QueryThreadpoolStackInformation
+                  ReleaseMutexWhenCallbackReturns
+                  ReleaseSemaphoreWhenCallbackReturns
+                  SetEventWhenCallbackReturns
+                  SetThreadpoolStackInformation
+                  SetThreadpoolThreadMaximum
+                  SetThreadpoolThreadMinimum
+                  SetThreadpoolTimer
+                  SetThreadpoolTimerEx
+                  SetThreadpoolWait
+                  SetThreadpoolWaitEx
+                  StartThreadpoolIo
+                  SubmitThreadpoolWork
+                  TrySubmitThreadpoolCallback
+                  WaitForThreadpoolIoCallbacks
+                  WaitForThreadpoolTimerCallbacks
+                  WaitForThreadpoolWaitCallbacks
+                  WaitForThreadpoolWorkCallbacks
+                  EnumDynamicTimeZoneInformation
+                  FileTimeToSystemTime
+                  GetDynamicTimeZoneInformation
+                  GetDynamicTimeZoneInformationEffectiveYears
+                  GetTimeZoneInformation
+                  GetTimeZoneInformationForYear
+                  SetDynamicTimeZoneInformation
+                  SetTimeZoneInformation
+                  SystemTimeToFileTime
+                  SystemTimeToTzSpecificLocalTime
+                  SystemTimeToTzSpecificLocalTimeEx
+                  TzSpecificLocalTimeToSystemTime
+                  TzSpecificLocalTimeToSystemTimeEx
+                  Beep
+                  DecodePointer
+                  DecodeSystemPointer
+                  EncodePointer
+                  EncodeSystemPointer
+                  DecodeRemotePointer
+                  EncodeRemotePointer
+                  IsWow64Process
+                  Wow64DisableWow64FsRedirection
+                  Wow64RevertWow64FsRedirection
+                  GetSystemWow64Directory2A
+                  GetSystemWow64Directory2W
+                  GetSystemWow64DirectoryA
+                  GetSystemWow64DirectoryW
+                  IsWow64Process2
+                  Wow64SetThreadDefaultGuestMachine
+                  IsWow64GuestMachineSupported
+                  RtlCopyExtendedContext
+                  RtlGetEnabledExtendedFeatures
+                  RtlGetExtendedContextLength
+                  RtlGetExtendedFeaturesMask
+                  RtlInitializeExtendedContext
+                  RtlLocateExtendedFeature
+                  RtlLocateLegacyContext
+                  RtlSetExtendedFeaturesMask
+                  RtlCopyContext
+                  RtlLocateExtendedFeature2
+                  CloseTrace
+                  OpenTraceW
+                  ProcessTrace
+                  QueryTraceProcessingHandle
+                  ControlTraceW
+                  EnableTraceEx2
+                  EnumerateTraceGuidsEx
+                  EventAccessControl
+                  EventAccessQuery
+                  EventAccessRemove
+                  QueryAllTracesW
+                  StartTraceW
+                  StopTraceW
+                  TraceQueryInformation
+                  TraceSetInformation
+                  GetAppContainerNamedObjectPath
+                  AccessCheck
+                  AccessCheckAndAuditAlarmW
+                  AccessCheckByType
+                  AccessCheckByTypeAndAuditAlarmW
+                  AccessCheckByTypeResultList
+                  AccessCheckByTypeResultListAndAuditAlarmByHandleW
+                  AccessCheckByTypeResultListAndAuditAlarmW
+                  AddAccessAllowedAce
+                  AddAccessAllowedAceEx
+                  AddAccessAllowedObjectAce
+                  AddAccessDeniedAce
+                  AddAccessDeniedAceEx
+                  AddAccessDeniedObjectAce
+                  AddAce
+                  AddAuditAccessAce
+                  AddAuditAccessAceEx
+                  AddAuditAccessObjectAce
+                  AddMandatoryAce
+                  AdjustTokenGroups
+                  AdjustTokenPrivileges
+                  AllocateAndInitializeSid
+                  AllocateLocallyUniqueId
+                  AreAllAccessesGranted
+                  AreAnyAccessesGranted
+                  CheckTokenMembership
+                  ConvertToAutoInheritPrivateObjectSecurity
+                  CopySid
+                  CreatePrivateObjectSecurity
+                  CreatePrivateObjectSecurityEx
+                  CreatePrivateObjectSecurityWithMultipleInheritance
+                  CreateRestrictedToken
+                  CreateWellKnownSid
+                  DeleteAce
+                  DestroyPrivateObjectSecurity
+                  DuplicateToken
+                  DuplicateTokenEx
+                  EqualDomainSid
+                  EqualPrefixSid
+                  EqualSid
+                  FindFirstFreeAce
+                  FreeSid
+                  GetAce
+                  GetAclInformation
+                  GetFileSecurityW
+                  GetKernelObjectSecurity
+                  GetLengthSid
+                  GetPrivateObjectSecurity
+                  GetSecurityDescriptorControl
+                  GetSecurityDescriptorDacl
+                  GetSecurityDescriptorGroup
+                  GetSecurityDescriptorLength
+                  GetSecurityDescriptorOwner
+                  GetSecurityDescriptorRMControl
+                  GetSecurityDescriptorSacl
+                  GetSidIdentifierAuthority
+                  GetSidLengthRequired
+                  GetSidSubAuthority
+                  GetSidSubAuthorityCount
+                  GetTokenInformation
+                  GetWindowsAccountDomainSid
+                  ImpersonateAnonymousToken
+                  ImpersonateLoggedOnUser
+                  ImpersonateSelf
+                  InitializeAcl
+                  InitializeSecurityDescriptor
+                  InitializeSid
+                  IsTokenRestricted
+                  IsValidAcl
+                  IsValidSecurityDescriptor
+                  IsValidSid
+                  IsWellKnownSid
+                  MakeAbsoluteSD
+                  MakeSelfRelativeSD
+                  MapGenericMask
+                  ObjectCloseAuditAlarmW
+                  ObjectDeleteAuditAlarmW
+                  ObjectOpenAuditAlarmW
+                  ObjectPrivilegeAuditAlarmW
+                  PrivilegeCheck
+                  PrivilegedServiceAuditAlarmW
+                  QuerySecurityAccessMask
+                  RevertToSelf
+                  SetAclInformation
+                  SetFileSecurityW
+                  SetKernelObjectSecurity
+                  SetPrivateObjectSecurity
+                  SetPrivateObjectSecurityEx
+                  SetSecurityAccessMask
+                  SetSecurityDescriptorControl
+                  SetSecurityDescriptorDacl
+                  SetSecurityDescriptorGroup
+                  SetSecurityDescriptorOwner
+                  SetSecurityDescriptorRMControl
+                  SetSecurityDescriptorSacl
+                  SetTokenInformation
+                  AddResourceAttributeAce
+                  AddScopedPolicyIDAce
+                  CheckTokenCapability
+                  CheckTokenMembershipEx
+                  GetAppContainerAce
+                  GetCachedSigningLevel
+                  SetCachedSigningLevel
+                  CveEventWrite
+                  DeriveCapabilitySidsFromName
+                  CredDeleteA
+                  CredDeleteW
+                  CredEnumerateA
+                  CredEnumerateW
+                  CredFindBestCredentialA
+                  CredFindBestCredentialW
+                  CredFree
+                  CredGetSessionTypes
+                  CredGetTargetInfoA
+                  CredGetTargetInfoW
+                  CredIsMarshaledCredentialW
+                  CredIsProtectedA
+                  CredIsProtectedW
+                  CredMarshalCredentialA
+                  CredMarshalCredentialW
+                  CredProtectA
+                  CredProtectW
+                  CredReadA
+                  CredReadDomainCredentialsA
+                  CredReadDomainCredentialsW
+                  CredReadW
+                  CredUnmarshalCredentialA
+                  CredUnmarshalCredentialW
+                  CredUnprotectA
+                  CredUnprotectW
+                  CredWriteA
+                  CredWriteDomainCredentialsA
+                  CredWriteDomainCredentialsW
+                  CredWriteW
+                  ConvertSecurityDescriptorToStringSecurityDescriptorW
+                  ConvertSidToStringSidW
+                  ConvertStringSecurityDescriptorToSecurityDescriptorW
+                  ConvertStringSidToSidW
+                  RegisterServiceCtrlHandlerExW
+                  SetServiceStatus
+                  StartServiceCtrlDispatcherW
+                  EnumDependentServicesW
+                  EnumServicesStatusExW
+                  QueryServiceDynamicInformation
+                  GetServiceDisplayNameW
+                  GetServiceKeyNameW
+                  GetServiceRegistryStateKey
+                  CloseServiceHandle
+                  ControlServiceExW
+                  CreateServiceW
+                  DeleteService
+                  OpenSCManagerW
+                  OpenServiceW
+                  StartServiceW
+                  ChangeServiceConfig2W
+                  ChangeServiceConfigW
+                  NotifyServiceStatusChangeW
+                  QueryServiceConfig2W
+                  QueryServiceConfigW
+                  QueryServiceObjectSecurity
+                  QueryServiceStatusEx
+                  SetServiceObjectSecurity
+                  ChangeServiceConfig2A
+                  ChangeServiceConfigA
+                  ControlService
+                  ControlServiceExA
+                  CreateServiceA
+                  NotifyServiceStatusChangeA
+                  OpenSCManagerA
+                  OpenServiceA
+                  QueryServiceConfig2A
+                  QueryServiceConfigA
+                  QueryServiceStatus
+                  RegisterServiceCtrlHandlerA
+                  RegisterServiceCtrlHandlerExA
+                  RegisterServiceCtrlHandlerW
+                  StartServiceA
+                  StartServiceCtrlDispatcherA
+                  SystemFunction001
+                  SystemFunction002
+                  SystemFunction003
+                  SystemFunction004
+                  SystemFunction005
+                  SystemFunction028
+                  SystemFunction029
+                  SystemFunction034
+                  SystemFunction036
+                  SystemFunction040
+                  SystemFunction041
+                  AdaptiveTimeout_ClearInterfaceSpecificConfiguration
+                  AdaptiveTimeout_ResetAdaptiveTimeout
+                  AddRefQueryBlobEx
+                  BreakRecordsIntoBlob
+                  Coalesce_UpdateNetVersion
+                  CombineRecordsInBlob
+                  DeRefQueryBlobEx
+                  DelaySortDAServerlist
+                  DnsAcquireContextHandle_A
+                  DnsAcquireContextHandle_W
+                  DnsAllocateRecord
+                  DnsApiAlloc
+                  DnsApiAllocZero
+                  DnsApiFree
+                  DnsApiHeapReset
+                  DnsApiRealloc
+                  DnsApiSetDebugGlobals
+                  DnsAsyncRegisterHostAddrs
+                  DnsAsyncRegisterInit
+                  DnsAsyncRegisterTerm
+                  DnsCancelQuery
+                  DnsConnectionDeletePolicyEntries
+                  DnsConnectionDeletePolicyEntriesPrivate
+                  DnsConnectionDeleteProxyInfo
+                  DnsConnectionFreeNameList
+                  DnsConnectionFreeProxyInfo
+                  DnsConnectionFreeProxyInfoEx
+                  DnsConnectionFreeProxyList
+                  DnsConnectionGetHandleForHostUrlPrivate
+                  DnsConnectionGetNameList
+                  DnsConnectionGetProxyInfo
+                  DnsConnectionGetProxyInfoForHostUrl
+                  DnsConnectionGetProxyList
+                  DnsConnectionSetPolicyEntries
+                  DnsConnectionSetPolicyEntriesPrivate
+                  DnsConnectionSetProxyInfo
+                  DnsConnectionUpdateIfIndexTable
+                  DnsCopyStringEx
+                  DnsCreateReverseNameStringForIpAddress
+                  DnsCreateStandardDnsNameCopy
+                  DnsCreateStringCopy
+                  DnsDeRegisterLocal
+                  DnsDhcpRegisterAddrs
+                  DnsDhcpRegisterHostAddrs
+                  DnsDhcpRegisterInit
+                  DnsDhcpRegisterTerm
+                  DnsDhcpRemoveRegistrations
+                  DnsDhcpSrvRegisterHostAddr
+                  DnsDhcpSrvRegisterHostAddrEx
+                  DnsDhcpSrvRegisterHostName
+                  DnsDhcpSrvRegisterHostNameEx
+                  DnsDhcpSrvRegisterInit
+                  DnsDhcpSrvRegisterInitEx
+                  DnsDhcpSrvRegisterInitialize
+                  DnsDhcpSrvRegisterTerm
+                  DnsDisableIdnEncoding
+                  DnsDowncaseDnsNameLabel
+                  DnsExtractRecordsFromMessage_UTF8
+                  DnsExtractRecordsFromMessage_W
+                  DnsFindAuthoritativeZone
+                  DnsFlushResolverCache
+                  DnsFlushResolverCacheEntry_A
+                  DnsFlushResolverCacheEntry_UTF8
+                  DnsFlushResolverCacheEntry_W
+                  DnsFree
+                  DnsFreeConfigStructure
+                  DnsFreePolicyConfig
+                  DnsFreeProxyName
+                  DnsGetApplicationIdentifier
+                  DnsGetBufferLengthForStringCopy
+                  DnsGetCacheDataTable
+                  DnsGetDnsServerList
+                  DnsGetDomainName
+                  DnsGetLastFailedUpdateInfo
+                  DnsGetPolicyTableInfo
+                  DnsGetPolicyTableInfoPrivate
+                  DnsGetPrimaryDomainName_A
+                  DnsGetProxyInfoPrivate
+                  DnsGetProxyInformation
+                  DnsGetQueryRetryTimeouts
+                  DnsGlobals
+                  DnsIpv6AddressToString
+                  DnsIpv6StringToAddress
+                  DnsIsAMailboxType
+                  DnsIsNSECType
+                  DnsIsStatusRcode
+                  DnsIsStringCountValidForTextType
+                  DnsLogEvent
+                  DnsMapRcodeToStatus
+                  DnsModifyRecordsInSet_A
+                  DnsModifyRecordsInSet_UTF8
+                  DnsModifyRecordsInSet_W
+                  DnsNameCompareEx_A
+                  DnsNameCompareEx_UTF8
+                  DnsNameCompareEx_W
+                  DnsNameCompare_A
+                  DnsNameCompare_UTF8
+                  DnsNameCompare_W
+                  DnsNameCopy
+                  DnsNameCopyAllocate
+                  DnsNetworkInfo_CreateFromFAZ
+                  DnsNetworkInformation_CreateFromFAZ
+                  DnsNotifyResolver
+                  DnsNotifyResolverClusterIp
+                  DnsNotifyResolverEx
+                  DnsQueryConfig
+                  DnsQueryConfigAllocEx
+                  DnsQueryConfigDword
+                  DnsQueryEx
+                  DnsQueryExA
+                  DnsQueryExUTF8
+                  DnsQueryExW
+                  DnsQuery_A
+                  DnsQuery_UTF8
+                  DnsQuery_W
+                  DnsRecordBuild_UTF8
+                  DnsRecordBuild_W
+                  DnsRecordCompare
+                  DnsRecordCopyEx
+                  DnsRecordListFree
+                  DnsRecordListUnmapV4MappedAAAAInPlace
+                  DnsRecordSetCompare
+                  DnsRecordSetCopyEx
+                  DnsRecordSetDetach
+                  DnsRecordStringForType
+                  DnsRecordStringForWritableType
+                  DnsRecordTypeForName
+                  DnsRegisterLocal
+                  DnsReleaseContextHandle
+                  DnsRemoveRegistrations
+                  DnsReplaceRecordSetA
+                  DnsReplaceRecordSetUTF8
+                  DnsReplaceRecordSetW
+                  DnsResetQueryRetryTimeouts
+                  DnsResolverOp
+                  DnsScreenLocalAddrsForRegistration
+                  DnsServiceBrowse
+                  DnsServiceBrowseCancel
+                  DnsServiceConstructInstance
+                  DnsServiceCopyInstance
+                  DnsServiceDeRegister
+                  DnsServiceFreeInstance
+                  DnsServiceRegister
+                  DnsServiceRegisterCancel
+                  DnsServiceResolve
+                  DnsServiceResolveCancel
+                  DnsSetConfigDword
+                  DnsSetConfigValue
+                  DnsSetQueryRetryTimeouts
+                  DnsStartMulticastQuery
+                  DnsStatusString
+                  DnsStopMulticastQuery
+                  DnsStringCopyAllocateEx
+                  DnsTraceServerConfig
+                  DnsUnicodeToUtf8
+                  DnsUpdate
+                  DnsUpdateMachinePresence
+                  DnsUpdateTest_A
+                  DnsUpdateTest_UTF8
+                  DnsUpdateTest_W
+                  DnsUtf8ToUnicode
+                  DnsValidateNameOrIp_TempW
+                  DnsValidateName_A
+                  DnsValidateName_UTF8
+                  DnsValidateName_W
+                  DnsValidateServerArray_A
+                  DnsValidateServerArray_W
+                  DnsValidateServerStatus
+                  DnsValidateServer_A
+                  DnsValidateServer_W
+                  DnsValidateUtf8Byte
+                  DnsWriteQuestionToBuffer_UTF8
+                  DnsWriteQuestionToBuffer_W
+                  DnsWriteReverseNameStringForIpAddress
+                  Dns_AddRecordsToMessage
+                  Dns_AllocateMsgBuf
+                  Dns_BuildPacket
+                  Dns_CacheServiceCleanup
+                  Dns_CacheServiceInit
+                  Dns_CacheServiceStopIssued
+                  Dns_CleanupWinsock
+                  Dns_CloseConnection
+                  Dns_CloseSocket
+                  Dns_CreateMulticastSocket
+                  Dns_CreateSocket
+                  Dns_CreateSocketEx
+                  Dns_ExtractRecordsFromMessage
+                  Dns_FindAuthoritativeZoneLib
+                  Dns_FreeMsgBuf
+                  Dns_GetRandomXid
+                  Dns_InitializeMsgBuf
+                  Dns_InitializeMsgRemoteSockaddr
+                  Dns_InitializeWinsock
+                  Dns_OpenTcpConnectionAndSend
+                  Dns_ParseMessage
+                  Dns_ParsePacketRecord
+                  Dns_PingAdapterServers
+                  Dns_ReadPacketName
+                  Dns_ReadPacketNameAllocate
+                  Dns_ReadRecordStructureFromPacket
+                  Dns_RecvTcp
+                  Dns_ResetNetworkInfo
+                  Dns_SendAndRecvUdp
+                  Dns_SendEx
+                  Dns_SetRecordDatalength
+                  Dns_SetRecordsSection
+                  Dns_SetRecordsTtl
+                  Dns_SkipPacketName
+                  Dns_SkipToRecord
+                  Dns_UpdateLib
+                  Dns_UpdateLibEx
+                  Dns_WriteDottedNameToPacket
+                  Dns_WriteQuestionToMessage
+                  Dns_WriteRecordStructureToPacketEx
+                  ExtraInfo_Init
+                  Faz_AreServerListsInSameNameSpace
+                  FlushDnsPolicyUnreachableStatus
+                  GetCurrentTimeInSeconds
+                  HostsFile_Close
+                  HostsFile_Open
+                  HostsFile_ReadLine
+                  IpHelp_IsAddrOnLink
+                  Local_GetRecordsForLocalName
+                  Local_GetRecordsForLocalNameEx
+                  NetInfo_Build
+                  NetInfo_Clean
+                  NetInfo_Copy
+                  NetInfo_CopyNetworkIndex
+                  NetInfo_CreatePerNetworkNetinfo
+                  NetInfo_Free
+                  NetInfo_GetAdapterByAddress
+                  NetInfo_GetAdapterByInterfaceIndex
+                  NetInfo_GetAdapterByName
+                  NetInfo_IsAddrConfig
+                  NetInfo_IsForUpdate
+                  NetInfo_IsTcpipConfigChange
+                  NetInfo_ResetServerPriorities
+                  NetInfo_UpdateDnsInterfaceConfigChange
+                  NetInfo_UpdateNetworkProperties
+                  NetInfo_UpdateServerReachability
+                  QueryDirectEx
+                  Query_Cancel
+                  Query_Main
+                  Reg_FreeUpdateInfo
+                  Reg_GetValueEx
+                  Reg_ReadGlobalsEx
+                  Reg_ReadUpdateInfo
+                  Security_ContextListTimeout
+                  Send_AndRecvUdpWithParam
+                  Send_MessagePrivate
+                  Send_MessagePrivateEx
+                  Send_OpenTcpConnectionAndSend
+                  Socket_CacheCleanup
+                  Socket_CacheInit
+                  Socket_CleanupWinsock
+                  Socket_ClearMessageSockets
+                  Socket_CloseEx
+                  Socket_CloseMessageSockets
+                  Socket_Create
+                  Socket_CreateMulticast
+                  Socket_InitWinsock
+                  Socket_JoinMulticast
+                  Socket_RecvFrom
+                  Socket_SetMulticastInterface
+                  Socket_SetMulticastLoopBack
+                  Socket_SetTtl
+                  Socket_TcpListen
+                  Trace_Reset
+                  Update_ReplaceAddressRecordsW
+                  Util_IsIp6Running
+                  Util_IsRunningOnXboxOne
+                  AddIPAddress
+                  AllocateAndGetInterfaceInfoFromStack
+                  AllocateAndGetIpAddrTableFromStack
+                  CancelIPChangeNotify
+                  CancelMibChangeNotify2
+                  CloseCompartment
+                  CloseGetIPPhysicalInterfaceForDestination
+                  ConvertCompartmentGuidToId
+                  ConvertCompartmentIdToGuid
+                  ConvertGuidToStringA
+                  ConvertGuidToStringW
+                  ConvertInterfaceAliasToLuid
+                  ConvertInterfaceGuidToLuid
+                  ConvertInterfaceIndexToLuid
+                  ConvertInterfaceLuidToAlias
+                  ConvertInterfaceLuidToGuid
+                  ConvertInterfaceLuidToIndex
+                  ConvertInterfaceLuidToNameA
+                  ConvertInterfaceLuidToNameW
+                  ConvertInterfaceNameToLuidA
+                  ConvertInterfaceNameToLuidW
+                  ConvertInterfacePhysicalAddressToLuid
+                  ConvertIpv4MaskToLength
+                  ConvertLengthToIpv4Mask
+                  ConvertRemoteInterfaceAliasToLuid
+                  ConvertRemoteInterfaceGuidToLuid
+                  ConvertRemoteInterfaceIndexToLuid
+                  ConvertRemoteInterfaceLuidToAlias
+                  ConvertRemoteInterfaceLuidToGuid
+                  ConvertRemoteInterfaceLuidToIndex
+                  ConvertStringToGuidA
+                  ConvertStringToGuidW
+                  ConvertStringToInterfacePhysicalAddress
+                  CreateAnycastIpAddressEntry
+                  CreateCompartment
+                  CreateIpForwardEntry
+                  CreateIpForwardEntry2
+                  CreateIpNetEntry
+                  CreateIpNetEntry2
+                  CreatePersistentTcpPortReservation
+                  CreatePersistentUdpPortReservation
+                  CreateProxyArpEntry
+                  CreateSortedAddressPairs
+                  CreateUnicastIpAddressEntry
+                  DeleteAnycastIpAddressEntry
+                  DeleteCompartment
+                  DeleteIPAddress
+                  DeleteIpForwardEntry
+                  DeleteIpForwardEntry2
+                  DeleteIpNetEntry
+                  DeleteIpNetEntry2
+                  DeletePersistentTcpPortReservation
+                  DeletePersistentUdpPortReservation
+                  DeleteProxyArpEntry
+                  DeleteUnicastIpAddressEntry
+                  DisableMediaSense
+                  EnableRouter
+                  FlushIpNetTable
+                  FlushIpNetTable2
+                  FlushIpPathTable
+                  FreeMibTable
+                  GetAdapterIndex
+                  GetAdapterOrderMap
+                  GetAdaptersAddresses
+                  GetAdaptersInfo
+                  GetAnycastIpAddressEntry
+                  GetAnycastIpAddressTable
+                  GetBestInterface
+                  GetBestInterfaceEx
+                  GetBestRoute
+                  GetBestRoute2
+                  GetCurrentThreadCompartmentId
+                  GetCurrentThreadCompartmentScope
+                  GetDefaultCompartmentId
+                  GetExtendedTcpTable
+                  GetExtendedUdpTable
+                  GetFriendlyIfIndex
+                  GetIcmpStatistics
+                  GetIcmpStatisticsEx
+                  GetIfEntry
+                  GetIfEntry2
+                  GetIfEntry2Ex
+                  GetIfStackTable
+                  GetIfTable
+                  GetIfTable2
+                  GetIfTable2Ex
+                  GetInterfaceCompartmentId
+                  GetInterfaceInfo
+                  GetInvertedIfStackTable
+                  GetIpAddrTable
+                  GetIpErrorString
+                  GetIpForwardEntry2
+                  GetIpForwardTable
+                  GetIpForwardTable2
+                  GetIpInterfaceEntry
+                  GetIpInterfaceTable
+                  GetIpNetEntry2
+                  GetIpNetTable
+                  GetIpNetTable2
+                  GetIpNetworkConnectionBandwidthEstimates
+                  GetIpPathEntry
+                  GetIpPathTable
+                  GetIpStatistics
+                  GetIpStatisticsEx
+                  GetJobCompartmentId
+                  GetMulticastIpAddressEntry
+                  GetMulticastIpAddressTable
+                  GetNetworkInformation
+                  GetNetworkParams
+                  GetNumberOfInterfaces
+                  GetOwnerModuleFromPidAndInfo
+                  GetOwnerModuleFromTcp6Entry
+                  GetOwnerModuleFromTcpEntry
+                  GetOwnerModuleFromUdp6Entry
+                  GetOwnerModuleFromUdpEntry
+                  GetPerAdapterInfo
+                  GetPerTcp6ConnectionEStats
+                  GetPerTcp6ConnectionStats
+                  GetPerTcpConnectionEStats
+                  GetPerTcpConnectionStats
+                  GetRTTAndHopCount
+                  GetSessionCompartmentId
+                  GetTcp6Table
+                  GetTcp6Table2
+                  GetTcpStatistics
+                  GetTcpStatisticsEx
+                  GetTcpStatisticsEx2
+                  GetTcpTable
+                  GetTcpTable2
+                  GetTeredoPort
+                  GetUdp6Table
+                  GetUdpStatistics
+                  GetUdpStatisticsEx
+                  GetUdpStatisticsEx2
+                  GetUdpTable
+                  GetUniDirectionalAdapterInfo
+                  GetUnicastIpAddressEntry
+                  GetUnicastIpAddressTable
+                  GetWPAOACSupportLevel
+                  Icmp6CreateFile
+                  Icmp6ParseReplies
+                  Icmp6SendEcho2
+                  IcmpCloseHandle
+                  IcmpCreateFile
+                  IcmpParseReplies
+                  IcmpSendEcho
+                  IcmpSendEcho2
+                  IcmpSendEcho2Ex
+                  InitializeCompartmentEntry
+                  InitializeIpForwardEntry
+                  InitializeIpInterfaceEntry
+                  InitializeUnicastIpAddressEntry
+                  InternalCleanupPersistentStore
+                  InternalCreateAnycastIpAddressEntry
+                  InternalCreateIpForwardEntry
+                  InternalCreateIpForwardEntry2
+                  InternalCreateIpNetEntry
+                  InternalCreateIpNetEntry2
+                  InternalCreateUnicastIpAddressEntry
+                  InternalDeleteAnycastIpAddressEntry
+                  InternalDeleteIpForwardEntry
+                  InternalDeleteIpForwardEntry2
+                  InternalDeleteIpNetEntry
+                  InternalDeleteIpNetEntry2
+                  InternalDeleteUnicastIpAddressEntry
+                  InternalFindInterfaceByAddress
+                  InternalGetAnycastIpAddressEntry
+                  InternalGetAnycastIpAddressTable
+                  InternalGetBoundTcp6EndpointTable
+                  InternalGetBoundTcpEndpointTable
+                  InternalGetForwardIpTable2
+                  InternalGetIPPhysicalInterfaceForDestination
+                  InternalGetIfEntry2
+                  InternalGetIfTable
+                  InternalGetIfTable2
+                  InternalGetIpAddrTable
+                  InternalGetIpForwardEntry2
+                  InternalGetIpForwardTable
+                  InternalGetIpInterfaceEntry
+                  InternalGetIpInterfaceTable
+                  InternalGetIpNetEntry2
+                  InternalGetIpNetTable
+                  InternalGetIpNetTable2
+                  InternalGetMulticastIpAddressEntry
+                  InternalGetMulticastIpAddressTable
+                  InternalGetRtcSlotInformation
+                  InternalGetTcp6Table2
+                  InternalGetTcp6TableWithOwnerModule
+                  InternalGetTcp6TableWithOwnerPid
+                  InternalGetTcpTable
+                  InternalGetTcpTable2
+                  InternalGetTcpTableEx
+                  InternalGetTcpTableWithOwnerModule
+                  InternalGetTcpTableWithOwnerPid
+                  InternalGetTunnelPhysicalAdapter
+                  InternalGetUdp6TableWithOwnerModule
+                  InternalGetUdp6TableWithOwnerPid
+                  InternalGetUdpTable
+                  InternalGetUdpTableEx
+                  InternalGetUdpTableWithOwnerModule
+                  InternalGetUdpTableWithOwnerPid
+                  InternalGetUnicastIpAddressEntry
+                  InternalGetUnicastIpAddressTable
+                  InternalIcmpCreateFileEx
+                  InternalSetIfEntry
+                  InternalSetIpForwardEntry
+                  InternalSetIpForwardEntry2
+                  InternalSetIpInterfaceEntry
+                  InternalSetIpNetEntry
+                  InternalSetIpNetEntry2
+                  InternalSetIpStats
+                  InternalSetTcpEntry
+                  InternalSetTeredoPort
+                  InternalSetUnicastIpAddressEntry
+                  IpReleaseAddress
+                  IpRenewAddress
+                  LookupPersistentTcpPortReservation
+                  LookupPersistentUdpPortReservation
+                  NTPTimeToNTFileTime
+                  NTTimeToNTPTime
+                  NhGetGuidFromInterfaceName
+                  NhGetInterfaceDescriptionFromGuid
+                  NhGetInterfaceNameFromDeviceGuid
+                  NhGetInterfaceNameFromGuid
+                  NhpAllocateAndGetInterfaceInfoFromStack
+                  NotifyAddrChange
+                  NotifyCompartmentChange
+                  NotifyIpInterfaceChange
+                  NotifyRouteChange
+                  NotifyRouteChange2
+                  NotifyStableUnicastIpAddressTable
+                  NotifyTeredoPortChange
+                  NotifyUnicastIpAddressChange
+                  OpenCompartment
+                  ParseNetworkString
+                  PfAddFiltersToInterface
+                  PfAddGlobalFilterToInterface
+                  PfBindInterfaceToIPAddress
+                  PfBindInterfaceToIndex
+                  PfCreateInterface
+                  PfDeleteInterface
+                  PfDeleteLog
+                  PfGetInterfaceStatistics
+                  PfMakeLog
+                  PfRebindFilters
+                  PfRemoveFilterHandles
+                  PfRemoveFiltersFromInterface
+                  PfRemoveGlobalFilterFromInterface
+                  PfSetLogBuffer
+                  PfTestPacket
+                  PfUnBindInterface
+                  ResolveIpNetEntry2
+                  ResolveNeighbor
+                  RestoreMediaSense
+                  SendARP
+                  SetAdapterIpAddress
+                  SetCurrentThreadCompartmentId
+                  SetCurrentThreadCompartmentScope
+                  SetIfEntry
+                  SetIpForwardEntry
+                  SetIpForwardEntry2
+                  SetIpInterfaceEntry
+                  SetIpNetEntry
+                  SetIpNetEntry2
+                  SetIpStatistics
+                  SetIpStatisticsEx
+                  SetIpTTL
+                  SetJobCompartmentId
+                  SetNetworkInformation
+                  SetPerTcp6ConnectionEStats
+                  SetPerTcp6ConnectionStats
+                  SetPerTcpConnectionEStats
+                  SetPerTcpConnectionStats
+                  SetSessionCompartmentId
+                  SetTcpEntry
+                  SetUnicastIpAddressEntry
+                  UnenableRouter
+                  if_indextoname
+                  if_nametoindex
+                  AcceptEx
+                  EnumProtocolsA
+                  EnumProtocolsW
+                  GetAcceptExSockaddrs
+                  GetAddressByNameA
+                  GetAddressByNameW
+                  GetNameByTypeA
+                  GetNameByTypeW
+                  GetServiceA
+                  GetServiceW
+                  GetSocketErrorMessageW
+                  GetTypeByNameA
+                  GetTypeByNameW
+                  MigrateWinsockConfiguration
+                  MigrateWinsockConfigurationEx
+                  NPLoadNameSpaces
+                  SetServiceA
+                  SetServiceW
+                  TransmitFile
+                  WSARecvEx
+                  dn_expand
+                  getnetbyname
+                  inet_network
+                  rcmd
+                  rexec
+                  rresvport
+                  s_perror
+                  sethostname
+                  ?I_RpcBindingInqCurrentModifiedId@@YAJPEAXPEAU_LUID@@@Z (long __cdecl I_RpcBindingInqCurrentModifiedId(void *,struct _LUID *))
+                  ?I_RpcFixTransferSyntax@@YAXPEAU_RPC_MESSAGE@@@Z (void __cdecl I_RpcFixTransferSyntax(struct _RPC_MESSAGE *))
+                  ?I_RpcFwThisIsTheManager@@YAXXZ (void __cdecl I_RpcFwThisIsTheManager(void))
+                  ?I_RpcInitNdrImports@@YAXPEAPEBU_NDR_CALLBACK_ROUTINES_TABLE@@@Z (void __cdecl I_RpcInitNdrImports(struct _NDR_CALLBACK_ROUTINES_TABLE const * *))
+                  ?I_RpcMgmtQueryDedicatedThreadPool@@YAEXZ (unsigned char __cdecl I_RpcMgmtQueryDedicatedThreadPool(void))
+                  ?I_RpcOpenClientThread@@YAJPEAXKPEAPEAX@Z (long __cdecl I_RpcOpenClientThread(void *,unsigned long,void * *))
+                  ?I_RpcServerTurnOnOffKeepalives@@YAJPEAXHKK@Z (long __cdecl I_RpcServerTurnOnOffKeepalives(void *,int,unsigned long,unsigned long))
+                  ?NdrFullPointerFree@@YAHPEAU_FULL_PTR_XLAT_TABLES@@PEAX@Z (int __cdecl NdrFullPointerFree(struct _FULL_PTR_XLAT_TABLES *,void *))
+                  ?NdrFullPointerInsertRefId@@YAXPEAU_FULL_PTR_XLAT_TABLES@@KPEAX@Z (void __cdecl NdrFullPointerInsertRefId(struct _FULL_PTR_XLAT_TABLES *,unsigned long,void *))
+                  ?NdrFullPointerQueryPointer@@YAHPEAU_FULL_PTR_XLAT_TABLES@@PEAXEPEAK@Z (int __cdecl NdrFullPointerQueryPointer(struct _FULL_PTR_XLAT_TABLES *,void *,unsigned char,unsigned long *))
+                  ?NdrFullPointerQueryRefId@@YAHPEAU_FULL_PTR_XLAT_TABLES@@KEPEAPEAX@Z (int __cdecl NdrFullPointerQueryRefId(struct _FULL_PTR_XLAT_TABLES *,unsigned long,unsigned char,void * *))
+                  ?pfnFreeRoutines@@3QEBQ6AXPEAU_MIDL_STUB_MESSAGE@@PEAEPEBE@ZEB (void (__cdecl*const * const pfnFreeRoutines)(struct _MIDL_STUB_MESSAGE *,unsigned char *,unsigned char const *))
+                  ?pfnMarshallRoutines@@3QEBQ6APEAEPEAU_MIDL_STUB_MESSAGE@@PEAEPEBE@ZEB (unsigned char * (__cdecl*const * const pfnMarshallRoutines)(struct _MIDL_STUB_MESSAGE *,unsigned char *,unsigned char const *))
+                  ?pfnSizeRoutines@@3QEBQ6AXPEAU_MIDL_STUB_MESSAGE@@PEAEPEBE@ZEB (void (__cdecl*const * const pfnSizeRoutines)(struct _MIDL_STUB_MESSAGE *,unsigned char *,unsigned char const *))
+                  ?pfnUnmarshallRoutines@@3QEBQ6APEAEPEAU_MIDL_STUB_MESSAGE@@PEAPEAEPEBEE@ZEB (unsigned char * (__cdecl*const * const pfnUnmarshallRoutines)(struct _MIDL_STUB_MESSAGE *,unsigned char * *,unsigned char const *,unsigned char))
+                  CStdStubBuffer_AddRef
+                  CStdStubBuffer_Connect
+                  CStdStubBuffer_CountRefs
+                  CStdStubBuffer_DebugServerQueryInterface
+                  CStdStubBuffer_DebugServerRelease
+                  CStdStubBuffer_Disconnect
+                  CStdStubBuffer_Invoke
+                  CStdStubBuffer_IsIIDSupported
+                  CStdStubBuffer_QueryInterface
+                  CreateProxyFromTypeInfo
+                  CreateStubFromTypeInfo
+                  DceErrorInqTextA
+                  DceErrorInqTextW
+                  IUnknown_AddRef_Proxy
+                  IUnknown_QueryInterface_Proxy
+                  IUnknown_Release_Proxy
+                  I_RpcAllocate
+                  I_RpcAsyncAbortCall
+                  I_RpcAsyncSetHandle
+                  I_RpcBCacheAllocate
+                  I_RpcBCacheFree
+                  I_RpcBindingCopy
+                  I_RpcBindingCreateNP
+                  I_RpcBindingHandleToAsyncHandle
+                  I_RpcBindingInqClientTokenAttributes
+                  I_RpcBindingInqDynamicEndpoint
+                  I_RpcBindingInqDynamicEndpointA
+                  I_RpcBindingInqDynamicEndpointW
+                  I_RpcBindingInqLocalClientPID
+                  I_RpcBindingInqMarshalledTargetInfo
+                  I_RpcBindingInqSecurityContext
+                  I_RpcBindingInqSecurityContextKeyInfo
+                  I_RpcBindingInqTransportType
+                  I_RpcBindingInqWireIdForSnego
+                  I_RpcBindingIsClientLocal
+                  I_RpcBindingIsServerLocal
+                  I_RpcBindingSetPrivateOption
+                  I_RpcBindingToStaticStringBindingW
+                  I_RpcCertProcessAndProvision
+                  I_RpcClearMutex
+                  I_RpcCompleteAndFree
+                  I_RpcDeleteMutex
+                  I_RpcEnableWmiTrace
+                  I_RpcExceptionFilter
+                  I_RpcFilterDCOMActivation
+                  I_RpcFree
+                  I_RpcFreeBuffer
+                  I_RpcFreePipeBuffer
+                  I_RpcGetBuffer
+                  I_RpcGetBufferWithObject
+                  I_RpcGetCurrentCallHandle
+                  I_RpcGetDefaultSD
+                  I_RpcGetExtendedError
+                  I_RpcGetPortAllocationData
+                  I_RpcIfInqTransferSyntaxes
+                  I_RpcLogEvent
+                  I_RpcMapWin32Status
+                  I_RpcMarshalBindingHandleAndInterfaceForNDF
+                  I_RpcMgmtEnableDedicatedThreadPool
+                  I_RpcNDRCGetWireRepresentation
+                  I_RpcNDRSContextEmergencyCleanup
+                  I_RpcNegotiateTransferSyntax
+                  I_RpcNsBindingSetEntryName
+                  I_RpcNsBindingSetEntryNameA
+                  I_RpcNsBindingSetEntryNameW
+                  I_RpcNsInterfaceExported
+                  I_RpcNsInterfaceUnexported
+                  I_RpcOpenClientProcess
+                  I_RpcParseSecurity
+                  I_RpcPauseExecution
+                  I_RpcReallocPipeBuffer
+                  I_RpcReceive
+                  I_RpcRecordCalloutFailure
+                  I_RpcRequestMutex
+                  I_RpcSNCHOption
+                  I_RpcSend
+                  I_RpcSendReceive
+                  I_RpcServerAllocateIpPort
+                  I_RpcServerCheckClientRestriction
+                  I_RpcServerDisableExceptionFilter
+                  I_RpcServerGetAssociationID
+                  I_RpcServerInqAddressChangeFn
+                  I_RpcServerInqLocalConnAddress
+                  I_RpcServerInqRemoteConnAddress
+                  I_RpcServerInqTransportType
+                  I_RpcServerIsClientDisconnected
+                  I_RpcServerRegisterForwardFunction
+                  I_RpcServerSetAddressChangeFn
+                  I_RpcServerStartService
+                  I_RpcServerSubscribeForDisconnectNotification
+                  I_RpcServerUseProtseq2A
+                  I_RpcServerUseProtseq2W
+                  I_RpcServerUseProtseqEp2A
+                  I_RpcServerUseProtseqEp2W
+                  I_RpcSessionStrictContextHandle
+                  I_RpcSetDCOMAppId
+                  I_RpcSsDontSerializeContext
+                  I_RpcSystemFunction001
+                  I_RpcSystemHandleTypeSpecificWork
+                  I_RpcTransConnectionAllocatePacket
+                  I_RpcTransConnectionFreePacket
+                  I_RpcTransConnectionReallocPacket
+                  I_RpcTransDatagramAllocate
+                  I_RpcTransDatagramAllocate2
+                  I_RpcTransDatagramFree
+                  I_RpcTransGetThreadEvent
+                  I_RpcTransGetThreadEventThreadOptional
+                  I_RpcTransIoCancelled
+                  I_RpcTransServerNewConnection
+                  I_RpcTurnOnEEInfoPropagation
+                  I_UuidCreate
+                  MesBufferHandleReset
+                  MesDecodeBufferHandleCreate
+                  MesDecodeIncrementalHandleCreate
+                  MesEncodeDynBufferHandleCreate
+                  MesEncodeFixedBufferHandleCreate
+                  MesEncodeIncrementalHandleCreate
+                  MesHandleFree
+                  MesIncrementalHandleReset
+                  MesInqProcEncodingId
+                  NDRCContextBinding
+                  NDRCContextMarshall
+                  NDRCContextUnmarshall
+                  NDRSContextMarshall
+                  NDRSContextMarshall2
+                  NDRSContextMarshallEx
+                  NDRSContextUnmarshall
+                  NDRSContextUnmarshall2
+                  NDRSContextUnmarshallEx
+                  Ndr64AsyncClientCall
+                  Ndr64AsyncServerCall64
+                  Ndr64AsyncServerCallAll
+                  Ndr64DcomAsyncClientCall
+                  Ndr64DcomAsyncStubCall
+                  NdrAllocate
+                  NdrAsyncClientCall
+                  NdrAsyncServerCall
+                  NdrByteCountPointerBufferSize
+                  NdrByteCountPointerFree
+                  NdrByteCountPointerMarshall
+                  NdrByteCountPointerUnmarshall
+                  NdrCStdStubBuffer2_Release
+                  NdrCStdStubBuffer_Release
+                  NdrClearOutParameters
+                  NdrClientCall2
+                  NdrClientCall3
+                  NdrClientContextMarshall
+                  NdrClientContextUnmarshall
+                  NdrClientInitialize
+                  NdrClientInitializeNew
+                  NdrComplexArrayBufferSize
+                  NdrComplexArrayFree
+                  NdrComplexArrayMarshall
+                  NdrComplexArrayMemorySize
+                  NdrComplexArrayUnmarshall
+                  NdrComplexStructBufferSize
+                  NdrComplexStructFree
+                  NdrComplexStructMarshall
+                  NdrComplexStructMemorySize
+                  NdrComplexStructUnmarshall
+                  NdrConformantArrayBufferSize
+                  NdrConformantArrayFree
+                  NdrConformantArrayMarshall
+                  NdrConformantArrayMemorySize
+                  NdrConformantArrayUnmarshall
+                  NdrConformantStringBufferSize
+                  NdrConformantStringMarshall
+                  NdrConformantStringMemorySize
+                  NdrConformantStringUnmarshall
+                  NdrConformantStructBufferSize
+                  NdrConformantStructFree
+                  NdrConformantStructMarshall
+                  NdrConformantStructMemorySize
+                  NdrConformantStructUnmarshall
+                  NdrConformantVaryingArrayBufferSize
+                  NdrConformantVaryingArrayFree
+                  NdrConformantVaryingArrayMarshall
+                  NdrConformantVaryingArrayMemorySize
+                  NdrConformantVaryingArrayUnmarshall
+                  NdrConformantVaryingStructBufferSize
+                  NdrConformantVaryingStructFree
+                  NdrConformantVaryingStructMarshall
+                  NdrConformantVaryingStructMemorySize
+                  NdrConformantVaryingStructUnmarshall
+                  NdrContextHandleInitialize
+                  NdrContextHandleSize
+                  NdrConvert
+                  NdrConvert2
+                  NdrCorrelationFree
+                  NdrCorrelationInitialize
+                  NdrCorrelationPass
+                  NdrCreateServerInterfaceFromStub
+                  NdrDcomAsyncClientCall
+                  NdrDcomAsyncStubCall
+                  NdrDllCanUnloadNow
+                  NdrDllGetClassObject
+                  NdrDllRegisterProxy
+                  NdrDllUnregisterProxy
+                  NdrEncapsulatedUnionBufferSize
+                  NdrEncapsulatedUnionFree
+                  NdrEncapsulatedUnionMarshall
+                  NdrEncapsulatedUnionMemorySize
+                  NdrEncapsulatedUnionUnmarshall
+                  NdrFixedArrayBufferSize
+                  NdrFixedArrayFree
+                  NdrFixedArrayMarshall
+                  NdrFixedArrayMemorySize
+                  NdrFixedArrayUnmarshall
+                  NdrFreeBuffer
+                  NdrFullPointerXlatFree
+                  NdrFullPointerXlatInit
+                  NdrGetBaseInterfaceFromStub
+                  NdrGetBuffer
+                  NdrGetDcomProtocolVersion
+                  NdrGetSimpleTypeBufferAlignment
+                  NdrGetSimpleTypeBufferSize
+                  NdrGetSimpleTypeMemorySize
+                  NdrGetTypeFlags
+                  NdrGetUserMarshalInfo
+                  NdrInterfacePointerBufferSize
+                  NdrInterfacePointerFree
+                  NdrInterfacePointerMarshall
+                  NdrInterfacePointerMemorySize
+                  NdrInterfacePointerUnmarshall
+                  NdrMapCommAndFaultStatus
+                  NdrMesProcEncodeDecode
+                  NdrMesProcEncodeDecode2
+                  NdrMesProcEncodeDecode3
+                  NdrMesSimpleTypeAlignSize
+                  NdrMesSimpleTypeAlignSizeAll
+                  NdrMesSimpleTypeDecode
+                  NdrMesSimpleTypeDecodeAll
+                  NdrMesSimpleTypeEncode
+                  NdrMesSimpleTypeEncodeAll
+                  NdrMesTypeAlignSize
+                  NdrMesTypeAlignSize2
+                  NdrMesTypeAlignSize3
+                  NdrMesTypeDecode
+                  NdrMesTypeDecode2
+                  NdrMesTypeDecode3
+                  NdrMesTypeEncode
+                  NdrMesTypeEncode2
+                  NdrMesTypeEncode3
+                  NdrMesTypeFree2
+                  NdrMesTypeFree3
+                  NdrNonConformantStringBufferSize
+                  NdrNonConformantStringMarshall
+                  NdrNonConformantStringMemorySize
+                  NdrNonConformantStringUnmarshall
+                  NdrNonEncapsulatedUnionBufferSize
+                  NdrNonEncapsulatedUnionFree
+                  NdrNonEncapsulatedUnionMarshall
+                  NdrNonEncapsulatedUnionMemorySize
+                  NdrNonEncapsulatedUnionUnmarshall
+                  NdrNsGetBuffer
+                  NdrNsSendReceive
+                  NdrOleAllocate
+                  NdrOleFree
+                  NdrOutInit
+                  NdrPartialIgnoreClientBufferSize
+                  NdrPartialIgnoreClientMarshall
+                  NdrPartialIgnoreServerInitialize
+                  NdrPartialIgnoreServerUnmarshall
+                  NdrPointerBufferSize
+                  NdrPointerFree
+                  NdrPointerMarshall
+                  NdrPointerMemorySize
+                  NdrPointerUnmarshall
+                  NdrProxyErrorHandler
+                  NdrProxyFreeBuffer
+                  NdrProxyGetBuffer
+                  NdrProxyInitialize
+                  NdrProxySendReceive
+                  NdrRangeUnmarshall
+                  NdrRpcSmClientAllocate
+                  NdrRpcSmClientFree
+                  NdrRpcSmSetClientToOsf
+                  NdrRpcSsDefaultAllocate
+                  NdrRpcSsDefaultFree
+                  NdrRpcSsDisableAllocate
+                  NdrRpcSsEnableAllocate
+                  NdrSendReceive
+                  NdrServerCall2
+                  NdrServerCallAll
+                  NdrServerCallNdr64
+                  NdrServerContextMarshall
+                  NdrServerContextNewMarshall
+                  NdrServerContextNewUnmarshall
+                  NdrServerContextUnmarshall
+                  NdrServerInitialize
+                  NdrServerInitializeMarshall
+                  NdrServerInitializeNew
+                  NdrServerInitializePartial
+                  NdrServerInitializeUnmarshall
+                  NdrSimpleStructBufferSize
+                  NdrSimpleStructFree
+                  NdrSimpleStructMarshall
+                  NdrSimpleStructMemorySize
+                  NdrSimpleStructUnmarshall
+                  NdrSimpleTypeMarshall
+                  NdrSimpleTypeUnmarshall
+                  NdrStubCall2
+                  NdrStubCall3
+                  NdrStubForwardingFunction
+                  NdrStubGetBuffer
+                  NdrStubInitialize
+                  NdrStubInitializeMarshall
+                  NdrTypeFlags
+                  NdrTypeFree
+                  NdrTypeMarshall
+                  NdrTypeSize
+                  NdrTypeUnmarshall
+                  NdrUnmarshallBasetypeInline
+                  NdrUserMarshalBufferSize
+                  NdrUserMarshalFree
+                  NdrUserMarshalMarshall
+                  NdrUserMarshalMemorySize
+                  NdrUserMarshalSimpleTypeConvert
+                  NdrUserMarshalUnmarshall
+                  NdrVaryingArrayBufferSize
+                  NdrVaryingArrayFree
+                  NdrVaryingArrayMarshall
+                  NdrVaryingArrayMemorySize
+                  NdrVaryingArrayUnmarshall
+                  NdrXmitOrRepAsBufferSize
+                  NdrXmitOrRepAsFree
+                  NdrXmitOrRepAsMarshall
+                  NdrXmitOrRepAsMemorySize
+                  NdrXmitOrRepAsUnmarshall
+                  NdrpCreateProxy
+                  NdrpCreateStub
+                  NdrpGetProcFormatString
+                  NdrpGetTypeFormatString
+                  NdrpGetTypeGenCookie
+                  NdrpMemoryIncrement
+                  NdrpReleaseTypeFormatString
+                  NdrpReleaseTypeGenCookie
+                  NdrpVarVtOfTypeDesc
+                  RpcAsyncAbortCall
+                  RpcAsyncCancelCall
+                  RpcAsyncCompleteCall
+                  RpcAsyncGetCallStatus
+                  RpcAsyncInitializeHandle
+                  RpcAsyncRegisterInfo
+                  RpcBindingBind
+                  RpcBindingCopy
+                  RpcBindingCreateA
+                  RpcBindingCreateW
+                  RpcBindingFree
+                  RpcBindingFromStringBindingA
+                  RpcBindingFromStringBindingW
+                  RpcBindingInqAuthClientA
+                  RpcBindingInqAuthClientExA
+                  RpcBindingInqAuthClientExW
+                  RpcBindingInqAuthClientW
+                  RpcBindingInqAuthInfoA
+                  RpcBindingInqAuthInfoExA
+                  RpcBindingInqAuthInfoExW
+                  RpcBindingInqAuthInfoW
+                  RpcBindingInqObject
+                  RpcBindingInqOption
+                  RpcBindingReset
+                  RpcBindingServerFromClient
+                  RpcBindingSetAuthInfoA
+                  RpcBindingSetAuthInfoExA
+                  RpcBindingSetAuthInfoExW
+                  RpcBindingSetAuthInfoW
+                  RpcBindingSetObject
+                  RpcBindingSetOption
+                  RpcBindingToStringBindingA
+                  RpcBindingToStringBindingW
+                  RpcBindingUnbind
+                  RpcBindingVectorFree
+                  RpcCancelThread
+                  RpcCancelThreadEx
+                  RpcCertGeneratePrincipalNameA
+                  RpcCertGeneratePrincipalNameW
+                  RpcEpRegisterA
+                  RpcEpRegisterNoReplaceA
+                  RpcEpRegisterNoReplaceW
+                  RpcEpRegisterW
+                  RpcEpResolveBinding
+                  RpcEpUnregister
+                  RpcErrorAddRecord
+                  RpcErrorClearInformation
+                  RpcErrorEndEnumeration
+                  RpcErrorGetNextRecord
+                  RpcErrorGetNumberOfRecords
+                  RpcErrorLoadErrorInfo
+                  RpcErrorResetEnumeration
+                  RpcErrorSaveErrorInfo
+                  RpcErrorStartEnumeration
+                  RpcExceptionFilter
+                  RpcFreeAuthorizationContext
+                  RpcGetAuthorizationContextForClient
+                  RpcIfIdVectorFree
+                  RpcIfInqId
+                  RpcImpersonateClient
+                  RpcImpersonateClient2
+                  RpcImpersonateClientContainer
+                  RpcMgmtEnableIdleCleanup
+                  RpcMgmtEpEltInqBegin
+                  RpcMgmtEpEltInqDone
+                  RpcMgmtEpEltInqNextA
+                  RpcMgmtEpEltInqNextW
+                  RpcMgmtEpUnregister
+                  RpcMgmtInqComTimeout
+                  RpcMgmtInqDefaultProtectLevel
+                  RpcMgmtInqIfIds
+                  RpcMgmtInqServerPrincNameA
+                  RpcMgmtInqServerPrincNameW
+                  RpcMgmtInqStats
+                  RpcMgmtIsServerListening
+                  RpcMgmtSetAuthorizationFn
+                  RpcMgmtSetCancelTimeout
+                  RpcMgmtSetComTimeout
+                  RpcMgmtSetServerStackSize
+                  RpcMgmtStatsVectorFree
+                  RpcMgmtStopServerListening
+                  RpcMgmtWaitServerListen
+                  RpcNetworkInqProtseqsA
+                  RpcNetworkInqProtseqsW
+                  RpcNetworkIsProtseqValidA
+                  RpcNetworkIsProtseqValidW
+                  RpcNsBindingInqEntryNameA
+                  RpcNsBindingInqEntryNameW
+                  RpcObjectInqType
+                  RpcObjectSetInqFn
+                  RpcObjectSetType
+                  RpcProtseqVectorFreeA
+                  RpcProtseqVectorFreeW
+                  RpcRaiseException
+                  RpcRevertContainerImpersonation
+                  RpcRevertToSelf
+                  RpcRevertToSelfEx
+                  RpcServerCompleteSecurityCallback
+                  RpcServerInqBindingHandle
+                  RpcServerInqBindings
+                  RpcServerInqBindingsEx
+                  RpcServerInqCallAttributesA
+                  RpcServerInqCallAttributesW
+                  RpcServerInqDefaultPrincNameA
+                  RpcServerInqDefaultPrincNameW
+                  RpcServerInqIf
+                  RpcServerInterfaceGroupActivate
+                  RpcServerInterfaceGroupClose
+                  RpcServerInterfaceGroupCreateA
+                  RpcServerInterfaceGroupCreateW
+                  RpcServerInterfaceGroupDeactivate
+                  RpcServerInterfaceGroupInqBindings
+                  RpcServerListen
+                  RpcServerRegisterAuthInfoA
+                  RpcServerRegisterAuthInfoW
+                  RpcServerRegisterIf
+                  RpcServerRegisterIf2
+                  RpcServerRegisterIf3
+                  RpcServerRegisterIfEx
+                  RpcServerSubscribeForNotification
+                  RpcServerTestCancel
+                  RpcServerUnregisterIf
+                  RpcServerUnregisterIfEx
+                  RpcServerUnsubscribeForNotification
+                  RpcServerUseAllProtseqs
+                  RpcServerUseAllProtseqsEx
+                  RpcServerUseAllProtseqsIf
+                  RpcServerUseAllProtseqsIfEx
+                  RpcServerUseProtseqA
+                  RpcServerUseProtseqEpA
+                  RpcServerUseProtseqEpExA
+                  RpcServerUseProtseqEpExW
+                  RpcServerUseProtseqEpW
+                  RpcServerUseProtseqExA
+                  RpcServerUseProtseqExW
+                  RpcServerUseProtseqIfA
+                  RpcServerUseProtseqIfExA
+                  RpcServerUseProtseqIfExW
+                  RpcServerUseProtseqIfW
+                  RpcServerUseProtseqW
+                  RpcServerYield
+                  RpcSmAllocate
+                  RpcSmClientFree
+                  RpcSmDestroyClientContext
+                  RpcSmDisableAllocate
+                  RpcSmEnableAllocate
+                  RpcSmFree
+                  RpcSmGetThreadHandle
+                  RpcSmSetClientAllocFree
+                  RpcSmSetThreadHandle
+                  RpcSmSwapClientAllocFree
+                  RpcSsAllocate
+                  RpcSsContextLockExclusive
+                  RpcSsContextLockShared
+                  RpcSsDestroyClientContext
+                  RpcSsDisableAllocate
+                  RpcSsDontSerializeContext
+                  RpcSsEnableAllocate
+                  RpcSsFree
+                  RpcSsGetContextBinding
+                  RpcSsGetThreadHandle
+                  RpcSsSetClientAllocFree
+                  RpcSsSetThreadHandle
+                  RpcSsSwapClientAllocFree
+                  RpcStringBindingComposeA
+                  RpcStringBindingComposeW
+                  RpcStringBindingParseA
+                  RpcStringBindingParseW
+                  RpcStringFreeA
+                  RpcStringFreeW
+                  RpcTestCancel
+                  RpcUserFree
+                  SimpleTypeAlignment
+                  SimpleTypeBufferSize
+                  SimpleTypeMemorySize
+                  TowerConstruct
+                  TowerExplode
+                  UuidCompare
+                  UuidCreate
+                  UuidCreateNil
+                  UuidCreateSequential
+                  UuidEqual
+                  UuidFromStringA
+                  UuidFromStringW
+                  UuidHash
+                  UuidIsNil
+                  UuidToStringA
+                  UuidToStringW
+                  AcceptSecurityContext
+                  AcquireCredentialsHandleA
+                  AcquireCredentialsHandleW
+                  AddCredentialsA
+                  AddCredentialsW
+                  AddSecurityPackageA
+                  AddSecurityPackageW
+                  ApplyControlToken
+                  ChangeAccountPasswordA
+                  ChangeAccountPasswordW
+                  CompleteAuthToken
+                  DecryptMessage
+                  DeleteSecurityContext
+                  DeleteSecurityPackageA
+                  DeleteSecurityPackageW
+                  EncryptMessage
+                  EnumerateSecurityPackagesA
+                  EnumerateSecurityPackagesW
+                  ExportSecurityContext
+                  FreeContextBuffer
+                  FreeCredentialsHandle
+                  GetUserNameExA
+                  GetUserNameExW
+                  ImpersonateSecurityContext
+                  ImportSecurityContextA
+                  ImportSecurityContextW
+                  InitSecurityInterfaceA
+                  InitSecurityInterfaceW
+                  InitializeSecurityContextA
+                  InitializeSecurityContextW
+                  LogonUserExExW
+                  LsaCallAuthenticationPackage
+                  LsaConnectUntrusted
+                  LsaDeregisterLogonProcess
+                  LsaEnumerateLogonSessions
+                  LsaFreeReturnBuffer
+                  LsaGetLogonSessionData
+                  LsaLogonUser
+                  LsaLookupAuthenticationPackage
+                  LsaRegisterLogonProcess
+                  LsaRegisterPolicyChangeNotification
+                  LsaUnregisterPolicyChangeNotification
+                  MakeSignature
+                  QueryContextAttributesA
+                  QueryContextAttributesExA
+                  QueryContextAttributesExW
+                  QueryContextAttributesW
+                  QueryCredentialsAttributesA
+                  QueryCredentialsAttributesExA
+                  QueryCredentialsAttributesExW
+                  QueryCredentialsAttributesW
+                  QuerySecurityContextToken
+                  QuerySecurityPackageInfoA
+                  QuerySecurityPackageInfoW
+                  RevertSecurityContext
+                  SaslAcceptSecurityContext
+                  SaslEnumerateProfilesA
+                  SaslEnumerateProfilesW
+                  SaslGetContextOption
+                  SaslGetProfilePackageA
+                  SaslGetProfilePackageW
+                  SaslIdentifyPackageA
+                  SaslIdentifyPackageW
+                  SaslInitializeSecurityContextA
+                  SaslInitializeSecurityContextW
+                  SaslSetContextOption
+                  SealMessage
+                  SetContextAttributesA
+                  SetContextAttributesW
+                  SetCredentialsAttributesA
+                  SetCredentialsAttributesW
+                  SspiCompareAuthIdentities
+                  SspiCopyAuthIdentity
+                  SspiDecryptAuthIdentity
+                  SspiDecryptAuthIdentityEx
+                  SspiEncodeAuthIdentityAsStrings
+                  SspiEncodeStringsAsAuthIdentity
+                  SspiEncryptAuthIdentity
+                  SspiEncryptAuthIdentityEx
+                  SspiExcludePackage
+                  SspiFreeAuthIdentity
+                  SspiGetTargetHostName
+                  SspiIsAuthIdentityEncrypted
+                  SspiLocalFree
+                  SspiMarshalAuthIdentity
+                  SspiPrepareForCredRead
+                  SspiPrepareForCredWrite
+                  SspiUnmarshalAuthIdentity
+                  SspiValidateAuthIdentity
+                  SspiZeroAuthIdentity
+                  UnsealMessage
+                  VerifySignature
+            23    socket
+            22    shutdown
+            21    setsockopt
+            20    sendto
+            19    send
+            18    select
+            17    recvfrom
+            16    recv
+            15    ntohs
+            14    ntohl
+            13    listen
+            10    ioctlsocket
+                  inet_pton
+                  inet_ntop
+            12    inet_ntoa
+            11    inet_addr
+             9    htons
+             8    htonl
+             7    getsockopt
+             6    getsockname
+            56    getservbyport
+            55    getservbyname
+            54    getprotobynumber
+            53    getprotobyname
+             5    getpeername
+                  getnameinfo
+            57    gethostname
+            52    gethostbyname
+            51    gethostbyaddr
+                  getaddrinfo
+                  freeaddrinfo
+             4    connect
+             3    closesocket
+             2    bind
+             1    accept
+           151    __WSAFDIsSet
+                  WahWriteLSPEvent
+                  WahWaitForNotification
+                  WahRemoveHandleContext
+                  WahReferenceContextByHandle
+                  WahQueueUserApc
+                  WahOpenNotificationHandleHelper
+                  WahOpenHandleHelper
+                  WahOpenCurrentThread
+                  WahOpenApcHelper
+                  WahNotifyAllProcesses
+                  WahInsertHandleContext
+                  WahEnumerateHandleContexts
+                  WahEnableNonIFSHandleSupport
+                  WahDisableNonIFSHandleSupport
+                  WahDestroyHandleContextTable
+                  WahCreateSocketHandle
+                  WahCreateNotificationHandle
+                  WahCreateHandleContextTable
+                  WahCompleteRequest
+                  WahCloseThread
+                  WahCloseSocketHandle
+                  WahCloseNotificationHandleHelper
+                  WahCloseHandleHelper
+                  WahCloseApcHelper
+                  WSCWriteProviderOrderEx
+                  WSCWriteProviderOrder32
+                  WSCWriteProviderOrder
+                  WSCWriteNameSpaceOrder32
+                  WSCWriteNameSpaceOrder
+                  WSCUpdateProviderEx
+                  WSCUpdateProvider32
+                  WSCUpdateProvider
+                  WSCUnInstallNameSpaceEx2
+                  WSCUnInstallNameSpace32
+                  WSCUnInstallNameSpace
+                  WSCSetProviderInfo32
+                  WSCSetProviderInfo
+                  WSCSetApplicationCategoryEx
+                  WSCSetApplicationCategory
+                  WSCInstallProviderEx
+                  WSCInstallProviderAndChains64_32
+                  WSCInstallProvider64_32
+                  WSCInstallProvider
+                  WSCInstallNameSpaceEx32
+                  WSCInstallNameSpaceEx2
+                  WSCInstallNameSpaceEx
+                  WSCInstallNameSpace32
+                  WSCInstallNameSpace
+                  WSCGetProviderPath32
+                  WSCGetProviderPath
+                  WSCGetProviderInfo32
+                  WSCGetProviderInfo
+                  WSCGetApplicationCategoryEx
+                  WSCGetApplicationCategory
+                  WSCEnumProtocolsEx
+                  WSCEnumProtocols32
+                  WSCEnumProtocols
+                  WSCEnumNameSpaceProvidersEx32
+                  WSCEnumNameSpaceProviders32
+                  WSCEnableNSProvider32
+                  WSCEnableNSProvider
+                  WSCDeinstallProviderEx
+                  WSCDeinstallProvider32
+                  WSCDeinstallProvider
+                  WSAWaitForMultipleEvents
+           110    WSAUnhookBlockingHook
+                  WSAUnadvertiseProvider
+                  WSAStringToAddressW
+                  WSAStringToAddressA
+           115    WSAStartup
+                  WSASocketW
+                  WSASocketA
+                  WSASetServiceW
+                  WSASetServiceA
+           112    WSASetLastError
+                  WSASetEvent
+           109    WSASetBlockingHook
+                  WSASendTo
+                  WSASendMsg
+                  WSASendDisconnect
+                  WSASend
+                  WSAResetEvent
+                  WSARemoveServiceClass
+                  WSARecvFrom
+                  WSARecvDisconnect
+                  WSARecv
+                  WSAProviderConfigChange
+                  WSAProviderCompleteAsyncCall
+                  WSAPoll
+                  WSANtohs
+                  WSANtohl
+                  WSANSPIoctl
+                  WSALookupServiceNextW
+                  WSALookupServiceNextA
+                  WSALookupServiceEnd
+                  WSALookupServiceBeginW
+                  WSALookupServiceBeginA
+                  WSAJoinLeaf
+           114    WSAIsBlocking
+                  WSAIoctl
+                  WSAInstallServiceClassW
+                  WSAInstallServiceClassA
+                  WSAHtons
+                  WSAHtonl
+                  WSAGetServiceClassNameByClassIdW
+                  WSAGetServiceClassNameByClassIdA
+                  WSAGetServiceClassInfoW
+                  WSAGetServiceClassInfoA
+                  WSAGetQOSByName
+                  WSAGetOverlappedResult
+           111    WSAGetLastError
+                  WSAEventSelect
+                  WSAEnumProtocolsW
+                  WSAEnumProtocolsA
+                  WSAEnumNetworkEvents
+                  WSAEnumNameSpaceProvidersW
+                  WSAEnumNameSpaceProvidersExW
+                  WSAEnumNameSpaceProvidersExA
+                  WSAEnumNameSpaceProvidersA
+                  WSADuplicateSocketW
+                  WSADuplicateSocketA
+                  WSACreateEvent
+                  WSAConnectByNameW
+                  WSAConnectByNameA
+                  WSAConnectByList
+                  WSAConnect
+                  WSACloseEvent
+           116    WSACleanup
+           113    WSACancelBlockingCall
+           108    WSACancelAsyncRequest
+           101    WSAAsyncSelect
+           106    WSAAsyncGetServByPort
+           107    WSAAsyncGetServByName
+           104    WSAAsyncGetProtoByNumber
+           105    WSAAsyncGetProtoByName
+           103    WSAAsyncGetHostByName
+           102    WSAAsyncGetHostByAddr
+                  WSAAdvertiseProvider
+                  WSAAddressToStringW
+                  WSAAddressToStringA
+                  WSAAccept
+                  WPUGetProviderPathEx
+                  WPUCompleteOverlappedRequest
+           500    WEP
+                  SetAddrInfoExW
+                  SetAddrInfoExA
+                  InetPtonW
+                  InetNtopW
+                  GetNameInfoW
+                  GetHostNameW
+                  GetAddrInfoW
+                  GetAddrInfoExW
+                  GetAddrInfoExOverlappedResult
+                  GetAddrInfoExCancel
+                  GetAddrInfoExA
+                  FreeAddrInfoW
+                  FreeAddrInfoExW
+                  FreeAddrInfoEx
+                  ?WSApSetPostRoutine@@YAHPEAX@Z (int __cdecl WSApSetPostRoutine(void *))
+
+  Summary
+
+        CE4C .debug$S
+         D84 .idata$2
+         D84 .idata$3
+         568 .idata$4
+         568 .idata$5
+        1638 .idata$6

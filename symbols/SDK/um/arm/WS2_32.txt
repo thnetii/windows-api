@@ -1,0 +1,205 @@
+Microsoft (R) COFF/PE Dumper Version 14.23.28107.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\arm\WS2_32.Lib
+
+File Type: LIBRARY
+
+     Exports
+
+       ordinal    name
+
+                  ?WSApSetPostRoutine@@YAHPAX@Z (int __cdecl WSApSetPostRoutine(void *))
+                  FreeAddrInfoEx
+                  FreeAddrInfoExW
+                  FreeAddrInfoW
+                  GetAddrInfoExA
+                  GetAddrInfoExCancel
+                  GetAddrInfoExOverlappedResult
+                  GetAddrInfoExW
+                  GetAddrInfoW
+                  GetHostNameW
+                  GetNameInfoW
+                  InetNtopW
+                  InetPtonW
+                  SetAddrInfoExA
+                  SetAddrInfoExW
+           500    WEP
+                  WPUCompleteOverlappedRequest
+                  WPUGetProviderPathEx
+                  WSAAccept
+                  WSAAddressToStringA
+                  WSAAddressToStringW
+                  WSAAdvertiseProvider
+           102    WSAAsyncGetHostByAddr
+           103    WSAAsyncGetHostByName
+           105    WSAAsyncGetProtoByName
+           104    WSAAsyncGetProtoByNumber
+           107    WSAAsyncGetServByName
+           106    WSAAsyncGetServByPort
+           101    WSAAsyncSelect
+           108    WSACancelAsyncRequest
+           113    WSACancelBlockingCall
+           116    WSACleanup
+                  WSACloseEvent
+                  WSAConnect
+                  WSAConnectByList
+                  WSAConnectByNameA
+                  WSAConnectByNameW
+                  WSACreateEvent
+                  WSADuplicateSocketA
+                  WSADuplicateSocketW
+                  WSAEnumNameSpaceProvidersA
+                  WSAEnumNameSpaceProvidersExA
+                  WSAEnumNameSpaceProvidersExW
+                  WSAEnumNameSpaceProvidersW
+                  WSAEnumNetworkEvents
+                  WSAEnumProtocolsA
+                  WSAEnumProtocolsW
+                  WSAEventSelect
+           111    WSAGetLastError
+                  WSAGetOverlappedResult
+                  WSAGetQOSByName
+                  WSAGetServiceClassInfoA
+                  WSAGetServiceClassInfoW
+                  WSAGetServiceClassNameByClassIdA
+                  WSAGetServiceClassNameByClassIdW
+                  WSAHtonl
+                  WSAHtons
+                  WSAInstallServiceClassA
+                  WSAInstallServiceClassW
+                  WSAIoctl
+           114    WSAIsBlocking
+                  WSAJoinLeaf
+                  WSALookupServiceBeginA
+                  WSALookupServiceBeginW
+                  WSALookupServiceEnd
+                  WSALookupServiceNextA
+                  WSALookupServiceNextW
+                  WSANSPIoctl
+                  WSANtohl
+                  WSANtohs
+                  WSAPoll
+                  WSAProviderCompleteAsyncCall
+                  WSAProviderConfigChange
+                  WSARecv
+                  WSARecvDisconnect
+                  WSARecvFrom
+                  WSARemoveServiceClass
+                  WSAResetEvent
+                  WSASend
+                  WSASendDisconnect
+                  WSASendMsg
+                  WSASendTo
+           109    WSASetBlockingHook
+                  WSASetEvent
+           112    WSASetLastError
+                  WSASetServiceA
+                  WSASetServiceW
+                  WSASocketA
+                  WSASocketW
+           115    WSAStartup
+                  WSAStringToAddressA
+                  WSAStringToAddressW
+                  WSAUnadvertiseProvider
+           110    WSAUnhookBlockingHook
+                  WSAWaitForMultipleEvents
+                  WSCDeinstallProvider
+                  WSCDeinstallProviderEx
+                  WSCEnableNSProvider
+                  WSCEnumProtocols
+                  WSCEnumProtocolsEx
+                  WSCGetApplicationCategory
+                  WSCGetApplicationCategoryEx
+                  WSCGetProviderInfo
+                  WSCGetProviderPath
+                  WSCInstallNameSpace
+                  WSCInstallNameSpaceEx
+                  WSCInstallNameSpaceEx2
+                  WSCInstallProvider
+                  WSCInstallProviderAndChains
+                  WSCInstallProviderEx
+                  WSCSetApplicationCategory
+                  WSCSetApplicationCategoryEx
+                  WSCSetProviderInfo
+                  WSCUnInstallNameSpace
+                  WSCUnInstallNameSpaceEx2
+                  WSCUpdateProvider
+                  WSCUpdateProviderEx
+                  WSCWriteNameSpaceOrder
+                  WSCWriteProviderOrder
+                  WSCWriteProviderOrderEx
+                  WahCloseApcHelper
+                  WahCloseHandleHelper
+                  WahCloseNotificationHandleHelper
+                  WahCloseSocketHandle
+                  WahCloseThread
+                  WahCompleteRequest
+                  WahCreateHandleContextTable
+                  WahCreateNotificationHandle
+                  WahCreateSocketHandle
+                  WahDestroyHandleContextTable
+                  WahDisableNonIFSHandleSupport
+                  WahEnableNonIFSHandleSupport
+                  WahEnumerateHandleContexts
+                  WahInsertHandleContext
+                  WahNotifyAllProcesses
+                  WahOpenApcHelper
+                  WahOpenCurrentThread
+                  WahOpenHandleHelper
+                  WahOpenNotificationHandleHelper
+                  WahQueueUserApc
+                  WahReferenceContextByHandle
+                  WahRemoveHandleContext
+                  WahWaitForNotification
+                  WahWriteLSPEvent
+           151    __WSAFDIsSet
+             1    accept
+             2    bind
+             3    closesocket
+             4    connect
+                  freeaddrinfo
+                  getaddrinfo
+            51    gethostbyaddr
+            52    gethostbyname
+            57    gethostname
+                  getnameinfo
+             5    getpeername
+            53    getprotobyname
+            54    getprotobynumber
+            55    getservbyname
+            56    getservbyport
+             6    getsockname
+             7    getsockopt
+             8    htonl
+             9    htons
+            11    inet_addr
+            12    inet_ntoa
+                  inet_ntop
+                  inet_pton
+            10    ioctlsocket
+            13    listen
+            14    ntohl
+            15    ntohs
+            16    recv
+            17    recvfrom
+            18    select
+            19    send
+            20    sendto
+            21    setsockopt
+            22    shutdown
+            23    socket
+
+  Summary
+
+          20 .data
+       103E8 .debug$S
+       385C8 .debug$T
+          40 .drectve
+          14 .idata$2
+          14 .idata$3
+           4 .idata$4
+           4 .idata$5
+           C .idata$6
+         211 .rdata

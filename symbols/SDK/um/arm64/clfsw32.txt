@@ -1,0 +1,84 @@
+Microsoft (R) COFF/PE Dumper Version 14.23.28107.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\arm64\clfsw32.lib
+
+File Type: LIBRARY
+
+     Exports
+
+       ordinal    name
+
+                  ?LsnDecrement@@YA?AT_CLS_LSN@@PEAT1@@Z (union _CLS_LSN __cdecl LsnDecrement(union _CLS_LSN *))
+                  AddLogContainer
+                  AddLogContainerSet
+                  AdvanceLogBase
+                  AlignReservedLog
+                  AllocReservedLog
+                  CLFS_LSN_INVALID
+                  CLFS_LSN_NULL
+                  CloseAndResetLogFile
+                  CreateLogContainerScanContext
+                  CreateLogFile
+                  CreateLogMarshallingArea
+                  DeleteLogByHandle
+                  DeleteLogFile
+                  DeleteLogMarshallingArea
+                  DeregisterManageableLogClient
+                  DumpLogRecords
+                  FlushLogBuffers
+                  FlushLogToLsn
+                  FreeReservedLog
+                  GetLogContainerName
+                  GetLogFileInformation
+                  GetLogIoStatistics
+                  GetLogReservationInfo
+                  GetNextLogArchiveExtent
+                  HandleLogFull
+                  InstallLogPolicy
+                  LogTailAdvanceFailure
+                  LsnBlockOffset
+                  LsnContainer
+                  LsnCreate
+                  LsnEqual
+                  LsnGreater
+                  LsnIncrement
+                  LsnInvalid
+                  LsnLess
+                  LsnNull
+                  LsnRecordSequence
+                  PrepareLogArchive
+                  QueryLogPolicy
+                  ReadLogArchiveMetadata
+                  ReadLogNotification
+                  ReadLogRecord
+                  ReadLogRestartArea
+                  ReadNextLogRecord
+                  ReadPreviousLogRestartArea
+                  RegisterForLogWriteNotification
+                  RegisterManageableLogClient
+                  RemoveLogContainer
+                  RemoveLogContainerSet
+                  RemoveLogPolicy
+                  ReserveAndAppendLog
+                  ReserveAndAppendLogAligned
+                  ScanLogContainers
+                  SetEndOfLog
+                  SetLogArchiveMode
+                  SetLogArchiveTail
+                  SetLogFileSizeWithPolicy
+                  TerminateLogArchive
+                  TerminateReadLog
+                  TruncateLog
+                  ValidateLog
+                  WriteLogRestartArea
+
+  Summary
+
+          C3 .debug$S
+          14 .idata$2
+          14 .idata$3
+           8 .idata$4
+           8 .idata$5
+           C .idata$6

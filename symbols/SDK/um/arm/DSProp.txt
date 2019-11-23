@@ -1,0 +1,40 @@
+Microsoft (R) COFF/PE Dumper Version 14.23.28107.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\arm\DSProp.Lib
+
+File Type: LIBRARY
+
+     Exports
+
+       ordinal    name
+
+                  ?CheckADsError@@YAHPAJHPBDHPAUHWND__@@@Z (int __cdecl CheckADsError(long *,int,char const *,int,struct HWND__ *))
+                  ?CrackName@@YAJPBGPAPAGW4CRACK_NAME_OPR@@PAUHWND__@@@Z (long __cdecl CrackName(unsigned short const *,unsigned short * *,enum CRACK_NAME_OPR,struct HWND__ *))
+                  ?DSPROP_GetGCSearchOnDomain@@YAJPBGABU_GUID@@PAPAX@Z (long __cdecl DSPROP_GetGCSearchOnDomain(unsigned short const *,struct _GUID const &,void * *))
+                  ?ErrMsg@@YAXIPAUHWND__@@@Z (void __cdecl ErrMsg(unsigned int,struct HWND__ *))
+                  ?ErrMsgParam@@YAXIJPAUHWND__@@@Z (void __cdecl ErrMsgParam(unsigned int,long,struct HWND__ *))
+                  ?FindSheet@@YAHPBG@Z (int __cdecl FindSheet(unsigned short const *))
+                  ?MsgBox@@YAXIPAUHWND__@@@Z (void __cdecl MsgBox(unsigned int,struct HWND__ *))
+                  ?ReportError@@YAXJHPAUHWND__@@@Z (void __cdecl ReportError(long,int,struct HWND__ *))
+                  ?Smart_PADS_ATTR_INFO__Empty@@YAXPAPAU_ads_attr_info@@@Z (void __cdecl Smart_PADS_ATTR_INFO__Empty(struct _ads_attr_info * *))
+                  ADsPropCheckIfWritable
+                  ADsPropCreateNotifyObj
+                  ADsPropGetInitInfo
+                  ADsPropSendErrorMessage
+                  ADsPropSetHwnd
+                  ADsPropSetHwndWithTitle
+                  ADsPropShowErrorDialog
+                  BringSheetToForeground
+                  IsSheetAlreadyUp
+                  PostADsPropSheet
+
+  Summary
+
+          C0 .debug$S
+          14 .idata$2
+          14 .idata$3
+           4 .idata$4
+           4 .idata$5
+           C .idata$6

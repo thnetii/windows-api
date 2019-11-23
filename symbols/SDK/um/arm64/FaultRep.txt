@@ -1,0 +1,36 @@
+Microsoft (R) COFF/PE Dumper Version 14.23.28107.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\arm64\FaultRep.Lib
+
+File Type: LIBRARY
+
+     Exports
+
+       ordinal    name
+
+                  ?BasepReportFault@@YA?AW4tagEFaultRepRetVal@@PEAU_EXCEPTION_POINTERS@@K@Z (enum tagEFaultRepRetVal __cdecl BasepReportFault(struct _EXCEPTION_POINTERS *,unsigned long))
+                  ?CheckForReadOnlyResourceFilter@@YAJPEAU_EXCEPTION_POINTERS@@@Z (long __cdecl CheckForReadOnlyResourceFilter(struct _EXCEPTION_POINTERS *))
+                  ?CheckPerUserCrossProcessThrottle@@YAJPEAH@Z (long __cdecl CheckPerUserCrossProcessThrottle(int *))
+                  ?UpdatePerUserLastCrossProcessCollectionTime@@YAJXZ (long __cdecl UpdatePerUserLastCrossProcessCollectionTime(void))
+                  AddERExcludedApplicationA
+                  AddERExcludedApplicationW
+                  CancelHangReporting
+             1    ReportActivationHang
+                  ReportCoreHang
+                  ReportFault
+                  ReportHang
+                  WerReportHang
+                  WerpGetDebugger
+                  WerpInitiateCrashReporting
+                  WerpLaunchAeDebug
+
+  Summary
+
+          C6 .debug$S
+          14 .idata$2
+          14 .idata$3
+           8 .idata$4
+           8 .idata$5
+           E .idata$6

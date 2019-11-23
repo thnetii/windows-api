@@ -1,0 +1,36 @@
+Microsoft (R) COFF/PE Dumper Version 14.23.28107.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\arm\dxgi.lib
+
+File Type: LIBRARY
+
+     Exports
+
+       ordinal    name
+
+                  ?DXGIDumpJournal@@YAXP6AXPBD@Z@Z (void __cdecl DXGIDumpJournal(void (__cdecl*)(char const *)))
+                  ?PIXBeginCapture@@YAJIPAX@Z (long __cdecl PIXBeginCapture(unsigned int,void *))
+                  ?PIXEndCapture@@YAJH@Z (long __cdecl PIXEndCapture(int))
+                  ?PIXGetCaptureState@@YAIXZ (unsigned int __cdecl PIXGetCaptureState(void))
+                  ?UpdateHMDEmulationStatus@@YAJ_N@Z (long __cdecl UpdateHMDEmulationStatus(bool))
+                  CreateDXGIFactory
+                  CreateDXGIFactory1
+                  CreateDXGIFactory2
+                  DXGID3D10CreateDevice
+                  DXGID3D10CreateLayeredDevice
+                  DXGID3D10GetLayeredDeviceSize
+                  DXGID3D10RegisterLayers
+                  DXGIDeclareAdapterRemovalSupport
+                  DXGIGetDebugInterface1
+                  DXGIReportAdapterConfiguration
+
+  Summary
+
+          BA .debug$S
+          14 .idata$2
+          14 .idata$3
+           4 .idata$4
+           4 .idata$5
+           A .idata$6

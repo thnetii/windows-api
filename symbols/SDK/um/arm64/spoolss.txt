@@ -1,0 +1,227 @@
+Microsoft (R) COFF/PE Dumper Version 14.23.28107.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\arm64\spoolss.lib
+
+File Type: LIBRARY
+
+     Exports
+
+       ordinal    name
+
+                  ?OpenPrinterExW@@YAHPEAGPEAPEAXPEAU_PRINTER_DEFAULTSW@@PEAU_SPLCLIENT_CONTAINER@@@Z (int __cdecl OpenPrinterExW(unsigned short *,void * *,struct _PRINTER_DEFAULTSW *,struct _SPLCLIENT_CONTAINER *))
+                  ?RouterCorePrinterDriverInstalled@@YAJPEBG0U_GUID@@U_FILETIME@@_KPEAH@Z (long __cdecl RouterCorePrinterDriverInstalled(unsigned short const *,unsigned short const *,struct _GUID,struct _FILETIME,unsigned __int64,int *))
+                  ?RouterCreatePrintAsyncNotificationChannel@@YAJPEBGPEAU_GUID@@W4PrintAsyncNotifyUserFilter@@W4PrintAsyncNotifyConversationStyle@@PEAUIPrintAsyncNotifyCallback@@PEAPEAUIPrintAsyncNotifyChannel@@@Z (long __cdecl RouterCreatePrintAsyncNotificationChannel(unsigned short const *,struct _GUID *,enum PrintAsyncNotifyUserFilter,enum PrintAsyncNotifyConversationStyle,struct IPrintAsyncNotifyCallback *,struct IPrintAsyncNotifyChannel * *))
+                  ?RouterDeletePrinterDriverPackage@@YAJPEBG00@Z (long __cdecl RouterDeletePrinterDriverPackage(unsigned short const *,unsigned short const *,unsigned short const *))
+                  ?RouterGetCorePrinterDrivers@@YAJPEBG00KPEAU_CORE_PRINTER_DRIVERW@@@Z (long __cdecl RouterGetCorePrinterDrivers(unsigned short const *,unsigned short const *,unsigned short const *,unsigned long,struct _CORE_PRINTER_DRIVERW *))
+                  ?RouterGetPrintClassObject@@YAJPEBGAEBU_GUID@@PEAPEAX@Z (long __cdecl RouterGetPrintClassObject(unsigned short const *,struct _GUID const &,void * *))
+                  ?RouterGetPrinterDriverPackagePath@@YAJPEBG000PEAGKPEAK@Z (long __cdecl RouterGetPrinterDriverPackagePath(unsigned short const *,unsigned short const *,unsigned short const *,unsigned short const *,unsigned short *,unsigned long,unsigned long *))
+                  ?RouterInstallPrinterDriverFromPackage@@YAJPEBG000K@Z (long __cdecl RouterInstallPrinterDriverFromPackage(unsigned short const *,unsigned short const *,unsigned short const *,unsigned short const *,unsigned long))
+                  ?RouterRegisterForPrintAsyncNotifications@@YAJPEBGPEAU_GUID@@W4PrintAsyncNotifyUserFilter@@W4PrintAsyncNotifyConversationStyle@@PEAUIPrintAsyncNotifyCallback@@PEAPEAX@Z (long __cdecl RouterRegisterForPrintAsyncNotifications(unsigned short const *,struct _GUID *,enum PrintAsyncNotifyUserFilter,enum PrintAsyncNotifyConversationStyle,struct IPrintAsyncNotifyCallback *,void * *))
+                  ?RouterUnregisterForPrintAsyncNotifications@@YAJPEAX@Z (long __cdecl RouterUnregisterForPrintAsyncNotifications(void *))
+                  ?RouterUploadPrinterDriverPackage@@YAJPEBG00KPEAGPEAK@Z (long __cdecl RouterUploadPrinterDriverPackage(unsigned short const *,unsigned short const *,unsigned short const *,unsigned long,unsigned short *,unsigned long *))
+                  AbortPrinter
+                  AddFormW
+                  AddJobW
+                  AddMonitorW
+                  AddPerMachineConnectionW
+                  AddPortExW
+                  AddPortW
+                  AddPrintDeviceObject
+                  AddPrintProcessorW
+                  AddPrintProvidorW
+                  AddPrinterConnectionW
+                  AddPrinterDriverExW
+                  AddPrinterDriverW
+                  AddPrinterExW
+                  AddPrinterW
+                  AdjustPointers
+                  AdjustPointersInStructuresArray
+                  AlignKMPtr
+                  AlignRpcPtr
+                  AllocSplStr
+                  AllowRemoteCalls
+                  AppendPrinterNotifyInfoData
+                  BuildOtherNamesFromMachineName
+                  CacheAddName
+                  CacheCreateAndAddNode
+                  CacheCreateAndAddNodeWithIPAddresses
+                  CacheDeleteNode
+                  CacheIsNameCluster
+                  CacheIsNameInNodeList
+                  CallDrvDevModeConversion
+                  CallRouterFindFirstPrinterChangeNotification
+                  CheckLocalCall
+                  ClosePrinter
+                  ConfigurePortW
+                  CreatePrinterIC
+                  DeleteFormW
+                  DeleteJobNamedProperty
+                  DeleteMonitorW
+                  DeletePerMachineConnectionW
+                  DeletePortW
+                  DeletePrintProcessorW
+                  DeletePrintProvidorW
+                  DeletePrinter
+                  DeletePrinterConnectionW
+                  DeletePrinterDataExW
+                  DeletePrinterDataW
+                  DeletePrinterDriverExW
+                  DeletePrinterDriverW
+                  DeletePrinterIC
+                  DeletePrinterKeyW
+                  DllAllocSplMem
+                  DllAllocSplStr
+                  DllFreeSplMem
+                  DllFreeSplStr
+                  DllMain
+                  DllReallocSplMem
+                  DllReallocSplStr
+                  EndDocPrinter
+                  EndPagePrinter
+                  EnumFormsW
+                  EnumJobsW
+                  EnumMonitorsW
+                  EnumPerMachineConnectionsW
+                  EnumPortsW
+                  EnumPrintProcessorDatatypesW
+                  EnumPrintProcessorsW
+                  EnumPrinterDataExW
+                  EnumPrinterDataW
+                  EnumPrinterDriversW
+                  EnumPrinterKeyW
+                  EnumPrintersW
+                  FindClosePrinterChangeNotification
+                  FlushPrinter
+                  FormatPrinterForRegistryKey
+                  FormatRegistryKeyForPrinter
+                  FreeOtherNames
+                  FreePrintPropertyValue
+                  GetFormW
+                  GetJobAttributes
+                  GetJobAttributesEx
+                  GetJobNamedPropertyValue
+                  GetJobW
+                  GetNetworkId
+                  GetPrintProcessorDirectoryW
+                  GetPrinterDataExW
+                  GetPrinterDataW
+                  GetPrinterDriverDirectoryW
+                  GetPrinterDriverExW
+                  GetPrinterDriverW
+                  GetPrinterW
+                  GetServerPolicy
+                  GetShrinkedSize
+                  GetSpoolerTlsIndexes
+                  ImpersonatePrinterClient
+                  InitializeRouter
+                  IsNameTheLocalMachineOrAClusterSpooler
+                  IsNamedPipeRpcCall
+                  MIDL_user_allocate1
+                  MIDL_user_free1
+                  MakeOffset
+                  MakePTR
+                  MarshallDownStructure
+                  MarshallDownStructuresArray
+                  MarshallUpStructure
+                  MarshallUpStructuresArray
+                  OldGetPrinterDriverW
+                  OpenPrinter2W
+                  OpenPrinterPort2W
+                  OpenPrinterW
+                  PackStringToEOB
+                  PackStrings
+                  PartialReplyPrinterChangeNotification
+                  PlayGdiScriptOnPrinterIC
+                  PrinterHandleRundown
+                  PrinterMessageBoxW
+                  ProvidorFindClosePrinterChangeNotification
+                  ProvidorFindFirstPrinterChangeNotification
+                  ReadPrinter
+                  ReallocSplMem
+                  ReallocSplStr
+                  RemoteFindFirstPrinterChangeNotification
+                  RemovePrintDeviceObject
+                  ReplyClosePrinter
+                  ReplyOpenPrinter
+                  ReplyPrinterChangeNotification
+                  ReplyPrinterChangeNotificationEx
+                  ReportJobProcessingProgress
+                  ResetPrinterW
+                  RevertToPrinterSelf
+                  RouterAddPrinterConnection2
+                  RouterAllocBidiMem
+                  RouterAllocBidiResponseContainer
+                  RouterAllocPrinterNotifyInfo
+                  RouterBroadcastMessage
+                  RouterFindCompatibleDriver
+                  RouterFindFirstPrinterChangeNotification
+                  RouterFindNextPrinterChangeNotification
+                  RouterFreeBidiMem
+                  RouterFreeBidiResponseContainer
+                  RouterFreePrinterNotifyInfo
+                  RouterInternalGetPrinterDriver
+                  RouterRefreshPrinterChangeNotification
+                  RouterReplyPrinter
+                  RouterSpoolerSetPolicy
+                  ScheduleJob
+                  SeekPrinter
+                  SendRecvBidiData
+                  SetFormW
+                  SetJobW
+                  SetPortW
+                  SetPrinterDataExW
+                  SetPrinterDataW
+                  SetPrinterW
+                  SplCloseSpoolFileHandle
+                  SplCommitSpoolData
+                  SplDriverUnloadComplete
+                  SplGetClientUserHandle
+                  SplGetSpoolFileInfo
+                  SplGetUserSidStringFromToken
+                  SplInitializeWinSpoolDrv
+                  SplIsSessionZero
+                  SplIsUpgrade
+                  SplProcessPnPEvent
+                  SplProcessSessionEvent
+                  SplPromptUIInUsersSession
+                  SplQueryUserInfo
+                  SplReadPrinter
+                  SplRegisterForDeviceEvents
+                  SplRegisterForSessionEvents
+                  SplShutDownRouter
+                  SplUalCollectData
+                  SplUnregisterForDeviceEvents
+                  SplUnregisterForSessionEvents
+                  SpoolerFindClosePrinterChangeNotification
+                  SpoolerFindFirstPrinterChangeNotification
+                  SpoolerFindNextPrinterChangeNotification
+                  SpoolerFreePrinterNotifyInfo
+                  SpoolerHasInitialized
+                  SpoolerInit
+                  SpoolerRefreshPrinterChangeNotification
+                  StartDocPrinterW
+                  StartPagePrinter
+                  UndoAlignKMPtr
+                  UndoAlignRpcPtr
+                  UpdateBufferSize
+                  UpdatePrintDeviceObject
+                  UpdatePrinterRegAll
+                  UpdatePrinterRegAllEx
+                  UpdatePrinterRegUser
+                  WaitForPrinterChange
+                  WaitForSpoolerInitialization
+                  WritePrinter
+                  XcvDataW
+                  bGetDevModePerUser
+                  bSetDevModePerUser
+
+  Summary
+
+          C3 .debug$S
+          14 .idata$2
+          14 .idata$3
+           8 .idata$4
+           8 .idata$5
+           C .idata$6

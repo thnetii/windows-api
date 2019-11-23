@@ -1,0 +1,66 @@
+Microsoft (R) COFF/PE Dumper Version 14.23.28107.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\arm64\wsdapi.lib
+
+File Type: LIBRARY
+
+     Exports
+
+       ordinal    name
+
+                  ?WSDAddFirewallCheck@@YAJPEBGPEAPEAX@Z (long __cdecl WSDAddFirewallCheck(unsigned short const *,void * *))
+                  ?WSDCancelNetworkChangeNotify@@YAJPEAX@Z (long __cdecl WSDCancelNetworkChangeNotify(void *))
+                  ?WSDCopyNameList@@YAJPEAPEAU_WSD_NAME_LIST@@PEBU1@@Z (long __cdecl WSDCopyNameList(struct _WSD_NAME_LIST * *,struct _WSD_NAME_LIST const *))
+                  ?WSDNotifyNetworkChange@@YAJP6AKPEAX@Z0PEAPEAX@Z (long __cdecl WSDNotifyNetworkChange(unsigned long (__cdecl*)(void *),void *,void * *))
+                  ?WSDRemoveFirewallCheck@@YAJPEAX@Z (long __cdecl WSDRemoveFirewallCheck(void *))
+                  ?WSDXMLCompareNames@@YAJPEBU_WSDXML_NAME@@0@Z (long __cdecl WSDXMLCompareNames(struct _WSDXML_NAME const *,struct _WSDXML_NAME const *))
+                  WSDAllocateLinkedMemory
+                  WSDAttachLinkedMemory
+                  WSDCompareEndpoints
+                  WSDCopyEndpoint
+                  WSDCreateDeviceHost
+                  WSDCreateDeviceHost2
+                  WSDCreateDeviceHostAdvanced
+                  WSDCreateDeviceProxy
+                  WSDCreateDeviceProxy2
+                  WSDCreateDeviceProxyAdvanced
+                  WSDCreateDiscoveryProvider
+                  WSDCreateDiscoveryProvider2
+                  WSDCreateDiscoveryPublisher
+                  WSDCreateDiscoveryPublisher2
+                  WSDCreateHttpAddress
+                  WSDCreateHttpMessageParameters
+                  WSDCreateHttpTransport
+                  WSDCreateMetadataAgent
+                  WSDCreateOutboundAttachment
+                  WSDCreateUdpAddress
+                  WSDCreateUdpMessageParameters
+                  WSDCreateUdpTransport
+                  WSDDetachLinkedMemory
+                  WSDFreeLinkedMemory
+                  WSDGenerateFault
+                  WSDGenerateFaultEx
+                  WSDGenerateRandomDelay
+                  WSDGetConfigurationOption
+                  WSDProcessFault
+                  WSDSetConfigurationOption
+                  WSDUriDecode
+                  WSDUriEncode
+                  WSDXMLAddChild
+                  WSDXMLAddSibling
+                  WSDXMLBuildAnyForSingleElement
+                  WSDXMLCleanupElement
+                  WSDXMLCreateContext
+                  WSDXMLGetNameFromBuiltinNamespace
+                  WSDXMLGetValueFromAny
+
+  Summary
+
+          C0 .debug$S
+          14 .idata$2
+          14 .idata$3
+           8 .idata$4
+           8 .idata$5
+           C .idata$6

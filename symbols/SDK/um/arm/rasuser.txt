@@ -1,0 +1,26 @@
+Microsoft (R) COFF/PE Dumper Version 14.23.28107.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\arm\rasuser.lib
+
+File Type: LIBRARY
+
+     Exports
+
+       ordinal    name
+
+             8    ?GetEapProviders@@YAJPBGPAV?$CArray@UAuthProviderData@@AAU1@@@@Z (long __cdecl GetEapProviders(unsigned short const *,class CArray<struct AuthProviderData,struct AuthProviderData &> *))
+             6    ?IASCreateProfileAdvancedPage@@YAPAU_PSP@@PAUISdo@@PAUISdoDictionaryOld@@JPAX@Z (struct _PSP * __cdecl IASCreateProfileAdvancedPage(struct ISdo *,struct ISdoDictionaryOld *,long,void *))
+             7    ?IASDeleteProfileAdvancedPage@@YAHPAU_PSP@@@Z (int __cdecl IASDeleteProfileAdvancedPage(struct _PSP *))
+             9    ?OpenRAS_IASProfileDlg2@@YAJPBGPAUISdo@@PAUISdoDictionaryOld@@HKPAXPAUISdoCollection@@@Z (long __cdecl OpenRAS_IASProfileDlg2(unsigned short const *,struct ISdo *,struct ISdoDictionaryOld *,int,unsigned long,void *,struct ISdoCollection *))
+             5    ?OpenRAS_IASProfileDlg@@YAJPBGPAUISdo@@PAUISdoDictionaryOld@@HKPAX@Z (long __cdecl OpenRAS_IASProfileDlg(unsigned short const *,struct ISdo *,struct ISdoDictionaryOld *,int,unsigned long,void *))
+
+  Summary
+
+          C3 .debug$S
+          14 .idata$2
+          14 .idata$3
+           4 .idata$4
+           4 .idata$5
+           C .idata$6

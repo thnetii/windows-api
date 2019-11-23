@@ -15,6 +15,11 @@ namespace THNETII.WinApi.Native.Sspi
     using static NativeLibraryNames;
     using static WinErrorConstants;
 
+    using static ISC_REQ_FLAGS;
+    using static ISC_RET_FLAGS;
+    using static SECBUFFER_TYPE;
+    using static SECPKG_ATTR_TYPE;
+
     public static class SspiFunctions
     {
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 139
@@ -531,6 +536,251 @@ namespace THNETII.WinApi.Native.Sspi
             [In, MarshalAs(UnmanagedType.U1)] bool bImpersonating,
             [In] int dwReserved,
             ref SecBufferDesc pOutput
+            );
+#endif // !NETSTANDARD1_6
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 1561
+        #region InitializeSecurityContextW function
+        /// <inheritdoc cref="InitializeSecurityContext(in CredHandle, in CtxtHandle, LPCTSTR, ISC_REQ_FLAGS, int, SECURITY_DREP_TYPE, in SecBufferDesc, int, ref CtxtHandle, ref SecBufferDesc, out ISC_RET_FLAGS, out TimeStamp)"/>
+        [DllImport(Secur32, CallingConvention = CallingConvention.Winapi)]
+        public static extern int InitializeSecurityContextW(
+            [Optional] in CredHandle phCredential,  // Cred to base context
+            [Optional] in CtxtHandle phContext,     // Existing context (OPT)
+            [In, Optional] LPCWSTR pszTargetName,   // Name of target
+            [In, MarshalAs(UnmanagedType.U4)]
+            ISC_REQ_FLAGS fContextReq,              // Context Requirements
+            [In] int Reserved1,                     // Reserved, MBZ
+            [In, MarshalAs(UnmanagedType.U4)]
+            SECURITY_DREP_TYPE TargetDataRep,       // Data rep of target
+            [Optional] in SecBufferDesc pInput,     // Input Buffers
+            [In] int Reserved2,                     // Reserved, MBZ
+            [Optional] ref CtxtHandle phNewContext, // (out) New Context handle
+            [Optional] ref SecBufferDesc pOutput,   // (inout) Output Buffers
+            [MarshalAs(UnmanagedType.U4)]
+            out ISC_RET_FLAGS pfContextAttr,        // (out) Context attrs
+            [Optional] out TimeStamp ptsExpiry      // (out) Life span (OPT)
+            );
+
+        /// <inheritdoc cref="InitializeSecurityContextW(in CredHandle, in CtxtHandle, LPCWSTR, ISC_REQ_FLAGS, int, SECURITY_DREP_TYPE, in SecBufferDesc, int, ref CtxtHandle, ref SecBufferDesc, out ISC_RET_FLAGS, out TimeStamp)"/>
+        [DllImport(Secur32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Unicode)]
+        public static extern int InitializeSecurityContextW(
+            [Optional] in CredHandle phCredential,  // Cred to base context
+            [Optional] in CtxtHandle phContext,     // Existing context (OPT)
+            [In, Optional] string pszTargetName,    // Name of target
+            [In, MarshalAs(UnmanagedType.U4)]
+            ISC_REQ_FLAGS fContextReq,              // Context Requirements
+            [In] int Reserved1,                     // Reserved, MBZ
+            [In, MarshalAs(UnmanagedType.U4)]
+            SECURITY_DREP_TYPE TargetDataRep,       // Data rep of target
+            [Optional] in SecBufferDesc pInput,     // Input Buffers
+            [In] int Reserved2,                     // Reserved, MBZ
+            [Optional] ref CtxtHandle phNewContext, // (out) New Context handle
+            [Optional] ref SecBufferDesc pOutput,   // (inout) Output Buffers
+            [MarshalAs(UnmanagedType.U4)]
+            out ISC_RET_FLAGS pfContextAttr,        // (out) Context attrs
+            [Optional] out TimeStamp ptsExpiry      // (out) Life span (OPT)
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 1609
+        #region InitializeSecurityContextA function
+        /// <inheritdoc cref="InitializeSecurityContext(in CredHandle, in CtxtHandle, LPCTSTR, ISC_REQ_FLAGS, int, SECURITY_DREP_TYPE, in SecBufferDesc, int, ref CtxtHandle, ref SecBufferDesc, out ISC_RET_FLAGS, out TimeStamp)"/>
+        [DllImport(Secur32, CallingConvention = CallingConvention.Winapi)]
+        public static extern int InitializeSecurityContextA(
+            [Optional] in CredHandle phCredential,  // Cred to base context
+            [Optional] in CtxtHandle phContext,     // Existing context (OPT)
+            [In, Optional] LPCSTR pszTargetName,   // Name of target
+            [In, MarshalAs(UnmanagedType.U4)]
+            ISC_REQ_FLAGS fContextReq,              // Context Requirements
+            [In] int Reserved1,                     // Reserved, MBZ
+            [In, MarshalAs(UnmanagedType.U4)]
+            SECURITY_DREP_TYPE TargetDataRep,       // Data rep of target
+            [Optional] in SecBufferDesc pInput,     // Input Buffers
+            [In] int Reserved2,                     // Reserved, MBZ
+            [Optional] ref CtxtHandle phNewContext, // (out) New Context handle
+            [Optional] ref SecBufferDesc pOutput,   // (inout) Output Buffers
+            [MarshalAs(UnmanagedType.U4)]
+            out ISC_RET_FLAGS pfContextAttr,        // (out) Context attrs
+            [Optional] out TimeStamp ptsExpiry      // (out) Life span (OPT)
+            );
+
+        /// <inheritdoc cref="InitializeSecurityContextA(in CredHandle, in CtxtHandle, LPCSTR, ISC_REQ_FLAGS, int, SECURITY_DREP_TYPE, in SecBufferDesc, int, ref CtxtHandle, ref SecBufferDesc, out ISC_RET_FLAGS, out TimeStamp)"/>
+        [DllImport(Secur32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi)]
+        public static extern int InitializeSecurityContextA(
+            [Optional] in CredHandle phCredential,  // Cred to base context
+            [Optional] in CtxtHandle phContext,     // Existing context (OPT)
+            [In, Optional] string pszTargetName,    // Name of target
+            [In, MarshalAs(UnmanagedType.U4)]
+            ISC_REQ_FLAGS fContextReq,              // Context Requirements
+            [In] int Reserved1,                     // Reserved, MBZ
+            [In, MarshalAs(UnmanagedType.U4)]
+            SECURITY_DREP_TYPE TargetDataRep,       // Data rep of target
+            [Optional] in SecBufferDesc pInput,     // Input Buffers
+            [In] int Reserved2,                     // Reserved, MBZ
+            [Optional] ref CtxtHandle phNewContext, // (out) New Context handle
+            [Optional] ref SecBufferDesc pOutput,   // (inout) Output Buffers
+            [MarshalAs(UnmanagedType.U4)]
+            out ISC_RET_FLAGS pfContextAttr,        // (out) Context attrs
+            [Optional] out TimeStamp ptsExpiry      // (out) Life span (OPT)
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 1640
+        #region InitializeSecurityContextW function
+        /// <summary>
+        /// <para>The <see cref="InitializeSecurityContext"/> (General) function initiates the client side, outbound <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">security context</a> from a credential handle. The function is used to build a security context between the client application and a remote peer. <see cref="InitializeSecurityContext"/> (General) returns a token that the client must pass to the remote peer, which the peer in turn submits to the local security implementation through the <see cref="AcceptSecurityContext"/> (General) call. The token generated should be considered opaque by all callers.</para>
+        /// <para>Typically, the <see cref="InitializeSecurityContext"/> (General) function is called in a loop until a sufficient security context is established.</para>
+        /// </summary>
+        /// <param name="phCredential">A handle to the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/c-gly">credentials</a> returned by <see cref="AcquireCredentialsHandle"/> (General). This handle is used to build the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">security context</a>. The <see cref="InitializeSecurityContext"/> (General) function requires at least OUTBOUND credentials.</param>
+        /// <param name="phContext">
+        /// <para>A <see cref="CtxtHandle"/> structure. On the first call to <see cref="InitializeSecurityContext"/> (General), this pointer is <see langword="null"/>. On the second call, this parameter is the handle to the partially formed context returned in the <paramref name="phNewContext"/> parameter by the first call.</para>
+        /// <para>This parameter is optional with the Microsoft Digest SSP and can be set to <see langword="null"/>.</para>
+        /// <para>When using the Schannel SSP, on the first call to <see cref="InitializeSecurityContext"/> (General), specify <see langword="null"/>. On future calls, specify the token received in the <paramref name="phNewContext"/> parameter after the first call to this function.</para>
+        /// </param>
+        /// <param name="pszTargetName"/>
+        /// <param name="fContextReq">
+        /// <para>Bit flags that indicate requests for the context. Not all packages can support all requirements.</para>
+        /// <para>The requested attributes may not be supported by the client. For more information, see the <paramref name="pfContextAttr"/> parameter.</para>
+        /// <para>For further descriptions of the various attributes, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/context-requirements">Context Requirements</a>.</para>
+        /// </param>
+        /// <param name="Reserved1">This parameter is reserved and must be set to zero.</param>
+        /// <param name="TargetDataRep">
+        /// <para>The data representation, such as byte ordering, on the target. This parameter can be either <see cref="SECURITY_NATIVE_DREP"/> or <see cref="SECURITY_NETWORK_DREP"/>.</para>
+        /// <para>This parameter is not used with Digest or Schannel. Set it to zero.</para>
+        /// </param>
+        /// <param name="pInput">A <see cref="SecBufferDesc"/> structure that contains pointers to the buffers supplied as input to the package. Unless the client context was initiated by the server, the value of this parameter must be <see langword="null"/> on the first call to the function. On subsequent calls to the function or when the client context was initiated by the server, the value of this parameter is a pointer to a buffer allocated with enough memory to hold the token returned by the remote computer.</param>
+        /// <param name="Reserved2">This parameter is reserved and must be set to zero.</param>
+        /// <param name="phNewContext">
+        /// <para>A reference to a <see cref="CtxtHandle"/> structure. On the first call to <see cref="InitializeSecurityContext"/> (General), this variable receives the new context handle. On the second call, <paramref name="phNewContext"/> can be the same as the handle specified in the <paramref name="phContext"/> parameter.</para>
+        /// <para>When using the Schannel SSP, on calls after the first call, pass the handle returned here as the <paramref name="phContext"/> parameter and specify <see langword="null"/> for <paramref name="phNewContext"/>.</para>
+        /// </param>
+        /// <param name="pOutput">
+        /// <para>A reference to a <see cref="SecBufferDesc"/> structure that contains pointers to the <see cref="SecBuffer"/> structure that receives the output data. If a buffer was typed as <see cref="SEC_READWRITE"/> in the input, it will be there on output. The system will allocate a buffer for the security token if requested (through <see cref="ISC_REQ_ALLOCATE_MEMORY"/>) and fill in the address in the buffer descriptor for the security token.</para>
+        /// <para>When using the Microsoft Digest SSP, this parameter receives the challenge response that must be sent to the server.</para>
+        /// <para>When using the Schannel SSP, if the <see cref="ISC_REQ_ALLOCATE_MEMORY"/> flag is specified, the Schannel SSP will allocate memory for the buffer and put the appropriate information in the <see cref="SecBufferDesc"/>. In addition, the caller must pass in a buffer of type <see cref="SECBUFFER_ALERT"/>. On output, if an alert is generated, this buffer contains information about that alert, and the function fails.</para>
+        /// </param>
+        /// <param name="pfContextAttr">
+        /// <para>A variable to receive a set of bit flags that indicate the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/a-gly">attributes</a> of the established <a href="https://docs.microsoft.com/windows/desktop/SecGloss/c-gly">context</a>. For a description of the various attributes, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/context-requirements">Context Requirements</a>.</para>
+        /// <para>Do not check for security-related attributes until the final function call returns successfully. Attribute flags that are not related to security, such as the <see cref="ASC_RET_ALLOCATED_MEMORY"/> flag, can be checked before the final return.</para>
+        /// <para><note>Particular context attributes can change during negotiation with a remote peer.</note></para>
+        /// </param>
+        /// <param name="ptsExpiry">
+        /// <para>A <see cref="TimeStamp"/> structure that receives the expiration time of the context. It is recommended that the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">security package</a> always return this value in local time. This parameter is optional and should be ignored for short-lived clients.</para>
+        /// <para>There is no expiration time for Microsoft Digest SSP security contexts or <a href="https://docs.microsoft.com/windows/desktop/SecGloss/c-gly">credentials</a>.</para>
+        /// </param>
+        /// <returns>
+        /// <para>
+        /// If the function succeeds, the function returns one of the following success codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <item><term><see cref="SEC_I_COMPLETE_AND_CONTINUE"/></term><description> The client must call <see cref="CompleteAuthToken"/> and then pass the output to the server. The client then waits for a returned token and passes it, in another call, to <see cref="InitializeSecurityContext"/> (General).</description></item>
+        /// <item><term><see cref="SEC_I_COMPLETE_NEEDED"/></term><description> The client must finish building the message and then call the <see cref="CompleteAuthToken"/> function. </description></item>
+        /// <item><term><see cref="SEC_I_CONTINUE_NEEDED"/></term><description> The client must send the output token to the server and wait for a return token. The returned token is then passed in another call to <see cref="InitializeSecurityContext"/> (General). The output token can be empty.</description></item>
+        /// <item><term><see cref="SEC_I_INCOMPLETE_CREDENTIALS"/></term><description> Use with Schannel. The server has requested client authentication, and the supplied credentials either do not include a certificate or the certificate was not issued by a <a href="https://docs.microsoft.com/windows/desktop/SecGloss/c-gly">certification authority</a> that is trusted by the server. For more information, see Remarks.</description></item>
+        /// <item><term><see cref="SEC_E_INCOMPLETE_MESSAGE"/></term><description> Use with Schannel. Data for the whole message was not read from the wire.<br/>When this value is returned, the <paramref name="pInput"/> buffer contains a <see cref="SecBuffer"/> structure with a <see cref="SecBuffer.BufferType"/> member of <see cref="SECBUFFER_MISSING"/>.The <see cref="SecBuffer.cbBuffer"/> member of <see cref="SecBuffer"/> contains a value that indicates the number of additional bytes that the function must read from the client before this function succeeds. While this number is not always accurate, using it can help improve performance by avoiding multiple calls to this function.</description></item>
+        /// <item><term><see cref="SEC_E_OK"/></term><description> The <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">security context</a> was successfully initialized. There is no need for another <see cref="InitializeSecurityContext"/> (General) call. If the function returns an output token, that is, if the <see cref="SECBUFFER_TOKEN"/> in <paramref name="pOutput"/> is of nonzero length, that token must be sent to the server.</description></item>
+        /// </list>
+        /// </para>
+        /// <para>
+        /// If the function fails, the function returns one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <item><term><see cref="SEC_E_INSUFFICIENT_MEMORY"/></term><description>There is not enough memory available to complete the requested action. </description></item>
+        /// <item><term><see cref="SEC_E_INTERNAL_ERROR"/></term><description>An error occurred that did not map to an SSPI error code. </description></item>
+        /// <item><term><see cref="SEC_E_INVALID_HANDLE"/></term><description>The handle passed to the function is not valid. </description></item>
+        /// <item><term><see cref="SEC_E_INVALID_TOKEN"/></term><description>The error is due to a malformed input token, such as a token corrupted in transit, a token of incorrect size, or a token passed into the wrong security package. Passing a token to the wrong package can happen if the client and server did not negotiate the proper security package. </description></item>
+        /// <item><term><see cref="SEC_E_LOGON_DENIED"/></term><description>The logon failed. </description></item>
+        /// <item><term><see cref="SEC_E_NO_AUTHENTICATING_AUTHORITY"/></term><description> No authority could be contacted for authentication. The domain name of the authenticating party could be wrong, the domain could be unreachable, or there might have been a trust relationship failure. </description></item>
+        /// <item><term><see cref="SEC_E_NO_CREDENTIALS"/></term><description>No credentials are available in the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">security package</a>. </description></item>
+        /// <item><term><see cref="SEC_E_TARGET_UNKNOWN"/></term><description>The target was not recognized. </description></item>
+        /// <item><term><see cref="SEC_E_UNSUPPORTED_FUNCTION"/></term><description>A context attribute flag that is not valid (<see cref="ISC_REQ_DELEGATE"/> or <see cref="ISC_REQ_PROMPT_FOR_CREDS"/>) was specified in the <paramref name="fContextReq"/> parameter. </description></item>
+        /// <item><term><see cref="SEC_E_WRONG_PRINCIPAL"/></term><description> The principal that received the authentication request is not the same as the one passed into the <paramref name="pszTargetName"/> parameter. This indicates a failure in mutual authentication. </description></item>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>The caller is responsible for determining whether the final context attributes are sufficient. If, for example, confidentiality was requested, but could not be established, some applications may choose to shut down the connection immediately.</para>
+        /// <para>If attributes of the security context are not sufficient, the client must free the partially created context by calling the <see cref="DeleteSecurityContext"/> function.</para>
+        /// <para>The <see cref="InitializeSecurityContext"/> (General) function is used by a client to initialize an outbound context.</para>
+        /// <para>
+        /// For a two-leg security context, the calling sequence is as follows:
+        /// <list type="number">
+        /// <item>The client calls the function with <paramref name="phContext"/> set to <see langword="null"/> and fills in the buffer descriptor with the input message.</item>
+        /// <item>The security package examines the parameters and constructs an opaque token, placing it in the TOKEN element in the buffer array. If the <paramref name="fContextReq"/> parameter includes the <see cref="ISC_REQ_ALLOCATE_MEMORY"/> flag, the security package allocates the memory and returns the pointer in the TOKEN element.</item>
+        /// <item>The client sends the token returned in the <paramref name="pOutput"/> buffer to the target server. The server then passes the token as an input argument in a call to the <see cref="AcceptSecurityContext"/> (General) function.</item>
+        /// <item><see cref="AcceptSecurityContext"/> (General) may return a token, which the server sends to the client for a second call to <see cref="InitializeSecurityContext"/> (General) if the first call returned <see cref="SEC_I_CONTINUE_NEEDED"/>.</item>
+        /// </list>
+        /// </para>
+        /// <para>
+        /// For multiple-leg security contexts, such as mutual authentication, the calling sequence is as follows:
+        /// <list type="number">
+        /// <item>The client calls the function as described earlier, but the package returns the <see cref="SEC_I_CONTINUE_NEEDED"/> success code.</item>
+        /// <item>The client sends the output token to the server and waits for the server's reply.</item>
+        /// <item>Upon receipt of the server's response, the client calls <see cref="InitializeSecurityContext"/> (General) again, with <paramref name="phContext"/> set to the handle that was returned from the last call. The token received from the server is supplied in the <paramref name="pInput"/> parameter.</item>
+        /// </list>
+        /// </para>
+        /// <para>If the server has successfully responded, the security package returns <see cref="SEC_E_OK"/> and a secure session is established. </para>
+        /// <para>If the function returns one of the error responses, the server's response is not accepted, and the session is not established.</para>
+        /// <para>If the function returns <see cref="SEC_I_CONTINUE_NEEDED"/>, <see cref="SEC_I_COMPLETE_NEEDED"/>, or <see cref="SEC_I_COMPLETE_AND_CONTINUE"/>, steps 2 and 3 are repeated.</para>
+        /// <para>To initialize a <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">security context</a>, more than one call to this function may be required, depending on the underlying authentication mechanism as well as the choices specified in the <paramref name="fContextReq"/> parameter.</para>
+        /// <para>The <paramref name="fContextReq"/> and <paramref name="pfContextAttr"/> parameters are bitmasks that represent various context attributes. For a description of the various attributes, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/context-requirements">Context Requirements</a>. The <paramref name="pfContextAttr"/> parameter is valid on any successful return, but only on the final successful return should you examine the flags that pertain to security aspects of the context. Intermediate returns can set, for example, the <see cref="ISC_RET_ALLOCATED_MEMORY"/> flag.</para>
+        /// <para>If the <see cref="ISC_REQ_USE_SUPPLIED_CREDS"/> flag is set, the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">security package</a> must look for a <see cref="SECBUFFER_PKG_PARAMS"/> buffer type in the <paramref name="pInput"/> input buffer. This is not a generic solution, but it allows for a strong pairing of security package and application when appropriate.</para>
+        /// <para>If <see cref="ISC_REQ_ALLOCATE_MEMORY"/> was specified, the caller must free the memory by calling the <see cref="FreeContextBuffer"/> function.</para>
+        /// <para>For example, the input token could be the challenge from a LAN Manager. In this case, the output token would be the NTLM-encrypted response to the challenge.</para>
+        /// <para>The action the client takes depends on the return code from this function. If the return code is <see cref="SEC_E_OK"/>, there will be no second <see cref="InitializeSecurityContext"/> (General) call, and no response from the server is expected. If the return code is <see cref="SEC_I_CONTINUE_NEEDED"/>, the client expects a token in response from the server and passes it in a second call to <see cref="InitializeSecurityContext"/> (General). The <see cref="SEC_I_COMPLETE_NEEDED"/> return code indicates that the client must finish building the message and call the <see cref="CompleteAuthToken"/> function. The <see cref="SEC_I_COMPLETE_AND_CONTINUE"/> code incorporates both of these actions.</para>
+        /// <para>If <see cref="InitializeSecurityContext"/> (General) returns success on the first (or only) call, then the caller must eventually call the <see cref="DeleteSecurityContext"/> function on the returned handle, even if the call fails on a later leg of the authentication exchange.</para>
+        /// <para>The client may call <see cref="InitializeSecurityContext"/> (General) again after it has completed successfully. This indicates to the security package that a reauthentication is wanted.</para>
+        /// <para>Kernel mode callers have the following differences: the target name is a <a href="https://docs.microsoft.com/windows/desktop/SecGloss/u-gly">Unicode</a> string that must be allocated in virtual memory by using <see cref="VirtualAlloc"/>; it must not be allocated from the pool. Buffers passed and supplied in <paramref name="pInput"/> and <paramref name="pOutput"/> must be in virtual memory, not in the pool.</para>
+        /// <para>When using the Schannel SSP, if the function returns <see cref="SEC_I_INCOMPLETE_CREDENTIALS"/>, check that you specified a valid and trusted certificate in your credentials. The certificate is specified when calling the <see cref="AcquireCredentialsHandle"/> (General) function. The certificate must be a client authentication certificate issued by a <a href="https://docs.microsoft.com/windows/desktop/SecGloss/c-gly">certification authority</a> (CA) trusted by the server. To obtain a list of the CAs trusted by the server, call the <see cref="QueryContextAttributes"/> (General) function and specify the <see cref="SECPKG_ATTR_ISSUER_LIST_EX"/> attribute.</para>
+        /// <para>When using the Schannel SSP, after a client application receives an authentication certificate from a CA that is trusted by the server, the application creates a new credential by calling the <see cref="AcquireCredentialsHandle"/> (General) function and then calling <see cref="InitializeSecurityContext"/> (General) again, specifying the new credential in the <paramref name="phCredential"/> parameter.</para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/sspi/nf-sspi-initializesecuritycontextw">InitializeSecurityContextW function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="AcceptSecurityContext"/>
+        /// <seealso cref="AcquireCredentialsHandle"/>
+        /// <seealso cref="CompleteAuthToken"/>
+        /// <seealso cref="DeleteSecurityContext"/>
+        /// <seealso cref="FreeContextBuffer"/>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/SecAuthN/authentication-functions">SSPI Functions</seealso>
+        /// <seealso cref="SecBuffer"/>
+        /// <seealso cref="SecBufferDesc"/>
+        [DllImport(Secur32, CallingConvention = CallingConvention.Winapi)]
+        public static extern int InitializeSecurityContext(
+            [Optional] in CredHandle phCredential,  // Cred to base context
+            [Optional] in CtxtHandle phContext,     // Existing context (OPT)
+            [In, Optional] LPCTSTR pszTargetName,   // Name of target
+            [In, MarshalAs(UnmanagedType.U4)]
+            ISC_REQ_FLAGS fContextReq,              // Context Requirements
+            [In] int Reserved1,                     // Reserved, MBZ
+            [In, MarshalAs(UnmanagedType.U4)]
+            SECURITY_DREP_TYPE TargetDataRep,       // Data rep of target
+            [Optional] in SecBufferDesc pInput,     // Input Buffers
+            [In] int Reserved2,                     // Reserved, MBZ
+            [Optional] ref CtxtHandle phNewContext, // (out) New Context handle
+            [Optional] ref SecBufferDesc pOutput,   // (inout) Output Buffers
+            [MarshalAs(UnmanagedType.U4)]
+            out ISC_RET_FLAGS pfContextAttr,        // (out) Context attrs
+            [Optional] out TimeStamp ptsExpiry      // (out) Life span (OPT)
+            );
+
+#if !NETSTANDARD1_6
+        /// <inheritdoc cref="InitializeSecurityContext(in CredHandle, in CtxtHandle, LPCTSTR, ISC_REQ_FLAGS, int, SECURITY_DREP_TYPE, in SecBufferDesc, int, ref CtxtHandle, ref SecBufferDesc, out ISC_RET_FLAGS, out TimeStamp)"/>
+        [DllImport(Secur32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
+        public static extern int InitializeSecurityContext(
+            [Optional] in CredHandle phCredential,  // Cred to base context
+            [Optional] in CtxtHandle phContext,     // Existing context (OPT)
+            [In, Optional] string pszTargetName,    // Name of target
+            [In, MarshalAs(UnmanagedType.U4)]
+            ISC_REQ_FLAGS fContextReq,              // Context Requirements
+            [In] int Reserved1,                     // Reserved, MBZ
+            [In, MarshalAs(UnmanagedType.U4)]
+            SECURITY_DREP_TYPE TargetDataRep,       // Data rep of target
+            [Optional] in SecBufferDesc pInput,     // Input Buffers
+            [In] int Reserved2,                     // Reserved, MBZ
+            [Optional] ref CtxtHandle phNewContext, // (out) New Context handle
+            [Optional] ref SecBufferDesc pOutput,   // (inout) Output Buffers
+            [MarshalAs(UnmanagedType.U4)]
+            out ISC_RET_FLAGS pfContextAttr,        // (out) Context attrs
+            [Optional] out TimeStamp ptsExpiry      // (out) Life span (OPT)
             );
 #endif // !NETSTANDARD1_6
         #endregion

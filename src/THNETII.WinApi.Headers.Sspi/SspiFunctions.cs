@@ -276,5 +276,36 @@ namespace THNETII.WinApi.Native.Sspi
         }
 #endif // !NETSTANDARD1_6
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 1240
+        #region FreeCredentialsHandle function
+        /// <summary>
+        /// <para>The <see cref="FreeCredentialsHandle"/> function notifies the security system that the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/c-gly">credentials</a> are no longer needed. An application calls this function to free the credential handle acquired in the call to the <see cref="AcquireCredentialsHandle"/> (General) function after calling the <see cref="DeleteSecurityContext"/> function to free any context handles associated with the credential. When all references to this credential set have been removed, the credentials themselves can be removed.</para>
+        /// <para>Failure to free credentials handles will result in memory leaks.</para>
+        /// </summary>
+        /// <param name="phCredential">
+        /// A handle obtained by using the <see cref="AcquireCredentialsHandle"/> (General) function.
+        /// </param>
+        /// <returns>
+        /// <para>If the function succeeds, the function returns <see cref="SEC_E_OK"/>.</para>
+        /// <para>
+        /// If the function fails, it returns the following error code.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <item><term><see cref="SEC_E_INVALID_HANDLE"/></term><description>The handle passed to the function is not valid.</description></item>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/sspi/nf-sspi-freecredentialshandle">FreeCredentialsHandle function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="AcquireCredentialsHandle"/>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/SecAuthN/authentication-functions">SSPI Functions</seealso>
+        [DllImport(Secur32, CallingConvention = CallingConvention.Winapi)]
+        public static extern int FreeCredentialsHandle(
+            [In] in CredHandle phCredential            // Handle to free
+            );
+        #endregion
     }
 }

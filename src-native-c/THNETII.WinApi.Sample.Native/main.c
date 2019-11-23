@@ -8,7 +8,7 @@ int main(int argc, char* argv[])
 {
     FILETIME instance;
     const int size = sizeof(instance);
-    const int value = SEC_I_CONTINUE_NEEDED;
+    const int value = SECPKG_CRED_INBOUND;
 
     const void* ptr = GetVersionEx;
 

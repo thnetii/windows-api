@@ -250,30 +250,6 @@ namespace THNETII.WinApi.Native.Sspi
             out CredHandle phCredential,             // (out) Cred Handle
             [Optional] out TimeStamp ptsExpiry       // (out) Lifetime (optional)
             );
-
-        /// <inheritdoc cref="AcquireCredentialsHandle(LPCTSTR, LPCTSTR, SECPKG_CRED_USE, in LUID, IntPtr, SEC_GET_KEY_FN, IntPtr, out CredHandle, out TimeStamp)"/>
-        public static unsafe int AcquireCredentialsHandle(
-            ReadOnlySpan<byte> pszPrincipal,         // Name of principal
-            ReadOnlySpan<byte> pszPackage,           // Name of package
-            SECPKG_CRED_USE fCredentialUse,          // Flags indicating use
-            in LUID pvLogonId,                       // Pointer to logon ID
-            IntPtr pAuthData,                        // Package specific data
-            SEC_GET_KEY_FN pGetKeyFn,                // Pointer to GetKey() func
-            IntPtr pvGetKeyArgument,                 // Value to pass to GetKey()
-            out CredHandle phCredential,             // (out) Cred Handle
-            out TimeStamp ptsExpiry                  // (out) Lifetime (optional)
-            )
-        {
-            fixed (byte* pszPrincipalPtr = pszPrincipal)
-            fixed (byte* pszPackagePtr = pszPackage)
-                return AcquireCredentialsHandle(
-                    Pointer.Create<LPCTSTR>(pszPrincipalPtr),
-                    Pointer.Create<LPCTSTR>(pszPackagePtr),
-                    fCredentialUse, pvLogonId, pAuthData,
-                    pGetKeyFn, pvGetKeyArgument,
-                    out phCredential, out ptsExpiry
-                    );
-        }
 #endif // !NETSTANDARD1_6
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 1240
@@ -306,6 +282,151 @@ namespace THNETII.WinApi.Native.Sspi
         public static extern int FreeCredentialsHandle(
             [In] in CredHandle phCredential            // Handle to free
             );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 1250
+        #region AddCredentialsW function
+        /// <inheritdoc cref="AddCredentials(in CredHandle, LPCTSTR, LPCTSTR, SECPKG_CRED_USE, IntPtr, SEC_GET_KEY_FN, IntPtr, out TimeStamp)"/>
+        [DllImport(Secur32, CallingConvention = CallingConvention.Winapi)]
+        public static extern int AddCredentialsW(
+            [In] in CredHandle hCredentials,
+            [In, Optional] LPCWSTR pszPrincipal,    // Name of principal
+            [In] LPCWSTR pszPackage,                // Name of package
+            [In, MarshalAs(UnmanagedType.U4)]
+            SECPKG_CRED_USE fCredentialUse,         // Flags indicating use
+            [In, Optional] IntPtr pAuthData,        // Package specific data
+            [In, Optional, MarshalAs(UnmanagedType.FunctionPtr)]
+            SEC_GET_KEY_FN pGetKeyFn,               // Pointer to GetKey() func
+            [In, Optional] IntPtr pvGetKeyArgument, // Value to pass to GetKey()
+            [Optional] out TimeStamp ptsExpiry      // (out) Lifetime (optional)
+            );
+
+        /// <inheritdoc cref="AddCredentialsW(in CredHandle, LPCWSTR, LPCWSTR, SECPKG_CRED_USE, IntPtr, SEC_GET_KEY_FN, IntPtr, out TimeStamp)"/>
+        [DllImport(Secur32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Unicode)]
+        public static extern int AddCredentialsW(
+            [In] in CredHandle hCredentials,
+            [In, Optional] string pszPrincipal,    // Name of principal
+            [In] string pszPackage,                // Name of package
+            [In, MarshalAs(UnmanagedType.U4)]
+            SECPKG_CRED_USE fCredentialUse,         // Flags indicating use
+            [In, Optional] IntPtr pAuthData,        // Package specific data
+            [In, Optional, MarshalAs(UnmanagedType.FunctionPtr)]
+            SEC_GET_KEY_FN pGetKeyFn,               // Pointer to GetKey() func
+            [In, Optional] IntPtr pvGetKeyArgument, // Value to pass to GetKey()
+            [Optional] out TimeStamp ptsExpiry      // (out) Lifetime (optional)
+            );
+
+        /// <inheritdoc cref="AddCredentialsW(in CredHandle, LPCWSTR, LPCWSTR, SECPKG_CRED_USE, IntPtr, SEC_GET_KEY_FN, IntPtr, out TimeStamp)"/>
+        public static unsafe int AddCredentialsW(
+            in CredHandle hCredentials,
+            ReadOnlySpan<char> pszPrincipal, // Name of principal
+            ReadOnlySpan<char> pszPackage,   // Name of package
+            SECPKG_CRED_USE fCredentialUse,  // Flags indicating use
+            IntPtr pAuthData,                // Package specific data
+            SEC_GET_KEY_FN pGetKeyFn,        // Pointer to GetKey() func
+            IntPtr pvGetKeyArgument,         // Value to pass to GetKey()
+            out TimeStamp ptsExpiry          // (out) Lifetime (optional)
+            )
+        {
+            fixed (char* pszPrincipalPtr = pszPrincipal)
+            fixed (char* pszPackagePtr = pszPackage)
+                return AddCredentialsW(
+                    hCredentials,
+                    Pointer.Create<LPCWSTR>(pszPrincipalPtr),
+                    Pointer.Create<LPCWSTR>(pszPackagePtr),
+                    fCredentialUse, pAuthData, pGetKeyFn, pvGetKeyArgument,
+                    out ptsExpiry
+                    );
+        }
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 1284
+        #region AddCredentialsA function
+        /// <inheritdoc cref="AddCredentials(in CredHandle, LPCTSTR, LPCTSTR, SECPKG_CRED_USE, IntPtr, SEC_GET_KEY_FN, IntPtr, out TimeStamp)"/>
+        [DllImport(Secur32, CallingConvention = CallingConvention.Winapi)]
+        public static extern int AddCredentialsA(
+            [In] in CredHandle hCredentials,
+            [In, Optional] LPCSTR pszPrincipal,    // Name of principal
+            [In] LPCSTR pszPackage,                // Name of package
+            [In, MarshalAs(UnmanagedType.U4)]
+            SECPKG_CRED_USE fCredentialUse,         // Flags indicating use
+            [In, Optional] IntPtr pAuthData,        // Package specific data
+            [In, Optional, MarshalAs(UnmanagedType.FunctionPtr)]
+            SEC_GET_KEY_FN pGetKeyFn,               // Pointer to GetKey() func
+            [In, Optional] IntPtr pvGetKeyArgument, // Value to pass to GetKey()
+            [Optional] out TimeStamp ptsExpiry      // (out) Lifetime (optional)
+            );
+
+        /// <inheritdoc cref="AddCredentialsA(in CredHandle, LPCSTR, LPCSTR, SECPKG_CRED_USE, IntPtr, SEC_GET_KEY_FN, IntPtr, out TimeStamp)"/>
+        [DllImport(Secur32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi)]
+        public static extern int AddCredentialsA(
+            [In] in CredHandle hCredentials,
+            [In, Optional] string pszPrincipal,    // Name of principal
+            [In] string pszPackage,                // Name of package
+            [In, MarshalAs(UnmanagedType.U4)]
+            SECPKG_CRED_USE fCredentialUse,         // Flags indicating use
+            [In, Optional] IntPtr pAuthData,        // Package specific data
+            [In, Optional, MarshalAs(UnmanagedType.FunctionPtr)]
+            SEC_GET_KEY_FN pGetKeyFn,               // Pointer to GetKey() func
+            [In, Optional] IntPtr pvGetKeyArgument, // Value to pass to GetKey()
+            [Optional] out TimeStamp ptsExpiry      // (out) Lifetime (optional)
+            );
+
+        /// <inheritdoc cref="AddCredentialsA(in CredHandle, LPCSTR, LPCSTR, SECPKG_CRED_USE, IntPtr, SEC_GET_KEY_FN, IntPtr, out TimeStamp)"/>
+        public static unsafe int AddCredentialsA(
+            in CredHandle hCredentials,
+            ReadOnlySpan<byte> pszPrincipal, // Name of principal
+            ReadOnlySpan<byte> pszPackage,   // Name of package
+            SECPKG_CRED_USE fCredentialUse,  // Flags indicating use
+            IntPtr pAuthData,                // Package specific data
+            SEC_GET_KEY_FN pGetKeyFn,        // Pointer to GetKey() func
+            IntPtr pvGetKeyArgument,         // Value to pass to GetKey()
+            out TimeStamp ptsExpiry          // (out) Lifetime (optional)
+            )
+        {
+            fixed (byte* pszPrincipalPtr = pszPrincipal)
+            fixed (byte* pszPackagePtr = pszPackage)
+                return AddCredentialsA(
+                    hCredentials,
+                    Pointer.Create<LPCSTR>(pszPrincipalPtr),
+                    Pointer.Create<LPCSTR>(pszPackagePtr),
+                    fCredentialUse, pAuthData, pGetKeyFn, pvGetKeyArgument,
+                    out ptsExpiry
+                    );
+        }
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 1307
+        #region AddCredentials function
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        [DllImport(Secur32, CallingConvention = CallingConvention.Winapi)]
+        public static extern int AddCredentials(
+            [In] in CredHandle hCredentials,
+            [In, Optional] LPCTSTR pszPrincipal,    // Name of principal
+            [In] LPCTSTR pszPackage,                // Name of package
+            [In, MarshalAs(UnmanagedType.U4)]
+            SECPKG_CRED_USE fCredentialUse,         // Flags indicating use
+            [In, Optional] IntPtr pAuthData,        // Package specific data
+            [In, Optional, MarshalAs(UnmanagedType.FunctionPtr)]
+            SEC_GET_KEY_FN pGetKeyFn,               // Pointer to GetKey() func
+            [In, Optional] IntPtr pvGetKeyArgument, // Value to pass to GetKey()
+            [Optional] out TimeStamp ptsExpiry      // (out) Lifetime (optional)
+            );
+
+#if !NETSTANDARD1_6
+        /// <inheritdoc cref="AddCredentials(in CredHandle, LPCTSTR, LPCTSTR, SECPKG_CRED_USE, IntPtr, SEC_GET_KEY_FN, IntPtr, out TimeStamp)"/>
+        [DllImport(Secur32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
+        public static extern int AddCredentials(
+            [In] in CredHandle hCredentials,
+            [In, Optional] string pszPrincipal,    // Name of principal
+            [In] string pszPackage,                // Name of package
+            [In, MarshalAs(UnmanagedType.U4)]
+            SECPKG_CRED_USE fCredentialUse,         // Flags indicating use
+            [In, Optional] IntPtr pAuthData,        // Package specific data
+            [In, Optional, MarshalAs(UnmanagedType.FunctionPtr)]
+            SEC_GET_KEY_FN pGetKeyFn,               // Pointer to GetKey() func
+            [In, Optional] IntPtr pvGetKeyArgument, // Value to pass to GetKey()
+            [Optional] out TimeStamp ptsExpiry      // (out) Lifetime (optional)
+            );
+#endif // !NETSTANDARD1_6
         #endregion
     }
 }

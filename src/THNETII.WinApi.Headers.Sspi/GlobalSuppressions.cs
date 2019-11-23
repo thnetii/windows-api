@@ -13,3 +13,4 @@ using System.Diagnostics.CodeAnalysis;
 [assembly: SuppressMessage("Usage", "PC003: Native API not available in UWP")]
 [assembly: SuppressMessage("Interoperability", "CA1401: P/Invokes should not be visible")]
 [assembly: SuppressMessage("Globalization", "CA2101: Specify marshaling for P/Invoke string arguments")]
+[assembly: SuppressMessage("Documentation", "CS0419: Ambigious reference in cref attribute")]

@@ -428,5 +428,111 @@ namespace THNETII.WinApi.Native.Sspi
             );
 #endif // !NETSTANDARD1_6
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 1500
+        #region ChangeAccountPasswordW function
+        /// <inheritdoc cref="ChangeAccountPassword(LPCTSTR, LPCTSTR, LPCTSTR, LPCTSTR, LPCTSTR, bool, int, ref SecBufferDesc)"/>
+        [DllImport(Secur32, CallingConvention = CallingConvention.Winapi)]
+        public static extern int ChangeAccountPasswordW(
+            [In] LPCWSTR pszPackageName,
+            [In] LPCWSTR pszDomainName,
+            [In] LPCWSTR pszAccountName,
+            [In] LPCWSTR pszOldPassword,
+            [In] LPCWSTR pszNewPassword,
+            [In, MarshalAs(UnmanagedType.U1)] bool bImpersonating,
+            [In] int dwReserved,
+            ref SecBufferDesc pOutput
+            );
+
+        /// <inheritdoc cref="ChangeAccountPasswordW(LPCWSTR, LPCWSTR, LPCWSTR, LPCWSTR, LPCWSTR, bool, int, ref SecBufferDesc)"/>
+        [DllImport(Secur32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Unicode)]
+        public static extern int ChangeAccountPasswordW(
+            [In] string pszPackageName,
+            [In] string pszDomainName,
+            [In] string pszAccountName,
+            [In] string pszOldPassword,
+            [In] string pszNewPassword,
+            [In, MarshalAs(UnmanagedType.U1)] bool bImpersonating,
+            [In] int dwReserved,
+            ref SecBufferDesc pOutput
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 1526
+        #region ChangeAccountPasswordA function
+        /// <inheritdoc cref="ChangeAccountPassword(LPCTSTR, LPCTSTR, LPCTSTR, LPCTSTR, LPCTSTR, bool, int, ref SecBufferDesc)"/>
+        [DllImport(Secur32, CallingConvention = CallingConvention.Winapi)]
+        public static extern int ChangeAccountPasswordA(
+            [In] LPCSTR pszPackageName,
+            [In] LPCSTR pszDomainName,
+            [In] LPCSTR pszAccountName,
+            [In] LPCSTR pszOldPassword,
+            [In] LPCSTR pszNewPassword,
+            [In, MarshalAs(UnmanagedType.U1)] bool bImpersonating,
+            [In] int dwReserved,
+            ref SecBufferDesc pOutput
+            );
+
+        /// <inheritdoc cref="ChangeAccountPasswordA(LPCSTR, LPCSTR, LPCSTR, LPCSTR, LPCSTR, bool, int, ref SecBufferDesc)"/>
+        [DllImport(Secur32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi)]
+        public static extern int ChangeAccountPasswordA(
+            [In] string pszPackageName,
+            [In] string pszDomainName,
+            [In] string pszAccountName,
+            [In] string pszOldPassword,
+            [In] string pszNewPassword,
+            [In, MarshalAs(UnmanagedType.U1)] bool bImpersonating,
+            [In] int dwReserved,
+            ref SecBufferDesc pOutput
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 1550
+        #region ChangeAccountPassword function
+        /// <summary>
+        /// <para>The <see cref="ChangeAccountPassword"/> function changes the password for a Windows domain account by using the specified <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/sspi">Security Support Provider</a>.</para>
+        /// <para>This function is supported only by the <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/microsoft-kerberos">Microsoft Kerberos</a>, <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/microsoft-negotiate">Microsoft Negotiate</a>, and <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/microsoft-ntlm">Microsoft NTLM</a> providers.</para>
+        /// </summary>
+        /// <param name="pszPackageName">The name of the provider to use. The value of this parameter must be either <c>"Kerberos"</c>, <c>"Negotiate"</c>, or <c>"NTLM"</c>.</param>
+        /// <param name="pszDomainName">The domain of the account for which to change the password.</param>
+        /// <param name="pszAccountName">The user name of the account for which to change the password.</param>
+        /// <param name="pszOldPassword">The old password to be changed.</param>
+        /// <param name="pszNewPassword">The new password for the specified account.</param>
+        /// <param name="bImpersonating"><see langword="true"/> if the calling process is running as the client; otherwise, <see langword="false"/>.</param>
+        /// <param name="dwReserved">Reserved. Must be set to zero.</param>
+        /// <param name="pOutput">On input, a reference to a <see cref="SecBufferDesc"/> structure. The <see cref="SecBufferDesc"/> structure must contain a single buffer of type <see cref="SECBUFFER_CHANGE_PASS_RESPONSE"/>. On output, the <see cref="SecBufferDesc.Buffers"/> member of that structure points to a <see cref="DOMAIN_PASSWORD_INFORMATION"/> structure.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the function returns <see cref="SEC_E_OK"/>.</para>
+        /// <para>If the function fails, it returns an error code.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/sspi/nf-sspi-changeaccountpasswordw">ChangeAccountPasswordW function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        [DllImport(Secur32, CallingConvention = CallingConvention.Winapi)]
+        public static extern int ChangeAccountPassword(
+            [In] LPCTSTR pszPackageName,
+            [In] LPCTSTR pszDomainName,
+            [In] LPCTSTR pszAccountName,
+            [In] LPCTSTR pszOldPassword,
+            [In] LPCTSTR pszNewPassword,
+            [In, MarshalAs(UnmanagedType.U1)] bool bImpersonating,
+            [In] int dwReserved,
+            ref SecBufferDesc pOutput
+            );
+
+#if !NETSTANDARD1_6
+        /// <inheritdoc cref="ChangeAccountPassword(LPCTSTR, LPCTSTR, LPCTSTR, LPCTSTR, LPCTSTR, bool, int, ref SecBufferDesc)"/>
+        [DllImport(Secur32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
+        public static extern int ChangeAccountPassword(
+            [In] string pszPackageName,
+            [In] string pszDomainName,
+            [In] string pszAccountName,
+            [In] string pszOldPassword,
+            [In] string pszNewPassword,
+            [In, MarshalAs(UnmanagedType.U1)] bool bImpersonating,
+            [In] int dwReserved,
+            ref SecBufferDesc pOutput
+            );
+#endif // !NETSTANDARD1_6
+        #endregion
     }
 }

@@ -9,3 +9,6 @@ using System.Diagnostics.CodeAnalysis;
 [assembly: SuppressMessage("Performance", "CA1815: Override equals and operator equals on value types")]
 [assembly: SuppressMessage("Design", "CA1051: Do not declare visible instance fields")]
 [assembly: SuppressMessage("Naming", "CA1712: Do not prefix enum values with type name")]
+[assembly: SuppressMessage("Naming", "CA1720: Identifier contains type name")]
+[assembly: SuppressMessage("Usage", "PC003: Native API not available in UWP")]
+[assembly: SuppressMessage("Interoperability", "CA1401: P/Invokes should not be visible")]

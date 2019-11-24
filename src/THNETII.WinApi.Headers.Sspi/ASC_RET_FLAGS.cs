@@ -1,0 +1,34 @@
+﻿using System;
+
+namespace THNETII.WinApi.Native.Sspi
+{
+    [Flags]
+    public enum ASC_RET_FLAGS : int
+    {
+        ASC_RET_DELEGATE = SspiConstants.ASC_RET_DELEGATE,
+        ASC_RET_MUTUAL_AUTH = SspiConstants.ASC_RET_MUTUAL_AUTH,
+        ASC_RET_REPLAY_DETECT = SspiConstants.ASC_RET_REPLAY_DETECT,
+        ASC_RET_SEQUENCE_DETECT = SspiConstants.ASC_RET_SEQUENCE_DETECT,
+        ASC_RET_CONFIDENTIALITY = SspiConstants.ASC_RET_CONFIDENTIALITY,
+        ASC_RET_USE_SESSION_KEY = SspiConstants.ASC_RET_USE_SESSION_KEY,
+        ASC_RET_SESSION_TICKET = SspiConstants.ASC_RET_SESSION_TICKET,
+        ASC_RET_ALLOCATED_MEMORY = SspiConstants.ASC_RET_ALLOCATED_MEMORY,
+        ASC_RET_USED_DCE_STYLE = SspiConstants.ASC_RET_USED_DCE_STYLE,
+        ASC_RET_DATAGRAM = SspiConstants.ASC_RET_DATAGRAM,
+        ASC_RET_CONNECTION = SspiConstants.ASC_RET_CONNECTION,
+        ASC_RET_CALL_LEVEL = SspiConstants.ASC_RET_CALL_LEVEL, // skipped 1000 to be like ISC_
+        ASC_RET_THIRD_LEG_FAILED = SspiConstants.ASC_RET_THIRD_LEG_FAILED,
+        ASC_RET_EXTENDED_ERROR = SspiConstants.ASC_RET_EXTENDED_ERROR,
+        ASC_RET_STREAM = SspiConstants.ASC_RET_STREAM,
+        ASC_RET_INTEGRITY = SspiConstants.ASC_RET_INTEGRITY,
+        ASC_RET_LICENSING = SspiConstants.ASC_RET_LICENSING,
+        ASC_RET_IDENTIFY = SspiConstants.ASC_RET_IDENTIFY,
+        ASC_RET_NULL_SESSION = SspiConstants.ASC_RET_NULL_SESSION,
+        ASC_RET_ALLOW_NON_USER_LOGONS = SspiConstants.ASC_RET_ALLOW_NON_USER_LOGONS,
+        ASC_RET_ALLOW_CONTEXT_REPLAY = SspiConstants.ASC_RET_ALLOW_CONTEXT_REPLAY,  // deprecated - don't use this flag!!!
+        ASC_RET_FRAGMENT_ONLY = SspiConstants.ASC_RET_FRAGMENT_ONLY,
+        ASC_RET_NO_TOKEN = SspiConstants.ASC_RET_NO_TOKEN,
+        ASC_RET_NO_ADDITIONAL_TOKEN = SspiConstants.ASC_RET_NO_ADDITIONAL_TOKEN,  // *INTERNAL*
+        //      SSP_RET_REAUTHENTICATION        0x08000000  // *INTERNAL*
+    }
+}

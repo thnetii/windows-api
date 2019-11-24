@@ -862,5 +862,43 @@ namespace THNETII.WinApi.Native.Sspi
             [Optional] out TimeStamp ptsExpiry      // (out) Life span (OPT)
             );
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 1678
+        #region CompleteAuthToken function
+        /// <summary>
+        /// <para>The <see cref="CompleteAuthToken"/> function completes an authentication token. This function is used by protocols, such as DCE, that need to revise the security information after the transport application has updated some message parameters.</para>
+        /// <para>This function is supported only by the Digest <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">security support provider</a> (SSP).</para>
+        /// <para><see cref="CompleteAuthToken"/> is used on the server side only.</para>
+        /// </summary>
+        /// <param name="phContext">A handle of the context that needs to be completed.</param>
+        /// <param name="pToken">A <see cref="SecBufferDesc"/> structure that contains the buffer descriptor for the entire message.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the function returns <see cref="SEC_E_OK"/>.</para>
+        /// <para>
+        /// If the function fails, it returns one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <item><term><see cref="SEC_E_INVALID_HANDLE"/></term><description>The handle that was passed to the function is not valid. </description></item>
+        /// <item><term><see cref="SEC_E_INVALID_TOKEN"/></term><description>The token that was passed to the function is not valid. </description></item>
+        /// <item><term><see cref="SEC_E_OUT_OF_SEQUENCE"/></term><description>The client's security context was located, but the message number is incorrect. This return value is used with the Digest SSP. </description></item>
+        /// <item><term><see cref="SEC_E_MESSAGE_ALTERED"/></term><description>The client's security context was located, but the client's message has been tampered with. This return value is used with the Digest SSP. </description></item>
+        /// <item><term><see cref="SEC_E_INTERNAL_ERROR"/></term><description>An error occurred that did not map to an SSPI error code. </description></item>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>The client of a transport application calls the <see cref="CompleteAuthToken"/> function to allow the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">security package</a> to update a checksum or similar operation after all the protocol headers have been updated by the transport application. The client calls this function only if the <see cref="InitializeSecurityContext"/> (Digest) call returned <see cref="SEC_I_COMPLETE_NEEDED"/> or <see cref="SEC_I_COMPLETE_AND_CONTINUE"/>.</para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/sspi/nf-sspi-completeauthtoken">CompleteAuthToken function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="InitializeSecurityContext"/>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/SecAuthN/authentication-functions">SSPI Functions</seealso>
+        /// <seealso cref="SecBufferDesc"/>
+        [DllImport(Secur32, CallingConvention = CallingConvention.Winapi)]
+        public static extern int CompleteAuthToken(
+            in CtxtHandle phContext,              // Context to complete
+            in SecBufferDesc pToken               // Token to complete
+            );
+        #endregion
     }
 }

@@ -948,5 +948,35 @@ namespace THNETII.WinApi.Native.Sspi
             in CtxtHandle phContext               // Context to impersonate
             );
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 1701
+        #region RevertSecurityContext function
+        /// <summary>
+        /// Allows a <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">security package</a> to discontinue the impersonation of the caller and restore its own <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">security context</a>.
+        /// </summary>
+        /// <param name="phContext">Handle of the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">security context</a> being impersonated. This handle must have been obtained in the call to the <see cref="AcceptSecurityContext"/> (General) function and used in the call to the <see cref="ImpersonateSecurityContext"/> function.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="SEC_E_OK"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <item><term><see cref="SEC_E_INVALID_HANDLE"/></term><description>The handle passed to the function is not valid. </description></item>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <see cref="RevertSecurityContext"/> is not available with all <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">security packages</a> on all platforms. Typically, it is implemented only on platforms and with security packages for which a call to the <see cref="QuerySecurityPackageInfo"/> function indicates impersonation support.
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/sspi/nf-sspi-revertsecuritycontext">RevertSecurityContext function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="AcceptSecurityContext"/>
+        /// <seealso cref="ImpersonateSecurityContext"/>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/SecAuthN/authentication-functions">SSPI Functions</seealso>
+        [DllImport(Secur32, CallingConvention = CallingConvention.Winapi)]
+        public static extern int RevertSecurityContext(
+            in CtxtHandle phContext               // Context from which to re
+            );
+        #endregion
     }
 }

@@ -900,5 +900,53 @@ namespace THNETII.WinApi.Native.Sspi
             in SecBufferDesc pToken               // Token to complete
             );
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 1689
+        #region ImpersonateSecurityContext function
+        /// <summary>
+        /// The <see cref="ImpersonateSecurityContext"/> function allows a server to impersonate a client by using a token previously obtained by a call to <see cref="AcceptSecurityContext"/> (General) or <see cref="QuerySecurityContextToken"/>. This function allows the application server to act as the client, and thus all necessary access controls are enforced.
+        /// </summary>
+        /// <param name="phContext">The handle of the context to impersonate. This handle must have been obtained by a call to the <see cref="AcceptSecurityContext"/> (General) function.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the function returns <see cref="SEC_E_OK"/>.</para>
+        /// <para>
+        /// If the function fails, it returns the following error code.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <item><term><see cref="SEC_E_INVALID_HANDLE"/></term><description>The handle passed to the function is not valid.</description></item>
+        /// <item><term><see cref="SEC_E_NO_IMPERSONATION"/></term><description>The client could not be impersonated. </description></item>
+        /// <item><term><see cref="SEC_E_UNSUPPORTED_FUNCTION"/></term><description>This value is returned by Schannel kernel mode to indicate that this function is not supported. </description></item>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>The server application calls the <see cref="ImpersonateSecurityContext"/> function when it needs to impersonate the client. Before doing so, the server must have obtained a valid context handle. To obtain the context handle, the server must call <see cref="AcceptSecurityContext"/> (General) to submit the client's incoming security token to the security system. The server gets a context handle if the inbound context is validated. The function creates an <a href="https://docs.microsoft.com/windows/desktop/SecGloss/i-gly">impersonation token</a> and allows the thread or process to run with the impersonation context.</para>
+        /// <para>When using the Schannel <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">security support provider</a> (SSP), the server application must pass the <see cref="ASC_REQ_MUTUAL_AUTH"/> flag when calling <see cref="AcceptSecurityContext"/> (General). This ensures that the client is asked for a client certificate during the SSL/TLS handshake. When a client certificate is received, the Schannel package verifies the client certificate and attempts to map it to a user account. When this mapping is successful, then a client user token is created and this function succeeds.</para>
+        /// <para>The application server must call the <see cref="RevertSecurityContext"/> function when it finishes or when it needs to restore its own <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">security context</a>.</para>
+        /// <para><see cref="ImpersonateSecurityContext"/> is not available with all <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">security packages</a> on all platforms. Typically, it is implemented only on platforms and with security packages that support impersonation. To learn whether a security package supports impersonation, call the <see cref="QuerySecurityPackageInfo"/> function.</para>
+        /// <para><note>If the <see cref="ImpersonateSecurityContext"/> function fails, the client is not impersonated, and all subsequent client requests are made in the security context of the process that called the function. If the calling process is running as a privileged account, it can perform actions that the client would not be allowed to perform. To avoid security risks, the calling process should always check the return value. If the return value indicates that the function call failed, no client requests should be executed.</note></para>
+        /// <para>
+        /// All impersonate functions, including <see cref="ImpersonateSecurityContext"/> allow the requested impersonation if one of the following is true:
+        /// <list type="bullet">
+        /// <item>The requested impersonation level of the token is less than <see cref="SecurityImpersonation"/>, such as <see cref="SecurityIdentification"/> or <see cref="SecurityAnonymous"/>.</item>
+        /// <item>The caller has the <see cref="SeImpersonatePrivilege"/> privilege.</item>
+        /// <item>A process (or another process in the caller's logon session) created the token using explicit credentials through <see cref="LogonUser"/> or <see cref="LsaLogonUser"/> function.</item>
+        /// <item>The authenticated identity is same as the caller.</item>
+        /// </list>
+        /// </para>
+        /// <para><strong>Windows XP with SP1 and earlier:</strong> The <see cref="SeImpersonatePrivilege"/> privilege is not supported.</para>
+        /// <para><strong>Windows XP:</strong> The <see cref="SeImpersonatePrivilege"/> privilege is not supported until Windows XP with Service Pack 2 (SP2).</para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/sspi/nf-sspi-impersonatesecuritycontext">ImpersonateSecurityContext function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="AcceptSecurityContext"/>
+        /// <seealso cref="QuerySecurityPackageInfo"/>
+        /// <seealso cref="RevertSecurityContext"/>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/SecAuthN/authentication-functions">SSPI Functions</seealso>
+        [DllImport(Secur32, CallingConvention = CallingConvention.Winapi)]
+        public static extern int ImpersonateSecurityContext(
+            in CtxtHandle phContext               // Context to impersonate
+            );
+        #endregion
     }
 }

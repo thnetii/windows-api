@@ -5,6 +5,7 @@ using THNETII.InteropServices.Memory;
 
 using THNETII.WinApi.Native.WinNT;
 using THNETII.WinApi.Native.WinError;
+using Microsoft.Win32.SafeHandles;
 
 #if NETSTANDARD1_6
 using EntryPointNotFoundException = System.Exception;
@@ -976,6 +977,30 @@ namespace THNETII.WinApi.Native.Sspi
         [DllImport(Secur32, CallingConvention = CallingConvention.Winapi)]
         public static extern int RevertSecurityContext(
             in CtxtHandle phContext               // Context from which to re
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 1712
+        #region QuerySecurityContextToken function
+        /// <summary>
+        /// Obtains the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/a-gly">access token</a> for a client <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">security context</a> and uses it directly.
+        /// </summary>
+        /// <param name="phContext">Handle of the context to query.</param>
+        /// <param name="Token">Returned handle to the access token.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the function returns <see cref="SEC_E_OK"/>.</para>
+        /// <para>If the function fails, it returns a nonzero error code. One possible error code return is <see cref="SEC_E_INVALID_HANDLE"/>.</para>
+        /// </returns>
+        /// <remarks>
+        /// This function is called by a server application to control impersonation outside the SSPI layer, such as when launching a child process. The handle returned must be closed by disposing it when the handle is no longer needed.
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/sspi/nf-sspi-querysecuritycontexttoken">QuerySecurityContextToken function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/SecAuthN/authentication-functions">SSPI Functions</seealso>
+        [DllImport(Secur32, CallingConvention = CallingConvention.Winapi)]
+        public static extern int QuerySecurityContextToken(
+            in CtxtHandle phContext,
+            out SafeAccessTokenHandle Token
             );
         #endregion
     }

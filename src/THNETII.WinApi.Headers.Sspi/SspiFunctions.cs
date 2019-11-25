@@ -1003,5 +1003,36 @@ namespace THNETII.WinApi.Native.Sspi
             out SafeAccessTokenHandle Token
             );
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 1724
+        #region DeleteSecurityContext function
+        /// <summary>
+        /// The <see cref="DeleteSecurityContext"/> function deletes the local data structures associated with the specified security context initiated by a previous call to the <see cref="InitializeSecurityContext"/> (General) function or the <see cref="AcceptSecurityContext"/> (General) function.
+        /// </summary>
+        /// <param name="phContext">Handle of the security context to delete.</param>
+        /// <returns>
+        /// <para>If the function succeeds or the handle has already been deleted, the return value is <see cref="SEC_E_OK"/>.</para>
+        /// <para>
+        /// If the function fails, the return value can be the following error code.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <item><term><see cref="SEC_E_INVALID_HANDLE"/></term><description>The handle passed to the function is not valid.</description></item>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>The <see cref="DeleteSecurityContext"/> function terminates a security context and frees associated resources.</para>
+        /// <para>The caller must call this function for a security context when that security context is no longer needed. This is true if the security context is partial, incomplete, rejected, or failed. After the security context is successfully deleted, further use of that security context is not permitted and the handle is no longer valid.</para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/sspi/nf-sspi-deletesecuritycontext">DeleteSecurityContext function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="AcceptSecurityContext"/>
+        /// <seealso cref="InitializeSecurityContext"/>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/SecAuthN/authentication-functions">SSPI Functions</seealso>
+        [DllImport(Secur32, CallingConvention = CallingConvention.Winapi)]
+        public static extern int DeleteSecurityContext(
+            in CtxtHandle phContext     // Context to delete
+            );
+        #endregion
     }
 }

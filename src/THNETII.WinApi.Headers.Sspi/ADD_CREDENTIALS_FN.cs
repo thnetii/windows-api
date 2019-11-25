@@ -3,6 +3,7 @@ using System.Runtime.InteropServices;
 
 namespace THNETII.WinApi.Native.Sspi
 {
+    [UnmanagedFunctionPointer(CallingConvention.Winapi)]
     public delegate int ADD_CREDENTIALS_FN_W(
         [In] in CredHandle hCredentials,
         [In, Optional] LPCWSTR pszPrincipal,
@@ -16,6 +17,7 @@ namespace THNETII.WinApi.Native.Sspi
         [Optional] out TimeStamp ptsExpiry
         );
 
+    [UnmanagedFunctionPointer(CallingConvention.Winapi)]
     public delegate int ADD_CREDENTIALS_FN_A(
         [In] in CredHandle hCredentials,
         [In, Optional] LPCSTR pszPrincipal,
@@ -29,6 +31,7 @@ namespace THNETII.WinApi.Native.Sspi
         [Optional] out TimeStamp ptsExpiry
         );
 
+    [UnmanagedFunctionPointer(CallingConvention.Winapi)]
     public delegate int ADD_CREDENTIALS_FN(
         [In] in CredHandle hCredentials,
         [In, Optional] LPCTSTR pszPrincipal,

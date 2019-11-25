@@ -1034,5 +1034,48 @@ namespace THNETII.WinApi.Native.Sspi
             in CtxtHandle phContext     // Context to delete
             );
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 1735
+        #region ApplyControlToken function
+        /// <summary>
+        /// <para>The <see cref="ApplyControlToken"/> function provides a way to apply a control token to a <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">security context</a>. A token can be received when the security context is being established by a call to the <see cref="InitializeSecurityContext"/> (Schannel) function or with a per-message security service, such as verify or unseal.</para>
+        /// <para>This function is supported only by the Schannel <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">security support provider</a> (SSP).</para>
+        /// <para>This function is not supported in kernel mode.</para>
+        /// <para>This function allows additional or replacement tokens to be applied to a context.</para>
+        /// </summary>
+        /// <param name="phContext">
+        /// <para>A handle to the context to which the token is applied.</para>
+        /// <para>For information about the way the Schannel SSP notifies the remote party of the shutdown, see the Remarks section of <see cref="DecryptMessage"/> (Schannel). For additional information on the use of this function, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/shutting-down-an-schannel-connection">Shutting Down an Schannel Connection</a>.</para>
+        /// </param>
+        /// <param name="pInput">A <see cref="SecBufferDesc"/> structure that contains a pointer to a <see cref="SecBuffer"/> structure that contains the input token to apply to the context.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the function returns <see cref="SEC_E_OK"/>.</para>
+        /// <para>
+        /// If the function fails, it returns a nonzero error code. The following error code is one of the possible error codes that can be returned.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <item><term><see cref="SEC_E_UNSUPPORTED_FUNCTION"/></term><description>This value is returned by Schannel kernel mode to indicate that this function is not supported.</description></item>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>The <see cref="ApplyControlToken"/> function can modify the context based on this token. Among the tokens that this function can add to the client context are <see cref="SCHANNEL_ALERT_TOKEN"/> and <see cref="SCHANNEL_SESSION_TOKEN"/>.</para>
+        /// <para>This function can be used to shut down the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">security context</a> that underlies an existing Schannel connection. For information about how to do this, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/shutting-down-an-schannel-connection">Shutting Down an Schannel Connection</a>.</para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/sspi/nf-sspi-applycontroltoken">ApplyControlToken function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="DecryptMessage"/>
+        /// <seealso cref="ImpersonateSecurityContext"/>
+        /// <seealso cref="SCHANNEL_ALERT_TOKEN"/>
+        /// <seealso cref="SCHANNEL_SESSION_TOKEN"/>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/SecAuthN/authentication-functions">SSPI Functions</seealso>
+        /// <seealso cref="SecBuffer"/>
+        /// <seealso cref="SecBufferDesc"/>
+        [DllImport(Secur32, CallingConvention = CallingConvention.Winapi)]
+        public static extern int ApplyControlToken(
+            in CtxtHandle phContext,              // Context to modify
+            in SecBufferDesc pInput               // Input token to apply
+            );
+        #endregion
     }
 }

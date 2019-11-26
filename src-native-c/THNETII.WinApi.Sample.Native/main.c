@@ -1,11 +1,11 @@
 #include <Windows.h>
-#include <WinBase.h>
+#include <wincrypt.h>
 
 int main(int argc, char* argv[])
 {
-    OSVERSIONINFOW instance;
+    ALG_ID instance;
     const int size = sizeof(instance);
-    const int value = VER_PLATFORM_WIN32_NT;
+    const int value = ALG_CLASS_ALL;
 
     const void* ptr = GetVersionEx;
 

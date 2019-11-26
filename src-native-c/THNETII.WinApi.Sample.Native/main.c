@@ -1,15 +1,11 @@
 #include <Windows.h>
-
-#define SECURITY_WIN32 1
-#include <security.h>
-#include <AuthZ.h>
-#include <credssp.h>
+#include <wincrypt.h>
 
 int main(int argc, char* argv[])
 {
-    CREDSSP_CRED instance;
+    ALG_ID instance;
     const int size = sizeof(instance);
-    const int value = SECPKG_CRED_INBOUND;
+    const int value = ALG_CLASS_ALL;
 
     const void* ptr = GetVersionEx;
 

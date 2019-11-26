@@ -25,8 +25,8 @@ namespace THNETII.WinApi.Native.Sspi
     [StructLayout(LayoutKind.Sequential)]
     public unsafe struct SecBuffer
     {
-        private static Bitfield32 secbufferattrmask = Bitfield32.FromMask(SECBUFFER_ATTRMASK);
-        private static Bitfield32 secbuffertypemask = Bitfield32.FromMask(secbufferattrmask.InverseMask);
+        private static readonly Bitfield32 secbufferattrmask = Bitfield32.FromMask(SECBUFFER_ATTRMASK);
+        private static readonly Bitfield32 secbuffertypemask = Bitfield32.FromMask(secbufferattrmask.InverseMask);
 
         /// <summary>
         /// Specifies the size, in bytes, of the buffer pointed to by the <see cref="Buffer"/> member.

@@ -1,14 +1,15 @@
 #include <Windows.h>
-#include <schannel.h>
-#include <credssp.h>
+
+#define SECURITY_WIN32 1
+#include <sspi.h>
 
 int main(int argc, char* argv[])
 {
     ALG_ID instance;
     const int size = sizeof(instance);
-    const int value = SECPKG_ATTR_EAP_KEY_BLOCK;
+    const int value = NULL;
 
-    const void* ptr = GetVersionEx;
+    const void* ptr = QueryContextAttributesW;
 
     return EXIT_SUCCESS;
 }

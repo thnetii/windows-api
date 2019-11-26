@@ -1077,5 +1077,228 @@ namespace THNETII.WinApi.Native.Sspi
             in SecBufferDesc pInput               // Input token to apply
             );
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 1747
+        #region QueryContextAttributesW function
+        /// <inheritdoc cref="QueryContextAttributesW(in CtxtHandle, SECPKG_ATTR_TYPE, Span{byte})"/>
+        [DllImport(Secur32, CallingConvention = CallingConvention.Winapi)]
+        private static unsafe extern int QueryContextAttributesW(
+            in CtxtHandle phContext,              // Context to query
+            [In, MarshalAs(UnmanagedType.U4)]
+            SECPKG_ATTR_TYPE ulAttribute,         // Attribute to query
+            byte* pBuffer                         // Buffer for attributes
+            );
+
+        /// <inheritdoc cref="QueryContextAttributes(in CtxtHandle, SECPKG_ATTR_TYPE, Span{byte})"/>
+        public static unsafe int QueryContextAttributesW(
+            in CtxtHandle phContext,              // Context to query
+            SECPKG_ATTR_TYPE ulAttribute,         // Attribute to query
+            Span<byte> pBuffer                    // Buffer for attributes
+            )
+        {
+            fixed (byte* pBufferPtr = pBuffer)
+                return QueryContextAttributesW(
+                    phContext,
+                    ulAttribute,
+                    pBufferPtr
+                    );
+        }
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 1761
+        #region QueryContextAttributesExW function
+        /// <inheritdoc cref="QueryContextAttributesExW(in CtxtHandle, SECPKG_ATTR_TYPE, Span{byte})"/>
+        [DllImport(Secur32, CallingConvention = CallingConvention.Winapi)]
+        private static unsafe extern int QueryContextAttributesExW(
+            in CtxtHandle phContext,              // Context to query
+            [In, MarshalAs(UnmanagedType.U4)]
+            SECPKG_ATTR_TYPE ulAttribute,         // Attribute to query
+            byte* pBuffer,                        // Buffer for attributes
+            [In] int cbBuffer                     // Length of buffer
+            );
+
+        /// <inheritdoc cref="QueryContextAttributesEx(in CtxtHandle, SECPKG_ATTR_TYPE, Span{byte})"/>
+        public static unsafe int QueryContextAttributesExW(
+            in CtxtHandle phContext,              // Context to query
+            SECPKG_ATTR_TYPE ulAttribute,         // Attribute to query
+            Span<byte> pBuffer                    // Buffer for attributes
+            )
+        {
+            fixed (byte* pBufferPtr = pBuffer)
+                return QueryContextAttributesExW(
+                    phContext,
+                    ulAttribute,
+                    pBufferPtr,
+                    pBuffer.Length
+                    );
+        }
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 1778
+        #region QueryContextAttributesA function
+        /// <inheritdoc cref="QueryContextAttributesA(in CtxtHandle, SECPKG_ATTR_TYPE, Span{byte})"/>
+        [DllImport(Secur32, CallingConvention = CallingConvention.Winapi)]
+        private static unsafe extern int QueryContextAttributesA(
+            in CtxtHandle phContext,              // Context to query
+            [In, MarshalAs(UnmanagedType.U4)]
+            SECPKG_ATTR_TYPE ulAttribute,         // Attribute to query
+            byte* pBuffer                         // Buffer for attributes
+            );
+
+        /// <inheritdoc cref="QueryContextAttributes(in CtxtHandle, SECPKG_ATTR_TYPE, Span{byte})"/>
+        public static unsafe int QueryContextAttributesA(
+            in CtxtHandle phContext,              // Context to query
+            SECPKG_ATTR_TYPE ulAttribute,         // Attribute to query
+            Span<byte> pBuffer                    // Buffer for attributes
+            )
+        {
+            fixed (byte* pBufferPtr = pBuffer)
+                return QueryContextAttributesA(
+                    phContext,
+                    ulAttribute,
+                    pBufferPtr
+                    );
+        }
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 1791
+        #region QueryContextAttributesExA function
+        /// <inheritdoc cref="QueryContextAttributesExA(in CtxtHandle, SECPKG_ATTR_TYPE, Span{byte})"/>
+        [DllImport(Secur32, CallingConvention = CallingConvention.Winapi)]
+        private static unsafe extern int QueryContextAttributesExA(
+            in CtxtHandle phContext,              // Context to query
+            [In, MarshalAs(UnmanagedType.U4)]
+            SECPKG_ATTR_TYPE ulAttribute,         // Attribute to query
+            byte* pBuffer,                        // Buffer for attributes
+            [In] int cbBuffer                     // Length of buffer
+            );
+
+        /// <inheritdoc cref="QueryContextAttributesEx(in CtxtHandle, SECPKG_ATTR_TYPE, Span{byte})"/>
+        public static unsafe int QueryContextAttributesExA(
+            in CtxtHandle phContext,              // Context to query
+            SECPKG_ATTR_TYPE ulAttribute,         // Attribute to query
+            Span<byte> pBuffer                    // Buffer for attributes
+            )
+        {
+            fixed (byte* pBufferPtr = pBuffer)
+                return QueryContextAttributesExA(
+                    phContext,
+                    ulAttribute,
+                    pBufferPtr,
+                    pBuffer.Length
+                    );
+        }
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 1807
+        #region QueryContextAttributes function
+        /// <inheritdoc cref="QueryContextAttributes(in CtxtHandle, SECPKG_ATTR_TYPE, Span{byte})"/>
+        [DllImport(Secur32, CallingConvention = CallingConvention.Winapi)]
+        private static unsafe extern int QueryContextAttributes(
+            in CtxtHandle phContext,              // Context to query
+            [In, MarshalAs(UnmanagedType.U4)]
+            SECPKG_ATTR_TYPE ulAttribute,         // Attribute to query
+            byte* pBuffer                         // Buffer for attributes
+            );
+
+        /// <summary>
+        /// Enables a transport application to query a <a href="https://docs.microsoft.com/en-us/windows/win32/secgloss/s-gly">security package</a> for certain <a href="https://docs.microsoft.com/en-us/windows/win32/secgloss/a-gly#-security-attribute-gly">attributes</a> of a <a href="https://docs.microsoft.com/en-us/windows/win32/secgloss/s-gly">security context</a>.
+        /// </summary>
+        /// <param name="phContext">A handle to the <a href="https://docs.microsoft.com/en-us/windows/win32/secgloss/s-gly">security context</a> to be queried.</param>
+        /// <param name="ulAttribute">Specifies the attribute of the context to be returned.</param>
+        /// <param name="pBuffer">A buffer that receives the attributes. The type of structure written to the buffer depends on the value specified in the <paramref name="ulAttribute"/> parameter.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="SEC_E_OK"/>.</para>
+        /// <para>If the function fails, the return value is a nonzero error code.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>The structure pointed to by the <paramref name="pBuffer"/> parameter varies depending on the attribute being queried. The caller must allocate the <paramref name="pBuffer"/> structure itself, but the SSP allocates any memory required to hold variable sized members of the <paramref name="pBuffer"/> structure. Memory allocated by the SSP can be freed by calling the <see cref="FreeContextBuffer"/> function.</para>
+        /// <para>After the <see cref="SECPKG_ATTR_REMOTE_CERT_CONTEXT"/> or <see cref="SECPKG_ATTR_LOCAL_CERT_CONTEXT"/> value has been read, the <strong>hCertStore</strong> member will be set to a handle to a certificate store that contains the intermediate certificates, if any. Also, the application is responsible for calling <see cref="CertFreeCertificateContext"/> to release the memory used by the certificate context.</para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows XP [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/secauthn/querycontextattributes--general">QueryContextAttributes (General) function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso href="https://docs.microsoft.com/en-us/windows/win32/secauthn/authentication-functions#sspi-functions">SSPI Functions</seealso>
+        /// <seealso cref="CERT_CONTEXT"/>
+        /// <seealso cref="FreeContextBuffer"/>
+        /// <seealso cref="SecPkgContext_Authority"/>
+        /// <seealso cref="SecPkgContext_ConnectionInfo"/>
+        /// <seealso cref="SecPkgContext_DceInfo"/>
+        /// <seealso cref="SecPkgContext_IssuerListInfoEx"/>
+        /// <seealso cref="SecPkgContext_KeyInfo"/>
+        /// <seealso cref="SecPkgContext_Lifespan"/>
+        /// <seealso cref="SecPkgContext_Names"/>
+        /// <seealso cref="SecPkgContext_Sizes"/>
+        /// <seealso cref="SecPkgContext_StreamSizes"/>
+        public static unsafe int QueryContextAttributes(
+            in CtxtHandle phContext,              // Context to query
+            SECPKG_ATTR_TYPE ulAttribute,         // Attribute to query
+            Span<byte> pBuffer                    // Buffer for attributes
+            )
+        {
+            fixed (byte* pBufferPtr = pBuffer)
+                return QueryContextAttributes(
+                    phContext,
+                    ulAttribute,
+                    pBufferPtr
+                    );
+        }
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 1809
+        #region QueryContextAttributesEx function
+        /// <inheritdoc cref="QueryContextAttributesEx(in CtxtHandle, SECPKG_ATTR_TYPE, Span{byte})"/>
+        [DllImport(Secur32, CallingConvention = CallingConvention.Winapi)]
+        private static unsafe extern int QueryContextAttributesEx(
+            in CtxtHandle phContext,              // Context to query
+            [In, MarshalAs(UnmanagedType.U4)]
+            SECPKG_ATTR_TYPE ulAttribute,         // Attribute to query
+            byte* pBuffer,                        // Buffer for attributes
+            [In] int cbBuffer                     // Length of buffer
+            );
+
+        /// <summary>
+        /// Enables a transport application to query a <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">security package</a> for certain <a href="https://docs.microsoft.com/windows/desktop/SecGloss/a-gly">attributes</a> of a security <a href="https://docs.microsoft.com/windows/desktop/SecGloss/c-gly">context</a>.
+        /// </summary>
+        /// <param name="phContext">A handle to the security context to be queried.</param>
+        /// <param name="ulAttribute">Specifies the attribute of the context to be returned.</param>
+        /// <param name="pBuffer">A buffer that receives the attributes. The type of structure written to the buffer depends on the value specified in the <paramref name="ulAttribute"/> parameter.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="SEC_E_OK"/>.</para>
+        /// <para>If the function fails, the return value is a nonzero error code.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/sspi/nf-sspi-querycontextattributesexw">QueryContextAttributesExW function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="CERT_CONTEXT"/>
+        /// <seealso cref="FreeContextBuffer"/>
+        /// <seealso href="https://docs.microsoft.com/en-us/windows/win32/secauthn/authentication-functions#sspi-functions">SSPI Functions</seealso>
+        /// <seealso cref="SecPkgContext_Authority"/>
+        /// <seealso cref="SecPkgContext_ConnectionInfo"/>
+        /// <seealso cref="SecPkgContext_DceInfo"/>
+        /// <seealso cref="SecPkgContext_IssuerListInfoEx"/>
+        /// <seealso cref="SecPkgContext_KeyInfo"/>
+        /// <seealso cref="SecPkgContext_Lifespan"/>
+        /// <seealso cref="SecPkgContext_Names"/>
+        /// <seealso cref="SecPkgContext_Sizes"/>
+        /// <seealso cref="SecPkgContext_StreamSizes"/>
+        public static unsafe int QueryContextAttributesEx(
+            in CtxtHandle phContext,              // Context to query
+            SECPKG_ATTR_TYPE ulAttribute,         // Attribute to query
+            Span<byte> pBuffer                    // Buffer for attributes
+            )
+        {
+            fixed (byte* pBufferPtr = pBuffer)
+                return QueryContextAttributesEx(
+                    phContext,
+                    ulAttribute,
+                    pBufferPtr,
+                    pBuffer.Length
+                    );
+        }
+        #endregion
     }
 }

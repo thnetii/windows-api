@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace THNETII.WinApi.Native.MinSchannel
+﻿namespace THNETII.WinApi.Native.MinSchannel
 {
     public static class MinSchannelConstants
     {

@@ -1,11 +1,11 @@
 #include <Windows.h>
-#include <wincrypt.h>
+#include <schannel.h>
 
 int main(int argc, char* argv[])
 {
     ALG_ID instance;
     const int size = sizeof(instance);
-    const int value = ALG_CLASS_ALL;
+    const int value = SECPKG_ATTR_APP_DATA;
 
     const void* ptr = GetVersionEx;
 

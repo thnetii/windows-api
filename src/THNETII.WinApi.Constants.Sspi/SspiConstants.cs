@@ -338,5 +338,10 @@ namespace THNETII.WinApi.Native.Sspi
         public const int SECPKG_CONTEXT_EXPORT_DELETE_OLD = 0x00000002;     // Old context is deleted during export
         // This is only valid in W2K3SP1 and greater
         public const int SECPKG_CONTEXT_EXPORT_TO_KERNEL = 0x00000004;      // Context is to be transferred to the kernel
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 2039
+        // This only exists win Win2k3 and Greater
+        public const int SECQOP_WRAP_NO_ENCRYPT = unchecked((int)0x80000001);
+        public const int SECQOP_WRAP_OOB_DATA = 0x40000000;
     }
 }

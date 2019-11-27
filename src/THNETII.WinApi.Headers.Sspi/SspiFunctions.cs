@@ -1404,5 +1404,209 @@ namespace THNETII.WinApi.Native.Sspi
                     );
         }
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 1866
+        #region QueryCredentialsAttributesW function
+        /// <inheritdoc cref="QueryCredentialsAttributesW(in CredHandle, SECPKG_ATTR_TYPE, Span{byte})"/>
+        [DllImport(Secur32, CallingConvention = CallingConvention.Winapi)]
+        private static unsafe extern int QueryCredentialsAttributesW(
+            in CredHandle phCredential,           // Credential to query
+            [In, MarshalAs(UnmanagedType.U4)]
+            SECPKG_ATTR_TYPE ulAttribute,         // Attribute to query
+            byte* pBuffer                         // Buffer for attributes
+            );
+
+        /// <inheritdoc cref="QueryCredentialsAttributes(in CredHandle, SECPKG_ATTR_TYPE, Span{byte})"/>
+        public static unsafe int QueryCredentialsAttributesW(
+            in CredHandle phCredential,           // Credential to query
+            SECPKG_ATTR_TYPE ulAttribute,         // Attribute to query
+            Span<byte> pBuffer                    // Buffer for attributes
+            )
+        {
+            fixed (byte* pBufferPtr = pBuffer)
+                return QueryCredentialsAttributesW(
+                    phCredential,
+                    ulAttribute,
+                    pBufferPtr
+                    );
+        }
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 1880
+        #region QueryCredentialsAttributesExW function
+        /// <inheritdoc cref="QueryCredentialsAttributesExW(in CredHandle, SECPKG_ATTR_TYPE, Span{byte})"/>
+        [DllImport(Secur32, CallingConvention = CallingConvention.Winapi)]
+        private static unsafe extern int QueryCredentialsAttributesExW(
+            in CredHandle phCredential,           // Credential to query
+            [In, MarshalAs(UnmanagedType.U4)]
+            SECPKG_ATTR_TYPE ulAttribute,         // Attribute to query
+            byte* pBuffer,                        // Buffer for attributes
+            [In] int cbBuffer                     // Length of buffer
+            );
+
+        /// <inheritdoc cref="QueryCredentialsAttributesEx(in CredHandle, SECPKG_ATTR_TYPE, Span{byte})"/>
+        public static unsafe int QueryCredentialsAttributesExW(
+            in CredHandle phCredential,           // Credential to query
+            SECPKG_ATTR_TYPE ulAttribute,         // Attribute to query
+            Span<byte> pBuffer                    // Buffer for attributes
+            )
+        {
+            fixed (byte* pBufferPtr = pBuffer)
+                return QueryCredentialsAttributesExW(
+                    phCredential,
+                    ulAttribute,
+                    pBufferPtr,
+                    pBuffer.Length
+                    );
+        }
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 1897
+        #region QueryCredentialsAttributesA function
+        /// <inheritdoc cref="QueryCredentialsAttributesA(in CredHandle, SECPKG_ATTR_TYPE, Span{byte})"/>
+        [DllImport(Secur32, CallingConvention = CallingConvention.Winapi)]
+        private static unsafe extern int QueryCredentialsAttributesA(
+            in CredHandle phCredential,           // Credential to query
+            [In, MarshalAs(UnmanagedType.U4)]
+            SECPKG_ATTR_TYPE ulAttribute,         // Attribute to query
+            byte* pBuffer                         // Buffer for attributes
+            );
+
+        /// <inheritdoc cref="QueryCredentialsAttributes(in CredHandle, SECPKG_ATTR_TYPE, Span{byte})"/>
+        public static unsafe int QueryCredentialsAttributesA(
+            in CredHandle phCredential,           // Credential to query
+            SECPKG_ATTR_TYPE ulAttribute,         // Attribute to query
+            Span<byte> pBuffer                    // Buffer for attributes
+            )
+        {
+            fixed (byte* pBufferPtr = pBuffer)
+                return QueryCredentialsAttributesA(
+                    phCredential,
+                    ulAttribute,
+                    pBufferPtr
+                    );
+        }
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 1910
+        #region QueryCredentialsAttributesExA function
+        /// <inheritdoc cref="QueryCredentialsAttributesExA(in CredHandle, SECPKG_ATTR_TYPE, Span{byte})"/>
+        [DllImport(Secur32, CallingConvention = CallingConvention.Winapi)]
+        private static unsafe extern int QueryCredentialsAttributesExA(
+            in CredHandle phCredential,           // Credential to query
+            [In, MarshalAs(UnmanagedType.U4)]
+            SECPKG_ATTR_TYPE ulAttribute,         // Attribute to query
+            byte* pBuffer,                        // Buffer for attributes
+            [In] int cbBuffer                     // Length of buffer
+            );
+
+        /// <inheritdoc cref="QueryCredentialsAttributesEx(in CredHandle, SECPKG_ATTR_TYPE, Span{byte})"/>
+        public static unsafe int QueryCredentialsAttributesExA(
+            in CredHandle phCredential,           // Credential to query
+            SECPKG_ATTR_TYPE ulAttribute,         // Attribute to query
+            Span<byte> pBuffer                    // Buffer for attributes
+            )
+        {
+            fixed (byte* pBufferPtr = pBuffer)
+                return QueryCredentialsAttributesExA(
+                    phCredential,
+                    ulAttribute,
+                    pBufferPtr,
+                    pBuffer.Length
+                    );
+        }
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 1927
+        #region QueryCredentialsAttributes function
+        /// <inheritdoc cref="QueryCredentialsAttributesW(in CredHandle, SECPKG_ATTR_TYPE, Span{byte})"/>
+        [DllImport(Secur32, CallingConvention = CallingConvention.Winapi)]
+        private static unsafe extern int QueryCredentialsAttributes(
+            in CredHandle phCredential,           // Credential to query
+            [In, MarshalAs(UnmanagedType.U4)]
+            SECPKG_ATTR_TYPE ulAttribute,         // Attribute to query
+            byte* pBuffer                         // Buffer for attributes
+            );
+
+        /// <summary>
+        /// Retrieves the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/a-gly">attributes</a> of a <a href="https://docs.microsoft.com/windows/desktop/SecGloss/c-gly">credential</a>, such as the name associated with the credential. The information is valid for any <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">security context</a> created with the specified credential.
+        /// </summary>
+        /// <param name="phCredential">A handle of the credentials to be queried.</param>
+        /// <param name="ulAttribute">Specifies the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/a-gly">attribute</a> to query.</param>
+        /// <param name="pBuffer">A buffer that receives the requested attribute. The type of structure returned depends on the value of <paramref name="ulAttribute"/>.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="SEC_E_OK"/>.</para>
+        /// <para>
+        /// If the function fails, the return value may be one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <item><term><see cref="SEC_E_INVALID_HANDLE"/></term><description>The handle passed to the function is not valid.</description></item>
+        /// <item><term><see cref="SEC_E_UNSUPPORTED_FUNCTION"/></term><description>The specified <a href="https://docs.microsoft.com/windows/desktop/SecGloss/a-gly">attribute</a> is not supported by Schannel. This return value will only be returned when the Schannel SSP is being used.</description></item>
+        /// <item><term><see cref="SEC_E_INSUFFICIENT_MEMORY"/></term><description>The memory that is available is not sufficient to complete the request. </description></item>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>The <see cref="QueryCredentialsAttributes"/> function allows an application to determine several characteristics of a credential, including the name associated with the specified credentials.</para>
+        /// <para>
+        /// Querying the <see cref="SECPKG_ATTR_CIPHER_STRENGTHS"/> attribute returns a <see cref="SecPkgCred_CipherStrengths"/> structure. The cipher strength in this structure is the same as the cipher strength in the <see cref="SCHANNEL_CRED"/> structure used when a credential was created.
+        /// <note>An application can find the system default cipher strength by querying this attribute with a default credential. A default credential is created by calling <see cref="AcquireCredentialsHandle"/> with a <see langword="null"/> <em>pAuthData</em> parameter.</note>
+        /// </para>
+        /// <para> Querying the <see cref="SECPKG_ATTR_SUPPORTED_ALGS"/> attribute returns a <see cref="SecPkgCred_SupportedAlgs"/> structure. The algorithms in this structure are compatible with those indicated in the <see cref="SCHANNEL_CRED"/> structure used when a credential was created. </para>
+        /// <para>Querying the <see cref="SECPKG_ATTR_SUPPORTED_PROTOCOLS"/> attribute returns a <see cref="SecPkgCred_SupportedProtocols"/> structure that contains a bit array compatible with the <see cref="SCHANNEL_CRED.grbitEnabledProtocols"/> field of the <see cref="SCHANNEL_CRED"/> structure.</para>
+        /// <para>The security package allocates the buffer for any pointer returned in the structure contained within <paramref name="pBuffer"/>. The caller can call the <see cref="FreeContextBuffer"/> function to free any pointers allocated by the security package.</para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/sspi/nf-sspi-querycredentialsattributesw">QueryCredentialsAttributesW function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="AcquireCredentialsHandle"/>
+        /// <seealso cref="FreeContextBuffer"/>
+        /// <seealso cref="SCHANNEL_CRED"/>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/SecAuthN/authentication-functions">SSPI Functions</seealso>
+        /// <seealso cref="SecPkgCred_CipherStrengths"/>
+        /// <seealso cref="SecPkgCred_SupportedAlgs"/>
+        /// <seealso cref="SecPkgCred_SupportedProtocols"/>
+        /// <seealso cref="SecPkgCredentials_Names"/>
+        public static unsafe int QueryCredentialsAttributes(
+            in CredHandle phCredential,           // Credential to query
+            SECPKG_ATTR_TYPE ulAttribute,         // Attribute to query
+            Span<byte> pBuffer                    // Buffer for attributes
+            )
+        {
+            fixed (byte* pBufferPtr = pBuffer)
+                return QueryCredentialsAttributes(
+                    phCredential,
+                    ulAttribute,
+                    pBufferPtr
+                    );
+        }
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 1929
+        #region QueryCredentialsAttributesEx function
+        /// <inheritdoc cref="QueryCredentialsAttributesEx(in CredHandle, SECPKG_ATTR_TYPE, Span{byte})"/>
+        [DllImport(Secur32, CallingConvention = CallingConvention.Winapi)]
+        private static unsafe extern int QueryCredentialsAttributesEx(
+            in CredHandle phCredential,           // Credential to query
+            [In, MarshalAs(UnmanagedType.U4)]
+            SECPKG_ATTR_TYPE ulAttribute,         // Attribute to query
+            byte* pBuffer,                        // Buffer for attributes
+            [In] int cbBuffer                     // Length of buffer
+            );
+
+        /// <param name="phCredential">Credential to query</param>
+        /// <param name="ulAttribute">Attribute to query</param>
+        /// <param name="pBuffer">Buffer for attributes</param>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        public static unsafe int QueryCredentialsAttributesEx(
+            in CredHandle phCredential,           // Credential to query
+            SECPKG_ATTR_TYPE ulAttribute,         // Attribute to query
+            Span<byte> pBuffer                    // Buffer for attributes
+            )
+        {
+            fixed (byte* pBufferPtr = pBuffer)
+                return QueryCredentialsAttributesEx(
+                    phCredential,
+                    ulAttribute,
+                    pBufferPtr,
+                    pBuffer.Length
+                    );
+        }
+        #endregion
     }
 }

@@ -180,8 +180,20 @@ namespace THNETII.WinApi.Native.Sspi
         /// The pBuffer parameter contains a pointer to a <see cref="HCERTCONTEXT"/>. Finds a certificate context that contains a certificate supplied by the Root store.
         /// </summary>
         SECPKG_ATTR_ROOT_STORE = MinSchannelConstants.SECPKG_ATTR_ROOT_STORE,
+        /// <summary>
+        /// Returns the supported algorithms in a pbuffer of type <see cref="SecPkgCred_SupportedAlgs"/>. All supported algorithms are included, regardless of whether they are supported by the provided certificate or enabled on the local computer.
+        /// <para>This attribute is supported only by Schannel.</para>
+        /// </summary>
         SECPKG_ATTR_SUPPORTED_ALGS = MinSchannelConstants.SECPKG_ATTR_SUPPORTED_ALGS,
+        /// <summary>
+        /// Returns the cipher strengths in a pbuffer of type <see cref="SecPkgCred_CipherStrengths"/>.
+        /// <para>This attribute is supported only by Schannel.</para>
+        /// </summary>
         SECPKG_ATTR_CIPHER_STRENGTHS = MinSchannelConstants.SECPKG_ATTR_CIPHER_STRENGTHS,
+        /// <summary>
+        /// Returns the supported algorithms in a pbuffer of type <see cref="SecPkgCred_SupportedProtocols"/>. All supported protocols are included, regardless of whether they are supported by the provided certificate or enabled on the local computer.
+        /// <para>This attribute is supported only by Schannel.</para>
+        /// </summary>
         SECPKG_ATTR_SUPPORTED_PROTOCOLS = MinSchannelConstants.SECPKG_ATTR_SUPPORTED_PROTOCOLS,
         /// <summary>
         /// The pBuffer parameter contains a pointer to a <see cref="SecPkgContext_IssuerListInfoEx"/> structure.
@@ -270,5 +282,24 @@ namespace THNETII.WinApi.Native.Sspi
         /// <para><strong>Windows Server 2008 R2, Windows 7, Windows Server 2008, Windows Vista, Windows Server 2003 and Windows XP:</strong> This value is not supported.</para>
         /// </summary>
         SECPKG_ATTR_CREDS_2 = CredSSPConstants.SECPKG_ATTR_CREDS_2,
+
+        //
+        //  Security Credentials Attributes:
+        //
+
+        /// <summary>
+        /// Returns the name of a credential in a pbuffer of type <see cref="SecPkgCredentials_Names"/>.
+        /// <para>This attribute is not supported by Schannel in WOW64 mode.</para>
+        /// </summary>
+        SECPKG_CRED_ATTR_NAMES = SspiConstants.SECPKG_CRED_ATTR_NAMES,
+        SECPKG_CRED_ATTR_SSI_PROVIDER = SspiConstants.SECPKG_CRED_ATTR_SSI_PROVIDER,
+        SECPKG_CRED_ATTR_KDC_PROXY_SETTINGS = SspiConstants.SECPKG_CRED_ATTR_KDC_PROXY_SETTINGS,
+        /// <summary>
+        ///  Returns the certificate thumbprint in a pbuffer of type <see cref="SecPkgCredentials_Cert"/>.
+        ///  <para>This attribute is only supported by Kerberos.</para>
+        ///  <para><strong>Windows Server 2008 R2, Windows 7, Windows Server 2008, Windows Vista, Windows Server 2003 and Windows XP:</strong> This attribute is not available.</para>
+        /// </summary>
+        SECPKG_CRED_ATTR_CERT = SspiConstants.SECPKG_CRED_ATTR_CERT,
+        SECPKG_CRED_ATTR_PAC_BYPASS = SspiConstants.SECPKG_CRED_ATTR_PAC_BYPASS,
     }
 }

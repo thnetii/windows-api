@@ -21,6 +21,9 @@ namespace THNETII.WinApi.Native.Sspi
     using static SECBUFFER_TYPE;
     using static SECPKG_ATTR_TYPE;
 
+    /// <summary>
+    /// Security Support Provider API
+    /// </summary>
     public static class SspiFunctions
     {
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 139
@@ -434,7 +437,19 @@ namespace THNETII.WinApi.Native.Sspi
             );
 #endif // !NETSTANDARD1_6
         #endregion
-        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 1500
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 1321
+        ////////////////////////////////////////////////////////////////////////
+        ////
+        //// Asynchronous interface. Kernel-only (for now).
+        ////
+        ////////////////////////////////////////////////////////////////////////
+
+            // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 1492
+        ////////////////////////////////////////////////////////////////////////
+        ////
+        //// Password Change Functions
+        ////
+        ////////////////////////////////////////////////////////////////////////
         #region ChangeAccountPasswordW function
         /// <inheritdoc cref="ChangeAccountPassword(LPCTSTR, LPCTSTR, LPCTSTR, LPCTSTR, LPCTSTR, bool, int, ref SecBufferDesc)"/>
         [DllImport(Secur32, CallingConvention = CallingConvention.Winapi)]
@@ -541,6 +556,11 @@ namespace THNETII.WinApi.Native.Sspi
 #endif // !NETSTANDARD1_6
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 1561
+        ////////////////////////////////////////////////////////////////////////
+        ////
+        //// Context Management Functions
+        ////
+        ////////////////////////////////////////////////////////////////////////
         #region InitializeSecurityContextW function
         /// <inheritdoc cref="InitializeSecurityContext(in CredHandle, in CtxtHandle, LPCTSTR, ISC_REQ_FLAGS, int, SECURITY_DREP_TYPE, in SecBufferDesc, int, ref CtxtHandle, ref SecBufferDesc, out ISC_RET_FLAGS, out TimeStamp)"/>
         [DllImport(Secur32, CallingConvention = CallingConvention.Winapi)]
@@ -1721,6 +1741,29 @@ namespace THNETII.WinApi.Native.Sspi
                     pBuffer.Length
                     );
         }
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 1987
+        #region FreeContextBuffer function
+        /// <summary>
+        /// The <see cref="FreeContextBuffer"/> function enables callers of <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">security package</a> functions to free memory buffers allocated by the security package.
+        /// </summary>
+        /// <param name="pvContextBuffer">A pointer to memory to be freed.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the function returns <see cref="SEC_E_OK"/>.</para>
+        /// <para>If the function fails, it returns a nonzero error code.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>Memory buffers are typically allocated by the <see cref="InitializeSecurityContext"/> (General) and <see cref="AcceptSecurityContext"/> (General) functions.</para>
+        /// <para>The <see cref="FreeContextBuffer"/> function can free any memory allocated by a security package.</para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/sspi/nf-sspi-freecontextbuffer">FreeContextBuffer function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/SecAuthN/authentication-functions">SSPI Functions</seealso>
+        [DllImport(Secur32, CallingConvention = CallingConvention.Winapi)]
+        public static extern int FreeContextBuffer(
+            [In] IntPtr pvContextBuffer    // buffer to free
+            );
         #endregion
     }
 }

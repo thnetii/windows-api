@@ -1300,5 +1300,109 @@ namespace THNETII.WinApi.Native.Sspi
                     );
         }
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 1822
+        #region SetContextAttributesW function
+        /// <inheritdoc cref="SetContextAttributesW(in CtxtHandle, SECPKG_ATTR_TYPE, Span{byte})"/>
+        [DllImport(Secur32, CallingConvention = CallingConvention.Winapi)]
+        private static unsafe extern int SetContextAttributesW(
+            in CtxtHandle phContext,                   // Context to Set
+            [In, MarshalAs(UnmanagedType.U4)]
+            SECPKG_ATTR_TYPE ulAttribute,              // Attribute to Set
+            byte* pBuffer,                             // Buffer for attributes
+            int cbBuffer                               // Size (in bytes) of Buffer
+            );
+
+        /// <inheritdoc cref="SetContextAttributes(in CtxtHandle, SECPKG_ATTR_TYPE, Span{byte})"/>
+        public static unsafe int SetContextAttributesW(
+            in CtxtHandle phContext,
+            SECPKG_ATTR_TYPE ulAttribute,
+            Span<byte> pBuffer
+            )
+        {
+            fixed (byte* pBufferPtr = pBuffer)
+                return SetContextAttributesW(
+                    phContext,
+                    ulAttribute,
+                    pBufferPtr,
+                    pBuffer.Length
+                    );
+        }
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 1841
+        #region SetContextAttributesA function
+        /// <inheritdoc cref="SetContextAttributesA(in CtxtHandle, SECPKG_ATTR_TYPE, Span{byte})"/>
+        [DllImport(Secur32, CallingConvention = CallingConvention.Winapi)]
+        private static unsafe extern int SetContextAttributesA(
+            in CtxtHandle phContext,                   // Context to Set
+            [In, MarshalAs(UnmanagedType.U4)]
+            SECPKG_ATTR_TYPE ulAttribute,              // Attribute to Set
+            byte* pBuffer,                             // Buffer for attributes
+            int cbBuffer                               // Size (in bytes) of Buffer
+            );
+
+        /// <inheritdoc cref="SetContextAttributes(in CtxtHandle, SECPKG_ATTR_TYPE, Span{byte})"/>
+        public static unsafe int SetContextAttributesA(
+            in CtxtHandle phContext,
+            SECPKG_ATTR_TYPE ulAttribute,
+            Span<byte> pBuffer
+            )
+        {
+            fixed (byte* pBufferPtr = pBuffer)
+                return SetContextAttributesA(
+                    phContext,
+                    ulAttribute,
+                    pBufferPtr,
+                    pBuffer.Length
+                    );
+        }
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 1857
+        #region SetContextAttributesA function
+        /// <inheritdoc cref="SetContextAttributes(in CtxtHandle, SECPKG_ATTR_TYPE, Span{byte})"/>
+        [DllImport(Secur32, CallingConvention = CallingConvention.Winapi)]
+        private static unsafe extern int SetContextAttributes(
+            in CtxtHandle phContext,                   // Context to Set
+            [In, MarshalAs(UnmanagedType.U4)]
+            SECPKG_ATTR_TYPE ulAttribute,              // Attribute to Set
+            byte* pBuffer,                             // Buffer for attributes
+            int cbBuffer                               // Size (in bytes) of Buffer
+            );
+
+        /// <summary>
+        /// Enables a transport application to set <a href="https://docs.microsoft.com/windows/desktop/SecGloss/a-gly">attributes</a> of a security <a href="https://docs.microsoft.com/windows/desktop/SecGloss/c-gly">context</a> for a <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">security package</a>. This function is supported only by the Schannel security package.
+        /// </summary>
+        /// <param name="phContext">A handle to the security context to be set.</param>
+        /// <param name="ulAttribute">The attribute of the context to be set.</param>
+        /// <param name="pBuffer">A buffer containing a structure that contains values to set the attributes to. The type of structure contained in the buffer depends on the value specified in the <paramref name="ulAttribute"/> parameter.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the function returns <see cref="SEC_E_OK"/>.</para>
+        /// <para>
+        /// If the function fails, it returns a nonzero error code. The following error code is one of the possible error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <item><term><see cref="SEC_E_UNSUPPORTED_FUNCTION"/></term><description>This value is returned by Schannel kernel mode to indicate that this function is not supported. </description></item>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/sspi/nf-sspi-setcontextattributesw">SetContextAttributesW function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        public static unsafe int SetContextAttributes(
+            in CtxtHandle phContext,
+            SECPKG_ATTR_TYPE ulAttribute,
+            Span<byte> pBuffer
+            )
+        {
+            fixed (byte* pBufferPtr = pBuffer)
+                return SetContextAttributes(
+                    phContext,
+                    ulAttribute,
+                    pBufferPtr,
+                    pBuffer.Length
+                    );
+        }
+        #endregion
     }
 }

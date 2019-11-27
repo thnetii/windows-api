@@ -129,6 +129,10 @@ namespace THNETII.WinApi.Native.Sspi
         //
         // win8 or greater
         //
+        /// <summary>
+        /// Sets and retrieves the MTU (maximum transmission unit) value for use with DTLS. If DTLS is not enabled in a security context, this attribute is not supported.
+        /// <para>Valid values are between 200 bytes and 64 kilobytes. The default DTLS MTU value in Schannel is 1096 bytes.</para>
+        /// </summary>
         SECPKG_ATTR_DTLS_MTU = SspiConstants.SECPKG_ATTR_DTLS_MTU,
         SECPKG_ATTR_DATAGRAM_SIZES = SspiConstants.SECPKG_ATTR_DATAGRAM_SIZES,
 
@@ -217,6 +221,11 @@ namespace THNETII.WinApi.Native.Sspi
         SECPKG_ATTR_USE_NCRYPT = MinSchannelConstants.SECPKG_ATTR_USE_NCRYPT,
         SECPKG_ATTR_LOCAL_CERT_INFO = MinSchannelConstants.SECPKG_ATTR_LOCAL_CERT_INFO,
         SECPKG_ATTR_CIPHER_INFO = MinSchannelConstants.SECPKG_ATTR_CIPHER_INFO,
+        /// <summary>
+        ///  The pBuffer parameter contains a pointer to a <see cref="SecPkgContext_EapPrfInfo"/> structure.
+        ///  <para>Sets the pseudo-random function (PRF) used by the Extensible Authentication Protocol (EAP). This is the value that is returned by a call to the <see cref="QueryContextAttributes"/> (Schannel) function when <see cref="SECPKG_ATTR_EAP_KEY_BLOCK"/> is passed as the value of the <em>ulAttribute</em> parameter.</para>
+        ///  <para>This attribute is supported only by the Schannel security package.</para>
+        /// </summary>
         SECPKG_ATTR_EAP_PRF_INFO = MinSchannelConstants.SECPKG_ATTR_EAP_PRF_INFO,
         /// <summary>
         /// The pBuffer parameter contains a pointer to a <see cref="SecPkgContext_SupportedSignatures"/> structure.
@@ -227,7 +236,15 @@ namespace THNETII.WinApi.Native.Sspi
         SECPKG_ATTR_SUPPORTED_SIGNATURES = MinSchannelConstants.SECPKG_ATTR_SUPPORTED_SIGNATURES,
         SECPKG_ATTR_REMOTE_CERT_CHAIN = MinSchannelConstants.SECPKG_ATTR_REMOTE_CERT_CHAIN,
         SECPKG_ATTR_UI_INFO = MinSchannelConstants.SECPKG_ATTR_UI_INFO,
+        /// <summary>
+        /// The pBuffer parameter contains a pointer to a <see cref="SecPkgContext_EarlyStart"/> structure.
+        /// <para>Sets the False Start feature. See the <a href="https://docs.microsoft.com/windows/desktop/winmsg/windows">Building a faster and more secure web</a> blog post for information on this feature.</para>
+        /// </summary>
         SECPKG_ATTR_EARLY_START = MinSchannelConstants.SECPKG_ATTR_EARLY_START,
+        /// <summary>
+        /// The pBuffer parameter contains a pointer to a <see cref="SecPkgContext_KeyingMaterialInfo"/> structure. The keying material export feature follows the <a href="https://tools.ietf.org/html/rfc5705">RFC 5705 standard</a>.
+        /// <para>This attribute is supported only by the Schannel security package in Windows 10 and Windows Server 2016 or later versions.</para>
+        /// </summary>
         SECPKG_ATTR_KEYING_MATERIAL_INFO = MinSchannelConstants.SECPKG_ATTR_KEYING_MATERIAL_INFO,
         SECPKG_ATTR_KEYING_MATERIAL = MinSchannelConstants.SECPKG_ATTR_KEYING_MATERIAL,
         SECPKG_ATTR_SRTP_PARAMETERS = MinSchannelConstants.SECPKG_ATTR_SRTP_PARAMETERS,

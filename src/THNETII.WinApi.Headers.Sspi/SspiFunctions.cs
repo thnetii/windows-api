@@ -15,6 +15,7 @@ namespace THNETII.WinApi.Native.Sspi
 {
     using static NativeLibraryNames;
     using static WinErrorConstants;
+    using static WinNTConstants;
 
     using static ISC_REQ_FLAGS;
     using static ISC_RET_FLAGS;
@@ -1763,6 +1764,86 @@ namespace THNETII.WinApi.Native.Sspi
         [DllImport(Secur32, CallingConvention = CallingConvention.Winapi)]
         public static extern int FreeContextBuffer(
             [In] IntPtr pvContextBuffer    // buffer to free
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 2000
+        ///////////////////////////////////////////////////////////////////
+        ////
+        ////    Message Support API
+        ////
+        //////////////////////////////////////////////////////////////////
+        #region MakeSignature function
+        /// <summary>
+        /// <para>The <see cref="MakeSignature"/> function generates a cryptographic checksum of the message, and also includes sequencing information to prevent message loss or insertion. <see cref="MakeSignature"/> allows the application to choose between several cryptographic algorithms, if supported by the chosen mechanism. The <see cref="MakeSignature"/> function uses the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">security context</a> referenced by the context handle.</para>
+        /// <para>This function is not supported by the Schannel <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">security support provider</a> (SSP).</para>
+        /// </summary>
+        /// <param name="phContext">A handle to the security context to use to sign the message.</param>
+        /// <param name="fQOP">
+        /// <para><a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">Package</a>-specific flags that indicate the quality of protection. A security package can use this parameter to enable the selection of cryptographic algorithms.</para>
+        /// <para>When using the Digest SSP, this parameter must be set to zero.</para>
+        /// </param>
+        /// <param name="pMessage">
+        /// <para>A <see cref="SecBufferDesc"/> structure. On input, the structure references one or more <see cref="SecBuffer"/> structures that contain the message to be signed. The function does not process buffers with the <see cref="SECBUFFER_READONLY_WITH_CHECKSUM"/> attribute.</para>
+        /// <para>The <see cref="SecBufferDesc"/> structure also references a <see cref="SecBuffer"/> structure of type <see cref="SECBUFFER_TOKEN"/> that receives the signature.</para>
+        /// <para>
+        /// When the Digest SSP is used as an HTTP authentication protocol, the buffers should be configured as follows.
+        /// <list type="table">
+        /// <listheader><term>Buffer # / Buffer type</term><description>Meaning</description></listheader>
+        /// <item><term>0<br/><see cref="SECBUFFER_TOKEN"/></term><description> Empty. </description></item>
+        /// <item><term>1<br/><see cref="SECBUFFER_PKG_PARAMS"/></term><description>Method. </description></item>
+        /// <item><term>2<br/><see cref="SECBUFFER_PKG_PARAMS"/></term><description>URL. </description></item>
+        /// <item><term>3<br/><see cref="SECBUFFER_PKG_PARAMS"/></term><description>HEntity. For more information, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/input-buffers-for-the-digest-challenge-response">Input Buffers for the Digest Challenge Response</a>. </description></item>
+        /// <item><term>4<br/><see cref="SECBUFFER_PADDING"/></term><description>Empty. Receives the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/d-gly">signature</a>.</description></item>
+        /// </list>
+        /// </para>
+        /// <para>
+        /// When the Digest SSP is used as an SASL mechanism, the buffers should be configured as follows.
+        /// <list type="table">
+        /// <listheader><term>Buffer # / Buffer type</term><description>Meaning</description></listheader>
+        /// <item><term>0<br/><see cref="SECBUFFER_TOKEN"/></term><description>Empty. Receives the signature. This buffer must be large enough to hold the largest possible signature. Determine the size required by calling the <see cref="QueryContextAttributes"/> (General) function and specifying <see cref="SECPKG_ATTR_SIZES"/>. Check the returned <see cref="SecPkgContext_Sizes"/> structure member <see cref="SecPkgContext_Sizes.cbMaxSignature"/>. </description></item>
+        /// <item><term>1<br/><see cref="SECBUFFER_DATA"/></term><description>Message to be signed. </description></item>
+        /// <item><term>2<br/><see cref="SECBUFFER_PADDING"/></term><description>Empty. </description></item>
+        /// </list>
+        /// </para>
+        /// </param>
+        /// <param name="MessageSeqNo">
+        /// <para>The sequence number that the transport application assigned to the message. If the transport application does not maintain sequence numbers, this parameter is zero.</para>
+        /// <para>When using the Digest SSP, this parameter must be set to zero. The Digest SSP manages sequence numbering internally.</para>
+        /// </param>
+        /// <returns>
+        /// <para>If the function succeeds, the function returns <see cref="SEC_E_OK"/>.</para>
+        /// <para>
+        /// If the function fails, it returns one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <item><term><see cref="SEC_I_RENEGOTIATE"/></term><description>The remote party requires a new handshake sequence or the application has just initiated a shutdown. Return to the negotiation loop and call <see cref="AcceptSecurityContext"/> (General) or <see cref="InitializeSecurityContext"/> (General) again. An empty input buffer is passed in the first call. </description></item>
+        /// <item><term><see cref="SEC_E_INVALID_HANDLE"/></term><description>The context handle specified by <paramref name="phContext"/> is not valid. </description></item>
+        /// <item><term><see cref="SEC_E_INVALID_TOKEN"/></term><description><paramref name="pMessage"/> did not contain a valid <see cref="SECBUFFER_TOKEN"/> buffer or contained too few buffers. </description></item>
+        /// <item><term><see cref="SEC_E_OUT_OF_SEQUENCE"/></term><description> The <a href="https://docs.microsoft.com/windows/desktop/SecGloss/n-gly">nonce</a> count is out of sequence. </description></item>
+        /// <item><term><see cref="SEC_E_NO_AUTHENTICATING_AUTHORITY"/></term><description>The <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">security context</a> (<paramref name="phContext"/>) must be revalidated. </description></item>
+        /// <item><term><see cref="STATUS_INVALID_PARAMETER"/></term><description> The nonce count is not numeric. </description></item>
+        /// <item><term><see cref="SEC_E_QOP_NOT_SUPPORTED"/></term><description> The quality of protection negotiated between the client and server did not include <a href="https://docs.microsoft.com/windows/desktop/SecGloss/i-gly">integrity</a> checking. </description></item>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>The <see cref="MakeSignature"/> function generates a signature that is based on the message and the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">session key</a> for the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/c-gly">context</a>.</para>
+        /// <para>The <see cref="VerifySignature"/> function verifies the messages signed by the <see cref="MakeSignature"/> function.</para>
+        /// <para>If the transport application created the security context to support sequence detection and the caller provides a sequence number, the function includes this information in the signature. This protects against reply, insertion, and suppression of messages. The <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">security package</a> incorporates the sequence number passed down from the transport application.</para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/sspi/nf-sspi-makesignature">MakeSignature function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/SecAuthN/authentication-functions">SSPI Functions</seealso>
+        /// <seealso cref="SecBuffer"/>
+        /// <seealso cref="SecBufferDesc"/>
+        /// <seealso cref="VerifySignature"/>
+        [DllImport(Secur32, CallingConvention = CallingConvention.Winapi)]
+        public static extern int MakeSignature(
+            in CtxtHandle phContext,    // Context to use
+            [In] int fQOP,              // Quality of Protection
+            in SecBufferDesc pMessage,  // Message to sign
+            [In] uint MessageSeqNo      // Message Sequence Num.
             );
         #endregion
     }

@@ -7,7 +7,7 @@ int main(int argc, char* argv[])
 {
     ALG_ID instance;
     const int size = sizeof(instance);
-    const int value = SECPKG_CRED_ATTR_CERT;
+    const int value = STATUS_INVALID_PARAMETER;
 
     const void* ptr = QueryContextAttributesW;
 

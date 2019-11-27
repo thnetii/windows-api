@@ -1846,5 +1846,48 @@ namespace THNETII.WinApi.Native.Sspi
             [In] uint MessageSeqNo      // Message Sequence Num.
             );
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 2023
+        #region VerifySignature function
+        /// <summary>
+        /// Verifies that a message signed by using the <see cref="MakeSignature"/> function was received in the correct sequence and has not been modified.
+        /// </summary>
+        /// <param name="phContext">A handle to the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">security context</a> to use for the message.</param>
+        /// <param name="pMessage">A <see cref="SecBufferDesc"/> structure that references a set of <see cref="SecBuffer"/> structures that contain the message and signature to verify. The signature is in a <see cref="SecBuffer"/> structure of type <see cref="SECBUFFER_TOKEN"/>.</param>
+        /// <param name="MessageSeqNo">Specifies the sequence number expected by the transport application, if any. If the transport application does not maintain sequence numbers, this parameter is zero.</param>
+        /// <param name="pfQOP">
+        /// <para>A variable that receives package-specific flags that indicate the quality of protection.</para>
+        /// <para>Some security packages ignore this parameter.</para>
+        /// </param>
+        /// <returns>
+        /// <para>If the function verifies that the message was received in the correct sequence and has not been modified, the return value is <see cref="SEC_E_OK"/>.</para>
+        /// <para>
+        /// If the function determines that the message is not correct according to the information in the signature, the return value can be one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <item><term><see cref="SEC_E_OUT_OF_SEQUENCE"/></term><description>The message was not received in the correct sequence. </description></item>
+        /// <item><term><see cref="SEC_E_MESSAGE_ALTERED"/></term><description>The message has been altered. </description></item>
+        /// <item><term><see cref="SEC_E_INVALID_HANDLE"/></term><description>The context handle specified by <paramref name="phContext"/> is not valid. </description></item>
+        /// <item><term><see cref="SEC_E_INVALID_TOKEN"/></term><description><paramref name="pMessage"/> did not contain a valid <see cref="SECBUFFER_TOKEN"/> buffer, or contained too few buffers.</description></item>
+        /// <item><term><see cref="SEC_E_QOP_NOT_SUPPORTED"/></term><description> The quality of protection negotiated between the client and server did not include <a href="https://docs.microsoft.com/windows/desktop/SecGloss/i-gly">integrity</a> checking.</description></item>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para><note type="warning">The <see cref="VerifySignature"/> function will fail if the message was signed using the <a href="https://docs.microsoft.com/en-us/uwp/api/windows.security.cryptography.core.asymmetricalgorithmnames.rsasignpsssha512">RsaSignPssSha512</a> algorithm on a different version of Windows. For example, a message that was signed by calling the <see cref="MakeSignature"/> function on Windows 8 will cause the <see cref="VerifySignature"/> function on Windows 8.1 to fail. </note></para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/sspi/nf-sspi-verifysignature">VerifySignature function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="MakeSignature"/>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/SecAuthN/authentication-functions">SSPI Functions</seealso>
+        /// <seealso cref="SecBuffer"/>
+        [DllImport(Secur32, CallingConvention = CallingConvention.Winapi)]
+        public static extern int VerifySignature(
+            in CtxtHandle phContext,        // Context to use
+            in SecBufferDesc pMessage,      // Message to verify
+            [In] uint MessageSeqNo,         // Sequence Num.
+            out int pfQOP                   // QOP used
+            );
+        #endregion
     }
 }

@@ -1889,5 +1889,98 @@ namespace THNETII.WinApi.Native.Sspi
             out int pfQOP                   // QOP used
             );
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 2043
+        #region EncryptMessage (General) function
+        /// <summary>
+        /// <para>The <see cref="EncryptMessage"/> (General) function encrypts a message to provide <a href="https://docs.microsoft.com/en-us/windows/win32/secgloss/p-gly">privacy</a>. <see cref="EncryptMessage"/> (General) allows an application to choose among <a href="https://docs.microsoft.com/en-us/windows/win32/secgloss/c-gly">cryptographic algorithms</a> supported by the chosen mechanism. The <see cref="EncryptMessage"/> (General) function uses the <a href="https://docs.microsoft.com/en-us/windows/win32/secgloss/s-gly">security context</a> referenced by the context handle. Some packages do not have messages to be encrypted or decrypted but rather provide an integrity <a href="https://docs.microsoft.com/en-us/windows/win32/secgloss/h-gly">hash</a> that can be checked.</para>
+        /// <para>When using the Digest <a href="https://docs.microsoft.com/en-us/windows/win32/secgloss/s-gly">security support provider</a> (SSP), this function is available as a SASL mechanism only.</para>
+        /// <para>When using the Schannel SSP, this function encrypts messages by using a <a href="https://docs.microsoft.com/en-us/windows/win32/secgloss/s-gly">session key</a> negotiated with the remote party that will receive the message. The encryption algorithm is determined by the cipher suite in use.</para>
+        /// <para><note><see cref="EncryptMessage"/> (General) and <see cref="DecryptMessage"/> (General) can be called at the same time from two different threads in a single <a href="https://docs.microsoft.com/en-us/windows/win32/secgloss/s-gly">security support provider interface</a> (SSPI) context if one thread is encrypting and the other is decrypting. If more than one thread is encrypting, or more than one thread is decrypting, each thread should obtain a unique context.</note></para>
+        /// </summary>
+        /// <param name="phContext">A handle to the <a href="https://docs.microsoft.com/en-us/windows/win32/secgloss/s-gly">security context</a> to be used to encrypt the message.</param>
+        /// <param name="fQOP">
+        /// <para>Package-specific flags that indicate the quality of protection. A <a href="https://docs.microsoft.com/en-us/windows/win32/secgloss/s-gly">security package</a> can use this parameter to enable the selection of <a href="https://docs.microsoft.com/en-us/windows/win32/secgloss/c-gly">cryptographic algorithms</a>.</para>
+        /// <para>When using the Digest SSP, this parameter must be set to zero.</para>
+        /// <para>
+        /// This parameter can be one of the following flags.
+        /// <list type="table">
+        /// <listheader><term>Value</term><description>Meaning</description></listheader>
+        /// <item><term><see cref="SspiConstants.SECQOP_WRAP_NO_ENCRYPT"/></term><description>Produce a header or trailer but do not encrypt the message.<para><note><see cref="KERB_WRAP_NO_ENCRYPT"/> has the same value and the same meaning.</note></para></description></item>
+        /// <item><term><see cref="SspiConstants.SECQOP_WRAP_OOB_DATA"/></term><description>Send an Schannel alert message. In this case, the pMessage parameter must contain a standard two-byte SSL/TLS event code. This value is supported only by the Schannel SSP.</description></item>
+        /// </list>
+        /// </para>
+        /// </param>
+        /// <param name="pMessage">
+        /// <para>A <see cref="SecBufferDesc"/> structure. On input, the structure references one or more <see cref="SecBuffer"/> structures. One of these can be of type <see cref="SECBUFFER_DATA"/>. That buffer contains the message to be encrypted. The message is encrypted in place, overwriting the original contents of the structure.</para>
+        /// <para>The function does not process buffers with the <see cref="SECBUFFER_READONLY"/> attribute.</para>
+        /// <para>The length of the <see cref="SecBuffer"/> structure that contains the message must be no greater than <see cref="SecPkgContext_StreamSizes.cbMaximumMessage"/>, which is obtained from the <see cref="QueryContextAttributes"/> (General) (<see cref="SECPKG_ATTR_STREAM_SIZES"/>) function.</para>
+        /// <para>When using the Digest SSP, there must be a second buffer of type <see cref="SECBUFFER_PADDING"/> or <see cref="SEC_BUFFER_DATA"/> to hold <a href="https://docs.microsoft.com/en-us/windows/win32/secgloss/d-gly#-security-digital-signature-gly">signature</a> information. To get the size of the output buffer, call the <see cref="QueryContextAttributes"/> (General) function and specify <see cref="SECPKG_ATTR_SIZES"/>. The function will return a <see cref="SecPkgContext_Sizes"/> structure. The size of the output buffer is the sum of the values in the <see cref="SecPkgContext_Sizes.cbMaxSignature"/> and <see cref="SecPkgContext_Sizes.cbBlockSize"/> members.</para>
+        /// <para>Applications that do not use SSL must supply a <see cref="SecBuffer"/> of type <see cref="SECBUFFER_PADDING"/>.</para>
+        /// </param>
+        /// <param name="MessageSeqNo">
+        /// <para>The sequence number that the transport application assigned to the message. If the transport application does not maintain sequence numbers, this parameter must be zero.</para>
+        /// <para>When using the Digest SSP, this parameter must be set to zero. The Digest SSP manages sequence numbering internally.</para>
+        /// <para>When using the Schannel SSP, this parameter must be set to zero. The Schannel SSP does not use sequence numbers.</para>
+        /// </param>
+        /// <returns>
+        /// <para>If the function succeeds, the function returns <see cref="SEC_E_OK"/>.</para>
+        /// <para>
+        /// If the function fails, it returns one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <item><term><see cref="SEC_E_BUFFER_TOO_SMALL"/></term><description>The output buffer is too small. For more information, see Remarks.</description></item>
+        /// <item><term><see cref="SEC_E_CONTEXT_EXPIRED"/></term><description>The application is referencing a context that has already been closed. A properly written application should not receive this error.</description></item>
+        /// <item><term><see cref="SEC_E_CRYPTO_SYSTEM_INVALID"/></term><description>The <a href="https://docs.microsoft.com/en-us/windows/win32/secgloss/c-gly">cipher</a> chosen for the <a href="https://docs.microsoft.com/en-us/windows/win32/secgloss/s-gly">security context</a> is not supported.</description></item>
+        /// <item><term><see cref="SEC_E_INSUFFICIENT_MEMORY"/></term><description>There is not enough memory available to complete the requested action.</description></item>
+        /// <item><term><see cref="SEC_E_INVALID_HANDLE"/></term><description>A context handle that is not valid was specified in the <paramref name="phContext"/> parameter.</description></item>
+        /// <item><term><see cref="SEC_E_INVALID_TOKEN"/></term><description>No <see cref="SECBUFFER_DATA"/> type buffer was found.</description></item>
+        /// <item><term><see cref="SEC_E_QOP_NOT_SUPPORTED"/></term><description>Neither confidentiality nor <a href="https://docs.microsoft.com/en-us/windows/win32/secgloss/i-gly">integrity</a> are supported by the <a href="https://docs.microsoft.com/en-us/windows/win32/secgloss/s-gly">security context</a>.</description></item>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>The <see cref="EncryptMessage"/> (General) function encrypts a message based on the message and the <a href="https://docs.microsoft.com/en-us/windows/win32/secgloss/s-gly">session key</a> from a <a href="https://docs.microsoft.com/en-us/windows/win32/secgloss/s-gly">security context</a>.</para>
+        /// <para>If the transport application created the <a href="https://docs.microsoft.com/en-us/windows/win32/secgloss/s-gly">security context</a> to support sequence detection and the caller provides a sequence number, the function includes this information with the encrypted message. Including this information protects against replay, insertion, and suppression of messages. The <a href="https://docs.microsoft.com/en-us/windows/win32/secgloss/s-gly">security package</a> incorporates the sequence number passed down from the transport application.</para>
+        /// <para>When you use the Digest SSP, get the size of the output buffer by calling the <see cref="QueryContextAttributes"/> (General) function and specifying <see cref="SECPKG_ATTR_SIZES"/>. The function will return a <see cref="SecPkgContext_Sizes"/> structure. The size of the output buffer is the sum of the values in the <see cref="SecPkgContext_Sizes.cbMaxSignature"/> and <see cref="SecPkgContext_Sizes.cbBlockSize"/> members.</para>
+        /// <para>
+        /// When used with the Schannel SSP, the <paramref name="pMessage"/> parameter must contain a <see cref="SecBufferDesc"/> structure with the following buffers.
+        /// <note>These buffers must be supplied in the order shown.</note>
+        /// <list type="table">
+        /// <listheader><term>Buffer type</term><description>Description</description></listheader>
+        /// <item><term><see cref="SECBUFFER_STREAM_HEADER"/></term><description>Used internally. No initialization required.</description></item>
+        /// <item><term><see cref="SECBUFFER_DATA"/></term><description>Contains the <a href="https://docs.microsoft.com/en-us/windows/win32/secgloss/s-gly">plaintext</a> message to be encrypted.</description></item>
+        /// <item><term><see cref="SECBUFFER_STREAM_TRAILER"/></term><description>Used internally. No initialization required.</description></item>
+        /// <item><term><see cref="SECBUFFER_EMPTY"/></term><description>Used internally. No initialization required. Size can be zero.</description></item>
+        /// </list>
+        /// </para>
+        /// <para>When you use the Schannel SSP, determine the maximum size of each of the buffers by calling the <see cref="QueryContextAttributes"/> (General) function and specifying the <see cref="SECPKG_ATTR_STREAM_SIZES"/> attribute. This function returns a <see cref="SecPkgContext_StreamSizes"/> structure whose members contain the maximum sizes for the header (<see cref="SecPkgContext_StreamSizes.cbHeader"/> member), message (<see cref="SecPkgContext_StreamSizes.cbMaximumMessage"/> member) and trailer (<see cref="SecPkgContext_StreamSizes.cbTrailer"/> member) buffers.</para>
+        /// <para>For optimal performance, the <paramref name="pMessage"/> structures should be allocated from contiguous memory.</para>
+        /// <para><strong>Windows XP/2000:</strong> This function was also known as <strong>SealMessage</strong>. Applications should now use <see cref="EncryptMessage"/> (General) only.</para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows XP [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/secauthn/encryptmessage--general">EncryptMessage (General) function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso href="https://docs.microsoft.com/en-us/windows/win32/secauthn/authentication-functions#sspi-functions">SSPI Functions</seealso>
+        /// <seealso cref="AcceptSecurityContext"/>
+        /// <seealso cref="DecryptMessage"/>
+        /// <seealso cref="InitializeSecurityContext"/>
+        /// <seealso cref="QueryContextAttributes"/>
+        /// <seealso cref="SecBuffer"/>
+        /// <seealso cref="SecBufferDesc"/>
+        [DllImport(Secur32, CallingConvention = CallingConvention.Winapi)]
+        public static extern int EncryptMessage(
+            in CtxtHandle phContext,
+            [In] int fQOP,
+            in SecBufferDesc pMessage,
+            [In] uint MessageSeqNo
+            );
+        #endregion
     }
 }

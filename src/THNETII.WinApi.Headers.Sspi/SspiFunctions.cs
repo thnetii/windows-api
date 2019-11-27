@@ -1608,5 +1608,119 @@ namespace THNETII.WinApi.Native.Sspi
                     );
         }
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 1942
+        #region SetCredentialsAttributesW function
+        /// <inheritdoc cref="SetCredentialsAttributesW(in CredHandle, SECPKG_ATTR_TYPE, Span{byte})"/>
+        [DllImport(Secur32, CallingConvention = CallingConvention.Winapi)]
+        private static unsafe extern int SetCredentialsAttributesW(
+            in CredHandle phCredential,         // Credential to Set
+            [In, MarshalAs(UnmanagedType.U4)]
+            SECPKG_ATTR_TYPE ulAttribute,       // Attribute to Set
+            byte* pBuffer,                      // Buffer for attributes
+            [In] int cbBuffer                   // Size (in bytes) of Buffer
+            );
+
+        /// <inheritdoc cref="SetCredentialsAttributes(in CredHandle, SECPKG_ATTR_TYPE, Span{byte})"/>
+        public static unsafe int SetCredentialsAttributesW(
+            in CredHandle phCredential,         // Credential to Set
+            SECPKG_ATTR_TYPE ulAttribute,       // Attribute to Set
+            Span<byte> pBuffer                  // Buffer for attributes
+            )
+        {
+            fixed (byte* pBufferPtr = pBuffer)
+                return SetCredentialsAttributesW(
+                    phCredential,
+                    ulAttribute,
+                    pBufferPtr,
+                    pBuffer.Length
+                    );
+        }
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 1962
+        #region SetCredentialsAttributesA function
+        /// <inheritdoc cref="SetCredentialsAttributesA(in CredHandle, SECPKG_ATTR_TYPE, Span{byte})"/>
+        [DllImport(Secur32, CallingConvention = CallingConvention.Winapi)]
+        private static unsafe extern int SetCredentialsAttributesA(
+            in CredHandle phCredential,         // Credential to Set
+            [In, MarshalAs(UnmanagedType.U4)]
+            SECPKG_ATTR_TYPE ulAttribute,       // Attribute to Set
+            byte* pBuffer,                      // Buffer for attributes
+            [In] int cbBuffer                   // Size (in bytes) of Buffer
+            );
+
+        /// <inheritdoc cref="SetCredentialsAttributes(in CredHandle, SECPKG_ATTR_TYPE, Span{byte})"/>
+        public static unsafe int SetCredentialsAttributesA(
+            in CredHandle phCredential,         // Credential to Set
+            SECPKG_ATTR_TYPE ulAttribute,       // Attribute to Set
+            Span<byte> pBuffer                  // Buffer for attributes
+            )
+        {
+            fixed (byte* pBufferPtr = pBuffer)
+                return SetCredentialsAttributesA(
+                    phCredential,
+                    ulAttribute,
+                    pBufferPtr,
+                    pBuffer.Length
+                    );
+        }
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 1978
+        #region SetCredentialsAttributes function
+        /// <inheritdoc cref="SetCredentialsAttributes(in CredHandle, SECPKG_ATTR_TYPE, Span{byte})"/>
+        [DllImport(Secur32, CallingConvention = CallingConvention.Winapi)]
+        private static unsafe extern int SetCredentialsAttributes(
+            in CredHandle phCredential,         // Credential to Set
+            [In, MarshalAs(UnmanagedType.U4)]
+            SECPKG_ATTR_TYPE ulAttribute,       // Attribute to Set
+            byte* pBuffer,                      // Buffer for attributes
+            [In] int cbBuffer                   // Size (in bytes) of Buffer
+            );
+
+        /// <summary>
+        /// Sets the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/a-gly">attributes</a> of a <a href="https://docs.microsoft.com/windows/desktop/SecGloss/c-gly">credential</a>, such as the name associated with the credential. The information is valid for any <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">security context</a> created with the specified credential.
+        /// </summary>
+        /// <param name="phCredential">A handle of the credentials to be set.</param>
+        /// <param name="ulAttribute">Specifies the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/a-gly">attribute</a> to set.</param>
+        /// <param name="pBuffer">A buffer that contains a structure with the new attribute value. The type of structure contained in the buffer depends on the value of <paramref name="ulAttribute"/>.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the return value is <see cref="SEC_E_OK"/>.</para>
+        /// <para>
+        /// If the function fails, the return value may be one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <item><term><see cref="SEC_E_INVALID_HANDLE"/></term><description> The handle passed to the function is not valid. </description></item>
+        /// <item><term><see cref="SEC_E_UNSUPPORTED_FUNCTION"/></term><description>The specified <a href="https://docs.microsoft.com/windows/desktop/SecGloss/a-gly">attribute</a> is not supported by Schannel. This return value will only be returned when the Schannel SSP is being used. </description></item>
+        /// <item><term><see cref="SEC_E_INSUFFICIENT_MEMORY"/></term><description> Not enough memory is available to complete the request. </description></item>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/sspi/nf-sspi-setcredentialsattributesw">SetCredentialsAttributesW function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="AcquireCredentialsHandle"/>
+        /// <seealso cref="FreeContextBuffer"/>
+        /// <seealso cref="SCHANNEL_CRED"/>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/SecAuthN/authentication-functions">SSPI Functions</seealso>
+        /// <seealso cref="SecPkgCred_CipherStrengths"/>
+        /// <seealso cref="SecPkgCred_SupportedAlgs"/>
+        /// <seealso cref="SecPkgCred_SupportedProtocols"/>
+        /// <seealso cref="SecPkgCredentials_Names"/>
+        public static unsafe int SetCredentialsAttributes(
+            in CredHandle phCredential,         // Credential to Set
+            SECPKG_ATTR_TYPE ulAttribute,       // Attribute to Set
+            Span<byte> pBuffer                  // Buffer for attributes
+            )
+        {
+            fixed (byte* pBufferPtr = pBuffer)
+                return SetCredentialsAttributes(
+                    phCredential,
+                    ulAttribute,
+                    pBufferPtr,
+                    pBuffer.Length
+                    );
+        }
+        #endregion
     }
 }

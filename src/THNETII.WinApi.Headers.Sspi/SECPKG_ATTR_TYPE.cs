@@ -293,6 +293,10 @@ namespace THNETII.WinApi.Native.Sspi
         /// </summary>
         SECPKG_CRED_ATTR_NAMES = SspiConstants.SECPKG_CRED_ATTR_NAMES,
         SECPKG_CRED_ATTR_SSI_PROVIDER = SspiConstants.SECPKG_CRED_ATTR_SSI_PROVIDER,
+        /// <summary>
+        /// Sets the Kerberos proxy setting in a pBuffer parameter of type <see cref="SecPkgCredentials_KdcProxySettings"/>.
+        /// <para>This attribute is only supported by Kerberos.</para>
+        /// </summary>
         SECPKG_CRED_ATTR_KDC_PROXY_SETTINGS = SspiConstants.SECPKG_CRED_ATTR_KDC_PROXY_SETTINGS,
         /// <summary>
         ///  Returns the certificate thumbprint in a pbuffer of type <see cref="SecPkgCredentials_Cert"/>.

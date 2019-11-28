@@ -1982,5 +1982,74 @@ namespace THNETII.WinApi.Native.Sspi
             [In] uint MessageSeqNo
             );
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 2054
+        #region DecryptMessage (General) function
+        /// <summary>
+        /// <para>The <see cref="DecryptMessage"/> (General) function decrypts a message. Some packages do not encrypt and decrypt messages but rather perform and check an integrity <a href="https://docs.microsoft.com/en-us/windows/win32/secgloss/h-gly">hash</a>.</para>
+        /// <para>The Digest <a href="https://docs.microsoft.com/en-us/windows/win32/secgloss/s-gly">security support provider</a> (SSP) provides encryption and decryption confidentiality for messages exchanged between client and server as a SASL mechanism only.</para>
+        /// <para>This function is also used with the Schannel SSP to signal a request from a message sender for a renegotiation (redo) of the connection attributes or for a shutdown of the connection.</para>
+        /// <para><note><see cref="EncryptMessage"/> (General) and <see cref="DecryptMessage"/> (General) can be called at the same time from two different threads in a single <a href="https://docs.microsoft.com/en-us/windows/win32/secgloss/s-gly">security support provider interface</a> (SSPI) context if one thread is encrypting and the other is decrypting. If more than one thread is encrypting, or more than one thread is decrypting, each thread should obtain a unique context.</note></para>
+        /// </summary>
+        /// <param name="phContext">A handle to the <a href="https://docs.microsoft.com/en-us/windows/win32/secgloss/s-gly">security context</a> to be used to decrypt the message.</param>
+        /// <param name="pMessage">
+        /// <para>A <see cref="SecBufferDesc"/> structure. On input, the structure references one or more <see cref="SecBuffer"/> structures. One of these may be of type <see cref="SECBUFFER_DATA"/>. That buffer contains the encrypted message. The encrypted message is decrypted in place, overwriting the original contents of its buffer.</para>
+        /// <para>When using the Digest SSP, on input, the structure references one or more <see cref="SecBuffer"/> structures. One of these must be of type <see cref="SECBUFFER_DATA"/> or <see cref="SECBUFFER_STREAM"/>, and it must contain the encrypted message.</para>
+        /// <para>When using the Schannel SSP with contexts that are not connection oriented, on input, the structure must contain four <see cref="SecBuffer"/> structures. Exactly one buffer must be of type <see cref="SECBUFFER_DATA"/> and contain an encrypted message, which is decrypted in place. The remaining buffers are used for output and must be of type <see cref="SECBUFFER_EMPTY"/>. For connection-oriented contexts, a <see cref="SECBUFFER_DATA"/> type buffer must be supplied, as noted for nonconnection-oriented contexts. Additionally, a second <see cref="SECBUFFER_TOKEN"/> type buffer that contains a security token must also be supplied.</para>
+        /// </param>
+        /// <param name="MessageSeqNo">
+        /// <para>The sequence number expected by the transport application, if any. If the transport application does not maintain sequence numbers, this parameter must be set to zero.</para>
+        /// <para>When using the Digest SSP, this parameter must be set to zero. The Digest SSP manages sequence numbering internally.</para>
+        /// <para>When using the Schannel SSP, this parameter must be set to zero. The Schannel SSP does not use sequence numbers.</para>
+        /// </param>
+        /// <param name="pfQOP">
+        /// <para>Receives package-specific flags that indicate the quality of protection.</para>
+        /// <para>When using the Schannel SSP, this parameter is not used and should be ignored.</para>
+        /// </param>
+        /// <returns>
+        /// <para>If the function verifies that the message was received in the correct sequence, the function returns <see cref="SEC_E_OK"/>.</para>
+        /// <para>
+        /// If the function fails to decrypt the message, it returns one of the following error codes.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <item><term><see cref="SEC_E_BUFFER_TOO_SMALL"/></term><description>The message buffer is too small. Used with the Digest SSP.</description></item>
+        /// <item><term><see cref="SEC_E_CRYPTO_SYSTEM_INVALID"/></term><description>The <a href="https://docs.microsoft.com/en-us/windows/win32/secgloss/c-gly">cipher</a> chosen for the <a href="https://docs.microsoft.com/en-us/windows/win32/secgloss/s-gly">security context</a> is not supported. Used with the Digest SSP.</description></item>
+        /// <item><term><see cref="SEC_E_INCOMPLETE_MESSAGE"/></term><description>The data in the input buffer is incomplete. The application needs to read more data from the server and call <see cref="DecryptMessage"/> (General) again.</description></item>
+        /// <item><term><see cref="SEC_E_INVALID_HANDLE"/></term><description>A context handle that is not valid was specified in the <paramref name="phContext"/> parameter. Used with the Digest and Schannel SSPs.</description></item>
+        /// <item><term><see cref="SEC_E_INVALID_TOKEN"/></term><description>The buffers are of the wrong type or no buffer of type <see cref="SECBUFFER_DATA"/> was found. Used with the Schannel SSP.</description></item>
+        /// <item><term><see cref="SEC_E_MESSAGE_ALTERED"/></term><description>The message has been altered. Used with the Digest and Schannel SSPs.</description></item>
+        /// <item><term><see cref="SEC_E_MESSAGE_ALTERED"/></term><description>The message was not received in the correct sequence.</description></item>
+        /// <item><term><see cref="SEC_E_QOP_NOT_SUPPORTED"/></term><description>Neither confidentiality nor <a href="https://docs.microsoft.com/en-us/windows/win32/secgloss/i-gly">integrity</a> are supported by the <a href="https://docs.microsoft.com/en-us/windows/win32/secgloss/s-gly">security context</a>. Used with the Digest SSP.</description></item>
+        /// <item><term><see cref="SEC_I_CONTEXT_EXPIRED"/></term><description>The message sender has finished using the connection and has initiated a shutdown. For information about initiating or recognizing a shutdown, see <a href="https://docs.microsoft.com/en-us/windows/win32/secauthn/shutting-down-an-schannel-connection">Shutting Down an Schannel Connection</a>. Used with the Schannel SSP.</description></item>
+        /// <item><term><see cref="SEC_I_RENEGOTIATE"/></term><description>The remote party requires a new handshake sequence or the application has just initiated a shutdown. Return to the negotiation loop and call <see cref="AcceptSecurityContext"/> (General) or <see cref="InitializeSecurityContext"/> (General), passing empty input buffers.<br/>If the function returns a buffer of type <see cref="SEC_BUFFER_EXTRA"/>, this should be passed to the <see cref="AcceptSecurityContext"/> (General) function as an input buffer.<br/>Used with the Schannel SSP.<br/>Renegotiation is not supported for Schannel kernel mode.The caller should either ignore this return value or shut down the connection. If the value is ignored, either the client or the server might shut down the connection as a result.</description></item>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>When you use the Schannel SSP, the <see cref="DecryptMessage"/> (General) function returns <see cref="SEC_I_CONTEXT_EXPIRED"/> when the message sender has shut down the connection. For information about initiating or recognizing a shutdown, see <a href="https://docs.microsoft.com/en-us/windows/win32/secauthn/shutting-down-an-schannel-connection">Shutting Down an Schannel Connection</a>.</para>
+        /// <para>When you use the Schannel SSP, <see cref="DecryptMessage"/> (General) returns <see cref="SEC_I_RENEGOTIATE"/> when the message sender wants to renegotiate the connection (<a href="https://docs.microsoft.com/en-us/windows/win32/secgloss/s-gly">security context</a>). An application handles a requested renegotiation by calling <see cref="AcceptSecurityContext"/> (General) (server side) or <see cref="InitializeSecurityContext"/> (General) (client side) and passing in empty input buffers. After this initial call returns a value, proceed as though your application were creating a new connection. For more information, see <a href="https://docs.microsoft.com/en-us/windows/win32/secauthn/creating-an-schannel-security-context">Creating an Schannel security context</a>.</para>
+        /// <para>For information about interoperating with GSSAPI, see <a href="https://docs.microsoft.com/en-us/windows/win32/secauthn/sspi-kerberos-interoperability-with-gssapi">SSPI/Kerberos Interoperability with GSSAPI</a>.</para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows XP [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/secauthn/decryptmessage--general">DecryptMessage (General) function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso href="https://docs.microsoft.com/en-us/windows/win32/secauthn/authentication-functions#sspi-functions">SSPI Functions</seealso>
+        /// <seealso cref="EncryptMessage"/>
+        /// <seealso cref="SecBuffer"/>
+        /// <seealso cref="SecBufferDesc"/>
+        [DllImport(Secur32, CallingConvention = CallingConvention.Winapi)]
+        public static extern int DecryptMessage(
+            in CtxtHandle phContext,
+            in SecBufferDesc pMessage,
+            [In] uint MessageSeqNo,
+            [Optional] out int pfQOP
+            );
+        #endregion
     }
 }

@@ -1,13 +1,12 @@
-#include <Windows.h>
-#include <WinBase.h>
+#include <WinSCard.h>
 
 int main(int argc, char* argv[])
 {
-    OSVERSIONINFOW instance;
+    SCARDCONTEXT instance;
     const int size = sizeof(instance);
-    const int value = VER_PLATFORM_WIN32_NT;
+    const int value = SCARD_S_SUCCESS;
 
-    const void* ptr = GetVersionEx;
+    const void* ptr = SCardListReaders;
 
     return EXIT_SUCCESS;
 }

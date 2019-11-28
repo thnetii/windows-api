@@ -9,7 +9,7 @@ int main(int argc, char* argv[])
     const int size = sizeof(instance);
     const int value = STATUS_INVALID_PARAMETER;
 
-    const void* ptr = QueryContextAttributesW;
+    const void* ptr = EnumerateSecurityPackages;
 
     return EXIT_SUCCESS;
 }

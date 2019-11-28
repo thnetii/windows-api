@@ -445,7 +445,7 @@ namespace THNETII.WinApi.Native.Sspi
         ////
         ////////////////////////////////////////////////////////////////////////
 
-            // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 1492
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 1492
         ////////////////////////////////////////////////////////////////////////
         ////
         //// Password Change Functions
@@ -2050,6 +2050,84 @@ namespace THNETII.WinApi.Native.Sspi
             [In] uint MessageSeqNo,
             [Optional] out int pfQOP
             );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 2070
+        ///////////////////////////////////////////////////////////////////////////
+        ////
+        ////    Misc.
+        ////
+        ///////////////////////////////////////////////////////////////////////////
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 2076
+        #region EnumerateSecurityPackagesW function
+        /// <inheritdoc cref="EnumerateSecurityPackagesW(out Span{SecPkgInfoW})"/>
+        [DllImport(Secur32, CallingConvention = CallingConvention.Winapi)]
+        private static unsafe extern int EnumerateSecurityPackagesW(
+            out int pcPackages,             // Receives num. packages
+            out SecPkgInfoW* ppPackageInfo  // Receives array of info
+            );
+
+        /// <summary>
+        /// The <see cref="EnumerateSecurityPackagesW"/> function returns an array of <see cref="SecPkgInfoW"/> structures that provide information about the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">security packages</a> available to the client.
+        /// </summary>
+        /// <param name="ppPackageInfo">
+        /// <para>Receives a span of <see cref="SecPkgInfoW"/> structures. Each structure contains information from the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">security support provider</a> (SSP) that describes the capabilities of the security package available within that SSP.</para>
+        /// <para>When you have finished using the span, free the memory by calling the <see cref="FreeContextBuffer"/> function.</para>
+        /// </param>
+        /// <returns>
+        /// <para>If the function succeeds, the function returns <see cref="SEC_E_OK"/>.</para>
+        /// <para>
+        /// If the function fails, it returns a nonzero error code. Possible values include, but are not limited to, those in the following table.
+        /// <list type="table">
+        /// <listheader><term>Return code / value</term><description>Description</description></listheader>
+        /// <item><term><see cref="SEC_E_INSUFFICIENT_MEMORY"/><br/><c>0x80090300</c></term><description>There was not sufficient memory to allocate one or more of the buffers. </description></item>
+        /// <item><term><see cref="SEC_E_INVALID_HANDLE"/><br/><c>0x80090301</c></term><description>An invalid handle was specified. </description></item>
+        /// <item><term><see cref="SEC_E_SECPKG_NOT_FOUND"/><br/><c>0x80090305</c></term><description>The specified package was not found. </description></item>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// The caller can use the <see cref="SecPkgInfoW.Name"/> member of a <see cref="SecPkgInfoW"/> structure to specify a security package in a call to the <see cref="AcquireCredentialsHandle"/> (General) function.
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/sspi/nf-sspi-enumeratesecuritypackagesw">EnumerateSecurityPackagesW function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="AcquireCredentialsHandle"/>
+        /// <seealso cref="FreeContextBuffer"/>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/SecAuthN/authentication-functions">SSPI Functions</seealso>
+        /// <seealso cref="SecPkgInfoW"/>
+        public static unsafe int EnumerateSecurityPackagesW(
+            out Span<SecPkgInfoW> ppPackageInfo
+            )
+        {
+            int sec_err = EnumerateSecurityPackagesW(
+                out int pcPackages,
+                out SecPkgInfoW* ppPackageInfoPtr
+                );
+            ppPackageInfo = new Span<SecPkgInfoW>(ppPackageInfoPtr, pcPackages);
+            return sec_err;
+        }
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\sspi.h, line 2090
+        #region EnumerateSecurityPackagesA function
+        /// <inheritdoc cref="EnumerateSecurityPackagesA(out Span{SecPkgInfoA})"/>
+        [DllImport(Secur32, CallingConvention = CallingConvention.Winapi)]
+        private static unsafe extern int EnumerateSecurityPackagesA(
+            out int pcPackages,             // Receives num. packages
+            out SecPkgInfoA* ppPackageInfo  // Receives array of info
+            );
+
+        /// <inheritdoc cref="EnumerateSecurityPackagesW(out Span{SecPkgInfoW})"/>
+        public static unsafe int EnumerateSecurityPackagesA(
+            out Span<SecPkgInfoA> ppPackageInfo
+            )
+        {
+            int sec_err = EnumerateSecurityPackagesA(
+                out int pcPackages,
+                out SecPkgInfoA* ppPackageInfoPtr
+                );
+            ppPackageInfo = new Span<SecPkgInfoA>(ppPackageInfoPtr, pcPackages);
+            return sec_err;
+        }
         #endregion
     }
 }

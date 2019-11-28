@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Runtime.InteropServices;
-using THNETII.InteropServices.Memory;
 
 namespace THNETII.WinApi.Native.Sspi
 {
@@ -46,20 +45,14 @@ namespace THNETII.WinApi.Native.Sspi
         /// Specifies the maximum size, in bytes, of the token.
         /// </summary>
         public uint cbMaxToken;           // Size of authentication token (max)
-        #region public Span<char> Name;
-        internal IntPtr NamePtr;
         /// <summary>
-        /// A span of Unicode characters that contain the name of the security package.
+        /// A Unicode string that contains the name of the security package.
         /// </summary>
-        public Span<char> Name => NamePtr.ToZeroTerminatedUnicodeSpan();
-        #endregion
-        #region public Span<char> Comment;
-        internal IntPtr CommentPtr;
+        public LPWSTR Name;
         /// <summary>
-        /// A span of Unicode characters that contain any additional string passed back by the package.
+        /// A Unicode string that contains any additional string passed back by the package.
         /// </summary>
-        public Span<char> Comment => CommentPtr.ToZeroTerminatedUnicodeSpan();
-        #endregion
+        public LPWSTR Comment;
     }
 
     /// <summary>
@@ -96,19 +89,13 @@ namespace THNETII.WinApi.Native.Sspi
         /// Specifies the maximum size, in bytes, of the token.
         /// </summary>
         public uint cbMaxToken;           // Size of authentication token (max)
-        #region public Span<byte> Name;
-        internal IntPtr NamePtr;
         /// <summary>
-        /// A span of ANSI character bytes that contain the name of the security package.
+        /// An ANSI string that contains the name of the security package.
         /// </summary>
-        public Span<byte> Name => NamePtr.ToZeroTerminatedByteSpan();
-        #endregion
-        #region public Span<byte> Comment;
-        internal IntPtr CommentPtr;
+        public LPSTR Name;
         /// <summary>
-        /// A span of ANSI character bytes that contain any additional string passed back by the package.
+        /// An ANSI string that contains any additional string passed back by the package.
         /// </summary>
-        public Span<byte> Comment => CommentPtr.ToZeroTerminatedByteSpan();
-        #endregion
+        public LPSTR Comment;
     }
 }

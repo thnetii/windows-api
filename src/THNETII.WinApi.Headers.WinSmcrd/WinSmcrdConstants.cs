@@ -1,8 +1,10 @@
 ﻿using System;
 
+using THNETII.WinApi.Native.WinIOCtl;
+
 namespace THNETII.WinApi.Native.WinSmcrd
 {
-    using static WinSmcrdFunctions;
+    using static WinIOCtlConstants;
 
     public static class WinSmcrdConstants
     {
@@ -57,6 +59,30 @@ namespace THNETII.WinApi.Native.WinSmcrd
         public const int SCARD_POWER_DOWN = 0;          // Power down the card.
         public const int SCARD_COLD_RESET = 1;          // Cycle power and reset the card.
         public const int SCARD_WARM_RESET = 2;          // Force a reset on the card.
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\winsmcrd.h, line 100
+        //
+        ///////////////////////////////////////////////////////////////////////////////
+        //
+        //  Reader Action IOCTLs
+        //
+
+        public const int IOCTL_SMARTCARD_POWER = (FILE_DEVICE_SMARTCARD << 16) | (FILE_ANY_ACCESS << 14) | (1 << 2) | METHOD_BUFFERED;
+        public const int IOCTL_SMARTCARD_GET_ATTRIBUTE = (FILE_DEVICE_SMARTCARD << 16) | (FILE_ANY_ACCESS << 14) | (2 << 2) | METHOD_BUFFERED;
+        public const int IOCTL_SMARTCARD_SET_ATTRIBUTE = (FILE_DEVICE_SMARTCARD << 16) | (FILE_ANY_ACCESS << 14) | (3 << 2) | METHOD_BUFFERED;
+        public const int IOCTL_SMARTCARD_CONFISCATE = (FILE_DEVICE_SMARTCARD << 16) | (FILE_ANY_ACCESS << 14) | (4 << 2) | METHOD_BUFFERED;
+        public const int IOCTL_SMARTCARD_TRANSMIT = (FILE_DEVICE_SMARTCARD << 16) | (FILE_ANY_ACCESS << 14) | (5 << 2) | METHOD_BUFFERED;
+        public const int IOCTL_SMARTCARD_EJECT = (FILE_DEVICE_SMARTCARD << 16) | (FILE_ANY_ACCESS << 14) | (6 << 2) | METHOD_BUFFERED;
+        public const int IOCTL_SMARTCARD_SWALLOW = (FILE_DEVICE_SMARTCARD << 16) | (FILE_ANY_ACCESS << 14) | (7 << 2) | METHOD_BUFFERED;
+        // public const int IOCTL_SMARTCARD_READ = (FILE_DEVICE_SMARTCARD << 16) | (FILE_ANY_ACCESS << 14) | (8 << 2) | METHOD_BUFFERED;  // obsolete
+        // public const int IOCTL_SMARTCARD_WRITE = (FILE_DEVICE_SMARTCARD << 16) | (FILE_ANY_ACCESS << 14) | (9 << 2) | METHOD_BUFFERED; // obsolete
+        public const int IOCTL_SMARTCARD_IS_PRESENT = (FILE_DEVICE_SMARTCARD << 16) | (FILE_ANY_ACCESS << 14) | (10 << 2) | METHOD_BUFFERED;
+        public const int IOCTL_SMARTCARD_IS_ABSENT = (FILE_DEVICE_SMARTCARD << 16) | (FILE_ANY_ACCESS << 14) | (11 << 2) | METHOD_BUFFERED;
+        public const int IOCTL_SMARTCARD_SET_PROTOCOL = (FILE_DEVICE_SMARTCARD << 16) | (FILE_ANY_ACCESS << 14) | (12 << 2) | METHOD_BUFFERED;
+        public const int IOCTL_SMARTCARD_GET_STATE = (FILE_DEVICE_SMARTCARD << 16) | (FILE_ANY_ACCESS << 14) | (14 << 2) | METHOD_BUFFERED;
+        public const int IOCTL_SMARTCARD_GET_LAST_ERROR = (FILE_DEVICE_SMARTCARD << 16) | (FILE_ANY_ACCESS << 14) | (15 << 2) | METHOD_BUFFERED;
+        public const int IOCTL_SMARTCARD_GET_PERF_CNTR = (FILE_DEVICE_SMARTCARD << 16) | (FILE_ANY_ACCESS << 14) | (16 << 2) | METHOD_BUFFERED;
+        public const int IOCTL_SMARTCARD_GET_FEATURE_REQUEST = (FILE_DEVICE_SMARTCARD << 16) | (FILE_ANY_ACCESS << 14) | (3400 << 2) | METHOD_BUFFERED;
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\winsmcrd.h, line 129
         //

@@ -3,7 +3,7 @@
 
 int main(int argc, char* argv[])
 {
-    OSVERSIONINFOW instance;
+    SCARDCONTEXT instance;
     const int size = sizeof(instance);
     const int value = VER_PLATFORM_WIN32_NT;
 

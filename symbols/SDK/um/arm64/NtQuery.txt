@@ -1,0 +1,65 @@
+Microsoft (R) COFF/PE Dumper Version 14.23.28107.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\arm64\NtQuery.Lib
+
+File Type: LIBRARY
+
+     Exports
+
+       ordinal    name
+
+                  ?BeginCacheTransaction@@YAJPEA_KPEBG11@Z (long __cdecl BeginCacheTransaction(unsigned __int64 *,unsigned short const *,unsigned short const *,unsigned short const *))
+                  ?CIBuildQueryNode@@YAJPEBGGPEBUtagPROPVARIANT@@PEAPEAUtagDBCOMMANDTREE@@KPEBUtagCIPROPERTYDEF@@K@Z (long __cdecl CIBuildQueryNode(unsigned short const *,unsigned short,struct tagPROPVARIANT const *,struct tagDBCOMMANDTREE * *,unsigned long,struct tagCIPROPERTYDEF const *,unsigned long))
+                  ?CIBuildQueryTree@@YAJPEBUtagDBCOMMANDTREE@@GKPEBQEBU1@PEAPEAU1@@Z (long __cdecl CIBuildQueryTree(struct tagDBCOMMANDTREE const *,unsigned short,unsigned long,struct tagDBCOMMANDTREE const * const *,struct tagDBCOMMANDTREE * *))
+                  ?CICreateCommand@@YAJPEAPEAUIUnknown@@PEAU1@AEBU_GUID@@PEBG3@Z (long __cdecl CICreateCommand(struct IUnknown * *,struct IUnknown *,struct _GUID const &,unsigned short const *,unsigned short const *))
+                  ?CIGetGlobalPropertyList@@YAJPEAPEAX@Z (long __cdecl CIGetGlobalPropertyList(void * *))
+                  ?CIMakeICommand@@YAJPEAPEAUICommand@@KPEBKPEBQEBG22@Z (long __cdecl CIMakeICommand(struct ICommand * *,unsigned long,unsigned long const *,unsigned short const * const *,unsigned short const * const *,unsigned short const * const *))
+                  ?CIRestrictionToFullTree@@YAJPEBUtagDBCOMMANDTREE@@PEBG11PEAPEAU1@KPEAUtagCIPROPERTYDEF@@K@Z (long __cdecl CIRestrictionToFullTree(struct tagDBCOMMANDTREE const *,unsigned short const *,unsigned short const *,unsigned short const *,struct tagDBCOMMANDTREE * *,unsigned long,struct tagCIPROPERTYDEF *,unsigned long))
+                  ?CIState@@YAJPEBG0PEAX@Z (long __cdecl CIState(unsigned short const *,unsigned short const *,void *))
+                  ?CITextToFullTree@@YAJPEBG000PEAPEAUtagDBCOMMANDTREE@@KPEAUtagCIPROPERTYDEF@@K@Z (long __cdecl CITextToFullTree(unsigned short const *,unsigned short const *,unsigned short const *,unsigned short const *,struct tagDBCOMMANDTREE * *,unsigned long,struct tagCIPROPERTYDEF *,unsigned long))
+                  ?CITextToFullTreeEx@@YAJPEBGK000PEAPEAUtagDBCOMMANDTREE@@KPEAUtagCIPROPERTYDEF@@K@Z (long __cdecl CITextToFullTreeEx(unsigned short const *,unsigned long,unsigned short const *,unsigned short const *,unsigned short const *,struct tagDBCOMMANDTREE * *,unsigned long,struct tagCIPROPERTYDEF *,unsigned long))
+                  ?CITextToSelectTree@@YAJPEBGPEAPEAUtagDBCOMMANDTREE@@KPEAUtagCIPROPERTYDEF@@K@Z (long __cdecl CITextToSelectTree(unsigned short const *,struct tagDBCOMMANDTREE * *,unsigned long,struct tagCIPROPERTYDEF *,unsigned long))
+                  ?CITextToSelectTreeEx@@YAJPEBGKPEAPEAUtagDBCOMMANDTREE@@KPEAUtagCIPROPERTYDEF@@K@Z (long __cdecl CITextToSelectTreeEx(unsigned short const *,unsigned long,struct tagDBCOMMANDTREE * *,unsigned long,struct tagCIPROPERTYDEF *,unsigned long))
+                  ?CiCreateSecurityDescriptor@@YAXQEBXKPEAU_SID@@1AEAH@Z (void __cdecl CiCreateSecurityDescriptor(void const * const,unsigned long,struct _SID *,struct _SID *,int &))
+                  ?CiSvcMain@@YAXKPEAPEAG@Z (void __cdecl CiSvcMain(unsigned long,unsigned short * *))
+                  ?CollectCIISAPIPerformanceData@@YAKPEAGPEAPEAXPEAK2@Z (unsigned long __cdecl CollectCIISAPIPerformanceData(unsigned short *,void * *,unsigned long *,unsigned long *))
+                  ?CollectCIPerformanceData@@YAKPEAGPEAPEAXPEAK2@Z (unsigned long __cdecl CollectCIPerformanceData(unsigned short *,void * *,unsigned long *,unsigned long *))
+                  ?CollectFILTERPerformanceData@@YAKPEAGPEAPEAXPEAK2@Z (unsigned long __cdecl CollectFILTERPerformanceData(unsigned short *,void * *,unsigned long *,unsigned long *))
+                  ?DoneCIISAPIPerformanceData@@YAKXZ (unsigned long __cdecl DoneCIISAPIPerformanceData(void))
+                  ?DoneCIPerformanceData@@YAKXZ (unsigned long __cdecl DoneCIPerformanceData(void))
+                  ?DoneFILTERPerformanceData@@YAKXZ (unsigned long __cdecl DoneFILTERPerformanceData(void))
+                  ?EndCacheTransaction@@YAJ_KHPEBG11@Z (long __cdecl EndCacheTransaction(unsigned __int64,int,unsigned short const *,unsigned short const *,unsigned short const *))
+                  ?FsCiShutdown@@YAJXZ (long __cdecl FsCiShutdown(void))
+                  ?InitializeCIISAPIPerformanceData@@YAKPEAG@Z (unsigned long __cdecl InitializeCIISAPIPerformanceData(unsigned short *))
+                  ?InitializeCIPerformanceData@@YAKPEAG@Z (unsigned long __cdecl InitializeCIPerformanceData(unsigned short *))
+                  ?InitializeFILTERPerformanceData@@YAKPEAG@Z (unsigned long __cdecl InitializeFILTERPerformanceData(unsigned short *))
+                  ?LoadBinaryFilter@@YAJPEBGPEAPEAUIFilter@@@Z (long __cdecl LoadBinaryFilter(unsigned short const *,struct IFilter * *))
+                  ?LoadTextFilter@@YAJPEBGPEAPEAUIFilter@@@Z (long __cdecl LoadTextFilter(unsigned short const *,struct IFilter * *))
+                  ?SetCatalogState@@YAJPEBG0KPEAK@Z (long __cdecl SetCatalogState(unsigned short const *,unsigned short const *,unsigned long,unsigned long *))
+                  ?SetupCache@@YAJPEBUtagFULLPROPSPEC@@KK_KPEBG22@Z (long __cdecl SetupCache(struct tagFULLPROPSPEC const *,unsigned long,unsigned long,unsigned __int64,unsigned short const *,unsigned short const *,unsigned short const *))
+                  ?SetupCacheEx@@YAJPEBUtagFULLPROPSPEC@@KK_KHKPEBG22@Z (long __cdecl SetupCacheEx(struct tagFULLPROPSPEC const *,unsigned long,unsigned long,unsigned __int64,int,unsigned long,unsigned short const *,unsigned short const *,unsigned short const *))
+                  ?SvcEntry_CiSvc@@YAXKPEAPEAGPEAX1@Z (void __cdecl SvcEntry_CiSvc(unsigned long,unsigned short * *,void *,void *))
+                  BindIFilterFromStorage
+                  BindIFilterFromStream
+                  CIRevertToSelf
+                  CIShutdown
+                  InternalBindIFilterFromDocCLSID
+                  InternalBindIFilterFromFileName
+                  InternalBindIFilterFromStorage
+                  InternalBindIFilterFromStream
+                  LoadIFilter
+                  LoadIFilterEx
+                  LocateCatalogs
+                  LocateCatalogsA
+                  LocateCatalogsW
+
+  Summary
+
+          BD .debug$S
+          14 .idata$2
+          14 .idata$3
+           8 .idata$4
+           8 .idata$5
+           A .idata$6

@@ -1,0 +1,163 @@
+Microsoft (R) COFF/PE Dumper Version 14.23.28107.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\arm\Wer.lib
+
+File Type: LIBRARY
+
+     Exports
+
+       ordinal    name
+
+                  ?WerSysprepCleanup@@YAKXZ (unsigned long __cdecl WerSysprepCleanup(void))
+                  ?WerSysprepGeneralize@@YAKXZ (unsigned long __cdecl WerSysprepGeneralize(void))
+                  ?WerUnattendedSetup@@YAXXZ (void __cdecl WerUnattendedSetup(void))
+                  ?WerpAddAppCompatData@@YAJPAXPBG1@Z (long __cdecl WerpAddAppCompatData(void *,unsigned short const *,unsigned short const *))
+                  ?WerpAddIfRegisteredForAppLocalDump@@YAJPAX0PBG@Z (long __cdecl WerpAddIfRegisteredForAppLocalDump(void *,void *,unsigned short const *))
+                  ?WerpAddMemoryBlock@@YAJPAXK0KK@Z (long __cdecl WerpAddMemoryBlock(void *,unsigned long,void *,unsigned long,unsigned long))
+                  ?WerpAddRegisteredDataToReport@@YAJPAX0@Z (long __cdecl WerpAddRegisteredDataToReport(void *,void *))
+                  ?WerpAddRegisteredDumpsToReport@@YAJPAX0@Z (long __cdecl WerpAddRegisteredDumpsToReport(void *,void *))
+                  ?WerpAddRegisteredMetadataToReport@@YAJPAX0@Z (long __cdecl WerpAddRegisteredMetadataToReport(void *,void *))
+                  ?WerpArchiveReport@@YAJPAXPBGHPAPAXPAH@Z (long __cdecl WerpArchiveReport(void *,unsigned short const *,int,void * *,int *))
+                  ?WerpCancelUpload@@YAJPAX@Z (long __cdecl WerpCancelUpload(void *))
+                  ?WerpCleanWer@@YAJXZ (long __cdecl WerpCleanWer(void))
+                  ?WerpCloseStore@@YAXPAX@Z (void __cdecl WerpCloseStore(void *))
+                  ?WerpCreateMachineStore@@YAJXZ (long __cdecl WerpCreateMachineStore(void))
+                  ?WerpDeleteReport@@YAJPAXPBG@Z (long __cdecl WerpDeleteReport(void *,unsigned short const *))
+                  ?WerpDestroyWerString@@YAXPAPAX@Z (void __cdecl WerpDestroyWerString(void * *))
+                  ?WerpEnumerateStoreNext@@YAJPAXPAPAX@Z (long __cdecl WerpEnumerateStoreNext(void *,void * *))
+                  ?WerpEnumerateStoreStart@@YAJPAX@Z (long __cdecl WerpEnumerateStoreStart(void *))
+                  ?WerpExtractReportFiles@@YAJPAXPBG0@Z (long __cdecl WerpExtractReportFiles(void *,unsigned short const *,void *))
+                  ?WerpFlushImageCache@@YAKPAU_WERP_IMAGE_CACHE@@K@Z (unsigned long __cdecl WerpFlushImageCache(struct _WERP_IMAGE_CACHE *,unsigned long))
+                  ?WerpForceDeferredCollection@@YAKPAXP6AX0KPBGPAD@Z0@Z (unsigned long __cdecl WerpForceDeferredCollection(void *,void (__cdecl*)(void *,unsigned long,unsigned short const *,char *),void *))
+                  ?WerpFreeUnmappedVaRanges@@YAXPAU_WERP_UNMAPPED_VA_RANGES@@@Z (void __cdecl WerpFreeUnmappedVaRanges(struct _WERP_UNMAPPED_VA_RANGES *))
+                  ?WerpGetBucketId@@YAJPAXPAPAX@Z (long __cdecl WerpGetBucketId(void *,void * *))
+                  ?WerpGetDynamicParameter@@YAJPAXKPAPBG1@Z (long __cdecl WerpGetDynamicParameter(void *,unsigned long,unsigned short const * *,unsigned short const * *))
+                  ?WerpGetEventType@@YAJPAXPAPBG@Z (long __cdecl WerpGetEventType(void *,unsigned short const * *))
+                  ?WerpGetExtendedDiagData@@YAJPAXPAPAXPAK@Z (long __cdecl WerpGetExtendedDiagData(void *,void * *,unsigned long *))
+                  ?WerpGetFileByIndex@@YAJPAXKPAW4_WER_FILE_TYPE@@PAKPAPBG33@Z (long __cdecl WerpGetFileByIndex(void *,unsigned long,enum _WER_FILE_TYPE *,unsigned long *,unsigned short const * *,unsigned short const * *,unsigned short const * *))
+                  ?WerpGetFilePathByIndex@@YAJPAXKPAPBG@Z (long __cdecl WerpGetFilePathByIndex(void *,unsigned long,unsigned short const * *))
+                  ?WerpGetLegacyBucketId@@YAJPAXPAPAX@Z (long __cdecl WerpGetLegacyBucketId(void *,void * *))
+                  ?WerpGetLoadedModuleByIndex@@YAJPAXKPAPBG@Z (long __cdecl WerpGetLoadedModuleByIndex(void *,unsigned long,unsigned short const * *))
+                  ?WerpGetNumFiles@@YAJPAXPAK@Z (long __cdecl WerpGetNumFiles(void *,unsigned long *))
+                  ?WerpGetNumLoadedModules@@YAJPAXPAK@Z (long __cdecl WerpGetNumLoadedModules(void *,unsigned long *))
+                  ?WerpGetNumSigParams@@YAJPAXPAK@Z (long __cdecl WerpGetNumSigParams(void *,unsigned long *))
+                  ?WerpGetReportCount@@YAJPAXPAK@Z (long __cdecl WerpGetReportCount(void *,unsigned long *))
+                  ?WerpGetReportFinalConsent@@YAJPAXPAW4_CONSENT_SETTING@@@Z (long __cdecl WerpGetReportFinalConsent(void *,enum _CONSENT_SETTING *))
+                  ?WerpGetReportFlags@@YAJPAXPAK@Z (long __cdecl WerpGetReportFlags(void *,unsigned long *))
+                  ?WerpGetReportId@@YAJPAXPAGK@Z (long __cdecl WerpGetReportId(void *,unsigned short *,unsigned long))
+                  ?WerpGetReportInformation@@YAJPAXPAPBU_WER_REPORT_INFORMATION_V5@@@Z (long __cdecl WerpGetReportInformation(void *,struct _WER_REPORT_INFORMATION_V5 const * *))
+                  ?WerpGetReportSettings@@YAJPAXPAPAVCSettings@@@Z (long __cdecl WerpGetReportSettings(void *,class CSettings * *))
+                  ?WerpGetReportTime@@YAJPAXPAU_FILETIME@@@Z (long __cdecl WerpGetReportTime(void *,struct _FILETIME *))
+                  ?WerpGetReportType@@YAJPAXPAW4_WER_REPORT_TYPE@@@Z (long __cdecl WerpGetReportType(void *,enum _WER_REPORT_TYPE *))
+                  ?WerpGetResponseId@@YAJPAXPAH1@Z (long __cdecl WerpGetResponseId(void *,int *,int *))
+                  ?WerpGetSigParamByIndex@@YAJPAXKPAPBG1@Z (long __cdecl WerpGetSigParamByIndex(void *,unsigned long,unsigned short const * *,unsigned short const * *))
+                  ?WerpGetStorePath@@YAJW4_REPORT_STORE_TYPES@@PAGPAK@Z (long __cdecl WerpGetStorePath(enum _REPORT_STORE_TYPES,unsigned short *,unsigned long *))
+                  ?WerpGetStoreType@@YAJPAXPAW4_REPORT_STORE_TYPES@@@Z (long __cdecl WerpGetStoreType(void *,enum _REPORT_STORE_TYPES *))
+                  ?WerpGetTextFromReport@@YAJPAXPBGPAPBG@Z (long __cdecl WerpGetTextFromReport(void *,unsigned short const *,unsigned short const * *))
+                  ?WerpGetUIParamByIndex@@YAJPAXKPAPBG@Z (long __cdecl WerpGetUIParamByIndex(void *,unsigned long,unsigned short const * *))
+                  ?WerpGetUploadTime@@YAJPAXPAU_FILETIME@@@Z (long __cdecl WerpGetUploadTime(void *,struct _FILETIME *))
+                  ?WerpGetWerStringData@@YAPBGPAX@Z (unsigned short const * __cdecl WerpGetWerStringData(void *))
+                  ?WerpGetWow64Process@@YAJPAXPAK1@Z (long __cdecl WerpGetWow64Process(void *,unsigned long *,unsigned long *))
+                  ?WerpHashApplicationParameters@@YAXPAEPBG1PAGK@Z (void __cdecl WerpHashApplicationParameters(unsigned char *,unsigned short const *,unsigned short const *,unsigned short *,unsigned long))
+                  ?WerpInitializeImageCache@@YAJPAU_WERP_IMAGE_CACHE@@K@Z (long __cdecl WerpInitializeImageCache(struct _WERP_IMAGE_CACHE *,unsigned long))
+                  ?WerpIsOnBattery@@YAHXZ (int __cdecl WerpIsOnBattery(void))
+                  ?WerpIsTransportAvailable@@YAJHPAH@Z (long __cdecl WerpIsTransportAvailable(int,int *))
+                  ?WerpLoadReport@@YAJPAXPBGPAPAXHH@Z (long __cdecl WerpLoadReport(void *,unsigned short const *,void * *,int,int))
+                  ?WerpLoadReportFromBuffer@@YAJPAXKPAPAXH@Z (long __cdecl WerpLoadReportFromBuffer(void *,unsigned long,void * *,int))
+                  ?WerpOpenMachineArchive@@YAJPAPAX@Z (long __cdecl WerpOpenMachineArchive(void * *))
+                  ?WerpOpenMachineQueue@@YAJPAPAX@Z (long __cdecl WerpOpenMachineQueue(void * *))
+                  ?WerpPromptUser@@YAJPAXPAUHWND__@@PAU_WER_USER_PROMPT_INPUT@@PAH@Z (long __cdecl WerpPromptUser(void *,struct HWND__ *,struct _WER_USER_PROMPT_INPUT *,int *))
+                  ?WerpPruneStore@@YAJPAX@Z (long __cdecl WerpPruneStore(void *))
+                  ?WerpQueueHasBypassPowerReports@@YAJPAH@Z (long __cdecl WerpQueueHasBypassPowerReports(int *))
+                  ?WerpReportCancel@@YAJPAX@Z (long __cdecl WerpReportCancel(void *))
+                  ?WerpReportSprintfParameter@@YAJPAXKPAUHINSTANCE__@@IPBGZZ (long __cdecl WerpReportSprintfParameter(void *,unsigned long,struct HINSTANCE__ *,unsigned int,unsigned short const *,...))
+                  ?WerpReserveMachineQueueReportDir@@YAJPAXPAGK@Z (long __cdecl WerpReserveMachineQueueReportDir(void *,unsigned short *,unsigned long))
+                  ?WerpResetTransientImageCacheStatistics@@YAXPAU_WERP_IMAGE_CACHE@@@Z (void __cdecl WerpResetTransientImageCacheStatistics(struct _WERP_IMAGE_CACHE *))
+                  ?WerpRestartApplication@@YAJPAXPBG1PAH2@Z (long __cdecl WerpRestartApplication(void *,unsigned short const *,unsigned short const *,int *,int *))
+                  ?WerpSetDynamicParameter@@YAJPAXKPBG1@Z (long __cdecl WerpSetDynamicParameter(void *,unsigned long,unsigned short const *,unsigned short const *))
+                  ?WerpSetEventName@@YAJPAXPBG@Z (long __cdecl WerpSetEventName(void *,unsigned short const *))
+                  ?WerpSetProcessTimelines@@YAJPAXPBU_WER_PROCESS_TIMELINES@@K@Z (long __cdecl WerpSetProcessTimelines(void *,struct _WER_PROCESS_TIMELINES const *,unsigned long))
+                  ?WerpSetQuickDumpType@@YAJPAXW4_WER_DUMP_TYPE@@@Z (long __cdecl WerpSetQuickDumpType(void *,enum _WER_DUMP_TYPE))
+                  ?WerpSetReportApplicationIdentity@@YAJPAXPAE@Z (long __cdecl WerpSetReportApplicationIdentity(void *,unsigned char *))
+                  ?WerpSetReportFlags@@YAJPAXK@Z (long __cdecl WerpSetReportFlags(void *,unsigned long))
+                  ?WerpSetReportInformation@@YAJPAXPBU_WER_REPORT_INFORMATION_V5@@@Z (long __cdecl WerpSetReportInformation(void *,struct _WER_REPORT_INFORMATION_V5 const *))
+                  ?WerpSetReportIsFatal@@YAJPAXH@Z (long __cdecl WerpSetReportIsFatal(void *,int))
+                  ?WerpSetReportNamespaceParameter@@YAJPAXKPBG1@Z (long __cdecl WerpSetReportNamespaceParameter(void *,unsigned long,unsigned short const *,unsigned short const *))
+                  ?WerpSetReportTime@@YAJPAXPAU_FILETIME@@@Z (long __cdecl WerpSetReportTime(void *,struct _FILETIME *))
+                  ?WerpSetReportUploadContextToken@@YAJPAX0@Z (long __cdecl WerpSetReportUploadContextToken(void *,void *))
+                  ?WerpSetTelemetryAppParams@@YAJPAXPBU_WER_TELEMETRY_APP_PARAMS@@@Z (long __cdecl WerpSetTelemetryAppParams(void *,struct _WER_TELEMETRY_APP_PARAMS const *))
+                  ?WerpSetTelemetryKernelParams@@YAJPAXK@Z (long __cdecl WerpSetTelemetryKernelParams(void *,unsigned long))
+                  ?WerpSetTelemetryServiceParams@@YAJPAXPBG1H@Z (long __cdecl WerpSetTelemetryServiceParams(void *,unsigned short const *,unsigned short const *,int))
+                  ?WerpSetTimedTask@@YAJHH@Z (long __cdecl WerpSetTimedTask(int,int))
+                  ?WerpShowUpsellUI@@YAJPAUHWND__@@PAH@Z (long __cdecl WerpShowUpsellUI(struct HWND__ *,int *))
+                  ?WerpStitchedMinidumpVmPostReadCallback@@YAJPAU_WERP_STITCHED_DUMP_WRITER@@PAK_KPAXKKJ@Z (long __cdecl WerpStitchedMinidumpVmPostReadCallback(struct _WERP_STITCHED_DUMP_WRITER *,unsigned long *,unsigned __int64,void *,unsigned long,unsigned long,long))
+                  ?WerpStitchedMinidumpVmPreReadCallback@@YAJPAU_WERP_STITCHED_DUMP_WRITER@@PAK_KPAXK@Z (long __cdecl WerpStitchedMinidumpVmPreReadCallback(struct _WERP_STITCHED_DUMP_WRITER *,unsigned long *,unsigned __int64,void *,unsigned long))
+                  ?WerpStitchedMinidumpVmQueryCallback@@YAJPAU_WERP_STITCHED_DUMP_WRITER@@PAU_MINIDUMP_MEMORY_INFO@@_K@Z (long __cdecl WerpStitchedMinidumpVmQueryCallback(struct _WERP_STITCHED_DUMP_WRITER *,struct _MINIDUMP_MEMORY_INFO *,unsigned __int64))
+                  ?WerpSubmitReportFromStore@@YAJPAXPBG0PAVIReportUI@@PAPAXKPAW4_WER_SUBMIT_RESULT@@@Z (long __cdecl WerpSubmitReportFromStore(void *,unsigned short const *,void *,class IReportUI *,void * *,unsigned long,enum _WER_SUBMIT_RESULT *))
+                  ?WerpTraceAuxMemDumpStatistics@@YAXP6AXPAXKPBGPAD@Z0PAU_WERP_AUXILIARY_MEMORY_DUMP@@PAT_LARGE_INTEGER@@5@Z (void __cdecl WerpTraceAuxMemDumpStatistics(void (__cdecl*)(void *,unsigned long,unsigned short const *,char *),void *,struct _WERP_AUXILIARY_MEMORY_DUMP *,union _LARGE_INTEGER *,union _LARGE_INTEGER *))
+                  ?WerpTraceDuration@@YAXP6AXPAXKPBGPAD@Z0KPAT_LARGE_INTEGER@@44@Z (void __cdecl WerpTraceDuration(void (__cdecl*)(void *,unsigned long,unsigned short const *,char *),void *,unsigned long,union _LARGE_INTEGER *,union _LARGE_INTEGER *,union _LARGE_INTEGER *))
+                  ?WerpTraceImageCacheStatistics@@YAXP6AXPAXKPBGPAD@Z0PAU_WERP_IMAGE_CACHE@@PAT_LARGE_INTEGER@@@Z (void __cdecl WerpTraceImageCacheStatistics(void (__cdecl*)(void *,unsigned long,unsigned short const *,char *),void *,struct _WERP_IMAGE_CACHE *,union _LARGE_INTEGER *))
+                  ?WerpTraceSnapshotStatistics@@YAXP6AXPAXKPBGPAD@Z00@Z (void __cdecl WerpTraceSnapshotStatistics(void (__cdecl*)(void *,unsigned long,unsigned short const *,char *),void *,void *))
+                  ?WerpTraceStitchedDumpWriterStatistics@@YAXP6AXPAXKPBGPAD@Z0PAU_WERP_STITCHED_DUMP_WRITER@@PAT_LARGE_INTEGER@@@Z (void __cdecl WerpTraceStitchedDumpWriterStatistics(void (__cdecl*)(void *,unsigned long,unsigned short const *,char *),void *,struct _WERP_STITCHED_DUMP_WRITER *,union _LARGE_INTEGER *))
+                  ?WerpTraceUnmappedVaRangesStatistics@@YAXP6AXPAXKPBGPAD@Z0PAU_WERP_UNMAPPED_VA_RANGES@@PAT_LARGE_INTEGER@@5@Z (void __cdecl WerpTraceUnmappedVaRangesStatistics(void (__cdecl*)(void *,unsigned long,unsigned short const *,char *),void *,struct _WERP_UNMAPPED_VA_RANGES *,union _LARGE_INTEGER *,union _LARGE_INTEGER *))
+                  ?WerpUnmapProcessViews@@YAJPAU_WERP_UNMAPPED_VA_RANGES@@PAXK@Z (long __cdecl WerpUnmapProcessViews(struct _WERP_UNMAPPED_VA_RANGES *,void *,unsigned long))
+                  ?WerpValidateReportKey@@YAJPBG@Z (long __cdecl WerpValidateReportKey(unsigned short const *))
+                  ?WerpWalkGatherBlocks@@YAJPAU_WER_GATHER@@PAPAXPAX1@Z (long __cdecl WerpWalkGatherBlocks(struct _WER_GATHER *,void * *,void *,void * *))
+                  CloseThreadWaitChainSession
+                  GetThreadWaitChain
+                  OpenThreadWaitChainSession
+                  RegisterWaitChainCOMCallback
+                  WerAddExcludedApplication
+                  WerFreeString
+                  WerRemoveExcludedApplication
+                  WerReportAddDump
+                  WerReportAddFile
+                  WerReportCloseHandle
+                  WerReportCreate
+                  WerReportSetParameter
+                  WerReportSetUIOption
+                  WerReportSubmit
+                  WerStoreClose
+                  WerStoreGetFirstReportKey
+                  WerStoreGetNextReportKey
+                  WerStoreGetReportCount
+                  WerStoreGetSizeOnDisk
+                  WerStoreOpen
+                  WerStorePurge
+                  WerStoreQueryReportMetadataV1
+                  WerStoreQueryReportMetadataV2
+                  WerStoreUploadReport
+                  WerpAddFile
+                  WerpAddFileBuffer
+                  WerpAddFileCallback
+                  WerpAddTerminationReason
+                  WerpAuxmdDumpProcessImages
+                  WerpAuxmdDumpRegisteredBlocks
+                  WerpAuxmdFree
+                  WerpAuxmdFreeCopyBuffer
+                  WerpAuxmdHashVaRanges
+                  WerpAuxmdInitialize
+                  WerpAuxmdMapFile
+                  WerpCreateIntegratorReportId
+                  WerpFreeString
+                  WerpGetIntegratorReportId
+                  WerpGetReportConsent
+                  WerpGetStoreLocation
+                  WerpIsDisabled
+                  WerpSetAuxiliaryArchivePath
+                  WerpSetCallBack
+                  WerpSetDefaultUserConsent
+                  WerpSetIntegratorReportId
+                  WerpSetIptEnabled
+                  WerpSetReportOption
+
+  Summary
+
+          B7 .debug$S
+          14 .idata$2
+          14 .idata$3
+           4 .idata$4
+           4 .idata$5
+           8 .idata$6

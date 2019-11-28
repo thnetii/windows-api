@@ -1,0 +1,67 @@
+Microsoft (R) COFF/PE Dumper Version 14.23.28107.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\arm\vssapi.lib
+
+File Type: LIBRARY
+
+     Exports
+
+       ordinal    name
+
+                  ??0CVssJetWriter@@QAA@XZ (public: __cdecl CVssJetWriter::CVssJetWriter(void))
+                  ??1CVssJetWriter@@UAA@XZ (public: virtual __cdecl CVssJetWriter::~CVssJetWriter(void))
+                  ?AreComponentsSelected@CVssJetWriter@@IBA_NXZ (protected: bool __cdecl CVssJetWriter::AreComponentsSelected(void)const )
+                  ?GetBackupType@CVssJetWriter@@IBA?AW4_VSS_BACKUP_TYPE@@XZ (protected: enum _VSS_BACKUP_TYPE __cdecl CVssJetWriter::GetBackupType(void)const )
+                  ?GetContext@CVssJetWriter@@IBAJXZ (protected: long __cdecl CVssJetWriter::GetContext(void)const )
+                  ?GetCurrentLevel@CVssJetWriter@@IBA?AW4_VSS_APPLICATION_LEVEL@@XZ (protected: enum _VSS_APPLICATION_LEVEL __cdecl CVssJetWriter::GetCurrentLevel(void)const )
+                  ?GetCurrentSnapshotSetId@CVssJetWriter@@IBA?AU_GUID@@XZ (protected: struct _GUID __cdecl CVssJetWriter::GetCurrentSnapshotSetId(void)const )
+                  ?GetCurrentVolumeArray@CVssJetWriter@@IBAPAPBGXZ (protected: unsigned short const * * __cdecl CVssJetWriter::GetCurrentVolumeArray(void)const )
+                  ?GetCurrentVolumeCount@CVssJetWriter@@IBAIXZ (protected: unsigned int __cdecl CVssJetWriter::GetCurrentVolumeCount(void)const )
+                  ?GetRestoreType@CVssJetWriter@@IBA?AW4_VSS_RESTORE_TYPE@@XZ (protected: enum _VSS_RESTORE_TYPE __cdecl CVssJetWriter::GetRestoreType(void)const )
+                  ?GetSnapshotDeviceName@CVssJetWriter@@IBAJPBGPAPBG@Z (protected: long __cdecl CVssJetWriter::GetSnapshotDeviceName(unsigned short const *,unsigned short const * *)const )
+                  ?Initialize@CVssJetWriter@@QAAJU_GUID@@PBG_N211K@Z (public: long __cdecl CVssJetWriter::Initialize(struct _GUID,unsigned short const *,bool,bool,unsigned short const *,unsigned short const *,unsigned long))
+                  ?IsBootableSystemStateBackedUp@CVssJetWriter@@IBA_NXZ (protected: bool __cdecl CVssJetWriter::IsBootableSystemStateBackedUp(void)const )
+                  ?IsPartialFileSupportEnabled@CVssJetWriter@@IBA_NXZ (protected: bool __cdecl CVssJetWriter::IsPartialFileSupportEnabled(void)const )
+                  ?IsPathAffected@CVssJetWriter@@IBA_NPBG@Z (protected: bool __cdecl CVssJetWriter::IsPathAffected(unsigned short const *)const )
+                  ?OnAbortBegin@CVssJetWriter@@UAAXXZ (public: virtual void __cdecl CVssJetWriter::OnAbortBegin(void))
+                  ?OnAbortEnd@CVssJetWriter@@UAAXXZ (public: virtual void __cdecl CVssJetWriter::OnAbortEnd(void))
+                  ?OnBackupCompleteBegin@CVssJetWriter@@UAA_NPAVIVssWriterComponents@@@Z (public: virtual bool __cdecl CVssJetWriter::OnBackupCompleteBegin(class IVssWriterComponents *))
+                  ?OnBackupCompleteEnd@CVssJetWriter@@UAA_NPAVIVssWriterComponents@@_N@Z (public: virtual bool __cdecl CVssJetWriter::OnBackupCompleteEnd(class IVssWriterComponents *,bool))
+                  ?OnFreezeBegin@CVssJetWriter@@UAA_NXZ (public: virtual bool __cdecl CVssJetWriter::OnFreezeBegin(void))
+                  ?OnFreezeEnd@CVssJetWriter@@UAA_N_N@Z (public: virtual bool __cdecl CVssJetWriter::OnFreezeEnd(bool))
+                  ?OnIdentify@CVssJetWriter@@UAA_NPAVIVssCreateWriterMetadata@@@Z (public: virtual bool __cdecl CVssJetWriter::OnIdentify(class IVssCreateWriterMetadata *))
+                  ?OnPostRestoreBegin@CVssJetWriter@@UAA_NPAVIVssWriterComponents@@@Z (public: virtual bool __cdecl CVssJetWriter::OnPostRestoreBegin(class IVssWriterComponents *))
+                  ?OnPostRestoreEnd@CVssJetWriter@@UAA_NPAVIVssWriterComponents@@_N@Z (public: virtual bool __cdecl CVssJetWriter::OnPostRestoreEnd(class IVssWriterComponents *,bool))
+                  ?OnPostSnapshot@CVssJetWriter@@UAA_NPAVIVssWriterComponents@@@Z (public: virtual bool __cdecl CVssJetWriter::OnPostSnapshot(class IVssWriterComponents *))
+                  ?OnPreRestoreBegin@CVssJetWriter@@UAA_NPAVIVssWriterComponents@@@Z (public: virtual bool __cdecl CVssJetWriter::OnPreRestoreBegin(class IVssWriterComponents *))
+                  ?OnPreRestoreEnd@CVssJetWriter@@UAA_NPAVIVssWriterComponents@@_N@Z (public: virtual bool __cdecl CVssJetWriter::OnPreRestoreEnd(class IVssWriterComponents *,bool))
+                  ?OnPrepareBackupBegin@CVssJetWriter@@UAA_NPAVIVssWriterComponents@@@Z (public: virtual bool __cdecl CVssJetWriter::OnPrepareBackupBegin(class IVssWriterComponents *))
+                  ?OnPrepareBackupEnd@CVssJetWriter@@UAA_NPAVIVssWriterComponents@@_N@Z (public: virtual bool __cdecl CVssJetWriter::OnPrepareBackupEnd(class IVssWriterComponents *,bool))
+                  ?OnPrepareSnapshotBegin@CVssJetWriter@@UAA_NXZ (public: virtual bool __cdecl CVssJetWriter::OnPrepareSnapshotBegin(void))
+                  ?OnPrepareSnapshotEnd@CVssJetWriter@@UAA_N_N@Z (public: virtual bool __cdecl CVssJetWriter::OnPrepareSnapshotEnd(bool))
+                  ?OnThawBegin@CVssJetWriter@@UAA_NXZ (public: virtual bool __cdecl CVssJetWriter::OnThawBegin(void))
+                  ?OnThawEnd@CVssJetWriter@@UAA_N_N@Z (public: virtual bool __cdecl CVssJetWriter::OnThawEnd(bool))
+                  ?SetWriterFailure@CVssJetWriter@@IAAJJ@Z (protected: long __cdecl CVssJetWriter::SetWriterFailure(long))
+                  ?Uninitialize@CVssJetWriter@@QAAXXZ (public: void __cdecl CVssJetWriter::Uninitialize(void))
+                  CreateVssBackupComponentsInternal
+                  CreateVssExamineWriterMetadataInternal
+                  CreateVssExpressWriterInternal
+                  CreateVssSnapshotSetDescription
+                  CreateWriter
+                  CreateWriterEx
+                  GetProviderMgmtInterfaceInternal
+                  IsVolumeSnapshottedInternal
+                  LoadVssSnapshotSetDescription
+                  ShouldBlockRevertInternal
+                  VssFreeSnapshotPropertiesInternal
+
+  Summary
+
+          C0 .debug$S
+          14 .idata$2
+          14 .idata$3
+           4 .idata$4
+           4 .idata$5
+           C .idata$6

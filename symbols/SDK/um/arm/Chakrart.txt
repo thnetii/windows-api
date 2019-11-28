@@ -1,0 +1,173 @@
+Microsoft (R) COFF/PE Dumper Version 14.23.28107.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\arm\Chakrart.lib
+
+File Type: LIBRARY
+
+     Exports
+
+       ordinal    name
+
+                  ?DumpDiagInfo@@YAXPAUHWND__@@PAUHINSTANCE__@@PADH@Z (void __cdecl DumpDiagInfo(struct HWND__ *,struct HINSTANCE__ *,char *,int))
+                  ?JsInitializeJITServer@@YAJPAU_GUID@@PAX1@Z (long __cdecl JsInitializeJITServer(struct _GUID *,void *,void *))
+                  ?MemProtectHeapAddRootSection@@YAXPAXPAUMemProtectHeapRootSection@@@Z (void __cdecl MemProtectHeapAddRootSection(void *,struct MemProtectHeapRootSection *))
+                  ?MemProtectHeapCollect@@YAJPAXW4MemProtectHeapCollectFlags@@@Z (long __cdecl MemProtectHeapCollect(void *,enum MemProtectHeapCollectFlags))
+                  ?MemProtectHeapCreate@@YAJPAPAXW4MemProtectHeapCreateFlags@@@Z (long __cdecl MemProtectHeapCreate(void * *,enum MemProtectHeapCreateFlags))
+                  ?MemProtectHeapDestroy@@YAJPAX@Z (long __cdecl MemProtectHeapDestroy(void *))
+                  ?MemProtectHeapDisableCollection@@YAXPAX@Z (void __cdecl MemProtectHeapDisableCollection(void *))
+                  ?MemProtectHeapIsValidObject@@YA_NPAX0@Z (bool __cdecl MemProtectHeapIsValidObject(void *,void *))
+                  ?MemProtectHeapMemSize@@YAJPAX0PAI@Z (long __cdecl MemProtectHeapMemSize(void *,void *,unsigned int *))
+                  ?MemProtectHeapNotifyCurrentThreadDetach@@YAXPAX@Z (void __cdecl MemProtectHeapNotifyCurrentThreadDetach(void *))
+                  ?MemProtectHeapProtectCurrentThread@@YAJPAXP6AX0@Z0@Z (long __cdecl MemProtectHeapProtectCurrentThread(void *,void (__cdecl*)(void *),void *))
+                  ?MemProtectHeapRemoveRootSection@@YAJPAXPAUMemProtectHeapRootSection@@@Z (long __cdecl MemProtectHeapRemoveRootSection(void *,struct MemProtectHeapRootSection *))
+                  ?MemProtectHeapReportHeapSize@@YAXPAX@Z (void __cdecl MemProtectHeapReportHeapSize(void *))
+                  ?MemProtectHeapRootAlloc@@YAPAXPAXI@Z (void * __cdecl MemProtectHeapRootAlloc(void *,unsigned int))
+                  ?MemProtectHeapRootAllocLeaf@@YAPAXPAXI@Z (void * __cdecl MemProtectHeapRootAllocLeaf(void *,unsigned int))
+                  ?MemProtectHeapRootRealloc@@YAJPAXIPAPAX@Z (long __cdecl MemProtectHeapRootRealloc(void *,unsigned int,void * *))
+                  ?MemProtectHeapRootReallocLeaf@@YAJPAXIPAPAX@Z (long __cdecl MemProtectHeapRootReallocLeaf(void *,unsigned int,void * *))
+                  ?MemProtectHeapSynchronizeWithCollector@@YAJPAX@Z (long __cdecl MemProtectHeapSynchronizeWithCollector(void *))
+                  ?MemProtectHeapUnprotectCurrentThread@@YAJPAX@Z (long __cdecl MemProtectHeapUnprotectCurrentThread(void *))
+                  ?MemProtectHeapUnrootAndZero@@YAJPAX0@Z (long __cdecl MemProtectHeapUnrootAndZero(void *,void *))
+                  ?RecyclerNativeHeapAddExternalMemoryUsage@@YAXPAXI@Z (void __cdecl RecyclerNativeHeapAddExternalMemoryUsage(void *,unsigned int))
+                  ?RecyclerNativeHeapAllocLeaf@@YAPAXPAXI@Z (void * __cdecl RecyclerNativeHeapAllocLeaf(void *,unsigned int))
+                  ?RecyclerNativeHeapAllocLeafFinalized@@YAPAXPAXI@Z (void * __cdecl RecyclerNativeHeapAllocLeafFinalized(void *,unsigned int))
+                  ?RecyclerNativeHeapAllocTraced@@YAPAXPAXI@Z (void * __cdecl RecyclerNativeHeapAllocTraced(void *,unsigned int))
+                  ?RecyclerNativeHeapAllocTracedFinalized@@YAPAXPAXI@Z (void * __cdecl RecyclerNativeHeapAllocTracedFinalized(void *,unsigned int))
+                  ?RecyclerNativeHeapCollectGarbageInThread@@YAXPAX_N@Z (void __cdecl RecyclerNativeHeapCollectGarbageInThread(void *,bool))
+                  ?RecyclerNativeHeapCreateWeakReference@@YAJPAX0PAPAX@Z (long __cdecl RecyclerNativeHeapCreateWeakReference(void *,void *,void * *))
+                  ?RecyclerNativeHeapGetRealAddressFromInterior@@YAPAXPAX0@Z (void * __cdecl RecyclerNativeHeapGetRealAddressFromInterior(void *,void *))
+                  ?RecyclerNativeHeapGetStrongReference@@YAPAXPAX0@Z (void * __cdecl RecyclerNativeHeapGetStrongReference(void *,void *))
+                  ?RecyclerNativeHeapHasWeakReferenceCleanupOccurred@@YA_NPAXPAI@Z (bool __cdecl RecyclerNativeHeapHasWeakReferenceCleanupOccurred(void *,unsigned int *))
+                  ?RecyclerNativeHeapRootAddRef@@YAJPAX0PAI@Z (long __cdecl RecyclerNativeHeapRootAddRef(void *,void *,unsigned int *))
+                  ?RecyclerNativeHeapRootRelease@@YAXPAX0PAI@Z (void __cdecl RecyclerNativeHeapRootRelease(void *,void *,unsigned int *))
+                  JsAddRef
+                  JsBoolToBoolean
+                  JsBooleanToBool
+                  JsCallFunction
+                  JsCollectGarbage
+                  JsConstructObject
+                  JsConvertValueToBoolean
+                  JsConvertValueToNumber
+                  JsConvertValueToObject
+                  JsConvertValueToString
+                  JsCreateArray
+                  JsCreateArrayBuffer
+                  JsCreateContext
+                  JsCreateDataView
+                  JsCreateError
+                  JsCreateExternalArrayBuffer
+                  JsCreateExternalObject
+                  JsCreateFunction
+                  JsCreateNamedFunction
+                  JsCreateObject
+                  JsCreateRangeError
+                  JsCreateReferenceError
+                  JsCreateRuntime
+                  JsCreateSymbol
+                  JsCreateSyntaxError
+                  JsCreateThreadService
+                  JsCreateTypeError
+                  JsCreateTypedArray
+                  JsCreateURIError
+                  JsDefineProperty
+                  JsDeleteIndexedProperty
+                  JsDeleteProperty
+                  JsDisableRuntimeExecution
+                  JsDisposeRuntime
+                  JsDoubleToNumber
+                  JsEnableRuntimeExecution
+                  JsEnumerateHeap
+                  JsEquals
+                  JsGetAndClearException
+                  JsGetArrayBufferStorage
+                  JsGetContextData
+                  JsGetContextOfObject
+                  JsGetCurrentContext
+                  JsGetDataViewStorage
+                  JsGetExtensionAllowed
+                  JsGetExternalData
+                  JsGetFalseValue
+                  JsGetGlobalObject
+                  JsGetIndexedPropertiesExternalData
+                  JsGetIndexedProperty
+                  JsGetNullValue
+                  JsGetOwnPropertyDescriptor
+                  JsGetOwnPropertyNames
+                  JsGetOwnPropertySymbols
+                  JsGetProperty
+                  JsGetPropertyIdFromName
+                  JsGetPropertyIdFromSymbol
+                  JsGetPropertyIdType
+                  JsGetPropertyNameFromId
+                  JsGetPrototype
+                  JsGetRuntime
+                  JsGetRuntimeMemoryLimit
+                  JsGetRuntimeMemoryUsage
+                  JsGetStringLength
+                  JsGetSymbolFromPropertyId
+                  JsGetTrueValue
+                  JsGetTypedArrayInfo
+                  JsGetTypedArrayStorage
+                  JsGetUndefinedValue
+                  JsGetValueType
+                  JsHasException
+                  JsHasExternalData
+                  JsHasIndexedPropertiesExternalData
+                  JsHasIndexedProperty
+                  JsHasProperty
+                  JsIdle
+                  JsInspectableToObject
+                  JsInstanceOf
+                  JsIntToNumber
+                  JsIsEnumeratingHeap
+                  JsIsRuntimeExecutionDisabled
+                  JsNumberToDouble
+                  JsNumberToInt
+                  JsObjectToInspectable
+                  JsParseScript
+                  JsParseScriptWithAttributes
+                  JsParseSerializedScript
+                  JsParseSerializedScriptWithCallback
+                  JsPointerToString
+                  JsPreventExtension
+           400    JsProjectWinRTNamespace
+                  JsRelease
+                  JsRunScript
+                  JsRunSerializedScript
+                  JsRunSerializedScriptWithCallback
+                  JsSerializeScript
+                  JsSetContextData
+                  JsSetCurrentContext
+                  JsSetException
+                  JsSetExternalData
+                  JsSetIndexedPropertiesToExternalData
+                  JsSetIndexedProperty
+                  JsSetObjectBeforeCollectCallback
+           401    JsSetProjectionEnqueueCallback
+                  JsSetPromiseContinuationCallback
+                  JsSetProperty
+                  JsSetPrototype
+                  JsSetRuntimeBeforeCollectCallback
+                  JsSetRuntimeMemoryAllocationCallback
+                  JsSetRuntimeMemoryLimit
+                  JsStartDebugging
+                  JsStartProfiling
+                  JsStopProfiling
+                  JsStrictEquals
+                  JsStringToPointer
+                  JsValueToVariant
+                  JsVarAddRef
+                  JsVarRelease
+                  JsVarToExtension
+                  JsVariantToValue
+
+  Summary
+
+          C0 .debug$S
+          14 .idata$2
+          14 .idata$3
+           4 .idata$4
+           4 .idata$5
+           C .idata$6

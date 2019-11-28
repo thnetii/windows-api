@@ -1,0 +1,42 @@
+Microsoft (R) COFF/PE Dumper Version 14.23.28107.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\arm\drt.lib
+
+File Type: LIBRARY
+
+     Exports
+
+       ordinal    name
+
+                  ?DrtFlushCache@@YAJPAX@Z (long __cdecl DrtFlushCache(void *))
+                  ?DrtGetCacheStatsEx@@YAJPAXPAU_drtCacheStatsExTag@@@Z (long __cdecl DrtGetCacheStatsEx(void *,struct _drtCacheStatsExTag *))
+                  ?DrtHandlePowerEvent@@YAJPAXH@Z (long __cdecl DrtHandlePowerEvent(void *,int))
+                  ?DrtPingPeer@@YAJPAXPAUsockaddr_in6@@HKPAJ1PAK3PAUdrt_data_tag@@@Z (long __cdecl DrtPingPeer(void *,struct sockaddr_in6 *,int,unsigned long,long *,struct sockaddr_in6 *,unsigned long *,unsigned long *,struct drt_data_tag *))
+                  ?DrtStartPartitionDetection@@YAJPAX@Z (long __cdecl DrtStartPartitionDetection(void *))
+                  DrtClose
+                  DrtContinueSearch
+                  DrtEndSearch
+                  DrtGetEventData
+                  DrtGetEventDataSize
+                  DrtGetInstanceName
+                  DrtGetInstanceNameSize
+                  DrtGetSearchPath
+                  DrtGetSearchPathSize
+                  DrtGetSearchResult
+                  DrtGetSearchResultSize
+                  DrtOpen
+                  DrtRegisterKey
+                  DrtStartSearch
+                  DrtUnregisterKey
+                  DrtUpdateKey
+
+  Summary
+
+          B7 .debug$S
+          14 .idata$2
+          14 .idata$3
+           4 .idata$4
+           4 .idata$5
+           8 .idata$6

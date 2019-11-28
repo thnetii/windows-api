@@ -1,0 +1,45 @@
+Microsoft (R) COFF/PE Dumper Version 14.23.28107.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\arm64\ndfapi.lib
+
+File Type: LIBRARY
+
+     Exports
+
+       ordinal    name
+
+                  ?NdfRunDllDiagnoseIncident@@YAXPEAUHWND__@@PEAUHINSTANCE__@@PEBDH@Z (void __cdecl NdfRunDllDiagnoseIncident(struct HWND__ *,struct HINSTANCE__ *,char const *,int))
+                  ?NdfRunDllDiagnoseNetConnectionIncident@@YAXPEAUHWND__@@PEAUHINSTANCE__@@PEBDH@Z (void __cdecl NdfRunDllDiagnoseNetConnectionIncident(struct HWND__ *,struct HINSTANCE__ *,char const *,int))
+                  ?NdfRunDllDiagnoseWithAnswerFile@@YAXPEAUHWND__@@PEAUHINSTANCE__@@PEBDH@Z (void __cdecl NdfRunDllDiagnoseWithAnswerFile(struct HWND__ *,struct HINSTANCE__ *,char const *,int))
+                  ?NdfRunDllDuplicateIPDefendingSystem@@YAXPEAUHWND__@@PEAUHINSTANCE__@@PEBDH@Z (void __cdecl NdfRunDllDuplicateIPDefendingSystem(struct HWND__ *,struct HINSTANCE__ *,char const *,int))
+                  ?NdfRunDllDuplicateIPOffendingSystem@@YAXPEAUHWND__@@PEAUHINSTANCE__@@PEBDH@Z (void __cdecl NdfRunDllDuplicateIPOffendingSystem(struct HWND__ *,struct HINSTANCE__ *,char const *,int))
+                  ?NdfRunDllHelpTopic@@YAXPEAUHWND__@@PEAUHINSTANCE__@@PEBDH@Z (void __cdecl NdfRunDllHelpTopic(struct HWND__ *,struct HINSTANCE__ *,char const *,int))
+                  NdfCancelIncident
+                  NdfCloseIncident
+                  NdfCreateConnectivityIncident
+                  NdfCreateDNSIncident
+                  NdfCreateGroupingIncident
+                  NdfCreateInboundIncident
+                  NdfCreateIncident
+                  NdfCreateNetConnectionIncident
+                  NdfCreatePnrpIncident
+                  NdfCreateSharingIncident
+                  NdfCreateWebIncident
+                  NdfCreateWebIncidentEx
+                  NdfCreateWinSockIncident
+                  NdfDiagnoseIncident
+                  NdfExecuteDiagnosis
+                  NdfGetTraceFile
+                  NdfRepairIncident
+                  NdfRepairIncidentEx
+
+  Summary
+
+          C0 .debug$S
+          14 .idata$2
+          14 .idata$3
+           8 .idata$4
+           8 .idata$5
+           C .idata$6

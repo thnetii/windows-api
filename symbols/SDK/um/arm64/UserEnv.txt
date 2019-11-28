@@ -1,0 +1,93 @@
+Microsoft (R) COFF/PE Dumper Version 14.23.28107.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\arm64\UserEnv.Lib
+
+File Type: LIBRARY
+
+     Exports
+
+       ordinal    name
+
+                  ?RsopLoggingEnabled@@YAHXZ (int __cdecl RsopLoggingEnabled(void))
+                  AreThereVisibleLogoffScripts
+                  AreThereVisibleShutdownScripts
+           203    CheckDirectoryOwnership
+           175    CheckXForestLogon
+           209    CopyProfileDirectoryEx2
+                  CreateAppContainerProfile
+           212    CreateAppContainerProfileInternal
+           206    CreateDirectoryJunctionsForSystem
+           207    CreateDirectoryJunctionsForUserProfile
+                  CreateEnvironmentBlock
+           137    CreateGroupEx
+           139    CreateLinkFileEx
+                  CreateProfile
+                  DeleteAppContainerProfile
+           213    DeleteAppContainerProfileInternal
+           104    DeleteGroup
+           122    DeleteLinkFile
+                  DeleteProfileA
+           202    DeleteProfileDirectory
+                  DeleteProfileW
+                  DeriveAppContainerSidFromAppContainerName
+                  DeriveRestrictedAppContainerSidFromAppContainerSidAndRestrictedName
+                  DestroyEnvironmentBlock
+                  EnterCriticalPolicySection
+                  ExpandEnvironmentStringsForUserA
+                  ExpandEnvironmentStringsForUserW
+                  ForceSyncFgPolicy
+                  FreeGPOListA
+                  FreeGPOListW
+                  GenerateGPNotification
+                  GetAllUsersProfileDirectoryA
+                  GetAllUsersProfileDirectoryW
+                  GetAppContainerFolderPath
+                  GetAppContainerRegistryLocation
+                  GetAppliedGPOListA
+                  GetAppliedGPOListW
+                  GetDefaultUserProfileDirectoryA
+                  GetDefaultUserProfileDirectoryW
+                  GetGPOListA
+                  GetGPOListW
+           214    GetLongProfilePathName
+                  GetNextFgPolicyRefreshInfo
+                  GetPreviousFgPolicyRefreshInfo
+                  GetProfileType
+                  GetProfilesDirectoryA
+                  GetProfilesDirectoryW
+                  GetUserProfileDirectoryA
+           217    GetUserProfileDirectoryForUserSidW
+                  GetUserProfileDirectoryW
+                  HasPolicyForegroundProcessingCompleted
+           218    IsAppContainerProfilePresentInternal
+                  LeaveCriticalPolicySection
+                  LoadUserProfileA
+                  LoadUserProfileW
+           211    LookupAppContainerDisplayName
+           135    PingComputer
+                  ProcessGroupPolicyCompleted
+                  ProcessGroupPolicyCompletedEx
+                  RefreshPolicy
+                  RefreshPolicyEx
+                  RegisterGPNotification
+           208    RemapProfile
+                  RsopAccessCheckByType
+                  RsopFileAccessCheck
+                  RsopResetPolicySettingStatus
+                  RsopSetPolicySettingStatus
+                  UnloadUserProfile
+                  UnregisterGPNotification
+           210    UpdateAppContainerProfile
+                  WaitForMachinePolicyForegroundProcessing
+                  WaitForUserPolicyForegroundProcessing
+
+  Summary
+
+          C3 .debug$S
+          14 .idata$2
+          14 .idata$3
+           8 .idata$4
+           8 .idata$5
+           C .idata$6

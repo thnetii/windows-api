@@ -1,0 +1,62 @@
+Microsoft (R) COFF/PE Dumper Version 14.23.28107.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\arm64\certadm.lib
+
+File Type: LIBRARY
+
+     Exports
+
+       ordinal    name
+
+           212    ?GetAccessRights@@YAJPEAXQEAPEAXKQEAK@Z (long __cdecl GetAccessRights(void *,void * * const,unsigned long,unsigned long * const))
+           213    ?GetLocaleName@@YAJPEAPEAG@Z (long __cdecl GetLocaleName(unsigned short * *))
+           216    ?GetToken@@YAJPEAGPEBU_CERT_CONTEXT@@PEAPEAX@Z (long __cdecl GetToken(unsigned short *,struct _CERT_CONTEXT const *,void * *))
+           217    ?GetUserPrincipalName@@YAJPEAPEAG@Z (long __cdecl GetUserPrincipalName(unsigned short * *))
+           215    ?VerifyCertContextWithNtAuth@@YAJPEBU_CERT_CONTEXT@@@Z (long __cdecl VerifyCertContextWithNtAuth(struct _CERT_CONTEXT const *))
+           218    ?myBackupDB@@YAJPEBGK0PEAU_DBBACKUPPROGRESS@@@Z (long __cdecl myBackupDB(unsigned short const *,unsigned long,unsigned short const *,struct _DBBACKUPPROGRESS *))
+           220    ?myCertServerExportPFX@@YAJPEBG00PEAXHHHKPEAPEAG@Z (long __cdecl myCertServerExportPFX(unsigned short const *,unsigned short const *,unsigned short const *,void *,int,int,int,unsigned long,unsigned short * *))
+           221    ?myCertServerImportPFX@@YAJPEBG0HPEAPEAG1PEAPEBU_CERT_CONTEXT@@@Z (long __cdecl myCertServerImportPFX(unsigned short const *,unsigned short const *,int,unsigned short * *,unsigned short * *,struct _CERT_CONTEXT const * *))
+           210    ?myGetColumnDisplayName@@YAJPEBGPEAPEBG@Z (long __cdecl myGetColumnDisplayName(unsigned short const *,unsigned short const * *))
+           211    ?myGetColumnName@@YAJKHPEAPEBG@Z (long __cdecl myGetColumnName(unsigned long,int,unsigned short const * *))
+           219    ?myRestoreDB@@YAJPEBGK0000PEAU_DBBACKUPPROGRESS@@@Z (long __cdecl myRestoreDB(unsigned short const *,unsigned long,unsigned short const *,unsigned short const *,unsigned short const *,unsigned short const *,struct _DBBACKUPPROGRESS *))
+             5    CertSrvBackupClose
+             6    CertSrvBackupEnd
+            15    CertSrvBackupFree
+             7    CertSrvBackupGetBackupLogsW
+             8    CertSrvBackupGetDatabaseNamesW
+            14    CertSrvBackupGetDynamicFileListW
+             9    CertSrvBackupOpenFileW
+            10    CertSrvBackupPrepareW
+            11    CertSrvBackupRead
+            12    CertSrvBackupTruncateLogs
+            13    CertSrvIsServerOnlineW
+            21    CertSrvRestoreEnd
+            17    CertSrvRestoreGetDatabaseLocationsW
+            18    CertSrvRestorePrepareW
+            20    CertSrvRestoreRegisterComplete
+            22    CertSrvRestoreRegisterThroughFile
+            19    CertSrvRestoreRegisterW
+            16    CertSrvServerControlW
+                  ClosePerfMon
+                  CollectPerfMon
+           203    CreatePerfObject
+           209    CreatePerfObjectWithAlias
+           207    DecrementPerfCounter
+           204    DeletePerfObject
+           206    IncrementPerfCounter
+           201    InitPerfMon
+                  OpenPerfMon
+           205    ResetPerfObjectList
+           202    UninitPerfMon
+           208    UpdatePerfCounter
+
+  Summary
+
+          C3 .debug$S
+          14 .idata$2
+          14 .idata$3
+           8 .idata$4
+           8 .idata$5
+           C .idata$6

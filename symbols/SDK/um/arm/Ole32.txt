@@ -1,0 +1,453 @@
+Microsoft (R) COFF/PE Dumper Version 14.23.28107.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\arm\Ole32.Lib
+
+File Type: LIBRARY
+
+     Exports
+
+       ordinal    name
+
+                  ?CLIPFORMAT_UserFreeExt@@YAXPAKPAG@Z (void __cdecl CLIPFORMAT_UserFreeExt(unsigned long *,unsigned short *))
+                  ?CLIPFORMAT_UserMarshalExt@@YAPAEPAKPAEPAG@Z (unsigned char * __cdecl CLIPFORMAT_UserMarshalExt(unsigned long *,unsigned char *,unsigned short *))
+                  ?CLIPFORMAT_UserSizeExt@@YAKPAKKPAG@Z (unsigned long __cdecl CLIPFORMAT_UserSizeExt(unsigned long *,unsigned long,unsigned short *))
+                  ?CLIPFORMAT_UserUnmarshalExt@@YAPAEPAKPAEPAG@Z (unsigned char * __cdecl CLIPFORMAT_UserUnmarshalExt(unsigned long *,unsigned char *,unsigned short *))
+                  ?HPALETTE_UserFreeExt@@YAXPAKPAPAUHPALETTE__@@@Z (void __cdecl HPALETTE_UserFreeExt(unsigned long *,struct HPALETTE__ * *))
+                  ?HPALETTE_UserMarshalExt@@YAPAEPAKPAEPAPAUHPALETTE__@@@Z (unsigned char * __cdecl HPALETTE_UserMarshalExt(unsigned long *,unsigned char *,struct HPALETTE__ * *))
+                  ?HPALETTE_UserSizeExt@@YAKPAKKPAPAUHPALETTE__@@@Z (unsigned long __cdecl HPALETTE_UserSizeExt(unsigned long *,unsigned long,struct HPALETTE__ * *))
+                  ?HPALETTE_UserUnmarshalExt@@YAPAEPAKPAEPAPAUHPALETTE__@@@Z (unsigned char * __cdecl HPALETTE_UserUnmarshalExt(unsigned long *,unsigned char *,struct HPALETTE__ * *))
+                  ?HRGN_UserFree@@YAXPAKPAPAUHRGN__@@@Z (void __cdecl HRGN_UserFree(unsigned long *,struct HRGN__ * *))
+                  ?HRGN_UserMarshal@@YAPAEPAKPAEPAPAUHRGN__@@@Z (unsigned char * __cdecl HRGN_UserMarshal(unsigned long *,unsigned char *,struct HRGN__ * *))
+                  ?HRGN_UserSize@@YAKPAKKPAPAUHRGN__@@@Z (unsigned long __cdecl HRGN_UserSize(unsigned long *,unsigned long,struct HRGN__ * *))
+                  ?HRGN_UserUnmarshal@@YAPAEPAKPAEPAPAUHRGN__@@@Z (unsigned char * __cdecl HRGN_UserUnmarshal(unsigned long *,unsigned char *,struct HRGN__ * *))
+                  ?HWND_UserFreeExt@@YAXPAKPAPAUHWND__@@@Z (void __cdecl HWND_UserFreeExt(unsigned long *,struct HWND__ * *))
+                  ?HWND_UserMarshalExt@@YAPAEPAKPAEPAPAUHWND__@@@Z (unsigned char * __cdecl HWND_UserMarshalExt(unsigned long *,unsigned char *,struct HWND__ * *))
+                  ?HWND_UserSizeExt@@YAKPAKKPAPAUHWND__@@@Z (unsigned long __cdecl HWND_UserSizeExt(unsigned long *,unsigned long,struct HWND__ * *))
+                  ?HWND_UserUnmarshalExt@@YAPAEPAKPAEPAPAUHWND__@@@Z (unsigned char * __cdecl HWND_UserUnmarshalExt(unsigned long *,unsigned char *,struct HWND__ * *))
+                  ?MonikerLoadTypeLib@@YAJPBGPAPAUITypeLib@@@Z (long __cdecl MonikerLoadTypeLib(unsigned short const *,struct ITypeLib * *))
+                  ?ReadStorageProperties@@YAJPAUIStorage@@PAU_GUID@@@Z (long __cdecl ReadStorageProperties(struct IStorage *,struct _GUID *))
+                  ?STGMEDIUM_UserFreeExt@@YAXPAKPAUtagSTGMEDIUM@@@Z (void __cdecl STGMEDIUM_UserFreeExt(unsigned long *,struct tagSTGMEDIUM *))
+                  ?STGMEDIUM_UserMarshalExt@@YAPAEPAKPAEPAUtagSTGMEDIUM@@@Z (unsigned char * __cdecl STGMEDIUM_UserMarshalExt(unsigned long *,unsigned char *,struct tagSTGMEDIUM *))
+                  ?STGMEDIUM_UserSizeExt@@YAKPAKKPAUtagSTGMEDIUM@@@Z (unsigned long __cdecl STGMEDIUM_UserSizeExt(unsigned long *,unsigned long,struct tagSTGMEDIUM *))
+                  ?STGMEDIUM_UserUnmarshalExt@@YAPAEPAKPAEPAUtagSTGMEDIUM@@@Z (unsigned char * __cdecl STGMEDIUM_UserUnmarshalExt(unsigned long *,unsigned char *,struct tagSTGMEDIUM *))
+                  ?SetOleautModule@@YAXPAUHINSTANCE__@@@Z (void __cdecl SetOleautModule(struct HINSTANCE__ *))
+                  ?StdTypesGetClassObject@@YAJABU_GUID@@0PAPAX@Z (long __cdecl StdTypesGetClassObject(struct _GUID const &,struct _GUID const &,void * *))
+                  ?StdTypesRegisterServer@@YAJXZ (long __cdecl StdTypesRegisterServer(void))
+                  ?WriteStorageProperties@@YAJPAUIStorage@@ABU_GUID@@GPAG@Z (long __cdecl WriteStorageProperties(struct IStorage *,struct _GUID const &,unsigned short,unsigned short *))
+                  BindMoniker
+                  CLIPFORMAT_UserFree
+                  CLIPFORMAT_UserMarshal
+                  CLIPFORMAT_UserSize
+                  CLIPFORMAT_UserUnmarshal
+                  CLSIDFromProgID
+                  CLSIDFromProgIDEx
+                  CLSIDFromString
+                  CStdAsyncStubBuffer2_Connect
+                  CStdAsyncStubBuffer2_Disconnect
+                  CStdAsyncStubBuffer2_Release
+                  CStdAsyncStubBuffer_AddRef
+                  CStdAsyncStubBuffer_Connect
+                  CStdAsyncStubBuffer_Disconnect
+                  CStdAsyncStubBuffer_Invoke
+                  CStdAsyncStubBuffer_QueryInterface
+                  CStdAsyncStubBuffer_Release
+                  CStdStubBuffer2_Connect
+                  CStdStubBuffer2_CountRefs
+                  CStdStubBuffer2_Disconnect
+                  CStdStubBuffer2_QueryInterface
+                  CoAddRefServerProcess
+                  CoAllowSetForegroundWindow
+                  CoAllowUnmarshalerCLSID
+                  CoBuildVersion
+                  CoCancelCall
+                  CoCopyProxy
+                  CoCreateFreeThreadedMarshaler
+                  CoCreateGuid
+                  CoCreateInstance
+                  CoCreateInstanceEx
+                  CoCreateInstanceFromApp
+                  CoCreateObjectInContext
+                  CoDeactivateObject
+                  CoDecodeProxy
+                  CoDecrementMTAUsage
+                  CoDisableCallCancellation
+                  CoDisconnectContext
+                  CoDisconnectObject
+                  CoDosDateTimeToFileTime
+                  CoEnableCallCancellation
+                  CoFileTimeNow
+                  CoFileTimeToDosDateTime
+                  CoFreeAllLibraries
+                  CoFreeLibrary
+                  CoFreeUnusedLibraries
+                  CoFreeUnusedLibrariesEx
+                  CoGetApartmentID
+                  CoGetApartmentType
+                  CoGetCallContext
+                  CoGetCallerTID
+                  CoGetCancelObject
+                  CoGetClassObject
+                  CoGetClassVersion
+                  CoGetComCatalog
+                  CoGetContextToken
+                  CoGetCurrentLogicalThreadId
+                  CoGetCurrentProcess
+                  CoGetDefaultContext
+                  CoGetInstanceFromFile
+                  CoGetInstanceFromIStorage
+                  CoGetInterceptor
+                  CoGetInterceptorFromTypeInfo
+                  CoGetInterfaceAndReleaseStream
+                  CoGetMalloc
+                  CoGetMarshalSizeMax
+                  CoGetObject
+                  CoGetObjectContext
+                  CoGetPSClsid
+                  CoGetProcessIdentifier
+                  CoGetStandardMarshal
+                  CoGetStdMarshalEx
+                  CoGetSystemSecurityPermissions
+                  CoGetTreatAsClass
+                  CoHandlePriorityEventsFromMessagePump
+                  CoImpersonateClient
+                  CoIncrementMTAUsage
+                  CoInitialize
+                  CoInitializeEx
+                  CoInitializeSecurity
+                  CoInitializeWOW
+                  CoInstall
+                  CoInvalidateRemoteMachineBindings
+                  CoIsHandlerConnected
+                  CoIsOle1Class
+                  CoLoadLibrary
+                  CoLockObjectExternal
+                  CoMarshalHresult
+                  CoMarshalInterThreadInterfaceInStream
+                  CoMarshalInterface
+                  CoQueryAuthenticationServices
+                  CoQueryClientBlanket
+                  CoQueryProxyBlanket
+                  CoQueryReleaseObject
+                  CoReactivateObject
+                  CoRegisterActivationFilter
+                  CoRegisterChannelHook
+                  CoRegisterClassObject
+                  CoRegisterInitializeSpy
+                  CoRegisterMallocSpy
+                  CoRegisterMessageFilter
+                  CoRegisterPSClsid
+                  CoRegisterSurrogate
+                  CoRegisterSurrogateEx
+                  CoReleaseMarshalData
+                  CoReleaseServerProcess
+                  CoResumeClassObjects
+                  CoRetireServer
+                  CoRevertToSelf
+                  CoRevokeClassObject
+                  CoRevokeInitializeSpy
+                  CoRevokeMallocSpy
+                  CoSetCancelObject
+                  CoSetMessageDispatcher
+                  CoSetProxyBlanket
+                  CoSuspendClassObjects
+                  CoSwitchCallContext
+                  CoTaskMemAlloc
+                  CoTaskMemFree
+                  CoTaskMemRealloc
+                  CoTestCancel
+                  CoTreatAsClass
+                  CoUninitialize
+                  CoUnloadingWOW
+                  CoUnmarshalHresult
+                  CoUnmarshalInterface
+                  CoWaitForMultipleHandles
+                  CoWaitForMultipleObjects
+                  ComPs_NdrDllCanUnloadNow
+                  ComPs_NdrDllGetClassObject
+                  ComPs_NdrDllRegisterProxy
+                  ComPs_NdrDllUnregisterProxy
+                  CreateAntiMoniker
+                  CreateBindCtx
+                  CreateClassMoniker
+                  CreateDataAdviseHolder
+                  CreateDataCache
+                  CreateFileMoniker
+                  CreateGenericComposite
+                  CreateILockBytesOnHGlobal
+                  CreateItemMoniker
+                  CreateObjrefMoniker
+                  CreateOleAdviseHolder
+                  CreatePointerMoniker
+                  CreateStdProgressIndicator
+                  CreateStreamOnHGlobal
+                  DcomChannelSetHResult
+                  DllDebugObjectRPCHook
+                  DllGetClassObjectWOW
+                  DoDragDrop
+                  EnableHookObject
+                  FmtIdToPropStgName
+                  FreePropVariantArray
+                  GetActiveObjectExt
+                  GetClassFile
+                  GetConvertStg
+                  GetDocumentBitStg
+                  GetHGlobalFromILockBytes
+                  GetHGlobalFromStream
+                  GetHookInterface
+                  GetRunningObjectTable
+                  HACCEL_UserFree
+                  HACCEL_UserMarshal
+                  HACCEL_UserSize
+                  HACCEL_UserUnmarshal
+                  HBITMAP_UserFree
+                  HBITMAP_UserMarshal
+                  HBITMAP_UserSize
+                  HBITMAP_UserUnmarshal
+                  HBRUSH_UserFree
+                  HBRUSH_UserMarshal
+                  HBRUSH_UserSize
+                  HBRUSH_UserUnmarshal
+                  HDC_UserFree
+                  HDC_UserMarshal
+                  HDC_UserSize
+                  HDC_UserUnmarshal
+                  HENHMETAFILE_UserFree
+                  HENHMETAFILE_UserMarshal
+                  HENHMETAFILE_UserSize
+                  HENHMETAFILE_UserUnmarshal
+                  HGLOBAL_UserFree
+                  HGLOBAL_UserMarshal
+                  HGLOBAL_UserSize
+                  HGLOBAL_UserUnmarshal
+                  HICON_UserFree
+                  HICON_UserMarshal
+                  HICON_UserSize
+                  HICON_UserUnmarshal
+                  HMENU_UserFree
+                  HMENU_UserMarshal
+                  HMENU_UserSize
+                  HMENU_UserUnmarshal
+                  HMETAFILEPICT_UserFree
+                  HMETAFILEPICT_UserMarshal
+                  HMETAFILEPICT_UserSize
+                  HMETAFILEPICT_UserUnmarshal
+                  HMETAFILE_UserFree
+                  HMETAFILE_UserMarshal
+                  HMETAFILE_UserSize
+                  HMETAFILE_UserUnmarshal
+                  HMONITOR_UserFree
+                  HMONITOR_UserMarshal
+                  HMONITOR_UserSize
+                  HMONITOR_UserUnmarshal
+                  HPALETTE_UserFree
+                  HPALETTE_UserMarshal
+                  HPALETTE_UserSize
+                  HPALETTE_UserUnmarshal
+                  HWND_UserFree
+                  HWND_UserMarshal
+                  HWND_UserSize
+                  HWND_UserUnmarshal
+                  HkOleRegisterObject
+                  IIDFromString
+                  IsAccelerator
+                  IsEqualGUID
+                  MkParseDisplayName
+                  MonikerCommonPrefixWith
+                  MonikerRelativePathTo
+                  NdrProxyForwardingFunction10
+                  NdrProxyForwardingFunction11
+                  NdrProxyForwardingFunction12
+                  NdrProxyForwardingFunction13
+                  NdrProxyForwardingFunction14
+                  NdrProxyForwardingFunction15
+                  NdrProxyForwardingFunction16
+                  NdrProxyForwardingFunction17
+                  NdrProxyForwardingFunction18
+                  NdrProxyForwardingFunction19
+                  NdrProxyForwardingFunction20
+                  NdrProxyForwardingFunction21
+                  NdrProxyForwardingFunction22
+                  NdrProxyForwardingFunction23
+                  NdrProxyForwardingFunction24
+                  NdrProxyForwardingFunction25
+                  NdrProxyForwardingFunction26
+                  NdrProxyForwardingFunction27
+                  NdrProxyForwardingFunction28
+                  NdrProxyForwardingFunction29
+                  NdrProxyForwardingFunction3
+                  NdrProxyForwardingFunction30
+                  NdrProxyForwardingFunction31
+                  NdrProxyForwardingFunction32
+                  NdrProxyForwardingFunction4
+                  NdrProxyForwardingFunction5
+                  NdrProxyForwardingFunction6
+                  NdrProxyForwardingFunction7
+                  NdrProxyForwardingFunction8
+                  NdrProxyForwardingFunction9
+                  ObjectStublessClient10
+                  ObjectStublessClient11
+                  ObjectStublessClient12
+                  ObjectStublessClient13
+                  ObjectStublessClient14
+                  ObjectStublessClient15
+                  ObjectStublessClient16
+                  ObjectStublessClient17
+                  ObjectStublessClient18
+                  ObjectStublessClient19
+                  ObjectStublessClient20
+                  ObjectStublessClient21
+                  ObjectStublessClient22
+                  ObjectStublessClient23
+                  ObjectStublessClient24
+                  ObjectStublessClient25
+                  ObjectStublessClient26
+                  ObjectStublessClient27
+                  ObjectStublessClient28
+                  ObjectStublessClient29
+                  ObjectStublessClient3
+                  ObjectStublessClient30
+                  ObjectStublessClient31
+                  ObjectStublessClient32
+                  ObjectStublessClient4
+                  ObjectStublessClient5
+                  ObjectStublessClient6
+                  ObjectStublessClient7
+                  ObjectStublessClient8
+                  ObjectStublessClient9
+                  Ole32DllGetClassObject
+                  OleBuildVersion
+                  OleConvertIStorageToOLESTREAM
+                  OleConvertIStorageToOLESTREAMEx
+                  OleConvertOLESTREAMToIStorage
+                  OleConvertOLESTREAMToIStorageEx
+                  OleCreate
+                  OleCreateDefaultHandler
+                  OleCreateEmbeddingHelper
+                  OleCreateEx
+                  OleCreateFontIndirectExt
+                  OleCreateFromData
+                  OleCreateFromDataEx
+                  OleCreateFromFile
+                  OleCreateFromFileEx
+                  OleCreateLink
+                  OleCreateLinkEx
+                  OleCreateLinkFromData
+                  OleCreateLinkFromDataEx
+                  OleCreateLinkToFile
+                  OleCreateLinkToFileEx
+                  OleCreateMenuDescriptor
+                  OleCreatePictureIndirectExt
+                  OleCreatePropertyFrameIndirectExt
+                  OleCreateStaticFromData
+                  OleDestroyMenuDescriptor
+                  OleDoAutoConvert
+                  OleDraw
+                  OleDuplicateData
+                  OleFlushClipboard
+                  OleGetAutoConvert
+                  OleGetClipboard
+                  OleGetClipboardWithEnterpriseInfo
+                  OleGetIconOfClass
+                  OleGetIconOfFile
+                  OleIconToCursorExt
+                  OleInitialize
+                  OleInitializeWOW
+                  OleIsCurrentClipboard
+                  OleIsRunning
+                  OleLoad
+                  OleLoadFromStream
+                  OleLoadPictureExt
+                  OleLoadPictureFileExt
+                  OleLoadPicturePathExt
+                  OleLockRunning
+                  OleMetafilePictFromIconAndLabel
+                  OleNoteObjectVisible
+                  OleQueryCreateFromData
+                  OleQueryLinkFromData
+                  OleRegEnumFormatEtc
+                  OleRegEnumVerbs
+                  OleRegGetMiscStatus
+                  OleRegGetUserType
+                  OleRun
+                  OleSave
+                  OleSavePictureFileExt
+                  OleSaveToStream
+                  OleSetAutoConvert
+                  OleSetClipboard
+                  OleSetContainedObject
+                  OleSetMenuDescriptor
+                  OleTranslateAccelerator
+                  OleTranslateColorExt
+                  OleUninitialize
+                  OpenOrCreateStream
+                  ProgIDFromCLSID
+                  PropStgNameToFmtId
+                  PropVariantClear
+                  PropVariantCopy
+                  ReadClassStg
+                  ReadClassStm
+                  ReadFmtUserTypeStg
+                  ReadOleStg
+                  ReadStringStream
+                  RegisterActiveObjectExt
+                  RegisterDragDrop
+                  ReleaseStgMedium
+                  RevokeActiveObjectExt
+                  RevokeDragDrop
+                  RoGetAgileReference
+                  SNB_UserFree
+                  SNB_UserMarshal
+                  SNB_UserSize
+                  SNB_UserUnmarshal
+                  STGMEDIUM_UserFree
+                  STGMEDIUM_UserMarshal
+                  STGMEDIUM_UserSize
+                  STGMEDIUM_UserUnmarshal
+                  SetConvertStg
+                  SetDocumentBitStg
+                  StgConvertPropertyToVariant
+                  StgConvertVariantToProperty
+                  StgCreateDocfile
+                  StgCreateDocfileOnILockBytes
+                  StgCreatePropSetStg
+                  StgCreatePropStg
+                  StgCreateStorageEx
+                  StgGetIFillLockBytesOnFile
+                  StgGetIFillLockBytesOnILockBytes
+                  StgIsStorageFile
+                  StgIsStorageILockBytes
+                  StgOpenAsyncDocfileOnIFillLockBytes
+                  StgOpenPropStg
+                  StgOpenStorage
+                  StgOpenStorageEx
+                  StgOpenStorageOnILockBytes
+                  StgPropertyLengthAsVariant
+                  StgSetTimes
+                  StringFromCLSID
+                  StringFromGUID2
+                  StringFromIID
+                  UpdateDCOMSettings
+                  UtConvertDvtd16toDvtd32
+                  UtConvertDvtd32toDvtd16
+                  UtGetDvtd16Info
+                  UtGetDvtd32Info
+                  WdtpInterfacePointer_UserFree
+                  WdtpInterfacePointer_UserMarshal
+                  WdtpInterfacePointer_UserSize
+                  WdtpInterfacePointer_UserUnmarshal
+                  WriteClassStg
+                  WriteClassStm
+                  WriteFmtUserTypeStg
+                  WriteOleStg
+                  WriteStringStream
+
+  Summary
+
+          BD .debug$S
+          14 .idata$2
+          14 .idata$3
+           4 .idata$4
+           4 .idata$5
+           A .idata$6

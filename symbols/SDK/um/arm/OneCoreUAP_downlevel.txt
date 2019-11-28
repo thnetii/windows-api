@@ -1,0 +1,4655 @@
+Microsoft (R) COFF/PE Dumper Version 14.23.28107.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\arm\OneCoreUAP_downlevel.Lib
+
+File Type: LIBRARY
+
+     Exports
+
+       ordinal    name
+
+                  AbortSystemShutdownA
+                  AbortSystemShutdownW
+                  AccessCheck
+                  AccessCheckAndAuditAlarmW
+                  AccessCheckByType
+                  AccessCheckByTypeAndAuditAlarmW
+                  AccessCheckByTypeResultList
+                  AccessCheckByTypeResultListAndAuditAlarmByHandleW
+                  AccessCheckByTypeResultListAndAuditAlarmW
+                  AddAccessAllowedAce
+                  AddAccessAllowedAceEx
+                  AddAccessAllowedObjectAce
+                  AddAccessDeniedAce
+                  AddAccessDeniedAceEx
+                  AddAccessDeniedObjectAce
+                  AddAce
+                  AddAuditAccessAce
+                  AddAuditAccessAceEx
+                  AddAuditAccessObjectAce
+                  AddMandatoryAce
+                  AddUsersToEncryptedFile
+                  AdjustTokenGroups
+                  AdjustTokenPrivileges
+                  AllocateAndInitializeSid
+                  AllocateLocallyUniqueId
+                  AreAllAccessesGranted
+                  AreAnyAccessesGranted
+                  AuditComputeEffectivePolicyBySid
+                  AuditEnumerateCategories
+                  AuditEnumeratePerUserPolicy
+                  AuditEnumerateSubCategories
+                  AuditFree
+                  AuditLookupCategoryNameW
+                  AuditLookupSubCategoryNameW
+                  AuditQueryGlobalSaclW
+                  AuditQueryPerUserPolicy
+                  AuditQuerySecurity
+                  AuditQuerySystemPolicy
+                  AuditSetGlobalSaclW
+                  AuditSetPerUserPolicy
+                  AuditSetSecurity
+                  AuditSetSystemPolicy
+                  BaseRegCloseKey
+                  BaseRegCreateKey
+                  BaseRegDeleteKeyEx
+                  BaseRegDeleteValue
+                  BaseRegFlushKey
+                  BaseRegGetVersion
+                  BaseRegLoadKey
+                  BaseRegOpenKey
+                  BaseRegRestoreKey
+                  BaseRegSaveKeyEx
+                  BaseRegSetKeySecurity
+                  BaseRegSetValue
+                  BaseRegUnLoadKey
+                  BuildExplicitAccessWithNameA
+                  BuildExplicitAccessWithNameW
+                  BuildImpersonateTrusteeA
+                  BuildImpersonateTrusteeW
+                  BuildSecurityDescriptorA
+                  BuildSecurityDescriptorW
+                  BuildTrusteeWithNameA
+                  BuildTrusteeWithNameW
+                  BuildTrusteeWithObjectsAndSidA
+                  BuildTrusteeWithObjectsAndSidW
+                  BuildTrusteeWithSidA
+                  BuildTrusteeWithSidW
+                  ChangeServiceConfig2A
+                  ChangeServiceConfig2W
+                  ChangeServiceConfigA
+                  ChangeServiceConfigW
+                  CheckTokenMembership
+                  CloseEncryptedFileRaw
+                  CloseEventLog
+                  CloseServiceHandle
+                  CloseThreadWaitChainSession
+                  CloseTrace
+                  CommandLineFromMsiDescriptor
+                  ControlService
+                  ControlServiceExA
+                  ControlServiceExW
+                  ControlTraceA
+                  ControlTraceW
+                  ConvertSDToStringSDRootDomainW
+                  ConvertSecurityDescriptorToStringSecurityDescriptorA
+                  ConvertSecurityDescriptorToStringSecurityDescriptorW
+                  ConvertSidToStringSidA
+                  ConvertSidToStringSidW
+                  ConvertStringSDToSDDomainA
+                  ConvertStringSDToSDDomainW
+                  ConvertStringSDToSDRootDomainW
+                  ConvertStringSecurityDescriptorToSecurityDescriptorA
+                  ConvertStringSecurityDescriptorToSecurityDescriptorW
+                  ConvertStringSidToSidA
+                  ConvertStringSidToSidW
+                  ConvertToAutoInheritPrivateObjectSecurity
+                  CopySid
+                  CreatePrivateObjectSecurity
+                  CreatePrivateObjectSecurityEx
+                  CreatePrivateObjectSecurityWithMultipleInheritance
+                  CreateProcessAsUserA
+                  CreateProcessAsUserW
+                  CreateProcessWithLogonW
+                  CreateProcessWithTokenW
+                  CreateRestrictedToken
+                  CreateServiceA
+                  CreateServiceW
+                  CreateWellKnownSid
+                  CredDeleteA
+                  CredDeleteW
+                  CredEnumerateA
+                  CredEnumerateW
+                  CredFindBestCredentialA
+                  CredFindBestCredentialW
+                  CredFree
+                  CredGetSessionTypes
+                  CredGetTargetInfoA
+                  CredGetTargetInfoW
+                  CredIsMarshaledCredentialW
+                  CredIsProtectedA
+                  CredIsProtectedW
+                  CredMarshalCredentialA
+                  CredMarshalCredentialW
+                  CredProtectA
+                  CredProtectW
+                  CredReadA
+                  CredReadDomainCredentialsA
+                  CredReadDomainCredentialsW
+                  CredReadW
+                  CredUnmarshalCredentialA
+                  CredUnmarshalCredentialW
+                  CredUnprotectA
+                  CredUnprotectW
+                  CredWriteA
+                  CredWriteDomainCredentialsA
+                  CredWriteDomainCredentialsW
+                  CredWriteW
+                  CryptAcquireContextA
+                  CryptAcquireContextW
+                  CryptContextAddRef
+                  CryptCreateHash
+                  CryptDecrypt
+                  CryptDeriveKey
+                  CryptDestroyHash
+                  CryptDestroyKey
+                  CryptDuplicateHash
+                  CryptDuplicateKey
+                  CryptEncrypt
+                  CryptEnumProvidersA
+                  CryptEnumProvidersW
+                  CryptEnumProviderTypesA
+                  CryptEnumProviderTypesW
+                  CryptExportKey
+                  CryptGenKey
+                  CryptGenRandom
+                  CryptGetDefaultProviderA
+                  CryptGetDefaultProviderW
+                  CryptGetHashParam
+                  CryptGetKeyParam
+                  CryptGetProvParam
+                  CryptGetUserKey
+                  CryptHashData
+                  CryptHashSessionKey
+                  CryptImportKey
+                  CryptReleaseContext
+                  CryptSetHashParam
+                  CryptSetKeyParam
+                  CryptSetProviderA
+                  CryptSetProviderExA
+                  CryptSetProviderExW
+                  CryptSetProviderW
+                  CryptSetProvParam
+                  CryptSignHashA
+                  CryptSignHashW
+                  CryptVerifySignatureA
+                  CryptVerifySignatureW
+                  DecryptFileW
+                  DeleteAce
+                  DeleteService
+                  DeregisterEventSource
+                  DestroyPrivateObjectSecurity
+                  DuplicateToken
+                  DuplicateTokenEx
+                  ElfDeregisterEventSource
+                  ElfFlushEventLog
+                  ElfRegisterEventSourceW
+                  ElfReportEventW
+                  EnableTrace
+                  EnableTraceEx
+                  EnableTraceEx2
+                  EncryptFileW
+                  EnumDependentServicesA
+                  EnumDependentServicesW
+                  EnumDynamicTimeZoneInformation
+                  EnumerateTraceGuids
+                  EnumerateTraceGuidsEx
+                  EnumServicesStatusExA
+                  EnumServicesStatusExW
+                  EnumServicesStatusW
+                  EqualDomainSid
+                  EqualPrefixSid
+                  EqualSid
+                  EventAccessControl
+                  EventAccessQuery
+                  EventAccessRemove
+                  EventActivityIdControl
+                  EventEnabled
+                  EventProviderEnabled
+                  EventRegister
+                  EventSetInformation
+                  EventUnregister
+                  EventWrite
+                  EventWriteEx
+                  EventWriteString
+                  EventWriteTransfer
+                  FindFirstFreeAce
+                  FlushTraceA
+                  FlushTraceW
+                  FreeEncryptionCertificateHashList
+                  FreeSid
+                  GetAce
+                  GetAclInformation
+                  GetAuditedPermissionsFromAclA
+                  GetAuditedPermissionsFromAclW
+                  GetCurrentHwProfileA
+                  GetCurrentHwProfileW
+                  GetDynamicTimeZoneInformationEffectiveYears
+                  GetEffectiveRightsFromAclA
+                  GetEffectiveRightsFromAclW
+                  GetEventLogInformation
+                  GetExplicitEntriesFromAclA
+                  GetExplicitEntriesFromAclW
+                  GetFileSecurityA
+                  GetFileSecurityW
+                  GetKernelObjectSecurity
+                  GetLengthSid
+                  GetNamedSecurityInfoA
+                  GetNamedSecurityInfoW
+                  GetNumberOfEventLogRecords
+                  GetOldestEventLogRecord
+                  GetPrivateObjectSecurity
+                  GetSecurityDescriptorControl
+                  GetSecurityDescriptorDacl
+                  GetSecurityDescriptorGroup
+                  GetSecurityDescriptorLength
+                  GetSecurityDescriptorOwner
+                  GetSecurityDescriptorRMControl
+                  GetSecurityDescriptorSacl
+                  GetSecurityInfo
+                  GetServiceDisplayNameA
+                  GetServiceDisplayNameW
+                  GetServiceKeyNameA
+                  GetServiceKeyNameW
+                  GetSidIdentifierAuthority
+                  GetSidLengthRequired
+                  GetSidSubAuthority
+                  GetSidSubAuthorityCount
+                  GetThreadWaitChain
+                  GetTokenInformation
+                  GetTraceEnableFlags
+                  GetTraceEnableLevel
+                  GetTraceLoggerHandle
+                  GetUserNameA
+                  GetUserNameW
+                  GetWindowsAccountDomainSid
+                  I_ScSetServiceBitsA
+                  I_ScSetServiceBitsW
+                  ImpersonateAnonymousToken
+                  ImpersonateLoggedOnUser
+                  ImpersonateNamedPipeClient
+                  ImpersonateSelf
+                  InitializeAcl
+                  InitializeSecurityDescriptor
+                  InitializeSid
+                  InitiateShutdownW
+                  InitiateSystemShutdownA
+                  InitiateSystemShutdownExA
+                  InitiateSystemShutdownExW
+                  InitiateSystemShutdownW
+                  InstallApplication
+                  IsTextUnicode
+                  IsTokenRestricted
+                  IsValidAcl
+                  IsValidRelativeSecurityDescriptor
+                  IsValidSecurityDescriptor
+                  IsValidSid
+                  IsWellKnownSid
+                  LogonUserA
+                  LogonUserExA
+                  LogonUserExExW
+                  LogonUserExW
+                  LogonUserW
+                  LookupAccountNameA
+                  LookupAccountNameW
+                  LookupAccountSidA
+                  LookupAccountSidW
+                  LookupPrivilegeDisplayNameA
+                  LookupPrivilegeDisplayNameW
+                  LookupPrivilegeNameA
+                  LookupPrivilegeNameW
+                  LookupPrivilegeValueA
+                  LookupPrivilegeValueW
+                  LsaAddAccountRights
+                  LsaAddPrivilegesToAccount
+                  LsaClose
+                  LsaCreateAccount
+                  LsaCreateSecret
+                  LsaCreateTrustedDomain
+                  LsaCreateTrustedDomainEx
+                  LsaDelete
+                  LsaDeleteTrustedDomain
+                  LsaEnumerateAccountRights
+                  LsaEnumerateAccounts
+                  LsaEnumerateAccountsWithUserRight
+                  LsaEnumeratePrivileges
+                  LsaEnumeratePrivilegesOfAccount
+                  LsaEnumerateTrustedDomains
+                  LsaEnumerateTrustedDomainsEx
+                  LsaFreeMemory
+                  LsaGetRemoteUserName
+                  LsaGetSystemAccessAccount
+                  LsaGetUserName
+                  LsaICLookupNames
+                  LsaICLookupNamesWithCreds
+                  LsaICLookupSids
+                  LsaICLookupSidsWithCreds
+                  LsaLookupNames
+                  LsaLookupNames2
+                  LsaLookupPrivilegeDisplayName
+                  LsaLookupPrivilegeName
+                  LsaLookupPrivilegeValue
+                  LsaLookupSids
+                  LsaLookupSids2
+                  LsaManageSidNameMapping
+                  LsaNtStatusToWinError
+                  LsaOpenAccount
+                  LsaOpenPolicy
+                  LsaOpenSecret
+                  LsaOpenTrustedDomain
+                  LsaOpenTrustedDomainByName
+                  LsaQueryDomainInformationPolicy
+                  LsaQueryForestTrustInformation
+                  LsaQueryInformationPolicy
+                  LsaQueryInfoTrustedDomain
+                  LsaQuerySecret
+                  LsaQuerySecurityObject
+                  LsaQueryTrustedDomainInfo
+                  LsaQueryTrustedDomainInfoByName
+                  LsaRemoveAccountRights
+                  LsaRemovePrivilegesFromAccount
+                  LsaRetrievePrivateData
+                  LsaSetDomainInformationPolicy
+                  LsaSetForestTrustInformation
+                  LsaSetInformationPolicy
+                  LsaSetInformationTrustedDomain
+                  LsaSetSecret
+                  LsaSetSecurityObject
+                  LsaSetSystemAccessAccount
+                  LsaSetTrustedDomainInfoByName
+                  LsaSetTrustedDomainInformation
+                  LsaStorePrivateData
+                  MakeAbsoluteSD
+                  MakeAbsoluteSD2
+                  MakeSelfRelativeSD
+                  MapGenericMask
+                  MIDL_user_free_Ext
+                  NotifyBootConfigStatus
+                  NotifyServiceStatusChangeA
+                  NotifyServiceStatusChangeW
+                  NpGetUserName
+                  ObjectCloseAuditAlarmW
+                  ObjectDeleteAuditAlarmW
+                  ObjectOpenAuditAlarmW
+                  ObjectPrivilegeAuditAlarmW
+                  OpenEncryptedFileRawW
+                  OpenEventLogW
+                  OpenProcessToken
+                  OpenSCManagerA
+                  OpenSCManagerW
+                  OpenServiceA
+                  OpenServiceW
+                  OpenThreadToken
+                  OpenThreadWaitChainSession
+                  OpenTraceA
+                  OpenTraceW
+                  PerfAddCounters
+                  PerfCloseQueryHandle
+                  PerfCreateInstance
+                  PerfDecrementULongCounterValue
+                  PerfDecrementULongLongCounterValue
+                  PerfDeleteCounters
+                  PerfDeleteInstance
+                  PerfEnumerateCounterSet
+                  PerfEnumerateCounterSetInstances
+                  PerfIncrementULongCounterValue
+                  PerfIncrementULongLongCounterValue
+                  PerfOpenQueryHandle
+                  PerfQueryCounterData
+                  PerfQueryCounterInfo
+                  PerfQueryCounterSetRegistrationInfo
+                  PerfQueryInstance
+                  PerfRegCloseKey
+                  PerfRegEnumKey
+                  PerfRegEnumValue
+                  PerfRegQueryInfoKey
+                  PerfRegQueryValue
+                  PerfRegSetValue
+                  PerfSetCounterRefValue
+                  PerfSetCounterSetInfo
+                  PerfSetULongCounterValue
+                  PerfSetULongLongCounterValue
+                  PerfStartProvider
+                  PerfStartProviderEx
+                  PerfStopProvider
+                  PrivilegeCheck
+                  PrivilegedServiceAuditAlarmW
+                  ProcessTrace
+                  QueryAllTracesA
+                  QueryAllTracesW
+                  QueryRecoveryAgentsOnEncryptedFile
+                  QuerySecurityAccessMask
+                  QueryServiceConfig2A
+                  QueryServiceConfig2W
+                  QueryServiceConfigA
+                  QueryServiceConfigW
+                  QueryServiceDynamicInformation
+                  QueryServiceObjectSecurity
+                  QueryServiceStatus
+                  QueryServiceStatusEx
+                  QueryTraceA
+                  QueryTraceW
+                  QueryUsersOnEncryptedFile
+                  ReadEncryptedFileRaw
+                  ReadEventLogW
+                  RegCloseKey
+                  RegConnectRegistryA
+                  RegConnectRegistryExA
+                  RegConnectRegistryExW
+                  RegConnectRegistryW
+                  RegCopyTreeA
+                  RegCopyTreeW
+                  RegCreateKeyA
+                  RegCreateKeyExA
+                  RegCreateKeyExW
+                  RegCreateKeyTransactedA
+                  RegCreateKeyTransactedW
+                  RegCreateKeyW
+                  RegDeleteKeyA
+                  RegDeleteKeyExA
+                  RegDeleteKeyExW
+                  RegDeleteKeyTransactedA
+                  RegDeleteKeyTransactedW
+                  RegDeleteKeyValueA
+                  RegDeleteKeyValueW
+                  RegDeleteKeyW
+                  RegDeleteTreeA
+                  RegDeleteTreeW
+                  RegDeleteValueA
+                  RegDeleteValueW
+                  RegDisablePredefinedCache
+                  RegDisablePredefinedCacheEx
+                  RegEnumKeyA
+                  RegEnumKeyExA
+                  RegEnumKeyExW
+                  RegEnumKeyW
+                  RegEnumValueA
+                  RegEnumValueW
+                  RegFlushKey
+                  RegGetKeySecurity
+                  RegGetValueA
+                  RegGetValueW
+                  RegisterEventSourceA
+                  RegisterEventSourceW
+                  RegisterServiceCtrlHandlerA
+                  RegisterServiceCtrlHandlerExA
+                  RegisterServiceCtrlHandlerExW
+                  RegisterServiceCtrlHandlerW
+                  RegisterTraceGuidsA
+                  RegisterTraceGuidsW
+                  RegisterWaitChainCOMCallback
+                  RegLoadAppKeyA
+                  RegLoadAppKeyW
+                  RegLoadKeyA
+                  RegLoadKeyW
+                  RegLoadMUIStringA
+                  RegLoadMUIStringW
+                  RegNotifyChangeKeyValue
+                  RegOpenCurrentUser
+                  RegOpenKeyA
+                  RegOpenKeyExA
+                  RegOpenKeyExW
+                  RegOpenKeyTransactedA
+                  RegOpenKeyTransactedW
+                  RegOpenKeyW
+                  RegOpenUserClassesRoot
+                  RegOverridePredefKey
+                  RegQueryInfoKeyA
+                  RegQueryInfoKeyW
+                  RegQueryMultipleValuesA
+                  RegQueryMultipleValuesW
+                  RegQueryValueA
+                  RegQueryValueExA
+                  RegQueryValueExW
+                  RegQueryValueW
+                  RegRenameKey
+                  RegReplaceKeyA
+                  RegReplaceKeyW
+                  RegRestoreKeyA
+                  RegRestoreKeyW
+                  RegSaveKeyA
+                  RegSaveKeyExA
+                  RegSaveKeyExW
+                  RegSaveKeyW
+                  RegSetKeySecurity
+                  RegSetKeyValueA
+                  RegSetKeyValueW
+                  RegSetValueA
+                  RegSetValueExA
+                  RegSetValueExW
+                  RegSetValueW
+                  RegUnLoadKeyA
+                  RegUnLoadKeyW
+                  RemoteRegEnumKeyWrapper
+                  RemoteRegEnumValueWrapper
+                  RemoteRegQueryInfoKeyWrapper
+                  RemoteRegQueryMultipleValues2Wrapper
+                  RemoteRegQueryMultipleValuesWrapper
+                  RemoteRegQueryValueWrapper
+                  RemoveTraceCallback
+                  RemoveUsersFromEncryptedFile
+                  ReportEventA
+                  ReportEventW
+                  RevertToSelf
+                  SafeBaseRegGetKeySecurity
+                  SaferCloseLevel
+                  SaferComputeTokenFromLevel
+                  SaferCreateLevel
+                  SaferiCompareTokenLevels
+                  SaferIdentifyLevel
+                  SaferiIsExecutableFileType
+                  SaferiSearchMatchingHashRules
+                  SetAclInformation
+                  SetEntriesInAclA
+                  SetEntriesInAclW
+                  SetFileSecurityA
+                  SetFileSecurityW
+                  SetKernelObjectSecurity
+                  SetNamedSecurityInfoA
+                  SetNamedSecurityInfoW
+                  SetPrivateObjectSecurity
+                  SetPrivateObjectSecurityEx
+                  SetSecurityAccessMask
+                  SetSecurityDescriptorControl
+                  SetSecurityDescriptorDacl
+                  SetSecurityDescriptorGroup
+                  SetSecurityDescriptorOwner
+                  SetSecurityDescriptorRMControl
+                  SetSecurityDescriptorSacl
+                  SetSecurityInfo
+                  SetServiceObjectSecurity
+                  SetServiceStatus
+                  SetThreadToken
+                  SetTokenInformation
+                  SetTraceCallback
+                  StartServiceA
+                  StartServiceCtrlDispatcherA
+                  StartServiceCtrlDispatcherW
+                  StartServiceW
+                  StartTraceA
+                  StartTraceW
+                  StopTraceA
+                  StopTraceW
+                  SystemFunction001
+                  SystemFunction002
+                  SystemFunction003
+                  SystemFunction004
+                  SystemFunction005
+                  SystemFunction006
+                  SystemFunction007
+                  SystemFunction008
+                  SystemFunction009
+                  SystemFunction010
+                  SystemFunction011
+                  SystemFunction012
+                  SystemFunction013
+                  SystemFunction014
+                  SystemFunction015
+                  SystemFunction016
+                  SystemFunction018
+                  SystemFunction020
+                  SystemFunction021
+                  SystemFunction022
+                  SystemFunction023
+                  SystemFunction024
+                  SystemFunction025
+                  SystemFunction026
+                  SystemFunction027
+                  SystemFunction028
+                  SystemFunction029
+                  SystemFunction030
+                  SystemFunction031
+                  SystemFunction032
+                  SystemFunction033
+                  SystemFunction034
+                  SystemFunction036
+                  SystemFunction040
+                  SystemFunction041
+                  TraceEvent
+                  TraceMessage
+                  TraceMessageVa
+                  TraceQueryInformation
+                  TraceSetInformation
+                  TreeResetNamedSecurityInfoW
+                  UnregisterTraceGuids
+                  UpdateTraceA
+                  UpdateTraceW
+                  WaitServiceState
+                  WriteEncryptedFileRaw
+                  ApphelpCheckShellObject
+                  SdbGetKnownSafeLayers
+                  SE_COM_AddHook
+                  SE_COM_AddServer
+                  SE_COM_Lookup
+                  SE_GetShimId
+                  SE_ShimDPF
+                  SE_WINRT_AddHook
+                  SE_WINRT_HookObject
+             8    CreateMappedBitmap
+                  CreatePropertySheetPageA
+                  CreatePropertySheetPageW
+                  CreateToolbarEx
+           413    DefSubclassProc
+                  DestroyPropertySheetPage
+           331    DPA_Clone
+           328    DPA_Create
+           340    DPA_CreateEx
+           337    DPA_DeleteAllPtrs
+           336    DPA_DeletePtr
+           329    DPA_Destroy
+           386    DPA_DestroyCallback
+           385    DPA_EnumCallback
+           332    DPA_GetPtr
+           333    DPA_GetPtrIndex
+           330    DPA_Grow
+           334    DPA_InsertPtr
+                  DPA_Merge
+           339    DPA_Search
+           335    DPA_SetPtr
+           338    DPA_Sort
+                  DSA_Clone
+           320    DSA_Create
+           327    DSA_DeleteAllItems
+           326    DSA_DeleteItem
+           321    DSA_Destroy
+           388    DSA_DestroyCallback
+           387    DSA_EnumCallback
+           322    DSA_GetItem
+           323    DSA_GetItemPtr
+                  DSA_GetSize
+           324    DSA_InsertItem
+           325    DSA_SetItem
+                  DSA_Sort
+                  ImageList_Add
+                  ImageList_AddMasked
+                  ImageList_BeginDrag
+                  ImageList_Copy
+                  ImageList_Create
+                  ImageList_Destroy
+                  ImageList_DragEnter
+                  ImageList_DragLeave
+                  ImageList_DragMove
+                  ImageList_DragShowNolock
+                  ImageList_Draw
+                  ImageList_DrawIndirect
+                  ImageList_Duplicate
+                  ImageList_EndDrag
+                  ImageList_GetBkColor
+                  ImageList_GetDragImage
+                  ImageList_GetIcon
+                  ImageList_GetImageCount
+                  ImageList_GetImageInfo
+                  ImageList_LoadImageA
+                  ImageList_LoadImageW
+                  ImageList_Merge
+                  ImageList_Read
+                  ImageList_Remove
+                  ImageList_Replace
+                  ImageList_ReplaceIcon
+                  ImageList_SetBkColor
+                  ImageList_SetDragCursorImage
+                  ImageList_SetImageCount
+                  ImageList_SetOverlayImage
+                  ImageList_Write
+            17    InitCommonControls
+                  InitCommonControlsEx
+                  LBItemFromPt
+                  MakeDragList
+                  PropertySheetA
+                  PropertySheetW
+           410    SetWindowSubclass
+                  ChooseColorA
+                  ChooseColorW
+                  ChooseFontA
+                  ChooseFontW
+                  CommDlgExtendedError
+                  FindTextA
+                  FindTextW
+                  GetFileTitleA
+                  GetFileTitleW
+                  GetOpenFileNameA
+                  GetOpenFileNameW
+                  GetSaveFileNameA
+                  GetSaveFileNameW
+                  PageSetupDlgA
+                  PageSetupDlgW
+                  PrintDlgA
+                  PrintDlgW
+                  ReplaceTextA
+                  ReplaceTextW
+                  D3D10CompileShader
+                  D3D10CreateDevice
+                  D3D10CreateDeviceAndSwapChain
+                  D3D10CreateEffectFromMemory
+                  D3DPERF_BeginEvent
+                  D3DPERF_EndEvent
+                  D3DPERF_SetMarker
+                  Direct3DCreate9
+                  Direct3DCreate9Ex
+                  D3DX10CreateEffectFromFileA
+                  D3DX10CreateShaderResourceViewFromFileA
+                  D3DX10CreateTextureFromFileA
+                  D3DX10LoadTextureFromTexture
+                  D3DX10SaveTextureToFileA
+                  DriverPackageInstallW
+                  DriverPackageUninstallW
+                  AbortDoc
+                  AddFontMemResourceEx
+                  Arc
+                  BeginGdiRendering
+                  BeginPath
+                  BitBlt
+                  ChoosePixelFormat
+                  CloseEnhMetaFile
+                  CloseFigure
+                  CloseMetaFile
+                  CombineRgn
+                  CreateBitmap
+                  CreateBitmapFromDxSurface2
+                  CreateBitmapIndirect
+                  CreateBrushIndirect
+                  CreateColorSpaceW
+                  CreateCompatibleBitmap
+                  CreateCompatibleDC
+                  CreateDCA
+                  CreateDCW
+                  CreateDIBitmap
+                  CreateDIBPatternBrushPt
+                  CreateDIBSection
+                  CreateEnhMetaFileA
+                  CreateEnhMetaFileW
+                  CreateFontA
+                  CreateFontIndirectA
+                  CreateFontIndirectW
+                  CreateFontW
+                  CreateHalftonePalette
+                  CreateHatchBrush
+                  CreateICW
+                  CreateMetaFileA
+                  CreateMetaFileW
+                  CreatePalette
+                  CreatePatternBrush
+                  CreatePen
+                  CreatePolygonRgn
+                  CreateRectRgn
+                  CreateRectRgnIndirect
+                  CreateRoundRectRgn
+                  CreateSolidBrush
+                  DeleteColorSpace
+                  DeleteDC
+                  DeleteEnhMetaFile
+                  DeleteMetaFile
+                  DeleteObject
+                  DPtoLP
+                  Ellipse
+                  EndDoc
+                  EndGdiRendering
+                  EndPage
+                  EndPath
+                  EnumFontFamiliesA
+                  EnumFontFamiliesExA
+                  EnumFontFamiliesExW
+                  EnumFontFamiliesW
+                  EnumFontsW
+                  EnumMetaFile
+                  EnumObjects
+                  EqualRgn
+                  ExcludeClipRect
+                  ExtCreatePen
+                  ExtCreateRegion
+                  ExtEscape
+                  ExtSelectClipRgn
+                  ExtTextOutA
+                  ExtTextOutW
+                  FillPath
+                  FillRgn
+                  GdiAlphaBlend
+                  GdiFlush
+                  GdiGradientFill
+                  GdiTransparentBlt
+                  GetBitmapBits
+                  GetBkColor
+                  GetBkMode
+                  GetBrushOrgEx
+                  GetCharABCWidthsW
+                  GetCharacterPlacementA
+                  GetCharacterPlacementW
+                  GetCharWidth32A
+                  GetCharWidthA
+                  GetCharWidthW
+                  GetClipBox
+                  GetClipRgn
+                  GetCurrentDpiInfo
+                  GetCurrentObject
+                  GetCurrentPositionEx
+                  GetDCBrushColor
+                  GetDCOrgEx
+                  GetDeviceCaps
+                  GetDIBColorTable
+                  GetDIBits
+                  GetEnhMetaFileA
+                  GetEnhMetaFileBits
+                  GetEnhMetaFileHeader
+                  GetEnhMetaFilePaletteEntries
+                  GetEnhMetaFileW
+                  GetFontData
+                  GetFontFileData
+                  GetFontFileInfo
+                  GetFontLanguageInfo
+                  GetFontRealizationInfo
+                  GetFontUnicodeRanges
+                  GetGlyphIndicesA
+                  GetGlyphIndicesW
+                  GetGlyphOutlineA
+                  GetGlyphOutlineW
+                  GetKerningPairsA
+                  GetKerningPairsW
+                  GetLayout
+                  GetMapMode
+                  GetMetaFileA
+                  GetMetaFileBitsEx
+                  GetMetaFileW
+                  GetNearestPaletteIndex
+                  GetObjectA
+                  GetObjectType
+                  GetObjectW
+                  GetOutlineTextMetricsA
+                  GetOutlineTextMetricsW
+                  GetPaletteEntries
+                  GetPixel
+                  GetProcessSessionFonts
+                  GetRandomRgn
+                  GetRegionData
+                  GetRgnBox
+                  GetROP2
+                  GetStockObject
+                  GetSystemPaletteEntries
+                  GetTextAlign
+                  GetTextCharset
+                  GetTextCharsetInfo
+                  GetTextColor
+                  GetTextExtentExPointI
+                  GetTextExtentExPointW
+                  GetTextExtentPoint32W
+                  GetTextExtentPointA
+                  GetTextExtentPointW
+                  GetTextFaceA
+                  GetTextFaceW
+                  GetTextMetricsA
+                  GetTextMetricsW
+                  GetViewportExtEx
+                  GetViewportOrgEx
+                  GetWindowExtEx
+                  GetWindowOrgEx
+                  GetWinMetaFileBits
+                  GetWorldTransform
+                  IntersectClipRect
+                  LineTo
+                  LPtoDP
+                  MaskBlt
+                  MoveToEx
+                  OffsetRgn
+                  OffsetViewportOrgEx
+                  OffsetWindowOrgEx
+                  PatBlt
+                  PathToRegion
+                  PlayEnhMetaFile
+                  PlayMetaFile
+                  PlgBlt
+                  PolyBezierTo
+                  Polygon
+                  Polyline
+                  PtInRegion
+                  RealizePalette
+                  Rectangle
+                  RectInRegion
+                  RectVisible
+                  RemoveFontMemResourceEx
+                  RestoreDC
+                  SaveDC
+                  SelectClipPath
+                  SelectClipRgn
+                  SelectObject
+                  SelectPalette
+                  SetBkColor
+                  SetBkMode
+                  SetBrushOrgEx
+                  SetColorSpace
+                  SetDCBrushColor
+                  SetDCPenColor
+                  SetDIBColorTable
+                  SetDIBits
+                  SetDIBitsToDevice
+                  SetEnhMetaFileBits
+                  SetGraphicsMode
+                  SetICMMode
+                  SetLayout
+                  SetMapMode
+                  SetMetaFileBitsEx
+                  SetMetaRgn
+                  SetPixel
+                  SetPixelFormat
+                  SetPolyFillMode
+                  SetRectRgn
+                  SetROP2
+                  SetStretchBltMode
+                  SetTextAlign
+                  SetTextCharacterExtra
+                  SetTextColor
+                  SetViewportExtEx
+                  SetViewportOrgEx
+                  SetWindowExtEx
+                  SetWindowOrgEx
+                  SetWorldTransform
+                  StartDocA
+                  StartDocW
+                  StartPage
+                  StretchBlt
+                  StretchDIBits
+                  StrokeAndFillPath
+                  StrokePath
+                  SwapBuffers
+                  TextOutA
+                  TextOutW
+                  TranslateCharsetInfo
+                  UnrealizeObject
+                  EnumEnabledLayoutOrTip
+                  EnumEnabledLayoutOrTipPrivate
+                  EnumLayoutOrTipForSetup
+                  GetLayoutDescription
+                  InstallLayoutOrTip
+                  InstallLayoutOrTipUserReg
+                  QueryLayoutOrTipString
+                  QueryLayoutOrTipStringUserReg
+                  SaveDefaultUserInputSettings
+                  SaveSystemAcctInputSettings
+                  SetDefaultLayoutOrTip
+                  _lclose
+                  _lcreat
+                  _llseek
+                  _lopen
+                  _lread
+                  _lwrite
+                  AcquireSRWLockExclusive
+                  AcquireSRWLockShared
+                  ActivateActCtx
+                  AddAtomA
+                  AddAtomW
+                  AddConsoleAliasA
+                  AddConsoleAliasW
+                  AddDllDirectory
+                  AddLocalAlternateComputerNameA
+                  AddLocalAlternateComputerNameW
+                  AddRefActCtx
+                  AddResourceAttributeAce
+                  AddScopedPolicyIDAce
+                  AddSIDToBoundaryDescriptor
+                  AddVectoredContinueHandler
+                  AddVectoredExceptionHandler
+                  AllocateUserPhysicalPages
+                  AllocateUserPhysicalPagesNuma
+                  AllocConsole
+                  AppPolicyGetClrCompat
+                  AppPolicyGetCreateFileAccess
+                  AppPolicyGetLifecycleManagement
+                  AppPolicyGetMediaFoundationCodecLoading
+                  AppPolicyGetProcessTerminationMethod
+                  AppPolicyGetShowDeveloperDiagnostic
+                  AppPolicyGetThreadInitializationType
+                  AppPolicyGetWindowingModel
+                  AreFileApisANSI
+                  AssignProcessToJobObject
+                  AttachConsole
+                  BackupRead
+                  ?BackupSeek@@YAHPAXKKPAK10@Z (int __cdecl BackupSeek(void *,unsigned long,unsigned long,unsigned long *,unsigned long *,void *))
+                  BackupWrite
+                  BaseSetLastNTError
+                  Beep
+                  BeginUpdateResourceA
+                  BeginUpdateResourceW
+                  BindIoCompletionCallback
+                  BuildCommDCBW
+                  CallbackMayRunLong
+                  CallNamedPipeA
+                  CallNamedPipeW
+                  CancelIo
+                  CancelIoEx
+                  CancelSynchronousIo
+                  CancelThreadpoolIo
+                  CancelWaitableTimer
+                  CeipIsOptedIn
+                  ChangeTimerQueueTimer
+                  CheckElevation
+                  CheckElevationEnabled
+                  CheckRemoteDebuggerPresent
+                  CheckTokenCapability
+                  CheckTokenMembershipEx
+                  ClearCommBreak
+                  ClearCommError
+                  CloseHandle
+                  ClosePackageInfo
+                  ClosePrivateNamespace
+                  CloseState
+                  CloseThreadpool
+                  CloseThreadpoolCleanupGroup
+                  CloseThreadpoolCleanupGroupMembers
+                  CloseThreadpoolIo
+                  CloseThreadpoolTimer
+                  CloseThreadpoolWait
+                  CloseThreadpoolWork
+                  CompareFileTime
+                  CompareStringA
+                  CompareStringEx
+                  CompareStringOrdinal
+                  CompareStringW
+                  ConnectNamedPipe
+                  ContinueDebugEvent
+                  ConvertDefaultLocale
+                  ConvertFiberToThread
+                  ConvertThreadToFiber
+                  ConvertThreadToFiberEx
+                  CopyContext
+                  CopyFile2
+                  CopyFileA
+                  CopyFileExA
+                  CopyFileExW
+                  CopyFileTransactedW
+                  CopyFileW
+                  CopyLZFile
+                  CreateActCtxA
+                  CreateActCtxW
+                  CreateBoundaryDescriptorA
+                  CreateBoundaryDescriptorW
+                  CreateConsoleScreenBuffer
+                  CreateDirectoryA
+                  CreateDirectoryExA
+                  CreateDirectoryExW
+                  CreateDirectoryTransactedW
+                  CreateDirectoryW
+                  CreateEnclave
+                  CreateEventA
+                  CreateEventExA
+                  CreateEventExW
+                  CreateEventW
+                  CreateFiber
+                  CreateFiberEx
+                  CreateFile2
+                  CreateFileA
+                  CreateFileMappingA
+                  CreateFileMappingFromApp
+                  CreateFileMappingNumaA
+                  CreateFileMappingNumaW
+                  CreateFileMappingW
+                  CreateFileTransactedA
+                  CreateFileTransactedW
+                  CreateFileW
+                  CreateHardLinkA
+                  CreateHardLinkTransactedW
+                  CreateHardLinkW
+                  CreateIoCompletionPort
+                  CreateJobObjectA
+                  CreateJobObjectW
+                  CreateMailslotA
+                  CreateMailslotW
+                  CreateMemoryResourceNotification
+                  CreateMutexA
+                  CreateMutexExA
+                  CreateMutexExW
+                  CreateMutexW
+                  CreateNamedPipeA
+                  CreateNamedPipeW
+                  CreatePipe
+                  CreatePrivateNamespaceA
+                  CreatePrivateNamespaceW
+                  CreateProcessA
+                  CreateProcessW
+                  CreateRemoteThread
+                  CreateRemoteThreadEx
+                  CreateSemaphoreA
+                  CreateSemaphoreExA
+                  CreateSemaphoreExW
+                  CreateSemaphoreW
+                  CreateSymbolicLinkA
+                  CreateSymbolicLinkTransactedW
+                  CreateSymbolicLinkW
+                  CreateTapePartition
+                  CreateThread
+                  CreateThreadpool
+                  CreateThreadpoolCleanupGroup
+                  CreateThreadpoolIo
+                  CreateThreadpoolTimer
+                  CreateThreadpoolWait
+                  CreateThreadpoolWork
+                  CreateTimerQueue
+                  CreateTimerQueueTimer
+                  CreateToolhelp32Snapshot
+                  CreateWaitableTimerA
+                  CreateWaitableTimerExA
+                  CreateWaitableTimerExW
+                  CreateWaitableTimerW
+                  DeactivateActCtx
+                  DebugActiveProcess
+                  DebugActiveProcessStop
+                  DebugBreak
+                  DebugSetProcessKillOnExit
+                  DecodePointer
+                  DecodeSystemPointer
+                  DefineDosDeviceA
+                  DefineDosDeviceW
+                  DelayLoadFailureHook
+                  DeleteAtom
+                  DeleteBoundaryDescriptor
+                  DeleteCriticalSection
+                  DeleteFiber
+                  DeleteFileA
+                  DeleteFileTransactedW
+                  DeleteFileW
+                  DeleteProcThreadAttributeList
+                  DeleteSynchronizationBarrier
+                  DeleteTimerQueue
+                  DeleteTimerQueueEx
+                  DeleteTimerQueueTimer
+                  DeleteVolumeMountPointA
+                  DeleteVolumeMountPointW
+                  DeviceIoControl
+                  DisableThreadLibraryCalls
+                  DisassociateCurrentThreadFromCallback
+                  DiscardVirtualMemory
+                  DisconnectNamedPipe
+                  DnsHostnameToComputerNameExW
+                  DnsHostnameToComputerNameW
+                  DosDateTimeToFileTime
+                  DosPathToSessionPathW
+                  DuplicateHandle
+                  EncodePointer
+                  EncodeSystemPointer
+                  EndUpdateResourceW
+                  EnterCriticalSection
+                  EnterSynchronizationBarrier
+                  EnumCalendarInfoA
+                  EnumCalendarInfoExA
+                  EnumCalendarInfoExEx
+                  EnumCalendarInfoExW
+                  EnumCalendarInfoW
+                  EnumDateFormatsA
+                  EnumDateFormatsExA
+                  EnumDateFormatsExEx
+                  EnumDateFormatsExW
+                  EnumDateFormatsW
+                  EnumerateLocalComputerNamesW
+                  EnumLanguageGroupLocalesA
+                  EnumLanguageGroupLocalesW
+                  EnumResourceLanguagesA
+                  EnumResourceLanguagesExA
+                  EnumResourceLanguagesExW
+                  EnumResourceLanguagesW
+                  EnumResourceNamesExA
+                  EnumResourceNamesExW
+                  EnumResourceNamesW
+                  EnumResourceTypesExA
+                  EnumResourceTypesExW
+                  EnumResourceTypesW
+                  EnumSystemCodePagesA
+                  EnumSystemCodePagesW
+                  EnumSystemFirmwareTables
+                  EnumSystemGeoID
+                  EnumSystemLanguageGroupsA
+                  EnumSystemLanguageGroupsW
+                  EnumSystemLocalesA
+                  EnumSystemLocalesEx
+                  EnumSystemLocalesW
+                  EnumTimeFormatsA
+                  EnumTimeFormatsEx
+                  EnumTimeFormatsW
+                  EnumUILanguagesA
+                  EnumUILanguagesW
+                  EraseTape
+                  EscapeCommFunction
+                  ExitProcess
+                  ExitThread
+                  ExpandEnvironmentStringsA
+                  ExpandEnvironmentStringsW
+                  FatalAppExitA
+                  FatalAppExitW
+                  FileTimeToDosDateTime
+                  FileTimeToLocalFileTime
+                  FileTimeToSystemTime
+                  FillConsoleOutputAttribute
+                  FillConsoleOutputCharacterA
+                  FillConsoleOutputCharacterW
+                  FindActCtxSectionGuid
+                  FindActCtxSectionStringA
+                  FindActCtxSectionStringW
+                  FindAtomA
+                  FindAtomW
+                  FindClose
+                  FindCloseChangeNotification
+                  FindFirstChangeNotificationA
+                  FindFirstChangeNotificationW
+                  FindFirstFileA
+                  FindFirstFileExA
+                  FindFirstFileExW
+                  FindFirstFileNameW
+                  FindFirstFileTransactedW
+                  FindFirstFileW
+                  FindFirstStreamW
+                  FindFirstVolumeA
+                  FindFirstVolumeMountPointA
+                  FindFirstVolumeMountPointW
+                  FindFirstVolumeW
+                  FindNextChangeNotification
+                  FindNextFileA
+                  FindNextFileNameW
+                  FindNextFileW
+                  FindNextStreamW
+                  FindNextVolumeA
+                  FindNextVolumeMountPointA
+                  FindNextVolumeMountPointW
+                  FindNextVolumeW
+                  FindNLSString
+                  FindNLSStringEx
+                  FindPackagesByPackageFamily
+                  FindResourceA
+                  FindResourceExA
+                  FindResourceExW
+                  FindResourceW
+                  FindStringOrdinal
+                  FindVolumeClose
+                  FindVolumeMountPointClose
+                  FlsAlloc
+                  FlsFree
+                  FlsGetValue
+                  FlsSetValue
+                  FlushConsoleInputBuffer
+                  FlushFileBuffers
+                  FlushInstructionCache
+                  FlushProcessWriteBuffers
+                  FlushViewOfFile
+                  FoldStringA
+                  FoldStringW
+                  FormatApplicationUserModelId
+                  FormatMessageA
+                  FormatMessageW
+                  FreeConsole
+                  FreeEnvironmentStringsA
+                  FreeEnvironmentStringsW
+                  FreeLibrary
+                  FreeLibraryAndExitThread
+                  FreeLibraryWhenCallbackReturns
+                  FreeMemoryJobObject
+                  FreeResource
+                  FreeUserPhysicalPages
+                  GenerateConsoleCtrlEvent
+                  GetACP
+                  GetActiveProcessorCount
+                  GetActiveProcessorGroupCount
+                  GetAppContainerAce
+                  GetAppContainerNamedObjectPath
+                  GetApplicationRecoveryCallback
+                  GetApplicationRecoveryCallbackWorker
+                  GetApplicationRestartSettings
+                  GetApplicationRestartSettingsWorker
+                  GetApplicationUserModelId
+                  GetApplicationUserModelIdFromToken
+                  GetAtomNameA
+                  GetAtomNameW
+                  GetBinaryTypeA
+                  GetBinaryTypeW
+                  GetCachedSigningLevel
+                  GetCalendarInfoA
+                  GetCalendarInfoEx
+                  GetCalendarInfoW
+                  GetCommandLineA
+                  GetCommandLineW
+                  GetCommConfig
+                  GetCommMask
+                  GetCommModemStatus
+                  GetCommProperties
+                  GetCommState
+                  GetCommTimeouts
+                  GetCompressedFileSizeA
+                  GetCompressedFileSizeTransactedW
+                  GetCompressedFileSizeW
+                  GetComputerNameA
+                  GetComputerNameExA
+                  GetComputerNameExW
+                  GetComputerNameW
+                  GetConsoleAliasA
+                  GetConsoleAliasesA
+                  GetConsoleAliasesLengthA
+                  GetConsoleAliasesLengthW
+                  GetConsoleAliasesW
+                  GetConsoleAliasExesA
+                  GetConsoleAliasExesLengthA
+                  GetConsoleAliasExesLengthW
+                  GetConsoleAliasExesW
+                  GetConsoleAliasW
+                  GetConsoleCP
+                  GetConsoleCursorInfo
+                  GetConsoleDisplayMode
+                  GetConsoleFontSize
+                  GetConsoleHistoryInfo
+                  GetConsoleMode
+                  GetConsoleOriginalTitleA
+                  GetConsoleOriginalTitleW
+                  GetConsoleOutputCP
+                  GetConsoleProcessList
+                  GetConsoleScreenBufferInfo
+                  GetConsoleScreenBufferInfoEx
+                  GetConsoleSelectionInfo
+                  GetConsoleTitleA
+                  GetConsoleTitleW
+                  GetConsoleWindow
+                  GetCPInfo
+                  GetCPInfoExA
+                  GetCPInfoExW
+                  GetCurrencyFormatA
+                  GetCurrencyFormatEx
+                  GetCurrencyFormatW
+                  GetCurrentActCtx
+                  GetCurrentApplicationUserModelId
+                  GetCurrentConsoleFont
+                  GetCurrentConsoleFontEx
+                  GetCurrentDirectoryA
+                  GetCurrentDirectoryW
+                  GetCurrentPackageFamilyName
+                  GetCurrentPackageFullName
+                  GetCurrentPackageId
+                  GetCurrentPackageInfo
+                  GetCurrentPackagePath
+                  GetCurrentProcess
+                  GetCurrentProcessId
+                  GetCurrentProcessorNumber
+                  GetCurrentProcessorNumberEx
+                  GetCurrentThread
+                  GetCurrentThreadId
+                  GetCurrentThreadStackLimits
+                  GetDateFormatA
+                  GetDateFormatEx
+                  GetDateFormatW
+                  GetDevicePowerState
+                  GetDiskFreeSpaceA
+                  GetDiskFreeSpaceExA
+                  GetDiskFreeSpaceExW
+                  GetDiskFreeSpaceW
+                  GetDllDirectoryW
+                  GetDriveTypeA
+                  GetDriveTypeW
+                  GetDurationFormatEx
+                  GetDynamicTimeZoneInformation
+                  GetEnvironmentStrings
+                  GetEnvironmentStringsA
+                  GetEnvironmentStringsW
+                  GetEnvironmentVariableA
+                  GetEnvironmentVariableW
+                  GetErrorMode
+                  GetExitCodeProcess
+                  GetExitCodeThread
+                  GetExpandedNameA
+                  GetExpandedNameW
+                  GetFileAttributesA
+                  GetFileAttributesExA
+                  GetFileAttributesExW
+                  GetFileAttributesTransactedA
+                  GetFileAttributesTransactedW
+                  GetFileAttributesW
+                  GetFileInformationByHandle
+                  GetFileInformationByHandleEx
+                  GetFileMUIInfo
+                  GetFileMUIPath
+                  GetFileSize
+                  GetFileSizeEx
+                  GetFileTime
+                  GetFileType
+                  GetFinalPathNameByHandleA
+                  GetFinalPathNameByHandleW
+                  GetFirmwareEnvironmentVariableA
+                  GetFirmwareEnvironmentVariableExA
+                  GetFirmwareEnvironmentVariableExW
+                  GetFirmwareEnvironmentVariableW
+                  GetFirmwareType
+                  GetFullPathNameA
+                  GetFullPathNameTransactedW
+                  GetFullPathNameW
+                  GetGeoInfoA
+                  GetGeoInfoW
+                  GetHandleInformation
+                  GetLargePageMinimum
+                  GetLargestConsoleWindowSize
+                  GetLastError
+                  GetLocaleInfoA
+                  GetLocaleInfoEx
+                  GetLocaleInfoW
+                  GetLocalTime
+                  GetLogicalDrives
+                  GetLogicalDriveStringsA
+                  GetLogicalDriveStringsW
+                  GetLogicalProcessorInformation
+                  GetLogicalProcessorInformationEx
+                  GetLongPathNameA
+                  GetLongPathNameTransactedW
+                  GetLongPathNameW
+                  GetMailslotInfo
+                  GetMaximumProcessorCount
+                  GetMaximumProcessorGroupCount
+                  GetMemoryErrorHandlingCapabilities
+                  GetModuleFileNameA
+                  GetModuleFileNameW
+                  GetModuleHandleA
+                  GetModuleHandleExA
+                  GetModuleHandleExW
+                  GetModuleHandleW
+                  GetNamedPipeClientComputerNameA
+                  GetNamedPipeClientComputerNameW
+                  GetNamedPipeClientProcessId
+                  GetNamedPipeHandleStateA
+                  GetNamedPipeHandleStateW
+                  GetNamedPipeInfo
+                  GetNamedPipeServerProcessId
+                  GetNativeSystemInfo
+                  GetNLSVersion
+                  GetNLSVersionEx
+                  GetNumaAvailableMemoryNodeEx
+                  GetNumaHighestNodeNumber
+                  GetNumaNodeProcessorMask
+                  GetNumaNodeProcessorMaskEx
+                  GetNumaProcessorNodeEx
+                  GetNumaProximityNodeEx
+                  GetNumberFormatA
+                  GetNumberFormatEx
+                  GetNumberFormatW
+                  GetNumberOfConsoleInputEvents
+                  GetNumberOfConsoleMouseButtons
+                  GetOEMCP
+                  GetOverlappedResult
+                  GetOverlappedResultEx
+                  GetPackageApplicationIds
+                  GetPackageFamilyName
+                  GetPackageFamilyNameFromToken
+                  GetPackageFullName
+                  GetPackageFullNameFromToken
+                  GetPackageId
+                  GetPackageInfo
+                  GetPackagePath
+                  GetPackagePathByFullName
+                  GetPackagesByPackageFamily
+                  GetPhysicallyInstalledSystemMemory
+                  GetPriorityClass
+                  GetPrivateProfileIntA
+                  GetPrivateProfileIntW
+                  GetPrivateProfileSectionA
+                  GetPrivateProfileSectionNamesW
+                  GetPrivateProfileSectionW
+                  GetPrivateProfileStringA
+                  GetPrivateProfileStringW
+                  GetPrivateProfileStructW
+                  GetProcAddress
+                  GetProcessAffinityMask
+                  GetProcessDefaultCpuSets
+                  GetProcessGroupAffinity
+                  GetProcessHandleCount
+                  GetProcessHeap
+                  GetProcessHeaps
+                  GetProcessId
+                  GetProcessIdOfThread
+                  GetProcessInformation
+                  GetProcessIoCounters
+                  GetProcessMitigationPolicy
+                  GetProcessorSystemCycleTime
+                  GetProcessPreferredUILanguages
+                  GetProcessPriorityBoost
+                  GetProcessShutdownParameters
+                  GetProcessTimes
+                  GetProcessVersion
+                  GetProcessWorkingSetSize
+                  GetProcessWorkingSetSizeEx
+                  GetProductInfo
+                  GetProfileIntA
+                  GetProfileIntW
+                  GetProfileSectionA
+                  GetProfileSectionW
+                  GetProfileStringA
+                  GetProfileStringW
+                  GetQueuedCompletionStatus
+                  GetQueuedCompletionStatusEx
+                  GetShortPathNameA
+                  GetShortPathNameW
+                  GetStagedPackageOrigin
+                  GetStagedPackagePathByFullName
+                  GetStartupInfoA
+                  GetStartupInfoW
+                  GetStdHandle
+                  GetStringScripts
+                  GetStringTypeA
+                  GetStringTypeExA
+                  GetStringTypeExW
+                  GetStringTypeW
+                  GetSystemAppDataKey
+                  GetSystemCpuSetInformation
+                  GetSystemDefaultLangID
+                  GetSystemDefaultLCID
+                  GetSystemDefaultLocaleName
+                  GetSystemDefaultUILanguage
+                  GetSystemDirectoryA
+                  GetSystemDirectoryW
+                  GetSystemFileCacheSize
+                  GetSystemFirmwareTable
+                  GetSystemInfo
+                  GetSystemPowerStatus
+                  GetSystemPreferredUILanguages
+                  GetSystemTime
+                  GetSystemTimeAdjustment
+                  GetSystemTimeAsFileTime
+                  GetSystemTimePreciseAsFileTime
+                  GetSystemTimes
+                  GetSystemWindowsDirectoryA
+                  GetSystemWindowsDirectoryW
+                  GetSystemWow64DirectoryA
+                  GetSystemWow64DirectoryW
+                  GetTapeParameters
+                  GetTapePosition
+                  GetTapeStatus
+                  GetTempFileNameA
+                  GetTempFileNameW
+                  GetTempPathA
+                  GetTempPathW
+                  GetThreadContext
+                  GetThreadErrorMode
+                  GetThreadGroupAffinity
+                  GetThreadId
+                  GetThreadIdealProcessorEx
+                  GetThreadInformation
+                  GetThreadIOPendingFlag
+                  GetThreadLocale
+                  GetThreadPreferredUILanguages
+                  GetThreadPriority
+                  GetThreadPriorityBoost
+                  GetThreadSelectedCpuSets
+                  GetThreadSelectorEntry
+                  GetThreadTimes
+                  GetThreadUILanguage
+                  GetTickCount
+                  GetTickCount64
+                  GetTimeFormatA
+                  GetTimeFormatEx
+                  GetTimeFormatW
+                  GetTimeZoneInformation
+                  GetTimeZoneInformationForYear
+                  GetUILanguageInfo
+                  GetUserDefaultLangID
+                  GetUserDefaultLCID
+                  GetUserDefaultLocaleName
+                  GetUserDefaultUILanguage
+                  GetUserGeoID
+                  GetUserPreferredUILanguages
+                  GetVersion
+                  GetVersionExA
+                  GetVersionExW
+                  GetVolumeInformationA
+                  GetVolumeInformationByHandleW
+                  GetVolumeInformationW
+                  GetVolumeNameForVolumeMountPointA
+                  GetVolumeNameForVolumeMountPointW
+                  GetVolumePathNameA
+                  GetVolumePathNamesForVolumeNameA
+                  GetVolumePathNamesForVolumeNameW
+                  GetVolumePathNameW
+                  GetWindowsDirectoryA
+                  GetWindowsDirectoryW
+                  GetWriteWatch
+                  GlobalAddAtomA
+                  GlobalAddAtomExA
+                  GlobalAddAtomExW
+                  GlobalAddAtomW
+                  GlobalAlloc
+                  GlobalDeleteAtom
+                  GlobalFindAtomA
+                  GlobalFindAtomW
+                  GlobalFlags
+                  GlobalFree
+                  GlobalGetAtomNameA
+                  GlobalGetAtomNameW
+                  GlobalHandle
+                  GlobalLock
+                  GlobalMemoryStatus
+                  GlobalMemoryStatusEx
+                  GlobalReAlloc
+                  GlobalSize
+                  GlobalUnlock
+                  Heap32First
+                  Heap32ListFirst
+                  Heap32ListNext
+                  Heap32Next
+                  HeapAlloc
+                  HeapCompact
+                  HeapCreate
+                  HeapDestroy
+                  HeapFree
+                  HeapLock
+                  HeapQueryInformation
+                  HeapReAlloc
+                  HeapSetInformation
+                  HeapSize
+                  HeapUnlock
+                  HeapValidate
+                  HeapWalk
+                  InitAtomTable
+                  InitializeConditionVariable
+                  InitializeContext
+                  InitializeCriticalSection
+                  InitializeCriticalSectionAndSpinCount
+                  InitializeCriticalSectionEx
+                  InitializeEnclave
+                  InitializeProcThreadAttributeList
+                  InitializeSListHead
+                  InitializeSRWLock
+                  InitializeSynchronizationBarrier
+                  InitOnceBeginInitialize
+                  InitOnceComplete
+                  InitOnceExecuteOnce
+                  InitOnceInitialize
+                  InstallELAMCertificateInfo
+                  InterlockedFlushSList
+                  InterlockedPopEntrySList
+                  InterlockedPushEntrySList
+                  InterlockedPushListSListEx
+                  IsBadCodePtr
+                  IsBadHugeReadPtr
+                  IsBadHugeWritePtr
+                  IsBadReadPtr
+                  IsBadStringPtrA
+                  IsBadStringPtrW
+                  IsBadWritePtr
+                  IsDBCSLeadByte
+                  IsDBCSLeadByteEx
+                  IsDebuggerPresent
+                  IsEnclaveTypeSupported
+                  IsNLSDefinedString
+                  IsNormalizedString
+                  IsProcessCritical
+                  IsProcessInJob
+                  IsProcessorFeaturePresent
+                  IsSystemResumeAutomatic
+                  IsThreadAFiber
+                  IsThreadpoolTimerSet
+                  IsValidCodePage
+                  IsValidLanguageGroup
+                  IsValidLocale
+                  IsValidLocaleName
+                  IsValidNLSVersion
+                  IsWow64Process
+                  K32EmptyWorkingSet
+                  K32EnumDeviceDrivers
+                  K32EnumPageFilesA
+                  K32EnumPageFilesW
+                  K32EnumProcesses
+                  K32EnumProcessModules
+                  K32EnumProcessModulesEx
+                  K32GetDeviceDriverBaseNameA
+                  K32GetDeviceDriverBaseNameW
+                  K32GetDeviceDriverFileNameA
+                  K32GetDeviceDriverFileNameW
+                  K32GetMappedFileNameA
+                  K32GetMappedFileNameW
+                  K32GetModuleBaseNameA
+                  K32GetModuleBaseNameW
+                  K32GetModuleFileNameExA
+                  K32GetModuleFileNameExW
+                  K32GetModuleInformation
+                  K32GetPerformanceInfo
+                  K32GetProcessImageFileNameA
+                  K32GetProcessImageFileNameW
+                  K32GetProcessMemoryInfo
+                  K32GetWsChanges
+                  K32GetWsChangesEx
+                  K32InitializeProcessForWsWatch
+                  K32QueryWorkingSet
+                  K32QueryWorkingSetEx
+                  LCIDToLocaleName
+                  LCMapStringA
+                  LCMapStringEx
+                  LCMapStringW
+                  LeaveCriticalSection
+                  LeaveCriticalSectionWhenCallbackReturns
+                  LoadAppInitDlls
+                  LoadEnclaveData
+                  LoadLibraryA
+                  LoadLibraryExA
+                  LoadLibraryExW
+                  LoadLibraryW
+                  LoadPackagedLibrary
+                  LoadResource
+                  LocalAlloc
+                  LocaleNameToLCID
+                  LocalFileTimeToFileTime
+                  LocalFlags
+                  LocalFree
+                  LocalLock
+                  LocalReAlloc
+                  LocalSize
+                  LocalUnlock
+                  LockFile
+                  LockFileEx
+                  LockResource
+                  lstrcat
+                  lstrcatA
+                  lstrcatW
+                  lstrcmp
+                  lstrcmpA
+                  lstrcmpi
+                  lstrcmpiA
+                  lstrcmpiW
+                  lstrcmpW
+                  lstrcpy
+                  lstrcpyA
+                  lstrcpyn
+                  lstrcpynA
+                  lstrcpynW
+                  lstrcpyW
+                  lstrlen
+                  lstrlenA
+                  lstrlenW
+                  LZClose
+                  LZCloseFile
+                  LZCopy
+                  LZCreateFileW
+                  LZDone
+                  LZInit
+                  LZOpenFileA
+                  LZOpenFileW
+                  LZRead
+                  LZSeek
+                  LZStart
+                  MapUserPhysicalPages
+                  MapViewOfFile
+                  MapViewOfFileEx
+                  MapViewOfFileFromApp
+                  Module32First
+                  Module32FirstW
+                  Module32Next
+                  Module32NextW
+                  MoveFileA
+                  MoveFileExA
+                  MoveFileExW
+                  MoveFileTransactedW
+                  MoveFileW
+                  MoveFileWithProgressA
+                  MoveFileWithProgressW
+                  MulDiv
+                  MultiByteToWideChar
+                  NeedCurrentDirectoryForExePathA
+                  NeedCurrentDirectoryForExePathW
+                  NormalizeString
+                  OfferVirtualMemory
+                  OOBEComplete
+                  OpenEventA
+                  OpenEventW
+                  OpenFile
+                  OpenFileById
+                  OpenFileMappingA
+                  OpenFileMappingW
+                  OpenJobObjectA
+                  OpenJobObjectW
+                  OpenMutexA
+                  OpenMutexW
+                  OpenPackageInfoByFullName
+                  OpenPackageInfoByFullNameForUser
+                  OpenPrivateNamespaceA
+                  OpenPrivateNamespaceW
+                  OpenProcess
+                  OpenSemaphoreA
+                  OpenSemaphoreW
+                  OpenStateExplicit
+                  OpenThread
+                  OpenWaitableTimerA
+                  OpenWaitableTimerW
+                  OutputDebugStringA
+                  OutputDebugStringW
+                  PackageFamilyNameFromFullName
+                  PackageFamilyNameFromId
+                  PackageFullNameFromId
+                  PackageIdFromFullName
+                  PackageNameAndPublisherIdFromFamilyName
+                  ParseApplicationUserModelId
+                  PeekConsoleInputA
+                  PeekConsoleInputW
+                  PeekNamedPipe
+                  PostQueuedCompletionStatus
+                  PowerClearRequest
+                  PowerCreateRequest
+                  PowerSetRequest
+                  PrefetchVirtualMemory
+                  PrepareTape
+                  PrivCopyFileExW
+                  Process32First
+                  Process32FirstW
+                  Process32Next
+                  Process32NextW
+                  ProcessIdToSessionId
+                  PssCaptureSnapshot
+                  PssDuplicateSnapshot
+                  PssFreeSnapshot
+                  PssQuerySnapshot
+                  PssWalkMarkerCreate
+                  PssWalkMarkerFree
+                  PssWalkMarkerGetPosition
+                  PssWalkMarkerSeekToBeginning
+                  PssWalkMarkerSetPosition
+                  PssWalkSnapshot
+                  PulseEvent
+                  PurgeComm
+                  QueryActCtxSettingsW
+                  QueryActCtxW
+                  QueryDepthSList
+                  QueryDosDeviceA
+                  QueryDosDeviceW
+                  QueryFullProcessImageNameA
+                  QueryFullProcessImageNameW
+                  QueryIdleProcessorCycleTime
+                  QueryIdleProcessorCycleTimeEx
+                  QueryInformationJobObject
+                  QueryIoRateControlInformationJobObject
+                  QueryMemoryResourceNotification
+                  QueryPerformanceCounter
+                  QueryPerformanceFrequency
+                  QueryProcessAffinityUpdateMode
+                  QueryProcessCycleTime
+                  QueryProtectedPolicy
+                  QueryThreadCycleTime
+                  QueryThreadpoolStackInformation
+                  QueryUnbiasedInterruptTime
+                  QueueUserAPC
+                  QueueUserWorkItem
+                  RaiseException
+                  RaiseFailFastException
+                  ReadConsoleA
+                  ReadConsoleInputA
+                  ReadConsoleInputW
+                  ReadConsoleOutputA
+                  ReadConsoleOutputAttribute
+                  ReadConsoleOutputCharacterA
+                  ReadConsoleOutputCharacterW
+                  ReadConsoleOutputW
+                  ReadConsoleW
+                  ReadDirectoryChangesW
+                  ReadFile
+                  ReadFileEx
+                  ReadFileScatter
+                  ReadProcessMemory
+                  ReclaimVirtualMemory
+                  RegisterApplicationRestart
+                  RegisterBadMemoryNotification
+                  RegisterWaitForInputIdle
+                  RegisterWaitForSingleObject
+                  RegisterWaitForSingleObjectEx
+                  RegisterWaitUntilOOBECompleted
+                  ReleaseActCtx
+                  ReleaseMutex
+                  ReleaseMutexWhenCallbackReturns
+                  ReleaseSemaphore
+                  ReleaseSemaphoreWhenCallbackReturns
+                  ReleaseSRWLockExclusive
+                  ReleaseSRWLockShared
+                  RemoveDirectoryA
+                  RemoveDirectoryTransactedW
+                  RemoveDirectoryW
+                  RemoveDllDirectory
+                  RemoveLocalAlternateComputerNameW
+                  RemoveVectoredContinueHandler
+                  RemoveVectoredExceptionHandler
+                  ReOpenFile
+                  ReplaceFileA
+                  ReplaceFileW
+                  RequestWakeupLatency
+                  ResetEvent
+                  ResetWriteWatch
+                  ResolveDelayLoadedAPI
+                  ResolveDelayLoadsFromDll
+                  ResolveLocaleName
+                  RestoreLastError
+                  ResumeThread
+                  RtlAddFunctionTable
+                  RtlCaptureContext
+                  RtlCaptureStackBackTrace
+                  RtlCompareMemory
+                  RtlDeleteFunctionTable
+                  RtlInstallFunctionTableCallback
+                  RtlLookupFunctionEntry
+                  RtlPcToFileHeader
+                  RtlRaiseException
+                  RtlRestoreContext
+                  RtlUnwind
+                  RtlUnwindEx
+                  RtlVirtualUnwind
+                  ScrollConsoleScreenBufferA
+                  ScrollConsoleScreenBufferW
+                  SearchPathA
+                  SearchPathW
+                  SetCachedSigningLevel
+                  SetCalendarInfoA
+                  SetCalendarInfoW
+                  SetCommBreak
+                  SetCommConfig
+                  SetCommMask
+                  SetCommState
+                  SetCommTimeouts
+                  SetComputerNameA
+                  SetComputerNameEx2W
+                  SetComputerNameExA
+                  SetComputerNameExW
+                  SetComputerNameW
+                  SetConsoleActiveScreenBuffer
+                  SetConsoleCP
+                  SetConsoleCtrlHandler
+                  SetConsoleCursorInfo
+                  SetConsoleCursorPosition
+                  SetConsoleDisplayMode
+                  SetConsoleHistoryInfo
+                  SetConsoleMode
+                  SetConsoleOutputCP
+                  SetConsoleScreenBufferInfoEx
+                  SetConsoleScreenBufferSize
+                  SetConsoleTextAttribute
+                  SetConsoleTitleA
+                  SetConsoleTitleW
+                  SetConsoleWindowInfo
+                  SetCriticalSectionSpinCount
+                  SetCurrentConsoleFontEx
+                  SetCurrentDirectoryA
+                  SetCurrentDirectoryW
+                  SetDefaultDllDirectories
+                  SetDllDirectoryA
+                  SetDllDirectoryW
+                  SetDynamicTimeZoneInformation
+                  SetEndOfFile
+                  SetEnvironmentStringsA
+                  SetEnvironmentStringsW
+                  SetEnvironmentVariableA
+                  SetEnvironmentVariableW
+                  SetErrorMode
+                  SetEvent
+                  SetEventWhenCallbackReturns
+                  SetFileApisToANSI
+                  SetFileApisToOEM
+                  SetFileAttributesA
+                  SetFileAttributesTransactedW
+                  SetFileAttributesW
+                  SetFileCompletionNotificationModes
+                  SetFileInformationByHandle
+                  SetFileIoOverlappedRange
+                  SetFilePointer
+                  SetFilePointerEx
+                  SetFileTime
+                  SetFileValidData
+                  SetFirmwareEnvironmentVariableA
+                  SetFirmwareEnvironmentVariableExA
+                  SetFirmwareEnvironmentVariableExW
+                  SetFirmwareEnvironmentVariableW
+                  SetHandleCount
+                  SetHandleInformation
+                  SetInformationJobObject
+                  SetIoRateControlInformationJobObject
+                  SetLastError
+                  SetLocaleInfoA
+                  SetLocaleInfoW
+                  SetLocalPrimaryComputerNameW
+                  SetLocalTime
+                  SetMailslotInfo
+                  SetNamedPipeHandleState
+                  SetPriorityClass
+                  SetProcessAffinityMask
+                  SetProcessAffinityUpdateMode
+                  SetProcessDefaultCpuSets
+                  SetProcessDEPPolicy
+                  SetProcessInformation
+                  SetProcessMitigationPolicy
+                  SetProcessPreferredUILanguages
+                  SetProcessPriorityBoost
+                  SetProcessShutdownParameters
+                  SetProcessWorkingSetSize
+                  SetProcessWorkingSetSizeEx
+                  SetProtectedPolicy
+                  SetStdHandle
+                  SetStdHandleEx
+                  SetSystemFileCacheSize
+                  SetSystemPowerState
+                  SetSystemTime
+                  SetSystemTimeAdjustment
+                  SetTapeParameters
+                  SetTapePosition
+                  SetThreadAffinityMask
+                  SetThreadContext
+                  SetThreadErrorMode
+                  SetThreadExecutionState
+                  SetThreadGroupAffinity
+                  SetThreadIdealProcessor
+                  SetThreadIdealProcessorEx
+                  SetThreadInformation
+                  SetThreadLocale
+                  SetThreadpoolStackInformation
+                  SetThreadpoolThreadMaximum
+                  SetThreadpoolThreadMinimum
+                  SetThreadpoolTimer
+                  SetThreadpoolTimerEx
+                  SetThreadpoolWait
+                  SetThreadpoolWaitEx
+                  SetThreadPreferredUILanguages
+                  SetThreadPriority
+                  SetThreadPriorityBoost
+                  SetThreadSelectedCpuSets
+                  SetThreadStackGuarantee
+                  SetThreadUILanguage
+                  SetTimeZoneInformation
+                  SetUnhandledExceptionFilter
+                  SetupComm
+                  SetUserGeoID
+                  SetVolumeLabelA
+                  SetVolumeLabelW
+                  SetVolumeMountPointA
+                  SetVolumeMountPointW
+                  SetWaitableTimer
+                  SetWaitableTimerEx
+                  SignalObjectAndWait
+                  SizeofResource
+                  Sleep
+                  SleepConditionVariableCS
+                  SleepConditionVariableSRW
+                  SleepEx
+                  StartThreadpoolIo
+                  SubmitThreadpoolWork
+                  SuspendThread
+                  SwitchToFiber
+                  SwitchToThread
+                  SystemTimeToFileTime
+                  SystemTimeToTzSpecificLocalTime
+                  SystemTimeToTzSpecificLocalTimeEx
+                  TerminateJobObject
+                  TerminateProcess
+                  TerminateThread
+                  Thread32First
+                  Thread32Next
+                  TlsAlloc
+                  TlsFree
+                  TlsGetValue
+                  TlsSetValue
+                  TransactNamedPipe
+                  TransmitCommChar
+                  TryAcquireSRWLockExclusive
+                  TryAcquireSRWLockShared
+                  TryEnterCriticalSection
+                  TrySubmitThreadpoolCallback
+                  TzSpecificLocalTimeToSystemTime
+                  TzSpecificLocalTimeToSystemTimeEx
+                  UnhandledExceptionFilter
+                  UnlockFile
+                  UnlockFileEx
+                  UnmapViewOfFile
+                  UnmapViewOfFileEx
+                  UnregisterBadMemoryNotification
+                  UnregisterWait
+                  UnregisterWaitEx
+                  UnregisterWaitUntilOOBECompleted
+                  UpdateProcThreadAttribute
+                  UpdateResourceW
+                  VerifyApplicationUserModelId
+                  VerifyPackageFamilyName
+                  VerifyPackageFullName
+                  VerifyPackageId
+                  VerifyPackageRelativeApplicationId
+                  VerifyScripts
+                  VerifyVersionInfoA
+                  VerifyVersionInfoW
+                  VerLanguageNameA
+                  VerLanguageNameW
+                  VerSetConditionMask
+                  VirtualAlloc
+                  VirtualAllocEx
+                  VirtualAllocExNuma
+                  VirtualFree
+                  VirtualFreeEx
+                  VirtualLock
+                  VirtualProtect
+                  VirtualProtectEx
+                  VirtualQuery
+                  VirtualQueryEx
+                  VirtualUnlock
+                  WaitCommEvent
+                  WaitForDebugEvent
+                  WaitForDebugEventEx
+                  WaitForMultipleObjects
+                  WaitForMultipleObjectsEx
+                  WaitForSingleObject
+                  WaitForSingleObjectEx
+                  WaitForThreadpoolIoCallbacks
+                  WaitForThreadpoolTimerCallbacks
+                  WaitForThreadpoolWaitCallbacks
+                  WaitForThreadpoolWorkCallbacks
+                  WaitNamedPipeA
+                  WaitNamedPipeW
+                  WakeAllConditionVariable
+                  WakeConditionVariable
+                  WerGetFlags
+                  WerGetFlagsWorker
+                  WerpNotifyLoadStringResourceWorker
+                  WerpNotifyUseStringResourceWorker
+                  WerRegisterFile
+                  WerRegisterFileWorker
+                  WerRegisterMemoryBlock
+                  WerRegisterMemoryBlockWorker
+                  WerRegisterRuntimeExceptionModule
+                  WerRegisterRuntimeExceptionModuleWorker
+                  WerSetFlags
+                  WerSetFlagsWorker
+                  WerUnregisterFile
+                  WerUnregisterFileWorker
+                  WerUnregisterMemoryBlock
+                  WerUnregisterMemoryBlockWorker
+                  WerUnregisterRuntimeExceptionModule
+                  WerUnregisterRuntimeExceptionModuleWorker
+                  WideCharToMultiByte
+                  WinExec
+                  Wow64DisableWow64FsRedirection
+                  Wow64EnableWow64FsRedirection
+                  Wow64RevertWow64FsRedirection
+                  WriteConsoleA
+                  WriteConsoleInputA
+                  WriteConsoleInputW
+                  WriteConsoleOutputA
+                  WriteConsoleOutputAttribute
+                  WriteConsoleOutputCharacterA
+                  WriteConsoleOutputCharacterW
+                  WriteConsoleOutputW
+                  WriteConsoleW
+                  WriteFile
+                  WriteFileEx
+                  WriteFileGather
+                  WritePrivateProfileSectionA
+                  WritePrivateProfileSectionW
+                  WritePrivateProfileStringA
+                  WritePrivateProfileStringW
+                  WritePrivateProfileStructW
+                  WriteProcessMemory
+                  WriteProfileStringW
+                  WriteTapemark
+                  WTSGetActiveConsoleSessionId
+                  ZombifyActCtx
+                  MsiApplyMultiplePatchesW
+                  MsiApplyPatchW
+                  MsiCloseHandle
+                  MsiConfigureProductExW
+                  MsiConfigureProductW
+                  MsiCreateRecord
+                  MsiDatabaseIsTablePersistentW
+                  MsiDatabaseOpenViewW
+                  MsiDeterminePatchSequenceW
+                  MsiEnumPatchesExW
+                  MsiEnumProductsW
+                  MsiFormatRecordW
+                  MsiGetPatchInfoExW
+                  MsiGetProductInfoExW
+                  MsiGetProductInfoW
+                  MsiGetPropertyW
+                  MsiGetSummaryInformationW
+                  MsiInstallProductW
+                  MsiOpenDatabaseW
+                  MsiProcessMessage
+                  MsiQueryComponentStateW
+                  MsiQueryFeatureStateExW
+                  MsiQueryProductStateW
+                  MsiRecordGetFieldCount
+                  MsiRecordGetInteger
+                  MsiRecordGetStringW
+                  MsiRecordIsNull
+                  MsiRecordSetInteger
+                  MsiRecordSetStringW
+                  MsiRemovePatchesW
+                  MsiSetExternalUIRecord
+                  MsiSetInternalUI
+                  MsiSetMode
+                  MsiSourceListAddSourceExW
+                  MsiSourceListClearSourceW
+                  MsiSourceListSetInfoW
+                  MsiSummaryInfoGetPropertyW
+                  MsiVerifyPackageW
+                  MsiViewExecute
+                  MsiViewFetch
+                  CheckDriverSoftwareDependenciesSatisfied
+                  DiInstallDevice
+                  DiInstallDriverW
+                  DiUninstallDevice
+                  DiUninstallDriverW
+                  InstallWindowsUpdateDriverEx
+                  InstallWindowsUpdateDrivers
+                  QueryWindowsUpdateDriverStatus
+                  UpdateDriverForPlugAndPlayDevicesA
+                  UpdateDriverForPlugAndPlayDevicesW
+                  BindMoniker
+                  CheckInitDde
+                  CleanROTForApartment
+                  ClipboardProcessUninitialize
+                  CLIPFORMAT_UserFree
+                  CLIPFORMAT_UserMarshal
+                  CLIPFORMAT_UserSize
+                  CLIPFORMAT_UserUnmarshal
+                  CLSIDFromProgID
+                  CLSIDFromProgIDEx
+                  CLSIDFromString
+                  CoAddRefServerProcess
+                  CoAicGetTokenForCOM
+                  CoAllowSetForegroundWindow
+                  CoAllowUnmarshalerCLSID
+                  CoCancelCall
+                  CoCheckElevationEnabled
+                  CoCopyProxy
+                  CoCreateFreeThreadedMarshaler
+                  CoCreateGuid
+                  CoCreateInstance
+                  CoCreateInstanceEx
+                  CoCreateInstanceFromApp
+                  CoCreateObjectInContext
+                  CoDeactivateObject
+                  CoDecodeProxy
+                  CoDecrementMTAUsage
+                  CoDisableCallCancellation
+                  CoDisconnectContext
+                  CoDisconnectObject
+                  CoDosDateTimeToFileTime
+                  CoEnableCallCancellation
+                  CoFileTimeNow
+                  CoFileTimeToDosDateTime
+                  CoFreeAllLibraries
+                  CoFreeLibrary
+                  CoFreeUnusedLibraries
+                  CoFreeUnusedLibrariesEx
+                  CoGetApartmentID
+                  CoGetApartmentType
+                  CoGetCallContext
+                  CoGetCallerTID
+                  CoGetCancelObject
+                  CoGetClassObject
+                  CoGetClassVersion
+                  CoGetContextToken
+                  CoGetCurrentLogicalThreadId
+                  CoGetCurrentProcess
+                  CoGetDefaultContext
+                  CoGetInstanceFromFile
+                  CoGetInstanceFromIStorage
+                  CoGetInterceptorForOle32
+                  CoGetInterfaceAndReleaseStream
+                  CoGetMalloc
+                  CoGetMarshalSizeMax
+                  CoGetObject
+                  CoGetObjectContext
+                  CoGetProcessIdentifier
+                  CoGetPSClsid
+                  CoGetStandardMarshal
+                  CoGetStdMarshalEx
+                  CoGetSystemSecurityPermissions
+                  CoGetSystemWow64DirectoryW
+                  CoGetTreatAsClass
+                  CoImpersonateClient
+                  CoIncrementMTAUsage
+                  CoInitialize
+                  CoInitializeEx
+                  CoInitializeSecurity
+                  CoInitializeWOW
+                  CoInvalidateRemoteMachineBindings
+                  CoIsHandlerConnected
+                  CoLoadLibrary
+                  CoLockObjectExternal
+                  CoMarshalHresult
+                  CoMarshalInterface
+                  CoMarshalInterThreadInterfaceInStream
+                  CoQueryAuthenticationServices
+                  CoQueryClientBlanket
+                  CoQueryProxyBlanket
+                  CoReactivateObject
+                  CoRegisterActivationFilter
+                  CoRegisterClassObject
+                  CoRegisterInitializeSpy
+                  CoRegisterMallocSpy
+                  CoRegisterMessageFilter
+                  CoRegisterPSClsid
+                  CoRegisterSurrogate
+                  CoRegisterSurrogateEx
+                  CoReleaseMarshalData
+                  CoReleaseServerProcess
+                  CoResumeClassObjects
+                  CoRetireServer
+                  CoRevertToSelf
+                  CoRevokeClassObject
+                  CoRevokeInitializeSpy
+                  CoRevokeMallocSpy
+                  CoSetCancelObject
+                  CoSetProxyBlanket
+                  CoSuspendClassObjects
+                  CoSwitchCallContext
+                  CoTaskMemAlloc
+                  CoTaskMemFree
+                  CoTaskMemRealloc
+                  CoTestCancel
+                  CoTreatAsClass
+                  CoUninitialize
+                  CoUnloadingWOW
+                  CoUnmarshalHresult
+                  CoUnmarshalInterface
+                  CoWaitForMultipleHandles
+                  CoWaitForMultipleObjects
+                  CreateAntiMoniker
+                  CreateBindCtx
+                  CreateClassMoniker
+                  CreateDataAdviseHolder
+                  CreateDataCache
+                  CreateFileMoniker
+                  CreateGenericComposite
+                  CreateILockBytesOnHGlobal
+                  CreateItemMoniker
+                  CreateObjrefMoniker
+                  CreateOleAdviseHolder
+                  CreatePointerMoniker
+                  CreateStreamOnHGlobal
+                  CStdAsyncStubBuffer_AddRef
+                  CStdAsyncStubBuffer_Connect
+                  CStdAsyncStubBuffer_Disconnect
+                  CStdAsyncStubBuffer_Invoke
+                  CStdAsyncStubBuffer_QueryInterface
+                  CStdAsyncStubBuffer_Release
+                  CStdAsyncStubBuffer2_Connect
+                  CStdAsyncStubBuffer2_Disconnect
+                  CStdAsyncStubBuffer2_Release
+                  CStdStubBuffer2_Connect
+                  CStdStubBuffer2_CountRefs
+                  CStdStubBuffer2_Disconnect
+                  CStdStubBuffer2_QueryInterface
+                  DdeBindToObject
+                  DeletePatternAndExtensionTables
+                  DestroyRunningObjectTable
+                  DllDebugObjectRPCHook
+                  DoDragDrop
+                  DragDropSetFDT
+                  EnableHookObject
+                  FindExt
+                  FreePropVariantArray
+                  GetClassFile
+                  GetHGlobalFromStream
+                  GetHookInterface
+                  GetObjectFromRotByPath
+                  GetRunningObjectTable
+                  HACCEL_UserFree
+                  HACCEL_UserMarshal
+                  HACCEL_UserSize
+                  HACCEL_UserUnmarshal
+                  HBITMAP_UserFree
+                  HBITMAP_UserMarshal
+                  HBITMAP_UserSize
+                  HBITMAP_UserUnmarshal
+                  HBRUSH_UserFree
+                  HBRUSH_UserMarshal
+                  HBRUSH_UserSize
+                  HBRUSH_UserUnmarshal
+                  HDC_UserFree
+                  HDC_UserMarshal
+                  HDC_UserSize
+                  HDC_UserUnmarshal
+                  HGLOBAL_UserFree
+                  HGLOBAL_UserMarshal
+                  HGLOBAL_UserSize
+                  HGLOBAL_UserUnmarshal
+                  HICON_UserFree
+                  HICON_UserMarshal
+                  HICON_UserSize
+                  HICON_UserUnmarshal
+                  HkOleRegisterObject
+                  HMENU_UserFree
+                  HMENU_UserMarshal
+                  HMENU_UserSize
+                  HMENU_UserUnmarshal
+                  HMONITOR_UserFree
+                  HMONITOR_UserMarshal
+                  HMONITOR_UserSize
+                  HMONITOR_UserUnmarshal
+                  HPALETTE_UserFree
+                  HPALETTE_UserMarshal
+                  HPALETTE_UserSize
+                  HPALETTE_UserUnmarshal
+                  HRGN_UserFree
+                  HRGN_UserMarshal
+                  HRGN_UserSize
+                  HRGN_UserUnmarshal
+                  HWND_UserFree
+                  HWND_UserMarshal
+                  HWND_UserSize
+                  HWND_UserUnmarshal
+                  IIDFromString
+                  IsAccelerator
+                  IsRoInitializeASTAAllowedInDesktop
+                  MkParseDisplayName
+                  NdrProxyForwardingFunction10
+                  NdrProxyForwardingFunction11
+                  NdrProxyForwardingFunction12
+                  NdrProxyForwardingFunction13
+                  NdrProxyForwardingFunction14
+                  NdrProxyForwardingFunction15
+                  NdrProxyForwardingFunction16
+                  NdrProxyForwardingFunction17
+                  NdrProxyForwardingFunction18
+                  NdrProxyForwardingFunction19
+                  NdrProxyForwardingFunction20
+                  NdrProxyForwardingFunction21
+                  NdrProxyForwardingFunction22
+                  NdrProxyForwardingFunction23
+                  NdrProxyForwardingFunction24
+                  NdrProxyForwardingFunction25
+                  NdrProxyForwardingFunction26
+                  NdrProxyForwardingFunction27
+                  NdrProxyForwardingFunction28
+                  NdrProxyForwardingFunction29
+                  NdrProxyForwardingFunction3
+                  NdrProxyForwardingFunction30
+                  NdrProxyForwardingFunction31
+                  NdrProxyForwardingFunction32
+                  NdrProxyForwardingFunction4
+                  NdrProxyForwardingFunction5
+                  NdrProxyForwardingFunction6
+                  NdrProxyForwardingFunction7
+                  NdrProxyForwardingFunction8
+                  NdrProxyForwardingFunction9
+                  ObjectStublessClient10
+                  ObjectStublessClient11
+                  ObjectStublessClient12
+                  ObjectStublessClient13
+                  ObjectStublessClient14
+                  ObjectStublessClient15
+                  ObjectStublessClient16
+                  ObjectStublessClient17
+                  ObjectStublessClient18
+                  ObjectStublessClient19
+                  ObjectStublessClient20
+                  ObjectStublessClient21
+                  ObjectStublessClient22
+                  ObjectStublessClient23
+                  ObjectStublessClient24
+                  ObjectStublessClient25
+                  ObjectStublessClient26
+                  ObjectStublessClient27
+                  ObjectStublessClient28
+                  ObjectStublessClient29
+                  ObjectStublessClient3
+                  ObjectStublessClient30
+                  ObjectStublessClient31
+                  ObjectStublessClient32
+                  ObjectStublessClient4
+                  ObjectStublessClient5
+                  ObjectStublessClient6
+                  ObjectStublessClient7
+                  ObjectStublessClient8
+                  ObjectStublessClient9
+                  Ole32DllGetClassObject
+                  OleCreate
+                  OleCreateDragOperationInternal
+                  OleCreateEmbeddingHelper
+                  OleCreateFromData
+                  OleCreateFromFile
+                  OleCreateLinkFromData
+                  OleCreateLinkToFile
+                  OleCreateMenuDescriptor
+                  OleCreateStaticFromData
+                  OleDestroyMenuDescriptor
+                  OleDraw
+                  OleDuplicateData
+                  OleFlushClipboard
+                  OleGetAutoConvert
+                  OleGetClipboard
+                  OleGetIconOfClass
+                  OleGetPackageClipboardOwner
+                  OleInitClipboardBroker
+                  OleInitialize
+                  OleIsCurrentClipboard
+                  OleIsRunning
+                  OleLoad
+                  OleLoadFromStream
+                  OleLockRunning
+                  OleQueryCreateFromData
+                  OleQueryLinkFromData
+                  OleRegEnumVerbs
+                  OleRegGetMiscStatus
+                  OleRegGetUserType
+                  OleRegisterDropTargetInternal
+                  OleReleaseEnumVerbCache
+                  OleRevokeDropTargetInternal
+                  OleRun
+                  OleRundownClipboardBroker
+                  OleSave
+                  OleSaveToStream
+                  OleSetClipboard
+                  OleSetContainedObject
+                  OleSetMenuDescriptor
+                  OleStartDragOperationInternal
+                  OleTranslateAccelerator
+                  OleUninitialize
+                  ProgIDFromCLSID
+                  PropVariantClear
+                  PropVariantCopy
+                  ReadClassStg
+                  ReadClassStm
+                  ReadFmtUserTypeStg
+                  RegisterDragDrop
+                  ReleaseStgMedium
+                  RevokeDragDrop
+                  RoGetAgileReference
+                  SetConvertStg
+                  SetWOWThunkGlobalPtr
+                  StgCreateDocfile
+                  StgCreateDocfileOnILockBytes
+                  StgCreatePropSetStg
+                  StgCreateStorageEx
+                  StgIsStorageFile
+                  STGMEDIUM_UserFree
+                  STGMEDIUM_UserFree64
+                  STGMEDIUM_UserMarshal
+                  STGMEDIUM_UserMarshal64
+                  STGMEDIUM_UserSize
+                  STGMEDIUM_UserSize64
+                  STGMEDIUM_UserUnmarshal
+                  STGMEDIUM_UserUnmarshal64
+                  StgOpenStorage
+                  StgOpenStorageEx
+                  StgOpenStorageOnILockBytes
+                  StringFromCLSID
+                  StringFromGUID2
+                  StringFromIID
+                  UpdateDCOMSettings
+                  WriteClassStg
+                  WriteClassStm
+                  WriteFmtUserTypeStg
+                  AccessibleChildren
+                  AccessibleObjectFromEvent
+                  AccessibleObjectFromPoint
+                  AccessibleObjectFromWindow
+                  AccessibleObjectFromWindowTimeout
+                  CreateStdAccessibleObject
+                  GetProcessHandleFromHwnd
+                  GetRoleTextW
+                  LresultFromObject
+                  ObjectFromLresult
+                  PropMgrClient_LookupProp
+                  WindowFromAccessibleObject
+           286    BSTR_UserFree
+           284    BSTR_UserMarshal
+           283    BSTR_UserSize
+           285    BSTR_UserUnmarshal
+           414    BstrFromVector
+           171    ClearCustData
+            31    CreateDispTypeInfo
+           202    CreateErrorInfo
+            32    CreateStdDispatch
+           160    CreateTypeLib
+           180    CreateTypeLib2
+           146    DispCallFunc
+            29    DispGetIDsOfNames
+            28    DispGetParam
+            30    DispInvoke
+            14    DosDateTimeToVariantTime
+            35    GetActiveObject
+           332    GetAltMonthNames
+           200    GetErrorInfo
+           322    GetRecordInfoFromGuids
+           323    GetRecordInfoFromTypeInfo
+           326    GetVarConversionLocaleSetting
+           165    LHashValOfNameSys
+           166    LHashValOfNameSysA
+           162    LoadRegTypeLib
+           161    LoadTypeLib
+           183    LoadTypeLibEx
+           296    LPSAFEARRAY_Marshal
+           295    LPSAFEARRAY_Size
+           297    LPSAFEARRAY_Unmarshal
+           294    LPSAFEARRAY_UserFree
+           292    LPSAFEARRAY_UserMarshal
+           291    LPSAFEARRAY_UserSize
+           293    LPSAFEARRAY_UserUnmarshal
+           170    OaBuildVersion
+                  OACreateTypeLib2
+           444    OaEnablePerUserTLibRegistration
+           420    OleCreateFontIndirect
+           419    OleCreatePictureIndirect
+           417    OleCreatePropertyFrame
+           416    OleCreatePropertyFrameIndirect
+           415    OleIconToCursor
+           418    OleLoadPicture
+           401    OleLoadPictureEx
+           422    OleLoadPictureFile
+           402    OleLoadPictureFileEx
+           424    OleLoadPicturePath
+           423    OleSavePictureFile
+           421    OleTranslateColor
+           164    QueryPathOfRegTypeLib
+            33    RegisterActiveObject
+           163    RegisterTypeLib
+           442    RegisterTypeLibForUser
+            34    RevokeActiveObject
+            23    SafeArrayAccessData
+                  SafeArrayAddRef
+            37    SafeArrayAllocData
+            36    SafeArrayAllocDescriptor
+            41    SafeArrayAllocDescriptorEx
+            27    SafeArrayCopy
+           412    SafeArrayCopyData
+            15    SafeArrayCreate
+            42    SafeArrayCreateEx
+           411    SafeArrayCreateVector
+            43    SafeArrayCreateVectorEx
+            16    SafeArrayDestroy
+            39    SafeArrayDestroyData
+            38    SafeArrayDestroyDescriptor
+            17    SafeArrayGetDim
+            25    SafeArrayGetElement
+            18    SafeArrayGetElemsize
+            67    SafeArrayGetIID
+            20    SafeArrayGetLBound
+            45    SafeArrayGetRecordInfo
+            19    SafeArrayGetUBound
+            77    SafeArrayGetVartype
+            21    SafeArrayLock
+           148    SafeArrayPtrOfIndex
+            26    SafeArrayPutElement
+            40    SafeArrayRedim
+                  SafeArrayReleaseData
+                  SafeArrayReleaseDescriptor
+            57    SafeArraySetIID
+            44    SafeArraySetRecordInfo
+            24    SafeArrayUnaccessData
+            22    SafeArrayUnlock
+           201    SetErrorInfo
+           327    SetOaNoCache
+           325    SetVarConversionLocaleSetting
+                  SysAddRefString
+             2    SysAllocString
+           150    SysAllocStringByteLen
+             4    SysAllocStringLen
+             6    SysFreeString
+             3    SysReAllocString
+             5    SysReAllocStringLen
+                  SysReleaseString
+           149    SysStringByteLen
+             7    SysStringLen
+           184    SystemTimeToVariantTime
+           186    UnRegisterTypeLib
+           443    UnRegisterTypeLibForUser
+           168    VarAbs
+           141    VarAdd
+           142    VarAnd
+           124    VarBoolFromCy
+           123    VarBoolFromDate
+           236    VarBoolFromDec
+           126    VarBoolFromDisp
+           233    VarBoolFromI1
+           119    VarBoolFromI2
+           120    VarBoolFromI4
+           370    VarBoolFromI8
+           121    VarBoolFromR4
+           122    VarBoolFromR8
+           125    VarBoolFromStr
+           118    VarBoolFromUI1
+           234    VarBoolFromUI2
+           235    VarBoolFromUI4
+           371    VarBoolFromUI8
+           313    VarBstrCat
+           314    VarBstrCmp
+           116    VarBstrFromBool
+           113    VarBstrFromCy
+           114    VarBstrFromDate
+           232    VarBstrFromDec
+           115    VarBstrFromDisp
+           229    VarBstrFromI1
+           109    VarBstrFromI2
+           110    VarBstrFromI4
+           368    VarBstrFromI8
+           111    VarBstrFromR4
+           112    VarBstrFromR8
+           108    VarBstrFromUI1
+           230    VarBstrFromUI2
+           231    VarBstrFromUI4
+           369    VarBstrFromUI8
+           318    VarCat
+           176    VarCmp
+           306    VarCyAbs
+           299    VarCyAdd
+           311    VarCyCmp
+           312    VarCyCmpR8
+           307    VarCyFix
+           106    VarCyFromBool
+           103    VarCyFromDate
+           228    VarCyFromDec
+           105    VarCyFromDisp
+           225    VarCyFromI1
+            99    VarCyFromI2
+           100    VarCyFromI4
+           366    VarCyFromI8
+           101    VarCyFromR4
+           102    VarCyFromR8
+           104    VarCyFromStr
+            98    VarCyFromUI1
+           226    VarCyFromUI2
+           227    VarCyFromUI4
+           367    VarCyFromUI8
+           308    VarCyInt
+           303    VarCyMul
+           304    VarCyMulI4
+           329    VarCyMulI8
+           309    VarCyNeg
+           310    VarCyRound
+           305    VarCySub
+            96    VarDateFromBool
+            93    VarDateFromCy
+           224    VarDateFromDec
+            95    VarDateFromDisp
+           221    VarDateFromI1
+            89    VarDateFromI2
+            90    VarDateFromI4
+           364    VarDateFromI8
+            91    VarDateFromR4
+            92    VarDateFromR8
+            94    VarDateFromStr
+           330    VarDateFromUdate
+           319    VarDateFromUdateEx
+            88    VarDateFromUI1
+           222    VarDateFromUI2
+           223    VarDateFromUI4
+           365    VarDateFromUI8
+           182    VarDecAbs
+           177    VarDecAdd
+           204    VarDecCmp
+           298    VarDecCmpR8
+           178    VarDecDiv
+           187    VarDecFix
+           199    VarDecFromBool
+           196    VarDecFromCy
+           195    VarDecFromDate
+           198    VarDecFromDisp
+           241    VarDecFromI1
+           191    VarDecFromI2
+           192    VarDecFromI4
+           374    VarDecFromI8
+           193    VarDecFromR4
+           194    VarDecFromR8
+           197    VarDecFromStr
+           190    VarDecFromUI1
+           242    VarDecFromUI2
+           243    VarDecFromUI4
+           375    VarDecFromUI8
+           188    VarDecInt
+           179    VarDecMul
+           189    VarDecNeg
+           203    VarDecRound
+           181    VarDecSub
+           143    VarDiv
+           152    VarEqv
+           169    VarFix
+            87    VarFormat
+           127    VarFormatCurrency
+            97    VarFormatDateTime
+           139    VarFormatFromTokens
+           107    VarFormatNumber
+           117    VarFormatPercent
+           253    VarI1FromBool
+           250    VarI1FromCy
+           249    VarI1FromDate
+           256    VarI1FromDec
+           252    VarI1FromDisp
+           245    VarI1FromI2
+           246    VarI1FromI4
+           376    VarI1FromI8
+           247    VarI1FromR4
+           248    VarI1FromR8
+           251    VarI1FromStr
+           244    VarI1FromUI1
+           254    VarI1FromUI2
+           255    VarI1FromUI4
+           377    VarI1FromUI8
+            56    VarI2FromBool
+            52    VarI2FromCy
+            53    VarI2FromDate
+           208    VarI2FromDec
+            55    VarI2FromDisp
+           205    VarI2FromI1
+            49    VarI2FromI4
+           346    VarI2FromI8
+            50    VarI2FromR4
+            51    VarI2FromR8
+            54    VarI2FromStr
+            48    VarI2FromUI1
+           206    VarI2FromUI2
+           207    VarI2FromUI4
+           347    VarI2FromUI8
+            66    VarI4FromBool
+            62    VarI4FromCy
+            63    VarI4FromDate
+           212    VarI4FromDec
+            65    VarI4FromDisp
+           209    VarI4FromI1
+            59    VarI4FromI2
+           348    VarI4FromI8
+            60    VarI4FromR4
+            61    VarI4FromR8
+            64    VarI4FromStr
+            58    VarI4FromUI1
+           210    VarI4FromUI2
+           211    VarI4FromUI4
+           349    VarI4FromUI8
+           341    VarI8FromBool
+           337    VarI8FromCy
+           338    VarI8FromDate
+           345    VarI8FromDec
+           340    VarI8FromDisp
+           342    VarI8FromI1
+           334    VarI8FromI2
+           335    VarI8FromR4
+           336    VarI8FromR8
+           339    VarI8FromStr
+           333    VarI8FromUI1
+           343    VarI8FromUI2
+           344    VarI8FromUI4
+           427    VarI8FromUI8
+           290    VARIANT_UserFree
+           288    VARIANT_UserMarshal
+           287    VARIANT_UserSize
+           289    VARIANT_UserUnmarshal
+            12    VariantChangeType
+           147    VariantChangeTypeEx
+             9    VariantClear
+            10    VariantCopy
+            11    VariantCopyInd
+             8    VariantInit
+            13    VariantTimeToDosDateTime
+           185    VariantTimeToSystemTime
+           153    VarIdiv
+           154    VarImp
+           172    VarInt
+           155    VarMod
+           129    VarMonthName
+           156    VarMul
+           173    VarNeg
+           174    VarNot
+            47    VarNumFromParseNum
+           157    VarOr
+            46    VarParseNumFromStr
+           158    VarPow
+           316    VarR4CmpR8
+            76    VarR4FromBool
+            72    VarR4FromCy
+            73    VarR4FromDate
+           216    VarR4FromDec
+            75    VarR4FromDisp
+           213    VarR4FromI1
+            69    VarR4FromI2
+            70    VarR4FromI4
+           360    VarR4FromI8
+            71    VarR4FromR8
+            74    VarR4FromStr
+            68    VarR4FromUI1
+           214    VarR4FromUI2
+           215    VarR4FromUI4
+           361    VarR4FromUI8
+            86    VarR8FromBool
+            82    VarR8FromCy
+            83    VarR8FromDate
+           220    VarR8FromDec
+            85    VarR8FromDisp
+           217    VarR8FromI1
+            79    VarR8FromI2
+            80    VarR8FromI4
+           362    VarR8FromI8
+            81    VarR8FromR4
+            84    VarR8FromStr
+            78    VarR8FromUI1
+           218    VarR8FromUI2
+           219    VarR8FromUI4
+           363    VarR8FromUI8
+           315    VarR8Pow
+           317    VarR8Round
+           175    VarRound
+           159    VarSub
+           140    VarTokenizeFormatString
+           331    VarUdateFromDate
+           138    VarUI1FromBool
+           134    VarUI1FromCy
+           135    VarUI1FromDate
+           240    VarUI1FromDec
+           137    VarUI1FromDisp
+           237    VarUI1FromI1
+           130    VarUI1FromI2
+           131    VarUI1FromI4
+           372    VarUI1FromI8
+           132    VarUI1FromR4
+           133    VarUI1FromR8
+           136    VarUI1FromStr
+           238    VarUI1FromUI2
+           239    VarUI1FromUI4
+           373    VarUI1FromUI8
+           266    VarUI2FromBool
+           263    VarUI2FromCy
+           262    VarUI2FromDate
+           269    VarUI2FromDec
+           265    VarUI2FromDisp
+           267    VarUI2FromI1
+           258    VarUI2FromI2
+           259    VarUI2FromI4
+           378    VarUI2FromI8
+           260    VarUI2FromR4
+           261    VarUI2FromR8
+           264    VarUI2FromStr
+           257    VarUI2FromUI1
+           268    VarUI2FromUI4
+           379    VarUI2FromUI8
+           279    VarUI4FromBool
+           276    VarUI4FromCy
+           275    VarUI4FromDate
+           282    VarUI4FromDec
+           278    VarUI4FromDisp
+           280    VarUI4FromI1
+           271    VarUI4FromI2
+           272    VarUI4FromI4
+           425    VarUI4FromI8
+           273    VarUI4FromR4
+           274    VarUI4FromR8
+           277    VarUI4FromStr
+           270    VarUI4FromUI1
+           281    VarUI4FromUI2
+           426    VarUI4FromUI8
+           437    VarUI8FromBool
+           433    VarUI8FromCy
+           434    VarUI8FromDate
+           441    VarUI8FromDec
+           436    VarUI8FromDisp
+           438    VarUI8FromI1
+           430    VarUI8FromI2
+           428    VarUI8FromI8
+           431    VarUI8FromR4
+           432    VarUI8FromR8
+           435    VarUI8FromStr
+           429    VarUI8FromUI1
+           439    VarUI8FromUI2
+           440    VarUI8FromUI4
+           128    VarWeekdayName
+           167    VarXor
+           413    VectorFromBstr
+                  OleUIAddVerbMenuA
+                  OleUIAddVerbMenuW
+                  OleUIBusyA
+                  OleUIBusyW
+                  OleUIChangeIconA
+                  OleUIChangeIconW
+                  OleUIChangeSourceA
+                  OleUIChangeSourceW
+                  OleUIConvertA
+                  OleUIConvertW
+                  OleUIEditLinksA
+                  OleUIEditLinksW
+                  OleUIInsertObjectA
+                  OleUIInsertObjectW
+                  OleUIObjectPropertiesA
+                  OleUIObjectPropertiesW
+                  OleUIPasteSpecialA
+                  OleUIPasteSpecialW
+                  OleUIUpdateLinksA
+                  OleUIUpdateLinksW
+                  PdhAddCounterW
+                  PdhAddEnglishCounterW
+                  PdhCloseLog
+                  PdhCloseQuery
+                  PdhCollectQueryData
+                  PdhExpandWildCardPathW
+                  PdhGetCounterInfoW
+                  PdhGetFormattedCounterArrayW
+                  PdhGetFormattedCounterValue
+                  PdhGetRawCounterValue
+                  PdhOpenLogW
+                  PdhOpenQueryW
+                  PdhRemoveCounter
+                  PdhUpdateLogW
+                  PdhValidatePathW
+                  EmptyWorkingSet
+                  EnumDeviceDrivers
+                  EnumPageFilesA
+                  EnumPageFilesW
+                  EnumProcesses
+                  EnumProcessModules
+                  EnumProcessModulesEx
+                  GetDeviceDriverBaseNameA
+                  GetDeviceDriverBaseNameW
+                  GetDeviceDriverFileNameA
+                  GetDeviceDriverFileNameW
+                  GetMappedFileNameA
+                  GetMappedFileNameW
+                  GetModuleBaseNameA
+                  GetModuleBaseNameW
+                  GetModuleFileNameExA
+                  GetModuleFileNameExW
+                  GetModuleInformation
+                  GetPerformanceInfo
+                  GetProcessImageFileNameA
+                  GetProcessImageFileNameW
+                  GetProcessMemoryInfo
+                  GetWsChanges
+                  GetWsChangesEx
+                  InitializeProcessForWsWatch
+                  QueryWorkingSet
+                  QueryWorkingSetEx
+                  ClusterGetVolumePathName
+                  ClusterIsPathOnSharedVolume
+                  ResUtilEnumResourcesEx
+                  ResUtilFindDwordProperty
+                  ResUtilFindSzProperty
+                  ResUtilFreeParameterBlock
+                  ResUtilGetCoreClusterResources
+                  ResUtilGetResourceName
+                  ResUtilPropertyListFromParameterBlock
+                  ResUtilVerifyPropertyTable
+                  RmEndSession
+                  RmGetList
+                  RmRegisterResources
+                  RmRestart
+                  RmShutdown
+                  RmStartSession
+                  AcceptSecurityContext
+                  AcquireCredentialsHandleA
+                  AcquireCredentialsHandleW
+                  AddCredentialsA
+                  AddCredentialsW
+                  AddSecurityPackageA
+                  AddSecurityPackageW
+                  ApplyControlToken
+                  ChangeAccountPasswordA
+                  ChangeAccountPasswordW
+                  CompleteAuthToken
+                  DecryptMessage
+                  DeleteSecurityContext
+                  DeleteSecurityPackageA
+                  DeleteSecurityPackageW
+                  EncryptMessage
+                  EnumerateSecurityPackagesA
+                  EnumerateSecurityPackagesW
+                  ExportSecurityContext
+                  FreeContextBuffer
+                  FreeCredentialsHandle
+                  GetSecurityUserInfo
+                  GetUserNameExA
+                  GetUserNameExW
+                  ImpersonateSecurityContext
+                  ImportSecurityContextA
+                  ImportSecurityContextW
+                  InitializeSecurityContextA
+                  InitializeSecurityContextW
+                  InitSecurityInterfaceA
+                  InitSecurityInterfaceW
+                  LsaCallAuthenticationPackage
+                  LsaConnectUntrusted
+                  LsaDeregisterLogonProcess
+                  LsaEnumerateLogonSessions
+                  LsaFreeReturnBuffer
+                  LsaGetLogonSessionData
+                  LsaLogonUser
+                  LsaLookupAuthenticationPackage
+                  LsaRegisterLogonProcess
+                  LsaRegisterPolicyChangeNotification
+                  LsaUnregisterPolicyChangeNotification
+                  MakeSignature
+                  QueryContextAttributesA
+                  QueryContextAttributesW
+                  QueryCredentialsAttributesA
+                  QueryCredentialsAttributesW
+                  QuerySecurityContextToken
+                  QuerySecurityPackageInfoA
+                  QuerySecurityPackageInfoW
+                  RevertSecurityContext
+                  SaslAcceptSecurityContext
+                  SaslEnumerateProfilesA
+                  SaslEnumerateProfilesW
+                  SaslGetContextOption
+                  SaslGetProfilePackageA
+                  SaslGetProfilePackageW
+                  SaslIdentifyPackageA
+                  SaslIdentifyPackageW
+                  SaslInitializeSecurityContextA
+                  SaslInitializeSecurityContextW
+                  SaslSetContextOption
+                  SealMessage
+                  SeciAllocateAndSetCallFlags
+                  SeciAllocateAndSetIPAddress
+                  SeciFreeCallContext
+                  SetContextAttributesA
+                  SetContextAttributesW
+                  SetCredentialsAttributesA
+                  SetCredentialsAttributesW
+                  SspiCompareAuthIdentities
+                  SspiCopyAuthIdentity
+                  SspiDecryptAuthIdentity
+                  SspiEncodeAuthIdentityAsStrings
+                  SspiEncodeStringsAsAuthIdentity
+                  SspiEncryptAuthIdentity
+                  SspiExcludePackage
+                  SspiFreeAuthIdentity
+                  SspiGetTargetHostName
+                  SspiIsAuthIdentityEncrypted
+                  SspiLocalFree
+                  SspiMarshalAuthIdentity
+                  SspiPrepareForCredRead
+                  SspiPrepareForCredWrite
+                  SspiUnmarshalAuthIdentity
+                  SspiValidateAuthIdentity
+                  SspiZeroAuthIdentity
+                  UnsealMessage
+                  VerifySignature
+                  CM_Delete_Class_Key
+                  CM_Delete_Device_Interface_KeyA
+                  CM_Delete_Device_Interface_KeyW
+                  CM_Delete_DevNode_Key
+                  CM_Disable_DevNode
+                  CM_Enable_DevNode
+                  CM_Get_Child
+                  CM_Get_Class_Registry_PropertyA
+                  CM_Get_Class_Registry_PropertyW
+                  CM_Get_Depth
+                  CM_Get_Device_ID_ExW
+                  CM_Get_Device_ID_List_SizeA
+                  CM_Get_Device_ID_List_SizeW
+                  CM_Get_Device_ID_ListA
+                  CM_Get_Device_ID_ListW
+                  CM_Get_Device_ID_Size
+                  CM_Get_Device_ID_Size_Ex
+                  CM_Get_Device_IDA
+                  CM_Get_Device_IDW
+                  CM_Get_Device_Interface_List_SizeA
+                  CM_Get_Device_Interface_List_SizeW
+                  CM_Get_Device_Interface_ListA
+                  CM_Get_Device_Interface_ListW
+                  CM_Get_DevNode_Registry_PropertyA
+                  CM_Get_DevNode_Registry_PropertyW
+                  CM_Get_DevNode_Status
+                  CM_Get_Parent
+                  CM_Get_Sibling
+                  CM_Locate_DevNodeA
+                  CM_Locate_DevNodeW
+                  CM_Open_Class_KeyA
+                  CM_Open_Class_KeyW
+                  CM_Open_Device_Interface_KeyA
+                  CM_Open_Device_Interface_KeyW
+                  CM_Open_DevNode_Key
+                  CM_Query_And_Remove_SubTreeA
+                  CM_Query_And_Remove_SubTreeW
+                  CM_Reenumerate_DevNode
+                  CM_Reenumerate_DevNode_Ex
+                  CM_Set_Class_Registry_PropertyA
+                  CM_Set_Class_Registry_PropertyW
+                  CM_Set_DevNode_Registry_PropertyA
+                  CM_Set_DevNode_Registry_PropertyW
+                  CM_Setup_DevNode
+                  CM_Uninstall_DevNode
+                  CMP_WaitNoPendingInstallEvents
+                  InstallHinfSectionW
+                  PnpEnumDrpFile
+                  PnpIsFileContentIntact
+                  PnpIsFilePnpDriver
+                  PnpRepairWindowsProtectedDriver
+                  pSetupGetIndirectStringsFromDriverInfo
+                  SetupCloseFileQueue
+                  SetupCloseInfFile
+                  SetupCommitFileQueueW
+                  SetupCopyOEMInfA
+                  SetupCopyOEMInfW
+                  SetupDecompressOrCopyFileW
+                  SetupDefaultQueueCallbackW
+                  SetupDiBuildClassInfoList
+                  SetupDiBuildClassInfoListExA
+                  SetupDiBuildClassInfoListExW
+                  SetupDiBuildDriverInfoList
+                  SetupDiCallClassInstaller
+                  SetupDiClassGuidsFromNameA
+                  SetupDiClassGuidsFromNameExA
+                  SetupDiClassGuidsFromNameExW
+                  SetupDiClassGuidsFromNameW
+                  SetupDiClassNameFromGuidA
+                  SetupDiClassNameFromGuidExA
+                  SetupDiClassNameFromGuidExW
+                  SetupDiClassNameFromGuidW
+                  SetupDiCreateDeviceInfoA
+                  SetupDiCreateDeviceInfoList
+                  SetupDiCreateDeviceInfoListExA
+                  SetupDiCreateDeviceInfoListExW
+                  SetupDiCreateDeviceInfoW
+                  SetupDiCreateDeviceInterfaceA
+                  SetupDiCreateDeviceInterfaceRegKeyA
+                  SetupDiCreateDeviceInterfaceRegKeyW
+                  SetupDiCreateDeviceInterfaceW
+                  SetupDiCreateDevRegKeyA
+                  SetupDiCreateDevRegKeyW
+                  SetupDiDeleteDeviceInfo
+                  SetupDiDeleteDeviceInterfaceData
+                  SetupDiDeleteDeviceInterfaceRegKey
+                  SetupDiDeleteDevRegKey
+                  SetupDiDestroyDeviceInfoList
+                  SetupDiDestroyDriverInfoList
+                  SetupDiEnumDeviceInfo
+                  SetupDiEnumDeviceInterfaces
+                  SetupDiEnumDriverInfoA
+                  SetupDiEnumDriverInfoW
+                  SetupDiGetActualSectionToInstallW
+                  SetupDiGetClassDescriptionA
+                  SetupDiGetClassDescriptionExA
+                  SetupDiGetClassDescriptionExW
+                  SetupDiGetClassDescriptionW
+                  SetupDiGetClassDevsA
+                  SetupDiGetClassDevsExA
+                  SetupDiGetClassDevsExW
+                  SetupDiGetClassDevsW
+                  SetupDiGetClassPropertyExW
+                  SetupDiGetClassPropertyKeys
+                  SetupDiGetClassPropertyKeysExW
+                  SetupDiGetClassPropertyW
+                  SetupDiGetClassRegistryPropertyA
+                  SetupDiGetClassRegistryPropertyW
+                  SetupDiGetDeviceInfoListClass
+                  SetupDiGetDeviceInfoListDetailA
+                  SetupDiGetDeviceInfoListDetailW
+                  SetupDiGetDeviceInstallParamsA
+                  SetupDiGetDeviceInstallParamsW
+                  SetupDiGetDeviceInstanceIdA
+                  SetupDiGetDeviceInstanceIdW
+                  SetupDiGetDeviceInterfaceAlias
+                  SetupDiGetDeviceInterfaceDetailA
+                  SetupDiGetDeviceInterfaceDetailW
+                  SetupDiGetDeviceInterfacePropertyKeys
+                  SetupDiGetDeviceInterfacePropertyW
+                  SetupDiGetDevicePropertyKeys
+                  SetupDiGetDevicePropertyW
+                  SetupDiGetDeviceRegistryPropertyA
+                  SetupDiGetDeviceRegistryPropertyW
+                  SetupDiGetDriverInfoDetailA
+                  SetupDiGetDriverInfoDetailW
+                  SetupDiGetDriverInstallParamsA
+                  SetupDiGetDriverInstallParamsW
+                  SetupDiGetINFClassA
+                  SetupDiGetINFClassW
+                  SetupDiGetSelectedDriverW
+                  SetupDiOpenClassRegKey
+                  SetupDiOpenClassRegKeyExA
+                  SetupDiOpenClassRegKeyExW
+                  SetupDiOpenDeviceInfoA
+                  SetupDiOpenDeviceInfoW
+                  SetupDiOpenDeviceInterfaceA
+                  SetupDiOpenDeviceInterfaceRegKey
+                  SetupDiOpenDeviceInterfaceW
+                  SetupDiOpenDevRegKey
+                  SetupDiRegisterDeviceInfo
+                  SetupDiRemoveDevice
+                  SetupDiRemoveDeviceInterface
+                  SetupDiSelectBestCompatDrv
+                  SetupDiSetClassInstallParamsA
+                  SetupDiSetClassInstallParamsW
+                  SetupDiSetClassPropertyExW
+                  SetupDiSetClassPropertyW
+                  SetupDiSetClassRegistryPropertyA
+                  SetupDiSetClassRegistryPropertyW
+                  SetupDiSetDeviceInstallParamsA
+                  SetupDiSetDeviceInstallParamsW
+                  SetupDiSetDeviceInterfaceDefault
+                  SetupDiSetDeviceInterfacePropertyW
+                  SetupDiSetDevicePropertyW
+                  SetupDiSetDeviceRegistryPropertyA
+                  SetupDiSetDeviceRegistryPropertyW
+                  SetupDiSetDriverInstallParamsW
+                  SetupDiSetSelectedDriverA
+                  SetupDiSetSelectedDriverW
+                  SetupFindFirstLineA
+                  SetupFindFirstLineW
+                  SetupFindNextLine
+                  SetupFindNextMatchLineW
+                  SetupGetFieldCount
+                  SetupGetIntField
+                  SetupGetLineTextW
+                  SetupGetStringFieldA
+                  SetupGetStringFieldW
+                  SetupInitDefaultQueueCallbackEx
+                  SetupInstallFilesFromInfSectionW
+                  SetupInstallFromInfSectionW
+                  SetupInstallServicesFromInfSectionW
+                  SetupOpenAppendInfFileW
+                  SetupOpenFileQueue
+                  SetupOpenInfFileA
+                  SetupOpenInfFileW
+                  SetupScanFileQueueA
+                  SetupScanFileQueueW
+                  SetupTermDefaultQueueCallback
+                  SetupUninstallOEMInfW
+                  AssocCreateForClasses
+                  CDefFolderMenu_MergeMenu
+            83    CIDLData_CreateFromIDArray
+                  CommandLineToArgvW
+                  CreateAutoListParser
+                  CreateStorageItemFromShellItem_FullTrustCaller
+                  CreateStorageItemFromShellItem_FullTrustCaller_ForPackage
+                  CreateStorageItemFromShellItem_FullTrustCaller_ForPackage_WithProcessHandle
+                  CreateStorageItemFromShellItem_FullTrustCaller_UseImplicitFlagsAndPackage
+           129    DAD_AutoScroll
+            22    DAD_DragEnterEx2
+           132    DAD_DragLeave
+           134    DAD_DragMove
+           136    DAD_SetDragImage
+                  DragAcceptFiles
+                  DragFinish
+                  DragQueryFileA
+                  DragQueryFileW
+                  DuplicateIcon
+                  ExtractAssociatedIconW
+                  ExtractIconA
+                  ExtractIconExW
+                  ExtractIconW
+                  GetAppPathFromLink
+                  GetCurrentProcessExplicitAppUserModelID
+                  GetSettingsEnvironmentInstance
+                  GetShellItemFromStorageItem
+            18    ILClone
+            19    ILCloneFirst
+            25    ILCombine
+           190    ILCreateFromPathW
+            24    ILFindChild
+            16    ILFindLastID
+           155    ILFree
+           152    ILGetSize
+            21    ILIsEqual
+            23    ILIsParent
+           846    ILLoadFromStreamEx
+            17    ILRemoveLastID
+            27    ILSaveToStream
+                  InitNetworkAddressControl
+                  IsElevationRequired
+           680    IsUserAnAdmin
+           171    PathCleanupSpec
+           850    PathComparePaths
+                  PathIsEqualOrSubFolder
+            43    PathIsExe
+                  PathIsTemporaryW
+            47    PathMakeUniqueName
+            51    PathResolve
+            75    PathYetAnotherMakeUniqueName
+            62    PickIconDlg
+                  RegenerateUserEnvironment
+            59    RestartDialog
+                  SetCurrentProcessExplicitAppUserModelID
+                  SHAddToRecentDocs
+                  SHAddToRecentDocsEx
+           196    SHAlloc
+                  SHAppBarMessage
+                  SHApplyPropertiesToItem
+                  SHBindToFolderIDListParent
+                  SHBindToFolderIDListParentEx
+                  SHBindToObject
+                  SHBindToParent
+                  SHBrowseForFolderA
+                  SHBrowseForFolderW
+           644    SHChangeNotification_Lock
+           645    SHChangeNotification_Unlock
+                  SHChangeNotify
+             4    SHChangeNotifyDeregister
+             2    SHChangeNotifyRegister
+            89    SHCloneSpecialIDList
+           102    SHCoCreateInstance
+                  SHCreateAssociationRegistration
+                  SHCreateDataObject
+                  SHCreateDefaultContextMenu
+                  SHCreateDefaultExtractIcon
+                  SHCreateDelegatingTransfer
+           165    SHCreateDirectory
+                  SHCreateDirectoryExA
+                  SHCreateDirectoryExW
+                  SHCreateItemFromIDList
+                  SHCreateItemFromParsingName
+                  SHCreateItemFromRelativeName
+                  SHCreateItemInKnownFolder
+                  SHCreateItemWithParent
+                  SHCreateLinksEx
+                  SHCreateRelatedItem
+           256    SHCreateShellFolderView
+                  SHCreateShellItem
+                  SHCreateShellItemArrayFromDataObject
+                  SHCreateShellItemArrayFromIDLists
+                  SHCreateShellItemArrayFromShellItem
+            74    SHCreateStdEnumFmtEtc
+             6    SHDefExtractIconW
+            88    SHDoDragDrop
+                  Shell_GetCachedImageIndexW
+            71    Shell_GetImageLists
+            67    Shell_MergeMenus
+                  Shell_NotifyIconA
+                  Shell_NotifyIconW
+                  ShellAboutW
+                  ShellExecCmdLine
+                  ShellExecuteA
+                  ShellExecuteExA
+                  ShellExecuteExW
+                  ShellExecuteW
+                  SHEmptyRecycleBinW
+                  SHEnableServiceObject
+                  SHEvaluateSystemCommandTemplate
+                  SHExtCoCreateInstance
+                  SHExtractIconsW
+                  SHFileOperationA
+                  SHFileOperationW
+           526    SHFlushSFCache
+           195    SHFree
+                  SHGetDataFromIDListW
+                  SHGetDesktopFolder
+                  SHGetFileInfoA
+                  SHGetFileInfoW
+                  SHGetFolderLocation
+                  SHGetFolderPathA
+                  SHGetFolderPathAndSubDirW
+                  SHGetFolderPathW
+                  SHGetFolderTypeDescription
+                  SHGetFolderTypeFromCanonicalName
+                  SHGetIDListFromObject
+           727    SHGetImageList
+                  SHGetInstanceExplorer
+                  SHGetKnownFolderIDList
+                  SHGetKnownFolderItem
+                  SHGetKnownFolderPath
+                  SHGetMalloc
+                  SHGetNameFromIDList
+                  SHGetPathFromIDListA
+                  SHGetPathFromIDListEx
+                  SHGetPathFromIDListW
+                  SHGetPropertyStoreForWindow
+                  SHGetPropertyStoreFromParsingName
+            98    SHGetRealIDL
+            68    SHGetSetSettings
+                  SHGetSpecialFolderLocation
+                  SHGetSpecialFolderPathA
+                  SHGetSpecialFolderPathW
+                  SHGetStockIconInfo
+                  SHGetTemporaryPropertyForItem
+                  SHGetThreadUndoManager
+                  SHGetUserDisplayName
+            28    SHILCreateFromPath
+           747    SHLimitInputEdit
+                  SHLogILFromFSIL
+                  SHOpenFolderAndSelectItems
+                  SHOpenWithDialog
+                  SHParseDisplayName
+                  SHQueryUserNotificationState
+           100    SHRestricted
+           176    SHSetInstanceExplorer
+                  SHSetKnownFolderPath
+                  SHSetLocalizedName
+                  SHShowManageLibraryUI
+           162    SHSimpleIDListFromPath
+           164    Win32DeleteFile
+                  AssocCopyVerbs
+                  AssocCreate
+                  AssocGetPerceivedType
+                  AssocIsDangerous
+                  AssocMakeApplicationByKeyW
+                  AssocMakeProgid
+                  AssocQueryStringA
+                  AssocQueryStringByKeyW
+                  AssocQueryStringW
+                  CalculateAspectRatio
+                  CharUpperNoDBCSW
+                  ColorHLSToRGB
+                  ColorRGBToHLS
+                  DoesStringRoundTripW
+                  DupWideToAnsi
+                  FDSA_DeleteItem
+                  FDSA_Initialize
+                  FDSA_InsertItem
+                  FixSlashesAndColonW
+            14    GetAcceptLanguagesA
+            15    GetAcceptLanguagesW
+                  GetMenuPosFromID
+                  HashData
+                  IntlStrEqWorkerW
+                  IsCharSpaceA
+            29    IsCharSpaceW
+                  IShellFolder_GetDisplayNameOf
+                  IShellFolder_ParseDisplayName
+           553    IsInternetESCEnabled
+           437    IsOS
+           568    IStream_Copy
+           184    IStream_Read
+           512    IStream_ReadPidl
+           596    IStream_ReadStr
+           213    IStream_Reset
+           214    IStream_Size
+           212    IStream_Write
+           513    IStream_WritePidl
+           597    IStream_WriteStr
+           169    IUnknown_AtomicRelease
+                  IUnknown_CPContainerInvokeIndirect
+                  IUnknown_EnableModeless
+                  IUnknown_Exec
+           256    IUnknown_GetSite
+           172    IUnknown_GetWindow
+                  IUnknown_HasFocusIO
+                  IUnknown_OnFocusChangeIS
+           176    IUnknown_QueryService
+                  IUnknown_QueryServiceExec
+                  IUnknown_QueryServiceForWebBrowserApp
+                  IUnknown_QueryServicePropertyBag
+           199    IUnknown_Set
+                  IUnknown_SetOwner
+           174    IUnknown_SetSite
+                  IUnknown_TranslateAcceleratorIO
+                  IUnknown_UIActivateIO
+                  MayExecForward
+                  MayQSForward
+           331    MIME_GetExtensionW
+             1    ParseURLA
+             2    ParseURLW
+                  PathAddBackslashA
+                  PathAddBackslashW
+                  PathAddExtensionA
+                  PathAddExtensionW
+                  PathAppendA
+                  PathAppendW
+                  PathBuildRootA
+                  PathBuildRootW
+                  PathCanonicalizeA
+                  PathCanonicalizeW
+                  PathCombineA
+                  PathCombineW
+                  PathCommonPrefixA
+                  PathCommonPrefixW
+                  PathCompactPathExW
+                  PathCompactPathW
+                  PathCreateFromUrlA
+                  PathCreateFromUrlAlloc
+                  PathCreateFromUrlW
+                  PathFileExistsA
+                  PathFileExistsAndAttributesA
+                  PathFileExistsDefExtAndAttributesW
+                  PathFileExistsDefExtW
+                  PathFileExistsW
+                  PathFindExtensionA
+                  PathFindExtensionW
+                  PathFindFileNameA
+                  PathFindFileNameW
+                  PathFindNextComponentA
+                  PathFindNextComponentW
+                  PathFindOnPathExW
+                  PathFindOnPathW
+                  PathFindSuffixArrayW
+                  PathGetArgsA
+                  PathGetArgsW
+                  PathGetCharTypeA
+                  PathGetCharTypeW
+                  PathGetDriveNumberA
+                  PathGetDriveNumberW
+                  PathIsDirectoryA
+                  PathIsDirectoryEmptyA
+                  PathIsDirectoryEmptyW
+                  PathIsDirectoryW
+                  PathIsFileSpecA
+                  PathIsFileSpecW
+                  PathIsLFNFileSpecA
+                  PathIsLFNFileSpecW
+                  PathIsNetworkPathA
+                  PathIsNetworkPathW
+                  PathIsPrefixA
+                  PathIsPrefixW
+                  PathIsRelativeA
+                  PathIsRelativeW
+                  PathIsRootA
+                  PathIsRootW
+                  PathIsSameRootA
+                  PathIsSameRootW
+                  PathIsUNCA
+                  PathIsUNCServerA
+                  PathIsUNCServerShareA
+                  PathIsUNCServerShareW
+                  PathIsUNCServerW
+                  PathIsUNCW
+                  PathIsURLA
+                  PathIsURLW
+                  PathMakePrettyW
+                  PathMakeSystemFolderW
+                  PathMatchSpecA
+                  PathMatchSpecExA
+                  PathMatchSpecExW
+                  PathMatchSpecW
+                  PathParseIconLocationA
+                  PathParseIconLocationW
+                  PathQuoteSpacesA
+                  PathQuoteSpacesW
+                  PathRelativePathToA
+                  PathRelativePathToW
+                  PathRemoveArgsW
+                  PathRemoveBackslashA
+                  PathRemoveBackslashW
+                  PathRemoveBlanksA
+                  PathRemoveBlanksW
+                  PathRemoveExtensionA
+                  PathRemoveExtensionW
+                  PathRemoveFileSpecA
+                  PathRemoveFileSpecW
+                  PathRenameExtensionA
+                  PathRenameExtensionW
+                  PathSearchAndQualifyA
+                  PathSearchAndQualifyW
+                  PathSetDlgItemPathW
+                  PathSkipRootA
+                  PathSkipRootW
+                  PathStripPathA
+                  PathStripPathW
+                  PathStripToRootA
+                  PathStripToRootW
+                  PathUndecorateW
+                  PathUnExpandEnvStringsA
+                  PathUnExpandEnvStringsForUserW
+                  PathUnExpandEnvStringsW
+                  PathUnquoteSpacesA
+                  PathUnquoteSpacesW
+           219    QISearch
+                  QuerySourceCreateFromKey
+                  SHAddDataBlock
+           345    SHAnsiToAnsi
+           215    SHAnsiToUnicode
+                  SHClearViewStatePropertyBag
+                  SHCopyKeyA
+                  SHCopyKeyW
+            12    SHCreateMemStream
+                  SHCreatePropertyBagOnProfileSection
+                  SHCreatePropertyBagOnRegKey
+                  SHCreatePropertyStoreOnXML
+                  SHCreateShellPalette
+                  SHCreateStreamOnFileA
+                  SHCreateStreamOnFileEx
+                  SHCreateStreamOnFileW
+            16    SHCreateThread
+                  SHCreateThreadRef
+           615    SHCreateThreadWithHandle
+                  SHCreateWorkerWindowW
+                  SHDeleteEmptyKeyA
+                  SHDeleteEmptyKeyW
+                  SHDeleteKeyA
+                  SHDeleteKeyW
+                  SHDeleteValueA
+                  SHDeleteValueW
+                  ShellMessageBoxA
+                  ShellMessageBoxW
+                  SHEnumKeyExA
+                  SHEnumKeyExW
+                  SHEnumValueA
+                  SHEnumValueW
+                  SHExpandEnvironmentStringsAlloc
+                  SHExpandEnvironmentStringsForUserW
+           197    SHFillRectClr
+                  SHFindDataBlock
+           354    SHFormatDateTimeW
+                  SHForwardContextMenuMsg
+                  SHFreeDataBlockList
+                  SHGetCurColorRes
+                  SHGetFileDescriptionW
+                  SHGetIniStringW
+                  SHGetInverseCMAP
+                  SHGetMenuFromID
+           533    SHGetPerScreenResName
+                  SHGetRestriction
+                  SHGetShellKeyEx
+                  SHGetThreadRef
+                  SHGetValueA
+                  SHGetValueW
+           515    SHGetViewStatePropertyBag
+                  SHInvokeCommand
+                  SHInvokeCommandOnContextMenu
+                  SHInvokeCommandOnContextMenuEx
+                  SHInvokeCommandWithFlagsAndSite
+                  SHInvokeDefaultCommand
+           204    SHIsChildOrSelf
+                  SHIsExpandableFolder
+                  SHLoadFromPropertyBag
+           487    SHLoadIndirectString
+                  SHLoadMenuPopup
+                  SHMenuIndexFromID
+                  SHMessageBoxCheckExW
+                  SHOpenRegStream2A
+                  SHOpenRegStream2W
+                  SHOpenRegStreamA
+                  SHOpenRegStreamW
+                  SHPinDllOfCLSID
+                  SHQueryInfoKeyA
+                  SHQueryInfoKeyW
+                  SHQueryValueExA
+                  SHQueryValueExW
+           260    SHQueueUserWorkItem
+                  SHReadDataBlockList
+                  SHRegCloseUSKey
+                  SHRegCreateUSKeyA
+                  SHRegCreateUSKeyW
+                  SHRegDeleteEmptyUSKeyA
+                  SHRegDeleteEmptyUSKeyW
+                  SHRegDeleteUSValueA
+                  SHRegDeleteUSValueW
+                  SHRegDuplicateHKey
+                  SHRegEnumUSKeyA
+                  SHRegEnumUSKeyW
+                  SHRegEnumUSValueA
+                  SHRegEnumUSValueW
+                  SHRegGetBoolUSValueA
+                  SHRegGetBoolUSValueW
+           280    SHRegGetIntW
+                  SHRegGetPathA
+                  SHRegGetPathW
+                  SHRegGetUSValueA
+                  SHRegGetUSValueW
+                  SHRegGetValueA
+                  SHRegGetValueW
+                  SHRegisterClassW
+                  SHRegOpenUSKeyA
+                  SHRegOpenUSKeyW
+                  SHRegQueryInfoUSKeyA
+                  SHRegQueryInfoUSKeyW
+                  SHRegQueryUSValueA
+                  SHRegQueryUSValueW
+                  SHRegSetPathA
+                  SHRegSetPathW
+                  SHRegSetUSValueA
+                  SHRegSetUSValueW
+                  SHRegWriteUSValueA
+                  SHRegWriteUSValueW
+                  SHReleaseThreadRef
+                  SHRemoveDataBlock
+                  SHRemoveDefaultDialogFont
+                  SHRestrictionLookup
+           433    SHSendMessageBroadcastW
+                  SHSetDefaultDialogFont
+                  SHSetIniStringW
+                  SHSetThreadRef
+                  SHSetValueA
+                  SHSetValueW
+                  SHSetWindowBits
+                  SHSimulateDrop
+                  SHSkipJunction
+                  SHStrDupA
+                  SHStrDupW
+            24    SHStringFromGUIDW
+           225    SHStripMneumonicW
+           217    SHUnicodeToAnsi
+                  SHUnicodeToAnsiCP
+           346    SHUnicodeToUnicode
+                  SHWeakQueryInterface
+                  SHWeakReleaseInterface
+                  SHWriteDataBlockList
+                  SKAllocValueW
+                  SKGetValueW
+                  SKSetValueW
+                  StrCatBuffA
+                  StrCatBuffW
+                  StrCatChainW
+                  StrChrA
+                  StrChrIA
+                  StrChrIW
+                  StrChrNIW
+                  StrChrNW
+                  StrChrW
+           155    StrCmpCA
+           156    StrCmpCW
+           157    StrCmpICA
+           158    StrCmpICW
+                  StrCmpIW
+                  StrCmpLogicalW
+                  StrCmpNA
+           151    StrCmpNCA
+           152    StrCmpNCW
+                  StrCmpNIA
+           153    StrCmpNICA
+           154    StrCmpNICW
+                  StrCmpNIW
+                  StrCmpNW
+                  StrCmpW
+                  StrCpyNW
+                  StrCSpnA
+                  StrCSpnIA
+                  StrCSpnIW
+                  StrCSpnW
+                  StrDupA
+                  StrDupW
+                  StrFormatByteSizeEx
+                  StrFormatByteSizeW
+                  StrFromTimeIntervalW
+                  StrIsIntlEqualA
+                  StrIsIntlEqualW
+                  StrPBrkA
+                  StrPBrkW
+                  StrRChrA
+                  StrRChrIA
+                  StrRChrIW
+                  StrRChrW
+                  StrRetToBufW
+                  StrRetToStrW
+                  StrRStrIA
+                  StrRStrIW
+                  StrSpnA
+                  StrSpnW
+                  StrStrA
+                  StrStrIA
+                  StrStrIW
+                  StrStrNIW
+                  StrStrNW
+                  StrStrW
+                  StrToInt64ExA
+                  StrToInt64ExW
+                  StrToIntA
+                  StrToIntExA
+                  StrToIntExW
+                  StrToIntW
+                  StrTrimA
+                  StrTrimW
+                  UrlApplySchemeA
+                  UrlApplySchemeW
+                  UrlCanonicalizeA
+                  UrlCanonicalizeW
+                  UrlCombineA
+                  UrlCombineW
+                  UrlCompareA
+                  UrlCompareW
+                  UrlCreateFromPathA
+                  UrlCreateFromPathW
+                  UrlEscapeA
+                  UrlEscapeW
+           462    UrlFixupW
+                  UrlGetLocationA
+                  UrlGetLocationW
+                  UrlGetPartA
+                  UrlGetPartW
+                  UrlHashA
+                  UrlHashW
+                  UrlIsA
+                  UrlIsNoHistoryA
+                  UrlIsNoHistoryW
+                  UrlIsOpaqueA
+                  UrlIsOpaqueW
+                  UrlIsW
+                  UrlUnescapeA
+                  UrlUnescapeW
+                  ZoneCheckUrlExW
+                  TdhEnumerateManifestProviderEvents
+                  TdhEnumerateProviderFieldInformation
+                  TdhEnumerateProviders
+                  TdhFormatProperty
+                  TdhGetEventInformation
+                  TdhGetEventMapInformation
+                  TdhGetManifestEventInformation
+                  TdhGetProperty
+                  TdhGetPropertySize
+                  TdhLoadManifest
+                  TdhQueryProviderFieldInformation
+                  TdhUnloadManifest
+             8    GetMetroMode
+                  ActivateKeyboardLayout
+                  AddClipboardFormatListener
+                  AdjustWindowRect
+                  AdjustWindowRectEx
+                  AllowSetForegroundWindow
+                  AnimateWindow
+                  AppendMenuA
+                  AppendMenuW
+                  ArrangeIconicWindows
+                  AttachThreadInput
+                  BeginDeferWindowPos
+                  BeginPaint
+                  BlockInput
+                  BringWindowToTop
+                  CallMsgFilterA
+                  CallMsgFilterW
+                  CallNextHookEx
+                  CallWindowProcA
+                  CallWindowProcW
+                  CanBrokerForceForeground
+                  ChangeClipboardChain
+                  ChangeDisplaySettingsA
+                  ChangeDisplaySettingsExW
+                  ChangeDisplaySettingsW
+                  ChangeWindowMessageFilterEx
+                  CharLowerA
+                  CharLowerBuffA
+                  CharLowerBuffW
+                  CharLowerW
+                  CharNextA
+                  CharNextExA
+                  CharNextW
+                  CharPrevA
+                  CharPrevExA
+                  CharPrevW
+                  CharToOemA
+                  CharToOemBuffA
+                  CharUpperA
+                  CharUpperBuffA
+                  CharUpperBuffW
+                  CharUpperW
+                  CheckDlgButton
+                  CheckMenuItem
+                  CheckMenuRadioItem
+                  CheckRadioButton
+                  ChildWindowFromPoint
+                  ChildWindowFromPointEx
+                  ClientToScreen
+                  ClipCursor
+                  CloseClipboard
+                  CloseDesktop
+                  CloseGestureInfoHandle
+                  CloseTouchInputHandle
+                  CloseWindow
+                  CloseWindowStation
+                  CopyAcceleratorTableA
+                  CopyAcceleratorTableW
+                  CopyIcon
+                  CopyImage
+                  CopyRect
+                  CountClipboardFormats
+                  CreateAcceleratorTableW
+                  CreateCaret
+                  CreateDesktopW
+                  CreateDialogIndirectParamA
+                  CreateDialogIndirectParamW
+                  CreateDialogParamA
+                  CreateDialogParamW
+                  CreateIconIndirect
+                  CreateMenu
+                  CreatePopupMenu
+                  CreateWindowExA
+                  CreateWindowExW
+                  CreateWindowInBand
+                  CreateWindowStationW
+                  ?DdeAbandonTransaction@@YAHKPAUHCONV__@@K@Z (int __cdecl DdeAbandonTransaction(unsigned long,struct HCONV__ *,unsigned long))
+                  ?DdeClientTransaction@@YAPAUHDDEDATA__@@PAEKPAUHCONV__@@PAUHSZ__@@IIKPAK@Z (struct HDDEDATA__ * __cdecl DdeClientTransaction(unsigned char *,unsigned long,struct HCONV__ *,struct HSZ__ *,unsigned int,unsigned int,unsigned long,unsigned long *))
+                  DeferWindowPos
+                  DefFrameProcA
+                  DefFrameProcW
+                  DefMDIChildProcA
+                  DefMDIChildProcW
+                  DefWindowProcA
+                  DefWindowProcW
+                  DelegateInput
+                  DeleteMenu
+                  DestroyAcceleratorTable
+                  DestroyCaret
+                  DestroyCursor
+                  DestroyIcon
+                  DestroyMenu
+                  DestroyWindow
+                  DialogBoxIndirectParamA
+                  DialogBoxIndirectParamW
+                  DialogBoxParamA
+                  DialogBoxParamW
+                  DisableProcessWindowsGhosting
+                  DispatchMessageA
+                  DispatchMessageW
+                  DisplayConfigGetDeviceInfo
+                  DisplayConfigSetDeviceInfo
+                  DlgDirListA
+                  DlgDirListComboBoxA
+                  DlgDirListComboBoxW
+                  DlgDirListW
+                  DlgDirSelectComboBoxExA
+                  DlgDirSelectComboBoxExW
+                  DlgDirSelectExA
+                  DlgDirSelectExW
+                  DrawEdge
+                  DrawFocusRect
+                  DrawFrameControl
+                  DrawIcon
+                  DrawIconEx
+                  DrawMenuBar
+                  DrawStateA
+                  DrawStateW
+                  DrawTextA
+                  DrawTextExW
+                  DrawTextW
+                  DwmGetDxRgn
+                  DwmGetRemoteSessionOcclusionEvent
+                  DwmGetRemoteSessionOcclusionState
+                  EmptyClipboard
+                  EnableMenuItem
+                  EnableMouseInPointer
+                  EnableScrollBar
+                  EnableShellWindowManagementBehavior
+                  EnableWindow
+                  EndDeferWindowPos
+                  EndDialog
+                  EndMenu
+                  EndPaint
+                  EnumChildWindows
+                  EnumClipboardFormats
+                  EnumDesktopsA
+                  EnumDesktopWindows
+                  EnumDisplayDevicesA
+                  EnumDisplayDevicesW
+                  EnumDisplayMonitors
+                  EnumDisplaySettingsA
+                  EnumDisplaySettingsExW
+                  EnumDisplaySettingsW
+                  EnumPropsExW
+                  EnumPropsW
+                  EnumThreadWindows
+                  EnumWindows
+                  EnumWindowStationsA
+                  EqualRect
+                  EvaluateProximityToPolygon
+                  EvaluateProximityToRect
+                  ExcludeUpdateRgn
+                  ExitWindowsEx
+                  FillRect
+                  FindWindowA
+                  FindWindowExA
+                  FindWindowExW
+                  FindWindowW
+                  FlashWindow
+                  FlashWindowEx
+                  FrameRect
+                  FreeDDElParam
+                  GetActiveWindow
+                  GetAncestor
+                  GetAsyncKeyState
+                  GetCapture
+                  GetCaretBlinkTime
+                  GetCaretPos
+                  GetClassInfoA
+                  GetClassInfoExA
+                  GetClassInfoExW
+                  GetClassInfoW
+                  GetClassLongA
+                  GetClassLongW
+                  GetClassNameA
+                  GetClassNameW
+                  GetClassWord
+                  GetClientRect
+                  GetClipboardData
+                  GetClipboardFormatNameA
+                  GetClipboardFormatNameW
+                  GetClipboardOwner
+                  GetClipboardSequenceNumber
+                  GetClipboardViewer
+                  GetClipCursor
+                  GetComboBoxInfo
+                  GetCurrentInputMessageSource
+                  GetCursor
+                  GetCursorInfo
+                  GetCursorPos
+                  GetDC
+                  GetDCEx
+                  GetDesktopWindow
+                  GetDialogBaseUnits
+                  GetDisplayAutoRotationPreferences
+                  GetDisplayConfigBufferSizes
+                  GetDlgCtrlID
+                  GetDlgItem
+                  GetDlgItemInt
+                  GetDlgItemTextA
+                  GetDlgItemTextW
+                  GetDoubleClickTime
+                  GetDpiForMonitorInternal
+                  GetDpiForSystem
+                  GetFocus
+                  GetForegroundWindow
+                  GetGestureConfig
+                  GetGestureInfo
+                  GetGuiResources
+                  GetGUIThreadInfo
+                  GetIconInfo
+                  GetInputDesktop
+                  GetKeyboardLayout
+                  GetKeyboardLayoutList
+                  GetKeyboardLayoutNameA
+                  GetKeyboardLayoutNameW
+                  GetKeyboardState
+                  GetKeyboardType
+                  GetKeyNameTextW
+                  GetKeyState
+                  GetLastActivePopup
+                  GetLastInputInfo
+                  GetLayeredWindowAttributes
+                  GetMenu
+                  GetMenuBarInfo
+                  GetMenuCheckMarkDimensions
+                  GetMenuContextHelpId
+                  GetMenuDefaultItem
+                  GetMenuInfo
+                  GetMenuItemCount
+                  GetMenuItemID
+                  GetMenuItemInfoA
+                  GetMenuItemInfoW
+                  GetMenuState
+                  GetMenuStringA
+                  GetMenuStringW
+                  GetMessageA
+                  GetMessageExtraInfo
+                  GetMessagePos
+                  GetMessageTime
+                  GetMessageW
+                  GetMonitorInfoA
+                  GetMonitorInfoW
+                  GetNextDlgGroupItem
+                  GetNextDlgTabItem
+                  GetOpenClipboardWindow
+                  GetParent
+                  GetPhysicalCursorPos
+                  GetPointerDevice
+                  GetPointerDeviceRects
+                  GetPointerDevices
+                  GetPointerFrameInfo
+                  GetPointerFrameInfoHistory
+                  GetPointerFrameTouchInfo
+                  GetPointerInfo
+                  GetPointerInfoHistory
+                  GetPointerInputTransform
+                  GetPointerType
+                  GetPriorityClipboardFormat
+                  GetProcessDefaultLayout
+                  GetProcessDpiAwarenessInternal
+                  GetProcessUIContextInformation
+                  GetProcessWindowStation
+                  GetPropA
+                  GetPropW
+                  GetQueueStatus
+                  GetRawInputData
+                  GetRawInputDeviceInfoA
+                  GetRawInputDeviceInfoW
+                  GetRawInputDeviceList
+                  GetScrollBarInfo
+                  GetScrollInfo
+                  GetScrollPos
+                  GetScrollRange
+                  GetShellWindow
+                  GetSubMenu
+                  GetSysColor
+                  GetSysColorBrush
+                  GetSystemMenu
+                  GetSystemMetrics
+                  GetTabbedTextExtentA
+                  GetTabbedTextExtentW
+                  GetThreadDesktop
+                  GetTitleBarInfo
+                  GetTopWindow
+                  GetTouchInputInfo
+                  GetUpdateRect
+                  GetUpdateRgn
+                  GetUserObjectInformationA
+                  GetUserObjectInformationW
+                  GetUserObjectSecurity
+                  GetWindow
+                  GetWindowBand
+                  GetWindowContextHelpId
+                  GetWindowDC
+                  GetWindowDisplayAffinity
+                  GetWindowInfo
+                  GetWindowLongA
+                  GetWindowLongW
+                  GetWindowPlacement
+                  GetWindowRect
+                  GetWindowRgn
+                  GetWindowRgnBox
+                  GetWindowRgnEx
+                  GetWindowTextA
+                  GetWindowTextLengthA
+                  GetWindowTextLengthW
+                  GetWindowTextW
+                  GetWindowThreadProcessId
+                  GetWindowTrackInfoAsync
+                  GhostWindowFromHungWindow
+                  GrayStringA
+                  GrayStringW
+                  HandleDelegatedInput
+                  HideCaret
+                  HiliteMenuItem
+                  HungWindowFromGhostWindow
+                  InflateRect
+                  InitializeGenericHidInjection
+                  InitializeInputDeviceInjection
+                  InitializePointerDeviceInjection
+                  InitializePointerDeviceInjectionEx
+                  InitializeTouchInjection
+                  InjectDeviceInput
+                  InjectGenericHidInput
+                  InjectKeyboardInput
+                  InjectMouseInput
+                  InjectPointerInput
+                  InjectTouchInput
+                  InSendMessage
+                  InSendMessageEx
+                  InsertMenuA
+                  InsertMenuItemW
+                  InsertMenuW
+                  InternalClipCursor
+                  IntersectRect
+                  InvalidateRect
+                  InvalidateRgn
+                  InvertRect
+                  IsCharAlphaA
+                  IsCharAlphaNumericA
+                  IsCharAlphaNumericW
+                  IsCharAlphaW
+                  IsCharLowerA
+                  IsCharLowerW
+                  IsCharUpperA
+                  IsCharUpperW
+                  IsChild
+                  IsChildWindowDpiMessageEnabled
+                  IsClipboardFormatAvailable
+                  IsDialogMessageA
+                  IsDialogMessageW
+                  IsDlgButtonChecked
+                  IsGUIThread
+                  IsHungAppWindow
+                  IsIconic
+                  IsMenu
+                  IsProcessDPIAware
+                  IsRectEmpty
+                  IsTouchWindow
+                  IsWindow
+                  IsWindowEnabled
+                  IsWindowUnicode
+                  IsWindowVisible
+                  IsWinEventHookInstalled
+                  IsZoomed
+                  keybd_event
+                  KillTimer
+                  LoadAcceleratorsA
+                  LoadAcceleratorsW
+                  LoadBitmapA
+                  LoadBitmapW
+                  LoadCursorA
+                  LoadCursorW
+                  LoadIconA
+                  LoadIconW
+                  LoadImageA
+                  LoadImageW
+                  LoadKeyboardLayoutA
+                  LoadKeyboardLayoutW
+                  LoadMenuA
+                  LoadMenuIndirectA
+                  LoadMenuIndirectW
+                  LoadMenuW
+                  LoadStringA
+                  LoadStringW
+                  LockSetForegroundWindow
+                  LockWindowUpdate
+                  LockWorkStation
+                  LogicalToPhysicalPoint
+                  LogicalToPhysicalPointForPerMonitorDPI
+                  LookupIconIdFromDirectory
+                  MapDialogRect
+                  MapVirtualKeyA
+                  MapVirtualKeyExW
+                  MapVirtualKeyW
+                  MapWindowPoints
+                  MessageBeep
+                  MessageBoxA
+                  MessageBoxIndirectA
+                  MessageBoxIndirectW
+                  MessageBoxW
+                  ModifyMenuA
+                  ModifyMenuW
+                  MonitorFromPoint
+                  MonitorFromRect
+                  MonitorFromWindow
+                  MoveWindow
+                  MsgWaitForMultipleObjects
+                  MsgWaitForMultipleObjectsEx
+                  NotifyWinEvent
+                  OemToCharBuffA
+                  OffsetRect
+                  OpenClipboard
+                  OpenDesktopA
+                  OpenDesktopW
+                  OpenIcon
+                  OpenInputDesktop
+                  OpenWindowStationA
+                  OpenWindowStationW
+                  PackDDElParam
+                  PackTouchHitTestingProximityEvaluation
+                  PeekMessageA
+                  PeekMessageW
+                  PhysicalToLogicalPoint
+                  PhysicalToLogicalPointForPerMonitorDPI
+                  PostMessageA
+                  PostMessageW
+                  PostQuitMessage
+                  PostThreadMessageA
+                  PostThreadMessageW
+                  PrintWindow
+                  PrivateExtractIconsW
+                  PtInRect
+                  QueryDisplayConfig
+                  RealChildWindowFromPoint
+                  RealGetWindowClassA
+                  RealGetWindowClassW
+                  RedrawWindow
+                  RegisterClassA
+                  RegisterClassExA
+                  RegisterClassExW
+                  RegisterClassW
+                  RegisterClipboardFormatA
+                  RegisterClipboardFormatW
+                  RegisterDeviceNotificationW
+                  RegisterHotKey
+                  RegisterPointerDeviceNotifications
+                  RegisterPowerSettingNotification
+                  RegisterRawInputDevices
+                  RegisterTouchHitTestingWindow
+                  RegisterTouchWindow
+                  RegisterWindowArrangementCallout
+                  RegisterWindowMessageA
+                  RegisterWindowMessageW
+                  ReleaseCapture
+                  ReleaseDC
+                  ReleaseDwmHitTestWaiters
+                  RemoveClipboardFormatListener
+                  RemoveInjectionDevice
+                  RemoveMenu
+                  RemovePropA
+                  RemovePropW
+                  ReplyMessage
+                  ReportInertia
+                  ReuseDDElParam
+                  RIMAddInputObserver
+                  RIMAreSiblingDevices
+                  RIMDeviceIoControl
+                  RIMEnableMonitorMappingForDevice
+                  RIMFreeInputBuffer
+                  RIMGetDevicePreparsedData
+                  RIMGetDevicePreparsedDataLockfree
+                  RIMGetDeviceProperties
+                  RIMGetDevicePropertiesLockfree
+                  RIMGetPhysicalDeviceRect
+                  RIMGetSourceProcessId
+                  RIMObserveNextInput
+                  RIMOnPnpNotification
+                  RIMOnTimerNotification
+                  RIMReadInput
+                  RIMRegisterForInput
+                  RIMRemoveInputObserver
+                  RIMSetTestModeStatus
+                  RIMUnregisterForInput
+                  RIMUpdateInputObserverRegistration
+                  ScreenToClient
+                  ScrollDC
+                  ScrollWindow
+                  ScrollWindowEx
+                  SendDlgItemMessageA
+                  SendDlgItemMessageW
+                  SendEventMessage
+                  SendInput
+                  SendMessageA
+                  SendMessageCallbackW
+                  SendMessageTimeoutA
+                  SendMessageTimeoutW
+                  SendMessageW
+                  SendNotifyMessageA
+                  SendNotifyMessageW
+                  SetActiveImmersiveWindow
+                  SetActiveWindow
+                  SetCapture
+                  SetCaretBlinkTime
+                  SetCaretPos
+                  SetClassLongA
+                  SetClassLongW
+                  SetClipboardData
+                  SetClipboardViewer
+                  SetCoalescableTimer
+                  SetCoreWindow
+                  SetCursor
+                  SetCursorPos
+                  SetDisplayConfig
+                  SetDlgItemInt
+                  SetDlgItemTextA
+                  SetDlgItemTextW
+                  SetDoubleClickTime
+                  SetFeatureReportResponse
+                  SetFocus
+                  SetForegroundWindow
+                  SetKeyboardState
+                  SetLastErrorEx
+                  SetLayeredWindowAttributes
+                  SetMenu
+                  SetMenuContextHelpId
+                  SetMenuDefaultItem
+                  SetMenuInfo
+                  SetMenuItemBitmaps
+                  SetMenuItemInfoW
+                  SetMessageExtraInfo
+                  SetMessageQueue
+                  SetParent
+                  SetPhysicalCursorPos
+                  SetProcessDefaultLayout
+                  SetProcessDPIAware
+                  SetProcessDpiAwarenessInternal
+                  SetProcessRestrictionExemption
+                  SetProcessWindowStation
+                  SetPropA
+                  SetPropW
+                  SetRect
+                  SetRectEmpty
+                  SetScrollInfo
+                  SetScrollPos
+                  SetScrollRange
+                  SetSysColors
+                  SetThreadDesktop
+                  SetTimer
+                  SetUserObjectSecurity
+                  SetWindowArrangement
+                  SetWindowContextHelpId
+                  SetWindowDisplayAffinity
+                  SetWindowLongA
+                  SetWindowLongW
+                  SetWindowPlacement
+                  SetWindowPos
+                  SetWindowRgn
+                  SetWindowsHookExA
+                  SetWindowsHookExW
+                  SetWindowTextA
+                  SetWindowTextW
+                  SetWinEventHook
+                  ShowCaret
+                  ShowCursor
+                  ShowOwnedPopups
+                  ShowScrollBar
+                  ShowWindow
+                  ShowWindowAsync
+                  ShutdownBlockReasonCreate
+                  ShutdownBlockReasonDestroy
+                  SoundSentry
+                  SubtractRect
+                  SwitchDesktop
+                  SwitchToThisWindow
+                  SystemParametersInfoA
+                  SystemParametersInfoW
+                  TabbedTextOutA
+                  TabbedTextOutW
+                  ToAscii
+                  ToAsciiEx
+                  ToUnicode
+                  ToUnicodeEx
+                  TrackMouseEvent
+                  TrackPopupMenu
+                  TrackPopupMenuEx
+                  TranslateAcceleratorA
+                  TranslateAcceleratorW
+                  TranslateMDISysAccel
+                  TranslateMessage
+                  UnhookWindowsHookEx
+                  UnhookWinEvent
+                  UnionRect
+                  UnloadKeyboardLayout
+                  UnpackDDElParam
+                  UnregisterClassA
+                  UnregisterClassW
+                  UnregisterDeviceNotification
+                  UnregisterHotKey
+                  UnregisterPowerSettingNotification
+                  UpdateLayeredWindow
+                  UpdatePerUserSystemParameters
+                  UpdateWindow
+                  UpdateWindowInputSinkHints
+                  UpdateWindowTrackingInfo
+                  ValidateRect
+                  ValidateRgn
+                  VkKeyScanA
+                  VkKeyScanExW
+                  VkKeyScanW
+                  WaitForInputIdle
+                  WaitMessage
+                  WindowFromDC
+                  WindowFromPhysicalPoint
+                  WindowFromPoint
+                  WinHelpA
+                  WinHelpW
+                  wsprintfA
+                  wsprintfW
+                  wvsprintfA
+                  wvsprintfW
+                  BeginBufferedPaint
+                  BufferedPaintClear
+                  BufferedPaintInit
+                  BufferedPaintStopAllAnimations
+                  BufferedPaintUnInit
+                  CloseThemeData
+                  DrawThemeBackground
+                  DrawThemeBackgroundEx
+                  DrawThemeParentBackground
+                  DrawThemeTextEx
+                  EndBufferedPaint
+                  GetBufferedPaintBits
+                  GetColorFromPreference
+                  GetImmersiveColorFromColorSetEx
+                  GetImmersiveColorNamedTypeByIndex
+                  GetImmersiveColorTypeFromName
+                  GetImmersiveColorXamlInfoByIndex
+                  GetImmersiveUserColorSetPreference
+                  GetIsImmersiveColorUsingHighContrast
+                  GetThemeAnimationProperty
+                  GetThemeAnimationTransform
+                  GetThemeAppProperties
+                  GetThemeBackgroundContentRect
+                  GetThemeBackgroundExtent
+                  GetThemeBitmap
+                  GetThemeColor
+                  GetThemeEnumValue
+                  GetThemeFont
+                  GetThemeInt
+                  GetThemeMargins
+                  GetThemeMetric
+                  GetThemePartSize
+                  GetThemePosition
+                  GetThemeTimingFunction
+                  GetUserColorPreference
+                  GetWindowTheme
+                  IsAppThemed
+                  IsCompositionActive
+                  IsThemeActive
+                  IsThemePartDefined
+                  OpenThemeData
+                  OpenThemeDataEx
+                  RefreshImmersiveColorPolicyState
+                  SetWindowTheme
+                  SetWindowThemeAttribute
+                  GetFileVersionInfoA
+                  GetFileVersionInfoExW
+                  GetFileVersionInfoSizeA
+                  GetFileVersionInfoSizeExW
+                  GetFileVersionInfoSizeW
+                  GetFileVersionInfoW
+                  VerFindFileA
+                  VerFindFileW
+                  VerQueryValueA
+                  VerQueryValueW
+                  timeBeginPeriod
+                  timeEndPeriod
+                  timeGetDevCaps
+                  timeGetSystemTime
+                  timeGetTime
+                  AbortPrinter
+                  AddPrinterA
+                  AddPrinterConnection2W
+                  AddPrinterConnectionW
+                  AddPrinterW
+                  ClosePrinter
+                  DeletePrinter
+                  DeletePrinterConnectionW
+                  DeletePrinterDataExW
+                  DeletePrinterDataW
+                  DeviceCapabilitiesW
+                  DocumentPropertiesA
+                  DocumentPropertiesW
+                  EndDocPrinter
+                  EnumJobsW
+                  EnumPortsW
+                  EnumPrinterDriversW
+                  EnumPrintersA
+                  EnumPrintersW
+                  GetDefaultPrinterW
+                  GetJobW
+                  GetPrinterA
+                  GetPrinterDataExW
+                  GetPrinterDataW
+                  GetPrinterDriverDirectoryW
+                  GetPrinterDriverW
+                  GetPrinterW
+                  GetPrintOutputInfo
+                  InstallPrinterDriverFromPackageW
+                  OpenPrinterA
+                  OpenPrinterW
+                  ReportJobProcessingProgress
+                  SetDefaultPrinterW
+                  SetJobW
+                  SetPrinterA
+                  SetPrinterDataExW
+                  SetPrinterDataW
+                  SetPrinterW
+                  StartDocPrinterW
+                  WritePrinter
+                  XcvDataW
+                  WTSDisconnectSession
+                  WTSEnumerateProcessesExW
+                  WTSEnumerateProcessesW
+                  WTSEnumerateSessionsExW
+                  WTSEnumerateSessionsW
+                  WTSFreeMemory
+                  WTSFreeMemoryExW
+                  WTSLogoffSession
+                  WTSQuerySessionInformationW
+                  WTSQueryUserToken
+                  WTSRegisterSessionNotification
+                  WTSUnRegisterSessionNotification
+                  WTSVirtualChannelClose
+                  WTSVirtualChannelOpen
+                  WTSVirtualChannelOpenEx
+                  WTSVirtualChannelQuery
+             1    DllMain
+             5    XInputEnable
+            10    XInputGetAudioDeviceIds
+             7    XInputGetBatteryInformation
+             4    XInputGetCapabilities
+             8    XInputGetKeystroke
+             2    XInputGetState
+             3    XInputSetState
+
+  Summary
+
+        204C .debug$S
+         2A8 .idata$2
+         2A8 .idata$3
+          88 .idata$4
+          88 .idata$5
+         196 .idata$6

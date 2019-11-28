@@ -1,0 +1,40 @@
+Microsoft (R) COFF/PE Dumper Version 14.23.28107.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\arm64\wdstptc.lib
+
+File Type: LIBRARY
+
+     Exports
+
+       ordinal    name
+
+                  ?WdsTptcDownload@@YAKKKPEBG000KKKH@Z (unsigned long __cdecl WdsTptcDownload(unsigned long,unsigned long,unsigned short const *,unsigned short const *,unsigned short const *,unsigned short const *,unsigned long,unsigned long,unsigned long,int))
+                  ?WdsTransportClientApplyImage@@YAKPEAU_WDS_TRANSPORTCLIENT_REQUEST@@PEAU_WDS_TRANSPORTCLIENT_IMAGE_APPLY@@@Z (unsigned long __cdecl WdsTransportClientApplyImage(struct _WDS_TRANSPORTCLIENT_REQUEST *,struct _WDS_TRANSPORTCLIENT_IMAGE_APPLY *))
+                  ?WdsTransportClientElSetLogFunction@@YAXP6AXPEBGZZ@Z (void __cdecl WdsTransportClientElSetLogFunction(void (__cdecl*)(unsigned short const *,...)))
+                  ?WdsTransportClientElSetLogFunctionEx@@YAXP6AXKPEBGZZ@Z (void __cdecl WdsTransportClientElSetLogFunctionEx(void (__cdecl*)(unsigned long,unsigned short const *,...)))
+                  ?WdsTransportClientGetAggressiveBufferSize@@YAKHPEAK@Z (unsigned long __cdecl WdsTransportClientGetAggressiveBufferSize(int,unsigned long *))
+                  ?WdsTransportClientRegisterTrace@@YAKP6AXPEBGPEAD@Z@Z (unsigned long __cdecl WdsTransportClientRegisterTrace(void (__cdecl*)(unsigned short const *,char *)))
+                  WdsTransportClientAddRefBuffer
+                  WdsTransportClientCancelSession
+                  WdsTransportClientCancelSessionEx
+                  WdsTransportClientCloseSession
+                  WdsTransportClientCompleteReceive
+                  WdsTransportClientInitialize
+                  WdsTransportClientInitializeSession
+                  WdsTransportClientQueryStatus
+                  WdsTransportClientRegisterCallback
+                  WdsTransportClientReleaseBuffer
+                  WdsTransportClientShutdown
+                  WdsTransportClientStartSession
+                  WdsTransportClientWaitForCompletion
+
+  Summary
+
+          C3 .debug$S
+          14 .idata$2
+          14 .idata$3
+           8 .idata$4
+           8 .idata$5
+           C .idata$6

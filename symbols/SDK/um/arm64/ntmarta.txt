@@ -1,0 +1,65 @@
+Microsoft (R) COFF/PE Dumper Version 14.23.28107.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\arm64\ntmarta.lib
+
+File Type: LIBRARY
+
+     Exports
+
+       ordinal    name
+
+                  ?AccProvHandleGrantAccessRights@@YAKPEAXW4_SE_OBJECT_TYPE@@PEAU_ACTRL_ALISTW@@2PEAU_ACTRL_OVERLAPPED@@@Z (unsigned long __cdecl AccProvHandleGrantAccessRights(void *,enum _SE_OBJECT_TYPE,struct _ACTRL_ALISTW *,struct _ACTRL_ALISTW *,struct _ACTRL_OVERLAPPED *))
+                  ?GetMartaExtensionInterface@@YAPEAU_ACC_MARTA_FUNCTIONS@@XZ (struct _ACC_MARTA_FUNCTIONS * __cdecl GetMartaExtensionInterface(void))
+                  AccConvertAccessMaskToActrlAccess
+                  AccConvertAccessToSD
+                  AccConvertAccessToSecurityDescriptor
+                  AccConvertAclToAccess
+                  AccConvertSDToAccess
+                  AccFreeIndexArray
+                  AccGetAccessForTrustee
+                  AccGetExplicitEntries
+                  AccGetInheritanceSource
+                  AccLookupAccountName
+                  AccLookupAccountSid
+                  AccLookupAccountTrustee
+                  AccProvCancelOperation
+                  AccProvGetAccessInfoPerObjectType
+                  AccProvGetAllRights
+                  AccProvGetCapabilities
+                  AccProvGetOperationResults
+                  AccProvGetTrusteesAccess
+                  AccProvGrantAccessRights
+                  AccProvHandleGetAccessInfoPerObjectType
+                  AccProvHandleGetAllRights
+                  AccProvHandleGetTrusteesAccess
+                  AccProvHandleIsAccessAudited
+                  AccProvHandleIsObjectAccessible
+                  AccProvHandleRevokeAccessRights
+                  AccProvHandleRevokeAuditRights
+                  AccProvHandleSetAccessRights
+                  AccProvIsAccessAudited
+                  AccProvIsObjectAccessible
+                  AccProvRevokeAccessRights
+                  AccProvRevokeAuditRights
+                  AccProvSetAccessRights
+                  AccRewriteGetExplicitEntriesFromAcl
+                  AccRewriteGetHandleRights
+                  AccRewriteGetNamedRights
+                  AccRewriteSetEntriesInAcl
+                  AccRewriteSetHandleRights
+                  AccRewriteSetNamedRights
+                  AccSetEntriesInAList
+                  AccTreeResetNamedSecurityInfo
+                  EventGuidToName
+                  EventNameFree
+
+  Summary
+
+          C3 .debug$S
+          14 .idata$2
+          14 .idata$3
+           8 .idata$4
+           8 .idata$5
+           C .idata$6

@@ -1,0 +1,31 @@
+Microsoft (R) COFF/PE Dumper Version 14.23.28107.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\arm64\ualapi.lib
+
+File Type: LIBRARY
+
+     Exports
+
+       ordinal    name
+
+             9    ?SumInstrumentationDataAddress@@YAHU_GUID@@QEAGPEAG2K@Z (int __cdecl SumInstrumentationDataAddress(struct _GUID,unsigned short * const,unsigned short *,unsigned short *,unsigned long))
+             7    ?SumInstrumentationStartGuid@@YAHU_GUID@@@Z (int __cdecl SumInstrumentationStartGuid(struct _GUID))
+             8    ?SumInstrumentationStopGuid@@YAHU_GUID@@@Z (int __cdecl SumInstrumentationStopGuid(struct _GUID))
+             6    SumInstrumentationData
+             4    SumInstrumentationStart
+             5    SumInstrumentationStop
+                  UalInstrument
+                  UalRegisterProduct
+                  UalStart
+                  UalStop
+
+  Summary
+
+          C0 .debug$S
+          14 .idata$2
+          14 .idata$3
+           8 .idata$4
+           8 .idata$5
+           C .idata$6

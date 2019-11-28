@@ -1,0 +1,253 @@
+Microsoft (R) COFF/PE Dumper Version 14.23.28107.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\arm\WinSpool.Lib
+
+File Type: LIBRARY
+
+     Exports
+
+       ordinal    name
+
+                  ?ADVANCEDSETUPDIALOG@@YAJPAUHWND__@@PAXPAU_devicemodeA@@2@Z (long __cdecl ADVANCEDSETUPDIALOG(struct HWND__ *,void *,struct _devicemodeA *,struct _devicemodeA *))
+                  ?AdvancedSetupDialog@@YAJPAUHWND__@@PAXPAU_devicemodeA@@2@Z (long __cdecl AdvancedSetupDialog(struct HWND__ *,void *,struct _devicemodeA *,struct _devicemodeA *))
+           218    ?CallCommonPropertySheetUI@@YAJPAUHWND__@@P6AJPAU_PROPSHEETUI_INFO@@J@ZJPAK@Z (long __cdecl CallCommonPropertySheetUI(struct HWND__ *,long (__cdecl*)(struct _PROPSHEETUI_INFO *,long),long,unsigned long *))
+                  ?ConvertAnsiDevModeToUnicodeDevmode@@YAHPAU_devicemodeA@@PAU_devicemodeW@@KPAK@Z (int __cdecl ConvertAnsiDevModeToUnicodeDevmode(struct _devicemodeA *,struct _devicemodeW *,unsigned long,unsigned long *))
+                  ?ConvertUnicodeDevModeToAnsiDevmode@@YAHPAU_devicemodeW@@PAU_devicemodeA@@KPAK@Z (int __cdecl ConvertUnicodeDevModeToAnsiDevmode(struct _devicemodeW *,struct _devicemodeA *,unsigned long,unsigned long *))
+                  ?DEVICEMODE@@YAXPAUHWND__@@PAXPAD2@Z (void __cdecl DEVICEMODE(struct HWND__ *,void *,char *,char *))
+                  ?DeviceMode@@YAXPAUHWND__@@PAXPAD2@Z (void __cdecl DeviceMode(struct HWND__ *,void *,char *,char *))
+                  ?DocumentEvent@@YAHPAXPAUHDC__@@HK0K0@Z (int __cdecl DocumentEvent(void *,struct HDC__ *,int,unsigned long,void *,unsigned long,void *))
+           252    ?FindCompatibleDriver@@YAJPBG0PAGKPAK1K22@Z (long __cdecl FindCompatibleDriver(unsigned short const *,unsigned short const *,unsigned short *,unsigned long,unsigned long *,unsigned short *,unsigned long,unsigned long *,unsigned long *))
+           255    ?FlushBuffer2@@YAHPAX@Z (int __cdecl FlushBuffer2(void *))
+           362    ?GetWorkFlowSourceLibraryHandle@@YAPAUHINSTANCE__@@PAX@Z (struct HINSTANCE__ * __cdecl GetWorkFlowSourceLibraryHandle(void *))
+           233    ?InternalGetPrinterDriverA@@YAHPAXPADKPAEKPAK@Z (int __cdecl InternalGetPrinterDriverA(void *,char *,unsigned long,unsigned char *,unsigned long,unsigned long *))
+           234    ?InternalGetPrinterDriverW@@YAHPAXPAGKPAEKPAK@Z (int __cdecl InternalGetPrinterDriverW(void *,unsigned short *,unsigned long,unsigned char *,unsigned long,unsigned long *))
+           221    ?PrintUIDocumentDefaults@@YAXPAUHWND__@@PBGHJ@Z (void __cdecl PrintUIDocumentDefaults(struct HWND__ *,unsigned short const *,int,long))
+           229    ?PrintUIDocumentPropertiesWrap@@YAJPAUHWND__@@PAXPAGPAU_devicemodeW@@3KK@Z (long __cdecl PrintUIDocumentPropertiesWrap(struct HWND__ *,void *,unsigned short *,struct _devicemodeW *,struct _devicemodeW *,unsigned long,unsigned long))
+           220    ?PrintUIPrinterPropPages@@YAXPAUHWND__@@PBGHJ@Z (void __cdecl PrintUIPrinterPropPages(struct HWND__ *,unsigned short const *,int,long))
+           230    ?PrintUIPrinterSetup@@YAHPAUHWND__@@IIPAGPAIPBG@Z (int __cdecl PrintUIPrinterSetup(struct HWND__ *,unsigned int,unsigned int,unsigned short *,unsigned int *,unsigned short const *))
+           219    ?PrintUIQueueCreate@@YAXPAUHWND__@@PBGHJ@Z (void __cdecl PrintUIQueueCreate(struct HWND__ *,unsigned short const *,int,long))
+           231    ?PrintUIServerPropPages@@YAXPAUHWND__@@PBGHJ@Z (void __cdecl PrintUIServerPropPages(struct HWND__ *,unsigned short const *,int,long))
+                  ?QueryColorProfile@@YAHPAXPAU_devicemodeW@@K0PAK2@Z (int __cdecl QueryColorProfile(void *,struct _devicemodeW *,unsigned long,void *,unsigned long *,unsigned long *))
+                  ?QueryRemoteFonts@@YAHPAXPAU_UNIVERSAL_FONT_ID@@K@Z (int __cdecl QueryRemoteFonts(void *,struct _UNIVERSAL_FONT_ID *,unsigned long))
+                  ?QuerySpoolMode@@YAHPAXPAJPAK@Z (int __cdecl QuerySpoolMode(void *,long *,unsigned long *))
+           363    ?SetParentWindow@@YAHPAXPAUHWND__@@H@Z (int __cdecl SetParentWindow(void *,struct HWND__ *,int))
+                  ?SpoolerDevQueryPrintW@@YAHPAXPAU_devicemodeW@@PAKPAGK@Z (int __cdecl SpoolerDevQueryPrintW(void *,struct _devicemodeW *,unsigned long *,unsigned short *,unsigned long))
+                  ?StartDocDlgW@@YAPAGPAXPAU_DOCINFOW@@@Z (unsigned short * __cdecl StartDocDlgW(void *,struct _DOCINFOW *))
+                  AbortPrinter
+                  AddFormA
+                  AddFormW
+                  AddJobA
+                  AddJobW
+                  AddMonitorA
+                  AddMonitorW
+           206    AddPerMachineConnectionA
+           207    AddPerMachineConnectionW
+                  AddPortA
+                  AddPortExA
+                  AddPortExW
+                  AddPortW
+                  AddPrintProcessorA
+                  AddPrintProcessorW
+                  AddPrintProvidorA
+                  AddPrintProvidorW
+                  AddPrinterA
+                  AddPrinterConnection2A
+                  AddPrinterConnection2W
+                  AddPrinterConnectionA
+                  AddPrinterConnectionW
+                  AddPrinterDriverA
+                  AddPrinterDriverExA
+                  AddPrinterDriverExW
+                  AddPrinterDriverW
+                  AddPrinterW
+                  AdvancedDocumentPropertiesA
+                  AdvancedDocumentPropertiesW
+                  ClosePrinter
+                  CloseSpoolFileHandle
+                  CommitSpoolData
+                  ConfigurePortA
+                  ConfigurePortW
+                  ConnectToPrinterDlg
+                  CorePrinterDriverInstalledA
+                  CorePrinterDriverInstalledW
+                  CreatePrintAsyncNotifyChannel
+                  CreatePrinterIC
+                  DEVICECAPABILITIES
+                  DeleteFormA
+                  DeleteFormW
+                  DeleteJobNamedProperty
+                  DeleteMonitorA
+                  DeleteMonitorW
+           208    DeletePerMachineConnectionA
+           209    DeletePerMachineConnectionW
+                  DeletePortA
+                  DeletePortW
+                  DeletePrintProcessorA
+                  DeletePrintProcessorW
+                  DeletePrintProvidorA
+                  DeletePrintProvidorW
+                  DeletePrinter
+                  DeletePrinterConnectionA
+                  DeletePrinterConnectionW
+                  DeletePrinterDataA
+                  DeletePrinterDataExA
+                  DeletePrinterDataExW
+                  DeletePrinterDataW
+                  DeletePrinterDriverA
+                  DeletePrinterDriverExA
+                  DeletePrinterDriverExW
+                  DeletePrinterDriverPackageA
+                  DeletePrinterDriverPackageW
+                  DeletePrinterDriverW
+                  DeletePrinterIC
+                  DeletePrinterKeyA
+                  DeletePrinterKeyW
+                  DevQueryPrint
+                  DevQueryPrintEx
+                  DeviceCapabilities
+                  DeviceCapabilitiesA
+                  DeviceCapabilitiesW
+                  DevicePropertySheets
+                  DocumentPropertiesA
+                  DocumentPropertiesW
+                  DocumentPropertySheets
+                  EXTDEVICEMODE
+                  EndDocPrinter
+                  EndPagePrinter
+                  EnumFormsA
+                  EnumFormsW
+                  EnumJobNamedProperties
+                  EnumJobsA
+                  EnumJobsW
+                  EnumMonitorsA
+                  EnumMonitorsW
+           210    EnumPerMachineConnectionsA
+           211    EnumPerMachineConnectionsW
+                  EnumPortsA
+                  EnumPortsW
+                  EnumPrintProcessorDatatypesA
+                  EnumPrintProcessorDatatypesW
+                  EnumPrintProcessorsA
+                  EnumPrintProcessorsW
+                  EnumPrinterDataA
+                  EnumPrinterDataExA
+                  EnumPrinterDataExW
+                  EnumPrinterDataW
+                  EnumPrinterDriversA
+                  EnumPrinterDriversW
+                  EnumPrinterKeyA
+                  EnumPrinterKeyW
+           100    EnumPrinterPropertySheets
+                  EnumPrintersA
+                  EnumPrintersW
+                  ExtDeviceMode
+           224    ExternalConnectToLd64In32Server
+                  FindClosePrinterChangeNotification
+                  FindFirstPrinterChangeNotification
+                  FindNextPrinterChangeNotification
+                  FlushPrinter
+           215    ForceUnloadDriver
+                  FreePrintNamedPropertyArray
+                  FreePrintPropertyValue
+                  FreePrinterNotifyInfo
+                  GetCorePrinterDriversA
+                  GetCorePrinterDriversW
+           201    GetDefaultPrinterA
+           203    GetDefaultPrinterW
+                  GetFormA
+                  GetFormW
+                  GetJobA
+                  GetJobNamedPropertyValue
+                  GetJobW
+           251    GetPrintClassObject
+                  GetPrintExecutionData
+                  GetPrintOutputInfo
+                  GetPrintProcessorDirectoryA
+                  GetPrintProcessorDirectoryW
+                  GetPrinterA
+                  GetPrinterDataA
+                  GetPrinterDataExA
+                  GetPrinterDataExW
+                  GetPrinterDataW
+                  GetPrinterDriver2A
+                  GetPrinterDriver2W
+                  GetPrinterDriverA
+                  GetPrinterDriverDirectoryA
+                  GetPrinterDriverDirectoryW
+                  GetPrinterDriverPackagePathA
+                  GetPrinterDriverPackagePathW
+                  GetPrinterDriverW
+                  GetPrinterW
+                  GetSpoolFileHandle
+                  InstallPrinterDriverFromPackageA
+                  InstallPrinterDriverFromPackageW
+                  IsValidDevmodeA
+                  IsValidDevmodeW
+           361    IsWorkflowAssociated
+           212    LoadPrinterDriver
+                  OpenPrinter2A
+                  OpenPrinter2W
+                  OpenPrinterA
+                  OpenPrinterW
+                  PlayGdiScriptOnPrinterIC
+           228    PrintUICreateInstance
+           226    PrintUIWebPnpEntry
+           227    PrintUIWebPnpPostEntry
+                  PrinterMessageBoxA
+                  PrinterMessageBoxW
+                  PrinterProperties
+           216    PublishPrinterA
+           217    PublishPrinterW
+                  ReadPrinter
+           213    RefCntLoadDriver
+           214    RefCntUnloadDriver
+                  RegisterForPrintAsyncNotifications
+                  ReportJobProcessingProgress
+                  ResetPrinterA
+                  ResetPrinterW
+           223    RouterFreeBidiResponseContainer
+                  ScheduleJob
+                  SeekPrinter
+           222    SendRecvBidiData
+           202    SetDefaultPrinterA
+           204    SetDefaultPrinterW
+                  SetFormA
+                  SetFormW
+                  SetJobA
+                  SetJobNamedProperty
+                  SetJobW
+                  SetPortA
+                  SetPortW
+           254    SetPrintExecutionData
+                  SetPrinterA
+                  SetPrinterDataA
+                  SetPrinterDataExA
+                  SetPrinterDataExW
+                  SetPrinterDataW
+                  SetPrinterW
+           253    SetWinspoolOptions
+                  SplDriverUnloadComplete
+           205    SplReadPrinter
+                  SpoolerPrinterEvent
+           250    SpoolerSetPolicy
+                  StartDocDlgA
+                  StartDocPrinterA
+                  StartDocPrinterW
+                  StartPagePrinter
+                  UnRegisterForPrintAsyncNotifications
+                  UploadPrinterDriverPackageA
+                  UploadPrinterDriverPackageW
+                  WaitForPrinterChange
+                  WritePrinter
+                  XcvDataW
+
+  Summary
+
+          C6 .debug$S
+          14 .idata$2
+          14 .idata$3
+           4 .idata$4
+           4 .idata$5
+           E .idata$6

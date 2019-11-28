@@ -1,13 +1,15 @@
 #include <Windows.h>
-#include <WinBase.h>
+
+#define SECURITY_WIN32 1
+#include <sspi.h>
 
 int main(int argc, char* argv[])
 {
-    OSVERSIONINFOW instance;
+    ALG_ID instance;
     const int size = sizeof(instance);
-    const int value = VER_PLATFORM_WIN32_NT;
+    const int value = STATUS_INVALID_PARAMETER;
 
-    const void* ptr = GetVersionEx;
+    const void* ptr = EnumerateSecurityPackages;
 
     return EXIT_SUCCESS;
 }

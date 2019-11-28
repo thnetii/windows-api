@@ -1,0 +1,340 @@
+Microsoft (R) COFF/PE Dumper Version 14.23.28107.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\arm64\WinInet.Lib
+
+File Type: LIBRARY
+
+     Exports
+
+       ordinal    name
+
+                  ?DispatchAPICall@@YAXPEAUHWND__@@PEAUHINSTANCE__@@PEADH@Z (void __cdecl DispatchAPICall(struct HWND__ *,struct HINSTANCE__ *,char *,int))
+                  AppCacheCheckManifest
+                  AppCacheCloseHandle
+                  AppCacheCreateAndCommitFile
+                  AppCacheDeleteGroup
+                  AppCacheDeleteIEGroup
+                  AppCacheDuplicateHandle
+                  AppCacheFinalize
+                  AppCacheFreeDownloadList
+                  AppCacheFreeGroupList
+                  AppCacheFreeIESpace
+                  AppCacheFreeSpace
+                  AppCacheGetDownloadList
+                  AppCacheGetFallbackUrl
+                  AppCacheGetGroupList
+                  AppCacheGetIEGroupList
+                  AppCacheGetInfo
+                  AppCacheGetManifestUrl
+                  AppCacheLookup
+                  CommitUrlCacheEntryA
+                  CommitUrlCacheEntryBinaryBlob
+                  CommitUrlCacheEntryW
+           411    CreateCacheServerRpcBinding
+                  CreateMD5SSOHash
+                  CreateUrlCacheContainerA
+                  CreateUrlCacheContainerW
+                  CreateUrlCacheEntryA
+                  CreateUrlCacheEntryExW
+                  CreateUrlCacheEntryW
+                  CreateUrlCacheGroup
+                  DeleteIE3Cache
+                  DeleteUrlCacheContainerA
+                  DeleteUrlCacheContainerW
+                  DeleteUrlCacheEntry
+                  DeleteUrlCacheEntryA
+                  DeleteUrlCacheEntryW
+                  DeleteUrlCacheGroup
+                  DeleteWpadCacheForNetworks
+                  DetectAutoProxyUrl
+           101    DoConnectoidsExist
+           109    ExportCookieFileA
+           111    ExportCookieFileW
+                  FindCloseUrlCache
+                  FindFirstUrlCacheContainerA
+                  FindFirstUrlCacheContainerW
+                  FindFirstUrlCacheEntryA
+                  FindFirstUrlCacheEntryExA
+                  FindFirstUrlCacheEntryExW
+                  FindFirstUrlCacheEntryW
+                  FindFirstUrlCacheGroup
+                  FindNextUrlCacheContainerA
+                  FindNextUrlCacheContainerW
+                  FindNextUrlCacheEntryA
+                  FindNextUrlCacheEntryExA
+                  FindNextUrlCacheEntryExW
+                  FindNextUrlCacheEntryW
+                  FindNextUrlCacheGroup
+           118    FindP3PPolicySymbol
+                  ForceNexusLookup
+                  ForceNexusLookupExW
+           122    FreeP3PObject
+                  FreeUrlCacheSpaceA
+                  FreeUrlCacheSpaceW
+                  FtpCommandA
+                  FtpCommandW
+                  FtpCreateDirectoryA
+                  FtpCreateDirectoryW
+                  FtpDeleteFileA
+                  FtpDeleteFileW
+                  FtpFindFirstFileA
+                  FtpFindFirstFileW
+                  FtpGetCurrentDirectoryA
+                  FtpGetCurrentDirectoryW
+                  FtpGetFileA
+                  FtpGetFileEx
+                  FtpGetFileSize
+                  FtpGetFileW
+                  FtpOpenFileA
+                  FtpOpenFileW
+                  FtpPutFileA
+                  FtpPutFileEx
+                  FtpPutFileW
+                  FtpRemoveDirectoryA
+                  FtpRemoveDirectoryW
+                  FtpRenameFileA
+                  FtpRenameFileW
+                  FtpSetCurrentDirectoryA
+                  FtpSetCurrentDirectoryW
+           410    GetCacheServerConnection
+           102    GetDiskInfoA
+           121    GetP3PPolicy
+           123    GetP3PRequestStatus
+                  GetUrlCacheConfigInfoA
+                  GetUrlCacheConfigInfoW
+                  GetUrlCacheEntryBinaryBlob
+                  GetUrlCacheEntryInfoA
+                  GetUrlCacheEntryInfoExA
+                  GetUrlCacheEntryInfoExW
+                  GetUrlCacheEntryInfoW
+                  GetUrlCacheGroupAttributeA
+                  GetUrlCacheGroupAttributeW
+                  GetUrlCacheHeaderData
+                  GopherCreateLocatorA
+                  GopherCreateLocatorW
+                  GopherFindFirstFileA
+                  GopherFindFirstFileW
+                  GopherGetAttributeA
+                  GopherGetAttributeW
+                  GopherGetLocatorTypeA
+                  GopherGetLocatorTypeW
+                  GopherOpenFileA
+                  GopherOpenFileW
+                  HttpAddRequestHeadersA
+                  HttpAddRequestHeadersW
+                  HttpCheckDavCompliance
+           104    HttpCheckDavComplianceA
+           105    HttpCheckDavComplianceW
+                  HttpCloseDependencyHandle
+                  HttpDuplicateDependencyHandle
+                  HttpEndRequestA
+                  HttpEndRequestW
+                  HttpGetServerCredentials
+                  HttpGetTunnelSocket
+                  HttpIndicatePageLoadComplete
+                  HttpIsHostHstsEnabled
+                  HttpOpenDependencyHandle
+                  HttpOpenRequestA
+                  HttpOpenRequestW
+                  HttpPushClose
+                  HttpPushEnable
+                  HttpPushWait
+                  HttpQueryInfoA
+                  HttpQueryInfoW
+                  HttpSendRequestA
+                  HttpSendRequestExA
+                  HttpSendRequestExW
+                  HttpSendRequestW
+                  HttpWebSocketClose
+                  HttpWebSocketCompleteUpgrade
+                  HttpWebSocketQueryCloseStatus
+                  HttpWebSocketReceive
+                  HttpWebSocketSend
+                  HttpWebSocketShutdown
+           108    ImportCookieFileA
+           110    ImportCookieFileW
+                  IncrementUrlCacheHeaderData
+           346    InternalInternetGetCookie
+                  InternetAlgIdToStringA
+                  InternetAlgIdToStringW
+                  InternetAttemptConnect
+           402    InternetAutoProxyGetProxyForUrl
+           403    InternetAutoProxyOnSendRequestComplete
+                  InternetAutodial
+                  InternetAutodialCallback
+                  InternetAutodialHangup
+                  InternetCanonicalizeUrlA
+                  InternetCanonicalizeUrlW
+                  InternetCheckConnectionA
+                  InternetCheckConnectionW
+                  InternetClearAllPerSiteCookieDecisions
+                  InternetCloseHandle
+                  InternetCombineUrlA
+                  InternetCombineUrlW
+                  InternetConfirmZoneCrossing
+                  InternetConfirmZoneCrossingA
+                  InternetConfirmZoneCrossingW
+                  InternetConnectA
+                  InternetConnectW
+                  InternetConvertUrlFromWireToWideChar
+                  InternetCrackUrlA
+                  InternetCrackUrlW
+                  InternetCreateUrlA
+                  InternetCreateUrlW
+                  InternetDial
+                  InternetDialA
+                  InternetDialW
+                  InternetEnumPerSiteCookieDecisionA
+                  InternetEnumPerSiteCookieDecisionW
+                  InternetErrorDlg
+                  InternetFindNextFileA
+                  InternetFindNextFileW
+                  InternetFortezzaCommand
+                  InternetFreeCookies
+                  InternetFreeProxyInfoList
+                  InternetGetCertByURL
+                  InternetGetCertByURLA
+                  InternetGetConnectedState
+                  InternetGetConnectedStateEx
+                  InternetGetConnectedStateExA
+                  InternetGetConnectedStateExW
+                  InternetGetCookieA
+                  InternetGetCookieEx2
+                  InternetGetCookieExA
+                  InternetGetCookieExW
+                  InternetGetCookieW
+                  InternetGetLastResponseInfoA
+                  InternetGetLastResponseInfoW
+                  InternetGetPerSiteCookieDecisionA
+                  InternetGetPerSiteCookieDecisionW
+                  InternetGetProxyForUrl
+                  InternetGetSecurityInfoByURL
+                  InternetGetSecurityInfoByURLA
+                  InternetGetSecurityInfoByURLW
+                  InternetGoOnline
+                  InternetGoOnlineA
+                  InternetGoOnlineW
+                  InternetHangUp
+                  InternetInitializeAutoProxyDll
+                  InternetLockRequestFile
+                  InternetOpenA
+                  InternetOpenUrlA
+                  InternetOpenUrlW
+                  InternetOpenW
+                  InternetQueryDataAvailable
+                  InternetQueryFortezzaStatus
+                  InternetQueryOptionA
+                  InternetQueryOptionW
+                  InternetReadFile
+                  InternetReadFileExA
+                  InternetReadFileExW
+                  InternetSecurityProtocolToStringA
+                  InternetSecurityProtocolToStringW
+                  InternetSetCookieA
+                  InternetSetCookieEx2
+                  InternetSetCookieExA
+                  InternetSetCookieExW
+                  InternetSetCookieW
+                  InternetSetDialState
+                  InternetSetDialStateA
+                  InternetSetDialStateW
+                  InternetSetFilePointer
+                  InternetSetOptionA
+                  InternetSetOptionExA
+                  InternetSetOptionExW
+                  InternetSetOptionW
+                  InternetSetPerSiteCookieDecisionA
+                  InternetSetPerSiteCookieDecisionW
+                  InternetSetStatusCallback
+                  InternetSetStatusCallbackA
+                  InternetSetStatusCallbackW
+                  InternetShowSecurityInfoByURL
+                  InternetShowSecurityInfoByURLA
+                  InternetShowSecurityInfoByURLW
+                  InternetTimeFromSystemTime
+                  InternetTimeFromSystemTimeA
+                  InternetTimeFromSystemTimeW
+                  InternetTimeToSystemTime
+                  InternetTimeToSystemTimeA
+                  InternetTimeToSystemTimeW
+                  InternetUnlockRequestFile
+                  InternetWriteFile
+                  InternetWriteFileExA
+                  InternetWriteFileExW
+           421    IsDialUpConnection
+           116    IsDomainLegalCookieDomainA
+           117    IsDomainLegalCookieDomainW
+                  IsHostInProxyBypassList
+           420    IsLanConnection
+           112    IsProfilesEnabled
+                  IsUrlCacheEntryExpiredA
+                  IsUrlCacheEntryExpiredW
+                  LoadUrlCacheContent
+           120    MapResourceToPolicy
+                  ParseX509EncodedCertificateForListBoxEntry
+           103    PerformOperationOverUrlCacheA
+                  PrivacyGetZonePreferenceW
+                  PrivacySetZonePreferenceW
+           401    ReadGuidsForConnectedNetworks
+                  ReadUrlCacheEntryStream
+                  ReadUrlCacheEntryStreamEx
+           422    RegisterForNetworkChangeNotification
+                  RegisterUrlCacheNotification
+                  ResumeSuspendedDownload
+                  RetrieveUrlCacheEntryFileA
+                  RetrieveUrlCacheEntryFileW
+                  RetrieveUrlCacheEntryStreamA
+                  RetrieveUrlCacheEntryStreamW
+                  RunOnceUrlCache
+           413    SetGlobalJetParameters
+                  SetUrlCacheConfigInfoA
+                  SetUrlCacheConfigInfoW
+                  SetUrlCacheEntryGroup
+                  SetUrlCacheEntryGroupA
+                  SetUrlCacheEntryGroupW
+                  SetUrlCacheEntryInfoA
+                  SetUrlCacheEntryInfoW
+                  SetUrlCacheGroupAttributeA
+                  SetUrlCacheGroupAttributeW
+                  SetUrlCacheHeaderData
+                  ShowCertificate
+                  ShowClientAuthCerts
+                  ShowSecurityInfo
+                  ShowX509EncodedCertificate
+           423    UnRegisterNetworkChangeNotification
+                  UnlockUrlCacheEntryFile
+                  UnlockUrlCacheEntryFileA
+                  UnlockUrlCacheEntryFileW
+                  UnlockUrlCacheEntryStream
+                  UpdateUrlCacheContentPath
+                  UrlCacheCheckEntriesExist
+                  UrlCacheCloseEntryHandle
+                  UrlCacheContainerSetEntryMaximumAge
+                  UrlCacheCreateContainer
+                  UrlCacheFindFirstEntry
+                  UrlCacheFindNextEntry
+                  UrlCacheFreeEntryInfo
+                  UrlCacheFreeGlobalSpace
+                  UrlCacheGetContentPaths
+                  UrlCacheGetEntryInfo
+                  UrlCacheGetGlobalCacheSize
+                  UrlCacheGetGlobalLimit
+                  UrlCacheReadEntryStream
+                  UrlCacheReloadSettings
+                  UrlCacheRetrieveEntryFile
+                  UrlCacheRetrieveEntryStream
+                  UrlCacheServer
+                  UrlCacheSetGlobalLimit
+                  UrlCacheUpdateEntryExtraData
+                  UrlZonesDetach
+
+  Summary
+
+          C3 .debug$S
+          14 .idata$2
+          14 .idata$3
+           8 .idata$4
+           8 .idata$5
+           C .idata$6

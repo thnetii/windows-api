@@ -1,0 +1,181 @@
+Microsoft (R) COFF/PE Dumper Version 14.23.28107.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\arm\Mprapi.Lib
+
+File Type: LIBRARY
+
+     Exports
+
+       ordinal    name
+
+                  CompressPhoneNumber
+                  MprAdminAddRoutingDomain
+                  MprAdminBufferFree
+                  MprAdminConnectionClearStats
+                  MprAdminConnectionEnum
+                  MprAdminConnectionEnumEx
+                  MprAdminConnectionGetInfo
+                  MprAdminConnectionGetInfoEx
+                  MprAdminConnectionRemoveQuarantine
+                  MprAdminDeleteRoutingDomain
+                  MprAdminDeregisterConnectionNotification
+                  MprAdminDeviceEnum
+                  MprAdminEstablishDomainRasServer
+                  MprAdminFreeRoutingDomainConfigEx
+                  MprAdminGetErrorString
+                  MprAdminGetPDCServer
+                  MprAdminGetProtocolStatistics
+                  MprAdminGetRoutingDomainId
+                  MprAdminInterfaceAddIkev2Policy
+                  MprAdminInterfaceClearStatisticsEx
+                  MprAdminInterfaceConnect
+                  MprAdminInterfaceCreate
+                  MprAdminInterfaceCreateEx
+                  MprAdminInterfaceDelete
+                  MprAdminInterfaceDeviceGetInfo
+                  MprAdminInterfaceDeviceSetInfo
+                  MprAdminInterfaceDisconnect
+                  MprAdminInterfaceEnum
+                  MprAdminInterfaceEnumEx
+                  MprAdminInterfaceGetCredentials
+                  MprAdminInterfaceGetCredentialsEx
+                  MprAdminInterfaceGetCustomInfoEx
+                  MprAdminInterfaceGetHandle
+                  MprAdminInterfaceGetInfo
+                  MprAdminInterfaceGetInfoEx
+                  MprAdminInterfaceGetStatisticsEx
+                  MprAdminInterfaceQueryUpdateResult
+                  MprAdminInterfaceSetCredentials
+                  MprAdminInterfaceSetCredentialsEx
+                  MprAdminInterfaceSetCustomInfoEx
+                  MprAdminInterfaceSetInfo
+                  MprAdminInterfaceSetInfoEx
+                  MprAdminInterfaceTransportAdd
+                  MprAdminInterfaceTransportGetInfo
+                  MprAdminInterfaceTransportRemove
+                  MprAdminInterfaceTransportSetInfo
+                  MprAdminInterfaceUpdatePhonebookInfo
+                  MprAdminInterfaceUpdateRoutes
+                  MprAdminIsDomainRasServer
+                  MprAdminIsModernStackEnabled
+                  MprAdminIsMultiTenancyEnabled
+                  MprAdminIsServiceInitialized
+                  MprAdminIsServiceRunning
+                  MprAdminMIBBufferFree
+                  MprAdminMIBEntryCreate
+                  MprAdminMIBEntryDelete
+                  MprAdminMIBEntryGet
+                  MprAdminMIBEntryGetFirst
+                  MprAdminMIBEntryGetNext
+                  MprAdminMIBEntrySet
+                  MprAdminMIBServerConnect
+                  MprAdminMIBServerDisconnect
+                  MprAdminMarkServerOffline
+                  MprAdminPortClearStats
+                  MprAdminPortDisconnect
+                  MprAdminPortEnum
+                  MprAdminPortGetInfo
+                  MprAdminPortReset
+                  MprAdminProtocolAction
+                  MprAdminRegisterConnectionNotification
+                  MprAdminRoutingDomainConnectionEnumEx
+                  MprAdminRoutingDomainGetConfigEx
+                  MprAdminRoutingDomainSetConfigEx
+                  MprAdminRoutingDomainsEnumEx
+                  MprAdminSendUserMessage
+                  MprAdminServerConnect
+                  MprAdminServerDisconnect
+                  MprAdminServerGetCredentials
+                  MprAdminServerGetInfo
+                  MprAdminServerGetInfoEx
+                  MprAdminServerSetCredentials
+                  MprAdminServerSetInfo
+                  MprAdminServerSetInfoEx
+                  MprAdminTransportCreate
+                  MprAdminTransportGetInfo
+                  MprAdminTransportSetInfo
+                  MprAdminUpdateConnection
+                  MprAdminUpgradeUsers
+                  MprAdminUserClose
+                  MprAdminUserGetInfo
+                  MprAdminUserOpen
+                  MprAdminUserRead
+                  MprAdminUserReadProfFlags
+                  MprAdminUserServerConnect
+                  MprAdminUserServerDisconnect
+                  MprAdminUserSetInfo
+                  MprAdminUserWrite
+                  MprAdminUserWriteProfFlags
+                  MprConfigAddRoutingDomain
+                  MprConfigBufferFree
+                  MprConfigDeleteRoutingDomain
+                  MprConfigFilterGetInfo
+                  MprConfigFilterSetInfo
+                  MprConfigFreeRoutingDomainConfigEx
+                  MprConfigGetFriendlyName
+                  MprConfigGetGuidName
+                  MprConfigGetRoutingDomainId
+                  MprConfigInterfaceCreate
+                  MprConfigInterfaceCreateEx
+                  MprConfigInterfaceDelete
+                  MprConfigInterfaceEnum
+                  MprConfigInterfaceEnumEx
+                  MprConfigInterfaceGetCustomInfoEx
+                  MprConfigInterfaceGetHandle
+                  MprConfigInterfaceGetInfo
+                  MprConfigInterfaceGetInfoEx
+                  MprConfigInterfaceSetCustomInfoEx
+                  MprConfigInterfaceSetInfo
+                  MprConfigInterfaceSetInfoEx
+                  MprConfigInterfaceTransportAdd
+                  MprConfigInterfaceTransportEnum
+                  MprConfigInterfaceTransportGetHandle
+                  MprConfigInterfaceTransportGetInfo
+                  MprConfigInterfaceTransportRemove
+                  MprConfigInterfaceTransportSetInfo
+                  MprConfigIsMultiTenancyEnabled
+                  MprConfigRoutingDomainEnumEx
+                  MprConfigRoutingDomainGetConfigEx
+                  MprConfigRoutingDomainSetConfigEx
+                  MprConfigServerBackup
+                  MprConfigServerConnect
+                  MprConfigServerDisconnect
+                  MprConfigServerGetInfo
+                  MprConfigServerGetInfoEx
+                  MprConfigServerInstall
+                  MprConfigServerRefresh
+                  MprConfigServerRestore
+                  MprConfigServerSetInfo
+                  MprConfigServerSetInfoEx
+                  MprConfigTransportCreate
+                  MprConfigTransportDelete
+                  MprConfigTransportEnum
+                  MprConfigTransportGetHandle
+                  MprConfigTransportGetInfo
+                  MprConfigTransportSetInfo
+                  MprDomainQueryRasServer
+                  MprDomainRegisterRasServer
+                  MprFreeInterfaceInfoEx
+                  MprGetUsrParams
+                  MprInfoBlockAdd
+                  MprInfoBlockFind
+                  MprInfoBlockQuerySize
+                  MprInfoBlockRemove
+                  MprInfoBlockSet
+                  MprInfoCreate
+                  MprInfoDelete
+                  MprInfoDuplicate
+                  MprInfoRemoveAll
+                  MprPortSetUsage
+                  RasPrivilegeAndCallBackNumber
+
+  Summary
+
+          C0 .debug$S
+          14 .idata$2
+          14 .idata$3
+           4 .idata$4
+           4 .idata$5
+           C .idata$6

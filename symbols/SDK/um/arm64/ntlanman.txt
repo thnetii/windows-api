@@ -1,0 +1,44 @@
+Microsoft (R) COFF/PE Dumper Version 14.23.28107.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\arm64\ntlanman.lib
+
+File Type: LIBRARY
+
+     Exports
+
+       ordinal    name
+
+            34    ?NPEnumResource@@YAKPEAXPEAI01@Z (unsigned long __cdecl NPEnumResource(void *,unsigned int *,void *,unsigned int *))
+            12    ?NPGetConnection@@YAKPEAG0PEAI@Z (unsigned long __cdecl NPGetConnection(unsigned short *,unsigned short *,unsigned int *))
+            53    ?NPGetReconnectFlags@@YAKPEAGPEAE@Z (unsigned long __cdecl NPGetReconnectFlags(unsigned short *,unsigned char *))
+            40    ?NPGetUniversalName@@YAKPEBGKPEAXPEAI@Z (unsigned long __cdecl NPGetUniversalName(unsigned short const *,unsigned long,void *,unsigned int *))
+            33    ?NPOpenEnum@@YAKIIIPEAU_NETRESOURCEW@@PEAPEAX@Z (unsigned long __cdecl NPOpenEnum(unsigned int,unsigned int,unsigned int,struct _NETRESOURCEW *,void * *))
+                  DllMain
+                  I_SystemFocusDialog
+            17    NPAddConnection
+            38    NPAddConnection3
+            18    NPCancelConnection
+            35    NPCloseEnum
+            36    NPFormatNetworkName
+            13    NPGetCaps
+            54    NPGetConnection3
+            49    NPGetConnectionPerformance
+            52    NPGetResourceInformation
+            41    NPGetResourceParent
+            16    NPGetUser
+                  QueryAppInstanceVersion
+                  RegisterAppInstance
+                  RegisterAppInstanceVersion
+                  ResetAllAppInstanceVersions
+                  SetAppInstanceCsvFlags
+
+  Summary
+
+          C6 .debug$S
+          14 .idata$2
+          14 .idata$3
+           8 .idata$4
+           8 .idata$5
+           E .idata$6

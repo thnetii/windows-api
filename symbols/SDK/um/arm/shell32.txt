@@ -1,0 +1,421 @@
+Microsoft (R) COFF/PE Dumper Version 14.23.28107.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\arm\shell32.lib
+
+File Type: LIBRARY
+
+     Exports
+
+       ordinal    name
+
+                  AssocCreateForClasses
+                  AssocGetDetailsOfPropKey
+           701    CDefFolderMenu_Create2
+            83    CIDLData_CreateFromIDArray
+                  CheckEscapesW
+                  CommandLineToArgvW
+           129    DAD_AutoScroll
+           131    DAD_DragEnterEx
+            22    DAD_DragEnterEx2
+           132    DAD_DragLeave
+           134    DAD_DragMove
+           136    DAD_SetDragImage
+           137    DAD_ShowDragImage
+                  DoEnvironmentSubstA
+                  DoEnvironmentSubstW
+                  DragAcceptFiles
+                  DragFinish
+                  DragQueryFile
+                  DragQueryFileA
+                  DragQueryFileAorW
+                  DragQueryFileW
+                  DragQueryPoint
+            64    DriveType
+                  DuplicateIcon
+                  ExtractAssociatedIconA
+                  ExtractAssociatedIconExA
+                  ExtractAssociatedIconExW
+                  ExtractAssociatedIconW
+                  ExtractIconA
+                  ExtractIconEx
+                  ExtractIconExA
+                  ExtractIconExW
+                  ExtractIconW
+                  FindExecutableA
+                  FindExecutableW
+                  GetCurrentProcessExplicitAppUserModelID
+            63    GetFileNameFromBrowse
+           154    ILAppendID
+            18    ILClone
+            19    ILCloneFirst
+            25    ILCombine
+           157    ILCreateFromPath
+           189    ILCreateFromPathA
+           190    ILCreateFromPathW
+            24    ILFindChild
+            16    ILFindLastID
+           155    ILFree
+           153    ILGetNext
+           152    ILGetSize
+            21    ILIsEqual
+            23    ILIsParent
+           846    ILLoadFromStreamEx
+            17    ILRemoveLastID
+            27    ILSaveToStream
+                  InitNetworkAddressControl
+           119    IsLFNDrive
+            41    IsLFNDriveA
+            42    IsLFNDriveW
+            66    IsNetDrive
+           680    IsUserAnAdmin
+            85    OpenRegStream
+           171    PathCleanupSpec
+            92    PathGetShortPath
+            43    PathIsExe
+           240    PathIsSlowA
+           239    PathIsSlowW
+            47    PathMakeUniqueName
+            49    PathQualify
+            51    PathResolve
+            75    PathYetAnotherMakeUniqueName
+            62    PickIconDlg
+            13    PifMgr_CloseProperties
+            10    PifMgr_GetProperties
+             9    PifMgr_OpenProperties
+            11    PifMgr_SetProperties
+           654    ReadCabinetState
+           524    RealDriveType
+            59    RestartDialog
+           730    RestartDialogEx
+                  SHAddDefaultPropertiesByExt
+           167    SHAddFromPropSheetExtArray
+                  SHAddToRecentDocs
+           196    SHAlloc
+                  SHAppBarMessage
+                  SHAssocEnumHandlers
+                  SHAssocEnumHandlersForProtocolByApplication
+                  SHBindToFolderIDListParent
+                  SHBindToFolderIDListParentEx
+                  SHBindToObject
+                  SHBindToParent
+                  SHBrowseForFolder
+                  SHBrowseForFolderA
+                  SHBrowseForFolderW
+           147    SHCLSIDFromString
+           644    SHChangeNotification_Lock
+           645    SHChangeNotification_Unlock
+                  SHChangeNotify
+             4    SHChangeNotifyDeregister
+             2    SHChangeNotifyRegister
+                  SHChangeNotifyRegisterThread
+            89    SHCloneSpecialIDList
+           102    SHCoCreateInstance
+                  SHCoCreateInstanceWorker
+                  SHCreateAssociationRegistration
+                  SHCreateCategoryEnum
+                  SHCreateDataObject
+                  SHCreateDefaultContextMenu
+                  SHCreateDefaultExtractIcon
+                  SHCreateDefaultPropertiesOp
+           165    SHCreateDirectory
+                  SHCreateDirectoryExA
+                  SHCreateDirectoryExW
+                  SHCreateDrvExtIcon
+           743    SHCreateFileExtractIconW
+                  SHCreateItemFromIDList
+                  SHCreateItemFromParsingName
+                  SHCreateItemFromRelativeName
+                  SHCreateItemInKnownFolder
+                  SHCreateItemWithParent
+                  SHCreateProcessAsUserW
+           168    SHCreatePropSheetExtArray
+                  SHCreateQueryCancelAutoPlayMoniker
+           256    SHCreateShellFolderView
+           174    SHCreateShellFolderViewEx
+                  SHCreateShellItem
+                  SHCreateShellItemArray
+                  SHCreateShellItemArrayFromDataObject
+                  SHCreateShellItemArrayFromIDLists
+                  SHCreateShellItemArrayFromShellItem
+            74    SHCreateStdEnumFmtEtc
+             3    SHDefExtractIconA
+             6    SHDefExtractIconW
+           169    SHDestroyPropSheetExtArray
+            88    SHDoDragDrop
+                  SHELL32_AddToBackIconTable
+                  SHELL32_AddToFrontIconTable
+                  SHELL32_AreAllItemsAvailable
+                  SHELL32_BindToFilePlaceholderHandler
+                  SHELL32_CCommonPlacesFolder_CreateInstance
+                  SHELL32_CDBurn_CloseSession
+                  SHELL32_CDBurn_DriveSupportedForDataBurn
+                  SHELL32_CDBurn_Erase
+                  SHELL32_CDBurn_GetCDInfo
+                  SHELL32_CDBurn_GetLiveFSDiscInfo
+                  SHELL32_CDBurn_GetStagingPathOrNormalPath
+                  SHELL32_CDBurn_GetTaskInfo
+                  SHELL32_CDBurn_IsBlankDisc
+                  SHELL32_CDBurn_IsBlankDisc2
+                  SHELL32_CDBurn_IsLiveFS
+                  SHELL32_CDBurn_OnDeviceChange
+                  SHELL32_CDBurn_OnEject
+                  SHELL32_CDBurn_OnMediaChange
+                  SHELL32_CDefFolderMenu_Create2
+                  SHELL32_CDefFolderMenu_Create2Ex
+                  SHELL32_CDefFolderMenu_MergeMenu
+                  SHELL32_CDrivesContextMenu_Create
+                  SHELL32_CDrivesDropTarget_Create
+                  SHELL32_CDrives_CreateSFVCB
+                  SHELL32_CFSDropTarget_CreateInstance
+                  SHELL32_CFSFolderCallback_Create
+                  SHELL32_CFillPropertiesTask_CreateInstance
+                  SHELL32_CLibraryDropTarget_CreateInstance
+                  SHELL32_CLocationContextMenu_Create
+                  SHELL32_CLocationFolderUI_CreateInstance
+                  SHELL32_CMountPoint_DoAutorun
+                  SHELL32_CMountPoint_DoAutorunPrompt
+                  SHELL32_CMountPoint_IsAutoRunDriveAndEnabledByPolicy
+                  SHELL32_CMountPoint_ProcessAutoRunFile
+                  SHELL32_CMountPoint_WantAutorunUI
+                  SHELL32_CMountPoint_WantAutorunUIGetReady
+                  SHELL32_CPL_CategoryIdArrayFromVariant
+                  SHELL32_CPL_IsLegacyCanonicalNameListedUnderKey
+                  SHELL32_CPL_ModifyWowDisplayName
+                  SHELL32_CRecentDocsContextMenu_CreateInstance
+                  SHELL32_CSyncRootManager_CreateInstance
+                  SHELL32_CTransferConfirmation_CreateInstance
+                  SHELL32_CallFileCopyHooks
+                  SHELL32_CanDisplayWin8CopyDialog
+                  SHELL32_CloseAutoplayPrompt
+                  SHELL32_CommandLineFromMsiDescriptor
+                  SHELL32_CopyFilePlaceholderToNewFile
+                  SHELL32_CopySecondaryTiles
+                  SHELL32_CreateConfirmationInterrupt
+                  SHELL32_CreateConflictInterrupt
+                  SHELL32_CreateDefaultOperationDataProvider
+                  SHELL32_CreateFileFolderContextMenu
+                  SHELL32_CreateLinkInfoW
+                  SHELL32_CreatePlaceholderFile
+                  SHELL32_CreateQosRecorder
+                  SHELL32_CreateSharePointView
+                  SHELL32_Create_IEnumUICommand
+                  SHELL32_DestroyLinkInfo
+                  SHELL32_EncryptDirectory
+                  SHELL32_EncryptedFileKeyInfo
+                  SHELL32_EnumCommonTasks
+                  SHELL32_FilePlaceholder_BindToPrimaryStream
+                  SHELL32_FilePlaceholder_CreateInstance
+                  SHELL32_FreeEncryptedFileKeyInfo
+                  SHELL32_GenerateAppID
+                  SHELL32_GetAppIDRoot
+                  SHELL32_GetCommandProviderForFolderType
+                  SHELL32_GetDPIAdjustedLogicalSize
+                  SHELL32_GetDiskCleanupPath
+                  SHELL32_GetFileNameFromBrowse
+                  SHELL32_GetIconOverlayManager
+                  SHELL32_GetLinkInfoData
+                  SHELL32_GetPlaceholderStatesFromFileAttributesAndReparsePointTag
+                  SHELL32_GetRatingBucket
+                  SHELL32_GetSkyDriveNetworkStates
+                  SHELL32_GetSqmableFileName
+                  SHELL32_GetThumbnailAdornerFromFactory
+                  SHELL32_GetThumbnailAdornerFromFactory2
+                  SHELL32_HandleUnrecognizedFileSystem
+                  SHELL32_IconCacheCreate
+                  SHELL32_IconCacheDestroy
+                  SHELL32_IconCacheHandleAssociationChanged
+                  SHELL32_IconCacheRestore
+                  SHELL32_IconCache_AboutToExtractIcons
+                  SHELL32_IconCache_DoneExtractingIcons
+                  SHELL32_IconCache_ExpandEnvAndSearchPath
+                  SHELL32_IconCache_RememberRecentlyExtractedIconsW
+                  SHELL32_IconOverlayManagerInit
+                  SHELL32_IsGetKeyboardLayoutPresent
+                  SHELL32_IsSystemUpgradeInProgress
+                  SHELL32_IsValidLinkInfo
+                  SHELL32_LegacyEnumSpecialTasksByType
+                  SHELL32_LegacyEnumTasks
+                  SHELL32_LookupBackIconIndex
+                  SHELL32_LookupFrontIconIndex
+                  SHELL32_NormalizeRating
+                  SHELL32_NotifyLinkTrackingServiceOfMove
+                  SHELL32_PifMgr_CloseProperties
+                  SHELL32_PifMgr_GetProperties
+                  SHELL32_PifMgr_OpenProperties
+                  SHELL32_PifMgr_SetProperties
+                  SHELL32_Printers_CreateBindInfo
+                  SHELL32_Printjob_GetPidl
+                  SHELL32_PurgeSystemIcon
+                  SHELL32_RefreshOverlayImages
+                  SHELL32_ResolveLinkInfoW
+                  SHELL32_SHAddSparseIcon
+                  SHELL32_SHCreateByValueOperationInterrupt
+                  SHELL32_SHCreateDefaultContextMenu
+                  SHELL32_SHCreateLocalServer
+                  SHELL32_SHCreateShellFolderView
+                  SHELL32_SHDuplicateEncryptionInfoFile
+                  SHELL32_SHEncryptFile
+                  SHELL32_SHFormatDriveAsync
+                  SHELL32_SHGetThreadUndoManager
+                  SHELL32_SHGetUserNameW
+                  SHELL32_SHIsVirtualDevice
+                  SHELL32_SHLaunchPropSheet
+                  SHELL32_SHLogILFromFSIL
+                  SHELL32_SHOpenWithDialog
+                  SHELL32_SHStartNetConnectionDialogW
+                  SHELL32_SHUICommandFromGUID
+                  SHELL32_SendToMenu_InvokeTargetedCommand
+                  SHELL32_SendToMenu_VerifyTargetedCommand
+                  SHELL32_SetPlaceholderReparsePointAttribute
+                  SHELL32_SetPlaceholderReparsePointAttribute2
+                  SHELL32_ShowHideIconOnlyOnDesktop
+                  SHELL32_SimpleRatingToFilterCondition
+                  SHELL32_StampIconForFile
+                  SHELL32_SuspendUndo
+                  SHELL32_TryVirtualDiscImageDriveEject
+                  SHELL32_UpdateFilePlaceholderStates
+                  SHELL32_VerifySaferTrust
+                  SHEmptyRecycleBinA
+                  SHEmptyRecycleBinW
+                  SHEnumerateUnreadMailAccountsW
+                  SHEvaluateSystemCommandTemplate
+                  SHFileOperation
+                  SHFileOperationA
+                  SHFileOperationW
+            90    SHFindFiles
+           149    SHFind_InitMenuPopup
+           526    SHFlushSFCache
+                  SHFormatDrive
+           195    SHFree
+                  SHFreeNameMappings
+           750    SHGetAttributesFromDataObject
+                  SHGetDataFromIDListA
+                  SHGetDataFromIDListW
+                  SHGetDesktopFolder
+                  SHGetDiskFreeSpaceA
+                  SHGetDiskFreeSpaceExA
+                  SHGetDiskFreeSpaceExW
+                  SHGetDriveMedia
+                  SHGetFileInfo
+                  SHGetFileInfoA
+                  SHGetFileInfoW
+                  SHGetFolderLocation
+                  SHGetFolderPathA
+                  SHGetFolderPathAndSubDirA
+                  SHGetFolderPathAndSubDirW
+                  SHGetFolderPathEx
+                  SHGetFolderPathW
+                  SHGetIDListFromObject
+                  SHGetIconOverlayIndexA
+                  SHGetIconOverlayIndexW
+           727    SHGetImageList
+                  SHGetInstanceExplorer
+                  SHGetItemFromDataObject
+                  SHGetItemFromObject
+                  SHGetKnownFolderIDList
+                  SHGetKnownFolderItem
+                  SHGetKnownFolderPath
+                  SHGetLocalizedName
+                  SHGetMalloc
+                  SHGetNameFromIDList
+           179    SHGetNewLinkInfoA
+           180    SHGetNewLinkInfoW
+                  SHGetPathFromIDList
+                  SHGetPathFromIDListA
+                  SHGetPathFromIDListEx
+                  SHGetPathFromIDListW
+                  SHGetPropertyStoreForWindow
+                  SHGetPropertyStoreFromIDList
+                  SHGetPropertyStoreFromParsingName
+            98    SHGetRealIDL
+           709    SHGetSetFolderCustomSettings
+            68    SHGetSetSettings
+                  SHGetSettings
+                  SHGetSpecialFolderLocation
+           175    SHGetSpecialFolderPath
+                  SHGetSpecialFolderPathA
+                  SHGetSpecialFolderPathW
+                  SHGetStockIconInfo
+                  SHGetTemporaryPropertyForItem
+                  SHGetUnreadMailCountW
+           193    SHHandleUpdateImage
+            28    SHILCreateFromPath
+                  SHInvokePrinterCommandA
+                  SHInvokePrinterCommandW
+                  SHIsFileAvailableOffline
+           747    SHLimitInputEdit
+                  SHLoadInProc
+                  SHLoadNonloadedIconOverlayIdentifiers
+            77    SHMapPIDLToSystemImageListIndex
+           716    SHMultiFileProperties
+           178    SHObjectProperties
+                  SHOpenFolderAndSelectItems
+            80    SHOpenPropSheetW
+                  SHOpenWithDialog
+                  SHParseDisplayName
+                  SHPathPrepareForWriteA
+                  SHPathPrepareForWriteW
+           685    SHPropStgCreate
+           688    SHPropStgReadMultiple
+           689    SHPropStgWriteMultiple
+                  SHQueryRecycleBinA
+                  SHQueryRecycleBinW
+                  SHQueryUserNotificationState
+                  SHRemoveLocalizedName
+           170    SHReplaceFromPropSheetExtArray
+                  SHResolveLibrary
+           100    SHRestricted
+                  SHSetDefaultProperties
+           231    SHSetFolderPathA
+           232    SHSetFolderPathW
+           176    SHSetInstanceExplorer
+                  SHSetKnownFolderPath
+                  SHSetLocalizedName
+                  SHSetTemporaryPropertyForItem
+                  SHSetUnreadMailCountW
+            73    SHShellFolderView_Message
+                  SHShowManageLibraryUI
+           162    SHSimpleIDListFromPath
+            14    SHStartNetConnectionDialogW
+           245    SHTestTokenMembership
+           191    SHUpdateImageA
+           192    SHUpdateImageW
+           173    SHValidateUNC
+                  SetCurrentProcessExplicitAppUserModelID
+                  ShellAboutA
+                  ShellAboutW
+                  ShellExecuteA
+                  ShellExecuteEx
+                  ShellExecuteExA
+                  ShellExecuteExW
+                  ShellExecuteW
+                  ShellHookProc
+            72    Shell_GetCachedImageIndex
+                  Shell_GetCachedImageIndexA
+                  Shell_GetCachedImageIndexW
+            71    Shell_GetImageLists
+            67    Shell_MergeMenus
+                  Shell_NotifyIcon
+                  Shell_NotifyIconA
+                  Shell_NotifyIconGetRect
+                  Shell_NotifyIconW
+           103    SignalFileOpen
+           682    StgMakeUniqueName
+                  UsersLibrariesFolderUI_CreateInstance
+                  WOWShellExecute
+           164    Win32DeleteFile
+           652    WriteCabinetState
+
+  Summary
+
+        52DB .debug$S
+         338 .debug$T
+           4 .drectve
+          14 .idata$2
+          14 .idata$3
+           4 .idata$4
+           4 .idata$5
+           C .idata$6
+        1890 .rdata

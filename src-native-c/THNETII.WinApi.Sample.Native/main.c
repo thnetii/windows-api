@@ -1,13 +1,12 @@
 #include <Windows.h>
-#include <WinBase.h>
 
 int main(int argc, char* argv[])
 {
-    SCARDCONTEXT instance;
+    DEVICE_TYPE instance;
     const int size = sizeof(instance);
-    const int value = VER_PLATFORM_WIN32_NT;
+    const int value = FILE_DEVICE_BEEP;
 
-    const void* ptr = GetVersionEx;
+    const void* ptr = &GUID_DEVINTERFACE_DISK;
 
     return EXIT_SUCCESS;
 }

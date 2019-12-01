@@ -21,6 +21,12 @@
     <Features>IOperation</Features>
     <CodeAnalysisRuleSet>$(MSBuildThisFileDirectory)AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
+  <Import Label="Version"
+          Condition="
+          '$(VersionPrefix)'=='' and
+          Exists('$(MSBuildThisFileDirectory)Directory.Version.props')
+          "
+          Project="$(MSBuildThisFileDirectory)Directory.Version.props"/>
   <PropertyGroup Label="Version" Condition="'$(VersionPrefix)'!=''">
     <FileVersion>$(VersionPrefix)</FileVersion>
     <AssemblyVersion>$(FileVersion)</AssemblyVersion>

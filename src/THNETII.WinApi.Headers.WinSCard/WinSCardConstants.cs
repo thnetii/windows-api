@@ -29,5 +29,8 @@ namespace THNETII.WinApi.Native.WinSCard
         public static unsafe ref readonly SCARD_IO_REQUEST SCARD_PCI_RAW =>
             ref Unsafe.AsRef<SCARD_IO_REQUEST>(g_rgSCardRawPci.Value.ToPointer());
         #endregion
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 95
+        public const int SCARD_AUTOALLOCATE = -1;
     }
 }

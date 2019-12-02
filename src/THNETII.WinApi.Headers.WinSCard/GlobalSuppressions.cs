@@ -10,3 +10,5 @@ using System.Diagnostics.CodeAnalysis;
 [assembly: SuppressMessage("Interoperability", "CA1401: P/Invokes should not be visible")]
 [assembly: SuppressMessage("Performance", "CA1815: Override equals and operator equals on value types")]
 [assembly: SuppressMessage("Naming", "CA1720: Identifier contains type name")]
+[assembly: SuppressMessage("Globalization", "CA2101: Specify marshaling for P/Invoke string arguments")]
+[assembly: SuppressMessage("Documentation", "CS0419: Ambigious reference in cref attribute")]

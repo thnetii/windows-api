@@ -49,9 +49,21 @@ namespace THNETII.WinApi.Native.WinSCard
                                                     // permissions for any database actions.)
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 135
+        /// <summary>
+        ///  Group used when no group name is provided when listing readers. Returns a list of all readers, regardless of what group or groups the readers are in. 
+        /// </summary>
         public const string SCARD_ALL_READERS = "SCard$AllReaders\0";
+        /// <summary>
+        /// Default group to which all readers are added when introduced into the system. 
+        /// </summary>
         public const string SCARD_DEFAULT_READERS = "SCard$DefaultReaders\0";
+        /// <summary>
+        /// Unused legacy value. This is an internally managed group that cannot be modified by using any reader group APIs. It is intended to be used for enumeration only. 
+        /// </summary>
         public const string SCARD_LOCAL_READERS = "SCard$LocalReaders\0";
+        /// <summary>
+        /// Unused legacy value. This is an internally managed group that cannot be modified by using any reader group APIs. It is intended to be used for enumeration only. 
+        /// </summary>
         public const string SCARD_SYSTEM_READERS = "SCard$SystemReaders\0";
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 140

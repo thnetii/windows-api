@@ -1023,5 +1023,81 @@ namespace THNETII.WinApi.Native.WinSCard
         }
 #endif // !NETSTANDARD1_3
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 250
+        #region SCardGetProviderIdA function
+        /// <inheritdoc cref="SCardGetProviderId(SCARDCONTEXT, LPCTSTR, out Guid)"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi)]
+        public static extern int SCardGetProviderIdA(
+            [In] SCARDCONTEXT hContext,
+            [In] LPCSTR szCard,
+            out Guid pguidProviderId
+            );
+
+        /// <inheritdoc cref="SCardGetProviderIdA(SCARDCONTEXT, LPCSTR, out Guid)"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi)]
+        public static extern int SCardGetProviderIdA(
+            [In] SCARDCONTEXT hContext,
+            [In] string szCard,
+            out Guid pguidProviderId
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 255
+        #region SCardGetProviderIdW function
+        /// <inheritdoc cref="SCardGetProviderId(SCARDCONTEXT, LPCTSTR, out Guid)"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi)]
+        public static extern int SCardGetProviderIdW(
+            [In] SCARDCONTEXT hContext,
+            [In] LPCWSTR szCard,
+            out Guid pguidProviderId
+            );
+
+        /// <inheritdoc cref="SCardGetProviderIdW(SCARDCONTEXT, LPCWSTR, out Guid)"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Unicode)]
+        public static extern int SCardGetProviderIdW(
+            [In] SCARDCONTEXT hContext,
+            [In] string szCard,
+            out Guid pguidProviderId
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 260
+        #region SCardGetProviderId function
+        /// <summary>
+        /// The <see cref="SCardGetProviderId"/> function returns the identifier (<see cref="Guid"/>) of the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/p-gly">primary service provider</a> for a given card.
+        /// <para>The caller supplies the name of a <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card</a> (previously introduced to the system) and receives the registered identifier of the primary service provider <see cref="Guid"/>, if one exists.</para>
+        /// </summary>
+        /// <param name="hContext">Handle that identifies the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">resource manager context</a> for the query. The resource manager context can be set by a previous call to <see cref="SCardEstablishContext"/>. This parameter cannot be <see langword="default"/>.</param>
+        /// <param name="szCard">Name of the card defined to the system.</param>
+        /// <param name="pguidProviderId">Identifier (<see cref="Guid"/>) of the primary service provider. This provider may be activated using COM, and will supply access to other services in the card.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the function returns <see cref="SCARD_S_SUCCESS"/>.</para>
+        /// <para>If the function fails, it returns an error code. For more information, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/authentication-return-values">Smart Card Return Values</a>.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>This function is not redirected, but calling the function when attempting a Remote Desktop session will not result in an error. It only means that the result will be from the remote computer instead of the local computer.</para>
+        /// <para>The <see cref="SCardGetProviderId"/> function is a database query function. For more information on other database query functions, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/smart-card-database-query-functions">Smart Card Database Query Functions</a>.</para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/winscard/nf-winscard-scardgetprovideridw">SCardGetProviderIdW function</a></para>
+        /// </remarks>
+        /// <seealso cref="SCardEstablishContext"/>
+        /// <seealso cref="SCardListCards"/>
+        /// <seealso cref="SCardListInterfaces"/>
+        /// <seealso cref="SCardListReaderGroups"/>
+        /// <seealso cref="SCardListReaders"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi)]
+        public static extern int SCardGetProviderId(
+            [In] SCARDCONTEXT hContext,
+            [In] LPCTSTR szCard,
+            out Guid pguidProviderId
+            );
+
+#if !NETSTANDARD1_3
+        /// <inheritdoc cref="SCardGetProviderId(SCARDCONTEXT, LPCTSTR, out Guid)"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
+        public static extern int SCardGetProviderId(
+            [In] SCARDCONTEXT hContext,
+            [In] string szCard,
+            out Guid pguidProviderId
+            );
+#endif // !NETSTANDARD1_3
+        #endregion
     }
 }

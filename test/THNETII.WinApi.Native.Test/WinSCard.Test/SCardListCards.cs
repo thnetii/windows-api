@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.InteropServices;
 
@@ -103,6 +104,39 @@ namespace THNETII.WinApi.Native.WinSCard.Test
                 string[] cardsArray = cardsString.Split('\0', StringSplitOptions.RemoveEmptyEntries);
                 foreach (string cardName in cardsArray)
                     _ = cardName;
+            }
+            finally
+            {
+                Marshal.FreeCoTaskMem(cardsBuffer.Pointer);
+            }
+        }
+
+        public static IEnumerable<object[]> SCardEnumerateCards()
+        {
+            int error;
+            int cardsLength = 16;
+            LPTSTR cardsBuffer = default;
+            try
+            {
+                do
+                {
+                    cardsBuffer = Pointer.Create<LPTSTR>(
+                        Marshal.ReAllocCoTaskMem(cardsBuffer.Pointer,
+                            Marshal.SystemDefaultCharSize * cardsLength)
+                        );
+                    error = WinSCardFunctions.SCardListCards(default, default,
+                        default, cardsBuffer, ref cardsLength);
+                } while (error == SCARD_E_INSUFFICIENT_BUFFER);
+                if (error != SCARD_E_NO_SERVICE)
+                {
+                    if (error != SCARD_S_SUCCESS)
+                        throw new Win32Exception(error);
+
+                    var cardsString = cardsBuffer.MarshalToString(cardsLength);
+                    string[] cardsArray = cardsString.Split('\0', StringSplitOptions.RemoveEmptyEntries);
+                    foreach (string cardName in cardsArray)
+                        yield return new object[] { cardName };
+                }
             }
             finally
             {

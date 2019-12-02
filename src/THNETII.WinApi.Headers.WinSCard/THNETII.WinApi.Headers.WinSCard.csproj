@@ -10,11 +10,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\THNETII.WinApi.Constants.SCardErr\THNETII.WinApi.Constants.SCardErr.csproj">
+      <PrivateAssets>All</PrivateAssets>
+    </ProjectReference>
+    <ProjectReference Include="..\THNETII.WinApi.Constants.WinError\THNETII.WinApi.Constants.WinError.csproj">
+      <PrivateAssets>All</PrivateAssets>
+    </ProjectReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\THNETII.WinApi.Headers.WinSmcrd\THNETII.WinApi.Headers.WinSmcrd.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\..\src-shared\THNETII.WinApi.Helpers\THNETII.WinApi.Helpers.csproj" />
     <ProjectReference Include="..\..\src-shared\THNETII.WinApi.NativeLibraryNames\THNETII.WinApi.NativeLibraryNames.csproj">
       <PrivateAssets>All</PrivateAssets>
     </ProjectReference>
-    <ProjectReference Include="..\THNETII.WinApi.Headers.WinSmcrd\THNETII.WinApi.Headers.WinSmcrd.csproj" />
   </ItemGroup>
 
 </Project>

@@ -7,3 +7,6 @@ using System.Diagnostics.CodeAnalysis;
 
 [assembly: SuppressMessage("Naming", "CA1707: Identifiers should not contain underscores")]
 [assembly: SuppressMessage("Style", "IDE1006: Naming Styles")]
+[assembly: SuppressMessage("Interoperability", "CA1401: P/Invokes should not be visible")]
+[assembly: SuppressMessage("Performance", "CA1815: Override equals and operator equals on value types")]
+[assembly: SuppressMessage("Naming", "CA1720: Identifier contains type name")]

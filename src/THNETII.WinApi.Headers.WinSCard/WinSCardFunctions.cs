@@ -69,5 +69,31 @@ namespace THNETII.WinApi.Native.WinSCard
             [In] SCARDCONTEXT hContext
             );
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 122
+        #region SCardIsValidContext function
+        /// <summary>
+        /// The <see cref="SCardIsValidContext"/> function determines whether a <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card</a> context handle is valid.
+        /// </summary>
+        /// <param name="hContext">Handle that identifies the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">resource manager context</a>. The resource manager context can be set by a previous call to <see cref="SCardEstablishContext"/>.</param>
+        /// <returns>
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <item><term><see cref="SCARD_S_SUCCESS"/></term><description>The <paramref name="hContext"/> parameter is valid. </description></item>
+        /// <item><term><see cref="WinErrorConstants.ERROR_INVALID_HANDLE"/></term><description>The <paramref name="hContext"/> parameter is not valid. </description></item>
+        /// <item><term>Other value</term><description>An error code. For more information, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/authentication-return-values">Smart Card Return Values</a>. </description></item>
+        /// </list>
+        /// <para>If the function succeeds, the function returns <see cref="SCARD_S_SUCCESS"/>.</para>
+        /// <para>If the function fails, it returns an error code. For more information, see </para>
+        /// </returns>
+        /// <remarks>
+        /// Call this function to determine whether a <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card</a> context handle is still valid. After a smart card context handle has been set by <see cref="SCardEstablishContext"/>, it may become not valid if the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">resource manager</a> service has been shut down.
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/winscard/nf-winscard-scardisvalidcontext">SCardIsValidContext function</a></para>
+        /// </remarks>
+        /// <seealso cref="SCardEstablishContext"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi)]
+        public static extern int SCardIsValidContext(
+            [In] SCARDCONTEXT hContext
+            );
+        #endregion
     }
 }

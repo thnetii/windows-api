@@ -4,7 +4,7 @@ int main(int argc, char* argv[])
 {
     SCARDCONTEXT instance;
     const int size = sizeof(instance);
-    const int value = SCARD_S_SUCCESS;
+    const int value = SCARD_ATR_LENGTH;
 
     const void* ptr = SCardListReaders;
 

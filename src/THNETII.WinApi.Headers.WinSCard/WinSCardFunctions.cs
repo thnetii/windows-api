@@ -4,11 +4,13 @@ using System.Text;
 using THNETII.InteropServices.Memory;
 using THNETII.WinApi.Native.SCardErr;
 using THNETII.WinApi.Native.WinError;
+using THNETII.WinApi.Native.WinSmcrd;
 
 namespace THNETII.WinApi.Native.WinSCard
 {
     using static NativeLibraryNames;
     using static SCardErrConstants;
+    using static WinSmcrdConstants;
     using static WinSCardConstants;
 
     public static class WinSCardFunctions
@@ -405,6 +407,224 @@ namespace THNETII.WinApi.Native.WinSCard
                     mszGroups,
                     Pointer.Create<LPTSTR>(pmszReaders),
                     ref pcchReaders
+                    );
+        }
+#endif // !NETSTANDARD1_3
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 189
+        #region SCardListCardsA function
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi)]
+        private static extern unsafe int SCardListCardsA(
+            [In] SCARDCONTEXT hContext,
+            [In, Optional] byte* pbAtr,
+            [In, Optional] Guid* rgquidInterfaces,
+            [In] int cguidInterfaceCount,
+            LPSTR mszCards,
+            ref int pcchCards
+            );
+
+        /// <inheritdocc cref="SCardListCards(SCARDCONTEXT, ReadOnlySpan{byte}, ReadOnlySpan{Guid}, LPTSTR, ref int)"/>
+        public static unsafe int SCardListCardsA(
+            SCARDCONTEXT hContext,
+            ReadOnlySpan<byte> pbAtr,
+            ReadOnlySpan<Guid> rgquidInterfaces,
+            LPSTR mszCards,
+            ref int pcchCards
+            )
+        {
+            if (pbAtr.Length > 0 && pbAtr.Length < SCARD_ATR_LENGTH)
+            {
+                Span<byte> pbExtAtr = stackalloc byte[SCARD_ATR_LENGTH];
+                pbAtr.CopyTo(pbExtAtr);
+                pbExtAtr.Slice(pbAtr.Length).Fill(0);
+                return SCardListCardsA(hContext, pbExtAtr, rgquidInterfaces,
+                    mszCards, ref pcchCards);
+            }
+
+            fixed (byte* pbAtrPtr = pbAtr)
+            fixed (Guid* prgquidInterfaces = rgquidInterfaces)
+                return SCardListCardsA(
+                    hContext,
+                    pbAtrPtr,
+                    prgquidInterfaces,
+                    rgquidInterfaces.Length,
+                    mszCards,
+                    ref pcchCards
+                    );
+        }
+
+        /// <inheritdocc cref="SCardListCardsA(SCARDCONTEXT, ReadOnlySpan{byte}, ReadOnlySpan{Guid}, LPSTR, ref int)"/>
+        public static unsafe int SCardListCardsA(
+            SCARDCONTEXT hContext,
+            ReadOnlySpan<byte> pbAtr,
+            ReadOnlySpan<Guid> rgquidInterfaces,
+            out LPSTR mszCards,
+            out int pcchCards
+            )
+        {
+            pcchCards = SCARD_AUTOALLOCATE;
+            fixed (void* pmszCards = &mszCards)
+                return SCardListCardsA(
+                    hContext,
+                    pbAtr,
+                    rgquidInterfaces,
+                    Pointer.Create<LPSTR>(pmszCards),
+                    ref pcchCards
+                    );
+        }
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 200
+        #region SCardListCardsW function
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi)]
+        private static extern unsafe int SCardListCardsW(
+            [In] SCARDCONTEXT hContext,
+            [In, Optional] byte* pbAtr,
+            [In, Optional] Guid* rgquidInterfaces,
+            [In] int cguidInterfaceCount,
+            LPWSTR mszCards,
+            ref int pcchCards
+            );
+
+        /// <inheritdocc cref="SCardListCards(SCARDCONTEXT, ReadOnlySpan{byte}, ReadOnlySpan{Guid}, LPTSTR, ref int)"/>
+        public static unsafe int SCardListCardsW(
+            SCARDCONTEXT hContext,
+            ReadOnlySpan<byte> pbAtr,
+            ReadOnlySpan<Guid> rgquidInterfaces,
+            LPWSTR mszCards,
+            ref int pcchCards
+            )
+        {
+            if (pbAtr.Length > 0 && pbAtr.Length < SCARD_ATR_LENGTH)
+            {
+                Span<byte> pbExtAtr = stackalloc byte[SCARD_ATR_LENGTH];
+                pbAtr.CopyTo(pbExtAtr);
+                pbExtAtr.Slice(pbAtr.Length).Fill(0);
+                return SCardListCardsW(hContext, pbExtAtr, rgquidInterfaces,
+                    mszCards, ref pcchCards);
+            }
+
+            fixed (byte* pbAtrPtr = pbAtr)
+            fixed (Guid* prgquidInterfaces = rgquidInterfaces)
+                return SCardListCardsW(
+                    hContext,
+                    pbAtrPtr,
+                    prgquidInterfaces,
+                    rgquidInterfaces.Length,
+                    mszCards,
+                    ref pcchCards
+                    );
+        }
+
+        /// <inheritdocc cref="SCardListCardsW(SCARDCONTEXT, ReadOnlySpan{byte}, ReadOnlySpan{Guid}, LPWSTR, ref int)"/>
+        public static unsafe int SCardListCardsW(
+            SCARDCONTEXT hContext,
+            ReadOnlySpan<byte> pbAtr,
+            ReadOnlySpan<Guid> rgquidInterfaces,
+            out LPWSTR mszCards,
+            out int pcchCards
+            )
+        {
+            pcchCards = SCARD_AUTOALLOCATE;
+            fixed (void* pmszCards = &mszCards)
+                return SCardListCardsW(
+                    hContext,
+                    pbAtr,
+                    rgquidInterfaces,
+                    Pointer.Create<LPWSTR>(pmszCards),
+                    ref pcchCards
+                    );
+        }
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 211
+        #region SCardListCards function
+#if !NETSTANDARD1_3
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
+        private static extern unsafe int SCardListCards(
+            [In] SCARDCONTEXT hContext,
+            [In, Optional] byte* pbAtr,
+            [In, Optional] Guid* rgquidInterfaces,
+            [In] int cguidInterfaceCount,
+            LPTSTR mszCards,
+            ref int pcchCards
+            );
+
+        /// <summary>
+        /// The <see cref="SCardListCards"/> function searches the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card database</a> and provides a list of named cards previously introduced to the system by the user.
+        /// <para>The caller specifies an <a href="https://docs.microsoft.com/windows/desktop/SecGloss/a-gly">ATR string</a>, a set of interface identifiers (<see cref="Guid"/>s), or both. If both an ATR string and an identifier array are supplied, the cards returned will match the ATR string supplied and support the interfaces specified.</para>
+        /// </summary>
+        /// <param name="hContext">
+        /// <para>Handle that identifies the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">resource manager context</a> for the query. The resource manager context can be set by a previous call to <see cref="SCardEstablishContext"/>.</para>
+        /// <para>If this parameter is set to <see langword="default"/>, the search for cards is not limited to any context.</para>
+        /// </param>
+        /// <param name="pbAtr">An ATR string to compare to known cards, or <see langword="default"/> (an empty span) if no ATR matching is to be performed.</param>
+        /// <param name="rgquidInterfaces">A span of identifiers (<see cref="Guid"/>s), or <see langword="default"/> (an empty span) if no interface matching is to be performed. When identifiers are supplied, a card name will be returned only if all the specified identifiers are supported by the card.</param>
+        /// <param name="mszCards">Multi-string that lists the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart cards</a> found. If this value is <see langword="default"/>, <see cref="SCardListCards"/> ignores the buffer length supplied in <paramref name="pcchCards"/>, returning the length of the buffer that would have been returned if this parameter had not been <see langword="default"/> to <paramref name="pcchCards"/> and a success code.</param>
+        /// <param name="pcchCards">Length of the <paramref name="mszCards"/> buffer in characters. Receives the actual length of the multi-string structure, including all trailing null characters. If the buffer length is specified as <see cref="SCARD_AUTOALLOCATE"/>, then <paramref name="mszCards"/> is converted to a pointer to a byte pointer, and receives the address of a block of memory containing the multi-string structure. This block of memory must be deallocated with <see cref="SCardFreeMemory"/>.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the function returns <see cref="SCARD_S_SUCCESS"/>.</para>
+        /// <para>If the function fails, it returns an error code. For more information, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/authentication-return-values">Smart Card Return Values</a>.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>This function is not redirected, but calling the function when inside a Remote Desktop session will not result in an error. It only means that the result will be from the remote computer instead of the local computer.</para>
+        /// <para>To return all smart cards introduced to the subsystem, set <paramref name="pbAtr"/> and <paramref name="rgquidInterfaces"/> to empty spans or <see langword="default"/>.</para>
+        /// <para>The <see cref="SCardListCards"/> function is a database query function. For more information on other database query functions, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/smart-card-database-query-functions">Smart Card Database Query Functions</a>.</para>
+        /// <para>Calling this function should be done outside of a transaction. If an application begins a transaction with the <see cref="SCardBeginTransaction"/> function and then calls this function, it resets the <em>hCard</em> parameter (of type <see cref="SCARDHANDLE"/>) of the <see cref="SCardBeginTransaction"/> function.</para>
+        /// <para><strong>Windows Server 2008 R2 and Windows 7:</strong> Calling this function within a transaction could result in your computer becoming unresponsive.</para>
+        /// <para><strong>Windows Server 2008, Windows Vista, Windows Server 2003 and Windows XP:</strong> Not applicable.</para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/winscard/nf-winscard-scardlistcardsw">SCardListCardsW function</a></para>
+        /// </remarks>
+        /// <seealso cref="SCardEstablishContext"/>
+        /// <seealso cref="SCardFreeMemory"/>
+        /// <seealso cref="SCardGetProviderId"/>
+        /// <seealso cref="SCardListInterfaces"/>
+        /// <seealso cref="SCardListReaderGroups"/>
+        /// <seealso cref="SCardListReaders"/>
+        public static unsafe int SCardListCards(
+            SCARDCONTEXT hContext,
+            ReadOnlySpan<byte> pbAtr,
+            ReadOnlySpan<Guid> rgquidInterfaces,
+            LPTSTR mszCards,
+            ref int pcchCards
+            )
+        {
+            if (pbAtr.Length > 0 && pbAtr.Length < SCARD_ATR_LENGTH)
+            {
+                Span<byte> pbExtAtr = stackalloc byte[SCARD_ATR_LENGTH];
+                pbAtr.CopyTo(pbExtAtr);
+                pbExtAtr.Slice(pbAtr.Length).Fill(0);
+                return SCardListCards(hContext, pbExtAtr, rgquidInterfaces,
+                    mszCards, ref pcchCards);
+            }
+
+            fixed (byte* pbAtrPtr = pbAtr)
+            fixed (Guid* prgquidInterfaces = rgquidInterfaces)
+                return SCardListCards(
+                    hContext,
+                    pbAtrPtr,
+                    prgquidInterfaces,
+                    rgquidInterfaces.Length,
+                    mszCards,
+                    ref pcchCards
+                    );
+        }
+
+        /// <inheritdocc cref="SCardListCards(SCARDCONTEXT, ReadOnlySpan{byte}, ReadOnlySpan{Guid}, LPTSTR, ref int)"/>
+        public static unsafe int SCardListCards(
+            SCARDCONTEXT hContext,
+            ReadOnlySpan<byte> pbAtr,
+            ReadOnlySpan<Guid> rgquidInterfaces,
+            out LPTSTR mszCards,
+            out int pcchCards
+            )
+        {
+            pcchCards = SCARD_AUTOALLOCATE;
+            fixed (void* pmszCards = &mszCards)
+                return SCardListCards(
+                    hContext,
+                    pbAtr,
+                    rgquidInterfaces,
+                    Pointer.Create<LPTSTR>(pmszCards),
+                    ref pcchCards
                     );
         }
 #endif // !NETSTANDARD1_3

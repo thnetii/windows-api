@@ -12,4 +12,5 @@ using System.Diagnostics.CodeAnalysis;
 [assembly: SuppressMessage("Naming", "CA1720: Identifier contains type name")]
 [assembly: SuppressMessage("Globalization", "CA2101: Specify marshaling for P/Invoke string arguments")]
 [assembly: SuppressMessage("Documentation", "CS0419: Ambigious reference in cref attribute")]
+[assembly: SuppressMessage("Usage", "PC001: API not supported on all platforms")]
 [assembly: SuppressMessage("Usage", "PC003: Native API not available in UWP")]

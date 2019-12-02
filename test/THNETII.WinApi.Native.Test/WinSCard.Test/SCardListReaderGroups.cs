@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Runtime.InteropServices;
-using System.Text;
+
 using THNETII.InteropServices.Memory;
 using THNETII.WinApi.Native.SCardErr;
 
@@ -10,7 +10,6 @@ using Xunit;
 namespace THNETII.WinApi.Native.WinSCard.Test
 {
     using static SCardErrConstants;
-    using static WinSCardConstants;
     using static WinSCardFunctions;
 
     public static class SCardListReaderGroups

@@ -720,5 +720,308 @@ namespace THNETII.WinApi.Native.WinSCard
 #endif
         }
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 232
+        #region SCardListInterfacesA function
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi)]
+        private static unsafe extern int SCardListInterfacesA(
+            [In] SCARDCONTEXT hContext,
+            [In] LPCSTR szCard,
+            Guid* pguidInterfaces,
+            ref int pcguidInterfaces
+            );
+
+        /// <inheritdoc cref="SCardListInterfaces(SCARDCONTEXT, LPCTSTR, Span{Guid}, out int)"/>
+        public static unsafe int SCardListInterfacesA(
+            SCARDCONTEXT hContext,
+            LPCSTR szCard,
+            Span<Guid> pguidInterfaces,
+            out int pcguidInterfaces
+            )
+        {
+            pcguidInterfaces = pguidInterfaces.Length;
+            fixed (Guid* ppguidInterfaces = pguidInterfaces)
+                return SCardListInterfacesA(
+                    hContext,
+                    szCard,
+                    ppguidInterfaces,
+                    ref pcguidInterfaces
+                    );
+        }
+
+        /// <inheritdoc cref="SCardListInterfacesA(SCARDCONTEXT, LPCSTR, Span{Guid}, out int)"/>
+        public static unsafe int SCardListInterfacesA(
+            SCARDCONTEXT hContext,
+            LPCSTR szCard,
+            out Span<Guid> pguidInterfaces
+            )
+        {
+            int pcguidInterfaces = SCARD_AUTOALLOCATE;
+            Guid* pguidAllocated;
+            int error = SCardListInterfacesA(
+                hContext,
+                szCard,
+                (Guid*)&pguidAllocated,
+                ref pcguidInterfaces
+                );
+            pguidInterfaces = new Span<Guid>(pguidAllocated, pcguidInterfaces);
+            return error;
+        }
+
+        /// <inheritdoc cref="SCardListInterfacesA(SCARDCONTEXT, LPCSTR, Span{Guid}, out int)"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi)]
+        private static unsafe extern int SCardListInterfacesA(
+            [In] SCARDCONTEXT hContext,
+            [In] string szCard,
+            Guid* pguidInterfaces,
+            ref int pcguidInterfaces
+            );
+
+        /// <inheritdoc cref="SCardListInterfacesA(SCARDCONTEXT, LPCSTR, Span{Guid}, out int)"/>
+        public static unsafe int SCardListInterfacesA(
+            SCARDCONTEXT hContext,
+            string szCard,
+            Span<Guid> pguidInterfaces,
+            out int pcguidInterfaces
+            )
+        {
+            pcguidInterfaces = pguidInterfaces.Length;
+            fixed (Guid* ppguidInterfaces = pguidInterfaces)
+                return SCardListInterfacesA(
+                    hContext,
+                    szCard,
+                    ppguidInterfaces,
+                    ref pcguidInterfaces
+                    );
+        }
+
+        /// <inheritdoc cref="SCardListInterfacesA(SCARDCONTEXT, LPCSTR, Span{Guid}, out int)"/>
+        public static unsafe int SCardListInterfacesA(
+            SCARDCONTEXT hContext,
+            string szCard,
+            out Span<Guid> pguidInterfaces
+            )
+        {
+            int pcguidInterfaces = SCARD_AUTOALLOCATE;
+            Guid* pguidAllocated;
+            int error = SCardListInterfacesA(
+                hContext,
+                szCard,
+                (Guid*)&pguidAllocated,
+                ref pcguidInterfaces
+                );
+            pguidInterfaces = new Span<Guid>(pguidAllocated, pcguidInterfaces);
+            return error;
+        }
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 238
+        #region SCardListInterfacesW function
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi)]
+        private static unsafe extern int SCardListInterfacesW(
+            [In] SCARDCONTEXT hContext,
+            [In] LPCWSTR szCard,
+            Guid* pguidInterfaces,
+            ref int pcguidInterfaces
+            );
+
+        /// <inheritdoc cref="SCardListInterfaces(SCARDCONTEXT, LPCTSTR, Span{Guid}, out int)"/>
+        public static unsafe int SCardListInterfacesW(
+            SCARDCONTEXT hContext,
+            LPCWSTR szCard,
+            Span<Guid> pguidInterfaces,
+            out int pcguidInterfaces
+            )
+        {
+            pcguidInterfaces = pguidInterfaces.Length;
+            fixed (Guid* ppguidInterfaces = pguidInterfaces)
+                return SCardListInterfacesW(
+                    hContext,
+                    szCard,
+                    ppguidInterfaces,
+                    ref pcguidInterfaces
+                    );
+        }
+
+        /// <inheritdoc cref="SCardListInterfacesW(SCARDCONTEXT, LPCWSTR, Span{Guid}, out int)"/>
+        public static unsafe int SCardListInterfacesW(
+            SCARDCONTEXT hContext,
+            LPCWSTR szCard,
+            out Span<Guid> pguidInterfaces
+            )
+        {
+            int pcguidInterfaces = SCARD_AUTOALLOCATE;
+            Guid* pguidAllocated;
+            int error = SCardListInterfacesW(
+                hContext,
+                szCard,
+                (Guid*)&pguidAllocated,
+                ref pcguidInterfaces
+                );
+            pguidInterfaces = new Span<Guid>(pguidAllocated, pcguidInterfaces);
+            return error;
+        }
+
+        /// <inheritdoc cref="SCardListInterfacesW(SCARDCONTEXT, LPCWSTR, Span{Guid}, out int)"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Unicode)]
+        private static unsafe extern int SCardListInterfacesW(
+            [In] SCARDCONTEXT hContext,
+            [In] string szCard,
+            Guid* pguidInterfaces,
+            ref int pcguidInterfaces
+            );
+
+        /// <inheritdoc cref="SCardListInterfacesW(SCARDCONTEXT, LPCWSTR, Span{Guid}, out int)"/>
+        public static unsafe int SCardListInterfacesW(
+            SCARDCONTEXT hContext,
+            string szCard,
+            Span<Guid> pguidInterfaces,
+            out int pcguidInterfaces
+            )
+        {
+            pcguidInterfaces = pguidInterfaces.Length;
+            fixed (Guid* ppguidInterfaces = pguidInterfaces)
+                return SCardListInterfacesW(
+                    hContext,
+                    szCard,
+                    ppguidInterfaces,
+                    ref pcguidInterfaces
+                    );
+        }
+
+        /// <inheritdoc cref="SCardListInterfacesW(SCARDCONTEXT, LPCWSTR, Span{Guid}, out int)"/>
+        public static unsafe int SCardListInterfacesW(
+            SCARDCONTEXT hContext,
+            string szCard,
+            out Span<Guid> pguidInterfaces
+            )
+        {
+            int pcguidInterfaces = SCARD_AUTOALLOCATE;
+            Guid* pguidAllocated;
+            int error = SCardListInterfacesW(
+                hContext,
+                szCard,
+                (Guid*)&pguidAllocated,
+                ref pcguidInterfaces
+                );
+            pguidInterfaces = new Span<Guid>(pguidAllocated, pcguidInterfaces);
+            return error;
+        }
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 244
+        #region SCardListInterfaces function
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi)]
+        private static unsafe extern int SCardListInterfaces(
+            [In] SCARDCONTEXT hContext,
+            [In] LPCTSTR szCard,
+            Guid* pguidInterfaces,
+            ref int pcguidInterfaces
+            );
+
+        /// <summary>
+        /// The <see cref="SCardListInterfaces"/> function provides a list of interfaces supplied by a given card.
+        /// <para>The caller supplies the name of a <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card</a> previously introduced to the subsystem, and receives the list of interfaces supported by the card.</para>
+        /// </summary>
+        /// <param name="hContext">Handle that identifies the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">resource manager context</a> for the query. The resource manager context can be set by a previous call to <see cref="SCardEstablishContext"/>. This parameter cannot be <see langword="default"/>.</param>
+        /// <param name="szCard">Name of the smart card already introduced to the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card subsystem</a>.</param>
+        /// <param name="pguidInterfaces">Span of interface identifiers (<see cref="GUID"/>s) that indicate the interfaces supported by the smart card. If this value is <see langword="default"/> (an empty span), <see cref="SCardListInterfaces"/> ignores the array length supplied in <paramref name="pcguidInterfaces"/>, returning the size of the array that would have been returned if this parameter had not been an empty span to <paramref name="pcguidInterfaces"/> and a success code.</param>
+        /// <param name="pcguidInterfaces">Size of the <paramref name="pguidInterfaces"/> span, receives the actual length of the returned span. If the span length is specified as <see cref="SCARD_AUTOALLOCATE"/>, then <paramref name="pguidInterfaces"/> is converted to a pointer to a <see cref="Guid"/> pointer, and receives the address of a block of memory containing an array. This block of memory must be deallocated with <see cref="SCardFreeMemory"/>.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the function returns <see cref="SCARD_S_SUCCESS"/>.</para>
+        /// <para>If the function fails, it returns an error code. For more information, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/authentication-return-values">Smart Card Return Values</a>.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>This function is not redirected, but calling the function when attempting a Remote Desktop session will not result in an error. It only means that the result will be from the remote computer instead of the local computer.</para>
+        /// <para>The <see cref="SCardListInterfaces"/> function is a database query function. For more information on other database query functions, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/smart-card-database-query-functions">Smart Card Database Query Functions</a>.</para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/winscard/nf-winscard-scardlistinterfacesw">SCardListInterfacesW function</a></para>
+        /// </remarks>
+        /// <seealso cref="SCardEstablishContext"/>
+        /// <seealso cref="SCardFreeMemory"/>
+        /// <seealso cref="SCardGetProviderId"/>
+        /// <seealso cref="SCardListCards"/>
+        /// <seealso cref="SCardListReaderGroups"/>
+        /// <seealso cref="SCardListReaders"/>
+        public static unsafe int SCardListInterfaces(
+            SCARDCONTEXT hContext,
+            LPCTSTR szCard,
+            Span<Guid> pguidInterfaces,
+            out int pcguidInterfaces
+            )
+        {
+            pcguidInterfaces = pguidInterfaces.Length;
+            fixed (Guid* ppguidInterfaces = pguidInterfaces)
+                return SCardListInterfaces(
+                    hContext,
+                    szCard,
+                    ppguidInterfaces,
+                    ref pcguidInterfaces
+                    );
+        }
+
+        /// <inheritdoc cref="SCardListInterfaces(SCARDCONTEXT, LPCTSTR, Span{Guid}, out int)"/>
+        public static unsafe int SCardListInterfaces(
+            SCARDCONTEXT hContext,
+            LPCTSTR szCard,
+            out Span<Guid> pguidInterfaces
+            )
+        {
+            int pcguidInterfaces = SCARD_AUTOALLOCATE;
+            Guid* pguidAllocated;
+            int error = SCardListInterfaces(
+                hContext,
+                szCard,
+                (Guid*)&pguidAllocated,
+                ref pcguidInterfaces
+                );
+            pguidInterfaces = new Span<Guid>(pguidAllocated, pcguidInterfaces);
+            return error;
+        }
+
+#if !NETSTANDARD1_3
+        /// <inheritdoc cref="SCardListInterfaces(SCARDCONTEXT, LPCTSTR, Span{Guid}, out int)"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi)]
+        private static unsafe extern int SCardListInterfaces(
+            [In] SCARDCONTEXT hContext,
+            [In] string szCard,
+            Guid* pguidInterfaces,
+            ref int pcguidInterfaces
+            );
+
+        /// <inheritdoc cref="SCardListInterfaces(SCARDCONTEXT, LPCTSTR, Span{Guid}, out int)"/>
+        public static unsafe int SCardListInterfaces(
+            SCARDCONTEXT hContext,
+            string szCard,
+            Span<Guid> pguidInterfaces,
+            out int pcguidInterfaces
+            )
+        {
+            pcguidInterfaces = pguidInterfaces.Length;
+            fixed (Guid* ppguidInterfaces = pguidInterfaces)
+                return SCardListInterfaces(
+                    hContext,
+                    szCard,
+                    ppguidInterfaces,
+                    ref pcguidInterfaces
+                    );
+        }
+
+        /// <inheritdoc cref="SCardListInterfaces(SCARDCONTEXT, LPCTSTR, Span{Guid}, out int)"/>
+        public static unsafe int SCardListInterfaces(
+            SCARDCONTEXT hContext,
+            string szCard,
+            out Span<Guid> pguidInterfaces
+            )
+        {
+            int pcguidInterfaces = SCARD_AUTOALLOCATE;
+            Guid* pguidAllocated;
+            int error = SCardListInterfaces(
+                hContext,
+                szCard,
+                (Guid*)&pguidAllocated,
+                ref pcguidInterfaces
+                );
+            pguidInterfaces = new Span<Guid>(pguidAllocated, pcguidInterfaces);
+            return error;
+        }
+#endif // !NETSTANDARD1_3
+        #endregion
     }
 }

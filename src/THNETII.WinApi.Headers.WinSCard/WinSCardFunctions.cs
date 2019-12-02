@@ -629,5 +629,96 @@ namespace THNETII.WinApi.Native.WinSCard
         }
 #endif // !NETSTANDARD1_3
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 216
+        #region SCardListCardTypes function
+        /// <inheritdoc cref="SCardListCards" />
+        public static int SCardListCardTypes(
+            SCARDCONTEXT hContext,
+            ReadOnlySpan<byte> pbAtr,
+            ReadOnlySpan<Guid> rgquidInterfaces,
+            LPTSTR mszCards,
+            ref int pcchCards
+            )
+        {
+#if NETSTANDARD1_3
+            switch (Marshal.SystemDefaultCharSize)
+            {
+                case 1:
+                    return SCardListCardsA(
+                        hContext,
+                        pbAtr,
+                        rgquidInterfaces,
+                        Pointer.Create<LPSTR>(mszCards.Pointer),
+                        ref pcchCards
+                        );
+                case 2:
+                    return SCardListCardsW(
+                        hContext,
+                        pbAtr,
+                        rgquidInterfaces,
+                        Pointer.Create<LPWSTR>(mszCards.Pointer),
+                        ref pcchCards
+                        );
+                default:
+                    throw new PlatformNotSupportedException();
+            }
+#else // !NETSTANDARD1_3
+            return SCardListCards(
+                hContext,
+                pbAtr,
+                rgquidInterfaces,
+                mszCards,
+                ref pcchCards
+                );
+#endif
+        }
+
+        /// <inheritdoc cref="SCardListCards" />
+        public static int SCardListCardTypes(
+            SCARDCONTEXT hContext,
+            ReadOnlySpan<byte> pbAtr,
+            ReadOnlySpan<Guid> rgquidInterfaces,
+            out LPTSTR mszCards,
+            out int pcchCards
+            )
+        {
+#if NETSTANDARD1_3
+            int error;
+            switch (Marshal.SystemDefaultCharSize)
+            {
+                case 1:
+                    error = SCardListCardsA(
+                        hContext,
+                        pbAtr,
+                        rgquidInterfaces,
+                        out var lpstrCards,
+                        out pcchCards
+                        );
+                    mszCards = Pointer.Create<LPTSTR>(lpstrCards.Pointer);
+                    return error;
+                case 2:
+                    error = SCardListCardsW(
+                        hContext,
+                        pbAtr,
+                        rgquidInterfaces,
+                        out var lpwstrCards,
+                        out pcchCards
+                        );
+                    mszCards = Pointer.Create<LPTSTR>(lpwstrCards.Pointer);
+                    return error;
+                default:
+                    throw new PlatformNotSupportedException();
+            }
+#else // !NETSTANDARD1_3
+            return SCardListCards(
+                hContext,
+                pbAtr,
+                rgquidInterfaces,
+                out mszCards,
+                out pcchCards
+                );
+#endif
+        }
+        #endregion
     }
 }

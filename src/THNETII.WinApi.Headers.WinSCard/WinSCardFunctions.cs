@@ -8,6 +8,7 @@ namespace THNETII.WinApi.Native.WinSCard
 {
     using static NativeLibraryNames;
     using static SCardErrConstants;
+    using static WinSCardConstants;
 
     public static class WinSCardFunctions
     {
@@ -47,6 +48,25 @@ namespace THNETII.WinApi.Native.WinSCard
             [In] IntPtr pvReserved1,
             [In] IntPtr pvReserved2,
             out SCARDCONTEXT phContext
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 118
+        #region SCardReleaseContext function
+        /// <summary>
+        /// The <see cref="SCardReleaseContext"/> function closes an established <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">resource manager context</a>, freeing any resources allocated under that context, including <see cref="SCARDHANDLE"/> objects and memory allocated using the <see cref="SCARD_AUTOALLOCATE"/> length designator.
+        /// </summary>
+        /// <param name="hContext">Handle that identifies the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">resource manager context</a>. The <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">resource manager context</a> is set by a previous call to <see cref="SCardEstablishContext"/>.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the function returns <see cref="SCARD_S_SUCCESS"/>.</para>
+        /// <para>If the function fails, it returns an error code. For more information, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/authentication-return-values">Smart Card Return Values</a>.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/winscard/nf-winscard-scardreleasecontext">SCardReleaseContext function</a></para>
+        /// </remarks>
+        /// <seealso cref="SCardEstablishContext"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi)]
+        public static extern int SCardReleaseContext(
+            [In] SCARDCONTEXT hContext
             );
         #endregion
     }

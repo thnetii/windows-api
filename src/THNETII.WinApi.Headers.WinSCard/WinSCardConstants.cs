@@ -47,5 +47,16 @@ namespace THNETII.WinApi.Native.WinSCard
                                                     // domain of the system.  (The calling
                                                     // application must have appropriate access
                                                     // permissions for any database actions.)
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 135
+        public const string SCARD_ALL_READERS = "SCard$AllReaders\0";
+        public const string SCARD_DEFAULT_READERS = "SCard$DefaultReaders\0";
+        public const string SCARD_LOCAL_READERS = "SCard$LocalReaders\0";
+        public const string SCARD_SYSTEM_READERS = "SCard$SystemReaders\0";
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 140
+        public const int SCARD_PROVIDER_PRIMARY = 1;    // Primary Provider Id
+        public const int SCARD_PROVIDER_CSP = 2;        // Crypto Service Provider Id
+        public const int SCARD_PROVIDER_KSP = 3;        // Key Storage Provider Id
     }
 }

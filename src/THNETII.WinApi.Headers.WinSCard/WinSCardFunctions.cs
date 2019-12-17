@@ -1337,5 +1337,87 @@ namespace THNETII.WinApi.Native.WinSCard
         }
 #endif // !NETSTANDARD1_3
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 300
+        //
+        // Database Writer routines
+        //
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 304
+        #region SCardIntroduceReaderGroupA function
+        /// <inheritdoc cref="SCardIntroduceReaderGroup" />
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi)]
+        public static extern int SCardIntroduceReaderGroupA(
+            [In] SCARDCONTEXT hContext,
+            [In] LPCSTR szGroupName
+            );
+
+        /// <inheritdoc cref="SCardIntroduceReaderGroupA" />
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi)]
+        public static extern int SCardIntroduceReaderGroupA(
+            [In] SCARDCONTEXT hContext,
+            [In] string szGroupName
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 308
+        #region SCardIntroduceReaderGroupW function
+        /// <inheritdoc cref="SCardIntroduceReaderGroup" />
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi)]
+        public static extern int SCardIntroduceReaderGroupW(
+            [In] SCARDCONTEXT hContext,
+            [In] LPCSTR szGroupName
+            );
+
+        /// <inheritdoc cref="SCardIntroduceReaderGroupW" />
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Unicode)]
+        public static extern int SCardIntroduceReaderGroupW(
+            [In] SCARDCONTEXT hContext,
+            [In] string szGroupName
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 312
+        #region SCardIntroduceReaderGroup function
+#if !NETSTANDARD1_3
+        /// <summary>
+        /// The <see cref="SCardIntroduceReaderGroup"/> function introduces a <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">reader group</a> to the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card</a> subsystem. However, the reader group is not created until the group is specified when adding a reader to the smart card database.
+        /// </summary>
+        /// <param name="hContext">Supplies the handle that identifies the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">resource manager context</a>. The resource manager context is set by a previous call to the <see cref="SCardEstablishContext"/> function. If this parameter is <see langword="default"/>, the scope of the resource manager is <see cref="SCARD_SCOPE_TYPE.SCARD_SCOPE_SYSTEM"/>.</param>
+        /// <param name="szGroupName">Supplies the display name to be assigned to the new reader group.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the function returns <see cref="SCARD_S_SUCCESS"/>.</para>
+        /// <para>If the function fails, it returns an error code. For more information, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/authentication-return-values">Smart Card Return Values</a>.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>The <see cref="SCardIntroduceReaderGroup"/> function is provided for PC/SC specification compatibility. Reader groups are not stored until a reader is added to the group.</para>
+        /// <para>The <see cref="SCardIntroduceReaderGroup"/> function is a database management function. For a description of other database management functions, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/smart-card-database-management-functions">Smart Card Database Management Functions</a>.</para>
+        /// <para>To remove a reader group, use <see cref="SCardForgetReaderGroup"/>.</para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows XP [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/winscard/nf-winscard-scardintroducereadergroupw">SCardIntroduceReaderGroup function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="SCardAddReaderToGroup"/>
+        /// <seealso cref="SCardEstablishContext"/>
+        /// <seealso cref="SCardForgetReaderGroup"/>
+        /// <seealso cref="SCardIntroduceCardType"/>
+        /// <seealso cref="SCardIntroduceReader"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
+        public static extern int SCardIntroduceReaderGroup(
+            [In] SCARDCONTEXT hContext,
+            [In] LPCSTR szGroupName
+            );
+
+        /// <inheritdoc cref="SCardIntroduceReaderGroup" />
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
+        public static extern int SCardIntroduceReaderGroup(
+            [In] SCARDCONTEXT hContext,
+            [In] string szGroupName
+            );
+#endif // !NETSTANDARD1_3
+        #endregion
     }
 }

@@ -10,8 +10,8 @@ namespace THNETII.WinApi.Native.WinSCard
 {
     using static NativeLibraryNames;
     using static SCardErrConstants;
-    using static WinSmcrdConstants;
     using static WinSCardConstants;
+    using static WinSmcrdConstants;
 
     public static class WinSCardFunctions
     {
@@ -44,6 +44,8 @@ namespace THNETII.WinApi.Native.WinSCard
         /// <para>If the client attempts a smart card operation in a remote session, such as a client session running on a terminal server, and the operating system in use does not support smart card redirection, this function returns <see cref="WinErrorConstants.ERROR_BROKEN_PIPE"/>.</para>
         /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/winscard/nf-winscard-scardestablishcontext">SCardEstablishContext function</a></para>
         /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
         /// <seealso cref="SCardReleaseContext"/>
         [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi)]
         public static extern int SCardEstablishContext(
@@ -66,6 +68,8 @@ namespace THNETII.WinApi.Native.WinSCard
         /// <remarks>
         /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/winscard/nf-winscard-scardreleasecontext">SCardReleaseContext function</a></para>
         /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
         /// <seealso cref="SCardEstablishContext"/>
         [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi)]
         public static extern int SCardReleaseContext(
@@ -92,6 +96,8 @@ namespace THNETII.WinApi.Native.WinSCard
         /// Call this function to determine whether a <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card</a> context handle is still valid. After a smart card context handle has been set by <see cref="SCardEstablishContext"/>, it may become not valid if the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">resource manager</a> service has been shut down.
         /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/winscard/nf-winscard-scardisvalidcontext">SCardIsValidContext function</a></para>
         /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
         /// <seealso cref="SCardEstablishContext"/>
         [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi)]
         public static extern int SCardIsValidContext(
@@ -185,6 +191,8 @@ namespace THNETII.WinApi.Native.WinSCard
         /// <para>The <see cref="SCardListReaderGroups"/> function is a database query function. For more information on other database query functions, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/smart-card-database-query-functions">Smart Card Database Query Functions</a>.</para>
         /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/winscard/nf-winscard-scardlistreadergroupsw">SCardListReaderGroupsW function</a></para>
         /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
         /// <seealso cref="SCardEstablishContext"/>
         /// <seealso cref="SCardFreeMemory"/>
         /// <seealso cref="SCardGetProviderId"/>
@@ -348,6 +356,8 @@ namespace THNETII.WinApi.Native.WinSCard
         /// The <see cref="SCardListReaders"/> function is a database query function. For more information on other database query functions, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/smart-card-database-query-functions">Smart Card Database Query Functions</a>.
         /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/winscard/nf-winscard-scardlistreadersw">SCardListReadersW function</a></para>
         /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
         /// <seealso cref="SCardEstablishContext"/>
         /// <seealso cref="SCardFreeMemory"/>
         /// <seealso cref="SCardGetProviderId"/>
@@ -573,6 +583,8 @@ namespace THNETII.WinApi.Native.WinSCard
         /// <para><strong>Windows Server 2008, Windows Vista, Windows Server 2003 and Windows XP:</strong> Not applicable.</para>
         /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/winscard/nf-winscard-scardlistcardsw">SCardListCardsW function</a></para>
         /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
         /// <seealso cref="SCardEstablishContext"/>
         /// <seealso cref="SCardFreeMemory"/>
         /// <seealso cref="SCardGetProviderId"/>
@@ -933,6 +945,8 @@ namespace THNETII.WinApi.Native.WinSCard
         /// <para>The <see cref="SCardListInterfaces"/> function is a database query function. For more information on other database query functions, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/smart-card-database-query-functions">Smart Card Database Query Functions</a>.</para>
         /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/winscard/nf-winscard-scardlistinterfacesw">SCardListInterfacesW function</a></para>
         /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
         /// <seealso cref="SCardEstablishContext"/>
         /// <seealso cref="SCardFreeMemory"/>
         /// <seealso cref="SCardGetProviderId"/>
@@ -1077,6 +1091,8 @@ namespace THNETII.WinApi.Native.WinSCard
         /// <para>The <see cref="SCardGetProviderId"/> function is a database query function. For more information on other database query functions, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/smart-card-database-query-functions">Smart Card Database Query Functions</a>.</para>
         /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/desktop/api/winscard/nf-winscard-scardgetprovideridw">SCardGetProviderIdW function</a></para>
         /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
         /// <seealso cref="SCardEstablishContext"/>
         /// <seealso cref="SCardListCards"/>
         /// <seealso cref="SCardListInterfaces"/>

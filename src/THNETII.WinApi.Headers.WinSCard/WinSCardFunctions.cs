@@ -1419,5 +1419,80 @@ namespace THNETII.WinApi.Native.WinSCard
             );
 #endif // !NETSTANDARD1_3
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 318
+        #region SCardForgetReaderGroupA function
+        /// <inheritdoc cref="SCardForgetReaderGroup"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi)]
+        public static extern int SCardForgetReaderGroupA(
+            [In] SCARDCONTEXT hContext,
+            [In] LPCSTR szGroupName
+            );
+
+        /// <inheritdoc cref="SCardForgetReaderGroupA"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi)]
+        public static extern int SCardForgetReaderGroupA(
+            [In] SCARDCONTEXT hContext,
+            [In] string szGroupName
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 322
+        #region SCardForgetReaderGroupW function
+        /// <inheritdoc cref="SCardForgetReaderGroup"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi)]
+        public static extern int SCardForgetReaderGroupW(
+            [In] SCARDCONTEXT hContext,
+            [In] LPCWSTR szGroupName
+            );
+
+        /// <inheritdoc cref="SCardForgetReaderGroupW"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Unicode)]
+        public static extern int SCardForgetReaderGroupW(
+            [In] SCARDCONTEXT hContext,
+            [In] string szGroupName
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 326
+        #region SCardForgetReaderGroup function
+#if !NETSTANDARD1_3
+        /// <summary>
+        /// The <see cref="SCardForgetReaderGroup"/> function removes a previously introduced <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card</a> <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">reader group</a> from the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card subsystem</a>. Although this function automatically clears all readers from the group, it does not affect the existence of the individual <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">readers</a> in the database.
+        /// </summary>
+        /// <param name="hContext">Handle that identifies the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">resource manager context</a>. The resource manager context is set by a previous call to <see cref="SCardEstablishContext"/>. This parameter cannot be <see langword="default"/>.</param>
+        /// <param name="szGroupName">Display name of the reader group to be removed. System-defined reader groups cannot be removed from the database.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the function returns <see cref="SCARD_S_SUCCESS"/>.</para>
+        /// <para>If the function fails, it returns an error code. For more information, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/authentication-return-values">Smart Card Return Values</a>.</para>
+        /// </returns>
+        /// <remarks>
+        /// The <see cref="SCardForgetReaderGroup"/> function is a database management function. For more information on other database management functions, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/smart-card-database-management-functions">Smart Card Database Management Functions</a>.
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows XP [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/winscard/nf-winscard-scardforgetreadergroupw">SCardForgetReaderGroupW function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="SCardEstablishContext"/>
+        /// <seealso cref="SCardForgetCardType"/>
+        /// <seealso cref="SCardForgetReader"/>
+        /// <seealso cref="SCardIntroduceReaderGroup"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
+        public static extern int SCardForgetReaderGroup(
+            [In] SCARDCONTEXT hContext,
+            [In] LPCSTR szGroupName
+            );
+
+        /// <inheritdoc cref="SCardForgetReaderGroup"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
+        public static extern int SCardForgetReaderGroup(
+            [In] SCARDCONTEXT hContext,
+            [In] string szGroupName
+            );
+#endif // !NETSTANDARD1_3
+        #endregion
     }
 }

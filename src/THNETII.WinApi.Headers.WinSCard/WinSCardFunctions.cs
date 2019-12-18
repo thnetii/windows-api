@@ -1494,5 +1494,90 @@ namespace THNETII.WinApi.Native.WinSCard
             );
 #endif // !NETSTANDARD1_3
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 332
+        #region SCardIntroduceReaderA function
+        /// <inheritdoc cref="SCardIntroduceReader"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi)]
+        public static extern int SCardIntroduceReaderA(
+            [In] SCARDCONTEXT hContext,
+            [In] LPCSTR szReaderName,
+            [In] LPCSTR szDeviceName
+            );
+
+        /// <inheritdoc cref="SCardIntroduceReaderA"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi)]
+        public static extern int SCardIntroduceReaderA(
+            [In] SCARDCONTEXT hContext,
+            [In] string szReaderName,
+            [In] string szDeviceName
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 337
+        #region SCardIntroduceReaderW function
+        /// <inheritdoc cref="SCardIntroduceReader"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi)]
+        public static extern int SCardIntroduceReaderW(
+            [In] SCARDCONTEXT hContext,
+            [In] LPCWSTR szReaderName,
+            [In] LPCWSTR szDeviceName
+            );
+
+        /// <inheritdoc cref="SCardIntroduceReaderW"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Unicode)]
+        public static extern int SCardIntroduceReaderW(
+            [In] SCARDCONTEXT hContext,
+            [In] string szReaderName,
+            [In] string szDeviceName
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 342
+        #region SCardIntroduceReader function
+#if !NETSTANDARD1_3
+        /// <summary>
+        /// The <see cref="SCardIntroduceReader"/> function introduces a new name for an existing <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card</a> <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">reader</a>.
+        /// <para><note>Smart card readers are automatically introduced to the system; a smart card reader vendor's setup program can also introduce a smart card reader to the system.</note></para>
+        /// </summary>
+        /// <param name="hContext">Handle that identifies the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">resource manager context</a>. The resource manager context is set by a previous call to <see cref="SCardEstablishContext"/>. This parameter cannot be <see langword="default"/>.</param>
+        /// <param name="szReaderName">Display name to be assigned to the reader.</param>
+        /// <param name="szDeviceName">System name of the smart card reader, for example, <c>"MyReader 01"</c>.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the function returns <see cref="SCARD_S_SUCCESS"/>.</para>
+        /// <para>If the function fails, it returns an error code. For more information, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/authentication-return-values">Smart Card Return Values</a>.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>All readers installed on the system are automatically introduced by their system name. Typically, <see cref="SCardIntroduceReader"/> is called only to change the name of an existing reader.</para>
+        /// <para>The <see cref="SCardIntroduceReader"/> function is a database management function. For more information on other database management functions, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/smart-card-database-management-functions">Smart Card Database Management Functions</a>.</para>
+        /// <para>To remove a reader, use <see cref="SCardForgetReader"/>.</para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows XP [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/winscard/nf-winscard-scardintroducereaderw">SCardIntroduceReaderW function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="SCardEstablishContext"/>
+        /// <seealso cref="SCardForgetReader"/>
+        /// <seealso cref="SCardIntroduceCardType"/>
+        /// <seealso cref="SCardIntroduceReaderGroup"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
+        public static extern int SCardIntroduceReader(
+            [In] SCARDCONTEXT hContext,
+            [In] LPCTSTR szReaderName,
+            [In] LPCTSTR szDeviceName
+            );
+
+        /// <inheritdoc cref="SCardIntroduceReader"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
+        public static extern int SCardIntroduceReader(
+            [In] SCARDCONTEXT hContext,
+            [In] string szReaderName,
+            [In] string szDeviceName
+            );
+#endif // !NETSTANDARD1_3
+        #endregion
     }
 }

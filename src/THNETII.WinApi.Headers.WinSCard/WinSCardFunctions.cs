@@ -1579,5 +1579,78 @@ namespace THNETII.WinApi.Native.WinSCard
             );
 #endif // !NETSTANDARD1_3
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 348
+        #region SCardForgetReaderA function
+        /// <inheritdoc cref="SCardForgetReader(SCARDCONTEXT, string)"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi)]
+        public static extern int SCardForgetReaderA(
+            [In] SCARDCONTEXT hContext,
+            [In] string szReaderName
+            );
+        /// <inheritdoc cref="SCardForgetReaderA(SCARDCONTEXT, string)"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi)]
+        public static extern int SCardForgetReaderA(
+            [In] SCARDCONTEXT hContext,
+            [In] LPCSTR szReaderName
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 352
+        #region SCardForgetReaderW function
+        /// <inheritdoc cref="SCardForgetReader(SCARDCONTEXT, string)"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Unicode)]
+        public static extern int SCardForgetReaderW(
+            [In] SCARDCONTEXT hContext,
+            [In] string szReaderName
+            );
+        /// <inheritdoc cref="SCardForgetReaderW(SCARDCONTEXT, string)"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Unicode)]
+        public static extern int SCardForgetReaderW(
+            [In] SCARDCONTEXT hContext,
+            [In] LPCWSTR szReaderName
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 356
+        #region SCardForgetReader function
+#if !NETSTANDARD1_3
+        /// <summary>
+        /// The <see cref="SCardForgetReader"/> function removes a previously introduced <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">reader</a> from control by the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card subsystem</a>. It is removed from the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card database</a>, including from any <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">reader group</a> that it may have been added to.
+        /// </summary>
+        /// <param name="hContext">Handle that identifies the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">resource manager context</a>. The resource manager context is set by a previous call to <see cref="SCardEstablishContext"/>. This parameter cannot be set to <see langword="default"/>.</param>
+        /// <param name="szReaderName"></param>
+        /// <returns>
+        /// <para>If the function succeeds, the function returns <see cref="SCARD_S_SUCCESS"/>.</para>
+        /// <para>If the function fails, it returns an error code. For more information, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/authentication-return-values">Smart Card Return Values</a>.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>If the specified reader is the last member of a reader group, the reader group is automatically removed as well.</para>
+        /// <para>The <see cref="SCardForgetReader"/> function is a database management function. For more information on other database management functions, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/smart-card-database-management-functions">Smart Card Database Management Functions</a>.</para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows XP [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/winscard/nf-winscard-scardforgetreader">SCardForgetReaderW function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="SCardEstablishContext"/>
+        /// <seealso cref="SCardForgetCardType"/>
+        /// <seealso cref="SCardForgetReaderGroup"/>
+        /// <seealso cref="SCardIntroduceReader"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
+        public static extern int SCardForgetReader(
+            [In] SCARDCONTEXT hContext,
+            [In] string szReaderName
+            );
+        /// <inheritdoc cref="SCardForgetReader(SCARDCONTEXT, string)"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
+        public static extern int SCardForgetReader(
+            [In] SCARDCONTEXT hContext,
+            [In] LPCTSTR szReaderName
+            );
+#endif // !NETSTANDARD1_3
+        #endregion
     }
 }

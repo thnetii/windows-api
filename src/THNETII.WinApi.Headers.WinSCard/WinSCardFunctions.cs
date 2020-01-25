@@ -1403,7 +1403,7 @@ namespace THNETII.WinApi.Native.WinSCard
         /// <seealso cref="SCardAddReaderToGroup"/>
         /// <seealso cref="SCardEstablishContext"/>
         /// <seealso cref="SCardForgetReaderGroup"/>
-        /// <seealso cref="SCardIntroduceCardType"/>
+        /// <seealso cref="SCardIntroduceCardType(SCARDCONTEXT, string, in Guid, ReadOnlySpan{Guid}, ReadOnlySpan{byte}, ReadOnlySpan{byte})"/>
         /// <seealso cref="SCardIntroduceReader"/>
         [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
         public static extern int SCardIntroduceReaderGroup(
@@ -1561,7 +1561,7 @@ namespace THNETII.WinApi.Native.WinSCard
         /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
         /// <seealso cref="SCardEstablishContext"/>
         /// <seealso cref="SCardForgetReader"/>
-        /// <seealso cref="SCardIntroduceCardType"/>
+        /// <seealso cref="SCardIntroduceCardType(SCARDCONTEXT, string, in Guid, ReadOnlySpan{Guid}, ReadOnlySpan{byte}, ReadOnlySpan{byte})"/>
         /// <seealso cref="SCardIntroduceReaderGroup"/>
         [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
         public static extern int SCardIntroduceReader(
@@ -1830,6 +1830,259 @@ namespace THNETII.WinApi.Native.WinSCard
             [In] LPCTSTR szReaderName,
             [In] LPCTSTR szGroupName
             );
+#endif // !NETSTANDARD1_3
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 394
+        #region SCardIntroduceCardTypeA function
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi)]
+        private static extern unsafe int SCardIntroduceCardTypeA(
+            [In] SCARDCONTEXT hContext,
+            [In] string szCardName,
+            in Guid pguidPrimaryProvider,
+            Guid* rgguidInterfaces,
+            [In] int dwInterfaceCount,
+            byte* pbAtr,
+            byte* pbAtrMask,
+            [In] int cbAtrLen
+            );
+        /// <inheritdoc cref="SCardIntroduceCardType(SCARDCONTEXT, string, in Guid, ReadOnlySpan{Guid}, ReadOnlySpan{byte}, ReadOnlySpan{byte})"/>
+        public static unsafe int SCardIntroduceCardTypeA(
+            [In] SCARDCONTEXT hContext,
+            [In] string szCardName,
+            in Guid pguidPrimaryProvider,
+            ReadOnlySpan<Guid> rgguidInterfaces,
+            ReadOnlySpan<byte> pbAtr,
+            ReadOnlySpan<byte> pbAtrMask
+            )
+        {
+            fixed (Guid* ptrguidInterfaces = rgguidInterfaces)
+            fixed (byte* ptrAtr = pbAtr)
+            fixed (byte* ptrAtrMask = pbAtrMask)
+                return SCardIntroduceCardTypeA(
+                    hContext,
+                    szCardName,
+                    pguidPrimaryProvider,
+                    ptrguidInterfaces,
+                    rgguidInterfaces.Length,
+                    ptrAtr,
+                    ptrAtrMask,
+                    pbAtr.Length
+                    );
+        }
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi)]
+        private static extern unsafe int SCardIntroduceCardTypeA(
+            [In] SCARDCONTEXT hContext,
+            [In] LPCSTR szCardName,
+            in Guid pguidPrimaryProvider,
+            Guid* rgguidInterfaces,
+            [In] int dwInterfaceCount,
+            byte* pbAtr,
+            byte* pbAtrMask,
+            [In] int cbAtrLen
+            );
+        /// <inheritdoc cref="SCardIntroduceCardTypeA(SCARDCONTEXT, string, in Guid, ReadOnlySpan{Guid}, ReadOnlySpan{byte}, ReadOnlySpan{byte})"/>
+        public static unsafe int SCardIntroduceCardTypeA(
+            [In] SCARDCONTEXT hContext,
+            [In] LPCSTR szCardName,
+            in Guid pguidPrimaryProvider,
+            ReadOnlySpan<Guid> rgguidInterfaces,
+            ReadOnlySpan<byte> pbAtr,
+            ReadOnlySpan<byte> pbAtrMask
+            )
+        {
+            fixed (Guid* ptrguidInterfaces = rgguidInterfaces)
+            fixed (byte* ptrAtr = pbAtr)
+            fixed (byte* ptrAtrMask = pbAtrMask)
+                return SCardIntroduceCardTypeA(
+                    hContext,
+                    szCardName,
+                    pguidPrimaryProvider,
+                    ptrguidInterfaces,
+                    rgguidInterfaces.Length,
+                    ptrAtr,
+                    ptrAtrMask,
+                    pbAtr.Length
+                    );
+        }
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 404
+        #region SCardIntroduceCardTypeW function
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Unicode)]
+        private static extern unsafe int SCardIntroduceCardTypeW(
+            [In] SCARDCONTEXT hContext,
+            [In] string szCardName,
+            in Guid pguidPrimaryProvider,
+            Guid* rgguidInterfaces,
+            [In] int dwInterfaceCount,
+            byte* pbAtr,
+            byte* pbAtrMask,
+            [In] int cbAtrLen
+            );
+        /// <inheritdoc cref="SCardIntroduceCardType(SCARDCONTEXT, string, in Guid, ReadOnlySpan{Guid}, ReadOnlySpan{byte}, ReadOnlySpan{byte})"/>
+        public static unsafe int SCardIntroduceCardTypeW(
+            [In] SCARDCONTEXT hContext,
+            [In] string szCardName,
+            in Guid pguidPrimaryProvider,
+            ReadOnlySpan<Guid> rgguidInterfaces,
+            ReadOnlySpan<byte> pbAtr,
+            ReadOnlySpan<byte> pbAtrMask
+            )
+        {
+            fixed (Guid* ptrguidInterfaces = rgguidInterfaces)
+            fixed (byte* ptrAtr = pbAtr)
+            fixed (byte* ptrAtrMask = pbAtrMask)
+                return SCardIntroduceCardTypeW(
+                    hContext,
+                    szCardName,
+                    pguidPrimaryProvider,
+                    ptrguidInterfaces,
+                    rgguidInterfaces.Length,
+                    ptrAtr,
+                    ptrAtrMask,
+                    pbAtr.Length
+                    );
+        }
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Unicode)]
+        private static extern unsafe int SCardIntroduceCardTypeW(
+            [In] SCARDCONTEXT hContext,
+            [In] LPCWSTR szCardName,
+            in Guid pguidPrimaryProvider,
+            Guid* rgguidInterfaces,
+            [In] int dwInterfaceCount,
+            byte* pbAtr,
+            byte* pbAtrMask,
+            [In] int cbAtrLen
+            );
+        /// <inheritdoc cref="SCardIntroduceCardTypeW(SCARDCONTEXT, string, in Guid, ReadOnlySpan{Guid}, ReadOnlySpan{byte}, ReadOnlySpan{byte})"/>
+        public static unsafe int SCardIntroduceCardTypeW(
+            [In] SCARDCONTEXT hContext,
+            [In] LPCWSTR szCardName,
+            in Guid pguidPrimaryProvider,
+            ReadOnlySpan<Guid> rgguidInterfaces,
+            ReadOnlySpan<byte> pbAtr,
+            ReadOnlySpan<byte> pbAtrMask
+            )
+        {
+            fixed (Guid* ptrguidInterfaces = rgguidInterfaces)
+            fixed (byte* ptrAtr = pbAtr)
+            fixed (byte* ptrAtrMask = pbAtrMask)
+                return SCardIntroduceCardTypeW(
+                    hContext,
+                    szCardName,
+                    pguidPrimaryProvider,
+                    ptrguidInterfaces,
+                    rgguidInterfaces.Length,
+                    ptrAtr,
+                    ptrAtrMask,
+                    pbAtr.Length
+                    );
+        }
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 414
+        #region SCardIntroduceCardType function
+#if !NETSTANDARD1_3
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
+        private static extern unsafe int SCardIntroduceCardType(
+            [In] SCARDCONTEXT hContext,
+            [In] string szCardName,
+            in Guid pguidPrimaryProvider,
+            Guid* rgguidInterfaces,
+            [In] int dwInterfaceCount,
+            byte* pbAtr,
+            byte* pbAtrMask,
+            [In] int cbAtrLen
+            );
+        /// <summary>
+        /// The <see cref="SCardIntroduceCardType(SCARDCONTEXT, string, in Guid, ReadOnlySpan{Guid}, ReadOnlySpan{byte}, ReadOnlySpan{byte})"/> function introduces a <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card</a> to the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card subsystem</a> (for the active user) by adding it to the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card database</a>.
+        /// </summary>
+        /// <param name="hContext">Handle that identifies the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">resource manager context</a>. The resource manager context is set by a previous call to <see cref="SCardEstablishContext"/>. This parameter cannot be set to <see langword="default"/>.</param>
+        /// <param name="szCardName">Name by which the user can recognize the card.</param>
+        /// <param name="pguidPrimaryProvider">The identifier (GUID) for the smart card's <a href="https://docs.microsoft.com/windows/desktop/SecGloss/p-gly">primary service provider</a>.</param>
+        /// <param name="rgguidInterfaces">Array of identifiers (GUIDs) that identify the interfaces supported by the smart card.</param>
+        /// <param name="pbAtr"><a href="https://docs.microsoft.com/windows/desktop/SecGloss/a-gly"></a> that can be used for matching purposes when querying the smart card database (for more information, see <see cref="SCardListCards"/>). The length of this string is determined by normal ATR parsing.</param>
+        /// <param name="pbAtrMask">Optional bitmask to use when comparing the ATRs of smart cards to the ATR supplied in <paramref name="pbAtr"/>. If this value is non-empty, it must be a string of bytes the same length as the ATR string supplied in <paramref name="pbAtr"/>. When a given ATR string <em>A</em> is compared to the ATR supplied in <paramref name="pbAtr"/>, it matches if and only if <c><em>A</em> &amp; <em>M</em> = <paramref name="pbAtr"/></c>, where <em>M</em> is the supplied mask, and <c>&amp;</c> represents bitwise AND.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the function returns <see cref="SCARD_S_SUCCESS"/>.</para>
+        /// <para>If the function fails, it returns an error code. For more information, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/authentication-return-values">Smart Card Return Values</a>.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>This function is not redirected, but calling the function when inside a Remote Desktop session will not result in an error. It only means that the result will be from the remote computer instead of the local computer.</para>
+        /// <para>The <see cref="SCardIntroduceCardType(SCARDCONTEXT, string, in Guid, ReadOnlySpan{Guid}, ReadOnlySpan{byte}, ReadOnlySpan{byte})"/> function is a database management function. For more information on other database management functions, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/smart-card-database-management-functions">Smart Card Database Management Functions</a>.</para>
+        /// <para>To remove a smart card, use <see cref="SCardForgetCardType"/>.</para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows XP [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/winscard/nf-winscard-scardintroducecardtypew">SCardIntroduceCardTypeW function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="SCardEstablishContext"/>
+        /// <seealso cref="SCardForgetCardType"/>
+        /// <seealso cref="SCardIntroduceReader"/>
+        /// <seealso cref="SCardIntroduceReaderGroup"/>
+        /// <seealso cref="SCardListCards"/>
+        public static unsafe int SCardIntroduceCardType(
+            [In] SCARDCONTEXT hContext,
+            [In] string szCardName,
+            in Guid pguidPrimaryProvider,
+            ReadOnlySpan<Guid> rgguidInterfaces,
+            ReadOnlySpan<byte> pbAtr,
+            ReadOnlySpan<byte> pbAtrMask
+            )
+        {
+            fixed (Guid* ptrguidInterfaces = rgguidInterfaces)
+            fixed (byte* ptrAtr = pbAtr)
+            fixed (byte* ptrAtrMask = pbAtrMask)
+                return SCardIntroduceCardType(
+                    hContext,
+                    szCardName,
+                    pguidPrimaryProvider,
+                    ptrguidInterfaces,
+                    rgguidInterfaces.Length,
+                    ptrAtr,
+                    ptrAtrMask,
+                    pbAtr.Length
+                    );
+        }
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
+        private static extern unsafe int SCardIntroduceCardType(
+            [In] SCARDCONTEXT hContext,
+            [In] LPCTSTR szCardName,
+            in Guid pguidPrimaryProvider,
+            Guid* rgguidInterfaces,
+            [In] int dwInterfaceCount,
+            byte* pbAtr,
+            byte* pbAtrMask,
+            [In] int cbAtrLen
+            );
+        /// <inheritdoc cref="SCardIntroduceCardType(SCARDCONTEXT, string, in Guid, ReadOnlySpan{Guid}, ReadOnlySpan{byte}, ReadOnlySpan{byte})"/>
+        public static unsafe int SCardIntroduceCardType(
+            [In] SCARDCONTEXT hContext,
+            [In] LPCTSTR szCardName,
+            in Guid pguidPrimaryProvider,
+            ReadOnlySpan<Guid> rgguidInterfaces,
+            ReadOnlySpan<byte> pbAtr,
+            ReadOnlySpan<byte> pbAtrMask
+            )
+        {
+            fixed (Guid* ptrguidInterfaces = rgguidInterfaces)
+            fixed (byte* ptrAtr = pbAtr)
+            fixed (byte* ptrAtrMask = pbAtrMask)
+                return SCardIntroduceCardType(
+                    hContext,
+                    szCardName,
+                    pguidPrimaryProvider,
+                    ptrguidInterfaces,
+                    rgguidInterfaces.Length,
+                    ptrAtr,
+                    ptrAtrMask,
+                    pbAtr.Length
+                    );
+        }
 #endif // !NETSTANDARD1_3
         #endregion
     }

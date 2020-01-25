@@ -1722,6 +1722,10 @@ namespace THNETII.WinApi.Native.WinSCard
         /// </remarks>
         /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
         /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="SCardEstablishContext"/>
+        /// <seealso cref="SCardIntroduceReader"/>
+        /// <seealso cref="SCardIntroduceReaderGroup"/>
+        /// <seealso cref="SCardRemoveReaderFromGroup"/>
         [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
         public static extern int SCardAddReaderToGroup(
             [In] SCARDCONTEXT hContext,
@@ -1731,6 +1735,97 @@ namespace THNETII.WinApi.Native.WinSCard
         /// <inheritdoc cref="SCardAddReaderToGroup(SCARDCONTEXT, string, string)"/>
         [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
         public static extern int SCardAddReaderToGroup(
+            [In] SCARDCONTEXT hContext,
+            [In] LPCTSTR szReaderName,
+            [In] LPCTSTR szGroupName
+            );
+#endif // !NETSTANDARD1_3
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 378
+        #region SCardRemoveReaderFromGroupA function
+        /// <inheritdoc cref="SCardRemoveReaderFromGroup(SCARDCONTEXT, string, string)"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi)]
+        public static extern int SCardRemoveReaderFromGroupA(
+            [In] SCARDCONTEXT hContext,
+            [In] string szReaderName,
+            [In] string szGroupName
+            );
+        /// <inheritdoc cref="SCardRemoveReaderFromGroupA(SCARDCONTEXT, string, string)"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi)]
+        public static extern int SCardRemoveReaderFromGroupA(
+            [In] SCARDCONTEXT hContext,
+            [In] LPCSTR szReaderName,
+            [In] LPCSTR szGroupName
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 383
+        #region SCardRemoveReaderFromGroupW function
+        /// <inheritdoc cref="SCardRemoveReaderFromGroup(SCARDCONTEXT, string, string)"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Unicode)]
+        public static extern int SCardRemoveReaderFromGroupW(
+            [In] SCARDCONTEXT hContext,
+            [In] string szReaderName,
+            [In] string szGroupName
+            );
+        /// <inheritdoc cref="SCardRemoveReaderFromGroupW(SCARDCONTEXT, string, string)"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Unicode)]
+        public static extern int SCardRemoveReaderFromGroupW(
+            [In] SCARDCONTEXT hContext,
+            [In] LPCWSTR szReaderName,
+            [In] LPCWSTR szGroupName
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 388
+        #region SCardRemoveReaderFromGroup function
+#if !NETSTANDARD1_3
+        /// <summary>
+        /// The <see cref="SCardRemoveReaderFromGroup"/> function removes a <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">reader</a> from an existing <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">reader group</a>. This function has no effect on the reader.
+        /// </summary>
+        /// <param name="hContext">Handle that identifies the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">resource manager context</a>. The resource manager context is set by a previous call to <see cref="SCardEstablishContext"/>. This parameter cannot be set to <see langword="default"/>.</param>
+        /// <param name="szReaderName">Display name of the reader to be removed.</param>
+        /// <param name="szGroupName">
+        /// Display name of the group from which the reader should be removed.
+        /// <list type="table">
+        /// <listheader><term>Value</term><description>Meaning</description></listheader>
+        /// <item><term><see cref="SCARD_ALL_READERS"/><br/><c>SCard$AllReaders\0</c></term><description>Group used when no group name is provided when listing readers. Returns a list of all readers, regardless of what group or groups the readers are in.</description></item>
+        /// <item><term><see cref="SCARD_DEFAULT_READERS"/><br/><c>SCard$DefaultReaders\0</c></term><description>Default group to which all readers are added when introduced into the system.</description></item>
+        /// <item><term><see cref="SCARD_LOCAL_READERS"/><br/><c>SCard$LocalReaders\0</c></term><description>Unused legacy value. This is an internally managed group that cannot be modified by using any reader group APIs. It is intended to be used for enumeration only.</description></item>
+        /// <item><term><see cref="SCARD_SYSTEM_READERS"/><br/><c>SCard$SystemReaders\0</c></term><description>Unused legacy value. This is an internally managed group that cannot be modified by using any reader group APIs. It is intended to be used for enumeration only.</description></item>
+        /// </list>
+        /// </param>
+        /// <returns>
+        /// <para>If the function succeeds, the function returns <see cref="SCARD_S_SUCCESS"/>.</para>
+        /// <para>If the function fails, it returns an error code. For more information, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/authentication-return-values">Smart Card Return Values</a>.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>When the last reader is removed from a group, the group is automatically forgotten.</para>
+        /// <para>The <see cref="SCardRemoveReaderFromGroup"/> function is a database management function. For information about other database management functions, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/smart-card-database-management-functions">Smart Card Database Management Functions</a>.</para>
+        /// <para>To add a reader to a reader group, use <see cref="SCardAddReaderToGroup"/>.</para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows XP [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/winscard/nf-winscard-scardremovereaderfromgroupw">SCardRemoveReaderFromGroupW function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="SCardAddReaderToGroup"/>
+        /// <seealso cref="SCardEstablishContext"/>
+        /// <seealso cref="SCardForgetCardType"/>
+        /// <seealso cref="SCardForgetReader"/>
+        /// <seealso cref="SCardForgetReaderGroup"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
+        public static extern int SCardRemoveReaderFromGroup(
+            [In] SCARDCONTEXT hContext,
+            [In] string szReaderName,
+            [In] string szGroupName
+            );
+        /// <inheritdoc cref="SCardRemoveReaderFromGroup(SCARDCONTEXT, string, string)"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
+        public static extern int SCardRemoveReaderFromGroup(
             [In] SCARDCONTEXT hContext,
             [In] LPCTSTR szReaderName,
             [In] LPCTSTR szGroupName

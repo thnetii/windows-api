@@ -1838,8 +1838,8 @@ namespace THNETII.WinApi.Native.WinSCard
         private static extern unsafe int SCardIntroduceCardTypeA(
             [In] SCARDCONTEXT hContext,
             [In] string szCardName,
-            in Guid pguidPrimaryProvider,
-            Guid* rgguidInterfaces,
+            [Optional] in Guid pguidPrimaryProvider,
+            [Optional] Guid* rgguidInterfaces,
             [In] int dwInterfaceCount,
             byte* pbAtr,
             byte* pbAtrMask,
@@ -1847,10 +1847,10 @@ namespace THNETII.WinApi.Native.WinSCard
             );
         /// <inheritdoc cref="SCardIntroduceCardType(SCARDCONTEXT, string, in Guid, ReadOnlySpan{Guid}, ReadOnlySpan{byte}, ReadOnlySpan{byte})"/>
         public static unsafe int SCardIntroduceCardTypeA(
-            [In] SCARDCONTEXT hContext,
-            [In] string szCardName,
-            in Guid pguidPrimaryProvider,
-            ReadOnlySpan<Guid> rgguidInterfaces,
+            SCARDCONTEXT hContext,
+            string szCardName,
+            [Optional] in Guid pguidPrimaryProvider,
+            [Optional] ReadOnlySpan<Guid> rgguidInterfaces,
             ReadOnlySpan<byte> pbAtr,
             ReadOnlySpan<byte> pbAtrMask
             )
@@ -1873,8 +1873,8 @@ namespace THNETII.WinApi.Native.WinSCard
         private static extern unsafe int SCardIntroduceCardTypeA(
             [In] SCARDCONTEXT hContext,
             [In] LPCSTR szCardName,
-            in Guid pguidPrimaryProvider,
-            Guid* rgguidInterfaces,
+            [Optional] in Guid pguidPrimaryProvider,
+            [Optional] Guid* rgguidInterfaces,
             [In] int dwInterfaceCount,
             byte* pbAtr,
             byte* pbAtrMask,
@@ -1882,10 +1882,10 @@ namespace THNETII.WinApi.Native.WinSCard
             );
         /// <inheritdoc cref="SCardIntroduceCardTypeA(SCARDCONTEXT, string, in Guid, ReadOnlySpan{Guid}, ReadOnlySpan{byte}, ReadOnlySpan{byte})"/>
         public static unsafe int SCardIntroduceCardTypeA(
-            [In] SCARDCONTEXT hContext,
-            [In] LPCSTR szCardName,
-            in Guid pguidPrimaryProvider,
-            ReadOnlySpan<Guid> rgguidInterfaces,
+            SCARDCONTEXT hContext,
+            LPCSTR szCardName,
+            [Optional] in Guid pguidPrimaryProvider,
+            [Optional] ReadOnlySpan<Guid> rgguidInterfaces,
             ReadOnlySpan<byte> pbAtr,
             ReadOnlySpan<byte> pbAtrMask
             )
@@ -1911,8 +1911,8 @@ namespace THNETII.WinApi.Native.WinSCard
         private static extern unsafe int SCardIntroduceCardTypeW(
             [In] SCARDCONTEXT hContext,
             [In] string szCardName,
-            in Guid pguidPrimaryProvider,
-            Guid* rgguidInterfaces,
+            [Optional] in Guid pguidPrimaryProvider,
+            [Optional] Guid* rgguidInterfaces,
             [In] int dwInterfaceCount,
             byte* pbAtr,
             byte* pbAtrMask,
@@ -1920,10 +1920,10 @@ namespace THNETII.WinApi.Native.WinSCard
             );
         /// <inheritdoc cref="SCardIntroduceCardType(SCARDCONTEXT, string, in Guid, ReadOnlySpan{Guid}, ReadOnlySpan{byte}, ReadOnlySpan{byte})"/>
         public static unsafe int SCardIntroduceCardTypeW(
-            [In] SCARDCONTEXT hContext,
-            [In] string szCardName,
-            in Guid pguidPrimaryProvider,
-            ReadOnlySpan<Guid> rgguidInterfaces,
+            SCARDCONTEXT hContext,
+            string szCardName,
+            [Optional] in Guid pguidPrimaryProvider,
+            [Optional] ReadOnlySpan<Guid> rgguidInterfaces,
             ReadOnlySpan<byte> pbAtr,
             ReadOnlySpan<byte> pbAtrMask
             )
@@ -1946,8 +1946,8 @@ namespace THNETII.WinApi.Native.WinSCard
         private static extern unsafe int SCardIntroduceCardTypeW(
             [In] SCARDCONTEXT hContext,
             [In] LPCWSTR szCardName,
-            in Guid pguidPrimaryProvider,
-            Guid* rgguidInterfaces,
+            [Optional] in Guid pguidPrimaryProvider,
+            [Optional] Guid* rgguidInterfaces,
             [In] int dwInterfaceCount,
             byte* pbAtr,
             byte* pbAtrMask,
@@ -1955,10 +1955,10 @@ namespace THNETII.WinApi.Native.WinSCard
             );
         /// <inheritdoc cref="SCardIntroduceCardTypeW(SCARDCONTEXT, string, in Guid, ReadOnlySpan{Guid}, ReadOnlySpan{byte}, ReadOnlySpan{byte})"/>
         public static unsafe int SCardIntroduceCardTypeW(
-            [In] SCARDCONTEXT hContext,
-            [In] LPCWSTR szCardName,
-            in Guid pguidPrimaryProvider,
-            ReadOnlySpan<Guid> rgguidInterfaces,
+            SCARDCONTEXT hContext,
+            LPCWSTR szCardName,
+            [Optional] in Guid pguidPrimaryProvider,
+            [Optional] ReadOnlySpan<Guid> rgguidInterfaces,
             ReadOnlySpan<byte> pbAtr,
             ReadOnlySpan<byte> pbAtrMask
             )
@@ -1985,8 +1985,8 @@ namespace THNETII.WinApi.Native.WinSCard
         private static extern unsafe int SCardIntroduceCardType(
             [In] SCARDCONTEXT hContext,
             [In] string szCardName,
-            in Guid pguidPrimaryProvider,
-            Guid* rgguidInterfaces,
+            [Optional] in Guid pguidPrimaryProvider,
+            [Optional] Guid* rgguidInterfaces,
             [In] int dwInterfaceCount,
             byte* pbAtr,
             byte* pbAtrMask,
@@ -2026,10 +2026,10 @@ namespace THNETII.WinApi.Native.WinSCard
         /// <seealso cref="SCardIntroduceReaderGroup"/>
         /// <seealso cref="SCardListCards"/>
         public static unsafe int SCardIntroduceCardType(
-            [In] SCARDCONTEXT hContext,
-            [In] string szCardName,
-            in Guid pguidPrimaryProvider,
-            ReadOnlySpan<Guid> rgguidInterfaces,
+            SCARDCONTEXT hContext,
+            string szCardName,
+            [Optional] in Guid pguidPrimaryProvider,
+            [Optional] ReadOnlySpan<Guid> rgguidInterfaces,
             ReadOnlySpan<byte> pbAtr,
             ReadOnlySpan<byte> pbAtrMask
             )
@@ -2052,8 +2052,8 @@ namespace THNETII.WinApi.Native.WinSCard
         private static extern unsafe int SCardIntroduceCardType(
             [In] SCARDCONTEXT hContext,
             [In] LPCTSTR szCardName,
-            in Guid pguidPrimaryProvider,
-            Guid* rgguidInterfaces,
+            [Optional] in Guid pguidPrimaryProvider,
+            [Optional] Guid* rgguidInterfaces,
             [In] int dwInterfaceCount,
             byte* pbAtr,
             byte* pbAtrMask,
@@ -2061,10 +2061,10 @@ namespace THNETII.WinApi.Native.WinSCard
             );
         /// <inheritdoc cref="SCardIntroduceCardType(SCARDCONTEXT, string, in Guid, ReadOnlySpan{Guid}, ReadOnlySpan{byte}, ReadOnlySpan{byte})"/>
         public static unsafe int SCardIntroduceCardType(
-            [In] SCARDCONTEXT hContext,
-            [In] LPCTSTR szCardName,
-            in Guid pguidPrimaryProvider,
-            ReadOnlySpan<Guid> rgguidInterfaces,
+            SCARDCONTEXT hContext,
+            LPCTSTR szCardName,
+            [Optional] in Guid pguidPrimaryProvider,
+            [Optional] ReadOnlySpan<Guid> rgguidInterfaces,
             ReadOnlySpan<byte> pbAtr,
             ReadOnlySpan<byte> pbAtrMask
             )
@@ -2083,6 +2083,107 @@ namespace THNETII.WinApi.Native.WinSCard
                     pbAtr.Length
                     );
         }
+#endif // !NETSTANDARD1_3
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 419
+        #region PCSCardIntroduceCardType function
+        /// <inheritdoc cref="SCardIntroduceCardTypeA(SCARDCONTEXT, string, in Guid, ReadOnlySpan{Guid}, ReadOnlySpan{byte}, ReadOnlySpan{byte})"/>
+        public static int PCSCardIntroduceCardTypeA(
+            SCARDCONTEXT hContext,
+            string szCardName,
+            ReadOnlySpan<byte> pbAtr,
+            ReadOnlySpan<byte> pbAtrMask,
+            in Guid pguidPrimaryProvider = default,
+            ReadOnlySpan<Guid> rgguidInterfaces = default
+            ) => SCardIntroduceCardTypeA(
+                hContext,
+                szCardName,
+                pguidPrimaryProvider,
+                rgguidInterfaces,
+                pbAtr,
+                pbAtrMask
+                );
+        /// <inheritdoc cref="SCardIntroduceCardTypeA(SCARDCONTEXT, LPCSTR, in Guid, ReadOnlySpan{Guid}, ReadOnlySpan{byte}, ReadOnlySpan{byte})"/>
+        public static int PCSCardIntroduceCardTypeA(
+            SCARDCONTEXT hContext,
+            LPCSTR szCardName,
+            ReadOnlySpan<byte> pbAtr,
+            ReadOnlySpan<byte> pbAtrMask,
+            in Guid pguidPrimaryProvider = default,
+            ReadOnlySpan<Guid> rgguidInterfaces = default
+            ) => SCardIntroduceCardTypeA(
+                hContext,
+                szCardName,
+                pguidPrimaryProvider,
+                rgguidInterfaces,
+                pbAtr,
+                pbAtrMask
+                );
+        /// <inheritdoc cref="SCardIntroduceCardTypeW(SCARDCONTEXT, string, in Guid, ReadOnlySpan{Guid}, ReadOnlySpan{byte}, ReadOnlySpan{byte})"/>
+        public static int PCSCardIntroduceCardTypeW(
+            SCARDCONTEXT hContext,
+            string szCardName,
+            ReadOnlySpan<byte> pbAtr,
+            ReadOnlySpan<byte> pbAtrMask,
+            in Guid pguidPrimaryProvider = default,
+            ReadOnlySpan<Guid> rgguidInterfaces = default
+            ) => SCardIntroduceCardTypeW(
+                hContext,
+                szCardName,
+                pguidPrimaryProvider,
+                rgguidInterfaces,
+                pbAtr,
+                pbAtrMask
+                );
+        /// <inheritdoc cref="SCardIntroduceCardTypeW(SCARDCONTEXT, LPCWSTR, in Guid, ReadOnlySpan{Guid}, ReadOnlySpan{byte}, ReadOnlySpan{byte})"/>
+        public static int PCSCardIntroduceCardTypeW(
+            SCARDCONTEXT hContext,
+            LPCWSTR szCardName,
+            ReadOnlySpan<byte> pbAtr,
+            ReadOnlySpan<byte> pbAtrMask,
+            in Guid pguidPrimaryProvider = default,
+            ReadOnlySpan<Guid> rgguidInterfaces = default
+            ) => SCardIntroduceCardTypeW(
+                hContext,
+                szCardName,
+                pguidPrimaryProvider,
+                rgguidInterfaces,
+                pbAtr,
+                pbAtrMask
+                );
+#if !NETSTANDARD1_3
+        /// <inheritdoc cref="SCardIntroduceCardType(SCARDCONTEXT, string, in Guid, ReadOnlySpan{Guid}, ReadOnlySpan{byte}, ReadOnlySpan{byte})"/>
+        public static int PCSCardIntroduceCardType(
+            SCARDCONTEXT hContext,
+            string szCardName,
+            ReadOnlySpan<byte> pbAtr,
+            ReadOnlySpan<byte> pbAtrMask,
+            in Guid pguidPrimaryProvider = default,
+            ReadOnlySpan<Guid> rgguidInterfaces = default
+            ) => SCardIntroduceCardType(
+                hContext,
+                szCardName,
+                pguidPrimaryProvider,
+                rgguidInterfaces,
+                pbAtr,
+                pbAtrMask
+                );
+        /// <inheritdoc cref="SCardIntroduceCardType(SCARDCONTEXT, LPCTSTR, in Guid, ReadOnlySpan{Guid}, ReadOnlySpan{byte}, ReadOnlySpan{byte})"/>
+        public static int PCSCardIntroduceCardType(
+            SCARDCONTEXT hContext,
+            LPCTSTR szCardName,
+            ReadOnlySpan<byte> pbAtr,
+            ReadOnlySpan<byte> pbAtrMask,
+            in Guid pguidPrimaryProvider = default,
+            ReadOnlySpan<Guid> rgguidInterfaces = default
+            ) => SCardIntroduceCardType(
+                hContext,
+                szCardName,
+                pguidPrimaryProvider,
+                rgguidInterfaces,
+                pbAtr,
+                pbAtrMask
+                );
 #endif // !NETSTANDARD1_3
         #endregion
     }

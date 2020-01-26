@@ -2452,5 +2452,179 @@ namespace THNETII.WinApi.Native.WinSCard
         //
         //      The following services supply means for tracking cards within readers.
         //
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 600
+        #region SCardLocateCardsA function
+        /// <inheritdoc cref="SCardLocateCards(SCARDCONTEXT, string, Span{SCARD_READERSTATE})"/>
+        public static unsafe int SCardLocateCardsA(
+            SCARDCONTEXT hContext,
+            string mszCards,
+            Span<SCARD_READERSTATEA> rgReaderStates
+            )
+        {
+            fixed (SCARD_READERSTATEA* ptrReaderStates = rgReaderStates)
+                return SCardLocateCardsA(
+                    hContext,
+                    mszCards,
+                    ptrReaderStates,
+                    rgReaderStates.Length
+                    );
+        }
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi)]
+        private static extern unsafe int SCardLocateCardsA(
+            [In] SCARDCONTEXT hContext,
+            [In] string mszCards,
+            SCARD_READERSTATEA* rgReaderStates,
+            [In] int cReaders
+            );
+        /// <inheritdoc cref="SCardLocateCardsA(SCARDCONTEXT, string, Span{SCARD_READERSTATEA})"/>
+        public static unsafe int SCardLocateCardsA(
+            SCARDCONTEXT hContext,
+            LPCSTR mszCards,
+            Span<SCARD_READERSTATEA> rgReaderStates
+            )
+        {
+            fixed (SCARD_READERSTATEA* ptrReaderStates = rgReaderStates)
+                return SCardLocateCardsA(
+                    hContext,
+                    mszCards,
+                    ptrReaderStates,
+                    rgReaderStates.Length
+                    );
+        }
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi)]
+        private static extern unsafe int SCardLocateCardsA(
+            [In] SCARDCONTEXT hContext,
+            [In] LPCSTR mszCards,
+            SCARD_READERSTATEA* rgReaderStates,
+            [In] int cReaders
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 606
+        #region SCardLocateCardsW function
+        /// <inheritdoc cref="SCardLocateCards(SCARDCONTEXT, string, Span{SCARD_READERSTATE})"/>
+        public static unsafe int SCardLocateCardsW(
+            SCARDCONTEXT hContext,
+            string mszCards,
+            Span<SCARD_READERSTATEW> rgReaderStates
+            )
+        {
+            fixed (SCARD_READERSTATEW* ptrReaderStates = rgReaderStates)
+                return SCardLocateCardsW(
+                    hContext,
+                    mszCards,
+                    ptrReaderStates,
+                    rgReaderStates.Length
+                    );
+        }
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Unicode)]
+        private static extern unsafe int SCardLocateCardsW(
+            [In] SCARDCONTEXT hContext,
+            [In] string mszCards,
+            SCARD_READERSTATEW* rgReaderStates,
+            [In] int cReaders
+            );
+        /// <inheritdoc cref="SCardLocateCardsW(SCARDCONTEXT, string, Span{SCARD_READERSTATEW})"/>
+        public static unsafe int SCardLocateCardsW(
+            SCARDCONTEXT hContext,
+            LPCWSTR mszCards,
+            Span<SCARD_READERSTATEW> rgReaderStates
+            )
+        {
+            fixed (SCARD_READERSTATEW* ptrReaderStates = rgReaderStates)
+                return SCardLocateCardsW(
+                    hContext,
+                    mszCards,
+                    ptrReaderStates,
+                    rgReaderStates.Length
+                    );
+        }
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Unicode)]
+        private static extern unsafe int SCardLocateCardsW(
+            [In] SCARDCONTEXT hContext,
+            [In] LPCWSTR mszCards,
+            SCARD_READERSTATEW* rgReaderStates,
+            [In] int cReaders
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 612
+        #region SCardLocateCards function
+#if !NETSTANDARD1_3
+        /// <summary>
+        /// The <see cref="SCardLocateCards(SCARDCONTEXT, string, Span{SCARD_READERSTATE})"/> function searches the readers listed in the <paramref name="rgReaderStates"/> parameter for a card with an <a href="https://docs.microsoft.com/windows/desktop/SecGloss/a-gly">ATR string</a> that matches one of the card names specified in <paramref name="mszCards"/>, returning immediately with the result.
+        /// </summary>
+        /// <param name="hContext">A handle that identifies the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">resource manager context</a>. The resource manager context is set by a previous call to <see cref="SCardEstablishContext"/>.</param>
+        /// <param name="mszCards">A multiple string that contains the names of the cards to search for.</param>
+        /// <param name="rgReaderStates">An array of <see cref="SCARD_READERSTATE"/> structures that, on input, specify the readers to search and that, on output, receives the result.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the function returns <see cref="SCARD_S_SUCCESS"/>.</para>
+        /// <para>If the function fails, it returns an error code. For more information, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/authentication-return-values">Smart Card Return Values</a>.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>This service is especially useful when used in conjunction with <see cref="SCardGetStatusChange"/>. If no matching cards are found by means of <see cref="SCardLocateCards(SCARDCONTEXT, string, Span{SCARD_READERSTATE})"/>, the calling application may use <see cref="SCardGetStatusChange"/> to wait for card availability changes.</para>
+        /// <para>The <see cref="SCardLocateCards(SCARDCONTEXT, string, Span{SCARD_READERSTATE})"/> function is a <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card</a> tracking function. For more information on other tracking functions, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/smart-card-tracking-functions">Smart Card Tracking Functions</a>.</para>
+        /// <para>Calling this function should be done outside of a transaction. If an application begins a transaction with the <see cref="SCardBeginTransaction"/> function and then calls this function, it resets the <em>hCard</em> parameter (of type <see cref="SCARDHANDLE"/>) of the <see cref="SCardBeginTransaction"/> function.</para>
+        /// <para><strong>Windows Server 2008 R2 and Windows 7:</strong> Calling this function within a transaction could result in your computer becoming unresponsive.</para>
+        /// <para><strong>Windows Server 2008, Windows Vista, Windows Server 2003 and Windows XP:</strong> Not applicable.</para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows XP [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/winscard/nf-winscard-scardlocatecardsw">SCardLocateCardsW function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="SCARD_READERSTATE"/>
+        /// <seealso cref="SCardCancel"/>
+        /// <seealso cref="SCardEstablishContext"/>
+        /// <seealso cref="SCardGetStatusChange"/>
+        public static unsafe int SCardLocateCards(
+            SCARDCONTEXT hContext,
+            string mszCards,
+            Span<SCARD_READERSTATE> rgReaderStates
+            )
+        {
+            fixed (SCARD_READERSTATE* ptrReaderStates = rgReaderStates)
+                return SCardLocateCards(
+                    hContext,
+                    mszCards,
+                    ptrReaderStates,
+                    rgReaderStates.Length
+                    );
+        }
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
+        private static extern unsafe int SCardLocateCards(
+            [In] SCARDCONTEXT hContext,
+            [In] string mszCards,
+            SCARD_READERSTATE* rgReaderStates,
+            [In] int cReaders
+            );
+        /// <inheritdoc cref="SCardLocateCards(SCARDCONTEXT, string, Span{SCARD_READERSTATE})"/>
+        public static unsafe int SCardLocateCards(
+            SCARDCONTEXT hContext,
+            LPCTSTR mszCards,
+            Span<SCARD_READERSTATE> rgReaderStates
+            )
+        {
+            fixed (SCARD_READERSTATE* ptrReaderStates = rgReaderStates)
+                return SCardLocateCards(
+                    hContext,
+                    mszCards,
+                    ptrReaderStates,
+                    rgReaderStates.Length
+                    );
+        }
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
+        private static extern unsafe int SCardLocateCards(
+            [In] SCARDCONTEXT hContext,
+            [In] LPCTSTR mszCards,
+            SCARD_READERSTATE* rgReaderStates,
+            [In] int cReaders
+            );
+#endif // !NETSTANDARD1_3
+        #endregion
     }
 }

@@ -2186,5 +2186,94 @@ namespace THNETII.WinApi.Native.WinSCard
                 );
 #endif // !NETSTANDARD1_3
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 438
+        #region SCardSetCardTypeProviderNameA function
+        /// <inheritdoc cref="SCardSetCardTypeProviderName(SCARDCONTEXT, string, SCARD_PROVIDER_TYPE, string)"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi)]
+        public static extern int SCardSetCardTypeProviderNameA(
+            [In] SCARDCONTEXT hContext,
+            [In] string szCardName,
+            [In, MarshalAs(UnmanagedType.U4)] SCARD_PROVIDER_TYPE dwProviderId,
+            [In] string szProvider
+            );
+        /// <inheritdoc cref="SCardSetCardTypeProviderNameA(SCARDCONTEXT, string, SCARD_PROVIDER_TYPE, string)"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi)]
+        public static extern int SCardSetCardTypeProviderNameA(
+            [In] SCARDCONTEXT hContext,
+            [In] LPCSTR szCardName,
+            [In, MarshalAs(UnmanagedType.U4)] SCARD_PROVIDER_TYPE dwProviderId,
+            [In] LPCSTR szProvider
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 444
+        #region SCardSetCardTypeProviderNameW function
+        /// <inheritdoc cref="SCardSetCardTypeProviderName(SCARDCONTEXT, string, SCARD_PROVIDER_TYPE, string)"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Unicode)]
+        public static extern int SCardSetCardTypeProviderNameW(
+            [In] SCARDCONTEXT hContext,
+            [In] string szCardName,
+            [In, MarshalAs(UnmanagedType.U4)] SCARD_PROVIDER_TYPE dwProviderId,
+            [In] string szProvider
+            );
+        /// <inheritdoc cref="SCardSetCardTypeProviderNameW(SCARDCONTEXT, string, SCARD_PROVIDER_TYPE, string)"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Unicode)]
+        public static extern int SCardSetCardTypeProviderNameW(
+            [In] SCARDCONTEXT hContext,
+            [In] LPCWSTR szCardName,
+            [In, MarshalAs(UnmanagedType.U4)] SCARD_PROVIDER_TYPE dwProviderId,
+            [In] LPCWSTR szProvider
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 450
+        #region SCardSetCardTypeProviderName function
+#if !NETSTANDARD1_3
+        /// <summary>
+        /// The <see cref="SCardSetCardTypeProviderName"/> function specifies the name of the module (dynamic link library) containing the provider for a given card name and <a href="https://docs.microsoft.com/windows/desktop/SecGloss/p-gly">provider type</a>.
+        /// </summary>
+        /// <param name="hContext">Handle that identifies the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">resource manager context</a>. The resource manager context can be set by a previous call to <see cref="SCardEstablishContext"/>. This value can be <see langword="default"/> if the call to <see cref="SCardSetCardTypeProviderName"/> is not directed to a specific <a href="https://docs.microsoft.com/windows/desktop/SecGloss/c-gly">context</a>.</param>
+        /// <param name="szCardName">Name of the card type with which this <a href="https://docs.microsoft.com/windows/desktop/SecGloss/p-gly">provider name</a> is associated.</param>
+        /// <param name="dwProviderId">Identifier for the provider associated with this card type.</param>
+        /// <param name="szProvider">A string that contains the provider name that is representing the CSP.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the function returns <see cref="SCARD_S_SUCCESS"/>.</para>
+        /// <para>If the function fails, it returns an error code. For more information, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/authentication-return-values">Smart Card Return Values</a>.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>This function is not redirected, but calling the function when inside a Remote Desktop session will not result in an error. It only means that the result will be from the remote computer instead of the local computer.</para>
+        /// <para>This function sets the provider name, while <see cref="SCardGetCardTypeProviderName"/> can be used to retrieve the provider name.</para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows XP [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/winscard/nf-winscard-scardsetcardtypeprovidernamew">SCardSetCardTypeProviderNameW function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="SCardGetCardTypeProviderName"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
+        public static extern int SCardSetCardTypeProviderName(
+            [In] SCARDCONTEXT hContext,
+            [In] string szCardName,
+            [In, MarshalAs(UnmanagedType.U4)] SCARD_PROVIDER_TYPE dwProviderId,
+            [In] string szProvider
+            );
+        /// <inheritdoc cref="SCardSetCardTypeProviderName(SCARDCONTEXT, string, SCARD_PROVIDER_TYPE, string)"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
+        public static extern int SCardSetCardTypeProviderName(
+            [In] SCARDCONTEXT hContext,
+            [In] LPCTSTR szCardName,
+            [In, MarshalAs(UnmanagedType.U4)] SCARD_PROVIDER_TYPE dwProviderId,
+            [In] LPCTSTR szProvider
+            );
+#endif // !NETSTANDARD1_3
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 455
+        //
+        // NOTE:    This routine is an extention to the PC/SC specifications.
+        //
+
     }
 }

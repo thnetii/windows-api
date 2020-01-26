@@ -2888,6 +2888,128 @@ namespace THNETII.WinApi.Native.WinSCard
         //      The following services provide means for communication with the card.
         //
 
-
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 691
+        #region SCardConnectA function
+        /// <inheritdoc cref="SCardConnect(SCARDCONTEXT, string, SCARD_SHARE_MODE, SCARD_PROTOCOL_FLAGS, out SCARDHANDLE, out SCARD_PROTOCOL_FLAGS)"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi)]
+        public static extern int SCardConnectA(
+            [In] SCARDCONTEXT hContext,
+            [In] string szReader,
+            [In, MarshalAs(UnmanagedType.U4)]
+            SCARD_SHARE_MODE dwShareMode,
+            [In, MarshalAs(UnmanagedType.U4)]
+            SCARD_PROTOCOL_FLAGS dwPreferredProtocols,
+            out SCARDHANDLE phCard,
+            [MarshalAs(UnmanagedType.U4)]
+            out SCARD_PROTOCOL_FLAGS pdwActiveProtocol
+            );
+        /// <inheritdoc cref="SCardConnectA(SCARDCONTEXT, string, SCARD_SHARE_MODE, SCARD_PROTOCOL_FLAGS, out SCARDHANDLE, out SCARD_PROTOCOL_FLAGS)"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi)]
+        public static extern int SCardConnectA(
+            [In] SCARDCONTEXT hContext,
+            [In] LPCSTR szReader,
+            [In, MarshalAs(UnmanagedType.U4)]
+            SCARD_SHARE_MODE dwShareMode,
+            [In, MarshalAs(UnmanagedType.U4)]
+            SCARD_PROTOCOL_FLAGS dwPreferredProtocols,
+            out SCARDHANDLE phCard,
+            [MarshalAs(UnmanagedType.U4)]
+            out SCARD_PROTOCOL_FLAGS pdwActiveProtocol
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 699
+        #region SCardConnectW function
+        /// <inheritdoc cref="SCardConnect(SCARDCONTEXT, string, SCARD_SHARE_MODE, SCARD_PROTOCOL_FLAGS, out SCARDHANDLE, out SCARD_PROTOCOL_FLAGS)"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Unicode)]
+        public static extern int SCardConnectW(
+            [In] SCARDCONTEXT hContext,
+            [In] string szReader,
+            [In, MarshalAs(UnmanagedType.U4)]
+            SCARD_SHARE_MODE dwShareMode,
+            [In, MarshalAs(UnmanagedType.U4)]
+            SCARD_PROTOCOL_FLAGS dwPreferredProtocols,
+            out SCARDHANDLE phCard,
+            [MarshalAs(UnmanagedType.U4)]
+            out SCARD_PROTOCOL_FLAGS pdwActiveProtocol
+            );
+        /// <inheritdoc cref="SCardConnectW(SCARDCONTEXT, string, SCARD_SHARE_MODE, SCARD_PROTOCOL_FLAGS, out SCARDHANDLE, out SCARD_PROTOCOL_FLAGS)"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Unicode)]
+        public static extern int SCardConnectW(
+            [In] SCARDCONTEXT hContext,
+            [In] LPCWSTR szReader,
+            [In, MarshalAs(UnmanagedType.U4)]
+            SCARD_SHARE_MODE dwShareMode,
+            [In, MarshalAs(UnmanagedType.U4)]
+            SCARD_PROTOCOL_FLAGS dwPreferredProtocols,
+            out SCARDHANDLE phCard,
+            [MarshalAs(UnmanagedType.U4)]
+            out SCARD_PROTOCOL_FLAGS pdwActiveProtocol
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 699
+        #region SCardConnect function
+#if !NETSTANDARD1_3
+        /// <summary>
+        /// The <see cref="SCardConnect"/> function establishes a connection (using a specific <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">resource manager context</a>) between the calling application and a <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card</a> contained by a specific reader. If no card exists in the specified reader, an error is returned.
+        /// </summary>
+        /// <param name="hContext">A handle that identifies the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">resource manager context</a>. The resource manager context is set by a previous call to <see cref="SCardEstablishContext"/>.</param>
+        /// <param name="szReader">The name of the reader that contains the target card.</param>
+        /// <param name="dwShareMode">A flag that indicates whether other applications may form connections to the card.</param>
+        /// <param name="dwPreferredProtocols">A bitmask of acceptable protocols for the connection. Possible values may be combined with the <strong>OR</strong> operation.</param>
+        /// <param name="phCard">A handle that identifies the connection to the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card</a> in the designated reader.</param>
+        /// <param name="pdwActiveProtocol">A flag that indicates the established active protocol.</param>
+        /// <returns>
+        /// This function returns different values depending on whether it succeeds or fails.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <item><term><see cref="SCARD_S_SUCCESS"/></term><description><strong>Success</strong></description></item>
+        /// <item><term>An error code. An error code. For more information, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/authentication-return-values">Smart Card Return Values</a>.</term><description><strong>Failure</strong></description></item>
+        /// <item><term><see cref="SCARD_E_NOT_READY"/></term><description>The reader was unable to connect to the card.</description></item>
+        /// </list>
+        /// </returns>
+        /// <remarks>
+        /// The <see cref="SCardConnect"/> function is a <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card</a> and <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">reader</a> access function. For more information about other access functions, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/smart-card-and-reader-access-functions">Smart Card and Reader Access Functions</a>.
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows XP [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/winscard/nf-winscard-scardconnectw">SCardConnectW function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="SCardControl"/>
+        /// <seealso cref="SCardDisconnect"/>
+        /// <seealso cref="SCardEstablishContext"/>
+        /// <seealso cref="SCardReconnect"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
+        public static extern int SCardConnect(
+            [In] SCARDCONTEXT hContext,
+            [In] string szReader,
+            [In, MarshalAs(UnmanagedType.U4)]
+            SCARD_SHARE_MODE dwShareMode,
+            [In, MarshalAs(UnmanagedType.U4)]
+            SCARD_PROTOCOL_FLAGS dwPreferredProtocols,
+            out SCARDHANDLE phCard,
+            [MarshalAs(UnmanagedType.U4)]
+            out SCARD_PROTOCOL_FLAGS pdwActiveProtocol
+            );
+        /// <inheritdoc cref="SCardConnect(SCARDCONTEXT, string, SCARD_SHARE_MODE, SCARD_PROTOCOL_FLAGS, out SCARDHANDLE, out SCARD_PROTOCOL_FLAGS)"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
+        public static extern int SCardConnect(
+            [In] SCARDCONTEXT hContext,
+            [In] LPCTSTR szReader,
+            [In, MarshalAs(UnmanagedType.U4)]
+            SCARD_SHARE_MODE dwShareMode,
+            [In, MarshalAs(UnmanagedType.U4)]
+            SCARD_PROTOCOL_FLAGS dwPreferredProtocols,
+            out SCARDHANDLE phCard,
+            [MarshalAs(UnmanagedType.U4)]
+            out SCARD_PROTOCOL_FLAGS pdwActiveProtocol
+            );
+#endif // !NETSTANDARD1_3
+        #endregion
     }
 }

@@ -3183,5 +3183,67 @@ namespace THNETII.WinApi.Native.WinSCard
         //          terminating a blocked SCardBeginTransaction service.
         //
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 744
+        #region SCardState function
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        [Obsolete("SCardState is an obsolete routine. PC/SC has replaced it with SCardStatus.")]
+        public static unsafe int SCardState(
+            SCARDHANDLE hCard,
+            out SCARD_READER_STATE pdwState,
+            out SCARD_PROTOCOL_FLAGS pdwProtocol,
+            Span<byte> pbAtr,
+            out int pcbAtrLen
+            )
+        {
+            pcbAtrLen = pbAtr.Length;
+            fixed (byte* ptrAtr = pbAtr)
+                return SCardState(
+                    hCard,
+                    out pdwState,
+                    out pdwProtocol,
+                    ptrAtr,
+                    ref pcbAtrLen
+                    );
+        }
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        [Obsolete("SCardState is an obsolete routine. PC/SC has replaced it with SCardStatus.")]
+        public static unsafe int SCardState(
+            SCARDHANDLE hCard,
+            out SCARD_READER_STATE pdwState,
+            out SCARD_PROTOCOL_FLAGS pdwProtocol,
+            out Span<byte> pbAtr
+            )
+        {
+            int cbAtrLen = SCARD_AUTOALLOCATE;
+            void* ptrAtr;
+            byte* pptrAtr = (byte*)(&ptrAtr);
+            int resultCode = SCardState(
+                    hCard,
+                    out pdwState,
+                    out pdwProtocol,
+                    pptrAtr,
+                    ref cbAtrLen
+                    );
+            pbAtr = new Span<byte>(ptrAtr, cbAtrLen);
+            return resultCode;
+        }
+        [Obsolete("SCardState is an obsolete routine. PC/SC has replaced it with SCardStatus.")]
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi)]
+        private static extern unsafe int SCardState(
+            [In] SCARDHANDLE hCard,
+            [MarshalAs(UnmanagedType.U4)]
+            out SCARD_READER_STATE pdwState,
+            [MarshalAs(UnmanagedType.U4)]
+            out SCARD_PROTOCOL_FLAGS pdwProtocol,
+            byte* pbAtr,
+            ref int pcbAtrLen
+            );
+        //
+        // NOTE:    SCardState is an obsolete routine.  PC/SC has replaced it with
+        //          SCardStatus.
+        //
+        #endregion
     }
 }

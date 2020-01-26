@@ -3120,7 +3120,7 @@ namespace THNETII.WinApi.Native.WinSCard
         /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps only]</description></item>
         /// </list>
         /// </para>
-        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/winscard/nf-winscard-scarddisconnect">SCardDisconnect function</a></para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/winscard/nf-winscard-scardbegintransaction">SCardBeginTransaction function</a></para>
         /// </remarks>
         /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
         /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
@@ -3129,6 +3129,45 @@ namespace THNETII.WinApi.Native.WinSCard
         [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi)]
         public static extern int SCardBeginTransaction(
             [In] SCARDHANDLE hCard
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 730
+        #region SCardEndTransaction function
+        /// <summary>
+        /// The <see cref="SCardEndTransaction"/> function completes a previously declared <a href="https://docs.microsoft.com/windows/desktop/SecGloss/t-gly">transaction</a>, allowing other applications to resume interactions with the card.
+        /// </summary>
+        /// <param name="hCard">Reference value obtained from a previous call to <see cref="SCardConnect"/>. This value would also have been used in an earlier call to <see cref="SCardBeginTransaction"/>.</param>
+        /// <param name="dwDisposition">Action to take on the card in the connected reader on close.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the function returns <see cref="SCARD_S_SUCCESS"/>.</para>
+        /// <para>
+        /// If the function fails, it returns an error code. For more information, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/authentication-return-values">Smart Card Return Values</a>. Possible error codes follow.
+        /// <list type="table">
+        /// <listheader><term>Return code/value</term><description>Description</description></listheader>
+        /// <item><term><see cref="SCARD_W_RESET_CARD"/><br/><c>0x80100068</c></term><description><para>The transaction was released. Any future communication with the card requires a call to the <see cref="SCardReconnect"/> function.</para><para><strong>Windows Server 2008, Windows Vista, Windows Server 2003 and Windows XP:</strong> The transaction was not released. The application must immediately call the <see cref="SCardDisconnect"/>, <see cref="SCardReconnect"/>, or <see cref="SCardReleaseContext"/> function to avoid an existing transaction blocking other threads and processes from communicating with the smart card.</para></description></item>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>The <see cref="SCardEndTransaction"/> function is a <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card</a> and <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">reader</a> access function. For more information on other access functions, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/smart-card-and-reader-access-functions">Smart Card and Reader Access Functions</a>.</para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows XP [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/winscard/nf-winscard-scardendtransaction">SCardEndTransaction function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="SCardBeginTransaction"/>
+        /// <seealso cref="SCardConnect"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi)]
+        public static extern int SCardEndTransaction(
+            [In] SCARDHANDLE hCard,
+            [In, MarshalAs(UnmanagedType.U4)]
+            SCARD_DISPOSITION dwDisposition
             );
         #endregion
     }

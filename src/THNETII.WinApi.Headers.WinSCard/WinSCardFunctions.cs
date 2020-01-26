@@ -3097,5 +3097,39 @@ namespace THNETII.WinApi.Native.WinSCard
             SCARD_DISPOSITION dwDisposition
             );
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 726
+        #region SCardBeginTransaction function
+        /// <summary>
+        /// <para>The <see cref="SCardBeginTransaction"/> function starts a <a href="https://docs.microsoft.com/windows/desktop/SecGloss/t-gly">transaction</a>.</para>
+        /// <para>The function waits for the completion of all other transactions before it begins. After the transaction starts, all other applications are blocked from accessing the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card</a> while the transaction is in progress.</para>
+        /// </summary>
+        /// <param name="hCard">A reference value obtained from a previous call to <see cref="SCardConnect"/>.</param>
+        /// <returns>
+        /// <para>If the function succeeds, it returns <see cref="SCARD_S_SUCCESS"/>.</para>
+        /// <para>If the function fails, it returns an error code. For more information, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/authentication-return-values">Smart Card Return Values</a>.</para>
+        /// <para>If another process or thread has reset the card, <see cref="SCARD_W_RESET_CARD"/> is returned as expected.</para>
+        /// <para><strong>Windows Server 2008 R2, Windows 7, Windows Server 2008, Windows Vista, Windows Server 2003 and Windows XP:</strong> This function returns <see cref="SCARD_S_SUCCESS"/> even if another process or thread has reset the card. To determine whether the card has been reset, call the <see cref="SCardStatus"/> function immediately after calling this function.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>If a transaction is held on the card for more than five seconds with no operations happening on that card, then the card is reset. Calling any of the <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/smart-card-and-reader-access-functions">Smart Card and Reader Access Functions</a> or <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/direct-card-access-functions">Direct Card Access Functions</a> on the card that is transacted results in the timer being reset to continue allowing the transaction to be used.</para>
+        /// <para>The <see cref="SCardBeginTransaction"/> function is a <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card</a> and <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">reader</a> access function. For more information about other access functions, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/smart-card-and-reader-access-functions">Smart Card and Reader Access Functions</a>.</para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows XP [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/winscard/nf-winscard-scarddisconnect">SCardDisconnect function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="SCardConnect"/>
+        /// <seealso cref="SCardEndTransaction"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi)]
+        public static extern int SCardBeginTransaction(
+            [In] SCARDHANDLE hCard
+            );
+        #endregion
     }
 }

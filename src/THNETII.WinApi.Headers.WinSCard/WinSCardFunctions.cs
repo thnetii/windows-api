@@ -2961,9 +2961,9 @@ namespace THNETII.WinApi.Native.WinSCard
         /// <returns>
         /// This function returns different values depending on whether it succeeds or fails.
         /// <list type="table">
-        /// <listheader><term>Return code</term><description>Description</description></listheader>
-        /// <item><term><see cref="SCARD_S_SUCCESS"/></term><description><strong>Success</strong></description></item>
-        /// <item><term>An error code. An error code. For more information, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/authentication-return-values">Smart Card Return Values</a>.</term><description><strong>Failure</strong></description></item>
+        /// <listheader><term>Outcome</term><description>Description</description></listheader>
+        /// <item><term>Success</term><description><see cref="SCARD_S_SUCCESS"/></description></item>
+        /// <item><term>Failure</term><description>An error code. An error code. For more information, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/authentication-return-values">Smart Card Return Values</a>.</description></item>
         /// <item><term><see cref="SCARD_E_NOT_READY"/></term><description>The reader was unable to connect to the card.</description></item>
         /// </list>
         /// </returns>
@@ -3010,6 +3010,54 @@ namespace THNETII.WinApi.Native.WinSCard
             out SCARD_PROTOCOL_FLAGS pdwActiveProtocol
             );
 #endif // !NETSTANDARD1_3
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 713
+        #region SCardReconnect function
+        /// <summary>
+        /// The <see cref="SCardReconnect"/> function reestablishes an existing connection between the calling application and a <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card</a>. This function moves a card handle from direct access to general access, or acknowledges and clears an error condition that is preventing further access to the card.
+        /// </summary>
+        /// <param name="hCard">Reference value obtained from a previous call to <see cref="SCardConnect"/>.</param>
+        /// <param name="dwShareMode">Flag that indicates whether other applications may form connections to this card.</param>
+        /// <param name="dwPreferredProtocols">
+        /// <para>Bitmask of acceptable protocols for this connection. Possible values may be combined with the <strong>OR</strong> operation.</para>
+        /// <para>The value of this parameter should include the current protocol. Attempting to reconnect with a protocol other than the current protocol will result in an error.</para>
+        /// </param>
+        /// <param name="dwInitialization">Type of initialization that should be performed on the card.</param>
+        /// <param name="pdwActiveProtocol">Flag that indicates the established active protocol.</param>
+        /// <returns>
+        /// This function returns different values depending on whether it succeeds or fails.
+        /// <list type="table">
+        /// <listheader><term>Outcome</term><description>Description</description></listheader>
+        /// <item><term>Success</term><description><see cref="SCARD_S_SUCCESS"/></description></item>
+        /// <item><term>Failure</term><description>An error code. An error code. For more information, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/authentication-return-values">Smart Card Return Values</a>.</description></item>
+        /// </list>
+        /// </returns>
+        /// <remarks>
+        /// <see cref="SCardReconnect"/> is a <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card</a> and <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">reader</a> access function. For information about other access functions, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/smart-card-and-reader-access-functions">Smart Card and Reader Access Functions</a>.
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows XP [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/winscard/nf-winscard-scardreconnect">SCardReconnect function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="SCardConnect"/>
+        /// <seealso cref="SCardDisconnect"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi)]
+        public static extern int SCardReconnect(
+            [In] SCARDHANDLE hCard,
+            [In, MarshalAs(UnmanagedType.U4)]
+            SCARD_SHARE_MODE dwShareMode,
+            [In, MarshalAs(UnmanagedType.U4)]
+            SCARD_PROTOCOL_FLAGS dwPreferredProtocols,
+            [In, MarshalAs(UnmanagedType.U4)]
+            SCARD_DISPOSITION dwInitialization,
+            [Optional] out SCARD_PROTOCOL_FLAGS pdwActiveProtocol
+            );
         #endregion
     }
 }

@@ -2879,5 +2879,15 @@ namespace THNETII.WinApi.Native.WinSCard
             [In] SCARDCONTEXT hContext
             );
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 670
+        //
+        ////////////////////////////////////////////////////////////////////////////////
+        //
+        //  Card/Reader Communication Services
+        //
+        //      The following services provide means for communication with the card.
+        //
+
+
     }
 }

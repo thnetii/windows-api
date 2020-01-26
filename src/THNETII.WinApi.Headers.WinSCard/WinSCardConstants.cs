@@ -133,5 +133,20 @@ namespace THNETII.WinApi.Native.WinSCard
                                                          // software.
         public const int SCARD_STATE_UNPOWERED = 0x00000400;  // This implies that the card in the
                                                               // reader has not been powered up.
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 678
+        public const int SCARD_SHARE_EXCLUSIVE = 1; // This application is not willing to share this
+                                                    // card with other applications.
+        public const int SCARD_SHARE_SHARED = 2; // This application is willing to share this
+                                                 // card with other applications.
+        public const int SCARD_SHARE_DIRECT = 3; // This application demands direct control of
+                                                 // the reader, so it is not available to other
+                                                 // applications.
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 678
+        public const int SCARD_LEAVE_CARD = 0; // Don't do anything special on close
+        public const int SCARD_RESET_CARD = 1; // Reset the card on close
+        public const int SCARD_UNPOWER_CARD = 2; // Power down the card on close
+        public const int SCARD_EJECT_CARD = 3; // Eject the card on close
     }
 }

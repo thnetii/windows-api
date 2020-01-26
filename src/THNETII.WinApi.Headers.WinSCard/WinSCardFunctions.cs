@@ -2444,5 +2444,13 @@ namespace THNETII.WinApi.Native.WinSCard
         [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi)]
         public static extern void SCardReleaseStartedEvent();
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 496
+        //
+        ////////////////////////////////////////////////////////////////////////////////
+        //
+        //  Reader Services
+        //
+        //      The following services supply means for tracking cards within readers.
+        //
     }
 }

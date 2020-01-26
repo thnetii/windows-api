@@ -14,3 +14,4 @@ using System.Diagnostics.CodeAnalysis;
 [assembly: SuppressMessage("Documentation", "CS0419: Ambigious reference in cref attribute")]
 [assembly: SuppressMessage("Usage", "PC001: API not supported on all platforms")]
 [assembly: SuppressMessage("Usage", "PC003: Native API not available in UWP")]
+[assembly: SuppressMessage("Design", "CA1051: Do not declare visible instance fields")]

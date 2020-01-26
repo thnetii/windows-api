@@ -1280,7 +1280,7 @@ namespace THNETII.WinApi.Native.WinSCard
         /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
         /// <seealso cref="SCardEstablishContext"/>
         /// <seealso cref="SCardFreeMemory"/>
-        /// <seealso cref="SCardSetCardTypeProviderName"/>
+        /// <seealso cref="SCardSetCardTypeProviderName(SCARDCONTEXT, string, SCARD_PROVIDER_TYPE, string)"/>
         [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
         public static extern int SCardGetCardTypeProviderName(
             [In] SCARDCONTEXT hContext,
@@ -1482,7 +1482,7 @@ namespace THNETII.WinApi.Native.WinSCard
         /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
         /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
         /// <seealso cref="SCardEstablishContext"/>
-        /// <seealso cref="SCardForgetCardType"/>
+        /// <seealso cref="SCardForgetCardType(SCARDCONTEXT, string)"/>
         /// <seealso cref="SCardForgetReader"/>
         /// <seealso cref="SCardIntroduceReaderGroup"/>
         [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
@@ -1641,7 +1641,7 @@ namespace THNETII.WinApi.Native.WinSCard
         /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
         /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
         /// <seealso cref="SCardEstablishContext"/>
-        /// <seealso cref="SCardForgetCardType"/>
+        /// <seealso cref="SCardForgetCardType(SCARDCONTEXT, string)"/>
         /// <seealso cref="SCardForgetReaderGroup"/>
         /// <seealso cref="SCardIntroduceReader"/>
         [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
@@ -1819,7 +1819,7 @@ namespace THNETII.WinApi.Native.WinSCard
         /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
         /// <seealso cref="SCardAddReaderToGroup"/>
         /// <seealso cref="SCardEstablishContext"/>
-        /// <seealso cref="SCardForgetCardType"/>
+        /// <seealso cref="SCardForgetCardType(SCARDCONTEXT, string)"/>
         /// <seealso cref="SCardForgetReader"/>
         /// <seealso cref="SCardForgetReaderGroup"/>
         [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
@@ -2013,7 +2013,7 @@ namespace THNETII.WinApi.Native.WinSCard
         /// <remarks>
         /// <para>This function is not redirected, but calling the function when inside a Remote Desktop session will not result in an error. It only means that the result will be from the remote computer instead of the local computer.</para>
         /// <para>The <see cref="SCardIntroduceCardType(SCARDCONTEXT, string, in Guid, ReadOnlySpan{Guid}, ReadOnlySpan{byte}, ReadOnlySpan{byte})"/> function is a database management function. For more information on other database management functions, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/smart-card-database-management-functions">Smart Card Database Management Functions</a>.</para>
-        /// <para>To remove a smart card, use <see cref="SCardForgetCardType"/>.</para>
+        /// <para>To remove a smart card, use <see cref="SCardForgetCardType(SCARDCONTEXT, string)"/>.</para>
         /// <para>
         /// <list type="table">
         /// <listheader><term>Requirements</term></listheader>
@@ -2026,7 +2026,7 @@ namespace THNETII.WinApi.Native.WinSCard
         /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
         /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
         /// <seealso cref="SCardEstablishContext"/>
-        /// <seealso cref="SCardForgetCardType"/>
+        /// <seealso cref="SCardForgetCardType(SCARDCONTEXT, string)"/>
         /// <seealso cref="SCardIntroduceReader"/>
         /// <seealso cref="SCardIntroduceReaderGroup"/>
         /// <seealso cref="SCardListCards"/>
@@ -2233,9 +2233,9 @@ namespace THNETII.WinApi.Native.WinSCard
         #region SCardSetCardTypeProviderName function
 #if !NETSTANDARD1_3
         /// <summary>
-        /// The <see cref="SCardSetCardTypeProviderName"/> function specifies the name of the module (dynamic link library) containing the provider for a given card name and <a href="https://docs.microsoft.com/windows/desktop/SecGloss/p-gly">provider type</a>.
+        /// The <see cref="SCardSetCardTypeProviderName(SCARDCONTEXT, string, SCARD_PROVIDER_TYPE, string)"/> function specifies the name of the module (dynamic link library) containing the provider for a given card name and <a href="https://docs.microsoft.com/windows/desktop/SecGloss/p-gly">provider type</a>.
         /// </summary>
-        /// <param name="hContext">Handle that identifies the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">resource manager context</a>. The resource manager context can be set by a previous call to <see cref="SCardEstablishContext"/>. This value can be <see langword="default"/> if the call to <see cref="SCardSetCardTypeProviderName"/> is not directed to a specific <a href="https://docs.microsoft.com/windows/desktop/SecGloss/c-gly">context</a>.</param>
+        /// <param name="hContext">Handle that identifies the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">resource manager context</a>. The resource manager context can be set by a previous call to <see cref="SCardEstablishContext"/>. This value can be <see langword="default"/> if the call to <see cref="SCardSetCardTypeProviderName(SCARDCONTEXT, string, SCARD_PROVIDER_TYPE, string)"/> is not directed to a specific <a href="https://docs.microsoft.com/windows/desktop/SecGloss/c-gly">context</a>.</param>
         /// <param name="szCardName">Name of the card type with which this <a href="https://docs.microsoft.com/windows/desktop/SecGloss/p-gly">provider name</a> is associated.</param>
         /// <param name="dwProviderId">Identifier for the provider associated with this card type.</param>
         /// <param name="szProvider">A string that contains the provider name that is representing the CSP.</param>
@@ -2314,7 +2314,7 @@ namespace THNETII.WinApi.Native.WinSCard
         #region SCardForgetCardType function
 #if !NETSTANDARD1_3
         /// <summary>
-        /// The <see cref="SCardForgetCardType"/> function removes an introduced <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card</a> from the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card subsystem</a>.
+        /// The <see cref="SCardForgetCardType(SCARDCONTEXT, string)"/> function removes an introduced <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card</a> from the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card subsystem</a>.
         /// </summary>
         /// <param name="hContext">Handle that identifies the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">resource manager context</a>. The resource manager context is set by a previous call to <see cref="SCardEstablishContext"/>. This parameter cannot be set to <see langword="default"/>.</param>
         /// <param name="szCardName">Display name of the card to be removed from the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card database</a>.</param>
@@ -2323,8 +2323,8 @@ namespace THNETII.WinApi.Native.WinSCard
         /// <para>If the function fails, it returns an error code. For more information, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/authentication-return-values">Smart Card Return Values</a>.</para>
         /// </returns>
         /// <remarks>
-        /// <para>This function is not redirected, but calling the function <see cref="SCardForgetCardType"/> when inside a Remote Desktop session will not result in an error. It only means that the result will be from the remote computer instead of the local computer.</para>
-        /// <para>The <see cref="SCardForgetCardType"/> function is a database management function. For more information about other database management functions, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/smart-card-database-management-functions">Smart Card Database Management Functions</a>.</para>
+        /// <para>This function is not redirected, but calling the function <see cref="SCardForgetCardType(SCARDCONTEXT, string)"/> when inside a Remote Desktop session will not result in an error. It only means that the result will be from the remote computer instead of the local computer.</para>
+        /// <para>The <see cref="SCardForgetCardType(SCARDCONTEXT, string)"/> function is a database management function. For more information about other database management functions, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/smart-card-database-management-functions">Smart Card Database Management Functions</a>.</para>
         /// <para>
         /// <list type="table">
         /// <listheader><term>Requirements</term></listheader>
@@ -2561,7 +2561,7 @@ namespace THNETII.WinApi.Native.WinSCard
         /// <para>If the function fails, it returns an error code. For more information, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/authentication-return-values">Smart Card Return Values</a>.</para>
         /// </returns>
         /// <remarks>
-        /// <para>This service is especially useful when used in conjunction with <see cref="SCardGetStatusChange"/>. If no matching cards are found by means of <see cref="SCardLocateCards(SCARDCONTEXT, string, Span{SCARD_READERSTATE})"/>, the calling application may use <see cref="SCardGetStatusChange"/> to wait for card availability changes.</para>
+        /// <para>This service is especially useful when used in conjunction with <see cref="SCardGetStatusChange(SCARDCONTEXT, TimeSpan, Span{SCARD_READERSTATE})"/>. If no matching cards are found by means of <see cref="SCardLocateCards(SCARDCONTEXT, string, Span{SCARD_READERSTATE})"/>, the calling application may use <see cref="SCardGetStatusChange(SCARDCONTEXT, TimeSpan, Span{SCARD_READERSTATE})"/> to wait for card availability changes.</para>
         /// <para>The <see cref="SCardLocateCards(SCARDCONTEXT, string, Span{SCARD_READERSTATE})"/> function is a <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card</a> tracking function. For more information on other tracking functions, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/smart-card-tracking-functions">Smart Card Tracking Functions</a>.</para>
         /// <para>Calling this function should be done outside of a transaction. If an application begins a transaction with the <see cref="SCardBeginTransaction"/> function and then calls this function, it resets the <em>hCard</em> parameter (of type <see cref="SCARDHANDLE"/>) of the <see cref="SCardBeginTransaction"/> function.</para>
         /// <para><strong>Windows Server 2008 R2 and Windows 7:</strong> Calling this function within a transaction could result in your computer becoming unresponsive.</para>
@@ -2580,7 +2580,7 @@ namespace THNETII.WinApi.Native.WinSCard
         /// <seealso cref="SCARD_READERSTATE"/>
         /// <seealso cref="SCardCancel"/>
         /// <seealso cref="SCardEstablishContext"/>
-        /// <seealso cref="SCardGetStatusChange"/>
+        /// <seealso cref="SCardGetStatusChange(SCARDCONTEXT, TimeSpan, Span{SCARD_READERSTATE})"/>
         public static unsafe int SCardLocateCards(
             SCARDCONTEXT hContext,
             string mszCards,
@@ -2686,7 +2686,7 @@ namespace THNETII.WinApi.Native.WinSCard
         #region SCardLocateCardsByATR function
 #if !NETSTANDARD1_3
         /// <summary>
-        /// The <see cref="SCardLocateCardsByATR"/> function searches the readers listed in the <paramref name="rgReaderStates"/> parameter for a card with a name that matches one of the card names contained in one of the <see cref="SCARD_ATRMASK"/> structures specified by the <paramref name="rgAtrMasks"/> parameter.
+        /// The <see cref="SCardLocateCardsByATR(SCARDCONTEXT, ReadOnlySpan{SCARD_ATRMASK}, Span{SCARD_READERSTATE})"/> function searches the readers listed in the <paramref name="rgReaderStates"/> parameter for a card with a name that matches one of the card names contained in one of the <see cref="SCARD_ATRMASK"/> structures specified by the <paramref name="rgAtrMasks"/> parameter.
         /// </summary>
         /// <param name="hContext">A handle that identifies the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">resource manager context</a>. The resource manager context is set by a previous call to <see cref="SCardEstablishContext"/>.</param>
         /// <param name="rgAtrMasks">Array of <see cref="SCARD_ATRMASK"/> structures that contain the names of the cards for which to search.</param>
@@ -2696,8 +2696,8 @@ namespace THNETII.WinApi.Native.WinSCard
         /// <para>If the function fails, it returns an error code. For more information, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/authentication-return-values">Smart Card Return Values</a>.</para>
         /// </returns>
         /// <remarks>
-        /// <para>This service is especially useful when used in conjunction with <see cref="SCardGetStatusChange"/>. If no matching cards are found by means of <see cref="SCardLocateCards"/>, the calling application may use <see cref="SCardGetStatusChange"/> to wait for card availability changes.</para>
-        /// <para>The <see cref="SCardLocateCardsByATR"/> function is a <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card</a> tracking function. For information about other tracking functions, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/smart-card-tracking-functions">Smart Card Tracking Functions</a>.</para>
+        /// <para>This service is especially useful when used in conjunction with <see cref="SCardGetStatusChange(SCARDCONTEXT, TimeSpan, Span{SCARD_READERSTATE})"/>. If no matching cards are found by means of <see cref="SCardLocateCards(SCARDCONTEXT, string, Span{SCARD_READERSTATE})"/>, the calling application may use <see cref="SCardGetStatusChange(SCARDCONTEXT, TimeSpan, Span{SCARD_READERSTATE})"/> to wait for card availability changes.</para>
+        /// <para>The <see cref="SCardLocateCardsByATR(SCARDCONTEXT, ReadOnlySpan{SCARD_ATRMASK}, Span{SCARD_READERSTATE})"/> function is a <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card</a> tracking function. For information about other tracking functions, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/smart-card-tracking-functions">Smart Card Tracking Functions</a>.</para>
         /// <para>
         /// <list type="table">
         /// <listheader><term>Requirements</term></listheader>
@@ -2846,6 +2846,38 @@ namespace THNETII.WinApi.Native.WinSCard
             [In] int cReaders
             );
 #endif // !NETSTANDARD1_3
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 665
+        #region SCardCancel function
+        /// <summary>
+        /// <para>The <see cref="SCardCancel"/> function terminates all outstanding actions within a specific <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">resource manager context</a>.</para>
+        /// <para>The only requests that you can cancel are those that require waiting for external action by the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card</a> or user. Any such outstanding action requests will terminate with a status indication that the action was canceled. This is especially useful to force outstanding <see cref="SCardGetStatusChange(SCARDCONTEXT, TimeSpan, Span{SCARD_READERSTATE})"/> calls to terminate.</para>
+        /// </summary>
+        /// <param name="hContext">A handle that identifies the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">resource manager context</a>. The resource manager context is set by a previous call to <see cref="SCardEstablishContext"/>.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the function returns <see cref="SCARD_S_SUCCESS"/>.</para>
+        /// <para>If the function fails, it returns an error code. For more information, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/authentication-return-values">Smart Card Return Values</a>.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>The <see cref="SCardCancel"/> function is a smart card tracking function. For a description of other tracking functions, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/smart-card-tracking-functions">Smart Card Tracking Functions</a>.</para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows XP [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/winscard/nf-winscard-scardcancel">SCardCancel function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="SCardEstablishContext"/>
+        /// <seealso cref="SCardGetStatusChange(SCARDCONTEXT, TimeSpan, Span{SCARD_READERSTATE})"/>
+        /// <seealso cref="SCardLocateCards(SCARDCONTEXT, string, Span{SCARD_READERSTATE})"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi)]
+        public static extern int SCardCancel(
+            [In] SCARDCONTEXT hContext
+            );
         #endregion
     }
 }

@@ -74,7 +74,6 @@ namespace THNETII.WinApi.Native.WinSCard
     /// <remarks>
     /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/winscard/ns-winscard-scard_readerstatew">SCARD_READERSTATEW structure</a></para>
     /// </remarks>
-    /// <seealso cref="SCardGetStatusChange"/>
     /// <seealso cref="SCardLocateCards(SCARDCONTEXT, string, Span{SCARD_READERSTATE})"/>
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Auto)]
     public unsafe struct SCARD_READERSTATE

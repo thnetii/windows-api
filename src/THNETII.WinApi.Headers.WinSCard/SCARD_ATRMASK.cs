@@ -7,7 +7,7 @@ namespace THNETII.WinApi.Native.WinSCard
 
     // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 619
     /// <summary>
-    /// The <see cref="SCARD_ATRMASK"/> structure is used by the <see cref="SCardLocateCardsByATR"/> function to locate cards.
+    /// The <see cref="SCARD_ATRMASK"/> structure is used by the <see cref="SCardLocateCardsByATR(SCARDCONTEXT, ReadOnlySpan{SCARD_ATRMASK}, Span{SCARD_READERSTATE})"/> function to locate cards.
     /// </summary>
     /// <remarks>
     /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/winscard/ns-winscard-scard_atrmask">SCARD_ATRMASK structure</a></para>

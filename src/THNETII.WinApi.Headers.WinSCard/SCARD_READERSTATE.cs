@@ -3,6 +3,8 @@ using System.Runtime.InteropServices;
 
 namespace THNETII.WinApi.Native.WinSCard
 {
+    using static WinSCardFunctions;
+
     // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 504
     /// <inheritdoc cref="SCARD_READERSTATE"/>
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Ansi)]
@@ -72,6 +74,8 @@ namespace THNETII.WinApi.Native.WinSCard
     /// <remarks>
     /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/winscard/ns-winscard-scard_readerstatew">SCARD_READERSTATEW structure</a></para>
     /// </remarks>
+    /// <seealso cref="SCardGetStatusChange"/>
+    /// <seealso cref="SCardLocateCards"/>
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Auto)]
     public unsafe struct SCARD_READERSTATE
     {

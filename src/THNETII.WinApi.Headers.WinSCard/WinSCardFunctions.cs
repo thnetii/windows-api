@@ -1,10 +1,15 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 using System.Text;
+
 using THNETII.InteropServices.Memory;
 using THNETII.WinApi.Native.SCardErr;
 using THNETII.WinApi.Native.WinError;
 using THNETII.WinApi.Native.WinSmcrd;
+
+#if NETSTANDARD1_3
+using EntryPointNotFoundException = System.Exception;
+#endif
 
 namespace THNETII.WinApi.Native.WinSCard
 {
@@ -934,7 +939,7 @@ namespace THNETII.WinApi.Native.WinSCard
         /// </summary>
         /// <param name="hContext">Handle that identifies the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">resource manager context</a> for the query. The resource manager context can be set by a previous call to <see cref="SCardEstablishContext"/>. This parameter cannot be <see langword="default"/>.</param>
         /// <param name="szCard">Name of the smart card already introduced to the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card subsystem</a>.</param>
-        /// <param name="pguidInterfaces">Span of interface identifiers (<see cref="GUID"/>s) that indicate the interfaces supported by the smart card. If this value is <see langword="default"/> (an empty span), <see cref="SCardListInterfaces"/> ignores the array length supplied in <paramref name="pcguidInterfaces"/>, returning the size of the array that would have been returned if this parameter had not been an empty span to <paramref name="pcguidInterfaces"/> and a success code.</param>
+        /// <param name="pguidInterfaces">Span of interface identifiers (<see cref="Guid"/>s) that indicate the interfaces supported by the smart card. If this value is <see langword="default"/> (an empty span), <see cref="SCardListInterfaces"/> ignores the array length supplied in <paramref name="pcguidInterfaces"/>, returning the size of the array that would have been returned if this parameter had not been an empty span to <paramref name="pcguidInterfaces"/> and a success code.</param>
         /// <param name="pcguidInterfaces">Size of the <paramref name="pguidInterfaces"/> span, receives the actual length of the returned span. If the span length is specified as <see cref="SCARD_AUTOALLOCATE"/>, then <paramref name="pguidInterfaces"/> is converted to a pointer to a <see cref="Guid"/> pointer, and receives the address of a block of memory containing an array. This block of memory must be deallocated with <see cref="SCardFreeMemory"/>.</param>
         /// <returns>
         /// <para>If the function succeeds, the function returns <see cref="SCARD_S_SUCCESS"/>.</para>
@@ -2392,6 +2397,32 @@ namespace THNETII.WinApi.Native.WinSCard
             [In] SCARDCONTEXT hContext,
             [In] IntPtr pvMem
             );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 488
+        #region SCardAccessStartedEvent function
+        /// <summary>
+        /// The <see cref="SCardAccessStartedEvent"/> function returns an event handle when an event signals that the smart card resource manager is started. The event-object handle can be specified in a call to one of the wait functions.
+        /// </summary>
+        /// <returns>
+        /// <para>The function returns an event <see cref="SCARDWAITHANDLE"/> if it succeeds or a pointer with the value of <see cref="IntPtr.Zero"/> if it fails.</para>
+        /// <para>If the function fails, the <see cref="Marshal.GetLastWin32Error"/> function provides information on the cause of the failure.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>The event-object handle returned can be specified in a call to one of the wait functions.</para>
+        /// <para>Do not close the handle returned by this function. When you have finished using the handle, decrement the reference count by calling the <see cref="SCardReleaseStartedEvent"/> function.</para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows XP [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/winscard/nf-winscard-scardaccessstartedevent">SCardAccessStartedEvent function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        public static extern SCARDWAITHANDLE SCardAccessStartedEvent();
         #endregion
     }
 }

@@ -3170,5 +3170,18 @@ namespace THNETII.WinApi.Native.WinSCard
             SCARD_DISPOSITION dwDisposition
             );
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 735
+        #region SCardCancelTransaction function
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi)]
+        public static extern int SCardCancelTransaction(
+            [In] SCARDHANDLE hCard
+            );
+        //
+        // NOTE:    This call corresponds to the PC/SC SCARDCOMM::Cancel routine,
+        //          terminating a blocked SCardBeginTransaction service.
+        //
+        #endregion
     }
 }

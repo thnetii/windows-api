@@ -3059,5 +3059,43 @@ namespace THNETII.WinApi.Native.WinSCard
             [Optional] out SCARD_PROTOCOL_FLAGS pdwActiveProtocol
             );
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 721
+        #region SCardDisconnect function
+        /// <summary>
+        /// The <see cref="SCardDisconnect"/> function terminates a connection previously opened between the calling application and a <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card</a> in the target <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">reader</a>.
+        /// </summary>
+        /// <param name="hCard">Reference value obtained from a previous call to <see cref="SCardConnect"/>.</param>
+        /// <param name="dwDisposition">Action to take on the card in the connected reader on close.</param>
+        /// <returns>
+        /// This function returns different values depending on whether it succeeds or fails.
+        /// <list type="table">
+        /// <listheader><term>Outcome</term><description>Description</description></listheader>
+        /// <item><term>Success</term><description><see cref="SCARD_S_SUCCESS"/></description></item>
+        /// <item><term>Failure</term><description>An error code. An error code. For more information, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/authentication-return-values">Smart Card Return Values</a>.</description></item>
+        /// </list>
+        /// </returns>
+        /// <remarks>
+        /// <para>If an application (which previously called <see cref="SCardConnect"/>) exits without calling <see cref="SCardDisconnect"/>, the card is automatically reset.</para>
+        /// <para>The <see cref="SCardDisconnect"/> function is a <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card</a> and <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">reader</a> access function. For more information on other access functions, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/smart-card-and-reader-access-functions">Smart Card and Reader Access Functions</a>.</para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows XP [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/winscard/nf-winscard-scarddisconnect">SCardDisconnect function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="SCardConnect"/>
+        /// <seealso cref="SCardReconnect"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi)]
+        public static extern int SCardDisconnect(
+            [In] SCARDHANDLE hCard,
+            [In, MarshalAs(UnmanagedType.U4)]
+            SCARD_DISPOSITION dwDisposition
+            );
+        #endregion
     }
 }

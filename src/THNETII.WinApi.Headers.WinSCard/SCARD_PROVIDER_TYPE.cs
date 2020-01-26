@@ -14,5 +14,9 @@
         /// Key Storage Provider Id
         /// </summary>
         SCARD_PROVIDER_KSP = WinSCardConstants.SCARD_PROVIDER_KSP,
+        /// <summary>
+        /// Id of the card module name
+        /// </summary>
+        SCARD_PROVIDER_CARD_MODULE = unchecked((int)0x80000001),
     }
 }

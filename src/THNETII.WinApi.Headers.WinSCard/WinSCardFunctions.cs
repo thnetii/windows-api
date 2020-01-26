@@ -2424,5 +2424,25 @@ namespace THNETII.WinApi.Native.WinSCard
         [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
         public static extern SCARDWAITHANDLE SCardAccessStartedEvent();
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 488
+        #region SCardReleaseStartedEvent function
+        /// <summary>
+        /// The <see cref="SCardReleaseStartedEvent"/> function decrements the reference count for a handle acquired by a previous call to the <see cref="SCardAccessStartedEvent"/> function.
+        /// </summary>
+        /// <remarks>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows XP [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/winscard/nf-winscard-scardreleasestartedevent">SCardReleaseStartedEvent function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi)]
+        public static extern void SCardReleaseStartedEvent();
+        #endregion
     }
 }

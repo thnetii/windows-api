@@ -14,14 +14,4 @@ namespace THNETII.WinApi.Native
         /// <inheritdoc cref="IPointer.Pointer"/>
         public IntPtr Pointer { get; }
     }
-
-    /// <summary>
-    /// A pointer to a constant null-terminated string of platform-dependant characters.
-    /// </summary>
-    [StructLayout(LayoutKind.Sequential)]
-    public struct LPCTSTR : IConstTerminatedAutoStringPointer
-    {
-        /// <inheritdoc cref="IPointer.Pointer"/>
-        public IntPtr Pointer { get; }
-    }
 }

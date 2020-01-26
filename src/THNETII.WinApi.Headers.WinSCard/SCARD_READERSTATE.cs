@@ -67,6 +67,7 @@ namespace THNETII.WinApi.Native.WinSCard
         #endregion
     }
 
+#if !NETSTANDARD1_3
     // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 520
     /// <summary>
     /// The <see cref="SCARD_READERSTATE"/> structure is used by functions for tracking <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart cards</a> within <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">readers</a>.
@@ -101,7 +102,7 @@ namespace THNETII.WinApi.Native.WinSCard
         /// Number of bytes in the returned ATR.
         /// </summary>
         public int cbAtr;          // Number of bytes in the returned ATR.
-        #region public fixed byte[36];
+    #region public fixed byte[36];
         internal fixed byte rgbAtrField[36];    // Atr of inserted card, (extra alignment bytes)
         /// <summary>
         /// ATR of the inserted card, with extra alignment bytes.
@@ -114,6 +115,7 @@ namespace THNETII.WinApi.Native.WinSCard
                     return new Span<byte>(ptrAtrField, (int)Math.Min((uint)cbAtr, 36U));
             }
         }
-        #endregion
+    #endregion
     }
+#endif // !NETSTANDARD1_3
 }

@@ -2348,5 +2348,50 @@ namespace THNETII.WinApi.Native.WinSCard
             );
 #endif // !NETSTANDARD1_3
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 474
+        //
+        ////////////////////////////////////////////////////////////////////////////////
+        //
+        //  Service Manager Support Routines
+        //
+        //      The following services are supplied to simplify the use of the Service
+        //      Manager API.
+        //
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 483
+        #region SCardFreeMemory function
+        /// <summary>
+        /// The <see cref="SCardFreeMemory"/> function releases memory that has been returned from the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">resource manager</a> using the <see cref="SCARD_AUTOALLOCATE"/> length designator.
+        /// </summary>
+        /// <param name="hContext">Handle that identifies the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">resource manager context</a> returned from <see cref="SCardEstablishContext"/>, or <see langword="default"/> if the creating function also specified <see langword="default"/> for its <em>hContext</em> parameter. For more information, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/smart-card-database-query-functions">Smart Card Database Query Functions</a>.</param>
+        /// <param name="pvMem">Memory block to be released.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the function returns <see cref="SCARD_S_SUCCESS"/>.</para>
+        /// <para>If the function fails, it returns an error code. For more information, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/authentication-return-values">Smart Card Return Values</a>.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows XP [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/winscard/nf-winscard-scardfreememory">SCardFreeMemory function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="SCardEstablishContext"/>
+        /// <seealso cref="SCardGetProviderId(SCARDCONTEXT, string, out Guid)"/>
+        /// <seealso cref="SCardListCards(SCARDCONTEXT, ReadOnlySpan{byte}, ReadOnlySpan{Guid}, out LPTSTR, out int)"/>
+        /// <seealso cref="SCardListInterfaces(SCARDCONTEXT, LPCTSTR, out Span{Guid})"/>
+        /// <seealso cref="SCardListReaderGroups(SCARDCONTEXT, out LPTSTR, out int)"/>
+        /// <seealso cref="SCardListReaders(SCARDCONTEXT, string, out LPTSTR, out int)"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi)]
+        public static extern int SCardFreeMemory(
+            [In] SCARDCONTEXT hContext,
+            [In] IntPtr pvMem
+            );
+        #endregion
     }
 }

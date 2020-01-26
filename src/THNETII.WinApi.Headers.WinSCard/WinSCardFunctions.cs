@@ -2275,5 +2275,78 @@ namespace THNETII.WinApi.Native.WinSCard
         // NOTE:    This routine is an extention to the PC/SC specifications.
         //
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 459
+        #region SCardForgetCardTypeA function
+        /// <inheritdoc cref="SCardForgetCardType(SCARDCONTEXT, string)"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi)]
+        public static extern int SCardForgetCardTypeA(
+            [In] SCARDCONTEXT hContext,
+            [In] string szCardName
+            );
+        /// <inheritdoc cref="SCardForgetCardTypeA(SCARDCONTEXT, string)"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi)]
+        public static extern int SCardForgetCardTypeA(
+            [In] SCARDCONTEXT hContext,
+            [In] LPCSTR szCardName
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 463
+        #region SCardForgetCardTypeW function
+        /// <inheritdoc cref="SCardForgetCardType(SCARDCONTEXT, string)"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Unicode)]
+        public static extern int SCardForgetCardTypeW(
+            [In] SCARDCONTEXT hContext,
+            [In] string szCardName
+            );
+        /// <inheritdoc cref="SCardForgetCardTypeW(SCARDCONTEXT, string)"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Unicode)]
+        public static extern int SCardForgetCardTypeW(
+            [In] SCARDCONTEXT hContext,
+            [In] LPCWSTR szCardName
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 467
+        #region SCardForgetCardType function
+#if !NETSTANDARD1_3
+        /// <summary>
+        /// The <see cref="SCardForgetCardType"/> function removes an introduced <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card</a> from the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card subsystem</a>.
+        /// </summary>
+        /// <param name="hContext">Handle that identifies the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">resource manager context</a>. The resource manager context is set by a previous call to <see cref="SCardEstablishContext"/>. This parameter cannot be set to <see langword="default"/>.</param>
+        /// <param name="szCardName">Display name of the card to be removed from the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card database</a>.</param>
+        /// <returns>
+        /// <para>If the function succeeds, the function returns <see cref="SCARD_S_SUCCESS"/>.</para>
+        /// <para>If the function fails, it returns an error code. For more information, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/authentication-return-values">Smart Card Return Values</a>.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>This function is not redirected, but calling the function <see cref="SCardForgetCardType"/> when inside a Remote Desktop session will not result in an error. It only means that the result will be from the remote computer instead of the local computer.</para>
+        /// <para>The <see cref="SCardForgetCardType"/> function is a database management function. For more information about other database management functions, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/smart-card-database-management-functions">Smart Card Database Management Functions</a>.</para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows XP [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/winscard/nf-winscard-scardforgetcardtypew">SCardForgetCardTypeW function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="SCardEstablishContext"/>
+        /// <seealso cref="SCardForgetReader"/>
+        /// <seealso cref="SCardForgetReaderGroup"/>
+        /// <seealso cref="SCardIntroduceCardType(SCARDCONTEXT, string, in Guid, ReadOnlySpan{Guid}, ReadOnlySpan{byte}, ReadOnlySpan{byte})"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
+        public static extern int SCardForgetCardType(
+            [In] SCARDCONTEXT hContext,
+            [In] string szCardName
+            );
+        /// <inheritdoc cref="SCardForgetCardType(SCARDCONTEXT, string)"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
+        public static extern int SCardForgetCardType(
+            [In] SCARDCONTEXT hContext,
+            [In] LPCTSTR szCardName
+            );
+#endif // !NETSTANDARD1_3
+        #endregion
     }
 }

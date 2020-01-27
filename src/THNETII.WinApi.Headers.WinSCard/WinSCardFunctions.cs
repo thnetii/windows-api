@@ -4049,5 +4049,75 @@ namespace THNETII.WinApi.Native.WinSCard
             };
 #endif // !NETSTANDARD1_3
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 788
+        #region SCardTransmit function
+        /// <summary>
+        /// The <see cref="SCardTransmit"/> function sends a service request to the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card</a> and expects to receive data back from the card.
+        /// </summary>
+        /// <param name="hCard">A reference value returned from teh <see cref="SCardConnect"/> function.</param>
+        /// <param name="pioSendPci">
+        /// <para>The protocol header structure for the instruction. This buffer is in the format of an <see cref="SCARD_IO_REQUEST"/> structure, followed by the specific protocol control information (PCI).</para>
+        /// <para>For the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/t-gly">T=0</a>, <a href="https://docs.microsoft.com/windows/desktop/SecGloss/t-gly">T=1</a>, and Raw protocols, the PCI structure is constant. The <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card subsystem</a> supplies a global T=0, T=1, or Raw PCI structure, which you can reference by using the symbols <see cref="SCARD_PCI_T0"/>, <see cref="SCARD_PCI_T1"/>, and <see cref="SCARD_PCI_RAW"/> respectively.</para>
+        /// </param>
+        /// <param name="pbSendBuffer">The actual data to be written to the card.</param>
+        /// <param name="pioRecvPci">The protocol header structure for the instruction, followed by a buffer in which to receive any returned protocol control information (PCI) specific to the protocol in use. This parameter can be optional if no PCI is returned.</param>
+        /// <param name="pbRecvBuffer">
+        /// <para>The data returned from the card.</para>
+        /// <para>For T=0, the data is immediately followed by the SW1 and SW2 status bytes. If no data is returned from the card, then this buffer will only contain the SW1 and SW2 status bytes.</para>
+        /// </param>
+        /// <param name="pcbRecvLength">Receives the actual number of bytes received from the smart card.</param>
+        /// <returns>
+        /// <para>If the function successfully sends a service request to the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card</a>, the return value is <see cref="SCARD_S_SUCCESS"/>.</para>
+        /// <para>If the function fails, it returns an error code. For more information, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/authentication-return-values">Smart Card Return Values</a>.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>The <see cref="SCardTransmit"/> function is a <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card</a> and <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">reader</a> access function. For information about other access functions, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/smart-card-and-reader-access-functions">Smart Card and Reader Access Functions</a>.</para>
+        /// <para>For the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/t-gly">T=0 protocol</a>, the data received back are the SW1 and SW2 status codes, possibly preceded by response data.</para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows XP [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/winscard/nf-winscard-scardtransmit">SCardTransmit function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="SCARD_IO_REQUEST"/>
+        /// <seealso cref="SCardConnect"/>
+        public static unsafe int SCardTransmit(
+            SCARDHANDLE hCard,
+            in SCARD_IO_REQUEST pioSendPci,
+            ReadOnlySpan<byte> pbSendBuffer,
+            [Optional] ref SCARD_IO_REQUEST pioRecvPci,
+            Span<byte> pbRecvBuffer,
+            out int pcbRecvLength
+            )
+        {
+            pcbRecvLength = pbRecvBuffer.Length;
+            fixed (byte* ptrSendBuffer = pbSendBuffer)
+            fixed (byte* ptrRecvBuffer = pbRecvBuffer)
+                return SCardTransmit(
+                    hCard,
+                    pioSendPci,
+                    ptrSendBuffer,
+                    pbSendBuffer.Length,
+                    ref pioRecvPci,
+                    ptrRecvBuffer,
+                    ref pcbRecvLength
+                    );
+        }
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi)]
+        private static extern unsafe int SCardTransmit(
+            [In] SCARDHANDLE hCard,
+            in SCARD_IO_REQUEST pioSendPci,
+            byte* pbSendBuffer,
+            [In] int cbSendLength,
+            [Optional] ref SCARD_IO_REQUEST pioRecvPci,
+            byte* pbRecvBuffer,
+            ref int pcbRecvLength
+            );
+        #endregion
     }
 }

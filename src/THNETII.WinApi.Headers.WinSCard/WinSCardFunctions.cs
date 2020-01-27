@@ -3802,5 +3802,252 @@ namespace THNETII.WinApi.Native.WinSCard
         //          SCardStatus.
         //
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 756
+        #region SCardStatusA function
+        /// <inheritdoc cref="SCardStatus"/>
+        public static unsafe int SCardStatusA(
+            SCARDHANDLE hCard,
+            [Optional] LPMSTR mszReaderNames,
+            [Optional] ref int pcchReaderLen,
+            [Optional] out SCARD_READER_STATE pdwState,
+            [Optional] out SCARD_PROTOCOL_FLAGS pdwProtocol,
+            [Optional] Span<byte> pbAtr,
+            [Optional] out int pcbAtrLen
+            )
+        {
+            pcbAtrLen = pbAtr.Length;
+            fixed (byte* ptrAtr = pbAtr)
+                return SCardStatusA(
+                    hCard,
+                    mszReaderNames,
+                    ref pcchReaderLen,
+                    out pdwState,
+                    out pdwProtocol,
+                    ptrAtr,
+                    ref pcbAtrLen
+                    );
+        }
+        /// <inheritdoc cref="SCardStatusA"/>
+        public static unsafe int SCardStatusA(
+            SCARDHANDLE hCard,
+            [Optional] out LPMSTR mszReaderNames,
+            [Optional] out int pcchReaderLen,
+            [Optional] out SCARD_READER_STATE pdwState,
+            [Optional] out SCARD_PROTOCOL_FLAGS pdwProtocol,
+            [Optional] out Span<byte> pbAtr
+            )
+        {
+            pcchReaderLen = SCARD_AUTOALLOCATE;
+            void* ptrAtr;
+            int pcbAtrLen = SCARD_AUTOALLOCATE;
+            int scard_status;
+            fixed (void* pmszReaderName = &mszReaderNames)
+                scard_status = SCardStatusA(
+                    hCard,
+                    Pointer.Create<LPMSTR>(pmszReaderName),
+                    ref pcchReaderLen,
+                    out pdwState,
+                    out pdwProtocol,
+                    (byte*)&ptrAtr,
+                    ref pcbAtrLen
+                    );
+            pbAtr = new Span<byte>(ptrAtr, pcbAtrLen);
+            return scard_status;
+        }
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi)]
+        private static extern unsafe int SCardStatusA(
+            [In] SCARDHANDLE hCard,
+            [Optional] LPMSTR mszReaderNames,
+            [Optional] ref int pcchReaderLen,
+            [MarshalAs(UnmanagedType.U4)]
+            out SCARD_READER_STATE pdwState,
+            [MarshalAs(UnmanagedType.U4)]
+            out SCARD_PROTOCOL_FLAGS pdwProtocol,
+            [Optional] byte* pbAtr,
+            [Optional] ref int pcbAtrLen
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 769
+        #region SCardStatusW function
+        /// <inheritdoc cref="SCardStatus"/>
+        public static unsafe int SCardStatusW(
+            SCARDHANDLE hCard,
+            [Optional] LPMWSTR mszReaderNames,
+            [Optional] ref int pcchReaderLen,
+            [Optional] out SCARD_READER_STATE pdwState,
+            [Optional] out SCARD_PROTOCOL_FLAGS pdwProtocol,
+            [Optional] Span<byte> pbAtr,
+            [Optional] out int pcbAtrLen
+            )
+        {
+            pcbAtrLen = pbAtr.Length;
+            fixed (byte* ptrAtr = pbAtr)
+                return SCardStatusW(
+                    hCard,
+                    mszReaderNames,
+                    ref pcchReaderLen,
+                    out pdwState,
+                    out pdwProtocol,
+                    ptrAtr,
+                    ref pcbAtrLen
+                    );
+        }
+        /// <inheritdoc cref="SCardStatusW"/>
+        public static unsafe int SCardStatusW(
+            SCARDHANDLE hCard,
+            [Optional] out LPMWSTR mszReaderNames,
+            [Optional] out int pcchReaderLen,
+            [Optional] out SCARD_READER_STATE pdwState,
+            [Optional] out SCARD_PROTOCOL_FLAGS pdwProtocol,
+            [Optional] out Span<byte> pbAtr
+            )
+        {
+            pcchReaderLen = SCARD_AUTOALLOCATE;
+            void* ptrAtr;
+            int pcbAtrLen = SCARD_AUTOALLOCATE;
+            int scard_status;
+            fixed (void* pmszReaderName = &mszReaderNames)
+                scard_status = SCardStatusW(
+                    hCard,
+                    Pointer.Create<LPMWSTR>(pmszReaderName),
+                    ref pcchReaderLen,
+                    out pdwState,
+                    out pdwProtocol,
+                    (byte*)&ptrAtr,
+                    ref pcbAtrLen
+                    );
+            pbAtr = new Span<byte>(ptrAtr, pcbAtrLen);
+            return scard_status;
+        }
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Unicode)]
+        private static extern unsafe int SCardStatusW(
+            [In] SCARDHANDLE hCard,
+            [Optional] LPMWSTR mszReaderNames,
+            [Optional] ref int pcchReaderLen,
+            [MarshalAs(UnmanagedType.U4)]
+            out SCARD_READER_STATE pdwState,
+            [MarshalAs(UnmanagedType.U4)]
+            out SCARD_PROTOCOL_FLAGS pdwProtocol,
+            [Optional] byte* pbAtr,
+            [Optional] ref int pcbAtrLen
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 782
+        #region SCardStatus function
+        /// <summary>
+        /// The <see cref="SCardStatus"/> function provides the current status of a <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card</a> in a <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">reader</a>. You can call it any time after a successful call to <see cref="SCardConnect"/> and before a successful call to <see cref="SCardDisconnect"/>. It does not affect the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">state</a> of the reader or <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">reader driver</a>.
+        /// </summary>
+        /// <param name="hCard">Reference value returned from <see cref="SCardConnect"/>.</param>
+        /// <param name="mszReaderNames">List of display names (multiple string) by which the currently connected reader is known.</param>
+        /// <param name="pcchReaderLen">
+        /// <para>On input, supplies the length of the <paramref name="mszReaderNames"/> buffer.</para>
+        /// <para>On output, receives the actual length (in characters) of the reader name list, including the trailing terminating character. If this buffer length is specified as <see cref="SCARD_AUTOALLOCATE"/>, then <paramref name="mszReaderNames"/> is converted to a pointer to a byte pointer, and it receives the address of a block of memory that contains the multiple-string structure.</para>
+        /// </param>
+        /// <param name="pdwState">Current <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">state</a> of the smart card in the reader. Upon success, it receives one of the state indicators.</param>
+        /// <param name="pdwProtocol">Current protocol, if any. The returned value is meaningful only if the returned value of <paramref name="pdwState"/> is <see cref="SCARD_READER_STATE.SCARD_SPECIFIC"/>.</param>
+        /// <param name="pbAtr">A buffer that receives the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/a-gly">ATR string</a> from the currently inserted card, if available.</param>
+        /// <param name="pcbAtrLen">On output, receives the number of bytes in the ATR string (32 bytes maximum).</param>
+        /// <returns>
+        /// <para>If the function successfully provides the current status of a <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card</a> in a <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">reader</a>, the return value is <see cref="SCARD_S_SUCCESS"/>.</para>
+        /// <para>If the function fails, it returns an error code. For more information, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/authentication-return-values">Smart Card Return Values</a>.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>The <see cref="SCardStatus"/> function is a <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card</a> and <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">reader</a> access function. For information about other access functions, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/smart-card-and-reader-access-functions">Smart Card and Reader Access Functions</a>.</para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows XP [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/winscard/nf-winscard-scardstatusw">SCardStatusW function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="SCardConnect"/>
+        /// <seealso cref="SCardDisconnect"/>
+        public static unsafe int SCardStatus(
+            SCARDHANDLE hCard,
+            [Optional] LPMTSTR mszReaderNames,
+            [Optional] ref int pcchReaderLen,
+            [Optional] out SCARD_READER_STATE pdwState,
+            [Optional] out SCARD_PROTOCOL_FLAGS pdwProtocol,
+            [Optional] Span<byte> pbAtr,
+            [Optional] out int pcbAtrLen
+            )
+        {
+            pcbAtrLen = pbAtr.Length;
+            fixed (byte* ptrAtr = pbAtr)
+                return SCardStatus(
+                    hCard,
+                    mszReaderNames,
+                    ref pcchReaderLen,
+                    out pdwState,
+                    out pdwProtocol,
+                    ptrAtr,
+                    ref pcbAtrLen
+                    );
+        }
+        /// <inheritdoc cref="SCardStatus"/>
+        public static unsafe int SCardStatus(
+            SCARDHANDLE hCard,
+            [Optional] out LPMTSTR mszReaderNames,
+            [Optional] out int pcchReaderLen,
+            [Optional] out SCARD_READER_STATE pdwState,
+            [Optional] out SCARD_PROTOCOL_FLAGS pdwProtocol,
+            [Optional] out Span<byte> pbAtr
+            )
+        {
+            pcchReaderLen = SCARD_AUTOALLOCATE;
+            void* ptrAtr;
+            int pcbAtrLen = SCARD_AUTOALLOCATE;
+            int scard_status;
+            fixed (void* pmszReaderName = &mszReaderNames)
+                scard_status = SCardStatus(
+                    hCard,
+                    Pointer.Create<LPMTSTR>(pmszReaderName),
+                    ref pcchReaderLen,
+                    out pdwState,
+                    out pdwProtocol,
+                    (byte*)&ptrAtr,
+                    ref pcbAtrLen
+                    );
+            pbAtr = new Span<byte>(ptrAtr, pcbAtrLen);
+            return scard_status;
+        }
+#if !NETSTANDARD1_3
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
+        private static extern unsafe
+#else
+        private static unsafe
+#endif // !NETSTANDARD1_3
+        int SCardStatus(
+            [In] SCARDHANDLE hCard,
+            [Optional] LPMTSTR mszReaderNames,
+            [Optional] ref int pcchReaderLen,
+            [MarshalAs(UnmanagedType.U4)]
+            out SCARD_READER_STATE pdwState,
+            [MarshalAs(UnmanagedType.U4)]
+            out SCARD_PROTOCOL_FLAGS pdwProtocol,
+            [Optional] byte* pbAtr,
+            [Optional] ref int pcbAtrLen
+            )
+#if !NETSTANDARD1_3
+            ;
+#else
+            => Marshal.SystemDefaultCharSize switch
+            {
+                1 => SCardStatusA(hCard,
+                    Pointer.Create<LPMSTR>(mszReaderNames.Pointer),
+                    ref pcchReaderLen, out pdwState, out pdwProtocol,
+                    pbAtr, ref pcbAtrLen),
+                2 => SCardStatusW(hCard,
+                    Pointer.Create<LPMWSTR>(mszReaderNames.Pointer),
+                    ref pcchReaderLen, out pdwState, out pdwProtocol,
+                    pbAtr, ref pcbAtrLen),
+                _ => throw new PlatformNotSupportedException()
+            };
+#endif // !NETSTANDARD1_3
+        #endregion
     }
 }

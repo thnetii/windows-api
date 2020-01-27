@@ -20,12 +20,12 @@ namespace THNETII.WinApi.Native.WinSCard.Test
         {
             int error;
             int cardsLength = 16;
-            LPSTR cardsBuffer = default;
+            LPMSTR cardsBuffer = default;
             try
             {
                 do
                 {
-                    cardsBuffer = Pointer.Create<LPSTR>(
+                    cardsBuffer = Pointer.Create<LPMSTR>(
                         Marshal.ReAllocCoTaskMem(cardsBuffer.Pointer,
                             1 * cardsLength)
                         );
@@ -36,10 +36,11 @@ namespace THNETII.WinApi.Native.WinSCard.Test
                 if (error != SCARD_S_SUCCESS)
                     throw new Win32Exception(error);
 
-                var cardsString = cardsBuffer.MarshalToString(cardsLength);
-                string[] cardsArray = cardsString.Split('\0', StringSplitOptions.RemoveEmptyEntries);
-                foreach (string cardName in cardsArray)
+                foreach (var (cardPtr, cardLength) in cardsBuffer.AsEnumerable(cardsLength))
+                {
+                    string cardName = cardPtr.MarshalToString(cardLength);
                     _ = cardName;
+                }
             }
             finally
             {
@@ -52,12 +53,12 @@ namespace THNETII.WinApi.Native.WinSCard.Test
         {
             int error;
             int cardsLength = 16;
-            LPWSTR cardsBuffer = default;
+            LPMWSTR cardsBuffer = default;
             try
             {
                 do
                 {
-                    cardsBuffer = Pointer.Create<LPWSTR>(
+                    cardsBuffer = Pointer.Create<LPMWSTR>(
                         Marshal.ReAllocCoTaskMem(cardsBuffer.Pointer,
                             2 * cardsLength)
                         );
@@ -68,10 +69,11 @@ namespace THNETII.WinApi.Native.WinSCard.Test
                 if (error != SCARD_S_SUCCESS)
                     throw new Win32Exception(error);
 
-                var cardsString = cardsBuffer.MarshalToString(cardsLength);
-                string[] cardsArray = cardsString.Split('\0', StringSplitOptions.RemoveEmptyEntries);
-                foreach (string cardName in cardsArray)
+                foreach (var (cardPtr, cardLength) in cardsBuffer.AsEnumerable(cardsLength))
+                {
+                    string cardName = cardPtr.MarshalToString(cardLength);
                     _ = cardName;
+                }
             }
             finally
             {
@@ -84,12 +86,12 @@ namespace THNETII.WinApi.Native.WinSCard.Test
         {
             int error;
             int cardsLength = 16;
-            LPTSTR cardsBuffer = default;
+            LPMTSTR cardsBuffer = default;
             try
             {
                 do
                 {
-                    cardsBuffer = Pointer.Create<LPTSTR>(
+                    cardsBuffer = Pointer.Create<LPMTSTR>(
                         Marshal.ReAllocCoTaskMem(cardsBuffer.Pointer,
                             Marshal.SystemDefaultCharSize * cardsLength)
                         );
@@ -100,10 +102,11 @@ namespace THNETII.WinApi.Native.WinSCard.Test
                 if (error != SCARD_S_SUCCESS)
                     throw new Win32Exception(error);
 
-                var cardsString = cardsBuffer.MarshalToString(cardsLength);
-                string[] cardsArray = cardsString.Split('\0', StringSplitOptions.RemoveEmptyEntries);
-                foreach (string cardName in cardsArray)
+                foreach (var (cardPtr, cardLength) in cardsBuffer.AsEnumerable(cardsLength))
+                {
+                    string cardName = cardPtr.MarshalToString(cardLength);
                     _ = cardName;
+                }
             }
             finally
             {
@@ -113,14 +116,15 @@ namespace THNETII.WinApi.Native.WinSCard.Test
 
         public static IEnumerable<object[]> SCardEnumerateCards()
         {
+            var cardsList = new List<object[]>();
             int error;
             int cardsLength = 16;
-            LPTSTR cardsBuffer = default;
+            LPMTSTR cardsBuffer = default;
             try
             {
                 do
                 {
-                    cardsBuffer = Pointer.Create<LPTSTR>(
+                    cardsBuffer = Pointer.Create<LPMTSTR>(
                         Marshal.ReAllocCoTaskMem(cardsBuffer.Pointer,
                             Marshal.SystemDefaultCharSize * cardsLength)
                         );
@@ -132,16 +136,18 @@ namespace THNETII.WinApi.Native.WinSCard.Test
                     if (error != SCARD_S_SUCCESS)
                         throw new Win32Exception(error);
 
-                    var cardsString = cardsBuffer.MarshalToString(cardsLength);
-                    string[] cardsArray = cardsString.Split('\0', StringSplitOptions.RemoveEmptyEntries);
-                    foreach (string cardName in cardsArray)
-                        yield return new object[] { cardName };
+                    foreach (var (cardPtr, cardLength) in cardsBuffer.AsEnumerable(cardsLength))
+                    {
+                        string cardName = cardPtr.MarshalToString(cardLength);
+                        cardsList.Add(new object[] { cardName });
+                    }
                 }
             }
             finally
             {
                 Marshal.FreeCoTaskMem(cardsBuffer.Pointer);
             }
+            return cardsList;
         }
     }
 }

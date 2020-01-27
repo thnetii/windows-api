@@ -125,18 +125,18 @@ namespace THNETII.WinApi.Native.WinSCard
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 149
         #region SCardListReaderGroupsA function
-        /// <inheritdoc cref="SCardListReaderGroups(SCARDCONTEXT, LPTSTR, ref int)"/>
+        /// <inheritdoc cref="SCardListReaderGroups(SCARDCONTEXT, LPMTSTR, ref int)"/>
         [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi)]
         public static extern int SCardListReaderGroupsA(
             [In] SCARDCONTEXT hContext,
-            [In, Optional] LPSTR mszGroups,
+            [In, Optional] LPMSTR mszGroups,
             ref int pcchGroups
             );
 
-        /// <inheritdoc cref="SCardListReaderGroupsA(SCARDCONTEXT, LPSTR, ref int)"/>
+        /// <inheritdoc cref="SCardListReaderGroupsA(SCARDCONTEXT, LPMSTR, ref int)"/>
         public static unsafe int SCardListReaderGroupsA(
             SCARDCONTEXT hContext,
-            out LPSTR mszGroups,
+            out LPMSTR mszGroups,
             out int pcchGroups
             )
         {
@@ -144,25 +144,25 @@ namespace THNETII.WinApi.Native.WinSCard
             fixed (void* pmszGroups = &mszGroups)
                 return SCardListReaderGroupsA(
                     hContext,
-                    Pointer.Create<LPSTR>(pmszGroups),
+                    Pointer.Create<LPMSTR>(pmszGroups),
                     ref pcchGroups
                     );
         }
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 154
         #region SCardListReaderGroupsW function
-        /// <inheritdoc cref="SCardListReaderGroups(SCARDCONTEXT, LPTSTR, ref int)"/>
+        /// <inheritdoc cref="SCardListReaderGroups(SCARDCONTEXT, LPMTSTR, ref int)"/>
         [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi)]
         public static extern int SCardListReaderGroupsW(
             [In] SCARDCONTEXT hContext,
-            [In, Optional] LPWSTR mszGroups,
+            [In, Optional] LPMWSTR mszGroups,
             ref int pcchGroups
             );
 
-        /// <inheritdoc cref="SCardListReaderGroupsW(SCARDCONTEXT, LPWSTR, ref int)"/>
+        /// <inheritdoc cref="SCardListReaderGroupsW(SCARDCONTEXT, LPMWSTR, ref int)"/>
         public static unsafe int SCardListReaderGroupsW(
             SCARDCONTEXT hContext,
-            out LPWSTR mszGroups,
+            out LPMWSTR mszGroups,
             out int pcchGroups
             )
         {
@@ -170,14 +170,13 @@ namespace THNETII.WinApi.Native.WinSCard
             fixed (void* pmszGroups = &mszGroups)
                 return SCardListReaderGroupsW(
                     hContext,
-                    Pointer.Create<LPWSTR>(pmszGroups),
+                    Pointer.Create<LPMWSTR>(pmszGroups),
                     ref pcchGroups
                     );
         }
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 160
         #region SCardListReaderGroups function
-#if !NETSTANDARD1_3
         /// <summary>
         /// The <see cref="SCardListReaderGroups"/> function provides the list of <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">reader groups</a> that have previously been introduced to the system.
         /// </summary>
@@ -204,17 +203,32 @@ namespace THNETII.WinApi.Native.WinSCard
         /// <seealso cref="SCardListCards"/>
         /// <seealso cref="SCardListInterfaces"/>
         /// <seealso cref="SCardListReaders"/>
+#if NETSTANDARD1_3
+        public static
+#else
         [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
-        public static extern int SCardListReaderGroups(
+        public static extern
+#endif // !NETSTANDARD1_3
+            int SCardListReaderGroups(
             [In] SCARDCONTEXT hContext,
-            [In, Optional] LPTSTR mszGroups,
+            [In, Optional] LPMTSTR mszGroups,
             ref int pcchGroups
-            );
+            )
+#if NETSTANDARD1_3
+        => Marshal.SystemDefaultCharSize switch
+        {
+            1 => SCardListReaderGroupsA(hContext, Pointer.Create<LPMSTR>(mszGroups.Pointer), ref pcchGroups),
+            2 => SCardListReaderGroupsW(hContext, Pointer.Create<LPMWSTR>(mszGroups.Pointer), ref pcchGroups),
+            _ => throw new PlatformNotSupportedException()
+        };
+#else
+        ;
+#endif // !NETSTANDARD1_3
 
-        /// <inheritdoc cref="SCardListReaderGroups(SCARDCONTEXT, LPTSTR, ref int)"/>
+        /// <inheritdoc cref="SCardListReaderGroups(SCARDCONTEXT, LPMTSTR, ref int)"/>
         public static unsafe int SCardListReaderGroups(
             SCARDCONTEXT hContext,
-            out LPTSTR mszGroups,
+            out LPMTSTR mszGroups,
             out int pcchGroups
             )
         {
@@ -222,37 +236,36 @@ namespace THNETII.WinApi.Native.WinSCard
             fixed (void* pmszGroups = &mszGroups)
                 return SCardListReaderGroups(
                     hContext,
-                    Pointer.Create<LPTSTR>(pmszGroups),
+                    Pointer.Create<LPMTSTR>(pmszGroups),
                     ref pcchGroups
                     );
         }
-#endif // !NETSTANDARD1_3
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 165
         #region SCardListReadersA function
-        /// <inheritdoc cref="SCardListReaders(SCARDCONTEXT, LPCTSTR, LPTSTR, ref int)"/>
+        /// <inheritdoc cref="SCardListReaders(SCARDCONTEXT, LPCMTSTR, LPMTSTR, ref int)"/>
         [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi)]
         public static extern int SCardListReadersA(
             [In] SCARDCONTEXT hContext,
-            [In, Optional] LPCSTR mszGroups,
-            LPSTR mszReaders,
+            [In, Optional] LPCMSTR mszGroups,
+            LPMSTR mszReaders,
             ref int pcchReaders
             );
 
-        /// <inheritdoc cref="SCardListReadersA(SCARDCONTEXT, LPCSTR, LPSTR, ref int)"/>
+        /// <inheritdoc cref="SCardListReadersA(SCARDCONTEXT, LPCMSTR, LPMSTR, ref int)"/>
         [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi)]
         public static extern int SCardListReadersA(
             [In] SCARDCONTEXT hContext,
             [In, Optional] string mszGroups,
-            LPSTR mszReaders,
+            LPMSTR mszReaders,
             ref int pcchReaders
             );
 
-        /// <inheritdoc cref="SCardListReadersA(SCARDCONTEXT, LPCSTR, LPSTR, ref int)"/>
+        /// <inheritdoc cref="SCardListReadersA(SCARDCONTEXT, LPCMSTR, LPMSTR, ref int)"/>
         public static unsafe int SCardListReadersA(
             SCARDCONTEXT hContext,
-            LPCSTR mszGroups,
-            out LPSTR mszReaders,
+            LPCMSTR mszGroups,
+            out LPMSTR mszReaders,
             out int pcchReaders
             )
         {
@@ -261,16 +274,16 @@ namespace THNETII.WinApi.Native.WinSCard
                 return SCardListReadersA(
                     hContext,
                     mszGroups,
-                    Pointer.Create<LPSTR>(pmszReaders),
+                    Pointer.Create<LPMSTR>(pmszReaders),
                     ref pcchReaders
                     );
         }
 
-        /// <inheritdoc cref="SCardListReadersA(SCARDCONTEXT, LPCSTR, LPSTR, ref int)"/>
+        /// <inheritdoc cref="SCardListReadersA(SCARDCONTEXT, LPCMSTR, LPMSTR, ref int)"/>
         public static unsafe int SCardListReadersA(
             SCARDCONTEXT hContext,
             string mszGroups,
-            out LPSTR mszReaders,
+            out LPMSTR mszReaders,
             out int pcchReaders
             )
         {
@@ -279,36 +292,36 @@ namespace THNETII.WinApi.Native.WinSCard
                 return SCardListReadersA(
                     hContext,
                     mszGroups,
-                    Pointer.Create<LPSTR>(pmszReaders),
+                    Pointer.Create<LPMSTR>(pmszReaders),
                     ref pcchReaders
                     );
         }
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 175
         #region SCardListReadersW function
-        /// <inheritdoc cref="SCardListReaders(SCARDCONTEXT, LPCTSTR, LPTSTR, ref int)"/>
+        /// <inheritdoc cref="SCardListReaders(SCARDCONTEXT, LPCMTSTR, LPMTSTR, ref int)"/>
         [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi)]
         public static extern int SCardListReadersW(
             [In] SCARDCONTEXT hContext,
-            [In, Optional] LPCWSTR mszGroups,
-            LPWSTR mszReaders,
+            [In, Optional] LPCMWSTR mszGroups,
+            LPMWSTR mszReaders,
             ref int pcchReaders
             );
 
-        /// <inheritdoc cref="SCardListReadersW(SCARDCONTEXT, LPCWSTR, LPWSTR, ref int)"/>
+        /// <inheritdoc cref="SCardListReadersW(SCARDCONTEXT, LPCMWSTR, LPMWSTR, ref int)"/>
         [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Unicode)]
         public static extern int SCardListReadersW(
             [In] SCARDCONTEXT hContext,
             [In, Optional] string mszGroups,
-            LPWSTR mszReaders,
+            LPMWSTR mszReaders,
             ref int pcchReaders
             );
 
-        /// <inheritdoc cref="SCardListReadersW(SCARDCONTEXT, LPCWSTR, LPWSTR, ref int)"/>
+        /// <inheritdoc cref="SCardListReadersW(SCARDCONTEXT, LPCMWSTR, LPMWSTR, ref int)"/>
         public static unsafe int SCardListReadersW(
             SCARDCONTEXT hContext,
-            LPCWSTR mszGroups,
-            out LPWSTR mszReaders,
+            LPCMWSTR mszGroups,
+            out LPMWSTR mszReaders,
             out int pcchReaders
             )
         {
@@ -317,16 +330,16 @@ namespace THNETII.WinApi.Native.WinSCard
                 return SCardListReadersW(
                     hContext,
                     mszGroups,
-                    Pointer.Create<LPWSTR>(pmszReaders),
+                    Pointer.Create<LPMWSTR>(pmszReaders),
                     ref pcchReaders
                     );
         }
 
-        /// <inheritdoc cref="SCardListReadersW(SCARDCONTEXT, LPCWSTR, LPWSTR, ref int)"/>
+        /// <inheritdoc cref="SCardListReadersW(SCARDCONTEXT, LPCMWSTR, LPMWSTR, ref int)"/>
         public static unsafe int SCardListReadersW(
             SCARDCONTEXT hContext,
             string mszGroups,
-            out LPWSTR mszReaders,
+            out LPMWSTR mszReaders,
             out int pcchReaders
             )
         {
@@ -335,7 +348,7 @@ namespace THNETII.WinApi.Native.WinSCard
                 return SCardListReadersW(
                     hContext,
                     mszGroups,
-                    Pointer.Create<LPWSTR>(pmszReaders),
+                    Pointer.Create<LPMWSTR>(pmszReaders),
                     ref pcchReaders
                     );
         }
@@ -369,30 +382,60 @@ namespace THNETII.WinApi.Native.WinSCard
         /// <seealso cref="SCardListCards"/>
         /// <seealso cref="SCardListInterfaces"/>
         /// <seealso cref="SCardListReaderGroups"/>
-        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi)]
-        public static extern int SCardListReaders(
-            [In] SCARDCONTEXT hContext,
-            [In, Optional] LPCTSTR mszGroups,
-            LPTSTR mszReaders,
-            ref int pcchReaders
-            );
-
 #if !NETSTANDARD1_3
-        /// <inheritdoc cref="SCardListReaders(SCARDCONTEXT, LPCTSTR, LPTSTR, ref int)"/>
+
         [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
-        public static extern int SCardListReaders(
+        public static extern
+#else
+        public static
+#endif
+        int SCardListReaders(
+            [In] SCARDCONTEXT hContext,
+            [In, Optional] LPCMTSTR mszGroups,
+            LPMTSTR mszReaders,
+            ref int pcchReaders
+            )
+#if !NETSTANDARD1_3
+            ;
+#else
+        => Marshal.SystemDefaultCharSize switch
+        {
+            1 => SCardListReadersA(hContext, Pointer.Create<LPCMSTR>(mszGroups.Pointer), Pointer.Create<LPMSTR>(mszReaders.Pointer), ref pcchReaders),
+            2 => SCardListReadersW(hContext, Pointer.Create<LPCMWSTR>(mszGroups.Pointer), Pointer.Create<LPMWSTR>(mszReaders.Pointer), ref pcchReaders),
+            _ => throw new PlatformNotSupportedException()
+        };
+#endif
+
+        /// <inheritdoc cref="SCardListReaders(SCARDCONTEXT, LPCMTSTR, LPMTSTR, ref int)"/>
+#if !NETSTANDARD1_3
+
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
+        public static extern
+#else
+        public static
+#endif
+        int SCardListReaders(
             [In] SCARDCONTEXT hContext,
             [In, Optional] string mszGroups,
-            LPTSTR mszReaders,
+            LPMTSTR mszReaders,
             ref int pcchReaders
-            );
-#endif // !NETSTANDARD1_3
+            )
+#if !NETSTANDARD1_3
+            ;
+#else
+            => Marshal.SystemDefaultCharSize switch
+            {
+                1 => SCardListReadersA(hContext, mszGroups, Pointer.Create<LPMSTR>(mszReaders.Pointer), ref pcchReaders),
+                2 => SCardListReadersW(hContext, mszGroups, Pointer.Create<LPMWSTR>(mszReaders.Pointer), ref pcchReaders),
+                _ => throw new PlatformNotSupportedException()
+            };
+#endif
 
-        /// <inheritdoc cref="SCardListReaders(SCARDCONTEXT, LPCTSTR, LPTSTR, ref int)"/>
+        /// <inheritdoc cref="SCardListReaders(SCARDCONTEXT, LPCMTSTR, LPMTSTR, ref int)"/>
         public static unsafe int SCardListReaders(
             SCARDCONTEXT hContext,
-            LPCTSTR mszGroups,
-            out LPTSTR mszReaders,
+            LPCMTSTR mszGroups,
+            out LPMTSTR mszReaders,
             out int pcchReaders
             )
         {
@@ -401,17 +444,16 @@ namespace THNETII.WinApi.Native.WinSCard
                 return SCardListReaders(
                     hContext,
                     mszGroups,
-                    Pointer.Create<LPTSTR>(pmszReaders),
+                    Pointer.Create<LPMTSTR>(pmszReaders),
                     ref pcchReaders
                     );
         }
 
-#if !NETSTANDARD1_3
-        /// <inheritdoc cref="SCardListReaders(SCARDCONTEXT, LPCTSTR, LPTSTR, ref int)"/>
+        /// <inheritdoc cref="SCardListReaders(SCARDCONTEXT, LPCMTSTR, LPMTSTR, ref int)"/>
         public static unsafe int SCardListReaders(
             SCARDCONTEXT hContext,
             string mszGroups,
-            out LPTSTR mszReaders,
+            out LPMTSTR mszReaders,
             out int pcchReaders
             )
         {
@@ -420,11 +462,10 @@ namespace THNETII.WinApi.Native.WinSCard
                 return SCardListReaders(
                     hContext,
                     mszGroups,
-                    Pointer.Create<LPTSTR>(pmszReaders),
+                    Pointer.Create<LPMTSTR>(pmszReaders),
                     ref pcchReaders
                     );
         }
-#endif // !NETSTANDARD1_3
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 189
         #region SCardListCardsA function
@@ -434,16 +475,16 @@ namespace THNETII.WinApi.Native.WinSCard
             [In, Optional] byte* pbAtr,
             [In, Optional] Guid* rgquidInterfaces,
             [In] int cguidInterfaceCount,
-            LPSTR mszCards,
+            LPMSTR mszCards,
             ref int pcchCards
             );
 
-        /// <inheritdocc cref="SCardListCards(SCARDCONTEXT, ReadOnlySpan{byte}, ReadOnlySpan{Guid}, LPTSTR, ref int)"/>
+        /// <inheritdocc cref="SCardListCards(SCARDCONTEXT, ReadOnlySpan{byte}, ReadOnlySpan{Guid}, LPMTSTR, ref int)"/>
         public static unsafe int SCardListCardsA(
             SCARDCONTEXT hContext,
             ReadOnlySpan<byte> pbAtr,
             ReadOnlySpan<Guid> rgquidInterfaces,
-            LPSTR mszCards,
+            LPMSTR mszCards,
             ref int pcchCards
             )
         {
@@ -468,12 +509,12 @@ namespace THNETII.WinApi.Native.WinSCard
                     );
         }
 
-        /// <inheritdocc cref="SCardListCardsA(SCARDCONTEXT, ReadOnlySpan{byte}, ReadOnlySpan{Guid}, LPSTR, ref int)"/>
+        /// <inheritdocc cref="SCardListCardsA(SCARDCONTEXT, ReadOnlySpan{byte}, ReadOnlySpan{Guid}, LPMSTR, ref int)"/>
         public static unsafe int SCardListCardsA(
             SCARDCONTEXT hContext,
             ReadOnlySpan<byte> pbAtr,
             ReadOnlySpan<Guid> rgquidInterfaces,
-            out LPSTR mszCards,
+            out LPMSTR mszCards,
             out int pcchCards
             )
         {
@@ -483,7 +524,7 @@ namespace THNETII.WinApi.Native.WinSCard
                     hContext,
                     pbAtr,
                     rgquidInterfaces,
-                    Pointer.Create<LPSTR>(pmszCards),
+                    Pointer.Create<LPMSTR>(pmszCards),
                     ref pcchCards
                     );
         }
@@ -496,16 +537,16 @@ namespace THNETII.WinApi.Native.WinSCard
             [In, Optional] byte* pbAtr,
             [In, Optional] Guid* rgquidInterfaces,
             [In] int cguidInterfaceCount,
-            LPWSTR mszCards,
+            LPMWSTR mszCards,
             ref int pcchCards
             );
 
-        /// <inheritdocc cref="SCardListCards(SCARDCONTEXT, ReadOnlySpan{byte}, ReadOnlySpan{Guid}, LPTSTR, ref int)"/>
+        /// <inheritdocc cref="SCardListCards(SCARDCONTEXT, ReadOnlySpan{byte}, ReadOnlySpan{Guid}, LPMTSTR, ref int)"/>
         public static unsafe int SCardListCardsW(
             SCARDCONTEXT hContext,
             ReadOnlySpan<byte> pbAtr,
             ReadOnlySpan<Guid> rgquidInterfaces,
-            LPWSTR mszCards,
+            LPMWSTR mszCards,
             ref int pcchCards
             )
         {
@@ -530,12 +571,12 @@ namespace THNETII.WinApi.Native.WinSCard
                     );
         }
 
-        /// <inheritdocc cref="SCardListCardsW(SCARDCONTEXT, ReadOnlySpan{byte}, ReadOnlySpan{Guid}, LPWSTR, ref int)"/>
+        /// <inheritdocc cref="SCardListCardsW(SCARDCONTEXT, ReadOnlySpan{byte}, ReadOnlySpan{Guid}, LPMWSTR, ref int)"/>
         public static unsafe int SCardListCardsW(
             SCARDCONTEXT hContext,
             ReadOnlySpan<byte> pbAtr,
             ReadOnlySpan<Guid> rgquidInterfaces,
-            out LPWSTR mszCards,
+            out LPMWSTR mszCards,
             out int pcchCards
             )
         {
@@ -545,7 +586,7 @@ namespace THNETII.WinApi.Native.WinSCard
                     hContext,
                     pbAtr,
                     rgquidInterfaces,
-                    Pointer.Create<LPWSTR>(pmszCards),
+                    Pointer.Create<LPMWSTR>(pmszCards),
                     ref pcchCards
                     );
         }
@@ -554,14 +595,28 @@ namespace THNETII.WinApi.Native.WinSCard
         #region SCardListCards function
 #if !NETSTANDARD1_3
         [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
-        private static extern unsafe int SCardListCards(
+        private static extern unsafe
+#else
+        private static unsafe
+#endif
+        int SCardListCards(
             [In] SCARDCONTEXT hContext,
             [In, Optional] byte* pbAtr,
             [In, Optional] Guid* rgquidInterfaces,
             [In] int cguidInterfaceCount,
-            LPTSTR mszCards,
+            LPMTSTR mszCards,
             ref int pcchCards
-            );
+            )
+#if !NETSTANDARD1_3
+        ;
+#else
+        => Marshal.SystemDefaultCharSize switch
+        {
+            1 => SCardListCardsA(hContext, pbAtr, rgquidInterfaces, cguidInterfaceCount, Pointer.Create<LPMSTR>(mszCards.Pointer), ref pcchCards),
+            2 => SCardListCardsW(hContext, pbAtr, rgquidInterfaces, cguidInterfaceCount, Pointer.Create<LPMWSTR>(mszCards.Pointer), ref pcchCards),
+            _ => throw new PlatformNotSupportedException()
+        };
+#endif
 
         /// <summary>
         /// The <see cref="SCardListCards"/> function searches the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card database</a> and provides a list of named cards previously introduced to the system by the user.
@@ -600,7 +655,7 @@ namespace THNETII.WinApi.Native.WinSCard
             SCARDCONTEXT hContext,
             ReadOnlySpan<byte> pbAtr,
             ReadOnlySpan<Guid> rgquidInterfaces,
-            LPTSTR mszCards,
+            LPMTSTR mszCards,
             ref int pcchCards
             )
         {
@@ -625,12 +680,12 @@ namespace THNETII.WinApi.Native.WinSCard
                     );
         }
 
-        /// <inheritdocc cref="SCardListCards(SCARDCONTEXT, ReadOnlySpan{byte}, ReadOnlySpan{Guid}, LPTSTR, ref int)"/>
+        /// <inheritdocc cref="SCardListCards(SCARDCONTEXT, ReadOnlySpan{byte}, ReadOnlySpan{Guid}, LPMTSTR, ref int)"/>
         public static unsafe int SCardListCards(
             SCARDCONTEXT hContext,
             ReadOnlySpan<byte> pbAtr,
             ReadOnlySpan<Guid> rgquidInterfaces,
-            out LPTSTR mszCards,
+            out LPMTSTR mszCards,
             out int pcchCards
             )
         {
@@ -640,20 +695,19 @@ namespace THNETII.WinApi.Native.WinSCard
                     hContext,
                     pbAtr,
                     rgquidInterfaces,
-                    Pointer.Create<LPTSTR>(pmszCards),
+                    Pointer.Create<LPMTSTR>(pmszCards),
                     ref pcchCards
                     );
         }
-#endif // !NETSTANDARD1_3
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 216
         #region SCardListCardTypes function
-        /// <inheritdoc cref="SCardListCards" />
+        /// <inheritdoc cref="SCardListCards(SCARDCONTEXT, ReadOnlySpan{byte}, ReadOnlySpan{Guid}, LPMTSTR, ref int)" />
         public static int SCardListCardTypes(
             SCARDCONTEXT hContext,
             ReadOnlySpan<byte> pbAtr,
             ReadOnlySpan<Guid> rgquidInterfaces,
-            LPTSTR mszCards,
+            LPMTSTR mszCards,
             ref int pcchCards
             )
         {
@@ -665,7 +719,7 @@ namespace THNETII.WinApi.Native.WinSCard
                         hContext,
                         pbAtr,
                         rgquidInterfaces,
-                        Pointer.Create<LPSTR>(mszCards.Pointer),
+                        Pointer.Create<LPMSTR>(mszCards.Pointer),
                         ref pcchCards
                         );
                 case 2:
@@ -673,7 +727,7 @@ namespace THNETII.WinApi.Native.WinSCard
                         hContext,
                         pbAtr,
                         rgquidInterfaces,
-                        Pointer.Create<LPWSTR>(mszCards.Pointer),
+                        Pointer.Create<LPMWSTR>(mszCards.Pointer),
                         ref pcchCards
                         );
                 default:
@@ -690,12 +744,12 @@ namespace THNETII.WinApi.Native.WinSCard
 #endif
         }
 
-        /// <inheritdoc cref="SCardListCards" />
+        /// <inheritdoc cref="SCardListCards(SCARDCONTEXT, ReadOnlySpan{byte}, ReadOnlySpan{Guid}, out LPMTSTR, out int)" />
         public static int SCardListCardTypes(
             SCARDCONTEXT hContext,
             ReadOnlySpan<byte> pbAtr,
             ReadOnlySpan<Guid> rgquidInterfaces,
-            out LPTSTR mszCards,
+            out LPMTSTR mszCards,
             out int pcchCards
             )
         {
@@ -711,7 +765,7 @@ namespace THNETII.WinApi.Native.WinSCard
                         out var lpstrCards,
                         out pcchCards
                         );
-                    mszCards = Pointer.Create<LPTSTR>(lpstrCards.Pointer);
+                    mszCards = Pointer.Create<LPMTSTR>(lpstrCards.Pointer);
                     return error;
                 case 2:
                     error = SCardListCardsW(
@@ -721,7 +775,7 @@ namespace THNETII.WinApi.Native.WinSCard
                         out var lpwstrCards,
                         out pcchCards
                         );
-                    mszCards = Pointer.Create<LPTSTR>(lpwstrCards.Pointer);
+                    mszCards = Pointer.Create<LPMTSTR>(lpwstrCards.Pointer);
                     return error;
                 default:
                     throw new PlatformNotSupportedException();
@@ -925,13 +979,28 @@ namespace THNETII.WinApi.Native.WinSCard
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 244
         #region SCardListInterfaces function
-        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi)]
-        private static unsafe extern int SCardListInterfaces(
+#if !NETSTANDARD1_3
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
+        private static unsafe extern
+#else
+        private static unsafe
+#endif
+        int SCardListInterfaces(
             [In] SCARDCONTEXT hContext,
             [In] LPCTSTR szCard,
             Guid* pguidInterfaces,
             ref int pcguidInterfaces
-            );
+            )
+#if !NETSTANDARD1_3
+        ;
+#else
+        => Marshal.SystemDefaultCharSize switch
+        {
+            1 => SCardListInterfacesA(hContext, Pointer.Create<LPCSTR>(szCard.Pointer), pguidInterfaces, ref pcguidInterfaces),
+            2 => SCardListInterfacesW(hContext, Pointer.Create<LPCWSTR>(szCard.Pointer), pguidInterfaces, ref pcguidInterfaces),
+            _ => throw new PlatformNotSupportedException()
+        };
+#endif
 
         /// <summary>
         /// The <see cref="SCardListInterfaces"/> function provides a list of interfaces supplied by a given card.
@@ -994,15 +1063,29 @@ namespace THNETII.WinApi.Native.WinSCard
             return error;
         }
 
-#if !NETSTANDARD1_3
         /// <inheritdoc cref="SCardListInterfaces(SCARDCONTEXT, LPCTSTR, Span{Guid}, out int)"/>
-        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi)]
-        private static unsafe extern int SCardListInterfaces(
+#if !NETSTANDARD1_3
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
+        private static unsafe extern
+#else
+        private static unsafe
+#endif // !NETSTANDARD1_3
+        int SCardListInterfaces(
             [In] SCARDCONTEXT hContext,
             [In] string szCard,
             Guid* pguidInterfaces,
             ref int pcguidInterfaces
-            );
+            )
+#if !NETSTANDARD1_3
+        ;
+#else
+        => Marshal.SystemDefaultCharSize switch
+        {
+            1 => SCardListInterfacesA(hContext, szCard, pguidInterfaces, ref pcguidInterfaces),
+            2 => SCardListInterfacesW(hContext, szCard, pguidInterfaces, ref pcguidInterfaces),
+            _ => throw new PlatformNotSupportedException()
+        };
+#endif
 
         /// <inheritdoc cref="SCardListInterfaces(SCARDCONTEXT, LPCTSTR, Span{Guid}, out int)"/>
         public static unsafe int SCardListInterfaces(
@@ -1040,7 +1123,6 @@ namespace THNETII.WinApi.Native.WinSCard
             pguidInterfaces = new Span<Guid>(pguidAllocated, pcguidInterfaces);
             return error;
         }
-#endif // !NETSTANDARD1_3
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 250
         #region SCardGetProviderIdA function
@@ -1103,21 +1185,49 @@ namespace THNETII.WinApi.Native.WinSCard
         /// <seealso cref="SCardListInterfaces"/>
         /// <seealso cref="SCardListReaderGroups"/>
         /// <seealso cref="SCardListReaders"/>
-        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi)]
-        public static extern int SCardGetProviderId(
+#if !NETSTANDARD1_3
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
+        public static extern
+#else
+        public static
+#endif // !NETSTANDARD1_3
+        int SCardGetProviderId(
             [In] SCARDCONTEXT hContext,
             [In] LPCTSTR szCard,
             out Guid pguidProviderId
-            );
-
+            )
 #if !NETSTANDARD1_3
+            ;
+#else
+            => Marshal.SystemDefaultCharSize switch
+            {
+                1 => SCardGetProviderIdA(hContext, Pointer.Create<LPCSTR>(szCard.Pointer), out pguidProviderId),
+                2 => SCardGetProviderIdW(hContext, Pointer.Create<LPCWSTR>(szCard.Pointer), out pguidProviderId),
+                _ => throw new PlatformNotSupportedException()
+            };
+#endif // !NETSTANDARD1_3
+
         /// <inheritdoc cref="SCardGetProviderId(SCARDCONTEXT, LPCTSTR, out Guid)"/>
+#if !NETSTANDARD1_3
         [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
-        public static extern int SCardGetProviderId(
+        public static extern
+#else
+        public static
+#endif // !NETSTANDARD1_3
+        int SCardGetProviderId(
             [In] SCARDCONTEXT hContext,
             [In] string szCard,
             out Guid pguidProviderId
-            );
+            )
+#if !NETSTANDARD1_3
+            ;
+#else
+            => Marshal.SystemDefaultCharSize switch
+            {
+                1 => SCardGetProviderIdA(hContext, szCard, out pguidProviderId),
+                2 => SCardGetProviderIdW(hContext, szCard, out pguidProviderId),
+                _ => throw new PlatformNotSupportedException()
+            };
 #endif // !NETSTANDARD1_3
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 270
@@ -1248,7 +1358,6 @@ namespace THNETII.WinApi.Native.WinSCard
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 290
         #region SCardGetCardTypeProviderName function
-#if !NETSTANDARD1_3
         /// <summary>
         /// The <see cref="SCardGetCardTypeProviderName"/> function returns the name of the module (dynamic link library) that contains the provider for a given card name and <a href="https://docs.microsoft.com/windows/desktop/SecGloss/p-gly">provider type</a>.
         /// </summary>
@@ -1281,15 +1390,40 @@ namespace THNETII.WinApi.Native.WinSCard
         /// <seealso cref="SCardEstablishContext"/>
         /// <seealso cref="SCardFreeMemory"/>
         /// <seealso cref="SCardSetCardTypeProviderName(SCARDCONTEXT, string, SCARD_PROVIDER_TYPE, string)"/>
+#if !NETSTANDARD1_3
         [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
-        public static extern int SCardGetCardTypeProviderName(
+        public static extern
+#else
+        public static
+#endif // !NETSTANDARD1_3
+        int SCardGetCardTypeProviderName(
             [In] SCARDCONTEXT hContext,
             [In] LPCTSTR szCardName,
             [In, MarshalAs(UnmanagedType.U4)]
             SCARD_PROVIDER_TYPE dwProviderId,
             LPTSTR szProvider,
             ref int pcchProvider
-            );
+            )
+#if !NETSTANDARD1_3
+            ;
+#else
+            => Marshal.SystemDefaultCharSize switch
+            {
+                1 => SCardGetCardTypeProviderNameA(
+                    hContext,
+                    Pointer.Create<LPCSTR>(szCardName.Pointer),
+                    dwProviderId,
+                    Pointer.Create<LPSTR>(szProvider.Pointer),
+                    ref pcchProvider),
+                2 => SCardGetCardTypeProviderNameW(
+                    hContext,
+                    Pointer.Create<LPCWSTR>(szCardName.Pointer),
+                    dwProviderId,
+                    Pointer.Create<LPWSTR>(szProvider.Pointer),
+                    ref pcchProvider),
+                _ => throw new PlatformNotSupportedException()
+            };
+#endif // !NETSTANDARD1_3
 
         /// <inheritdoc cref="SCardGetCardTypeProviderName"/>
         public static unsafe int SCardGetCardTypeProviderName(
@@ -1312,15 +1446,40 @@ namespace THNETII.WinApi.Native.WinSCard
         }
 
         /// <inheritdoc cref="SCardGetCardTypeProviderName"/>
+#if !NETSTANDARD1_3
         [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto, EntryPoint = nameof(SCardGetCardTypeProviderName))]
-        private static extern int SCardGetCardTypeProviderNameImpl(
+        private static extern
+#else
+        private static
+#endif // !NETSTANDARD1_3
+        int SCardGetCardTypeProviderNameImpl(
             [In] SCARDCONTEXT hContext,
             [In] string szCardName,
             [In, MarshalAs(UnmanagedType.U4)]
             SCARD_PROVIDER_TYPE dwProviderId,
             [Out] StringBuilder szProvider,
             ref int pcchProvider
-            );
+            )
+#if !NETSTANDARD1_3
+            ;
+#else
+            => Marshal.SystemDefaultCharSize switch
+            {
+                1 => SCardGetCardTypeProviderNameAImpl(
+                    hContext,
+                    szCardName,
+                    dwProviderId,
+                    szProvider,
+                    ref pcchProvider),
+                2 => SCardGetCardTypeProviderNameWImpl(
+                    hContext,
+                    szCardName,
+                    dwProviderId,
+                    szProvider,
+                    ref pcchProvider),
+                _ => throw new PlatformNotSupportedException()
+            };
+#endif // !NETSTANDARD1_3
 
         /// <inheritdoc cref="SCardGetCardTypeProviderName"/>
         public static int SCardGetCardTypeProviderName(
@@ -1340,7 +1499,6 @@ namespace THNETII.WinApi.Native.WinSCard
                 ref pcchProvider
                 );
         }
-#endif // !NETSTANDARD1_3
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 300
         //
@@ -1368,7 +1526,7 @@ namespace THNETII.WinApi.Native.WinSCard
         [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi)]
         public static extern int SCardIntroduceReaderGroupW(
             [In] SCARDCONTEXT hContext,
-            [In] LPCSTR szGroupName
+            [In] LPCWSTR szGroupName
             );
 
         /// <inheritdoc cref="SCardIntroduceReaderGroupW" />
@@ -1380,7 +1538,6 @@ namespace THNETII.WinApi.Native.WinSCard
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 312
         #region SCardIntroduceReaderGroup function
-#if !NETSTANDARD1_3
         /// <summary>
         /// The <see cref="SCardIntroduceReaderGroup"/> function introduces a <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">reader group</a> to the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card</a> subsystem. However, the reader group is not created until the group is specified when adding a reader to the smart card database.
         /// </summary>
@@ -1410,18 +1567,53 @@ namespace THNETII.WinApi.Native.WinSCard
         /// <seealso cref="SCardForgetReaderGroup"/>
         /// <seealso cref="SCardIntroduceCardType(SCARDCONTEXT, string, in Guid, ReadOnlySpan{Guid}, ReadOnlySpan{byte}, ReadOnlySpan{byte})"/>
         /// <seealso cref="SCardIntroduceReader"/>
+#if !NETSTANDARD1_3
         [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
-        public static extern int SCardIntroduceReaderGroup(
+        public static extern
+#else
+        public static
+#endif // !NETSTANDARD1_3
+        int SCardIntroduceReaderGroup(
             [In] SCARDCONTEXT hContext,
-            [In] LPCSTR szGroupName
-            );
+            [In] LPCTSTR szGroupName
+            )
+#if !NETSTANDARD1_3
+            ;
+#else
+            => Marshal.SystemDefaultCharSize switch
+            {
+                1 => SCardIntroduceReaderGroupA(
+                    hContext,
+                    Pointer.Create<LPCSTR>(szGroupName.Pointer)
+                    ),
+                2 => SCardIntroduceReaderGroupW(
+                    hContext,
+                    Pointer.Create<LPCWSTR>(szGroupName.Pointer)
+                    ),
+                _ => throw new PlatformNotSupportedException()
+            };
+#endif // !NETSTANDARD1_3
 
         /// <inheritdoc cref="SCardIntroduceReaderGroup" />
+#if !NETSTANDARD1_3
         [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
-        public static extern int SCardIntroduceReaderGroup(
+        public static extern
+#else
+        public static
+#endif // !NETSTANDARD1_3
+        int SCardIntroduceReaderGroup(
             [In] SCARDCONTEXT hContext,
             [In] string szGroupName
-            );
+            )
+#if !NETSTANDARD1_3
+            ;
+#else
+            => Marshal.SystemDefaultCharSize switch
+            {
+                1 => SCardIntroduceReaderGroupA(hContext, szGroupName),
+                2 => SCardIntroduceReaderGroupW(hContext, szGroupName),
+                _ => throw new PlatformNotSupportedException()
+            };
 #endif // !NETSTANDARD1_3
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 318
@@ -1458,7 +1650,6 @@ namespace THNETII.WinApi.Native.WinSCard
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 326
         #region SCardForgetReaderGroup function
-#if !NETSTANDARD1_3
         /// <summary>
         /// The <see cref="SCardForgetReaderGroup"/> function removes a previously introduced <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card</a> <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">reader group</a> from the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card subsystem</a>. Although this function automatically clears all readers from the group, it does not affect the existence of the individual <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">readers</a> in the database.
         /// </summary>
@@ -1485,18 +1676,47 @@ namespace THNETII.WinApi.Native.WinSCard
         /// <seealso cref="SCardForgetCardType(SCARDCONTEXT, string)"/>
         /// <seealso cref="SCardForgetReader"/>
         /// <seealso cref="SCardIntroduceReaderGroup"/>
+#if !NETSTANDARD1_3
         [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
-        public static extern int SCardForgetReaderGroup(
+        public static extern
+#else
+        public static
+#endif // !NETSTANDARD1_3
+            int SCardForgetReaderGroup(
             [In] SCARDCONTEXT hContext,
-            [In] LPCSTR szGroupName
-            );
+            [In] LPCTSTR szGroupName
+            )
+#if !NETSTANDARD1_3
+            ;
+#else
+            => Marshal.SystemDefaultCharSize switch
+            {
+                1 => SCardForgetReaderGroupA(hContext, Pointer.Create<LPCSTR>(szGroupName.Pointer)),
+                2 => SCardForgetReaderGroupW(hContext, Pointer.Create<LPCWSTR>(szGroupName.Pointer)),
+                _ => throw new PlatformNotSupportedException()
+            };
+#endif // !NETSTANDARD1_3
 
         /// <inheritdoc cref="SCardForgetReaderGroup"/>
+#if !NETSTANDARD1_3
         [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
-        public static extern int SCardForgetReaderGroup(
+        public static extern
+#else
+        public static
+#endif // !NETSTANDARD1_3
+            int SCardForgetReaderGroup(
             [In] SCARDCONTEXT hContext,
             [In] string szGroupName
-            );
+            )
+#if !NETSTANDARD1_3
+            ;
+#else
+            => Marshal.SystemDefaultCharSize switch
+            {
+                1 => SCardForgetReaderGroupA(hContext, szGroupName),
+                2 => SCardForgetReaderGroupW(hContext, szGroupName),
+                _ => throw new PlatformNotSupportedException()
+            };
 #endif // !NETSTANDARD1_3
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 332
@@ -1537,7 +1757,6 @@ namespace THNETII.WinApi.Native.WinSCard
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 342
         #region SCardIntroduceReader function
-#if !NETSTANDARD1_3
         /// <summary>
         /// The <see cref="SCardIntroduceReader"/> function introduces a new name for an existing <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card</a> <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">reader</a>.
         /// <para><note>Smart card readers are automatically introduced to the system; a smart card reader vendor's setup program can also introduce a smart card reader to the system.</note></para>
@@ -1568,20 +1787,57 @@ namespace THNETII.WinApi.Native.WinSCard
         /// <seealso cref="SCardForgetReader"/>
         /// <seealso cref="SCardIntroduceCardType(SCARDCONTEXT, string, in Guid, ReadOnlySpan{Guid}, ReadOnlySpan{byte}, ReadOnlySpan{byte})"/>
         /// <seealso cref="SCardIntroduceReaderGroup"/>
+#if !NETSTANDARD1_3
         [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
-        public static extern int SCardIntroduceReader(
+        public static extern
+#else
+        public static
+#endif // !NETSTANDARD1_3
+        int SCardIntroduceReader(
             [In] SCARDCONTEXT hContext,
             [In] LPCTSTR szReaderName,
             [In] LPCTSTR szDeviceName
-            );
+            )
+#if !NETSTANDARD1_3
+            ;
+#else
+            => Marshal.SystemDefaultCharSize switch
+            {
+                1 => SCardIntroduceReaderA(
+                    hContext,
+                    Pointer.Create<LPCSTR>(szReaderName.Pointer),
+                    Pointer.Create<LPCSTR>(szDeviceName.Pointer)
+                    ),
+                2 => SCardIntroduceReaderW(
+                    hContext,
+                    Pointer.Create<LPCWSTR>(szReaderName.Pointer),
+                    Pointer.Create<LPCWSTR>(szDeviceName.Pointer)
+                    ),
+                _ => throw new PlatformNotSupportedException()
+            };
+#endif // !NETSTANDARD1_3
 
         /// <inheritdoc cref="SCardIntroduceReader"/>
+#if !NETSTANDARD1_3
         [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
-        public static extern int SCardIntroduceReader(
+        public static extern
+#else
+        public static
+#endif // !NETSTANDARD1_3
+        int SCardIntroduceReader(
             [In] SCARDCONTEXT hContext,
             [In] string szReaderName,
             [In] string szDeviceName
-            );
+            )
+#if !NETSTANDARD1_3
+            ;
+#else
+            => Marshal.SystemDefaultCharSize switch
+            {
+                1 => SCardIntroduceReaderA(hContext, szReaderName, szDeviceName),
+                2 => SCardIntroduceReaderW(hContext, szReaderName, szDeviceName),
+                _ => throw new PlatformNotSupportedException()
+            };
 #endif // !NETSTANDARD1_3
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 348
@@ -1616,7 +1872,6 @@ namespace THNETII.WinApi.Native.WinSCard
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 356
         #region SCardForgetReader function
-#if !NETSTANDARD1_3
         /// <summary>
         /// The <see cref="SCardForgetReader"/> function removes a previously introduced <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">reader</a> from control by the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card subsystem</a>. It is removed from the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card database</a>, including from any <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">reader group</a> that it may have been added to.
         /// </summary>
@@ -1644,17 +1899,46 @@ namespace THNETII.WinApi.Native.WinSCard
         /// <seealso cref="SCardForgetCardType(SCARDCONTEXT, string)"/>
         /// <seealso cref="SCardForgetReaderGroup"/>
         /// <seealso cref="SCardIntroduceReader"/>
+#if !NETSTANDARD1_3
         [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
-        public static extern int SCardForgetReader(
+        public static extern
+#else
+        public static
+#endif // !NETSTANDARD1_3
+        int SCardForgetReader(
             [In] SCARDCONTEXT hContext,
             [In] string szReaderName
-            );
+            )
+#if !NETSTANDARD1_3
+            ;
+#else
+            => Marshal.SystemDefaultCharSize switch
+            {
+                1 => SCardForgetReaderA(hContext, szReaderName),
+                2 => SCardForgetReaderW(hContext, szReaderName),
+                _ => throw new PlatformNotSupportedException()
+            };
+#endif // !NETSTANDARD1_3
         /// <inheritdoc cref="SCardForgetReader(SCARDCONTEXT, string)"/>
+#if !NETSTANDARD1_3
         [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
-        public static extern int SCardForgetReader(
+        public static extern
+#else
+        public static
+#endif // !NETSTANDARD1_3
+        int SCardForgetReader(
             [In] SCARDCONTEXT hContext,
             [In] LPCTSTR szReaderName
-            );
+            )
+#if !NETSTANDARD1_3
+            ;
+#else
+            => Marshal.SystemDefaultCharSize switch
+            {
+                1 => SCardForgetReaderA(hContext, Pointer.Create<LPCSTR>(szReaderName.Pointer)),
+                2 => SCardForgetReaderW(hContext, Pointer.Create<LPCWSTR>(szReaderName.Pointer)),
+                _ => throw new PlatformNotSupportedException()
+            };
 #endif // !NETSTANDARD1_3
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 362
@@ -1693,7 +1977,6 @@ namespace THNETII.WinApi.Native.WinSCard
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 372
         #region SCardAddReaderToGroup function
-#if !NETSTANDARD1_3
         /// <summary>
         /// The <see cref="SCardAddReaderToGroup"/> function adds a <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">reader</a> to a <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">reader group</a>.
         /// </summary>
@@ -1731,19 +2014,56 @@ namespace THNETII.WinApi.Native.WinSCard
         /// <seealso cref="SCardIntroduceReader"/>
         /// <seealso cref="SCardIntroduceReaderGroup"/>
         /// <seealso cref="SCardRemoveReaderFromGroup"/>
+#if !NETSTANDARD1_3
         [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
-        public static extern int SCardAddReaderToGroup(
+        public static extern
+#else
+        public static
+#endif // !NETSTANDARD1_3
+        int SCardAddReaderToGroup(
             [In] SCARDCONTEXT hContext,
             [In] string szReaderName,
             [In] string szGroupName
-            );
+            )
+#if !NETSTANDARD1_3
+            ;
+#else
+            => Marshal.SystemDefaultCharSize switch
+            {
+                1 => SCardAddReaderToGroupA(hContext, szReaderName, szGroupName),
+                2 => SCardAddReaderToGroupW(hContext, szReaderName, szGroupName),
+                _ => throw new PlatformNotSupportedException()
+            };
+#endif // !NETSTANDARD1_3
         /// <inheritdoc cref="SCardAddReaderToGroup(SCARDCONTEXT, string, string)"/>
+#if !NETSTANDARD1_3
         [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
-        public static extern int SCardAddReaderToGroup(
+        public static extern
+#else
+        public static
+#endif // !NETSTANDARD1_3
+        int SCardAddReaderToGroup(
             [In] SCARDCONTEXT hContext,
             [In] LPCTSTR szReaderName,
             [In] LPCTSTR szGroupName
-            );
+            )
+#if !NETSTANDARD1_3
+            ;
+#else
+            => Marshal.SystemDefaultCharSize switch
+            {
+                1 => SCardAddReaderToGroupA(
+                    hContext,
+                    Pointer.Create<LPCSTR>(szReaderName.Pointer),
+                    Pointer.Create<LPCSTR>(szGroupName.Pointer)
+                    ),
+                2 => SCardAddReaderToGroupW(
+                    hContext,
+                    Pointer.Create<LPCWSTR>(szReaderName.Pointer),
+                    Pointer.Create<LPCWSTR>(szGroupName.Pointer)
+                    ),
+                _ => throw new PlatformNotSupportedException()
+            };
 #endif // !NETSTANDARD1_3
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 378
@@ -1782,7 +2102,6 @@ namespace THNETII.WinApi.Native.WinSCard
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 388
         #region SCardRemoveReaderFromGroup function
-#if !NETSTANDARD1_3
         /// <summary>
         /// The <see cref="SCardRemoveReaderFromGroup"/> function removes a <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">reader</a> from an existing <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">reader group</a>. This function has no effect on the reader.
         /// </summary>
@@ -1822,19 +2141,58 @@ namespace THNETII.WinApi.Native.WinSCard
         /// <seealso cref="SCardForgetCardType(SCARDCONTEXT, string)"/>
         /// <seealso cref="SCardForgetReader"/>
         /// <seealso cref="SCardForgetReaderGroup"/>
+#if !NETSTANDARD1_3
         [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
-        public static extern int SCardRemoveReaderFromGroup(
+        public static extern
+#else
+        public static
+#endif // !NETSTANDARD1_3
+        int SCardRemoveReaderFromGroup(
             [In] SCARDCONTEXT hContext,
             [In] string szReaderName,
             [In] string szGroupName
-            );
+            )
+#if !NETSTANDARD1_3
+            ;
+#else
+            => Marshal.SystemDefaultCharSize switch
+            {
+                1 => SCardRemoveReaderFromGroupA(
+                    hContext, szReaderName, szGroupName),
+                2 => SCardRemoveReaderFromGroupW(
+                    hContext, szReaderName, szGroupName),
+                _ => throw new PlatformNotSupportedException()
+            };
+#endif // !NETSTANDARD1_3
         /// <inheritdoc cref="SCardRemoveReaderFromGroup(SCARDCONTEXT, string, string)"/>
+#if !NETSTANDARD1_3
         [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
-        public static extern int SCardRemoveReaderFromGroup(
+        public static extern
+#else
+        public static
+#endif // !NETSTANDARD1_3
+        int SCardRemoveReaderFromGroup(
             [In] SCARDCONTEXT hContext,
             [In] LPCTSTR szReaderName,
             [In] LPCTSTR szGroupName
-            );
+            )
+#if !NETSTANDARD1_3
+            ;
+#else
+            => Marshal.SystemDefaultCharSize switch
+            {
+                1 => SCardRemoveReaderFromGroupA(
+                    hContext,
+                    Pointer.Create<LPCSTR>(szReaderName.Pointer),
+                    Pointer.Create<LPCSTR>(szGroupName.Pointer)
+                    ),
+                2 => SCardRemoveReaderFromGroupW(
+                    hContext,
+                    Pointer.Create<LPCWSTR>(szReaderName.Pointer),
+                    Pointer.Create<LPCWSTR>(szGroupName.Pointer)
+                    ),
+                _ => throw new PlatformNotSupportedException()
+            };
 #endif // !NETSTANDARD1_3
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 394
@@ -1987,7 +2345,11 @@ namespace THNETII.WinApi.Native.WinSCard
         #region SCardIntroduceCardType function
 #if !NETSTANDARD1_3
         [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
-        private static extern unsafe int SCardIntroduceCardType(
+        private static extern unsafe
+#else
+        private static unsafe
+#endif // !NETSTANDARD1_3
+        int SCardIntroduceCardType(
             [In] SCARDCONTEXT hContext,
             [In] string szCardName,
             [Optional] in Guid pguidPrimaryProvider,
@@ -1996,7 +2358,23 @@ namespace THNETII.WinApi.Native.WinSCard
             byte* pbAtr,
             byte* pbAtrMask,
             [In] int cbAtrLen
-            );
+            )
+#if !NETSTANDARD1_3
+            ;
+#else
+            => Marshal.SystemDefaultCharSize switch
+            {
+                1 => SCardIntroduceCardTypeA(
+                    hContext, szCardName, pguidPrimaryProvider,
+                    rgguidInterfaces, dwInterfaceCount, pbAtr, pbAtrMask,
+                    cbAtrLen),
+                2 => SCardIntroduceCardTypeW(
+                    hContext, szCardName, pguidPrimaryProvider,
+                    rgguidInterfaces, dwInterfaceCount, pbAtr, pbAtrMask,
+                    cbAtrLen),
+                _ => throw new PlatformNotSupportedException()
+            };
+#endif // !NETSTANDARD1_3
         /// <summary>
         /// The <see cref="SCardIntroduceCardType(SCARDCONTEXT, string, in Guid, ReadOnlySpan{Guid}, ReadOnlySpan{byte}, ReadOnlySpan{byte})"/> function introduces a <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card</a> to the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card subsystem</a> (for the active user) by adding it to the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card database</a>.
         /// </summary>
@@ -2053,8 +2431,13 @@ namespace THNETII.WinApi.Native.WinSCard
                     pbAtr.Length
                     );
         }
+#if !NETSTANDARD1_3
         [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
-        private static extern unsafe int SCardIntroduceCardType(
+        private static extern unsafe
+#else
+        private static unsafe
+#endif // !NETSTANDARD1_3
+        int SCardIntroduceCardType(
             [In] SCARDCONTEXT hContext,
             [In] LPCTSTR szCardName,
             [Optional] in Guid pguidPrimaryProvider,
@@ -2063,7 +2446,23 @@ namespace THNETII.WinApi.Native.WinSCard
             byte* pbAtr,
             byte* pbAtrMask,
             [In] int cbAtrLen
-            );
+            )
+#if !NETSTANDARD1_3
+            ;
+#else
+            => Marshal.SystemDefaultCharSize switch
+            {
+                1 => SCardIntroduceCardTypeA(hContext,
+                    Pointer.Create<LPCSTR>(szCardName.Pointer),
+                    pguidPrimaryProvider, rgguidInterfaces, dwInterfaceCount,
+                    pbAtr, pbAtrMask, cbAtrLen),
+                2 => SCardIntroduceCardTypeW(hContext,
+                    Pointer.Create<LPCWSTR>(szCardName.Pointer),
+                    pguidPrimaryProvider, rgguidInterfaces, dwInterfaceCount,
+                    pbAtr, pbAtrMask, cbAtrLen),
+                _ => throw new PlatformNotSupportedException()
+            };
+#endif // !NETSTANDARD1_3
         /// <inheritdoc cref="SCardIntroduceCardType(SCARDCONTEXT, string, in Guid, ReadOnlySpan{Guid}, ReadOnlySpan{byte}, ReadOnlySpan{byte})"/>
         public static unsafe int SCardIntroduceCardType(
             SCARDCONTEXT hContext,
@@ -2088,7 +2487,6 @@ namespace THNETII.WinApi.Native.WinSCard
                     pbAtr.Length
                     );
         }
-#endif // !NETSTANDARD1_3
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 419
         #region PCSCardIntroduceCardType function
@@ -2156,7 +2554,6 @@ namespace THNETII.WinApi.Native.WinSCard
                 pbAtr,
                 pbAtrMask
                 );
-#if !NETSTANDARD1_3
         /// <inheritdoc cref="SCardIntroduceCardType(SCARDCONTEXT, string, in Guid, ReadOnlySpan{Guid}, ReadOnlySpan{byte}, ReadOnlySpan{byte})"/>
         public static int PCSCardIntroduceCardType(
             SCARDCONTEXT hContext,
@@ -2189,7 +2586,6 @@ namespace THNETII.WinApi.Native.WinSCard
                 pbAtr,
                 pbAtrMask
                 );
-#endif // !NETSTANDARD1_3
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 438
         #region SCardSetCardTypeProviderNameA function
@@ -2231,7 +2627,6 @@ namespace THNETII.WinApi.Native.WinSCard
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 450
         #region SCardSetCardTypeProviderName function
-#if !NETSTANDARD1_3
         /// <summary>
         /// The <see cref="SCardSetCardTypeProviderName(SCARDCONTEXT, string, SCARD_PROVIDER_TYPE, string)"/> function specifies the name of the module (dynamic link library) containing the provider for a given card name and <a href="https://docs.microsoft.com/windows/desktop/SecGloss/p-gly">provider type</a>.
         /// </summary>
@@ -2258,21 +2653,56 @@ namespace THNETII.WinApi.Native.WinSCard
         /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
         /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
         /// <seealso cref="SCardGetCardTypeProviderName"/>
+#if !NETSTANDARD1_3
         [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
-        public static extern int SCardSetCardTypeProviderName(
+        public static extern
+#else
+        public static
+#endif // !NETSTANDARD1_3
+        int SCardSetCardTypeProviderName(
             [In] SCARDCONTEXT hContext,
             [In] string szCardName,
             [In, MarshalAs(UnmanagedType.U4)] SCARD_PROVIDER_TYPE dwProviderId,
             [In] string szProvider
-            );
+            )
+#if !NETSTANDARD1_3
+            ;
+#else
+            => Marshal.SystemDefaultCharSize switch
+            {
+                1 => SCardSetCardTypeProviderNameA(hContext, szCardName,
+                    dwProviderId, szProvider),
+                2 => SCardSetCardTypeProviderNameW(hContext, szCardName,
+                    dwProviderId, szProvider),
+                _ => throw new PlatformNotSupportedException()
+            };
+#endif // !NETSTANDARD1_3
         /// <inheritdoc cref="SCardSetCardTypeProviderName(SCARDCONTEXT, string, SCARD_PROVIDER_TYPE, string)"/>
+#if !NETSTANDARD1_3
         [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
-        public static extern int SCardSetCardTypeProviderName(
+        public static extern
+#else
+        public static
+#endif // !NETSTANDARD1_3
+        int SCardSetCardTypeProviderName(
             [In] SCARDCONTEXT hContext,
             [In] LPCTSTR szCardName,
             [In, MarshalAs(UnmanagedType.U4)] SCARD_PROVIDER_TYPE dwProviderId,
             [In] LPCTSTR szProvider
-            );
+            )
+#if !NETSTANDARD1_3
+            ;
+#else
+            => Marshal.SystemDefaultCharSize switch
+            {
+                1 => SCardSetCardTypeProviderNameA(hContext,
+                    Pointer.Create<LPCSTR>(szCardName.Pointer), dwProviderId,
+                    Pointer.Create<LPCSTR>(szProvider.Pointer)),
+                2 => SCardSetCardTypeProviderNameW(hContext,
+                    Pointer.Create<LPCWSTR>(szCardName.Pointer), dwProviderId,
+                    Pointer.Create<LPCWSTR>(szProvider.Pointer)),
+                _ => throw new PlatformNotSupportedException()
+            };
 #endif // !NETSTANDARD1_3
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 455
@@ -2312,7 +2742,6 @@ namespace THNETII.WinApi.Native.WinSCard
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 467
         #region SCardForgetCardType function
-#if !NETSTANDARD1_3
         /// <summary>
         /// The <see cref="SCardForgetCardType(SCARDCONTEXT, string)"/> function removes an introduced <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card</a> from the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card subsystem</a>.
         /// </summary>
@@ -2340,17 +2769,47 @@ namespace THNETII.WinApi.Native.WinSCard
         /// <seealso cref="SCardForgetReader"/>
         /// <seealso cref="SCardForgetReaderGroup"/>
         /// <seealso cref="SCardIntroduceCardType(SCARDCONTEXT, string, in Guid, ReadOnlySpan{Guid}, ReadOnlySpan{byte}, ReadOnlySpan{byte})"/>
+#if !NETSTANDARD1_3
         [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
-        public static extern int SCardForgetCardType(
+        public static extern
+#else
+        public static
+#endif // !NETSTANDARD1_3
+        int SCardForgetCardType(
             [In] SCARDCONTEXT hContext,
             [In] string szCardName
-            );
+            )
+#if !NETSTANDARD1_3
+            ;
+#else
+            => Marshal.SystemDefaultCharSize switch
+            {
+                1 => SCardForgetCardTypeA(hContext, szCardName),
+                2 => SCardForgetCardTypeW(hContext, szCardName),
+                _ => throw new PlatformNotSupportedException()
+            };
+#endif // !NETSTANDARD1_3
+
         /// <inheritdoc cref="SCardForgetCardType(SCARDCONTEXT, string)"/>
+#if !NETSTANDARD1_3
         [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
-        public static extern int SCardForgetCardType(
+        public static extern
+#else
+        public static
+#endif // !NETSTANDARD1_3
+        int SCardForgetCardType(
             [In] SCARDCONTEXT hContext,
             [In] LPCTSTR szCardName
-            );
+            )
+#if !NETSTANDARD1_3
+            ;
+#else
+            => Marshal.SystemDefaultCharSize switch
+            {
+                1 => SCardForgetCardTypeA(hContext, Pointer.Create<LPCSTR>(szCardName.Pointer)),
+                2 => SCardForgetCardTypeW(hContext, Pointer.Create<LPCWSTR>(szCardName.Pointer)),
+                _ => throw new PlatformNotSupportedException()
+            };
 #endif // !NETSTANDARD1_3
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 474
@@ -2387,11 +2846,11 @@ namespace THNETII.WinApi.Native.WinSCard
         /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
         /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
         /// <seealso cref="SCardEstablishContext"/>
-        /// <seealso cref="SCardGetProviderId(SCARDCONTEXT, string, out Guid)"/>
-        /// <seealso cref="SCardListCards(SCARDCONTEXT, ReadOnlySpan{byte}, ReadOnlySpan{Guid}, out LPTSTR, out int)"/>
-        /// <seealso cref="SCardListInterfaces(SCARDCONTEXT, LPCTSTR, out Span{Guid})"/>
-        /// <seealso cref="SCardListReaderGroups(SCARDCONTEXT, out LPTSTR, out int)"/>
-        /// <seealso cref="SCardListReaders(SCARDCONTEXT, string, out LPTSTR, out int)"/>
+        /// <seealso cref="SCardGetProviderId"/>
+        /// <seealso cref="SCardListCards"/>
+        /// <seealso cref="SCardListInterfaces"/>
+        /// <seealso cref="SCardListReaderGroups"/>
+        /// <seealso cref="SCardListReaders"/>
         [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi)]
         public static extern int SCardFreeMemory(
             [In] SCARDCONTEXT hContext,
@@ -2455,7 +2914,7 @@ namespace THNETII.WinApi.Native.WinSCard
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 600
         #region SCardLocateCardsA function
-        /// <inheritdoc cref="SCardLocateCards(SCARDCONTEXT, string, Span{SCARD_READERSTATE})"/>
+        /// <inheritdoc cref="SCardLocateCards"/>
         public static unsafe int SCardLocateCardsA(
             SCARDCONTEXT hContext,
             string mszCards,
@@ -2480,7 +2939,7 @@ namespace THNETII.WinApi.Native.WinSCard
         /// <inheritdoc cref="SCardLocateCardsA(SCARDCONTEXT, string, Span{SCARD_READERSTATEA})"/>
         public static unsafe int SCardLocateCardsA(
             SCARDCONTEXT hContext,
-            LPCSTR mszCards,
+            LPCMSTR mszCards,
             Span<SCARD_READERSTATEA> rgReaderStates
             )
         {
@@ -2495,7 +2954,7 @@ namespace THNETII.WinApi.Native.WinSCard
         [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi)]
         private static extern unsafe int SCardLocateCardsA(
             [In] SCARDCONTEXT hContext,
-            [In] LPCSTR mszCards,
+            [In] LPCMSTR mszCards,
             SCARD_READERSTATEA* rgReaderStates,
             [In] int cReaders
             );
@@ -2527,7 +2986,7 @@ namespace THNETII.WinApi.Native.WinSCard
         /// <inheritdoc cref="SCardLocateCardsW(SCARDCONTEXT, string, Span{SCARD_READERSTATEW})"/>
         public static unsafe int SCardLocateCardsW(
             SCARDCONTEXT hContext,
-            LPCWSTR mszCards,
+            LPCMWSTR mszCards,
             Span<SCARD_READERSTATEW> rgReaderStates
             )
         {
@@ -2542,14 +3001,13 @@ namespace THNETII.WinApi.Native.WinSCard
         [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Unicode)]
         private static extern unsafe int SCardLocateCardsW(
             [In] SCARDCONTEXT hContext,
-            [In] LPCWSTR mszCards,
+            [In] LPCMWSTR mszCards,
             SCARD_READERSTATEW* rgReaderStates,
             [In] int cReaders
             );
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 612
         #region SCardLocateCards function
-#if !NETSTANDARD1_3
         /// <summary>
         /// The <see cref="SCardLocateCards(SCARDCONTEXT, string, Span{SCARD_READERSTATE})"/> function searches the readers listed in the <paramref name="rgReaderStates"/> parameter for a card with an <a href="https://docs.microsoft.com/windows/desktop/SecGloss/a-gly">ATR string</a> that matches one of the card names specified in <paramref name="mszCards"/>, returning immediately with the result.
         /// </summary>
@@ -2595,17 +3053,34 @@ namespace THNETII.WinApi.Native.WinSCard
                     rgReaderStates.Length
                     );
         }
+#if !NETSTANDARD1_3
         [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
-        private static extern unsafe int SCardLocateCards(
+        private static extern unsafe
+#else
+        private static unsafe
+#endif // !NETSTANDARD1_3
+        int SCardLocateCards(
             [In] SCARDCONTEXT hContext,
             [In] string mszCards,
             SCARD_READERSTATE* rgReaderStates,
             [In] int cReaders
-            );
+            )
+#if !NETSTANDARD1_3
+            ;
+#else
+            => Marshal.SystemDefaultCharSize switch
+            {
+                1 => SCardLocateCardsA(hContext, mszCards,
+                    (SCARD_READERSTATEA*)rgReaderStates, cReaders),
+                2 => SCardLocateCardsW(hContext, mszCards,
+                    (SCARD_READERSTATEW*)rgReaderStates, cReaders),
+                _ => throw new PlatformNotSupportedException()
+            };
+#endif // !NETSTANDARD1_3
         /// <inheritdoc cref="SCardLocateCards(SCARDCONTEXT, string, Span{SCARD_READERSTATE})"/>
         public static unsafe int SCardLocateCards(
             SCARDCONTEXT hContext,
-            LPCTSTR mszCards,
+            LPCMTSTR mszCards,
             Span<SCARD_READERSTATE> rgReaderStates
             )
         {
@@ -2617,13 +3092,31 @@ namespace THNETII.WinApi.Native.WinSCard
                     rgReaderStates.Length
                     );
         }
+#if !NETSTANDARD1_3
         [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
-        private static extern unsafe int SCardLocateCards(
+        private static extern unsafe
+#else
+        private static unsafe
+#endif // !NETSTANDARD1_3
+        int SCardLocateCards(
             [In] SCARDCONTEXT hContext,
-            [In] LPCTSTR mszCards,
+            [In] LPCMTSTR mszCards,
             SCARD_READERSTATE* rgReaderStates,
             [In] int cReaders
-            );
+            )
+#if !NETSTANDARD1_3
+            ;
+#else
+            => Marshal.SystemDefaultCharSize switch
+            {
+                1 => SCardLocateCardsA(hContext,
+                    Pointer.Create<LPCMSTR>(mszCards.Pointer),
+                    (SCARD_READERSTATEA*)rgReaderStates, cReaders),
+                2 => SCardLocateCardsW(hContext,
+                    Pointer.Create<LPCMWSTR>(mszCards.Pointer),
+                    (SCARD_READERSTATEW*)rgReaderStates, cReaders),
+                _ => throw new PlatformNotSupportedException()
+            };
 #endif // !NETSTANDARD1_3
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 626
@@ -2684,7 +3177,6 @@ namespace THNETII.WinApi.Native.WinSCard
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 640
         #region SCardLocateCardsByATR function
-#if !NETSTANDARD1_3
         /// <summary>
         /// The <see cref="SCardLocateCardsByATR(SCARDCONTEXT, ReadOnlySpan{SCARD_ATRMASK}, Span{SCARD_READERSTATE})"/> function searches the readers listed in the <paramref name="rgReaderStates"/> parameter for a card with a name that matches one of the card names contained in one of the <see cref="SCARD_ATRMASK"/> structures specified by the <paramref name="rgAtrMasks"/> parameter.
         /// </summary>
@@ -2725,14 +3217,30 @@ namespace THNETII.WinApi.Native.WinSCard
                     rgReaderStates.Length
                     );
         }
+#if !NETSTANDARD1_3
         [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
-        private static extern unsafe int SCardLocateCardsByATR(
+        private static extern unsafe
+#else
+        private static unsafe
+#endif // !NETSTANDARD1_3
+        int SCardLocateCardsByATR(
             [In] SCARDCONTEXT hContext,
             [In] SCARD_ATRMASK* rgAtrMasks,
             [In] int cAtrs,
             [In, Out] SCARD_READERSTATE* rgReaderStates,
             [In] int cReaders
-            );
+            )
+#if !NETSTANDARD1_3
+            ;
+#else
+            => Marshal.SystemDefaultCharSize switch
+            {
+                1 => SCardLocateCardsByATRA(hContext, rgAtrMasks, cAtrs,
+                    (SCARD_READERSTATEA*)rgReaderStates, cReaders),
+                2 => SCardLocateCardsByATRW(hContext, rgAtrMasks, cAtrs,
+                    (SCARD_READERSTATEW*)rgReaderStates, cReaders),
+                _ => throw new PlatformNotSupportedException()
+            };
 #endif // !NETSTANDARD1_3
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 647
@@ -2787,7 +3295,6 @@ namespace THNETII.WinApi.Native.WinSCard
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 659
         #region SCardGetStatusChange function
-#if !NETSTANDARD1_3
         /// <summary>
         /// The <see cref="SCardGetStatusChange(SCARDCONTEXT, TimeSpan, Span{SCARD_READERSTATE})"/> function blocks execution until the current availability of the cards in a specific set of readers changes.
         /// <para>The caller supplies a list of <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">readers</a> to be monitored by an <see cref="SCARD_READERSTATE"/> array and the maximum amount of time (in milliseconds) that it is willing to wait for an action to occur on one of the listed readers. Note that <see cref="SCardGetStatusChange(SCARDCONTEXT, TimeSpan, Span{SCARD_READERSTATE})"/> uses the user-supplied value in the <see cref="SCARD_READERSTATE.dwCurrentState"/> members of the <paramref name="rgReaderStates"/> <see cref="SCARD_READERSTATE"/> array as the definition of the current <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">state</a> of the readers. The function returns when there is a change in availability, having filled in the <see cref="SCARD_READERSTATE.dwEventState"/> members of <paramref name="rgReaderStates"/> appropriately.</para>
@@ -2838,13 +3345,29 @@ namespace THNETII.WinApi.Native.WinSCard
                     rgReaderStates.Length
                     );
         }
+#if !NETSTANDARD1_3
         [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
-        private static extern unsafe int SCardGetStatusChange(
+        private static extern unsafe
+#else
+        private static unsafe
+#endif // !NETSTANDARD1_3
+        int SCardGetStatusChange(
             [In] SCARDCONTEXT hContext,
             [In] int dwTimeout,
             [In, Out] SCARD_READERSTATE* rgReaderStates,
             [In] int cReaders
-            );
+            )
+#if !NETSTANDARD1_3
+            ;
+#else
+            => Marshal.SystemDefaultCharSize switch
+            {
+                1 => SCardGetStatusChangeA(hContext, dwTimeout,
+                    (SCARD_READERSTATEA*)rgReaderStates, cReaders),
+                2 => SCardGetStatusChangeW(hContext, dwTimeout,
+                    (SCARD_READERSTATEW*)rgReaderStates, cReaders),
+                _ => throw new PlatformNotSupportedException()
+            };
 #endif // !NETSTANDARD1_3
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 665
@@ -2948,7 +3471,6 @@ namespace THNETII.WinApi.Native.WinSCard
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 699
         #region SCardConnect function
-#if !NETSTANDARD1_3
         /// <summary>
         /// The <see cref="SCardConnect"/> function establishes a connection (using a specific <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">resource manager context</a>) between the calling application and a <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card</a> contained by a specific reader. If no card exists in the specified reader, an error is returned.
         /// </summary>
@@ -2984,8 +3506,13 @@ namespace THNETII.WinApi.Native.WinSCard
         /// <seealso cref="SCardDisconnect"/>
         /// <seealso cref="SCardEstablishContext"/>
         /// <seealso cref="SCardReconnect"/>
+#if !NETSTANDARD1_3
         [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
-        public static extern int SCardConnect(
+        public static extern
+#else
+        public static
+#endif // !NETSTANDARD1_3
+        int SCardConnect(
             [In] SCARDCONTEXT hContext,
             [In] string szReader,
             [In, MarshalAs(UnmanagedType.U4)]
@@ -2995,10 +3522,27 @@ namespace THNETII.WinApi.Native.WinSCard
             out SCARDHANDLE phCard,
             [MarshalAs(UnmanagedType.U4)]
             out SCARD_PROTOCOL_FLAGS pdwActiveProtocol
-            );
+            )
+#if !NETSTANDARD1_3
+            ;
+#else
+            => Marshal.SystemDefaultCharSize switch
+            {
+                1 => SCardConnectA(hContext, szReader, dwShareMode,
+                    dwPreferredProtocols, out phCard, out pdwActiveProtocol),
+                2 => SCardConnectW(hContext, szReader, dwShareMode,
+                    dwPreferredProtocols, out phCard, out pdwActiveProtocol),
+                _ => throw new PlatformNotSupportedException()
+            };
+#endif // !NETSTANDARD1_3
         /// <inheritdoc cref="SCardConnect(SCARDCONTEXT, string, SCARD_SHARE_MODE, SCARD_PROTOCOL_FLAGS, out SCARDHANDLE, out SCARD_PROTOCOL_FLAGS)"/>
+#if !NETSTANDARD1_3
         [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
-        public static extern int SCardConnect(
+        public static extern
+#else
+        public static
+#endif // !NETSTANDARD1_3
+        int SCardConnect(
             [In] SCARDCONTEXT hContext,
             [In] LPCTSTR szReader,
             [In, MarshalAs(UnmanagedType.U4)]
@@ -3008,7 +3552,20 @@ namespace THNETII.WinApi.Native.WinSCard
             out SCARDHANDLE phCard,
             [MarshalAs(UnmanagedType.U4)]
             out SCARD_PROTOCOL_FLAGS pdwActiveProtocol
-            );
+            )
+#if !NETSTANDARD1_3
+            ;
+#else
+            => Marshal.SystemDefaultCharSize switch
+            {
+                1 => SCardConnectA(hContext,
+                    Pointer.Create<LPCSTR>(szReader.Pointer), dwShareMode,
+                    dwPreferredProtocols, out phCard, out pdwActiveProtocol),
+                2 => SCardConnectW(hContext,
+                    Pointer.Create<LPCWSTR>(szReader.Pointer), dwShareMode,
+                    dwPreferredProtocols, out phCard, out pdwActiveProtocol),
+                _ => throw new PlatformNotSupportedException()
+            };
 #endif // !NETSTANDARD1_3
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 713

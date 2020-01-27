@@ -19,12 +19,12 @@ namespace THNETII.WinApi.Native.WinSCard.Test
         {
             int error;
             int groupLength = 16;
-            LPSTR groupBuffer = default;
+            LPMSTR groupBuffer = default;
             try
             {
                 do
                 {
-                    groupBuffer = Pointer.Create<LPSTR>(
+                    groupBuffer = Pointer.Create<LPMSTR>(
                         Marshal.ReAllocCoTaskMem(groupBuffer.Pointer, 1 * groupLength)
                         );
                     error = SCardListReaderGroupsA(default, groupBuffer,
@@ -34,10 +34,11 @@ namespace THNETII.WinApi.Native.WinSCard.Test
                 if (error != SCARD_S_SUCCESS)
                     throw new Win32Exception(error);
 
-                var groupString = groupBuffer.MarshalToString(groupLength);
-                string[] groupArray = groupString.Split('\0', StringSplitOptions.RemoveEmptyEntries);
-                foreach (string groupName in groupArray)
+                foreach (var (ptr, len) in groupBuffer.AsEnumerable(groupLength))
+                {
+                    string groupName = ptr.MarshalToString(len);
                     _ = groupName;
+                }
             }
             finally
             {
@@ -50,12 +51,12 @@ namespace THNETII.WinApi.Native.WinSCard.Test
         {
             int error;
             int groupLength = 16;
-            LPWSTR groupBuffer = default;
+            LPMWSTR groupBuffer = default;
             try
             {
                 do
                 {
-                    groupBuffer = Pointer.Create<LPWSTR>(
+                    groupBuffer = Pointer.Create<LPMWSTR>(
                         Marshal.ReAllocCoTaskMem(groupBuffer.Pointer, 2 * groupLength)
                         );
                     error = SCardListReaderGroupsW(default, groupBuffer,
@@ -65,10 +66,11 @@ namespace THNETII.WinApi.Native.WinSCard.Test
                 if (error != SCARD_S_SUCCESS)
                     throw new Win32Exception(error);
 
-                var groupString = groupBuffer.MarshalToString(groupLength);
-                string[] groupArray = groupString.Split('\0', StringSplitOptions.RemoveEmptyEntries);
-                foreach (string groupName in groupArray)
+                foreach (var (ptr, len) in groupBuffer.AsEnumerable(groupLength))
+                {
+                    string groupName = ptr.MarshalToString(len);
                     _ = groupName;
+                }
             }
             finally
             {
@@ -81,12 +83,12 @@ namespace THNETII.WinApi.Native.WinSCard.Test
         {
             int error;
             int groupLength = 16;
-            LPTSTR groupBuffer = default;
+            LPMTSTR groupBuffer = default;
             try
             {
                 do
                 {
-                    groupBuffer = Pointer.Create<LPTSTR>(
+                    groupBuffer = Pointer.Create<LPMTSTR>(
                         Marshal.ReAllocCoTaskMem(groupBuffer.Pointer,
                             Marshal.SystemDefaultCharSize * groupLength)
                         );
@@ -97,10 +99,11 @@ namespace THNETII.WinApi.Native.WinSCard.Test
                 if (error != SCARD_S_SUCCESS)
                     throw new Win32Exception(error);
 
-                var groupString = groupBuffer.MarshalToString(groupLength);
-                string[] groupArray = groupString.Split('\0', StringSplitOptions.RemoveEmptyEntries);
-                foreach (string groupName in groupArray)
+                foreach (var (ptr, len) in groupBuffer.AsEnumerable(groupLength))
+                {
+                    string groupName = ptr.MarshalToString(len);
                     _ = groupName;
+                }
             }
             finally
             {

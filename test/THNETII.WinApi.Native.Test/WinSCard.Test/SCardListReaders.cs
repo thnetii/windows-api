@@ -19,12 +19,12 @@ namespace THNETII.WinApi.Native.WinSCard.Test
         {
             int error;
             int readersLength = 16;
-            LPSTR readersBuffer = default;
+            LPMSTR readersBuffer = default;
             try
             {
                 do
                 {
-                    readersBuffer = Pointer.Create<LPSTR>(
+                    readersBuffer = Pointer.Create<LPMSTR>(
                         Marshal.ReAllocCoTaskMem(readersBuffer.Pointer, 1 * readersLength)
                         );
                     error = SCardListReadersA(default, null, readersBuffer,
@@ -35,10 +35,11 @@ namespace THNETII.WinApi.Native.WinSCard.Test
                 if (error != SCARD_S_SUCCESS)
                     throw new Win32Exception(error);
 
-                var readersString = readersBuffer.MarshalToString(readersLength);
-                string[] readersArray = readersString.Split('\0', StringSplitOptions.RemoveEmptyEntries);
-                foreach (string readerName in readersArray)
+                foreach (var (readerPointer, readerLength) in readersBuffer.AsEnumerable(readersLength))
+                {
+                    string readerName = readerPointer.MarshalToString(readerLength);
                     _ = readerName;
+                }
             }
             finally
             {
@@ -51,12 +52,12 @@ namespace THNETII.WinApi.Native.WinSCard.Test
         {
             int error;
             int readersLength = 16;
-            LPWSTR readersBuffer = default;
+            LPMWSTR readersBuffer = default;
             try
             {
                 do
                 {
-                    readersBuffer = Pointer.Create<LPWSTR>(
+                    readersBuffer = Pointer.Create<LPMWSTR>(
                         Marshal.ReAllocCoTaskMem(readersBuffer.Pointer, 2 * readersLength)
                         );
                     error = SCardListReadersW(default, null, readersBuffer,
@@ -67,10 +68,11 @@ namespace THNETII.WinApi.Native.WinSCard.Test
                 if (error != SCARD_S_SUCCESS)
                     throw new Win32Exception(error);
 
-                var readersString = readersBuffer.MarshalToString(readersLength);
-                string[] readersArray = readersString.Split('\0', StringSplitOptions.RemoveEmptyEntries);
-                foreach (string readerName in readersArray)
+                foreach (var (readerPointer, readerLength) in readersBuffer.AsEnumerable(readersLength))
+                {
+                    string readerName = readerPointer.MarshalToString(readerLength);
                     _ = readerName;
+                }
             }
             finally
             {
@@ -83,12 +85,12 @@ namespace THNETII.WinApi.Native.WinSCard.Test
         {
             int error;
             int readersLength = 16;
-            LPTSTR readersBuffer = default;
+            LPMTSTR readersBuffer = default;
             try
             {
                 do
                 {
-                    readersBuffer = Pointer.Create<LPTSTR>(
+                    readersBuffer = Pointer.Create<LPMTSTR>(
                         Marshal.ReAllocCoTaskMem(readersBuffer.Pointer,
                             Marshal.SystemDefaultCharSize * readersLength)
                         );
@@ -100,10 +102,11 @@ namespace THNETII.WinApi.Native.WinSCard.Test
                 if (error != SCARD_S_SUCCESS)
                     throw new Win32Exception(error);
 
-                var readersString = readersBuffer.MarshalToString(readersLength);
-                string[] readersArray = readersString.Split('\0', StringSplitOptions.RemoveEmptyEntries);
-                foreach (string readerName in readersArray)
+                foreach (var (readerPointer, readerLength) in readersBuffer.AsEnumerable(readersLength))
+                {
+                    string readerName = readerPointer.MarshalToString(readerLength);
                     _ = readerName;
+                }
             }
             finally
             {

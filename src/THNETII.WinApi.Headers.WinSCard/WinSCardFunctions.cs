@@ -4148,5 +4148,16 @@ namespace THNETII.WinApi.Native.WinSCard
             out int pcTransmitCount
             );
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 805
+        //
+        ////////////////////////////////////////////////////////////////////////////////
+        //
+        //  Reader Control Routines
+        //
+        //      The following services provide for direct, low-level manipulation of the
+        //      reader by the calling application allowing it control over the
+        //      attributes of the communications with the card.
+        //
+
     }
 }

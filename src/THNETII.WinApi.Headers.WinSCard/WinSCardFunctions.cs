@@ -4119,5 +4119,34 @@ namespace THNETII.WinApi.Native.WinSCard
             ref int pcbRecvLength
             );
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 798
+        #region SCardGetTransmitCount function
+        /// <summary>
+        /// The <see cref="SCardGetTransmitCount"/> function retrieves the number of transmit operations that have completed since the specified card reader was inserted.
+        /// </summary>
+        /// <param name="hCard">A handle to a smart card obtained from a previous call to <see cref="SCardConnect"/>.</param>
+        /// <param name="pcTransmitCount">The number of transmit operations that have completed since the specified card reader was inserted.</param>
+        /// <returns>
+        /// <para>If the function succeeds, it returns <see cref="SCARD_S_SUCCESS"/>.</para>
+        /// <para>If the function fails, it returns an error code. For more information, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/authentication-return-values">Smart Card Return Values</a>.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows Vista [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2008 [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/winscard/nf-winscard-scardgettransmitcount">SCardGetTransmitCount function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi)]
+        public static extern int SCardGetTransmitCount(
+            [In] SCARDHANDLE hCard,
+            out int pcTransmitCount
+            );
+        #endregion
     }
 }

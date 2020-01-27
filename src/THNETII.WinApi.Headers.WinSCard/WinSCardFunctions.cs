@@ -4159,5 +4159,66 @@ namespace THNETII.WinApi.Native.WinSCard
         //      attributes of the communications with the card.
         //
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 815
+        #region SCardControl function
+        /// <summary>
+        /// The <see cref="SCardControl"/> function gives you direct control of the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">reader</a>. You can call it any time after a successful call to <see cref="SCardConnect"/> and before a successful call to <see cref="SCardDisconnect"/>. The effect on the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">state</a> of the reader depends on the control code.
+        /// </summary>
+        /// <param name="hCard">Reference value returned from <see cref="SCardConnect"/>.</param>
+        /// <param name="dwControlCode">Control code for the operation. This value identifies the specific operation to be performed.</param>
+        /// <param name="lpInBuffer">A buffer that contains the data required to perform the operation. This parameter can be an empty span if the <paramref name="dwControlCode"/> parameter specifies an operation that does not require input data.</param>
+        /// <param name="lpOutBuffer">A buffer that receives the operation's output data. This parameter can be an empty span if the <paramref name="dwControlCode"/> parameter specifies an operation that does not produce output data.</param>
+        /// <param name="lpBytesReturned">Receives the size, in bytes, of the data stored into the buffer pointed to by <paramref name="lpOutBuffer"/>.</param>
+        /// <returns>
+        /// <para>If the function succeeds, it returns <see cref="SCARD_S_SUCCESS"/>.</para>
+        /// <para>If the function fails, it returns an error code. For more information, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/authentication-return-values">Smart Card Return Values</a>.</para>
+        /// </returns>
+        /// <remarks>
+        /// The <see cref="SCardControl"/> function is a direct card access function. For more information on other direct access functions, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/direct-card-access-functions">Direct Card Access Functions</a>.
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows XP [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/winscard/nf-winscard-scardcontrol">SCardControl function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="SCardConnect"/>
+        /// <seealso cref="SCardDisconnect"/>
+        public static unsafe int SCardControl(
+            SCARDHANDLE hCard,
+            int dwControlCode,
+            ReadOnlySpan<byte> lpInBuffer,
+            Span<byte> lpOutBuffer,
+            out int lpBytesReturned
+            )
+        {
+            fixed (byte* ptrInBuffer = lpInBuffer)
+            fixed (byte* ptrOutBuffer = lpOutBuffer)
+                return SCardControl(
+                    hCard,
+                    dwControlCode,
+                    ptrInBuffer,
+                    lpInBuffer.Length,
+                    ptrOutBuffer,
+                    lpOutBuffer.Length,
+                    out lpBytesReturned
+                    );
+        }
+
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi)]
+        private static extern unsafe int SCardControl(
+            [In] SCARDHANDLE hCard,
+            [In] int dwControlCode,
+            [In] byte* lpInBuffer,
+            [In] int cbInBufferSize,
+            [Out] byte* lpOutBuffer,
+            [In] int cbOutBufferSize,
+            out int lpBytesReturned
+            );
+        #endregion
     }
 }

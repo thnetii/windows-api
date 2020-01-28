@@ -4220,5 +4220,83 @@ namespace THNETII.WinApi.Native.WinSCard
             out int lpBytesReturned
             );
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 825
+        #region SCardGetAttrib function
+        /// <summary>
+        /// The <see cref="SCardGetAttrib"/> function retrieves the current reader attributes for the given handle. It does not affect the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">state</a> of the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">reader</a>, driver, or <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">card</a>.
+        /// </summary>
+        /// <param name="hCard">Reference value returned from <see cref="SCardConnect"/>.</param>
+        /// <param name="dwAttrId">Identifier for the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/a-gly">attribute</a> to get. Note that vendors may not support all attributes.</param>
+        /// <param name="pbAttr">A buffer that receives the attribute whose ID is supplied in <paramref name="dwAttrId"/>. If this value is an empty span, <see cref="SCardGetAttrib"/> writes the length of the buffer that would have been returned if this parameter had not been an empty span to <paramref name="pcbAttrLen"/>, and returns a success code.</param>
+        /// <param name="pcbAttrLen">Receives the actual length of the received attribute.</param>
+        /// <returns>
+        /// This function returns different values depending on whether it succeeds or fails.
+        /// <list type="table">
+        /// <listheader><term>Return code</term><description>Description</description></listheader>
+        /// <item><term>Success</term><description><see cref=" SCARD_S_SUCCESS"/>.</description></item>
+        /// <item><term>Attribute value not supported.</term><description><see cref="WinErrorConstants.ERROR_NOT_SUPPORTED"/>.</description></item>
+        /// <item><term>Other Failure</term><description>An error code. For more information, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/authentication-return-values">Smart Card Return Values</a>.</description></item>
+        /// </list>
+        /// </returns>
+        /// <remarks>
+        /// The <see cref="SCardGetAttrib"/> function is a direct card access function. For more information on other direct access functions, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/direct-card-access-functions">Direct Card Access Functions</a>.
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows XP [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/winscard/nf-winscard-scardgetattrib">SCardGetAttrib function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="SCardConnect"/>
+        /// <seealso cref="SCardFreeMemory"/>
+        /// <seealso cref="SCardSetAttrib"/>
+        public static unsafe int SCardGetAttrib(
+            SCARDHANDLE hCard,
+            SCARD_ATTR_VALUE dwAttrId,
+            [Optional] Span<byte> pbAttr,
+            out int pcbAttrLen
+            )
+        {
+            pcbAttrLen = pbAttr.Length;
+            fixed (byte* ptrAttr = pbAttr)
+                return SCardGetAttrib(
+                    hCard,
+                    dwAttrId,
+                    ptrAttr,
+                    ref pcbAttrLen
+                    );
+        }
+        /// <inheritdoc cref="SCardGetAttrib"/>
+        public static unsafe int SCardGetAttrib(
+            SCARDHANDLE hCard,
+            SCARD_ATTR_VALUE dwAttrId,
+            out ReadOnlySpan<byte> pbAttr
+            )
+        {
+            int scard_status;
+            int pcbAttrLen = SCARD_AUTOALLOCATE;
+            void* ptrAttr;
+            scard_status = SCardGetAttrib(
+                hCard,
+                dwAttrId,
+                (byte*)&ptrAttr,
+                ref pcbAttrLen
+                );
+            pbAttr = new ReadOnlySpan<byte>(ptrAttr, pcbAttrLen);
+            return scard_status;
+        }
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi)]
+        private static extern unsafe int SCardGetAttrib(
+            [In] SCARDHANDLE hCard,
+            [In, MarshalAs(UnmanagedType.U4)]
+            SCARD_ATTR_VALUE dwAttrId,
+            [Out, Optional] byte* pbAttr,
+            ref int pcbAttrLen
+            );
+        #endregion
     }
 }

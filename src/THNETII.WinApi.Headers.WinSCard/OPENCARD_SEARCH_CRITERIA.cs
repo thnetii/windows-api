@@ -41,13 +41,11 @@ namespace THNETII.WinApi.Native.WinSCard
         /// <inheritdoc cref="OPENCARD_SEARCH_CRITERIA.nMaxCardNames"/>
         public int nMaxCardNames;
         /// <inheritdoc cref="OPENCARD_SEARCH_CRITERIA.lpfnCheck"/>
-        [MarshalAs(UnmanagedType.FunctionPtr)]
         public LPOCNCHKPROC lpfnCheck;
         /// <inheritdoc cref="OPENCARD_SEARCH_CRITERIA.lpfnConnect"/>
         [MarshalAs(UnmanagedType.FunctionPtr)]
         public LPOCNCONNPROCA lpfnConnect;
         /// <inheritdoc cref="OPENCARD_SEARCH_CRITERIA.lpfnDisconnect"/>
-        [MarshalAs(UnmanagedType.FunctionPtr)]
         public LPOCNDSCPROC lpfnDisconnect;
         /// <inheritdoc cref="OPENCARD_SEARCH_CRITERIA.pvUserData"/>
         public IntPtr pvUserData;
@@ -64,7 +62,7 @@ namespace THNETII.WinApi.Native.WinSCard
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public unsafe struct OPENCARD_SEARCH_CRITERIAW
     {
-        public static readonly int SizeOf = SizeOf<OPENCARD_SEARCH_CRITERIAA>.Bytes;
+        public static readonly int SizeOf = SizeOf<OPENCARD_SEARCH_CRITERIAW>.Bytes;
 
         /// <inheritdoc cref="OPENCARD_SEARCH_CRITERIA.dwStructSize"/>
         public int dwStructSize;
@@ -83,13 +81,10 @@ namespace THNETII.WinApi.Native.WinSCard
         /// <inheritdoc cref="OPENCARD_SEARCH_CRITERIA.nMaxCardNames"/>
         public int nMaxCardNames;
         /// <inheritdoc cref="OPENCARD_SEARCH_CRITERIA.lpfnCheck"/>
-        [MarshalAs(UnmanagedType.FunctionPtr)]
         public LPOCNCHKPROC lpfnCheck;
         /// <inheritdoc cref="OPENCARD_SEARCH_CRITERIA.lpfnConnect"/>
-        [MarshalAs(UnmanagedType.FunctionPtr)]
         public LPOCNCONNPROCA lpfnConnect;
         /// <inheritdoc cref="OPENCARD_SEARCH_CRITERIA.lpfnDisconnect"/>
-        [MarshalAs(UnmanagedType.FunctionPtr)]
         public LPOCNDSCPROC lpfnDisconnect;
         /// <inheritdoc cref="OPENCARD_SEARCH_CRITERIA.pvUserData"/>
         public IntPtr pvUserData;
@@ -160,20 +155,17 @@ namespace THNETII.WinApi.Native.WinSCard
         /// </summary>
         public int nMaxCardNames;
         /// <summary>
-        /// The caller's card verify routine. If no special card verification is required, this pointer is <see langword="null"/>. If the card is rejected by the verify routine, <see langword="false"/> is returned, and the card will be disconnected. If the card is accepted by the verify routine, <see langword="true"/> is returned.
+        /// A pointer to the caller's card verify routine. If no special card verification is required, this pointer is <see langword="null"/>. If the card is rejected by the verify routine, <see langword="false"/> is returned, and the card will be disconnected. If the card is accepted by the verify routine, <see langword="true"/> is returned.
         /// </summary>
-        [MarshalAs(UnmanagedType.FunctionPtr)]
         public LPOCNCHKPROC lpfnCheck;      // OPTIONAL if NULL no user check will be performed.
         /// <summary>
-        /// The caller's card connect routine. If the caller needs to perform additional processing to connect to the card, this field is set to the user's connect function. If the connect function is successful, the card is left connected and initialized, and the card handle is returned.
+        /// A pointer to the caller's card connect routine. If the caller needs to perform additional processing to connect to the card, this field is set to the user's connect function. If the connect function is successful, the card is left connected and initialized, and the card handle is returned.
         /// </summary>
-        [MarshalAs(UnmanagedType.FunctionPtr)]
         public LPOCNCONNPROCA lpfnConnect;  // OPTIONAL if lpfnConnect is provided,
                                             //          lpfnDisconnect must also be set.
         /// <summary>
-        /// The caller's card disconnect routine.
+        /// A pointer to the caller's card disconnect routine.
         /// </summary>
-        [MarshalAs(UnmanagedType.FunctionPtr)]
         public LPOCNDSCPROC lpfnDisconnect;
         /// <summary>
         /// Pointer to user data. This pointer is passed back to the caller on the Connect, Check, and Disconnect routines.

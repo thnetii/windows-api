@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Runtime.InteropServices;
+using THNETII.InteropServices.Memory;
 
 namespace THNETII.WinApi.Native.WinSCard
 {
@@ -9,9 +10,15 @@ namespace THNETII.WinApi.Native.WinSCard
     /// <param name="pvUserData">pointer to user data passed in the parameter block</param>
     [UnmanagedFunctionPointer(CallingConvention.Winapi)]
     [return: MarshalAs(UnmanagedType.Bool)]
-    public delegate bool LPOCNCHKPROC(
+    public delegate bool OCNCHKPROC(
         [In] SCARDCONTEXT hSCardContext,
         [In] SCARDHANDLE hCard,
         [In] IntPtr pvUserData
         );
+
+    [StructLayout(LayoutKind.Sequential)]
+    public struct LPOCNCHKPROC : IFunctionPointer<OCNCHKPROC>
+    {
+        public IntPtr Pointer { get; }
+    }
 }

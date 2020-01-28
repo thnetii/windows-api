@@ -1,21 +1,23 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 
+using THNETII.InteropServices.Memory;
+
 namespace THNETII.WinApi.Native.WinSCard
 {
     // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 884
-    /// <inheritdoc cref="LPOCNCONNPROC"/>
+    /// <inheritdoc cref="OCNCONNPROC"/>
     [UnmanagedFunctionPointer(CallingConvention.Winapi, CharSet = CharSet.Ansi)]
-    public delegate SCARDHANDLE LPOCNCONNPROCA(
+    public delegate SCARDHANDLE OCNCONNPROCA(
         [In] SCARDCONTEXT hSCardContext,
         [In] LPSTR szReader,
         [In] LPMSTR mszCards,
         [In] IntPtr pvUserData
         );
     // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 885
-    /// <inheritdoc cref="LPOCNCONNPROC"/>
+    /// <inheritdoc cref="OCNCONNPROC"/>
     [UnmanagedFunctionPointer(CallingConvention.Winapi, CharSet = CharSet.Unicode)]
-    public delegate SCARDHANDLE LPOCNCONNPROCW(
+    public delegate SCARDHANDLE OCNCONNPROCW(
         [In] SCARDCONTEXT hSCardContext,
         [In] LPWSTR szReader,
         [In] LPMWSTR mszCards,
@@ -34,10 +36,26 @@ namespace THNETII.WinApi.Native.WinSCard
 #else
     [UnmanagedFunctionPointer(CallingConvention.Winapi)]
 #endif // !NETSTANDARD1_3
-    public delegate SCARDHANDLE LPOCNCONNPROC(
+    public delegate SCARDHANDLE OCNCONNPROC(
         [In] SCARDCONTEXT hSCardContext,
         [In] LPTSTR szReader,
         [In] LPMTSTR mszCards,
         [In] IntPtr pvUserData
         );
+
+    [StructLayout(LayoutKind.Sequential)]
+    public struct LPOCNCONNPROCA : IFunctionPointer<OCNCONNPROCA>
+    {
+        public IntPtr Pointer { get; }
+    }
+    [StructLayout(LayoutKind.Sequential)]
+    public struct LPOCNCONNPROCW : IFunctionPointer<OCNCONNPROCW>
+    {
+        public IntPtr Pointer { get; }
+    }
+    [StructLayout(LayoutKind.Sequential)]
+    public struct LPOCNCONNPROC : IFunctionPointer<OCNCONNPROC>
+    {
+        public IntPtr Pointer { get; }
+    }
 }

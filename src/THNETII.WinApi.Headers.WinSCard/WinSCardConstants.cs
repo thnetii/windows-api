@@ -148,5 +148,16 @@ namespace THNETII.WinApi.Native.WinSCard
         public const int SCARD_RESET_CARD = 1; // Reset the card on close
         public const int SCARD_UNPOWER_CARD = 2; // Power down the card on close
         public const int SCARD_EJECT_CARD = 3; // Eject the card on close
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 875
+        // Defined constants
+        // Flags
+        public const int SC_DLG_MINIMAL_UI = 0x01;
+        public const int SC_DLG_NO_UI = 0x02;
+        public const int SC_DLG_FORCE_UI = 0x04;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 881
+        public const int SCERR_NOCARDNAME = 0x4000;
+        public const int SCERR_NOGUIDS = 0x8000;
     }
 }

@@ -4396,5 +4396,15 @@ namespace THNETII.WinApi.Native.WinSCard
             ReadOnlySpan<byte> pbAttr
             ) => SCardSetAttrib(hCard, dwAttrId, pbAttr);
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 866
+        //
+        ////////////////////////////////////////////////////////////////////////////////
+        //
+        //  Smart Card Dialog definitions
+        //
+        //      The following section contains structures and  exported function
+        //      declarations for the Smart Card Common Dialog dialog.
+        //
+
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Text;
 
@@ -4406,5 +4407,85 @@ namespace THNETII.WinApi.Native.WinSCard
         //      declarations for the Smart Card Common Dialog dialog.
         //
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 1141
+        //
+        // SCardUIDlgSelectCard replaces GetOpenCardName
+        //
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 1145
+        #region SCardUIDlgSelectCardA function
+        /// <inheritdoc cref="SCardUIDlgSelectCard"/>
+        [DllImport(SCardDlg, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi)]
+        public static extern int SCardUIDlgSelectCardA(
+            ref OPENCARDNAME_EXA Arg1
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 1148
+        #region SCardUIDlgSelectCardW function
+        /// <inheritdoc cref="SCardUIDlgSelectCard"/>
+        [DllImport(SCardDlg, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Unicode)]
+        public static extern int SCardUIDlgSelectCardW(
+            ref OPENCARDNAME_EXW Arg1
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 1151
+        #region SCardUIDlgSelectCardW function
+        /// <summary>
+        /// The <see cref="SCardUIDlgSelectCard"/> function displays the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card</a> <strong>Select Card</strong> dialog box.
+        /// </summary>
+        /// <param name="pDlgStruc">Reference to the <see cref="OPENCARDNAME_EX"/> structure for the <strong>Select Card</strong> dialog box.</param>
+        /// <returns>
+        /// <para>If the function successfully displays the <strong>Select Card</strong> dialog box, the return value is  <see cref="SCARD_S_SUCCESS"/>.</para>
+        /// <para>If the function fails, it returns an error code. For more information, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/authentication-return-values">Smart Card Return Values</a>.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>
+        /// The <see cref="SCardUIDlgSelectCard"/> function provides a method for connecting to a specific <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card</a>. When called, this function performs a search for appropriate smart cards matching the <see cref="OPENCARD_SEARCH_CRITERIA"/> member specified by the <paramref name="pDlgStruc"/> parameter. Depending on the <see cref="OPENCARDNAME_EX.dwFlags"/> member of <paramref name="pDlgStruc"/>, this function takes the following actions.
+        /// <list type="table">
+        /// <listheader><term>Value</term><description>Action</description></listheader>
+        /// <item><term><see cref="SC_DLG_FLAGS.SC_DLG_FORCE_UI"/></term><description>Connects to the card selected by the user from the smart card Select Card dialog box.</description></item>
+        /// <item><term><see cref="SC_DLG_FLAGS.SC_DLG_MINIMAL_UI"/></term><description>Selects the smart card if only one smart card meets the criteria, or returns information about the user's selection if more than one smart card meets the criteria.</description></item>
+        /// <item><term><see cref="SC_DLG_FLAGS.SC_DLG_NO_UI"/></term><description>Selects the first available card.</description></item>
+        /// </list>
+        /// </para>
+        /// <para>This function replaces <see cref="GetOpenCardName"/>. The <see cref="GetOpenCardName"/> function is maintained for backward compatibility with version 1.0 of the Microsoft Smart Card Base Components.</para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows XP [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/winscard/nf-winscard-scarduidlgselectcardw">SCardUIDlgSelectCardW function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="OPENCARDNAME_EX"/>
+#if !NETSTANDARD1_3
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
+        public static extern
+#else
+        public static unsafe
+#endif // !NETSTANDARD1_3
+        int SCardUIDlgSelectCard(
+            ref OPENCARDNAME_EX pDlgStruc
+            )
+#if !NETSTANDARD1_3
+            ;
+#else
+        {
+            fixed (void* ptrDlgStruc = &pDlgStruc)
+                return Marshal.SystemDefaultCharSize switch
+                {
+                    1 => SCardUIDlgSelectCardA(
+                        ref Unsafe.AsRef<OPENCARDNAME_EXA>(ptrDlgStruc)
+                        ),
+                    2 => SCardUIDlgSelectCardW(
+                        ref Unsafe.AsRef<OPENCARDNAME_EXW>(ptrDlgStruc)
+                        ),
+                    _ => throw new PlatformNotSupportedException()
+                };
+        }
+#endif // !NETSTANDARD1_3
+        #endregion
     }
 }

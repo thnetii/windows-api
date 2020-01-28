@@ -6,7 +6,7 @@ int main(int argc, char* argv[])
     const int size = sizeof(instance);
     const int value = SCARD_ABSENT;
 
-    const void* ptr = SCardListReaders;
+    const void* ptr = GetOpenCardName;
 
     return EXIT_SUCCESS;
 }

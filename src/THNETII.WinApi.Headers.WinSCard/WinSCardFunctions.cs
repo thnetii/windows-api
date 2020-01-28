@@ -4298,5 +4298,33 @@ namespace THNETII.WinApi.Native.WinSCard
             ref int pcbAttrLen
             );
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 831
+        #region SCardGetReaderCapabilities macro
+        //
+        // NOTE:    The routine SCardGetAttrib's name differs from the PC/SC definition.
+        //          It should be:
+        //
+        //              extern WINSCARDAPI LONG WINAPI
+        //              SCardGetReaderCapabilities(
+        //                  _In_    SCARDHANDLE hCard,
+        //                  _In_    DWORD dwTag,
+        //                  _Out_   LPBYTE pbAttr,
+        //                  _Inout_ LPDWORD pcbAttrLen);
+        //
+        //          Here's a work-around MACRO:
+        /// <inheritdoc cref="SCardGetAttrib"/>
+        public static int SCardGetReaderCapabilities(
+            SCARDHANDLE hCard,
+            SCARD_ATTR_VALUE dwAttrId,
+            Span<byte> pbAttr,
+            out int pcbAttrLen
+            ) => SCardGetAttrib(hCard, dwAttrId, pbAttr, out pcbAttrLen);
+        /// <inheritdoc cref="SCardGetAttrib"/>
+        public static int SCardGetReaderCapabilities(
+            SCARDHANDLE hCard,
+            SCARD_ATTR_VALUE dwAttrId,
+            out ReadOnlySpan<byte> pbAttr
+            ) => SCardGetAttrib(hCard, dwAttrId, out pbAttr);
+        #endregion
     }
 }

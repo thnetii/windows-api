@@ -8,8 +8,7 @@ namespace THNETII.WinApi.Native.WinSCard
     /// <param name="hCard">card handle</param>
     /// <param name="pvUserData">pointer to user data passed in the parameter block</param>
     [UnmanagedFunctionPointer(CallingConvention.Winapi)]
-    [return: MarshalAs(UnmanagedType.Bool)]
-    public delegate bool LPOCNDSCPROC(
+    public delegate void LPOCNDSCPROC(
         [In] SCARDCONTEXT hSCardContext,
         [In] SCARDHANDLE hCard,
         [In] IntPtr pvUserData

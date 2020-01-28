@@ -194,6 +194,9 @@ namespace THNETII.WinApi.Native.WinSmcrd
         public static readonly SCARD_ATTR_VALUE SCARD_ATTR_DEVICE_SYSTEM_NAME_A = new SCARD_ATTR_VALUE(SCARD_CLASS_SYSTEM, 0x0004);
         public static readonly SCARD_ATTR_VALUE SCARD_ATTR_DEVICE_FRIENDLY_NAME_W = new SCARD_ATTR_VALUE(SCARD_CLASS_SYSTEM, 0x0005);
         public static readonly SCARD_ATTR_VALUE SCARD_ATTR_DEVICE_SYSTEM_NAME_W = new SCARD_ATTR_VALUE(SCARD_CLASS_SYSTEM, 0x0006);
+        /// <summary>
+        ///  Suppress sending of <a href="https://docs.microsoft.com/windows/desktop/SecGloss/t-gly">T=1</a> IFSD packet from the reader to the card. (Can be used if the currently inserted card does not support an IFSD request.) 
+        /// </summary>
         public static readonly SCARD_ATTR_VALUE SCARD_ATTR_SUPRESS_T1_IFS_REQUEST = new SCARD_ATTR_VALUE(SCARD_CLASS_SYSTEM, 0x0007);
 
         public static readonly SCARD_ATTR_VALUE SCARD_PERF_NUM_TRANSMISSIONS = new SCARD_ATTR_VALUE(SCARD_CLASS_PERF, 0x0001);

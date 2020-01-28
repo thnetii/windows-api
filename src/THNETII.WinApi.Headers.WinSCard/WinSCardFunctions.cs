@@ -4326,5 +4326,54 @@ namespace THNETII.WinApi.Native.WinSCard
             out ReadOnlySpan<byte> pbAttr
             ) => SCardGetAttrib(hCard, dwAttrId, out pbAttr);
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 845
+        #region SCardSetAttrib function
+        /// <summary>
+        /// The <see cref="SCardSetAttrib"/> function sets the given <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">reader</a> attribute for the given handle. It does not affect the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">state</a> of the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">reader</a>, <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">reader driver</a>, or <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card</a>. Not all attributes are supported by all readers (nor can they be set at all times) as many of the attributes are under direct control of the transport protocol.
+        /// </summary>
+        /// <param name="hCard">Reference value returned from <see cref="SCardConnect"/>.</param>
+        /// <param name="dwAttrId">Identifier for the attribute to set. The values are write-only. Note that vendors may not support all attributes.</param>
+        /// <param name="pbAttr">A buffer that supplies the attribute whose ID is supplied in <paramref name="dwAttrId"/>.</param>
+        /// <returns>
+        /// <para>If the function succeeds, it returns <see cref="SCARD_S_SUCCESS"/>.</para>
+        /// <para>If the function fails, it returns an error code. For more information, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/authentication-return-values">Smart Card Return Values</a>.</para>
+        /// </returns>
+        /// <remarks>
+        /// The <see cref="SCardSetAttrib"/> function is a direct card access function. For more information on other direct access functions, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/direct-card-access-functions">Direct Card Access Functions</a>.
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows XP [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/winscard/nf-winscard-scardsetattrib">SCardSetAttrib function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="SCardConnect"/>
+        /// <seealso cref="SCardGetAttrib"/>
+        public static unsafe int SCardSetAttrib(
+            SCARDHANDLE hCard,
+            SCARD_ATTR_VALUE dwAttrId,
+            ReadOnlySpan<byte> pbAttr
+            )
+        {
+            fixed (byte* ptrAttr = pbAttr)
+                return SCardSetAttrib(
+                    hCard,
+                    dwAttrId,
+                    ptrAttr,
+                    pbAttr.Length
+                    );
+        }
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi)]
+        private static extern unsafe int SCardSetAttrib(
+            [In] SCARDHANDLE hCard,
+            [In, MarshalAs(UnmanagedType.U4)] SCARD_ATTR_VALUE dwAttrId,
+            [In] byte* pbAttr,
+            [In] int cbAttrLen
+            );
+        #endregion
     }
 }

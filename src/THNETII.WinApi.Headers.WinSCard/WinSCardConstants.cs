@@ -159,5 +159,18 @@ namespace THNETII.WinApi.Native.WinSCard
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 881
         public const int SCERR_NOCARDNAME = 0x4000;
         public const int SCERR_NOGUIDS = 0x8000;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 1011
+        /// <summary>
+        /// Smart Card Reader Selection Provider
+        /// <para>
+        /// Only UNICODE is supported. Invoke smart card reader selection provider by calling
+        /// <see cref="CredUIPromptForWindowsCredentials"/> supplying <see cref="SCARD_READER_SEL_AUTH_PACKAGE"/> as
+        /// <em>pulAuthPackage</em>, an instance of <see cref="READER_SEL_REQUEST"/> as <em>pvInAuthBuffer</em> and setting
+        /// <see cref="CREDUIWIN_AUTHPACKAGE_ONLY"/> in <em>dwFlags</em>. Upon successful return, an instance of
+        /// <see cref="READER_SEL_RESPONSE"/> will be returned in <em>ppvOutAuthBuffer</em>.
+        /// </para>
+        /// </summary>
+        public const int SCARD_READER_SEL_AUTH_PACKAGE = -629;
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Runtime.InteropServices;
+
 using THNETII.InteropServices.Bitwise;
 
 namespace THNETII.WinApi.Native.WinSmcrd
@@ -7,7 +8,7 @@ namespace THNETII.WinApi.Native.WinSmcrd
     using static SCARD_ATTR_CLASS;
 
     [StructLayout(LayoutKind.Sequential)]
-    public struct SCARD_ATTR_VALUE
+    public readonly struct SCARD_ATTR_VALUE
     {
         private static readonly Bitfield32 classBitfield = Bitfield32.HighBits(16);
         private static readonly Bitfield32 tagBitfield = Bitfield32.LowBits(16);
@@ -21,7 +22,10 @@ namespace THNETII.WinApi.Native.WinSmcrd
             tagBitfield.Write(ref valueField, tag);
         }
 
-        public int Value => valueField;
+        public readonly int Value => valueField;
+        public readonly SCARD_ATTR_CLASS Class =>
+            (SCARD_ATTR_CLASS)classBitfield.Read(valueField);
+        public readonly int Tag => tagBitfield.Read(valueField);
 
         /// <summary>
         /// Vendor name.

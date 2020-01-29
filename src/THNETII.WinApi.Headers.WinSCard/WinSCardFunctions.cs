@@ -4552,5 +4552,12 @@ namespace THNETII.WinApi.Native.WinSCard
         }
 #endif // !NETSTANDARD1_3
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 1243
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        #region SCardDlgExtendedError function
+        [DllImport(SCardDlg, CallingConvention = CallingConvention.Winapi)]
+        public static extern int SCardDlgExtendedError();
+        #endregion
     }
 }

@@ -4559,5 +4559,267 @@ namespace THNETII.WinApi.Native.WinSCard
         [DllImport(SCardDlg, CallingConvention = CallingConvention.Winapi)]
         public static extern int SCardDlgExtendedError();
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 1248
+        //
+        // Smartcard Caching API
+        //
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 1252
+        #region SCardReadCacheA function
+        /// <inheritdoc cref="SCardReadCache"/>
+        public static unsafe int SCardReadCacheA(
+            SCARDCONTEXT hContext,
+            in Guid CardIdentifier,
+            int FreshnessCounter,
+            string LookupName,
+            Span<byte> Data,
+            out int DataLen
+            )
+        {
+            DataLen = Data.Length;
+            fixed (byte* pData = Data)
+                return SCardReadCacheA(
+                    hContext,
+                    CardIdentifier,
+                    FreshnessCounter,
+                    LookupName,
+                    pData,
+                    ref DataLen
+                    );
+        }
+        /// <inheritdoc cref="SCardReadCacheA"/>
+        public static unsafe int SCardReadCacheA(
+            SCARDCONTEXT hContext,
+            in Guid CardIdentifier,
+            int FreshnessCounter,
+            LPSTR LookupName,
+            Span<byte> Data,
+            out int DataLen
+            )
+        {
+            DataLen = Data.Length;
+            fixed (byte* pData = Data)
+                return SCardReadCacheA(
+                    hContext,
+                    CardIdentifier,
+                    FreshnessCounter,
+                    LookupName,
+                    pData,
+                    ref DataLen
+                    );
+        }
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi)]
+        private static extern unsafe int SCardReadCacheA(
+            [In] SCARDCONTEXT hContext,
+            in Guid CardIdentifier,
+            [In] int FreshnessCounter,
+            [In] string LookupName,
+            byte* Data,
+            ref int DataLen
+            );
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi)]
+        private static extern unsafe int SCardReadCacheA(
+            [In] SCARDCONTEXT hContext,
+            in Guid CardIdentifier,
+            [In] int FreshnessCounter,
+            [In] LPSTR LookupName,
+            byte* Data,
+            ref int DataLen
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 1260
+        #region SCardReadCacheW function
+        /// <inheritdoc cref="SCardReadCache"/>
+        public static unsafe int SCardReadCacheW(
+            SCARDCONTEXT hContext,
+            in Guid CardIdentifier,
+            int FreshnessCounter,
+            string LookupName,
+            Span<byte> Data,
+            out int DataLen
+            )
+        {
+            DataLen = Data.Length;
+            fixed (byte* pData = Data)
+                return SCardReadCacheW(
+                    hContext,
+                    CardIdentifier,
+                    FreshnessCounter,
+                    LookupName,
+                    pData,
+                    ref DataLen
+                    );
+        }
+        /// <inheritdoc cref="SCardReadCacheW"/>
+        public static unsafe int SCardReadCacheW(
+            SCARDCONTEXT hContext,
+            in Guid CardIdentifier,
+            int FreshnessCounter,
+            LPWSTR LookupName,
+            Span<byte> Data,
+            out int DataLen
+            )
+        {
+            DataLen = Data.Length;
+            fixed (byte* pData = Data)
+                return SCardReadCacheW(
+                    hContext,
+                    CardIdentifier,
+                    FreshnessCounter,
+                    LookupName,
+                    pData,
+                    ref DataLen
+                    );
+        }
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Unicode)]
+        private static extern unsafe int SCardReadCacheW(
+            [In] SCARDCONTEXT hContext,
+            in Guid CardIdentifier,
+            [In] int FreshnessCounter,
+            [In] string LookupName,
+            byte* Data,
+            ref int DataLen
+            );
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Unicode)]
+        private static extern unsafe int SCardReadCacheW(
+            [In] SCARDCONTEXT hContext,
+            in Guid CardIdentifier,
+            [In] int FreshnessCounter,
+            [In] LPWSTR LookupName,
+            byte* Data,
+            ref int DataLen
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 1260
+        #region SCardReadCache function
+        /// <summary>
+        /// The <see cref="SCardReadCache"/> function retrieves the value portion of a name-value pair from the global cache maintained by the <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/smart-card-resource-manager">Smart Card Resource Manager</a>.
+        /// </summary>
+        /// <param name="hContext">A handle that identifies the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">resource manager context</a>. The resource manager context is set by a previous call to <see cref="SCardEstablishContext"/>.</param>
+        /// <param name="CardIdentifier">A value that uniquely identifies a smart card. The name-value pair that this function reads from the global cache is associated with this smart card.</param>
+        /// <param name="FreshnessCounter">The current revision of the cached data.</param>
+        /// <param name="LookupName">A pointer to a null-terminated string that contains the name portion of the name-value pair for which to retrieve the value portion.</param>
+        /// <param name="Data">A span of byte values that contain the value portion of the name-value pair specified by the <paramref name="LookupName"/> parameter.</param>
+        /// <param name="DataLen">Receives the size, in bytes, of the <paramref name="Data"/> buffer.</param>
+        /// <returns>
+        /// <para>If the function succeeds, it returns <see cref="SCARD_S_SUCCESS"/>.</para>
+        /// <para>
+        /// If the function fails, it returns one of the following error codes. For more information, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/authentication-return-values">Smart Card Return Values</a>.
+        /// <list type="table">
+        /// <listheader><term>Return code/value</term><description>Description</description></listheader>
+        /// <item><term><see cref="SCARD_W_CACHE_ITEM_NOT_FOUND"/><br/><c>0x80100070</c></term><description>The specified name-value pair was not found in the global cache.</description></item>
+        /// <item><term><see cref="SCARD_W_CACHE_ITEM_STALE"/><br/><c>0x80100071</c></term><description>The specified name-value pair was older than requested and has been deleted from the cache.</description></item>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows Vista [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2008 [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/winscard/nf-winscard-scardreadcachew">SCardReadCacheW function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="SCardWriteCache"/>
+        public static unsafe int SCardReadCache(
+            SCARDCONTEXT hContext,
+            in Guid CardIdentifier,
+            int FreshnessCounter,
+            string LookupName,
+            Span<byte> Data,
+            out int DataLen
+            )
+        {
+            DataLen = Data.Length;
+            fixed (byte* pData = Data)
+                return SCardReadCache(
+                    hContext,
+                    CardIdentifier,
+                    FreshnessCounter,
+                    LookupName,
+                    pData,
+                    ref DataLen
+                    );
+        }
+        /// <inheritdoc cref="SCardReadCache"/>
+        public static unsafe int SCardReadCache(
+            SCARDCONTEXT hContext,
+            in Guid CardIdentifier,
+            int FreshnessCounter,
+            LPTSTR LookupName,
+            Span<byte> Data,
+            out int DataLen
+            )
+        {
+            DataLen = Data.Length;
+            fixed (byte* pData = Data)
+                return SCardReadCache(
+                    hContext,
+                    CardIdentifier,
+                    FreshnessCounter,
+                    LookupName,
+                    pData,
+                    ref DataLen
+                    );
+        }
+#if !NETSTANDARD1_3
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
+        private static extern unsafe
+#else
+        private static unsafe
+#endif // !NETSTANDARD1_3
+        int SCardReadCache(
+            [In] SCARDCONTEXT hContext,
+            in Guid CardIdentifier,
+            [In] int FreshnessCounter,
+            [In] string LookupName,
+            byte* Data,
+            ref int DataLen
+            )
+#if !NETSTANDARD1_3
+            ;
+#else
+            => Marshal.SystemDefaultCharSize switch
+            {
+                1 => SCardReadCacheA(hContext, CardIdentifier, FreshnessCounter,
+                    LookupName, Data, ref DataLen),
+                2 => SCardReadCacheW(hContext, CardIdentifier, FreshnessCounter,
+                    LookupName, Data, ref DataLen),
+                _ => throw new PlatformNotSupportedException()
+            };
+#endif // !NETSTANDARD1_3
+#if !NETSTANDARD1_3
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
+        private static extern unsafe
+#else
+        private static unsafe
+#endif // !NETSTANDARD1_3
+        int SCardReadCache(
+            [In] SCARDCONTEXT hContext,
+            in Guid CardIdentifier,
+            [In] int FreshnessCounter,
+            [In] LPTSTR LookupName,
+            byte* Data,
+            ref int DataLen
+            )
+#if !NETSTANDARD1_3
+            ;
+#else
+            => Marshal.SystemDefaultCharSize switch
+            {
+                1 => SCardReadCacheA(hContext, CardIdentifier, FreshnessCounter,
+                    Pointer.Create<LPSTR>(LookupName.Pointer),
+                    Data, ref DataLen),
+                2 => SCardReadCacheW(hContext, CardIdentifier, FreshnessCounter,
+                    Pointer.Create<LPWSTR>(LookupName.Pointer),
+                    Data, ref DataLen),
+                _ => throw new PlatformNotSupportedException()
+            };
+#endif // !NETSTANDARD1_3
+        #endregion
     }
 }

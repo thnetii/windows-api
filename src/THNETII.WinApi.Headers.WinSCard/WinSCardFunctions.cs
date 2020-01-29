@@ -5390,5 +5390,119 @@ namespace THNETII.WinApi.Native.WinSCard
             };
 #endif // !NETSTANDARD1_3
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 1324
+        #region SCardGetDeviceTypeIdA function
+        /// <inheritdoc cref="SCardGetDeviceTypeId"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi)]
+        public static extern int SCardGetDeviceTypeIdA(
+            [In] SCARDCONTEXT hContext,
+            [In] string szReaderName,
+            [MarshalAs(UnmanagedType.U4)]
+            out SCARD_READER_TYPE pdwDeviceTypeId
+            );
+        /// <inheritdoc cref="SCardGetDeviceTypeIdA"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi)]
+        public static extern int SCardGetDeviceTypeIdA(
+            [In] SCARDCONTEXT hContext,
+            [In] LPCSTR szReaderName,
+            [MarshalAs(UnmanagedType.U4)]
+            out SCARD_READER_TYPE pdwDeviceTypeId
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 1331
+        #region SCardGetDeviceTypeIdW function
+        /// <inheritdoc cref="SCardGetDeviceTypeId"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Unicode)]
+        public static extern int SCardGetDeviceTypeIdW(
+            [In] SCARDCONTEXT hContext,
+            [In] string szReaderName,
+            [MarshalAs(UnmanagedType.U4)]
+            out SCARD_READER_TYPE pdwDeviceTypeId
+            );
+        /// <inheritdoc cref="SCardGetDeviceTypeIdW"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Unicode)]
+        public static extern int SCardGetDeviceTypeIdW(
+            [In] SCARDCONTEXT hContext,
+            [In] LPCWSTR szReaderName,
+            [MarshalAs(UnmanagedType.U4)]
+            out SCARD_READER_TYPE pdwDeviceTypeId
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 1331
+        #region SCardGetDeviceTypeId function
+        /// <summary>
+        /// The <see cref="SCardGetDeviceTypeId"/> function gets the device type identifier of the card reader for the given reader name. This function does not affect the state of the reader.
+        /// </summary>
+        /// <param name="hContext">Handle that identifies the resource manager context for the query. You can set the resource manager context by calling the <see cref="SCardEstablishContext"/> function. This parameter cannot be <see langword="null"/>.</param>
+        /// <param name="szReaderName">Reader name. You can get this value by calling the <see cref="SCardListReaders"/> function.</param>
+        /// <param name="pdwDeviceTypeId">The actual device type identifier.</param>
+        /// <returns>
+        /// <para>If the function succeeds, it returns <see cref="SCARD_S_SUCCESS"/>.</para>
+        /// <para>If the function fails, it returns an error code. For more information, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/authentication-return-values">Smart Card Return Values</a>.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows 8 [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2012 [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/winscard/nf-winscard-scardgetdevicetypeidw">SCardGetDeviceTypeIdW function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+#if !NETSTANDARD1_3
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
+        public static extern
+#else
+        public static
+#endif // !NETSTANDARD1_3
+        int SCardGetDeviceTypeId(
+            [In] SCARDCONTEXT hContext,
+            [In] string szReaderName,
+            [MarshalAs(UnmanagedType.U4)]
+            out SCARD_READER_TYPE pdwDeviceTypeId
+            )
+#if !NETSTANDARD1_3
+            ;
+#else
+            => Marshal.SystemDefaultCharSize switch
+            {
+                1 => SCardGetDeviceTypeIdA(hContext, szReaderName,
+                    out pdwDeviceTypeId),
+                2 => SCardGetDeviceTypeIdW(hContext, szReaderName,
+                    out pdwDeviceTypeId),
+                _ => throw new PlatformNotSupportedException()
+            };
+#endif // !NETSTANDARD1_3
+        /// <inheritdoc cref="SCardGetDeviceTypeId"/>
+#if !NETSTANDARD1_3
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
+        public static extern
+#else
+        public static
+#endif // !NETSTANDARD1_3
+        int SCardGetDeviceTypeId(
+            [In] SCARDCONTEXT hContext,
+            [In] LPCTSTR szReaderName,
+            [MarshalAs(UnmanagedType.U4)]
+            out SCARD_READER_TYPE pdwDeviceTypeId
+            )
+#if !NETSTANDARD1_3
+            ;
+#else
+            => Marshal.SystemDefaultCharSize switch
+            {
+                1 => SCardGetDeviceTypeIdA(hContext,
+                    Pointer.Create<LPCSTR>(szReaderName.Pointer),
+                    out pdwDeviceTypeId),
+                2 => SCardGetDeviceTypeIdW(hContext,
+                    Pointer.Create<LPCWSTR>(szReaderName.Pointer),
+                    out pdwDeviceTypeId),
+                _ => throw new PlatformNotSupportedException()
+            };
+#endif // !NETSTANDARD1_3
+        #endregion
     }
 }

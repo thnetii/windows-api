@@ -5064,5 +5064,331 @@ namespace THNETII.WinApi.Native.WinSCard
             };
 #endif // !NETSTANDARD1_3
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 1300
+        #region SCardGetReaderIconA function
+        /// <inheritdoc cref="SCardGetReaderIcon"/>
+        public static unsafe int SCardGetReaderIconA(
+            SCARDCONTEXT hContext,
+            string szReaderName,
+            Span<byte> pbIcon,
+            out int pcbIcon
+            )
+        {
+            pcbIcon = pbIcon.Length;
+            fixed (byte* ptrIcon = pbIcon)
+                return SCardGetReaderIconA(
+                    hContext,
+                    szReaderName,
+                    ptrIcon,
+                    ref pcbIcon
+                    );
+        }
+        /// <inheritdoc cref="SCardGetReaderIconA"/>
+        public static unsafe int SCardGetReaderIconA(
+            SCARDCONTEXT hContext,
+            LPCSTR szReaderName,
+            Span<byte> pbIcon,
+            out int pcbIcon
+            )
+        {
+            pcbIcon = pbIcon.Length;
+            fixed (byte* ptrIcon = pbIcon)
+                return SCardGetReaderIconA(
+                    hContext,
+                    szReaderName,
+                    ptrIcon,
+                    ref pcbIcon
+                    );
+        }
+        /// <inheritdoc cref="SCardGetReaderIconA"/>
+        public static unsafe int SCardGetReaderIconA(
+            SCARDCONTEXT hContext,
+            string szReaderName,
+            out ReadOnlySpan<byte> pbIcon
+            )
+        {
+            int scard_status;
+            int pcbIcon = SCARD_AUTOALLOCATE;
+            void* ptrIcon;
+            scard_status = SCardGetReaderIconA(
+                hContext,
+                szReaderName,
+                (byte*)&ptrIcon,
+                ref pcbIcon
+                );
+            pbIcon = new ReadOnlySpan<byte>(ptrIcon, pcbIcon);
+            return scard_status;
+        }
+        /// <inheritdoc cref="SCardGetReaderIconA"/>
+        public static unsafe int SCardGetReaderIconA(
+            SCARDCONTEXT hContext,
+            LPCSTR szReaderName,
+            out ReadOnlySpan<byte> pbIcon
+            )
+        {
+            int scard_status;
+            int pcbIcon = SCARD_AUTOALLOCATE;
+            void* ptrIcon;
+            scard_status = SCardGetReaderIconA(
+                hContext,
+                szReaderName,
+                (byte*)&ptrIcon,
+                ref pcbIcon
+                );
+            pbIcon = new ReadOnlySpan<byte>(ptrIcon, pcbIcon);
+            return scard_status;
+        }
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi)]
+        private static extern unsafe int SCardGetReaderIconA(
+            [In] SCARDCONTEXT hContext,
+            [In] string szReaderName,
+            byte* pbIcon,
+            ref int pcbIcon
+            );
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi)]
+        private static extern unsafe int SCardGetReaderIconA(
+            [In] SCARDCONTEXT hContext,
+            [In] LPCSTR szReaderName,
+            byte* pbIcon,
+            ref int pcbIcon
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 1309
+        #region SCardGetReaderIconW function
+        /// <inheritdoc cref="SCardGetReaderIcon"/>
+        public static unsafe int SCardGetReaderIconW(
+            SCARDCONTEXT hContext,
+            string szReaderName,
+            Span<byte> pbIcon,
+            out int pcbIcon
+            )
+        {
+            pcbIcon = pbIcon.Length;
+            fixed (byte* ptrIcon = pbIcon)
+                return SCardGetReaderIconW(
+                    hContext,
+                    szReaderName,
+                    ptrIcon,
+                    ref pcbIcon
+                    );
+        }
+        /// <inheritdoc cref="SCardGetReaderIconW"/>
+        public static unsafe int SCardGetReaderIconW(
+            SCARDCONTEXT hContext,
+            LPCWSTR szReaderName,
+            Span<byte> pbIcon,
+            out int pcbIcon
+            )
+        {
+            pcbIcon = pbIcon.Length;
+            fixed (byte* ptrIcon = pbIcon)
+                return SCardGetReaderIconW(
+                    hContext,
+                    szReaderName,
+                    ptrIcon,
+                    ref pcbIcon
+                    );
+        }
+        /// <inheritdoc cref="SCardGetReaderIconW"/>
+        public static unsafe int SCardGetReaderIconW(
+            SCARDCONTEXT hContext,
+            string szReaderName,
+            out ReadOnlySpan<byte> pbIcon
+            )
+        {
+            int scard_status;
+            int pcbIcon = SCARD_AUTOALLOCATE;
+            void* ptrIcon;
+            scard_status = SCardGetReaderIconW(
+                hContext,
+                szReaderName,
+                (byte*)&ptrIcon,
+                ref pcbIcon
+                );
+            pbIcon = new ReadOnlySpan<byte>(ptrIcon, pcbIcon);
+            return scard_status;
+        }
+        /// <inheritdoc cref="SCardGetReaderIconW"/>
+        public static unsafe int SCardGetReaderIconW(
+            SCARDCONTEXT hContext,
+            LPCWSTR szReaderName,
+            out ReadOnlySpan<byte> pbIcon
+            )
+        {
+            int scard_status;
+            int pcbIcon = SCARD_AUTOALLOCATE;
+            void* ptrIcon;
+            scard_status = SCardGetReaderIconW(
+                hContext,
+                szReaderName,
+                (byte*)&ptrIcon,
+                ref pcbIcon
+                );
+            pbIcon = new ReadOnlySpan<byte>(ptrIcon, pcbIcon);
+            return scard_status;
+        }
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Unicode)]
+        private static extern unsafe int SCardGetReaderIconW(
+            [In] SCARDCONTEXT hContext,
+            [In] string szReaderName,
+            byte* pbIcon,
+            ref int pcbIcon
+            );
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Unicode)]
+        private static extern unsafe int SCardGetReaderIconW(
+            [In] SCARDCONTEXT hContext,
+            [In] LPCWSTR szReaderName,
+            byte* pbIcon,
+            ref int pcbIcon
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 1318
+        #region SCardGetReaderIcon function
+        /// <summary>
+        /// The <see cref="SCardGetReaderIcon"/> function gets an icon of the smart card reader for a given reader's name. This function does not affect the state of the card reader.
+        /// </summary>
+        /// <param name="hContext">Handle that identifies the resource manager context for the query. You can set the resource manager context by a previous call to the <see cref="SCardEstablishContext"/> function. This parameter cannot be <see langword="null"/>.</param>
+        /// <param name="szReaderName">Reader name. You can get this value by calling the <see cref="SCardListReaders"/> function.</param>
+        /// <param name="pbIcon">A buffer that contains a BLOB of the smart card reader icon as read from the icon file. If this value is an empty span, the function ignores the buffer parameter, writes the length of the buffer that would have been returned to <paramref name="pcbIcon"/> if this parameter had not been empty, and returns a success code.</param>
+        /// <param name="pcbIcon">Receives the length, in bytes, of the <paramref name="pbIcon"/> buffer. This parameter receives the actual length of the received attribute. If the buffer length is specified as <see cref="SCARD_AUTOALLOCATE"/>, then <paramref name="pbIcon"/> is converted from a pointer to a byte pointer and receives the address of a block of memory that contains the attribute. This block of memory must be deallocated with the <see cref="SCardFreeMemory"/> function.</param>
+        /// <returns>
+        /// <para>If the function succeeds, it returns <see cref="SCARD_S_SUCCESS"/>.</para>
+        /// <para>If the function fails, it returns an error code. For more information, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/authentication-return-values">Smart Card Return Values</a>.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>The icon should be 256 × 256 pixels with no alpha channel.</para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows 8 [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2012 [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/winscard/nf-winscard-scardgetreadericonw">SCardGetReaderIconW function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        public static unsafe int SCardGetReaderIcon(
+            SCARDCONTEXT hContext,
+            string szReaderName,
+            Span<byte> pbIcon,
+            out int pcbIcon
+            )
+        {
+            pcbIcon = pbIcon.Length;
+            fixed (byte* ptrIcon = pbIcon)
+                return SCardGetReaderIcon(
+                    hContext,
+                    szReaderName,
+                    ptrIcon,
+                    ref pcbIcon
+                    );
+        }
+        /// <inheritdoc cref="SCardGetReaderIcon"/>
+        public static unsafe int SCardGetReaderIcon(
+            SCARDCONTEXT hContext,
+            LPCTSTR szReaderName,
+            Span<byte> pbIcon,
+            out int pcbIcon
+            )
+        {
+            pcbIcon = pbIcon.Length;
+            fixed (byte* ptrIcon = pbIcon)
+                return SCardGetReaderIcon(
+                    hContext,
+                    szReaderName,
+                    ptrIcon,
+                    ref pcbIcon
+                    );
+        }
+        /// <inheritdoc cref="SCardGetReaderIcon"/>
+        public static unsafe int SCardGetReaderIcon(
+            SCARDCONTEXT hContext,
+            string szReaderName,
+            out ReadOnlySpan<byte> pbIcon
+            )
+        {
+            int scard_status;
+            int pcbIcon = SCARD_AUTOALLOCATE;
+            void* ptrIcon;
+            scard_status = SCardGetReaderIcon(
+                hContext,
+                szReaderName,
+                (byte*)&ptrIcon,
+                ref pcbIcon
+                );
+            pbIcon = new ReadOnlySpan<byte>(ptrIcon, pcbIcon);
+            return scard_status;
+        }
+        /// <inheritdoc cref="SCardGetReaderIcon"/>
+        public static unsafe int SCardGetReaderIcon(
+            SCARDCONTEXT hContext,
+            LPCTSTR szReaderName,
+            out ReadOnlySpan<byte> pbIcon
+            )
+        {
+            int scard_status;
+            int pcbIcon = SCARD_AUTOALLOCATE;
+            void* ptrIcon;
+            scard_status = SCardGetReaderIcon(
+                hContext,
+                szReaderName,
+                (byte*)&ptrIcon,
+                ref pcbIcon
+                );
+            pbIcon = new ReadOnlySpan<byte>(ptrIcon, pcbIcon);
+            return scard_status;
+        }
+#if !NETSTANDARD1_3
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
+        private static extern unsafe
+#else
+        private static unsafe
+#endif // !NETSTANDARD1_3
+        int SCardGetReaderIcon(
+            [In] SCARDCONTEXT hContext,
+            [In] string szReaderName,
+            byte* pbIcon,
+            ref int pcbIcon
+            )
+#if !NETSTANDARD1_3
+            ;
+#else
+            => Marshal.SystemDefaultCharSize switch
+            {
+                1 => SCardGetReaderIconA(hContext, szReaderName,
+                    pbIcon, ref pcbIcon),
+                2 => SCardGetReaderIconW(hContext, szReaderName,
+                    pbIcon, ref pcbIcon),
+                _ => throw new PlatformNotSupportedException()
+            };
+#endif // !NETSTANDARD1_3
+#if !NETSTANDARD1_3
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
+        private static extern unsafe
+#else
+        private static unsafe
+#endif // !NETSTANDARD1_3
+        int SCardGetReaderIcon(
+            [In] SCARDCONTEXT hContext,
+            [In] LPCTSTR szReaderName,
+            byte* pbIcon,
+            ref int pcbIcon
+            )
+#if !NETSTANDARD1_3
+            ;
+#else
+            => Marshal.SystemDefaultCharSize switch
+            {
+                1 => SCardGetReaderIconA(hContext,
+                    Pointer.Create<LPCSTR>(szReaderName.Pointer),
+                    pbIcon, ref pcbIcon),
+                2 => SCardGetReaderIconW(hContext,
+                    Pointer.Create<LPCWSTR>(szReaderName.Pointer),
+                    pbIcon, ref pcbIcon),
+                _ => throw new PlatformNotSupportedException()
+            };
+#endif // !NETSTANDARD1_3
+        #endregion
     }
 }

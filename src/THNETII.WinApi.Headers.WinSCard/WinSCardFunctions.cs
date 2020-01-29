@@ -4487,5 +4487,70 @@ namespace THNETII.WinApi.Native.WinSCard
         }
 #endif // !NETSTANDARD1_3
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 1231
+        #region GetOpenCardNameA function
+        /// <inheritdoc cref="GetOpenCardName"/>
+        [DllImport(SCardDlg, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi)]
+        [Obsolete("\"Smart Card Common Dialog\" definitions for backwards compatibility with the Smart Card Base Services SDK version 1.0")]
+        public static extern int GetOpenCardNameA(
+            ref OPENCARDNAMEA Arg1
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 1234
+        #region GetOpenCardNameW function
+        /// <inheritdoc cref="GetOpenCardName"/>
+        [DllImport(SCardDlg, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Unicode)]
+        [Obsolete("\"Smart Card Common Dialog\" definitions for backwards compatibility with the Smart Card Base Services SDK version 1.0")]
+        public static extern int GetOpenCardNameW(
+            ref OPENCARDNAMEW Arg1
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 1231
+        #region GetOpenCardName function
+        /// <summary>
+        /// The <see cref="GetOpenCardName"/> function displays the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/s-gly">smart card</a> "select card" dialog box. Call the function <see cref="SCardUIDlgSelectCard"/> instead of <see cref="GetOpenCardName"/>. The <see cref="GetOpenCardName"/> function is maintained for backward compatibility with version 1.0 of the Microsoft Smart Card Base Components, but calls to <see cref="GetOpenCardName"/> are mapped to <see cref="SCardUIDlgSelectCard"/>.
+        /// </summary>
+        /// <param name="Arg1">A reference to the <see cref="OPENCARDNAME"/> structure for the "select card" dialog box.</param>
+        /// <returns>
+        /// <para>If the function succeeds, it returns <see cref="SCARD_S_SUCCESS"/>.</para>
+        /// <para>If the function fails, it returns an error code. For more information, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/authentication-return-values">Smart Card Return Values</a>.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows XP [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/winscard/nf-winscard-getopencardnamew">GetOpenCardNameW function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="OPENCARDNAME"/>
+        [Obsolete("\"Smart Card Common Dialog\" definitions for backwards compatibility with the Smart Card Base Services SDK version 1.0")]
+#if !NETSTANDARD1_3
+        [DllImport(SCardDlg, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
+        public static extern
+#else
+        public static unsafe
+#endif // !NETSTANDARD1_3
+        int GetOpenCardName(
+            ref OPENCARDNAMEA Arg1
+            )
+#if !NETSTANDARD1_3
+            ;
+#else
+        {
+            fixed (void* pArg1 = &Arg1)
+                return Marshal.SystemDefaultCharSize switch
+                {
+                    1 => GetOpenCardNameA(ref Unsafe.AsRef<OPENCARDNAMEA>(pArg1)),
+                    2 => GetOpenCardNameW(ref Unsafe.AsRef<OPENCARDNAMEW>(pArg1)),
+                    _ => throw new PlatformNotSupportedException()
+                };
+        }
+#endif // !NETSTANDARD1_3
+        #endregion
     }
 }

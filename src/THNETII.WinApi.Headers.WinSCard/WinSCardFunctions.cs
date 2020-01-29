@@ -4821,5 +4821,248 @@ namespace THNETII.WinApi.Native.WinSCard
             };
 #endif // !NETSTANDARD1_3
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 1274
+        #region SCardWriteCacheA function
+        /// <inheritdoc cref="SCardWriteCache"/>
+        public static unsafe int SCardWriteCacheA(
+            SCARDCONTEXT hContext,
+            in Guid CardIdentifier,
+            int FreshnessCounter,
+            string LookupName,
+            ReadOnlySpan<byte> Data
+            )
+        {
+            fixed (byte* pData = Data)
+                return SCardWriteCacheA(
+                    hContext,
+                    CardIdentifier,
+                    FreshnessCounter,
+                    LookupName,
+                    pData,
+                    Data.Length
+                    );
+        }
+        /// <inheritdoc cref="SCardWriteCacheA"/>
+        public static unsafe int SCardWriteCacheA(
+            SCARDCONTEXT hContext,
+            in Guid CardIdentifier,
+            int FreshnessCounter,
+            LPSTR LookupName,
+            ReadOnlySpan<byte> Data
+            )
+        {
+            fixed (byte* pData = Data)
+                return SCardWriteCacheA(
+                    hContext,
+                    CardIdentifier,
+                    FreshnessCounter,
+                    LookupName,
+                    pData,
+                    Data.Length
+                    );
+        }
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi)]
+        private static extern unsafe int SCardWriteCacheA(
+            [In] SCARDCONTEXT hContext,
+            in Guid CardIdentifier,
+            [In] int FreshnessCounter,
+            [In] string LookupName,
+            byte* Data,
+            [In] int DataLen
+            );
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi)]
+        private static extern unsafe int SCardWriteCacheA(
+            [In] SCARDCONTEXT hContext,
+            in Guid CardIdentifier,
+            [In] int FreshnessCounter,
+            [In] LPSTR LookupName,
+            byte* Data,
+            [In] int DataLen
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 1282
+        #region SCardWriteCacheW function
+        /// <inheritdoc cref="SCardWriteCache"/>
+        public static unsafe int SCardWriteCacheW(
+            SCARDCONTEXT hContext,
+            in Guid CardIdentifier,
+            int FreshnessCounter,
+            string LookupName,
+            ReadOnlySpan<byte> Data
+            )
+        {
+            fixed (byte* pData = Data)
+                return SCardWriteCacheW(
+                    hContext,
+                    CardIdentifier,
+                    FreshnessCounter,
+                    LookupName,
+                    pData,
+                    Data.Length
+                    );
+        }
+        /// <inheritdoc cref="SCardWriteCacheW"/>
+        public static unsafe int SCardWriteCacheW(
+            SCARDCONTEXT hContext,
+            in Guid CardIdentifier,
+            int FreshnessCounter,
+            LPWSTR LookupName,
+            ReadOnlySpan<byte> Data
+            )
+        {
+            fixed (byte* pData = Data)
+                return SCardWriteCacheW(
+                    hContext,
+                    CardIdentifier,
+                    FreshnessCounter,
+                    LookupName,
+                    pData,
+                    Data.Length
+                    );
+        }
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Unicode)]
+        private static extern unsafe int SCardWriteCacheW(
+            [In] SCARDCONTEXT hContext,
+            in Guid CardIdentifier,
+            [In] int FreshnessCounter,
+            [In] string LookupName,
+            byte* Data,
+            [In] int DataLen
+            );
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Unicode)]
+        private static extern unsafe int SCardWriteCacheW(
+            [In] SCARDCONTEXT hContext,
+            in Guid CardIdentifier,
+            [In] int FreshnessCounter,
+            [In] LPWSTR LookupName,
+            byte* Data,
+            [In] int DataLen
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 1290
+        #region SCardWriteCache function
+        /// <summary>
+        /// The <see cref="SCardWriteCache"/> function writes a name-value pair from a smart card to the global cache maintained by the <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/smart-card-resource-manager">Smart Card Resource Manager</a>.
+        /// </summary>
+        /// <param name="hContext">A handle that identifies the <a href="https://docs.microsoft.com/windows/desktop/SecGloss/r-gly">resource manager context</a>. The resource manager context is set by a previous call to <see cref="SCardEstablishContext"/>.</param>
+        /// <param name="CardIdentifier">A value that uniquely identifies the smart card from which the name-value pair was read.</param>
+        /// <param name="FreshnessCounter">The current revision of the cached data.</param>
+        /// <param name="LookupName">A string that contains the name portion of the name-value pair to write to the global cache.</param>
+        /// <param name="Data">A span of byte values that contain the value portion of the name-value pair to write to the global cache.</param>
+        /// <returns>
+        /// <para>If the function succeeds, it returns <see cref="SCARD_S_SUCCESS"/>.</para>
+        /// <para>
+        /// If the function fails, it returns one of the following error codes. For more information, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/authentication-return-values">Smart Card Return Values</a>.
+        /// <list type="table">
+        /// <listheader><term>Return code/value</term><description>Description</description></listheader>
+        /// <item><term><see cref="SCARD_W_CACHE_ITEM_TOO_BIG"/><br/><c>0x80100072</c></term><description> The size of the specified name-value pair exceeds the maximum size defined for the global cache. </description></item>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows Vista [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2008 [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/winscard/nf-winscard-scardwritecachew">SCardWriteCacheW function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="SCardReadCache"/>
+        public static unsafe int SCardWriteCache(
+            SCARDCONTEXT hContext,
+            in Guid CardIdentifier,
+            int FreshnessCounter,
+            string LookupName,
+            ReadOnlySpan<byte> Data
+            )
+        {
+            fixed (byte* pData = Data)
+                return SCardWriteCache(
+                    hContext,
+                    CardIdentifier,
+                    FreshnessCounter,
+                    LookupName,
+                    pData,
+                    Data.Length
+                    );
+        }
+        /// <inheritdoc cref="SCardWriteCache"/>
+        public static unsafe int SCardWriteCache(
+            SCARDCONTEXT hContext,
+            in Guid CardIdentifier,
+            int FreshnessCounter,
+            LPTSTR LookupName,
+            ReadOnlySpan<byte> Data
+            )
+        {
+            fixed (byte* pData = Data)
+                return SCardWriteCache(
+                    hContext,
+                    CardIdentifier,
+                    FreshnessCounter,
+                    LookupName,
+                    pData,
+                    Data.Length
+                    );
+        }
+#if !NETSTANDARD1_3
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
+        private static extern unsafe
+#else
+        private static unsafe
+#endif // !NETSTANDARD1_3
+        int SCardWriteCache(
+            [In] SCARDCONTEXT hContext,
+            in Guid CardIdentifier,
+            [In] int FreshnessCounter,
+            [In] string LookupName,
+            byte* Data,
+            [In] int DataLen
+            )
+#if !NETSTANDARD1_3
+            ;
+#else
+            => Marshal.SystemDefaultCharSize switch
+            {
+                1 => SCardWriteCacheA(hContext, CardIdentifier, FreshnessCounter,
+                    LookupName, Data, DataLen),
+                2 => SCardWriteCacheW(hContext, CardIdentifier, FreshnessCounter,
+                    LookupName, Data, DataLen),
+                _ => throw new PlatformNotSupportedException()
+            };
+#endif // !NETSTANDARD1_3
+#if !NETSTANDARD1_3
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
+        private static extern unsafe
+#else
+        private static unsafe
+#endif // !NETSTANDARD1_3
+        int SCardWriteCache(
+            [In] SCARDCONTEXT hContext,
+            in Guid CardIdentifier,
+            [In] int FreshnessCounter,
+            [In] LPTSTR LookupName,
+            byte* Data,
+            [In] int DataLen
+            )
+#if !NETSTANDARD1_3
+            ;
+#else
+            => Marshal.SystemDefaultCharSize switch
+            {
+                1 => SCardWriteCacheA(hContext, CardIdentifier, FreshnessCounter,
+                    Pointer.Create<LPSTR>(LookupName.Pointer),
+                    Data, DataLen),
+                2 => SCardWriteCacheW(hContext, CardIdentifier, FreshnessCounter,
+                    Pointer.Create<LPWSTR>(LookupName.Pointer),
+                    Data, DataLen),
+                _ => throw new PlatformNotSupportedException()
+            };
+#endif // !NETSTANDARD1_3
+        #endregion
     }
 }

@@ -32,8 +32,10 @@ namespace THNETII.WinApi.Native.WindowsDataTypes.Test
                 var multiStrPtr = Pointer.Create<LPMSTR>(ptr);
 
                 int iterations = 0;
-                foreach (var strSpan in multiStrPtr.AsEnumerable(emptyMultiString.Length))
+                foreach (var (strPtr, strLen) in multiStrPtr.AsEnumerable(emptyMultiString.Length))
                 {
+                    _ = strPtr;
+                    _ = strLen;
                     iterations++;
                 }
 
@@ -54,8 +56,10 @@ namespace THNETII.WinApi.Native.WindowsDataTypes.Test
                 var multiStrPtr = Pointer.Create<LPCMSTR>(ptr);
 
                 int iterations = 0;
-                foreach (var strSpan in multiStrPtr.AsEnumerable(emptyMultiString.Length))
+                foreach (var (strPtr, strLen) in multiStrPtr.AsEnumerable(emptyMultiString.Length))
                 {
+                    _ = strPtr;
+                    _ = strLen;
                     iterations++;
                 }
 
@@ -76,8 +80,10 @@ namespace THNETII.WinApi.Native.WindowsDataTypes.Test
                 var multiStrPtr = Pointer.Create<LPMWSTR>(ptr);
 
                 int iterations = 0;
-                foreach (var strSpan in multiStrPtr.AsEnumerable(emptyMultiString.Length))
+                foreach (var (strPtr, strLen) in multiStrPtr.AsEnumerable(emptyMultiString.Length))
                 {
+                    _ = strPtr;
+                    _ = strLen;
                     iterations++;
                 }
 
@@ -98,8 +104,10 @@ namespace THNETII.WinApi.Native.WindowsDataTypes.Test
                 var multiStrPtr = Pointer.Create<LPCMWSTR>(ptr);
 
                 int iterations = 0;
-                foreach (var strSpan in multiStrPtr.AsEnumerable(emptyMultiString.Length))
+                foreach (var (strPtr, strLen) in multiStrPtr.AsEnumerable(emptyMultiString.Length))
                 {
+                    _ = strPtr;
+                    _ = strLen;
                     iterations++;
                 }
 
@@ -120,8 +128,10 @@ namespace THNETII.WinApi.Native.WindowsDataTypes.Test
                 var multiStrPtr = Pointer.Create<LPMTSTR>(ptr);
 
                 int iterations = 0;
-                foreach (var strSpan in multiStrPtr.AsEnumerable(emptyMultiString.Length))
+                foreach (var (strPtr, strLen) in multiStrPtr.AsEnumerable(emptyMultiString.Length))
                 {
+                    _ = strPtr;
+                    _ = strLen;
                     iterations++;
                 }
 
@@ -142,8 +152,10 @@ namespace THNETII.WinApi.Native.WindowsDataTypes.Test
                 var multiStrPtr = Pointer.Create<LPCMTSTR>(ptr);
 
                 int iterations = 0;
-                foreach (var strSpan in multiStrPtr.AsEnumerable(emptyMultiString.Length))
+                foreach (var (strPtr, strLen) in multiStrPtr.AsEnumerable(emptyMultiString.Length))
                 {
+                    _ = strPtr;
+                    _ = strLen;
                     iterations++;
                 }
 
@@ -164,8 +176,10 @@ namespace THNETII.WinApi.Native.WindowsDataTypes.Test
                 var multiStrPtr = Pointer.Create<LPMSTR>(ptr);
 
                 int iterations = 0;
-                foreach (var strSpan in multiStrPtr.AsEnumerable())
+                foreach (var (strPtr, strLen) in multiStrPtr.AsEnumerable())
                 {
+                    _ = strPtr;
+                    _ = strLen;
                     iterations++;
                 }
 
@@ -186,8 +200,10 @@ namespace THNETII.WinApi.Native.WindowsDataTypes.Test
                 var multiStrPtr = Pointer.Create<LPCMSTR>(ptr);
 
                 int iterations = 0;
-                foreach (var strSpan in multiStrPtr.AsEnumerable())
+                foreach (var (strPtr, strLen) in multiStrPtr.AsEnumerable())
                 {
+                    _ = strPtr;
+                    _ = strLen;
                     iterations++;
                 }
 
@@ -208,8 +224,10 @@ namespace THNETII.WinApi.Native.WindowsDataTypes.Test
                 var multiStrPtr = Pointer.Create<LPMWSTR>(ptr);
 
                 int iterations = 0;
-                foreach (var strSpan in multiStrPtr.AsEnumerable())
+                foreach (var (strPtr, strLen) in multiStrPtr.AsEnumerable())
                 {
+                    _ = strPtr;
+                    _ = strLen;
                     iterations++;
                 }
 
@@ -230,8 +248,10 @@ namespace THNETII.WinApi.Native.WindowsDataTypes.Test
                 var multiStrPtr = Pointer.Create<LPCMWSTR>(ptr);
 
                 int iterations = 0;
-                foreach (var strSpan in multiStrPtr.AsEnumerable())
+                foreach (var (strPtr, strLen) in multiStrPtr.AsEnumerable())
                 {
+                    _ = strPtr;
+                    _ = strLen;
                     iterations++;
                 }
 
@@ -252,8 +272,10 @@ namespace THNETII.WinApi.Native.WindowsDataTypes.Test
                 var multiStrPtr = Pointer.Create<LPMTSTR>(ptr);
 
                 int iterations = 0;
-                foreach (var strSpan in multiStrPtr.AsEnumerable())
+                foreach (var (strPtr, strLen) in multiStrPtr.AsEnumerable())
                 {
+                    _ = strPtr;
+                    _ = strLen;
                     iterations++;
                 }
 
@@ -274,8 +296,10 @@ namespace THNETII.WinApi.Native.WindowsDataTypes.Test
                 var multiStrPtr = Pointer.Create<LPCMTSTR>(ptr);
 
                 int iterations = 0;
-                foreach (var strSpan in multiStrPtr.AsEnumerable())
+                foreach (var (strPtr, strLen) in multiStrPtr.AsEnumerable())
                 {
+                    _ = strPtr;
+                    _ = strLen;
                     iterations++;
                 }
 

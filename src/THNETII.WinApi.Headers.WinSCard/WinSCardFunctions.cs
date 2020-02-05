@@ -5703,5 +5703,223 @@ namespace THNETII.WinApi.Native.WinSCard
             };
 #endif // !NETSTANDARD1_3
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 1366
+        #region SCardListReadersWithDeviceInstanceIdA function
+        /// <inheritdoc cref="SCardListReadersWithDeviceInstanceId"/>
+        public static unsafe int SCardListReadersWithDeviceInstanceIdA(
+            SCARDCONTEXT hContext,
+            string szDeviceInstanceId,
+            out LPMSTR mszReaders,
+            out int pcchReaders)
+        {
+            pcchReaders = SCARD_AUTOALLOCATE;
+            fixed (void* pmszReaders = &mszReaders)
+                return SCardListReadersWithDeviceInstanceIdA(
+                    hContext,
+                    szDeviceInstanceId,
+                    Pointer.Create<LPMSTR>(pmszReaders),
+                    ref pcchReaders
+                    );
+        }
+        /// <inheritdoc cref="SCardListReadersWithDeviceInstanceIdA"/>
+        public static unsafe int SCardListReadersWithDeviceInstanceIdA(
+            SCARDCONTEXT hContext,
+            LPCSTR szDeviceInstanceId,
+            out LPMSTR mszReaders,
+            out int pcchReaders)
+        {
+            pcchReaders = SCARD_AUTOALLOCATE;
+            fixed (void* pmszReaders = &mszReaders)
+                return SCardListReadersWithDeviceInstanceIdA(
+                    hContext,
+                    szDeviceInstanceId,
+                    Pointer.Create<LPMSTR>(pmszReaders),
+                    ref pcchReaders
+                    );
+        }
+        /// <inheritdoc cref="SCardListReadersWithDeviceInstanceIdA"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi)]
+        public static extern int SCardListReadersWithDeviceInstanceIdA(
+            [In] SCARDCONTEXT hContext,
+            [In] string szDeviceInstanceId,
+            LPMSTR mszReaders,
+            ref int pcchReaders
+            );
+        /// <inheritdoc cref="SCardListReadersWithDeviceInstanceIdA"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi)]
+        public static extern int SCardListReadersWithDeviceInstanceIdA(
+            [In] SCARDCONTEXT hContext,
+            [In] LPCSTR szDeviceInstanceId,
+            LPMSTR mszReaders,
+            ref int pcchReaders
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 1375
+        #region SCardListReadersWithDeviceInstanceIdW function
+        /// <inheritdoc cref="SCardListReadersWithDeviceInstanceId"/>
+        public static unsafe int SCardListReadersWithDeviceInstanceIdW(
+            SCARDCONTEXT hContext,
+            string szDeviceInstanceId,
+            out LPMWSTR mszReaders,
+            out int pcchReaders)
+        {
+            pcchReaders = SCARD_AUTOALLOCATE;
+            fixed (void* pmszReaders = &mszReaders)
+                return SCardListReadersWithDeviceInstanceIdW(
+                    hContext,
+                    szDeviceInstanceId,
+                    Pointer.Create<LPMWSTR>(pmszReaders),
+                    ref pcchReaders
+                    );
+        }
+        /// <inheritdoc cref="SCardListReadersWithDeviceInstanceIdW"/>
+        public static unsafe int SCardListReadersWithDeviceInstanceIdW(
+            SCARDCONTEXT hContext,
+            LPCWSTR szDeviceInstanceId,
+            out LPMWSTR mszReaders,
+            out int pcchReaders)
+        {
+            pcchReaders = SCARD_AUTOALLOCATE;
+            fixed (void* pmszReaders = &mszReaders)
+                return SCardListReadersWithDeviceInstanceIdW(
+                    hContext,
+                    szDeviceInstanceId,
+                    Pointer.Create<LPMWSTR>(pmszReaders),
+                    ref pcchReaders
+                    );
+        }
+        /// <inheritdoc cref="SCardListReadersWithDeviceInstanceIdW"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Unicode)]
+        public static extern int SCardListReadersWithDeviceInstanceIdW(
+            [In] SCARDCONTEXT hContext,
+            [In] string szDeviceInstanceId,
+            LPMWSTR mszReaders,
+            ref int pcchReaders
+            );
+        /// <inheritdoc cref="SCardListReadersWithDeviceInstanceIdW"/>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Unicode)]
+        public static extern int SCardListReadersWithDeviceInstanceIdW(
+            [In] SCARDCONTEXT hContext,
+            [In] LPCWSTR szDeviceInstanceId,
+            LPMWSTR mszReaders,
+            ref int pcchReaders
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 1384
+        #region SCardListReadersWithDeviceInstanceId function
+        /// <summary>
+        /// The <see cref="SCardListReadersWithDeviceInstanceId"/> function gets the list of readers that have provided a device instance identifier. This function does not affect the state of the reader.
+        /// </summary>
+        /// <param name="hContext">Handle that identifies the resource manager context for the query. You can set the resource manager context by a previous call to the <see cref="SCardEstablishContext"/> function. This parameter cannot be <see langword="null"/>.</param>
+        /// <param name="szDeviceInstanceId">Device instance ID of the reader. You can get this value by calling the <see cref="SCardGetReaderDeviceInstanceId"/> function with the reader name or by calling the <see cref="SetupDiGetDeviceInstanceId"/> function from the DDK.</param>
+        /// <param name="mszReaders">A multi-string that contain the smart card readers within the supplied device instance identifier. If this value is <see langword="null"/>, then the function ignores the buffer length supplied in the <paramref name="pcchReaders"/> parameter, writes the length of the buffer that would have been returned if this parameter had not been <see langword="null"/> to <paramref name="pcchReaders"/>, and returns a success code.</param>
+        /// <param name="pcchReaders">The length, in characters, of the <paramref name="mszReaders"/> buffer. This parameter receives the actual length of the multiple-string structure, including all terminating null characters. If the buffer length is specified as <see cref="SCARD_AUTOALLOCATE"/>, then <paramref name="mszReaders"/> is converted to a pointer to a byte pointer, and receives the address of a block of memory that contains the multiple-string structure. When you have finished using this memory, deallocated it by using the <see cref="SCardFreeMemory"/> function.</param>
+        /// <returns>
+        /// <para>If the function succeeds, it returns <see cref="SCARD_S_SUCCESS"/>.</para>
+        /// <para>If the function fails, it returns an error code. For more information, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/authentication-return-values">Smart Card Return Values</a>.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>This function is not redirected. Calling the <see cref="SCardListReadersWithDeviceInstanceId"/> function when inside a Remote Desktop session fails with the <see cref="SCARD_E_READER_UNAVAILABLE"/> error code.</para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows 8 [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2012 [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/winscard/nf-winscard-scardlistreaderswithdeviceinstanceidw">SCardListReadersWithDeviceInstanceIdW function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        public static unsafe int SCardListReadersWithDeviceInstanceId(
+            SCARDCONTEXT hContext,
+            string szDeviceInstanceId,
+            out LPMTSTR mszReaders,
+            out int pcchReaders)
+        {
+            pcchReaders = SCARD_AUTOALLOCATE;
+            fixed (void* pmszReaders = &mszReaders)
+                return SCardListReadersWithDeviceInstanceId(
+                    hContext,
+                    szDeviceInstanceId,
+                    Pointer.Create<LPMTSTR>(pmszReaders),
+                    ref pcchReaders
+                    );
+        }
+        /// <inheritdoc cref="SCardListReadersWithDeviceInstanceId"/>
+        public static unsafe int SCardListReadersWithDeviceInstanceId(
+            SCARDCONTEXT hContext,
+            LPCTSTR szDeviceInstanceId,
+            out LPMTSTR mszReaders,
+            out int pcchReaders)
+        {
+            pcchReaders = SCARD_AUTOALLOCATE;
+            fixed (void* pmszReaders = &mszReaders)
+                return SCardListReadersWithDeviceInstanceId(
+                    hContext,
+                    szDeviceInstanceId,
+                    Pointer.Create<LPMTSTR>(pmszReaders),
+                    ref pcchReaders
+                    );
+        }
+        /// <inheritdoc cref="SCardListReadersWithDeviceInstanceId"/>
+#if !NETSTANDARD1_3
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
+        public static extern
+#else
+        public static
+#endif // !NETSTANDARD1_3
+        int SCardListReadersWithDeviceInstanceId(
+            [In] SCARDCONTEXT hContext,
+            [In] string szDeviceInstanceId,
+            LPMTSTR mszReaders,
+            ref int pcchReaders
+            )
+#if !NETSTANDARD1_3
+            ;
+#else
+            => Marshal.SystemDefaultCharSize switch
+            {
+                1 => SCardListReadersWithDeviceInstanceIdA(hContext,
+                    szDeviceInstanceId,
+                    Pointer.Create<LPMSTR>(mszReaders.Pointer),
+                    ref pcchReaders),
+                2 => SCardListReadersWithDeviceInstanceIdW(hContext,
+                    szDeviceInstanceId,
+                    Pointer.Create<LPMWSTR>(mszReaders.Pointer),
+                    ref pcchReaders),
+                _ => throw new PlatformNotSupportedException()
+            };
+#endif // !NETSTANDARD1_3
+        /// <inheritdoc cref="SCardListReadersWithDeviceInstanceId"/>
+#if !NETSTANDARD1_3
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
+        public static extern
+#else
+        public static
+#endif // !NETSTANDARD1_3
+        int SCardListReadersWithDeviceInstanceId(
+            [In] SCARDCONTEXT hContext,
+            [In] LPCTSTR szDeviceInstanceId,
+            LPMTSTR mszReaders,
+            ref int pcchReaders
+            )
+#if !NETSTANDARD1_3
+            ;
+#else
+            => Marshal.SystemDefaultCharSize switch
+            {
+                1 => SCardListReadersWithDeviceInstanceIdA(hContext,
+                    Pointer.Create<LPCSTR>(szDeviceInstanceId.Pointer),
+                    Pointer.Create<LPMSTR>(mszReaders.Pointer),
+                    ref pcchReaders),
+                2 => SCardListReadersWithDeviceInstanceIdW(hContext,
+                    Pointer.Create<LPCWSTR>(szDeviceInstanceId.Pointer),
+                    Pointer.Create<LPMWSTR>(mszReaders.Pointer),
+                    ref pcchReaders),
+                _ => throw new PlatformNotSupportedException()
+            };
+#endif // !NETSTANDARD1_3
+        #endregion
     }
 }

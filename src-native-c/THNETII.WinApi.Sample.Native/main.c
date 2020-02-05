@@ -1,13 +1,12 @@
-#include <Windows.h>
-#include <winscard.h>
+#include <WinSCard.h>
 
 int main(int argc, char* argv[])
 {
-    DWORD instance;
+    SCARD_READERSTATE instance;
     const int size = sizeof(instance);
-    const int value = SCARD_S_SUCCESS;
+    const int value = SCARD_ABSENT;
 
-    const void* ptr = NULL;
+    const void* ptr = SCardGetReaderDeviceInstanceId;
 
     return EXIT_SUCCESS;
 }

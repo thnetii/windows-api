@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -5920,6 +5920,44 @@ namespace THNETII.WinApi.Native.WinSCard
                 _ => throw new PlatformNotSupportedException()
             };
 #endif // !NETSTANDARD1_3
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 1390
+        //
+        ////////////////////////////////////////////////////////////////////////////////
+        //
+        //  Smart Card Auditing
+        //
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 1402
+        #region SCardAudit function
+        /// <summary>
+        /// The <see cref="SCardAudit"/> function writes event messages to the Windows application log Microsoft-Windows-SmartCard-Audit/Authentication.
+        /// </summary>
+        /// <param name="hContext">Handle that identifies the resource manager context. The resource manager context can be set by a previous call to the <see cref="SCardEstablishContext"/> function. This parameter cannot be <see langword="null"/>.</param>
+        /// <param name="dwEvent">The event to log.</param>
+        /// <returns>
+        /// <para>If the function succeeds, it returns <see cref="SCARD_S_SUCCESS"/>.</para>
+        /// <para>If the function fails, it returns an error code. For more information, see <a href="https://docs.microsoft.com/windows/desktop/SecAuthN/authentication-return-values">Smart Card Return Values</a>.</para>
+        /// </returns>
+        /// <remarks>
+        /// <para>This function is not redirected. An application calling the <see cref="SCardAudit"/> function from within a Remote Desktop session will log the event on the remote system.</para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows 8 [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2012 [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/winscard/nf-winscard-scardaudit">SCardAudit function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        [DllImport(WinSCard, CallingConvention = CallingConvention.Winapi)]
+        public static extern int SCardAudit(
+            [In] SCARDCONTEXT hContext,
+            [In, MarshalAs(UnmanagedType.U4)]
+            SCARD_AUDIT_CHV_EVENT dwEvent
+            );
         #endregion
     }
 }

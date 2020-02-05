@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Runtime.CompilerServices;
 
 using THNETII.WinApi.Helpers;
@@ -172,5 +172,19 @@ namespace THNETII.WinApi.Native.WinSCard
         /// </para>
         /// </summary>
         public const int SCARD_READER_SEL_AUTH_PACKAGE = -629;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 1390
+        //
+        ////////////////////////////////////////////////////////////////////////////////
+        //
+        //  Smart Card Auditing
+        //
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 1396
+        public const int SCARD_AUDIT_CHV_FAILURE = 0x0; // A smart card holder verification (CHV) 
+                                                        // attempt failed.
+
+        public const int SCARD_AUDIT_CHV_SUCCESS = 0x1; // A smart card holder verification (CHV)
+                                                        // attempt succeeded.
     }
 }

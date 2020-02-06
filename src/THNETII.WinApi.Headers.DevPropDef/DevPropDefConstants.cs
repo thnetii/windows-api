@@ -69,5 +69,12 @@ namespace THNETII.WinApi.Native.DevPropDef
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\devpropdef.h, line 91
         public const byte DEVPROP_TRUE = unchecked((byte)-1);
         public const byte DEVPROP_FALSE = 0;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\devpropdef.h, line 191
+        /// <summary>
+        /// All valid <see cref="DEVPROPKEY"/> definitions must use a <see cref="DEVPROPKEY.pid"/> that is equal to or greater
+        /// than <see cref="DEVPROPID_FIRST_USABLE"/>.
+        /// </summary>
+        public const uint DEVPROPID_FIRST_USABLE = 2;
     }
 }

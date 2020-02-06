@@ -35,5 +35,37 @@ namespace THNETII.WinApi.Native.Ks
         public const int KSPRIORITY_NORMAL = 0x40000000;
         public const int KSPRIORITY_HIGH = unchecked((int)0x80000000);
         public const int KSPRIORITY_EXCLUSIVE = unchecked((int)0xFFFFFFFF);
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\ks.h, line 96
+        public const int KSMETHOD_TYPE_NONE = 0x00000000;
+        public const int KSMETHOD_TYPE_READ = 0x00000001;
+        public const int KSMETHOD_TYPE_WRITE = 0x00000002;
+        public const int KSMETHOD_TYPE_MODIFY = 0x00000003;
+        public const int KSMETHOD_TYPE_SOURCE = 0x00000004;
+
+        public const int KSMETHOD_TYPE_SEND = 0x00000001;
+        public const int KSMETHOD_TYPE_SETSUPPORT = 0x00000100;
+        public const int KSMETHOD_TYPE_BASICSUPPORT = 0x00000200;
+
+        public const int KSMETHOD_TYPE_TOPOLOGY = 0x10000000;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\ks.h, line 135
+        public const int KSPROPERTY_TYPE_GET = 0x00000001;
+        public const int KSPROPERTY_TYPE_SET = 0x00000002;
+        public const int KSPROPERTY_TYPE_GETPAYLOADSIZE = 0x00000004;
+        public const int KSPROPERTY_TYPE_SETSUPPORT = 0x00000100;
+        public const int KSPROPERTY_TYPE_BASICSUPPORT = 0x00000200;
+        public const int KSPROPERTY_TYPE_RELATIONS = 0x00000400;
+        public const int KSPROPERTY_TYPE_SERIALIZESET = 0x00000800;
+        public const int KSPROPERTY_TYPE_UNSERIALIZESET = 0x00001000;
+        public const int KSPROPERTY_TYPE_SERIALIZERAW = 0x00002000;
+        public const int KSPROPERTY_TYPE_UNSERIALIZERAW = 0x00004000;
+        public const int KSPROPERTY_TYPE_SERIALIZESIZE = 0x00008000;
+        public const int KSPROPERTY_TYPE_DEFAULTVALUES = 0x00010000;
+
+        public const int KSPROPERTY_TYPE_TOPOLOGY = 0x10000000;
+        public const int KSPROPERTY_TYPE_HIGHPRIORITY = 0x08000000;
+        public const int KSPROPERTY_TYPE_FSFILTERSCOPE = 0x40000000;
+        public const int KSPROPERTY_TYPE_COPYPAYLOAD = unchecked((int)0x80000000);
     }
 }

@@ -9,3 +9,4 @@ using System.Diagnostics.CodeAnalysis;
 [assembly: SuppressMessage("Design", "CA1028: Enum Storage should be Int32")]
 [assembly: SuppressMessage("Naming", "CA1714: Flags enums should have plural names")]
 [assembly: SuppressMessage("Naming", "CA1707: Identifiers should not contain underscores")]
+[assembly: SuppressMessage("Design", "CA1051: Do not declare visible instance fields")]

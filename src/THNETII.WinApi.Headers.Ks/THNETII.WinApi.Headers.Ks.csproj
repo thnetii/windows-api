@@ -10,7 +10,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\THNETII.WinApi.Headers.WinIOCtl\THNETII.WinApi.Headers.WinIOCtl.csproj" />
+    <ProjectReference Include="..\THNETII.WinApi.Constants.NTStatus\THNETII.WinApi.Constants.NTStatus.csproj">
+      <PrivateAssets>All</PrivateAssets>
+    </ProjectReference>
+  </ItemGroup>
+  
+  <ItemGroup>
+      <ProjectReference Include="..\THNETII.WinApi.Headers.WinIOCtl\THNETII.WinApi.Headers.WinIOCtl.csproj" />
   </ItemGroup>
 
 </Project>

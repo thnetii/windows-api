@@ -1,10 +1,10 @@
 using System;
 using System.Runtime.InteropServices;
 
-using THNETII.InteropServices.Memory;
-
 namespace THNETII.WinApi.Native.DevPropDef
 {
+    using static DevPropDefMacros;
+
     // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\devpropdef.h, line 143
     //
     // DEVPROPCOMPKEY structure
@@ -27,13 +27,6 @@ namespace THNETII.WinApi.Native.DevPropDef
         /// </summary>
         public LPCWSTR LocaleName;
 
-        public static bool IsEqualLocaleName(in DEVPROPCOMPKEY a, in DEVPROPCOMPKEY b) =>
-            a.LocaleName.Pointer == b.LocaleName.Pointer ||
-            (
-                a.LocaleName.HasValue() && b.LocaleName.HasValue() &&
-                a.LocaleName.GetTerminatedSpan().Equals(b.LocaleName.GetTerminatedSpan(), StringComparison.Ordinal)
-            );
-
         public override bool Equals(object obj) => obj switch
         {
             DEVPROPCOMPKEY key => this == key,
@@ -49,7 +42,7 @@ namespace THNETII.WinApi.Native.DevPropDef
 #endif
 
         public static bool operator ==(in DEVPROPCOMPKEY left, in DEVPROPCOMPKEY right) =>
-            left.Key == right.Key && left.Store == right.Store && IsEqualLocaleName(left, right);
+            IsEqualDevPropCompKey(left, right);
 
         public static bool operator !=(DEVPROPCOMPKEY left, DEVPROPCOMPKEY right)
             => !(left == right);

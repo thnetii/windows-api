@@ -3,6 +3,8 @@ using System.Runtime.InteropServices;
 
 namespace THNETII.WinApi.Native.DevPropDef
 {
+    using static DevPropDefMacros;
+
     // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\devpropdef.h, line 107
     /// <summary>
     /// In Windows Vista and later versions of Windows, the <see cref="DEVPROPKEY"/> structure represents a device property key for a device property in the <a href="https://docs.microsoft.com/windows-hardware/drivers/install/unified-device-property-model--windows-vista-and-later-">unified device property model</a>.
@@ -38,7 +40,7 @@ namespace THNETII.WinApi.Native.DevPropDef
 #endif
 
         public static bool operator ==(in DEVPROPKEY left, in DEVPROPKEY right) =>
-            left.pid == right.pid && left.fmtid == right.fmtid;
+            IsEqualDevPropKey(left, right);
 
         public static bool operator !=(in DEVPROPKEY left, in DEVPROPKEY right) =>
             !(left == right);

@@ -1,5 +1,5 @@
 #include <Windows.h>
-#include <devpropdef.h>
+#include <apdevpkey.h>
 
 int main(int argc, char* argv[])
 {

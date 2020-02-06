@@ -1,12 +1,13 @@
-#include <WinSCard.h>
+#include <WinSock2.h>
+#include <afunix.h>
 
 int main(int argc, char* argv[])
 {
-    SCARD_READERSTATE instance;
+    IN_ADDR instance;
     const int size = sizeof(instance);
-    const int value = SCARD_ABSENT;
+    const int value = UNIX_PATH_MAX;
 
-    const void* ptr = SCardGetReaderDeviceInstanceId;
+    const void* ptr = NULL;
 
     return EXIT_SUCCESS;
 }

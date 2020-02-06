@@ -1,12 +1,12 @@
-#include <WinSCard.h>
+#include <WinSock2.h>
 
 int main(int argc, char* argv[])
 {
-    SCARD_READERSTATE instance;
+    ADDRESS_FAMILY instance;
     const int size = sizeof(instance);
-    const int value = SCARD_ABSENT;
+    const int value = NULL;
 
-    const void* ptr = SCardGetReaderDeviceInstanceId;
+    const void* ptr = NULL;
 
     return EXIT_SUCCESS;
 }

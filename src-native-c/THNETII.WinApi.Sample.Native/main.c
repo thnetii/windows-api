@@ -1,12 +1,13 @@
-#include <WinSCard.h>
+#include <Windows.h>
+#include <devpropdef.h>
 
 int main(int argc, char* argv[])
 {
-    SCARD_READERSTATE instance;
+    DEVPROPTYPE instance;
     const int size = sizeof(instance);
-    const int value = SCARD_ABSENT;
+    const int value = DEVPROP_TYPE_EMPTY;
 
-    const void* ptr = SCardGetReaderDeviceInstanceId;
+    const void* ptr = NULL;
 
     return EXIT_SUCCESS;
 }

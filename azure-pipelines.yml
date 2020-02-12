@@ -16,10 +16,15 @@ resources:
 jobs:
 - template: templates/dotnetcore/azure-pipelines.yml@templates
   parameters:
-    presteps:
+    checkout:
     - checkout:   self
       submodules: true
-    overrideCommon:
+    presteps:
+    - task: UseDotNet@2
+      displayName:  Use .NET Core SDK version 3.x
+      inputs:
+        version:    3.x
+    common:
       allProjects: |
         [Ss]rc/*/*.csproj
         [Ss]rc-[Ss]hared/*/*.csproj
@@ -29,4 +34,3 @@ jobs:
         [Ss]rc-[Ss]hared/*/*.csproj
       testProjects: |
         [Tt]est/*/*.csproj
-

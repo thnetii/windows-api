@@ -2,7 +2,7 @@
 
 int main(int argc, char* argv[])
 {
-    PVOID instance;
+    ACE_HEADER instance;
     const int size = sizeof(instance);
     const int value = ACE_OBJECT_TYPE_PRESENT;
 

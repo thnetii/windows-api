@@ -61,5 +61,18 @@ namespace THNETII.WinApi.Native.AccCtrl
         //
         public const int INHERITED_PARENT = 0x10000000;
         public const int INHERITED_GRANDPARENT = 0x20000000;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\AccCtrl.h, line 346
+        //----------------------------------------------------------------------------
+        //
+        //                                  NT5 APIs
+        //
+        //----------------------------------------------------------------------------
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\AccCtrl.h, line 352
+        //
+        // Default provider
+        //
+        public const string ACCCTRL_DEFAULT_PROVIDER = "Windows NT Access Provider";
     }
 }

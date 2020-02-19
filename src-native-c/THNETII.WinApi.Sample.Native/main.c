@@ -1,11 +1,15 @@
 #include <Windows.h>
-#include <apdevpkey.h>
+#include <ks.h>
+#include <ksmedia.h>
+#include <bdatypes.h>
+#include <bdamedia.h>
+#include <atsmedia.h>
 
 int main(int argc, char* argv[])
 {
-    DEVPROPTYPE instance;
+    KSRESET instance;
     const int size = sizeof(instance);
-    const int value = DEVPROP_TYPE_EMPTY;
+    const int value = IOCTL_KS_PROPERTY;
 
     const void* ptr = NULL;
 

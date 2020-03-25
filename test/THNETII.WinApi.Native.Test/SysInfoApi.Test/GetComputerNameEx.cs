@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -92,7 +92,7 @@ namespace THNETII.WinApi.Native.SysInfoApi.Test
             bool successful = GetComputerNameExA(nameType, pathBuilder, out int length);
             if (!successful)
                 throw Marshal.GetExceptionForHR(Marshal.GetLastWin32Error());
-            var path = pathBuilder.ToString(0, length);
+            var path = pathBuilder?.ToString(0, length);
             Assert.NotNull(path);
         }
 
@@ -104,7 +104,7 @@ namespace THNETII.WinApi.Native.SysInfoApi.Test
             bool successful = GetComputerNameExW(nameType, pathBuilder, out int length);
             if (!successful)
                 throw Marshal.GetExceptionForHR(Marshal.GetLastWin32Error());
-            var path = pathBuilder.ToString(0, length);
+            var path = pathBuilder?.ToString(0, length);
             Assert.NotNull(path);
         }
 
@@ -116,7 +116,7 @@ namespace THNETII.WinApi.Native.SysInfoApi.Test
             bool successful = GetComputerNameEx(nameType, pathBuilder, out int length);
             if (!successful)
                 throw Marshal.GetExceptionForHR(Marshal.GetLastWin32Error());
-            var path = pathBuilder.ToString(0, length);
+            var path = pathBuilder?.ToString(0, length);
             Assert.NotNull(path);
         }
 

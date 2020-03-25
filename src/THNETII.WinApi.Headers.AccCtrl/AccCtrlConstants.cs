@@ -213,5 +213,13 @@ namespace THNETII.WinApi.Native.AccCtrl
         public const int ACTRL_WIN_SCREEN = ACTRL_PERM_8;
         public const int ACTRL_WIN_EXIT = ACTRL_PERM_9;
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\AccCtrl.h, line 707
+        public const int ACTRL_ACCESS_NO_OPTIONS = 0x00000000;
+        public const int ACTRL_ACCESS_SUPPORTS_OBJECT_ENTRIES = 0x00000001;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\AccCtrl.h, line 710
+        public const int TREE_SEC_INFO_SET = 0x00000001;
+        public const int TREE_SEC_INFO_RESET = 0x00000002;
+        public const int TREE_SEC_INFO_RESET_KEEP_EXPLICIT = 0x00000003;
     }
 }

@@ -1,3 +1,4 @@
+using System.Diagnostics.CodeAnalysis;
 using System.Runtime.InteropServices;
 using System.Security.AccessControl;
 
@@ -94,6 +95,7 @@ namespace THNETII.WinApi.Native.AccCtrl
         /// A set of bit flags that determines whether other containers or objects can inherit the ACE from the primary object to which the ACL is attached. The value of this member corresponds to the inheritance portion (low-order byte) of the <see cref="GenericAce.AceFlags"/> member of the <see cref="GenericAce"/> structure.
         /// </summary>
         [MarshalAs(UnmanagedType.U4)]
+        [SuppressMessage("Usage", "PC001: API not supported on all platforms")]
         public AceFlags grfInheritance;
         /// <summary>
         /// A <see cref="TRUSTEE"/> structure that identifies the user, group, or program (such as a Windows service) to which the ACE applies.

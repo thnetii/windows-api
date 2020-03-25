@@ -75,6 +75,19 @@ namespace THNETII.WinApi.Native.AccCtrl
         //
         public const string ACCCTRL_DEFAULT_PROVIDER = "Windows NT Access Provider";
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\AccCtrl.h, line 352
+        //
+        // TRUSTEE_ACCESS flags
+        //
+        public const int TRUSTEE_ACCESS_ALLOWED = 0x00000001;
+        public const int TRUSTEE_ACCESS_READ = 0x00000002;
+        public const int TRUSTEE_ACCESS_WRITE = 0x00000004;
+
+        public const int TRUSTEE_ACCESS_EXPLICIT = 0x00000001;
+        public const int TRUSTEE_ACCESS_READ_WRITE = (TRUSTEE_ACCESS_READ | TRUSTEE_ACCESS_WRITE);
+
+        public const int TRUSTEE_ACCESS_ALL = unchecked((int)0xFFFFFFFF);
+
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\AccCtrl.h, line 528
         //
         // Generic permission values

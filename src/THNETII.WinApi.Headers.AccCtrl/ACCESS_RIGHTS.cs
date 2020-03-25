@@ -3,12 +3,118 @@ using System;
 namespace THNETII.WinApi.Native.AccCtrl
 {
     // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\AccCtrl.h, line 367
-    //
-    // Access rights
-    //
-
+    /// <summary>
+    /// Access rights
+    /// </summary>
     [Flags]
     public enum ACCESS_RIGHTS : int
     {
+        //
+        // Generic permission values
+        //
+        ACTRL_RESERVED = AccCtrlConstants.ACTRL_RESERVED,
+        ACTRL_PERM_1 = AccCtrlConstants.ACTRL_PERM_1,
+        ACTRL_PERM_2 = AccCtrlConstants.ACTRL_PERM_2,
+        ACTRL_PERM_3 = AccCtrlConstants.ACTRL_PERM_3,
+        ACTRL_PERM_4 = AccCtrlConstants.ACTRL_PERM_4,
+        ACTRL_PERM_5 = AccCtrlConstants.ACTRL_PERM_5,
+        ACTRL_PERM_6 = AccCtrlConstants.ACTRL_PERM_6,
+        ACTRL_PERM_7 = AccCtrlConstants.ACTRL_PERM_7,
+        ACTRL_PERM_8 = AccCtrlConstants.ACTRL_PERM_8,
+        ACTRL_PERM_9 = AccCtrlConstants.ACTRL_PERM_9,
+        ACTRL_PERM_10 = AccCtrlConstants.ACTRL_PERM_10,
+        ACTRL_PERM_11 = AccCtrlConstants.ACTRL_PERM_11,
+        ACTRL_PERM_12 = AccCtrlConstants.ACTRL_PERM_12,
+        ACTRL_PERM_13 = AccCtrlConstants.ACTRL_PERM_13,
+        ACTRL_PERM_14 = AccCtrlConstants.ACTRL_PERM_14,
+        ACTRL_PERM_15 = AccCtrlConstants.ACTRL_PERM_15,
+        ACTRL_PERM_16 = AccCtrlConstants.ACTRL_PERM_16,
+        ACTRL_PERM_17 = AccCtrlConstants.ACTRL_PERM_17,
+        ACTRL_PERM_18 = AccCtrlConstants.ACTRL_PERM_18,
+        ACTRL_PERM_19 = AccCtrlConstants.ACTRL_PERM_19,
+        ACTRL_PERM_20 = AccCtrlConstants.ACTRL_PERM_20,
+
+        //
+        // Standard and object rights
+        //
+        ACTRL_SYSTEM_ACCESS = AccCtrlConstants.ACTRL_SYSTEM_ACCESS,
+        ACTRL_DELETE = AccCtrlConstants.ACTRL_DELETE,
+        ACTRL_READ_CONTROL = AccCtrlConstants.ACTRL_READ_CONTROL,
+        ACTRL_CHANGE_ACCESS = AccCtrlConstants.ACTRL_CHANGE_ACCESS,
+        ACTRL_CHANGE_OWNER = AccCtrlConstants.ACTRL_CHANGE_OWNER,
+        ACTRL_SYNCHRONIZE = AccCtrlConstants.ACTRL_SYNCHRONIZE,
+        ACTRL_STD_RIGHTS_ALL = AccCtrlConstants.ACTRL_STD_RIGHTS_ALL,
+        ACTRL_STD_RIGHT_REQUIRED = AccCtrlConstants.ACTRL_STD_RIGHT_REQUIRED,
+
+        ACTRL_DS_OPEN = AccCtrlConstants.ACTRL_DS_OPEN,
+        ACTRL_DS_CREATE_CHILD = AccCtrlConstants.ACTRL_DS_CREATE_CHILD,
+        ACTRL_DS_DELETE_CHILD = AccCtrlConstants.ACTRL_DS_DELETE_CHILD,
+        ACTRL_DS_LIST = AccCtrlConstants.ACTRL_DS_LIST,
+        ACTRL_DS_SELF = AccCtrlConstants.ACTRL_DS_SELF,
+        ACTRL_DS_READ_PROP = AccCtrlConstants.ACTRL_DS_READ_PROP,
+        ACTRL_DS_WRITE_PROP = AccCtrlConstants.ACTRL_DS_WRITE_PROP,
+        ACTRL_DS_DELETE_TREE = AccCtrlConstants.ACTRL_DS_DELETE_TREE,
+        ACTRL_DS_LIST_OBJECT = AccCtrlConstants.ACTRL_DS_LIST_OBJECT,
+        ACTRL_DS_CONTROL_ACCESS = AccCtrlConstants.ACTRL_DS_CONTROL_ACCESS,
+
+        ACTRL_FILE_READ = AccCtrlConstants.ACTRL_FILE_READ,
+        ACTRL_FILE_WRITE = AccCtrlConstants.ACTRL_FILE_WRITE,
+        ACTRL_FILE_APPEND = AccCtrlConstants.ACTRL_FILE_APPEND,
+        ACTRL_FILE_READ_PROP = AccCtrlConstants.ACTRL_FILE_READ_PROP,
+        ACTRL_FILE_WRITE_PROP = AccCtrlConstants.ACTRL_FILE_WRITE_PROP,
+        ACTRL_FILE_EXECUTE = AccCtrlConstants.ACTRL_FILE_EXECUTE,
+        ACTRL_FILE_READ_ATTRIB = AccCtrlConstants.ACTRL_FILE_READ_ATTRIB,
+        ACTRL_FILE_WRITE_ATTRIB = AccCtrlConstants.ACTRL_FILE_WRITE_ATTRIB,
+        ACTRL_FILE_CREATE_PIPE = AccCtrlConstants.ACTRL_FILE_CREATE_PIPE,
+        ACTRL_DIR_LIST = AccCtrlConstants.ACTRL_DIR_LIST,
+        ACTRL_DIR_CREATE_OBJECT = AccCtrlConstants.ACTRL_DIR_CREATE_OBJECT,
+        ACTRL_DIR_CREATE_CHILD = AccCtrlConstants.ACTRL_DIR_CREATE_CHILD,
+        ACTRL_DIR_DELETE_CHILD = AccCtrlConstants.ACTRL_DIR_DELETE_CHILD,
+        ACTRL_DIR_TRAVERSE = AccCtrlConstants.ACTRL_DIR_TRAVERSE,
+        ACTRL_KERNEL_TERMINATE = AccCtrlConstants.ACTRL_KERNEL_TERMINATE,
+        ACTRL_KERNEL_THREAD = AccCtrlConstants.ACTRL_KERNEL_THREAD,
+        ACTRL_KERNEL_VM = AccCtrlConstants.ACTRL_KERNEL_VM,
+        ACTRL_KERNEL_VM_READ = AccCtrlConstants.ACTRL_KERNEL_VM_READ,
+        ACTRL_KERNEL_VM_WRITE = AccCtrlConstants.ACTRL_KERNEL_VM_WRITE,
+        ACTRL_KERNEL_DUP_HANDLE = AccCtrlConstants.ACTRL_KERNEL_DUP_HANDLE,
+        ACTRL_KERNEL_PROCESS = AccCtrlConstants.ACTRL_KERNEL_PROCESS,
+        ACTRL_KERNEL_SET_INFO = AccCtrlConstants.ACTRL_KERNEL_SET_INFO,
+        ACTRL_KERNEL_GET_INFO = AccCtrlConstants.ACTRL_KERNEL_GET_INFO,
+        ACTRL_KERNEL_CONTROL = AccCtrlConstants.ACTRL_KERNEL_CONTROL,
+        ACTRL_KERNEL_ALERT = AccCtrlConstants.ACTRL_KERNEL_ALERT,
+        ACTRL_KERNEL_GET_CONTEXT = AccCtrlConstants.ACTRL_KERNEL_GET_CONTEXT,
+        ACTRL_KERNEL_SET_CONTEXT = AccCtrlConstants.ACTRL_KERNEL_SET_CONTEXT,
+        ACTRL_KERNEL_TOKEN = AccCtrlConstants.ACTRL_KERNEL_TOKEN,
+        ACTRL_KERNEL_IMPERSONATE = AccCtrlConstants.ACTRL_KERNEL_IMPERSONATE,
+        ACTRL_KERNEL_DIMPERSONATE = AccCtrlConstants.ACTRL_KERNEL_DIMPERSONATE,
+        ACTRL_PRINT_SADMIN = AccCtrlConstants.ACTRL_PRINT_SADMIN,
+        ACTRL_PRINT_SLIST = AccCtrlConstants.ACTRL_PRINT_SLIST,
+        ACTRL_PRINT_PADMIN = AccCtrlConstants.ACTRL_PRINT_PADMIN,
+        ACTRL_PRINT_PUSE = AccCtrlConstants.ACTRL_PRINT_PUSE,
+        ACTRL_PRINT_JADMIN = AccCtrlConstants.ACTRL_PRINT_JADMIN,
+        ACTRL_SVC_GET_INFO = AccCtrlConstants.ACTRL_SVC_GET_INFO,
+        ACTRL_SVC_SET_INFO = AccCtrlConstants.ACTRL_SVC_SET_INFO,
+        ACTRL_SVC_STATUS = AccCtrlConstants.ACTRL_SVC_STATUS,
+        ACTRL_SVC_LIST = AccCtrlConstants.ACTRL_SVC_LIST,
+        ACTRL_SVC_START = AccCtrlConstants.ACTRL_SVC_START,
+        ACTRL_SVC_STOP = AccCtrlConstants.ACTRL_SVC_STOP,
+        ACTRL_SVC_PAUSE = AccCtrlConstants.ACTRL_SVC_PAUSE,
+        ACTRL_SVC_INTERROGATE = AccCtrlConstants.ACTRL_SVC_INTERROGATE,
+        ACTRL_SVC_UCONTROL = AccCtrlConstants.ACTRL_SVC_UCONTROL,
+        ACTRL_REG_QUERY = AccCtrlConstants.ACTRL_REG_QUERY,
+        ACTRL_REG_SET = AccCtrlConstants.ACTRL_REG_SET,
+        ACTRL_REG_CREATE_CHILD = AccCtrlConstants.ACTRL_REG_CREATE_CHILD,
+        ACTRL_REG_LIST = AccCtrlConstants.ACTRL_REG_LIST,
+        ACTRL_REG_NOTIFY = AccCtrlConstants.ACTRL_REG_NOTIFY,
+        ACTRL_REG_LINK = AccCtrlConstants.ACTRL_REG_LINK,
+        ACTRL_WIN_CLIPBRD = AccCtrlConstants.ACTRL_WIN_CLIPBRD,
+        ACTRL_WIN_GLOBAL_ATOMS = AccCtrlConstants.ACTRL_WIN_GLOBAL_ATOMS,
+        ACTRL_WIN_CREATE = AccCtrlConstants.ACTRL_WIN_CREATE,
+        ACTRL_WIN_LIST_DESK = AccCtrlConstants.ACTRL_WIN_LIST_DESK,
+        ACTRL_WIN_LIST = AccCtrlConstants.ACTRL_WIN_LIST,
+        ACTRL_WIN_READ_ATTRIBS = AccCtrlConstants.ACTRL_WIN_READ_ATTRIBS,
+        ACTRL_WIN_WRITE_ATTRIBS = AccCtrlConstants.ACTRL_WIN_WRITE_ATTRIBS,
+        ACTRL_WIN_SCREEN = AccCtrlConstants.ACTRL_WIN_SCREEN,
+        ACTRL_WIN_EXIT = AccCtrlConstants.ACTRL_WIN_EXIT,
     }
 }

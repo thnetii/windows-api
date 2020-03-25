@@ -1,13 +1,12 @@
-#include <Windows.h>
-#include <apdevpkey.h>
+#include <AccCtrl.h>
 
 int main(int argc, char* argv[])
 {
-    DEVPROPTYPE instance;
+    ACE_HEADER instance;
     const int size = sizeof(instance);
-    const int value = DEVPROP_TYPE_EMPTY;
+    const int value = ACE_OBJECT_TYPE_PRESENT;
 
-    const void* ptr = NULL;
+    const void* ptr = AccFree;
 
     return EXIT_SUCCESS;
 }

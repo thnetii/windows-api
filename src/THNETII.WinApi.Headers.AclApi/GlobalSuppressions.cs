@@ -5,7 +5,9 @@
 
 using System.Diagnostics.CodeAnalysis;
 
+[assembly: SuppressMessage("Documentation", "CS0419: Ambiguous reference in cref attribute")]
 [assembly: SuppressMessage("Naming", "CA1707: Identifiers should not contain underscores")]
 [assembly: SuppressMessage("Design", "CA1051: Do not declare visible instance fields")]
 [assembly: SuppressMessage("Performance", "CA1815: Override equals and operator equals on value types")]
 [assembly: SuppressMessage("Style", "IDE1006: Naming Styles")]
+[assembly: SuppressMessage("Usage", "PC003: Native API not available in UWP")]

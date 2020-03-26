@@ -6,9 +6,10 @@
 using System.Diagnostics.CodeAnalysis;
 
 [assembly: SuppressMessage("Documentation", "CS1591: Missing XML comment for publicly visible type or member")]
+[assembly: SuppressMessage("Documentation", "CA1200: Avoid using cref tags with a prefix")]
 [assembly: SuppressMessage("Design", "CA1028: Enum Storage should be Int32")]
+[assembly: SuppressMessage("Design", "CA1051: Do not declare visible instance fields")]
 [assembly: SuppressMessage("Naming", "CA1714: Flags enums should have plural names")]
 [assembly: SuppressMessage("Naming", "CA1707: Identifiers should not contain underscores")]
-[assembly: SuppressMessage("Design", "CA1051: Do not declare visible instance fields")]
 [assembly: SuppressMessage("Performance", "CA1815: Override equals and operator equals on value types")]
 [assembly: SuppressMessage("Style", "IDE1006: Naming Styles")]

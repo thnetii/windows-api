@@ -1,7 +1,8 @@
-﻿namespace THNETII.WinApi
+namespace THNETII.WinApi
 {
     public static class NativeLibraryNames
     {
+        public const string Advapi32 = "Advapi32.dll";
         public const string KernelBase = "KernelBase.dll";
         public const string Kernel32 = "Kernel32.dll";
         public const string Ntdll = "Ntdll.dll";

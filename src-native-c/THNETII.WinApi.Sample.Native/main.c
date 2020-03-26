@@ -1,12 +1,12 @@
-#include <AccCtrl.h>
+#include <AclAPI.h>
 
 int main(int argc, char* argv[])
 {
-    ACE_HEADER instance;
+    FN_PROGRESS instance;
     const int size = sizeof(instance);
-    const int value = ACE_OBJECT_TYPE_PRESENT;
+    const int value = NULL;
 
-    const void* ptr = AccFree;
+    const void* ptr = SetEntriesInAcl;
 
     return EXIT_SUCCESS;
 }

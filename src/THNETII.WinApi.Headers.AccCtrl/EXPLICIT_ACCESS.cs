@@ -73,7 +73,7 @@ namespace THNETII.WinApi.Native.AccCtrl
     /// <seealso cref="BuildSecurityDescriptor"/>
     /// <seealso cref="GetExplicitEntriesFromAcl"/>
     /// <seealso cref="LookupSecurityDescriptorParts"/>
-    /// <seealso cref="SetEntriesInAcl"/>
+    /// <seealso cref="M:THNETII.WinApi.Native.AclApi.AclApiFunctions.SetEntriesInAcl(System.ReadOnlySpan{THNETII.WinApi.Native.AccCtrl.EXPLICIT_ACCESS},System.IntPtr,System.IntPtr@)"/>
     /// <seealso cref="TRUSTEE"/>
 #if !NETSTANDARD1_6
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Auto)]

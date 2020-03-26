@@ -1,14 +1,17 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.InteropServices;
-using System.Text;
 
 namespace THNETII.WinApi.Helpers
 {
     using static NativeLibraryNames;
 
+    /// <summary>
+    /// Provides helper methods to extend the functionality of the
+    /// <see cref="DllImportAttribute"/> and related constructs.
+    /// </summary>
     [SuppressMessage("Globalization", "CA2101: Specify marshaling for P/Invoke string arguments", Justification = "Properly specified through CharSet property of DllImport attribute")]
     public static class DllImportHelper
     {

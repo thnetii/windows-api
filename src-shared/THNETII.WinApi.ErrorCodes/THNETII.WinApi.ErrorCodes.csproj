@@ -12,12 +12,12 @@
   <ItemGroup>
     <ProjectReference Include="..\..\interopservices\src\THNETII.InteropServices.Bitwise\THNETII.InteropServices.Bitwise.csproj" />
   </ItemGroup>
-  
+
   <ItemGroup>
-    <ProjectReference Include="..\..\src\THNETII.WinApi.Constants.WinError\THNETII.WinApi.Constants.WinError.csproj">
+    <ProjectReference Include="..\..\src-native\THNETII.WinApi.Constants.WinError\THNETII.WinApi.Constants.WinError.csproj">
       <PrivateAssets>All</PrivateAssets>
     </ProjectReference>
-    <ProjectReference Include="..\..\src\THNETII.WinApi.Constants.NTStatus\THNETII.WinApi.Constants.NTStatus.csproj">
+    <ProjectReference Include="..\..\src-native\THNETII.WinApi.Constants.NTStatus\THNETII.WinApi.Constants.NTStatus.csproj">
       <PrivateAssets>All</PrivateAssets>
     </ProjectReference>
     <ProjectReference Include="..\THNETII.WinApi.Helpers\THNETII.WinApi.Helpers.csproj" />

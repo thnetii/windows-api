@@ -67,9 +67,9 @@ git submodule add https://github.com/thnetii/windows-api.git
 In addition to the usual `src`/`test` directories, this repository also 
 includes some additional directories.
 
-### src
+### src-native
 
-The `src` subdirectory contains the thin P/Invoke wrappers around the 
+The `src-native` subdirectory contains the thin P/Invoke wrappers around the 
 Windows APIs located in the various headers files of the Windows SDK.
 
 The declarations and definitions in a C Header file are generally mapped using
@@ -105,6 +105,18 @@ the following guidelines:
   attribute applied to the declared type. Structures use the sequential layout
   kind; unions use the explicit layout kind with all fields using a field offset
   of `0` (zero).
+* Documentation comments should use usual triple-slash C# comments. Oftentimes
+  the API documentation from docs.microsoft.com will contain references to other
+  members across different projects. If these references that are purely for
+  documentation purposes, consider adding a `PrivateAssets="All"` project
+  reference. If this would lead to a circular reference, use a fully qualified
+  type prefix reference.
+* Documentation comments for overloads should use ambiguous cref references with
+  only the method name being specified. For that reason, overload definitions
+  should place the most common overload first in the source code. Suppress 
+  warning `CS0419` in the project file and GlobalSuppressions.
+* Functions taking or returning string-type arguments should order the 
+  string-marshalling variants before the `LPSTR` (and related) variants.
 
 ### symbols
 

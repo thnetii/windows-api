@@ -1,8 +1,7 @@
-﻿using Microsoft.Win32.SafeHandles;
 using System;
-using System.IO;
 using System.Runtime.InteropServices;
 
+using THNETII.InteropServices.Memory;
 using THNETII.WinApi.Native.MinWinBase;
 using THNETII.WinApi.Native.MinWinDef;
 using THNETII.WinApi.Native.WinError;
@@ -59,49 +58,102 @@ namespace THNETII.WinApi.Native.FileApi
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\fileapi.h, line 56
         #region CreateDirectoryA function
-        /// <inheritdoc cref="CreateDirectoryW(LPCWSTR, in SECURITY_ATTRIBUTES)"/>
+        /// <inheritdoc cref="CreateDirectory"/>
         [Obsolete(".NET Applications should not call " + nameof(CreateDirectoryA) + ". Instead the types in the System.IO namespace should be used.")]
         [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi)]
         [return: MarshalAs(UnmanagedType.Bool)]
         public static extern bool CreateDirectoryA(
-            [In] LPCSTR lpPathName,
+            [In] string lpPathName,
             [In, Optional] in SECURITY_ATTRIBUTES lpSecurityAttributes
             );
-        /// <inheritdoc cref="CreateDirectoryA(LPCSTR, in SECURITY_ATTRIBUTES)"/>
-        [Obsolete(".NET Applications should not call " + nameof(CreateDirectoryA) + ". Instead the types in the System.IO namespace should be used.")]
-        public static bool CreateDirectoryA(LPCSTR lpPathName) =>
-            CreateDirectoryA(lpPathName, IntPtr.Zero);
-        /// <inheritdoc cref="CreateDirectoryA(LPCSTR, in SECURITY_ATTRIBUTES)"/>
-        [Obsolete(".NET Applications should not call " + nameof(CreateDirectoryA) + ". Instead the types in the System.IO namespace should be used.")]
-        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi)]
-        [return: MarshalAs(UnmanagedType.Bool)]
-        private static extern bool CreateDirectoryA(
-            [In] LPCSTR lpPathName,
-            [In, Optional] IntPtr lpSecurityAttributes
-            );
-        /// <inheritdoc cref="CreateDirectoryA(LPCSTR, in SECURITY_ATTRIBUTES)"/>
-        [Obsolete(".NET Applications should not call " + nameof(CreateDirectoryA) + ". Instead the types in the System.IO namespace should be used.")]
-        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi)]
-        [return: MarshalAs(UnmanagedType.Bool)]
-        public static extern bool CreateDirectoryA(
-            [In, MarshalAs(UnmanagedType.LPStr)] string lpPathName,
-            [In, Optional] in SECURITY_ATTRIBUTES lpSecurityAttributes
-            );
-        /// <inheritdoc cref="CreateDirectoryA(LPCSTR, in SECURITY_ATTRIBUTES)"/>
+
+        /// <inheritdoc cref="CreateDirectoryA"/>
         [Obsolete(".NET Applications should not call " + nameof(CreateDirectoryA) + ". Instead the types in the System.IO namespace should be used.")]
         public static bool CreateDirectoryA(string lpPathName) =>
             CreateDirectoryA(lpPathName, IntPtr.Zero);
-        /// <inheritdoc cref="CreateDirectoryA(LPCSTR, in SECURITY_ATTRIBUTES)"/>
+
+        /// <inheritdoc cref="CreateDirectoryA"/>
         [Obsolete(".NET Applications should not call " + nameof(CreateDirectoryA) + ". Instead the types in the System.IO namespace should be used.")]
         [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi)]
         [return: MarshalAs(UnmanagedType.Bool)]
         private static extern bool CreateDirectoryA(
-            [In, MarshalAs(UnmanagedType.LPStr)] string lpPathName,
+            [In] string lpPathName,
+            [In, Optional] IntPtr lpSecurityAttributes
+            );
+
+        /// <inheritdoc cref="CreateDirectoryA"/>
+        [Obsolete(".NET Applications should not call " + nameof(CreateDirectoryA) + ". Instead the types in the System.IO namespace should be used.")]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool CreateDirectoryA(
+            [In] LPCSTR lpPathName,
+            [In, Optional] in SECURITY_ATTRIBUTES lpSecurityAttributes
+            );
+
+        /// <inheritdoc cref="CreateDirectoryA"/>
+        [Obsolete(".NET Applications should not call " + nameof(CreateDirectoryA) + ". Instead the types in the System.IO namespace should be used.")]
+        public static bool CreateDirectoryA(LPCSTR lpPathName) =>
+            CreateDirectoryA(lpPathName, IntPtr.Zero);
+
+        /// <inheritdoc cref="CreateDirectoryA"/>
+        [Obsolete(".NET Applications should not call " + nameof(CreateDirectoryA) + ". Instead the types in the System.IO namespace should be used.")]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        private static extern bool CreateDirectoryA(
+            [In] LPCSTR lpPathName,
             [In, Optional] IntPtr lpSecurityAttributes
             );
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\fileapi.h, line 64
         #region CreateDirectoryW function
+        /// <inheritdoc cref="CreateDirectory"/>
+        [Obsolete(".NET Applications should not call " + nameof(CreateDirectoryW) + ". Instead the types in the System.IO namespace should be used.")]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Unicode)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool CreateDirectoryW(
+            [In] string lpPathName,
+            [In, Optional] in SECURITY_ATTRIBUTES lpSecurityAttributes
+            );
+
+        /// <inheritdoc cref="CreateDirectoryW"/>
+        [Obsolete(".NET Applications should not call " + nameof(CreateDirectoryW) + ". Instead the types in the System.IO namespace should be used.")]
+        public static bool CreateDirectoryW(string lpPathName) =>
+            CreateDirectoryW(lpPathName, IntPtr.Zero);
+
+        /// <inheritdoc cref="CreateDirectoryW"/>
+        [Obsolete(".NET Applications should not call " + nameof(CreateDirectoryW) + ". Instead the types in the System.IO namespace should be used.")]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Unicode)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        private static extern bool CreateDirectoryW(
+            [In] string lpPathName,
+            [In, Optional] IntPtr lpSecurityAttributes
+            );
+
+        /// <inheritdoc cref="CreateDirectoryW"/>
+        [Obsolete(".NET Applications should not call " + nameof(CreateDirectoryW) + ". Instead the types in the System.IO namespace should be used.")]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Unicode)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool CreateDirectoryW(
+            [In] LPCWSTR lpPathName,
+            [In, Optional] in SECURITY_ATTRIBUTES lpSecurityAttributes
+            );
+
+        /// <inheritdoc cref="CreateDirectoryW"/>
+        [Obsolete(".NET Applications should not call " + nameof(CreateDirectoryW) + ". Instead the types in the System.IO namespace should be used.")]
+        public static bool CreateDirectoryW(LPCWSTR lpPathName) =>
+            CreateDirectoryW(lpPathName, IntPtr.Zero);
+
+        /// <inheritdoc cref="CreateDirectoryW"/>
+        [Obsolete(".NET Applications should not call " + nameof(CreateDirectoryW) + ". Instead the types in the System.IO namespace should be used.")]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Unicode)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        private static extern bool CreateDirectoryW(
+            [In] LPCWSTR lpPathName,
+            [In, Optional] IntPtr lpSecurityAttributes
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\fileapi.h, line 72
+        #region CreateDirectory function
         /// <summary>
         /// Creates a new directory. If the underlying file system supports security on files and directories, the function applies a specified security descriptor to the new directory.
         /// <para>To specify a template directory, use the <see cref="CreateDirectoryEx"/> function.</para>
@@ -163,92 +215,120 @@ namespace THNETII.WinApi.Native.FileApi
         /// <seealso cref="RemoveDirectory"/>
         /// <seealso cref="SECURITY_ATTRIBUTES"/>
         /// <seealso cref="SECURITY_INFORMATION"/>
-        [Obsolete(".NET Applications should not call " + nameof(CreateDirectoryW) + ". Instead the types in the System.IO namespace should be used.")]
-        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Unicode)]
+        [Obsolete(".NET Applications should not call " + nameof(CreateDirectory) + ". Instead the types in the System.IO namespace should be used.")]
+#if !NETSTANDARD1_3
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
         [return: MarshalAs(UnmanagedType.Bool)]
-        public static extern bool CreateDirectoryW(
-            [In] LPCWSTR lpPathName,
+        public static extern
+#else
+        public static
+#endif // NETSTANDARD1_3
+        bool CreateDirectory(
+            [In] string lpPathName,
             [In, Optional] in SECURITY_ATTRIBUTES lpSecurityAttributes
-            );
-        /// <inheritdoc cref="CreateDirectoryW(LPCWSTR, in SECURITY_ATTRIBUTES)"/>
-        [Obsolete(".NET Applications should not call " + nameof(CreateDirectoryW) + ". Instead the types in the System.IO namespace should be used.")]
-        public static bool CreateDirectoryW(LPCWSTR lpPathName) =>
-            CreateDirectoryW(lpPathName, IntPtr.Zero);
-        /// <inheritdoc cref="CreateDirectoryW(LPCWSTR, in SECURITY_ATTRIBUTES)"/>
-        [Obsolete(".NET Applications should not call " + nameof(CreateDirectoryW) + ". Instead the types in the System.IO namespace should be used.")]
-        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Unicode)]
-        [return: MarshalAs(UnmanagedType.Bool)]
-        private static extern bool CreateDirectoryW(
-            [In] LPCWSTR lpPathName,
-            [In, Optional] IntPtr lpSecurityAttributes
-            );
-        /// <inheritdoc cref="CreateDirectoryW(LPCWSTR, in SECURITY_ATTRIBUTES)"/>
-        [Obsolete(".NET Applications should not call " + nameof(CreateDirectoryW) + ". Instead the types in the System.IO namespace should be used.")]
-        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Unicode)]
-        [return: MarshalAs(UnmanagedType.Bool)]
-        public static extern bool CreateDirectoryW(
-            [In, MarshalAs(UnmanagedType.LPWStr)] string lpPathName,
-            [In, Optional] in SECURITY_ATTRIBUTES lpSecurityAttributes
-            );
-        /// <inheritdoc cref="CreateDirectoryW(LPCWSTR, in SECURITY_ATTRIBUTES)"/>
-        [Obsolete(".NET Applications should not call " + nameof(CreateDirectoryW) + ". Instead the types in the System.IO namespace should be used.")]
-        public static bool CreateDirectoryW(string lpPathName) =>
-            CreateDirectoryW(lpPathName, IntPtr.Zero);
-        /// <inheritdoc cref="CreateDirectoryW(LPCWSTR, in SECURITY_ATTRIBUTES)"/>
-        [Obsolete(".NET Applications should not call " + nameof(CreateDirectoryW) + ". Instead the types in the System.IO namespace should be used.")]
-        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Unicode)]
-        [return: MarshalAs(UnmanagedType.Bool)]
-        private static extern bool CreateDirectoryW(
-            [In, MarshalAs(UnmanagedType.LPWStr)] string lpPathName,
-            [In, Optional] IntPtr lpSecurityAttributes
-            );
-        #endregion
-        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\fileapi.h, line 72
-        #region CreateDirectory function
+            )
+#if !NETSTANDARD1_3
+            ;
+#else
+            => Marshal.SystemDefaultCharSize switch
+            {
+                1 => CreateDirectoryA(lpPathName, lpSecurityAttributes),
+                2 => CreateDirectoryW(lpPathName, lpSecurityAttributes),
+                _ => throw new PlatformNotSupportedException(),
+            };
+#endif // NETSTANDARD1_3
+
         /// <inheritdoc cref="CreateDirectoryW(LPCWSTR, in SECURITY_ATTRIBUTES)"/>
         [Obsolete(".NET Applications should not call " + nameof(CreateDirectory) + ". Instead the types in the System.IO namespace should be used.")]
-        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi)]
+        public static bool CreateDirectory(
+            string lpPathName
+            ) => CreateDirectory(lpPathName, IntPtr.Zero);
+
+        /// <inheritdoc cref="CreateDirectoryW(LPCWSTR, in SECURITY_ATTRIBUTES)"/>
+        [Obsolete(".NET Applications should not call " + nameof(CreateDirectory) + ". Instead the types in the System.IO namespace should be used.")]
+#if !NETSTANDARD1_3
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
         [return: MarshalAs(UnmanagedType.Bool)]
-        public static extern bool CreateDirectory(
+        private static extern
+#else
+        private static
+#endif // NETSTANDARD1_3
+        bool CreateDirectory(
+            [In] string lpPathName,
+            [In, Optional] IntPtr lpSecurityAttributes
+            )
+#if !NETSTANDARD1_3
+            ;
+#else
+            => Marshal.SystemDefaultCharSize switch
+            {
+                1 => CreateDirectoryA(lpPathName, lpSecurityAttributes),
+                2 => CreateDirectoryW(lpPathName, lpSecurityAttributes),
+                _ => throw new PlatformNotSupportedException(),
+            };
+#endif // NETSTANDARD1_3
+
+        /// <inheritdoc cref="CreateDirectory"/>
+        [Obsolete(".NET Applications should not call " + nameof(CreateDirectory) + ". Instead the types in the System.IO namespace should be used.")]
+#if !NETSTANDARD1_3
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern
+#else
+        public static
+#endif // NETSTANDARD1_3
+        bool CreateDirectory(
             [In] LPCTSTR lpPathName,
             [In, Optional] in SECURITY_ATTRIBUTES lpSecurityAttributes
-            );
-        /// <inheritdoc cref="CreateDirectory(LPCTSTR, in SECURITY_ATTRIBUTES)"/>
+            )
+#if !NETSTANDARD1_3
+            ;
+#else
+            => Marshal.SystemDefaultCharSize switch
+            {
+                1 => CreateDirectoryA(
+                    Pointer.Create<LPCSTR>(lpPathName.Pointer),
+                    lpSecurityAttributes),
+                2 => CreateDirectoryW(
+                    Pointer.Create<LPCWSTR>(lpPathName.Pointer),
+                    lpSecurityAttributes),
+                _ => throw new PlatformNotSupportedException(),
+            };
+#endif // NETSTANDARD1_3
+
+        /// <inheritdoc cref="CreateDirectory"/>
         [Obsolete(".NET Applications should not call " + nameof(CreateDirectory) + ". Instead the types in the System.IO namespace should be used.")]
         public static bool CreateDirectory(
             [In] LPCTSTR lpPathName
-            ) =>
-            CreateDirectory(lpPathName, IntPtr.Zero);
-        /// <inheritdoc cref="CreateDirectory(LPCTSTR, in SECURITY_ATTRIBUTES)"/>
+            ) => CreateDirectory(lpPathName, IntPtr.Zero);
+
+        /// <inheritdoc cref="CreateDirectory"/>
         [Obsolete(".NET Applications should not call " + nameof(CreateDirectory) + ". Instead the types in the System.IO namespace should be used.")]
-        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi)]
+#if !NETSTANDARD1_3
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
         [return: MarshalAs(UnmanagedType.Bool)]
-        private static extern bool CreateDirectory(
+        private static extern
+#else
+        private static
+#endif // NETSTANDARD1_3
+        bool CreateDirectory(
             [In] LPCTSTR lpPathName,
             [In, Optional] IntPtr lpSecurityAttributes
-            );
+            )
 #if !NETSTANDARD1_3
-        /// <inheritdoc cref="CreateDirectory(LPCTSTR, in SECURITY_ATTRIBUTES)"/>
-        [Obsolete(".NET Applications should not call " + nameof(CreateDirectory) + ". Instead the types in the System.IO namespace should be used.")]
-        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
-        [return: MarshalAs(UnmanagedType.Bool)]
-        public static extern bool CreateDirectory(
-            [In, MarshalAs(UnmanagedType.LPTStr)] string lpPathName,
-            [In, Optional] in SECURITY_ATTRIBUTES lpSecurityAttributes
-            );
-        /// <inheritdoc cref="CreateDirectory(LPCTSTR, in SECURITY_ATTRIBUTES)"/>
-        [Obsolete(".NET Applications should not call " + nameof(CreateDirectory) + ". Instead the types in the System.IO namespace should be used.")]
-        public static bool CreateDirectory(string lpPathName) =>
-            CreateDirectory(lpPathName, IntPtr.Zero);
-        /// <inheritdoc cref="CreateDirectory(LPCTSTR, in SECURITY_ATTRIBUTES)"/>
-        [Obsolete(".NET Applications should not call " + nameof(CreateDirectory) + ". Instead the types in the System.IO namespace should be used.")]
-        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
-        [return: MarshalAs(UnmanagedType.Bool)]
-        private static extern bool CreateDirectory(
-            [In, MarshalAs(UnmanagedType.LPTStr)] string lpPathName,
-            [In, Optional] IntPtr lpSecurityAttributes
-            );
-#endif // !NETSTANDARD1_3
+            ;
+#else
+            => Marshal.SystemDefaultCharSize switch
+            {
+                1 => CreateDirectoryA(
+                    Pointer.Create<LPCSTR>(lpPathName.Pointer),
+                    lpSecurityAttributes),
+                2 => CreateDirectoryW(
+                    Pointer.Create<LPCWSTR>(lpPathName.Pointer),
+                    lpSecurityAttributes),
+                _ => throw new PlatformNotSupportedException(),
+            };
+#endif // NETSTANDARD1_3
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\fileapi.h, line 116
         #region DefineDosDeviceW function

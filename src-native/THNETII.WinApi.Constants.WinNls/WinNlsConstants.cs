@@ -431,229 +431,346 @@ namespace THNETII.WinApi.Native.WinNls
         //
         // ** DEPRECATED ** DEPRECATED ** DEPRECATED ** DEPRECATED ** DEPRECATED **
         //
+        private const string GEOID_DEPRECATION_MESSAGE =
+            "DEPRECATED: The GEOID  concept is deprecated, please use " +
+            "Country/Region Names instead, eg: \"US\" instead of a GEOID like 244. " +
+            "See the documentation for GetGeoInfoEx.";
+
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_DEFAULT = 0;
 
         /// <summary>Albania</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_ALBANIA = 355;
         /// <summary>Algeria</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_ALGERIA = 213;
         /// <summary>Argentina</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_ARGENTINA = 54;
         /// <summary>Armenia</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_ARMENIA = 374;
         /// <summary>Australia</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_AUSTRALIA = 61;
         /// <summary>Austria</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_AUSTRIA = 43;
         /// <summary>Azerbaijan</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_AZERBAIJAN = 994;
         /// <summary>Bahrain</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_BAHRAIN = 973;
         /// <summary>Belarus</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_BELARUS = 375;
         /// <summary>Belgium</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_BELGIUM = 32;
         /// <summary>Belize</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_BELIZE = 501;
         /// <summary>Bolivia</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_BOLIVIA = 591;
         /// <summary>Brazil</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_BRAZIL = 55;
         /// <summary>Brunei Darussalam</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_BRUNEI_DARUSSALAM = 673;
         /// <summary>Bulgaria</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_BULGARIA = 359;
         /// <summary>Canada</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_CANADA = 2;
         /// <summary>Caribbean</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_CARIBBEAN = 1;
         /// <summary>Chile</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_CHILE = 56;
         /// <summary>Colombia</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_COLOMBIA = 57;
         /// <summary>Costa Rica</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_COSTA_RICA = 506;
         /// <summary>Croatia</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_CROATIA = 385;
         /// <summary>Czech Republic</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_CZECH = 420;
         /// <summary>Denmark</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_DENMARK = 45;
         /// <summary>Dominican Republic</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_DOMINICAN_REPUBLIC = 1;
         /// <summary>Ecuador</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_ECUADOR = 593;
         /// <summary>Egypt</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_EGYPT = 20;
         /// <summary>El Salvador</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_EL_SALVADOR = 503;
         /// <summary>Estonia</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_ESTONIA = 372;
         /// <summary>Faeroe Islands</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_FAEROE_ISLANDS = 298;
         /// <summary>Finland</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_FINLAND = 358;
         /// <summary>France</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_FRANCE = 33;
         /// <summary>Georgia</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_GEORGIA = 995;
         /// <summary>Germany</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_GERMANY = 49;
         /// <summary>Greece</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_GREECE = 30;
         /// <summary>Guatemala</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_GUATEMALA = 502;
         /// <summary>Honduras</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_HONDURAS = 504;
         /// <summary>Hong Kong S.A.R., P.R.C.</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_HONG_KONG = 852;
         /// <summary>Hungary</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_HUNGARY = 36;
         /// <summary>Iceland</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_ICELAND = 354;
         /// <summary>India</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_INDIA = 91;
         /// <summary>Indonesia</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_INDONESIA = 62;
         /// <summary>Iran</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_IRAN = 981;
         /// <summary>Iraq</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_IRAQ = 964;
         /// <summary>Ireland</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_IRELAND = 353;
         /// <summary>Israel</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_ISRAEL = 972;
         /// <summary>Italy</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_ITALY = 39;
         /// <summary>Jamaica</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_JAMAICA = 1;
         /// <summary>Japan</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_JAPAN = 81;
         /// <summary>Jordan</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_JORDAN = 962;
         /// <summary>Kazakstan</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_KAZAKSTAN = 7;
         /// <summary>Kenya</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_KENYA = 254;
         /// <summary>Kuwait</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_KUWAIT = 965;
         /// <summary>Kyrgyzstan</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_KYRGYZSTAN = 996;
         /// <summary>Latvia</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_LATVIA = 371;
         /// <summary>Lebanon</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_LEBANON = 961;
         /// <summary>Libya</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_LIBYA = 218;
         /// <summary>Liechtenstein</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_LIECHTENSTEIN = 41;
         /// <summary>Lithuania</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_LITHUANIA = 370;
         /// <summary>Luxembourg</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_LUXEMBOURG = 352;
         /// <summary>Macao SAR, PRC</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_MACAU = 853;
         /// <summary>Former Yugoslav Republic of Macedonia</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_MACEDONIA = 389;
         /// <summary>Malaysia</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_MALAYSIA = 60;
         /// <summary>Maldives</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_MALDIVES = 960;
         /// <summary>Mexico</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_MEXICO = 52;
         /// <summary>Principality of Monaco</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_MONACO = 33;
         /// <summary>Mongolia</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_MONGOLIA = 976;
         /// <summary>Morocco</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_MOROCCO = 212;
         /// <summary>Netherlands</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_NETHERLANDS = 31;
         /// <summary>New Zealand</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_NEW_ZEALAND = 64;
         /// <summary>Nicaragua</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_NICARAGUA = 505;
         /// <summary>Norway</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_NORWAY = 47;
         /// <summary>Oman</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_OMAN = 968;
         /// <summary>Islamic Republic of Pakistan</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_PAKISTAN = 92;
         /// <summary>Panama</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_PANAMA = 507;
         /// <summary>Paraguay</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_PARAGUAY = 595;
         /// <summary>Peru</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_PERU = 51;
         /// <summary>Republic of the Philippines</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_PHILIPPINES = 63;
         /// <summary>Poland</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_POLAND = 48;
         /// <summary>Portugal</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_PORTUGAL = 351;
         /// <summary>People's Republic of China</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_PRCHINA = 86;
         /// <summary>Puerto Rico</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_PUERTO_RICO = 1;
         /// <summary>Qatar</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_QATAR = 974;
         /// <summary>Romania</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_ROMANIA = 40;
         /// <summary>Russia</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_RUSSIA = 7;
         /// <summary>Saudi Arabia</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_SAUDI_ARABIA = 966;
         /// <summary>Serbia</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_SERBIA = 381;
         /// <summary>Singapore</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_SINGAPORE = 65;
         /// <summary>Slovak Republic</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_SLOVAK = 421;
         /// <summary>Slovenia</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_SLOVENIA = 386;
         /// <summary>South Africa</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_SOUTH_AFRICA = 27;
         /// <summary>Korea</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_SOUTH_KOREA = 82;
         /// <summary>Spain</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_SPAIN = 34;
         /// <summary>Sweden</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_SWEDEN = 46;
         /// <summary>Switzerland</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_SWITZERLAND = 41;
         /// <summary>Syria</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_SYRIA = 963;
         /// <summary>Taiwan</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_TAIWAN = 886;
         /// <summary>Tatarstan</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_TATARSTAN = 7;
         /// <summary>Thailand</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_THAILAND = 66;
         /// <summary>Trinidad y Tobago</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_TRINIDAD_Y_TOBAGO = 1;
         /// <summary>Tunisia</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_TUNISIA = 216;
         /// <summary>Turkey</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_TURKEY = 90;
         /// <summary>U.A.E.</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_UAE = 971;
         /// <summary>Ukraine</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_UKRAINE = 380;
         /// <summary>United Kingdom</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_UNITED_KINGDOM = 44;
         /// <summary>United States</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_UNITED_STATES = 1;
         /// <summary>Uruguay</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_URUGUAY = 598;
         /// <summary>Uzbekistan</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_UZBEKISTAN = 7;
         /// <summary>Venezuela</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_VENEZUELA = 58;
         /// <summary>Viet Nam</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_VIET_NAM = 84;
         /// <summary>Yemen</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_YEMEN = 967;
         /// <summary>Zimbabwe</summary>
+        [Obsolete(GEOID_DEPRECATION_MESSAGE)]
         public const int CTRY_ZIMBABWE = 263;
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\WinNls.h, line 528
@@ -1309,43 +1426,65 @@ namespace THNETII.WinApi.Native.WinNls
         //
         // ** DEPRECATED ** DEPRECATED ** DEPRECATED ** DEPRECATED ** DEPRECATED **
         //
+        public const string LGRPID_DEPRECATION_MESSAGE =
+            "The \"Language Group\" concept is an obsolete concept." + "\r\n" +
+            "The groups returned are not well defined, arbitrary, inconsistent, inaccurate, " +
+            "no longer maintained, and no longer supported.";
+
         /// <summary>Western Europe &amp; U.S.</summary>
+        [Obsolete(LGRPID_DEPRECATION_MESSAGE)]
         public const int LGRPID_WESTERN_EUROPE = 0x0001;
         /// <summary>Central Europe</summary>
+        [Obsolete(LGRPID_DEPRECATION_MESSAGE)]
         public const int LGRPID_CENTRAL_EUROPE = 0x0002;
         /// <summary>Baltic</summary>
+        [Obsolete(LGRPID_DEPRECATION_MESSAGE)]
         public const int LGRPID_BALTIC = 0x0003;
         /// <summary>Greek</summary>
+        [Obsolete(LGRPID_DEPRECATION_MESSAGE)]
         public const int LGRPID_GREEK = 0x0004;
         /// <summary>Cyrillic</summary>
+        [Obsolete(LGRPID_DEPRECATION_MESSAGE)]
         public const int LGRPID_CYRILLIC = 0x0005;
         /// <summary>Turkic</summary>
+        [Obsolete(LGRPID_DEPRECATION_MESSAGE)]
         public const int LGRPID_TURKIC = 0x0006;
         /// <summary>Turkish</summary>
+        [Obsolete(LGRPID_DEPRECATION_MESSAGE)]
         public const int LGRPID_TURKISH = 0x0006;
         /// <summary>Japanese</summary>
+        [Obsolete(LGRPID_DEPRECATION_MESSAGE)]
         public const int LGRPID_JAPANESE = 0x0007;
         /// <summary>Korean</summary>
+        [Obsolete(LGRPID_DEPRECATION_MESSAGE)]
         public const int LGRPID_KOREAN = 0x0008;
         /// <summary>Traditional Chinese</summary>
+        [Obsolete(LGRPID_DEPRECATION_MESSAGE)]
         public const int LGRPID_TRADITIONAL_CHINESE = 0x0009;
         /// <summary>Simplified Chinese</summary>
+        [Obsolete(LGRPID_DEPRECATION_MESSAGE)]
         public const int LGRPID_SIMPLIFIED_CHINESE = 0x000a;
         /// <summary>Thai</summary>
+        [Obsolete(LGRPID_DEPRECATION_MESSAGE)]
         public const int LGRPID_THAI = 0x000b;
         /// <summary>Hebrew</summary>
+        [Obsolete(LGRPID_DEPRECATION_MESSAGE)]
         public const int LGRPID_HEBREW = 0x000c;
         /// <summary>Arabic</summary>
+        [Obsolete(LGRPID_DEPRECATION_MESSAGE)]
         public const int LGRPID_ARABIC = 0x000d;
         /// <summary>Vietnamese</summary>
+        [Obsolete(LGRPID_DEPRECATION_MESSAGE)]
         public const int LGRPID_VIETNAMESE = 0x000e;
         /// <summary>Indic</summary>
+        [Obsolete(LGRPID_DEPRECATION_MESSAGE)]
         public const int LGRPID_INDIC = 0x000f;
         /// <summary>Georgian</summary>
+        [Obsolete(LGRPID_DEPRECATION_MESSAGE)]
         public const int LGRPID_GEORGIAN = 0x0010;
         /// <summary>Armenian</summary>
+        [Obsolete(LGRPID_DEPRECATION_MESSAGE)]
         public const int LGRPID_ARMENIAN = 0x0011;
-
 
         //
         //  MUI function flag values

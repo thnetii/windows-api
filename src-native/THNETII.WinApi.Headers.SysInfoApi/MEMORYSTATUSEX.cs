@@ -1,10 +1,12 @@
-﻿using System.ComponentModel;
+using System.ComponentModel;
 using System.Runtime.InteropServices;
 
 using THNETII.InteropServices.Memory;
 
 namespace THNETII.WinApi.Native.SysInfoApi
 {
+    using static SysInfoApiFunctions;
+
     // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\sysinfoapi.h, line 72
     /// <summary>
     /// Contains information about the current state of both physical and virtual memory, including extended memory. The <see cref="GlobalMemoryStatusEx"/> function stores information in this structure.
@@ -48,7 +50,7 @@ namespace THNETII.WinApi.Native.SysInfoApi
         /// </summary>
         public ulong ullTotalPageFile;
         /// <summary>
-        /// The maximum amount of memory the current process can commit, in bytes. This value is equal to or smaller than the system-wide available commit value. To calculate the system-wide available commit value, call <see cref="GetPerformanceInfo"/> and subtract the value of <see cref="CommitTotal"/> from the value of <see cref="CommitLimit"/>.
+        /// The maximum amount of memory the current process can commit, in bytes. This value is equal to or smaller than the system-wide available commit value. To calculate the system-wide available commit value, call <see cref="GetPerformanceInfo"/> and subtract the value of <see cref="PERFORMANCE_INFORMATION.CommitTotal"/> from the value of <see cref="PERFORMANCE_INFORMATION.CommitLimit"/>.
         /// </summary>
         public ulong ullAvailPageFile;
         /// <summary>

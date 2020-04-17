@@ -1,7 +1,9 @@
-﻿using System;
+using System;
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.InteropServices;
 using System.Text;
+
+using THNETII.InteropServices.Memory;
 
 namespace THNETII.WinApi.Helpers
 {
@@ -53,6 +55,84 @@ namespace THNETII.WinApi.Helpers
                 if (cnt < maxLength)
                     bytes[cnt] = 0;
             }
+        }
+
+        /// <summary>
+        /// Marshals the specified byte-buffer to a managed <see cref="string"/> value using
+        /// ANSI marshaling rules.
+        /// </summary>
+        /// <param name="bytes">A pointer to the first byte in the byte-buffer. This pointer should be a pointer that is initialized using a <see langword="fixed"/> block.</param>
+        /// <param name="maxLength">The maximum length of the buffer pointed to by <paramref name="bytes"/>.</param>
+        /// <returns>A <see cref="string"/> containing a copy of the data pointed to by <paramref name="bytes"/>.</returns>
+        /// <remarks>
+        /// The returned string can be at most <paramref name="maxLength"/> characters long.
+        /// A null-terminating byte within the buffer will be interpreted as the end of the string.
+        /// </remarks>
+        public static unsafe string ToStringZeroTerminatedAnsi(byte* bytes, int maxLength)
+        {
+            Span<byte> byteSpan = new Span<byte>(bytes, maxLength);
+            int len = byteSpan.IndexOf((byte)0);
+            if (len < 0)
+                len = maxLength;
+            return Marshal.PtrToStringAnsi((IntPtr)bytes, len);
+        }
+
+        /// <summary>
+        /// Marshals the specified byte-buffer to a managed <see cref="string"/> value using
+        /// Unicode (UTF-16) marshaling rules.
+        /// </summary>
+        /// <param name="chars">A pointer to the first byte in the byte-buffer. This pointer should be a pointer that is initialized using a <see langword="fixed"/> block.</param>
+        /// <param name="maxLength">The maximum length of the buffer pointed to by <paramref name="chars"/>.</param>
+        /// <returns>A <see cref="string"/> containing a copy of the data pointed to by <paramref name="chars"/>.</returns>
+        /// <remarks>
+        /// The returned string can be at most <paramref name="maxLength"/> characters long.
+        /// A null-terminating byte within the buffer will be interpreted as the end of the string.
+        /// </remarks>
+        public static unsafe string ToStringZeroTerminatedUnicode(char* chars, int maxLength)
+        {
+            Span<char> byteSpan = new Span<char>(chars, maxLength);
+            int len = byteSpan.IndexOf((char)0);
+            if (len < 0)
+                len = maxLength;
+            return Marshal.PtrToStringUni((IntPtr)chars, len);
+        }
+
+        /// <summary>
+        /// Marshals the specified byte-buffer to a managed <see cref="string"/> value using
+        /// Platform dependent string marshaling rules.
+        /// </summary>
+        /// <param name="bytes">A pointer to the first byte in the byte-buffer. This pointer should be a pointer that is initialized using a <see langword="fixed"/> block.</param>
+        /// <param name="maxLength">The maximum length of the buffer pointed to by <paramref name="bytes"/>.</param>
+        /// <returns>A <see cref="string"/> containing a copy of the data pointed to by <paramref name="bytes"/>.</returns>
+        /// <remarks>
+        /// The returned string can be at most <paramref name="maxLength"/> characters long.
+        /// A null-terminating byte within the buffer will be interpreted as the end of the string.
+        /// </remarks>
+        public static unsafe ReadOnlyMemory<char> ToStringZeroTerminatedAuto(byte* bytes, int maxLength)
+        {
+#if NETSTANDARD1_3
+            return Marshal.SystemDefaultCharSize switch
+            {
+                1 => ToStringZeroTerminatedAnsi(bytes, maxLength).AsMemory(),
+                2 => ToStringZeroTerminatedUnicode((char*)bytes, maxLength).AsMemory(),
+                _ => throw new PlatformNotSupportedException()
+            };
+#else
+            string str = Marshal.PtrToStringAuto(new IntPtr(bytes), maxLength);
+            if (str is null)
+                return Memory<char>.Empty;
+            int endIdx =
+#if NETCOREAPP
+                str.IndexOf((char)0, StringComparison.Ordinal)
+#else
+                str.IndexOf((char)0) 
+#endif
+                ;
+            if (endIdx < 0)
+                return str.AsMemory();
+            else
+                return str.AsMemory(0, endIdx);
+#endif
         }
 
         /// <seealso cref="Marshal.PtrToStringAnsi(IntPtr)"/>
@@ -128,10 +208,10 @@ namespace THNETII.WinApi.Helpers
             IntPtr pStr = Marshal.StringToCoTaskMemAnsi(str);
             try
             {
-                var valueSpan = new Span<byte>(pStr.ToPointer(), maxLength);
+                var valueSpan = pStr.ToZeroTerminatedByteSpan();
                 int endIdx = valueSpan.IndexOf((byte)0);
-                if (endIdx >= 0)
-                    valueSpan = valueSpan.Slice(start: 0, length: endIdx + 1);
+                if (valueSpan.Length >= maxLength)
+                    valueSpan = valueSpan.Slice(start: 0, length: maxLength);
                 valueSpan.CopyTo(byteSpan);
             }
             finally

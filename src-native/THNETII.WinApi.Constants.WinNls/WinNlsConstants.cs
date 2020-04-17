@@ -1,3 +1,5 @@
+using System;
+
 namespace THNETII.WinApi.Native.WinNls
 {
     // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\WinNls.h
@@ -51,5 +53,32 @@ namespace THNETII.WinApi.Native.WinNls
         public const short LOW_SURROGATE_START = unchecked((short)0xdc00);
         public const short LOW_SURROGATE_END = unchecked((short)0xdfff);
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\WinNls.h, line 137
+        //
+        //  MBCS and Unicode Translation Flags.
+        //  Please use Unicode, either UTF-16 (WCHAR) or UTF-8 (CP_UTF8)
+        //
+        // MB_PRECOMPOSED and MB_COMPOSITE are deprecated, not recommended, and
+        // provide out-of-date behavior.
+        // Windows typically uses Unicode Normalization Form C type sequences,
+        // If explicit normalization forms are required, please use NormalizeString.
+        [Obsolete("DEPRECATED: use single precomposed characters when possible.")]
+        public const int MB_PRECOMPOSED = 0x00000001; // DEPRECATED: use single precomposed characters when possible.
+        [Obsolete("DEPRECATED: use multiple discrete characters when possible.")]
+        public const int MB_COMPOSITE = 0x00000002; // DEPRECATED: use multiple discrete characters when possible.
+        [Obsolete("DEPRECATED: use glyph chars, not ctrl chars")]
+        public const int MB_USEGLYPHCHARS = 0x00000004; // DEPRECATED: use glyph chars, not ctrl chars
+        public const int MB_ERR_INVALID_CHARS = 0x00000008; // error for invalid chars
+
+        // WC_COMPOSITECHECK, WC_DISCARDNS and WC_SEPCHARS are deprecated, not recommended,
+        // and provide out-of-date behavior.
+        // Windows typically uses Unicode Normalization Form C type sequences,
+        // If explicit normalization forms are required, please use NormalizeString.
+        public const int WC_COMPOSITECHECK = 0x00000200; // convert composite to precomposed
+        public const int WC_DISCARDNS = 0x00000010;         // discard non-spacing chars          // Used with WC_COMPOSITECHECK
+        public const int WC_SEPCHARS = 0x00000020;          // generate separate chars            // Used with WC_COMPOSITECHECK
+        public const int WC_DEFAULTCHAR = 0x00000040;       // replace w/ default char            // Used with WC_COMPOSITECHECK
+        public const int WC_ERR_INVALID_CHARS = 0x00000080; // error for invalid chars
+        public const int WC_NO_BEST_FIT_CHARS = 0x00000400; // do not use best fit chars
     }
 }

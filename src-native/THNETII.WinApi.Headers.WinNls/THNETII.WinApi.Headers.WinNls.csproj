@@ -2,12 +2,17 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <LangVersion>8</LangVersion>
-    <TargetFrameworks>netstandard1.0;netstandard2.0</TargetFrameworks>
+    <TargetFrameworks>netstandard1.3;netstandard2.0</TargetFrameworks>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <NoWarn>$(NoWarn);CS1591;CS0419</NoWarn>
     <RootNamespace>THNETII.WinApi.Native.WinNls</RootNamespace>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\interopservices\src\THNETII.InteropServices.Memory\THNETII.InteropServices.Memory.csproj" />
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\THNETII.WinApi.Constants.WinNls\THNETII.WinApi.Constants.WinNls.csproj">

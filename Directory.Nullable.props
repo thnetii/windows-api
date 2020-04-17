@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <PropertyGroup>
+    <LangVersion>8</LangVersion>
+  </PropertyGroup>
+  <ItemGroup Condition="
+             ('$(TargetFrameworkIdentifier)' == '.NETCoreApp' AND '$(_TargetFrameworkVersionWithoutV)' &lt; '3.0') OR
+             ('$(TargetFrameworkIdentifier)' == '.NETStandard' AND '$(_TargetFrameworkVersionWithoutV)' &lt; '2.1') OR
+             ('$(TargetFrameworkIdentifier)' == '.NETFramework')"
+             >
+    <PackageReference Include="Nullable" Version="1.1.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+</Project>

@@ -12,6 +12,11 @@
     <RepositoryUrl>$(PackageProjectUrl).git</RepositoryUrl>
   </PropertyGroup>
   <PropertyGroup Label="License">
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
+  <ItemGroup Label="License">
+    <None Include="$(MSBuildThisFileDirectory)LICENSE" Pack="true">
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
 </Project>

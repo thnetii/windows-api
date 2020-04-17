@@ -1,6 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project>
-  <PropertyGroup>
+  <PropertyGroup Condition="'$(VersionPrefix)'==''">
     <VersionPrefix>10.0.17134</VersionPrefix>
+    <!--<VersionSuffix>preview1</VersionSuffix>-->
   </PropertyGroup>
+  <Import Condition="
+    '$(MSBuildThisFile)'=='Directory.Build.props'
+    and
+    Exists('$([MSBuild]::GetDirectoryNameOfFileAbove(&quot;$(MSBuildThisFileDirectory)..&quot;, &quot;Directory.Build.props&quot;))\Directory.Build.props')
+    "
+    Project="$([MSBuild]::GetDirectoryNameOfFileAbove('$(MSBuildThisFileDirectory)..', 'Directory.Build.props'))\Directory.Build.props" />
 </Project>

@@ -135,5 +135,34 @@ namespace THNETII.WinApi.Native.WinNls
             [In] int CodePage
             );
         #endregion
+        #region GetACP function
+        /// <summary>
+        /// Retrieves the current Windows ANSI code page identifier for the operating system.
+        /// <para><note type="caution">
+        /// The ANSI API functions, for example, the ANSI version of <see cref="TextOut"/>, implicitly use <see cref="GetACP"/> to translate text to or from Unicode. For the Multilingual User Interface (MUI) edition of Windows, the system ACP might not cover all code points in the user's selected logon language identifier. For compatibility with this edition, your application should avoid calls that depend on <see cref="GetACP"/> either implicitly or explicitly, as this function can cause some locales to display text as question marks. Instead, the application should use the Unicode API functions directly, for example, the Unicode version of <see cref="TextOut"/>.
+        /// </note></para>
+        /// </summary>
+        /// <returns>Returns the current Windows ANSI code page (ACP) identifier for the operating system. See <a href="https://docs.microsoft.com/windows/desktop/Intl/code-page-identifiers">Code Page Identifiers</a> for a list of identifiers for Windows ANSI code pages and other code pages.</returns>
+        /// <remarks>
+        /// <para>The ANSI code pages can be different on different computers, or can be changed for a single computer, leading to data corruption. For the most consistent results, applications should use UTF-8 or UTF-16 when possible.</para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows 2000 Professional [desktop apps | UWP apps]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows 2000 Server [desktop apps | UWP apps]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/winnls/nf-winnls-getacp">GetACP function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/Intl/code-page-identifiers">Code Page Identifiers</seealso>
+        /// <seealso cref="GetCPInfo"/>
+        /// <seealso cref="GetOEMCP"/>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/Intl/national-language-support">National Language Support</seealso>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/Intl/national-language-support-functions">National Language Support Functions</seealso>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi)]
+        public static extern int GetACP();
+        #endregion
     }
 }

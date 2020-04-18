@@ -9,5 +9,9 @@ using System.Diagnostics.CodeAnalysis;
     "CA1051: Do not declare visible instance fields")]
 [assembly: SuppressMessage("Naming",
     "CA1707: Identifiers should not contain underscores")]
+[assembly: SuppressMessage("Naming",
+    "CA1712: Do not prefix enum values with type name")]
 [assembly: SuppressMessage("Performance",
     "CA1815: Override equals and operator equals on value types")]
+[assembly: SuppressMessage("Style",
+    "IDE1006: Naming Styles")]

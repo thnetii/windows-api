@@ -91,5 +91,13 @@ namespace THNETII.WinApi.Native.WinNls
         //  Only prototypes for the NLS APIs should go here.
         //
         ////////////////////////////////////////////////////////////////////////////
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\WinNls.h, line 1506
+        //
+        //  Code Page Dependent APIs.
+        //
+        //  Applications should use Unicode (WCHAR / UTF-16 &/or UTF-8)
+        //
+
     }
 }

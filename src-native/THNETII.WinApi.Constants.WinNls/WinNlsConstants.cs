@@ -1542,5 +1542,20 @@ namespace THNETII.WinApi.Native.WinNls
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\WinNls.h, line 1250
         public const int GEOID_NOT_AVAILABLE = -1;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\WinNls.h, line 1309
+        //
+        // IDN (International Domain Name) Flags
+        //
+        public const int IDN_ALLOW_UNASSIGNED = 0x01; // Allow unassigned "query" behavior per RFC 3454
+        public const int IDN_USE_STD3_ASCII_RULES = 0x02; // Enforce STD3 ASCII restrictions for legal characters
+        public const int IDN_EMAIL_ADDRESS = 0x04; // Enable EAI algorithmic fallback for email local parts behavior
+        public const int IDN_RAW_PUNYCODE = 0x08; // Disable validation and mapping of punycode.   
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\WinNls.h, line 1317
+        public const int VS_ALLOW_LATIN = 0x0001; // Allow Latin in test script even if not present in locale script
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\WinNls.h, line 1319
+        public const int GSS_ALLOW_INHERITED_COMMON = 0x0001; // Output script ids for inherited and common character types if present
     }
 }

@@ -1539,5 +1539,8 @@ namespace THNETII.WinApi.Native.WinNls
         public const int MUI_LIP_LANGUAGE = 0x04;
         public const int MUI_LANGUAGE_INSTALLED = 0x20;
         public const int MUI_LANGUAGE_LICENSED = 0x40;
+
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\WinNls.h, line 1250
+        public const int GEOID_NOT_AVAILABLE = -1;
     }
 }

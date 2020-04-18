@@ -1,4 +1,6 @@
 using System;
+using System.Runtime.CompilerServices;
+using THNETII.InteropServices.Memory;
 
 namespace THNETII.WinApi.Native.WinNls
 {
@@ -81,5 +83,13 @@ namespace THNETII.WinApi.Native.WinNls
         public static bool IS_SURROGATE_PAIR(char hs, char ls) =>
             (IS_HIGH_SURROGATE(hs) && IS_LOW_SURROGATE(ls));
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\WinNls.h, line 1498
+        ////////////////////////////////////////////////////////////////////////////
+        //
+        //  Function Prototypes
+        //
+        //  Only prototypes for the NLS APIs should go here.
+        //
+        ////////////////////////////////////////////////////////////////////////////
     }
 }

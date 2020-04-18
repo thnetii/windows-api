@@ -33,7 +33,7 @@ namespace THNETII.WinApi.Native.WinNls
     /// identifiers that do not include the leading 0x, and will be 4 characters in length. For example, <c>en-US</c> will
     /// be passed as <c>"0409"</c> and <c>en</c> as <c>"0009"</c>.
     /// </para>
-    /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/winnls/nc-winnls-langgrouplocale_enumprocw">LANGGROUPLOCALE_ENUMPROCW callback function</a></para>
+    /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/winnls/nc-winnls-uilanguage_enumprocw">UILANGUAGE_ENUMPROCW callback function</a></para>
     /// </remarks>
     /// <seealso cref="EnumUILanguages"/>
     /// <seealso href="https://docs.microsoft.com/windows/desktop/Intl/multilingual-user-interface">Multilingual User Interface</seealso>

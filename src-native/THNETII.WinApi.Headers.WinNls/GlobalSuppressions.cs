@@ -7,5 +7,7 @@ using System.Diagnostics.CodeAnalysis;
 
 [assembly: SuppressMessage("Design",
     "CA1051: Do not declare visible instance fields")]
+[assembly: SuppressMessage("Naming",
+    "CA1707: Identifiers should not contain underscores")]
 [assembly: SuppressMessage("Performance",
     "CA1815: Override equals and operator equals on value types")]

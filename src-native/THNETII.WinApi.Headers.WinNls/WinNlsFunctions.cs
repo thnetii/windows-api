@@ -1,9 +1,13 @@
 using System;
-using System.Runtime.CompilerServices;
-using THNETII.InteropServices.Memory;
+using System.Runtime.InteropServices;
+
+#if NETSTANDARD1_3
+using EntryPointNotFoundException = System.Exception;
+#endif
 
 namespace THNETII.WinApi.Native.WinNls
 {
+    using static NativeLibraryNames;
     using static WinNlsConstants;
 
     // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\WinNls.h
@@ -99,5 +103,37 @@ namespace THNETII.WinApi.Native.WinNls
         //  Applications should use Unicode (WCHAR / UTF-16 &/or UTF-8)
         //
 
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\WinNls.h, line 1512
+        #region IsValidCodePage function
+        /// <summary>
+        /// Determines if a specified code page is valid.
+        /// </summary>
+        /// <param name="CodePage"><a href="https://docs.microsoft.com/windows/desktop/Intl/code-page-identifiers">Code page identifier</a> for the code page to check.</param>
+        /// <returns>Returns <see langword="true"/> if the code page is valid, or <see langword="false"/> if the code page is invalid.</returns>
+        /// <remarks>
+        /// <para>A code page is considered valid only if it is installed on the operating system. Unicode is preferred.</para>
+        /// <para>Starting with Windows Vista, all code pages that can be installed are loaded by default.</para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows 2000 Professional [desktop apps | UWP apps]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows 2000 Server [desktop apps | UWP apps]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/winnls/nf-winnls-isvalidcodepage">IsValidCodePage function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="GetACP"/>
+        /// <seealso cref="GetCPInfo"/>
+        /// <seealso cref="GetOEMCP"/>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/Intl/national-language-support">National Language Support</seealso>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/Intl/national-language-support-functions">National Language Support Functions</seealso>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool IsValidCodePage(
+            [In] int CodePage
+            );
+        #endregion
     }
 }

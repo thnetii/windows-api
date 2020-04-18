@@ -12,7 +12,7 @@ namespace THNETII.WinApi.Native.WinNls
         LGRPID lgrpid,
         int lcid,
         LPSTR Arg3,
-        int Arg4
+        IntPtr Arg4
         );
 
     // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\WinNls.h, line 1343
@@ -24,7 +24,7 @@ namespace THNETII.WinApi.Native.WinNls
         LGRPID lgrpid,
         int lcid,
         LPWSTR Arg3,
-        int Arg4
+        IntPtr Arg4
         );
 
     // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\WinNls.h, line 1394
@@ -51,6 +51,6 @@ namespace THNETII.WinApi.Native.WinNls
         LGRPID lgrpid,
         int lcid,
         LPTSTR Arg3,
-        int Arg4
+        IntPtr Arg4
         );
 }

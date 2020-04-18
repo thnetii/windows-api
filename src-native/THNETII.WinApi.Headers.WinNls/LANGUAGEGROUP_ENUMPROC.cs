@@ -13,7 +13,7 @@ namespace THNETII.WinApi.Native.WinNls
         LPSTR arg2,
         LPSTR arg3,
         int arg4,
-        int arg5
+        IntPtr arg5
         );
 
     // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\WinNls.h, line 1341
@@ -26,7 +26,7 @@ namespace THNETII.WinApi.Native.WinNls
         LPWSTR arg2,
         LPWSTR arg3,
         int arg4,
-        int arg5
+        IntPtr arg5
         );
 
     // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\WinNls.h, line 1392
@@ -42,6 +42,6 @@ namespace THNETII.WinApi.Native.WinNls
         LPTSTR arg2,
         LPTSTR arg3,
         int arg4,
-        int arg5
+        IntPtr arg5
         );
 }

@@ -135,6 +135,7 @@ namespace THNETII.WinApi.Native.WinNls
             [In] int CodePage
             );
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\WinNls.h, line 1518
         #region GetACP function
         /// <summary>
         /// Retrieves the current Windows ANSI code page identifier for the operating system.
@@ -163,6 +164,32 @@ namespace THNETII.WinApi.Native.WinNls
         /// <seealso href="https://docs.microsoft.com/windows/desktop/Intl/national-language-support-functions">National Language Support Functions</seealso>
         [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi)]
         public static extern int GetACP();
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\WinNls.h, line 1529
+        #region GetOEMCP function
+        /// <summary>
+        /// Returns the current original equipment manufacturer (OEM) code page identifier for the operating system.
+        /// <para><note>The ANSI code pages can be different on different computers, or can be changed for a single computer, leading to data corruption. For the most consistent results, applications should use Unicode, such as UTF-8 or UTF-16, instead of a specific code page.</note></para>
+        /// </summary>
+        /// <returns>Returns the current OEM code page identifier for the operating system.</returns>
+        /// <remarks>
+        /// See <a href="https://docs.microsoft.com/windows/desktop/Intl/code-page-identifiers">Code Page Identifiers</a> for a list of OEM and other code pages.
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows 2000 Professional [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows 2000 Server [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/winnls/nf-winnls-getoemcp">GetOEMCP function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="GetACP"/>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/Intl/national-language-support">National Language Support</seealso>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/Intl/national-language-support-functions">National Language Support Functions</seealso>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi)]
+        public static extern int GetOEMCP();
         #endregion
     }
 }

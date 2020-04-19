@@ -17,3 +17,5 @@ using System.Diagnostics.CodeAnalysis;
     "CA1815: Override equals and operator equals on value types")]
 [assembly: SuppressMessage("Style",
     "IDE1006: Naming Styles")]
+[assembly: SuppressMessage("Usage",
+    "PC003: Native API not available in UWP")]

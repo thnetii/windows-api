@@ -238,5 +238,84 @@ namespace THNETII.WinApi.Native.WinNls
             out CPINFO lpCPInfo
             );
         #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\WinNls.h, line 1548
+        #region GetCPInfoExA function
+        /// <inheritdoc cref="GetCPInfoEx"/>
+        [Obsolete("Use Unicode. The information in this structure cannot represent all encodings accuratedly and may be unreliable on many machines.")]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true, CharSet = CharSet.Ansi)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool GetCPInfoExA(
+            [In] int CodePage,
+            [In] int dwFlags,
+            out CPINFOEXA lpCPInfoEx
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\WinNls.h, line 1556
+        #region GetCPInfoExW function
+        /// <inheritdoc cref="GetCPInfoEx"/>
+        [Obsolete("Use Unicode. The information in this structure cannot represent all encodings accuratedly and may be unreliable on many machines.")]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true, CharSet = CharSet.Unicode)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool GetCPInfoExW(
+            [In] int CodePage,
+            [In] int dwFlags,
+            out CPINFOEXW lpCPInfoEx
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\WinNls.h, line 1564
+        #region GetCPInfoEx function
+        /// <summary>
+        /// Retrieves information about any valid installed or available code page.
+        /// </summary>
+        /// <param name="CodePage">
+        /// Identifier for the code page for which to retrieve information. The application can specify the code page identifier for any installed or available code page, or one of the following predefined values. See <a href="https://docs.microsoft.com/windows/desktop/Intl/code-page-identifiers">Code Page Identifiers</a> for a list of identifiers for ANSI and other code pages.
+        /// <list type="table">
+        /// <listheader><term>Value</term><description>Meaning</description></listheader>
+        /// <item><term><see cref="CP_ACP"/></term><description>Use the system default Windows ANSI code page.</description></item>
+        /// <item><term><see cref="CP_MACCP"/></term><description>Use the system default Macintosh code page.</description></item>
+        /// <item><term><see cref="CP_OEMCP"/></term><description>Use the system default OEM code page.</description></item>
+        /// <item><term><see cref="CP_THREAD_ACP"/></term><description>Use the current thread's ANSI code page.</description></item>
+        /// </list>
+        /// </param>
+        /// <param name="dwFlags">Reserved; must be <c>0</c> (zero).</param>
+        /// <param name="lpCPInfoEx">A <see cref="CPINFOEX"/> structure that receives information about the code page.</param>
+        /// <returns>
+        /// Returns <see langword="true"/> if successful, or <see langword="false"/> otherwise. To get extended error information, the application can call <see cref="GetLastError"/>, which can return one of the following error codes:
+        /// <list type="table">
+        /// <item><term><see cref="ERROR_INVALID_PARAMETER"/></term><description>Any of the parameter values was invalid.</description></item>
+        /// </list>
+        /// </returns>
+        /// <remarks>
+        /// <para>The information retrieved in the <see cref="CPINFOEX"/> structure is not always useful for all code pages. To determine buffer sizes, for example, the application should call <see cref="MultiByteToWideChar"/> or <see cref="WideCharToMultiByte"/> to request an accurate buffer size. If <see cref="CPINFOEX"/> settings indicate that a lead byte exists, the conversion function does not necessarily handle lead bytes differently, for example, in the case of a missing or illegal trail byte.</para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows 2000 Professional [desktop apps | UWP apps]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows 2000 Server [desktop apps | UWP apps]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/winnls/nf-winnls-getcpinfoexw">GetCPInfoExW function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="CPINFOEX"/>
+        /// <seealso cref="GetACP"/>
+        /// <seealso cref="GetCPInfo"/>
+        /// <seealso cref="GetOEMCP"/>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/Intl/national-language-support">National Language Support</seealso>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/Intl/national-language-support-functions">National Language Support Functions</seealso>
+        [Obsolete("Use Unicode. The information in this structure cannot represent all encodings accuratedly and may be unreliable on many machines.")]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true
+#if !NETSTANDARD1_3
+        , CharSet = CharSet.Auto 
+#endif
+            )]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool GetCPInfoEx(
+            [In] int CodePage,
+            [In] int dwFlags,
+            out CPINFOEX lpCPInfoEx
+            );
+        #endregion
     }
 }

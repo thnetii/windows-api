@@ -7,11 +7,16 @@ using Xunit;
 
 namespace THNETII.WinApi.Native.WinNls.Test
 {
+    using static WinNlsConstants;
     using static WinNlsFunctions;
 
     public static class GetCPInfo
     {
         [TheoryWindowsOS]
+        [InlineData(CP_ACP)]
+        [InlineData(CP_MACCP)]
+        [InlineData(CP_OEMCP)]
+        [InlineData(CP_THREAD_ACP)]
         [InlineData(437)]   //  IBM437          OEM United States
         [InlineData(850)]   //  ibm850          OEM Multilingual Latin 1; Western European (DOS)
         [InlineData(1250)]  //  windows-1250    ANSI Central European; Central European (Windows)

@@ -23,6 +23,9 @@
   <ItemGroup>
     <ProjectReference Include="..\..\src-native\THNETII.WinApi.Constants.SCardErr\THNETII.WinApi.Constants.SCardErr.csproj" />
     <ProjectReference Include="..\..\src-native\THNETII.WinApi.Constants.WinError\THNETII.WinApi.Constants.WinError.csproj" />
+    <ProjectReference Include="..\..\src-native\THNETII.WinApi.Constants.WinNls\THNETII.WinApi.Constants.WinNls.csproj">
+      <PrivateAssets>All</PrivateAssets>
+    </ProjectReference>
     <ProjectReference Include="..\..\src-native\THNETII.WinApi.Headers.ErrHandlingApi\THNETII.WinApi.Headers.ErrHandlingApi.csproj" />
     <ProjectReference Include="..\..\src-native\THNETII.WinApi.Headers.MinWinBase\THNETII.WinApi.Headers.MinWinBase.csproj" />
     <ProjectReference Include="..\..\src-native\THNETII.WinApi.Headers.MinWinDef\THNETII.WinApi.Headers.MinWinDef.csproj" />

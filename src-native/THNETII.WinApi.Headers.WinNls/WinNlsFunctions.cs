@@ -1,6 +1,8 @@
 using System;
 using System.Runtime.InteropServices;
 
+using THNETII.WinApi.Native.WinError;
+
 #if NETSTANDARD1_3
 using EntryPointNotFoundException = System.Exception;
 #endif
@@ -8,6 +10,7 @@ using EntryPointNotFoundException = System.Exception;
 namespace THNETII.WinApi.Native.WinNls
 {
     using static NativeLibraryNames;
+    using static WinErrorConstants;
     using static WinNlsConstants;
 
     // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\WinNls.h
@@ -190,6 +193,50 @@ namespace THNETII.WinApi.Native.WinNls
         /// <seealso href="https://docs.microsoft.com/windows/desktop/Intl/national-language-support-functions">National Language Support Functions</seealso>
         [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi)]
         public static extern int GetOEMCP();
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\WinNls.h, line 1540
+        #region GetCPInfo function
+        /// <summary>
+        /// Retrieves information about any valid installed or available code page.
+        /// <para><note>To obtain additional information about valid installed or available code pages, the application should use <see cref="GetCPInfoEx"/>.</note></para>
+        /// </summary>
+        /// <param name="CodePage">Identifier for the code page for which to retrieve information. For details, see the <em>CodePage</em> parameter of <see cref="GetCPInfoEx"/>.</param>
+        /// <param name="lpCPInfo">A <see cref="CPINFO"/> structure that receives information about the code page. See the Remarks section.</param>
+        /// <returns>
+        /// Returns <see langword="true"/> if successful, or <see langword="false"/> otherwise. To get extended error information, the application can call <see cref="GetLastError"/>, which can return one of the following error codes:
+        /// <list type="table">
+        /// <item><term><see cref="ERROR_INVALID_PARAMETER"/></term><description>Any of the parameter values was invalid.</description></item>
+        /// </list>
+        /// </returns>
+        /// <remarks>
+        /// See Remarks for <see cref="GetCPInfoEx"/>.
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows 2000 Professional [desktop apps | UWP apps]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows 2000 Server [desktop apps | UWP apps]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/winnls/nf-winnls-getcpinfo">GetCPInfo function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="CPINFO"/>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/Intl/code-page-identifiers">Code Page Identifiers</seealso>
+        /// <seealso cref="GetACP"/>
+        /// <seealso cref="GetCPInfoEx"/>
+        /// <seealso cref="GetOEMCP"/>
+        /// <seealso cref="MultiByteToWideChar"/>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/Intl/national-language-support">National Language Support</seealso>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/Intl/national-language-support-functions">National Language Support Functions</seealso>
+        /// <seealso cref="WideCharToMultiByte"/>
+        [Obsolete("Use Unicode. The information in this structure cannot represent all encodings accuratedly and may be unreliable on many machines.")]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool GetCPInfo(
+            [In] int CodePage,
+            out CPINFO lpCPInfo
+            );
         #endregion
     }
 }

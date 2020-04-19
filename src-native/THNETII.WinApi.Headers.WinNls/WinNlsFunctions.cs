@@ -360,6 +360,29 @@ namespace THNETII.WinApi.Native.WinNls
 
         /// <inheritdoc cref="CompareString"/>
         [Obsolete("DEPRECATED: StringApiSetFunction.CompareStringEx is preferred")]
+        public unsafe static CSTR_RESULT CompareStringA(
+            int Locale,
+            CSTR_FLAGS dwCmpFlags,
+            ReadOnlySpan<byte> lpString1,
+            int cchCount1,
+            ReadOnlySpan<byte> lpString2,
+            int cchCount2
+            )
+        {
+            fixed (byte* ptrString1 = lpString1)
+            fixed (byte* ptrString2 = lpString2)
+                return CompareStringA(
+                    Locale,
+                    dwCmpFlags,
+                    Pointer.Create<LPCSTR>(ptrString1),
+                    cchCount1,
+                    Pointer.Create<LPCSTR>(ptrString2),
+                    cchCount2
+                    );
+        }
+
+        /// <inheritdoc cref="CompareString"/>
+        [Obsolete("DEPRECATED: StringApiSetFunction.CompareStringEx is preferred")]
         [SuppressMessage("Globalization",
             "CA2101: Specify marshaling for P/Invoke string arguments",
             Justification = nameof(CharSet.Ansi))]
@@ -369,9 +392,9 @@ namespace THNETII.WinApi.Native.WinNls
             [In] int Locale,
             [In, MarshalAs(UnmanagedType.I4)]
             CSTR_FLAGS dwCmpFlags,
-            [In] LPSTR lpString1,
+            [In] LPCSTR lpString1,
             [In] int cchCount1,
-            [In] LPSTR lpString2,
+            [In] LPCSTR lpString2,
             [In] int cchCount2
             );
         #endregion
@@ -406,15 +429,35 @@ namespace THNETII.WinApi.Native.WinNls
             );
 
         /// <inheritdoc cref="CompareString"/>
+        public unsafe static CSTR_RESULT CompareStringW(
+            int Locale,
+            CSTR_FLAGS dwCmpFlags,
+            ReadOnlySpan<char> lpString1,
+            ReadOnlySpan<char> lpString2
+            )
+        {
+            fixed (char* ptrString1 = lpString1)
+            fixed (char* ptrString2 = lpString2)
+                return CompareStringW(
+                    Locale,
+                    dwCmpFlags,
+                    Pointer.Create<LPCWSTR>(ptrString1),
+                    lpString1.Length,
+                    Pointer.Create<LPCWSTR>(ptrString2),
+                    lpString2.Length
+                    );
+        }
+
+        /// <inheritdoc cref="CompareString"/>
         [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true, CharSet = CharSet.Unicode)]
         [return: MarshalAs(UnmanagedType.I4)]
         public static extern CSTR_RESULT CompareStringW(
             [In] int Locale,
             [In, MarshalAs(UnmanagedType.I4)]
             CSTR_FLAGS dwCmpFlags,
-            [In] LPWSTR lpString1,
+            [In] LPCWSTR lpString1,
             [In] int cchCount1,
-            [In] LPWSTR lpString2,
+            [In] LPCWSTR lpString2,
             [In] int cchCount2
             );
         #endregion
@@ -512,6 +555,29 @@ namespace THNETII.WinApi.Native.WinNls
 
         /// <inheritdoc cref="CompareString"/>
         [Obsolete("DEPRECATED: StringApiSetFunction.CompareStringEx is preferred")]
+        public unsafe static CSTR_RESULT CompareString(
+            int Locale,
+            CSTR_FLAGS dwCmpFlags,
+            ReadOnlySpan<byte> lpString1,
+            int cchCount1,
+            ReadOnlySpan<byte> lpString2,
+            int cchCount2
+            )
+        {
+            fixed (byte* ptrString1 = lpString1)
+            fixed (byte* ptrString2 = lpString2)
+                return CompareString(
+                    Locale,
+                    dwCmpFlags,
+                    Pointer.Create<LPCTSTR>(ptrString1),
+                    cchCount1,
+                    Pointer.Create<LPCTSTR>(ptrString2),
+                    cchCount2
+                    );
+        }
+
+        /// <inheritdoc cref="CompareString"/>
+        [Obsolete("DEPRECATED: StringApiSetFunction.CompareStringEx is preferred")]
 #if !NETSTANDARD1_3
         [SuppressMessage("Globalization",
             "CA2101: Specify marshaling for P/Invoke string arguments",
@@ -526,9 +592,9 @@ namespace THNETII.WinApi.Native.WinNls
             [In] int Locale,
             [In, MarshalAs(UnmanagedType.I4)]
             CSTR_FLAGS dwCmpFlags,
-            [In] LPTSTR lpString1,
+            [In] LPCTSTR lpString1,
             [In] int cchCount1,
-            [In] LPTSTR lpString2,
+            [In] LPCTSTR lpString2,
             [In] int cchCount2
             )
 #if !NETSTANDARD1_3
@@ -537,14 +603,18 @@ namespace THNETII.WinApi.Native.WinNls
             => Marshal.SystemDefaultCharSize switch
             {
                 1 => CompareStringA(Locale, dwCmpFlags,
-                        Pointer.Create<LPSTR>(lpString1.Pointer), cchCount1,
-                        Pointer.Create<LPSTR>(lpString2.Pointer), cchCount2),
+                        Pointer.Create<LPCSTR>(lpString1.Pointer), cchCount1,
+                        Pointer.Create<LPCSTR>(lpString2.Pointer), cchCount2),
                 2 => CompareStringW(Locale, dwCmpFlags,
-                        Pointer.Create<LPWSTR>(lpString1.Pointer), cchCount1,
-                        Pointer.Create<LPWSTR>(lpString2.Pointer), cchCount2),
+                        Pointer.Create<LPCWSTR>(lpString1.Pointer), cchCount1,
+                        Pointer.Create<LPCWSTR>(lpString2.Pointer), cchCount2),
                 _ => throw new PlatformNotSupportedException()
             };
 #endif
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\WinNls.h, line 1626
+        #region FindNLSString function
+
         #endregion
     }
 }

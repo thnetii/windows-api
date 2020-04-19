@@ -30,8 +30,8 @@ namespace THNETII.WinApi.Native.WinNls.Test
         [Obsolete("Deprecated Win API")]
         public static void CanCallExternFunctionLpStr()
         {
-            var str1 = Pointer.Create<LPSTR>(Marshal.StringToCoTaskMemAnsi(nameof(CompareString)));
-            var str2 = Pointer.Create<LPSTR>(Marshal.StringToCoTaskMemAnsi(nameof(CompareString)));
+            var str1 = Pointer.Create<LPCSTR>(Marshal.StringToCoTaskMemAnsi(nameof(CompareString)));
+            var str2 = Pointer.Create<LPCSTR>(Marshal.StringToCoTaskMemAnsi(nameof(CompareString)));
 
             try
             {
@@ -64,8 +64,8 @@ namespace THNETII.WinApi.Native.WinNls.Test
         [FactWindowsOS]
         public static void CanCallExternFunctionLpWStr()
         {
-            var str1 = Pointer.Create<LPWSTR>(Marshal.StringToCoTaskMemUni(nameof(CompareString)));
-            var str2 = Pointer.Create<LPWSTR>(Marshal.StringToCoTaskMemUni(nameof(CompareString)));
+            var str1 = Pointer.Create<LPCWSTR>(Marshal.StringToCoTaskMemUni(nameof(CompareString)));
+            var str2 = Pointer.Create<LPCWSTR>(Marshal.StringToCoTaskMemUni(nameof(CompareString)));
 
             try
             {
@@ -100,8 +100,8 @@ namespace THNETII.WinApi.Native.WinNls.Test
         [Obsolete("Deprecated Win API")]
         public static void CanCallExternFunctionLpTStr()
         {
-            var str1 = Pointer.Create<LPTSTR>(Marshal.StringToCoTaskMemAuto(nameof(CompareString)));
-            var str2 = Pointer.Create<LPTSTR>(Marshal.StringToCoTaskMemAuto(nameof(CompareString)));
+            var str1 = Pointer.Create<LPCTSTR>(Marshal.StringToCoTaskMemAuto(nameof(CompareString)));
+            var str2 = Pointer.Create<LPCTSTR>(Marshal.StringToCoTaskMemAuto(nameof(CompareString)));
 
             try
             {

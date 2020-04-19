@@ -4,9 +4,9 @@ int main(int argc, char* argv[])
 {
     DWORD instance;
     const int size = sizeof(instance);
-    const int value = NULL;
+    const int value = LINGUISTIC_IGNORECASE;
 
-    const void* ptr = ConvertDefaultLocale;
+    const void* ptr = CompareStringW;
 
     return EXIT_SUCCESS;
 }

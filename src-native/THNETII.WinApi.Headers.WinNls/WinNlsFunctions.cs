@@ -1,7 +1,9 @@
 using System;
+using System.Diagnostics.CodeAnalysis;
 using System.Runtime.InteropServices;
 
 using THNETII.WinApi.Native.WinError;
+using THNETII.InteropServices.Memory;
 
 #if NETSTANDARD1_3
 using EntryPointNotFoundException = System.Exception;
@@ -321,5 +323,228 @@ namespace THNETII.WinApi.Native.WinNls
         //
         //  Locale Dependent APIs.
         //
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\WinNls.h, line 1580
+        #region CompareStringA function
+        /// <inheritdoc cref="CompareString"/>
+        [Obsolete("DEPRECATED: StringApiSetFunction.CompareStringEx is preferred")]
+        public static CSTR_RESULT CompareStringA(
+            int Locale,
+            CSTR_FLAGS dwCmpFlags,
+            string lpString1,
+            string lpString2
+            ) =>
+            CompareStringA(
+                Locale,
+                dwCmpFlags,
+                lpString1,
+                lpString1?.Length ?? 0,
+                lpString2,
+                lpString2?.Length ?? 0
+                );
+
+        [Obsolete("DEPRECATED: StringApiSetFunction.CompareStringEx is preferred")]
+        [SuppressMessage("Globalization",
+            "CA2101: Specify marshaling for P/Invoke string arguments",
+            Justification = nameof(CharSet.Ansi))]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true, CharSet = CharSet.Ansi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        private static extern CSTR_RESULT CompareStringA(
+            [In] int Locale,
+            [In, MarshalAs(UnmanagedType.I4)]
+            CSTR_FLAGS dwCmpFlags,
+            [In] string lpString1,
+            [In] int cchCount1,
+            [In] string lpString2,
+            [In] int cchCount2
+            );
+
+        /// <inheritdoc cref="CompareString"/>
+        [Obsolete("DEPRECATED: StringApiSetFunction.CompareStringEx is preferred")]
+        [SuppressMessage("Globalization",
+            "CA2101: Specify marshaling for P/Invoke string arguments",
+            Justification = nameof(CharSet.Ansi))]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true, CharSet = CharSet.Ansi)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern CSTR_RESULT CompareStringA(
+            [In] int Locale,
+            [In, MarshalAs(UnmanagedType.I4)]
+            CSTR_FLAGS dwCmpFlags,
+            [In] LPSTR lpString1,
+            [In] int cchCount1,
+            [In] LPSTR lpString2,
+            [In] int cchCount2
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\stringapiset.h, line 66
+        #region CompareStringW function
+        /// <inheritdoc cref="CompareString"/>
+        public static CSTR_RESULT CompareStringW(
+            int Locale,
+            CSTR_FLAGS dwCmpFlags,
+            string lpString1,
+            string lpString2
+            ) =>
+            CompareStringW(
+                Locale,
+                dwCmpFlags,
+                lpString1,
+                lpString1?.Length ?? 0,
+                lpString2,
+                lpString2?.Length ?? 0
+                );
+
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true, CharSet = CharSet.Unicode)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        private static extern CSTR_RESULT CompareStringW(
+            [In] int Locale,
+            [In, MarshalAs(UnmanagedType.I4)]
+            CSTR_FLAGS dwCmpFlags,
+            [In] string lpString1,
+            [In] int cchCount1,
+            [In] string lpString2,
+            [In] int cchCount2
+            );
+
+        /// <inheritdoc cref="CompareString"/>
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true, CharSet = CharSet.Unicode)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern CSTR_RESULT CompareStringW(
+            [In] int Locale,
+            [In, MarshalAs(UnmanagedType.I4)]
+            CSTR_FLAGS dwCmpFlags,
+            [In] LPWSTR lpString1,
+            [In] int cchCount1,
+            [In] LPWSTR lpString2,
+            [In] int cchCount2
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\WinNls.h, line 1592
+        #region CompareString function
+        /// <summary>
+        /// Compares two character strings, for a <a href="https://docs.microsoft.com/windows/desktop/Intl/locales-and-languages">locale</a> specified by identifier.
+        /// <para><note type="caution">Using <see cref="CompareString"/> incorrectly can compromise the security of your application. Strings that are not compared correctly can produce invalid input. For example, the function can raise security issues when used for a non-linguistic comparison, because two strings that are distinct in their binary representation can be linguistically equivalent. The application should test strings for validity before using them, and should provide error handlers. For more information, see <a href="https://docs.microsoft.com/windows/desktop/Intl/security-considerations--international-features">Security Considerations: International Features</a>.</note></para>
+        /// <para><note>For compatibility with Unicode, your applications should prefer <see cref="CompareStringEx"/> or the Unicode version of <see cref="CompareStringW"/>. Another reason for preferring <see cref="CompareStringEx"/> is that Microsoft is migrating toward the use of locale names instead of locale identifiers for new locales, for interoperability reasons. Any application that will be run only on Windows Vista and later should use <see cref="CompareStringEx"/>.</note></para>
+        /// </summary>
+        /// <param name="Locale">
+        /// <a href="https://docs.microsoft.com/windows/desktop/Intl/locale-identifiers">Locale identifier</a> of the locale used for the comparison. You can use the <see cref="MAKELCID"/> macro to create a locale identifier or use one of the following predefined values.
+        /// <list type="bullet">
+        /// <item><see cref="LOCALE_CUSTOM_DEFAULT"/></item>
+        /// <item><see cref="LOCALE_CUSTOM_UI_DEFAULT"/></item>
+        /// <item><see cref="LOCALE_CUSTOM_UNSPECIFIED"/></item>
+        /// <item><see cref="LOCALE_INVARIANT"/></item>
+        /// <item><see cref="LOCALE_SYSTEM_DEFAULT"/></item>
+        /// <item><see cref="LOCALE_USER_DEFAULT"/></item>
+        /// </list>
+        /// </param>
+        /// <param name="dwCmpFlags">Flags that indicate how the function compares the two strings. By default, these flags are not set. This parameter can be set to <c>0</c> (or <see langword="default"/>) to obtain the default behavior.</param>
+        /// <param name="lpString1">
+        /// The first string to compare.
+        /// <para>The application can supply a negative value for the length parameter if the string is null-terminated. In this case, the function determines the length automatically.</para>
+        /// </param>
+        /// <param name="lpString2">
+        /// The second string to compare.
+        /// <para>The application can supply a negative value for the length parameter if the string is null-terminated. In this case, the function determines the length automatically.</para>
+        /// </param>
+        /// <returns>Returns the values described for <see cref="CompareStringEx"/>.</returns>
+        /// <remarks>
+        /// <para>See Remarks for <see cref="CompareStringEx"/>.</para>
+        /// <para>If your application is calling the ANSI version of <see cref="CompareString"/>, the function converts parameters via the default code page of the supplied locale. Thus, an application can never use <see cref="CompareString"/> to handle UTF-8 text.</para>
+        /// <para>Normally, for case-insensitive comparisons, <see cref="CompareString"/> maps the lowercase <c>"i"</c> to the uppercase <c>"I"</c>, even when the locale is Turkish or Azerbaijani. The <see cref="CSTR_FLAGS.NORM_LINGUISTIC_CASING"/> flag overrides this behavior for Turkish or Azerbaijani. If this flag is specified in conjunction with Turkish or Azerbaijani, <c>LATIN SMALL LETTER DOTLESS I (U+0131)</c> is the lowercase form of <c>LATIN CAPITAL LETTER I (U+0049)</c> and <c>LATIN SMALL LETTER I (U+0069)</c> is the lowercase form of <c>LATIN CAPITAL LETTER I WITH DOT ABOVE (U+0130)</c>.</para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows 2000 Professional [desktop apps | UWP apps]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows 2000 Server [desktop apps | UWP apps]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/winnls/nf-winnls-comparestring">CompareString function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        [Obsolete("DEPRECATED: StringApiSetFunction.CompareStringEx is preferred")]
+        public static CSTR_RESULT CompareString(
+            int Locale,
+            CSTR_FLAGS dwCmpFlags,
+            string lpString1,
+            string lpString2
+            ) =>
+            CompareString(
+                Locale,
+                dwCmpFlags,
+                lpString1,
+                lpString1?.Length ?? 0,
+                lpString2,
+                lpString2?.Length ?? 0
+                );
+
+        [Obsolete("DEPRECATED: StringApiSetFunction.CompareStringEx is preferred")]
+#if !NETSTANDARD1_3
+        [SuppressMessage("Globalization",
+            "CA2101: Specify marshaling for P/Invoke string arguments",
+            Justification = nameof(CharSet.Auto))]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true, CharSet = CharSet.Auto)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        private static extern
+#else
+        private static
+#endif
+        CSTR_RESULT CompareString(
+            [In] int Locale,
+            [In, MarshalAs(UnmanagedType.I4)]
+            CSTR_FLAGS dwCmpFlags,
+            [In] string lpString1,
+            [In] int cchCount1,
+            [In] string lpString2,
+            [In] int cchCount2
+            )
+#if !NETSTANDARD1_3
+            ;
+#else
+            => Marshal.SystemDefaultCharSize switch
+            {
+                1 => CompareStringA(Locale, dwCmpFlags, lpString1, cchCount1,
+                        lpString2, cchCount2),
+                2 => CompareStringW(Locale, dwCmpFlags, lpString1, cchCount1,
+                        lpString2, cchCount2),
+                _ => throw new PlatformNotSupportedException()
+            };
+#endif
+
+        /// <inheritdoc cref="CompareString"/>
+        [Obsolete("DEPRECATED: StringApiSetFunction.CompareStringEx is preferred")]
+#if !NETSTANDARD1_3
+        [SuppressMessage("Globalization",
+            "CA2101: Specify marshaling for P/Invoke string arguments",
+            Justification = nameof(CharSet.Auto))]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true, CharSet = CharSet.Auto)]
+        [return: MarshalAs(UnmanagedType.I4)]
+        public static extern
+#else
+        public static
+#endif
+        CSTR_RESULT CompareString(
+            [In] int Locale,
+            [In, MarshalAs(UnmanagedType.I4)]
+            CSTR_FLAGS dwCmpFlags,
+            [In] LPTSTR lpString1,
+            [In] int cchCount1,
+            [In] LPTSTR lpString2,
+            [In] int cchCount2
+            )
+#if !NETSTANDARD1_3
+            ;
+#else
+            => Marshal.SystemDefaultCharSize switch
+            {
+                1 => CompareStringA(Locale, dwCmpFlags,
+                        Pointer.Create<LPSTR>(lpString1.Pointer), cchCount1,
+                        Pointer.Create<LPSTR>(lpString2.Pointer), cchCount2),
+                2 => CompareStringW(Locale, dwCmpFlags,
+                        Pointer.Create<LPWSTR>(lpString1.Pointer), cchCount1,
+                        Pointer.Create<LPWSTR>(lpString2.Pointer), cchCount2),
+                _ => throw new PlatformNotSupportedException()
+            };
+#endif
+        #endregion
     }
 }

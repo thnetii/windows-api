@@ -329,7 +329,7 @@ namespace THNETII.WinApi.Native.WinNls
         [Obsolete("DEPRECATED: StringApiSetFunction.CompareStringEx is preferred")]
         public static CSTR_RESULT CompareStringA(
             int Locale,
-            CSTR_FLAGS dwCmpFlags,
+            NLSSTRING_FLAGS dwCmpFlags,
             string lpString1,
             string lpString2
             ) =>
@@ -351,7 +351,7 @@ namespace THNETII.WinApi.Native.WinNls
         private static extern CSTR_RESULT CompareStringA(
             [In] int Locale,
             [In, MarshalAs(UnmanagedType.I4)]
-            CSTR_FLAGS dwCmpFlags,
+            NLSSTRING_FLAGS dwCmpFlags,
             [In] string lpString1,
             [In] int cchCount1,
             [In] string lpString2,
@@ -362,7 +362,7 @@ namespace THNETII.WinApi.Native.WinNls
         [Obsolete("DEPRECATED: StringApiSetFunction.CompareStringEx is preferred")]
         public unsafe static CSTR_RESULT CompareStringA(
             int Locale,
-            CSTR_FLAGS dwCmpFlags,
+            NLSSTRING_FLAGS dwCmpFlags,
             ReadOnlySpan<byte> lpString1,
             int cchCount1,
             ReadOnlySpan<byte> lpString2,
@@ -391,7 +391,7 @@ namespace THNETII.WinApi.Native.WinNls
         public static extern CSTR_RESULT CompareStringA(
             [In] int Locale,
             [In, MarshalAs(UnmanagedType.I4)]
-            CSTR_FLAGS dwCmpFlags,
+            NLSSTRING_FLAGS dwCmpFlags,
             [In] LPCSTR lpString1,
             [In] int cchCount1,
             [In] LPCSTR lpString2,
@@ -403,7 +403,7 @@ namespace THNETII.WinApi.Native.WinNls
         /// <inheritdoc cref="CompareString"/>
         public static CSTR_RESULT CompareStringW(
             int Locale,
-            CSTR_FLAGS dwCmpFlags,
+            NLSSTRING_FLAGS dwCmpFlags,
             string lpString1,
             string lpString2
             ) =>
@@ -421,7 +421,7 @@ namespace THNETII.WinApi.Native.WinNls
         private static extern CSTR_RESULT CompareStringW(
             [In] int Locale,
             [In, MarshalAs(UnmanagedType.I4)]
-            CSTR_FLAGS dwCmpFlags,
+            NLSSTRING_FLAGS dwCmpFlags,
             [In] string lpString1,
             [In] int cchCount1,
             [In] string lpString2,
@@ -431,7 +431,7 @@ namespace THNETII.WinApi.Native.WinNls
         /// <inheritdoc cref="CompareString"/>
         public unsafe static CSTR_RESULT CompareStringW(
             int Locale,
-            CSTR_FLAGS dwCmpFlags,
+            NLSSTRING_FLAGS dwCmpFlags,
             ReadOnlySpan<char> lpString1,
             ReadOnlySpan<char> lpString2
             )
@@ -454,7 +454,7 @@ namespace THNETII.WinApi.Native.WinNls
         public static extern CSTR_RESULT CompareStringW(
             [In] int Locale,
             [In, MarshalAs(UnmanagedType.I4)]
-            CSTR_FLAGS dwCmpFlags,
+            NLSSTRING_FLAGS dwCmpFlags,
             [In] LPCWSTR lpString1,
             [In] int cchCount1,
             [In] LPCWSTR lpString2,
@@ -492,7 +492,7 @@ namespace THNETII.WinApi.Native.WinNls
         /// <remarks>
         /// <para>See Remarks for <see cref="CompareStringEx"/>.</para>
         /// <para>If your application is calling the ANSI version of <see cref="CompareString"/>, the function converts parameters via the default code page of the supplied locale. Thus, an application can never use <see cref="CompareString"/> to handle UTF-8 text.</para>
-        /// <para>Normally, for case-insensitive comparisons, <see cref="CompareString"/> maps the lowercase <c>"i"</c> to the uppercase <c>"I"</c>, even when the locale is Turkish or Azerbaijani. The <see cref="CSTR_FLAGS.NORM_LINGUISTIC_CASING"/> flag overrides this behavior for Turkish or Azerbaijani. If this flag is specified in conjunction with Turkish or Azerbaijani, <c>LATIN SMALL LETTER DOTLESS I (U+0131)</c> is the lowercase form of <c>LATIN CAPITAL LETTER I (U+0049)</c> and <c>LATIN SMALL LETTER I (U+0069)</c> is the lowercase form of <c>LATIN CAPITAL LETTER I WITH DOT ABOVE (U+0130)</c>.</para>
+        /// <para>Normally, for case-insensitive comparisons, <see cref="CompareString"/> maps the lowercase <c>"i"</c> to the uppercase <c>"I"</c>, even when the locale is Turkish or Azerbaijani. The <see cref="NLSSTRING_FLAGS.NORM_LINGUISTIC_CASING"/> flag overrides this behavior for Turkish or Azerbaijani. If this flag is specified in conjunction with Turkish or Azerbaijani, <c>LATIN SMALL LETTER DOTLESS I (U+0131)</c> is the lowercase form of <c>LATIN CAPITAL LETTER I (U+0049)</c> and <c>LATIN SMALL LETTER I (U+0069)</c> is the lowercase form of <c>LATIN CAPITAL LETTER I WITH DOT ABOVE (U+0130)</c>.</para>
         /// <para>
         /// <list type="table">
         /// <listheader><term>Requirements</term></listheader>
@@ -504,10 +504,16 @@ namespace THNETII.WinApi.Native.WinNls
         /// </remarks>
         /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
         /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="CompareStringEx"/>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/Intl/handling-sorting-in-your-applications">Handling Sorting in Your Applications</seealso>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/Intl/national-language-support">National Language Support</seealso>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/Intl/national-language-support-functions">National Language Support Functions</seealso>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/Intl/security-considerations--international-features">Security Considerations: International Features</seealso>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/Intl/using-unicode-normalization-to-represent-strings">Using Unicode Normalization to Represent Strings</seealso>
         [Obsolete("DEPRECATED: StringApiSetFunction.CompareStringEx is preferred")]
         public static CSTR_RESULT CompareString(
             int Locale,
-            CSTR_FLAGS dwCmpFlags,
+            NLSSTRING_FLAGS dwCmpFlags,
             string lpString1,
             string lpString2
             ) =>
@@ -534,7 +540,7 @@ namespace THNETII.WinApi.Native.WinNls
         CSTR_RESULT CompareString(
             [In] int Locale,
             [In, MarshalAs(UnmanagedType.I4)]
-            CSTR_FLAGS dwCmpFlags,
+            NLSSTRING_FLAGS dwCmpFlags,
             [In] string lpString1,
             [In] int cchCount1,
             [In] string lpString2,
@@ -557,7 +563,7 @@ namespace THNETII.WinApi.Native.WinNls
         [Obsolete("DEPRECATED: StringApiSetFunction.CompareStringEx is preferred")]
         public unsafe static CSTR_RESULT CompareString(
             int Locale,
-            CSTR_FLAGS dwCmpFlags,
+            NLSSTRING_FLAGS dwCmpFlags,
             ReadOnlySpan<byte> lpString1,
             int cchCount1,
             ReadOnlySpan<byte> lpString2,
@@ -591,7 +597,7 @@ namespace THNETII.WinApi.Native.WinNls
         CSTR_RESULT CompareString(
             [In] int Locale,
             [In, MarshalAs(UnmanagedType.I4)]
-            CSTR_FLAGS dwCmpFlags,
+            NLSSTRING_FLAGS dwCmpFlags,
             [In] LPCTSTR lpString1,
             [In] int cchCount1,
             [In] LPCTSTR lpString2,
@@ -614,7 +620,136 @@ namespace THNETII.WinApi.Native.WinNls
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\WinNls.h, line 1626
         #region FindNLSString function
+        /// <summary>
+        /// Locates a Unicode string (wide characters) or its equivalent in another Unicode string for a locale specified by identifier.
+        /// <para><note type="caution">Because strings with very different binary representations can compare as identical, this function can raise certain security concerns. For more information, see the discussion of comparison functions in <a href="https://docs.microsoft.com/windows/desktop/Intl/security-considerations--international-features">Security Considerations: International Features</a>.</note></para>
+        /// <para><note>For interoperability reasons, the application should prefer the <see cref="FindNLSStringEx"/> function because Microsoft is migrating toward the use of locale names instead of locale identifiers for new locales. Although <see cref="FindNLSString"/> supports custom locales, most applications should use <see cref="FindNLSStringEx"/> for this type of support.</note></para>
+        /// </summary>
+        /// <param name="Locale">
+        /// <a href="https://docs.microsoft.com/windows/desktop/Intl/locale-identifiers">Locale identifier</a> that specifies the locale. You can use the <see cref="MAKELCID"/> macro to create an identifier or use one of the following predefined values.
+        /// <list type="bullet">
+        /// <item><see cref="LOCALE_INVARIANT"/></item>
+        /// <item><see cref="LOCALE_SYSTEM_DEFAULT"/></item>
+        /// <item><see cref="LOCALE_USER_DEFAULT"/></item>
+        /// </list>
+        /// <strong>Windows Vista and later</strong>: The following custom locale identifiers are also supported.
+        /// <list type="bullet">
+        /// <item><see cref="LOCALE_CUSTOM_DEFAULT"/></item>
+        /// <item><see cref="LOCALE_CUSTOM_UI_DEFAULT"/></item>
+        /// <item><see cref="LOCALE_CUSTOM_UNSPECIFIED"/></item>
+        /// </list>
+        /// </param>
+        /// <param name="dwFindNLSStringFlags">Flags specifying details of the find operation. For detailed definitions, see the <em>dwFindNLSStringFlags</em> parameter of <see cref="FindNLSStringEx"/>.</param>
+        /// <param name="lpStringSource">
+        /// The source string, in which the function searches for the string specified by <paramref name="lpStringValue"/>.
+        /// <para>The application cannot specify <c>0</c> (zero) or any negative number other than <c>-1</c> for the parameter specifying the length of the string (if any). The application specifies <c>-1</c> for the length if the source string is null-terminated and the function should calculate the size automatically.</para>
+        /// </param>
+        /// <param name="lpStringValue">
+        /// The search string, for which the function searches in the source string.
+        /// <para>The application cannot specify <c>0</c> (zero) or any negative number other than <c>-1</c> for the parameter specifying the length of the string (if any). The application specifies <c>-1</c> for the length if the source string is null-terminated and the function should calculate the size automatically.</para>
+        /// </param>
+        /// <param name="pcchFound">Receives the length of the string that the function finds. For details, see the <em>pcchFound</em> parameter of <see cref="FindNLSStringEx"/>.</param>
+        /// <returns>
+        /// <para>Returns a 0-based index into the source string indicated by <paramref name="lpStringSource"/> if successful. In combination with the value in <paramref name="pcchFound"/>, this index provides the exact location of the entire found string in the source string. A return value of <c>0</c> (zero) is an error-free index into the source string, and the matching string is in the source string at offset <c>0</c>.</para>
+        /// <para>
+        /// The function returns <c>-1</c> if it does not succeed. To get extended error information, the application can call <see cref="Marshal.GetLastWin32Error"/>, which can return one of the following error codes:
+        /// <list type="table">
+        /// <listheader><term>Error code</term><description>Reason</description></listheader>
+        /// <item><term><see cref="ERROR_INVALID_FLAGS"/></term><description>The values supplied for flags were not valid.</description></item>
+        /// <item><term><see cref="ERROR_INVALID_PARAMETER"/></term><description>Any of the parameter values was invalid.</description></item>
+        /// <item><term><see cref="ERROR_SUCCESS"/></term><description>The action completed successfully but yielded no results.</description></item>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// See Remarks for <see cref="FindNLSStringEx"/>.
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows Vista [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2008 [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/winnls/nf-winnls-findnlsstring">FindNLSString function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="CompareString"/>
+        /// <seealso cref="FindNLSStringEx"/>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/Intl/handling-sorting-in-your-applications">Handling Sorting in Your Applications</seealso>
+        /// <seealso cref="LCMapString"/>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/Intl/national-language-support">National Language Support</seealso>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/Intl/national-language-support-functions">National Language Support Functions</seealso>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/Intl/security-considerations--international-features">Security Considerations: International Features</seealso>
+        [Obsolete("DEPRECATED: FindNLSStringEx is preferred")]
+        public static int FindNLSString(
+            int Locale,
+            NLSSTRING_FLAGS dwFindNLSStringFlags,
+            string lpStringSource,
+            string lpStringValue,
+            out int pcchFound
+            ) =>
+            FindNLSString(
+                Locale,
+                dwFindNLSStringFlags,
+                lpStringSource,
+                lpStringSource?.Length ?? 0,
+                lpStringValue,
+                lpStringValue?.Length ?? 0,
+                out pcchFound
+                );
 
+        [Obsolete("DEPRECATED: FindNLSStringEx is preferred")]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        private static extern int FindNLSString(
+            [In] int Locale,
+            [In, MarshalAs(UnmanagedType.I4)]
+            NLSSTRING_FLAGS dwFindNLSStringFlags,
+            [In, MarshalAs(UnmanagedType.LPWStr)]
+            string lpStringSource,
+            [In] int cchSource,
+            [In, MarshalAs(UnmanagedType.LPWStr)]
+            string lpStringValue,
+            [In] int cchValue,
+            out int pcchFound
+            );
+
+        /// <inheritdoc cref="FindNLSString"/>
+        [Obsolete("DEPRECATED: FindNLSStringEx is preferred")]
+        public static unsafe int FindNLSString(
+            int Locale,
+            NLSSTRING_FLAGS dwFindNLSStringFlags,
+            ReadOnlySpan<char> lpStringSource,
+            ReadOnlySpan<char> lpStringValue,
+            out int pcchFound
+            )
+        {
+            fixed (char* ptrStringSource = lpStringSource)
+            fixed (char* ptrStringValue = lpStringValue)
+                return FindNLSString(
+                    Locale,
+                    dwFindNLSStringFlags,
+                    Pointer.Create<LPCWSTR>(ptrStringSource),
+                    lpStringSource.Length,
+                    Pointer.Create<LPCWSTR>(ptrStringValue),
+                    lpStringValue.Length,
+                    out pcchFound
+                    );
+        }
+
+        /// <inheritdoc cref="FindNLSString"/>
+        [Obsolete("DEPRECATED: FindNLSStringEx is preferred")]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true)]
+        public static extern int FindNLSString(
+            [In] int Locale,
+            [In, MarshalAs(UnmanagedType.I4)]
+            NLSSTRING_FLAGS dwFindNLSStringFlags,
+            [In] LPCWSTR lpStringSource,
+            [In] int cchSource,
+            [In] LPCWSTR lpStringValue,
+            [In] int cchValue,
+            out int pcchFound
+            );
         #endregion
     }
 }

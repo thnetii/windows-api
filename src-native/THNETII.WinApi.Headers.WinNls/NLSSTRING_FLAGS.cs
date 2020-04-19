@@ -3,8 +3,11 @@ using System;
 namespace THNETII.WinApi.Native.WinNls
 {
     [Flags]
-    public enum CSTR_FLAGS : int
+    public enum NLSSTRING_FLAGS : int
     {
+        //
+        //  String Flags.
+        //
         /// <summary>
         /// Ignore case. For many scripts (notably Latin scripts), <see cref="NORM_IGNORECASE"/> coincides with <see cref="LINGUISTIC_IGNORECASE"/>.
         /// <para><note><see cref="NORM_IGNORECASE"/> ignores any tertiary distinction, whether it is actually linguistic case or not. For example, in Arabic and Indic scripts, this distinguishes alternate forms of a character, but the differences do not correspond to linguistic case. <see cref="LINGUISTIC_IGNORECASE"/> causes the function to ignore only actual linguistic casing, instead of ignoring the third sorting weight.</note></para>
@@ -37,6 +40,48 @@ namespace THNETII.WinApi.Native.WinNls
         /// <summary>Use the default linguistic rules for casing, instead of file system rules. Note that most scenarios for <see cref="CompareStringEx"/> use this flag. This flag does not have to be used when your application calls <see cref="CompareStringOrdinal"/>.</summary>
         NORM_LINGUISTIC_CASING = WinNlsConstants.NORM_LINGUISTIC_CASING,
 
+        //
+        //  Search Flags
+        //
+        /// <summary>Test to find out if the value to find is the first value in the source string.</summary>
+        FIND_STARTSWITH = WinNlsConstants.FIND_STARTSWITH,
+        /// <summary>Test to find out if the value to find is the last value in the source string.</summary>
+        FIND_ENDSWITH = WinNlsConstants.FIND_ENDSWITH,
+        /// <summary>Search the string, starting with the first character of the string.</summary>
+        FIND_FROMSTART = WinNlsConstants.FIND_FROMSTART,
+        /// <summary>Search the string in the reverse direction, starting with the last character of the string.</summary>
+        FIND_FROMEND = WinNlsConstants.FIND_FROMEND,
+
+        //
+        //  Sorting Flags.
+        //
+        //    WORD Sort:    culturally correct sort
+        //                  hyphen and apostrophe are special cased
+        //                  example: "coop" and "co-op" will sort together in a list
+        //
+        //                        co_op     <-------  underscore (symbol)
+        //                        coat
+        //                        comb
+        //                        coop
+        //                        co-op     <-------  hyphen (punctuation)
+        //                        cork
+        //                        went
+        //                        were
+        //                        we're     <-------  apostrophe (punctuation)
+        //
+        //
+        //    STRING Sort:  hyphen and apostrophe will sort with all other symbols
+        //
+        //                        co-op     <-------  hyphen (punctuation)
+        //                        co_op     <-------  underscore (symbol)
+        //                        coat
+        //                        comb
+        //                        coop
+        //                        cork
+        //                        we're     <-------  apostrophe (punctuation)
+        //                        went
+        //                        were
+        //
         /// <summary>Treat punctuation the same as symbols.</summary>
         SORT_STRINGSORT = WinNlsConstants.SORT_STRINGSORT,
         /// <summary><strong>Windows 7</strong>: Treat digits as numbers during sorting, for example, sort <c>"2"</c> before <c>"10"</c>.</summary>

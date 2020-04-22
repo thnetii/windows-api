@@ -4,6 +4,7 @@ using System.Runtime.InteropServices;
 
 using THNETII.WinApi.Native.WinError;
 using THNETII.InteropServices.Memory;
+using System.Text;
 
 #if NETSTANDARD1_3
 using EntryPointNotFoundException = System.Exception;
@@ -329,7 +330,7 @@ namespace THNETII.WinApi.Native.WinNls
         [Obsolete("DEPRECATED: StringApiSetFunction.CompareStringEx is preferred")]
         public static CSTR_RESULT CompareStringA(
             int Locale,
-            NLSSTRING_FLAGS dwCmpFlags,
+            SORT_FLAGS dwCmpFlags,
             string lpString1,
             string lpString2
             ) =>
@@ -351,7 +352,7 @@ namespace THNETII.WinApi.Native.WinNls
         private static extern CSTR_RESULT CompareStringA(
             [In] int Locale,
             [In, MarshalAs(UnmanagedType.I4)]
-            NLSSTRING_FLAGS dwCmpFlags,
+            SORT_FLAGS dwCmpFlags,
             [In] string lpString1,
             [In] int cchCount1,
             [In] string lpString2,
@@ -362,7 +363,7 @@ namespace THNETII.WinApi.Native.WinNls
         [Obsolete("DEPRECATED: StringApiSetFunction.CompareStringEx is preferred")]
         public unsafe static CSTR_RESULT CompareStringA(
             int Locale,
-            NLSSTRING_FLAGS dwCmpFlags,
+            SORT_FLAGS dwCmpFlags,
             ReadOnlySpan<byte> lpString1,
             int cchCount1,
             ReadOnlySpan<byte> lpString2,
@@ -391,7 +392,7 @@ namespace THNETII.WinApi.Native.WinNls
         public static extern CSTR_RESULT CompareStringA(
             [In] int Locale,
             [In, MarshalAs(UnmanagedType.I4)]
-            NLSSTRING_FLAGS dwCmpFlags,
+            SORT_FLAGS dwCmpFlags,
             [In] LPCSTR lpString1,
             [In] int cchCount1,
             [In] LPCSTR lpString2,
@@ -403,7 +404,7 @@ namespace THNETII.WinApi.Native.WinNls
         /// <inheritdoc cref="CompareString"/>
         public static CSTR_RESULT CompareStringW(
             int Locale,
-            NLSSTRING_FLAGS dwCmpFlags,
+            SORT_FLAGS dwCmpFlags,
             string lpString1,
             string lpString2
             ) =>
@@ -421,7 +422,7 @@ namespace THNETII.WinApi.Native.WinNls
         private static extern CSTR_RESULT CompareStringW(
             [In] int Locale,
             [In, MarshalAs(UnmanagedType.I4)]
-            NLSSTRING_FLAGS dwCmpFlags,
+            SORT_FLAGS dwCmpFlags,
             [In] string lpString1,
             [In] int cchCount1,
             [In] string lpString2,
@@ -431,7 +432,7 @@ namespace THNETII.WinApi.Native.WinNls
         /// <inheritdoc cref="CompareString"/>
         public unsafe static CSTR_RESULT CompareStringW(
             int Locale,
-            NLSSTRING_FLAGS dwCmpFlags,
+            SORT_FLAGS dwCmpFlags,
             ReadOnlySpan<char> lpString1,
             ReadOnlySpan<char> lpString2
             )
@@ -454,7 +455,7 @@ namespace THNETII.WinApi.Native.WinNls
         public static extern CSTR_RESULT CompareStringW(
             [In] int Locale,
             [In, MarshalAs(UnmanagedType.I4)]
-            NLSSTRING_FLAGS dwCmpFlags,
+            SORT_FLAGS dwCmpFlags,
             [In] LPCWSTR lpString1,
             [In] int cchCount1,
             [In] LPCWSTR lpString2,
@@ -492,7 +493,7 @@ namespace THNETII.WinApi.Native.WinNls
         /// <remarks>
         /// <para>See Remarks for <see cref="CompareStringEx"/>.</para>
         /// <para>If your application is calling the ANSI version of <see cref="CompareString"/>, the function converts parameters via the default code page of the supplied locale. Thus, an application can never use <see cref="CompareString"/> to handle UTF-8 text.</para>
-        /// <para>Normally, for case-insensitive comparisons, <see cref="CompareString"/> maps the lowercase <c>"i"</c> to the uppercase <c>"I"</c>, even when the locale is Turkish or Azerbaijani. The <see cref="NLSSTRING_FLAGS.NORM_LINGUISTIC_CASING"/> flag overrides this behavior for Turkish or Azerbaijani. If this flag is specified in conjunction with Turkish or Azerbaijani, <c>LATIN SMALL LETTER DOTLESS I (U+0131)</c> is the lowercase form of <c>LATIN CAPITAL LETTER I (U+0049)</c> and <c>LATIN SMALL LETTER I (U+0069)</c> is the lowercase form of <c>LATIN CAPITAL LETTER I WITH DOT ABOVE (U+0130)</c>.</para>
+        /// <para>Normally, for case-insensitive comparisons, <see cref="CompareString"/> maps the lowercase <c>"i"</c> to the uppercase <c>"I"</c>, even when the locale is Turkish or Azerbaijani. The <see cref="SORT_FLAGS.NORM_LINGUISTIC_CASING"/> flag overrides this behavior for Turkish or Azerbaijani. If this flag is specified in conjunction with Turkish or Azerbaijani, <c>LATIN SMALL LETTER DOTLESS I (U+0131)</c> is the lowercase form of <c>LATIN CAPITAL LETTER I (U+0049)</c> and <c>LATIN SMALL LETTER I (U+0069)</c> is the lowercase form of <c>LATIN CAPITAL LETTER I WITH DOT ABOVE (U+0130)</c>.</para>
         /// <para>
         /// <list type="table">
         /// <listheader><term>Requirements</term></listheader>
@@ -513,7 +514,7 @@ namespace THNETII.WinApi.Native.WinNls
         [Obsolete("DEPRECATED: StringApiSetFunction.CompareStringEx is preferred")]
         public static CSTR_RESULT CompareString(
             int Locale,
-            NLSSTRING_FLAGS dwCmpFlags,
+            SORT_FLAGS dwCmpFlags,
             string lpString1,
             string lpString2
             ) =>
@@ -540,7 +541,7 @@ namespace THNETII.WinApi.Native.WinNls
         CSTR_RESULT CompareString(
             [In] int Locale,
             [In, MarshalAs(UnmanagedType.I4)]
-            NLSSTRING_FLAGS dwCmpFlags,
+            SORT_FLAGS dwCmpFlags,
             [In] string lpString1,
             [In] int cchCount1,
             [In] string lpString2,
@@ -563,7 +564,7 @@ namespace THNETII.WinApi.Native.WinNls
         [Obsolete("DEPRECATED: StringApiSetFunction.CompareStringEx is preferred")]
         public unsafe static CSTR_RESULT CompareString(
             int Locale,
-            NLSSTRING_FLAGS dwCmpFlags,
+            SORT_FLAGS dwCmpFlags,
             ReadOnlySpan<byte> lpString1,
             int cchCount1,
             ReadOnlySpan<byte> lpString2,
@@ -597,7 +598,7 @@ namespace THNETII.WinApi.Native.WinNls
         CSTR_RESULT CompareString(
             [In] int Locale,
             [In, MarshalAs(UnmanagedType.I4)]
-            NLSSTRING_FLAGS dwCmpFlags,
+            SORT_FLAGS dwCmpFlags,
             [In] LPCTSTR lpString1,
             [In] int cchCount1,
             [In] LPCTSTR lpString2,
@@ -684,7 +685,7 @@ namespace THNETII.WinApi.Native.WinNls
         [Obsolete("DEPRECATED: FindNLSStringEx is preferred")]
         public static int FindNLSString(
             int Locale,
-            NLSSTRING_FLAGS dwFindNLSStringFlags,
+            FIND_FLAGS dwFindNLSStringFlags,
             string lpStringSource,
             string lpStringValue,
             out int pcchFound
@@ -704,7 +705,7 @@ namespace THNETII.WinApi.Native.WinNls
         private static extern int FindNLSString(
             [In] int Locale,
             [In, MarshalAs(UnmanagedType.I4)]
-            NLSSTRING_FLAGS dwFindNLSStringFlags,
+            FIND_FLAGS dwFindNLSStringFlags,
             [In, MarshalAs(UnmanagedType.LPWStr)]
             string lpStringSource,
             [In] int cchSource,
@@ -718,7 +719,7 @@ namespace THNETII.WinApi.Native.WinNls
         [Obsolete("DEPRECATED: FindNLSStringEx is preferred")]
         public static unsafe int FindNLSString(
             int Locale,
-            NLSSTRING_FLAGS dwFindNLSStringFlags,
+            FIND_FLAGS dwFindNLSStringFlags,
             ReadOnlySpan<char> lpStringSource,
             ReadOnlySpan<char> lpStringValue,
             out int pcchFound
@@ -743,13 +744,316 @@ namespace THNETII.WinApi.Native.WinNls
         public static extern int FindNLSString(
             [In] int Locale,
             [In, MarshalAs(UnmanagedType.I4)]
-            NLSSTRING_FLAGS dwFindNLSStringFlags,
+            FIND_FLAGS dwFindNLSStringFlags,
             [In] LPCWSTR lpStringSource,
             [In] int cchSource,
             [In] LPCWSTR lpStringValue,
             [In] int cchValue,
             out int pcchFound
             );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\WinNls.h, line 1641
+        #region LCMapStringW function
+        /// <inheritdoc cref="LCMapString"/>
+        [Obsolete("DEPRECATED: LCMapStringEx is preferred")]
+        public static int LCMapStringW(
+            int Locale,
+            MAP_FLAGS dwMapFlags,
+            string lpSrcStr,
+            StringBuilder lpDestStr
+            ) =>
+            LCMapStringW(
+                Locale,
+                dwMapFlags,
+                lpSrcStr,
+                lpSrcStr?.Length ?? 0,
+                lpDestStr,
+                lpDestStr?.Capacity ?? 0
+                );
+
+        [Obsolete("DEPRECATED: LCMapStringEx is preferred")]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true, CharSet = CharSet.Unicode)]
+        private static extern int LCMapStringW(
+            [In] int Locale,
+            [In, MarshalAs(UnmanagedType.I4)]
+            MAP_FLAGS dwMapFlags,
+            [In] string lpSrcStr,
+            [In] int cchSrc,
+            [Out] StringBuilder lpDestStr,
+            [In] int cchDest
+            );
+
+        /// <inheritdoc cref="LCMapStringW"/>
+        [Obsolete("DEPRECATED: LCMapStringEx is preferred")]
+        public static unsafe int LCMapStringW(
+            int Locale,
+            MAP_FLAGS dwMapFlags,
+            ReadOnlySpan<char> lpSrcStr,
+            Span<char> lpDestStr
+            )
+        {
+            fixed (char* ptrSrcStr = lpSrcStr)
+            fixed (char* ptrDestStr = lpDestStr)
+                return LCMapStringW(
+                    Locale,
+                    dwMapFlags,
+                    Pointer.Create<LPCWSTR>(ptrSrcStr),
+                    lpSrcStr.Length,
+                    Pointer.Create<LPWSTR>(ptrDestStr),
+                    lpDestStr.Length
+                    );
+        }
+
+        /// <inheritdoc cref="LCMapStringW"/>
+        [Obsolete("DEPRECATED: LCMapStringEx is preferred")]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true, CharSet = CharSet.Unicode)]
+        public static extern int LCMapStringW(
+            [In] int Locale,
+            [In, MarshalAs(UnmanagedType.I4)]
+            MAP_FLAGS dwMapFlags,
+            [In] LPCWSTR lpSrcStr,
+            [In] int cchSrc,
+            LPWSTR lpDestStr,
+            [In] int cchDest
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\WinNls.h, line 1656
+        #region LCMapStringA function
+        /// <inheritdoc cref="LCMapString"/>
+        [Obsolete("DEPRECATED: LCMapStringEx is preferred")]
+        public static int LCMapStringA(
+            int Locale,
+            MAP_FLAGS dwMapFlags,
+            string lpSrcStr,
+            StringBuilder lpDestStr
+            ) =>
+            LCMapStringA(
+                Locale,
+                dwMapFlags,
+                lpSrcStr,
+                lpSrcStr?.Length ?? 0,
+                lpDestStr,
+                lpDestStr?.Capacity ?? 0
+                );
+
+        [Obsolete("DEPRECATED: LCMapStringEx is preferred")]
+        [SuppressMessage("Globalization",
+            "CA2101: Specify marshaling for P/Invoke string arguments", Justification = nameof(CharSet.Ansi))]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true, CharSet = CharSet.Ansi)]
+        private static extern int LCMapStringA(
+            [In] int Locale,
+            [In, MarshalAs(UnmanagedType.I4)]
+            MAP_FLAGS dwMapFlags,
+            [In] string lpSrcStr,
+            [In] int cchSrc,
+            [Out] StringBuilder lpDestStr,
+            [In] int cchDest
+            );
+
+        /// <inheritdoc cref="LCMapStringA"/>
+        [Obsolete("DEPRECATED: LCMapStringEx is preferred")]
+        public static unsafe int LCMapStringA(
+            int Locale,
+            MAP_FLAGS dwMapFlags,
+            ReadOnlySpan<byte> lpSrcStr,
+            int cchSrc,
+            Span<byte> lpDestStr,
+            int cchDest
+            )
+        {
+            fixed (byte* ptrSrcStr = lpSrcStr)
+            fixed (byte* ptrDestStr = lpDestStr)
+                return LCMapStringA(
+                    Locale,
+                    dwMapFlags,
+                    Pointer.Create<LPCSTR>(ptrSrcStr),
+                    cchSrc,
+                    Pointer.Create<LPSTR>(ptrDestStr),
+                    cchDest
+                    );
+        }
+
+        /// <inheritdoc cref="LCMapStringA"/>
+        [Obsolete("DEPRECATED: LCMapStringEx is preferred")]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true, CharSet = CharSet.Ansi)]
+        public static extern int LCMapStringA(
+            [In] int Locale,
+            [In, MarshalAs(UnmanagedType.I4)]
+            MAP_FLAGS dwMapFlags,
+            [In] LPCSTR lpSrcStr,
+            [In] int cchSrc,
+            LPSTR lpDestStr,
+            [In] int cchDest
+            );
+        #endregion
+        // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\WinNls.h, line 1652
+        #region LCMapString function
+        /// <summary>
+        /// For a locale specified by identifier, maps one input character string to another using a specified transformation, or generates a sort key for the input string.
+        /// <para><note>For interoperability reasons, the application should prefer the <see cref="LCMapStringEx"/> function to <see cref="LCMapString"/> because Microsoft is migrating toward the use of locale names instead of locale identifiers for new locales. This recommendation applies especially to custom locales, including those created by Microsoft. Any application that will be run only on Windows Vista and later should use <see cref="LCMapStringEx"/>.</note></para>
+        /// </summary>
+        /// <param name="Locale">
+        /// <a href="https://docs.microsoft.com/windows/desktop/Intl/locale-identifiers">Locale identifier</a> that specifies the locale. You can use the <see cref="MAKELCID"/> macro to create an identifier or use one of the following predefined values.
+        /// <list type="bullet">
+        /// <item><see cref="LOCALE_INVARIANT"/></item>
+        /// <item><see cref="LOCALE_SYSTEM_DEFAULT"/></item>
+        /// <item><see cref="LOCALE_USER_DEFAULT"/></item>
+        /// </list>
+        /// The following custom locale identifiers are also supported.
+        /// <list type="bullet">
+        /// <item><see cref="LOCALE_CUSTOM_DEFAULT"/></item>
+        /// <item><see cref="LOCALE_CUSTOM_UI_DEFAULT"/></item>
+        /// <item><see cref="LOCALE_CUSTOM_UNSPECIFIED"/></item>
+        /// </list>
+        /// </param>
+        /// <param name="dwMapFlags">Flags specifying the type of transformation to use during string mapping or the type of sort key to generate. For detailed definitions, see the <em>dwMapFlags</em> parameter of <see cref="LCMapStringEx"/>.</param>
+        /// <param name="lpSrcStr">
+        /// <para>A source string that the function maps or uses for sort key generation. This string cannot have a size of 0.</para>
+        /// <para>The length of the source string can include the terminating null character, but does not have to. If the terminating null character is included, the mapping behavior of the function is not greatly affected because the terminating null character is considered to be unsortable and always maps to itself.</para>
+        /// <para>The application can set the length parameter (if any) to any negative value to specify that the source string is null-terminated. In this case, if <see cref="LCMapString"/> is being used in its string-mapping mode, the function calculates the string length itself, and null-terminates the mapped string indicated by <paramref name="lpDestStr"/>.</para>
+        /// </param>
+        /// <param name="lpDestStr">
+        /// <para>A buffer in which this function retrieves the mapped string or a sort key. When the application uses this function to generate a sort key, the destination string can contain an odd number of bytes. The <see cref="LCMAP_FLAGS.LCMAP_BYTEREV"/> flag only reverses an even number of bytes. The last byte (odd-positioned) in the sort key is not reversed.</para>
+        /// <para><note>The destination string can be the same as the source string only if <see cref="LCMAP_FLAGS.LCMAP_UPPERCASE"/> or <see cref="LCMAP_FLAGS.LCMAP_LOWERCASE"/> is set. Otherwise, the strings cannot be the same. If they are, the function fails.</note></para>
+        /// <para><note>Upon failure of the function, the destination buffer might contain either partial results or no results at all. In this case, it is recommended for your application to consider any results invalid.</note></para>
+        /// <para>If the length parameter (if any) for the destination string is set to <c>0</c>, the functionn does not use the <paramref name="lpDestStr"/> parameter and returns the required buffer size for the mapped string or sort key.</para>
+        /// </param>
+        /// <returns>
+        /// <para>Returns the number of characters or bytes in the translated string or sort key, including a terminating null character, if successful. If the function succeeds and the value of the parameter specifying the length of <paramref name="lpDestStr"/> (if any) is <c>0</c> (zero), the return value is the size of the buffer required to hold the translated string or sort key, including a terminating null character.</para>
+        /// <para>
+        /// The function returns <c>0</c> (zero) if it does not succeed. To get extended error information, the application can call <see cref="Marshal.GetLastWin32Error"/>, which can return one of the following error codes:
+        /// <list type="table">
+        /// <listheader><term>Error code</term><description>Reason</description></listheader>
+        /// <item><term><see cref="ERROR_INSUFFICIENT_BUFFER"/></term><description>A supplied buffer size was not large enough, or it was incorrectly set to <see langword="null"/>.</description></item>
+        /// <item><term><see cref="ERROR_INVALID_FLAGS"/></term><description>The values supplied for flags were not valid.</description></item>
+        /// <item><term><see cref="ERROR_INVALID_PARAMETER"/></term><description>Any of the parameter values was invalid.</description></item>
+        /// </list>
+        /// </para>
+        /// </returns>
+        /// <remarks>
+        /// <para>See Remarks for <see cref="LCMapStringEx"/>.</para>
+        /// <para>The ANSI version of <see cref="LCMapString"/> maps strings to and from Unicode based on the default Windows (ANSI) code page associated with the specified locale. When the ANSI version of this function is used with a Unicode-only locale, the function can succeed because the operating system uses the <see cref="CP_ACP"/> value, representing the system default Windows ANSI code page. However, characters that are undefined in the system code page appear in the string as a question mark (<c>?</c>).</para>
+        /// <para>
+        /// <list type="table">
+        /// <listheader><term>Requirements</term></listheader>
+        /// <item><term><strong>Minimum supported client:</strong></term><description>Windows 2000 Professional [desktop apps only]</description></item>
+        /// <item><term><strong>Minimum supported server:</strong></term><description>Windows 2000 Server [desktop apps only]</description></item>
+        /// </list>
+        /// </para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/winnls/nf-winnls-lcmapstringw">LCMapStringW function</a></para>
+        /// </remarks>
+        /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
+        /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso cref="CompareString"/>
+        /// <seealso cref="FindNLSString"/>
+        /// <seealso cref="GetNLSVersion"/>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/Intl/handling-sorting-in-your-applications">Handling Sorting in Your Applications</seealso>
+        /// <seealso cref="LCMapStringEx"/>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/Intl/national-language-support">National Language Support</seealso>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/Intl/national-language-support-functions">National Language Support Functions</seealso>
+        [Obsolete("DEPRECATED: LCMapStringEx is preferred")]
+        public static int LCMapString(
+            int Locale,
+            MAP_FLAGS dwMapFlags,
+            string lpSrcStr,
+            StringBuilder lpDestStr
+            ) =>
+            LCMapString(
+                Locale,
+                dwMapFlags,
+                lpSrcStr,
+                lpSrcStr?.Length ?? 0,
+                lpDestStr,
+                lpDestStr?.Capacity ?? 0
+                );
+
+        [Obsolete("DEPRECATED: LCMapStringEx is preferred")]
+#if !NETSTANDARD1_3
+        [SuppressMessage("Globalization",
+            "CA2101: Specify marshaling for P/Invoke string arguments", Justification = nameof(CharSet.Auto))]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true, CharSet = CharSet.Auto)]
+        private static extern
+#else
+        private static
+#endif
+        int LCMapString(
+            [In] int Locale,
+            [In, MarshalAs(UnmanagedType.I4)]
+            MAP_FLAGS dwMapFlags,
+            [In] string lpSrcStr,
+            [In] int cchSrc,
+            [Out] StringBuilder lpDestStr,
+            [In] int cchDest
+            )
+#if !NETSTANDARD1_3
+            ; 
+#else
+            => Marshal.SystemDefaultCharSize switch
+            {
+                1 => LCMapStringA(Locale, dwMapFlags, lpSrcStr, cchSrc,
+                    lpDestStr, cchDest),
+                2 => LCMapStringW(Locale, dwMapFlags, lpSrcStr, cchSrc,
+                    lpDestStr, cchDest),
+                _ => throw new PlatformNotSupportedException()
+            };
+#endif
+
+        /// <inheritdoc cref="LCMapString"/>
+        [Obsolete("DEPRECATED: LCMapStringEx is preferred")]
+        public static unsafe int LCMapString(
+            int Locale,
+            MAP_FLAGS dwMapFlags,
+            ReadOnlySpan<byte> lpSrcStr,
+            int cchSrc,
+            Span<byte> lpDestStr,
+            int cchDest
+            )
+        {
+            fixed (byte* ptrSrcStr = lpSrcStr)
+            fixed (byte* ptrDestStr = lpDestStr)
+                return LCMapString(
+                    Locale,
+                    dwMapFlags,
+                    Pointer.Create<LPCTSTR>(ptrSrcStr),
+                    cchSrc,
+                    Pointer.Create<LPTSTR>(ptrDestStr),
+                    cchDest
+                    );
+        }
+
+        /// <inheritdoc cref="LCMapString"/>
+        [Obsolete("DEPRECATED: LCMapStringEx is preferred")]
+#if !NETSTANDARD1_3
+        [SuppressMessage("Globalization",
+            "CA2101: Specify marshaling for P/Invoke string arguments", Justification = nameof(CharSet.Auto))]
+        [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true, CharSet = CharSet.Auto)]
+        public static extern
+#else
+        public static
+#endif
+        int LCMapString(
+            [In] int Locale,
+            [In, MarshalAs(UnmanagedType.I4)]
+            MAP_FLAGS dwMapFlags,
+            [In] LPCTSTR lpSrcStr,
+            [In] int cchSrc,
+            LPTSTR lpDestStr,
+            [In] int cchDest
+            )
+#if !NETSTANDARD1_3
+            ; 
+#else
+            => Marshal.SystemDefaultCharSize switch
+            {
+                1 => LCMapStringA(Locale, dwMapFlags,
+                    Pointer.Create<LPCSTR>(lpSrcStr.Pointer), cchSrc,
+                    Pointer.Create<LPSTR>(lpDestStr.Pointer), cchDest),
+                2 => LCMapStringW(Locale, dwMapFlags,
+                    Pointer.Create<LPCWSTR>(lpSrcStr.Pointer), cchSrc,
+                    Pointer.Create<LPWSTR>(lpDestStr.Pointer), cchDest),
+                _ => throw new PlatformNotSupportedException()
+            };
+#endif
         #endregion
     }
 }

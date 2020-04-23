@@ -1,12 +1,12 @@
-#include <AccCtrl.h>
+#include <Windows.h>
 
 int main(int argc, char* argv[])
 {
-    ACE_HEADER instance;
+    DWORD instance;
     const int size = sizeof(instance);
-    const int value = ACE_OBJECT_TYPE_PRESENT;
+    const int value = LINGUISTIC_IGNORECASE;
 
-    const void* ptr = AccFree;
+    const void* ptr = CompareStringW;
 
     return EXIT_SUCCESS;
 }

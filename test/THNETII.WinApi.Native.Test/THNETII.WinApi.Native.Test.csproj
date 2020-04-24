@@ -1,8 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <LangVersion>7.3</LangVersion>
+    <LangVersion>8</LangVersion>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>THNETII.WinApi.Native</RootNamespace>
@@ -18,10 +18,15 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\interopservices\src\THNETII.InteropServices.Memory\THNETII.InteropServices.Memory.csproj" />
-    <ProjectReference Include="..\..\src-shared\THNETII.WinApi.ErrorCodes\THNETII.WinApi.ErrorCodes.csproj" />
-    <ProjectReference Include="..\..\src-shared\THNETII.WinApi.NativeLibraryNames\THNETII.WinApi.NativeLibraryNames.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\..\src-native\THNETII.WinApi.Constants.SCardErr\THNETII.WinApi.Constants.SCardErr.csproj" />
     <ProjectReference Include="..\..\src-native\THNETII.WinApi.Constants.WinError\THNETII.WinApi.Constants.WinError.csproj" />
+    <ProjectReference Include="..\..\src-native\THNETII.WinApi.Constants.WinNT\THNETII.WinApi.Constants.WinNT.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\..\src-native\THNETII.WinApi.Headers.ErrHandlingApi\THNETII.WinApi.Headers.ErrHandlingApi.csproj" />
     <ProjectReference Include="..\..\src-native\THNETII.WinApi.Headers.MinWinBase\THNETII.WinApi.Headers.MinWinBase.csproj" />
     <ProjectReference Include="..\..\src-native\THNETII.WinApi.Headers.MinWinDef\THNETII.WinApi.Headers.MinWinDef.csproj" />
@@ -31,6 +36,11 @@
     <ProjectReference Include="..\..\src-native\THNETII.WinApi.Headers.WinNT\THNETII.WinApi.Headers.WinNT.csproj" />
     <ProjectReference Include="..\..\src-native\THNETII.WinApi.Headers.WinSCard\THNETII.WinApi.Headers.WinSCard.csproj" />
     <ProjectReference Include="..\..\src-native\THNETII.WinApi.Headers.WinUser\THNETII.WinApi.Headers.WinUser.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src-shared\THNETII.WinApi.ErrorCodes\THNETII.WinApi.ErrorCodes.csproj" />
+    <ProjectReference Include="..\..\src-shared\THNETII.WinApi.NativeLibraryNames\THNETII.WinApi.NativeLibraryNames.csproj" />
   </ItemGroup>
 
 </Project>

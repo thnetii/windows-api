@@ -1,8 +1,11 @@
-﻿using System;
+using System;
 using System.Runtime.InteropServices;
+
 using THNETII.WinApi.Native.MinWinDef;
+
 using static THNETII.WinApi.Native.MinWinBase.LMEM_FLAGS;
-#if NETSTANDARD1_3
+
+#if NETSTANDARD1_6
 using EntryPointNotFoundException = System.Exception;
 #endif
 

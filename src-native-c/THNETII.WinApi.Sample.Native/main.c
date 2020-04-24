@@ -1,12 +1,12 @@
-#include <AccCtrl.h>
+#include <Windows.h>
 
 int main(int argc, char* argv[])
 {
-    ACE_HEADER instance;
+    DWORD_PTR  instance;
     const int size = sizeof(instance);
-    const int value = ACE_OBJECT_TYPE_PRESENT;
+    const int value = FORMAT_MESSAGE_ALLOCATE_BUFFER;
 
-    const void* ptr = AccFree;
+    const void* ptr = FormatMessage;
 
     return EXIT_SUCCESS;
 }

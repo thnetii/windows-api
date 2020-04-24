@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Runtime.InteropServices;
 using System.Text;
 using THNETII.WinApi.Native.WinBase;
@@ -25,7 +25,7 @@ namespace THNETII.WinApi.Native.ErrHandlingApi
         /// </returns>
         /// <remarks>
         /// <para>Functions executed by the calling thread set this value by calling the <see cref="SetLastError"/> function. You should call the <see cref="GetLastError"/> function immediately when a function's return value indicates that such a call will return useful data. That is because some functions call <see cref="SetLastError"/> with a zero when they succeed, wiping out the error code set by the most recently failed function.</para>
-        /// <para>To obtain an error string for system error codes, use the <see cref="FormatMessage(FORMAT_MESSAGE_OPTIONS, IntPtr, int, int, StringBuilder, int, IntPtr)"/> function. For a complete list of error codes provided by the operating system, see <a href="https://msdn.microsoft.com/en-us/library/ms681381.aspx">System Error Codes</a>.</para>
+        /// <para>To obtain an error string for system error codes, use the <see cref="FormatMessage"/> function. For a complete list of error codes provided by the operating system, see <a href="https://msdn.microsoft.com/en-us/library/ms681381.aspx">System Error Codes</a>.</para>
         /// <para>The error codes returned by a function are not part of the Windows API specification and can vary by operating system or device driver. For this reason, we cannot provide the complete list of error codes that can be returned by each function. There are also many functions whose documentation does not include even a partial list of error codes that can be returned.</para>
         /// <para>Error codes are 32-bit values (bit 31 is the most significant bit). Bit 29 is reserved for application-defined error codes; no system error code has this bit set. If you are defining an error code for your application, set this bit to one. That indicates that the error code has been defined by an application, and ensures that your error code does not conflict with any error codes defined by the system.</para>
         /// <para>To convert a system error into an <see cref="T:THNETII.WindowsProtocols.WindowsErrorCodes.HRESULT"/> value, use the <see cref="M:THNETII.WindowsProtocols.WindowsErrorCodes.HRESULT.FromWin32(System.Int32)"/> function.</para>
@@ -41,7 +41,7 @@ namespace THNETII.WinApi.Native.ErrHandlingApi
         /// </remarks>
         /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
         /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
-        /// <seealso cref="FormatMessage(FORMAT_MESSAGE_OPTIONS, IntPtr, int, int, StringBuilder, int, IntPtr)"/>
+        /// <seealso cref="FormatMessage"/>
         /// <seealso cref="M:THNETII.WindowsProtocols.WindowsErrorCodes.HRESULT.FromWin32(System.Int32)"/>
         /// <seealso cref="SetLastError"/>
         /// <seealso cref="M:THNETII.WinApi.Native.WinUser.WinUserFunctions.SetLastErrorEx(System.Int32,THNETII.WinApi.Native.WinUser.SLE_TYPE)"/>

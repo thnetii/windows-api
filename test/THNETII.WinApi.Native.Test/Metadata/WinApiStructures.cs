@@ -1,9 +1,9 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+
 using THNETII.WinApi.Native.MinWinBase;
 using THNETII.WinApi.Native.MinWinDef;
-using THNETII.WinApi.Native.WinBase;
 using THNETII.WinApi.Native.WinNT;
 using THNETII.WinApi.Native.WinUser;
 
@@ -18,7 +18,6 @@ namespace THNETII.WinApi.Native.Metadata
             // MinWinDef
             typeof(HLOCAL),
             // WinBase
-            typeof(FORMAT_MESSAGE_OPTIONS),
             // WinNT
             typeof(ACCESS_MASK),
             typeof(ACCESS_REASON),

@@ -1,10 +1,14 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 
 using THNETII.InteropServices.Memory;
+
+#if NETSTANDARD1_3
+using NotifyFilters = System.Int32;
+#endif
 
 namespace THNETII.WinApi.Native.WinNT
 {

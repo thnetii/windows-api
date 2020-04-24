@@ -170,7 +170,7 @@ namespace THNETII.WinApi.Native.AccCtrl
     /// <seealso cref="SetEntriesInAcl"/>
     /// <seealso cref="TRUSTEE_FORM"/>
     /// <seealso cref="TRUSTEE_TYPE"/>
-#if !NETSTANDARD1_6
+#if !(NETSTANDARD1_3 || NETSTANDARD1_6)
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Auto)]
 #else
     [StructLayout(LayoutKind.Sequential)]

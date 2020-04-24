@@ -37,7 +37,7 @@ namespace THNETII.WinApi.Native.AccCtrl
     }
 
     // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\AccCtrl.h, line 518
-#if !NETSTANDARD1_6
+#if !(NETSTANDARD1_3 || NETSTANDARD1_6)
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Auto)]
 #else
     [StructLayout(LayoutKind.Sequential)]

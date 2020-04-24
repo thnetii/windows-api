@@ -40,7 +40,7 @@ namespace THNETII.WinApi.Native.AccCtrl
     /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-us/windows/win32/api/accctrl/ns-accctrl-actrl_property_entryw">ACTRL_PROPERTY_ENTRYW structure</a></para>
     /// </remarks>
     /// <seealso cref="ACTRL_ACCESS_ENTRY_LIST"/>
-#if !NETSTANDARD1_6
+#if !(NETSTANDARD1_3 || NETSTANDARD1_6)
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Auto)]
 #else
     [StructLayout(LayoutKind.Sequential)]

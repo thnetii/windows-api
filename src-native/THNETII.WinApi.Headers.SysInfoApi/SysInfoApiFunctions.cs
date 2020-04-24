@@ -1,4 +1,4 @@
-﻿using Microsoft.Win32.SafeHandles;
+using Microsoft.Win32.SafeHandles;
 using System;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -470,7 +470,7 @@ namespace THNETII.WinApi.Native.SysInfoApi
             [In] int uSize
             );
 
-#if !NETSTANDARD1_6
+#if !NETSTANDARD1_3 && !NETSTANDARD1_6
         /// <inheritdoc cref="GetSystemDirectory(LPTSTR, int)"/>
         public static int GetSystemDirectory(
             StringBuilder lpBuffer
@@ -482,7 +482,7 @@ namespace THNETII.WinApi.Native.SysInfoApi
             [Out] StringBuilder lpBuffer,
             [In] int uSize
             ); 
-#endif // !NETSTANDARD1_6
+#endif // !NETSTANDARD1_3 && !NETSTANDARD1_6
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\sysinfoapi.h, line: 240
         #region GetWindowsDirectoryA function
@@ -565,7 +565,7 @@ namespace THNETII.WinApi.Native.SysInfoApi
             [In] int uSize
             );
 
-#if !NETSTANDARD1_6
+#if !NETSTANDARD1_3 && !NETSTANDARD1_6
         /// <inheritdoc cref="GetWindowsDirectory(LPTSTR, int)"/>
         public static int GetWindowsDirectory(
             StringBuilder lpBuffer
@@ -577,7 +577,7 @@ namespace THNETII.WinApi.Native.SysInfoApi
             [Out] StringBuilder lpBuffer,
             [In] int uSize
             );
-#endif // !NETSTANDARD1_6
+#endif // !NETSTANDARD1_3 && !NETSTANDARD1_6
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\sysinfoapi.h, line: 266
         #region GetSystemWindowsDirectoryA function
@@ -657,7 +657,7 @@ namespace THNETII.WinApi.Native.SysInfoApi
             [In] int uSize
             );
 
-#if !NETSTANDARD1_6
+#if !NETSTANDARD1_3 && !NETSTANDARD1_6
         /// <inheritdoc cref="GetSystemWindowsDirectory(LPTSTR, int)"/>
         public static int GetSystemWindowsDirectory(
             StringBuilder lpBuffer
@@ -669,7 +669,7 @@ namespace THNETII.WinApi.Native.SysInfoApi
             [Out] StringBuilder lpBuffer,
             [In] int uSize
             );
-#endif // !NETSTANDARD1_6
+#endif // !NETSTANDARD1_3 && !NETSTANDARD1_6
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\sysinfoapi.h, line: 314
         #region GetComputerNameExA function
@@ -804,7 +804,7 @@ namespace THNETII.WinApi.Native.SysInfoApi
             ref int nSize
             );
 
-#if !NETSTANDARD1_6
+#if !NETSTANDARD1_3 && !NETSTANDARD1_6
         /// <inheritdoc cref="GetComputerNameEx(COMPUTER_NAME_FORMAT, LPTSTR, ref int)"/>
         public static bool GetComputerNameEx(
             COMPUTER_NAME_FORMAT NameType,
@@ -824,7 +824,7 @@ namespace THNETII.WinApi.Native.SysInfoApi
             [Out] StringBuilder lpBuffer,
             ref int nSize
             );
-#endif // !NETSTANDARD1_6
+#endif // !NETSTANDARD1_3 && !NETSTANDARD1_6
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\sysinfoapi.h, line: 346
         #region SetComputerNameExW function
@@ -892,7 +892,7 @@ namespace THNETII.WinApi.Native.SysInfoApi
             LPCTSTR lpBuffer
             );
 
-#if !NETSTANDARD1_6
+#if !NETSTANDARD1_3 && !NETSTANDARD1_6
         /// <inheritdoc cref="SetComputerNameEx(COMPUTER_NAME_FORMAT, LPCTSTR)"/>
         [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, SetLastError = true, CharSet = CharSet.Auto)]
         [return: MarshalAs(UnmanagedType.Bool)]
@@ -900,7 +900,7 @@ namespace THNETII.WinApi.Native.SysInfoApi
             [In] COMPUTER_NAME_FORMAT NameType,
             [In] string lpBuffer
             );
-#endif // !NETSTANDARD1_6
+#endif // !NETSTANDARD1_3 && !NETSTANDARD1_6
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\sysinfoapi.h, line: 359
         #region SetSystemTime function
@@ -1584,7 +1584,7 @@ namespace THNETII.WinApi.Native.SysInfoApi
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\sysinfoapi.h, line: 563
         #region SetComputerNameEx2 function
-#if !NETSTANDARD1_6
+#if !NETSTANDARD1_3 && !NETSTANDARD1_6
         /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
         /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
         [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi,
@@ -1595,7 +1595,7 @@ namespace THNETII.WinApi.Native.SysInfoApi
             [In, MarshalAs(UnmanagedType.I4)] SCEX2_FLAGS Flags,
             [In] string lpBuffer
             ); 
-#endif // !NETSTANDARD1_6
+#endif // !NETSTANDARD1_3 && !NETSTANDARD1_6
 
         /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
         /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
@@ -1864,14 +1864,14 @@ namespace THNETII.WinApi.Native.SysInfoApi
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\sysinfoapi.h, line: 664
         #region SetComputerName function
-#if !NETSTANDARD1_6
+#if !NETSTANDARD1_3 && !NETSTANDARD1_6
         /// <inheritdoc cref="SetComputerName(LPCTSTR)"/>
         [DllImport(Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto, SetLastError = true)]
         [return: MarshalAs(UnmanagedType.Bool)]
         public static extern bool SetComputerName(
             [In] string lpComputerName
             ); 
-#endif // !NETSTANDARD1_6
+#endif // !NETSTANDARD1_3 && !NETSTANDARD1_6
 
         /// <summary>
         /// <para>Sets a new NetBIOS name for the local computer. The name is stored in the registry and the name change takes effect the next time the user restarts the computer.</para>

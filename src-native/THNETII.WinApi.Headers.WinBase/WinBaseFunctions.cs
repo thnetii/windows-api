@@ -4,14 +4,13 @@ using System.Diagnostics.CodeAnalysis;
 using System.Runtime.InteropServices;
 using System.Text;
 
-using THNETII.InteropServices.Bitwise;
 using THNETII.InteropServices.Memory;
 
 using THNETII.WinApi.Native.MinWinBase;
 using THNETII.WinApi.Native.MinWinDef;
 using THNETII.WinApi.Native.WinError;
 
-#if NETSTANDARD1_6
+#if NETSTANDARD1_3 || NETSTANDARD1_6
 using AccessViolationException = System.Exception;
 using EntryPointNotFoundException = System.Exception;
 #endif

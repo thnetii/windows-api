@@ -17,6 +17,7 @@ using EntryPointNotFoundException = System.Exception;
 
 namespace THNETII.WinApi.Native.WinBase
 {
+    using static FORMAT_MESSAGE_FLAGS;
     using static LMEM_FLAGS;
     using static NativeLibraryNames;
     using static WinErrorConstants;
@@ -449,14 +450,15 @@ namespace THNETII.WinApi.Native.WinBase
             ReadOnlySpan<IntPtr> Arguments = default
             )
         {
+            dwFlags &= (FORMAT_MESSAGE_FLAGS)~(WinBaseConstants.FORMAT_MESSAGE_MAX_WIDTH_MASK);
             dwFlags |=
-                FORMAT_MESSAGE_FLAGS.FORMAT_MESSAGE_FROM_STRING |
-                FORMAT_MESSAGE_FLAGS.FORMAT_MESSAGE_ARGUMENT_ARRAY |
+                FORMAT_MESSAGE_FROM_STRING |
+                FORMAT_MESSAGE_ARGUMENT_ARRAY |
                 (FORMAT_MESSAGE_FLAGS)(dwWidth & WinBaseConstants.FORMAT_MESSAGE_MAX_WIDTH_MASK);
             dwFlags &= ~(
-                FORMAT_MESSAGE_FLAGS.FORMAT_MESSAGE_ALLOCATE_BUFFER |
-                FORMAT_MESSAGE_FLAGS.FORMAT_MESSAGE_FROM_SYSTEM |
-                FORMAT_MESSAGE_FLAGS.FORMAT_MESSAGE_FROM_HMODULE
+                FORMAT_MESSAGE_ALLOCATE_BUFFER |
+                FORMAT_MESSAGE_FROM_SYSTEM |
+                FORMAT_MESSAGE_FROM_HMODULE
                 );
             fixed (IntPtr* pArguments = Arguments)
                 return FormatMessageA(
@@ -494,10 +496,16 @@ namespace THNETII.WinApi.Native.WinBase
             ReadOnlySpan<IntPtr> Arguments = default
             )
         {
+            dwFlags &= (FORMAT_MESSAGE_FLAGS)~(WinBaseConstants.FORMAT_MESSAGE_MAX_WIDTH_MASK);
             dwFlags |=
-                FORMAT_MESSAGE_FLAGS.FORMAT_MESSAGE_ALLOCATE_BUFFER |
-                FORMAT_MESSAGE_FLAGS.FORMAT_MESSAGE_ARGUMENT_ARRAY |
+                FORMAT_MESSAGE_ALLOCATE_BUFFER |
+                FORMAT_MESSAGE_ARGUMENT_ARRAY |
+                FORMAT_MESSAGE_FROM_STRING |
                 (FORMAT_MESSAGE_FLAGS)(dwWidth & WinBaseConstants.FORMAT_MESSAGE_MAX_WIDTH_MASK);
+            dwFlags &= ~(
+                FORMAT_MESSAGE_FROM_SYSTEM |
+                FORMAT_MESSAGE_FROM_HMODULE
+                );
 
             HLOCAL lpBufferPointer;
             int result;
@@ -551,10 +559,16 @@ namespace THNETII.WinApi.Native.WinBase
             ReadOnlySpan<IntPtr> Arguments = default
             )
         {
+            dwFlags &= (FORMAT_MESSAGE_FLAGS)~(WinBaseConstants.FORMAT_MESSAGE_MAX_WIDTH_MASK);
             dwFlags |=
-                FORMAT_MESSAGE_FLAGS.FORMAT_MESSAGE_ARGUMENT_ARRAY |
+                FORMAT_MESSAGE_ARGUMENT_ARRAY |
+                FORMAT_MESSAGE_FROM_STRING |
                 (FORMAT_MESSAGE_FLAGS)(dwWidth & WinBaseConstants.FORMAT_MESSAGE_MAX_WIDTH_MASK);
-            dwFlags &= ~(FORMAT_MESSAGE_FLAGS.FORMAT_MESSAGE_ALLOCATE_BUFFER);
+            dwFlags &= ~(
+                FORMAT_MESSAGE_ALLOCATE_BUFFER |
+                FORMAT_MESSAGE_FROM_SYSTEM |
+                FORMAT_MESSAGE_FROM_HMODULE
+                );
             fixed (byte* lpBufferPtr = lpBuffer)
             fixed (IntPtr* pArguments = Arguments)
                 return FormatMessageA(
@@ -592,10 +606,16 @@ namespace THNETII.WinApi.Native.WinBase
             ReadOnlySpan<IntPtr> Arguments = default
             )
         {
+            dwFlags &= (FORMAT_MESSAGE_FLAGS)~(WinBaseConstants.FORMAT_MESSAGE_MAX_WIDTH_MASK);
             dwFlags |=
-                FORMAT_MESSAGE_FLAGS.FORMAT_MESSAGE_ARGUMENT_ARRAY |
-                FORMAT_MESSAGE_FLAGS.FORMAT_MESSAGE_ALLOCATE_BUFFER |
+                FORMAT_MESSAGE_ARGUMENT_ARRAY |
+                FORMAT_MESSAGE_ALLOCATE_BUFFER |
+                FORMAT_MESSAGE_FROM_STRING |
                 (FORMAT_MESSAGE_FLAGS)(dwWidth & WinBaseConstants.FORMAT_MESSAGE_MAX_WIDTH_MASK);
+            dwFlags &= ~(
+                FORMAT_MESSAGE_FROM_SYSTEM |
+                FORMAT_MESSAGE_FROM_HMODULE
+                );
             fixed (IntPtr* pArguments = Arguments)
                 return FormatMessageA(
                     dwFlags,
@@ -632,10 +652,11 @@ namespace THNETII.WinApi.Native.WinBase
             ReadOnlySpan<IntPtr> Arguments = default
             )
         {
+            dwFlags &= (FORMAT_MESSAGE_FLAGS)~(WinBaseConstants.FORMAT_MESSAGE_MAX_WIDTH_MASK);
             dwFlags |=
-                FORMAT_MESSAGE_FLAGS.FORMAT_MESSAGE_ARGUMENT_ARRAY |
+                FORMAT_MESSAGE_ARGUMENT_ARRAY |
                 (FORMAT_MESSAGE_FLAGS)(dwWidth & WinBaseConstants.FORMAT_MESSAGE_MAX_WIDTH_MASK);
-            dwFlags &= ~(FORMAT_MESSAGE_FLAGS.FORMAT_MESSAGE_ALLOCATE_BUFFER);
+            dwFlags &= ~(FORMAT_MESSAGE_ALLOCATE_BUFFER);
             fixed (IntPtr* pArguments = Arguments)
                 return FormatMessageA(
                     dwFlags,
@@ -672,9 +693,10 @@ namespace THNETII.WinApi.Native.WinBase
             ReadOnlySpan<IntPtr> Arguments = default
             )
         {
+            dwFlags &= (FORMAT_MESSAGE_FLAGS)~(WinBaseConstants.FORMAT_MESSAGE_MAX_WIDTH_MASK);
             dwFlags |=
-                FORMAT_MESSAGE_FLAGS.FORMAT_MESSAGE_ALLOCATE_BUFFER |
-                FORMAT_MESSAGE_FLAGS.FORMAT_MESSAGE_ARGUMENT_ARRAY |
+                FORMAT_MESSAGE_ALLOCATE_BUFFER |
+                FORMAT_MESSAGE_ARGUMENT_ARRAY |
                 (FORMAT_MESSAGE_FLAGS)(dwWidth & WinBaseConstants.FORMAT_MESSAGE_MAX_WIDTH_MASK);
 
             HLOCAL lpBufferPointer;
@@ -729,10 +751,11 @@ namespace THNETII.WinApi.Native.WinBase
             ReadOnlySpan<IntPtr> Arguments = default
             )
         {
+            dwFlags &= (FORMAT_MESSAGE_FLAGS)~(WinBaseConstants.FORMAT_MESSAGE_MAX_WIDTH_MASK);
             dwFlags |=
-                FORMAT_MESSAGE_FLAGS.FORMAT_MESSAGE_ARGUMENT_ARRAY |
+                FORMAT_MESSAGE_ARGUMENT_ARRAY |
                 (FORMAT_MESSAGE_FLAGS)(dwWidth & WinBaseConstants.FORMAT_MESSAGE_MAX_WIDTH_MASK);
-            dwFlags &= ~(FORMAT_MESSAGE_FLAGS.FORMAT_MESSAGE_ALLOCATE_BUFFER);
+            dwFlags &= ~(FORMAT_MESSAGE_ALLOCATE_BUFFER);
             fixed (byte* lpBufferPtr = lpBuffer)
             fixed (IntPtr* pArguments = Arguments)
                 return FormatMessageA(
@@ -770,9 +793,10 @@ namespace THNETII.WinApi.Native.WinBase
             ReadOnlySpan<IntPtr> Arguments = default
             )
         {
+            dwFlags &= (FORMAT_MESSAGE_FLAGS)~(WinBaseConstants.FORMAT_MESSAGE_MAX_WIDTH_MASK);
             dwFlags |=
-                FORMAT_MESSAGE_FLAGS.FORMAT_MESSAGE_ARGUMENT_ARRAY |
-                FORMAT_MESSAGE_FLAGS.FORMAT_MESSAGE_ALLOCATE_BUFFER |
+                FORMAT_MESSAGE_ARGUMENT_ARRAY |
+                FORMAT_MESSAGE_ALLOCATE_BUFFER |
                 (FORMAT_MESSAGE_FLAGS)(dwWidth & WinBaseConstants.FORMAT_MESSAGE_MAX_WIDTH_MASK);
             fixed (IntPtr* pArguments = Arguments)
                 return FormatMessageA(
@@ -800,10 +824,16 @@ namespace THNETII.WinApi.Native.WinBase
             ReadOnlySpan<IntPtr> Arguments = default
             )
         {
+            dwFlags &= (FORMAT_MESSAGE_FLAGS)~(WinBaseConstants.FORMAT_MESSAGE_MAX_WIDTH_MASK);
             dwFlags |=
-                FORMAT_MESSAGE_FLAGS.FORMAT_MESSAGE_ARGUMENT_ARRAY |
+                FORMAT_MESSAGE_ARGUMENT_ARRAY |
+                FORMAT_MESSAGE_FROM_STRING |
                 (FORMAT_MESSAGE_FLAGS)(dwWidth & WinBaseConstants.FORMAT_MESSAGE_MAX_WIDTH_MASK);
-            dwFlags &= ~(FORMAT_MESSAGE_FLAGS.FORMAT_MESSAGE_ALLOCATE_BUFFER);
+            dwFlags &= ~(
+                FORMAT_MESSAGE_ALLOCATE_BUFFER |
+                FORMAT_MESSAGE_FROM_HMODULE |
+                FORMAT_MESSAGE_FROM_SYSTEM
+                );
             fixed (IntPtr* pArguments = Arguments)
                 return FormatMessageW(
                     dwFlags,
@@ -840,11 +870,16 @@ namespace THNETII.WinApi.Native.WinBase
             ReadOnlySpan<IntPtr> Arguments = default
             )
         {
+            dwFlags &= (FORMAT_MESSAGE_FLAGS)~(WinBaseConstants.FORMAT_MESSAGE_MAX_WIDTH_MASK);
             dwFlags |=
-                FORMAT_MESSAGE_FLAGS.FORMAT_MESSAGE_ALLOCATE_BUFFER |
-                FORMAT_MESSAGE_FLAGS.FORMAT_MESSAGE_ARGUMENT_ARRAY |
+                FORMAT_MESSAGE_ALLOCATE_BUFFER |
+                FORMAT_MESSAGE_ARGUMENT_ARRAY |
+                FORMAT_MESSAGE_FROM_STRING |
                 (FORMAT_MESSAGE_FLAGS)(dwWidth & WinBaseConstants.FORMAT_MESSAGE_MAX_WIDTH_MASK);
-
+            dwFlags &= ~(
+                FORMAT_MESSAGE_FROM_HMODULE |
+                FORMAT_MESSAGE_FROM_SYSTEM
+                );
             HLOCAL lpBufferPointer;
             int result;
             fixed (IntPtr* pArguments = Arguments)
@@ -897,10 +932,16 @@ namespace THNETII.WinApi.Native.WinBase
             ReadOnlySpan<IntPtr> Arguments = default
             )
         {
+            dwFlags &= (FORMAT_MESSAGE_FLAGS)~(WinBaseConstants.FORMAT_MESSAGE_MAX_WIDTH_MASK);
             dwFlags |=
-                FORMAT_MESSAGE_FLAGS.FORMAT_MESSAGE_ARGUMENT_ARRAY |
+                FORMAT_MESSAGE_ARGUMENT_ARRAY |
+                FORMAT_MESSAGE_FROM_STRING |
                 (FORMAT_MESSAGE_FLAGS)(dwWidth & WinBaseConstants.FORMAT_MESSAGE_MAX_WIDTH_MASK);
-            dwFlags &= ~(FORMAT_MESSAGE_FLAGS.FORMAT_MESSAGE_ALLOCATE_BUFFER);
+            dwFlags &= ~(
+                FORMAT_MESSAGE_ALLOCATE_BUFFER |
+                FORMAT_MESSAGE_FROM_HMODULE |
+                FORMAT_MESSAGE_FROM_SYSTEM
+                );
             fixed (char* lpBufferPtr = lpBuffer)
             fixed (IntPtr* pArguments = Arguments)
                 return FormatMessageW(
@@ -938,10 +979,16 @@ namespace THNETII.WinApi.Native.WinBase
             ReadOnlySpan<IntPtr> Arguments = default
             )
         {
+            dwFlags &= (FORMAT_MESSAGE_FLAGS)~(WinBaseConstants.FORMAT_MESSAGE_MAX_WIDTH_MASK);
             dwFlags |=
-                FORMAT_MESSAGE_FLAGS.FORMAT_MESSAGE_ARGUMENT_ARRAY |
-                FORMAT_MESSAGE_FLAGS.FORMAT_MESSAGE_ALLOCATE_BUFFER |
+                FORMAT_MESSAGE_ARGUMENT_ARRAY |
+                FORMAT_MESSAGE_ALLOCATE_BUFFER |
+                FORMAT_MESSAGE_FROM_STRING |
                 (FORMAT_MESSAGE_FLAGS)(dwWidth & WinBaseConstants.FORMAT_MESSAGE_MAX_WIDTH_MASK);
+            dwFlags &= ~(
+                FORMAT_MESSAGE_FROM_HMODULE |
+                FORMAT_MESSAGE_FROM_SYSTEM
+                );
             fixed (IntPtr* pArguments = Arguments)
                 return FormatMessageW(
                     dwFlags,
@@ -978,10 +1025,11 @@ namespace THNETII.WinApi.Native.WinBase
             ReadOnlySpan<IntPtr> Arguments = default
             )
         {
+            dwFlags &= (FORMAT_MESSAGE_FLAGS)~(WinBaseConstants.FORMAT_MESSAGE_MAX_WIDTH_MASK);
             dwFlags |=
-                FORMAT_MESSAGE_FLAGS.FORMAT_MESSAGE_ARGUMENT_ARRAY |
+                FORMAT_MESSAGE_ARGUMENT_ARRAY |
                 (FORMAT_MESSAGE_FLAGS)(dwWidth & WinBaseConstants.FORMAT_MESSAGE_MAX_WIDTH_MASK);
-            dwFlags &= ~(FORMAT_MESSAGE_FLAGS.FORMAT_MESSAGE_ALLOCATE_BUFFER);
+            dwFlags &= ~(FORMAT_MESSAGE_ALLOCATE_BUFFER);
             fixed (IntPtr* pArguments = Arguments)
                 return FormatMessageW(
                     dwFlags,
@@ -1018,9 +1066,10 @@ namespace THNETII.WinApi.Native.WinBase
             ReadOnlySpan<IntPtr> Arguments = default
             )
         {
+            dwFlags &= (FORMAT_MESSAGE_FLAGS)~(WinBaseConstants.FORMAT_MESSAGE_MAX_WIDTH_MASK);
             dwFlags |=
-                FORMAT_MESSAGE_FLAGS.FORMAT_MESSAGE_ALLOCATE_BUFFER |
-                FORMAT_MESSAGE_FLAGS.FORMAT_MESSAGE_ARGUMENT_ARRAY |
+                FORMAT_MESSAGE_ALLOCATE_BUFFER |
+                FORMAT_MESSAGE_ARGUMENT_ARRAY |
                 (FORMAT_MESSAGE_FLAGS)(dwWidth & WinBaseConstants.FORMAT_MESSAGE_MAX_WIDTH_MASK);
 
             HLOCAL lpBufferPointer;
@@ -1075,10 +1124,11 @@ namespace THNETII.WinApi.Native.WinBase
             ReadOnlySpan<IntPtr> Arguments = default
             )
         {
+            dwFlags &= (FORMAT_MESSAGE_FLAGS)~(WinBaseConstants.FORMAT_MESSAGE_MAX_WIDTH_MASK);
             dwFlags |=
-                FORMAT_MESSAGE_FLAGS.FORMAT_MESSAGE_ARGUMENT_ARRAY |
+                FORMAT_MESSAGE_ARGUMENT_ARRAY |
                 (FORMAT_MESSAGE_FLAGS)(dwWidth & WinBaseConstants.FORMAT_MESSAGE_MAX_WIDTH_MASK);
-            dwFlags &= ~(FORMAT_MESSAGE_FLAGS.FORMAT_MESSAGE_ALLOCATE_BUFFER);
+            dwFlags &= ~(FORMAT_MESSAGE_ALLOCATE_BUFFER);
             fixed (char* lpBufferPtr = lpBuffer)
             fixed (IntPtr* pArguments = Arguments)
                 return FormatMessageW(
@@ -1116,9 +1166,10 @@ namespace THNETII.WinApi.Native.WinBase
             ReadOnlySpan<IntPtr> Arguments = default
             )
         {
+            dwFlags &= (FORMAT_MESSAGE_FLAGS)~(WinBaseConstants.FORMAT_MESSAGE_MAX_WIDTH_MASK);
             dwFlags |=
-                FORMAT_MESSAGE_FLAGS.FORMAT_MESSAGE_ARGUMENT_ARRAY |
-                FORMAT_MESSAGE_FLAGS.FORMAT_MESSAGE_ALLOCATE_BUFFER |
+                FORMAT_MESSAGE_ARGUMENT_ARRAY |
+                FORMAT_MESSAGE_ALLOCATE_BUFFER |
                 (FORMAT_MESSAGE_FLAGS)(dwWidth & WinBaseConstants.FORMAT_MESSAGE_MAX_WIDTH_MASK);
             fixed (IntPtr* pArguments = Arguments)
                 return FormatMessageW(
@@ -1145,10 +1196,16 @@ namespace THNETII.WinApi.Native.WinBase
             ReadOnlySpan<IntPtr> Arguments = default
             )
         {
+            dwFlags &= (FORMAT_MESSAGE_FLAGS)~(WinBaseConstants.FORMAT_MESSAGE_MAX_WIDTH_MASK);
             dwFlags |=
-                FORMAT_MESSAGE_FLAGS.FORMAT_MESSAGE_ARGUMENT_ARRAY |
+                FORMAT_MESSAGE_ARGUMENT_ARRAY |
+                FORMAT_MESSAGE_FROM_STRING |
                 (FORMAT_MESSAGE_FLAGS)(dwWidth & WinBaseConstants.FORMAT_MESSAGE_MAX_WIDTH_MASK);
-            dwFlags &= ~(FORMAT_MESSAGE_FLAGS.FORMAT_MESSAGE_ALLOCATE_BUFFER);
+            dwFlags &= ~(
+                FORMAT_MESSAGE_ALLOCATE_BUFFER |
+                FORMAT_MESSAGE_FROM_HMODULE |
+                FORMAT_MESSAGE_FROM_SYSTEM
+                );
             fixed (IntPtr* pArguments = Arguments)
                 return FormatMessage(
                     dwFlags,
@@ -1202,10 +1259,16 @@ namespace THNETII.WinApi.Native.WinBase
             ReadOnlySpan<IntPtr> Arguments = default
             )
         {
+            dwFlags &= (FORMAT_MESSAGE_FLAGS)~(WinBaseConstants.FORMAT_MESSAGE_MAX_WIDTH_MASK);
             dwFlags |=
-                FORMAT_MESSAGE_FLAGS.FORMAT_MESSAGE_ALLOCATE_BUFFER |
-                FORMAT_MESSAGE_FLAGS.FORMAT_MESSAGE_ARGUMENT_ARRAY |
+                FORMAT_MESSAGE_ALLOCATE_BUFFER |
+                FORMAT_MESSAGE_ARGUMENT_ARRAY |
+                FORMAT_MESSAGE_FROM_STRING |
                 (FORMAT_MESSAGE_FLAGS)(dwWidth & WinBaseConstants.FORMAT_MESSAGE_MAX_WIDTH_MASK);
+            dwFlags &= ~(
+                FORMAT_MESSAGE_FROM_HMODULE |
+                FORMAT_MESSAGE_FROM_SYSTEM
+                );
 
             HLOCAL lpBufferPointer;
             int result;
@@ -1276,10 +1339,16 @@ namespace THNETII.WinApi.Native.WinBase
             ReadOnlySpan<IntPtr> Arguments = default
             )
         {
+            dwFlags &= (FORMAT_MESSAGE_FLAGS)~(WinBaseConstants.FORMAT_MESSAGE_MAX_WIDTH_MASK);
             dwFlags |=
-                FORMAT_MESSAGE_FLAGS.FORMAT_MESSAGE_ARGUMENT_ARRAY |
+                FORMAT_MESSAGE_ARGUMENT_ARRAY |
+                FORMAT_MESSAGE_FROM_STRING |
                 (FORMAT_MESSAGE_FLAGS)(dwWidth & WinBaseConstants.FORMAT_MESSAGE_MAX_WIDTH_MASK);
-            dwFlags &= ~(FORMAT_MESSAGE_FLAGS.FORMAT_MESSAGE_ALLOCATE_BUFFER);
+            dwFlags &= ~(
+                FORMAT_MESSAGE_ALLOCATE_BUFFER |
+                FORMAT_MESSAGE_FROM_HMODULE |
+                FORMAT_MESSAGE_FROM_SYSTEM
+                );
             fixed (byte* lpBufferPtr = lpBuffer)
             fixed (IntPtr* pArguments = Arguments)
                 return FormatMessage(
@@ -1334,10 +1403,16 @@ namespace THNETII.WinApi.Native.WinBase
             ReadOnlySpan<IntPtr> Arguments = default
             )
         {
+            dwFlags &= (FORMAT_MESSAGE_FLAGS)~(WinBaseConstants.FORMAT_MESSAGE_MAX_WIDTH_MASK);
             dwFlags |=
-                FORMAT_MESSAGE_FLAGS.FORMAT_MESSAGE_ARGUMENT_ARRAY |
-                FORMAT_MESSAGE_FLAGS.FORMAT_MESSAGE_ALLOCATE_BUFFER |
+                FORMAT_MESSAGE_ARGUMENT_ARRAY |
+                FORMAT_MESSAGE_ALLOCATE_BUFFER |
+                FORMAT_MESSAGE_FROM_STRING |
                 (FORMAT_MESSAGE_FLAGS)(dwWidth & WinBaseConstants.FORMAT_MESSAGE_MAX_WIDTH_MASK);
+            dwFlags &= ~(
+                FORMAT_MESSAGE_FROM_HMODULE |
+                FORMAT_MESSAGE_FROM_SYSTEM
+                );
             fixed (IntPtr* pArguments = Arguments)
                 return FormatMessage(
                     dwFlags,
@@ -1391,10 +1466,11 @@ namespace THNETII.WinApi.Native.WinBase
             ReadOnlySpan<IntPtr> Arguments = default
             )
         {
+            dwFlags &= (FORMAT_MESSAGE_FLAGS)~(WinBaseConstants.FORMAT_MESSAGE_MAX_WIDTH_MASK);
             dwFlags |=
-                FORMAT_MESSAGE_FLAGS.FORMAT_MESSAGE_ARGUMENT_ARRAY |
+                FORMAT_MESSAGE_ARGUMENT_ARRAY |
                 (FORMAT_MESSAGE_FLAGS)(dwWidth & WinBaseConstants.FORMAT_MESSAGE_MAX_WIDTH_MASK);
-            dwFlags &= ~(FORMAT_MESSAGE_FLAGS.FORMAT_MESSAGE_ALLOCATE_BUFFER);
+            dwFlags &= ~(FORMAT_MESSAGE_ALLOCATE_BUFFER);
             fixed (IntPtr* pArguments = Arguments)
                 return FormatMessage(
                     dwFlags,
@@ -1448,9 +1524,10 @@ namespace THNETII.WinApi.Native.WinBase
             ReadOnlySpan<IntPtr> Arguments = default
             )
         {
+            dwFlags &= (FORMAT_MESSAGE_FLAGS)~(WinBaseConstants.FORMAT_MESSAGE_MAX_WIDTH_MASK);
             dwFlags |=
-                FORMAT_MESSAGE_FLAGS.FORMAT_MESSAGE_ALLOCATE_BUFFER |
-                FORMAT_MESSAGE_FLAGS.FORMAT_MESSAGE_ARGUMENT_ARRAY |
+                FORMAT_MESSAGE_ALLOCATE_BUFFER |
+                FORMAT_MESSAGE_ARGUMENT_ARRAY |
                 (FORMAT_MESSAGE_FLAGS)(dwWidth & WinBaseConstants.FORMAT_MESSAGE_MAX_WIDTH_MASK);
 
             HLOCAL lpBufferPointer;
@@ -1522,10 +1599,11 @@ namespace THNETII.WinApi.Native.WinBase
             ReadOnlySpan<IntPtr> Arguments = default
             )
         {
+            dwFlags &= (FORMAT_MESSAGE_FLAGS)~(WinBaseConstants.FORMAT_MESSAGE_MAX_WIDTH_MASK);
             dwFlags |=
-                FORMAT_MESSAGE_FLAGS.FORMAT_MESSAGE_ARGUMENT_ARRAY |
+                FORMAT_MESSAGE_ARGUMENT_ARRAY |
                 (FORMAT_MESSAGE_FLAGS)(dwWidth & WinBaseConstants.FORMAT_MESSAGE_MAX_WIDTH_MASK);
-            dwFlags &= ~(FORMAT_MESSAGE_FLAGS.FORMAT_MESSAGE_ALLOCATE_BUFFER);
+            dwFlags &= ~(FORMAT_MESSAGE_ALLOCATE_BUFFER);
             fixed (byte* lpBufferPtr = lpBuffer)
             fixed (IntPtr* pArguments = Arguments)
                 return FormatMessage(
@@ -1580,9 +1658,10 @@ namespace THNETII.WinApi.Native.WinBase
             ReadOnlySpan<IntPtr> Arguments = default
             )
         {
+            dwFlags &= (FORMAT_MESSAGE_FLAGS)~(WinBaseConstants.FORMAT_MESSAGE_MAX_WIDTH_MASK);
             dwFlags |=
-                FORMAT_MESSAGE_FLAGS.FORMAT_MESSAGE_ARGUMENT_ARRAY |
-                FORMAT_MESSAGE_FLAGS.FORMAT_MESSAGE_ALLOCATE_BUFFER |
+                FORMAT_MESSAGE_ARGUMENT_ARRAY |
+                FORMAT_MESSAGE_ALLOCATE_BUFFER |
                 (FORMAT_MESSAGE_FLAGS)(dwWidth & WinBaseConstants.FORMAT_MESSAGE_MAX_WIDTH_MASK);
             fixed (IntPtr* pArguments = Arguments)
                 return FormatMessage(

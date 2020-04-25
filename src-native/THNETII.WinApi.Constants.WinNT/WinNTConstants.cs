@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Security.Principal;
 
 namespace THNETII.WinApi.Native.WinNT
@@ -284,7 +284,7 @@ namespace THNETII.WinApi.Native.WinNT
         public const int LANG_BRETON = 0x7e;
         /// <summary>Use with <strong>SUBLANG_BOSNIAN_*</strong> Sublanguage IDs</summary>
         public const int LANG_BOSNIAN = 0x1a;
-        /// <summary>Use with the <see cref="ConvertDefaultLocale"/> function</summary>
+        /// <summary>Use with the <see cref="M:THNETII.WinApi.Native.WinNls.WinNlsFunctions.ConvertDefaultLocale(System.Int32)"/> function</summary>
         public const int LANG_BOSNIAN_NEUTRAL = 0x781a;
         public const int LANG_BULGARIAN = 0x02;
         public const int LANG_CATALAN = 0x03;
@@ -292,9 +292,9 @@ namespace THNETII.WinApi.Native.WinNT
         public const int LANG_CHEROKEE = 0x5c;
         /// <summary>Use with <strong>SUBLANG_CHINESE_*</strong> Sublanguage IDs</summary>
         public const int LANG_CHINESE = 0x04;
-        /// <summary>Use with the <see cref="ConvertDefaultLocale"/> function</summary>
+        /// <summary>Use with the <see cref="M:THNETII.WinApi.Native.WinNls.WinNlsFunctions.ConvertDefaultLocale(System.Int32)"/> function</summary>
         public const int LANG_CHINESE_SIMPLIFIED = 0x04;
-        /// <summary>Use with the <see cref="ConvertDefaultLocale"/> function</summary>
+        /// <summary>Use with the <see cref="M:THNETII.WinApi.Native.WinNls.WinNlsFunctions.ConvertDefaultLocale(System.Int32)"/> function</summary>
         public const int LANG_CHINESE_TRADITIONAL = 0x7c04;
         public const int LANG_CORSICAN = 0x83;
         public const int LANG_CROATIAN = 0x1a;
@@ -380,7 +380,7 @@ namespace THNETII.WinApi.Native.WinNT
         public const int LANG_SCOTTISH_GAELIC = 0x91;
         /// <summary>Use with the <strong>SUBLANG_SERBIAN_*</strong> Sublanguage IDs</summary>
         public const int LANG_SERBIAN = 0x1a;
-        /// <summary>Use with the <see cref="ConvertDefaultLocale"/> function</summary>
+        /// <summary>Use with the <see cref="M:THNETII.WinApi.Native.WinNls.WinNlsFunctions.ConvertDefaultLocale(System.Int32)"/> function</summary>
         public const int LANG_SERBIAN_NEUTRAL = 0x7c1a;
         public const int LANG_SINDHI = 0x59;
         public const int LANG_SINHALESE = 0x5b;

@@ -6,7 +6,7 @@ int main(int argc, char* argv[])
     const int size = sizeof(instance);
     const int value = FORMAT_MESSAGE_ALLOCATE_BUFFER;
 
-    const void* ptr = ConvertDefaultLocale;
+    const void* ptr = HeapFree;
 
     return EXIT_SUCCESS;
 }

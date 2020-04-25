@@ -1,4 +1,4 @@
-﻿namespace THNETII.WinApi.Native.WinBase
+namespace THNETII.WinApi.Native.WinBase
 {
     using static WinNT.WinNTConstants;
 
@@ -19,7 +19,7 @@
 
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\WinBase.h, line 2380
         /// <summary>
-        /// <see cref="FORMAT_MESSAGE_ALLOCATE_BUFFER"/> requires use of <see cref="HeapFree"/>
+        /// <see cref="FORMAT_MESSAGE_ALLOCATE_BUFFER"/> requires use of <see cref="M:THNETII.WinApi.Native.HeapApi.HeapApiFunctions.HeapFree(THNETII.WinApi.Native.HeapApi.HEAP_HANDLE,THNETII.WinApi.Native.HeapApi.HEAP_FLAGS,THNETII.WinApi.Native.HeapApi.HEAP_MEMORY)"/>
         /// </summary>
         public const int FORMAT_MESSAGE_ALLOCATE_BUFFER = 0x00000100;
 

@@ -1,8 +1,11 @@
-using Microsoft.Win32.SafeHandles;
 using System;
 using System.Runtime.InteropServices;
 using System.Text;
+
+using Microsoft.Win32.SafeHandles;
+
 using THNETII.InteropServices.Memory;
+using THNETII.WinApi.Native.ErrHandlingApi;
 using THNETII.WinApi.Native.MinWinBase;
 using THNETII.WinApi.Native.WinError;
 using THNETII.WinApi.Native.WinNT;
@@ -14,6 +17,7 @@ using EntryPointNotFoundException = System.Exception;
 namespace THNETII.WinApi.Native.SysInfoApi
 {
     using static COMPUTER_NAME_FORMAT;
+    using static ErrHandlingApiFunctions;
     using static LOGICAL_PROCESSOR_RELATIONSHIP;
     using static NativeLibraryNames;
     using static WinErrorConstants;

@@ -1,6 +1,7 @@
 using System;
 using System.Runtime.InteropServices;
 using System.Text;
+using THNETII.InteropServices.Memory;
 using THNETII.WinApi.Native.WinBase;
 
 #if NETSTANDARD1_6
@@ -165,26 +166,96 @@ namespace THNETII.WinApi.Native.ErrHandlingApi
         /// <item><term><strong>Minimum supported server:</strong></term><description>Windows Server 2003 [desktop apps | UWP apps]</description></item>
         /// </list>
         /// </para>
-        /// <para>Microsoft Docs page: <a href="https://msdn.microsoft.com/en-us/library/ms679336.aspx">FatalAppExit function</a></para>
+        /// <para>Microsoft Docs page: <a href="https://docs.microsoft.com/en-gb/windows/win32/api/errhandlingapi/nf-errhandlingapi-fatalappexitw">FatalAppExitW function</a></para>
         /// </remarks>
         /// <exception cref="DllNotFoundException">The native library containg the function could not be found.</exception>
         /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
+        /// <seealso href="https://docs.microsoft.com/windows/desktop/Debug/error-handling-functions">Error Handling Functions</seealso>
         /// <seealso cref="FatalExit"/>
-        public static void FatalAppExit(
-            int uAction,
-            string lpMessageText
-            ) => FatalAppExitW(uAction, lpMessageText);
+#if !(NETSTANDARD1_3 || NETSTANDARD1_6)
+        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
+        public static extern
+#else
+        public static
+#endif // !(NETSTANDARD1_3 || NETSTANDARD1_6)
+        void FatalAppExit(
+            [In] int uAction,
+            [In] string lpMessageText
+            )
+#if !(NETSTANDARD1_3 || NETSTANDARD1_6)
+            ;
+#else
+
+        {
+            switch (Marshal.SystemDefaultCharSize)
+            {
+                case 1:
+                    FatalAppExitA(uAction, lpMessageText);
+                    break;
+                case 2:
+                    FatalAppExitW(uAction, lpMessageText);
+                    break;
+                default: throw new PlatformNotSupportedException();
+            }
+        }
+#endif // !(NETSTANDARD1_3 || NETSTANDARD1_6)
+
         /// <inheritdoc cref="FatalAppExit"/>
         [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi, EntryPoint = nameof(FatalAppExitA))]
         public static extern void FatalAppExitA(
             [In] int uAction,
             [In, MarshalAs(UnmanagedType.LPStr)] string lpMessageText
             );
+
         /// <inheritdoc cref="FatalAppExit"/>
         [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi, EntryPoint = nameof(FatalAppExitW))]
         public static extern void FatalAppExitW(
             [In] int uAction,
             [In, MarshalAs(UnmanagedType.LPWStr)] string lpMessageText
+            );
+
+        /// <inheritdoc cref="FatalAppExit"/>
+#if !(NETSTANDARD1_3 || NETSTANDARD1_6)
+        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
+        public static extern
+#else
+        public static
+#endif // !(NETSTANDARD1_3 || NETSTANDARD1_6)
+        void FatalAppExit(
+            [In] int uAction,
+            [In] LPCTSTR lpMessageText
+            )
+#if !(NETSTANDARD1_3 || NETSTANDARD1_6)
+            ;
+#else
+
+        {
+            switch (Marshal.SystemDefaultCharSize)
+            {
+                case 1:
+                    FatalAppExitA(uAction, Pointer.Create<LPCSTR>(lpMessageText.Pointer));
+                    break;
+                case 2:
+                    FatalAppExitW(uAction, Pointer.Create<LPCWSTR>(lpMessageText.Pointer));
+                    break;
+                default: throw new PlatformNotSupportedException();
+            }
+        }
+#endif // !(NETSTANDARD1_3 || NETSTANDARD1_6)
+
+        /// <inheritdoc cref="FatalAppExit"/>
+        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi)]
+        public static extern void FatalAppExitA(
+            [In] int uAction,
+            [In] LPCSTR lpMessageText
+            );
+
+
+        /// <inheritdoc cref="FatalAppExit"/>
+        [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Unicode)]
+        public static extern void FatalAppExitW(
+            [In] int uAction,
+            [In] LPCWSTR lpMessageText
             );
         #endregion
         // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\errhandlingapi.h, line 250

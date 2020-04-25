@@ -172,17 +172,17 @@ namespace THNETII.WinApi.Native.ErrHandlingApi
         /// <exception cref="EntryPointNotFoundException">Unable to find the entry point for the function in the native library.</exception>
         /// <seealso href="https://docs.microsoft.com/windows/desktop/Debug/error-handling-functions">Error Handling Functions</seealso>
         /// <seealso cref="FatalExit"/>
-#if !NETSTANDARD1_6
+#if !(NETSTANDARD1_3 || NETSTANDARD1_6)
         [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
         public static extern
 #else
         public static
-#endif // !NETSTANDARD1_6
+#endif // !(NETSTANDARD1_3 || NETSTANDARD1_6)
         void FatalAppExit(
             [In] int uAction,
             [In] string lpMessageText
             )
-#if !NETSTANDARD1_6
+#if !(NETSTANDARD1_3 || NETSTANDARD1_6)
             ;
 #else
 
@@ -198,7 +198,7 @@ namespace THNETII.WinApi.Native.ErrHandlingApi
                 default: throw new PlatformNotSupportedException();
             }
         }
-#endif // !NETSTANDARD1_6
+#endif // !(NETSTANDARD1_3 || NETSTANDARD1_6)
 
         /// <inheritdoc cref="FatalAppExit"/>
         [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi, EntryPoint = nameof(FatalAppExitA))]
@@ -215,17 +215,17 @@ namespace THNETII.WinApi.Native.ErrHandlingApi
             );
 
         /// <inheritdoc cref="FatalAppExit"/>
-#if !NETSTANDARD1_6
+#if !(NETSTANDARD1_3 || NETSTANDARD1_6)
         [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Auto)]
         public static extern
 #else
         public static
-#endif // !NETSTANDARD1_6
+#endif // !(NETSTANDARD1_3 || NETSTANDARD1_6)
         void FatalAppExit(
             [In] int uAction,
             [In] LPCTSTR lpMessageText
             )
-#if !NETSTANDARD1_6
+#if !(NETSTANDARD1_3 || NETSTANDARD1_6)
             ;
 #else
 
@@ -241,7 +241,7 @@ namespace THNETII.WinApi.Native.ErrHandlingApi
                 default: throw new PlatformNotSupportedException();
             }
         }
-#endif // !NETSTANDARD1_6
+#endif // !(NETSTANDARD1_3 || NETSTANDARD1_6)
 
         /// <inheritdoc cref="FatalAppExit"/>
         [DllImport(NativeLibraryNames.Kernel32, CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Ansi)]

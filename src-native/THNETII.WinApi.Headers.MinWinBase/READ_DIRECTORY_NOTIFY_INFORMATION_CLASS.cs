@@ -1,4 +1,4 @@
-﻿namespace THNETII.WinApi.Native.MinWinBase
+namespace THNETII.WinApi.Native.MinWinBase
 {
     /// <summary>
     /// Indicates the possible types of information that an application that calls the <see cref="ReadDirectoryChangesExW"/> function can request.

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Runtime.InteropServices;
 using THNETII.WinApi.Native.WinBase;
 using THNETII.WinApi.Native.WinNT;

@@ -1,4 +1,4 @@
-﻿using System.Runtime.InteropServices;
+using System.Runtime.InteropServices;
 using System.Security.AccessControl;
 using static THNETII.WinApi.Native.WinNT.ACL_INFORMATION_CLASS;
 

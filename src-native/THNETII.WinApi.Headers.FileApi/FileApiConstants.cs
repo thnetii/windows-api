@@ -1,4 +1,4 @@
-﻿namespace THNETII.WinApi.Native.FileApi
+namespace THNETII.WinApi.Native.FileApi
 {
     public static class FileApiConstants
     {

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Runtime.InteropServices;
 using THNETII.InteropServices.Memory;
 using THNETII.WinApi.Native.WinSmcrd;

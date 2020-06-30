@@ -1,4 +1,4 @@
-﻿namespace THNETII.WinApi.Native.SysInfoApi.Test
+namespace THNETII.WinApi.Native.SysInfoApi.Test
 {
     using static SysInfoApiFunctions;
 

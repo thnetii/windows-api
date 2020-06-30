@@ -1,4 +1,4 @@
-﻿using THNETII.WinApi.Native.MinWinBase;
+using THNETII.WinApi.Native.MinWinBase;
 
 namespace THNETII.WinApi.Native.WinNT
 {

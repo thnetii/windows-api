@@ -1,4 +1,4 @@
-﻿using System.ComponentModel;
+using System.ComponentModel;
 using System.Runtime.InteropServices;
 
 using static THNETII.WinApi.Native.WinNT.WinNTConstants;

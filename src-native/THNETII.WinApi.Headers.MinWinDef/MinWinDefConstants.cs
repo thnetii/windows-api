@@ -1,4 +1,4 @@
-﻿namespace THNETII.WinApi.Native.MinWinDef
+namespace THNETII.WinApi.Native.MinWinDef
 {
     public static class MinWinDefConstants
     {

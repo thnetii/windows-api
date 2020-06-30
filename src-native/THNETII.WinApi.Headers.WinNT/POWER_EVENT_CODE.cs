@@ -1,4 +1,4 @@
-﻿namespace THNETII.WinApi.Native.WinNT
+namespace THNETII.WinApi.Native.WinNT
 {
     /// <remarks>
     /// for battery alarm EventCodes, the ID of the battery alarm &lt;&lt; 16 is ORed

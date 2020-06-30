@@ -1,4 +1,4 @@
-﻿namespace THNETII.WinApi.Native.MinWinBase
+namespace THNETII.WinApi.Native.MinWinBase
 {
     public enum DEBUG_EVENT_CODE : int
     {

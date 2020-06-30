@@ -1,4 +1,4 @@
-﻿namespace THNETII.WinApi
+namespace THNETII.WinApi
 {
     public static class NativeLibraryNames
     {

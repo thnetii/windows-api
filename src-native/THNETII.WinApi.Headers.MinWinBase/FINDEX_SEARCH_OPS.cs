@@ -1,4 +1,4 @@
-﻿namespace THNETII.WinApi.Native.MinWinBase
+namespace THNETII.WinApi.Native.MinWinBase
 {
     /// <summary>
     /// Defines values that are used with the <see cref="FindFirstFileEx"/> function to specify the type of filtering to perform.

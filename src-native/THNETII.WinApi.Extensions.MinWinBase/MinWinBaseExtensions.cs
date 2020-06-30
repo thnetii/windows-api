@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Security.AccessControl;
 
 using THNETII.WinApi.Native.MinWinDef;

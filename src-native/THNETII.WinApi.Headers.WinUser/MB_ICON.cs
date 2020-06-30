@@ -1,4 +1,4 @@
-﻿namespace THNETII.WinApi.Native.WinUser
+namespace THNETII.WinApi.Native.WinUser
 {
     public enum MB_ICON : int
     {

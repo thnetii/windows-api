@@ -1,4 +1,4 @@
-﻿using THNETII.WinApi.Native.WinError;
+using THNETII.WinApi.Native.WinError;
 
 namespace THNETII.WinApi.Native.SCardErr
 {

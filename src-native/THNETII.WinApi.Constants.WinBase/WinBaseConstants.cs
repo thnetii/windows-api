@@ -1,4 +1,4 @@
-﻿namespace THNETII.WinApi.Native.WinBase
+namespace THNETII.WinApi.Native.WinBase
 {
     using static WinNT.WinNTConstants;
 

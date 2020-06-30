@@ -1,4 +1,4 @@
-﻿namespace THNETII.WinApi.Native.WinSmcrd
+namespace THNETII.WinApi.Native.WinSmcrd
 {
     public enum SCARD_READER_STATE
     {

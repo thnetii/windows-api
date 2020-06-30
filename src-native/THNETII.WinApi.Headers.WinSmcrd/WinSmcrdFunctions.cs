@@ -1,4 +1,4 @@
-﻿using THNETII.WinApi.Native.WinIOCtl;
+using THNETII.WinApi.Native.WinIOCtl;
 
 namespace THNETII.WinApi.Native.WinSmcrd
 {

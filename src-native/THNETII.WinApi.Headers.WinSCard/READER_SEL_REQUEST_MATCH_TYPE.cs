@@ -1,4 +1,4 @@
-﻿namespace THNETII.WinApi.Native.WinSCard
+namespace THNETII.WinApi.Native.WinSCard
 {
     // C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\um\winscard.h, line 1084
     public enum READER_SEL_REQUEST_MATCH_TYPE

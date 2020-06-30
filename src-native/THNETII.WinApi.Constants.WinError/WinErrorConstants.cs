@@ -1,4 +1,4 @@
-﻿namespace THNETII.WinApi.Native.WinError
+namespace THNETII.WinApi.Native.WinError
 {
     public static class WinErrorConstants
     {

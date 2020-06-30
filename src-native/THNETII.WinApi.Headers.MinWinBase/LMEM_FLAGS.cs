@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using THNETII.InteropServices.Bitwise;
 
 namespace THNETII.WinApi.Native.MinWinBase

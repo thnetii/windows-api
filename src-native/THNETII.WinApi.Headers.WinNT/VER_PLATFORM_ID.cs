@@ -1,4 +1,4 @@
-﻿namespace THNETII.WinApi.Native.WinNT
+namespace THNETII.WinApi.Native.WinNT
 {
     public enum VER_PLATFORM_ID
     {

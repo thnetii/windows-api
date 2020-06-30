@@ -1,4 +1,4 @@
-﻿namespace THNETII.WinApi.Native.MinWinBase
+namespace THNETII.WinApi.Native.MinWinBase
 {
     /// <summary>
     /// Identifies the type of file information that <see cref="GetFileInformationByHandleEx"/> should retrieve or <see cref="SetFileInformationByHandle"/> should set.

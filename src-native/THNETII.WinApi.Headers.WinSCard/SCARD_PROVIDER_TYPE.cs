@@ -1,4 +1,4 @@
-﻿namespace THNETII.WinApi.Native.WinSCard
+namespace THNETII.WinApi.Native.WinSCard
 {
     public enum SCARD_PROVIDER_TYPE
     {

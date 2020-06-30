@@ -1,4 +1,4 @@
-﻿namespace THNETII.WinApi.Native.MinWinBase
+namespace THNETII.WinApi.Native.MinWinBase
 {
     using static LMEM_FLAGS;
 

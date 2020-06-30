@@ -1,4 +1,4 @@
-﻿namespace THNETII.WinApi.Native.WinSmcrd
+namespace THNETII.WinApi.Native.WinSmcrd
 {
     /// <summary>
     /// Type of reader

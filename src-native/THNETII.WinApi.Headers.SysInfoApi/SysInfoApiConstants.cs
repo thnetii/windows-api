@@ -1,4 +1,4 @@
-﻿namespace THNETII.WinApi.Native.SysInfoApi
+namespace THNETII.WinApi.Native.SysInfoApi
 {
     public static class SysInfoApiConstants
     {

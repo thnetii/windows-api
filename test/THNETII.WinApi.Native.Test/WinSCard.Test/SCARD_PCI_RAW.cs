@@ -1,4 +1,4 @@
-﻿using THNETII.WinApi.Native.WinSmcrd;
+using THNETII.WinApi.Native.WinSmcrd;
 
 namespace THNETII.WinApi.Native.WinSCard.Test
 {

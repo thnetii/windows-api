@@ -1,4 +1,4 @@
-﻿namespace THNETII.WinApi.Native.NTStatus
+namespace THNETII.WinApi.Native.NTStatus
 {
     public static class NTStatusConstants
     {

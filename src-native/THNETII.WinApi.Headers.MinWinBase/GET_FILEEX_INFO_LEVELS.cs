@@ -1,4 +1,4 @@
-﻿namespace THNETII.WinApi.Native.MinWinBase
+namespace THNETII.WinApi.Native.MinWinBase
 {
     /// <summary>
     /// Defines values that are used with the <see cref="GetFileAttributesEx"/> and <see cref="GetFileAttributesTransacted"/> functions to specify the information level of the returned data.

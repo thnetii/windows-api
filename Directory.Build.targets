@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <!-- 
+    Usage of the TargetFrameworkIdentifier and _TargetFrameworkVersionWithoutV 
+    require the .NET Core SDK props files to have been included.
+    Therefore, the following Nullable Reference Type settings are moved to
+    the .targets file instead.
+  -->
+  <PropertyGroup Label="Nullable Reference Types">
+    <LangVersion>8</LangVersion>
+    <Nullable Condition="
+              ('$(TargetFrameworkIdentifier)' == '.NETCoreApp'  AND '$(_TargetFrameworkVersionWithoutV)' &gt;= '3.0') OR
+              ('$(TargetFrameworkIdentifier)' == '.NETStandard' AND '$(_TargetFrameworkVersionWithoutV)' &gt;= '2.1')
+              ">enable</Nullable>
+    <Nullable Condition="!(
+              ('$(TargetFrameworkIdentifier)' == '.NETCoreApp'  AND '$(_TargetFrameworkVersionWithoutV)' &gt;= '3.0') OR
+              ('$(TargetFrameworkIdentifier)' == '.NETStandard' AND '$(_TargetFrameworkVersionWithoutV)' &gt;= '2.1')
+              )">annotations</Nullable>
+  </PropertyGroup>
+  <ItemGroup Label="Nullable helper library for Pre-.NET Standard 2.1"
+             Condition="!(
+              ('$(TargetFrameworkIdentifier)' == '.NETCoreApp'  AND '$(_TargetFrameworkVersionWithoutV)' &gt;= '3.0') OR
+              ('$(TargetFrameworkIdentifier)' == '.NETStandard' AND '$(_TargetFrameworkVersionWithoutV)' &gt;= '2.1')
+              )">
+    <PackageReference Include="Nullable" Version="1.2.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+</Project>

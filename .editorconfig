@@ -1,0 +1,21 @@
+root = true
+
+# Defaults
+[*]
+charset = utf-8
+indent_size = 4
+indent_style = space
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+dotnet_sort_system_directives_first = true
+dotnet_separate_import_directive_groups = true
+
+[*.{xml,json,js,ts,jsx,tsx,vue,css,styl,*proj,targets,html,props,yml,nim,nimble,nim.cfg,wsdl,wadl,cmake}]
+indent_size = 2
+
+[CMakeLists.txt]
+indent_size = 2
+
+[*.{md,markdown}]
+trim_trailing_whitespace = false

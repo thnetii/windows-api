@@ -1,7 +1,6 @@
 # escape=`
 
-# Use the latest Windows Server Core image with .NET Framework 4.8.
-FROM mcr.microsoft.com/dotnet/framework/sdk:4.8-windowsservercore-1803
+FROM mcr.microsoft.com/windows/servercore:1803-amd64
 
 # Restore the default Windows shell for correct batch processing.
 SHELL ["cmd", "/S", "/C"]

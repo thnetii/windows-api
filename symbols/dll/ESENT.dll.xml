@@ -1,0 +1,2789 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="ESENT.dll">
+  <OriginalPath>C:\Windows\system32\ESENT.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="DebugExtensionInitialize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DebugExtensionNotify">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DebugExtensionUninitialize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetAddColumn">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetAddColumnA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetAddColumnW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetAttachDatabase">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetAttachDatabase2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetAttachDatabase2A">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetAttachDatabase2W">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetAttachDatabase3">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetAttachDatabase3A">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetAttachDatabase3W">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetAttachDatabaseA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetAttachDatabaseW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetAttachDatabaseWithStreaming">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetAttachDatabaseWithStreamingA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetAttachDatabaseWithStreamingW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetBackup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetBackupA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetBackupInstance">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetBackupInstanceA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetBackupInstanceW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetBackupW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetBeginDatabaseIncrementalReseed">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetBeginDatabaseIncrementalReseedA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetBeginDatabaseIncrementalReseedW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetBeginExternalBackup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetBeginExternalBackupInstance">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetBeginSession">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetBeginSessionA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetBeginSessionW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetBeginSurrogateBackup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetBeginTransaction">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetBeginTransaction2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetBeginTransaction3">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetCloseDatabase">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetCloseFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetCloseFileInstance">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetCloseTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetCommitTransaction">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetCommitTransaction2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetCompact">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetCompactA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetCompactW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetComputeStats">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetConfigureProcessForCrashDump">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetConsumeLogData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetConvertDDL">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetConvertDDLA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetConvertDDLW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetCreateDatabase">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetCreateDatabase2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetCreateDatabase2A">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetCreateDatabase2W">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetCreateDatabase3">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetCreateDatabase3A">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetCreateDatabase3W">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetCreateDatabaseA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetCreateDatabaseW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetCreateDatabaseWithStreaming">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetCreateDatabaseWithStreamingA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetCreateDatabaseWithStreamingW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetCreateEncryptionKey">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetCreateIndex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetCreateIndex2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetCreateIndex2A">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetCreateIndex2W">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetCreateIndex3A">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetCreateIndex3W">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetCreateIndex4A">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetCreateIndex4W">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetCreateIndexA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetCreateIndexW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetCreateInstance">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetCreateInstance2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetCreateInstance2A">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetCreateInstance2W">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetCreateInstanceA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetCreateInstanceW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetCreateTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetCreateTableA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetCreateTableColumnIndex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetCreateTableColumnIndex2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetCreateTableColumnIndex2A">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetCreateTableColumnIndex2W">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetCreateTableColumnIndex3A">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetCreateTableColumnIndex3W">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetCreateTableColumnIndex4A">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetCreateTableColumnIndex4W">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetCreateTableColumnIndex5A">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetCreateTableColumnIndex5W">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetCreateTableColumnIndexA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetCreateTableColumnIndexW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetCreateTableW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetDBUtilities">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetDBUtilitiesA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetDBUtilitiesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetDatabaseScan">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetDefragment">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetDefragment2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetDefragment2A">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetDefragment2W">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetDefragment3">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetDefragment3A">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetDefragment3W">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetDefragmentA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetDefragmentW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetDelete">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetDeleteColumn">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetDeleteColumn2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetDeleteColumn2A">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetDeleteColumn2W">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetDeleteColumnA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetDeleteColumnW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetDeleteIndex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetDeleteIndexA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetDeleteIndexW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetDeleteTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetDeleteTableA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetDeleteTableW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetDetachDatabase">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetDetachDatabase2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetDetachDatabase2A">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetDetachDatabase2W">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetDetachDatabaseA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetDetachDatabaseW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetDupCursor">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetDupSession">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetEnableMultiInstance">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetEnableMultiInstanceA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetEnableMultiInstanceW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetEndDatabaseIncrementalReseed">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetEndDatabaseIncrementalReseedA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetEndDatabaseIncrementalReseedW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetEndExternalBackup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetEndExternalBackupInstance">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetEndExternalBackupInstance2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetEndSession">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetEndSurrogateBackup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetEnumerateColumns">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetEscrowUpdate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetExternalRestore">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetExternalRestore2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetExternalRestore2A">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetExternalRestore2W">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetExternalRestoreA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetExternalRestoreW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetFreeBuffer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetAttachInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetAttachInfoA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetAttachInfoInstance">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetAttachInfoInstanceA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetAttachInfoInstanceW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetAttachInfoW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetBookmark">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetColumnInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetColumnInfoA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetColumnInfoW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetCounter">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetCurrentIndex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetCurrentIndexA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetCurrentIndexW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetCursorInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetDatabaseFileInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetDatabaseFileInfoA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetDatabaseFileInfoW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetDatabaseInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetDatabaseInfoA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetDatabaseInfoW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetDatabasePages">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetErrorInfoW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetIndexInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetIndexInfoA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetIndexInfoW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetInstanceInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetInstanceInfoA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetInstanceInfoW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetInstanceMiscInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetLS">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetLock">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetLogFileInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetLogFileInfoA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetLogFileInfoW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetLogInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetLogInfoA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetLogInfoInstance">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetLogInfoInstance2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetLogInfoInstance2A">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetLogInfoInstance2W">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetLogInfoInstanceA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetLogInfoInstanceW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetLogInfoW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetMaxDatabaseSize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetObjectInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetObjectInfoA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetObjectInfoW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetPageInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetPageInfo2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetRecordPosition">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetRecordSize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetRecordSize2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetResourceParam">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetSecondaryIndexBookmark">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetSessionInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetSessionParameter">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetSystemParameter">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetSystemParameterA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetSystemParameterW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetTableColumnInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetTableColumnInfoA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetTableColumnInfoW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetTableIndexInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetTableIndexInfoA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetTableIndexInfoW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetTableInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetTableInfoA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetTableInfoW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetThreadStats">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetTruncateLogInfoInstance">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetTruncateLogInfoInstanceA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetTruncateLogInfoInstanceW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGetVersion">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGotoBookmark">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGotoPosition">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGotoSecondaryIndexBookmark">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetGrowDatabase">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetIdle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetIndexRecordCount">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetIndexRecordCount2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetInit">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetInit2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetInit3">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetInit3A">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetInit3W">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetInit4">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetInit4A">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetInit4W">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetIntersectIndexes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetMakeKey">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetMove">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetOSSnapshotAbort">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetOSSnapshotEnd">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetOSSnapshotFreeze">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetOSSnapshotFreezeA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetOSSnapshotFreezeW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetOSSnapshotGetFreezeInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetOSSnapshotGetFreezeInfoA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetOSSnapshotGetFreezeInfoW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetOSSnapshotPrepare">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetOSSnapshotPrepareInstance">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetOSSnapshotThaw">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetOSSnapshotTruncateLog">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetOSSnapshotTruncateLogInstance">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetOnlinePatchDatabasePage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetOpenDatabase">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetOpenDatabaseA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetOpenDatabaseW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetOpenFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetOpenFileA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetOpenFileInstance">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetOpenFileInstanceA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetOpenFileInstanceW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetOpenFileSectionInstance">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetOpenFileSectionInstanceA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetOpenFileSectionInstanceW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetOpenFileW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetOpenTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetOpenTableA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetOpenTableW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetOpenTempTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetOpenTempTable2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetOpenTempTable3">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetOpenTemporaryTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetOpenTemporaryTable2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetPatchDatabasePages">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetPatchDatabasePagesA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetPatchDatabasePagesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetPrepareToCommitTransaction">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetPrepareUpdate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetPrereadColumnsByReference">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetPrereadIndexRange">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetPrereadIndexRanges">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetPrereadKeys">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetPrereadTablesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetReadFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetReadFileInstance">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetRegisterCallback">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetRemoveLogfileA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetRemoveLogfileW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetRenameColumn">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetRenameColumnA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetRenameColumnW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetRenameTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetRenameTableA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetRenameTableW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetResetCounter">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetResetSessionContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetResetTableSequential">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetResizeDatabase">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetRestore">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetRestore2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetRestore2A">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetRestore2W">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetRestoreA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetRestoreInstance">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetRestoreInstanceA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetRestoreInstanceW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetRestoreW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetRetrieveColumn">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetRetrieveColumnByReference">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetRetrieveColumnFromRecordStream">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetRetrieveColumns">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetRetrieveKey">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetRetrieveTaggedColumnList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetRollback">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetSeek">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetSetColumn">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetSetColumnDefaultValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetSetColumnDefaultValueA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetSetColumnDefaultValueW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetSetColumns">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetSetCurrentIndex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetSetCurrentIndex2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetSetCurrentIndex2A">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetSetCurrentIndex2W">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetSetCurrentIndex3">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetSetCurrentIndex3A">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetSetCurrentIndex3W">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetSetCurrentIndex4">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetSetCurrentIndex4A">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetSetCurrentIndex4W">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetSetCurrentIndexA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetSetCurrentIndexW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetSetCursorFilter">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetSetDatabaseSize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetSetDatabaseSizeA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetSetDatabaseSizeW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetSetIndexRange">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetSetLS">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetSetMaxDatabaseSize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetSetResourceParam">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetSetSessionContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetSetSessionParameter">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetSetSystemParameter">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetSetSystemParameterA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetSetSystemParameterW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetSetTableInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetSetTableInfoA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetSetTableInfoW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetSetTableSequential">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetSnapshotStart">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetSnapshotStartA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetSnapshotStartW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetSnapshotStop">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetStopBackup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetStopBackupInstance">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetStopService">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetStopServiceInstance">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetStopServiceInstance2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetStreamRecords">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetTerm">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetTerm2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetTestHook">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetTracing">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetTruncateLog">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetTruncateLogInstance">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetUnregisterCallback">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetUpdate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetUpdate2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetUpgradeDatabase">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetUpgradeDatabaseA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="JetUpgradeDatabaseW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ese">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="rgEDBGGlobals">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\esent.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

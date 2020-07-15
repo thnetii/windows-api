@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="OLEACC.dll">
+  <OriginalPath>C:\Windows\system32\OLEACC.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="AccGetRunningUtilityState" />
+    <Symbol Name="AccNotifyTouchInteraction">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OleAcc.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AccSetRunningUtilityState">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OleAcc.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AccessibleChildren">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OleAcc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AccessibleObjectFromEvent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OleAcc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AccessibleObjectFromPoint">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OleAcc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AccessibleObjectFromWindow">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OleAcc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AccessibleObjectFromWindowTimeout">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OleAcc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateStdAccessibleObject">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OleAcc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateStdAccessibleProxyA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OleAcc.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateStdAccessibleProxyW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OleAcc.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DllCanUnloadNow" />
+    <Symbol Name="DllGetClassObject" />
+    <Symbol Name="DllRegisterServer" />
+    <Symbol Name="DllUnregisterServer" />
+    <Symbol Name="GetOleaccVersionInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OleAcc.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetProcessHandleFromHwnd">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OleAcc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetRoleTextA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OleAcc.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetRoleTextW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OleAcc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetStateTextA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OleAcc.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetStateTextW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OleAcc.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IID_IAccessible" />
+    <Symbol Name="IID_IAccessibleHandler" />
+    <Symbol Name="LIBID_Accessibility" />
+    <Symbol Name="LresultFromObject">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OleAcc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ObjectFromLresult">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OleAcc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropMgrClient_LookupProp">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OleAcc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WindowFromAccessibleObject">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OleAcc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

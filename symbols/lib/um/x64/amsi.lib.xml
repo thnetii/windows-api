@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\amsi.lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\amsi.lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="Amsi.dll" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="AmsiCloseSession">
+      <Definitions>
+        <DynamicLibrary Name="Amsi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="AmsiInitialize">
+      <Definitions>
+        <DynamicLibrary Name="Amsi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="AmsiOpenSession">
+      <Definitions>
+        <DynamicLibrary Name="Amsi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="AmsiScanBuffer">
+      <Definitions>
+        <DynamicLibrary Name="Amsi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="AmsiScanString">
+      <Definitions>
+        <DynamicLibrary Name="Amsi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="AmsiUacInitialize">
+      <Definitions>
+        <DynamicLibrary Name="Amsi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="AmsiUacScan">
+      <Definitions>
+        <DynamicLibrary Name="Amsi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="AmsiUacUninitialize">
+      <Definitions>
+        <DynamicLibrary Name="Amsi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="AmsiUninitialize">
+      <Definitions>
+        <DynamicLibrary Name="Amsi.dll" />
+      </Definitions>
+    </Symbol>
+  </ExportedSymbols>
+</StaticLibrary>

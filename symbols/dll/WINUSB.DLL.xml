@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="WINUSB.DLL">
+  <OriginalPath>C:\Windows\system32\WINUSB.DLL</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="WinUsb_AbortPipe">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winusb.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinUsb_AbortPipeAsync">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winusb.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinUsb_ControlTransfer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winusb.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinUsb_FlushPipe">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winusb.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinUsb_Free">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winusb.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinUsb_GetAdjustedFrameNumber">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winusb.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinUsb_GetAssociatedInterface">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winusb.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinUsb_GetCurrentAlternateSetting">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winusb.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinUsb_GetCurrentFrameNumber">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winusb.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinUsb_GetCurrentFrameNumberAndQpc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winusb.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinUsb_GetDescriptor">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winusb.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinUsb_GetOverlappedResult">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winusb.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinUsb_GetPipePolicy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winusb.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinUsb_GetPowerPolicy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winusb.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinUsb_Initialize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winusb.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinUsb_ParseConfigurationDescriptor">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winusb.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinUsb_ParseDescriptors">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winusb.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinUsb_QueryDeviceInformation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winusb.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinUsb_QueryInterfaceSettings">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winusb.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinUsb_QueryPipe">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winusb.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinUsb_QueryPipeEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winusb.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinUsb_ReadIsochPipe">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winusb.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinUsb_ReadIsochPipeAsap">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winusb.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinUsb_ReadPipe">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winusb.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinUsb_RegisterIsochBuffer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winusb.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinUsb_ResetPipe">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winusb.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinUsb_ResetPipeAsync">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winusb.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinUsb_SetCurrentAlternateSetting">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winusb.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinUsb_SetCurrentAlternateSettingAsync">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winusb.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinUsb_SetPipePolicy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winusb.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinUsb_SetPowerPolicy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winusb.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinUsb_StartTrackingForTimeSync">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winusb.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinUsb_StopTrackingForTimeSync">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winusb.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinUsb_UnregisterIsochBuffer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winusb.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinUsb_WriteIsochPipe">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winusb.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinUsb_WriteIsochPipeAsap">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winusb.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinUsb_WritePipe">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winusb.lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

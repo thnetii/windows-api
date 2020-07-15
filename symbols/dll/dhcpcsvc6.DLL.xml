@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="dhcpcsvc6.DLL">
+  <OriginalPath>C:\Windows\system32\dhcpcsvc6.DLL</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="Dhcpv6AcquireParameters">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc6.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dhcpv6CApiCleanup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc6.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dhcpv6CApiInitialize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc6.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dhcpv6CancelOperation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc6.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dhcpv6EnableDhcp">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc6.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dhcpv6EnableTracing">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc6.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dhcpv6FreeLeaseInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc6.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dhcpv6FreeLeaseInfoArray">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc6.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dhcpv6GetTraceArray">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc6.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dhcpv6GetUserClasses">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc6.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dhcpv6IsEnabled">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc6.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dhcpv6QueryLeaseInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc6.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dhcpv6QueryLeaseInfoArray">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc6.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dhcpv6ReleaseParameters">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc6.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dhcpv6ReleasePrefix">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc6.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dhcpv6ReleasePrefixEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc6.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dhcpv6RenewPrefix">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc6.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dhcpv6RenewPrefixEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc6.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dhcpv6RequestParams">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc6.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dhcpv6RequestPrefix">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc6.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dhcpv6RequestPrefixEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc6.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dhcpv6SetUserClass">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc6.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

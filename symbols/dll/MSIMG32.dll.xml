@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="MSIMG32.dll">
+  <OriginalPath>C:\Windows\system32\MSIMG32.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="AlphaBlend">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\MSImg32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DllInitialize" />
+    <Symbol Name="GradientFill">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\MSImg32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TransparentBlt">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\MSImg32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="vSetDdrawflag" />
+  </ExportedSymbols>
+</DynamicLibrary>

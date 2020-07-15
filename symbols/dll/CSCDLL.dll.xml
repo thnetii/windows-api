@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="CSCDLL.dll">
+  <OriginalPath>C:\Windows\system32\CSCDLL.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="CSCDeleteW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cscdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CSCDisconnectPath">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cscdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CSCDoEnableDisable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cscdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CSCEnumForStatsExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cscdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CSCEnumForStatsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cscdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CSCFindClose">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cscdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CSCFindFirstFileForSidW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cscdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CSCFindFirstFileW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cscdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CSCFindNextFileW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cscdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CSCIsCSCEnabled">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cscdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CSCIsPathOffline">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cscdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CSCIsServerOfflineW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cscdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CSCPinFileW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cscdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CSCQueryFileStatusW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cscdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CSCSetMaxSpace">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cscdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CSCTransitionPathOnline">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cscdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CSCTransitionServerOnlineW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cscdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CSCUnpinFileW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cscdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

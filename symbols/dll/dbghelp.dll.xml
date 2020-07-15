@@ -1,0 +1,1409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="dbghelp.dll">
+  <OriginalPath>C:\Windows\system32\dbghelp.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="DbgHelpCreateUserDump">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DbgHelpCreateUserDumpW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumDirTree">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumDirTreeW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumerateLoadedModules">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumerateLoadedModules64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumerateLoadedModulesEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumerateLoadedModulesExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumerateLoadedModulesW64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ExtensionApiVersion">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FindDebugInfoFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FindDebugInfoFileEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FindDebugInfoFileExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FindExecutableImage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FindExecutableImageEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FindExecutableImageExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FindFileInPath">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FindFileInSearchPath">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetSymLoadError">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetTimestampForLoadedLibrary">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImageDirectoryEntryToData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImageDirectoryEntryToDataEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImageNtHeader">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImageRvaToSection">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImageRvaToVa">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImagehlpApiVersion">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImagehlpApiVersionEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MakeSureDirectoryPathExists">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MiniDumpReadDumpStream">
+      <ForwardSymbol>dbgcore.MiniDumpReadDumpStream</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MiniDumpWriteDump">
+      <ForwardSymbol>dbgcore.MiniDumpWriteDump</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RangeMapAddPeImageSections">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RangeMapCreate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RangeMapFree">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RangeMapRead">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RangeMapRemove">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RangeMapWrite">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RemoveInvalidModuleList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ReportSymbolLoadSummary">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SearchTreeForFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SearchTreeForFileW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetCheckUserInterruptShared">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetSymLoadError">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StackWalk">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StackWalk64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StackWalkEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymAddSourceStream">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymAddSourceStreamA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymAddSourceStreamW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymAddSymbol">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymAddSymbolW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymAddrIncludeInlineTrace">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymCleanup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymCompareInlineTrace">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymDeleteSymbol">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymDeleteSymbolW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymEnumLines">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymEnumLinesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymEnumProcesses">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymEnumSourceFileTokens">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymEnumSourceFiles">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymEnumSourceFilesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymEnumSourceLines">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymEnumSourceLinesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymEnumSym">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymEnumSymbols">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymEnumSymbolsEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymEnumSymbolsExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymEnumSymbolsForAddr">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymEnumSymbolsForAddrW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymEnumSymbolsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymEnumTypes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymEnumTypesByName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymEnumTypesByNameW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymEnumTypesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymEnumerateModules">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymEnumerateModules64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymEnumerateModulesW64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymEnumerateSymbols">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymEnumerateSymbols64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymEnumerateSymbolsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymEnumerateSymbolsW64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymFindDebugInfoFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymFindDebugInfoFileW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymFindExecutableImage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymFindExecutableImageW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymFindFileInPath">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymFindFileInPathW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymFreeDiaString" />
+    <Symbol Name="SymFromAddr">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymFromAddrW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymFromIndex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymFromIndexW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymFromInlineContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymFromInlineContextW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymFromName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymFromNameW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymFromToken">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymFromTokenW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymFunctionTableAccess">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymFunctionTableAccess64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymFunctionTableAccess64AccessRoutines">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetDiaSession" />
+    <Symbol Name="SymGetExtendedOption">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetFileLineOffsets64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetHomeDirectory">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetHomeDirectoryW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetLineFromAddr">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetLineFromAddr64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetLineFromAddrEx" />
+    <Symbol Name="SymGetLineFromAddrW64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetLineFromInlineContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetLineFromInlineContextW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetLineFromName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetLineFromName64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetLineFromNameEx" />
+    <Symbol Name="SymGetLineFromNameW64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetLineNext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetLineNext64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetLineNextEx" />
+    <Symbol Name="SymGetLineNextW64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetLinePrev">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetLinePrev64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetLinePrevEx" />
+    <Symbol Name="SymGetLinePrevW64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetModuleBase">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetModuleBase64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetModuleInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetModuleInfo64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetModuleInfoW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetModuleInfoW64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetOmapBlockBase" />
+    <Symbol Name="SymGetOmaps">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetOptions">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetScope">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetScopeW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetSearchPath">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetSearchPathW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetSourceFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetSourceFileChecksum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetSourceFileChecksumW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetSourceFileFromToken">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetSourceFileFromTokenW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetSourceFileToken">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetSourceFileTokenW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetSourceFileW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetSourceVarFromToken">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetSourceVarFromTokenW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetSymFromAddr">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetSymFromAddr64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetSymFromName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetSymFromName64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetSymNext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetSymNext64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetSymPrev">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetSymPrev64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetSymbolFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetSymbolFileW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetTypeFromName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetTypeFromNameW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetTypeInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetTypeInfoEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetUnwindInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymInitialize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymInitializeW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymLoadModule">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymLoadModule64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymLoadModuleEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymLoadModuleExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymMatchFileName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymMatchFileNameW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymMatchString">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymMatchStringA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymMatchStringW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymNext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymNextW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymPrev">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymPrevW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymQueryInlineTrace">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymRefreshModuleList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymRegisterCallback">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymRegisterCallback64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymRegisterCallbackW64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymRegisterFunctionEntryCallback">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymRegisterFunctionEntryCallback64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymSearch">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymSearchW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymSetContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymSetExtendedOption">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymSetHomeDirectory">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymSetHomeDirectoryW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymSetOptions">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymSetParentWindow">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymSetScopeFromAddr">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymSetScopeFromIndex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymSetScopeFromInlineContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymSetSearchPath">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymSetSearchPathW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymSrvDeltaName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymSrvDeltaNameW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymSrvGetFileIndexInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymSrvGetFileIndexInfoW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymSrvGetFileIndexString">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymSrvGetFileIndexStringW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymSrvGetFileIndexes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymSrvGetFileIndexesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymSrvGetSupplement">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymSrvGetSupplementW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymSrvIsStore">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymSrvIsStoreW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymSrvStoreFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymSrvStoreFileW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymSrvStoreSupplement">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymSrvStoreSupplementW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymUnDName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymUnDName64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymUnloadModule">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymUnloadModule64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UnDecorateSymbolName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UnDecorateSymbolNameW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinDbgExtensionDllInit">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="_EFN_DumpImage" />
+    <Symbol Name="block">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="chksym">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="dbghelp">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="dh">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="fptr">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="homedir">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="inlinedbg">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="itoldyouso">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="lmi">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="lminfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="omap">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="optdbgdump">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="optdbgdumpaddr">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="srcfiles">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="stack_force_ebp">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="stackdbg">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="sym">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="symsrv">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="vc7fpo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgHelp.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="[NONAME]" />
+  </ExportedSymbols>
+</DynamicLibrary>

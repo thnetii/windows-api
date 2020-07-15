@@ -1,0 +1,983 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\WS2_32.Lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\WS2_32.Lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="d:\os\obj\amd64fre\minio\netio\published\objfre\amd64\indef.obj" />
+    <DynamicLibrary Name="d:\os\obj\amd64fre\minio\netio\published\objfre\amd64\sockdef.obj" />
+    <DynamicLibrary Name="WS2_32.dll" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="*))" />
+    <Symbol Name="FreeAddrInfoEx">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="FreeAddrInfoExW">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="FreeAddrInfoW">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetAddrInfoExA">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetAddrInfoExCancel">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetAddrInfoExOverlappedResult">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetAddrInfoExW">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetAddrInfoW">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetHostNameW">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetNameInfoW">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InetNtopW">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InetPtonW">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SetAddrInfoExA">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SetAddrInfoExW">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WEP">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WPUCompleteOverlappedRequest">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WPUGetProviderPathEx">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSAAccept">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSAAddressToStringA">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSAAddressToStringW">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSAAdvertiseProvider">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSAAsyncGetHostByAddr">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSAAsyncGetHostByName">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSAAsyncGetProtoByName">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSAAsyncGetProtoByNumber">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSAAsyncGetServByName">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSAAsyncGetServByPort">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSAAsyncSelect">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSACancelAsyncRequest">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSACancelBlockingCall">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSACleanup">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSACloseEvent">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSAConnect">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSAConnectByList">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSAConnectByNameA">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSAConnectByNameW">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSACreateEvent">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSADuplicateSocketA">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSADuplicateSocketW">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSAEnumNameSpaceProvidersA">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSAEnumNameSpaceProvidersExA">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSAEnumNameSpaceProvidersExW">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSAEnumNameSpaceProvidersW">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSAEnumNetworkEvents">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSAEnumProtocolsA">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSAEnumProtocolsW">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSAEventSelect">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSAGetLastError">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSAGetOverlappedResult">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSAGetQOSByName">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSAGetServiceClassInfoA">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSAGetServiceClassInfoW">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSAGetServiceClassNameByClassIdA">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSAGetServiceClassNameByClassIdW">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSAHtonl">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSAHtons">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSAInstallServiceClassA">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSAInstallServiceClassW">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSAIoctl">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSAIsBlocking">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSAJoinLeaf">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSALookupServiceBeginA">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSALookupServiceBeginW">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSALookupServiceEnd">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSALookupServiceNextA">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSALookupServiceNextW">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSANSPIoctl">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSANtohl">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSANtohs">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSAPoll">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSAProviderCompleteAsyncCall">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSAProviderConfigChange">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSARecv">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSARecvDisconnect">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSARecvFrom">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSARemoveServiceClass">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSAResetEvent">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSASend">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSASendDisconnect">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSASendMsg">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSASendTo">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSASetBlockingHook">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSASetEvent">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSASetLastError">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSASetServiceA">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSASetServiceW">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSASocketA">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSASocketW">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSAStartup">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSAStringToAddressA">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSAStringToAddressW">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSAUnadvertiseProvider">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSAUnhookBlockingHook">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSAWaitForMultipleEvents">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSCDeinstallProvider">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSCDeinstallProvider32">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSCDeinstallProviderEx">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSCEnableNSProvider">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSCEnableNSProvider32">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSCEnumNameSpaceProviders32">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSCEnumNameSpaceProvidersEx32">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSCEnumProtocols">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSCEnumProtocols32">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSCEnumProtocolsEx">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSCGetApplicationCategory">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSCGetApplicationCategoryEx">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSCGetProviderInfo">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSCGetProviderInfo32">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSCGetProviderPath">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSCGetProviderPath32">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSCInstallNameSpace">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSCInstallNameSpace32">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSCInstallNameSpaceEx">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSCInstallNameSpaceEx2">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSCInstallNameSpaceEx32">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSCInstallProvider">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSCInstallProvider64_32">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSCInstallProviderAndChains64_32">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSCInstallProviderEx">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSCSetApplicationCategory">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSCSetApplicationCategoryEx">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSCSetProviderInfo">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSCSetProviderInfo32">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSCUnInstallNameSpace">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSCUnInstallNameSpace32">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSCUnInstallNameSpaceEx2">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSCUpdateProvider">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSCUpdateProvider32">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSCUpdateProviderEx">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSCWriteNameSpaceOrder">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSCWriteNameSpaceOrder32">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSCWriteProviderOrder">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSCWriteProviderOrder32">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WSCWriteProviderOrderEx">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WahCloseApcHelper">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WahCloseHandleHelper">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WahCloseNotificationHandleHelper">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WahCloseSocketHandle">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WahCloseThread">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WahCompleteRequest">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WahCreateHandleContextTable">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WahCreateNotificationHandle">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WahCreateSocketHandle">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WahDestroyHandleContextTable">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WahDisableNonIFSHandleSupport">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WahEnableNonIFSHandleSupport">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WahEnumerateHandleContexts">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WahInsertHandleContext">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WahNotifyAllProcesses">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WahOpenApcHelper">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WahOpenCurrentThread">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WahOpenHandleHelper">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WahOpenNotificationHandleHelper">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WahQueueUserApc">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WahReferenceContextByHandle">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WahRemoveHandleContext">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WahWaitForNotification">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WahWriteLSPEvent">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="__WSAFDIsSet">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="accept">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="bind">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="closesocket">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="connect">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="freeaddrinfo">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="getaddrinfo">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="gethostbyaddr">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="gethostbyname">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="gethostname">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="getnameinfo">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="getpeername">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="getprotobyname">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="getprotobynumber">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="getservbyname">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="getservbyport">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="getsockname">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="getsockopt">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="htonl">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="htons">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="inet_addr">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="inet_ntoa">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="inet_ntop">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="inet_pton">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ioctlsocket">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="listen">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ntohl">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ntohs">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="recv">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="recvfrom">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="select">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="send">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="sendto">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="setsockopt">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="shutdown">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="socket">
+      <Definitions>
+        <DynamicLibrary Name="WS2_32.dll" />
+      </Definitions>
+    </Symbol>
+  </ExportedSymbols>
+</StaticLibrary>

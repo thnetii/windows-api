@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="LZ32.dll">
+  <OriginalPath>C:\Windows\system32\LZ32.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="CopyLZFile">
+      <ForwardSymbol>kernel32.CopyLZFile</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Lz32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetExpandedNameA">
+      <ForwardSymbol>kernel32.GetExpandedNameA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Lz32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetExpandedNameW">
+      <ForwardSymbol>kernel32.GetExpandedNameW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Lz32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LZClose">
+      <ForwardSymbol>kernel32.LZClose</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Lz32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LZCloseFile">
+      <ForwardSymbol>kernel32.LZCloseFile</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Lz32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LZCopy">
+      <ForwardSymbol>kernel32.LZCopy</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Lz32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LZCreateFileW">
+      <ForwardSymbol>kernel32.LZCreateFileW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Lz32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LZDone">
+      <ForwardSymbol>kernel32.LZDone</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Lz32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LZInit">
+      <ForwardSymbol>kernel32.LZInit</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Lz32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LZOpenFileA">
+      <ForwardSymbol>kernel32.LZOpenFileA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Lz32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LZOpenFileW">
+      <ForwardSymbol>kernel32.LZOpenFileW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Lz32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LZRead">
+      <ForwardSymbol>kernel32.LZRead</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Lz32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LZSeek">
+      <ForwardSymbol>kernel32.LZSeek</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Lz32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LZStart">
+      <ForwardSymbol>kernel32.LZStart</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Lz32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

@@ -1,0 +1,1243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="CFGMGR32.dll">
+  <OriginalPath>C:\Windows\system32\CFGMGR32.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="CMP_GetBlockedDriverInfo" />
+    <Symbol Name="CMP_GetServerSideDeviceInstallFlags">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CMP_Init_Detection" />
+    <Symbol Name="CMP_RegisterServiceNotification" />
+    <Symbol Name="CMP_Register_Notification" />
+    <Symbol Name="CMP_Report_LogOn" />
+    <Symbol Name="CMP_WaitNoPendingInstallEvents">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CMP_WaitServicesAvailable" />
+    <Symbol Name="CM_Add_Driver_PackageW" />
+    <Symbol Name="CM_Add_Driver_Package_ExW" />
+    <Symbol Name="CM_Add_Empty_Log_Conf">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Add_Empty_Log_Conf_Ex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Add_IDA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Add_IDW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Add_ID_ExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Add_ID_ExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Add_Range">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Add_Res_Des">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Add_Res_Des_Ex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Apply_PowerScheme" />
+    <Symbol Name="CM_Connect_MachineA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Connect_MachineW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Create_DevNodeA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Create_DevNodeW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Create_DevNode_ExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Create_DevNode_ExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Create_Range_List">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Delete_Class_Key">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Delete_Class_Key_Ex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Delete_DevNode_Key">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Delete_DevNode_Key_Ex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Delete_Device_Interface_KeyA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Delete_Device_Interface_KeyW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Delete_Device_Interface_Key_ExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Delete_Device_Interface_Key_ExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Delete_Driver_PackageW" />
+    <Symbol Name="CM_Delete_Driver_Package_ExW" />
+    <Symbol Name="CM_Delete_PowerScheme" />
+    <Symbol Name="CM_Delete_Range">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Detect_Resource_Conflict">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Detect_Resource_Conflict_Ex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Disable_DevNode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Disable_DevNode_Ex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Disconnect_Machine">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Dup_Range_List">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Duplicate_PowerScheme" />
+    <Symbol Name="CM_Enable_DevNode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Enable_DevNode_Ex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Enumerate_Classes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Enumerate_Classes_Ex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Enumerate_EnumeratorsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Enumerate_EnumeratorsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Enumerate_Enumerators_ExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Enumerate_Enumerators_ExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Find_Range">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_First_Range">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Free_Log_Conf">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Free_Log_Conf_Ex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Free_Log_Conf_Handle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Free_Range_List">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Free_Res_Des">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Free_Res_Des_Ex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Free_Res_Des_Handle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Free_Resource_Conflict_Handle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Child">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Child_Ex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Class_Key_NameA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Class_Key_NameW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Class_Key_Name_ExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Class_Key_Name_ExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Class_NameA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Class_NameW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Class_Name_ExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Class_Name_ExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Class_PropertyW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Class_Property_ExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Class_Property_Keys">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Class_Property_Keys_Ex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Class_Registry_PropertyA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Class_Registry_PropertyW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Depth">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Depth_Ex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_DevNode_Custom_PropertyA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_DevNode_Custom_PropertyW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_DevNode_Custom_Property_ExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_DevNode_Custom_Property_ExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_DevNode_PropertyW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_DevNode_Property_ExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_DevNode_Property_Keys">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_DevNode_Property_Keys_Ex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_DevNode_Registry_PropertyA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_DevNode_Registry_PropertyW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_DevNode_Registry_Property_ExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_DevNode_Registry_Property_ExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_DevNode_Status">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_DevNode_Status_Ex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Device_IDA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Device_IDW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Device_ID_ExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Device_ID_ExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Device_ID_ListA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Device_ID_ListW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Device_ID_List_ExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Device_ID_List_ExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Device_ID_List_SizeA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Device_ID_List_SizeW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Device_ID_List_Size_ExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Device_ID_List_Size_ExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Device_ID_Size">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Device_ID_Size_Ex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Device_Interface_AliasA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Device_Interface_AliasW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Device_Interface_Alias_ExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Device_Interface_Alias_ExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Device_Interface_ListA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Device_Interface_ListW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Device_Interface_List_ExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Device_Interface_List_ExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Device_Interface_List_SizeA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Device_Interface_List_SizeW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Device_Interface_List_Size_ExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Device_Interface_List_Size_ExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Device_Interface_PropertyW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Device_Interface_Property_ExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Device_Interface_Property_KeysW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Device_Interface_Property_Keys_ExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_First_Log_Conf">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_First_Log_Conf_Ex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Global_State">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Global_State_Ex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_HW_Prof_FlagsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_HW_Prof_FlagsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_HW_Prof_Flags_ExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_HW_Prof_Flags_ExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Hardware_Profile_InfoA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Hardware_Profile_InfoW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Hardware_Profile_Info_ExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Hardware_Profile_Info_ExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Log_Conf_Priority">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Log_Conf_Priority_Ex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Next_Log_Conf">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Next_Log_Conf_Ex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Next_Res_Des">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Next_Res_Des_Ex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Parent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Parent_Ex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Res_Des_Data">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Res_Des_Data_Ex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Res_Des_Data_Size">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Res_Des_Data_Size_Ex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Resource_Conflict_Count">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Resource_Conflict_DetailsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Resource_Conflict_DetailsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Sibling">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Sibling_Ex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Version">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Version_Ex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Import_PowerScheme" />
+    <Symbol Name="CM_Install_DevNodeW" />
+    <Symbol Name="CM_Install_DevNode_ExW" />
+    <Symbol Name="CM_Install_DriverW" />
+    <Symbol Name="CM_Intersect_Range_List">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Invert_Range_List">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Is_Dock_Station_Present">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Is_Dock_Station_Present_Ex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Is_Version_Available">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Is_Version_Available_Ex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Locate_DevNodeA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Locate_DevNodeW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Locate_DevNode_ExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Locate_DevNode_ExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_MapCrToSpErr" />
+    <Symbol Name="CM_MapCrToWin32Err">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Merge_Range_List">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Modify_Res_Des">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Modify_Res_Des_Ex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Move_DevNode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Move_DevNode_Ex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Next_Range">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Open_Class_KeyA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Open_Class_KeyW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Open_Class_Key_ExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Open_Class_Key_ExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Open_DevNode_Key">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Open_DevNode_Key_Ex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Open_Device_Interface_KeyA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Open_Device_Interface_KeyW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Open_Device_Interface_Key_ExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Open_Device_Interface_Key_ExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Query_And_Remove_SubTreeA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Query_And_Remove_SubTreeW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Query_And_Remove_SubTree_ExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Query_And_Remove_SubTree_ExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Query_Arbitrator_Free_Data">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Query_Arbitrator_Free_Data_Ex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Query_Arbitrator_Free_Size">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Query_Arbitrator_Free_Size_Ex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Query_Remove_SubTree">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Query_Remove_SubTree_Ex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Query_Resource_Conflict_List">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Reenumerate_DevNode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Reenumerate_DevNode_Ex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Register_Device_Driver">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Register_Device_Driver_Ex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Register_Device_InterfaceA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Register_Device_InterfaceW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Register_Device_Interface_ExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Register_Device_Interface_ExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Register_Notification">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Remove_SubTree">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Remove_SubTree_Ex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Request_Device_EjectA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Request_Device_EjectW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Request_Device_Eject_ExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Request_Device_Eject_ExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Request_Eject_PC">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Request_Eject_PC_Ex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_RestoreAll_DefaultPowerSchemes" />
+    <Symbol Name="CM_Restore_DefaultPowerScheme" />
+    <Symbol Name="CM_Run_Detection">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Run_Detection_Ex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Set_ActiveScheme" />
+    <Symbol Name="CM_Set_Class_PropertyW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Set_Class_Property_ExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Set_Class_Registry_PropertyA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Set_Class_Registry_PropertyW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Set_DevNode_Problem">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Set_DevNode_Problem_Ex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Set_DevNode_PropertyW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Set_DevNode_Property_ExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Set_DevNode_Registry_PropertyA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Set_DevNode_Registry_PropertyW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Set_DevNode_Registry_Property_ExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Set_DevNode_Registry_Property_ExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Set_Device_Interface_PropertyW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Set_Device_Interface_Property_ExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Set_HW_Prof">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Set_HW_Prof_Ex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Set_HW_Prof_FlagsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Set_HW_Prof_FlagsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Set_HW_Prof_Flags_ExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Set_HW_Prof_Flags_ExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Setup_DevNode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Setup_DevNode_Ex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Test_Range_Available">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Uninstall_DevNode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Uninstall_DevNode_Ex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Unregister_Device_InterfaceA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Unregister_Device_InterfaceW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Unregister_Device_Interface_ExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Unregister_Device_Interface_ExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Unregister_Notification">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cfgmgr32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Write_UserPowerKey" />
+    <Symbol Name="DevCloseObjectQuery" />
+    <Symbol Name="DevCreateObjectQuery" />
+    <Symbol Name="DevCreateObjectQueryEx" />
+    <Symbol Name="DevCreateObjectQueryFromId" />
+    <Symbol Name="DevCreateObjectQueryFromIdEx" />
+    <Symbol Name="DevCreateObjectQueryFromIds" />
+    <Symbol Name="DevCreateObjectQueryFromIdsEx" />
+    <Symbol Name="DevFindProperty" />
+    <Symbol Name="DevFreeObjectProperties" />
+    <Symbol Name="DevFreeObjects" />
+    <Symbol Name="DevGetObjectProperties" />
+    <Symbol Name="DevGetObjectPropertiesEx" />
+    <Symbol Name="DevGetObjects" />
+    <Symbol Name="DevGetObjectsEx" />
+    <Symbol Name="DevSetObjectProperties" />
+    <Symbol Name="SwDeviceClose">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\swdevice.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SwDeviceCreate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\swdevice.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SwDeviceGetLifetime">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\swdevice.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SwDeviceInterfacePropertySet">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\swdevice.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SwDeviceInterfaceRegister">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\swdevice.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SwDeviceInterfaceSetState">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\swdevice.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SwDevicePropertySet">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\swdevice.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SwDeviceSetLifetime">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\swdevice.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SwMemFree">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\swdevice.lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

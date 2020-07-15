@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="wsdapi.dll">
+  <OriginalPath>C:\Windows\system32\wsdapi.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="WSDAddFirewallCheck" />
+    <Symbol Name="WSDAllocateLinkedMemory">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wsdapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSDAttachLinkedMemory">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wsdapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSDCancelNetworkChangeNotify" />
+    <Symbol Name="WSDCompareEndpoints">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wsdapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSDCopyEndpoint">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wsdapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSDCopyNameList" />
+    <Symbol Name="WSDCreateDeviceHost">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wsdapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSDCreateDeviceHost2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wsdapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSDCreateDeviceHostAdvanced">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wsdapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSDCreateDeviceProxy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wsdapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSDCreateDeviceProxy2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wsdapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSDCreateDeviceProxyAdvanced">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wsdapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSDCreateDiscoveryProvider">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wsdapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSDCreateDiscoveryProvider2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wsdapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSDCreateDiscoveryPublisher">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wsdapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSDCreateDiscoveryPublisher2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wsdapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSDCreateHttpAddress">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wsdapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSDCreateHttpMessageParameters">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wsdapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSDCreateHttpTransport">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wsdapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSDCreateMetadataAgent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wsdapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSDCreateOutboundAttachment">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wsdapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSDCreateUdpAddress">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wsdapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSDCreateUdpMessageParameters">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wsdapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSDCreateUdpTransport">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wsdapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSDDetachLinkedMemory">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wsdapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSDFreeLinkedMemory">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wsdapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSDGenerateFault">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wsdapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSDGenerateFaultEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wsdapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSDGenerateRandomDelay">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wsdapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSDGetConfigurationOption">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wsdapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSDNotifyNetworkChange" />
+    <Symbol Name="WSDProcessFault">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wsdapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSDRemoveFirewallCheck" />
+    <Symbol Name="WSDSetConfigurationOption">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wsdapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSDUriDecode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wsdapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSDUriEncode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wsdapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSDXMLAddChild">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wsdapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSDXMLAddSibling">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wsdapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSDXMLBuildAnyForSingleElement">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wsdapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSDXMLCleanupElement">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wsdapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSDXMLCompareNames" />
+    <Symbol Name="WSDXMLCreateContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wsdapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSDXMLGetNameFromBuiltinNamespace">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wsdapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSDXMLGetValueFromAny">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wsdapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

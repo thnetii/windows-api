@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="wer.dll">
+  <OriginalPath>C:\Windows\system32\wer.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="CloseThreadWaitChainSession">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Wer.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetThreadWaitChain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Wer.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OpenThreadWaitChainSession">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Wer.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RegisterWaitChainCOMCallback">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Wer.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WerAddExcludedApplication">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Wer.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WerFreeString">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Wer.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WerRemoveExcludedApplication">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Wer.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WerReportAddDump">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Wer.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WerReportAddFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Wer.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WerReportCloseHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Wer.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WerReportCreate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Wer.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WerReportSetParameter">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Wer.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WerReportSetUIOption">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Wer.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WerReportSubmit">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Wer.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WerStoreClose">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Wer.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WerStoreGetFirstReportKey">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Wer.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WerStoreGetNextReportKey">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Wer.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WerStoreGetReportCount">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Wer.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WerStoreGetSizeOnDisk">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Wer.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WerStoreOpen">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Wer.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WerStorePurge">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Wer.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WerStoreQueryReportMetadataV1">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Wer.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WerStoreQueryReportMetadataV2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Wer.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WerStoreUploadReport">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Wer.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WerSysprepCleanup" />
+    <Symbol Name="WerSysprepGeneralize" />
+    <Symbol Name="WerUnattendedSetup" />
+    <Symbol Name="WerpAddAppCompatData" />
+    <Symbol Name="WerpAddFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Wer.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WerpAddFileBuffer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Wer.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WerpAddFileCallback">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Wer.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WerpAddIfRegisteredForAppLocalDump" />
+    <Symbol Name="WerpAddMemoryBlock" />
+    <Symbol Name="WerpAddRegisteredDataToReport" />
+    <Symbol Name="WerpAddRegisteredDumpsToReport" />
+    <Symbol Name="WerpAddRegisteredMetadataToReport" />
+    <Symbol Name="WerpAddTerminationReason">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Wer.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WerpArchiveReport" />
+    <Symbol Name="WerpAuxmdDumpProcessImages">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Wer.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WerpAuxmdDumpRegisteredBlocks">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Wer.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WerpAuxmdFree">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Wer.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WerpAuxmdFreeCopyBuffer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Wer.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WerpAuxmdHashVaRanges">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Wer.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WerpAuxmdInitialize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Wer.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WerpAuxmdMapFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Wer.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WerpCancelUpload" />
+    <Symbol Name="WerpCleanWer" />
+    <Symbol Name="WerpCloseStore" />
+    <Symbol Name="WerpCreateIntegratorReportId">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Wer.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WerpCreateMachineStore" />
+    <Symbol Name="WerpDeleteReport" />
+    <Symbol Name="WerpDestroyWerString" />
+    <Symbol Name="WerpEnumerateStoreNext" />
+    <Symbol Name="WerpEnumerateStoreStart" />
+    <Symbol Name="WerpExtractReportFiles" />
+    <Symbol Name="WerpFlushImageCache" />
+    <Symbol Name="WerpForceDeferredCollection" />
+    <Symbol Name="WerpFreeString">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Wer.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WerpFreeUnmappedVaRanges" />
+    <Symbol Name="WerpGetBucketId" />
+    <Symbol Name="WerpGetDynamicParameter" />
+    <Symbol Name="WerpGetEventType" />
+    <Symbol Name="WerpGetExtendedDiagData" />
+    <Symbol Name="WerpGetFileByIndex" />
+    <Symbol Name="WerpGetFilePathByIndex" />
+    <Symbol Name="WerpGetIntegratorReportId">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Wer.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WerpGetLegacyBucketId" />
+    <Symbol Name="WerpGetLoadedModuleByIndex" />
+    <Symbol Name="WerpGetNumFiles" />
+    <Symbol Name="WerpGetNumLoadedModules" />
+    <Symbol Name="WerpGetNumSigParams" />
+    <Symbol Name="WerpGetPathOfWERTempDirectory" />
+    <Symbol Name="WerpGetReportConsent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Wer.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WerpGetReportCount" />
+    <Symbol Name="WerpGetReportFinalConsent" />
+    <Symbol Name="WerpGetReportFlags" />
+    <Symbol Name="WerpGetReportId" />
+    <Symbol Name="WerpGetReportInformation" />
+    <Symbol Name="WerpGetReportSettings" />
+    <Symbol Name="WerpGetReportTime" />
+    <Symbol Name="WerpGetReportType" />
+    <Symbol Name="WerpGetResponseId" />
+    <Symbol Name="WerpGetSigParamByIndex" />
+    <Symbol Name="WerpGetStoreLocation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Wer.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WerpGetStorePath" />
+    <Symbol Name="WerpGetStoreType" />
+    <Symbol Name="WerpGetTextFromReport" />
+    <Symbol Name="WerpGetUIParamByIndex" />
+    <Symbol Name="WerpGetUploadTime" />
+    <Symbol Name="WerpGetWerStringData" />
+    <Symbol Name="WerpGetWow64Process" />
+    <Symbol Name="WerpHashApplicationParameters" />
+    <Symbol Name="WerpInitializeImageCache" />
+    <Symbol Name="WerpIsDisabled">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Wer.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WerpIsOnBattery" />
+    <Symbol Name="WerpIsTransportAvailable" />
+    <Symbol Name="WerpLoadReport" />
+    <Symbol Name="WerpLoadReportFromBuffer" />
+    <Symbol Name="WerpOpenMachineArchive" />
+    <Symbol Name="WerpOpenMachineQueue" />
+    <Symbol Name="WerpPromptUser" />
+    <Symbol Name="WerpPruneStore" />
+    <Symbol Name="WerpQueueHasBypassPowerReports" />
+    <Symbol Name="WerpReportCancel" />
+    <Symbol Name="WerpReportSprintfParameter" />
+    <Symbol Name="WerpReserveMachineQueueReportDir" />
+    <Symbol Name="WerpResetTransientImageCacheStatistics" />
+    <Symbol Name="WerpRestartApplication" />
+    <Symbol Name="WerpSetAuxiliaryArchivePath">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Wer.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WerpSetCallBack">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Wer.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WerpSetDefaultUserConsent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Wer.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WerpSetDynamicParameter" />
+    <Symbol Name="WerpSetEventName" />
+    <Symbol Name="WerpSetIntegratorReportId">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Wer.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WerpSetIptEnabled">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Wer.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WerpSetProcessTimelines" />
+    <Symbol Name="WerpSetQuickDumpType" />
+    <Symbol Name="WerpSetReportApplicationIdentity" />
+    <Symbol Name="WerpSetReportFlags" />
+    <Symbol Name="WerpSetReportInformation" />
+    <Symbol Name="WerpSetReportIsFatal" />
+    <Symbol Name="WerpSetReportNamespaceParameter" />
+    <Symbol Name="WerpSetReportOption">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Wer.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WerpSetReportTime" />
+    <Symbol Name="WerpSetReportUploadContextToken" />
+    <Symbol Name="WerpSetTelemetryAppParams" />
+    <Symbol Name="WerpSetTelemetryKernelParams" />
+    <Symbol Name="WerpSetTelemetryServiceParams" />
+    <Symbol Name="WerpSetTimedTask" />
+    <Symbol Name="WerpShowUpsellUI" />
+    <Symbol Name="WerpStitchedMinidumpVmPostReadCallback" />
+    <Symbol Name="WerpStitchedMinidumpVmPreReadCallback" />
+    <Symbol Name="WerpStitchedMinidumpVmQueryCallback" />
+    <Symbol Name="WerpSubmitReportFromStore" />
+    <Symbol Name="WerpTraceAuxMemDumpStatistics" />
+    <Symbol Name="WerpTraceDuration" />
+    <Symbol Name="WerpTraceImageCacheStatistics" />
+    <Symbol Name="WerpTraceSnapshotStatistics" />
+    <Symbol Name="WerpTraceStitchedDumpWriterStatistics" />
+    <Symbol Name="WerpTraceUnmappedVaRangesStatistics" />
+    <Symbol Name="WerpUnmapProcessViews" />
+    <Symbol Name="WerpValidateReportKey" />
+    <Symbol Name="WerpWalkGatherBlocks" />
+  </ExportedSymbols>
+</DynamicLibrary>

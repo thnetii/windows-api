@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\MSTask.Lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\MSTask.Lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="d:\os\obj\amd64fre\onecore\admin\services\sched\types\uuid\objfre\amd64\guids.obj" />
+    <DynamicLibrary Name="mstask.dll" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="ConvertAtJobsToTasks">
+      <Definitions>
+        <DynamicLibrary Name="mstask.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetNetScheduleAccountInformation">
+      <Definitions>
+        <DynamicLibrary Name="mstask.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NetrJobAdd">
+      <Definitions>
+        <DynamicLibrary Name="mstask.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NetrJobDel">
+      <Definitions>
+        <DynamicLibrary Name="mstask.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NetrJobEnum">
+      <Definitions>
+        <DynamicLibrary Name="mstask.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NetrJobGetInfo">
+      <Definitions>
+        <DynamicLibrary Name="mstask.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SAGetAccountInformation">
+      <Definitions>
+        <DynamicLibrary Name="mstask.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SAGetNSAccountInformation">
+      <Definitions>
+        <DynamicLibrary Name="mstask.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SASetAccountInformation">
+      <Definitions>
+        <DynamicLibrary Name="mstask.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SASetNSAccountInformation">
+      <Definitions>
+        <DynamicLibrary Name="mstask.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SetNetScheduleAccountInformation">
+      <Definitions>
+        <DynamicLibrary Name="mstask.dll" />
+      </Definitions>
+    </Symbol>
+  </ExportedSymbols>
+</StaticLibrary>

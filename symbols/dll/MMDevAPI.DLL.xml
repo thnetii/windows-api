@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="MMDevAPI.DLL">
+  <OriginalPath>C:\Windows\system32\MMDevAPI.DLL</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="ActivateAudioInterfaceAsync">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mmdevapi.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DllCanUnloadNow" />
+    <Symbol Name="DllGetClassObject" />
+    <Symbol Name="DllRegisterServer" />
+    <Symbol Name="DllUnregisterServer" />
+    <Symbol Name="[NONAME]" />
+  </ExportedSymbols>
+</DynamicLibrary>

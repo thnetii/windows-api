@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\infocardapi.Lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\infocardapi.Lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="infocardapi.dll" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="EnsureServiceRunning(void))" />
+    <Symbol Name="CloseCryptoHandle" />
+    <Symbol Name="Decrypt" />
+    <Symbol Name="Encrypt" />
+    <Symbol Name="FreeToken" />
+    <Symbol Name="GenerateDerivedKey" />
+    <Symbol Name="GetBrowserToken" />
+    <Symbol Name="GetCryptoTransform" />
+    <Symbol Name="GetKeyedHash" />
+    <Symbol Name="GetToken" />
+    <Symbol Name="HashCore" />
+    <Symbol Name="HashFinal" />
+    <Symbol Name="ImportInformationCard" />
+    <Symbol Name="ManageCardSpace" />
+    <Symbol Name="SignHash" />
+    <Symbol Name="TransformBlock" />
+    <Symbol Name="TransformFinalBlock" />
+    <Symbol Name="VerifyHash" />
+  </ExportedSymbols>
+</StaticLibrary>

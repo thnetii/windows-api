@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\vmsavedstatedumpprovider.lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\vmsavedstatedumpprovider.lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="VmSavedStateDumpProvider.dll" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="ApplyGuestMemoryFix" />
+    <Symbol Name="ApplyPendingSavedStateFileReplayLog" />
+    <Symbol Name="GetArchitecture" />
+    <Symbol Name="GetGuestPhysicalMemoryChunks" />
+    <Symbol Name="GetGuestRawSavedMemorySize" />
+    <Symbol Name="GetPagingMode" />
+    <Symbol Name="GetRegisterValue" />
+    <Symbol Name="GetVpCount" />
+    <Symbol Name="GetWindowsCrashDumpHeader" />
+    <Symbol Name="GuestPhysicalAddressToRawSavedMemoryOffset" />
+    <Symbol Name="GuestVirtualAddressToPhysicalAddress" />
+    <Symbol Name="LoadSavedStateFile" />
+    <Symbol Name="LoadSavedStateFiles" />
+    <Symbol Name="LocateSavedStateFiles" />
+    <Symbol Name="ReadGuestPhysicalAddress" />
+    <Symbol Name="ReadGuestRawSavedMemory" />
+    <Symbol Name="ReleaseSavedStateFiles" />
+    <Symbol Name="WriteWindowsCrashDumpFile" />
+  </ExportedSymbols>
+</StaticLibrary>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\ddraw.lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\ddraw.lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="DDRAW.dll" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="DDGetAttachedSurfaceLcl" />
+    <Symbol Name="DDInternalLock" />
+    <Symbol Name="DDInternalUnlock" />
+    <Symbol Name="DSoundHelp" />
+    <Symbol Name="DirectDrawCreate" />
+    <Symbol Name="DirectDrawCreateClipper" />
+    <Symbol Name="DirectDrawCreateEx" />
+    <Symbol Name="DirectDrawEnumerateA" />
+    <Symbol Name="DirectDrawEnumerateExA" />
+    <Symbol Name="DirectDrawEnumerateExW" />
+    <Symbol Name="DirectDrawEnumerateW" />
+    <Symbol Name="GetDDSurfaceLocal" />
+    <Symbol Name="GetSurfaceFromDC" />
+  </ExportedSymbols>
+</StaticLibrary>

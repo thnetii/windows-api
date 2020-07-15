@@ -1,0 +1,1966 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="WLDAP32.dll">
+  <OriginalPath>C:\Windows\system32\WLDAP32.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="LdapGetLastError">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LdapMapErrorToWin32">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LdapUTF8ToUnicode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LdapUnicodeToUTF8">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ber_alloc_t">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ber_bvdup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ber_bvecfree">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ber_bvfree">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ber_first_element">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ber_flatten">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ber_free">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ber_init">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ber_next_element">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ber_peek_tag">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ber_printf">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ber_scanf">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ber_skip_tag">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="cldap_open">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="cldap_openA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="cldap_openW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_abandon">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_add">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_addA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_addW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_add_ext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_add_extA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_add_extW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_add_ext_s">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_add_ext_sA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_add_ext_sW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_add_s">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_add_sA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_add_sW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_bind">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_bindA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_bindW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_bind_s">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_bind_sA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_bind_sW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_check_filterA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_check_filterW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_cleanup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_close_extended_op">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_compare">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_compareA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_compareW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_compare_ext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_compare_extA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_compare_extW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_compare_ext_s">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_compare_ext_sA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_compare_ext_sW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_compare_s">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_compare_sA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_compare_sW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_conn_from_msg">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_connect">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_control_free">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_control_freeA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_control_freeW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_controls_free">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_controls_freeA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_controls_freeW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_count_entries">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_count_references">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_count_values">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_count_valuesA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_count_valuesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_count_values_len">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_create_page_control">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_create_page_controlA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_create_page_controlW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_create_sort_control">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_create_sort_controlA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_create_sort_controlW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_create_vlv_controlA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_create_vlv_controlW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_delete">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_deleteA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_deleteW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_delete_ext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_delete_extA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_delete_extW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_delete_ext_s">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_delete_ext_sA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_delete_ext_sW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_delete_s">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_delete_sA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_delete_sW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_dn2ufn">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_dn2ufnA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_dn2ufnW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_encode_sort_controlA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_encode_sort_controlW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_err2string">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_err2stringA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_err2stringW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_escape_filter_element">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_escape_filter_elementA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_escape_filter_elementW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_explode_dn">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_explode_dnA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_explode_dnW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_extended_operation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_extended_operationA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_extended_operationW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_extended_operation_sA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_extended_operation_sW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_first_attribute">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_first_attributeA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_first_attributeW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_first_entry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_first_reference">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_free_controls">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_free_controlsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_free_controlsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_get_dn">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_get_dnA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_get_dnW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_get_next_page">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_get_next_page_s">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_get_option">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_get_optionA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_get_optionW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_get_paged_count">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_get_values">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_get_valuesA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_get_valuesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_get_values_len">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_get_values_lenA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_get_values_lenW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_init">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_initA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_initW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_memfree">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_memfreeA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_memfreeW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_modify">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_modifyA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_modifyW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_modify_ext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_modify_extA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_modify_extW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_modify_ext_s">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_modify_ext_sA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_modify_ext_sW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_modify_s">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_modify_sA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_modify_sW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_modrdn">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_modrdn2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_modrdn2A">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_modrdn2W">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_modrdn2_s">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_modrdn2_sA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_modrdn2_sW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_modrdnA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_modrdnW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_modrdn_s">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_modrdn_sA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_modrdn_sW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_msgfree">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_next_attribute">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_next_attributeA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_next_attributeW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_next_entry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_next_reference">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_open">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_openA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_openW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_parse_extended_resultA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_parse_extended_resultW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_parse_page_control">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_parse_page_controlA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_parse_page_controlW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_parse_reference">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_parse_referenceA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_parse_referenceW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_parse_result">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_parse_resultA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_parse_resultW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_parse_sort_control">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_parse_sort_controlA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_parse_sort_controlW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_parse_vlv_controlA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_parse_vlv_controlW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_perror">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_rename_ext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_rename_extA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_rename_extW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_rename_ext_s">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_rename_ext_sA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_rename_ext_sW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_result">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_result2error">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_sasl_bindA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_sasl_bindW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_sasl_bind_sA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_sasl_bind_sW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_search">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_searchA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_searchW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_search_abandon_page">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_search_ext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_search_extA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_search_extW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_search_ext_s">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_search_ext_sA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_search_ext_sW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_search_init_page">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_search_init_pageA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_search_init_pageW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_search_s">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_search_sA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_search_sW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_search_st">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_search_stA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_search_stW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_set_dbg_flags">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_set_dbg_routine">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_set_option">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_set_optionA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_set_optionW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_simple_bind">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_simple_bindA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_simple_bindW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_simple_bind_s">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_simple_bind_sA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_simple_bind_sW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_sslinit">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_sslinitA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_sslinitW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_start_tls_sA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_start_tls_sW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_startup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_stop_tls_s">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_ufn2dn">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_ufn2dnA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_ufn2dnW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_unbind">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_unbind_s">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_value_free">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_value_freeA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_value_freeW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ldap_value_free_len">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Wldap32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

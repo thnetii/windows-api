@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\ssdpapi.lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\ssdpapi.lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="SSDPAPI.dll" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="BeginRegisterPropChangeNotificationEx" />
+    <Symbol Name="CleanupCache" />
+    <Symbol Name="DHSetICSInterfaces" />
+    <Symbol Name="DHSetICSOff" />
+    <Symbol Name="DeregisterNotification" />
+    <Symbol Name="DeregisterService" />
+    <Symbol Name="DisableFirewallRule" />
+    <Symbol Name="EnableFirewallRule" />
+    <Symbol Name="EndRegisterPropChangeNotificationEx" />
+    <Symbol Name="FindServices" />
+    <Symbol Name="FindServicesCallback" />
+    <Symbol Name="FindServicesCallbackEx" />
+    <Symbol Name="FindServicesCancel" />
+    <Symbol Name="FindServicesClose" />
+    <Symbol Name="FindServicesEx" />
+    <Symbol Name="FindServicesOnNetworkCallbackEx" />
+    <Symbol Name="FreeSsdpMessage" />
+    <Symbol Name="FreeSsdpMessageEx" />
+    <Symbol Name="GetFirstService" />
+    <Symbol Name="GetFirstServiceEx" />
+    <Symbol Name="GetNextService" />
+    <Symbol Name="GetNextServiceEx" />
+    <Symbol Name="RegisterAliveNotificationOnNetworkEx" />
+    <Symbol Name="RegisterNotification" />
+    <Symbol Name="RegisterNotificationEx" />
+    <Symbol Name="RegisterService" />
+    <Symbol Name="RegisterServiceEx" />
+    <Symbol Name="SsdpCleanup" />
+    <Symbol Name="SsdpStartup" />
+  </ExportedSymbols>
+</StaticLibrary>

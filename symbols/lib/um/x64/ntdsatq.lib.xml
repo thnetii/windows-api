@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\ntdsatq.lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\ntdsatq.lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="NTDSATQ.dll" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="SchedulerInitialize(void))" />
+    <Symbol Name="SchedulerTerminate(void))" />
+    <Symbol Name="ATQReleaseTCPPortReservation" />
+    <Symbol Name="ATQReserveTCPPorts" />
+    <Symbol Name="AllocCacheDumpStatsToHtml" />
+    <Symbol Name="AtqCloseEndpoint" />
+    <Symbol Name="AtqCloseQosClass" />
+    <Symbol Name="AtqCloseSession" />
+    <Symbol Name="AtqCloseSocket" />
+    <Symbol Name="AtqContextGetInfo" />
+    <Symbol Name="AtqContextSetInfo" />
+    <Symbol Name="AtqContextSetInfo2" />
+    <Symbol Name="AtqCreateEndpoint" />
+    <Symbol Name="AtqCreateEndpointEx" />
+    <Symbol Name="AtqCreateQosClass" />
+    <Symbol Name="AtqEndpointGetInfo" />
+    <Symbol Name="AtqEndpointSetInfo" />
+    <Symbol Name="AtqEndpointSetInfo2" />
+    <Symbol Name="AtqFreeContext" />
+    <Symbol Name="AtqGetAcceptExAddrs" />
+    <Symbol Name="AtqGetAcceptExAddrsEx" />
+    <Symbol Name="AtqGetAddressFamilies" />
+    <Symbol Name="AtqGetDatagramAddrs" />
+    <Symbol Name="AtqGetInfo" />
+    <Symbol Name="AtqGetMaxDatagramSendSize" />
+    <Symbol Name="AtqInitialize" />
+    <Symbol Name="AtqOpenSession" />
+    <Symbol Name="AtqQosClassGetId" />
+    <Symbol Name="AtqQosClassGetInfo" />
+    <Symbol Name="AtqQosClassGetInstance" />
+    <Symbol Name="AtqQosContextEnd" />
+    <Symbol Name="AtqQosContextExtendTime" />
+    <Symbol Name="AtqQosContextStart" />
+    <Symbol Name="AtqReadFile" />
+    <Symbol Name="AtqReadSocket" />
+    <Symbol Name="AtqRegisterAddressChangeCallback" />
+    <Symbol Name="AtqSetInfo" />
+    <Symbol Name="AtqSetInfo2" />
+    <Symbol Name="AtqSetSockOpt" />
+    <Symbol Name="AtqStartEndpoint" />
+    <Symbol Name="AtqStopEndpoint" />
+    <Symbol Name="AtqSyncWsaSend" />
+    <Symbol Name="AtqTerminate" />
+    <Symbol Name="AtqUpdateQosClass" />
+    <Symbol Name="AtqWriteDatagramSocket" />
+    <Symbol Name="AtqWriteFile" />
+    <Symbol Name="AtqWriteSocket" />
+  </ExportedSymbols>
+</StaticLibrary>

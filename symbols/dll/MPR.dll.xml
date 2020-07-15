@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="MPR.dll">
+  <OriginalPath>C:\Windows\system32\MPR.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="DoBroadcastSystemMessage" />
+    <Symbol Name="DoCommandLinePrompt" />
+    <Symbol Name="DoPasswordDialog" />
+    <Symbol Name="DoProfileErrorDialog" />
+    <Symbol Name="I_MprSaveConn" />
+    <Symbol Name="MultinetGetConnectionPerformanceA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\Mpr.Lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MultinetGetConnectionPerformanceW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\Mpr.Lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MultinetGetErrorTextA" />
+    <Symbol Name="MultinetGetErrorTextW" />
+    <Symbol Name="ShowReconnectDialog" />
+    <Symbol Name="ShowReconnectDialogEnd" />
+    <Symbol Name="ShowReconnectDialogUI" />
+    <Symbol Name="WNetAddConnection2A">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\Mpr.Lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WNetAddConnection2W">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\Mpr.Lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WNetAddConnection3A">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\Mpr.Lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WNetAddConnection3W">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\Mpr.Lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WNetAddConnectionA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\Mpr.Lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WNetAddConnectionW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\Mpr.Lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WNetCancelConnection2A">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\Mpr.Lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WNetCancelConnection2W">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\Mpr.Lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WNetCancelConnectionA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\Mpr.Lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WNetCancelConnectionW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\Mpr.Lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WNetClearConnections" />
+    <Symbol Name="WNetCloseEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\Mpr.Lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WNetConnectionDialog">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\Mpr.Lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WNetConnectionDialog1A">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\Mpr.Lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WNetConnectionDialog1W">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\Mpr.Lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WNetConnectionDialog2" />
+    <Symbol Name="WNetDirectoryNotifyA" />
+    <Symbol Name="WNetDirectoryNotifyW" />
+    <Symbol Name="WNetDisconnectDialog">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\Mpr.Lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WNetDisconnectDialog1A">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\Mpr.Lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WNetDisconnectDialog1W">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\Mpr.Lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WNetDisconnectDialog2" />
+    <Symbol Name="WNetEnumResourceA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\Mpr.Lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WNetEnumResourceW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\Mpr.Lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WNetFormatNetworkNameA" />
+    <Symbol Name="WNetFormatNetworkNameW" />
+    <Symbol Name="WNetGetConnection2A" />
+    <Symbol Name="WNetGetConnection2W" />
+    <Symbol Name="WNetGetConnection3A" />
+    <Symbol Name="WNetGetConnection3W" />
+    <Symbol Name="WNetGetConnectionA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\Mpr.Lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WNetGetConnectionW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\Mpr.Lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WNetGetDirectoryTypeA" />
+    <Symbol Name="WNetGetDirectoryTypeW" />
+    <Symbol Name="WNetGetHomeDirectoryW" />
+    <Symbol Name="WNetGetLastErrorA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\Mpr.Lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WNetGetLastErrorW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\Mpr.Lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WNetGetNetworkInformationA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\Mpr.Lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WNetGetNetworkInformationW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\Mpr.Lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WNetGetPropertyTextA" />
+    <Symbol Name="WNetGetPropertyTextW" />
+    <Symbol Name="WNetGetProviderNameA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\Mpr.Lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WNetGetProviderNameW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\Mpr.Lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WNetGetProviderTypeA" />
+    <Symbol Name="WNetGetProviderTypeW" />
+    <Symbol Name="WNetGetResourceInformationA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\Mpr.Lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WNetGetResourceInformationW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\Mpr.Lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WNetGetResourceParentA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\Mpr.Lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WNetGetResourceParentW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\Mpr.Lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WNetGetSearchDialog" />
+    <Symbol Name="WNetGetUniversalNameA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\Mpr.Lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WNetGetUniversalNameW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\Mpr.Lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WNetGetUserA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\Mpr.Lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WNetGetUserW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\Mpr.Lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WNetLogonNotify" />
+    <Symbol Name="WNetOpenEnumA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\Mpr.Lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WNetOpenEnumW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\Mpr.Lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WNetPasswordChangeNotify" />
+    <Symbol Name="WNetPropertyDialogA" />
+    <Symbol Name="WNetPropertyDialogW" />
+    <Symbol Name="WNetRestoreAllConnectionsW" />
+    <Symbol Name="WNetRestoreSingleConnectionW" />
+    <Symbol Name="WNetSetConnectionA" />
+    <Symbol Name="WNetSetConnectionW" />
+    <Symbol Name="WNetSetLastErrorA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\Mpr.Lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WNetSetLastErrorW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\Mpr.Lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WNetSupportGlobalEnum" />
+    <Symbol Name="WNetUseConnectionA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\Mpr.Lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WNetUseConnectionW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\Mpr.Lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

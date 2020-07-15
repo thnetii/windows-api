@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="WMI.dll">
+  <OriginalPath>C:\Windows\system32\WMI.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="CloseTrace">
+      <ForwardSymbol>api-ms-win-eventing-consumer-l1-1-0.CloseTrace</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wmip.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ControlTraceA">
+      <ForwardSymbol>api-ms-win-eventing-legacy-l1-1-0.ControlTraceA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wmip.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ControlTraceW">
+      <ForwardSymbol>api-ms-win-eventing-controller-l1-1-0.ControlTraceW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wmip.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateTraceInstanceId">
+      <ForwardSymbol>ntdll.EtwCreateTraceInstanceId</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wmip.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnableTrace">
+      <ForwardSymbol>api-ms-win-eventing-legacy-l1-1-0.EnableTrace</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wmip.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetTraceEnableFlags">
+      <ForwardSymbol>api-ms-win-eventing-classicprovider-l1-1-0.GetTraceEnableFlags</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wmip.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetTraceEnableLevel">
+      <ForwardSymbol>api-ms-win-eventing-classicprovider-l1-1-0.GetTraceEnableLevel</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wmip.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetTraceLoggerHandle">
+      <ForwardSymbol>api-ms-win-eventing-classicprovider-l1-1-0.GetTraceLoggerHandle</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wmip.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OpenTraceA">
+      <ForwardSymbol>api-ms-win-eventing-legacy-l1-1-0.OpenTraceA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wmip.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OpenTraceW">
+      <ForwardSymbol>api-ms-win-eventing-consumer-l1-1-0.OpenTraceW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wmip.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ProcessTrace">
+      <ForwardSymbol>api-ms-win-eventing-consumer-l1-1-0.ProcessTrace</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wmip.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="QueryAllTracesA">
+      <ForwardSymbol>api-ms-win-eventing-legacy-l1-1-0.QueryAllTracesA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wmip.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="QueryAllTracesW">
+      <ForwardSymbol>api-ms-win-eventing-controller-l1-1-0.QueryAllTracesW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wmip.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RegisterTraceGuidsA">
+      <ForwardSymbol>api-ms-win-eventing-obsolete-l1-1-0.RegisterTraceGuidsA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wmip.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RegisterTraceGuidsW">
+      <ForwardSymbol>api-ms-win-eventing-classicprovider-l1-1-0.RegisterTraceGuidsW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wmip.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RemoveTraceCallback">
+      <ForwardSymbol>api-ms-win-eventing-obsolete-l1-1-0.RemoveTraceCallback</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wmip.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetTraceCallback">
+      <ForwardSymbol>api-ms-win-eventing-obsolete-l1-1-0.SetTraceCallback</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wmip.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StartTraceA">
+      <ForwardSymbol>api-ms-win-eventing-legacy-l1-1-0.StartTraceA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wmip.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StartTraceW">
+      <ForwardSymbol>api-ms-win-eventing-controller-l1-1-0.StartTraceW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wmip.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TraceEvent">
+      <ForwardSymbol>ntdll.EtwLogTraceEvent</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wmip.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TraceEventInstance">
+      <ForwardSymbol>ntdll.EtwTraceEventInstance</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wmip.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UnregisterTraceGuids">
+      <ForwardSymbol>api-ms-win-eventing-classicprovider-l1-1-0.UnregisterTraceGuids</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wmip.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WmiCloseBlock">
+      <ForwardSymbol>wmiclnt.WmiCloseBlock</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wmip.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WmiDevInstToInstanceNameA">
+      <ForwardSymbol>wmiclnt.WmiDevInstToInstanceNameA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wmip.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WmiDevInstToInstanceNameW">
+      <ForwardSymbol>wmiclnt.WmiDevInstToInstanceNameW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wmip.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WmiEnumerateGuids">
+      <ForwardSymbol>wmiclnt.WmiEnumerateGuids</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wmip.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WmiExecuteMethodA">
+      <ForwardSymbol>wmiclnt.WmiExecuteMethodA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wmip.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WmiExecuteMethodW">
+      <ForwardSymbol>wmiclnt.WmiExecuteMethodW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wmip.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WmiFileHandleToInstanceNameA">
+      <ForwardSymbol>wmiclnt.WmiFileHandleToInstanceNameA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wmip.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WmiFileHandleToInstanceNameW">
+      <ForwardSymbol>wmiclnt.WmiFileHandleToInstanceNameW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wmip.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WmiFreeBuffer">
+      <ForwardSymbol>wmiclnt.WmiFreeBuffer</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wmip.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WmiMofEnumerateResourcesA">
+      <ForwardSymbol>wmiclnt.WmiMofEnumerateResourcesA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wmip.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WmiMofEnumerateResourcesW">
+      <ForwardSymbol>wmiclnt.WmiMofEnumerateResourcesW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wmip.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WmiNotificationRegistrationA">
+      <ForwardSymbol>wmiclnt.WmiNotificationRegistrationA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wmip.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WmiNotificationRegistrationW">
+      <ForwardSymbol>wmiclnt.WmiNotificationRegistrationW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wmip.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WmiOpenBlock">
+      <ForwardSymbol>wmiclnt.WmiOpenBlock</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wmip.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WmiQueryAllDataA">
+      <ForwardSymbol>wmiclnt.WmiQueryAllDataA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wmip.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WmiQueryAllDataW">
+      <ForwardSymbol>wmiclnt.WmiQueryAllDataW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wmip.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WmiQueryGuidInformation">
+      <ForwardSymbol>wmiclnt.WmiQueryGuidInformation</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wmip.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WmiQuerySingleInstanceA">
+      <ForwardSymbol>wmiclnt.WmiQuerySingleInstanceA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wmip.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WmiQuerySingleInstanceW">
+      <ForwardSymbol>wmiclnt.WmiQuerySingleInstanceW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wmip.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WmiSetSingleInstanceA">
+      <ForwardSymbol>wmiclnt.WmiSetSingleInstanceA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wmip.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WmiSetSingleInstanceW">
+      <ForwardSymbol>wmiclnt.WmiSetSingleInstanceW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wmip.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WmiSetSingleItemA">
+      <ForwardSymbol>wmiclnt.WmiSetSingleItemA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wmip.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WmiSetSingleItemW">
+      <ForwardSymbol>wmiclnt.WmiSetSingleItemW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wmip.lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="mtxex.dll">
+  <OriginalPath>C:\Windows\system32\mtxex.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="DllGetClassObject" />
+    <Symbol Name="GetObjectContext">
+      <ForwardSymbol>COMSVCS.GetObjectContext</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mtx.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MTSCreateActivity">
+      <ForwardSymbol>COMSVCS.MTSCreateActivity</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mtx.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SafeRef">
+      <ForwardSymbol>COMSVCS.SafeRef</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mtx.Lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

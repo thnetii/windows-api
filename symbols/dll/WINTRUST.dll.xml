@@ -1,0 +1,839 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="WINTRUST.dll">
+  <OriginalPath>C:\Windows\system32\WINTRUST.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="AddPersonalTrustDBPages">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CatalogCompactHashDatabase">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ComputeFirstPageHash" />
+    <Symbol Name="ConfigCiFinalPolicy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptCATAdminAcquireContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptCATAdminAcquireContext2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptCATAdminAddCatalog">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptCATAdminCalcHashFromFileHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptCATAdminCalcHashFromFileHandle2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptCATAdminEnumCatalogFromHash">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptCATAdminPauseServiceForBackup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptCATAdminReleaseCatalogContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptCATAdminReleaseContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptCATAdminRemoveCatalog">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptCATAdminResolveCatalogPath">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptCATAllocSortedMemberInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptCATCDFClose">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptCATCDFEnumAttributes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptCATCDFEnumAttributesWithCDFTag">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptCATCDFEnumCatAttributes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptCATCDFEnumMembers">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptCATCDFEnumMembersByCDFTag">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptCATCDFEnumMembersByCDFTagEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptCATCDFOpen">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptCATCatalogInfoFromContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptCATClose">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptCATEnumerateAttr">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptCATEnumerateCatAttr">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptCATEnumerateMember">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptCATFreeSortedMemberInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptCATGetAttrInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptCATGetCatAttrInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptCATGetMemberInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptCATHandleFromStore">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptCATOpen">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptCATPersistStore">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptCATPutAttrInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptCATPutCatAttrInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptCATPutMemberInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptCATStoreFromHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptCATVerifyMember" />
+    <Symbol Name="CryptSIPCreateIndirectData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptSIPGetCaps">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptSIPGetInfo" />
+    <Symbol Name="CryptSIPGetRegWorkingFlags" />
+    <Symbol Name="CryptSIPGetSealedDigest">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptSIPGetSignedDataMsg">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptSIPPutSignedDataMsg">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptSIPRemoveSignedDataMsg">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptSIPVerifyIndirectData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DllRegisterServer" />
+    <Symbol Name="DllUnregisterServer" />
+    <Symbol Name="DriverCleanupPolicy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DriverFinalPolicy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DriverInitializePolicy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FindCertsByIssuer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GenericChainCertificateTrust" />
+    <Symbol Name="GenericChainFinalProv" />
+    <Symbol Name="GetAuthenticodeSha256Hash">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HTTPSCertificateTrust" />
+    <Symbol Name="HTTPSFinalProv">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IsCatalogFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsCatConstructHashTag">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsCatFreeHashTag">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OfficeCleanupPolicy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OfficeInitializePolicy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OpenPersonalTrustDBDialog">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OpenPersonalTrustDBDialogEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SoftpubAuthenticode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SoftpubCheckCert">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SoftpubCleanup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SoftpubDefCertInit" />
+    <Symbol Name="SoftpubDllRegisterServer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SoftpubDllUnregisterServer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SoftpubDumpStructure">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SoftpubFreeDefUsageCallData" />
+    <Symbol Name="SoftpubInitialize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SoftpubLoadDefUsageCallData" />
+    <Symbol Name="SoftpubLoadMessage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SoftpubLoadSignature">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SrpCheckSmartlockerEAandProcessToken" />
+    <Symbol Name="TrustDecode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TrustFindIssuerCertificate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TrustFreeDecode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TrustIsCertificateSelfSigned">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TrustOpenStores">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTGetBioSignatureInfo" />
+    <Symbol Name="WTGetPluginSignatureInfo" />
+    <Symbol Name="WTGetSignatureInfo" />
+    <Symbol Name="WTHelperCertCheckValidSignature">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTHelperCertFindIssuerCertificate" />
+    <Symbol Name="WTHelperCertIsSelfSigned">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTHelperCheckCertUsage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTHelperGetAgencyInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTHelperGetFileHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTHelperGetFileHash">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTHelperGetFileName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTHelperGetKnownUsages">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTHelperGetProvCertFromChain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTHelperGetProvPrivateDataFromChain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTHelperGetProvSignerFromChain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTHelperIsChainedToMicrosoft">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTHelperIsChainedToMicrosoftFromStateData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTHelperIsInRootStore">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTHelperOpenKnownStores">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTHelperProvDataFromStateData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTIsFirstConfigCiResultPreferred" />
+    <Symbol Name="WTLogConfigCiScriptEvent" />
+    <Symbol Name="WTLogConfigCiSignerEvent" />
+    <Symbol Name="WTValidateBioSignaturePolicy" />
+    <Symbol Name="WVTAsn1CatMemberInfo2Decode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WVTAsn1CatMemberInfo2Encode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WVTAsn1CatMemberInfoDecode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WVTAsn1CatMemberInfoEncode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WVTAsn1CatNameValueDecode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WVTAsn1CatNameValueEncode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WVTAsn1IntentToSealAttributeDecode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WVTAsn1IntentToSealAttributeEncode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WVTAsn1SealingSignatureAttributeDecode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WVTAsn1SealingSignatureAttributeEncode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WVTAsn1SealingTimestampAttributeDecode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WVTAsn1SealingTimestampAttributeEncode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WVTAsn1SpcFinancialCriteriaInfoDecode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WVTAsn1SpcFinancialCriteriaInfoEncode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WVTAsn1SpcIndirectDataContentDecode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WVTAsn1SpcIndirectDataContentEncode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WVTAsn1SpcLinkDecode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WVTAsn1SpcLinkEncode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WVTAsn1SpcMinimalCriteriaInfoDecode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WVTAsn1SpcMinimalCriteriaInfoEncode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WVTAsn1SpcPeImageDataDecode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WVTAsn1SpcPeImageDataEncode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WVTAsn1SpcSigInfoDecode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WVTAsn1SpcSigInfoEncode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WVTAsn1SpcSpAgencyInfoDecode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WVTAsn1SpcSpAgencyInfoEncode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WVTAsn1SpcSpOpusInfoDecode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WVTAsn1SpcSpOpusInfoEncode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WVTAsn1SpcStatementTypeDecode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WVTAsn1SpcStatementTypeEncode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinVerifyTrust">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinVerifyTrustEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WintrustAddActionID">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WintrustAddDefaultForUsage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WintrustCertificateTrust">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WintrustGetDefaultForUsage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WintrustGetRegPolicyFlags">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WintrustLoadFunctionPointers">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WintrustRemoveActionID">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WintrustSetDefaultIncludePEPageHashes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WintrustSetRegPolicyFlags">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mscat32DllRegisterServer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mscat32DllUnregisterServer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mssip32DllRegisterServer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mssip32DllUnregisterServer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\WinTrust.Lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

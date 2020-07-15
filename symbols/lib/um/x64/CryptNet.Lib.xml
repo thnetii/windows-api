@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\CryptNet.Lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\CryptNet.Lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="CRYPTNET.dll" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="CryptGetObjectUrl">
+      <Definitions>
+        <DynamicLibrary Name="CRYPTNET.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CryptInstallCancelRetrieval">
+      <Definitions>
+        <DynamicLibrary Name="CRYPTNET.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CryptRetrieveObjectByUrlA">
+      <Definitions>
+        <DynamicLibrary Name="CRYPTNET.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CryptRetrieveObjectByUrlW">
+      <Definitions>
+        <DynamicLibrary Name="CRYPTNET.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CryptUninstallCancelRetrieval">
+      <Definitions>
+        <DynamicLibrary Name="CRYPTNET.dll" />
+      </Definitions>
+    </Symbol>
+  </ExportedSymbols>
+</StaticLibrary>

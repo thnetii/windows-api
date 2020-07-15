@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\inkobjcore.lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\inkobjcore.lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="inkobjcore.dll" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="AddStroke" />
+    <Symbol Name="AddStrokeWithId" />
+    <Symbol Name="AddWordsToWordList" />
+    <Symbol Name="AdviseInkChange" />
+    <Symbol Name="CreateContext" />
+    <Symbol Name="CreateRecognizer" />
+    <Symbol Name="DestroyContext" />
+    <Symbol Name="DestroyRecognizer" />
+    <Symbol Name="DestroyWordList" />
+    <Symbol Name="EndInkInput" />
+    <Symbol Name="GetAllRecognizers" />
+    <Symbol Name="GetBestResultString" />
+    <Symbol Name="GetLatticePtr" />
+    <Symbol Name="GetLeftSeparator" />
+    <Symbol Name="GetRecoAttributes" />
+    <Symbol Name="GetResultPropertyList" />
+    <Symbol Name="GetRightSeparator" />
+    <Symbol Name="GetUnicodeRanges" />
+    <Symbol Name="IsStringSupported" />
+    <Symbol Name="LoadCachedAttributes" />
+    <Symbol Name="MakeWordList" />
+    <Symbol Name="Process" />
+    <Symbol Name="SetConstraint" />
+    <Symbol Name="SetEnabledUnicodeRanges" />
+    <Symbol Name="SetFactoid" />
+    <Symbol Name="SetFlags" />
+    <Symbol Name="SetGuide" />
+    <Symbol Name="SetStrokeGroupId" />
+    <Symbol Name="SetTextContext" />
+    <Symbol Name="SetWordList" />
+  </ExportedSymbols>
+</StaticLibrary>

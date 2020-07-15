@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="CoreMessaging.dll">
+  <OriginalPath>C:\Windows\system32\CoreMessaging.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="CoreUICallComputeMaximumMessageSize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\CoreMessaging.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoreUICallCreateConversationHost">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\CoreMessaging.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoreUICallCreateEndpointHost">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\CoreMessaging.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoreUICallCreateEndpointHostWithSendPriority">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\CoreMessaging.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoreUICallReceive">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\CoreMessaging.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoreUICallSend">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\CoreMessaging.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoreUIConfigureTestHost">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\CoreMessaging.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoreUIConfigureUserIntegration">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\CoreMessaging.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoreUICreate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\CoreMessaging.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoreUICreateAnonymousStream">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\CoreMessaging.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoreUICreateClientWindowIDManager">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\CoreMessaging.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoreUICreateEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\CoreMessaging.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoreUICreateSystemWindowIDManager">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\CoreMessaging.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoreUICreateWindowValidator">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\CoreMessaging.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoreUIFailFastOOM">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\CoreMessaging.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoreUIOpenExisting">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\CoreMessaging.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoreUIRouteToTestRegistrar">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\CoreMessaging.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateDispatcherQueueController">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\CoreMessaging.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateDispatcherQueueForCurrentThread">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\CoreMessaging.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DllCanUnloadNow" />
+    <Symbol Name="DllGetActivationFactory" />
+    <Symbol Name="DllGetClassObject" />
+    <Symbol Name="GetDispatcherQueueForCurrentThread">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\CoreMessaging.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitializeServices">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\CoreMessaging.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsgBlobCreateShared">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\CoreMessaging.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsgBlobCreateStack">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\CoreMessaging.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsgBufferShare">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\CoreMessaging.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsgRelease">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\CoreMessaging.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsgStringCreateShared">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\CoreMessaging.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsgStringCreateStack">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\CoreMessaging.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ServiceMain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\CoreMessaging.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SvchostPushServiceGlobals">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\CoreMessaging.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UninitializeServices">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\CoreMessaging.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

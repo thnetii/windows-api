@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="txfw32.dll">
+  <OriginalPath>C:\Windows\system32\txfw32.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="TxfGetThreadMiniVersionForCreate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\txfw32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TxfLogCreateFileReadContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\txfw32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TxfLogCreateRangeReadContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\txfw32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TxfLogDestroyReadContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\txfw32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TxfLogReadRecords">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\txfw32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TxfLogRecordGetFileName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\txfw32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TxfLogRecordGetGenericType">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\txfw32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TxfReadMetadataInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\txfw32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TxfSetThreadMiniVersionForCreate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\txfw32.lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

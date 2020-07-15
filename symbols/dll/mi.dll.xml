@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="mi.dll">
+  <OriginalPath>C:\Windows\system32\mi.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="MI_Application_InitializeV1">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mi_clientFT_V1">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mi.lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="pdh.dll">
+  <OriginalPath>C:\Windows\system32\pdh.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="PdhAdd009CounterA" />
+    <Symbol Name="PdhAdd009CounterW" />
+    <Symbol Name="PdhAddCounterA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhAddCounterW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhAddEnglishCounterA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhAddEnglishCounterW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhAddRelogCounter" />
+    <Symbol Name="PdhAddV1Counter" />
+    <Symbol Name="PdhAddV2Counter" />
+    <Symbol Name="PdhBindInputDataSourceA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhBindInputDataSourceW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhBrowseCountersA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhBrowseCountersHA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhBrowseCountersHW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhBrowseCountersW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhCalculateCounterFromRawValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhCloseLog">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhCloseQuery">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhCollectQueryData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhCollectQueryDataEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhCollectQueryDataWithTime">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhComputeCounterStatistics">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhConnectMachineA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhConnectMachineW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhCreateSQLTablesA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhCreateSQLTablesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhEnumLogSetNamesA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhEnumLogSetNamesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhEnumMachinesA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhEnumMachinesHA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhEnumMachinesHW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhEnumMachinesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhEnumObjectItemsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhEnumObjectItemsHA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhEnumObjectItemsHW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhEnumObjectItemsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhEnumObjectsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhEnumObjectsHA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhEnumObjectsHW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhEnumObjectsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhExpandCounterPathA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhExpandCounterPathW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhExpandWildCardPathA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhExpandWildCardPathHA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhExpandWildCardPathHW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhExpandWildCardPathW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhFormatFromRawValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhGetCounterInfoA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhGetCounterInfoW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhGetCounterTimeBase">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhGetDataSourceTimeRangeA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhGetDataSourceTimeRangeH">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhGetDataSourceTimeRangeW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhGetDefaultPerfCounterA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhGetDefaultPerfCounterHA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhGetDefaultPerfCounterHW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhGetDefaultPerfCounterW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhGetDefaultPerfObjectA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhGetDefaultPerfObjectHA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhGetDefaultPerfObjectHW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhGetDefaultPerfObjectW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhGetDllVersion">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhGetExplainText" />
+    <Symbol Name="PdhGetFormattedCounterArrayA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhGetFormattedCounterArrayW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhGetFormattedCounterValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhGetLogFileSize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhGetLogFileTypeA" />
+    <Symbol Name="PdhGetLogFileTypeW" />
+    <Symbol Name="PdhGetLogSetGUID">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhGetRawCounterArrayA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhGetRawCounterArrayW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhGetRawCounterValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhIsRealTimeQuery">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhListLogFileHeaderA" />
+    <Symbol Name="PdhListLogFileHeaderW" />
+    <Symbol Name="PdhLookupPerfIndexByNameA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhLookupPerfIndexByNameW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhLookupPerfNameByIndexA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhLookupPerfNameByIndexW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhMakeCounterPathA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhMakeCounterPathW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhOpenLogA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhOpenLogW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhOpenQuery">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhOpenQueryA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhOpenQueryH">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhOpenQueryW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhParseCounterPathA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhParseCounterPathW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhParseInstanceNameA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhParseInstanceNameW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhReadRawLogRecord">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhRelogA" />
+    <Symbol Name="PdhRelogW" />
+    <Symbol Name="PdhRemoveCounter">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhResetRelogCounterValues" />
+    <Symbol Name="PdhSelectDataSourceA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhSelectDataSourceW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhSetCounterScaleFactor">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhSetCounterValue" />
+    <Symbol Name="PdhSetDefaultRealTimeDataSource">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhSetLogSetRunID">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhSetQueryTimeRange">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhTranslate009CounterA" />
+    <Symbol Name="PdhTranslate009CounterW" />
+    <Symbol Name="PdhTranslateLocaleCounterA" />
+    <Symbol Name="PdhTranslateLocaleCounterW" />
+    <Symbol Name="PdhUpdateLogA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhUpdateLogFileCatalog">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhUpdateLogW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhValidatePathA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhValidatePathExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhValidatePathExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhValidatePathW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhVbAddCounter">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhVbCreateCounterPathList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhVbGetCounterPathElements">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhVbGetCounterPathFromList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhVbGetDoubleCounterValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhVbGetLogFileSize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhVbGetOneCounterPath">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhVbIsGoodStatus">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhVbOpenLog">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhVbOpenQuery">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhVbUpdateLog">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhVerifySQLDBA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhVerifySQLDBW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Pdh.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PdhWriteRelogSample" />
+  </ExportedSymbols>
+</DynamicLibrary>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="TRAFFIC.dll">
+  <OriginalPath>C:\Windows\system32\TRAFFIC.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="TcAddFilter">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Traffic.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TcAddFlow">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Traffic.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TcCloseInterface">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Traffic.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TcDeleteFilter">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Traffic.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TcDeleteFlow">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Traffic.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TcDeregisterClient">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Traffic.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TcEnumerateFlows">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Traffic.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TcEnumerateInterfaces">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Traffic.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TcGetFlowNameA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Traffic.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TcGetFlowNameW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Traffic.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TcGetInterfaceList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Traffic.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TcModifyFlow">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Traffic.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TcOpenInterfaceA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Traffic.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TcOpenInterfaceW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Traffic.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TcQueryFlowA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Traffic.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TcQueryFlowW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Traffic.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TcQueryInterface">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Traffic.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TcRegisterClient">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Traffic.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TcSetFlowA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Traffic.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TcSetFlowW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Traffic.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TcSetInterface">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Traffic.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TcSetSocketFlow">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Traffic.Lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

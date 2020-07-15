@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\RTWorkQ.lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\RTWorkQ.lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="RTWorkQ.DLL" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="RtwqAddPeriodicCallback" />
+    <Symbol Name="RtwqAllocateSerialWorkQueue" />
+    <Symbol Name="RtwqAllocateWorkQueue" />
+    <Symbol Name="RtwqBeginRegisterWorkQueueWithMMCSS" />
+    <Symbol Name="RtwqBeginUnregisterWorkQueueWithMMCSS" />
+    <Symbol Name="RtwqCancelDeadline" />
+    <Symbol Name="RtwqCancelWorkItem" />
+    <Symbol Name="RtwqCreateAsyncResult" />
+    <Symbol Name="RtwqEndRegisterWorkQueueWithMMCSS" />
+    <Symbol Name="RtwqEndUnregisterWorkQueueWithMMCSS" />
+    <Symbol Name="RtwqGetWorkQueueMMCSSClass" />
+    <Symbol Name="RtwqGetWorkQueueMMCSSPriority" />
+    <Symbol Name="RtwqGetWorkQueueMMCSSTaskId" />
+    <Symbol Name="RtwqInvokeCallback" />
+    <Symbol Name="RtwqJoinWorkQueue" />
+    <Symbol Name="RtwqLockPlatform" />
+    <Symbol Name="RtwqLockSharedWorkQueue" />
+    <Symbol Name="RtwqLockWorkQueue" />
+    <Symbol Name="RtwqPutWaitingWorkItem" />
+    <Symbol Name="RtwqPutWorkItem" />
+    <Symbol Name="RtwqRegisterPlatformEvents" />
+    <Symbol Name="RtwqRegisterPlatformWithMMCSS" />
+    <Symbol Name="RtwqRemovePeriodicCallback" />
+    <Symbol Name="RtwqScheduleWorkItem" />
+    <Symbol Name="RtwqSetDeadline" />
+    <Symbol Name="RtwqSetDeadline2" />
+    <Symbol Name="RtwqSetLongRunning" />
+    <Symbol Name="RtwqShutdown" />
+    <Symbol Name="RtwqStartup" />
+    <Symbol Name="RtwqUnjoinWorkQueue" />
+    <Symbol Name="RtwqUnlockPlatform" />
+    <Symbol Name="RtwqUnlockWorkQueue" />
+    <Symbol Name="RtwqUnregisterPlatformEvents" />
+    <Symbol Name="RtwqUnregisterPlatformFromMMCSS" />
+  </ExportedSymbols>
+</StaticLibrary>

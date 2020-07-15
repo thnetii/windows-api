@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="SAMLIB.dll">
+  <OriginalPath>C:\Windows\system32\SAMLIB.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="OnMachineUILanguageInit">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamAddMemberToAlias">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamAddMemberToGroup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamAddMultipleMembersToAlias">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamChangePasswordUser">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamChangePasswordUser2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamCloseHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamConnect">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamConnectWithCreds">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamCreateAliasInDomain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamCreateGroupInDomain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamCreateUser2InDomain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamCreateUserInDomain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamDeleteAlias">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamDeleteGroup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamDeleteUser">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamEnumerateAliasesInDomain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamEnumerateDomainsInSamServer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamEnumerateGroupsInDomain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamEnumerateUsersInDomain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamEnumerateUsersInDomain2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamFreeMemory">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamGetAliasMembership">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamGetCompatibilityMode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamGetDisplayEnumerationIndex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamGetGroupsForUser">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamGetMembersInAlias">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamGetMembersInGroup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamLookupDomainInSamServer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamLookupIdsInDomain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamLookupNamesInDomain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamLookupNamesInDomain2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamOpenAlias">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamOpenDomain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamOpenGroup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamOpenUser">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamPerformGenericOperation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamQueryDisplayInformation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamQueryInformationAlias">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamQueryInformationDomain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamQueryInformationGroup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamQueryInformationUser">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamQueryLocalizableAccountsInDomain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamQuerySecurityObject">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamRegisterObjectChangeNotification">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamRemoveMemberFromAlias">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamRemoveMemberFromForeignDomain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamRemoveMemberFromGroup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamRemoveMultipleMembersFromAlias">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamRidToSid">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamSetInformationAlias">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamSetInformationDomain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamSetInformationGroup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamSetInformationUser">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamSetMemberAttributesOfGroup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamSetSecurityObject">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamShutdownSamServer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamTestPrivateFunctionsDomain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamTestPrivateFunctionsUser">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamUnregisterObjectChangeNotification">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamValidatePassword">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamiChangeKeys">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamiChangePasswordUser">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamiChangePasswordUser2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamiEncryptPasswords">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamiLmChangePasswordUser">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamiSetBootKeyInformation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamiSetDSRMPassword">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamiSetDSRMPasswordOWF">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamiSyncDSRMPasswordFromAccount">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samlib.lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

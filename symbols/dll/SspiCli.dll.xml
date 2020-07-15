@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="SspiCli.dll">
+  <OriginalPath>C:\Windows\system32\SspiCli.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="AcceptSecurityContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AcquireCredentialsHandleA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AcquireCredentialsHandleW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AddCredentialsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AddCredentialsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AddSecurityPackageA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AddSecurityPackageW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ApplyControlToken">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ChangeAccountPasswordA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ChangeAccountPasswordW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CompleteAuthToken">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CredMarshalTargetInfo" />
+    <Symbol Name="CredUnmarshalTargetInfo" />
+    <Symbol Name="DecryptMessage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeleteSecurityContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeleteSecurityPackageA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeleteSecurityPackageW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EncryptMessage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumerateSecurityPackagesA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumerateSecurityPackagesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ExportSecurityContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FreeContextBuffer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FreeCredentialsHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetSecurityUserInfo" />
+    <Symbol Name="GetUserNameExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetUserNameExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImpersonateSecurityContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImportSecurityContextA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImportSecurityContextW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitSecurityInterfaceA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitSecurityInterfaceW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitializeSecurityContextA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitializeSecurityContextW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LogonUserExExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LsaCallAuthenticationPackage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LsaConnectUntrusted">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LsaDeregisterLogonProcess">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LsaEnumerateLogonSessions">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LsaFreeReturnBuffer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LsaGetLogonSessionData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LsaLogonUser">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LsaLookupAuthenticationPackage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LsaRegisterLogonProcess">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LsaRegisterPolicyChangeNotification">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LsaUnregisterPolicyChangeNotification">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MakeSignature">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="QueryContextAttributesA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="QueryContextAttributesExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="QueryContextAttributesExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="QueryContextAttributesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="QueryCredentialsAttributesA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="QueryCredentialsAttributesExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="QueryCredentialsAttributesExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="QueryCredentialsAttributesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="QuerySecurityContextToken">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="QuerySecurityPackageInfoA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="QuerySecurityPackageInfoW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RevertSecurityContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SaslAcceptSecurityContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SaslEnumerateProfilesA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SaslEnumerateProfilesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SaslGetContextOption">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SaslGetProfilePackageA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SaslGetProfilePackageW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SaslIdentifyPackageA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SaslIdentifyPackageW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SaslInitializeSecurityContextA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SaslInitializeSecurityContextW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SaslSetContextOption">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SealMessage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SecCacheSspiPackages" />
+    <Symbol Name="SecDeleteUserModeContext" />
+    <Symbol Name="SecInitUserModeContext" />
+    <Symbol Name="SeciAllocateAndSetCallFlags" />
+    <Symbol Name="SeciAllocateAndSetCallTarget" />
+    <Symbol Name="SeciAllocateAndSetIPAddress" />
+    <Symbol Name="SeciFreeCallContext" />
+    <Symbol Name="SeciIsProtectedUser" />
+    <Symbol Name="SetContextAttributesA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetContextAttributesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetCredentialsAttributesA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetCredentialsAttributesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SspiCompareAuthIdentities">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SspiCopyAuthIdentity">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SspiDecryptAuthIdentity">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SspiDecryptAuthIdentityEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SspiEncodeAuthIdentityAsStrings">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SspiEncodeStringsAsAuthIdentity">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SspiEncryptAuthIdentity">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SspiEncryptAuthIdentityEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SspiExcludePackage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SspiFreeAuthIdentity">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SspiGetComputerNameForSPN" />
+    <Symbol Name="SspiGetTargetHostName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SspiIsAuthIdentityEncrypted">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SspiLocalFree">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SspiMarshalAuthIdentity">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SspiPrepareForCredRead">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SspiPrepareForCredWrite">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SspiUnmarshalAuthIdentity">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SspiUnmarshalAuthIdentityInternal" />
+    <Symbol Name="SspiValidateAuthIdentity">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SspiZeroAuthIdentity">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UnsealMessage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VerifySignature">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

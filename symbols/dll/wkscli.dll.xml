@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="wkscli.dll">
+  <OriginalPath>C:\Windows\system32\wkscli.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="NetAddAlternateComputerName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetEnumerateComputerNames">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetGetJoinInformation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetGetJoinableOUs">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetJoinDomain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetRemoveAlternateComputerName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetRenameMachineInDomain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetSetPrimaryComputerName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetUnjoinDomain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetUseAdd">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetUseDel">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetUseEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetUseGetInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetValidateName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetWkstaGetInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetWkstaSetInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetWkstaStatisticsGet">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetWkstaTransportAdd">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetWkstaTransportDel">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetWkstaTransportEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetWkstaUserEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetWkstaUserGetInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetWkstaUserSetInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

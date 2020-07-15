@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="dwmapi.dll">
+  <OriginalPath>C:\Windows\system32\dwmapi.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="DllCanUnloadNow" />
+    <Symbol Name="DllGetClassObject" />
+    <Symbol Name="DwmAttachMilContent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dwmapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DwmDefWindowProc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dwmapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DwmDetachMilContent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dwmapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DwmEnableBlurBehindWindow">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dwmapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DwmEnableComposition">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dwmapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DwmEnableMMCSS">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dwmapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DwmExtendFrameIntoClientArea">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dwmapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DwmFlush">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dwmapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DwmGetColorizationColor">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dwmapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DwmGetCompositionTimingInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dwmapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DwmGetGraphicsStreamClient">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dwmapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DwmGetGraphicsStreamTransformHint">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dwmapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DwmGetTransportAttributes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dwmapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DwmGetUnmetTabRequirements">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dwmapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DwmGetWindowAttribute">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dwmapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DwmInvalidateIconicBitmaps">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dwmapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DwmIsCompositionEnabled">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dwmapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DwmModifyPreviousDxFrameDuration">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dwmapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DwmQueryThumbnailSourceSize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dwmapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DwmRegisterThumbnail">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dwmapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DwmRenderGesture">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dwmapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DwmSetDxFrameDuration">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dwmapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DwmSetIconicLivePreviewBitmap">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dwmapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DwmSetIconicThumbnail">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dwmapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DwmSetPresentParameters">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dwmapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DwmSetWindowAttribute">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dwmapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DwmShowContact">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dwmapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DwmTetherContact">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dwmapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DwmTetherTextContact" />
+    <Symbol Name="DwmTransitionOwnedWindow">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dwmapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DwmUnregisterThumbnail">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dwmapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DwmUpdateThumbnailProperties">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dwmapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DwmpAllocateSecurityDescriptor" />
+    <Symbol Name="DwmpDxBindSwapChain" />
+    <Symbol Name="DwmpDxGetWindowSharedSurface" />
+    <Symbol Name="DwmpDxUnbindSwapChain" />
+    <Symbol Name="DwmpDxUpdateWindowRedirectionBltSurface" />
+    <Symbol Name="DwmpDxUpdateWindowSharedSurface" />
+    <Symbol Name="DwmpDxgiIsThreadDesktopComposited" />
+    <Symbol Name="DwmpEnableDDASupport" />
+    <Symbol Name="DwmpFreeSecurityDescriptor" />
+    <Symbol Name="DwmpGetColorizationParameters" />
+    <Symbol Name="DwmpRenderFlick" />
+    <Symbol Name="DwmpSetColorizationParameters" />
+    <Symbol Name="[NONAME]" />
+  </ExportedSymbols>
+</DynamicLibrary>

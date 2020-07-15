@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="HTTPAPI.dll">
+  <OriginalPath>C:\Windows\system32\HTTPAPI.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="HttpAddFragmentToCache">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\httpapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpAddUrl">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\httpapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpAddUrlToUrlGroup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\httpapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpCancelHttpRequest">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\httpapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpCloseRequestQueue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\httpapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpCloseServerSession">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\httpapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpCloseUrlGroup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\httpapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpControlService">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\httpapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpCreateHttpHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\httpapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpCreateRequestQueue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\httpapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpCreateServerSession">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\httpapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpCreateUrlGroup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\httpapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpDeclarePush">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\httpapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpDelegateRequest">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\httpapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpDeleteServiceConfiguration">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\httpapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpEvaluateRequest">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\httpapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpFlushResponseCache">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\httpapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpGetCounters">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\httpapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpGetExtension">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\httpapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpInitialize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\httpapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpPrepareUrl">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\httpapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpQueryRequestProperty">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\httpapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpQueryRequestQueueProperty">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\httpapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpQueryServerSessionProperty">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\httpapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpQueryServiceConfiguration">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\httpapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpQueryUrlGroupProperty">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\httpapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpReadFragmentFromCache">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\httpapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpReceiveClientCertificate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\httpapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpReceiveHttpRequest">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\httpapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpReceiveRequestEntityBody">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\httpapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpRemoveUrl">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\httpapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpRemoveUrlFromUrlGroup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\httpapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpSendHttpResponse">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\httpapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpSendResponseEntityBody">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\httpapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpSetRequestQueueProperty">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\httpapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpSetServerSessionProperty">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\httpapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpSetServiceConfiguration">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\httpapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpSetUrlGroupProperty">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\httpapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpShutdownRequestQueue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\httpapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpTerminate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\httpapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpUpdateServiceConfiguration">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\httpapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpWaitForDemandStart">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\httpapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpWaitForDisconnect">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\httpapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpWaitForDisconnectEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\httpapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

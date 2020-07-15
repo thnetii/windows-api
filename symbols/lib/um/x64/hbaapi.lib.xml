@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\hbaapi.lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\hbaapi.lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="HBAAPI.dll" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="HBA_CloseAdapter">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBA_FreeLibrary">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBA_GetAdapterAttributes">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBA_GetAdapterName">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBA_GetAdapterPortAttributes">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBA_GetBindingCapability">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBA_GetBindingSupport">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBA_GetDiscoveredPortAttributes">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBA_GetEventBuffer">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBA_GetFC4Statistics">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBA_GetFCPStatistics">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBA_GetFcpPersistentBinding">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBA_GetFcpTargetMapping">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBA_GetFcpTargetMappingV2">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBA_GetNumberOfAdapters">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBA_GetPersistentBindingV2">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBA_GetPortAttributesByWWN">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBA_GetPortStatistics">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBA_GetRNIDMgmtInfo">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBA_GetVendorLibraryAttributes">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBA_GetVersion">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBA_GetWrapperLibraryAttributes">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBA_LoadLibrary">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBA_OpenAdapter">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBA_OpenAdapterByWWN">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBA_RefreshAdapterConfiguration">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBA_RefreshInformation">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBA_RegisterForAdapterAddEvents">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBA_RegisterForAdapterEvents">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBA_RegisterForAdapterPortEvents">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBA_RegisterForAdapterPortStatEvents">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBA_RegisterForLinkEvents">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBA_RegisterForTargetEvents">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBA_RegisterLibrary">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBA_RegisterLibraryV2">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBA_RemoveAllPersistentBindings">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBA_RemoveCallback">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBA_RemovePersistentBinding">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBA_ResetStatistics">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBA_ScsiInquiryV2">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBA_ScsiReadCapacityV2">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBA_ScsiReportLUNsV2">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBA_SendCTPassThru">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBA_SendCTPassThruV2">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBA_SendLIRR">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBA_SendRLS">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBA_SendRNID">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBA_SendRNIDV2">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBA_SendRPL">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBA_SendRPS">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBA_SendReadCapacity">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBA_SendReportLUNs">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBA_SendSRL">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBA_SendScsiInquiry">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBA_SetBindingSupport">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBA_SetPersistentBindingV2">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBA_SetRNIDMgmtInfo">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HbaGetAdapterNameByDeviceInstanceId">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SMHBA_GetAdapterAttributes">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SMHBA_GetAdapterPortAttributes">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SMHBA_GetBindingCapability">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SMHBA_GetBindingSupport">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SMHBA_GetDiscoveredPortAttributes">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SMHBA_GetFCPhyAttributes">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SMHBA_GetLUNStatistics">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SMHBA_GetNumberOfPorts">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SMHBA_GetPersistentBinding">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SMHBA_GetPhyStatistics">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SMHBA_GetPortAttributesByWWN">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SMHBA_GetPortType">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SMHBA_GetProtocolStatistics">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SMHBA_GetSASPhyAttributes">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SMHBA_GetTargetMapping">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SMHBA_GetVendorLibraryAttributes">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SMHBA_GetVersion">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SMHBA_GetWrapperLibraryAttributes">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SMHBA_RegisterForAdapterAddEvents">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SMHBA_RegisterForAdapterEvents">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SMHBA_RegisterForAdapterPhyStatEvents">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SMHBA_RegisterForAdapterPortEvents">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SMHBA_RegisterForAdapterPortStatEvents">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SMHBA_RegisterForTargetEvents">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SMHBA_RegisterLibrary">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SMHBA_RemoveAllPersistentBindings">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SMHBA_RemovePersistentBinding">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SMHBA_ScsiInquiry">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SMHBA_ScsiReadCapacity">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SMHBA_ScsiReportLuns">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SMHBA_SendECHO">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SMHBA_SendSMPPassThru">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SMHBA_SendTEST">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SMHBA_SetBindingSupport">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SMHBA_SetPersistentBinding">
+      <Definitions>
+        <DynamicLibrary Name="HBAAPI.dll" />
+      </Definitions>
+    </Symbol>
+  </ExportedSymbols>
+</StaticLibrary>

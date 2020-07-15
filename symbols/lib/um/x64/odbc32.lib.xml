@@ -1,0 +1,890 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\odbc32.lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\odbc32.lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="ODBC32.dll" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="CloseODBCPerfData">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CollectODBCPerfData">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CursorLibLockDbc">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CursorLibLockDesc">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CursorLibLockStmt">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CursorLibTransact">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DllBidEntryPoint">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetODBCSharedData">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="LockHandle">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ODBCGetTryWaitValue">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ODBCInternalConnectW">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ODBCQualifyFileDSNW">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ODBCSetTryWaitValue">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OpenODBCPerfData">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PostComponentError">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PostODBCComponentError">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PostODBCError">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLAllocConnect">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLAllocEnv">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLAllocHandle">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLAllocHandleStd">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLAllocStmt">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLBindCol">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLBindParam">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLBindParameter">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLBrowseConnect">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLBrowseConnectA">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLBrowseConnectW">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLBulkOperations">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLCancel">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLCancelHandle">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLCloseCursor">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLColAttribute">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLColAttributeA">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLColAttributeW">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLColAttributes">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLColAttributesA">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLColAttributesW">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLColumnPrivileges">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLColumnPrivilegesA">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLColumnPrivilegesW">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLColumns">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLColumnsA">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLColumnsW">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLCompleteAsync">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLConnect">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLConnectA">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLConnectW">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLCopyDesc">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLDataSources">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLDataSourcesA">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLDataSourcesW">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLDescribeCol">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLDescribeColA">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLDescribeColW">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLDescribeParam">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLDisconnect">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLDriverConnect">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLDriverConnectA">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLDriverConnectW">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLDrivers">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLDriversA">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLDriversW">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLEndTran">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLError">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLErrorA">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLErrorW">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLExecDirect">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLExecDirectA">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLExecDirectW">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLExecute">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLExtendedFetch">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLFetch">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLFetchScroll">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLForeignKeys">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLForeignKeysA">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLForeignKeysW">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLFreeConnect">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLFreeEnv">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLFreeHandle">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLFreeStmt">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLGetConnectAttr">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLGetConnectAttrA">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLGetConnectAttrW">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLGetConnectOption">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLGetConnectOptionA">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLGetConnectOptionW">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLGetCursorName">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLGetCursorNameA">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLGetCursorNameW">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLGetData">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLGetDescField">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLGetDescFieldA">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLGetDescFieldW">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLGetDescRec">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLGetDescRecA">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLGetDescRecW">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLGetDiagField">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLGetDiagFieldA">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLGetDiagFieldW">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLGetDiagRec">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLGetDiagRecA">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLGetDiagRecW">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLGetEnvAttr">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLGetFunctions">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLGetInfo">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLGetInfoA">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLGetInfoW">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLGetStmtAttr">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLGetStmtAttrA">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLGetStmtAttrW">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLGetStmtOption">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLGetTypeInfo">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLGetTypeInfoA">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLGetTypeInfoW">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLMoreResults">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLNativeSql">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLNativeSqlA">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLNativeSqlW">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLNumParams">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLNumResultCols">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLParamData">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLParamOptions">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLPrepare">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLPrepareA">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLPrepareW">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLPrimaryKeys">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLPrimaryKeysA">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLPrimaryKeysW">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLProcedureColumns">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLProcedureColumnsA">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLProcedureColumnsW">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLProcedures">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLProceduresA">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLProceduresW">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLPutData">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLRowCount">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLSetConnectAttr">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLSetConnectAttrA">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLSetConnectAttrW">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLSetConnectOption">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLSetConnectOptionA">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLSetConnectOptionW">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLSetCursorName">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLSetCursorNameA">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLSetCursorNameW">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLSetDescField">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLSetDescFieldA">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLSetDescFieldW">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLSetDescRec">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLSetEnvAttr">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLSetParam">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLSetPos">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLSetScrollOptions">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLSetStmtAttr">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLSetStmtAttrA">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLSetStmtAttrW">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLSetStmtOption">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLSpecialColumns">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLSpecialColumnsA">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLSpecialColumnsW">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLStatistics">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLStatisticsA">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLStatisticsW">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLTablePrivileges">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLTablePrivilegesA">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLTablePrivilegesW">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLTables">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLTablesA">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLTablesW">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SQLTransact">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SearchStatusCode">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="VFreeErrors">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="VRetrieveDriverErrorsRowCol">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ValidateErrorQueue">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="g_hHeapMalloc">
+      <Definitions>
+        <DynamicLibrary Name="ODBC32.dll" />
+      </Definitions>
+    </Symbol>
+  </ExportedSymbols>
+</StaticLibrary>

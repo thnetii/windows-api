@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="Normaliz.dll">
+  <OriginalPath>C:\Windows\system32\Normaliz.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="IdnToAscii">
+      <ForwardSymbol>kernelbase.IdnToAscii</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\normaliz.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IdnToNameprepUnicode">
+      <ForwardSymbol>kernelbase.IdnToNameprepUnicode</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\normaliz.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IdnToUnicode">
+      <ForwardSymbol>kernelbase.IdnToUnicode</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\normaliz.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IsNormalizedString">
+      <ForwardSymbol>kernelbase.IsNormalizedString</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\normaliz.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NormalizeString">
+      <ForwardSymbol>kernelbase.NormalizeString</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\normaliz.lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

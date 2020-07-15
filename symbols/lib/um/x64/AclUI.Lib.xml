@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\AclUI.Lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\AclUI.Lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="ACLUI.dll" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="CreateSecurityPage">
+      <Definitions>
+        <DynamicLibrary Name="ACLUI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="EditConditionalAceClaims">
+      <Definitions>
+        <DynamicLibrary Name="ACLUI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="EditResourceCondition">
+      <Definitions>
+        <DynamicLibrary Name="ACLUI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="EditSecurity">
+      <Definitions>
+        <DynamicLibrary Name="ACLUI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="EditSecurityAdvanced">
+      <Definitions>
+        <DynamicLibrary Name="ACLUI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="IID_ISecurityInformation">
+      <Definitions>
+        <DynamicLibrary Name="ACLUI.dll" />
+      </Definitions>
+    </Symbol>
+  </ExportedSymbols>
+</StaticLibrary>

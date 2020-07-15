@@ -1,0 +1,750 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="SECUR32.dll">
+  <OriginalPath>C:\Windows\system32\SECUR32.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="AcceptSecurityContext">
+      <ForwardSymbol>SSPICLI.AcceptSecurityContext</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AcquireCredentialsHandleA">
+      <ForwardSymbol>SSPICLI.AcquireCredentialsHandleA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AcquireCredentialsHandleW">
+      <ForwardSymbol>SSPICLI.AcquireCredentialsHandleW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AddCredentialsA">
+      <ForwardSymbol>SSPICLI.AddCredentialsA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AddCredentialsW">
+      <ForwardSymbol>SSPICLI.AddCredentialsW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AddSecurityPackageA">
+      <ForwardSymbol>SSPICLI.AddSecurityPackageA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AddSecurityPackageW">
+      <ForwardSymbol>SSPICLI.AddSecurityPackageW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ApplyControlToken">
+      <ForwardSymbol>SSPICLI.ApplyControlToken</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ChangeAccountPasswordA">
+      <ForwardSymbol>SSPICLI.ChangeAccountPasswordA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ChangeAccountPasswordW">
+      <ForwardSymbol>SSPICLI.ChangeAccountPasswordW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CloseLsaPerformanceData" />
+    <Symbol Name="CollectLsaPerformanceData" />
+    <Symbol Name="CompleteAuthToken">
+      <ForwardSymbol>SSPICLI.CompleteAuthToken</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CredMarshalTargetInfo">
+      <ForwardSymbol>SSPICLI.CredMarshalTargetInfo</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CredUnmarshalTargetInfo">
+      <ForwardSymbol>SSPICLI.CredUnmarshalTargetInfo</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="DecryptMessage">
+      <ForwardSymbol>SSPICLI.DecryptMessage</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeleteSecurityContext">
+      <ForwardSymbol>SSPICLI.DeleteSecurityContext</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeleteSecurityPackageA">
+      <ForwardSymbol>SSPICLI.DeleteSecurityPackageA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeleteSecurityPackageW">
+      <ForwardSymbol>SSPICLI.DeleteSecurityPackageW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EncryptMessage">
+      <ForwardSymbol>SSPICLI.EncryptMessage</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumerateSecurityPackagesA">
+      <ForwardSymbol>SSPICLI.EnumerateSecurityPackagesA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumerateSecurityPackagesW">
+      <ForwardSymbol>SSPICLI.EnumerateSecurityPackagesW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ExportSecurityContext">
+      <ForwardSymbol>SSPICLI.ExportSecurityContext</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FreeContextBuffer">
+      <ForwardSymbol>SSPICLI.FreeContextBuffer</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FreeCredentialsHandle">
+      <ForwardSymbol>SSPICLI.FreeCredentialsHandle</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetComputerObjectNameA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetComputerObjectNameW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetSecurityUserInfo">
+      <ForwardSymbol>SSPICLI.GetSecurityUserInfo</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetUserNameExA">
+      <ForwardSymbol>SSPICLI.GetUserNameExA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetUserNameExW">
+      <ForwardSymbol>SSPICLI.GetUserNameExW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImpersonateSecurityContext">
+      <ForwardSymbol>SSPICLI.ImpersonateSecurityContext</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImportSecurityContextA">
+      <ForwardSymbol>SSPICLI.ImportSecurityContextA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImportSecurityContextW">
+      <ForwardSymbol>SSPICLI.ImportSecurityContextW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitSecurityInterfaceA">
+      <ForwardSymbol>SSPICLI.InitSecurityInterfaceA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitSecurityInterfaceW">
+      <ForwardSymbol>SSPICLI.InitSecurityInterfaceW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitializeSecurityContextA">
+      <ForwardSymbol>SSPICLI.InitializeSecurityContextA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitializeSecurityContextW">
+      <ForwardSymbol>SSPICLI.InitializeSecurityContextW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LsaCallAuthenticationPackage">
+      <ForwardSymbol>SSPICLI.LsaCallAuthenticationPackage</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LsaConnectUntrusted">
+      <ForwardSymbol>SSPICLI.LsaConnectUntrusted</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LsaDeregisterLogonProcess">
+      <ForwardSymbol>SSPICLI.LsaDeregisterLogonProcess</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LsaEnumerateLogonSessions">
+      <ForwardSymbol>SSPICLI.LsaEnumerateLogonSessions</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LsaFreeReturnBuffer">
+      <ForwardSymbol>SSPICLI.LsaFreeReturnBuffer</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LsaGetLogonSessionData">
+      <ForwardSymbol>SSPICLI.LsaGetLogonSessionData</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LsaLogonUser">
+      <ForwardSymbol>SSPICLI.LsaLogonUser</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LsaLookupAuthenticationPackage">
+      <ForwardSymbol>SSPICLI.LsaLookupAuthenticationPackage</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LsaRegisterLogonProcess">
+      <ForwardSymbol>SSPICLI.LsaRegisterLogonProcess</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LsaRegisterPolicyChangeNotification">
+      <ForwardSymbol>SSPICLI.LsaRegisterPolicyChangeNotification</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LsaUnregisterPolicyChangeNotification">
+      <ForwardSymbol>SSPICLI.LsaUnregisterPolicyChangeNotification</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MakeSignature">
+      <ForwardSymbol>SSPICLI.MakeSignature</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OpenLsaPerformanceData" />
+    <Symbol Name="QueryContextAttributesA">
+      <ForwardSymbol>SSPICLI.QueryContextAttributesA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="QueryContextAttributesW">
+      <ForwardSymbol>SSPICLI.QueryContextAttributesW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="QueryCredentialsAttributesA">
+      <ForwardSymbol>SSPICLI.QueryCredentialsAttributesA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="QueryCredentialsAttributesW">
+      <ForwardSymbol>SSPICLI.QueryCredentialsAttributesW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="QuerySecurityContextToken">
+      <ForwardSymbol>SSPICLI.QuerySecurityContextToken</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="QuerySecurityPackageInfoA">
+      <ForwardSymbol>SSPICLI.QuerySecurityPackageInfoA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="QuerySecurityPackageInfoW">
+      <ForwardSymbol>SSPICLI.QuerySecurityPackageInfoW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RevertSecurityContext">
+      <ForwardSymbol>SSPICLI.RevertSecurityContext</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SaslAcceptSecurityContext">
+      <ForwardSymbol>SSPICLI.SaslAcceptSecurityContext</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SaslEnumerateProfilesA">
+      <ForwardSymbol>SSPICLI.SaslEnumerateProfilesA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SaslEnumerateProfilesW">
+      <ForwardSymbol>SSPICLI.SaslEnumerateProfilesW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SaslGetContextOption">
+      <ForwardSymbol>SSPICLI.SaslGetContextOption</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SaslGetProfilePackageA">
+      <ForwardSymbol>SSPICLI.SaslGetProfilePackageA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SaslGetProfilePackageW">
+      <ForwardSymbol>SSPICLI.SaslGetProfilePackageW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SaslIdentifyPackageA">
+      <ForwardSymbol>SSPICLI.SaslIdentifyPackageA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SaslIdentifyPackageW">
+      <ForwardSymbol>SSPICLI.SaslIdentifyPackageW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SaslInitializeSecurityContextA">
+      <ForwardSymbol>SSPICLI.SaslInitializeSecurityContextA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SaslInitializeSecurityContextW">
+      <ForwardSymbol>SSPICLI.SaslInitializeSecurityContextW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SaslSetContextOption">
+      <ForwardSymbol>SSPICLI.SaslSetContextOption</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SealMessage">
+      <ForwardSymbol>SSPICLI.SealMessage</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SeciAllocateAndSetCallFlags">
+      <ForwardSymbol>SSPICLI.SeciAllocateAndSetCallFlags</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SeciAllocateAndSetIPAddress">
+      <ForwardSymbol>SSPICLI.SeciAllocateAndSetIPAddress</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SeciFreeCallContext">
+      <ForwardSymbol>SSPICLI.SeciFreeCallContext</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SecpFreeMemory" />
+    <Symbol Name="SecpTranslateName" />
+    <Symbol Name="SecpTranslateNameEx" />
+    <Symbol Name="SetContextAttributesA">
+      <ForwardSymbol>SSPICLI.SetContextAttributesA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetContextAttributesW">
+      <ForwardSymbol>SSPICLI.SetContextAttributesW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetCredentialsAttributesA">
+      <ForwardSymbol>SSPICLI.SetCredentialsAttributesA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetCredentialsAttributesW">
+      <ForwardSymbol>SSPICLI.SetCredentialsAttributesW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SspiCompareAuthIdentities">
+      <ForwardSymbol>SSPICLI.SspiCompareAuthIdentities</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SspiCopyAuthIdentity">
+      <ForwardSymbol>SSPICLI.SspiCopyAuthIdentity</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SspiDecryptAuthIdentity">
+      <ForwardSymbol>SSPICLI.SspiDecryptAuthIdentity</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SspiEncodeAuthIdentityAsStrings">
+      <ForwardSymbol>SSPICLI.SspiEncodeAuthIdentityAsStrings</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SspiEncodeStringsAsAuthIdentity">
+      <ForwardSymbol>SSPICLI.SspiEncodeStringsAsAuthIdentity</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SspiEncryptAuthIdentity">
+      <ForwardSymbol>SSPICLI.SspiEncryptAuthIdentity</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SspiExcludePackage">
+      <ForwardSymbol>SSPICLI.SspiExcludePackage</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SspiFreeAuthIdentity">
+      <ForwardSymbol>SSPICLI.SspiFreeAuthIdentity</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SspiGetTargetHostName">
+      <ForwardSymbol>SSPICLI.SspiGetTargetHostName</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SspiIsAuthIdentityEncrypted">
+      <ForwardSymbol>SSPICLI.SspiIsAuthIdentityEncrypted</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SspiLocalFree">
+      <ForwardSymbol>SSPICLI.SspiLocalFree</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SspiMarshalAuthIdentity">
+      <ForwardSymbol>SSPICLI.SspiMarshalAuthIdentity</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SspiPrepareForCredRead">
+      <ForwardSymbol>SSPICLI.SspiPrepareForCredRead</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SspiPrepareForCredWrite">
+      <ForwardSymbol>SSPICLI.SspiPrepareForCredWrite</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SspiUnmarshalAuthIdentity">
+      <ForwardSymbol>SSPICLI.SspiUnmarshalAuthIdentity</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SspiValidateAuthIdentity">
+      <ForwardSymbol>SSPICLI.SspiValidateAuthIdentity</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SspiZeroAuthIdentity">
+      <ForwardSymbol>SSPICLI.SspiZeroAuthIdentity</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TranslateNameA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TranslateNameW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UnsealMessage">
+      <ForwardSymbol>SSPICLI.UnsealMessage</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VerifySignature">
+      <ForwardSymbol>SSPICLI.VerifySignature</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Secur32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

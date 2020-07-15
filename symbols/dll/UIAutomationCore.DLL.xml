@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="UIAutomationCore.DLL">
+  <OriginalPath>C:\Windows\system32\UIAutomationCore.DLL</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="DllCanUnloadNow" />
+    <Symbol Name="DllGetClassObject" />
+    <Symbol Name="DockPattern_SetDockPosition">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ExpandCollapsePattern_Collapse">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ExpandCollapsePattern_Expand">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GridPattern_GetItem">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IgnoreLeaksInCurrentlyTrackedMemory">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InvokePattern_Invoke">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ItemContainerPattern_FindItemByProperty">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LegacyIAccessiblePattern_DoDefaultAction">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LegacyIAccessiblePattern_GetIAccessible">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LegacyIAccessiblePattern_Select">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LegacyIAccessiblePattern_SetValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MultipleViewPattern_GetViewName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MultipleViewPattern_SetCurrentView">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PostTestCheckForLeaks">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RangeValuePattern_SetValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ScrollItemPattern_ScrollIntoView">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ScrollPattern_Scroll">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ScrollPattern_SetScrollPercent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SelectionItemPattern_AddToSelection">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SelectionItemPattern_RemoveFromSelection">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SelectionItemPattern_Select">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SynchronizedInputPattern_Cancel">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SynchronizedInputPattern_StartListening">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TextPattern_GetSelection">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TextPattern_GetVisibleRanges">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TextPattern_RangeFromChild">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TextPattern_RangeFromPoint">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TextPattern_get_DocumentRange">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TextPattern_get_SupportedTextSelection">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TextRange_AddToSelection">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TextRange_Clone">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TextRange_Compare">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TextRange_CompareEndpoints">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TextRange_ExpandToEnclosingUnit">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TextRange_FindAttribute">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TextRange_FindText">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TextRange_GetAttributeValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TextRange_GetBoundingRectangles">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TextRange_GetChildren">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TextRange_GetEnclosingElement">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TextRange_GetText">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TextRange_Move">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TextRange_MoveEndpointByRange">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TextRange_MoveEndpointByUnit">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TextRange_RemoveFromSelection">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TextRange_ScrollIntoView">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TextRange_Select">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TogglePattern_Toggle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TransformPattern_Move">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TransformPattern_Resize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TransformPattern_Rotate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UiaAddEvent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UiaClientsAreListening">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UiaDisconnectAllProviders">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UiaDisconnectProvider">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UiaEventAddWindow">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UiaEventRemoveWindow">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UiaFind">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UiaGetErrorDescription">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UiaGetPatternProvider">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UiaGetPropertyValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UiaGetReservedMixedAttributeValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UiaGetReservedNotSupportedValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UiaGetRootNode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UiaGetRuntimeId">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UiaGetUpdatedCache">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UiaHPatternObjectFromVariant">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UiaHTextRangeFromVariant">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UiaHUiaNodeFromVariant">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UiaHasServerSideProvider">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UiaHostProviderFromHwnd">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UiaIAccessibleFromProvider">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UiaLookupId">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UiaNavigate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UiaNodeFromFocus">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UiaNodeFromHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UiaNodeFromPoint">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UiaNodeFromProvider">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UiaNodeRelease">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UiaPatternRelease">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UiaProviderForNonClient">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UiaProviderFromIAccessible">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UiaRaiseAsyncContentLoadedEvent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UiaRaiseAutomationEvent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UiaRaiseAutomationPropertyChangedEvent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UiaRaiseChangesEvent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UiaRaiseNotificationEvent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UiaRaiseStructureChangedEvent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UiaRaiseTextEditTextChangedEvent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UiaRegisterProviderCallback">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UiaRemoveEvent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UiaReturnRawElementProvider">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UiaSetFocus">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UiaTextRangeRelease">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UpdateErrorLoggingCallback">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ValuePattern_SetValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VirtualizedItemPattern_Realize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WindowPattern_Close">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WindowPattern_SetWindowVisualState">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WindowPattern_WaitForInputIdle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UIAutomationCore.lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

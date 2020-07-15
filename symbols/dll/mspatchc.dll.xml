@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="mspatchc.dll">
+  <OriginalPath>C:\Windows\system32\mspatchc.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="CreatePatchFileA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mspatchc.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreatePatchFileByHandles">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mspatchc.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreatePatchFileByHandlesEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mspatchc.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreatePatchFileExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mspatchc.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreatePatchFileExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mspatchc.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreatePatchFileW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mspatchc.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ExtractPatchHeaderToFileA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mspatchc.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ExtractPatchHeaderToFileByHandles">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mspatchc.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ExtractPatchHeaderToFileW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mspatchc.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetFilePatchSignatureA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mspatchc.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetFilePatchSignatureByBuffer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mspatchc.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetFilePatchSignatureByHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mspatchc.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetFilePatchSignatureW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mspatchc.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NormalizeFileForPatchSignature">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mspatchc.lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

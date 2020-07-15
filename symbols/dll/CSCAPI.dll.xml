@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="CSCAPI.dll">
+  <OriginalPath>C:\Windows\system32\CSCAPI.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="CscNetApiGetInterface" />
+    <Symbol Name="CscSearchApiGetInterface">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cscapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OfflineFilesEnable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cscapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OfflineFilesGetShareCachingMode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cscapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OfflineFilesQueryStatus">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cscapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OfflineFilesQueryStatusEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cscapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OfflineFilesStart">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cscapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

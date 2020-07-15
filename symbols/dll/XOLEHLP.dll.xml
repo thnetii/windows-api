@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="XOLEHLP.dll">
+  <OriginalPath>C:\Windows\system32\XOLEHLP.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="DtcGetTransactionManager">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\xolehlp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DtcGetTransactionManagerC">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\xolehlp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DtcGetTransactionManagerEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\xolehlp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DtcGetTransactionManagerExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\xolehlp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DtcGetTransactionManagerExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\xolehlp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FreezeLocalTransactionManagers" />
+    <Symbol Name="GetDtcLocaleResourceHandle" />
+    <Symbol Name="ThawLocalTransactionManagers" />
+  </ExportedSymbols>
+</DynamicLibrary>

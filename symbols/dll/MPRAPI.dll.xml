@@ -1,0 +1,966 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="MPRAPI.dll">
+  <OriginalPath>C:\Windows\system32\MPRAPI.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="CompressPhoneNumber">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminAddRoutingDomain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminBufferFree">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminConnectionClearStats">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminConnectionEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminConnectionEnumEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminConnectionGetInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminConnectionGetInfoEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminConnectionRemoveQuarantine">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminDeleteRoutingDomain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminDeregisterConnectionNotification">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminDeviceEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminEstablishDomainRasServer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminFreeRoutingDomainConfigEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminGetErrorString">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminGetPDCServer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminGetProtocolStatistics">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminGetRoutingDomainId">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceAddIkev2Policy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceClearStatisticsEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceConnect">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceCreate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceCreateEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceDelete">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceDeviceGetInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceDeviceSetInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceDisconnect">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceEnumEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceGetCredentials">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceGetCredentialsEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceGetCustomInfoEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceGetHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceGetInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceGetInfoEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceGetStatisticsEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceQueryUpdateResult">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceSetCredentials">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceSetCredentialsEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceSetCustomInfoEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceSetInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceSetInfoEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceTransportAdd">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceTransportGetInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceTransportRemove">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceTransportSetInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceUpdatePhonebookInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceUpdateRoutes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminIsDomainRasServer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminIsModernStackEnabled">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminIsMultiTenancyEnabled">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminIsServiceInitialized">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminIsServiceRunning">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminMIBBufferFree">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminMIBEntryCreate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminMIBEntryDelete">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminMIBEntryGet">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminMIBEntryGetFirst">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminMIBEntryGetNext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminMIBEntrySet">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminMIBServerConnect">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminMIBServerDisconnect">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminMarkServerOffline">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminPortClearStats">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminPortDisconnect">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminPortEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminPortGetInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminPortReset">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminProtocolAction">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminRegisterConnectionNotification">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminRoutingDomainConnectionEnumEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminRoutingDomainGetConfigEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminRoutingDomainSetConfigEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminRoutingDomainsEnumEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminSendUserMessage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminServerConnect">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminServerDisconnect">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminServerGetCredentials">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminServerGetInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminServerGetInfoEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminServerSetCredentials">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminServerSetInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminServerSetInfoEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminTransportCreate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminTransportGetInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminTransportSetInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminUpdateConnection">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminUpgradeUsers">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminUserClose">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminUserGetInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminUserOpen">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminUserRead">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminUserReadProfFlags">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminUserServerConnect">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminUserServerDisconnect">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminUserSetInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminUserWrite">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprAdminUserWriteProfFlags">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprConfigAddRoutingDomain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprConfigBufferFree">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprConfigDeleteRoutingDomain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprConfigFilterGetInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprConfigFilterSetInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprConfigFreeRoutingDomainConfigEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprConfigGetFriendlyName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprConfigGetGuidName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprConfigGetRoutingDomainId">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprConfigInterfaceCreate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprConfigInterfaceCreateEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprConfigInterfaceDelete">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprConfigInterfaceEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprConfigInterfaceEnumEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprConfigInterfaceGetCustomInfoEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprConfigInterfaceGetHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprConfigInterfaceGetInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprConfigInterfaceGetInfoEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprConfigInterfaceSetCustomInfoEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprConfigInterfaceSetInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprConfigInterfaceSetInfoEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprConfigInterfaceTransportAdd">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprConfigInterfaceTransportEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprConfigInterfaceTransportGetHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprConfigInterfaceTransportGetInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprConfigInterfaceTransportRemove">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprConfigInterfaceTransportSetInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprConfigIsMultiTenancyEnabled">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprConfigRoutingDomainEnumEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprConfigRoutingDomainGetConfigEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprConfigRoutingDomainSetConfigEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprConfigServerBackup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprConfigServerConnect">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprConfigServerDisconnect">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprConfigServerGetInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprConfigServerGetInfoEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprConfigServerInstall">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprConfigServerRefresh">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprConfigServerRestore">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprConfigServerSetInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprConfigServerSetInfoEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprConfigTransportCreate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprConfigTransportDelete">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprConfigTransportEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprConfigTransportGetHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprConfigTransportGetInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprConfigTransportSetInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprDomainQueryRasServer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprDomainRegisterRasServer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprFreeInterfaceInfoEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprGetUsrParams">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprInfoBlockAdd">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprInfoBlockFind">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprInfoBlockQuerySize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprInfoBlockRemove">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprInfoBlockSet">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprInfoCreate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprInfoDelete">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprInfoDuplicate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprInfoRemoveAll">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MprPortSetUsage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasPrivilegeAndCallBackNumber">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mprapi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

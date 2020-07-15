@@ -1,0 +1,1235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\Wldap32.Lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\Wldap32.Lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="WLDAP32.dll" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="LdapGetLastError">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="LdapMapErrorToWin32">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="LdapUTF8ToUnicode">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="LdapUnicodeToUTF8">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ber_alloc_t">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ber_bvdup">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ber_bvecfree">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ber_bvfree">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ber_first_element">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ber_flatten">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ber_free">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ber_init">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ber_next_element">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ber_peek_tag">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ber_printf">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ber_scanf">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ber_skip_tag">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="cldap_open">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="cldap_openA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="cldap_openW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_abandon">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_add">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_addA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_addW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_add_ext">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_add_extA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_add_extW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_add_ext_s">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_add_ext_sA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_add_ext_sW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_add_s">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_add_sA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_add_sW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_bind">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_bindA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_bindW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_bind_s">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_bind_sA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_bind_sW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_check_filterA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_check_filterW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_cleanup">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_close_extended_op">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_compare">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_compareA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_compareW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_compare_ext">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_compare_extA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_compare_extW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_compare_ext_s">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_compare_ext_sA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_compare_ext_sW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_compare_s">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_compare_sA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_compare_sW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_conn_from_msg">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_connect">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_control_free">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_control_freeA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_control_freeW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_controls_free">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_controls_freeA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_controls_freeW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_count_entries">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_count_references">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_count_values">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_count_valuesA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_count_valuesW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_count_values_len">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_create_page_control">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_create_page_controlA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_create_page_controlW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_create_sort_control">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_create_sort_controlA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_create_sort_controlW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_create_vlv_controlA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_create_vlv_controlW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_delete">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_deleteA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_deleteW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_delete_ext">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_delete_extA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_delete_extW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_delete_ext_s">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_delete_ext_sA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_delete_ext_sW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_delete_s">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_delete_sA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_delete_sW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_dn2ufn">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_dn2ufnA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_dn2ufnW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_encode_sort_controlA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_encode_sort_controlW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_err2string">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_err2stringA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_err2stringW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_escape_filter_element">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_escape_filter_elementA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_escape_filter_elementW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_explode_dn">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_explode_dnA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_explode_dnW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_extended_operation">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_extended_operationA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_extended_operationW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_extended_operation_sA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_extended_operation_sW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_first_attribute">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_first_attributeA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_first_attributeW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_first_entry">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_first_reference">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_free_controls">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_free_controlsA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_free_controlsW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_get_dn">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_get_dnA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_get_dnW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_get_next_page">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_get_next_page_s">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_get_option">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_get_optionA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_get_optionW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_get_paged_count">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_get_values">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_get_valuesA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_get_valuesW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_get_values_len">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_get_values_lenA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_get_values_lenW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_init">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_initA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_initW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_memfree">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_memfreeA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_memfreeW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_modify">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_modifyA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_modifyW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_modify_ext">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_modify_extA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_modify_extW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_modify_ext_s">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_modify_ext_sA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_modify_ext_sW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_modify_s">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_modify_sA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_modify_sW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_modrdn">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_modrdn2">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_modrdn2A">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_modrdn2W">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_modrdn2_s">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_modrdn2_sA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_modrdn2_sW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_modrdnA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_modrdnW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_modrdn_s">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_modrdn_sA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_modrdn_sW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_msgfree">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_next_attribute">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_next_attributeA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_next_attributeW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_next_entry">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_next_reference">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_open">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_openA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_openW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_parse_extended_resultA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_parse_extended_resultW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_parse_page_control">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_parse_page_controlA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_parse_page_controlW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_parse_reference">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_parse_referenceA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_parse_referenceW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_parse_result">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_parse_resultA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_parse_resultW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_parse_sort_control">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_parse_sort_controlA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_parse_sort_controlW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_parse_vlv_controlA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_parse_vlv_controlW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_perror">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_rename_ext">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_rename_extA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_rename_extW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_rename_ext_s">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_rename_ext_sA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_rename_ext_sW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_result">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_result2error">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_sasl_bindA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_sasl_bindW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_sasl_bind_sA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_sasl_bind_sW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_search">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_searchA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_searchW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_search_abandon_page">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_search_ext">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_search_extA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_search_extW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_search_ext_s">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_search_ext_sA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_search_ext_sW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_search_init_page">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_search_init_pageA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_search_init_pageW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_search_s">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_search_sA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_search_sW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_search_st">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_search_stA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_search_stW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_set_dbg_flags">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_set_dbg_routine">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_set_option">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_set_optionA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_set_optionW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_simple_bind">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_simple_bindA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_simple_bindW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_simple_bind_s">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_simple_bind_sA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_simple_bind_sW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_sslinit">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_sslinitA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_sslinitW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_start_tls_sA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_start_tls_sW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_startup">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_stop_tls_s">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_ufn2dn">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_ufn2dnA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_ufn2dnW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_unbind">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_unbind_s">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_value_free">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_value_freeA">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_value_freeW">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ldap_value_free_len">
+      <Definitions>
+        <DynamicLibrary Name="WLDAP32.dll" />
+      </Definitions>
+    </Symbol>
+  </ExportedSymbols>
+</StaticLibrary>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="SCHANNEL.dll">
+  <OriginalPath>C:\Windows\system32\SCHANNEL.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="AcceptSecurityContext">
+      <ForwardSymbol>SSPICLI.AcceptSecurityContext</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\schannel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AcquireCredentialsHandleA">
+      <ForwardSymbol>SSPICLI.AcquireCredentialsHandleA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\schannel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AcquireCredentialsHandleW">
+      <ForwardSymbol>SSPICLI.AcquireCredentialsHandleW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\schannel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ApplyControlToken">
+      <ForwardSymbol>SSPICLI.ApplyControlToken</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\schannel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CompleteAuthToken">
+      <ForwardSymbol>SSPICLI.CompleteAuthToken</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\schannel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeleteSecurityContext">
+      <ForwardSymbol>SSPICLI.DeleteSecurityContext</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\schannel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumerateSecurityPackagesA">
+      <ForwardSymbol>SSPICLI.EnumerateSecurityPackagesA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\schannel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumerateSecurityPackagesW">
+      <ForwardSymbol>SSPICLI.EnumerateSecurityPackagesW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\schannel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FreeContextBuffer">
+      <ForwardSymbol>SSPICLI.FreeContextBuffer</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\schannel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FreeCredentialsHandle">
+      <ForwardSymbol>SSPICLI.FreeCredentialsHandle</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\schannel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImpersonateSecurityContext">
+      <ForwardSymbol>SSPICLI.ImpersonateSecurityContext</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\schannel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitSecurityInterfaceA">
+      <ForwardSymbol>SSPICLI.InitSecurityInterfaceA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\schannel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitSecurityInterfaceW">
+      <ForwardSymbol>SSPICLI.InitSecurityInterfaceW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\schannel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitializeSecurityContextA">
+      <ForwardSymbol>SSPICLI.InitializeSecurityContextA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\schannel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitializeSecurityContextW">
+      <ForwardSymbol>SSPICLI.InitializeSecurityContextW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\schannel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MakeSignature">
+      <ForwardSymbol>SSPICLI.MakeSignature</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\schannel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="QueryContextAttributesA">
+      <ForwardSymbol>SSPICLI.QueryContextAttributesA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\schannel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="QueryContextAttributesW">
+      <ForwardSymbol>SSPICLI.QueryContextAttributesW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\schannel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="QuerySecurityPackageInfoA">
+      <ForwardSymbol>SSPICLI.QuerySecurityPackageInfoA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\schannel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="QuerySecurityPackageInfoW">
+      <ForwardSymbol>SSPICLI.QuerySecurityPackageInfoW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\schannel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RevertSecurityContext">
+      <ForwardSymbol>SSPICLI.RevertSecurityContext</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\schannel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SealMessage">
+      <ForwardSymbol>SSPICLI.SealMessage</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\schannel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SpLsaModeInitialize" />
+    <Symbol Name="SpUserModeInitialize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\schannel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SslCrackCertificate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\schannel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SslEmptyCacheA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\schannel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SslEmptyCacheW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\schannel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SslFreeCertificate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\schannel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SslFreeCustomBuffer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\schannel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SslGenerateRandomBits">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\schannel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SslGetMaximumKeySize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\schannel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SslGetServerIdentity">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\schannel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SslLoadCertificate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\schannel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UnsealMessage">
+      <ForwardSymbol>SSPICLI.UnsealMessage</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\schannel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VerifySignature">
+      <ForwardSymbol>SSPICLI.VerifySignature</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\schannel.lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

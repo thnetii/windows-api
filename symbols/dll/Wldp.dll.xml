@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="Wldp.dll">
+  <OriginalPath>C:\Windows\system32\Wldp.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="WldpCheckRetailConfiguration">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Wldp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WldpGetLockdownPolicy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Wldp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WldpIsAllowedEntryPoint">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Wldp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WldpIsClassInApprovedList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Wldp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WldpIsDebugAllowed">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Wldp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WldpIsDynamicCodePolicyEnabled">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Wldp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WldpQueryDynamicCodeTrust">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Wldp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WldpQuerySecurityPolicy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Wldp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WldpQueryWindowsLockdownMode" />
+    <Symbol Name="WldpSetDynamicCodeTrust">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Wldp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

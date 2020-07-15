@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="dhcpcsvc.DLL">
+  <OriginalPath>C:\Windows\system32\dhcpcsvc.DLL</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="DhcpAcquireParameters">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpAcquireParametersByBroadcast">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpCApiCleanup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpCApiInitialize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpClient_Generalize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpDeRegisterConnectionStateNotification">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpDeRegisterOptions">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpDeRegisterParamChange">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpDelPersistentRequestParams">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpEnableDhcp">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpEnableTracing">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpEnumClasses">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpEnumInterfaces">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpFallbackRefreshParams">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpFreeEnumeratedInterfaces">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpFreeLeaseInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpFreeLeaseInfoArray">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpFreeMem">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpGetClassId">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpGetClientId">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpGetDhcpServicedConnections">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpGetFallbackParams">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpGetNotificationStatus">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpGetOriginalSubnetMask">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpGetTraceArray">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpGlobalIsShuttingDown">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpGlobalServiceSyncEvent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpGlobalTerminateEvent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpHandlePnPEvent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpIsEnabled">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpLeaseIpAddress">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpLeaseIpAddressEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpNotifyConfigChange">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpNotifyConfigChangeEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpNotifyMediaReconnected">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpOpenGlobalEvent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpPersistentRequestParams">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpQueryLeaseInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpQueryLeaseInfoArray">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpQueryLeaseInfoEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpRegisterConnectionStateNotification">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpRegisterOptions">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpRegisterParamChange">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpReleaseIpAddressLease">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpReleaseIpAddressLeaseEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpReleaseParameters">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpRemoveDNSRegistrations">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpRenewIpAddressLease">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpRenewIpAddressLeaseEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpRequestCachedParams">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpRequestOptions">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpRequestParams">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpSetClassId">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpSetClientId">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpSetFallbackParams">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpSetMSFTVendorSpecificOptions">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpStaticRefreshParams">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpUndoRequestParams">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dhcpv4CheckServerAvailability">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dhcpv4EnableDhcpEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="McastApiCleanup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="McastApiStartup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="McastEnumerateScopes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="McastGenUID">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="McastReleaseAddress">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="McastRenewAddress">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="McastRequestAddress">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DhcpCSvc.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

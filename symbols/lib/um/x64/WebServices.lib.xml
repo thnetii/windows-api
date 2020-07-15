@@ -1,0 +1,975 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\WebServices.lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\WebServices.lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="webservices.dll" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="WsAbandonCall">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsAbandonMessage">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsAbortChannel">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsAbortListener">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsAbortServiceHost">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsAbortServiceProxy">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsAcceptChannel">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsAddCustomHeader">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsAddErrorString">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsAddMappedHeader">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsAddressMessage">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsAlloc">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsAsyncExecute">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsCall">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsCheckMustUnderstandHeaders">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsCloseChannel">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsCloseListener">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsCloseServiceHost">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsCloseServiceProxy">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsCombineUrl">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsCopyError">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsCopyNode">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsCreateChannel">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsCreateChannelForListener">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsCreateError">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsCreateFaultFromError">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsCreateHeap">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsCreateListener">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsCreateMessage">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsCreateMessageForChannel">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsCreateMetadata">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsCreateReader">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsCreateServiceEndpointFromTemplate">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsCreateServiceHost">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsCreateServiceProxy">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsCreateServiceProxyFromTemplate">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsCreateWriter">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsCreateXmlBuffer">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsCreateXmlSecurityToken">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsDateTimeToFileTime">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsDecodeUrl">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsEncodeUrl">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsEndReaderCanonicalization">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsEndWriterCanonicalization">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsFileTimeToDateTime">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsFillBody">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsFillReader">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsFindAttribute">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsFlushBody">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsFlushWriter">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsFreeChannel">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsFreeError">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsFreeHeap">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsFreeListener">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsFreeMessage">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsFreeMetadata">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsFreeReader">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsFreeSecurityToken">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsFreeServiceHost">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsFreeServiceProxy">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsFreeWriter">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsGetChannelProperty">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsGetCustomHeader">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsGetDictionary">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsGetErrorProperty">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsGetErrorString">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsGetFaultErrorDetail">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsGetFaultErrorProperty">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsGetHeader">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsGetHeaderAttributes">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsGetHeapProperty">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsGetListenerProperty">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsGetMappedHeader">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsGetMessageProperty">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsGetMetadataEndpoints">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsGetMetadataProperty">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsGetMissingMetadataDocumentAddress">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsGetNamespaceFromPrefix">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsGetOperationContextProperty">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsGetPolicyAlternativeCount">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsGetPolicyProperty">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsGetPrefixFromNamespace">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsGetReaderNode">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsGetReaderPosition">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsGetReaderProperty">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsGetSecurityContextProperty">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsGetSecurityTokenProperty">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsGetServiceHostProperty">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsGetServiceProxyProperty">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsGetWriterPosition">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsGetWriterProperty">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsGetXmlAttribute">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsInitializeMessage">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsMarkHeaderAsUnderstood">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsMatchPolicyAlternative">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsMoveReader">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsMoveWriter">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsOpenChannel">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsOpenListener">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsOpenServiceHost">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsOpenServiceProxy">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsPullBytes">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsPushBytes">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsReadArray">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsReadAttribute">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsReadBody">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsReadBytes">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsReadChars">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsReadCharsUtf8">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsReadElement">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsReadEndAttribute">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsReadEndElement">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsReadEndpointAddressExtension">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsReadEnvelopeEnd">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsReadEnvelopeStart">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsReadMessageEnd">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsReadMessageStart">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsReadMetadata">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsReadNode">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsReadQualifiedName">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsReadStartAttribute">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsReadStartElement">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsReadToStartElement">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsReadType">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsReadValue">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsReadXmlBuffer">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsReadXmlBufferFromBytes">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsReceiveMessage">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsRegisterOperationForCancel">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsRemoveCustomHeader">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsRemoveHeader">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsRemoveMappedHeader">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsRemoveNode">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsRequestReply">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsRequestSecurityToken">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsResetChannel">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsResetError">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsResetHeap">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsResetListener">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsResetMessage">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsResetMetadata">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsResetServiceHost">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsResetServiceProxy">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsRevokeSecurityContext">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsSendFaultMessageForError">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsSendMessage">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsSendReplyMessage">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsSetChannelProperty">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsSetErrorProperty">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsSetFaultErrorDetail">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsSetFaultErrorProperty">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsSetHeader">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsSetInput">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsSetInputToBuffer">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsSetListenerProperty">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsSetMessageProperty">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsSetOutput">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsSetOutputToBuffer">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsSetReaderPosition">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsSetWriterPosition">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsShutdownSessionChannel">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsSkipNode">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsStartReaderCanonicalization">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsStartWriterCanonicalization">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsTrimXmlWhitespace">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsVerifyXmlNCName">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsWriteArray">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsWriteAttribute">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsWriteBody">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsWriteBytes">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsWriteChars">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsWriteCharsUtf8">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsWriteElement">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsWriteEndAttribute">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsWriteEndCData">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsWriteEndElement">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsWriteEndStartElement">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsWriteEnvelopeEnd">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsWriteEnvelopeStart">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsWriteMessageEnd">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsWriteMessageStart">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsWriteNode">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsWriteQualifiedName">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsWriteStartAttribute">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsWriteStartCData">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsWriteStartElement">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsWriteText">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsWriteType">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsWriteValue">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsWriteXmlBuffer">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsWriteXmlBufferToBytes">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsWriteXmlnsAttribute">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WsXmlStringEquals">
+      <Definitions>
+        <DynamicLibrary Name="webservices.dll" />
+      </Definitions>
+    </Symbol>
+  </ExportedSymbols>
+</StaticLibrary>

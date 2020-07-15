@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="RPCNS4.dll">
+  <OriginalPath>C:\Windows\system32\RPCNS4.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="I_RpcNsGetBuffer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="I_RpcNsNegotiateTransferSyntax">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="I_RpcNsRaiseException">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="I_RpcNsSendReceive">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="I_RpcReBindBuffer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RpcIfIdVectorFree">
+      <ForwardSymbol>RPCRT4.RpcIfIdVectorFree</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RpcNsBindingExportA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RpcNsBindingExportPnPA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RpcNsBindingExportPnPW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RpcNsBindingExportW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RpcNsBindingImportBeginA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RpcNsBindingImportBeginW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RpcNsBindingImportDone">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RpcNsBindingImportNext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RpcNsBindingLookupBeginA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RpcNsBindingLookupBeginW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RpcNsBindingLookupDone">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RpcNsBindingLookupNext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RpcNsBindingSelect">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RpcNsBindingUnexportA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RpcNsBindingUnexportPnPA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RpcNsBindingUnexportPnPW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RpcNsBindingUnexportW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RpcNsEntryExpandNameA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RpcNsEntryExpandNameW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RpcNsEntryObjectInqBeginA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RpcNsEntryObjectInqBeginW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RpcNsEntryObjectInqDone">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RpcNsEntryObjectInqNext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RpcNsGroupDeleteA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RpcNsGroupDeleteW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RpcNsGroupMbrAddA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RpcNsGroupMbrAddW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RpcNsGroupMbrInqBeginA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RpcNsGroupMbrInqBeginW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RpcNsGroupMbrInqDone">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RpcNsGroupMbrInqNextA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RpcNsGroupMbrInqNextW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RpcNsGroupMbrRemoveA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RpcNsGroupMbrRemoveW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RpcNsMgmtBindingUnexportA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RpcNsMgmtBindingUnexportW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RpcNsMgmtEntryCreateA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RpcNsMgmtEntryCreateW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RpcNsMgmtEntryDeleteA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RpcNsMgmtEntryDeleteW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RpcNsMgmtEntryInqIfIdsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RpcNsMgmtEntryInqIfIdsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RpcNsMgmtHandleSetExpAge">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RpcNsMgmtInqExpAge">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RpcNsMgmtSetExpAge">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RpcNsProfileDeleteA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RpcNsProfileDeleteW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RpcNsProfileEltAddA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RpcNsProfileEltAddW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RpcNsProfileEltInqBeginA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RpcNsProfileEltInqBeginW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RpcNsProfileEltInqDone">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RpcNsProfileEltInqNextA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RpcNsProfileEltInqNextW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RpcNsProfileEltRemoveA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RpcNsProfileEltRemoveW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rpcns4.Lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

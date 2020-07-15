@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\mmdevapi.lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\mmdevapi.lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="MMDevAPI.DLL" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="AETraceOutputDebugString" />
+    <Symbol Name="ActivateAudioInterfaceAsync">
+      <Definitions>
+        <DynamicLibrary Name="MMDevAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CleanupDeviceAPI" />
+    <Symbol Name="FlushDeviceTopologyCache" />
+    <Symbol Name="GenerateMediaEvent" />
+    <Symbol Name="GetClassFromEndpointId" />
+    <Symbol Name="GetEndpointGuidFromEndpointId" />
+    <Symbol Name="GetEndpointIdFromDeviceInterfaceId" />
+    <Symbol Name="GetNeverSetAsDefaultProperty" />
+    <Symbol Name="GetSessionIdFromEndpointId" />
+    <Symbol Name="InitializeDeviceAPI" />
+    <Symbol Name="MMDeviceCreateRegistryPropertyStore" />
+    <Symbol Name="MMDeviceGetDeviceEnumerator" />
+    <Symbol Name="MMDeviceGetEndpointManager" />
+    <Symbol Name="MMDeviceGetPolicyConfig" />
+    <Symbol Name="RegisterForMediaCallback" />
+    <Symbol Name="UnregisterMediaCallback" />
+    <Symbol Name="mmdDevFindMmDevProperty" />
+    <Symbol Name="mmdDevGetEndpointFormFactorFromMMDeviceId" />
+    <Symbol Name="mmdDevGetInstanceIdFromInterfaceId" />
+    <Symbol Name="mmdDevGetInstanceIdFromMMDeviceId" />
+    <Symbol Name="mmdDevGetInterfaceClassGuid" />
+    <Symbol Name="mmdDevGetInterfaceDataFlow" />
+    <Symbol Name="mmdDevGetInterfaceIdFromMMDevice" />
+    <Symbol Name="mmdDevGetInterfaceIdFromMMDeviceId" />
+    <Symbol Name="mmdDevGetInterfacePropertyStore" />
+    <Symbol Name="mmdDevGetMMDeviceFromInterfaceId" />
+    <Symbol Name="mmdDevGetMMDeviceIdFromInterfaceId" />
+    <Symbol Name="mmdDevGetRelatedInterfaceId" />
+  </ExportedSymbols>
+</StaticLibrary>

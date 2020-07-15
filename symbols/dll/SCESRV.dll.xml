@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="SCESRV.dll">
+  <OriginalPath>C:\Windows\system32\SCESRV.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="ScesrvInitializeServer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scesrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ScesrvTerminateServer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scesrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="Amsi.dll">
+  <OriginalPath>C:\Windows\system32\Amsi.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="AmsiCloseSession">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\amsi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AmsiInitialize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\amsi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AmsiOpenSession">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\amsi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AmsiScanBuffer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\amsi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AmsiScanString">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\amsi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AmsiUacInitialize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\amsi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AmsiUacScan">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\amsi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AmsiUacUninitialize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\amsi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AmsiUninitialize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\amsi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DllCanUnloadNow" />
+    <Symbol Name="DllGetClassObject" />
+    <Symbol Name="DllRegisterServer" />
+    <Symbol Name="DllUnregisterServer" />
+  </ExportedSymbols>
+</DynamicLibrary>

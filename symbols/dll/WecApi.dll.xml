@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="WecApi.dll">
+  <OriginalPath>C:\Windows\system32\WecApi.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="EcClose">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wecapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EcDeleteSubscription">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wecapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EcEnumNextSubscription">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wecapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EcGetObjectArrayProperty">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wecapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EcGetObjectArraySize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wecapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EcGetSubscriptionProperty">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wecapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EcGetSubscriptionRunTimeStatus">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wecapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EcInsertObjectArrayElement">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wecapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EcIsConfigRequired" />
+    <Symbol Name="EcOpenSubscription">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wecapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EcOpenSubscriptionEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wecapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EcQuickConfig" />
+    <Symbol Name="EcRemoveObjectArrayElement">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wecapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EcRetrySubscription">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wecapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EcSaveSubscription">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wecapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EcSetObjectArrayProperty">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wecapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EcSetSubscriptionProperty">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wecapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

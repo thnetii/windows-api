@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="IMM32.dll">
+  <OriginalPath>C:\Windows\system32\IMM32.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="CtfImmAppCompatEnableIMEonProtectedCode" />
+    <Symbol Name="CtfImmCoUninitialize" />
+    <Symbol Name="CtfImmDispatchDefImeMessage" />
+    <Symbol Name="CtfImmEnterCoInitCountSkipMode" />
+    <Symbol Name="CtfImmGenerateMessage" />
+    <Symbol Name="CtfImmGetCompatibleKeyboardLayout" />
+    <Symbol Name="CtfImmGetGlobalIMEStatus" />
+    <Symbol Name="CtfImmGetGuidAtom" />
+    <Symbol Name="CtfImmGetIMEFileName" />
+    <Symbol Name="CtfImmGetTMAEFlags" />
+    <Symbol Name="CtfImmHideToolbarWnd" />
+    <Symbol Name="CtfImmIsCiceroEnabled" />
+    <Symbol Name="CtfImmIsCiceroStartedInThread" />
+    <Symbol Name="CtfImmIsComStartedInThread" />
+    <Symbol Name="CtfImmIsGuidMapEnable" />
+    <Symbol Name="CtfImmIsTextFrameServiceDisabled" />
+    <Symbol Name="CtfImmLastEnabledWndDestroy" />
+    <Symbol Name="CtfImmLeaveCoInitCountSkipMode" />
+    <Symbol Name="CtfImmNotify" />
+    <Symbol Name="CtfImmRestoreToolbarWnd" />
+    <Symbol Name="CtfImmSetAppCompatFlags" />
+    <Symbol Name="CtfImmSetCiceroStartInThread" />
+    <Symbol Name="CtfImmSetDefaultRemoteKeyboardLayout" />
+    <Symbol Name="CtfImmTIMActivate" />
+    <Symbol Name="GetKeyboardLayoutCP" />
+    <Symbol Name="ImmActivateLayout" />
+    <Symbol Name="ImmAssociateContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmAssociateContextEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmCallImeConsoleIME" />
+    <Symbol Name="ImmConfigureIMEA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmConfigureIMEW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmCreateContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmCreateIMCC">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmCreateSoftKeyboard">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmDestroyContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmDestroyIMCC">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmDestroySoftKeyboard">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmDisableIME">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmDisableLegacyIME">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmDisableTextFrameService">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmEnumInputContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmEnumRegisterWordA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmEnumRegisterWordW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmEscapeA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmEscapeW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmFreeLayout" />
+    <Symbol Name="ImmGenerateMessage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmGetAppCompatFlags" />
+    <Symbol Name="ImmGetCandidateListA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmGetCandidateListCountA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmGetCandidateListCountW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmGetCandidateListW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmGetCandidateWindow">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmGetCompositionFontA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmGetCompositionFontW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmGetCompositionStringA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmGetCompositionStringW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmGetCompositionWindow">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmGetContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmGetConversionListA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmGetConversionListW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmGetConversionStatus">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmGetDefaultIMEWnd">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmGetDescriptionA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmGetDescriptionW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmGetGuideLineA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmGetGuideLineW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmGetHotKey">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmGetIMCCLockCount">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmGetIMCCSize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmGetIMCLockCount">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmGetIMEFileNameA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmGetIMEFileNameW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmGetImeInfoEx" />
+    <Symbol Name="ImmGetImeMenuItemsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmGetImeMenuItemsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmGetOpenStatus">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmGetProperty">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmGetRegisterWordStyleA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmGetRegisterWordStyleW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmGetStatusWindowPos">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmGetVirtualKey">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmIMPGetIMEA" />
+    <Symbol Name="ImmIMPGetIMEW" />
+    <Symbol Name="ImmIMPQueryIMEA" />
+    <Symbol Name="ImmIMPQueryIMEW" />
+    <Symbol Name="ImmIMPSetIMEA" />
+    <Symbol Name="ImmIMPSetIMEW" />
+    <Symbol Name="ImmInstallIMEA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmInstallIMEW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmIsIME">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmIsUIMessageA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmIsUIMessageW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmLoadIME" />
+    <Symbol Name="ImmLoadLayout" />
+    <Symbol Name="ImmLockClientImc" />
+    <Symbol Name="ImmLockIMC">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmLockIMCC">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmLockImeDpi" />
+    <Symbol Name="ImmNotifyIME">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmProcessKey" />
+    <Symbol Name="ImmPutImeMenuItemsIntoMappedFile" />
+    <Symbol Name="ImmReSizeIMCC">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmRegisterClient" />
+    <Symbol Name="ImmRegisterWordA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmRegisterWordW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmReleaseContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmRequestMessageA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmRequestMessageW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmSendIMEMessageExA" />
+    <Symbol Name="ImmSendIMEMessageExW" />
+    <Symbol Name="ImmSetActiveContext" />
+    <Symbol Name="ImmSetActiveContextConsoleIME" />
+    <Symbol Name="ImmSetCandidateWindow">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmSetCompositionFontA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmSetCompositionFontW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmSetCompositionStringA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmSetCompositionStringW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmSetCompositionWindow">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmSetConversionStatus">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmSetHotKey">
+      <ForwardSymbol>USER32.CliImmSetHotKey</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmSetOpenStatus">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmSetStatusWindowPos">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmShowSoftKeyboard">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmSimulateHotKey">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmSystemHandler" />
+    <Symbol Name="ImmTranslateMessage" />
+    <Symbol Name="ImmUnlockClientImc" />
+    <Symbol Name="ImmUnlockIMC">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmUnlockIMCC">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmUnlockImeDpi" />
+    <Symbol Name="ImmUnregisterWordA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmUnregisterWordW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Imm32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImmWINNLSEnableIME" />
+    <Symbol Name="ImmWINNLSGetEnableStatus" />
+    <Symbol Name="ImmWINNLSGetIMEHotkey" />
+  </ExportedSymbols>
+</DynamicLibrary>

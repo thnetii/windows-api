@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="USERENV.dll">
+  <OriginalPath>C:\Windows\system32\USERENV.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="AreThereVisibleLogoffScripts">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UserEnv.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AreThereVisibleShutdownScripts">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UserEnv.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateAppContainerProfile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UserEnv.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateEnvironmentBlock">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UserEnv.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateProfile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UserEnv.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeleteAppContainerProfile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UserEnv.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeleteProfileA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UserEnv.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeleteProfileW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UserEnv.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeriveAppContainerSidFromAppContainerName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UserEnv.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeriveRestrictedAppContainerSidFromAppContainerSidAndRestrictedName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UserEnv.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DestroyEnvironmentBlock">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UserEnv.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DllCanUnloadNow" />
+    <Symbol Name="DllGetClassObject" />
+    <Symbol Name="DllRegisterServer" />
+    <Symbol Name="DllUnregisterServer" />
+    <Symbol Name="EnterCriticalPolicySection">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UserEnv.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ExpandEnvironmentStringsForUserA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UserEnv.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ExpandEnvironmentStringsForUserW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UserEnv.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ForceSyncFgPolicy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UserEnv.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FreeGPOListA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UserEnv.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FreeGPOListW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UserEnv.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GenerateGPNotification">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UserEnv.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetAllUsersProfileDirectoryA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UserEnv.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetAllUsersProfileDirectoryW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UserEnv.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetAppContainerFolderPath">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UserEnv.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetAppContainerRegistryLocation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UserEnv.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetAppliedGPOListA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UserEnv.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetAppliedGPOListW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UserEnv.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetDefaultUserProfileDirectoryA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UserEnv.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetDefaultUserProfileDirectoryW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UserEnv.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetGPOListA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UserEnv.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetGPOListW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UserEnv.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetNextFgPolicyRefreshInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UserEnv.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetPreviousFgPolicyRefreshInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UserEnv.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetProfileType">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UserEnv.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetProfilesDirectoryA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UserEnv.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetProfilesDirectoryW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UserEnv.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetUserProfileDirectoryA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UserEnv.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetUserProfileDirectoryW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UserEnv.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HasPolicyForegroundProcessingCompleted">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UserEnv.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LeaveCriticalPolicySection">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UserEnv.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LoadProfileExtender" />
+    <Symbol Name="LoadUserProfileA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UserEnv.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LoadUserProfileW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UserEnv.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ProcessGroupPolicyCompleted">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UserEnv.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ProcessGroupPolicyCompletedEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UserEnv.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RefreshPolicy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UserEnv.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RefreshPolicyEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UserEnv.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RegisterGPNotification">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UserEnv.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RsopAccessCheckByType">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UserEnv.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RsopFileAccessCheck">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UserEnv.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RsopLoggingEnabled" />
+    <Symbol Name="RsopResetPolicySettingStatus">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UserEnv.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RsopSetPolicySettingStatus">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UserEnv.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UnloadProfileExtender" />
+    <Symbol Name="UnloadUserProfile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UserEnv.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UnregisterGPNotification">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UserEnv.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WaitForMachinePolicyForegroundProcessing">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UserEnv.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WaitForUserPolicyForegroundProcessing">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\UserEnv.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="[NONAME]" />
+  </ExportedSymbols>
+</DynamicLibrary>

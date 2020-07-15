@@ -1,0 +1,3533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="setupapi.dll">
+  <OriginalPath>C:\Windows\system32\setupapi.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="CMP_GetBlockedDriverInfo">
+      <ForwardSymbol>cfgmgr32.CMP_GetBlockedDriverInfo</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CMP_GetServerSideDeviceInstallFlags">
+      <ForwardSymbol>cfgmgr32.CMP_GetServerSideDeviceInstallFlags</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CMP_Init_Detection">
+      <ForwardSymbol>cfgmgr32.CMP_Init_Detection</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CMP_Report_LogOn">
+      <ForwardSymbol>cfgmgr32.CMP_Report_LogOn</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CMP_WaitNoPendingInstallEvents">
+      <ForwardSymbol>cfgmgr32.CMP_WaitNoPendingInstallEvents</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CMP_WaitServicesAvailable">
+      <ForwardSymbol>cfgmgr32.CMP_WaitServicesAvailable</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CM_Add_Driver_PackageW">
+      <ForwardSymbol>cfgmgr32.CM_Add_Driver_PackageW</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CM_Add_Empty_Log_Conf">
+      <ForwardSymbol>cfgmgr32.CM_Add_Empty_Log_Conf</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Add_Empty_Log_Conf_Ex">
+      <ForwardSymbol>cfgmgr32.CM_Add_Empty_Log_Conf_Ex</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Add_IDA">
+      <ForwardSymbol>cfgmgr32.CM_Add_IDA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Add_IDW">
+      <ForwardSymbol>cfgmgr32.CM_Add_IDW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Add_ID_ExA">
+      <ForwardSymbol>cfgmgr32.CM_Add_ID_ExA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Add_ID_ExW">
+      <ForwardSymbol>cfgmgr32.CM_Add_ID_ExW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Add_Range">
+      <ForwardSymbol>cfgmgr32.CM_Add_Range</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Add_Res_Des">
+      <ForwardSymbol>cfgmgr32.CM_Add_Res_Des</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Add_Res_Des_Ex">
+      <ForwardSymbol>cfgmgr32.CM_Add_Res_Des_Ex</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Apply_PowerScheme" />
+    <Symbol Name="CM_Connect_MachineA">
+      <ForwardSymbol>cfgmgr32.CM_Connect_MachineA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Connect_MachineW">
+      <ForwardSymbol>cfgmgr32.CM_Connect_MachineW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Create_DevNodeA">
+      <ForwardSymbol>cfgmgr32.CM_Create_DevNodeA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Create_DevNodeW">
+      <ForwardSymbol>cfgmgr32.CM_Create_DevNodeW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Create_DevNode_ExA">
+      <ForwardSymbol>cfgmgr32.CM_Create_DevNode_ExA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Create_DevNode_ExW">
+      <ForwardSymbol>cfgmgr32.CM_Create_DevNode_ExW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Create_Range_List">
+      <ForwardSymbol>cfgmgr32.CM_Create_Range_List</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Delete_Class_Key">
+      <ForwardSymbol>cfgmgr32.CM_Delete_Class_Key</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Delete_Class_Key_Ex">
+      <ForwardSymbol>cfgmgr32.CM_Delete_Class_Key_Ex</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Delete_DevNode_Key">
+      <ForwardSymbol>cfgmgr32.CM_Delete_DevNode_Key</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Delete_DevNode_Key_Ex">
+      <ForwardSymbol>cfgmgr32.CM_Delete_DevNode_Key_Ex</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Delete_Device_Interface_KeyA">
+      <ForwardSymbol>cfgmgr32.CM_Delete_Device_Interface_KeyA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Delete_Device_Interface_KeyW">
+      <ForwardSymbol>cfgmgr32.CM_Delete_Device_Interface_KeyW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Delete_Device_Interface_Key_ExA">
+      <ForwardSymbol>cfgmgr32.CM_Delete_Device_Interface_Key_ExA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Delete_Device_Interface_Key_ExW">
+      <ForwardSymbol>cfgmgr32.CM_Delete_Device_Interface_Key_ExW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Delete_Driver_PackageW">
+      <ForwardSymbol>cfgmgr32.CM_Delete_Driver_PackageW</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CM_Delete_PowerScheme" />
+    <Symbol Name="CM_Delete_Range">
+      <ForwardSymbol>cfgmgr32.CM_Delete_Range</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Detect_Resource_Conflict">
+      <ForwardSymbol>cfgmgr32.CM_Detect_Resource_Conflict</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Detect_Resource_Conflict_Ex">
+      <ForwardSymbol>cfgmgr32.CM_Detect_Resource_Conflict_Ex</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Disable_DevNode">
+      <ForwardSymbol>cfgmgr32.CM_Disable_DevNode</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Disable_DevNode_Ex">
+      <ForwardSymbol>cfgmgr32.CM_Disable_DevNode_Ex</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Disconnect_Machine">
+      <ForwardSymbol>cfgmgr32.CM_Disconnect_Machine</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Dup_Range_List">
+      <ForwardSymbol>cfgmgr32.CM_Dup_Range_List</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Duplicate_PowerScheme" />
+    <Symbol Name="CM_Enable_DevNode">
+      <ForwardSymbol>cfgmgr32.CM_Enable_DevNode</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Enable_DevNode_Ex">
+      <ForwardSymbol>cfgmgr32.CM_Enable_DevNode_Ex</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Enumerate_Classes">
+      <ForwardSymbol>cfgmgr32.CM_Enumerate_Classes</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Enumerate_Classes_Ex">
+      <ForwardSymbol>cfgmgr32.CM_Enumerate_Classes_Ex</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Enumerate_EnumeratorsA">
+      <ForwardSymbol>cfgmgr32.CM_Enumerate_EnumeratorsA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Enumerate_EnumeratorsW">
+      <ForwardSymbol>cfgmgr32.CM_Enumerate_EnumeratorsW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Enumerate_Enumerators_ExA">
+      <ForwardSymbol>cfgmgr32.CM_Enumerate_Enumerators_ExA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Enumerate_Enumerators_ExW">
+      <ForwardSymbol>cfgmgr32.CM_Enumerate_Enumerators_ExW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Find_Range">
+      <ForwardSymbol>cfgmgr32.CM_Find_Range</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_First_Range">
+      <ForwardSymbol>cfgmgr32.CM_First_Range</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Free_Log_Conf">
+      <ForwardSymbol>cfgmgr32.CM_Free_Log_Conf</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Free_Log_Conf_Ex">
+      <ForwardSymbol>cfgmgr32.CM_Free_Log_Conf_Ex</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Free_Log_Conf_Handle">
+      <ForwardSymbol>cfgmgr32.CM_Free_Log_Conf_Handle</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Free_Range_List">
+      <ForwardSymbol>cfgmgr32.CM_Free_Range_List</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Free_Res_Des">
+      <ForwardSymbol>cfgmgr32.CM_Free_Res_Des</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Free_Res_Des_Ex">
+      <ForwardSymbol>cfgmgr32.CM_Free_Res_Des_Ex</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Free_Res_Des_Handle">
+      <ForwardSymbol>cfgmgr32.CM_Free_Res_Des_Handle</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Free_Resource_Conflict_Handle">
+      <ForwardSymbol>cfgmgr32.CM_Free_Resource_Conflict_Handle</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Child">
+      <ForwardSymbol>cfgmgr32.CM_Get_Child</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Child_Ex">
+      <ForwardSymbol>cfgmgr32.CM_Get_Child_Ex</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Class_Key_NameA">
+      <ForwardSymbol>cfgmgr32.CM_Get_Class_Key_NameA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Class_Key_NameW">
+      <ForwardSymbol>cfgmgr32.CM_Get_Class_Key_NameW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Class_Key_Name_ExA">
+      <ForwardSymbol>cfgmgr32.CM_Get_Class_Key_Name_ExA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Class_Key_Name_ExW">
+      <ForwardSymbol>cfgmgr32.CM_Get_Class_Key_Name_ExW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Class_NameA">
+      <ForwardSymbol>cfgmgr32.CM_Get_Class_NameA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Class_NameW">
+      <ForwardSymbol>cfgmgr32.CM_Get_Class_NameW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Class_Name_ExA">
+      <ForwardSymbol>cfgmgr32.CM_Get_Class_Name_ExA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Class_Name_ExW">
+      <ForwardSymbol>cfgmgr32.CM_Get_Class_Name_ExW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Class_Registry_PropertyA">
+      <ForwardSymbol>cfgmgr32.CM_Get_Class_Registry_PropertyA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Class_Registry_PropertyW">
+      <ForwardSymbol>cfgmgr32.CM_Get_Class_Registry_PropertyW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Depth">
+      <ForwardSymbol>cfgmgr32.CM_Get_Depth</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Depth_Ex">
+      <ForwardSymbol>cfgmgr32.CM_Get_Depth_Ex</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_DevNode_Custom_PropertyA">
+      <ForwardSymbol>cfgmgr32.CM_Get_DevNode_Custom_PropertyA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_DevNode_Custom_PropertyW">
+      <ForwardSymbol>cfgmgr32.CM_Get_DevNode_Custom_PropertyW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_DevNode_Custom_Property_ExA">
+      <ForwardSymbol>cfgmgr32.CM_Get_DevNode_Custom_Property_ExA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_DevNode_Custom_Property_ExW">
+      <ForwardSymbol>cfgmgr32.CM_Get_DevNode_Custom_Property_ExW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_DevNode_Registry_PropertyA">
+      <ForwardSymbol>cfgmgr32.CM_Get_DevNode_Registry_PropertyA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_DevNode_Registry_PropertyW">
+      <ForwardSymbol>cfgmgr32.CM_Get_DevNode_Registry_PropertyW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_DevNode_Registry_Property_ExA">
+      <ForwardSymbol>cfgmgr32.CM_Get_DevNode_Registry_Property_ExA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_DevNode_Registry_Property_ExW">
+      <ForwardSymbol>cfgmgr32.CM_Get_DevNode_Registry_Property_ExW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_DevNode_Status">
+      <ForwardSymbol>cfgmgr32.CM_Get_DevNode_Status</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_DevNode_Status_Ex">
+      <ForwardSymbol>cfgmgr32.CM_Get_DevNode_Status_Ex</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Device_IDA">
+      <ForwardSymbol>cfgmgr32.CM_Get_Device_IDA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Device_IDW">
+      <ForwardSymbol>cfgmgr32.CM_Get_Device_IDW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Device_ID_ExA">
+      <ForwardSymbol>cfgmgr32.CM_Get_Device_ID_ExA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Device_ID_ExW">
+      <ForwardSymbol>cfgmgr32.CM_Get_Device_ID_ExW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Device_ID_ListA">
+      <ForwardSymbol>cfgmgr32.CM_Get_Device_ID_ListA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Device_ID_ListW">
+      <ForwardSymbol>cfgmgr32.CM_Get_Device_ID_ListW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Device_ID_List_ExA">
+      <ForwardSymbol>cfgmgr32.CM_Get_Device_ID_List_ExA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Device_ID_List_ExW">
+      <ForwardSymbol>cfgmgr32.CM_Get_Device_ID_List_ExW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Device_ID_List_SizeA">
+      <ForwardSymbol>cfgmgr32.CM_Get_Device_ID_List_SizeA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Device_ID_List_SizeW">
+      <ForwardSymbol>cfgmgr32.CM_Get_Device_ID_List_SizeW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Device_ID_List_Size_ExA">
+      <ForwardSymbol>cfgmgr32.CM_Get_Device_ID_List_Size_ExA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Device_ID_List_Size_ExW">
+      <ForwardSymbol>cfgmgr32.CM_Get_Device_ID_List_Size_ExW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Device_ID_Size">
+      <ForwardSymbol>cfgmgr32.CM_Get_Device_ID_Size</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Device_ID_Size_Ex">
+      <ForwardSymbol>cfgmgr32.CM_Get_Device_ID_Size_Ex</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Device_Interface_AliasA">
+      <ForwardSymbol>cfgmgr32.CM_Get_Device_Interface_AliasA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Device_Interface_AliasW">
+      <ForwardSymbol>cfgmgr32.CM_Get_Device_Interface_AliasW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Device_Interface_Alias_ExA">
+      <ForwardSymbol>cfgmgr32.CM_Get_Device_Interface_Alias_ExA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Device_Interface_Alias_ExW">
+      <ForwardSymbol>cfgmgr32.CM_Get_Device_Interface_Alias_ExW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Device_Interface_ListA">
+      <ForwardSymbol>cfgmgr32.CM_Get_Device_Interface_ListA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Device_Interface_ListW">
+      <ForwardSymbol>cfgmgr32.CM_Get_Device_Interface_ListW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Device_Interface_List_ExA">
+      <ForwardSymbol>cfgmgr32.CM_Get_Device_Interface_List_ExA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Device_Interface_List_ExW">
+      <ForwardSymbol>cfgmgr32.CM_Get_Device_Interface_List_ExW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Device_Interface_List_SizeA">
+      <ForwardSymbol>cfgmgr32.CM_Get_Device_Interface_List_SizeA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Device_Interface_List_SizeW">
+      <ForwardSymbol>cfgmgr32.CM_Get_Device_Interface_List_SizeW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Device_Interface_List_Size_ExA">
+      <ForwardSymbol>cfgmgr32.CM_Get_Device_Interface_List_Size_ExA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Device_Interface_List_Size_ExW">
+      <ForwardSymbol>cfgmgr32.CM_Get_Device_Interface_List_Size_ExW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_First_Log_Conf">
+      <ForwardSymbol>cfgmgr32.CM_Get_First_Log_Conf</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_First_Log_Conf_Ex">
+      <ForwardSymbol>cfgmgr32.CM_Get_First_Log_Conf_Ex</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Global_State">
+      <ForwardSymbol>cfgmgr32.CM_Get_Global_State</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Global_State_Ex">
+      <ForwardSymbol>cfgmgr32.CM_Get_Global_State_Ex</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_HW_Prof_FlagsA">
+      <ForwardSymbol>cfgmgr32.CM_Get_HW_Prof_FlagsA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_HW_Prof_FlagsW">
+      <ForwardSymbol>cfgmgr32.CM_Get_HW_Prof_FlagsW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_HW_Prof_Flags_ExA">
+      <ForwardSymbol>cfgmgr32.CM_Get_HW_Prof_Flags_ExA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_HW_Prof_Flags_ExW">
+      <ForwardSymbol>cfgmgr32.CM_Get_HW_Prof_Flags_ExW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Hardware_Profile_InfoA">
+      <ForwardSymbol>cfgmgr32.CM_Get_Hardware_Profile_InfoA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Hardware_Profile_InfoW">
+      <ForwardSymbol>cfgmgr32.CM_Get_Hardware_Profile_InfoW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Hardware_Profile_Info_ExA">
+      <ForwardSymbol>cfgmgr32.CM_Get_Hardware_Profile_Info_ExA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Hardware_Profile_Info_ExW">
+      <ForwardSymbol>cfgmgr32.CM_Get_Hardware_Profile_Info_ExW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Log_Conf_Priority">
+      <ForwardSymbol>cfgmgr32.CM_Get_Log_Conf_Priority</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Log_Conf_Priority_Ex">
+      <ForwardSymbol>cfgmgr32.CM_Get_Log_Conf_Priority_Ex</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Next_Log_Conf">
+      <ForwardSymbol>cfgmgr32.CM_Get_Next_Log_Conf</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Next_Log_Conf_Ex">
+      <ForwardSymbol>cfgmgr32.CM_Get_Next_Log_Conf_Ex</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Next_Res_Des">
+      <ForwardSymbol>cfgmgr32.CM_Get_Next_Res_Des</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Next_Res_Des_Ex">
+      <ForwardSymbol>cfgmgr32.CM_Get_Next_Res_Des_Ex</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Parent">
+      <ForwardSymbol>cfgmgr32.CM_Get_Parent</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Parent_Ex">
+      <ForwardSymbol>cfgmgr32.CM_Get_Parent_Ex</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Res_Des_Data">
+      <ForwardSymbol>cfgmgr32.CM_Get_Res_Des_Data</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Res_Des_Data_Ex">
+      <ForwardSymbol>cfgmgr32.CM_Get_Res_Des_Data_Ex</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Res_Des_Data_Size">
+      <ForwardSymbol>cfgmgr32.CM_Get_Res_Des_Data_Size</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Res_Des_Data_Size_Ex">
+      <ForwardSymbol>cfgmgr32.CM_Get_Res_Des_Data_Size_Ex</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Resource_Conflict_Count">
+      <ForwardSymbol>cfgmgr32.CM_Get_Resource_Conflict_Count</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Resource_Conflict_DetailsA">
+      <ForwardSymbol>cfgmgr32.CM_Get_Resource_Conflict_DetailsA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Resource_Conflict_DetailsW">
+      <ForwardSymbol>cfgmgr32.CM_Get_Resource_Conflict_DetailsW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Sibling">
+      <ForwardSymbol>cfgmgr32.CM_Get_Sibling</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Sibling_Ex">
+      <ForwardSymbol>cfgmgr32.CM_Get_Sibling_Ex</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Version">
+      <ForwardSymbol>cfgmgr32.CM_Get_Version</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Get_Version_Ex">
+      <ForwardSymbol>cfgmgr32.CM_Get_Version_Ex</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Import_PowerScheme" />
+    <Symbol Name="CM_Install_DevNodeW">
+      <ForwardSymbol>cfgmgr32.CM_Install_DevNodeW</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CM_Install_DevNode_ExW">
+      <ForwardSymbol>cfgmgr32.CM_Install_DevNode_ExW</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CM_Intersect_Range_List">
+      <ForwardSymbol>cfgmgr32.CM_Intersect_Range_List</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Invert_Range_List">
+      <ForwardSymbol>cfgmgr32.CM_Invert_Range_List</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Is_Dock_Station_Present">
+      <ForwardSymbol>cfgmgr32.CM_Is_Dock_Station_Present</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Is_Dock_Station_Present_Ex">
+      <ForwardSymbol>cfgmgr32.CM_Is_Dock_Station_Present_Ex</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Is_Version_Available">
+      <ForwardSymbol>cfgmgr32.CM_Is_Version_Available</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Is_Version_Available_Ex">
+      <ForwardSymbol>cfgmgr32.CM_Is_Version_Available_Ex</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Locate_DevNodeA">
+      <ForwardSymbol>cfgmgr32.CM_Locate_DevNodeA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Locate_DevNodeW">
+      <ForwardSymbol>cfgmgr32.CM_Locate_DevNodeW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Locate_DevNode_ExA">
+      <ForwardSymbol>cfgmgr32.CM_Locate_DevNode_ExA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Locate_DevNode_ExW">
+      <ForwardSymbol>cfgmgr32.CM_Locate_DevNode_ExW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Merge_Range_List">
+      <ForwardSymbol>cfgmgr32.CM_Merge_Range_List</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Modify_Res_Des">
+      <ForwardSymbol>cfgmgr32.CM_Modify_Res_Des</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Modify_Res_Des_Ex">
+      <ForwardSymbol>cfgmgr32.CM_Modify_Res_Des_Ex</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Move_DevNode">
+      <ForwardSymbol>cfgmgr32.CM_Move_DevNode</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Move_DevNode_Ex">
+      <ForwardSymbol>cfgmgr32.CM_Move_DevNode_Ex</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Next_Range">
+      <ForwardSymbol>cfgmgr32.CM_Next_Range</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Open_Class_KeyA">
+      <ForwardSymbol>cfgmgr32.CM_Open_Class_KeyA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Open_Class_KeyW">
+      <ForwardSymbol>cfgmgr32.CM_Open_Class_KeyW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Open_Class_Key_ExA">
+      <ForwardSymbol>cfgmgr32.CM_Open_Class_Key_ExA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Open_Class_Key_ExW">
+      <ForwardSymbol>cfgmgr32.CM_Open_Class_Key_ExW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Open_DevNode_Key">
+      <ForwardSymbol>cfgmgr32.CM_Open_DevNode_Key</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Open_DevNode_Key_Ex">
+      <ForwardSymbol>cfgmgr32.CM_Open_DevNode_Key_Ex</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Open_Device_Interface_KeyA">
+      <ForwardSymbol>cfgmgr32.CM_Open_Device_Interface_KeyA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Open_Device_Interface_KeyW">
+      <ForwardSymbol>cfgmgr32.CM_Open_Device_Interface_KeyW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Open_Device_Interface_Key_ExA">
+      <ForwardSymbol>cfgmgr32.CM_Open_Device_Interface_Key_ExA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Open_Device_Interface_Key_ExW">
+      <ForwardSymbol>cfgmgr32.CM_Open_Device_Interface_Key_ExW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Query_And_Remove_SubTreeA">
+      <ForwardSymbol>cfgmgr32.CM_Query_And_Remove_SubTreeA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Query_And_Remove_SubTreeW">
+      <ForwardSymbol>cfgmgr32.CM_Query_And_Remove_SubTreeW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Query_And_Remove_SubTree_ExA">
+      <ForwardSymbol>cfgmgr32.CM_Query_And_Remove_SubTree_ExA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Query_And_Remove_SubTree_ExW">
+      <ForwardSymbol>cfgmgr32.CM_Query_And_Remove_SubTree_ExW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Query_Arbitrator_Free_Data">
+      <ForwardSymbol>cfgmgr32.CM_Query_Arbitrator_Free_Data</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Query_Arbitrator_Free_Data_Ex">
+      <ForwardSymbol>cfgmgr32.CM_Query_Arbitrator_Free_Data_Ex</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Query_Arbitrator_Free_Size">
+      <ForwardSymbol>cfgmgr32.CM_Query_Arbitrator_Free_Size</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Query_Arbitrator_Free_Size_Ex">
+      <ForwardSymbol>cfgmgr32.CM_Query_Arbitrator_Free_Size_Ex</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Query_Remove_SubTree">
+      <ForwardSymbol>cfgmgr32.CM_Query_Remove_SubTree</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Query_Remove_SubTree_Ex">
+      <ForwardSymbol>cfgmgr32.CM_Query_Remove_SubTree_Ex</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Query_Resource_Conflict_List">
+      <ForwardSymbol>cfgmgr32.CM_Query_Resource_Conflict_List</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Reenumerate_DevNode">
+      <ForwardSymbol>cfgmgr32.CM_Reenumerate_DevNode</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Reenumerate_DevNode_Ex">
+      <ForwardSymbol>cfgmgr32.CM_Reenumerate_DevNode_Ex</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Register_Device_Driver">
+      <ForwardSymbol>cfgmgr32.CM_Register_Device_Driver</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Register_Device_Driver_Ex">
+      <ForwardSymbol>cfgmgr32.CM_Register_Device_Driver_Ex</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Register_Device_InterfaceA">
+      <ForwardSymbol>cfgmgr32.CM_Register_Device_InterfaceA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Register_Device_InterfaceW">
+      <ForwardSymbol>cfgmgr32.CM_Register_Device_InterfaceW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Register_Device_Interface_ExA">
+      <ForwardSymbol>cfgmgr32.CM_Register_Device_Interface_ExA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Register_Device_Interface_ExW">
+      <ForwardSymbol>cfgmgr32.CM_Register_Device_Interface_ExW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Remove_SubTree">
+      <ForwardSymbol>cfgmgr32.CM_Remove_SubTree</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Remove_SubTree_Ex">
+      <ForwardSymbol>cfgmgr32.CM_Remove_SubTree_Ex</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Request_Device_EjectA">
+      <ForwardSymbol>cfgmgr32.CM_Request_Device_EjectA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Request_Device_EjectW">
+      <ForwardSymbol>cfgmgr32.CM_Request_Device_EjectW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Request_Device_Eject_ExA">
+      <ForwardSymbol>cfgmgr32.CM_Request_Device_Eject_ExA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Request_Device_Eject_ExW">
+      <ForwardSymbol>cfgmgr32.CM_Request_Device_Eject_ExW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Request_Eject_PC">
+      <ForwardSymbol>cfgmgr32.CM_Request_Eject_PC</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Request_Eject_PC_Ex">
+      <ForwardSymbol>cfgmgr32.CM_Request_Eject_PC_Ex</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_RestoreAll_DefaultPowerSchemes" />
+    <Symbol Name="CM_Restore_DefaultPowerScheme" />
+    <Symbol Name="CM_Run_Detection">
+      <ForwardSymbol>cfgmgr32.CM_Run_Detection</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Run_Detection_Ex">
+      <ForwardSymbol>cfgmgr32.CM_Run_Detection_Ex</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Set_ActiveScheme" />
+    <Symbol Name="CM_Set_Class_Registry_PropertyA">
+      <ForwardSymbol>cfgmgr32.CM_Set_Class_Registry_PropertyA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Set_Class_Registry_PropertyW">
+      <ForwardSymbol>cfgmgr32.CM_Set_Class_Registry_PropertyW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Set_DevNode_Problem">
+      <ForwardSymbol>cfgmgr32.CM_Set_DevNode_Problem</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Set_DevNode_Problem_Ex">
+      <ForwardSymbol>cfgmgr32.CM_Set_DevNode_Problem_Ex</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Set_DevNode_Registry_PropertyA">
+      <ForwardSymbol>cfgmgr32.CM_Set_DevNode_Registry_PropertyA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Set_DevNode_Registry_PropertyW">
+      <ForwardSymbol>cfgmgr32.CM_Set_DevNode_Registry_PropertyW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Set_DevNode_Registry_Property_ExA">
+      <ForwardSymbol>cfgmgr32.CM_Set_DevNode_Registry_Property_ExA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Set_DevNode_Registry_Property_ExW">
+      <ForwardSymbol>cfgmgr32.CM_Set_DevNode_Registry_Property_ExW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Set_HW_Prof">
+      <ForwardSymbol>cfgmgr32.CM_Set_HW_Prof</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Set_HW_Prof_Ex">
+      <ForwardSymbol>cfgmgr32.CM_Set_HW_Prof_Ex</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Set_HW_Prof_FlagsA">
+      <ForwardSymbol>cfgmgr32.CM_Set_HW_Prof_FlagsA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Set_HW_Prof_FlagsW">
+      <ForwardSymbol>cfgmgr32.CM_Set_HW_Prof_FlagsW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Set_HW_Prof_Flags_ExA">
+      <ForwardSymbol>cfgmgr32.CM_Set_HW_Prof_Flags_ExA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Set_HW_Prof_Flags_ExW">
+      <ForwardSymbol>cfgmgr32.CM_Set_HW_Prof_Flags_ExW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Setup_DevNode">
+      <ForwardSymbol>cfgmgr32.CM_Setup_DevNode</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Setup_DevNode_Ex">
+      <ForwardSymbol>cfgmgr32.CM_Setup_DevNode_Ex</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Test_Range_Available">
+      <ForwardSymbol>cfgmgr32.CM_Test_Range_Available</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Uninstall_DevNode">
+      <ForwardSymbol>cfgmgr32.CM_Uninstall_DevNode</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Uninstall_DevNode_Ex">
+      <ForwardSymbol>cfgmgr32.CM_Uninstall_DevNode_Ex</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Unregister_Device_InterfaceA">
+      <ForwardSymbol>cfgmgr32.CM_Unregister_Device_InterfaceA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Unregister_Device_InterfaceW">
+      <ForwardSymbol>cfgmgr32.CM_Unregister_Device_InterfaceW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Unregister_Device_Interface_ExA">
+      <ForwardSymbol>cfgmgr32.CM_Unregister_Device_Interface_ExA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Unregister_Device_Interface_ExW">
+      <ForwardSymbol>cfgmgr32.CM_Unregister_Device_Interface_ExW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CM_Write_UserPowerKey" />
+    <Symbol Name="DoesUserHavePrivilege" />
+    <Symbol Name="DriverStoreAddDriverPackageA" />
+    <Symbol Name="DriverStoreAddDriverPackageW" />
+    <Symbol Name="DriverStoreDeleteDriverPackageA" />
+    <Symbol Name="DriverStoreDeleteDriverPackageW" />
+    <Symbol Name="DriverStoreEnumDriverPackageA" />
+    <Symbol Name="DriverStoreEnumDriverPackageW" />
+    <Symbol Name="DriverStoreFindDriverPackageA" />
+    <Symbol Name="DriverStoreFindDriverPackageW" />
+    <Symbol Name="ExtensionPropSheetPageProc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InstallCatalog" />
+    <Symbol Name="InstallHinfSection">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InstallHinfSectionA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InstallHinfSectionW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IsUserAdmin" />
+    <Symbol Name="MyFree" />
+    <Symbol Name="MyMalloc" />
+    <Symbol Name="MyRealloc" />
+    <Symbol Name="PnpEnumDrpFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PnpIsFileAclIntact" />
+    <Symbol Name="PnpIsFileContentIntact">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PnpIsFilePnpDriver">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PnpRepairWindowsProtectedDriver">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupAddInstallSectionToDiskSpaceListA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupAddInstallSectionToDiskSpaceListW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupAddSectionToDiskSpaceListA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupAddSectionToDiskSpaceListW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupAddToDiskSpaceListA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupAddToDiskSpaceListW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupAddToSourceListA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupAddToSourceListW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupAdjustDiskSpaceListA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupAdjustDiskSpaceListW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupBackupErrorA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupBackupErrorW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupCancelTemporarySourceList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupCloseFileQueue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupCloseInfFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupCloseLog">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupCommitFileQueue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupCommitFileQueueA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupCommitFileQueueW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupConfigureWmiFromInfSectionA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupConfigureWmiFromInfSectionW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupCopyErrorA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupCopyErrorW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupCopyOEMInfA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupCopyOEMInfW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupCreateDiskSpaceListA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupCreateDiskSpaceListW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDecompressOrCopyFileA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDecompressOrCopyFileW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDefaultQueueCallback">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDefaultQueueCallbackA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDefaultQueueCallbackW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDeleteErrorA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDeleteErrorW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDestroyDiskSpaceList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiApplyPowerScheme" />
+    <Symbol Name="SetupDiAskForOEMDisk">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiBuildClassInfoList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiBuildClassInfoListExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiBuildClassInfoListExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiBuildDriverInfoList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiCallClassInstaller">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiCancelDriverInfoSearch">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiChangeState">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiClassGuidsFromNameA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiClassGuidsFromNameExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiClassGuidsFromNameExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiClassGuidsFromNameW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiClassNameFromGuidA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiClassNameFromGuidExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiClassNameFromGuidExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiClassNameFromGuidW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiCreateDevRegKeyA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiCreateDevRegKeyW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiCreateDeviceInfoA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiCreateDeviceInfoList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiCreateDeviceInfoListExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiCreateDeviceInfoListExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiCreateDeviceInfoW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiCreateDeviceInterfaceA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiCreateDeviceInterfaceRegKeyA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiCreateDeviceInterfaceRegKeyW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiCreateDeviceInterfaceW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiDeleteDevRegKey">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiDeleteDeviceInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiDeleteDeviceInterfaceData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiDeleteDeviceInterfaceRegKey">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiDestroyClassImageList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiDestroyDeviceInfoList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiDestroyDriverInfoList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiDrawMiniIcon">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiEnumDeviceInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiEnumDeviceInterfaces">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiEnumDriverInfoA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiEnumDriverInfoW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetActualModelsSectionA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetActualModelsSectionW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetActualSectionToInstallA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetActualSectionToInstallExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetActualSectionToInstallExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetActualSectionToInstallW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetClassBitmapIndex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetClassDescriptionA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetClassDescriptionExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetClassDescriptionExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetClassDescriptionW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetClassDevPropertySheetsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetClassDevPropertySheetsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetClassDevsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetClassDevsExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetClassDevsExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetClassDevsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetClassImageIndex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetClassImageList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetClassImageListExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetClassImageListExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetClassInstallParamsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetClassInstallParamsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetClassPropertyExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetClassPropertyKeys">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetClassPropertyKeysExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetClassPropertyW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetClassRegistryPropertyA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetClassRegistryPropertyW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetCustomDevicePropertyA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetCustomDevicePropertyW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetDeviceInfoListClass">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetDeviceInfoListDetailA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetDeviceInfoListDetailW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetDeviceInstallParamsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetDeviceInstallParamsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetDeviceInstanceIdA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetDeviceInstanceIdW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetDeviceInterfaceAlias">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetDeviceInterfaceDetailA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetDeviceInterfaceDetailW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetDeviceInterfacePropertyKeys">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetDeviceInterfacePropertyW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetDevicePropertyKeys">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetDevicePropertyW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetDeviceRegistryPropertyA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetDeviceRegistryPropertyW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetDriverInfoDetailA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetDriverInfoDetailW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetDriverInstallParamsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetDriverInstallParamsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetHwProfileFriendlyNameA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetHwProfileFriendlyNameExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetHwProfileFriendlyNameExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetHwProfileFriendlyNameW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetHwProfileList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetHwProfileListExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetHwProfileListExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetINFClassA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetINFClassW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetSelectedDevice">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetSelectedDriverA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetSelectedDriverW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiGetWizardPage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiInstallClassA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiInstallClassExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiInstallClassExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiInstallClassW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiInstallDevice">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiInstallDeviceInterfaces">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiInstallDriverFiles">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiLoadClassIcon">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiLoadDeviceIcon">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiMoveDuplicateDevice">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiOpenClassRegKey">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiOpenClassRegKeyExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiOpenClassRegKeyExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiOpenDevRegKey">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiOpenDeviceInfoA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiOpenDeviceInfoW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiOpenDeviceInterfaceA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiOpenDeviceInterfaceRegKey">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiOpenDeviceInterfaceW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiRegisterCoDeviceInstallers">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiRegisterDeviceInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiRemoveDevice">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiRemoveDeviceInterface">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiReportAdditionalSoftwareRequested">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiReportDeviceInstallError">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiReportDriverNotFoundError">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiReportDriverPackageImportationError">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiReportGenericDriverInstalled">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiReportPnPDeviceProblem">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiRestartDevices">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiSelectBestCompatDrv">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiSelectDevice">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiSelectOEMDrv">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiSetClassInstallParamsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiSetClassInstallParamsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiSetClassPropertyExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiSetClassPropertyW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiSetClassRegistryPropertyA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiSetClassRegistryPropertyW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiSetDeviceInstallParamsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiSetDeviceInstallParamsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiSetDeviceInterfaceDefault">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiSetDeviceInterfacePropertyW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiSetDevicePropertyW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiSetDeviceRegistryPropertyA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiSetDeviceRegistryPropertyW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiSetDriverInstallParamsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiSetDriverInstallParamsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiSetSelectedDevice">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiSetSelectedDriverA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiSetSelectedDriverW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDiUnremoveDevice">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDuplicateDiskSpaceListA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupDuplicateDiskSpaceListW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupEnumInfSectionsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupEnumInfSectionsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupEnumPublishedInfA" />
+    <Symbol Name="SetupEnumPublishedInfW" />
+    <Symbol Name="SetupFindFirstLineA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupFindFirstLineW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupFindNextLine">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupFindNextMatchLineA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupFindNextMatchLineW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupFreeSourceListA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupFreeSourceListW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupGetBackupInformationA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupGetBackupInformationW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupGetBinaryField">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupGetFieldCount">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupGetFileCompressionInfoA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupGetFileCompressionInfoExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupGetFileCompressionInfoExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupGetFileCompressionInfoW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupGetFileQueueCount">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupGetFileQueueFlags">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupGetInfDriverStoreLocationA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupGetInfDriverStoreLocationW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupGetInfFileListA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupGetInfFileListW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupGetInfInformationA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupGetInfInformationW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupGetInfPublishedNameA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupGetInfPublishedNameW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupGetInfSections">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupGetIntField">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupGetLineByIndexA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupGetLineByIndexW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupGetLineCountA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupGetLineCountW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupGetLineTextA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupGetLineTextW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupGetMultiSzFieldA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupGetMultiSzFieldW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupGetNonInteractiveMode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupGetSourceFileLocationA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupGetSourceFileLocationW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupGetSourceFileSizeA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupGetSourceFileSizeW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupGetSourceInfoA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupGetSourceInfoW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupGetStringFieldA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupGetStringFieldW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupGetTargetPathA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupGetTargetPathW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupGetThreadLogToken">
+      <ForwardSymbol>devrtl.DevRtlGetThreadLogToken</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupInitDefaultQueueCallback">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupInitDefaultQueueCallbackEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupInitializeFileLogA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupInitializeFileLogW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupInstallFileA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupInstallFileExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupInstallFileExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupInstallFileW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupInstallFilesFromInfSectionA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupInstallFilesFromInfSectionW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupInstallFromInfSectionA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupInstallFromInfSectionW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupInstallLogCloseEventGroup" />
+    <Symbol Name="SetupInstallLogCreateEventGroup" />
+    <Symbol Name="SetupInstallServicesFromInfSectionA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupInstallServicesFromInfSectionExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupInstallServicesFromInfSectionExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupInstallServicesFromInfSectionW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupIterateCabinetA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupIterateCabinetW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupLogErrorA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupLogErrorW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupLogFileA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupLogFileW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupOpenAppendInfFileA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupOpenAppendInfFileW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupOpenFileQueue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupOpenInfFileA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupOpenInfFileW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupOpenLog">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupOpenMasterInf">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupPrepareQueueForRestoreA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupPrepareQueueForRestoreW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupPromptForDiskA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupPromptForDiskW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupPromptReboot">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupQueryDrivesInDiskSpaceListA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupQueryDrivesInDiskSpaceListW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupQueryFileLogA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupQueryFileLogW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupQueryInfFileInformationA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupQueryInfFileInformationW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupQueryInfOriginalFileInformationA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupQueryInfOriginalFileInformationW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupQueryInfVersionInformationA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupQueryInfVersionInformationW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupQuerySourceListA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupQuerySourceListW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupQuerySpaceRequiredOnDriveA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupQuerySpaceRequiredOnDriveW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupQueueCopyA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupQueueCopyIndirectA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupQueueCopyIndirectW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupQueueCopySectionA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupQueueCopySectionW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupQueueCopyW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupQueueDefaultCopyA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupQueueDefaultCopyW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupQueueDeleteA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupQueueDeleteSectionA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupQueueDeleteSectionW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupQueueDeleteW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupQueueRenameA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupQueueRenameSectionA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupQueueRenameSectionW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupQueueRenameW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupRemoveFileLogEntryA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupRemoveFileLogEntryW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupRemoveFromDiskSpaceListA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupRemoveFromDiskSpaceListW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupRemoveFromSourceListA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupRemoveFromSourceListW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupRemoveInstallSectionFromDiskSpaceListA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupRemoveInstallSectionFromDiskSpaceListW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupRemoveSectionFromDiskSpaceListA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupRemoveSectionFromDiskSpaceListW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupRenameErrorA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupRenameErrorW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupScanFileQueue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupScanFileQueueA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupScanFileQueueW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupSetDirectoryIdA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupSetDirectoryIdExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupSetDirectoryIdExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupSetDirectoryIdW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupSetFileQueueAlternatePlatformA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupSetFileQueueAlternatePlatformW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupSetFileQueueFlags">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupSetNonInteractiveMode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupSetPlatformPathOverrideA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupSetPlatformPathOverrideW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupSetSourceListA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupSetSourceListW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupSetThreadLogToken">
+      <ForwardSymbol>devrtl.DevRtlSetThreadLogToken</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupTermDefaultQueueCallback">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupTerminateFileLog">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupUninstallNewlyCopiedInfs">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupUninstallOEMInfA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupUninstallOEMInfW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupVerifyInfFileA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupVerifyInfFileW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupWriteTextLog">
+      <ForwardSymbol>devrtl.DevRtlWriteTextLog</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupWriteTextLogError">
+      <ForwardSymbol>devrtl.DevRtlWriteTextLogError</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetupWriteTextLogInfLine">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UnicodeToMultiByte" />
+    <Symbol Name="VerifyCatalogFile" />
+    <Symbol Name="pGetDriverPackageHash" />
+    <Symbol Name="pSetupAccessRunOnceNodeList" />
+    <Symbol Name="pSetupAddMiniIconToList" />
+    <Symbol Name="pSetupAddTagToGroupOrderListEntry" />
+    <Symbol Name="pSetupAppendPath" />
+    <Symbol Name="pSetupCaptureAndConvertAnsiArg" />
+    <Symbol Name="pSetupCenterWindowRelativeToParent" />
+    <Symbol Name="pSetupCloseTextLogSection">
+      <ForwardSymbol>devrtl.DevRtlCloseTextLogSection</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="pSetupConcatenatePaths" />
+    <Symbol Name="pSetupCreateTextLogSectionA">
+      <ForwardSymbol>devrtl.DevRtlCreateTextLogSectionA</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="pSetupCreateTextLogSectionW">
+      <ForwardSymbol>devrtl.DevRtlCreateTextLogSectionW</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="pSetupDestroyRunOnceNodeList" />
+    <Symbol Name="pSetupDiBuildInfoDataFromStrongName" />
+    <Symbol Name="pSetupDiCrimsonLogDeviceInstall">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SetupAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="pSetupDiEnumSelectedDrivers" />
+    <Symbol Name="pSetupDiGetDriverInfoExtensionId" />
+    <Symbol Name="pSetupDiGetStrongNameForDriverNode" />
+    <Symbol Name="pSetupDiInvalidateHelperModules" />
+    <Symbol Name="pSetupDoLastKnownGoodBackup" />
+    <Symbol Name="pSetupDoesUserHavePrivilege" />
+    <Symbol Name="pSetupDuplicateString" />
+    <Symbol Name="pSetupEnablePrivilege" />
+    <Symbol Name="pSetupEnumRelatedDriverPackages" />
+    <Symbol Name="pSetupFree" />
+    <Symbol Name="pSetupGetCurrentDriverSigningPolicy" />
+    <Symbol Name="pSetupGetDriverDate" />
+    <Symbol Name="pSetupGetDriverVersion" />
+    <Symbol Name="pSetupGetField" />
+    <Symbol Name="pSetupGetFileTitle" />
+    <Symbol Name="pSetupGetGlobalFlags" />
+    <Symbol Name="pSetupGetIndirectStringsFromDriverInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="pSetupGetInfSections" />
+    <Symbol Name="pSetupGetQueueFlags" />
+    <Symbol Name="pSetupGetRealSystemTime" />
+    <Symbol Name="pSetupGuidFromString" />
+    <Symbol Name="pSetupHandleFailedVerification" />
+    <Symbol Name="pSetupInfGetDigitalSignatureInfo" />
+    <Symbol Name="pSetupInfIsInbox" />
+    <Symbol Name="pSetupInfSetDigitalSignatureInfo" />
+    <Symbol Name="pSetupInstallCatalog" />
+    <Symbol Name="pSetupIsBiDiLocalizedSystemEx" />
+    <Symbol Name="pSetupIsGuidNull" />
+    <Symbol Name="pSetupIsLocalSystem" />
+    <Symbol Name="pSetupIsUserAdmin" />
+    <Symbol Name="pSetupIsUserTrustedInstaller" />
+    <Symbol Name="pSetupLoadIndirectString" />
+    <Symbol Name="pSetupMakeSurePathExists" />
+    <Symbol Name="pSetupMalloc" />
+    <Symbol Name="pSetupModifyGlobalFlags" />
+    <Symbol Name="pSetupMultiByteToUnicode" />
+    <Symbol Name="pSetupOpenAndMapFileForRead" />
+    <Symbol Name="pSetupOutOfMemory" />
+    <Symbol Name="pSetupQueryMultiSzValueToArray" />
+    <Symbol Name="pSetupRealloc" />
+    <Symbol Name="pSetupRegistryDelnode" />
+    <Symbol Name="pSetupRetrieveServiceConfig" />
+    <Symbol Name="pSetupSetArrayToMultiSzValue" />
+    <Symbol Name="pSetupSetDriverPackageRestorePoint" />
+    <Symbol Name="pSetupSetGlobalFlags" />
+    <Symbol Name="pSetupSetQueueFlags" />
+    <Symbol Name="pSetupShouldDeviceBeExcluded" />
+    <Symbol Name="pSetupStringFromGuid" />
+    <Symbol Name="pSetupStringTableAddString" />
+    <Symbol Name="pSetupStringTableAddStringEx" />
+    <Symbol Name="pSetupStringTableDestroy" />
+    <Symbol Name="pSetupStringTableDuplicate" />
+    <Symbol Name="pSetupStringTableEnum" />
+    <Symbol Name="pSetupStringTableGetExtraData" />
+    <Symbol Name="pSetupStringTableInitialize" />
+    <Symbol Name="pSetupStringTableInitializeEx" />
+    <Symbol Name="pSetupStringTableLookUpString" />
+    <Symbol Name="pSetupStringTableLookUpStringEx" />
+    <Symbol Name="pSetupStringTableSetExtraData" />
+    <Symbol Name="pSetupStringTableStringFromId" />
+    <Symbol Name="pSetupStringTableStringFromIdEx" />
+    <Symbol Name="pSetupUnicodeToMultiByte" />
+    <Symbol Name="pSetupUninstallCatalog" />
+    <Symbol Name="pSetupUnmapAndCloseFile" />
+    <Symbol Name="pSetupValidateDriverPackage" />
+    <Symbol Name="pSetupVerifyCatalogFile" />
+    <Symbol Name="pSetupVerifyQueuedCatalogs" />
+    <Symbol Name="pSetupWriteLogEntry" />
+    <Symbol Name="pSetupWriteLogError" />
+  </ExportedSymbols>
+</DynamicLibrary>

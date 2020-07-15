@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\Pdh.Lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\Pdh.Lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="pdh.dll" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="PdhAddCounterA">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhAddCounterW">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhAddEnglishCounterA">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhAddEnglishCounterW">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhBindInputDataSourceA">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhBindInputDataSourceW">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhBrowseCountersA">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhBrowseCountersHA">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhBrowseCountersHW">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhBrowseCountersW">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhCalculateCounterFromRawValue">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhCloseLog">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhCloseQuery">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhCollectQueryData">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhCollectQueryDataEx">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhCollectQueryDataWithTime">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhComputeCounterStatistics">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhConnectMachineA">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhConnectMachineW">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhCreateSQLTablesA">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhCreateSQLTablesW">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhEnumLogSetNamesA">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhEnumLogSetNamesW">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhEnumMachinesA">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhEnumMachinesHA">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhEnumMachinesHW">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhEnumMachinesW">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhEnumObjectItemsA">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhEnumObjectItemsHA">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhEnumObjectItemsHW">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhEnumObjectItemsW">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhEnumObjectsA">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhEnumObjectsHA">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhEnumObjectsHW">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhEnumObjectsW">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhExpandCounterPathA">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhExpandCounterPathW">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhExpandWildCardPathA">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhExpandWildCardPathHA">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhExpandWildCardPathHW">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhExpandWildCardPathW">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhFormatFromRawValue">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhGetCounterInfoA">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhGetCounterInfoW">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhGetCounterTimeBase">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhGetDataSourceTimeRangeA">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhGetDataSourceTimeRangeH">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhGetDataSourceTimeRangeW">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhGetDefaultPerfCounterA">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhGetDefaultPerfCounterHA">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhGetDefaultPerfCounterHW">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhGetDefaultPerfCounterW">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhGetDefaultPerfObjectA">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhGetDefaultPerfObjectHA">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhGetDefaultPerfObjectHW">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhGetDefaultPerfObjectW">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhGetDllVersion">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhGetFormattedCounterArrayA">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhGetFormattedCounterArrayW">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhGetFormattedCounterValue">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhGetLogFileSize">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhGetLogSetGUID">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhGetRawCounterArrayA">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhGetRawCounterArrayW">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhGetRawCounterValue">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhIsRealTimeQuery">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhLookupPerfIndexByNameA">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhLookupPerfIndexByNameW">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhLookupPerfNameByIndexA">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhLookupPerfNameByIndexW">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhMakeCounterPathA">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhMakeCounterPathW">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhOpenLogA">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhOpenLogW">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhOpenQuery">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhOpenQueryA">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhOpenQueryH">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhOpenQueryW">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhParseCounterPathA">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhParseCounterPathW">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhParseInstanceNameA">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhParseInstanceNameW">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhReadRawLogRecord">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhRemoveCounter">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhSelectDataSourceA">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhSelectDataSourceW">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhSetCounterScaleFactor">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhSetDefaultRealTimeDataSource">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhSetLogSetRunID">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhSetQueryTimeRange">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhUpdateLogA">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhUpdateLogFileCatalog">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhUpdateLogW">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhValidatePathA">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhValidatePathExA">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhValidatePathExW">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhValidatePathW">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhVbAddCounter">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhVbCreateCounterPathList">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhVbGetCounterPathElements">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhVbGetCounterPathFromList">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhVbGetDoubleCounterValue">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhVbGetLogFileSize">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhVbGetOneCounterPath">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhVbIsGoodStatus">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhVbOpenLog">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhVbOpenQuery">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhVbUpdateLog">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhVerifySQLDBA">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PdhVerifySQLDBW">
+      <Definitions>
+        <DynamicLibrary Name="pdh.dll" />
+      </Definitions>
+    </Symbol>
+  </ExportedSymbols>
+</StaticLibrary>

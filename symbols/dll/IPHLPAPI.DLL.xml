@@ -1,0 +1,2266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="IPHLPAPI.DLL">
+  <OriginalPath>C:\Windows\system32\IPHLPAPI.DLL</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="AddIPAddress">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AllocateAndGetInterfaceInfoFromStack">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AllocateAndGetIpAddrTableFromStack">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CancelIPChangeNotify">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CancelMibChangeNotify2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CloseCompartment">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CloseGetIPPhysicalInterfaceForDestination">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ConvertCompartmentGuidToId">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ConvertCompartmentIdToGuid">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ConvertGuidToStringA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ConvertGuidToStringW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ConvertInterfaceAliasToLuid">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ConvertInterfaceGuidToLuid">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ConvertInterfaceIndexToLuid">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ConvertInterfaceLuidToAlias">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ConvertInterfaceLuidToGuid">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ConvertInterfaceLuidToIndex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ConvertInterfaceLuidToNameA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ConvertInterfaceLuidToNameW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ConvertInterfaceNameToLuidA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ConvertInterfaceNameToLuidW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ConvertInterfacePhysicalAddressToLuid">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ConvertIpv4MaskToLength">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ConvertLengthToIpv4Mask">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ConvertRemoteInterfaceAliasToLuid">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ConvertRemoteInterfaceGuidToLuid">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ConvertRemoteInterfaceIndexToLuid">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ConvertRemoteInterfaceLuidToAlias">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ConvertRemoteInterfaceLuidToGuid">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ConvertRemoteInterfaceLuidToIndex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ConvertStringToGuidA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ConvertStringToGuidW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ConvertStringToInterfacePhysicalAddress">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateAnycastIpAddressEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateCompartment">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateIpForwardEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateIpForwardEntry2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateIpNetEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateIpNetEntry2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreatePersistentTcpPortReservation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreatePersistentUdpPortReservation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateProxyArpEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateSortedAddressPairs">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateUnicastIpAddressEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeleteAnycastIpAddressEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeleteCompartment">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeleteIPAddress">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeleteIpForwardEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeleteIpForwardEntry2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeleteIpNetEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeleteIpNetEntry2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeletePersistentTcpPortReservation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeletePersistentUdpPortReservation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeleteProxyArpEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeleteUnicastIpAddressEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DisableMediaSense">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnableRouter">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FlushIpNetTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FlushIpNetTable2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FlushIpPathTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FreeMibTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetAdapterIndex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetAdapterOrderMap">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetAdaptersAddresses">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetAdaptersInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetAnycastIpAddressEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetAnycastIpAddressTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetBestInterface">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetBestInterfaceEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetBestRoute">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetBestRoute2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetCurrentThreadCompartmentId">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetCurrentThreadCompartmentScope">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetDefaultCompartmentId">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetExtendedTcpTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetExtendedUdpTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetFriendlyIfIndex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetIcmpStatistics">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetIcmpStatisticsEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetIfEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetIfEntry2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetIfEntry2Ex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetIfStackTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetIfTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetIfTable2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetIfTable2Ex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetInterfaceCompartmentId">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetInterfaceInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetInvertedIfStackTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetIpAddrTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetIpErrorString">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetIpForwardEntry2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetIpForwardTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetIpForwardTable2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetIpInterfaceEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetIpInterfaceTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetIpNetEntry2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetIpNetTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetIpNetTable2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetIpNetworkConnectionBandwidthEstimates">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetIpPathEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetIpPathTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetIpStatistics">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetIpStatisticsEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetJobCompartmentId">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetMulticastIpAddressEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetMulticastIpAddressTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetNetworkInformation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetNetworkParams">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetNumberOfInterfaces">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetOwnerModuleFromPidAndInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetOwnerModuleFromTcp6Entry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetOwnerModuleFromTcpEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetOwnerModuleFromUdp6Entry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetOwnerModuleFromUdpEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetPerAdapterInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetPerTcp6ConnectionEStats">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetPerTcp6ConnectionStats">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetPerTcpConnectionEStats">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetPerTcpConnectionStats">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetRTTAndHopCount">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetSessionCompartmentId">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetTcp6Table">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetTcp6Table2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetTcpStatistics">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetTcpStatisticsEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetTcpStatisticsEx2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetTcpTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetTcpTable2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetTeredoPort">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetUdp6Table">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetUdpStatistics">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetUdpStatisticsEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetUdpStatisticsEx2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetUdpTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetUniDirectionalAdapterInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetUnicastIpAddressEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetUnicastIpAddressTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetWPAOACSupportLevel">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Icmp6CreateFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Icmp6ParseReplies">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Icmp6SendEcho2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IcmpCloseHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IcmpCreateFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IcmpParseReplies">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IcmpSendEcho">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IcmpSendEcho2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IcmpSendEcho2Ex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitializeCompartmentEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitializeIpForwardEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitializeIpInterfaceEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitializeUnicastIpAddressEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalCleanupPersistentStore">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalCreateAnycastIpAddressEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalCreateIpForwardEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalCreateIpForwardEntry2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalCreateIpNetEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalCreateIpNetEntry2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalCreateUnicastIpAddressEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalDeleteAnycastIpAddressEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalDeleteIpForwardEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalDeleteIpForwardEntry2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalDeleteIpNetEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalDeleteIpNetEntry2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalDeleteUnicastIpAddressEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalFindInterfaceByAddress">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalGetAnycastIpAddressEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalGetAnycastIpAddressTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalGetBoundTcp6EndpointTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalGetBoundTcpEndpointTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalGetForwardIpTable2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalGetIPPhysicalInterfaceForDestination">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalGetIfEntry2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalGetIfTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalGetIfTable2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalGetIpAddrTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalGetIpForwardEntry2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalGetIpForwardTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalGetIpInterfaceEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalGetIpInterfaceTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalGetIpNetEntry2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalGetIpNetTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalGetIpNetTable2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalGetMulticastIpAddressEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalGetMulticastIpAddressTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalGetRtcSlotInformation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalGetTcp6Table2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalGetTcp6TableWithOwnerModule">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalGetTcp6TableWithOwnerPid">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalGetTcpTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalGetTcpTable2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalGetTcpTableEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalGetTcpTableWithOwnerModule">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalGetTcpTableWithOwnerPid">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalGetTunnelPhysicalAdapter">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalGetUdp6TableWithOwnerModule">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalGetUdp6TableWithOwnerPid">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalGetUdpTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalGetUdpTableEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalGetUdpTableWithOwnerModule">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalGetUdpTableWithOwnerPid">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalGetUnicastIpAddressEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalGetUnicastIpAddressTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalIcmpCreateFileEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalSetIfEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalSetIpForwardEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalSetIpForwardEntry2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalSetIpInterfaceEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalSetIpNetEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalSetIpNetEntry2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalSetIpStats">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalSetTcpEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalSetTeredoPort">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalSetUnicastIpAddressEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IpReleaseAddress">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IpRenewAddress">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LookupPersistentTcpPortReservation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LookupPersistentUdpPortReservation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NTPTimeToNTFileTime">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NTTimeToNTPTime">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NhGetGuidFromInterfaceName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NhGetInterfaceDescriptionFromGuid">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NhGetInterfaceNameFromDeviceGuid">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NhGetInterfaceNameFromGuid">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NhpAllocateAndGetInterfaceInfoFromStack">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NotifyAddrChange">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NotifyCompartmentChange">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NotifyIpInterfaceChange">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NotifyRouteChange">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NotifyRouteChange2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NotifyStableUnicastIpAddressTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NotifyTeredoPortChange">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NotifyUnicastIpAddressChange">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OpenCompartment">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ParseNetworkString">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PfAddFiltersToInterface">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PfAddGlobalFilterToInterface">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PfBindInterfaceToIPAddress">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PfBindInterfaceToIndex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PfCreateInterface">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PfDeleteInterface">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PfDeleteLog">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PfGetInterfaceStatistics">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PfMakeLog">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PfRebindFilters">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PfRemoveFilterHandles">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PfRemoveFiltersFromInterface">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PfRemoveGlobalFilterFromInterface">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PfSetLogBuffer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PfTestPacket">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PfUnBindInterface">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResolveIpNetEntry2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResolveNeighbor">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RestoreMediaSense">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SendARP">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetAdapterIpAddress">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetCurrentThreadCompartmentId">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetCurrentThreadCompartmentScope">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetIfEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetIpForwardEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetIpForwardEntry2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetIpInterfaceEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetIpNetEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetIpNetEntry2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetIpStatistics">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetIpStatisticsEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetIpTTL">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetJobCompartmentId">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetNetworkInformation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetPerTcp6ConnectionEStats">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetPerTcp6ConnectionStats">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetPerTcpConnectionEStats">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetPerTcpConnectionStats">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetSessionCompartmentId">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetTcpEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetUnicastIpAddressEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UnenableRouter">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="do_echo_rep" />
+    <Symbol Name="do_echo_req" />
+    <Symbol Name="if_indextoname">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="if_nametoindex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\iphlpapi.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="register_icmp" />
+  </ExportedSymbols>
+</DynamicLibrary>

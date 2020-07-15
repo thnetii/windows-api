@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="d3d9.dll">
+  <OriginalPath>C:\Windows\system32\d3d9.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="D3DPERF_BeginEvent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\d3d9.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DPERF_EndEvent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\d3d9.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DPERF_GetStatus">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\d3d9.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DPERF_QueryRepeatFrame">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\d3d9.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DPERF_SetMarker">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\d3d9.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DPERF_SetOptions">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\d3d9.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DPERF_SetRegion">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\d3d9.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DebugSetLevel">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\d3d9.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DebugSetMute">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\d3d9.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Direct3D9EnableMaximizedWindowedModeShim" />
+    <Symbol Name="Direct3DCreate9">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\d3d9.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Direct3DCreate9Ex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\d3d9.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Direct3DShaderValidatorCreate9" />
+    <Symbol Name="PSGPError" />
+    <Symbol Name="PSGPSampleTexture" />
+    <Symbol Name="[NONAME]" />
+  </ExportedSymbols>
+</DynamicLibrary>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="SLC.dll">
+  <OriginalPath>C:\Windows\system32\SLC.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="SLClose">
+      <ForwardSymbol>SPPC.SLClose</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\slc.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SLConsumeRight">
+      <ForwardSymbol>SPPC.SLConsumeRight</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\slc.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SLConsumeWindowsRight">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\slc.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SLDepositOfflineConfirmationId">
+      <ForwardSymbol>SPPC.SLDepositOfflineConfirmationId</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\slc.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SLDepositOfflineConfirmationIdEx">
+      <ForwardSymbol>SPPC.SLDepositOfflineConfirmationIdEx</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\slc.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SLFireEvent">
+      <ForwardSymbol>SPPC.SLFireEvent</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\slc.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SLGenerateOfflineInstallationId">
+      <ForwardSymbol>SPPC.SLGenerateOfflineInstallationId</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\slc.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SLGenerateOfflineInstallationIdEx">
+      <ForwardSymbol>SPPC.SLGenerateOfflineInstallationIdEx</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\slc.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SLGetApplicationInformation">
+      <ForwardSymbol>SPPC.SLGetApplicationInformation</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\slc.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SLGetGenuineInformation">
+      <ForwardSymbol>SPPC.SLGetGenuineInformation</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\slc.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SLGetInstalledProductKeyIds">
+      <ForwardSymbol>SPPC.SLGetInstalledProductKeyIds</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\slc.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SLGetLicense">
+      <ForwardSymbol>SPPC.SLGetLicense</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\slc.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SLGetLicenseFileId">
+      <ForwardSymbol>SPPC.SLGetLicenseFileId</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\slc.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SLGetLicenseInformation">
+      <ForwardSymbol>SPPC.SLGetLicenseInformation</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\slc.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SLGetLicensingStatusInformation">
+      <ForwardSymbol>SPPC.SLGetLicensingStatusInformation</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\slc.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SLGetPKeyId">
+      <ForwardSymbol>SPPC.SLGetPKeyId</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\slc.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SLGetPKeyInformation">
+      <ForwardSymbol>SPPC.SLGetPKeyInformation</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\slc.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SLGetPolicyInformation">
+      <ForwardSymbol>SPPC.SLGetPolicyInformation</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\slc.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SLGetPolicyInformationDWORD">
+      <ForwardSymbol>SPPC.SLGetPolicyInformationDWORD</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\slc.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SLGetProductSkuInformation">
+      <ForwardSymbol>SPPC.SLGetProductSkuInformation</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\slc.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SLGetSLIDList">
+      <ForwardSymbol>SPPC.SLGetSLIDList</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\slc.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SLGetServiceInformation">
+      <ForwardSymbol>SPPC.SLGetServiceInformation</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\slc.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SLGetWindowsInformation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\slc.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SLGetWindowsInformationDWORD">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\slc.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SLInstallLicense">
+      <ForwardSymbol>SPPC.SLInstallLicense</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\slc.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SLInstallProofOfPurchase">
+      <ForwardSymbol>SPPC.SLInstallProofOfPurchase</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\slc.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SLIsWindowsGenuineLocal">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\slc.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SLOpen">
+      <ForwardSymbol>SPPC.SLOpen</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\slc.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SLReArmWindows">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\slc.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SLRegisterEvent">
+      <ForwardSymbol>SPPC.SLRegisterEvent</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\slc.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SLRegisterWindowsEvent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\slc.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SLSetCurrentProductKey">
+      <ForwardSymbol>SPPC.SLSetCurrentProductKey</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\slc.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SLSetGenuineInformation">
+      <ForwardSymbol>SPPC.SLSetGenuineInformation</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\slc.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SLUninstallLicense">
+      <ForwardSymbol>SPPC.SLUninstallLicense</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\slc.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SLUninstallProofOfPurchase">
+      <ForwardSymbol>SPPC.SLUninstallProofOfPurchase</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\slc.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SLUnregisterEvent">
+      <ForwardSymbol>SPPC.SLUnregisterEvent</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\slc.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SLUnregisterWindowsEvent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\slc.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SLpCheckProductKey" />
+    <Symbol Name="SLpGetGenuineLocal">
+      <ForwardSymbol>SPPC.SLpGetGenuineLocal</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="SLpUpdateComponentTokens" />
+  </ExportedSymbols>
+</DynamicLibrary>

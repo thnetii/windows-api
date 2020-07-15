@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\drtprov.lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\drtprov.lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="drtprov.dll" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="DrtCreateDerivedKey" />
+    <Symbol Name="DrtCreateDerivedKeySecurityProvider" />
+    <Symbol Name="DrtCreateDnsBootstrapResolver" />
+    <Symbol Name="DrtCreateNullSecurityProvider" />
+    <Symbol Name="DrtCreatePnrpBootstrapResolver" />
+    <Symbol Name="DrtDeleteDerivedKeySecurityProvider" />
+    <Symbol Name="DrtDeleteDnsBootstrapResolver" />
+    <Symbol Name="DrtDeleteNullSecurityProvider" />
+    <Symbol Name="DrtDeletePnrpBootstrapResolver" />
+  </ExportedSymbols>
+</StaticLibrary>

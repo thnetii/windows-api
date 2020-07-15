@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="d3d12.dll">
+  <OriginalPath>C:\Windows\system32\d3d12.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="D3D12CoreCreateLayeredDevice">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\d3d12.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3D12CoreGetLayeredDeviceSize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\d3d12.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3D12CoreRegisterLayers">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\d3d12.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3D12CreateDevice">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\d3d12.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3D12CreateRootSignatureDeserializer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\d3d12.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3D12CreateVersionedRootSignatureDeserializer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\d3d12.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3D12EnableExperimentalFeatures">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\d3d12.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3D12GetDebugInterface">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\d3d12.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3D12SerializeRootSignature">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\d3d12.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3D12SerializeVersionedRootSignature">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\d3d12.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetBehaviorValue" />
+    <Symbol Name="SetAppCompatStringPointer" />
+    <Symbol Name="[NONAME]" />
+  </ExportedSymbols>
+</DynamicLibrary>

@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="msdrm.dll">
+  <OriginalPath>C:\Windows\system32\msdrm.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="DRMAcquireAdvisories">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMAcquireIssuanceLicenseTemplate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMAcquireLicense">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMActivate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMAddLicense">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMAddRightWithUser">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMAttest">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMCheckSecurity">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMClearAllRights">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMCloseEnvironmentHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMCloseHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMClosePubHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMCloseQueryHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMCloseSession">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMConstructCertificateChain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMCreateBoundLicense">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMCreateClientSession">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMCreateEnablingBitsDecryptor">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMCreateEnablingBitsEncryptor">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMCreateEnablingPrincipal">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMCreateIssuanceLicense">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMCreateLicenseStorageSession">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMCreateRight">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMCreateUser">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMDecode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMDeconstructCertificateChain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMDecrypt">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMDeleteLicense">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMDuplicateEnvironmentHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMDuplicateHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMDuplicatePubHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMDuplicateSession">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMEncode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMEncrypt">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMEnumerateLicense">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMGetApplicationSpecificData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMGetBoundLicenseAttribute">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMGetBoundLicenseAttributeCount">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMGetBoundLicenseObject">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMGetBoundLicenseObjectCount">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMGetCertificateChainCount">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMGetClientVersion">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMGetEnvironmentInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMGetInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMGetIntervalTime">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMGetIssuanceLicenseInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMGetIssuanceLicenseTemplate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMGetMetaData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMGetNameAndDescription">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMGetOwnerLicense">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMGetProcAddress">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMGetRevocationPoint">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMGetRightExtendedInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMGetRightInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMGetSecurityProvider">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMGetServiceLocation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMGetSignedIssuanceLicense">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMGetSignedIssuanceLicenseEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMGetTime">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMGetUnboundLicenseAttribute">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMGetUnboundLicenseAttributeCount">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMGetUnboundLicenseObject">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMGetUnboundLicenseObjectCount">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMGetUsagePolicy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMGetUserInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMGetUserRights">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMGetUsers">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMInitEnvironment">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMIsActivated">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMIsWindowProtected">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMLoadLibrary">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMParseUnboundLicense">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMRegisterContent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMRegisterProtectedWindow">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMRegisterRevocationList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMRepair">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMSetApplicationSpecificData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMSetGlobalOptions">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMSetIntervalTime">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMSetMetaData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMSetNameAndDescription">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMSetRevocationPoint">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMSetUsagePolicy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMVerify">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DRMpCloseFile" />
+    <Symbol Name="DRMpFileInitialize" />
+    <Symbol Name="DRMpFileIsProtected" />
+    <Symbol Name="DRMpFileProtect" />
+    <Symbol Name="DRMpFileUnprotect" />
+    <Symbol Name="DRMpFreeMemory" />
+    <Symbol Name="DllCanUnloadNow" />
+    <Symbol Name="DllGetClassObject" />
+    <Symbol Name="DllRegisterServer" />
+    <Symbol Name="DllUnregisterServer" />
+    <Symbol Name="__AddMachineCertToLicenseStore">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msdrm.lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

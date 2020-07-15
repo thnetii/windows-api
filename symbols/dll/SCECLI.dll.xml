@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="SCECLI.dll">
+  <OriginalPath>C:\Windows\system32\SCECLI.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="ConvertSecurityDescriptorToText" />
+    <Symbol Name="DeltaNotify" />
+    <Symbol Name="DllRegisterServer" />
+    <Symbol Name="DllUnregisterServer" />
+    <Symbol Name="InitializeChangeNotify" />
+    <Symbol Name="SceAddToNameList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceAddToNameStatusList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceAddToObjectList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceAnalyzeSystem">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceAppendSecurityProfileInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceBrowseDatabaseTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceCloseProfile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceCommitTransaction">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceCompareNameList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceCompareSecurityDescriptors">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceConfigureConvertedFileSecurity" />
+    <Symbol Name="SceConfigureSystem">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceCopyBaseProfile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceCreateDirectory">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceDcPromoCreateGPOsInSysvol">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceDcPromoCreateGPOsInSysvolEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceDcPromoteSecurity">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceDcPromoteSecurityEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceEnforceSecurityPolicyPropagation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceEnumerateServices">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceFreeMemory">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceFreeProfileMemory">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceGenerateGroupPolicy" />
+    <Symbol Name="SceGenerateRollback">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceGetAnalysisAreaSummary">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceGetAreas">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceGetDatabaseSetting">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceGetDbTime">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceGetObjectChildren">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceGetObjectSecurity">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceGetScpProfileDescription">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceGetSecurityProfileInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceGetServerProductType">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceGetTimeStamp">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceIsSystemDatabase">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceLookupPrivRightName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceNotifyPolicyDelta" />
+    <Symbol Name="SceOpenPolicy" />
+    <Symbol Name="SceOpenProfile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceProcessSecurityPolicyGPO" />
+    <Symbol Name="SceProcessSecurityPolicyGPOEx" />
+    <Symbol Name="SceRegisterRegValues">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceRollbackTransaction">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceSetDatabaseSetting">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceSetupBackupSecurity">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceSetupConfigureServices">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceSetupGenerateTemplate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceSetupMoveSecurityFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceSetupRootSecurity">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceSetupSystemByInfName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceSetupUnwindSecurityFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceSetupUpdateSecurityFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceSetupUpdateSecurityKey">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceSetupUpdateSecurityService">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceStartTransaction">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceSvcConvertSDToText">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceSvcConvertTextToSD">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceSvcFree">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceSvcGetInformationTemplate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceSvcQueryInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceSvcSetInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceSvcSetInformationTemplate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceSvcUpdateInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceSysPrep" />
+    <Symbol Name="SceSysPrepOffline" />
+    <Symbol Name="SceUpdateObjectInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceUpdateSecurityProfile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceWrapperExportSecurityProfile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceWrapperImportSecurityProfile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SceWriteSecurityProfileInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\scecli.lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

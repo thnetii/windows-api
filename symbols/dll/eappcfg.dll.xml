@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="eappcfg.dll">
+  <OriginalPath>C:\Windows\system32\eappcfg.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="EapHostPeerConfigBlob2Xml">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\eappcfg.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EapHostPeerConfigXml2Blob">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\eappcfg.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EapHostPeerCreateMethodConfiguration">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\eappcfg.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EapHostPeerCredentialsXml2Blob">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\eappcfg.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EapHostPeerFreeErrorMemory">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\eappcfg.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EapHostPeerFreeMemory">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\eappcfg.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EapHostPeerGetMethodProperties">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\eappcfg.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EapHostPeerGetMethods">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\eappcfg.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EapHostPeerInvokeConfigUI">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\eappcfg.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EapHostPeerInvokeIdentityUI">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\eappcfg.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EapHostPeerInvokeInteractiveUI">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\eappcfg.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EapHostPeerQueryCredentialInputFields">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\eappcfg.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EapHostPeerQueryInteractiveUIInputFields">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\eappcfg.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EapHostPeerQueryUIBlobFromInteractiveUIInputFields">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\eappcfg.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EapHostPeerQueryUserBlobFromCredentialInputFields">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\eappcfg.lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

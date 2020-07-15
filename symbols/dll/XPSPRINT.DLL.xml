@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="XPSPRINT.DLL">
+  <OriginalPath>C:\Windows\system32\XPSPRINT.DLL</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="StartXpsPrintJob">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\xpsprint.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StartXpsPrintJob1">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\xpsprint.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="[NONAME]" />
+  </ExportedSymbols>
+</DynamicLibrary>

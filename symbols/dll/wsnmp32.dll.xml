@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="wsnmp32.dll">
+  <OriginalPath>C:\Windows\system32\wsnmp32.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="SnmpCancelMsg">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSnmp32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpCleanup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSnmp32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpCleanupEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSnmp32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpClose">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSnmp32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpContextToStr">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSnmp32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpConveyAgentAddress">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSnmp32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpCountVbl">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSnmp32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpCreatePdu">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSnmp32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpCreateSession">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSnmp32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpCreateVbl">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSnmp32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpDecodeMsg">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSnmp32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpDeleteVb">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSnmp32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpDuplicatePdu">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSnmp32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpDuplicateVbl">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSnmp32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpEncodeMsg">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSnmp32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpEntityToStr">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSnmp32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpFreeContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSnmp32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpFreeDescriptor">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSnmp32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpFreeEntity">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSnmp32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpFreePdu">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSnmp32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpFreeVbl">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSnmp32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpGetLastError">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSnmp32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpGetPduData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSnmp32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpGetRetransmitMode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSnmp32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpGetRetry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSnmp32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpGetTimeout">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSnmp32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpGetTranslateMode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSnmp32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpGetVb">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSnmp32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpGetVendorInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSnmp32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpListen">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSnmp32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpListenEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSnmp32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpOidCompare">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSnmp32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpOidCopy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSnmp32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpOidToStr">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSnmp32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpOpen">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSnmp32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpRecvMsg">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSnmp32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpRegister">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSnmp32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpSendMsg">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSnmp32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpSetAgentAddress">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSnmp32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpSetPduData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSnmp32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpSetPort">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSnmp32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpSetRetransmitMode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSnmp32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpSetRetry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSnmp32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpSetTimeout">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSnmp32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpSetTranslateMode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSnmp32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpSetVb">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSnmp32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpStartup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSnmp32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpStartupEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSnmp32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpStrToContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSnmp32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpStrToEntity">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSnmp32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpStrToOid">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSnmp32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

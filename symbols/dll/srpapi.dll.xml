@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="srpapi.dll">
+  <OriginalPath>C:\Windows\system32\srpapi.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="AiEvaluatePlugin">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\srpapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AppIDDecodeAttributeString">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\srpapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AppIDEncodeAttributeString">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\srpapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AppIDFreeAttributeString">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\srpapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SrpCloseThreadNetworkContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\srpapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SrpCloseTrackInstall">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\srpapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SrpCreateThreadNetworkContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\srpapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SrpDisablePermissiveModeFileEncryption">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\srpapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SrpDoesPolicyAllowAppExecution">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\srpapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SrpEnablePermissiveModeFileEncryption">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\srpapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SrpGetAllowedEnterprises">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\srpapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SrpGetAppxFqbnFromPackageFullName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\srpapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SrpGetEnterpriseIds">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\srpapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SrpGetEnterprisePolicy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\srpapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SrpInheritEnterpriseContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\srpapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SrpInheritOriginClaim">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\srpapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SrpIsAllowed">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\srpapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SrpIsTokenService">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\srpapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SrpOpenTrackInstall">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\srpapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SrpRestoreEnterpriseContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\srpapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SrpSetTokenEnterpriseId">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\srpapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

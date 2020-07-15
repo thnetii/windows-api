@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="DWrite.dll">
+  <OriginalPath>C:\Windows\system32\DWrite.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="DWriteCreateFactory">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dwrite.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

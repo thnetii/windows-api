@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\davclnt.lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\davclnt.lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="davclnt.dll" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="DavCancelConnectionsToServer" />
+    <Symbol Name="DavFreeUsedDiskSpace" />
+    <Symbol Name="DavGetDiskSpaceUsage" />
+    <Symbol Name="DavGetTheLockOwnerOfTheFile" />
+    <Symbol Name="DavInvalidateCache" />
+    <Symbol Name="DavRegisterAuthCallback" />
+    <Symbol Name="DavSetCookieW" />
+    <Symbol Name="DavUnregisterAuthCallback" />
+    <Symbol Name="DllMain" />
+    <Symbol Name="NPAddConnection" />
+    <Symbol Name="NPAddConnection3" />
+    <Symbol Name="NPCancelConnection" />
+    <Symbol Name="NPCloseEnum" />
+    <Symbol Name="NPEnumResource" />
+    <Symbol Name="NPFormatNetworkName" />
+    <Symbol Name="NPGetCaps" />
+    <Symbol Name="NPGetConnection" />
+    <Symbol Name="NPGetResourceInformation" />
+    <Symbol Name="NPGetResourceParent" />
+    <Symbol Name="NPGetUniversalName" />
+    <Symbol Name="NPGetUser" />
+    <Symbol Name="NPOpenEnum" />
+  </ExportedSymbols>
+</StaticLibrary>

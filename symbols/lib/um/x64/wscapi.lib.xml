@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\wscapi.lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\wscapi.lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="WSCAPI.dll" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="*))" />
+    <Symbol Name="CLSID_WSCDefaultProduct" />
+    <Symbol Name="CLSID_WSCProductList" />
+    <Symbol Name="IID_IWSCDefaultProduct" />
+    <Symbol Name="IID_IWSCProductList" />
+    <Symbol Name="IID_IWscProduct" />
+    <Symbol Name="LIBID_wscAPILib" />
+    <Symbol Name="WscGetAntiMalwareUri" />
+    <Symbol Name="WscGetSecurityProviderHealth" />
+    <Symbol Name="WscQueryAntiMalwareUri" />
+    <Symbol Name="WscRegisterForChanges" />
+    <Symbol Name="WscRegisterForUserNotifications" />
+    <Symbol Name="WscUnRegisterChanges" />
+    <Symbol Name="wscAntiSpywareGetStatus" />
+    <Symbol Name="wscAntiVirusExpiredBeyondThreshold" />
+    <Symbol Name="wscAntiVirusGetStatus" />
+    <Symbol Name="wscAutoUpdatesEnableScheduledMode" />
+    <Symbol Name="wscAutoUpdatesGetStatus" />
+    <Symbol Name="wscFirewallGetStatus" />
+    <Symbol Name="wscGeneralSecurityGetStatus" />
+    <Symbol Name="wscGetAlertStatus" />
+    <Symbol Name="wscIcfEnable" />
+    <Symbol Name="wscIeSettingsFix" />
+    <Symbol Name="wscInitiateOfflineCleaning" />
+    <Symbol Name="wscIsDefenderAntivirusSupported" />
+    <Symbol Name="wscLuaSettingsFix" />
+    <Symbol Name="wscMakeDefaultProductRequest" />
+    <Symbol Name="wscNotifyUserForNearExpiration" />
+    <Symbol Name="wscOverrideComponentStatus" />
+    <Symbol Name="wscPing" />
+    <Symbol Name="wscProductInfoFree" />
+    <Symbol Name="wscRegisterChangeNotification" />
+    <Symbol Name="wscRegisterSecurityProduct" />
+    <Symbol Name="wscSetDefaultProduct" />
+    <Symbol Name="wscUnRegisterChangeNotification" />
+    <Symbol Name="wscUnregisterSecurityProduct" />
+    <Symbol Name="wscUpdateProductStatus" />
+    <Symbol Name="wscUpdateProductSubStatus" />
+  </ExportedSymbols>
+</StaticLibrary>

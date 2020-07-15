@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="eappprxy.dll">
+  <OriginalPath>C:\Windows\system32\eappprxy.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="EapHostPeerBeginSession">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\eappprxy.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EapHostPeerClearConnection">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\eappprxy.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EapHostPeerEndSession">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\eappprxy.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EapHostPeerFreeEapError">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\eappprxy.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EapHostPeerFreeRuntimeMemory">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\eappprxy.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EapHostPeerGetAuthStatus">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\eappprxy.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EapHostPeerGetDataToUnplumbCredentials">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\eappprxy.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EapHostPeerGetEncryptedPassword">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\eappprxy.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EapHostPeerGetIdentity">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\eappprxy.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EapHostPeerGetResponseAttributes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\eappprxy.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EapHostPeerGetResult">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\eappprxy.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EapHostPeerGetSendPacket">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\eappprxy.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EapHostPeerGetUIContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\eappprxy.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EapHostPeerInitialize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\eappprxy.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EapHostPeerProcessReceivedPacket">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\eappprxy.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EapHostPeerSetResponseAttributes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\eappprxy.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EapHostPeerSetUIContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\eappprxy.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EapHostPeerUninitialize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\eappprxy.lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

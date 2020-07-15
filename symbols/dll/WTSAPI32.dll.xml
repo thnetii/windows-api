@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="WTSAPI32.dll">
+  <OriginalPath>C:\Windows\system32\WTSAPI32.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="IsInteractiveUserSession" />
+    <Symbol Name="QueryActiveSession" />
+    <Symbol Name="QueryUserToken" />
+    <Symbol Name="RegisterUsertokenForNoWinlogon" />
+    <Symbol Name="WTSCloseServer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSConnectSessionA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSConnectSessionW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSCreateListenerA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSCreateListenerW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSDisconnectSession">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSEnableChildSessions">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSEnumerateListenersA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSEnumerateListenersW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSEnumerateProcessesA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSEnumerateProcessesExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSEnumerateProcessesExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSEnumerateProcessesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSEnumerateServersA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSEnumerateServersW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSEnumerateSessionsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSEnumerateSessionsExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSEnumerateSessionsExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSEnumerateSessionsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSFreeMemory">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSFreeMemoryExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSFreeMemoryExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSGetChildSessionId">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSGetListenerSecurityA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSGetListenerSecurityW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSIsChildSessionsEnabled">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSLogoffSession">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSOpenServerA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSOpenServerExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSOpenServerExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSOpenServerW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSQueryListenerConfigA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSQueryListenerConfigW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSQuerySessionInformationA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSQuerySessionInformationW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSQueryUserConfigA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSQueryUserConfigW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSQueryUserToken">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSRegisterSessionNotification">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSRegisterSessionNotificationEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSSendMessageA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSSendMessageW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSSetListenerSecurityA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSSetListenerSecurityW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSSetRenderHint">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSSetSessionInformationA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSSetSessionInformationW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSSetUserConfigA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSSetUserConfigW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSShutdownSystem">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSStartRemoteControlSessionA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSStartRemoteControlSessionW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSStopRemoteControlSession">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSTerminateProcess">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSUnRegisterSessionNotification">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSUnRegisterSessionNotificationEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSVirtualChannelClose">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSVirtualChannelOpen">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSVirtualChannelOpenEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSVirtualChannelPurgeInput">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSVirtualChannelPurgeOutput">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSVirtualChannelQuery">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSVirtualChannelRead">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSVirtualChannelWrite">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSWaitSystemEvent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WtsApi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

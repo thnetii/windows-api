@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="dsprop.dll">
+  <OriginalPath>C:\Windows\system32\dsprop.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="ADsPropCheckIfWritable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DSProp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ADsPropCreateNotifyObj">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DSProp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ADsPropGetInitInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DSProp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ADsPropSendErrorMessage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DSProp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ADsPropSetHwnd">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DSProp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ADsPropSetHwndWithTitle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DSProp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ADsPropShowErrorDialog">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DSProp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BringSheetToForeground">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DSProp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CheckADsError" />
+    <Symbol Name="CrackName" />
+    <Symbol Name="DSPROP_GetGCSearchOnDomain" />
+    <Symbol Name="DllCanUnloadNow" />
+    <Symbol Name="DllGetClassObject" />
+    <Symbol Name="DllRegisterServer" />
+    <Symbol Name="DllUnregisterServer" />
+    <Symbol Name="ErrMsg" />
+    <Symbol Name="ErrMsgParam" />
+    <Symbol Name="FindSheet" />
+    <Symbol Name="IsSheetAlreadyUp">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DSProp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsgBox" />
+    <Symbol Name="PostADsPropSheet">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DSProp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ReportError" />
+    <Symbol Name="Smart_PADS_ATTR_INFO__Empty" />
+  </ExportedSymbols>
+</DynamicLibrary>

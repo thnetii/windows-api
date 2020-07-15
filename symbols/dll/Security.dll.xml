@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="Security.dll">
+  <OriginalPath>C:\Windows\system32\Security.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="AcceptSecurityContext">
+      <ForwardSymbol>SECUR32.AcceptSecurityContext</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\security.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AcquireCredentialsHandleA">
+      <ForwardSymbol>SECUR32.AcquireCredentialsHandleA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\security.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AcquireCredentialsHandleW">
+      <ForwardSymbol>SECUR32.AcquireCredentialsHandleW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\security.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AddSecurityPackageA">
+      <ForwardSymbol>SECUR32.AddSecurityPackageA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\security.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AddSecurityPackageW">
+      <ForwardSymbol>SECUR32.AddSecurityPackageW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\security.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ApplyControlToken">
+      <ForwardSymbol>SECUR32.ApplyControlToken</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\security.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CompleteAuthToken">
+      <ForwardSymbol>SECUR32.CompleteAuthToken</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\security.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DecryptMessage">
+      <ForwardSymbol>SECUR32.DecryptMessage</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\security.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeleteSecurityContext">
+      <ForwardSymbol>SECUR32.DeleteSecurityContext</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\security.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeleteSecurityPackageA">
+      <ForwardSymbol>SECUR32.DeleteSecurityPackageA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\security.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeleteSecurityPackageW">
+      <ForwardSymbol>SECUR32.DeleteSecurityPackageW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\security.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EncryptMessage">
+      <ForwardSymbol>SECUR32.EncryptMessage</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\security.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumerateSecurityPackagesA">
+      <ForwardSymbol>SECUR32.EnumerateSecurityPackagesA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\security.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumerateSecurityPackagesW">
+      <ForwardSymbol>SECUR32.EnumerateSecurityPackagesW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\security.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ExportSecurityContext">
+      <ForwardSymbol>SECUR32.ExportSecurityContext</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\security.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FreeContextBuffer">
+      <ForwardSymbol>SECUR32.FreeContextBuffer</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\security.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FreeCredentialsHandle">
+      <ForwardSymbol>SECUR32.FreeCredentialsHandle</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\security.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImpersonateSecurityContext">
+      <ForwardSymbol>SECUR32.ImpersonateSecurityContext</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\security.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImportSecurityContextA">
+      <ForwardSymbol>SECUR32.ImportSecurityContextA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\security.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImportSecurityContextW">
+      <ForwardSymbol>SECUR32.ImportSecurityContextW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\security.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitSecurityInterfaceA">
+      <ForwardSymbol>SECUR32.InitSecurityInterfaceA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\security.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitSecurityInterfaceW">
+      <ForwardSymbol>SECUR32.InitSecurityInterfaceW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\security.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitializeSecurityContextA">
+      <ForwardSymbol>SECUR32.InitializeSecurityContextA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\security.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitializeSecurityContextW">
+      <ForwardSymbol>SECUR32.InitializeSecurityContextW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\security.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MakeSignature">
+      <ForwardSymbol>SECUR32.MakeSignature</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\security.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="QueryContextAttributesA">
+      <ForwardSymbol>SECUR32.QueryContextAttributesA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\security.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="QueryContextAttributesW">
+      <ForwardSymbol>SECUR32.QueryContextAttributesW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\security.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="QueryCredentialsAttributesA">
+      <ForwardSymbol>SECUR32.QueryCredentialsAttributesA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\security.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="QueryCredentialsAttributesW">
+      <ForwardSymbol>SECUR32.QueryCredentialsAttributesW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\security.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="QuerySecurityContextToken">
+      <ForwardSymbol>SECUR32.QuerySecurityContextToken</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\security.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="QuerySecurityPackageInfoA">
+      <ForwardSymbol>SECUR32.QuerySecurityPackageInfoA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\security.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="QuerySecurityPackageInfoW">
+      <ForwardSymbol>SECUR32.QuerySecurityPackageInfoW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\security.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RevertSecurityContext">
+      <ForwardSymbol>SECUR32.RevertSecurityContext</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\security.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SealMessage">
+      <ForwardSymbol>SECUR32.EncryptMessage</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\security.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UnsealMessage">
+      <ForwardSymbol>SECUR32.DecryptMessage</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\security.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VerifySignature">
+      <ForwardSymbol>SECUR32.VerifySignature</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\security.lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

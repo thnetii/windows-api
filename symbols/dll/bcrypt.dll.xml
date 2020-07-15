@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="bcrypt.dll">
+  <OriginalPath>C:\Windows\system32\bcrypt.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="BCryptAddContextFunction">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\bcrypt.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BCryptAddContextFunctionProvider" />
+    <Symbol Name="BCryptCloseAlgorithmProvider">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\bcrypt.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BCryptConfigureContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\bcrypt.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BCryptConfigureContextFunction">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\bcrypt.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BCryptCreateContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\bcrypt.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BCryptCreateHash">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\bcrypt.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BCryptCreateMultiHash">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\bcrypt.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BCryptDecrypt">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\bcrypt.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BCryptDeleteContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\bcrypt.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BCryptDeriveKey">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\bcrypt.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BCryptDeriveKeyCapi">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\bcrypt.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BCryptDeriveKeyPBKDF2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\bcrypt.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BCryptDestroyHash">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\bcrypt.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BCryptDestroyKey">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\bcrypt.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BCryptDestroySecret">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\bcrypt.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BCryptDuplicateHash">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\bcrypt.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BCryptDuplicateKey">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\bcrypt.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BCryptEncrypt">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\bcrypt.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BCryptEnumAlgorithms">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\bcrypt.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BCryptEnumContextFunctionProviders">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\bcrypt.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BCryptEnumContextFunctions">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\bcrypt.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BCryptEnumContexts">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\bcrypt.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BCryptEnumProviders">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\bcrypt.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BCryptEnumRegisteredProviders">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\bcrypt.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BCryptExportKey">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\bcrypt.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BCryptFinalizeKeyPair">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\bcrypt.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BCryptFinishHash">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\bcrypt.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BCryptFreeBuffer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\bcrypt.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BCryptGenRandom">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\bcrypt.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BCryptGenerateKeyPair">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\bcrypt.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BCryptGenerateSymmetricKey">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\bcrypt.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BCryptGetFipsAlgorithmMode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\bcrypt.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BCryptGetProperty">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\bcrypt.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BCryptHash">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\bcrypt.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BCryptHashData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\bcrypt.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BCryptImportKey">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\bcrypt.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BCryptImportKeyPair">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\bcrypt.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BCryptKeyDerivation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\bcrypt.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BCryptOpenAlgorithmProvider">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\bcrypt.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BCryptProcessMultiOperations">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\bcrypt.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BCryptQueryContextConfiguration">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\bcrypt.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BCryptQueryContextFunctionConfiguration">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\bcrypt.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BCryptQueryContextFunctionProperty">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\bcrypt.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BCryptQueryProviderRegistration">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\bcrypt.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BCryptRegisterConfigChangeNotify">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\bcrypt.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BCryptRegisterProvider" />
+    <Symbol Name="BCryptRemoveContextFunction">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\bcrypt.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BCryptRemoveContextFunctionProvider" />
+    <Symbol Name="BCryptResolveProviders">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\bcrypt.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BCryptSecretAgreement">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\bcrypt.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BCryptSetAuditingInterface">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\bcrypt.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BCryptSetContextFunctionProperty">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\bcrypt.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BCryptSetProperty">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\bcrypt.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BCryptSignHash">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\bcrypt.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BCryptUnregisterConfigChangeNotify">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\bcrypt.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BCryptUnregisterProvider" />
+    <Symbol Name="BCryptVerifySignature">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\bcrypt.lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

@@ -1,0 +1,1051 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="DHCPSAPI.DLL">
+  <OriginalPath>C:\Windows\system32\DHCPSAPI.DLL</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="DhcpAddFilterV4">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpAddMScopeElement">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpAddSecurityGroup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpAddServer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpAddSubnetElement">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpAddSubnetElementV4">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpAddSubnetElementV5">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpAddSubnetElementV6">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpAuditLogGetParams">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpAuditLogSetParams">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpCreateClass">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpCreateClassV6">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpCreateClientInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpCreateClientInfoV4">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpCreateClientInfoVQ">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpCreateOption">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpCreateOptionV5">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpCreateOptionV6">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpCreateSubnet">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpCreateSubnetV6">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpCreateSubnetVQ">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpDeleteClass">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpDeleteClassV6">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpDeleteClientInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpDeleteClientInfoV6">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpDeleteFilterV4">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpDeleteMClientInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpDeleteMScope">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpDeleteServer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpDeleteSubnet">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpDeleteSubnetV6">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpDeleteSuperScopeV4">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpDsCleanup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpDsClearHostServerEntries">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpDsInit">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpEnumClasses">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpEnumClassesV6">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpEnumFilterV4">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpEnumMScopeClients">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpEnumMScopeElements">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpEnumMScopes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpEnumOptionValues">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpEnumOptionValuesV5">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpEnumOptionValuesV6">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpEnumOptions">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpEnumOptionsV5">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpEnumOptionsV6">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpEnumServers">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpEnumSubnetClients">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpEnumSubnetClientsFilterStatusInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpEnumSubnetClientsV4">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpEnumSubnetClientsV5">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpEnumSubnetClientsV6">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpEnumSubnetClientsVQ">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpEnumSubnetElements">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpEnumSubnetElementsV4">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpEnumSubnetElementsV5">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpEnumSubnetElementsV6">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpEnumSubnets">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpEnumSubnetsV6">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpGetAllOptionValues">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpGetAllOptionValuesV6">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpGetAllOptions">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpGetAllOptionsV6">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpGetClassInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpGetClientInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpGetClientInfoV4">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpGetClientInfoV6">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpGetClientInfoVQ">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpGetClientOptions">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpGetFilterV4">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpGetMCastMibInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpGetMScopeInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpGetMibInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpGetMibInfoV5">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpGetMibInfoV6">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpGetMibInfoVQ">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpGetOptionInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpGetOptionInfoV5">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpGetOptionInfoV6">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpGetOptionValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpGetOptionValueV5">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpGetOptionValueV6">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpGetServerBindingInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpGetServerBindingInfoV6">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpGetServerSpecificStrings">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpGetSubnetDelayOffer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpGetSubnetInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpGetSubnetInfoV6">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpGetSubnetInfoVQ">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpGetSuperScopeInfoV4">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpGetThreadOptions">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpGetVersion">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpHlprAddV4PolicyCondition">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpHlprAddV4PolicyExpr">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpHlprAddV4PolicyRange">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpHlprCreateV4Policy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpHlprCreateV4PolicyEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpHlprFindV4DhcpProperty">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpHlprFreeV4DhcpProperty">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpHlprFreeV4DhcpPropertyArray">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpHlprFreeV4Policy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpHlprFreeV4PolicyArray">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpHlprFreeV4PolicyEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpHlprFreeV4PolicyExArray">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpHlprIsV4PolicySingleUC">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpHlprIsV4PolicyValid">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpHlprIsV4PolicyWellFormed">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpHlprModifyV4PolicyExpr">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpHlprResetV4PolicyExpr">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpModifyClass">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpModifyClassV6">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpRemoveMScopeElement">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpRemoveOption">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpRemoveOptionV5">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpRemoveOptionV6">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpRemoveOptionValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpRemoveOptionValueV5">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpRemoveOptionValueV6">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpRemoveSubnetElement">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpRemoveSubnetElementV4">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpRemoveSubnetElementV5">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpRemoveSubnetElementV6">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpRpcFreeMemory">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpScanDatabase">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpScanMDatabase">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpServerAuditlogParamsFree">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpServerBackupDatabase">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpServerGetConfig">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpServerGetConfigV4">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpServerGetConfigV6">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpServerGetConfigVQ">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpServerQueryAttribute">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpServerQueryAttributes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpServerQueryDnsRegCredentials">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpServerRedoAuthorization">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpServerRestoreDatabase">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpServerSetConfig">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpServerSetConfigV4">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpServerSetConfigV6">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpServerSetConfigVQ">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpServerSetDnsRegCredentials">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpServerSetDnsRegCredentialsV5">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpSetClientInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpSetClientInfoV4">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpSetClientInfoV6">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpSetClientInfoVQ">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpSetFilterV4">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpSetMScopeInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpSetOptionInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpSetOptionInfoV5">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpSetOptionInfoV6">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpSetOptionValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpSetOptionValueV5">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpSetOptionValueV6">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpSetOptionValues">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpSetOptionValuesV5">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpSetServerBindingInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpSetServerBindingInfoV6">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpSetSubnetDelayOffer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpSetSubnetInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpSetSubnetInfoV6">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpSetSubnetInfoVQ">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpSetSuperScopeV4">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpSetThreadOptions">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpV4AddPolicyRange">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpV4CreateClientInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpV4CreateClientInfoEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpV4CreatePolicy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpV4CreatePolicyEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpV4DeletePolicy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpV4EnumPolicies">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpV4EnumPoliciesEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpV4EnumSubnetClients">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpV4EnumSubnetClientsEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpV4EnumSubnetReservations">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpV4FailoverAddScopeToRelationship">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpV4FailoverCreateRelationship">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpV4FailoverDeleteRelationship">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpV4FailoverDeleteScopeFromRelationship">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpV4FailoverEnumRelationship">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpV4FailoverGetAddressStatus">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpV4FailoverGetClientInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpV4FailoverGetRelationship">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpV4FailoverGetScopeRelationship">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpV4FailoverGetScopeStatistics">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpV4FailoverGetSystemTime">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpV4FailoverSetRelationship">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpV4FailoverTriggerAddrAllocation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpV4GetAllOptionValues">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpV4GetClientInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpV4GetClientInfoEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpV4GetFreeIPAddress">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpV4GetOptionValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpV4GetPolicy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpV4GetPolicyEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpV4QueryPolicyEnforcement">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpV4RemoveOptionValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpV4RemovePolicyRange">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpV4SetOptionValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpV4SetOptionValues">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpV4SetPolicy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpV4SetPolicyEnforcement">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpV4SetPolicyEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpV6CreateClientInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpV6GetFreeIPAddress">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpV6GetStatelessStatistics">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpV6GetStatelessStoreParams">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DhcpV6SetStatelessStoreParams">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dhcpsapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

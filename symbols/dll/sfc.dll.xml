@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="sfc.dll">
+  <OriginalPath>C:\Windows\system32\sfc.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="SRSetRestorePoint">
+      <ForwardSymbol>sfc_os.SRSetRestorePointA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Sfc.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SRSetRestorePointA">
+      <ForwardSymbol>sfc_os.SRSetRestorePointA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Sfc.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SRSetRestorePointW">
+      <ForwardSymbol>sfc_os.SRSetRestorePointW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Sfc.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SfcGetNextProtectedFile">
+      <ForwardSymbol>sfc_os.SfcGetNextProtectedFile</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Sfc.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SfcIsFileProtected">
+      <ForwardSymbol>sfc_os.SfcIsFileProtected</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Sfc.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SfcIsKeyProtected">
+      <ForwardSymbol>sfc_os.SfcIsKeyProtected</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Sfc.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SfpVerifyFile">
+      <ForwardSymbol>sfc_os.SfpVerifyFile</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Sfc.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="[NONAME]">
+      <ForwardSymbol>sfc_os.SfcInitProt</ForwardSymbol>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

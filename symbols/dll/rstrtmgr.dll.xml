@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="rstrtmgr.dll">
+  <OriginalPath>C:\Windows\system32\rstrtmgr.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="RmAddFilter">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\rstrtmgr.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RmCancelCurrentTask">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\rstrtmgr.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RmEndSession">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\rstrtmgr.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RmGetFilterList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\rstrtmgr.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RmGetList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\rstrtmgr.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RmJoinSession">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\rstrtmgr.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RmRegisterResources">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\rstrtmgr.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RmRemoveFilter">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\rstrtmgr.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RmReserveHeap">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\rstrtmgr.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RmRestart">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\rstrtmgr.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RmShutdown">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\rstrtmgr.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RmStartSession">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\rstrtmgr.lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

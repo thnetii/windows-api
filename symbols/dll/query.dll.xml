@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="query.dll">
+  <OriginalPath>C:\Windows\system32\query.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="BeginCacheTransaction" />
+    <Symbol Name="BindIFilterFromStorage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NtQuery.Lib" />
+        <StaticLibrary Name="um\x64\query.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BindIFilterFromStream">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NtQuery.Lib" />
+        <StaticLibrary Name="um\x64\query.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CIBuildQueryNode" />
+    <Symbol Name="CIBuildQueryTree" />
+    <Symbol Name="CICreateCommand" />
+    <Symbol Name="CIGetGlobalPropertyList" />
+    <Symbol Name="CIMakeICommand" />
+    <Symbol Name="CIRestrictionToFullTree" />
+    <Symbol Name="CIRevertToSelf">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NtQuery.Lib" />
+        <StaticLibrary Name="um\x64\query.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CIShutdown">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NtQuery.Lib" />
+        <StaticLibrary Name="um\x64\query.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CIState" />
+    <Symbol Name="CITextToFullTree" />
+    <Symbol Name="CITextToFullTreeEx" />
+    <Symbol Name="CITextToSelectTree" />
+    <Symbol Name="CITextToSelectTreeEx" />
+    <Symbol Name="CiCreateSecurityDescriptor" />
+    <Symbol Name="CiSvcMain" />
+    <Symbol Name="CollectCIISAPIPerformanceData" />
+    <Symbol Name="CollectCIPerformanceData" />
+    <Symbol Name="CollectFILTERPerformanceData" />
+    <Symbol Name="DllCanUnloadNow" />
+    <Symbol Name="DllGetClassObject" />
+    <Symbol Name="DllRegisterServer" />
+    <Symbol Name="DllUnregisterServer" />
+    <Symbol Name="DoneCIISAPIPerformanceData" />
+    <Symbol Name="DoneCIPerformanceData" />
+    <Symbol Name="DoneFILTERPerformanceData" />
+    <Symbol Name="EndCacheTransaction" />
+    <Symbol Name="FsCiShutdown" />
+    <Symbol Name="InitializeCIISAPIPerformanceData" />
+    <Symbol Name="InitializeCIPerformanceData" />
+    <Symbol Name="InitializeFILTERPerformanceData" />
+    <Symbol Name="InternalBindIFilterFromDocCLSID">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NtQuery.Lib" />
+        <StaticLibrary Name="um\x64\query.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalBindIFilterFromFileName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NtQuery.Lib" />
+        <StaticLibrary Name="um\x64\query.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalBindIFilterFromStorage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NtQuery.Lib" />
+        <StaticLibrary Name="um\x64\query.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalBindIFilterFromStream">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NtQuery.Lib" />
+        <StaticLibrary Name="um\x64\query.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LoadBinaryFilter" />
+    <Symbol Name="LoadIFilter">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NtQuery.Lib" />
+        <StaticLibrary Name="um\x64\query.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LoadIFilterEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NtQuery.Lib" />
+        <StaticLibrary Name="um\x64\query.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LoadTextFilter" />
+    <Symbol Name="LocateCatalogs">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NtQuery.Lib" />
+        <StaticLibrary Name="um\x64\query.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LocateCatalogsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NtQuery.Lib" />
+        <StaticLibrary Name="um\x64\query.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LocateCatalogsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NtQuery.Lib" />
+        <StaticLibrary Name="um\x64\query.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetCatalogState" />
+    <Symbol Name="SetupCache" />
+    <Symbol Name="SetupCacheEx" />
+    <Symbol Name="SvcEntry_CiSvc" />
+  </ExportedSymbols>
+</DynamicLibrary>

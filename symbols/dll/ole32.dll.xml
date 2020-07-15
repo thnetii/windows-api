@@ -1,0 +1,3713 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="ole32.dll">
+  <OriginalPath>C:\Windows\system32\ole32.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="BindMoniker">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CLIPFORMAT_UserFree">
+      <ForwardSymbol>COMBASE.CLIPFORMAT_UserFree</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CLIPFORMAT_UserFree64">
+      <ForwardSymbol>COMBASE.CLIPFORMAT_UserFree64</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CLIPFORMAT_UserFreeExt" />
+    <Symbol Name="CLIPFORMAT_UserMarshal">
+      <ForwardSymbol>COMBASE.CLIPFORMAT_UserMarshal</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CLIPFORMAT_UserMarshal64">
+      <ForwardSymbol>COMBASE.CLIPFORMAT_UserMarshal64</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CLIPFORMAT_UserMarshalExt" />
+    <Symbol Name="CLIPFORMAT_UserSize">
+      <ForwardSymbol>COMBASE.CLIPFORMAT_UserSize</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CLIPFORMAT_UserSize64">
+      <ForwardSymbol>COMBASE.CLIPFORMAT_UserSize64</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CLIPFORMAT_UserSizeExt" />
+    <Symbol Name="CLIPFORMAT_UserUnmarshal">
+      <ForwardSymbol>COMBASE.CLIPFORMAT_UserUnmarshal</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CLIPFORMAT_UserUnmarshal64">
+      <ForwardSymbol>COMBASE.CLIPFORMAT_UserUnmarshal64</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CLIPFORMAT_UserUnmarshalExt" />
+    <Symbol Name="CLSIDFromOle1Class">
+      <ForwardSymbol>api-ms-win-core-com-private-l1-1-1.CLSIDFromOle1Class</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CLSIDFromProgID">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CLSIDFromProgID</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CLSIDFromProgIDEx">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-2.CLSIDFromProgIDEx</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CLSIDFromString">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CLSIDFromString</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CStdAsyncStubBuffer2_Connect">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.CStdAsyncStubBuffer2_Connect</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CStdAsyncStubBuffer2_Disconnect">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.CStdAsyncStubBuffer2_Disconnect</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CStdAsyncStubBuffer2_Release">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.CStdAsyncStubBuffer2_Release</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CStdAsyncStubBuffer_AddRef">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.CStdAsyncStubBuffer_AddRef</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CStdAsyncStubBuffer_Connect">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.CStdAsyncStubBuffer_Connect</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CStdAsyncStubBuffer_Disconnect">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.CStdAsyncStubBuffer_Disconnect</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CStdAsyncStubBuffer_Invoke">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.CStdAsyncStubBuffer_Invoke</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CStdAsyncStubBuffer_QueryInterface">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.CStdAsyncStubBuffer_QueryInterface</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CStdAsyncStubBuffer_Release">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.CStdAsyncStubBuffer_Release</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CStdStubBuffer2_Connect">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.CStdStubBuffer2_Connect</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CStdStubBuffer2_CountRefs">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.CStdStubBuffer2_CountRefs</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CStdStubBuffer2_Disconnect">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.CStdStubBuffer2_Disconnect</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CStdStubBuffer2_QueryInterface">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.CStdStubBuffer2_QueryInterface</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CheckInitDde">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CleanROTForApartment">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClipboardProcessUninitialize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoAddRefServerProcess">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoAddRefServerProcess</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoAicGetTokenForCOM">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoAllowSetForegroundWindow">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoAllowUnmarshalerCLSID">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoAllowUnmarshalerCLSID</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoBuildVersion">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoCancelCall">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoCancelCall</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoCheckElevationEnabled">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoCopyProxy">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoCopyProxy</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoCreateFreeThreadedMarshaler">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoCreateFreeThreadedMarshaler</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoCreateGuid">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoCreateGuid</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoCreateInstance">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoCreateInstance</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoCreateInstanceEx">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoCreateInstanceEx</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoCreateInstanceFromApp">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoCreateInstanceFromApp</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoCreateObjectInContext">
+      <ForwardSymbol>api-ms-win-core-com-private-l1-1-1.CoCreateObjectInContext</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoDeactivateObject">
+      <ForwardSymbol>api-ms-win-core-com-private-l1-1-1.CoDeactivateObject</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoDecodeProxy">
+      <ForwardSymbol>COMBASE.CoDecodeProxy</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoDecrementMTAUsage">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoDecrementMTAUsage</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoDisableCallCancellation">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoDisableCallCancellation</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoDisconnectContext">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoDisconnectContext</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoDisconnectObject">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoDisconnectObject</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoDosDateTimeToFileTime">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoEnableCallCancellation">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoEnableCallCancellation</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoFileTimeNow">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-2.CoFileTimeNow</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoFileTimeToDosDateTime">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoFreeAllLibraries">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoFreeLibrary">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoFreeUnusedLibraries">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoFreeUnusedLibraries</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoFreeUnusedLibrariesEx">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoFreeUnusedLibrariesEx</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoGetActivationState">
+      <ForwardSymbol>api-ms-win-core-com-private-l1-1-1.CoGetActivationState</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CoGetApartmentID">
+      <ForwardSymbol>api-ms-win-core-com-private-l1-1-1.CoGetApartmentID</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoGetApartmentType">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoGetApartmentType</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoGetCallContext">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoGetCallContext</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoGetCallState">
+      <ForwardSymbol>api-ms-win-core-com-private-l1-1-1.CoGetCallState</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CoGetCallerTID">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoGetCallerTID</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoGetCancelObject">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoGetCancelObject</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoGetClassObject">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoGetClassObject</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoGetClassVersion">
+      <ForwardSymbol>api-ms-win-core-com-private-l1-1-1.CoGetClassVersion</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoGetComCatalog">
+      <ForwardSymbol>api-ms-win-core-com-private-l1-1-1.GetCatalogHelper</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoGetContextToken">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoGetContextToken</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoGetCurrentLogicalThreadId">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoGetCurrentLogicalThreadId</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoGetCurrentProcess">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoGetCurrentProcess</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoGetDefaultContext">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoGetDefaultContext</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoGetInstanceFromFile">
+      <ForwardSymbol>api-ms-win-core-com-private-l1-1-1.CoGetInstanceFromFile</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoGetInstanceFromIStorage">
+      <ForwardSymbol>api-ms-win-core-com-private-l1-1-1.CoGetInstanceFromIStorage</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoGetInterceptor">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoGetInterceptorForOle32">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoGetInterceptorFromTypeInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoGetInterfaceAndReleaseStream">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoGetInterfaceAndReleaseStream</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoGetMalloc">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoGetMalloc</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoGetMarshalSizeMax">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoGetMarshalSizeMax</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoGetModuleType">
+      <ForwardSymbol>api-ms-win-core-com-private-l1-1-1.CoGetModuleType</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CoGetObject">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoGetObjectContext">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoGetObjectContext</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoGetPSClsid">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoGetPSClsid</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoGetProcessIdentifier">
+      <ForwardSymbol>api-ms-win-core-com-private-l1-1-1.CoGetProcessIdentifier</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoGetStandardMarshal">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoGetStandardMarshal</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoGetStdMarshalEx">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoGetStdMarshalEx</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoGetSystemSecurityPermissions">
+      <ForwardSymbol>api-ms-win-core-com-private-l1-1-1.CoGetSystemSecurityPermissions</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoGetSystemWow64DirectoryW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoGetTreatAsClass">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoGetTreatAsClass</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoHandlePriorityEventsFromMessagePump">
+      <ForwardSymbol>COMBASE.#111</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoImpersonateClient">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoImpersonateClient</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoIncrementMTAUsage">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoIncrementMTAUsage</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoInitialize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoInitializeEx">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoInitializeEx</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoInitializeSecurity">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoInitializeSecurity</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoInitializeWOW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoInstall">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoInvalidateRemoteMachineBindings">
+      <ForwardSymbol>api-ms-win-core-com-private-l1-1-1.CoInvalidateRemoteMachineBindings</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoIsHandlerConnected">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoIsHandlerConnected</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoIsOle1Class">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoLoadLibrary">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoLockObjectExternal">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoLockObjectExternal</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoMarshalHresult">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoMarshalHresult</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoMarshalInterThreadInterfaceInStream">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoMarshalInterThreadInterfaceInStream</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoMarshalInterface">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoMarshalInterface</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoPopServiceDomain">
+      <ForwardSymbol>api-ms-win-core-com-private-l1-1-1.CoPopServiceDomain</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CoPushServiceDomain">
+      <ForwardSymbol>api-ms-win-core-com-private-l1-1-1.CoPushServiceDomain</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CoQueryAuthenticationServices">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoQueryAuthenticationServices</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoQueryClientBlanket">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoQueryClientBlanket</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoQueryProxyBlanket">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoQueryProxyBlanket</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoQueryReleaseObject">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoReactivateObject">
+      <ForwardSymbol>api-ms-win-core-com-private-l1-1-1.CoReactivateObject</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoRegisterActivationFilter">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoRegisterActivationFilter</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoRegisterChannelHook">
+      <ForwardSymbol>COMBASE.#112</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoRegisterClassObject">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoRegisterClassObject</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoRegisterInitializeSpy">
+      <ForwardSymbol>api-ms-win-core-com-private-l1-1-1.CoRegisterInitializeSpy</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoRegisterMallocSpy">
+      <ForwardSymbol>api-ms-win-core-com-private-l1-1-1.CoRegisterMallocSpy</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoRegisterMessageFilter">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoRegisterPSClsid">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoRegisterPSClsid</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoRegisterSurrogate">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoRegisterSurrogate</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoRegisterSurrogateEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoReleaseMarshalData">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoReleaseMarshalData</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoReleaseServerProcess">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoReleaseServerProcess</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoResumeClassObjects">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoResumeClassObjects</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoRetireServer">
+      <ForwardSymbol>api-ms-win-core-com-private-l1-1-1.CoRetireServer</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoRevertToSelf">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoRevertToSelf</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoRevokeClassObject">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoRevokeClassObject</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoRevokeInitializeSpy">
+      <ForwardSymbol>api-ms-win-core-com-private-l1-1-1.CoRevokeInitializeSpy</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoRevokeMallocSpy">
+      <ForwardSymbol>api-ms-win-core-com-private-l1-1-1.CoRevokeMallocSpy</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoSetCancelObject">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoSetCancelObject</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoSetMessageDispatcher">
+      <ForwardSymbol>COMBASE.#110</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoSetProxyBlanket">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoSetProxyBlanket</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoSetState" />
+    <Symbol Name="CoSuspendClassObjects">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoSuspendClassObjects</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoSwitchCallContext">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoSwitchCallContext</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoTaskMemAlloc">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoTaskMemAlloc</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoTaskMemFree">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoTaskMemFree</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoTaskMemRealloc">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoTaskMemRealloc</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoTestCancel">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoTestCancel</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoTreatAsClass">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoUninitialize">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoUninitialize</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoUnloadingWOW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoUnmarshalHresult">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoUnmarshalHresult</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoUnmarshalInterface">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoUnmarshalInterface</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoVrfCheckThreadState">
+      <ForwardSymbol>api-ms-win-core-com-private-l1-1-1.CoVrfCheckThreadState</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CoVrfGetThreadState">
+      <ForwardSymbol>api-ms-win-core-com-private-l1-1-1.CoVrfGetThreadState</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CoVrfReleaseThreadState">
+      <ForwardSymbol>api-ms-win-core-com-private-l1-1-1.CoVrfReleaseThreadState</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CoWaitForMultipleHandles">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoWaitForMultipleHandles</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoWaitForMultipleObjects">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CoWaitForMultipleObjects</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ComPs_NdrDllCanUnloadNow">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ComPs_NdrDllGetClassObject">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ComPs_NdrDllRegisterProxy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ComPs_NdrDllUnregisterProxy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateAntiMoniker">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateBindCtx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateClassMoniker">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateDataAdviseHolder">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateDataCache">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateErrorInfo">
+      <ForwardSymbol>api-ms-win-core-com-private-l1-1-1.CoCreateErrorInfo</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateFileMoniker">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateGenericComposite">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateILockBytesOnHGlobal">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateItemMoniker">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateObjrefMoniker">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateOleAdviseHolder">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreatePointerMoniker">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateStdProgressIndicator">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateStreamOnHGlobal">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.CreateStreamOnHGlobal</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DcomChannelSetHResult">
+      <ForwardSymbol>COMBASE.DcomChannelSetHResult</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DdeBindToObject">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeletePatternAndExtensionTables">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DestroyRunningObjectTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DllDebugObjectRPCHook">
+      <ForwardSymbol>api-ms-win-core-com-private-l1-1-1.DllDebugObjectRPCHook</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DllGetClassObject" />
+    <Symbol Name="DllGetClassObjectWOW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DllRegisterServer" />
+    <Symbol Name="DoDragDrop">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DragDropSetFDT">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnableHookObject">
+      <ForwardSymbol>api-ms-win-core-com-private-l1-1-1.EnableHookObject</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FindExt">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FmtIdToPropStgName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FreePropVariantArray">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetActiveObjectExt">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetClassFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetConvertStg">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetDocumentBitStg">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetErrorInfo">
+      <ForwardSymbol>api-ms-win-core-com-private-l1-1-1.CoGetErrorInfo</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetHGlobalFromILockBytes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetHGlobalFromStream">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.GetHGlobalFromStream</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetHookInterface">
+      <ForwardSymbol>api-ms-win-core-com-private-l1-1-1.GetHookInterface</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetObjectFromRotByPath">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetRunningObjectTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HACCEL_UserFree">
+      <ForwardSymbol>COMBASE.HACCEL_UserFree</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HACCEL_UserFree64">
+      <ForwardSymbol>COMBASE.HACCEL_UserFree64</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HACCEL_UserMarshal">
+      <ForwardSymbol>COMBASE.HACCEL_UserMarshal</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HACCEL_UserMarshal64">
+      <ForwardSymbol>COMBASE.HACCEL_UserMarshal64</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HACCEL_UserSize">
+      <ForwardSymbol>COMBASE.HACCEL_UserSize</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HACCEL_UserSize64">
+      <ForwardSymbol>COMBASE.HACCEL_UserSize64</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HACCEL_UserUnmarshal">
+      <ForwardSymbol>COMBASE.HACCEL_UserUnmarshal</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HACCEL_UserUnmarshal64">
+      <ForwardSymbol>COMBASE.HACCEL_UserUnmarshal64</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBITMAP_UserFree">
+      <ForwardSymbol>COMBASE.HBITMAP_UserFree</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBITMAP_UserFree64">
+      <ForwardSymbol>COMBASE.HBITMAP_UserFree64</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBITMAP_UserMarshal">
+      <ForwardSymbol>COMBASE.HBITMAP_UserMarshal</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBITMAP_UserMarshal64">
+      <ForwardSymbol>COMBASE.HBITMAP_UserMarshal64</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBITMAP_UserSize">
+      <ForwardSymbol>COMBASE.HBITMAP_UserSize</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBITMAP_UserSize64">
+      <ForwardSymbol>COMBASE.HBITMAP_UserSize64</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBITMAP_UserUnmarshal">
+      <ForwardSymbol>COMBASE.HBITMAP_UserUnmarshal</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBITMAP_UserUnmarshal64">
+      <ForwardSymbol>COMBASE.HBITMAP_UserUnmarshal64</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBRUSH_UserFree">
+      <ForwardSymbol>COMBASE.HBRUSH_UserFree</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBRUSH_UserFree64">
+      <ForwardSymbol>COMBASE.HBRUSH_UserFree64</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBRUSH_UserMarshal">
+      <ForwardSymbol>COMBASE.HBRUSH_UserMarshal</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBRUSH_UserMarshal64">
+      <ForwardSymbol>COMBASE.HBRUSH_UserMarshal64</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBRUSH_UserSize">
+      <ForwardSymbol>COMBASE.HBRUSH_UserSize</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBRUSH_UserSize64">
+      <ForwardSymbol>COMBASE.HBRUSH_UserSize64</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBRUSH_UserUnmarshal">
+      <ForwardSymbol>COMBASE.HBRUSH_UserUnmarshal</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBRUSH_UserUnmarshal64">
+      <ForwardSymbol>COMBASE.HBRUSH_UserUnmarshal64</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HDC_UserFree">
+      <ForwardSymbol>COMBASE.HDC_UserFree</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HDC_UserFree64">
+      <ForwardSymbol>COMBASE.HDC_UserFree64</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HDC_UserMarshal">
+      <ForwardSymbol>COMBASE.HDC_UserMarshal</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HDC_UserMarshal64">
+      <ForwardSymbol>COMBASE.HDC_UserMarshal64</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HDC_UserSize">
+      <ForwardSymbol>COMBASE.HDC_UserSize</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HDC_UserSize64">
+      <ForwardSymbol>COMBASE.HDC_UserSize64</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HDC_UserUnmarshal">
+      <ForwardSymbol>COMBASE.HDC_UserUnmarshal</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HDC_UserUnmarshal64">
+      <ForwardSymbol>COMBASE.HDC_UserUnmarshal64</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HENHMETAFILE_UserFree">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HENHMETAFILE_UserFree64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HENHMETAFILE_UserMarshal">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HENHMETAFILE_UserMarshal64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HENHMETAFILE_UserSize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HENHMETAFILE_UserSize64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HENHMETAFILE_UserUnmarshal">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HENHMETAFILE_UserUnmarshal64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HGLOBAL_UserFree">
+      <ForwardSymbol>COMBASE.HGLOBAL_UserFree</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HGLOBAL_UserFree64">
+      <ForwardSymbol>COMBASE.HGLOBAL_UserFree64</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HGLOBAL_UserMarshal">
+      <ForwardSymbol>COMBASE.HGLOBAL_UserMarshal</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HGLOBAL_UserMarshal64">
+      <ForwardSymbol>COMBASE.HGLOBAL_UserMarshal64</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HGLOBAL_UserSize">
+      <ForwardSymbol>COMBASE.HGLOBAL_UserSize</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HGLOBAL_UserSize64">
+      <ForwardSymbol>COMBASE.HGLOBAL_UserSize64</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HGLOBAL_UserUnmarshal">
+      <ForwardSymbol>COMBASE.HGLOBAL_UserUnmarshal</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HGLOBAL_UserUnmarshal64">
+      <ForwardSymbol>COMBASE.HGLOBAL_UserUnmarshal64</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HICON_UserFree">
+      <ForwardSymbol>COMBASE.HICON_UserFree</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HICON_UserFree64">
+      <ForwardSymbol>COMBASE.HICON_UserFree64</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HICON_UserMarshal">
+      <ForwardSymbol>COMBASE.HICON_UserMarshal</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HICON_UserMarshal64">
+      <ForwardSymbol>COMBASE.HICON_UserMarshal64</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HICON_UserSize">
+      <ForwardSymbol>COMBASE.HICON_UserSize</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HICON_UserSize64">
+      <ForwardSymbol>COMBASE.HICON_UserSize64</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HICON_UserUnmarshal">
+      <ForwardSymbol>COMBASE.HICON_UserUnmarshal</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HICON_UserUnmarshal64">
+      <ForwardSymbol>COMBASE.HICON_UserUnmarshal64</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HMENU_UserFree">
+      <ForwardSymbol>COMBASE.HMENU_UserFree</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HMENU_UserFree64">
+      <ForwardSymbol>COMBASE.HMENU_UserFree64</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HMENU_UserMarshal">
+      <ForwardSymbol>COMBASE.HMENU_UserMarshal</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HMENU_UserMarshal64">
+      <ForwardSymbol>COMBASE.HMENU_UserMarshal64</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HMENU_UserSize">
+      <ForwardSymbol>COMBASE.HMENU_UserSize</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HMENU_UserSize64">
+      <ForwardSymbol>COMBASE.HMENU_UserSize64</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HMENU_UserUnmarshal">
+      <ForwardSymbol>COMBASE.HMENU_UserUnmarshal</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HMENU_UserUnmarshal64">
+      <ForwardSymbol>COMBASE.HMENU_UserUnmarshal64</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HMETAFILEPICT_UserFree">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HMETAFILEPICT_UserFree64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HMETAFILEPICT_UserMarshal">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HMETAFILEPICT_UserMarshal64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HMETAFILEPICT_UserSize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HMETAFILEPICT_UserSize64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HMETAFILEPICT_UserUnmarshal">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HMETAFILEPICT_UserUnmarshal64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HMETAFILE_UserFree">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HMETAFILE_UserFree64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HMETAFILE_UserMarshal">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HMETAFILE_UserMarshal64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HMETAFILE_UserSize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HMETAFILE_UserSize64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HMETAFILE_UserUnmarshal">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HMETAFILE_UserUnmarshal64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HMONITOR_UserFree">
+      <ForwardSymbol>COMBASE.HMONITOR_UserFree</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HMONITOR_UserFree64">
+      <ForwardSymbol>COMBASE.HMONITOR_UserFree64</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HMONITOR_UserMarshal">
+      <ForwardSymbol>COMBASE.HMONITOR_UserMarshal</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HMONITOR_UserMarshal64">
+      <ForwardSymbol>COMBASE.HMONITOR_UserMarshal64</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HMONITOR_UserSize">
+      <ForwardSymbol>COMBASE.HMONITOR_UserSize</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HMONITOR_UserSize64">
+      <ForwardSymbol>COMBASE.HMONITOR_UserSize64</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HMONITOR_UserUnmarshal">
+      <ForwardSymbol>COMBASE.HMONITOR_UserUnmarshal</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HMONITOR_UserUnmarshal64">
+      <ForwardSymbol>COMBASE.HMONITOR_UserUnmarshal64</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HPALETTE_UserFree">
+      <ForwardSymbol>COMBASE.HPALETTE_UserFree</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HPALETTE_UserFree64">
+      <ForwardSymbol>COMBASE.HPALETTE_UserFree64</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HPALETTE_UserFreeExt" />
+    <Symbol Name="HPALETTE_UserMarshal">
+      <ForwardSymbol>COMBASE.HPALETTE_UserMarshal</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HPALETTE_UserMarshal64">
+      <ForwardSymbol>COMBASE.HPALETTE_UserMarshal64</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HPALETTE_UserMarshalExt" />
+    <Symbol Name="HPALETTE_UserSize">
+      <ForwardSymbol>COMBASE.HPALETTE_UserSize</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HPALETTE_UserSize64">
+      <ForwardSymbol>COMBASE.HPALETTE_UserSize64</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HPALETTE_UserSizeExt" />
+    <Symbol Name="HPALETTE_UserUnmarshal">
+      <ForwardSymbol>COMBASE.HPALETTE_UserUnmarshal</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HPALETTE_UserUnmarshal64">
+      <ForwardSymbol>COMBASE.HPALETTE_UserUnmarshal64</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HPALETTE_UserUnmarshalExt" />
+    <Symbol Name="HRGN_UserFree">
+      <ForwardSymbol>COMBASE.HRGN_UserFree</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HRGN_UserMarshal">
+      <ForwardSymbol>COMBASE.HRGN_UserMarshal</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HRGN_UserSize">
+      <ForwardSymbol>COMBASE.HRGN_UserSize</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HRGN_UserUnmarshal">
+      <ForwardSymbol>COMBASE.HRGN_UserUnmarshal</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HWND_UserFree">
+      <ForwardSymbol>COMBASE.HWND_UserFree</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HWND_UserFree64">
+      <ForwardSymbol>COMBASE.HWND_UserFree64</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HWND_UserFree64Ext" />
+    <Symbol Name="HWND_UserFreeExt" />
+    <Symbol Name="HWND_UserMarshal">
+      <ForwardSymbol>COMBASE.HWND_UserMarshal</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HWND_UserMarshal64">
+      <ForwardSymbol>COMBASE.HWND_UserMarshal64</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HWND_UserMarshal64Ext" />
+    <Symbol Name="HWND_UserMarshalExt" />
+    <Symbol Name="HWND_UserSize">
+      <ForwardSymbol>COMBASE.HWND_UserSize</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HWND_UserSize64">
+      <ForwardSymbol>COMBASE.HWND_UserSize64</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HWND_UserSize64Ext" />
+    <Symbol Name="HWND_UserSizeExt" />
+    <Symbol Name="HWND_UserUnmarshal">
+      <ForwardSymbol>COMBASE.HWND_UserUnmarshal</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HWND_UserUnmarshal64">
+      <ForwardSymbol>COMBASE.HWND_UserUnmarshal64</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HWND_UserUnmarshal64Ext" />
+    <Symbol Name="HWND_UserUnmarshalExt" />
+    <Symbol Name="HkOleRegisterObject">
+      <ForwardSymbol>api-ms-win-core-com-private-l1-1-1.HkOleRegisterObject</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IIDFromString">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.IIDFromString</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IsAccelerator">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IsEqualGUID">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IsRoInitializeASTAAllowedInDesktop">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IsValidIid" />
+    <Symbol Name="IsValidInterface" />
+    <Symbol Name="IsValidPtrIn" />
+    <Symbol Name="IsValidPtrOut" />
+    <Symbol Name="MkParseDisplayName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MonikerCommonPrefixWith">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MonikerLoadTypeLib" />
+    <Symbol Name="MonikerRelativePathTo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NdrOleInitializeExtension">
+      <ForwardSymbol>api-ms-win-core-com-private-l1-1-1.NdrOleInitializeExtension</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction10">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction10</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction11">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction11</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction12">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction12</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction13">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction13</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction14">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction14</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction15">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction15</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction16">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction16</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction17">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction17</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction18">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction18</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction19">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction19</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction20">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction20</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction21">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction21</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction22">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction22</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction23">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction23</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction24">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction24</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction25">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction25</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction26">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction26</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction27">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction27</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction28">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction28</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction29">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction29</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction3">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction3</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction30">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction30</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction31">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction31</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction32">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction32</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction4">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction4</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction5">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction5</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction6">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction6</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction7">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction7</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction8">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction8</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction9">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction9</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient10">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient10</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient11">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient11</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient12">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient12</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient13">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient13</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient14">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient14</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient15">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient15</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient16">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient16</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient17">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient17</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient18">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient18</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient19">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient19</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient20">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient20</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient21">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient21</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient22">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient22</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient23">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient23</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient24">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient24</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient25">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient25</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient26">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient26</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient27">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient27</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient28">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient28</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient29">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient29</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient3">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient3</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient30">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient30</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient31">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient31</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient32">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient32</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient4">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient4</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient5">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient5</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient6">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient6</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient7">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient7</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient8">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient8</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient9">
+      <ForwardSymbol>api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient9</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Ole32DllGetClassObject">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleBuildVersion">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleConvertIStorageToOLESTREAM">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleConvertIStorageToOLESTREAMEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleConvertOLESTREAMToIStorage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleConvertOLESTREAMToIStorageEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleCreate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleCreateDefaultHandler">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleCreateEmbeddingHelper">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleCreateEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleCreateFontIndirectExt">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleCreateFromData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleCreateFromDataEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleCreateFromFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleCreateFromFileEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleCreateLink">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleCreateLinkEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleCreateLinkFromData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleCreateLinkFromDataEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleCreateLinkToFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleCreateLinkToFileEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleCreateMenuDescriptor">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleCreatePictureIndirectExt">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleCreatePropertyFrameIndirectExt">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleCreateStaticFromData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleDestroyMenuDescriptor">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleDoAutoConvert">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleDraw">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleDuplicateData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleFlushClipboard">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleGetAutoConvert">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleGetClipboard">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleGetClipboardWithEnterpriseInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleGetIconOfClass">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleGetIconOfFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleGetPackageClipboardOwner">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleIconToCursorExt">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleInitialize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleInitializeWOW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleIsCurrentClipboard">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleIsRunning">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleLoad">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleLoadFromStream">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleLoadPictureExt">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleLoadPictureFileExt">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleLoadPicturePathExt">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleLockRunning">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleMetafilePictFromIconAndLabel">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleNoteObjectVisible">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleQueryCreateFromData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleQueryLinkFromData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleRegEnumFormatEtc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleRegEnumVerbs">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleRegGetMiscStatus">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleRegGetUserType">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleReleaseEnumVerbCache">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleRun">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleSave">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleSavePictureFileExt">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleSaveToStream">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleSetAutoConvert">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleSetClipboard">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleSetContainedObject">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleSetMenuDescriptor">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleTranslateAccelerator">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleTranslateColorExt">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OleUninitialize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OpenOrCreateStream">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ProgIDFromCLSID">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.ProgIDFromCLSID</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropStgNameToFmtId">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropSysAllocString" />
+    <Symbol Name="PropSysFreeString" />
+    <Symbol Name="PropVariantChangeType">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantClear">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantCopy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ReadClassStg">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ReadClassStm">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ReadFmtUserTypeStg">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ReadOleStg">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ReadStorageProperties" />
+    <Symbol Name="ReadStringStream">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RegisterActiveObjectExt">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RegisterDragDrop">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ReleaseStgMedium">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RevokeActiveObjectExt">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RevokeDragDrop">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RoGetAgileReference">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-1.RoGetAgileReference</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SNB_UserFree">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SNB_UserFree64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SNB_UserMarshal">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SNB_UserMarshal64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SNB_UserSize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SNB_UserSize64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SNB_UserUnmarshal">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SNB_UserUnmarshal64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="STGMEDIUM_UserFree">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="STGMEDIUM_UserFree64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="STGMEDIUM_UserFreeExt" />
+    <Symbol Name="STGMEDIUM_UserMarshal">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="STGMEDIUM_UserMarshal64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="STGMEDIUM_UserMarshalExt" />
+    <Symbol Name="STGMEDIUM_UserSize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="STGMEDIUM_UserSize64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="STGMEDIUM_UserSizeExt" />
+    <Symbol Name="STGMEDIUM_UserUnmarshal">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="STGMEDIUM_UserUnmarshal64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="STGMEDIUM_UserUnmarshalExt" />
+    <Symbol Name="SetConvertStg">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetDocumentBitStg">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetErrorInfo">
+      <ForwardSymbol>api-ms-win-core-com-private-l1-1-1.CoSetErrorInfo</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetOleautModule" />
+    <Symbol Name="SetWOWThunkGlobalPtr">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StdTypesGetClassObject" />
+    <Symbol Name="StdTypesRegisterServer" />
+    <Symbol Name="StgConvertPropertyToVariant">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StgConvertVariantToProperty">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StgCreateDocfile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StgCreateDocfileOnILockBytes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StgCreatePropSetStg">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StgCreatePropStg">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StgCreateStorageEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StgGetIFillLockBytesOnFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StgGetIFillLockBytesOnILockBytes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StgIsStorageFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StgIsStorageILockBytes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StgOpenAsyncDocfileOnIFillLockBytes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StgOpenPropStg">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StgOpenStorage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StgOpenStorageEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StgOpenStorageOnHandle" />
+    <Symbol Name="StgOpenStorageOnILockBytes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StgPropertyLengthAsVariant">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StgSetTimes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StringFromCLSID">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.StringFromCLSID</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StringFromGUID2">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.StringFromGUID2</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StringFromIID">
+      <ForwardSymbol>api-ms-win-core-com-l1-1-0.StringFromIID</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UpdateDCOMSettings">
+      <ForwardSymbol>api-ms-win-core-com-private-l1-1-1.UpdateDCOMSettings</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UpdateProcessTracing">
+      <ForwardSymbol>api-ms-win-core-com-private-l1-1-1.UpdateProcessTracing</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="UtConvertDvtd16toDvtd32">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UtConvertDvtd32toDvtd16">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UtGetDvtd16Info">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UtGetDvtd32Info">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WdtpInterfacePointer_UserFree">
+      <ForwardSymbol>COMBASE.WdtpInterfacePointer_UserFree</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WdtpInterfacePointer_UserFree64">
+      <ForwardSymbol>COMBASE.WdtpInterfacePointer_UserFree64</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WdtpInterfacePointer_UserMarshal">
+      <ForwardSymbol>COMBASE.WdtpInterfacePointer_UserMarshal</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WdtpInterfacePointer_UserMarshal64">
+      <ForwardSymbol>COMBASE.WdtpInterfacePointer_UserMarshal64</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WdtpInterfacePointer_UserSize">
+      <ForwardSymbol>COMBASE.WdtpInterfacePointer_UserSize</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WdtpInterfacePointer_UserSize64">
+      <ForwardSymbol>COMBASE.WdtpInterfacePointer_UserSize64</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WdtpInterfacePointer_UserUnmarshal">
+      <ForwardSymbol>COMBASE.WdtpInterfacePointer_UserUnmarshal</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WdtpInterfacePointer_UserUnmarshal64">
+      <ForwardSymbol>COMBASE.WdtpInterfacePointer_UserUnmarshal64</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WriteClassStg">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WriteClassStm">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WriteFmtUserTypeStg">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WriteOleStg">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WriteStorageProperties" />
+    <Symbol Name="WriteStringStream">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Ole32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="[NONAME]" />
+  </ExportedSymbols>
+</DynamicLibrary>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\mi.lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\mi.lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="mi.dll" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="MI_Application_InitializeV1">
+      <Definitions>
+        <DynamicLibrary Name="mi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="mi_clientFT_V1">
+      <Definitions>
+        <DynamicLibrary Name="mi.dll" />
+      </Definitions>
+    </Symbol>
+  </ExportedSymbols>
+</StaticLibrary>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="dsuiext.dll">
+  <OriginalPath>C:\Windows\system32\dsuiext.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="DllCanUnloadNow" />
+    <Symbol Name="DllGetClassObject" />
+    <Symbol Name="DllInstall" />
+    <Symbol Name="DllRegisterServer" />
+    <Symbol Name="DllUnregisterServer" />
+    <Symbol Name="DsBrowseForContainerA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DSUIExt.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsBrowseForContainerW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DSUIExt.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsGetFriendlyClassName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DSUIExt.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsGetIcon">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DSUIExt.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="[NONAME]" />
+  </ExportedSymbols>
+</DynamicLibrary>

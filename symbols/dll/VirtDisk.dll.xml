@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="VirtDisk.dll">
+  <OriginalPath>C:\Windows\system32\VirtDisk.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="AddVirtualDiskParent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Virtdisk.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ApplySnapshotVhdSet">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Virtdisk.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AttachVirtualDisk">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Virtdisk.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BreakMirrorVirtualDisk">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Virtdisk.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CompactVirtualDisk">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Virtdisk.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateVirtualDisk">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Virtdisk.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeleteSnapshotVhdSet">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Virtdisk.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeleteVirtualDiskMetadata">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Virtdisk.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DetachVirtualDisk">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Virtdisk.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumerateVirtualDiskMetadata">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Virtdisk.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ExpandVirtualDisk">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Virtdisk.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetAllAttachedVirtualDiskPhysicalPaths">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Virtdisk.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetStorageDependencyInformation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Virtdisk.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetVirtualDiskInformation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Virtdisk.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetVirtualDiskMetadata">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Virtdisk.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetVirtualDiskOperationProgress">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Virtdisk.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetVirtualDiskPhysicalPath">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Virtdisk.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MergeVirtualDisk">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Virtdisk.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MirrorVirtualDisk">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Virtdisk.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ModifyVhdSet">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Virtdisk.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OpenVirtualDisk">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Virtdisk.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="QueryChangesVirtualDisk">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Virtdisk.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RawSCSIVirtualDisk">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Virtdisk.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResizeVirtualDisk">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Virtdisk.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetVirtualDiskInformation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Virtdisk.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetVirtualDiskMetadata">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Virtdisk.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TakeSnapshotVhdSet">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\Virtdisk.Lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

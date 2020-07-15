@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="RASAPI32.dll">
+  <OriginalPath>C:\Windows\system32\RASAPI32.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="DDMComputeLuid">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DDMFreeDialingParam">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DDMFreePhonebookContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DDMFreeRemoteEndpoint">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DDMGetAddressesFromPhonebook">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DDMGetEapInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DDMGetEapUserIdentityW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DDMGetPhoneBookContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DDMGetPhonebookInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DDMGetProtocolStartParams">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DDMGetRasDialParams">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DDMGetRasDialingParams">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DDMGetTunnelEndpoints">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DDMRasPbkEntryCleanup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DDMUpdateProtocolConfigInfoFromEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DwCloneEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DwEnumEntryDetails">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DwEnumEntryDetailsEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DwRasUninitialize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetAutoTriggerProfileInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IsActiveAutoTriggerConnection">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IsActiveAutoTriggerConnectionEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasAutoDialSharedConnection">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasAutodialAddressToNetwork">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasAutodialEntryToNetwork">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasClearConnectionStatistics">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasClearLinkStatistics">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasCompleteDialMachineCleanup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasConfigUserProxySettingsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasConnectionNotificationA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasConnectionNotificationW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasCreatePhonebookEntryA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasCreatePhonebookEntryW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasDeleteEntryA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasDeleteEntryW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasDeleteSubEntryA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasDeleteSubEntryW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasDialA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasDialW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasEditPhonebookEntryA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasEditPhonebookEntryW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasEnumAutodialAddressesA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasEnumAutodialAddressesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasEnumConnectionsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasEnumConnectionsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasEnumDevicesA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasEnumDevicesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasEnumEntriesA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasEnumEntriesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasFreeEapUserIdentityA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasFreeEapUserIdentityW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasFreeEntryAdvancedProperties">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasGetAutoTriggerConnectStatus">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasGetAutodialAddressA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasGetAutodialAddressW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasGetAutodialEnableA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasGetAutodialEnableW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasGetAutodialParamA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasGetAutodialParamW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasGetConnectStatusA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasGetConnectStatusW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasGetConnectionErrorStringW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasGetConnectionStatistics">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasGetCountryInfoA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasGetCountryInfoW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasGetCredentialsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasGetCredentialsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasGetCustomAuthDataA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasGetCustomAuthDataW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasGetEapUserDataA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasGetEapUserDataW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasGetEapUserIdentityA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasGetEapUserIdentityW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasGetEntryAdvancedProperties">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasGetEntryDialParamsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasGetEntryDialParamsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasGetEntryHrasconnW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasGetEntryPropertiesA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasGetEntryPropertiesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasGetErrorStringA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasGetErrorStringW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasGetHport">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasGetLinkStatistics">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasGetNapStatus">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasGetPCscf">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasGetPbkPath">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasGetProjectionInfoA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasGetProjectionInfoEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasGetProjectionInfoW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasGetSubEntryHandleA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasGetSubEntryHandleW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasGetSubEntryPropertiesA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasGetSubEntryPropertiesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasHandleTriggerConnDisconnect">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasHangUpA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasHangUpW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasInvokeEapUI">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasIsPublicPhonebook">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasIsSharedConnection">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasNQMStateEnteredNotification">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasQueryRedialOnLinkFailure">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasQuerySharedAutoDial">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasQuerySharedConnection">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasRegisterEntryChangeNotification">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasRenameEntryA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasRenameEntryW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasScriptExecute">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasScriptGetIpAddress">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasScriptInit">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasScriptReceive">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasScriptSend">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasScriptTerm">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasSetAutoTriggerProfile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasSetAutoTriggerProfileEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasSetAutodialAddressA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasSetAutodialAddressW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasSetAutodialEnableA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasSetAutodialEnableW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasSetAutodialParamA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasSetAutodialParamW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasSetCredentialsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasSetCredentialsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasSetCustomAuthDataA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasSetCustomAuthDataW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasSetEapUserDataA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasSetEapUserDataAEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasSetEapUserDataW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasSetEapUserDataWEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasSetEntryAdvancedProperties">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasSetEntryDialParamsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasSetEntryDialParamsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasSetEntryPropertiesA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasSetEntryPropertiesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasSetOldPassword">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasSetPerConnectionProxy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasSetSharedAutoDial">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasSetSubEntryPropertiesA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasSetSubEntryPropertiesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasTriggerConnection">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasTriggerConnectionEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasTriggerDisconnection">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasTriggerDisconnectionEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasUnregisterEntryChangeNotification">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasUpdateConnection">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasValidateEntryNameA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasValidateEntryNameW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RasWriteSharedPbkOptions">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UnInitializeRAS">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\RASAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

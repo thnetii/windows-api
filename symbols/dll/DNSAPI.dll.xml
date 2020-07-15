@@ -1,0 +1,2174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="DNSAPI.dll">
+  <OriginalPath>C:\Windows\system32\DNSAPI.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="AdaptiveTimeout_ClearInterfaceSpecificConfiguration">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AdaptiveTimeout_ResetAdaptiveTimeout">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AddRefQueryBlobEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BreakRecordsIntoBlob">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Coalesce_UpdateNetVersion">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CombineRecordsInBlob">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeRefQueryBlobEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DelaySortDAServerlist">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsAcquireContextHandle_A">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsAcquireContextHandle_W">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsAllocateRecord">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsApiAlloc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsApiAllocZero">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsApiFree">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsApiHeapReset">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsApiRealloc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsApiSetDebugGlobals">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsAsyncRegisterHostAddrs">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsAsyncRegisterInit">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsAsyncRegisterTerm">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsCancelQuery">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsConnectionDeletePolicyEntries">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsConnectionDeletePolicyEntriesPrivate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsConnectionDeleteProxyInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsConnectionFreeNameList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsConnectionFreeProxyInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsConnectionFreeProxyInfoEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsConnectionFreeProxyList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsConnectionGetHandleForHostUrlPrivate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsConnectionGetNameList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsConnectionGetProxyInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsConnectionGetProxyInfoForHostUrl">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsConnectionGetProxyList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsConnectionSetPolicyEntries">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsConnectionSetPolicyEntriesPrivate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsConnectionSetProxyInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsConnectionUpdateIfIndexTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsCopyStringEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsCreateReverseNameStringForIpAddress">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsCreateStandardDnsNameCopy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsCreateStringCopy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsDeRegisterLocal">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsDhcpRegisterAddrs">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsDhcpRegisterHostAddrs">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsDhcpRegisterInit">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsDhcpRegisterTerm">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsDhcpRemoveRegistrations">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsDhcpSrvRegisterHostAddr">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsDhcpSrvRegisterHostAddrEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsDhcpSrvRegisterHostName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsDhcpSrvRegisterHostNameEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsDhcpSrvRegisterInit">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsDhcpSrvRegisterInitEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsDhcpSrvRegisterInitialize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsDhcpSrvRegisterTerm">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsDisableIdnEncoding">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsDowncaseDnsNameLabel">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsExtractRecordsFromMessage_UTF8">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsExtractRecordsFromMessage_W">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsFindAuthoritativeZone">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsFlushResolverCache">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsFlushResolverCacheEntry_A">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsFlushResolverCacheEntry_UTF8">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsFlushResolverCacheEntry_W">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsFree">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsFreeConfigStructure">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsFreePolicyConfig">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsFreeProxyName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsGetApplicationIdentifier">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsGetBufferLengthForStringCopy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsGetCacheDataTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsGetDnsServerList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsGetDomainName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsGetLastFailedUpdateInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsGetPolicyTableInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsGetPolicyTableInfoPrivate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsGetPrimaryDomainName_A">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsGetProxyInfoPrivate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsGetProxyInformation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsGetQueryRetryTimeouts">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsGlobals">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsIpv6AddressToString">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsIpv6StringToAddress">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsIsAMailboxType">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsIsNSECType">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsIsStatusRcode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsIsStringCountValidForTextType">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsLogEvent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsMapRcodeToStatus">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsModifyRecordsInSet_A">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsModifyRecordsInSet_UTF8">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsModifyRecordsInSet_W">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsNameCompareEx_A">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsNameCompareEx_UTF8">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsNameCompareEx_W">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsNameCompare_A">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsNameCompare_UTF8">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsNameCompare_W">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsNameCopy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsNameCopyAllocate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsNetworkInfo_CreateFromFAZ">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsNetworkInformation_CreateFromFAZ">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsNotifyResolver">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsNotifyResolverClusterIp">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsNotifyResolverEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsQueryConfig">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsQueryConfigAllocEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsQueryConfigDword">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsQueryEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsQueryExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsQueryExUTF8">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsQueryExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsQuery_A">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsQuery_UTF8">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsQuery_W">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsRecordBuild_UTF8">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsRecordBuild_W">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsRecordCompare">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsRecordCopyEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsRecordListFree">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsRecordListUnmapV4MappedAAAAInPlace">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsRecordSetCompare">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsRecordSetCopyEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsRecordSetDetach">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsRecordStringForType">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsRecordStringForWritableType">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsRecordTypeForName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsRegisterLocal">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsReleaseContextHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsRemoveRegistrations">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsReplaceRecordSetA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsReplaceRecordSetUTF8">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsReplaceRecordSetW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsResetQueryRetryTimeouts">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsResolverOp">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsScreenLocalAddrsForRegistration">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsServiceBrowse">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsServiceBrowseCancel">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsServiceConstructInstance">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsServiceCopyInstance">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsServiceDeRegister">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsServiceFreeInstance">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsServiceRegister">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsServiceRegisterCancel">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsServiceResolve">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsServiceResolveCancel">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsSetConfigDword">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsSetConfigValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsSetQueryRetryTimeouts">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsStartMulticastQuery">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsStatusString">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsStopMulticastQuery">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsStringCopyAllocateEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsTraceServerConfig">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsUnicodeToUtf8">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsUpdate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsUpdateMachinePresence">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsUpdateTest_A">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsUpdateTest_UTF8">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsUpdateTest_W">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsUtf8ToUnicode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsValidateNameOrIp_TempW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsValidateName_A">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsValidateName_UTF8">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsValidateName_W">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsValidateServerArray_A">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsValidateServerArray_W">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsValidateServerStatus">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsValidateServer_A">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsValidateServer_W">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsValidateUtf8Byte">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsWriteQuestionToBuffer_UTF8">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsWriteQuestionToBuffer_W">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DnsWriteReverseNameStringForIpAddress">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dns_AddRecordsToMessage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dns_AllocateMsgBuf">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dns_BuildPacket">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dns_CacheServiceCleanup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dns_CacheServiceInit">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dns_CacheServiceStopIssued">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dns_CleanupWinsock">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dns_CloseConnection">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dns_CloseSocket">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dns_CreateMulticastSocket">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dns_CreateSocket">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dns_CreateSocketEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dns_ExtractRecordsFromMessage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dns_FindAuthoritativeZoneLib">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dns_FreeMsgBuf">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dns_GetRandomXid">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dns_InitializeMsgBuf">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dns_InitializeMsgRemoteSockaddr">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dns_InitializeWinsock">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dns_OpenTcpConnectionAndSend">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dns_ParseMessage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dns_ParsePacketRecord">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dns_PingAdapterServers">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dns_ReadPacketName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dns_ReadPacketNameAllocate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dns_ReadRecordStructureFromPacket">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dns_RecvTcp">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dns_ResetNetworkInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dns_SendAndRecvUdp">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dns_SendEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dns_SetRecordDatalength">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dns_SetRecordsSection">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dns_SetRecordsTtl">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dns_SkipPacketName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dns_SkipToRecord">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dns_UpdateLib">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dns_UpdateLibEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dns_WriteDottedNameToPacket">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dns_WriteQuestionToMessage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Dns_WriteRecordStructureToPacketEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ExtraInfo_Init">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Faz_AreServerListsInSameNameSpace">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FlushDnsPolicyUnreachableStatus">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetCurrentTimeInSeconds">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HostsFile_Close">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HostsFile_Open">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HostsFile_ReadLine">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IpHelp_IsAddrOnLink">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Local_GetRecordsForLocalName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Local_GetRecordsForLocalNameEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetInfo_Build">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetInfo_Clean">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetInfo_Copy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetInfo_CopyNetworkIndex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetInfo_CreatePerNetworkNetinfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetInfo_Free">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetInfo_GetAdapterByAddress">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetInfo_GetAdapterByInterfaceIndex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetInfo_GetAdapterByName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetInfo_IsAddrConfig">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetInfo_IsForUpdate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetInfo_IsTcpipConfigChange">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetInfo_ResetServerPriorities">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetInfo_UpdateDnsInterfaceConfigChange">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetInfo_UpdateNetworkProperties">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetInfo_UpdateServerReachability">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="QueryDirectEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Query_Cancel">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Query_Main">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Reg_FreeUpdateInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Reg_GetValueEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Reg_ReadGlobalsEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Reg_ReadUpdateInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Security_ContextListTimeout">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Send_AndRecvUdpWithParam">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Send_MessagePrivate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Send_MessagePrivateEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Send_OpenTcpConnectionAndSend">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Socket_CacheCleanup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Socket_CacheInit">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Socket_CleanupWinsock">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Socket_ClearMessageSockets">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Socket_CloseEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Socket_CloseMessageSockets">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Socket_Create">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Socket_CreateMulticast">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Socket_InitWinsock">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Socket_JoinMulticast">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Socket_RecvFrom">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Socket_SetMulticastInterface">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Socket_SetMulticastLoopBack">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Socket_SetTtl">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Socket_TcpListen">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Trace_Reset">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Update_ReplaceAddressRecordsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Util_IsIp6Running">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Util_IsRunningOnXboxOne">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DnsAPI.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

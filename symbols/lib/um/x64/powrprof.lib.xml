@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\powrprof.lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\powrprof.lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="POWRPROF.dll" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="CallNtPowerInformation">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CanUserWritePwrScheme">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DeletePwrScheme">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DevicePowerClose">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DevicePowerEnumDevices">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DevicePowerOpen">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DevicePowerSetDeviceState">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="EnumPwrSchemes">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GUIDFormatToGlobalPowerPolicy">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GUIDFormatToPowerPolicy">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetActivePwrScheme">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetCurrentPowerPolicies">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetPwrCapabilities">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetPwrDiskSpindownRange">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="IsAdminOverrideActive">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="IsPwrHibernateAllowed">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="IsPwrShutdownAllowed">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="IsPwrSuspendAllowed">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="LoadCurrentPwrScheme">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MergeLegacyPwrScheme">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerApplyPowerRequestOverride">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerCanRestoreIndividualDefaultPowerScheme">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerCloseEnvironmentalMonitor">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerCloseLimitsMitigation">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerCloseLimitsPolicy">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerCreatePossibleSetting">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerCreateSetting">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerCustomizePlatformPowerSettings">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerDebugDifPowerPolicies">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerDebugDifSystemPowerPolicies">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerDebugDumpPowerPolicy">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerDebugDumpPowerScheme">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerDebugDumpSystemPowerCapabilities">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerDebugDumpSystemPowerPolicy">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerDeleteScheme">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerDeterminePlatformRole">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerDeterminePlatformRoleEx">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerDuplicateScheme">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerEnumerate">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerGeneralizePlatformSettings">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerGetActiveScheme">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerImportPowerScheme">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerIsSettingRangeDefined">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerOpenSystemPowerKey">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerOpenUserPowerKey">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerPolicyToGUIDFormat">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerReadACDefaultIndex">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerReadACValue">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerReadACValueIndex">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerReadDCDefaultIndex">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerReadDCValue">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerReadDCValueIndex">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerReadDescription">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerReadFriendlyName">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerReadIconResourceSpecifier">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerReadPossibleDescription">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerReadPossibleFriendlyName">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerReadPossibleValue">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerReadSecurityDescriptor">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerReadSettingAttributes">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerReadValueIncrement">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerReadValueMax">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerReadValueMin">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerReadValueUnitsSpecifier">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerRegisterEnvironmentalMonitor">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerRegisterLimitsMitigation">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerRegisterLimitsPolicy">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerRegisterSuspendResumeNotification">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerRemovePowerSetting">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerReplaceDefaultPowerSchemes">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerReportLimitsEvent">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerReportThermalEvent">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerRestoreDefaultPowerSchemes">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerRestoreIndividualDefaultPowerScheme">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerSetActiveScheme">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerSetAlsBrightnessOffset">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerSettingAccessCheck">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerSettingAccessCheckEx">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerSettingRegisterNotification">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerSettingUnregisterNotification">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerUnregisterSuspendResumeNotification">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerUpdateEnvironmentalMonitorState">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerUpdateEnvironmentalMonitorThresholds">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerUpdateLimitsMitigation">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerWriteACDefaultIndex">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerWriteACValueIndex">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerWriteDCDefaultIndex">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerWriteDCValueIndex">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerWriteDescription">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerWriteFriendlyName">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerWriteIconResourceSpecifier">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerWritePossibleDescription">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerWritePossibleFriendlyName">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerWritePossibleValue">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerWriteSecurityDescriptor">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerWriteSettingAttributes">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerWriteValueIncrement">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerWriteValueMax">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerWriteValueMin">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PowerWriteValueUnitsSpecifier">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ReadGlobalPwrPolicy">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ReadProcessorPwrScheme">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ReadPwrScheme">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SetActivePwrScheme">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SetSuspendState">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ValidatePowerPolicies">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WriteGlobalPwrPolicy">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WriteProcessorPwrScheme">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WritePwrScheme">
+      <Definitions>
+        <DynamicLibrary Name="POWRPROF.dll" />
+      </Definitions>
+    </Symbol>
+  </ExportedSymbols>
+</StaticLibrary>

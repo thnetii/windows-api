@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="MTxDM.dll">
+  <OriginalPath>C:\Windows\system32\MTxDM.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="GetDispenserManager">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mtxdm.lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

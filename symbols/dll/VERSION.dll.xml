@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="VERSION.dll">
+  <OriginalPath>C:\Windows\system32\VERSION.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="GetFileVersionInfoA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Version.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetFileVersionInfoByHandle" />
+    <Symbol Name="GetFileVersionInfoExA" />
+    <Symbol Name="GetFileVersionInfoExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Version.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetFileVersionInfoSizeA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Version.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetFileVersionInfoSizeExA" />
+    <Symbol Name="GetFileVersionInfoSizeExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Version.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetFileVersionInfoSizeW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Version.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetFileVersionInfoW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Version.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VerFindFileA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Version.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VerFindFileW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Version.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VerInstallFileA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Version.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VerInstallFileW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Version.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VerLanguageNameA">
+      <ForwardSymbol>KERNEL32.VerLanguageNameA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VerLanguageNameW">
+      <ForwardSymbol>KERNEL32.VerLanguageNameW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VerQueryValueA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Version.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VerQueryValueW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Version.Lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

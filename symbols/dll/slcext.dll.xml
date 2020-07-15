@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="slcext.dll">
+  <OriginalPath>C:\Windows\system32\slcext.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="SLAcquireGenuineTicket">
+      <ForwardSymbol>SPPCEXT.SLAcquireGenuineTicket</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\slcext.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SLActivateProduct">
+      <ForwardSymbol>SPPCEXT.SLActivateProduct</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\slcext.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SLGetPackageProductKey">
+      <ForwardSymbol>SPPCEXT.SLGetPackageProductKey</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\slcext.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SLGetPackageProperties">
+      <ForwardSymbol>SPPCEXT.SLGetPackageProperties</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\slcext.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SLGetPackageToken">
+      <ForwardSymbol>SPPCEXT.SLGetPackageToken</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\slcext.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SLGetReferralInformation">
+      <ForwardSymbol>SPPCEXT.SLGetReferralInformation</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\slcext.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SLGetServerStatus">
+      <ForwardSymbol>SPPCEXT.SLGetServerStatus</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\slcext.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SLInstallPackage">
+      <ForwardSymbol>SPPCEXT.SLInstallPackage</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\slcext.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SLUninstallPackage">
+      <ForwardSymbol>SPPCEXT.SLUninstallPackage</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\slcext.lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

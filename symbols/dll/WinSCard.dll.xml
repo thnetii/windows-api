@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="WinSCard.dll">
+  <OriginalPath>C:\Windows\system32\WinSCard.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="ClassInstall32" />
+    <Symbol Name="SCardAccessNewReaderEvent" />
+    <Symbol Name="SCardAccessStartedEvent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardAddReaderToGroupA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardAddReaderToGroupW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardAudit">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardBeginTransaction">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardCancel">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardConnectA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardConnectW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardControl">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardDisconnect">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardEndTransaction">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardEstablishContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardForgetCardTypeA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardForgetCardTypeW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardForgetReaderA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardForgetReaderGroupA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardForgetReaderGroupW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardForgetReaderW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardFreeMemory">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardGetAttrib">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardGetCardTypeProviderNameA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardGetCardTypeProviderNameW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardGetDeviceTypeIdA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardGetDeviceTypeIdW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardGetProviderIdA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardGetProviderIdW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardGetReaderDeviceInstanceIdA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardGetReaderDeviceInstanceIdW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardGetReaderIconA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardGetReaderIconW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardGetStatusChangeA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardGetStatusChangeW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardGetTransmitCount">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardIntroduceCardTypeA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardIntroduceCardTypeW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardIntroduceReaderA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardIntroduceReaderGroupA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardIntroduceReaderGroupW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardIntroduceReaderW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardIsValidContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardListCardsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardListCardsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardListInterfacesA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardListInterfacesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardListReaderGroupsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardListReaderGroupsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardListReadersA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardListReadersW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardListReadersWithDeviceInstanceIdA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardListReadersWithDeviceInstanceIdW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardLocateCardsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardLocateCardsByATRA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardLocateCardsByATRW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardLocateCardsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardPciRaw" />
+    <Symbol Name="SCardPciT0" />
+    <Symbol Name="SCardPciT1" />
+    <Symbol Name="SCardReadCacheA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardReadCacheW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardReconnect">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardReleaseAllEvents" />
+    <Symbol Name="SCardReleaseContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardReleaseNewReaderEvent" />
+    <Symbol Name="SCardReleaseStartedEvent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardRemoveReaderFromGroupA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardRemoveReaderFromGroupW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardSetAttrib">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardSetCardTypeProviderNameA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardSetCardTypeProviderNameW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardState">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardStatusA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardStatusW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardTransmit">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardWriteCacheA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardWriteCacheW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="g_rgSCardRawPci">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="g_rgSCardT0Pci">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="g_rgSCardT1Pci">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winscard.lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

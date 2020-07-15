@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\avrt.lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\avrt.lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="AVRT.dll" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="AvCreateTaskIndex" />
+    <Symbol Name="AvQuerySystemResponsiveness" />
+    <Symbol Name="AvQueryTaskIndexValue" />
+    <Symbol Name="AvRevertMmThreadCharacteristics" />
+    <Symbol Name="AvRtCreateThreadOrderingGroup" />
+    <Symbol Name="AvRtCreateThreadOrderingGroupExA" />
+    <Symbol Name="AvRtCreateThreadOrderingGroupExW" />
+    <Symbol Name="AvRtDeleteThreadOrderingGroup" />
+    <Symbol Name="AvRtJoinThreadOrderingGroup" />
+    <Symbol Name="AvRtLeaveThreadOrderingGroup" />
+    <Symbol Name="AvRtWaitOnThreadOrderingGroup" />
+    <Symbol Name="AvSetMmMaxThreadCharacteristicsA" />
+    <Symbol Name="AvSetMmMaxThreadCharacteristicsW" />
+    <Symbol Name="AvSetMmThreadCharacteristicsA" />
+    <Symbol Name="AvSetMmThreadCharacteristicsW" />
+    <Symbol Name="AvSetMmThreadPriority" />
+    <Symbol Name="AvSetMultimediaMode" />
+    <Symbol Name="AvTaskIndexYield" />
+    <Symbol Name="AvTaskIndexYieldCancel" />
+    <Symbol Name="AvThreadOpenTaskIndex" />
+  </ExportedSymbols>
+</StaticLibrary>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="netutils.dll">
+  <OriginalPath>C:\Windows\system32\netutils.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="NetApiBufferAllocate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetApiBufferFree">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetApiBufferReallocate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetApiBufferSize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetRemoteComputerSupports">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetapipBufferAllocate" />
+    <Symbol Name="NetpIsComputerNameValid" />
+    <Symbol Name="NetpIsDomainNameValid" />
+    <Symbol Name="NetpIsGroupNameValid" />
+    <Symbol Name="NetpIsRemote" />
+    <Symbol Name="NetpIsRemoteNameValid" />
+    <Symbol Name="NetpIsShareNameValid" />
+    <Symbol Name="NetpIsUncComputerNameValid" />
+    <Symbol Name="NetpIsUserNameValid" />
+    <Symbol Name="NetpwListCanonicalize" />
+    <Symbol Name="NetpwListTraverse" />
+    <Symbol Name="NetpwNameCanonicalize" />
+    <Symbol Name="NetpwNameCompare" />
+    <Symbol Name="NetpwNameValidate" />
+    <Symbol Name="NetpwPathCanonicalize" />
+    <Symbol Name="NetpwPathCompare" />
+    <Symbol Name="NetpwPathType" />
+  </ExportedSymbols>
+</DynamicLibrary>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\Sfc.Lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\Sfc.Lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="sfc.dll" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="SRSetRestorePoint">
+      <Definitions>
+        <DynamicLibrary Name="sfc.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SRSetRestorePointA">
+      <Definitions>
+        <DynamicLibrary Name="sfc.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SRSetRestorePointW">
+      <Definitions>
+        <DynamicLibrary Name="sfc.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SfcClose" />
+    <Symbol Name="SfcConnectToServer" />
+    <Symbol Name="SfcFileException" />
+    <Symbol Name="SfcGetNextProtectedFile">
+      <Definitions>
+        <DynamicLibrary Name="sfc.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SfcInitProt" />
+    <Symbol Name="SfcInitiateScan" />
+    <Symbol Name="SfcInstallProtectedFiles" />
+    <Symbol Name="SfcIsFileProtected">
+      <Definitions>
+        <DynamicLibrary Name="sfc.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SfcIsKeyProtected">
+      <Definitions>
+        <DynamicLibrary Name="sfc.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SfcTerminateWatcherThread" />
+    <Symbol Name="SfpDeleteCatalog" />
+    <Symbol Name="SfpInstallCatalog" />
+    <Symbol Name="SfpVerifyFile">
+      <Definitions>
+        <DynamicLibrary Name="sfc.dll" />
+      </Definitions>
+    </Symbol>
+  </ExportedSymbols>
+</StaticLibrary>

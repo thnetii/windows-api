@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\DSUIExt.Lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\DSUIExt.Lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="dsuiext.dll" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="CheckDsPolicy" />
+    <Symbol Name="DsBrowseForContainerA">
+      <Definitions>
+        <DynamicLibrary Name="dsuiext.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DsBrowseForContainerW">
+      <Definitions>
+        <DynamicLibrary Name="dsuiext.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DsGetFriendlyClassName">
+      <Definitions>
+        <DynamicLibrary Name="dsuiext.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DsGetIcon">
+      <Definitions>
+        <DynamicLibrary Name="dsuiext.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="FormatDirectoryName" />
+    <Symbol Name="FormatMsgBox" />
+    <Symbol Name="FormatMsgResource" />
+    <Symbol Name="GetArrayContents" />
+    <Symbol Name="GetDisplayNameFromADsPath" />
+    <Symbol Name="GetStringElementA" />
+    <Symbol Name="GetStringElementW" />
+    <Symbol Name="LocalAllocStringA" />
+    <Symbol Name="LocalAllocStringA2W" />
+    <Symbol Name="LocalAllocStringLenA" />
+    <Symbol Name="LocalAllocStringLenW" />
+    <Symbol Name="LocalAllocStringW" />
+    <Symbol Name="LocalAllocStringW2A" />
+    <Symbol Name="LocalFreeStringA" />
+    <Symbol Name="LocalFreeStringW" />
+    <Symbol Name="LocalQueryStringA" />
+    <Symbol Name="LocalQueryStringW" />
+    <Symbol Name="ObjectClassFromSearchColumn" />
+    <Symbol Name="PutStringElementA" />
+    <Symbol Name="PutStringElementW" />
+    <Symbol Name="ShowDirectoryUI" />
+    <Symbol Name="StringDPA_AppendStringA" />
+    <Symbol Name="StringDPA_AppendStringW" />
+    <Symbol Name="StringDPA_DeleteString" />
+    <Symbol Name="StringDPA_Destroy" />
+    <Symbol Name="StringDPA_InsertStringA" />
+    <Symbol Name="StringDPA_InsertStringW" />
+    <Symbol Name="StringFromSearchColumn" />
+  </ExportedSymbols>
+</StaticLibrary>

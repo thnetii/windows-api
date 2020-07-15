@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="FeClient.dll">
+  <OriginalPath>C:\Windows\system32\FeClient.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="EdpAllowFileAccessForProcess">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\feclient.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EdpConsumerCredentialCreate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\feclient.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EdpConsumerCredentialQuery">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\feclient.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EdpContainerizeFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\feclient.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EdpCredentialCreate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\feclient.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EdpCredentialDelete">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\feclient.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EdpCredentialExists">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\feclient.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EdpCredentialQuery">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\feclient.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EdpDecontainerizeFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\feclient.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EdpDplPolicyEnabledForUser">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\feclient.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EdpDplStartCredServiceIfDplEnabledForUser">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\feclient.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EdpDplUpgradePinInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\feclient.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EdpDplUpgradeVerifyUser">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\feclient.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EdpDplUserCredentialsSet">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\feclient.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EdpDplUserUnlockComplete">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\feclient.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EdpDplUserUnlockStart">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\feclient.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EdpFree">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\feclient.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EdpGetContainerIdentity">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\feclient.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EdpGetCredServiceState">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\feclient.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EdpIsConsumerDataProtectionEnforced">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\feclient.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EdpIsConsumerDataProtectionSupported">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\feclient.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EdpPurgeAppLearningEvents">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\feclient.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EdpQueryCredServiceInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\feclient.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EdpQueryDplEnforcedPolicyOwnerIds">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\feclient.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EdpQueryRevokedPolicyOwnerIds">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\feclient.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EdpRmsClearKeys">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\feclient.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EdpSetCredServiceInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\feclient.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EdpUnprotectFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\feclient.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EdpWriteLogSiteLearningEvents">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\feclient.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EfsClientCloseFileRaw">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\feclient.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EfsClientCopyFileRaw">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\feclient.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EfsClientDecryptFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\feclient.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EfsClientDuplicateEncryptionInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\feclient.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EfsClientEncryptFileEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\feclient.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EfsClientFileEncryptionStatus">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\feclient.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EfsClientFreeKeyInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\feclient.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EfsClientFreeProtectorList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\feclient.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EfsClientGetEncryptedFileVersion">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\feclient.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EfsClientGetKeyInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\feclient.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EfsClientOpenFileRaw">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\feclient.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EfsClientQueryProtectors">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\feclient.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EfsClientReadFileRaw">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\feclient.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EfsClientWriteFileRaw">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\feclient.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EfsClientWriteFileWithHeaderRaw">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\feclient.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EfsReprotectFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\feclient.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EfsUtilGetCurrentKey">
+      <ForwardSymbol>efsutil._EfsUtilGetCurrentKey_Deprecated@16</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\feclient.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FeClientInitialize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\feclient.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetLockSessionUnwrappedKey">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\feclient.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetLockSessionWrappedKey">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\feclient.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OefsCheckSupport">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\feclient.lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

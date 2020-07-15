@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="comsvcs.dll">
+  <OriginalPath>C:\Windows\system32\comsvcs.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="CoCreateActivity">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ComSvcs.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoEnterServiceDomain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ComSvcs.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoLeaveServiceDomain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ComSvcs.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoLoadServices">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ComSvcs.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ComSvcsExceptionFilter">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ComSvcs.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ComSvcsLogError">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ComSvcs.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CosGetCallContext" />
+    <Symbol Name="DispManGetContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ComSvcs.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DllCanUnloadNow" />
+    <Symbol Name="DllGetClassObject" />
+    <Symbol Name="DllRegisterServer" />
+    <Symbol Name="DllUnregisterServer" />
+    <Symbol Name="GetMTAThreadPoolMetrics">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ComSvcs.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetManagedExtensions">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ComSvcs.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetObjectContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ComSvcs.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetTrkSvrObject">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ComSvcs.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MTSCreateActivity">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ComSvcs.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MiniDumpW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ComSvcs.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RecycleSurrogate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ComSvcs.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SafeRef">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ComSvcs.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="[NONAME]" />
+  </ExportedSymbols>
+</DynamicLibrary>

@@ -1,0 +1,756 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="NTDSAPI.dll">
+  <OriginalPath>C:\Windows\system32\NTDSAPI.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="DsAddCloneDCW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsAddSidHistoryA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsAddSidHistoryW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsBindA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsBindByInstanceA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsBindByInstanceW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsBindToISTGA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsBindToISTGW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsBindW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsBindWithCredA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsBindWithCredW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsBindWithSpnA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsBindWithSpnExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsBindWithSpnExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsBindWithSpnExWWorker" />
+    <Symbol Name="DsBindWithSpnW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsBindingSetTimeout">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsClientMakeSpnForTargetServerA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsClientMakeSpnForTargetServerW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsCrackNamesA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsCrackNamesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsCrackNamesWWorker" />
+    <Symbol Name="DsCrackSpn2A">
+      <ForwardSymbol>DSPARSE.DsCrackSpn2A</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsCrackSpn2W">
+      <ForwardSymbol>DSPARSE.DsCrackSpn2W</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsCrackSpn3W">
+      <ForwardSymbol>DSPARSE.DsCrackSpn3W</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsCrackSpn4W">
+      <ForwardSymbol>DSPARSE.DsCrackSpn4W</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsCrackSpnA">
+      <ForwardSymbol>DSPARSE.DsCrackSpnA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsCrackSpnW">
+      <ForwardSymbol>DSPARSE.DsCrackSpnW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsCrackUnquotedMangledRdnA">
+      <ForwardSymbol>DSPARSE.DsCrackUnquotedMangledRdnA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsCrackUnquotedMangledRdnW">
+      <ForwardSymbol>DSPARSE.DsCrackUnquotedMangledRdnW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsFinishDemotionW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsFreeCloneDcResult">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsFreeDomainControllerInfoA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsFreeDomainControllerInfoW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsFreeDomainControllerInfoWWorker" />
+    <Symbol Name="DsFreeNameResultA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsFreeNameResultW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsFreeNameResultWWorker" />
+    <Symbol Name="DsFreeNgcKey">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsFreeNgcKeyWorker" />
+    <Symbol Name="DsFreePasswordCredentials">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsFreePasswordCredentialsWorker" />
+    <Symbol Name="DsFreeSchemaGuidMapA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsFreeSchemaGuidMapW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsFreeSpnArrayA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsFreeSpnArrayW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsGetBindAddrW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsGetBindAnnotW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsGetBindInstGuid">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsGetDomainControllerInfoA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsGetDomainControllerInfoW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsGetDomainControllerInfoWWorker" />
+    <Symbol Name="DsGetRdnW">
+      <ForwardSymbol>DSPARSE.DsGetRdnW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsGetSpnA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsGetSpnW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsInheritSecurityIdentityA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsInheritSecurityIdentityW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsInitDemotionW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsIsMangledDnA">
+      <ForwardSymbol>DSPARSE.DsIsMangledDnA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsIsMangledDnW">
+      <ForwardSymbol>DSPARSE.DsIsMangledDnW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsIsMangledRdnValueA">
+      <ForwardSymbol>DSPARSE.DsIsMangledRdnValueA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsIsMangledRdnValueW">
+      <ForwardSymbol>DSPARSE.DsIsMangledRdnValueW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsListDomainsInSiteA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsListDomainsInSiteW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsListInfoForServerA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsListInfoForServerW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsListRolesA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsListRolesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsListServersForDomainInSiteA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsListServersForDomainInSiteW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsListServersInSiteA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsListServersInSiteW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsListSitesA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsListSitesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsLogEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsMakePasswordCredentialsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsMakePasswordCredentialsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsMakePasswordCredentialsWWorker" />
+    <Symbol Name="DsMakeSpnA">
+      <ForwardSymbol>DSPARSE.DsMakeSpnA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsMakeSpnW">
+      <ForwardSymbol>DSPARSE.DsMakeSpnW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsMapSchemaGuidsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsMapSchemaGuidsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsQuerySitesByCostA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsQuerySitesByCostW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsQuerySitesFree">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsQuoteRdnValueA">
+      <ForwardSymbol>DSPARSE.DsQuoteRdnValueA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsQuoteRdnValueW">
+      <ForwardSymbol>DSPARSE.DsQuoteRdnValueW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsReadNgcKeyA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsReadNgcKeyW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsReadNgcKeyWWorker" />
+    <Symbol Name="DsRemoveDsDomainA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsRemoveDsDomainW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsRemoveDsServerA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsRemoveDsServerW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsReplicaAddA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsReplicaAddW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsReplicaConsistencyCheck">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsReplicaDelA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsReplicaDelW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsReplicaDemotionW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsReplicaFreeInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsReplicaGetInfo2W">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsReplicaGetInfoW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsReplicaModifyA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsReplicaModifyW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsReplicaSyncA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsReplicaSyncAllA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsReplicaSyncAllW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsReplicaSyncW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsReplicaUpdateRefsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsReplicaUpdateRefsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsReplicaVerifyObjectsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsReplicaVerifyObjectsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsServerRegisterSpnA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsServerRegisterSpnW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsUnBindA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsUnBindW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsUnBindWWorker" />
+    <Symbol Name="DsUnquoteRdnValueA">
+      <ForwardSymbol>DSPARSE.DsUnquoteRdnValueA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsUnquoteRdnValueW">
+      <ForwardSymbol>DSPARSE.DsUnquoteRdnValueW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsWriteAccountSpnA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsWriteAccountSpnW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsWriteNgcKeyA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsWriteNgcKeyW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsWriteNgcKeyWWorker" />
+    <Symbol Name="DsaopBind">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsaopBindWithCred">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsaopBindWithSpn">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsaopExecuteScript">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsaopPrepareScript">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsaopUnBind">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\NtDsAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

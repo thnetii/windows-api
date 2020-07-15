@@ -1,0 +1,2480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="SHLWAPI.dll">
+  <OriginalPath>C:\Windows\system32\SHLWAPI.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="AssocCreate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AssocGetPerceivedType">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AssocIsDangerous">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AssocQueryKeyA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AssocQueryKeyW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AssocQueryStringA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AssocQueryStringByKeyA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AssocQueryStringByKeyW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AssocQueryStringW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ChrCmpIA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ChrCmpIW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ColorAdjustLuma">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ColorHLSToRGB">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ColorRGBToHLS">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ConnectToConnectionPoint">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DelayLoadFailureHook">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DllGetClassObject" />
+    <Symbol Name="DllGetVersion" />
+    <Symbol Name="GUIDFromStringW">
+      <ForwardSymbol>SHCORE.#200</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="GetAcceptLanguagesA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetAcceptLanguagesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetMenuPosFromID">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HashData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IStream_Copy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IStream_Read">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IStream_ReadPidl">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IStream_ReadStr">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IStream_Reset">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IStream_Size">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IStream_Write">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IStream_WritePidl">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IStream_WriteStr">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IUnknown_AtomicRelease">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IUnknown_Exec">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IUnknown_GetSite">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IUnknown_GetWindow">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IUnknown_QueryService">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IUnknown_QueryStatus" />
+    <Symbol Name="IUnknown_Set">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IUnknown_SetSite">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IntlStrEqWorkerA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IntlStrEqWorkerW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IsCharSpaceA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IsCharSpaceW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IsInternetESCEnabled">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IsOS">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MLLoadLibraryA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MLLoadLibraryW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ParseURLA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ParseURLW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathAddBackslashA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathAddBackslashW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathAddExtensionA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathAddExtensionW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathAppendA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathAppendW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathBuildRootA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathBuildRootW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathCanonicalizeA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathCanonicalizeW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathCombineA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathCombineW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathCommonPrefixA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathCommonPrefixW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathCompactPathA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathCompactPathExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathCompactPathExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathCompactPathW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathCreateFromUrlA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathCreateFromUrlAlloc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathCreateFromUrlW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathFileExistsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathFileExistsAndAttributesW" />
+    <Symbol Name="PathFileExistsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathFindExtensionA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathFindExtensionW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathFindFileNameA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathFindFileNameW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathFindNextComponentA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathFindNextComponentW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathFindOnPathA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathFindOnPathW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathFindSuffixArrayA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathFindSuffixArrayW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathGetArgsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathGetArgsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathGetCharTypeA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathGetCharTypeW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathGetDriveNumberA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathGetDriveNumberW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathIsContentTypeA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathIsContentTypeW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathIsDirectoryA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathIsDirectoryEmptyA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathIsDirectoryEmptyW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathIsDirectoryW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathIsFileSpecA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathIsFileSpecW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathIsLFNFileSpecA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathIsLFNFileSpecW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathIsNetworkPathA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathIsNetworkPathW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathIsPrefixA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathIsPrefixW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathIsRelativeA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathIsRelativeW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathIsRootA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathIsRootW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathIsSameRootA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathIsSameRootW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathIsSystemFolderA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathIsSystemFolderW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathIsUNCA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathIsUNCServerA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathIsUNCServerShareA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathIsUNCServerShareW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathIsUNCServerW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathIsUNCW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathIsURLA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathIsURLW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathMakePrettyA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathMakePrettyW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathMakeSystemFolderA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathMakeSystemFolderW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathMatchSpecA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathMatchSpecExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathMatchSpecExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathMatchSpecW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathParseIconLocationA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathParseIconLocationW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathQuoteSpacesA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathQuoteSpacesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathRelativePathToA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathRelativePathToW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathRemoveArgsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathRemoveArgsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathRemoveBackslashA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathRemoveBackslashW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathRemoveBlanksA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathRemoveBlanksW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathRemoveExtensionA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathRemoveExtensionW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathRemoveFileSpecA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathRemoveFileSpecW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathRenameExtensionA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathRenameExtensionW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathSearchAndQualifyA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathSearchAndQualifyW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathSetDlgItemPathA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathSetDlgItemPathW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathSkipRootA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathSkipRootW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathStripPathA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathStripPathW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathStripToRootA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathStripToRootW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathUnExpandEnvStringsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathUnExpandEnvStringsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathUndecorateA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathUndecorateW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathUnmakeSystemFolderA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathUnmakeSystemFolderW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathUnquoteSpacesA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathUnquoteSpacesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="QISearch">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHAllocShared">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHAnsiToAnsi">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHAnsiToUnicode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHAutoComplete">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHCopyKeyA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHCopyKeyW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHCreateMemStream">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHCreateShellPalette">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHCreateStreamOnFileA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHCreateStreamOnFileEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHCreateStreamOnFileW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHCreateStreamWrapper">
+      <ForwardSymbol>SHUNIMPL.#471</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="SHCreateThread">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHCreateThreadRef">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHCreateThreadWithHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHCreateWorkerWindowW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHDeleteEmptyKeyA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHDeleteEmptyKeyW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHDeleteKeyA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHDeleteKeyW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHDeleteOrphanKeyA">
+      <ForwardSymbol>SHUNIMPL.#446</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="SHDeleteOrphanKeyW">
+      <ForwardSymbol>SHUNIMPL.#447</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="SHDeleteValueA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHDeleteValueW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHEnumKeyExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHEnumKeyExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHEnumValueA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHEnumValueW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHFormatDateTimeA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHFormatDateTimeW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHFreeShared">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHGetInverseCMAP">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHGetThreadRef">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHGetValueA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHGetValueW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHGetViewStatePropertyBag">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHIsChildOrSelf">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHIsLowMemoryMachine">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHLoadIndirectString">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHLockShared">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHMessageBoxCheckA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHMessageBoxCheckW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHOpenRegStream2A">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHOpenRegStream2W">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHOpenRegStreamA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHOpenRegStreamW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHPackDispParamsV" />
+    <Symbol Name="SHPinDllOfCLSID">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHPropertyBag_ReadStrAlloc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHPropertyBag_WriteBSTR">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHQueryInfoKeyA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHQueryInfoKeyW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHQueryValueExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHQueryValueExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHRegCloseUSKey">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHRegCreateUSKeyA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHRegCreateUSKeyW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHRegDeleteEmptyUSKeyA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHRegDeleteEmptyUSKeyW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHRegDeleteUSValueA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHRegDeleteUSValueW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHRegDuplicateHKey">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHRegEnumUSKeyA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHRegEnumUSKeyW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHRegEnumUSValueA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHRegEnumUSValueW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHRegGetBoolUSValueA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHRegGetBoolUSValueW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHRegGetBoolValueFromHKCUHKLM" />
+    <Symbol Name="SHRegGetIntW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHRegGetPathA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHRegGetPathW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHRegGetUSValueA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHRegGetUSValueW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHRegGetValueA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHRegGetValueFromHKCUHKLM" />
+    <Symbol Name="SHRegGetValueW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHRegOpenUSKeyA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHRegOpenUSKeyW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHRegQueryInfoUSKeyA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHRegQueryInfoUSKeyW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHRegQueryUSValueA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHRegQueryUSValueW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHRegSetPathA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHRegSetPathW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHRegSetUSValueA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHRegSetUSValueW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHRegWriteUSValueA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHRegWriteUSValueW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHRegisterValidateTemplate" />
+    <Symbol Name="SHReleaseThreadRef">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHRunIndirectRegClientCommand">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHSendMessageBroadcastA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHSendMessageBroadcastW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHSetThreadRef">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHSetValueA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHSetValueW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHSkipJunction">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHStrDupA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHStrDupW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHStripMneumonicA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHStripMneumonicW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHUnicodeToAnsi">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHUnicodeToAnsiCP">
+      <ForwardSymbol>SHCORE.#151</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHUnicodeToUnicode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHUnlockShared">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ShellMessageBoxA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ShellMessageBoxW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrCSpnA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrCSpnIA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrCSpnIW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrCSpnW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrCatBuffA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrCatBuffW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrCatChainW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrCatW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrChrA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrChrIA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrChrIW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrChrNIW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrChrNW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrChrW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrCmpCA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrCmpCW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrCmpICA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrCmpICW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrCmpIW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrCmpLogicalW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrCmpNA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrCmpNCA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrCmpNCW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrCmpNIA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrCmpNICA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrCmpNICW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrCmpNIW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrCmpNW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrCmpW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrCpyNW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrCpyW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrDupA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrDupW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrFormatByteSize64A">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrFormatByteSizeA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrFormatByteSizeEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrFormatByteSizeW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrFormatKBSizeA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrFormatKBSizeW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrFromTimeIntervalA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrFromTimeIntervalW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrIsIntlEqualA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrIsIntlEqualW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrNCatA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrNCatW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrPBrkA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrPBrkW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrRChrA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrRChrIA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrRChrIW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrRChrW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrRStrIA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrRStrIW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrRetToBSTR">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrRetToBufA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrRetToBufW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrRetToStrA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrRetToStrW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrSpnA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrSpnW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrStrA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrStrIA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrStrIW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrStrNIW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrStrNW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrStrW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrToInt64ExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrToInt64ExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrToIntA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrToIntExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrToIntExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrToIntW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrTrimA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrTrimW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UrlApplySchemeA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UrlApplySchemeW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UrlCanonicalizeA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UrlCanonicalizeW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UrlCombineA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UrlCombineW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UrlCompareA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UrlCompareW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UrlCreateFromPathA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UrlCreateFromPathW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UrlEscapeA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UrlEscapeW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UrlFixupW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UrlGetLocationA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UrlGetLocationW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UrlGetPartA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UrlGetPartW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UrlHashA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UrlHashW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UrlIsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UrlIsNoHistoryA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UrlIsNoHistoryW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UrlIsOpaqueA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UrlIsOpaqueW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UrlIsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UrlUnescapeA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UrlUnescapeW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WhichPlatform">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="wnsprintfA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="wnsprintfW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="wvnsprintfA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="wvnsprintfW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ShLwApi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="[NONAME]" />
+  </ExportedSymbols>
+</DynamicLibrary>

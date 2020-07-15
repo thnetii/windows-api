@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="WINHTTP.dll">
+  <OriginalPath>C:\Windows\system32\WINHTTP.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="DllCanUnloadNow" />
+    <Symbol Name="DllGetClassObject" />
+    <Symbol Name="Private1" />
+    <Symbol Name="SvchostPushServiceGlobals">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpAddRequestHeaders">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpAutoProxySvcMain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpCheckPlatform">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpCloseHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpConnect">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpConnectionDeletePolicyEntries">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpConnectionDeleteProxyInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpConnectionFreeNameList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpConnectionFreeProxyInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpConnectionFreeProxyList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpConnectionGetNameList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpConnectionGetProxyInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpConnectionGetProxyList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpConnectionSetPolicyEntries">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpConnectionSetProxyInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpConnectionUpdateIfIndexTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpCrackUrl">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpCreateProxyResolver">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpCreateUrl">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpDetectAutoProxyConfigUrl">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpFreeProxyResult">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpFreeProxyResultEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpFreeProxySettings">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpGetDefaultProxyConfiguration">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpGetIEProxyConfigForCurrentUser">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpGetProxyForUrl">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpGetProxyForUrlEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpGetProxyForUrlEx2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpGetProxyForUrlHvsi">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpGetProxyResult">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpGetProxyResultEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpGetProxySettingsVersion">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpGetTunnelSocket">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpOpen">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpOpenRequest">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpProbeConnectivity">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpQueryAuthSchemes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpQueryDataAvailable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpQueryHeaders">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpQueryOption">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpReadData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpReadProxySettings">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpReadProxySettingsHvsi">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpReceiveResponse">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpResetAutoProxy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpSaveProxyCredentials">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpSendRequest">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpSetCredentials">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpSetDefaultProxyConfiguration">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpSetOption">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpSetStatusCallback">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpSetTimeouts">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpTimeFromSystemTime">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpTimeToSystemTime">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpWebSocketClose">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpWebSocketCompleteUpgrade">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpWebSocketQueryCloseStatus">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpWebSocketReceive">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpWebSocketSend">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpWebSocketShutdown">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpWriteData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinHttpWriteProxySettings">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\winhttp.lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

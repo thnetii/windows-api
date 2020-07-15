@@ -1,0 +1,1361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="PROPSYS.dll">
+  <OriginalPath>C:\Windows\system32\PROPSYS.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="ClearPropVariantArray">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClearVariantArray">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DllCanUnloadNow" />
+    <Symbol Name="DllGetClassObject" />
+    <Symbol Name="DllRegisterServer" />
+    <Symbol Name="DllUnregisterServer" />
+    <Symbol Name="GetProxyDllInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitPropVariantFromBooleanVector">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitPropVariantFromBuffer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitPropVariantFromCLSID">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitPropVariantFromDoubleVector">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitPropVariantFromFileTime">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitPropVariantFromFileTimeVector">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitPropVariantFromGUIDAsString">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitPropVariantFromInt16Vector">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitPropVariantFromInt32Vector">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitPropVariantFromInt64Vector">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitPropVariantFromPropVariantVectorElem">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitPropVariantFromResource">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitPropVariantFromStrRet">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitPropVariantFromStringAsVector">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitPropVariantFromStringVector">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitPropVariantFromUInt16Vector">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitPropVariantFromUInt32Vector">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitPropVariantFromUInt64Vector">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitPropVariantVectorFromPropVariant">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitVariantFromBooleanArray">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitVariantFromBuffer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitVariantFromDoubleArray">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitVariantFromFileTime">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitVariantFromFileTimeArray">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitVariantFromGUIDAsString">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitVariantFromInt16Array">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitVariantFromInt32Array">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitVariantFromInt64Array">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitVariantFromResource">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitVariantFromStrRet">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitVariantFromStringArray">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitVariantFromUInt16Array">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitVariantFromUInt32Array">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitVariantFromUInt64Array">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitVariantFromVariantArrayElem">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSCoerceToCanonicalValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSCreateAdapterFromPropertyStore">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSCreateDelayedMultiplexPropertyStore">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSCreateMemoryPropertyStore">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSCreateMultiplexPropertyStore">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSCreatePropertyChangeArray">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSCreatePropertyStoreFromObject">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSCreatePropertyStoreFromPropertySetStorage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSCreateSimplePropertyChange">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSEnumeratePropertyDescriptions">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSFormatForDisplay">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSFormatForDisplayAlloc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSFormatPropertyValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSGetImageReferenceForValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSGetItemPropertyHandler">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSGetItemPropertyHandlerWithCreateObject">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSGetNameFromPropertyKey">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSGetNamedPropertyFromPropertyStorage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSGetPropertyDescription">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSGetPropertyDescriptionByName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSGetPropertyDescriptionListFromString">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSGetPropertyFromPropertyStorage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSGetPropertyKeyFromName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSGetPropertySystem">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSGetPropertyValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSLookupPropertyHandlerCLSID">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSPropertyBag_Delete">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSPropertyBag_ReadBOOL">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSPropertyBag_ReadBSTR">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSPropertyBag_ReadDWORD">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSPropertyBag_ReadGUID">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSPropertyBag_ReadInt">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSPropertyBag_ReadLONG">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSPropertyBag_ReadPOINTL">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSPropertyBag_ReadPOINTS">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSPropertyBag_ReadPropertyKey">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSPropertyBag_ReadRECTL">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSPropertyBag_ReadSHORT">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSPropertyBag_ReadStr">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSPropertyBag_ReadStrAlloc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSPropertyBag_ReadStream">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSPropertyBag_ReadType">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSPropertyBag_ReadULONGLONG">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSPropertyBag_ReadUnknown">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSPropertyBag_WriteBOOL">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSPropertyBag_WriteBSTR">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSPropertyBag_WriteDWORD">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSPropertyBag_WriteGUID">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSPropertyBag_WriteInt">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSPropertyBag_WriteLONG">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSPropertyBag_WritePOINTL">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSPropertyBag_WritePOINTS">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSPropertyBag_WritePropertyKey">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSPropertyBag_WriteRECTL">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSPropertyBag_WriteSHORT">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSPropertyBag_WriteStr">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSPropertyBag_WriteStream">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSPropertyBag_WriteULONGLONG">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSPropertyBag_WriteUnknown">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSPropertyKeyFromString">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSRefreshPropertySchema">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSRegisterPropertySchema">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSSetPropertyValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSStringFromPropertyKey">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PSUnregisterPropertySchema">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantChangeType">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantCompareEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantGetBooleanElem">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantGetDoubleElem">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantGetElementCount">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantGetFileTimeElem">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantGetInt16Elem">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantGetInt32Elem">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantGetInt64Elem">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantGetStringElem">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantGetUInt16Elem">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantGetUInt32Elem">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantGetUInt64Elem">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantToBSTR">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantToBoolean">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantToBooleanVector">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantToBooleanVectorAlloc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantToBooleanWithDefault">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantToBuffer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantToDouble">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantToDoubleVector">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantToDoubleVectorAlloc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantToDoubleWithDefault">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantToFileTime">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantToFileTimeVector">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantToFileTimeVectorAlloc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantToGUID">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantToInt16">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantToInt16Vector">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantToInt16VectorAlloc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantToInt16WithDefault">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantToInt32">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantToInt32Vector">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantToInt32VectorAlloc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantToInt32WithDefault">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantToInt64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantToInt64Vector">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantToInt64VectorAlloc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantToInt64WithDefault">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantToStrRet">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantToString">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantToStringAlloc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantToStringVector">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantToStringVectorAlloc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantToStringWithDefault">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantToUInt16">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantToUInt16Vector">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantToUInt16VectorAlloc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantToUInt16WithDefault">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantToUInt32">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantToUInt32Vector">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantToUInt32VectorAlloc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantToUInt32WithDefault">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantToUInt64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantToUInt64Vector">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantToUInt64VectorAlloc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantToUInt64WithDefault">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantToVariant">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantToWinRTPropertyValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StgDeserializePropVariant">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StgSerializePropVariant">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VariantCompare">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VariantGetBooleanElem">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VariantGetDoubleElem">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VariantGetElementCount">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VariantGetInt16Elem">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VariantGetInt32Elem">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VariantGetInt64Elem">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VariantGetStringElem">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VariantGetUInt16Elem">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VariantGetUInt32Elem">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VariantGetUInt64Elem">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VariantToBoolean">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VariantToBooleanArray">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VariantToBooleanArrayAlloc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VariantToBooleanWithDefault">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VariantToBuffer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VariantToDosDateTime">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VariantToDouble">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VariantToDoubleArray">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VariantToDoubleArrayAlloc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VariantToDoubleWithDefault">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VariantToFileTime">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VariantToGUID">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VariantToInt16">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VariantToInt16Array">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VariantToInt16ArrayAlloc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VariantToInt16WithDefault">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VariantToInt32">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VariantToInt32Array">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VariantToInt32ArrayAlloc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VariantToInt32WithDefault">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VariantToInt64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VariantToInt64Array">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VariantToInt64ArrayAlloc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VariantToInt64WithDefault">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VariantToPropVariant">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VariantToStrRet">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VariantToString">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VariantToStringAlloc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VariantToStringArray">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VariantToStringArrayAlloc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VariantToStringWithDefault">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VariantToUInt16">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VariantToUInt16Array">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VariantToUInt16ArrayAlloc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VariantToUInt16WithDefault">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VariantToUInt32">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VariantToUInt32Array">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VariantToUInt32ArrayAlloc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VariantToUInt32WithDefault">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VariantToUInt64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VariantToUInt64Array">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VariantToUInt64ArrayAlloc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VariantToUInt64WithDefault">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinRTPropertyValueToPropVariant">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\propsys.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="[NONAME]" />
+  </ExportedSymbols>
+</DynamicLibrary>

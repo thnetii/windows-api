@@ -1,0 +1,1541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="msi.dll">
+  <OriginalPath>C:\Windows\system32\msi.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="DllCanUnloadNow" />
+    <Symbol Name="DllGetClassObject" />
+    <Symbol Name="DllGetVersion">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DllRegisterServer" />
+    <Symbol Name="DllUnregisterServer" />
+    <Symbol Name="Migrate10CachedPackagesA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Migrate10CachedPackagesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiAdvertiseProductA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiAdvertiseProductExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiAdvertiseProductExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiAdvertiseProductW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiAdvertiseScriptA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiAdvertiseScriptW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiApplyMultiplePatchesA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiApplyMultiplePatchesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiApplyPatchA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiApplyPatchW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiBeginTransactionA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiBeginTransactionW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiCloseAllHandles">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiCloseHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiCollectUserInfoA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiCollectUserInfoW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiConfigureFeatureA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiConfigureFeatureFromDescriptorA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiConfigureFeatureFromDescriptorW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiConfigureFeatureW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiConfigureProductA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiConfigureProductExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiConfigureProductExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiConfigureProductW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiCreateAndVerifyInstallerDirectory">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiCreateRecord">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiCreateTransformSummaryInfoA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiCreateTransformSummaryInfoW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiDatabaseApplyTransformA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiDatabaseApplyTransformW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiDatabaseCommit">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiDatabaseExportA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiDatabaseExportW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiDatabaseGenerateTransformA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiDatabaseGenerateTransformW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiDatabaseGetPrimaryKeysA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiDatabaseGetPrimaryKeysW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiDatabaseImportA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiDatabaseImportW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiDatabaseIsTablePersistentA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiDatabaseIsTablePersistentW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiDatabaseMergeA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiDatabaseMergeW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiDatabaseOpenViewA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiDatabaseOpenViewW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiDecomposeDescriptorA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiDecomposeDescriptorW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiDeleteUserDataA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiDeleteUserDataW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiDetermineApplicablePatchesA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiDetermineApplicablePatchesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiDeterminePatchSequenceA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiDeterminePatchSequenceW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiDoActionA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiDoActionW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiEnableLogA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiEnableLogW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiEnableUIPreview">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiEndTransaction">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiEnumClientsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiEnumClientsExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiEnumClientsExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiEnumClientsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiEnumComponentCostsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiEnumComponentCostsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiEnumComponentQualifiersA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiEnumComponentQualifiersW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiEnumComponentsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiEnumComponentsExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiEnumComponentsExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiEnumComponentsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiEnumFeaturesA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiEnumFeaturesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiEnumPatchesA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiEnumPatchesExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiEnumPatchesExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiEnumPatchesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiEnumProductsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiEnumProductsExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiEnumProductsExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiEnumProductsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiEnumRelatedProductsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiEnumRelatedProductsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiEvaluateConditionA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiEvaluateConditionW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiExtractPatchXMLDataA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiExtractPatchXMLDataW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiFormatRecordA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiFormatRecordW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiGetActiveDatabase">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiGetComponentPathA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiGetComponentPathExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiGetComponentPathExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiGetComponentPathW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiGetComponentStateA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiGetComponentStateW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiGetDatabaseState">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiGetFeatureCostA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiGetFeatureCostW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiGetFeatureInfoA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiGetFeatureInfoW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiGetFeatureStateA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiGetFeatureStateW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiGetFeatureUsageA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiGetFeatureUsageW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiGetFeatureValidStatesA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiGetFeatureValidStatesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiGetFileHashA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiGetFileHashW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiGetFileSignatureInformationA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiGetFileSignatureInformationW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiGetFileVersionA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiGetFileVersionW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiGetLanguage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiGetLastErrorRecord">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiGetMode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiGetPatchFileListA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiGetPatchFileListW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiGetPatchInfoA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiGetPatchInfoExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiGetPatchInfoExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiGetPatchInfoW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiGetProductCodeA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiGetProductCodeFromPackageCodeA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiGetProductCodeFromPackageCodeW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiGetProductCodeW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiGetProductInfoA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiGetProductInfoExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiGetProductInfoExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiGetProductInfoFromScriptA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiGetProductInfoFromScriptW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiGetProductInfoW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiGetProductPropertyA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiGetProductPropertyW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiGetPropertyA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiGetPropertyW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiGetShortcutTargetA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiGetShortcutTargetW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiGetSourcePathA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiGetSourcePathW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiGetSummaryInformationA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiGetSummaryInformationW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiGetTargetPathA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiGetTargetPathW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiGetUserInfoA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiGetUserInfoW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiInstallMissingComponentA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiInstallMissingComponentW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiInstallMissingFileA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiInstallMissingFileW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiInstallProductA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiInstallProductW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiInvalidateFeatureCache">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiIsProductElevatedA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiIsProductElevatedW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiJoinTransaction">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiLoadStringA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiLoadStringW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiLocateComponentA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiLocateComponentW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiMessageBoxA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiMessageBoxExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiMessageBoxExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiMessageBoxW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiNotifySidChangeA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiNotifySidChangeW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiOpenDatabaseA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiOpenDatabaseW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiOpenPackageA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiOpenPackageExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiOpenPackageExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiOpenPackageW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiOpenProductA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiOpenProductW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiPreviewBillboardA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiPreviewBillboardW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiPreviewDialogA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiPreviewDialogW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiProcessAdvertiseScriptA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiProcessAdvertiseScriptW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiProcessMessage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiProvideAssemblyA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiProvideAssemblyW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiProvideComponentA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiProvideComponentFromDescriptorA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiProvideComponentFromDescriptorW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiProvideComponentW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiProvideQualifiedComponentA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiProvideQualifiedComponentExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiProvideQualifiedComponentExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiProvideQualifiedComponentW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiQueryComponentStateA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiQueryComponentStateW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiQueryFeatureStateA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiQueryFeatureStateExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiQueryFeatureStateExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiQueryFeatureStateFromDescriptorA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiQueryFeatureStateFromDescriptorW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiQueryFeatureStateW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiQueryProductStateA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiQueryProductStateW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiRecordClearData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiRecordDataSize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiRecordGetFieldCount">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiRecordGetInteger">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiRecordGetStringA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiRecordGetStringW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiRecordIsNull">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiRecordReadStream">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiRecordSetInteger">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiRecordSetStreamA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiRecordSetStreamW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiRecordSetStringA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiRecordSetStringW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiReinstallFeatureA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiReinstallFeatureFromDescriptorA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiReinstallFeatureFromDescriptorW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiReinstallFeatureW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiReinstallProductA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiReinstallProductW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiRemovePatchesA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiRemovePatchesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiSequenceA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiSequenceW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiSetComponentStateA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiSetComponentStateW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiSetExternalUIA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiSetExternalUIRecord">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiSetExternalUIW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiSetFeatureAttributesA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiSetFeatureAttributesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiSetFeatureStateA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiSetFeatureStateW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiSetInstallLevel">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiSetInternalUI">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiSetMode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiSetOfflineContextW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiSetPropertyA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiSetPropertyW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiSetTargetPathA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiSetTargetPathW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiSourceListAddMediaDiskA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiSourceListAddMediaDiskW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiSourceListAddSourceA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiSourceListAddSourceExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiSourceListAddSourceExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiSourceListAddSourceW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiSourceListClearAllA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiSourceListClearAllExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiSourceListClearAllExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiSourceListClearAllW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiSourceListClearMediaDiskA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiSourceListClearMediaDiskW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiSourceListClearSourceA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiSourceListClearSourceW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiSourceListEnumMediaDisksA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiSourceListEnumMediaDisksW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiSourceListEnumSourcesA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiSourceListEnumSourcesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiSourceListForceResolutionA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiSourceListForceResolutionExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiSourceListForceResolutionExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiSourceListForceResolutionW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiSourceListGetInfoA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiSourceListGetInfoW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiSourceListSetInfoA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiSourceListSetInfoW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiSummaryInfoGetPropertyA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiSummaryInfoGetPropertyCount">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiSummaryInfoGetPropertyW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiSummaryInfoPersist">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiSummaryInfoSetPropertyA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiSummaryInfoSetPropertyW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiUseFeatureA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiUseFeatureExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiUseFeatureExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiUseFeatureW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiVerifyDiskSpace">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiVerifyPackageA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiVerifyPackageW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiViewClose">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiViewExecute">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiViewFetch">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiViewGetColumnInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiViewGetErrorA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiViewGetErrorW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsiViewModify">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Msi.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="QueryInstanceCount" />
+  </ExportedSymbols>
+</DynamicLibrary>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\keycredmgr.lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\keycredmgr.lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="KeyCredMgr.dll" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="KeyCredentialManagerFreeInformation">
+      <Definitions>
+        <DynamicLibrary Name="KeyCredMgr.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="KeyCredentialManagerGetInformation">
+      <Definitions>
+        <DynamicLibrary Name="KeyCredMgr.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="KeyCredentialManagerGetOperationErrorStates">
+      <Definitions>
+        <DynamicLibrary Name="KeyCredMgr.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="KeyCredentialManagerShowUIOperation">
+      <Definitions>
+        <DynamicLibrary Name="KeyCredMgr.dll" />
+      </Definitions>
+    </Symbol>
+  </ExportedSymbols>
+</StaticLibrary>

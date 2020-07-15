@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\UserEnv.Lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\UserEnv.Lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="USERENV.dll" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="RsopLoggingEnabled(void))" />
+    <Symbol Name="AreThereVisibleLogoffScripts">
+      <Definitions>
+        <DynamicLibrary Name="USERENV.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="AreThereVisibleShutdownScripts">
+      <Definitions>
+        <DynamicLibrary Name="USERENV.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CheckDirectoryOwnership" />
+    <Symbol Name="CheckXForestLogon" />
+    <Symbol Name="CopyProfileDirectoryEx2" />
+    <Symbol Name="CreateAppContainerProfile">
+      <Definitions>
+        <DynamicLibrary Name="USERENV.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CreateAppContainerProfileInternal" />
+    <Symbol Name="CreateDirectoryJunctionsForSystem" />
+    <Symbol Name="CreateDirectoryJunctionsForUserProfile" />
+    <Symbol Name="CreateEnvironmentBlock">
+      <Definitions>
+        <DynamicLibrary Name="USERENV.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CreateGroupEx" />
+    <Symbol Name="CreateLinkFileEx" />
+    <Symbol Name="CreateProfile">
+      <Definitions>
+        <DynamicLibrary Name="USERENV.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DeleteAppContainerProfile">
+      <Definitions>
+        <DynamicLibrary Name="USERENV.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DeleteAppContainerProfileInternal" />
+    <Symbol Name="DeleteGroup" />
+    <Symbol Name="DeleteLinkFile" />
+    <Symbol Name="DeleteProfileA">
+      <Definitions>
+        <DynamicLibrary Name="USERENV.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DeleteProfileDirectory" />
+    <Symbol Name="DeleteProfileW">
+      <Definitions>
+        <DynamicLibrary Name="USERENV.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DeriveAppContainerSidFromAppContainerName">
+      <Definitions>
+        <DynamicLibrary Name="USERENV.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DeriveRestrictedAppContainerSidFromAppContainerSidAndRestrictedName">
+      <Definitions>
+        <DynamicLibrary Name="USERENV.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DestroyEnvironmentBlock">
+      <Definitions>
+        <DynamicLibrary Name="USERENV.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="EnterCriticalPolicySection">
+      <Definitions>
+        <DynamicLibrary Name="USERENV.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ExpandEnvironmentStringsForUserA">
+      <Definitions>
+        <DynamicLibrary Name="USERENV.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ExpandEnvironmentStringsForUserW">
+      <Definitions>
+        <DynamicLibrary Name="USERENV.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ForceSyncFgPolicy">
+      <Definitions>
+        <DynamicLibrary Name="USERENV.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="FreeGPOListA">
+      <Definitions>
+        <DynamicLibrary Name="USERENV.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="FreeGPOListW">
+      <Definitions>
+        <DynamicLibrary Name="USERENV.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GenerateGPNotification">
+      <Definitions>
+        <DynamicLibrary Name="USERENV.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetAllUsersProfileDirectoryA">
+      <Definitions>
+        <DynamicLibrary Name="USERENV.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetAllUsersProfileDirectoryW">
+      <Definitions>
+        <DynamicLibrary Name="USERENV.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetAppContainerFolderPath">
+      <Definitions>
+        <DynamicLibrary Name="USERENV.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetAppContainerRegistryLocation">
+      <Definitions>
+        <DynamicLibrary Name="USERENV.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetAppliedGPOListA">
+      <Definitions>
+        <DynamicLibrary Name="USERENV.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetAppliedGPOListW">
+      <Definitions>
+        <DynamicLibrary Name="USERENV.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetDefaultUserProfileDirectoryA">
+      <Definitions>
+        <DynamicLibrary Name="USERENV.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetDefaultUserProfileDirectoryW">
+      <Definitions>
+        <DynamicLibrary Name="USERENV.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetGPOListA">
+      <Definitions>
+        <DynamicLibrary Name="USERENV.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetGPOListW">
+      <Definitions>
+        <DynamicLibrary Name="USERENV.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetLongProfilePathName" />
+    <Symbol Name="GetNextFgPolicyRefreshInfo">
+      <Definitions>
+        <DynamicLibrary Name="USERENV.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetPreviousFgPolicyRefreshInfo">
+      <Definitions>
+        <DynamicLibrary Name="USERENV.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetProfileType">
+      <Definitions>
+        <DynamicLibrary Name="USERENV.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetProfilesDirectoryA">
+      <Definitions>
+        <DynamicLibrary Name="USERENV.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetProfilesDirectoryW">
+      <Definitions>
+        <DynamicLibrary Name="USERENV.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetUserProfileDirectoryA">
+      <Definitions>
+        <DynamicLibrary Name="USERENV.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetUserProfileDirectoryForUserSidW" />
+    <Symbol Name="GetUserProfileDirectoryW">
+      <Definitions>
+        <DynamicLibrary Name="USERENV.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HasPolicyForegroundProcessingCompleted">
+      <Definitions>
+        <DynamicLibrary Name="USERENV.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="IsAppContainerProfilePresentInternal" />
+    <Symbol Name="LeaveCriticalPolicySection">
+      <Definitions>
+        <DynamicLibrary Name="USERENV.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="LoadUserProfileA">
+      <Definitions>
+        <DynamicLibrary Name="USERENV.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="LoadUserProfileW">
+      <Definitions>
+        <DynamicLibrary Name="USERENV.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="LookupAppContainerDisplayName" />
+    <Symbol Name="PingComputer" />
+    <Symbol Name="ProcessGroupPolicyCompleted">
+      <Definitions>
+        <DynamicLibrary Name="USERENV.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ProcessGroupPolicyCompletedEx">
+      <Definitions>
+        <DynamicLibrary Name="USERENV.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RefreshPolicy">
+      <Definitions>
+        <DynamicLibrary Name="USERENV.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RefreshPolicyEx">
+      <Definitions>
+        <DynamicLibrary Name="USERENV.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RegisterGPNotification">
+      <Definitions>
+        <DynamicLibrary Name="USERENV.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RemapProfile" />
+    <Symbol Name="RsopAccessCheckByType">
+      <Definitions>
+        <DynamicLibrary Name="USERENV.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RsopFileAccessCheck">
+      <Definitions>
+        <DynamicLibrary Name="USERENV.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RsopResetPolicySettingStatus">
+      <Definitions>
+        <DynamicLibrary Name="USERENV.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RsopSetPolicySettingStatus">
+      <Definitions>
+        <DynamicLibrary Name="USERENV.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="UnloadUserProfile">
+      <Definitions>
+        <DynamicLibrary Name="USERENV.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="UnregisterGPNotification">
+      <Definitions>
+        <DynamicLibrary Name="USERENV.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="UpdateAppContainerProfile" />
+    <Symbol Name="WaitForMachinePolicyForegroundProcessing">
+      <Definitions>
+        <DynamicLibrary Name="USERENV.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WaitForUserPolicyForegroundProcessing">
+      <Definitions>
+        <DynamicLibrary Name="USERENV.dll" />
+      </Definitions>
+    </Symbol>
+  </ExportedSymbols>
+</StaticLibrary>

@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\ncrypt.lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\ncrypt.lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="ncrypt.dll" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="BCryptAddContextFunction">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="BCryptCloseAlgorithmProvider">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="BCryptConfigureContext">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="BCryptConfigureContextFunction">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="BCryptCreateContext">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="BCryptCreateHash">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="BCryptDecrypt">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="BCryptDeleteContext">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="BCryptDeriveKey">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="BCryptDeriveKeyCapi">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="BCryptDeriveKeyPBKDF2">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="BCryptDestroyHash">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="BCryptDestroyKey">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="BCryptDestroySecret">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="BCryptDuplicateHash">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="BCryptDuplicateKey">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="BCryptEncrypt">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="BCryptEnumAlgorithms">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="BCryptEnumContextFunctionProviders">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="BCryptEnumContextFunctions">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="BCryptEnumContexts">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="BCryptEnumProviders">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="BCryptEnumRegisteredProviders">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="BCryptExportKey">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="BCryptFinalizeKeyPair">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="BCryptFinishHash">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="BCryptFreeBuffer">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="BCryptGenRandom">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="BCryptGenerateKeyPair">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="BCryptGenerateSymmetricKey">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="BCryptGetFipsAlgorithmMode">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="BCryptGetProperty">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="BCryptHash">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="BCryptHashData">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="BCryptImportKey">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="BCryptImportKeyPair">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="BCryptKeyDerivation">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="BCryptOpenAlgorithmProvider">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="BCryptQueryContextConfiguration">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="BCryptQueryContextFunctionConfiguration">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="BCryptQueryContextFunctionProperty">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="BCryptQueryProviderRegistration">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="BCryptRegisterConfigChangeNotify">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="BCryptRemoveContextFunction">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="BCryptResolveProviders">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="BCryptSecretAgreement">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="BCryptSetAuditingInterface">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="BCryptSetContextFunctionProperty">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="BCryptSetProperty">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="BCryptSignHash">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="BCryptUnregisterConfigChangeNotify">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="BCryptVerifySignature">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetIsolationServerInterface">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetKeyStorageInterface">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetSChannelInterface">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NCryptCloseProtectionDescriptor">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NCryptCreateClaim">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NCryptCreatePersistedKey">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NCryptCreateProtectionDescriptor">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NCryptDecrypt">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NCryptDeleteKey">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NCryptDeriveKey">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NCryptEncrypt">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NCryptEnumAlgorithms">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NCryptEnumKeys">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NCryptEnumStorageProviders">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NCryptExportKey">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NCryptFinalizeKey">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NCryptFreeBuffer">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NCryptFreeObject">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NCryptGetProperty">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NCryptGetProtectionDescriptorInfo">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NCryptImportKey">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NCryptIsAlgSupported">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NCryptIsKeyHandle">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NCryptKeyDerivation">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NCryptNotifyChangeKey">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NCryptOpenKey">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NCryptOpenStorageProvider">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NCryptProtectSecret">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NCryptQueryProtectionDescriptorName">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NCryptRegisterProtectionDescriptorName">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NCryptSecretAgreement">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NCryptSetAuditingInterface">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NCryptSetProperty">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NCryptSignHash">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NCryptStreamClose">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NCryptStreamOpenToProtect">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NCryptStreamOpenToUnprotect">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NCryptStreamOpenToUnprotectEx">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NCryptStreamUpdate">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NCryptTranslateHandle">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NCryptUnprotectSecret">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NCryptVerifyClaim">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NCryptVerifySignature">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SslChangeNotify">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SslComputeClientAuthHash">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SslComputeEapKeyBlock">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SslComputeFinishedHash">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SslComputeSessionHash">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SslCreateClientAuthHash">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SslCreateEphemeralKey">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SslCreateHandshakeHash">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SslDecrementProviderReferenceCount">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SslDecryptPacket">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SslEncryptPacket">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SslEnumCipherSuites">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SslEnumEccCurves">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SslEnumProtocolProviders">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SslExportKey">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SslExportKeyingMaterial">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SslFreeBuffer">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SslFreeObject">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SslGenerateMasterKey">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SslGeneratePreMasterKey">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SslGenerateSessionKeys">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SslGetCipherSuitePRFHashAlgorithm">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SslGetKeyProperty">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SslGetProviderProperty">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SslHashHandshake">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SslImportKey">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SslImportMasterKey">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SslIncrementProviderReferenceCount">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SslLookupCipherLengths">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SslLookupCipherSuiteInfo">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SslOpenPrivateKey">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SslOpenProvider">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SslSignHash">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SslVerifySignature">
+      <Definitions>
+        <DynamicLibrary Name="ncrypt.dll" />
+      </Definitions>
+    </Symbol>
+  </ExportedSymbols>
+</StaticLibrary>

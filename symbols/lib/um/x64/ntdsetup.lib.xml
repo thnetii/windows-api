@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\ntdsetup.lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\ntdsetup.lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="NTDSETUP.dll" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="AdamFetchDemotionInfo" />
+    <Symbol Name="AdamGetCrossRefs" />
+    <Symbol Name="FreeDemotionInfo" />
+    <Symbol Name="NtdsAdamValidateInst" />
+    <Symbol Name="NtdsAdamValidateServiceAccount" />
+    <Symbol Name="NtdsAdamVerifyBind" />
+    <Symbol Name="NtdsCheckMachineAccountFlags" />
+    <Symbol Name="NtdsDemote" />
+    <Symbol Name="NtdsFreeDnsRRInfo" />
+    <Symbol Name="NtdsGetDefaultDnsName" />
+    <Symbol Name="NtdsInstall" />
+    <Symbol Name="NtdsInstallCancel" />
+    <Symbol Name="NtdsInstallReplicateFull" />
+    <Symbol Name="NtdsInstallShutdown" />
+    <Symbol Name="NtdsInstallUndo" />
+    <Symbol Name="NtdsPrepareForDemotion" />
+    <Symbol Name="NtdsPrepareForDemotionUndo" />
+    <Symbol Name="NtdsPrepareForDsUpgrade" />
+    <Symbol Name="NtdsSetReplicaMachineAccount" />
+    <Symbol Name="NtdspConfigRegistry" />
+    <Symbol Name="NtdspDNStoRFC1779Name" />
+    <Symbol Name="NtdspFindSite" />
+    <Symbol Name="NtdspValidateInstallParameters" />
+    <Symbol Name="NtdspVerifyDsEnvironment" />
+  </ExportedSymbols>
+</StaticLibrary>

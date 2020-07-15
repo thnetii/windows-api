@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="SensApi.dll">
+  <OriginalPath>C:\Windows\system32\SensApi.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="IsDestinationReachableA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SensAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IsDestinationReachableW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SensAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IsNetworkAlive">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SensAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

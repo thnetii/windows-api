@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="CRYPTNET.dll">
+  <OriginalPath>C:\Windows\system32\CRYPTNET.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="CertDllVerifyCTLUsage" />
+    <Symbol Name="CertDllVerifyRevocation" />
+    <Symbol Name="CryptCancelAsyncRetrieval" />
+    <Symbol Name="CryptFlushTimeValidObject" />
+    <Symbol Name="CryptGetObjectUrl">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\CryptNet.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptGetTimeValidObject" />
+    <Symbol Name="CryptInstallCancelRetrieval">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\CryptNet.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptRetrieveObjectByUrlA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\CryptNet.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptRetrieveObjectByUrlW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\CryptNet.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptUninstallCancelRetrieval">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\CryptNet.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DllRegisterServer" />
+    <Symbol Name="DllUnregisterServer" />
+    <Symbol Name="I_CryptConvertIriToAsciiOrUnicode" />
+    <Symbol Name="I_CryptConvertIriToAsciiOrUnicodeWithFlags" />
+    <Symbol Name="I_CryptNetAutoFlush" />
+    <Symbol Name="I_CryptNetEnumUrlCacheEntry" />
+    <Symbol Name="I_CryptNetFlushOfflineUrl" />
+    <Symbol Name="I_CryptNetGetConnectivity" />
+    <Symbol Name="I_CryptNetGetHostNameFromUrl" />
+    <Symbol Name="I_CryptNetGetUserDsStoreUrl" />
+    <Symbol Name="I_CryptNetSetUrlCacheFlushInfo" />
+    <Symbol Name="I_CryptNetSetUrlCachePreFetchInfo" />
+    <Symbol Name="LdapProvOpenStore" />
+  </ExportedSymbols>
+</DynamicLibrary>

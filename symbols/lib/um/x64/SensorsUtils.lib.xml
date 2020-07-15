@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\SensorsUtils.lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\SensorsUtils.lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="SensorsUtilsV2.dll" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="AddMillisecondsToFileTime" />
+    <Symbol Name="CollectionsListAllocateBufferAndSerialize" />
+    <Symbol Name="CollectionsListCopyAndMarshall" />
+    <Symbol Name="CollectionsListDeserializeFromBuffer" />
+    <Symbol Name="CollectionsListGetFillableCount" />
+    <Symbol Name="CollectionsListGetMarshalledSize" />
+    <Symbol Name="CollectionsListGetMarshalledSizeWithoutSerialization" />
+    <Symbol Name="CollectionsListGetSerializedSize" />
+    <Symbol Name="CollectionsListMarshall" />
+    <Symbol Name="CollectionsListSerializeToBuffer" />
+    <Symbol Name="CollectionsListSortSubscribedActivitiesByConfidence" />
+    <Symbol Name="CollectionsListUpdateMarshalledPointer" />
+    <Symbol Name="ConvertAccelerometerDataToCollection" />
+    <Symbol Name="ConvertCollectionToAccelerometerData" />
+    <Symbol Name="ConvertCollectionToGyroscopeData" />
+    <Symbol Name="ConvertCollectionToLightSensorData" />
+    <Symbol Name="ConvertCollectionToLightSensorDataWithColor" />
+    <Symbol Name="ConvertCollectionToMagnetometerData" />
+    <Symbol Name="ConvertCollectionToOrientationData" />
+    <Symbol Name="ConvertCollectionToProximitySensorData" />
+    <Symbol Name="ConvertFloat3DDataToCollection" />
+    <Symbol Name="ConvertGyroscopeDataToCollection" />
+    <Symbol Name="ConvertLightSensorDataToCollection" />
+    <Symbol Name="ConvertLightSensorDataWithColorToCollection" />
+    <Symbol Name="ConvertMagnetometerDataToCollection" />
+    <Symbol Name="ConvertOrientationDataToCollection" />
+    <Symbol Name="ConvertProximitySensorDataToCollection" />
+    <Symbol Name="ConvertSimpleOrientationDataToCollection" />
+    <Symbol Name="EvaluateActivityThresholds" />
+    <Symbol Name="GetFileTimeDifference" />
+    <Symbol Name="GetFileTimeFromTimeStamp" />
+    <Symbol Name="GetPerformanceTime" />
+    <Symbol Name="GetTimeStampFromFileTime" />
+    <Symbol Name="InitPropVariantFromCLSIDArray" />
+    <Symbol Name="InitPropVariantFromFloat" />
+    <Symbol Name="IsCollectionListSame" />
+    <Symbol Name="IsGUIDPresentInList" />
+    <Symbol Name="IsKeyPresentInCollectionList" />
+    <Symbol Name="IsKeyPresentInPropertyList" />
+    <Symbol Name="IsSensorSubscribed" />
+    <Symbol Name="MapActivityConfidenceToState" />
+    <Symbol Name="PropKeyFindKeyGetBool" />
+    <Symbol Name="PropKeyFindKeyGetDouble" />
+    <Symbol Name="PropKeyFindKeyGetFileTime" />
+    <Symbol Name="PropKeyFindKeyGetFloat" />
+    <Symbol Name="PropKeyFindKeyGetGuid" />
+    <Symbol Name="PropKeyFindKeyGetInt32" />
+    <Symbol Name="PropKeyFindKeyGetInt64" />
+    <Symbol Name="PropKeyFindKeyGetNthInt64" />
+    <Symbol Name="PropKeyFindKeyGetNthUlong" />
+    <Symbol Name="PropKeyFindKeyGetNthUshort" />
+    <Symbol Name="PropKeyFindKeyGetPropVariant" />
+    <Symbol Name="PropKeyFindKeyGetUlong" />
+    <Symbol Name="PropKeyFindKeyGetUshort" />
+    <Symbol Name="PropKeyFindKeySetPropVariant" />
+    <Symbol Name="PropVariantGetInformation" />
+    <Symbol Name="PropertiesListCopy" />
+    <Symbol Name="PropertiesListGetFillableCount" />
+    <Symbol Name="SensorCollectionGetAt" />
+    <Symbol Name="SerializationBufferAllocate" />
+    <Symbol Name="SerializationBufferFree" />
+  </ExportedSymbols>
+</StaticLibrary>

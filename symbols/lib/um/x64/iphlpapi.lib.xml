@@ -1,0 +1,1405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\iphlpapi.lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\iphlpapi.lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="IPHLPAPI.DLL" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="AddIPAddress">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="AllocateAndGetInterfaceInfoFromStack">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="AllocateAndGetIpAddrTableFromStack">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CancelIPChangeNotify">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CancelMibChangeNotify2">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CloseCompartment">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CloseGetIPPhysicalInterfaceForDestination">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ConvertCompartmentGuidToId">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ConvertCompartmentIdToGuid">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ConvertGuidToStringA">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ConvertGuidToStringW">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ConvertInterfaceAliasToLuid">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ConvertInterfaceGuidToLuid">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ConvertInterfaceIndexToLuid">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ConvertInterfaceLuidToAlias">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ConvertInterfaceLuidToGuid">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ConvertInterfaceLuidToIndex">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ConvertInterfaceLuidToNameA">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ConvertInterfaceLuidToNameW">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ConvertInterfaceNameToLuidA">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ConvertInterfaceNameToLuidW">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ConvertInterfacePhysicalAddressToLuid">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ConvertIpv4MaskToLength">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ConvertLengthToIpv4Mask">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ConvertRemoteInterfaceAliasToLuid">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ConvertRemoteInterfaceGuidToLuid">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ConvertRemoteInterfaceIndexToLuid">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ConvertRemoteInterfaceLuidToAlias">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ConvertRemoteInterfaceLuidToGuid">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ConvertRemoteInterfaceLuidToIndex">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ConvertStringToGuidA">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ConvertStringToGuidW">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ConvertStringToInterfacePhysicalAddress">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CreateAnycastIpAddressEntry">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CreateCompartment">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CreateIpForwardEntry">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CreateIpForwardEntry2">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CreateIpNetEntry">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CreateIpNetEntry2">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CreatePersistentTcpPortReservation">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CreatePersistentUdpPortReservation">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CreateProxyArpEntry">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CreateSortedAddressPairs">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CreateUnicastIpAddressEntry">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DeleteAnycastIpAddressEntry">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DeleteCompartment">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DeleteIPAddress">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DeleteIpForwardEntry">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DeleteIpForwardEntry2">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DeleteIpNetEntry">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DeleteIpNetEntry2">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DeletePersistentTcpPortReservation">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DeletePersistentUdpPortReservation">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DeleteProxyArpEntry">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DeleteUnicastIpAddressEntry">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DisableMediaSense">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="EnableRouter">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="FlushIpNetTable">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="FlushIpNetTable2">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="FlushIpPathTable">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="FreeMibTable">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetAdapterIndex">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetAdapterOrderMap">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetAdaptersAddresses">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetAdaptersInfo">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetAnycastIpAddressEntry">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetAnycastIpAddressTable">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetBestInterface">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetBestInterfaceEx">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetBestRoute">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetBestRoute2">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetCurrentThreadCompartmentId">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetCurrentThreadCompartmentScope">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetDefaultCompartmentId">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetExtendedTcpTable">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetExtendedUdpTable">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetFriendlyIfIndex">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetIcmpStatistics">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetIcmpStatisticsEx">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetIfEntry">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetIfEntry2">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetIfEntry2Ex">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetIfStackTable">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetIfTable">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetIfTable2">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetIfTable2Ex">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetInterfaceCompartmentId">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetInterfaceInfo">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetInvertedIfStackTable">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetIpAddrTable">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetIpErrorString">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetIpForwardEntry2">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetIpForwardTable">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetIpForwardTable2">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetIpInterfaceEntry">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetIpInterfaceTable">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetIpNetEntry2">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetIpNetTable">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetIpNetTable2">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetIpNetworkConnectionBandwidthEstimates">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetIpPathEntry">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetIpPathTable">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetIpStatistics">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetIpStatisticsEx">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetJobCompartmentId">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetMulticastIpAddressEntry">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetMulticastIpAddressTable">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetNetworkInformation">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetNetworkParams">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetNumberOfInterfaces">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetOwnerModuleFromPidAndInfo">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetOwnerModuleFromTcp6Entry">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetOwnerModuleFromTcpEntry">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetOwnerModuleFromUdp6Entry">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetOwnerModuleFromUdpEntry">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetPerAdapterInfo">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetPerTcp6ConnectionEStats">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetPerTcp6ConnectionStats">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetPerTcpConnectionEStats">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetPerTcpConnectionStats">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetRTTAndHopCount">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetSessionCompartmentId">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetTcp6Table">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetTcp6Table2">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetTcpStatistics">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetTcpStatisticsEx">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetTcpStatisticsEx2">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetTcpTable">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetTcpTable2">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetTeredoPort">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetUdp6Table">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetUdpStatistics">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetUdpStatisticsEx">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetUdpStatisticsEx2">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetUdpTable">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetUniDirectionalAdapterInfo">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetUnicastIpAddressEntry">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetUnicastIpAddressTable">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetWPAOACSupportLevel">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Icmp6CreateFile">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Icmp6ParseReplies">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Icmp6SendEcho2">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="IcmpCloseHandle">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="IcmpCreateFile">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="IcmpParseReplies">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="IcmpSendEcho">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="IcmpSendEcho2">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="IcmpSendEcho2Ex">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InitializeCompartmentEntry">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InitializeIpForwardEntry">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InitializeIpInterfaceEntry">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InitializeUnicastIpAddressEntry">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalCleanupPersistentStore">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalCreateAnycastIpAddressEntry">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalCreateIpForwardEntry">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalCreateIpForwardEntry2">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalCreateIpNetEntry">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalCreateIpNetEntry2">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalCreateUnicastIpAddressEntry">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalDeleteAnycastIpAddressEntry">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalDeleteIpForwardEntry">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalDeleteIpForwardEntry2">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalDeleteIpNetEntry">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalDeleteIpNetEntry2">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalDeleteUnicastIpAddressEntry">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalFindInterfaceByAddress">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalGetAnycastIpAddressEntry">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalGetAnycastIpAddressTable">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalGetBoundTcp6EndpointTable">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalGetBoundTcpEndpointTable">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalGetForwardIpTable2">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalGetIPPhysicalInterfaceForDestination">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalGetIfEntry2">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalGetIfTable">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalGetIfTable2">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalGetIpAddrTable">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalGetIpForwardEntry2">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalGetIpForwardTable">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalGetIpInterfaceEntry">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalGetIpInterfaceTable">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalGetIpNetEntry2">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalGetIpNetTable">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalGetIpNetTable2">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalGetMulticastIpAddressEntry">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalGetMulticastIpAddressTable">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalGetRtcSlotInformation">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalGetTcp6Table2">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalGetTcp6TableWithOwnerModule">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalGetTcp6TableWithOwnerPid">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalGetTcpTable">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalGetTcpTable2">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalGetTcpTableEx">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalGetTcpTableWithOwnerModule">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalGetTcpTableWithOwnerPid">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalGetTunnelPhysicalAdapter">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalGetUdp6TableWithOwnerModule">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalGetUdp6TableWithOwnerPid">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalGetUdpTable">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalGetUdpTableEx">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalGetUdpTableWithOwnerModule">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalGetUdpTableWithOwnerPid">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalGetUnicastIpAddressEntry">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalGetUnicastIpAddressTable">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalIcmpCreateFileEx">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalSetIfEntry">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalSetIpForwardEntry">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalSetIpForwardEntry2">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalSetIpInterfaceEntry">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalSetIpNetEntry">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalSetIpNetEntry2">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalSetIpStats">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalSetTcpEntry">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalSetTeredoPort">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InternalSetUnicastIpAddressEntry">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="IpReleaseAddress">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="IpRenewAddress">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="LookupPersistentTcpPortReservation">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="LookupPersistentUdpPortReservation">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NTPTimeToNTFileTime">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NTTimeToNTPTime">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NhGetGuidFromInterfaceName">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NhGetInterfaceDescriptionFromGuid">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NhGetInterfaceNameFromDeviceGuid">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NhGetInterfaceNameFromGuid">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NhpAllocateAndGetInterfaceInfoFromStack">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NotifyAddrChange">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NotifyCompartmentChange">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NotifyIpInterfaceChange">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NotifyRouteChange">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NotifyRouteChange2">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NotifyStableUnicastIpAddressTable">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NotifyTeredoPortChange">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NotifyUnicastIpAddressChange">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OpenCompartment">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ParseNetworkString">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PfAddFiltersToInterface">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PfAddGlobalFilterToInterface">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PfBindInterfaceToIPAddress">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PfBindInterfaceToIndex">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PfCreateInterface">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PfDeleteInterface">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PfDeleteLog">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PfGetInterfaceStatistics">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PfMakeLog">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PfRebindFilters">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PfRemoveFilterHandles">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PfRemoveFiltersFromInterface">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PfRemoveGlobalFilterFromInterface">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PfSetLogBuffer">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PfTestPacket">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PfUnBindInterface">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ResolveIpNetEntry2">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ResolveNeighbor">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RestoreMediaSense">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SendARP">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SetAdapterIpAddress">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SetCurrentThreadCompartmentId">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SetCurrentThreadCompartmentScope">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SetIfEntry">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SetIpForwardEntry">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SetIpForwardEntry2">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SetIpInterfaceEntry">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SetIpNetEntry">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SetIpNetEntry2">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SetIpStatistics">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SetIpStatisticsEx">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SetIpTTL">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SetJobCompartmentId">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SetNetworkInformation">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SetPerTcp6ConnectionEStats">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SetPerTcp6ConnectionStats">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SetPerTcpConnectionEStats">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SetPerTcpConnectionStats">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SetSessionCompartmentId">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SetTcpEntry">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SetUnicastIpAddressEntry">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="UnenableRouter">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="if_indextoname">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="if_nametoindex">
+      <Definitions>
+        <DynamicLibrary Name="IPHLPAPI.DLL" />
+      </Definitions>
+    </Symbol>
+  </ExportedSymbols>
+</StaticLibrary>

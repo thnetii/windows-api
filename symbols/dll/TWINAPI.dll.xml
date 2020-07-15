@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="TWINAPI.dll">
+  <OriginalPath>C:\Windows\system32\TWINAPI.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="DllCanUnloadNow" />
+    <Symbol Name="DllGetActivationFactory" />
+    <Symbol Name="DllGetClassObject" />
+    <Symbol Name="GetMetroMode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="[NONAME]" />
+  </ExportedSymbols>
+</DynamicLibrary>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="certpoleng.dll">
+  <OriginalPath>C:\Windows\system32\certpoleng.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="IntPstGetCertificate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\CertPolEng.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IntPstGetNameIdentifierForCertificate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\CertPolEng.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IntPstGetTrustAnchors">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\CertPolEng.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IntPstMapCertificateToProvider">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\CertPolEng.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IntPstMapUserCredsToProvider">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\CertPolEng.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IntPstValidate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\CertPolEng.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PstAcquirePrivateKey">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\CertPolEng.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PstGetCertificateChain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\CertPolEng.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PstGetCertificates">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\CertPolEng.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PstGetTrustAnchors">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\CertPolEng.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PstGetTrustAnchorsEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\CertPolEng.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PstGetUserNameForCertificate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\CertPolEng.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PstMapCertificate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\CertPolEng.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PstValidate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\CertPolEng.Lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

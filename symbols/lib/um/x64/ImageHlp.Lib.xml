@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\ImageHlp.Lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\ImageHlp.Lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="imagehlp.dll" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="*))" />
+    <Symbol Name="BindImage">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="BindImageEx">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CheckSumMappedFile">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="EnumerateLoadedModules">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="EnumerateLoadedModules64">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="EnumerateLoadedModulesEx">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="EnumerateLoadedModulesExW">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="EnumerateLoadedModulesW64">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="FindDebugInfoFile">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="FindDebugInfoFileEx">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="FindExecutableImage">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="FindExecutableImageEx">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="FindFileInPath">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="FindFileInSearchPath">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetImageConfigInformation">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetImageUnusedHeaderBytes">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetSymLoadError">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetTimestampForLoadedLibrary">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ImageAddCertificate">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ImageDirectoryEntryToData">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ImageDirectoryEntryToDataEx">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ImageEnumerateCertificates">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ImageGetCertificateData">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ImageGetCertificateHeader">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ImageGetDigestStream">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ImageLoad">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ImageNtHeader">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ImageRemoveCertificate">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ImageRvaToSection">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ImageRvaToVa">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ImageUnload">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ImagehlpApiVersion">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ImagehlpApiVersionEx">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MakeSureDirectoryPathExists">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MapAndLoad">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MapFileAndCheckSumA">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MapFileAndCheckSumW">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ReBaseImage">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ReBaseImage64">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RemoveInvalidModuleList">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ReportSymbolLoadSummary">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SearchTreeForFile">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SetCheckUserInterruptShared">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SetImageConfigInformation">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SetSymLoadError">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="StackWalk">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="StackWalk64">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="StackWalkEx">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymAddrIncludeInlineTrace">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymCleanup">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymCompareInlineTrace">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymEnumSym">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymEnumSymbols">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymEnumSymbolsEx">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymEnumSymbolsExW">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymEnumSymbolsForAddr">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymEnumTypes">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymEnumTypesByName">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymEnumTypesByNameW">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymEnumTypesW">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymEnumerateModules">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymEnumerateModules64">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymEnumerateSymbols">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymEnumerateSymbols64">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymEnumerateSymbolsW">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymEnumerateSymbolsW64">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymFindFileInPath">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymFindFileInPathW">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymFromAddr">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymFromInlineContext">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymFromInlineContextW">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymFromName">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymFunctionTableAccess">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymFunctionTableAccess64">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymFunctionTableAccess64AccessRoutines">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymGetExtendedOption">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymGetLineFromAddr">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymGetLineFromAddr64">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymGetLineFromInlineContext">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymGetLineFromInlineContextW">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymGetLineFromName">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymGetLineFromName64">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymGetLineNext">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymGetLineNext64">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymGetLinePrev">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymGetLinePrev64">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymGetModuleBase">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymGetModuleBase64">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymGetModuleInfo">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymGetModuleInfo64">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymGetModuleInfoW">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymGetModuleInfoW64">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymGetOptions">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymGetSearchPath">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymGetSourceFileChecksumW">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymGetSourceFileFromTokenW">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymGetSourceFileTokenW">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymGetSourceVarFromTokenW">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymGetSymFromAddr">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymGetSymFromAddr64">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymGetSymFromName">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymGetSymFromName64">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymGetSymNext">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymGetSymNext64">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymGetSymPrev">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymGetSymPrev64">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymGetSymbolFile">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymGetSymbolFileW">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymGetTypeFromName">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymGetTypeFromNameW">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymGetTypeInfo">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymGetTypeInfoEx">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymInitialize">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymLoadModule">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymLoadModule64">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymMatchFileName">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymMatchFileNameW">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymMatchString">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymMatchStringA">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymMatchStringW">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymQueryInlineTrace">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymRegisterCallback">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymRegisterCallback64">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymRegisterFunctionEntryCallback">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymRegisterFunctionEntryCallback64">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymSetContext">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymSetExtendedOption">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymSetOptions">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymSetScopeFromAddr">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymSetScopeFromIndex">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymSetScopeFromInlineContext">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymSetSearchPath">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymSrvGetFileIndexString">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymSrvGetFileIndexStringW">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymSrvGetFileIndexes">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymSrvGetFileIndexesW">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymUnDName">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymUnDName64">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymUnloadModule">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SymUnloadModule64">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="TouchFileTimes">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="UnDecorateSymbolName">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="UnMapAndLoad">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="UpdateDebugInfoFile">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="UpdateDebugInfoFileEx">
+      <Definitions>
+        <DynamicLibrary Name="imagehlp.dll" />
+      </Definitions>
+    </Symbol>
+  </ExportedSymbols>
+</StaticLibrary>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\GPEdit.lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\GPEdit.lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="GPEDIT.DLL" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="BrowseForGPO">
+      <Definitions>
+        <DynamicLibrary Name="GPEDIT.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CreateGPOLink">
+      <Definitions>
+        <DynamicLibrary Name="GPEDIT.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CreateRSOPQuery" />
+    <Symbol Name="DeleteAllGPOLinks">
+      <Definitions>
+        <DynamicLibrary Name="GPEDIT.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DeleteGPOLink">
+      <Definitions>
+        <DynamicLibrary Name="GPEDIT.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ExportRSoPData">
+      <Definitions>
+        <DynamicLibrary Name="GPEDIT.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="FreeRSOPQuery" />
+    <Symbol Name="FreeRSOPQueryResults" />
+    <Symbol Name="ImportRSoPData">
+      <Definitions>
+        <DynamicLibrary Name="GPEDIT.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RunRSOPQuery" />
+  </ExportedSymbols>
+</StaticLibrary>

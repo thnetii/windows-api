@@ -1,0 +1,1003 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="WINSPOOL.DRV">
+  <OriginalPath>C:\Windows\system32\WINSPOOL.DRV</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="ADVANCEDSETUPDIALOG" />
+    <Symbol Name="AbortPrinter">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AddFormA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AddFormW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AddJobA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AddJobW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AddMonitorA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AddMonitorW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AddPortA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AddPortExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AddPortExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AddPortW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AddPrintProcessorA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AddPrintProcessorW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AddPrintProvidorA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AddPrintProvidorW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AddPrinterA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AddPrinterConnection2A">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AddPrinterConnection2W">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AddPrinterConnectionA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AddPrinterConnectionW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AddPrinterDriverA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AddPrinterDriverExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AddPrinterDriverExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AddPrinterDriverW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AddPrinterW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AdvancedDocumentPropertiesA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AdvancedDocumentPropertiesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClosePrinter">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CloseSpoolFileHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CommitSpoolData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ConfigurePortA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ConfigurePortW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ConnectToPrinterDlg">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ConvertAnsiDevModeToUnicodeDevmode" />
+    <Symbol Name="ConvertUnicodeDevModeToAnsiDevmode" />
+    <Symbol Name="CorePrinterDriverInstalledA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CorePrinterDriverInstalledW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreatePrintAsyncNotifyChannel">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreatePrinterIC">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DEVICECAPABILITIES">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DEVICEMODE" />
+    <Symbol Name="DeleteFormA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeleteFormW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeleteJobNamedProperty">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeleteMonitorA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeleteMonitorW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeletePortA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeletePortW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeletePrintProcessorA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeletePrintProcessorW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeletePrintProvidorA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeletePrintProvidorW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeletePrinter">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeletePrinterConnectionA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeletePrinterConnectionW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeletePrinterDataA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeletePrinterDataExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeletePrinterDataExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeletePrinterDataW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeletePrinterDriverA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeletePrinterDriverExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeletePrinterDriverExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeletePrinterDriverPackageA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeletePrinterDriverPackageW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeletePrinterDriverW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeletePrinterIC">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeletePrinterKeyA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeletePrinterKeyW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DevQueryPrint">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DevQueryPrintEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeviceCapabilitiesA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeviceCapabilitiesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DevicePropertySheets">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DocumentEvent" />
+    <Symbol Name="DocumentPropertiesA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DocumentPropertiesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DocumentPropertySheets">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EXTDEVICEMODE">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EndDocPrinter">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EndPagePrinter">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumFormsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumFormsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumJobNamedProperties">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumJobsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumJobsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumMonitorsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumMonitorsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumPortsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumPortsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumPrintProcessorDatatypesA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumPrintProcessorDatatypesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumPrintProcessorsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumPrintProcessorsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumPrinterDataA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumPrinterDataExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumPrinterDataExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumPrinterDataW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumPrinterDriversA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumPrinterDriversW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumPrinterKeyA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumPrinterKeyW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumPrintersA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumPrintersW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FindClosePrinterChangeNotification">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FindFirstPrinterChangeNotification">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FindNextPrinterChangeNotification">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FlushPrinter">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FreePrintNamedPropertyArray">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FreePrintPropertyValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FreePrinterNotifyInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetCorePrinterDriversA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetCorePrinterDriversW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetDefaultPrinterA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetDefaultPrinterW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetFormA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetFormW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetJobA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetJobNamedPropertyValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetJobW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetPrintExecutionData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetPrintOutputInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetPrintProcessorDirectoryA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetPrintProcessorDirectoryW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetPrinterA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetPrinterDataA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetPrinterDataExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetPrinterDataExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetPrinterDataW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetPrinterDriver2A">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetPrinterDriver2W">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetPrinterDriverA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetPrinterDriverDirectoryA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetPrinterDriverDirectoryW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetPrinterDriverPackagePathA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetPrinterDriverPackagePathW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetPrinterDriverW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetPrinterW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetSpoolFileHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InstallPrinterDriverFromPackageA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InstallPrinterDriverFromPackageW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IsValidDevmodeA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IsValidDevmodeW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OpenPrinter2A">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OpenPrinter2W">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OpenPrinterA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OpenPrinterW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PerfClose" />
+    <Symbol Name="PerfCollect" />
+    <Symbol Name="PerfOpen" />
+    <Symbol Name="PlayGdiScriptOnPrinterIC">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PrinterMessageBoxA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PrinterMessageBoxW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PrinterProperties">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="QueryColorProfile" />
+    <Symbol Name="QueryRemoteFonts" />
+    <Symbol Name="QuerySpoolMode" />
+    <Symbol Name="ReadPrinter">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RegisterForPrintAsyncNotifications">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ReportJobProcessingProgress">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResetPrinterA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResetPrinterW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ScheduleJob">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SeekPrinter">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetDefaultPrinterA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetDefaultPrinterW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetFormA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetFormW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetJobA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetJobNamedProperty">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetJobW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetPortA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetPortW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetPrinterA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetPrinterDataA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetPrinterDataExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetPrinterDataExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetPrinterDataW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetPrinterW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetSplwow64AppCompat" />
+    <Symbol Name="SplDriverUnloadComplete">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SpoolerDevQueryPrintW" />
+    <Symbol Name="SpoolerPrinterEvent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StartDocDlgA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StartDocDlgW" />
+    <Symbol Name="StartDocPrinterA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StartDocPrinterW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StartPagePrinter">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UnRegisterForPrintAsyncNotifications">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UploadPrinterDriverPackageA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UploadPrinterDriverPackageW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WaitForPrinterChange">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WritePrinter">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="XcvDataW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WinSpool.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="[NONAME]" />
+  </ExportedSymbols>
+</DynamicLibrary>

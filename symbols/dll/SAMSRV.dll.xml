@@ -1,0 +1,1641 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="SAMSRV.dll">
+  <OriginalPath>C:\Windows\system32\SAMSRV.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="RtlDeleteElementGenericTable2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtlInitializeGenericTable2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtlInsertElementGenericTable2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtlLookupElementGenericTable2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SAM_MIDL_user_allocate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SAM_MIDL_user_free">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamDsExtAlloc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamDsExtFree">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIAccountRestrictions">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIAddDSNameToAlias">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIChangePasswordForeignUser">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIClaimIsValid">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIConnect">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIConvertSecurityAttributesToClaimsBlob">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamICopyCurrentDomainAccountSettings">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamICreateKrbTgt">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIDecodeClaimsBlob">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIDecodeClaimsBlobIntoClaimsSet">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIDecodeClaimsBlobToAuthz">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIDemote">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIDemoteUndo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIDoFSMORoleChange">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIFreeAuthzSecurityAttributesInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIFreeClaimsBlob">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIFreeDecodedClaimsSet">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIFreeLookupNamesInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIFreeLookupSidsInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIFreeOidList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIFreeRealmList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIFreeSecurityAttributesInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIFreeSidAndAttributesList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIFreeSidArray">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIFreeVoid">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIFree_SAMPR_DISPLAY_INFO_BUFFER">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIFree_SAMPR_DOMAIN_INFO_BUFFER">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIFree_SAMPR_ENUMERATION_BUFFER">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIFree_SAMPR_GET_GROUPS_BUFFER">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIFree_SAMPR_RETURNED_USTRING_ARRAY">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIFree_SAMPR_ULONG_ARRAY">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIFree_SAMPR_USER_INFO_BUFFER">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIFree_UserInternal6Information">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIGetAliasMembership">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIGetConfigurationOidList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIGetDefaultAdministratorName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIGetResourceGroupMembershipsTransitive">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIGetResourceGroupMembershipsTransitive2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIGetUserLogonInformation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIGetUserLogonInformation2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIGetUserLogonInformation3">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIGetUserLogonInformationEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIHandleObjectUpdate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIImpersonateNullSession">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIInitialize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIIsDownlevelDcUpgrade">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIIsExtendedSidMode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIIsRebootAfterPromotion">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIIsSetupInProgress">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamILoadDownlevelDatabase">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamILookupNamesBySid">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamILookupNamesInDomain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamILookupSidsByName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamILoopbackConnect">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIMixedDomain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIMixedDomain2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamINT4UpgradeInProgress">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamINetLogonPing">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamINotifyRoleChange">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIOpenUserByAlternateId">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIPromote">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIPromoteUndo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIPurgeSecrets">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIQueryAccountSecretsCachability">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIQueryCapabilities">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIQueryRealmList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIQueryServerRole">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIQueryServerRole2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIRandomizeStoredPassword">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIRandomizeStoredPasswordWithoutExpirationCheck">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIRemoveDSNameFromAlias">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIReplaceDownlevelDatabase">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIReplicateAccountData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIResetBadPwdCountOnPdc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIRetrieveMultiplePrimaryCredentials">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIRetrieveNGCKeyCredential">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIRetrievePrimaryCredentials">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIRevertNullSession">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIScorePassword">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamISetAuditingInformation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamISetMachinePassword">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamISetPasswordForeignUser2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamISetPasswordForeignUser3">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamISetPasswordInfoOnDc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIStorePrimaryCredentials">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamITransformClaims">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIUPNFromUserHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIUnLoadDownlevelDatabase">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIUninitialize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIUpdateLogonStatistics">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIValidateAccountName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamIValidateNewAccountName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampAccountControlToFlags">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampAcquireReadLock">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampAcquireSamLockExclusive">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampAcquireWriteLock">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampAddAccountToGroupMembers">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampAddAccountsAndApplyMemberships">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampAddDeltaTime">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampAddNonLocalDomainRelativeMemberships">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampAddSameDomainMemberToGlobalOrUniversalGroup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampAddUserToGroup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampAlInvalidateAliasInformation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampAllocateNextCurrentRidFromIndex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampApplyDomainUpdatesForAllDomains">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampAssignPrimaryGroup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampAuditAccountEnableDisableChange">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampAuditAccountNameChange">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampAuditAnyEvent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampAuditGroupTypeChange">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampAuditSidHistory">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampBuildDsNameFromSid">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampBuildSamProtection">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampCalculateLmAndNtOwfPasswords">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampChangeAliasAccountName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampChangeGroupAccountName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampChangeUserAccountName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampCheckForAccountLockout">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampCheckGroupTypeBits">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampCheckSidType">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampCommitBufferedWrites">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampCompareDisplayStrings">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampComputePasswordExpired">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampConnect">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampConvertUiListToApiList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampCopyUserSupplementalCredentialsForDCPromo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampCreateAccountContext2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampCreateAliasInDomain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampCreateContextEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampCreateDefaultUPN">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampCreateFullSid">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampCreateGroupInDomain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampCreateUserInDomain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampCurrentThreadOwnsLock">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampDeReferenceContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampDecrementActiveThreads">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampDecryptCredentialData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampDeleteContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampDeleteDsDirsToDeleteKey">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampDeleteKeyForPostBootPromote">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampDeltaChangeNotify">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampDsChangePasswordUser">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampDsConvertReadAttrBlock">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampDsGetPrimaryDomainStart">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampDsInitializeSingleDomain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampDsIsRunning">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampDsMakeAttrBlock">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampDsSetBuiltinDomainPolicy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampDsSetDomainPolicy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampDsSetPasswordUser">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampDsUpdateContextAttributes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampDuplicateGroupInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampDuplicateMachineInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampDuplicateOemGroupInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampDuplicateOemUserInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampDuplicateUnicodeString">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampDuplicateUserInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampEncryptCredentialData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampExamineSid">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampExtendDefinedDomains">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampFlagsToAccountControl">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampFreeGroupInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampFreeMachineInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampFreeOemGroupInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampFreeOemUserInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampFreeUnicodeString">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampFreeUserInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampGenerateRandomPassword">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampGetAccessAttribute">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampGetAccountDomainInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampGetBehaviorVersion">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampGetCurrentOwnerAndPrimaryGroup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampGetDisableOutboundRSO">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampGetDisableRSOOnPDCForward">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampGetDisableResetBadPwdCountForward">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampGetDisableSingleObjectRepl">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampGetDnsDomainNameFromIndex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampGetDomainContextFromIndex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampGetDomainObjectFromAccountContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampGetDomainObjectFromIndex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampGetDomainServerRoleFromIndex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampGetDomainSidFromAccountContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampGetDomainSidFromIndex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampGetDomainSidListForSam">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampGetDomainUpgradeTasks">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampGetDownLevelDomainControllersPresent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampGetExtendedAttribute">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampGetExternalNameFromIndex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampGetFixedAttributes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampGetHasNeverTime">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampGetIgnoreGCFailures">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampGetLogLevel">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampGetNT4UpgradeInProgress">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampGetNewAccountSecurityNt4">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampGetNextUnmodifiedRidFromIndex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampGetNoGcLogonEnforceKerberosIpCheck">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampGetNoGcLogonEnforceNTLMCheck">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampGetObjectSD">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampGetObjectTypeNameFromIndex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampGetPasswordMustChangeWithUF_UAC">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampGetReverseMembershipTransitive">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampGetSamSubsystemName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampGetSerialNumberDomain2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampGetServerObjectName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampGetSidArrayAttribute">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampGetSidAttribute">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampGetSuccessAccountAuditingEnabled">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampGetUlongArrayAttribute">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampGetUnicodeStringAttribute">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampGetUserAccountControlComputed">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampGetUserAccountSettings">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampGetWillNeverTime">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampImpersonateClient">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampIncreaseBadPwdCountLoopback">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampIncrementActiveThreads">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampIncrementNetlogonChangeLogSerialNumber">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampInvalidateDomainCache">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampIsAccountBuiltIn">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampIsAuditingEnabled">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampIsBuiltinDomain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampIsDomainHosted">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampIsServiceRunning">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampIsSetupInProgress">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampLogPrint">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampLookupContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampMarkPerAttributeInvalidFromWhichFields">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampNeedUserAccountSettingsDuringQuery">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampNetLogonNotificationRequired">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampNotifyAuditChange">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampNotifyReplicatedInChange">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampPasswordChangeNotify">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampPasswordChangeNotifyWorker">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampPositionOfHighestBit">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampQueryCapabilities">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampQueryInformationUserInternal">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampQueryUserSupplementalCredentialsRegistry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampReadExtendedAttributes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampRecordSystemSchemaVerisonInRegistry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampReferenceContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampRegObjToDsObj">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampReleaseReadLock">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampReleaseSamLockExclusive">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampReleaseWriteLock">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampRemoveAccountFromGroupMembers">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampRemoveSameDomainMemberFromGlobalOrUniversalGroup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampRemoveUserFromGroup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampRenameKrbtgtAccount">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampReplaceUserLogonHours">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampReplaceUserV1aFixed">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampRetrieveGroupV1Fixed">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampRetrieveMultipleCredentials">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampRetrieveUserPasswords">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampRetrieveUserV1aFixed">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampRevertToSelf">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampRtlWellKnownPrivilegeCheck">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampSetAccessAttribute">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampSetAdminPassword">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampSetAttributeAccess">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampSetComputerObjectDsName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampSetDSRMPasswordWorker">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampSetExtendedAttributeAccess">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampSetFixedAttributes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampSetGlobalDsSids">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampSetPassword">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampSetPasswordInfoOnPdcByHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampSetPasswordInfoOnPdcByIndex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampSetSerialNumberDomain2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampSetTransactionDomain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampSetTransactionWithinDomain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampSetUnicodeStringAttribute">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampSetUserAccountControl">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampSplitSid">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampStoreObjectAttributes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampStringFromGuid">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampTraceEvent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampUpdateAccountDisabledFlag">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampUpdateComputedUserAccountControlBits">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampUpdateMixedModeAndFindDomain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampUpdatePerformanceCounters">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampUpgradeUserParmsActual">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampUsingDsData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampValidateDomainCacheCallback">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampValidateDomainControllerCreation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampValidatePwdSettingAttempt">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampValidateRegAttributes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampWriteEventLog">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SampWriteGroupType">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamrAddMemberToAlias">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamrAddMemberToGroup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamrCloseHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamrCreateUser2InDomain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamrCreateUserInDomain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamrDeleteAlias">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamrDeleteGroup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamrDeleteUser">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamrEnumerateUsersInDomain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamrEnumerateUsersInDomain2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamrGetAliasMembership">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamrGetGroupsForUser">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamrLookupIdsInDomain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamrLookupNamesInDomain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamrLookupNamesInDomain2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamrOpenAlias">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamrOpenDomain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamrOpenGroup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamrOpenUser">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamrQueryDisplayInformation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamrQueryInformationDomain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamrQueryInformationUser">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamrQueryInformationUser2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamrQuerySecurityObject">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamrRemoveMemberFromAlias">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamrRemoveMemberFromGroup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamrRidToSid">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamrSetInformationAlias">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamrSetInformationGroup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamrSetInformationUser">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamrSetSecurityObject">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SamrValidatePassword">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\samsrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

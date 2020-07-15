@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="BASESRV.dll">
+  <OriginalPath>C:\Windows\system32\BASESRV.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="BaseGetProcessCrtlRoutine">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\basesrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BaseSetProcessCreateNotify">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\basesrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BaseSrvNlsLogon">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\basesrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BaseSrvNlsUpdateRegistryCache">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\basesrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BaseSrvRegisterSxS">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\basesrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ServerDllInitialization">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\basesrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

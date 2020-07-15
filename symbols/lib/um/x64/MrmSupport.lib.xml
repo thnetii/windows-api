@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\MrmSupport.lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\MrmSupport.lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="MrmSupport.dll" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="CreateResourceIndexer" />
+    <Symbol Name="DestroyIndexedResults" />
+    <Symbol Name="DestroyResourceIndexer" />
+    <Symbol Name="IndexFilePath" />
+    <Symbol Name="MrmCreateConfig" />
+    <Symbol Name="MrmCreateConfigInMemory" />
+    <Symbol Name="MrmCreateResourceFile" />
+    <Symbol Name="MrmCreateResourceFileInMemory" />
+    <Symbol Name="MrmCreateResourceIndexer" />
+    <Symbol Name="MrmCreateResourceIndexerFromPreviousPriData" />
+    <Symbol Name="MrmCreateResourceIndexerFromPreviousPriFile" />
+    <Symbol Name="MrmCreateResourceIndexerFromPreviousSchemaData" />
+    <Symbol Name="MrmCreateResourceIndexerFromPreviousSchemaFile" />
+    <Symbol Name="MrmDestroyIndexerAndMessages" />
+    <Symbol Name="MrmDumpPriDataInMemory" />
+    <Symbol Name="MrmDumpPriFile" />
+    <Symbol Name="MrmDumpPriFileInMemory" />
+    <Symbol Name="MrmFreeMemory" />
+    <Symbol Name="MrmIndexEmbeddedData" />
+    <Symbol Name="MrmIndexFile" />
+    <Symbol Name="MrmIndexFileAutoQualifiers" />
+    <Symbol Name="MrmIndexResourceContainerAutoQualifiers" />
+    <Symbol Name="MrmIndexString" />
+    <Symbol Name="MrmPeekResourceIndexerMessages" />
+  </ExportedSymbols>
+</StaticLibrary>

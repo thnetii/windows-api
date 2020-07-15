@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="wevtapi.dll">
+  <OriginalPath>C:\Windows\system32\wevtapi.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="EvtArchiveExportedLog">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\wevtapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EvtCancel">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\wevtapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EvtClearLog">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\wevtapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EvtClose">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\wevtapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EvtCreateBookmark">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\wevtapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EvtCreateRenderContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\wevtapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EvtExportLog">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\wevtapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EvtFormatMessage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\wevtapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EvtGetChannelConfigProperty">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\wevtapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EvtGetEventInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\wevtapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EvtGetEventMetadataProperty">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\wevtapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EvtGetExtendedStatus">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\wevtapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EvtGetLogInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\wevtapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EvtGetObjectArrayProperty">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\wevtapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EvtGetObjectArraySize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\wevtapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EvtGetPublisherMetadataProperty">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\wevtapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EvtGetQueryInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\wevtapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EvtIntAssertConfig">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\wevtapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EvtIntCreateBinXMLFromCustomXML">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\wevtapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EvtIntCreateLocalLogfile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\wevtapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EvtIntGetClassicLogDisplayName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\wevtapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EvtIntRenderResourceEventTemplate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\wevtapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EvtIntReportAuthzEventAndSourceAsync">
+      <ForwardSymbol>ntdll.EvtIntReportAuthzEventAndSourceAsync</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\wevtapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EvtIntReportEventAndSourceAsync">
+      <ForwardSymbol>ntdll.EvtIntReportEventAndSourceAsync</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\wevtapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EvtIntRetractConfig">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\wevtapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EvtIntSysprepCleanup" />
+    <Symbol Name="EvtIntWriteXmlEventToLocalLogfile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\wevtapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EvtNext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\wevtapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EvtNextChannelPath">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\wevtapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EvtNextEventMetadata">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\wevtapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EvtNextPublisherId">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\wevtapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EvtOpenChannelConfig">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\wevtapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EvtOpenChannelEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\wevtapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EvtOpenEventMetadataEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\wevtapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EvtOpenLog">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\wevtapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EvtOpenPublisherEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\wevtapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EvtOpenPublisherMetadata">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\wevtapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EvtOpenSession">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\wevtapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EvtQuery">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\wevtapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EvtRender">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\wevtapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EvtSaveChannelConfig">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\wevtapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EvtSeek">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\wevtapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EvtSetChannelConfigProperty">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\wevtapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EvtSubscribe">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\wevtapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EvtUpdateBookmark">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\wevtapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

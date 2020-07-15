@@ -1,0 +1,1465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="WININET.dll">
+  <OriginalPath>C:\Windows\system32\WININET.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="AppCacheCheckManifest">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AppCacheCloseHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AppCacheCreateAndCommitFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AppCacheDeleteGroup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AppCacheDeleteIEGroup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AppCacheDuplicateHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AppCacheFinalize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AppCacheFreeDownloadList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AppCacheFreeGroupList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AppCacheFreeIESpace">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AppCacheFreeSpace">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AppCacheGetDownloadList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AppCacheGetFallbackUrl">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AppCacheGetGroupList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AppCacheGetIEGroupList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AppCacheGetInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AppCacheGetManifestUrl">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AppCacheLookup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CommitUrlCacheEntryA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CommitUrlCacheEntryBinaryBlob">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CommitUrlCacheEntryW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateMD5SSOHash">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateUrlCacheContainerA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateUrlCacheContainerW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateUrlCacheEntryA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateUrlCacheEntryExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateUrlCacheEntryW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateUrlCacheGroup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeleteIE3Cache">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeleteUrlCacheContainerA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeleteUrlCacheContainerW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeleteUrlCacheEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeleteUrlCacheEntryA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeleteUrlCacheEntryW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeleteUrlCacheGroup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeleteWpadCacheForNetworks">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DetectAutoProxyUrl">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DispatchAPICall" />
+    <Symbol Name="DllCanUnloadNow" />
+    <Symbol Name="DllGetClassObject" />
+    <Symbol Name="DllInstall" />
+    <Symbol Name="DllRegisterServer" />
+    <Symbol Name="DllUnregisterServer" />
+    <Symbol Name="FindCloseUrlCache">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FindFirstUrlCacheContainerA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FindFirstUrlCacheContainerW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FindFirstUrlCacheEntryA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FindFirstUrlCacheEntryExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FindFirstUrlCacheEntryExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FindFirstUrlCacheEntryW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FindFirstUrlCacheGroup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FindNextUrlCacheContainerA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FindNextUrlCacheContainerW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FindNextUrlCacheEntryA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FindNextUrlCacheEntryExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FindNextUrlCacheEntryExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FindNextUrlCacheEntryW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FindNextUrlCacheGroup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ForceNexusLookup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ForceNexusLookupExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FreeUrlCacheSpaceA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FreeUrlCacheSpaceW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FtpCommandA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FtpCommandW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FtpCreateDirectoryA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FtpCreateDirectoryW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FtpDeleteFileA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FtpDeleteFileW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FtpFindFirstFileA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FtpFindFirstFileW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FtpGetCurrentDirectoryA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FtpGetCurrentDirectoryW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FtpGetFileA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FtpGetFileEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FtpGetFileSize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FtpGetFileW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FtpOpenFileA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FtpOpenFileW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FtpPutFileA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FtpPutFileEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FtpPutFileW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FtpRemoveDirectoryA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FtpRemoveDirectoryW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FtpRenameFileA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FtpRenameFileW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FtpSetCurrentDirectoryA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FtpSetCurrentDirectoryW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetProxyDllInfo" />
+    <Symbol Name="GetUrlCacheConfigInfoA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetUrlCacheConfigInfoW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetUrlCacheEntryBinaryBlob">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetUrlCacheEntryInfoA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetUrlCacheEntryInfoExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetUrlCacheEntryInfoExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetUrlCacheEntryInfoW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetUrlCacheGroupAttributeA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetUrlCacheGroupAttributeW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetUrlCacheHeaderData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GopherCreateLocatorA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GopherCreateLocatorW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GopherFindFirstFileA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GopherFindFirstFileW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GopherGetAttributeA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GopherGetAttributeW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GopherGetLocatorTypeA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GopherGetLocatorTypeW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GopherOpenFileA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GopherOpenFileW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpAddRequestHeadersA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpAddRequestHeadersW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpCheckDavCompliance">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpCloseDependencyHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpDuplicateDependencyHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpEndRequestA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpEndRequestW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpGetServerCredentials">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpGetTunnelSocket">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpIndicatePageLoadComplete">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpIsHostHstsEnabled">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpOpenDependencyHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpOpenRequestA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpOpenRequestW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpPushClose">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpPushEnable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpPushWait">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpQueryInfoA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpQueryInfoW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpSendRequestA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpSendRequestExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpSendRequestExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpSendRequestW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpWebSocketClose">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpWebSocketCompleteUpgrade">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpWebSocketQueryCloseStatus">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpWebSocketReceive">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpWebSocketSend">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HttpWebSocketShutdown">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IncrementUrlCacheHeaderData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetAlgIdToStringA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetAlgIdToStringW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetAttemptConnect">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetAutodial">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetAutodialCallback">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetAutodialHangup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetCanonicalizeUrlA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetCanonicalizeUrlW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetCheckConnectionA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetCheckConnectionW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetClearAllPerSiteCookieDecisions">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetCloseHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetCombineUrlA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetCombineUrlW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetConfirmZoneCrossing">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetConfirmZoneCrossingA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetConfirmZoneCrossingW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetConnectA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetConnectW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetConvertUrlFromWireToWideChar">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetCrackUrlA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetCrackUrlW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetCreateUrlA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetCreateUrlW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetDial">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetDialA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetDialW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetEnumPerSiteCookieDecisionA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetEnumPerSiteCookieDecisionW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetErrorDlg">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetFindNextFileA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetFindNextFileW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetFortezzaCommand">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetFreeCookies">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetFreeProxyInfoList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetGetCertByURL">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetGetCertByURLA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetGetConnectedState">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetGetConnectedStateEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetGetConnectedStateExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetGetConnectedStateExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetGetCookieA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetGetCookieEx2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetGetCookieExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetGetCookieExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetGetCookieW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetGetLastResponseInfoA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetGetLastResponseInfoW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetGetPerSiteCookieDecisionA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetGetPerSiteCookieDecisionW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetGetProxyForUrl">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetGetSecurityInfoByURL">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetGetSecurityInfoByURLA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetGetSecurityInfoByURLW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetGoOnline">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetGoOnlineA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetGoOnlineW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetHangUp">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetInitializeAutoProxyDll">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetLockRequestFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetOpenA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetOpenUrlA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetOpenUrlW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetOpenW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetQueryDataAvailable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetQueryFortezzaStatus">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetQueryOptionA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetQueryOptionW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetReadFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetReadFileExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetReadFileExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetSecurityProtocolToStringA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetSecurityProtocolToStringW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetSetCookieA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetSetCookieEx2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetSetCookieExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetSetCookieExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetSetCookieW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetSetDialState">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetSetDialStateA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetSetDialStateW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetSetFilePointer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetSetOptionA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetSetOptionExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetSetOptionExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetSetOptionW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetSetPerSiteCookieDecisionA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetSetPerSiteCookieDecisionW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetSetStatusCallback">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetSetStatusCallbackA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetSetStatusCallbackW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetShowSecurityInfoByURL">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetShowSecurityInfoByURLA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetShowSecurityInfoByURLW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetTimeFromSystemTime">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetTimeFromSystemTimeA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetTimeFromSystemTimeW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetTimeToSystemTime">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetTimeToSystemTimeA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetTimeToSystemTimeW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetUnlockRequestFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetWriteFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetWriteFileExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternetWriteFileExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IsHostInProxyBypassList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IsUrlCacheEntryExpiredA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IsUrlCacheEntryExpiredW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LoadUrlCacheContent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ParseX509EncodedCertificateForListBoxEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PrivacyGetZonePreferenceW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PrivacySetZonePreferenceW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ReadUrlCacheEntryStream">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ReadUrlCacheEntryStreamEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RegisterUrlCacheNotification">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResumeSuspendedDownload">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RetrieveUrlCacheEntryFileA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RetrieveUrlCacheEntryFileW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RetrieveUrlCacheEntryStreamA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RetrieveUrlCacheEntryStreamW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RunOnceUrlCache">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetUrlCacheConfigInfoA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetUrlCacheConfigInfoW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetUrlCacheEntryGroup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetUrlCacheEntryGroupA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetUrlCacheEntryGroupW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetUrlCacheEntryInfoA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetUrlCacheEntryInfoW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetUrlCacheGroupAttributeA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetUrlCacheGroupAttributeW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetUrlCacheHeaderData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ShowCertificate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ShowClientAuthCerts">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ShowSecurityInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ShowX509EncodedCertificate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UnlockUrlCacheEntryFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UnlockUrlCacheEntryFileA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UnlockUrlCacheEntryFileW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UnlockUrlCacheEntryStream">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UpdateUrlCacheContentPath">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UrlCacheCheckEntriesExist">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UrlCacheCloseEntryHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UrlCacheContainerSetEntryMaximumAge">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UrlCacheCreateContainer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UrlCacheFindFirstEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UrlCacheFindNextEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UrlCacheFreeEntryInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UrlCacheFreeGlobalSpace">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UrlCacheGetContentPaths">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UrlCacheGetEntryInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UrlCacheGetGlobalCacheSize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UrlCacheGetGlobalLimit">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UrlCacheReadEntryStream">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UrlCacheReloadSettings">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UrlCacheRetrieveEntryFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UrlCacheRetrieveEntryStream">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UrlCacheServer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UrlCacheSetGlobalLimit">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UrlCacheUpdateEntryExtraData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UrlZonesDetach">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinInet.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="_GetFileExtensionFromUrl" />
+    <Symbol Name="[NONAME]" />
+  </ExportedSymbols>
+</DynamicLibrary>

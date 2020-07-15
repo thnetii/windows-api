@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="WinHvPlatform.dll">
+  <OriginalPath>C:\Windows\system32\WinHvPlatform.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="WHvCancelRunVirtualProcessor">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinHvPlatform.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WHvCreatePartition">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinHvPlatform.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WHvCreateVirtualProcessor">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinHvPlatform.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WHvDeletePartition">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinHvPlatform.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WHvDeleteVirtualProcessor">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinHvPlatform.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WHvGetCapability">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinHvPlatform.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WHvGetPartitionProperty">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinHvPlatform.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WHvGetVirtualProcessorRegisters">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinHvPlatform.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WHvMapGpaRange">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinHvPlatform.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WHvRunVirtualProcessor">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinHvPlatform.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WHvSetPartitionProperty">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinHvPlatform.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WHvSetVirtualProcessorRegisters">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinHvPlatform.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WHvSetupPartition">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinHvPlatform.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WHvTranslateGva">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinHvPlatform.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WHvUnmapGpaRange">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinHvPlatform.lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

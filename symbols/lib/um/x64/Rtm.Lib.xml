@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\Rtm.Lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\Rtm.Lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="rtm.dll" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="BestMatchInTable">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CheckTable">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CreateTable">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DeleteFromTable">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DestroyTable">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DumpTable">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="EnumOverTable">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InsertIntoTable">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MgmAddGroupMembershipEntry">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MgmDeInitialize">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MgmDeRegisterMProtocol">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MgmDeleteGroupMembershipEntry">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MgmGetFirstMfe">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MgmGetFirstMfeStats">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MgmGetMfe">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MgmGetMfeStats">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MgmGetNextMfe">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MgmGetNextMfeStats">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MgmGetProtocolOnInterface">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MgmGroupEnumerationEnd">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MgmGroupEnumerationGetNext">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MgmGroupEnumerationStart">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MgmInitialize">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MgmRegisterMProtocol">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MgmReleaseInterfaceOwnership">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MgmTakeInterfaceOwnership">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NextMatchInTable">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmAddNextHop">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmAddRoute">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmAddRouteToDest">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmBlockConvertRoutesToStatic">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmBlockDeleteRoutes">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmBlockMethods">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmBlockSetRouteEnable">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmCleanupInstances">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmCloseEnumerationHandle">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmConvertIpv6AddressAndLengthToNetAddress">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmConvertNetAddressToIpv6AddressAndLength">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmCreateBestRouteEnum">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmCreateDestEnum">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmCreateEnumerationHandle">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmCreateNextHopEnum">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmCreateRouteEnum">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmCreateRouteList">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmCreateRouteListEnum">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmDeleteEnumHandle">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmDeleteNextHop">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmDeleteRoute">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmDeleteRouteList">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmDeleteRouteTable">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmDeleteRouteToDest">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmDequeueRouteChangeMessage">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmDereferenceHandles">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmDeregisterClient">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmDeregisterEntity">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmDeregisterFromChangeNotification">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmEnumerateGetNextRoute">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmFindNextHop">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmGetAddressFamilyInfo">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmGetChangeStatus">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmGetChangedDests">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmGetDestInfo">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmGetEntityInfo">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmGetEntityMethods">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmGetEnumBestRoutes">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmGetEnumDests">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmGetEnumNextHops">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmGetEnumRoutes">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmGetExactMatchDestination">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmGetExactMatchRoute">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmGetFirstRoute">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmGetInstanceInfo">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmGetInstances">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmGetLessSpecificDestination">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmGetListEnumRoutes">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmGetMostSpecificDestination">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmGetNetworkCount">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmGetNextHopInfo">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmGetNextHopPointer">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmGetNextRoute">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmGetOpaqueInformationPointer">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmGetRegisteredEntities">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmGetRouteAge">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmGetRouteInfo">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmGetRoutePointer">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmHoldDestination">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmIgnoreChangedDests">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmInsertInRouteList">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmInvokeMethod">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmIsBestRoute">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmIsMarkedForChangeNotification">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmIsRoute">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmLockDestination">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmLockNextHop">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmLockRoute">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmLookupIPDestination">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmMarkDestForChangeNotification">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmReadAddressFamilyConfig">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmReadInstanceConfig">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmReferenceHandles">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmRegisterClient">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmRegisterEntity">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmRegisterForChangeNotification">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmReleaseChangedDests">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmReleaseDestInfo">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmReleaseDests">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmReleaseEntities">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmReleaseEntityInfo">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmReleaseNextHopInfo">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmReleaseNextHops">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmReleaseRouteInfo">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmReleaseRoutes">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmUpdateAndUnlockRoute">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmWriteAddressFamilyConfig">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtmWriteInstanceConfig">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SearchInTable">
+      <Definitions>
+        <DynamicLibrary Name="rtm.dll" />
+      </Definitions>
+    </Symbol>
+  </ExportedSymbols>
+</StaticLibrary>

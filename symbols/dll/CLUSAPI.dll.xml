@@ -1,0 +1,1657 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="CLUSAPI.dll">
+  <OriginalPath>C:\Windows\system32\CLUSAPI.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="AddClusterGroupDependency">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AddClusterGroupSetDependency">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AddClusterGroupToGroupSetDependency">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AddClusterNode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AddClusterResourceDependency">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AddClusterResourceNode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AddClusterStorageNode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AddCrossClusterGroupSetDependency">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AddResourceToClusterSharedVolumes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AddResourceToClusterSharedVolumesEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BackupClusterDatabase">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CCHlpAddNodeUpdateCluster" />
+    <Symbol Name="CCHlpConfigureNode" />
+    <Symbol Name="CCHlpCreateClusterNameCOIfNotExists" />
+    <Symbol Name="CCHlpCreateClusterNameInAD" />
+    <Symbol Name="CCHlpGetClusterServiceSecret" />
+    <Symbol Name="CCHlpGetDNSHostLabel" />
+    <Symbol Name="CCHlpRestoreClusterVirtualObjectToInitialState" />
+    <Symbol Name="CanResourceBeDependent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CancelClusterGroupOperation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ChangeClusterResourceGroup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CloseCluster">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CloseClusterGroup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CloseClusterGroupSet">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CloseClusterNetInterface">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CloseClusterNetwork">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CloseClusterNode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CloseClusterNotifyPort">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CloseClusterResource">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CluFreeFaultDomainInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CluFreeGuidArrayPtr">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CluFreeStr">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CluGetDriveInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CluGetFaultDomainObject">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CluGetFaultDomainObjects">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CluRemoveFaultDomainObject">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterAddGroupToGroupSet">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterCaptureLiveDump">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterChangeVMSettings">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterCloseEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterCloseEnumEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterControl">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterCreateClusterStorageEnclosure">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterCreateFaultDomain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterCreateFaultDomainFromXML">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterCreateVMReservation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterEnumEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterFreeMemory">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterFreeMrrResponse">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterFreeVMReservation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterGetClusterStorageEnclosureObject">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterGetClusterStorageEnclosureObjects">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterGetDriveInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterGetEnumCount">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterGetEnumCountEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterGetFaultDomainObject">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterGetFaultDomainObjects">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterGetFaultDomainState">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterGetFaultDomainXML">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterGetPlacementScore">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterGroupCloseEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterGroupCloseEnumEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterGroupControl">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterGroupEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterGroupEnumEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterGroupGetEnumCount">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterGroupGetEnumCountEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterGroupOpenEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterGroupOpenEnumEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterGroupSetCloseEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterGroupSetControl">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterGroupSetEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterGroupSetGetEnumCount">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterGroupSetOpenEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterNetInterfaceCloseEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterNetInterfaceControl">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterNetInterfaceEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterNetInterfaceOpenEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterNetworkCloseEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterNetworkControl">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterNetworkEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterNetworkGetEnumCount">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterNetworkHealthFreeInterfaceConnections">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterNetworkHealthFreeNodeConnections">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterNetworkHealthGetInterfaceConnections">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterNetworkHealthGetNodeConnections">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterNetworkOpenEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterNodeCloseEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterNodeCloseEnumEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterNodeControl">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterNodeEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterNodeEnumEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterNodeGetEnumCount">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterNodeGetEnumCountEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterNodeOpenEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterNodeOpenEnumEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterNodeReplacement">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterOpenEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterOpenEnumEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterRegBatchAddCommand">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterRegBatchCloseNotification">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterRegBatchReadCommand">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterRegCloseBatch">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterRegCloseBatchEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterRegCloseBatchNotifyPort">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterRegCloseKey">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterRegCloseReadBatch">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterRegCloseReadBatchEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterRegCloseReadBatchReply">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterRegCreateBatch">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterRegCreateBatchNotifyPort">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterRegCreateKey">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterRegCreateKeyForceSync">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterRegCreateReadBatch">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterRegDeleteKey">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterRegDeleteKeyForceSync">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterRegDeleteValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterRegDeleteValueForceSync">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterRegEnumKey">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterRegEnumValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterRegGetBatchNotification">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterRegGetKeySecurity">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterRegOpenKey">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterRegQueryAllValues">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterRegQueryInfoKey">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterRegQueryValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterRegReadBatchAddCommand">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterRegReadBatchReplyNextCommand">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterRegSetKeySecurity">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterRegSetValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterRegSetValueForceSync">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterRegSyncDatabase">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterRemoveClusterStorageEnclosure">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterRemoveFaultDomain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterRemoveGroupFromGroupSet">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterResourceCloseEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterResourceCloseEnumEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterResourceControl">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterResourceControlAsUser">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterResourceEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterResourceEnumEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterResourceGetEnumCount">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterResourceGetEnumCountEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterResourceOpenEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterResourceOpenEnumEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterResourceTypeCloseEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterResourceTypeControl">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterResourceTypeControlAsUser">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterResourceTypeEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterResourceTypeGetEnumCount">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterResourceTypeOpenEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterSendReceiveMrr">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterSendReceiveMrrAsUser">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterSetAccountAccess">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterSetClusterStorageEnclosure">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterSetFaultDomain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterSetNodeFaultDomain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterSharedVolumeClearBackupState">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterSharedVolumeSetSnapshotState">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterStmFindDisk">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterUpgradeFunctionalLevel">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterUpgradeFunctionalLevelEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateCluster">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateClusterAvailabilitySet">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateClusterGroup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateClusterGroupEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateClusterGroupSet">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateClusterManagementPoint">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateClusterNameAccount">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateClusterNotifyPort">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateClusterNotifyPortV2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateClusterResource">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateClusterResourceType">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateClusterResourceWithId">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeleteClusterGroup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeleteClusterGroupSet">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeleteClusterResource">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeleteClusterResourceType">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DestroyCluster">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DestroyClusterGroup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DetermineCNOResTypeFromCluster">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DetermineCNOResTypeFromNodelist">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DetermineClusterCloudTypeFromCluster">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DetermineClusterCloudTypeFromNodelist">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EvictClusterNode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EvictClusterNodeEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FailClusterResource">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FreeClusFaultDomainInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FreeClusFaultDomainInfoArray">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FreeClusFaultDomainXML">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FreeClusStorageEnclosureInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FreeClusStorageEnclosureInfoArray">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetClusterFromGroup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetClusterFromNetInterface">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetClusterFromNetwork">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetClusterFromNode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetClusterFromResource">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetClusterGroupKey">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetClusterGroupState">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetClusterInformation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetClusterKey">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetClusterNetInterface">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetClusterNetInterfaceKey">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetClusterNetInterfaceState">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetClusterNetworkId">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetClusterNetworkKey">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetClusterNetworkState">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetClusterNodeId">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetClusterNodeKey">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetClusterNodeState">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetClusterNotify">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetClusterNotifyV2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetClusterQuorumResource">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetClusterResourceDependencyExpression">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetClusterResourceKey">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetClusterResourceNetworkName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetClusterResourceState">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetClusterResourceTypeKey">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetClusterSharedVolumeNameForFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetNodeClusterState">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetNotifyEventHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitializeClusFaultDomainInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitializeClusFaultDomainInfoArray">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitializeClusStorageEnclosureInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitializeClusStorageEnclosureInfoArray">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IsFileOnClusterSharedVolume">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MoveClusterGroup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MoveClusterGroupEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OfflineClusterGroup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OfflineClusterGroupEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OfflineClusterResource">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OfflineClusterResourceEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OnlineClusterGroup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OnlineClusterGroupEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OnlineClusterResource">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OnlineClusterResourceEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OpenCluster">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OpenClusterEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OpenClusterEx2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OpenClusterGroup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OpenClusterGroupEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OpenClusterGroupSet">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OpenClusterNetInterface">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OpenClusterNetInterfaceEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OpenClusterNetwork">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OpenClusterNetworkEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OpenClusterNode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OpenClusterNodeById">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OpenClusterNodeEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OpenClusterResource">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OpenClusterResourceEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PauseClusterNode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PauseClusterNodeEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RegisterClusterNotify">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RegisterClusterNotifyV2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RegisterClusterResourceTypeNotifyV2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RemoveClusterGroupDependency">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RemoveClusterGroupSetDependency">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RemoveClusterGroupToGroupSetDependency">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RemoveClusterNameAccount">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RemoveClusterResourceDependency">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RemoveClusterResourceNode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RemoveClusterStorageNode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RemoveCrossClusterGroupSetDependency">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RemoveResourceFromClusterSharedVolumes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RestartClusterResource">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RestoreClusterDatabase">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResumeClusterNode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResumeClusterNodeEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetClusterGroupName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetClusterGroupNodeList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetClusterGroupSetDependencyExpression">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetClusterName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetClusterNetworkName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetClusterNetworkPriorityOrder">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetClusterQuorumResource">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetClusterResourceDependencyExpression">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetClusterResourceName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetClusterServiceAccountPassword">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetGroupDependencyExpression">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ClusApi.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

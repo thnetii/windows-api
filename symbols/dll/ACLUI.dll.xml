@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="ACLUI.dll">
+  <OriginalPath>C:\Windows\system32\ACLUI.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="CreateSecurityPage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\AclUI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EditConditionalAceClaims">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\AclUI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EditResourceCondition">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\AclUI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EditSecurity">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\AclUI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EditSecurityAdvanced">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\AclUI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetLocalizedStringForCondition" />
+    <Symbol Name="GetTlsIndexForClaimDictionary" />
+    <Symbol Name="IID_ISecurityInformation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\AclUI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

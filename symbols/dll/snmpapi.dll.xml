@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="snmpapi.dll">
+  <OriginalPath>C:\Windows\system32\snmpapi.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="SnmpSvcAddrIsIpx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\SnmpAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpSvcAddrToSocket">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\SnmpAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpSvcGetEnterpriseOID">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\SnmpAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpSvcGetUptime">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\SnmpAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpSvcGetUptimeFromTime">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\SnmpAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpSvcInitUptime">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\SnmpAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpSvcSetLogLevel">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\SnmpAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpSvcSetLogType">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\SnmpAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpTfxClose">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\SnmpAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpTfxOpen">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\SnmpAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpTfxQuery">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\SnmpAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpUtilAnsiToUnicode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\SnmpAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpUtilAsnAnyCpy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\SnmpAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpUtilAsnAnyFree">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\SnmpAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpUtilDbgPrint">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\SnmpAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpUtilIdsToA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\SnmpAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpUtilMemAlloc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\SnmpAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpUtilMemFree">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\SnmpAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpUtilMemReAlloc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\SnmpAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpUtilOctetsCmp">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\SnmpAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpUtilOctetsCpy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\SnmpAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpUtilOctetsFree">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\SnmpAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpUtilOctetsNCmp">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\SnmpAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpUtilOidAppend">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\SnmpAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpUtilOidCmp">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\SnmpAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpUtilOidCpy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\SnmpAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpUtilOidFree">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\SnmpAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpUtilOidNCmp">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\SnmpAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpUtilOidToA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\SnmpAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpUtilPrintAsnAny">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\SnmpAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpUtilPrintOid">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\SnmpAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpUtilUTF8ToUnicode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\SnmpAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpUtilUnicodeToAnsi">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\SnmpAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpUtilUnicodeToUTF8">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\SnmpAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpUtilVarBindCpy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\SnmpAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpUtilVarBindFree">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\SnmpAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpUtilVarBindListCpy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\SnmpAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpUtilVarBindListFree">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\SnmpAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

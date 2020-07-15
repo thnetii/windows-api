@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="CRYPTUI.dll">
+  <OriginalPath>C:\Windows\system32\CRYPTUI.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="ACUIProviderInvokeUI">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptui.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AddChainToStore" />
+    <Symbol Name="CertDllLogMismatchPinRules" />
+    <Symbol Name="CertDllProtectedRootMessageBox" />
+    <Symbol Name="CertSelectionGetSerializedBlob">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptui.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CommonInit">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptui.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CompareCertificate" />
+    <Symbol Name="CryptDllProtectPrompt">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptui.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptUIDlgAddPolicyServer" />
+    <Symbol Name="CryptUIDlgAddPolicyServerWithPriority" />
+    <Symbol Name="CryptUIDlgCertMgr">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptui.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptUIDlgFreeCAContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptui.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptUIDlgFreePolicyServerContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptui.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptUIDlgPropertyPolicy" />
+    <Symbol Name="CryptUIDlgSelectCA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptui.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptUIDlgSelectCertificateA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptui.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptUIDlgSelectCertificateFromStore">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptui.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptUIDlgSelectCertificateW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptui.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptUIDlgSelectPolicyServer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptui.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptUIDlgSelectStoreA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptui.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptUIDlgSelectStoreW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptui.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptUIDlgViewCRLA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptui.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptUIDlgViewCRLW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptui.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptUIDlgViewCTLA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptui.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptUIDlgViewCTLW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptui.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptUIDlgViewCertificateA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptui.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptUIDlgViewCertificatePropertiesA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptui.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptUIDlgViewCertificatePropertiesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptui.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptUIDlgViewCertificateW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptui.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptUIDlgViewContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptui.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptUIDlgViewSignerInfoA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptui.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptUIDlgViewSignerInfoW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptui.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptUIFreeCertificatePropertiesPagesA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptui.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptUIFreeCertificatePropertiesPagesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptui.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptUIFreeViewSignaturesPagesA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptui.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptUIFreeViewSignaturesPagesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptui.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptUIGetCertificatePropertiesPagesA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptui.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptUIGetCertificatePropertiesPagesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptui.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptUIGetViewSignaturesPagesA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptui.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptUIGetViewSignaturesPagesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptui.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptUIStartCertMgr">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptui.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptUIViewExpiringCerts">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptui.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptUIWizBuildCTL">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptui.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptUIWizDigitalSign">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptui.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptUIWizExport">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptui.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptUIWizFreeDigitalSignContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptui.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptUIWizImport">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptui.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CryptUIWizImportInternal">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptui.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DisplayHtmlHelp" />
+    <Symbol Name="DllRegisterServer" />
+    <Symbol Name="DllUnregisterServer" />
+    <Symbol Name="FormatDateStringAutoLayout" />
+    <Symbol Name="GetUnknownErrorString" />
+    <Symbol Name="InvokeHelpLink" />
+    <Symbol Name="IsWizardExtensionAvailable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptui.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MyFormatEnhancedKeyUsageString" />
+  </ExportedSymbols>
+</DynamicLibrary>

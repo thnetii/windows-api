@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="certcli.dll">
+  <OriginalPath>C:\Windows\system32\certcli.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="AddOrRemoveOCSPISAPIExtension">
+      <ForwardSymbol>CERTCA.#851</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CAAccessCheck">
+      <ForwardSymbol>CERTCA.CAAccessCheck</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CAAccessCheckEx">
+      <ForwardSymbol>CERTCA.CAAccessCheckEx</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CAAddCACertificateType">
+      <ForwardSymbol>CERTCA.CAAddCACertificateType</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CAAddCACertificateTypeEx">
+      <ForwardSymbol>CERTCA.CAAddCACertificateTypeEx</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CACertTypeAccessCheck">
+      <ForwardSymbol>CERTCA.CACertTypeAccessCheck</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CACertTypeAccessCheckEx">
+      <ForwardSymbol>CERTCA.CACertTypeAccessCheckEx</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CACertTypeAuthzAccessCheck">
+      <ForwardSymbol>CERTCA.CACertTypeAuthzAccessCheck</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CACertTypeGetSecurity">
+      <ForwardSymbol>CERTCA.CACertTypeGetSecurity</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CACertTypeQuery">
+      <ForwardSymbol>CERTCA.CACertTypeQuery</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CACertTypeRegisterQuery">
+      <ForwardSymbol>CERTCA.CACertTypeRegisterQuery</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CACertTypeSetSecurity">
+      <ForwardSymbol>CERTCA.CACertTypeSetSecurity</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CACertTypeUnregisterQuery">
+      <ForwardSymbol>CERTCA.CACertTypeUnregisterQuery</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CACloneCertType">
+      <ForwardSymbol>CERTCA.CACloneCertType</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CACloseCA">
+      <ForwardSymbol>CERTCA.CACloseCA</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CACloseCertType">
+      <ForwardSymbol>CERTCA.CACloseCertType</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CACountCAs">
+      <ForwardSymbol>CERTCA.CACountCAs</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CACountCertTypes">
+      <ForwardSymbol>CERTCA.CACountCertTypes</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CACreateAutoEnrollmentObjectEx">
+      <ForwardSymbol>CERTCA.CACreateAutoEnrollmentObjectEx</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CACreateCertType">
+      <ForwardSymbol>CERTCA.CACreateCertType</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CACreateLocalAutoEnrollmentObject">
+      <ForwardSymbol>CERTCA.CACreateLocalAutoEnrollmentObject</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CACreateNewCA">
+      <ForwardSymbol>CERTCA.CACreateNewCA</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CADCSetCertTypePropertyEx">
+      <ForwardSymbol>CERTCA.CADCSetCertTypePropertyEx</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CADeleteCA">
+      <ForwardSymbol>CERTCA.CADeleteCA</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CADeleteCAEx">
+      <ForwardSymbol>CERTCA.CADeleteCAEx</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CADeleteCertType">
+      <ForwardSymbol>CERTCA.CADeleteCertType</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CADeleteCertTypeEx">
+      <ForwardSymbol>CERTCA.CADeleteCertTypeEx</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CADeleteLocalAutoEnrollmentObject">
+      <ForwardSymbol>CERTCA.CADeleteLocalAutoEnrollmentObject</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CAEnumCertTypes">
+      <ForwardSymbol>CERTCA.CAEnumCertTypes</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CAEnumCertTypesEx">
+      <ForwardSymbol>CERTCA.CAEnumCertTypesEx</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CAEnumCertTypesForCA">
+      <ForwardSymbol>CERTCA.CAEnumCertTypesForCA</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CAEnumCertTypesForCAEx">
+      <ForwardSymbol>CERTCA.CAEnumCertTypesForCAEx</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CAEnumFirstCA">
+      <ForwardSymbol>CERTCA.CAEnumFirstCA</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CAEnumNextCA">
+      <ForwardSymbol>CERTCA.CAEnumNextCA</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CAEnumNextCertType">
+      <ForwardSymbol>CERTCA.CAEnumNextCertType</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CAFindByCertType">
+      <ForwardSymbol>CERTCA.CAFindByCertType</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CAFindByIssuerDN">
+      <ForwardSymbol>CERTCA.CAFindByIssuerDN</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CAFindByName">
+      <ForwardSymbol>CERTCA.CAFindByName</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CAFindCertTypeByName">
+      <ForwardSymbol>CERTCA.CAFindCertTypeByName</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CAFreeCAProperty">
+      <ForwardSymbol>CERTCA.CAFreeCAProperty</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CAFreeCertTypeExtensions">
+      <ForwardSymbol>CERTCA.CAFreeCertTypeExtensions</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CAFreeCertTypeProperty">
+      <ForwardSymbol>CERTCA.CAFreeCertTypeProperty</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CAGetAccessRights">
+      <ForwardSymbol>CERTCA.#843</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CAGetCACertificate">
+      <ForwardSymbol>CERTCA.CAGetCACertificate</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CAGetCAExpiration">
+      <ForwardSymbol>CERTCA.CAGetCAExpiration</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CAGetCAFlags">
+      <ForwardSymbol>CERTCA.CAGetCAFlags</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CAGetCAProperty">
+      <ForwardSymbol>CERTCA.CAGetCAProperty</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CAGetCASecurity">
+      <ForwardSymbol>CERTCA.CAGetCASecurity</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CAGetCertTypeAccessRights">
+      <ForwardSymbol>CERTCA.#845</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CAGetCertTypeExpiration">
+      <ForwardSymbol>CERTCA.CAGetCertTypeExpiration</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CAGetCertTypeExtensions">
+      <ForwardSymbol>CERTCA.CAGetCertTypeExtensions</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CAGetCertTypeExtensionsEx">
+      <ForwardSymbol>CERTCA.CAGetCertTypeExtensionsEx</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CAGetCertTypeFlags">
+      <ForwardSymbol>CERTCA.CAGetCertTypeFlags</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CAGetCertTypeFlagsEx">
+      <ForwardSymbol>CERTCA.CAGetCertTypeFlagsEx</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CAGetCertTypeKeySpec">
+      <ForwardSymbol>CERTCA.CAGetCertTypeKeySpec</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CAGetCertTypeProperty">
+      <ForwardSymbol>CERTCA.CAGetCertTypeProperty</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CAGetCertTypePropertyEx">
+      <ForwardSymbol>CERTCA.CAGetCertTypePropertyEx</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CAGetConfigStringFromUIPicker" />
+    <Symbol Name="CAGetDN">
+      <ForwardSymbol>CERTCA.CAGetDN</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CAInstallDefaultCertType">
+      <ForwardSymbol>CERTCA.CAInstallDefaultCertType</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CAInstallDefaultCertTypeEx">
+      <ForwardSymbol>CERTCA.CAInstallDefaultCertTypeEx</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CAIsCertTypeCurrent">
+      <ForwardSymbol>CERTCA.CAIsCertTypeCurrent</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CAIsCertTypeCurrentEx">
+      <ForwardSymbol>CERTCA.CAIsCertTypeCurrentEx</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CAIsCertTypeValid">
+      <ForwardSymbol>CERTCA.#846</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CAIsValid">
+      <ForwardSymbol>CERTCA.#844</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CAOIDAdd">
+      <ForwardSymbol>CERTCA.CAOIDAdd</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CAOIDAddEx">
+      <ForwardSymbol>CERTCA.CAOIDAddEx</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CAOIDCreateNew">
+      <ForwardSymbol>CERTCA.CAOIDCreateNew</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CAOIDCreateNewEx">
+      <ForwardSymbol>CERTCA.CAOIDCreateNewEx</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CAOIDDelete">
+      <ForwardSymbol>CERTCA.CAOIDDelete</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CAOIDDeleteEx">
+      <ForwardSymbol>CERTCA.CAOIDDeleteEx</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CAOIDFreeLdapURL">
+      <ForwardSymbol>CERTCA.CAOIDFreeLdapURL</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CAOIDFreeProperty">
+      <ForwardSymbol>CERTCA.CAOIDFreeProperty</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CAOIDGetLdapURL">
+      <ForwardSymbol>CERTCA.CAOIDGetLdapURL</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CAOIDGetProperty">
+      <ForwardSymbol>CERTCA.CAOIDGetProperty</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CAOIDGetPropertyEx">
+      <ForwardSymbol>CERTCA.CAOIDGetPropertyEx</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CAOIDSetProperty">
+      <ForwardSymbol>CERTCA.CAOIDSetProperty</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CAOIDSetPropertyEx">
+      <ForwardSymbol>CERTCA.CAOIDSetPropertyEx</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CARemoveCACertificateType">
+      <ForwardSymbol>CERTCA.CARemoveCACertificateType</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CARemoveCACertificateTypeEx">
+      <ForwardSymbol>CERTCA.CARemoveCACertificateTypeEx</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CASetCACertificate">
+      <ForwardSymbol>CERTCA.CASetCACertificate</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CASetCAExpiration">
+      <ForwardSymbol>CERTCA.CASetCAExpiration</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CASetCAFlags">
+      <ForwardSymbol>CERTCA.CASetCAFlags</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CASetCAProperty">
+      <ForwardSymbol>CERTCA.CASetCAProperty</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CASetCASecurity">
+      <ForwardSymbol>CERTCA.CASetCASecurity</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CASetCertTypeExpiration">
+      <ForwardSymbol>CERTCA.CASetCertTypeExpiration</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CASetCertTypeExtension">
+      <ForwardSymbol>CERTCA.CASetCertTypeExtension</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CASetCertTypeFlags">
+      <ForwardSymbol>CERTCA.CASetCertTypeFlags</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CASetCertTypeFlagsEx">
+      <ForwardSymbol>CERTCA.CASetCertTypeFlagsEx</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CASetCertTypeKeySpec">
+      <ForwardSymbol>CERTCA.CASetCertTypeKeySpec</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CASetCertTypeProperty">
+      <ForwardSymbol>CERTCA.CASetCertTypeProperty</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CASetCertTypePropertyEx">
+      <ForwardSymbol>CERTCA.CASetCertTypePropertyEx</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CAUpdateCA">
+      <ForwardSymbol>CERTCA.CAUpdateCA</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CAUpdateCAEx">
+      <ForwardSymbol>CERTCA.CAUpdateCAEx</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CAUpdateCertType">
+      <ForwardSymbol>CERTCA.CAUpdateCertType</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CAUpdateCertTypeEx">
+      <ForwardSymbol>CERTCA.CAUpdateCertTypeEx</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CSPrintAssert">
+      <ForwardSymbol>CERTCA.#701</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CSPrintError">
+      <ForwardSymbol>CERTCA.#702</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CSPrintErrorLineFile">
+      <ForwardSymbol>CERTCA.#839</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CSPrintErrorLineFile2">
+      <ForwardSymbol>CERTCA.#840</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CSPrintErrorLineFileData">
+      <ForwardSymbol>CERTCA.#841</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CSPrintErrorLineFileData2">
+      <ForwardSymbol>CERTCA.#842</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="CertcliGetDetailedCertcliVersionString">
+      <ForwardSymbol>CERTCA.#858</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="DbgIsSSActive">
+      <ForwardSymbol>CERTCA.#705</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="DbgLogStringInit">
+      <ForwardSymbol>CERTCA.#811</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="DbgLogStringInit2">
+      <ForwardSymbol>CERTCA.#847</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="DbgPrintf">
+      <ForwardSymbol>CERTCA.#703</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="DbgPrintfInit">
+      <ForwardSymbol>CERTCA.#704</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="DbgPrintfW">
+      <ForwardSymbol>CERTCA.#824</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="DecodeFileW">
+      <ForwardSymbol>CERTCA.#808</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="DllCanUnloadNow" />
+    <Symbol Name="DllGetClassObject" />
+    <Symbol Name="DllMain" />
+    <Symbol Name="DllRegisterServer" />
+    <Symbol Name="DllUnregisterServer" />
+    <Symbol Name="EnableASPInIIS">
+      <ForwardSymbol>CERTCA.#826</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="EnableISAPIExtension">
+      <ForwardSymbol>CERTCA.#828</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="EncodeToFileW">
+      <ForwardSymbol>CERTCA.#809</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="IsASPEnabledInIIS">
+      <ForwardSymbol>CERTCA.#825</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="IsASPEnabledInIIS_New">
+      <ForwardSymbol>CERTCA.#830</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="IsISAPIExtensionEnabled">
+      <ForwardSymbol>CERTCA.#827</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="RemoveISAPIExtension">
+      <ForwardSymbol>CERTCA.#848</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="RemoveVDir">
+      <ForwardSymbol>CERTCA.#849</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="SplitConfigString">
+      <ForwardSymbol>CERTCA.#850</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="WszToMultiByteInteger">
+      <ForwardSymbol>CERTCA.#813</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="WszToMultiByteIntegerBuf">
+      <ForwardSymbol>CERTCA.#812</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="caTranslateFileTimePeriodToPeriodUnits">
+      <ForwardSymbol>CERTCA.#820</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="myAddShare">
+      <ForwardSymbol>CERTCA.#810</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="myCAPropGetDisplayName">
+      <ForwardSymbol>CERTCA.#816</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="myCAPropInfoLookup">
+      <ForwardSymbol>CERTCA.#818</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="myCAPropInfoUnmarshal">
+      <ForwardSymbol>CERTCA.#817</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="myCryptBinaryToString">
+      <ForwardSymbol>CERTCA.#602</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="myCryptBinaryToStringA">
+      <ForwardSymbol>CERTCA.#604</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="myCryptStringToBinary">
+      <ForwardSymbol>CERTCA.#601</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="myCryptStringToBinaryA">
+      <ForwardSymbol>CERTCA.#603</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="myDoesDSExist@209">
+      <ForwardSymbol>CERTCA.#801</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="myEnablePrivilege">
+      <ForwardSymbol>CERTCA.#855</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="myFreeColumnDisplayNames">
+      <ForwardSymbol>CERTCA.#802</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="myGenerateGuidSerialNumber">
+      <ForwardSymbol>CERTCA.#836</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="myGenerateGuidString">
+      <ForwardSymbol>CERTCA.#835</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="myGetErrorMessageText">
+      <ForwardSymbol>CERTCA.#707</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="myGetErrorMessageText1">
+      <ForwardSymbol>CERTCA.#814</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="myGetErrorMessageTextEx">
+      <ForwardSymbol>CERTCA.#815</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="myGetHashAlgorithmOIDInfoFromSignatureAlgorithm">
+      <ForwardSymbol>CERTCA.#854</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="myGetSidFromDomain">
+      <ForwardSymbol>CERTCA.#829</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="myGetTargetMachineDomainDnsName">
+      <ForwardSymbol>CERTCA.#852</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="myHExceptionCode">
+      <ForwardSymbol>CERTCA.#805</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="myHExceptionCodePrint">
+      <ForwardSymbol>CERTCA.#823</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="myHGetLastError">
+      <ForwardSymbol>CERTCA.#838</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="myHResultToStringRaw_old">
+      <ForwardSymbol>CERTCA.#708</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="myHResultToString_old">
+      <ForwardSymbol>CERTCA.#706</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="myIsDelayLoadHResult">
+      <ForwardSymbol>CERTCA.#804</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="myJetHResult">
+      <ForwardSymbol>CERTCA.#806</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="myLogExceptionInit">
+      <ForwardSymbol>CERTCA.#822</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="myModifyVirtualRootsAndFileShares">
+      <ForwardSymbol>CERTCA.#807</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="myNetLogonUser">
+      <ForwardSymbol>CERTCA.#853</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="myOIDHashOIDToString">
+      <ForwardSymbol>CERTCA.#821</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="myRevertSanitizeName">
+      <ForwardSymbol>CERTCA.#834</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="myRobustLdapBind">
+      <ForwardSymbol>CERTCA.#803</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="myRobustLdapBindEx">
+      <ForwardSymbol>CERTCA.#819</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="mySanitizeName">
+      <ForwardSymbol>CERTCA.#831</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="mySanitizedNameToDSName">
+      <ForwardSymbol>CERTCA.#832</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="mySanitizedNameToShortName">
+      <ForwardSymbol>CERTCA.#833</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="mylstrcmpiL">
+      <ForwardSymbol>CERTCA.#837</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="[NONAME]" />
+  </ExportedSymbols>
+</DynamicLibrary>

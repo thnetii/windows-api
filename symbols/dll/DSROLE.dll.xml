@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="DSROLE.dll">
+  <OriginalPath>C:\Windows\system32\DSROLE.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="DsRoleFreeMemory">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsRoleGetPrimaryDomainInformation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

@@ -1,0 +1,1365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\DnsAPI.Lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\DnsAPI.Lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="DNSAPI.dll" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="AdaptiveTimeout_ClearInterfaceSpecificConfiguration">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="AdaptiveTimeout_ResetAdaptiveTimeout">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="AddRefQueryBlobEx">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="BreakRecordsIntoBlob">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Coalesce_UpdateNetVersion">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CombineRecordsInBlob">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DeRefQueryBlobEx">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DelaySortDAServerlist">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsAcquireContextHandle_A">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsAcquireContextHandle_W">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsAllocateRecord">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsApiAlloc">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsApiAllocZero">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsApiFree">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsApiHeapReset">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsApiRealloc">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsApiSetDebugGlobals">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsAsyncRegisterHostAddrs">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsAsyncRegisterInit">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsAsyncRegisterTerm">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsCancelQuery">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsConnectionDeletePolicyEntries">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsConnectionDeletePolicyEntriesPrivate">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsConnectionDeleteProxyInfo">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsConnectionFreeNameList">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsConnectionFreeProxyInfo">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsConnectionFreeProxyInfoEx">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsConnectionFreeProxyList">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsConnectionGetHandleForHostUrlPrivate">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsConnectionGetNameList">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsConnectionGetProxyInfo">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsConnectionGetProxyInfoForHostUrl">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsConnectionGetProxyList">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsConnectionSetPolicyEntries">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsConnectionSetPolicyEntriesPrivate">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsConnectionSetProxyInfo">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsConnectionUpdateIfIndexTable">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsCopyStringEx">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsCreateReverseNameStringForIpAddress">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsCreateStandardDnsNameCopy">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsCreateStringCopy">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsDeRegisterLocal">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsDhcpRegisterAddrs">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsDhcpRegisterHostAddrs">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsDhcpRegisterInit">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsDhcpRegisterTerm">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsDhcpRemoveRegistrations">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsDhcpSrvRegisterHostAddr">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsDhcpSrvRegisterHostAddrEx">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsDhcpSrvRegisterHostName">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsDhcpSrvRegisterHostNameEx">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsDhcpSrvRegisterInit">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsDhcpSrvRegisterInitEx">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsDhcpSrvRegisterInitialize">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsDhcpSrvRegisterTerm">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsDisableIdnEncoding">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsDowncaseDnsNameLabel">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsExtractRecordsFromMessage_UTF8">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsExtractRecordsFromMessage_W">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsFindAuthoritativeZone">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsFlushResolverCache">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsFlushResolverCacheEntry_A">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsFlushResolverCacheEntry_UTF8">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsFlushResolverCacheEntry_W">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsFree">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsFreeConfigStructure">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsFreePolicyConfig">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsFreeProxyName">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsGetApplicationIdentifier">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsGetBufferLengthForStringCopy">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsGetCacheDataTable">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsGetDnsServerList">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsGetDomainName">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsGetLastFailedUpdateInfo">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsGetPolicyTableInfo">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsGetPolicyTableInfoPrivate">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsGetPrimaryDomainName_A">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsGetProxyInfoPrivate">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsGetProxyInformation">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsGetQueryRetryTimeouts">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsGlobals">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsIpv6AddressToString">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsIpv6StringToAddress">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsIsAMailboxType">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsIsNSECType">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsIsStatusRcode">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsIsStringCountValidForTextType">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsLogEvent">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsMapRcodeToStatus">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsModifyRecordsInSet_A">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsModifyRecordsInSet_UTF8">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsModifyRecordsInSet_W">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsNameCompareEx_A">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsNameCompareEx_UTF8">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsNameCompareEx_W">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsNameCompare_A">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsNameCompare_UTF8">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsNameCompare_W">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsNameCopy">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsNameCopyAllocate">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsNetworkInfo_CreateFromFAZ">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsNetworkInformation_CreateFromFAZ">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsNotifyResolver">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsNotifyResolverClusterIp">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsNotifyResolverEx">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsQueryConfig">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsQueryConfigAllocEx">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsQueryConfigDword">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsQueryEx">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsQueryExA">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsQueryExUTF8">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsQueryExW">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsQuery_A">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsQuery_UTF8">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsQuery_W">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsRecordBuild_UTF8">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsRecordBuild_W">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsRecordCompare">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsRecordCopyEx">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsRecordListFree">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsRecordListUnmapV4MappedAAAAInPlace">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsRecordSetCompare">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsRecordSetCopyEx">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsRecordSetDetach">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsRecordStringForType">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsRecordStringForWritableType">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsRecordTypeForName">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsRegisterLocal">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsReleaseContextHandle">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsRemoveRegistrations">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsReplaceRecordSetA">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsReplaceRecordSetUTF8">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsReplaceRecordSetW">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsResetQueryRetryTimeouts">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsResolverOp">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsScreenLocalAddrsForRegistration">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsServiceBrowse">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsServiceBrowseCancel">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsServiceConstructInstance">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsServiceCopyInstance">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsServiceDeRegister">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsServiceFreeInstance">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsServiceRegister">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsServiceRegisterCancel">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsServiceResolve">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsServiceResolveCancel">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsSetConfigDword">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsSetConfigValue">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsSetQueryRetryTimeouts">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsStartMulticastQuery">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsStatusString">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsStopMulticastQuery">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsStringCopyAllocateEx">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsTraceServerConfig">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsUnicodeToUtf8">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsUpdate">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsUpdateMachinePresence">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsUpdateTest_A">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsUpdateTest_UTF8">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsUpdateTest_W">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsUtf8ToUnicode">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsValidateNameOrIp_TempW">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsValidateName_A">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsValidateName_UTF8">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsValidateName_W">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsValidateServerArray_A">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsValidateServerArray_W">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsValidateServerStatus">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsValidateServer_A">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsValidateServer_W">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsValidateUtf8Byte">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsWriteQuestionToBuffer_UTF8">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsWriteQuestionToBuffer_W">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DnsWriteReverseNameStringForIpAddress">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Dns_AddRecordsToMessage">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Dns_AllocateMsgBuf">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Dns_BuildPacket">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Dns_CacheServiceCleanup">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Dns_CacheServiceInit">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Dns_CacheServiceStopIssued">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Dns_CleanupWinsock">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Dns_CloseConnection">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Dns_CloseSocket">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Dns_CreateMulticastSocket">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Dns_CreateSocket">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Dns_CreateSocketEx">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Dns_ExtractRecordsFromMessage">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Dns_FindAuthoritativeZoneLib">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Dns_FreeMsgBuf">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Dns_GetRandomXid">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Dns_InitializeMsgBuf">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Dns_InitializeMsgRemoteSockaddr">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Dns_InitializeWinsock">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Dns_OpenTcpConnectionAndSend">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Dns_ParseMessage">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Dns_ParsePacketRecord">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Dns_PingAdapterServers">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Dns_ReadPacketName">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Dns_ReadPacketNameAllocate">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Dns_ReadRecordStructureFromPacket">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Dns_RecvTcp">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Dns_ResetNetworkInfo">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Dns_SendAndRecvUdp">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Dns_SendEx">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Dns_SetRecordDatalength">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Dns_SetRecordsSection">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Dns_SetRecordsTtl">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Dns_SkipPacketName">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Dns_SkipToRecord">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Dns_UpdateLib">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Dns_UpdateLibEx">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Dns_WriteDottedNameToPacket">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Dns_WriteQuestionToMessage">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Dns_WriteRecordStructureToPacketEx">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ExtraInfo_Init">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Faz_AreServerListsInSameNameSpace">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="FlushDnsPolicyUnreachableStatus">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetCurrentTimeInSeconds">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HostsFile_Close">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HostsFile_Open">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HostsFile_ReadLine">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="IpHelp_IsAddrOnLink">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Local_GetRecordsForLocalName">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Local_GetRecordsForLocalNameEx">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NetInfo_Build">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NetInfo_Clean">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NetInfo_Copy">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NetInfo_CopyNetworkIndex">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NetInfo_CreatePerNetworkNetinfo">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NetInfo_Free">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NetInfo_GetAdapterByAddress">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NetInfo_GetAdapterByInterfaceIndex">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NetInfo_GetAdapterByName">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NetInfo_IsAddrConfig">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NetInfo_IsForUpdate">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NetInfo_IsTcpipConfigChange">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NetInfo_ResetServerPriorities">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NetInfo_UpdateDnsInterfaceConfigChange">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NetInfo_UpdateNetworkProperties">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NetInfo_UpdateServerReachability">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="QueryDirectEx">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Query_Cancel">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Query_Main">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Reg_FreeUpdateInfo">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Reg_GetValueEx">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Reg_ReadGlobalsEx">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Reg_ReadUpdateInfo">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Security_ContextListTimeout">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Send_AndRecvUdpWithParam">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Send_MessagePrivate">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Send_MessagePrivateEx">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Send_OpenTcpConnectionAndSend">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Socket_CacheCleanup">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Socket_CacheInit">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Socket_CleanupWinsock">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Socket_ClearMessageSockets">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Socket_CloseEx">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Socket_CloseMessageSockets">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Socket_Create">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Socket_CreateMulticast">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Socket_InitWinsock">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Socket_JoinMulticast">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Socket_RecvFrom">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Socket_SetMulticastInterface">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Socket_SetMulticastLoopBack">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Socket_SetTtl">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Socket_TcpListen">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Trace_Reset">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Update_ReplaceAddressRecordsW">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Util_IsIp6Running">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Util_IsRunningOnXboxOne">
+      <Definitions>
+        <DynamicLibrary Name="DNSAPI.dll" />
+      </Definitions>
+    </Symbol>
+  </ExportedSymbols>
+</StaticLibrary>

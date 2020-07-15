@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="ACTIVEDS.dll">
+  <OriginalPath>C:\Windows\system32\ACTIVEDS.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="ADsBuildEnumerator">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ActiveDS.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ADsBuildVarArrayInt">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ActiveDS.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ADsBuildVarArrayStr">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ActiveDS.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ADsDecodeBinaryData">
+      <ForwardSymbol>ADSLDPC.ADsDecodeBinaryData</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ActiveDS.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ADsEncodeBinaryData">
+      <ForwardSymbol>ADSLDPC.ADsEncodeBinaryData</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ActiveDS.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ADsEnumerateNext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ActiveDS.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ADsFreeEnumerator">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ActiveDS.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ADsGetLastError">
+      <ForwardSymbol>ADSLDPC.ADsGetLastError</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ActiveDS.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ADsGetObject">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ActiveDS.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ADsOpenObject">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ActiveDS.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ADsSetLastError">
+      <ForwardSymbol>ADSLDPC.ADsSetLastError</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ActiveDS.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AdsFreeAdsValues">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ActiveDS.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AdsTypeToPropVariant">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ActiveDS.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AdsTypeToPropVariant2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ActiveDS.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AllocADsMem">
+      <ForwardSymbol>ADSLDPC.AllocADsMem</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ActiveDS.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AllocADsStr">
+      <ForwardSymbol>ADSLDPC.AllocADsStr</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ActiveDS.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BinarySDToSecurityDescriptor">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ActiveDS.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ConvertSecDescriptorToVariant">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ActiveDS.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ConvertSecurityDescriptorToSecDes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ActiveDS.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ConvertTrusteeToSid">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ActiveDS.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DllCanUnloadNow" />
+    <Symbol Name="DllGetClassObject" />
+    <Symbol Name="FreeADsMem">
+      <ForwardSymbol>ADSLDPC.FreeADsMem</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ActiveDS.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FreeADsStr">
+      <ForwardSymbol>ADSLDPC.FreeADsStr</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ActiveDS.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantToAdsType">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ActiveDS.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PropVariantToAdsType2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ActiveDS.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ReallocADsMem">
+      <ForwardSymbol>ADSLDPC.ReallocADsMem</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ActiveDS.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ReallocADsStr">
+      <ForwardSymbol>ADSLDPC.ReallocADsStr</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ActiveDS.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SecurityDescriptorToBinarySD">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ActiveDS.Lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

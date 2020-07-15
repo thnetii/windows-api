@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\efswrt.lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\efswrt.lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="efswrt.dll" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="CdplIsAppDataProtectionSupported" />
+    <Symbol Name="CdplProtectFileToLevel" />
+    <Symbol Name="CdplProtectSecretToLevel" />
+    <Symbol Name="CdplUnprotectSecret" />
+    <Symbol Name="DpmBufferFree" />
+    <Symbol Name="DpmProtectSecretToIdentity" />
+    <Symbol Name="DpmStreamClose" />
+    <Symbol Name="DpmStreamOpenToProtectToIdentity" />
+    <Symbol Name="DpmStreamOpenToUnprotect" />
+    <Symbol Name="DpmStreamUpdate" />
+    <Symbol Name="DpmUnprotectSecret" />
+    <Symbol Name="EnterpriseDataCopyProtection" />
+    <Symbol Name="EnterpriseDataGetStatus" />
+    <Symbol Name="EnterpriseDataProtect" />
+    <Symbol Name="EnterpriseDataRevoke" />
+    <Symbol Name="FreeIdentityProtectorList" />
+    <Symbol Name="GetEnterpriseActionForCopy" />
+    <Symbol Name="GetEnterpriseIdForNetworkPath" />
+    <Symbol Name="ProtectFileToEnterpriseIdentity" />
+    <Symbol Name="ProtectFileToIdentity" />
+    <Symbol Name="ProtectOrReprotectFileToIdentity" />
+    <Symbol Name="QueryIdentityProtectors" />
+    <Symbol Name="UnprotectFile" />
+  </ExportedSymbols>
+</StaticLibrary>

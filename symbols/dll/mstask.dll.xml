@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="mstask.dll">
+  <OriginalPath>C:\Windows\system32\mstask.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="ConvertAtJobsToTasks">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\MSTask.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DllCanUnloadNow" />
+    <Symbol Name="DllGetClassObject" />
+    <Symbol Name="GetNetScheduleAccountInformation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\MSTask.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetrJobAdd">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\MSTask.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetrJobDel">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\MSTask.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetrJobEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\MSTask.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetrJobGetInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\MSTask.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SAGetAccountInformation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\MSTask.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SAGetNSAccountInformation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\MSTask.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SASetAccountInformation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\MSTask.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SASetNSAccountInformation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\MSTask.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetNetScheduleAccountInformation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\MSTask.Lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

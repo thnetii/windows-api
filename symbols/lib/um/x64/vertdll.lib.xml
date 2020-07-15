@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\vertdll.lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\vertdll.lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="d:\os\obj\amd64fre\minkernel\crts\crtw32\misc\ntdlllib\objfre\amd64\gshandler.obj" />
+    <DynamicLibrary Name="d:\os\obj\amd64fre\minkernel\crts\crtw32\misc\ntdlllib\objfre\amd64\gshandlerseh.obj" />
+    <DynamicLibrary Name="vertdll.dll" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="memset">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="memmove">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="memcpy">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="memcmp">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WakeConditionVariable">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WakeByAddressSingle">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WakeByAddressAll">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WakeAllConditionVariable">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WaitOnAddress">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="VirtualQuery">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="VirtualProtect">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="VirtualFree">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="VirtualAlloc">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="TryEnterCriticalSection">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="TryAcquireSRWLockShared">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="TryAcquireSRWLockExclusive">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="TlsSetValue">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="TlsGetValue">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="TlsFree">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="TlsAlloc">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="TerminateProcess">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="TerminateEnclave">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SleepConditionVariableSRW">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SleepConditionVariableCS">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SetUnhandledExceptionFilter">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SetThreadStackGuarantee">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SetLastError">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SetCriticalSectionSpinCount">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtlVirtualUnwind">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtlUnwindEx">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtlUnhandledExceptionFilter">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtlRaiseStatus">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtlPcToFileHeader">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtlLookupFunctionEntry">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtlGetLastNtStatus">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RtlCaptureContext">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ReleaseSRWLockShared">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ReleaseSRWLockExclusive">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RaiseException">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="QueryDepthSList">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OutputDebugStringW">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NtTerminateProcess">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="LocateXStateFeature">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="LeaveCriticalSection">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="LdrResolveDelayLoadedAPI">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="LdrDisableThreadCalloutsForDll">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InterlockedPushListSListEx">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InterlockedPushListSList">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InterlockedPushEntrySList">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InterlockedPopEntrySList">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InterlockedFlushSList">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InitializeSynchronizationBarrier">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InitializeSRWLock">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InitializeSListHead">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InitializeCriticalSectionEx">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InitializeCriticalSectionAndSpinCount">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InitializeCriticalSection">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InitializeConditionVariable">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HeapUnlock">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HeapSize">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HeapReAlloc">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HeapLock">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HeapFree">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HeapDestroy">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HeapCreate">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HeapCompact">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HeapAlloc">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetXStateFeaturesMask">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetProcessHeaps">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetProcessHeap">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetProcAddress">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetModuleHandleExW">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetLastError">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetEnabledXStateFeatures">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetCurrentThreadId">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetCurrentThread">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetCurrentProcess">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="EnterSynchronizationBarrier">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="EnterCriticalSection">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="EnclaveVerifyAttestationReport">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="EnclaveUnsealData">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="EnclaveSealData">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="EnclaveGetEnclaveInformation">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="EnclaveGetAttestationReport">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DisableThreadLibraryCalls">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DeleteSynchronizationBarrier">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DeleteCriticalSection">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CallEnclave">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="AcquireSRWLockShared">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="AcquireSRWLockExclusive">
+      <Definitions>
+        <DynamicLibrary Name="vertdll.dll" />
+      </Definitions>
+    </Symbol>
+  </ExportedSymbols>
+</StaticLibrary>

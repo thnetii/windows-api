@@ -1,0 +1,810 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\Mprapi.Lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\Mprapi.Lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="MPRAPI.dll" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="CompressPhoneNumber">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminAddRoutingDomain">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminBufferFree">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminConnectionClearStats">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminConnectionEnum">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminConnectionEnumEx">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminConnectionGetInfo">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminConnectionGetInfoEx">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminConnectionRemoveQuarantine">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminDeleteRoutingDomain">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminDeregisterConnectionNotification">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminDeviceEnum">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminEstablishDomainRasServer">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminFreeRoutingDomainConfigEx">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminGetErrorString">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminGetPDCServer">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminGetProtocolStatistics">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminGetRoutingDomainId">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceAddIkev2Policy">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceClearStatisticsEx">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceConnect">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceCreate">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceCreateEx">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceDelete">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceDeviceGetInfo">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceDeviceSetInfo">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceDisconnect">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceEnum">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceEnumEx">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceGetCredentials">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceGetCredentialsEx">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceGetCustomInfoEx">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceGetHandle">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceGetInfo">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceGetInfoEx">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceGetStatisticsEx">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceQueryUpdateResult">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceSetCredentials">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceSetCredentialsEx">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceSetCustomInfoEx">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceSetInfo">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceSetInfoEx">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceTransportAdd">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceTransportGetInfo">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceTransportRemove">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceTransportSetInfo">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceUpdatePhonebookInfo">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminInterfaceUpdateRoutes">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminIsDomainRasServer">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminIsModernStackEnabled">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminIsMultiTenancyEnabled">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminIsServiceInitialized">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminIsServiceRunning">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminMIBBufferFree">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminMIBEntryCreate">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminMIBEntryDelete">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminMIBEntryGet">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminMIBEntryGetFirst">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminMIBEntryGetNext">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminMIBEntrySet">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminMIBServerConnect">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminMIBServerDisconnect">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminMarkServerOffline">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminPortClearStats">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminPortDisconnect">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminPortEnum">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminPortGetInfo">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminPortReset">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminProtocolAction">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminRegisterConnectionNotification">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminRoutingDomainConnectionEnumEx">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminRoutingDomainGetConfigEx">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminRoutingDomainSetConfigEx">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminRoutingDomainsEnumEx">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminSendUserMessage">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminServerConnect">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminServerDisconnect">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminServerGetCredentials">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminServerGetInfo">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminServerGetInfoEx">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminServerSetCredentials">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminServerSetInfo">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminServerSetInfoEx">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminTransportCreate">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminTransportGetInfo">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminTransportSetInfo">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminUpdateConnection">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminUpgradeUsers">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminUserClose">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminUserGetInfo">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminUserOpen">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminUserRead">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminUserReadProfFlags">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminUserServerConnect">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminUserServerDisconnect">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminUserSetInfo">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminUserWrite">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprAdminUserWriteProfFlags">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprConfigAddRoutingDomain">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprConfigBufferFree">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprConfigDeleteRoutingDomain">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprConfigFilterGetInfo">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprConfigFilterSetInfo">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprConfigFreeRoutingDomainConfigEx">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprConfigGetFriendlyName">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprConfigGetGuidName">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprConfigGetRoutingDomainId">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprConfigInterfaceCreate">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprConfigInterfaceCreateEx">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprConfigInterfaceDelete">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprConfigInterfaceEnum">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprConfigInterfaceEnumEx">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprConfigInterfaceGetCustomInfoEx">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprConfigInterfaceGetHandle">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprConfigInterfaceGetInfo">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprConfigInterfaceGetInfoEx">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprConfigInterfaceSetCustomInfoEx">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprConfigInterfaceSetInfo">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprConfigInterfaceSetInfoEx">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprConfigInterfaceTransportAdd">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprConfigInterfaceTransportEnum">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprConfigInterfaceTransportGetHandle">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprConfigInterfaceTransportGetInfo">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprConfigInterfaceTransportRemove">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprConfigInterfaceTransportSetInfo">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprConfigIsMultiTenancyEnabled">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprConfigRoutingDomainEnumEx">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprConfigRoutingDomainGetConfigEx">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprConfigRoutingDomainSetConfigEx">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprConfigServerBackup">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprConfigServerConnect">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprConfigServerDisconnect">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprConfigServerGetInfo">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprConfigServerGetInfoEx">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprConfigServerInstall">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprConfigServerRefresh">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprConfigServerRestore">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprConfigServerSetInfo">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprConfigServerSetInfoEx">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprConfigTransportCreate">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprConfigTransportDelete">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprConfigTransportEnum">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprConfigTransportGetHandle">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprConfigTransportGetInfo">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprConfigTransportSetInfo">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprDomainQueryRasServer">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprDomainRegisterRasServer">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprFreeInterfaceInfoEx">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprGetUsrParams">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprInfoBlockAdd">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprInfoBlockFind">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprInfoBlockQuerySize">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprInfoBlockRemove">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprInfoBlockSet">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprInfoCreate">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprInfoDelete">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprInfoDuplicate">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprInfoRemoveAll">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MprPortSetUsage">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RasPrivilegeAndCallBackNumber">
+      <Definitions>
+        <DynamicLibrary Name="MPRAPI.dll" />
+      </Definitions>
+    </Symbol>
+  </ExportedSymbols>
+</StaticLibrary>

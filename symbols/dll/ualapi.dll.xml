@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="ualapi.dll">
+  <OriginalPath>C:\Windows\system32\ualapi.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="UalInstrument">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ualapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UalRegisterProduct">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ualapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UalStart">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ualapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UalStop">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ualapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="[NONAME]" />
+  </ExportedSymbols>
+</DynamicLibrary>

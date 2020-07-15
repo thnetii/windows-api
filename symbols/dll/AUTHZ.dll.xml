@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="AUTHZ.dll">
+  <OriginalPath>C:\Windows\system32\AUTHZ.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="AuthzAccessCheck">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\AuthZ.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AuthzAddSidsToContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\AuthZ.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AuthzCachedAccessCheck">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\AuthZ.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AuthzComputeEffectivePermission" />
+    <Symbol Name="AuthzEnumerateSecurityEventSources">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\AuthZ.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AuthzEvaluateSacl">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\AuthZ.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AuthzFreeAuditEvent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\AuthZ.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AuthzFreeCentralAccessPolicyCache">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\AuthZ.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AuthzFreeContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\AuthZ.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AuthzFreeHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\AuthZ.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AuthzFreeResourceManager">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\AuthZ.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AuthzGetInformationFromContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\AuthZ.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AuthzInitializeCompoundContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\AuthZ.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AuthzInitializeContextFromAuthzContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\AuthZ.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AuthzInitializeContextFromSid">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\AuthZ.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AuthzInitializeContextFromToken">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\AuthZ.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AuthzInitializeObjectAccessAuditEvent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\AuthZ.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AuthzInitializeObjectAccessAuditEvent2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\AuthZ.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AuthzInitializeRemoteAccessCheck">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\AuthZ.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AuthzInitializeRemoteResourceManager">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\AuthZ.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AuthzInitializeResourceManager">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\AuthZ.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AuthzInitializeResourceManagerEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\AuthZ.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AuthzInstallSecurityEventSource">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\AuthZ.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AuthzModifyClaims">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\AuthZ.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AuthzModifySecurityAttributes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\AuthZ.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AuthzModifySids">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\AuthZ.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AuthzOpenObjectAudit">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\AuthZ.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AuthzRegisterCapChangeNotification">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\AuthZ.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AuthzRegisterSecurityEventSource">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\AuthZ.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AuthzReportSecurityEvent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\AuthZ.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AuthzReportSecurityEventFromParams">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\AuthZ.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AuthzSetAppContainerInformation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\AuthZ.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AuthzShutdownRemoteAccessCheck">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\AuthZ.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AuthzUninstallSecurityEventSource">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\AuthZ.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AuthzUnregisterCapChangeNotification">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\AuthZ.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AuthzUnregisterSecurityEventSource">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\AuthZ.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AuthziAccessCheckEx" />
+    <Symbol Name="AuthziAllocateAuditParams" />
+    <Symbol Name="AuthziCheckContextMembership" />
+    <Symbol Name="AuthziFreeAuditEventType" />
+    <Symbol Name="AuthziFreeAuditParams" />
+    <Symbol Name="AuthziFreeAuditQueue" />
+    <Symbol Name="AuthziGenerateAdminAlertAuditW" />
+    <Symbol Name="AuthziInitializeAuditEvent" />
+    <Symbol Name="AuthziInitializeAuditEventType" />
+    <Symbol Name="AuthziInitializeAuditParams" />
+    <Symbol Name="AuthziInitializeAuditParamsFromArray" />
+    <Symbol Name="AuthziInitializeAuditParamsWithRM" />
+    <Symbol Name="AuthziInitializeAuditQueue" />
+    <Symbol Name="AuthziInitializeContextFromSid" />
+    <Symbol Name="AuthziLogAuditEvent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\AuthZ.Lib" />
+        <StaticLibrary Name="um\x64\mincore.lib" />
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AuthziModifyAuditEvent" />
+    <Symbol Name="AuthziModifyAuditEvent2" />
+    <Symbol Name="AuthziModifyAuditEventType" />
+    <Symbol Name="AuthziModifyAuditQueue" />
+    <Symbol Name="AuthziModifySecurityAttributes" />
+    <Symbol Name="AuthziQuerySecurityAttributes" />
+    <Symbol Name="AuthziSourceAudit" />
+    <Symbol Name="FreeClaimDefinitions" />
+    <Symbol Name="FreeClaimDictionary" />
+    <Symbol Name="GenerateNewCAPID" />
+    <Symbol Name="GetCentralAccessPoliciesByCapID" />
+    <Symbol Name="GetCentralAccessPoliciesByDN" />
+    <Symbol Name="GetClaimDefinitions" />
+    <Symbol Name="GetClaimDomainInfo" />
+    <Symbol Name="GetDefaultCAPESecurityDescriptor" />
+    <Symbol Name="InitializeClaimDictionary" />
+    <Symbol Name="RefreshClaimDictionary" />
+  </ExportedSymbols>
+</DynamicLibrary>

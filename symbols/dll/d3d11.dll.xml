@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="d3d11.dll">
+  <OriginalPath>C:\Windows\system32\d3d11.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="CreateDirect3D11DeviceFromDXGIDevice">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\d3d11.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateDirect3D11SurfaceFromDXGISurface">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\d3d11.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3D11CoreCreateDevice">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\d3d11.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3D11CoreCreateLayeredDevice">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\d3d11.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3D11CoreGetLayeredDeviceSize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\d3d11.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3D11CoreRegisterLayers">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\d3d11.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3D11CreateDevice">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\d3d11.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3D11CreateDeviceAndSwapChain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\d3d11.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3D11CreateDeviceForD3D12" />
+    <Symbol Name="D3D11On12CreateDevice">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\d3d11.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTCloseAdapter">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTCreateAllocation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\d3d11.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTCreateContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\d3d11.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTCreateDevice">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\d3d11.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTCreateSynchronizationObject">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\d3d11.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTDestroyAllocation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTDestroyContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTDestroyDevice">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTDestroySynchronizationObject">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTEscape">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\d3d11.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTGetContextSchedulingPriority">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\d3d11.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTGetDeviceState">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\d3d11.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTGetDisplayModeList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\d3d11.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTGetMultisampleMethodList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\d3d11.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTGetRuntimeData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\d3d11.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTGetSharedPrimaryHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\d3d11.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTLock">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\d3d11.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTOpenAdapterFromHdc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\d3d11.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTOpenResource">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\d3d11.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTPresent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTQueryAdapterInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTQueryAllocationResidency">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\d3d11.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTQueryResourceInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\d3d11.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTRender">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\d3d11.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTSetAllocationPriority">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\d3d11.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTSetContextSchedulingPriority">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\d3d11.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTSetDisplayMode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\d3d11.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTSetDisplayPrivateDriverFormat">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTSetGammaRamp">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\d3d11.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTSetVidPnSourceOwner">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\d3d11.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTSignalSynchronizationObject">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTUnlock">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTWaitForSynchronizationObject">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTWaitForVerticalBlankEvent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\d3d11.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DPerformance_BeginEvent" />
+    <Symbol Name="D3DPerformance_EndEvent" />
+    <Symbol Name="D3DPerformance_GetStatus" />
+    <Symbol Name="D3DPerformance_SetMarker" />
+    <Symbol Name="EnableFeatureLevelUpgrade" />
+    <Symbol Name="OpenAdapter10" />
+    <Symbol Name="OpenAdapter10_2" />
+  </ExportedSymbols>
+</DynamicLibrary>

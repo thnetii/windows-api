@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="msv1_0.dll">
+  <OriginalPath>C:\Windows\system32\msv1_0.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="DllMain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msv1_0.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LsaApCallPackage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msv1_0.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LsaApCallPackagePassthrough">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msv1_0.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LsaApCallPackageUntrusted">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msv1_0.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LsaApInitializePackage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msv1_0.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LsaApLogonTerminated">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msv1_0.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LsaApLogonUserEx2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msv1_0.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Msv1_0ExportSubAuthenticationRoutine">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msv1_0.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Msv1_0SubAuthenticationPresent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msv1_0.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsvGetLogonAttemptCount">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msv1_0.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsvIsIpAddressLocal">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msv1_0.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsvIsLocalhostAliases" />
+    <Symbol Name="MsvSamLogoff">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msv1_0.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsvSamValidate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msv1_0.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MsvValidateTarget">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msv1_0.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SpInitialize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msv1_0.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SpInstanceInit">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msv1_0.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SpLsaModeInitialize" />
+    <Symbol Name="SpUserModeInitialize" />
+  </ExportedSymbols>
+</DynamicLibrary>

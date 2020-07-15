@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\ntfrsapi.lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\ntfrsapi.lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="NTFRSAPI.DLL" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="NtFrsApiDestroyBackupRestore" />
+    <Symbol Name="NtFrsApiEnumBackupRestoreSets" />
+    <Symbol Name="NtFrsApiFinishedRestoringDirectory" />
+    <Symbol Name="NtFrsApiGetBackupRestoreSetDirectory" />
+    <Symbol Name="NtFrsApiGetBackupRestoreSetGuid" />
+    <Symbol Name="NtFrsApiGetBackupRestoreSetPaths" />
+    <Symbol Name="NtFrsApiGetBackupRestoreSetType" />
+    <Symbol Name="NtFrsApiGetBackupRestoreSets" />
+    <Symbol Name="NtFrsApiInitializeBackupRestore" />
+    <Symbol Name="NtFrsApiIsBackupRestoreSetASysvol" />
+    <Symbol Name="NtFrsApiRestoringDirectory" />
+    <Symbol Name="NtFrsApi_AbortDemotionW" />
+    <Symbol Name="NtFrsApi_AbortPromotionW" />
+    <Symbol Name="NtFrsApi_CommitDemotionW" />
+    <Symbol Name="NtFrsApi_CommitPromotionW" />
+    <Symbol Name="NtFrsApi_DeleteSysvolMember" />
+    <Symbol Name="NtFrsApi_ForceReplication" />
+    <Symbol Name="NtFrsApi_Get_DsPollingIntervalW" />
+    <Symbol Name="NtFrsApi_InfoFreeW" />
+    <Symbol Name="NtFrsApi_InfoLineW" />
+    <Symbol Name="NtFrsApi_InfoMoreW" />
+    <Symbol Name="NtFrsApi_InfoW" />
+    <Symbol Name="NtFrsApi_IsPathReplicated" />
+    <Symbol Name="NtFrsApi_PrepareForDemotionUsingCredW" />
+    <Symbol Name="NtFrsApi_PrepareForDemotionW" />
+    <Symbol Name="NtFrsApi_PrepareForPromotionW" />
+    <Symbol Name="NtFrsApi_PrepareForUnload" />
+    <Symbol Name="NtFrsApi_Set_DsPollingIntervalW" />
+    <Symbol Name="NtFrsApi_StartDemotionW" />
+    <Symbol Name="NtFrsApi_StartPromotionW" />
+    <Symbol Name="NtFrsApi_WaitForDemotionW" />
+    <Symbol Name="NtFrsApi_WaitForPromotionW" />
+    <Symbol Name="NtFrsApi_WriterCommand" />
+  </ExportedSymbols>
+</StaticLibrary>

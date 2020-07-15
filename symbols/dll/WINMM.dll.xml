@@ -1,0 +1,909 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="WINMM.dll">
+  <OriginalPath>C:\Windows\system32\WINMM.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="CloseDriver">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DefDriverProc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DriverCallback">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DrvGetModuleHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetDriverModuleHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OpenDriver">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PlaySound">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PlaySoundA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PlaySoundW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SendDriverMessage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WOWAppExit">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="auxGetDevCapsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="auxGetDevCapsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="auxGetNumDevs">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="auxGetVolume">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="auxOutMessage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="auxSetVolume">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="joyConfigChanged">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="joyGetDevCapsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="joyGetDevCapsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="joyGetNumDevs">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="joyGetPos">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="joyGetPosEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="joyGetThreshold">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="joyReleaseCapture">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="joySetCapture">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="joySetThreshold">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mciDriverNotify">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mciDriverYield">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mciExecute" />
+    <Symbol Name="mciFreeCommandResource">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mciGetCreatorTask">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mciGetDeviceIDA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mciGetDeviceIDFromElementIDA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mciGetDeviceIDFromElementIDW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mciGetDeviceIDW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mciGetDriverData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mciGetErrorStringA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mciGetErrorStringW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mciGetYieldProc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mciLoadCommandResource">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mciSendCommandA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mciSendCommandW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mciSendStringA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mciSendStringW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mciSetDriverData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mciSetYieldProc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="midiConnect">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="midiDisconnect">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="midiInAddBuffer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="midiInClose">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="midiInGetDevCapsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="midiInGetDevCapsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="midiInGetErrorTextA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="midiInGetErrorTextW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="midiInGetID">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="midiInGetNumDevs">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="midiInMessage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="midiInOpen">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="midiInPrepareHeader">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="midiInReset">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="midiInStart">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="midiInStop">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="midiInUnprepareHeader">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="midiOutCacheDrumPatches">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="midiOutCachePatches">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="midiOutClose">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="midiOutGetDevCapsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="midiOutGetDevCapsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="midiOutGetErrorTextA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="midiOutGetErrorTextW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="midiOutGetID">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="midiOutGetNumDevs">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="midiOutGetVolume">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="midiOutLongMsg">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="midiOutMessage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="midiOutOpen">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="midiOutPrepareHeader">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="midiOutReset">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="midiOutSetVolume">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="midiOutShortMsg">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="midiOutUnprepareHeader">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="midiStreamClose">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="midiStreamOpen">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="midiStreamOut">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="midiStreamPause">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="midiStreamPosition">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="midiStreamProperty">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="midiStreamRestart">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="midiStreamStop">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mixerClose">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mixerGetControlDetailsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mixerGetControlDetailsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mixerGetDevCapsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mixerGetDevCapsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mixerGetID">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mixerGetLineControlsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mixerGetLineControlsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mixerGetLineInfoA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mixerGetLineInfoW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mixerGetNumDevs">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mixerMessage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mixerOpen">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mixerSetControlDetails">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mmDrvInstall">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mmGetCurrentTask">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mmTaskBlock">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mmTaskCreate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mmTaskSignal">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mmTaskYield">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mmioAdvance">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mmioAscend">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mmioClose">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mmioCreateChunk">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mmioDescend">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mmioFlush">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mmioGetInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mmioInstallIOProcA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mmioInstallIOProcW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mmioOpenA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mmioOpenW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mmioRead">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mmioRenameA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mmioRenameW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mmioSeek">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mmioSendMessage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mmioSetBuffer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mmioSetInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mmioStringToFOURCCA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mmioStringToFOURCCW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mmioWrite">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="mmsystemGetVersion" />
+    <Symbol Name="sndPlaySoundA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="sndPlaySoundW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="timeBeginPeriod">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="timeEndPeriod">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="timeGetDevCaps">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="timeGetSystemTime">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="timeGetTime">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="timeKillEvent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="timeSetEvent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="waveInAddBuffer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="waveInClose">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="waveInGetDevCapsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="waveInGetDevCapsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="waveInGetErrorTextA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="waveInGetErrorTextW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="waveInGetID">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="waveInGetNumDevs">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="waveInGetPosition">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="waveInMessage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="waveInOpen">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="waveInPrepareHeader">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="waveInReset">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="waveInStart">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="waveInStop">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="waveInUnprepareHeader">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="waveOutBreakLoop">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="waveOutClose">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="waveOutGetDevCapsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="waveOutGetDevCapsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="waveOutGetErrorTextA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="waveOutGetErrorTextW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="waveOutGetID">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="waveOutGetNumDevs">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="waveOutGetPitch">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="waveOutGetPlaybackRate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="waveOutGetPosition">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="waveOutGetVolume">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="waveOutMessage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="waveOutOpen">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="waveOutPause">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="waveOutPrepareHeader">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="waveOutReset">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="waveOutRestart">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="waveOutSetPitch">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="waveOutSetPlaybackRate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="waveOutSetVolume">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="waveOutUnprepareHeader">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="waveOutWrite">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinMM.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="[NONAME]" />
+  </ExportedSymbols>
+</DynamicLibrary>

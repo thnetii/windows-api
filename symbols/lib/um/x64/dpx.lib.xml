@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\dpx.lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\dpx.lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="dpx.dll" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="DpxFreeMemory">
+      <Definitions>
+        <DynamicLibrary Name="dpx.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DpxNewJob">
+      <Definitions>
+        <DynamicLibrary Name="dpx.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DpxNewJobEx">
+      <Definitions>
+        <DynamicLibrary Name="dpx.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DpxRestoreJob">
+      <Definitions>
+        <DynamicLibrary Name="dpx.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DpxRestoreJobEx">
+      <Definitions>
+        <DynamicLibrary Name="dpx.dll" />
+      </Definitions>
+    </Symbol>
+  </ExportedSymbols>
+</StaticLibrary>

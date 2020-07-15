@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="newdev.dll">
+  <OriginalPath>C:\Windows\system32\newdev.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="CheckDriverSoftwareDependenciesSatisfied">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\newdev.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeviceInternetSettingUiW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\newdev.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DiInstallDevice">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\newdev.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DiInstallDriverA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\newdev.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DiInstallDriverW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\newdev.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DiRollbackDriver">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\newdev.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DiShowUpdateDevice">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\newdev.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DiShowUpdateDriver">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\newdev.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DiUninstallDevice">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\newdev.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DiUninstallDriverA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\newdev.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DiUninstallDriverW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\newdev.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetInternetPolicies">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\newdev.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InstallNewDevice">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\newdev.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InstallSelectedDriver">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\newdev.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InstallWindowsUpdateDriver">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\newdev.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InstallWindowsUpdateDriverEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\newdev.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InstallWindowsUpdateDrivers">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\newdev.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="QueryWindowsUpdateDriverStatus">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\newdev.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetInternetPolicies">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\newdev.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UpdateDriverForPlugAndPlayDevicesA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\newdev.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UpdateDriverForPlugAndPlayDevicesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\newdev.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="pDiDoDeviceInstallAsAdmin">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\newdev.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="pDiDoNullDriverInstall">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\newdev.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="pDiRunFinishInstallOperations" />
+  </ExportedSymbols>
+</DynamicLibrary>

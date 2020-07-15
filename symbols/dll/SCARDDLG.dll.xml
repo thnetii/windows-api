@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="SCARDDLG.dll">
+  <OriginalPath>C:\Windows\system32\SCARDDLG.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="GetOpenCardNameA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SCardDlg.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetOpenCardNameW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SCardDlg.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardDlgExtendedError">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SCardDlg.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardUIDlgSelectCardA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SCardDlg.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SCardUIDlgSelectCardW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\SCardDlg.Lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

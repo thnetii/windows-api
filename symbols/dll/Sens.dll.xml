@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="Sens.dll">
+  <OriginalPath>C:\Windows\system32\Sens.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="SensNotifyNetconEvent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\sens.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SensNotifyRasEvent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\sens.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SensNotifyWinlogonEvent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\sens.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ServiceMain" />
+    <Symbol Name="SvchostPushServiceGlobals" />
+  </ExportedSymbols>
+</DynamicLibrary>

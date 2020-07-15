@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="OEMLicense.dll">
+  <OriginalPath>C:\Windows\system32\OEMLicense.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="AddDemoAppLicense">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OemLicense.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HrAddAppxLicense" />
+    <Symbol Name="HrInstallClipLicense" />
+    <Symbol Name="HrNotifyPhoneLicenseReady" />
+    <Symbol Name="HrRemoveAppxLicense" />
+    <Symbol Name="RemoveDemoAppLicense">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OemLicense.lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

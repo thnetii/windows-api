@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="VSSAPI.DLL">
+  <OriginalPath>C:\Windows\system32\VSSAPI.DLL</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="??0CVssJetWriter@@QEAA@XZ" />
+    <Symbol Name="??0CVssWriter@@QEAA@XZ" />
+    <Symbol Name="??1CVssJetWriter@@UEAA@XZ" />
+    <Symbol Name="??1CVssWriter@@UEAA@XZ" />
+    <Symbol Name="?AreComponentsSelected@CVssJetWriter@@IEBA_NXZ" />
+    <Symbol Name="?AreComponentsSelected@CVssWriter@@IEBA_NXZ" />
+    <Symbol Name="?CreateVssBackupComponents@@YAJPEAPEAVIVssBackupComponents@@@Z" />
+    <Symbol Name="?CreateVssExamineWriterMetadata@@YAJPEAGPEAPEAVIVssExamineWriterMetadata@@@Z" />
+    <Symbol Name="?GetBackupType@CVssJetWriter@@IEBA?AW4_VSS_BACKUP_TYPE@@XZ" />
+    <Symbol Name="?GetBackupType@CVssWriter@@IEBA?AW4_VSS_BACKUP_TYPE@@XZ" />
+    <Symbol Name="?GetContext@CVssJetWriter@@IEBAJXZ" />
+    <Symbol Name="?GetContext@CVssWriter@@IEBAJXZ" />
+    <Symbol Name="?GetCurrentLevel@CVssJetWriter@@IEBA?AW4_VSS_APPLICATION_LEVEL@@XZ" />
+    <Symbol Name="?GetCurrentLevel@CVssWriter@@IEBA?AW4_VSS_APPLICATION_LEVEL@@XZ" />
+    <Symbol Name="?GetCurrentSnapshotSetId@CVssJetWriter@@IEBA?AU_GUID@@XZ" />
+    <Symbol Name="?GetCurrentSnapshotSetId@CVssWriter@@IEBA?AU_GUID@@XZ" />
+    <Symbol Name="?GetCurrentVolumeArray@CVssJetWriter@@IEBAPEAPEBGXZ" />
+    <Symbol Name="?GetCurrentVolumeArray@CVssWriter@@IEBAPEAPEBGXZ" />
+    <Symbol Name="?GetCurrentVolumeCount@CVssJetWriter@@IEBAIXZ" />
+    <Symbol Name="?GetCurrentVolumeCount@CVssWriter@@IEBAIXZ" />
+    <Symbol Name="?GetRestoreType@CVssJetWriter@@IEBA?AW4_VSS_RESTORE_TYPE@@XZ" />
+    <Symbol Name="?GetRestoreType@CVssWriter@@IEBA?AW4_VSS_RESTORE_TYPE@@XZ" />
+    <Symbol Name="?GetSnapshotDeviceName@CVssJetWriter@@IEBAJPEBGPEAPEBG@Z" />
+    <Symbol Name="?GetSnapshotDeviceName@CVssWriter@@IEBAJPEBGPEAPEBG@Z" />
+    <Symbol Name="?Initialize@CVssJetWriter@@QEAAJU_GUID@@PEBG_N211K@Z" />
+    <Symbol Name="?Initialize@CVssWriter@@QEAAJU_GUID@@PEBGW4VSS_USAGE_TYPE@@W4VSS_SOURCE_TYPE@@W4_VSS_APPLICATION_LEVEL@@KW4VSS_ALTERNATE_WRITER_STATE@@_N1@Z" />
+    <Symbol Name="?InstallAlternateWriter@CVssWriter@@QEAAJU_GUID@@0@Z" />
+    <Symbol Name="?IsBootableSystemStateBackedUp@CVssJetWriter@@IEBA_NXZ" />
+    <Symbol Name="?IsBootableSystemStateBackedUp@CVssWriter@@IEBA_NXZ" />
+    <Symbol Name="?IsPartialFileSupportEnabled@CVssJetWriter@@IEBA_NXZ" />
+    <Symbol Name="?IsPartialFileSupportEnabled@CVssWriter@@IEBA_NXZ" />
+    <Symbol Name="?IsPathAffected@CVssJetWriter@@IEBA_NPEBG@Z" />
+    <Symbol Name="?IsPathAffected@CVssWriter@@IEBA_NPEBG@Z" />
+    <Symbol Name="?OnAbortBegin@CVssJetWriter@@UEAAXXZ" />
+    <Symbol Name="?OnAbortEnd@CVssJetWriter@@UEAAXXZ" />
+    <Symbol Name="?OnBackOffIOOnVolume@CVssWriter@@UEAA_NPEAGU_GUID@@1@Z" />
+    <Symbol Name="?OnBackupComplete@CVssWriter@@UEAA_NPEAVIVssWriterComponents@@@Z" />
+    <Symbol Name="?OnBackupCompleteBegin@CVssJetWriter@@UEAA_NPEAVIVssWriterComponents@@@Z" />
+    <Symbol Name="?OnBackupCompleteEnd@CVssJetWriter@@UEAA_NPEAVIVssWriterComponents@@_N@Z" />
+    <Symbol Name="?OnBackupShutdown@CVssWriter@@UEAA_NU_GUID@@@Z" />
+    <Symbol Name="?OnContinueIOOnVolume@CVssWriter@@UEAA_NPEAGU_GUID@@1@Z" />
+    <Symbol Name="?OnFreezeBegin@CVssJetWriter@@UEAA_NXZ" />
+    <Symbol Name="?OnFreezeEnd@CVssJetWriter@@UEAA_N_N@Z" />
+    <Symbol Name="?OnIdentify@CVssJetWriter@@UEAA_NPEAVIVssCreateWriterMetadata@@@Z" />
+    <Symbol Name="?OnIdentify@CVssWriter@@UEAA_NPEAVIVssCreateWriterMetadata@@@Z" />
+    <Symbol Name="?OnPostRestore@CVssWriter@@UEAA_NPEAVIVssWriterComponents@@@Z" />
+    <Symbol Name="?OnPostRestoreBegin@CVssJetWriter@@UEAA_NPEAVIVssWriterComponents@@@Z" />
+    <Symbol Name="?OnPostRestoreEnd@CVssJetWriter@@UEAA_NPEAVIVssWriterComponents@@_N@Z" />
+    <Symbol Name="?OnPostSnapshot@CVssJetWriter@@UEAA_NPEAVIVssWriterComponents@@@Z" />
+    <Symbol Name="?OnPostSnapshot@CVssWriter@@UEAA_NPEAVIVssWriterComponents@@@Z" />
+    <Symbol Name="?OnPreRestore@CVssWriter@@UEAA_NPEAVIVssWriterComponents@@@Z" />
+    <Symbol Name="?OnPreRestoreBegin@CVssJetWriter@@UEAA_NPEAVIVssWriterComponents@@@Z" />
+    <Symbol Name="?OnPreRestoreEnd@CVssJetWriter@@UEAA_NPEAVIVssWriterComponents@@_N@Z" />
+    <Symbol Name="?OnPrepareBackup@CVssWriter@@UEAA_NPEAVIVssWriterComponents@@@Z" />
+    <Symbol Name="?OnPrepareBackupBegin@CVssJetWriter@@UEAA_NPEAVIVssWriterComponents@@@Z" />
+    <Symbol Name="?OnPrepareBackupEnd@CVssJetWriter@@UEAA_NPEAVIVssWriterComponents@@_N@Z" />
+    <Symbol Name="?OnPrepareSnapshotBegin@CVssJetWriter@@UEAA_NXZ" />
+    <Symbol Name="?OnPrepareSnapshotEnd@CVssJetWriter@@UEAA_N_N@Z" />
+    <Symbol Name="?OnThawBegin@CVssJetWriter@@UEAA_NXZ" />
+    <Symbol Name="?OnThawEnd@CVssJetWriter@@UEAA_N_N@Z" />
+    <Symbol Name="?OnVSSApplicationStartup@CVssWriter@@UEAA_NXZ" />
+    <Symbol Name="?OnVSSShutdown@CVssWriter@@UEAA_NXZ" />
+    <Symbol Name="?SetWriterFailure@CVssJetWriter@@IEAAJJ@Z" />
+    <Symbol Name="?SetWriterFailure@CVssWriter@@IEAAJJ@Z" />
+    <Symbol Name="?Subscribe@CVssWriter@@QEAAJK@Z" />
+    <Symbol Name="?Uninitialize@CVssJetWriter@@QEAAXXZ" />
+    <Symbol Name="?Unsubscribe@CVssWriter@@QEAAJXZ" />
+    <Symbol Name="CreateVssBackupComponentsInternal">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\vssapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateVssExamineWriterMetadataInternal">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\vssapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateVssExpressWriterInternal">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\vssapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateVssSnapshotSetDescription">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\vssapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateWriter">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\vssapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateWriterEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\vssapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DllCanUnloadNow" />
+    <Symbol Name="DllGetClassObject" />
+    <Symbol Name="GetProviderMgmtInterface" />
+    <Symbol Name="GetProviderMgmtInterfaceInternal">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\vssapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IsVolumeSnapshotted" />
+    <Symbol Name="IsVolumeSnapshottedInternal">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\vssapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LoadVssSnapshotSetDescription">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\vssapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ShouldBlockRevert" />
+    <Symbol Name="ShouldBlockRevertInternal">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\vssapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VssFreeSnapshotProperties" />
+    <Symbol Name="VssFreeSnapshotPropertiesInternal">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\vssapi.lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

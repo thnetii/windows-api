@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="mscms.dll">
+  <OriginalPath>C:\Windows\system32\mscms.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="AssociateColorProfileWithDeviceA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AssociateColorProfileWithDeviceW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CheckBitmapBits">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CheckColors">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CloseColorProfile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CloseDisplay">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ColorAdapterGetCurrentProfileCalibration">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ColorAdapterGetDisplayCurrentStateID">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ColorAdapterGetDisplayProfile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ColorAdapterGetDisplayTargetWhitePoint">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ColorAdapterGetDisplayTransformData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ColorAdapterGetSystemModifyWhitePointCaps">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ColorAdapterRegisterOEMColorService">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ColorAdapterUnregisterOEMColorService">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ColorAdapterUpdateDeviceProfile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ColorAdapterUpdateDisplayGamma">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ColorCplGetDefaultProfileScope">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ColorCplGetDefaultRenderingIntentScope">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ColorCplGetProfileProperties">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ColorCplHasSystemWideAssociationListChanged">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ColorCplInitialize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ColorCplLoadAssociationList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ColorCplMergeAssociationLists">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ColorCplOverwritePerUserAssociationList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ColorCplReleaseProfileProperties">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ColorCplResetSystemWideAssociationListChangedWarning">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ColorCplSaveAssociationList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ColorCplSetUsePerUserProfiles">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ColorCplUninitialize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ConvertColorNameToIndex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ConvertIndexToColorName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateColorTransformA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateColorTransformW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateDeviceLinkProfile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateMultiProfileTransform">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateProfileFromLogColorSpaceA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateProfileFromLogColorSpaceW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DccwCreateDisplayProfileAssociationList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DccwGetDisplayProfileAssociationList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DccwGetGamutSize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DccwReleaseDisplayProfileAssociationList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DccwSetDisplayProfileAssociationList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeleteColorTransform">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeviceRenameEvent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DisassociateColorProfileFromDeviceA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DisassociateColorProfileFromDeviceW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DllCanUnloadNow" />
+    <Symbol Name="DllGetClassObject" />
+    <Symbol Name="EnumColorProfilesA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumColorProfilesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GenerateCopyFilePaths">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetCMMInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetColorDirectoryA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetColorDirectoryW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetColorProfileElement">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetColorProfileElementTag">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetColorProfileFromHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetColorProfileHeader">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetCountColorProfileElements">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetNamedProfileInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetPS2ColorRenderingDictionary">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetPS2ColorRenderingIntent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetPS2ColorSpaceArray">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetStandardColorSpaceProfileA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetStandardColorSpaceProfileW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InstallColorProfileA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InstallColorProfileW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalGetAppliedGammaRamp">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalGetDeviceConfig">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalGetDeviceGammaCapability">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalGetPS2CSAFromLCS">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalGetPS2ColorRenderingDictionary">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalGetPS2ColorRenderingDictionary2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalGetPS2ColorSpaceArray">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalGetPS2ColorSpaceArray2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalGetPS2PreviewCRD">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalGetPS2PreviewCRD2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalRefreshCalibration">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalSetDeviceConfig">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalSetDeviceGammaRamp">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalSetDeviceTemperature">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalWcsAssociateColorProfileWithDevice">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalWcsDisassociateColorProfileWithDevice">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IsColorProfileTagPresent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IsColorProfileValid">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OpenColorProfileA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OpenColorProfileW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OpenDisplay">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RegisterCMMA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RegisterCMMW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SelectCMM">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetColorProfileElement">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetColorProfileElementReference">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetColorProfileElementSize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetColorProfileHeader">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetStandardColorSpaceProfileA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetStandardColorSpaceProfileW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SpoolerCopyFileEvent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TranslateBitmapBits">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TranslateColors">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UninstallColorProfileA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UninstallColorProfileW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UnregisterCMMA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UnregisterCMMW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WcsAssociateColorProfileWithDevice">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WcsCheckColors">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WcsCreateIccProfile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WcsDisassociateColorProfileFromDevice">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WcsEnumColorProfiles">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WcsEnumColorProfilesSize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WcsGetCalibrationManagementState">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WcsGetDefaultColorProfile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WcsGetDefaultColorProfileSize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WcsGetDefaultRenderingIntent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WcsGetUsePerUserProfiles">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WcsGpCanInstallOrUninstallProfiles">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WcsOpenColorProfileA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WcsOpenColorProfileW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WcsSetCalibrationManagementState">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WcsSetDefaultColorProfile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WcsSetDefaultRenderingIntent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WcsSetUsePerUserProfiles">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WcsTranslateColors">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Mscms.Lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

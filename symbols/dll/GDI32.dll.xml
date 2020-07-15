@@ -1,0 +1,4257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="GDI32.dll">
+  <OriginalPath>C:\Windows\system32\GDI32.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="AbortDoc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AbortPath">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AddFontMemResourceEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AddFontResourceA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AddFontResourceExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AddFontResourceExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AddFontResourceTracking" />
+    <Symbol Name="AddFontResourceW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AngleArc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AnimatePalette">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AnyLinkedFonts" />
+    <Symbol Name="Arc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ArcTo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BRUSHOBJ_hGetColorTransform">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BRUSHOBJ_pvAllocRbrush">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BRUSHOBJ_pvGetRbrush">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BRUSHOBJ_ulGetBrushColor">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BeginGdiRendering">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BeginPath">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BitBlt">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CLIPOBJ_bEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CLIPOBJ_cEnumStart">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CLIPOBJ_ppoGetPath">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CancelDC">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CheckColorsInGamut">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ChoosePixelFormat">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Chord">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClearBitmapAttributes" />
+    <Symbol Name="ClearBrushAttributes" />
+    <Symbol Name="CloseEnhMetaFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CloseFigure">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CloseMetaFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ColorCorrectPalette">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ColorMatchToTarget">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CombineRgn">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CombineTransform">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ConfigureOPMProtectedOutput" />
+    <Symbol Name="CopyEnhMetaFileA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CopyEnhMetaFileW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CopyMetaFileA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CopyMetaFileW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateBitmap">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateBitmapFromDxSurface" />
+    <Symbol Name="CreateBitmapFromDxSurface2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateBitmapIndirect">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateBrushIndirect">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateColorSpaceA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateColorSpaceW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateCompatibleBitmap">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateCompatibleDC">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateDCA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateDCExW" />
+    <Symbol Name="CreateDCW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateDIBPatternBrush">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateDIBPatternBrushPt">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateDIBSection">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateDIBitmap">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateDPIScaledDIBSection" />
+    <Symbol Name="CreateDiscardableBitmap">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateEllipticRgn">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateEllipticRgnIndirect">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateEnhMetaFileA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateEnhMetaFileW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateFontA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateFontIndirectA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateFontIndirectExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateFontIndirectExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateFontIndirectW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateFontW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateHalftonePalette">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateHatchBrush">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateICA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateICW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateMetaFileA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateMetaFileW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateOPMProtectedOutput" />
+    <Symbol Name="CreateOPMProtectedOutputs" />
+    <Symbol Name="CreatePalette">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreatePatternBrush">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreatePen">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreatePenIndirect">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreatePolyPolygonRgn">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreatePolygonRgn">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateRectRgn">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateRectRgnIndirect">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateRoundRectRgn">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateScalableFontResourceA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateScalableFontResourceW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateSessionMappedDIBSection" />
+    <Symbol Name="CreateSolidBrush">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTAbandonSwapChain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTAcquireKeyedMutex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTAcquireKeyedMutex2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTAcquireSwapChain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTAddSurfaceToSwapChain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTAdjustFullscreenGamma">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTCacheHybridQueryValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTChangeVideoMemoryReservation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTCheckExclusiveOwnership">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTCheckMonitorPowerState">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTCheckMultiPlaneOverlaySupport">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTCheckMultiPlaneOverlaySupport2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTCheckMultiPlaneOverlaySupport3">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTCheckOcclusion">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTCheckSharedResourceAccess">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTCheckVidPnExclusiveOwnership">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTCloseAdapter">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTConfigureSharedResource">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTCreateAllocation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTCreateAllocation2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTCreateBundleObject">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTCreateContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTCreateContextVirtual">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTCreateDCFromMemory">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTCreateDevice">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTCreateHwContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTCreateHwQueue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTCreateKeyedMutex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTCreateKeyedMutex2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTCreateOutputDupl">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTCreateOverlay">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTCreatePagingQueue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTCreateProtectedSession">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTCreateSwapChain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTCreateSynchronizationObject">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTCreateSynchronizationObject2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTDDisplayEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTDestroyAllocation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTDestroyAllocation2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTDestroyContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTDestroyDCFromMemory">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTDestroyDevice">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTDestroyHwContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTDestroyHwQueue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTDestroyKeyedMutex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTDestroyOutputDupl">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTDestroyOverlay">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTDestroyPagingQueue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTDestroyProtectedSession">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTDestroySynchronizationObject">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTDispMgrCreate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTDispMgrSourceOperation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTDispMgrTargetOperation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTEnumAdapters">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTEnumAdapters2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTEscape">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTEvict">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTExtractBundleObject">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTFlipOverlay">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTFlushHeapTransitions">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTFreeGpuVirtualAddress">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTGetAllocationPriority">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTGetCachedHybridQueryValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTGetContextInProcessSchedulingPriority">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTGetContextSchedulingPriority">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTGetDWMVerticalBlankEvent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTGetDeviceState">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTGetDisplayModeList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTGetMemoryBudgetTarget">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTGetMultiPlaneOverlayCaps">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTGetMultisampleMethodList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTGetOverlayState">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTGetPostCompositionCaps">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTGetPresentHistory">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTGetPresentQueueEvent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTGetProcessDeviceRemovalSupport">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTGetProcessList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTGetProcessSchedulingPriorityBand">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTGetProcessSchedulingPriorityClass">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTGetResourcePresentPrivateDriverData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTGetRuntimeData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTGetScanLine">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTGetSetSwapChainMetadata">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTGetSharedPrimaryHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTGetSharedResourceAdapterLuid">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTGetYieldPercentage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTInvalidateActiveVidPn">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTInvalidateCache">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTLock">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTLock2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTMakeResident">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTMapGpuVirtualAddress">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTMarkDeviceAsError">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTNetDispGetNextChunkInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTNetDispQueryMiracastDisplayDeviceStatus">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTNetDispQueryMiracastDisplayDeviceSupport">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTNetDispStartMiracastDisplayDevice" />
+    <Symbol Name="D3DKMTNetDispStartMiracastDisplayDevice2" />
+    <Symbol Name="D3DKMTNetDispStartMiracastDisplayDeviceEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTNetDispStopMiracastDisplayDevice">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTNetDispStopSessions">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTOfferAllocations">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTOpenAdapterFromDeviceName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTOpenAdapterFromGdiDisplayName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTOpenAdapterFromHdc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTOpenAdapterFromLuid">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTOpenBundleObjectNtHandleFromName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTOpenKeyedMutex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTOpenKeyedMutex2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTOpenKeyedMutexFromNtHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTOpenNtHandleFromName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTOpenProtectedSessionFromNtHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTOpenResource">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTOpenResource2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTOpenResourceFromNtHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTOpenSwapChain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTOpenSyncObjectFromNtHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTOpenSyncObjectFromNtHandle2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTOpenSyncObjectNtHandleFromName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTOpenSynchronizationObject">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTOutputDuplGetFrameInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTOutputDuplGetMetaData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTOutputDuplGetPointerShapeData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTOutputDuplPresent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTOutputDuplReleaseFrame">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTPinDirectFlipResources">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTPollDisplayChildren">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTPresent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTPresentMultiPlaneOverlay">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTPresentMultiPlaneOverlay2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTPresentMultiPlaneOverlay3">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTPresentRedirected">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTQueryAdapterInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTQueryAllocationResidency">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTQueryClockCalibration">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTQueryFSEBlock">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTQueryProcessOfferInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTQueryProtectedSessionInfoFromNtHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTQueryProtectedSessionStatus">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTQueryRemoteVidPnSourceFromGdiDisplayName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTQueryResourceInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTQueryResourceInfoFromNtHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTQueryStatistics">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTQueryVidPnExclusiveOwnership">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTQueryVideoMemoryInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTReclaimAllocations">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTReclaimAllocations2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTRegisterTrimNotification">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTRegisterVailProcess">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTReleaseKeyedMutex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTReleaseKeyedMutex2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTReleaseProcessVidPnSourceOwners">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTReleaseSwapChain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTRemoveSurfaceFromSwapChain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTRender">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTReserveGpuVirtualAddress">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTSetAllocationPriority">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTSetContextInProcessSchedulingPriority">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTSetContextSchedulingPriority">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTSetDisplayMode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTSetDisplayPrivateDriverFormat">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTSetDodIndirectSwapchain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTSetFSEBlock">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTSetGammaRamp">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTSetHwProtectionTeardownRecovery">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTSetMemoryBudgetTarget">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTSetMonitorColorSpaceTransform">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTSetProcessDeviceRemovalSupport">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTSetProcessSchedulingPriorityBand">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTSetProcessSchedulingPriorityClass">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTSetQueuedLimit">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTSetStablePowerState">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTSetStereoEnabled">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTSetSyncRefreshCountWaitTarget">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTSetVidPnSourceHwProtection">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTSetVidPnSourceOwner">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTSetVidPnSourceOwner1">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTSetVidPnSourceOwner2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTSetYieldPercentage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTShareObjects">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTSharedPrimaryLockNotification">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTSharedPrimaryUnLockNotification">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTSignalSynchronizationObject">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTSignalSynchronizationObject2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTSignalSynchronizationObjectFromCpu">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTSignalSynchronizationObjectFromGpu">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTSignalSynchronizationObjectFromGpu2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTSubmitCommand">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTSubmitCommandToHwQueue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTSubmitPresentBltToHwQueue" />
+    <Symbol Name="D3DKMTSubmitSignalSyncObjectsToHwQueue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTSubmitWaitForSyncObjectsToHwQueue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTTrimProcessCommitment">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTUnOrderedPresentSwapChain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTUnlock">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTUnlock2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTUnpinDirectFlipResources">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTUnregisterTrimNotification">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTUpdateAllocationProperty">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTUpdateGpuVirtualAddress">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTUpdateOverlay">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTVailConnect">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTVailDisconnect">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTVailPromoteCompositionSurface">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTWaitForIdle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTWaitForSynchronizationObject">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTWaitForSynchronizationObject2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTWaitForSynchronizationObjectFromCpu">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTWaitForSynchronizationObjectFromGpu">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTWaitForVerticalBlankEvent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="D3DKMTWaitForVerticalBlankEvent2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DDCCIGetCapabilitiesString" />
+    <Symbol Name="DDCCIGetCapabilitiesStringLength" />
+    <Symbol Name="DDCCIGetTimingReport" />
+    <Symbol Name="DDCCIGetVCPFeature" />
+    <Symbol Name="DDCCISaveCurrentSettings" />
+    <Symbol Name="DDCCISetVCPFeature" />
+    <Symbol Name="DPtoLP">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DdCreateFullscreenSprite" />
+    <Symbol Name="DdDestroyFullscreenSprite" />
+    <Symbol Name="DdEntry0" />
+    <Symbol Name="DdEntry1" />
+    <Symbol Name="DdEntry10" />
+    <Symbol Name="DdEntry11" />
+    <Symbol Name="DdEntry12" />
+    <Symbol Name="DdEntry13" />
+    <Symbol Name="DdEntry14" />
+    <Symbol Name="DdEntry15" />
+    <Symbol Name="DdEntry16" />
+    <Symbol Name="DdEntry17" />
+    <Symbol Name="DdEntry18" />
+    <Symbol Name="DdEntry19" />
+    <Symbol Name="DdEntry2" />
+    <Symbol Name="DdEntry20" />
+    <Symbol Name="DdEntry21" />
+    <Symbol Name="DdEntry22" />
+    <Symbol Name="DdEntry23" />
+    <Symbol Name="DdEntry24" />
+    <Symbol Name="DdEntry25" />
+    <Symbol Name="DdEntry26" />
+    <Symbol Name="DdEntry27" />
+    <Symbol Name="DdEntry28" />
+    <Symbol Name="DdEntry29" />
+    <Symbol Name="DdEntry3" />
+    <Symbol Name="DdEntry30" />
+    <Symbol Name="DdEntry31" />
+    <Symbol Name="DdEntry32" />
+    <Symbol Name="DdEntry33" />
+    <Symbol Name="DdEntry34" />
+    <Symbol Name="DdEntry35" />
+    <Symbol Name="DdEntry36" />
+    <Symbol Name="DdEntry37" />
+    <Symbol Name="DdEntry38" />
+    <Symbol Name="DdEntry39" />
+    <Symbol Name="DdEntry4" />
+    <Symbol Name="DdEntry40" />
+    <Symbol Name="DdEntry41" />
+    <Symbol Name="DdEntry42" />
+    <Symbol Name="DdEntry43" />
+    <Symbol Name="DdEntry44" />
+    <Symbol Name="DdEntry45" />
+    <Symbol Name="DdEntry46" />
+    <Symbol Name="DdEntry47" />
+    <Symbol Name="DdEntry48" />
+    <Symbol Name="DdEntry49" />
+    <Symbol Name="DdEntry5" />
+    <Symbol Name="DdEntry50" />
+    <Symbol Name="DdEntry51" />
+    <Symbol Name="DdEntry52" />
+    <Symbol Name="DdEntry53" />
+    <Symbol Name="DdEntry54" />
+    <Symbol Name="DdEntry55" />
+    <Symbol Name="DdEntry56" />
+    <Symbol Name="DdEntry6" />
+    <Symbol Name="DdEntry7" />
+    <Symbol Name="DdEntry8" />
+    <Symbol Name="DdEntry9" />
+    <Symbol Name="DdNotifyFullscreenSpriteUpdate" />
+    <Symbol Name="DdQueryVisRgnUniqueness" />
+    <Symbol Name="DeleteColorSpace">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeleteDC">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeleteEnhMetaFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeleteMetaFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeleteObject">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DescribePixelFormat">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DestroyOPMProtectedOutput" />
+    <Symbol Name="DestroyPhysicalMonitorInternal" />
+    <Symbol Name="DeviceCapabilitiesExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeviceCapabilitiesExW">
+      <ForwardSymbol>ext-ms-win-gdi-desktop-l1-1-0.DeviceCapabilitiesExA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DrawEscape">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DwmCreatedBitmapRemotingOutput" />
+    <Symbol Name="DxTrimNotificationListHead">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Ellipse">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnableEUDC">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EndDoc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EndFormPage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EndGdiRendering">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EndPage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EndPath">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EngAcquireSemaphore">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EngAlphaBlend">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EngAssociateSurface">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EngBitBlt">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EngCheckAbort">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EngComputeGlyphSet">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EngCopyBits">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EngCreateBitmap">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EngCreateClip">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EngCreateDeviceBitmap">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EngCreateDeviceSurface">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EngCreatePalette">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EngCreateSemaphore">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EngDeleteClip">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EngDeletePalette">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EngDeletePath">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EngDeleteSemaphore">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EngDeleteSurface">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EngEraseSurface">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EngFillPath">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EngFindResource">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EngFreeModule">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EngGetCurrentCodePage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EngGetDriverName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EngGetPrinterDataFileName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EngGradientFill">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EngLineTo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EngLoadModule">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EngLockSurface">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EngMarkBandingSurface">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EngMultiByteToUnicodeN">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EngMultiByteToWideChar">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EngPaint">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EngPlgBlt">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EngQueryEMFInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EngQueryLocalTime">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EngReleaseSemaphore">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EngStretchBlt">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EngStretchBltROP">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EngStrokeAndFillPath">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EngStrokePath">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EngTextOut">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EngTransparentBlt">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EngUnicodeToMultiByteN">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EngUnlockSurface">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EngWideCharToMultiByte">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumEnhMetaFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumFontFamiliesA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumFontFamiliesExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumFontFamiliesExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumFontFamiliesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumFontsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumFontsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumICMProfilesA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumICMProfilesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumMetaFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumObjects">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EqualRgn">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Escape">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EudcLoadLinkW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EudcUnloadLinkW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ExcludeClipRect">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ExtCreatePen">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ExtCreateRegion">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ExtEscape">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ExtFloodFill">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ExtSelectClipRgn">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ExtTextOutA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ExtTextOutW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FONTOBJ_cGetAllGlyphHandles">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FONTOBJ_cGetGlyphs">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FONTOBJ_pQueryGlyphAttrs">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FONTOBJ_pfdg">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FONTOBJ_pifi">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FONTOBJ_pvTrueTypeFontFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FONTOBJ_pxoGetXform">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FONTOBJ_vGetInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FillPath">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FillRgn">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FixBrushOrgEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FlattenPath">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FloodFill">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FontIsLinked" />
+    <Symbol Name="FrameRgn">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Gdi32DllInitialize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GdiAddFontResourceW" />
+    <Symbol Name="GdiAddGlsBounds" />
+    <Symbol Name="GdiAddGlsRecord" />
+    <Symbol Name="GdiAddInitialFonts" />
+    <Symbol Name="GdiAlphaBlend">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GdiArtificialDecrementDriver">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GdiBatchLimit">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GdiCleanCacheDC" />
+    <Symbol Name="GdiComment">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GdiConsoleTextOut" />
+    <Symbol Name="GdiConvertAndCheckDC" />
+    <Symbol Name="GdiConvertBitmap" />
+    <Symbol Name="GdiConvertBitmapV5" />
+    <Symbol Name="GdiConvertBrush" />
+    <Symbol Name="GdiConvertDC" />
+    <Symbol Name="GdiConvertEnhMetaFile" />
+    <Symbol Name="GdiConvertFont" />
+    <Symbol Name="GdiConvertMetaFilePict" />
+    <Symbol Name="GdiConvertPalette" />
+    <Symbol Name="GdiConvertRegion" />
+    <Symbol Name="GdiConvertToDevmodeW" />
+    <Symbol Name="GdiCreateLocalEnhMetaFile" />
+    <Symbol Name="GdiCreateLocalMetaFilePict" />
+    <Symbol Name="GdiCurrentProcessSplWow64" />
+    <Symbol Name="GdiDeleteLocalDC" />
+    <Symbol Name="GdiDeleteSpoolFileHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GdiDescribePixelFormat" />
+    <Symbol Name="GdiDllInitialize" />
+    <Symbol Name="GdiDrawStream" />
+    <Symbol Name="GdiEndDocEMF">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GdiEndPageEMF">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GdiEntry1" />
+    <Symbol Name="GdiEntry10" />
+    <Symbol Name="GdiEntry11" />
+    <Symbol Name="GdiEntry12" />
+    <Symbol Name="GdiEntry13" />
+    <Symbol Name="GdiEntry14" />
+    <Symbol Name="GdiEntry15" />
+    <Symbol Name="GdiEntry16" />
+    <Symbol Name="GdiEntry2" />
+    <Symbol Name="GdiEntry3" />
+    <Symbol Name="GdiEntry4" />
+    <Symbol Name="GdiEntry5" />
+    <Symbol Name="GdiEntry6" />
+    <Symbol Name="GdiEntry7" />
+    <Symbol Name="GdiEntry8" />
+    <Symbol Name="GdiEntry9" />
+    <Symbol Name="GdiFixUpHandle" />
+    <Symbol Name="GdiFlush">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GdiFullscreenControl" />
+    <Symbol Name="GdiGetBatchLimit">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GdiGetBitmapBitsSize" />
+    <Symbol Name="GdiGetCharDimensions" />
+    <Symbol Name="GdiGetCodePage" />
+    <Symbol Name="GdiGetDC">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GdiGetDevmodeForPage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GdiGetEntry" />
+    <Symbol Name="GdiGetLocalBrush" />
+    <Symbol Name="GdiGetLocalDC" />
+    <Symbol Name="GdiGetLocalFont" />
+    <Symbol Name="GdiGetPageCount">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GdiGetPageHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GdiGetSpoolFileHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GdiGetSpoolMessage" />
+    <Symbol Name="GdiGetVariationStoreDelta" />
+    <Symbol Name="GdiGradientFill">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GdiInitSpool" />
+    <Symbol Name="GdiInitializeLanguagePack" />
+    <Symbol Name="GdiIsMetaFileDC" />
+    <Symbol Name="GdiIsMetaPrintDC" />
+    <Symbol Name="GdiIsPlayMetafileDC" />
+    <Symbol Name="GdiIsScreenDC" />
+    <Symbol Name="GdiIsTrackingEnabled" />
+    <Symbol Name="GdiIsUMPDSandboxingEnabled" />
+    <Symbol Name="GdiLoadType1Fonts" />
+    <Symbol Name="GdiPlayDCScript">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GdiPlayEMF">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GdiPlayJournal">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GdiPlayPageEMF">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GdiPlayPrivatePageEMF">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GdiPlayScript">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GdiPrinterThunk" />
+    <Symbol Name="GdiProcessSetup" />
+    <Symbol Name="GdiQueryFonts" />
+    <Symbol Name="GdiQueryTable" />
+    <Symbol Name="GdiRealizationInfo" />
+    <Symbol Name="GdiReleaseDC" />
+    <Symbol Name="GdiReleaseLocalDC" />
+    <Symbol Name="GdiResetDCEMF">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GdiSetAttrs" />
+    <Symbol Name="GdiSetBatchLimit">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GdiSetLastError" />
+    <Symbol Name="GdiSetPixelFormat" />
+    <Symbol Name="GdiSetServerAttr" />
+    <Symbol Name="GdiStartDocEMF">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GdiStartPageEMF">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GdiSupportsFontChangeEvent" />
+    <Symbol Name="GdiSwapBuffers" />
+    <Symbol Name="GdiTrackHCreate" />
+    <Symbol Name="GdiTrackHDelete" />
+    <Symbol Name="GdiTransparentBlt">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GdiValidateHandle" />
+    <Symbol Name="GetArcDirection">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetAspectRatioFilterEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetBitmapAttributes" />
+    <Symbol Name="GetBitmapBits">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetBitmapDimensionEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetBitmapDpiScaleValue" />
+    <Symbol Name="GetBkColor">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetBkMode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetBoundsRect">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetBrushAttributes" />
+    <Symbol Name="GetBrushOrgEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetCOPPCompatibleOPMInformation" />
+    <Symbol Name="GetCertificate" />
+    <Symbol Name="GetCertificateByHandle" />
+    <Symbol Name="GetCertificateSize" />
+    <Symbol Name="GetCertificateSizeByHandle" />
+    <Symbol Name="GetCharABCWidthsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetCharABCWidthsFloatA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetCharABCWidthsFloatI" />
+    <Symbol Name="GetCharABCWidthsFloatW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetCharABCWidthsI">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetCharABCWidthsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetCharWidth32A">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetCharWidth32W">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetCharWidthA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetCharWidthFloatA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetCharWidthFloatW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetCharWidthI">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetCharWidthInfo" />
+    <Symbol Name="GetCharWidthW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetCharacterPlacementA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetCharacterPlacementW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetClipBox">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetClipRgn">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetColorAdjustment">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetColorSpace">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetCurrentDpiInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetCurrentObject">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetCurrentPositionEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetDCBrushColor">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetDCDpiScaleValue" />
+    <Symbol Name="GetDCOrgEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetDCPenColor">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetDIBColorTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetDIBits">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetDeviceCaps">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetDeviceGammaRamp">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetETM" />
+    <Symbol Name="GetEUDCTimeStamp" />
+    <Symbol Name="GetEUDCTimeStampExW" />
+    <Symbol Name="GetEnhMetaFileA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetEnhMetaFileBits">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetEnhMetaFileDescriptionA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetEnhMetaFileDescriptionW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetEnhMetaFileHeader">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetEnhMetaFilePaletteEntries">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetEnhMetaFilePixelFormat">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetEnhMetaFileW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetFontAssocStatus">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetFontData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetFontFileData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetFontFileInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetFontLanguageInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetFontRealizationInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetFontResourceInfoW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetFontUnicodeRanges">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetGlyphIndicesA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetGlyphIndicesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetGlyphOutline">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetGlyphOutlineA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetGlyphOutlineW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetGlyphOutlineWow" />
+    <Symbol Name="GetGraphicsMode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetHFONT" />
+    <Symbol Name="GetICMProfileA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetICMProfileW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetKerningPairs">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetKerningPairsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetKerningPairsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetLayout">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetLogColorSpaceA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetLogColorSpaceW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetMapMode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetMetaFileA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetMetaFileBitsEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetMetaFileW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetMetaRgn">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetMiterLimit">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetNearestColor">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetNearestPaletteIndex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetNumberOfPhysicalMonitors" />
+    <Symbol Name="GetOPMInformation" />
+    <Symbol Name="GetOPMRandomNumber" />
+    <Symbol Name="GetObjectA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetObjectType">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetObjectW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetOutlineTextMetricsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetOutlineTextMetricsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetPaletteEntries">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetPath">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetPhysicalMonitorDescription" />
+    <Symbol Name="GetPhysicalMonitors" />
+    <Symbol Name="GetPixel">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetPixelFormat">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetPolyFillMode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetProcessSessionFonts">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetROP2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetRandomRgn">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetRasterizerCaps">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetRegionData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetRelAbs">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetRgnBox">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetStockObject">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetStretchBltMode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetStringBitmapA" />
+    <Symbol Name="GetStringBitmapW" />
+    <Symbol Name="GetSuggestedOPMProtectedOutputArraySize" />
+    <Symbol Name="GetSystemPaletteEntries">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetSystemPaletteUse">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetTextAlign">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetTextCharacterExtra">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetTextCharset">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetTextCharsetInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetTextColor">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetTextExtentExPointA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetTextExtentExPointI">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetTextExtentExPointW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetTextExtentExPointWPri" />
+    <Symbol Name="GetTextExtentPoint32A">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetTextExtentPoint32W">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetTextExtentPointA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetTextExtentPointI">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetTextExtentPointW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetTextFaceA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetTextFaceAliasW" />
+    <Symbol Name="GetTextFaceW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetTextMetricsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetTextMetricsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetTransform" />
+    <Symbol Name="GetViewportExtEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetViewportOrgEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetWinMetaFileBits">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetWindowExtEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetWindowOrgEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetWorldTransform">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HT_Get8BPPFormatPalette">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HT_Get8BPPMaskPalette">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalDeleteDC" />
+    <Symbol Name="IntersectClipRect">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InvertRgn">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IsValidEnhMetaRecord" />
+    <Symbol Name="IsValidEnhMetaRecordOffExt" />
+    <Symbol Name="LPtoDP">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LineDDA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LineTo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LpkDrawTextEx">
+      <ForwardSymbol>ext-ms-win-gdi-internal-desktop-l1-1-0.LpkDrawTextEx</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="LpkEditControl">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LpkExtTextOut">
+      <ForwardSymbol>ext-ms-win-gdi-internal-desktop-l1-1-0.LpkExtTextOut</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="LpkGetCharacterPlacement">
+      <ForwardSymbol>ext-ms-win-gdi-internal-desktop-l1-1-0.LpkGetCharacterPlacement</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="LpkGetEditControl" />
+    <Symbol Name="LpkGetTextExtentExPoint">
+      <ForwardSymbol>ext-ms-win-gdi-internal-desktop-l1-1-0.LpkGetTextExtentExPoint</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="LpkInitialize">
+      <ForwardSymbol>ext-ms-win-gdi-internal-desktop-l1-1-0.LpkInitialize</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="LpkPSMTextOut">
+      <ForwardSymbol>ext-ms-win-gdi-internal-desktop-l1-1-0.LpkPSMTextOut</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="LpkPresent">
+      <ForwardSymbol>ext-ms-win-gdi-internal-desktop-l1-1-0.LpkPresent</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="LpkTabbedTextOut">
+      <ForwardSymbol>ext-ms-win-gdi-internal-desktop-l1-1-0.LpkTabbedTextOut</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="LpkUseGDIWidthCache">
+      <ForwardSymbol>ext-ms-win-gdi-internal-desktop-l1-1-0.LpkUseGDIWidthCache</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="LpkpEditControlSize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LpkpInitializeEditControl" />
+    <Symbol Name="MaskBlt">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MirrorRgn" />
+    <Symbol Name="ModerncoreGdiInit">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ModifyWorldTransform">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MoveToEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NamedEscape" />
+    <Symbol Name="OffsetClipRgn">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OffsetRgn">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OffsetViewportOrgEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OffsetWindowOrgEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PATHOBJ_bEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PATHOBJ_bEnumClipLines">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PATHOBJ_vEnumStart">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PATHOBJ_vEnumStartClipLines">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PATHOBJ_vGetBounds">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PaintRgn">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PatBlt">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathToRegion">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Pie">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PlayEnhMetaFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PlayEnhMetaFileRecord">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PlayMetaFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PlayMetaFileRecord">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PlgBlt">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PolyBezier">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PolyBezierTo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PolyDraw">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PolyPatBlt" />
+    <Symbol Name="PolyPolygon">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PolyPolyline">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PolyTextOutA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PolyTextOutW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Polygon">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Polyline">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PolylineTo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PtInRegion">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PtVisible">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="QueryFontAssocStatus" />
+    <Symbol Name="RealizePalette">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RectInRegion">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RectVisible">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Rectangle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RemoveFontMemResourceEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RemoveFontResourceA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RemoveFontResourceExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RemoveFontResourceExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RemoveFontResourceTracking" />
+    <Symbol Name="RemoveFontResourceW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResetDCA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResetDCW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResizePalette">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RestoreDC">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RoundRect">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="STROBJ_bEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="STROBJ_bEnumPositionsOnly">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="STROBJ_bGetAdvanceWidths">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="STROBJ_dwGetCodePage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="STROBJ_vEnumStart">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SaveDC">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ScaleRgn" />
+    <Symbol Name="ScaleValues" />
+    <Symbol Name="ScaleViewportExtEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ScaleWindowExtEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ScriptApplyDigitSubstitution">
+      <ForwardSymbol>ext-ms-win-gdi-internal-desktop-l1-1-0.ScriptApplyDigitSubstitution</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="ScriptApplyLogicalWidth">
+      <ForwardSymbol>ext-ms-win-gdi-internal-desktop-l1-1-0.ScriptApplyLogicalWidth</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="ScriptBreak">
+      <ForwardSymbol>ext-ms-win-usp10-l1-1-0.ScriptBreak</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="ScriptCPtoX">
+      <ForwardSymbol>ext-ms-win-gdi-internal-desktop-l1-1-0.ScriptCPtoX</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="ScriptCacheGetHeight">
+      <ForwardSymbol>ext-ms-win-gdi-internal-desktop-l1-1-0.ScriptCacheGetHeight</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="ScriptFreeCache">
+      <ForwardSymbol>ext-ms-win-usp10-l1-1-0.ScriptFreeCache</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="ScriptGetCMap">
+      <ForwardSymbol>ext-ms-win-usp10-l1-1-0.ScriptGetCMap</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="ScriptGetFontAlternateGlyphs">
+      <ForwardSymbol>ext-ms-win-gdi-internal-desktop-l1-1-0.ScriptGetFontAlternateGlyphs</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="ScriptGetFontFeatureTags">
+      <ForwardSymbol>ext-ms-win-gdi-internal-desktop-l1-1-0.ScriptGetFontFeatureTags</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="ScriptGetFontLanguageTags">
+      <ForwardSymbol>ext-ms-win-gdi-internal-desktop-l1-1-0.ScriptGetFontLanguageTags</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="ScriptGetFontProperties">
+      <ForwardSymbol>ext-ms-win-gdi-internal-desktop-l1-1-0.ScriptGetFontProperties</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="ScriptGetFontScriptTags">
+      <ForwardSymbol>ext-ms-win-gdi-internal-desktop-l1-1-0.ScriptGetFontScriptTags</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="ScriptGetGlyphABCWidth">
+      <ForwardSymbol>ext-ms-win-gdi-internal-desktop-l1-1-0.ScriptGetGlyphABCWidth</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="ScriptGetLogicalWidths">
+      <ForwardSymbol>ext-ms-win-usp10-l1-1-0.ScriptGetLogicalWidths</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="ScriptGetProperties">
+      <ForwardSymbol>ext-ms-win-usp10-l1-1-0.ScriptGetProperties</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="ScriptIsComplex">
+      <ForwardSymbol>ext-ms-win-gdi-internal-desktop-l1-1-0.ScriptIsComplex</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="ScriptItemize">
+      <ForwardSymbol>ext-ms-win-usp10-l1-1-0.ScriptItemize</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="ScriptItemizeOpenType">
+      <ForwardSymbol>ext-ms-win-gdi-internal-desktop-l1-1-0.ScriptItemizeOpenType</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="ScriptJustify">
+      <ForwardSymbol>ext-ms-win-gdi-internal-desktop-l1-1-0.ScriptJustify</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="ScriptLayout">
+      <ForwardSymbol>ext-ms-win-gdi-internal-desktop-l1-1-0.ScriptLayout</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="ScriptPlace">
+      <ForwardSymbol>ext-ms-win-usp10-l1-1-0.ScriptPlace</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="ScriptPlaceOpenType">
+      <ForwardSymbol>ext-ms-win-gdi-internal-desktop-l1-1-0.ScriptPlaceOpenType</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="ScriptPositionSingleGlyph">
+      <ForwardSymbol>ext-ms-win-gdi-internal-desktop-l1-1-0.ScriptPositionSingleGlyph</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="ScriptRecordDigitSubstitution">
+      <ForwardSymbol>ext-ms-win-gdi-internal-desktop-l1-1-0.ScriptRecordDigitSubstitution</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="ScriptShape">
+      <ForwardSymbol>ext-ms-win-usp10-l1-1-0.ScriptShape</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="ScriptShapeOpenType">
+      <ForwardSymbol>ext-ms-win-gdi-internal-desktop-l1-1-0.ScriptShapeOpenType</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="ScriptStringAnalyse">
+      <ForwardSymbol>ext-ms-win-usp10-l1-1-0.ScriptStringAnalyse</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="ScriptStringCPtoX">
+      <ForwardSymbol>ext-ms-win-gdi-internal-desktop-l1-1-0.ScriptStringCPtoX</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="ScriptStringFree">
+      <ForwardSymbol>ext-ms-win-usp10-l1-1-0.ScriptStringFree</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="ScriptStringGetLogicalWidths">
+      <ForwardSymbol>ext-ms-win-gdi-internal-desktop-l1-1-0.ScriptStringGetLogicalWidths</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="ScriptStringGetOrder">
+      <ForwardSymbol>ext-ms-win-gdi-internal-desktop-l1-1-0.ScriptStringGetOrder</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="ScriptStringOut">
+      <ForwardSymbol>ext-ms-win-gdi-internal-desktop-l1-1-0.ScriptStringOut</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="ScriptStringValidate">
+      <ForwardSymbol>ext-ms-win-usp10-l1-1-0.ScriptStringValidate</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="ScriptStringXtoCP">
+      <ForwardSymbol>ext-ms-win-gdi-internal-desktop-l1-1-0.ScriptStringXtoCP</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="ScriptString_pLogAttr">
+      <ForwardSymbol>ext-ms-win-usp10-l1-1-0.ScriptString_pLogAttr</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="ScriptString_pSize">
+      <ForwardSymbol>ext-ms-win-gdi-internal-desktop-l1-1-0.ScriptString_pSize</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="ScriptString_pcOutChars">
+      <ForwardSymbol>ext-ms-win-gdi-internal-desktop-l1-1-0.ScriptString_pcOutChars</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="ScriptSubstituteSingleGlyph">
+      <ForwardSymbol>ext-ms-win-usp10-l1-1-0.ScriptSubstituteSingleGlyph</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="ScriptTextOut">
+      <ForwardSymbol>ext-ms-win-usp10-l1-1-0.ScriptTextOut</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="ScriptXtoCP">
+      <ForwardSymbol>ext-ms-win-gdi-internal-desktop-l1-1-0.ScriptXtoCP</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="SelectBrushLocal">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SelectClipPath">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SelectClipRgn">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SelectFontLocal">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SelectObject">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SelectPalette">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetAbortProc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetArcDirection">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetBitmapAttributes" />
+    <Symbol Name="SetBitmapBits">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetBitmapDimensionEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetBkColor">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetBkMode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetBoundsRect">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetBrushAttributes" />
+    <Symbol Name="SetBrushOrgEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetColorAdjustment">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetColorSpace">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetDCBrushColor">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetDCDpiScaleValue" />
+    <Symbol Name="SetDCPenColor">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetDIBColorTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetDIBits">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetDIBitsToDevice">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetDeviceGammaRamp">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetEnhMetaFileBits">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetFontEnumeration">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetGraphicsMode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetICMMode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetICMProfileA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetICMProfileW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetLayout">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetLayoutWidth" />
+    <Symbol Name="SetMagicColors">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetMapMode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetMapperFlags">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetMetaFileBitsEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetMetaRgn">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetMiterLimit">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetOPMSigningKeyAndSequenceNumbers" />
+    <Symbol Name="SetPaletteEntries">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetPixel">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetPixelFormat">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetPixelV">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetPolyFillMode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetROP2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetRectRgn">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetRelAbs">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetStretchBltMode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetSystemPaletteUse">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetTextAlign">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetTextCharacterExtra">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetTextColor">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetTextJustification">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetViewportExtEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetViewportOrgEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetVirtualResolution" />
+    <Symbol Name="SetWinMetaFileBits">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetWindowExtEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetWindowOrgEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetWorldTransform">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StartDocA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StartDocW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StartFormPage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StartPage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StretchBlt">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StretchDIBits">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrokeAndFillPath">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrokePath">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SwapBuffers">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TextOutA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TextOutW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TranslateCharsetInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UnloadNetworkFonts" />
+    <Symbol Name="UnrealizeObject">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UpdateColors">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UpdateICMRegKeyA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UpdateICMRegKeyW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UspAllocCache">
+      <ForwardSymbol>ext-ms-win-gdi-internal-desktop-l1-1-0.UspAllocCache</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="UspAllocTemp">
+      <ForwardSymbol>ext-ms-win-gdi-internal-desktop-l1-1-0.UspAllocTemp</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="UspFreeMem">
+      <ForwardSymbol>ext-ms-win-gdi-internal-desktop-l1-1-0.UspFreeMem</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="WidenPath">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="XFORMOBJ_bApplyXform">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="XFORMOBJ_iGetXform">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="XLATEOBJ_cGetPalette">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="XLATEOBJ_hGetColorTransform">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="XLATEOBJ_iXlate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="XLATEOBJ_piVector">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="bCreateDCW" />
+    <Symbol Name="bDeleteLDC" />
+    <Symbol Name="bInitSystemAndFontsDirectoriesW" />
+    <Symbol Name="bMakePathNameW" />
+    <Symbol Name="cGetTTFFromFOT" />
+    <Symbol Name="fpClosePrinter">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ftsWordBreak">
+      <ForwardSymbol>ext-ms-win-gdi-internal-desktop-l1-1-0.ftsWordBreak</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="gMaxGdiHandleCount">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="gW32PID">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="g_systemCallFilterId">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="gdiPlaySpoolStream">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ghICM">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="hGetPEBHandle" />
+    <Symbol Name="pGdiDevCaps">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="pGdiSharedHandleTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="pGdiSharedMemory">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="pldcGet" />
+    <Symbol Name="semDxTrimNotification">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Gdi32.Lib" />
+        <StaticLibrary Name="um\x64\umpdddi.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="vSetPldc" />
+    <Symbol Name="[NONAME]" />
+  </ExportedSymbols>
+</DynamicLibrary>

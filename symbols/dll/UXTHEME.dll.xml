@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="UXTHEME.dll">
+  <OriginalPath>C:\Windows\system32\UXTHEME.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="BeginBufferedAnimation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BeginBufferedPaint">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BeginPanningFeedback" />
+    <Symbol Name="BufferedPaintClear">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BufferedPaintInit">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BufferedPaintRenderAnimation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BufferedPaintSetAlpha">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BufferedPaintStopAllAnimations">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BufferedPaintUnInit">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CloseThemeData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DllCanUnloadNow" />
+    <Symbol Name="DllGetActivationFactory" />
+    <Symbol Name="DllGetClassObject" />
+    <Symbol Name="DrawThemeBackground">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DrawThemeBackgroundEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DrawThemeEdge">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DrawThemeIcon">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DrawThemeParentBackground">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DrawThemeParentBackgroundEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DrawThemeText">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DrawThemeTextEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnableThemeDialogTexture">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnableTheming">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EndBufferedAnimation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EndBufferedPaint">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EndPanningFeedback" />
+    <Symbol Name="GetBufferedPaintBits">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetBufferedPaintDC">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetBufferedPaintTargetDC">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetBufferedPaintTargetRect">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetColorFromPreference">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetCurrentThemeName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetImmersiveColorFromColorSetEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetImmersiveUserColorSetPreference">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetThemeAnimationProperty">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetThemeAnimationTransform">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetThemeAppProperties">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetThemeBackgroundContentRect">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetThemeBackgroundExtent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetThemeBackgroundRegion">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetThemeBitmap">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetThemeBool">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetThemeColor">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetThemeDocumentationProperty">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetThemeEnumValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetThemeFilename">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetThemeFont">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetThemeInt">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetThemeIntList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetThemeMargins">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetThemeMetric">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetThemePartSize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetThemePosition">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetThemePropertyOrigin">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetThemeRect">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetThemeStream">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetThemeString">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetThemeSysBool">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetThemeSysColor">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetThemeSysColorBrush">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetThemeSysFont">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetThemeSysInt">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetThemeSysSize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetThemeSysString">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetThemeTextExtent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetThemeTextMetrics">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetThemeTimingFunction">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetThemeTransitionDuration">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetUserColorPreference">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetWindowTheme">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HitTestThemeBackground">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IsAppThemed">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IsCompositionActive">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IsThemeActive">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IsThemeBackgroundPartiallyTransparent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IsThemeDialogTextureEnabled">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IsThemePartDefined">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OpenThemeData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OpenThemeDataEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OpenThemeDataForDpi">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetThemeAppProperties">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetWindowTheme">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetWindowThemeAttribute">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ThemeInitApiHook">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Uxtheme.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UpdatePanningFeedback" />
+    <Symbol Name="[NONAME]" />
+  </ExportedSymbols>
+</DynamicLibrary>

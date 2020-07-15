@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\tsec.lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\tsec.lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="TSEC.dll" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="TAPICLIENT_ClientInitialize" />
+    <Symbol Name="TAPICLIENT_ClientShutdown" />
+    <Symbol Name="TAPICLIENT_Free" />
+    <Symbol Name="TAPICLIENT_GetDeviceAccess" />
+    <Symbol Name="TAPICLIENT_LineAddToConference" />
+    <Symbol Name="TAPICLIENT_LineBlindTransfer" />
+    <Symbol Name="TAPICLIENT_LineConfigDialog" />
+    <Symbol Name="TAPICLIENT_LineDial" />
+    <Symbol Name="TAPICLIENT_LineForward" />
+    <Symbol Name="TAPICLIENT_LineGenerateDigits" />
+    <Symbol Name="TAPICLIENT_LineMakeCall" />
+    <Symbol Name="TAPICLIENT_LineOpen" />
+    <Symbol Name="TAPICLIENT_LineRedirect" />
+    <Symbol Name="TAPICLIENT_LineSetCallData" />
+    <Symbol Name="TAPICLIENT_LineSetCallParams" />
+    <Symbol Name="TAPICLIENT_LineSetCallPrivilege" />
+    <Symbol Name="TAPICLIENT_LineSetCallTreatment" />
+    <Symbol Name="TAPICLIENT_LineSetCurrentLocation" />
+    <Symbol Name="TAPICLIENT_LineSetDevConfig" />
+    <Symbol Name="TAPICLIENT_LineSetLineDevStatus" />
+    <Symbol Name="TAPICLIENT_LineSetMediaControl" />
+    <Symbol Name="TAPICLIENT_LineSetMediaMode" />
+    <Symbol Name="TAPICLIENT_LineSetTerminal" />
+    <Symbol Name="TAPICLIENT_LineSetTollList" />
+    <Symbol Name="TAPICLIENT_Load" />
+    <Symbol Name="TAPICLIENT_PhoneConfigDialog" />
+    <Symbol Name="TAPICLIENT_PhoneOpen" />
+  </ExportedSymbols>
+</StaticLibrary>

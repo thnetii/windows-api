@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="NTLANMAN.dll">
+  <OriginalPath>C:\Windows\system32\NTLANMAN.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="DllMain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\ntlanman.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="I_SystemFocusDialog">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\ntlanman.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NPAddConnection">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\ntlanman.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NPAddConnection3">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\ntlanman.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NPCancelConnection">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\ntlanman.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NPCloseEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\ntlanman.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NPEnumResource" />
+    <Symbol Name="NPFormatNetworkName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\ntlanman.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NPGetCaps">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\ntlanman.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NPGetConnection" />
+    <Symbol Name="NPGetConnection3">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\ntlanman.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NPGetConnectionPerformance">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\ntlanman.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NPGetReconnectFlags" />
+    <Symbol Name="NPGetResourceInformation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\ntlanman.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NPGetResourceParent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\ntlanman.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NPGetUniversalName" />
+    <Symbol Name="NPGetUser">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\ntlanman.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NPOpenEnum" />
+    <Symbol Name="QueryAppInstanceVersion">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\ntlanman.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RegisterAppInstance">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\ntlanman.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RegisterAppInstanceVersion">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\ntlanman.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResetAllAppInstanceVersions">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\ntlanman.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetAppInstanceCsvFlags">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\ntlanman.lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

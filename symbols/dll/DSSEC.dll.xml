@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="DSSEC.dll">
+  <OriginalPath>C:\Windows\system32\DSSEC.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="DSCreateISecurityInfoObject">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dssec.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DSCreateISecurityInfoObjectEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dssec.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DSCreateSecurityPage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dssec.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DSEditSecurity">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dssec.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DllCanUnloadNow" />
+    <Symbol Name="DllGetClassObject" />
+  </ExportedSymbols>
+</DynamicLibrary>

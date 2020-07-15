@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="faultrep.dll">
+  <OriginalPath>C:\Windows\system32\faultrep.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="AddERExcludedApplicationA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\FaultRep.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AddERExcludedApplicationW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\FaultRep.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BasepReportFault" />
+    <Symbol Name="CancelHangReporting">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\FaultRep.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CheckForReadOnlyResourceFilter" />
+    <Symbol Name="CheckPerUserCrossProcessThrottle" />
+    <Symbol Name="DllCanUnloadNow" />
+    <Symbol Name="DllGetClassObject" />
+    <Symbol Name="ReportCoreHang">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\FaultRep.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ReportFault">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\FaultRep.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ReportHang">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\FaultRep.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UpdatePerUserLastCrossProcessCollectionTime" />
+    <Symbol Name="WerReportHang">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\FaultRep.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WerpGetDebugger">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\FaultRep.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WerpInitiateCrashReporting">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\FaultRep.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WerpLaunchAeDebug">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\FaultRep.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="[NONAME]" />
+  </ExportedSymbols>
+</DynamicLibrary>

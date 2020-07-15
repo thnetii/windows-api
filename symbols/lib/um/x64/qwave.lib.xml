@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\qwave.lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\qwave.lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="qwave.dll" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="QDLHPathDiagnostics" />
+    <Symbol Name="QDLHStartDiagnosingPath" />
+    <Symbol Name="QOSAddSocketToFlow" />
+    <Symbol Name="QOSCancel" />
+    <Symbol Name="QOSCloseHandle" />
+    <Symbol Name="QOSCreateHandle" />
+    <Symbol Name="QOSEnumerateFlows" />
+    <Symbol Name="QOSNotifyFlow" />
+    <Symbol Name="QOSQueryFlow" />
+    <Symbol Name="QOSRemoveSocketFromFlow" />
+    <Symbol Name="QOSSetFlow" />
+    <Symbol Name="QOSStartTrackingClient" />
+    <Symbol Name="QOSStopTrackingClient" />
+    <Symbol Name="ServiceMain" />
+  </ExportedSymbols>
+</StaticLibrary>

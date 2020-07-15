@@ -1,0 +1,795 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="RESUTILS.dll">
+  <OriginalPath>C:\Windows\system32\RESUTILS.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="CloseClusterCryptProvider">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusAddClusterHealthFault">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusGetClusterHealthFaults">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusRemoveClusterHealthFault">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusWorkerCheckTerminate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusWorkerCreate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusWorkerStart" />
+    <Symbol Name="ClusWorkerTerminate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusWorkerTerminateEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusWorkersTerminate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterClearBackupStateForSharedVolume">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterDecrypt">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterEncrypt">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterEnumTasks" />
+    <Symbol Name="ClusterFileShareCreate" />
+    <Symbol Name="ClusterFileShareDelete" />
+    <Symbol Name="ClusterFileShareUpdate" />
+    <Symbol Name="ClusterFreeTaskInfo" />
+    <Symbol Name="ClusterFreeTaskList" />
+    <Symbol Name="ClusterGetTaskNode" />
+    <Symbol Name="ClusterGetVolumeNameForVolumeMountPoint">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterGetVolumePathName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterIsClusterDisk" />
+    <Symbol Name="ClusterIsPathOnSharedVolume">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterPrepareSharedVolumeForBackup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterSharedVolumeCheckSnapshotPresence">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterSharedVolumeCreateSnapshot">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterSharedVolumeReleaseSnapshot">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ClusterTaskChangeFromXML" />
+    <Symbol Name="ClusterTaskChangeFromXMLFile" />
+    <Symbol Name="ClusterTaskChange_TS_V1" />
+    <Symbol Name="ClusterTaskCreateFromXML" />
+    <Symbol Name="ClusterTaskCreateFromXMLFile" />
+    <Symbol Name="ClusterTaskCreate_TS_V1" />
+    <Symbol Name="ClusterTaskDelete" />
+    <Symbol Name="ClusterTaskDelete_TS_V1" />
+    <Symbol Name="ClusterTaskExists_TS_V1" />
+    <Symbol Name="ClusterTaskQuery" />
+    <Symbol Name="CreateClusterStorageSpacesClustering">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateClusterStorageSpacesResourceLocator">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateClusterStorageSpacesSubProvider">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FreeClusterCrypt">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FreeClusterHealthFault">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FreeClusterHealthFaultArray">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitializeClusterHealthFault">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitializeClusterHealthFaultArray">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OpenClusterCryptProvider">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilAddUnknownProperties">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilCreateDirectoryTree">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilDupGroup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilDupParameterBlock">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilDupResource">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilDupString">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilEnumGroups">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilEnumGroupsEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilEnumPrivateProperties">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilEnumProperties">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilEnumResources">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilEnumResourcesEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilEnumResourcesEx2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilExpandEnvironmentStrings">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilFindBinaryProperty">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilFindDependentDiskResourceDriveLetter">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilFindDwordProperty">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilFindExpandSzProperty">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilFindExpandedSzProperty">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilFindFileTimeProperty">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilFindLongProperty">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilFindMultiSzProperty">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilFindSzProperty">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilFindULargeIntegerProperty">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilFreeEnvironment">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilFreeParameterBlock">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilGetAllProperties">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilGetBinaryProperty">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilGetBinaryValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilGetClusterGroupType">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilGetClusterId">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilGetClusterRoleState">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilGetCoreClusterResources">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilGetCoreClusterResourcesEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilGetCoreGroup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilGetDwordProperty">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilGetDwordValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilGetEnvironmentWithNetName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilGetFileTimeProperty">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilGetLongProperty">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilGetMultiSzProperty">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilGetPrivateProperties">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilGetProperties">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilGetPropertiesToParameterBlock">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilGetProperty">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilGetPropertyFormats">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilGetPropertySize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilGetQwordValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilGetResourceDependency">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilGetResourceDependencyByClass">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilGetResourceDependencyByClassEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilGetResourceDependencyByName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilGetResourceDependencyByNameAndClass">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilGetResourceDependencyByNameEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilGetResourceDependencyEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilGetResourceDependentIPAddressProps">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilGetResourceName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilGetResourceNameDependency">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilGetResourceNameDependencyEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilGetSzProperty">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilGetSzValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilGroupsEqual">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilIsPathValid">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilIsResourceClassEqual">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilLeftPaxosIsLessThanRight">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilNodeEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilPaxosComparer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilPropertyListFromParameterBlock">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilRemoveResourceServiceEnvironment">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilResourceDepEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilResourceTypesEqual">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilResourcesEqual">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilSetBinaryValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilSetDwordValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilSetExpandSzValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilSetMultiSzValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilSetPrivatePropertyList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilSetPropertyParameterBlock">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilSetPropertyParameterBlockEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilSetPropertyTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilSetPropertyTableEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilSetQwordValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilSetResourceServiceEnvironment">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilSetResourceServiceStartParameters">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilSetResourceServiceStartParametersEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilSetSzValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilSetUnknownProperties">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilSetValueEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilStartResourceService">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilStopResourceService">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilStopService">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilTerminateServiceProcessFromResDll">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilVerifyPrivatePropertyList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilVerifyPropertyTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilVerifyResourceService">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilVerifyService">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResUtilsDeleteKeyTree">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\resutils.lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

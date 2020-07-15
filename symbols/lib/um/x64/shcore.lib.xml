@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\shcore.lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\shcore.lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="api-ms-win-core-featurestaging-l1-1-0.dll" />
+    <DynamicLibrary Name="api-ms-win-core-featurestaging-l1-1-1.dll" />
+    <DynamicLibrary Name="api-ms-win-shcore-scaling-l1-1-0.dll" />
+    <DynamicLibrary Name="api-ms-win-shcore-scaling-l1-1-1.dll" />
+    <DynamicLibrary Name="api-ms-win-shcore-scaling-l1-1-2.dll" />
+    <DynamicLibrary Name="api-ms-win-shcore-stream-winrt-l1-1-0.dll" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="CreateRandomAccessStreamOnFile" />
+    <Symbol Name="CreateRandomAccessStreamOverStream" />
+    <Symbol Name="CreateStreamOverRandomAccessStream" />
+    <Symbol Name="GetScaleFactorForDevice" />
+    <Symbol Name="RegisterScaleChangeNotifications" />
+    <Symbol Name="RevokeScaleChangeNotifications" />
+    <Symbol Name="GetDpiForMonitor" />
+    <Symbol Name="GetProcessDpiAwareness" />
+    <Symbol Name="GetScaleFactorForMonitor" />
+    <Symbol Name="RegisterScaleChangeEvent" />
+    <Symbol Name="SetProcessDpiAwareness" />
+    <Symbol Name="UnregisterScaleChangeEvent" />
+    <Symbol Name="GetDpiForShellUIComponent" />
+    <Symbol Name="GetFeatureEnabledState" />
+    <Symbol Name="RecordFeatureError" />
+    <Symbol Name="RecordFeatureUsage" />
+    <Symbol Name="SubscribeFeatureStateChangeNotification" />
+    <Symbol Name="UnsubscribeFeatureStateChangeNotification" />
+    <Symbol Name="GetFeatureVariant" />
+  </ExportedSymbols>
+</StaticLibrary>

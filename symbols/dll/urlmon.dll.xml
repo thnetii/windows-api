@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="urlmon.dll">
+  <OriginalPath>C:\Windows\system32\urlmon.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="AsyncGetClassBits" />
+    <Symbol Name="AsyncInstallDistributionUnit" />
+    <Symbol Name="BindAsyncMoniker">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CAuthenticateHostUI_CreateInstance" />
+    <Symbol Name="CDLGetLongPathNameA" />
+    <Symbol Name="CDLGetLongPathNameW" />
+    <Symbol Name="CORPolicyProvider">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoGetClassObjectFromURL">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoInstall" />
+    <Symbol Name="CoInternetCanonicalizeIUri">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoInternetCombineIUri">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoInternetCombineUrl">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoInternetCombineUrlEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoInternetCompareUrl">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoInternetCreateSecurityManager">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoInternetCreateZoneManager">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoInternetFeatureSettingsChanged" />
+    <Symbol Name="CoInternetGetMobileBrowserAppCompatMode" />
+    <Symbol Name="CoInternetGetMobileBrowserForceDesktopMode" />
+    <Symbol Name="CoInternetGetProtocolFlags">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoInternetGetSecurityUrl">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoInternetGetSecurityUrlEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoInternetGetSession">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoInternetIsFeatureEnabled">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoInternetIsFeatureEnabledForIUri">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoInternetIsFeatureEnabledForUrl">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoInternetIsFeatureZoneElevationEnabled">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoInternetParseIUri">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoInternetParseUrl">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoInternetQueryInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoInternetSetFeatureEnabled">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CoInternetSetMobileBrowserAppCompatMode" />
+    <Symbol Name="CoInternetSetMobileBrowserForceDesktopMode" />
+    <Symbol Name="CompareSecurityIds">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CompatFlagsFromClsid">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CopyBindInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CopyStgMedium">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateAsyncBindCtx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateAsyncBindCtxEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateFormatEnumerator">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateIUriBuilder">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateURLMoniker">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateURLMonikerEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateURLMonikerEx2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateUri">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateUriFromMultiByteString">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateUriPriv">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateUriWithFragment">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DllCanUnloadNow" />
+    <Symbol Name="DllGetClassObject" />
+    <Symbol Name="DllInstall" />
+    <Symbol Name="DllRegisterServer" />
+    <Symbol Name="DllRegisterServerEx" />
+    <Symbol Name="DllUnregisterServer" />
+    <Symbol Name="Extract">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FaultInIEFeature">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FileBearsMarkOfTheWeb" />
+    <Symbol Name="FindMediaType">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FindMediaTypeClass">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FindMimeFromData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetAddSitesFileUrl" />
+    <Symbol Name="GetClassFileOrMime">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetClassURL">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetComponentIDFromCLSSPEC">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetIDNFlagsForUri" />
+    <Symbol Name="GetIUriPriv">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetIUriPriv2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetLabelsFromNamedHost">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetMarkOfTheWeb" />
+    <Symbol Name="GetPortFromUrlScheme" />
+    <Symbol Name="GetPropertyFromName" />
+    <Symbol Name="GetPropertyName" />
+    <Symbol Name="GetSoftwareUpdateInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetUrlmonThreadNotificationHwnd" />
+    <Symbol Name="GetZoneFromAlternateDataStreamEx" />
+    <Symbol Name="HlinkGoBack">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HlinkGoForward">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HlinkNavigateMoniker">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HlinkNavigateString">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HlinkSimpleNavigateToMoniker">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HlinkSimpleNavigateToString">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IECompatLogCSSFix" />
+    <Symbol Name="IEGetUserPrivateNamespaceName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IEInstallScope">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IntlPercentEncodeNormalize" />
+    <Symbol Name="IsAsyncMoniker">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IsDWORDProperty" />
+    <Symbol Name="IsIntranetAvailable" />
+    <Symbol Name="IsJITInProgress">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IsLoggingEnabledA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IsLoggingEnabledW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IsStringProperty" />
+    <Symbol Name="IsValidURL">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LaunchEdgeForDebug" />
+    <Symbol Name="MkParseDisplayNameEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ObtainUserAgentString">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PrivateCoInstall" />
+    <Symbol Name="QueryAssociations" />
+    <Symbol Name="QueryClsidAssociation" />
+    <Symbol Name="RegisterBindStatusCallback">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RegisterFormatEnumerator">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RegisterMediaTypeClass">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RegisterMediaTypes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RegisterWebPlatformPermanentSecurityManager" />
+    <Symbol Name="ReleaseBindInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RestrictHTTP2" />
+    <Symbol Name="RevokeBindStatusCallback">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RevokeFormatEnumerator">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetAccessForIEAppContainer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetSoftwareUpdateAdvertisementState">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ShouldDisplayPunycodeForUri" />
+    <Symbol Name="ShouldShowIntranetWarningSecband" />
+    <Symbol Name="ShowTrustAlertDialog" />
+    <Symbol Name="URLDownloadA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="URLDownloadToCacheFileA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="URLDownloadToCacheFileW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="URLDownloadToFileA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="URLDownloadToFileW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="URLDownloadW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="URLOpenBlockingStreamA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="URLOpenBlockingStreamW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="URLOpenPullStreamA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="URLOpenPullStreamW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="URLOpenStreamA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="URLOpenStreamW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UnregisterWebPlatformPermanentSecurityManager" />
+    <Symbol Name="UrlMkBuildVersion">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UrlMkGetSessionOption">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UrlMkSetSessionOption">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UrlmonCleanupCurrentThread" />
+    <Symbol Name="WriteHitLogging">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Urlmon.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ZonesReInit" />
+    <Symbol Name="[NONAME]" />
+  </ExportedSymbols>
+</DynamicLibrary>

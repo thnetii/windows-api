@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="GPEDIT.DLL">
+  <OriginalPath>C:\Windows\system32\GPEDIT.DLL</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="BrowseForGPO">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\GPEdit.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateGPOLink">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\GPEdit.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeleteAllGPOLinks">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\GPEdit.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeleteGPOLink">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\GPEdit.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DllCanUnloadNow" />
+    <Symbol Name="DllGetClassObject" />
+    <Symbol Name="ExportRSoPData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\GPEdit.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImportRSoPData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\GPEdit.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="[NONAME]" />
+  </ExportedSymbols>
+</DynamicLibrary>

@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="WSOCK32.dll">
+  <OriginalPath>C:\Windows\system32\WSOCK32.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="AcceptEx">
+      <ForwardSymbol>MSWSOCK.AcceptEx</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumProtocolsA">
+      <ForwardSymbol>MSWSOCK.EnumProtocolsA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumProtocolsW">
+      <ForwardSymbol>MSWSOCK.EnumProtocolsW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetAcceptExSockaddrs">
+      <ForwardSymbol>MSWSOCK.GetAcceptExSockaddrs</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetAddressByNameA">
+      <ForwardSymbol>MSWSOCK.GetAddressByNameA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetAddressByNameW">
+      <ForwardSymbol>MSWSOCK.GetAddressByNameW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetNameByTypeA">
+      <ForwardSymbol>MSWSOCK.GetNameByTypeA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetNameByTypeW">
+      <ForwardSymbol>MSWSOCK.GetNameByTypeW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetServiceA">
+      <ForwardSymbol>MSWSOCK.GetServiceA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetServiceW">
+      <ForwardSymbol>MSWSOCK.GetServiceW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetTypeByNameA">
+      <ForwardSymbol>MSWSOCK.GetTypeByNameA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetTypeByNameW">
+      <ForwardSymbol>MSWSOCK.GetTypeByNameW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MigrateWinsockConfiguration">
+      <ForwardSymbol>MSWSOCK.MigrateWinsockConfiguration</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NPLoadNameSpaces">
+      <ForwardSymbol>MSWSOCK.NPLoadNameSpaces</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetServiceA">
+      <ForwardSymbol>MSWSOCK.SetServiceA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetServiceW">
+      <ForwardSymbol>MSWSOCK.SetServiceW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TransmitFile">
+      <ForwardSymbol>MSWSOCK.TransmitFile</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WEP">
+      <ForwardSymbol>ws2_32.WEP</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSAAsyncGetHostByAddr">
+      <ForwardSymbol>ws2_32.WSAAsyncGetHostByAddr</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSAAsyncGetHostByName">
+      <ForwardSymbol>ws2_32.WSAAsyncGetHostByName</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSAAsyncGetProtoByName">
+      <ForwardSymbol>ws2_32.WSAAsyncGetProtoByName</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSAAsyncGetProtoByNumber">
+      <ForwardSymbol>ws2_32.WSAAsyncGetProtoByNumber</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSAAsyncGetServByName">
+      <ForwardSymbol>ws2_32.WSAAsyncGetServByName</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSAAsyncGetServByPort">
+      <ForwardSymbol>ws2_32.WSAAsyncGetServByPort</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSAAsyncSelect">
+      <ForwardSymbol>ws2_32.WSAAsyncSelect</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSACancelAsyncRequest">
+      <ForwardSymbol>ws2_32.WSACancelAsyncRequest</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSACancelBlockingCall">
+      <ForwardSymbol>ws2_32.WSACancelBlockingCall</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSACleanup">
+      <ForwardSymbol>ws2_32.WSACleanup</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSAGetLastError">
+      <ForwardSymbol>ws2_32.WSAGetLastError</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSAIsBlocking">
+      <ForwardSymbol>ws2_32.WSAIsBlocking</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSARecvEx">
+      <ForwardSymbol>MSWSOCK.WSARecvEx</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSASetBlockingHook">
+      <ForwardSymbol>ws2_32.WSASetBlockingHook</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSASetLastError">
+      <ForwardSymbol>ws2_32.WSASetLastError</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSAStartup">
+      <ForwardSymbol>ws2_32.WSAStartup</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSAUnhookBlockingHook">
+      <ForwardSymbol>ws2_32.WSAUnhookBlockingHook</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSApSetPostRoutine">
+      <ForwardSymbol>ws2_32.WSApSetPostRoutine</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="__WSAFDIsSet">
+      <ForwardSymbol>ws2_32.__WSAFDIsSet</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="accept">
+      <ForwardSymbol>ws2_32.accept</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="bind">
+      <ForwardSymbol>ws2_32.bind</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="closesocket">
+      <ForwardSymbol>ws2_32.closesocket</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="connect">
+      <ForwardSymbol>ws2_32.connect</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="dn_expand">
+      <ForwardSymbol>MSWSOCK.dn_expand</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="gethostbyaddr">
+      <ForwardSymbol>ws2_32.gethostbyaddr</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="gethostbyname">
+      <ForwardSymbol>ws2_32.gethostbyname</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="gethostname">
+      <ForwardSymbol>ws2_32.gethostname</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="getnetbyname">
+      <ForwardSymbol>MSWSOCK.getnetbyname</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="getpeername">
+      <ForwardSymbol>ws2_32.getpeername</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="getprotobyname">
+      <ForwardSymbol>ws2_32.getprotobyname</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="getprotobynumber">
+      <ForwardSymbol>ws2_32.getprotobynumber</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="getservbyname">
+      <ForwardSymbol>ws2_32.getservbyname</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="getservbyport">
+      <ForwardSymbol>ws2_32.getservbyport</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="getsockname">
+      <ForwardSymbol>ws2_32.getsockname</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="getsockopt">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="htonl">
+      <ForwardSymbol>ws2_32.htonl</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="htons">
+      <ForwardSymbol>ws2_32.htons</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="inet_addr">
+      <ForwardSymbol>ws2_32.inet_addr</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="inet_network">
+      <ForwardSymbol>MSWSOCK.inet_network</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="inet_ntoa">
+      <ForwardSymbol>ws2_32.inet_ntoa</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ioctlsocket">
+      <ForwardSymbol>ws2_32.ioctlsocket</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="listen">
+      <ForwardSymbol>ws2_32.listen</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ntohl">
+      <ForwardSymbol>ws2_32.ntohl</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ntohs">
+      <ForwardSymbol>ws2_32.ntohs</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="rcmd">
+      <ForwardSymbol>MSWSOCK.rcmd</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="recv">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="recvfrom">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="rexec">
+      <ForwardSymbol>MSWSOCK.rexec</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="rresvport">
+      <ForwardSymbol>MSWSOCK.rresvport</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="s_perror">
+      <ForwardSymbol>MSWSOCK.s_perror</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="select">
+      <ForwardSymbol>ws2_32.select</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="send">
+      <ForwardSymbol>ws2_32.send</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="sendto">
+      <ForwardSymbol>ws2_32.sendto</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="sethostname">
+      <ForwardSymbol>MSWSOCK.sethostname</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="setsockopt">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="shutdown">
+      <ForwardSymbol>ws2_32.shutdown</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="socket">
+      <ForwardSymbol>ws2_32.socket</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WSock32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

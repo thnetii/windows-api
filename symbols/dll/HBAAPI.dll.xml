@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="HBAAPI.dll">
+  <OriginalPath>C:\Windows\system32\HBAAPI.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="HBA_CloseAdapter">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBA_FreeLibrary">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBA_GetAdapterAttributes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBA_GetAdapterName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBA_GetAdapterPortAttributes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBA_GetBindingCapability">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBA_GetBindingSupport">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBA_GetDiscoveredPortAttributes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBA_GetEventBuffer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBA_GetFC4Statistics">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBA_GetFCPStatistics">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBA_GetFcpPersistentBinding">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBA_GetFcpTargetMapping">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBA_GetFcpTargetMappingV2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBA_GetNumberOfAdapters">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBA_GetPersistentBindingV2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBA_GetPortAttributesByWWN">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBA_GetPortStatistics">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBA_GetRNIDMgmtInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBA_GetVendorLibraryAttributes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBA_GetVersion">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBA_GetWrapperLibraryAttributes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBA_LoadLibrary">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBA_OpenAdapter">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBA_OpenAdapterByWWN">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBA_RefreshAdapterConfiguration">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBA_RefreshInformation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBA_RegisterForAdapterAddEvents">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBA_RegisterForAdapterEvents">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBA_RegisterForAdapterPortEvents">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBA_RegisterForAdapterPortStatEvents">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBA_RegisterForLinkEvents">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBA_RegisterForTargetEvents">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBA_RegisterLibrary">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBA_RegisterLibraryV2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBA_RemoveAllPersistentBindings">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBA_RemoveCallback">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBA_RemovePersistentBinding">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBA_ResetStatistics">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBA_ScsiInquiryV2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBA_ScsiReadCapacityV2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBA_ScsiReportLUNsV2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBA_SendCTPassThru">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBA_SendCTPassThruV2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBA_SendLIRR">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBA_SendRLS">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBA_SendRNID">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBA_SendRNIDV2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBA_SendRPL">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBA_SendRPS">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBA_SendReadCapacity">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBA_SendReportLUNs">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBA_SendSRL">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBA_SendScsiInquiry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBA_SetBindingSupport">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBA_SetPersistentBindingV2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HBA_SetRNIDMgmtInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HbaGetAdapterNameByDeviceInstanceId">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SMHBA_GetAdapterAttributes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SMHBA_GetAdapterPortAttributes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SMHBA_GetBindingCapability">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SMHBA_GetBindingSupport">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SMHBA_GetDiscoveredPortAttributes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SMHBA_GetFCPhyAttributes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SMHBA_GetLUNStatistics">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SMHBA_GetNumberOfPorts">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SMHBA_GetPersistentBinding">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SMHBA_GetPhyStatistics">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SMHBA_GetPortAttributesByWWN">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SMHBA_GetPortType">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SMHBA_GetProtocolStatistics">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SMHBA_GetSASPhyAttributes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SMHBA_GetTargetMapping">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SMHBA_GetVendorLibraryAttributes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SMHBA_GetVersion">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SMHBA_GetWrapperLibraryAttributes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SMHBA_RegisterForAdapterAddEvents">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SMHBA_RegisterForAdapterEvents">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SMHBA_RegisterForAdapterPhyStatEvents">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SMHBA_RegisterForAdapterPortEvents">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SMHBA_RegisterForAdapterPortStatEvents">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SMHBA_RegisterForTargetEvents">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SMHBA_RegisterLibrary">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SMHBA_RemoveAllPersistentBindings">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SMHBA_RemovePersistentBinding">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SMHBA_ScsiInquiry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SMHBA_ScsiReadCapacity">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SMHBA_ScsiReportLuns">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SMHBA_SendECHO">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SMHBA_SendSMPPassThru">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SMHBA_SendTEST">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SMHBA_SetBindingSupport">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SMHBA_SetPersistentBinding">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hbaapi.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

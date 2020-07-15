@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\wcmapi.lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\wcmapi.lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="wcmapi.dll" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="WcmAddRoutePolicy" />
+    <Symbol Name="WcmBeginIgnoreProfileList" />
+    <Symbol Name="WcmCancelOnDemandRequest" />
+    <Symbol Name="WcmCheckCapabilityStatus" />
+    <Symbol Name="WcmCloseHandle" />
+    <Symbol Name="WcmCloseOnDemandRequestHandle" />
+    <Symbol Name="WcmDeprovisionCapability" />
+    <Symbol Name="WcmEndIgnoreProfileList" />
+    <Symbol Name="WcmEnterConnectedStandby" />
+    <Symbol Name="WcmEnterNetQuiet" />
+    <Symbol Name="WcmEnumInterfaces" />
+    <Symbol Name="WcmExitConnectedStandby" />
+    <Symbol Name="WcmExitNetQuiet" />
+    <Symbol Name="WcmFreeMemory" />
+    <Symbol Name="WcmGetInterfaceContextTable" />
+    <Symbol Name="WcmGetInterfaceToken" />
+    <Symbol Name="WcmGetProfileList" />
+    <Symbol Name="WcmGetProfileListByPurpose" />
+    <Symbol Name="WcmGetRoutingHint" />
+    <Symbol Name="WcmOpenHandle" />
+    <Symbol Name="WcmOpenOnDemandRequestHandle" />
+    <Symbol Name="WcmOpenOnDemandRequestHandleByWwanProfileName" />
+    <Symbol Name="WcmOrderConnection" />
+    <Symbol Name="WcmQueryOnDemandRequestStateInfo" />
+    <Symbol Name="WcmQueryParameter" />
+    <Symbol Name="WcmQueryProperty" />
+    <Symbol Name="WcmRemoveMatchingRoutePolicy" />
+    <Symbol Name="WcmRemoveRoutePolicy" />
+    <Symbol Name="WcmResetIgnoreProfileList" />
+    <Symbol Name="WcmSetOperatorConnectionCost" />
+    <Symbol Name="WcmSetOperatorCycleData" />
+    <Symbol Name="WcmSetOperatorDataplanStatus" />
+    <Symbol Name="WcmSetParameter" />
+    <Symbol Name="WcmSetProfileList" />
+    <Symbol Name="WcmSetProperty" />
+    <Symbol Name="WcmStartOnDemandRequest" />
+    <Symbol Name="WcmUpdateCapabilityAccess" />
+  </ExportedSymbols>
+</StaticLibrary>

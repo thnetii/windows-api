@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="NTMARTA.dll">
+  <OriginalPath>C:\Windows\system32\NTMARTA.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="AccConvertAccessMaskToActrlAccess">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ntmarta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AccConvertAccessToSD">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ntmarta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AccConvertAccessToSecurityDescriptor">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ntmarta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AccConvertAclToAccess">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ntmarta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AccConvertSDToAccess">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ntmarta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AccFreeIndexArray">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ntmarta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AccGetAccessForTrustee">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ntmarta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AccGetExplicitEntries">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ntmarta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AccGetInheritanceSource">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ntmarta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AccLookupAccountName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ntmarta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AccLookupAccountSid">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ntmarta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AccLookupAccountTrustee">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ntmarta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AccProvCancelOperation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ntmarta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AccProvGetAccessInfoPerObjectType">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ntmarta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AccProvGetAllRights">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ntmarta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AccProvGetCapabilities">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ntmarta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AccProvGetOperationResults">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ntmarta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AccProvGetTrusteesAccess">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ntmarta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AccProvGrantAccessRights">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ntmarta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AccProvHandleGetAccessInfoPerObjectType">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ntmarta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AccProvHandleGetAllRights">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ntmarta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AccProvHandleGetTrusteesAccess">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ntmarta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AccProvHandleGrantAccessRights" />
+    <Symbol Name="AccProvHandleIsAccessAudited">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ntmarta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AccProvHandleIsObjectAccessible">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ntmarta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AccProvHandleRevokeAccessRights">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ntmarta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AccProvHandleRevokeAuditRights">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ntmarta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AccProvHandleSetAccessRights">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ntmarta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AccProvIsAccessAudited">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ntmarta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AccProvIsObjectAccessible">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ntmarta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AccProvRevokeAccessRights">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ntmarta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AccProvRevokeAuditRights">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ntmarta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AccProvSetAccessRights">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ntmarta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AccRewriteGetExplicitEntriesFromAcl">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ntmarta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AccRewriteGetHandleRights">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ntmarta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AccRewriteGetNamedRights">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ntmarta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AccRewriteSetEntriesInAcl">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ntmarta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AccRewriteSetHandleRights">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ntmarta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AccRewriteSetNamedRights">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ntmarta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AccSetEntriesInAList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ntmarta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AccTreeResetNamedSecurityInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ntmarta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EventGuidToName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ntmarta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EventNameFree">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ntmarta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetExplicitEntriesFromAclW" />
+    <Symbol Name="GetMartaExtensionInterface" />
+    <Symbol Name="GetNamedSecurityInfoW" />
+    <Symbol Name="GetSecurityInfo" />
+    <Symbol Name="SetEntriesInAclW" />
+    <Symbol Name="SetNamedSecurityInfoW" />
+    <Symbol Name="SetSecurityInfo" />
+  </ExportedSymbols>
+</DynamicLibrary>

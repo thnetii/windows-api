@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="cryptdll.dll">
+  <OriginalPath>C:\Windows\system32\cryptdll.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="CDBuildIntegrityVect">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CDBuildVect">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CDFindCommonCSystem">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CDFindCommonCSystemWithKey">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CDGenerateRandomBits">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CDGetIntegrityVect">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CDLocateCSystem">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CDLocateCheckSum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CDLocateRng">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CDRegisterCSystem">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CDRegisterCheckSum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CDRegisterRng">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HMACwithSHA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="KRBFXCF2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MD5Final">
+      <ForwardSymbol>NTDLL.MD5Final</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MD5Init">
+      <ForwardSymbol>NTDLL.MD5Init</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MD5Update">
+      <ForwardSymbol>NTDLL.MD5Update</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PBKDF2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="aesCTSDecryptMsg">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="aesCTSEncryptMsg">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\cryptdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

@@ -1,0 +1,2480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="SHELL32.dll">
+  <OriginalPath>C:\Windows\system32\SHELL32.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="AppCompat_RunDLLW" />
+    <Symbol Name="AssocCreateForClasses">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AssocGetDetailsOfPropKey">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CDefFolderMenu_Create2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CIDLData_CreateFromIDArray">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CStorageItem_GetValidatedStorageItemObject" />
+    <Symbol Name="CheckEscapesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CommandLineToArgvW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Control_RunDLL" />
+    <Symbol Name="Control_RunDLLA" />
+    <Symbol Name="Control_RunDLLAsUserW" />
+    <Symbol Name="Control_RunDLLW" />
+    <Symbol Name="CreateStorageItemFromPath_FullTrustCaller" />
+    <Symbol Name="CreateStorageItemFromPath_FullTrustCaller_ForPackage" />
+    <Symbol Name="CreateStorageItemFromPath_PartialTrustCaller" />
+    <Symbol Name="CreateStorageItemFromShellItem_FullTrustCaller">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateStorageItemFromShellItem_FullTrustCaller_ForPackage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateStorageItemFromShellItem_FullTrustCaller_ForPackage_WithProcessHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateStorageItemFromShellItem_FullTrustCaller_UseImplicitFlagsAndPackage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DAD_AutoScroll">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DAD_DragEnterEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DAD_DragEnterEx2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DAD_DragLeave">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DAD_DragMove">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DAD_SetDragImage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DAD_ShowDragImage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DllCanUnloadNow" />
+    <Symbol Name="DllGetActivationFactory" />
+    <Symbol Name="DllGetClassObject" />
+    <Symbol Name="DllGetVersion" />
+    <Symbol Name="DllInstall" />
+    <Symbol Name="DllRegisterServer" />
+    <Symbol Name="DllUnregisterServer" />
+    <Symbol Name="DoEnvironmentSubstA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DoEnvironmentSubstW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DragAcceptFiles">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DragFinish">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DragQueryFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DragQueryFileA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DragQueryFileAorW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DragQueryFileW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DragQueryPoint">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DriveType">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DuplicateIcon">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ExtractAssociatedIconA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ExtractAssociatedIconExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ExtractAssociatedIconExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ExtractAssociatedIconW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ExtractIconA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ExtractIconEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ExtractIconExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ExtractIconExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ExtractIconW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FindExecutableA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FindExecutableW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FreeIconList" />
+    <Symbol Name="GetCurrentProcessExplicitAppUserModelID">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetFileNameFromBrowse">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetSystemPersistedStorageItemList" />
+    <Symbol Name="ILAppendID">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ILClone">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ILCloneFirst">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ILCombine">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ILCreateFromPath">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ILCreateFromPathA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ILCreateFromPathW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ILFindChild">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ILFindLastID">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ILFree">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ILGetNext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ILGetSize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ILIsEqual">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ILIsParent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ILLoadFromStreamEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ILRemoveLastID">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ILSaveToStream">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitNetworkAddressControl">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InternalExtractIconListA" />
+    <Symbol Name="InternalExtractIconListW" />
+    <Symbol Name="IsDesktopExplorerProcess" />
+    <Symbol Name="IsLFNDrive">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IsLFNDriveA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IsLFNDriveW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IsNetDrive">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IsProcessAnExplorer" />
+    <Symbol Name="IsUserAnAdmin">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LaunchMSHelp_RunDLLW" />
+    <Symbol Name="OpenAs_RunDLL" />
+    <Symbol Name="OpenAs_RunDLLA" />
+    <Symbol Name="OpenAs_RunDLLW" />
+    <Symbol Name="OpenRegStream">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Options_RunDLL" />
+    <Symbol Name="Options_RunDLLA" />
+    <Symbol Name="Options_RunDLLW" />
+    <Symbol Name="PathCleanupSpec">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathGetShortPath">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathIsExe">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathIsSlowA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathIsSlowW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathMakeUniqueName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathQualify">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathResolve">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PathYetAnotherMakeUniqueName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PickIconDlg">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PifMgr_CloseProperties">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PifMgr_GetProperties">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PifMgr_OpenProperties">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PifMgr_SetProperties">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PrepareDiscForBurnRunDllW" />
+    <Symbol Name="PrintersGetCommand_RunDLL" />
+    <Symbol Name="PrintersGetCommand_RunDLLA" />
+    <Symbol Name="PrintersGetCommand_RunDLLW" />
+    <Symbol Name="ReadCabinetState">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RealDriveType">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RealShellExecuteA" />
+    <Symbol Name="RealShellExecuteExA" />
+    <Symbol Name="RealShellExecuteExW" />
+    <Symbol Name="RealShellExecuteW" />
+    <Symbol Name="RegenerateUserEnvironment">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RestartDialog">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RestartDialogEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RunAsNewUser_RunDLLW" />
+    <Symbol Name="SHAddDefaultPropertiesByExt">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHAddFromPropSheetExtArray">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHAddToRecentDocs">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHAlloc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHAppBarMessage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHAssocEnumHandlers">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHAssocEnumHandlersForProtocolByApplication">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHBindToFolderIDListParent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHBindToFolderIDListParentEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHBindToObject">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHBindToParent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHBrowseForFolder">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHBrowseForFolderA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHBrowseForFolderW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHCLSIDFromString">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHChangeNotification_Lock">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHChangeNotification_Unlock">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHChangeNotify">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHChangeNotifyDeregister">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHChangeNotifyRegister">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHChangeNotifyRegisterThread">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHChangeNotifySuspendResume" />
+    <Symbol Name="SHCloneSpecialIDList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHCoCreateInstance">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHCoCreateInstanceWorker">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHCreateAssociationRegistration">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHCreateCategoryEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHCreateDataObject">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHCreateDefaultContextMenu">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHCreateDefaultExtractIcon">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHCreateDefaultPropertiesOp">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHCreateDirectory">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHCreateDirectoryExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHCreateDirectoryExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHCreateDrvExtIcon">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHCreateFileExtractIconW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHCreateItemFromIDList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHCreateItemFromParsingName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHCreateItemFromRelativeName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHCreateItemInKnownFolder">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHCreateItemWithParent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHCreateLocalServerRunDll" />
+    <Symbol Name="SHCreateProcessAsUserW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHCreatePropSheetExtArray">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHCreateQueryCancelAutoPlayMoniker">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHCreateShellFolderView">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHCreateShellFolderViewEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHCreateShellItem">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHCreateShellItemArray">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHCreateShellItemArrayFromDataObject">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHCreateShellItemArrayFromIDLists">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHCreateShellItemArrayFromShellItem">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHCreateStdEnumFmtEtc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHDefExtractIconA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHDefExtractIconW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHDestroyPropSheetExtArray">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHDoDragDrop">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_AddToBackIconTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_AddToFrontIconTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_AreAllItemsAvailable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_BindToFilePlaceholderHandler">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_CCommonPlacesFolder_CreateInstance">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_CDBurn_CloseSession">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_CDBurn_DriveSupportedForDataBurn">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_CDBurn_Erase">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_CDBurn_GetCDInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_CDBurn_GetLiveFSDiscInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_CDBurn_GetStagingPathOrNormalPath">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_CDBurn_GetTaskInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_CDBurn_IsBlankDisc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_CDBurn_IsBlankDisc2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_CDBurn_IsLiveFS">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_CDBurn_OnDeviceChange">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_CDBurn_OnEject">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_CDBurn_OnMediaChange">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_CDefFolderMenu_Create2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_CDefFolderMenu_Create2Ex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_CDefFolderMenu_MergeMenu">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_CDrivesContextMenu_Create">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_CDrivesDropTarget_Create">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_CDrives_CreateSFVCB">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_CFSDropTarget_CreateInstance">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_CFSFolderCallback_Create">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_CFillPropertiesTask_CreateInstance">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_CLibraryDropTarget_CreateInstance">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_CLocationContextMenu_Create">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_CLocationFolderUI_CreateInstance">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_CMountPoint_DoAutorun">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_CMountPoint_DoAutorunPrompt">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_CMountPoint_IsAutoRunDriveAndEnabledByPolicy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_CMountPoint_ProcessAutoRunFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_CMountPoint_WantAutorunUI">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_CMountPoint_WantAutorunUIGetReady">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_CPL_CategoryIdArrayFromVariant">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_CPL_IsLegacyCanonicalNameListedUnderKey">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_CPL_ModifyWowDisplayName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_CRecentDocsContextMenu_CreateInstance">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_CSyncRootManager_CreateInstance">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_CTransferConfirmation_CreateInstance">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_CallFileCopyHooks">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_CanDisplayWin8CopyDialog">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_CloseAutoplayPrompt">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_CommandLineFromMsiDescriptor">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_CopyFilePlaceholderToNewFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_CopySecondaryTiles">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_CreateConfirmationInterrupt">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_CreateConflictInterrupt">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_CreateDefaultOperationDataProvider">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_CreateFileFolderContextMenu">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_CreateLinkInfoW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_CreatePlaceholderFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_CreateQosRecorder">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_CreateSharePointView">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_Create_IEnumUICommand">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_DestroyLinkInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_EncryptDirectory">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_EncryptedFileKeyInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_EnumCommonTasks">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_FilePlaceholder_BindToPrimaryStream">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_FilePlaceholder_CreateInstance">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_FreeEncryptedFileKeyInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_GenerateAppID">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_GetAppIDRoot">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_GetCommandProviderForFolderType">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_GetDPIAdjustedLogicalSize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_GetDiskCleanupPath">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_GetFileNameFromBrowse">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_GetIconOverlayManager">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_GetLinkInfoData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_GetPlaceholderStatesFromFileAttributesAndReparsePointTag">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_GetRatingBucket">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_GetSkyDriveNetworkStates">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_GetSqmableFileName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_GetThumbnailAdornerFromFactory">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_GetThumbnailAdornerFromFactory2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_HandleUnrecognizedFileSystem">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_IconCacheCreate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_IconCacheDestroy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_IconCacheHandleAssociationChanged">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_IconCacheRestore">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_IconCache_AboutToExtractIcons">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_IconCache_DoneExtractingIcons">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_IconCache_ExpandEnvAndSearchPath">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_IconCache_RememberRecentlyExtractedIconsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_IconOverlayManagerInit">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_IsGetKeyboardLayoutPresent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_IsSystemUpgradeInProgress">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_IsValidLinkInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_LegacyEnumSpecialTasksByType">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_LegacyEnumTasks">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_LookupBackIconIndex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_LookupFrontIconIndex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_NormalizeRating">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_NotifyLinkTrackingServiceOfMove">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_PifMgr_CloseProperties">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_PifMgr_GetProperties">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_PifMgr_OpenProperties">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_PifMgr_SetProperties">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_Printers_CreateBindInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_Printjob_GetPidl">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_PurgeSystemIcon">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_RefreshOverlayImages">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_ResolveLinkInfoW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_SHAddSparseIcon">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_SHCreateByValueOperationInterrupt">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_SHCreateDefaultContextMenu">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_SHCreateLocalServer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_SHCreateShellFolderView">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_SHDuplicateEncryptionInfoFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_SHEncryptFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_SHFormatDriveAsync">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_SHGetThreadUndoManager">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_SHGetUserNameW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_SHIsVirtualDevice">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_SHLaunchPropSheet">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_SHLogILFromFSIL">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_SHOpenWithDialog">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_SHStartNetConnectionDialogW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_SHUICommandFromGUID">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_SendToMenu_InvokeTargetedCommand">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_SendToMenu_VerifyTargetedCommand">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_SetPlaceholderReparsePointAttribute">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_SetPlaceholderReparsePointAttribute2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_ShowHideIconOnlyOnDesktop">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_SimpleRatingToFilterCondition">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_StampIconForFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_SuspendUndo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_TryVirtualDiscImageDriveEject">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_UpdateFilePlaceholderStates">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHELL32_VerifySaferTrust">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHEmptyRecycleBinA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHEmptyRecycleBinW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHEnableServiceObject">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHEnumerateUnreadMailAccountsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHEvaluateSystemCommandTemplate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHExtractIconsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHFileOperation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHFileOperationA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHFileOperationW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHFindFiles">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHFind_InitMenuPopup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHFlushSFCache">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHFormatDrive">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHFree">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHFreeNameMappings">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHGetAttributesFromDataObject">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHGetDataFromIDListA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHGetDataFromIDListW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHGetDesktopFolder">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHGetDiskFreeSpaceA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHGetDiskFreeSpaceExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHGetDiskFreeSpaceExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHGetDriveMedia">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHGetFileInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHGetFileInfoA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHGetFileInfoW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHGetFolderLocation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHGetFolderPathA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHGetFolderPathAndSubDirA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHGetFolderPathAndSubDirW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHGetFolderPathEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHGetFolderPathW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHGetIDListFromObject">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHGetIconOverlayIndexA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHGetIconOverlayIndexW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHGetImageList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHGetInstanceExplorer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHGetItemFromDataObject">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHGetItemFromObject">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHGetKnownFolderIDList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHGetKnownFolderItem">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHGetKnownFolderPath">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHGetLocalizedName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHGetMalloc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHGetNameFromIDList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHGetNewLinkInfo" />
+    <Symbol Name="SHGetNewLinkInfoA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHGetNewLinkInfoW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHGetPathFromIDList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHGetPathFromIDListA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHGetPathFromIDListEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHGetPathFromIDListW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHGetPropertyStoreForWindow">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHGetPropertyStoreFromIDList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHGetPropertyStoreFromParsingName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHGetRealIDL">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHGetSetFolderCustomSettings">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHGetSetSettings">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHGetSettings">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHGetSpecialFolderLocation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHGetSpecialFolderPathA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHGetSpecialFolderPathW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHGetStockIconInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHGetTemporaryPropertyForItem">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHGetUnreadMailCountW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHHandleUpdateImage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHHelpShortcuts_RunDLL" />
+    <Symbol Name="SHHelpShortcuts_RunDLLA" />
+    <Symbol Name="SHHelpShortcuts_RunDLLW" />
+    <Symbol Name="SHILCreateFromPath">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHInvokePrinterCommandA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHInvokePrinterCommandW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHIsFileAvailableOffline">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHLimitInputEdit">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHLoadInProc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHLoadNonloadedIconOverlayIdentifiers">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHMapPIDLToSystemImageListIndex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHMultiFileProperties">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHObjectProperties">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHOpenFolderAndSelectItems">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHOpenPropSheetW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHOpenWithDialog">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHParseDisplayName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHPathPrepareForWriteA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHPathPrepareForWriteW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHPropStgCreate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHPropStgReadMultiple">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHPropStgWriteMultiple">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHQueryRecycleBinA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHQueryRecycleBinW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHQueryUserNotificationState">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHRemoveLocalizedName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHReplaceFromPropSheetExtArray">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHResolveLibrary">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHRestricted">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHSetDefaultProperties">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHSetFolderPathA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHSetFolderPathW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHSetInstanceExplorer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHSetKnownFolderPath">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHSetLocalizedName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHSetTemporaryPropertyForItem">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHSetUnreadMailCountW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHShellFolderView_Message">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHShowManageLibraryUI">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHSimpleIDListFromPath">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHStartNetConnectionDialogW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHTestTokenMembership">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHUpdateImageA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHUpdateImageW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHUpdateRecycleBinIcon" />
+    <Symbol Name="SHValidateUNC">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetCurrentProcessExplicitAppUserModelID">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SheChangeDirA" />
+    <Symbol Name="SheChangeDirExW" />
+    <Symbol Name="SheGetDirA" />
+    <Symbol Name="SheSetCurDrive" />
+    <Symbol Name="ShellAboutA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ShellAboutW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ShellExec_RunDLL" />
+    <Symbol Name="ShellExec_RunDLLA" />
+    <Symbol Name="ShellExec_RunDLLW" />
+    <Symbol Name="ShellExecuteA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ShellExecuteEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ShellExecuteExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ShellExecuteExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ShellExecuteW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ShellHookProc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ShellMessageBoxA">
+      <ForwardSymbol>shlwapi.ShellMessageBoxA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ShellMessageBoxW">
+      <ForwardSymbol>shlwapi.ShellMessageBoxW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Shell_GetCachedImageIndex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Shell_GetCachedImageIndexA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Shell_GetCachedImageIndexW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Shell_GetImageLists">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Shell_MergeMenus">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Shell_NotifyIcon">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Shell_NotifyIconA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Shell_NotifyIconGetRect">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Shell_NotifyIconW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SignalFileOpen">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StgMakeUniqueName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrChrA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrChrIA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrChrIW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrChrW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrCmpNA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrCmpNIA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrCmpNIW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrCmpNW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrNCmpA" />
+    <Symbol Name="StrNCmpIA" />
+    <Symbol Name="StrNCmpIW" />
+    <Symbol Name="StrNCmpW" />
+    <Symbol Name="StrRChrA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrRChrIA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrRChrIW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrRChrW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrRStrA" />
+    <Symbol Name="StrRStrIA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrRStrIW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrRStrW" />
+    <Symbol Name="StrStrA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrStrIA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrStrIW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StrStrW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UsersLibrariesFolderUI_CreateInstance">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WOWShellExecute">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WaitForExplorerRestartW" />
+    <Symbol Name="Win32DeleteFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WriteCabinetState">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\shell32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="[NONAME]">
+      <ForwardSymbol>SHUNIMPL.#35</ForwardSymbol>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

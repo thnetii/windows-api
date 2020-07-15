@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="TOKENBINDING.dll">
+  <OriginalPath>C:\Windows\system32\TOKENBINDING.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="TokenBindingDeleteAllBindings">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\tokenbinding.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TokenBindingDeleteBinding">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\tokenbinding.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TokenBindingGenerateBinding">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\tokenbinding.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TokenBindingGenerateID">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\tokenbinding.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TokenBindingGenerateMessage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\tokenbinding.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TokenBindingGetHighestSupportedVersion" />
+    <Symbol Name="TokenBindingGetKeyTypesClient">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\tokenbinding.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TokenBindingGetKeyTypesServer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\tokenbinding.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TokenBindingVerifyMessage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\tokenbinding.lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

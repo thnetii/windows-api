@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="tbs.dll">
+  <OriginalPath>C:\Windows\system32\tbs.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="GetDeviceID">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\tbs.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetDeviceIDString">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\tbs.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetDeviceIDWithTimeout">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\tbs.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Tbsi_Context_Create">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\tbs.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Tbsi_Create_Attestation_From_Log" />
+    <Symbol Name="Tbsi_Create_Windows_Key">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\tbs.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Tbsi_FilterLog">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\tbs.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Tbsi_GetDeviceInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\tbs.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Tbsi_Get_OwnerAuth">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\tbs.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Tbsi_Get_TCG_Log">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\tbs.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Tbsi_Get_TCG_Log_Ex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\tbs.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Tbsi_Get_TCG_Logs" />
+    <Symbol Name="Tbsi_Physical_Presence_Command">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\tbs.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Tbsi_Revoke_Attestation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\tbs.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Tbsi_ShaHash">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\tbs.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Tbsip_Cancel_Commands">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\tbs.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Tbsip_Context_Close">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\tbs.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Tbsip_Submit_Command">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\tbs.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Tbsip_Submit_Command_NonBlocking">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\tbs.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Tbsip_TestInterruptInformation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\tbs.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="Tbsip_TestMorBit">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+        <StaticLibrary Name="um\x64\tbs.lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

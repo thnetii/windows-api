@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="APPHELP.dll">
+  <OriginalPath>C:\Windows\system32\APPHELP.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="AllowPermLayer" />
+    <Symbol Name="ApphelpCheckExe" />
+    <Symbol Name="ApphelpCheckIME" />
+    <Symbol Name="ApphelpCheckInstallShieldPackage" />
+    <Symbol Name="ApphelpCheckModule" />
+    <Symbol Name="ApphelpCheckMsiPackage" />
+    <Symbol Name="ApphelpCheckRunApp" />
+    <Symbol Name="ApphelpCheckRunAppEx" />
+    <Symbol Name="ApphelpCheckShellObject">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ApphelpChpeModSettingsFromQueryResult" />
+    <Symbol Name="ApphelpCreateAppcompatData" />
+    <Symbol Name="ApphelpFixMsiPackage" />
+    <Symbol Name="ApphelpFixMsiPackageExe" />
+    <Symbol Name="ApphelpFreeFileAttributes" />
+    <Symbol Name="ApphelpGetFileAttributes" />
+    <Symbol Name="ApphelpGetMsiProperties" />
+    <Symbol Name="ApphelpGetNTVDMInfo" />
+    <Symbol Name="ApphelpGetShimDebugLevel" />
+    <Symbol Name="ApphelpIsPortMonAllowed" />
+    <Symbol Name="ApphelpParseModuleData" />
+    <Symbol Name="ApphelpQueryModuleData" />
+    <Symbol Name="ApphelpQueryModuleDataEx" />
+    <Symbol Name="ApphelpShowDialog" />
+    <Symbol Name="ApphelpUpdateCacheEntry" />
+    <Symbol Name="GetPermLayers" />
+    <Symbol Name="SE_AddHookset" />
+    <Symbol Name="SE_CALLBACK_AddHook" />
+    <Symbol Name="SE_CALLBACK_Lookup" />
+    <Symbol Name="SE_COM_AddHook">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SE_COM_AddServer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SE_COM_HookInterface" />
+    <Symbol Name="SE_COM_HookObject" />
+    <Symbol Name="SE_COM_Lookup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SE_DllLoaded" />
+    <Symbol Name="SE_DllUnloaded" />
+    <Symbol Name="SE_DynamicShim" />
+    <Symbol Name="SE_GetHookAPIs" />
+    <Symbol Name="SE_GetMaxShimCount" />
+    <Symbol Name="SE_GetProcAddressForCaller" />
+    <Symbol Name="SE_GetProcAddressIgnoreIncExc" />
+    <Symbol Name="SE_GetProcAddressLoad" />
+    <Symbol Name="SE_GetShimCount" />
+    <Symbol Name="SE_GetShimId">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SE_InitializeEngine" />
+    <Symbol Name="SE_InstallAfterInit" />
+    <Symbol Name="SE_InstallBeforeInit" />
+    <Symbol Name="SE_IsShimDll" />
+    <Symbol Name="SE_LdrEntryRemoved" />
+    <Symbol Name="SE_LdrResolveDllName" />
+    <Symbol Name="SE_LookupAddress" />
+    <Symbol Name="SE_LookupCaller" />
+    <Symbol Name="SE_ProcessDying" />
+    <Symbol Name="SE_ShimDPF">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SE_ShimDllLoaded" />
+    <Symbol Name="SE_WINRT_AddHook">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SE_WINRT_HookObject">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SdbAddLayerTagRefToQuery" />
+    <Symbol Name="SdbApphelpNotify" />
+    <Symbol Name="SdbApphelpNotifyEx" />
+    <Symbol Name="SdbApphelpNotifyEx2" />
+    <Symbol Name="SdbBeginWriteListTag" />
+    <Symbol Name="SdbBuildCompatEnvVariables" />
+    <Symbol Name="SdbCloseApphelpInformation" />
+    <Symbol Name="SdbCloseDatabase" />
+    <Symbol Name="SdbCloseDatabaseWrite" />
+    <Symbol Name="SdbCloseLocalDatabase" />
+    <Symbol Name="SdbCommitIndexes" />
+    <Symbol Name="SdbCreateDatabase" />
+    <Symbol Name="SdbCreateHelpCenterURL" />
+    <Symbol Name="SdbCreateMsiTransformFile" />
+    <Symbol Name="SdbDeclareIndex" />
+    <Symbol Name="SdbDeletePermLayerKeys" />
+    <Symbol Name="SdbDumpSearchPathPartCaches" />
+    <Symbol Name="SdbEndWriteListTag" />
+    <Symbol Name="SdbEnumMsiTransforms" />
+    <Symbol Name="SdbEscapeApphelpURL" />
+    <Symbol Name="SdbFindCustomActionForPackage" />
+    <Symbol Name="SdbFindFirstDWORDIndexedTag" />
+    <Symbol Name="SdbFindFirstGUIDIndexedTag" />
+    <Symbol Name="SdbFindFirstMsiPackage" />
+    <Symbol Name="SdbFindFirstMsiPackage_Str" />
+    <Symbol Name="SdbFindFirstNamedTag" />
+    <Symbol Name="SdbFindFirstStringIndexedTag" />
+    <Symbol Name="SdbFindFirstTag" />
+    <Symbol Name="SdbFindFirstTagRef" />
+    <Symbol Name="SdbFindMsiPackageByID" />
+    <Symbol Name="SdbFindNextDWORDIndexedTag" />
+    <Symbol Name="SdbFindNextGUIDIndexedTag" />
+    <Symbol Name="SdbFindNextMsiPackage" />
+    <Symbol Name="SdbFindNextStringIndexedTag" />
+    <Symbol Name="SdbFindNextTag" />
+    <Symbol Name="SdbFindNextTagRef" />
+    <Symbol Name="SdbFormatAttribute" />
+    <Symbol Name="SdbFreeDatabaseInformation" />
+    <Symbol Name="SdbFreeFileAttributes" />
+    <Symbol Name="SdbFreeFileInfo" />
+    <Symbol Name="SdbFreeFlagInfo" />
+    <Symbol Name="SdbGUIDFromString" />
+    <Symbol Name="SdbGUIDToString" />
+    <Symbol Name="SdbGetAppCompatDataSize" />
+    <Symbol Name="SdbGetAppPatchDir" />
+    <Symbol Name="SdbGetBinaryTagData" />
+    <Symbol Name="SdbGetDatabaseGUID" />
+    <Symbol Name="SdbGetDatabaseID" />
+    <Symbol Name="SdbGetDatabaseInformation" />
+    <Symbol Name="SdbGetDatabaseInformationByName" />
+    <Symbol Name="SdbGetDatabaseMatch" />
+    <Symbol Name="SdbGetDatabaseVersion" />
+    <Symbol Name="SdbGetDllPath" />
+    <Symbol Name="SdbGetEntryFlags" />
+    <Symbol Name="SdbGetFileAttributes" />
+    <Symbol Name="SdbGetFileImageType" />
+    <Symbol Name="SdbGetFileImageTypeEx" />
+    <Symbol Name="SdbGetFileInfo" />
+    <Symbol Name="SdbGetFirstChild" />
+    <Symbol Name="SdbGetImageType" />
+    <Symbol Name="SdbGetIndex" />
+    <Symbol Name="SdbGetItemFromItemRef" />
+    <Symbol Name="SdbGetLayerName" />
+    <Symbol Name="SdbGetLayerTagRef" />
+    <Symbol Name="SdbGetLocalPDB" />
+    <Symbol Name="SdbGetMatchingExe" />
+    <Symbol Name="SdbGetMsiPackageInformation" />
+    <Symbol Name="SdbGetNamedLayer" />
+    <Symbol Name="SdbGetNextChild" />
+    <Symbol Name="SdbGetNthUserSdb" />
+    <Symbol Name="SdbGetPDBFromGUID" />
+    <Symbol Name="SdbGetPathCustomSdb" />
+    <Symbol Name="SdbGetPathSystemSdb" />
+    <Symbol Name="SdbGetPermLayerKeys" />
+    <Symbol Name="SdbGetShowDebugInfoOption" />
+    <Symbol Name="SdbGetShowDebugInfoOptionValue" />
+    <Symbol Name="SdbGetStandardDatabaseGUID" />
+    <Symbol Name="SdbGetStringTagPtr" />
+    <Symbol Name="SdbGetTagDataSize" />
+    <Symbol Name="SdbGetTagFromTagID" />
+    <Symbol Name="SdbGrabMatchingInfo" />
+    <Symbol Name="SdbGrabMatchingInfoEx" />
+    <Symbol Name="SdbInitDatabase" />
+    <Symbol Name="SdbInitDatabaseEx" />
+    <Symbol Name="SdbIsDbRuntimePlatformSupportedOnHost" />
+    <Symbol Name="SdbIsNullGUID" />
+    <Symbol Name="SdbIsStandardDatabase" />
+    <Symbol Name="SdbIsTagrefFromLocalDB" />
+    <Symbol Name="SdbIsTagrefFromMainDB" />
+    <Symbol Name="SdbLoadString" />
+    <Symbol Name="SdbMakeIndexKeyFromString" />
+    <Symbol Name="SdbOpenApphelpDetailsDatabase" />
+    <Symbol Name="SdbOpenApphelpDetailsDatabaseSP" />
+    <Symbol Name="SdbOpenApphelpInformation" />
+    <Symbol Name="SdbOpenApphelpInformationByID" />
+    <Symbol Name="SdbOpenApphelpResourceFile" />
+    <Symbol Name="SdbOpenDatabase" />
+    <Symbol Name="SdbOpenDbFromGuid" />
+    <Symbol Name="SdbOpenLocalDatabase" />
+    <Symbol Name="SdbPackAppCompatData" />
+    <Symbol Name="SdbQueryApphelpInformation" />
+    <Symbol Name="SdbQueryBlockUpgrade" />
+    <Symbol Name="SdbQueryContext" />
+    <Symbol Name="SdbQueryData" />
+    <Symbol Name="SdbQueryDataEx" />
+    <Symbol Name="SdbQueryDataExTagID" />
+    <Symbol Name="SdbQueryFlagInfo" />
+    <Symbol Name="SdbQueryFlagMask" />
+    <Symbol Name="SdbQueryName" />
+    <Symbol Name="SdbQueryReinstallUpgrade" />
+    <Symbol Name="SdbReadApphelpData" />
+    <Symbol Name="SdbReadApphelpDetailsData" />
+    <Symbol Name="SdbReadBYTETag" />
+    <Symbol Name="SdbReadBYTETagRef" />
+    <Symbol Name="SdbReadBinaryTag" />
+    <Symbol Name="SdbReadDWORDTag" />
+    <Symbol Name="SdbReadDWORDTagRef" />
+    <Symbol Name="SdbReadEntryInformation" />
+    <Symbol Name="SdbReadMsiTransformInfo" />
+    <Symbol Name="SdbReadPatchBits" />
+    <Symbol Name="SdbReadQWORDTag" />
+    <Symbol Name="SdbReadQWORDTagRef" />
+    <Symbol Name="SdbReadStringTag" />
+    <Symbol Name="SdbReadStringTagRef" />
+    <Symbol Name="SdbReadWORDTag" />
+    <Symbol Name="SdbReadWORDTagRef" />
+    <Symbol Name="SdbRegisterDatabase" />
+    <Symbol Name="SdbRegisterDatabaseEx" />
+    <Symbol Name="SdbReleaseDatabase" />
+    <Symbol Name="SdbReleaseMatchingExe" />
+    <Symbol Name="SdbResolveDatabase" />
+    <Symbol Name="SdbSetApphelpDebugParameters" />
+    <Symbol Name="SdbSetEntryFlags" />
+    <Symbol Name="SdbSetImageType" />
+    <Symbol Name="SdbSetPermLayerKeys" />
+    <Symbol Name="SdbShowApphelpDialog" />
+    <Symbol Name="SdbShowApphelpFromQuery" />
+    <Symbol Name="SdbStartIndexing" />
+    <Symbol Name="SdbStopIndexing" />
+    <Symbol Name="SdbStringDuplicate" />
+    <Symbol Name="SdbStringReplace" />
+    <Symbol Name="SdbStringReplaceArray" />
+    <Symbol Name="SdbTagIDToTagRef" />
+    <Symbol Name="SdbTagRefToTagID" />
+    <Symbol Name="SdbTagToString" />
+    <Symbol Name="SdbUnpackAppCompatData" />
+    <Symbol Name="SdbUnpackQueryResult" />
+    <Symbol Name="SdbUnregisterDatabase" />
+    <Symbol Name="SdbWriteBYTETag" />
+    <Symbol Name="SdbWriteBinaryTag" />
+    <Symbol Name="SdbWriteBinaryTagFromFile" />
+    <Symbol Name="SdbWriteDWORDTag" />
+    <Symbol Name="SdbWriteNULLTag" />
+    <Symbol Name="SdbWriteQWORDTag" />
+    <Symbol Name="SdbWriteStringRefTag" />
+    <Symbol Name="SdbWriteStringTag" />
+    <Symbol Name="SdbWriteStringTagDirect" />
+    <Symbol Name="SdbWriteWORDTag" />
+    <Symbol Name="SetPermLayerState" />
+    <Symbol Name="SetPermLayerStateEx" />
+    <Symbol Name="SetPermLayers" />
+    <Symbol Name="ShimDbgPrint" />
+    <Symbol Name="ShimDumpCache" />
+    <Symbol Name="ShimFlushCache" />
+    <Symbol Name="[NONAME]" />
+  </ExportedSymbols>
+</DynamicLibrary>

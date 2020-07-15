@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\PeerDist.lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\PeerDist.lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="PeerDist.dll" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="PeerDistClientAddContentInformation" />
+    <Symbol Name="PeerDistClientAddData" />
+    <Symbol Name="PeerDistClientBlockRead" />
+    <Symbol Name="PeerDistClientCancelAsyncOperation" />
+    <Symbol Name="PeerDistClientCloseContent" />
+    <Symbol Name="PeerDistClientCompleteContentInformation" />
+    <Symbol Name="PeerDistClientFlushContent" />
+    <Symbol Name="PeerDistClientGetInformationByHandle" />
+    <Symbol Name="PeerDistClientOpenContent" />
+    <Symbol Name="PeerDistClientStreamRead" />
+    <Symbol Name="PeerDistGetOverlappedResult" />
+    <Symbol Name="PeerDistGetStatus" />
+    <Symbol Name="PeerDistGetStatusEx" />
+    <Symbol Name="PeerDistRegisterForStatusChangeNotification" />
+    <Symbol Name="PeerDistRegisterForStatusChangeNotificationEx" />
+    <Symbol Name="PeerDistServerCancelAsyncOperation" />
+    <Symbol Name="PeerDistServerCloseContentInformation" />
+    <Symbol Name="PeerDistServerCloseStreamHandle" />
+    <Symbol Name="PeerDistServerOpenContentInformation" />
+    <Symbol Name="PeerDistServerOpenContentInformationEx" />
+    <Symbol Name="PeerDistServerPublishAddToStream" />
+    <Symbol Name="PeerDistServerPublishCompleteStream" />
+    <Symbol Name="PeerDistServerPublishStream" />
+    <Symbol Name="PeerDistServerRetrieveContentInformation" />
+    <Symbol Name="PeerDistServerUnpublish" />
+    <Symbol Name="PeerDistShutdown" />
+    <Symbol Name="PeerDistStartup" />
+    <Symbol Name="PeerDistUnregisterForStatusChangeNotification" />
+  </ExportedSymbols>
+</StaticLibrary>

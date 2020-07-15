@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\cldapi.lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\cldapi.lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="CLDAPI.dll" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="CfAbortHydration" />
+    <Symbol Name="CfCloseAppPolicy" />
+    <Symbol Name="CfCloseHandle" />
+    <Symbol Name="CfConnectSyncRoot" />
+    <Symbol Name="CfConvertToPlaceholder" />
+    <Symbol Name="CfCreatePlaceholders" />
+    <Symbol Name="CfDehydratePlaceholder" />
+    <Symbol Name="CfDisconnectSyncRoot" />
+    <Symbol Name="CfEnumAppPolicy" />
+    <Symbol Name="CfExecute" />
+    <Symbol Name="CfGetCorrelationVector" />
+    <Symbol Name="CfGetLastSyncStatus" />
+    <Symbol Name="CfGetPlaceholderInfo" />
+    <Symbol Name="CfGetPlaceholderRangeInfo" />
+    <Symbol Name="CfGetPlaceholderStateFromAttributeTag" />
+    <Symbol Name="CfGetPlaceholderStateFromFileInfo" />
+    <Symbol Name="CfGetPlaceholderStateFromFindData" />
+    <Symbol Name="CfGetPlatformInfo" />
+    <Symbol Name="CfGetSyncRootInfoByHandle" />
+    <Symbol Name="CfGetSyncRootInfoByPath" />
+    <Symbol Name="CfGetTransferKey" />
+    <Symbol Name="CfGetWin32HandleFromProtectedHandle" />
+    <Symbol Name="CfHydratePlaceholder" />
+    <Symbol Name="CfLockProperties" />
+    <Symbol Name="CfOpenAppPolicy" />
+    <Symbol Name="CfOpenFileWithOplock" />
+    <Symbol Name="CfOpenProgressEvent" />
+    <Symbol Name="CfQueryProgress" />
+    <Symbol Name="CfQuerySyncProviderStatus" />
+    <Symbol Name="CfReferenceProtectedHandle" />
+    <Symbol Name="CfRegisterSyncRoot" />
+    <Symbol Name="CfReleaseProtectedHandle" />
+    <Symbol Name="CfReleaseTransferKey" />
+    <Symbol Name="CfReportProviderProgress" />
+    <Symbol Name="CfReportSyncStatus" />
+    <Symbol Name="CfRetrieveProperties" />
+    <Symbol Name="CfRevertPlaceholder" />
+    <Symbol Name="CfSetAppPolicy" />
+    <Symbol Name="CfSetCorrelationVector" />
+    <Symbol Name="CfSetInSyncState" />
+    <Symbol Name="CfSetPinState" />
+    <Symbol Name="CfStoreProperties" />
+    <Symbol Name="CfUnlockProperties" />
+    <Symbol Name="CfUnregisterSyncRoot" />
+    <Symbol Name="CfUpdatePlaceholder" />
+    <Symbol Name="CfUpdateSyncProviderStatus" />
+  </ExportedSymbols>
+</StaticLibrary>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="dxgi.dll">
+  <OriginalPath>C:\Windows\system32\dxgi.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="ApplyCompatResolutionQuirking" />
+    <Symbol Name="CompatString" />
+    <Symbol Name="CompatValue" />
+    <Symbol Name="CreateDXGIFactory">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dxgi.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateDXGIFactory1">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dxgi.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateDXGIFactory2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dxgi.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\WindowsApp.lib" />
+        <StaticLibrary Name="um\x64\WindowsApp_downlevel.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DXGID3D10CreateDevice">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dxgi.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DXGID3D10CreateLayeredDevice">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dxgi.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DXGID3D10ETWRundown" />
+    <Symbol Name="DXGID3D10GetLayeredDeviceSize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dxgi.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DXGID3D10RegisterLayers">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dxgi.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DXGIDeclareAdapterRemovalSupport">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dxgi.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DXGIDumpJournal" />
+    <Symbol Name="DXGIGetDebugInterface1">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dxgi.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DXGIReportAdapterConfiguration">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\dxgi.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DXGIRevertToSxS" />
+    <Symbol Name="PIXBeginCapture" />
+    <Symbol Name="PIXEndCapture" />
+    <Symbol Name="PIXGetCaptureState" />
+    <Symbol Name="SetAppCompatStringPointer" />
+    <Symbol Name="UpdateHMDEmulationStatus" />
+  </ExportedSymbols>
+</DynamicLibrary>

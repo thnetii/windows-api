@@ -1,0 +1,1418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="NETAPI32.dll">
+  <OriginalPath>C:\Windows\system32\NETAPI32.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="DavAddConnection">
+      <ForwardSymbol>ext-ms-win-rdr-davhlpr-l1-1-0.DavAddConnection</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DavDeleteConnection">
+      <ForwardSymbol>ext-ms-win-rdr-davhlpr-l1-1-0.DavDeleteConnection</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DavFlushFile">
+      <ForwardSymbol>ext-ms-win-rdr-davhlpr-l1-1-0.DavFlushFile</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DavGetExtendedError">
+      <ForwardSymbol>ext-ms-win-rdr-davhlpr-l1-1-0.DavGetExtendedError</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DavGetHTTPFromUNCPath">
+      <ForwardSymbol>ext-ms-win-rdr-davhlpr-l1-1-0.DavGetHTTPFromUNCPath</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DavGetUNCFromHTTPPath">
+      <ForwardSymbol>ext-ms-win-rdr-davhlpr-l1-1-0.DavGetUNCFromHTTPPath</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsAddressToSiteNamesA">
+      <ForwardSymbol>LOGONCLI.DsAddressToSiteNamesA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsAddressToSiteNamesExA">
+      <ForwardSymbol>LOGONCLI.DsAddressToSiteNamesExA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsAddressToSiteNamesExW">
+      <ForwardSymbol>LOGONCLI.DsAddressToSiteNamesExW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsAddressToSiteNamesW">
+      <ForwardSymbol>LOGONCLI.DsAddressToSiteNamesW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsDeregisterDnsHostRecordsA">
+      <ForwardSymbol>LOGONCLI.DsDeregisterDnsHostRecordsA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsDeregisterDnsHostRecordsW">
+      <ForwardSymbol>LOGONCLI.DsDeregisterDnsHostRecordsW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsEnumerateDomainTrustsA">
+      <ForwardSymbol>LOGONCLI.DsEnumerateDomainTrustsA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsEnumerateDomainTrustsW">
+      <ForwardSymbol>LOGONCLI.DsEnumerateDomainTrustsW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsGetDcCloseW">
+      <ForwardSymbol>LOGONCLI.DsGetDcCloseW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsGetDcNameA">
+      <ForwardSymbol>LOGONCLI.DsGetDcNameA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsGetDcNameW">
+      <ForwardSymbol>LOGONCLI.DsGetDcNameW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsGetDcNameWithAccountA">
+      <ForwardSymbol>LOGONCLI.DsGetDcNameWithAccountA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsGetDcNameWithAccountW">
+      <ForwardSymbol>LOGONCLI.DsGetDcNameWithAccountW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsGetDcNextA">
+      <ForwardSymbol>LOGONCLI.DsGetDcNextA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsGetDcNextW">
+      <ForwardSymbol>LOGONCLI.DsGetDcNextW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsGetDcOpenA">
+      <ForwardSymbol>LOGONCLI.DsGetDcOpenA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsGetDcOpenW">
+      <ForwardSymbol>LOGONCLI.DsGetDcOpenW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsGetDcSiteCoverageA">
+      <ForwardSymbol>LOGONCLI.DsGetDcSiteCoverageA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsGetDcSiteCoverageW">
+      <ForwardSymbol>LOGONCLI.DsGetDcSiteCoverageW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsGetForestTrustInformationW">
+      <ForwardSymbol>LOGONCLI.DsGetForestTrustInformationW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsGetSiteNameA">
+      <ForwardSymbol>LOGONCLI.DsGetSiteNameA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsGetSiteNameW">
+      <ForwardSymbol>LOGONCLI.DsGetSiteNameW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsMergeForestTrustInformationW">
+      <ForwardSymbol>LOGONCLI.DsMergeForestTrustInformationW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsRoleFreeMemory">
+      <ForwardSymbol>DSROLE.DsRoleFreeMemory</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsRoleGetPrimaryDomainInformation">
+      <ForwardSymbol>DSROLE.DsRoleGetPrimaryDomainInformation</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsValidateSubnetNameA">
+      <ForwardSymbol>LOGONCLI.DsValidateSubnetNameA</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DsValidateSubnetNameW">
+      <ForwardSymbol>LOGONCLI.DsValidateSubnetNameW</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="I_BrowserSetNetlogonState" />
+    <Symbol Name="I_DsUpdateReadOnlyServerDnsRecords">
+      <ForwardSymbol>LOGONCLI.I_DsUpdateReadOnlyServerDnsRecords</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="I_NetAccountDeltas">
+      <ForwardSymbol>LOGONCLI.I_NetAccountDeltas</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="I_NetAccountSync">
+      <ForwardSymbol>LOGONCLI.I_NetAccountSync</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="I_NetChainSetClientAttributes">
+      <ForwardSymbol>LOGONCLI.I_NetChainSetClientAttributes</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="I_NetChainSetClientAttributes2">
+      <ForwardSymbol>LOGONCLI.I_NetChainSetClientAttributes2</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="I_NetDatabaseDeltas">
+      <ForwardSymbol>LOGONCLI.I_NetDatabaseDeltas</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="I_NetDatabaseRedo">
+      <ForwardSymbol>LOGONCLI.I_NetDatabaseRedo</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="I_NetDatabaseSync">
+      <ForwardSymbol>LOGONCLI.I_NetDatabaseSync</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="I_NetDatabaseSync2">
+      <ForwardSymbol>LOGONCLI.I_NetDatabaseSync2</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="I_NetDfsGetVersion">
+      <ForwardSymbol>SRVCLI.I_NetDfsGetVersion</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="I_NetDfsIsThisADomainName">
+      <ForwardSymbol>DFSCLI.I_NetDfsIsThisADomainName</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="I_NetGetDCList">
+      <ForwardSymbol>LOGONCLI.I_NetGetDCList</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="I_NetGetForestTrustInformation">
+      <ForwardSymbol>LOGONCLI.I_NetGetForestTrustInformation</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="I_NetLogonControl">
+      <ForwardSymbol>LOGONCLI.I_NetLogonControl</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="I_NetLogonControl2">
+      <ForwardSymbol>LOGONCLI.I_NetLogonControl2</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="I_NetLogonGetDomainInfo">
+      <ForwardSymbol>LOGONCLI.I_NetLogonGetDomainInfo</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="I_NetLogonSamLogoff">
+      <ForwardSymbol>LOGONCLI.I_NetLogonSamLogoff</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="I_NetLogonSamLogon">
+      <ForwardSymbol>LOGONCLI.I_NetLogonSamLogon</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="I_NetLogonSamLogonEx">
+      <ForwardSymbol>LOGONCLI.I_NetLogonSamLogonEx</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="I_NetLogonSamLogonWithFlags">
+      <ForwardSymbol>LOGONCLI.I_NetLogonSamLogonWithFlags</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="I_NetLogonSendToSam">
+      <ForwardSymbol>LOGONCLI.I_NetLogonSendToSam</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="I_NetLogonUasLogoff">
+      <ForwardSymbol>LOGONCLI.I_NetLogonUasLogoff</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="I_NetLogonUasLogon">
+      <ForwardSymbol>LOGONCLI.I_NetLogonUasLogon</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="I_NetServerAuthenticate">
+      <ForwardSymbol>LOGONCLI.I_NetServerAuthenticate</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="I_NetServerAuthenticate2">
+      <ForwardSymbol>LOGONCLI.I_NetServerAuthenticate2</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="I_NetServerAuthenticate3">
+      <ForwardSymbol>LOGONCLI.I_NetServerAuthenticate3</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="I_NetServerGetTrustInfo">
+      <ForwardSymbol>LOGONCLI.I_NetServerGetTrustInfo</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="I_NetServerPasswordGet">
+      <ForwardSymbol>LOGONCLI.I_NetServerPasswordGet</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="I_NetServerPasswordSet">
+      <ForwardSymbol>LOGONCLI.I_NetServerPasswordSet</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="I_NetServerPasswordSet2">
+      <ForwardSymbol>LOGONCLI.I_NetServerPasswordSet2</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="I_NetServerReqChallenge">
+      <ForwardSymbol>LOGONCLI.I_NetServerReqChallenge</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="I_NetServerSetServiceBits">
+      <ForwardSymbol>SRVCLI.I_NetServerSetServiceBits</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="I_NetServerSetServiceBitsEx">
+      <ForwardSymbol>SRVCLI.I_NetServerSetServiceBitsEx</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="I_NetServerTrustPasswordsGet">
+      <ForwardSymbol>LOGONCLI.I_NetServerTrustPasswordsGet</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="I_NetlogonComputeClientDigest">
+      <ForwardSymbol>LOGONCLI.I_NetlogonComputeClientDigest</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="I_NetlogonComputeServerDigest">
+      <ForwardSymbol>LOGONCLI.I_NetlogonComputeServerDigest</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="NetAccessAdd">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetAccessDel">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetAccessEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetAccessGetInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetAccessGetUserPerms">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetAccessSetInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetAddAlternateComputerName">
+      <ForwardSymbol>WKSCLI.NetAddAlternateComputerName</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetAddServiceAccount">
+      <ForwardSymbol>LOGONCLI.NetAddServiceAccount</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetAlertRaise">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetAlertRaiseEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetApiBufferAllocate">
+      <ForwardSymbol>NETUTILS.NetApiBufferAllocate</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetApiBufferFree">
+      <ForwardSymbol>NETUTILS.NetApiBufferFree</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetApiBufferReallocate">
+      <ForwardSymbol>NETUTILS.NetApiBufferReallocate</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetApiBufferSize">
+      <ForwardSymbol>NETUTILS.NetApiBufferSize</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetAuditClear">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetAuditRead">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetAuditWrite">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetConfigGet">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetConfigGetAll">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetConfigSet">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetConnectionEnum">
+      <ForwardSymbol>SRVCLI.NetConnectionEnum</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetCreateProvisioningPackage">
+      <ForwardSymbol>NETJOIN.NetCreateProvisioningPackage</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetDfsAdd">
+      <ForwardSymbol>DFSCLI.NetDfsAdd</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetDfsAddFtRoot">
+      <ForwardSymbol>DFSCLI.NetDfsAddFtRoot</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetDfsAddRootTarget">
+      <ForwardSymbol>DFSCLI.NetDfsAddRootTarget</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetDfsAddStdRoot">
+      <ForwardSymbol>DFSCLI.NetDfsAddStdRoot</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetDfsAddStdRootForced">
+      <ForwardSymbol>DFSCLI.NetDfsAddStdRootForced</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="NetDfsEnum">
+      <ForwardSymbol>DFSCLI.NetDfsEnum</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetDfsGetClientInfo">
+      <ForwardSymbol>DFSCLI.NetDfsGetClientInfo</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetDfsGetDcAddress">
+      <ForwardSymbol>DFSCLI.NetDfsGetDcAddress</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="NetDfsGetFtContainerSecurity">
+      <ForwardSymbol>DFSCLI.NetDfsGetFtContainerSecurity</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetDfsGetInfo">
+      <ForwardSymbol>DFSCLI.NetDfsGetInfo</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetDfsGetSecurity">
+      <ForwardSymbol>DFSCLI.NetDfsGetSecurity</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetDfsGetStdContainerSecurity">
+      <ForwardSymbol>DFSCLI.NetDfsGetStdContainerSecurity</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetDfsGetSupportedNamespaceVersion">
+      <ForwardSymbol>DFSCLI.NetDfsGetSupportedNamespaceVersion</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetDfsManagerGetConfigInfo">
+      <ForwardSymbol>DFSCLI.NetDfsManagerGetConfigInfo</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="NetDfsManagerInitialize">
+      <ForwardSymbol>DFSCLI.NetDfsManagerInitialize</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="NetDfsManagerSendSiteInfo">
+      <ForwardSymbol>DFSCLI.NetDfsManagerSendSiteInfo</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="NetDfsMove">
+      <ForwardSymbol>DFSCLI.NetDfsMove</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetDfsRemove">
+      <ForwardSymbol>DFSCLI.NetDfsRemove</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetDfsRemoveFtRoot">
+      <ForwardSymbol>DFSCLI.NetDfsRemoveFtRoot</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetDfsRemoveFtRootForced">
+      <ForwardSymbol>DFSCLI.NetDfsRemoveFtRootForced</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetDfsRemoveRootTarget">
+      <ForwardSymbol>DFSCLI.NetDfsRemoveRootTarget</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetDfsRemoveStdRoot">
+      <ForwardSymbol>DFSCLI.NetDfsRemoveStdRoot</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetDfsRename">
+      <ForwardSymbol>DFSCLI.NetDfsRename</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="NetDfsSetClientInfo">
+      <ForwardSymbol>DFSCLI.NetDfsSetClientInfo</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetDfsSetFtContainerSecurity">
+      <ForwardSymbol>DFSCLI.NetDfsSetFtContainerSecurity</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetDfsSetInfo">
+      <ForwardSymbol>DFSCLI.NetDfsSetInfo</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetDfsSetSecurity">
+      <ForwardSymbol>DFSCLI.NetDfsSetSecurity</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetDfsSetStdContainerSecurity">
+      <ForwardSymbol>DFSCLI.NetDfsSetStdContainerSecurity</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetEnumerateComputerNames">
+      <ForwardSymbol>WKSCLI.NetEnumerateComputerNames</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetEnumerateServiceAccounts">
+      <ForwardSymbol>LOGONCLI.NetEnumerateServiceAccounts</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetEnumerateTrustedDomains">
+      <ForwardSymbol>LOGONCLI.NetEnumerateTrustedDomains</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="NetErrorLogClear">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetErrorLogRead">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetErrorLogWrite">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetFileClose">
+      <ForwardSymbol>SRVCLI.NetFileClose</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetFileEnum">
+      <ForwardSymbol>SRVCLI.NetFileEnum</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetFileGetInfo">
+      <ForwardSymbol>SRVCLI.NetFileGetInfo</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetFreeAadJoinInformation">
+      <ForwardSymbol>DSREG.DsrFreeJoinInfo</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetGetAadJoinInformation">
+      <ForwardSymbol>DSREG.DsrGetJoinInfo</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetGetAnyDCName">
+      <ForwardSymbol>LOGONCLI.NetGetAnyDCName</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetGetDCName">
+      <ForwardSymbol>LOGONCLI.NetGetDCName</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetGetDisplayInformationIndex">
+      <ForwardSymbol>SAMCLI.NetGetDisplayInformationIndex</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetGetJoinInformation">
+      <ForwardSymbol>WKSCLI.NetGetJoinInformation</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetGetJoinableOUs">
+      <ForwardSymbol>WKSCLI.NetGetJoinableOUs</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetGroupAdd">
+      <ForwardSymbol>SAMCLI.NetGroupAdd</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetGroupAddUser">
+      <ForwardSymbol>SAMCLI.NetGroupAddUser</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetGroupDel">
+      <ForwardSymbol>SAMCLI.NetGroupDel</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetGroupDelUser">
+      <ForwardSymbol>SAMCLI.NetGroupDelUser</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetGroupEnum">
+      <ForwardSymbol>SAMCLI.NetGroupEnum</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetGroupGetInfo">
+      <ForwardSymbol>SAMCLI.NetGroupGetInfo</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetGroupGetUsers">
+      <ForwardSymbol>SAMCLI.NetGroupGetUsers</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetGroupSetInfo">
+      <ForwardSymbol>SAMCLI.NetGroupSetInfo</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetGroupSetUsers">
+      <ForwardSymbol>SAMCLI.NetGroupSetUsers</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetIsServiceAccount">
+      <ForwardSymbol>LOGONCLI.NetIsServiceAccount</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetJoinDomain">
+      <ForwardSymbol>WKSCLI.NetJoinDomain</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetLocalGroupAdd">
+      <ForwardSymbol>SAMCLI.NetLocalGroupAdd</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetLocalGroupAddMember">
+      <ForwardSymbol>SAMCLI.NetLocalGroupAddMember</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetLocalGroupAddMembers">
+      <ForwardSymbol>SAMCLI.NetLocalGroupAddMembers</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetLocalGroupDel">
+      <ForwardSymbol>SAMCLI.NetLocalGroupDel</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetLocalGroupDelMember">
+      <ForwardSymbol>SAMCLI.NetLocalGroupDelMember</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetLocalGroupDelMembers">
+      <ForwardSymbol>SAMCLI.NetLocalGroupDelMembers</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetLocalGroupEnum">
+      <ForwardSymbol>SAMCLI.NetLocalGroupEnum</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetLocalGroupGetInfo">
+      <ForwardSymbol>SAMCLI.NetLocalGroupGetInfo</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetLocalGroupGetMembers">
+      <ForwardSymbol>SAMCLI.NetLocalGroupGetMembers</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetLocalGroupSetInfo">
+      <ForwardSymbol>SAMCLI.NetLocalGroupSetInfo</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetLocalGroupSetMembers">
+      <ForwardSymbol>SAMCLI.NetLocalGroupSetMembers</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetLogonGetTimeServiceParentDomain">
+      <ForwardSymbol>LOGONCLI.NetLogonGetTimeServiceParentDomain</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetLogonSetServiceBits">
+      <ForwardSymbol>LOGONCLI.NetLogonSetServiceBits</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="NetMessageBufferSend">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetMessageNameAdd">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetMessageNameDel">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetMessageNameEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetMessageNameGetInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetProvisionComputerAccount">
+      <ForwardSymbol>NETJOIN.NetProvisionComputerAccount</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetQueryDisplayInformation">
+      <ForwardSymbol>SAMCLI.NetQueryDisplayInformation</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetQueryServiceAccount">
+      <ForwardSymbol>LOGONCLI.NetQueryServiceAccount</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetRegisterDomainNameChangeNotification" />
+    <Symbol Name="NetRemoteComputerSupports">
+      <ForwardSymbol>NETUTILS.NetRemoteComputerSupports</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetRemoteTOD">
+      <ForwardSymbol>SRVCLI.NetRemoteTOD</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetRemoveAlternateComputerName">
+      <ForwardSymbol>WKSCLI.NetRemoveAlternateComputerName</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetRemoveServiceAccount">
+      <ForwardSymbol>LOGONCLI.NetRemoveServiceAccount</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetRenameMachineInDomain">
+      <ForwardSymbol>WKSCLI.NetRenameMachineInDomain</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetReplExportDirAdd">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetReplExportDirDel">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetReplExportDirEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetReplExportDirGetInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetReplExportDirLock">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetReplExportDirSetInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetReplExportDirUnlock">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetReplGetInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetReplImportDirAdd">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetReplImportDirDel">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetReplImportDirEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetReplImportDirGetInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetReplImportDirLock">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetReplImportDirUnlock">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetReplSetInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetRequestOfflineDomainJoin">
+      <ForwardSymbol>NETJOIN.NetRequestOfflineDomainJoin</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetRequestProvisioningPackageInstall">
+      <ForwardSymbol>NETJOIN.NetRequestProvisioningPackageInstall</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetScheduleJobAdd">
+      <ForwardSymbol>SCHEDCLI.NetScheduleJobAdd</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetScheduleJobDel">
+      <ForwardSymbol>SCHEDCLI.NetScheduleJobDel</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetScheduleJobEnum">
+      <ForwardSymbol>SCHEDCLI.NetScheduleJobEnum</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetScheduleJobGetInfo">
+      <ForwardSymbol>SCHEDCLI.NetScheduleJobGetInfo</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetServerAliasAdd">
+      <ForwardSymbol>SRVCLI.NetServerAliasAdd</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetServerAliasDel">
+      <ForwardSymbol>SRVCLI.NetServerAliasDel</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetServerAliasEnum">
+      <ForwardSymbol>SRVCLI.NetServerAliasEnum</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetServerComputerNameAdd">
+      <ForwardSymbol>SRVCLI.NetServerComputerNameAdd</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetServerComputerNameDel">
+      <ForwardSymbol>SRVCLI.NetServerComputerNameDel</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetServerDiskEnum">
+      <ForwardSymbol>SRVCLI.NetServerDiskEnum</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetServerEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetServerEnumEx" />
+    <Symbol Name="NetServerGetInfo">
+      <ForwardSymbol>SRVCLI.NetServerGetInfo</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetServerSetInfo">
+      <ForwardSymbol>SRVCLI.NetServerSetInfo</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetServerTransportAdd">
+      <ForwardSymbol>SRVCLI.NetServerTransportAdd</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetServerTransportAddEx">
+      <ForwardSymbol>SRVCLI.NetServerTransportAddEx</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetServerTransportDel">
+      <ForwardSymbol>SRVCLI.NetServerTransportDel</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetServerTransportEnum">
+      <ForwardSymbol>SRVCLI.NetServerTransportEnum</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetServiceControl">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetServiceEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetServiceGetInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetServiceInstall">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetSessionDel">
+      <ForwardSymbol>SRVCLI.NetSessionDel</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetSessionEnum">
+      <ForwardSymbol>SRVCLI.NetSessionEnum</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetSessionGetInfo">
+      <ForwardSymbol>SRVCLI.NetSessionGetInfo</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetSetPrimaryComputerName">
+      <ForwardSymbol>WKSCLI.NetSetPrimaryComputerName</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetShareAdd">
+      <ForwardSymbol>SRVCLI.NetShareAdd</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetShareCheck">
+      <ForwardSymbol>SRVCLI.NetShareCheck</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetShareDel">
+      <ForwardSymbol>SRVCLI.NetShareDel</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetShareDelEx">
+      <ForwardSymbol>SRVCLI.NetShareDelEx</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetShareDelSticky">
+      <ForwardSymbol>SRVCLI.NetShareDelSticky</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetShareEnum">
+      <ForwardSymbol>SRVCLI.NetShareEnum</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetShareEnumSticky">
+      <ForwardSymbol>SRVCLI.NetShareEnumSticky</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetShareGetInfo">
+      <ForwardSymbol>SRVCLI.NetShareGetInfo</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetShareSetInfo">
+      <ForwardSymbol>SRVCLI.NetShareSetInfo</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetStatisticsGet">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetUnjoinDomain">
+      <ForwardSymbol>WKSCLI.NetUnjoinDomain</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetUnregisterDomainNameChangeNotification" />
+    <Symbol Name="NetUseAdd">
+      <ForwardSymbol>WKSCLI.NetUseAdd</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetUseDel">
+      <ForwardSymbol>WKSCLI.NetUseDel</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetUseEnum">
+      <ForwardSymbol>WKSCLI.NetUseEnum</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetUseGetInfo">
+      <ForwardSymbol>WKSCLI.NetUseGetInfo</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetUserAdd">
+      <ForwardSymbol>SAMCLI.NetUserAdd</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetUserChangePassword">
+      <ForwardSymbol>SAMCLI.NetUserChangePassword</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetUserDel">
+      <ForwardSymbol>SAMCLI.NetUserDel</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetUserEnum">
+      <ForwardSymbol>SAMCLI.NetUserEnum</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetUserGetGroups">
+      <ForwardSymbol>SAMCLI.NetUserGetGroups</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetUserGetInfo">
+      <ForwardSymbol>SAMCLI.NetUserGetInfo</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetUserGetLocalGroups">
+      <ForwardSymbol>SAMCLI.NetUserGetLocalGroups</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetUserModalsGet">
+      <ForwardSymbol>SAMCLI.NetUserModalsGet</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetUserModalsSet">
+      <ForwardSymbol>SAMCLI.NetUserModalsSet</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetUserSetGroups">
+      <ForwardSymbol>SAMCLI.NetUserSetGroups</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetUserSetInfo">
+      <ForwardSymbol>SAMCLI.NetUserSetInfo</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetValidateName">
+      <ForwardSymbol>WKSCLI.NetValidateName</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetValidatePasswordPolicy">
+      <ForwardSymbol>SAMCLI.NetValidatePasswordPolicy</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetValidatePasswordPolicyFree">
+      <ForwardSymbol>SAMCLI.NetValidatePasswordPolicyFree</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetWkstaGetInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetWkstaSetInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetWkstaTransportAdd">
+      <ForwardSymbol>WKSCLI.NetWkstaTransportAdd</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetWkstaTransportDel">
+      <ForwardSymbol>WKSCLI.NetWkstaTransportDel</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetWkstaTransportEnum">
+      <ForwardSymbol>WKSCLI.NetWkstaTransportEnum</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetWkstaUserEnum">
+      <ForwardSymbol>WKSCLI.NetWkstaUserEnum</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetWkstaUserGetInfo">
+      <ForwardSymbol>WKSCLI.NetWkstaUserGetInfo</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetWkstaUserSetInfo">
+      <ForwardSymbol>WKSCLI.NetWkstaUserSetInfo</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetapipBufferAllocate">
+      <ForwardSymbol>NETUTILS.NetapipBufferAllocate</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="Netbios">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NetpAddTlnFtinfoEntry" />
+    <Symbol Name="NetpAllocFtinfoEntry" />
+    <Symbol Name="NetpAssertFailed" />
+    <Symbol Name="NetpCleanFtinfoContext" />
+    <Symbol Name="NetpCloseConfigData" />
+    <Symbol Name="NetpCopyFtinfoContext" />
+    <Symbol Name="NetpDbgPrint" />
+    <Symbol Name="NetpGetConfigBool" />
+    <Symbol Name="NetpGetConfigDword" />
+    <Symbol Name="NetpGetConfigTStrArray" />
+    <Symbol Name="NetpGetConfigValue" />
+    <Symbol Name="NetpGetFileSecurity" />
+    <Symbol Name="NetpHexDump" />
+    <Symbol Name="NetpInitFtinfoContext" />
+    <Symbol Name="NetpIsRemote">
+      <ForwardSymbol>NETUTILS.NetpIsRemote</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="NetpIsUncComputerNameValid" />
+    <Symbol Name="NetpMergeFtinfo" />
+    <Symbol Name="NetpNetBiosReset" />
+    <Symbol Name="NetpNetBiosStatusToApiStatus" />
+    <Symbol Name="NetpOpenConfigData" />
+    <Symbol Name="NetpSetFileSecurity" />
+    <Symbol Name="NetpwNameCanonicalize">
+      <ForwardSymbol>NETUTILS.NetpwNameCanonicalize</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="NetpwNameCompare">
+      <ForwardSymbol>NETUTILS.NetpwNameCompare</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="NetpwNameValidate">
+      <ForwardSymbol>NETUTILS.NetpwNameValidate</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="NetpwPathCanonicalize">
+      <ForwardSymbol>NETUTILS.NetpwPathCanonicalize</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="NetpwPathCompare">
+      <ForwardSymbol>NETUTILS.NetpwPathCompare</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="NetpwPathType">
+      <ForwardSymbol>NETUTILS.NetpwPathType</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="NlBindingAddServerToCache">
+      <ForwardSymbol>LOGONCLI.NlBindingAddServerToCache</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="NlBindingRemoveServerFromCache">
+      <ForwardSymbol>LOGONCLI.NlBindingRemoveServerFromCache</ForwardSymbol>
+    </Symbol>
+    <Symbol Name="NlBindingSetAuthInfo">
+      <ForwardSymbol>LOGONCLI.NlBindingSetAuthInfo</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\NetAPI32.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RxNetAccessAdd" />
+    <Symbol Name="RxNetAccessDel" />
+    <Symbol Name="RxNetAccessEnum" />
+    <Symbol Name="RxNetAccessGetInfo" />
+    <Symbol Name="RxNetAccessGetUserPerms" />
+    <Symbol Name="RxNetAccessSetInfo" />
+    <Symbol Name="RxNetServerEnum" />
+    <Symbol Name="RxNetUserPasswordSet" />
+    <Symbol Name="RxRemoteApi" />
+  </ExportedSymbols>
+</DynamicLibrary>

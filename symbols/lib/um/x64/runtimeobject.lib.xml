@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\runtimeobject.lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\runtimeobject.lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="api-ms-win-core-winrt-error-l1-1-0.dll" />
+    <DynamicLibrary Name="api-ms-win-core-winrt-error-l1-1-1.dll" />
+    <DynamicLibrary Name="api-ms-win-core-winrt-l1-1-0.dll" />
+    <DynamicLibrary Name="api-ms-win-core-winrt-registration-l1-1-0.dll" />
+    <DynamicLibrary Name="api-ms-win-core-winrt-robuffer-l1-1-0.dll" />
+    <DynamicLibrary Name="api-ms-win-core-winrt-roparameterizediid-l1-1-0.dll" />
+    <DynamicLibrary Name="api-ms-win-core-winrt-string-l1-1-0.dll" />
+    <DynamicLibrary Name="api-ms-win-ro-typeresolution-l1-1-0.dll" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="RoActivateInstance" />
+    <Symbol Name="RoGetActivationFactory" />
+    <Symbol Name="RoGetApartmentIdentifier" />
+    <Symbol Name="RoInitialize" />
+    <Symbol Name="RoRegisterActivationFactories" />
+    <Symbol Name="RoRegisterForApartmentShutdown" />
+    <Symbol Name="RoRevokeActivationFactories" />
+    <Symbol Name="RoUninitialize" />
+    <Symbol Name="RoUnregisterForApartmentShutdown" />
+    <Symbol Name="GetRestrictedErrorInfo" />
+    <Symbol Name="RoCaptureErrorContext" />
+    <Symbol Name="RoFailFastWithErrorContext" />
+    <Symbol Name="RoGetErrorReportingFlags" />
+    <Symbol Name="RoOriginateError" />
+    <Symbol Name="RoOriginateErrorW" />
+    <Symbol Name="RoResolveRestrictedErrorInfoReference" />
+    <Symbol Name="RoSetErrorReportingFlags" />
+    <Symbol Name="RoTransformError" />
+    <Symbol Name="RoTransformErrorW" />
+    <Symbol Name="SetRestrictedErrorInfo" />
+    <Symbol Name="IsErrorPropagationEnabled" />
+    <Symbol Name="RoClearError" />
+    <Symbol Name="RoGetMatchingRestrictedErrorInfo" />
+    <Symbol Name="RoInspectCapturedStackBackTrace" />
+    <Symbol Name="RoInspectThreadErrorInfo" />
+    <Symbol Name="RoOriginateLanguageException" />
+    <Symbol Name="RoReportFailedDelegate" />
+    <Symbol Name="RoReportUnhandledError" />
+    <Symbol Name="RoGetActivatableClassRegistration" />
+    <Symbol Name="RoGetServerActivatableClasses" />
+    <Symbol Name="HSTRING_UserFree" />
+    <Symbol Name="HSTRING_UserFree64" />
+    <Symbol Name="HSTRING_UserMarshal" />
+    <Symbol Name="HSTRING_UserMarshal64" />
+    <Symbol Name="HSTRING_UserSize" />
+    <Symbol Name="HSTRING_UserSize64" />
+    <Symbol Name="HSTRING_UserUnmarshal" />
+    <Symbol Name="HSTRING_UserUnmarshal64" />
+    <Symbol Name="WindowsCompareStringOrdinal" />
+    <Symbol Name="WindowsConcatString" />
+    <Symbol Name="WindowsCreateString" />
+    <Symbol Name="WindowsCreateStringReference" />
+    <Symbol Name="WindowsDeleteString" />
+    <Symbol Name="WindowsDeleteStringBuffer" />
+    <Symbol Name="WindowsDuplicateString" />
+    <Symbol Name="WindowsGetStringLen" />
+    <Symbol Name="WindowsGetStringRawBuffer" />
+    <Symbol Name="WindowsInspectString" />
+    <Symbol Name="WindowsIsStringEmpty" />
+    <Symbol Name="WindowsPreallocateStringBuffer" />
+    <Symbol Name="WindowsPromoteStringBuffer" />
+    <Symbol Name="WindowsReplaceString" />
+    <Symbol Name="WindowsStringHasEmbeddedNull" />
+    <Symbol Name="WindowsSubstring" />
+    <Symbol Name="WindowsSubstringWithSpecifiedLength" />
+    <Symbol Name="WindowsTrimStringEnd" />
+    <Symbol Name="WindowsTrimStringStart" />
+    <Symbol Name="RoGetBufferMarshaler" />
+    <Symbol Name="RoFreeParameterizedTypeExtra" />
+    <Symbol Name="RoGetParameterizedTypeInstanceIID" />
+    <Symbol Name="RoParameterizedTypeExtraGetTypeSignature" />
+    <Symbol Name="RoGetMetaDataFile" />
+    <Symbol Name="RoParseTypeName" />
+    <Symbol Name="RoResolveNamespace" />
+  </ExportedSymbols>
+</StaticLibrary>

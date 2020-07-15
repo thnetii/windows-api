@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\CertPolEng.Lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\CertPolEng.Lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="certpoleng.dll" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="IntPstGetCertificate">
+      <Definitions>
+        <DynamicLibrary Name="certpoleng.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="IntPstGetNameIdentifierForCertificate">
+      <Definitions>
+        <DynamicLibrary Name="certpoleng.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="IntPstGetTrustAnchors">
+      <Definitions>
+        <DynamicLibrary Name="certpoleng.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="IntPstMapCertificateToProvider">
+      <Definitions>
+        <DynamicLibrary Name="certpoleng.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="IntPstMapUserCredsToProvider">
+      <Definitions>
+        <DynamicLibrary Name="certpoleng.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="IntPstValidate">
+      <Definitions>
+        <DynamicLibrary Name="certpoleng.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PstAcquirePrivateKey">
+      <Definitions>
+        <DynamicLibrary Name="certpoleng.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PstGetCertificateChain">
+      <Definitions>
+        <DynamicLibrary Name="certpoleng.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PstGetCertificates">
+      <Definitions>
+        <DynamicLibrary Name="certpoleng.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PstGetTrustAnchors">
+      <Definitions>
+        <DynamicLibrary Name="certpoleng.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PstGetTrustAnchorsEx">
+      <Definitions>
+        <DynamicLibrary Name="certpoleng.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PstGetUserNameForCertificate">
+      <Definitions>
+        <DynamicLibrary Name="certpoleng.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PstMapCertificate">
+      <Definitions>
+        <DynamicLibrary Name="certpoleng.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PstValidate">
+      <Definitions>
+        <DynamicLibrary Name="certpoleng.dll" />
+      </Definitions>
+    </Symbol>
+  </ExportedSymbols>
+</StaticLibrary>

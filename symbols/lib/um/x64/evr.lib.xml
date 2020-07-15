@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\evr.lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\evr.lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="EVR.dll" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="MFCreateVideoMixer" />
+    <Symbol Name="MFCreateVideoMixerAndPresenter" />
+    <Symbol Name="MFCreateVideoOTA" />
+    <Symbol Name="MFCreateVideoPresenter" />
+    <Symbol Name="MFCreateVideoPresenter2" />
+    <Symbol Name="MFCreateVideoSampleAllocator" />
+    <Symbol Name="MFCreateVideoSampleFromSurface" />
+    <Symbol Name="MFGetPlaneSize" />
+    <Symbol Name="MFIsFormatYUV" />
+  </ExportedSymbols>
+</StaticLibrary>

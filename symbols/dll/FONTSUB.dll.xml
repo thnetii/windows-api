@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="FONTSUB.dll">
+  <OriginalPath>C:\Windows\system32\FONTSUB.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="CreateFontPackage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fontsub.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MergeFontPackage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fontsub.lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\xinput.lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\xinput.lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="XINPUT1_4.dll" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="DllMain" />
+    <Symbol Name="XInputEnable" />
+    <Symbol Name="XInputGetAudioDeviceIds" />
+    <Symbol Name="XInputGetBatteryInformation" />
+    <Symbol Name="XInputGetCapabilities" />
+    <Symbol Name="XInputGetKeystroke" />
+    <Symbol Name="XInputGetState" />
+    <Symbol Name="XInputSetState" />
+  </ExportedSymbols>
+</StaticLibrary>

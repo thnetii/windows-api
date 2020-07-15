@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\wdsClientAPI.LIB</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\wdsClientAPI.LIB</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="WDSCLIENTAPI.dll" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="WdsCliAuthorizeSession" />
+    <Symbol Name="WdsCliCancelTransfer" />
+    <Symbol Name="WdsCliClose" />
+    <Symbol Name="WdsCliConnectToImageStore" />
+    <Symbol Name="WdsCliCreateSession" />
+    <Symbol Name="WdsCliCreateSessionEx" />
+    <Symbol Name="WdsCliFilterImageArchitecture" />
+    <Symbol Name="WdsCliFilterImageFirmwareType" />
+    <Symbol Name="WdsCliFilterImageVersion" />
+    <Symbol Name="WdsCliFilterImageVersionMatchingBootImage" />
+    <Symbol Name="WdsCliFindFirstImage" />
+    <Symbol Name="WdsCliFindNextImage" />
+    <Symbol Name="WdsCliFreeDomainJoinInformation" />
+    <Symbol Name="WdsCliFreeStringArray" />
+    <Symbol Name="WdsCliFreeUnattendVariables" />
+    <Symbol Name="WdsCliGetClientUnattend" />
+    <Symbol Name="WdsCliGetDeploymentMetadata" />
+    <Symbol Name="WdsCliGetDeploymentMetadataAvailable" />
+    <Symbol Name="WdsCliGetDomainJoinInformation" />
+    <Symbol Name="WdsCliGetDriverQueryXml" />
+    <Symbol Name="WdsCliGetEnumerationFlags" />
+    <Symbol Name="WdsCliGetImageArchitecture" />
+    <Symbol Name="WdsCliGetImageDescription" />
+    <Symbol Name="WdsCliGetImageFiles" />
+    <Symbol Name="WdsCliGetImageGroup" />
+    <Symbol Name="WdsCliGetImageHalName" />
+    <Symbol Name="WdsCliGetImageHandleFromFindHandle" />
+    <Symbol Name="WdsCliGetImageHandleFromTransferHandle" />
+    <Symbol Name="WdsCliGetImageIndex" />
+    <Symbol Name="WdsCliGetImageLanguage" />
+    <Symbol Name="WdsCliGetImageLanguages" />
+    <Symbol Name="WdsCliGetImageLastModifiedTime" />
+    <Symbol Name="WdsCliGetImageName" />
+    <Symbol Name="WdsCliGetImageNamespace" />
+    <Symbol Name="WdsCliGetImageParameter" />
+    <Symbol Name="WdsCliGetImagePath" />
+    <Symbol Name="WdsCliGetImageSize" />
+    <Symbol Name="WdsCliGetImageType" />
+    <Symbol Name="WdsCliGetImageVersion" />
+    <Symbol Name="WdsCliGetSystemMetadata" />
+    <Symbol Name="WdsCliGetTransferSize" />
+    <Symbol Name="WdsCliGetUnattendVariables" />
+    <Symbol Name="WdsCliGetWimImageReferenceFile" />
+    <Symbol Name="WdsCliInitializeLog" />
+    <Symbol Name="WdsCliLog" />
+    <Symbol Name="WdsCliObtainDriverPackages" />
+    <Symbol Name="WdsCliObtainDriverPackagesEx" />
+    <Symbol Name="WdsCliRegisterTrace" />
+    <Symbol Name="WdsCliResetBootProgram" />
+    <Symbol Name="WdsCliSetSupportedFeatures" />
+    <Symbol Name="WdsCliSetSystemMetadata" />
+    <Symbol Name="WdsCliSetTransferBufferSize" />
+    <Symbol Name="WdsCliSimulateArchitecture" />
+    <Symbol Name="WdsCliSimulateDeviceId" />
+    <Symbol Name="WdsCliSimulateSmbiosInfo" />
+    <Symbol Name="WdsCliTransferFile" />
+    <Symbol Name="WdsCliTransferImage" />
+    <Symbol Name="WdsCliWaitForTransfer" />
+  </ExportedSymbols>
+</StaticLibrary>

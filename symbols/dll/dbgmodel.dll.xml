@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="dbgmodel.dll">
+  <OriginalPath>C:\Windows\system32\dbgmodel.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="CreateDataModelManager">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgModel.Lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

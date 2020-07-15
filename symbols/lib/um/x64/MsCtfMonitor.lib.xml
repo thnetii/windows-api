@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\MsCtfMonitor.lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\MsCtfMonitor.lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="MsCtfMonitor.DLL" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="DoMsCtfMonitor">
+      <Definitions>
+        <DynamicLibrary Name="MsCtfMonitor.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="InitLocalMsCtfMonitor">
+      <Definitions>
+        <DynamicLibrary Name="MsCtfMonitor.DLL" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="UninitLocalMsCtfMonitor">
+      <Definitions>
+        <DynamicLibrary Name="MsCtfMonitor.DLL" />
+      </Definitions>
+    </Symbol>
+  </ExportedSymbols>
+</StaticLibrary>

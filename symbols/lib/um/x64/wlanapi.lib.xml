@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\wlanapi.lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\wlanapi.lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="wlanapi.dll" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="WFDCancelOpenSession" />
+    <Symbol Name="WFDCloseHandle" />
+    <Symbol Name="WFDCloseSession" />
+    <Symbol Name="WFDOpenHandle" />
+    <Symbol Name="WFDOpenLegacySession" />
+    <Symbol Name="WFDStartOpenSession" />
+    <Symbol Name="WFDUpdateDeviceVisibility" />
+    <Symbol Name="WlanAllocateMemory" />
+    <Symbol Name="WlanCloseHandle" />
+    <Symbol Name="WlanConnect" />
+    <Symbol Name="WlanConnectEx" />
+    <Symbol Name="WlanDeleteProfile" />
+    <Symbol Name="WlanDeviceServiceCommand" />
+    <Symbol Name="WlanDisconnect" />
+    <Symbol Name="WlanEnumInterfaces" />
+    <Symbol Name="WlanExtractPsdIEDataList" />
+    <Symbol Name="WlanFreeMemory" />
+    <Symbol Name="WlanGetAvailableNetworkList" />
+    <Symbol Name="WlanGetAvailableNetworkList2" />
+    <Symbol Name="WlanGetFilterList" />
+    <Symbol Name="WlanGetInterfaceCapability" />
+    <Symbol Name="WlanGetNetworkBssList" />
+    <Symbol Name="WlanGetProfile" />
+    <Symbol Name="WlanGetProfileCustomUserData" />
+    <Symbol Name="WlanGetProfileList" />
+    <Symbol Name="WlanGetSecuritySettings" />
+    <Symbol Name="WlanGetSupportedDeviceServices" />
+    <Symbol Name="WlanHostedNetworkForceStart" />
+    <Symbol Name="WlanHostedNetworkForceStop" />
+    <Symbol Name="WlanHostedNetworkInitSettings" />
+    <Symbol Name="WlanHostedNetworkQueryProperty" />
+    <Symbol Name="WlanHostedNetworkQuerySecondaryKey" />
+    <Symbol Name="WlanHostedNetworkQueryStatus" />
+    <Symbol Name="WlanHostedNetworkRefreshSecuritySettings" />
+    <Symbol Name="WlanHostedNetworkSetProperty" />
+    <Symbol Name="WlanHostedNetworkSetSecondaryKey" />
+    <Symbol Name="WlanHostedNetworkStartUsing" />
+    <Symbol Name="WlanHostedNetworkStopUsing" />
+    <Symbol Name="WlanIhvControl" />
+    <Symbol Name="WlanOpenHandle" />
+    <Symbol Name="WlanPrivateDeleteProfile" />
+    <Symbol Name="WlanPrivateQuery11adPairedConfig" />
+    <Symbol Name="WlanPrivateQueryInterface" />
+    <Symbol Name="WlanPrivateSetInterface" />
+    <Symbol Name="WlanPrivateSetProfile" />
+    <Symbol Name="WlanQueryAutoConfigParameter" />
+    <Symbol Name="WlanQueryInterface" />
+    <Symbol Name="WlanReasonCodeToString" />
+    <Symbol Name="WlanRegisterNotification" />
+    <Symbol Name="WlanRegisterVirtualStationNotification" />
+    <Symbol Name="WlanRenameProfile" />
+    <Symbol Name="WlanSaveTemporaryProfile" />
+    <Symbol Name="WlanScan" />
+    <Symbol Name="WlanSetAutoConfigParameter" />
+    <Symbol Name="WlanSetFilterList" />
+    <Symbol Name="WlanSetInterface" />
+    <Symbol Name="WlanSetProfile" />
+    <Symbol Name="WlanSetProfileCustomUserData" />
+    <Symbol Name="WlanSetProfileEapUserData" />
+    <Symbol Name="WlanSetProfileEapXmlUserData" />
+    <Symbol Name="WlanSetProfileList" />
+    <Symbol Name="WlanSetProfileListForOffload" />
+    <Symbol Name="WlanSetProfilePosition" />
+    <Symbol Name="WlanSetPsdIEDataList" />
+    <Symbol Name="WlanSetSecuritySettings" />
+    <Symbol Name="WlanUpdateBasicProfileSecurity" />
+  </ExportedSymbols>
+</StaticLibrary>

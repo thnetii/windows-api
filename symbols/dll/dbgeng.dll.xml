@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="dbgeng.dll">
+  <OriginalPath>C:\Windows\system32\dbgeng.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="DebugConnect">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgEng.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DebugConnectWide">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgEng.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DebugCreate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgEng.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DebugCreateEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\DbgEng.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="[NONAME]" />
+  </ExportedSymbols>
+</DynamicLibrary>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="APPMGMTS.dll">
+  <OriginalPath>C:\Windows\system32\APPMGMTS.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="CsCreateClassStore">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\appmgmts.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CsEnumApps">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\appmgmts.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CsGetAppCategories">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\appmgmts.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CsGetClassAccess">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\appmgmts.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CsGetClassStore">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\appmgmts.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CsGetClassStorePath">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\appmgmts.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CsRegisterAppCategory">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\appmgmts.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CsServerGetClassStore">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\appmgmts.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CsSetOptions" />
+    <Symbol Name="CsUnregisterAppCategory">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\appmgmts.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DllCanUnloadNow" />
+    <Symbol Name="DllGetClassObject" />
+    <Symbol Name="GenerateGroupPolicy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\appmgmts.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IID_IClassAdmin">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\appmgmts.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ProcessGroupPolicyObjectsEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\appmgmts.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ReleaseAppCategoryInfoList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\appmgmts.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ReleasePackageDetail">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\appmgmts.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ReleasePackageInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\appmgmts.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ServiceMain">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\appmgmts.lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

@@ -1,0 +1,739 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="imagehlp.dll">
+  <OriginalPath>C:\Windows\system32\imagehlp.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="BindImage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="BindImageEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CheckSumMappedFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumerateLoadedModules">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumerateLoadedModules64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumerateLoadedModulesEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumerateLoadedModulesExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumerateLoadedModulesW64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FindDebugInfoFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FindDebugInfoFileEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FindExecutableImage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FindExecutableImageEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FindFileInPath">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FindFileInSearchPath">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetImageConfigInformation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetImageUnusedHeaderBytes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetSymLoadError">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetTimestampForLoadedLibrary">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImageAddCertificate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImageDirectoryEntryToData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImageDirectoryEntryToDataEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImageEnumerateCertificates">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImageGetCertificateData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImageGetCertificateDataEx" />
+    <Symbol Name="ImageGetCertificateHeader">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImageGetDigestStream">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImageLoad">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImageNtHeader">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImageRemoveCertificate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImageRvaToSection">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImageRvaToVa">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImageUnload">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImagehlpApiVersion">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ImagehlpApiVersionEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IsBufferCleanOfInvalidMarkers" />
+    <Symbol Name="MakeSureDirectoryPathExists">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MapAndLoad">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MapFileAndCheckSumA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MapFileAndCheckSumW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ReBaseImage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ReBaseImage64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RemoveInvalidModuleList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RemovePrivateCvSymbolic" />
+    <Symbol Name="RemovePrivateCvSymbolicEx" />
+    <Symbol Name="RemoveRelocations" />
+    <Symbol Name="ReportSymbolLoadSummary">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SearchTreeForFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetCheckUserInterruptShared">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetImageConfigInformation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetSymLoadError">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SplitSymbols" />
+    <Symbol Name="StackWalk">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StackWalk64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="StackWalkEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymAddrIncludeInlineTrace">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymCleanup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymCompareInlineTrace">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymEnumSym">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymEnumSymbols">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymEnumSymbolsEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymEnumSymbolsExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymEnumSymbolsForAddr">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymEnumTypes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymEnumTypesByName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymEnumTypesByNameW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymEnumTypesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymEnumerateModules">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymEnumerateModules64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymEnumerateSymbols">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymEnumerateSymbols64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymEnumerateSymbolsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymEnumerateSymbolsW64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymFindFileInPath">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymFindFileInPathW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymFreeDiaString" />
+    <Symbol Name="SymFromAddr">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymFromInlineContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymFromInlineContextW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymFromName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymFunctionTableAccess">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymFunctionTableAccess64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymFunctionTableAccess64AccessRoutines">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetDiaSession" />
+    <Symbol Name="SymGetExtendedOption">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetLineFromAddr">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetLineFromAddr64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetLineFromInlineContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetLineFromInlineContextW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetLineFromName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetLineFromName64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetLineNext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetLineNext64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetLinePrev">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetLinePrev64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetModuleBase">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetModuleBase64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetModuleInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetModuleInfo64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetModuleInfoW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetModuleInfoW64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetOptions">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetSearchPath">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetSourceFileChecksumW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetSourceFileFromTokenW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetSourceFileTokenW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetSourceVarFromTokenW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetSymFromAddr">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetSymFromAddr64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetSymFromName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetSymFromName64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetSymNext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetSymNext64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetSymPrev">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetSymPrev64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetSymbolFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetSymbolFileW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetTypeFromName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetTypeFromNameW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetTypeInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymGetTypeInfoEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymInitialize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymLoadModule">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymLoadModule64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymMatchFileName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymMatchFileNameW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymMatchString">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymMatchStringA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymMatchStringW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymQueryInlineTrace">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymRegisterCallback">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymRegisterCallback64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymRegisterFunctionEntryCallback">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymRegisterFunctionEntryCallback64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymSetContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymSetExtendedOption">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymSetOptions">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymSetScopeFromAddr">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymSetScopeFromIndex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymSetScopeFromInlineContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymSetSearchPath">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymSrvGetFileIndexString">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymSrvGetFileIndexStringW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymSrvGetFileIndexes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymSrvGetFileIndexesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymUnDName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymUnDName64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymUnloadModule">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SymUnloadModule64">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TouchFileTimes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UnDecorateSymbolName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UnMapAndLoad">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UpdateDebugInfoFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UpdateDebugInfoFileEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ImageHlp.Lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

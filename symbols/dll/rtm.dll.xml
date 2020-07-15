@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="rtm.dll">
+  <OriginalPath>C:\Windows\system32\rtm.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="BestMatchInTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CheckTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeleteFromTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DestroyTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DumpTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumOverTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InsertIntoTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MgmAddGroupMembershipEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MgmDeInitialize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MgmDeRegisterMProtocol">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MgmDeleteGroupMembershipEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MgmGetFirstMfe">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MgmGetFirstMfeStats">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MgmGetMfe">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MgmGetMfeStats">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MgmGetNextMfe">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MgmGetNextMfeStats">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MgmGetProtocolOnInterface">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MgmGroupEnumerationEnd">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MgmGroupEnumerationGetNext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MgmGroupEnumerationStart">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MgmInitialize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MgmRegisterMProtocol">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MgmReleaseInterfaceOwnership">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MgmTakeInterfaceOwnership">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NextMatchInTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmAddNextHop">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmAddRoute">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmAddRouteToDest">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmBlockConvertRoutesToStatic">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmBlockDeleteRoutes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmBlockMethods">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmBlockSetRouteEnable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmCleanupInstances">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmCloseEnumerationHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmConvertIpv6AddressAndLengthToNetAddress">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmConvertNetAddressToIpv6AddressAndLength">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmCreateBestRouteEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmCreateDestEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmCreateEnumerationHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmCreateNextHopEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmCreateRouteEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmCreateRouteList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmCreateRouteListEnum">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmDeleteEnumHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmDeleteNextHop">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmDeleteRoute">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmDeleteRouteList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmDeleteRouteTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmDeleteRouteToDest">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmDequeueRouteChangeMessage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmDereferenceHandles">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmDeregisterClient">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmDeregisterEntity">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmDeregisterFromChangeNotification">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmEnumerateGetNextRoute">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmFindNextHop">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmGetAddressFamilyInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmGetChangeStatus">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmGetChangedDests">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmGetDestInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmGetEntityInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmGetEntityMethods">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmGetEnumBestRoutes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmGetEnumDests">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmGetEnumNextHops">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmGetEnumRoutes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmGetExactMatchDestination">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmGetExactMatchRoute">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmGetFirstRoute">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmGetInstanceInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmGetInstances">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmGetLessSpecificDestination">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmGetListEnumRoutes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmGetMostSpecificDestination">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmGetNetworkCount">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmGetNextHopInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmGetNextHopPointer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmGetNextRoute">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmGetOpaqueInformationPointer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmGetRegisteredEntities">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmGetRouteAge">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmGetRouteInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmGetRoutePointer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmHoldDestination">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmIgnoreChangedDests">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmInsertInRouteList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmInvokeMethod">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmIsBestRoute">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmIsMarkedForChangeNotification">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmIsRoute">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmLockDestination">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmLockNextHop">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmLockRoute">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmLookupIPDestination">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmMarkDestForChangeNotification">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmReadAddressFamilyConfig">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmReadInstanceConfig">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmReferenceHandles">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmRegisterClient">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmRegisterEntity">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmRegisterForChangeNotification">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmReleaseChangedDests">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmReleaseDestInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmReleaseDests">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmReleaseEntities">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmReleaseEntityInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmReleaseNextHopInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmReleaseNextHops">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmReleaseRouteInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmReleaseRoutes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmUpdateAndUnlockRoute">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmWriteAddressFamilyConfig">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtmWriteInstanceConfig">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SearchInTable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\Rtm.Lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

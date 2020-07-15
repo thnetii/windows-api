@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="winbio.dll">
+  <OriginalPath>C:\Windows\system32\winbio.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="WinBioAcquireFocus">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioAsyncEnumBiometricUnits">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioAsyncEnumDatabases">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioAsyncEnumServiceProviders">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioAsyncMonitorFrameworkChanges">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioAsyncOpenFramework">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioAsyncOpenSession">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioCancel">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioCaptureSample">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioCaptureSampleWithCallback">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioCloseFramework">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioCloseSession">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioControlUnit">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioControlUnitPrivileged">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioDeleteTemplate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioDiscardTicket" />
+    <Symbol Name="WinBioEnrollAuthorize" />
+    <Symbol Name="WinBioEnrollBegin">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioEnrollCapture">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioEnrollCaptureWithCallback">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioEnrollCommit">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioEnrollDiscard">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioEnrollRevoke" />
+    <Symbol Name="WinBioEnrollSelect">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioEnumBiometricUnits">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioEnumDatabases">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioEnumEnrollments">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioEnumServiceProviders">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioFree">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioGetCredentialState">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioGetCredentialWithTicket">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioGetDomainLogonSetting">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioGetEnabledSetting">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioGetEnrolledFactors">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioGetGestureMetadata" />
+    <Symbol Name="WinBioGetLogonSetting">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioGetPolicyProtectionSupport" />
+    <Symbol Name="WinBioGetProperty">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioGetProtectionPolicy" />
+    <Symbol Name="WinBioIdentify">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioIdentifyAndReleaseTicket">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioIdentifyWithCallback">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioLocateSensor">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioLocateSensorWithCallback">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioLockUnit">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioLogonIdentifiedUser">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioMonitorPresence">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioNgcAuthorizeEnrollment" />
+    <Symbol Name="WinBioNgcCloseAuthorizationSession" />
+    <Symbol Name="WinBioNgcGetAuthorizationWithTicket" />
+    <Symbol Name="WinBioNgcOpenAuthorizationSession" />
+    <Symbol Name="WinBioNotifyPasswordChange" />
+    <Symbol Name="WinBioOpenSession">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioProtectData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioProtectDataWithPolicy" />
+    <Symbol Name="WinBioRegisterEventMonitor">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioRegisterServiceMonitor">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioReleaseFocus">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioRemoveAllCredentials">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioRemoveAllDomainCredentials">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioRemoveCredential">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioSetCredential">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioSetMSACredential">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioSetProperty">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioUnlockUnit">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioUnprotectData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioUnregisterEventMonitor">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioUnregisterServiceMonitor">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioVerify">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioVerifyAndReleaseTicket">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioVerifyWithCallback">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinBioWait">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\WinBio.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="_BioLogonIdentifiedUser" />
+  </ExportedSymbols>
+</DynamicLibrary>

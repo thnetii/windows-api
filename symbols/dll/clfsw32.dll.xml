@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="clfsw32.dll">
+  <OriginalPath>C:\Windows\system32\clfsw32.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="AddLogContainer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AddLogContainerSet">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AdvanceLogBase">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AlignReservedLog">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AllocReservedLog">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CLFS_LSN_INVALID">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CLFS_LSN_NULL">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CloseAndResetLogFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateLogContainerScanContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateLogFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CreateLogMarshallingArea">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeleteLogByHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeleteLogFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeleteLogMarshallingArea">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeregisterManageableLogClient">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DumpLogRecords">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FlushLogBuffers">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FlushLogToLsn">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FreeReservedLog">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetLogContainerName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetLogFileInformation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetLogIoStatistics">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetLogReservationInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetNextLogArchiveExtent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HandleLogFull">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InstallLogPolicy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LogTailAdvanceFailure">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LsnBlockOffset">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LsnContainer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LsnCreate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LsnDecrement" />
+    <Symbol Name="LsnEqual">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LsnGreater">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LsnIncrement">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LsnInvalid">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LsnLess">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LsnNull">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LsnRecordSequence">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PrepareLogArchive">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="QueryLogPolicy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ReadLogArchiveMetadata">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ReadLogNotification">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ReadLogRecord">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ReadLogRestartArea">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ReadNextLogRecord">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ReadPreviousLogRestartArea">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RegisterForLogWriteNotification">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RegisterManageableLogClient">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RemoveLogContainer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RemoveLogContainerSet">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RemoveLogPolicy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ReserveAndAppendLog">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ReserveAndAppendLogAligned">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ScanLogContainers">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetEndOfLog">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetLogArchiveMode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetLogArchiveTail">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetLogFileSizeWithPolicy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TerminateLogArchive">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TerminateReadLog">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TruncateLog">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ValidateLog">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WriteLogRestartArea">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\clfsw32.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

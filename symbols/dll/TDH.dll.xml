@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="TDH.dll">
+  <OriginalPath>C:\Windows\system32\TDH.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="TdhAggregatePayloadFilters">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\tdh.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TdhApplyPayloadFilter" />
+    <Symbol Name="TdhCleanupPayloadEventFilterDescriptor">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\tdh.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TdhCloseDecodingHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\tdh.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TdhCreatePayloadFilter">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\tdh.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TdhDeletePayloadFilter">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\tdh.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TdhEnumerateManifestProviderEvents">
+      <ForwardSymbol>mintdh.TdhEnumerateManifestProviderEvents</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\tdh.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TdhEnumerateProviderFieldInformation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\tdh.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TdhEnumerateProviderFilters">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\tdh.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TdhEnumerateProviders">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\tdh.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TdhEnumerateRemoteWBEMProviderFieldInformation" />
+    <Symbol Name="TdhEnumerateRemoteWBEMProviders" />
+    <Symbol Name="TdhFormatProperty">
+      <ForwardSymbol>mintdh.TdhFormatProperty</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\tdh.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TdhGetAllEventsInformation" />
+    <Symbol Name="TdhGetDecodingParameter">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\tdh.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TdhGetEventInformation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\tdh.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TdhGetEventMapInformation">
+      <ForwardSymbol>mintdh.TdhGetEventMapInformation</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\tdh.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TdhGetManifestEventInformation">
+      <ForwardSymbol>mintdh.TdhGetManifestEventInformation</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\tdh.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TdhGetProperty">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\tdh.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TdhGetPropertyOffsetAndSize" />
+    <Symbol Name="TdhGetPropertySize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\tdh.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TdhGetWppMessage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\tdh.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TdhGetWppProperty">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\tdh.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TdhLoadManifest">
+      <ForwardSymbol>mintdh.TdhLoadManifest</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\tdh.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TdhLoadManifestFromBinary">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\tdh.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TdhOpenDecodingHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\tdh.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TdhQueryProviderFieldInformation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\tdh.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TdhQueryRemoteWBEMProviderFieldInformation" />
+    <Symbol Name="TdhSetDecodingParameter">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\tdh.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TdhUnloadManifest">
+      <ForwardSymbol>mintdh.TdhUnloadManifest</ForwardSymbol>
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCoreUAP_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\OneCore_downlevel.Lib" />
+        <StaticLibrary Name="um\x64\tdh.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TdhValidatePayloadFilter" />
+    <Symbol Name="TdhpFindMatchClassFromWBEM" />
+    <Symbol Name="TdhpGetBestTraceEventInfoWBEM" />
+    <Symbol Name="TdhpGetEventMapInfoWBEM" />
+  </ExportedSymbols>
+</DynamicLibrary>

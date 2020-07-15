@@ -1,0 +1,1650 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="fwpuclnt.dll">
+  <OriginalPath>C:\Windows\system32\fwpuclnt.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="FwpiExpandCriteria0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpiFreeCriteria0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpiVpnTriggerAddAppSids">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpiVpnTriggerAddFilePaths">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpiVpnTriggerAddSecurityDescriptor">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpiVpnTriggerConfigureParameters">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpiVpnTriggerEventSubscribe0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpiVpnTriggerEventUnsubscribe0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpiVpnTriggerInitializeNrptTriggering">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpiVpnTriggerRemoveAppSids">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpiVpnTriggerRemoveFilePaths">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpiVpnTriggerRemoveSecurityDescriptor">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpiVpnTriggerResetNrptTriggering">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpiVpnTriggerSetStateDisconnected">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpiVpnTriggerUninitializeNrptTriggering">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmBitmapIndexFree0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmBitmapIndexGet0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmCalloutAdd0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmCalloutCreateEnumHandle0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmCalloutDeleteById0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmCalloutDeleteByKey0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmCalloutDestroyEnumHandle0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmCalloutEnum0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmCalloutGetById0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmCalloutGetByKey0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmCalloutGetSecurityInfoByKey0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmCalloutSetSecurityInfoByKey0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmCalloutSubscribeChanges0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmCalloutSubscriptionsGet0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmCalloutUnsubscribeChanges0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmConnectionCreateEnumHandle0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmConnectionDestroyEnumHandle0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmConnectionEnum0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmConnectionGetById0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmConnectionGetSecurityInfo0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmConnectionSetSecurityInfo0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmConnectionSubscribe0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmConnectionUnsubscribe0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmDiagnoseNetFailure0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmEngineClose0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmEngineGetOption0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmEngineGetSecurityInfo0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmEngineOpen0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmEngineSetOption0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmEngineSetSecurityInfo0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmEventProviderCreate0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmEventProviderDestroy0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmEventProviderFireNetEvent0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmEventProviderIsNetEventTypeEnabled0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmFilterAdd0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmFilterCreateEnumHandle0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmFilterDeleteById0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmFilterDeleteByKey0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmFilterDestroyEnumHandle0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmFilterEnum0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmFilterGetById0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmFilterGetByKey0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmFilterGetSecurityInfoByKey0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmFilterSetSecurityInfoByKey0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmFilterSubscribeChanges0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmFilterSubscriptionsGet0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmFilterUnsubscribeChanges0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmFreeMemory0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmGetAppIdFromFileName0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmGetSidFromOnlineId0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmIPsecS2STunnelAddConditions0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmIPsecS2STunnelAddInterfaceToCompartment0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmIPsecS2STunnelGetInterfaceForCompartment0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmIPsecS2STunnelRemoveConditions0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmIPsecS2STunnelRemoveInterfaceFromCompartment0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmIPsecTunnelAdd0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmIPsecTunnelAdd1">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmIPsecTunnelAdd2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmIPsecTunnelAdd3">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmIPsecTunnelAddConditions0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmIPsecTunnelDeleteByKey0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmLayerCreateEnumHandle0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmLayerDestroyEnumHandle0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmLayerEnum0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmLayerGetById0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmLayerGetByKey0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmLayerGetSecurityInfoByKey0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmLayerSetSecurityInfoByKey0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmNetEventCreateEnumHandle0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmNetEventDestroyEnumHandle0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmNetEventEnum0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmNetEventEnum1">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmNetEventEnum2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmNetEventEnum3">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmNetEventEnum4">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmNetEventSubscribe0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmNetEventSubscribe1">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmNetEventSubscribe2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmNetEventSubscribe3">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmNetEventSubscriptionsGet0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmNetEventUnsubscribe0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmNetEventsGetSecurityInfo0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmNetEventsLost0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmNetEventsSetSecurityInfo0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmProcessNameResolutionEvent0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmProviderAdd0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmProviderContextAdd0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmProviderContextAdd1">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmProviderContextAdd2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmProviderContextAdd3">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmProviderContextCreateEnumHandle0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmProviderContextDeleteById0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmProviderContextDeleteByKey0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmProviderContextDestroyEnumHandle0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmProviderContextEnum0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmProviderContextEnum1">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmProviderContextEnum2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmProviderContextEnum3">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmProviderContextGetById0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmProviderContextGetById1">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmProviderContextGetById2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmProviderContextGetById3">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmProviderContextGetByKey0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmProviderContextGetByKey1">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmProviderContextGetByKey2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmProviderContextGetByKey3">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmProviderContextGetSecurityInfoByKey0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmProviderContextSetSecurityInfoByKey0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmProviderContextSubscribeChanges0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmProviderContextSubscriptionsGet0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmProviderContextUnsubscribeChanges0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmProviderCreateEnumHandle0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmProviderDeleteByKey0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmProviderDestroyEnumHandle0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmProviderEnum0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmProviderGetByKey0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmProviderGetSecurityInfoByKey0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmProviderSetSecurityInfoByKey0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmProviderSubscribeChanges0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmProviderSubscriptionsGet0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmProviderUnsubscribeChanges0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmSessionCreateEnumHandle0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmSessionDestroyEnumHandle0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmSessionEnum0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmSubLayerAdd0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmSubLayerCreateEnumHandle0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmSubLayerDeleteByKey0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmSubLayerDestroyEnumHandle0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmSubLayerEnum0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmSubLayerGetByKey0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmSubLayerGetSecurityInfoByKey0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmSubLayerSetSecurityInfoByKey0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmSubLayerSubscribeChanges0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmSubLayerSubscriptionsGet0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmSubLayerUnsubscribeChanges0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmSystemPortsGet0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmSystemPortsSubscribe0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmSystemPortsUnsubscribe0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmTraceRestoreDefaults0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmTransactionAbort0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmTransactionBegin0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmTransactionCommit0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmvSwitchEventSubscribe0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmvSwitchEventUnsubscribe0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmvSwitchEventsGetSecurityInfo0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpmvSwitchEventsSetSecurityInfo0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwppConnectionGetByIPsecInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwppConnectionGetByS2STunnelId">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwppConnectionGetS2STunnelId">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwppGetMD5HashBytes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwppIPsecSaContextCreate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpsAleEndpointCreateEnumHandle0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpsAleEndpointDestroyEnumHandle0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpsAleEndpointEnum0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpsAleEndpointGetById0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpsAleEndpointGetSecurityInfo0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpsAleEndpointSetSecurityInfo0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpsAleExplicitCredentialsQuery0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpsAleGetPortStatus0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpsClassifyUser0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpsFreeMemory0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpsGetInProcReplicaOffset0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpsLayerCreateInProcReplica0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpsLayerReleaseInProcReplica0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpsOpenToken0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpsQueryIPsecDosFWUsed0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="FwpsQueryIPsecOffloadDone0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetUnifiedTraceHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IPsecDospGetSecurityInfo0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IPsecDospGetStatistics0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IPsecDospSetSecurityInfo0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IPsecDospStateCreateEnumHandle0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IPsecDospStateDestroyEnumHandle0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IPsecDospStateEnum0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IPsecGetKeyFromDictator0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IPsecGetStatistics0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IPsecGetStatistics1">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IPsecKeyDictationCheck0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IPsecKeyManagerAddAndRegister0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IPsecKeyManagerGetSecurityInfoByKey0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IPsecKeyManagerSetSecurityInfoByKey0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IPsecKeyManagerUnregisterAndDelete0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IPsecKeyManagersGet0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IPsecKeyModuleAdd0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IPsecKeyModuleDelete0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IPsecKeyModuleUpdateAcquire0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IPsecKeyNotification0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IPsecSaContextAddInbound0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IPsecSaContextAddInbound1">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IPsecSaContextAddInboundAndTrackConnection">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IPsecSaContextAddOutbound0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IPsecSaContextAddOutbound1">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IPsecSaContextAddOutboundAndTrackConnection">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IPsecSaContextCreate0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IPsecSaContextCreate1">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IPsecSaContextCreateEnumHandle0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IPsecSaContextDeleteById0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IPsecSaContextDestroyEnumHandle0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IPsecSaContextEnum0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IPsecSaContextEnum1">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IPsecSaContextExpire0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IPsecSaContextGetById0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IPsecSaContextGetById1">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IPsecSaContextGetSpi0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IPsecSaContextGetSpi1">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IPsecSaContextSetSpi0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IPsecSaContextSubscribe0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IPsecSaContextSubscriptionsGet0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IPsecSaContextUnsubscribe0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IPsecSaContextUpdate0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IPsecSaCreateEnumHandle0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IPsecSaDbGetSecurityInfo0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IPsecSaDbSetSecurityInfo0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IPsecSaDestroyEnumHandle0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IPsecSaEnum0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IPsecSaEnum1">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IPsecSaInitiateAsync0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IkeextGetConfigParameters0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IkeextGetStatistics0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IkeextGetStatistics1">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IkeextSaCreateEnumHandle0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IkeextSaDbGetSecurityInfo0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IkeextSaDbSetSecurityInfo0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IkeextSaDeleteById0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IkeextSaDestroyEnumHandle0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IkeextSaEnum0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IkeextSaEnum1">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IkeextSaEnum2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IkeextSaGetById0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IkeextSaGetById1">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IkeextSaGetById2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IkeextSaUpdateAdditionalAddressesByTunnelId0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IkeextSaUpdatePreferredAddressesByTunnelId0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IkeextSetConfigParameters0">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NamespaceCallout">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WFPRIODequeueCompletion">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSADeleteSocketPeerTargetName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSAImpersonateSocketPeer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSAQuerySocketSecurity">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSARevertImpersonation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSASetSocketPeerTargetName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WSASetSocketSecurity">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WfpCloseDPConfigureHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WfpConfigureDPSecurityDescriptor">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WfpCreateDPConfigureHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WfpRIOChannelClose">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WfpRIOCleanupRequestQueue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WfpRIOCloseCompletionQueue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WfpRIOCreateChannel">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WfpRIOCreateCompletionQueue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WfpRIOCreateRequestQueue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WfpRIODeregisterBuffer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WfpRIOIndicateActivityThreshold">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WfpRIONotify">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WfpRIOReceive">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WfpRIORegisterBuffer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WfpRIOResume">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WfpRIOSend">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WfpRIOSuspend">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\fwpuclnt.lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

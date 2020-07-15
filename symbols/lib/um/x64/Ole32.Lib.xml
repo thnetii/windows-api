@@ -1,0 +1,2382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\Ole32.Lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\Ole32.Lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="ole32.dll" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="*))" />
+    <Symbol Name="StdTypesRegisterServer(void))" />
+    <Symbol Name="BindMoniker">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CLIPFORMAT_UserFree">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CLIPFORMAT_UserFree64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CLIPFORMAT_UserMarshal">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CLIPFORMAT_UserMarshal64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CLIPFORMAT_UserSize">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CLIPFORMAT_UserSize64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CLIPFORMAT_UserUnmarshal">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CLIPFORMAT_UserUnmarshal64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CLSIDFromProgID">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CLSIDFromProgIDEx">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CLSIDFromString">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CStdAsyncStubBuffer2_Connect">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CStdAsyncStubBuffer2_Disconnect">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CStdAsyncStubBuffer2_Release">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CStdAsyncStubBuffer_AddRef">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CStdAsyncStubBuffer_Connect">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CStdAsyncStubBuffer_Disconnect">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CStdAsyncStubBuffer_Invoke">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CStdAsyncStubBuffer_QueryInterface">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CStdAsyncStubBuffer_Release">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CStdStubBuffer2_Connect">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CStdStubBuffer2_CountRefs">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CStdStubBuffer2_Disconnect">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CStdStubBuffer2_QueryInterface">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoAddRefServerProcess">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoAllowSetForegroundWindow">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoAllowUnmarshalerCLSID">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoBuildVersion">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoCancelCall">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoCopyProxy">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoCreateFreeThreadedMarshaler">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoCreateGuid">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoCreateInstance">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoCreateInstanceEx">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoCreateInstanceFromApp">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoCreateObjectInContext">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoDeactivateObject">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoDecodeProxy">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoDecrementMTAUsage">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoDisableCallCancellation">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoDisconnectContext">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoDisconnectObject">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoDosDateTimeToFileTime">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoEnableCallCancellation">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoFileTimeNow">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoFileTimeToDosDateTime">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoFreeAllLibraries">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoFreeLibrary">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoFreeUnusedLibraries">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoFreeUnusedLibrariesEx">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoGetApartmentID">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoGetApartmentType">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoGetCallContext">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoGetCallerTID">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoGetCancelObject">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoGetClassObject">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoGetClassVersion">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoGetComCatalog">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoGetContextToken">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoGetCurrentLogicalThreadId">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoGetCurrentProcess">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoGetDefaultContext">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoGetInstanceFromFile">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoGetInstanceFromIStorage">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoGetInterceptor">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoGetInterceptorFromTypeInfo">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoGetInterfaceAndReleaseStream">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoGetMalloc">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoGetMarshalSizeMax">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoGetObject">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoGetObjectContext">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoGetPSClsid">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoGetProcessIdentifier">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoGetStandardMarshal">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoGetStdMarshalEx">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoGetSystemSecurityPermissions">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoGetTreatAsClass">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoHandlePriorityEventsFromMessagePump">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoImpersonateClient">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoIncrementMTAUsage">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoInitialize">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoInitializeEx">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoInitializeSecurity">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoInitializeWOW">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoInstall">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoInvalidateRemoteMachineBindings">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoIsHandlerConnected">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoIsOle1Class">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoLoadLibrary">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoLockObjectExternal">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoMarshalHresult">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoMarshalInterThreadInterfaceInStream">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoMarshalInterface">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoQueryAuthenticationServices">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoQueryClientBlanket">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoQueryProxyBlanket">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoQueryReleaseObject">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoReactivateObject">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoRegisterActivationFilter">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoRegisterChannelHook">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoRegisterClassObject">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoRegisterInitializeSpy">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoRegisterMallocSpy">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoRegisterMessageFilter">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoRegisterPSClsid">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoRegisterSurrogate">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoRegisterSurrogateEx">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoReleaseMarshalData">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoReleaseServerProcess">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoResumeClassObjects">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoRetireServer">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoRevertToSelf">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoRevokeClassObject">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoRevokeInitializeSpy">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoRevokeMallocSpy">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoSetCancelObject">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoSetMessageDispatcher">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoSetProxyBlanket">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoSuspendClassObjects">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoSwitchCallContext">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoTaskMemAlloc">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoTaskMemFree">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoTaskMemRealloc">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoTestCancel">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoTreatAsClass">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoUninitialize">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoUnloadingWOW">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoUnmarshalHresult">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoUnmarshalInterface">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoWaitForMultipleHandles">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CoWaitForMultipleObjects">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ComPs_NdrDllCanUnloadNow">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ComPs_NdrDllGetClassObject">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ComPs_NdrDllRegisterProxy">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ComPs_NdrDllUnregisterProxy">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CreateAntiMoniker">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CreateBindCtx">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CreateClassMoniker">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CreateDataAdviseHolder">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CreateDataCache">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CreateFileMoniker">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CreateGenericComposite">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CreateILockBytesOnHGlobal">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CreateItemMoniker">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CreateObjrefMoniker">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CreateOleAdviseHolder">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CreatePointerMoniker">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CreateStdProgressIndicator">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="CreateStreamOnHGlobal">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DcomChannelSetHResult">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DllDebugObjectRPCHook">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DllGetClassObjectWOW">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="DoDragDrop">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="EnableHookObject">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="FmtIdToPropStgName">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="FreePropVariantArray">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetActiveObjectExt">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetClassFile">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetConvertStg">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetDocumentBitStg">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetHGlobalFromILockBytes">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetHGlobalFromStream">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetHookInterface">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="GetRunningObjectTable">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HACCEL_UserFree">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HACCEL_UserFree64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HACCEL_UserMarshal">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HACCEL_UserMarshal64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HACCEL_UserSize">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HACCEL_UserSize64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HACCEL_UserUnmarshal">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HACCEL_UserUnmarshal64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBITMAP_UserFree">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBITMAP_UserFree64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBITMAP_UserMarshal">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBITMAP_UserMarshal64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBITMAP_UserSize">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBITMAP_UserSize64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBITMAP_UserUnmarshal">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBITMAP_UserUnmarshal64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBRUSH_UserFree">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBRUSH_UserFree64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBRUSH_UserMarshal">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBRUSH_UserMarshal64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBRUSH_UserSize">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBRUSH_UserSize64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBRUSH_UserUnmarshal">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HBRUSH_UserUnmarshal64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HDC_UserFree">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HDC_UserFree64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HDC_UserMarshal">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HDC_UserMarshal64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HDC_UserSize">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HDC_UserSize64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HDC_UserUnmarshal">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HDC_UserUnmarshal64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HENHMETAFILE_UserFree">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HENHMETAFILE_UserFree64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HENHMETAFILE_UserMarshal">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HENHMETAFILE_UserMarshal64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HENHMETAFILE_UserSize">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HENHMETAFILE_UserSize64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HENHMETAFILE_UserUnmarshal">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HENHMETAFILE_UserUnmarshal64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HGLOBAL_UserFree">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HGLOBAL_UserFree64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HGLOBAL_UserMarshal">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HGLOBAL_UserMarshal64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HGLOBAL_UserSize">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HGLOBAL_UserSize64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HGLOBAL_UserUnmarshal">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HGLOBAL_UserUnmarshal64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HICON_UserFree">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HICON_UserFree64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HICON_UserMarshal">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HICON_UserMarshal64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HICON_UserSize">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HICON_UserSize64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HICON_UserUnmarshal">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HICON_UserUnmarshal64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HMENU_UserFree">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HMENU_UserFree64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HMENU_UserMarshal">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HMENU_UserMarshal64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HMENU_UserSize">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HMENU_UserSize64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HMENU_UserUnmarshal">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HMENU_UserUnmarshal64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HMETAFILEPICT_UserFree">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HMETAFILEPICT_UserFree64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HMETAFILEPICT_UserMarshal">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HMETAFILEPICT_UserMarshal64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HMETAFILEPICT_UserSize">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HMETAFILEPICT_UserSize64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HMETAFILEPICT_UserUnmarshal">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HMETAFILEPICT_UserUnmarshal64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HMETAFILE_UserFree">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HMETAFILE_UserFree64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HMETAFILE_UserMarshal">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HMETAFILE_UserMarshal64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HMETAFILE_UserSize">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HMETAFILE_UserSize64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HMETAFILE_UserUnmarshal">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HMETAFILE_UserUnmarshal64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HMONITOR_UserFree">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HMONITOR_UserFree64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HMONITOR_UserMarshal">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HMONITOR_UserMarshal64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HMONITOR_UserSize">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HMONITOR_UserSize64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HMONITOR_UserUnmarshal">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HMONITOR_UserUnmarshal64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HPALETTE_UserFree">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HPALETTE_UserFree64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HPALETTE_UserMarshal">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HPALETTE_UserMarshal64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HPALETTE_UserSize">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HPALETTE_UserSize64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HPALETTE_UserUnmarshal">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HPALETTE_UserUnmarshal64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HWND_UserFree">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HWND_UserFree64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HWND_UserMarshal">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HWND_UserMarshal64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HWND_UserSize">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HWND_UserSize64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HWND_UserUnmarshal">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HWND_UserUnmarshal64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="HkOleRegisterObject">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="IIDFromString">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="IsAccelerator">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="IsEqualGUID">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MkParseDisplayName">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MonikerCommonPrefixWith">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MonikerRelativePathTo">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction10">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction11">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction12">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction13">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction14">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction15">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction16">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction17">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction18">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction19">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction20">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction21">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction22">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction23">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction24">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction25">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction26">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction27">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction28">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction29">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction3">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction30">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction31">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction32">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction4">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction5">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction6">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction7">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction8">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="NdrProxyForwardingFunction9">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient10">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient11">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient12">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient13">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient14">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient15">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient16">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient17">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient18">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient19">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient20">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient21">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient22">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient23">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient24">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient25">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient26">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient27">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient28">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient29">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient3">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient30">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient31">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient32">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient4">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient5">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient6">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient7">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient8">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ObjectStublessClient9">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Ole32DllGetClassObject">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleBuildVersion">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleConvertIStorageToOLESTREAM">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleConvertIStorageToOLESTREAMEx">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleConvertOLESTREAMToIStorage">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleConvertOLESTREAMToIStorageEx">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleCreate">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleCreateDefaultHandler">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleCreateEmbeddingHelper">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleCreateEx">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleCreateFontIndirectExt">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleCreateFromData">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleCreateFromDataEx">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleCreateFromFile">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleCreateFromFileEx">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleCreateLink">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleCreateLinkEx">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleCreateLinkFromData">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleCreateLinkFromDataEx">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleCreateLinkToFile">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleCreateLinkToFileEx">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleCreateMenuDescriptor">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleCreatePictureIndirectExt">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleCreatePropertyFrameIndirectExt">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleCreateStaticFromData">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleDestroyMenuDescriptor">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleDoAutoConvert">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleDraw">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleDuplicateData">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleFlushClipboard">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleGetAutoConvert">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleGetClipboard">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleGetClipboardWithEnterpriseInfo">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleGetIconOfClass">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleGetIconOfFile">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleIconToCursorExt">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleInitialize">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleInitializeWOW">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleIsCurrentClipboard">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleIsRunning">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleLoad">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleLoadFromStream">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleLoadPictureExt">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleLoadPictureFileExt">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleLoadPicturePathExt">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleLockRunning">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleMetafilePictFromIconAndLabel">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleNoteObjectVisible">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleQueryCreateFromData">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleQueryLinkFromData">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleRegEnumFormatEtc">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleRegEnumVerbs">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleRegGetMiscStatus">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleRegGetUserType">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleRun">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleSave">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleSavePictureFileExt">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleSaveToStream">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleSetAutoConvert">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleSetClipboard">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleSetContainedObject">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleSetMenuDescriptor">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleTranslateAccelerator">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleTranslateColorExt">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OleUninitialize">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="OpenOrCreateStream">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ProgIDFromCLSID">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PropStgNameToFmtId">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PropVariantClear">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="PropVariantCopy">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ReadClassStg">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ReadClassStm">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ReadFmtUserTypeStg">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ReadOleStg">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ReadStringStream">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RegisterActiveObjectExt">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RegisterDragDrop">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="ReleaseStgMedium">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RevokeActiveObjectExt">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RevokeDragDrop">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="RoGetAgileReference">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SNB_UserFree">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SNB_UserFree64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SNB_UserMarshal">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SNB_UserMarshal64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SNB_UserSize">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SNB_UserSize64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SNB_UserUnmarshal">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SNB_UserUnmarshal64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="STGMEDIUM_UserFree">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="STGMEDIUM_UserFree64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="STGMEDIUM_UserMarshal">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="STGMEDIUM_UserMarshal64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="STGMEDIUM_UserSize">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="STGMEDIUM_UserSize64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="STGMEDIUM_UserUnmarshal">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="STGMEDIUM_UserUnmarshal64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SetConvertStg">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="SetDocumentBitStg">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="StgConvertPropertyToVariant">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="StgConvertVariantToProperty">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="StgCreateDocfile">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="StgCreateDocfileOnILockBytes">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="StgCreatePropSetStg">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="StgCreatePropStg">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="StgCreateStorageEx">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="StgGetIFillLockBytesOnFile">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="StgGetIFillLockBytesOnILockBytes">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="StgIsStorageFile">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="StgIsStorageILockBytes">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="StgOpenAsyncDocfileOnIFillLockBytes">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="StgOpenPropStg">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="StgOpenStorage">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="StgOpenStorageEx">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="StgOpenStorageOnILockBytes">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="StgPropertyLengthAsVariant">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="StgSetTimes">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="StringFromCLSID">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="StringFromGUID2">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="StringFromIID">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="UpdateDCOMSettings">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="UtConvertDvtd16toDvtd32">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="UtConvertDvtd32toDvtd16">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="UtGetDvtd16Info">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="UtGetDvtd32Info">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WdtpInterfacePointer_UserFree">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WdtpInterfacePointer_UserFree64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WdtpInterfacePointer_UserMarshal">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WdtpInterfacePointer_UserMarshal64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WdtpInterfacePointer_UserSize">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WdtpInterfacePointer_UserSize64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WdtpInterfacePointer_UserUnmarshal">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WdtpInterfacePointer_UserUnmarshal64">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WriteClassStg">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WriteClassStm">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WriteFmtUserTypeStg">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WriteOleStg">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="WriteStringStream">
+      <Definitions>
+        <DynamicLibrary Name="ole32.dll" />
+      </Definitions>
+    </Symbol>
+  </ExportedSymbols>
+</StaticLibrary>

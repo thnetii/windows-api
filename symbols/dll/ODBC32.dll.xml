@@ -1,0 +1,886 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="ODBC32.dll">
+  <OriginalPath>C:\Windows\system32\ODBC32.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="CloseODBCPerfData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CollectODBCPerfData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CursorLibLockDbc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CursorLibLockDesc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CursorLibLockStmt">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CursorLibTransact">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DllBidEntryPoint">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetODBCSharedData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LockHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ODBCGetTryWaitValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ODBCInternalConnectW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ODBCQualifyFileDSNW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ODBCSetTryWaitValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OpenODBCPerfData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PostComponentError">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PostODBCComponentError">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PostODBCError">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLAllocConnect">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLAllocEnv">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLAllocHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLAllocHandleStd">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLAllocStmt">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLBindCol">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLBindParam">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLBindParameter">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLBrowseConnect">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLBrowseConnectA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLBrowseConnectW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLBulkOperations">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLCancel">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLCancelHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLCloseCursor">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLColAttribute">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLColAttributeA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLColAttributeW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLColAttributes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLColAttributesA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLColAttributesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLColumnPrivileges">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLColumnPrivilegesA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLColumnPrivilegesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLColumns">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLColumnsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLColumnsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLCompleteAsync">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLConnect">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLConnectA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLConnectW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLCopyDesc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLDataSources">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLDataSourcesA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLDataSourcesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLDescribeCol">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLDescribeColA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLDescribeColW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLDescribeParam">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLDisconnect">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLDriverConnect">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLDriverConnectA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLDriverConnectW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLDrivers">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLDriversA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLDriversW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLEndTran">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLError">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLErrorA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLErrorW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLExecDirect">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLExecDirectA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLExecDirectW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLExecute">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLExtendedFetch">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLFetch">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLFetchScroll">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLForeignKeys">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLForeignKeysA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLForeignKeysW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLFreeConnect">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLFreeEnv">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLFreeHandle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLFreeStmt">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLGetConnectAttr">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLGetConnectAttrA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLGetConnectAttrW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLGetConnectOption">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLGetConnectOptionA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLGetConnectOptionW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLGetCursorName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLGetCursorNameA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLGetCursorNameW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLGetData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLGetDescField">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLGetDescFieldA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLGetDescFieldW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLGetDescRec">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLGetDescRecA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLGetDescRecW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLGetDiagField">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLGetDiagFieldA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLGetDiagFieldW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLGetDiagRec">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLGetDiagRecA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLGetDiagRecW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLGetEnvAttr">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLGetFunctions">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLGetInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLGetInfoA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLGetInfoW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLGetStmtAttr">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLGetStmtAttrA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLGetStmtAttrW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLGetStmtOption">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLGetTypeInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLGetTypeInfoA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLGetTypeInfoW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLMoreResults">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLNativeSql">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLNativeSqlA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLNativeSqlW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLNumParams">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLNumResultCols">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLParamData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLParamOptions">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLPrepare">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLPrepareA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLPrepareW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLPrimaryKeys">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLPrimaryKeysA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLPrimaryKeysW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLProcedureColumns">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLProcedureColumnsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLProcedureColumnsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLProcedures">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLProceduresA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLProceduresW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLPutData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLRowCount">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLSetConnectAttr">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLSetConnectAttrA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLSetConnectAttrW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLSetConnectOption">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLSetConnectOptionA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLSetConnectOptionW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLSetCursorName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLSetCursorNameA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLSetCursorNameW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLSetDescField">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLSetDescFieldA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLSetDescFieldW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLSetDescRec">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLSetEnvAttr">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLSetParam">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLSetPos">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLSetScrollOptions">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLSetStmtAttr">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLSetStmtAttrA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLSetStmtAttrW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLSetStmtOption">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLSpecialColumns">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLSpecialColumnsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLSpecialColumnsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLStatistics">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLStatisticsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLStatisticsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLTablePrivileges">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLTablePrivilegesA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLTablePrivilegesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLTables">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLTablesA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLTablesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SQLTransact">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SearchStatusCode">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VFreeErrors">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VRetrieveDriverErrorsRowCol">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ValidateErrorQueue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="g_hHeapMalloc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\odbc32.lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="vertdll.dll">
+  <OriginalPath>C:\Windows\system32\vertdll.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="AcquireSRWLockExclusive">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="AcquireSRWLockShared">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CallEnclave">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CloseHandle" />
+    <Symbol Name="CreateEventW" />
+    <Symbol Name="DbgPrint" />
+    <Symbol Name="DelayLoadFailureHook" />
+    <Symbol Name="DeleteCriticalSection">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeleteSynchronizationBarrier">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeviceIoControl" />
+    <Symbol Name="DisableThreadLibraryCalls">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnclaveGetAttestationReport">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnclaveGetEnclaveInformation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnclaveSealData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnclaveUnsealData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnclaveVerifyAttestationReport">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnterCriticalSection">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnterSynchronizationBarrier">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EtwEventRegister" />
+    <Symbol Name="EtwEventUnregister" />
+    <Symbol Name="EtwEventWrite" />
+    <Symbol Name="EtwGetTraceEnableFlags" />
+    <Symbol Name="EtwGetTraceEnableLevel" />
+    <Symbol Name="EtwGetTraceLoggerHandle" />
+    <Symbol Name="EtwRegisterTraceGuidsW" />
+    <Symbol Name="EtwTraceMessage" />
+    <Symbol Name="EtwUnregisterTraceGuids" />
+    <Symbol Name="EventRegister" />
+    <Symbol Name="EventSetInformation" />
+    <Symbol Name="EventUnregister" />
+    <Symbol Name="EventWriteTransfer" />
+    <Symbol Name="ExpInterlockedPopEntrySListEnd" />
+    <Symbol Name="ExpInterlockedPopEntrySListFault" />
+    <Symbol Name="ExpInterlockedPopEntrySListResume" />
+    <Symbol Name="FreeLibrary" />
+    <Symbol Name="GetCurrentProcess">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetCurrentThread">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetCurrentThreadId">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetEnabledXStateFeatures">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetFipsModeFromIumKernelState" />
+    <Symbol Name="GetLastError">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetModuleFileNameW" />
+    <Symbol Name="GetModuleHandleExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetProcAddress">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetProcessHeap">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetProcessHeaps">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetSeedFromIumKernelState" />
+    <Symbol Name="GetSystemDirectoryW" />
+    <Symbol Name="GetSystemInfo" />
+    <Symbol Name="GetXStateFeaturesMask">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HeapAlloc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HeapCompact">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HeapCreate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HeapDestroy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HeapFree">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HeapLock">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HeapReAlloc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HeapSize">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HeapUnlock">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitializeConditionVariable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitializeCriticalSection">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitializeCriticalSectionAndSpinCount">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitializeCriticalSectionEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitializeSListHead">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitializeSRWLock">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InitializeSynchronizationBarrier">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InterlockedFlushSList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InterlockedPopEntrySList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InterlockedPushEntrySList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InterlockedPushListSList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InterlockedPushListSListEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="KiUserExceptionDispatcher" />
+    <Symbol Name="LdrDisableThreadCalloutsForDll">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LdrResolveDelayLoadedAPI">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LeaveCriticalSection">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LoadLibraryExW" />
+    <Symbol Name="LoadLibraryW" />
+    <Symbol Name="LocateXStateFeature">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="NtClose" />
+    <Symbol Name="NtDeviceIoControlFile" />
+    <Symbol Name="NtOpenFile" />
+    <Symbol Name="NtOpenKey" />
+    <Symbol Name="NtQueryInformationProcess" />
+    <Symbol Name="NtQueryValueKey" />
+    <Symbol Name="NtTerminateProcess">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="OpenProcessToken" />
+    <Symbol Name="OutputDebugStringW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PrivilegeCheck" />
+    <Symbol Name="QueryDepthSList">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="QueryFullProcess" />
+    <Symbol Name="QueryFullProcessImageNameW" />
+    <Symbol Name="RaiseException">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RegCloseKey" />
+    <Symbol Name="RegEnumKeyExW" />
+    <Symbol Name="RegOpenKeyExW" />
+    <Symbol Name="RegQueryInfoKeyW" />
+    <Symbol Name="RegQueryValueExW" />
+    <Symbol Name="RegisterWaitForSingleObjectEx" />
+    <Symbol Name="ReleaseSRWLockExclusive">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ReleaseSRWLockShared">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ResolveDelayLoadedAPI" />
+    <Symbol Name="RtlAcquireResourceExclusive" />
+    <Symbol Name="RtlAcquireResourceShared" />
+    <Symbol Name="RtlAllocateHeap" />
+    <Symbol Name="RtlAssert" />
+    <Symbol Name="RtlCallEnclaveReturn" />
+    <Symbol Name="RtlCaptureContext">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtlCompareUnicodeString" />
+    <Symbol Name="RtlDeleteCriticalSection" />
+    <Symbol Name="RtlDeleteResource" />
+    <Symbol Name="RtlEnclaveCallDispatch" />
+    <Symbol Name="RtlEnclaveCallDispatchReturn" />
+    <Symbol Name="RtlEnterCriticalSection" />
+    <Symbol Name="RtlFreeHeap" />
+    <Symbol Name="RtlGetCurrentProcessorNumberEx" />
+    <Symbol Name="RtlGetLastNtStatus">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtlImageNtHeader" />
+    <Symbol Name="RtlInitUnicodeString" />
+    <Symbol Name="RtlInitializeCriticalSection" />
+    <Symbol Name="RtlInitializeResource" />
+    <Symbol Name="RtlLeaveCriticalSection" />
+    <Symbol Name="RtlLookupFunctionEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtlNtStatusToDosError" />
+    <Symbol Name="RtlPcToFileHeader">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtlRaiseStatus">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtlReleaseResource" />
+    <Symbol Name="RtlReleaseResourceShared" />
+    <Symbol Name="RtlUnhandledExceptionFilter">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtlUnwindEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RtlVirtualUnwind">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetCriticalSectionSpinCount">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetLastError">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetThreadStackGuarantee">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetUnhandledExceptionFilter">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SleepConditionVariableCS">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SleepConditionVariableSRW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TerminateEnclave">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TerminateProcess">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TlsAlloc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TlsFree">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TlsGetValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TlsSetValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TryAcquireSRWLockExclusive">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TryAcquireSRWLockShared">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="TryEnterCriticalSection">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UnregisterWaitEx" />
+    <Symbol Name="VirtualAlloc">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VirtualFree">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VirtualProtect">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="VirtualQuery">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WaitOnAddress">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WakeAllConditionVariable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WakeByAddressAll">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WakeByAddressSingle">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WakeConditionVariable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="__C_specific_handler" />
+    <Symbol Name="__chkstk" />
+    <Symbol Name="_local_unwind" />
+    <Symbol Name="_vsnwprintf" />
+    <Symbol Name="_wcsicmp" />
+    <Symbol Name="memcmp">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="memcpy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="memmove">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="memset">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\vertdll.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="qsort" />
+    <Symbol Name="wcscmp" />
+    <Symbol Name="wcscpy_s" />
+    <Symbol Name="wcsncmp" />
+  </ExportedSymbols>
+</DynamicLibrary>

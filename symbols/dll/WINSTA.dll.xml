@@ -1,0 +1,837 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="WINSTA.dll">
+  <OriginalPath>C:\Windows\system32\WINSTA.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="LogonIdFromWinStationNameA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LogonIdFromWinStationNameW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RemoteAssistancePrepareSystemRestore">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ServerGetInternetConnectorStatus">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ServerLicensingClose">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ServerLicensingDeactivateCurrentPolicy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ServerLicensingFreePolicyInformation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ServerLicensingGetAvailablePolicyIds">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ServerLicensingGetPolicy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ServerLicensingGetPolicyInformationA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ServerLicensingGetPolicyInformationW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ServerLicensingLoadPolicy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ServerLicensingOpenA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ServerLicensingOpenW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ServerLicensingSetPolicy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ServerLicensingUnloadPolicy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ServerQueryInetConnectorInformationA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ServerQueryInetConnectorInformationW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ServerSetInternetConnectorStatus">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSRegisterSessionNotificationEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WTSUnRegisterSessionNotificationEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationActivateLicense">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationAutoReconnect">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationBroadcastSystemMessage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationCheckAccess">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationCheckLoopBack">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationCloseServer">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationConnectA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationConnectAndLockDesktop">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationConnectCallback">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationConnectEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationConnectW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationCreateChildSessionTransport">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationDisconnect">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationEnableChildSessions">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationEnumerateA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationEnumerateExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationEnumerateLicenses">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationEnumerateProcesses">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationEnumerateW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationEnumerate_IndexedA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationEnumerate_IndexedW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationFreeConsoleNotification">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationFreeEXECENVDATAEX">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationFreeGAPMemory">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationFreeMemory">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationFreePropertyValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationFreeUserCertificates">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationFreeUserCredentials">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationFreeUserSessionInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationGenerateLicense">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationGetAllProcesses">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationGetAllSessionsEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationGetAllSessionsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationGetAllUserSessions">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationGetChildSessionId">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationGetConnectionProperty">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationGetCurrentSessionCapabilities">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationGetCurrentSessionConnectionProperty">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationGetCurrentSessionTerminalName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationGetDeviceId">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationGetInitialApplication">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationGetLanAdapterNameA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationGetLanAdapterNameW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationGetLoggedOnCount">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationGetMachinePolicy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationGetParentSessionId">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationGetProcessSid">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationGetRedirectAuthInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationGetRestrictedLogonInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationGetSessionIds">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationGetTermSrvCountersValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationGetUserCertificates">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationGetUserCredentials">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationGetUserProfile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationInstallLicense">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationIsChildSessionsEnabled">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationIsCurrentSessionRemoteable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationIsHelpAssistantSession">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationIsSessionPermitted">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationIsSessionRemoteable">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationNameFromLogonIdA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationNameFromLogonIdW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationNegotiateSession">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationNtsdDebug">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationOpenServerA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationOpenServerExA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationOpenServerExW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationOpenServerW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationPreCreateGlassReplacementSession">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationPreCreateGlassReplacementSessionEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationQueryAllowConcurrentConnections">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationQueryCurrentSessionInformation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationQueryEnforcementCore">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationQueryInformationA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationQueryInformationW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationQueryLicense">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationQueryLogonCredentialsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationQuerySessionVirtualIP">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationQueryUpdateRequired">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationRcmShadow2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationRedirectErrorMessage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationRedirectLogonBeginPainting">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationRedirectLogonError">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationRedirectLogonMessage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationRedirectLogonStatus">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationRegisterConsoleNotification">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationRegisterConsoleNotificationEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationRegisterConsoleNotificationEx2" />
+    <Symbol Name="WinStationRegisterCurrentSessionNotificationEvent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationRegisterNotificationEvent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationRemoveLicense">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationRenameA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationRenameW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationReportUIResult">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationReset">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationRevertFromServicesSession">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationSendMessageA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationSendMessageW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationSendWindowMessage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationServerPing">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationSetAutologonPassword">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationSetInformationA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationSetInformationW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationSetPoolCount">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationSetRenderHint">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationShadow">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationShadowAccessCheck">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationShadowStop">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationShadowStop2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationShutdownSystem">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationSwitchToServicesSession">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationSystemShutdownStarted">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationSystemShutdownWait">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationTerminateGlassReplacementSession">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationTerminateProcess">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationUnRegisterConsoleNotification">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationUnRegisterNotificationEvent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationUserLoginAccessCheck">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationVerify">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationVirtualOpen">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationVirtualOpenEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WinStationWaitSystemEvent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="_NWLogonQueryAdmin">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="_NWLogonSetAdmin">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="_WinStationAnnoyancePopup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="_WinStationBeepOpen">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="_WinStationBreakPoint">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="_WinStationCallback">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="_WinStationCheckForApplicationName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="_WinStationFUSCanRemoteUserDisconnect">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="_WinStationGetApplicationInfo">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="_WinStationNotifyDisconnectPipe">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="_WinStationNotifyLogoff">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="_WinStationNotifyLogon">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="_WinStationNotifyNewSession">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="_WinStationOpenSessionDirectory">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="_WinStationReInitializeSecurity">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="_WinStationReadRegistry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="_WinStationSessionInitialized">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="_WinStationShadowTarget">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="_WinStationShadowTarget2">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="_WinStationShadowTargetSetup">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="_WinStationUpdateClientCachedCredentials">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="_WinStationUpdateSettings">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="_WinStationUpdateUserConfig">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="_WinStationWaitForConnect">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\winsta.lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

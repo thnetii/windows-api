@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\mfsensorgroup.lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\mfsensorgroup.lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="MFSENSORGROUP.dll" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="MFCreateSensorActivityMonitor" />
+    <Symbol Name="MFCreateSensorGroup" />
+    <Symbol Name="MFCreateSensorProfile" />
+    <Symbol Name="MFCreateSensorProfileCollection" />
+    <Symbol Name="MFCreateSensorStream" />
+  </ExportedSymbols>
+</StaticLibrary>

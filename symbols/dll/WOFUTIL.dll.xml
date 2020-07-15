@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="WOFUTIL.dll">
+  <OriginalPath>C:\Windows\system32\WOFUTIL.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="WofEnumEntries">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wofutil.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WofFileEnumFiles">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wofutil.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WofGetDriverVersion">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wofutil.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WofIsExternalFile">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wofutil.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WofSetFileDataLocation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wofutil.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WofShouldCompressBinaries">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wofutil.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WofWimAddEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wofutil.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WofWimEnumFiles">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wofutil.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WofWimRemoveEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wofutil.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WofWimSuspendEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wofutil.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WofWimUpdateEntry">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\wofutil.lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

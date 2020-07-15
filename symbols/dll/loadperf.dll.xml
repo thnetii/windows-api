@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="loadperf.dll">
+  <OriginalPath>C:\Windows\system32\loadperf.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="BackupPerfRegistryToFileW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\LoadPerf.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InstallPerfDllA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\LoadPerf.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="InstallPerfDllW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\LoadPerf.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LoadPerfCounterTextStringsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\LoadPerf.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LoadPerfCounterTextStringsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\LoadPerf.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LpAcquireInstallationMutex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\LoadPerf.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LpReleaseInstallationMutex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\LoadPerf.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="RestorePerfRegistryFromFileW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\LoadPerf.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetServiceAsTrustedA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\LoadPerf.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetServiceAsTrustedW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\LoadPerf.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UnloadPerfCounterTextStringsA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\LoadPerf.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UnloadPerfCounterTextStringsW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\LoadPerf.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UpdatePerfNameFilesA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\LoadPerf.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="UpdatePerfNameFilesW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\LoadPerf.Lib" />
+        <StaticLibrary Name="um\x64\nanosrv.lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="SHFOLDER.dll">
+  <OriginalPath>C:\Windows\system32\SHFOLDER.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="SHGetFolderPathA">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ShFolder.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SHGetFolderPathW">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\ShFolder.Lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

@@ -1,0 +1,752 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="POWRPROF.dll">
+  <OriginalPath>C:\Windows\system32\POWRPROF.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="CallNtPowerInformation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="CanUserWritePwrScheme">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DeletePwrScheme">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DevicePowerClose">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DevicePowerEnumDevices">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DevicePowerOpen">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="DevicePowerSetDeviceState">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="EnumPwrSchemes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GUIDFormatToGlobalPowerPolicy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GUIDFormatToPowerPolicy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetActivePwrScheme">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetCurrentPowerPolicies">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetPwrCapabilities">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="GetPwrDiskSpindownRange">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IsAdminOverrideActive">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IsPwrHibernateAllowed">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IsPwrShutdownAllowed">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="IsPwrSuspendAllowed">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="LoadCurrentPwrScheme">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="MergeLegacyPwrScheme">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerApplyPowerRequestOverride">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerApplySettingChanges" />
+    <Symbol Name="PowerCanRestoreIndividualDefaultPowerScheme">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerClearUserAwayPrediction" />
+    <Symbol Name="PowerCloseEnvironmentalMonitor">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerCloseLimitsMitigation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerCloseLimitsPolicy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerCreatePossibleSetting">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerCreateSetting">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerCustomizePlatformPowerSettings">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerDebugDifPowerPolicies">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerDebugDifSystemPowerPolicies">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerDebugDumpPowerPolicy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerDebugDumpPowerScheme">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerDebugDumpSystemPowerCapabilities">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerDebugDumpSystemPowerPolicy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerDeleteScheme">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerDeterminePlatformRole">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerDeterminePlatformRoleEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerDuplicateScheme">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerEnumerate">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerGeneralizePlatformSettings">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerGetActiveScheme">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerGetActualOverlayScheme" />
+    <Symbol Name="PowerGetAdaptiveStandbyDiagnostics" />
+    <Symbol Name="PowerGetEffectiveOverlayScheme" />
+    <Symbol Name="PowerGetOverlaySchemes" />
+    <Symbol Name="PowerGetUserAwayMinPredictionConfidence" />
+    <Symbol Name="PowerImportPowerScheme">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerInformationWithPrivileges" />
+    <Symbol Name="PowerIsSettingRangeDefined">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerOpenSystemPowerKey">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerOpenUserPowerKey">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerPolicyToGUIDFormat">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerReadACDefaultIndex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerReadACValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerReadACValueIndex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerReadACValueIndexEx" />
+    <Symbol Name="PowerReadDCDefaultIndex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerReadDCValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerReadDCValueIndex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerReadDCValueIndexEx" />
+    <Symbol Name="PowerReadDescription">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerReadFriendlyName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerReadIconResourceSpecifier">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerReadPossibleDescription">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerReadPossibleFriendlyName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerReadPossibleValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerReadSecurityDescriptor">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerReadSettingAttributes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerReadValueIncrement">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerReadValueMax">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerReadValueMin">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerReadValueUnitsSpecifier">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerReapplyActiveScheme" />
+    <Symbol Name="PowerRegisterEnvironmentalMonitor">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerRegisterLimitsMitigation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerRegisterLimitsPolicy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerRegisterSuspendResumeNotification">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerRemovePowerSetting">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerReplaceDefaultPowerSchemes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerReportLimitsEvent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerReportThermalEvent">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerRestoreACDefaultIndex" />
+    <Symbol Name="PowerRestoreDCDefaultIndex" />
+    <Symbol Name="PowerRestoreDefaultPowerSchemes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerRestoreIndividualDefaultPowerScheme">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerSetActiveOverlayScheme" />
+    <Symbol Name="PowerSetActiveScheme">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerSetAlsBrightnessOffset">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerSetBrightnessAndTransitionTimes" />
+    <Symbol Name="PowerSetUserAwayPrediction" />
+    <Symbol Name="PowerSettingAccessCheck">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerSettingAccessCheckEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerSettingRegisterNotification">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerSettingRegisterNotificationEx" />
+    <Symbol Name="PowerSettingUnregisterNotification">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerUnregisterSuspendResumeNotification">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerUpdateEnvironmentalMonitorState">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerUpdateEnvironmentalMonitorThresholds">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerUpdateLimitsMitigation">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerWriteACDefaultIndex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerWriteACValueIndex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerWriteDCDefaultIndex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerWriteDCValueIndex">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerWriteDescription">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerWriteFriendlyName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerWriteIconResourceSpecifier">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerWritePossibleDescription">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerWritePossibleFriendlyName">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerWritePossibleValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerWriteSecurityDescriptor">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerWriteSettingAttributes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerWriteValueIncrement">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerWriteValueMax">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerWriteValueMin">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PowerWriteValueUnitsSpecifier">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ReadGlobalPwrPolicy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ReadProcessorPwrScheme">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ReadPwrScheme">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetActivePwrScheme">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SetSuspendState">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ValidatePowerPolicies">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WriteGlobalPwrPolicy">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WriteProcessorPwrScheme">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="WritePwrScheme">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\OneCore.Lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+        <StaticLibrary Name="um\x64\powrprof.lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

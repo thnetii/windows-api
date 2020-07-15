@@ -1,0 +1,1460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\Msi.Lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\Msi.Lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="msi.dll" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="DllGetVersion">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Migrate10CachedPackagesA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="Migrate10CachedPackagesW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiAdvertiseProductA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiAdvertiseProductExA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiAdvertiseProductExW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiAdvertiseProductW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiAdvertiseScriptA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiAdvertiseScriptW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiApplyMultiplePatchesA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiApplyMultiplePatchesW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiApplyPatchA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiApplyPatchW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiBeginTransactionA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiBeginTransactionW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiCloseAllHandles">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiCloseHandle">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiCollectUserInfoA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiCollectUserInfoW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiConfigureFeatureA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiConfigureFeatureFromDescriptorA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiConfigureFeatureFromDescriptorW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiConfigureFeatureW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiConfigureProductA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiConfigureProductExA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiConfigureProductExW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiConfigureProductW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiCreateAndVerifyInstallerDirectory">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiCreateRecord">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiCreateTransformSummaryInfoA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiCreateTransformSummaryInfoW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiDatabaseApplyTransformA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiDatabaseApplyTransformW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiDatabaseCommit">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiDatabaseExportA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiDatabaseExportW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiDatabaseGenerateTransformA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiDatabaseGenerateTransformW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiDatabaseGetPrimaryKeysA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiDatabaseGetPrimaryKeysW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiDatabaseImportA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiDatabaseImportW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiDatabaseIsTablePersistentA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiDatabaseIsTablePersistentW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiDatabaseMergeA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiDatabaseMergeW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiDatabaseOpenViewA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiDatabaseOpenViewW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiDecomposeDescriptorA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiDecomposeDescriptorW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiDeleteUserDataA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiDeleteUserDataW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiDetermineApplicablePatchesA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiDetermineApplicablePatchesW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiDeterminePatchSequenceA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiDeterminePatchSequenceW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiDoActionA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiDoActionW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiEnableLogA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiEnableLogW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiEnableUIPreview">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiEndTransaction">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiEnumClientsA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiEnumClientsExA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiEnumClientsExW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiEnumClientsW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiEnumComponentCostsA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiEnumComponentCostsW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiEnumComponentQualifiersA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiEnumComponentQualifiersW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiEnumComponentsA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiEnumComponentsExA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiEnumComponentsExW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiEnumComponentsW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiEnumFeaturesA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiEnumFeaturesW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiEnumPatchesA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiEnumPatchesExA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiEnumPatchesExW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiEnumPatchesW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiEnumProductsA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiEnumProductsExA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiEnumProductsExW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiEnumProductsW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiEnumRelatedProductsA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiEnumRelatedProductsW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiEvaluateConditionA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiEvaluateConditionW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiExtractPatchXMLDataA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiExtractPatchXMLDataW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiFormatRecordA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiFormatRecordW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiGetActiveDatabase">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiGetComponentPathA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiGetComponentPathExA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiGetComponentPathExW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiGetComponentPathW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiGetComponentStateA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiGetComponentStateW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiGetDatabaseState">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiGetFeatureCostA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiGetFeatureCostW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiGetFeatureInfoA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiGetFeatureInfoW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiGetFeatureStateA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiGetFeatureStateW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiGetFeatureUsageA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiGetFeatureUsageW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiGetFeatureValidStatesA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiGetFeatureValidStatesW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiGetFileHashA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiGetFileHashW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiGetFileSignatureInformationA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiGetFileSignatureInformationW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiGetFileVersionA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiGetFileVersionW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiGetLanguage">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiGetLastErrorRecord">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiGetMode">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiGetPatchFileListA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiGetPatchFileListW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiGetPatchInfoA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiGetPatchInfoExA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiGetPatchInfoExW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiGetPatchInfoW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiGetProductCodeA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiGetProductCodeFromPackageCodeA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiGetProductCodeFromPackageCodeW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiGetProductCodeW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiGetProductInfoA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiGetProductInfoExA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiGetProductInfoExW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiGetProductInfoFromScriptA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiGetProductInfoFromScriptW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiGetProductInfoW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiGetProductPropertyA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiGetProductPropertyW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiGetPropertyA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiGetPropertyW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiGetShortcutTargetA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiGetShortcutTargetW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiGetSourcePathA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiGetSourcePathW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiGetSummaryInformationA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiGetSummaryInformationW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiGetTargetPathA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiGetTargetPathW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiGetUserInfoA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiGetUserInfoW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiInstallMissingComponentA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiInstallMissingComponentW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiInstallMissingFileA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiInstallMissingFileW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiInstallProductA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiInstallProductW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiInvalidateFeatureCache">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiIsProductElevatedA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiIsProductElevatedW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiJoinTransaction">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiLoadStringA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiLoadStringW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiLocateComponentA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiLocateComponentW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiMessageBoxA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiMessageBoxExA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiMessageBoxExW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiMessageBoxW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiNotifySidChangeA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiNotifySidChangeW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiOpenDatabaseA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiOpenDatabaseW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiOpenPackageA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiOpenPackageExA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiOpenPackageExW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiOpenPackageW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiOpenProductA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiOpenProductW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiPreviewBillboardA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiPreviewBillboardW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiPreviewDialogA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiPreviewDialogW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiProcessAdvertiseScriptA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiProcessAdvertiseScriptW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiProcessMessage">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiProvideAssemblyA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiProvideAssemblyW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiProvideComponentA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiProvideComponentFromDescriptorA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiProvideComponentFromDescriptorW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiProvideComponentW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiProvideQualifiedComponentA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiProvideQualifiedComponentExA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiProvideQualifiedComponentExW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiProvideQualifiedComponentW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiQueryComponentStateA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiQueryComponentStateW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiQueryFeatureStateA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiQueryFeatureStateExA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiQueryFeatureStateExW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiQueryFeatureStateFromDescriptorA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiQueryFeatureStateFromDescriptorW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiQueryFeatureStateW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiQueryProductStateA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiQueryProductStateW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiRecordClearData">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiRecordDataSize">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiRecordGetFieldCount">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiRecordGetInteger">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiRecordGetStringA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiRecordGetStringW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiRecordIsNull">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiRecordReadStream">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiRecordSetInteger">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiRecordSetStreamA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiRecordSetStreamW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiRecordSetStringA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiRecordSetStringW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiReinstallFeatureA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiReinstallFeatureFromDescriptorA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiReinstallFeatureFromDescriptorW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiReinstallFeatureW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiReinstallProductA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiReinstallProductW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiRemovePatchesA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiRemovePatchesW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiSequenceA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiSequenceW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiSetComponentStateA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiSetComponentStateW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiSetExternalUIA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiSetExternalUIRecord">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiSetExternalUIW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiSetFeatureAttributesA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiSetFeatureAttributesW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiSetFeatureStateA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiSetFeatureStateW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiSetInstallLevel">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiSetInternalUI">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiSetMode">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiSetOfflineContextW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiSetPropertyA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiSetPropertyW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiSetTargetPathA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiSetTargetPathW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiSourceListAddMediaDiskA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiSourceListAddMediaDiskW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiSourceListAddSourceA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiSourceListAddSourceExA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiSourceListAddSourceExW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiSourceListAddSourceW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiSourceListClearAllA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiSourceListClearAllExA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiSourceListClearAllExW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiSourceListClearAllW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiSourceListClearMediaDiskA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiSourceListClearMediaDiskW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiSourceListClearSourceA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiSourceListClearSourceW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiSourceListEnumMediaDisksA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiSourceListEnumMediaDisksW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiSourceListEnumSourcesA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiSourceListEnumSourcesW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiSourceListForceResolutionA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiSourceListForceResolutionExA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiSourceListForceResolutionExW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiSourceListForceResolutionW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiSourceListGetInfoA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiSourceListGetInfoW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiSourceListSetInfoA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiSourceListSetInfoW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiSummaryInfoGetPropertyA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiSummaryInfoGetPropertyCount">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiSummaryInfoGetPropertyW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiSummaryInfoPersist">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiSummaryInfoSetPropertyA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiSummaryInfoSetPropertyW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiUseFeatureA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiUseFeatureExA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiUseFeatureExW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiUseFeatureW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiVerifyDiskSpace">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiVerifyPackageA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiVerifyPackageW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiViewClose">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiViewExecute">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiViewFetch">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiViewGetColumnInfo">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiViewGetErrorA">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiViewGetErrorW">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+    <Symbol Name="MsiViewModify">
+      <Definitions>
+        <DynamicLibrary Name="msi.dll" />
+      </Definitions>
+    </Symbol>
+  </ExportedSymbols>
+</StaticLibrary>

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="HID.DLL">
+  <OriginalPath>C:\Windows\system32\HID.DLL</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="HidD_FlushQueue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hid.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HidD_FreePreparsedData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hid.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HidD_GetAttributes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hid.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HidD_GetConfiguration">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hid.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HidD_GetFeature">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hid.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HidD_GetHidGuid">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hid.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HidD_GetIndexedString">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hid.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HidD_GetInputReport">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hid.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HidD_GetManufacturerString">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hid.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HidD_GetMsGenreDescriptor">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hid.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HidD_GetNumInputBuffers">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hid.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HidD_GetPhysicalDescriptor">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hid.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HidD_GetPreparsedData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hid.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HidD_GetProductString">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hid.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HidD_GetSerialNumberString">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hid.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HidD_Hello">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hid.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HidD_SetConfiguration">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hid.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HidD_SetFeature">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hid.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HidD_SetNumInputBuffers">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hid.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HidD_SetOutputReport">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hid.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HidP_GetButtonCaps">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hid.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HidP_GetCaps">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hid.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HidP_GetData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hid.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HidP_GetExtendedAttributes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hid.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HidP_GetLinkCollectionNodes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hid.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HidP_GetScaledUsageValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hid.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HidP_GetSpecificButtonCaps">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hid.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HidP_GetSpecificValueCaps">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hid.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HidP_GetUsageValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hid.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HidP_GetUsageValueArray">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hid.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HidP_GetUsages">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hid.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HidP_GetUsagesEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hid.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HidP_GetValueCaps">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hid.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HidP_InitializeReportForID">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hid.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HidP_MaxDataListLength">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hid.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HidP_MaxUsageListLength">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hid.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HidP_SetData">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hid.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HidP_SetScaledUsageValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hid.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HidP_SetUsageValue">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hid.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HidP_SetUsageValueArray">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hid.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HidP_SetUsages">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hid.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HidP_TranslateUsagesToI8042ScanCodes">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hid.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HidP_UnsetUsages">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hid.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="HidP_UsageListDifference">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\hid.lib" />
+        <StaticLibrary Name="um\x64\OneCoreUAP.Lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

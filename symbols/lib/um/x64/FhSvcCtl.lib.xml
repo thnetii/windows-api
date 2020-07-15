@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\FhSvcCtl.lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\FhSvcCtl.lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="fhsvcctl.dll" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="DllMain" />
+    <Symbol Name="FhQueryConfiguredUsersCount" />
+    <Symbol Name="FhServiceBlockBackup" />
+    <Symbol Name="FhServiceClearProtectionState" />
+    <Symbol Name="FhServiceClosePipe" />
+    <Symbol Name="FhServiceEnterMaintenanceMode" />
+    <Symbol Name="FhServiceExitMaintenanceMode" />
+    <Symbol Name="FhServiceMigrationFinished" />
+    <Symbol Name="FhServiceMigrationStarting" />
+    <Symbol Name="FhServiceOpenPipe" />
+    <Symbol Name="FhServiceReloadConfiguration" />
+    <Symbol Name="FhServiceStartBackup" />
+    <Symbol Name="FhServiceStopBackup" />
+    <Symbol Name="FhServiceUnblockBackup" />
+  </ExportedSymbols>
+</StaticLibrary>

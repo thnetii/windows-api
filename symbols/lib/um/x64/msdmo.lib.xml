@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StaticLibrary>
+  <RelativeName>um\x64\msdmo.lib</RelativeName>
+  <OriginalPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\msdmo.lib</OriginalPath>
+  <ReferencedLibraries>
+    <DynamicLibrary Name="msdmo.dll" />
+  </ReferencedLibraries>
+  <ExportedSymbols>
+    <Symbol Name="DMOEnum" />
+    <Symbol Name="DMOGetName" />
+    <Symbol Name="DMOGetTypes" />
+    <Symbol Name="DMOGuidToStrA" />
+    <Symbol Name="DMOGuidToStrW" />
+    <Symbol Name="DMORegister" />
+    <Symbol Name="DMOStrToGuidA" />
+    <Symbol Name="DMOStrToGuidW" />
+    <Symbol Name="DMOUnregister" />
+    <Symbol Name="MoCopyMediaType" />
+    <Symbol Name="MoCreateMediaType" />
+    <Symbol Name="MoDeleteMediaType" />
+    <Symbol Name="MoDuplicateMediaType" />
+    <Symbol Name="MoFreeMediaType" />
+    <Symbol Name="MoInitMediaType" />
+  </ExportedSymbols>
+</StaticLibrary>

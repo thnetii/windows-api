@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="MSPORTS.DLL">
+  <OriginalPath>C:\Windows\system32\MSPORTS.DLL</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="ComDBClaimNextFreePort">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msports.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ComDBClaimPort">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msports.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ComDBClose">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msports.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ComDBGetCurrentPortUsage">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msports.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ComDBOpen">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msports.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ComDBReleasePort">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msports.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ComDBResizeDatabase">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msports.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="ParallelPortPropPageProvider">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msports.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="PortsClassInstaller">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msports.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SerialDisplayAdvancedSettings">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msports.lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SerialPortPropPageProvider">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\msports.lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>

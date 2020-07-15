@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DynamicLibrary Name="mgmtapi.dll">
+  <OriginalPath>C:\Windows\system32\mgmtapi.dll</OriginalPath>
+  <ExportedSymbols>
+    <Symbol Name="SnmpMgrClose">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\MgmtAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpMgrCtl">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\MgmtAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpMgrGetTrap">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\MgmtAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpMgrGetTrapEx">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\MgmtAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpMgrOidToStr">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\MgmtAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpMgrOpen">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\MgmtAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpMgrRequest">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\MgmtAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpMgrStrToOid">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\MgmtAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+    <Symbol Name="SnmpMgrTrapListen">
+      <ReferencedBy>
+        <StaticLibrary Name="um\x64\MgmtAPI.Lib" />
+      </ReferencedBy>
+    </Symbol>
+  </ExportedSymbols>
+</DynamicLibrary>
